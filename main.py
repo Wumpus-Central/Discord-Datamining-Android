@@ -16,7 +16,7 @@ latest_versions = {}
 # Retrieve latest Discord versions from API
 def realaesesCheck():
     global latest_versions
-    latest_versions_request = requests.get('https://discord.k6.tf/index.json')
+    latest_versions_request = requests.get('https://raw.githubusercontent.com/DzikStar/ApkCanaryDatamining/main/clients.json?token=GHSAT0AAAAAABZ6GTY7TK4TXVFKKNXCEFCYY7Q3SOA')
     latest_versions_data = latest_versions_request.json()
     latest_versions = {
         'stable': latest_versions_data['latest']['stable'],
