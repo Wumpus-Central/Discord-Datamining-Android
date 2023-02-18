@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/welcome_reply_button" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.discord.sticker.StickerView android:id="@id/sticker_view" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/welcome_reply_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" />
+</merge>

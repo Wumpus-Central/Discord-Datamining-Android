@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/pickerWrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/year" android:tag="year" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/year_description" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/month" android:tag="month" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/month_description" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/date" android:tag="date" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/date_description" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/day" android:tag="day" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/day_description" style="@style/android_native" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/hour" android:tag="hour" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/hour_description" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/minutes" android:tag="minutes" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/minutes_description" style="@style/android_native_small" />
+        <com.henninghall.date_picker.pickers.AndroidNative android:theme="@style/DatePickerTheme" android:id="@id/ampm" android:tag="ampm" android:focusable="true" android:focusableInTouchMode="true" android:contentDescription="@string/ampm_description" style="@style/android_native" />
+    </LinearLayout>
+</LinearLayout>

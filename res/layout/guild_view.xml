@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:id="@id/guilds_item_avatar_wrap" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/guild_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fadeDuration="50" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/guild_text" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+</merge>

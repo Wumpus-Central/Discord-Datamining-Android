@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/rn_redbox_stack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/rn_redbox_line_separator" android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/rn_redbox_loading_indicator" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:indeterminateOnly="true" style="@android:style/Widget.ProgressBar.Small" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/rn_redbox_report_label" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" android:fontFamily="monospace" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/redbox_top_border_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/rn_redbox_dismiss_button" android:text="@string/catalyst_dismiss_button" style="@style/redboxButton" />
+        <Button android:id="@id/rn_redbox_reload_button" android:text="@string/catalyst_reload_button" style="@style/redboxButton" />
+        <Button android:id="@id/rn_redbox_report_button" android:visibility="gone" android:text="@string/catalyst_report_button" style="@style/redboxButton" />
+    </LinearLayout>
+</LinearLayout>

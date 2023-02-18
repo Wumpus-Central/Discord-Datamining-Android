@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/dialog_card" android:layout_margin="16.0dip" app:cardElevation="8.0dip" style="@style/OverlayDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:id="@id/channel_select" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="16.0dip" />
+            <ImageView android:id="@id/close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" />
+        </LinearLayout>
+        <EditText android:textSize="16.0sp" android:id="@id/overlay_channel_search" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" android:textDirection="locale" android:paddingHorizontal="8.0dip" android:paddingVertical="12.0dip" android:importantForAutofill="no" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/empty_results" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="64.0dip" android:layout_marginRight="32.0dip" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:textAlignment="center" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/results_rv" android:padding="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

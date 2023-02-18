@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/connections_role_tag_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="8.0dip" android:layout_marginVertical="2.0dip">
+            <FrameLayout android:id="@id/verified_check_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/verified_check_icon_background" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/drawable_circle" />
+                <ImageView android:layout_gravity="center|left" android:id="@id/verified_check_icon" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_link_icon_24dp" />
+            </FrameLayout>
+            <TextView android:id="@id/role_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4.0dip" app:layout_constraintStart_toEndOf="@id/verified_check_icon_container" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

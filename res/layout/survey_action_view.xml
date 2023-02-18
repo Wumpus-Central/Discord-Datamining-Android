@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/survey_card" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/survey_background" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="10.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/chat_list_feedback_icon" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="24.0dip" android:importantForAccessibility="no" android:paddingStart="10.0dip" />
+            <com.facebook.drawee.span.SimpleDraweeSpanTextView android:textColor="@color/primary_dark_300" android:id="@id/chat_list_adapter_item_text_feedback" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

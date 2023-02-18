@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/overlay_header" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/overlay_linked_anchor_view" android:layout_width="@dimen/bubble_size_default" android:layout_height="@dimen/bubble_size_default" />
+        <View android:background="#4dffffff" android:layout_width="1.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/overlay_members_recycler" android:fitsSystemWindows="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <TextView android:gravity="center" android:id="@id/overlay_members_overflow_text" android:visibility="gone" android:layout_width="@dimen/bubble_size_default" android:layout_height="@dimen/bubble_size_default" android:layout_marginEnd="4.0dip" android:autoSizeTextType="uniform" android:autoSizeMaxTextSize="20.0sp" />
+    </LinearLayout>
+    <com.discord.mobile_voice_overlay.views.OverlayMenuView android:orientation="vertical" android:id="@id/overlay_menu" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="./data/user/0/com.discord.debug/lib-0/" />
+        <exclude domain="root" path="./data/data/com.discord.debug/lib-0/" />
+        <exclude domain="root" path="./data/user/0/com.discord/lib-0/" />
+        <exclude domain="root" path="./data/data/com.discord/lib-0/" />
+    </cloud-backup>
+</data-extraction-rules>

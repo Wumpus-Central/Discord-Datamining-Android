@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/button" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:textDirection="locale" android:textAlignment="center" android:elevation="0.0dip" android:letterSpacing="0.0" app:iconGravity="textStart" app:iconPadding="4.0dip" app:iconSize="16.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminate="true" />
+</merge>

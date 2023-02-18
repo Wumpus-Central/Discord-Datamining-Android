@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@android:anim/accelerate_decelerate_interpolator" android:fillAfter="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:duration="@integer/progress_dots_animation_time" android:pivotX="50.0%" android:pivotY="50.0%" android:fromXScale="@integer/progress_dots_min_scale" android:toXScale="@integer/progress_dots_max_scale" android:fromYScale="@integer/progress_dots_min_scale" android:toYScale="@integer/progress_dots_max_scale" />
+    <alpha android:duration="@integer/progress_dots_animation_time" android:fromAlpha="@integer/progress_dots_min_alpha" android:toAlpha="@integer/progress_dots_max_alpha" />
+</set>

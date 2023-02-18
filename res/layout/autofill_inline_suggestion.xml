@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?autofillInlineSuggestionChip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/autofill_inline_suggestion_start_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?autofillInlineSuggestionStartIconStyle" />
+    <TextView android:ellipsize="end" android:id="@id/autofill_inline_suggestion_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?autofillInlineSuggestionTitle" />
+    <TextView android:ellipsize="end" android:id="@id/autofill_inline_suggestion_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?autofillInlineSuggestionSubtitle" />
+    <ImageView android:id="@id/autofill_inline_suggestion_end_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?autofillInlineSuggestionEndIconStyle" />
+</LinearLayout>

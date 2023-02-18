@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/message_frame_jump_header" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:paddingHorizontal="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:id="@id/message_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:layout_constraintEnd_toStartOf="@id/message_header_subtitle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:id="@id/message_header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="8.0dip" app:layout_constraintBaseline_toBaselineOf="@id/message_header_title" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/message_header_title" app:layout_constraintTop_toTopOf="parent" />
+</merge>
