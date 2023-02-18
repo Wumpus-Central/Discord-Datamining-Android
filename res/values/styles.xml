@@ -27,7 +27,7 @@
     <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splash_dark</item>
         <item name="android:includeFontPadding">false</item>
-        <item name="android:statusBarColor">@color/primary_dark_600</item>
+        <item name="android:statusBarColor">@color/primary_600</item>
         <item name="android:colorEdgeEffect">@color/brand</item>
         <item name="colorAccent">@color/brand_260</item>
         <item name="colorPrimary">@color/brand</item>

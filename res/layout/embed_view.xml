@@ -21,7 +21,7 @@
                 <com.discord.chat.presentation.message.view.EmbedViewResizingMediaView android:id="@id/inline_media_view4" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/inline_media_view3" app:layout_constraintTop_toBottomOf="@id/inline_media_view2" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout android:orientation="horizontal" android:id="@id/footer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
-                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/footer_avatar" android:background="@color/primary_dark_700" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_marginEnd="8.0dip" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/footer_avatar" android:background="@color/primary_700" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_marginEnd="8.0dip" />
                 <TextView android:layout_gravity="center_vertical" android:id="@id/footer_text" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
             </LinearLayout>
             <Space android:id="@id/spacer" android:layout_width="fill_parent" android:layout_height="8.0dip" />
