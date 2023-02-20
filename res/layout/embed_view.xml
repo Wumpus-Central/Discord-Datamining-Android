@@ -27,7 +27,7 @@
             <Space android:id="@id/spacer" android:layout_width="fill_parent" android:layout_height="8.0dip" />
         </LinearLayout>
         <com.discord.chat.presentation.message.view.EmbedViewResizingMediaView android:id="@id/media_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
-        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/error_icon" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" android:layout_marginEnd="4.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/error_icon" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginEnd="4.0dip" app:actualImageScaleType="fitCenter" />
         <TextView android:id="@id/error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:lineSpacingExtra="2.0sp" android:layout_toEndOf="@id/error_icon" android:layout_alignParentEnd="true" />
     </RelativeLayout>
     <View android:layout_gravity="start" android:id="@id/border" android:layout_width="4.0dip" android:layout_height="fill_parent" />

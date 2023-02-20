@@ -452,6 +452,7 @@
     <item type="id" name="parent_matrix" />
     <item type="id" name="participants" />
     <item type="id" name="pickerWrapper" />
+    <item type="id" name="player_container" />
     <item type="id" name="pointer_enter" />
     <item type="id" name="pointer_enter_capture" />
     <item type="id" name="pointer_leave" />

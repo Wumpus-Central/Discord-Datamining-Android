@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:layout_gravity="bottom|center" android:id="@id/trash_wrap_target_zone" android:paddingLeft="@dimen/bubble_size_default" android:paddingRight="@dimen/bubble_size_default" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/trash_wrap_min_dimen">
         <FrameLayout android:layout_gravity="bottom|center" android:id="@id/trash_wrap_target_container" android:background="@drawable/ic_trash_outline" android:layout_width="@dimen/bubble_size_default" android:layout_height="@dimen/bubble_size_default" android:layout_marginBottom="48.0dip" android:cropToPadding="false">
-            <ImageView android:layout_gravity="center" android:id="@id/trash_wrap_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:importantForAccessibility="no" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/trash_wrap_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:importantForAccessibility="no" />
         </FrameLayout>
     </FrameLayout>
 </merge>
