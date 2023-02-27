@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.discord" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <queries>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.spotify.music"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="xbox"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appCategory="social" android:appComponentFactory="org.lsposed.lspatch.metaloader.LSPAppComponentFactoryStub" android:dataExtractionRules="@xml/data_extraction_rules" android:debuggable="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/data_extraction_rules_legacy" android:icon="@mipmap/ic_logo_square_canary" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.discord.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_logo_round_canary" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <meta-data android:name="libdiscord_version" android:value="89.0.40-voice-recording-promise"/>
+        <meta-data android:name="com.discord.features.FLAG" android:value="1"/>
+        <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.discord.main.MainActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.discord.com" android:pathPattern="/app" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/app" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/gifts/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/gifts/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/invite/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/invite/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/template/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/template/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/channels/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/channels/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/users/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/users/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/feature/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/feature/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/query/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/query/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/ra/.*" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/events/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/events/.*" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/connections/.*/link" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/__development/link" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/mweb-handoff" android:scheme="https"/>
+                <data android:host="discord.com" android:pathPattern="/activate" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app" android:pathPattern="/.*" android:scheme="discord"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="discord.gift" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="discord.gg" android:pathPattern="/.*" android:scheme="https"/>
+                <data android:host="discord.new" android:pathPattern="/.*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="action" android:pathPattern="/oauth2/authorize" android:scheme="discord"/>
+                <data android:host="action" android:pathPattern="/connect/authorize" android:scheme="discord"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="discord.com" android:pathPattern="/connect/authorize" android:scheme="https"/>
+                <data android:host="*.discord.com" android:pathPattern="/connect/authorize" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.discord.intent.action.SDK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:host="sdk" android:pathPattern="/.*" android:scheme="discord"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.discord.intent.action.CONNECT"/>
+                <data android:host="app" android:pathPattern="/connect/.*" android:scheme="discord"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <service android:foregroundServiceType="camera|mediaProjection|microphone|phoneCall" android:name="com.discord.foreground_service.ForegroundService"/>
+        <service android:exported="false" android:name="com.discord.notifications.fcm.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.discord.notifications.actions.NotificationActions">
+            <intent-filter>
+                <action android:name="com.discord.intent.action.NOTIFICATION_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.discord.share.ShareActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+        </activity>
+        <provider android:authorities="com.discord.file-provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.nearby.messages.API_KEY" android:value="AIzaSyD-4L6bgKMixqBRtrG2UktVXK6IexXlsog"/>
+        <activity android:name="com.discord.samsung.SamsungConnectActivity"/>
+        <service android:name="com.discord.react.headless_tasks.service.HeadlessTasksService"/>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="com.discord.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.discord.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:exported="true" android:name="com.google.android.gms.nearby.exposurenotification.WakeUpService" android:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK"/>
+        <service android:exported="true" android:name="androidx.sharetarget.ChooserTargetServiceCompat" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.discord.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.discord.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.discord.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.discord.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+        <meta-data android:name="lspatch" android:value="eyJ1c2VNYW5hZ2VyIjpmYWxzZSwiZGVidWdnYWJsZSI6ZmFsc2UsIm92ZXJyaWRlVmVyc2lvbkNvZGUiOmZhbHNlLCJzaWdCeXBhc3NMZXZlbCI6Miwib3JpZ2luYWxTaWduYXR1cmUiOiIzMDgyMDIzYjMwODIwMWE0YTAwMzAyMDEwMjAyMDQ1NTJlZmIxZjMwMGQwNjA5MmE4NjQ4ODZmNzBkMDEwMTA1MDUwMDMwNjIzMTBiMzAwOTA2MDM1NTA0MDYxMzAyNTU1MzMxMGIzMDA5MDYwMzU1MDQwODEzMDI0MzQxMzExMzMwMTEwNjAzNTUwNDA3MTMwYTQyNzU3MjZjNjk2ZTY3NjE2ZDY1MzExYTMwMTgwNjAzNTUwNDBhMTMxMTQ4NjE2ZDZkNjU3MjIwNjE2ZTY0MjA0MzY4Njk3MzY1NmMzMTE1MzAxMzA2MDM1NTA0MDMxMzBjNGE2MTczNmY2ZTIwNDM2OTc0NzI2ZjZlMzAxZTE3MGQzMTM1MzAzNDMxMzUzMjMzMzUzODMyMzM1YTE3MGQzNDMwMzAzNDMwMzgzMjMzMzUzODMyMzM1YTMwNjIzMTBiMzAwOTA2MDM1NTA0MDYxMzAyNTU1MzMxMGIzMDA5MDYwMzU1MDQwODEzMDI0MzQxMzExMzMwMTEwNjAzNTUwNDA3MTMwYTQyNzU3MjZjNjk2ZTY3NjE2ZDY1MzExYTMwMTgwNjAzNTUwNDBhMTMxMTQ4NjE2ZDZkNjU3MjIwNjE2ZTY0MjA0MzY4Njk3MzY1NmMzMTE1MzAxMzA2MDM1NTA0MDMxMzBjNGE2MTczNmY2ZTIwNDM2OTc0NzI2ZjZlMzA4MTlmMzAwZDA2MDkyYTg2NDg4NmY3MGQwMTAxMDEwNTAwMDM4MThkMDAzMDgxODkwMjgxODEwMDgxZjUzZGUyNTE3OWJkNTY2NTA0NWIyOTJiMTM5NjFmNTA3MWU4Mjc3ODgxZWYwNGFmYmI0N2I0ZWNiNDQ2YzFiZjczMzA0YzdkZTMzZjJkYWIwYTQ3MDgzODI0M2FhODY4OGM0YWIxYjZiMWRmOTUzYjc1ZGI3NDcyNzI1YTI1ZTNmZGViYjEyOGYxNjdjMjU0N2I0ZjZjZTQzOWM3Y2UxMTcxZDQ0NzI5ZDkwZWVlM2QzM2MxNTVkZDc2N2RhYTk0N2MwZjA3ZDdhZDg4YmZhMWNlNDBmYmYyNjdmNDQ4M2EzNWM3ZTI3NTY3MjM2MjY4YmM3MmVlZDMxMTg3Y2IwMjAzMDEwMDAxMzAwZDA2MDkyYTg2NDg4NmY3MGQwMTAxMDUwNTAwMDM4MTgxMDA2MWNmODk0MzliY2M2MzNkODIwZGYxZDAyYmZjMzQwNTMxN2Y3MzFhN2U1OTk1YmI2ZGM0NGFhYzc3YjE1N2JmNTI0NTJkMWY3ZDAyZTZiMzRkOWMzMjVhMTRhMmIyNGJlYWRmMzI0MTkyYWI5ZDRmOWUwZDQ3MzA1YThjNGM5ZjQxMTM0ZDQ5OGE1MDMxZjU5ZjIxYWYwMTA2NGYyMzg3Mzc5M2E5NTE4ODcyMzBlZmZjMzdlMDFlZGE2YWQzYTU5Y2M4N2ExZDFiZmIzZTY3NTVjMDE1MDZlMjEwMjY5MmEzODkwMDI3NjNiODU4ODJlY2NmZTkwNmMwNjdkNDIxIiwiYXBwQ29tcG9uZW50RmFjdG9yeSI6ImFuZHJvaWR4LmNvcmUuYXBwLkNvcmVDb21wb25lbnRGYWN0b3J5IiwibHNwQ29uZmlnIjp7IkFQSV9DT0RFIjo5MywiVkVSU0lPTl9DT0RFIjozNjAsIlZFUlNJT05fTkFNRSI6IjAuNS4xIiwiQ09SRV9WRVJTSU9OX0NPREUiOjY2NDksIkNPUkVfVkVSU0lPTl9OQU1FIjoiMS44LjUifX0="/>
+    </application>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+</manifest>
