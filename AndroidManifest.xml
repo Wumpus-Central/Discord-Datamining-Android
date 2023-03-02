@@ -41,6 +41,9 @@
         <intent>
             <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
         </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
     </queries>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
@@ -214,7 +217,7 @@
         <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
         <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
         <activity android:exported="false" android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.0.0"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.1.0"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
         <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
