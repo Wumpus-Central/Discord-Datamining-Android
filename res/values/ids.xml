@@ -664,6 +664,7 @@
     <item type="id" name="wave" />
     <item type="id" name="welcome_reply_button" />
     <item type="id" name="welcome_reply_text" />
+    <item type="id" name="wipe" />
     <item type="id" name="wrapper_controls" />
     <item type="id" name="wrapper_reset_rotate" />
     <item type="id" name="wrapper_rotate_by_angle" />
