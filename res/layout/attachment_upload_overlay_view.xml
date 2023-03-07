@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background" android:background="@drawable/drawable_circle_primary_900" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:alpha="0.6" android:layout_marginEnd="4.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/upload_progress" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="23.0dip" app:indicatorColor="@color/white" app:indicatorSize="20.0dip" app:layout_constraintBottom_toBottomOf="@id/background" app:layout_constraintEnd_toEndOf="@id/background" app:layout_constraintStart_toStartOf="@id/background" app:layout_constraintTop_toTopOf="@id/background" app:trackColor="@color/transparent" app:trackThickness="2.0dip" />
+</merge>

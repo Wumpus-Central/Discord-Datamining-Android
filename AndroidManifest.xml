@@ -33,10 +33,10 @@
             <data android:scheme="xbox"/>
         </intent>
         <intent>
-            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
         </intent>
         <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
         </intent>
         <intent>
             <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
@@ -45,8 +45,8 @@
             <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
         </intent>
     </queries>
-    <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <application android:allowBackup="false" android:appCategory="social" android:appComponentFactory="org.lsposed.lspatch.metaloader.LSPAppComponentFactoryStub" android:dataExtractionRules="@xml/data_extraction_rules" android:debuggable="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/data_extraction_rules_legacy" android:icon="@mipmap/ic_logo_square_canary" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.discord.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_logo_round_canary" android:supportsRtl="false" android:theme="@style/AppTheme">
@@ -153,24 +153,24 @@
         <meta-data android:name="com.google.android.nearby.messages.API_KEY" android:value="AIzaSyD-4L6bgKMixqBRtrG2UktVXK6IexXlsog"/>
         <activity android:name="com.discord.samsung.SamsungConnectActivity"/>
         <service android:name="com.discord.react.headless_tasks.service.HeadlessTasksService"/>
-        <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
-        </provider>
-        <receiver android:exported="true" android:name="com.discord.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
-            </intent-filter>
-        </receiver>
         <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER"/>
             </intent-filter>
         </receiver>
         <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
         <meta-data android:name="io.sentry.auto-init" android:value="false"/>
         <provider android:authorities="com.discord.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
         </provider>
+        <receiver android:exported="true" android:name="com.discord.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
         <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
         <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>

@@ -89,6 +89,7 @@
     <item type="id" name="automod_message_context_header" />
     <item type="id" name="avatar" />
     <item type="id" name="avatars" />
+    <item type="id" name="background" />
     <item type="id" name="badge_container" />
     <item type="id" name="badge_icon" />
     <item type="id" name="badge_text" />
@@ -638,6 +639,8 @@
     <item type="id" name="ucrop_photobox" />
     <item type="id" name="unchecked" />
     <item type="id" name="up" />
+    <item type="id" name="upload_overlay" />
+    <item type="id" name="upload_progress" />
     <item type="id" name="value" />
     <item type="id" name="verified_bot_icon" />
     <item type="id" name="verified_check_icon" />
