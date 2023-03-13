@@ -9,6 +9,6 @@
             <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" android:indeterminateDrawable="@drawable/drawable_voice_message_view" />
         </FrameLayout>
         <com.discord.chat.presentation.message.view.voicemessages.AudioWaveView android:id="@id/wave" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="4.0dip" />
-        <com.facebook.drawee.span.SimpleDraweeSpanTextView android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" />
+        <com.facebook.drawee.span.SimpleDraweeSpanTextView android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginEnd="8.0dip" />
     </LinearLayout>
 </merge>

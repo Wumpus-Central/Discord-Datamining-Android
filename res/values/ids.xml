@@ -111,6 +111,7 @@
     <item type="id" name="button_container" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
+    <item type="id" name="card" />
     <item type="id" name="catalyst_redbox_title" />
     <item type="id" name="category_name" />
     <item type="id" name="cause_header" />
@@ -167,6 +168,7 @@
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_card" />
     <item type="id" name="disconnect_btn" />
+    <item type="id" name="dismiss" />
     <item type="id" name="dropdown_editable" />
     <item type="id" name="dropdown_noneditable" />
     <item type="id" name="edit_query" />
@@ -327,6 +329,7 @@
     <item type="id" name="item_invite_total_member_dot" />
     <item type="id" name="item_invite_total_member_text" />
     <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="join_button" />
     <item type="id" name="json" />
     <item type="id" name="json_header" />
     <item type="id" name="label" />
