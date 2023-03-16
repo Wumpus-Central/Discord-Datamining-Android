@@ -8,6 +8,6 @@
         </shape>
     </item>
     <item android:left="-36.0dip">
-        <bitmap android:gravity="center|left" android:src="@drawable/APKTOOL_DUMMY_da" />
+        <bitmap android:gravity="center|left" android:src="@drawable/APKTOOL_DUMMY_db" />
     </item>
 </layer-list>
