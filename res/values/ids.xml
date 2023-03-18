@@ -641,6 +641,7 @@
     <item type="id" name="ucrop_photobox" />
     <item type="id" name="unchecked" />
     <item type="id" name="up" />
+    <item type="id" name="upload_cancel" />
     <item type="id" name="upload_complete" />
     <item type="id" name="upload_complete_background" />
     <item type="id" name="upload_complete_layout" />
