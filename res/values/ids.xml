@@ -244,6 +244,7 @@
     <item type="id" name="fields_bottom_wrap" />
     <item type="id" name="fields_container" />
     <item type="id" name="fields_top_wrap" />
+    <item type="id" name="file_action_group" />
     <item type="id" name="file_attachment_container" />
     <item type="id" name="file_attachment_description" />
     <item type="id" name="file_attachment_download" />
