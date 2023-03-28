@@ -647,6 +647,7 @@
     <item type="id" name="upload_complete_background" />
     <item type="id" name="upload_complete_layout" />
     <item type="id" name="upload_overlay" />
+    <item type="id" name="upload_overlay_background" />
     <item type="id" name="upload_progress" />
     <item type="id" name="upload_progress_background" />
     <item type="id" name="upload_progress_layout" />
