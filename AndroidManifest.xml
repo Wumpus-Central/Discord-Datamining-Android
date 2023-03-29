@@ -50,10 +50,10 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <application android:allowBackup="false" android:appCategory="social" android:appComponentFactory="org.lsposed.lspatch.metaloader.LSPAppComponentFactoryStub" android:dataExtractionRules="@xml/data_extraction_rules" android:debuggable="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/data_extraction_rules_legacy" android:icon="@mipmap/ic_logo_square_canary" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.discord.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_logo_round_canary" android:supportsRtl="false" android:theme="@style/AppTheme">
-        <meta-data android:name="libdiscord_version" android:value="89.0.42-webrtc-log-factory"/>
+        <meta-data android:name="libdiscord_version" android:value="89.0.44-getaddrinfo-fix"/>
         <meta-data android:name="com.discord.features.FLAG" android:value="1"/>
         <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.discord.main.MainActivity" android:windowSoftInputMode="adjustResize">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.discord.main.MainActivity" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
