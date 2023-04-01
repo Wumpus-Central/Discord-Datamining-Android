@@ -8888,6 +8888,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Ви передаєте інформацію сторонньому розробнику. Нікому не розкривайте свій пароль та іншу конфіденційну інформацію.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Видалити повідомлення?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Схоже що ви вже ввели якийсь текст. Бажаєте видалити його та використати команду?",
+  "MJ_CHATBAR_BODY": "Введіть «$[command](commandHook)», щоб скористатися Midjourney. Порада: створіть сервер, щоб спробувати самому або з друзями.",
   "INTERACTION_RATE_LIMITED": "Легше! Ви занадто швидко клацаєте.",
   "APPLICATION_ADD_TO_SERVER": "Додати на сервер",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Дії по доданню на сервер",

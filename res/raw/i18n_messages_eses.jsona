@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Estás entregando información a un desarrollador externo. No compartas contraseñas ni ningún tipo de información confidencial.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "¿Borrar mensaje?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Parece que ya has escrito algo. ¿Quieres borrarlo y usar un comando?",
+  "MJ_CHATBAR_BODY": "Escribe «$[command](commandHook)» para usar Midjourney. Consejo: crea un servidor para probarlo con amigos.",
   "INTERACTION_RATE_LIMITED": "¡Más despacio! Estás haciendo clic demasiado rápido.",
   "APPLICATION_ADD_TO_SERVER": "Añadir al servidor",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Acciones de Añadir al servidor",

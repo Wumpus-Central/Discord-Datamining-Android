@@ -8887,6 +8887,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Bạn đang gửi thông tin cho nhà phát triển bên thứ ba. Vui lòng không chia sẻ mật khẩu hoặc thông tin nhạy cảm khác.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Xóa tin nhắn?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Có vẻ như bạn đã viết một nội dung nào đó. Bạn có muốn xóa nội dung này và sử dụng một lệnh không?",
+  "MJ_CHATBAR_BODY": "Nhập “$[command](commandHook)” để sử dụng Midjourney. Mẹo: Tạo một máy chủ để thử dùng riêng chức năng này hoặc dùng cùng với bạn bè.",
   "INTERACTION_RATE_LIMITED": "Chậm lại! Bạn đang nhấp quá nhanh.",
   "APPLICATION_ADD_TO_SERVER": "Thêm vào Máy Chủ",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Thêm vào Tác vụ Máy Chủ",

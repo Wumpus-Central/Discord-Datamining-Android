@@ -8887,6 +8887,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Подаваш информация към разработчик на трета страна. Не споделяйте пароли или друга чувствителна информация.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Изчистване на съобщението?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Вече има нещо написано. Искаш ли да го изчистиш и да използваш команда?",
+  "MJ_CHATBAR_BODY": "Въведи “$[command](commandHook)”, за да използваш Midjourney. Съвет: Създайте сървър за да изпробваш насаме или с приятели.",
   "INTERACTION_RATE_LIMITED": "Забави малко! Кликваш прекалено бързо.",
   "APPLICATION_ADD_TO_SERVER": "Добави към сървър",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Добави към действията в сървъра",

@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Je verzendt informatie naar derden. Deel geen wachtwoorden of andere gevoelige informatie.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Bericht verwijderen?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Het lijkt erop dat je al iets getypt hebt. Wil je dat verwijderen en in plaats daarvan een opdracht gebruiken?",
+  "MJ_CHATBAR_BODY": "Typ '$[command](commandHook)' om Midjourney te gebruiken. Tip: maak een server aan om het privé of met vrienden uit te proberen.",
   "INTERACTION_RATE_LIMITED": "Rustig aan! Je klikt te snel.",
   "APPLICATION_ADD_TO_SERVER": "Toevoegen aan server",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Voeg toe aan serveracties",

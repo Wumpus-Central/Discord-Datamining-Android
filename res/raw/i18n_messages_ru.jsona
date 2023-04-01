@@ -8890,6 +8890,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Вы передаёте информацию стороннему разработчику. Не указывайте свои пароли и прочую конфиденциальную информацию.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Стереть сообщение?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Похоже, вы уже ввели какой-то текст. Хотите удалить его и использовать команду?",
+  "MJ_CHATBAR_BODY": "Введите $[command](commandHook), чтобы использовать Midjourney. Совет: создайте сервер, чтобы попробовать его только с друзьями.",
   "INTERACTION_RATE_LIMITED": "Снизьте обороты! Вы щёлкаете слишком быстро.",
   "APPLICATION_ADD_TO_SERVER": "Добавить на сервер",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Действия по добавлению на сервер",

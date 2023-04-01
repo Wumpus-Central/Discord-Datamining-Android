@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "第三者の開発会社に情報を送信しています。パスワードやその他の個人情報を送らないでください。",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "メッセージを削除しますか？",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "既に何かが書いてあるようです。すべて削除してコマンドを使用しますか？",
+  "MJ_CHATBAR_BODY": "“$[command](commandHook)” と打ち込めば、Midjourney（ミッドジャーニー）が使えます。ヒント: サーバーを作成して、友​​達だけで試してみてください。",
   "INTERACTION_RATE_LIMITED": "落ち着いて！ クリックしすぎですよ。",
   "APPLICATION_ADD_TO_SERVER": "サーバーに追加",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "サーバーに追加のアクション",

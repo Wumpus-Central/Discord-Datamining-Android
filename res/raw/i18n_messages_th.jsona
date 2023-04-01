@@ -8888,6 +8888,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "คุณกำลังส่งข้อมูลไปยังผู้พัฒนาบุคคลที่สาม อย่าเปิดเผยรหัสผ่านหรือข้อมูลที่ละเอียดอ่อนอื่น ๆ",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "ล้างข้อความหรือไม่",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "ดูเหมือนว่าคุณได้เขียนอะไรบางอย่างแล้ว คุณต้องการล้างข้อมูลและใช้คำสั่งหรือไม่",
+  "MJ_CHATBAR_BODY": "พิมพ์ “$[command](commandHook)” เพื่อใช้ Midjourney คล็ดลับ: สร้างเซิร์ฟเวอร์งใช้งานแบบส่วนตัวหรือใช้กับเพื่อน",
   "INTERACTION_RATE_LIMITED": "ใจเย็น ๆ! คุณคลิกเร็วเกินไปแล้ว",
   "APPLICATION_ADD_TO_SERVER": "เพิ่มไปยังเซิร์ฟเวอร์",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "เพิ่มไปยังการดำเนินการสำหรับเซิร์ฟเวอร์",

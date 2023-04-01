@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Bir üçüncü taraf geliştiriciye bilgi gönderiyorsun. Şifrelerini ya da diğer hassas bilgilerini paylaşmadığından emin ol.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Mesaj temizlensin mi?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Görünüşe göre çoktan bir şeyler yazmışsın. Mesajı temizlemek ve bir komut kullanmak ister misin?",
+  "MJ_CHATBAR_BODY": "Midjourney'yi kullanmak için “$[command](commandHook)” yaz. Kendi başına veya arkadaşlarınla denemek.",
   "INTERACTION_RATE_LIMITED": "Yavaşla! Çok hızlı tıklıyorsun.",
   "APPLICATION_ADD_TO_SERVER": "Sunucuya ekle",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Sunucuya Ekleme Eylemleri",

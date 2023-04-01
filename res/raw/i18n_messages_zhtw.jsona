@@ -8887,6 +8887,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "您正在將資訊提交給第三方開發者。請勿分享密碼或其他敏感資訊。",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "要清除訊息嗎？",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "您似乎已經寫了一些東西。您想將其清除並使用指令嗎？",
+  "MJ_CHATBAR_BODY": "請輸入「$[command](commandHook)」來使用 Midjourney。 此處即可私下或與好友一起試用。",
   "INTERACTION_RATE_LIMITED": "慢一點！您按太快了。",
   "APPLICATION_ADD_TO_SERVER": "新增至伺服器",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "新增至伺服器操作",

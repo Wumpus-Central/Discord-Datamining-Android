@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Du håller på att skicka information till en tredjepartsutvecklare. Dela inte lösenord eller annan känslig information.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Radera meddelande?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Det verkar som om du redan har skrivit något. Vill du radera det och använda ett kommando?",
+  "MJ_CHATBAR_BODY": "Skriv “$[command](commandHook)” för att använda Midjourney. Tips: Skapa en server för att testa den privat eller med vänner.",
   "INTERACTION_RATE_LIMITED": "Sakta ner! Du klickar för snabbt.",
   "APPLICATION_ADD_TO_SERVER": "Lägg till på server",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Lägg till i Serveråtgärder",

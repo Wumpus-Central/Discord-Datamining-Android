@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "Przesyłasz informacje do zewnętrznego dewelopera. Nie udostępniaj haseł ani innych wrażliwych informacji.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "Wyczyścić wiadomość?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "Wygląda na to, że już coś napisano. Czy chcesz wyczyścić tekst i użyć polecenia?",
+  "MJ_CHATBAR_BODY": "Wprowadź „$[command](commandHook)\", aby użyć Midjourney. Wskazówka: Utwórz serwer, aby wypróbować funkcję prywatnie lub ze znajomymi.",
   "INTERACTION_RATE_LIMITED": "Zwolnij! Za szybko klikasz.",
   "APPLICATION_ADD_TO_SERVER": "Dodaj do serwera",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "Działania dotyczące dodawania do serwera",

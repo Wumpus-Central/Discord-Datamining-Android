@@ -5170,7 +5170,7 @@
   "SUPER_REACTIONS_REFILL_COUNTDOWN": "आपको {n, plural, =1 {1 दिन} other {{n} दिनों}} में{refillAmount} और सुपर रिएक्शन मिलने वाले हैं.",
   "SUPER_REACTIONS_REFILL_SOON": "आपको बाद में आज {refillAmount} और सुपर रिएक्शन मिलने वाले हैं.",
   "SUPER_REACTIONS_TAB_TOOLTIP": "आपके सुपर रिएक्शन खत्म हो गए हैं. आपको ये और {n, plural, =1 {1 दिन} other {{n} दिनों}}में मिल जाएंगे!",
-  "SUPER_REACTIONS_TAB_TOOLTIP_AMOUNT": "आपके पास {count, plural, =1 {1 सुपर रिएक्शन} other {{count} सुपर रिएक्शन हैं}}. आपको {n, plural, =1 {1 दिन} other {{n} दिनों}} में {refillAmount} और ज़्यादा मिल जाएंगे.",
+  "SUPER_REACTIONS_TAB_TOOLTIP_AMOUNT": "आपके पास {count, plural, =1 {1 सुपर रिएक्शन} other {{count} सुपर रिएक्शन हैं}}. आपको {n, plural, =1 {1 दिन} other {{n} दिनों में}} {refillAmount} और ज़्यादा मिल जाएंगे.",
   "SUPER_REACTIONS_TAB_TOOLTIP_AMOUNT_SOON": "आपके पास {count, plural, =1 {1 सुपर रिएक्शन} other {{count} सुपर रिएक्शन हैं}}. आपको आज बाद में {refillAmount} और ज़्यादा मिल जाएंगे.",
   "SUPER_REACTIONS_TAB_TOOLTIP_SOON": "आपको आज बाद में और ज़्यादा सुपर रिएक्शन मिल जाएंगे.",
   "SUPER_REACTIONS_TOOLTIP_COACHMARK_TITLE": "नया! सुपर रिएक्शन",

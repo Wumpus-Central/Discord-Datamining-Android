@@ -8889,6 +8889,7 @@
   "APPLICATION_COMMAND_FORM_DATA_WARNING": "제삼자 개발사에게 정보가 제출될 거예요. 비밀번호와 같은 중요한 개인정보가 노출되지 않도록 주의하세요.",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "메시지를 지울까요?",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "이미 내용을 입력하신 것 같네요. 지우고 명령어를 사용할까요?",
+  "MJ_CHATBAR_BODY": "Midjourney를 사용하려면 “$[command](commandHook)”을 입력하세요. 팁: 서버를 만들어 친구들과만 사용해 보세요.",
   "INTERACTION_RATE_LIMITED": "천천히 하세요! 너무 빨리 클릭하고 있어요.",
   "APPLICATION_ADD_TO_SERVER": "서버에 추가",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "서버에 추가 동작",
