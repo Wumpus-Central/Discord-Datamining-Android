@@ -93,6 +93,7 @@
     <item type="id" name="badge_icon" />
     <item type="id" name="badge_text" />
     <item type="id" name="barrier_button" />
+    <item type="id" name="barrier_footer" />
     <item type="id" name="barrier_header" />
     <item type="id" name="bg_gradient" />
     <item type="id" name="blocked_message_group_button" />
@@ -309,8 +310,11 @@
     <item type="id" name="inline_media_volume_toggle" />
     <item type="id" name="invite_to_speak_button" />
     <item type="id" name="invite_to_speak_text" />
+    <item type="id" name="item_bottom_container" />
     <item type="id" name="item_components_root" />
-    <item type="id" name="item_invite_container" />
+    <item type="id" name="item_description" />
+    <item type="id" name="item_header" />
+    <item type="id" name="item_hero" />
     <item type="id" name="item_invite_disabled_icon" />
     <item type="id" name="item_invite_header" />
     <item type="id" name="item_invite_help_icon" />
@@ -334,6 +338,7 @@
     <item type="id" name="json_header" />
     <item type="id" name="label" />
     <item type="id" name="labelled_by" />
+    <item type="id" name="launch_button" />
     <item type="id" name="layout_aspect_ratio" />
     <item type="id" name="layout_rotate_wheel" />
     <item type="id" name="layout_scale_wheel" />
@@ -455,6 +460,9 @@
     <item type="id" name="parentPanel" />
     <item type="id" name="parent_matrix" />
     <item type="id" name="participants" />
+    <item type="id" name="participants_container" />
+    <item type="id" name="participants_info" />
+    <item type="id" name="participants_info_container" />
     <item type="id" name="pickerWrapper" />
     <item type="id" name="player_container" />
     <item type="id" name="pointer_enter" />
