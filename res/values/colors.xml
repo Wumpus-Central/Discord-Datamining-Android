@@ -662,6 +662,8 @@
     <color name="red_860">#ff280808</color>
     <color name="red_900">#ff220606</color>
     <color name="reddit">#ffff4500</color>
+    <color name="redesign_button_secondary_border_dark">#33ffffff</color>
+    <color name="redesign_button_secondary_border_light">#14000000</color>
     <color name="riot_games">#ffea0029</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>

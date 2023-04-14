@@ -332,6 +332,8 @@
     <item type="id" name="item_invite_title" />
     <item type="id" name="item_invite_total_member_dot" />
     <item type="id" name="item_invite_total_member_text" />
+    <item type="id" name="item_subtitle" />
+    <item type="id" name="item_title" />
     <item type="id" name="item_touch_helper_previous_elevation" />
     <item type="id" name="join_button" />
     <item type="id" name="json" />
@@ -435,6 +437,7 @@
     <item type="id" name="navigation_bar_item_large_label_view" />
     <item type="id" name="navigation_bar_item_small_label_view" />
     <item type="id" name="navigation_header_container" />
+    <item type="id" name="no_participants_text" />
     <item type="id" name="notification_background" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
@@ -576,6 +579,8 @@
     <item type="id" name="subtext" />
     <item type="id" name="subtitle" />
     <item type="id" name="subtitleGradient" />
+    <item type="id" name="subtitle_icon" />
+    <item type="id" name="subtitle_top_barrier" />
     <item type="id" name="suppress_notifications_icon" />
     <item type="id" name="survey_background" />
     <item type="id" name="survey_card" />
