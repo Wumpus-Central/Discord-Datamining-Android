@@ -5793,14 +5793,14 @@
 
     move-result v2
 
-    const/16 v3, 0x10
-
     if-eq v2, v8, :cond_34
 
     if-eq v2, v1, :cond_33
 
+    const/16 v2, 0x10
+
     .line 190
-    invoke-static {v3}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getSpToPx(I)I
+    invoke-static {v2}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getSpToPx(I)I
 
     move-result v2
 
@@ -5826,40 +5826,42 @@
 
     .line 193
     :goto_1c
-    new-instance v4, Landroid/text/style/AbsoluteSizeSpan;
+    new-instance v3, Landroid/text/style/AbsoluteSizeSpan;
 
-    invoke-direct {v4, v2}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+    invoke-direct {v3, v2}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+
+    const/16 v2, 0x8
 
     .line 194
-    invoke-static {v3}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
+    invoke-static {v2}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
 
-    move-result v2
+    move-result v4
 
     .line 195
     invoke-virtual {v13}, Lcom/discord/chat/bridge/contentnode/HeadingContentNode;->getLevel()I
 
-    move-result v3
+    move-result v2
 
-    if-eq v3, v8, :cond_36
+    if-eq v2, v8, :cond_36
 
-    if-eq v3, v1, :cond_36
+    if-eq v2, v1, :cond_36
 
     const/4 v6, 0x3
 
-    if-eq v3, v6, :cond_35
+    if-eq v2, v6, :cond_35
 
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
     .line 196
-    invoke-static {v3}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
+    invoke-static {v2}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_1f
 
     :cond_35
     :goto_1d
-    const/16 v3, 0x8
+    const/16 v2, 0x8
 
     goto :goto_1e
 
@@ -5870,15 +5872,15 @@
 
     .line 197
     :goto_1e
-    invoke-static {v3}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
+    invoke-static {v2}, Lcom/discord/misc/utilities/size/SizeUtilsKt;->getDpToPx(I)I
 
-    move-result v3
+    move-result v2
 
     .line 198
     :goto_1f
     new-instance v7, Lcom/discord/span/utilities/spannable/VerticalPaddingSpan;
 
-    invoke-direct {v7, v2, v3}, Lcom/discord/span/utilities/spannable/VerticalPaddingSpan;-><init>(II)V
+    invoke-direct {v7, v4, v2}, Lcom/discord/span/utilities/spannable/VerticalPaddingSpan;-><init>(II)V
 
     new-array v9, v6, [Ljava/lang/Object;
 
@@ -5886,7 +5888,7 @@
 
     aput-object v0, v9, v8
 
-    aput-object v4, v9, v1
+    aput-object v3, v9, v1
 
     .line 199
     invoke-virtual/range {p2 .. p2}, Landroid/text/SpannableStringBuilder;->length()I
@@ -5896,7 +5898,7 @@
     .line 200
     new-instance v1, Landroid/text/style/AbsoluteSizeSpan;
 
-    invoke-direct {v1, v2}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+    invoke-direct {v1, v4}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
 
     invoke-static {v15, v1}, Lcom/discord/span/utilities/SpannableStringBuilderExtensionsKt;->ensureNewline(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V
 
@@ -5910,7 +5912,7 @@
     .line 202
     new-instance v1, Landroid/text/style/AbsoluteSizeSpan;
 
-    invoke-direct {v1, v3}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+    invoke-direct {v1, v2}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
 
     invoke-static {v15, v1}, Lcom/discord/span/utilities/SpannableStringBuilderExtensionsKt;->ensureNewline(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V
 

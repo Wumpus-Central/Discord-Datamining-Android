@@ -411,97 +411,97 @@
 
 .field public static final ic_swipe_reply_outline:I = 0x7f0800f6
 
-.field public static final m3_appbar_background:I = 0x7f080492
+.field public static final m3_appbar_background:I = 0x7f08047b
 
-.field public static final m3_popupmenu_background_overlay:I = 0x7f080493
+.field public static final m3_popupmenu_background_overlay:I = 0x7f08047c
 
-.field public static final m3_radiobutton_ripple:I = 0x7f080494
+.field public static final m3_radiobutton_ripple:I = 0x7f08047d
 
-.field public static final m3_selection_control_ripple:I = 0x7f080495
+.field public static final m3_selection_control_ripple:I = 0x7f08047e
 
-.field public static final m3_tabs_background:I = 0x7f080496
+.field public static final m3_tabs_background:I = 0x7f08047f
 
-.field public static final m3_tabs_line_indicator:I = 0x7f080497
+.field public static final m3_tabs_line_indicator:I = 0x7f080480
 
-.field public static final m3_tabs_rounded_line_indicator:I = 0x7f080498
+.field public static final m3_tabs_rounded_line_indicator:I = 0x7f080481
 
-.field public static final m3_tabs_transparent_background:I = 0x7f080499
+.field public static final m3_tabs_transparent_background:I = 0x7f080482
 
-.field public static final material_cursor_drawable:I = 0x7f08049a
+.field public static final material_cursor_drawable:I = 0x7f080483
 
-.field public static final material_ic_calendar_black_24dp:I = 0x7f08049b
+.field public static final material_ic_calendar_black_24dp:I = 0x7f080484
 
-.field public static final material_ic_clear_black_24dp:I = 0x7f08049c
+.field public static final material_ic_clear_black_24dp:I = 0x7f080485
 
-.field public static final material_ic_edit_black_24dp:I = 0x7f08049d
+.field public static final material_ic_edit_black_24dp:I = 0x7f080486
 
-.field public static final material_ic_keyboard_arrow_left_black_24dp:I = 0x7f08049e
+.field public static final material_ic_keyboard_arrow_left_black_24dp:I = 0x7f080487
 
-.field public static final material_ic_keyboard_arrow_next_black_24dp:I = 0x7f08049f
+.field public static final material_ic_keyboard_arrow_next_black_24dp:I = 0x7f080488
 
-.field public static final material_ic_keyboard_arrow_previous_black_24dp:I = 0x7f0804a0
+.field public static final material_ic_keyboard_arrow_previous_black_24dp:I = 0x7f080489
 
-.field public static final material_ic_keyboard_arrow_right_black_24dp:I = 0x7f0804a1
+.field public static final material_ic_keyboard_arrow_right_black_24dp:I = 0x7f08048a
 
-.field public static final material_ic_menu_arrow_down_black_24dp:I = 0x7f0804a2
+.field public static final material_ic_menu_arrow_down_black_24dp:I = 0x7f08048b
 
-.field public static final material_ic_menu_arrow_up_black_24dp:I = 0x7f0804a3
+.field public static final material_ic_menu_arrow_up_black_24dp:I = 0x7f08048c
 
-.field public static final mtrl_dialog_background:I = 0x7f080617
+.field public static final mtrl_dialog_background:I = 0x7f080601
 
-.field public static final mtrl_dropdown_arrow:I = 0x7f080618
+.field public static final mtrl_dropdown_arrow:I = 0x7f080602
 
-.field public static final mtrl_ic_arrow_drop_down:I = 0x7f080619
+.field public static final mtrl_ic_arrow_drop_down:I = 0x7f080603
 
-.field public static final mtrl_ic_arrow_drop_up:I = 0x7f08061a
+.field public static final mtrl_ic_arrow_drop_up:I = 0x7f080604
 
-.field public static final mtrl_ic_cancel:I = 0x7f08061b
+.field public static final mtrl_ic_cancel:I = 0x7f080605
 
-.field public static final mtrl_ic_error:I = 0x7f08061c
+.field public static final mtrl_ic_error:I = 0x7f080606
 
-.field public static final mtrl_navigation_bar_item_background:I = 0x7f08061d
+.field public static final mtrl_navigation_bar_item_background:I = 0x7f080607
 
-.field public static final mtrl_popupmenu_background:I = 0x7f08061e
+.field public static final mtrl_popupmenu_background:I = 0x7f080608
 
-.field public static final mtrl_popupmenu_background_overlay:I = 0x7f08061f
+.field public static final mtrl_popupmenu_background_overlay:I = 0x7f080609
 
-.field public static final mtrl_tabs_default_indicator:I = 0x7f080620
+.field public static final mtrl_tabs_default_indicator:I = 0x7f08060a
 
-.field public static final navigation_empty_icon:I = 0x7f080621
+.field public static final navigation_empty_icon:I = 0x7f08060b
 
-.field public static final notification_action_background:I = 0x7f080648
+.field public static final notification_action_background:I = 0x7f080632
 
-.field public static final notification_bg:I = 0x7f080649
+.field public static final notification_bg:I = 0x7f080633
 
-.field public static final notification_bg_low:I = 0x7f08064a
+.field public static final notification_bg_low:I = 0x7f080634
 
-.field public static final notification_bg_low_normal:I = 0x7f08064b
+.field public static final notification_bg_low_normal:I = 0x7f080635
 
-.field public static final notification_bg_low_pressed:I = 0x7f08064c
+.field public static final notification_bg_low_pressed:I = 0x7f080636
 
-.field public static final notification_bg_normal:I = 0x7f08064d
+.field public static final notification_bg_normal:I = 0x7f080637
 
-.field public static final notification_bg_normal_pressed:I = 0x7f08064e
+.field public static final notification_bg_normal_pressed:I = 0x7f080638
 
-.field public static final notification_icon_background:I = 0x7f08064f
+.field public static final notification_icon_background:I = 0x7f080639
 
-.field public static final notification_template_icon_bg:I = 0x7f080650
+.field public static final notification_template_icon_bg:I = 0x7f08063a
 
-.field public static final notification_template_icon_low_bg:I = 0x7f080651
+.field public static final notification_template_icon_low_bg:I = 0x7f08063b
 
-.field public static final notification_tile_bg:I = 0x7f080652
+.field public static final notification_tile_bg:I = 0x7f08063c
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080653
+.field public static final notify_panel_notification_icon_bg:I = 0x7f08063d
 
-.field public static final redbox_top_border_background:I = 0x7f080655
+.field public static final redbox_top_border_background:I = 0x7f08063f
 
-.field public static final test_custom_background:I = 0x7f080656
+.field public static final test_custom_background:I = 0x7f080640
 
-.field public static final test_level_drawable:I = 0x7f080657
+.field public static final test_level_drawable:I = 0x7f080641
 
-.field public static final tooltip_frame_dark:I = 0x7f080658
+.field public static final tooltip_frame_dark:I = 0x7f080642
 
-.field public static final tooltip_frame_light:I = 0x7f080659
+.field public static final tooltip_frame_light:I = 0x7f080643
 
 
 # direct methods

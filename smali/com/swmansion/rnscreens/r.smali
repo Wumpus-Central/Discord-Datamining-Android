@@ -2227,179 +2227,178 @@
 
     .line 228
     .line 229
-    iget-object v9, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    invoke-static {v5, v4}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 230
     .line 231
-    if-eqz v9, :cond_e
-
     .line 232
+    move-result v9
+
     .line 233
-    check-cast v9, Lcom/swmansion/rnscreens/s;
+    if-nez v9, :cond_e
 
     .line 234
     .line 235
-    invoke-virtual {v9}, Landroidx/fragment/app/Fragment;->isAdded()Z
+    iget-object v9, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 236
     .line 237
-    .line 238
-    move-result v9
+    if-eqz v9, :cond_e
 
+    .line 238
     .line 239
-    if-nez v9, :cond_e
+    check-cast v9, Lcom/swmansion/rnscreens/s;
 
     .line 240
     .line 241
-    check-cast v4, Landroidx/fragment/app/Fragment;
+    invoke-virtual {v9}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     .line 242
     .line 243
-    invoke-virtual {v8, v4}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
-
     .line 244
-    .line 245
-    .line 246
-    :cond_e
-    invoke-virtual {v8}, Landroidx/fragment/app/FragmentTransaction;->j()V
+    move-result v9
 
+    .line 245
+    if-nez v9, :cond_e
+
+    .line 246
     .line 247
+    check-cast v4, Landroidx/fragment/app/Fragment;
+
     .line 248
     .line 249
-    invoke-virtual {p0}, Lcom/swmansion/rnscreens/l;->f()Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {v8, v4}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 250
     .line 251
     .line 252
-    move-result-object v4
+    invoke-virtual {v8}, Landroidx/fragment/app/FragmentTransaction;->j()V
 
     .line 253
-    if-eqz v3, :cond_10
-
     .line 254
     .line 255
-    if-eqz v2, :cond_f
+    :cond_e
+    invoke-virtual {p0}, Lcom/swmansion/rnscreens/l;->f()Landroidx/fragment/app/FragmentTransaction;
 
     .line 256
     .line 257
-    sget-object v8, Lcom/swmansion/rnscreens/r$c;->a:[I
-
     .line 258
+    move-result-object v4
+
     .line 259
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    if-eqz v3, :cond_10
 
     .line 260
     .line 261
-    .line 262
-    move-result v3
+    if-eqz v2, :cond_f
 
+    .line 262
     .line 263
-    aget v3, v8, v3
+    sget-object v8, Lcom/swmansion/rnscreens/r$c;->a:[I
 
     .line 264
     .line 265
-    packed-switch v3, :pswitch_data_0
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 266
     .line 267
     .line 268
-    goto/16 :goto_9
+    move-result v3
 
     .line 269
+    aget v3, v8, v3
+
     .line 270
-    :pswitch_0
-    sget v3, Lcom/swmansion/rnscreens/g;->e:I
-
     .line 271
-    .line 272
-    sget v8, Lcom/swmansion/rnscreens/g;->k:I
+    packed-switch v3, :pswitch_data_0
 
+    .line 272
     .line 273
     .line 274
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
+    goto/16 :goto_9
 
     .line 275
     .line 276
+    :pswitch_0
+    sget v3, Lcom/swmansion/rnscreens/g;->e:I
+
     .line 277
-    goto/16 :goto_9
-
     .line 278
+    sget v8, Lcom/swmansion/rnscreens/g;->k:I
+
     .line 279
-    :pswitch_1
-    sget v3, Lcom/swmansion/rnscreens/g;->m:I
-
     .line 280
-    .line 281
-    sget v8, Lcom/swmansion/rnscreens/g;->l:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
+    .line 281
     .line 282
     .line 283
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
+    goto/16 :goto_9
 
     .line 284
     .line 285
+    :pswitch_1
+    sget v3, Lcom/swmansion/rnscreens/g;->m:I
+
     .line 286
-    goto/16 :goto_9
-
     .line 287
+    sget v8, Lcom/swmansion/rnscreens/g;->l:I
+
     .line 288
-    :pswitch_2
-    sget v3, Lcom/swmansion/rnscreens/g;->n:I
-
     .line 289
-    .line 290
-    sget v8, Lcom/swmansion/rnscreens/g;->r:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
+    .line 290
     .line 291
     .line 292
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
+    goto/16 :goto_9
 
     .line 293
     .line 294
-    .line 295
-    goto :goto_9
+    :pswitch_2
+    sget v3, Lcom/swmansion/rnscreens/g;->n:I
 
+    .line 295
     .line 296
-    :pswitch_3
-    sget v3, Lcom/swmansion/rnscreens/g;->o:I
+    sget v8, Lcom/swmansion/rnscreens/g;->r:I
 
     .line 297
     .line 298
-    sget v8, Lcom/swmansion/rnscreens/g;->q:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 299
     .line 300
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 301
-    .line 302
-    .line 303
     goto :goto_9
 
+    .line 302
+    :pswitch_3
+    sget v3, Lcom/swmansion/rnscreens/g;->o:I
+
+    .line 303
     .line 304
-    :pswitch_4
-    sget v3, Lcom/swmansion/rnscreens/g;->f:I
+    sget v8, Lcom/swmansion/rnscreens/g;->q:I
 
     .line 305
     .line 306
-    sget v8, Lcom/swmansion/rnscreens/g;->g:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 307
     .line 308
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 309
-    .line 310
-    .line 311
     goto :goto_9
 
+    .line 310
+    :pswitch_4
+    sget v3, Lcom/swmansion/rnscreens/g;->f:I
+
+    .line 311
     .line 312
-    :pswitch_5
-    sget v3, Lcom/swmansion/rnscreens/g;->i:I
+    sget v8, Lcom/swmansion/rnscreens/g;->g:I
 
     .line 313
     .line 314
-    invoke-virtual {v4, v3, v3}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 315
     .line 316
@@ -2407,139 +2406,139 @@
     goto :goto_9
 
     .line 318
-    :pswitch_6
-    sget v3, Lcom/swmansion/rnscreens/g;->a:I
+    :pswitch_5
+    sget v3, Lcom/swmansion/rnscreens/g;->i:I
 
     .line 319
     .line 320
-    sget v8, Lcom/swmansion/rnscreens/g;->b:I
+    invoke-virtual {v4, v3, v3}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 321
     .line 322
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 323
-    .line 324
-    .line 325
     goto :goto_9
 
+    .line 324
+    :pswitch_6
+    sget v3, Lcom/swmansion/rnscreens/g;->a:I
+
+    .line 325
     .line 326
-    :cond_f
-    sget-object v8, Lcom/swmansion/rnscreens/r$c;->a:[I
+    sget v8, Lcom/swmansion/rnscreens/g;->b:I
 
     .line 327
     .line 328
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 329
     .line 330
     .line 331
-    move-result v3
+    goto :goto_9
 
     .line 332
-    aget v3, v8, v3
+    :cond_f
+    sget-object v8, Lcom/swmansion/rnscreens/r$c;->a:[I
 
     .line 333
     .line 334
-    packed-switch v3, :pswitch_data_1
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 335
     .line 336
     .line 337
-    goto :goto_9
+    move-result v3
 
     .line 338
-    :pswitch_7
-    sget v3, Lcom/swmansion/rnscreens/g;->j:I
+    aget v3, v8, v3
 
     .line 339
     .line 340
-    sget v8, Lcom/swmansion/rnscreens/g;->h:I
+    packed-switch v3, :pswitch_data_1
 
     .line 341
     .line 342
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 343
-    .line 344
-    .line 345
     goto :goto_9
 
+    .line 344
+    :pswitch_7
+    sget v3, Lcom/swmansion/rnscreens/g;->j:I
+
+    .line 345
     .line 346
-    :pswitch_8
-    sget v3, Lcom/swmansion/rnscreens/g;->l:I
+    sget v8, Lcom/swmansion/rnscreens/g;->h:I
 
     .line 347
     .line 348
-    sget v8, Lcom/swmansion/rnscreens/g;->p:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 349
     .line 350
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 351
-    .line 352
-    .line 353
     goto :goto_9
 
+    .line 352
+    :pswitch_8
+    sget v3, Lcom/swmansion/rnscreens/g;->l:I
+
+    .line 353
     .line 354
-    :pswitch_9
-    sget v3, Lcom/swmansion/rnscreens/g;->o:I
+    sget v8, Lcom/swmansion/rnscreens/g;->p:I
 
     .line 355
     .line 356
-    sget v8, Lcom/swmansion/rnscreens/g;->q:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 357
     .line 358
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 359
-    .line 360
-    .line 361
     goto :goto_9
 
+    .line 360
+    :pswitch_9
+    sget v3, Lcom/swmansion/rnscreens/g;->o:I
+
+    .line 361
     .line 362
-    :pswitch_a
-    sget v3, Lcom/swmansion/rnscreens/g;->n:I
+    sget v8, Lcom/swmansion/rnscreens/g;->q:I
 
     .line 363
     .line 364
-    sget v8, Lcom/swmansion/rnscreens/g;->r:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 365
     .line 366
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 367
-    .line 368
-    .line 369
     goto :goto_9
 
+    .line 368
+    :pswitch_a
+    sget v3, Lcom/swmansion/rnscreens/g;->n:I
+
+    .line 369
     .line 370
-    :pswitch_b
-    sget v3, Lcom/swmansion/rnscreens/g;->f:I
+    sget v8, Lcom/swmansion/rnscreens/g;->r:I
 
     .line 371
     .line 372
-    sget v8, Lcom/swmansion/rnscreens/g;->g:I
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 373
     .line 374
-    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
-
     .line 375
-    .line 376
-    .line 377
     goto :goto_9
 
+    .line 376
+    :pswitch_b
+    sget v3, Lcom/swmansion/rnscreens/g;->f:I
+
+    .line 377
     .line 378
-    :pswitch_c
-    sget v3, Lcom/swmansion/rnscreens/g;->i:I
+    sget v8, Lcom/swmansion/rnscreens/g;->g:I
 
     .line 379
     .line 380
-    invoke-virtual {v4, v3, v3}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 381
     .line 382
@@ -2547,326 +2546,327 @@
     goto :goto_9
 
     .line 384
-    :pswitch_d
-    sget v3, Lcom/swmansion/rnscreens/g;->c:I
+    :pswitch_c
+    sget v3, Lcom/swmansion/rnscreens/g;->i:I
 
     .line 385
     .line 386
-    sget v8, Lcom/swmansion/rnscreens/g;->d:I
+    invoke-virtual {v4, v3, v3}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
     .line 387
     .line 388
+    .line 389
+    goto :goto_9
+
+    .line 390
+    :pswitch_d
+    sget v3, Lcom/swmansion/rnscreens/g;->c:I
+
+    .line 391
+    .line 392
+    sget v8, Lcom/swmansion/rnscreens/g;->d:I
+
+    .line 393
+    .line 394
     invoke-virtual {v4, v3, v8}, Landroidx/fragment/app/FragmentTransaction;->q(II)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 389
-    .line 390
-    .line 391
+    .line 395
+    .line 396
+    .line 397
     :cond_10
     :goto_9
     iput-boolean v2, p0, Lcom/swmansion/rnscreens/r;->A:Z
 
-    .line 392
-    .line 393
-    if-eqz v2, :cond_11
-
-    .line 394
-    .line 395
-    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
-
-    .line 396
-    .line 397
-    if-eqz v2, :cond_11
-
     .line 398
     .line 399
-    sget-object v3, Lcom/swmansion/rnscreens/r;->B:Lcom/swmansion/rnscreens/r$a;
+    if-eqz v2, :cond_11
 
     .line 400
     .line 401
-    check-cast v2, Lcom/swmansion/rnscreens/s;
+    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 402
     .line 403
-    invoke-static {v3, v2}, Lcom/swmansion/rnscreens/r$a;->b(Lcom/swmansion/rnscreens/r$a;Lcom/swmansion/rnscreens/s;)Z
+    if-eqz v2, :cond_11
 
     .line 404
     .line 405
-    .line 406
-    move-result v2
+    sget-object v3, Lcom/swmansion/rnscreens/r;->B:Lcom/swmansion/rnscreens/r$a;
 
+    .line 406
     .line 407
-    if-eqz v2, :cond_11
+    check-cast v2, Lcom/swmansion/rnscreens/s;
 
     .line 408
     .line 409
-    if-nez v5, :cond_11
+    invoke-static {v3, v2}, Lcom/swmansion/rnscreens/r$a;->b(Lcom/swmansion/rnscreens/r$a;Lcom/swmansion/rnscreens/s;)Z
 
     .line 410
     .line 411
-    iput-boolean v7, p0, Lcom/swmansion/rnscreens/r;->x:Z
-
     .line 412
+    move-result v2
+
     .line 413
-    :cond_11
-    iget-object v2, p0, Lcom/swmansion/rnscreens/r;->r:Ljava/util/ArrayList;
+    if-eqz v2, :cond_11
 
     .line 414
     .line 415
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    if-nez v5, :cond_11
 
     .line 416
     .line 417
+    iput-boolean v7, p0, Lcom/swmansion/rnscreens/r;->x:Z
+
     .line 418
+    .line 419
+    :cond_11
+    iget-object v2, p0, Lcom/swmansion/rnscreens/r;->r:Ljava/util/ArrayList;
+
+    .line 420
+    .line 421
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 422
+    .line 423
+    .line 424
     move-result-object v2
 
-    .line 419
+    .line 425
     :cond_12
     :goto_a
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 420
-    .line 421
-    .line 422
-    move-result v3
-
-    .line 423
-    if-eqz v3, :cond_14
-
-    .line 424
-    .line 425
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 426
     .line 427
     .line 428
-    move-result-object v3
+    move-result v3
 
     .line 429
-    check-cast v3, Lcom/swmansion/rnscreens/s;
+    if-eqz v3, :cond_14
 
     .line 430
     .line 431
-    iget-object v8, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 432
     .line 433
-    invoke-virtual {v8, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
     .line 434
-    .line 435
-    .line 436
-    move-result v8
+    move-result-object v3
 
+    .line 435
+    check-cast v3, Lcom/swmansion/rnscreens/s;
+
+    .line 436
     .line 437
-    if-eqz v8, :cond_13
+    iget-object v8, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
 
     .line 438
     .line 439
-    iget-object v8, p0, Lcom/swmansion/rnscreens/r;->s:Ljava/util/Set;
+    invoke-virtual {v8, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     .line 440
     .line 441
-    invoke-interface {v8, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
     .line 442
-    .line 443
-    .line 444
     move-result v8
 
+    .line 443
+    if-eqz v8, :cond_13
+
+    .line 444
     .line 445
-    if-eqz v8, :cond_12
+    iget-object v8, p0, Lcom/swmansion/rnscreens/r;->s:Ljava/util/Set;
 
     .line 446
     .line 447
-    :cond_13
-    invoke-virtual {v4, v3}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    invoke-interface {v8, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     .line 448
     .line 449
     .line 450
-    goto :goto_a
+    move-result v8
 
     .line 451
-    :cond_14
-    iget-object v2, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+    if-eqz v8, :cond_12
 
     .line 452
     .line 453
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :cond_13
+    invoke-virtual {v4, v3}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 454
     .line 455
     .line 456
-    move-result-object v2
+    goto :goto_a
 
     .line 457
+    :cond_14
+    iget-object v2, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+
+    .line 458
+    .line 459
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 460
+    .line 461
+    .line 462
+    move-result-object v2
+
+    .line 463
     :cond_15
     :goto_b
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 458
-    .line 459
-    .line 460
-    move-result v3
-
-    .line 461
-    if-eqz v3, :cond_18
-
-    .line 462
-    .line 463
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 464
     .line 465
     .line 466
-    move-result-object v3
+    move-result v3
 
     .line 467
-    check-cast v3, Lcom/swmansion/rnscreens/s;
+    if-eqz v3, :cond_18
 
     .line 468
     .line 469
-    if-ne v3, v5, :cond_16
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 470
     .line 471
-    goto :goto_c
-
     .line 472
-    :cond_16
-    if-ne v3, v6, :cond_17
+    move-result-object v3
 
     .line 473
-    .line 474
-    goto :goto_c
+    check-cast v3, Lcom/swmansion/rnscreens/s;
 
+    .line 474
     .line 475
-    :cond_17
-    iget-object v8, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    if-ne v3, v5, :cond_16
 
     .line 476
     .line 477
-    if-eq v3, v8, :cond_15
+    goto :goto_c
 
     .line 478
-    .line 479
-    iget-object v8, p0, Lcom/swmansion/rnscreens/r;->s:Ljava/util/Set;
+    :cond_16
+    if-ne v3, v6, :cond_17
 
+    .line 479
     .line 480
+    goto :goto_c
+
     .line 481
-    invoke-interface {v8, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    :cond_17
+    iget-object v8, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 482
     .line 483
-    .line 484
-    move-result v8
+    if-eq v3, v8, :cond_15
 
+    .line 484
     .line 485
-    if-nez v8, :cond_15
+    iget-object v8, p0, Lcom/swmansion/rnscreens/r;->s:Ljava/util/Set;
 
     .line 486
     .line 487
-    invoke-virtual {v4, v3}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    invoke-interface {v8, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     .line 488
     .line 489
     .line 490
-    goto :goto_b
+    move-result v8
 
     .line 491
-    :cond_18
-    :goto_c
-    if-eqz v5, :cond_1b
+    if-nez v8, :cond_15
 
     .line 492
     .line 493
-    invoke-virtual {v5}, Landroidx/fragment/app/Fragment;->isAdded()Z
+    invoke-virtual {v4, v3}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 494
     .line 495
     .line 496
-    move-result v2
+    goto :goto_b
 
     .line 497
-    if-nez v2, :cond_1b
+    :cond_18
+    :goto_c
+    if-eqz v5, :cond_1b
 
     .line 498
     .line 499
-    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    invoke-virtual {v5}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     .line 500
     .line 501
-    check-cast v2, Lcom/swmansion/rnscreens/s;
-
     .line 502
+    move-result v2
+
     .line 503
-    iget-object v3, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+    if-nez v2, :cond_1b
 
     .line 504
     .line 505
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 506
     .line 507
+    check-cast v2, Lcom/swmansion/rnscreens/s;
+
     .line 508
+    .line 509
+    iget-object v3, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+
+    .line 510
+    .line 511
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 512
+    .line 513
+    .line 514
     move-result-object v3
 
-    .line 509
+    .line 515
     :cond_19
     :goto_d
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 510
-    .line 511
-    .line 512
-    move-result v6
-
-    .line 513
-    if-eqz v6, :cond_1d
-
-    .line 514
-    .line 515
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 516
     .line 517
     .line 518
-    move-result-object v6
+    move-result v6
 
     .line 519
-    check-cast v6, Lcom/swmansion/rnscreens/s;
+    if-eqz v6, :cond_1d
 
     .line 520
     .line 521
-    if-eqz v7, :cond_1a
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 522
     .line 523
-    if-ne v6, v5, :cond_19
-
     .line 524
+    move-result-object v6
+
     .line 525
-    move v7, v1
+    check-cast v6, Lcom/swmansion/rnscreens/s;
 
     .line 526
+    .line 527
+    if-eqz v7, :cond_1a
+
+    .line 528
+    .line 529
+    if-ne v6, v5, :cond_19
+
+    .line 530
+    .line 531
+    move v7, v1
+
+    .line 532
     :cond_1a
     if-eqz v6, :cond_19
 
-    .line 527
-    .line 528
-    invoke-virtual {v6}, Landroidx/fragment/app/Fragment;->isAdded()Z
-
-    .line 529
-    .line 530
-    .line 531
-    move-result v8
-
-    .line 532
-    if-nez v8, :cond_19
-
     .line 533
     .line 534
-    invoke-virtual {p0}, Landroid/view/View;->getId()I
+    invoke-virtual {v6}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     .line 535
     .line 536
@@ -2874,57 +2874,57 @@
     move-result v8
 
     .line 538
-    invoke-virtual {v4, v8, v6}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    if-nez v8, :cond_19
 
     .line 539
     .line 540
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
+
     .line 541
-    move-result-object v6
-
     .line 542
-    new-instance v8, Lcom/swmansion/rnscreens/o;
-
     .line 543
+    move-result v8
+
     .line 544
-    invoke-direct {v8, v2}, Lcom/swmansion/rnscreens/o;-><init>(Lcom/swmansion/rnscreens/s;)V
+    invoke-virtual {v4, v8, v6}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 545
     .line 546
     .line 547
-    invoke-virtual {v6, v8}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
+    move-result-object v6
 
     .line 548
+    new-instance v8, Lcom/swmansion/rnscreens/o;
+
     .line 549
     .line 550
-    goto :goto_d
+    invoke-direct {v8, v2}, Lcom/swmansion/rnscreens/o;-><init>(Lcom/swmansion/rnscreens/s;)V
 
     .line 551
-    :cond_1b
-    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
-
     .line 552
     .line 553
-    if-eqz v1, :cond_1c
+    invoke-virtual {v6, v8}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 554
     .line 555
-    check-cast v1, Lcom/swmansion/rnscreens/s;
-
     .line 556
+    goto :goto_d
+
     .line 557
-    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->isAdded()Z
+    :cond_1b
+    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 558
     .line 559
-    .line 560
-    move-result v1
+    if-eqz v1, :cond_1c
 
+    .line 560
     .line 561
-    if-nez v1, :cond_1c
+    check-cast v1, Lcom/swmansion/rnscreens/s;
 
     .line 562
     .line 563
-    invoke-virtual {p0}, Landroid/view/View;->getId()I
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     .line 564
     .line 565
@@ -2932,191 +2932,203 @@
     move-result v1
 
     .line 567
-    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    if-nez v1, :cond_1c
 
     .line 568
     .line 569
-    check-cast v2, Landroidx/fragment/app/Fragment;
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
 
     .line 570
     .line 571
-    invoke-virtual {v4, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
-
     .line 572
-    .line 573
-    .line 574
-    goto :goto_e
+    move-result v1
 
+    .line 573
+    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+
+    .line 574
     .line 575
-    :cond_1c
-    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    check-cast v2, Landroidx/fragment/app/Fragment;
 
     .line 576
     .line 577
-    if-eqz v1, :cond_1d
+    invoke-virtual {v4, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 578
     .line 579
-    if-eqz v6, :cond_1d
-
     .line 580
+    goto :goto_e
+
     .line 581
-    move-object v1, v6
+    :cond_1c
+    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
     .line 582
-    check-cast v1, Lcom/swmansion/rnscreens/s;
-
     .line 583
-    .line 584
-    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->isAdded()Z
+    if-eqz v1, :cond_1d
 
+    .line 584
     .line 585
+    if-eqz v6, :cond_1d
+
     .line 586
     .line 587
-    move-result v1
+    move-object v1, v6
 
     .line 588
-    if-nez v1, :cond_1d
+    check-cast v1, Lcom/swmansion/rnscreens/s;
 
     .line 589
     .line 590
-    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     .line 591
     .line 592
-    check-cast v1, Landroidx/fragment/app/Fragment;
-
     .line 593
+    move-result v1
+
     .line 594
-    invoke-virtual {v4, v1}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    if-nez v1, :cond_1d
 
     .line 595
     .line 596
-    .line 597
-    invoke-virtual {p0}, Landroid/view/View;->getId()I
+    iget-object v1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
+    .line 597
     .line 598
+    check-cast v1, Landroidx/fragment/app/Fragment;
+
     .line 599
     .line 600
-    move-result v1
+    invoke-virtual {v4, v1}, Landroidx/fragment/app/FragmentTransaction;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 601
-    check-cast v6, Landroidx/fragment/app/Fragment;
-
     .line 602
     .line 603
-    invoke-virtual {v4, v1, v6}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
 
     .line 604
     .line 605
     .line 606
-    move-result-object v1
+    move-result v1
 
     .line 607
-    new-instance v2, Lcom/swmansion/rnscreens/p;
+    check-cast v6, Landroidx/fragment/app/Fragment;
 
     .line 608
     .line 609
-    invoke-direct {v2, v0}, Lcom/swmansion/rnscreens/p;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
+    invoke-virtual {v4, v1, v6}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 610
     .line 611
     .line 612
-    invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
+    move-result-object v1
 
     .line 613
+    new-instance v2, Lcom/swmansion/rnscreens/p;
+
     .line 614
     .line 615
-    invoke-virtual {p0}, Landroid/view/View;->getId()I
+    invoke-direct {v2, v0}, Lcom/swmansion/rnscreens/p;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
 
     .line 616
     .line 617
     .line 618
-    move-result v1
+    invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 619
-    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
-
     .line 620
     .line 621
-    check-cast v2, Landroidx/fragment/app/Fragment;
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
 
     .line 622
     .line 623
-    invoke-virtual {v4, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
-
     .line 624
-    .line 625
-    .line 626
-    move-result-object v1
+    move-result v1
 
+    .line 625
+    iget-object v2, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
+
+    .line 626
     .line 627
-    new-instance v2, Lcom/swmansion/rnscreens/q;
+    check-cast v2, Landroidx/fragment/app/Fragment;
 
     .line 628
     .line 629
-    invoke-direct {v2, v0}, Lcom/swmansion/rnscreens/q;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
+    invoke-virtual {v4, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->b(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     .line 630
     .line 631
     .line 632
-    invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
+    move-result-object v1
 
     .line 633
+    new-instance v2, Lcom/swmansion/rnscreens/q;
+
     .line 634
     .line 635
+    invoke-direct {v2, v0}, Lcom/swmansion/rnscreens/q;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;)V
+
+    .line 636
+    .line 637
+    .line 638
+    invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->p(Ljava/lang/Runnable;)Landroidx/fragment/app/FragmentTransaction;
+
+    .line 639
+    .line 640
+    .line 641
     :cond_1d
     :goto_e
     iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
-    .line 636
-    .line 637
-    check-cast v0, Lcom/swmansion/rnscreens/s;
-
-    .line 638
-    .line 639
-    iput-object v0, p0, Lcom/swmansion/rnscreens/r;->v:Lcom/swmansion/rnscreens/s;
-
-    .line 640
-    .line 641
-    iget-object v0, p0, Lcom/swmansion/rnscreens/r;->r:Ljava/util/ArrayList;
-
     .line 642
     .line 643
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    check-cast v0, Lcom/swmansion/rnscreens/s;
 
     .line 644
     .line 645
+    iput-object v0, p0, Lcom/swmansion/rnscreens/r;->v:Lcom/swmansion/rnscreens/s;
+
     .line 646
+    .line 647
     iget-object v0, p0, Lcom/swmansion/rnscreens/r;->r:Ljava/util/ArrayList;
 
-    .line 647
     .line 648
-    iget-object v1, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
-
     .line 649
-    .line 650
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
+    .line 650
     .line 651
     .line 652
-    .line 653
-    invoke-direct {p0, v5}, Lcom/swmansion/rnscreens/r;->K(Lcom/swmansion/rnscreens/s;)V
+    iget-object v0, p0, Lcom/swmansion/rnscreens/r;->r:Ljava/util/ArrayList;
 
+    .line 653
     .line 654
+    iget-object v1, p0, Lcom/swmansion/rnscreens/l;->k:Ljava/util/ArrayList;
+
     .line 655
     .line 656
-    invoke-virtual {v4}, Landroidx/fragment/app/FragmentTransaction;->j()V
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 657
     .line 658
     .line 659
-    return-void
+    invoke-direct {p0, v5}, Lcom/swmansion/rnscreens/r;->K(Lcom/swmansion/rnscreens/s;)V
 
     .line 660
+    .line 661
+    .line 662
+    invoke-virtual {v4}, Landroidx/fragment/app/FragmentTransaction;->j()V
+
+    .line 663
+    .line 664
+    .line 665
+    return-void
+
+    .line 666
     nop
 
-    .line 661
+    .line 667
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_6
@@ -3128,12 +3140,6 @@
         :pswitch_0
     .end packed-switch
 
-    .line 662
-    .line 663
-    .line 664
-    .line 665
-    .line 666
-    .line 667
     .line 668
     .line 669
     .line 670
@@ -3146,6 +3152,12 @@
     .line 677
     .line 678
     .line 679
+    .line 680
+    .line 681
+    .line 682
+    .line 683
+    .line 684
+    .line 685
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_d
@@ -3156,12 +3168,6 @@
         :pswitch_8
         :pswitch_7
     .end packed-switch
-    .line 680
-    .line 681
-    .line 682
-    .line 683
-    .line 684
-    .line 685
     .line 686
     .line 687
     .line 688

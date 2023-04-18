@@ -18,16 +18,28 @@
 
 .field public static final MAIN_MODULE:Ljava/lang/String; = "index.native"
 
-.field public static final USER_AGENT:Ljava/lang/String; = "Discord-Android/176200"
+.field public static final USER_AGENT:Ljava/lang/String; = "Discord-Android/176202"
 
-.field public static final VERSION_CODE:I = 0x2b048
+.field public static final VERSION_CODE:I = 0x2b04a
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "176.0 - Alpha"
+.field public static final VERSION_NAME:Ljava/lang/String; = "176.2 - Alpha"
 
-.field public static final VERSION_NAME_RNA:Ljava/lang/String; = "176.0"
+.field public static final VERSION_NAME_RNA:Ljava/lang/String; = "176.2"
+
+.field public static final logTTIMetrics:Ljava/lang/Boolean;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    sput-object v0, Lcom/discord/BuildConfig;->logTTIMetrics:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
