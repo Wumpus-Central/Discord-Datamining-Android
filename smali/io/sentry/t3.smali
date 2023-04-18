@@ -1,0 +1,34 @@
+.class public final synthetic Lio/sentry/t3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/sentry/d4;
+
+
+# instance fields
+.field public final synthetic a:Lio/sentry/w3;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/sentry/w3;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/t3;->a:Lio/sentry/w3;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lio/sentry/b4;)V
+    .locals 1
+
+    iget-object v0, p0, Lio/sentry/t3;->a:Lio/sentry/w3;
+
+    invoke-static {v0, p1}, Lio/sentry/w3;->q(Lio/sentry/w3;Lio/sentry/b4;)V
+
+    return-void
+.end method
