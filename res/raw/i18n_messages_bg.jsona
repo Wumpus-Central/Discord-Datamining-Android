@@ -12874,6 +12874,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Скриване на пробни период за Nitro?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Няма да можеш да споделяш безплатни пробни периоди за Nitro с приятелите си.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Изпрати пак пробен период за Nitro",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Искаш ли да напомниш на приятел за неговия безплатен Nitro пробен период?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Изпрати го пак!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Изпрати пак пробен период",
   "START_TRIAL": "Започни пробния период",
   "EXPIRES_MINUTES": "Изтича след {numMinutes, plural, one {1 минута} other {{numMinutes} минути}}",

@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Nitro के ट्रायल छिपा दें?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "आप अपने दोस्तों के साथ Nitro के ट्रायल शेयर नहीं कर सकेंगे.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Nitro का ट्रायल दुबारा भेजें",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "अपने फ़्रेंड को उनके फ़्री Nitro ट्रायल के बारे में याद दिलाना चाहते हैं?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "इसे दुबारा भेजें!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "ट्रायल दुबारा भेजें",
   "START_TRIAL": "ट्रायल शुरू करें",
   "EXPIRES_MINUTES": "अगले {numMinutes, plural, one {1 मिनट} other {{numMinutes} मिनटों}} में एक्स्पायर होगा",

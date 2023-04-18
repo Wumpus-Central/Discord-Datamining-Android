@@ -12881,6 +12881,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Ukryć okresy próbne Nitro?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Nie będziesz w stanie udostępniać darmowych okresów próbnych Nitro znajomym.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Wyślij darmowy okres próbny Nitro ponownie",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Chcesz przypomnieć znajomemu o darmowym okresie próbnym Nitro?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Wyślij go ponownie!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Wyślij darmowy okres próbny ponownie",
   "START_TRIAL": "Rozpocznij okres próbny",
   "EXPIRES_MINUTES": "Wygasa za {numMinutes, plural, one {minutę} other {{numMinutes} min}}",

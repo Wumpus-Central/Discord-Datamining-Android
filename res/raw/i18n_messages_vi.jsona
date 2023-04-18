@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Ẩn gói Nitro dùng thử?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Bạn sẽ không thể chia sẻ gói Nitro dùng thử miễn phí với bạn bè của mình.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Gửi lại gói Nitro dùng thử",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Muốn nhắc bạn bè của bạn về gói Nitro dùng thử miễn phí?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Hãy gửi lại!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Gửi lại gói dùng thử",
   "START_TRIAL": "Bắt Đầu Dùng Thử",
   "EXPIRES_MINUTES": "Hết hạn sau {numMinutes, plural, one {1 phút} other {{numMinutes} phút}}",

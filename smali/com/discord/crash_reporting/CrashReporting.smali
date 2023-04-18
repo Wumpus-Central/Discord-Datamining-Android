@@ -1713,7 +1713,7 @@
     .line 30
     .line 31
     .line 32
-    const-string v1, "discord_android@176.2.0-2+176202"
+    const-string v1, "discord_android@176.4.0-2+176204"
 
     .line 33
     .line 34
@@ -1825,7 +1825,7 @@
     .line 90
     .line 91
     .line 92
-    const-string p0, "bfd7ad32-1ff7-441e-8d88-acbd0fd5d22f"
+    const-string p0, "34788daa-19a1-4e2b-938a-22d551363fd8"
 
     .line 93
     .line 94

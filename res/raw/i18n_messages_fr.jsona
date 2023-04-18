@@ -12880,6 +12880,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Masquer les essais Nitro ?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Tu ne seras plus en mesure de partager des essais Nitro gratuits avec tes amis.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Renvoyer l'essai Nitro",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Tu veux rappeler à ton ami(e) son essai Nitro gratuit ?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Renvoie-lui !",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Renvoyer l'essai",
   "START_TRIAL": "Commencer l'essai",
   "EXPIRES_MINUTES": "Expire dans {numMinutes, plural, one {1 minute} other {{numMinutes} minutes}}",

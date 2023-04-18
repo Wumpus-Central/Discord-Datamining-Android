@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Nitroトライアルを非表示にしますか？",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Nitroの無料トライアルをフレンドと共有できなくなります。",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Nitroトライアルを再送",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "友達がNitroトライアルのこと忘れてそう？",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "再送しよう！",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "トライアルを再送",
   "START_TRIAL": "トライアルの開始",
   "EXPIRES_MINUTES": "有効期限：{numMinutes, plural, one {1分} other {{numMinutes}分}}",

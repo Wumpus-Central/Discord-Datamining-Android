@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Ascunde perioadele de probă la Nitro?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Nu le vei putea distribui perioade de probă gratuite la Nitro prietenilor.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Retrimite perioada de probă la Nitro",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Vrei să-i amintești prietenului tău de perioada probă gratuită la Nitro?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Retrimite-i-o!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Retrimite perioada de probă",
   "START_TRIAL": "Începe perioada de probă",
   "EXPIRES_MINUTES": "Expiră în {numMinutes, plural, one {1 minut} other {{numMinutes} minute}}",

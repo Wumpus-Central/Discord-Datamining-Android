@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Nitro deneme sürümleri gizlensin mi?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Arkadaşlarınla ücretsiz Nitro deneme sürümleri paylaşamayacaksın.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Nitro deneme sürümünü tekrar gönder",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Arkadaşına ücretsiz Nitro deneme sürümünü hatırlatmak mı istiyorsun?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Tekrar gönder!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Denemeyi Tekrar Gönder",
   "START_TRIAL": "Deneme sürümünü başlat",
   "EXPIRES_MINUTES": "{numMinutes, plural, one {1 dakika} other {{numMinutes} dakika}} içinde sona erecek",

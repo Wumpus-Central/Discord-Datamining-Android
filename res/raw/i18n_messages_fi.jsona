@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Piilotetaanko Nitro-kokeilut?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Et voi jakaa Nitron ilmaiskokeiluja kavereillesi.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Lähetä Nitron kokeilu uudelleen",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Haluatko muistuttaa kaveriasi heidän ilmaisesta Nitro-kokeilustaan?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Lähetä se uudelleen!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Lähetä kokeilu uudelleen",
   "START_TRIAL": "Aloita kokeilu",
   "EXPIRES_MINUTES": "Vanhenee {numMinutes, plural, one {1 minuutin} other {{numMinutes} minuutin}} kuluttua",

@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "隐藏 Nitro 试用？",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "您将无法向好友分享免费的 Nitro 试用。",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "重新发送 Nitro 试用",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "想提醒您的好友免费试用 Nitro 吗？",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "重新发送！",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "重新发送试用",
   "START_TRIAL": "开始试用",
   "EXPIRES_MINUTES": "有效期还剩 {numMinutes, plural, one {1 分钟} other {{numMinutes} 分钟}}",

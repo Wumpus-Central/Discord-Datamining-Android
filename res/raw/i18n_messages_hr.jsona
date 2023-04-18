@@ -12881,6 +12881,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Želiš li sakriti probna Nitro razdoblja?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Nećeš moći dijeliti besplatna probna razdoblja za Nitro s prijateljima.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Ponovno pošalji probno razdoblje za Nitro",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Želiš podsjetiti prijatelja na njegovo probno razdoblje za Nitro?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Ponovno ga pošalji!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Ponovno pošalji probno razdoblje",
   "START_TRIAL": "Započni probno razdoblje",
   "EXPIRES_MINUTES": "Istječe za {numMinutes, plural, one {1 minutu} few {{numMinutes} minute} other {{numMinutes} minuta}}",

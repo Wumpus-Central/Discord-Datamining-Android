@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Neberodyti Nitro bandomųjų laikotarpių?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Negalėsi dalytis nemokamais Nitro bandomaisiais laikotarpiais su savo draugais.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Siųsti Nitro bandomąjį laikotarpį iš naujo",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Nori priminti draugui (-ei) apie jo (-s) nemokamą Nitro bandomąjį laikotarpį?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Siųsk dar kartą!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Siųsti bandomąjį laikotarpį iš naujo",
   "START_TRIAL": "Pradėti bandomąjį laikotarpį",
   "EXPIRES_MINUTES": "Nustos galioti po {numMinutes, plural, one {{numMinutes} minutės} other {{numMinutes} minučių}}",

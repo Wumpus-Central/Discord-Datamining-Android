@@ -12881,6 +12881,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Nitro-proefperiodes verbergen?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Dan kun je geen gratis Nitro-proefperiodes met vrienden delen.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Nitro-proefperiode opnieuw versturen",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Wil je je vriend(in) herinneren aan de gratis Nitro-proefperiode?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Stuur hem dan opnieuw!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Proefperiode opnieuw versturen",
   "START_TRIAL": "Proefperiode starten",
   "EXPIRES_MINUTES": "Verloopt over {numMinutes, plural, one {1 minuut} other {{numMinutes} minuten}}",

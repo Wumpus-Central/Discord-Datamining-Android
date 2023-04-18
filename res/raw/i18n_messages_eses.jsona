@@ -12883,6 +12883,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "¿Quieres ocultar las pruebas de Nitro?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "No podrás compartir pruebas gratuitas de Nitro con tus amigos.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Reenvía una prueba de Nitro",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "¿Quieres recordarle a tu amistad que tiene una prueba gratis de Nitro?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "¡Vuelve a enviarla!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Reenviar prueba",
   "START_TRIAL": "Empezar prueba",
   "EXPIRES_MINUTES": "Caduca dentro de {numMinutes, plural, one {1 minuto} other {{numMinutes} minutos}}",

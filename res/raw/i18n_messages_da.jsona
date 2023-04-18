@@ -12885,6 +12885,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "Skjul Nitro-prøveperioder?",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "Du vil ikke kunne dele gratis Nitro-prøveperioder med dine venner.",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "Gensend Nitro-prøveperiode",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "Ønsker du at minde din ven om vedkommendes gratis Nitro-prøveperiode?",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "Sende es erneut!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "Send prøveperiode igen",
   "START_TRIAL": "Start prøvetidsperiode",
   "EXPIRES_MINUTES": "Udløber om {numMinutes, plural, one {1 minut} other {{numMinutes} minutter}}",

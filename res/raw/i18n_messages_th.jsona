@@ -12882,6 +12882,8 @@
   "SHARE_NITRO_DISMISS_MODAL_HEADER": "ซ่อนการทดลองใช้ Nitro หรือไม่",
   "SHARE_NITRO_DISMISS_MODAL_BODY": "คุณจะไม่สามารถแชร์การทดลองใช้ Nitro ฟรีกับเพื่อนของคุณได้",
   "SHARE_NITRO_RESEND_TRIAL_HEADER": "ส่งการทดลองใช้ Nitro อีกครั้ง",
+  "SHARE_NITRO_RESEND_TRIAL_BODY": "อยากเตือนเพื่อนเรื่องการทดลองใช้ Nitro ฟรีใช่ไหม",
+  "SHARE_NITRO_RESEND_TRIAL_BODY_2": "ส่งไปใหม่เลย!",
   "SHARE_NITRO_RESEND_BUTTON_TEXT": "ส่งการทดลองใช้อีกครั้ง",
   "START_TRIAL": "เริ่มการทดลองใช้",
   "EXPIRES_MINUTES": "หมดอายุใน {numMinutes, plural, one {1 นาที} other {{numMinutes} นาที}}",
