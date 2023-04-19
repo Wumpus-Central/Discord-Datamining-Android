@@ -1421,6 +1421,22 @@
     .line 864
     .line 865
     .line 866
+    .line 867
+    .line 868
+    .line 869
+    .line 870
+    .line 871
+    .line 872
+    .line 873
+    .line 874
+    .line 875
+    .line 876
+    .line 877
+    .line 878
+    .line 879
+    .line 880
+    .line 881
+    .line 882
 .end method
 
 .method private final measureAndLayout()V
@@ -3330,6 +3346,68 @@
     .line 1159
     .line 1160
     .line 1161
+    .line 1162
+    .line 1163
+    .line 1164
+    .line 1165
+    .line 1166
+    .line 1167
+    .line 1168
+    .line 1169
+    .line 1170
+    .line 1171
+    .line 1172
+    .line 1173
+    .line 1174
+    .line 1175
+    .line 1176
+    .line 1177
+    .line 1178
+    .line 1179
+    .line 1180
+    .line 1181
+    .line 1182
+    .line 1183
+    .line 1184
+    .line 1185
+    .line 1186
+    .line 1187
+    .line 1188
+    .line 1189
+    .line 1190
+    .line 1191
+    .line 1192
+    .line 1193
+    .line 1194
+    .line 1195
+    .line 1196
+    .line 1197
+    .line 1198
+    .line 1199
+    .line 1200
+    .line 1201
+    .line 1202
+    .line 1203
+    .line 1204
+    .line 1205
+    .line 1206
+    .line 1207
+    .line 1208
+    .line 1209
+    .line 1210
+    .line 1211
+    .line 1212
+    .line 1213
+    .line 1214
+    .line 1215
+    .line 1216
+    .line 1217
+    .line 1218
+    .line 1219
+    .line 1220
+    .line 1221
+    .line 1222
+    .line 1223
 .end method
 
 .method public final setDataSource(Lcom/discord/chat/presentation/list/ChatListView$DataSource;)V

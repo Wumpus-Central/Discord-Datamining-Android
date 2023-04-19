@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/discord/chat/presentation/message/o;->l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->i(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)Z
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->h(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)Z
 
     move-result p1
 

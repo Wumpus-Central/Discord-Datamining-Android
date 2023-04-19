@@ -217,53 +217,53 @@
 
 .field public static final notification_template_part_time:I = 0x7f0d00ae
 
-.field public static final qr_scanner:I = 0x7f0d00b6
+.field public static final qr_scanner:I = 0x7f0d00b7
 
-.field public static final redbox_item_frame:I = 0x7f0d00b8
+.field public static final redbox_item_frame:I = 0x7f0d00b9
 
-.field public static final redbox_item_title:I = 0x7f0d00b9
+.field public static final redbox_item_title:I = 0x7f0d00ba
 
-.field public static final redbox_view:I = 0x7f0d00ba
+.field public static final redbox_view:I = 0x7f0d00bb
 
-.field public static final select_dialog_item_material:I = 0x7f0d00bf
+.field public static final select_dialog_item_material:I = 0x7f0d00c0
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d00c0
+.field public static final select_dialog_multichoice_material:I = 0x7f0d00c1
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d00c1
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d00c2
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00c3
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00c4
 
-.field public static final test_action_chip:I = 0x7f0d00c6
+.field public static final test_action_chip:I = 0x7f0d00c7
 
-.field public static final test_chip_zero_corner_radius:I = 0x7f0d00c7
+.field public static final test_chip_zero_corner_radius:I = 0x7f0d00c8
 
-.field public static final test_design_checkbox:I = 0x7f0d00c8
+.field public static final test_design_checkbox:I = 0x7f0d00c9
 
-.field public static final test_design_radiobutton:I = 0x7f0d00c9
+.field public static final test_design_radiobutton:I = 0x7f0d00ca
 
-.field public static final test_exposed_dropdown_menu:I = 0x7f0d00ca
+.field public static final test_exposed_dropdown_menu:I = 0x7f0d00cb
 
-.field public static final test_navigation_bar_item_layout:I = 0x7f0d00cb
+.field public static final test_navigation_bar_item_layout:I = 0x7f0d00cc
 
-.field public static final test_reflow_chipgroup:I = 0x7f0d00cc
+.field public static final test_reflow_chipgroup:I = 0x7f0d00cd
 
-.field public static final test_toolbar:I = 0x7f0d00cd
+.field public static final test_toolbar:I = 0x7f0d00ce
 
-.field public static final test_toolbar_custom_background:I = 0x7f0d00ce
+.field public static final test_toolbar_custom_background:I = 0x7f0d00cf
 
-.field public static final test_toolbar_elevation:I = 0x7f0d00cf
+.field public static final test_toolbar_elevation:I = 0x7f0d00d0
 
-.field public static final test_toolbar_surface:I = 0x7f0d00d0
+.field public static final test_toolbar_surface:I = 0x7f0d00d1
 
-.field public static final text_view_with_line_height_from_appearance:I = 0x7f0d00d1
+.field public static final text_view_with_line_height_from_appearance:I = 0x7f0d00d2
 
-.field public static final text_view_with_line_height_from_layout:I = 0x7f0d00d2
+.field public static final text_view_with_line_height_from_layout:I = 0x7f0d00d3
 
-.field public static final text_view_with_line_height_from_style:I = 0x7f0d00d3
+.field public static final text_view_with_line_height_from_style:I = 0x7f0d00d4
 
-.field public static final text_view_with_theme_line_height:I = 0x7f0d00d4
+.field public static final text_view_with_theme_line_height:I = 0x7f0d00d5
 
-.field public static final text_view_without_line_height:I = 0x7f0d00d5
+.field public static final text_view_without_line_height:I = 0x7f0d00d6
 
 
 # direct methods

@@ -1425,9 +1425,6 @@
     .line 357
     .line 358
     return-object p0
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public I(Lnh/e;Lnh/g;)Lgh/i$b;

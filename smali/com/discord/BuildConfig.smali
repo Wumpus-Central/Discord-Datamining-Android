@@ -18,13 +18,13 @@
 
 .field public static final MAIN_MODULE:Ljava/lang/String; = "index.native"
 
-.field public static final USER_AGENT:Ljava/lang/String; = "Discord-Android/176204"
+.field public static final USER_AGENT:Ljava/lang/String; = "Discord-Android/176205"
 
-.field public static final VERSION_CODE:I = 0x2b04c
+.field public static final VERSION_CODE:I = 0x2b04d
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "176.4 - Alpha"
+.field public static final VERSION_NAME:Ljava/lang/String; = "176.5 - Alpha"
 
-.field public static final VERSION_NAME_RNA:Ljava/lang/String; = "176.4"
+.field public static final VERSION_NAME_RNA:Ljava/lang/String; = "176.5"
 
 .field public static final logTTIMetrics:Ljava/lang/Boolean;
 

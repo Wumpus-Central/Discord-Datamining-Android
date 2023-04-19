@@ -78,7 +78,7 @@
 .end method
 
 .method public final invoke()Lkotlinx/serialization/KSerializer;
-    .locals 13
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -115,13 +115,15 @@
 
     const-string v11, "application_news"
 
-    const-string v12, "unknown"
+    const-string v12, "post_preview"
 
-    filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
+    const-string v13, "unknown"
+
+    filled-new-array/range {v1 .. v13}, [Ljava/lang/String;
 
     move-result-object v1
 
-    const/16 v2, 0xc
+    const/16 v2, 0xd
 
     new-array v2, v2, [[Ljava/lang/annotation/Annotation;
 
@@ -172,6 +174,10 @@
     aput-object v4, v2, v3
 
     const/16 v3, 0xb
+
+    aput-object v4, v2, v3
+
+    const/16 v3, 0xc
 
     aput-object v4, v2, v3
 

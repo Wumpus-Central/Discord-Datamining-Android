@@ -32,7 +32,7 @@
 
     .line 2
     .line 3
-    const/16 v1, 0x36
+    const/16 v1, 0x37
 
     .line 4
     .line 5
@@ -1760,10 +1760,42 @@
 
     .line 862
     .line 863
-    invoke-direct {v0, v1}, Lcom/discord/reactevents/ReactEvents;-><init>([Lkotlin/Pair;)V
+    const-class v2, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;
 
     .line 864
     .line 865
+    invoke-static {v2}, Lkotlin/jvm/internal/f0;->b(Ljava/lang/Class;)Lkotlin/reflect/KClass;
+
     .line 866
+    .line 867
+    .line 868
+    move-result-object v2
+
+    .line 869
+    const-string v3, "onTapPostPreviewEmbed"
+
+    .line 870
+    .line 871
+    invoke-static {v3, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 872
+    .line 873
+    .line 874
+    move-result-object v2
+
+    .line 875
+    const/16 v3, 0x36
+
+    .line 876
+    .line 877
+    aput-object v2, v1, v3
+
+    .line 878
+    .line 879
+    invoke-direct {v0, v1}, Lcom/discord/reactevents/ReactEvents;-><init>([Lkotlin/Pair;)V
+
+    .line 880
+    .line 881
+    .line 882
     return-object v0
 .end method

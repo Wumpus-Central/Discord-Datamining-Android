@@ -629,9 +629,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method static synthetic access$000(Lcom/swmansion/reanimated/NodesManager;J)V
@@ -1781,9 +1778,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private performOperations()V

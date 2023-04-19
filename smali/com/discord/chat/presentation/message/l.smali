@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/discord/chat/presentation/message/l;->l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->c(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)V
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->b(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)V
 
     return-void
 .end method

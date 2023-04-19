@@ -151,7 +151,9 @@
     <item type="id" name="controls_wrapper" />
     <item type="id" name="coordinator" />
     <item type="id" name="copy_button" />
+    <item type="id" name="cover_image" />
     <item type="id" name="creator_avatar" />
+    <item type="id" name="cta" />
     <item type="id" name="customPanel" />
     <item type="id" name="date" />
     <item type="id" name="date_picker_actions" />
@@ -256,6 +258,7 @@
     <item type="id" name="flagged_message_keyword" />
     <item type="id" name="flagged_message_rule_name" />
     <item type="id" name="follow_button" />
+    <item type="id" name="footer" />
     <item type="id" name="footer_avatar" />
     <item type="id" name="footer_barrier" />
     <item type="id" name="footer_container" />

@@ -46,7 +46,7 @@
 
     iget-object v3, p0, Lcom/discord/chat/presentation/message/p;->n:Lcom/discord/chat/bridge/MediaType;
 
-    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/MessageView;->f(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/Message;ILcom/discord/chat/bridge/MediaType;Landroid/view/View;)Z
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/MessageView;->e(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/Message;ILcom/discord/chat/bridge/MediaType;Landroid/view/View;)Z
 
     move-result p1
 

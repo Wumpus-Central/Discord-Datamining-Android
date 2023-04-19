@@ -40,7 +40,7 @@
 
     iget-object v2, p0, Lcom/discord/billing/c;->c:Lkotlin/jvm/functions/Function0;
 
-    invoke-static {v0, v1, v2, p1, p2}, Lcom/discord/billing/BillingManager;->f(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, p1, p2}, Lcom/discord/billing/BillingManager;->a(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
 
     return-void
 .end method

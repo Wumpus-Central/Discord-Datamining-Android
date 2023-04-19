@@ -1508,9 +1508,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method static createVisibilityTransition(Ljava/lang/String;)Landroidx/transition/d1;
@@ -2010,9 +2007,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method static inflate(Lcom/facebook/react/bridge/ReadableMap;)Landroidx/transition/Transition;

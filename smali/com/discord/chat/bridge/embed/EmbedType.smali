@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u000f\u0008\u0087\u0001\u0018\u0000 \u000f2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u000fB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000e\u00a8\u0006\u0010"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0010\u0008\u0087\u0001\u0018\u0000 \u00102\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0010B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000f\u00a8\u0006\u0011"
     }
     d2 = {
         "Lcom/discord/chat/bridge/embed/EmbedType;",
@@ -37,6 +37,7 @@
         "Rich",
         "Text",
         "ApplicationNews",
+        "PostPreview",
         "Unknown",
         "Companion",
         "chat_release"
@@ -84,6 +85,8 @@
 
 .field public static final enum Link:Lcom/discord/chat/bridge/embed/EmbedType;
 
+.field public static final enum PostPreview:Lcom/discord/chat/bridge/embed/EmbedType;
+
 .field public static final enum Rich:Lcom/discord/chat/bridge/embed/EmbedType;
 
 .field public static final enum Text:Lcom/discord/chat/bridge/embed/EmbedType;
@@ -99,7 +102,7 @@
 .method private static final synthetic $values()[Lcom/discord/chat/bridge/embed/EmbedType;
     .locals 3
 
-    const/16 v0, 0xc
+    const/16 v0, 0xd
 
     new-array v0, v0, [Lcom/discord/chat/bridge/embed/EmbedType;
 
@@ -170,6 +173,12 @@
     aput-object v2, v0, v1
 
     const/16 v1, 0xb
+
+    sget-object v2, Lcom/discord/chat/bridge/embed/EmbedType;->PostPreview:Lcom/discord/chat/bridge/embed/EmbedType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
 
     sget-object v2, Lcom/discord/chat/bridge/embed/EmbedType;->Unknown:Lcom/discord/chat/bridge/embed/EmbedType;
 
@@ -409,7 +418,7 @@
 
     .line 115
     .line 116
-    const-string v1, "Unknown"
+    const-string v1, "PostPreview"
 
     .line 117
     .line 118
@@ -422,70 +431,80 @@
     .line 121
     .line 122
     .line 123
-    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->Unknown:Lcom/discord/chat/bridge/embed/EmbedType;
+    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->PostPreview:Lcom/discord/chat/bridge/embed/EmbedType;
 
     .line 124
     .line 125
-    invoke-static {}, Lcom/discord/chat/bridge/embed/EmbedType;->$values()[Lcom/discord/chat/bridge/embed/EmbedType;
+    new-instance v0, Lcom/discord/chat/bridge/embed/EmbedType;
 
     .line 126
     .line 127
-    .line 128
-    move-result-object v0
+    const-string v1, "Unknown"
 
+    .line 128
     .line 129
-    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->$VALUES:[Lcom/discord/chat/bridge/embed/EmbedType;
+    const/16 v2, 0xc
 
     .line 130
     .line 131
-    new-instance v0, Lcom/discord/chat/bridge/embed/EmbedType$Companion;
+    invoke-direct {v0, v1, v2}, Lcom/discord/chat/bridge/embed/EmbedType;-><init>(Ljava/lang/String;I)V
 
     .line 132
     .line 133
-    const/4 v1, 0x0
-
     .line 134
-    invoke-direct {v0, v1}, Lcom/discord/chat/bridge/embed/EmbedType$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->Unknown:Lcom/discord/chat/bridge/embed/EmbedType;
 
     .line 135
     .line 136
-    .line 137
-    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->Companion:Lcom/discord/chat/bridge/embed/EmbedType$Companion;
+    invoke-static {}, Lcom/discord/chat/bridge/embed/EmbedType;->$values()[Lcom/discord/chat/bridge/embed/EmbedType;
 
+    .line 137
     .line 138
     .line 139
-    sget-object v0, Llf/p;->l:Llf/p;
-
-    .line 140
-    .line 141
-    sget-object v1, Lcom/discord/chat/bridge/embed/EmbedType$Companion$$cachedSerializer$delegate$1;->INSTANCE:Lcom/discord/chat/bridge/embed/EmbedType$Companion$$cachedSerializer$delegate$1;
-
-    .line 142
-    .line 143
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
-
-    .line 144
-    .line 145
-    .line 146
     move-result-object v0
 
-    .line 147
-    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->$cachedSerializer$delegate:Lkotlin/Lazy;
+    .line 140
+    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->$VALUES:[Lcom/discord/chat/bridge/embed/EmbedType;
 
+    .line 141
+    .line 142
+    new-instance v0, Lcom/discord/chat/bridge/embed/EmbedType$Companion;
+
+    .line 143
+    .line 144
+    const/4 v1, 0x0
+
+    .line 145
+    invoke-direct {v0, v1}, Lcom/discord/chat/bridge/embed/EmbedType$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 146
+    .line 147
     .line 148
+    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->Companion:Lcom/discord/chat/bridge/embed/EmbedType$Companion;
+
     .line 149
-    return-void
     .line 150
+    sget-object v0, Llf/p;->l:Llf/p;
+
     .line 151
     .line 152
+    sget-object v1, Lcom/discord/chat/bridge/embed/EmbedType$Companion$$cachedSerializer$delegate$1;->INSTANCE:Lcom/discord/chat/bridge/embed/EmbedType$Companion$$cachedSerializer$delegate$1;
+
     .line 153
     .line 154
+    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
     .line 155
     .line 156
     .line 157
+    move-result-object v0
+
     .line 158
+    sput-object v0, Lcom/discord/chat/bridge/embed/EmbedType;->$cachedSerializer$delegate:Lkotlin/Lazy;
+
     .line 159
     .line 160
+    return-void
     .line 161
     .line 162
     .line 163
@@ -1192,6 +1211,22 @@
     .line 864
     .line 865
     .line 866
+    .line 867
+    .line 868
+    .line 869
+    .line 870
+    .line 871
+    .line 872
+    .line 873
+    .line 874
+    .line 875
+    .line 876
+    .line 877
+    .line 878
+    .line 879
+    .line 880
+    .line 881
+    .line 882
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V

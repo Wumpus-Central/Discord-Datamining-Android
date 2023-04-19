@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnLongClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -27,16 +27,14 @@
 
 
 # virtual methods
-.method public final onLongClick(Landroid/view/View;)Z
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/viewholder/j;->k:Lkotlin/jvm/functions/Function1;
 
     iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/j;->l:Lcom/discord/chat/bridge/sticker/Sticker;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/StickerApngViewHolder;->b(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;Landroid/view/View;)Z
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/StickerApngViewHolder;->a(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;Landroid/view/View;)V
 
-    move-result p1
-
-    return p1
+    return-void
 .end method

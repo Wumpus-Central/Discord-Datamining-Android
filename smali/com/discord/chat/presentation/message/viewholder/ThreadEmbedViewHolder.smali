@@ -945,11 +945,11 @@
     .line 52
     .line 53
     .line 54
-    new-instance v5, Lcom/discord/chat/presentation/message/viewholder/q;
+    new-instance v5, Lcom/discord/chat/presentation/message/viewholder/r;
 
     .line 55
     .line 56
-    invoke-direct {v5, v1, v0}, Lcom/discord/chat/presentation/message/viewholder/q;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;)V
+    invoke-direct {v5, v1, v0}, Lcom/discord/chat/presentation/message/viewholder/r;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;)V
 
     .line 57
     .line 58

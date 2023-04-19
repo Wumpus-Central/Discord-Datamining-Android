@@ -423,10 +423,10 @@
     .line 202
 .end method
 
-.method public static synthetic a(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method public static synthetic a(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
     .locals 0
 
-    invoke-static {p0, p1, p2, p3, p4}, Lcom/discord/billing/BillingManager;->getSkus$lambda$0(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static {p0, p1, p2, p3, p4}, Lcom/discord/billing/BillingManager;->consumePurchase$lambda$2(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -473,23 +473,23 @@
     return-void
 .end method
 
-.method public static synthetic b(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method public static synthetic b(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
 
-    invoke-static/range {p0 .. p5}, Lcom/discord/billing/BillingManager;->getSkus$lambda$3(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static/range {p0 .. p10}, Lcom/discord/billing/BillingManager;->purchaseWithSkuDetails$lambda$6(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method
 
-.method public static synthetic c(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method public static synthetic c(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
 
-    invoke-static/range {p0 .. p9}, Lcom/discord/billing/BillingManager;->purchaseWithSkuDetails$lambda$4(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static/range {p0 .. p11}, Lcom/discord/billing/BillingManager;->purchaseWithProductDetails$lambda$8(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method
 
-.method private static final consumePurchase$lambda$1(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
+.method private static final consumePurchase$lambda$2(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -1338,7 +1338,15 @@
     return-void
 .end method
 
-.method public static synthetic e(Lcom/discord/billing/BillingManager;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method public static synthetic e(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    .locals 0
+
+    invoke-static/range {p0 .. p5}, Lcom/discord/billing/BillingManager;->getSkus$lambda$4(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public static synthetic f(Lcom/discord/billing/BillingManager;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/discord/billing/BillingManager;->handlePurchases(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
@@ -1346,18 +1354,10 @@
     return-void
 .end method
 
-.method public static synthetic f(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
+.method public static synthetic g(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 0
 
-    invoke-static {p0, p1, p2, p3, p4}, Lcom/discord/billing/BillingManager;->consumePurchase$lambda$1(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public static synthetic g(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
-    .locals 0
-
-    invoke-static/range {p0 .. p10}, Lcom/discord/billing/BillingManager;->purchaseWithProductDetails$lambda$5(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static/range {p0 .. p5}, Lcom/discord/billing/BillingManager;->getSkus$lambda$1(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method
@@ -1393,7 +1393,7 @@
         }
     .end annotation
 
-    .line 9
+    .line 10
     invoke-direct {p0}, Lcom/discord/billing/BillingManager;->isBillingClientReady()Z
 
     move-result v0
@@ -1402,18 +1402,18 @@
 
     const-string p1, "Billing connection is not ready."
 
-    .line 10
+    .line 11
     invoke-direct {p0, p4, p1}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
     return-void
 
-    .line 11
+    .line 12
     :cond_0
     new-instance v0, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 12
+    .line 13
     iget-object v1, p0, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
 
     if-nez v1, :cond_1
@@ -1424,7 +1424,7 @@
 
     const/4 v1, 0x0
 
-    .line 13
+    .line 14
     :cond_1
     sget-object v2, Lcom/discord/billing/types/SkuDetailsParams;->INSTANCE:Lcom/discord/billing/types/SkuDetailsParams;
 
@@ -1432,7 +1432,7 @@
 
     move-result-object p1
 
-    .line 14
+    .line 15
     new-instance p2, Lcom/discord/billing/f;
 
     invoke-direct {p2, p0, p4, p3, v0}, Lcom/discord/billing/f;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;)V
@@ -1442,7 +1442,7 @@
     return-void
 .end method
 
-.method private static final getSkus$lambda$0(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method private static final getSkus$lambda$1(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 1
 
     .line 1
@@ -1473,7 +1473,7 @@
     .line 14
     .line 15
     .line 16
-    const-string v0, "billingResult"
+    const-string v0, "$completed"
 
     .line 17
     .line 18
@@ -1482,7 +1482,7 @@
     .line 19
     .line 20
     .line 21
-    const-string v0, "productDetails"
+    const-string v0, "billingResult"
 
     .line 22
     .line 23
@@ -1491,94 +1491,130 @@
     .line 24
     .line 25
     .line 26
-    invoke-direct {p0, p3}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
+    const-string v0, "productDetails"
 
     .line 27
     .line 28
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 29
-    move-result v0
-
     .line 30
-    if-eqz v0, :cond_0
-
     .line 31
+    monitor-enter p0
+
     .line 32
-    invoke-virtual {p3}, Lcom/android/billingclient/api/BillingResult;->a()I
+    :try_start_0
+    iget-boolean v0, p3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 33
     .line 34
-    .line 35
-    move-result p2
+    if-eqz v0, :cond_0
 
+    .line 35
     .line 36
-    new-instance p3, Ljava/lang/StringBuilder;
+    monitor-exit p0
 
     .line 37
+    return-void
+
     .line 38
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+    :cond_0
+    const/4 v0, 0x1
 
     .line 39
+    :try_start_1
+    iput-boolean v0, p3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
+
     .line 40
     .line 41
-    const-string p4, "Product fetch, bad response code: "
+    sget-object p3, Lkotlin/Unit;->a:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 42
     .line 43
-    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    monitor-exit p0
 
     .line 44
+    invoke-direct {p0, p4}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
+
     .line 45
     .line 46
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 47
-    .line 48
-    .line 49
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result p3
 
+    .line 48
+    if-eqz p3, :cond_1
+
+    .line 49
     .line 50
+    invoke-virtual {p4}, Lcom/android/billingclient/api/BillingResult;->a()I
+
     .line 51
     .line 52
-    move-result-object p2
-
     .line 53
-    invoke-direct {p0, p1, p2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+    move-result p2
 
     .line 54
+    new-instance p3, Ljava/lang/StringBuilder;
+
     .line 55
     .line 56
-    goto :goto_0
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 57
-    :cond_0
-    invoke-interface {p2, p4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 58
     .line 59
+    const-string p4, "Product fetch, bad response code: "
+
     .line 60
-    :goto_0
-    return-void
     .line 61
+    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 62
     .line 63
     .line 64
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 65
     .line 66
     .line 67
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 68
     .line 69
     .line 70
+    move-result-object p2
+
     .line 71
+    invoke-direct {p0, p1, p2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+
     .line 72
     .line 73
     .line 74
+    goto :goto_0
+
     .line 75
+    :cond_1
+    invoke-interface {p2, p5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 76
     .line 77
     .line 78
+    :goto_0
+    return-void
+
     .line 79
+    :catchall_0
+    move-exception p1
+
     .line 80
+    monitor-exit p0
+
     .line 81
+    throw p1
     .line 82
     .line 83
     .line 84
@@ -2118,172 +2154,9 @@
     .line 618
     .line 619
     .line 620
-    .line 621
-    .line 622
-    .line 623
-    .line 624
-    .line 625
-    .line 626
-    .line 627
-    .line 628
-    .line 629
-    .line 630
-    .line 631
-    .line 632
-    .line 633
-    .line 634
-    .line 635
-    .line 636
-    .line 637
-    .line 638
-    .line 639
-    .line 640
-    .line 641
-    .line 642
-    .line 643
-    .line 644
-    .line 645
-    .line 646
-    .line 647
-    .line 648
-    .line 649
-    .line 650
-    .line 651
-    .line 652
-    .line 653
-    .line 654
-    .line 655
-    .line 656
-    .line 657
-    .line 658
-    .line 659
-    .line 660
-    .line 661
-    .line 662
-    .line 663
-    .line 664
-    .line 665
-    .line 666
-    .line 667
-    .line 668
-    .line 669
-    .line 670
-    .line 671
-    .line 672
-    .line 673
-    .line 674
-    .line 675
-    .line 676
-    .line 677
-    .line 678
-    .line 679
-    .line 680
-    .line 681
-    .line 682
-    .line 683
-    .line 684
-    .line 685
-    .line 686
-    .line 687
-    .line 688
-    .line 689
-    .line 690
-    .line 691
-    .line 692
-    .line 693
-    .line 694
-    .line 695
-    .line 696
-    .line 697
-    .line 698
-    .line 699
-    .line 700
-    .line 701
-    .line 702
-    .line 703
-    .line 704
-    .line 705
-    .line 706
-    .line 707
-    .line 708
-    .line 709
-    .line 710
-    .line 711
-    .line 712
-    .line 713
-    .line 714
-    .line 715
-    .line 716
-    .line 717
-    .line 718
-    .line 719
-    .line 720
-    .line 721
-    .line 722
-    .line 723
-    .line 724
-    .line 725
-    .line 726
-    .line 727
-    .line 728
-    .line 729
-    .line 730
-    .line 731
-    .line 732
-    .line 733
-    .line 734
-    .line 735
-    .line 736
-    .line 737
-    .line 738
-    .line 739
-    .line 740
-    .line 741
-    .line 742
-    .line 743
-    .line 744
-    .line 745
-    .line 746
-    .line 747
-    .line 748
-    .line 749
-    .line 750
-    .line 751
-    .line 752
-    .line 753
-    .line 754
-    .line 755
-    .line 756
-    .line 757
-    .line 758
-    .line 759
-    .line 760
-    .line 761
-    .line 762
-    .line 763
-    .line 764
-    .line 765
-    .line 766
-    .line 767
-    .line 768
-    .line 769
-    .line 770
-    .line 771
-    .line 772
-    .line 773
-    .line 774
-    .line 775
-    .line 776
-    .line 777
-    .line 778
-    .line 779
-    .line 780
-    .line 781
-    .line 782
-    .line 783
 .end method
 
-.method private static final getSkus$lambda$3(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method private static final getSkus$lambda$4(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 1
 
     .line 1
@@ -4216,7 +4089,7 @@
 .end method
 
 .method private final purchaseWithProductDetails(Landroid/app/Activity;Ljava/lang/String;Lcom/discord/billing/types/ProductType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-    .locals 14
+    .locals 15
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4239,136 +4112,140 @@
     .end annotation
 
     .line 1
-    move-object v10, p0
+    new-instance v10, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     .line 2
-    iget-object v0, v10, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
-
     .line 3
-    .line 4
-    if-nez v0, :cond_0
+    invoke-direct {v10}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    const-string v0, "billingClient"
+    move-object v11, p0
 
     .line 7
-    .line 8
-    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+    iget-object v0, v11, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
 
+    .line 8
     .line 9
+    if-nez v0, :cond_0
+
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const-string v0, "billingClient"
 
     .line 12
-    :cond_0
-    move-object v11, v0
-
     .line 13
-    sget-object v0, Lcom/discord/billing/types/QueryProductDetailsParams;->INSTANCE:Lcom/discord/billing/types/QueryProductDetailsParams;
+    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
     .line 14
     .line 15
-    const/4 v1, 0x2
-
     .line 16
-    new-array v1, v1, [Ljava/lang/String;
+    const/4 v0, 0x0
 
     .line 17
+    :cond_0
+    move-object v12, v0
+
     .line 18
-    const/4 v2, 0x0
+    sget-object v0, Lcom/discord/billing/types/QueryProductDetailsParams;->INSTANCE:Lcom/discord/billing/types/QueryProductDetailsParams;
 
     .line 19
-    aput-object p2, v1, v2
-
     .line 20
+    const/4 v1, 0x2
+
     .line 21
-    const/4 v2, 0x1
+    new-array v1, v1, [Ljava/lang/String;
 
     .line 22
-    aput-object p5, v1, v2
-
     .line 23
+    const/4 v2, 0x0
+
     .line 24
-    invoke-static {v1}, Lkotlin/collections/h;->n([Ljava/lang/Object;)Ljava/util/List;
+    aput-object p2, v1, v2
 
     .line 25
     .line 26
+    const/4 v2, 0x1
+
     .line 27
-    move-result-object v1
+    aput-object p5, v1, v2
 
     .line 28
-    move-object/from16 v2, p3
-
     .line 29
-    .line 30
-    invoke-virtual {v0, v2, v1}, Lcom/discord/billing/types/QueryProductDetailsParams;->create(Lcom/discord/billing/types/ProductType;Ljava/util/List;)Lcom/android/billingclient/api/QueryProductDetailsParams;
+    invoke-static {v1}, Lkotlin/collections/h;->n([Ljava/lang/Object;)Ljava/util/List;
 
+    .line 30
     .line 31
     .line 32
+    move-result-object v1
+
     .line 33
-    move-result-object v12
+    move-object/from16 v2, p3
 
     .line 34
-    new-instance v13, Lcom/discord/billing/a;
-
     .line 35
+    invoke-virtual {v0, v2, v1}, Lcom/discord/billing/types/QueryProductDetailsParams;->create(Lcom/discord/billing/types/ProductType;Ljava/util/List;)Lcom/android/billingclient/api/QueryProductDetailsParams;
+
     .line 36
-    move-object v0, v13
-
     .line 37
-    move-object v1, p0
-
     .line 38
-    move-object/from16 v2, p9
+    move-result-object v13
 
     .line 39
-    .line 40
-    move-object/from16 v3, p2
+    new-instance v14, Lcom/discord/billing/a;
 
+    .line 40
     .line 41
+    move-object v0, v14
+
     .line 42
-    move-object/from16 v4, p5
+    move-object v1, p0
 
     .line 43
+    move-object/from16 v2, p9
+
     .line 44
+    .line 45
+    move-object/from16 v3, p2
+
+    .line 46
+    .line 47
+    move-object/from16 v4, p5
+
+    .line 48
+    .line 49
     move-object/from16 v5, p6
 
-    .line 45
-    .line 46
-    move-object/from16 v6, p4
-
-    .line 47
-    .line 48
-    move-object/from16 v7, p7
-
-    .line 49
     .line 50
-    move-object v8, p1
-
     .line 51
-    move-object/from16 v9, p8
+    move-object/from16 v6, p4
 
     .line 52
     .line 53
-    invoke-direct/range {v0 .. v9}, Lcom/discord/billing/a;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;)V
+    move-object/from16 v7, p7
 
     .line 54
     .line 55
-    .line 56
-    invoke-virtual {v11, v12, v13}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+    move-object/from16 v8, p1
 
+    .line 56
     .line 57
+    move-object/from16 v9, p8
+
     .line 58
     .line 59
-    return-void
+    invoke-direct/range {v0 .. v10}, Lcom/discord/billing/a;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;)V
+
     .line 60
     .line 61
     .line 62
+    invoke-virtual {v12, v13, v14}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+
     .line 63
     .line 64
     .line 65
+    return-void
     .line 66
     .line 67
     .line 68
@@ -4625,288 +4502,202 @@
     return-void
 .end method
 
-.method private static final purchaseWithProductDetails$lambda$5(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
-    .locals 13
+.method private static final purchaseWithProductDetails$lambda$8(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    .locals 14
 
-    .line 1
     move-object v1, p0
 
-    .line 2
     move-object v2, p1
 
-    .line 3
     move-object/from16 v0, p7
 
-    .line 4
-    .line 5
     move-object/from16 v3, p9
 
+    move-object/from16 v4, p10
+
+    const-string v5, "this$0"
+
+    invoke-static {p0, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$onError"
+
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$productId"
+
+    move-object/from16 v8, p2
+
+    invoke-static {v8, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$userId"
+
+    move-object/from16 v11, p5
+
+    invoke-static {v11, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$activity"
+
+    invoke-static {v0, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$onSuccess"
+
+    move-object/from16 v13, p8
+
+    invoke-static {v13, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "$completed"
+
+    invoke-static {v3, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "billingResult"
+
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v5, "productDetails"
+
+    move-object/from16 v7, p11
+
+    invoke-static {v7, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-boolean v5, v3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v5, :cond_0
+
+    .line 3
+    monitor-exit p0
+
+    return-void
+
+    :cond_0
+    const/4 v5, 0x1
+
+    .line 4
+    :try_start_1
+    iput-boolean v5, v3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
+
+    .line 5
+    sget-object v3, Lkotlin/Unit;->a:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 6
+    monitor-exit p0
+
     .line 7
-    const-string v4, "this$0"
+    invoke-direct {p0, v4}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
 
     .line 8
-    .line 9
-    invoke-static {p0, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual/range {p10 .. p10}, Lcom/android/billingclient/api/BillingResult;->a()I
 
-    .line 10
-    .line 11
-    .line 12
-    const-string v4, "$onError"
-
-    .line 13
-    .line 14
-    invoke-static {p1, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const-string v4, "$productId"
-
-    .line 18
-    .line 19
-    move-object v7, p2
-
-    .line 20
-    invoke-static {p2, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v4, "$userId"
-
-    .line 24
-    .line 25
-    move-object/from16 v10, p5
-
-    .line 26
-    .line 27
-    invoke-static {v10, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
-    const-string v4, "$activity"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 33
-    .line 34
-    .line 35
-    const-string v4, "$onSuccess"
-
-    .line 36
-    .line 37
-    move-object/from16 v12, p8
-
-    .line 38
-    .line 39
-    invoke-static {v12, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 40
-    .line 41
-    .line 42
-    const-string v4, "billingResult"
-
-    .line 43
-    .line 44
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const-string v4, "productDetails"
-
-    .line 48
-    .line 49
-    move-object/from16 v6, p10
-
-    .line 50
-    .line 51
-    invoke-static {v6, v4}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-direct {p0, v3}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
-
-    .line 55
-    .line 56
-    .line 57
-    move-result v4
-
-    .line 58
-    if-eqz v4, :cond_0
-
-    .line 59
-    .line 60
-    invoke-virtual/range {p9 .. p9}, Lcom/android/billingclient/api/BillingResult;->a()I
-
-    .line 61
-    .line 62
-    .line 63
     move-result v0
 
-    .line 64
     new-instance v3, Ljava/lang/StringBuilder;
 
-    .line 65
-    .line 66
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 67
-    .line 68
-    .line 69
     const-string v4, "Purchase failed, bad code: "
 
-    .line 70
-    .line 71
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 72
-    .line 73
-    .line 74
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 75
-    .line 76
-    .line 77
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 78
-    .line 79
-    .line 80
     move-result-object v0
 
-    .line 81
     invoke-direct {p0, p1, v0}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
-    .line 82
-    .line 83
-    .line 84
     goto :goto_0
 
-    .line 85
-    :cond_0
-    :try_start_0
-    sget-object v5, Lcom/discord/billing/types/BillingFlowParams;->INSTANCE:Lcom/discord/billing/types/BillingFlowParams;
+    .line 9
+    :cond_1
+    :try_start_2
+    sget-object v6, Lcom/discord/billing/types/BillingFlowParams;->INSTANCE:Lcom/discord/billing/types/BillingFlowParams;
 
-    .line 86
-    .line 87
-    move-object/from16 v6, p10
+    move-object/from16 v7, p11
 
-    .line 88
-    .line 89
-    move-object v7, p2
+    move-object/from16 v8, p2
 
-    .line 90
-    move-object/from16 v8, p3
+    move-object/from16 v9, p3
 
-    .line 91
-    .line 92
-    move-object/from16 v9, p4
+    move-object/from16 v10, p4
 
-    .line 93
-    .line 94
-    move-object/from16 v10, p5
+    move-object/from16 v11, p5
 
-    .line 95
-    .line 96
-    move-object/from16 v11, p6
+    move-object/from16 v12, p6
 
-    .line 97
-    .line 98
-    invoke-virtual/range {v5 .. v11}, Lcom/discord/billing/types/BillingFlowParams;->createWithProductDetails(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/billingclient/api/BillingFlowParams;
+    invoke-virtual/range {v6 .. v12}, Lcom/discord/billing/types/BillingFlowParams;->createWithProductDetails(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/billingclient/api/BillingFlowParams;
 
-    .line 99
-    .line 100
-    .line 101
     move-result-object v3
 
-    .line 102
-    if-nez v3, :cond_1
+    if-nez v3, :cond_2
 
-    .line 103
-    .line 104
     const-string v0, "Purchase failed, product details not found."
 
-    .line 105
-    .line 106
+    .line 10
     invoke-direct {p0, p1, v0}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
-    .line 107
-    .line 108
-    .line 109
     goto :goto_0
 
-    .line 110
-    :cond_1
+    .line 11
+    :cond_2
     iget-object v4, v1, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
 
-    .line 111
-    .line 112
-    if-nez v4, :cond_2
+    if-nez v4, :cond_3
 
-    .line 113
-    .line 114
     const-string v4, "billingClient"
 
-    .line 115
-    .line 116
     invoke-static {v4}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
-    .line 117
-    .line 118
-    .line 119
     const/4 v4, 0x0
 
-    .line 120
-    :cond_2
+    :cond_3
     invoke-virtual {v4, v0, v3}, Lcom/android/billingclient/api/BillingClient;->e(Landroid/app/Activity;Lcom/android/billingclient/api/BillingFlowParams;)Lcom/android/billingclient/api/BillingResult;
 
-    .line 121
-    .line 122
-    .line 123
+    .line 12
     invoke-interface/range {p8 .. p8}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_2
+    .catch Ljava/lang/AssertionError; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 124
-    .line 125
-    .line 126
     goto :goto_0
 
-    .line 127
     :catch_0
     move-exception v0
 
-    .line 128
+    .line 13
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 129
-    .line 130
-    .line 131
     move-result-object v0
 
-    .line 132
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 133
-    .line 134
-    .line 135
     invoke-direct {p0, p1, v0}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
-    .line 136
-    .line 137
-    .line 138
     :goto_0
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    .line 14
+    monitor-exit p0
+
+    throw v0
 .end method
 
 .method private final purchaseWithSkuDetails(Landroid/app/Activity;Ljava/lang/String;Lcom/discord/billing/types/SkuType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-    .locals 13
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4928,131 +4719,135 @@
     .end annotation
 
     .line 1
-    move-object v9, p0
+    new-instance v9, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     .line 2
-    iget-object v0, v9, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
-
     .line 3
-    .line 4
-    if-nez v0, :cond_0
+    invoke-direct {v9}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    const-string v0, "billingClient"
+    move-object v10, p0
 
     .line 7
-    .line 8
-    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+    iget-object v0, v10, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
 
+    .line 8
     .line 9
+    if-nez v0, :cond_0
+
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const-string v0, "billingClient"
 
     .line 12
-    :cond_0
-    move-object v10, v0
-
     .line 13
-    sget-object v0, Lcom/discord/billing/types/SkuDetailsParams;->INSTANCE:Lcom/discord/billing/types/SkuDetailsParams;
+    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
     .line 14
     .line 15
-    const/4 v1, 0x2
-
     .line 16
-    new-array v1, v1, [Ljava/lang/String;
+    const/4 v0, 0x0
 
     .line 17
+    :cond_0
+    move-object v11, v0
+
     .line 18
-    const/4 v2, 0x0
+    sget-object v0, Lcom/discord/billing/types/SkuDetailsParams;->INSTANCE:Lcom/discord/billing/types/SkuDetailsParams;
 
     .line 19
-    aput-object p2, v1, v2
-
     .line 20
+    const/4 v1, 0x2
+
     .line 21
-    const/4 v2, 0x1
+    new-array v1, v1, [Ljava/lang/String;
 
     .line 22
-    aput-object p5, v1, v2
-
     .line 23
+    const/4 v2, 0x0
+
     .line 24
-    invoke-static {v1}, Lkotlin/collections/h;->n([Ljava/lang/Object;)Ljava/util/List;
+    aput-object p2, v1, v2
 
     .line 25
     .line 26
+    const/4 v2, 0x1
+
     .line 27
-    move-result-object v1
+    aput-object p5, v1, v2
 
     .line 28
-    move-object/from16 v2, p3
-
     .line 29
-    .line 30
-    invoke-virtual {v0, v2, v1}, Lcom/discord/billing/types/SkuDetailsParams;->create(Lcom/discord/billing/types/SkuType;Ljava/util/List;)Lcom/android/billingclient/api/SkuDetailsParams;
+    invoke-static {v1}, Lkotlin/collections/h;->n([Ljava/lang/Object;)Ljava/util/List;
 
+    .line 30
     .line 31
     .line 32
+    move-result-object v1
+
     .line 33
-    move-result-object v11
+    move-object/from16 v2, p3
 
     .line 34
-    new-instance v12, Lcom/discord/billing/d;
-
     .line 35
+    invoke-virtual {v0, v2, v1}, Lcom/discord/billing/types/SkuDetailsParams;->create(Lcom/discord/billing/types/SkuType;Ljava/util/List;)Lcom/android/billingclient/api/SkuDetailsParams;
+
     .line 36
-    move-object v0, v12
-
     .line 37
-    move-object v1, p0
-
     .line 38
-    move-object/from16 v2, p8
+    move-result-object v12
 
     .line 39
-    .line 40
-    move-object v3, p2
+    new-instance v13, Lcom/discord/billing/d;
 
+    .line 40
     .line 41
-    move-object/from16 v4, p5
+    move-object v0, v13
 
     .line 42
+    move-object v1, p0
+
     .line 43
-    move-object/from16 v5, p6
+    move-object/from16 v2, p8
 
     .line 44
     .line 45
-    move-object/from16 v6, p4
+    move-object/from16 v3, p2
 
     .line 46
     .line 47
-    move-object v7, p1
+    move-object/from16 v4, p5
 
     .line 48
-    move-object/from16 v8, p7
-
     .line 49
-    .line 50
-    invoke-direct/range {v0 .. v8}, Lcom/discord/billing/d;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;)V
+    move-object/from16 v5, p6
 
+    .line 50
     .line 51
+    move-object/from16 v6, p4
+
     .line 52
     .line 53
-    invoke-virtual {v10, v11, v12}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lu2/g;)V
+    move-object v7, p1
 
     .line 54
+    move-object/from16 v8, p7
+
     .line 55
     .line 56
-    return-void
+    invoke-direct/range {v0 .. v9}, Lcom/discord/billing/d;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;)V
+
     .line 57
     .line 58
     .line 59
+    invoke-virtual {v11, v12, v13}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lu2/g;)V
+
     .line 60
     .line 61
     .line 62
+    return-void
     .line 63
     .line 64
     .line 65
@@ -5387,376 +5182,300 @@
     return-void
 .end method
 
-.method private static final purchaseWithSkuDetails$lambda$4(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
-    .locals 6
+.method private static final purchaseWithSkuDetails$lambda$6(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    .locals 13
 
     .line 1
-    const-string v0, "this$0"
+    move-object v1, p0
 
     .line 2
+    move-object v0, p1
+
     .line 3
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v2, p6
 
     .line 4
     .line 5
+    move-object/from16 v3, p8
+
     .line 6
-    const-string v0, "$onError"
-
     .line 7
-    .line 8
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v4, p9
 
+    .line 8
     .line 9
+    const-string v5, "this$0"
+
     .line 10
     .line 11
-    const-string v0, "$skuId"
+    invoke-static {p0, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
     .line 13
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 14
+    const-string v5, "$onError"
+
     .line 15
     .line 16
-    const-string v0, "$userId"
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 17
     .line 18
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 19
+    const-string v5, "$skuId"
+
     .line 20
     .line 21
-    const-string v0, "$activity"
+    move-object v8, p2
 
     .line 22
-    .line 23
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 23
     .line 24
     .line 25
+    const-string v5, "$userId"
+
     .line 26
-    const-string v0, "$onSuccess"
-
     .line 27
-    .line 28
-    invoke-static {p7, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v11, p5
 
+    .line 28
     .line 29
+    invoke-static {v11, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 30
     .line 31
-    const-string v0, "billingResult"
-
     .line 32
-    .line 33
-    invoke-static {p8, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v5, "$activity"
 
+    .line 33
     .line 34
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 35
     .line 36
-    invoke-direct {p0, p8}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
-
     .line 37
+    const-string v5, "$onSuccess"
+
     .line 38
     .line 39
-    move-result v0
+    move-object/from16 v12, p7
 
     .line 40
-    if-eqz v0, :cond_0
-
     .line 41
-    .line 42
-    invoke-virtual {p8}, Lcom/android/billingclient/api/BillingResult;->a()I
+    invoke-static {v12, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 42
     .line 43
     .line 44
-    .line 45
-    move-result p2
+    const-string v5, "$completed"
 
+    .line 45
     .line 46
-    new-instance p3, Ljava/lang/StringBuilder;
+    invoke-static {v3, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 47
     .line 48
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 49
+    const-string v5, "billingResult"
+
     .line 50
     .line 51
-    const-string p4, "Purchase failed, bad code: "
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 52
     .line 53
-    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 54
-    .line 55
-    .line 56
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    monitor-enter p0
 
+    .line 55
+    :try_start_0
+    iget-boolean v5, v3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 56
     .line 57
+    if-eqz v5, :cond_0
+
     .line 58
     .line 59
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    monitor-exit p0
 
     .line 60
+    return-void
+
     .line 61
+    :cond_0
+    const/4 v5, 0x1
+
     .line 62
-    move-result-object p2
+    :try_start_1
+    iput-boolean v5, v3, Lkotlin/jvm/internal/Ref$BooleanRef;->k:Z
 
     .line 63
-    invoke-direct {p0, p1, p2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
-
     .line 64
+    sget-object v3, Lkotlin/Unit;->a:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 65
     .line 66
-    goto :goto_0
+    monitor-exit p0
 
     .line 67
-    :cond_0
-    sget-object v0, Lcom/discord/billing/types/BillingFlowParams;->INSTANCE:Lcom/discord/billing/types/BillingFlowParams;
+    invoke-direct {p0, v4}, Lcom/discord/billing/BillingManager;->isNotOk(Lcom/android/billingclient/api/BillingResult;)Z
 
     .line 68
     .line 69
-    move-object v1, p9
-
     .line 70
-    move-object v2, p2
+    move-result v3
 
     .line 71
-    move-object v3, p3
+    if-eqz v3, :cond_1
 
     .line 72
-    move-object v4, p4
-
     .line 73
-    move-object v5, p5
+    invoke-virtual/range {p9 .. p9}, Lcom/android/billingclient/api/BillingResult;->a()I
 
     .line 74
-    invoke-virtual/range {v0 .. v5}, Lcom/discord/billing/types/BillingFlowParams;->create(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/billingclient/api/BillingFlowParams;
-
     .line 75
     .line 76
+    move-result v2
+
     .line 77
-    move-result-object p2
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 78
-    if-nez p2, :cond_1
-
     .line 79
-    .line 80
-    const-string p2, "Purchase failed, Sku details not found."
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 80
     .line 81
     .line 82
-    invoke-direct {p0, p1, p2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+    const-string v4, "Purchase failed, bad code: "
 
     .line 83
     .line 84
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 85
-    goto :goto_0
-
     .line 86
-    :cond_1
-    iget-object p0, p0, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
-
     .line 87
-    .line 88
-    if-nez p0, :cond_2
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 88
     .line 89
     .line 90
-    const-string p0, "billingClient"
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 91
     .line 92
-    invoke-static {p0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
-
     .line 93
+    move-result-object v2
+
     .line 94
+    invoke-direct {p0, p1, v2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+
     .line 95
-    const/4 p0, 0x0
-
     .line 96
-    :cond_2
-    invoke-virtual {p0, p6, p2}, Lcom/android/billingclient/api/BillingClient;->e(Landroid/app/Activity;Lcom/android/billingclient/api/BillingFlowParams;)Lcom/android/billingclient/api/BillingResult;
-
     .line 97
-    .line 98
-    .line 99
-    invoke-interface {p7}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    goto :goto_0
 
+    .line 98
+    :cond_1
+    sget-object v6, Lcom/discord/billing/types/BillingFlowParams;->INSTANCE:Lcom/discord/billing/types/BillingFlowParams;
+
+    .line 99
     .line 100
+    move-object/from16 v7, p10
+
     .line 101
     .line 102
-    :goto_0
-    return-void
+    move-object v8, p2
+
     .line 103
+    move-object/from16 v9, p3
+
     .line 104
     .line 105
+    move-object/from16 v10, p4
+
     .line 106
     .line 107
+    move-object/from16 v11, p5
+
     .line 108
     .line 109
+    invoke-virtual/range {v6 .. v11}, Lcom/discord/billing/types/BillingFlowParams;->create(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/billingclient/api/BillingFlowParams;
+
     .line 110
     .line 111
     .line 112
+    move-result-object v3
+
     .line 113
+    if-nez v3, :cond_2
+
     .line 114
     .line 115
+    const-string v2, "Purchase failed, Sku details not found."
+
     .line 116
     .line 117
+    invoke-direct {p0, p1, v2}, Lcom/discord/billing/BillingManager;->invoke(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+
     .line 118
     .line 119
     .line 120
+    goto :goto_0
+
     .line 121
+    :cond_2
+    iget-object v0, v1, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
+
     .line 122
     .line 123
+    if-nez v0, :cond_3
+
     .line 124
     .line 125
+    const-string v0, "billingClient"
+
     .line 126
     .line 127
+    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+
     .line 128
     .line 129
     .line 130
+    const/4 v0, 0x0
+
     .line 131
+    :cond_3
+    invoke-virtual {v0, v2, v3}, Lcom/android/billingclient/api/BillingClient;->e(Landroid/app/Activity;Lcom/android/billingclient/api/BillingFlowParams;)Lcom/android/billingclient/api/BillingResult;
+
     .line 132
     .line 133
     .line 134
+    invoke-interface/range {p7 .. p7}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
     .line 135
     .line 136
     .line 137
+    :goto_0
+    return-void
+
     .line 138
+    :catchall_0
+    move-exception v0
+
     .line 139
+    monitor-exit p0
+
     .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-    .line 214
-    .line 215
-    .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
-    .line 227
-    .line 228
-    .line 229
-    .line 230
-    .line 231
-    .line 232
-    .line 233
-    .line 234
-    .line 235
-    .line 236
-    .line 237
-    .line 238
-    .line 239
-    .line 240
-    .line 241
-    .line 242
-    .line 243
-    .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
-    .line 260
-    .line 261
-    .line 262
-    .line 263
-    .line 264
-    .line 265
-    .line 266
-    .line 267
-    .line 268
+    throw v0
 .end method
 
 .method private final reconnect()V
@@ -6620,20 +6339,25 @@
 
     .line 6
     :cond_2
-    iget-object p3, p0, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
+    new-instance p3, Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    if-nez p3, :cond_3
+    invoke-direct {p3}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
+
+    .line 7
+    iget-object v0, p0, Lcom/discord/billing/BillingManager;->billingClient:Lcom/android/billingclient/api/BillingClient;
+
+    if-nez v0, :cond_3
 
     invoke-static {v2}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_3
-    move-object v1, p3
+    move-object v1, v0
 
-    .line 7
+    .line 8
     :goto_0
-    sget-object p3, Lcom/discord/billing/types/QueryProductDetailsParams;->INSTANCE:Lcom/discord/billing/types/QueryProductDetailsParams;
+    sget-object v0, Lcom/discord/billing/types/QueryProductDetailsParams;->INSTANCE:Lcom/discord/billing/types/QueryProductDetailsParams;
 
     invoke-virtual {p2}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -6643,14 +6367,14 @@
 
     move-result-object p2
 
-    invoke-virtual {p3, p2, p1}, Lcom/discord/billing/types/QueryProductDetailsParams;->create(Lcom/discord/billing/types/ProductType;Ljava/util/List;)Lcom/android/billingclient/api/QueryProductDetailsParams;
+    invoke-virtual {v0, p2, p1}, Lcom/discord/billing/types/QueryProductDetailsParams;->create(Lcom/discord/billing/types/ProductType;Ljava/util/List;)Lcom/android/billingclient/api/QueryProductDetailsParams;
 
     move-result-object p1
 
-    .line 8
+    .line 9
     new-instance p2, Lcom/discord/billing/b;
 
-    invoke-direct {p2, p0, p5, p4}, Lcom/discord/billing/b;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {p2, p0, p5, p4, p3}, Lcom/discord/billing/b;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;)V
 
     invoke-virtual {v1, p1, p2}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
 

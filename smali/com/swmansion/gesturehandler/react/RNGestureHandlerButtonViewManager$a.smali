@@ -2385,30 +2385,32 @@
 
     .line 16
     .line 17
-    sput-object v1, Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;->y:Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;
+    invoke-direct {p0}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;->l()V
 
     .line 18
     .line 19
-    invoke-super {p0}, Landroid/view/ViewGroup;->performClick()Z
-
     .line 20
+    sput-object v1, Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;->y:Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;
+
     .line 21
     .line 22
-    move-result v0
+    invoke-super {p0}, Landroid/view/ViewGroup;->performClick()Z
 
     .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
     goto :goto_0
 
-    .line 24
+    .line 27
     :cond_0
     const/4 v0, 0x0
 
-    .line 25
+    .line 28
     :goto_0
     return v0
-    .line 26
-    .line 27
-    .line 28
     .line 29
     .line 30
     .line 31

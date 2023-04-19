@@ -50,7 +50,7 @@
 
     move-object v5, p2
 
-    invoke-static/range {v0 .. v5}, Lcom/discord/billing/BillingManager;->b(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static/range {v0 .. v5}, Lcom/discord/billing/BillingManager;->e(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method

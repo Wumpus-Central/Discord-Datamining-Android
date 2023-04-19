@@ -4254,9 +4254,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private writeReplace()Ljava/lang/Object;
@@ -4767,9 +4764,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private y0(Lmj/f;)Lnet/time4j/a0;
@@ -5252,9 +5246,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 
@@ -6420,9 +6411,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public l0(Lmj/g;)Z
@@ -7217,9 +7205,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public q0(JLnet/time4j/n0;)Lnet/time4j/a0;

@@ -1007,6 +1007,22 @@
     .line 864
     .line 865
     .line 866
+    .line 867
+    .line 868
+    .line 869
+    .line 870
+    .line 871
+    .line 872
+    .line 873
+    .line 874
+    .line 875
+    .line 876
+    .line 877
+    .line 878
+    .line 879
+    .line 880
+    .line 881
+    .line 882
 .end method
 
 .method private constructor <init>()V
@@ -1986,6 +2002,22 @@
     .line 864
     .line 865
     .line 866
+    .line 867
+    .line 868
+    .line 869
+    .line 870
+    .line 871
+    .line 872
+    .line 873
+    .line 874
+    .line 875
+    .line 876
+    .line 877
+    .line 878
+    .line 879
+    .line 880
+    .line 881
+    .line 882
 .end method
 
 .method public deserialize(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/botuikit/ChannelSelectComponent;

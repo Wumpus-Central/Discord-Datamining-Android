@@ -613,9 +613,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public final c(Ljava/lang/String;Ljava/nio/charset/Charset;)Lokio/ByteString;

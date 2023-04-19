@@ -23,9 +23,11 @@
 
 .field public final synthetic h:Lkotlin/jvm/functions/Function0;
 
+.field public final synthetic i:Lkotlin/jvm/internal/Ref$BooleanRef;
+
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;)V
+.method public synthetic constructor <init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,13 +48,15 @@
 
     iput-object p8, p0, Lcom/discord/billing/d;->h:Lkotlin/jvm/functions/Function0;
 
+    iput-object p9, p0, Lcom/discord/billing/d;->i:Lkotlin/jvm/internal/Ref$BooleanRef;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final a(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
-    .locals 10
+    .locals 11
 
     iget-object v0, p0, Lcom/discord/billing/d;->a:Lcom/discord/billing/BillingManager;
 
@@ -70,11 +74,13 @@
 
     iget-object v7, p0, Lcom/discord/billing/d;->h:Lkotlin/jvm/functions/Function0;
 
-    move-object v8, p1
+    iget-object v8, p0, Lcom/discord/billing/d;->i:Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    move-object v9, p2
+    move-object v9, p1
 
-    invoke-static/range {v0 .. v9}, Lcom/discord/billing/BillingManager;->c(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    move-object v10, p2
+
+    invoke-static/range {v0 .. v10}, Lcom/discord/billing/BillingManager;->b(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method

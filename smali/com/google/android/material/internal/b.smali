@@ -640,9 +640,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private A(Landroid/text/TextPaint;)V
@@ -1158,9 +1155,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private static C(FF)Z
@@ -2790,9 +2784,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private c()V
@@ -3811,9 +3802,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private h(F)V
@@ -8245,9 +8233,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public R(Landroid/content/res/ColorStateList;)V
@@ -9614,9 +9599,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public o(Landroid/graphics/RectF;II)V

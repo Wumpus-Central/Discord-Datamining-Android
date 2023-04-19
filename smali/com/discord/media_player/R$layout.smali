@@ -135,19 +135,19 @@
 
 .field public static final player_view_with_texture_view:I = 0x7f0d00b4
 
-.field public static final redbox_item_frame:I = 0x7f0d00b8
+.field public static final redbox_item_frame:I = 0x7f0d00b9
 
-.field public static final redbox_item_title:I = 0x7f0d00b9
+.field public static final redbox_item_title:I = 0x7f0d00ba
 
-.field public static final redbox_view:I = 0x7f0d00ba
+.field public static final redbox_view:I = 0x7f0d00bb
 
-.field public static final select_dialog_item_material:I = 0x7f0d00bf
+.field public static final select_dialog_item_material:I = 0x7f0d00c0
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d00c0
+.field public static final select_dialog_multichoice_material:I = 0x7f0d00c1
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d00c1
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d00c2
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00c3
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d00c4
 
 
 # direct methods

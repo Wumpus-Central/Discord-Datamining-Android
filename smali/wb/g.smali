@@ -1163,9 +1163,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private static T(II)I
@@ -3222,9 +3219,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method private o(Landroid/graphics/Canvas;)V
@@ -5334,9 +5328,6 @@
     .line 356
     .line 357
     .line 358
-    .line 359
-    .line 360
-    .line 361
 .end method
 
 .method public e0(FI)V
