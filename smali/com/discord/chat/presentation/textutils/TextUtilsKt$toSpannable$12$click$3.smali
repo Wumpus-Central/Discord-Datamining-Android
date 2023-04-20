@@ -84,7 +84,7 @@
 .end method
 
 .method public final invoke(Landroid/view/View;)V
-    .locals 3
+    .locals 2
 
     const-string v0, "it"
 
@@ -119,11 +119,11 @@
 
     check-cast v1, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
 
-    invoke-virtual {v1}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->getChannelId-o4g7jtM()J
+    invoke-virtual {v1}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->getChannelId-qMVnFVQ()Lcom/discord/primitives/ChannelId;
 
-    move-result-wide v1
+    move-result-object v1
 
-    invoke-static {v1, v2}, Lcom/discord/primitives/ChannelId;->toString-impl(J)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 

@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001d\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 =2\u00020\u0001:\u0002<=B\\\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u0008\u001a\u00020\u0003\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u000e\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012BL\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0013J\u0019\u0010!\u001a\u00020\u0005H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\"\u0010\u0015J\u0019\u0010#\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008$J\t\u0010%\u001a\u00020\u0003H\u00c6\u0003J\u0019\u0010&\u001a\u0004\u0018\u00010\nH\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008\'J\u0019\u0010(\u001a\u0004\u0018\u00010\u000cH\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008)J\u000f\u0010*\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eH\u00c6\u0003J^\u0010+\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00032\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\u000e\u0008\u0002\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eH\u00c6\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008,\u0010-J\u0013\u0010.\u001a\u00020/2\u0008\u00100\u001a\u0004\u0018\u000101H\u00d6\u0003J\t\u00102\u001a\u00020\u0003H\u00d6\u0001J\t\u00103\u001a\u000204H\u00d6\u0001J!\u00105\u001a\u0002062\u0006\u00107\u001a\u00020\u00002\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;H\u00c7\u0001R\u001c\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0016\u001a\u0004\u0008\u0014\u0010\u0015R\u001a\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018R\u001c\u0010\t\u001a\u0004\u0018\u00010\n\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\u0008\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 \u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006>"
+        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 ;2\u00020\u0001:\u0002:;B\\\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u0008\u001a\u00020\u0003\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u000e\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012BP\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0013J\u0019\u0010 \u001a\u0004\u0018\u00010\u0005H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008!J\u0019\u0010\"\u001a\u0004\u0018\u00010\u0007H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008#J\t\u0010$\u001a\u00020\u0003H\u00c6\u0003J\u0019\u0010%\u001a\u0004\u0018\u00010\nH\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008&J\u0019\u0010\'\u001a\u0004\u0018\u00010\u000cH\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008(J\u000f\u0010)\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eH\u00c6\u0003J^\u0010*\u001a\u00020\u00002\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00032\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\u000e\u0008\u0002\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eH\u00c6\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008+J\u0013\u0010,\u001a\u00020-2\u0008\u0010.\u001a\u0004\u0018\u00010/H\u00d6\u0003J\t\u00100\u001a\u00020\u0003H\u00d6\u0001J\t\u00101\u001a\u000202H\u00d6\u0001J!\u00103\u001a\u0002042\u0006\u00105\u001a\u00020\u00002\u0006\u00106\u001a\u0002072\u0006\u00108\u001a\u000209H\u00c7\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u001a\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000eX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u001c\u0010\t\u001a\u0004\u0018\u00010\n\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\u0008\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001bR\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u001f\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006<"
     }
     d2 = {
         "Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;",
@@ -35,10 +35,9 @@
         "serializationConstructorMarker",
         "Lkotlinx/serialization/internal/SerializationConstructorMarker;",
         "(ILcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "getChannelId-o4g7jtM",
-        "()J",
-        "J",
+        "(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "getChannelId-qMVnFVQ",
+        "()Lcom/discord/primitives/ChannelId;",
         "getContent",
         "()Ljava/util/List;",
         "getGuildId-qOKuAAo",
@@ -50,7 +49,7 @@
         "getUserId-wUX8bhU",
         "()Lcom/discord/primitives/UserId;",
         "component1",
-        "component1-o4g7jtM",
+        "component1-qMVnFVQ",
         "component2",
         "component2-wUX8bhU",
         "component3",
@@ -60,8 +59,7 @@
         "component5-fYaclRY",
         "component6",
         "copy",
-        "copy-dIxqfiY",
-        "(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;",
+        "copy-DZRaReU",
         "equals",
         "",
         "other",
@@ -98,7 +96,7 @@
 
 
 # instance fields
-.field private final channelId:J
+.field private final channelId:Lcom/discord/primitives/ChannelId;
 
 .field private final content:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -153,9 +151,9 @@
         }
     .end annotation
 
-    and-int/lit8 v0, p1, 0x21
+    and-int/lit8 v0, p1, 0x20
 
-    const/16 v1, 0x21
+    const/16 v1, 0x20
 
     if-eq v1, v0, :cond_0
 
@@ -171,64 +169,70 @@
     :cond_0
     invoke-direct {p0, p1, p8}, Lcom/discord/chat/bridge/contentnode/MentionContentNode;-><init>(ILkotlinx/serialization/internal/SerializationConstructorMarker;)V
 
-    invoke-virtual {p2}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
+    and-int/lit8 p8, p1, 0x1
 
-    move-result-wide v0
+    const/4 v0, 0x0
 
-    iput-wide v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    if-nez p8, :cond_1
 
-    and-int/lit8 p2, p1, 0x2
-
-    const/4 p8, 0x0
-
-    if-nez p2, :cond_1
-
-    iput-object p8, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+    iput-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
     goto :goto_0
 
     :cond_1
-    iput-object p3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+    iput-object p2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
     :goto_0
-    and-int/lit8 p2, p1, 0x4
+    and-int/lit8 p2, p1, 0x2
 
     if-nez p2, :cond_2
+
+    iput-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+
+    goto :goto_1
+
+    :cond_2
+    iput-object p3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+
+    :goto_1
+    and-int/lit8 p2, p1, 0x4
+
+    if-nez p2, :cond_3
 
     const/4 p2, 0x0
 
     iput p2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
 
-    goto :goto_1
-
-    :cond_2
-    iput p4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
-
-    :goto_1
-    and-int/lit8 p2, p1, 0x8
-
-    if-nez p2, :cond_3
-
-    iput-object p8, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
-
     goto :goto_2
 
     :cond_3
-    iput-object p5, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
+    iput p4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
 
     :goto_2
-    and-int/lit8 p1, p1, 0x10
+    and-int/lit8 p2, p1, 0x8
 
-    if-nez p1, :cond_4
+    if-nez p2, :cond_4
 
-    iput-object p8, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    iput-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
 
     goto :goto_3
 
     :cond_4
-    iput-object p6, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    iput-object p5, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
 
     :goto_3
+    and-int/lit8 p1, p1, 0x10
+
+    if-nez p1, :cond_5
+
+    iput-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+
+    goto :goto_4
+
+    :cond_5
+    iput-object p6, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+
+    :goto_4
     iput-object p7, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->content:Ljava/util/List;
 
     return-void
@@ -242,11 +246,12 @@
     return-void
 .end method
 
-.method private constructor <init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)V
+.method private constructor <init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(J",
+            "(",
+            "Lcom/discord/primitives/ChannelId;",
             "Lcom/discord/primitives/UserId;",
             "I",
             "Lcom/discord/primitives/GuildId;",
@@ -264,199 +269,189 @@
     invoke-direct {p0, v0}, Lcom/discord/chat/bridge/contentnode/MentionContentNode;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 4
-    iput-wide p1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iput-object p1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
     .line 5
-    iput-object p3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+    iput-object p2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
 
     .line 6
-    iput p4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+    iput p3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
 
     .line 7
-    iput-object p5, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
+    iput-object p4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
 
     .line 8
-    iput-object p6, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    iput-object p5, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
 
     .line 9
-    iput-object p7, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->content:Ljava/util/List;
+    iput-object p6, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->content:Ljava/util/List;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 11
+.method public synthetic constructor <init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 10
 
-    and-int/lit8 v0, p8, 0x2
+    and-int/lit8 v0, p7, 0x1
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    move-object v5, v1
+    move-object v3, v1
 
     goto :goto_0
 
     :cond_0
-    move-object v5, p3
+    move-object v3, p1
 
     :goto_0
-    and-int/lit8 v0, p8, 0x4
+    and-int/lit8 v0, p7, 0x2
 
     if-eqz v0, :cond_1
 
-    const/4 v0, 0x0
-
-    move v6, v0
+    move-object v4, v1
 
     goto :goto_1
 
     :cond_1
-    move v6, p4
+    move-object v4, p2
 
     :goto_1
-    and-int/lit8 v0, p8, 0x8
+    and-int/lit8 v0, p7, 0x4
 
     if-eqz v0, :cond_2
 
-    move-object v7, v1
+    const/4 v0, 0x0
+
+    move v5, v0
 
     goto :goto_2
 
     :cond_2
-    move-object/from16 v7, p5
+    move v5, p3
 
     :goto_2
-    and-int/lit8 v0, p8, 0x10
+    and-int/lit8 v0, p7, 0x8
 
     if-eqz v0, :cond_3
 
-    move-object v8, v1
+    move-object v6, v1
 
     goto :goto_3
 
     :cond_3
-    move-object/from16 v8, p6
+    move-object v6, p4
 
     :goto_3
-    const/4 v10, 0x0
+    and-int/lit8 v0, p7, 0x10
 
-    move-object v2, p0
+    if-eqz v0, :cond_4
 
-    move-wide v3, p1
-
-    move-object/from16 v9, p7
-
-    .line 2
-    invoke-direct/range {v2 .. v10}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 0
-
-    invoke-direct/range {p0 .. p7}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)V
-
-    return-void
-.end method
-
-.method public static synthetic copy-dIxqfiY$default(Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;ILjava/lang/Object;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
-    .locals 8
-
-    move-object v0, p0
-
-    and-int/lit8 v1, p8, 0x1
-
-    if-eqz v1, :cond_0
-
-    iget-wide v1, v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
-
-    goto :goto_0
-
-    :cond_0
-    move-wide v1, p1
-
-    :goto_0
-    and-int/lit8 v3, p8, 0x2
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
-
-    goto :goto_1
-
-    :cond_1
-    move-object v3, p3
-
-    :goto_1
-    and-int/lit8 v4, p8, 0x4
-
-    if-eqz v4, :cond_2
-
-    iget v4, v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
-
-    goto :goto_2
-
-    :cond_2
-    move v4, p4
-
-    :goto_2
-    and-int/lit8 v5, p8, 0x8
-
-    if-eqz v5, :cond_3
-
-    iget-object v5, v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
-
-    goto :goto_3
-
-    :cond_3
-    move-object v5, p5
-
-    :goto_3
-    and-int/lit8 v6, p8, 0x10
-
-    if-eqz v6, :cond_4
-
-    iget-object v6, v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    move-object v7, v1
 
     goto :goto_4
 
     :cond_4
-    move-object v6, p6
+    move-object v7, p5
 
     :goto_4
-    and-int/lit8 v7, p8, 0x20
+    const/4 v9, 0x0
 
-    if-eqz v7, :cond_5
+    move-object v2, p0
+
+    move-object/from16 v8, p6
+
+    .line 2
+    invoke-direct/range {v2 .. v9}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    invoke-direct/range {p0 .. p6}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public static synthetic copy-DZRaReU$default(Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;ILjava/lang/Object;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
+    .locals 4
+
+    and-int/lit8 p8, p7, 0x1
+
+    if-eqz p8, :cond_0
+
+    iget-object p1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
+
+    :cond_0
+    and-int/lit8 p8, p7, 0x2
+
+    if-eqz p8, :cond_1
+
+    iget-object p2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+
+    :cond_1
+    move-object p8, p2
+
+    and-int/lit8 p2, p7, 0x4
+
+    if-eqz p2, :cond_2
+
+    iget p3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+
+    :cond_2
+    move v0, p3
+
+    and-int/lit8 p2, p7, 0x8
+
+    if-eqz p2, :cond_3
+
+    iget-object p4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
+
+    :cond_3
+    move-object v1, p4
+
+    and-int/lit8 p2, p7, 0x10
+
+    if-eqz p2, :cond_4
+
+    iget-object p5, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+
+    :cond_4
+    move-object v2, p5
+
+    and-int/lit8 p2, p7, 0x20
+
+    if-eqz p2, :cond_5
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->getContent()Ljava/util/List;
 
-    move-result-object v7
-
-    goto :goto_5
+    move-result-object p6
 
     :cond_5
-    move-object v7, p7
+    move-object v3, p6
 
-    :goto_5
-    move-wide p1, v1
+    move-object p2, p0
 
-    move-object p3, v3
+    move-object p3, p1
 
-    move p4, v4
+    move-object p4, p8
 
-    move-object p5, v5
+    move p5, v0
 
-    move-object p6, v6
+    move-object p6, v1
 
-    move-object p7, v7
+    move-object p7, v2
 
-    invoke-virtual/range {p0 .. p7}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->copy-dIxqfiY(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
+    move-object p8, v3
 
-    move-result-object v0
+    invoke-virtual/range {p2 .. p8}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->copy-DZRaReU(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
 
-    return-object v0
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static final write$Self(Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
@@ -495,293 +490,314 @@
     .line 17
     .line 18
     .line 19
-    sget-object v0, Lcom/discord/primitives/ChannelId$$serializer;->INSTANCE:Lcom/discord/primitives/ChannelId$$serializer;
+    const/4 v0, 0x0
 
     .line 20
-    .line 21
-    iget-wide v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
-
-    .line 22
-    .line 23
-    invoke-static {v1, v2}, Lcom/discord/primitives/ChannelId;->box-impl(J)Lcom/discord/primitives/ChannelId;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    const/4 v2, 0x0
-
-    .line 28
-    invoke-interface {p1, p2, v2, v0, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    const/4 v0, 0x1
-
-    .line 32
     invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
-    .line 33
-    .line 34
-    .line 35
+    .line 21
+    .line 22
+    .line 23
     move-result v1
 
-    .line 36
+    .line 24
+    const/4 v2, 0x1
+
+    .line 25
     if-eqz v1, :cond_0
 
-    .line 37
-    .line 38
+    .line 26
+    .line 27
     :goto_0
-    move v1, v0
-
-    .line 39
-    goto :goto_1
-
-    .line 40
-    :cond_0
-    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
-
-    .line 41
-    .line 42
-    if-eqz v1, :cond_1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_1
     move v1, v2
 
-    .line 46
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_0
+    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
+
+    .line 30
+    .line 31
+    if-eqz v1, :cond_1
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_1
+    move v1, v0
+
+    .line 35
     :goto_1
     if-eqz v1, :cond_2
 
+    .line 36
+    .line 37
+    sget-object v1, Lcom/discord/primitives/ChannelId$$serializer;->INSTANCE:Lcom/discord/primitives/ChannelId$$serializer;
+
+    .line 38
+    .line 39
+    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
+
+    .line 40
+    .line 41
+    invoke-interface {p1, p2, v0, v1, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
+    .line 42
+    .line 43
+    .line 44
+    :cond_2
+    invoke-interface {p1, p2, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+
+    .line 45
+    .line 46
     .line 47
+    move-result v1
+
     .line 48
-    sget-object v1, Lcom/discord/primitives/UserId$$serializer;->INSTANCE:Lcom/discord/primitives/UserId$$serializer;
+    if-eqz v1, :cond_3
 
     .line 49
     .line 50
-    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
+    :goto_2
+    move v1, v2
 
     .line 51
+    goto :goto_3
+
     .line 52
-    invoke-interface {p1, p2, v0, v1, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    :cond_3
+    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
 
     .line 53
     .line 54
-    .line 55
-    :cond_2
-    const/4 v1, 0x2
+    if-eqz v1, :cond_4
 
+    .line 55
     .line 56
-    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    goto :goto_2
 
     .line 57
-    .line 58
-    .line 59
-    move-result v3
+    :cond_4
+    move v1, v0
 
+    .line 58
+    :goto_3
+    if-eqz v1, :cond_5
+
+    .line 59
     .line 60
-    if-eqz v3, :cond_3
+    sget-object v1, Lcom/discord/primitives/UserId$$serializer;->INSTANCE:Lcom/discord/primitives/UserId$$serializer;
 
     .line 61
     .line 62
-    :goto_2
-    move v3, v0
+    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
 
     .line 63
-    goto :goto_3
-
     .line 64
-    :cond_3
-    iget v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+    invoke-interface {p1, p2, v2, v1, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
 
     .line 65
     .line 66
-    if-eqz v3, :cond_4
-
     .line 67
+    :cond_5
+    const/4 v1, 0x2
+
     .line 68
-    goto :goto_2
+    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     .line 69
-    :cond_4
-    move v3, v2
-
     .line 70
-    :goto_3
-    if-eqz v3, :cond_5
-
     .line 71
+    move-result v3
+
     .line 72
-    iget v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+    if-eqz v3, :cond_6
 
     .line 73
     .line 74
-    invoke-interface {p1, p2, v1, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+    :goto_4
+    move v3, v2
 
     .line 75
-    .line 76
-    .line 77
-    :cond_5
-    const/4 v1, 0x3
+    goto :goto_5
 
+    .line 76
+    :cond_6
+    iget v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+
+    .line 77
     .line 78
-    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    if-eqz v3, :cond_7
 
     .line 79
     .line 80
-    .line 81
-    move-result v3
-
-    .line 82
-    if-eqz v3, :cond_6
-
-    .line 83
-    .line 84
-    :goto_4
-    move v3, v0
-
-    .line 85
-    goto :goto_5
-
-    .line 86
-    :cond_6
-    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
-
-    .line 87
-    .line 88
-    if-eqz v3, :cond_7
-
-    .line 89
-    .line 90
     goto :goto_4
 
-    .line 91
+    .line 81
     :cond_7
-    move v3, v2
+    move v3, v0
 
-    .line 92
+    .line 82
     :goto_5
     if-eqz v3, :cond_8
 
+    .line 83
+    .line 84
+    iget v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+
+    .line 85
+    .line 86
+    invoke-interface {p1, p2, v1, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+
+    .line 87
+    .line 88
+    .line 89
+    :cond_8
+    const/4 v1, 0x3
+
+    .line 90
+    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+
+    .line 91
+    .line 92
     .line 93
+    move-result v3
+
     .line 94
-    sget-object v3, Lcom/discord/primitives/GuildId$$serializer;->INSTANCE:Lcom/discord/primitives/GuildId$$serializer;
+    if-eqz v3, :cond_9
 
     .line 95
     .line 96
-    iget-object v4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
+    :goto_6
+    move v3, v2
 
     .line 97
+    goto :goto_7
+
     .line 98
-    invoke-interface {p1, p2, v1, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    :cond_9
+    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
 
     .line 99
     .line 100
-    .line 101
-    :cond_8
-    const/4 v1, 0x4
+    if-eqz v3, :cond_a
 
+    .line 101
     .line 102
-    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    goto :goto_6
 
     .line 103
-    .line 104
-    .line 105
-    move-result v3
+    :cond_a
+    move v3, v0
 
+    .line 104
+    :goto_7
+    if-eqz v3, :cond_b
+
+    .line 105
     .line 106
-    if-eqz v3, :cond_9
+    sget-object v3, Lcom/discord/primitives/GuildId$$serializer;->INSTANCE:Lcom/discord/primitives/GuildId$$serializer;
 
     .line 107
     .line 108
-    :goto_6
-    move v2, v0
+    iget-object v4, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
 
     .line 109
-    goto :goto_7
-
     .line 110
-    :cond_9
-    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    invoke-interface {p1, p2, v1, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
 
     .line 111
     .line 112
-    if-eqz v3, :cond_a
-
     .line 113
+    :cond_b
+    const/4 v1, 0x4
+
     .line 114
-    goto :goto_6
+    invoke-interface {p1, p2, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     .line 115
-    :cond_a
-    :goto_7
-    if-eqz v2, :cond_b
-
     .line 116
     .line 117
-    sget-object v0, Lcom/discord/primitives/RoleId$$serializer;->INSTANCE:Lcom/discord/primitives/RoleId$$serializer;
+    move-result v3
 
     .line 118
-    .line 119
-    iget-object v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    if-eqz v3, :cond_c
 
+    .line 119
     .line 120
+    :goto_8
+    move v0, v2
+
     .line 121
-    invoke-interface {p1, p2, v1, v0, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    goto :goto_9
 
     .line 122
+    :cond_c
+    iget-object v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+
     .line 123
     .line 124
-    :cond_b
-    new-instance v0, Lzi/f;
+    if-eqz v3, :cond_d
 
     .line 125
     .line 126
-    sget-object v1, Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;->INSTANCE:Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;
+    goto :goto_8
 
     .line 127
-    .line 128
-    invoke-direct {v0, v1}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    :cond_d
+    :goto_9
+    if-eqz v0, :cond_e
 
+    .line 128
     .line 129
+    sget-object v0, Lcom/discord/primitives/RoleId$$serializer;->INSTANCE:Lcom/discord/primitives/RoleId$$serializer;
+
     .line 130
     .line 131
-    invoke-virtual {p0}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->getContent()Ljava/util/List;
+    iget-object v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
 
     .line 132
     .line 133
+    invoke-interface {p1, p2, v1, v0, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 134
-    move-result-object p0
-
     .line 135
-    const/4 v1, 0x5
-
     .line 136
-    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    :cond_e
+    new-instance v0, Lzi/f;
 
     .line 137
     .line 138
+    sget-object v1, Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;->INSTANCE:Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;
+
     .line 139
-    return-void
     .line 140
+    invoke-direct {v0, v1}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+
     .line 141
     .line 142
     .line 143
+    invoke-virtual {p0}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->getContent()Ljava/util/List;
+
     .line 144
     .line 145
     .line 146
+    move-result-object p0
+
     .line 147
+    const/4 v1, 0x5
+
     .line 148
+    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 149
     .line 150
     .line 151
+    return-void
     .line 152
     .line 153
     .line 154
@@ -1124,12 +1140,12 @@
 
 
 # virtual methods
-.method public final component1-o4g7jtM()J
-    .locals 2
+.method public final component1-qMVnFVQ()Lcom/discord/primitives/ChannelId;
+    .locals 1
 
-    iget-wide v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iget-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
-    return-wide v0
+    return-object v0
 .end method
 
 .method public final component2-wUX8bhU()Lcom/discord/primitives/UserId;
@@ -1182,11 +1198,12 @@
     return-object v0
 .end method
 
-.method public final copy-dIxqfiY(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
-    .locals 10
+.method public final copy-DZRaReU(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;)Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
+    .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(J",
+            "(",
+            "Lcom/discord/primitives/ChannelId;",
             "Lcom/discord/primitives/UserId;",
             "I",
             "Lcom/discord/primitives/GuildId;",
@@ -1201,33 +1218,33 @@
 
     const-string v0, "content"
 
-    move-object/from16 v8, p7
-
-    invoke-static {v8, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
 
-    const/4 v9, 0x0
+    const/4 v8, 0x0
 
     move-object v1, v0
 
-    move-wide v2, p1
+    move-object v2, p1
 
-    move-object v4, p3
+    move-object v3, p2
 
-    move v5, p4
+    move v4, p3
+
+    move-object v5, p4
 
     move-object v6, p5
 
-    move-object/from16 v7, p6
+    move-object v7, p6
 
-    invoke-direct/range {v1 .. v9}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(JLcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v1 .. v8}, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;-><init>(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
-    .locals 7
+    .locals 4
 
     const/4 v0, 0x1
 
@@ -1247,11 +1264,11 @@
     :cond_1
     check-cast p1, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;
 
-    iget-wide v3, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
-    iget-wide v5, p1, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iget-object v3, p1, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
-    invoke-static {v3, v4, v5, v6}, Lcom/discord/primitives/ChannelId;->equals-impl0(JJ)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1328,12 +1345,12 @@
     return v0
 .end method
 
-.method public final getChannelId-o4g7jtM()J
-    .locals 2
+.method public final getChannelId-qMVnFVQ()Lcom/discord/primitives/ChannelId;
+    .locals 1
 
-    iget-wide v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iget-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
-    return-wide v0
+    return-object v0
 .end method
 
 .method public getContent()Ljava/util/List;
@@ -1385,85 +1402,97 @@
 .end method
 
 .method public hashCode()I
-    .locals 5
+    .locals 4
 
-    iget-wide v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
+    iget-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
-    invoke-static {v0, v1}, Lcom/discord/primitives/ChannelId;->hashCode-impl(J)I
+    const/4 v1, 0x0
 
-    move-result v0
+    if-nez v0, :cond_0
 
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    move v1, v2
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v1}, Lcom/discord/primitives/UserId;->unbox-impl()J
+    invoke-virtual {v0}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    invoke-static {v3, v4}, Lcom/discord/primitives/UserId;->hashCode-impl(J)I
+    invoke-static {v2, v3}, Lcom/discord/primitives/ChannelId;->hashCode-impl(J)I
 
-    move-result v1
+    move-result v0
 
     :goto_0
-    add-int/2addr v0, v1
-
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
+    iget-object v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
 
-    add-int/2addr v0, v1
+    if-nez v2, :cond_1
 
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
-
-    if-nez v1, :cond_1
-
-    move v1, v2
+    move v2, v1
 
     goto :goto_1
 
     :cond_1
-    invoke-virtual {v1}, Lcom/discord/primitives/GuildId;->unbox-impl()J
+    invoke-virtual {v2}, Lcom/discord/primitives/UserId;->unbox-impl()J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    invoke-static {v3, v4}, Lcom/discord/primitives/GuildId;->hashCode-impl(J)I
+    invoke-static {v2, v3}, Lcom/discord/primitives/UserId;->hashCode-impl(J)I
 
-    move-result v1
+    move-result v2
 
     :goto_1
-    add-int/2addr v0, v1
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+    iget v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleColor:I
 
-    if-nez v1, :cond_2
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->guildId:Lcom/discord/primitives/GuildId;
+
+    if-nez v2, :cond_2
+
+    move v2, v1
 
     goto :goto_2
 
     :cond_2
-    invoke-virtual {v1}, Lcom/discord/primitives/RoleId;->unbox-impl()J
+    invoke-virtual {v2}, Lcom/discord/primitives/GuildId;->unbox-impl()J
 
-    move-result-wide v1
+    move-result-wide v2
 
-    invoke-static {v1, v2}, Lcom/discord/primitives/RoleId;->hashCode-impl(J)I
+    invoke-static {v2, v3}, Lcom/discord/primitives/GuildId;->hashCode-impl(J)I
 
     move-result v2
 
     :goto_2
     add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->roleId:Lcom/discord/primitives/RoleId;
+
+    if-nez v2, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {v2}, Lcom/discord/primitives/RoleId;->unbox-impl()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Lcom/discord/primitives/RoleId;->hashCode-impl(J)I
+
+    move-result v1
+
+    :goto_3
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -1483,11 +1512,7 @@
 .method public toString()Ljava/lang/String;
     .locals 8
 
-    iget-wide v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:J
-
-    invoke-static {v0, v1}, Lcom/discord/primitives/ChannelId;->toString-impl(J)Ljava/lang/String;
-
-    move-result-object v0
+    iget-object v0, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->channelId:Lcom/discord/primitives/ChannelId;
 
     iget-object v1, p0, Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;->userId:Lcom/discord/primitives/UserId;
 
@@ -1509,7 +1534,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v0, ", userId="
 
