@@ -7,24 +7,16 @@
 
 
 # instance fields
-.field public final synthetic k:Lcom/discord/chat/presentation/events/ChatEventHandler;
-
-.field public final synthetic l:Ljava/lang/String;
-
-.field public final synthetic m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
+.field public final synthetic k:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/chat/presentation/message/r;->k:Lcom/discord/chat/presentation/events/ChatEventHandler;
-
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/r;->l:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/discord/chat/presentation/message/r;->m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
+    iput-object p1, p0, Lcom/discord/chat/presentation/message/r;->k:Lkotlin/jvm/functions/Function0;
 
     return-void
 .end method
@@ -32,15 +24,11 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 1
 
-    iget-object v0, p0, Lcom/discord/chat/presentation/message/r;->k:Lcom/discord/chat/presentation/events/ChatEventHandler;
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/r;->k:Lkotlin/jvm/functions/Function0;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/r;->l:Ljava/lang/String;
-
-    iget-object v2, p0, Lcom/discord/chat/presentation/message/r;->m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
-
-    invoke-static {v0, v1, v2, p1}, Lcom/discord/chat/presentation/message/MessageViewReplyPreview;->c(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lcom/discord/chat/presentation/message/MessageViewReplyPreview;->b(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
 
     return-void
 .end method

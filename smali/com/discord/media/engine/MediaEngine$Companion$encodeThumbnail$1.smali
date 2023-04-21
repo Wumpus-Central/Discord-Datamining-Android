@@ -27,8 +27,8 @@
     c = "com.discord.media.engine.MediaEngine$Companion"
     f = "MediaEngine.kt"
     l = {
-        0x257,
-        0x25a
+        0x2c7,
+        0x2ca
     }
     m = "encodeThumbnail"
 .end annotation

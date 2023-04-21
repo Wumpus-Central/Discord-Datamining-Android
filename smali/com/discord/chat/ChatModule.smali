@@ -10,7 +10,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010%\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010&\u001a\u00020%\u00a2\u0006\u0004\u00082\u00103J\'\u0010\u0008\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0014\u0008\u0004\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004H\u0082\u0008J>\u0010\r\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\"\u0010\u0007\u001a\u001e\u0008\u0001\u0012\u0004\u0012\u00020\n\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000c0\tH\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0008\u0010\u0012\u001a\u00020\u0011H\u0016J\u0008\u0010\u0013\u001a\u00020\u0006H\u0016J\u000e\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u0002J \u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u00112\u0006\u0010\u0017\u001a\u00020\u0016H\u0007J\u0010\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\u0008\u0010\u001a\u001a\u00020\u0006H\u0007J\u0008\u0010\u001b\u001a\u00020\u0006H\u0007J\u0010\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\u0018\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J\u0018\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010!\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010 \u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010#\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010$\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008&\u0010\'R\u0014\u0010)\u001a\u00020(8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008)\u0010*R\u0014\u0010,\u001a\u00020+8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008,\u0010-R \u0010/\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\n0.8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008/\u00100R \u00101\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000f0.8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u00081\u00100\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00064"
+        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010%\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010&\u001a\u00020%\u00a2\u0006\u0004\u00084\u00105J\'\u0010\u0008\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0014\u0008\u0004\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004H\u0082\u0008J>\u0010\r\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\"\u0010\u0007\u001a\u001e\u0008\u0001\u0012\u0004\u0012\u00020\n\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000c0\tH\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0008\u0010\u0012\u001a\u00020\u0011H\u0016J\u0008\u0010\u0013\u001a\u00020\u0006H\u0016J\u000e\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u0002J \u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u00112\u0006\u0010\u0017\u001a\u00020\u0016H\u0007J\u0010\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\u0008\u0010\u001a\u001a\u00020\u0006H\u0007J\u0008\u0010\u001b\u001a\u00020\u0006H\u0007J\u0010\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\u0018\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J\u0018\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010!\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010 \u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010#\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010$\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008&\u0010\'R\u0014\u0010)\u001a\u00020(8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008)\u0010*R\u0014\u0010,\u001a\u00020+8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008,\u0010-R \u0010/\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\n0.8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008/\u00100R\u0016\u00101\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u00081\u00102R \u00103\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000f0.8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u00083\u00100\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00066"
     }
     d2 = {
         "Lcom/discord/chat/ChatModule;",
@@ -62,6 +62,8 @@
         "",
         "listManagers",
         "Ljava/util/Map;",
+        "previousRowUpdateTag",
+        "I",
         "rowUpdateLoggers",
         "<init>",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -91,6 +93,8 @@
 .end field
 
 .field private final moduleScope:Lkotlinx/coroutines/CoroutineScope;
+
+.field private previousRowUpdateTag:I
 
 .field private final reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
@@ -217,23 +221,27 @@
 
     .line 54
     .line 55
-    new-instance p1, Ljava/util/LinkedHashMap;
+    const/4 p1, -0x1
 
     .line 56
-    .line 57
-    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
+    iput p1, p0, Lcom/discord/chat/ChatModule;->previousRowUpdateTag:I
 
+    .line 57
     .line 58
+    new-instance p1, Ljava/util/LinkedHashMap;
+
     .line 59
     .line 60
-    iput-object p1, p0, Lcom/discord/chat/ChatModule;->rowUpdateLoggers:Ljava/util/Map;
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 61
     .line 62
-    return-void
     .line 63
+    iput-object p1, p0, Lcom/discord/chat/ChatModule;->rowUpdateLoggers:Ljava/util/Map;
+
     .line 64
     .line 65
+    return-void
     .line 66
     .line 67
     .line 68
@@ -431,6 +439,14 @@
     return-object p0
 .end method
 
+.method public static final synthetic access$getPreviousRowUpdateTag$p(Lcom/discord/chat/ChatModule;)I
+    .locals 0
+
+    iget p0, p0, Lcom/discord/chat/ChatModule;->previousRowUpdateTag:I
+
+    return p0
+.end method
+
 .method public static final synthetic access$rowUpdateLoggerFor(Lcom/discord/chat/ChatModule;I)Lcom/discord/chatreplay/logger/RowLogger;
     .locals 0
 
@@ -439,6 +455,14 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public static final synthetic access$setPreviousRowUpdateTag$p(Lcom/discord/chat/ChatModule;I)V
+    .locals 0
+
+    iput p1, p0, Lcom/discord/chat/ChatModule;->previousRowUpdateTag:I
+
+    return-void
 .end method
 
 .method private final rowUpdateLoggerFor(I)Lcom/discord/chatreplay/logger/RowLogger;
@@ -1158,6 +1182,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private final withChatView(ILkotlin/jvm/functions/Function1;)V
@@ -1589,6 +1630,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 
@@ -3503,6 +3561,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public final scrollToRelativeOffset(IIZ)V

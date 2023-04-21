@@ -1323,6 +1323,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method public static synthetic copy$default(Lcom/discord/emoji_picker/EmojiPickerRow;IIILjava/util/List;ILjava/lang/Object;)Lcom/discord/emoji_picker/EmojiPickerRow;

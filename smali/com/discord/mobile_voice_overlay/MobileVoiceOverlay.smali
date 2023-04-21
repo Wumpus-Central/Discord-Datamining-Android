@@ -1369,14 +1369,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public final setData$mobile_voice_overlay_release(Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;)V

@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001:\u0001\"B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0016\u0010\u0010\u001a\u00020\u00112\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u0016\u0010\u0014\u001a\u00020\u000f2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0016J\u0016\u0010\u0018\u001a\u00020\u00112\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\r0\u001aJ\u0010\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u001c\u001a\u00020\rH\u0002J\u0014\u0010\u001d\u001a\u00020\u000f2\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013J\u001a\u0010\u001e\u001a\u00020\u000f*\u0008\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u001f\u001a\u00020\nH\u0002J\u000c\u0010 \u001a\u00020!*\u00020\nH\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0008\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006#"
+        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001:\u0001$B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0016\u0010\u0010\u001a\u00020\u00112\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u0006\u0010\u0014\u001a\u00020\u0015J\u0016\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0018J\u0016\u0010\u001a\u001a\u00020\u00112\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013H\u0002J\u000c\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u001cJ\u0010\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u001e\u001a\u00020\rH\u0002J\u0014\u0010\u001f\u001a\u00020\u000f2\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0013J\u001a\u0010 \u001a\u00020\u000f*\u0008\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010!\u001a\u00020\nH\u0002J\u000c\u0010\"\u001a\u00020#*\u00020\nH\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0008\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006%"
     }
     d2 = {
         "Lcom/discord/chat/listmanager/ChatListManager;",
@@ -34,6 +34,8 @@
         "createNewRows",
         "Lcom/discord/chat/listmanager/ChatListManager$RowsModificationResult;",
         "updates",
+        "",
+        "getRowCount",
         "",
         "handleError",
         "errorJson",
@@ -1170,6 +1172,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private final modifyExistingRows(Ljava/util/List;)Lcom/discord/chat/listmanager/ChatListManager$RowsModificationResult;
@@ -1576,7 +1595,7 @@
 .end method
 
 .method private final toChatListItem(Lcom/discord/chat/bridge/row/Row;)Lcom/discord/chat/presentation/list/item/ChatListItem;
-    .locals 24
+    .locals 26
 
     move-object/from16 v0, p1
 
@@ -1862,19 +1881,21 @@
 
     const/16 v21, 0x0
 
-    const/16 v22, 0x3ff
+    const/16 v22, 0x0
 
     const/16 v23, 0x0
 
+    const/16 v24, 0xfff
+
+    const/16 v25, 0x0
+
     move-object v11, v8
 
-    invoke-direct/range {v11 .. v23}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v11 .. v25}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     const/4 v14, 0x0
 
     const/16 v17, 0x7d
-
-    const/16 v18, 0x0
 
     invoke-static/range {v9 .. v18}, Lcom/discord/chat/bridge/row/MessageRowKt;->toChatListMessageItem$default(Lcom/discord/chat/bridge/MessageBase;Lcom/discord/chat/bridge/messageframe/MessageFrame;Lcom/discord/chat/presentation/root/MessageContext;ZZZLjava/lang/Integer;Lcom/discord/chat/bridge/BackgroundHighlight;ILjava/lang/Object;)Lcom/discord/chat/presentation/list/item/ChatListItem;
 
@@ -2043,6 +2064,26 @@
     .line 74
     .line 75
     .line 76
+.end method
+
+.method public final getRowCount()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/listmanager/ChatListManager;->rows:Ljava/util/List;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method
 
 .method public final handleError(Ljava/lang/String;Ljava/lang/String;)V
@@ -2484,6 +2525,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public final observeUpdates()Lkotlinx/coroutines/flow/Flow;

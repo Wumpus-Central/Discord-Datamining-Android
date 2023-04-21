@@ -23,7 +23,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0005\u0008\u0082\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005\u00a8\u0006\u0006"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0006\u0008\u0082\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006\u00a8\u0006\u0007"
     }
     d2 = {
         "Lcom/discord/reactions/ReactionsViewAdapter$ViewType;",
@@ -32,6 +32,7 @@
         "BurstReaction",
         "Reaction",
         "AddReaction",
+        "AddBurstReaction",
         "reactions_release"
     }
     k = 0x1
@@ -47,6 +48,8 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
 
+.field public static final enum AddBurstReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
 .field public static final enum AddReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
 
 .field public static final enum BurstReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
@@ -58,7 +61,7 @@
 .method private static final synthetic $values()[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
     .locals 3
 
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
 
@@ -77,6 +80,12 @@
     const/4 v1, 0x2
 
     sget-object v2, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->AddReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    sget-object v2, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->AddBurstReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
 
     aput-object v2, v0, v1
 
@@ -147,29 +156,39 @@
 
     .line 30
     .line 31
-    invoke-static {}, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->$values()[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+    new-instance v0, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
 
     .line 32
     .line 33
-    .line 34
-    move-result-object v0
+    const-string v1, "AddBurstReaction"
 
+    .line 34
     .line 35
-    sput-object v0, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->$VALUES:[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+    const/4 v2, 0x3
 
     .line 36
+    invoke-direct {v0, v1, v2}, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;-><init>(Ljava/lang/String;I)V
+
     .line 37
-    return-void
     .line 38
     .line 39
+    sput-object v0, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->AddBurstReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
     .line 40
     .line 41
+    invoke-static {}, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->$values()[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
     .line 42
     .line 43
     .line 44
+    move-result-object v0
+
     .line 45
+    sput-object v0, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->$VALUES:[Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
     .line 46
     .line 47
+    return-void
     .line 48
     .line 49
     .line 50

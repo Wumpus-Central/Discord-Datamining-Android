@@ -2590,6 +2590,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public final setSubtitleText-SAQFhFE(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V

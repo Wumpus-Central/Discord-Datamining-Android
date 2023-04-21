@@ -3,32 +3,32 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeEngine$GetVideoInputDevicesCallback;
+.implements Lcom/discord/native/engine/NativeSpeedTestConnection$StartSpeedTestSenderCallback;
 
 
 # instance fields
-.field public final synthetic a:Lkotlin/jvm/functions/Function1;
+.field public final synthetic a:Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function1;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/media/engine/a;->a:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, Lcom/discord/media/engine/a;->a:Lkotlin/jvm/functions/Function2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onDevices([Lcom/discord/native/engine/VideoInputDeviceDescription;)V
+.method public final onDone(ILjava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/discord/media/engine/a;->a:Lkotlin/jvm/functions/Function1;
+    iget-object v0, p0, Lcom/discord/media/engine/a;->a:Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->e(Lkotlin/jvm/functions/Function1;[Lcom/discord/native/engine/VideoInputDeviceDescription;)V
+    invoke-static {v0, p1, p2}, Lcom/discord/media/engine/MediaEngine;->x(Lkotlin/jvm/functions/Function2;ILjava/lang/String;)V
 
     return-void
 .end method

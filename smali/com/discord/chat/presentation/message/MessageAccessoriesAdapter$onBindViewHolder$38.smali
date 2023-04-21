@@ -46,9 +46,9 @@
 
     const-class v3, Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    const-string v4, "onTapAutoModerationFeedback"
+    const-string v4, "onTapAutoModerationActions"
 
-    const-string v5, "onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V"
+    const-string v5, "onTapAutoModerationActions-pfaIj0E(Ljava/lang/String;J)V"
 
     const/4 v6, 0x0
 
@@ -106,7 +106,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0, p1, p2, p3}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V
+    invoke-interface {v0, p1, p2, p3}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapAutoModerationActions-pfaIj0E(Ljava/lang/String;J)V
 
     .line 11
     .line 12
@@ -496,4 +496,21 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method

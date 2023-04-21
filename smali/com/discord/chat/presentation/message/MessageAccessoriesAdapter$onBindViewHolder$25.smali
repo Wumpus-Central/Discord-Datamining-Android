@@ -80,7 +80,7 @@
 .end method
 
 .method public final invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
-    .locals 4
+    .locals 7
 
     const-string v0, "reaction"
 
@@ -101,31 +101,28 @@
 
     const/4 v0, 0x0
 
-    .line 3
     :cond_0
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$25;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
+    move-object v1, v0
 
-    invoke-static {v1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getMessageId$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Ljava/lang/String;
+    .line 3
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$25;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
 
-    move-result-object v1
-
-    invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
-
-    .line 4
-    iget-object v2, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$25;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
-
-    invoke-static {v2}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getChannelId$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Lcom/discord/primitives/ChannelId;
+    invoke-static {v0}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getMessageId$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v2}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    invoke-virtual {v2}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
+    const/4 v4, 0x0
 
-    move-result-wide v2
+    const/4 v5, 0x4
 
-    .line 5
-    invoke-interface {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onLongPressReaction-Eqy5D80(Ljava/lang/String;JLcom/discord/reactions/ReactionView$Reaction;)V
+    const/4 v6, 0x0
+
+    move-object v3, p1
+
+    .line 4
+    invoke-static/range {v1 .. v6}, Lcom/discord/chat/presentation/events/ChatEventHandler$DefaultImpls;->onTapReaction-u7_MRrM$default(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;Ljava/lang/Boolean;ILjava/lang/Object;)V
 
     return-void
 .end method

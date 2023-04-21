@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/view/View$OnLongClickListener;
 
 
 # instance fields
@@ -27,14 +27,16 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final onLongClick(Landroid/view/View;)Z
     .locals 2
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/n;->k:Lcom/discord/chat/bridge/Message;
 
     iget-object v1, p0, Lcom/discord/chat/presentation/message/n;->l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->g(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)V
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->i(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)Z
 
-    return-void
+    move-result p1
+
+    return p1
 .end method

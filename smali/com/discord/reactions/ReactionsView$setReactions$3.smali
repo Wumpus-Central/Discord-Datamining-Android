@@ -1,4 +1,4 @@
-.class final Lcom/discord/reactions/ReactionsView$setReactions$2;
+.class final Lcom/discord/reactions/ReactionsView$setReactions$3;
 .super Lkotlin/jvm/internal/s;
 .source "SourceFile"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/discord/reactions/ReactionsView;->setReactions$default(Lcom/discord/reactions/ReactionsView;Ljava/lang/String;Ljava/util/List;ZLjava/lang/String;Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/discord/theme/DiscordTheme;ZZILjava/lang/Object;)V
+    value = Lcom/discord/reactions/ReactionsView;->setReactions$default(Lcom/discord/reactions/ReactionsView;Ljava/lang/String;Ljava/util/List;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/discord/theme/DiscordTheme;ZZILjava/lang/Object;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -48,18 +48,18 @@
 
 
 # static fields
-.field public static final INSTANCE:Lcom/discord/reactions/ReactionsView$setReactions$2;
+.field public static final INSTANCE:Lcom/discord/reactions/ReactionsView$setReactions$3;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/discord/reactions/ReactionsView$setReactions$2;
+    new-instance v0, Lcom/discord/reactions/ReactionsView$setReactions$3;
 
-    invoke-direct {v0}, Lcom/discord/reactions/ReactionsView$setReactions$2;-><init>()V
+    invoke-direct {v0}, Lcom/discord/reactions/ReactionsView$setReactions$3;-><init>()V
 
-    sput-object v0, Lcom/discord/reactions/ReactionsView$setReactions$2;->INSTANCE:Lcom/discord/reactions/ReactionsView$setReactions$2;
+    sput-object v0, Lcom/discord/reactions/ReactionsView$setReactions$3;->INSTANCE:Lcom/discord/reactions/ReactionsView$setReactions$3;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 
     check-cast p1, Lcom/discord/reactions/ReactionView$Reaction;
 
-    invoke-virtual {p0, p1}, Lcom/discord/reactions/ReactionsView$setReactions$2;->invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
+    invoke-virtual {p0, p1}, Lcom/discord/reactions/ReactionsView$setReactions$3;->invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 

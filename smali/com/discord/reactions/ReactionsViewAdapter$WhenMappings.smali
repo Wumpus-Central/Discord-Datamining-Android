@@ -82,6 +82,20 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     :catch_2
+    :try_start_3
+    sget-object v1, Lcom/discord/reactions/ReactionsViewAdapter$ViewType;->AddBurstReaction:Lcom/discord/reactions/ReactionsViewAdapter$ViewType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
     sput-object v0, Lcom/discord/reactions/ReactionsViewAdapter$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

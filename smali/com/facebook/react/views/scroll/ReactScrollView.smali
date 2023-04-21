@@ -544,14 +544,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private disableFpsListener()V
@@ -755,14 +747,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private enableFpsListener()V
@@ -966,14 +950,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private flingAndSnap(I)V
@@ -3119,14 +3095,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private getOverScrollerFromParent()Landroid/widget/OverScroller;
@@ -3386,14 +3354,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private getScrollDelta(Landroid/view/View;)I
@@ -3801,14 +3761,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private handlePostTouchScrolling(II)V
@@ -4349,14 +4301,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private isScrollPerfLoggingEnabled()Z
@@ -7526,14 +7470,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
@@ -14915,12 +14851,4 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method

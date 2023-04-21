@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/g;->k:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
 
-    invoke-static {v0, p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->f(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->g(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;Landroid/view/View;)V
 
     return-void
 .end method

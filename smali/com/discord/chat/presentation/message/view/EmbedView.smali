@@ -2089,6 +2089,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private final setAuthorOnClickListener(Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;)V
@@ -2525,6 +2542,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private static final setAuthorOnClickListener$lambda$15$lambda$14(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/presentation/message/view/EmbedView;Landroid/view/View;)Z
@@ -4903,6 +4937,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method private static final setDescription$lambda$19$lambda$18(Lkotlin/jvm/functions/Function1;Ljava/lang/String;Landroid/view/View;)Z
@@ -7091,6 +7133,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method private final setError(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Integer;)V
@@ -8407,6 +8457,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method static synthetic setError$default(Lcom/discord/chat/presentation/message/view/EmbedView;Ljava/lang/String;ILjava/lang/String;Ljava/lang/Integer;ILjava/lang/Object;)V

@@ -51,7 +51,7 @@
     c = "com.discord.chat.ChatModule$withChatManager$1"
     f = "ChatModule.kt"
     l = {
-        0xb0
+        0xbd
     }
     m = "invokeSuspend"
 .end annotation

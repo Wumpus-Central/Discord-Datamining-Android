@@ -466,6 +466,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public static synthetic a(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/emoji/RenderableEmoji;Landroid/view/View;)V
@@ -1727,6 +1744,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 
@@ -1960,11 +1985,11 @@
     .line 102
     .line 103
     .line 104
-    new-instance v2, Lcom/discord/chat/presentation/message/s;
+    new-instance v2, Lcom/discord/chat/presentation/message/t;
 
     .line 105
     .line 106
-    invoke-direct {v2, p2, p1, v0}, Lcom/discord/chat/presentation/message/s;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/emoji/RenderableEmoji;)V
+    invoke-direct {v2, p2, p1, v0}, Lcom/discord/chat/presentation/message/t;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/emoji/RenderableEmoji;)V
 
     .line 107
     .line 108
@@ -2260,4 +2285,21 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method

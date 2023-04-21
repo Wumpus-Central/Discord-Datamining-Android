@@ -1,4 +1,4 @@
-.class final Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;
+.class final Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;
 .super Lkotlin/jvm/internal/s;
 .source "SourceFile"
 
@@ -57,9 +57,9 @@
 .method constructor <init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/Message;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;->$eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
+    iput-object p1, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;->$eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    iput-object p2, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;->$message:Lcom/discord/chat/bridge/Message;
+    iput-object p2, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;->$message:Lcom/discord/chat/bridge/Message;
 
     const/4 p1, 0x1
 
@@ -76,7 +76,7 @@
     .line 1
     check-cast p1, Lcom/discord/reactions/ReactionView$Reaction;
 
-    invoke-virtual {p0, p1}, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;->invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
+    invoke-virtual {p0, p1}, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;->invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
@@ -84,22 +84,30 @@
 .end method
 
 .method public final invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
-    .locals 2
+    .locals 7
 
     const-string v0, "it"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;->$eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
+    iget-object v1, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;->$eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$2;->$message:Lcom/discord/chat/bridge/Message;
+    iget-object v0, p0, Lcom/discord/chat/presentation/list/messagebundling/MessageBundleConversationView$configure$3$3;->$message:Lcom/discord/chat/bridge/Message;
 
-    invoke-virtual {v1}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-interface {v0, v1, p1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapReaction-ntcYbpo(Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;)V
+    const/4 v4, 0x0
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    move-object v3, p1
+
+    invoke-static/range {v1 .. v6}, Lcom/discord/chat/presentation/events/ChatEventHandler$DefaultImpls;->onTapReaction-u7_MRrM$default(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;Ljava/lang/Boolean;ILjava/lang/Object;)V
 
     return-void
 .end method

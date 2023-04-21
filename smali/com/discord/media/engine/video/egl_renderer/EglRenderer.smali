@@ -1462,14 +1462,6 @@
 
     .line 176
     throw v0
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private static final logStatisticsRunnable$lambda$2(Lcom/discord/media/engine/video/egl_renderer/EglRenderer;)V
@@ -4183,14 +4175,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public onFrame(Lorg/webrtc/VideoFrame;)V
@@ -4852,14 +4836,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public final releaseEglSurface(Lkotlin/jvm/functions/Function0;)V

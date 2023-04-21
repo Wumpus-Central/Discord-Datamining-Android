@@ -762,6 +762,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 
@@ -1261,11 +1278,11 @@
 
     .line 206
     .line 207
-    new-instance v12, Lcom/discord/chat/presentation/list/messagebundling/c;
+    new-instance v12, Lcom/discord/chat/presentation/list/messagebundling/d;
 
     .line 208
     .line 209
-    invoke-direct {v12, v2}, Lcom/discord/chat/presentation/list/messagebundling/c;-><init>(Landroid/view/View$OnLongClickListener;)V
+    invoke-direct {v12, v2}, Lcom/discord/chat/presentation/list/messagebundling/d;-><init>(Landroid/view/View$OnLongClickListener;)V
 
     .line 210
     .line 211

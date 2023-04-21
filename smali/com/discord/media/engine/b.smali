@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeEngine$StartLocalAudioRecordingCallback;
+.implements Lcom/discord/native/engine/NativeEngine$GetCodecCapabilitiesCallback;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final onStartLocalAudioRecording(Z)V
+.method public final onCodecCapabilities(Ljava/lang/String;)V
     .locals 1
 
     iget-object v0, p0, Lcom/discord/media/engine/b;->a:Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->m(Lkotlin/jvm/functions/Function1;Z)V
+    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->b(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
     return-void
 .end method

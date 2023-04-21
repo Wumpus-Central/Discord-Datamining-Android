@@ -2269,6 +2269,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method public static synthetic a(Landroid/content/Context;Landroid/content/ClipData$Item;)Z
@@ -2813,6 +2821,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private static final lambda$3$lambda$1(Landroid/content/Context;Landroid/content/ClipData$Item;)Z
@@ -3269,6 +3294,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public static synthetic setSelection$default(Lcom/discord/chat/input/views/ChatInputRootView;IIILjava/lang/Object;)V
@@ -3892,6 +3934,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method static synthetic updateChatNodes$default(Lcom/discord/chat/input/views/ChatInputRootView;Ljava/util/List;IILjava/lang/Object;)V
@@ -4524,6 +4583,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public final clearInputFocus()V

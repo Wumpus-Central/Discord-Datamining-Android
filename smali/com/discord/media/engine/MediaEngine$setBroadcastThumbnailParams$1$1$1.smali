@@ -51,7 +51,7 @@
     c = "com.discord.media.engine.MediaEngine$setBroadcastThumbnailParams$1$1$1"
     f = "MediaEngine.kt"
     l = {
-        0x1c5
+        0x1c7
     }
     m = "invokeSuspend"
 .end annotation

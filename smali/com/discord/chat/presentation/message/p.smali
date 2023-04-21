@@ -7,28 +7,20 @@
 
 
 # instance fields
-.field public final synthetic k:Lkotlin/jvm/functions/Function4;
+.field public final synthetic k:Lcom/discord/chat/bridge/Message;
 
-.field public final synthetic l:Lcom/discord/chat/bridge/Message;
-
-.field public final synthetic m:I
-
-.field public final synthetic n:Lcom/discord/chat/bridge/MediaType;
+.field public final synthetic l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/Message;ILcom/discord/chat/bridge/MediaType;)V
+.method public synthetic constructor <init>(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/chat/presentation/message/p;->k:Lkotlin/jvm/functions/Function4;
+    iput-object p1, p0, Lcom/discord/chat/presentation/message/p;->k:Lcom/discord/chat/bridge/Message;
 
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/p;->l:Lcom/discord/chat/bridge/Message;
-
-    iput p3, p0, Lcom/discord/chat/presentation/message/p;->m:I
-
-    iput-object p4, p0, Lcom/discord/chat/presentation/message/p;->n:Lcom/discord/chat/bridge/MediaType;
+    iput-object p2, p0, Lcom/discord/chat/presentation/message/p;->l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     return-void
 .end method
@@ -36,17 +28,13 @@
 
 # virtual methods
 .method public final onLongClick(Landroid/view/View;)Z
-    .locals 4
+    .locals 2
 
-    iget-object v0, p0, Lcom/discord/chat/presentation/message/p;->k:Lkotlin/jvm/functions/Function4;
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/p;->k:Lcom/discord/chat/bridge/Message;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/p;->l:Lcom/discord/chat/bridge/Message;
+    iget-object v1, p0, Lcom/discord/chat/presentation/message/p;->l:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    iget v2, p0, Lcom/discord/chat/presentation/message/p;->m:I
-
-    iget-object v3, p0, Lcom/discord/chat/presentation/message/p;->n:Lcom/discord/chat/bridge/MediaType;
-
-    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/MessageView;->e(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/Message;ILcom/discord/chat/bridge/MediaType;Landroid/view/View;)Z
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/MessageView;->h(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)Z
 
     move-result p1
 

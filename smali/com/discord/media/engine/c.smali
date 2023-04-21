@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeConnection$OnPingTimeoutCallback;
+.implements Lcom/discord/native/engine/NativeConnection$OnVideoCallback;
 
 
 # instance fields
@@ -23,12 +23,20 @@
 
 
 # virtual methods
-.method public final onPingTimeout(Ljava/lang/String;III)V
-    .locals 1
+.method public final onVideo(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
+    .locals 6
 
     iget-object v0, p0, Lcom/discord/media/engine/c;->a:Lkotlin/jvm/functions/Function4;
 
-    invoke-static {v0, p1, p2, p3, p4}, Lcom/discord/media/engine/MediaEngine;->i(Lkotlin/jvm/functions/Function4;Ljava/lang/String;III)V
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    invoke-static/range {v0 .. v5}, Lcom/discord/media/engine/MediaEngine;->f(Lkotlin/jvm/functions/Function4;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

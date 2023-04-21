@@ -1591,6 +1591,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method private static final setContent$lambda$1(Lcom/discord/chat/presentation/message/view/FileAttachmentView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View;)V

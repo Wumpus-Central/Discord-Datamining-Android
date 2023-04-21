@@ -306,7 +306,7 @@
 .end method
 
 .method private final setReactions(Ljava/lang/String;Ljava/util/List;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Z)V
-    .locals 18
+    .locals 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -335,117 +335,125 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;->binding:Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;
+    move-object/from16 v2, p1
 
     .line 4
     .line 5
-    iget-object v1, v1, Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;->reactionsView:Lcom/discord/reactions/ReactionsView;
+    move-object/from16 v3, p2
 
     .line 6
     .line 7
-    const-string v2, "binding.reactionsView"
+    move-object/from16 v9, p3
 
     .line 8
     .line 9
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v10, p4
 
     .line 10
     .line 11
-    .line 12
-    const/4 v3, 0x0
+    move-object/from16 v12, p5
 
+    .line 12
     .line 13
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    move-object/from16 v13, p6
 
     .line 14
     .line 15
+    move/from16 v16, p7
+
     .line 16
+    .line 17
     iget-object v1, v0, Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;->binding:Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;
 
-    .line 17
     .line 18
-    iget-object v3, v1, Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;->reactionsView:Lcom/discord/reactions/ReactionsView;
-
     .line 19
-    .line 20
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v1, v1, Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;->reactionsView:Lcom/discord/reactions/ReactionsView;
 
+    .line 20
     .line 21
+    const-string v4, "binding.reactionsView"
+
     .line 22
     .line 23
-    const/4 v6, 0x0
+    invoke-static {v1, v4}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 24
-    const-string v7, ""
-
     .line 25
     .line 26
-    const-string v8, ""
+    const/4 v5, 0x0
 
     .line 27
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+
     .line 28
-    const/4 v13, 0x0
-
     .line 29
-    sget-object v1, Lcom/discord/chat/presentation/root/ChatView;->Companion:Lcom/discord/chat/presentation/root/ChatView$Companion;
-
     .line 30
-    .line 31
-    invoke-virtual {v1}, Lcom/discord/chat/presentation/root/ChatView$Companion;->getAreChatAnimationsEnabled()Z
+    iget-object v1, v0, Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;->binding:Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;
 
+    .line 31
     .line 32
+    iget-object v5, v1, Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;->reactionsView:Lcom/discord/reactions/ReactionsView;
+
     .line 33
     .line 34
-    move-result v14
+    move-object v1, v5
 
     .line 35
-    const/16 v16, 0x200
+    invoke-static {v5, v4}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 36
     .line 37
-    const/16 v17, 0x0
-
     .line 38
+    const/4 v4, 0x0
+
     .line 39
-    move-object/from16 v4, p1
+    const/4 v5, 0x0
 
     .line 40
+    const-string v6, ""
+
     .line 41
-    move-object/from16 v5, p2
-
     .line 42
+    const-string v7, ""
+
     .line 43
-    move-object/from16 v9, p3
-
     .line 44
-    .line 45
-    move-object/from16 v10, p4
+    const-string v8, ""
 
+    .line 45
     .line 46
+    const/4 v11, 0x0
+
     .line 47
-    move-object/from16 v11, p5
+    const/4 v14, 0x0
 
     .line 48
+    sget-object v15, Lcom/discord/chat/presentation/root/ChatView;->Companion:Lcom/discord/chat/presentation/root/ChatView$Companion;
+
     .line 49
-    move-object/from16 v12, p6
-
     .line 50
-    .line 51
-    move/from16 v15, p7
+    invoke-virtual {v15}, Lcom/discord/chat/presentation/root/ChatView$Companion;->getAreChatAnimationsEnabled()Z
 
+    .line 51
     .line 52
     .line 53
-    invoke-static/range {v3 .. v17}, Lcom/discord/reactions/ReactionsView;->setReactions$default(Lcom/discord/reactions/ReactionsView;Ljava/lang/String;Ljava/util/List;ZLjava/lang/String;Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/discord/theme/DiscordTheme;ZZILjava/lang/Object;)V
+    move-result v15
 
     .line 54
+    const/16 v17, 0x1200
+
     .line 55
     .line 56
-    return-void
+    const/16 v18, 0x0
+
     .line 57
     .line 58
+    invoke-static/range {v1 .. v18}, Lcom/discord/reactions/ReactionsView;->setReactions$default(Lcom/discord/reactions/ReactionsView;Ljava/lang/String;Ljava/util/List;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/discord/theme/DiscordTheme;ZZILjava/lang/Object;)V
+
     .line 59
     .line 60
     .line 61
+    return-void
     .line 62
     .line 63
     .line 64

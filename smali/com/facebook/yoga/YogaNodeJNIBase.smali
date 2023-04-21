@@ -2476,14 +2476,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public h0(Lcom/facebook/yoga/e;F)V
@@ -4165,14 +4157,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public s()Z
@@ -4404,14 +4388,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public bridge synthetic v(I)Lcom/facebook/yoga/YogaNode;
@@ -4626,14 +4602,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public x(Lcom/facebook/yoga/YogaAlign;)V

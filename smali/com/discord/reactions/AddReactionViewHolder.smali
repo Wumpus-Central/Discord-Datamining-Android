@@ -164,7 +164,7 @@
 
 # virtual methods
 .method public final bind(Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;Lcom/discord/reactions/ReactionView$ReactionsTheme;)V
-    .locals 1
+    .locals 2
 
     .line 1
     const-string v0, "addReactionLabel"
@@ -198,26 +198,26 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0, p1, p4}, Lcom/discord/reactions/AddReactionView;->configure(Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;)V
+    const/4 v1, 0x0
 
     .line 19
+    invoke-virtual {v0, p1, p4, v1}, Lcom/discord/reactions/AddReactionView;->configure(Ljava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Z)V
+
     .line 20
     .line 21
+    .line 22
     invoke-virtual {v0, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 22
     .line 23
     .line 24
+    .line 25
     const/4 p1, 0x1
 
-    .line 25
+    .line 26
     const/4 p2, 0x0
 
-    .line 26
-    const/4 p4, 0x0
-
     .line 27
-    invoke-static {v0, p4, p3, p1, p2}, Lcom/discord/react_gesture_handler/nested_touch/NestedScrollOnTouchUtilsKt;->setOnClickListenerNested$default(Landroid/view/View;ZLandroid/view/View$OnClickListener;ILjava/lang/Object;)V
+    invoke-static {v0, v1, p3, p1, p2}, Lcom/discord/react_gesture_handler/nested_touch/NestedScrollOnTouchUtilsKt;->setOnClickListenerNested$default(Landroid/view/View;ZLandroid/view/View$OnClickListener;ILjava/lang/Object;)V
 
     .line 28
     .line 29

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeEngine$GetCodecCapabilitiesCallback;
+.implements Lcom/discord/native/engine/NativeSpeedTestConnection$GetNetworkOverheadCallback;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final onCodecCapabilities(Ljava/lang/String;)V
+.method public final onNetworkOverhead(I)V
     .locals 1
 
     iget-object v0, p0, Lcom/discord/media/engine/l;->a:Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->a(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->p(Lkotlin/jvm/functions/Function1;I)V
 
     return-void
 .end method

@@ -504,6 +504,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method public static synthetic a(Lcom/discord/chat/presentation/events/ChatEventHandler;Landroid/view/View;)V
@@ -921,6 +938,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 
@@ -1334,11 +1368,11 @@
     .line 203
     .line 204
     .line 205
-    new-instance v2, Lcom/discord/chat/presentation/message/h;
+    new-instance v2, Lcom/discord/chat/presentation/message/i;
 
     .line 206
     .line 207
-    invoke-direct {v2, v3}, Lcom/discord/chat/presentation/message/h;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;)V
+    invoke-direct {v2, v3}, Lcom/discord/chat/presentation/message/i;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;)V
 
     .line 208
     .line 209

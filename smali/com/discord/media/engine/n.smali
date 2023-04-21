@@ -3,32 +3,32 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeConnection$OnPingCallback;
+.implements Lcom/discord/native/engine/NativeEngine$GetAudioInputDevicesCallback;
 
 
 # instance fields
-.field public final synthetic a:Lkotlin/jvm/functions/Function4;
+.field public final synthetic a:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function4;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/media/engine/n;->a:Lkotlin/jvm/functions/Function4;
+    iput-object p1, p0, Lcom/discord/media/engine/n;->a:Lkotlin/jvm/functions/Function1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onPing(ILjava/lang/String;II)V
+.method public final onDevices([Lcom/discord/native/engine/AudioInputDeviceDescription;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/discord/media/engine/n;->a:Lkotlin/jvm/functions/Function4;
+    iget-object v0, p0, Lcom/discord/media/engine/n;->a:Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v0, p1, p2, p3, p4}, Lcom/discord/media/engine/MediaEngine;->n(Lkotlin/jvm/functions/Function4;ILjava/lang/String;II)V
+    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->s(Lkotlin/jvm/functions/Function1;[Lcom/discord/native/engine/AudioInputDeviceDescription;)V
 
     return-void
 .end method

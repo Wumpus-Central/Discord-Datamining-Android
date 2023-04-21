@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/discord/native/engine/NativeEngine$GetSupportedVideoCodecsCallback;
+.implements Lcom/discord/native/engine/NativeConnection$GetStatsCallback;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final onSupportedVideoCodecs([Ljava/lang/String;)V
+.method public final onStats(Ljava/lang/String;)V
     .locals 1
 
     iget-object v0, p0, Lcom/discord/media/engine/h;->a:Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->c(Lkotlin/jvm/functions/Function1;[Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->j(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
     return-void
 .end method

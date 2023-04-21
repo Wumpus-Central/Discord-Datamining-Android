@@ -9,22 +9,22 @@
 # instance fields
 .field public final synthetic k:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-.field public final synthetic l:Lcom/discord/chat/bridge/roleicons/RoleIcon;
+.field public final synthetic l:Ljava/lang/String;
 
-.field public final synthetic m:Lcom/discord/emoji/RenderableEmoji;
+.field public final synthetic m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/emoji/RenderableEmoji;)V
+.method public synthetic constructor <init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/discord/chat/presentation/message/s;->k:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/s;->l:Lcom/discord/chat/bridge/roleicons/RoleIcon;
+    iput-object p2, p0, Lcom/discord/chat/presentation/message/s;->l:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/discord/chat/presentation/message/s;->m:Lcom/discord/emoji/RenderableEmoji;
+    iput-object p3, p0, Lcom/discord/chat/presentation/message/s;->m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
 
     return-void
 .end method
@@ -36,11 +36,11 @@
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/s;->k:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/s;->l:Lcom/discord/chat/bridge/roleicons/RoleIcon;
+    iget-object v1, p0, Lcom/discord/chat/presentation/message/s;->l:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/discord/chat/presentation/message/s;->m:Lcom/discord/emoji/RenderableEmoji;
+    iget-object v2, p0, Lcom/discord/chat/presentation/message/s;->m:Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;
 
-    invoke-static {v0, v1, v2, p1}, Lcom/discord/chat/presentation/message/RoleIconView;->a(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/emoji/RenderableEmoji;Landroid/view/View;)V
+    invoke-static {v0, v1, v2, p1}, Lcom/discord/chat/presentation/message/MessageViewReplyPreview;->c(Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/String;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;Landroid/view/View;)V
 
     return-void
 .end method

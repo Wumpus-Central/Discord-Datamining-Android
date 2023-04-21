@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lcom/discord/media/engine/p;->a:Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->f(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/discord/media/engine/MediaEngine;->w(Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
 
     return-void
 .end method

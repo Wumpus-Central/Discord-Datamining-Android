@@ -120,7 +120,7 @@
 
     move-result-object v1
 
-    invoke-interface {p1, v0, v1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onStickerLongClicked-Ayv7vGE(Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;)V
+    invoke-interface {p1, v0, v1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onStickerClicked-Ayv7vGE(Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;)V
 
     return-void
 .end method

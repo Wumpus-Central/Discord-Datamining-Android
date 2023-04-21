@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # annotations
@@ -19,8 +19,9 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/n;",
-        "Lkotlin/jvm/functions/Function1<",
+        "Lkotlin/jvm/functions/Function2<",
         "Lcom/discord/primitives/MessageId;",
+        "Lcom/discord/primitives/ChannelId;",
         "Lkotlin/Unit;",
         ">;"
     }
@@ -41,13 +42,13 @@
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
     const-class v3, Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    const-string v4, "onTapJoinActivity"
+    const-string v4, "onTapAutoModerationFeedback"
 
-    const-string v5, "onTapJoinActivity-1xi1bu0(Ljava/lang/String;)V"
+    const-string v5, "onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V"
 
     const/4 v6, 0x0
 
@@ -62,8 +63,8 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     check-cast p1, Lcom/discord/primitives/MessageId;
 
@@ -71,14 +72,20 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$39;->invoke-1xi1bu0(Ljava/lang/String;)V
+    check-cast p2, Lcom/discord/primitives/ChannelId;
+
+    invoke-virtual {p2}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$39;->invoke-pfaIj0E(Ljava/lang/String;J)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
     return-object p1
 .end method
 
-.method public final invoke-1xi1bu0(Ljava/lang/String;)V
+.method public final invoke-pfaIj0E(Ljava/lang/String;J)V
     .locals 1
 
     .line 1
@@ -99,7 +106,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0, p1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapJoinActivity-1xi1bu0(Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2, p3}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V
 
     .line 11
     .line 12
@@ -344,4 +351,166 @@
     .line 250
     .line 251
     .line 252
+    .line 253
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
+    .line 278
+    .line 279
+    .line 280
+    .line 281
+    .line 282
+    .line 283
+    .line 284
+    .line 285
+    .line 286
+    .line 287
+    .line 288
+    .line 289
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    .line 307
+    .line 308
+    .line 309
+    .line 310
+    .line 311
+    .line 312
+    .line 313
+    .line 314
+    .line 315
+    .line 316
+    .line 317
+    .line 318
+    .line 319
+    .line 320
+    .line 321
+    .line 322
+    .line 323
+    .line 324
+    .line 325
+    .line 326
+    .line 327
+    .line 328
+    .line 329
+    .line 330
+    .line 331
+    .line 332
+    .line 333
+    .line 334
+    .line 335
+    .line 336
+    .line 337
+    .line 338
+    .line 339
+    .line 340
+    .line 341
+    .line 342
+    .line 343
+    .line 344
+    .line 345
+    .line 346
+    .line 347
+    .line 348
+    .line 349
+    .line 350
+    .line 351
+    .line 352
+    .line 353
+    .line 354
+    .line 355
+    .line 356
+    .line 357
+    .line 358
+    .line 359
+    .line 360
+    .line 361
+    .line 362
+    .line 363
+    .line 364
+    .line 365
+    .line 366
+    .line 367
+    .line 368
+    .line 369
+    .line 370
+    .line 371
+    .line 372
+    .line 373
+    .line 374
+    .line 375
+    .line 376
+    .line 377
+    .line 378
+    .line 379
+    .line 380
+    .line 381
+    .line 382
+    .line 383
+    .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method

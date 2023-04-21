@@ -281,14 +281,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/react/views/image/GlobalImageLoadListener;Ljava/lang/Object;)V
@@ -1875,14 +1867,6 @@
     .line 174
     .line 175
     .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
 .end method
 
 .method private shouldResize(Lcom/facebook/react/views/imagehelper/ImageSource;)Z

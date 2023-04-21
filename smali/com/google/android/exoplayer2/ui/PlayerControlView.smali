@@ -3913,6 +3913,28 @@
     .line 767
     .line 768
     .line 769
+    .line 770
+    .line 771
+    .line 772
+    .line 773
+    .line 774
+    .line 775
+    .line 776
+    .line 777
+    .line 778
+    .line 779
+    .line 780
+    .line 781
+    .line 782
+    .line 783
+    .line 784
+    .line 785
+    .line 786
+    .line 787
+    .line 788
+    .line 789
+    .line 790
+    .line 791
 .end method
 
 .method private T()V
@@ -5092,6 +5114,28 @@
     .line 767
     .line 768
     .line 769
+    .line 770
+    .line 771
+    .line 772
+    .line 773
+    .line 774
+    .line 775
+    .line 776
+    .line 777
+    .line 778
+    .line 779
+    .line 780
+    .line 781
+    .line 782
+    .line 783
+    .line 784
+    .line 785
+    .line 786
+    .line 787
+    .line 788
+    .line 789
+    .line 790
+    .line 791
 .end method
 
 .method private V()V
@@ -6691,6 +6735,28 @@
     .line 767
     .line 768
     .line 769
+    .line 770
+    .line 771
+    .line 772
+    .line 773
+    .line 774
+    .line 775
+    .line 776
+    .line 777
+    .line 778
+    .line 779
+    .line 780
+    .line 781
+    .line 782
+    .line 783
+    .line 784
+    .line 785
+    .line 786
+    .line 787
+    .line 788
+    .line 789
+    .line 790
+    .line 791
 .end method
 
 .method public static synthetic a(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V

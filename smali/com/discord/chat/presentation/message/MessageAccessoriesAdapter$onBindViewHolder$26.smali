@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/s;",
         "Lkotlin/jvm/functions/Function1<",
-        "Lcom/discord/chat/bridge/sticker/Sticker;",
+        "Lcom/discord/reactions/ReactionView$Reaction;",
         "Lkotlin/Unit;",
         ">;"
     }
@@ -33,8 +33,8 @@
     d2 = {
         "<anonymous>",
         "",
-        "it",
-        "Lcom/discord/chat/bridge/sticker/Sticker;",
+        "reaction",
+        "Lcom/discord/reactions/ReactionView$Reaction;",
         "invoke"
     }
     k = 0x3
@@ -48,18 +48,14 @@
 
 
 # instance fields
-.field final synthetic $part:Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;
-
 .field final synthetic this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;)V
+.method constructor <init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)V
     .locals 0
 
     iput-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
-
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->$part:Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;
 
     const/4 p1, 0x1
 
@@ -74,53 +70,62 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lcom/discord/chat/bridge/sticker/Sticker;
+    check-cast p1, Lcom/discord/reactions/ReactionView$Reaction;
 
-    invoke-virtual {p0, p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->invoke(Lcom/discord/chat/bridge/sticker/Sticker;)V
+    invoke-virtual {p0, p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
     return-object p1
 .end method
 
-.method public final invoke(Lcom/discord/chat/bridge/sticker/Sticker;)V
-    .locals 2
+.method public final invoke(Lcom/discord/reactions/ReactionView$Reaction;)V
+    .locals 4
 
-    const-string v0, "it"
+    const-string v0, "reaction"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
 
-    invoke-static {p1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getEventHandler$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Lcom/discord/chat/presentation/events/ChatEventHandler;
-
-    move-result-object p1
-
-    if-nez p1, :cond_0
-
-    const-string p1, "eventHandler"
-
-    invoke-static {p1}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    :cond_0
-    iget-object v0, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->$part:Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;
-
-    check-cast v0, Lcom/discord/chat/presentation/message/messagepart/StickerMessageAccessory;
-
-    invoke-virtual {v0}, Lcom/discord/chat/presentation/message/messagepart/StickerMessageAccessory;->getSticker()Lcom/discord/chat/bridge/sticker/Sticker;
+    invoke-static {v0}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getEventHandler$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->$part:Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;
+    if-nez v0, :cond_0
 
-    invoke-virtual {v1}, Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;->getMessageId-3Eiw7ao()Ljava/lang/String;
+    const-string v0, "eventHandler"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 3
+    :cond_0
+    iget-object v1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
+
+    invoke-static {v1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getMessageId$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {p1, v0, v1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onStickerClicked-Ayv7vGE(Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
+
+    .line 4
+    iget-object v2, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$26;->this$0:Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;
+
+    invoke-static {v2}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->access$getChannelId$p(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)Lcom/discord/primitives/ChannelId;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
+
+    invoke-virtual {v2}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
+
+    move-result-wide v2
+
+    .line 5
+    invoke-interface {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onLongPressReaction-Eqy5D80(Ljava/lang/String;JLcom/discord/reactions/ReactionView$Reaction;)V
 
     return-void
 .end method

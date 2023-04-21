@@ -113,7 +113,7 @@
 .end method
 
 .method public synthetic constructor <init>(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 14
+    .locals 16
 
     and-int/lit8 v0, p4, 0x2
 
@@ -142,13 +142,17 @@
 
     const/4 v11, 0x0
 
-    const/16 v12, 0x3ff
+    const/4 v12, 0x0
 
     const/4 v13, 0x0
 
+    const/16 v14, 0xfff
+
+    const/4 v15, 0x0
+
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v13}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v1 .. v15}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     goto :goto_0
 
@@ -162,22 +166,22 @@
 
     const/4 v1, 0x1
 
-    move-object v2, p0
+    move-object/from16 v2, p0
 
-    move-object v3, p1
+    move-object/from16 v3, p1
 
     goto :goto_1
 
     :cond_1
-    move-object v2, p0
+    move-object/from16 v2, p0
 
-    move-object v3, p1
+    move-object/from16 v3, p1
 
     move/from16 v1, p3
 
     .line 2
     :goto_1
-    invoke-direct {p0, p1, v0, v1}, Lcom/discord/chat/presentation/list/item/AutomodSystemMessageItem;-><init>(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;Z)V
+    invoke-direct {v2, v3, v0, v1}, Lcom/discord/chat/presentation/list/item/AutomodSystemMessageItem;-><init>(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;Z)V
 
     return-void
 .end method

@@ -51,7 +51,7 @@
     c = "com.discord.chat.listmanager.ChatListManager$publishUpdate$1"
     f = "ChatListManager.kt"
     l = {
-        0xef
+        0xf3
     }
     m = "invokeSuspend"
 .end annotation

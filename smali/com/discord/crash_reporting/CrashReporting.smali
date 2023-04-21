@@ -1712,6 +1712,14 @@
     .line 1221
     .line 1222
     .line 1223
+    .line 1224
+    .line 1225
+    .line 1226
+    .line 1227
+    .line 1228
+    .line 1229
+    .line 1230
+    .line 1231
 .end method
 
 .method private static final init$lambda$0(Landroid/content/Context;Lio/sentry/android/core/SentryAndroidOptions;)V
@@ -1775,7 +1783,7 @@
     .line 30
     .line 31
     .line 32
-    const-string v1, "discord_android@176.8.0-2+176208"
+    const-string v1, "discord_android@176.9.0-2+176209"
 
     .line 33
     .line 34
@@ -1887,7 +1895,7 @@
     .line 90
     .line 91
     .line 92
-    const-string p0, "349d9938-6dd2-40b3-a2c0-9c08ea57a441"
+    const-string p0, "170444c6-28af-44e1-8828-13129609a5b2"
 
     .line 93
     .line 94
@@ -2213,6 +2221,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 

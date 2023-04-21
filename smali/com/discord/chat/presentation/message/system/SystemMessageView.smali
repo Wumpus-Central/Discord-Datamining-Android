@@ -232,7 +232,7 @@
 .end method
 
 .method private final generateMessageAccessories(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;)Ljava/util/List;
-    .locals 23
+    .locals 24
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -847,15 +847,15 @@
     move-result v15
 
     .line 295
-    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getAddReactionLabel()Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getUseAddBurstReaction()Z
 
     .line 296
     .line 297
     .line 298
-    move-result-object v16
+    move-result v16
 
     .line 299
-    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getAddNewReactionAccessibilityLabel()Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getAddReactionLabel()Ljava/lang/String;
 
     .line 300
     .line 301
@@ -863,7 +863,7 @@
     move-result-object v17
 
     .line 303
-    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getReactionsTheme()Lcom/discord/chat/bridge/reaction/ReactionsTheme;
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getAddNewReactionAccessibilityLabel()Ljava/lang/String;
 
     .line 304
     .line 305
@@ -871,130 +871,138 @@
     move-result-object v18
 
     .line 307
-    const/16 v19, 0x0
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getAddNewBurstReactionAccessibilityLabel()Ljava/lang/String;
 
     .line 308
     .line 309
-    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getUseSortedReactions()Z
-
     .line 310
-    .line 311
-    .line 312
-    move-result v20
+    move-result-object v19
 
+    .line 311
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getReactionsTheme()Lcom/discord/chat/bridge/reaction/ReactionsTheme;
+
+    .line 312
     .line 313
+    .line 314
+    move-result-object v20
+
+    .line 315
     const/16 v21, 0x0
 
-    .line 314
-    .line 315
-    move-object v12, v2
-
     .line 316
-    invoke-direct/range {v12 .. v21}, Lcom/discord/chat/presentation/message/messagepart/ReactionsMessageAccessory;-><init>(Ljava/lang/String;Ljava/util/List;ZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/theme/DiscordTheme;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
-
     .line 317
+    invoke-virtual/range {p2 .. p2}, Lcom/discord/chat/presentation/root/MessageContext;->getUseSortedReactions()Z
+
     .line 318
     .line 319
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 320
+    move-result v22
+
     .line 321
+    const/16 v23, 0x0
+
     .line 322
-    :cond_8
-    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getThreadEmbed()Lcom/discord/chat/bridge/threads/ThreadEmbed;
-
     .line 323
+    move-object v12, v2
+
     .line 324
+    invoke-direct/range {v12 .. v23}, Lcom/discord/chat/presentation/message/messagepart/ReactionsMessageAccessory;-><init>(Ljava/lang/String;Ljava/util/List;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/theme/DiscordTheme;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
+
     .line 325
-    move-result-object v1
-
     .line 326
-    const/4 v2, 0x0
-
     .line 327
-    if-eqz v1, :cond_9
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 328
     .line 329
-    iget-object v3, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
-
     .line 330
-    .line 331
-    new-instance v4, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;
+    :cond_8
+    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getThreadEmbed()Lcom/discord/chat/bridge/threads/ThreadEmbed;
 
+    .line 331
     .line 332
     .line 333
-    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
+    move-result-object v1
 
     .line 334
-    .line 335
-    .line 336
-    move-result-object v5
+    const/4 v2, 0x0
 
+    .line 335
+    if-eqz v1, :cond_9
+
+    .line 336
     .line 337
-    invoke-direct {v4, v5, v1, v2}, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;-><init>(Ljava/lang/String;Lcom/discord/chat/bridge/threads/ThreadEmbed;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    iget-object v3, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
 
     .line 338
     .line 339
-    .line 340
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    new-instance v4, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;
 
+    .line 340
     .line 341
+    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
+
     .line 342
     .line 343
+    .line 344
+    move-result-object v5
+
+    .line 345
+    invoke-direct {v4, v5, v1, v2}, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;-><init>(Ljava/lang/String;Lcom/discord/chat/bridge/threads/ThreadEmbed;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 346
+    .line 347
+    .line 348
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 349
+    .line 350
+    .line 351
     :cond_9
     invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getEphemeralIndication()Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;
 
-    .line 344
-    .line 345
-    .line 346
-    move-result-object v1
-
-    .line 347
-    if-eqz v1, :cond_a
-
-    .line 348
-    .line 349
-    iget-object v3, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
-
-    .line 350
-    .line 351
-    new-instance v4, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;
-
     .line 352
     .line 353
-    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
-
     .line 354
-    .line 355
-    .line 356
-    move-result-object v5
+    move-result-object v1
 
+    .line 355
+    if-eqz v1, :cond_a
+
+    .line 356
     .line 357
-    invoke-direct {v4, v5, v1, v2}, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;-><init>(Ljava/lang/String;Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    iget-object v3, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
 
     .line 358
     .line 359
-    .line 360
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    new-instance v4, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;
 
+    .line 360
     .line 361
+    invoke-virtual/range {p1 .. p1}, Lcom/discord/chat/bridge/Message;->getId-3Eiw7ao()Ljava/lang/String;
+
     .line 362
     .line 363
-    :cond_a
-    iget-object v1, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
-
     .line 364
+    move-result-object v5
+
     .line 365
-    return-object v1
+    invoke-direct {v4, v5, v1, v2}, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;-><init>(Ljava/lang/String;Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
     .line 366
     .line 367
     .line 368
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 369
     .line 370
     .line 371
+    :cond_a
+    iget-object v1, v0, Lcom/discord/chat/presentation/message/system/SystemMessageView;->accessories:Ljava/util/ArrayList;
+
     .line 372
     .line 373
+    return-object v1
     .line 374
     .line 375
     .line 376
@@ -1019,6 +1027,23 @@
     .line 395
     .line 396
     .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
 .end method
 
 .method private final getIconAndColor(Lcom/discord/chat/bridge/MessageType;)Lkotlin/Pair;

@@ -139,7 +139,7 @@
 .end method
 
 .method public synthetic constructor <init>(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/bridge/messageframe/MessageFrame;Lcom/discord/chat/presentation/root/MessageContext;ZZLcom/discord/chat/bridge/BackgroundHighlight;Ljava/lang/Integer;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 17
+    .locals 19
 
     move/from16 v0, p9
 
@@ -184,13 +184,17 @@
 
     const/4 v14, 0x0
 
-    const/16 v15, 0x3ff
+    const/4 v15, 0x0
 
     const/16 v16, 0x0
 
+    const/16 v17, 0xfff
+
+    const/16 v18, 0x0
+
     move-object v4, v3
 
-    invoke-direct/range {v4 .. v16}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v4 .. v18}, Lcom/discord/chat/presentation/root/MessageContext;-><init>(ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Lcom/discord/chat/bridge/truncation/Truncation;ZZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     goto :goto_1
 
