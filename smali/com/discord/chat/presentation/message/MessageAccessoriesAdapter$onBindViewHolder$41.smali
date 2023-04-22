@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # annotations
@@ -19,10 +19,9 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/n;",
-        "Lkotlin/jvm/functions/Function3<",
-        "Ljava/lang/String;",
-        "Ljava/lang/String;",
+        "Lkotlin/jvm/functions/Function2<",
         "Lcom/discord/primitives/MessageId;",
+        "Lcom/discord/primitives/ChannelId;",
         "Lkotlin/Unit;",
         ">;"
     }
@@ -43,13 +42,13 @@
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 7
 
-    const/4 v1, 0x3
+    const/4 v1, 0x2
 
     const-class v3, Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    const-string v4, "onTapPostPreviewEmbed"
+    const-string v4, "onTapAutoModerationFeedback"
 
-    const-string v5, "onTapPostPreviewEmbed-JPrav84(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+    const-string v5, "onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V"
 
     const/4 v6, 0x0
 
@@ -64,27 +63,29 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Lcom/discord/primitives/MessageId;
 
-    check-cast p2, Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/discord/primitives/MessageId;->unbox-impl()Ljava/lang/String;
 
-    check-cast p3, Lcom/discord/primitives/MessageId;
+    move-result-object p1
 
-    invoke-virtual {p3}, Lcom/discord/primitives/MessageId;->unbox-impl()Ljava/lang/String;
+    check-cast p2, Lcom/discord/primitives/ChannelId;
 
-    move-result-object p3
+    invoke-virtual {p2}, Lcom/discord/primitives/ChannelId;->unbox-impl()J
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;->invoke-JPrav84(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-wide v0
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;->invoke-pfaIj0E(Ljava/lang/String;J)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
     return-object p1
 .end method
 
-.method public final invoke-JPrav84(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public final invoke-pfaIj0E(Ljava/lang/String;J)V
     .locals 1
 
     .line 1
@@ -97,38 +98,30 @@
     .line 4
     .line 5
     .line 6
-    const-string v0, "p1"
+    iget-object v0, p0, Lkotlin/jvm/internal/e;->receiver:Ljava/lang/Object;
 
     .line 7
     .line 8
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast v0, Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     .line 9
     .line 10
-    .line 11
-    const-string v0, "p2"
+    invoke-interface {v0, p1, p2, p3}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapAutoModerationFeedback-pfaIj0E(Ljava/lang/String;J)V
 
+    .line 11
     .line 12
     .line 13
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
+    return-void
     .line 14
     .line 15
     .line 16
-    iget-object v0, p0, Lkotlin/jvm/internal/e;->receiver:Ljava/lang/Object;
-
     .line 17
     .line 18
-    check-cast v0, Lcom/discord/chat/presentation/events/ChatEventHandler;
-
     .line 19
     .line 20
-    invoke-interface {v0, p1, p2, p3}, Lcom/discord/chat/presentation/events/ChatEventHandler;->onTapPostPreviewEmbed-JPrav84(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 21
     .line 22
     .line 23
-    return-void
     .line 24
     .line 25
     .line 26
@@ -520,79 +513,4 @@
     .line 412
     .line 413
     .line 414
-    .line 415
-    .line 416
-    .line 417
-    .line 418
-    .line 419
-    .line 420
-    .line 421
-    .line 422
-    .line 423
-    .line 424
-    .line 425
-    .line 426
-    .line 427
-    .line 428
-    .line 429
-    .line 430
-    .line 431
-    .line 432
-    .line 433
-    .line 434
-    .line 435
-    .line 436
-    .line 437
-    .line 438
-    .line 439
-    .line 440
-    .line 441
-    .line 442
-    .line 443
-    .line 444
-    .line 445
-    .line 446
-    .line 447
-    .line 448
-    .line 449
-    .line 450
-    .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
-    .line 485
-    .line 486
-    .line 487
-    .line 488
-    .line 489
 .end method

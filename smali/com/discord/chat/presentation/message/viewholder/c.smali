@@ -7,20 +7,24 @@
 
 
 # instance fields
-.field public final synthetic k:Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;
+.field public final synthetic k:Lkotlin/jvm/functions/Function2;
 
-.field public final synthetic l:Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;
+.field public final synthetic l:Ljava/lang/String;
+
+.field public final synthetic m:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function2;Ljava/lang/String;J)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/chat/presentation/message/viewholder/c;->k:Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;
+    iput-object p1, p0, Lcom/discord/chat/presentation/message/viewholder/c;->k:Lkotlin/jvm/functions/Function2;
 
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/viewholder/c;->l:Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;
+    iput-object p2, p0, Lcom/discord/chat/presentation/message/viewholder/c;->l:Ljava/lang/String;
+
+    iput-wide p3, p0, Lcom/discord/chat/presentation/message/viewholder/c;->m:J
 
     return-void
 .end method
@@ -28,13 +32,15 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 4
 
-    iget-object v0, p0, Lcom/discord/chat/presentation/message/viewholder/c;->k:Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/viewholder/c;->k:Lkotlin/jvm/functions/Function2;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/c;->l:Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;
+    iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/c;->l:Ljava/lang/String;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;->a(Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;Landroid/view/View;)V
+    iget-wide v2, p0, Lcom/discord/chat/presentation/message/viewholder/c;->m:J
+
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;->a(Lkotlin/jvm/functions/Function2;Ljava/lang/String;JLandroid/view/View;)V
 
     return-void
 .end method

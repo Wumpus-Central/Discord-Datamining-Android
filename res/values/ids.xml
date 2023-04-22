@@ -152,6 +152,7 @@
     <item type="id" name="coordinator" />
     <item type="id" name="copy_button" />
     <item type="id" name="cover_image" />
+    <item type="id" name="cover_image_overlay_button" />
     <item type="id" name="creator_avatar" />
     <item type="id" name="cta" />
     <item type="id" name="customPanel" />
@@ -582,7 +583,10 @@
     <item type="id" name="subtext" />
     <item type="id" name="subtitle" />
     <item type="id" name="subtitleGradient" />
+    <item type="id" name="subtitle_divider" />
     <item type="id" name="subtitle_icon" />
+    <item type="id" name="subtitle_severity" />
+    <item type="id" name="subtitle_start_time" />
     <item type="id" name="subtitle_top_barrier" />
     <item type="id" name="suppress_notifications_icon" />
     <item type="id" name="survey_background" />
@@ -690,6 +694,7 @@
     <item type="id" name="view_tree_saved_state_registry_owner" />
     <item type="id" name="view_tree_view_model_store_owner" />
     <item type="id" name="visible_removing_fragment_view_tag" />
+    <item type="id" name="warning_icon" />
     <item type="id" name="wave" />
     <item type="id" name="welcome_reply_button" />
     <item type="id" name="welcome_reply_text" />

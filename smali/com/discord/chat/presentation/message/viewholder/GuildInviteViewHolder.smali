@@ -1294,11 +1294,11 @@
     .line 138
     .line 139
     .line 140
-    new-instance v2, Lcom/discord/chat/presentation/message/viewholder/h;
+    new-instance v2, Lcom/discord/chat/presentation/message/viewholder/j;
 
     .line 141
     .line 142
-    invoke-direct {v2, p0, p1}, Lcom/discord/chat/presentation/message/viewholder/h;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildInviteMessageAccessory;)V
+    invoke-direct {v2, p0, p1}, Lcom/discord/chat/presentation/message/viewholder/j;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildInviteMessageAccessory;)V
 
     .line 143
     .line 144

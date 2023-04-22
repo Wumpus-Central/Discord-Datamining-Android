@@ -2087,7 +2087,7 @@
     move-result-object v8
 
     .line 224
-    new-instance v9, Lcom/discord/chat/presentation/message/viewholder/f;
+    new-instance v9, Lcom/discord/chat/presentation/message/viewholder/h;
 
     .line 225
     .line 226
@@ -2095,7 +2095,7 @@
 
     .line 227
     .line 228
-    invoke-direct {v9, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/f;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;)V
+    invoke-direct {v9, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/h;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;)V
 
     .line 229
     .line 230
@@ -2116,11 +2116,11 @@
     move-result-object v2
 
     .line 239
-    new-instance v3, Lcom/discord/chat/presentation/message/viewholder/g;
+    new-instance v3, Lcom/discord/chat/presentation/message/viewholder/i;
 
     .line 240
     .line 241
-    invoke-direct {v3, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/g;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;)V
+    invoke-direct {v3, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/i;-><init>(Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;)V
 
     .line 242
     .line 243

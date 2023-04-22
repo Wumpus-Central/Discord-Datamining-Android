@@ -94,7 +94,7 @@
 
     .line 11
     .line 12
-    const/16 v3, 0x8
+    const/16 v3, 0x9
 
     .line 13
     .line 14
@@ -181,16 +181,20 @@
     .line 57
     .line 58
     .line 59
-    sput-object v1, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->descriptor:Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;
+    const-string v0, "notification"
 
     .line 60
     .line 61
-    return-void
+    invoke-virtual {v1, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;->l(Ljava/lang/String;Z)V
+
     .line 62
     .line 63
     .line 64
+    sput-object v1, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->descriptor:Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;
+
     .line 65
     .line 66
+    return-void
     .line 67
     .line 68
     .line 69
@@ -224,7 +228,7 @@
     .end annotation
 
     .line 1
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     .line 2
     .line 3
@@ -320,17 +324,27 @@
 
     .line 44
     .line 45
-    return-object v0
+    sget-object v1, Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;
+
     .line 46
     .line 47
+    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+
     .line 48
     .line 49
     .line 50
+    move-result-object v1
+
     .line 51
+    const/16 v2, 0x8
+
     .line 52
     .line 53
+    aput-object v1, v0, v2
+
     .line 54
     .line 55
+    return-object v0
     .line 56
     .line 57
     .line 58
@@ -384,39 +398,41 @@
 
     const/4 v6, 0x3
 
-    const/4 v7, 0x4
+    const/16 v7, 0x8
 
-    const/4 v8, 0x2
+    const/4 v8, 0x4
 
-    const/4 v9, 0x1
+    const/4 v9, 0x2
 
-    const/4 v10, 0x0
+    const/4 v10, 0x1
 
     const/4 v11, 0x0
 
+    const/4 v12, 0x0
+
     if-eqz v2, :cond_0
 
-    invoke-interface {v0, v1, v10}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v11}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v9}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v10}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+
+    move-result-object v10
+
+    sget-object v11, Lzi/a2;->a:Lzi/a2;
+
+    invoke-interface {v0, v1, v9, v11, v12}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v9
 
-    sget-object v10, Lzi/a2;->a:Lzi/a2;
-
-    invoke-interface {v0, v1, v8, v10, v11}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    invoke-interface {v0, v1, v6, v10, v11}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v6, v11, v12}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
-    invoke-interface {v0, v1, v7, v10, v11}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v8, v11, v12}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
     invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
@@ -426,36 +442,48 @@
 
     move-result-object v4
 
-    sget-object v10, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;
+    sget-object v11, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;
 
-    invoke-interface {v0, v1, v3, v10, v11}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v3, v11, v12}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    const/16 v10, 0xff
+    sget-object v11, Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;
 
-    move-object v12, v2
+    invoke-interface {v0, v1, v7, v11, v12}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object/from16 v18, v4
+    move-result-object v7
 
-    move-object/from16 v17, v5
+    const/16 v11, 0x1ff
 
-    move-object v13, v9
+    move-object v15, v4
 
-    move v11, v10
+    move-object/from16 v16, v5
 
-    goto/16 :goto_2
+    move-object v14, v9
+
+    move-object v9, v2
+
+    move/from16 v20, v11
+
+    move-object v11, v8
+
+    move/from16 v8, v20
+
+    goto/16 :goto_3
 
     :cond_0
-    move/from16 v18, v9
+    move/from16 v19, v10
 
-    move v2, v10
+    move v2, v11
 
-    move-object v10, v11
+    move-object v9, v12
 
-    move-object v12, v10
+    move-object v10, v9
 
-    move-object v13, v12
+    move-object v11, v10
+
+    move-object v13, v11
 
     move-object v14, v13
 
@@ -466,166 +494,205 @@
     move-object/from16 v17, v16
 
     :goto_0
-    if-eqz v18, :cond_1
+    if-eqz v19, :cond_1
 
     invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
 
-    move-result v9
+    move-result v6
 
-    packed-switch v9, :pswitch_data_0
+    packed-switch v6, :pswitch_data_0
 
     new-instance v0, Lwi/n;
 
-    invoke-direct {v0, v9}, Lwi/n;-><init>(I)V
+    invoke-direct {v0, v6}, Lwi/n;-><init>(I)V
 
     throw v0
 
     :pswitch_0
-    sget-object v9, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;
+    sget-object v6, Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;
 
-    invoke-interface {v0, v1, v3, v9, v10}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v7, v6, v9}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    or-int/lit16 v2, v2, 0x100
+
+    goto :goto_2
+
+    :pswitch_1
+    sget-object v6, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;
+
+    invoke-interface {v0, v1, v3, v6, v10}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
     or-int/lit16 v2, v2, 0x80
 
-    goto :goto_1
+    goto :goto_2
 
-    :pswitch_1
+    :pswitch_2
     invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v17
 
     or-int/lit8 v2, v2, 0x40
 
-    goto :goto_1
+    goto :goto_2
 
-    :pswitch_2
+    :pswitch_3
     invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v16
 
     or-int/lit8 v2, v2, 0x20
 
-    goto :goto_1
+    goto :goto_2
 
-    :pswitch_3
-    sget-object v9, Lzi/a2;->a:Lzi/a2;
+    :pswitch_4
+    sget-object v6, Lzi/a2;->a:Lzi/a2;
 
-    invoke-interface {v0, v1, v7, v9, v15}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v8, v6, v11}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v15
+    move-result-object v11
 
     or-int/lit8 v2, v2, 0x10
 
-    goto :goto_1
+    goto :goto_2
 
-    :pswitch_4
-    sget-object v9, Lzi/a2;->a:Lzi/a2;
+    :pswitch_5
+    sget-object v6, Lzi/a2;->a:Lzi/a2;
 
-    invoke-interface {v0, v1, v6, v9, v14}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v3, 0x3
 
-    move-result-object v14
+    invoke-interface {v0, v1, v3, v6, v15}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v15
 
     or-int/lit8 v2, v2, 0x8
 
-    goto :goto_1
+    move v6, v3
 
-    :pswitch_5
-    sget-object v9, Lzi/a2;->a:Lzi/a2;
+    const/4 v3, 0x7
 
-    invoke-interface {v0, v1, v8, v9, v13}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    goto :goto_0
 
-    move-result-object v13
+    :pswitch_6
+    const/4 v3, 0x3
+
+    sget-object v6, Lzi/a2;->a:Lzi/a2;
+
+    const/4 v3, 0x2
+
+    invoke-interface {v0, v1, v3, v6, v14}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v14
 
     or-int/lit8 v2, v2, 0x4
 
     goto :goto_1
 
-    :pswitch_6
-    const/4 v9, 0x1
+    :pswitch_7
+    const/4 v3, 0x2
 
-    invoke-interface {v0, v1, v9}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    const/4 v6, 0x1
 
-    move-result-object v12
+    invoke-interface {v0, v1, v6}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+
+    move-result-object v13
 
     or-int/lit8 v2, v2, 0x2
 
-    goto :goto_0
+    goto :goto_1
 
-    :pswitch_7
-    const/4 v9, 0x1
+    :pswitch_8
+    const/4 v3, 0x2
 
-    const/4 v11, 0x0
+    const/4 v6, 0x1
 
-    invoke-interface {v0, v1, v11}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    const/4 v12, 0x0
 
-    move-result-object v19
+    invoke-interface {v0, v1, v12}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+
+    move-result-object v18
 
     or-int/lit8 v2, v2, 0x1
 
-    move-object/from16 v11, v19
-
-    goto :goto_0
-
-    :pswitch_8
-    const/16 v18, 0x0
+    move-object/from16 v12, v18
 
     :goto_1
-    const/4 v9, 0x1
+    const/4 v3, 0x7
+
+    goto :goto_2
+
+    :pswitch_9
+    const/4 v6, 0x1
+
+    const/16 v18, 0x0
+
+    move/from16 v19, v18
+
+    :goto_2
+    const/4 v6, 0x3
 
     goto :goto_0
 
     :cond_1
+    move v8, v2
+
+    move-object v7, v9
+
     move-object v3, v10
 
-    move-object v8, v13
+    move-object v9, v12
 
-    move-object v6, v14
+    move-object v10, v13
 
-    move-object v7, v15
+    move-object v6, v15
 
-    move-object/from16 v18, v17
+    move-object/from16 v15, v17
 
-    move-object v13, v12
-
-    move-object/from16 v17, v16
-
-    move-object v12, v11
-
-    move v11, v2
-
-    :goto_2
+    :goto_3
     invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     new-instance v0, Lcom/discord/chat/bridge/automod/AutoModerationContext;
 
-    move-object v14, v8
+    move-object v1, v14
 
-    check-cast v14, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
-    move-object v15, v6
+    move-object v12, v6
 
-    check-cast v15, Ljava/lang/String;
+    check-cast v12, Ljava/lang/String;
 
-    move-object/from16 v16, v7
+    move-object v13, v11
 
-    check-cast v16, Ljava/lang/String;
+    check-cast v13, Ljava/lang/String;
 
-    move-object/from16 v19, v3
+    move-object v2, v3
 
-    check-cast v19, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
+    check-cast v2, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
-    const/16 v20, 0x0
+    move-object/from16 v17, v7
 
-    move-object v10, v0
+    check-cast v17, Lcom/discord/chat/bridge/automod/AutoModerationNotification;
 
-    invoke-direct/range {v10 .. v20}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+    const/16 v18, 0x0
+
+    move-object v7, v0
+
+    move-object v11, v1
+
+    move-object/from16 v14, v16
+
+    move-object/from16 v16, v2
+
+    invoke-direct/range {v7 .. v18}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 
     return-object v0
 
     :pswitch_data_0
     .packed-switch -0x1
+        :pswitch_9
         :pswitch_8
         :pswitch_7
         :pswitch_6

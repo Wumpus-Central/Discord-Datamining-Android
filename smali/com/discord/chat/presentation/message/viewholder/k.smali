@@ -3,40 +3,38 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnLongClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic k:Lkotlin/jvm/functions/Function1;
+.field public final synthetic k:Lkotlin/jvm/functions/Function3;
 
-.field public final synthetic l:Lcom/discord/chat/bridge/sticker/Sticker;
+.field public final synthetic l:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/discord/chat/presentation/message/viewholder/k;->k:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, Lcom/discord/chat/presentation/message/viewholder/k;->k:Lkotlin/jvm/functions/Function3;
 
-    iput-object p2, p0, Lcom/discord/chat/presentation/message/viewholder/k;->l:Lcom/discord/chat/bridge/sticker/Sticker;
+    iput-object p2, p0, Lcom/discord/chat/presentation/message/viewholder/k;->l:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLongClick(Landroid/view/View;)Z
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/discord/chat/presentation/message/viewholder/k;->k:Lkotlin/jvm/functions/Function1;
+    iget-object v0, p0, Lcom/discord/chat/presentation/message/viewholder/k;->k:Lkotlin/jvm/functions/Function3;
 
-    iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/k;->l:Lcom/discord/chat/bridge/sticker/Sticker;
+    iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/k;->l:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/StickerApngViewHolder;->b(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;Landroid/view/View;)Z
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->a(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
 
-    move-result p1
-
-    return p1
+    return-void
 .end method

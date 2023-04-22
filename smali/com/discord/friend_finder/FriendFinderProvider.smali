@@ -1060,7 +1060,7 @@
 
 # virtual methods
 .method public final fetchContacts(Landroid/content/Context;)Ljava/util/Map;
-    .locals 14
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1333,102 +1333,103 @@
     .line 123
     .line 124
     .line 125
-    move-object v7, v5
-
-    .line 126
-    goto :goto_2
-
-    .line 127
-    :catch_0
-    move-exception v5
-
-    .line 128
     goto :goto_1
 
-    .line 129
+    .line 126
+    :catch_0
+    move-object v5, v7
+
+    .line 127
     :catch_1
-    move-exception v7
-
-    .line 130
-    move-object v13, v7
-
-    .line 131
+    :goto_1
     move-object v7, v5
 
+    .line 128
+    :cond_2
+    invoke-direct {p0, p1, v4}, Lcom/discord/friend_finder/FriendFinderProvider;->getContactName(Landroid/content/Context;Ljava/lang/String;)Lcom/discord/friend_finder/ContactNameEntry;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object v5
+
     .line 132
-    move-object v5, v13
+    new-instance v8, Lcom/discord/friend_finder/ContactName;
 
     .line 133
-    :goto_1
-    sget-object v8, Lcom/discord/crash_reporting/CrashReporting;->INSTANCE:Lcom/discord/crash_reporting/CrashReporting;
-
     .line 134
+    const/4 v9, 0x0
+
     .line 135
-    invoke-virtual {v8, v5}, Lcom/discord/crash_reporting/CrashReporting;->captureException(Ljava/lang/Throwable;)V
+    if-eqz v5, :cond_3
 
     .line 136
     .line 137
-    .line 138
-    :cond_2
-    :goto_2
-    invoke-direct {p0, p1, v4}, Lcom/discord/friend_finder/FriendFinderProvider;->getContactName(Landroid/content/Context;Ljava/lang/String;)Lcom/discord/friend_finder/ContactNameEntry;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v5
-
-    .line 142
-    new-instance v8, Lcom/discord/friend_finder/ContactName;
-
-    .line 143
-    .line 144
-    const/4 v9, 0x0
-
-    .line 145
-    if-eqz v5, :cond_3
-
-    .line 146
-    .line 147
     invoke-virtual {v5}, Lcom/discord/friend_finder/ContactNameEntry;->getGivenName()Ljava/lang/String;
 
-    .line 148
-    .line 149
-    .line 150
+    .line 138
+    .line 139
+    .line 140
     move-result-object v10
 
-    .line 151
-    goto :goto_3
+    .line 141
+    goto :goto_2
 
-    .line 152
+    .line 142
     :cond_3
     move-object v10, v9
 
-    .line 153
-    :goto_3
+    .line 143
+    :goto_2
     if-eqz v5, :cond_4
 
-    .line 154
-    .line 155
+    .line 144
+    .line 145
     invoke-virtual {v5}, Lcom/discord/friend_finder/ContactNameEntry;->getFamilyName()Ljava/lang/String;
 
-    .line 156
-    .line 157
-    .line 158
+    .line 146
+    .line 147
+    .line 148
     move-result-object v9
 
-    .line 159
+    .line 149
     :cond_4
     invoke-direct {v8, v2, v10, v9}, Lcom/discord/friend_finder/ContactName;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 160
-    .line 161
-    .line 162
+    .line 150
+    .line 151
+    .line 152
     const-string v2, "photo_file_id"
 
-    .line 163
-    .line 164
+    .line 153
+    .line 154
     invoke-direct {p0, v1, v2}, Lcom/discord/friend_finder/FriendFinderProvider;->getColumnString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object v2
+
+    .line 158
+    const/4 v5, 0x0
+
+    .line 159
+    if-eqz v2, :cond_5
+
+    .line 160
+    .line 161
+    move v9, v6
+
+    .line 162
+    goto :goto_3
+
+    .line 163
+    :cond_5
+    move v9, v5
+
+    .line 164
+    :goto_3
+    invoke-interface {v0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 165
     .line 166
@@ -1436,149 +1437,133 @@
     move-result-object v2
 
     .line 168
-    const/4 v5, 0x0
-
-    .line 169
-    if-eqz v2, :cond_5
-
-    .line 170
-    .line 171
-    move v9, v6
-
-    .line 172
-    goto :goto_4
-
-    .line 173
-    :cond_5
-    move v9, v5
-
-    .line 174
-    :goto_4
-    invoke-interface {v0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 175
-    .line 176
-    .line 177
-    move-result-object v2
-
-    .line 178
     check-cast v2, Lcom/discord/friend_finder/ContactsDataEntry;
 
-    .line 179
-    .line 180
+    .line 169
+    .line 170
     if-eqz v2, :cond_7
 
-    .line 181
-    .line 182
+    .line 171
+    .line 172
     invoke-virtual {v2}, Lcom/discord/friend_finder/ContactsDataEntry;->getContactNames()[Lcom/discord/friend_finder/ContactName;
 
-    .line 183
-    .line 184
-    .line 185
+    .line 173
+    .line 174
+    .line 175
     move-result-object v5
 
-    .line 186
+    .line 176
     invoke-static {v5, v8}, Lkotlin/collections/b;->o([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 187
-    .line 188
-    .line 189
+    .line 177
+    .line 178
+    .line 179
     if-ne v9, v6, :cond_6
 
+    .line 180
+    .line 181
+    invoke-virtual {v2, v6}, Lcom/discord/friend_finder/ContactsDataEntry;->setHasImageData(Z)V
+
+    .line 182
+    .line 183
+    .line 184
+    :cond_6
+    invoke-virtual {v2}, Lcom/discord/friend_finder/ContactsDataEntry;->getDeviceContactIds()[Ljava/lang/String;
+
+    .line 185
+    .line 186
+    .line 187
+    move-result-object v5
+
+    .line 188
+    invoke-static {v5, v4}, Lkotlin/collections/b;->o([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 189
     .line 190
     .line 191
-    invoke-virtual {v2, v6}, Lcom/discord/friend_finder/ContactsDataEntry;->setHasImageData(Z)V
+    invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 192
     .line 193
     .line 194
-    :cond_6
-    invoke-virtual {v2}, Lcom/discord/friend_finder/ContactsDataEntry;->getDeviceContactIds()[Ljava/lang/String;
+    goto/16 :goto_0
 
     .line 195
     .line 196
-    .line 197
-    move-result-object v5
-
-    .line 198
-    invoke-static {v5, v4}, Lkotlin/collections/b;->o([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 199
-    .line 200
-    .line 201
-    invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 202
-    .line 203
-    .line 204
-    goto/16 :goto_0
-
-    .line 205
-    .line 206
     :cond_7
     new-instance v2, Lcom/discord/friend_finder/ContactsDataEntry;
 
-    .line 207
-    .line 208
+    .line 197
+    .line 198
     const-string v10, "phone"
 
-    .line 209
-    .line 210
+    .line 199
+    .line 200
     new-array v11, v6, [Lcom/discord/friend_finder/ContactName;
 
-    .line 211
-    .line 212
+    .line 201
+    .line 202
     aput-object v8, v11, v5
 
-    .line 213
-    .line 214
+    .line 203
+    .line 204
     new-array v12, v6, [Ljava/lang/String;
+
+    .line 205
+    .line 206
+    aput-object v4, v12, v5
+
+    .line 207
+    .line 208
+    move-object v4, v2
+
+    .line 209
+    move-object v5, v3
+
+    .line 210
+    move-object v6, v7
+
+    .line 211
+    move-object v7, v10
+
+    .line 212
+    move-object v8, v11
+
+    .line 213
+    move-object v10, v12
+
+    .line 214
+    invoke-direct/range {v4 .. v10}, Lcom/discord/friend_finder/ContactsDataEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lcom/discord/friend_finder/ContactName;Z[Ljava/lang/String;)V
 
     .line 215
     .line 216
-    aput-object v4, v12, v5
-
     .line 217
-    .line 218
-    move-object v4, v2
-
-    .line 219
-    move-object v5, v3
-
-    .line 220
-    move-object v6, v7
-
-    .line 221
-    move-object v7, v10
-
-    .line 222
-    move-object v8, v11
-
-    .line 223
-    move-object v10, v12
-
-    .line 224
-    invoke-direct/range {v4 .. v10}, Lcom/discord/friend_finder/ContactsDataEntry;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lcom/discord/friend_finder/ContactName;Z[Ljava/lang/String;)V
-
-    .line 225
-    .line 226
-    .line 227
     invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 228
-    .line 229
-    .line 230
+    .line 218
+    .line 219
+    .line 220
     goto/16 :goto_0
 
-    .line 231
-    .line 232
+    .line 221
+    .line 222
     :cond_8
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
+    .line 223
+    .line 224
+    .line 225
+    return-object v0
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
     .line 233
     .line 234
     .line 235
-    return-object v0
     .line 236
     .line 237
     .line 238

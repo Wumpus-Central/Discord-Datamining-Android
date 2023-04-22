@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0019\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 52\u00020\u0001:\u000245Bl\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0010BP\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0011J\t\u0010\u001c\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0005H\u00c6\u0003J\u0019\u0010\u001e\u001a\u00020\u0008H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001f\u0010\u0013J\t\u0010 \u001a\u00020\u0005H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010$\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003Jj\u0010%\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00082\u0008\u0008\u0002\u0010\t\u001a\u00020\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00052\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005H\u00c6\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008&\u0010\'J\u0013\u0010(\u001a\u00020)2\u0008\u0010*\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010+\u001a\u00020\u0003H\u00d6\u0001J\t\u0010,\u001a\u00020\u0005H\u00d6\u0001J!\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00002\u0006\u00100\u001a\u0002012\u0006\u00102\u001a\u000203H\u00c7\u0001R\u0013\u0010\r\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0013R\u0011\u0010\u000b\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0013R\u001c\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0017\u001a\u0004\u0008\u0016\u0010\u0013R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0013R\u0013\u0010\u000c\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0013R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0013R\u0011\u0010\t\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0013\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00066"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u001e\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 =2\u00020\u0001:\u0002<=B\u0080\u0001\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0013Bh\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0014J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010$\u001a\u00020\u0005H\u00c6\u0003J\u0019\u0010%\u001a\u00020\u0008H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008&\u0010\u0016J\t\u0010\'\u001a\u00020\u0005H\u00c6\u0003J\t\u0010(\u001a\u00020\u0005H\u00c6\u0003J\t\u0010)\u001a\u00020\u000cH\u00c6\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u0082\u0001\u0010-\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00082\u0008\u0008\u0002\u0010\t\u001a\u00020\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0005H\u00c6\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008.\u0010/J\u0013\u00100\u001a\u0002012\u0008\u00102\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u00103\u001a\u00020\u0003H\u00d6\u0001J\t\u00104\u001a\u00020\u0005H\u00d6\u0001J!\u00105\u001a\u0002062\u0006\u00107\u001a\u00020\u00002\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;H\u00c7\u0001R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0016R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0016R\u0011\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0016R\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001bR\u001c\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008\u001c\u0010\u0016R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0016R\u0013\u0010\r\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0016R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008 \u0010\u0016R\u0011\u0010\t\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0016\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006>"
     }
     d2 = {
         "Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;",
@@ -28,16 +28,22 @@
         "title",
         "ctaText",
         "footer",
+        "Lcom/discord/chat/bridge/structurabletext/StructurableText;",
         "subtitle",
         "coverImage",
+        "blurredCoverImage",
+        "coverImageOverlayText",
         "serializationConstructorMarker",
         "Lkotlinx/serialization/internal/SerializationConstructorMarker;",
-        "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "getCoverImage",
+        "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "getBlurredCoverImage",
         "()Ljava/lang/String;",
+        "getCoverImage",
+        "getCoverImageOverlayText",
         "getCtaText",
         "getFooter",
+        "()Lcom/discord/chat/bridge/structurabletext/StructurableText;",
         "getMessageId-3Eiw7ao",
         "Ljava/lang/String;",
         "getParentChannelId",
@@ -45,6 +51,7 @@
         "getThreadId",
         "getTitle",
         "component1",
+        "component10",
         "component2",
         "component3",
         "component3-3Eiw7ao",
@@ -53,9 +60,10 @@
         "component6",
         "component7",
         "component8",
+        "component9",
         "copy",
-        "copy-5VnhPa8",
-        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;",
+        "copy-F4NSsMc",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;",
         "equals",
         "",
         "other",
@@ -90,11 +98,15 @@
 
 
 # instance fields
+.field private final blurredCoverImage:Ljava/lang/String;
+
 .field private final coverImage:Ljava/lang/String;
+
+.field private final coverImageOverlayText:Ljava/lang/String;
 
 .field private final ctaText:Ljava/lang/String;
 
-.field private final footer:Ljava/lang/String;
+.field private final footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
 .field private final messageId:Ljava/lang/String;
 
@@ -122,23 +134,23 @@
     return-void
 .end method
 
-.method private constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+.method private constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
     .locals 1
 
-    and-int/lit8 p10, p1, 0x3f
+    and-int/lit8 p12, p1, 0x3f
 
     const/16 v0, 0x3f
 
-    if-eq v0, p10, :cond_0
+    if-eq v0, p12, :cond_0
 
     .line 1
-    sget-object p10, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;
+    sget-object p12, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;
 
-    invoke-virtual {p10}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+    invoke-virtual {p12}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
 
-    move-result-object p10
+    move-result-object p12
 
-    invoke-static {p1, v0, p10}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {p1, v0, p12}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -153,7 +165,7 @@
 
     iput-object p6, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->ctaText:Ljava/lang/String;
 
-    iput-object p7, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iput-object p7, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     and-int/lit8 p2, p1, 0x40
 
@@ -169,9 +181,9 @@
     iput-object p8, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
 
     :goto_0
-    and-int/lit16 p1, p1, 0x80
+    and-int/lit16 p2, p1, 0x80
 
-    if-nez p1, :cond_2
+    if-nez p2, :cond_2
 
     iput-object p3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
@@ -181,18 +193,42 @@
     iput-object p9, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
     :goto_1
+    and-int/lit16 p2, p1, 0x100
+
+    if-nez p2, :cond_3
+
+    iput-object p3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    goto :goto_2
+
+    :cond_3
+    iput-object p10, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    :goto_2
+    and-int/lit16 p1, p1, 0x200
+
+    if-nez p1, :cond_4
+
+    iput-object p3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    goto :goto_3
+
+    :cond_4
+    iput-object p11, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    :goto_3
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p10}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+    invoke-direct/range {p0 .. p12}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 2
@@ -214,7 +250,7 @@
     iput-object p5, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->ctaText:Ljava/lang/String;
 
     .line 8
-    iput-object p6, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iput-object p6, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     .line 9
     iput-object p7, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
@@ -222,13 +258,19 @@
     .line 10
     iput-object p8, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
+    .line 11
+    iput-object p9, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    .line 12
+    iput-object p10, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 13
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 15
 
-    move/from16 v0, p9
+    move/from16 v0, p11
 
     and-int/lit8 v1, v0, 0x40
 
@@ -244,9 +286,9 @@
     move-object/from16 v10, p7
 
     :goto_0
-    and-int/lit16 v0, v0, 0x80
+    and-int/lit16 v1, v0, 0x80
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     move-object v11, v2
 
@@ -256,13 +298,37 @@
     move-object/from16 v11, p8
 
     :goto_1
-    const/4 v12, 0x0
+    and-int/lit16 v1, v0, 0x100
+
+    if-eqz v1, :cond_2
+
+    move-object v12, v2
+
+    goto :goto_2
+
+    :cond_2
+    move-object/from16 v12, p9
+
+    :goto_2
+    and-int/lit16 v0, v0, 0x200
+
+    if-eqz v0, :cond_3
+
+    move-object v13, v2
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v13, p10
+
+    :goto_3
+    const/4 v14, 0x0
 
     move-object v3, p0
 
-    move-object v4, p1
+    move-object/from16 v4, p1
 
-    move-object v5, p2
+    move-object/from16 v5, p2
 
     move-object/from16 v6, p3
 
@@ -272,26 +338,26 @@
 
     move-object/from16 v9, p6
 
-    .line 11
-    invoke-direct/range {v3 .. v12}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 13
+    invoke-direct/range {v3 .. v14}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p8}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {p0 .. p10}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static synthetic copy-5VnhPa8$default(Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
-    .locals 9
+.method public static synthetic copy-F4NSsMc$default(Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
+    .locals 11
 
     move-object v0, p0
 
-    move/from16 v1, p9
+    move/from16 v1, p11
 
     and-int/lit8 v2, v1, 0x1
 
@@ -350,19 +416,19 @@
     goto :goto_4
 
     :cond_4
-    move-object v6, p5
+    move-object/from16 v6, p5
 
     :goto_4
     and-int/lit8 v7, v1, 0x20
 
     if-eqz v7, :cond_5
 
-    iget-object v7, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v7, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     goto :goto_5
 
     :cond_5
-    move-object v7, p6
+    move-object/from16 v7, p6
 
     :goto_5
     and-int/lit8 v8, v1, 0x40
@@ -377,18 +443,42 @@
     move-object/from16 v8, p7
 
     :goto_6
-    and-int/lit16 v1, v1, 0x80
+    and-int/lit16 v9, v1, 0x80
 
-    if-eqz v1, :cond_7
+    if-eqz v9, :cond_7
 
-    iget-object v1, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
+    iget-object v9, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
     goto :goto_7
 
     :cond_7
-    move-object/from16 v1, p8
+    move-object/from16 v9, p8
 
     :goto_7
+    and-int/lit16 v10, v1, 0x100
+
+    if-eqz v10, :cond_8
+
+    iget-object v10, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v10, p9
+
+    :goto_8
+    and-int/lit16 v1, v1, 0x200
+
+    if-eqz v1, :cond_9
+
+    iget-object v1, v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    goto :goto_9
+
+    :cond_9
+    move-object/from16 v1, p10
+
+    :goto_9
     move-object p1, v2
 
     move-object p2, v3
@@ -397,15 +487,19 @@
 
     move-object p4, v5
 
-    move-object p5, v6
+    move-object/from16 p5, v6
 
-    move-object p6, v7
+    move-object/from16 p6, v7
 
     move-object/from16 p7, v8
 
-    move-object/from16 p8, v1
+    move-object/from16 p8, v9
 
-    invoke-virtual/range {p0 .. p8}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->copy-5VnhPa8(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
+    move-object/from16 p9, v10
+
+    move-object/from16 p10, v1
+
+    invoke-virtual/range {p0 .. p10}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->copy-F4NSsMc(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
 
     move-result-object v0
 
@@ -515,182 +609,250 @@
     .line 50
     .line 51
     .line 52
-    const/4 v0, 0x5
+    sget-object v0, Lcom/discord/chat/bridge/structurabletext/StructurableTextSerializer;->INSTANCE:Lcom/discord/chat/bridge/structurabletext/StructurableTextSerializer;
 
     .line 53
-    iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
-
     .line 54
-    .line 55
-    invoke-interface {p1, p2, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+    iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
+    .line 55
     .line 56
+    const/4 v4, 0x5
+
     .line 57
+    invoke-interface {p1, p2, v4, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 58
+    .line 59
+    .line 60
     const/4 v0, 0x6
 
-    .line 59
+    .line 61
     invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
-    .line 60
-    .line 61
     .line 62
+    .line 63
+    .line 64
     move-result v3
 
-    .line 63
+    .line 65
     if-eqz v3, :cond_0
 
-    .line 64
-    .line 65
+    .line 66
+    .line 67
     :goto_0
     move v3, v2
 
-    .line 66
+    .line 68
     goto :goto_1
 
-    .line 67
+    .line 69
     :cond_0
     iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
 
-    .line 68
-    .line 69
-    if-eqz v3, :cond_1
-
     .line 70
     .line 71
-    goto :goto_0
+    if-eqz v3, :cond_1
 
     .line 72
+    .line 73
+    goto :goto_0
+
+    .line 74
     :cond_1
     move v3, v1
 
-    .line 73
+    .line 75
     :goto_1
     if-eqz v3, :cond_2
 
-    .line 74
-    .line 75
-    sget-object v3, Lzi/a2;->a:Lzi/a2;
-
     .line 76
     .line 77
-    iget-object v4, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
+    sget-object v3, Lzi/a2;->a:Lzi/a2;
 
     .line 78
     .line 79
-    invoke-interface {p1, p2, v0, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    iget-object v4, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
 
     .line 80
     .line 81
+    invoke-interface {p1, p2, v0, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 82
+    .line 83
+    .line 84
     :cond_2
     const/4 v0, 0x7
 
-    .line 83
+    .line 85
     invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
-    .line 84
-    .line 85
     .line 86
+    .line 87
+    .line 88
     move-result v3
 
-    .line 87
+    .line 89
     if-eqz v3, :cond_3
 
-    .line 88
-    .line 89
-    :goto_2
-    move v1, v2
-
     .line 90
+    .line 91
+    :goto_2
+    move v3, v2
+
+    .line 92
     goto :goto_3
 
-    .line 91
+    .line 93
     :cond_3
     iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
-    .line 92
-    .line 93
-    if-eqz v3, :cond_4
-
     .line 94
     .line 95
-    goto :goto_2
+    if-eqz v3, :cond_4
 
     .line 96
-    :cond_4
-    :goto_3
-    if-eqz v1, :cond_5
-
     .line 97
+    goto :goto_2
+
     .line 98
-    sget-object v1, Lzi/a2;->a:Lzi/a2;
+    :cond_4
+    move v3, v1
 
     .line 99
+    :goto_3
+    if-eqz v3, :cond_5
+
     .line 100
-    iget-object p0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
-
     .line 101
-    .line 102
-    invoke-interface {p1, p2, v0, v1, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    sget-object v3, Lzi/a2;->a:Lzi/a2;
 
+    .line 102
     .line 103
+    iget-object v4, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
+
     .line 104
     .line 105
-    :cond_5
-    return-void
+    invoke-interface {p1, p2, v0, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 106
     .line 107
     .line 108
+    :cond_5
+    const/16 v0, 0x8
+
     .line 109
     .line 110
+    invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+
     .line 111
     .line 112
     .line 113
+    move-result v3
+
     .line 114
+    if-eqz v3, :cond_6
+
     .line 115
     .line 116
+    :goto_4
+    move v3, v2
+
     .line 117
+    goto :goto_5
+
     .line 118
+    :cond_6
+    iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
     .line 119
     .line 120
+    if-eqz v3, :cond_7
+
     .line 121
     .line 122
+    goto :goto_4
+
     .line 123
+    :cond_7
+    move v3, v1
+
     .line 124
+    :goto_5
+    if-eqz v3, :cond_8
+
     .line 125
     .line 126
+    sget-object v3, Lzi/a2;->a:Lzi/a2;
+
     .line 127
     .line 128
+    iget-object v4, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
     .line 129
     .line 130
+    invoke-interface {p1, p2, v0, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 131
     .line 132
     .line 133
+    :cond_8
+    const/16 v0, 0x9
+
     .line 134
     .line 135
+    invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+
     .line 136
     .line 137
     .line 138
+    move-result v3
+
     .line 139
+    if-eqz v3, :cond_9
+
     .line 140
     .line 141
+    :goto_6
+    move v1, v2
+
     .line 142
+    goto :goto_7
+
     .line 143
+    :cond_9
+    iget-object v3, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
     .line 144
     .line 145
+    if-eqz v3, :cond_a
+
     .line 146
     .line 147
+    goto :goto_6
+
     .line 148
+    :cond_a
+    :goto_7
+    if-eqz v1, :cond_b
+
     .line 149
     .line 150
+    sget-object v1, Lzi/a2;->a:Lzi/a2;
+
     .line 151
     .line 152
+    iget-object p0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
     .line 153
     .line 154
+    invoke-interface {p1, p2, v0, v1, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 155
     .line 156
     .line 157
+    :cond_b
+    return-void
     .line 158
     .line 159
     .line 160
@@ -1035,6 +1197,14 @@
     return-object v0
 .end method
 
+.method public final component10()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public final component2()Ljava/lang/String;
     .locals 1
 
@@ -1067,10 +1237,10 @@
     return-object v0
 .end method
 
-.method public final component6()Ljava/lang/String;
+.method public final component6()Lcom/discord/chat/bridge/structurabletext/StructurableText;
     .locals 1
 
-    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     return-object v0
 .end method
@@ -1091,8 +1261,16 @@
     return-object v0
 .end method
 
-.method public final copy-5VnhPa8(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
-    .locals 11
+.method public final component9()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final copy-F4NSsMc(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
+    .locals 13
 
     const-string v0, "parentChannelId"
 
@@ -1108,15 +1286,15 @@
 
     const-string v0, "messageId"
 
-    move-object v4, p3
+    move-object/from16 v4, p3
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "title"
 
-    move-object v5, p4
+    move-object/from16 v5, p4
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "ctaText"
 
@@ -1132,7 +1310,7 @@
 
     new-instance v0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;
 
-    const/4 v10, 0x0
+    const/4 v12, 0x0
 
     move-object v1, v0
 
@@ -1140,7 +1318,11 @@
 
     move-object/from16 v9, p8
 
-    invoke-direct/range {v1 .. v10}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-object/from16 v10, p9
+
+    move-object/from16 v11, p10
+
+    invoke-direct/range {v1 .. v12}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method
@@ -1231,9 +1413,9 @@
     return v2
 
     :cond_6
-    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
-    iget-object v3, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v3, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1259,24 +1441,66 @@
     :cond_8
     iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
+    iget-object v3, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_9
+
+    return v2
+
+    :cond_9
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
 
     invoke-static {v1, p1}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-nez p1, :cond_9
+    if-nez p1, :cond_b
 
     return v2
 
-    :cond_9
+    :cond_b
     return v0
+.end method
+
+.method public final getBlurredCoverImage()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    return-object v0
 .end method
 
 .method public final getCoverImage()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getCoverImageOverlayText()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1289,10 +1513,10 @@
     return-object v0
 .end method
 
-.method public final getFooter()Ljava/lang/String;
+.method public final getFooter()Lcom/discord/chat/bridge/structurabletext/StructurableText;
     .locals 1
 
-    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     return-object v0
 .end method
@@ -1388,9 +1612,9 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
 
@@ -1422,21 +1646,57 @@
 
     if-nez v1, :cond_1
 
+    move v1, v2
+
     goto :goto_1
 
     :cond_1
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    move-result v2
+    move-result v1
 
     :goto_1
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
+
+    if-nez v1, :cond_2
+
+    move v1, v2
+
+    goto :goto_2
+
+    :cond_2
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    :goto_2
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
+
+    if-nez v1, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v2
+
+    :goto_3
     add-int/2addr v0, v2
 
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 10
+    .locals 12
 
     iget-object v0, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->parentChannelId:Ljava/lang/String;
 
@@ -1452,69 +1712,85 @@
 
     iget-object v4, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->ctaText:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Ljava/lang/String;
+    iget-object v5, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->footer:Lcom/discord/chat/bridge/structurabletext/StructurableText;
 
     iget-object v6, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->subtitle:Ljava/lang/String;
 
     iget-object v7, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImage:Ljava/lang/String;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    iget-object v8, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->blurredCoverImage:Ljava/lang/String;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v9, p0, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->coverImageOverlayText:Ljava/lang/String;
 
-    const-string v9, "PostPreviewEmbed(parentChannelId="
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v11, "PostPreviewEmbed(parentChannelId="
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", threadId="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", messageId="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", title="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", ctaText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", footer="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v0, ", subtitle="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", coverImage="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", blurredCoverImage="
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", coverImageOverlayText="
+
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ")"
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

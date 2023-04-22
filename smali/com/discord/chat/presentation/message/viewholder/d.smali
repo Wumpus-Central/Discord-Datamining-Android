@@ -40,7 +40,7 @@
 
     iget-wide v2, p0, Lcom/discord/chat/presentation/message/viewholder/d;->m:J
 
-    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageActionBarViewHolder;->a(Lkotlin/jvm/functions/Function2;Ljava/lang/String;JLandroid/view/View;)V
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;->b(Lkotlin/jvm/functions/Function2;Ljava/lang/String;JLandroid/view/View;)V
 
     return-void
 .end method

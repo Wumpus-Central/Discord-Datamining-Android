@@ -34,7 +34,7 @@
 
     iget-object v1, p0, Lcom/discord/chat/presentation/message/viewholder/n;->l:Lcom/discord/chat/bridge/sticker/Sticker;
 
-    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/StickerLottieViewHolder;->b(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;Landroid/view/View;)V
+    invoke-static {v0, v1, p1}, Lcom/discord/chat/presentation/message/viewholder/StickerGifViewHolder;->b(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;Landroid/view/View;)V
 
     return-void
 .end method

@@ -839,7 +839,7 @@
 
 # virtual methods
 .method public final bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function3;)V
-    .locals 7
+    .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -916,44 +916,56 @@
     .line 30
     .line 31
     .line 32
-    move-result-object v5
+    move-result-object v6
 
     .line 33
-    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getFooter()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getBlurredCoverImage()Ljava/lang/String;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v4
+    move-result-object v7
 
     .line 37
-    new-instance v6, Lcom/discord/chat/presentation/message/viewholder/i;
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getMessageId-3Eiw7ao()Ljava/lang/String;
 
     .line 38
     .line 39
-    invoke-direct {v6, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/i;-><init>(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;)V
-
     .line 40
-    .line 41
-    .line 42
-    invoke-virtual/range {v0 .. v6}, Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;->setPostPreviewEmbed(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V
+    move-result-object v5
 
+    .line 41
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getFooter()Lcom/discord/chat/bridge/structurabletext/StructurableText;
+
+    .line 42
     .line 43
     .line 44
+    move-result-object v4
+
     .line 45
-    return-void
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getCoverImageOverlayText()Ljava/lang/String;
+
     .line 46
     .line 47
     .line 48
+    move-result-object v8
+
     .line 49
+    new-instance v9, Lcom/discord/chat/presentation/message/viewholder/k;
+
     .line 50
     .line 51
+    invoke-direct {v9, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/k;-><init>(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;)V
+
     .line 52
     .line 53
     .line 54
+    invoke-virtual/range {v0 .. v9}, Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;->setPostPreviewEmbed-DzehxI4(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V
+
     .line 55
     .line 56
     .line 57
+    return-void
     .line 58
     .line 59
     .line 60

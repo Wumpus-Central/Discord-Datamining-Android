@@ -4963,7 +4963,7 @@
 
     const/16 v1, 0xe
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 22
     :cond_15
@@ -5037,56 +5037,66 @@
 
     .line 29
     :cond_1c
-    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;
+    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/AutoModerationNotificationEmbedAccessory;
 
     if-eqz v0, :cond_1d
 
-    const/16 v1, 0x17
+    const/16 v1, 0x21
 
     goto :goto_0
 
     .line 30
     :cond_1d
-    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/MediaMosaicAttachmentMessageAccessory;
+    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;
 
     if-eqz v0, :cond_1e
 
-    const/16 v1, 0x1a
+    const/16 v1, 0x17
 
     goto :goto_0
 
     .line 31
     :cond_1e
-    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/InviteToSpeakAccessory;
+    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/MediaMosaicAttachmentMessageAccessory;
 
     if-eqz v0, :cond_1f
 
-    const/16 v1, 0x1c
+    const/16 v1, 0x1a
 
     goto :goto_0
 
     .line 32
     :cond_1f
-    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;
+    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/InviteToSpeakAccessory;
 
     if-eqz v0, :cond_20
 
-    const/16 v1, 0x1d
+    const/16 v1, 0x1c
 
     goto :goto_0
 
     .line 33
     :cond_20
+    instance-of v0, p1, Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;
+
+    if-eqz v0, :cond_21
+
+    const/16 v1, 0x1d
+
+    goto :goto_0
+
+    .line 34
+    :cond_21
     instance-of p1, p1, Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;
 
-    if-eqz p1, :cond_21
+    if-eqz p1, :cond_22
 
     const/16 v1, 0x20
 
     :goto_0
     return v1
 
-    :cond_21
+    :cond_22
     new-instance p1, Llf/q;
 
     invoke-direct {p1}, Llf/q;-><init>()V
@@ -5871,13 +5881,15 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/ActivityLauncherViewHolder;
 
+    .line 86
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/ActivityLauncherMessageAccessory;
 
+    .line 87
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/ActivityLauncherViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/ActivityLauncherMessageAccessory;)V
 
     goto/16 :goto_7
 
-    .line 86
+    .line 88
     :cond_1a
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;
 
@@ -5885,13 +5897,15 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;
 
+    .line 89
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;
 
+    .line 90
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;)V
 
     goto/16 :goto_7
 
-    .line 87
+    .line 91
     :cond_1b
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/GuildInviteDisabledMessageAccessory;
 
@@ -5899,13 +5913,15 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/GuildInviteDisabledViewHolder;
 
+    .line 92
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/GuildInviteDisabledMessageAccessory;
 
+    .line 93
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/GuildInviteDisabledViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/GuildInviteDisabledMessageAccessory;)V
 
     goto/16 :goto_7
 
-    .line 88
+    .line 94
     :cond_1c
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;
 
@@ -5919,7 +5935,7 @@
 
     goto/16 :goto_7
 
-    .line 89
+    .line 95
     :cond_1d
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;
 
@@ -5927,10 +5943,10 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/ThreadEmbedViewHolder;
 
-    .line 90
+    .line 96
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;
 
-    .line 91
+    .line 97
     new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$29;
 
     iget-object v4, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
@@ -5944,12 +5960,12 @@
     :cond_1e
     invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$29;-><init>(Ljava/lang/Object;)V
 
-    .line 92
+    .line 98
     invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/ThreadEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;Lkotlin/jvm/functions/Function1;)V
 
     goto/16 :goto_7
 
-    .line 93
+    .line 99
     :cond_1f
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/ForumPostActionBar;
 
@@ -5959,17 +5975,17 @@
 
     check-cast v6, Lcom/discord/chat/presentation/message/viewholder/ForumPostActionBarViewHolder;
 
-    .line 94
+    .line 100
     move-object v7, v2
 
     check-cast v7, Lcom/discord/chat/presentation/message/messagepart/ForumPostActionBar;
 
-    .line 95
+    .line 101
     invoke-virtual {v7}, Lcom/discord/chat/presentation/message/messagepart/ForumPostActionBar;->getReactionsTheme()Lcom/discord/chat/bridge/reaction/ReactionsTheme;
 
     move-result-object v8
 
-    .line 96
+    .line 102
     new-instance v9, Lcom/discord/chat/presentation/message/e;
 
     invoke-direct {v9, v0}, Lcom/discord/chat/presentation/message/e;-><init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)V
@@ -5994,17 +6010,17 @@
 
     invoke-direct {v14, v0}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$35;-><init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)V
 
-    .line 97
+    .line 103
     invoke-virtual {v7}, Lcom/discord/chat/presentation/message/messagepart/ForumPostActionBar;->getUseSortedReactions()Z
 
     move-result v15
 
-    .line 98
+    .line 104
     invoke-virtual/range {v6 .. v15}, Lcom/discord/chat/presentation/message/viewholder/ForumPostActionBarViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/ForumPostActionBar;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Z)V
 
     goto/16 :goto_7
 
-    .line 99
+    .line 105
     :cond_20
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;
 
@@ -6014,15 +6030,15 @@
 
     check-cast v3, Lcom/discord/chat/presentation/message/viewholder/FileAttachmentViewHolder;
 
-    .line 100
+    .line 106
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;
 
-    .line 101
+    .line 107
     new-instance v4, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$36;
 
     invoke-direct {v4, v0}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$36;-><init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)V
 
-    .line 102
+    .line 108
     invoke-virtual {v2}, Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;->getSpoilerAttributes()Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;
 
     move-result-object v5
@@ -6042,18 +6058,18 @@
     :cond_21
     const/4 v1, 0x0
 
-    .line 103
+    .line 109
     :goto_5
     invoke-virtual {v2}, Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;->getAttachmentsOpacity()Ljava/lang/Float;
 
     move-result-object v5
 
-    .line 104
+    .line 110
     invoke-virtual {v3, v2, v4, v1, v5}, Lcom/discord/chat/presentation/message/viewholder/FileAttachmentViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;Lkotlin/jvm/functions/Function2;Lcom/discord/chat/bridge/spoiler/SpoilerConfig;Ljava/lang/Float;)V
 
     goto/16 :goto_7
 
-    .line 105
+    .line 111
     :cond_22
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/MessageComponentsAccessory;
 
@@ -6061,18 +6077,18 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/MessageComponentsViewHolder;
 
-    .line 106
+    .line 112
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/MessageComponentsAccessory;
 
-    .line 107
+    .line 113
     iget-object v3, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->botComponentProvider:Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;
 
-    .line 108
+    .line 114
     invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/MessageComponentsViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/MessageComponentsAccessory;Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;)V
 
     goto/16 :goto_7
 
-    .line 109
+    .line 115
     :cond_23
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageEmbedAccessory;
 
@@ -6080,15 +6096,15 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageEmbedViewHolder;
 
-    .line 110
+    .line 116
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageEmbedAccessory;
 
-    .line 111
+    .line 117
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageEmbedAccessory;)V
 
     goto/16 :goto_7
 
-    .line 112
+    .line 118
     :cond_24
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageActionBarAccessory;
 
@@ -6096,10 +6112,10 @@
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageActionBarViewHolder;
 
-    .line 113
+    .line 119
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageActionBarAccessory;
 
-    .line 114
+    .line 120
     new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$38;
 
     iget-object v4, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
@@ -6113,7 +6129,7 @@
     :cond_25
     invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$38;-><init>(Ljava/lang/Object;)V
 
-    .line 115
+    .line 121
     new-instance v4, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$39;
 
     iget-object v6, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
@@ -6127,133 +6143,177 @@
     :cond_26
     invoke-direct {v4, v6}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$39;-><init>(Ljava/lang/Object;)V
 
-    .line 116
+    .line 122
     invoke-virtual {v1, v2, v3, v4}, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageActionBarViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/FlaggedMessageActionBarAccessory;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
 
     goto/16 :goto_7
 
-    .line 117
-    :cond_27
-    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;
-
-    if-eqz v3, :cond_28
-
-    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;
-
-    .line 118
-    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;
-
-    .line 119
-    invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;)V
-
-    goto/16 :goto_7
-
-    .line 120
-    :cond_28
-    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;
-
-    if-eqz v3, :cond_29
-
-    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;
-
-    .line 121
-    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;
-
-    .line 122
-    invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;)V
-
-    goto/16 :goto_7
-
     .line 123
-    :cond_29
-    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/ActivityInviteEmbedMessageAccessory;
+    :cond_27
+    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/AutoModerationNotificationEmbedAccessory;
 
-    if-eqz v3, :cond_2b
+    if-eqz v3, :cond_2a
 
-    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/ActivityInviteEmbedViewHolder;
+    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;
 
     .line 124
-    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/ActivityInviteEmbedMessageAccessory;
+    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/AutoModerationNotificationEmbedAccessory;
 
     .line 125
     new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$40;
 
     iget-object v4, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    if-nez v4, :cond_2a
+    if-nez v4, :cond_28
 
     invoke-static {v5}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
-    :cond_2a
+    :cond_28
     invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$40;-><init>(Ljava/lang/Object;)V
 
     .line 126
+    new-instance v4, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;
+
+    iget-object v6, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
+
+    if-nez v6, :cond_29
+
+    invoke-static {v5}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+
+    const/4 v6, 0x0
+
+    :cond_29
+    invoke-direct {v4, v6}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;-><init>(Ljava/lang/Object;)V
+
+    .line 127
+    invoke-virtual {v1, v2, v3, v4}, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/AutoModerationNotificationEmbedAccessory;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+
+    goto/16 :goto_7
+
+    .line 128
+    :cond_2a
+    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;
+
+    if-eqz v3, :cond_2b
+
+    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;
+
+    .line 129
+    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;
+
+    .line 130
+    invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/TimestampMessageAccessory;)V
+
+    goto/16 :goto_7
+
+    .line 131
+    :cond_2b
+    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;
+
+    if-eqz v3, :cond_2c
+
+    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;
+
+    .line 132
+    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;
+
+    .line 133
+    invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/WelcomeStickerAccessory;)V
+
+    goto/16 :goto_7
+
+    .line 134
+    :cond_2c
+    instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/ActivityInviteEmbedMessageAccessory;
+
+    if-eqz v3, :cond_2e
+
+    check-cast v1, Lcom/discord/chat/presentation/message/viewholder/ActivityInviteEmbedViewHolder;
+
+    .line 135
+    check-cast v2, Lcom/discord/chat/presentation/message/messagepart/ActivityInviteEmbedMessageAccessory;
+
+    .line 136
+    new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$42;
+
+    iget-object v4, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
+
+    if-nez v4, :cond_2d
+
+    invoke-static {v5}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
+
+    const/4 v4, 0x0
+
+    :cond_2d
+    invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$42;-><init>(Ljava/lang/Object;)V
+
+    .line 137
     invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/ActivityInviteEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/ActivityInviteEmbedMessageAccessory;Lkotlin/jvm/functions/Function1;)V
 
     goto/16 :goto_7
 
-    .line 127
-    :cond_2b
+    .line 138
+    :cond_2e
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;
 
-    if-eqz v3, :cond_2c
+    if-eqz v3, :cond_2f
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/EphemeralIndicationViewHolder;
 
-    .line 128
+    .line 139
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;
 
-    .line 129
+    .line 140
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/EphemeralIndicationViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/EphemeralIndicationMessageAccessory;)V
 
     goto/16 :goto_7
 
-    .line 130
-    :cond_2c
+    .line 141
+    :cond_2f
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/SurveyIndicationMessageAccessory;
 
-    if-eqz v3, :cond_2d
+    if-eqz v3, :cond_30
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/SurveyIndicationViewHolder;
 
-    .line 131
+    .line 142
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/SurveyIndicationMessageAccessory;
 
-    .line 132
+    .line 143
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/SurveyIndicationViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/SurveyIndicationMessageAccessory;)V
 
     goto :goto_7
 
-    .line 133
-    :cond_2d
+    .line 144
+    :cond_30
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/InteractionStatusMessageAccessory;
 
-    if-eqz v3, :cond_2e
+    if-eqz v3, :cond_31
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/InteractionStatusViewHolder;
 
-    .line 134
+    .line 145
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/InteractionStatusMessageAccessory;
 
-    .line 135
+    .line 146
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/InteractionStatusViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/InteractionStatusMessageAccessory;)V
 
     goto :goto_7
 
-    .line 136
-    :cond_2e
+    .line 147
+    :cond_31
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;
 
-    if-eqz v3, :cond_2f
+    if-eqz v3, :cond_32
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/RoleSubscriptionPurchaseViewHolder;
 
-    .line 137
+    .line 148
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;
 
-    .line 138
+    .line 149
     sget-object v3, Lcom/discord/chat/presentation/message/MessageAccessoriesView;->Companion:Lcom/discord/chat/presentation/message/MessageAccessoriesView$Companion;
 
     invoke-virtual {v2}, Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;->getConstrainedWidth()I
@@ -6264,42 +6324,42 @@
 
     move-result v3
 
-    .line 139
+    .line 150
     invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/RoleSubscriptionPurchaseViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/RoleSubscriptionPurchaseAccessory;I)V
 
     goto :goto_7
 
-    .line 140
-    :cond_2f
+    .line 151
+    :cond_32
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/InviteToSpeakAccessory;
 
-    if-eqz v3, :cond_30
+    if-eqz v3, :cond_33
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/InviteToSpeakViewHolder;
 
-    .line 141
+    .line 152
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/InviteToSpeakAccessory;
 
-    .line 142
+    .line 153
     invoke-virtual {v1, v2}, Lcom/discord/chat/presentation/message/viewholder/InviteToSpeakViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/InviteToSpeakAccessory;)V
 
     goto :goto_7
 
-    .line 143
-    :cond_30
+    .line 154
+    :cond_33
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;
 
-    if-eqz v3, :cond_32
+    if-eqz v3, :cond_35
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/VoiceMessageViewHolder;
 
-    .line 144
+    .line 155
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;
 
-    .line 145
+    .line 156
     iget-object v3, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    if-nez v3, :cond_31
+    if-nez v3, :cond_34
 
     invoke-static {v5}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
@@ -6307,58 +6367,58 @@
 
     goto :goto_6
 
-    :cond_31
+    :cond_34
     move-object v4, v3
 
-    .line 146
+    .line 157
     :goto_6
     invoke-virtual {v2}, Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;->getAttachmentsOpacity()Ljava/lang/Float;
 
     move-result-object v3
 
-    .line 147
+    .line 158
     invoke-virtual {v1, v2, v4, v3}, Lcom/discord/chat/presentation/message/viewholder/VoiceMessageViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/AudioAttachmentMessageAccessory;Lcom/discord/chat/presentation/events/ChatEventHandler;Ljava/lang/Float;)V
 
     goto :goto_7
 
-    .line 148
-    :cond_32
+    .line 159
+    :cond_35
     instance-of v3, v2, Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;
 
-    if-eqz v3, :cond_34
+    if-eqz v3, :cond_37
 
     check-cast v1, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;
 
-    .line 149
+    .line 160
     check-cast v2, Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;
 
-    .line 150
-    new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;
+    .line 161
+    new-instance v3, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$43;
 
     iget-object v4, v0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
-    if-nez v4, :cond_33
+    if-nez v4, :cond_36
 
     invoke-static {v5}, Lkotlin/jvm/internal/q;->y(Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
-    :cond_33
-    invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$41;-><init>(Ljava/lang/Object;)V
+    :cond_36
+    invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$43;-><init>(Ljava/lang/Object;)V
 
-    .line 151
+    .line 162
     invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function3;)V
 
     :goto_7
     sget-object v1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
-    .line 152
+    .line 163
     invoke-static {v1}, Lcom/discord/misc/utilities/kotlin/ForceExhaustiveKt;->forceExhaustive(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
-    .line 153
-    :cond_34
+    .line 164
+    :cond_37
     new-instance v1, Llf/q;
 
     invoke-direct {v1}, Llf/q;-><init>()V
@@ -6417,9 +6477,29 @@
 
     .line 3
     :pswitch_0
-    new-instance p2, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;
+    new-instance p2, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;
 
     .line 4
+    new-instance v1, Lcom/discord/chat/presentation/message/view/AutoModerationNotificationEmbedView;
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-static {p1, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v1, p1, v3, v0, v3}, Lcom/discord/chat/presentation/message/view/AutoModerationNotificationEmbedView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    invoke-direct {p2, v1}, Lcom/discord/chat/presentation/message/viewholder/AutoModerationNotificationEmbedViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/AutoModerationNotificationEmbedView;)V
+
+    goto/16 :goto_10
+
+    .line 6
+    :pswitch_1
+    new-instance p2, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;
+
+    .line 7
     new-instance v0, Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6440,15 +6520,16 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 5
+    .line 8
     invoke-direct {p2, v0}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;)V
 
     goto/16 :goto_10
 
-    .line 6
-    :pswitch_1
+    .line 9
+    :pswitch_2
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;
 
+    .line 10
     new-instance v0, Lcom/discord/chat/presentation/message/view/EmbeddedActivityInviteView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6469,6 +6550,7 @@
 
     invoke-direct/range {v4 .. v9}, Lcom/discord/chat/presentation/message/view/EmbeddedActivityInviteView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
+    .line 11
     iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     if-nez p1, :cond_0
@@ -6480,13 +6562,14 @@
     :cond_0
     move-object v3, p1
 
+    .line 12
     :goto_0
     invoke-direct {p2, v0, v3}, Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/EmbeddedActivityInviteView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V
 
     goto/16 :goto_10
 
-    .line 7
-    :pswitch_2
+    .line 13
+    :pswitch_3
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ActivityLauncherViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/ActivityLauncherView;
@@ -6525,11 +6608,11 @@
 
     goto/16 :goto_10
 
-    .line 8
-    :pswitch_3
+    .line 14
+    :pswitch_4
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/VoiceMessageViewHolder;
 
-    .line 9
+    .line 15
     new-instance v0, Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6550,16 +6633,16 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 10
+    .line 16
     invoke-direct {p2, v0}, Lcom/discord/chat/presentation/message/viewholder/VoiceMessageViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;)V
 
     goto/16 :goto_10
 
-    .line 11
-    :pswitch_4
+    .line 17
+    :pswitch_5
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/InviteToSpeakViewHolder;
 
-    .line 12
+    .line 18
     new-instance v4, Lcom/discord/chat/presentation/invitetospeak/InviteToSpeakView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6570,7 +6653,7 @@
 
     invoke-direct {v4, p1, v3, v0, v3}, Lcom/discord/chat/presentation/invitetospeak/InviteToSpeakView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 13
+    .line 19
     new-instance p1, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$3;
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
@@ -6587,13 +6670,13 @@
     :goto_2
     invoke-direct {p1, v3}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$3;-><init>(Ljava/lang/Object;)V
 
-    .line 14
+    .line 20
     invoke-direct {p2, v4, p1}, Lcom/discord/chat/presentation/message/viewholder/InviteToSpeakViewHolder;-><init>(Lcom/discord/chat/presentation/invitetospeak/InviteToSpeakView;Lkotlin/jvm/functions/Function1;)V
 
     goto/16 :goto_10
 
-    .line 15
-    :pswitch_5
+    .line 21
+    :pswitch_6
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/StickerGifViewHolder;
 
     new-instance v0, Lcom/discord/sticker/StickerView;
@@ -6620,8 +6703,8 @@
 
     goto/16 :goto_10
 
-    .line 16
-    :pswitch_6
+    .line 22
+    :pswitch_7
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/MediaMosaicAttachmentViewHolder;
 
     new-instance v4, Lcom/discord/chat/presentation/message/view/MediaMosaicView;
@@ -6650,8 +6733,8 @@
 
     goto/16 :goto_10
 
-    .line 17
-    :pswitch_7
+    .line 23
+    :pswitch_8
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/GuildInviteDisabledViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/GuildInviteDisabledView;
@@ -6690,11 +6773,11 @@
 
     goto/16 :goto_10
 
-    .line 18
-    :pswitch_8
+    .line 24
+    :pswitch_9
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/SurveyIndicationViewHolder;
 
-    .line 19
+    .line 25
     new-instance v0, Lcom/discord/chat/presentation/message/view/SurveyIndicationView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6715,7 +6798,7 @@
 
     invoke-direct/range {v4 .. v9}, Lcom/discord/chat/presentation/message/view/SurveyIndicationView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 20
+    .line 26
     iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     if-nez p1, :cond_5
@@ -6727,17 +6810,17 @@
     :cond_5
     move-object v3, p1
 
-    .line 21
+    .line 27
     :goto_5
     invoke-direct {p2, v0, v3}, Lcom/discord/chat/presentation/message/viewholder/SurveyIndicationViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/SurveyIndicationView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V
 
     goto/16 :goto_10
 
-    .line 22
-    :pswitch_9
+    .line 28
+    :pswitch_a
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/RoleSubscriptionPurchaseViewHolder;
 
-    .line 23
+    .line 29
     new-instance v0, Lcom/discord/chat/presentation/message/view/RoleSubscriptionPurchaseView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6758,16 +6841,16 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/discord/chat/presentation/message/view/RoleSubscriptionPurchaseView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 24
+    .line 30
     invoke-direct {p2, v0}, Lcom/discord/chat/presentation/message/viewholder/RoleSubscriptionPurchaseViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/RoleSubscriptionPurchaseView;)V
 
     goto/16 :goto_10
 
-    .line 25
-    :pswitch_a
+    .line 31
+    :pswitch_b
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageActionBarViewHolder;
 
-    .line 26
+    .line 32
     new-instance v0, Lcom/discord/chat/presentation/message/view/FlaggedMessageActionBarView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6788,16 +6871,16 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/discord/chat/presentation/message/view/FlaggedMessageActionBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 27
+    .line 33
     invoke-direct {p2, v0}, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageActionBarViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/FlaggedMessageActionBarView;)V
 
     goto/16 :goto_10
 
-    .line 28
-    :pswitch_b
+    .line 34
+    :pswitch_c
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageEmbedViewHolder;
 
-    .line 29
+    .line 35
     new-instance v4, Lcom/discord/chat/presentation/message/view/FlaggedMessageEmbedView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6808,7 +6891,7 @@
 
     invoke-direct {v4, p1, v3, v0, v3}, Lcom/discord/chat/presentation/message/view/FlaggedMessageEmbedView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 30
+    .line 36
     iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     if-nez p1, :cond_6
@@ -6820,17 +6903,17 @@
     :cond_6
     move-object v3, p1
 
-    .line 31
+    .line 37
     :goto_6
     invoke-direct {p2, v4, v3}, Lcom/discord/chat/presentation/message/viewholder/FlaggedMessageEmbedViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/FlaggedMessageEmbedView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V
 
     goto/16 :goto_10
 
-    .line 32
-    :pswitch_c
+    .line 38
+    :pswitch_d
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ForumPostActionBarViewHolder;
 
-    .line 33
+    .line 39
     new-instance v0, Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6851,16 +6934,16 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 34
+    .line 40
     invoke-direct {p2, v0}, Lcom/discord/chat/presentation/message/viewholder/ForumPostActionBarViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;)V
 
     goto/16 :goto_10
 
-    .line 35
-    :pswitch_d
+    .line 41
+    :pswitch_e
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/InteractionStatusViewHolder;
 
-    .line 36
+    .line 42
     new-instance v1, Lcom/discord/chat/presentation/message/view/InteractionStatusView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6871,16 +6954,16 @@
 
     invoke-direct {v1, p1, v3, v0, v3}, Lcom/discord/chat/presentation/message/view/InteractionStatusView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 37
+    .line 43
     invoke-direct {p2, v1}, Lcom/discord/chat/presentation/message/viewholder/InteractionStatusViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/InteractionStatusView;)V
 
     goto/16 :goto_10
 
-    .line 38
-    :pswitch_e
+    .line 44
+    :pswitch_f
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/EphemeralIndicationViewHolder;
 
-    .line 39
+    .line 45
     new-instance v0, Lcom/discord/chat/presentation/message/view/EphemeralIndicationView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6901,7 +6984,7 @@
 
     invoke-direct/range {v4 .. v9}, Lcom/discord/chat/presentation/message/view/EphemeralIndicationView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 40
+    .line 46
     iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     if-nez p1, :cond_7
@@ -6913,14 +6996,14 @@
     :cond_7
     move-object v3, p1
 
-    .line 41
+    .line 47
     :goto_7
     invoke-direct {p2, v0, v3}, Lcom/discord/chat/presentation/message/viewholder/EphemeralIndicationViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/EphemeralIndicationView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V
 
     goto/16 :goto_10
 
-    .line 42
-    :pswitch_f
+    .line 48
+    :pswitch_10
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ActivityInviteEmbedViewHolder;
 
     new-instance v0, Lcom/discord/activity_invites/ActivityInviteEmbedView;
@@ -6947,8 +7030,8 @@
 
     goto/16 :goto_10
 
-    .line 43
-    :pswitch_10
+    .line 49
+    :pswitch_11
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/GiftViewHolder;
 
     new-instance v1, Lcom/discord/chat/presentation/message/view/GiftView;
@@ -6965,11 +7048,11 @@
 
     goto/16 :goto_10
 
-    .line 44
-    :pswitch_11
+    .line 50
+    :pswitch_12
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;
 
-    .line 45
+    .line 51
     new-instance v0, Lcom/discord/chat/presentation/message/view/GuildEventInviteView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -6990,7 +7073,7 @@
 
     invoke-direct/range {v4 .. v9}, Lcom/discord/chat/presentation/message/view/GuildEventInviteView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 46
+    .line 52
     iget-object p1, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
 
     if-nez p1, :cond_8
@@ -7002,22 +7085,22 @@
     :cond_8
     move-object v3, p1
 
-    .line 47
+    .line 53
     :goto_8
     new-instance p1, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$1;
 
     invoke-direct {p1, p0}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$1;-><init>(Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;)V
 
-    .line 48
+    .line 54
     invoke-direct {p2, v0, v3, p1}, Lcom/discord/chat/presentation/message/viewholder/GuildEventInviteViewHolder;-><init>(Lcom/discord/chat/presentation/message/view/GuildEventInviteView;Lcom/discord/chat/presentation/events/ChatEventHandler;Lkotlin/jvm/functions/Function1;)V
 
     goto/16 :goto_10
 
-    .line 49
-    :pswitch_12
+    .line 55
+    :pswitch_13
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;
 
-    .line 50
+    .line 56
     new-instance v4, Lcom/discord/chat/presentation/stickers/WelcomeStickerView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -7028,7 +7111,7 @@
 
     invoke-direct {v4, p1, v3, v0, v3}, Lcom/discord/chat/presentation/stickers/WelcomeStickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 51
+    .line 57
     new-instance p1, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$2;
 
     iget-object v0, p0, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;->eventHandler:Lcom/discord/chat/presentation/events/ChatEventHandler;
@@ -7045,16 +7128,16 @@
     :goto_9
     invoke-direct {p1, v3}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onCreateViewHolder$2;-><init>(Ljava/lang/Object;)V
 
-    .line 52
+    .line 58
     invoke-direct {p2, v4, p1}, Lcom/discord/chat/presentation/message/viewholder/WelcomeStickerViewHolder;-><init>(Lcom/discord/chat/presentation/stickers/WelcomeStickerView;Lkotlin/jvm/functions/Function2;)V
 
     goto/16 :goto_10
 
-    .line 53
-    :pswitch_13
+    .line 59
+    :pswitch_14
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;
 
-    .line 54
+    .line 60
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -7065,12 +7148,12 @@
 
     const/4 v1, 0x0
 
-    .line 55
+    .line 61
     invoke-static {v0, p1, v1}, Lcom/discord/chat/databinding/TimestampViewBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/discord/chat/databinding/TimestampViewBinding;
 
     move-result-object p1
 
-    .line 56
+    .line 62
     invoke-virtual {p1}, Lcom/discord/chat/databinding/TimestampViewBinding;->getRoot()Landroid/widget/TextView;
 
     move-result-object p1
@@ -7079,13 +7162,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 57
+    .line 63
     invoke-direct {p2, p1}, Lcom/discord/chat/presentation/message/viewholder/TimestampViewHolder;-><init>(Landroid/widget/TextView;)V
 
     goto/16 :goto_10
 
-    .line 58
-    :pswitch_14
+    .line 64
+    :pswitch_15
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/MessageComponentsViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/botuikit/MessageComponentsView;
@@ -7124,8 +7207,8 @@
 
     goto/16 :goto_10
 
-    .line 59
-    :pswitch_15
+    .line 65
+    :pswitch_16
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/FileAttachmentViewHolder;
 
     new-instance v4, Lcom/discord/chat/presentation/message/view/FileAttachmentView;
@@ -7154,8 +7237,8 @@
 
     goto/16 :goto_10
 
-    .line 60
-    :pswitch_16
+    .line 66
+    :pswitch_17
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/VideoAttachmentViewHolder;
 
     new-instance v4, Lcom/discord/chat/presentation/message/view/VideoAttachmentView;
@@ -7184,8 +7267,8 @@
 
     goto/16 :goto_10
 
-    .line 61
-    :pswitch_17
+    .line 67
+    :pswitch_18
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ThreadEmbedViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/ThreadEmbedView;
@@ -7212,8 +7295,8 @@
 
     goto/16 :goto_10
 
-    .line 62
-    :pswitch_18
+    .line 68
+    :pswitch_19
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/StickerLottieViewHolder;
 
     new-instance v0, Lcom/discord/sticker/StickerView;
@@ -7240,8 +7323,8 @@
 
     goto/16 :goto_10
 
-    .line 63
-    :pswitch_19
+    .line 69
+    :pswitch_1a
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/StickerApngViewHolder;
 
     new-instance v0, Lcom/discord/sticker/StickerView;
@@ -7268,8 +7351,8 @@
 
     goto/16 :goto_10
 
-    .line 64
-    :pswitch_1a
+    .line 70
+    :pswitch_1b
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/StickerPngViewHolder;
 
     new-instance v0, Lcom/discord/sticker/StickerView;
@@ -7296,8 +7379,8 @@
 
     goto/16 :goto_10
 
-    .line 65
-    :pswitch_1b
+    .line 71
+    :pswitch_1c
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/GuildInviteViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/GuildInviteView;
@@ -7336,8 +7419,8 @@
 
     goto/16 :goto_10
 
-    .line 66
-    :pswitch_1c
+    .line 72
+    :pswitch_1d
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ReactionsViewHolder;
 
     new-instance v1, Lcom/discord/reactions/ReactionsView;
@@ -7354,8 +7437,8 @@
 
     goto :goto_10
 
-    .line 67
-    :pswitch_1d
+    .line 73
+    :pswitch_1e
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/UploadProgressViewHolder;
 
     new-instance v1, Lcom/discord/chat/presentation/uploadprogress/UploadProgressView;
@@ -7372,8 +7455,8 @@
 
     goto :goto_10
 
-    .line 68
-    :pswitch_1e
+    .line 74
+    :pswitch_1f
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/ImageAttachmentViewHolder;
 
     new-instance v4, Lcom/discord/chat/presentation/message/view/ImageAttachmentView;
@@ -7402,8 +7485,8 @@
 
     goto :goto_10
 
-    .line 69
-    :pswitch_1f
+    .line 75
+    :pswitch_20
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/EmbedViewHolder;
 
     new-instance v4, Lcom/discord/chat/presentation/message/view/EmbedView;
@@ -7432,8 +7515,8 @@
 
     goto :goto_10
 
-    .line 70
-    :pswitch_20
+    .line 76
+    :pswitch_21
     new-instance p2, Lcom/discord/chat/presentation/message/viewholder/MessageContentViewHolder;
 
     new-instance v0, Lcom/discord/chat/presentation/message/view/MessageContentView;
@@ -7461,8 +7544,11 @@
     :goto_10
     return-object p2
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_21
         :pswitch_20
         :pswitch_1f
         :pswitch_1e

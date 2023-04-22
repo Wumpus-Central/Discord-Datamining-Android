@@ -1452,11 +1452,11 @@
 
     .line 45
     .line 46
-    new-instance p5, Lcom/discord/chat/presentation/message/viewholder/j;
+    new-instance p5, Lcom/discord/chat/presentation/message/viewholder/l;
 
     .line 47
     .line 48
-    invoke-direct {p5, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/j;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;)V
+    invoke-direct {p5, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/l;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;)V
 
     .line 49
     .line 50
@@ -1473,11 +1473,11 @@
 
     .line 56
     .line 57
-    new-instance p5, Lcom/discord/chat/presentation/message/viewholder/k;
+    new-instance p5, Lcom/discord/chat/presentation/message/viewholder/m;
 
     .line 58
     .line 59
-    invoke-direct {p5, p3, p1}, Lcom/discord/chat/presentation/message/viewholder/k;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;)V
+    invoke-direct {p5, p3, p1}, Lcom/discord/chat/presentation/message/viewholder/m;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/sticker/Sticker;)V
 
     .line 60
     .line 61

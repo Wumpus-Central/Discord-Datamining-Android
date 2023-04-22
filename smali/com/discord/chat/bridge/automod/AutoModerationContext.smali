@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0016\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 22\u00020\u0001:\u000212Bi\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u00a2\u0006\u0002\u0010\u0010BQ\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0002\u0010\u0011J\t\u0010\u001c\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\t\u0010#\u001a\u00020\rH\u00c6\u0003J_\u0010$\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000c\u001a\u00020\rH\u00c6\u0001J\u0013\u0010%\u001a\u00020&2\u0008\u0010\'\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010(\u001a\u00020\u0003H\u00d6\u0001J\t\u0010)\u001a\u00020\u0005H\u00d6\u0001J!\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u00002\u0006\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200H\u00c7\u0001R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0013R\u0011\u0010\u000b\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0013R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0013R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0013R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0013R\u0011\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001aR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0013\u00a8\u00063"
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0019\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0087\u0008\u0018\u0000 72\u00020\u0001:\u000267Bs\u0008\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u00a2\u0006\u0002\u0010\u0012B]\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u00a2\u0006\u0002\u0010\u0013J\t\u0010 \u001a\u00020\u0005H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\u000b\u0010$\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010%\u001a\u00020\u0005H\u00c6\u0003J\t\u0010&\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\'\u001a\u00020\rH\u00c6\u0003J\u000b\u0010(\u001a\u0004\u0018\u00010\u000fH\u00c6\u0003Jk\u0010)\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000c\u001a\u00020\r2\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u00c6\u0001J\u0013\u0010*\u001a\u00020+2\u0008\u0010,\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010-\u001a\u00020\u0003H\u00d6\u0001J\t\u0010.\u001a\u00020\u0005H\u00d6\u0001J!\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\u00002\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u000205H\u00c7\u0001R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\n\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0015R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0015R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0015R\u0011\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0015\u00a8\u00068"
     }
     d2 = {
         "Lcom/discord/chat/bridge/automod/AutoModerationContext;",
@@ -30,10 +30,12 @@
         "feedbackText",
         "message",
         "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;",
+        "notification",
+        "Lcom/discord/chat/bridge/automod/AutoModerationNotification;",
         "serializationConstructorMarker",
         "Lkotlinx/serialization/internal/SerializationConstructorMarker;",
-        "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V",
-        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V",
+        "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)V",
         "getActionsIconURL",
         "()Ljava/lang/String;",
         "getActionsText",
@@ -43,6 +45,8 @@
         "getKeywordDisplayText",
         "getMessage",
         "()Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;",
+        "getNotification",
+        "()Lcom/discord/chat/bridge/automod/AutoModerationNotification;",
         "getRuleDisplayText",
         "component1",
         "component2",
@@ -52,6 +56,7 @@
         "component6",
         "component7",
         "component8",
+        "component9",
         "copy",
         "equals",
         "",
@@ -101,6 +106,8 @@
 
 .field private final message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
+.field private final notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
 .field private final ruleDisplayText:Ljava/lang/String;
 
 
@@ -119,23 +126,23 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
     .locals 1
 
-    and-int/lit16 p10, p1, 0xe3
+    and-int/lit16 p11, p1, 0xe3
 
     const/16 v0, 0xe3
 
-    if-eq v0, p10, :cond_0
+    if-eq v0, p11, :cond_0
 
     .line 1
-    sget-object p10, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;
+    sget-object p11, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;
 
-    invoke-virtual {p10}, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+    invoke-virtual {p11}, Lcom/discord/chat/bridge/automod/AutoModerationContext$$serializer;->getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
 
-    move-result-object p10
+    move-result-object p11
 
-    invoke-static {p1, v0, p10}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {p1, v0, p11}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -170,9 +177,9 @@
     iput-object p5, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->keywordDisplayText:Ljava/lang/String;
 
     :goto_1
-    and-int/lit8 p1, p1, 0x10
+    and-int/lit8 p2, p1, 0x10
 
-    if-nez p1, :cond_3
+    if-nez p2, :cond_3
 
     iput-object p3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->actionsIconURL:Ljava/lang/String;
 
@@ -188,10 +195,22 @@
 
     iput-object p9, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
+    and-int/lit16 p1, p1, 0x100
+
+    if-nez p1, :cond_4
+
+    iput-object p3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    goto :goto_3
+
+    :cond_4
+    iput-object p10, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    :goto_3
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)V
     .locals 1
 
     const-string v0, "headerText"
@@ -241,74 +260,91 @@
     .line 10
     iput-object p8, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
+    .line 11
+    iput-object p9, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 11
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 13
 
-    and-int/lit8 v0, p9, 0x4
+    move/from16 v0, p10
 
-    const/4 v1, 0x0
+    and-int/lit8 v1, v0, 0x4
 
-    if-eqz v0, :cond_0
+    const/4 v2, 0x0
 
-    move-object v5, v1
+    if-eqz v1, :cond_0
+
+    move-object v6, v2
 
     goto :goto_0
 
     :cond_0
-    move-object v5, p3
+    move-object/from16 v6, p3
 
     :goto_0
-    and-int/lit8 v0, p9, 0x8
+    and-int/lit8 v1, v0, 0x8
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    move-object v6, v1
+    move-object v7, v2
 
     goto :goto_1
 
     :cond_1
-    move-object v6, p4
+    move-object/from16 v7, p4
 
     :goto_1
-    and-int/lit8 v0, p9, 0x10
+    and-int/lit8 v1, v0, 0x10
 
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
 
-    move-object v7, v1
+    move-object v8, v2
 
     goto :goto_2
 
     :cond_2
-    move-object/from16 v7, p5
+    move-object/from16 v8, p5
 
     :goto_2
-    move-object v2, p0
+    and-int/lit16 v0, v0, 0x100
 
-    move-object v3, p1
+    if-eqz v0, :cond_3
 
-    move-object v4, p2
+    move-object v12, v2
 
-    move-object/from16 v8, p6
+    goto :goto_3
 
-    move-object/from16 v9, p7
+    :cond_3
+    move-object/from16 v12, p9
 
-    move-object/from16 v10, p8
+    :goto_3
+    move-object v3, p0
 
-    .line 11
-    invoke-direct/range {v2 .. v10}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V
+    move-object v4, p1
+
+    move-object v5, p2
+
+    move-object/from16 v9, p6
+
+    move-object/from16 v10, p7
+
+    move-object/from16 v11, p8
+
+    .line 12
+    invoke-direct/range {v3 .. v12}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/discord/chat/bridge/automod/AutoModerationContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;ILjava/lang/Object;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
-    .locals 9
+.method public static synthetic copy$default(Lcom/discord/chat/bridge/automod/AutoModerationContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;ILjava/lang/Object;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
+    .locals 10
 
     move-object v0, p0
 
-    move/from16 v1, p9
+    move/from16 v1, p10
 
     and-int/lit8 v2, v1, 0x1
 
@@ -379,7 +415,7 @@
     goto :goto_5
 
     :cond_5
-    move-object v7, p6
+    move-object/from16 v7, p6
 
     :goto_5
     and-int/lit8 v8, v1, 0x40
@@ -394,18 +430,30 @@
     move-object/from16 v8, p7
 
     :goto_6
-    and-int/lit16 v1, v1, 0x80
+    and-int/lit16 v9, v1, 0x80
 
-    if-eqz v1, :cond_7
+    if-eqz v9, :cond_7
 
-    iget-object v1, v0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
+    iget-object v9, v0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
     goto :goto_7
 
     :cond_7
-    move-object/from16 v1, p8
+    move-object/from16 v9, p8
 
     :goto_7
+    and-int/lit16 v1, v1, 0x100
+
+    if-eqz v1, :cond_8
+
+    iget-object v1, v0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v1, p9
+
+    :goto_8
     move-object p1, v2
 
     move-object p2, v3
@@ -416,13 +464,15 @@
 
     move-object p5, v6
 
-    move-object p6, v7
+    move-object/from16 p6, v7
 
     move-object/from16 p7, v8
 
-    move-object/from16 p8, v1
+    move-object/from16 p8, v9
 
-    invoke-virtual/range {p0 .. p8}, Lcom/discord/chat/bridge/automod/AutoModerationContext;->copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
+    move-object/from16 p9, v1
+
+    invoke-virtual/range {p0 .. p9}, Lcom/discord/chat/bridge/automod/AutoModerationContext;->copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
 
     move-result-object v0
 
@@ -614,7 +664,7 @@
     .line 82
     .line 83
     :goto_4
-    move v1, v2
+    move v3, v2
 
     .line 84
     goto :goto_5
@@ -633,91 +683,124 @@
 
     .line 90
     :cond_7
-    :goto_5
-    if-eqz v1, :cond_8
+    move v3, v1
 
     .line 91
+    :goto_5
+    if-eqz v3, :cond_8
+
     .line 92
-    sget-object v1, Lzi/a2;->a:Lzi/a2;
-
     .line 93
+    sget-object v3, Lzi/a2;->a:Lzi/a2;
+
     .line 94
-    iget-object v2, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->actionsIconURL:Ljava/lang/String;
-
     .line 95
-    .line 96
-    invoke-interface {p1, p2, v0, v1, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    iget-object v4, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->actionsIconURL:Ljava/lang/String;
 
+    .line 96
     .line 97
+    invoke-interface {p1, p2, v0, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 98
     .line 99
+    .line 100
     :cond_8
     const/4 v0, 0x5
 
-    .line 100
-    iget-object v1, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->actionsText:Ljava/lang/String;
-
     .line 101
-    .line 102
-    invoke-interface {p1, p2, v0, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+    iget-object v3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->actionsText:Ljava/lang/String;
 
+    .line 102
     .line 103
+    invoke-interface {p1, p2, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+
     .line 104
     .line 105
+    .line 106
     const/4 v0, 0x6
 
-    .line 106
-    iget-object v1, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->feedbackText:Ljava/lang/String;
-
     .line 107
-    .line 108
-    invoke-interface {p1, p2, v0, v1}, Lkotlinx/serialization/encoding/CompositeEncoder;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+    iget-object v3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->feedbackText:Ljava/lang/String;
 
+    .line 108
     .line 109
+    invoke-interface {p1, p2, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+
     .line 110
     .line 111
+    .line 112
     sget-object v0, Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed$$serializer;
 
-    .line 112
     .line 113
-    iget-object p0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
-
     .line 114
-    .line 115
-    const/4 v1, 0x7
+    iget-object v3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
+    .line 115
     .line 116
-    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    const/4 v4, 0x7
 
     .line 117
+    invoke-interface {p1, p2, v4, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 118
     .line 119
-    return-void
     .line 120
+    const/16 v0, 0x8
+
     .line 121
     .line 122
+    invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+
     .line 123
     .line 124
     .line 125
+    move-result v3
+
     .line 126
+    if-eqz v3, :cond_9
+
     .line 127
     .line 128
+    :goto_6
+    move v1, v2
+
     .line 129
+    goto :goto_7
+
     .line 130
+    :cond_9
+    iget-object v3, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
     .line 131
     .line 132
+    if-eqz v3, :cond_a
+
     .line 133
     .line 134
+    goto :goto_6
+
     .line 135
+    :cond_a
+    :goto_7
+    if-eqz v1, :cond_b
+
     .line 136
     .line 137
+    sget-object v1, Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;->INSTANCE:Lcom/discord/chat/bridge/automod/AutoModerationNotification$$serializer;
+
     .line 138
     .line 139
+    iget-object p0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
     .line 140
     .line 141
+    invoke-interface {p1, p2, v0, v1, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+
     .line 142
     .line 143
     .line 144
+    :cond_b
+    return-void
     .line 145
     .line 146
     .line 147
@@ -1131,8 +1214,16 @@
     return-object v0
 .end method
 
-.method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
-    .locals 10
+.method public final component9()Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    return-object v0
+.end method
+
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)Lcom/discord/chat/bridge/automod/AutoModerationContext;
+    .locals 11
 
     const-string v0, "headerText"
 
@@ -1172,9 +1263,11 @@
 
     move-object v5, p4
 
-    move-object v6, p5
+    move-object/from16 v6, p5
 
-    invoke-direct/range {v1 .. v9}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;)V
+    move-object/from16 v10, p9
+
+    invoke-direct/range {v1 .. v10}, Lcom/discord/chat/bridge/automod/AutoModerationContext;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)V
 
     return-object v0
 .end method
@@ -1293,17 +1386,30 @@
     :cond_8
     iget-object v1, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
-    iget-object p1, p1, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
+    iget-object v3, p1, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_9
+
+    return v2
+
+    :cond_9
+    iget-object v1, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    iget-object p1, p1, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
 
     invoke-static {v1, p1}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-nez p1, :cond_9
+    if-nez p1, :cond_a
 
     return v2
 
-    :cond_9
+    :cond_a
     return v0
 .end method
 
@@ -1359,6 +1465,14 @@
     .locals 1
 
     iget-object v0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
+
+    return-object v0
+.end method
+
+.method public final getNotification()Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+    .locals 1
+
+    iget-object v0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
 
     return-object v0
 .end method
@@ -1434,15 +1548,17 @@
 
     if-nez v1, :cond_2
 
+    move v1, v2
+
     goto :goto_2
 
     :cond_2
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
-    move-result v2
+    move-result v1
 
     :goto_2
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -1474,11 +1590,27 @@
 
     add-int/2addr v0, v1
 
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
+
+    if-nez v1, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {v1}, Lcom/discord/chat/bridge/automod/AutoModerationNotification;->hashCode()I
+
+    move-result v2
+
+    :goto_3
+    add-int/2addr v0, v2
+
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 10
+    .locals 11
 
     iget-object v0, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->headerText:Ljava/lang/String;
 
@@ -1496,63 +1628,71 @@
 
     iget-object v7, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->message:Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    iget-object v8, p0, Lcom/discord/chat/bridge/automod/AutoModerationContext;->notification:Lcom/discord/chat/bridge/automod/AutoModerationNotification;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    const-string v9, "AutoModerationContext(headerText="
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v10, "AutoModerationContext(headerText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", headerBadgeText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", ruleDisplayText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", keywordDisplayText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", actionsIconURL="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", actionsText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", feedbackText="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ", message="
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", notification="
+
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v0, ")"
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

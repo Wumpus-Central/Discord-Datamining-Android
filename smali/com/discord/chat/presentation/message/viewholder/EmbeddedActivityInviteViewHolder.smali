@@ -1316,7 +1316,7 @@
     .line 161
     .line 162
     .line 163
-    new-instance v2, Lcom/discord/chat/presentation/message/viewholder/c;
+    new-instance v2, Lcom/discord/chat/presentation/message/viewholder/e;
 
     .line 164
     .line 165
@@ -1327,7 +1327,7 @@
 
     .line 167
     .line 168
-    invoke-direct {v2, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/c;-><init>(Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;)V
+    invoke-direct {v2, v0, v1}, Lcom/discord/chat/presentation/message/viewholder/e;-><init>(Lcom/discord/chat/presentation/message/viewholder/EmbeddedActivityInviteViewHolder;Lcom/discord/chat/presentation/message/messagepart/EmbeddedActivityInviteMessageAccessory;)V
 
     .line 169
     .line 170

@@ -2923,20 +2923,20 @@
 
     .line 33
     .line 34
-    new-instance v4, Lcom/discord/chat/presentation/message/viewholder/d;
+    new-instance v4, Lcom/discord/chat/presentation/message/viewholder/f;
 
     .line 35
     .line 36
-    invoke-direct {v4, p2, p1, v1, v2}, Lcom/discord/chat/presentation/message/viewholder/d;-><init>(Lkotlin/jvm/functions/Function2;Ljava/lang/String;J)V
+    invoke-direct {v4, p2, p1, v1, v2}, Lcom/discord/chat/presentation/message/viewholder/f;-><init>(Lkotlin/jvm/functions/Function2;Ljava/lang/String;J)V
 
     .line 37
     .line 38
     .line 39
-    new-instance p2, Lcom/discord/chat/presentation/message/viewholder/e;
+    new-instance p2, Lcom/discord/chat/presentation/message/viewholder/g;
 
     .line 40
     .line 41
-    invoke-direct {p2, p3, p1, v1, v2}, Lcom/discord/chat/presentation/message/viewholder/e;-><init>(Lkotlin/jvm/functions/Function2;Ljava/lang/String;J)V
+    invoke-direct {p2, p3, p1, v1, v2}, Lcom/discord/chat/presentation/message/viewholder/g;-><init>(Lkotlin/jvm/functions/Function2;Ljava/lang/String;J)V
 
     .line 42
     .line 43
