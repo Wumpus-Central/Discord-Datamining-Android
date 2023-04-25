@@ -2353,7 +2353,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v0, p1}, Lo5/s;->f(Lv3/k;)Z
+    invoke-interface {v0, p1}, Lo5/s;->e(Lv3/k;)Z
 
     .line 12
     .line 13
@@ -2422,7 +2422,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public n(Lcom/facebook/imagepipeline/request/ImageRequest;)Z
@@ -2468,7 +2467,7 @@
 
     .line 18
     :try_start_0
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 19
     .line 20
@@ -2478,7 +2477,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 22
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 23
     .line 24
@@ -2490,7 +2489,7 @@
     move-exception v0
 
     .line 27
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 28
     .line 29
@@ -2541,7 +2540,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public o(Landroid/net/Uri;)Z
@@ -2651,7 +2649,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public p(Landroid/net/Uri;Lcom/facebook/imagepipeline/request/ImageRequest$CacheChoice;)Z
@@ -2968,7 +2965,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public s(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/datasource/DataSource;

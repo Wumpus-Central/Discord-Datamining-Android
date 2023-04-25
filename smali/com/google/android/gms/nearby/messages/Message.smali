@@ -238,7 +238,7 @@
 
 
 # virtual methods
-.method public G()Ljava/lang/String;
+.method public D()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->m:Ljava/lang/String;
@@ -396,9 +396,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public hashCode()I
@@ -543,9 +540,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -600,14 +594,6 @@
     return-object v0
 .end method
 
-.method public v()[B
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->l:[B
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -620,7 +606,7 @@
     move-result v0
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->v()[B
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
 
     .line 6
     .line 7
@@ -642,7 +628,7 @@
     const/4 v1, 0x2
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->G()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->D()Ljava/lang/String;
 
     .line 16
     .line 17
@@ -658,7 +644,7 @@
     const/4 v1, 0x3
 
     .line 23
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->y()Ljava/lang/String;
 
     .line 24
     .line 25
@@ -854,17 +840,17 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
-.method public z()Ljava/lang/String;
+.method public x()[B
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->l:[B
+
+    return-object v0
+.end method
+
+.method public y()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->n:Ljava/lang/String;

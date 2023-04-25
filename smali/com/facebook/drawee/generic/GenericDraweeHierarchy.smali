@@ -1395,7 +1395,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private g(Landroid/graphics/drawable/Drawable;Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;Landroid/graphics/PointF;Landroid/graphics/ColorFilter;)Landroid/graphics/drawable/Drawable;
@@ -2343,7 +2342,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private p(I)Lcom/facebook/drawee/drawable/n;
@@ -2444,7 +2442,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private q(I)Z
@@ -2532,7 +2529,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private r()V
@@ -3144,20 +3140,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public a(Landroid/graphics/drawable/Drawable;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/drawee/generic/GenericDraweeHierarchy;->d:Ls4/b;
-
-    invoke-virtual {v0, p1}, Ls4/b;->h(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public b(Ljava/lang/Throwable;)V
+.method public a(Ljava/lang/Throwable;)V
     .locals 1
 
     .line 1
@@ -3266,10 +3251,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public c(Ljava/lang/Throwable;)V
+.method public b(Ljava/lang/Throwable;)V
     .locals 1
 
     .line 1
@@ -3378,10 +3362,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public d(FZ)V
+.method public c(FZ)V
     .locals 2
 
     .line 1
@@ -3582,7 +3565,7 @@
     .line 165
 .end method
 
-.method public e()Landroid/graphics/drawable/Drawable;
+.method public d()Landroid/graphics/drawable/Drawable;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/drawee/generic/GenericDraweeHierarchy;->d:Ls4/b;
@@ -3590,7 +3573,7 @@
     return-object v0
 .end method
 
-.method public f(Landroid/graphics/drawable/Drawable;FZ)V
+.method public e(Landroid/graphics/drawable/Drawable;FZ)V
     .locals 2
 
     .line 1
@@ -3990,6 +3973,16 @@
     .line 357
 .end method
 
+.method public f(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/drawee/generic/GenericDraweeHierarchy;->d:Ls4/b;
+
+    invoke-virtual {v0, p1}, Ls4/b;->h(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
+.end method
+
 .method public getBounds()Landroid/graphics/Rect;
     .locals 1
 
@@ -4361,7 +4354,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public u(Landroid/graphics/drawable/Drawable;)V

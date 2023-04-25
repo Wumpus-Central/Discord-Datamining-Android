@@ -63,7 +63,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private native initHybrid(Lcom/shopify/reactnative/skia/SkiaManager;)Lcom/facebook/jni/HybridData;
@@ -104,7 +103,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected native registerView(I)V

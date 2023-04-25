@@ -126,6 +126,4 @@
     .line 46
     .line 47
     return-object p1
-    .line 48
-    .line 49
 .end method

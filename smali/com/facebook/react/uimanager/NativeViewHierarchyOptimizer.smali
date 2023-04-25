@@ -1642,7 +1642,6 @@
     .line 74
     return-void
     .line 75
-    .line 76
 .end method
 
 .method private applyLayoutRecursive(Lcom/facebook/react/uimanager/ReactShadowNode;II)V
@@ -2206,7 +2205,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static handleRemoveNode(Lcom/facebook/react/uimanager/ReactShadowNode;)V
@@ -2350,7 +2348,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private removeNodeFromParent(Lcom/facebook/react/uimanager/ReactShadowNode;Z)V
@@ -4121,7 +4118,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public handleManageChildren(Lcom/facebook/react/uimanager/ReactShadowNode;[I[I[Lcom/facebook/react/uimanager/ViewAtIndex;[I)V

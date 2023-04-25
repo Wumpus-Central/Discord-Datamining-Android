@@ -127,19 +127,19 @@
 .method public abstract e0(Lcom/facebook/yoga/e;F)V
 .end method
 
-.method public abstract f0(Lcom/facebook/yoga/e;F)V
+.method public abstract f()Lcom/facebook/yoga/YogaValue;
 .end method
 
-.method public abstract g()Lcom/facebook/yoga/YogaValue;
+.method public abstract f0(Lcom/facebook/yoga/e;F)V
 .end method
 
 .method public abstract g0(Lcom/facebook/yoga/e;F)V
 .end method
 
-.method public abstract h()Lcom/facebook/yoga/YogaDirection;
+.method public abstract h0(Lcom/facebook/yoga/e;F)V
 .end method
 
-.method public abstract h0(Lcom/facebook/yoga/e;F)V
+.method public abstract i()Lcom/facebook/yoga/YogaDirection;
 .end method
 
 .method public abstract i0(Lcom/facebook/yoga/YogaPositionType;)V
@@ -157,6 +157,9 @@
 .method public abstract k0()V
 .end method
 
+.method public abstract l()F
+.end method
+
 .method public abstract l0(F)V
 .end method
 
@@ -169,10 +172,7 @@
 .method public abstract n()F
 .end method
 
-.method public abstract o()F
-.end method
-
-.method public abstract p(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
+.method public abstract o(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
 .end method
 
 .method public abstract q()Lcom/facebook/yoga/YogaValue;

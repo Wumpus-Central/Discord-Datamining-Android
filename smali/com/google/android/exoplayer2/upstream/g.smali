@@ -15,11 +15,11 @@
 .method public abstract a(Lcom/google/android/exoplayer2/upstream/g$a;)J
 .end method
 
-.method public abstract b(J)V
+.method public abstract b(Lcom/google/android/exoplayer2/upstream/g$a;)J
 .end method
 
-.method public abstract c(Lcom/google/android/exoplayer2/upstream/g$a;)J
+.method public abstract c(I)I
 .end method
 
-.method public abstract d(I)I
+.method public abstract d(J)V
 .end method

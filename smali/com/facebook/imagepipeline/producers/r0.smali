@@ -13,12 +13,12 @@
     move-result-object v2
 
     .line 2
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Ljava/lang/String;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->f()Ljava/lang/String;
 
     move-result-object v3
 
     .line 3
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     move-result-object v4
 
@@ -33,22 +33,22 @@
     move-result-object v6
 
     .line 6
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->i()Z
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->m()Z
 
     move-result v7
 
     .line 7
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->o()Z
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->i()Z
 
     move-result v8
 
     .line 8
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->b()Lcom/facebook/imagepipeline/common/Priority;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->j()Lcom/facebook/imagepipeline/common/Priority;
 
     move-result-object v9
 
     .line 9
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->f()Lq5/g;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lq5/g;
 
     move-result-object v10
 

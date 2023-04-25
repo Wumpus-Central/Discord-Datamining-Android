@@ -625,7 +625,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->i()Z
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->m()Z
 
     .line 2
     .line 3

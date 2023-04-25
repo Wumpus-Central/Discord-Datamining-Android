@@ -420,7 +420,7 @@
 .method public l(Lu5/e;)Lu5/e;
     .locals 0
 
-    invoke-static {p1}, Lu5/e;->f(Lu5/e;)Lu5/e;
+    invoke-static {p1}, Lu5/e;->g(Lu5/e;)Lu5/e;
 
     move-result-object p1
 
@@ -446,7 +446,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 4
     .line 5
@@ -539,5 +539,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

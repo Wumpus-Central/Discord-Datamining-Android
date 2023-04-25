@@ -611,7 +611,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private tryApplyNativeColor()V
@@ -1785,7 +1784,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public prettyPrint()Ljava/lang/String;

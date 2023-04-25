@@ -1768,21 +1768,7 @@
 
 
 # virtual methods
-.method public a()Ljava/lang/String;
-    .locals 1
-
-    invoke-virtual {p0}, Lcom/facebook/hermes/intl/h;->m()Ljava/util/Locale;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/Locale;->toLanguageTag()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public b()Ljava/util/HashMap;
+.method public a()Ljava/util/HashMap;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1915,7 +1901,7 @@
     .line 66
 .end method
 
-.method public c(Ljava/lang/String;)Ljava/util/ArrayList;
+.method public b(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2029,10 +2015,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public bridge synthetic d()Ljava/lang/Object;
+.method public bridge synthetic c()Ljava/lang/Object;
     .locals 1
 
     invoke-virtual {p0}, Lcom/facebook/hermes/intl/h;->n()Ljava/util/Locale;
@@ -2042,7 +2027,7 @@
     return-object v0
 .end method
 
-.method public e()Lg5/b;
+.method public d()Lg5/b;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2130,7 +2115,7 @@
     .line 66
 .end method
 
-.method public f()Ljava/lang/String;
+.method public e()Ljava/lang/String;
     .locals 1
 
     invoke-virtual {p0}, Lcom/facebook/hermes/intl/h;->n()Ljava/util/Locale;
@@ -2144,7 +2129,7 @@
     return-object v0
 .end method
 
-.method public g(Ljava/lang/String;Ljava/util/ArrayList;)V
+.method public f(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2388,6 +2373,20 @@
     .line 163
     .line 164
     .line 165
+.end method
+
+.method public g()Ljava/lang/String;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/facebook/hermes/intl/h;->m()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Locale;->toLanguageTag()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public bridge synthetic h()Ljava/lang/Object;

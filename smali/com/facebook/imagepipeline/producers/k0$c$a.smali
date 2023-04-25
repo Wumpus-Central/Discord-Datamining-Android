@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public b()V
     .locals 1
 
     .line 1

@@ -2155,7 +2155,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected dispatchJSPointerEvent(Landroid/view/MotionEvent;)V
@@ -2309,7 +2308,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected dispatchJSTouchEvent(Landroid/view/MotionEvent;)V
@@ -2456,7 +2454,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
@@ -2577,7 +2574,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected finalize()V
@@ -2948,7 +2944,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onAttachedToReactInstance()V
@@ -3983,7 +3978,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
@@ -4071,7 +4065,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -4168,7 +4161,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onLayout(ZIIII)V
@@ -5545,7 +5537,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onViewAdded(Landroid/view/View;)V
@@ -5659,7 +5650,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
@@ -5960,7 +5950,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public runApplication()V
@@ -7154,7 +7143,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setEventListener(Lcom/facebook/react/ReactRootView$ReactRootViewEventListener;)V

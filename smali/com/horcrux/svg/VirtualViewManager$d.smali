@@ -1,28 +1,22 @@
-.class Lcom/horcrux/svg/RenderableViewManager$d;
+.class Lcom/horcrux/svg/VirtualViewManager$d;
 .super Lcom/facebook/react/uimanager/LayoutShadowNode;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/horcrux/svg/RenderableViewManager;
+    value = Lcom/horcrux/svg/VirtualViewManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x8
     name = "d"
 .end annotation
 
 
-# instance fields
-.field final synthetic a:Lcom/horcrux/svg/RenderableViewManager;
-
-
 # direct methods
-.method constructor <init>(Lcom/horcrux/svg/RenderableViewManager;)V
+.method constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lcom/horcrux/svg/RenderableViewManager$d;->a:Lcom/horcrux/svg/RenderableViewManager;
 
     invoke-direct {p0}, Lcom/facebook/react/uimanager/LayoutShadowNode;-><init>()V
 

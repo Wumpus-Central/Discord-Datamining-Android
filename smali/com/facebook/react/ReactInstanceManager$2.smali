@@ -136,7 +136,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public destroyRootView(Landroid/view/View;)V
@@ -243,7 +242,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getCurrentActivity()Landroid/app/Activity;

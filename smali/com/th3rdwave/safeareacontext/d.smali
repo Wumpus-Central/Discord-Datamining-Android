@@ -69,7 +69,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private a()Landroid/view/View;
@@ -122,7 +121,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private static b(Landroid/view/View;)Lcom/facebook/react/bridge/ReactContext;
@@ -176,7 +174,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private c()Z
@@ -312,9 +309,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private d()V
@@ -464,9 +458,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private e()V
@@ -657,9 +648,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -707,7 +695,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -754,7 +741,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onPreDraw()Z
@@ -795,7 +781,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public setEdges(Ljava/util/EnumSet;)V
@@ -840,7 +825,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMode(Lcom/th3rdwave/safeareacontext/g;)V
@@ -877,5 +861,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

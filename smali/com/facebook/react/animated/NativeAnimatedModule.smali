@@ -209,7 +209,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$100(Lcom/facebook/react/animated/NativeAnimatedModule;)Lcom/facebook/react/modules/core/ReactChoreographer;
@@ -369,7 +368,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private addPreOperation(Lcom/facebook/react/animated/NativeAnimatedModule$UIThreadOperation;)V
@@ -459,7 +457,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private addUnbatchedOperation(Lcom/facebook/react/animated/NativeAnimatedModule$UIThreadOperation;)V
@@ -549,7 +546,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private clearFrameCallback()V
@@ -774,7 +770,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private enqueueFrameCallback()V
@@ -2650,7 +2645,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public didScheduleMountItems(Lcom/facebook/react/bridge/UIManager;)V
@@ -4930,7 +4924,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public startOperationBatch()V
@@ -5188,5 +5181,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

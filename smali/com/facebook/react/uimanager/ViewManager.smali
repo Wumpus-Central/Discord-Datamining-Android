@@ -257,7 +257,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -2617,7 +2616,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected prepareToRecycleView(Lcom/facebook/react/uimanager/ThemedReactContext;Landroid/view/View;)Landroid/view/View;

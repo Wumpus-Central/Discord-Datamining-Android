@@ -848,7 +848,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public d(Ljava/nio/ByteBuffer;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
@@ -861,18 +860,18 @@
     return-object p1
 .end method
 
-.method public e()Landroid/graphics/Bitmap$Config;
+.method public e()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/animated/webp/WebPImage;->a:Landroid/graphics/Bitmap$Config;
+    const/4 v0, 0x1
 
-    return-object v0
+    return v0
 .end method
 
-.method public bridge synthetic f(I)Lj5/d;
+.method public f(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/facebook/animated/webp/WebPImage;->m(I)Lcom/facebook/animated/webp/WebPFrame;
+    invoke-static {p1, p2, p3, p4}, Lcom/facebook/animated/webp/WebPImage;->l(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/webp/WebPImage;
 
     move-result-object p1
 
@@ -887,10 +886,12 @@
     return-void
 .end method
 
-.method public g()Z
+.method public g()I
     .locals 1
 
-    const/4 v0, 0x1
+    invoke-direct {p0}, Lcom/facebook/animated/webp/WebPImage;->nativeGetSizeInBytes()I
+
+    move-result v0
 
     return v0
 .end method
@@ -915,17 +916,25 @@
     return v0
 .end method
 
-.method public h(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
+.method public h()Landroid/graphics/Bitmap$Config;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/animated/webp/WebPImage;->a:Landroid/graphics/Bitmap$Config;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic i(I)Lj5/d;
     .locals 0
 
-    invoke-static {p1, p2, p3, p4}, Lcom/facebook/animated/webp/WebPImage;->l(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/webp/WebPImage;
+    invoke-virtual {p0, p1}, Lcom/facebook/animated/webp/WebPImage;->m(I)Lcom/facebook/animated/webp/WebPFrame;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public i()[I
+.method public j()[I
     .locals 1
 
     invoke-direct {p0}, Lcom/facebook/animated/webp/WebPImage;->nativeGetFrameDurations()[I
@@ -933,16 +942,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public j()I
-    .locals 1
-
-    invoke-direct {p0}, Lcom/facebook/animated/webp/WebPImage;->nativeGetSizeInBytes()I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public m(I)Lcom/facebook/animated/webp/WebPFrame;

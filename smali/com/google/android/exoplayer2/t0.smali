@@ -18,13 +18,13 @@
 .method public abstract c()Z
 .end method
 
-.method public abstract d()Z
+.method public abstract d()I
 .end method
 
 .method public abstract disable()V
 .end method
 
-.method public abstract f()I
+.method public abstract e()Z
 .end method
 
 .method public abstract g()Z
@@ -39,31 +39,31 @@
 .method public abstract h()V
 .end method
 
-.method public abstract i([Ld7/k;Lh8/o0;JJ)V
+.method public abstract j()V
 .end method
 
-.method public abstract j()Ld7/t;
+.method public abstract k()Z
 .end method
 
-.method public abstract l(FF)V
+.method public abstract l([Ld7/k;Lh8/o0;JJ)V
 .end method
 
-.method public abstract m(Ld7/u;[Ld7/k;Lh8/o0;JZZJJ)V
+.method public abstract m()Ld7/t;
 .end method
 
-.method public abstract o(JJ)V
+.method public abstract o(FF)V
 .end method
 
-.method public abstract q()Lh8/o0;
+.method public abstract p(Ld7/u;[Ld7/k;Lh8/o0;JZZJJ)V
 .end method
 
-.method public abstract r()V
+.method public abstract r(JJ)V
 .end method
 
 .method public abstract reset()V
 .end method
 
-.method public abstract s()J
+.method public abstract s()Lh8/o0;
 .end method
 
 .method public abstract setIndex(I)V
@@ -75,10 +75,10 @@
 .method public abstract stop()V
 .end method
 
-.method public abstract t(J)V
+.method public abstract t()J
 .end method
 
-.method public abstract u()Z
+.method public abstract u(J)V
 .end method
 
 .method public abstract v()Lf9/t;

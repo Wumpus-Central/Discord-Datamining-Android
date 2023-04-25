@@ -1162,7 +1162,7 @@
 
     .line 88
     .line 89
-    invoke-interface/range {v1 .. v7}, Lcom/facebook/hermes/intl/c;->k(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+    invoke-interface/range {v1 .. v7}, Lcom/facebook/hermes/intl/c;->h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
 
     .line 90
     .line 91
@@ -1178,7 +1178,7 @@
 
     .line 96
     .line 97
-    invoke-interface {p1, p2, v0}, Lcom/facebook/hermes/intl/c;->f(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2, v0}, Lcom/facebook/hermes/intl/c;->d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
 
     .line 98
     .line 99
@@ -1190,7 +1190,7 @@
 
     .line 102
     .line 103
-    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->j(Z)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->g(Z)Lcom/facebook/hermes/intl/c;
 
     .line 104
     .line 105
@@ -1202,7 +1202,7 @@
 
     .line 108
     .line 109
-    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->i(I)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->f(I)Lcom/facebook/hermes/intl/c;
 
     .line 110
     .line 111
@@ -1222,7 +1222,7 @@
 
     .line 118
     .line 119
-    invoke-interface {p1, p2, v0, v1}, Lcom/facebook/hermes/intl/c;->g(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2, v0, v1}, Lcom/facebook/hermes/intl/c;->e(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
 
     .line 120
     .line 121
@@ -1242,7 +1242,7 @@
 
     .line 128
     .line 129
-    invoke-interface {p1, p2, v0, v1}, Lcom/facebook/hermes/intl/c;->l(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2, v0, v1}, Lcom/facebook/hermes/intl/c;->i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
 
     .line 130
     .line 131
@@ -1254,7 +1254,7 @@
 
     .line 134
     .line 135
-    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->e(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/c;->k(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
 
     .line 136
     .line 137
@@ -1270,7 +1270,7 @@
 
     .line 142
     .line 143
-    invoke-interface {p1, p2, v0}, Lcom/facebook/hermes/intl/c;->d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+    invoke-interface {p1, p2, v0}, Lcom/facebook/hermes/intl/c;->j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
 
     .line 144
     .line 145
@@ -1485,7 +1485,7 @@
 
     .line 85
     .line 86
-    invoke-interface {v0}, Lg5/b;->e()Lg5/b;
+    invoke-interface {v0}, Lg5/b;->d()Lg5/b;
 
     .line 87
     .line 88
@@ -1555,7 +1555,7 @@
 
     .line 118
     .line 119
-    invoke-interface {p1, v0}, Lcom/facebook/hermes/intl/c;->c(Lg5/b;)Ljava/lang/String;
+    invoke-interface {p1, v0}, Lcom/facebook/hermes/intl/c;->b(Lg5/b;)Ljava/lang/String;
 
     .line 120
     .line 121
@@ -2390,7 +2390,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private e(Ljava/lang/String;)Z
@@ -2535,7 +2534,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private f(Ljava/lang/String;)Ljava/lang/String;
@@ -2667,7 +2665,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private g(Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;)V
@@ -4815,7 +4812,7 @@
 
     iget-object v0, p0, Lcom/facebook/hermes/intl/NumberFormat;->o:Lcom/facebook/hermes/intl/c;
 
-    invoke-interface {v0, p1, p2}, Lcom/facebook/hermes/intl/c;->b(D)Ljava/lang/String;
+    invoke-interface {v0, p1, p2}, Lcom/facebook/hermes/intl/c;->c(D)Ljava/lang/String;
 
     move-result-object p1
 
@@ -4968,7 +4965,7 @@
 
     .line 66
     .line 67
-    invoke-interface {v4, v3, p1, p2}, Lcom/facebook/hermes/intl/c;->h(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
+    invoke-interface {v4, v3, p1, p2}, Lcom/facebook/hermes/intl/c;->l(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -5921,7 +5918,7 @@
 
     .line 7
     .line 8
-    invoke-interface {v1}, Lg5/b;->a()Ljava/lang/String;
+    invoke-interface {v1}, Lg5/b;->g()Ljava/lang/String;
 
     .line 9
     .line 10

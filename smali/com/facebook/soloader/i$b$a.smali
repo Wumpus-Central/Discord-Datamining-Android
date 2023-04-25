@@ -50,7 +50,7 @@
 
     iget-object v1, p0, Lcom/facebook/soloader/i$b$a;->l:Lcom/facebook/soloader/i$b;
 
-    invoke-static {v1}, Lcom/facebook/soloader/i$b;->i(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
+    invoke-static {v1}, Lcom/facebook/soloader/i$b;->h(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
 
     move-result-object v1
 
@@ -69,7 +69,7 @@
     return v0
 .end method
 
-.method public f()Lcom/facebook/soloader/r$d;
+.method public g()Lcom/facebook/soloader/r$d;
     .locals 3
 
     .line 1
@@ -77,7 +77,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/soloader/i$b;->i(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
+    invoke-static {v0}, Lcom/facebook/soloader/i$b;->h(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
 
     .line 4
     .line 5

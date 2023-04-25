@@ -790,7 +790,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public dispatchModern(Lcom/facebook/react/uimanager/events/RCTModernEventEmitter;)V
@@ -881,7 +880,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getCoalescingKey()S

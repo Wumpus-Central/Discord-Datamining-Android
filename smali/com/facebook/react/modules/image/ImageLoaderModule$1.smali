@@ -98,7 +98,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->f()Ljava/lang/Object;
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->g()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -119,7 +119,7 @@
     .line 17
     .line 18
     :try_start_0
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -212,7 +212,7 @@
     .line 59
     .line 60
     :goto_0
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 61
     .line 62
@@ -221,7 +221,7 @@
 
     .line 64
     :goto_1
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 65
     .line 66
@@ -243,5 +243,4 @@
     return-void
     .line 74
     .line 75
-    .line 76
 .end method

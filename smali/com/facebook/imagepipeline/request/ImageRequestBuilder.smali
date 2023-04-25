@@ -1397,7 +1397,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public I()Ljava/lang/Boolean;
@@ -2648,7 +2647,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public u(Lcom/facebook/imagepipeline/common/BytesRange;)Lcom/facebook/imagepipeline/request/ImageRequestBuilder;

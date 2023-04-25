@@ -20,13 +20,7 @@
 .method public abstract b()Lcom/facebook/hermes/intl/a$c;
 .end method
 
-.method public abstract c(Lcom/facebook/hermes/intl/a$b;)Lcom/facebook/hermes/intl/a;
-.end method
-
-.method public abstract d(Z)Lcom/facebook/hermes/intl/a;
-.end method
-
-.method public abstract e(Lg5/b;)Lcom/facebook/hermes/intl/a;
+.method public abstract c(Lg5/b;)Lcom/facebook/hermes/intl/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,8 +31,14 @@
     .end annotation
 .end method
 
-.method public abstract f(Lcom/facebook/hermes/intl/a$c;)Lcom/facebook/hermes/intl/a;
+.method public abstract d(Z)Lcom/facebook/hermes/intl/a;
 .end method
 
-.method public abstract g(Z)Lcom/facebook/hermes/intl/a;
+.method public abstract e(Lcom/facebook/hermes/intl/a$b;)Lcom/facebook/hermes/intl/a;
+.end method
+
+.method public abstract f(Z)Lcom/facebook/hermes/intl/a;
+.end method
+
+.method public abstract g(Lcom/facebook/hermes/intl/a$c;)Lcom/facebook/hermes/intl/a;
 .end method

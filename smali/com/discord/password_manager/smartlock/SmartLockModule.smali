@@ -728,7 +728,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/credentials/Credential;->K()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/credentials/Credential;->L()Ljava/lang/String;
 
     .line 49
     .line 50

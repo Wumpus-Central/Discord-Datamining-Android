@@ -103,7 +103,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static createWithInitialCapacity(I)Lcom/facebook/react/common/LongArray;
@@ -316,7 +315,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public dropTail(I)V
@@ -435,7 +433,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public get(I)J
@@ -554,7 +551,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public isEmpty()Z

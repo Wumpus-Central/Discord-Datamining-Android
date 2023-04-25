@@ -40,14 +40,14 @@
 
 # virtual methods
 .method public a()V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->t(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/y;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->s(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/ProducerContext;
 
     .line 4
     .line 5
@@ -55,34 +55,37 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Lcom/facebook/imagepipeline/producers/y;->c()V
+    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->i()Z
 
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
+    move-result v0
 
     .line 11
-    .line 12
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
+    .line 12
     .line 13
-    invoke-static {v0, v1}, Lcom/facebook/imagepipeline/producers/q0$a;->u(Lcom/facebook/imagepipeline/producers/q0$a;Z)Z
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
 
     .line 14
     .line 15
-    .line 16
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->b:Lcom/facebook/imagepipeline/producers/Consumer;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->t(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/y;
 
+    .line 16
     .line 17
     .line 18
-    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/Consumer;->a()V
+    move-result-object v0
 
     .line 19
+    invoke-virtual {v0}, Lcom/facebook/imagepipeline/producers/y;->h()Z
+
     .line 20
     .line 21
-    return-void
     .line 22
+    :cond_0
+    return-void
     .line 23
     .line 24
     .line 25
@@ -130,14 +133,14 @@
 .end method
 
 .method public b()V
-    .locals 1
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->s(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/ProducerContext;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->t(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/y;
 
     .line 4
     .line 5
@@ -145,37 +148,34 @@
     move-result-object v0
 
     .line 7
-    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->o()Z
+    invoke-virtual {v0}, Lcom/facebook/imagepipeline/producers/y;->c()V
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
 
     .line 11
-    if-eqz v0, :cond_0
-
     .line 12
+    const/4 v1, 0x1
+
     .line 13
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->c:Lcom/facebook/imagepipeline/producers/q0$a;
+    invoke-static {v0, v1}, Lcom/facebook/imagepipeline/producers/q0$a;->u(Lcom/facebook/imagepipeline/producers/q0$a;Z)Z
 
     .line 14
     .line 15
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->t(Lcom/facebook/imagepipeline/producers/q0$a;)Lcom/facebook/imagepipeline/producers/y;
-
     .line 16
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/q0$a$b;->b:Lcom/facebook/imagepipeline/producers/Consumer;
+
     .line 17
     .line 18
-    move-result-object v0
+    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/Consumer;->a()V
 
     .line 19
-    invoke-virtual {v0}, Lcom/facebook/imagepipeline/producers/y;->h()Z
-
     .line 20
     .line 21
-    .line 22
-    :cond_0
     return-void
+    .line 22
     .line 23
     .line 24
     .line 25

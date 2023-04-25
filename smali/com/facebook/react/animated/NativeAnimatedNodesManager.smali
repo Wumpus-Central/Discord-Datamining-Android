@@ -198,7 +198,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/animated/NativeAnimatedNodesManager;Lcom/facebook/react/uimanager/events/Event;)V
@@ -6254,7 +6253,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public extractAnimatedNodeOffset(I)V
@@ -6379,7 +6377,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public flattenAnimatedNodeOffset(I)V
@@ -6504,7 +6501,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getNodeById(I)Lcom/facebook/react/animated/AnimatedNode;
@@ -6950,7 +6946,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onEventDispatch(Lcom/facebook/react/uimanager/events/Event;)V
@@ -7050,7 +7045,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeAnimatedEventFromView(ILjava/lang/String;I)V
@@ -7625,7 +7619,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public runUpdates(J)V
@@ -11285,7 +11278,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public updateAnimatedNodeConfig(ILcom/facebook/react/bridge/ReadableMap;)V

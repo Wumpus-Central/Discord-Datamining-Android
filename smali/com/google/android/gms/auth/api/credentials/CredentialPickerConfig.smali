@@ -89,31 +89,10 @@
 
 
 # virtual methods
-.method public G()Z
+.method public D()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->m:Z
-
-    return v0
-.end method
-
-.method public v()Z
-    .locals 2
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    iget v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->n:I
-
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
 
     return v0
 .end method
@@ -133,7 +112,7 @@
     const/4 v0, 0x1
 
     .line 6
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->z()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->y()Z
 
     .line 7
     .line 8
@@ -149,7 +128,7 @@
     const/4 v0, 0x2
 
     .line 14
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->G()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->D()Z
 
     .line 15
     .line 16
@@ -165,7 +144,7 @@
     const/4 v0, 0x3
 
     .line 22
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->v()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->x()Z
 
     .line 23
     .line 24
@@ -379,7 +358,28 @@
     .line 213
 .end method
 
-.method public z()Z
+.method public x()Z
+    .locals 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    iget v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->n:I
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public y()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->l:Z

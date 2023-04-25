@@ -158,7 +158,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -218,7 +218,7 @@
     .line 46
     .line 47
     :cond_1
-    invoke-static {p0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 48
     .line 49
@@ -279,7 +279,7 @@
 
     .line 71
     :goto_2
-    invoke-static {p0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 72
     .line 73
@@ -1437,7 +1437,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1456,7 +1455,7 @@
         }
     .end annotation
 
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     move-result-object v0
 

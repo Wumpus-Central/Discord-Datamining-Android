@@ -178,7 +178,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/modules/debug/FpsDebugFrameCallback;)Lcom/facebook/react/modules/core/ChoreographerCompat;
@@ -1520,7 +1519,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getJSFPS()D

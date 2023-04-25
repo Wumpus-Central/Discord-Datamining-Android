@@ -65,7 +65,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public static a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V

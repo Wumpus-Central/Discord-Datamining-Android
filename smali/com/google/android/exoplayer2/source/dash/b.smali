@@ -1727,7 +1727,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v2}, La9/k;->c()Lh8/u0;
+    invoke-interface {v2}, La9/k;->l()Lh8/u0;
 
     .line 15
     .line 16
@@ -4235,7 +4235,7 @@
 
     .line 27
     .line 28
-    invoke-direct {p0, v3, v2, p4, p5}, Lcom/google/android/exoplayer2/source/dash/b;->t(Lcom/google/android/exoplayer2/source/dash/b$a;La9/h;J)Lj8/h;
+    invoke-direct {p0, v3, v2, p4, p5}, Lcom/google/android/exoplayer2/source/dash/b;->s(Lcom/google/android/exoplayer2/source/dash/b$a;La9/h;J)Lj8/h;
 
     .line 29
     .line 30
@@ -4278,7 +4278,7 @@
 
     .line 47
     .line 48
-    invoke-interface {v2}, La9/k;->c()Lh8/u0;
+    invoke-interface {v2}, La9/k;->l()Lh8/u0;
 
     .line 49
     .line 50
@@ -4891,7 +4891,7 @@
     .line 557
 .end method
 
-.method private static j(Ljava/util/List;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;I)V
+.method private static m(Ljava/util/List;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;I)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -5436,7 +5436,7 @@
     .line 461
 .end method
 
-.method private static q(Lj7/x;Ljava/util/List;[[II[Z[[Ld7/k;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;)I
+.method private static p(Lj7/x;Ljava/util/List;[[II[Z[[Ld7/k;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;)I
     .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -5572,7 +5572,7 @@
     move-object v11, p0
 
     .line 54
-    invoke-interface {p0, v10}, Lj7/x;->a(Ld7/k;)Ljava/lang/Class;
+    invoke-interface {p0, v10}, Lj7/x;->b(Ld7/k;)Ljava/lang/Class;
 
     .line 55
     .line 56
@@ -5876,7 +5876,7 @@
     .line 203
 .end method
 
-.method private t(Lcom/google/android/exoplayer2/source/dash/b$a;La9/h;J)Lj8/h;
+.method private s(Lcom/google/android/exoplayer2/source/dash/b$a;La9/h;J)Lj8/h;
     .locals 29
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -6592,7 +6592,7 @@
     move-object v7, v9
 
     .line 28
-    invoke-static/range {v0 .. v7}, Lcom/google/android/exoplayer2/source/dash/b;->q(Lj7/x;Ljava/util/List;[[II[Z[[Ld7/k;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;)I
+    invoke-static/range {v0 .. v7}, Lcom/google/android/exoplayer2/source/dash/b;->p(Lj7/x;Ljava/util/List;[[II[Z[[Ld7/k;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;)I
 
     .line 29
     .line 30
@@ -6600,7 +6600,7 @@
     move-result p0
 
     .line 32
-    invoke-static {p2, v8, v9, p0}, Lcom/google/android/exoplayer2/source/dash/b;->j(Ljava/util/List;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;I)V
+    invoke-static {p2, v8, v9, p0}, Lcom/google/android/exoplayer2/source/dash/b;->m(Ljava/util/List;[Lh8/u0;[Lcom/google/android/exoplayer2/source/dash/b$a;I)V
 
     .line 33
     .line 34
@@ -7885,7 +7885,7 @@
 
     iget-object p1, p0, Lcom/google/android/exoplayer2/source/dash/b;->z:Lh8/r$a;
 
-    invoke-interface {p1, p0}, Lh8/p0$a;->i(Lh8/p0;)V
+    invoke-interface {p1, p0}, Lh8/p0$a;->j(Lh8/p0;)V
 
     return-void
 .end method
@@ -8107,7 +8107,7 @@
 
     .line 26
     .line 27
-    invoke-interface {v4, p1, p2}, Lcom/google/android/exoplayer2/source/dash/a;->h(Ll8/b;I)V
+    invoke-interface {v4, p1, p2}, Lcom/google/android/exoplayer2/source/dash/a;->c(Ll8/b;I)V
 
     .line 28
     .line 29
@@ -8124,7 +8124,7 @@
 
     .line 34
     .line 35
-    invoke-interface {v0, p0}, Lh8/p0$a;->i(Lh8/p0;)V
+    invoke-interface {v0, p0}, Lh8/p0$a;->j(Lh8/p0;)V
 
     .line 36
     .line 37
@@ -8264,7 +8264,7 @@
 
     .line 100
     :goto_2
-    invoke-virtual {v4, v6, v7}, Lcom/google/android/exoplayer2/source/dash/d;->e(Ll8/e;Z)V
+    invoke-virtual {v4, v6, v7}, Lcom/google/android/exoplayer2/source/dash/d;->d(Ll8/e;Z)V
 
     .line 101
     .line 102
@@ -8400,7 +8400,19 @@
     return-wide v0
 .end method
 
-.method public c(JLd7/w;)J
+.method public c()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->C:Lh8/p0;
+
+    invoke-interface {v0}, Lh8/p0;->c()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public d(JLd7/w;)J
     .locals 6
 
     .line 1
@@ -8434,7 +8446,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v3, p1, p2, p3}, Lj8/h;->c(JLd7/w;)J
+    invoke-virtual {v3, p1, p2, p3}, Lj8/h;->d(JLd7/w;)J
 
     .line 15
     .line 16
@@ -8648,7 +8660,7 @@
     .line 213
 .end method
 
-.method public declared-synchronized d(Lj8/h;)V
+.method public declared-synchronized e(Lj8/h;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -8796,28 +8808,16 @@
     .line 107
 .end method
 
-.method public e(J)Z
+.method public f(J)Z
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->C:Lh8/p0;
 
-    invoke-interface {v0, p1, p2}, Lh8/p0;->e(J)Z
+    invoke-interface {v0, p1, p2}, Lh8/p0;->f(J)Z
 
     move-result p1
 
     return p1
-.end method
-
-.method public f()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->C:Lh8/p0;
-
-    invoke-interface {v0}, Lh8/p0;->f()Z
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public g()J
@@ -8842,7 +8842,7 @@
     return-void
 .end method
 
-.method public bridge synthetic i(Lh8/p0;)V
+.method public bridge synthetic j(Lh8/p0;)V
     .locals 0
 
     check-cast p1, Lj8/h;
@@ -8852,240 +8852,7 @@
     return-void
 .end method
 
-.method public k(Lh8/r$a;J)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/b;->z:Lh8/r$a;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, p0}, Lh8/r$a;->l(Lh8/r;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-.end method
-
-.method public n()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->q:Ld9/t;
-
-    invoke-interface {v0}, Ld9/t;->a()V
-
-    return-void
-.end method
-
-.method public o([La9/h;[Z[Lh8/o0;[ZJ)J
+.method public k([La9/h;[Z[Lh8/o0;[ZJ)J
     .locals 7
 
     .line 1
@@ -9743,7 +9510,7 @@
     .line 557
 .end method
 
-.method public p(J)J
+.method public l(J)J
     .locals 5
 
     .line 1
@@ -9892,7 +9659,7 @@
     .line 107
 .end method
 
-.method public r()J
+.method public n()J
     .locals 2
 
     const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
@@ -9900,7 +9667,240 @@
     return-wide v0
 .end method
 
-.method public s()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+.method public q(Lh8/r$a;J)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/b;->z:Lh8/r$a;
+
+    .line 2
+    .line 3
+    invoke-interface {p1, p0}, Lh8/r$a;->i(Lh8/r;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+.end method
+
+.method public r()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->q:Ld9/t;
+
+    invoke-interface {v0}, Ld9/t;->a()V
+
+    return-void
+.end method
+
+.method public t()Lcom/google/android/exoplayer2/source/TrackGroupArray;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/b;->s:Lcom/google/android/exoplayer2/source/TrackGroupArray;

@@ -173,7 +173,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -236,7 +235,6 @@
     .line 25
     return p1
     .line 26
-    .line 27
 .end method
 
 .method public g(Landroid/graphics/Matrix;)F
@@ -364,9 +362,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public getCurrentAngle()F
@@ -461,7 +456,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public getViewBitmap()Landroid/graphics/Bitmap;
@@ -595,9 +589,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method protected h(Landroid/graphics/Matrix;I)F
@@ -659,8 +650,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected i()V
@@ -827,7 +816,7 @@
 
     .line 71
     .line 72
-    invoke-interface {v0}, Lcom/yalantis/ucrop/view/b$b;->b()V
+    invoke-interface {v0}, Lcom/yalantis/ucrop/view/b$b;->a()V
 
     .line 73
     .line 74
@@ -853,9 +842,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public k(FFF)V
@@ -911,7 +897,7 @@
     move-result p2
 
     .line 26
-    invoke-interface {p1, p2}, Lcom/yalantis/ucrop/view/b$b;->a(F)V
+    invoke-interface {p1, p2}, Lcom/yalantis/ucrop/view/b$b;->d(F)V
 
     .line 27
     .line 28
@@ -1073,7 +1059,7 @@
     move-result p2
 
     .line 26
-    invoke-interface {p1, p2}, Lcom/yalantis/ucrop/view/b$b;->d(F)V
+    invoke-interface {p1, p2}, Lcom/yalantis/ucrop/view/b$b;->c(F)V
 
     .line 27
     .line 28
@@ -1253,8 +1239,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public n(Landroid/net/Uri;Landroid/net/Uri;)V
@@ -1328,8 +1312,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected onLayout(ZIIII)V
@@ -1990,7 +1972,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMaxBitmapSize(I)V
@@ -2047,7 +2028,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setTransformImageListener(Lcom/yalantis/ucrop/view/b$b;)V

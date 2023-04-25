@@ -432,14 +432,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public static synthetic a(Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;)V
@@ -494,7 +486,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final i()V
@@ -541,7 +532,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -596,7 +586,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final d()Landroid/view/ViewGroup;
@@ -663,7 +652,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final h()V
@@ -812,7 +800,4 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method

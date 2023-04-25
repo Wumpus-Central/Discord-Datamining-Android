@@ -44,7 +44,7 @@
     return-void
 .end method
 
-.method j(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFF)V
+.method k(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFF)V
     .locals 7
 
     .line 1
@@ -651,9 +651,6 @@
 
 .method public setAlign(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "align"
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/horcrux/svg/d0;->q:Ljava/lang/String;
@@ -686,14 +683,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMeetOrSlice(I)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "meetOrSlice"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/d0;->r:I
@@ -726,14 +719,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMinX(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "minX"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/d0;->m:F
@@ -766,14 +755,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMinY(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "minY"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/d0;->n:F
@@ -806,14 +791,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setVbHeight(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "vbHeight"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/d0;->p:F
@@ -846,14 +827,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setVbWidth(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "vbWidth"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/d0;->o:F
@@ -886,5 +863,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

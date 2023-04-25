@@ -7,11 +7,11 @@
 
 
 # virtual methods
-.method public abstract c(Lcom/google/android/exoplayer2/upstream/cache/a;Ljava/lang/String;JJ)V
+.method public abstract c()Z
 .end method
 
-.method public abstract d()V
+.method public abstract d(Lcom/google/android/exoplayer2/upstream/cache/a;Ljava/lang/String;JJ)V
 .end method
 
-.method public abstract e()Z
+.method public abstract e()V
 .end method

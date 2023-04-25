@@ -178,7 +178,7 @@
     return-void
 .end method
 
-.method public static f(Ljava/io/File;JJLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
+.method public static e(Ljava/io/File;JJLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
     .locals 13
 
     .line 1
@@ -216,7 +216,7 @@
     move-object v2, p0
 
     .line 17
-    invoke-static {p0, v0}, Lcom/google/android/exoplayer2/upstream/cache/i;->l(Ljava/io/File;Lcom/google/android/exoplayer2/upstream/cache/h;)Ljava/io/File;
+    invoke-static {p0, v0}, Lcom/google/android/exoplayer2/upstream/cache/i;->j(Ljava/io/File;Lcom/google/android/exoplayer2/upstream/cache/h;)Ljava/io/File;
 
     .line 18
     .line 19
@@ -807,7 +807,7 @@
     .line 461
 .end method
 
-.method public static h(Ljava/io/File;JLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
+.method public static f(Ljava/io/File;JLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
     .locals 6
 
     const-wide v3, -0x7fffffffffffffffL    # -4.9E-324
@@ -818,14 +818,14 @@
 
     move-object v5, p3
 
-    invoke-static/range {v0 .. v5}, Lcom/google/android/exoplayer2/upstream/cache/i;->f(Ljava/io/File;JJLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
+    invoke-static/range {v0 .. v5}, Lcom/google/android/exoplayer2/upstream/cache/i;->e(Ljava/io/File;JJLcom/google/android/exoplayer2/upstream/cache/h;)Lcom/google/android/exoplayer2/upstream/cache/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static i(Ljava/lang/String;JJ)Lcom/google/android/exoplayer2/upstream/cache/i;
+.method public static g(Ljava/lang/String;JJ)Lcom/google/android/exoplayer2/upstream/cache/i;
     .locals 10
 
     new-instance v9, Lcom/google/android/exoplayer2/upstream/cache/i;
@@ -847,7 +847,7 @@
     return-object v9
 .end method
 
-.method public static j(Ljava/lang/String;J)Lcom/google/android/exoplayer2/upstream/cache/i;
+.method public static h(Ljava/lang/String;J)Lcom/google/android/exoplayer2/upstream/cache/i;
     .locals 10
 
     new-instance v9, Lcom/google/android/exoplayer2/upstream/cache/i;
@@ -869,7 +869,7 @@
     return-object v9
 .end method
 
-.method public static k(Ljava/io/File;IJJ)Ljava/io/File;
+.method public static i(Ljava/io/File;IJJ)Ljava/io/File;
     .locals 2
 
     new-instance v0, Ljava/io/File;
@@ -903,7 +903,7 @@
     return-object v0
 .end method
 
-.method private static l(Ljava/io/File;Lcom/google/android/exoplayer2/upstream/cache/h;)Ljava/io/File;
+.method private static j(Ljava/io/File;Lcom/google/android/exoplayer2/upstream/cache/h;)Ljava/io/File;
     .locals 11
 
     .line 1
@@ -1130,7 +1130,7 @@
     move-result-wide v9
 
     .line 106
-    invoke-static/range {v5 .. v10}, Lcom/google/android/exoplayer2/upstream/cache/i;->k(Ljava/io/File;IJJ)Ljava/io/File;
+    invoke-static/range {v5 .. v10}, Lcom/google/android/exoplayer2/upstream/cache/i;->i(Ljava/io/File;IJJ)Ljava/io/File;
 
     .line 107
     .line 108
@@ -1255,7 +1255,7 @@
 
 
 # virtual methods
-.method public e(Ljava/io/File;J)Lcom/google/android/exoplayer2/upstream/cache/i;
+.method public d(Ljava/io/File;J)Lcom/google/android/exoplayer2/upstream/cache/i;
     .locals 10
 
     .line 1

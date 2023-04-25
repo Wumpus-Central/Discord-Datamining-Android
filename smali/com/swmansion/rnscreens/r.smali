@@ -306,9 +306,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private final C()V
@@ -440,9 +437,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private final D()V
@@ -577,9 +571,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private final E()Lcom/swmansion/rnscreens/r$b;
@@ -679,7 +670,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private static final H(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -726,7 +716,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final J(Lcom/swmansion/rnscreens/r$b;)V
@@ -927,9 +916,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static synthetic w(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -1004,7 +990,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final B(Lcom/swmansion/rnscreens/s;)V
@@ -1047,7 +1032,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final I()V
@@ -1084,7 +1068,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public bridge synthetic c(Lcom/swmansion/rnscreens/j;)Lcom/swmansion/rnscreens/n;
@@ -1252,9 +1235,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
@@ -1461,7 +1441,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final getGoingForward()Z
@@ -1609,9 +1588,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getTopScreen()Lcom/swmansion/rnscreens/j;
@@ -1713,7 +1689,6 @@
     .line 23
     :cond_0
     return-void
-    .line 24
 .end method
 
 .method public p()V
@@ -4063,7 +4038,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public s()V
@@ -4099,7 +4073,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final setGoingForward(Z)V
@@ -4150,7 +4123,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public u(I)V
@@ -4201,5 +4173,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

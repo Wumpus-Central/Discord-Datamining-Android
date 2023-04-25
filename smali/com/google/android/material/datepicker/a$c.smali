@@ -18,5 +18,5 @@
 
 
 # virtual methods
-.method public abstract x(J)Z
+.method public abstract m(J)Z
 .end method

@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract a(F)V
+.method public abstract a()V
 .end method
 
-.method public abstract b()V
+.method public abstract b(Ljava/lang/Exception;)V
 .end method
 
-.method public abstract c(Ljava/lang/Exception;)V
+.method public abstract c(F)V
 .end method
 
 .method public abstract d(F)V

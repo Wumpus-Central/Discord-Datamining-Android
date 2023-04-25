@@ -189,7 +189,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>(Landroid/view/View;)V
@@ -616,30 +615,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private A(Landroid/text/TextPaint;)V
@@ -684,7 +659,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private B(F)V
@@ -1131,30 +1105,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private static C(FF)Z
@@ -1276,8 +1226,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static G(FFFLandroid/animation/TimeInterpolator;)F
@@ -1648,7 +1596,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private U(Landroid/graphics/Typeface;)Z
@@ -1789,9 +1736,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private Y(F)V
@@ -1830,7 +1774,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private static a(IIF)I
@@ -2760,30 +2703,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private c()V
@@ -2934,9 +2853,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private d(F)F
@@ -2992,7 +2908,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private e()F
@@ -3137,9 +3052,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private f(Ljava/lang/CharSequence;)Z
@@ -3185,7 +3097,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private g(F)V
@@ -3778,30 +3689,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private h(F)V
@@ -4908,7 +4795,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private k(IFZ)Landroid/text/StaticLayout;
@@ -6242,9 +6128,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private r(II)F
@@ -6539,14 +6422,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private s(Landroid/graphics/RectF;II)F
@@ -6824,7 +6699,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private v()I
@@ -6987,9 +6861,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private z(Landroid/text/TextPaint;)V
@@ -7034,7 +6905,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -7097,6 +6967,76 @@
     .line 24
     :goto_0
     return v0
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method public H(Landroid/content/res/Configuration;)V
@@ -7247,9 +7187,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method J()V
@@ -7392,9 +7329,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public K()V
@@ -7462,7 +7396,6 @@
     :cond_2
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public N(IIII)V
@@ -8209,30 +8142,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public R(Landroid/content/res/ColorStateList;)V
@@ -8274,7 +8183,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public S(I)V
@@ -8316,7 +8224,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public T(Landroid/graphics/Typeface;)V
@@ -8358,7 +8265,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public V(IIII)V
@@ -8712,7 +8618,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public Z(Landroid/content/res/ColorStateList;)V
@@ -8754,7 +8659,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public a0(I)V
@@ -8796,7 +8700,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public b0(F)V
@@ -8840,7 +8743,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public d0(F)V
@@ -8892,7 +8794,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public f0(Landroid/animation/TimeInterpolator;)V
@@ -8929,7 +8830,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final g0([I)Z
@@ -8979,7 +8879,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public h0(Ljava/lang/CharSequence;)V
@@ -9034,7 +8933,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public i0(Landroid/animation/TimeInterpolator;)V
@@ -9071,7 +8969,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public j0(Landroid/graphics/Typeface;)V
@@ -9120,7 +9017,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public l(Landroid/graphics/Canvas;)V
@@ -9575,30 +9471,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public o(Landroid/graphics/RectF;II)V
@@ -9825,7 +9697,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public t()I
@@ -9879,7 +9750,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public x()F

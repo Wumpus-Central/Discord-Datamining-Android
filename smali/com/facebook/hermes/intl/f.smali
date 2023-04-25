@@ -227,7 +227,7 @@
 
     move-result-object p0
 
-    invoke-interface {p0}, Lg5/b;->a()Ljava/lang/String;
+    invoke-interface {p0}, Lg5/b;->g()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1948,7 +1948,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static g(Ljava/lang/String;Lcom/facebook/hermes/intl/e;)Lcom/facebook/hermes/intl/k;
@@ -5482,5 +5481,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

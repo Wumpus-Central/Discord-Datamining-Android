@@ -91,7 +91,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public static final synthetic a(Lcom/mrousavy/camera/frameprocessor/a;)I
@@ -159,7 +158,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final e()V
@@ -197,7 +195,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final f()D

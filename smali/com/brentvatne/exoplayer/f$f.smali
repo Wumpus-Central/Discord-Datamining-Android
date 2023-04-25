@@ -232,7 +232,7 @@
 
     .line 96
     .line 97
-    invoke-static {v6}, Lcom/brentvatne/exoplayer/f;->i(Lcom/brentvatne/exoplayer/f;)I
+    invoke-static {v6}, Lcom/brentvatne/exoplayer/f;->h(Lcom/brentvatne/exoplayer/f;)I
 
     .line 98
     .line 99
@@ -244,7 +244,7 @@
 
     .line 102
     .line 103
-    invoke-static {v7}, Lcom/brentvatne/exoplayer/f;->j(Lcom/brentvatne/exoplayer/f;)I
+    invoke-static {v7}, Lcom/brentvatne/exoplayer/f;->i(Lcom/brentvatne/exoplayer/f;)I
 
     .line 104
     .line 105
@@ -349,7 +349,7 @@
 
     .line 157
     .line 158
-    invoke-static {v6}, Lcom/brentvatne/exoplayer/f;->k(Lcom/brentvatne/exoplayer/f;)Ld9/o;
+    invoke-static {v6}, Lcom/brentvatne/exoplayer/f;->j(Lcom/brentvatne/exoplayer/f;)Ld9/o;
 
     .line 159
     .line 160
@@ -402,7 +402,7 @@
 
     .line 184
     .line 185
-    invoke-virtual {v0, v4}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-virtual {v0, v4}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->I(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 186
     .line 187
@@ -432,7 +432,7 @@
 
     .line 200
     .line 201
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->l(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->k(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
 
     .line 202
     .line 203
@@ -461,7 +461,7 @@
 
     .line 215
     .line 216
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->n(Lcom/brentvatne/exoplayer/f;)Lz2/a;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->m(Lcom/brentvatne/exoplayer/f;)Lz2/a;
 
     .line 217
     .line 218
@@ -482,7 +482,7 @@
 
     .line 226
     .line 227
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->k(Lcom/brentvatne/exoplayer/f;)Ld9/o;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->j(Lcom/brentvatne/exoplayer/f;)Ld9/o;
 
     .line 228
     .line 229
@@ -503,7 +503,7 @@
 
     .line 237
     .line 238
-    invoke-virtual {v0, v4, v5}, Ld9/o;->e(Landroid/os/Handler;Ld9/e$a;)V
+    invoke-virtual {v0, v4, v5}, Ld9/o;->g(Landroid/os/Handler;Ld9/e$a;)V
 
     .line 239
     .line 240
@@ -512,7 +512,7 @@
 
     .line 242
     .line 243
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->p(Lcom/brentvatne/exoplayer/f;)Z
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->n(Lcom/brentvatne/exoplayer/f;)Z
 
     .line 244
     .line 245
@@ -523,7 +523,7 @@
     xor-int/2addr v4, v3
 
     .line 248
-    invoke-static {v0, v4}, Lcom/brentvatne/exoplayer/f;->q(Lcom/brentvatne/exoplayer/f;Z)V
+    invoke-static {v0, v4}, Lcom/brentvatne/exoplayer/f;->o(Lcom/brentvatne/exoplayer/f;Z)V
 
     .line 249
     .line 250
@@ -532,7 +532,7 @@
 
     .line 252
     .line 253
-    invoke-static {v0, v3}, Lcom/brentvatne/exoplayer/f;->s(Lcom/brentvatne/exoplayer/f;Z)Z
+    invoke-static {v0, v3}, Lcom/brentvatne/exoplayer/f;->q(Lcom/brentvatne/exoplayer/f;Z)Z
 
     .line 254
     .line 255
@@ -545,7 +545,7 @@
 
     .line 259
     .line 260
-    invoke-static {v4}, Lcom/brentvatne/exoplayer/f;->t(Lcom/brentvatne/exoplayer/f;)F
+    invoke-static {v4}, Lcom/brentvatne/exoplayer/f;->u(Lcom/brentvatne/exoplayer/f;)F
 
     .line 261
     .line 262
@@ -584,7 +584,7 @@
 
     .line 279
     .line 280
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->r(Lcom/brentvatne/exoplayer/f;)Z
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->p(Lcom/brentvatne/exoplayer/f;)Z
 
     .line 281
     .line 282
@@ -600,7 +600,7 @@
 
     .line 287
     .line 288
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->v(Lcom/brentvatne/exoplayer/f;)Landroid/net/Uri;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->w(Lcom/brentvatne/exoplayer/f;)Landroid/net/Uri;
 
     .line 289
     .line 290
@@ -616,7 +616,7 @@
 
     .line 295
     .line 296
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->l(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->k(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
 
     .line 297
     .line 298
@@ -633,7 +633,7 @@
 
     .line 304
     .line 305
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->w(Lcom/brentvatne/exoplayer/f;)Ljava/util/UUID;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->x(Lcom/brentvatne/exoplayer/f;)Ljava/util/UUID;
 
     .line 306
     .line 307
@@ -654,7 +654,7 @@
 
     .line 314
     .line 315
-    invoke-static {v4}, Lcom/brentvatne/exoplayer/f;->w(Lcom/brentvatne/exoplayer/f;)Ljava/util/UUID;
+    invoke-static {v4}, Lcom/brentvatne/exoplayer/f;->x(Lcom/brentvatne/exoplayer/f;)Ljava/util/UUID;
 
     .line 316
     .line 317
@@ -805,7 +805,7 @@
 
     .line 383
     .line 384
-    invoke-static {v5}, Lcom/brentvatne/exoplayer/f;->v(Lcom/brentvatne/exoplayer/f;)Landroid/net/Uri;
+    invoke-static {v5}, Lcom/brentvatne/exoplayer/f;->w(Lcom/brentvatne/exoplayer/f;)Landroid/net/Uri;
 
     .line 385
     .line 386
@@ -958,7 +958,7 @@
     move-result-wide v6
 
     .line 457
-    invoke-virtual {v4, v5, v6, v7}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->g(IJ)V
+    invoke-virtual {v4, v5, v6, v7}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->D(IJ)V
 
     .line 458
     .line 459
@@ -988,7 +988,7 @@
 
     .line 471
     .line 472
-    invoke-static {v0, v2}, Lcom/brentvatne/exoplayer/f;->s(Lcom/brentvatne/exoplayer/f;Z)Z
+    invoke-static {v0, v2}, Lcom/brentvatne/exoplayer/f;->q(Lcom/brentvatne/exoplayer/f;Z)Z
 
     .line 473
     .line 474
@@ -997,7 +997,7 @@
 
     .line 476
     .line 477
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->l(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->k(Lcom/brentvatne/exoplayer/f;)Lcom/brentvatne/exoplayer/d;
 
     .line 478
     .line 479

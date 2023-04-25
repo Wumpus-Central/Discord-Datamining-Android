@@ -446,7 +446,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v0, v2, v1}, Lokhttp3/WebSocket;->f(ILjava/lang/String;)Z
+    invoke-interface {v0, v2, v1}, Lokhttp3/WebSocket;->g(ILjava/lang/String;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -656,7 +656,7 @@
 
     .line 11
     .line 12
-    invoke-interface {v0, v2, v1}, Lokhttp3/WebSocket;->f(ILjava/lang/String;)Z
+    invoke-interface {v0, v2, v1}, Lokhttp3/WebSocket;->g(ILjava/lang/String;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2638,5 +2638,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

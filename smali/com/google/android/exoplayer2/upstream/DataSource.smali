@@ -21,10 +21,7 @@
 .method public abstract close()V
 .end method
 
-.method public abstract f(Ld9/x;)V
-.end method
-
-.method public abstract i()Ljava/util/Map;
+.method public abstract d()Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -35,6 +32,9 @@
             ">;>;"
         }
     .end annotation
+.end method
+
+.method public abstract h(Ld9/x;)V
 .end method
 
 .method public abstract m()Landroid/net/Uri;

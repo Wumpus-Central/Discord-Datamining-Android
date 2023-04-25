@@ -66,7 +66,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method static synthetic access$002(Lcom/swmansion/reanimated/NativeProxy$EventHandler;Lcom/facebook/react/uimanager/UIManagerModule$CustomEventNamesResolver;)Lcom/facebook/react/uimanager/UIManagerModule$CustomEventNamesResolver;

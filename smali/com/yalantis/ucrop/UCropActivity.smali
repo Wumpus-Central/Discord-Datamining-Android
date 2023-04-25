@@ -113,7 +113,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>()V
@@ -261,9 +260,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private A(I)V
@@ -312,7 +308,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private B(I)V
@@ -772,30 +767,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private C()V
@@ -963,9 +934,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private D(Landroid/content/Intent;)V
@@ -1500,30 +1468,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private E()V
@@ -1686,9 +1630,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private F()V
@@ -1827,9 +1768,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private G()V
@@ -1990,9 +1928,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private H(Landroid/content/Intent;)V
@@ -2602,30 +2537,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method static synthetic a(Lcom/yalantis/ucrop/UCropActivity;F)V
@@ -2851,9 +2762,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private l(I)V
@@ -3027,9 +2935,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private n()V
@@ -3209,9 +3114,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private o(Landroid/content/Intent;)V
@@ -5364,7 +5266,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private q(I)V
@@ -5407,7 +5308,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private r(I)V
@@ -5549,9 +5449,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private s(F)V
@@ -5674,9 +5571,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private t(I)V
@@ -5716,7 +5610,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private u(Landroid/content/Intent;)V
@@ -5866,9 +5759,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private v()V
@@ -6000,9 +5890,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private y(F)V
@@ -6131,9 +6018,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private z(I)V
@@ -6173,7 +6057,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -6298,9 +6181,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
@@ -6351,7 +6231,6 @@
     .line 25
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
@@ -6797,30 +6676,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
@@ -6946,9 +6801,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
@@ -7068,9 +6920,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method protected onStop()V
@@ -7109,7 +6958,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected w(Ljava/lang/Throwable;)V

@@ -330,7 +330,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p2, p1}, Lh8/q0;->d(I)I
+    invoke-interface {p2, p1}, Lh8/q0;->c(I)I
 
     .line 6
     .line 7
@@ -644,7 +644,7 @@
 
     iget-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
 
-    invoke-interface {p2, p1}, Lh8/q0;->c(I)I
+    invoke-interface {p2, p1}, Lh8/q0;->b(I)I
 
     move-result p1
 
@@ -744,7 +744,7 @@
 
     .line 16
     .line 17
-    invoke-interface {v0}, Lh8/q0;->b()I
+    invoke-interface {v0}, Lh8/q0;->f()I
 
     .line 18
     .line 19
@@ -1109,7 +1109,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v0}, Lh8/q0;->f()I
+    invoke-interface {v0}, Lh8/q0;->d()I
 
     .line 17
     .line 18

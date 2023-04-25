@@ -1457,7 +1457,7 @@
     const/4 v2, 0x2
 
     .line 5
-    invoke-static {p1, v0, v1, v2, v1}, Lokhttp3/Response;->x(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0, v1, v2, v1}, Lokhttp3/Response;->t(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -1521,7 +1521,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p1}, Lokhttp3/Response;->o0()Z
+    invoke-virtual {p1}, Lokhttp3/Response;->Y()Z
 
     .line 35
     .line 36
@@ -1533,7 +1533,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Lokhttp3/Response;->F()Z
+    invoke-virtual {p1}, Lokhttp3/Response;->C()Z
 
     .line 41
     .line 42

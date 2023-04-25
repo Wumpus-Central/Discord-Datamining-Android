@@ -135,7 +135,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic l(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
+.method public bridge synthetic i(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method public bridge synthetic m(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+.method public bridge synthetic j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
@@ -155,7 +155,7 @@
     return-void
 .end method
 
-.method public bridge synthetic t(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
+.method public bridge synthetic o(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;

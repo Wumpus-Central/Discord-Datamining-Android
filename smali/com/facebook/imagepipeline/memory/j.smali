@@ -83,7 +83,7 @@
 
     move-result-object p2
 
-    invoke-static {p2, p1}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p2, p1}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
 
@@ -92,7 +92,7 @@
     return-void
 .end method
 
-.method private f()V
+.method private g()V
     .locals 1
 
     .line 1
@@ -100,7 +100,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 4
     .line 5
@@ -184,7 +184,7 @@
 .method public bridge synthetic b()Ly3/g;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/memory/j;->k()Lx5/t;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/memory/j;->i()Lx5/t;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 4
     .line 5
@@ -277,11 +277,11 @@
     .line 66
 .end method
 
-.method i(I)V
+.method h(I)V
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->f()V
+    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->g()V
 
     .line 2
     .line 3
@@ -299,7 +299,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -356,7 +356,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 40
     .line 41
@@ -375,7 +375,7 @@
     const/4 v2, 0x0
 
     .line 48
-    invoke-interface {v0, v2, p1, v2, v1}, Lx5/s;->k(ILx5/s;II)V
+    invoke-interface {v0, v2, p1, v2, v1}, Lx5/s;->l(ILx5/s;II)V
 
     .line 49
     .line 50
@@ -393,7 +393,7 @@
 
     .line 57
     .line 58
-    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
 
     .line 59
     .line 60
@@ -417,14 +417,13 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public k()Lx5/t;
+.method public i()Lx5/t;
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->f()V
+    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->g()V
 
     .line 2
     .line 3
@@ -550,14 +549,14 @@
     if-gt v0, v1, :cond_0
 
     .line 3
-    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->f()V
+    invoke-direct {p0}, Lcom/facebook/imagepipeline/memory/j;->g()V
 
     .line 4
     iget v0, p0, Lcom/facebook/imagepipeline/memory/j;->m:I
 
     add-int/2addr v0, p3
 
-    invoke-virtual {p0, v0}, Lcom/facebook/imagepipeline/memory/j;->i(I)V
+    invoke-virtual {p0, v0}, Lcom/facebook/imagepipeline/memory/j;->h(I)V
 
     .line 5
     iget-object v0, p0, Lcom/facebook/imagepipeline/memory/j;->l:Lcom/facebook/common/references/CloseableReference;
@@ -568,7 +567,7 @@
 
     check-cast v0, Lcom/facebook/common/references/CloseableReference;
 
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     move-result-object v0
 

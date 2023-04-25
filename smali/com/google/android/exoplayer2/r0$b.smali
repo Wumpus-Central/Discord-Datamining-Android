@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract p(ILjava/lang/Object;)V
+.method public abstract i(ILjava/lang/Object;)V
 .end method

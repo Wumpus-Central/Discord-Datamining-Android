@@ -252,7 +252,7 @@
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/memory/f;->a:Lz3/c;
 
-    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
 

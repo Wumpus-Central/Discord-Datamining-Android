@@ -93,7 +93,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>(ILcom/facebook/react/bridge/ReadableMap;Lcom/swmansion/reanimated/NodesManager;)V
@@ -617,9 +616,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 
@@ -671,7 +667,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected final dangerouslyRescheduleEvaluate()V
@@ -717,7 +712,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final doubleValue()Ljava/lang/Double;
@@ -900,9 +894,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method protected abstract evaluate()Ljava/lang/Object;
@@ -948,7 +939,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected markUpdated()V
@@ -990,7 +980,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onDrop()V
@@ -1036,7 +1025,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final value()Ljava/lang/Object;
@@ -1214,7 +1202,4 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method

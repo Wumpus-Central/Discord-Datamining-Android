@@ -3454,7 +3454,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static getNativePropSettersForViewManagerClass(Ljava/lang/Class;)Ljava/util/Map;
@@ -3587,7 +3586,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static getNativePropsForView(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;

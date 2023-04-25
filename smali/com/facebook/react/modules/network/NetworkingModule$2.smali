@@ -349,7 +349,7 @@
     move-result-object v2
 
     .line 33
-    invoke-virtual {p2}, Lokhttp3/Response;->k0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
 
     .line 34
     .line 35
@@ -395,7 +395,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {p2, v1}, Lokhttp3/Response;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, v1}, Lokhttp3/Response;->r(Ljava/lang/String;)Ljava/lang/String;
 
     .line 57
     .line 58
@@ -440,7 +440,7 @@
 
     .line 78
     .line 79
-    invoke-virtual {p2, p1}, Lokhttp3/Response;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Lokhttp3/Response;->r(Ljava/lang/String;)Ljava/lang/String;
 
     .line 80
     .line 81
@@ -694,7 +694,7 @@
 
     .line 197
     :try_start_3
-    invoke-virtual {p2}, Lokhttp3/Response;->k0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
 
     .line 198
     .line 199

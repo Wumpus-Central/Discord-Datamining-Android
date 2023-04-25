@@ -345,9 +345,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private final b(Landroid/view/ViewGroup;)Z
@@ -485,9 +482,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private final g(II)V
@@ -557,8 +551,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 
@@ -619,7 +611,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final c()Ljava/lang/Boolean;
@@ -874,7 +865,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setContainer(Lcom/swmansion/rnscreens/l;)V
@@ -974,7 +964,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setNavigationBarHidden(Ljava/lang/Boolean;)V
@@ -1029,7 +1018,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setReplaceAnimation(Lcom/swmansion/rnscreens/j$b;)V
@@ -1068,7 +1056,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setScreenOrientation(Ljava/lang/String;)V
@@ -1604,30 +1591,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public final setStackAnimation(Lcom/swmansion/rnscreens/j$c;)V
@@ -1666,7 +1629,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setStackPresentation(Lcom/swmansion/rnscreens/j$d;)V
@@ -1705,7 +1667,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setStatusBarAnimated(Ljava/lang/Boolean;)V
@@ -1773,6 +1734,66 @@
     .line 27
     :cond_1
     return-void
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
 .end method
 
 .method public final setStatusBarHidden(Ljava/lang/Boolean;)V
@@ -1827,7 +1848,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setStatusBarStyle(Ljava/lang/String;)V
@@ -1887,6 +1907,66 @@
     .line 27
     :cond_1
     return-void
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
 .end method
 
 .method public final setStatusBarTranslucent(Ljava/lang/Boolean;)V
@@ -1946,6 +2026,66 @@
     .line 27
     :cond_1
     return-void
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
 .end method
 
 .method public final setTransitioning(Z)V
@@ -2079,7 +2219,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

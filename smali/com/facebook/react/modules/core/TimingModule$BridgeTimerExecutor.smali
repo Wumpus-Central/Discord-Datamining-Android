@@ -132,7 +132,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public callTimers(Lcom/facebook/react/bridge/WritableArray;)V
@@ -233,7 +232,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public emitTimeDriftWarning(Ljava/lang/String;)V
@@ -334,5 +332,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

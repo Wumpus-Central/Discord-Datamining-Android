@@ -320,7 +320,7 @@
 
     .line 17
     .line 18
-    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->f(Ld9/x;)V
+    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
 
     .line 19
     .line 20
@@ -1510,7 +1510,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/DataSource;->f(Ld9/x;)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
 
     :cond_0
     return-void
@@ -2707,7 +2707,39 @@
     .line 126
 .end method
 
-.method public f(Ld9/x;)V
+.method public d()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->k:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/DataSource;->d()Ljava/util/Map;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public h(Ld9/x;)V
     .locals 1
 
     .line 1
@@ -2720,7 +2752,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/upstream/DataSource;->f(Ld9/x;)V
+    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
 
     .line 7
     .line 8
@@ -2856,38 +2888,6 @@
     .line 105
     .line 106
     .line 107
-.end method
-
-.method public i()Ljava/util/Map;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->k:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/DataSource;->i()Ljava/util/Map;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
 .end method
 
 .method public m()Landroid/net/Uri;

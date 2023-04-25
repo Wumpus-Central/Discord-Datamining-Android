@@ -489,7 +489,7 @@
 
     .line 96
     .line 97
-    invoke-virtual {v2}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v2}, Ll8/i;->b()Lk8/e;
 
     .line 98
     .line 99
@@ -517,7 +517,7 @@
 
     .line 110
     :cond_4
-    invoke-interface {v2, p1, p2, v4, v5}, Lk8/e;->f(JJ)J
+    invoke-interface {v2, p1, p2, v4, v5}, Lk8/e;->h(JJ)J
 
     .line 111
     .line 112
@@ -525,7 +525,7 @@
     move-result-wide v3
 
     .line 114
-    invoke-interface {v2, v3, v4}, Lk8/e;->a(J)J
+    invoke-interface {v2, v3, v4}, Lk8/e;->c(J)J
 
     .line 115
     .line 116

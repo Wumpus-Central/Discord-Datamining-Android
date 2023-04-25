@@ -794,7 +794,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->c(Lcom/google/android/exoplayer2/upstream/cache/g;)V
+    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->f(Lcom/google/android/exoplayer2/upstream/cache/g;)V
 
     .line 31
     .line 32
@@ -1824,7 +1824,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p2, p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->c(Lcom/google/android/exoplayer2/upstream/cache/g;)V
+    invoke-interface {p2, p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->f(Lcom/google/android/exoplayer2/upstream/cache/g;)V
 
     .line 14
     .line 15
@@ -2359,7 +2359,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->f(J)V
+    invoke-interface {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->d(J)V
 
     .line 4
     .line 5
@@ -2372,7 +2372,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->f(J)V
+    invoke-interface {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->d(J)V
 
     .line 11
     .line 12
@@ -2382,7 +2382,7 @@
 
     .line 14
     .line 15
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->d()Z
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->b()Z
 
     .line 16
     .line 17
@@ -2402,7 +2402,7 @@
 
     .line 24
     .line 25
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->d()Z
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->b()Z
 
     .line 26
     .line 27
@@ -2439,7 +2439,7 @@
 
     .line 43
     .line 44
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->b(Ljava/util/HashMap;)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->e(Ljava/util/HashMap;)V
 
     .line 45
     .line 46
@@ -2732,7 +2732,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, Lbc/w0;->n()Lbc/g2;
+    invoke-virtual {v0}, Lbc/w0;->p()Lbc/g2;
 
     .line 12
     .line 13
@@ -2884,7 +2884,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->e(Ljava/util/HashMap;)V
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/upstream/cache/h$c;->c(Ljava/util/HashMap;)V
 
     .line 6
     .line 7

@@ -18,14 +18,14 @@
 
 
 # virtual methods
-.method public abstract W(Ljava/io/DataOutput;[B)V
-.end method
-
 .method public abstract available()I
 .end method
 
 .method public abstract getFileName()Ljava/lang/String;
 .end method
 
-.method public abstract s0()Lcom/facebook/soloader/r$b;
+.method public abstract q0(Ljava/io/DataOutput;[B)V
+.end method
+
+.method public abstract x0()Lcom/facebook/soloader/r$b;
 .end method

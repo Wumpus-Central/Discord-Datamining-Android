@@ -58,7 +58,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public static synthetic a(Lcom/google/firebase/messaging/o;Landroid/content/Intent;)V
@@ -128,7 +127,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -228,8 +226,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public onActivityDestroyed(Landroid/app/Activity;)V
@@ -283,7 +279,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public onActivityResumed(Landroid/app/Activity;)V

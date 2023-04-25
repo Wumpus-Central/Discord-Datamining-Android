@@ -241,7 +241,7 @@
 
     move-result-object v1
 
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->n()Ljava/lang/String;
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->z()Ljava/lang/String;
 
     move-result-object p1
 

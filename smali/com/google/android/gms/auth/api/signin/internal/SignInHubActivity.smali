@@ -458,7 +458,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->v()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 31
     .line 32
@@ -470,7 +470,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->v()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 37
     .line 38
@@ -490,7 +490,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->v()Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    invoke-virtual {v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 47
     .line 48

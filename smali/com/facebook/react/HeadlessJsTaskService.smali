@@ -251,7 +251,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private invokeStartTask(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/jstasks/HeadlessJsTaskConfig;)V
@@ -681,7 +680,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onHeadlessJsTaskStart(I)V
@@ -1179,5 +1177,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

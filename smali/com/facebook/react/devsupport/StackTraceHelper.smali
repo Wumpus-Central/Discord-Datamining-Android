@@ -253,7 +253,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static convertJsStackTrace(Lcom/facebook/react/bridge/ReadableArray;)[Lcom/facebook/react/devsupport/interfaces/StackFrame;
@@ -889,7 +888,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static formatStackTrace(Ljava/lang/String;[Lcom/facebook/react/devsupport/interfaces/StackFrame;)Ljava/lang/String;

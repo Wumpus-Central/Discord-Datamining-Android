@@ -7,16 +7,16 @@
 .method public abstract b(Landroid/view/View;IILcom/google/android/flexbox/c;)V
 .end method
 
-.method public abstract c(Lcom/google/android/flexbox/c;)V
+.method public abstract c(III)I
 .end method
 
-.method public abstract d(I)Landroid/view/View;
+.method public abstract e(I)Landroid/view/View;
 .end method
 
-.method public abstract e(III)I
+.method public abstract f(III)I
 .end method
 
-.method public abstract f(ILandroid/view/View;)V
+.method public abstract g(Landroid/view/View;)I
 .end method
 
 .method public abstract getAlignContent()I
@@ -72,19 +72,19 @@
 .method public abstract getSumOfCrossSize()I
 .end method
 
-.method public abstract h(I)Landroid/view/View;
+.method public abstract h(Lcom/google/android/flexbox/c;)V
 .end method
 
-.method public abstract i(Landroid/view/View;II)I
+.method public abstract i(I)Landroid/view/View;
 .end method
 
-.method public abstract j(III)I
+.method public abstract j(ILandroid/view/View;)V
 .end method
 
-.method public abstract k()Z
+.method public abstract k(Landroid/view/View;II)I
 .end method
 
-.method public abstract l(Landroid/view/View;)I
+.method public abstract l()Z
 .end method
 
 .method public abstract setFlexLines(Ljava/util/List;)V

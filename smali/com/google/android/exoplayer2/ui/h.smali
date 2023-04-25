@@ -12,10 +12,10 @@
 
 
 # virtual methods
-.method public abstract a([J[ZI)V
+.method public abstract a(Lcom/google/android/exoplayer2/ui/h$a;)V
 .end method
 
-.method public abstract b(Lcom/google/android/exoplayer2/ui/h$a;)V
+.method public abstract b([J[ZI)V
 .end method
 
 .method public abstract getPreferredUpdateDelay()J

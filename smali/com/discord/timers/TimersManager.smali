@@ -181,7 +181,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static synthetic a(Lcom/discord/timers/TimersManager;ILkotlin/jvm/functions/Function0;)V

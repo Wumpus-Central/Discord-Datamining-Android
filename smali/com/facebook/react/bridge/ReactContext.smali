@@ -195,7 +195,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/bridge/ReactContext;)Ljava/util/concurrent/CopyOnWriteArraySet;
@@ -443,7 +442,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public addWindowFocusChangeListener(Lcom/facebook/react/bridge/WindowFocusChangeListener;)V
@@ -923,7 +921,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getJSModule(Ljava/lang/Class;)Lcom/facebook/react/bridge/JavaScriptModule;
@@ -1044,7 +1041,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getJavaScriptContextHolder()Lcom/facebook/react/bridge/JavaScriptContextHolder;
@@ -1168,7 +1164,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getNativeModules()Ljava/util/Collection;
@@ -1395,7 +1390,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public handleException(Ljava/lang/Exception;)V
@@ -2615,7 +2609,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized initializeMessageQueueThreads(Lcom/facebook/react/bridge/queue/ReactQueueConfiguration;)V
@@ -3801,7 +3794,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public isBridgeless()Z
@@ -4788,7 +4780,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onNewIntent(Landroid/app/Activity;Landroid/content/Intent;)V
@@ -5119,7 +5110,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public registerSegment(ILjava/lang/String;Lcom/facebook/react/bridge/Callback;)V

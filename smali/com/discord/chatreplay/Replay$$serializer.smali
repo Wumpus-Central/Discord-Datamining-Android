@@ -304,11 +304,11 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/c;->y()Z
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/c;->p()Z
 
     move-result v1
 
@@ -318,11 +318,11 @@
 
     if-eqz v1, :cond_0
 
-    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v2
 
@@ -348,7 +348,7 @@
     :goto_0
     if-eqz v7, :cond_4
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->o(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
 
     move-result v8
 
@@ -360,7 +360,7 @@
 
     if-ne v8, v2, :cond_1
 
-    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v4
 
@@ -376,7 +376,7 @@
     throw p1
 
     :cond_2
-    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -397,7 +397,7 @@
     move v9, v6
 
     :goto_1
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     new-instance p1, Lcom/discord/chatreplay/Replay;
 
@@ -445,13 +445,13 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
 
     move-result-object p1
 
     invoke-static {p2, p1, v0}, Lcom/discord/chatreplay/Replay;->write$Self(Lcom/discord/chatreplay/Replay;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     return-void
 .end method

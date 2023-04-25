@@ -847,7 +847,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-interface {p1, p4}, Lsi/x;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p4}, Lsi/x;->d(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -883,7 +883,7 @@
     .line 59
     .line 60
     .line 61
-    invoke-interface {p1, p3}, Lsi/x;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p3}, Lsi/x;->d(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 62
     .line 63

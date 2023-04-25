@@ -72,7 +72,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -297,9 +296,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private B()Z
@@ -432,9 +428,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private setActionView(Landroid/view/View;)V
@@ -560,9 +553,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private z()V
@@ -722,22 +712,11 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
 # virtual methods
-.method public c()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public d(Landroidx/appcompat/view/menu/g;I)V
+.method public c(Landroidx/appcompat/view/menu/g;I)V
     .locals 0
 
     .line 1
@@ -1027,14 +1006,14 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
+.end method
+
+.method public d()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public getItemData()Landroidx/appcompat/view/menu/g;
@@ -1165,9 +1144,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setCheckable(Z)V
@@ -1217,7 +1193,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChecked(Z)V
@@ -1256,7 +1231,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setHorizontalPadding(I)V
@@ -1453,9 +1427,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setIconPadding(I)V
@@ -1531,7 +1502,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMaxLines(I)V

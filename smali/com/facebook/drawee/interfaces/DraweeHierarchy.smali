@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract e()Landroid/graphics/drawable/Drawable;
+.method public abstract d()Landroid/graphics/drawable/Drawable;
 .end method
 
 .method public abstract getBounds()Landroid/graphics/Rect;

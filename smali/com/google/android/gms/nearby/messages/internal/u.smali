@@ -69,6 +69,76 @@
     .line 23
     .line 24
     return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Lxa/e;)V
@@ -134,8 +204,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private final G(Ljava/lang/Object;)Lcom/google/android/gms/common/api/internal/d;
@@ -207,7 +275,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final I(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/nearby/messages/internal/p;Lcom/google/android/gms/nearby/messages/internal/p;I)Lcom/google/android/gms/tasks/Task;
@@ -602,8 +669,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 
@@ -612,7 +677,7 @@
     .locals 6
 
     .line 1
-    invoke-static {p1}, Lya/f;->v(Lcom/google/android/gms/nearby/messages/Message;)Lya/f;
+    invoke-static {p1}, Lya/f;->x(Lcom/google/android/gms/nearby/messages/Message;)Lya/f;
 
     .line 2
     .line 3
@@ -1226,109 +1291,7 @@
     return-void
 .end method
 
-.method public final a(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/nearby/messages/Message;",
-            ")",
-            "Lcom/google/android/gms/tasks/Task<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    const/16 v0, 0x50a
-
-    .line 5
-    .line 6
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-.end method
-
-.method public final b(Lxa/h;)Lcom/google/android/gms/tasks/Task;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxa/h;",
-            ")",
-            "Lcom/google/android/gms/tasks/Task<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    const/16 v0, 0x4f7
-
-    .line 5
-    .line 6
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-.end method
-
-.method public final c(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
+.method public final a(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1361,7 +1324,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, Lxa/i;->v()I
+    invoke-virtual {v0}, Lxa/i;->x()I
 
     .line 12
     .line 13
@@ -1591,17 +1554,9 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
-.method public final d(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+.method public final b(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1738,12 +1693,9 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
-.method public final e(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+.method public final c(Lxa/h;)Lcom/google/android/gms/tasks/Task;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1803,10 +1755,9 @@
     return-object p1
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public final f(Lxa/b;)Lcom/google/android/gms/tasks/Task;
+.method public final d(Lxa/b;)Lcom/google/android/gms/tasks/Task;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1854,7 +1805,106 @@
     .line 24
     .line 25
     .line 26
-    .line 27
+.end method
+
+.method public final f(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/nearby/messages/Message;",
+            ")",
+            "Lcom/google/android/gms/tasks/Task<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    const/16 v0, 0x50a
+
+    .line 5
+    .line 6
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public final g(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lxa/h;",
+            ")",
+            "Lcom/google/android/gms/tasks/Task<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    const/16 v0, 0x4f7
+
+    .line 5
+    .line 6
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
 .end method
 
 .method protected final i()Lw9/d$a;
@@ -1903,5 +1953,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method

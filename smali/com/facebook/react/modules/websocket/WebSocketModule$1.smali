@@ -425,7 +425,7 @@
 .method public onClosing(Lokhttp3/WebSocket;ILjava/lang/String;)V
     .locals 0
 
-    invoke-interface {p1, p2, p3}, Lokhttp3/WebSocket;->f(ILjava/lang/String;)Z
+    invoke-interface {p1, p2, p3}, Lokhttp3/WebSocket;->g(ILjava/lang/String;)Z
 
     return-void
 .end method
@@ -643,7 +643,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p2, v1, v2}, Lokhttp3/Response;->w(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, v1, v2}, Lokhttp3/Response;->s(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33

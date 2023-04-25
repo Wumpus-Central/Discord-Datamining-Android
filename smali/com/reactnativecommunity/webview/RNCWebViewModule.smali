@@ -117,7 +117,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static synthetic a(Ljava/lang/String;)V
@@ -480,8 +479,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public static synthetic b(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
@@ -661,9 +658,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private getCapturedFile(Lcom/reactnativecommunity/webview/RNCWebViewModule$c;)Ljava/io/File;
@@ -828,9 +822,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private getFileChooserIntent(Ljava/lang/String;)Landroid/content/Intent;
@@ -1081,9 +1072,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private getPermissionAwareActivity()Lcom/facebook/react/modules/core/PermissionAwareActivity;
@@ -1214,9 +1202,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private getPhotoIntent()Landroid/content/Intent;
@@ -1384,9 +1369,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private getSelectedFiles(Landroid/content/Intent;I)[Landroid/net/Uri;
@@ -1652,14 +1634,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private getVideoIntent()Landroid/content/Intent;
@@ -1827,9 +1801,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private static synthetic lambda$injectJavaScriptWithWebViewKey$1(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
@@ -2467,30 +2438,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private noAcceptTypesSet([Ljava/lang/String;)Ljava/lang/Boolean;
@@ -2670,9 +2617,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -2827,9 +2771,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public injectJavaScriptWithWebViewKey(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
@@ -2882,7 +2823,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected needsCameraPermission()Z
@@ -3043,9 +2983,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public onActivityResult(Landroid/app/Activity;IILandroid/content/Intent;)V
@@ -3632,8 +3569,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public releaseWebView(Ljava/lang/String;)V

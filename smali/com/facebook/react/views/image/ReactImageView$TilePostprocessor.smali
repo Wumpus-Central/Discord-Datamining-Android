@@ -247,7 +247,7 @@
 
     .line 96
     .line 97
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 98
     .line 99
@@ -269,7 +269,7 @@
     .line 107
     .line 108
     .line 109
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     .line 110
     .line 111
@@ -279,7 +279,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 113
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 114
     .line 115
@@ -291,7 +291,7 @@
     move-exception p2
 
     .line 118
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 119
     .line 120

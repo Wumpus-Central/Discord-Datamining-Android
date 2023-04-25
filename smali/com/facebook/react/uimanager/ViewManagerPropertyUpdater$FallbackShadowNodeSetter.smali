@@ -202,7 +202,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setProperty(Lcom/facebook/react/uimanager/ReactShadowNode;Ljava/lang/String;Ljava/lang/Object;)V

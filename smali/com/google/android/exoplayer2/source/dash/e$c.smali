@@ -283,7 +283,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lh7/h;->h()V
+    invoke-virtual {v0}, Lh7/h;->f()V
 
     .line 4
     .line 5
@@ -322,7 +322,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Lh7/h;->r()V
+    invoke-virtual {v0}, Lh7/h;->q()V
 
     .line 23
     .line 24
@@ -1122,29 +1122,7 @@
     return-void
 .end method
 
-.method public b(Ld9/h;IZI)I
-    .locals 0
-
-    iget-object p4, p0, Lcom/google/android/exoplayer2/source/dash/e$c;->a:Lh8/n0;
-
-    invoke-virtual {p4, p1, p2, p3}, Lh8/n0;->c(Ld9/h;IZ)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public synthetic c(Ld9/h;IZ)I
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3}, Ll7/a0;->a(Ll7/b0;Ld9/h;IZ)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public d(JIIILl7/b0$a;)V
+.method public b(JIIILl7/b0$a;)V
     .locals 7
 
     .line 1
@@ -1167,7 +1145,7 @@
     move-object v6, p6
 
     .line 8
-    invoke-virtual/range {v0 .. v6}, Lh8/n0;->d(JIIILl7/b0$a;)V
+    invoke-virtual/range {v0 .. v6}, Lh8/n0;->b(JIIILl7/b0$a;)V
 
     .line 9
     .line 10
@@ -1723,7 +1701,7 @@
     .line 557
 .end method
 
-.method public synthetic e(Lf9/y;I)V
+.method public synthetic c(Lf9/y;I)V
     .locals 0
 
     invoke-static {p0, p1, p2}, Ll7/a0;->b(Ll7/b0;Lf9/y;I)V
@@ -1731,14 +1709,36 @@
     return-void
 .end method
 
-.method public f(Lf9/y;II)V
+.method public d(Lf9/y;II)V
     .locals 0
 
     iget-object p3, p0, Lcom/google/android/exoplayer2/source/dash/e$c;->a:Lh8/n0;
 
-    invoke-virtual {p3, p1, p2}, Lh8/n0;->e(Lf9/y;I)V
+    invoke-virtual {p3, p1, p2}, Lh8/n0;->c(Lf9/y;I)V
 
     return-void
+.end method
+
+.method public e(Ld9/h;IZI)I
+    .locals 0
+
+    iget-object p4, p0, Lcom/google/android/exoplayer2/source/dash/e$c;->a:Lh8/n0;
+
+    invoke-virtual {p4, p1, p2, p3}, Lh8/n0;->f(Ld9/h;IZ)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public synthetic f(Ld9/h;IZ)I
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ll7/a0;->a(Ll7/b0;Ld9/h;IZ)I
+
+    move-result p1
+
+    return p1
 .end method
 
 .method public h(J)Z

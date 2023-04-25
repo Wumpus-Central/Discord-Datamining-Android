@@ -614,7 +614,7 @@
     move-result v1
 
     .line 11
-    invoke-virtual {v0}, Lkotlin/ranges/a;->f()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->e()I
 
     .line 12
     .line 13
@@ -6503,7 +6503,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public iterator()Ljava/util/Iterator;

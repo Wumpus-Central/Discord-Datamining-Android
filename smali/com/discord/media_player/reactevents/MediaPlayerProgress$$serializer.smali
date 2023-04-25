@@ -514,11 +514,11 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/Decoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/Decoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkotlinx/serialization/encoding/c;->y()Z
+    invoke-interface {v0}, Lkotlinx/serialization/encoding/c;->p()Z
 
     move-result v2
 
@@ -530,15 +530,15 @@
 
     if-eqz v2, :cond_0
 
-    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)D
+    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->F(Lkotlinx/serialization/descriptors/SerialDescriptor;I)D
 
     move-result-wide v5
 
-    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v7
 
-    invoke-interface {v0, v1, v3}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {v0, v1, v3}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v2
 
@@ -568,7 +568,7 @@
     :goto_0
     if-eqz v12, :cond_5
 
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->o(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
 
     move-result v13
 
@@ -582,7 +582,7 @@
 
     if-ne v13, v3, :cond_1
 
-    invoke-interface {v0, v1, v3}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {v0, v1, v3}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v8
 
@@ -598,7 +598,7 @@
     throw v0
 
     :cond_2
-    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->h(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
+    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->f(Lkotlinx/serialization/descriptors/SerialDescriptor;I)J
 
     move-result-wide v10
 
@@ -607,7 +607,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)D
+    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->F(Lkotlinx/serialization/descriptors/SerialDescriptor;I)D
 
     move-result-wide v6
 
@@ -630,7 +630,7 @@
     move-wide/from16 v17, v10
 
     :goto_1
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     new-instance v0, Lcom/discord/media_player/reactevents/MediaPlayerProgress;
 
@@ -678,13 +678,13 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
 
     move-result-object p1
 
     invoke-static {p2, p1, v0}, Lcom/discord/media_player/reactevents/MediaPlayerProgress;->write$Self(Lcom/discord/media_player/reactevents/MediaPlayerProgress;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     return-void
 .end method

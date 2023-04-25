@@ -98,5 +98,4 @@
 
     .line 23
     throw v1
-    .line 24
 .end method

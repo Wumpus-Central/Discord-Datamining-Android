@@ -144,7 +144,7 @@
     .line 45
     :cond_0
     :try_start_0
-    invoke-virtual {p2}, Lokhttp3/Response;->o0()Z
+    invoke-virtual {p2}, Lokhttp3/Response;->Y()Z
 
     .line 46
     .line 47
@@ -226,7 +226,7 @@
 
     .line 85
     .line 86
-    invoke-virtual {p2, v1}, Lokhttp3/Response;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, v1}, Lokhttp3/Response;->r(Ljava/lang/String;)Ljava/lang/String;
 
     .line 87
     .line 88

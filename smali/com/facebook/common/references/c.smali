@@ -39,7 +39,7 @@
 .method public bridge synthetic clone()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/facebook/common/references/c;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p0}, Lcom/facebook/common/references/c;->l()Lcom/facebook/common/references/CloseableReference;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public p()Lcom/facebook/common/references/CloseableReference;
+.method public l()Lcom/facebook/common/references/CloseableReference;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {

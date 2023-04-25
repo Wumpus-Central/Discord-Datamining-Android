@@ -145,7 +145,7 @@
 
     .line 37
     .line 38
-    invoke-static {p1}, Lokhttp3/Headers;->i(Ljava/util/Map;)Lokhttp3/Headers;
+    invoke-static {p1}, Lokhttp3/Headers;->h(Ljava/util/Map;)Lokhttp3/Headers;
 
     .line 39
     .line 40
@@ -230,7 +230,7 @@
 
     .line 77
     .line 78
-    invoke-virtual {p2}, Lokio/Buffer;->q0()Ljava/lang/String;
+    invoke-virtual {p2}, Lokio/Buffer;->v0()Ljava/lang/String;
 
     .line 79
     .line 80

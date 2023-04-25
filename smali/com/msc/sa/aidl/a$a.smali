@@ -82,10 +82,9 @@
     .line 25
     return-object v0
     .line 26
-    .line 27
 .end method
 
-.method public static d()Lcom/msc/sa/aidl/a;
+.method public static c()Lcom/msc/sa/aidl/a;
     .locals 1
 
     sget-object v0, Lcom/msc/sa/aidl/a$a$a;->b:Lcom/msc/sa/aidl/a;

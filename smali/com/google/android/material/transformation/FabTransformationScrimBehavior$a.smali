@@ -80,7 +80,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
@@ -124,5 +123,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

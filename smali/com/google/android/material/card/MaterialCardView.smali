@@ -166,9 +166,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -322,7 +319,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private getBoundsAsRectF()Landroid/graphics/RectF;
@@ -368,7 +364,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -694,7 +689,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onCreateDrawableState(I)[I
@@ -827,9 +821,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
@@ -874,7 +865,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -992,9 +982,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method protected onMeasure(II)V
@@ -1062,8 +1049,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -1193,9 +1178,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method setBackgroundInternal(Landroid/graphics/drawable/Drawable;)V
@@ -1268,7 +1250,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCardForegroundColor(Landroid/content/res/ColorStateList;)V
@@ -1328,7 +1309,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
@@ -1384,7 +1364,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconMargin(I)V
@@ -1444,7 +1423,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconResource(I)V
@@ -1545,7 +1523,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setContentPadding(IIII)V
@@ -1601,7 +1578,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMaxCardElevation(F)V
@@ -1640,7 +1616,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setOnCheckedChangeListener(Lcom/google/android/material/card/MaterialCardView$a;)V
@@ -1689,7 +1664,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setProgress(F)V
@@ -1738,7 +1712,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setRippleColor(Landroid/content/res/ColorStateList;)V
@@ -1793,7 +1766,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setShapeAppearanceModel(Lwb/k;)V
@@ -1840,7 +1812,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setStrokeColor(I)V
@@ -1906,7 +1877,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setUseCompatPadding(Z)V
@@ -1949,7 +1919,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public toggle()V
@@ -2079,7 +2048,4 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method

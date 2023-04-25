@@ -187,7 +187,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getBase64ForTag(Ljava/lang/String;Lcom/facebook/react/bridge/Callback;Lcom/facebook/react/bridge/Callback;)V

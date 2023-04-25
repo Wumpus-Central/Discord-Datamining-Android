@@ -115,7 +115,7 @@
     iput-object p2, p0, Lcom/discord/serialization/IntEnumSerializer;->default:Lcom/discord/serialization/IntEnum;
 
     .line 3
-    invoke-interface {p1}, Lkotlin/reflect/KClass;->i()Ljava/lang/String;
+    invoke-interface {p1}, Lkotlin/reflect/KClass;->l()Ljava/lang/String;
 
     move-result-object p2
 
@@ -299,7 +299,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->j()I
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->h()I
 
     move-result p1
 
@@ -532,7 +532,7 @@
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->w(I)V
+    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->A(I)V
 
     return-void
 
@@ -558,7 +558,7 @@
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->w(I)V
+    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->A(I)V
 
     return-void
 

@@ -610,7 +610,7 @@
     return v0
 .end method
 
-.method g()F
+.method f()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/material/bottomappbar/a;->l:F
@@ -618,7 +618,7 @@
     return v0
 .end method
 
-.method h()F
+.method i()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/material/bottomappbar/a;->k:F
@@ -681,10 +681,9 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public m(F)V
+.method public l(F)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/material/bottomappbar/a;->p:F
@@ -692,7 +691,7 @@
     return-void
 .end method
 
-.method n(F)V
+.method m(F)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/material/bottomappbar/a;->l:F
@@ -700,7 +699,7 @@
     return-void
 .end method
 
-.method o(F)V
+.method n(F)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/material/bottomappbar/a;->k:F
@@ -708,7 +707,7 @@
     return-void
 .end method
 
-.method public p(F)V
+.method public o(F)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/material/bottomappbar/a;->m:F

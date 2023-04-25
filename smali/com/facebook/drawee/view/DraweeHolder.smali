@@ -150,7 +150,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private b()V
@@ -197,7 +196,7 @@
 
     .line 19
     .line 20
-    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->c()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
+    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->f()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
 
     .line 21
     .line 22
@@ -213,7 +212,7 @@
 
     .line 27
     .line 28
-    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->e()V
+    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->d()V
 
     .line 29
     .line 30
@@ -725,7 +724,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -834,7 +832,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public f()Lcom/facebook/drawee/interfaces/DraweeController;
@@ -876,7 +873,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->e()Landroid/graphics/drawable/Drawable;
+    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->d()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -909,7 +906,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->c()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
+    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeController;->f()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
 
     move-result-object v0
 
@@ -1192,7 +1189,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public n(Landroid/content/Context;)V
@@ -1251,7 +1247,7 @@
     const/4 v2, 0x0
 
     .line 24
-    invoke-interface {v1, v2}, Lcom/facebook/drawee/interfaces/DraweeController;->f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+    invoke-interface {v1, v2}, Lcom/facebook/drawee/interfaces/DraweeController;->e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
 
     .line 25
     .line 26
@@ -1286,7 +1282,7 @@
 
     .line 41
     .line 42
-    invoke-interface {p1, v1}, Lcom/facebook/drawee/interfaces/DraweeController;->f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+    invoke-interface {p1, v1}, Lcom/facebook/drawee/interfaces/DraweeController;->e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
 
     .line 43
     .line 44
@@ -1337,7 +1333,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onDraw()V
@@ -1523,7 +1518,7 @@
 
     .line 23
     .line 24
-    invoke-interface {v1}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->e()Landroid/graphics/drawable/Drawable;
+    invoke-interface {v1}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->d()Landroid/graphics/drawable/Drawable;
 
     .line 25
     .line 26
@@ -1581,7 +1576,7 @@
 
     .line 49
     .line 50
-    invoke-interface {v0, p1}, Lcom/facebook/drawee/interfaces/DraweeController;->f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+    invoke-interface {v0, p1}, Lcom/facebook/drawee/interfaces/DraweeController;->e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
 
     .line 51
     .line 52
@@ -1610,7 +1605,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public toString()Ljava/lang/String;

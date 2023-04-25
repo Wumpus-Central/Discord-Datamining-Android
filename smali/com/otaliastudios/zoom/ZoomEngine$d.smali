@@ -121,7 +121,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;

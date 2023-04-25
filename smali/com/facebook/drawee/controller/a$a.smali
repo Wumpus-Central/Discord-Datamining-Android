@@ -90,7 +90,7 @@
     move-result v5
 
     .line 5
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->e()Z
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->f()Z
 
     .line 6
     .line 7
@@ -98,7 +98,7 @@
     move-result v7
 
     .line 9
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->d()F
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->e()F
 
     .line 10
     .line 11
@@ -106,7 +106,7 @@
     move-result v4
 
     .line 13
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->f()Ljava/lang/Object;
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->g()Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -204,7 +204,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onProgressUpdate(Lcom/facebook/datasource/DataSource;)V
@@ -226,7 +225,7 @@
     move-result v0
 
     .line 5
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->d()F
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->e()F
 
     .line 6
     .line 7
@@ -307,5 +306,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

@@ -222,7 +222,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setNativeModulesQueueThreadSpec(Lcom/facebook/react/bridge/queue/MessageQueueThreadSpec;)Lcom/facebook/react/bridge/queue/ReactQueueConfigurationSpec$Builder;
@@ -322,5 +321,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

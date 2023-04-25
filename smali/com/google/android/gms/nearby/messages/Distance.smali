@@ -18,5 +18,5 @@
 
 
 # virtual methods
-.method public abstract P()D
+.method public abstract Q()D
 .end method

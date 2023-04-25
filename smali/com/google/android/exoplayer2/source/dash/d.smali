@@ -74,7 +74,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p0, p1, p3}, Lcom/google/android/exoplayer2/source/dash/d;->e(Ll8/e;Z)V
+    invoke-virtual {p0, p1, p3}, Lcom/google/android/exoplayer2/source/dash/d;->d(Ll8/e;Z)V
 
     .line 27
     .line 28
@@ -608,15 +608,7 @@
     .line 107
 .end method
 
-.method public d()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public e(Ll8/e;Z)V
+.method public d(Ll8/e;Z)V
     .locals 8
 
     .line 1
@@ -886,7 +878,15 @@
     .line 213
 .end method
 
-.method public i(Ld7/l;Lh7/h;Z)I
+.method public e()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public m(Ld7/l;Lh7/h;Z)I
     .locals 4
 
     .line 1
@@ -938,7 +938,7 @@
     const/4 p1, 0x4
 
     .line 22
-    invoke-virtual {p2, p1}, Lh7/a;->o(I)V
+    invoke-virtual {p2, p1}, Lh7/a;->m(I)V
 
     .line 23
     .line 24
@@ -989,7 +989,7 @@
     array-length v2, p3
 
     .line 45
-    invoke-virtual {p2, v2}, Lh7/h;->q(I)V
+    invoke-virtual {p2, v2}, Lh7/h;->p(I)V
 
     .line 46
     .line 47
@@ -1015,7 +1015,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {p2, v0}, Lh7/a;->o(I)V
+    invoke-virtual {p2, v0}, Lh7/a;->m(I)V
 
     .line 60
     .line 61
@@ -1357,7 +1357,7 @@
     .line 384
 .end method
 
-.method public q(J)I
+.method public s(J)I
     .locals 4
 
     .line 1

@@ -138,7 +138,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
@@ -258,9 +257,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static synthetic a(ILcom/facebook/react/bridge/Promise;I[Ljava/lang/String;[I)Z
@@ -375,7 +371,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private final findCameraView(I)Lcom/mrousavy/camera/CameraView;
@@ -809,30 +804,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private static final initialize$lambda$0(Lcom/mrousavy/camera/CameraViewModule;)V
@@ -885,7 +856,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private static final requestCameraPermission$lambda$4(ILcom/facebook/react/bridge/Promise;I[Ljava/lang/String;[I)Z
@@ -2408,9 +2378,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final getCameraPermissionStatus(Lcom/facebook/react/bridge/Promise;)V
@@ -2467,7 +2434,6 @@
     .line 25
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public final getFrameProcessorThread()Ljava/util/concurrent/ExecutorService;
@@ -2532,7 +2498,6 @@
     .line 25
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -2585,7 +2550,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public invalidate()V
@@ -2619,7 +2583,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onCatalystInstanceDestroy()V
@@ -2653,7 +2616,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final pauseRecording(ILcom/facebook/react/bridge/Promise;)V
@@ -2929,14 +2891,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public final requestCameraPermission(Lcom/facebook/react/bridge/Promise;)V
@@ -3078,9 +3032,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final requestMicrophonePermission(Lcom/facebook/react/bridge/Promise;)V
@@ -3222,9 +3173,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final resumeRecording(ILcom/facebook/react/bridge/Promise;)V
@@ -3500,14 +3448,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public final setFrameProcessorThread(Ljava/util/concurrent/ExecutorService;)V
@@ -3546,7 +3486,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final startRecording(ILcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Callback;)V
@@ -3995,14 +3934,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public final takePhoto(ILcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Promise;)V

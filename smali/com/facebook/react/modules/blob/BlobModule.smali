@@ -145,7 +145,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/modules/blob/BlobModule;Landroid/net/Uri;)[B
@@ -330,7 +329,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getLastModifiedFromUri(Landroid/net/Uri;)J
@@ -441,7 +439,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getMimeTypeFromUri(Landroid/net/Uri;)Ljava/lang/String;
@@ -561,7 +558,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getNameFromUri(Landroid/net/Uri;)Ljava/lang/String;
@@ -727,7 +723,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getWebSocketModule(Ljava/lang/String;)Lcom/facebook/react/modules/websocket/WebSocketModule;
@@ -828,7 +823,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1026,7 +1020,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public createFromParts(Lcom/facebook/react/bridge/ReadableArray;Ljava/lang/String;)V
@@ -1610,7 +1603,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeWebSocketHandler(D)V
@@ -1707,7 +1699,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public resolve(Landroid/net/Uri;)[B
@@ -1938,7 +1929,7 @@
 
     .line 33
     .line 34
-    invoke-static {p1}, Lokio/ByteString;->q([B)Lokio/ByteString;
+    invoke-static {p1}, Lokio/ByteString;->p([B)Lokio/ByteString;
 
     .line 35
     .line 36

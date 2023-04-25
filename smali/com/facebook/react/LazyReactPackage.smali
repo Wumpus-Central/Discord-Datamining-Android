@@ -2267,7 +2267,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getNativeModuleIterator(Lcom/facebook/react/bridge/ReactApplicationContext;)Ljava/lang/Iterable;
@@ -2375,7 +2374,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected abstract getNativeModules(Lcom/facebook/react/bridge/ReactApplicationContext;)Ljava/util/List;

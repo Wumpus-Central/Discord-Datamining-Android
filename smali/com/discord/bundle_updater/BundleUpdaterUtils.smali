@@ -434,7 +434,7 @@
     move-result-object v0
 
     .line 24
-    invoke-interface {p1, v0}, Lokio/BufferedSource;->w0(Lokio/Sink;)J
+    invoke-interface {p1, v0}, Lokio/BufferedSource;->A0(Lokio/Sink;)J
 
     .line 25
     .line 26
@@ -447,7 +447,7 @@
     move-result-object v0
 
     .line 31
-    invoke-virtual {v0}, Lokio/ByteString;->m()Ljava/lang/String;
+    invoke-virtual {v0}, Lokio/ByteString;->k()Ljava/lang/String;
 
     .line 32
     .line 33

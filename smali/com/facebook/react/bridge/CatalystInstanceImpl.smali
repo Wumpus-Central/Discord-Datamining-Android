@@ -759,7 +759,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getTurboModuleRegistry()Lcom/facebook/react/turbomodule/core/interfaces/TurboModuleRegistry;
@@ -1121,7 +1120,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private native warnOnLegacyNativeModuleSystemUse()V
@@ -1454,7 +1452,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public native getJSCallInvokerHolder()Lcom/facebook/react/turbomodule/core/CallInvokerHolderImpl;
@@ -1840,7 +1837,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public hasNativeModule(Ljava/lang/Class;)Z
@@ -1963,7 +1959,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public hasRunJSBundle()Z
@@ -3546,5 +3541,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

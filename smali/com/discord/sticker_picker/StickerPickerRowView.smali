@@ -179,7 +179,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static synthetic a(Lcom/discord/sticker_picker/StickerPickerRowView;Lcom/discord/sticker_picker/StickerPickerRow$Sticker;Landroid/view/View;)V
@@ -3467,7 +3466,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setOnPressSticker(Lkotlin/jvm/functions/Function1;)V
@@ -3565,7 +3563,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setRowData(Lcom/discord/sticker_picker/StickerPickerRow;)V
@@ -3684,5 +3681,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

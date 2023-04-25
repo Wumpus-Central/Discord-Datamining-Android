@@ -82,7 +82,7 @@
     move-result-object p0
 
     .line 26
-    invoke-interface {v0, p0}, Lokio/BufferedSink;->a0(Lokio/Source;)J
+    invoke-interface {v0, p0}, Lokio/BufferedSink;->N(Lokio/Source;)J
 
     .line 27
     .line 28

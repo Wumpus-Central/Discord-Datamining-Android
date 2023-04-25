@@ -346,7 +346,7 @@
     move-result v1
 
     .line 11
-    invoke-virtual {v0}, Lkotlin/ranges/a;->f()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->e()I
 
     .line 12
     .line 13
@@ -496,7 +496,6 @@
     .line 75
     :cond_4
     return v1
-    .line 76
 .end method
 
 .method private final getKeyOffsetForBucketIndex(I)I
@@ -920,7 +919,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final readDoubleValue(I)D
@@ -1175,7 +1173,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final readStringValue(I)Ljava/lang/String;
@@ -1295,7 +1292,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final readUnsignedShort-BwKQO78(I)S
@@ -1461,7 +1457,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getBoolean(I)Z
@@ -1696,7 +1691,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public hashCode()I

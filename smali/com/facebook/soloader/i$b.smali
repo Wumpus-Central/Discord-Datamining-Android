@@ -660,7 +660,7 @@
     return-void
 .end method
 
-.method static synthetic i(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
+.method static synthetic h(Lcom/facebook/soloader/i$b;)[Lcom/facebook/soloader/i$c;
     .locals 0
 
     iget-object p0, p0, Lcom/facebook/soloader/i$b;->k:[Lcom/facebook/soloader/i$c;
@@ -682,7 +682,7 @@
     return-object v0
 .end method
 
-.method public f()Lcom/facebook/soloader/r$e;
+.method public g()Lcom/facebook/soloader/r$e;
     .locals 2
 
     new-instance v0, Lcom/facebook/soloader/i$b$a;

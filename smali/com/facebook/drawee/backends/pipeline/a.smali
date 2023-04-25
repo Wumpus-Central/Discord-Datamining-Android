@@ -631,7 +631,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private q0(Lv3/e;Lu5/c;)Landroid/graphics/drawable/Drawable;
@@ -992,7 +991,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1107,7 +1105,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected bridge synthetic P(Ljava/lang/Object;)V
@@ -1120,11 +1117,11 @@
     return-void
 .end method
 
-.method public f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+.method public e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/facebook/drawee/controller/a;->f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+    invoke-super {p0, p1}, Lcom/facebook/drawee/controller/a;->e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
 
     .line 2
     .line 3
@@ -1205,7 +1202,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized f0(Lm4/b;)V
@@ -1340,7 +1336,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized g0(Lcom/facebook/imagepipeline/listener/RequestListener;)V
@@ -1451,7 +1446,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected h0()V
@@ -1580,7 +1574,7 @@
     .line 11
     .line 12
     :cond_0
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 13
     .line 14
@@ -1593,7 +1587,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -2706,7 +2700,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -3554,7 +3548,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->K()I
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->H()I
 
     move-result p1
 
@@ -3592,7 +3586,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 2
     .line 3
@@ -3605,7 +3599,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -3679,7 +3673,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized m0()Lcom/facebook/imagepipeline/listener/RequestListener;
@@ -5196,7 +5189,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     return-void
 .end method
@@ -5319,7 +5312,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized w0(Lcom/facebook/imagepipeline/listener/RequestListener;)V
@@ -5429,7 +5421,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected bridge synthetic x(Ljava/lang/Object;)I
@@ -5515,7 +5506,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Lcom/facebook/drawee/controller/a;->c()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
+    invoke-virtual {p0}, Lcom/facebook/drawee/controller/a;->f()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
 
     .line 9
     .line 10
@@ -5530,7 +5521,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->e()Landroid/graphics/drawable/Drawable;
+    invoke-interface {v0}, Lcom/facebook/drawee/interfaces/DraweeHierarchy;->d()Landroid/graphics/drawable/Drawable;
 
     .line 16
     .line 17
@@ -5625,7 +5616,7 @@
     .line 61
     .line 62
     .line 63
-    invoke-virtual {p1}, Lu5/c;->f()I
+    invoke-virtual {p1}, Lu5/c;->g()I
 
     .line 64
     .line 65

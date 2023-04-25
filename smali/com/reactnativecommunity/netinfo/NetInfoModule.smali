@@ -150,9 +150,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 
@@ -201,7 +198,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public getCurrentState(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
@@ -259,7 +255,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onAmazonFireDeviceConnectivityChanged(Z)V
@@ -313,7 +308,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public removeListeners(Ljava/lang/Integer;)V
@@ -367,5 +361,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

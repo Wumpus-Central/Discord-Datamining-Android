@@ -238,7 +238,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/i;->j(Ljava/lang/String;J)Lcom/google/android/exoplayer2/upstream/cache/i;
+    invoke-static {v0, p1, p2}, Lcom/google/android/exoplayer2/upstream/cache/i;->h(Ljava/lang/String;J)Lcom/google/android/exoplayer2/upstream/cache/i;
 
     .line 4
     .line 5
@@ -349,7 +349,7 @@
 
     .line 53
     .line 54
-    invoke-static {v0, p1, p2, p3, p4}, Lcom/google/android/exoplayer2/upstream/cache/i;->i(Ljava/lang/String;JJ)Lcom/google/android/exoplayer2/upstream/cache/i;
+    invoke-static {v0, p1, p2, p3, p4}, Lcom/google/android/exoplayer2/upstream/cache/i;->g(Ljava/lang/String;JJ)Lcom/google/android/exoplayer2/upstream/cache/i;
 
     .line 55
     .line 56
@@ -1622,7 +1622,7 @@
     move-wide v5, p2
 
     .line 36
-    invoke-static/range {v1 .. v6}, Lcom/google/android/exoplayer2/upstream/cache/i;->k(Ljava/io/File;IJJ)Ljava/io/File;
+    invoke-static/range {v1 .. v6}, Lcom/google/android/exoplayer2/upstream/cache/i;->i(Ljava/io/File;IJJ)Ljava/io/File;
 
     .line 37
     .line 38
@@ -1705,7 +1705,7 @@
     .line 78
     :cond_1
     :goto_0
-    invoke-virtual {p1, v0, p2, p3}, Lcom/google/android/exoplayer2/upstream/cache/i;->e(Ljava/io/File;J)Lcom/google/android/exoplayer2/upstream/cache/i;
+    invoke-virtual {p1, v0, p2, p3}, Lcom/google/android/exoplayer2/upstream/cache/i;->d(Ljava/io/File;J)Lcom/google/android/exoplayer2/upstream/cache/i;
 
     .line 79
     .line 80

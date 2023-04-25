@@ -321,7 +321,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/api/internal/b;->a(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/common/api/internal/b;->b(Lcom/google/android/gms/common/api/Status;)V
 
     .line 14
     .line 15
@@ -422,11 +422,21 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/android/gms/common/api/Status;)V
+.method public bridge synthetic a(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lu9/k;
+
+    invoke-super {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->setResult(Lu9/k;)V
+
+    return-void
+.end method
+
+.method public final b(Lcom/google/android/gms/common/api/Status;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->I()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->J()Z
 
     .line 2
     .line 3
@@ -551,16 +561,6 @@
     .line 105
     .line 106
     .line 107
-.end method
-
-.method public bridge synthetic b(Ljava/lang/Object;)V
-    .locals 0
-
-    check-cast p1, Lu9/k;
-
-    invoke-super {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->setResult(Lu9/k;)V
-
-    return-void
 .end method
 
 .method protected abstract c(Lu9/a$b;)V

@@ -220,9 +220,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -306,7 +303,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
@@ -485,9 +481,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setDoubleTapScaleSteps(I)V

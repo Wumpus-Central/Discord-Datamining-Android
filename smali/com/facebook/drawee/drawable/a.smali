@@ -154,7 +154,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private a(I)Lcom/facebook/drawee/drawable/c;
@@ -290,7 +289,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public c(I)Lcom/facebook/drawee/drawable/c;
@@ -427,7 +425,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public d()I
@@ -540,7 +537,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public e(ILandroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
@@ -1274,7 +1270,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getRootBounds(Landroid/graphics/RectF;)V
@@ -1372,7 +1367,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getTransform(Landroid/graphics/Matrix;)V
@@ -1466,7 +1460,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -1797,7 +1790,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onLevelChange(I)Z
@@ -1908,7 +1900,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onStateChange([I)Z
@@ -2019,7 +2010,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
@@ -2134,7 +2124,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
@@ -2241,7 +2230,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setDither(Z)V
@@ -2348,7 +2336,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setFilterBitmap(Z)V
@@ -2455,7 +2442,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setHotspot(FF)V

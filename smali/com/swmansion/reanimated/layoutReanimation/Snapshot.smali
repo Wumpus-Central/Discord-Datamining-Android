@@ -413,14 +413,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private addCurrentConfig(Ljava/util/HashMap;)V
@@ -583,9 +575,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private addTargetConfig(Ljava/util/HashMap;)V
@@ -748,9 +737,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 
@@ -797,7 +783,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public toLayoutMap(Lcom/swmansion/reanimated/layoutReanimation/Snapshot;)Ljava/util/HashMap;
@@ -847,7 +832,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public toTargetMap()Ljava/util/HashMap;
@@ -892,5 +876,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method

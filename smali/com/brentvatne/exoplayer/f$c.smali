@@ -66,7 +66,7 @@
     move-result-object p1
 
     .line 15
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()I
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->P()I
 
     .line 16
     .line 17

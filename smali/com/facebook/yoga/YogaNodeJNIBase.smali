@@ -2232,21 +2232,7 @@
     return-void
 .end method
 
-.method public f0(Lcom/facebook/yoga/e;F)V
-    .locals 2
-
-    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
-
-    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
-
-    move-result p1
-
-    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPaddingPercentJNI(JIF)V
-
-    return-void
-.end method
-
-.method public g()Lcom/facebook/yoga/YogaValue;
+.method public f()Lcom/facebook/yoga/YogaValue;
     .locals 2
 
     iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
@@ -2260,6 +2246,20 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public f0(Lcom/facebook/yoga/e;F)V
+    .locals 2
+
+    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
+
+    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
+
+    move-result p1
+
+    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPaddingPercentJNI(JIF)V
+
+    return-void
 .end method
 
 .method public g0(Lcom/facebook/yoga/e;F)V
@@ -2276,7 +2276,21 @@
     return-void
 .end method
 
-.method public h()Lcom/facebook/yoga/YogaDirection;
+.method public h0(Lcom/facebook/yoga/e;F)V
+    .locals 2
+
+    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
+
+    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
+
+    move-result p1
+
+    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPositionPercentJNI(JIF)V
+
+    return-void
+.end method
+
+.method public i()Lcom/facebook/yoga/YogaDirection;
     .locals 2
 
     .line 1
@@ -2478,20 +2492,6 @@
     .line 176
 .end method
 
-.method public h0(Lcom/facebook/yoga/e;F)V
-    .locals 2
-
-    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
-
-    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
-
-    move-result p1
-
-    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPositionPercentJNI(JIF)V
-
-    return-void
-.end method
-
 .method public i0(Lcom/facebook/yoga/YogaPositionType;)V
     .locals 2
 
@@ -2631,7 +2631,7 @@
 
     .line 41
     :pswitch_0
-    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->h()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->i()Lcom/facebook/yoga/YogaDirection;
 
     .line 42
     .line 43
@@ -2675,7 +2675,7 @@
 
     .line 60
     :pswitch_1
-    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->h()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->i()Lcom/facebook/yoga/YogaDirection;
 
     .line 61
     .line 62
@@ -2893,6 +2893,26 @@
     return-void
 .end method
 
+.method public l()F
+    .locals 2
+
+    iget-object v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->arr:[F
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    aget v0, v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public l0(F)V
     .locals 2
 
@@ -2910,7 +2930,7 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x3
 
     aget v0, v0, v1
 
@@ -3647,26 +3667,6 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v1, 0x3
-
-    aget v0, v0, v1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public o()F
-    .locals 2
-
-    iget-object v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->arr:[F
-
-    if-eqz v0, :cond_0
-
     const/4 v1, 0x4
 
     aget v0, v0, v1
@@ -3680,15 +3680,7 @@
     return v0
 .end method
 
-.method public o0()Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->p:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public p(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
+.method public o(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
     .locals 2
 
     iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
@@ -3706,6 +3698,14 @@
     move-result-object p1
 
     return-object p1
+.end method
+
+.method public o0()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->p:Ljava/lang/Object;
+
+    return-object v0
 .end method
 
 .method public p0(I)Lcom/facebook/yoga/YogaNodeJNIBase;

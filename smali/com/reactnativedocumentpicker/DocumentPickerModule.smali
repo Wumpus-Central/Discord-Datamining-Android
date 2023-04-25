@@ -104,7 +104,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method static synthetic access$000(Lcom/reactnativedocumentpicker/DocumentPickerModule;)Lcom/facebook/react/bridge/Promise;
@@ -396,14 +395,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private readableArrayToStringArray(Lcom/facebook/react/bridge/ReadableArray;)[Ljava/lang/String;
@@ -458,7 +449,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private sendError(Ljava/lang/String;Ljava/lang/String;)V
@@ -539,7 +529,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onShowActivityResult(ILandroid/content/Intent;Lcom/facebook/react/bridge/Promise;)V
@@ -1186,14 +1175,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public pickDirectory(Lcom/facebook/react/bridge/Promise;)V
@@ -1333,7 +1314,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

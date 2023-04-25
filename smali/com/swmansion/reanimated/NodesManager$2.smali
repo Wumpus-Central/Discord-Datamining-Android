@@ -242,7 +242,4 @@
     .line 94
     :cond_4
     return-void
-    .line 95
-    .line 96
-    .line 97
 .end method

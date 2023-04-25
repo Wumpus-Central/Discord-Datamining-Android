@@ -334,18 +334,6 @@
 
 
 # virtual methods
-.method public W(Ljava/io/DataOutput;[B)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/facebook/soloader/r$f;->l:Ljava/io/InputStream;
-
-    const v1, 0x7fffffff
-
-    invoke-static {p1, v0, v1, p2}, Lcom/facebook/soloader/SysUtil;->a(Ljava/io/DataOutput;Ljava/io/InputStream;I[B)I
-
-    return-void
-.end method
-
 .method public available()I
     .locals 1
 
@@ -378,7 +366,19 @@
     return-object v0
 .end method
 
-.method public s0()Lcom/facebook/soloader/r$b;
+.method public q0(Ljava/io/DataOutput;[B)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/facebook/soloader/r$f;->l:Ljava/io/InputStream;
+
+    const v1, 0x7fffffff
+
+    invoke-static {p1, v0, v1, p2}, Lcom/facebook/soloader/SysUtil;->a(Ljava/io/DataOutput;Ljava/io/InputStream;I[B)I
+
+    return-void
+.end method
+
+.method public x0()Lcom/facebook/soloader/r$b;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/soloader/r$f;->k:Lcom/facebook/soloader/r$b;

@@ -60,7 +60,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method static synthetic access$000(Lcom/reactnativecommunity/clipboard/ClipboardModule;)Lcom/facebook/react/bridge/ReactApplicationContext;
@@ -626,30 +625,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -816,9 +791,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public hasString(Lcom/facebook/react/bridge/Promise;)V
@@ -955,9 +927,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public removeListener()V
@@ -1013,7 +982,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public removeListeners(Ljava/lang/Integer;)V
@@ -1076,7 +1044,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public setString(Ljava/lang/String;)V
@@ -1134,5 +1101,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

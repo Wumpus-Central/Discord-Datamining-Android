@@ -787,14 +787,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private static synthetic lambda$receiveCommand$45(ILcom/facebook/react/bridge/ReadableArray;Lcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -1820,8 +1812,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static synthetic lambda$setBuiltInZoomControls$1(ZLcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -2005,8 +1995,6 @@
     return-void
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static synthetic lambda$setGeolocationEnabled$40(Ljava/lang/Boolean;Lcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -2170,9 +2158,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private static synthetic lambda$setInjectedJavaScript$24(Ljava/lang/String;Lcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -2436,8 +2421,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static synthetic lambda$setShowsHorizontalScrollIndicator$5(ZLcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -3570,8 +3553,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static synthetic lambda$setWebViewKey$4(Ljava/lang/String;Lcom/reactnativecommunity/webview/b;Ljava/util/Map;Ljava/util/Map;Lcom/reactnativecommunity/webview/RNCWebViewManager$e;)V
@@ -5061,39 +5042,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method public getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
@@ -5261,9 +5209,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -5458,8 +5403,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setApplicationNameForUserAgent(Lcom/reactnativecommunity/webview/b;Ljava/lang/String;)V
@@ -5558,8 +5501,6 @@
     return-void
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setAssetLoaderConfig(Lcom/reactnativecommunity/webview/b;Lcom/facebook/react/bridge/ReadableMap;)V
@@ -6677,8 +6618,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setCacheMode(Lcom/reactnativecommunity/webview/b;Ljava/lang/String;)V
@@ -7001,14 +6940,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public setDisplayZoomControls(Lcom/reactnativecommunity/webview/b;Z)V
@@ -7162,8 +7093,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setInjectedJavaScript(Lcom/reactnativecommunity/webview/b;Ljava/lang/String;)V
@@ -7347,8 +7276,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setMediaPlaybackRequiresUserAction(Lcom/reactnativecommunity/webview/b;Z)V
@@ -7670,14 +7597,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public setNestedScrollEnabled(Lcom/reactnativecommunity/webview/b;Z)V
@@ -8021,14 +7940,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public setSaveFormDataDisabled(Lcom/reactnativecommunity/webview/b;Z)V
@@ -8249,8 +8160,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected setUserAgentString(Landroid/webkit/WebView;)V
@@ -8389,9 +8298,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setWebViewKey(Lcom/reactnativecommunity/webview/b;Ljava/lang/String;)V
@@ -8665,14 +8571,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method protected setupWebChromeClient(Lcom/facebook/react/bridge/ReactContext;Landroid/webkit/WebView;)V
@@ -8775,6 +8673,4 @@
     .line 47
     :goto_0
     return-void
-    .line 48
-    .line 49
 .end method

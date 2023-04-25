@@ -93,7 +93,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->j()I
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->h()I
 
     move-result p1
 
@@ -266,7 +266,7 @@
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->w(I)V
+    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->A(I)V
 
     return-void
 .end method

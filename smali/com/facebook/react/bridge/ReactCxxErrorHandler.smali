@@ -142,7 +142,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static setHandleErrorFunc(Ljava/lang/Object;Ljava/lang/reflect/Method;)V

@@ -105,7 +105,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/devsupport/DevLoadingViewController;Ljava/lang/String;)V
@@ -2616,7 +2615,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public updateProgress(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V

@@ -15,13 +15,16 @@
 
 
 # virtual methods
-.method public abstract G(Lg9/q;)V
+.method public abstract H(Landroid/view/TextureView;)V
 .end method
 
-.method public abstract L(Landroid/view/SurfaceView;)V
+.method public abstract K(Lg9/m;)V
 .end method
 
-.method public abstract U(Landroid/view/TextureView;)V
+.method public abstract R(Lg9/q;)V
+.end method
+
+.method public abstract U(Landroid/view/SurfaceView;)V
 .end method
 
 .method public abstract a(Landroid/view/Surface;)V
@@ -30,23 +33,20 @@
 .method public abstract e(Lg9/m;)V
 .end method
 
-.method public abstract i(Landroid/view/Surface;)V
+.method public abstract g(Landroid/view/Surface;)V
 .end method
 
-.method public abstract n(Landroid/view/TextureView;)V
+.method public abstract j(Lg9/q;)V
 .end method
 
-.method public abstract q(Lg9/q;)V
+.method public abstract k(Landroid/view/SurfaceView;)V
 .end method
 
-.method public abstract r(Landroid/view/SurfaceView;)V
+.method public abstract n(Lh9/a;)V
 .end method
 
-.method public abstract s(Lg9/m;)V
+.method public abstract p(Lh9/a;)V
 .end method
 
-.method public abstract v(Lh9/a;)V
-.end method
-
-.method public abstract x(Lh9/a;)V
+.method public abstract z(Landroid/view/TextureView;)V
 .end method

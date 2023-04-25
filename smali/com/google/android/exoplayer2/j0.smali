@@ -313,7 +313,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1}, Ld7/t;->f()I
+    invoke-interface {v1}, Ld7/t;->d()I
 
     .line 10
     .line 11
@@ -1257,7 +1257,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1}, Ld7/t;->f()I
+    invoke-interface {v1}, Ld7/t;->d()I
 
     .line 10
     .line 11
@@ -2197,7 +2197,7 @@
     move-wide v11, p2
 
     .line 53
-    invoke-interface/range {v6 .. v12}, Lh8/r;->o([La9/h;[Z[Lh8/o0;[ZJ)J
+    invoke-interface/range {v6 .. v12}, Lh8/r;->k([La9/h;[Z[Lh8/o0;[ZJ)J
 
     .line 54
     .line 55
@@ -2262,7 +2262,7 @@
 
     .line 84
     .line 85
-    invoke-interface {v7}, Ld7/t;->f()I
+    invoke-interface {v7}, Ld7/t;->d()I
 
     .line 86
     .line 87
@@ -2716,7 +2716,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v0, p1, p2}, Lh8/r;->e(J)Z
+    invoke-interface {v0, p1, p2}, Lh8/r;->f(J)Z
 
     .line 15
     .line 16
@@ -3092,7 +3092,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v0}, Lh8/r;->s()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    invoke-interface {v0}, Lh8/r;->t()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     .line 7
     .line 8
@@ -3966,7 +3966,7 @@
 
     .line 26
     .line 27
-    invoke-interface {v3, p1}, La9/h;->n(F)V
+    invoke-interface {v3, p1}, La9/h;->g(F)V
 
     .line 28
     .line 29

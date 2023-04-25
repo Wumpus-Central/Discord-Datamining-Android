@@ -538,7 +538,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p2}, Lu5/e;->p()Lcom/facebook/imagepipeline/common/BytesRange;
+    invoke-virtual {p2}, Lu5/e;->n()Lcom/facebook/imagepipeline/common/BytesRange;
 
     .line 2
     .line 3
@@ -562,7 +562,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p2}, Lu5/e;->T()I
+    invoke-virtual {p2}, Lu5/e;->R()I
 
     .line 14
     .line 15
@@ -585,7 +585,7 @@
     move-result-object v1
 
     .line 24
-    invoke-virtual {p1}, Lu5/e;->F()Ljava/io/InputStream;
+    invoke-virtual {p1}, Lu5/e;->C()Ljava/io/InputStream;
 
     .line 25
     .line 26
@@ -598,7 +598,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p2}, Lu5/e;->F()Ljava/io/InputStream;
+    invoke-virtual {p2}, Lu5/e;->C()Ljava/io/InputStream;
 
     .line 32
     .line 33
@@ -606,7 +606,7 @@
     move-result-object p1
 
     .line 35
-    invoke-virtual {p2}, Lu5/e;->T()I
+    invoke-virtual {p2}, Lu5/e;->R()I
 
     .line 36
     .line 37
@@ -757,7 +757,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 6
     .line 7
@@ -797,19 +797,19 @@
     const/4 v2, 0x1
 
     .line 23
-    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 24
     .line 25
     .line 26
-    invoke-static {v1}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v1}, Lu5/e;->h(Lu5/e;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 30
     .line 31
@@ -838,12 +838,12 @@
 
     .line 39
     :goto_0
-    invoke-static {v1}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v1}, Lu5/e;->h(Lu5/e;)V
 
     .line 40
     .line 41
     .line 42
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 43
     .line 44
@@ -879,7 +879,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -926,7 +925,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p1}, Lu5/e;->p()Lcom/facebook/imagepipeline/common/BytesRange;
+    invoke-virtual {p1}, Lu5/e;->n()Lcom/facebook/imagepipeline/common/BytesRange;
 
     .line 15
     .line 16
@@ -1088,7 +1087,7 @@
 
     .line 88
     .line 89
-    invoke-virtual {p1}, Lu5/e;->x()Li5/c;
+    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
 
     .line 90
     .line 91
@@ -1125,7 +1124,7 @@
     move-result-object v0
 
     .line 108
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 109
     .line 110
@@ -1142,7 +1141,7 @@
     move-result-object v0
 
     .line 116
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 117
     .line 118

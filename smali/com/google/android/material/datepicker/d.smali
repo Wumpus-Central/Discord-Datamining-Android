@@ -19,48 +19,7 @@
 
 
 # virtual methods
-.method public abstract A()Z
-.end method
-
-.method public abstract B()Ljava/util/Collection;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract O(J)V
-.end method
-
-.method public abstract a(Landroid/content/Context;)Ljava/lang/String;
-.end method
-
-.method public abstract c()Ljava/util/Collection;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "Landroidx/core/util/e<",
-            "Ljava/lang/Long;",
-            "Ljava/lang/Long;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract getSelection()Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TS;"
-        }
-    .end annotation
-.end method
-
-.method public abstract r(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;Lcom/google/android/material/datepicker/a;Lcom/google/android/material/datepicker/o;)Landroid/view/View;
+.method public abstract C(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;Lcom/google/android/material/datepicker/a;Lcom/google/android/material/datepicker/o;)Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,5 +34,46 @@
     .end annotation
 .end method
 
-.method public abstract w(Landroid/content/Context;)I
+.method public abstract F()Z
+.end method
+
+.method public abstract G()Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract P(J)V
+.end method
+
+.method public abstract getSelection()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TS;"
+        }
+    .end annotation
+.end method
+
+.method public abstract l(Landroid/content/Context;)I
+.end method
+
+.method public abstract u(Landroid/content/Context;)Ljava/lang/String;
+.end method
+
+.method public abstract v()Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Landroidx/core/util/e<",
+            "Ljava/lang/Long;",
+            "Ljava/lang/Long;",
+            ">;>;"
+        }
+    .end annotation
 .end method

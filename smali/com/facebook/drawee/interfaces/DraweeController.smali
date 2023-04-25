@@ -10,11 +10,11 @@
 .method public abstract b(Landroid/view/MotionEvent;)Z
 .end method
 
-.method public abstract c()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
+.method public abstract d()V
 .end method
 
-.method public abstract e()V
+.method public abstract e(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
 .end method
 
-.method public abstract f(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
+.method public abstract f()Lcom/facebook/drawee/interfaces/DraweeHierarchy;
 .end method

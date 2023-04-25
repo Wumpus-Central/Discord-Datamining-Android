@@ -148,7 +148,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public native pushBoolean(Z)V
@@ -265,7 +264,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public native pushNull()V

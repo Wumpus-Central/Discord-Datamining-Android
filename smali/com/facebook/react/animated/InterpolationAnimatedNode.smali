@@ -1605,7 +1605,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static interpolate(DDDDDLjava/lang/String;Ljava/lang/String;)D
@@ -2026,7 +2025,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onDetachedFromNode(Lcom/facebook/react/animated/AnimatedNode;)V
@@ -2125,7 +2123,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public prettyPrint()Ljava/lang/String;

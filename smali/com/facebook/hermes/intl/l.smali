@@ -144,19 +144,7 @@
     .line 66
 .end method
 
-.method public c(Lcom/facebook/hermes/intl/a$b;)Lcom/facebook/hermes/intl/a;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method public d(Z)Lcom/facebook/hermes/intl/a;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method public e(Lg5/b;)Lcom/facebook/hermes/intl/a;
+.method public c(Lg5/b;)Lcom/facebook/hermes/intl/a;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -259,10 +247,27 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public f(Lcom/facebook/hermes/intl/a$c;)Lcom/facebook/hermes/intl/a;
+.method public d(Z)Lcom/facebook/hermes/intl/a;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public e(Lcom/facebook/hermes/intl/a$b;)Lcom/facebook/hermes/intl/a;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public f(Z)Lcom/facebook/hermes/intl/a;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public g(Lcom/facebook/hermes/intl/a$c;)Lcom/facebook/hermes/intl/a;
     .locals 3
 
     .line 1
@@ -396,11 +401,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
-.end method
-
-.method public g(Z)Lcom/facebook/hermes/intl/a;
-    .locals 0
-
-    return-object p0
 .end method

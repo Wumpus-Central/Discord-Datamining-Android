@@ -620,7 +620,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {v12}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v12}, Ll8/i;->b()Lk8/e;
 
     .line 65
     .line 66
@@ -639,7 +639,7 @@
 
     .line 72
     :cond_3
-    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->j(JJ)I
+    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->l(JJ)I
 
     .line 73
     .line 74
@@ -655,7 +655,7 @@
 
     .line 79
     :cond_4
-    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->c(JJ)J
+    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->e(JJ)J
 
     .line 80
     .line 81
@@ -680,7 +680,7 @@
     sub-long/2addr v14, v10
 
     .line 90
-    invoke-interface {v12, v14, v15}, Lk8/e;->a(J)J
+    invoke-interface {v12, v14, v15}, Lk8/e;->c(J)J
 
     .line 91
     .line 92
@@ -691,7 +691,7 @@
     add-long/2addr v10, v5
 
     .line 95
-    invoke-interface {v12, v14, v15, v1, v2}, Lk8/e;->b(JJ)J
+    invoke-interface {v12, v14, v15, v1, v2}, Lk8/e;->d(JJ)J
 
     .line 96
     .line 97
@@ -1115,7 +1115,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v7}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v7}, Ll8/i;->b()Lk8/e;
 
     .line 53
     .line 54
@@ -1131,7 +1131,7 @@
 
     .line 59
     :cond_2
-    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->j(JJ)I
+    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->l(JJ)I
 
     .line 60
     .line 61
@@ -1147,7 +1147,7 @@
 
     .line 66
     :cond_3
-    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->c(JJ)J
+    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->e(JJ)J
 
     .line 67
     .line 68
@@ -1155,7 +1155,7 @@
     move-result-wide v8
 
     .line 70
-    invoke-interface {v7, v8, v9}, Lk8/e;->a(J)J
+    invoke-interface {v7, v8, v9}, Lk8/e;->c(J)J
 
     .line 71
     .line 72
@@ -1640,7 +1640,7 @@
 
     .line 71
     .line 72
-    invoke-virtual {v13}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v13}, Ll8/i;->b()Lk8/e;
 
     .line 73
     .line 74
@@ -1656,7 +1656,7 @@
 
     .line 79
     .line 80
-    invoke-interface {v13, v5, v6, v7, v8}, Lk8/e;->d(JJ)J
+    invoke-interface {v13, v5, v6, v7, v8}, Lk8/e;->f(JJ)J
 
     .line 81
     .line 82
@@ -2071,7 +2071,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v2}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v2}, Ll8/i;->b()Lk8/e;
 
     .line 28
     .line 29
@@ -2083,7 +2083,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v2}, Lk8/e;->g()Z
+    invoke-interface {v2}, Lk8/e;->j()Z
 
     .line 34
     .line 35
@@ -5359,7 +5359,7 @@
 
     .line 51
     .line 52
-    invoke-interface {v2, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(I)I
+    invoke-interface {v2, v4}, Lcom/google/android/exoplayer2/upstream/g;->c(I)I
 
     .line 53
     .line 54
@@ -6602,7 +6602,7 @@
     move-result-object v7
 
     .line 18
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 19
     .line 20
@@ -6634,7 +6634,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 35
     .line 36
@@ -7047,7 +7047,7 @@
     move-result-object v7
 
     .line 21
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 22
     .line 23
@@ -7086,7 +7086,7 @@
 
     .line 39
     .line 40
-    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 41
     .line 42
@@ -7375,7 +7375,7 @@
 
     .line 180
     .line 181
-    invoke-interface {v3, v0}, Lcom/google/android/exoplayer2/upstream/g;->d(I)I
+    invoke-interface {v3, v0}, Lcom/google/android/exoplayer2/upstream/g;->c(I)I
 
     .line 182
     .line 183
@@ -7767,7 +7767,7 @@
     move-result-object v8
 
     .line 21
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 22
     .line 23
@@ -7901,7 +7901,7 @@
 
     .line 88
     .line 89
-    invoke-interface {v2, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 90
     .line 91
@@ -8422,7 +8422,7 @@
     move-result-object v7
 
     .line 18
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 19
     .line 20
@@ -8454,7 +8454,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 35
     .line 36
@@ -8888,7 +8888,7 @@
     move-result-object v9
 
     .line 23
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 24
     .line 25
@@ -8942,7 +8942,7 @@
 
     .line 48
     .line 49
-    invoke-interface {v3, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v3, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 50
     .line 51
@@ -9363,7 +9363,7 @@
     .line 461
 .end method
 
-.method public f(Lh8/u$a;Ld9/b;J)Lh8/r;
+.method public c(Lh8/u$a;Ld9/b;J)Lh8/r;
     .locals 20
 
     .line 1
@@ -9423,7 +9423,7 @@
     move-result-object v13
 
     .line 29
-    invoke-virtual/range {p0 .. p1}, Lh8/a;->s(Lh8/u$a;)Lj7/v$a;
+    invoke-virtual/range {p0 .. p1}, Lh8/a;->t(Lh8/u$a;)Lj7/v$a;
 
     .line 30
     .line 31
@@ -9827,7 +9827,7 @@
     .line 384
 .end method
 
-.method public h()Lcom/google/android/exoplayer2/MediaItem;
+.method public d()Lcom/google/android/exoplayer2/MediaItem;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->q:Lcom/google/android/exoplayer2/MediaItem;
@@ -9835,7 +9835,7 @@
     return-object v0
 .end method
 
-.method public j()V
+.method public l()V
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Ld9/t;
@@ -9845,7 +9845,7 @@
     return-void
 .end method
 
-.method public q(Lh8/r;)V
+.method public r(Lh8/r;)V
     .locals 1
 
     .line 1

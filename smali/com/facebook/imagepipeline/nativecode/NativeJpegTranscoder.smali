@@ -1684,7 +1684,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Lu5/e;->v()I
+    invoke-virtual {p1}, Lu5/e;->r()I
 
     .line 44
     .line 45

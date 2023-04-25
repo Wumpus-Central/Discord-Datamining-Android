@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J1\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u001e\u0010\t\u001a\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\u00060\n\u00f8\u0001\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\r"
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J7\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082$\u0010\t\u001a \u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00060\n\u00f8\u0001\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u000e"
     }
     d2 = {
         "Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;",
@@ -19,8 +19,9 @@
         "accessory",
         "Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;",
         "onTapPostPreviewEmbed",
-        "Lkotlin/Function3;",
-        "",
+        "Lkotlin/Function4;",
+        "Lcom/discord/primitives/GuildId;",
+        "Lcom/discord/primitives/ChannelId;",
         "Lcom/discord/primitives/MessageId;",
         "chat_release"
     }
@@ -307,16 +308,16 @@
     .line 252
 .end method
 
-.method public static synthetic a(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
+.method public static synthetic a(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->bind$lambda$0(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
+    invoke-static {p0, p1, p2}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->bind$lambda$0(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method private static final bind$lambda$0(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
-    .locals 1
+.method private static final bind$lambda$0(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;Landroid/view/View;)V
+    .locals 3
 
     .line 1
     const-string p2, "$onTapPostPreviewEmbed"
@@ -337,60 +338,76 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getParentChannelId()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getGuildId-fYKD8eg()J
 
     .line 12
     .line 13
     .line 14
-    move-result-object p2
+    move-result-wide v0
 
     .line 15
-    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getThreadId()Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/discord/primitives/GuildId;->box-impl(J)Lcom/discord/primitives/GuildId;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p2
 
     .line 19
-    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getMessageId-3Eiw7ao()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getParentChannelId-o4g7jtM()J
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    move-result-wide v0
 
     .line 23
-    invoke-static {p1}, Lcom/discord/primitives/MessageId;->box-impl(Ljava/lang/String;)Lcom/discord/primitives/MessageId;
+    invoke-static {v0, v1}, Lcom/discord/primitives/ChannelId;->box-impl(J)Lcom/discord/primitives/ChannelId;
 
     .line 24
     .line 25
     .line 26
-    move-result-object p1
+    move-result-object v0
 
     .line 27
-    invoke-interface {p0, p2, v0, p1}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getThreadId-o4g7jtM()J
 
     .line 28
     .line 29
     .line 30
-    return-void
+    move-result-wide v1
+
     .line 31
+    invoke-static {v1, v2}, Lcom/discord/primitives/ChannelId;->box-impl(J)Lcom/discord/primitives/ChannelId;
+
     .line 32
     .line 33
     .line 34
+    move-result-object v1
+
     .line 35
+    invoke-virtual {p1}, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;->getMessageId-3Eiw7ao()Ljava/lang/String;
+
     .line 36
     .line 37
     .line 38
+    move-result-object p1
+
     .line 39
+    invoke-static {p1}, Lcom/discord/primitives/MessageId;->box-impl(Ljava/lang/String;)Lcom/discord/primitives/MessageId;
+
     .line 40
     .line 41
     .line 42
+    move-result-object p1
+
     .line 43
+    invoke-interface {p0, p2, v0, v1, p1}, Lkotlin/jvm/functions/Function4;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 44
     .line 45
     .line 46
+    return-void
     .line 47
     .line 48
     .line 49
@@ -838,17 +855,19 @@
 
 
 # virtual methods
-.method public final bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function3;)V
+.method public final bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function4;)V
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;",
-            "Lkotlin/jvm/functions/Function3<",
+            "Lkotlin/jvm/functions/Function4<",
             "-",
-            "Ljava/lang/String;",
+            "Lcom/discord/primitives/GuildId;",
             "-",
-            "Ljava/lang/String;",
+            "Lcom/discord/primitives/ChannelId;",
+            "-",
+            "Lcom/discord/primitives/ChannelId;",
             "-",
             "Lcom/discord/primitives/MessageId;",
             "Lkotlin/Unit;",
@@ -955,7 +974,7 @@
 
     .line 50
     .line 51
-    invoke-direct {v9, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/k;-><init>(Lkotlin/jvm/functions/Function3;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;)V
+    invoke-direct {v9, p2, p1}, Lcom/discord/chat/presentation/message/viewholder/k;-><init>(Lkotlin/jvm/functions/Function4;Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;)V
 
     .line 52
     .line 53

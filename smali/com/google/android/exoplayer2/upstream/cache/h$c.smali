@@ -18,7 +18,10 @@
 .method public abstract a(Lcom/google/android/exoplayer2/upstream/cache/g;Z)V
 .end method
 
-.method public abstract b(Ljava/util/HashMap;)V
+.method public abstract b()Z
+.end method
+
+.method public abstract c(Ljava/util/HashMap;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -30,10 +33,7 @@
     .end annotation
 .end method
 
-.method public abstract c(Lcom/google/android/exoplayer2/upstream/cache/g;)V
-.end method
-
-.method public abstract d()Z
+.method public abstract d(J)V
 .end method
 
 .method public abstract e(Ljava/util/HashMap;)V
@@ -48,7 +48,7 @@
     .end annotation
 .end method
 
-.method public abstract f(J)V
+.method public abstract f(Lcom/google/android/exoplayer2/upstream/cache/g;)V
 .end method
 
 .method public abstract g(Ljava/util/HashMap;Landroid/util/SparseArray;)V

@@ -45,7 +45,7 @@
 
     const/4 v1, 0x2
 
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
 
     return-void
 .end method

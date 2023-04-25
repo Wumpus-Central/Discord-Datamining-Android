@@ -54,7 +54,7 @@
     move-result-object v1
 
     .line 7
-    invoke-virtual {p1}, Lu5/e;->x()Li5/c;
+    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
 
     .line 8
     .line 9

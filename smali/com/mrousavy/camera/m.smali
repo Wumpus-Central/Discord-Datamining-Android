@@ -164,9 +164,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static final b(Lcom/mrousavy/camera/CameraView;Ljava/lang/Throwable;)V
@@ -458,14 +455,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public static final c(Lcom/mrousavy/camera/CameraView;DD)V
@@ -808,9 +797,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static final e(Lcom/mrousavy/camera/CameraView;)V
@@ -938,7 +924,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

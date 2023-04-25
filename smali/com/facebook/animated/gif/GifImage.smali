@@ -861,7 +861,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static native nativeCreateFromDirectByteBuffer(Ljava/nio/ByteBuffer;IZ)Lcom/facebook/animated/gif/GifImage;
@@ -1103,7 +1102,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public d(Ljava/nio/ByteBuffer;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
@@ -1116,18 +1114,18 @@
     return-object p1
 .end method
 
-.method public e()Landroid/graphics/Bitmap$Config;
+.method public e()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/animated/gif/GifImage;->a:Landroid/graphics/Bitmap$Config;
+    const/4 v0, 0x0
 
-    return-object v0
+    return v0
 .end method
 
-.method public bridge synthetic f(I)Lj5/d;
+.method public f(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/facebook/animated/gif/GifImage;->o(I)Lcom/facebook/animated/gif/GifFrame;
+    invoke-static {p1, p2, p3, p4}, Lcom/facebook/animated/gif/GifImage;->l(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/gif/GifImage;
 
     move-result-object p1
 
@@ -1142,10 +1140,12 @@
     return-void
 .end method
 
-.method public g()Z
+.method public g()I
     .locals 1
 
-    const/4 v0, 0x0
+    invoke-direct {p0}, Lcom/facebook/animated/gif/GifImage;->nativeGetSizeInBytes()I
+
+    move-result v0
 
     return v0
 .end method
@@ -1170,17 +1170,25 @@
     return v0
 .end method
 
-.method public h(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
+.method public h()Landroid/graphics/Bitmap$Config;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/animated/gif/GifImage;->a:Landroid/graphics/Bitmap$Config;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic i(I)Lj5/d;
     .locals 0
 
-    invoke-static {p1, p2, p3, p4}, Lcom/facebook/animated/gif/GifImage;->l(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/gif/GifImage;
+    invoke-virtual {p0, p1}, Lcom/facebook/animated/gif/GifImage;->o(I)Lcom/facebook/animated/gif/GifFrame;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public i()[I
+.method public j()[I
     .locals 1
 
     invoke-direct {p0}, Lcom/facebook/animated/gif/GifImage;->nativeGetFrameDurations()[I
@@ -1188,16 +1196,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public j()I
-    .locals 1
-
-    invoke-direct {p0}, Lcom/facebook/animated/gif/GifImage;->nativeGetSizeInBytes()I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public o(I)Lcom/facebook/animated/gif/GifFrame;

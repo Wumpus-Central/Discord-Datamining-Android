@@ -37,5 +37,5 @@
     return-void
 .end method
 
-.method public abstract f()Lcom/facebook/soloader/r$d;
+.method public abstract g()Lcom/facebook/soloader/r$d;
 .end method

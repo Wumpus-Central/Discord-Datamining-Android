@@ -1664,7 +1664,7 @@
 
     .line 27
     .line 28
-    invoke-interface {v2, v3}, Lcom/google/android/exoplayer2/upstream/g;->d(I)I
+    invoke-interface {v2, v3}, Lcom/google/android/exoplayer2/upstream/g;->c(I)I
 
     .line 29
     .line 30
@@ -2175,7 +2175,7 @@
     move-result-object v7
 
     .line 18
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 19
     .line 20
@@ -2207,7 +2207,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 35
     .line 36
@@ -2692,7 +2692,7 @@
     move-result-object v7
 
     .line 18
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 19
     .line 20
@@ -2724,7 +2724,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v3, v4}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 35
     .line 36
@@ -3156,7 +3156,7 @@
     move-result-object v8
 
     .line 21
-    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->c()J
+    invoke-virtual/range {p1 .. p1}, Lcom/google/android/exoplayer2/upstream/i;->b()J
 
     .line 22
     .line 23
@@ -3290,7 +3290,7 @@
 
     .line 88
     .line 89
-    invoke-interface {v2, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->b(J)V
+    invoke-interface {v2, v4, v5}, Lcom/google/android/exoplayer2/upstream/g;->d(J)V
 
     .line 90
     .line 91
@@ -3764,7 +3764,7 @@
     .line 557
 .end method
 
-.method public f(Lh8/u$a;Ld9/b;J)Lh8/r;
+.method public c(Lh8/u$a;Ld9/b;J)Lh8/r;
     .locals 11
 
     .line 1
@@ -3776,7 +3776,7 @@
     move-result-object v8
 
     .line 5
-    invoke-virtual {p0, p1}, Lh8/a;->s(Lh8/u$a;)Lj7/v$a;
+    invoke-virtual {p0, p1}, Lh8/a;->t(Lh8/u$a;)Lj7/v$a;
 
     .line 6
     .line 7
@@ -4188,7 +4188,7 @@
     .line 384
 .end method
 
-.method public h()Lcom/google/android/exoplayer2/MediaItem;
+.method public d()Lcom/google/android/exoplayer2/MediaItem;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/SsMediaSource;->t:Lcom/google/android/exoplayer2/MediaItem;
@@ -4196,17 +4196,7 @@
     return-object v0
 .end method
 
-.method public j()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/SsMediaSource;->F:Ld9/t;
-
-    invoke-interface {v0}, Ld9/t;->a()V
-
-    return-void
-.end method
-
-.method public bridge synthetic l(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
+.method public bridge synthetic i(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
@@ -4216,7 +4206,7 @@
     return-void
 .end method
 
-.method public bridge synthetic m(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+.method public bridge synthetic j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
@@ -4226,7 +4216,29 @@
     return-void
 .end method
 
-.method public q(Lh8/r;)V
+.method public l()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/SsMediaSource;->F:Ld9/t;
+
+    invoke-interface {v0}, Ld9/t;->a()V
+
+    return-void
+.end method
+
+.method public bridge synthetic o(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
+    .locals 0
+
+    check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
+
+    invoke-virtual/range {p0 .. p7}, Lcom/google/android/exoplayer2/source/smoothstreaming/SsMediaSource;->G(Lcom/google/android/exoplayer2/upstream/i;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public r(Lh8/r;)V
     .locals 1
 
     .line 1
@@ -4347,16 +4359,4 @@
     .line 105
     .line 106
     .line 107
-.end method
-
-.method public bridge synthetic t(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
-    .locals 0
-
-    check-cast p1, Lcom/google/android/exoplayer2/upstream/i;
-
-    invoke-virtual/range {p0 .. p7}, Lcom/google/android/exoplayer2/source/smoothstreaming/SsMediaSource;->G(Lcom/google/android/exoplayer2/upstream/i;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
-
-    move-result-object p1
-
-    return-object p1
 .end method

@@ -419,7 +419,7 @@
     .line 182
     .line 183
     .line 184
-    invoke-interface {v0, v1}, Landroidx/camera/core/m;->i(Landroidx/camera/core/g0;)Lfc/b;
+    invoke-interface {v0, v1}, Landroidx/camera/core/m;->h(Landroidx/camera/core/g0;)Lfc/b;
 
     .line 185
     .line 186

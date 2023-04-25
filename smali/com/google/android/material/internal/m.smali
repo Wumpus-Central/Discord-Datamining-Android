@@ -57,7 +57,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public static a(Landroid/content/Context;)V
@@ -2741,8 +2740,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public static varargs h(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;

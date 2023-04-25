@@ -594,7 +594,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v1}, Lq5/e;->a()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->d()Ljava/util/concurrent/Executor;
 
     .line 15
     .line 16
@@ -1035,15 +1035,14 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public b()Ls5/c;
     .locals 1
 
-    new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$a;
+    new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$b;
 
-    invoke-direct {v0, p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$a;-><init>(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)V
+    invoke-direct {v0, p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$b;-><init>(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)V
 
     return-object v0
 .end method
@@ -1051,9 +1050,9 @@
 .method public c()Ls5/c;
     .locals 1
 
-    new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$b;
+    new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$a;
 
-    invoke-direct {v0, p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$b;-><init>(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)V
+    invoke-direct {v0, p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$a;-><init>(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)V
 
     return-object v0
 .end method

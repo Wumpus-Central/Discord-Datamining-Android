@@ -190,8 +190,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final b(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;

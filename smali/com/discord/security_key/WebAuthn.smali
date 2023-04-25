@@ -1981,7 +1981,7 @@
 
     .line 41
     :cond_3
-    invoke-static {p2}, Lha/o;->v([B)Lha/o;
+    invoke-static {p2}, Lha/o;->x([B)Lha/o;
 
     .line 42
     .line 43
@@ -1989,7 +1989,7 @@
     move-result-object p2
 
     .line 45
-    invoke-virtual {p2}, Lha/o;->H()Lha/i;
+    invoke-virtual {p2}, Lha/o;->E()Lha/i;
 
     .line 46
     .line 47
@@ -2009,7 +2009,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p2}, Lha/o;->H()Lha/i;
+    invoke-virtual {p2}, Lha/o;->E()Lha/i;
 
     .line 56
     .line 57
@@ -2030,7 +2030,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p2}, Lha/h;->G()Ljava/lang/String;
+    invoke-virtual {p2}, Lha/h;->D()Ljava/lang/String;
 
     .line 67
     .line 68
@@ -2097,7 +2097,7 @@
     .line 98
     .line 99
     :cond_5
-    invoke-virtual {p2}, Lha/o;->G()[B
+    invoke-virtual {p2}, Lha/o;->D()[B
 
     .line 100
     .line 101
@@ -2118,7 +2118,7 @@
     move-result-object p1
 
     .line 110
-    invoke-virtual {p2}, Lha/o;->H()Lha/i;
+    invoke-virtual {p2}, Lha/o;->E()Lha/i;
 
     .line 111
     .line 112
@@ -2184,7 +2184,7 @@
     .line 144
     .line 145
     .line 146
-    invoke-virtual {p2}, Lha/f;->v()[B
+    invoke-virtual {p2}, Lha/f;->x()[B
 
     .line 147
     .line 148
@@ -2210,7 +2210,7 @@
     .line 158
     .line 159
     .line 160
-    invoke-virtual {p2}, Lha/f;->z()[B
+    invoke-virtual {p2}, Lha/f;->y()[B
 
     .line 161
     .line 162
@@ -2244,7 +2244,7 @@
     .line 176
     .line 177
     .line 178
-    invoke-virtual {p2}, Lha/f;->H()[B
+    invoke-virtual {p2}, Lha/f;->E()[B
 
     .line 179
     .line 180
@@ -2278,7 +2278,7 @@
     .line 194
     .line 195
     .line 196
-    invoke-virtual {p2}, Lha/f;->I()[B
+    invoke-virtual {p2}, Lha/f;->J()[B
 
     .line 197
     .line 198
@@ -2339,7 +2339,7 @@
 
     .line 227
     :cond_7
-    invoke-virtual {p2}, Lha/o;->G()[B
+    invoke-virtual {p2}, Lha/o;->D()[B
 
     .line 228
     .line 229
@@ -2360,7 +2360,7 @@
     move-result-object p1
 
     .line 238
-    invoke-virtual {p2}, Lha/o;->H()Lha/i;
+    invoke-virtual {p2}, Lha/o;->E()Lha/i;
 
     .line 239
     .line 240
@@ -2426,7 +2426,7 @@
     .line 272
     .line 273
     .line 274
-    invoke-virtual {p2}, Lha/g;->v()[B
+    invoke-virtual {p2}, Lha/g;->x()[B
 
     .line 275
     .line 276
@@ -2452,7 +2452,7 @@
     .line 286
     .line 287
     .line 288
-    invoke-virtual {p2}, Lha/g;->z()[B
+    invoke-virtual {p2}, Lha/g;->y()[B
 
     .line 289
     .line 290

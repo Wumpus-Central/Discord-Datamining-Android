@@ -1196,7 +1196,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -1225,154 +1224,7 @@
     return v0
 .end method
 
-.method public final g()V
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    :try_start_0
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/nearby/messages/internal/b;->m0(I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 3
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :catch_0
-    move-exception v1
-
-    .line 7
-    const-string v2, "NearbyMessagesClient"
-
-    .line 8
-    .line 9
-    invoke-static {v2, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    if-eqz v0, :cond_0
-
-    .line 14
-    .line 15
-    const/4 v0, 0x1
-
-    .line 16
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    const/4 v3, 0x0
-
-    .line 19
-    aput-object v1, v0, v3
-
-    .line 20
-    .line 21
-    const-string v1, "Failed to emit CLIENT_DISCONNECTED from override of GmsClient#disconnect(): %s"
-
-    .line 22
-    .line 23
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    invoke-static {v2, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 28
-    .line 29
-    .line 30
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/internal/b;->S:Lqa/g1;
-
-    .line 31
-    .line 32
-    invoke-virtual {v0}, Lqa/g1;->b()V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-super {p0}, Lw9/c;->g()V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-.end method
-
-.method public final k()Z
+.method public final h()Z
     .locals 1
 
     invoke-virtual {p0}, Lw9/c;->x()Landroid/content/Context;
@@ -1443,7 +1295,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, p1}, Lqa/c1;->i(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {v0, p1}, Lqa/c1;->I(Lcom/google/android/gms/common/api/Status;)V
 
     .line 28
     .line 29
@@ -1640,22 +1492,150 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
-.method public final l()I
-    .locals 1
+.method public final l()V
+    .locals 4
 
-    const v0, 0xbdfcb8
+    .line 1
+    const/4 v0, 0x2
 
-    return v0
+    .line 2
+    :try_start_0
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/nearby/messages/internal/b;->m0(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 3
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :catch_0
+    move-exception v1
+
+    .line 7
+    const-string v2, "NearbyMessagesClient"
+
+    .line 8
+    .line 9
+    invoke-static {v2, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    if-eqz v0, :cond_0
+
+    .line 14
+    .line 15
+    const/4 v0, 0x1
+
+    .line 16
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    const/4 v3, 0x0
+
+    .line 19
+    aput-object v1, v0, v3
+
+    .line 20
+    .line 21
+    const-string v1, "Failed to emit CLIENT_DISCONNECTED from override of GmsClient#disconnect(): %s"
+
+    .line 22
+    .line 23
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    invoke-static {v2, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_0
+    :goto_0
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/internal/b;->S:Lqa/g1;
+
+    .line 31
+    .line 32
+    invoke-virtual {v0}, Lqa/g1;->b()V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-super {p0}, Lw9/c;->l()V
+
+    .line 36
+    .line 37
+    .line 38
+    return-void
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method final m0(I)V
@@ -1828,9 +1808,14 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
+.end method
+
+.method public final n()I
+    .locals 1
+
+    const v0, 0xbdfcb8
+
+    return v0
 .end method
 
 .method final n0(Lcom/google/android/gms/common/api/internal/d;Lya/f;Lya/s;Lxa/g;I)V
@@ -2681,14 +2666,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method final p0(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/common/api/internal/d;Lya/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;[BI)V
@@ -3840,8 +3817,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected final synthetic r(Landroid/os/IBinder;)Landroid/os/IInterface;
@@ -3905,7 +3880,6 @@
     :goto_0
     return-object p1
     .line 26
-    .line 27
 .end method
 
 .method final r0(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/common/api/internal/d;)V
@@ -3965,7 +3939,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, p1}, Lqa/c1;->i(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {v0, p1}, Lqa/c1;->I(Lcom/google/android/gms/common/api/Status;)V
 
     .line 28
     .line 29
@@ -4162,14 +4136,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method protected final z()Landroid/os/Bundle;
@@ -4215,5 +4181,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method

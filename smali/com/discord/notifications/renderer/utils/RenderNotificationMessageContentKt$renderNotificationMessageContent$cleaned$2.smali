@@ -84,7 +84,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-interface {p1}, Lkotlin/text/MatchResult;->c()Lpi/g;
+    invoke-interface {p1}, Lkotlin/text/MatchResult;->d()Lpi/g;
 
     move-result-object p1
 

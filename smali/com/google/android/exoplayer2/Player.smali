@@ -15,61 +15,64 @@
 
 
 # virtual methods
-.method public abstract A()J
+.method public abstract A()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
 .end method
 
-.method public abstract B()I
+.method public abstract B(I)I
 .end method
 
-.method public abstract D()J
+.method public abstract C()Lcom/google/android/exoplayer2/Player$b;
 .end method
 
-.method public abstract E()I
+.method public abstract D(IJ)V
 .end method
 
-.method public abstract F()Z
+.method public abstract E()Z
 .end method
 
-.method public abstract I()I
+.method public abstract F(Z)V
 .end method
 
-.method public abstract J(I)V
+.method public abstract G()I
 .end method
 
-.method public abstract K()I
+.method public abstract I(Lcom/google/android/exoplayer2/Player$a;)V
+.end method
+
+.method public abstract J()I
+.end method
+
+.method public abstract L()J
 .end method
 
 .method public abstract M()I
 .end method
 
-.method public abstract O()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+.method public abstract O()J
 .end method
 
 .method public abstract P()I
 .end method
 
-.method public abstract Q()Lcom/google/android/exoplayer2/Timeline;
+.method public abstract Q()Z
 .end method
 
-.method public abstract R()Landroid/os/Looper;
+.method public abstract S(I)V
 .end method
 
-.method public abstract S()Z
+.method public abstract T()I
 .end method
 
-.method public abstract T()J
+.method public abstract V()I
 .end method
 
-.method public abstract V()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
-.end method
-
-.method public abstract W(I)I
+.method public abstract W()Z
 .end method
 
 .method public abstract X()J
 .end method
 
-.method public abstract Y()Lcom/google/android/exoplayer2/Player$b;
+.method public abstract Y()J
 .end method
 
 .method public abstract b()Lcom/google/android/exoplayer2/PlaybackParameters;
@@ -84,25 +87,10 @@
 .method public abstract f()J
 .end method
 
-.method public abstract g(IJ)V
-.end method
-
 .method public abstract getDuration()J
 .end method
 
-.method public abstract h()Z
-.end method
-
-.method public abstract hasNext()Z
-.end method
-
-.method public abstract hasPrevious()Z
-.end method
-
-.method public abstract j(Z)V
-.end method
-
-.method public abstract k()Ljava/util/List;
+.method public abstract h()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -113,29 +101,41 @@
     .end annotation
 .end method
 
-.method public abstract l()I
+.method public abstract hasNext()Z
 .end method
 
-.method public abstract m()Z
+.method public abstract hasPrevious()Z
 .end method
 
-.method public abstract o(Lcom/google/android/exoplayer2/Player$a;)V
+.method public abstract i()Z
 .end method
 
-.method public abstract p()I
+.method public abstract l(Lcom/google/android/exoplayer2/Player$a;)V
 .end method
 
-.method public abstract t(Lcom/google/android/exoplayer2/Player$a;)V
+.method public abstract m()I
+.end method
+
+.method public abstract o()Lcom/google/android/exoplayer2/ExoPlaybackException;
+.end method
+
+.method public abstract q(Z)V
+.end method
+
+.method public abstract r()Lcom/google/android/exoplayer2/Player$c;
+.end method
+
+.method public abstract t()I
 .end method
 
 .method public abstract u()I
 .end method
 
-.method public abstract w()Lcom/google/android/exoplayer2/ExoPlaybackException;
+.method public abstract w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 .end method
 
-.method public abstract y(Z)V
+.method public abstract x()Lcom/google/android/exoplayer2/Timeline;
 .end method
 
-.method public abstract z()Lcom/google/android/exoplayer2/Player$c;
+.method public abstract y()Landroid/os/Looper;
 .end method

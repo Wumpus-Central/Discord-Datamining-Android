@@ -110,7 +110,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p1, v0, v2, v1}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-interface {p1, v0, v2, v1}, Lcom/facebook/imagepipeline/producers/n0;->c(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 15
     .line 16
@@ -212,7 +212,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p1}, Lu5/e;->T()I
+    invoke-virtual {p1}, Lu5/e;->R()I
 
     .line 67
     .line 68
@@ -236,7 +236,7 @@
     .line 76
     .line 77
     .line 78
-    invoke-virtual {p1}, Lu5/e;->T()I
+    invoke-virtual {p1}, Lu5/e;->R()I
 
     .line 79
     .line 80
@@ -260,7 +260,7 @@
     .line 88
     .line 89
     .line 90
-    invoke-virtual {p1}, Lu5/e;->T()I
+    invoke-virtual {p1}, Lu5/e;->R()I
 
     .line 91
     .line 92
@@ -272,7 +272,7 @@
 
     .line 95
     .line 96
-    invoke-interface {v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 97
     .line 98
@@ -312,7 +312,7 @@
 
     .line 115
     .line 116
-    invoke-interface {v0, v3, v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v0, v3, v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 117
     .line 118
@@ -325,7 +325,7 @@
 
     .line 122
     .line 123
-    invoke-interface {v0, v3, v2, v5}, Lcom/facebook/imagepipeline/producers/n0;->c(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
+    invoke-interface {v0, v3, v2, v5}, Lcom/facebook/imagepipeline/producers/n0;->b(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
 
     .line 124
     .line 125
@@ -338,7 +338,7 @@
 
     .line 129
     .line 130
-    invoke-interface {v0, p1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 131
     .line 132
@@ -355,7 +355,7 @@
 
     .line 137
     .line 138
-    invoke-interface {v0, p1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 139
     .line 140

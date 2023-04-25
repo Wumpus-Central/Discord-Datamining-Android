@@ -191,7 +191,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static final wrapText(Ljava/lang/String;Ljava/util/List;)Lcom/discord/simpleast/core/node/StyleNode;

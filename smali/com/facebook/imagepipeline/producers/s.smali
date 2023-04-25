@@ -488,7 +488,7 @@
     .line 19
     .line 20
     :cond_0
-    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 21
     .line 22
@@ -496,12 +496,12 @@
     move-result-object v10
 
     .line 24
-    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 28
     .line 29
@@ -574,7 +574,7 @@
     .line 59
     .line 60
     :try_start_2
-    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 61
     .line 62
@@ -604,12 +604,12 @@
     .line 73
     .line 74
     .line 75
-    invoke-interface {v10, v8, v9, v3}, Lcom/facebook/imagepipeline/producers/n0;->c(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
+    invoke-interface {v10, v8, v9, v3}, Lcom/facebook/imagepipeline/producers/n0;->b(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
 
     .line 76
     .line 77
     .line 78
-    invoke-interface {v8, v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l(Ljava/lang/String;)V
+    invoke-interface {v8, v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->g(Ljava/lang/String;)V
 
     .line 79
     .line 80
@@ -618,12 +618,12 @@
 
     .line 82
     .line 83
-    invoke-interface {v0, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(F)V
+    invoke-interface {v0, v2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(F)V
 
     .line 84
     .line 85
     .line 86
-    invoke-interface {v0, v4, v3}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, v4, v3}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -631,7 +631,7 @@
     .line 88
     .line 89
     :try_start_3
-    invoke-static {v4}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v4}, Lu5/e;->h(Lu5/e;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -639,7 +639,7 @@
     .line 91
     .line 92
     :try_start_4
-    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
@@ -672,7 +672,7 @@
 
     .line 106
     :try_start_5
-    invoke-static {v4}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v4}, Lu5/e;->h(Lu5/e;)V
 
     .line 107
     .line 108
@@ -720,7 +720,7 @@
     .line 127
     .line 128
     :try_start_6
-    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 129
     .line 130
@@ -756,7 +756,7 @@
     const/4 v4, 0x0
 
     .line 144
-    invoke-interface {v10, v8, v9, v4}, Lcom/facebook/imagepipeline/producers/n0;->c(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
+    invoke-interface {v10, v8, v9, v4}, Lcom/facebook/imagepipeline/producers/n0;->b(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Z)V
 
     .line 145
     .line 146
@@ -765,12 +765,12 @@
 
     .line 148
     .line 149
-    invoke-interface {v8, v2, v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v8, v2, v4}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 150
     .line 151
     .line 152
-    invoke-interface {v0, v13, v3}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, v13, v3}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
@@ -778,7 +778,7 @@
     .line 154
     .line 155
     :try_start_7
-    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
@@ -808,7 +808,7 @@
     .line 168
     :cond_6
     :try_start_8
-    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 169
     .line 170
@@ -832,7 +832,7 @@
 
     .line 179
     .line 180
-    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->f()Lq5/g;
+    invoke-interface/range {p2 .. p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lq5/g;
 
     .line 181
     .line 182
@@ -840,7 +840,7 @@
     move-result-object v2
 
     .line 184
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 185
     .line 186
@@ -868,7 +868,7 @@
     .line 196
     .line 197
     .line 198
-    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v10, v8, v9}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 199
     .line 200
@@ -906,7 +906,7 @@
     .line 215
     .line 216
     :try_start_9
-    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
@@ -939,7 +939,7 @@
 
     .line 230
     :try_start_a
-    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v11}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 231
     .line 232

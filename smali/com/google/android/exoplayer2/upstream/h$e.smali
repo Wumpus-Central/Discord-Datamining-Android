@@ -18,5 +18,5 @@
 .method public abstract a()V
 .end method
 
-.method public abstract b()V
+.method public abstract c()V
 .end method

@@ -60,7 +60,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static c(Landroid/webkit/WebView;)I
@@ -185,9 +184,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 
@@ -326,9 +322,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public b()Lcom/reactnativecommunity/webview/RNCWebViewManager$e;
@@ -379,7 +372,6 @@
     throw v0
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public d(Lcom/reactnativecommunity/webview/b$b;)V
@@ -436,7 +428,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public e()V
@@ -477,7 +468,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public getWebView()Lcom/reactnativecommunity/webview/RNCWebViewManager$e;

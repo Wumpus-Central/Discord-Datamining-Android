@@ -199,7 +199,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static synthetic a(Lcom/swmansion/rnscreens/h0;Landroid/view/View;)V
@@ -312,7 +311,6 @@
     :cond_0
     return-object v2
     .line 23
-    .line 24
 .end method
 
 .method public static final synthetic h(Lcom/swmansion/rnscreens/h0;Lcom/swmansion/rnscreens/i0;)V
@@ -364,7 +362,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private final k(Z)V
@@ -411,7 +408,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final l()V
@@ -447,7 +443,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private final m(Ljava/lang/String;)V
@@ -492,7 +487,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final n(Ljava/lang/String;)V
@@ -537,7 +531,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private final p(Ljava/lang/String;Lcom/facebook/react/bridge/WritableMap;)V
@@ -618,8 +611,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static final q(Lcom/swmansion/rnscreens/h0;Landroid/view/View;Z)V
@@ -801,7 +792,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private static final s(Lcom/swmansion/rnscreens/h0;Landroid/view/View;)V
@@ -861,8 +851,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private final setSearchViewListeners(Landroidx/appcompat/widget/SearchView;)V
@@ -980,9 +968,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private final t()V
@@ -1174,9 +1159,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -1314,7 +1296,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final setAutoCapitalize(Lcom/swmansion/rnscreens/h0$a;)V
@@ -1353,7 +1334,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setAutoFocus(Z)V
@@ -1416,7 +1396,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setPlaceholder(Ljava/lang/String;)V
@@ -1455,7 +1434,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setShouldOverrideBackButton(Z)V

@@ -191,15 +191,7 @@
     .line 107
 .end method
 
-.method public synthetic b(J)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ld9/s;->a(Lcom/google/android/exoplayer2/upstream/g;J)V
-
-    return-void
-.end method
-
-.method public c(Lcom/google/android/exoplayer2/upstream/g$a;)J
+.method public b(Lcom/google/android/exoplayer2/upstream/g$a;)J
     .locals 3
 
     .line 1
@@ -352,7 +344,7 @@
     .line 107
 .end method
 
-.method public d(I)I
+.method public c(I)I
     .locals 2
 
     iget v0, p0, Lcom/google/android/exoplayer2/upstream/d;->a:I
@@ -377,4 +369,12 @@
 
     :cond_1
     return v0
+.end method
+
+.method public synthetic d(J)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ld9/s;->a(Lcom/google/android/exoplayer2/upstream/g;J)V
+
+    return-void
 .end method

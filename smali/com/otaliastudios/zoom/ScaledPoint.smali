@@ -242,7 +242,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -361,7 +360,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final g(Ljava/lang/Number;Ljava/lang/Number;)V
@@ -435,8 +433,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final h(F)V
@@ -550,8 +546,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public toString()Ljava/lang/String;

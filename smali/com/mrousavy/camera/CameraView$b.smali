@@ -77,7 +77,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -222,9 +221,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public onHostPause()V
@@ -264,7 +260,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public onHostResume()V
@@ -312,5 +307,4 @@
     .line 22
     return-void
     .line 23
-    .line 24
 .end method

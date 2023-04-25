@@ -797,7 +797,7 @@
     .line 72
     new-instance v1, Ln5/c;
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->a()Lx5/y;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Lx5/y;
 
     move-result-object v2
 
@@ -830,7 +830,7 @@
     .line 76
     new-instance v1, Ln5/c;
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->a()Lx5/y;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Lx5/y;
 
     move-result-object v2
 
@@ -996,7 +996,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
@@ -1118,7 +1117,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;Lcom/facebook/imagepipeline/core/a;)I
@@ -1735,50 +1733,34 @@
 
 
 # virtual methods
-.method public A()Lcom/facebook/common/internal/Supplier;
+.method public A()Lo5/o;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/facebook/common/internal/Supplier<",
-            "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;",
-            ">;"
-        }
-    .end annotation
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->b:Lcom/facebook/common/internal/Supplier;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lo5/o;
 
     return-object v0
 .end method
 
-.method public B()Ls5/c;
+.method public B()Ly3/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Ls5/c;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Ly3/c;
 
     return-object v0
 .end method
 
-.method public C()Lcom/facebook/imagepipeline/core/a;
+.method public C()Lr3/a;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public D()Lcom/facebook/imagepipeline/core/a;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->B:Lcom/facebook/imagepipeline/core/a;
-
-    return-object v0
-.end method
-
-.method public D()Lcom/facebook/common/internal/Supplier;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/facebook/common/internal/Supplier<",
-            "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;",
-            ">;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->i:Lcom/facebook/common/internal/Supplier;
 
     return-object v0
 .end method
@@ -1791,15 +1773,7 @@
     return-object v0
 .end method
 
-.method public a()Lx5/y;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Lx5/y;
-
-    return-object v0
-.end method
-
-.method public b()Ljava/util/Set;
+.method public a()Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1819,15 +1793,7 @@
     return-object v0
 .end method
 
-.method public c()I
-    .locals 1
-
-    iget v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->r:I
-
-    return v0
-.end method
-
-.method public d()Lcom/facebook/common/internal/Supplier;
+.method public b()Lcom/facebook/common/internal/Supplier;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1843,39 +1809,7 @@
     return-object v0
 .end method
 
-.method public e()Lq5/f;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lq5/f;
-
-    return-object v0
-.end method
-
-.method public f()Lr5/a;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Lr5/a;
-
-    return-object v0
-.end method
-
-.method public g()Lo5/a;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lo5/a;
-
-    return-object v0
-.end method
-
-.method public getContext()Landroid/content/Context;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->f:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method public h()Lcom/facebook/imagepipeline/producers/NetworkFetcher;
+.method public c()Lcom/facebook/imagepipeline/producers/NetworkFetcher;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->s:Lcom/facebook/imagepipeline/producers/NetworkFetcher;
@@ -1883,7 +1817,7 @@
     return-object v0
 .end method
 
-.method public i()Lo5/s;
+.method public d()Lo5/s;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1900,7 +1834,7 @@
     return-object v0
 .end method
 
-.method public j()Lcom/facebook/cache/disk/DiskCacheConfig;
+.method public e()Lcom/facebook/cache/disk/DiskCacheConfig;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->p:Lcom/facebook/cache/disk/DiskCacheConfig;
@@ -1908,7 +1842,7 @@
     return-object v0
 .end method
 
-.method public k()Ljava/util/Set;
+.method public f()Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1928,23 +1862,7 @@
     return-object v0
 .end method
 
-.method public l()Lo5/f;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lo5/f;
-
-    return-object v0
-.end method
-
-.method public m()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->z:Z
-
-    return v0
-.end method
-
-.method public n()Lo5/s$a;
+.method public g()Lo5/s$a;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->c:Lo5/s$a;
@@ -1952,7 +1870,15 @@
     return-object v0
 .end method
 
-.method public o()Ls5/e;
+.method public getContext()Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->f:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method public h()Ls5/e;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->w:Ls5/e;
@@ -1960,7 +1886,7 @@
     return-object v0
 .end method
 
-.method public p()Lcom/facebook/cache/disk/DiskCacheConfig;
+.method public i()Lcom/facebook/cache/disk/DiskCacheConfig;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->A:Lcom/facebook/cache/disk/DiskCacheConfig;
@@ -1968,15 +1894,7 @@
     return-object v0
 .end method
 
-.method public q()Lo5/o;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lo5/o;
-
-    return-object v0
-.end method
-
-.method public r()Lo5/i$b;
+.method public j()Lo5/i$b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1992,7 +1910,7 @@
     return-object v0
 .end method
 
-.method public s()Z
+.method public k()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->g:Z
@@ -2000,7 +1918,7 @@
     return v0
 .end method
 
-.method public t()Lt3/f;
+.method public l()Lt3/f;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->G:Lt3/f;
@@ -2008,7 +1926,7 @@
     return-object v0
 .end method
 
-.method public u()Ljava/lang/Integer;
+.method public m()Ljava/lang/Integer;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->n:Ljava/lang/Integer;
@@ -2016,7 +1934,7 @@
     return-object v0
 .end method
 
-.method public v()La6/d;
+.method public n()La6/d;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->m:La6/d;
@@ -2024,15 +1942,7 @@
     return-object v0
 .end method
 
-.method public w()Ly3/c;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Ly3/c;
-
-    return-object v0
-.end method
-
-.method public x()Ls5/d;
+.method public o()Ls5/d;
     .locals 1
 
     const/4 v0, 0x0
@@ -2040,7 +1950,7 @@
     return-object v0
 .end method
 
-.method public y()Z
+.method public p()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->C:Z
@@ -2048,10 +1958,98 @@
     return v0
 .end method
 
-.method public z()Lr3/a;
+.method public q()Lcom/facebook/common/internal/Supplier;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/facebook/common/internal/Supplier<",
+            "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;",
+            ">;"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->b:Lcom/facebook/common/internal/Supplier;
 
     return-object v0
+.end method
+
+.method public r()Ls5/c;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Ls5/c;
+
+    return-object v0
+.end method
+
+.method public s()Lcom/facebook/common/internal/Supplier;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/facebook/common/internal/Supplier<",
+            "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->i:Lcom/facebook/common/internal/Supplier;
+
+    return-object v0
+.end method
+
+.method public t()Lx5/y;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Lx5/y;
+
+    return-object v0
+.end method
+
+.method public u()I
+    .locals 1
+
+    iget v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->r:I
+
+    return v0
+.end method
+
+.method public v()Lq5/f;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lq5/f;
+
+    return-object v0
+.end method
+
+.method public w()Lr5/a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Lr5/a;
+
+    return-object v0
+.end method
+
+.method public x()Lo5/a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lo5/a;
+
+    return-object v0
+.end method
+
+.method public y()Lo5/f;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lo5/f;
+
+    return-object v0
+.end method
+
+.method public z()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->z:Z
+
+    return v0
 .end method

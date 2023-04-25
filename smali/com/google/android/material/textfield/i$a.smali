@@ -208,7 +208,7 @@
     move-result-object p1
 
     .line 78
-    invoke-virtual {p1}, Landroidx/appcompat/widget/z0;->h()Landroid/widget/ListView;
+    invoke-virtual {p1}, Landroidx/appcompat/widget/z0;->n()Landroid/widget/ListView;
 
     .line 79
     .line 80

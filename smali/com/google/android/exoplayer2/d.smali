@@ -1072,7 +1072,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/d$b;->h(I)V
+    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/d$b;->l(I)V
 
     .line 6
     .line 7
@@ -2034,7 +2034,7 @@
 
     .line 29
     .line 30
-    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/d$b;->g(F)V
+    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/d$b;->j(F)V
 
     .line 31
     .line 32

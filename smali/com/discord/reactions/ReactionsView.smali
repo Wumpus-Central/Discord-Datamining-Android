@@ -376,20 +376,20 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0}, Lcom/discord/reactions/ReactionsView;->setReactions$lambda$0(Landroid/view/View;)V
-
-    return-void
-.end method
-
 .method public static final synthetic access$getSharedViewPool$delegate$cp()Lkotlin/Lazy;
     .locals 1
 
     sget-object v0, Lcom/discord/reactions/ReactionsView;->sharedViewPool$delegate:Lkotlin/Lazy;
 
     return-object v0
+.end method
+
+.method public static synthetic b(Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0}, Lcom/discord/reactions/ReactionsView;->setReactions$lambda$0(Landroid/view/View;)V
+
+    return-void
 .end method
 
 .method public static synthetic c(Landroid/view/View;)V

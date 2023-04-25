@@ -60,7 +60,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private h(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFF)V
@@ -1076,14 +1075,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method b(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFI)V
@@ -2024,14 +2015,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public d()I

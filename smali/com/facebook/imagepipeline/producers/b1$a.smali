@@ -71,7 +71,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v0}, Lu5/e;->h(Lu5/e;)V
 
     .line 4
     .line 5
@@ -149,7 +149,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v0}, Lu5/e;->h(Lu5/e;)V
 
     .line 4
     .line 5
@@ -226,7 +226,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected bridge synthetic f(Ljava/lang/Object;)V
@@ -242,7 +241,7 @@
 .method protected j(Lu5/e;)V
     .locals 0
 
-    invoke-static {p1}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {p1}, Lu5/e;->h(Lu5/e;)V
 
     return-void
 .end method
@@ -263,7 +262,7 @@
     move-result-object v0
 
     .line 7
-    invoke-interface {v0}, Ly3/h;->a()Ly3/j;
+    invoke-interface {v0}, Ly3/h;->c()Ly3/j;
 
     .line 8
     .line 9
@@ -289,7 +288,7 @@
     move-result-object v1
 
     .line 20
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 21
     .line 22
@@ -313,7 +312,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v2, v3}, Lu5/e;->k(Lu5/e;)V
+    invoke-virtual {v2, v3}, Lu5/e;->i(Lu5/e;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -321,7 +320,7 @@
     .line 33
     .line 34
     :try_start_2
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -341,7 +340,7 @@
 
     .line 42
     :try_start_3
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 43
     .line 44
@@ -387,7 +386,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {v0}, Lu5/e;->h(Lu5/e;)V
 
     .line 4
     .line 5
@@ -464,5 +463,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

@@ -211,7 +211,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/jstasks/HeadlessJsTaskContext;Lcom/facebook/react/jstasks/HeadlessJsTaskConfig;I)V
@@ -326,7 +325,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private removeTimeout(I)V
@@ -427,7 +425,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private scheduleTaskTimeout(IJ)V
@@ -944,7 +941,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized finishTask(I)V
@@ -2118,7 +2114,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeTaskEventListener(Lcom/facebook/react/jstasks/HeadlessJsTaskEventListener;)V

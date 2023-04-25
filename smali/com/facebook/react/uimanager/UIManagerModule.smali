@@ -3247,7 +3247,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getDefaultEventTypes()Lcom/facebook/react/bridge/WritableMap;
@@ -3570,7 +3569,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public manageChildren(ILcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableArray;)V
@@ -5250,7 +5248,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public prependUIBlock(Lcom/facebook/react/uimanager/UIBlock;)V
@@ -5398,7 +5395,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeSubviewsFromContainerWithID(I)V
@@ -5555,7 +5551,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public resolveRootTagFromReactTag(I)I
@@ -5655,7 +5650,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public resolveView(I)Landroid/view/View;
@@ -5753,7 +5747,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public sendAccessibilityEvent(II)V

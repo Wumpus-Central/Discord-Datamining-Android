@@ -222,7 +222,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static addListener(Lcom/facebook/react/bridge/ReactMarker$MarkerListener;)V
@@ -317,7 +316,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static clearFabricMarkerListeners()V

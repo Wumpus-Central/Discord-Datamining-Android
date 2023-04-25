@@ -72,7 +72,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method static synthetic a(Lcom/google/android/material/datepicker/u;)Lcom/google/android/material/datepicker/h;
@@ -104,7 +103,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->z()Lcom/google/android/material/datepicker/l;
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->x()Lcom/google/android/material/datepicker/l;
 
     move-result-object v0
 
@@ -124,7 +123,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->z()Lcom/google/android/material/datepicker/l;
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->x()Lcom/google/android/material/datepicker/l;
 
     move-result-object v0
 
@@ -312,7 +311,7 @@
     move-result-object v4
 
     .line 86
-    invoke-interface {v4}, Lcom/google/android/material/datepicker/d;->B()Ljava/util/Collection;
+    invoke-interface {v4}, Lcom/google/android/material/datepicker/d;->G()Ljava/util/Collection;
 
     .line 87
     .line 88
@@ -470,14 +469,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public f(Landroid/view/ViewGroup;I)Lcom/google/android/material/datepicker/u$b;
@@ -553,8 +544,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public getItemCount()I
@@ -566,7 +555,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->C()I
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->y()I
 
     move-result v0
 

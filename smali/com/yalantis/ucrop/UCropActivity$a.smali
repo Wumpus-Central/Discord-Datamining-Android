@@ -34,17 +34,7 @@
 
 
 # virtual methods
-.method public a(F)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$a;->a:Lcom/yalantis/ucrop/UCropActivity;
-
-    invoke-static {v0, p1}, Lcom/yalantis/ucrop/UCropActivity;->a(Lcom/yalantis/ucrop/UCropActivity;F)V
-
-    return-void
-.end method
-
-.method public b()V
+.method public a()V
     .locals 3
 
     .line 1
@@ -188,12 +178,9 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
-.method public c(Ljava/lang/Exception;)V
+.method public b(Ljava/lang/Exception;)V
     .locals 1
 
     .line 1
@@ -231,7 +218,16 @@
     .line 24
     .line 25
     .line 26
-    .line 27
+.end method
+
+.method public c(F)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$a;->a:Lcom/yalantis/ucrop/UCropActivity;
+
+    invoke-static {v0, p1}, Lcom/yalantis/ucrop/UCropActivity;->b(Lcom/yalantis/ucrop/UCropActivity;F)V
+
+    return-void
 .end method
 
 .method public d(F)V
@@ -239,7 +235,7 @@
 
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$a;->a:Lcom/yalantis/ucrop/UCropActivity;
 
-    invoke-static {v0, p1}, Lcom/yalantis/ucrop/UCropActivity;->b(Lcom/yalantis/ucrop/UCropActivity;F)V
+    invoke-static {v0, p1}, Lcom/yalantis/ucrop/UCropActivity;->a(Lcom/yalantis/ucrop/UCropActivity;F)V
 
     return-void
 .end method

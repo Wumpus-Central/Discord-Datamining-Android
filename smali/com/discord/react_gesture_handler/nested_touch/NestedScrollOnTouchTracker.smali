@@ -979,7 +979,7 @@
     .line 179
     .line 180
     .line 181
-    invoke-virtual {v8}, Lkotlin/ranges/a;->i()Lmf/p;
+    invoke-virtual {v8}, Lkotlin/ranges/a;->h()Lmf/p;
 
     .line 182
     .line 183

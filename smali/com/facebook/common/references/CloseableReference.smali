@@ -237,7 +237,7 @@
     return-void
 .end method
 
-.method public static T(Lcom/facebook/common/references/CloseableReference;)Z
+.method public static R(Lcom/facebook/common/references/CloseableReference;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -266,7 +266,7 @@
     return p0
 .end method
 
-.method public static g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+.method public static S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -280,14 +280,14 @@
 
     sget-object v0, Lcom/facebook/common/references/CloseableReference;->q:Lz3/c;
 
-    invoke-static {p0, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, v0}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static h0(Ljava/io/Closeable;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
+.method public static U(Ljava/io/Closeable;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -339,7 +339,7 @@
     .line 17
     .line 18
     :cond_1
-    invoke-static {p0, v1, p1, v0}, Lcom/facebook/common/references/CloseableReference;->t0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, v1, p1, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 19
     .line 20
@@ -493,7 +493,7 @@
     .line 165
 .end method
 
-.method public static i0(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+.method public static Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -509,22 +509,14 @@
 
     sget-object v0, Lcom/facebook/common/references/CloseableReference;->r:Lcom/facebook/common/references/CloseableReference$c;
 
-    invoke-static {p0, p1, v0}, Lcom/facebook/common/references/CloseableReference;->k0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, p1, v0}, Lcom/facebook/common/references/CloseableReference;->c0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic k()Ljava/lang/Class;
-    .locals 1
-
-    sget-object v0, Lcom/facebook/common/references/CloseableReference;->o:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public static k0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
+.method public static c0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -574,7 +566,7 @@
     .line 15
     .line 16
     :cond_1
-    invoke-static {p0, p1, p2, v0}, Lcom/facebook/common/references/CloseableReference;->t0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, p1, p2, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 17
     .line 18
@@ -922,7 +914,15 @@
     .line 357
 .end method
 
-.method public static t0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+.method static synthetic i()Ljava/lang/Class;
+    .locals 1
+
+    sget-object v0, Lcom/facebook/common/references/CloseableReference;->o:Ljava/lang/Class;
+
+    return-object v0
+.end method
+
+.method public static i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1515,7 +1515,15 @@
     .line 517
 .end method
 
-.method public static v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+.method public static n0(I)V
+    .locals 0
+
+    sput p0, Lcom/facebook/common/references/CloseableReference;->p:I
+
+    return-void
+.end method
+
+.method public static r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1531,7 +1539,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->s()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->n()Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p0
 
@@ -1544,15 +1552,7 @@
     return-object p0
 .end method
 
-.method public static v0(I)V
-    .locals 0
-
-    sput p0, Lcom/facebook/common/references/CloseableReference;->p:I
-
-    return-void
-.end method
-
-.method public static w(Ljava/util/Collection;)Ljava/util/List;
+.method public static s(Ljava/util/Collection;)Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1630,7 +1630,7 @@
 
     .line 29
     .line 30
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     .line 31
     .line 32
@@ -1685,10 +1685,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public static x(Lcom/facebook/common/references/CloseableReference;)V
+.method public static t(Lcom/facebook/common/references/CloseableReference;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1756,7 +1755,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 20
     .line 21
@@ -1818,7 +1817,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static z0()Z
@@ -1843,7 +1841,7 @@
 
 
 # virtual methods
-.method public declared-synchronized F()Ljava/lang/Object;
+.method public declared-synchronized C()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1958,7 +1956,7 @@
     .line 66
 .end method
 
-.method public K()I
+.method public H()I
     .locals 1
 
     invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->Q()Z
@@ -2079,7 +2077,7 @@
 .method public bridge synthetic clone()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     move-result-object v0
 
@@ -2323,7 +2321,7 @@
     .line 66
 .end method
 
-.method public abstract p()Lcom/facebook/common/references/CloseableReference;
+.method public abstract l()Lcom/facebook/common/references/CloseableReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -2333,7 +2331,7 @@
     .end annotation
 .end method
 
-.method public declared-synchronized s()Lcom/facebook/common/references/CloseableReference;
+.method public declared-synchronized n()Lcom/facebook/common/references/CloseableReference;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2360,7 +2358,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p0}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     .line 9
     .line 10

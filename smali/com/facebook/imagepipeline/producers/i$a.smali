@@ -443,7 +443,7 @@
 
     .line 10
     :cond_0
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -487,7 +487,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1}, Lu5/d;->p()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lu5/d;->n()Landroid/graphics/Bitmap;
 
     .line 32
     .line 33
@@ -569,7 +569,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -609,7 +608,7 @@
     move-result-object v0
 
     .line 8
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 9
     .line 10

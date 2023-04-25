@@ -894,7 +894,7 @@
 
     .line 29
     .line 30
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/upstream/h$e;->b()V
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/upstream/h$e;->c()V
 
     .line 31
     .line 32
@@ -971,7 +971,7 @@
     const/4 v7, 0x1
 
     .line 66
-    invoke-interface/range {v1 .. v7}, Lcom/google/android/exoplayer2/upstream/h$b;->l(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
+    invoke-interface/range {v1 .. v7}, Lcom/google/android/exoplayer2/upstream/h$b;->i(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
 
     .line 67
     .line 68
@@ -1404,7 +1404,7 @@
     const/4 v8, 0x0
 
     .line 44
-    invoke-interface/range {v2 .. v8}, Lcom/google/android/exoplayer2/upstream/h$b;->l(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
+    invoke-interface/range {v2 .. v8}, Lcom/google/android/exoplayer2/upstream/h$b;->i(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
 
     .line 45
     .line 46
@@ -1466,7 +1466,7 @@
 
     .line 71
     .line 72
-    invoke-interface/range {v2 .. v9}, Lcom/google/android/exoplayer2/upstream/h$b;->t(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
+    invoke-interface/range {v2 .. v9}, Lcom/google/android/exoplayer2/upstream/h$b;->o(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
 
     .line 73
     .line 74
@@ -1590,7 +1590,7 @@
 
     .line 131
     .line 132
-    invoke-interface/range {v2 .. v7}, Lcom/google/android/exoplayer2/upstream/h$b;->m(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+    invoke-interface/range {v2 .. v7}, Lcom/google/android/exoplayer2/upstream/h$b;->j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 

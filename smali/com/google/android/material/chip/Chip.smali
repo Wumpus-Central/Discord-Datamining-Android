@@ -214,9 +214,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -541,9 +538,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private B()V
@@ -740,9 +734,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private C()V
@@ -873,9 +864,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private D(Landroid/util/AttributeSet;)V
@@ -1362,30 +1350,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method static synthetic b(Lcom/google/android/material/chip/Chip;)Lcom/google/android/material/chip/a;
@@ -1561,9 +1525,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private getCloseIconTouchBoundsInt()Landroid/graphics/Rect;
@@ -1620,6 +1581,76 @@
     .line 23
     .line 24
     return-object v0
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method private getTextAppearance()Ltb/d;
@@ -1869,9 +1900,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private n()V
@@ -1925,6 +1953,76 @@
     .line 24
     :cond_0
     return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method private o()Z
@@ -2223,7 +2321,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private setCloseIconPressed(Z)V
@@ -2265,7 +2362,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private v()V
@@ -2318,7 +2414,6 @@
     .line 23
     :cond_0
     return-void
-    .line 24
 .end method
 
 .method private x(Lcom/google/android/material/chip/a;)V
@@ -2468,9 +2563,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private z()V
@@ -2597,9 +2689,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -2639,7 +2728,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
@@ -2770,9 +2858,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
@@ -2904,9 +2989,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method protected drawableStateChanged()V
@@ -3040,9 +3122,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getAccessibilityClassName()Ljava/lang/CharSequence;
@@ -3201,9 +3280,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
@@ -3240,7 +3316,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public getCheckedIcon()Landroid/graphics/drawable/Drawable;
@@ -3770,9 +3845,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public getHideMotionSpec()Leb/h;
@@ -4405,30 +4477,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method protected onAttachedToWindow()V
@@ -4464,7 +4512,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onCreateDrawableState(I)[I
@@ -4586,9 +4633,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
@@ -4873,9 +4917,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
@@ -5046,9 +5087,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public onResolvePointerIcon(Landroid/view/MotionEvent;I)Landroid/view/PointerIcon;
@@ -5144,8 +5182,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public onRtlPropertiesChanged(I)V
@@ -5192,7 +5228,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
@@ -5390,9 +5425,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public s()Z
@@ -5479,7 +5511,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setBackgroundColor(I)V
@@ -5518,7 +5549,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -5573,7 +5603,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setBackgroundResource(I)V
@@ -5612,7 +5641,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setBackgroundTintList(Landroid/content/res/ColorStateList;)V
@@ -5651,7 +5679,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
@@ -5690,7 +5717,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckable(Z)V
@@ -5730,7 +5756,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckableResource(I)V
@@ -5770,7 +5795,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChecked(Z)V
@@ -5822,7 +5846,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
@@ -5862,7 +5885,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconEnabled(Z)V
@@ -5922,7 +5944,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconTint(Landroid/content/res/ColorStateList;)V
@@ -5962,7 +5983,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconTintResource(I)V
@@ -6002,7 +6022,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCheckedIconVisible(I)V
@@ -6072,7 +6091,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipBackgroundColorResource(I)V
@@ -6112,7 +6130,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipCornerRadius(F)V
@@ -6154,7 +6171,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipCornerRadiusResource(I)V
@@ -6196,7 +6212,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipDrawable(Lcom/google/android/material/chip/a;)V
@@ -6250,7 +6265,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipEndPadding(F)V
@@ -6290,7 +6304,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipEndPaddingResource(I)V
@@ -6330,7 +6343,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIcon(Landroid/graphics/drawable/Drawable;)V
@@ -6370,7 +6382,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconEnabled(Z)V
@@ -6430,7 +6441,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconSize(F)V
@@ -6470,7 +6480,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconSizeResource(I)V
@@ -6510,7 +6519,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconTint(Landroid/content/res/ColorStateList;)V
@@ -6550,7 +6558,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconTintResource(I)V
@@ -6590,7 +6597,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipIconVisible(I)V
@@ -6660,7 +6666,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipMinHeightResource(I)V
@@ -6700,7 +6705,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStartPadding(F)V
@@ -6740,7 +6744,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStartPaddingResource(I)V
@@ -6780,7 +6783,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStrokeColor(Landroid/content/res/ColorStateList;)V
@@ -6820,7 +6822,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStrokeColorResource(I)V
@@ -6860,7 +6861,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStrokeWidth(F)V
@@ -6900,7 +6900,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipStrokeWidthResource(I)V
@@ -6940,7 +6939,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setChipText(Ljava/lang/CharSequence;)V
@@ -7010,7 +7008,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconContentDescription(Ljava/lang/CharSequence;)V
@@ -7050,7 +7047,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconEnabled(Z)V
@@ -7110,7 +7106,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconEndPaddingResource(I)V
@@ -7150,7 +7145,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconResource(I)V
@@ -7192,7 +7186,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconSize(F)V
@@ -7232,7 +7225,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconSizeResource(I)V
@@ -7272,7 +7264,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconStartPadding(F)V
@@ -7312,7 +7303,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconStartPaddingResource(I)V
@@ -7352,7 +7342,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconTint(Landroid/content/res/ColorStateList;)V
@@ -7392,7 +7381,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconTintResource(I)V
@@ -7432,7 +7420,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setCloseIconVisible(I)V
@@ -8239,7 +8226,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
@@ -8362,9 +8348,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setEnsureMinTouchTargetSize(Z)V
@@ -8403,7 +8386,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setGravity(I)V
@@ -8452,7 +8434,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setHideMotionSpec(Leb/h;)V
@@ -8492,7 +8473,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setHideMotionSpecResource(I)V
@@ -8532,7 +8512,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setIconEndPadding(F)V
@@ -8572,7 +8551,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setIconEndPaddingResource(I)V
@@ -8612,7 +8590,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setIconStartPadding(F)V
@@ -8652,7 +8629,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setIconStartPaddingResource(I)V
@@ -8692,7 +8668,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setInternalOnCheckedChangeListener(Lcom/google/android/material/internal/h$a;)V
@@ -8750,7 +8725,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setLines(I)V
@@ -8798,7 +8772,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMaxLines(I)V
@@ -8846,7 +8819,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMaxWidth(I)V
@@ -8888,7 +8860,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setMinLines(I)V
@@ -8936,7 +8907,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
@@ -8981,7 +8951,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setRippleColor(Landroid/content/res/ColorStateList;)V
@@ -9032,7 +9001,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setRippleColorResource(I)V
@@ -9082,7 +9050,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setShapeAppearanceModel(Lwb/k;)V
@@ -9132,7 +9099,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setShowMotionSpecResource(I)V
@@ -9172,7 +9138,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setSingleLine(Z)V
@@ -9218,7 +9183,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
@@ -9307,8 +9271,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public setTextAppearance(I)V
@@ -9420,7 +9382,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setTextEndPaddingResource(I)V
@@ -9460,7 +9421,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setTextStartPadding(F)V
@@ -9500,7 +9460,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setTextStartPaddingResource(I)V
@@ -9540,7 +9499,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public t()Z
@@ -9618,7 +9576,6 @@
     .line 23
     :cond_1
     return v0
-    .line 24
 .end method
 
 .method public w()Z

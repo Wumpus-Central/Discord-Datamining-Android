@@ -314,7 +314,7 @@
     move-result-wide v1
 
     .line 61
-    invoke-static {v1, v2}, Lqi/a;->p(J)J
+    invoke-static {v1, v2}, Lqi/a;->n(J)J
 
     .line 62
     .line 63

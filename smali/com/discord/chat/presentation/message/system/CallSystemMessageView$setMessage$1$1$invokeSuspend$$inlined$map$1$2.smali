@@ -222,7 +222,7 @@
     move-result-wide v4
 
     .line 72
-    invoke-static {v4, v5}, Lqi/a;->f(J)Lqi/a;
+    invoke-static {v4, v5}, Lqi/a;->e(J)Lqi/a;
 
     .line 73
     .line 74
@@ -242,7 +242,7 @@
     move-result-wide v4
 
     .line 82
-    invoke-static {v4, v5}, Lqi/a;->f(J)Lqi/a;
+    invoke-static {v4, v5}, Lqi/a;->e(J)Lqi/a;
 
     .line 83
     .line 84

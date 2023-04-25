@@ -240,7 +240,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
 
@@ -266,7 +266,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 4
     .line 5
@@ -359,5 +359,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
