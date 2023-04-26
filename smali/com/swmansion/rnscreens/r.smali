@@ -254,58 +254,6 @@
     .line 33
     .line 34
     .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
 .end method
 
 .method private final C()V
@@ -437,6 +385,65 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
 .end method
 
 .method private final D()V
@@ -571,6 +578,65 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
 .end method
 
 .method private final E()Lcom/swmansion/rnscreens/r$b;
@@ -670,6 +736,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method private static final H(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -716,6 +791,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method private final J(Lcom/swmansion/rnscreens/r$b;)V
@@ -916,6 +1000,61 @@
     .line 85
     .line 86
     .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
 .end method
 
 .method public static synthetic w(Lkotlin/jvm/internal/Ref$ObjectRef;)V
@@ -990,6 +1129,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method public final B(Lcom/swmansion/rnscreens/s;)V
@@ -1032,6 +1180,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method public final I()V
@@ -1068,6 +1225,12 @@
     .line 21
     .line 22
     .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
 .end method
 
 .method public bridge synthetic c(Lcom/swmansion/rnscreens/j;)Lcom/swmansion/rnscreens/n;
@@ -1235,6 +1398,61 @@
     .line 85
     .line 86
     .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
 .end method
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
@@ -1392,6 +1610,51 @@
     .line 127
     .line 128
     .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
 .end method
 
 .method public endViewTransition(Landroid/view/View;)V
@@ -1441,6 +1704,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method public final getGoingForward()Z
@@ -1588,6 +1860,65 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
 .end method
 
 .method public getTopScreen()Lcom/swmansion/rnscreens/j;
@@ -1689,6 +2020,12 @@
     .line 23
     :cond_0
     return-void
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
 .end method
 
 .method public p()V
@@ -3641,352 +3978,6 @@
     .line 1181
     .line 1182
     .line 1183
-    .line 1184
-    .line 1185
-    .line 1186
-    .line 1187
-    .line 1188
-    .line 1189
-    .line 1190
-    .line 1191
-    .line 1192
-    .line 1193
-    .line 1194
-    .line 1195
-    .line 1196
-    .line 1197
-    .line 1198
-    .line 1199
-    .line 1200
-    .line 1201
-    .line 1202
-    .line 1203
-    .line 1204
-    .line 1205
-    .line 1206
-    .line 1207
-    .line 1208
-    .line 1209
-    .line 1210
-    .line 1211
-    .line 1212
-    .line 1213
-    .line 1214
-    .line 1215
-    .line 1216
-    .line 1217
-    .line 1218
-    .line 1219
-    .line 1220
-    .line 1221
-    .line 1222
-    .line 1223
-    .line 1224
-    .line 1225
-    .line 1226
-    .line 1227
-    .line 1228
-    .line 1229
-    .line 1230
-    .line 1231
-    .line 1232
-    .line 1233
-    .line 1234
-    .line 1235
-    .line 1236
-    .line 1237
-    .line 1238
-    .line 1239
-    .line 1240
-    .line 1241
-    .line 1242
-    .line 1243
-    .line 1244
-    .line 1245
-    .line 1246
-    .line 1247
-    .line 1248
-    .line 1249
-    .line 1250
-    .line 1251
-    .line 1252
-    .line 1253
-    .line 1254
-    .line 1255
-    .line 1256
-    .line 1257
-    .line 1258
-    .line 1259
-    .line 1260
-    .line 1261
-    .line 1262
-    .line 1263
-    .line 1264
-    .line 1265
-    .line 1266
-    .line 1267
-    .line 1268
-    .line 1269
-    .line 1270
-    .line 1271
-    .line 1272
-    .line 1273
-    .line 1274
-    .line 1275
-    .line 1276
-    .line 1277
-    .line 1278
-    .line 1279
-    .line 1280
-    .line 1281
-    .line 1282
-    .line 1283
-    .line 1284
-    .line 1285
-    .line 1286
-    .line 1287
-    .line 1288
-    .line 1289
-    .line 1290
-    .line 1291
-    .line 1292
-    .line 1293
-    .line 1294
-    .line 1295
-    .line 1296
-    .line 1297
-    .line 1298
-    .line 1299
-    .line 1300
-    .line 1301
-    .line 1302
-    .line 1303
-    .line 1304
-    .line 1305
-    .line 1306
-    .line 1307
-    .line 1308
-    .line 1309
-    .line 1310
-    .line 1311
-    .line 1312
-    .line 1313
-    .line 1314
-    .line 1315
-    .line 1316
-    .line 1317
-    .line 1318
-    .line 1319
-    .line 1320
-    .line 1321
-    .line 1322
-    .line 1323
-    .line 1324
-    .line 1325
-    .line 1326
-    .line 1327
-    .line 1328
-    .line 1329
-    .line 1330
-    .line 1331
-    .line 1332
-    .line 1333
-    .line 1334
-    .line 1335
-    .line 1336
-    .line 1337
-    .line 1338
-    .line 1339
-    .line 1340
-    .line 1341
-    .line 1342
-    .line 1343
-    .line 1344
-    .line 1345
-    .line 1346
-    .line 1347
-    .line 1348
-    .line 1349
-    .line 1350
-    .line 1351
-    .line 1352
-    .line 1353
-    .line 1354
-    .line 1355
-    .line 1356
-    .line 1357
-    .line 1358
-    .line 1359
-    .line 1360
-    .line 1361
-    .line 1362
-    .line 1363
-    .line 1364
-    .line 1365
-    .line 1366
-    .line 1367
-    .line 1368
-    .line 1369
-    .line 1370
-    .line 1371
-    .line 1372
-    .line 1373
-    .line 1374
-    .line 1375
-    .line 1376
-    .line 1377
-    .line 1378
-    .line 1379
-    .line 1380
-    .line 1381
-    .line 1382
-    .line 1383
-    .line 1384
-    .line 1385
-    .line 1386
-    .line 1387
-    .line 1388
-    .line 1389
-    .line 1390
-    .line 1391
-    .line 1392
-    .line 1393
-    .line 1394
-    .line 1395
-    .line 1396
-    .line 1397
-    .line 1398
-    .line 1399
-    .line 1400
-    .line 1401
-    .line 1402
-    .line 1403
-    .line 1404
-    .line 1405
-    .line 1406
-    .line 1407
-    .line 1408
-    .line 1409
-    .line 1410
-    .line 1411
-    .line 1412
-    .line 1413
-    .line 1414
-    .line 1415
-    .line 1416
-    .line 1417
-    .line 1418
-    .line 1419
-    .line 1420
-    .line 1421
-    .line 1422
-    .line 1423
-    .line 1424
-    .line 1425
-    .line 1426
-    .line 1427
-    .line 1428
-    .line 1429
-    .line 1430
-    .line 1431
-    .line 1432
-    .line 1433
-    .line 1434
-    .line 1435
-    .line 1436
-    .line 1437
-    .line 1438
-    .line 1439
-    .line 1440
-    .line 1441
-    .line 1442
-    .line 1443
-    .line 1444
-    .line 1445
-    .line 1446
-    .line 1447
-    .line 1448
-    .line 1449
-    .line 1450
-    .line 1451
-    .line 1452
-    .line 1453
-    .line 1454
-    .line 1455
-    .line 1456
-    .line 1457
-    .line 1458
-    .line 1459
-    .line 1460
-    .line 1461
-    .line 1462
-    .line 1463
-    .line 1464
-    .line 1465
-    .line 1466
-    .line 1467
-    .line 1468
-    .line 1469
-    .line 1470
-    .line 1471
-    .line 1472
-    .line 1473
-    .line 1474
-    .line 1475
-    .line 1476
-    .line 1477
-    .line 1478
-    .line 1479
-    .line 1480
-    .line 1481
-    .line 1482
-    .line 1483
-    .line 1484
-    .line 1485
-    .line 1486
-    .line 1487
-    .line 1488
-    .line 1489
-    .line 1490
-    .line 1491
-    .line 1492
-    .line 1493
-    .line 1494
-    .line 1495
-    .line 1496
-    .line 1497
-    .line 1498
-    .line 1499
-    .line 1500
-    .line 1501
-    .line 1502
-    .line 1503
-    .line 1504
-    .line 1505
-    .line 1506
-    .line 1507
-    .line 1508
-    .line 1509
-    .line 1510
-    .line 1511
-    .line 1512
-    .line 1513
-    .line 1514
-    .line 1515
-    .line 1516
-    .line 1517
-    .line 1518
-    .line 1519
-    .line 1520
-    .line 1521
-    .line 1522
-    .line 1523
-    .line 1524
-    .line 1525
-    .line 1526
-    .line 1527
-    .line 1528
-    .line 1529
 .end method
 
 .method public removeView(Landroid/view/View;)V
@@ -4038,6 +4029,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method public s()V
@@ -4073,6 +4073,12 @@
     .line 21
     .line 22
     .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
 .end method
 
 .method public final setGoingForward(Z)V
@@ -4123,6 +4129,15 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method
 
 .method public u(I)V
@@ -4173,4 +4188,13 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
 .end method

@@ -728,1421 +728,2492 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 23
 
+    .line 1
     move-object/from16 v0, p0
 
+    .line 2
+    .line 3
     move-object/from16 v1, p1
 
+    .line 4
+    .line 5
     const-string v2, "context"
 
+    .line 6
+    .line 7
     invoke-static {v1, v2}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 8
+    .line 9
+    .line 10
     const/4 v2, 0x0
 
-    .line 1
+    .line 11
     invoke-direct {v0, v2}, Lcom/discord/theme/DiscordTheme;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 2
+    .line 12
+    .line 13
+    .line 14
     sget v2, Lcom/discord/theme/R$color;->primary_700:I
 
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->activityCardBackground:I
-
-    .line 3
-    sget v3, Lcom/discord/theme/R$color;->primary_830:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidNavigationBarBackground:I
-
-    .line 4
-    sget v3, Lcom/discord/theme/R$color;->android_navigation_scrim_background_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidNavigationScrimBackground:I
-
-    .line 5
-    sget v3, Lcom/discord/theme/R$color;->android_ripple_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidRipple:I
-
-    .line 6
-    sget v3, Lcom/discord/theme/R$color;->primary_530:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundAccent:I
-
-    .line 7
-    sget v3, Lcom/discord/theme/R$color;->primary_800:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundFloating:I
-
-    .line 8
-    sget v3, Lcom/discord/theme/R$color;->background_mentioned_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMentioned:I
-
-    .line 9
-    sget v3, Lcom/discord/theme/R$color;->background_mentioned_hover_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMentionedHover:I
-
-    .line 10
-    sget v3, Lcom/discord/theme/R$color;->background_message_automod_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageAutomod:I
-
-    .line 11
-    sget v3, Lcom/discord/theme/R$color;->background_message_automod_hover_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageAutomodHover:I
-
-    .line 12
-    sget v3, Lcom/discord/theme/R$color;->background_message_highlight_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHighlight:I
-
-    .line 13
-    sget v3, Lcom/discord/theme/R$color;->background_message_highlight_hover_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHighlightHover:I
-
-    .line 14
-    sget v3, Lcom/discord/theme/R$color;->background_message_hover_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHover:I
-
     .line 15
-    sget v3, Lcom/discord/theme/R$color;->primary_600:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v4
-
-    iput v4, v0, Lcom/discord/theme/DarkTheme;->backgroundMobilePrimary:I
-
     .line 16
-    sget v4, Lcom/discord/theme/R$color;->primary_630:I
-
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundMobileSecondary:I
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 17
-    sget v5, Lcom/discord/theme/R$color;->background_modifier_accent_dark:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierAccent:I
-
     .line 18
-    sget v5, Lcom/discord/theme/R$color;->background_modifier_active_dark:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierActive:I
-
     .line 19
-    sget v5, Lcom/discord/theme/R$color;->background_modifier_hover_dark:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierHover:I
+    move-result v3
 
     .line 20
-    sget v5, Lcom/discord/theme/R$color;->background_modifier_selected_dark:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierSelected:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->activityCardBackground:I
 
     .line 21
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundNestedFloating:I
-
     .line 22
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundPrimary:I
+    sget v3, Lcom/discord/theme/R$color;->primary_830:I
 
     .line 23
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundSecondary:I
-
     .line 24
-    sget v5, Lcom/discord/theme/R$color;->primary_660:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->backgroundSecondaryAlt:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 25
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->backgroundTertiary:I
-
     .line 26
-    sget v6, Lcom/discord/theme/R$color;->black_500:I
-
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v7
-
-    iput v7, v0, Lcom/discord/theme/DarkTheme;->black:I
-
     .line 27
-    sget v7, Lcom/discord/theme/R$color;->bug_reporter_modal_submitting_background_dark:I
-
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v7
-
-    iput v7, v0, Lcom/discord/theme/DarkTheme;->bugReporterModalSubmittingBackground:I
+    move-result v3
 
     .line 28
-    sget v7, Lcom/discord/theme/R$color;->red_430:I
-
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v8
-
-    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackground:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidNavigationBarBackground:I
 
     .line 29
-    sget v8, Lcom/discord/theme/R$color;->red_530:I
-
-    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v8
-
-    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundActive:I
-
     .line 30
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v8
-
-    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundDisabled:I
+    sget v3, Lcom/discord/theme/R$color;->android_navigation_scrim_background_dark:I
 
     .line 31
-    sget v8, Lcom/discord/theme/R$color;->red_500:I
-
-    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v9
-
-    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundHover:I
-
     .line 32
-    sget v9, Lcom/discord/theme/R$color;->button_outline_brand_background_dark:I
-
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v9
-
-    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackground:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 33
-    sget v9, Lcom/discord/theme/R$color;->brand_560:I
-
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackgroundActive:I
-
     .line 34
-    sget v10, Lcom/discord/theme/R$color;->brand_500:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackgroundHover:I
-
     .line 35
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorder:I
+    move-result v3
 
     .line 36
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v9
-
-    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorderActive:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidNavigationScrimBackground:I
 
     .line 37
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v9
-
-    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorderHover:I
-
     .line 38
-    sget v9, Lcom/discord/theme/R$color;->white_500:I
-
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandText:I
+    sget v3, Lcom/discord/theme/R$color;->android_ripple_dark:I
 
     .line 39
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandTextActive:I
-
     .line 40
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandTextHover:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 41
-    sget v11, Lcom/discord/theme/R$color;->button_outline_danger_background_dark:I
-
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackground:I
-
     .line 42
-    sget v11, Lcom/discord/theme/R$color;->red_460:I
-
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackgroundActive:I
-
     .line 43
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v11
-
-    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackgroundHover:I
+    move-result v3
 
     .line 44
-    sget v11, Lcom/discord/theme/R$color;->red_400:I
-
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorder:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->androidRipple:I
 
     .line 45
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorderActive:I
-
     .line 46
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorderHover:I
+    sget v3, Lcom/discord/theme/R$color;->primary_530:I
 
     .line 47
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerText:I
-
     .line 48
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerTextActive:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 49
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerTextHover:I
-
     .line 50
-    sget v12, Lcom/discord/theme/R$color;->button_outline_positive_background_dark:I
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackground:I
-
     .line 51
-    sget v12, Lcom/discord/theme/R$color;->green_530:I
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v13
-
-    iput v13, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackgroundActive:I
+    move-result v3
 
     .line 52
-    sget v13, Lcom/discord/theme/R$color;->green_430:I
-
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v14
-
-    iput v14, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackgroundHover:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundAccent:I
 
     .line 53
-    sget v14, Lcom/discord/theme/R$color;->green_360:I
-
-    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorder:I
-
     .line 54
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorderActive:I
+    sget v3, Lcom/discord/theme/R$color;->primary_800:I
 
     .line 55
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorderHover:I
-
     .line 56
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveText:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 57
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveTextActive:I
-
     .line 58
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveTextHover:I
-
     .line 59
-    sget v15, Lcom/discord/theme/R$color;->button_outline_primary_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackground:I
+    move-result v3
 
     .line 60
-    sget v15, Lcom/discord/theme/R$color;->primary_430:I
-
-    move/from16 v16, v6
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackgroundActive:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundFloating:I
 
     .line 61
-    sget v6, Lcom/discord/theme/R$color;->primary_500:I
-
-    move/from16 v17, v5
-
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackgroundHover:I
-
     .line 62
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorder:I
+    sget v3, Lcom/discord/theme/R$color;->background_mentioned_dark:I
 
     .line 63
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorderActive:I
-
     .line 64
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorderHover:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 65
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryText:I
-
     .line 66
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryTextActive:I
-
     .line 67
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryTextHover:I
+    move-result v3
 
     .line 68
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackground:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMentioned:I
 
     .line 69
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundActive:I
-
     .line 70
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundDisabled:I
+    sget v3, Lcom/discord/theme/R$color;->background_mentioned_hover_dark:I
 
     .line 71
-    sget v5, Lcom/discord/theme/R$color;->green_500:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundHover:I
-
     .line 72
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackground:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 73
-    sget v12, Lcom/discord/theme/R$color;->primary_400:I
-
-    move/from16 v18, v10
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundActive:I
-
     .line 74
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundDisabled:I
-
     .line 75
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundHover:I
+    move-result v3
 
     .line 76
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->channelIcon:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMentionedHover:I
 
     .line 77
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->channelTextAreaPlaceholder:I
-
     .line 78
-    sget v10, Lcom/discord/theme/R$color;->primary_360:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->channelsDefault:I
+    sget v3, Lcom/discord/theme/R$color;->background_message_automod_dark:I
 
     .line 79
-    sget v15, Lcom/discord/theme/R$color;->primary_560:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->channeltextareaBackground:I
-
     .line 80
     invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatBackground:I
-
     .line 81
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatBorder:I
-
     .line 82
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatInputContainerBackground:I
-
     .line 83
-    sget v15, Lcom/discord/theme/R$color;->brand_360:I
-
-    move/from16 v19, v10
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->controlBrandForeground:I
+    move-result v3
 
     .line 84
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->controlBrandForegroundNew:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageAutomod:I
 
     .line 85
-    sget v10, Lcom/discord/theme/R$color;->deprecated_card_bg_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedCardBg:I
-
     .line 86
-    sget v10, Lcom/discord/theme/R$color;->deprecated_card_editable_bg_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedCardEditableBg:I
+    sget v3, Lcom/discord/theme/R$color;->background_message_automod_hover_dark:I
 
     .line 87
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedQuickswitcherInputBackground:I
-
     .line 88
-    sget v10, Lcom/discord/theme/R$color;->deprecated_quickswitcher_input_placeholder_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedQuickswitcherInputPlaceholder:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 89
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedStoreBg:I
-
     .line 90
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBg:I
-
     .line 91
-    sget v10, Lcom/discord/theme/R$color;->deprecated_text_input_border_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorder:I
+    move-result v3
 
     .line 92
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorderDisabled:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageAutomodHover:I
 
     .line 93
-    sget v10, Lcom/discord/theme/R$color;->primary_900:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorderHover:I
-
     .line 94
-    sget v10, Lcom/discord/theme/R$color;->primary_200:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputPrefix:I
+    sget v3, Lcom/discord/theme/R$color;->background_message_highlight_dark:I
 
     .line 95
-    sget v10, Lcom/discord/theme/R$color;->display_banner_overflow_background_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->displayBannerOverflowBackground:I
-
     .line 96
-    sget v10, Lcom/discord/theme/R$color;->blue_345:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->focusPrimary:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 97
-    sget v12, Lcom/discord/theme/R$color;->forum_post_extra_media_count_container_background_dark:I
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->forumPostExtraMediaCountContainerBackground:I
-
     .line 98
-    sget v12, Lcom/discord/theme/R$color;->forum_post_tag_background_dark:I
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->forumPostTagBackground:I
-
     .line 99
-    sget v12, Lcom/discord/theme/R$color;->primary_130:I
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v12
-
-    iput v12, v0, Lcom/discord/theme/DarkTheme;->headerPrimary:I
+    move-result v3
 
     .line 100
-    sget v12, Lcom/discord/theme/R$color;->primary_330:I
-
-    move/from16 v20, v15
-
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->headerSecondary:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHighlight:I
 
     .line 101
-    sget v15, Lcom/discord/theme/R$color;->primary_645:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->homeBackground:I
-
     .line 102
-    sget v15, Lcom/discord/theme/R$color;->home_card_resting_border_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->homeCardRestingBorder:I
+    sget v3, Lcom/discord/theme/R$color;->background_message_highlight_hover_dark:I
 
     .line 103
-    sget v15, Lcom/discord/theme/R$color;->info_box_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoBoxBackground:I
-
     .line 104
-    sget v15, Lcom/discord/theme/R$color;->info_danger_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerBackground:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 105
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerForeground:I
-
     .line 106
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerText:I
-
     .line 107
-    sget v15, Lcom/discord/theme/R$color;->info_help_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpBackground:I
+    move-result v3
 
     .line 108
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpForeground:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHighlightHover:I
 
     .line 109
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpText:I
-
     .line 110
-    sget v15, Lcom/discord/theme/R$color;->info_positive_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveBackground:I
+    sget v3, Lcom/discord/theme/R$color;->background_message_hover_dark:I
 
     .line 111
-    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveForeground:I
-
     .line 112
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveText:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 113
-    sget v15, Lcom/discord/theme/R$color;->info_warning_background_dark:I
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoWarningBackground:I
-
     .line 114
-    sget v15, Lcom/discord/theme/R$color;->yellow_300:I
-
-    move/from16 v21, v10
-
-    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->infoWarningForeground:I
-
     .line 115
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->infoWarningText:I
+    move-result v3
 
     .line 116
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->inputBackground:I
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->backgroundMessageHover:I
 
     .line 117
-    sget v10, Lcom/discord/theme/R$color;->input_placeholder_text_dark:I
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->inputPlaceholderText:I
-
     .line 118
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v10
-
-    iput v10, v0, Lcom/discord/theme/DarkTheme;->interactiveActive:I
+    sget v3, Lcom/discord/theme/R$color;->primary_600:I
 
     .line 119
-    sget v10, Lcom/discord/theme/R$color;->primary_230:I
-
-    move/from16 v22, v15
-
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v15
-
-    iput v15, v0, Lcom/discord/theme/DarkTheme;->interactiveHover:I
-
     .line 120
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->interactiveMuted:I
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 121
-    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->interactiveNormal:I
-
     .line 122
-    sget v6, Lcom/discord/theme/R$color;->live_stage_tile_border_dark:I
-
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->liveStageTileBorder:I
-
     .line 123
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->logoPrimary:I
+    move-result v4
 
     .line 124
-    sget v6, Lcom/discord/theme/R$color;->mention_background_dark:I
-
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->mentionBackground:I
+    iput v4, v0, Lcom/discord/theme/DarkTheme;->backgroundMobilePrimary:I
 
     .line 125
-    sget v6, Lcom/discord/theme/R$color;->brand_260:I
-
-    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->mentionForeground:I
-
     .line 126
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->modalBackground:I
+    sget v4, Lcom/discord/theme/R$color;->primary_630:I
 
     .line 127
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->modalFooterBackground:I
-
     .line 128
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_message_input_border_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientMessageInputBorder:I
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 129
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_note_background_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientNoteBackground:I
-
     .line 130
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_overlay_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientOverlay:I
-
     .line 131
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_overlay_synced_with_user_theme_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientOverlaySyncedWithUserTheme:I
+    move-result v5
 
     .line 132
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_profile_body_background_hover_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientProfileBodyBackgroundHover:I
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundMobileSecondary:I
 
     .line 133
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_role_pill_background_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientRolePillBackground:I
-
     .line 134
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_role_pill_border_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientRolePillBorder:I
+    sget v5, Lcom/discord/theme/R$color;->background_modifier_accent_dark:I
 
     .line 135
-    sget v3, Lcom/discord/theme/R$color;->profile_gradient_section_box_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientSectionBox:I
-
     .line 136
-    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonDangerBackground:I
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 137
-    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonDangerPressedBackground:I
-
     .line 138
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonFloatingBackground:I
-
     .line 139
-    sget v3, Lcom/discord/theme/R$color;->primary_730:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->redesignButtonFloatingPressedBackground:I
+    move-result v5
 
     .line 140
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v6
-
-    iput v6, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPositiveBackground:I
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierAccent:I
 
     .line 141
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPositivePressedBackground:I
-
-    move/from16 v5, v18
-
     .line 142
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPrimaryBackground:I
+    sget v5, Lcom/discord/theme/R$color;->background_modifier_active_dark:I
 
     .line 143
-    sget v5, Lcom/discord/theme/R$color;->brand_600:I
-
-    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPrimaryPressedBackground:I
-
     .line 144
-    sget v5, Lcom/discord/theme/R$color;->redesign_button_secondary_border_dark:I
-
     invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonSecondaryBorder:I
 
     .line 145
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonSecondaryPressedBackground:I
-
     .line 146
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoScrollbarColorThumb:I
-
     .line 147
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
     move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoScrollbarColorTrack:I
 
     .line 148
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v5
-
-    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoThumb:I
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierActive:I
 
     .line 149
-    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v4
-
-    iput v4, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoTrack:I
-
     .line 150
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->scrollbarThinThumb:I
+    sget v5, Lcom/discord/theme/R$color;->background_modifier_hover_dark:I
 
     .line 151
-    sget v3, Lcom/discord/theme/R$color;->scrollbar_thin_track_dark:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->scrollbarThinTrack:I
-
     .line 152
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->spoilerHiddenBackground:I
-
-    move/from16 v2, v17
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 153
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->spoilerRevealedBackground:I
-
     .line 154
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDanger:I
-
     .line 155
-    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDangerBackground:I
+    move-result v5
 
     .line 156
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDangerText:I
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierHover:I
 
     .line 157
-    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositive:I
-
     .line 158
-    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositiveBackground:I
+    sget v5, Lcom/discord/theme/R$color;->background_modifier_selected_dark:I
 
     .line 159
-    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositiveText:I
-
-    move/from16 v2, v22
-
     .line 160
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarning:I
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
     .line 161
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarningBackground:I
-
-    move/from16 v3, v16
-
     .line 162
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarningText:I
-
-    move/from16 v3, v20
-
     .line 163
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->textBrand:I
+    move-result v5
 
     .line 164
-    sget v3, Lcom/discord/theme/R$color;->red_345:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->textDanger:I
-
-    move/from16 v3, v21
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundModifierSelected:I
 
     .line 165
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->textLink:I
-
     .line 166
-    sget v3, Lcom/discord/theme/R$color;->blue_330:I
-
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v3
-
-    iput v3, v0, Lcom/discord/theme/DarkTheme;->textLinkLowSaturation:I
-
-    move/from16 v3, v19
-
-    .line 167
-    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v4
-
-    iput v4, v0, Lcom/discord/theme/DarkTheme;->textMuted:I
-
-    .line 168
-    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v4
-
-    iput v4, v0, Lcom/discord/theme/DarkTheme;->textNormal:I
-
-    .line 169
-    sget v4, Lcom/discord/theme/R$color;->green_330:I
-
     invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
-    move-result v4
-
-    iput v4, v0, Lcom/discord/theme/DarkTheme;->textPositive:I
+    .line 167
+    .line 168
+    .line 169
+    move-result v5
 
     .line 170
-    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
-
-    move-result v2
-
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->textWarning:I
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundNestedFloating:I
 
     .line 171
+    .line 172
     invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
-    move-result v2
+    .line 173
+    .line 174
+    .line 175
+    move-result v5
 
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->textboxMarkdownSyntax:I
+    .line 176
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundPrimary:I
 
-    .line 172
-    sget v2, Lcom/discord/theme/R$color;->user_profile_header_overflow_background_dark:I
+    .line 177
+    .line 178
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
+    .line 179
+    .line 180
+    .line 181
+    move-result v5
+
+    .line 182
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->backgroundSecondary:I
+
+    .line 183
+    .line 184
+    sget v5, Lcom/discord/theme/R$color;->primary_660:I
+
+    .line 185
+    .line 186
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 187
+    .line 188
+    .line 189
+    move-result v6
+
+    .line 190
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->backgroundSecondaryAlt:I
+
+    .line 191
+    .line 192
     invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
-    move-result v2
+    .line 193
+    .line 194
+    .line 195
+    move-result v6
 
-    iput v2, v0, Lcom/discord/theme/DarkTheme;->userProfileHeaderOverflowBackground:I
+    .line 196
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->backgroundTertiary:I
 
-    .line 173
+    .line 197
+    .line 198
+    sget v6, Lcom/discord/theme/R$color;->black_500:I
+
+    .line 199
+    .line 200
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 201
+    .line 202
+    .line 203
+    move-result v7
+
+    .line 204
+    iput v7, v0, Lcom/discord/theme/DarkTheme;->black:I
+
+    .line 205
+    .line 206
+    sget v7, Lcom/discord/theme/R$color;->bug_reporter_modal_submitting_background_dark:I
+
+    .line 207
+    .line 208
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 209
+    .line 210
+    .line 211
+    move-result v7
+
+    .line 212
+    iput v7, v0, Lcom/discord/theme/DarkTheme;->bugReporterModalSubmittingBackground:I
+
+    .line 213
+    .line 214
+    sget v7, Lcom/discord/theme/R$color;->red_430:I
+
+    .line 215
+    .line 216
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 217
+    .line 218
+    .line 219
+    move-result v8
+
+    .line 220
+    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackground:I
+
+    .line 221
+    .line 222
+    sget v8, Lcom/discord/theme/R$color;->red_530:I
+
+    .line 223
+    .line 224
+    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 225
+    .line 226
+    .line 227
+    move-result v8
+
+    .line 228
+    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundActive:I
+
+    .line 229
+    .line 230
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 231
+    .line 232
+    .line 233
+    move-result v8
+
+    .line 234
+    iput v8, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundDisabled:I
+
+    .line 235
+    .line 236
+    sget v8, Lcom/discord/theme/R$color;->red_500:I
+
+    .line 237
+    .line 238
+    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 239
+    .line 240
+    .line 241
+    move-result v9
+
+    .line 242
+    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonDangerBackgroundHover:I
+
+    .line 243
+    .line 244
+    sget v9, Lcom/discord/theme/R$color;->button_outline_brand_background_dark:I
+
+    .line 245
+    .line 246
     invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
 
+    .line 247
+    .line 248
+    .line 249
+    move-result v9
+
+    .line 250
+    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackground:I
+
+    .line 251
+    .line 252
+    sget v9, Lcom/discord/theme/R$color;->brand_560:I
+
+    .line 253
+    .line 254
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 255
+    .line 256
+    .line 257
+    move-result v10
+
+    .line 258
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackgroundActive:I
+
+    .line 259
+    .line 260
+    sget v10, Lcom/discord/theme/R$color;->brand_500:I
+
+    .line 261
+    .line 262
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 263
+    .line 264
+    .line 265
+    move-result v11
+
+    .line 266
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBackgroundHover:I
+
+    .line 267
+    .line 268
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 269
+    .line 270
+    .line 271
+    move-result v11
+
+    .line 272
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorder:I
+
+    .line 273
+    .line 274
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 275
+    .line 276
+    .line 277
+    move-result v9
+
+    .line 278
+    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorderActive:I
+
+    .line 279
+    .line 280
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 281
+    .line 282
+    .line 283
+    move-result v9
+
+    .line 284
+    iput v9, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandBorderHover:I
+
+    .line 285
+    .line 286
+    sget v9, Lcom/discord/theme/R$color;->white_500:I
+
+    .line 287
+    .line 288
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 289
+    .line 290
+    .line 291
+    move-result v11
+
+    .line 292
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandText:I
+
+    .line 293
+    .line 294
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 295
+    .line 296
+    .line 297
+    move-result v11
+
+    .line 298
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandTextActive:I
+
+    .line 299
+    .line 300
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 301
+    .line 302
+    .line 303
+    move-result v11
+
+    .line 304
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineBrandTextHover:I
+
+    .line 305
+    .line 306
+    sget v11, Lcom/discord/theme/R$color;->button_outline_danger_background_dark:I
+
+    .line 307
+    .line 308
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 309
+    .line 310
+    .line 311
+    move-result v11
+
+    .line 312
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackground:I
+
+    .line 313
+    .line 314
+    sget v11, Lcom/discord/theme/R$color;->red_460:I
+
+    .line 315
+    .line 316
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 317
+    .line 318
+    .line 319
+    move-result v11
+
+    .line 320
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackgroundActive:I
+
+    .line 321
+    .line 322
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 323
+    .line 324
+    .line 325
+    move-result v11
+
+    .line 326
+    iput v11, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBackgroundHover:I
+
+    .line 327
+    .line 328
+    sget v11, Lcom/discord/theme/R$color;->red_400:I
+
+    .line 329
+    .line 330
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 331
+    .line 332
+    .line 333
+    move-result v12
+
+    .line 334
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorder:I
+
+    .line 335
+    .line 336
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 337
+    .line 338
+    .line 339
+    move-result v12
+
+    .line 340
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorderActive:I
+
+    .line 341
+    .line 342
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 343
+    .line 344
+    .line 345
+    move-result v12
+
+    .line 346
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerBorderHover:I
+
+    .line 347
+    .line 348
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 349
+    .line 350
+    .line 351
+    move-result v12
+
+    .line 352
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerText:I
+
+    .line 353
+    .line 354
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 355
+    .line 356
+    .line 357
+    move-result v12
+
+    .line 358
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerTextActive:I
+
+    .line 359
+    .line 360
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 361
+    .line 362
+    .line 363
+    move-result v12
+
+    .line 364
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlineDangerTextHover:I
+
+    .line 365
+    .line 366
+    sget v12, Lcom/discord/theme/R$color;->button_outline_positive_background_dark:I
+
+    .line 367
+    .line 368
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 369
+    .line 370
+    .line 371
+    move-result v12
+
+    .line 372
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackground:I
+
+    .line 373
+    .line 374
+    sget v12, Lcom/discord/theme/R$color;->green_530:I
+
+    .line 375
+    .line 376
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 377
+    .line 378
+    .line 379
+    move-result v13
+
+    .line 380
+    iput v13, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackgroundActive:I
+
+    .line 381
+    .line 382
+    sget v13, Lcom/discord/theme/R$color;->green_430:I
+
+    .line 383
+    .line 384
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 385
+    .line 386
+    .line 387
+    move-result v14
+
+    .line 388
+    iput v14, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBackgroundHover:I
+
+    .line 389
+    .line 390
+    sget v14, Lcom/discord/theme/R$color;->green_360:I
+
+    .line 391
+    .line 392
+    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 393
+    .line 394
+    .line 395
+    move-result v15
+
+    .line 396
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorder:I
+
+    .line 397
+    .line 398
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 399
+    .line 400
+    .line 401
+    move-result v15
+
+    .line 402
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorderActive:I
+
+    .line 403
+    .line 404
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 405
+    .line 406
+    .line 407
+    move-result v15
+
+    .line 408
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveBorderHover:I
+
+    .line 409
+    .line 410
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 411
+    .line 412
+    .line 413
+    move-result v15
+
+    .line 414
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveText:I
+
+    .line 415
+    .line 416
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 417
+    .line 418
+    .line 419
+    move-result v15
+
+    .line 420
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveTextActive:I
+
+    .line 421
+    .line 422
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 423
+    .line 424
+    .line 425
+    move-result v15
+
+    .line 426
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePositiveTextHover:I
+
+    .line 427
+    .line 428
+    sget v15, Lcom/discord/theme/R$color;->button_outline_primary_background_dark:I
+
+    .line 429
+    .line 430
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 431
+    .line 432
+    .line 433
+    move-result v15
+
+    .line 434
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackground:I
+
+    .line 435
+    .line 436
+    sget v15, Lcom/discord/theme/R$color;->primary_430:I
+
+    .line 437
+    .line 438
+    move/from16 v16, v6
+
+    .line 439
+    .line 440
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 441
+    .line 442
+    .line 443
+    move-result v6
+
+    .line 444
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackgroundActive:I
+
+    .line 445
+    .line 446
+    sget v6, Lcom/discord/theme/R$color;->primary_500:I
+
+    .line 447
+    .line 448
+    move/from16 v17, v5
+
+    .line 449
+    .line 450
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 451
+    .line 452
+    .line 453
+    move-result v5
+
+    .line 454
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBackgroundHover:I
+
+    .line 455
+    .line 456
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 457
+    .line 458
+    .line 459
+    move-result v5
+
+    .line 460
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorder:I
+
+    .line 461
+    .line 462
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 463
+    .line 464
+    .line 465
+    move-result v5
+
+    .line 466
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorderActive:I
+
+    .line 467
+    .line 468
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 469
+    .line 470
+    .line 471
+    move-result v5
+
+    .line 472
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryBorderHover:I
+
+    .line 473
+    .line 474
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 475
+    .line 476
+    .line 477
+    move-result v5
+
+    .line 478
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryText:I
+
+    .line 479
+    .line 480
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 481
+    .line 482
+    .line 483
+    move-result v5
+
+    .line 484
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryTextActive:I
+
+    .line 485
+    .line 486
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 487
+    .line 488
+    .line 489
+    move-result v5
+
+    .line 490
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonOutlinePrimaryTextHover:I
+
+    .line 491
+    .line 492
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 493
+    .line 494
+    .line 495
+    move-result v5
+
+    .line 496
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackground:I
+
+    .line 497
+    .line 498
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 499
+    .line 500
+    .line 501
+    move-result v5
+
+    .line 502
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundActive:I
+
+    .line 503
+    .line 504
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 505
+    .line 506
+    .line 507
+    move-result v5
+
+    .line 508
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundDisabled:I
+
+    .line 509
+    .line 510
+    sget v5, Lcom/discord/theme/R$color;->green_500:I
+
+    .line 511
+    .line 512
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 513
+    .line 514
+    .line 515
+    move-result v12
+
+    .line 516
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonPositiveBackgroundHover:I
+
+    .line 517
+    .line 518
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 519
+    .line 520
+    .line 521
+    move-result v12
+
+    .line 522
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackground:I
+
+    .line 523
+    .line 524
+    sget v12, Lcom/discord/theme/R$color;->primary_400:I
+
+    .line 525
+    .line 526
+    move/from16 v18, v10
+
+    .line 527
+    .line 528
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 529
+    .line 530
+    .line 531
+    move-result v10
+
+    .line 532
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundActive:I
+
+    .line 533
+    .line 534
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 535
+    .line 536
+    .line 537
+    move-result v10
+
+    .line 538
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundDisabled:I
+
+    .line 539
+    .line 540
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 541
+    .line 542
+    .line 543
+    move-result v10
+
+    .line 544
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->buttonSecondaryBackgroundHover:I
+
+    .line 545
+    .line 546
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 547
+    .line 548
+    .line 549
+    move-result v10
+
+    .line 550
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->channelIcon:I
+
+    .line 551
+    .line 552
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 553
+    .line 554
+    .line 555
+    move-result v10
+
+    .line 556
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->channelTextAreaPlaceholder:I
+
+    .line 557
+    .line 558
+    sget v10, Lcom/discord/theme/R$color;->primary_360:I
+
+    .line 559
+    .line 560
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 561
+    .line 562
+    .line 563
+    move-result v15
+
+    .line 564
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->channelsDefault:I
+
+    .line 565
+    .line 566
+    sget v15, Lcom/discord/theme/R$color;->primary_560:I
+
+    .line 567
+    .line 568
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 569
+    .line 570
+    .line 571
+    move-result v15
+
+    .line 572
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->channeltextareaBackground:I
+
+    .line 573
+    .line 574
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 575
+    .line 576
+    .line 577
+    move-result v15
+
+    .line 578
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatBackground:I
+
+    .line 579
+    .line 580
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 581
+    .line 582
+    .line 583
+    move-result v15
+
+    .line 584
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatBorder:I
+
+    .line 585
+    .line 586
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 587
+    .line 588
+    .line 589
+    move-result v15
+
+    .line 590
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->chatInputContainerBackground:I
+
+    .line 591
+    .line 592
+    sget v15, Lcom/discord/theme/R$color;->brand_360:I
+
+    .line 593
+    .line 594
+    move/from16 v19, v10
+
+    .line 595
+    .line 596
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 597
+    .line 598
+    .line 599
+    move-result v10
+
+    .line 600
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->controlBrandForeground:I
+
+    .line 601
+    .line 602
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 603
+    .line 604
+    .line 605
+    move-result v10
+
+    .line 606
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->controlBrandForegroundNew:I
+
+    .line 607
+    .line 608
+    sget v10, Lcom/discord/theme/R$color;->deprecated_card_bg_dark:I
+
+    .line 609
+    .line 610
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 611
+    .line 612
+    .line 613
+    move-result v10
+
+    .line 614
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedCardBg:I
+
+    .line 615
+    .line 616
+    sget v10, Lcom/discord/theme/R$color;->deprecated_card_editable_bg_dark:I
+
+    .line 617
+    .line 618
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 619
+    .line 620
+    .line 621
+    move-result v10
+
+    .line 622
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedCardEditableBg:I
+
+    .line 623
+    .line 624
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 625
+    .line 626
+    .line 627
+    move-result v10
+
+    .line 628
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedQuickswitcherInputBackground:I
+
+    .line 629
+    .line 630
+    sget v10, Lcom/discord/theme/R$color;->deprecated_quickswitcher_input_placeholder_dark:I
+
+    .line 631
+    .line 632
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 633
+    .line 634
+    .line 635
+    move-result v10
+
+    .line 636
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedQuickswitcherInputPlaceholder:I
+
+    .line 637
+    .line 638
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 639
+    .line 640
+    .line 641
+    move-result v10
+
+    .line 642
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedStoreBg:I
+
+    .line 643
+    .line 644
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 645
+    .line 646
+    .line 647
+    move-result v10
+
+    .line 648
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBg:I
+
+    .line 649
+    .line 650
+    sget v10, Lcom/discord/theme/R$color;->deprecated_text_input_border_dark:I
+
+    .line 651
+    .line 652
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 653
+    .line 654
+    .line 655
+    move-result v10
+
+    .line 656
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorder:I
+
+    .line 657
+    .line 658
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 659
+    .line 660
+    .line 661
+    move-result v10
+
+    .line 662
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorderDisabled:I
+
+    .line 663
+    .line 664
+    sget v10, Lcom/discord/theme/R$color;->primary_900:I
+
+    .line 665
+    .line 666
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 667
+    .line 668
+    .line 669
+    move-result v10
+
+    .line 670
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputBorderHover:I
+
+    .line 671
+    .line 672
+    sget v10, Lcom/discord/theme/R$color;->primary_200:I
+
+    .line 673
+    .line 674
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 675
+    .line 676
+    .line 677
+    move-result v10
+
+    .line 678
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->deprecatedTextInputPrefix:I
+
+    .line 679
+    .line 680
+    sget v10, Lcom/discord/theme/R$color;->display_banner_overflow_background_dark:I
+
+    .line 681
+    .line 682
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 683
+    .line 684
+    .line 685
+    move-result v10
+
+    .line 686
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->displayBannerOverflowBackground:I
+
+    .line 687
+    .line 688
+    sget v10, Lcom/discord/theme/R$color;->blue_345:I
+
+    .line 689
+    .line 690
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 691
+    .line 692
+    .line 693
+    move-result v12
+
+    .line 694
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->focusPrimary:I
+
+    .line 695
+    .line 696
+    sget v12, Lcom/discord/theme/R$color;->forum_post_extra_media_count_container_background_dark:I
+
+    .line 697
+    .line 698
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 699
+    .line 700
+    .line 701
+    move-result v12
+
+    .line 702
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->forumPostExtraMediaCountContainerBackground:I
+
+    .line 703
+    .line 704
+    sget v12, Lcom/discord/theme/R$color;->forum_post_tag_background_dark:I
+
+    .line 705
+    .line 706
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 707
+    .line 708
+    .line 709
+    move-result v12
+
+    .line 710
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->forumPostTagBackground:I
+
+    .line 711
+    .line 712
+    sget v12, Lcom/discord/theme/R$color;->primary_130:I
+
+    .line 713
+    .line 714
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 715
+    .line 716
+    .line 717
+    move-result v12
+
+    .line 718
+    iput v12, v0, Lcom/discord/theme/DarkTheme;->headerPrimary:I
+
+    .line 719
+    .line 720
+    sget v12, Lcom/discord/theme/R$color;->primary_330:I
+
+    .line 721
+    .line 722
+    move/from16 v20, v15
+
+    .line 723
+    .line 724
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 725
+    .line 726
+    .line 727
+    move-result v15
+
+    .line 728
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->headerSecondary:I
+
+    .line 729
+    .line 730
+    sget v15, Lcom/discord/theme/R$color;->primary_645:I
+
+    .line 731
+    .line 732
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 733
+    .line 734
+    .line 735
+    move-result v15
+
+    .line 736
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->homeBackground:I
+
+    .line 737
+    .line 738
+    sget v15, Lcom/discord/theme/R$color;->home_card_resting_border_dark:I
+
+    .line 739
+    .line 740
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 741
+    .line 742
+    .line 743
+    move-result v15
+
+    .line 744
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->homeCardRestingBorder:I
+
+    .line 745
+    .line 746
+    sget v15, Lcom/discord/theme/R$color;->info_box_background_dark:I
+
+    .line 747
+    .line 748
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 749
+    .line 750
+    .line 751
+    move-result v15
+
+    .line 752
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoBoxBackground:I
+
+    .line 753
+    .line 754
+    sget v15, Lcom/discord/theme/R$color;->info_danger_background_dark:I
+
+    .line 755
+    .line 756
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 757
+    .line 758
+    .line 759
+    move-result v15
+
+    .line 760
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerBackground:I
+
+    .line 761
+    .line 762
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 763
+    .line 764
+    .line 765
+    move-result v15
+
+    .line 766
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerForeground:I
+
+    .line 767
+    .line 768
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 769
+    .line 770
+    .line 771
+    move-result v15
+
+    .line 772
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoDangerText:I
+
+    .line 773
+    .line 774
+    sget v15, Lcom/discord/theme/R$color;->info_help_background_dark:I
+
+    .line 775
+    .line 776
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 777
+    .line 778
+    .line 779
+    move-result v15
+
+    .line 780
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpBackground:I
+
+    .line 781
+    .line 782
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 783
+    .line 784
+    .line 785
+    move-result v15
+
+    .line 786
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpForeground:I
+
+    .line 787
+    .line 788
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 789
+    .line 790
+    .line 791
+    move-result v15
+
+    .line 792
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoHelpText:I
+
+    .line 793
+    .line 794
+    sget v15, Lcom/discord/theme/R$color;->info_positive_background_dark:I
+
+    .line 795
+    .line 796
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 797
+    .line 798
+    .line 799
+    move-result v15
+
+    .line 800
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveBackground:I
+
+    .line 801
+    .line 802
+    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 803
+    .line 804
+    .line 805
+    move-result v15
+
+    .line 806
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveForeground:I
+
+    .line 807
+    .line 808
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 809
+    .line 810
+    .line 811
+    move-result v15
+
+    .line 812
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoPositiveText:I
+
+    .line 813
+    .line 814
+    sget v15, Lcom/discord/theme/R$color;->info_warning_background_dark:I
+
+    .line 815
+    .line 816
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 817
+    .line 818
+    .line 819
+    move-result v15
+
+    .line 820
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->infoWarningBackground:I
+
+    .line 821
+    .line 822
+    sget v15, Lcom/discord/theme/R$color;->yellow_300:I
+
+    .line 823
+    .line 824
+    move/from16 v21, v10
+
+    .line 825
+    .line 826
+    invoke-static {v1, v15}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 827
+    .line 828
+    .line 829
+    move-result v10
+
+    .line 830
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->infoWarningForeground:I
+
+    .line 831
+    .line 832
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 833
+    .line 834
+    .line 835
+    move-result v10
+
+    .line 836
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->infoWarningText:I
+
+    .line 837
+    .line 838
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 839
+    .line 840
+    .line 841
+    move-result v10
+
+    .line 842
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->inputBackground:I
+
+    .line 843
+    .line 844
+    sget v10, Lcom/discord/theme/R$color;->input_placeholder_text_dark:I
+
+    .line 845
+    .line 846
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 847
+    .line 848
+    .line 849
+    move-result v10
+
+    .line 850
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->inputPlaceholderText:I
+
+    .line 851
+    .line 852
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 853
+    .line 854
+    .line 855
+    move-result v10
+
+    .line 856
+    iput v10, v0, Lcom/discord/theme/DarkTheme;->interactiveActive:I
+
+    .line 857
+    .line 858
+    sget v10, Lcom/discord/theme/R$color;->primary_230:I
+
+    .line 859
+    .line 860
+    move/from16 v22, v15
+
+    .line 861
+    .line 862
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 863
+    .line 864
+    .line 865
+    move-result v15
+
+    .line 866
+    iput v15, v0, Lcom/discord/theme/DarkTheme;->interactiveHover:I
+
+    .line 867
+    .line 868
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 869
+    .line 870
+    .line 871
+    move-result v6
+
+    .line 872
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->interactiveMuted:I
+
+    .line 873
+    .line 874
+    invoke-static {v1, v12}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 875
+    .line 876
+    .line 877
+    move-result v6
+
+    .line 878
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->interactiveNormal:I
+
+    .line 879
+    .line 880
+    sget v6, Lcom/discord/theme/R$color;->live_stage_tile_border_dark:I
+
+    .line 881
+    .line 882
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 883
+    .line 884
+    .line 885
+    move-result v6
+
+    .line 886
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->liveStageTileBorder:I
+
+    .line 887
+    .line 888
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 889
+    .line 890
+    .line 891
+    move-result v6
+
+    .line 892
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->logoPrimary:I
+
+    .line 893
+    .line 894
+    sget v6, Lcom/discord/theme/R$color;->mention_background_dark:I
+
+    .line 895
+    .line 896
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 897
+    .line 898
+    .line 899
+    move-result v6
+
+    .line 900
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->mentionBackground:I
+
+    .line 901
+    .line 902
+    sget v6, Lcom/discord/theme/R$color;->brand_260:I
+
+    .line 903
+    .line 904
+    invoke-static {v1, v6}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 905
+    .line 906
+    .line 907
+    move-result v6
+
+    .line 908
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->mentionForeground:I
+
+    .line 909
+    .line 910
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 911
+    .line 912
+    .line 913
+    move-result v3
+
+    .line 914
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->modalBackground:I
+
+    .line 915
+    .line 916
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 917
+    .line 918
+    .line 919
+    move-result v3
+
+    .line 920
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->modalFooterBackground:I
+
+    .line 921
+    .line 922
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_message_input_border_dark:I
+
+    .line 923
+    .line 924
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 925
+    .line 926
+    .line 927
+    move-result v3
+
+    .line 928
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientMessageInputBorder:I
+
+    .line 929
+    .line 930
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_note_background_dark:I
+
+    .line 931
+    .line 932
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 933
+    .line 934
+    .line 935
+    move-result v3
+
+    .line 936
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientNoteBackground:I
+
+    .line 937
+    .line 938
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_overlay_dark:I
+
+    .line 939
+    .line 940
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 941
+    .line 942
+    .line 943
+    move-result v3
+
+    .line 944
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientOverlay:I
+
+    .line 945
+    .line 946
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_overlay_synced_with_user_theme_dark:I
+
+    .line 947
+    .line 948
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 949
+    .line 950
+    .line 951
+    move-result v3
+
+    .line 952
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientOverlaySyncedWithUserTheme:I
+
+    .line 953
+    .line 954
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_profile_body_background_hover_dark:I
+
+    .line 955
+    .line 956
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 957
+    .line 958
+    .line 959
+    move-result v3
+
+    .line 960
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientProfileBodyBackgroundHover:I
+
+    .line 961
+    .line 962
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_role_pill_background_dark:I
+
+    .line 963
+    .line 964
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 965
+    .line 966
+    .line 967
+    move-result v3
+
+    .line 968
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientRolePillBackground:I
+
+    .line 969
+    .line 970
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_role_pill_border_dark:I
+
+    .line 971
+    .line 972
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 973
+    .line 974
+    .line 975
+    move-result v3
+
+    .line 976
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientRolePillBorder:I
+
+    .line 977
+    .line 978
+    sget v3, Lcom/discord/theme/R$color;->profile_gradient_section_box_dark:I
+
+    .line 979
+    .line 980
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 981
+    .line 982
+    .line 983
+    move-result v3
+
+    .line 984
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->profileGradientSectionBox:I
+
+    .line 985
+    .line 986
+    invoke-static {v1, v7}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 987
+    .line 988
+    .line 989
+    move-result v3
+
+    .line 990
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonDangerBackground:I
+
+    .line 991
+    .line 992
+    invoke-static {v1, v8}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 993
+    .line 994
+    .line 995
+    move-result v3
+
+    .line 996
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonDangerPressedBackground:I
+
+    .line 997
+    .line 998
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 999
+    .line 1000
+    .line 1001
+    move-result v3
+
+    .line 1002
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->redesignButtonFloatingBackground:I
+
+    .line 1003
+    .line 1004
+    sget v3, Lcom/discord/theme/R$color;->primary_730:I
+
+    .line 1005
+    .line 1006
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1007
+    .line 1008
+    .line 1009
+    move-result v6
+
+    .line 1010
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->redesignButtonFloatingPressedBackground:I
+
+    .line 1011
+    .line 1012
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1013
+    .line 1014
+    .line 1015
+    move-result v6
+
+    .line 1016
+    iput v6, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPositiveBackground:I
+
+    .line 1017
+    .line 1018
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1019
+    .line 1020
+    .line 1021
+    move-result v5
+
+    .line 1022
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPositivePressedBackground:I
+
+    .line 1023
+    .line 1024
+    move/from16 v5, v18
+
+    .line 1025
+    .line 1026
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1027
+    .line 1028
+    .line 1029
+    move-result v5
+
+    .line 1030
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPrimaryBackground:I
+
+    .line 1031
+    .line 1032
+    sget v5, Lcom/discord/theme/R$color;->brand_600:I
+
+    .line 1033
+    .line 1034
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1035
+    .line 1036
+    .line 1037
+    move-result v5
+
+    .line 1038
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonPrimaryPressedBackground:I
+
+    .line 1039
+    .line 1040
+    sget v5, Lcom/discord/theme/R$color;->redesign_button_secondary_border_dark:I
+
+    .line 1041
+    .line 1042
+    invoke-static {v1, v5}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1043
+    .line 1044
+    .line 1045
+    move-result v5
+
+    .line 1046
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonSecondaryBorder:I
+
+    .line 1047
+    .line 1048
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1049
+    .line 1050
+    .line 1051
+    move-result v5
+
+    .line 1052
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->redesignButtonSecondaryPressedBackground:I
+
+    .line 1053
+    .line 1054
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1055
+    .line 1056
+    .line 1057
+    move-result v5
+
+    .line 1058
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoScrollbarColorThumb:I
+
+    .line 1059
+    .line 1060
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1061
+    .line 1062
+    .line 1063
+    move-result v5
+
+    .line 1064
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoScrollbarColorTrack:I
+
+    .line 1065
+    .line 1066
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1067
+    .line 1068
+    .line 1069
+    move-result v5
+
+    .line 1070
+    iput v5, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoThumb:I
+
+    .line 1071
+    .line 1072
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1073
+    .line 1074
+    .line 1075
+    move-result v4
+
+    .line 1076
+    iput v4, v0, Lcom/discord/theme/DarkTheme;->scrollbarAutoTrack:I
+
+    .line 1077
+    .line 1078
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1079
+    .line 1080
+    .line 1081
+    move-result v3
+
+    .line 1082
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->scrollbarThinThumb:I
+
+    .line 1083
+    .line 1084
+    sget v3, Lcom/discord/theme/R$color;->scrollbar_thin_track_dark:I
+
+    .line 1085
+    .line 1086
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1087
+    .line 1088
+    .line 1089
+    move-result v3
+
+    .line 1090
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->scrollbarThinTrack:I
+
+    .line 1091
+    .line 1092
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1093
+    .line 1094
+    .line 1095
+    move-result v2
+
+    .line 1096
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->spoilerHiddenBackground:I
+
+    .line 1097
+    .line 1098
+    move/from16 v2, v17
+
+    .line 1099
+    .line 1100
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1101
+    .line 1102
+    .line 1103
+    move-result v2
+
+    .line 1104
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->spoilerRevealedBackground:I
+
+    .line 1105
+    .line 1106
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1107
+    .line 1108
+    .line 1109
+    move-result v2
+
+    .line 1110
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDanger:I
+
+    .line 1111
+    .line 1112
+    invoke-static {v1, v11}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1113
+    .line 1114
+    .line 1115
+    move-result v2
+
+    .line 1116
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDangerBackground:I
+
+    .line 1117
+    .line 1118
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1119
+    .line 1120
+    .line 1121
+    move-result v2
+
+    .line 1122
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusDangerText:I
+
+    .line 1123
+    .line 1124
+    invoke-static {v1, v14}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1125
+    .line 1126
+    .line 1127
+    move-result v2
+
+    .line 1128
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositive:I
+
+    .line 1129
+    .line 1130
+    invoke-static {v1, v13}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1131
+    .line 1132
+    .line 1133
+    move-result v2
+
+    .line 1134
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositiveBackground:I
+
+    .line 1135
+    .line 1136
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1137
+    .line 1138
+    .line 1139
+    move-result v2
+
+    .line 1140
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->statusPositiveText:I
+
+    .line 1141
+    .line 1142
+    move/from16 v2, v22
+
+    .line 1143
+    .line 1144
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1145
+    .line 1146
+    .line 1147
+    move-result v3
+
+    .line 1148
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarning:I
+
+    .line 1149
+    .line 1150
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1151
+    .line 1152
+    .line 1153
+    move-result v3
+
+    .line 1154
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarningBackground:I
+
+    .line 1155
+    .line 1156
+    move/from16 v3, v16
+
+    .line 1157
+    .line 1158
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1159
+    .line 1160
+    .line 1161
+    move-result v3
+
+    .line 1162
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->statusWarningText:I
+
+    .line 1163
+    .line 1164
+    move/from16 v3, v20
+
+    .line 1165
+    .line 1166
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1167
+    .line 1168
+    .line 1169
+    move-result v3
+
+    .line 1170
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->textBrand:I
+
+    .line 1171
+    .line 1172
+    sget v3, Lcom/discord/theme/R$color;->red_345:I
+
+    .line 1173
+    .line 1174
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1175
+    .line 1176
+    .line 1177
+    move-result v3
+
+    .line 1178
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->textDanger:I
+
+    .line 1179
+    .line 1180
+    move/from16 v3, v21
+
+    .line 1181
+    .line 1182
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1183
+    .line 1184
+    .line 1185
+    move-result v3
+
+    .line 1186
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->textLink:I
+
+    .line 1187
+    .line 1188
+    sget v3, Lcom/discord/theme/R$color;->blue_330:I
+
+    .line 1189
+    .line 1190
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1191
+    .line 1192
+    .line 1193
+    move-result v3
+
+    .line 1194
+    iput v3, v0, Lcom/discord/theme/DarkTheme;->textLinkLowSaturation:I
+
+    .line 1195
+    .line 1196
+    move/from16 v3, v19
+
+    .line 1197
+    .line 1198
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1199
+    .line 1200
+    .line 1201
+    move-result v4
+
+    .line 1202
+    iput v4, v0, Lcom/discord/theme/DarkTheme;->textMuted:I
+
+    .line 1203
+    .line 1204
+    invoke-static {v1, v10}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1205
+    .line 1206
+    .line 1207
+    move-result v4
+
+    .line 1208
+    iput v4, v0, Lcom/discord/theme/DarkTheme;->textNormal:I
+
+    .line 1209
+    .line 1210
+    sget v4, Lcom/discord/theme/R$color;->green_330:I
+
+    .line 1211
+    .line 1212
+    invoke-static {v1, v4}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1213
+    .line 1214
+    .line 1215
+    move-result v4
+
+    .line 1216
+    iput v4, v0, Lcom/discord/theme/DarkTheme;->textPositive:I
+
+    .line 1217
+    .line 1218
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1219
+    .line 1220
+    .line 1221
+    move-result v2
+
+    .line 1222
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->textWarning:I
+
+    .line 1223
+    .line 1224
+    invoke-static {v1, v3}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1225
+    .line 1226
+    .line 1227
+    move-result v2
+
+    .line 1228
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->textboxMarkdownSyntax:I
+
+    .line 1229
+    .line 1230
+    sget v2, Lcom/discord/theme/R$color;->user_profile_header_overflow_background_dark:I
+
+    .line 1231
+    .line 1232
+    invoke-static {v1, v2}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1233
+    .line 1234
+    .line 1235
+    move-result v2
+
+    .line 1236
+    iput v2, v0, Lcom/discord/theme/DarkTheme;->userProfileHeaderOverflowBackground:I
+
+    .line 1237
+    .line 1238
+    invoke-static {v1, v9}, Lcom/discord/theme/utils/ColorUtilsKt;->getColorCompat(Landroid/content/Context;I)I
+
+    .line 1239
+    .line 1240
+    .line 1241
     move-result v1
 
+    .line 1242
     iput v1, v0, Lcom/discord/theme/DarkTheme;->white:I
 
+    .line 1243
+    .line 1244
     return-void
 .end method
 

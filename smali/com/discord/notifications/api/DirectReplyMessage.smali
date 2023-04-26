@@ -266,15 +266,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
 .end method
 
 .method private constructor <init>(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Lcom/discord/notifications/api/DirectReplyUser;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
@@ -1274,6 +1265,49 @@
     .line 416
     .line 417
     .line 418
+    .line 419
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
 .end method
 
 

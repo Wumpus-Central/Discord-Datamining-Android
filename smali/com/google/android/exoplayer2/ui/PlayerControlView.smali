@@ -260,8 +260,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
@@ -1228,6 +1226,44 @@
     .line 211
     .line 212
     .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
 .end method
 
 .method private C(Lcom/google/android/exoplayer2/Player;)V
@@ -1386,6 +1422,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method private E(Lcom/google/android/exoplayer2/Player;)V
@@ -1529,6 +1584,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method private static F(Landroid/content/res/TypedArray;I)I
@@ -1710,8 +1784,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private static I(I)Z
@@ -1922,8 +1994,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private M(Lcom/google/android/exoplayer2/Player;IJ)Z
@@ -2223,6 +2293,44 @@
     .line 211
     .line 212
     .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
 .end method
 
 .method private O()Z
@@ -2389,8 +2497,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private Q()V
@@ -2531,8 +2637,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private R(ZZLandroid/view/View;)V
@@ -2954,6 +3058,83 @@
     .line 382
     .line 383
     .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
+    .line 415
+    .line 416
+    .line 417
+    .line 418
+    .line 419
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
 .end method
 
 .method private S()V
@@ -3797,144 +3978,6 @@
     .line 651
     .line 652
     .line 653
-    .line 654
-    .line 655
-    .line 656
-    .line 657
-    .line 658
-    .line 659
-    .line 660
-    .line 661
-    .line 662
-    .line 663
-    .line 664
-    .line 665
-    .line 666
-    .line 667
-    .line 668
-    .line 669
-    .line 670
-    .line 671
-    .line 672
-    .line 673
-    .line 674
-    .line 675
-    .line 676
-    .line 677
-    .line 678
-    .line 679
-    .line 680
-    .line 681
-    .line 682
-    .line 683
-    .line 684
-    .line 685
-    .line 686
-    .line 687
-    .line 688
-    .line 689
-    .line 690
-    .line 691
-    .line 692
-    .line 693
-    .line 694
-    .line 695
-    .line 696
-    .line 697
-    .line 698
-    .line 699
-    .line 700
-    .line 701
-    .line 702
-    .line 703
-    .line 704
-    .line 705
-    .line 706
-    .line 707
-    .line 708
-    .line 709
-    .line 710
-    .line 711
-    .line 712
-    .line 713
-    .line 714
-    .line 715
-    .line 716
-    .line 717
-    .line 718
-    .line 719
-    .line 720
-    .line 721
-    .line 722
-    .line 723
-    .line 724
-    .line 725
-    .line 726
-    .line 727
-    .line 728
-    .line 729
-    .line 730
-    .line 731
-    .line 732
-    .line 733
-    .line 734
-    .line 735
-    .line 736
-    .line 737
-    .line 738
-    .line 739
-    .line 740
-    .line 741
-    .line 742
-    .line 743
-    .line 744
-    .line 745
-    .line 746
-    .line 747
-    .line 748
-    .line 749
-    .line 750
-    .line 751
-    .line 752
-    .line 753
-    .line 754
-    .line 755
-    .line 756
-    .line 757
-    .line 758
-    .line 759
-    .line 760
-    .line 761
-    .line 762
-    .line 763
-    .line 764
-    .line 765
-    .line 766
-    .line 767
-    .line 768
-    .line 769
-    .line 770
-    .line 771
-    .line 772
-    .line 773
-    .line 774
-    .line 775
-    .line 776
-    .line 777
-    .line 778
-    .line 779
-    .line 780
-    .line 781
-    .line 782
-    .line 783
-    .line 784
-    .line 785
-    .line 786
-    .line 787
-    .line 788
-    .line 789
-    .line 790
-    .line 791
 .end method
 
 .method private T()V
@@ -4166,8 +4209,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private U()V
@@ -4998,144 +5039,6 @@
     .line 651
     .line 652
     .line 653
-    .line 654
-    .line 655
-    .line 656
-    .line 657
-    .line 658
-    .line 659
-    .line 660
-    .line 661
-    .line 662
-    .line 663
-    .line 664
-    .line 665
-    .line 666
-    .line 667
-    .line 668
-    .line 669
-    .line 670
-    .line 671
-    .line 672
-    .line 673
-    .line 674
-    .line 675
-    .line 676
-    .line 677
-    .line 678
-    .line 679
-    .line 680
-    .line 681
-    .line 682
-    .line 683
-    .line 684
-    .line 685
-    .line 686
-    .line 687
-    .line 688
-    .line 689
-    .line 690
-    .line 691
-    .line 692
-    .line 693
-    .line 694
-    .line 695
-    .line 696
-    .line 697
-    .line 698
-    .line 699
-    .line 700
-    .line 701
-    .line 702
-    .line 703
-    .line 704
-    .line 705
-    .line 706
-    .line 707
-    .line 708
-    .line 709
-    .line 710
-    .line 711
-    .line 712
-    .line 713
-    .line 714
-    .line 715
-    .line 716
-    .line 717
-    .line 718
-    .line 719
-    .line 720
-    .line 721
-    .line 722
-    .line 723
-    .line 724
-    .line 725
-    .line 726
-    .line 727
-    .line 728
-    .line 729
-    .line 730
-    .line 731
-    .line 732
-    .line 733
-    .line 734
-    .line 735
-    .line 736
-    .line 737
-    .line 738
-    .line 739
-    .line 740
-    .line 741
-    .line 742
-    .line 743
-    .line 744
-    .line 745
-    .line 746
-    .line 747
-    .line 748
-    .line 749
-    .line 750
-    .line 751
-    .line 752
-    .line 753
-    .line 754
-    .line 755
-    .line 756
-    .line 757
-    .line 758
-    .line 759
-    .line 760
-    .line 761
-    .line 762
-    .line 763
-    .line 764
-    .line 765
-    .line 766
-    .line 767
-    .line 768
-    .line 769
-    .line 770
-    .line 771
-    .line 772
-    .line 773
-    .line 774
-    .line 775
-    .line 776
-    .line 777
-    .line 778
-    .line 779
-    .line 780
-    .line 781
-    .line 782
-    .line 783
-    .line 784
-    .line 785
-    .line 786
-    .line 787
-    .line 788
-    .line 789
-    .line 790
-    .line 791
 .end method
 
 .method private V()V
@@ -5383,8 +5286,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private W()V
@@ -5606,8 +5507,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private X()V
@@ -6619,144 +6518,6 @@
     .line 651
     .line 652
     .line 653
-    .line 654
-    .line 655
-    .line 656
-    .line 657
-    .line 658
-    .line 659
-    .line 660
-    .line 661
-    .line 662
-    .line 663
-    .line 664
-    .line 665
-    .line 666
-    .line 667
-    .line 668
-    .line 669
-    .line 670
-    .line 671
-    .line 672
-    .line 673
-    .line 674
-    .line 675
-    .line 676
-    .line 677
-    .line 678
-    .line 679
-    .line 680
-    .line 681
-    .line 682
-    .line 683
-    .line 684
-    .line 685
-    .line 686
-    .line 687
-    .line 688
-    .line 689
-    .line 690
-    .line 691
-    .line 692
-    .line 693
-    .line 694
-    .line 695
-    .line 696
-    .line 697
-    .line 698
-    .line 699
-    .line 700
-    .line 701
-    .line 702
-    .line 703
-    .line 704
-    .line 705
-    .line 706
-    .line 707
-    .line 708
-    .line 709
-    .line 710
-    .line 711
-    .line 712
-    .line 713
-    .line 714
-    .line 715
-    .line 716
-    .line 717
-    .line 718
-    .line 719
-    .line 720
-    .line 721
-    .line 722
-    .line 723
-    .line 724
-    .line 725
-    .line 726
-    .line 727
-    .line 728
-    .line 729
-    .line 730
-    .line 731
-    .line 732
-    .line 733
-    .line 734
-    .line 735
-    .line 736
-    .line 737
-    .line 738
-    .line 739
-    .line 740
-    .line 741
-    .line 742
-    .line 743
-    .line 744
-    .line 745
-    .line 746
-    .line 747
-    .line 748
-    .line 749
-    .line 750
-    .line 751
-    .line 752
-    .line 753
-    .line 754
-    .line 755
-    .line 756
-    .line 757
-    .line 758
-    .line 759
-    .line 760
-    .line 761
-    .line 762
-    .line 763
-    .line 764
-    .line 765
-    .line 766
-    .line 767
-    .line 768
-    .line 769
-    .line 770
-    .line 771
-    .line 772
-    .line 773
-    .line 774
-    .line 775
-    .line 776
-    .line 777
-    .line 778
-    .line 779
-    .line 780
-    .line 781
-    .line 782
-    .line 783
-    .line 784
-    .line 785
-    .line 786
-    .line 787
-    .line 788
-    .line 789
-    .line 790
-    .line 791
 .end method
 
 .method public static synthetic a(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V
@@ -7194,6 +6955,25 @@
     .line 106
     return p1
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public G()V
@@ -7375,8 +7155,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public J()Z
@@ -7582,8 +7360,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
@@ -7756,6 +7532,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public getPlayer()Lcom/google/android/exoplayer2/Player;
@@ -7992,8 +7787,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public onDetachedFromWindow()V
@@ -8138,8 +7931,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public setControlDispatcher(Ld7/d;)V
@@ -8262,6 +8053,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setFastForwardIncrementMs(I)V
@@ -8392,6 +8202,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setPlaybackPreparer(Ld7/p;)V
@@ -8583,6 +8412,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setProgressUpdateListener(Lcom/google/android/exoplayer2/ui/PlayerControlView$c;)V
@@ -8758,6 +8606,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setRewindIncrementMs(I)V
@@ -8888,6 +8755,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowFastForwardButton(Z)V
@@ -9005,6 +8891,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowMultiWindowTimeBar(Z)V
@@ -9122,6 +9027,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowNextButton(Z)V
@@ -9239,6 +9163,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowPreviousButton(Z)V
@@ -9356,6 +9299,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowRewindButton(Z)V
@@ -9473,6 +9435,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowShuffleButton(Z)V
@@ -9590,6 +9571,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowTimeoutMs(I)V
@@ -9714,6 +9714,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setShowVrButton(Z)V
@@ -9844,6 +9863,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public setTimeBarMinUpdateInterval(I)V
@@ -9998,6 +10036,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method public z(Lcom/google/android/exoplayer2/ui/PlayerControlView$d;)V
@@ -10117,4 +10174,23 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/discord/keyboard/KeyboardManagerModule;
-.super Lcom/discord/codegen/keyboard/NativeKeyboardManagerSpec;
+.super Lcom/discord/codegen/NativeKeyboardManagerSpec;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/keyboard/KeyboardManagerModule;",
-        "Lcom/discord/codegen/keyboard/NativeKeyboardManagerSpec;",
+        "Lcom/discord/codegen/NativeKeyboardManagerSpec;",
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -76,7 +76,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1}, Lcom/discord/codegen/keyboard/NativeKeyboardManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {p0, p1}, Lcom/discord/codegen/NativeKeyboardManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 7
     .line 8
@@ -199,74 +199,6 @@
     .line 124
     .line 125
     .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
 .end method
 
 .method public static synthetic a(Z)V
@@ -438,58 +370,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
 .end method
 
 .method public dismissGlobalKeyboard()V

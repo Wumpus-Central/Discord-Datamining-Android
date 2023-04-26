@@ -180,6 +180,263 @@
     .line 64
     .line 65
     .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
+    .line 252
+    .line 253
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
+    .line 278
+    .line 279
+    .line 280
+    .line 281
+    .line 282
+    .line 283
+    .line 284
+    .line 285
+    .line 286
+    .line 287
+    .line 288
+    .line 289
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    .line 307
+    .line 308
+    .line 309
+    .line 310
+    .line 311
+    .line 312
+    .line 313
+    .line 314
+    .line 315
+    .line 316
+    .line 317
+    .line 318
+    .line 319
+    .line 320
+    .line 321
+    .line 322
+    .line 323
 .end method
 
 .method public constructor <init>()V
@@ -262,35 +519,6 @@
     .line 44
     .line 45
     .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
 .end method
 
 .method private static resetTransformProperty(Landroid/view/View;)V
@@ -371,35 +599,6 @@
     .line 44
     .line 45
     .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
 .end method
 
 .method private static sanitizeFloatPropertyValue(F)F
@@ -559,6 +758,172 @@
     .line 73
     .line 74
     .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
 .end method
 
 .method private static setTransformProperty(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
@@ -1360,6 +1725,215 @@
     .line 621
     .line 622
     .line 623
+    .line 624
+    .line 625
+    .line 626
+    .line 627
+    .line 628
+    .line 629
+    .line 630
+    .line 631
+    .line 632
+    .line 633
+    .line 634
+    .line 635
+    .line 636
+    .line 637
+    .line 638
+    .line 639
+    .line 640
+    .line 641
+    .line 642
+    .line 643
+    .line 644
+    .line 645
+    .line 646
+    .line 647
+    .line 648
+    .line 649
+    .line 650
+    .line 651
+    .line 652
+    .line 653
+    .line 654
+    .line 655
+    .line 656
+    .line 657
+    .line 658
+    .line 659
+    .line 660
+    .line 661
+    .line 662
+    .line 663
+    .line 664
+    .line 665
+    .line 666
+    .line 667
+    .line 668
+    .line 669
+    .line 670
+    .line 671
+    .line 672
+    .line 673
+    .line 674
+    .line 675
+    .line 676
+    .line 677
+    .line 678
+    .line 679
+    .line 680
+    .line 681
+    .line 682
+    .line 683
+    .line 684
+    .line 685
+    .line 686
+    .line 687
+    .line 688
+    .line 689
+    .line 690
+    .line 691
+    .line 692
+    .line 693
+    .line 694
+    .line 695
+    .line 696
+    .line 697
+    .line 698
+    .line 699
+    .line 700
+    .line 701
+    .line 702
+    .line 703
+    .line 704
+    .line 705
+    .line 706
+    .line 707
+    .line 708
+    .line 709
+    .line 710
+    .line 711
+    .line 712
+    .line 713
+    .line 714
+    .line 715
+    .line 716
+    .line 717
+    .line 718
+    .line 719
+    .line 720
+    .line 721
+    .line 722
+    .line 723
+    .line 724
+    .line 725
+    .line 726
+    .line 727
+    .line 728
+    .line 729
+    .line 730
+    .line 731
+    .line 732
+    .line 733
+    .line 734
+    .line 735
+    .line 736
+    .line 737
+    .line 738
+    .line 739
+    .line 740
+    .line 741
+    .line 742
+    .line 743
+    .line 744
+    .line 745
+    .line 746
+    .line 747
+    .line 748
+    .line 749
+    .line 750
+    .line 751
+    .line 752
+    .line 753
+    .line 754
+    .line 755
+    .line 756
+    .line 757
+    .line 758
+    .line 759
+    .line 760
+    .line 761
+    .line 762
+    .line 763
+    .line 764
+    .line 765
+    .line 766
+    .line 767
+    .line 768
+    .line 769
+    .line 770
+    .line 771
+    .line 772
+    .line 773
+    .line 774
+    .line 775
+    .line 776
+    .line 777
+    .line 778
+    .line 779
+    .line 780
+    .line 781
+    .line 782
+    .line 783
+    .line 784
+    .line 785
+    .line 786
+    .line 787
+    .line 788
+    .line 789
+    .line 790
+    .line 791
+    .line 792
+    .line 793
+    .line 794
+    .line 795
+    .line 796
+    .line 797
+    .line 798
+    .line 799
+    .line 800
+    .line 801
+    .line 802
+    .line 803
+    .line 804
+    .line 805
+    .line 806
+    .line 807
+    .line 808
+    .line 809
+    .line 810
+    .line 811
+    .line 812
+    .line 813
+    .line 814
+    .line 815
+    .line 816
+    .line 817
+    .line 818
+    .line 819
+    .line 820
+    .line 821
+    .line 822
+    .line 823
+    .line 824
+    .line 825
+    .line 826
+    .line 827
+    .line 828
+    .line 829
+    .line 830
+    .line 831
+    .line 832
 .end method
 
 .method private updateViewAccessibility(Landroid/view/View;)V
@@ -1427,35 +2001,6 @@
     .line 44
     .line 45
     .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
 .end method
 
 .method private updateViewContentDescription(Landroid/view/View;)V
@@ -1936,6 +2481,1027 @@
     .line 232
     :cond_8
     return-void
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+.end method
+
+
+# virtual methods
+.method public getExportedCustomBubblingEventTypeConstants()Ljava/util/Map;
+    .locals 17
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-super/range {p0 .. p0}, Lcom/facebook/react/uimanager/ViewManager;->getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 8
+    .line 9
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-static {}, Lcom/facebook/react/common/MapBuilder;->builder()Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    const-string v2, "onPointerCancel"
+
+    .line 17
+    .line 18
+    const-string v3, "onPointerCancelCapture"
+
+    .line 19
+    .line 20
+    const-string v4, "bubbled"
+
+    .line 21
+    .line 22
+    const-string v5, "captured"
+
+    .line 23
+    .line 24
+    invoke-static {v4, v2, v5, v3}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v2
+
+    .line 28
+    const-string v3, "phasedRegistrationNames"
+
+    .line 29
+    .line 30
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v2
+
+    .line 34
+    const-string v6, "topPointerCancel"
+
+    .line 35
+    .line 36
+    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+
+    .line 40
+    const-string v2, "onPointerDown"
+
+    .line 41
+    .line 42
+    const-string v6, "onPointerDownCapture"
+
+    .line 43
+    .line 44
+    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v2
+
+    .line 48
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v2
+
+    .line 52
+    const-string v6, "topPointerDown"
+
+    .line 53
+    .line 54
+    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v1
+
+    .line 58
+    const-string v6, "bubbled"
+
+    .line 59
+    .line 60
+    const-string v7, "onPointerEnter"
+
+    .line 61
+    .line 62
+    const-string v8, "captured"
+
+    .line 63
+    .line 64
+    const-string v9, "onPointerEnterCapture"
+
+    .line 65
+    .line 66
+    const-string v10, "skipBubbling"
+
+    .line 67
+    .line 68
+    sget-object v16, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 69
+    .line 70
+    move-object/from16 v11, v16
+
+    .line 71
+    .line 72
+    invoke-static/range {v6 .. v11}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v2
+
+    .line 76
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v2
+
+    .line 80
+    const-string v6, "topPointerEnter"
+
+    .line 81
+    .line 82
+    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v1
+
+    .line 86
+    const-string v11, "bubbled"
+
+    .line 87
+    .line 88
+    const-string v12, "onPointerLeave"
+
+    .line 89
+    .line 90
+    const-string v13, "captured"
+
+    .line 91
+    .line 92
+    const-string v14, "onPointerLeaveCapture"
+
+    .line 93
+    .line 94
+    const-string v15, "skipBubbling"
+
+    .line 95
+    .line 96
+    invoke-static/range {v11 .. v16}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object v2
+
+    .line 100
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v2
+
+    .line 104
+    const-string v6, "topPointerLeave"
+
+    .line 105
+    .line 106
+    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object v1
+
+    .line 110
+    const-string v2, "onPointerMove"
+
+    .line 111
+    .line 112
+    const-string v6, "onPointerMoveCapture"
+
+    .line 113
+    .line 114
+    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-object v2
+
+    .line 118
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object v2
+
+    .line 122
+    const-string v6, "topPointerMove"
+
+    .line 123
+    .line 124
+    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object v1
+
+    .line 128
+    const-string v2, "onPointerUp"
+
+    .line 129
+    .line 130
+    const-string v6, "onPointerUpCapture"
+
+    .line 131
+    .line 132
+    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v2
+
+    .line 136
+    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v2
+
+    .line 140
+    const-string v3, "topPointerUp"
+
+    .line 141
+    .line 142
+    invoke-virtual {v1, v3, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v1
+
+    .line 146
+    invoke-virtual {v1}, Lcom/facebook/react/common/MapBuilder$Builder;->build()Ljava/util/Map;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object v1
+
+    .line 150
+    invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+
+    .line 151
+    .line 152
+    .line 153
+    return-object v0
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
+    .line 252
+    .line 253
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
+    .line 278
+    .line 279
+    .line 280
+    .line 281
+    .line 282
+    .line 283
+    .line 284
+    .line 285
+    .line 286
+    .line 287
+    .line 288
+    .line 289
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    .line 307
+    .line 308
+    .line 309
+    .line 310
+    .line 311
+    .line 312
+    .line 313
+    .line 314
+    .line 315
+    .line 316
+    .line 317
+    .line 318
+    .line 319
+    .line 320
+    .line 321
+    .line 322
+    .line 323
+.end method
+
+.method public getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-super {p0}, Lcom/facebook/react/uimanager/ViewManager;->getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 8
+    .line 9
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-static {}, Lcom/facebook/react/common/MapBuilder;->builder()Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    const-string v2, "registrationName"
+
+    .line 17
+    .line 18
+    const-string v3, "onAccessibilityAction"
+
+    .line 19
+    .line 20
+    invoke-static {v2, v3}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    const-string v3, "topAccessibilityAction"
+
+    .line 25
+    .line 26
+    invoke-virtual {v1, v3, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    invoke-virtual {v1}, Lcom/facebook/react/common/MapBuilder$Builder;->build()Ljava/util/Map;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+
+    .line 35
+    .line 36
+    .line 37
+    return-object v0
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+.end method
+
+.method protected onAfterUpdateTransaction(Landroid/view/View;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/facebook/react/uimanager/ViewManager;->onAfterUpdateTransaction(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewAccessibility(Landroid/view/View;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+.end method
+
+.method protected prepareToRecycleView(Lcom/facebook/react/uimanager/ThemedReactContext;Landroid/view/View;)Landroid/view/View;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/facebook/react/uimanager/ThemedReactContext;",
+            "TT;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    sget p1, Lcom/facebook/react/R$id;->pointer_enter:I
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sget p1, Lcom/facebook/react/R$id;->pointer_leave:I
+
+    .line 8
+    .line 9
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sget p1, Lcom/facebook/react/R$id;->pointer_move:I
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
+    sget p1, Lcom/facebook/react/R$id;->react_test_id:I
+
+    .line 18
+    .line 19
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    sget p1, Lcom/facebook/react/R$id;->view_tag_native_id:I
+
+    .line 23
+    .line 24
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    sget p1, Lcom/facebook/react/R$id;->labelled_by:I
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 30
+    .line 31
+    .line 32
+    sget p1, Lcom/facebook/react/R$id;->accessibility_label:I
+
+    .line 33
+    .line 34
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 35
+    .line 36
+    .line 37
+    sget p1, Lcom/facebook/react/R$id;->accessibility_hint:I
+
+    .line 38
+    .line 39
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    sget p1, Lcom/facebook/react/R$id;->accessibility_role:I
+
+    .line 43
+    .line 44
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    sget p1, Lcom/facebook/react/R$id;->accessibility_state:I
+
+    .line 48
+    .line 49
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 50
+    .line 51
+    .line 52
+    sget p1, Lcom/facebook/react/R$id;->accessibility_actions:I
+
+    .line 53
+    .line 54
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 55
+    .line 56
+    .line 57
+    sget p1, Lcom/facebook/react/R$id;->accessibility_value:I
+
+    .line 58
+    .line 59
+    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {p0, p2, v0}, Lcom/facebook/react/uimanager/BaseViewManager;->setTransform(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
+
+    .line 63
+    .line 64
+    .line 65
+    const/4 p1, 0x0
+
+    .line 66
+    invoke-virtual {p2, p1}, Landroid/view/View;->setPivotX(F)V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {p2, p1}, Landroid/view/View;->setPivotY(F)V
+
+    .line 70
+    .line 71
+    .line 72
+    const/4 v1, 0x0
+
+    .line 73
+    invoke-virtual {p2, v1}, Landroid/view/View;->setTop(I)V
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-virtual {p2, v1}, Landroid/view/View;->setBottom(I)V
+
+    .line 77
+    .line 78
+    .line 79
+    invoke-virtual {p2, v1}, Landroid/view/View;->setLeft(I)V
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {p2, v1}, Landroid/view/View;->setRight(I)V
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {p2, p1}, Landroid/view/View;->setElevation(F)V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {p2, v0}, Landroidx/transition/t0;->a(Landroid/view/View;Landroid/graphics/Matrix;)V
+
+    .line 89
+    .line 90
+    .line 91
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 92
+    .line 93
+    const/16 v3, 0x1c
+
+    .line 94
+    .line 95
+    if-lt v2, v3, :cond_0
+
+    .line 96
+    .line 97
+    const/high16 v2, -0x1000000
+
+    .line 98
+    .line 99
+    invoke-static {p2, v2}, Lcom/facebook/react/uimanager/a;->a(Landroid/view/View;I)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {p2, v2}, Lcom/facebook/react/uimanager/b;->a(Landroid/view/View;I)V
+
+    .line 103
+    .line 104
+    .line 105
+    :cond_0
+    const/4 v2, -0x1
+
+    .line 106
+    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusDownId(I)V
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusForwardId(I)V
+
+    .line 110
+    .line 111
+    .line 112
+    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusRightId(I)V
+
+    .line 113
+    .line 114
+    .line 115
+    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusUpId(I)V
+
+    .line 116
+    .line 117
+    .line 118
+    invoke-virtual {p2, v1}, Landroid/view/View;->setFocusable(Z)V
+
+    .line 119
+    .line 120
+    .line 121
+    invoke-virtual {p2, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {p2, p1}, Landroid/view/View;->setElevation(F)V
+
+    .line 125
+    .line 126
+    .line 127
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 128
+    .line 129
+    invoke-virtual {p2, p1}, Landroid/view/View;->setAlpha(F)V
+
+    .line 130
+    .line 131
+    .line 132
+    const/4 v3, 0x0
+
+    .line 133
+    const/4 v4, 0x0
+
+    .line 134
+    const/4 v5, 0x0
+
+    .line 135
+    const/4 v6, 0x0
+
+    .line 136
+    move-object v1, p0
+
+    .line 137
+    move-object v2, p2
+
+    .line 138
+    invoke-virtual/range {v1 .. v6}, Lcom/facebook/react/uimanager/ViewManager;->setPadding(Landroid/view/View;IIII)V
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {p2, v0}, Landroid/view/View;->setForeground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 142
+    .line 143
+    .line 144
+    return-object p2
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
     .line 233
     .line 234
     .line 235
@@ -2536,443 +4102,2881 @@
     .line 830
     .line 831
     .line 832
-    .line 833
-    .line 834
-    .line 835
-    .line 836
-    .line 837
-    .line 838
-    .line 839
-    .line 840
-    .line 841
-    .line 842
-    .line 843
-    .line 844
-    .line 845
-    .line 846
-    .line 847
-    .line 848
-    .line 849
-    .line 850
-    .line 851
-    .line 852
-    .line 853
-    .line 854
-    .line 855
-    .line 856
-    .line 857
-    .line 858
-    .line 859
-    .line 860
-    .line 861
-    .line 862
-    .line 863
-    .line 864
-    .line 865
-    .line 866
-    .line 867
-    .line 868
-    .line 869
-    .line 870
-    .line 871
-    .line 872
-    .line 873
-    .line 874
-    .line 875
-    .line 876
-    .line 877
-    .line 878
-    .line 879
-    .line 880
-    .line 881
-    .line 882
-    .line 883
-    .line 884
-    .line 885
-    .line 886
-    .line 887
-    .line 888
-    .line 889
-    .line 890
-    .line 891
-    .line 892
-    .line 893
-    .line 894
-    .line 895
-    .line 896
-    .line 897
-    .line 898
-    .line 899
-    .line 900
-    .line 901
-    .line 902
-    .line 903
-    .line 904
-    .line 905
-    .line 906
-    .line 907
-    .line 908
-    .line 909
-    .line 910
-    .line 911
-    .line 912
-    .line 913
-    .line 914
-    .line 915
-    .line 916
-    .line 917
-    .line 918
-    .line 919
-    .line 920
-    .line 921
-    .line 922
-    .line 923
-    .line 924
-    .line 925
-    .line 926
-    .line 927
-    .line 928
-    .line 929
-    .line 930
-    .line 931
-    .line 932
-    .line 933
-    .line 934
-    .line 935
-    .line 936
-    .line 937
-    .line 938
-    .line 939
-    .line 940
-    .line 941
-    .line 942
-    .line 943
-    .line 944
-    .line 945
-    .line 946
-    .line 947
-    .line 948
 .end method
 
+.method public setAccessibilityActions(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityActions"
+    .end annotation
 
-# virtual methods
-.method public getExportedCustomBubblingEventTypeConstants()Ljava/util/Map;
-    .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/util/Map<",
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableArray;",
+            ")V"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    sget v0, Lcom/facebook/react/R$id;->accessibility_actions:I
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setAccessibilityCollection(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityCollection"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableMap;",
+            ")V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->accessibility_collection:I
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setAccessibilityCollectionItem(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityCollectionItem"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableMap;",
+            ")V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->accessibility_collection_item:I
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setAccessibilityHint(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityHint"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
             "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
+            ")V"
         }
     .end annotation
 
     .line 1
-    invoke-super/range {p0 .. p0}, Lcom/facebook/react/uimanager/ViewManager;->getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
+    sget v0, Lcom/facebook/react/R$id;->accessibility_hint:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setAccessibilityLabel(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityLabel"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Lcom/facebook/react/R$id;->accessibility_label:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setAccessibilityLabelledBy(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 2
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityLabelledBy"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/Dynamic;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->isNull()Z
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result v0
 
     .line 5
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    new-instance v0, Ljava/util/HashMap;
+    return-void
 
     .line 8
-    .line 9
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    :cond_0
+    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
 
+    .line 9
     .line 10
     .line 11
+    move-result-object v0
+
     .line 12
-    :cond_0
-    invoke-static {}, Lcom/facebook/react/common/MapBuilder;->builder()Lcom/facebook/react/common/MapBuilder$Builder;
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->String:Lcom/facebook/react/bridge/ReadableType;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v1
+    if-ne v0, v1, :cond_1
 
+    .line 15
     .line 16
-    const-string v2, "onPointerCancel"
+    sget v0, Lcom/facebook/react/R$id;->labelled_by:I
 
     .line 17
     .line 18
-    const-string v3, "onPointerCancelCapture"
+    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->asString()Ljava/lang/String;
 
     .line 19
     .line 20
-    const-string v4, "bubbled"
-
     .line 21
+    move-result-object p2
+
     .line 22
-    const-string v5, "captured"
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 23
     .line 24
-    invoke-static {v4, v2, v5, v3}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
     .line 25
+    goto :goto_0
+
     .line 26
+    :cond_1
+    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
+
     .line 27
-    move-result-object v2
-
     .line 28
-    const-string v3, "phasedRegistrationNames"
-
     .line 29
+    move-result-object v0
+
     .line 30
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
 
     .line 31
     .line 32
-    .line 33
-    move-result-object v2
+    if-ne v0, v1, :cond_2
 
+    .line 33
     .line 34
-    const-string v6, "topPointerCancel"
+    sget v0, Lcom/facebook/react/R$id;->labelled_by:I
 
     .line 35
     .line 36
-    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v1
+    move-result-object p2
 
     .line 40
-    const-string v2, "onPointerDown"
+    const/4 v1, 0x0
 
     .line 41
-    .line 42
-    const-string v6, "onPointerDownCapture"
+    invoke-interface {p2, v1}, Lcom/facebook/react/bridge/ReadableArray;->getString(I)Ljava/lang/String;
 
+    .line 42
     .line 43
     .line 44
-    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    move-result-object p2
 
+    .line 45
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_2
+    :goto_0
+    return-void
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setAccessibilityLiveRegion(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityLiveRegion"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p2, :cond_2
+
+    .line 2
+    .line 3
+    const-string v0, "none"
+
+    .line 4
+    .line 5
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const-string v0, "polite"
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    const/4 p2, 0x1
+
+    .line 21
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
+
+    .line 22
+    .line 23
+    .line 24
+    goto :goto_1
+
+    .line 25
+    :cond_1
+    const-string v0, "assertive"
+
+    .line 26
+    .line 27
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p2
+
+    .line 31
+    if-eqz p2, :cond_3
+
+    .line 32
+    .line 33
+    const/4 p2, 0x2
+
+    .line 34
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_2
+    :goto_0
+    const/4 p2, 0x0
+
+    .line 39
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    :cond_3
+    :goto_1
+    return-void
+    .line 43
+    .line 44
     .line 45
     .line 46
     .line 47
-    move-result-object v2
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setAccessibilityRole(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityRole"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    sget v0, Lcom/facebook/react/R$id;->accessibility_role:I
+
+    invoke-static {p2}, Lcom/facebook/react/uimanager/ReactAccessibilityDelegate$AccessibilityRole;->fromValue(Ljava/lang/String;)Lcom/facebook/react/uimanager/ReactAccessibilityDelegate$AccessibilityRole;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setAccessibilityValue(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityValue"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableMap;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    sget v0, Lcom/facebook/react/R$id;->accessibility_value:I
+
+    .line 5
+    .line 6
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const-string v0, "text"
+
+    .line 10
+    .line 11
+    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p2
+
+    .line 15
+    if-eqz p2, :cond_1
+
+    .line 16
+    .line 17
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_1
+    return-void
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setBackgroundColor(Landroid/view/View;I)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        customType = "Color"
+        defaultInt = 0x0
+        name = "backgroundColor"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;I)V"
+        }
+    .end annotation
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setBackgroundColor(I)V
+
+    return-void
+.end method
+
+.method public setBorderBottomLeftRadius(Landroid/view/View;F)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p1, "borderBottomLeftRadius"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setBorderBottomRightRadius(Landroid/view/View;F)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p1, "borderBottomRightRadius"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setBorderRadius(Landroid/view/View;F)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p1, "borderRadius"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setBorderTopLeftRadius(Landroid/view/View;F)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p1, "borderTopLeftRadius"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setBorderTopRightRadius(Landroid/view/View;F)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p1, "borderTopRightRadius"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setElevation(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "elevation"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
+
+    move-result p2
+
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->y0(Landroid/view/View;F)V
+
+    return-void
+.end method
+
+.method public setImportantForAccessibility(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "importantForAccessibility"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p2, :cond_3
+
+    .line 2
+    .line 3
+    const-string v0, "auto"
+
+    .line 4
+    .line 5
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const-string v0, "yes"
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    const/4 p2, 0x1
+
+    .line 21
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
+
+    .line 22
+    .line 23
+    .line 24
+    goto :goto_1
+
+    .line 25
+    :cond_1
+    const-string v0, "no"
+
+    .line 26
+    .line 27
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-eqz v0, :cond_2
+
+    .line 32
+    .line 33
+    const/4 p2, 0x2
+
+    .line 34
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_2
+    const-string v0, "no-hide-descendants"
+
+    .line 39
+    .line 40
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p2
+
+    .line 44
+    if-eqz p2, :cond_4
+
+    .line 45
+    .line 46
+    const/4 p2, 0x4
+
+    .line 47
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
 
     .line 48
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    .line 49
+    .line 50
+    goto :goto_1
+
+    .line 51
+    :cond_3
+    :goto_0
+    const/4 p2, 0x0
+
+    .line 52
+    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
+
+    .line 53
+    .line 54
+    .line 55
+    :cond_4
+    :goto_1
+    return-void
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setMoveShouldSetResponder(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onMoveShouldSetResponder"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setMoveShouldSetResponderCapture(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onMoveShouldSetResponderCapture"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setNativeId(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "nativeID"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Lcom/facebook/react/R$id;->view_tag_native_id:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Lcom/facebook/react/uimanager/util/ReactFindViewUtil;->notifyViewRendered(Landroid/view/View;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setOpacity(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        defaultFloat = 1.0f
+        name = "opacity"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
+.end method
+
+.method public setPointerEnter(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerEnter"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_enter:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setPointerEnterCapture(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerEnterCapture"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_enter_capture:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setPointerLeave(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerLeave"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_leave:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setPointerLeaveCapture(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerLeaveCapture"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_leave_capture:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setPointerMove(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerMove"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_move:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setPointerMoveCapture(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onPointerMoveCapture"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    sget v0, Lcom/facebook/react/R$id;->pointer_move_capture:I
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setRenderToHardwareTexture(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "renderToHardwareTextureAndroid"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x2
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p2, 0x0
+
+    :goto_0
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p2, v0}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
+    return-void
+.end method
+
+.method public setResponderEnd(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderEnd"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderGrant(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderGrant"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderMove(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderMove"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderReject(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderReject"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderRelease(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderRelease"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderStart(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderStart"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderTerminate(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderTerminate"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setResponderTerminationRequest(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onResponderTerminationRequest"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setRotation(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "rotation"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setRotation(F)V
+
+    return-void
+.end method
+
+.method public setScaleX(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        defaultFloat = 1.0f
+        name = "scaleX"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleX(F)V
+
+    return-void
+.end method
+
+.method public setScaleY(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        defaultFloat = 1.0f
+        name = "scaleY"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
+
+    return-void
+.end method
+
+.method public setShadowColor(Landroid/view/View;I)V
+    .locals 2
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        customType = "Color"
+        defaultInt = -0x1000000
+        name = "shadowColor"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;I)V"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x1c
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/a;->a(Landroid/view/View;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/b;->a(Landroid/view/View;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setShouldBlockNativeResponder(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onShouldBlockNativeResponder"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setStartShouldSetResponder(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onStartShouldSetResponder"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setStartShouldSetResponderCapture(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onStartShouldSetResponderCapture"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setTestId(Landroid/view/View;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "testID"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Lcom/facebook/react/R$id;->react_test_id:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1, p2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setTouchCancel(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onTouchCancel"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setTouchEnd(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onTouchEnd"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setTouchMove(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onTouchMove"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setTouchStart(Landroid/view/View;Z)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "onTouchStart"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;Z)V"
+        }
+    .end annotation
+
+    return-void
+.end method
+
+.method public setTransform(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "transform"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableArray;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lcom/facebook/react/uimanager/BaseViewManager;->resetTransformProperty(Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/BaseViewManager;->setTransformProperty(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
+
+    .line 8
+    .line 9
+    .line 10
+    :goto_0
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public setTranslateX(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        defaultFloat = 0.0f
+        name = "translateX"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setTranslationX(F)V
+
+    return-void
+.end method
+
+.method public setTranslateY(Landroid/view/View;F)V
+    .locals 0
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        defaultFloat = 0.0f
+        name = "translateY"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;F)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->setTranslationY(F)V
+
+    return-void
+.end method
+
+.method public setViewState(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 4
+    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
+        name = "accessibilityState"
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/facebook/react/bridge/ReadableMap;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    const-string v0, "selected"
+
+    .line 5
+    .line 6
+    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v1
+
+    .line 10
+    if-eqz v1, :cond_1
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Landroid/view/View;->isSelected()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->getBoolean(Ljava/lang/String;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    invoke-virtual {p1, v0}, Landroid/view/View;->setSelected(Z)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityFocused()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v2
+
+    .line 27
+    if-eqz v2, :cond_2
+
+    .line 28
+    .line 29
+    if-eqz v1, :cond_2
+
+    .line 30
+    .line 31
+    if-nez v0, :cond_2
+
+    .line 32
+    .line 33
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    sget v1, Lcom/facebook/react/R$string;->state_unselected_description:I
+
+    .line 38
+    .line 39
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    invoke-virtual {p1, v0}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 48
+    invoke-virtual {p1, v0}, Landroid/view/View;->setSelected(Z)V
 
     .line 49
     .line 50
     .line 51
-    move-result-object v2
+    :cond_2
+    :goto_0
+    sget v0, Lcom/facebook/react/R$id;->accessibility_state:I
 
     .line 52
-    const-string v6, "topPointerDown"
-
     .line 53
-    .line 54
-    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
+    .line 54
     .line 55
     .line 56
-    .line 57
-    move-result-object v1
+    const-string v0, "disabled"
 
+    .line 57
     .line 58
-    const-string v6, "bubbled"
+    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     .line 59
     .line 60
-    const-string v7, "onPointerEnter"
-
     .line 61
+    move-result v1
+
     .line 62
-    const-string v8, "captured"
+    const/4 v2, 0x1
 
     .line 63
+    if-eqz v1, :cond_3
+
     .line 64
-    const-string v9, "onPointerEnterCapture"
-
     .line 65
-    .line 66
-    const-string v10, "skipBubbling"
+    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->getBoolean(Ljava/lang/String;)Z
 
+    .line 66
     .line 67
     .line 68
-    sget-object v16, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    move-result v0
 
     .line 69
+    if-nez v0, :cond_3
+
     .line 70
-    move-object/from16 v11, v16
-
     .line 71
-    .line 72
-    invoke-static/range {v6 .. v11}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
 
+    .line 72
     .line 73
     .line 74
+    :cond_3
+    invoke-interface {p2}, Lcom/facebook/react/bridge/ReadableMap;->keySetIterator()Lcom/facebook/react/bridge/ReadableMapKeySetIterator;
+
     .line 75
-    move-result-object v2
-
     .line 76
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
     .line 77
+    move-result-object v0
+
     .line 78
+    :cond_4
+    :goto_1
+    invoke-interface {v0}, Lcom/facebook/react/bridge/ReadableMapKeySetIterator;->hasNextKey()Z
+
     .line 79
-    move-result-object v2
-
     .line 80
-    const-string v6, "topPointerEnter"
-
     .line 81
+    move-result v1
+
     .line 82
-    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+    if-eqz v1, :cond_7
 
     .line 83
     .line 84
+    invoke-interface {v0}, Lcom/facebook/react/bridge/ReadableMapKeySetIterator;->nextKey()Ljava/lang/String;
+
     .line 85
+    .line 86
+    .line 87
     move-result-object v1
 
-    .line 86
-    const-string v11, "bubbled"
-
-    .line 87
     .line 88
-    const-string v12, "onPointerLeave"
+    const-string v3, "busy"
 
     .line 89
     .line 90
-    const-string v13, "captured"
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 91
     .line 92
-    const-string v14, "onPointerLeaveCapture"
-
     .line 93
+    move-result v3
+
     .line 94
-    const-string v15, "skipBubbling"
+    if-nez v3, :cond_6
 
     .line 95
     .line 96
-    invoke-static/range {v11 .. v16}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    const-string v3, "expanded"
 
     .line 97
     .line 98
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 99
-    move-result-object v2
-
     .line 100
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
     .line 101
-    .line 102
-    .line 103
-    move-result-object v2
+    move-result v3
 
+    .line 102
+    if-nez v3, :cond_6
+
+    .line 103
     .line 104
-    const-string v6, "topPointerLeave"
+    const-string v3, "checked"
 
     .line 105
     .line 106
-    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 107
     .line 108
     .line 109
-    move-result-object v1
+    move-result v1
 
     .line 110
-    const-string v2, "onPointerMove"
+    if-eqz v1, :cond_5
 
     .line 111
     .line 112
-    const-string v6, "onPointerMoveCapture"
+    invoke-interface {p2, v3}, Lcom/facebook/react/bridge/ReadableMap;->getType(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableType;
 
     .line 113
     .line 114
-    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
     .line 115
-    .line 116
-    .line 117
-    move-result-object v2
+    move-result-object v1
 
+    .line 116
+    sget-object v3, Lcom/facebook/react/bridge/ReadableType;->String:Lcom/facebook/react/bridge/ReadableType;
+
+    .line 117
     .line 118
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    if-ne v1, v3, :cond_5
 
     .line 119
     .line 120
+    goto :goto_2
+
     .line 121
-    move-result-object v2
+    :cond_5
+    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityFocused()Z
 
     .line 122
-    const-string v6, "topPointerMove"
-
     .line 123
     .line 124
-    invoke-virtual {v1, v6, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
+    move-result v1
 
     .line 125
+    if-eqz v1, :cond_4
+
     .line 126
     .line 127
-    move-result-object v1
+    invoke-virtual {p1, v2}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     .line 128
-    const-string v2, "onPointerUp"
-
     .line 129
     .line 130
-    const-string v6, "onPointerUpCapture"
+    goto :goto_1
 
     .line 131
-    .line 132
-    invoke-static {v4, v2, v5, v6}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    :cond_6
+    :goto_2
+    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
 
+    .line 132
     .line 133
     .line 134
+    :cond_7
+    return-void
     .line 135
-    move-result-object v2
-
     .line 136
-    invoke-static {v3, v2}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
     .line 137
     .line 138
     .line 139
-    move-result-object v2
-
     .line 140
-    const-string v3, "topPointerUp"
-
     .line 141
     .line 142
-    invoke-virtual {v1, v3, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
-
     .line 143
     .line 144
     .line 145
-    move-result-object v1
-
     .line 146
-    invoke-virtual {v1}, Lcom/facebook/react/common/MapBuilder$Builder;->build()Ljava/util/Map;
-
     .line 147
     .line 148
     .line 149
-    move-result-object v1
-
     .line 150
-    invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
-
     .line 151
     .line 152
     .line 153
-    return-object v0
     .line 154
     .line 155
     .line 156
@@ -3612,4478 +7616,46 @@
     .line 790
     .line 791
     .line 792
-.end method
-
-.method public getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-super {p0}, Lcom/facebook/react/uimanager/ViewManager;->getExportedCustomDirectEventTypeConstants()Ljava/util/Map;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    new-instance v0, Ljava/util/HashMap;
-
-    .line 8
-    .line 9
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    invoke-static {}, Lcom/facebook/react/common/MapBuilder;->builder()Lcom/facebook/react/common/MapBuilder$Builder;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v1
-
-    .line 16
-    const-string v2, "registrationName"
-
-    .line 17
-    .line 18
-    const-string v3, "onAccessibilityAction"
-
-    .line 19
-    .line 20
-    invoke-static {v2, v3}, Lcom/facebook/react/common/MapBuilder;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v2
-
-    .line 24
-    const-string v3, "topAccessibilityAction"
-
-    .line 25
-    .line 26
-    invoke-virtual {v1, v3, v2}, Lcom/facebook/react/common/MapBuilder$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/facebook/react/common/MapBuilder$Builder;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v1
-
-    .line 30
-    invoke-virtual {v1}, Lcom/facebook/react/common/MapBuilder$Builder;->build()Ljava/util/Map;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
-
-    .line 34
-    invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
-
-    .line 35
-    .line 36
-    .line 37
-    return-object v0
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-.end method
-
-.method protected onAfterUpdateTransaction(Landroid/view/View;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/facebook/react/uimanager/ViewManager;->onAfterUpdateTransaction(Landroid/view/View;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewAccessibility(Landroid/view/View;)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-.end method
-
-.method protected prepareToRecycleView(Lcom/facebook/react/uimanager/ThemedReactContext;Landroid/view/View;)Landroid/view/View;
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/facebook/react/uimanager/ThemedReactContext;",
-            "TT;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    sget p1, Lcom/facebook/react/R$id;->pointer_enter:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 5
-    .line 6
-    .line 7
-    sget p1, Lcom/facebook/react/R$id;->pointer_leave:I
-
-    .line 8
-    .line 9
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 10
-    .line 11
-    .line 12
-    sget p1, Lcom/facebook/react/R$id;->pointer_move:I
-
-    .line 13
-    .line 14
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 15
-    .line 16
-    .line 17
-    sget p1, Lcom/facebook/react/R$id;->react_test_id:I
-
-    .line 18
-    .line 19
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 20
-    .line 21
-    .line 22
-    sget p1, Lcom/facebook/react/R$id;->view_tag_native_id:I
-
-    .line 23
-    .line 24
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 25
-    .line 26
-    .line 27
-    sget p1, Lcom/facebook/react/R$id;->labelled_by:I
-
-    .line 28
-    .line 29
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 30
-    .line 31
-    .line 32
-    sget p1, Lcom/facebook/react/R$id;->accessibility_label:I
-
-    .line 33
-    .line 34
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 35
-    .line 36
-    .line 37
-    sget p1, Lcom/facebook/react/R$id;->accessibility_hint:I
-
-    .line 38
-    .line 39
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 40
-    .line 41
-    .line 42
-    sget p1, Lcom/facebook/react/R$id;->accessibility_role:I
-
-    .line 43
-    .line 44
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 45
-    .line 46
-    .line 47
-    sget p1, Lcom/facebook/react/R$id;->accessibility_state:I
-
-    .line 48
-    .line 49
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 50
-    .line 51
-    .line 52
-    sget p1, Lcom/facebook/react/R$id;->accessibility_actions:I
-
-    .line 53
-    .line 54
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 55
-    .line 56
-    .line 57
-    sget p1, Lcom/facebook/react/R$id;->accessibility_value:I
-
-    .line 58
-    .line 59
-    invoke-virtual {p2, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {p0, p2, v0}, Lcom/facebook/react/uimanager/BaseViewManager;->setTransform(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
-
-    .line 63
-    .line 64
-    .line 65
-    const/4 p1, 0x0
-
-    .line 66
-    invoke-virtual {p2, p1}, Landroid/view/View;->setPivotX(F)V
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {p2, p1}, Landroid/view/View;->setPivotY(F)V
-
-    .line 70
-    .line 71
-    .line 72
-    const/4 v1, 0x0
-
-    .line 73
-    invoke-virtual {p2, v1}, Landroid/view/View;->setTop(I)V
-
-    .line 74
-    .line 75
-    .line 76
-    invoke-virtual {p2, v1}, Landroid/view/View;->setBottom(I)V
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-virtual {p2, v1}, Landroid/view/View;->setLeft(I)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {p2, v1}, Landroid/view/View;->setRight(I)V
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-virtual {p2, p1}, Landroid/view/View;->setElevation(F)V
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-static {p2, v0}, Landroidx/transition/t0;->a(Landroid/view/View;Landroid/graphics/Matrix;)V
-
-    .line 89
-    .line 90
-    .line 91
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 92
-    .line 93
-    const/16 v3, 0x1c
-
-    .line 94
-    .line 95
-    if-lt v2, v3, :cond_0
-
-    .line 96
-    .line 97
-    const/high16 v2, -0x1000000
-
-    .line 98
-    .line 99
-    invoke-static {p2, v2}, Lcom/facebook/react/uimanager/a;->a(Landroid/view/View;I)V
-
-    .line 100
-    .line 101
-    .line 102
-    invoke-static {p2, v2}, Lcom/facebook/react/uimanager/b;->a(Landroid/view/View;I)V
-
-    .line 103
-    .line 104
-    .line 105
-    :cond_0
-    const/4 v2, -0x1
-
-    .line 106
-    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusDownId(I)V
-
-    .line 107
-    .line 108
-    .line 109
-    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusForwardId(I)V
-
-    .line 110
-    .line 111
-    .line 112
-    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusRightId(I)V
-
-    .line 113
-    .line 114
-    .line 115
-    invoke-virtual {p2, v2}, Landroid/view/View;->setNextFocusUpId(I)V
-
-    .line 116
-    .line 117
-    .line 118
-    invoke-virtual {p2, v1}, Landroid/view/View;->setFocusable(Z)V
-
-    .line 119
-    .line 120
-    .line 121
-    invoke-virtual {p2, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {p2, p1}, Landroid/view/View;->setElevation(F)V
-
-    .line 125
-    .line 126
-    .line 127
-    const/high16 p1, 0x3f800000    # 1.0f
-
-    .line 128
-    .line 129
-    invoke-virtual {p2, p1}, Landroid/view/View;->setAlpha(F)V
-
-    .line 130
-    .line 131
-    .line 132
-    const/4 v3, 0x0
-
-    .line 133
-    const/4 v4, 0x0
-
-    .line 134
-    const/4 v5, 0x0
-
-    .line 135
-    const/4 v6, 0x0
-
-    .line 136
-    move-object v1, p0
-
-    .line 137
-    move-object v2, p2
-
-    .line 138
-    invoke-virtual/range {v1 .. v6}, Lcom/facebook/react/uimanager/ViewManager;->setPadding(Landroid/view/View;IIII)V
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-virtual {p2, v0}, Landroid/view/View;->setForeground(Landroid/graphics/drawable/Drawable;)V
-
-    .line 142
-    .line 143
-    .line 144
-    return-object p2
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setAccessibilityActions(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityActions"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableArray;",
-            ")V"
-        }
-    .end annotation
-
-    if-nez p2, :cond_0
-
-    return-void
-
-    :cond_0
-    sget v0, Lcom/facebook/react/R$id;->accessibility_actions:I
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setAccessibilityCollection(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityCollection"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableMap;",
-            ")V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->accessibility_collection:I
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setAccessibilityCollectionItem(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityCollectionItem"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableMap;",
-            ")V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->accessibility_collection_item:I
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setAccessibilityHint(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityHint"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Lcom/facebook/react/R$id;->accessibility_hint:I
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setAccessibilityLabel(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityLabel"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Lcom/facebook/react/R$id;->accessibility_label:I
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setAccessibilityLabelledBy(Landroid/view/View;Lcom/facebook/react/bridge/Dynamic;)V
-    .locals 2
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityLabelledBy"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/Dynamic;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->isNull()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    return-void
-
-    .line 8
-    :cond_0
-    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->String:Lcom/facebook/react/bridge/ReadableType;
-
-    .line 13
-    .line 14
-    if-ne v0, v1, :cond_1
-
-    .line 15
-    .line 16
-    sget v0, Lcom/facebook/react/R$id;->labelled_by:I
-
-    .line 17
-    .line 18
-    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->asString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p2
-
-    .line 22
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_1
-    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
-
-    .line 31
-    .line 32
-    if-ne v0, v1, :cond_2
-
-    .line 33
-    .line 34
-    sget v0, Lcom/facebook/react/R$id;->labelled_by:I
-
-    .line 35
-    .line 36
-    invoke-interface {p2}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object p2
-
-    .line 40
-    const/4 v1, 0x0
-
-    .line 41
-    invoke-interface {p2, v1}, Lcom/facebook/react/bridge/ReadableArray;->getString(I)Ljava/lang/String;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object p2
-
-    .line 45
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 46
-    .line 47
-    .line 48
-    :cond_2
-    :goto_0
-    return-void
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setAccessibilityLiveRegion(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityLiveRegion"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    if-eqz p2, :cond_2
-
-    .line 2
-    .line 3
-    const-string v0, "none"
-
-    .line 4
-    .line 5
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const-string v0, "polite"
-
-    .line 13
-    .line 14
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    if-eqz v0, :cond_1
-
-    .line 19
-    .line 20
-    const/4 p2, 0x1
-
-    .line 21
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    goto :goto_1
-
-    .line 25
-    :cond_1
-    const-string v0, "assertive"
-
-    .line 26
-    .line 27
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result p2
-
-    .line 31
-    if-eqz p2, :cond_3
-
-    .line 32
-    .line 33
-    const/4 p2, 0x2
-
-    .line 34
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
-
-    .line 35
-    .line 36
-    .line 37
-    goto :goto_1
-
-    .line 38
-    :cond_2
-    :goto_0
-    const/4 p2, 0x0
-
-    .line 39
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->s0(Landroid/view/View;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    :cond_3
-    :goto_1
-    return-void
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setAccessibilityRole(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityRole"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    if-nez p2, :cond_0
-
-    return-void
-
-    :cond_0
-    sget v0, Lcom/facebook/react/R$id;->accessibility_role:I
-
-    invoke-static {p2}, Lcom/facebook/react/uimanager/ReactAccessibilityDelegate$AccessibilityRole;->fromValue(Ljava/lang/String;)Lcom/facebook/react/uimanager/ReactAccessibilityDelegate$AccessibilityRole;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setAccessibilityValue(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityValue"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableMap;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    if-nez p2, :cond_0
-
-    .line 2
-    .line 3
-    return-void
-
-    .line 4
-    :cond_0
-    sget v0, Lcom/facebook/react/R$id;->accessibility_value:I
-
-    .line 5
-    .line 6
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const-string v0, "text"
-
-    .line 10
-    .line 11
-    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p2
-
-    .line 15
-    if-eqz p2, :cond_1
-
-    .line 16
-    .line 17
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
-
-    .line 18
-    .line 19
-    .line 20
-    :cond_1
-    return-void
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setBackgroundColor(Landroid/view/View;I)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        customType = "Color"
-        defaultInt = 0x0
-        name = "backgroundColor"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;I)V"
-        }
-    .end annotation
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setBackgroundColor(I)V
-
-    return-void
-.end method
-
-.method public setBorderBottomLeftRadius(Landroid/view/View;F)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string p1, "borderBottomLeftRadius"
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setBorderBottomRightRadius(Landroid/view/View;F)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string p1, "borderBottomRightRadius"
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setBorderRadius(Landroid/view/View;F)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string p1, "borderRadius"
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setBorderTopLeftRadius(Landroid/view/View;F)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string p1, "borderTopLeftRadius"
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setBorderTopRightRadius(Landroid/view/View;F)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string p1, "borderTopRightRadius"
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->logUnsupportedPropertyWarning(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setElevation(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "elevation"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
-
-    move-result p2
-
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->y0(Landroid/view/View;F)V
-
-    return-void
-.end method
-
-.method public setImportantForAccessibility(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "importantForAccessibility"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    if-eqz p2, :cond_3
-
-    .line 2
-    .line 3
-    const-string v0, "auto"
-
-    .line 4
-    .line 5
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const-string v0, "yes"
-
-    .line 13
-    .line 14
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    if-eqz v0, :cond_1
-
-    .line 19
-    .line 20
-    const/4 p2, 0x1
-
-    .line 21
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    goto :goto_1
-
-    .line 25
-    :cond_1
-    const-string v0, "no"
-
-    .line 26
-    .line 27
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v0
-
-    .line 31
-    if-eqz v0, :cond_2
-
-    .line 32
-    .line 33
-    const/4 p2, 0x2
-
-    .line 34
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
-
-    .line 35
-    .line 36
-    .line 37
-    goto :goto_1
-
-    .line 38
-    :cond_2
-    const-string v0, "no-hide-descendants"
-
-    .line 39
-    .line 40
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result p2
-
-    .line 44
-    if-eqz p2, :cond_4
-
-    .line 45
-    .line 46
-    const/4 p2, 0x4
-
-    .line 47
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
-
-    .line 48
-    .line 49
-    .line 50
-    goto :goto_1
-
-    .line 51
-    :cond_3
-    :goto_0
-    const/4 p2, 0x0
-
-    .line 52
-    invoke-static {p1, p2}, Landroidx/core/view/w0;->A0(Landroid/view/View;I)V
-
-    .line 53
-    .line 54
-    .line 55
-    :cond_4
-    :goto_1
-    return-void
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setMoveShouldSetResponder(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onMoveShouldSetResponder"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setMoveShouldSetResponderCapture(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onMoveShouldSetResponderCapture"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setNativeId(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "nativeID"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Lcom/facebook/react/R$id;->view_tag_native_id:I
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p1}, Lcom/facebook/react/uimanager/util/ReactFindViewUtil;->notifyViewRendered(Landroid/view/View;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setOpacity(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 1.0f
-        name = "opacity"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
-
-    return-void
-.end method
-
-.method public setPointerEnter(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerEnter"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_enter:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setPointerEnterCapture(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerEnterCapture"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_enter_capture:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setPointerLeave(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerLeave"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_leave:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setPointerLeaveCapture(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerLeaveCapture"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_leave_capture:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setPointerMove(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerMove"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_move:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setPointerMoveCapture(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onPointerMoveCapture"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    sget v0, Lcom/facebook/react/R$id;->pointer_move_capture:I
-
-    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p2
-
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public setRenderToHardwareTexture(Landroid/view/View;Z)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "renderToHardwareTextureAndroid"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    if-eqz p2, :cond_0
-
-    const/4 p2, 0x2
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, p2, v0}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
-
-    return-void
-.end method
-
-.method public setResponderEnd(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderEnd"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderGrant(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderGrant"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderMove(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderMove"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderReject(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderReject"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderRelease(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderRelease"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderStart(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderStart"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderTerminate(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderTerminate"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setResponderTerminationRequest(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onResponderTerminationRequest"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setRotation(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "rotation"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setRotation(F)V
-
-    return-void
-.end method
-
-.method public setScaleX(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 1.0f
-        name = "scaleX"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleX(F)V
-
-    return-void
-.end method
-
-.method public setScaleY(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 1.0f
-        name = "scaleY"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
-
-    return-void
-.end method
-
-.method public setShadowColor(Landroid/view/View;I)V
-    .locals 2
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        customType = "Color"
-        defaultInt = -0x1000000
-        name = "shadowColor"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;I)V"
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 2
-    .line 3
-    const/16 v1, 0x1c
-
-    .line 4
-    .line 5
-    if-lt v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/a;->a(Landroid/view/View;I)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/b;->a(Landroid/view/View;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    :cond_0
-    return-void
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setShouldBlockNativeResponder(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onShouldBlockNativeResponder"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setStartShouldSetResponder(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onStartShouldSetResponder"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setStartShouldSetResponderCapture(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onStartShouldSetResponderCapture"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setTestId(Landroid/view/View;Ljava/lang/String;)V
-    .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "testID"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Lcom/facebook/react/R$id;->react_test_id:I
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p1, p2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setTouchCancel(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onTouchCancel"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setTouchEnd(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onTouchEnd"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setTouchMove(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onTouchMove"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setTouchStart(Landroid/view/View;Z)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "onTouchStart"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;Z)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public setTransform(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "transform"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableArray;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    if-nez p2, :cond_0
-
-    .line 2
-    .line 3
-    invoke-static {p1}, Lcom/facebook/react/uimanager/BaseViewManager;->resetTransformProperty(Landroid/view/View;)V
-
-    .line 4
-    .line 5
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    invoke-static {p1, p2}, Lcom/facebook/react/uimanager/BaseViewManager;->setTransformProperty(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
-
-    .line 8
-    .line 9
-    .line 10
-    :goto_0
-    return-void
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-.end method
-
-.method public setTranslateX(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 0.0f
-        name = "translateX"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
-
-    move-result p2
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setTranslationX(F)V
-
-    return-void
-.end method
-
-.method public setTranslateY(Landroid/view/View;F)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 0.0f
-        name = "translateY"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    invoke-static {p2}, Lcom/facebook/react/uimanager/PixelUtil;->toPixelFromDIP(F)F
-
-    move-result p2
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->setTranslationY(F)V
-
-    return-void
-.end method
-
-.method public setViewState(Landroid/view/View;Lcom/facebook/react/bridge/ReadableMap;)V
-    .locals 4
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "accessibilityState"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lcom/facebook/react/bridge/ReadableMap;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    if-nez p2, :cond_0
-
-    .line 2
-    .line 3
-    return-void
-
-    .line 4
-    :cond_0
-    const-string v0, "selected"
-
-    .line 5
-    .line 6
-    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v1
-
-    .line 10
-    if-eqz v1, :cond_1
-
-    .line 11
-    .line 12
-    invoke-virtual {p1}, Landroid/view/View;->isSelected()Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v1
-
-    .line 16
-    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->getBoolean(Ljava/lang/String;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    move-result v0
-
-    .line 20
-    invoke-virtual {p1, v0}, Landroid/view/View;->setSelected(Z)V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityFocused()Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v2
-
-    .line 27
-    if-eqz v2, :cond_2
-
-    .line 28
-    .line 29
-    if-eqz v1, :cond_2
-
-    .line 30
-    .line 31
-    if-nez v0, :cond_2
-
-    .line 32
-    .line 33
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    sget v1, Lcom/facebook/react/R$string;->state_unselected_description:I
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-virtual {p1, v0}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
-
-    .line 44
-    .line 45
-    .line 46
-    goto :goto_0
-
-    .line 47
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 48
-    invoke-virtual {p1, v0}, Landroid/view/View;->setSelected(Z)V
-
-    .line 49
-    .line 50
-    .line 51
-    :cond_2
-    :goto_0
-    sget v0, Lcom/facebook/react/R$id;->accessibility_state:I
-
-    .line 52
-    .line 53
-    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 54
-    .line 55
-    .line 56
-    const-string v0, "disabled"
-
-    .line 57
-    .line 58
-    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
-
-    .line 59
-    .line 60
-    .line 61
-    move-result v1
-
-    .line 62
-    const/4 v2, 0x1
-
-    .line 63
-    if-eqz v1, :cond_3
-
-    .line 64
-    .line 65
-    invoke-interface {p2, v0}, Lcom/facebook/react/bridge/ReadableMap;->getBoolean(Ljava/lang/String;)Z
-
-    .line 66
-    .line 67
-    .line 68
-    move-result v0
-
-    .line 69
-    if-nez v0, :cond_3
-
-    .line 70
-    .line 71
-    invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 72
-    .line 73
-    .line 74
-    :cond_3
-    invoke-interface {p2}, Lcom/facebook/react/bridge/ReadableMap;->keySetIterator()Lcom/facebook/react/bridge/ReadableMapKeySetIterator;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v0
-
-    .line 78
-    :cond_4
-    :goto_1
-    invoke-interface {v0}, Lcom/facebook/react/bridge/ReadableMapKeySetIterator;->hasNextKey()Z
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v1
-
-    .line 82
-    if-eqz v1, :cond_7
-
-    .line 83
-    .line 84
-    invoke-interface {v0}, Lcom/facebook/react/bridge/ReadableMapKeySetIterator;->nextKey()Ljava/lang/String;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v1
-
-    .line 88
-    const-string v3, "busy"
-
-    .line 89
-    .line 90
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v3
-
-    .line 94
-    if-nez v3, :cond_6
-
-    .line 95
-    .line 96
-    const-string v3, "expanded"
-
-    .line 97
-    .line 98
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 99
-    .line 100
-    .line 101
-    move-result v3
-
-    .line 102
-    if-nez v3, :cond_6
-
-    .line 103
-    .line 104
-    const-string v3, "checked"
-
-    .line 105
-    .line 106
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 107
-    .line 108
-    .line 109
-    move-result v1
-
-    .line 110
-    if-eqz v1, :cond_5
-
-    .line 111
-    .line 112
-    invoke-interface {p2, v3}, Lcom/facebook/react/bridge/ReadableMap;->getType(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableType;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v1
-
-    .line 116
-    sget-object v3, Lcom/facebook/react/bridge/ReadableType;->String:Lcom/facebook/react/bridge/ReadableType;
-
-    .line 117
-    .line 118
-    if-ne v1, v3, :cond_5
-
-    .line 119
-    .line 120
-    goto :goto_2
-
-    .line 121
-    :cond_5
-    invoke-virtual {p1}, Landroid/view/View;->isAccessibilityFocused()Z
-
-    .line 122
-    .line 123
-    .line 124
-    move-result v1
-
-    .line 125
-    if-eqz v1, :cond_4
-
-    .line 126
-    .line 127
-    invoke-virtual {p1, v2}, Landroid/view/View;->sendAccessibilityEvent(I)V
-
-    .line 128
-    .line 129
-    .line 130
-    goto :goto_1
-
-    .line 131
-    :cond_6
-    :goto_2
-    invoke-direct {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->updateViewContentDescription(Landroid/view/View;)V
-
-    .line 132
-    .line 133
-    .line 134
-    :cond_7
-    return-void
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
+    .line 793
+    .line 794
+    .line 795
+    .line 796
+    .line 797
+    .line 798
+    .line 799
+    .line 800
+    .line 801
+    .line 802
+    .line 803
+    .line 804
+    .line 805
+    .line 806
+    .line 807
+    .line 808
+    .line 809
+    .line 810
+    .line 811
+    .line 812
+    .line 813
+    .line 814
+    .line 815
+    .line 816
+    .line 817
+    .line 818
+    .line 819
+    .line 820
+    .line 821
+    .line 822
+    .line 823
+    .line 824
+    .line 825
+    .line 826
+    .line 827
+    .line 828
+    .line 829
+    .line 830
+    .line 831
+    .line 832
 .end method
 
 .method public setZIndex(Landroid/view/View;F)V
@@ -8211,76 +7783,4 @@
     .line 91
     .line 92
     .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
 .end method

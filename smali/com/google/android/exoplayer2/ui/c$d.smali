@@ -179,8 +179,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method static synthetic a(Lcom/google/android/exoplayer2/ui/c$d;)Ljava/util/List;

@@ -488,6 +488,21 @@
     .line 383
     .line 384
     .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
 .end method
 
 .method public static synthetic copy$default(Lcom/discord/sticker/sticker_types/RLottieImageView$Config;Ljava/lang/String;ZIILjava/lang/String;IILjava/lang/Object;)Lcom/discord/sticker/sticker_types/RLottieImageView$Config;

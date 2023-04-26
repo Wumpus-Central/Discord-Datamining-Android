@@ -268,17 +268,6 @@
     .line 200
     .line 201
     .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
 .end method
 
 .method public static final setOptionalReactImageUrl(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/String;)V
@@ -531,17 +520,6 @@
     .line 200
     .line 201
     .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
 .end method
 
 .method public static final setReactAsset(Lcom/facebook/drawee/view/SimpleDraweeView;Lcom/discord/react_asset_fetcher/ReactAsset;)V
@@ -772,17 +750,6 @@
     .line 200
     .line 201
     .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
 .end method
 
 .method public static final setReactIcon(Lcom/google/android/material/button/MaterialButton;Ljava/lang/String;I)V
@@ -1182,31 +1149,6 @@
     .line 357
     .line 358
     .line 359
-    .line 360
-    .line 361
-    .line 362
-    .line 363
-    .line 364
-    .line 365
-    .line 366
-    .line 367
-    .line 368
-    .line 369
-    .line 370
-    .line 371
-    .line 372
-    .line 373
-    .line 374
-    .line 375
-    .line 376
-    .line 377
-    .line 378
-    .line 379
-    .line 380
-    .line 381
-    .line 382
-    .line 383
-    .line 384
 .end method
 
 .method public static synthetic setReactIcon$default(Lcom/google/android/material/button/MaterialButton;Ljava/lang/String;IILjava/lang/Object;)V
@@ -1452,15 +1394,4 @@
     .line 200
     .line 201
     .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
 .end method

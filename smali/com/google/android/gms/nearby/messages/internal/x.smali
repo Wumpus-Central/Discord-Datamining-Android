@@ -73,204 +73,96 @@
     .line 1
     invoke-direct {p0}, Lx9/a;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
     iput p1, p0, Lcom/google/android/gms/nearby/messages/internal/x;->k:I
 
-    .line 5
-    .line 6
     iput-object p2, p0, Lcom/google/android/gms/nearby/messages/internal/x;->l:Lya/f;
 
-    .line 7
-    .line 8
     iput-object p3, p0, Lcom/google/android/gms/nearby/messages/internal/x;->m:Lxa/i;
 
-    .line 9
-    .line 10
     const/4 p1, 0x0
 
-    .line 11
     if-nez p4, :cond_0
 
-    .line 12
-    .line 13
     move-object p2, p1
 
-    .line 14
     goto :goto_0
 
-    .line 15
     :cond_0
     const-string p2, "com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback"
 
-    .line 16
-    .line 17
+    .line 2
     invoke-interface {p4, p2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
-    .line 18
-    .line 19
-    .line 20
     move-result-object p2
 
-    .line 21
+    .line 3
     instance-of p3, p2, Lya/r;
 
-    .line 22
-    .line 23
     if-eqz p3, :cond_1
 
-    .line 24
-    .line 25
+    .line 4
     check-cast p2, Lya/r;
 
-    .line 26
-    .line 27
     goto :goto_0
 
-    .line 28
     :cond_1
     new-instance p2, Lcom/google/android/gms/nearby/messages/internal/j0;
 
-    .line 29
-    .line 30
     invoke-direct {p2, p4}, Lcom/google/android/gms/nearby/messages/internal/j0;-><init>(Landroid/os/IBinder;)V
 
-    .line 31
-    .line 32
-    .line 33
+    .line 5
     :goto_0
     iput-object p2, p0, Lcom/google/android/gms/nearby/messages/internal/x;->n:Lya/r;
 
-    .line 34
-    .line 35
     iput-object p5, p0, Lcom/google/android/gms/nearby/messages/internal/x;->o:Ljava/lang/String;
 
-    .line 36
-    .line 37
     iput-object p6, p0, Lcom/google/android/gms/nearby/messages/internal/x;->p:Ljava/lang/String;
 
-    .line 38
-    .line 39
     iput-boolean p7, p0, Lcom/google/android/gms/nearby/messages/internal/x;->q:Z
 
-    .line 40
-    .line 41
     if-nez p8, :cond_2
 
-    .line 42
-    .line 43
     goto :goto_1
 
-    .line 44
     :cond_2
     const-string p1, "com.google.android.gms.nearby.messages.internal.IPublishCallback"
 
-    .line 45
-    .line 46
+    .line 6
     invoke-interface {p8, p1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
-    .line 47
-    .line 48
-    .line 49
     move-result-object p1
 
-    .line 50
+    .line 7
     instance-of p2, p1, Lya/t;
 
-    .line 51
-    .line 52
     if-eqz p2, :cond_3
 
-    .line 53
-    .line 54
+    .line 8
     check-cast p1, Lya/t;
 
-    .line 55
-    .line 56
     goto :goto_1
 
-    .line 57
     :cond_3
     new-instance p1, Lcom/google/android/gms/nearby/messages/internal/l0;
 
-    .line 58
-    .line 59
     invoke-direct {p1, p8}, Lcom/google/android/gms/nearby/messages/internal/l0;-><init>(Landroid/os/IBinder;)V
 
-    .line 60
-    .line 61
-    .line 62
+    .line 9
     :goto_1
     iput-object p1, p0, Lcom/google/android/gms/nearby/messages/internal/x;->r:Lya/t;
 
-    .line 63
-    .line 64
     iput-boolean p9, p0, Lcom/google/android/gms/nearby/messages/internal/x;->s:Z
 
-    .line 65
-    .line 66
+    .line 10
     invoke-static {p10, p6, p5, p9}, Lcom/google/android/gms/nearby/messages/internal/ClientAppContext;->x(Lcom/google/android/gms/nearby/messages/internal/ClientAppContext;Ljava/lang/String;Ljava/lang/String;Z)Lcom/google/android/gms/nearby/messages/internal/ClientAppContext;
 
-    .line 67
-    .line 68
-    .line 69
     move-result-object p1
 
-    .line 70
     iput-object p1, p0, Lcom/google/android/gms/nearby/messages/internal/x;->t:Lcom/google/android/gms/nearby/messages/internal/ClientAppContext;
 
-    .line 71
-    .line 72
     iput p11, p0, Lcom/google/android/gms/nearby/messages/internal/x;->u:I
 
-    .line 73
-    .line 74
     return-void
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
 .end method
 
 
@@ -548,17 +440,4 @@
     .line 177
     .line 178
     .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
 .end method

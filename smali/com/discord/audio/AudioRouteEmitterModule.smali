@@ -1,5 +1,5 @@
 .class public final Lcom/discord/audio/AudioRouteEmitterModule;
-.super Lcom/discord/codegen/audio/NativeAudioRouteEmitterSpec;
+.super Lcom/discord/codegen/NativeAudioRouteEmitterSpec;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/audio/AudioRouteEmitterModule;",
-        "Lcom/discord/codegen/audio/NativeAudioRouteEmitterSpec;",
+        "Lcom/discord/codegen/NativeAudioRouteEmitterSpec;",
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -73,7 +73,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1}, Lcom/discord/codegen/audio/NativeAudioRouteEmitterSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {p0, p1}, Lcom/discord/codegen/NativeAudioRouteEmitterSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 7
     .line 8
