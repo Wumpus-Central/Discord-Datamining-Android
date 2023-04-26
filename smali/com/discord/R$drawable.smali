@@ -2413,855 +2413,857 @@
 
 .field public static final modules_contact_sync_native_images_headerart:I = 0x7f0804b6
 
-.field public static final modules_contact_sync_native_images_ic_contact_sync:I = 0x7f0804b7
+.field public static final modules_contact_sync_native_images_headerartonboarding:I = 0x7f0804b7
 
-.field public static final modules_contacts_images_iconaddfriend:I = 0x7f0804b8
+.field public static final modules_contact_sync_native_images_ic_contact_sync:I = 0x7f0804b8
 
-.field public static final modules_contacts_images_iconcopylink:I = 0x7f0804b9
+.field public static final modules_contacts_images_iconaddfriend:I = 0x7f0804b9
 
-.field public static final modules_create_guild_native_images_img_artists_creators:I = 0x7f0804ba
+.field public static final modules_contacts_images_iconcopylink:I = 0x7f0804ba
 
-.field public static final modules_create_guild_native_images_img_clubs:I = 0x7f0804bb
+.field public static final modules_create_guild_native_images_img_artists_creators:I = 0x7f0804bb
 
-.field public static final modules_create_guild_native_images_img_create_my_own:I = 0x7f0804bc
+.field public static final modules_create_guild_native_images_img_clubs:I = 0x7f0804bc
 
-.field public static final modules_create_guild_native_images_img_friends:I = 0x7f0804bd
+.field public static final modules_create_guild_native_images_img_create_my_own:I = 0x7f0804bd
 
-.field public static final modules_create_guild_native_images_img_gaming:I = 0x7f0804be
+.field public static final modules_create_guild_native_images_img_friends:I = 0x7f0804be
 
-.field public static final modules_create_guild_native_images_img_local_community:I = 0x7f0804bf
+.field public static final modules_create_guild_native_images_img_gaming:I = 0x7f0804bf
 
-.field public static final modules_create_guild_native_images_img_study:I = 0x7f0804c0
+.field public static final modules_create_guild_native_images_img_local_community:I = 0x7f0804c0
 
-.field public static final modules_create_guild_native_images_invitewumpusticket:I = 0x7f0804c1
+.field public static final modules_create_guild_native_images_img_study:I = 0x7f0804c1
 
-.field public static final modules_creator_monetization_eligibility_new_terms_native_assets_new_terms_bullet:I = 0x7f0804c2
+.field public static final modules_create_guild_native_images_invitewumpusticket:I = 0x7f0804c2
 
-.field public static final modules_creator_monetization_eligibility_new_terms_native_assets_new_terms_hero:I = 0x7f0804c3
+.field public static final modules_creator_monetization_eligibility_new_terms_native_assets_new_terms_bullet:I = 0x7f0804c3
 
-.field public static final modules_directory_channels_native_images_add:I = 0x7f0804c4
+.field public static final modules_creator_monetization_eligibility_new_terms_native_assets_new_terms_hero:I = 0x7f0804c4
 
-.field public static final modules_directory_channels_native_images_add_server:I = 0x7f0804c5
+.field public static final modules_directory_channels_native_images_add:I = 0x7f0804c5
 
-.field public static final modules_directory_channels_native_images_checked:I = 0x7f0804c6
+.field public static final modules_directory_channels_native_images_add_server:I = 0x7f0804c6
 
-.field public static final modules_directory_channels_native_images_down_arrow:I = 0x7f0804c7
+.field public static final modules_directory_channels_native_images_checked:I = 0x7f0804c7
 
-.field public static final modules_directory_channels_native_images_hub_header:I = 0x7f0804c8
+.field public static final modules_directory_channels_native_images_down_arrow:I = 0x7f0804c8
 
-.field public static final modules_directory_channels_native_images_invite:I = 0x7f0804c9
+.field public static final modules_directory_channels_native_images_hub_header:I = 0x7f0804c9
 
-.field public static final modules_directory_channels_native_images_more_horizontal:I = 0x7f0804ca
+.field public static final modules_directory_channels_native_images_invite:I = 0x7f0804ca
 
-.field public static final modules_directory_channels_native_images_pencil:I = 0x7f0804cb
+.field public static final modules_directory_channels_native_images_more_horizontal:I = 0x7f0804cb
 
-.field public static final modules_directory_channels_native_images_search_empty_state:I = 0x7f0804cc
+.field public static final modules_directory_channels_native_images_pencil:I = 0x7f0804cc
 
-.field public static final modules_directory_channels_native_images_trash:I = 0x7f0804cd
+.field public static final modules_directory_channels_native_images_search_empty_state:I = 0x7f0804cd
 
-.field public static final modules_discover_native_images_discovery_header:I = 0x7f0804ce
+.field public static final modules_directory_channels_native_images_trash:I = 0x7f0804ce
 
-.field public static final modules_discover_native_images_discovery_header_ipad:I = 0x7f0804cf
+.field public static final modules_discover_native_images_discovery_header:I = 0x7f0804cf
 
-.field public static final modules_emoji_picker_native_images_alert:I = 0x7f0804d0
+.field public static final modules_discover_native_images_discovery_header_ipad:I = 0x7f0804d0
 
-.field public static final modules_emoji_picker_native_images_coffee:I = 0x7f0804d1
+.field public static final modules_emoji_picker_native_images_alert:I = 0x7f0804d1
 
-.field public static final modules_emoji_picker_native_images_flag:I = 0x7f0804d2
+.field public static final modules_emoji_picker_native_images_coffee:I = 0x7f0804d2
 
-.field public static final modules_emoji_picker_native_images_games:I = 0x7f0804d3
+.field public static final modules_emoji_picker_native_images_flag:I = 0x7f0804d3
 
-.field public static final modules_emoji_picker_native_images_heart:I = 0x7f0804d4
+.field public static final modules_emoji_picker_native_images_games:I = 0x7f0804d4
 
-.field public static final modules_emoji_picker_native_images_history:I = 0x7f0804d5
+.field public static final modules_emoji_picker_native_images_heart:I = 0x7f0804d5
 
-.field public static final modules_emoji_picker_native_images_leaf:I = 0x7f0804d6
+.field public static final modules_emoji_picker_native_images_history:I = 0x7f0804d6
 
-.field public static final modules_emoji_picker_native_images_nitro:I = 0x7f0804d7
+.field public static final modules_emoji_picker_native_images_leaf:I = 0x7f0804d7
 
-.field public static final modules_emoji_picker_native_images_popsicle:I = 0x7f0804d8
+.field public static final modules_emoji_picker_native_images_nitro:I = 0x7f0804d8
 
-.field public static final modules_emoji_picker_native_images_smile:I = 0x7f0804d9
+.field public static final modules_emoji_picker_native_images_popsicle:I = 0x7f0804d9
 
-.field public static final modules_emoji_picker_native_images_submarine:I = 0x7f0804da
+.field public static final modules_emoji_picker_native_images_smile:I = 0x7f0804da
 
-.field public static final modules_expression_suggestions_native_images_lockedpack:I = 0x7f0804db
+.field public static final modules_emoji_picker_native_images_submarine:I = 0x7f0804db
 
-.field public static final modules_forums_native_images_ic_chat_bubble_12px:I = 0x7f0804dc
+.field public static final modules_expression_suggestions_native_images_lockedpack:I = 0x7f0804dc
 
-.field public static final modules_forums_native_images_ic_expression_plus:I = 0x7f0804dd
+.field public static final modules_forums_native_images_ic_chat_bubble_12px:I = 0x7f0804dd
 
-.field public static final modules_forums_native_images_ic_follow:I = 0x7f0804de
+.field public static final modules_forums_native_images_ic_expression_plus:I = 0x7f0804de
 
-.field public static final modules_forums_native_images_ic_following:I = 0x7f0804df
+.field public static final modules_forums_native_images_ic_follow:I = 0x7f0804df
 
-.field public static final modules_forums_native_images_ic_forum_channel:I = 0x7f0804e0
+.field public static final modules_forums_native_images_ic_following:I = 0x7f0804e0
 
-.field public static final modules_forums_native_images_ic_forum_channel_locked:I = 0x7f0804e1
+.field public static final modules_forums_native_images_ic_forum_channel:I = 0x7f0804e1
 
-.field public static final modules_forums_native_images_ic_forum_channel_nsfw:I = 0x7f0804e2
+.field public static final modules_forums_native_images_ic_forum_channel_locked:I = 0x7f0804e2
 
-.field public static final modules_forums_native_images_ic_forum_post:I = 0x7f0804e3
+.field public static final modules_forums_native_images_ic_forum_channel_nsfw:I = 0x7f0804e3
 
-.field public static final modules_forums_native_images_ic_forum_post_join:I = 0x7f0804e4
+.field public static final modules_forums_native_images_ic_forum_post:I = 0x7f0804e4
 
-.field public static final modules_forums_native_images_ic_tag:I = 0x7f0804e5
+.field public static final modules_forums_native_images_ic_forum_post_join:I = 0x7f0804e5
 
-.field public static final modules_forums_native_images_ic_upload:I = 0x7f0804e6
+.field public static final modules_forums_native_images_ic_tag:I = 0x7f0804e6
 
-.field public static final modules_forums_native_images_img_forum_empty_state_dark:I = 0x7f0804e7
+.field public static final modules_forums_native_images_ic_upload:I = 0x7f0804e7
 
-.field public static final modules_forums_native_images_img_forum_empty_state_light:I = 0x7f0804e8
+.field public static final modules_forums_native_images_img_forum_empty_state_dark:I = 0x7f0804e8
 
-.field public static final modules_game_console_images_connect_playstation_mobile:I = 0x7f0804e9
+.field public static final modules_forums_native_images_img_forum_empty_state_light:I = 0x7f0804e9
 
-.field public static final modules_game_console_images_devices_not_found:I = 0x7f0804ea
+.field public static final modules_game_console_images_connect_playstation_mobile:I = 0x7f0804ea
 
-.field public static final modules_game_console_images_ic_playstation_device_ps5_32px:I = 0x7f0804eb
+.field public static final modules_game_console_images_devices_not_found:I = 0x7f0804eb
 
-.field public static final modules_growing_friend_guild_images_permanentinvitelinkscommunityupsell:I = 0x7f0804ec
+.field public static final modules_game_console_images_ic_playstation_device_ps5_32px:I = 0x7f0804ec
 
-.field public static final modules_guild_automod_images_ic_blocked_chat_bubble_icon:I = 0x7f0804ed
+.field public static final modules_growing_friend_guild_images_permanentinvitelinkscommunityupsell:I = 0x7f0804ed
 
-.field public static final modules_guild_boosting_native_images_sparkle_star_elongated:I = 0x7f0804ee
+.field public static final modules_guild_automod_images_ic_blocked_chat_bubble_icon:I = 0x7f0804ee
 
-.field public static final modules_guild_boosting_native_images_sparkle_star_pointed:I = 0x7f0804ef
+.field public static final modules_guild_boosting_native_images_sparkle_star_elongated:I = 0x7f0804ef
 
-.field public static final modules_guild_boosting_native_images_top_perk_streaming_quality:I = 0x7f0804f0
+.field public static final modules_guild_boosting_native_images_sparkle_star_pointed:I = 0x7f0804f0
 
-.field public static final modules_guild_boosting_native_images_top_perk_vanity_url:I = 0x7f0804f1
+.field public static final modules_guild_boosting_native_images_top_perk_streaming_quality:I = 0x7f0804f1
 
-.field public static final modules_guild_home_native_images_block_channels:I = 0x7f0804f2
+.field public static final modules_guild_boosting_native_images_top_perk_vanity_url:I = 0x7f0804f2
 
-.field public static final modules_guild_home_native_images_dark_feature_empty:I = 0x7f0804f3
+.field public static final modules_guild_home_native_images_block_channels:I = 0x7f0804f3
 
-.field public static final modules_guild_home_native_images_dark_home_header_placeholder:I = 0x7f0804f4
+.field public static final modules_guild_home_native_images_dark_feature_empty:I = 0x7f0804f4
 
-.field public static final modules_guild_home_native_images_expired_green:I = 0x7f0804f5
+.field public static final modules_guild_home_native_images_dark_home_header_placeholder:I = 0x7f0804f5
 
-.field public static final modules_guild_home_native_images_expired_red:I = 0x7f0804f6
+.field public static final modules_guild_home_native_images_expired_green:I = 0x7f0804f6
 
-.field public static final modules_guild_home_native_images_expired_yellow:I = 0x7f0804f7
+.field public static final modules_guild_home_native_images_expired_red:I = 0x7f0804f7
 
-.field public static final modules_guild_home_native_images_feature_messages:I = 0x7f0804f8
+.field public static final modules_guild_home_native_images_expired_yellow:I = 0x7f0804f8
 
-.field public static final modules_guild_home_native_images_feature_star:I = 0x7f0804f9
+.field public static final modules_guild_home_native_images_feature_messages:I = 0x7f0804f9
 
-.field public static final modules_guild_home_native_images_ic_chat:I = 0x7f0804fa
+.field public static final modules_guild_home_native_images_feature_star:I = 0x7f0804fa
 
-.field public static final modules_guild_home_native_images_ic_clock:I = 0x7f0804fb
+.field public static final modules_guild_home_native_images_ic_chat:I = 0x7f0804fb
 
-.field public static final modules_guild_home_native_images_ic_feed_more:I = 0x7f0804fc
+.field public static final modules_guild_home_native_images_ic_clock:I = 0x7f0804fc
 
-.field public static final modules_guild_home_native_images_ic_hide:I = 0x7f0804fd
+.field public static final modules_guild_home_native_images_ic_feed_more:I = 0x7f0804fd
 
-.field public static final modules_guild_home_native_images_ic_home_event:I = 0x7f0804fe
+.field public static final modules_guild_home_native_images_ic_hide:I = 0x7f0804fe
 
-.field public static final modules_guild_home_native_images_ic_unread_checkmark:I = 0x7f0804ff
+.field public static final modules_guild_home_native_images_ic_home_event:I = 0x7f0804ff
 
-.field public static final modules_guild_home_native_images_img_feed_empty_dark:I = 0x7f080500
+.field public static final modules_guild_home_native_images_ic_unread_checkmark:I = 0x7f080500
 
-.field public static final modules_guild_home_native_images_img_feed_empty_light:I = 0x7f080501
+.field public static final modules_guild_home_native_images_img_feed_empty_dark:I = 0x7f080501
 
-.field public static final modules_guild_home_native_images_img_feed_error_dark:I = 0x7f080502
+.field public static final modules_guild_home_native_images_img_feed_empty_light:I = 0x7f080502
 
-.field public static final modules_guild_home_native_images_img_feed_error_light:I = 0x7f080503
+.field public static final modules_guild_home_native_images_img_feed_error_dark:I = 0x7f080503
 
-.field public static final modules_guild_home_native_images_img_fishing:I = 0x7f080504
+.field public static final modules_guild_home_native_images_img_feed_error_light:I = 0x7f080504
 
-.field public static final modules_guild_home_native_images_light_feature_empty:I = 0x7f080505
+.field public static final modules_guild_home_native_images_img_fishing:I = 0x7f080505
 
-.field public static final modules_guild_home_native_images_light_home_header_placeholder:I = 0x7f080506
+.field public static final modules_guild_home_native_images_light_feature_empty:I = 0x7f080506
 
-.field public static final modules_guild_home_native_images_nux_card:I = 0x7f080507
+.field public static final modules_guild_home_native_images_light_home_header_placeholder:I = 0x7f080507
 
-.field public static final modules_guild_home_native_images_remove_messages:I = 0x7f080508
+.field public static final modules_guild_home_native_images_nux_card:I = 0x7f080508
 
-.field public static final modules_guild_identity_images_guild_identity_education_dark:I = 0x7f080509
+.field public static final modules_guild_home_native_images_remove_messages:I = 0x7f080509
 
-.field public static final modules_guild_identity_images_guild_identity_education_light:I = 0x7f08050a
+.field public static final modules_guild_identity_images_guild_identity_education_dark:I = 0x7f08050a
 
-.field public static final modules_guild_member_verification_images_updateappicon:I = 0x7f08050b
+.field public static final modules_guild_identity_images_guild_identity_education_light:I = 0x7f08050b
 
-.field public static final modules_guild_onboarding_home_images_mobileemptystate:I = 0x7f08050c
+.field public static final modules_guild_member_verification_images_updateappicon:I = 0x7f08050c
 
-.field public static final modules_guild_onboarding_native_images_stampwave:I = 0x7f08050d
+.field public static final modules_guild_onboarding_home_images_mobileemptystate:I = 0x7f08050d
 
-.field public static final modules_guild_profile_native_images_add:I = 0x7f08050e
+.field public static final modules_guild_onboarding_native_images_stampwave:I = 0x7f08050e
 
-.field public static final modules_guild_profile_native_images_bell:I = 0x7f08050f
+.field public static final modules_guild_profile_native_images_add:I = 0x7f08050f
 
-.field public static final modules_guild_profile_native_images_boost:I = 0x7f080510
+.field public static final modules_guild_profile_native_images_bell:I = 0x7f080510
 
-.field public static final modules_guild_profile_native_images_settings:I = 0x7f080511
+.field public static final modules_guild_profile_native_images_boost:I = 0x7f080511
 
-.field public static final modules_guild_progress_native_images_progresscenter:I = 0x7f080512
+.field public static final modules_guild_profile_native_images_settings:I = 0x7f080512
 
-.field public static final modules_guild_progress_native_images_progresssparkles:I = 0x7f080513
+.field public static final modules_guild_progress_native_images_progresscenter:I = 0x7f080513
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_earnings:I = 0x7f080514
+.field public static final modules_guild_progress_native_images_progresssparkles:I = 0x7f080514
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_exclusive_perks:I = 0x7f080515
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_earnings:I = 0x7f080515
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_megaphone:I = 0x7f080516
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_exclusive_perks:I = 0x7f080516
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_avatar_1:I = 0x7f080517
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_asset_role_subscription_megaphone:I = 0x7f080517
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_bunny_avatar:I = 0x7f080518
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_avatar_1:I = 0x7f080518
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_nelly_avatar:I = 0x7f080519
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_bunny_avatar:I = 0x7f080519
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_wise_avatar:I = 0x7f08051a
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_nelly_avatar:I = 0x7f08051a
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_earning_illo:I = 0x7f08051b
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_benefit_wise_avatar:I = 0x7f08051b
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_earning_metric_avatar:I = 0x7f08051c
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_earning_illo:I = 0x7f08051c
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_lanyard_illo:I = 0x7f08051d
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_earning_metric_avatar:I = 0x7f08051d
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_settings_hero:I = 0x7f08051e
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_lanyard_illo:I = 0x7f08051e
 
-.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_social:I = 0x7f08051f
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_settings_hero:I = 0x7f08051f
 
-.field public static final modules_guild_role_subscriptions_native_images_arrow:I = 0x7f080520
+.field public static final modules_guild_role_subscriptions_native_guild_settings_welcome_images_role_subscription_social:I = 0x7f080520
 
-.field public static final modules_guild_role_subscriptions_native_images_cactus:I = 0x7f080521
+.field public static final modules_guild_role_subscriptions_native_images_arrow:I = 0x7f080521
 
-.field public static final modules_guild_role_subscriptions_native_images_iap_feature_education:I = 0x7f080522
+.field public static final modules_guild_role_subscriptions_native_images_cactus:I = 0x7f080522
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_add_perk_24px:I = 0x7f080523
+.field public static final modules_guild_role_subscriptions_native_images_iap_feature_education:I = 0x7f080523
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_add_tier_40px:I = 0x7f080524
+.field public static final modules_guild_role_subscriptions_native_images_ic_add_perk_24px:I = 0x7f080524
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_edit_20px:I = 0x7f080525
+.field public static final modules_guild_role_subscriptions_native_images_ic_add_tier_40px:I = 0x7f080525
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_emoji_picker_20px:I = 0x7f080526
+.field public static final modules_guild_role_subscriptions_native_images_ic_edit_20px:I = 0x7f080526
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_full_server_gating_24px:I = 0x7f080527
+.field public static final modules_guild_role_subscriptions_native_images_ic_emoji_picker_20px:I = 0x7f080527
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_money_emoji_24px:I = 0x7f080528
+.field public static final modules_guild_role_subscriptions_native_images_ic_full_server_gating_24px:I = 0x7f080528
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_premium_channel_16px:I = 0x7f080529
+.field public static final modules_guild_role_subscriptions_native_images_ic_money_emoji_24px:I = 0x7f080529
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_premium_info_24px:I = 0x7f08052a
+.field public static final modules_guild_role_subscriptions_native_images_ic_premium_channel_16px:I = 0x7f08052a
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_premium_overview_24px:I = 0x7f08052b
+.field public static final modules_guild_role_subscriptions_native_images_ic_premium_info_24px:I = 0x7f08052b
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_premium_perk_money_24px:I = 0x7f08052c
+.field public static final modules_guild_role_subscriptions_native_images_ic_premium_overview_24px:I = 0x7f08052c
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_premium_tiers_24px:I = 0x7f08052d
+.field public static final modules_guild_role_subscriptions_native_images_ic_premium_perk_money_24px:I = 0x7f08052d
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_select_all_24px:I = 0x7f08052e
+.field public static final modules_guild_role_subscriptions_native_images_ic_premium_tiers_24px:I = 0x7f08052e
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_select_manually_24px:I = 0x7f08052f
+.field public static final modules_guild_role_subscriptions_native_images_ic_select_all_24px:I = 0x7f08052f
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_subscriptions_ticket:I = 0x7f080530
+.field public static final modules_guild_role_subscriptions_native_images_ic_select_manually_24px:I = 0x7f080530
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_trash_filled_16px:I = 0x7f080531
+.field public static final modules_guild_role_subscriptions_native_images_ic_subscriptions_ticket:I = 0x7f080531
 
-.field public static final modules_guild_role_subscriptions_native_images_ic_upload_24px:I = 0x7f080532
+.field public static final modules_guild_role_subscriptions_native_images_ic_trash_filled_16px:I = 0x7f080532
 
-.field public static final modules_guild_role_subscriptions_native_images_money_birb_placeholder_dark:I = 0x7f080533
+.field public static final modules_guild_role_subscriptions_native_images_ic_upload_24px:I = 0x7f080533
 
-.field public static final modules_guild_role_subscriptions_native_images_money_birb_placeholder_light:I = 0x7f080534
+.field public static final modules_guild_role_subscriptions_native_images_money_birb_placeholder_dark:I = 0x7f080534
 
-.field public static final modules_guild_role_subscriptions_native_images_onboarding_v2_upsell:I = 0x7f080535
+.field public static final modules_guild_role_subscriptions_native_images_money_birb_placeholder_light:I = 0x7f080535
 
-.field public static final modules_guild_role_subscriptions_native_images_partner_icon:I = 0x7f080536
+.field public static final modules_guild_role_subscriptions_native_images_onboarding_v2_upsell:I = 0x7f080536
 
-.field public static final modules_guild_role_subscriptions_native_images_premium_role_mweb_upsell:I = 0x7f080537
+.field public static final modules_guild_role_subscriptions_native_images_partner_icon:I = 0x7f080537
 
-.field public static final modules_guild_role_subscriptions_native_images_premium_role_unavailable:I = 0x7f080538
+.field public static final modules_guild_role_subscriptions_native_images_premium_role_mweb_upsell:I = 0x7f080538
 
-.field public static final modules_guild_role_subscriptions_native_images_resubscribed_alert_header:I = 0x7f080539
+.field public static final modules_guild_role_subscriptions_native_images_premium_role_unavailable:I = 0x7f080539
 
-.field public static final modules_guild_role_subscriptions_native_images_youtube_icon:I = 0x7f08053a
+.field public static final modules_guild_role_subscriptions_native_images_resubscribed_alert_header:I = 0x7f08053a
 
-.field public static final modules_guild_scheduled_events_native_images_bell:I = 0x7f08053b
+.field public static final modules_guild_role_subscriptions_native_images_youtube_icon:I = 0x7f08053b
 
-.field public static final modules_guild_scheduled_events_native_images_hub_events_upsell:I = 0x7f08053c
+.field public static final modules_guild_scheduled_events_native_images_bell:I = 0x7f08053c
 
-.field public static final modules_guild_scheduled_events_native_images_ic_clock:I = 0x7f08053d
+.field public static final modules_guild_scheduled_events_native_images_hub_events_upsell:I = 0x7f08053d
 
-.field public static final modules_guild_scheduled_events_native_images_ic_event_calendar:I = 0x7f08053e
+.field public static final modules_guild_scheduled_events_native_images_ic_clock:I = 0x7f08053e
 
-.field public static final modules_guild_scheduled_events_native_images_iclocation:I = 0x7f08053f
+.field public static final modules_guild_scheduled_events_native_images_ic_event_calendar:I = 0x7f08053f
 
-.field public static final modules_guild_scheduled_events_native_images_stagechannelupsell:I = 0x7f080540
+.field public static final modules_guild_scheduled_events_native_images_iclocation:I = 0x7f080540
 
-.field public static final modules_guild_settings_roles_native_images_ic_info:I = 0x7f080541
+.field public static final modules_guild_scheduled_events_native_images_stagechannelupsell:I = 0x7f080541
 
-.field public static final modules_guild_settings_roles_native_images_ic_person:I = 0x7f080542
+.field public static final modules_guild_settings_roles_native_images_ic_info:I = 0x7f080542
 
-.field public static final modules_guild_settings_roles_native_images_ic_sort:I = 0x7f080543
+.field public static final modules_guild_settings_roles_native_images_ic_person:I = 0x7f080543
 
-.field public static final modules_guild_settings_roles_native_images_illustrationdark:I = 0x7f080544
+.field public static final modules_guild_settings_roles_native_images_ic_sort:I = 0x7f080544
 
-.field public static final modules_guild_settings_roles_native_images_illustrationdarklarge:I = 0x7f080545
+.field public static final modules_guild_settings_roles_native_images_illustrationdark:I = 0x7f080545
 
-.field public static final modules_guild_settings_roles_native_images_illustrationlight:I = 0x7f080546
+.field public static final modules_guild_settings_roles_native_images_illustrationdarklarge:I = 0x7f080546
 
-.field public static final modules_guild_settings_roles_native_images_illustrationlightlarge:I = 0x7f080547
+.field public static final modules_guild_settings_roles_native_images_illustrationlight:I = 0x7f080547
 
-.field public static final modules_guild_templates_native_images_ic_guild_template:I = 0x7f080548
+.field public static final modules_guild_settings_roles_native_images_illustrationlightlarge:I = 0x7f080548
 
-.field public static final modules_hub_native_images_conversation:I = 0x7f080549
+.field public static final modules_guild_templates_native_images_ic_guild_template:I = 0x7f080549
 
-.field public static final modules_hub_native_images_email_header:I = 0x7f08054a
+.field public static final modules_hub_native_images_conversation:I = 0x7f08054a
 
-.field public static final modules_hub_native_images_hub_events:I = 0x7f08054b
+.field public static final modules_hub_native_images_email_header:I = 0x7f08054b
 
-.field public static final modules_hub_native_images_hubadd:I = 0x7f08054c
+.field public static final modules_hub_native_images_hub_events:I = 0x7f08054c
 
-.field public static final modules_hub_native_images_hubbacktoschool:I = 0x7f08054d
+.field public static final modules_hub_native_images_hubadd:I = 0x7f08054d
 
-.field public static final modules_hub_native_images_hubdiscovery:I = 0x7f08054e
+.field public static final modules_hub_native_images_hubbacktoschool:I = 0x7f08054e
 
-.field public static final modules_hub_native_images_hubheader:I = 0x7f08054f
+.field public static final modules_hub_native_images_hubdiscovery:I = 0x7f08054f
 
-.field public static final modules_hub_native_images_hubicon:I = 0x7f080550
+.field public static final modules_hub_native_images_hubheader:I = 0x7f080550
 
-.field public static final modules_hub_native_images_hubinvite:I = 0x7f080551
+.field public static final modules_hub_native_images_hubicon:I = 0x7f080551
 
-.field public static final modules_hub_native_images_progresssetup:I = 0x7f080552
+.field public static final modules_hub_native_images_hubinvite:I = 0x7f080552
 
-.field public static final modules_hub_native_images_search:I = 0x7f080553
+.field public static final modules_hub_native_images_progresssetup:I = 0x7f080553
 
-.field public static final modules_hub_native_images_search_empty_state:I = 0x7f080554
+.field public static final modules_hub_native_images_search:I = 0x7f080554
 
-.field public static final modules_hub_native_images_study:I = 0x7f080555
+.field public static final modules_hub_native_images_search_empty_state:I = 0x7f080555
 
-.field public static final modules_hub_native_images_verifyemail:I = 0x7f080556
+.field public static final modules_hub_native_images_study:I = 0x7f080556
 
-.field public static final modules_instant_invite_native_images_copy:I = 0x7f080557
+.field public static final modules_hub_native_images_verifyemail:I = 0x7f080557
 
-.field public static final modules_instant_invite_native_images_gmail:I = 0x7f080558
+.field public static final modules_instant_invite_native_images_copy:I = 0x7f080558
 
-.field public static final modules_instant_invite_native_images_line:I = 0x7f080559
+.field public static final modules_instant_invite_native_images_gmail:I = 0x7f080559
 
-.field public static final modules_instant_invite_native_images_mail:I = 0x7f08055a
+.field public static final modules_instant_invite_native_images_line:I = 0x7f08055a
 
-.field public static final modules_instant_invite_native_images_messages:I = 0x7f08055b
+.field public static final modules_instant_invite_native_images_mail:I = 0x7f08055b
 
-.field public static final modules_instant_invite_native_images_messenger:I = 0x7f08055c
+.field public static final modules_instant_invite_native_images_messages:I = 0x7f08055c
 
-.field public static final modules_instant_invite_native_images_serverinviteenvelope:I = 0x7f08055d
+.field public static final modules_instant_invite_native_images_messenger:I = 0x7f08055d
 
-.field public static final modules_instant_invite_native_images_share:I = 0x7f08055e
+.field public static final modules_instant_invite_native_images_serverinviteenvelope:I = 0x7f08055e
 
-.field public static final modules_instant_invite_native_images_shareandroid:I = 0x7f08055f
+.field public static final modules_instant_invite_native_images_share:I = 0x7f08055f
 
-.field public static final modules_instant_invite_native_images_telegram:I = 0x7f080560
+.field public static final modules_instant_invite_native_images_shareandroid:I = 0x7f080560
 
-.field public static final modules_instant_invite_native_images_twitter:I = 0x7f080561
+.field public static final modules_instant_invite_native_images_telegram:I = 0x7f080561
 
-.field public static final modules_instant_invite_native_images_whatsapp:I = 0x7f080562
+.field public static final modules_instant_invite_native_images_twitter:I = 0x7f080562
 
-.field public static final modules_invite_expiration_notice_native_images_clock:I = 0x7f080563
+.field public static final modules_instant_invite_native_images_whatsapp:I = 0x7f080563
 
-.field public static final modules_main_tabs_v2_native_channel_header_images_iconsearch:I = 0x7f080564
+.field public static final modules_invite_expiration_notice_native_images_clock:I = 0x7f080564
 
-.field public static final modules_main_tabs_v2_native_images_arrowdown:I = 0x7f080565
+.field public static final modules_main_tabs_v2_native_channel_header_images_iconsearch:I = 0x7f080565
 
-.field public static final modules_main_tabs_v2_native_images_arrowright:I = 0x7f080566
+.field public static final modules_main_tabs_v2_native_images_arrowdown:I = 0x7f080566
 
-.field public static final modules_main_tabs_v2_native_images_arrowsmright:I = 0x7f080567
+.field public static final modules_main_tabs_v2_native_images_arrowright:I = 0x7f080567
 
-.field public static final modules_main_tabs_v2_native_images_categoryarrowalt:I = 0x7f080568
+.field public static final modules_main_tabs_v2_native_images_arrowsmright:I = 0x7f080568
 
-.field public static final modules_main_tabs_v2_native_images_chatbubble:I = 0x7f080569
+.field public static final modules_main_tabs_v2_native_images_categoryarrowalt:I = 0x7f080569
 
-.field public static final modules_main_tabs_v2_native_images_gameemptystate:I = 0x7f08056a
+.field public static final modules_main_tabs_v2_native_images_chatbubble:I = 0x7f08056a
 
-.field public static final modules_main_tabs_v2_native_images_gameemptystatecontroller:I = 0x7f08056b
+.field public static final modules_main_tabs_v2_native_images_gameemptystate:I = 0x7f08056b
 
-.field public static final modules_main_tabs_v2_native_images_gtmannouncementwumpus:I = 0x7f08056c
+.field public static final modules_main_tabs_v2_native_images_gameemptystatecontroller:I = 0x7f08056c
 
-.field public static final modules_main_tabs_v2_native_images_icactivity:I = 0x7f08056d
+.field public static final modules_main_tabs_v2_native_images_gtmannouncementwumpus:I = 0x7f08056d
 
-.field public static final modules_main_tabs_v2_native_images_icmessages:I = 0x7f08056e
+.field public static final modules_main_tabs_v2_native_images_icactivity:I = 0x7f08056e
 
-.field public static final modules_main_tabs_v2_native_images_icnavigation:I = 0x7f08056f
+.field public static final modules_main_tabs_v2_native_images_icmessages:I = 0x7f08056f
 
-.field public static final modules_main_tabs_v2_native_images_iconqsapps:I = 0x7f080570
+.field public static final modules_main_tabs_v2_native_images_icnavigation:I = 0x7f080570
 
-.field public static final modules_main_tabs_v2_native_images_iconqsfiles:I = 0x7f080571
+.field public static final modules_main_tabs_v2_native_images_iconqsapps:I = 0x7f080571
 
-.field public static final modules_main_tabs_v2_native_images_iconqsgifs:I = 0x7f080572
+.field public static final modules_main_tabs_v2_native_images_iconqsfiles:I = 0x7f080572
 
-.field public static final modules_main_tabs_v2_native_images_iconqslinks:I = 0x7f080573
+.field public static final modules_main_tabs_v2_native_images_iconqsgifs:I = 0x7f080573
 
-.field public static final modules_main_tabs_v2_native_images_iconqsmedia:I = 0x7f080574
+.field public static final modules_main_tabs_v2_native_images_iconqslinks:I = 0x7f080574
 
-.field public static final modules_main_tabs_v2_native_images_iconqsmembers:I = 0x7f080575
+.field public static final modules_main_tabs_v2_native_images_iconqsmedia:I = 0x7f080575
 
-.field public static final modules_main_tabs_v2_native_images_iconqsmessages:I = 0x7f080576
+.field public static final modules_main_tabs_v2_native_images_iconqsmembers:I = 0x7f080576
 
-.field public static final modules_main_tabs_v2_native_images_noresults:I = 0x7f080577
+.field public static final modules_main_tabs_v2_native_images_iconqsmessages:I = 0x7f080577
 
-.field public static final modules_main_tabs_v2_native_images_screenshare:I = 0x7f080578
+.field public static final modules_main_tabs_v2_native_images_noresults:I = 0x7f080578
 
-.field public static final modules_main_tabs_v2_native_images_stacknavback:I = 0x7f080579
+.field public static final modules_main_tabs_v2_native_images_screenshare:I = 0x7f080579
 
-.field public static final modules_main_tabs_v2_native_images_stacknavclose:I = 0x7f08057a
+.field public static final modules_main_tabs_v2_native_images_stacknavback:I = 0x7f08057a
 
-.field public static final modules_main_tabs_v2_native_images_tabguilds:I = 0x7f08057b
+.field public static final modules_main_tabs_v2_native_images_stacknavclose:I = 0x7f08057b
 
-.field public static final modules_main_tabs_v2_native_images_tabmessages:I = 0x7f08057c
+.field public static final modules_main_tabs_v2_native_images_tabguilds:I = 0x7f08057c
 
-.field public static final modules_main_tabs_v2_native_images_tabnotifications:I = 0x7f08057d
+.field public static final modules_main_tabs_v2_native_images_tabmessages:I = 0x7f08057d
 
-.field public static final modules_main_tabs_v2_native_images_tabyou:I = 0x7f08057e
+.field public static final modules_main_tabs_v2_native_images_tabnotifications:I = 0x7f08057e
 
-.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconinvite:I = 0x7f08057f
+.field public static final modules_main_tabs_v2_native_images_tabyou:I = 0x7f08057f
 
-.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconnewgroup:I = 0x7f080580
+.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconinvite:I = 0x7f080580
 
-.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconsettings:I = 0x7f080581
+.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconnewgroup:I = 0x7f080581
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconbell:I = 0x7f080582
+.field public static final modules_main_tabs_v2_native_shared_components_user_list_images_iconsettings:I = 0x7f080582
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconbelloff:I = 0x7f080583
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconbell:I = 0x7f080583
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconcall:I = 0x7f080584
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconbelloff:I = 0x7f080584
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconpins:I = 0x7f080585
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconcall:I = 0x7f080585
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconthreadbrowser:I = 0x7f080586
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconpins:I = 0x7f080586
 
-.field public static final modules_main_tabs_v2_native_sidebar_images_iconvideo:I = 0x7f080587
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconthreadbrowser:I = 0x7f080587
 
-.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_channelsempty:I = 0x7f080588
+.field public static final modules_main_tabs_v2_native_sidebar_images_iconvideo:I = 0x7f080588
 
-.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_guildsemptyillustration:I = 0x7f080589
+.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_channelsempty:I = 0x7f080589
 
-.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_iccustomize:I = 0x7f08058a
+.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_guildsemptyillustration:I = 0x7f08058a
 
-.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_unreadsempty:I = 0x7f08058b
+.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_iccustomize:I = 0x7f08058b
 
-.field public static final modules_main_tabs_v2_native_tabs_messages_images_icnewmessage:I = 0x7f08058c
+.field public static final modules_main_tabs_v2_native_tabs_guilds_empty_states_images_unreadsempty:I = 0x7f08058c
 
-.field public static final modules_media_channel_native_images_asset_blurred_media_post_preview:I = 0x7f08058d
+.field public static final modules_main_tabs_v2_native_tabs_messages_images_icnewmessage:I = 0x7f08058d
 
-.field public static final modules_media_channel_native_images_ic_media_channel:I = 0x7f08058e
+.field public static final modules_media_channel_native_images_asset_blurred_media_post_preview:I = 0x7f08058e
 
-.field public static final modules_media_channel_native_images_ic_media_channel_locked:I = 0x7f08058f
+.field public static final modules_media_channel_native_images_ic_media_channel:I = 0x7f08058f
 
-.field public static final modules_media_channel_native_images_ic_media_channel_nsfw:I = 0x7f080590
+.field public static final modules_media_channel_native_images_ic_media_channel_locked:I = 0x7f080590
 
-.field public static final modules_media_keyboard_native_images_empty_castle:I = 0x7f080591
+.field public static final modules_media_channel_native_images_ic_media_channel_nsfw:I = 0x7f080591
 
-.field public static final modules_media_keyboard_native_images_empty_permission:I = 0x7f080592
+.field public static final modules_media_keyboard_native_images_empty_castle:I = 0x7f080592
 
-.field public static final modules_media_keyboard_native_images_empty_photos:I = 0x7f080593
+.field public static final modules_media_keyboard_native_images_empty_permission:I = 0x7f080593
 
-.field public static final modules_media_keyboard_native_images_ic_camera:I = 0x7f080594
+.field public static final modules_media_keyboard_native_images_empty_photos:I = 0x7f080594
 
-.field public static final modules_media_keyboard_native_images_ic_check:I = 0x7f080595
+.field public static final modules_media_keyboard_native_images_ic_camera:I = 0x7f080595
 
-.field public static final modules_media_keyboard_native_images_ic_gridview:I = 0x7f080596
+.field public static final modules_media_keyboard_native_images_ic_check:I = 0x7f080596
 
-.field public static final modules_media_viewer_native_images_pause:I = 0x7f080597
+.field public static final modules_media_keyboard_native_images_ic_gridview:I = 0x7f080597
 
-.field public static final modules_media_viewer_native_images_play:I = 0x7f080598
+.field public static final modules_media_viewer_native_images_pause:I = 0x7f080598
 
-.field public static final modules_media_viewer_native_images_scrubber:I = 0x7f080599
+.field public static final modules_media_viewer_native_images_play:I = 0x7f080599
 
-.field public static final modules_messages_images_noresults:I = 0x7f08059a
+.field public static final modules_media_viewer_native_images_scrubber:I = 0x7f08059a
 
-.field public static final modules_navigator_native_assets_androidclose:I = 0x7f08059b
+.field public static final modules_messages_images_noresults:I = 0x7f08059b
 
-.field public static final modules_navigator_native_assets_iosback:I = 0x7f08059c
+.field public static final modules_navigator_native_assets_androidclose:I = 0x7f08059c
 
-.field public static final modules_notification_center_native_images_ic_checked:I = 0x7f08059d
+.field public static final modules_navigator_native_assets_iosback:I = 0x7f08059d
 
-.field public static final modules_notification_center_native_images_ic_eye:I = 0x7f08059e
+.field public static final modules_notification_center_native_images_ic_checked:I = 0x7f08059e
 
-.field public static final modules_notification_center_native_images_ic_highlight:I = 0x7f08059f
+.field public static final modules_notification_center_native_images_ic_eye:I = 0x7f08059f
 
-.field public static final modules_notification_center_native_images_ic_share_screen:I = 0x7f0805a0
+.field public static final modules_notification_center_native_images_ic_highlight:I = 0x7f0805a0
 
-.field public static final modules_notification_center_native_images_upsellillustration:I = 0x7f0805a1
+.field public static final modules_notification_center_native_images_ic_share_screen:I = 0x7f0805a1
 
-.field public static final modules_notifications_images_ic_bell_off:I = 0x7f0805a2
+.field public static final modules_notification_center_native_images_upsellillustration:I = 0x7f0805a2
 
-.field public static final modules_notifications_images_ic_bell_on:I = 0x7f0805a3
+.field public static final modules_notifications_images_ic_bell_off:I = 0x7f0805a3
 
-.field public static final modules_notifications_images_ic_discord:I = 0x7f0805a4
+.field public static final modules_notifications_images_ic_bell_on:I = 0x7f0805a4
 
-.field public static final modules_notifications_images_ic_essentials_sparkle:I = 0x7f0805a5
+.field public static final modules_notifications_images_ic_discord:I = 0x7f0805a5
 
-.field public static final modules_notifications_images_ic_slider:I = 0x7f0805a6
+.field public static final modules_notifications_images_ic_essentials_sparkle:I = 0x7f0805a6
 
-.field public static final modules_nuf_channels_native_images_channels_example:I = 0x7f0805a7
+.field public static final modules_notifications_images_ic_slider:I = 0x7f0805a7
 
-.field public static final modules_nuf_channels_native_images_voice_channels:I = 0x7f0805a8
+.field public static final modules_nuf_channels_native_images_channels_example:I = 0x7f0805a8
 
-.field public static final modules_nuf_native_components_notification_notification_sparkles:I = 0x7f0805a9
+.field public static final modules_nuf_channels_native_images_voice_channels:I = 0x7f0805a9
 
-.field public static final modules_nuf_native_components_notification_notification_upsell:I = 0x7f0805aa
+.field public static final modules_nuf_native_components_notification_notification_sparkles:I = 0x7f0805aa
 
-.field public static final modules_nuf_native_components_notification_pointer_hand:I = 0x7f0805ab
+.field public static final modules_nuf_native_components_notification_notification_upsell:I = 0x7f0805ab
 
-.field public static final modules_nuf_native_components_value_props_images_valuepropcamera:I = 0x7f0805ac
+.field public static final modules_nuf_native_components_notification_pointer_hand:I = 0x7f0805ac
 
-.field public static final modules_nuf_native_components_value_props_images_valuepropchat:I = 0x7f0805ad
+.field public static final modules_nuf_native_components_value_props_images_valuepropcamera:I = 0x7f0805ad
 
-.field public static final modules_nuf_native_components_value_props_images_valuepropservers:I = 0x7f0805ae
+.field public static final modules_nuf_native_components_value_props_images_valuepropchat:I = 0x7f0805ae
 
-.field public static final modules_nuf_native_components_value_props_images_valuepropvoice:I = 0x7f0805af
+.field public static final modules_nuf_native_components_value_props_images_valuepropservers:I = 0x7f0805af
 
-.field public static final modules_nuf_native_components_value_props_images_valuepropwelcome:I = 0x7f0805b0
+.field public static final modules_nuf_native_components_value_props_images_valuepropvoice:I = 0x7f0805b0
 
-.field public static final modules_nuf_native_images_discoverabilityheader:I = 0x7f0805b1
+.field public static final modules_nuf_native_components_value_props_images_valuepropwelcome:I = 0x7f0805b1
 
-.field public static final modules_nuf_native_images_educationcardchannels:I = 0x7f0805b2
+.field public static final modules_nuf_native_images_discoverabilityheader:I = 0x7f0805b2
 
-.field public static final modules_nuf_native_images_educationcarddms:I = 0x7f0805b3
+.field public static final modules_nuf_native_images_educationcardchannels:I = 0x7f0805b3
 
-.field public static final modules_nuf_native_images_educationcardhelp:I = 0x7f0805b4
+.field public static final modules_nuf_native_images_educationcarddms:I = 0x7f0805b4
 
-.field public static final modules_nuf_native_images_educationcardserver:I = 0x7f0805b5
+.field public static final modules_nuf_native_images_educationcardhelp:I = 0x7f0805b5
 
-.field public static final modules_opt_in_channels_native_images_nux:I = 0x7f0805b6
+.field public static final modules_nuf_native_images_educationcardserver:I = 0x7f0805b6
 
-.field public static final modules_parent_tools_images_family_center_activity_banner_image:I = 0x7f0805b7
+.field public static final modules_opt_in_channels_native_images_nux:I = 0x7f0805b7
 
-.field public static final modules_parent_tools_images_family_center_chat_check_icon:I = 0x7f0805b8
+.field public static final modules_parent_tools_images_family_center_activity_banner_image:I = 0x7f0805b8
 
-.field public static final modules_parent_tools_images_family_center_empty:I = 0x7f0805b9
+.field public static final modules_parent_tools_images_family_center_chat_check_icon:I = 0x7f0805b9
 
-.field public static final modules_parent_tools_images_family_center_linking_banner_image:I = 0x7f0805ba
+.field public static final modules_parent_tools_images_family_center_empty:I = 0x7f0805ba
 
-.field public static final modules_parent_tools_images_ic_eye:I = 0x7f0805bb
+.field public static final modules_parent_tools_images_family_center_linking_banner_image:I = 0x7f0805bb
 
-.field public static final modules_parent_tools_images_ic_qrcode_scan:I = 0x7f0805bc
+.field public static final modules_parent_tools_images_ic_eye:I = 0x7f0805bc
 
-.field public static final modules_pomelo_images_pomelo_splash:I = 0x7f0805bd
+.field public static final modules_parent_tools_images_ic_qrcode_scan:I = 0x7f0805bd
 
-.field public static final modules_pomelo_images_shiny:I = 0x7f0805be
+.field public static final modules_pomelo_images_pomelo_splash:I = 0x7f0805be
 
-.field public static final modules_private_channel_integrations_native_images_discovering_dabatouille:I = 0x7f0805bf
+.field public static final modules_pomelo_images_shiny:I = 0x7f0805bf
 
-.field public static final modules_stage_channels_native_images_audience_welcome:I = 0x7f0805c0
+.field public static final modules_private_channel_integrations_native_images_discovering_dabatouille:I = 0x7f0805c0
 
-.field public static final modules_stage_channels_native_images_ic_block:I = 0x7f0805c1
+.field public static final modules_stage_channels_native_images_audience_welcome:I = 0x7f0805c1
 
-.field public static final modules_stage_channels_native_images_ic_group:I = 0x7f0805c2
+.field public static final modules_stage_channels_native_images_ic_block:I = 0x7f0805c2
 
-.field public static final modules_stage_channels_native_images_ic_leave_stage:I = 0x7f0805c3
+.field public static final modules_stage_channels_native_images_ic_group:I = 0x7f0805c3
 
-.field public static final modules_stage_channels_native_images_ic_mic_dark_circle:I = 0x7f0805c4
+.field public static final modules_stage_channels_native_images_ic_leave_stage:I = 0x7f0805c4
 
-.field public static final modules_stage_channels_native_images_ic_mic_light_circle:I = 0x7f0805c5
+.field public static final modules_stage_channels_native_images_ic_mic_dark_circle:I = 0x7f0805c5
 
-.field public static final modules_stage_channels_native_images_ic_minimize:I = 0x7f0805c6
+.field public static final modules_stage_channels_native_images_ic_mic_light_circle:I = 0x7f0805c6
 
-.field public static final modules_stage_channels_native_images_ic_moderator:I = 0x7f0805c7
+.field public static final modules_stage_channels_native_images_ic_minimize:I = 0x7f0805c7
 
-.field public static final modules_stage_channels_native_images_ic_move_to_audience:I = 0x7f0805c8
+.field public static final modules_stage_channels_native_images_ic_moderator:I = 0x7f0805c8
 
-.field public static final modules_stage_channels_native_images_ic_move_to_speaker:I = 0x7f0805c9
+.field public static final modules_stage_channels_native_images_ic_move_to_audience:I = 0x7f0805c9
 
-.field public static final modules_stage_channels_native_images_ic_person_status:I = 0x7f0805ca
+.field public static final modules_stage_channels_native_images_ic_move_to_speaker:I = 0x7f0805ca
 
-.field public static final modules_stage_channels_native_images_ic_raised_hand:I = 0x7f0805cb
+.field public static final modules_stage_channels_native_images_ic_person_status:I = 0x7f0805cb
 
-.field public static final modules_stage_channels_native_images_ic_raised_hand_list:I = 0x7f0805cc
+.field public static final modules_stage_channels_native_images_ic_raised_hand:I = 0x7f0805cc
 
-.field public static final modules_stage_channels_native_images_ic_stage_channel_24px:I = 0x7f0805cd
+.field public static final modules_stage_channels_native_images_ic_raised_hand_list:I = 0x7f0805cd
 
-.field public static final modules_stage_channels_native_images_ic_stage_channel_32px:I = 0x7f0805ce
+.field public static final modules_stage_channels_native_images_ic_stage_channel_24px:I = 0x7f0805ce
 
-.field public static final modules_stage_channels_native_images_ic_stage_locked:I = 0x7f0805cf
+.field public static final modules_stage_channels_native_images_ic_stage_channel_32px:I = 0x7f0805cf
 
-.field public static final modules_stage_channels_native_images_ic_stage_music:I = 0x7f0805d0
+.field public static final modules_stage_channels_native_images_ic_stage_locked:I = 0x7f0805d0
 
-.field public static final modules_stage_channels_native_images_ic_stage_music_disabled:I = 0x7f0805d1
+.field public static final modules_stage_channels_native_images_ic_stage_music:I = 0x7f0805d1
 
-.field public static final modules_stage_channels_native_images_img_empty_audience:I = 0x7f0805d2
+.field public static final modules_stage_channels_native_images_ic_stage_music_disabled:I = 0x7f0805d2
 
-.field public static final modules_stage_channels_native_images_stage_speaker:I = 0x7f0805d3
+.field public static final modules_stage_channels_native_images_img_empty_audience:I = 0x7f0805d3
 
-.field public static final modules_stage_channels_native_images_stage_v2_upsell:I = 0x7f0805d4
+.field public static final modules_stage_channels_native_images_stage_speaker:I = 0x7f0805d4
 
-.field public static final modules_stage_channels_native_images_stagesparkles:I = 0x7f0805d5
+.field public static final modules_stage_channels_native_images_stage_v2_upsell:I = 0x7f0805d5
 
-.field public static final modules_stickers_native_images_alert:I = 0x7f0805d6
+.field public static final modules_stage_channels_native_images_stagesparkles:I = 0x7f0805d6
 
-.field public static final modules_stickers_native_images_empty:I = 0x7f0805d7
+.field public static final modules_stickers_native_images_alert:I = 0x7f0805d7
 
-.field public static final modules_stickers_native_images_history:I = 0x7f0805d8
+.field public static final modules_stickers_native_images_empty:I = 0x7f0805d8
 
-.field public static final modules_stickers_native_images_img_premium_canvas_mobile:I = 0x7f0805d9
+.field public static final modules_stickers_native_images_history:I = 0x7f0805d9
 
-.field public static final modules_stickers_native_images_sticker_search_empty:I = 0x7f0805da
+.field public static final modules_stickers_native_images_img_premium_canvas_mobile:I = 0x7f0805da
 
-.field public static final modules_system_dm_native_images_chatbubbletail:I = 0x7f0805db
+.field public static final modules_stickers_native_images_sticker_search_empty:I = 0x7f0805db
 
-.field public static final modules_system_dm_native_images_chatbubbletaillight:I = 0x7f0805dc
+.field public static final modules_system_dm_native_images_chatbubbletail:I = 0x7f0805dc
 
-.field public static final modules_system_dm_native_images_systemdmwumpus:I = 0x7f0805dd
+.field public static final modules_system_dm_native_images_chatbubbletaillight:I = 0x7f0805dd
 
-.field public static final modules_user_profile_images_banner_ic_edit_20px:I = 0x7f0805de
+.field public static final modules_system_dm_native_images_systemdmwumpus:I = 0x7f0805de
 
-.field public static final modules_user_profile_images_banner_sample_banner:I = 0x7f0805df
+.field public static final modules_user_profile_images_banner_ic_edit_20px:I = 0x7f0805df
 
-.field public static final modules_user_settings_images_app_installed_check:I = 0x7f0805e0
+.field public static final modules_user_profile_images_banner_sample_banner:I = 0x7f0805e0
 
-.field public static final modules_user_settings_images_lock:I = 0x7f0805e1
+.field public static final modules_user_settings_images_app_installed_check:I = 0x7f0805e1
 
-.field public static final modules_user_settings_images_xbox_app_phone:I = 0x7f0805e2
+.field public static final modules_user_settings_images_lock:I = 0x7f0805e2
 
-.field public static final modules_video_calls_native_images_add:I = 0x7f0805e3
+.field public static final modules_user_settings_images_xbox_app_phone:I = 0x7f0805e3
 
-.field public static final modules_video_calls_native_images_camera:I = 0x7f0805e4
+.field public static final modules_video_calls_native_images_add:I = 0x7f0805e4
 
-.field public static final modules_video_calls_native_images_camera_swap:I = 0x7f0805e5
+.field public static final modules_video_calls_native_images_camera:I = 0x7f0805e5
 
-.field public static final modules_video_calls_native_images_debug:I = 0x7f0805e6
+.field public static final modules_video_calls_native_images_camera_swap:I = 0x7f0805e6
 
-.field public static final modules_video_calls_native_images_disconnect:I = 0x7f0805e7
+.field public static final modules_video_calls_native_images_debug:I = 0x7f0805e7
 
-.field public static final modules_video_calls_native_images_fullscreen:I = 0x7f0805e8
+.field public static final modules_video_calls_native_images_disconnect:I = 0x7f0805e8
 
-.field public static final modules_video_calls_native_images_grid:I = 0x7f0805e9
+.field public static final modules_video_calls_native_images_fullscreen:I = 0x7f0805e9
 
-.field public static final modules_video_calls_native_images_group:I = 0x7f0805ea
+.field public static final modules_video_calls_native_images_grid:I = 0x7f0805ea
 
-.field public static final modules_video_calls_native_images_hide_participants:I = 0x7f0805eb
+.field public static final modules_video_calls_native_images_group:I = 0x7f0805eb
 
-.field public static final modules_video_calls_native_images_mic:I = 0x7f0805ec
+.field public static final modules_video_calls_native_images_hide_participants:I = 0x7f0805ec
 
-.field public static final modules_video_calls_native_images_minimize:I = 0x7f0805ed
+.field public static final modules_video_calls_native_images_mic:I = 0x7f0805ed
 
-.field public static final modules_video_calls_native_images_mobile:I = 0x7f0805ee
+.field public static final modules_video_calls_native_images_minimize:I = 0x7f0805ee
 
-.field public static final modules_video_calls_native_images_nux_gaming:I = 0x7f0805ef
+.field public static final modules_video_calls_native_images_mobile:I = 0x7f0805ef
 
-.field public static final modules_video_calls_native_images_report:I = 0x7f0805f0
+.field public static final modules_video_calls_native_images_nux_gaming:I = 0x7f0805f0
 
-.field public static final modules_video_calls_native_images_screenshare_halfsheet_splash:I = 0x7f0805f1
+.field public static final modules_video_calls_native_images_report:I = 0x7f0805f1
 
-.field public static final modules_video_calls_native_images_screenshare_splash:I = 0x7f0805f2
+.field public static final modules_video_calls_native_images_screenshare_halfsheet_splash:I = 0x7f0805f2
 
-.field public static final modules_video_calls_native_images_server_video_invite:I = 0x7f0805f3
+.field public static final modules_video_calls_native_images_screenshare_splash:I = 0x7f0805f3
 
-.field public static final modules_video_calls_native_images_settings:I = 0x7f0805f4
+.field public static final modules_video_calls_native_images_server_video_invite:I = 0x7f0805f4
 
-.field public static final modules_video_calls_native_images_speaker:I = 0x7f0805f5
+.field public static final modules_video_calls_native_images_settings:I = 0x7f0805f5
 
-.field public static final modules_video_calls_native_images_spectator:I = 0x7f0805f6
+.field public static final modules_video_calls_native_images_speaker:I = 0x7f0805f6
 
-.field public static final modules_video_calls_native_images_watch:I = 0x7f0805f7
+.field public static final modules_video_calls_native_images_spectator:I = 0x7f0805f7
 
-.field public static final modules_video_calls_native_images_xbox_voice_upsell:I = 0x7f0805f8
+.field public static final modules_video_calls_native_images_watch:I = 0x7f0805f8
 
-.field public static final modules_voice_messages_native_images_chevon:I = 0x7f0805f9
+.field public static final modules_video_calls_native_images_xbox_voice_upsell:I = 0x7f0805f9
 
-.field public static final modules_voice_messages_native_images_locked:I = 0x7f0805fa
+.field public static final modules_voice_messages_native_images_chevon:I = 0x7f0805fa
 
-.field public static final modules_voice_messages_native_images_unlocked:I = 0x7f0805fb
+.field public static final modules_voice_messages_native_images_locked:I = 0x7f0805fb
 
-.field public static final modules_voice_messages_native_images_vm_bottom_sparkles:I = 0x7f0805fc
+.field public static final modules_voice_messages_native_images_unlocked:I = 0x7f0805fc
 
-.field public static final modules_voice_messages_native_images_vm_upsell_banner:I = 0x7f0805fd
+.field public static final modules_voice_messages_native_images_vm_bottom_sparkles:I = 0x7f0805fd
 
-.field public static final modules_voice_panel_native_images_activity:I = 0x7f0805fe
+.field public static final modules_voice_messages_native_images_vm_upsell_banner:I = 0x7f0805fe
 
-.field public static final modules_voice_panel_native_images_cameraswap:I = 0x7f0805ff
+.field public static final modules_voice_panel_native_images_activity:I = 0x7f0805ff
 
-.field public static final modules_voice_panel_native_images_chat:I = 0x7f080600
+.field public static final modules_voice_panel_native_images_cameraswap:I = 0x7f080600
 
-.field public static final modules_voice_panel_native_images_close:I = 0x7f080601
+.field public static final modules_voice_panel_native_images_chat:I = 0x7f080601
 
-.field public static final modules_voice_panel_native_images_deafen:I = 0x7f080602
+.field public static final modules_voice_panel_native_images_close:I = 0x7f080602
 
-.field public static final modules_voice_panel_native_images_disconnect:I = 0x7f080603
+.field public static final modules_voice_panel_native_images_deafen:I = 0x7f080603
 
-.field public static final modules_voice_panel_native_images_mute:I = 0x7f080604
+.field public static final modules_voice_panel_native_images_disconnect:I = 0x7f080604
 
-.field public static final modules_voice_panel_native_images_pipit:I = 0x7f080605
+.field public static final modules_voice_panel_native_images_mute:I = 0x7f080605
 
-.field public static final modules_voice_panel_native_images_playstream:I = 0x7f080606
+.field public static final modules_voice_panel_native_images_pipit:I = 0x7f080606
 
-.field public static final modules_voice_panel_native_images_stream:I = 0x7f080607
+.field public static final modules_voice_panel_native_images_playstream:I = 0x7f080607
 
-.field public static final modules_voice_panel_native_images_video:I = 0x7f080608
+.field public static final modules_voice_panel_native_images_stream:I = 0x7f080608
 
-.field public static final mtrl_dialog_background:I = 0x7f080609
+.field public static final modules_voice_panel_native_images_video:I = 0x7f080609
 
-.field public static final mtrl_dropdown_arrow:I = 0x7f08060a
+.field public static final mtrl_dialog_background:I = 0x7f08060a
 
-.field public static final mtrl_ic_arrow_drop_down:I = 0x7f08060b
+.field public static final mtrl_dropdown_arrow:I = 0x7f08060b
 
-.field public static final mtrl_ic_arrow_drop_up:I = 0x7f08060c
+.field public static final mtrl_ic_arrow_drop_down:I = 0x7f08060c
 
-.field public static final mtrl_ic_cancel:I = 0x7f08060d
+.field public static final mtrl_ic_arrow_drop_up:I = 0x7f08060d
 
-.field public static final mtrl_ic_error:I = 0x7f08060e
+.field public static final mtrl_ic_cancel:I = 0x7f08060e
 
-.field public static final mtrl_navigation_bar_item_background:I = 0x7f08060f
+.field public static final mtrl_ic_error:I = 0x7f08060f
 
-.field public static final mtrl_popupmenu_background:I = 0x7f080610
+.field public static final mtrl_navigation_bar_item_background:I = 0x7f080610
 
-.field public static final mtrl_popupmenu_background_overlay:I = 0x7f080611
+.field public static final mtrl_popupmenu_background:I = 0x7f080611
 
-.field public static final mtrl_tabs_default_indicator:I = 0x7f080612
+.field public static final mtrl_popupmenu_background_overlay:I = 0x7f080612
 
-.field public static final navigation_empty_icon:I = 0x7f080613
+.field public static final mtrl_tabs_default_indicator:I = 0x7f080613
 
-.field public static final node_modules_discordapp_common_images_flags_bg:I = 0x7f080614
+.field public static final navigation_empty_icon:I = 0x7f080614
 
-.field public static final node_modules_discordapp_common_images_flags_cs:I = 0x7f080615
+.field public static final node_modules_discordapp_common_images_flags_bg:I = 0x7f080615
 
-.field public static final node_modules_discordapp_common_images_flags_da:I = 0x7f080616
+.field public static final node_modules_discordapp_common_images_flags_cs:I = 0x7f080616
 
-.field public static final node_modules_discordapp_common_images_flags_de:I = 0x7f080617
+.field public static final node_modules_discordapp_common_images_flags_da:I = 0x7f080617
 
-.field public static final node_modules_discordapp_common_images_flags_el:I = 0x7f080618
+.field public static final node_modules_discordapp_common_images_flags_de:I = 0x7f080618
 
-.field public static final node_modules_discordapp_common_images_flags_engb:I = 0x7f080619
+.field public static final node_modules_discordapp_common_images_flags_el:I = 0x7f080619
 
-.field public static final node_modules_discordapp_common_images_flags_enus:I = 0x7f08061a
+.field public static final node_modules_discordapp_common_images_flags_engb:I = 0x7f08061a
 
-.field public static final node_modules_discordapp_common_images_flags_eses:I = 0x7f08061b
+.field public static final node_modules_discordapp_common_images_flags_enus:I = 0x7f08061b
 
-.field public static final node_modules_discordapp_common_images_flags_fi:I = 0x7f08061c
+.field public static final node_modules_discordapp_common_images_flags_eses:I = 0x7f08061c
 
-.field public static final node_modules_discordapp_common_images_flags_fr:I = 0x7f08061d
+.field public static final node_modules_discordapp_common_images_flags_fi:I = 0x7f08061d
 
-.field public static final node_modules_discordapp_common_images_flags_hi:I = 0x7f08061e
+.field public static final node_modules_discordapp_common_images_flags_fr:I = 0x7f08061e
 
-.field public static final node_modules_discordapp_common_images_flags_hr:I = 0x7f08061f
+.field public static final node_modules_discordapp_common_images_flags_hi:I = 0x7f08061f
 
-.field public static final node_modules_discordapp_common_images_flags_hu:I = 0x7f080620
+.field public static final node_modules_discordapp_common_images_flags_hr:I = 0x7f080620
 
-.field public static final node_modules_discordapp_common_images_flags_it:I = 0x7f080621
+.field public static final node_modules_discordapp_common_images_flags_hu:I = 0x7f080621
 
-.field public static final node_modules_discordapp_common_images_flags_ja:I = 0x7f080622
+.field public static final node_modules_discordapp_common_images_flags_it:I = 0x7f080622
 
-.field public static final node_modules_discordapp_common_images_flags_ko:I = 0x7f080623
+.field public static final node_modules_discordapp_common_images_flags_ja:I = 0x7f080623
 
-.field public static final node_modules_discordapp_common_images_flags_lt:I = 0x7f080624
+.field public static final node_modules_discordapp_common_images_flags_ko:I = 0x7f080624
 
-.field public static final node_modules_discordapp_common_images_flags_nl:I = 0x7f080625
+.field public static final node_modules_discordapp_common_images_flags_lt:I = 0x7f080625
 
-.field public static final node_modules_discordapp_common_images_flags_no:I = 0x7f080626
+.field public static final node_modules_discordapp_common_images_flags_nl:I = 0x7f080626
 
-.field public static final node_modules_discordapp_common_images_flags_pl:I = 0x7f080627
+.field public static final node_modules_discordapp_common_images_flags_no:I = 0x7f080627
 
-.field public static final node_modules_discordapp_common_images_flags_ptbr:I = 0x7f080628
+.field public static final node_modules_discordapp_common_images_flags_pl:I = 0x7f080628
 
-.field public static final node_modules_discordapp_common_images_flags_ro:I = 0x7f080629
+.field public static final node_modules_discordapp_common_images_flags_ptbr:I = 0x7f080629
 
-.field public static final node_modules_discordapp_common_images_flags_ru:I = 0x7f08062a
+.field public static final node_modules_discordapp_common_images_flags_ro:I = 0x7f08062a
 
-.field public static final node_modules_discordapp_common_images_flags_svse:I = 0x7f08062b
+.field public static final node_modules_discordapp_common_images_flags_ru:I = 0x7f08062b
 
-.field public static final node_modules_discordapp_common_images_flags_th:I = 0x7f08062c
+.field public static final node_modules_discordapp_common_images_flags_svse:I = 0x7f08062c
 
-.field public static final node_modules_discordapp_common_images_flags_tr:I = 0x7f08062d
+.field public static final node_modules_discordapp_common_images_flags_th:I = 0x7f08062d
 
-.field public static final node_modules_discordapp_common_images_flags_uk:I = 0x7f08062e
+.field public static final node_modules_discordapp_common_images_flags_tr:I = 0x7f08062e
 
-.field public static final node_modules_discordapp_common_images_flags_vi:I = 0x7f08062f
+.field public static final node_modules_discordapp_common_images_flags_uk:I = 0x7f08062f
 
-.field public static final node_modules_discordapp_common_images_flags_zhcn:I = 0x7f080630
+.field public static final node_modules_discordapp_common_images_flags_vi:I = 0x7f080630
 
-.field public static final node_modules_discordapp_common_images_flags_zhtw:I = 0x7f080631
+.field public static final node_modules_discordapp_common_images_flags_zhcn:I = 0x7f080631
 
-.field public static final node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080632
+.field public static final node_modules_discordapp_common_images_flags_zhtw:I = 0x7f080632
 
-.field public static final node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080633
+.field public static final node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080633
 
-.field public static final node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080634
+.field public static final node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080634
 
-.field public static final node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080635
+.field public static final node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080635
 
-.field public static final node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080636
+.field public static final node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080636
 
-.field public static final node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080637
+.field public static final node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080637
 
-.field public static final node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080638
+.field public static final node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080638
 
-.field public static final node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080639
+.field public static final node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080639
 
-.field public static final notification_action_background:I = 0x7f08063a
+.field public static final node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f08063a
 
-.field public static final notification_bg:I = 0x7f08063b
+.field public static final notification_action_background:I = 0x7f08063b
 
-.field public static final notification_bg_low:I = 0x7f08063c
+.field public static final notification_bg:I = 0x7f08063c
 
-.field public static final notification_bg_low_normal:I = 0x7f08063d
+.field public static final notification_bg_low:I = 0x7f08063d
 
-.field public static final notification_bg_low_pressed:I = 0x7f08063e
+.field public static final notification_bg_low_normal:I = 0x7f08063e
 
-.field public static final notification_bg_normal:I = 0x7f08063f
+.field public static final notification_bg_low_pressed:I = 0x7f08063f
 
-.field public static final notification_bg_normal_pressed:I = 0x7f080640
+.field public static final notification_bg_normal:I = 0x7f080640
 
-.field public static final notification_icon_background:I = 0x7f080641
+.field public static final notification_bg_normal_pressed:I = 0x7f080641
 
-.field public static final notification_template_icon_bg:I = 0x7f080642
+.field public static final notification_icon_background:I = 0x7f080642
 
-.field public static final notification_template_icon_low_bg:I = 0x7f080643
+.field public static final notification_template_icon_bg:I = 0x7f080643
 
-.field public static final notification_tile_bg:I = 0x7f080644
+.field public static final notification_template_icon_low_bg:I = 0x7f080644
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f080645
+.field public static final notification_tile_bg:I = 0x7f080645
 
-.field public static final overlay:I = 0x7f080646
+.field public static final notify_panel_notification_icon_bg:I = 0x7f080646
 
-.field public static final redbox_top_border_background:I = 0x7f080647
+.field public static final overlay:I = 0x7f080647
 
-.field public static final test_custom_background:I = 0x7f080648
+.field public static final redbox_top_border_background:I = 0x7f080648
 
-.field public static final test_level_drawable:I = 0x7f080649
+.field public static final test_custom_background:I = 0x7f080649
 
-.field public static final tooltip_frame_dark:I = 0x7f08064a
+.field public static final test_level_drawable:I = 0x7f08064a
 
-.field public static final tooltip_frame_light:I = 0x7f08064b
+.field public static final tooltip_frame_dark:I = 0x7f08064b
 
-.field public static final trash_bg:I = 0x7f08064c
+.field public static final tooltip_frame_light:I = 0x7f08064c
 
-.field public static final ucrop_crop:I = 0x7f08064d
+.field public static final trash_bg:I = 0x7f08064d
 
-.field public static final ucrop_ic_angle:I = 0x7f08064e
+.field public static final ucrop_crop:I = 0x7f08064e
 
-.field public static final ucrop_ic_crop:I = 0x7f08064f
+.field public static final ucrop_ic_angle:I = 0x7f08064f
 
-.field public static final ucrop_ic_crop_unselected:I = 0x7f080650
+.field public static final ucrop_ic_crop:I = 0x7f080650
 
-.field public static final ucrop_ic_cross:I = 0x7f080651
+.field public static final ucrop_ic_crop_unselected:I = 0x7f080651
 
-.field public static final ucrop_ic_done:I = 0x7f080652
+.field public static final ucrop_ic_cross:I = 0x7f080652
 
-.field public static final ucrop_ic_next:I = 0x7f080653
+.field public static final ucrop_ic_done:I = 0x7f080653
 
-.field public static final ucrop_ic_reset:I = 0x7f080654
+.field public static final ucrop_ic_next:I = 0x7f080654
 
-.field public static final ucrop_ic_rotate:I = 0x7f080655
+.field public static final ucrop_ic_reset:I = 0x7f080655
 
-.field public static final ucrop_ic_rotate_unselected:I = 0x7f080656
+.field public static final ucrop_ic_rotate:I = 0x7f080656
 
-.field public static final ucrop_ic_scale:I = 0x7f080657
+.field public static final ucrop_ic_rotate_unselected:I = 0x7f080657
 
-.field public static final ucrop_ic_scale_unselected:I = 0x7f080658
+.field public static final ucrop_ic_scale:I = 0x7f080658
 
-.field public static final ucrop_rotate:I = 0x7f080659
+.field public static final ucrop_ic_scale_unselected:I = 0x7f080659
 
-.field public static final ucrop_scale:I = 0x7f08065a
+.field public static final ucrop_rotate:I = 0x7f08065a
 
-.field public static final ucrop_shadow_upside:I = 0x7f08065b
+.field public static final ucrop_scale:I = 0x7f08065b
 
-.field public static final ucrop_vector_ic_crop:I = 0x7f08065c
+.field public static final ucrop_shadow_upside:I = 0x7f08065c
 
-.field public static final ucrop_vector_loader:I = 0x7f08065d
+.field public static final ucrop_vector_ic_crop:I = 0x7f08065d
 
-.field public static final ucrop_vector_loader_animated:I = 0x7f08065e
+.field public static final ucrop_vector_loader:I = 0x7f08065e
 
-.field public static final ucrop_wrapper_controls_shape:I = 0x7f08065f
+.field public static final ucrop_vector_loader_animated:I = 0x7f08065f
+
+.field public static final ucrop_wrapper_controls_shape:I = 0x7f080660
 
 
 # direct methods

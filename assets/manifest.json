@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "177202",
+        "build": "177203",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "c0a63807b6ee736deb59943e311d75e8",
+        "app/src/main/assets/index.android.bundle": "57f4cc888ec1e231a839ec2e0b986594",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -1207,6 +1207,7 @@
         "app/src/main/res/drawable-xhdpi/modules_contact_sync_native_images_cta.png": "9663ab282793c0ac4a46f576c8aafc61",
         "app/src/main/res/drawable-xhdpi/modules_contact_sync_native_images_emptysuggestionsheader.png": "394e3dceb831069555fc8c0281f8f78c",
         "app/src/main/res/drawable-xhdpi/modules_contact_sync_native_images_headerart.png": "8229f0b5edb53b42a598ae759f41a527",
+        "app/src/main/res/drawable-xhdpi/modules_contact_sync_native_images_headerartonboarding.png": "966bcd5e2ed3a926cf6eb6f5f0133150",
         "app/src/main/res/drawable-xhdpi/modules_contact_sync_native_images_ic_contact_sync.png": "a33292a0aa39adeb220eec2f13095531",
         "app/src/main/res/drawable-xhdpi/modules_contacts_images_iconaddfriend.png": "f8836a4ec4f6e2fd12865386d666980c",
         "app/src/main/res/drawable-xhdpi/modules_contacts_images_iconcopylink.png": "35cacc2d2453af47251f49f691a76e87",
@@ -2355,6 +2356,7 @@
         "app/src/main/res/drawable-xxhdpi/modules_contact_sync_native_images_cta.png": "e9054ee11d508d09c1c6136eaa6e6fb4",
         "app/src/main/res/drawable-xxhdpi/modules_contact_sync_native_images_emptysuggestionsheader.png": "acd88258b7a6e96a5da20b9843a82e12",
         "app/src/main/res/drawable-xxhdpi/modules_contact_sync_native_images_headerart.png": "f2db781a60ba36c94a87dee111794ffc",
+        "app/src/main/res/drawable-xxhdpi/modules_contact_sync_native_images_headerartonboarding.png": "60f0247a5d8d5535c3ccf8369c5c7631",
         "app/src/main/res/drawable-xxhdpi/modules_contact_sync_native_images_ic_contact_sync.png": "1becbd612708d98dd36f6de279e5deb6",
         "app/src/main/res/drawable-xxhdpi/modules_contacts_images_iconaddfriend.png": "3f7d77c22555a105e6173be9583bf30c",
         "app/src/main/res/drawable-xxhdpi/modules_contacts_images_iconcopylink.png": "f98c17ce4a46146be38edad46b70b854",

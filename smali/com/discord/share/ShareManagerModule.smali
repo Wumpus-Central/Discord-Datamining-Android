@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u000b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0005\u001a\u00020\u0006H\u0016J\u0008\u0010\u0007\u001a\u00020\u0008H\u0007J\u001a\u0010\t\u001a\u00020\u00082\u0008\u0010\n\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u000b\u001a\u00020\u0006H\u0007J\u001c\u0010\u000c\u001a\u00020\u00082\u0008\u0010\r\u001a\u0004\u0018\u00010\u00062\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0006H\u0007J&\u0010\u000f\u001a\u00020\u00082\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u00062\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00062\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0006H\u0007\u00a8\u0006\u0013"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\r\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0007\u001a\u00020\u0008H\u0016J\u0008\u0010\t\u001a\u00020\nH\u0016J\u0008\u0010\u000b\u001a\u00020\nH\u0016J\u0008\u0010\u000c\u001a\u00020\nH\u0007J\u001a\u0010\r\u001a\u00020\n2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u00082\u0006\u0010\u000f\u001a\u00020\u0008H\u0007J\u001c\u0010\u0010\u001a\u00020\n2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00082\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0008H\u0007J&\u0010\u0013\u001a\u00020\n2\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u00082\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00082\u0008\u0010\u0016\u001a\u0004\u0018\u00010\u0008H\u0007R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"
     }
     d2 = {
         "Lcom/discord/share/ShareManagerModule;",
@@ -14,10 +14,14 @@
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
+        "shareBroadcastReceiver",
+        "Lcom/discord/share/ShareBroadcastReceiver;",
         "getName",
         "",
-        "launchApp",
+        "initialize",
         "",
+        "invalidate",
+        "launchApp",
         "setAuthenticationToken",
         "authenticationToken",
         "superProperties",
@@ -40,6 +44,10 @@
 .end annotation
 
 
+# instance fields
+.field private final shareBroadcastReceiver:Lcom/discord/share/ShareBroadcastReceiver;
+
+
 # direct methods
 .method public constructor <init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
     .locals 1
@@ -59,14 +67,20 @@
     .line 7
     .line 8
     .line 9
-    return-void
+    new-instance v0, Lcom/discord/share/ShareBroadcastReceiver;
+
     .line 10
     .line 11
+    invoke-direct {v0, p1}, Lcom/discord/share/ShareBroadcastReceiver;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+
     .line 12
     .line 13
     .line 14
+    iput-object v0, p0, Lcom/discord/share/ShareManagerModule;->shareBroadcastReceiver:Lcom/discord/share/ShareBroadcastReceiver;
+
     .line 15
     .line 16
+    return-void
     .line 17
     .line 18
     .line 19
@@ -107,6 +121,142 @@
     const-string v0, "ShareManager"
 
     return-object v0
+.end method
+
+.method public initialize()V
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lcom/facebook/react/bridge/BaseJavaModule;->initialize()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lcom/discord/share/ShareBroadcastReceiver;->Companion:Lcom/discord/share/ShareBroadcastReceiver$Companion;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    const-string v2, "reactApplicationContext"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v2, p0, Lcom/discord/share/ShareManagerModule;->shareBroadcastReceiver:Lcom/discord/share/ShareBroadcastReceiver;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1, v2}, Lcom/discord/share/ShareBroadcastReceiver$Companion;->register(Landroid/content/Context;Lcom/discord/share/ShareBroadcastReceiver;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+.end method
+
+.method public invalidate()V
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lcom/facebook/react/bridge/BaseJavaModule;->invalidate()V
+
+    .line 2
+    .line 3
+    .line 4
+    :try_start_0
+    sget-object v0, Lcom/discord/share/ShareBroadcastReceiver;->Companion:Lcom/discord/share/ShareBroadcastReceiver$Companion;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    const-string v2, "reactApplicationContext"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v2, p0, Lcom/discord/share/ShareManagerModule;->shareBroadcastReceiver:Lcom/discord/share/ShareBroadcastReceiver;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1, v2}, Lcom/discord/share/ShareBroadcastReceiver$Companion;->unregister(Landroid/content/Context;Lcom/discord/share/ShareBroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 18
+    .line 19
+    .line 20
+    :catch_0
+    return-void
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
 .end method
 
 .method public final launchApp()V
@@ -462,102 +612,116 @@
     .line 102
     .line 103
     :goto_6
-    invoke-static {v4, v1}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+    sget-object v2, Lcom/discord/share/ShareBroadcastReceiver;->Companion:Lcom/discord/share/ShareBroadcastReceiver$Companion;
 
     .line 104
     .line 105
+    invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getReactApplicationContext()Lcom/facebook/react/bridge/ReactApplicationContext;
+
     .line 106
-    move-result-object v1
-
     .line 107
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
     .line 108
-    .line 109
-    .line 110
-    :cond_7
-    return-void
+    move-result-object v3
 
+    .line 109
+    const-string v5, "reactApplicationContext"
+
+    .line 110
     .line 111
-    :cond_8
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-static {v3, v5}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 112
     .line 113
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 114
+    invoke-virtual {v2, v3}, Lcom/discord/share/ShareBroadcastReceiver$Companion;->getPendingIntentSender(Landroid/content/Context;)Landroid/content/IntentSender;
+
     .line 115
     .line 116
-    const-string v3, "Text or url must not be null - text: "
-
     .line 117
+    move-result-object v2
+
     .line 118
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, v1, v2}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;Landroid/content/IntentSender;)Landroid/content/Intent;
 
     .line 119
     .line 120
     .line 121
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
     .line 122
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
     .line 123
     .line 124
-    const-string v0, " url "
-
     .line 125
+    :cond_7
+    return-void
+
     .line 126
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_8
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 127
     .line 128
-    .line 129
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 129
     .line 130
     .line 131
-    .line 132
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v3, "Text or url must not be null - text: "
 
+    .line 132
     .line 133
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 134
     .line 135
-    move-result-object v0
-
     .line 136
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 137
     .line 138
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
     .line 139
+    const-string v0, " url "
+
     .line 140
     .line 141
-    move-result-object v0
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 142
-    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
     .line 143
     .line 144
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 145
-    throw v1
     .line 146
     .line 147
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 148
     .line 149
     .line 150
+    move-result-object v0
+
     .line 151
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
     .line 152
     .line 153
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 154
     .line 155
     .line 156
+    move-result-object v0
+
     .line 157
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 158
     .line 159
     .line 160
+    throw v1
     .line 161
     .line 162
     .line 163
