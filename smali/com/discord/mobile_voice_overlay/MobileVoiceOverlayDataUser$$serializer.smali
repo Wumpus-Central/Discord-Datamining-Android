@@ -528,11 +528,11 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/c;->y()Z
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/c;->p()Z
 
     move-result v1
 
@@ -550,21 +550,21 @@
 
     sget-object v1, Lcom/discord/primitives/UserId$$serializer;->INSTANCE:Lcom/discord/primitives/UserId$$serializer;
 
-    invoke-interface {p1, v0, v5, v1, v6}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v5, v1, v6}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     sget-object v5, Lzi/a2;->a:Lzi/a2;
 
-    invoke-interface {p1, v0, v4, v5, v6}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v4, v5, v6}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
-    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->k(Lkotlinx/serialization/descriptors/SerialDescriptor;I)I
+    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->i(Lkotlinx/serialization/descriptors/SerialDescriptor;I)I
 
     move-result v2
 
@@ -594,7 +594,7 @@
     :goto_0
     if-eqz v10, :cond_6
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->o(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
 
     move-result v11
 
@@ -610,7 +610,7 @@
 
     if-ne v11, v2, :cond_1
 
-    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->k(Lkotlinx/serialization/descriptors/SerialDescriptor;I)I
+    invoke-interface {p1, v0, v2}, Lkotlinx/serialization/encoding/c;->i(Lkotlinx/serialization/descriptors/SerialDescriptor;I)I
 
     move-result v1
 
@@ -626,7 +626,7 @@
     throw p1
 
     :cond_2
-    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, v0, v3}, Lkotlinx/serialization/encoding/c;->C(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v6
 
@@ -637,7 +637,7 @@
     :cond_3
     sget-object v11, Lzi/a2;->a:Lzi/a2;
 
-    invoke-interface {p1, v0, v4, v11, v9}, Lkotlinx/serialization/encoding/c;->v(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v4, v11, v9}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v9
 
@@ -648,7 +648,7 @@
     :cond_4
     sget-object v11, Lcom/discord/primitives/UserId$$serializer;->INSTANCE:Lcom/discord/primitives/UserId$$serializer;
 
-    invoke-interface {p1, v0, v5, v11, v8}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0, v5, v11, v8}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -671,7 +671,7 @@
     move-object v1, v8
 
     :goto_1
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/c;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     new-instance p1, Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayDataUser;
 
@@ -731,13 +731,13 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
 
     move-result-object p1
 
     invoke-static {p2, p1, v0}, Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayDataUser;->write$Self(Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayDataUser;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     return-void
 .end method

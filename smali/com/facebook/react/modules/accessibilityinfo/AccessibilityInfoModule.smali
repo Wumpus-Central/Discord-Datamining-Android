@@ -1337,7 +1337,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private updateAndSendReduceMotionChangeEvent()V
@@ -1561,7 +1560,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1694,7 +1692,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -2197,7 +2194,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public isReduceMotionEnabled(Lcom/facebook/react/bridge/Callback;)V
@@ -2295,7 +2291,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public isTouchExplorationEnabled(Lcom/facebook/react/bridge/Callback;)V
@@ -2393,7 +2388,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onHostDestroy()V

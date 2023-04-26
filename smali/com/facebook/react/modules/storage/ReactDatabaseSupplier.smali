@@ -123,7 +123,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private declared-synchronized closeDatabase()V
@@ -433,7 +432,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1012,7 +1010,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
@@ -1487,5 +1484,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

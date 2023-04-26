@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public c(IIIF)V
+.method public d(IIIF)V
     .locals 1
 
     .line 1
@@ -465,7 +465,7 @@
     .line 354
 .end method
 
-.method public d()V
+.method public e()V
     .locals 2
 
     iget-object v0, p0, Lcom/brentvatne/exoplayer/d$b;->k:Lcom/brentvatne/exoplayer/d;
@@ -481,7 +481,7 @@
     return-void
 .end method
 
-.method public synthetic e(II)V
+.method public synthetic f(II)V
     .locals 0
 
     invoke-static {p0, p1, p2}, Lg9/p;->a(Lg9/q;II)V
@@ -489,7 +489,7 @@
     return-void
 .end method
 
-.method public k(Ljava/util/List;)V
+.method public i(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -506,7 +506,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->k(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->i(Ljava/util/List;)V
 
     return-void
 .end method

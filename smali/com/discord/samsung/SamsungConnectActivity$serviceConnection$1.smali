@@ -264,7 +264,7 @@
 
     .line 45
     :cond_0
-    invoke-interface {p1, v0, v1, v2, v3}, Lcom/msc/sa/aidl/a;->F(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
+    invoke-interface {p1, v0, v1, v2, v3}, Lcom/msc/sa/aidl/a;->U(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
 
     .line 46
     .line 47
@@ -383,7 +383,7 @@
 
     .line 104
     .line 105
-    invoke-interface {p1, v1, v7, v0}, Lcom/msc/sa/aidl/a;->O(ILjava/lang/String;Landroid/os/Bundle;)Z
+    invoke-interface {p1, v1, v7, v0}, Lcom/msc/sa/aidl/a;->X(ILjava/lang/String;Landroid/os/Bundle;)Z
 
     .line 106
     .line 107

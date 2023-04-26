@@ -103,8 +103,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method static synthetic a(Lcom/reactnativecommunity/netinfo/a;)Lcom/reactnativecommunity/netinfo/a$b;
@@ -282,9 +280,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private h()V
@@ -418,9 +413,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private i()V
@@ -471,7 +463,6 @@
     return-void
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private j()V
@@ -520,7 +511,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private l()V
@@ -569,7 +559,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -614,7 +603,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public k()V
@@ -657,5 +645,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method

@@ -500,7 +500,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 2
     .line 3
@@ -512,7 +512,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 8
     .line 9
@@ -736,7 +736,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 2
     .line 3

@@ -146,7 +146,7 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/h$g;->k:Lcom/google/android/exoplayer2/upstream/h$f;
 
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/h$f;->j()V
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/h$f;->p()V
 
     return-void
 .end method

@@ -165,9 +165,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static final b(Lcom/mrousavy/camera/CameraView;)V
@@ -225,7 +222,7 @@
     .line 23
     .line 24
     .line 25
-    invoke-virtual {p0}, Li0/x0;->p()V
+    invoke-virtual {p0}, Li0/x0;->n()V
 
     .line 26
     .line 27
@@ -304,9 +301,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static final c(Lcom/mrousavy/camera/CameraView;Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Callback;)V
@@ -1284,7 +1278,7 @@
     .line 23
     .line 24
     .line 25
-    invoke-virtual {v0}, Li0/x0;->s()V
+    invoke-virtual {v0}, Li0/x0;->p()V
 
     .line 26
     .line 27
@@ -1385,7 +1379,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

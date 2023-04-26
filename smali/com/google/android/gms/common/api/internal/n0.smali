@@ -755,7 +755,7 @@
     move-result-object p2
 
     .line 39
-    invoke-virtual {p2}, Lt9/a;->v()I
+    invoke-virtual {p2}, Lt9/a;->x()I
 
     .line 40
     .line 41
@@ -1418,7 +1418,7 @@
     move-result-object v1
 
     .line 34
-    invoke-virtual {v1}, Lt9/a;->v()I
+    invoke-virtual {v1}, Lt9/a;->x()I
 
     .line 35
     .line 36
@@ -1443,7 +1443,7 @@
     move-result-object v0
 
     .line 47
-    invoke-virtual {v0}, Lt9/a;->G()Landroid/app/PendingIntent;
+    invoke-virtual {v0}, Lt9/a;->D()Landroid/app/PendingIntent;
 
     .line 48
     .line 49

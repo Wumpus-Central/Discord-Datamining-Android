@@ -601,7 +601,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private isRTLForced(Landroid/content/Context;)Z
@@ -691,7 +690,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private setPref(Landroid/content/Context;Ljava/lang/String;Z)V
@@ -1337,7 +1335,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public forceRTL(Landroid/content/Context;Z)V
@@ -1623,7 +1620,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public swapLeftAndRightInRTL(Landroid/content/Context;Z)V

@@ -147,7 +147,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final resolveRawResId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
@@ -1077,7 +1076,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final play(I)V
@@ -1195,7 +1193,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final prepare(Ljava/lang/String;Ljava/lang/String;ILcom/facebook/react/bridge/Callback;)V
@@ -2066,7 +2063,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setCurrentTime(II)V
@@ -3038,5 +3034,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

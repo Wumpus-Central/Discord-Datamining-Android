@@ -76,7 +76,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -548,6 +547,206 @@
     return p1
 .end method
 
+.method public k(Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->p:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public l(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->p:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public m(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->p:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public n(Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->o:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public o(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->o:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
 .method public onDescendantInvalidated(Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
@@ -603,62 +802,13 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
-.method public setHeight(Lcom/facebook/react/bridge/Dynamic;)V
+.method public p(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "height"
-    .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    iput-object p1, p0, Lcom/horcrux/svg/i;->p:Lcom/horcrux/svg/SVGLength;
-
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-.end method
-
-.method public setWidth(Lcom/facebook/react/bridge/Dynamic;)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "width"
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
 
     .line 2
     .line 3
@@ -692,17 +842,13 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setX(Lcom/facebook/react/bridge/Dynamic;)V
+.method public q(Lcom/facebook/react/bridge/Dynamic;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "x"
-    .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
 
     .line 2
     .line 3
@@ -736,17 +882,93 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setY(Lcom/facebook/react/bridge/Dynamic;)V
+.method public r(Ljava/lang/Double;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "y"
-    .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->m:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public s(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->m:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public t(Lcom/facebook/react/bridge/Dynamic;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
 
     .line 2
     .line 3
@@ -780,5 +1002,84 @@
     .line 24
     .line 25
     .line 26
-    .line 27
+.end method
+
+.method public u(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->n:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public v(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/i;->n:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
 .end method

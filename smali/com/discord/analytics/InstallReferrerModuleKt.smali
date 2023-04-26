@@ -94,7 +94,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-interface {v0, v2}, Lkotlinx/coroutines/CancellableContinuation;->m(Lkotlin/jvm/functions/Function1;)V
+    invoke-interface {v0, v2}, Lkotlinx/coroutines/CancellableContinuation;->k(Lkotlin/jvm/functions/Function1;)V
 
     .line 25
     .line 26
@@ -185,7 +185,7 @@
     .line 66
     .line 67
     :cond_0
-    invoke-virtual {v0}, Lkotlinx/coroutines/p;->x()Ljava/lang/Object;
+    invoke-virtual {v0}, Lkotlinx/coroutines/p;->y()Ljava/lang/Object;
 
     .line 68
     .line 69

@@ -99,7 +99,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()I
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->P()I
 
     move-result v0
 
@@ -116,7 +116,7 @@
     :cond_0
     iget-boolean v0, p0, Lcom/discord/media_player/MediaPlayerManagerModule$toggle$1;->$play:Z
 
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->y(Z)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->q(Z)V
 
     .line 5
     iget-object p1, p0, Lcom/discord/media_player/MediaPlayerManagerModule$toggle$1;->this$0:Lcom/discord/media_player/MediaPlayerManagerModule;

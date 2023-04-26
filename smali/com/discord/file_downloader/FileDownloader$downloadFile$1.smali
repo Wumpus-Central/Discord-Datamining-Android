@@ -498,7 +498,7 @@
 
     move-result-object v8
 
-    invoke-interface {v5, v8}, Lokio/BufferedSink;->a0(Lokio/Source;)J
+    invoke-interface {v5, v8}, Lokio/BufferedSink;->N(Lokio/Source;)J
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 

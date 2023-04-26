@@ -264,7 +264,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public parse(Ljava/util/regex/Matcher;Lcom/discord/simpleast/core/parser/Parser;Ljava/lang/Object;)Lcom/discord/simpleast/core/parser/ParseSpec;

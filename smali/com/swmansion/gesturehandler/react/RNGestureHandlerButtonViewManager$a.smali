@@ -24,7 +24,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0007\n\u0002\u0008,\n\u0002\u0010\t\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u0000 T2\u00020\u00012\u00020\u0002:\u0001UB\u0011\u0012\u0008\u0010Q\u001a\u0004\u0018\u00010P\u00a2\u0006\u0004\u0008R\u0010SJ\u0008\u0010\u0004\u001a\u00020\u0003H\u0002J\u0008\u0010\u0006\u001a\u00020\u0005H\u0002J\u0008\u0010\u0008\u001a\u00020\u0007H\u0002J\u0018\u0010\u000c\u001a\u00020\u00072\u000e\u0008\u0002\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\n0\tH\u0002J\u0010\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\rH\u0016J\u0010\u0010\u0012\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u0010H\u0016J\u0010\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u0010H\u0017J\u0006\u0010\u0015\u001a\u00020\u0005J0\u0010\u001a\u001a\u00020\u00052\u0006\u0010\u0016\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0019\u001a\u00020\rH\u0014J\u0018\u0010\u001e\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u001bH\u0016J\u0008\u0010\u0019\u001a\u00020\u0007H\u0016J\u0010\u0010\u001f\u001a\u00020\u00052\u0006\u0010\u0013\u001a\u00020\u0010H\u0016J\u0008\u0010 \u001a\u00020\u0007H\u0016J\u0010\u0010\"\u001a\u00020\u00052\u0006\u0010!\u001a\u00020\u0007H\u0016J\u0018\u0010#\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u001bH\u0016R.\u0010*\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\r8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008$\u0010%\u001a\u0004\u0008&\u0010\'\"\u0004\u0008(\u0010)R.\u0010.\u001a\u0004\u0018\u00010\r2\u0008\u0010+\u001a\u0004\u0018\u00010\r8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0006\u0010%\u001a\u0004\u0008,\u0010\'\"\u0004\u0008-\u0010)R*\u00105\u001a\u00020\u00072\u0006\u0010/\u001a\u00020\u00078\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0008\u00100\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\"\u00108\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0015\u00100\u001a\u0004\u00086\u00102\"\u0004\u00087\u00104R*\u0010?\u001a\u00020\u001b2\u0006\u0010+\u001a\u00020\u001b8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00089\u0010:\u001a\u0004\u0008;\u0010<\"\u0004\u0008=\u0010>R\"\u0010C\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008@\u00100\u001a\u0004\u0008A\u00102\"\u0004\u0008B\u00104R\u0016\u0010F\u001a\u00020\r8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008D\u0010ER\u0016\u0010G\u001a\u00020\u00078\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0018\u00100R\u0016\u0010K\u001a\u00020H8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008I\u0010JR\u0016\u0010L\u001a\u00020\r8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0017\u0010ER\"\u0010N\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008M\u00100\u001a\u0004\u0008N\u00102\"\u0004\u0008O\u00104\u00a8\u0006V"
+        "\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0007\n\u0002\u0008-\n\u0002\u0010\t\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u0000 U2\u00020\u00012\u00020\u0002:\u0001VB\u0011\u0012\u0008\u0010R\u001a\u0004\u0018\u00010Q\u00a2\u0006\u0004\u0008S\u0010TJ\u0008\u0010\u0004\u001a\u00020\u0003H\u0002J\u0008\u0010\u0006\u001a\u00020\u0005H\u0002J\u0008\u0010\u0008\u001a\u00020\u0007H\u0002J\u0018\u0010\u000c\u001a\u00020\u00072\u000e\u0008\u0002\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\n0\tH\u0002J\u0010\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\rH\u0016J\u0010\u0010\u0012\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u0010H\u0016J\u0010\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u0010H\u0017J\u0006\u0010\u0015\u001a\u00020\u0005J0\u0010\u001a\u001a\u00020\u00052\u0006\u0010\u0016\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0019\u001a\u00020\rH\u0014J\u0018\u0010\u001e\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u001bH\u0016J\u0008\u0010\u001f\u001a\u00020\u0007H\u0016J\u0010\u0010 \u001a\u00020\u00052\u0006\u0010\u0013\u001a\u00020\u0010H\u0016J\u0008\u0010!\u001a\u00020\u0007H\u0016J\u0010\u0010#\u001a\u00020\u00052\u0006\u0010\"\u001a\u00020\u0007H\u0016J\u0018\u0010$\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u001bH\u0016R.\u0010+\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\r8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008%\u0010&\u001a\u0004\u0008\'\u0010(\"\u0004\u0008)\u0010*R.\u0010/\u001a\u0004\u0018\u00010\r2\u0008\u0010,\u001a\u0004\u0018\u00010\r8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0006\u0010&\u001a\u0004\u0008-\u0010(\"\u0004\u0008.\u0010*R*\u00106\u001a\u00020\u00072\u0006\u00100\u001a\u00020\u00078\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0008\u00101\u001a\u0004\u00082\u00103\"\u0004\u00084\u00105R\"\u00109\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0015\u00101\u001a\u0004\u00087\u00103\"\u0004\u00088\u00105R*\u0010@\u001a\u00020\u001b2\u0006\u0010,\u001a\u00020\u001b8\u0006@FX\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008:\u0010;\u001a\u0004\u0008<\u0010=\"\u0004\u0008>\u0010?R\"\u0010D\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008A\u00101\u001a\u0004\u0008B\u00103\"\u0004\u0008C\u00105R\u0016\u0010G\u001a\u00020\r8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008E\u0010FR\u0016\u0010H\u001a\u00020\u00078\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0018\u00101R\u0016\u0010L\u001a\u00020I8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008J\u0010KR\u0016\u0010M\u001a\u00020\r8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0017\u0010FR\"\u0010O\u001a\u00020\u00078\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008N\u00101\u001a\u0004\u0008O\u00103\"\u0004\u0008P\u00105\u00a8\u0006W"
     }
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;",
@@ -58,6 +58,7 @@
         "x",
         "y",
         "drawableHotspotChanged",
+        "d",
         "f",
         "performClick",
         "pressed",
@@ -208,7 +209,6 @@
     .line 22
     .line 23
     return-void
-    .line 24
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
@@ -266,6 +266,66 @@
     .line 26
     .line 27
     return-void
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
 .end method
 
 .method public static synthetic g(Landroid/view/View;)V
@@ -836,39 +896,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method private static final i(Landroid/view/View;)V
@@ -1039,9 +1066,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method static synthetic k(Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;Lkotlin/sequences/Sequence;ILjava/lang/Object;)Z
@@ -1101,7 +1125,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private final m()Z
@@ -1253,9 +1276,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -1271,6 +1291,33 @@
 .end method
 
 .method public b()Z
+    .locals 1
+
+    invoke-static {p0}, Lcf/m$d$a;->f(Lcf/m$d;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public c(Lcf/d;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcf/d<",
+            "*>;)Z"
+        }
+    .end annotation
+
+    invoke-static {p0, p1}, Lcf/m$d$a;->e(Lcf/m$d;Lcf/d;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public d()Z
     .locals 2
 
     .line 1
@@ -1308,34 +1355,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
-.end method
-
-.method public c()Z
-    .locals 1
-
-    invoke-static {p0}, Lcf/m$d$a;->f(Lcf/m$d;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public d(Lcf/d;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcf/d<",
-            "*>;)Z"
-        }
-    .end annotation
-
-    invoke-static {p0, p1}, Lcf/m$d$a;->e(Lcf/m$d;Lcf/d;)Z
-
-    move-result p1
-
-    return p1
 .end method
 
 .method public dispatchDrawableHotspotChanged(FF)V
@@ -1405,8 +1424,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public e(Landroid/view/MotionEvent;)V
@@ -1457,7 +1474,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final getBorderRadius()F
@@ -2101,39 +2117,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -2187,7 +2170,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected onLayout(ZIIII)V
@@ -2342,9 +2324,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public performClick()Z
@@ -2477,9 +2456,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public setBackgroundColor(I)V
@@ -2518,7 +2494,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setBorderRadius(F)V
@@ -2569,7 +2544,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setExclusive(Z)V
@@ -2745,9 +2719,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final setRippleColor(Ljava/lang/Integer;)V
@@ -2786,7 +2757,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setRippleRadius(Ljava/lang/Integer;)V
@@ -2825,7 +2795,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public final setTouched(Z)V
@@ -2880,5 +2849,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

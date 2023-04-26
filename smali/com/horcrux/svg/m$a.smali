@@ -83,7 +83,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public onNewResultImpl(Landroid/graphics/Bitmap;)V
@@ -137,5 +136,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

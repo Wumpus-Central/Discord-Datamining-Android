@@ -51,7 +51,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -94,7 +93,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public captureStartValues(Landroidx/transition/f0;)V
@@ -135,7 +133,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroidx/transition/f0;Landroidx/transition/f0;)Landroid/animation/Animator;
@@ -149,7 +146,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {v0, v1}, Landroidx/transition/g;->h(Z)V
+    invoke-virtual {v0, v1}, Landroidx/transition/g;->i(Z)V
 
     .line 5
     .line 6
@@ -359,7 +356,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
@@ -404,7 +400,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setPropagation(Landroidx/transition/b0;)V
@@ -447,7 +442,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setStartDelay(J)Landroidx/transition/Transition;
@@ -492,5 +486,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

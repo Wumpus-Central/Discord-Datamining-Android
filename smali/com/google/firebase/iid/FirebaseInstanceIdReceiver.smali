@@ -42,7 +42,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p2}, Ls9/a;->v()Landroid/content/Intent;
+    invoke-virtual {p2}, Ls9/a;->x()Landroid/content/Intent;
 
     .line 7
     .line 8
@@ -124,8 +124,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected c(Landroid/content/Context;Landroid/os/Bundle;)V
@@ -194,6 +192,4 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method

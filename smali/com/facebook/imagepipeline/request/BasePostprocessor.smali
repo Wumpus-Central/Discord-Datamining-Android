@@ -378,7 +378,7 @@
 
     .line 5
     :try_start_0
-    invoke-virtual {p2}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p2}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -387,21 +387,21 @@
     invoke-virtual {p0, v0, p1}, Lcom/facebook/imagepipeline/request/BasePostprocessor;->process(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
 
     .line 6
-    invoke-virtual {p2}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p2}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     return-object p1
 
     :catchall_0
     move-exception p1
 
-    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 8
     throw p1

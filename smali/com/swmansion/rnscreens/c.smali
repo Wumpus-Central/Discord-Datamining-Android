@@ -303,14 +303,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public static synthetic k0(Lcom/swmansion/rnscreens/c;Landroid/view/View;)V
@@ -397,8 +389,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private static final n0(Lcom/swmansion/rnscreens/c;)Z
@@ -453,7 +443,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -503,7 +492,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onAttachedToWindow()V
@@ -546,7 +534,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -582,7 +569,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public setOnCloseListener(Landroidx/appcompat/widget/SearchView$k;)V

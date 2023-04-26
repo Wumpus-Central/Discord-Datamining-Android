@@ -378,7 +378,7 @@
 
 
 # virtual methods
-.method public N(Ljava/nio/ByteBuffer;J)I
+.method public F(Ljava/nio/ByteBuffer;J)I
     .locals 5
 
     .line 1
@@ -1275,7 +1275,7 @@
 
     iget-wide v0, p0, Lcom/facebook/soloader/h;->p:J
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/facebook/soloader/h;->N(Ljava/nio/ByteBuffer;J)I
+    invoke-virtual {p0, p1, v0, v1}, Lcom/facebook/soloader/h;->F(Ljava/nio/ByteBuffer;J)I
 
     move-result p1
 

@@ -336,7 +336,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1}, Lu5/e;->v0(Lu5/e;)Z
+    invoke-static {p1}, Lu5/e;->n0(Lu5/e;)Z
 
     .line 28
     .line 29
@@ -348,7 +348,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lu5/e;->x()Li5/c;
+    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
 
     .line 34
     .line 35
@@ -427,7 +427,7 @@
 
     .line 65
     .line 66
-    invoke-interface {v2, v1}, Ls5/e;->b(I)I
+    invoke-interface {v2, v1}, Ls5/e;->a(I)I
 
     .line 67
     .line 68
@@ -588,7 +588,7 @@
 
     move-result v1
 
-    invoke-interface {v0, v1}, Ls5/e;->a(I)Lu5/i;
+    invoke-interface {v0, v1}, Ls5/e;->b(I)Lu5/i;
 
     move-result-object v0
 

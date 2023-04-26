@@ -22,17 +22,17 @@
 .method public abstract c(Ljava/lang/String;JJ)Le9/d;
 .end method
 
-.method public abstract d(Ljava/lang/String;JJ)Le9/d;
+.method public abstract d(Le9/d;)V
 .end method
 
-.method public abstract e(Le9/d;)V
+.method public abstract e(Ljava/lang/String;Le9/g;)V
 .end method
 
-.method public abstract f(Ljava/io/File;J)V
+.method public abstract f(Le9/d;)V
 .end method
 
-.method public abstract g(Ljava/lang/String;Le9/g;)V
+.method public abstract g(Ljava/lang/String;JJ)Le9/d;
 .end method
 
-.method public abstract h(Le9/d;)V
+.method public abstract h(Ljava/io/File;J)V
 .end method

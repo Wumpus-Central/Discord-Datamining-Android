@@ -141,7 +141,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static getPhysicalPixelsWritableMap(Landroid/util/DisplayMetrics;D)Lcom/facebook/react/bridge/WritableMap;
@@ -484,7 +483,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static initDisplayMetricsIfNotInitialized(Landroid/content/Context;)V
@@ -577,7 +575,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static setScreenDisplayMetrics(Landroid/util/DisplayMetrics;)V

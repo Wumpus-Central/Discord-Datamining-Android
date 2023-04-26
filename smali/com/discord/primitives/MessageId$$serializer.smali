@@ -433,7 +433,7 @@
     move-result-object v0
 
     .line 10
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Decoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->q(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Decoder;
 
     .line 11
     .line 12
@@ -441,7 +441,7 @@
     move-result-object p1
 
     .line 14
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->n()Ljava/lang/String;
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->z()Ljava/lang/String;
 
     .line 15
     .line 16
@@ -615,7 +615,7 @@
     move-result-object v0
 
     .line 15
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Encoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->k(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Encoder;
 
     .line 16
     .line 17

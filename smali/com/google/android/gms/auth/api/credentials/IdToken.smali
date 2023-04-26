@@ -443,14 +443,6 @@
     .line 107
 .end method
 
-.method public v()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->k:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
@@ -463,7 +455,7 @@
     move-result p2
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->v()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->x()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -485,7 +477,7 @@
     const/4 v0, 0x2
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->y()Ljava/lang/String;
 
     .line 16
     .line 17
@@ -694,7 +686,15 @@
     .line 213
 .end method
 
-.method public z()Ljava/lang/String;
+.method public x()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->k:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public y()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->l:Ljava/lang/String;

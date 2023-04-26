@@ -241,7 +241,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v8, v0}, Ld9/f;->f(Ld9/x;)V
+    invoke-virtual {v8, v0}, Ld9/f;->h(Ld9/x;)V
 
     .line 25
     .line 26

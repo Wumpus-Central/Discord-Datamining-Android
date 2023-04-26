@@ -76,7 +76,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static final b(Lcom/facebook/react/bridge/ReactContext;)Lcom/facebook/react/uimanager/UIManagerModule;
@@ -123,5 +122,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

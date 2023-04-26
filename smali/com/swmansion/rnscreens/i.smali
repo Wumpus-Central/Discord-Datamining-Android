@@ -93,7 +93,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public createViewManagers(Lcom/facebook/react/bridge/ReactApplicationContext;)Ljava/util/List;
@@ -257,7 +256,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

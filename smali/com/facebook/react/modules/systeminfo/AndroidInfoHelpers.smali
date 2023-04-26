@@ -167,7 +167,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static getFriendlyDeviceName()Ljava/lang/String;
@@ -392,7 +391,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static declared-synchronized getMetroHostPropValue()Ljava/lang/String;
@@ -1580,7 +1578,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static isRunningOnGenymotion()Z

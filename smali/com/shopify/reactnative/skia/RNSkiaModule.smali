@@ -71,7 +71,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -245,9 +244,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public invalidate()V
@@ -378,9 +374,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public onHostDestroy()V

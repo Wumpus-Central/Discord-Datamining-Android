@@ -194,7 +194,7 @@
     .line 2
     check-cast p1, Lkotlinx/serialization/json/e;
 
-    invoke-interface {p1}, Lkotlinx/serialization/json/e;->i()Lkotlinx/serialization/json/JsonElement;
+    invoke-interface {p1}, Lkotlinx/serialization/json/e;->g()Lkotlinx/serialization/json/JsonElement;
 
     move-result-object p1
 
@@ -259,7 +259,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lkotlinx/serialization/json/JsonPrimitive;->f()Z
+    invoke-virtual {v3}, Lkotlinx/serialization/json/JsonPrimitive;->e()Z
 
     move-result v3
 
@@ -490,7 +490,7 @@
     if-eqz p1, :cond_7
 
     .line 20
-    invoke-virtual {p1}, Lkotlinx/serialization/json/JsonPrimitive;->f()Z
+    invoke-virtual {p1}, Lkotlinx/serialization/json/JsonPrimitive;->e()Z
 
     move-result v0
 

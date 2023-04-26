@@ -205,7 +205,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public addRootNode(Lcom/facebook/react/uimanager/ReactShadowNode;)V
@@ -305,7 +304,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getNode(I)Lcom/facebook/react/uimanager/ReactShadowNode;
@@ -399,7 +397,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getRootNodeCount()I
@@ -573,7 +570,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public isRootNode(I)Z
@@ -665,7 +661,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeNode(I)V
@@ -788,7 +783,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeRootNode(I)V
@@ -922,5 +916,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

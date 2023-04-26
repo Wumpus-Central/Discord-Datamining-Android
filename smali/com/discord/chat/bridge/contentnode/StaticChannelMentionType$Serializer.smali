@@ -95,7 +95,7 @@
     .line 2
     sget-object v0, Lcom/discord/chat/bridge/contentnode/StaticChannelMentionType;->Companion:Lcom/discord/chat/bridge/contentnode/StaticChannelMentionType$Companion;
 
-    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->n()Ljava/lang/String;
+    invoke-interface {p1}, Lkotlinx/serialization/encoding/Decoder;->z()Ljava/lang/String;
 
     move-result-object p1
 

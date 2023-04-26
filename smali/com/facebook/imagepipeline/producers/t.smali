@@ -519,7 +519,7 @@
     .line 11
     .line 12
     :cond_0
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 13
     .line 14
@@ -535,7 +535,7 @@
     move-result-object v1
 
     .line 20
-    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 21
     .line 22

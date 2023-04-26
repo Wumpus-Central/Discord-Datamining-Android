@@ -77,12 +77,19 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
 # virtual methods
-.method public v()Ljava/util/Map;
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/google/firebase/messaging/m0;->c(Lcom/google/firebase/messaging/RemoteMessage;Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public x()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -133,13 +140,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lcom/google/firebase/messaging/m0;->c(Lcom/google/firebase/messaging/RemoteMessage;Landroid/os/Parcel;I)V
-
-    return-void
 .end method

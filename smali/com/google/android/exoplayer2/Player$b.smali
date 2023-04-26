@@ -15,10 +15,10 @@
 
 
 # virtual methods
-.method public abstract C(Lq8/l;)V
+.method public abstract N(Lq8/l;)V
 .end method
 
-.method public abstract H()Ljava/util/List;
+.method public abstract s()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -29,5 +29,5 @@
     .end annotation
 .end method
 
-.method public abstract N(Lq8/l;)V
+.method public abstract v(Lq8/l;)V
 .end method

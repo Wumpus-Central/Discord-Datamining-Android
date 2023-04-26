@@ -195,7 +195,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public abstract getModule(Ljava/lang/String;Lcom/facebook/react/bridge/ReactApplicationContext;)Lcom/facebook/react/bridge/NativeModule;
@@ -310,7 +309,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public abstract getReactModuleInfoProvider()Lcom/facebook/react/module/model/ReactModuleInfoProvider;

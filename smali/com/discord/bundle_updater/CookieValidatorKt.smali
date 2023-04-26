@@ -330,7 +330,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {p0}, Lokio/ByteString;->B()Ljava/lang/String;
+    invoke-virtual {p0}, Lokio/ByteString;->C()Ljava/lang/String;
 
     .line 57
     .line 58

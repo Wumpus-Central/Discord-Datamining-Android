@@ -81,5 +81,4 @@
     return-void
     .line 22
     .line 23
-    .line 24
 .end method

@@ -160,7 +160,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private A(Lcom/facebook/datasource/DataSource;)V
@@ -766,7 +765,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private F(Lcom/facebook/datasource/DataSource;)V
@@ -880,7 +878,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private declared-synchronized G(Lcom/facebook/datasource/DataSource;)Z
@@ -1003,7 +1000,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private H()Z
@@ -1078,7 +1074,7 @@
     move-result-object v1
 
     .line 33
-    invoke-interface {v0, v2, v1}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {v0, v2, v1}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     .line 34
     .line 35
@@ -1268,7 +1264,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -1497,7 +1492,7 @@
     .line 66
 .end method
 
-.method public declared-synchronized f()Ljava/lang/Object;
+.method public declared-synchronized g()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1522,7 +1517,7 @@
 
     .line 7
     .line 8
-    invoke-interface {v0}, Lcom/facebook/datasource/DataSource;->f()Ljava/lang/Object;
+    invoke-interface {v0}, Lcom/facebook/datasource/DataSource;->g()Ljava/lang/Object;
 
     .line 9
     .line 10

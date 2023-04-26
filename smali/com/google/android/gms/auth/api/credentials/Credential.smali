@@ -495,7 +495,7 @@
 
 
 # virtual methods
-.method public G()Ljava/lang/String;
+.method public D()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->q:Ljava/lang/String;
@@ -503,7 +503,7 @@
     return-object v0
 .end method
 
-.method public H()Ljava/util/List;
+.method public E()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -519,7 +519,7 @@
     return-object v0
 .end method
 
-.method public I()Ljava/lang/String;
+.method public J()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->l:Ljava/lang/String;
@@ -527,7 +527,7 @@
     return-object v0
 .end method
 
-.method public K()Ljava/lang/String;
+.method public L()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->o:Ljava/lang/String;
@@ -905,14 +905,6 @@
     .line 126
 .end method
 
-.method public v()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->p:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -947,7 +939,7 @@
     const/4 v1, 0x2
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->I()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->J()Ljava/lang/String;
 
     .line 16
     .line 17
@@ -979,7 +971,7 @@
     const/4 p2, 0x4
 
     .line 31
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->H()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->E()Ljava/util/List;
 
     .line 32
     .line 33
@@ -995,7 +987,7 @@
     const/4 p2, 0x5
 
     .line 39
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->K()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->L()Ljava/lang/String;
 
     .line 40
     .line 41
@@ -1011,7 +1003,7 @@
     const/4 p2, 0x6
 
     .line 47
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->v()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->x()Ljava/lang/String;
 
     .line 48
     .line 49
@@ -1028,7 +1020,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->G()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->D()Ljava/lang/String;
 
     .line 57
     .line 58
@@ -1045,7 +1037,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/Credential;->y()Ljava/lang/String;
 
     .line 66
     .line 67
@@ -1204,7 +1196,15 @@
     .line 213
 .end method
 
-.method public z()Ljava/lang/String;
+.method public x()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->p:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public y()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/Credential;->r:Ljava/lang/String;

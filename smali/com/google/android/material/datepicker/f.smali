@@ -138,7 +138,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public hashCode()I
@@ -186,20 +185,9 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
-
-    iget-wide v0, p0, Lcom/google/android/material/datepicker/f;->k:J
-
-    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
-
-    return-void
-.end method
-
-.method public x(J)Z
+.method public m(J)Z
     .locals 2
 
     iget-wide v0, p0, Lcom/google/android/material/datepicker/f;->k:J
@@ -217,4 +205,14 @@
 
     :goto_0
     return p1
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 2
+
+    iget-wide v0, p0, Lcom/google/android/material/datepicker/f;->k:J
+
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
+
+    return-void
 .end method

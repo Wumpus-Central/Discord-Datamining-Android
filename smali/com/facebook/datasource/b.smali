@@ -143,7 +143,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected abstract onFailureImpl(Lcom/facebook/datasource/DataSource;)V
@@ -266,7 +265,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected abstract onNewResultImpl(Lcom/facebook/datasource/DataSource;)V

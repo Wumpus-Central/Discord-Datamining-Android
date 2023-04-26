@@ -169,7 +169,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static final synthetic access$getReactEvents$p(Lcom/discord/user_search_worker/UserSearchWorkerManagerModule;)Lcom/discord/reactevents/ReactEvents;
@@ -291,7 +290,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final removeListeners(I)V

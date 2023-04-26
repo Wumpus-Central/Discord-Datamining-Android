@@ -161,7 +161,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/modules/websocket/WebSocketModule;)Ljava/util/Map;
@@ -351,7 +350,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static getDefaultOrigin(Ljava/lang/String;)Ljava/lang/String;
@@ -1974,7 +1972,7 @@
 
     .line 18
     :try_start_0
-    invoke-interface {p5, p1, p3}, Lokhttp3/WebSocket;->f(ILjava/lang/String;)Z
+    invoke-interface {p5, p1, p3}, Lokhttp3/WebSocket;->g(ILjava/lang/String;)Z
 
     .line 19
     .line 20

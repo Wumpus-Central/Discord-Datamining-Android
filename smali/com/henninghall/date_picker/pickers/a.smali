@@ -13,13 +13,13 @@
 
 
 # virtual methods
-.method public abstract a()Z
+.method public abstract a(IZ)V
 .end method
 
-.method public abstract b(IZ)V
+.method public abstract b(I)V
 .end method
 
-.method public abstract c(I)V
+.method public abstract c()Z
 .end method
 
 .method public abstract getDisplayedValues()[Ljava/lang/String;

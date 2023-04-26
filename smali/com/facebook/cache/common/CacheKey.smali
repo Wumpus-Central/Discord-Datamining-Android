@@ -4,13 +4,13 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/net/Uri;)Z
+.method public abstract a()Ljava/lang/String;
 .end method
 
-.method public abstract b()Z
+.method public abstract b(Landroid/net/Uri;)Z
 .end method
 
-.method public abstract c()Ljava/lang/String;
+.method public abstract c()Z
 .end method
 
 .method public abstract equals(Ljava/lang/Object;)Z

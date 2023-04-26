@@ -5023,7 +5023,7 @@
 
     .line 118
     :try_start_0
-    invoke-virtual {v12}, Lokhttp3/Response;->o0()Z
+    invoke-virtual {v12}, Lokhttp3/Response;->Y()Z
 
     .line 119
     .line 120
@@ -5453,7 +5453,7 @@
 
     .line 310
     :try_start_8
-    invoke-interface {v11, v3}, Lokio/BufferedSink;->a0(Lokio/Source;)J
+    invoke-interface {v11, v3}, Lokio/BufferedSink;->N(Lokio/Source;)J
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_3
 

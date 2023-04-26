@@ -6407,7 +6407,7 @@
     invoke-direct {v3, v4}, Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$onBindViewHolder$43;-><init>(Ljava/lang/Object;)V
 
     .line 162
-    invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function3;)V
+    invoke-virtual {v1, v2, v3}, Lcom/discord/chat/presentation/message/viewholder/PostPreviewEmbedViewHolder;->bind(Lcom/discord/chat/presentation/message/messagepart/PostPreviewEmbedMessageAccessory;Lkotlin/jvm/functions/Function4;)V
 
     :goto_7
     sget-object v1, Lkotlin/Unit;->a:Lkotlin/Unit;

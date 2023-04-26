@@ -1608,7 +1608,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v1}, Lq9/a;->v()I
+    invoke-virtual {v1}, Lq9/a;->x()I
 
     .line 26
     .line 27
@@ -1708,7 +1708,7 @@
 
 
 # virtual methods
-.method public G()Ljava/util/ArrayList;
+.method public D()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1728,7 +1728,7 @@
     return-object v0
 .end method
 
-.method public H()Ljava/lang/String;
+.method public E()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->q:Ljava/lang/String;
@@ -1736,7 +1736,7 @@
     return-object v0
 .end method
 
-.method public I()Z
+.method public J()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->p:Z
@@ -1744,7 +1744,7 @@
     return v0
 .end method
 
-.method public K()Z
+.method public L()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->n:Z
@@ -1833,7 +1833,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Scope;->v()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
 
     .line 37
     .line 38
@@ -2082,7 +2082,7 @@
     move-result v1
 
     .line 31
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->G()Ljava/util/ArrayList;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->D()Ljava/util/ArrayList;
 
     .line 32
     .line 33
@@ -2106,7 +2106,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->G()Ljava/util/ArrayList;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->D()Ljava/util/ArrayList;
 
     .line 44
     .line 45
@@ -2138,7 +2138,7 @@
 
     .line 57
     .line 58
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->h()Landroid/accounts/Account;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->r()Landroid/accounts/Account;
 
     .line 59
     .line 60
@@ -2154,7 +2154,7 @@
 
     .line 65
     :cond_3
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->h()Landroid/accounts/Account;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->r()Landroid/accounts/Account;
 
     .line 66
     .line 67
@@ -2191,7 +2191,7 @@
 
     .line 82
     .line 83
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->H()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->E()Ljava/lang/String;
 
     .line 84
     .line 85
@@ -2219,7 +2219,7 @@
 
     .line 95
     .line 96
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->H()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->E()Ljava/lang/String;
 
     .line 97
     .line 98
@@ -2248,7 +2248,7 @@
 
     .line 108
     .line 109
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->I()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->J()Z
 
     .line 110
     .line 111
@@ -2264,7 +2264,7 @@
 
     .line 116
     .line 117
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->K()Z
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->L()Z
 
     .line 118
     .line 119
@@ -2296,7 +2296,7 @@
 
     .line 132
     .line 133
-    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->z()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->y()Ljava/lang/String;
 
     .line 134
     .line 135
@@ -3025,14 +3025,6 @@
     .line 840
 .end method
 
-.method public h()Landroid/accounts/Account;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->m:Landroid/accounts/Account;
-
-    return-object v0
-.end method
-
 .method public hashCode()I
     .locals 5
 
@@ -3078,7 +3070,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v4}, Lcom/google/android/gms/common/api/Scope;->v()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
 
     .line 22
     .line 23
@@ -3233,18 +3225,10 @@
     .line 126
 .end method
 
-.method public v()Ljava/util/ArrayList;
+.method public r()Landroid/accounts/Account;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/ArrayList<",
-            "Lq9/a;",
-            ">;"
-        }
-    .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->s:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->m:Landroid/accounts/Account;
 
     return-object v0
 .end method
@@ -3273,7 +3257,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->G()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->D()Ljava/util/ArrayList;
 
     .line 12
     .line 13
@@ -3295,7 +3279,7 @@
     const/4 v1, 0x3
 
     .line 21
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->h()Landroid/accounts/Account;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->r()Landroid/accounts/Account;
 
     .line 22
     .line 23
@@ -3311,7 +3295,7 @@
     const/4 p2, 0x4
 
     .line 29
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->K()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->L()Z
 
     .line 30
     .line 31
@@ -3343,7 +3327,7 @@
     const/4 p2, 0x6
 
     .line 45
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->I()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->J()Z
 
     .line 46
     .line 47
@@ -3359,7 +3343,7 @@
     const/4 p2, 0x7
 
     .line 53
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->H()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->E()Ljava/lang/String;
 
     .line 54
     .line 55
@@ -3389,7 +3373,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->v()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->x()Ljava/util/ArrayList;
 
     .line 70
     .line 71
@@ -3406,7 +3390,7 @@
 
     .line 77
     .line 78
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->z()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->y()Ljava/lang/String;
 
     .line 79
     .line 80
@@ -3552,7 +3536,23 @@
     .line 213
 .end method
 
-.method public z()Ljava/lang/String;
+.method public x()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "Lq9/a;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->s:Ljava/util/ArrayList;
+
+    return-object v0
+.end method
+
+.method public y()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->t:Ljava/lang/String;

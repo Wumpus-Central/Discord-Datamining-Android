@@ -228,7 +228,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic a(Lcom/facebook/imagepipeline/core/a$b;)Z
@@ -474,5 +473,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

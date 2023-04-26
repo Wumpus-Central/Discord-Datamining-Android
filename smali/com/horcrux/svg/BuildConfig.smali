@@ -8,6 +8,8 @@
 
 .field public static final DEBUG:Z = false
 
+.field public static final IS_NEW_ARCHITECTURE_ENABLED:Z = false
+
 .field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "com.horcrux.svg"
 
 

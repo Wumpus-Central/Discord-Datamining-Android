@@ -50,7 +50,7 @@
     move-result-object p2
 
     .line 5
-    invoke-static {}, Lcom/facebook/common/references/CloseableReference;->k()Ljava/lang/Class;
+    invoke-static {}, Lcom/facebook/common/references/CloseableReference;->i()Ljava/lang/Class;
 
     .line 6
     .line 7

@@ -695,7 +695,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
@@ -783,7 +782,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onDestroy()V
@@ -1050,7 +1048,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onPause()V
@@ -1304,7 +1301,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public requestPermissions([Ljava/lang/String;ILcom/facebook/react/modules/core/PermissionListener;)V

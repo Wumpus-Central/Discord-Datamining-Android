@@ -142,7 +142,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic a(Lcom/facebook/datasource/e;)Ljava/util/List;
@@ -300,7 +299,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public bridge synthetic get()Ljava/lang/Object;

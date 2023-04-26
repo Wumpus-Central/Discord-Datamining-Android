@@ -62,7 +62,7 @@
     move-result-object v0
 
     .line 13
-    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->A()Z
+    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->F()Z
 
     .line 14
     .line 15
@@ -163,7 +163,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

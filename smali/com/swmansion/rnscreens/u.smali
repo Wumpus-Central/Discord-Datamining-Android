@@ -375,9 +375,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public static synthetic a(Lcom/swmansion/rnscreens/u;Landroid/view/View;)V
@@ -663,14 +660,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private final f()V
@@ -713,7 +702,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private final getScreen()Lcom/swmansion/rnscreens/j;
@@ -918,9 +906,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private final j(Ljava/lang/String;Lcom/facebook/react/bridge/WritableMap;)V
@@ -1001,8 +986,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 
@@ -1068,8 +1051,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final c()V
@@ -3325,7 +3306,6 @@
 
     .line 23
     return-object v0
-    .line 24
 .end method
 
 .method public final getToolbar()Lcom/swmansion/rnscreens/d;
@@ -3369,7 +3349,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final i(I)V
@@ -3408,7 +3387,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected onAttachedToWindow()V
@@ -3542,9 +3520,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -3586,7 +3561,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected onLayout(ZIIII)V

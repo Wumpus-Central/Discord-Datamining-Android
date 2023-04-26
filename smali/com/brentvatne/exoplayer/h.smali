@@ -2504,7 +2504,7 @@
 
     .line 6
     :goto_0
-    invoke-virtual {p1}, Ly7/a;->f()I
+    invoke-virtual {p1}, Ly7/a;->h()I
 
     .line 7
     .line 8

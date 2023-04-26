@@ -91,7 +91,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lokio/ByteString;->x()I
+    invoke-virtual {p1}, Lokio/ByteString;->y()I
 
     .line 12
     .line 13

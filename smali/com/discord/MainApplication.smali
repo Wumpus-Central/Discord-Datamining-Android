@@ -219,11 +219,11 @@
 
     .line 51
     .line 52
-    const-string v2, "177.0"
+    const-string v2, "177.1"
 
     .line 53
     .line 54
-    const v3, 0x2b430
+    const v3, 0x2b431
 
     .line 55
     .line 56

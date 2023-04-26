@@ -2322,7 +2322,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onRequestFailure(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Ljava/lang/Throwable;Z)V

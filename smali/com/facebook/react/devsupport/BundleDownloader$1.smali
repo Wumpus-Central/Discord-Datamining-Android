@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 16
-    invoke-interface {v0}, Lokhttp3/Call;->f()Z
+    invoke-interface {v0}, Lokhttp3/Call;->p()Z
 
     .line 17
     .line 18
@@ -325,7 +325,7 @@
     move-result-object p1
 
     .line 16
-    invoke-interface {p1}, Lokhttp3/Call;->f()Z
+    invoke-interface {p1}, Lokhttp3/Call;->p()Z
 
     .line 17
     .line 18
@@ -350,7 +350,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p2}, Lokhttp3/Response;->k0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
 
     .line 29
     .line 30
@@ -378,7 +378,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p2, p1}, Lokhttp3/Response;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Lokhttp3/Response;->r(Ljava/lang/String;)Ljava/lang/String;
 
     .line 43
     .line 44

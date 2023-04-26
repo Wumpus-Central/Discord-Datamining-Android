@@ -179,7 +179,7 @@
     add-int/2addr v1, v2
 
     .line 14
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->B()I
 
     .line 15
     .line 16
@@ -190,7 +190,7 @@
     add-int/2addr v1, v2
 
     .line 19
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->H()I
 
     .line 20
     .line 21
@@ -212,7 +212,7 @@
     move-result p3
 
     .line 29
-    invoke-interface {v0, p1, v1, p3}, Lcom/google/android/flexbox/a;->e(III)I
+    invoke-interface {v0, p1, v1, p3}, Lcom/google/android/flexbox/a;->c(III)I
 
     .line 30
     .line 31
@@ -228,7 +228,7 @@
     move-result p3
 
     .line 37
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->s()I
 
     .line 38
     .line 39
@@ -240,7 +240,7 @@
 
     .line 42
     .line 43
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->s()I
 
     .line 44
     .line 45
@@ -268,7 +268,7 @@
 
     .line 56
     :cond_0
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->g()I
 
     .line 57
     .line 58
@@ -280,7 +280,7 @@
 
     .line 61
     .line 62
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->g()I
 
     .line 63
     .line 64
@@ -627,7 +627,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->A()I
 
     .line 4
     .line 5
@@ -639,7 +639,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->H()I
 
     .line 9
     .line 10
@@ -859,7 +859,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->H()I
 
     .line 4
     .line 5
@@ -871,7 +871,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->A()I
 
     .line 9
     .line 10
@@ -1091,7 +1091,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->i()I
 
     .line 4
     .line 5
@@ -1103,7 +1103,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->B()I
 
     .line 9
     .line 10
@@ -1323,7 +1323,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->B()I
 
     .line 4
     .line 5
@@ -1335,7 +1335,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {p1}, Lcom/google/android/flexbox/b;->i()I
 
     .line 9
     .line 10
@@ -3046,7 +3046,7 @@
 
     .line 11
     :cond_0
-    invoke-interface {p6}, Lcom/google/android/flexbox/b;->F()Z
+    invoke-interface {p6}, Lcom/google/android/flexbox/b;->p()Z
 
     .line 12
     .line 13
@@ -3107,7 +3107,7 @@
 
     .line 36
     .line 37
-    invoke-interface {p2, p1, p7, p8}, Lcom/google/android/flexbox/a;->i(Landroid/view/View;II)I
+    invoke-interface {p2, p1, p7, p8}, Lcom/google/android/flexbox/a;->k(Landroid/view/View;II)I
 
     .line 38
     .line 39
@@ -3278,7 +3278,7 @@
 
     .line 48
     .line 49
-    invoke-interface {v11, v10}, Lcom/google/android/flexbox/a;->d(I)Landroid/view/View;
+    invoke-interface {v11, v10}, Lcom/google/android/flexbox/a;->i(I)Landroid/view/View;
 
     .line 50
     .line 51
@@ -3429,7 +3429,7 @@
 
     .line 121
     .line 122
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 123
     .line 124
@@ -3448,7 +3448,7 @@
     int-to-float v13, v13
 
     .line 131
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 132
     .line 133
@@ -3491,7 +3491,7 @@
     move-result v14
 
     .line 149
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->I()I
 
     .line 150
     .line 151
@@ -3503,7 +3503,7 @@
 
     .line 154
     .line 155
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->I()I
 
     .line 156
     .line 157
@@ -3523,7 +3523,7 @@
 
     .line 164
     .line 165
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 166
     .line 167
@@ -3669,7 +3669,7 @@
 
     .line 230
     .line 231
-    invoke-interface {v0, v10, v11}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v0, v10, v11}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 232
     .line 233
@@ -3693,7 +3693,7 @@
     .line 240
     .line 241
     :goto_2
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->B()I
 
     .line 242
     .line 243
@@ -3704,7 +3704,7 @@
     add-int/2addr v14, v0
 
     .line 246
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->H()I
 
     .line 247
     .line 248
@@ -3719,7 +3719,7 @@
 
     .line 252
     .line 253
-    invoke-interface {v0, v11}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v0, v11}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 254
     .line 255
@@ -3742,7 +3742,7 @@
 
     .line 263
     .line 264
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->i()I
 
     .line 265
     .line 266
@@ -3753,7 +3753,7 @@
     add-int/2addr v13, v10
 
     .line 269
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->A()I
 
     .line 270
     .line 271
@@ -3865,7 +3865,7 @@
 
     .line 320
     .line 321
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 322
     .line 323
@@ -3887,7 +3887,7 @@
     int-to-float v0, v0
 
     .line 331
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 332
     .line 333
@@ -3934,7 +3934,7 @@
     move-result v1
 
     .line 351
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->g()I
 
     .line 352
     .line 353
@@ -3946,7 +3946,7 @@
 
     .line 356
     .line 357
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->g()I
 
     .line 358
     .line 359
@@ -3966,7 +3966,7 @@
 
     .line 366
     .line 367
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->c()F
 
     .line 368
     .line 369
@@ -4100,7 +4100,7 @@
 
     .line 428
     .line 429
-    invoke-interface {v0, v10, v11}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v0, v10, v11}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 430
     .line 431
@@ -4125,7 +4125,7 @@
     .line 439
     .line 440
     :goto_5
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->i()I
 
     .line 441
     .line 442
@@ -4136,7 +4136,7 @@
     add-int/2addr v1, v10
 
     .line 445
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->A()I
 
     .line 446
     .line 447
@@ -4151,7 +4151,7 @@
 
     .line 451
     .line 452
-    invoke-interface {v10, v11}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v10, v11}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 453
     .line 454
@@ -4174,7 +4174,7 @@
 
     .line 462
     .line 463
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->B()I
 
     .line 464
     .line 465
@@ -4185,7 +4185,7 @@
     add-int/2addr v0, v10
 
     .line 468
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->H()I
 
     .line 469
     .line 470
@@ -4786,7 +4786,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 8
     .line 9
@@ -4797,7 +4797,7 @@
     sub-int/2addr p2, v1
 
     .line 12
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 13
     .line 14
@@ -4812,7 +4812,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v1, p1}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v1, p1}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 20
     .line 21
@@ -4823,7 +4823,7 @@
     sub-int/2addr p2, v1
 
     .line 24
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->g()I
 
     .line 25
     .line 26
@@ -4839,7 +4839,7 @@
     move-result p2
 
     .line 32
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
 
     .line 33
     .line 34
@@ -4922,7 +4922,7 @@
 
     .line 72
     .line 73
-    invoke-interface {p2, p3, p1}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {p2, p3, p1}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 74
     .line 75
@@ -5254,7 +5254,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 8
     .line 9
@@ -5265,7 +5265,7 @@
     sub-int/2addr p2, v1
 
     .line 12
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 13
     .line 14
@@ -5280,7 +5280,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v1, p1}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v1, p1}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 20
     .line 21
@@ -5291,7 +5291,7 @@
     sub-int/2addr p2, v1
 
     .line 24
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->I()I
 
     .line 25
     .line 26
@@ -5307,7 +5307,7 @@
     move-result p2
 
     .line 32
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->K()I
 
     .line 33
     .line 34
@@ -5390,7 +5390,7 @@
 
     .line 72
     .line 73
-    invoke-interface {p2, p3, p1}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {p2, p3, p1}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 74
     .line 75
@@ -6225,7 +6225,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p4, p2}, Lcom/google/android/flexbox/a;->c(Lcom/google/android/flexbox/c;)V
+    invoke-interface {p4, p2}, Lcom/google/android/flexbox/a;->h(Lcom/google/android/flexbox/c;)V
 
     .line 6
     .line 7
@@ -6722,7 +6722,7 @@
     move-result v2
 
     .line 15
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->g()I
 
     .line 16
     .line 17
@@ -6737,7 +6737,7 @@
 
     .line 21
     .line 22
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->g()I
 
     .line 23
     .line 24
@@ -6753,7 +6753,7 @@
 
     .line 28
     :cond_0
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
 
     .line 29
     .line 30
@@ -6765,7 +6765,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
 
     .line 35
     .line 36
@@ -6781,7 +6781,7 @@
 
     .line 40
     :goto_1
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->I()I
 
     .line 41
     .line 42
@@ -6793,7 +6793,7 @@
 
     .line 45
     .line 46
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->I()I
 
     .line 47
     .line 48
@@ -6805,7 +6805,7 @@
 
     .line 51
     :cond_2
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->K()I
 
     .line 52
     .line 53
@@ -6817,7 +6817,7 @@
 
     .line 56
     .line 57
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->K()I
 
     .line 58
     .line 59
@@ -6871,7 +6871,7 @@
 
     .line 82
     .line 83
-    invoke-interface {v0, p2, p1}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v0, p2, p1}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 84
     .line 85
@@ -7493,7 +7493,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v2, v1}, Lcom/google/android/flexbox/a;->h(I)Landroid/view/View;
+    invoke-interface {v2, v1}, Lcom/google/android/flexbox/a;->e(I)Landroid/view/View;
 
     .line 12
     .line 13
@@ -7793,7 +7793,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->m()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->g()I
 
     .line 8
     .line 9
@@ -7801,7 +7801,7 @@
     move-result v1
 
     .line 11
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->I()I
 
     .line 12
     .line 13
@@ -7868,7 +7868,7 @@
 
     .line 39
     :cond_2
-    invoke-interface {v0, v1}, Lcom/google/android/flexbox/b;->o(I)V
+    invoke-interface {v0, v1}, Lcom/google/android/flexbox/b;->z(I)V
 
     .line 40
     .line 41
@@ -7881,7 +7881,7 @@
 
     .line 45
     :cond_3
-    invoke-interface {v0, v2}, Lcom/google/android/flexbox/b;->t(I)V
+    invoke-interface {v0, v2}, Lcom/google/android/flexbox/b;->j(I)V
 
     .line 46
     .line 47
@@ -8059,7 +8059,7 @@
 
     .line 48
     .line 49
-    invoke-interface {v11, v10}, Lcom/google/android/flexbox/a;->d(I)Landroid/view/View;
+    invoke-interface {v11, v10}, Lcom/google/android/flexbox/a;->i(I)Landroid/view/View;
 
     .line 50
     .line 51
@@ -8206,7 +8206,7 @@
 
     .line 119
     .line 120
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 121
     .line 122
@@ -8225,7 +8225,7 @@
     int-to-float v13, v13
 
     .line 129
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 130
     .line 131
@@ -8268,7 +8268,7 @@
     move-result v14
 
     .line 147
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->K()I
 
     .line 148
     .line 149
@@ -8280,7 +8280,7 @@
 
     .line 152
     .line 153
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->K()I
 
     .line 154
     .line 155
@@ -8300,7 +8300,7 @@
 
     .line 162
     .line 163
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 164
     .line 165
@@ -8450,7 +8450,7 @@
 
     .line 229
     .line 230
-    invoke-interface {v1, v10, v11}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v1, v10, v11}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 231
     .line 232
@@ -8471,7 +8471,7 @@
     .line 238
     .line 239
     :goto_3
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->B()I
 
     .line 240
     .line 241
@@ -8482,7 +8482,7 @@
     add-int/2addr v14, v1
 
     .line 244
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->H()I
 
     .line 245
     .line 246
@@ -8497,7 +8497,7 @@
 
     .line 250
     .line 251
-    invoke-interface {v1, v11}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v1, v11}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 252
     .line 253
@@ -8520,7 +8520,7 @@
 
     .line 261
     .line 262
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->i()I
 
     .line 263
     .line 264
@@ -8531,7 +8531,7 @@
     add-int/2addr v13, v10
 
     .line 267
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->A()I
 
     .line 268
     .line 269
@@ -8644,7 +8644,7 @@
 
     .line 319
     .line 320
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 321
     .line 322
@@ -8666,7 +8666,7 @@
     int-to-float v1, v1
 
     .line 330
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 331
     .line 332
@@ -8709,7 +8709,7 @@
     move-result v2
 
     .line 348
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
 
     .line 349
     .line 350
@@ -8721,7 +8721,7 @@
 
     .line 353
     .line 354
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->Q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
 
     .line 355
     .line 356
@@ -8741,7 +8741,7 @@
 
     .line 363
     .line 364
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->k()F
 
     .line 365
     .line 366
@@ -8885,7 +8885,7 @@
 
     .line 428
     .line 429
-    invoke-interface {v1, v10, v11}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v1, v10, v11}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 430
     .line 431
@@ -8905,7 +8905,7 @@
     .line 436
     .line 437
     :goto_7
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->i()I
 
     .line 438
     .line 439
@@ -8916,7 +8916,7 @@
     add-int/2addr v2, v10
 
     .line 442
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->A()I
 
     .line 443
     .line 444
@@ -8931,7 +8931,7 @@
 
     .line 448
     .line 449
-    invoke-interface {v10, v11}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v10, v11}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     .line 450
     .line 451
@@ -8954,7 +8954,7 @@
 
     .line 459
     .line 460
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->B()I
 
     .line 461
     .line 462
@@ -8965,7 +8965,7 @@
     add-int/2addr v1, v10
 
     .line 465
-    invoke-interface {v12}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v12}, Lcom/google/android/flexbox/b;->H()I
 
     .line 466
     .line 467
@@ -9146,7 +9146,7 @@
     add-int/2addr v1, v2
 
     .line 14
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->i()I
 
     .line 15
     .line 16
@@ -9157,7 +9157,7 @@
     add-int/2addr v1, v2
 
     .line 19
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->A()I
 
     .line 20
     .line 21
@@ -9179,7 +9179,7 @@
     move-result p3
 
     .line 29
-    invoke-interface {v0, p1, v1, p3}, Lcom/google/android/flexbox/a;->j(III)I
+    invoke-interface {v0, p1, v1, p3}, Lcom/google/android/flexbox/a;->f(III)I
 
     .line 30
     .line 31
@@ -9195,7 +9195,7 @@
     move-result p3
 
     .line 37
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->K()I
 
     .line 38
     .line 39
@@ -9207,7 +9207,7 @@
 
     .line 42
     .line 43
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->J()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->K()I
 
     .line 44
     .line 45
@@ -9235,7 +9235,7 @@
 
     .line 56
     :cond_0
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->I()I
 
     .line 57
     .line 58
@@ -9247,7 +9247,7 @@
 
     .line 61
     .line 62
-    invoke-interface {p2}, Lcom/google/android/flexbox/b;->E()I
+    invoke-interface {p2}, Lcom/google/android/flexbox/b;->I()I
 
     .line 63
     .line 64
@@ -9638,7 +9638,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v4, v3}, Lcom/google/android/flexbox/a;->h(I)Landroid/view/View;
+    invoke-interface {v4, v3}, Lcom/google/android/flexbox/a;->e(I)Landroid/view/View;
 
     .line 22
     .line 23
@@ -9789,7 +9789,7 @@
     move-result v1
 
     .line 13
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->a()I
 
     .line 14
     .line 15
@@ -9804,7 +9804,7 @@
 
     .line 19
     .line 20
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->a()I
 
     .line 21
     .line 22
@@ -9885,7 +9885,7 @@
     sub-int/2addr p2, v1
 
     .line 57
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 58
     .line 59
@@ -9943,7 +9943,7 @@
     add-int/2addr p2, v1
 
     .line 84
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 85
     .line 86
@@ -9986,7 +9986,7 @@
     sub-int/2addr v2, p2
 
     .line 104
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 105
     .line 106
@@ -9997,7 +9997,7 @@
     add-int/2addr v2, p2
 
     .line 109
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 110
     .line 111
@@ -10104,7 +10104,7 @@
 
     .line 157
     .line 158
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 159
     .line 160
@@ -10115,7 +10115,7 @@
     sub-int/2addr p2, p6
 
     .line 163
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 164
     .line 165
@@ -10149,7 +10149,7 @@
     add-int/2addr p4, p2
 
     .line 178
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 179
     .line 180
@@ -10174,7 +10174,7 @@
     add-int/2addr p6, p2
 
     .line 189
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 190
     .line 191
@@ -10210,7 +10210,7 @@
 
     .line 205
     .line 206
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 207
     .line 208
@@ -10221,7 +10221,7 @@
     add-int/2addr p4, p2
 
     .line 211
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 212
     .line 213
@@ -10241,7 +10241,7 @@
 
     .line 220
     :cond_8
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 221
     .line 222
@@ -10252,7 +10252,7 @@
     sub-int/2addr p4, p2
 
     .line 225
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 226
     .line 227
@@ -10608,7 +10608,7 @@
     move-result v1
 
     .line 13
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->a()I
 
     .line 14
     .line 15
@@ -10623,7 +10623,7 @@
 
     .line 19
     .line 20
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->a()I
 
     .line 21
     .line 22
@@ -10773,7 +10773,7 @@
     sub-int/2addr p4, p3
 
     .line 86
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 87
     .line 88
@@ -10798,7 +10798,7 @@
     sub-int/2addr p6, p2
 
     .line 97
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 98
     .line 99
@@ -10832,7 +10832,7 @@
     add-int/2addr p4, p3
 
     .line 112
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 113
     .line 114
@@ -10857,7 +10857,7 @@
     add-int/2addr p6, p2
 
     .line 123
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 124
     .line 125
@@ -10881,7 +10881,7 @@
 
     .line 133
     .line 134
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 135
     .line 136
@@ -10892,7 +10892,7 @@
     add-int/2addr p4, p2
 
     .line 139
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 140
     .line 141
@@ -10912,7 +10912,7 @@
 
     .line 148
     :cond_6
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 149
     .line 150
@@ -10923,7 +10923,7 @@
     sub-int/2addr p4, p2
 
     .line 153
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 154
     .line 155
@@ -11288,7 +11288,7 @@
 
     .line 76
     .line 77
-    invoke-interface {v15, v14}, Lcom/google/android/flexbox/a;->d(I)Landroid/view/View;
+    invoke-interface {v15, v14}, Lcom/google/android/flexbox/a;->i(I)Landroid/view/View;
 
     .line 78
     .line 79
@@ -11332,7 +11332,7 @@
 
     .line 97
     .line 98
-    invoke-interface {v5}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v5}, Lcom/google/android/flexbox/b;->a()I
 
     .line 99
     .line 100
@@ -11347,7 +11347,7 @@
 
     .line 104
     .line 105
-    invoke-interface {v5}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v5}, Lcom/google/android/flexbox/b;->a()I
 
     .line 106
     .line 107
@@ -11564,7 +11564,7 @@
     move-result v9
 
     .line 207
-    invoke-interface {v7, v9}, Lcom/google/android/flexbox/a;->d(I)Landroid/view/View;
+    invoke-interface {v7, v9}, Lcom/google/android/flexbox/a;->i(I)Landroid/view/View;
 
     .line 208
     .line 209
@@ -12291,7 +12291,7 @@
     .line 1
     iget-object v0, v10, Lcom/google/android/flexbox/d;->a:Lcom/google/android/flexbox/a;
 
-    invoke-interface {v0}, Lcom/google/android/flexbox/a;->k()Z
+    invoke-interface {v0}, Lcom/google/android/flexbox/a;->l()Z
 
     move-result v15
 
@@ -12395,7 +12395,7 @@
     .line 14
     iget-object v4, v10, Lcom/google/android/flexbox/d;->a:Lcom/google/android/flexbox/a;
 
-    invoke-interface {v4, v6}, Lcom/google/android/flexbox/a;->d(I)Landroid/view/View;
+    invoke-interface {v4, v6}, Lcom/google/android/flexbox/a;->i(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -12499,7 +12499,7 @@
     check-cast v11, Lcom/google/android/flexbox/b;
 
     .line 25
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->j()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->a()I
 
     move-result v5
 
@@ -12525,7 +12525,7 @@
     move-result v1
 
     .line 28
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->y()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->n()F
 
     move-result v5
 
@@ -12542,7 +12542,7 @@
     int-to-float v1, v8
 
     .line 29
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->y()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->n()F
 
     move-result v5
 
@@ -12575,7 +12575,7 @@
     add-int v14, v24, v26
 
     .line 33
-    invoke-interface {v5, v12, v14, v1}, Lcom/google/android/flexbox/a;->e(III)I
+    invoke-interface {v5, v12, v14, v1}, Lcom/google/android/flexbox/a;->c(III)I
 
     move-result v1
 
@@ -12612,7 +12612,7 @@
     move-result v9
 
     .line 38
-    invoke-interface {v5, v13, v14, v9}, Lcom/google/android/flexbox/a;->j(III)I
+    invoke-interface {v5, v13, v14, v9}, Lcom/google/android/flexbox/a;->f(III)I
 
     move-result v5
 
@@ -12664,7 +12664,7 @@
     move-result v8
 
     .line 45
-    invoke-interface {v5, v13, v9, v8}, Lcom/google/android/flexbox/a;->e(III)I
+    invoke-interface {v5, v13, v9, v8}, Lcom/google/android/flexbox/a;->c(III)I
 
     move-result v5
 
@@ -12686,7 +12686,7 @@
     add-int v9, v9, v23
 
     .line 49
-    invoke-interface {v8, v12, v9, v1}, Lcom/google/android/flexbox/a;->j(III)I
+    invoke-interface {v8, v12, v9, v1}, Lcom/google/android/flexbox/a;->f(III)I
 
     move-result v1
 
@@ -12702,7 +12702,7 @@
     :goto_4
     iget-object v1, v10, Lcom/google/android/flexbox/d;->a:Lcom/google/android/flexbox/a;
 
-    invoke-interface {v1, v6, v4}, Lcom/google/android/flexbox/a;->f(ILandroid/view/View;)V
+    invoke-interface {v1, v6, v4}, Lcom/google/android/flexbox/a;->j(ILandroid/view/View;)V
 
     .line 53
     invoke-direct {v10, v4, v6}, Lcom/google/android/flexbox/d;->i(Landroid/view/View;I)V
@@ -12862,14 +12862,14 @@
     add-int/2addr v2, v3
 
     .line 68
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->i()I
 
     move-result v3
 
     add-int/2addr v2, v3
 
     .line 69
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->A()I
 
     move-result v3
 
@@ -12887,7 +12887,7 @@
     move v6, v13
 
     .line 71
-    invoke-interface {v1, v4, v2, v3}, Lcom/google/android/flexbox/a;->j(III)I
+    invoke-interface {v1, v4, v2, v3}, Lcom/google/android/flexbox/a;->f(III)I
 
     move-result v1
 
@@ -12947,14 +12947,14 @@
     add-int/2addr v5, v7
 
     .line 77
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->B()I
 
     move-result v7
 
     add-int/2addr v5, v7
 
     .line 78
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->H()I
 
     move-result v7
 
@@ -12968,7 +12968,7 @@
     move-result v7
 
     .line 80
-    invoke-interface {v1, v4, v5, v7}, Lcom/google/android/flexbox/a;->e(III)I
+    invoke-interface {v1, v4, v5, v7}, Lcom/google/android/flexbox/a;->c(III)I
 
     move-result v1
 
@@ -13036,7 +13036,7 @@
     :goto_8
     iget-boolean v9, v3, Lcom/google/android/flexbox/c;->q:Z
 
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->k()F
 
     move-result v12
 
@@ -13061,7 +13061,7 @@
     .line 89
     iget-boolean v9, v3, Lcom/google/android/flexbox/c;->r:Z
 
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->c()F
 
     move-result v12
 
@@ -13122,7 +13122,7 @@
     .line 95
     iget v9, v3, Lcom/google/android/flexbox/c;->j:F
 
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->u()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->k()F
 
     move-result v12
 
@@ -13133,7 +13133,7 @@
     .line 96
     iget v9, v3, Lcom/google/android/flexbox/c;->k:F
 
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->k()F
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->c()F
 
     move-result v12
 
@@ -13168,7 +13168,7 @@
     iget-object v12, v10, Lcom/google/android/flexbox/d;->a:Lcom/google/android/flexbox/a;
 
     .line 101
-    invoke-interface {v12, v2}, Lcom/google/android/flexbox/a;->l(Landroid/view/View;)I
+    invoke-interface {v12, v2}, Lcom/google/android/flexbox/a;->g(Landroid/view/View;)I
 
     move-result v12
 
@@ -13209,7 +13209,7 @@
 
     move-result v2
 
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->i()I
 
     move-result v11
 
@@ -13240,7 +13240,7 @@
     sub-int/2addr v12, v2
 
     .line 110
-    invoke-interface {v11}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v11}, Lcom/google/android/flexbox/b;->A()I
 
     move-result v2
 

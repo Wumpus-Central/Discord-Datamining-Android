@@ -161,7 +161,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v6, p5}, Lcom/google/android/exoplayer2/upstream/DataSource;->f(Ld9/x;)V
+    invoke-interface {v6, p5}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
 
     .line 10
     .line 11

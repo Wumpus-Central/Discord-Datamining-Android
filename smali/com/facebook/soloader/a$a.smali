@@ -351,7 +351,7 @@
 
 
 # virtual methods
-.method protected p(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
+.method protected n(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
     .locals 9
 
     .line 1

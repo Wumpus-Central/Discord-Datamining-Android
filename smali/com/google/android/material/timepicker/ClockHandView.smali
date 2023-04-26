@@ -659,30 +659,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private e(FF)I
@@ -777,8 +753,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private h(F)Landroid/util/Pair;
@@ -933,9 +907,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private i(FFZZZ)Z
@@ -1859,14 +1830,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 
@@ -1939,7 +1902,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public k(F)V
@@ -2224,14 +2186,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
@@ -2268,7 +2222,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method protected onLayout(ZIIII)V
@@ -3042,7 +2995,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method

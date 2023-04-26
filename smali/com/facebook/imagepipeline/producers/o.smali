@@ -119,7 +119,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -149,7 +148,7 @@
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/o;->b:Lcom/facebook/imagepipeline/producers/Consumer;
 
-    invoke-interface {v0, p1}, Lcom/facebook/imagepipeline/producers/Consumer;->b(F)V
+    invoke-interface {v0, p1}, Lcom/facebook/imagepipeline/producers/Consumer;->c(F)V
 
     return-void
 .end method

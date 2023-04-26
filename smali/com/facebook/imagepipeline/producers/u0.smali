@@ -350,7 +350,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -391,7 +390,7 @@
     .line 11
     .line 12
     :cond_0
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 13
     .line 14
@@ -442,7 +441,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-interface {p2, p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Lcom/facebook/imagepipeline/producers/m0;)V
+    invoke-interface {p2, p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->c(Lcom/facebook/imagepipeline/producers/m0;)V
 
     .line 36
     .line 37

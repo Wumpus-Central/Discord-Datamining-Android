@@ -187,7 +187,6 @@
     .line 75
     :cond_4
     return-object v0
-    .line 76
 .end method
 
 .method public static getCanonicalLocales(Ljava/util/List;)Ljava/util/List;

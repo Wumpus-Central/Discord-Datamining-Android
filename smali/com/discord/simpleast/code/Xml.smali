@@ -285,7 +285,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final getPATTERN_XML_COMMENT()Ljava/util/regex/Pattern;

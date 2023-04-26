@@ -22,10 +22,7 @@
 .method public abstract a(D)Ljava/text/AttributedCharacterIterator;
 .end method
 
-.method public abstract b(D)Ljava/lang/String;
-.end method
-
-.method public abstract c(Lg5/b;)Ljava/lang/String;
+.method public abstract b(Lg5/b;)Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -36,28 +33,22 @@
     .end annotation
 .end method
 
-.method public abstract d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+.method public abstract c(D)Ljava/lang/String;
 .end method
 
-.method public abstract e(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
+.method public abstract d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
 .end method
 
-.method public abstract f(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
+.method public abstract e(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
 .end method
 
-.method public abstract g(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public abstract f(I)Lcom/facebook/hermes/intl/c;
 .end method
 
-.method public abstract h(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
+.method public abstract g(Z)Lcom/facebook/hermes/intl/c;
 .end method
 
-.method public abstract i(I)Lcom/facebook/hermes/intl/c;
-.end method
-
-.method public abstract j(Z)Lcom/facebook/hermes/intl/c;
-.end method
-
-.method public abstract k(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+.method public abstract h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,5 +65,14 @@
     .end annotation
 .end method
 
-.method public abstract l(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public abstract i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.end method
+
+.method public abstract j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+.end method
+
+.method public abstract k(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
+.end method
+
+.method public abstract l(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
 .end method

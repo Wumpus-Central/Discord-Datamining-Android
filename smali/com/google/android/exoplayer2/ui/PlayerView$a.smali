@@ -166,7 +166,7 @@
     return-void
 .end method
 
-.method public c(IIIF)V
+.method public d(IIIF)V
     .locals 1
 
     .line 1
@@ -750,7 +750,7 @@
     .line 461
 .end method
 
-.method public d()V
+.method public e()V
     .locals 2
 
     .line 1
@@ -901,7 +901,7 @@
     .line 126
 .end method
 
-.method public synthetic e(II)V
+.method public synthetic f(II)V
     .locals 0
 
     invoke-static {p0, p1, p2}, Lg9/p;->a(Lg9/q;II)V
@@ -909,7 +909,7 @@
     return-void
 .end method
 
-.method public k(Ljava/util/List;)V
+.method public i(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -949,7 +949,7 @@
     move-result-object v0
 
     .line 15
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->k(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->i(Ljava/util/List;)V
 
     .line 16
     .line 17
@@ -1725,7 +1725,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 14
     .line 15
@@ -1756,7 +1756,7 @@
 
     .line 27
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->O()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     .line 28
     .line 29
@@ -1776,7 +1776,7 @@
 
     .line 36
     .line 37
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->l()I
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->G()I
 
     .line 38
     .line 39
@@ -1850,7 +1850,7 @@
 
     .line 71
     .line 72
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->m()I
 
     .line 73
     .line 74

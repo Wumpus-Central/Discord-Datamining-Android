@@ -1517,7 +1517,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final getLabelView(I)Landroid/widget/TextView;
@@ -1652,7 +1651,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private final maybeUpdateSegmentWidth()V
@@ -4399,7 +4397,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setContainerBgColor(I)V
@@ -4543,7 +4540,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setOnSegmentSelected(Lkotlin/jvm/functions/Function2;)V

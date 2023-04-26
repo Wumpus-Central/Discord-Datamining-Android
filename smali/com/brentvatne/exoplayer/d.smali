@@ -254,7 +254,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->n(Landroid/view/TextureView;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->H(Landroid/view/TextureView;)V
 
     .line 12
     .line 13
@@ -279,7 +279,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->L(Landroid/view/SurfaceView;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->U(Landroid/view/SurfaceView;)V
 
     .line 24
     .line 25
@@ -327,7 +327,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->U(Landroid/view/TextureView;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->z(Landroid/view/TextureView;)V
 
     .line 12
     .line 13
@@ -352,7 +352,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->r(Landroid/view/SurfaceView;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->k(Landroid/view/SurfaceView;)V
 
     .line 24
     .line 25
@@ -392,7 +392,7 @@
 
     .line 6
     :cond_0
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->V()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->A()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
 
     .line 7
     .line 8
@@ -419,7 +419,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v3, v2}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->W(I)I
+    invoke-virtual {v3, v2}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->B(I)I
 
     .line 19
     .line 20
@@ -884,7 +884,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->C(Lq8/l;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->N(Lq8/l;)V
 
     .line 11
     .line 12
@@ -897,7 +897,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->q(Lg9/q;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->j(Lg9/q;)V
 
     .line 18
     .line 19
@@ -910,7 +910,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->t(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->l(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 25
     .line 26
@@ -950,7 +950,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->G(Lg9/q;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->R(Lg9/q;)V
 
     .line 46
     .line 47
@@ -959,7 +959,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->I(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 51
     .line 52
@@ -968,7 +968,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->N(Lq8/l;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->v(Lq8/l;)V
 
     .line 56
     .line 57

@@ -324,14 +324,14 @@
     invoke-virtual {v9, v1, v14}, Le7/d1;->X1(Lcom/google/android/exoplayer2/Player;Landroid/os/Looper;)V
 
     .line 27
-    invoke-virtual {v0, v9}, Lcom/google/android/exoplayer2/d0;->o(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-virtual {v0, v9}, Lcom/google/android/exoplayer2/d0;->I(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 28
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1, v14}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-interface {v6, v1, v9}, Ld9/e;->e(Landroid/os/Handler;Ld9/e$a;)V
+    invoke-interface {v6, v1, v9}, Ld9/e;->g(Landroid/os/Handler;Ld9/e$a;)V
 
     .line 29
     :cond_2
@@ -1324,7 +1324,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->A()J
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->L()J
 
     .line 2
     .line 3
@@ -1370,7 +1370,7 @@
 
     .line 24
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->u()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->m()I
 
     .line 25
     .line 26
@@ -3691,7 +3691,7 @@
     move-result-wide v12
 
     .line 115
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/exoplayer2/d0;->A()J
+    invoke-virtual/range {p0 .. p0}, Lcom/google/android/exoplayer2/d0;->L()J
 
     .line 116
     .line 117
@@ -4660,7 +4660,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->u()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->m()I
 
     .line 22
     .line 23
@@ -4668,7 +4668,7 @@
     move-result v2
 
     .line 25
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 26
     .line 27
@@ -5393,7 +5393,7 @@
     move-result v1
 
     .line 8
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->X()J
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->Y()J
 
     .line 9
     .line 10
@@ -6996,7 +6996,7 @@
     move-result v1
 
     .line 58
-    invoke-interface {p2, p1, v1}, Lh8/q0;->e(II)Lh8/q0;
+    invoke-interface {p2, p1, v1}, Lh8/q0;->g(II)Lh8/q0;
 
     .line 59
     .line 60
@@ -7251,214 +7251,20 @@
 
 
 # virtual methods
-.method public A()J
-    .locals 5
+.method public A()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
+    .locals 2
 
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
+    new-instance v0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    iget-object v1, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
 
-    .line 5
-    if-eqz v0, :cond_1
+    iget-object v1, v1, Lcom/google/android/exoplayer2/q0;->h:La9/n;
 
-    .line 6
-    .line 7
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+    iget-object v1, v1, La9/n;->c:[La9/h;
 
-    .line 8
-    .line 9
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+    invoke-direct {v0, v1}, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;-><init>([La9/k;)V
 
-    .line 10
-    .line 11
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 12
-    .line 13
-    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
-
-    .line 16
-    .line 17
-    invoke-virtual {v1, v0, v2}, Lcom/google/android/exoplayer2/Timeline;->h(Ljava/lang/Object;Lcom/google/android/exoplayer2/Timeline$b;)Lcom/google/android/exoplayer2/Timeline$b;
-
-    .line 18
-    .line 19
-    .line 20
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 21
-    .line 22
-    iget-wide v1, v0, Lcom/google/android/exoplayer2/q0;->c:J
-
-    .line 23
-    .line 24
-    const-wide v3, -0x7fffffffffffffffL    # -4.9E-324
-
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    cmp-long v1, v1, v3
-
-    .line 30
-    .line 31
-    if-nez v1, :cond_0
-
-    .line 32
-    .line 33
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 34
-    .line 35
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->u()I
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v1
-
-    .line 39
-    iget-object v2, p0, Lcom/google/android/exoplayer2/e;->a:Lcom/google/android/exoplayer2/Timeline$c;
-
-    .line 40
-    .line 41
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/exoplayer2/Timeline;->n(ILcom/google/android/exoplayer2/Timeline$c;)Lcom/google/android/exoplayer2/Timeline$c;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$c;->b()J
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-wide v0
-
-    .line 49
-    goto :goto_0
-
-    .line 50
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
-
-    .line 51
-    .line 52
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$b;->k()J
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-wide v0
-
-    .line 56
-    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 57
-    .line 58
-    iget-wide v2, v2, Lcom/google/android/exoplayer2/q0;->c:J
-
-    .line 59
-    .line 60
-    invoke-static {v2, v3}, Ld7/c;->d(J)J
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-wide v2
-
-    .line 64
-    add-long/2addr v0, v2
-
-    .line 65
-    :goto_0
-    return-wide v0
-
-    .line 66
-    :cond_1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->X()J
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-wide v0
-
-    .line 70
-    return-wide v0
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
+    return-object v0
 .end method
 
 .method public A0(Lcom/google/android/exoplayer2/r0$b;)Lcom/google/android/exoplayer2/r0;
@@ -7481,7 +7287,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->u()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->m()I
 
     .line 10
     .line 11
@@ -7618,6 +7424,28 @@
     .line 125
 .end method
 
+.method public B(I)I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->c:[Lcom/google/android/exoplayer2/t0;
+
+    aget-object p1, v0, p1
+
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/t0;->d()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public C()Lcom/google/android/exoplayer2/Player$b;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
 .method public C0()Z
     .locals 1
 
@@ -7628,1144 +7456,7 @@
     return v0
 .end method
 
-.method public D()J
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 8
-    .line 9
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 10
-    .line 11
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 12
-    .line 13
-    invoke-virtual {v1, v0}, Lh8/s;->equals(Ljava/lang/Object;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    if-eqz v0, :cond_0
-
-    .line 18
-    .line 19
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 20
-    .line 21
-    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->p:J
-
-    .line 22
-    .line 23
-    invoke-static {v0, v1}, Ld7/c;->d(J)J
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-wide v0
-
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_0
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->getDuration()J
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-wide v0
-
-    .line 32
-    :goto_0
-    return-wide v0
-
-    .line 33
-    :cond_1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->T()J
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-wide v0
-
-    .line 37
-    return-wide v0
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-.end method
-
-.method public E()I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget v0, v0, Lcom/google/android/exoplayer2/q0;->d:I
-
-    return v0
-.end method
-
-.method public G0()I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->c:[Lcom/google/android/exoplayer2/t0;
-
-    array-length v0, v0
-
-    return v0
-.end method
-
-.method public I()I
-    .locals 1
-
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    iget v0, v0, Lh8/s;->b:I
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, -0x1
-
-    :goto_0
-    return v0
-.end method
-
-.method public J(I)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcom/google/android/exoplayer2/d0;->q:I
-
-    .line 2
-    .line 3
-    if-eq v0, p1, :cond_0
-
-    .line 4
-    .line 5
-    iput p1, p0, Lcom/google/android/exoplayer2/d0;->q:I
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/g0;->P0(I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
-
-    .line 13
-    .line 14
-    new-instance v1, Lcom/google/android/exoplayer2/t;
-
-    .line 15
-    .line 16
-    invoke-direct {v1, p1}, Lcom/google/android/exoplayer2/t;-><init>(I)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/16 p1, 0x9
-
-    .line 20
-    .line 21
-    invoke-virtual {v0, p1, v1}, Lf9/q;->l(ILf9/q$a;)V
-
-    .line 22
-    .line 23
-    .line 24
-    :cond_0
-    return-void
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-.end method
-
-.method public M()I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget v0, v0, Lcom/google/android/exoplayer2/q0;->l:I
-
-    return v0
-.end method
-
-.method public O()Lcom/google/android/exoplayer2/source/TrackGroupArray;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
-
-    return-object v0
-.end method
-
-.method public P()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/exoplayer2/d0;->q:I
-
-    return v0
-.end method
-
-.method public Q()Lcom/google/android/exoplayer2/Timeline;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    return-object v0
-.end method
-
-.method public R()Landroid/os/Looper;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->n:Landroid/os/Looper;
-
-    return-object v0
-.end method
-
-.method public S()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/google/android/exoplayer2/d0;->r:Z
-
-    return v0
-.end method
-
-.method public T()J
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    iget-wide v0, p0, Lcom/google/android/exoplayer2/d0;->C:J
-
-    .line 12
-    .line 13
-    return-wide v0
-
-    .line 14
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 15
-    .line 16
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 17
-    .line 18
-    iget-wide v1, v1, Lh8/s;->d:J
-
-    .line 19
-    .line 20
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 21
-    .line 22
-    iget-wide v3, v3, Lh8/s;->d:J
-
-    .line 23
-    .line 24
-    cmp-long v1, v1, v3
-
-    .line 25
-    .line 26
-    if-eqz v1, :cond_1
-
-    .line 27
-    .line 28
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 29
-    .line 30
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->u()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v1
-
-    .line 34
-    iget-object v2, p0, Lcom/google/android/exoplayer2/e;->a:Lcom/google/android/exoplayer2/Timeline$c;
-
-    .line 35
-    .line 36
-    invoke-virtual {v0, v1, v2}, Lcom/google/android/exoplayer2/Timeline;->n(ILcom/google/android/exoplayer2/Timeline$c;)Lcom/google/android/exoplayer2/Timeline$c;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v0
-
-    .line 40
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$c;->d()J
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-wide v0
-
-    .line 44
-    return-wide v0
-
-    .line 45
-    :cond_1
-    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->p:J
-
-    .line 46
-    .line 47
-    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 48
-    .line 49
-    iget-object v2, v2, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 50
-    .line 51
-    invoke-virtual {v2}, Lh8/s;->b()Z
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v2
-
-    .line 55
-    if-eqz v2, :cond_3
-
-    .line 56
-    .line 57
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 58
-    .line 59
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 60
-    .line 61
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 62
-    .line 63
-    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
-
-    .line 64
-    .line 65
-    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
-
-    .line 66
-    .line 67
-    invoke-virtual {v1, v0, v2}, Lcom/google/android/exoplayer2/Timeline;->h(Ljava/lang/Object;Lcom/google/android/exoplayer2/Timeline$b;)Lcom/google/android/exoplayer2/Timeline$b;
-
-    .line 68
-    .line 69
-    .line 70
-    move-result-object v0
-
-    .line 71
-    iget-object v1, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 72
-    .line 73
-    iget-object v1, v1, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 74
-    .line 75
-    iget v1, v1, Lh8/s;->b:I
-
-    .line 76
-    .line 77
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/Timeline$b;->f(I)J
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-wide v1
-
-    .line 81
-    const-wide/high16 v3, -0x8000000000000000L
-
-    .line 82
-    .line 83
-    cmp-long v3, v1, v3
-
-    .line 84
-    .line 85
-    if-nez v3, :cond_2
-
-    .line 86
-    .line 87
-    iget-wide v0, v0, Lcom/google/android/exoplayer2/Timeline$b;->d:J
-
-    .line 88
-    .line 89
-    goto :goto_0
-
-    .line 90
-    :cond_2
-    move-wide v0, v1
-
-    .line 91
-    :cond_3
-    :goto_0
-    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 92
-    .line 93
-    iget-object v2, v2, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
-
-    .line 94
-    .line 95
-    invoke-direct {p0, v2, v0, v1}, Lcom/google/android/exoplayer2/d0;->f1(Lh8/u$a;J)J
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-wide v0
-
-    .line 99
-    return-wide v0
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-.end method
-
-.method public V()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
-    .locals 2
-
-    new-instance v0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
-
-    iget-object v1, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v1, v1, Lcom/google/android/exoplayer2/q0;->h:La9/n;
-
-    iget-object v1, v1, La9/n;->c:[La9/h;
-
-    invoke-direct {v0, v1}, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;-><init>([La9/k;)V
-
-    return-object v0
-.end method
-
-.method public W(I)I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->c:[Lcom/google/android/exoplayer2/t0;
-
-    aget-object p1, v0, p1
-
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/t0;->f()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public X()J
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    iget-wide v0, p0, Lcom/google/android/exoplayer2/d0;->C:J
-
-    .line 12
-    .line 13
-    return-wide v0
-
-    .line 14
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 15
-    .line 16
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Lh8/s;->b()Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    if-eqz v0, :cond_1
-
-    .line 23
-    .line 24
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 25
-    .line 26
-    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->r:J
-
-    .line 27
-    .line 28
-    invoke-static {v0, v1}, Ld7/c;->d(J)J
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-wide v0
-
-    .line 32
-    return-wide v0
-
-    .line 33
-    :cond_1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 34
-    .line 35
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 36
-    .line 37
-    iget-wide v2, v0, Lcom/google/android/exoplayer2/q0;->r:J
-
-    .line 38
-    .line 39
-    invoke-direct {p0, v1, v2, v3}, Lcom/google/android/exoplayer2/d0;->f1(Lh8/u$a;J)J
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-wide v0
-
-    .line 43
-    return-wide v0
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-.end method
-
-.method public Y()Lcom/google/android/exoplayer2/Player$b;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public b()Lcom/google/android/exoplayer2/PlaybackParameters;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->m:Lcom/google/android/exoplayer2/PlaybackParameters;
-
-    return-object v0
-.end method
-
-.method public c()V
-    .locals 10
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 2
-    .line 3
-    iget v1, v0, Lcom/google/android/exoplayer2/q0;->d:I
-
-    .line 4
-    .line 5
-    const/4 v2, 0x1
-
-    .line 6
-    if-eq v1, v2, :cond_0
-
-    .line 7
-    .line 8
-    return-void
-
-    .line 9
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 10
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/q0;->f(Lcom/google/android/exoplayer2/ExoPlaybackException;)Lcom/google/android/exoplayer2/q0;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 15
-    .line 16
-    invoke-virtual {v1}, Lcom/google/android/exoplayer2/Timeline;->q()Z
-
-    .line 17
-    .line 18
-    .line 19
-    move-result v1
-
-    .line 20
-    if-eqz v1, :cond_1
-
-    .line 21
-    .line 22
-    const/4 v1, 0x4
-
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_1
-    const/4 v1, 0x2
-
-    .line 25
-    :goto_0
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/q0;->h(I)Lcom/google/android/exoplayer2/q0;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v4
-
-    .line 29
-    iget v0, p0, Lcom/google/android/exoplayer2/d0;->s:I
-
-    .line 30
-    .line 31
-    add-int/2addr v0, v2
-
-    .line 32
-    iput v0, p0, Lcom/google/android/exoplayer2/d0;->s:I
-
-    .line 33
-    .line 34
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
-
-    .line 35
-    .line 36
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/g0;->e0()V
-
-    .line 37
-    .line 38
-    .line 39
-    const/4 v5, 0x0
-
-    .line 40
-    const/4 v6, 0x4
-
-    .line 41
-    const/4 v7, 0x1
-
-    .line 42
-    const/4 v8, 0x1
-
-    .line 43
-    const/4 v9, 0x0
-
-    .line 44
-    move-object v3, p0
-
-    .line 45
-    invoke-direct/range {v3 .. v9}, Lcom/google/android/exoplayer2/d0;->s1(Lcom/google/android/exoplayer2/q0;ZIIIZ)V
-
-    .line 46
-    .line 47
-    .line 48
-    return-void
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-.end method
-
-.method public d()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    invoke-virtual {v0}, Lh8/s;->b()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public f()J
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->q:J
-
-    invoke-static {v0, v1}, Ld7/c;->d(J)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public g(IJ)V
+.method public D(IJ)V
     .locals 10
 
     .line 1
@@ -8876,7 +7567,7 @@
 
     .line 54
     :cond_1
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->E()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->P()I
 
     .line 55
     .line 56
@@ -9168,6 +7859,1615 @@
     .line 288
 .end method
 
+.method public E()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-boolean v0, v0, Lcom/google/android/exoplayer2/q0;->k:Z
+
+    return v0
+.end method
+
+.method public F(Z)V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lcom/google/android/exoplayer2/d0;->r:Z
+
+    .line 2
+    .line 3
+    if-eq v0, p1, :cond_0
+
+    .line 4
+    .line 5
+    iput-boolean p1, p0, Lcom/google/android/exoplayer2/d0;->r:Z
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/g0;->S0(Z)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
+
+    .line 13
+    .line 14
+    new-instance v1, Lcom/google/android/exoplayer2/v;
+
+    .line 15
+    .line 16
+    invoke-direct {v1, p1}, Lcom/google/android/exoplayer2/v;-><init>(Z)V
+
+    .line 17
+    .line 18
+    .line 19
+    const/16 p1, 0xa
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, p1, v1}, Lf9/q;->l(ILf9/q$a;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+.end method
+
+.method public G()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    iget v0, p0, Lcom/google/android/exoplayer2/d0;->B:I
+
+    .line 12
+    .line 13
+    return v0
+
+    .line 14
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 15
+    .line 16
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 17
+    .line 18
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 19
+    .line 20
+    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/Timeline;->b(Ljava/lang/Object;)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    return v0
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public G0()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->c:[Lcom/google/android/exoplayer2/t0;
+
+    array-length v0, v0
+
+    return v0
+.end method
+
+.method public I(Lcom/google/android/exoplayer2/Player$a;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
+
+    invoke-virtual {v0, p1}, Lf9/q;->c(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public J()I
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    iget v0, v0, Lh8/s;->c:I
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, -0x1
+
+    :goto_0
+    return v0
+.end method
+
+.method public L()J
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 8
+    .line 9
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 10
+    .line 11
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 12
+    .line 13
+    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
+
+    .line 16
+    .line 17
+    invoke-virtual {v1, v0, v2}, Lcom/google/android/exoplayer2/Timeline;->h(Ljava/lang/Object;Lcom/google/android/exoplayer2/Timeline$b;)Lcom/google/android/exoplayer2/Timeline$b;
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 21
+    .line 22
+    iget-wide v1, v0, Lcom/google/android/exoplayer2/q0;->c:J
+
+    .line 23
+    .line 24
+    const-wide v3, -0x7fffffffffffffffL    # -4.9E-324
+
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    cmp-long v1, v1, v3
+
+    .line 30
+    .line 31
+    if-nez v1, :cond_0
+
+    .line 32
+    .line 33
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 34
+    .line 35
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->m()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v1
+
+    .line 39
+    iget-object v2, p0, Lcom/google/android/exoplayer2/e;->a:Lcom/google/android/exoplayer2/Timeline$c;
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/exoplayer2/Timeline;->n(ILcom/google/android/exoplayer2/Timeline$c;)Lcom/google/android/exoplayer2/Timeline$c;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$c;->b()J
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-wide v0
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$b;->k()J
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-wide v0
+
+    .line 56
+    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 57
+    .line 58
+    iget-wide v2, v2, Lcom/google/android/exoplayer2/q0;->c:J
+
+    .line 59
+    .line 60
+    invoke-static {v2, v3}, Ld7/c;->d(J)J
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-wide v2
+
+    .line 64
+    add-long/2addr v0, v2
+
+    .line 65
+    :goto_0
+    return-wide v0
+
+    .line 66
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->Y()J
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-wide v0
+
+    .line 70
+    return-wide v0
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public O()J
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 8
+    .line 9
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 10
+    .line 11
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 12
+    .line 13
+    invoke-virtual {v1, v0}, Lh8/s;->equals(Ljava/lang/Object;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    .line 19
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 20
+    .line 21
+    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->p:J
+
+    .line 22
+    .line 23
+    invoke-static {v0, v1}, Ld7/c;->d(J)J
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-wide v0
+
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->getDuration()J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v0
+
+    .line 32
+    :goto_0
+    return-wide v0
+
+    .line 33
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->X()J
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-wide v0
+
+    .line 37
+    return-wide v0
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public P()I
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget v0, v0, Lcom/google/android/exoplayer2/q0;->d:I
+
+    return v0
+.end method
+
+.method public S(I)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/android/exoplayer2/d0;->q:I
+
+    .line 2
+    .line 3
+    if-eq v0, p1, :cond_0
+
+    .line 4
+    .line 5
+    iput p1, p0, Lcom/google/android/exoplayer2/d0;->q:I
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/g0;->P0(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
+
+    .line 13
+    .line 14
+    new-instance v1, Lcom/google/android/exoplayer2/t;
+
+    .line 15
+    .line 16
+    invoke-direct {v1, p1}, Lcom/google/android/exoplayer2/t;-><init>(I)V
+
+    .line 17
+    .line 18
+    .line 19
+    const/16 p1, 0x9
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, p1, v1}, Lf9/q;->l(ILf9/q$a;)V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+.end method
+
+.method public V()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/exoplayer2/d0;->q:I
+
+    return v0
+.end method
+
+.method public W()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/google/android/exoplayer2/d0;->r:Z
+
+    return v0
+.end method
+
+.method public X()J
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    iget-wide v0, p0, Lcom/google/android/exoplayer2/d0;->C:J
+
+    .line 12
+    .line 13
+    return-wide v0
+
+    .line 14
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 15
+    .line 16
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 17
+    .line 18
+    iget-wide v1, v1, Lh8/s;->d:J
+
+    .line 19
+    .line 20
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 21
+    .line 22
+    iget-wide v3, v3, Lh8/s;->d:J
+
+    .line 23
+    .line 24
+    cmp-long v1, v1, v3
+
+    .line 25
+    .line 26
+    if-eqz v1, :cond_1
+
+    .line 27
+    .line 28
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 29
+    .line 30
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->m()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v1
+
+    .line 34
+    iget-object v2, p0, Lcom/google/android/exoplayer2/e;->a:Lcom/google/android/exoplayer2/Timeline$c;
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1, v2}, Lcom/google/android/exoplayer2/Timeline;->n(ILcom/google/android/exoplayer2/Timeline$c;)Lcom/google/android/exoplayer2/Timeline$c;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline$c;->d()J
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-wide v0
+
+    .line 44
+    return-wide v0
+
+    .line 45
+    :cond_1
+    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->p:J
+
+    .line 46
+    .line 47
+    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 48
+    .line 49
+    iget-object v2, v2, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 50
+    .line 51
+    invoke-virtual {v2}, Lh8/s;->b()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v2
+
+    .line 55
+    if-eqz v2, :cond_3
+
+    .line 56
+    .line 57
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 58
+    .line 59
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 60
+    .line 61
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 62
+    .line 63
+    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->i:Lcom/google/android/exoplayer2/Timeline$b;
+
+    .line 66
+    .line 67
+    invoke-virtual {v1, v0, v2}, Lcom/google/android/exoplayer2/Timeline;->h(Ljava/lang/Object;Lcom/google/android/exoplayer2/Timeline$b;)Lcom/google/android/exoplayer2/Timeline$b;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    iget-object v1, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 72
+    .line 73
+    iget-object v1, v1, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 74
+    .line 75
+    iget v1, v1, Lh8/s;->b:I
+
+    .line 76
+    .line 77
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/Timeline$b;->f(I)J
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-wide v1
+
+    .line 81
+    const-wide/high16 v3, -0x8000000000000000L
+
+    .line 82
+    .line 83
+    cmp-long v3, v1, v3
+
+    .line 84
+    .line 85
+    if-nez v3, :cond_2
+
+    .line 86
+    .line 87
+    iget-wide v0, v0, Lcom/google/android/exoplayer2/Timeline$b;->d:J
+
+    .line 88
+    .line 89
+    goto :goto_0
+
+    .line 90
+    :cond_2
+    move-wide v0, v1
+
+    .line 91
+    :cond_3
+    :goto_0
+    iget-object v2, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 92
+    .line 93
+    iget-object v2, v2, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+
+    .line 94
+    .line 95
+    invoke-direct {p0, v2, v0, v1}, Lcom/google/android/exoplayer2/d0;->f1(Lh8/u$a;J)J
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-wide v0
+
+    .line 99
+    return-wide v0
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public Y()J
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    iget-wide v0, p0, Lcom/google/android/exoplayer2/d0;->C:J
+
+    .line 12
+    .line 13
+    return-wide v0
+
+    .line 14
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 15
+    .line 16
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Lh8/s;->b()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    if-eqz v0, :cond_1
+
+    .line 23
+    .line 24
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 25
+    .line 26
+    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->r:J
+
+    .line 27
+    .line 28
+    invoke-static {v0, v1}, Ld7/c;->d(J)J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v0
+
+    .line 32
+    return-wide v0
+
+    .line 33
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 34
+    .line 35
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    .line 36
+    .line 37
+    iget-wide v2, v0, Lcom/google/android/exoplayer2/q0;->r:J
+
+    .line 38
+    .line 39
+    invoke-direct {p0, v1, v2, v3}, Lcom/google/android/exoplayer2/d0;->f1(Lh8/u$a;J)J
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-wide v0
+
+    .line 43
+    return-wide v0
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public b()Lcom/google/android/exoplayer2/PlaybackParameters;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->m:Lcom/google/android/exoplayer2/PlaybackParameters;
+
+    return-object v0
+.end method
+
+.method public c()V
+    .locals 10
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    .line 2
+    .line 3
+    iget v1, v0, Lcom/google/android/exoplayer2/q0;->d:I
+
+    .line 4
+    .line 5
+    const/4 v2, 0x1
+
+    .line 6
+    if-eq v1, v2, :cond_0
+
+    .line 7
+    .line 8
+    return-void
+
+    .line 9
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 10
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/q0;->f(Lcom/google/android/exoplayer2/ExoPlaybackException;)Lcom/google/android/exoplayer2/q0;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 15
+    .line 16
+    invoke-virtual {v1}, Lcom/google/android/exoplayer2/Timeline;->q()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    if-eqz v1, :cond_1
+
+    .line 21
+    .line 22
+    const/4 v1, 0x4
+
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_1
+    const/4 v1, 0x2
+
+    .line 25
+    :goto_0
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/q0;->h(I)Lcom/google/android/exoplayer2/q0;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v4
+
+    .line 29
+    iget v0, p0, Lcom/google/android/exoplayer2/d0;->s:I
+
+    .line 30
+    .line 31
+    add-int/2addr v0, v2
+
+    .line 32
+    iput v0, p0, Lcom/google/android/exoplayer2/d0;->s:I
+
+    .line 33
+    .line 34
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
+
+    .line 35
+    .line 36
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/g0;->e0()V
+
+    .line 37
+    .line 38
+    .line 39
+    const/4 v5, 0x0
+
+    .line 40
+    const/4 v6, 0x4
+
+    .line 41
+    const/4 v7, 0x1
+
+    .line 42
+    const/4 v8, 0x1
+
+    .line 43
+    const/4 v9, 0x0
+
+    .line 44
+    move-object v3, p0
+
+    .line 45
+    invoke-direct/range {v3 .. v9}, Lcom/google/android/exoplayer2/d0;->s1(Lcom/google/android/exoplayer2/q0;ZIIIZ)V
+
+    .line 46
+    .line 47
+    .line 48
+    return-void
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method public d()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    invoke-virtual {v0}, Lh8/s;->b()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public f()J
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-wide v0, v0, Lcom/google/android/exoplayer2/q0;->q:J
+
+    invoke-static {v0, v1}, Ld7/c;->d(J)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
 .method public g1()V
     .locals 3
 
@@ -9346,7 +9646,7 @@
     const/4 v1, 0x0
 
     .line 94
-    invoke-interface {v0, v1}, Lf9/m;->j(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lf9/m;->f(Ljava/lang/Object;)V
 
     .line 95
     .line 96
@@ -9605,181 +9905,7 @@
     .line 133
 .end method
 
-.method public h()Z
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-boolean v0, v0, Lcom/google/android/exoplayer2/q0;->k:Z
-
-    return v0
-.end method
-
-.method public j(Z)V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lcom/google/android/exoplayer2/d0;->r:Z
-
-    .line 2
-    .line 3
-    if-eq v0, p1, :cond_0
-
-    .line 4
-    .line 5
-    iput-boolean p1, p0, Lcom/google/android/exoplayer2/d0;->r:Z
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->g:Lcom/google/android/exoplayer2/g0;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/g0;->S0(Z)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
-
-    .line 13
-    .line 14
-    new-instance v1, Lcom/google/android/exoplayer2/v;
-
-    .line 15
-    .line 16
-    invoke-direct {v1, p1}, Lcom/google/android/exoplayer2/v;-><init>(Z)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/16 p1, 0xa
-
-    .line 20
-    .line 21
-    invoke-virtual {v0, p1, v1}, Lf9/q;->l(ILf9/q$a;)V
-
-    .line 22
-    .line 23
-    .line 24
-    :cond_0
-    return-void
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-.end method
-
-.method public j1(Lh8/u;)V
-    .locals 0
-
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/d0;->k1(Ljava/util/List;)V
-
-    return-void
-.end method
-
-.method public k()Ljava/util/List;
+.method public h()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -9795,6 +9921,18 @@
     iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
     return-object v0
+.end method
+
+.method public j1(Lh8/u;)V
+    .locals 0
+
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/d0;->k1(Ljava/util/List;)V
+
+    return-void
 .end method
 
 .method public k1(Ljava/util/List;)V
@@ -9815,170 +9953,14 @@
     return-void
 .end method
 
-.method public l()I
-    .locals 2
+.method public l(Lcom/google/android/exoplayer2/Player$a;)V
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+    invoke-virtual {v0, p1}, Lf9/q;->k(Ljava/lang/Object;)V
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    iget v0, p0, Lcom/google/android/exoplayer2/d0;->B:I
-
-    .line 12
-    .line 13
-    return v0
-
-    .line 14
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    .line 15
-    .line 16
-    iget-object v1, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 17
-    .line 18
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    .line 19
-    .line 20
-    iget-object v0, v0, Lh8/s;->a:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/Timeline;->b(Ljava/lang/Object;)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v0
-
-    .line 26
-    return v0
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
+    return-void
 .end method
 
 .method public l1(Ljava/util/List;IJ)V
@@ -10007,6 +9989,23 @@
     return-void
 .end method
 
+.method public m()I
+    .locals 2
+
+    invoke-direct {p0}, Lcom/google/android/exoplayer2/d0;->D0()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    :cond_0
+    return v0
+.end method
+
 .method public m1(Ljava/util/List;Z)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
@@ -10033,14 +10032,14 @@
     return-void
 .end method
 
-.method public o(Lcom/google/android/exoplayer2/Player$a;)V
+.method public o()Lcom/google/android/exoplayer2/ExoPlaybackException;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
 
-    invoke-virtual {v0, p1}, Lf9/q;->c(Ljava/lang/Object;)V
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->e:Lcom/google/android/exoplayer2/ExoPlaybackException;
 
-    return-void
+    return-object v0
 .end method
 
 .method public o1(ZII)V
@@ -10508,30 +10507,6 @@
     .line 418
 .end method
 
-.method public p()I
-    .locals 1
-
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
-
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
-
-    iget v0, v0, Lh8/s;->c:I
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, -0x1
-
-    :goto_0
-    return v0
-.end method
-
 .method public p1(Lcom/google/android/exoplayer2/PlaybackParameters;)V
     .locals 8
 
@@ -10711,6 +10686,18 @@
     .line 125
 .end method
 
+.method public q(Z)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/google/android/exoplayer2/d0;->o1(ZII)V
+
+    return-void
+.end method
+
 .method public q1(Z)V
     .locals 1
 
@@ -10719,6 +10706,14 @@
     invoke-virtual {p0, p1, v0}, Lcom/google/android/exoplayer2/d0;->r1(ZLcom/google/android/exoplayer2/ExoPlaybackException;)V
 
     return-void
+.end method
+
+.method public r()Lcom/google/android/exoplayer2/Player$c;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method public r1(ZLcom/google/android/exoplayer2/ExoPlaybackException;)V
@@ -11094,59 +11089,64 @@
     .line 288
 .end method
 
-.method public t(Lcom/google/android/exoplayer2/Player$a;)V
+.method public t()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->h:Lf9/q;
-
-    invoke-virtual {v0, p1}, Lf9/q;->k(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public u()I
-    .locals 2
-
-    invoke-direct {p0}, Lcom/google/android/exoplayer2/d0;->D0()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/d0;->d()Z
 
     move-result v0
 
-    const/4 v1, -0x1
+    if-eqz v0, :cond_0
 
-    if-ne v0, v1, :cond_0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
 
-    const/4 v0, 0x0
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+
+    iget v0, v0, Lh8/s;->b:I
+
+    goto :goto_0
 
     :cond_0
+    const/4 v0, -0x1
+
+    :goto_0
     return v0
 .end method
 
-.method public w()Lcom/google/android/exoplayer2/ExoPlaybackException;
+.method public u()I
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
 
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->e:Lcom/google/android/exoplayer2/ExoPlaybackException;
+    iget v0, v0, Lcom/google/android/exoplayer2/q0;->l:I
+
+    return v0
+.end method
+
+.method public w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     return-object v0
 .end method
 
-.method public y(Z)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {p0, p1, v0, v1}, Lcom/google/android/exoplayer2/d0;->o1(ZII)V
-
-    return-void
-.end method
-
-.method public z()Lcom/google/android/exoplayer2/Player$c;
+.method public x()Lcom/google/android/exoplayer2/Timeline;
     .locals 1
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->z:Lcom/google/android/exoplayer2/q0;
+
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    return-object v0
+.end method
+
+.method public y()Landroid/os/Looper;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/d0;->n:Landroid/os/Looper;
 
     return-object v0
 .end method

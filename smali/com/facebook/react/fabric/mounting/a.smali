@@ -101,7 +101,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static b(I)F
@@ -203,7 +202,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static c(FF)Lcom/facebook/yoga/YogaMeasureMode;

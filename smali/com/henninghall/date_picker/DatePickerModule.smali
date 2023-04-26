@@ -40,7 +40,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private createDialog(Lcom/facebook/react/bridge/ReadableMap;Lcom/henninghall/date_picker/h;Lcom/facebook/react/bridge/Callback;Lcom/facebook/react/bridge/Callback;)Landroid/app/AlertDialog;
@@ -538,9 +537,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private withTopMargin(Lcom/henninghall/date_picker/h;)Landroid/view/View;
@@ -662,9 +658,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 

@@ -74,7 +74,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private constructor <init>()V
@@ -108,7 +107,7 @@
 
     move-result-object p1
 
-    invoke-interface {p2, v0, p1}, Llc/e;->c(Llc/c;Ljava/lang/Object;)Llc/e;
+    invoke-interface {p2, v0, p1}, Llc/e;->b(Llc/c;Ljava/lang/Object;)Llc/e;
 
     return-void
 .end method

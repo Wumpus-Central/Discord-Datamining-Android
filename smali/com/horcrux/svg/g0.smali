@@ -159,12 +159,9 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
-.method private p(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+.method private M(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
     .locals 7
 
     .line 1
@@ -467,17 +464,9 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
-.method private q(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+.method private N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
     .locals 10
 
     .line 1
@@ -1526,7 +1515,7 @@
     .line 772
 .end method
 
-.method private r(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+.method private O(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 18
 
     .line 1
@@ -1572,12 +1561,12 @@
     .line 21
     .line 22
     .line 23
-    invoke-direct {v6, v1, v0}, Lcom/horcrux/svg/g0;->q(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {v6, v1, v0}, Lcom/horcrux/svg/g0;->N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 24
     .line 25
     .line 26
-    invoke-direct {v6, v1, v0}, Lcom/horcrux/svg/g0;->p(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {v6, v1, v0}, Lcom/horcrux/svg/g0;->M(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 27
     .line 28
@@ -1709,7 +1698,7 @@
 
     .line 85
     .line 86
-    invoke-direct/range {v0 .. v5}, Lcom/horcrux/svg/g0;->u(Landroid/text/TextPaint;Landroid/text/Layout$Alignment;ZLandroid/text/SpannableString;I)Landroid/text/StaticLayout;
+    invoke-direct/range {v0 .. v5}, Lcom/horcrux/svg/g0;->R(Landroid/text/TextPaint;Landroid/text/Layout$Alignment;ZLandroid/text/SpannableString;I)Landroid/text/StaticLayout;
 
     .line 87
     .line 88
@@ -1854,17 +1843,9 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
-.method private s(Lcom/horcrux/svg/SVGLength;DD)D
+.method private P(Lcom/horcrux/svg/SVGLength;DD)D
     .locals 9
 
     const-wide/16 v3, 0x0
@@ -1886,7 +1867,7 @@
     return-wide p1
 .end method
 
-.method private t(Ljava/lang/String;Landroid/graphics/Paint;Landroid/graphics/Canvas;)Landroid/graphics/Path;
+.method private Q(Ljava/lang/String;Landroid/graphics/Paint;Landroid/graphics/Canvas;)Landroid/graphics/Path;
     .locals 68
 
     move-object/from16 v6, p0
@@ -1944,7 +1925,7 @@
 
     iget-object v1, v6, Lcom/horcrux/svg/g0;->z:Lcom/horcrux/svg/h0;
 
-    invoke-virtual {v1, v15, v14}, Lcom/horcrux/svg/h0;->s(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
+    invoke-virtual {v1, v15, v14}, Lcom/horcrux/svg/h0;->P(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
 
     move-result-object v1
 
@@ -1998,7 +1979,7 @@
     move-result-object v0
 
     .line 11
-    invoke-direct {v6, v14, v0}, Lcom/horcrux/svg/g0;->q(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {v6, v14, v0}, Lcom/horcrux/svg/g0;->N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 12
     new-instance v5, Lcom/horcrux/svg/k;
@@ -2144,7 +2125,7 @@
     iget-object v1, v0, Lcom/horcrux/svg/h;->j:Lcom/horcrux/svg/m0;
 
     .line 28
-    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->n()Lcom/horcrux/svg/t0;
+    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->o()Lcom/horcrux/svg/t0;
 
     move-result-object v0
 
@@ -2153,12 +2134,12 @@
     move-wide/from16 v29, v10
 
     .line 29
-    invoke-virtual {v0, v14}, Lcom/horcrux/svg/t0;->m(Landroid/graphics/Paint;)D
+    invoke-virtual {v0, v14}, Lcom/horcrux/svg/t0;->n(Landroid/graphics/Paint;)D
 
     move-result-wide v9
 
     .line 30
-    invoke-direct {v6, v1, v9, v10}, Lcom/horcrux/svg/g0;->v(Lcom/horcrux/svg/m0;D)D
+    invoke-direct {v6, v1, v9, v10}, Lcom/horcrux/svg/g0;->S(Lcom/horcrux/svg/m0;D)D
 
     move-result-wide v31
 
@@ -2174,7 +2155,7 @@
     .line 32
     iget-object v0, v6, Lcom/horcrux/svg/g0;->z:Lcom/horcrux/svg/h0;
 
-    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->p()Lcom/horcrux/svg/q0;
+    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->M()Lcom/horcrux/svg/q0;
 
     move-result-object v0
 
@@ -2193,7 +2174,7 @@
     :goto_4
     iget-object v0, v6, Lcom/horcrux/svg/g0;->z:Lcom/horcrux/svg/h0;
 
-    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->q()Lcom/horcrux/svg/r0;
+    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->N()Lcom/horcrux/svg/r0;
 
     move-result-object v0
 
@@ -2214,7 +2195,8 @@
     :goto_5
     iget-object v0, v6, Lcom/horcrux/svg/g0;->z:Lcom/horcrux/svg/h0;
 
-    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->r()Lcom/horcrux/svg/SVGLength;
+    .line 35
+    invoke-virtual {v0}, Lcom/horcrux/svg/h0;->O()Lcom/horcrux/svg/SVGLength;
 
     move-result-object v1
 
@@ -2236,7 +2218,7 @@
 
     move-wide/from16 v4, v42
 
-    invoke-direct/range {v0 .. v5}, Lcom/horcrux/svg/g0;->s(Lcom/horcrux/svg/SVGLength;DD)D
+    invoke-direct/range {v0 .. v5}, Lcom/horcrux/svg/g0;->P(Lcom/horcrux/svg/SVGLength;DD)D
 
     move-result-wide v0
 
@@ -2246,7 +2228,7 @@
 
     div-double v2, v7, v44
 
-    .line 35
+    .line 36
     sget-object v4, Lcom/horcrux/svg/m0;->l:Lcom/horcrux/svg/m0;
 
     if-ne v11, v4, :cond_9
@@ -2294,7 +2276,7 @@
 
     const/4 v5, 0x0
 
-    .line 36
+    .line 37
     :goto_8
     iget-object v11, v6, Lcom/horcrux/svg/t0;->n:Lcom/horcrux/svg/SVGLength;
 
@@ -2304,7 +2286,7 @@
 
     if-eqz v11, :cond_e
 
-    .line 37
+    .line 38
     invoke-virtual/range {p3 .. p3}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v8
@@ -2337,7 +2319,7 @@
 
     if-ltz v5, :cond_d
 
-    .line 38
+    .line 39
     sget-object v5, Lcom/horcrux/svg/g0$a;->b:[I
 
     iget-object v7, v6, Lcom/horcrux/svg/t0;->p:Lcom/horcrux/svg/o0;
@@ -2371,7 +2353,7 @@
 
     goto :goto_9
 
-    .line 39
+    .line 40
     :cond_d
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -2391,17 +2373,17 @@
 
     mul-double v10, v51, v0
 
-    .line 40
+    .line 41
     invoke-virtual/range {p2 .. p2}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
 
     move-result-object v5
 
-    .line 41
+    .line 42
     iget v7, v5, Landroid/graphics/Paint$FontMetrics;->descent:F
 
     float-to-double v7, v7
 
-    .line 42
+    .line 43
     iget v9, v5, Landroid/graphics/Paint$FontMetrics;->leading:F
 
     move-wide/from16 v40, v10
@@ -2412,7 +2394,7 @@
 
     move/from16 v56, v4
 
-    .line 43
+    .line 44
     iget v4, v5, Landroid/graphics/Paint$FontMetrics;->ascent:F
 
     neg-float v4, v4
@@ -2423,7 +2405,7 @@
 
     float-to-double v2, v4
 
-    .line 44
+    .line 45
     iget v4, v5, Landroid/graphics/Paint$FontMetrics;->top:F
 
     neg-float v4, v4
@@ -2432,19 +2414,19 @@
 
     add-double v33, v4, v10
 
-    .line 45
-    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->k()Ljava/lang/String;
+    .line 46
+    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->l()Ljava/lang/String;
 
     move-result-object v9
 
-    .line 46
-    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->j()Lcom/horcrux/svg/i0;
+    .line 47
+    invoke-virtual/range {p0 .. p0}, Lcom/horcrux/svg/t0;->k()Lcom/horcrux/svg/i0;
 
     move-result-object v35
 
     if-eqz v35, :cond_f
 
-    .line 47
+    .line 48
     sget-object v36, Lcom/horcrux/svg/g0$a;->c:[I
 
     invoke-virtual/range {v35 .. v35}, Ljava/lang/Enum;->ordinal()I
@@ -2496,7 +2478,7 @@
 
     goto :goto_d
 
-    .line 48
+    .line 49
     :pswitch_7
     new-instance v2, Landroid/graphics/Rect;
 
@@ -2508,10 +2490,10 @@
 
     const/4 v5, 0x1
 
-    .line 49
+    .line 50
     invoke-virtual {v14, v3, v4, v5, v2}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 50
+    .line 51
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v2
@@ -2539,14 +2521,14 @@
     :goto_d
     if-eqz v9, :cond_13
 
-    .line 51
+    .line 52
     invoke-virtual {v9}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_13
 
-    .line 52
+    .line 53
     sget-object v2, Lcom/horcrux/svg/g0$a;->c:[I
 
     invoke-virtual/range {v35 .. v35}, Ljava/lang/Enum;->ordinal()I
@@ -2563,7 +2545,7 @@
 
     if-eq v2, v3, :cond_13
 
-    .line 53
+    .line 54
     invoke-virtual {v9}, Ljava/lang/String;->hashCode()I
 
     move-result v2
@@ -2630,7 +2612,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    .line 54
+    .line 55
     iget v2, v6, Lcom/horcrux/svg/VirtualView;->mScale:F
 
     float-to-double v7, v2
@@ -2645,6 +2627,7 @@
 
     move-wide/from16 v38, v42
 
+    .line 56
     invoke-static/range {v33 .. v39}, Lcom/horcrux/svg/x;->b(Ljava/lang/String;DDD)D
 
     move-result-wide v2
@@ -2656,7 +2639,7 @@
     :pswitch_a
     if-eqz v12, :cond_13
 
-    .line 55
+    .line 57
     invoke-interface {v12, v7}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v2
@@ -2669,43 +2652,43 @@
 
     if-eqz v2, :cond_13
 
-    .line 56
+    .line 58
     invoke-interface {v12, v5}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
 
     move-result v2
 
-    .line 57
+    .line 59
     invoke-interface {v12, v7}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
     move-result-object v5
 
-    .line 58
+    .line 60
     invoke-interface {v5, v3}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v7
 
     if-eqz v7, :cond_13
 
-    .line 59
+    .line 61
     invoke-interface {v5, v3}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
     move-result-object v3
 
     const-string v5, "ySuperscriptYOffset"
 
-    .line 60
+    .line 62
     invoke-interface {v3, v5}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v7
 
     if-eqz v7, :cond_13
 
-    .line 61
+    .line 63
     invoke-interface {v3, v5}, Lcom/facebook/react/bridge/ReadableMap;->getDouble(Ljava/lang/String;)D
 
     move-result-wide v7
 
-    .line 62
+    .line 64
     iget v3, v6, Lcom/horcrux/svg/VirtualView;->mScale:F
 
     float-to-double v4, v3
@@ -2725,7 +2708,7 @@
     :pswitch_b
     if-eqz v12, :cond_13
 
-    .line 63
+    .line 65
     invoke-interface {v12, v7}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v2
@@ -2738,43 +2721,43 @@
 
     if-eqz v2, :cond_13
 
-    .line 64
+    .line 66
     invoke-interface {v12, v5}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
 
     move-result v2
 
-    .line 65
+    .line 67
     invoke-interface {v12, v7}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
     move-result-object v4
 
-    .line 66
+    .line 68
     invoke-interface {v4, v3}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_13
 
-    .line 67
+    .line 69
     invoke-interface {v4, v3}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
     move-result-object v3
 
     const-string v4, "ySubscriptYOffset"
 
-    .line 68
+    .line 70
     invoke-interface {v3, v4}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_13
 
-    .line 69
+    .line 71
     invoke-interface {v3, v4}, Lcom/facebook/react/bridge/ReadableMap;->getDouble(Ljava/lang/String;)D
 
     move-result-wide v3
 
-    .line 70
+    .line 72
     iget v5, v6, Lcom/horcrux/svg/VirtualView;->mScale:F
 
     float-to-double v7, v5
@@ -2794,17 +2777,17 @@
     :pswitch_c
     move-wide v2, v10
 
-    .line 71
+    .line 73
     new-instance v4, Landroid/graphics/Matrix;
 
     invoke-direct {v4}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 72
+    .line 74
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 73
+    .line 75
     new-instance v12, Landroid/graphics/Matrix;
 
     invoke-direct {v12}, Landroid/graphics/Matrix;-><init>()V
@@ -2820,15 +2803,15 @@
     :goto_11
     if-ge v9, v13, :cond_25
 
-    .line 74
+    .line 76
     aget-char v7, v20, v9
 
-    .line 75
+    .line 77
     invoke-static {v7}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 76
+    .line 78
     aget-boolean v33, v46, v9
 
     if-eqz v33, :cond_14
@@ -2857,7 +2840,7 @@
 
     if-ge v6, v13, :cond_16
 
-    .line 77
+    .line 79
     aget v34, v47, v6
 
     const/16 v35, 0x0
@@ -2868,7 +2851,7 @@
 
     goto :goto_13
 
-    .line 78
+    .line 80
     :cond_15
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -2890,7 +2873,7 @@
 
     const/4 v8, 0x1
 
-    .line 79
+    .line 81
     aput-boolean v8, v46, v6
 
     move/from16 v24, v6
@@ -2909,7 +2892,7 @@
 
     move-object v6, v13
 
-    .line 80
+    .line 82
     :goto_14
     invoke-virtual {v14, v6}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
 
@@ -2923,7 +2906,7 @@
 
     if-eqz v27, :cond_17
 
-    .line 81
+    .line 83
     aget v6, v47, v9
 
     move/from16 v37, v8
@@ -2987,7 +2970,7 @@
 
     move-wide/from16 v2, v38
 
-    .line 82
+    .line 84
     :goto_18
     invoke-virtual {v15, v2, v3}, Lcom/horcrux/svg/j;->l(D)D
 
@@ -2997,24 +2980,24 @@
 
     move-object/from16 v38, v11
 
-    .line 83
+    .line 85
     invoke-virtual {v15}, Lcom/horcrux/svg/j;->m()D
 
     move-result-wide v10
 
-    .line 84
+    .line 86
     invoke-virtual {v15}, Lcom/horcrux/svg/j;->i()D
 
     move-result-wide v59
 
-    .line 85
+    .line 87
     invoke-virtual {v15}, Lcom/horcrux/svg/j;->j()D
 
     move-result-wide v61
 
     move-wide/from16 v63, v10
 
-    .line 86
+    .line 88
     invoke-virtual {v15}, Lcom/horcrux/svg/j;->k()D
 
     move-result-wide v10
@@ -3072,7 +3055,7 @@
 
     move-object/from16 v3, v28
 
-    .line 87
+    .line 89
     invoke-virtual {v3, v2, v5, v15}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     move-wide/from16 v65, v10
@@ -3092,12 +3075,12 @@
 
     const/4 v11, 0x0
 
-    .line 88
+    .line 90
     invoke-virtual {v10, v11, v4, v15}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     double-to-float v2, v2
 
-    .line 89
+    .line 91
     invoke-virtual {v4, v2, v11}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
     const/4 v11, 0x1
@@ -3109,13 +3092,13 @@
 
     const/4 v11, 0x1
 
-    .line 90
+    .line 92
     invoke-virtual {v10, v2, v4, v11}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     :goto_19
     double-to-float v2, v6
 
-    .line 91
+    .line 93
     invoke-virtual {v10, v2, v5, v11}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     cmpl-double v2, v8, v49
@@ -3126,7 +3109,7 @@
 
     double-to-float v2, v6
 
-    .line 92
+    .line 94
     invoke-virtual {v10, v2, v12, v15}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     sub-double/2addr v8, v6
@@ -3135,7 +3118,7 @@
 
     const/4 v3, 0x0
 
-    .line 93
+    .line 95
     invoke-virtual {v12, v2, v3}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
     goto :goto_1a
@@ -3145,18 +3128,18 @@
 
     double-to-float v2, v8
 
-    .line 94
+    .line 96
     invoke-virtual {v10, v2, v12, v11}, Landroid/graphics/PathMeasure;->getMatrix(FLandroid/graphics/Matrix;I)Z
 
     :goto_1a
     move-object/from16 v15, v38
 
-    .line 95
+    .line 97
     invoke-virtual {v4, v15}, Landroid/graphics/Matrix;->getValues([F)V
 
     move-object/from16 v9, v39
 
-    .line 96
+    .line 98
     invoke-virtual {v12, v9}, Landroid/graphics/Matrix;->getValues([F)V
 
     const/4 v8, 0x2
@@ -3187,7 +3170,7 @@
 
     sub-double/2addr v8, v6
 
-    .line 97
+    .line 99
     invoke-static {v8, v9, v10, v11}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v2
@@ -3200,7 +3183,7 @@
 
     double-to-float v2, v2
 
-    .line 98
+    .line 100
     invoke-virtual {v5, v2}, Landroid/graphics/Matrix;->preRotate(F)Z
 
     :goto_1b
@@ -3212,7 +3195,7 @@
 
     double-to-float v3, v6
 
-    .line 99
+    .line 101
     invoke-virtual {v5, v2, v3}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
     move-wide/from16 v10, v40
@@ -3223,7 +3206,7 @@
 
     int-to-float v3, v6
 
-    .line 100
+    .line 102
     invoke-virtual {v5, v2, v3}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     move-wide/from16 v7, v63
@@ -3232,7 +3215,7 @@
 
     const/4 v3, 0x0
 
-    .line 101
+    .line 103
     invoke-virtual {v5, v3, v2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
     goto :goto_1c
@@ -3260,7 +3243,7 @@
 
     double-to-float v3, v7
 
-    .line 102
+    .line 104
     invoke-virtual {v5, v2, v3}, Landroid/graphics/Matrix;->setTranslate(FF)V
 
     :goto_1c
@@ -3268,19 +3251,19 @@
 
     double-to-float v2, v2
 
-    .line 103
+    .line 105
     invoke-virtual {v5, v2}, Landroid/graphics/Matrix;->preRotate(F)Z
 
     if-eqz v37, :cond_22
 
-    .line 104
+    .line 106
     new-instance v2, Landroid/graphics/Path;
 
     invoke-direct {v2}, Landroid/graphics/Path;-><init>()V
 
     const/4 v9, 0x0
 
-    .line 105
+    .line 107
     invoke-virtual/range {v35 .. v35}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -3368,21 +3351,21 @@
 
     move-object/from16 v36, v28
 
-    .line 106
+    .line 108
     invoke-virtual {v2, v7, v13}, Lcom/horcrux/svg/k;->b(CLjava/lang/String;)Landroid/graphics/Path;
 
     move-result-object v7
 
-    .line 107
+    .line 109
     :goto_1d
     new-instance v8, Landroid/graphics/RectF;
 
     invoke-direct {v8}, Landroid/graphics/RectF;-><init>()V
 
-    .line 108
+    .line 110
     invoke-virtual {v7, v8, v15}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
 
-    .line 109
+    .line 111
     invoke-virtual {v8}, Landroid/graphics/RectF;->width()F
 
     move-result v8
@@ -3393,26 +3376,26 @@
 
     if-nez v8, :cond_23
 
-    .line 110
+    .line 112
     invoke-virtual/range {p3 .. p3}, Landroid/graphics/Canvas;->save()I
 
     move-object v8, v2
 
     move-object/from16 v2, p3
 
-    .line 111
+    .line 113
     invoke-virtual {v2, v5}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
     move v7, v9
 
     move-object/from16 v9, p0
 
-    .line 112
+    .line 114
     iget-object v10, v9, Lcom/horcrux/svg/g0;->A:Ljava/util/ArrayList;
 
     invoke-virtual {v10, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 113
+    .line 115
     iget-object v10, v9, Lcom/horcrux/svg/g0;->B:Ljava/util/ArrayList;
 
     new-instance v11, Landroid/graphics/Matrix;
@@ -3423,10 +3406,10 @@
 
     move-object/from16 v10, p2
 
-    .line 114
+    .line 116
     invoke-virtual {v2, v13, v7, v7, v10}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 115
+    .line 117
     invoke-virtual/range {p3 .. p3}, Landroid/graphics/Canvas;->restore()V
 
     move-object/from16 v11, v67
@@ -3442,12 +3425,12 @@
 
     move-object/from16 v2, p3
 
-    .line 116
+    .line 118
     invoke-virtual {v7, v5}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
     move-object/from16 v11, v67
 
-    .line 117
+    .line 119
     invoke-virtual {v11, v7}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;)V
 
     goto :goto_1f
@@ -3564,7 +3547,7 @@
     .end packed-switch
 .end method
 
-.method private u(Landroid/text/TextPaint;Landroid/text/Layout$Alignment;ZLandroid/text/SpannableString;I)Landroid/text/StaticLayout;
+.method private R(Landroid/text/TextPaint;Landroid/text/Layout$Alignment;ZLandroid/text/SpannableString;I)Landroid/text/StaticLayout;
     .locals 2
 
     .line 1
@@ -4160,7 +4143,7 @@
     .line 550
 .end method
 
-.method private v(Lcom/horcrux/svg/m0;D)D
+.method private S(Lcom/horcrux/svg/m0;D)D
     .locals 2
 
     sget-object v0, Lcom/horcrux/svg/g0$a;->a:[I
@@ -4198,7 +4181,7 @@
     return-wide p1
 .end method
 
-.method private w()V
+.method private U()V
     .locals 3
 
     .line 1
@@ -4333,12 +4316,9 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
-.method public static x(Ljava/lang/String;)Ljava/lang/String;
+.method public static V(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
 
     .line 1
@@ -4793,34 +4773,46 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 
 # virtual methods
+.method public T(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/horcrux/svg/g0;->y:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/horcrux/svg/g0;->invalidate()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
 .method clearCache()V
     .locals 1
 
@@ -4854,7 +4846,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
@@ -4912,7 +4903,7 @@
 
     .line 25
     .line 26
-    invoke-direct {p0, p1, p2}, Lcom/horcrux/svg/g0;->r(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+    invoke-direct {p0, p1, p2}, Lcom/horcrux/svg/g0;->O(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
     .line 27
     .line 28
@@ -4937,7 +4928,7 @@
 
     .line 37
     .line 38
-    invoke-direct {p0, p1, p2}, Lcom/horcrux/svg/g0;->r(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+    invoke-direct {p0, p1, p2}, Lcom/horcrux/svg/g0;->O(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
     .line 39
     .line 40
@@ -4978,7 +4969,7 @@
     move-result-object v1
 
     .line 58
-    invoke-direct {p0, p2, v1}, Lcom/horcrux/svg/g0;->q(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {p0, p2, v1}, Lcom/horcrux/svg/g0;->N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 59
     .line 60
@@ -5125,7 +5116,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p0, p1, p2}, Lcom/horcrux/svg/t0;->l(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
+    invoke-virtual {p0, p1, p2}, Lcom/horcrux/svg/t0;->m(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
 
     .line 11
     .line 12
@@ -5141,7 +5132,7 @@
 
     .line 17
     :cond_1
-    invoke-direct {p0}, Lcom/horcrux/svg/g0;->w()V
+    invoke-direct {p0}, Lcom/horcrux/svg/g0;->U()V
 
     .line 18
     .line 19
@@ -5155,7 +5146,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, Lcom/horcrux/svg/g0;->x(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/horcrux/svg/g0;->V(Ljava/lang/String;)Ljava/lang/String;
 
     .line 26
     .line 27
@@ -5163,7 +5154,7 @@
     move-result-object v0
 
     .line 29
-    invoke-direct {p0, v0, p2, p1}, Lcom/horcrux/svg/g0;->t(Ljava/lang/String;Landroid/graphics/Paint;Landroid/graphics/Canvas;)Landroid/graphics/Path;
+    invoke-direct {p0, v0, p2, p1}, Lcom/horcrux/svg/g0;->Q(Ljava/lang/String;Landroid/graphics/Paint;Landroid/graphics/Canvas;)Landroid/graphics/Path;
 
     .line 30
     .line 31
@@ -5192,8 +5183,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method hitTest([F)I
@@ -5641,30 +5630,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public invalidate()V
@@ -5700,10 +5665,9 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
-.method m(Landroid/graphics/Paint;)D
+.method n(Landroid/graphics/Paint;)D
     .locals 5
 
     .line 1
@@ -5779,7 +5743,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {v3, p1}, Lcom/horcrux/svg/t0;->m(Landroid/graphics/Paint;)D
+    invoke-virtual {v3, p1}, Lcom/horcrux/svg/t0;->n(Landroid/graphics/Paint;)D
 
     .line 36
     .line 37
@@ -5843,12 +5807,12 @@
     move-result-object v1
 
     .line 63
-    invoke-direct {p0, p1, v1}, Lcom/horcrux/svg/g0;->q(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {p0, p1, v1}, Lcom/horcrux/svg/g0;->N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 64
     .line 65
     .line 66
-    invoke-direct {p0, p1, v1}, Lcom/horcrux/svg/g0;->p(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
+    invoke-direct {p0, p1, v1}, Lcom/horcrux/svg/g0;->M(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
 
     .line 67
     .line 68
@@ -5880,47 +5844,4 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
-.end method
-
-.method public setContent(Ljava/lang/String;)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "content"
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/horcrux/svg/g0;->y:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/horcrux/svg/g0;->invalidate()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
 .end method

@@ -64,18 +64,17 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static synthetic b(Lcom/google/firebase/messaging/b0;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/google/firebase/messaging/b0;->p(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+    invoke-direct {p0, p1}, Lcom/google/firebase/messaging/b0;->n(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
 
     return-void
 .end method
 
-.method private i()[B
+.method private h()[B
     .locals 5
 
     .line 1
@@ -646,42 +645,9 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
-.method public static k(Ljava/lang/String;)Lcom/google/firebase/messaging/b0;
+.method public static i(Ljava/lang/String;)Lcom/google/firebase/messaging/b0;
     .locals 3
 
     .line 1
@@ -815,17 +781,14 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
-.method private synthetic p(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+.method private synthetic n(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .locals 1
 
     .line 1
     :try_start_0
-    invoke-virtual {p0}, Lcom/google/firebase/messaging/b0;->f()Landroid/graphics/Bitmap;
+    invoke-virtual {p0}, Lcom/google/firebase/messaging/b0;->g()Landroid/graphics/Bitmap;
 
     .line 2
     .line 3
@@ -867,7 +830,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -884,7 +846,7 @@
     return-void
 .end method
 
-.method public f()Landroid/graphics/Bitmap;
+.method public g()Landroid/graphics/Bitmap;
     .locals 4
 
     .line 1
@@ -948,7 +910,7 @@
     .line 31
     .line 32
     :cond_0
-    invoke-direct {p0}, Lcom/google/firebase/messaging/b0;->i()[B
+    invoke-direct {p0}, Lcom/google/firebase/messaging/b0;->h()[B
 
     .line 33
     .line 34
@@ -1432,39 +1394,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method public l()Lcom/google/android/gms/tasks/Task;
@@ -1489,7 +1418,7 @@
     return-object v0
 .end method
 
-.method public s(Ljava/util/concurrent/ExecutorService;)V
+.method public p(Ljava/util/concurrent/ExecutorService;)V
     .locals 2
 
     .line 1
@@ -1539,5 +1468,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

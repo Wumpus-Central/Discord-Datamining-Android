@@ -192,7 +192,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/exoplayer2/upstream/cache/a;->f(Ljava/io/File;J)V
+    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/exoplayer2/upstream/cache/a;->h(Ljava/io/File;J)V
 
     .line 32
     .line 33

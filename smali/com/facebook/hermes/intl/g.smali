@@ -255,7 +255,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {p0}, Lg5/b;->d()Ljava/lang/Object;
+    invoke-interface {p0}, Lg5/b;->c()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -357,7 +357,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static c([Ljava/lang/String;)Lcom/facebook/hermes/intl/g$a;
@@ -420,7 +419,7 @@
 
     .line 27
     .line 28
-    invoke-interface {v3}, Lg5/b;->b()Ljava/util/HashMap;
+    invoke-interface {v3}, Lg5/b;->a()Ljava/util/HashMap;
 
     .line 29
     .line 30
@@ -488,7 +487,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static d([Ljava/lang/String;)[Ljava/lang/String;
@@ -613,7 +611,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static e()[Ljava/lang/String;
@@ -815,7 +812,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static g([Ljava/lang/String;[Ljava/lang/String;)Lcom/facebook/hermes/intl/g$a;
@@ -854,7 +850,7 @@
     move-result-object v3
 
     .line 16
-    invoke-interface {v3}, Lg5/b;->f()Ljava/lang/String;
+    invoke-interface {v3}, Lg5/b;->e()Ljava/lang/String;
 
     .line 17
     .line 18
@@ -894,7 +890,7 @@
 
     .line 35
     .line 36
-    invoke-interface {v3}, Lg5/b;->b()Ljava/util/HashMap;
+    invoke-interface {v3}, Lg5/b;->a()Ljava/util/HashMap;
 
     .line 37
     .line 38
@@ -1090,7 +1086,7 @@
     move-result-object v5
 
     .line 20
-    invoke-interface {v5}, Lg5/b;->f()Ljava/lang/String;
+    invoke-interface {v5}, Lg5/b;->e()Ljava/lang/String;
 
     .line 21
     .line 22
@@ -1182,5 +1178,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

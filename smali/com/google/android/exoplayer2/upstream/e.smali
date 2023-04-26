@@ -195,13 +195,7 @@
     return-void
 .end method
 
-.method public f(Ld9/x;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public synthetic i()Ljava/util/Map;
+.method public synthetic d()Ljava/util/Map;
     .locals 1
 
     invoke-static {p0}, Ld9/k;->a(Lcom/google/android/exoplayer2/upstream/DataSource;)Ljava/util/Map;
@@ -209,6 +203,12 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public h(Ld9/x;)V
+    .locals 0
+
+    return-void
 .end method
 
 .method public m()Landroid/net/Uri;

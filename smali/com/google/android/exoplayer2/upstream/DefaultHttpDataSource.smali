@@ -5715,7 +5715,7 @@
     .line 126
 .end method
 
-.method public i()Ljava/util/Map;
+.method public d()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {

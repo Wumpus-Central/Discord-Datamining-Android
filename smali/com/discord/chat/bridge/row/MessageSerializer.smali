@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->C(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->G(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;
 
     move-result-object p1
 

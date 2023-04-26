@@ -2576,7 +2576,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public o(FFFF)Lcom/facebook/drawee/generic/a;
@@ -3235,7 +3234,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public r(F)Lcom/facebook/drawee/generic/a;
@@ -3337,7 +3335,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public s(Z)Lcom/facebook/drawee/generic/a;

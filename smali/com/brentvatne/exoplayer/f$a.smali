@@ -78,7 +78,7 @@
     move-result-object p1
 
     .line 21
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()I
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->P()I
 
     .line 22
     .line 23
@@ -105,7 +105,7 @@
     move-result-object p1
 
     .line 34
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->h()Z
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()Z
 
     .line 35
     .line 36
@@ -129,7 +129,7 @@
     move-result-object p1
 
     .line 46
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->X()J
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->Y()J
 
     .line 47
     .line 48
@@ -260,7 +260,7 @@
 
     .line 108
     .line 109
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->u(Lcom/brentvatne/exoplayer/f;)F
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->v(Lcom/brentvatne/exoplayer/f;)F
 
     .line 110
     .line 111

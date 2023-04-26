@@ -107,7 +107,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static synthetic access$000(Lcom/facebook/react/devsupport/BundleDownloader;)Lokhttp3/Call;
@@ -545,7 +544,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p4}, Lokio/BufferedSource;->q0()Ljava/lang/String;
+    invoke-interface {p4}, Lokio/BufferedSource;->v0()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -1348,7 +1347,7 @@
 
     .line 5
     :try_start_1
-    invoke-interface {p0, p1}, Lokio/BufferedSource;->w0(Lokio/Sink;)J
+    invoke-interface {p0, p1}, Lokio/BufferedSource;->A0(Lokio/Sink;)J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1605,7 +1604,7 @@
 
     invoke-direct {p5, p0, p1, p2, p4}, Lcom/facebook/react/devsupport/BundleDownloader$1;-><init>(Lcom/facebook/react/devsupport/BundleDownloader;Lcom/facebook/react/devsupport/interfaces/DevBundleDownloadListener;Ljava/io/File;Lcom/facebook/react/devsupport/BundleDownloader$BundleInfo;)V
 
-    invoke-interface {p3, p5}, Lokhttp3/Call;->i(Loj/d;)V
+    invoke-interface {p3, p5}, Lokhttp3/Call;->g(Loj/d;)V
 
     return-void
 .end method

@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public b()V
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/k0$b$a;->b:Lcom/facebook/imagepipeline/producers/k0$b;

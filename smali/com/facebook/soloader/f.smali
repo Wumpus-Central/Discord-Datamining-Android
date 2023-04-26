@@ -7,5 +7,5 @@
 
 
 # virtual methods
-.method public abstract N(Ljava/nio/ByteBuffer;J)I
+.method public abstract F(Ljava/nio/ByteBuffer;J)I
 .end method

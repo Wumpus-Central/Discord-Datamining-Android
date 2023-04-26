@@ -81,7 +81,7 @@
     const/4 v0, 0x0
 
     .line 8
-    invoke-interface {p1, v0, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {p1, v0, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 9
     .line 10
@@ -90,7 +90,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p1}, Lu5/e;->k0(Lu5/e;)Z
+    invoke-static {p1}, Lu5/e;->c0(Lu5/e;)Z
 
     .line 13
     .line 14
@@ -116,7 +116,7 @@
     move-result-object v0
 
     .line 25
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 26
     .line 27

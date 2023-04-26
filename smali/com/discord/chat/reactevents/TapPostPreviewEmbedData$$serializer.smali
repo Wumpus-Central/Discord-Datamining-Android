@@ -94,7 +94,7 @@
 
     .line 11
     .line 12
-    const/4 v3, 0x3
+    const/4 v3, 0x4
 
     .line 13
     invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
@@ -102,7 +102,7 @@
     .line 14
     .line 15
     .line 16
-    const-string v0, "parentChannelId"
+    const-string v0, "guildId"
 
     .line 17
     .line 18
@@ -114,7 +114,7 @@
     .line 20
     .line 21
     .line 22
-    const-string v0, "threadId"
+    const-string v0, "parentChannelId"
 
     .line 23
     .line 24
@@ -123,7 +123,7 @@
     .line 25
     .line 26
     .line 27
-    const-string v0, "messageId"
+    const-string v0, "threadId"
 
     .line 28
     .line 29
@@ -132,16 +132,20 @@
     .line 30
     .line 31
     .line 32
-    sput-object v1, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData$$serializer;->descriptor:Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;
+    const-string v0, "messageId"
 
     .line 33
     .line 34
-    return-void
+    invoke-virtual {v1, v0, v2}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;->l(Ljava/lang/String;Z)V
+
     .line 35
     .line 36
     .line 37
+    sput-object v1, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData$$serializer;->descriptor:Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;
+
     .line 38
     .line 39
+    return-void
     .line 40
     .line 41
     .line 42
@@ -202,7 +206,7 @@
     .end annotation
 
     .line 1
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     .line 2
     new-array v0, v0, [Lkotlinx/serialization/KSerializer;
@@ -227,21 +231,25 @@
 
     .line 11
     .line 12
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
     .line 13
-    sget-object v2, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
+    aput-object v1, v0, v2
 
     .line 14
     .line 15
-    aput-object v2, v0, v1
+    const/4 v1, 0x3
 
     .line 16
+    sget-object v2, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
+
     .line 17
-    return-object v0
     .line 18
+    aput-object v2, v0, v1
+
     .line 19
     .line 20
+    return-object v0
     .line 21
     .line 22
     .line 23
@@ -301,7 +309,7 @@
 .end method
 
 .method public deserialize(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;
-    .locals 18
+    .locals 21
 
     move-object/from16 v0, p1
 
@@ -314,148 +322,171 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/Decoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/Decoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/c;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkotlinx/serialization/encoding/c;->y()Z
+    invoke-interface {v0}, Lkotlinx/serialization/encoding/c;->p()Z
 
     move-result v2
 
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
-    const/4 v4, 0x1
+    const/4 v4, 0x2
 
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     const/4 v6, 0x0
 
+    const/4 v7, 0x0
+
     if-eqz v2, :cond_0
 
-    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v6}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
     move-result-object v4
 
-    sget-object v5, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
+    sget-object v6, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
 
-    invoke-interface {v0, v1, v3, v5, v6}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v3, v6, v7}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    const/4 v5, 0x7
+    const/16 v6, 0xf
 
-    move-object v13, v2
+    move-object v15, v2
 
-    move-object v14, v4
+    move-object/from16 v17, v4
 
-    move v12, v5
+    move-object/from16 v16, v5
+
+    move v14, v6
 
     goto :goto_1
 
     :cond_0
-    move v10, v4
+    move v12, v5
 
-    move v9, v5
+    move v11, v6
 
-    move-object v2, v6
+    move-object v2, v7
 
-    move-object v7, v2
+    move-object v8, v2
 
-    move-object v8, v7
+    move-object v9, v8
+
+    move-object v10, v9
 
     :goto_0
-    if-eqz v10, :cond_5
+    if-eqz v12, :cond_6
 
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->o(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
 
-    move-result v11
+    move-result v13
 
-    const/4 v12, -0x1
+    const/4 v14, -0x1
 
-    if-eq v11, v12, :cond_4
+    if-eq v13, v14, :cond_5
 
-    if-eqz v11, :cond_3
+    if-eqz v13, :cond_4
 
-    if-eq v11, v4, :cond_2
+    if-eq v13, v5, :cond_3
 
-    if-ne v11, v3, :cond_1
+    if-eq v13, v4, :cond_2
 
-    sget-object v11, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
+    if-ne v13, v3, :cond_1
 
-    invoke-interface {v0, v1, v3, v11, v7}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v13, Lcom/discord/primitives/MessageId$$serializer;->INSTANCE:Lcom/discord/primitives/MessageId$$serializer;
 
-    move-result-object v7
+    invoke-interface {v0, v1, v3, v13, v8}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
-    or-int/lit8 v9, v9, 0x4
+    move-result-object v8
+
+    or-int/lit8 v11, v11, 0x8
 
     goto :goto_0
 
     :cond_1
     new-instance v0, Lwi/n;
 
-    invoke-direct {v0, v11}, Lwi/n;-><init>(I)V
+    invoke-direct {v0, v13}, Lwi/n;-><init>(I)V
 
     throw v0
 
     :cond_2
-    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v4}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    or-int/lit8 v9, v9, 0x2
+    or-int/lit8 v11, v11, 0x4
 
     goto :goto_0
 
     :cond_3
-    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+    invoke-interface {v0, v1, v5}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v10
 
-    or-int/lit8 v9, v9, 0x1
+    or-int/lit8 v11, v11, 0x2
 
     goto :goto_0
 
     :cond_4
-    move v10, v5
+    invoke-interface {v0, v1, v6}, Lkotlinx/serialization/encoding/c;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Ljava/lang/String;
+
+    move-result-object v2
+
+    or-int/lit8 v11, v11, 0x1
 
     goto :goto_0
 
     :cond_5
-    move-object v13, v2
+    move v12, v6
 
-    move-object v3, v7
+    goto :goto_0
 
-    move-object v14, v8
+    :cond_6
+    move-object v15, v2
 
-    move v12, v9
+    move-object v3, v8
+
+    move-object/from16 v17, v9
+
+    move-object/from16 v16, v10
+
+    move v14, v11
 
     :goto_1
-    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {v0, v1}, Lkotlinx/serialization/encoding/c;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     new-instance v0, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;
 
     check-cast v3, Lcom/discord/primitives/MessageId;
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
     invoke-virtual {v3}, Lcom/discord/primitives/MessageId;->unbox-impl()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    :cond_6
-    move-object v15, v6
+    :cond_7
+    move-object/from16 v18, v7
 
-    const/16 v16, 0x0
+    const/16 v19, 0x0
 
-    const/16 v17, 0x0
+    const/16 v20, 0x0
 
-    move-object v11, v0
+    move-object v13, v0
 
-    invoke-direct/range {v11 .. v17}, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v13 .. v20}, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method
@@ -495,13 +526,13 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeEncoder;
 
     move-result-object p1
 
     invoke-static {p2, p1, v0}, Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;->write$Self(Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->b(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->c(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     return-void
 .end method

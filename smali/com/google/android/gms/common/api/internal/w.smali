@@ -118,7 +118,7 @@
 
     iget-object v2, p0, Lcom/google/android/gms/common/api/internal/w;->d:Ljava/util/Set;
 
-    invoke-interface {v1, v0, v2}, Lu9/a$f;->i(Lw9/j;Ljava/util/Set;)V
+    invoke-interface {v1, v0, v2}, Lu9/a$f;->g(Lw9/j;Ljava/util/Set;)V
 
     :cond_0
     return-void

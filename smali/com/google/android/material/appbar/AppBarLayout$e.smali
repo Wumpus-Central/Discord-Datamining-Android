@@ -62,7 +62,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private static b(Landroid/graphics/Rect;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;)V

@@ -154,7 +154,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v0}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v0}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 24
     .line 25
@@ -186,7 +186,7 @@
     move-result-object v1
 
     .line 39
-    invoke-interface {v1}, Lq5/e;->b()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->a()Ljava/util/concurrent/Executor;
 
     .line 40
     .line 41
@@ -215,7 +215,7 @@
     move-result-object v1
 
     .line 53
-    invoke-interface {v1}, Lq5/e;->b()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->a()Ljava/util/concurrent/Executor;
 
     .line 54
     .line 55
@@ -233,7 +233,7 @@
 
     .line 61
     .line 62
-    invoke-interface {p1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {p1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 63
     .line 64
@@ -249,7 +249,7 @@
     move-result v0
 
     .line 70
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->v0(I)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->n0(I)V
 
     .line 71
     .line 72
@@ -258,7 +258,7 @@
 
     .line 74
     .line 75
-    invoke-interface {p1}, Lq5/g;->f()Lr5/a;
+    invoke-interface {p1}, Lq5/g;->w()Lr5/a;
 
     .line 76
     .line 77
@@ -1175,7 +1175,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v1}, Lq5/g;->k()Ljava/util/Set;
+    invoke-interface {v1}, Lq5/g;->f()Ljava/util/Set;
 
     .line 12
     .line 13
@@ -1187,7 +1187,7 @@
 
     .line 16
     .line 17
-    invoke-interface {v1}, Lq5/g;->b()Ljava/util/Set;
+    invoke-interface {v1}, Lq5/g;->a()Ljava/util/Set;
 
     .line 18
     .line 19
@@ -1199,7 +1199,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v1}, Lq5/g;->d()Lcom/facebook/common/internal/Supplier;
+    invoke-interface {v1}, Lq5/g;->b()Lcom/facebook/common/internal/Supplier;
 
     .line 24
     .line 25
@@ -1243,7 +1243,7 @@
 
     .line 44
     .line 45
-    invoke-interface {v1}, Lq5/g;->l()Lo5/f;
+    invoke-interface {v1}, Lq5/g;->y()Lo5/f;
 
     .line 46
     .line 47
@@ -1259,7 +1259,7 @@
 
     .line 52
     .line 53
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 54
     .line 55
@@ -1279,7 +1279,7 @@
 
     .line 62
     .line 63
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 64
     .line 65
@@ -1299,7 +1299,7 @@
 
     .line 72
     .line 73
-    invoke-interface {v1}, Lq5/g;->z()Lr3/a;
+    invoke-interface {v1}, Lq5/g;->C()Lr3/a;
 
     .line 74
     .line 75
@@ -2075,7 +2075,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v3}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v3}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 22
     .line 23
@@ -2095,7 +2095,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v4}, Lq5/g;->t()Lt3/f;
+    invoke-interface {v4}, Lq5/g;->l()Lt3/f;
 
     .line 32
     .line 33
@@ -2162,7 +2162,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->B()Ls5/c;
+    invoke-interface {v0}, Lq5/g;->r()Ls5/c;
 
     .line 8
     .line 9
@@ -2178,7 +2178,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, Lq5/g;->B()Ls5/c;
+    invoke-interface {v0}, Lq5/g;->r()Ls5/c;
 
     .line 16
     .line 17
@@ -2206,7 +2206,7 @@
 
     .line 27
     .line 28
-    invoke-interface {v0}, Lk5/a;->b()Ls5/c;
+    invoke-interface {v0}, Lk5/a;->c()Ls5/c;
 
     .line 29
     .line 30
@@ -2214,7 +2214,7 @@
     move-result-object v1
 
     .line 32
-    invoke-interface {v0}, Lk5/a;->c()Ls5/c;
+    invoke-interface {v0}, Lk5/a;->b()Ls5/c;
 
     .line 33
     .line 34
@@ -2237,7 +2237,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v2}, Lq5/g;->x()Ls5/d;
+    invoke-interface {v2}, Lq5/g;->o()Ls5/d;
 
     .line 42
     .line 43
@@ -2297,7 +2297,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->v()La6/d;
+    invoke-interface {v0}, Lq5/g;->n()La6/d;
 
     .line 8
     .line 9
@@ -2313,7 +2313,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, Lq5/g;->u()Ljava/lang/Integer;
+    invoke-interface {v0}, Lq5/g;->m()Ljava/lang/Integer;
 
     .line 16
     .line 17
@@ -2329,7 +2329,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v0}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v0}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 24
     .line 25
@@ -2357,7 +2357,7 @@
 
     .line 36
     .line 37
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 38
     .line 39
@@ -2394,7 +2394,7 @@
 
     .line 54
     .line 55
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 56
     .line 57
@@ -2414,7 +2414,7 @@
 
     .line 64
     .line 65
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 66
     .line 67
@@ -2434,7 +2434,7 @@
 
     .line 74
     .line 75
-    invoke-interface {v1}, Lq5/g;->v()La6/d;
+    invoke-interface {v1}, Lq5/g;->n()La6/d;
 
     .line 76
     .line 77
@@ -2446,7 +2446,7 @@
 
     .line 80
     .line 81
-    invoke-interface {v1}, Lq5/g;->u()Ljava/lang/Integer;
+    invoke-interface {v1}, Lq5/g;->m()Ljava/lang/Integer;
 
     .line 82
     .line 83
@@ -2458,7 +2458,7 @@
 
     .line 86
     .line 87
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 88
     .line 89
@@ -3220,7 +3220,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 10
     .line 11
@@ -3252,7 +3252,7 @@
 
     .line 24
     .line 25
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 26
     .line 27
@@ -3280,7 +3280,7 @@
 
     .line 38
     .line 39
-    invoke-interface {v1}, Lq5/g;->o()Ls5/e;
+    invoke-interface {v1}, Lq5/g;->h()Ls5/e;
 
     .line 40
     .line 41
@@ -3292,7 +3292,7 @@
 
     .line 44
     .line 45
-    invoke-interface {v1}, Lq5/g;->s()Z
+    invoke-interface {v1}, Lq5/g;->k()Z
 
     .line 46
     .line 47
@@ -3304,7 +3304,7 @@
 
     .line 50
     .line 51
-    invoke-interface {v1}, Lq5/g;->m()Z
+    invoke-interface {v1}, Lq5/g;->z()Z
 
     .line 52
     .line 53
@@ -3316,7 +3316,7 @@
 
     .line 56
     .line 57
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 58
     .line 59
@@ -3348,7 +3348,7 @@
 
     .line 72
     .line 73
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 74
     .line 75
@@ -3360,7 +3360,7 @@
 
     .line 78
     .line 79
-    invoke-interface {v11}, Lq5/g;->c()I
+    invoke-interface {v11}, Lq5/g;->u()I
 
     .line 80
     .line 81
@@ -3380,7 +3380,7 @@
 
     .line 88
     .line 89
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 90
     .line 91
@@ -3432,7 +3432,7 @@
 
     .line 114
     .line 115
-    invoke-interface {v1}, Lq5/g;->l()Lo5/f;
+    invoke-interface {v1}, Lq5/g;->y()Lo5/f;
 
     .line 116
     .line 117
@@ -3452,7 +3452,7 @@
 
     .line 124
     .line 125
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 126
     .line 127
@@ -3472,7 +3472,7 @@
 
     .line 134
     .line 135
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 136
     .line 137
@@ -3492,7 +3492,7 @@
 
     .line 144
     .line 145
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 146
     .line 147
@@ -3512,7 +3512,7 @@
 
     .line 154
     .line 155
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 156
     .line 157
@@ -3540,7 +3540,7 @@
 
     .line 168
     .line 169
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 170
     .line 171
@@ -3560,7 +3560,7 @@
 
     .line 178
     .line 179
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 180
     .line 181
@@ -4217,7 +4217,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 12
     .line 13
@@ -4303,7 +4303,7 @@
 
     .line 50
     .line 51
-    invoke-interface {v2}, Lq5/g;->h()Lcom/facebook/imagepipeline/producers/NetworkFetcher;
+    invoke-interface {v2}, Lq5/g;->c()Lcom/facebook/imagepipeline/producers/NetworkFetcher;
 
     .line 52
     .line 53
@@ -4315,7 +4315,7 @@
 
     .line 56
     .line 57
-    invoke-interface {v2}, Lq5/g;->m()Z
+    invoke-interface {v2}, Lq5/g;->z()Z
 
     .line 58
     .line 59
@@ -4327,7 +4327,7 @@
 
     .line 62
     .line 63
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 64
     .line 65
@@ -4351,7 +4351,7 @@
 
     .line 74
     .line 75
-    invoke-interface {v2}, Lq5/g;->s()Z
+    invoke-interface {v2}, Lq5/g;->k()Z
 
     .line 76
     .line 77
@@ -4363,7 +4363,7 @@
 
     .line 80
     .line 81
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 82
     .line 83
@@ -4383,7 +4383,7 @@
 
     .line 90
     .line 91
-    invoke-interface {v2}, Lq5/g;->y()Z
+    invoke-interface {v2}, Lq5/g;->p()Z
 
     .line 92
     .line 93
@@ -4403,7 +4403,7 @@
 
     .line 100
     .line 101
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 102
     .line 103
@@ -4423,7 +4423,7 @@
 
     .line 110
     .line 111
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 112
     .line 113
@@ -4443,7 +4443,7 @@
 
     .line 120
     .line 121
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 122
     .line 123
@@ -4463,7 +4463,7 @@
 
     .line 130
     .line 131
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 132
     .line 133
@@ -5172,7 +5172,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 14
     .line 15
@@ -5184,7 +5184,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v3}, Lq5/g;->c()I
+    invoke-interface {v3}, Lq5/g;->u()I
 
     .line 20
     .line 21
@@ -5204,7 +5204,7 @@
 
     .line 28
     .line 29
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 30
     .line 31
@@ -5232,7 +5232,7 @@
     move-result-object v1
 
     .line 43
-    invoke-interface {v1}, Lq5/e;->e()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->f()Ljava/util/concurrent/Executor;
 
     .line 44
     .line 45
@@ -5252,7 +5252,7 @@
     move-result-object v1
 
     .line 53
-    invoke-interface {v1}, Lq5/e;->d()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->b()Ljava/util/concurrent/Executor;
 
     .line 54
     .line 55
@@ -5264,7 +5264,7 @@
 
     .line 58
     .line 59
-    invoke-interface {v1}, Lq5/g;->q()Lo5/o;
+    invoke-interface {v1}, Lq5/g;->A()Lo5/o;
 
     .line 60
     .line 61
@@ -6138,7 +6138,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static declared-synchronized v(Lq5/g;)V
@@ -6253,7 +6252,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -6353,7 +6351,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public d()Lo5/i;
@@ -6381,7 +6378,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->g()Lo5/a;
+    invoke-interface {v0}, Lq5/g;->x()Lo5/a;
 
     .line 8
     .line 9
@@ -6393,7 +6390,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->A()Lcom/facebook/common/internal/Supplier;
+    invoke-interface {v1}, Lq5/g;->q()Lcom/facebook/common/internal/Supplier;
 
     .line 14
     .line 15
@@ -6405,7 +6402,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v2}, Lq5/g;->w()Ly3/c;
+    invoke-interface {v2}, Lq5/g;->B()Ly3/c;
 
     .line 20
     .line 21
@@ -6417,7 +6414,7 @@
 
     .line 24
     .line 25
-    invoke-interface {v3}, Lq5/g;->n()Lo5/s$a;
+    invoke-interface {v3}, Lq5/g;->g()Lo5/s$a;
 
     .line 26
     .line 27
@@ -6429,7 +6426,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v4}, Lq5/g;->r()Lo5/i$b;
+    invoke-interface {v4}, Lq5/g;->j()Lo5/i$b;
 
     .line 32
     .line 33
@@ -6513,7 +6510,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v1}, Lq5/g;->q()Lo5/o;
+    invoke-interface {v1}, Lq5/g;->A()Lo5/o;
 
     .line 12
     .line 13
@@ -6617,7 +6614,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->D()Lcom/facebook/common/internal/Supplier;
+    invoke-interface {v0}, Lq5/g;->s()Lcom/facebook/common/internal/Supplier;
 
     .line 8
     .line 9
@@ -6629,7 +6626,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->w()Ly3/c;
+    invoke-interface {v1}, Lq5/g;->B()Ly3/c;
 
     .line 14
     .line 15
@@ -6723,7 +6720,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->i()Lo5/s;
+    invoke-interface {v0}, Lq5/g;->d()Lo5/s;
 
     .line 8
     .line 9
@@ -6739,7 +6736,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, Lq5/g;->i()Lo5/s;
+    invoke-interface {v0}, Lq5/g;->d()Lo5/s;
 
     .line 16
     .line 17
@@ -6764,7 +6761,7 @@
 
     .line 25
     .line 26
-    invoke-interface {v1}, Lq5/g;->q()Lo5/o;
+    invoke-interface {v1}, Lq5/g;->A()Lo5/o;
 
     .line 27
     .line 28
@@ -6955,7 +6952,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 14
     .line 15
@@ -6967,7 +6964,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v3}, Lq5/g;->c()I
+    invoke-interface {v3}, Lq5/g;->u()I
 
     .line 20
     .line 21
@@ -6987,7 +6984,7 @@
 
     .line 28
     .line 29
-    invoke-interface {v1}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v1}, Lq5/g;->t()Lx5/y;
 
     .line 30
     .line 31
@@ -7015,7 +7012,7 @@
     move-result-object v1
 
     .line 43
-    invoke-interface {v1}, Lq5/e;->e()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->f()Ljava/util/concurrent/Executor;
 
     .line 44
     .line 45
@@ -7035,7 +7032,7 @@
     move-result-object v1
 
     .line 53
-    invoke-interface {v1}, Lq5/e;->d()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lq5/e;->b()Ljava/util/concurrent/Executor;
 
     .line 54
     .line 55
@@ -7047,7 +7044,7 @@
 
     .line 58
     .line 59
-    invoke-interface {v1}, Lq5/g;->q()Lo5/o;
+    invoke-interface {v1}, Lq5/g;->A()Lo5/o;
 
     .line 60
     .line 61
@@ -7812,7 +7809,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->j()Lcom/facebook/cache/disk/DiskCacheConfig;
+    invoke-interface {v0}, Lq5/g;->e()Lcom/facebook/cache/disk/DiskCacheConfig;
 
     .line 8
     .line 9
@@ -7824,7 +7821,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->e()Lq5/f;
+    invoke-interface {v1}, Lq5/g;->v()Lq5/f;
 
     .line 14
     .line 15
@@ -7909,7 +7906,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v0}, Lq5/g;->t()Lx5/y;
 
     .line 8
     .line 9
@@ -8008,7 +8005,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->a()Lx5/y;
+    invoke-interface {v0}, Lq5/g;->t()Lx5/y;
 
     .line 8
     .line 9
@@ -8020,7 +8017,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v1}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 14
     .line 15
@@ -8109,7 +8106,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lq5/g;->p()Lcom/facebook/cache/disk/DiskCacheConfig;
+    invoke-interface {v0}, Lq5/g;->i()Lcom/facebook/cache/disk/DiskCacheConfig;
 
     .line 8
     .line 9
@@ -8121,7 +8118,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lq5/g;->e()Lq5/f;
+    invoke-interface {v1}, Lq5/g;->v()Lq5/f;
 
     .line 14
     .line 15

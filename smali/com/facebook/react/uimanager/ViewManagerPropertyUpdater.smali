@@ -1386,7 +1386,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static findNodeSetter(Ljava/lang/Class;)Lcom/facebook/react/uimanager/ViewManagerPropertyUpdater$ShadowNodeSetter;
@@ -1509,7 +1508,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static getNativeProps(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;

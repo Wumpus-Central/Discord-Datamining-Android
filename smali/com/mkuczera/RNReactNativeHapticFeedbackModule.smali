@@ -42,7 +42,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
@@ -160,6 +159,4 @@
     :cond_2
     :goto_0
     return-void
-    .line 48
-    .line 49
 .end method

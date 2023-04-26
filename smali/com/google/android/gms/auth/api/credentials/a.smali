@@ -211,7 +211,7 @@
 
 
 # virtual methods
-.method public G()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+.method public D()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->n:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
@@ -219,7 +219,7 @@
     return-object v0
 .end method
 
-.method public H()Ljava/lang/String;
+.method public E()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->r:Ljava/lang/String;
@@ -227,7 +227,7 @@
     return-object v0
 .end method
 
-.method public I()Ljava/lang/String;
+.method public J()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->q:Ljava/lang/String;
@@ -235,7 +235,7 @@
     return-object v0
 .end method
 
-.method public K()Z
+.method public L()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->p:Z
@@ -249,14 +249,6 @@
     iget-boolean v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->l:Z
 
     return v0
-.end method
-
-.method public v()[Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->m:[Ljava/lang/String;
-
-    return-object v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
@@ -287,7 +279,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->v()[Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->x()[Ljava/lang/String;
 
     .line 14
     .line 15
@@ -309,7 +301,7 @@
     const/4 v1, 0x3
 
     .line 23
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->G()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->D()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     .line 24
     .line 25
@@ -325,7 +317,7 @@
     const/4 v1, 0x4
 
     .line 31
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->z()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->y()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
 
     .line 32
     .line 33
@@ -341,7 +333,7 @@
     const/4 p2, 0x5
 
     .line 39
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->K()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->L()Z
 
     .line 40
     .line 41
@@ -357,7 +349,7 @@
     const/4 p2, 0x6
 
     .line 47
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->I()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->J()Ljava/lang/String;
 
     .line 48
     .line 49
@@ -373,7 +365,7 @@
     const/4 p2, 0x7
 
     .line 55
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->H()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/a;->E()Ljava/lang/String;
 
     .line 56
     .line 57
@@ -554,7 +546,15 @@
     .line 213
 .end method
 
-.method public z()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+.method public x()[Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->m:[Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public y()Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/a;->o:Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;

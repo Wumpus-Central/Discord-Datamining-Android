@@ -358,7 +358,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onProgressUpdate(Lcom/facebook/datasource/DataSource;)V
@@ -384,7 +383,7 @@
 
     .line 6
     .line 7
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->d()F
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->e()F
 
     .line 8
     .line 9
@@ -460,5 +459,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

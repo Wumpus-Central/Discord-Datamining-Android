@@ -805,7 +805,7 @@
 
     .line 6
     :goto_0
-    invoke-virtual {p1}, Ly7/a;->f()I
+    invoke-virtual {p1}, Ly7/a;->h()I
 
     .line 7
     .line 8
@@ -1163,7 +1163,7 @@
 
     .line 7
     :cond_0
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()I
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->P()I
 
     .line 8
     .line 9
@@ -1194,7 +1194,7 @@
 
     .line 21
     .line 22
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->h()Z
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()Z
 
     .line 23
     .line 24
@@ -1653,7 +1653,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()I
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->P()I
 
     .line 11
     .line 12
@@ -1687,7 +1687,7 @@
 
     .line 25
     .line 26
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->h()Z
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()Z
 
     .line 27
     .line 28
@@ -2207,7 +2207,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/ExoPlaybackException;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->o()Lcom/google/android/exoplayer2/ExoPlaybackException;
 
     .line 24
     .line 25
@@ -2342,7 +2342,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->O()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     .line 6
     .line 7
@@ -2384,7 +2384,7 @@
     .line 24
     .line 25
     :cond_1
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->V()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->A()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
 
     .line 26
     .line 27
@@ -2404,7 +2404,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player;->W(I)I
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player;->B(I)I
 
     .line 35
     .line 36
@@ -2465,7 +2465,7 @@
 
     .line 62
     .line 63
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->k()Ljava/util/List;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->h()Ljava/util/List;
 
     .line 64
     .line 65
@@ -4845,7 +4845,7 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerView;->v:Lcom/google/android/exoplayer2/Player;
 
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->h()Z
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()Z
 
     move-result v0
 
@@ -7849,7 +7849,7 @@
 
     .line 20
     .line 21
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->R()Landroid/os/Looper;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->y()Landroid/os/Looper;
 
     .line 22
     .line 23
@@ -7913,12 +7913,12 @@
 
     .line 47
     .line 48
-    invoke-interface {v0, v4}, Lcom/google/android/exoplayer2/Player;->t(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-interface {v0, v4}, Lcom/google/android/exoplayer2/Player;->l(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->z()Lcom/google/android/exoplayer2/Player$c;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->r()Lcom/google/android/exoplayer2/Player$c;
 
     .line 52
     .line 53
@@ -7934,7 +7934,7 @@
 
     .line 58
     .line 59
-    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->q(Lg9/q;)V
+    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->j(Lg9/q;)V
 
     .line 60
     .line 61
@@ -7955,7 +7955,7 @@
 
     .line 69
     .line 70
-    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->n(Landroid/view/TextureView;)V
+    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->H(Landroid/view/TextureView;)V
 
     .line 71
     .line 72
@@ -7997,14 +7997,14 @@
 
     .line 89
     .line 90
-    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->L(Landroid/view/SurfaceView;)V
+    invoke-interface {v4, v5}, Lcom/google/android/exoplayer2/Player$c;->U(Landroid/view/SurfaceView;)V
 
     .line 91
     .line 92
     .line 93
     :cond_6
     :goto_3
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->Y()Lcom/google/android/exoplayer2/Player$b;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->C()Lcom/google/android/exoplayer2/Player$b;
 
     .line 94
     .line 95
@@ -8020,7 +8020,7 @@
 
     .line 100
     .line 101
-    invoke-interface {v0, v4}, Lcom/google/android/exoplayer2/Player$b;->C(Lq8/l;)V
+    invoke-interface {v0, v4}, Lcom/google/android/exoplayer2/Player$b;->N(Lq8/l;)V
 
     .line 102
     .line 103
@@ -8085,7 +8085,7 @@
 
     .line 134
     .line 135
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->z()Lcom/google/android/exoplayer2/Player$c;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->r()Lcom/google/android/exoplayer2/Player$c;
 
     .line 136
     .line 137
@@ -8113,7 +8113,7 @@
 
     .line 148
     .line 149
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->U(Landroid/view/TextureView;)V
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->z(Landroid/view/TextureView;)V
 
     .line 150
     .line 151
@@ -8155,7 +8155,7 @@
 
     .line 168
     .line 169
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->r(Landroid/view/SurfaceView;)V
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->k(Landroid/view/SurfaceView;)V
 
     .line 170
     .line 171
@@ -8166,13 +8166,13 @@
 
     .line 173
     .line 174
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->G(Lg9/q;)V
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$c;->R(Lg9/q;)V
 
     .line 175
     .line 176
     .line 177
     :cond_d
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->Y()Lcom/google/android/exoplayer2/Player$b;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->C()Lcom/google/android/exoplayer2/Player$b;
 
     .line 178
     .line 179
@@ -8188,7 +8188,7 @@
 
     .line 184
     .line 185
-    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$b;->N(Lq8/l;)V
+    invoke-interface {v0, v1}, Lcom/google/android/exoplayer2/Player$b;->v(Lq8/l;)V
 
     .line 186
     .line 187
@@ -8201,7 +8201,7 @@
 
     .line 191
     .line 192
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player$b;->H()Ljava/util/List;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player$b;->s()Ljava/util/List;
 
     .line 193
     .line 194
@@ -8219,7 +8219,7 @@
 
     .line 200
     .line 201
-    invoke-interface {p1, v0}, Lcom/google/android/exoplayer2/Player;->o(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-interface {p1, v0}, Lcom/google/android/exoplayer2/Player;->I(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 202
     .line 203

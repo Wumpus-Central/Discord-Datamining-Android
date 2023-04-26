@@ -217,7 +217,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 2
     .line 3
@@ -225,7 +225,7 @@
     move-result-object v7
 
     .line 5
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 6
     .line 7
@@ -241,7 +241,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p2, v0, v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p2, v0, v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -290,7 +290,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-interface {p2, p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Lcom/facebook/imagepipeline/producers/m0;)V
+    invoke-interface {p2, p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->c(Lcom/facebook/imagepipeline/producers/m0;)V
 
     .line 37
     .line 38
@@ -444,7 +444,7 @@
 
     .line 5
     .line 6
-    invoke-interface {p2, p1}, Ly3/h;->c(Ljava/io/InputStream;)Ly3/g;
+    invoke-interface {p2, p1}, Ly3/h;->a(Ljava/io/InputStream;)Ly3/g;
 
     .line 7
     .line 8
@@ -452,7 +452,7 @@
     move-result-object p2
 
     .line 10
-    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 11
     .line 12
@@ -468,7 +468,7 @@
 
     .line 16
     .line 17
-    invoke-interface {v1, p1, p2}, Ly3/h;->d(Ljava/io/InputStream;I)Ly3/g;
+    invoke-interface {v1, p1, p2}, Ly3/h;->b(Ljava/io/InputStream;I)Ly3/g;
 
     .line 18
     .line 19
@@ -476,7 +476,7 @@
     move-result-object p2
 
     .line 21
-    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p2}, Lcom/facebook/common/references/CloseableReference;->S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 22
     .line 23
@@ -504,7 +504,7 @@
     .line 32
     .line 33
     .line 34
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 35
     .line 36
@@ -521,7 +521,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 43
     .line 44

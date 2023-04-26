@@ -311,9 +311,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -641,14 +638,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public final setAutoFocus(Lcom/swmansion/rnscreens/h0;Ljava/lang/Boolean;)V
@@ -723,8 +712,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setDisableBackButtonOverride(Lcom/swmansion/rnscreens/h0;Ljava/lang/Boolean;)V
@@ -795,8 +782,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setHeaderIconColor(Lcom/swmansion/rnscreens/h0;Ljava/lang/Integer;)V
@@ -860,8 +845,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setHintTextColor(Lcom/swmansion/rnscreens/h0;Ljava/lang/Integer;)V
@@ -925,8 +908,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setInputType(Lcom/swmansion/rnscreens/h0;Ljava/lang/String;)V
@@ -1219,14 +1200,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public final setPlaceholder(Lcom/swmansion/rnscreens/h0;Ljava/lang/String;)V
@@ -1292,8 +1265,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setShouldShowHintSearchIcon(Lcom/swmansion/rnscreens/h0;Ljava/lang/Boolean;)V
@@ -1368,8 +1339,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setTextColor(Lcom/swmansion/rnscreens/h0;Ljava/lang/Integer;)V
@@ -1433,8 +1402,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setTintColor(Lcom/swmansion/rnscreens/h0;Ljava/lang/Integer;)V
@@ -1498,6 +1465,4 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method

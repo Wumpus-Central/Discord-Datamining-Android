@@ -255,7 +255,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -296,7 +295,7 @@
     .line 11
     .line 12
     :cond_0
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 13
     .line 14
@@ -308,7 +307,7 @@
 
     .line 17
     .line 18
-    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v0, p2, v1}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -381,7 +380,7 @@
 
     .line 47
     .line 48
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->i()Z
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->m()Z
 
     .line 49
     .line 50
@@ -666,7 +665,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected abstract j(Lcom/facebook/imagepipeline/producers/ProducerContext;)Ljava/lang/Object;

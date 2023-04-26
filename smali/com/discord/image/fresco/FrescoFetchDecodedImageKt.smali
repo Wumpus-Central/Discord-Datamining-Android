@@ -151,22 +151,22 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a()Ljava/util/concurrent/Executor;
+    invoke-virtual {p2}, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->d()Ljava/util/concurrent/Executor;
 
     move-result-object p2
 
-    invoke-interface {p0, p1, p2}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {p0, p1, p2}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     .line 21
     new-instance p1, Lcom/discord/image/fresco/FrescoFetchDecodedImageKt$fetchDecodedImage$6$1;
 
     invoke-direct {p1, p0}, Lcom/discord/image/fresco/FrescoFetchDecodedImageKt$fetchDecodedImage$6$1;-><init>(Lcom/facebook/datasource/DataSource;)V
 
-    invoke-interface {v0, p1}, Lkotlinx/coroutines/CancellableContinuation;->m(Lkotlin/jvm/functions/Function1;)V
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/CancellableContinuation;->k(Lkotlin/jvm/functions/Function1;)V
 
     .line 22
     :goto_0
-    invoke-virtual {v0}, Lkotlinx/coroutines/p;->x()Ljava/lang/Object;
+    invoke-virtual {v0}, Lkotlinx/coroutines/p;->y()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -321,12 +321,12 @@
     .line 8
     sget-object p2, Lcom/discord/image/fresco/FrescoFetchDecodedImageKt;->executorSupplier:Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;
 
-    invoke-virtual {p2}, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a()Ljava/util/concurrent/Executor;
+    invoke-virtual {p2}, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->d()Ljava/util/concurrent/Executor;
 
     move-result-object p2
 
     .line 9
-    invoke-interface {p0, p1, p2}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {p0, p1, p2}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     return-void
 .end method

@@ -828,9 +828,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method static synthetic E(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;Landroid/view/View;IZ)V
@@ -1691,39 +1688,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method static synthetic L(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Z
@@ -1905,9 +1869,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method static synthetic M(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Lwb/g;
@@ -2412,30 +2373,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method static synthetic N(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;I)I
@@ -2570,9 +2507,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method static synthetic O(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)Z
@@ -2915,9 +2849,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private X()V
@@ -3104,9 +3035,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private Z(I)Landroidx/core/view/accessibility/AccessibilityViewCommand;
@@ -3259,9 +3187,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private b0()V
@@ -3392,9 +3317,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private e0(IIII)I
@@ -3869,9 +3791,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private h0()F
@@ -3924,7 +3843,6 @@
     .line 22
     return v0
     .line 23
-    .line 24
 .end method
 
 .method private j0(Landroid/view/View;)Z
@@ -3988,7 +3906,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private l0(Landroid/view/View;Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$a;I)V
@@ -4183,7 +4100,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private n0(Lcom/google/android/material/bottomsheet/BottomSheetBehavior$g;)V
@@ -4342,9 +4258,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private o0(Landroid/view/View;Ljava/lang/Runnable;)V
@@ -4419,8 +4332,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 
@@ -5916,30 +5827,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method public C(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;I)V
@@ -6627,9 +6514,6 @@
     return-void
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public D(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
@@ -7015,6 +6899,149 @@
     .line 49
     :goto_0
     return v1
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
 .end method
 
 .method public H0()Z
@@ -7214,9 +7241,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method d0(Landroid/view/View;)Landroid/view/View;
@@ -7354,9 +7378,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public f0()I
@@ -7414,7 +7435,6 @@
     :goto_1
     return v0
     .line 23
-    .line 24
 .end method
 
 .method public g(Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;)V
@@ -7455,7 +7475,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public i0()Z
@@ -7501,7 +7520,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
@@ -11811,7 +11829,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public r0(Z)V
@@ -11943,9 +11960,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public s0(Z)V
@@ -12092,9 +12106,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public u0(Z)V
@@ -12149,7 +12160,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public v0(I)V
@@ -12481,8 +12491,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public z0(I)V

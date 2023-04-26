@@ -44,22 +44,22 @@
 
 
 # virtual methods
-.method public a()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$c;->a:Lcom/google/android/exoplayer2/source/dash/DashMediaSource;
-
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->S()V
-
-    return-void
-.end method
-
-.method public b(J)V
+.method public a(J)V
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$c;->a:Lcom/google/android/exoplayer2/source/dash/DashMediaSource;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->R(J)V
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$c;->a:Lcom/google/android/exoplayer2/source/dash/DashMediaSource;
+
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->S()V
 
     return-void
 .end method

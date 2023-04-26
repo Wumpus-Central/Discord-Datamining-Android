@@ -399,7 +399,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 33
     .line 34
@@ -439,7 +439,7 @@
 
     .line 51
     .line 52
-    invoke-interface {v2, v3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->j(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-interface {v2, v3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 53
     .line 54
@@ -475,7 +475,7 @@
 
     .line 69
     .line 70
-    invoke-interface {v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->f()Lq5/g;
+    invoke-interface {v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lq5/g;
 
     .line 71
     .line 72
@@ -483,7 +483,7 @@
     move-result-object v2
 
     .line 74
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 75
     .line 76
@@ -542,7 +542,7 @@
 
     .line 103
     .line 104
-    invoke-interface {v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->f()Lq5/g;
+    invoke-interface {v2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lq5/g;
 
     .line 105
     .line 106
@@ -550,7 +550,7 @@
     move-result-object v2
 
     .line 108
-    invoke-interface {v2}, Lq5/g;->C()Lcom/facebook/imagepipeline/core/a;
+    invoke-interface {v2}, Lq5/g;->D()Lcom/facebook/imagepipeline/core/a;
 
     .line 109
     .line 110
@@ -653,7 +653,7 @@
     move-result-object v0
 
     .line 156
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -692,7 +692,7 @@
     move-result-object v0
 
     .line 173
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

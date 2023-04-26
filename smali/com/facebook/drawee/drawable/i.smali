@@ -7,16 +7,16 @@
 .method public abstract a(Z)V
 .end method
 
-.method public abstract b(Z)V
+.method public abstract b(F)V
 .end method
 
-.method public abstract c(Z)V
+.method public abstract c(F)V
 .end method
 
-.method public abstract d(F)V
+.method public abstract d(Z)V
 .end method
 
-.method public abstract e(F)V
+.method public abstract e(Z)V
 .end method
 
 .method public abstract g([F)V

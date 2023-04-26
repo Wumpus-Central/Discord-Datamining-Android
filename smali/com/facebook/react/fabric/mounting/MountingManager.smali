@@ -1165,7 +1165,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getSurfaceManagerEnforced(ILjava/lang/String;)Lcom/facebook/react/fabric/mounting/SurfaceMountingManager;
@@ -1517,7 +1516,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getSurfaceManagerForViewEnforced(I)Lcom/facebook/react/fabric/mounting/SurfaceMountingManager;
@@ -1630,7 +1628,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getViewExists(I)Z
@@ -1768,7 +1765,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public measure(Lcom/facebook/react/bridge/ReactContext;Ljava/lang/String;Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/ReadableMap;FLcom/facebook/yoga/YogaMeasureMode;FLcom/facebook/yoga/YogaMeasureMode;[F)J
@@ -4071,7 +4067,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public updateProps(ILcom/facebook/react/bridge/ReadableMap;)V

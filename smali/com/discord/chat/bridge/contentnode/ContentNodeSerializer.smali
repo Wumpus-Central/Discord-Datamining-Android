@@ -94,7 +94,7 @@
 
     check-cast v0, Lkotlinx/serialization/json/e;
 
-    invoke-interface {v0}, Lkotlinx/serialization/json/e;->i()Lkotlinx/serialization/json/JsonElement;
+    invoke-interface {v0}, Lkotlinx/serialization/json/e;->g()Lkotlinx/serialization/json/JsonElement;
 
     move-result-object v0
 

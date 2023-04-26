@@ -27,21 +27,7 @@
 .method public abstract close()Z
 .end method
 
-.method public abstract d()F
-.end method
-
-.method public abstract e()Z
-.end method
-
-.method public abstract f()Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-.end method
-
-.method public abstract g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+.method public abstract d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,6 +35,20 @@
             "TT;>;",
             "Ljava/util/concurrent/Executor;",
             ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract e()F
+.end method
+
+.method public abstract f()Z
+.end method
+
+.method public abstract g()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
         }
     .end annotation
 .end method

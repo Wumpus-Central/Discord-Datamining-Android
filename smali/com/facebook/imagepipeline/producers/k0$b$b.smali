@@ -99,7 +99,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 29
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 30
     .line 31
@@ -123,7 +123,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 41
     .line 42
@@ -135,7 +135,7 @@
     move-exception v0
 
     .line 45
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 46
     .line 47

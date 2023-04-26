@@ -127,7 +127,7 @@
 
     .line 49
     :cond_0
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lpi/g;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lpi/g;
 
     .line 50
     .line 51
@@ -159,7 +159,7 @@
     move-result-object v6
 
     .line 65
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lpi/g;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lpi/g;
 
     .line 66
     .line 67
@@ -530,7 +530,7 @@
 
     .line 234
     :goto_3
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lkotlin/ranges/IntRange;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lkotlin/ranges/IntRange;
 
     .line 235
     .line 236
@@ -546,7 +546,7 @@
     move-result v3
 
     .line 242
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lkotlin/ranges/IntRange;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lkotlin/ranges/IntRange;
 
     .line 243
     .line 244
@@ -554,7 +554,7 @@
     move-result-object v4
 
     .line 246
-    invoke-virtual {v4}, Lkotlin/ranges/a;->f()I
+    invoke-virtual {v4}, Lkotlin/ranges/a;->e()I
 
     .line 247
     .line 248
@@ -590,7 +590,7 @@
     move-result-object p0
 
     .line 264
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lkotlin/ranges/IntRange;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lkotlin/ranges/IntRange;
 
     .line 265
     .line 266
@@ -606,7 +606,7 @@
     move-result v3
 
     .line 272
-    invoke-interface {v5}, Lkotlin/text/MatchResult;->d()Lkotlin/ranges/IntRange;
+    invoke-interface {v5}, Lkotlin/text/MatchResult;->c()Lkotlin/ranges/IntRange;
 
     .line 273
     .line 274
@@ -614,7 +614,7 @@
     move-result-object v4
 
     .line 276
-    invoke-virtual {v4}, Lkotlin/ranges/a;->f()I
+    invoke-virtual {v4}, Lkotlin/ranges/a;->e()I
 
     .line 277
     .line 278

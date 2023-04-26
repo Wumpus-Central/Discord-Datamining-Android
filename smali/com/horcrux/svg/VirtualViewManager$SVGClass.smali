@@ -1,69 +1,69 @@
-.class final enum Lcom/horcrux/svg/RenderableViewManager$e;
+.class public final enum Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 .super Ljava/lang/Enum;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/horcrux/svg/RenderableViewManager;
+    value = Lcom/horcrux/svg/VirtualViewManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x401a
-    name = "e"
+    accessFlags = 0x401c
+    name = "SVGClass"
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
-        "Lcom/horcrux/svg/RenderableViewManager$e;",
+        "Lcom/horcrux/svg/VirtualViewManager$SVGClass;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final enum A:Lcom/horcrux/svg/RenderableViewManager$e;
+.field private static final synthetic $VALUES:[Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum B:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGCircle:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum C:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGClipPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum D:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGDefs:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field private static final synthetic E:[Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGEllipse:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum k:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGForeignObject:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum l:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGGroup:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum m:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGImage:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum n:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGLine:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum o:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGLinearGradient:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum p:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGMarker:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum q:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGMask:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum r:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum s:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGPattern:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum t:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGRadialGradient:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum u:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGRect:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum v:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGSymbol:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum w:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGTSpan:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum x:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGText:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum y:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGTextPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-.field public static final enum z:Lcom/horcrux/svg/RenderableViewManager$e;
+.field public static final enum RNSVGUse:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
 
 # direct methods
@@ -71,7 +71,7 @@
     .locals 23
 
     .line 1
-    new-instance v0, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v0, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 2
     .line 3
@@ -82,16 +82,16 @@
     const/4 v2, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Lcom/horcrux/svg/RenderableViewManager$e;->k:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v0, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGGroup:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 10
     .line 11
-    new-instance v1, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v1, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 12
     .line 13
@@ -102,16 +102,16 @@
     const/4 v4, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lcom/horcrux/svg/RenderableViewManager$e;->l:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v1, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 20
     .line 21
-    new-instance v3, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v3, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 22
     .line 23
@@ -122,16 +122,16 @@
     const/4 v6, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lcom/horcrux/svg/RenderableViewManager$e;->m:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v3, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGText:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 30
     .line 31
-    new-instance v5, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v5, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 32
     .line 33
@@ -142,16 +142,16 @@
     const/4 v8, 0x3
 
     .line 36
-    invoke-direct {v5, v7, v8}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lcom/horcrux/svg/RenderableViewManager$e;->n:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v5, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGTSpan:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 40
     .line 41
-    new-instance v7, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v7, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 42
     .line 43
@@ -162,16 +162,16 @@
     const/4 v10, 0x4
 
     .line 46
-    invoke-direct {v7, v9, v10}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
     .line 49
-    sput-object v7, Lcom/horcrux/svg/RenderableViewManager$e;->o:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v7, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGTextPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 50
     .line 51
-    new-instance v9, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v9, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 52
     .line 53
@@ -182,16 +182,16 @@
     const/4 v12, 0x5
 
     .line 56
-    invoke-direct {v9, v11, v12}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 57
     .line 58
     .line 59
-    sput-object v9, Lcom/horcrux/svg/RenderableViewManager$e;->p:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v9, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGImage:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 60
     .line 61
-    new-instance v11, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v11, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 62
     .line 63
@@ -202,16 +202,16 @@
     const/4 v14, 0x6
 
     .line 66
-    invoke-direct {v11, v13, v14}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v11, v13, v14}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 67
     .line 68
     .line 69
-    sput-object v11, Lcom/horcrux/svg/RenderableViewManager$e;->q:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v11, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGCircle:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 70
     .line 71
-    new-instance v13, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v13, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 72
     .line 73
@@ -222,16 +222,16 @@
     const/4 v14, 0x7
 
     .line 76
-    invoke-direct {v13, v15, v14}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v13, v15, v14}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 77
     .line 78
     .line 79
-    sput-object v13, Lcom/horcrux/svg/RenderableViewManager$e;->r:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v13, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGEllipse:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 80
     .line 81
-    new-instance v15, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v15, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 82
     .line 83
@@ -243,16 +243,16 @@
 
     .line 86
     .line 87
-    invoke-direct {v15, v14, v12}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v15, v14, v12}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 88
     .line 89
     .line 90
-    sput-object v15, Lcom/horcrux/svg/RenderableViewManager$e;->s:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v15, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGLine:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 91
     .line 92
-    new-instance v14, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v14, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 93
     .line 94
@@ -264,16 +264,16 @@
 
     .line 97
     .line 98
-    invoke-direct {v14, v12, v10}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v14, v12, v10}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 99
     .line 100
     .line 101
-    sput-object v14, Lcom/horcrux/svg/RenderableViewManager$e;->t:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v14, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGRect:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 102
     .line 103
-    new-instance v12, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v12, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 104
     .line 105
@@ -285,16 +285,16 @@
 
     .line 108
     .line 109
-    invoke-direct {v12, v10, v8}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v12, v10, v8}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 110
     .line 111
     .line 112
-    sput-object v12, Lcom/horcrux/svg/RenderableViewManager$e;->u:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v12, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGClipPath:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 113
     .line 114
-    new-instance v10, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v10, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 115
     .line 116
@@ -306,16 +306,16 @@
 
     .line 119
     .line 120
-    invoke-direct {v10, v8, v6}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v10, v8, v6}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 121
     .line 122
     .line 123
-    sput-object v10, Lcom/horcrux/svg/RenderableViewManager$e;->v:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v10, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGDefs:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 124
     .line 125
-    new-instance v8, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v8, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 126
     .line 127
@@ -327,16 +327,16 @@
 
     .line 130
     .line 131
-    invoke-direct {v8, v6, v4}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v8, v6, v4}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 132
     .line 133
     .line 134
-    sput-object v8, Lcom/horcrux/svg/RenderableViewManager$e;->w:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v8, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGUse:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 135
     .line 136
-    new-instance v6, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 137
     .line 138
@@ -348,16 +348,16 @@
 
     .line 141
     .line 142
-    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 143
     .line 144
     .line 145
-    sput-object v6, Lcom/horcrux/svg/RenderableViewManager$e;->x:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGSymbol:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 146
     .line 147
-    new-instance v4, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v4, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 148
     .line 149
@@ -373,16 +373,16 @@
 
     .line 154
     .line 155
-    invoke-direct {v4, v2, v6}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v2, v6}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 156
     .line 157
     .line 158
-    sput-object v4, Lcom/horcrux/svg/RenderableViewManager$e;->y:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v4, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGLinearGradient:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 159
     .line 160
-    new-instance v2, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v2, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 161
     .line 162
@@ -398,16 +398,16 @@
 
     .line 167
     .line 168
-    invoke-direct {v2, v6, v4}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v6, v4}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 169
     .line 170
     .line 171
-    sput-object v2, Lcom/horcrux/svg/RenderableViewManager$e;->z:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v2, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGRadialGradient:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 172
     .line 173
-    new-instance v6, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 174
     .line 175
@@ -423,16 +423,16 @@
 
     .line 180
     .line 181
-    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 182
     .line 183
     .line 184
-    sput-object v6, Lcom/horcrux/svg/RenderableViewManager$e;->A:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGPattern:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 185
     .line 186
-    new-instance v4, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v4, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 187
     .line 188
@@ -448,16 +448,16 @@
 
     .line 193
     .line 194
-    invoke-direct {v4, v2, v6}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v2, v6}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 195
     .line 196
     .line 197
-    sput-object v4, Lcom/horcrux/svg/RenderableViewManager$e;->B:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v4, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGMask:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 198
     .line 199
-    new-instance v2, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v2, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 200
     .line 201
@@ -473,16 +473,16 @@
 
     .line 206
     .line 207
-    invoke-direct {v2, v6, v4}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v6, v4}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 208
     .line 209
     .line 210
-    sput-object v2, Lcom/horcrux/svg/RenderableViewManager$e;->C:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v2, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGMarker:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 211
     .line 212
-    new-instance v6, Lcom/horcrux/svg/RenderableViewManager$e;
+    new-instance v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 213
     .line 214
@@ -498,12 +498,12 @@
 
     .line 219
     .line 220
-    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/RenderableViewManager$e;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v4, v2}, Lcom/horcrux/svg/VirtualViewManager$SVGClass;-><init>(Ljava/lang/String;I)V
 
     .line 221
     .line 222
     .line 223
-    sput-object v6, Lcom/horcrux/svg/RenderableViewManager$e;->D:Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v6, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->RNSVGForeignObject:Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 224
     .line 225
@@ -511,7 +511,7 @@
 
     .line 226
     .line 227
-    new-array v4, v4, [Lcom/horcrux/svg/RenderableViewManager$e;
+    new-array v4, v4, [Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 228
     .line 229
@@ -664,7 +664,7 @@
 
     .line 299
     .line 300
-    sput-object v4, Lcom/horcrux/svg/RenderableViewManager$e;->E:[Lcom/horcrux/svg/RenderableViewManager$e;
+    sput-object v4, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->$VALUES:[Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     .line 301
     .line 302
@@ -818,39 +818,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
@@ -866,30 +833,30 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/horcrux/svg/RenderableViewManager$e;
+.method public static valueOf(Ljava/lang/String;)Lcom/horcrux/svg/VirtualViewManager$SVGClass;
     .locals 1
 
-    const-class v0, Lcom/horcrux/svg/RenderableViewManager$e;
+    const-class v0, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object p0
 
-    check-cast p0, Lcom/horcrux/svg/RenderableViewManager$e;
+    check-cast p0, Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     return-object p0
 .end method
 
-.method public static values()[Lcom/horcrux/svg/RenderableViewManager$e;
+.method public static values()[Lcom/horcrux/svg/VirtualViewManager$SVGClass;
     .locals 1
 
-    sget-object v0, Lcom/horcrux/svg/RenderableViewManager$e;->E:[Lcom/horcrux/svg/RenderableViewManager$e;
+    sget-object v0, Lcom/horcrux/svg/VirtualViewManager$SVGClass;->$VALUES:[Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
-    invoke-virtual {v0}, [Lcom/horcrux/svg/RenderableViewManager$e;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/horcrux/svg/VirtualViewManager$SVGClass;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/horcrux/svg/RenderableViewManager$e;
+    check-cast v0, [Lcom/horcrux/svg/VirtualViewManager$SVGClass;
 
     return-object v0
 .end method

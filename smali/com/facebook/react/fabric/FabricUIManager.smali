@@ -5998,7 +5998,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public profileNextBatch()V
@@ -6306,7 +6305,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public resolveView(I)Landroid/view/View;
@@ -6408,7 +6406,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public sendAccessibilityEvent(II)V

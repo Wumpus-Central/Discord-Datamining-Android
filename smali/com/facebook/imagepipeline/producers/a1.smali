@@ -453,7 +453,7 @@
 
     .line 5
     :cond_0
-    invoke-virtual {p0}, Lu5/e;->K()I
+    invoke-virtual {p0}, Lu5/e;->H()I
 
     .line 6
     .line 7

@@ -511,7 +511,7 @@
     move-result v0
 
     .line 30
-    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->d(F)V
+    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->b(F)V
 
     .line 31
     .line 32
@@ -524,7 +524,7 @@
     move-result v0
 
     .line 37
-    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->c(Z)V
+    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->e(Z)V
 
     .line 38
     .line 39
@@ -537,7 +537,7 @@
     move-result p1
 
     .line 44
-    invoke-interface {p0, p1}, Lcom/facebook/drawee/drawable/i;->b(Z)V
+    invoke-interface {p0, p1}, Lcom/facebook/drawee/drawable/i;->d(Z)V
 
     .line 45
     .line 46
@@ -764,7 +764,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static d(Landroid/graphics/drawable/Drawable;Lcom/facebook/drawee/generic/a;Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
@@ -1925,7 +1924,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-interface {p0, v1}, Lcom/facebook/drawee/drawable/i;->e(F)V
+    invoke-interface {p0, v1}, Lcom/facebook/drawee/drawable/i;->c(F)V
 
     .line 7
     .line 8
@@ -1935,17 +1934,17 @@
     .line 10
     .line 11
     .line 12
-    invoke-interface {p0, v1}, Lcom/facebook/drawee/drawable/i;->d(F)V
+    invoke-interface {p0, v1}, Lcom/facebook/drawee/drawable/i;->b(F)V
 
     .line 13
     .line 14
     .line 15
-    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->c(Z)V
+    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->e(Z)V
 
     .line 16
     .line 17
     .line 18
-    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->b(Z)V
+    invoke-interface {p0, v0}, Lcom/facebook/drawee/drawable/i;->d(Z)V
 
     .line 19
     .line 20
@@ -2005,7 +2004,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method static i(Lcom/facebook/drawee/drawable/c;Lcom/facebook/drawee/generic/a;Landroid/content/res/Resources;)V

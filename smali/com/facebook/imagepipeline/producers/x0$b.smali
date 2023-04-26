@@ -348,7 +348,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected h(Ljava/lang/Object;I)V
@@ -368,7 +367,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 6
     .line 7

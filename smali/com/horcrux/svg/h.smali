@@ -338,12 +338,14 @@
 
     if-eqz v1, :cond_8
 
+    .line 37
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_5
 
+    .line 38
     :cond_8
     iget-object v0, p2, Lcom/horcrux/svg/h;->g:Ljava/lang/String;
 
@@ -352,19 +354,21 @@
 
     const-string v0, "fontVariationSettings"
 
-    .line 37
+    .line 39
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_9
 
+    .line 40
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_6
 
+    .line 41
     :cond_9
     iget-object v0, p2, Lcom/horcrux/svg/h;->h:Ljava/lang/String;
 
@@ -373,13 +377,14 @@
 
     const-string v0, "fontVariantLigatures"
 
-    .line 38
+    .line 42
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_a
 
+    .line 43
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -390,6 +395,7 @@
 
     goto :goto_7
 
+    .line 44
     :cond_a
     iget-object v0, p2, Lcom/horcrux/svg/h;->i:Lcom/horcrux/svg/k0;
 
@@ -398,13 +404,14 @@
 
     const-string v0, "textAnchor"
 
-    .line 39
+    .line 45
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_b
 
+    .line 46
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -415,6 +422,7 @@
 
     goto :goto_8
 
+    .line 47
     :cond_b
     iget-object v0, p2, Lcom/horcrux/svg/h;->j:Lcom/horcrux/svg/m0;
 
@@ -423,13 +431,14 @@
 
     const-string v0, "textDecoration"
 
-    .line 40
+    .line 48
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_c
 
+    .line 49
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -440,6 +449,7 @@
 
     goto :goto_9
 
+    .line 50
     :cond_c
     iget-object v0, p2, Lcom/horcrux/svg/h;->k:Lcom/horcrux/svg/n0;
 
@@ -448,14 +458,14 @@
 
     const-string v0, "kerning"
 
-    .line 41
+    .line 51
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_e
 
-    .line 42
+    .line 52
     iget-boolean v1, p2, Lcom/horcrux/svg/h;->o:Z
 
     if-eqz v1, :cond_d
@@ -478,7 +488,7 @@
 
     const-string v4, "kerning"
 
-    .line 43
+    .line 53
     iget-wide v7, p0, Lcom/horcrux/svg/h;->a:D
 
     const-wide/16 v9, 0x0
@@ -503,7 +513,7 @@
 
     const-string v0, "wordSpacing"
 
-    .line 44
+    .line 54
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v0
@@ -512,6 +522,7 @@
 
     const-string v3, "wordSpacing"
 
+    .line 55
     iget-wide v6, p0, Lcom/horcrux/svg/h;->a:D
 
     const-wide/16 v8, 0x0
@@ -528,6 +539,7 @@
 
     goto :goto_d
 
+    .line 56
     :cond_10
     iget-wide v0, p2, Lcom/horcrux/svg/h;->m:D
 
@@ -536,7 +548,7 @@
 
     const-string v0, "letterSpacing"
 
-    .line 45
+    .line 57
     invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
 
     move-result v0
@@ -545,6 +557,7 @@
 
     const-string v3, "letterSpacing"
 
+    .line 58
     iget-wide v6, p0, Lcom/horcrux/svg/h;->a:D
 
     const-wide/16 v8, 0x0
@@ -561,6 +574,7 @@
 
     goto :goto_e
 
+    .line 59
     :cond_11
     iget-wide p1, p2, Lcom/horcrux/svg/h;->n:D
 
@@ -653,8 +667,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private b(Lcom/horcrux/svg/h;)V
@@ -695,7 +707,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private c(Lcom/facebook/react/bridge/ReadableMap;Ljava/lang/String;DDD)D

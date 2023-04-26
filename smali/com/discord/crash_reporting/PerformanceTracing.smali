@@ -3530,7 +3530,7 @@
     if-eqz v2, :cond_0
 
     .line 7
-    invoke-interface {v2}, Lio/sentry/ISpan;->f()V
+    invoke-interface {v2}, Lio/sentry/ISpan;->d()V
 
     .line 8
     :cond_0
@@ -3563,7 +3563,7 @@
 
     if-eqz v2, :cond_2
 
-    invoke-interface {v2}, Lio/sentry/ISpan;->f()V
+    invoke-interface {v2}, Lio/sentry/ISpan;->d()V
 
     .line 11
     :cond_2
@@ -3639,7 +3639,7 @@
 
     if-eqz v2, :cond_6
 
-    invoke-interface {v2, v0}, Lio/sentry/ISpan;->j(Ljava/lang/String;)Lio/sentry/ISpan;
+    invoke-interface {v2, v0}, Lio/sentry/ISpan;->g(Ljava/lang/String;)Lio/sentry/ISpan;
 
     move-result-object v2
 
@@ -3689,7 +3689,7 @@
     .line 21
     :cond_8
     :try_start_1
-    invoke-interface {v2, v0}, Lio/sentry/ISpan;->j(Ljava/lang/String;)Lio/sentry/ISpan;
+    invoke-interface {v2, v0}, Lio/sentry/ISpan;->g(Ljava/lang/String;)Lio/sentry/ISpan;
 
     move-result-object v1
 
@@ -3795,7 +3795,7 @@
     if-eqz v1, :cond_d
 
     .line 32
-    invoke-interface {v1}, Lio/sentry/ISpan;->f()V
+    invoke-interface {v1}, Lio/sentry/ISpan;->d()V
 
     .line 33
     iget-object v1, p0, Lcom/discord/crash_reporting/PerformanceTracing;->ongoingSpans:Ljava/util/Map;
@@ -4735,7 +4735,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v0}, Lio/sentry/ISpan;->f()V
+    invoke-interface {v0}, Lio/sentry/ISpan;->d()V
 
     .line 17
     .line 18

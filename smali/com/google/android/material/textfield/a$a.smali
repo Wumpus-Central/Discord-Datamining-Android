@@ -85,7 +85,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V

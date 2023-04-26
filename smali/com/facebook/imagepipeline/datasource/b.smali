@@ -57,7 +57,7 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->f()Ljava/lang/Object;
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->g()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -73,7 +73,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -89,7 +89,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -101,7 +101,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Lu5/b;->p()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lu5/b;->n()Landroid/graphics/Bitmap;
 
     .line 31
     .line 32
@@ -125,7 +125,7 @@
     .line 37
     .line 38
     .line 39
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 40
     .line 41
@@ -137,7 +137,7 @@
     move-exception v0
 
     .line 44
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 45
     .line 46
@@ -171,5 +171,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

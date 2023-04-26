@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b()Ls5/c;
+    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->c()Ls5/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

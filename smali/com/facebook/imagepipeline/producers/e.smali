@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public b()V
+.method public a()V
     .locals 0
 
     return-void

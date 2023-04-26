@@ -193,7 +193,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onProgressUpdate(Lcom/facebook/datasource/DataSource;)V
@@ -211,7 +210,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/facebook/datasource/a;->d()F
+    invoke-virtual {v0}, Lcom/facebook/datasource/a;->e()F
 
     .line 4
     .line 5
@@ -223,7 +222,7 @@
 
     .line 8
     .line 9
-    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->d()F
+    invoke-interface {p1}, Lcom/facebook/datasource/DataSource;->e()F
 
     .line 10
     .line 11
@@ -300,5 +299,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

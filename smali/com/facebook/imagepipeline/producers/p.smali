@@ -618,7 +618,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 4
     .line 5
@@ -1293,7 +1293,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private g(Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;)V
@@ -1350,7 +1349,7 @@
 
     .line 20
     .line 21
-    invoke-interface {p2, v0, v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p2, v0, v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 22
     .line 23
@@ -1361,7 +1360,7 @@
     const/4 v0, 0x1
 
     .line 26
-    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 27
     .line 28
@@ -1530,7 +1529,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 2
     .line 3
@@ -1712,7 +1711,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/facebook/imagepipeline/producers/p$b;-><init>(Lcom/facebook/imagepipeline/producers/p;Ljava/util/concurrent/atomic/AtomicBoolean;)V
 
-    invoke-interface {p2, v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Lcom/facebook/imagepipeline/producers/m0;)V
+    invoke-interface {p2, v0}, Lcom/facebook/imagepipeline/producers/ProducerContext;->c(Lcom/facebook/imagepipeline/producers/m0;)V
 
     return-void
 .end method
@@ -1733,7 +1732,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 2
     .line 3
@@ -1762,7 +1761,7 @@
 
     .line 15
     :cond_0
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 16
     .line 17
@@ -1774,7 +1773,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v1, p2, v2}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v1, p2, v2}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 22
     .line 23

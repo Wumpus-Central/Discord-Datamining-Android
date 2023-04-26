@@ -70,7 +70,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected final zzl(ILandroid/os/Parcel;)V
@@ -152,6 +151,4 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method

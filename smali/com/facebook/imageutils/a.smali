@@ -202,7 +202,6 @@
     .line 74
     .line 75
     throw p0
-    .line 76
 .end method
 
 .method public static b(Ljava/io/InputStream;)Lcom/facebook/imageutils/b;
@@ -354,7 +353,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static c(Landroid/graphics/Bitmap$Config;)I
@@ -487,7 +485,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static d(IILandroid/graphics/Bitmap$Config;)I
@@ -609,5 +606,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

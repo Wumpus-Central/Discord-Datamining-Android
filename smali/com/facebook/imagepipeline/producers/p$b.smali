@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public a()V
+.method public b()V
     .locals 2
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/p$b;->a:Ljava/util/concurrent/atomic/AtomicBoolean;

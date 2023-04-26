@@ -43,7 +43,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkotlin/coroutines/CoroutineContext;->w(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
+    invoke-interface {v0, v1}, Lkotlin/coroutines/CoroutineContext;->i0(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
 

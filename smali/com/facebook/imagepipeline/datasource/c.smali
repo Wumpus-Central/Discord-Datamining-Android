@@ -461,7 +461,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     return-void
 .end method
@@ -476,13 +476,13 @@
         }
     .end annotation
 
-    invoke-super {p0}, Lcom/facebook/datasource/a;->f()Ljava/lang/Object;
+    invoke-super {p0}, Lcom/facebook/datasource/a;->g()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/facebook/common/references/CloseableReference;
 
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object v0
 
@@ -501,7 +501,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
 
@@ -510,7 +510,7 @@
     return-void
 .end method
 
-.method public bridge synthetic f()Ljava/lang/Object;
+.method public bridge synthetic g()Ljava/lang/Object;
     .locals 1
 
     invoke-virtual {p0}, Lcom/facebook/imagepipeline/datasource/c;->J()Lcom/facebook/common/references/CloseableReference;

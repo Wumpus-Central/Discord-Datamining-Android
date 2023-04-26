@@ -4162,7 +4162,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p0, p1, p3, p4}, Lcom/facebook/soloader/f;->N(Ljava/nio/ByteBuffer;J)I
+    invoke-interface {p0, p1, p3, p4}, Lcom/facebook/soloader/f;->F(Ljava/nio/ByteBuffer;J)I
 
     .line 15
     .line 16

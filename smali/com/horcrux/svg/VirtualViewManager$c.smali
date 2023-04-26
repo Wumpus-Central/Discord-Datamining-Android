@@ -1,11 +1,11 @@
-.class Lcom/horcrux/svg/RenderableViewManager$c;
+.class Lcom/horcrux/svg/VirtualViewManager$c;
 .super Lcom/facebook/react/uimanager/MatrixMathHelper$MatrixDecompositionContext;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/horcrux/svg/RenderableViewManager;
+    value = Lcom/horcrux/svg/VirtualViewManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,7 +43,7 @@
 
     .line 6
     .line 7
-    iput-object v0, p0, Lcom/horcrux/svg/RenderableViewManager$c;->a:[D
+    iput-object v0, p0, Lcom/horcrux/svg/VirtualViewManager$c;->a:[D
 
     .line 8
     .line 9
@@ -54,7 +54,7 @@
 
     .line 11
     .line 12
-    iput-object v1, p0, Lcom/horcrux/svg/RenderableViewManager$c;->b:[D
+    iput-object v1, p0, Lcom/horcrux/svg/VirtualViewManager$c;->b:[D
 
     .line 13
     .line 14
@@ -62,7 +62,7 @@
 
     .line 15
     .line 16
-    iput-object v1, p0, Lcom/horcrux/svg/RenderableViewManager$c;->c:[D
+    iput-object v1, p0, Lcom/horcrux/svg/VirtualViewManager$c;->c:[D
 
     .line 17
     .line 18
@@ -70,7 +70,7 @@
 
     .line 19
     .line 20
-    iput-object v1, p0, Lcom/horcrux/svg/RenderableViewManager$c;->d:[D
+    iput-object v1, p0, Lcom/horcrux/svg/VirtualViewManager$c;->d:[D
 
     .line 21
     .line 22
@@ -78,7 +78,7 @@
 
     .line 23
     .line 24
-    iput-object v0, p0, Lcom/horcrux/svg/RenderableViewManager$c;->e:[D
+    iput-object v0, p0, Lcom/horcrux/svg/VirtualViewManager$c;->e:[D
 
     .line 25
     .line 26
@@ -151,7 +151,4 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method

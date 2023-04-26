@@ -738,7 +738,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Lu5/e;->v()I
+    invoke-virtual {p1}, Lu5/e;->r()I
 
     .line 17
     .line 18
@@ -918,7 +918,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lu5/e;->x()Li5/c;
+    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
 
     .line 4
     .line 5
@@ -938,7 +938,7 @@
 
     .line 12
     :cond_0
-    invoke-virtual {p1}, Lu5/e;->x()Li5/c;
+    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
 
     .line 13
     .line 14

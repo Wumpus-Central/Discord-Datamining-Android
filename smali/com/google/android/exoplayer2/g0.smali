@@ -249,7 +249,7 @@
 
     aget-object v8, v1, v5
 
-    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->j()Ld7/t;
+    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->m()Ld7/t;
 
     move-result-object v8
 
@@ -502,7 +502,7 @@
 
     .line 68
     .line 69
-    invoke-direct {p0, v5}, Lcom/google/android/exoplayer2/g0;->o(Lcom/google/android/exoplayer2/t0;)V
+    invoke-direct {p0, v5}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/t0;)V
 
     .line 70
     .line 71
@@ -669,7 +669,7 @@
 
     .line 151
     .line 152
-    invoke-interface {p1, p2, p3}, Lh8/r;->p(J)J
+    invoke-interface {p1, p2, p3}, Lh8/r;->l(J)J
 
     .line 153
     .line 154
@@ -741,7 +741,7 @@
 
     .line 187
     .line 188
-    invoke-interface {p1, v1}, Lf9/m;->e(I)Z
+    invoke-interface {p1, v1}, Lf9/m;->h(I)Z
 
     .line 189
     .line 190
@@ -1428,7 +1428,7 @@
 
     .line 8
     .line 9
-    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/r0;)V
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->m(Lcom/google/android/exoplayer2/r0;)V
 
     .line 10
     .line 11
@@ -1460,7 +1460,7 @@
 
     .line 23
     .line 24
-    invoke-interface {p1, v1}, Lf9/m;->e(I)Z
+    invoke-interface {p1, v1}, Lf9/m;->h(I)Z
 
     .line 25
     .line 26
@@ -1477,7 +1477,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 33
     .line 34
@@ -2144,7 +2144,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 10
     .line 11
@@ -4205,7 +4205,7 @@
 
     .line 35
     .line 36
-    invoke-interface {v1, p2, v2}, Lcom/google/android/exoplayer2/t0;->l(FF)V
+    invoke-interface {v1, p2, v2}, Lcom/google/android/exoplayer2/t0;->o(FF)V
 
     .line 37
     .line 38
@@ -5504,7 +5504,7 @@
     const/4 v0, 0x2
 
     .line 24
-    invoke-interface {p1, v0}, Lf9/m;->e(I)Z
+    invoke-interface {p1, v0}, Lf9/m;->h(I)Z
 
     .line 25
     .line 26
@@ -5679,7 +5679,7 @@
 
     .line 24
     .line 25
-    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 26
     .line 27
@@ -6270,7 +6270,7 @@
 
     .line 50
     .line 51
-    invoke-interface {p1, p3}, Lf9/m;->e(I)Z
+    invoke-interface {p1, p3}, Lf9/m;->h(I)Z
 
     .line 52
     .line 53
@@ -6287,7 +6287,7 @@
 
     .line 58
     .line 59
-    invoke-interface {p1, p3}, Lf9/m;->e(I)Z
+    invoke-interface {p1, p3}, Lf9/m;->h(I)Z
 
     .line 60
     .line 61
@@ -6908,7 +6908,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/h;->e(Lcom/google/android/exoplayer2/PlaybackParameters;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/h;->f(Lcom/google/android/exoplayer2/PlaybackParameters;)V
 
     .line 4
     .line 5
@@ -7050,7 +7050,7 @@
 
     .line 1
     :try_start_0
-    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/r0;)V
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->m(Lcom/google/android/exoplayer2/r0;)V
     :try_end_0
     .catch Lcom/google/android/exoplayer2/ExoPlaybackException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -8803,7 +8803,7 @@
 
     .line 35
     .line 36
-    invoke-interface {v1}, Ld7/n;->h()Ld9/b;
+    invoke-interface {v1}, Ld7/n;->e()Ld9/b;
 
     .line 37
     .line 38
@@ -8838,7 +8838,7 @@
 
     .line 52
     .line 53
-    invoke-interface {v2, p0, v3, v4}, Lh8/r;->k(Lh8/r$a;J)V
+    invoke-interface {v2, p0, v3, v4}, Lh8/r;->q(Lh8/r$a;J)V
 
     .line 54
     .line 55
@@ -9643,7 +9643,7 @@
 
     .line 77
     .line 78
-    invoke-interface {v6}, Lh8/r;->r()J
+    invoke-interface {v6}, Lh8/r;->n()J
 
     .line 79
     .line 80
@@ -9719,7 +9719,7 @@
 
     .line 113
     .line 114
-    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->u()Z
+    invoke-interface {v3}, Lcom/google/android/exoplayer2/t0;->k()Z
 
     .line 115
     .line 116
@@ -9739,7 +9739,7 @@
 
     .line 123
     .line 124
-    invoke-interface {v3}, Ld7/t;->f()I
+    invoke-interface {v3}, Ld7/t;->d()I
 
     .line 125
     .line 126
@@ -9886,7 +9886,7 @@
 
     .line 189
     .line 190
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 191
     .line 192
@@ -10714,7 +10714,7 @@
 
     .line 60
     .line 61
-    invoke-interface/range {v3 .. v8}, Ld7/n;->g(JJF)Z
+    invoke-interface/range {v3 .. v8}, Ld7/n;->i(JJF)Z
 
     .line 62
     .line 63
@@ -11227,7 +11227,7 @@
 
     .line 110
     .line 111
-    invoke-interface/range {v5 .. v11}, Ld7/n;->f(JFZJ)Z
+    invoke-interface/range {v5 .. v11}, Ld7/n;->d(JFZJ)Z
 
     .line 112
     .line 113
@@ -11306,7 +11306,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v4}, La9/h;->p()V
+    invoke-interface {v4}, La9/h;->i()V
 
     .line 24
     .line 25
@@ -11837,7 +11837,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v4, p1}, La9/h;->g(Z)V
+    invoke-interface {v4, p1}, La9/h;->m(Z)V
 
     .line 24
     .line 25
@@ -12477,7 +12477,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v4}, La9/h;->q()V
+    invoke-interface {v4}, La9/h;->r()V
 
     .line 24
     .line 25
@@ -12841,7 +12841,7 @@
 
     .line 22
     .line 23
-    invoke-interface {p1}, Ld7/n;->i()V
+    invoke-interface {p1}, Ld7/n;->f()V
 
     .line 24
     .line 25
@@ -13201,7 +13201,7 @@
 
     .line 36
     .line 37
-    invoke-interface {v2}, Ld9/e;->d()Ld9/x;
+    invoke-interface {v2}, Ld9/e;->c()Ld9/x;
 
     .line 38
     .line 39
@@ -13218,7 +13218,7 @@
 
     .line 45
     .line 46
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
 
     .line 47
     .line 48
@@ -13518,7 +13518,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, Lh8/r;->f()Z
+    invoke-interface {v0}, Lh8/r;->c()Z
 
     .line 16
     .line 17
@@ -13697,7 +13697,7 @@
 
     .line 7
     .line 8
-    invoke-interface {v0}, Ld7/n;->e()V
+    invoke-interface {v0}, Ld7/n;->h()V
 
     .line 9
     .line 10
@@ -14113,7 +14113,7 @@
 
     .line 126
     .line 127
-    invoke-virtual {p1, p2}, Lcom/google/android/exoplayer2/h;->e(Lcom/google/android/exoplayer2/PlaybackParameters;)V
+    invoke-virtual {p1, p2}, Lcom/google/android/exoplayer2/h;->f(Lcom/google/android/exoplayer2/PlaybackParameters;)V
 
     .line 128
     .line 129
@@ -14997,12 +14997,182 @@
 
     iget-object p2, p2, La9/n;->c:[La9/h;
 
-    invoke-interface {v0, v1, p1, p2}, Ld7/n;->d([Lcom/google/android/exoplayer2/t0;Lcom/google/android/exoplayer2/source/TrackGroupArray;[La9/h;)V
+    invoke-interface {v0, v1, p1, p2}, Ld7/n;->g([Lcom/google/android/exoplayer2/t0;Lcom/google/android/exoplayer2/source/TrackGroupArray;[La9/h;)V
 
     return-void
 .end method
 
-.method private j(Lcom/google/android/exoplayer2/g0$b;I)V
+.method private j1()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->G:Lcom/google/android/exoplayer2/q0;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-nez v0, :cond_1
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->C:Lcom/google/android/exoplayer2/p0;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/p0;->s()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-nez v0, :cond_0
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->U()V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->W()V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->X()V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->V()V
+
+    .line 30
+    .line 31
+    .line 32
+    :cond_1
+    :goto_0
+    return-void
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+.end method
+
+.method private k(Lcom/google/android/exoplayer2/g0$b;I)V
     .locals 2
 
     .line 1
@@ -15327,339 +15497,6 @@
     .line 288
 .end method
 
-.method private j1()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->G:Lcom/google/android/exoplayer2/q0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/Timeline;->q()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-nez v0, :cond_1
-
-    .line 10
-    .line 11
-    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->C:Lcom/google/android/exoplayer2/p0;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/p0;->s()Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    if-nez v0, :cond_0
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->U()V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->W()V
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->X()V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-direct {p0}, Lcom/google/android/exoplayer2/g0;->V()V
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_1
-    :goto_0
-    return-void
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-.end method
-
-.method private k(Lcom/google/android/exoplayer2/ExoPlaybackException;)V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p1, Lcom/google/android/exoplayer2/ExoPlaybackException;->r:Z
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    if-eqz v0, :cond_0
-
-    .line 5
-    .line 6
-    iget v0, p1, Lcom/google/android/exoplayer2/ExoPlaybackException;->k:I
-
-    .line 7
-    .line 8
-    if-ne v0, v1, :cond_0
-
-    .line 9
-    .line 10
-    move v0, v1
-
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
-    :goto_0
-    invoke-static {v0}, Lf9/a;->a(Z)V
-
-    .line 14
-    .line 15
-    .line 16
-    :try_start_0
-    invoke-direct {p0, v1}, Lcom/google/android/exoplayer2/g0;->x0(Z)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :catch_0
-    move-exception v0
-
-    .line 21
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    .line 22
-    .line 23
-    .line 24
-    throw p1
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-.end method
-
 .method private k0()Z
     .locals 15
 
@@ -15728,7 +15565,7 @@
 
     .line 29
     :cond_0
-    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 30
     .line 31
@@ -15779,7 +15616,7 @@
 
     .line 51
     :cond_2
-    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->u()Z
+    invoke-interface {v8}, Lcom/google/android/exoplayer2/t0;->k()Z
 
     .line 52
     .line 53
@@ -15831,7 +15668,7 @@
     move-result-wide v13
 
     .line 77
-    invoke-interface/range {v8 .. v14}, Lcom/google/android/exoplayer2/t0;->i([Ld7/k;Lh8/o0;JJ)V
+    invoke-interface/range {v8 .. v14}, Lcom/google/android/exoplayer2/t0;->l([Ld7/k;Lh8/o0;JJ)V
 
     .line 78
     .line 79
@@ -15852,7 +15689,7 @@
 
     .line 86
     .line 87
-    invoke-direct {p0, v8}, Lcom/google/android/exoplayer2/g0;->o(Lcom/google/android/exoplayer2/t0;)V
+    invoke-direct {p0, v8}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/t0;)V
 
     .line 88
     .line 89
@@ -15959,7 +15796,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v1}, Lh8/r;->r()J
+    invoke-interface {v1}, Lh8/r;->n()J
 
     .line 22
     .line 23
@@ -16310,7 +16147,7 @@
     move-result-object v0
 
     .line 189
-    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/h;->e(Lcom/google/android/exoplayer2/PlaybackParameters;)V
+    invoke-virtual {v1, v0}, Lcom/google/android/exoplayer2/h;->f(Lcom/google/android/exoplayer2/PlaybackParameters;)V
 
     .line 190
     .line 191
@@ -16608,6 +16445,169 @@
     .line 467
     .line 468
     .line 469
+.end method
+
+.method private l(Lcom/google/android/exoplayer2/ExoPlaybackException;)V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p1, Lcom/google/android/exoplayer2/ExoPlaybackException;->r:Z
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    iget v0, p1, Lcom/google/android/exoplayer2/ExoPlaybackException;->k:I
+
+    .line 7
+    .line 8
+    if-ne v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    move v0, v1
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 13
+    :goto_0
+    invoke-static {v0}, Lf9/a;->a(Z)V
+
+    .line 14
+    .line 15
+    .line 16
+    :try_start_0
+    invoke-direct {p0, v1}, Lcom/google/android/exoplayer2/g0;->x0(Z)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    :catch_0
+    move-exception v0
+
+    .line 21
+    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 22
+    .line 23
+    .line 24
+    throw p1
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
 .end method
 
 .method private l0()V
@@ -16908,7 +16908,7 @@
 
     .line 140
     .line 141
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 142
     .line 143
@@ -16920,7 +16920,7 @@
 
     .line 146
     .line 147
-    invoke-direct {v6, v1}, Lcom/google/android/exoplayer2/g0;->o(Lcom/google/android/exoplayer2/t0;)V
+    invoke-direct {v6, v1}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/t0;)V
 
     .line 148
     .line 149
@@ -16941,7 +16941,7 @@
 
     .line 156
     .line 157
-    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/t0;->t(J)V
+    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/t0;->u(J)V
 
     .line 158
     .line 159
@@ -17051,7 +17051,7 @@
     const/4 v1, 0x2
 
     .line 211
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
 
     .line 212
     .line 213
@@ -17383,7 +17383,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v4, p1}, La9/h;->n(F)V
+    invoke-interface {v4, p1}, La9/h;->g(F)V
 
     .line 24
     .line 25
@@ -17503,6 +17503,174 @@
     .line 125
 .end method
 
+.method private m(Lcom/google/android/exoplayer2/r0;)V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->j()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    return-void
+
+    .line 8
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 9
+    :try_start_0
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->f()Lcom/google/android/exoplayer2/r0$b;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->h()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v2
+
+    .line 17
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->d()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v3
+
+    .line 21
+    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/r0$b;->i(ILjava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/r0;->k(Z)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
+
+    .line 28
+    :catchall_0
+    move-exception v1
+
+    .line 29
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/r0;->k(Z)V
+
+    .line 30
+    .line 31
+    .line 32
+    throw v1
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+.end method
+
 .method private m0(ZZZZ)V
     .locals 32
 
@@ -17518,7 +17686,7 @@
     const/4 v2, 0x2
 
     .line 6
-    invoke-interface {v0, v2}, Lf9/m;->h(I)V
+    invoke-interface {v0, v2}, Lf9/m;->j(I)V
 
     .line 7
     .line 8
@@ -17571,7 +17739,7 @@
     .line 30
     .line 31
     :try_start_0
-    invoke-direct {v1, v0}, Lcom/google/android/exoplayer2/g0;->o(Lcom/google/android/exoplayer2/t0;)V
+    invoke-direct {v1, v0}, Lcom/google/android/exoplayer2/g0;->n(Lcom/google/android/exoplayer2/t0;)V
     :try_end_0
     .catch Lcom/google/android/exoplayer2/ExoPlaybackException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
@@ -18660,11 +18828,11 @@
     .line 288
 .end method
 
-.method private n(Lcom/google/android/exoplayer2/r0;)V
-    .locals 4
+.method private n(Lcom/google/android/exoplayer2/t0;)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->j()Z
+    invoke-static {p1}, Lcom/google/android/exoplayer2/g0;->M(Lcom/google/android/exoplayer2/t0;)Z
 
     .line 2
     .line 3
@@ -18672,7 +18840,7 @@
     move-result v0
 
     .line 5
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
@@ -18680,59 +18848,45 @@
 
     .line 8
     :cond_0
-    const/4 v0, 0x1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->x:Lcom/google/android/exoplayer2/h;
 
     .line 9
-    :try_start_0
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->f()Lcom/google/android/exoplayer2/r0$b;
-
     .line 10
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/h;->a(Lcom/google/android/exoplayer2/t0;)V
+
     .line 11
     .line 12
-    move-result-object v1
-
     .line 13
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->h()I
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->t(Lcom/google/android/exoplayer2/t0;)V
 
     .line 14
     .line 15
     .line 16
-    move-result v2
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/t0;->disable()V
 
     .line 17
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/r0;->d()Ljava/lang/Object;
-
     .line 18
     .line 19
-    .line 20
-    move-result-object v3
+    iget p1, p0, Lcom/google/android/exoplayer2/g0;->S:I
 
+    .line 20
     .line 21
-    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/r0$b;->p(ILjava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    add-int/lit8 p1, p1, -0x1
 
     .line 22
     .line 23
-    .line 24
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/r0;->k(Z)V
+    iput p1, p0, Lcom/google/android/exoplayer2/g0;->S:I
 
+    .line 24
     .line 25
+    return-void
     .line 26
     .line 27
-    return-void
-
     .line 28
-    :catchall_0
-    move-exception v1
-
     .line 29
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/r0;->k(Z)V
-
     .line 30
     .line 31
     .line 32
-    throw v1
     .line 33
     .line 34
     .line 35
@@ -18995,160 +19149,6 @@
     .line 133
 .end method
 
-.method private o(Lcom/google/android/exoplayer2/t0;)V
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Lcom/google/android/exoplayer2/g0;->M(Lcom/google/android/exoplayer2/t0;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    return-void
-
-    .line 8
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->x:Lcom/google/android/exoplayer2/h;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/h;->a(Lcom/google/android/exoplayer2/t0;)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->t(Lcom/google/android/exoplayer2/t0;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/t0;->disable()V
-
-    .line 17
-    .line 18
-    .line 19
-    iget p1, p0, Lcom/google/android/exoplayer2/g0;->S:I
-
-    .line 20
-    .line 21
-    add-int/lit8 p1, p1, -0x1
-
-    .line 22
-    .line 23
-    iput p1, p0, Lcom/google/android/exoplayer2/g0;->S:I
-
-    .line 24
-    .line 25
-    return-void
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-.end method
-
 .method private o0(J)V
     .locals 4
 
@@ -19230,7 +19230,7 @@
 
     .line 36
     .line 37
-    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/t0;->t(J)V
+    invoke-interface {v1, v2, v3}, Lcom/google/android/exoplayer2/t0;->u(J)V
 
     .line 38
     .line 39
@@ -19525,7 +19525,7 @@
 
     .line 90
     .line 91
-    invoke-interface {v10, v4, v5, v13, v14}, Lcom/google/android/exoplayer2/t0;->o(JJ)V
+    invoke-interface {v10, v4, v5, v13, v14}, Lcom/google/android/exoplayer2/t0;->r(JJ)V
 
     .line 92
     .line 93
@@ -19565,7 +19565,7 @@
 
     .line 108
     .line 109
-    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 110
     .line 111
@@ -19623,7 +19623,7 @@
 
     .line 132
     .line 133
-    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->d()Z
+    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->e()Z
 
     .line 134
     .line 135
@@ -19686,7 +19686,7 @@
 
     .line 157
     .line 158
-    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->r()V
+    invoke-interface {v10}, Lcom/google/android/exoplayer2/t0;->j()V
 
     .line 159
     .line 160
@@ -19708,7 +19708,7 @@
 
     .line 166
     .line 167
-    invoke-interface {v4}, Lh8/r;->n()V
+    invoke-interface {v4}, Lh8/r;->r()V
 
     .line 168
     .line 169
@@ -20054,7 +20054,7 @@
 
     .line 331
     .line 332
-    invoke-interface {v7}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v7}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 333
     .line 334
@@ -20082,7 +20082,7 @@
 
     .line 345
     .line 346
-    invoke-interface {v7}, Lcom/google/android/exoplayer2/t0;->r()V
+    invoke-interface {v7}, Lcom/google/android/exoplayer2/t0;->j()V
 
     .line 347
     .line 348
@@ -20283,7 +20283,7 @@
     const/4 v2, 0x2
 
     .line 439
-    invoke-interface {v1, v2}, Lf9/m;->h(I)V
+    invoke-interface {v1, v2}, Lf9/m;->j(I)V
 
     .line 440
     .line 441
@@ -20339,7 +20339,7 @@
     const/4 v2, 0x2
 
     .line 464
-    invoke-interface {v1, v2}, Lf9/m;->h(I)V
+    invoke-interface {v1, v2}, Lf9/m;->j(I)V
 
     .line 465
     .line 466
@@ -21091,7 +21091,7 @@
     move-wide v12, v15
 
     .line 97
-    invoke-interface/range {v2 .. v13}, Lcom/google/android/exoplayer2/t0;->m(Ld7/u;[Ld7/k;Lh8/o0;JZZJJ)V
+    invoke-interface/range {v2 .. v13}, Lcom/google/android/exoplayer2/t0;->p(Ld7/u;[Ld7/k;Lh8/o0;JZZJJ)V
 
     .line 98
     .line 99
@@ -21109,7 +21109,7 @@
 
     .line 106
     .line 107
-    invoke-interface {v1, v3, v2}, Lcom/google/android/exoplayer2/r0$b;->p(ILjava/lang/Object;)V
+    invoke-interface {v1, v3, v2}, Lcom/google/android/exoplayer2/r0$b;->i(ILjava/lang/Object;)V
 
     .line 108
     .line 109
@@ -23399,7 +23399,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v5, v2}, La9/k;->h(I)Ld7/k;
+    invoke-interface {v5, v2}, La9/k;->e(I)Ld7/k;
 
     .line 17
     .line 18
@@ -23856,7 +23856,7 @@
     const/4 v1, 0x2
 
     .line 4
-    invoke-interface {v0, v1}, Lf9/m;->h(I)V
+    invoke-interface {v0, v1}, Lf9/m;->j(I)V
 
     .line 5
     .line 6
@@ -23868,7 +23868,7 @@
     add-long/2addr p1, p3
 
     .line 10
-    invoke-interface {v0, v1, p1, p2}, Lf9/m;->g(IJ)Z
+    invoke-interface {v0, v1, p1, p2}, Lf9/m;->i(IJ)Z
 
     .line 11
     .line 12
@@ -24187,7 +24187,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p0, v0}, La9/k;->h(I)Ld7/k;
+    invoke-interface {p0, v0}, La9/k;->e(I)Ld7/k;
 
     .line 15
     .line 16
@@ -25076,7 +25076,7 @@
 
     .line 38
     .line 39
-    invoke-interface {v4}, Lcom/google/android/exoplayer2/t0;->q()Lh8/o0;
+    invoke-interface {v4}, Lcom/google/android/exoplayer2/t0;->s()Lh8/o0;
 
     .line 40
     .line 41
@@ -25108,7 +25108,7 @@
 
     .line 53
     .line 54
-    invoke-interface {v4}, Lcom/google/android/exoplayer2/t0;->s()J
+    invoke-interface {v4}, Lcom/google/android/exoplayer2/t0;->t()J
 
     .line 55
     .line 56
@@ -25679,7 +25679,7 @@
 
     .line 215
     .line 216
-    invoke-interface {v1, v11, v12, v2}, Lh8/r;->c(JLd7/w;)J
+    invoke-interface {v1, v11, v12, v2}, Lh8/r;->d(JLd7/w;)J
 
     .line 217
     .line 218
@@ -27055,7 +27055,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v0, p1, v8}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, p1, v8}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 17
     .line 18
@@ -27530,7 +27530,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-interface {v0, v1, p1, p2}, Lf9/m;->b(III)Landroid/os/Message;
+    invoke-interface {v0, v1, p1, p2}, Lf9/m;->g(III)Landroid/os/Message;
 
     .line 5
     .line 6
@@ -27830,7 +27830,7 @@
 
     const/4 v1, 0x4
 
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
 
@@ -27848,7 +27848,7 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, p1, v2}, Lf9/m;->b(III)Landroid/os/Message;
+    invoke-interface {v0, v1, p1, v2}, Lf9/m;->g(III)Landroid/os/Message;
 
     move-result-object p1
 
@@ -27866,7 +27866,7 @@
 
     const/16 v2, 0xc
 
-    invoke-interface {v0, v2, p1, v1}, Lf9/m;->b(III)Landroid/os/Message;
+    invoke-interface {v0, v2, p1, v1}, Lf9/m;->g(III)Landroid/os/Message;
 
     move-result-object p1
 
@@ -27882,12 +27882,24 @@
 
     const/16 v1, 0xa
 
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
 
     return-void
 .end method
 
-.method public declared-synchronized c(Lcom/google/android/exoplayer2/r0;)V
+.method public c()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->q:Lf9/m;
+
+    const/16 v1, 0x16
+
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
+
+    return-void
+.end method
+
+.method public declared-synchronized d(Lcom/google/android/exoplayer2/r0;)V
     .locals 2
 
     .line 1
@@ -27931,7 +27943,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 20
     .line 21
@@ -28076,18 +28088,6 @@
     .line 125
 .end method
 
-.method public d()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->q:Lf9/m;
-
-    const/16 v1, 0x16
-
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
-
-    return-void
-.end method
-
 .method public d0(Lh8/r;)V
     .locals 2
 
@@ -28095,7 +28095,7 @@
 
     const/16 v1, 0x9
 
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
 
@@ -28111,7 +28111,7 @@
 
     const/4 v1, 0x6
 
-    invoke-interface {v0, v1}, Lf9/m;->c(I)Landroid/os/Message;
+    invoke-interface {v0, v1}, Lf9/m;->b(I)Landroid/os/Message;
 
     move-result-object v0
 
@@ -28127,7 +28127,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lf9/m;->c(I)Landroid/os/Message;
+    invoke-interface {v0, v1}, Lf9/m;->b(I)Landroid/os/Message;
 
     move-result-object v0
 
@@ -28179,7 +28179,7 @@
     const/4 v1, 0x7
 
     .line 18
-    invoke-interface {v0, v1}, Lf9/m;->e(I)Z
+    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
 
     .line 19
     .line 20
@@ -28368,7 +28368,7 @@
 
     .line 16
     .line 17
-    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->k(Lcom/google/android/exoplayer2/ExoPlaybackException;)V
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/g0;->l(Lcom/google/android/exoplayer2/ExoPlaybackException;)V
 
     .line 18
     .line 19
@@ -28520,7 +28520,7 @@
 
     .line 87
     .line 88
-    invoke-direct {p0, v4, p1}, Lcom/google/android/exoplayer2/g0;->j(Lcom/google/android/exoplayer2/g0$b;I)V
+    invoke-direct {p0, v4, p1}, Lcom/google/android/exoplayer2/g0;->k(Lcom/google/android/exoplayer2/g0$b;I)V
 
     .line 89
     .line 90
@@ -29060,7 +29060,7 @@
 
     .line 341
     .line 342
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 343
     .line 344
@@ -29421,7 +29421,23 @@
     .line 628
 .end method
 
-.method public bridge synthetic i(Lh8/p0;)V
+.method public i(Lh8/r;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->q:Lf9/m;
+
+    const/16 v1, 0x8
+
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
+
+    return-void
+.end method
+
+.method public bridge synthetic j(Lh8/p0;)V
     .locals 0
 
     check-cast p1, Lh8/r;
@@ -29443,7 +29459,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, v1, p1, p2, p3}, Lf9/m;->f(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1, p2, p3}, Lf9/m;->d(IIILjava/lang/Object;)Landroid/os/Message;
 
     .line 6
     .line 7
@@ -29865,22 +29881,6 @@
     .line 418
 .end method
 
-.method public l(Lh8/r;)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/g0;->q:Lf9/m;
-
-    const/16 v1, 0x8
-
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
-
-    return-void
-.end method
-
 .method public onPlaybackParametersChanged(Lcom/google/android/exoplayer2/PlaybackParameters;)V
     .locals 2
 
@@ -29893,7 +29893,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, v1, p1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, v1, p1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 6
     .line 7
@@ -30042,7 +30042,7 @@
     const/4 p1, 0x3
 
     .line 9
-    invoke-interface {v0, p1, v1}, Lf9/m;->i(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-interface {v0, p1, v1}, Lf9/m;->e(ILjava/lang/Object;)Landroid/os/Message;
 
     .line 10
     .line 11

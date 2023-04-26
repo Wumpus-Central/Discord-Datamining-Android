@@ -291,7 +291,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static resetTransformProperty(Landroid/view/View;)V
@@ -401,7 +400,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static sanitizeFloatPropertyValue(F)F
@@ -561,7 +559,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static setTransformProperty(Landroid/view/View;Lcom/facebook/react/bridge/ReadableArray;)V
@@ -1459,7 +1456,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private updateViewContentDescription(Landroid/view/View;)V
@@ -3822,7 +3818,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected prepareToRecycleView(Lcom/facebook/react/uimanager/ThemedReactContext;Landroid/view/View;)Landroid/view/View;

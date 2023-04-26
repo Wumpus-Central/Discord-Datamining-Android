@@ -85,7 +85,7 @@
     move-result-object v0
 
     .line 8
-    invoke-interface {p1, v0}, Lokio/BufferedSink;->a0(Lokio/Source;)J
+    invoke-interface {p1, v0}, Lokio/BufferedSink;->N(Lokio/Source;)J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -166,5 +166,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

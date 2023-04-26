@@ -378,7 +378,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -518,7 +517,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -750,7 +748,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onLongClick(Landroid/view/View;)Z
@@ -854,7 +851,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -1029,5 +1025,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

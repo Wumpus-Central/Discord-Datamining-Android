@@ -450,7 +450,7 @@
     return p1
 .end method
 
-.method private g(II)Z
+.method private d(II)Z
     .locals 4
 
     .line 1
@@ -2902,7 +2902,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->g(II)Z
+    invoke-direct {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->d(II)Z
 
     .line 2
     .line 3
@@ -2920,7 +2920,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 10
     .line 11
@@ -2970,7 +2970,7 @@
 
     .line 29
     :cond_3
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 30
     .line 31
@@ -3230,7 +3230,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 21
     .line 22
@@ -3280,7 +3280,7 @@
 
     .line 40
     :cond_4
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 41
     .line 42
@@ -3472,7 +3472,7 @@
 
     .line 41
     :cond_2
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 42
     .line 43
@@ -7835,7 +7835,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 8
     .line 9
@@ -8331,168 +8331,14 @@
     .line 461
 .end method
 
-.method public c(Lcom/google/android/flexbox/c;)V
-    .locals 2
+.method public c(III)I
+    .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-static {p1, p2, p3}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    move-result p1
 
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:I
-
-    .line 8
-    .line 9
-    and-int/lit8 v0, v0, 0x4
-
-    .line 10
-    .line 11
-    if-lez v0, :cond_1
-
-    .line 12
-    .line 13
-    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
-
-    .line 14
-    .line 15
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:I
-
-    .line 16
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
-
-    .line 19
-    .line 20
-    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
-
-    .line 21
-    .line 22
-    add-int/2addr v0, v1
-
-    .line 23
-    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
-
-    .line 24
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_0
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->s:I
-
-    .line 27
-    .line 28
-    and-int/lit8 v0, v0, 0x4
-
-    .line 29
-    .line 30
-    if-lez v0, :cond_1
-
-    .line 31
-    .line 32
-    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
-
-    .line 33
-    .line 34
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:I
-
-    .line 35
-    .line 36
-    add-int/2addr v0, v1
-
-    .line 37
-    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
-
-    .line 38
-    .line 39
-    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
-
-    .line 40
-    .line 41
-    add-int/2addr v0, v1
-
-    .line 42
-    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
-
-    .line 43
-    .line 44
-    :cond_1
-    :goto_0
-    return-void
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
+    return p1
 .end method
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
@@ -8503,17 +8349,17 @@
     return p1
 .end method
 
-.method public d(I)Landroid/view/View;
+.method public e(I)Landroid/view/View;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public e(III)I
+.method public f(III)I
     .locals 0
 
     invoke-static {p1, p2, p3}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
@@ -8523,10 +8369,12 @@
     return p1
 .end method
 
-.method public f(ILandroid/view/View;)V
+.method public g(Landroid/view/View;)I
     .locals 0
 
-    return-void
+    const/4 p1, 0x0
+
+    return p1
 .end method
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
@@ -9087,7 +8935,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 26
     .line 27
@@ -9128,7 +8976,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 44
     .line 45
@@ -9240,21 +9088,191 @@
     .line 126
 .end method
 
-.method public h(I)Landroid/view/View;
+.method public h(Lcom/google/android/flexbox/c;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:I
+
+    .line 8
+    .line 9
+    and-int/lit8 v0, v0, 0x4
+
+    .line 10
+    .line 11
+    if-lez v0, :cond_1
+
+    .line 12
+    .line 13
+    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 14
+    .line 15
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:I
+
+    .line 16
+    .line 17
+    add-int/2addr v0, v1
+
+    .line 18
+    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 19
+    .line 20
+    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    .line 21
+    .line 22
+    add-int/2addr v0, v1
+
+    .line 23
+    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->s:I
+
+    .line 27
+    .line 28
+    and-int/lit8 v0, v0, 0x4
+
+    .line 29
+    .line 30
+    if-lez v0, :cond_1
+
+    .line 31
+    .line 32
+    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 33
+    .line 34
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:I
+
+    .line 35
+    .line 36
+    add-int/2addr v0, v1
+
+    .line 37
+    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 38
+    .line 39
+    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    .line 40
+    .line 41
+    add-int/2addr v0, v1
+
+    .line 42
+    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    .line 43
+    .line 44
+    :cond_1
+    :goto_0
+    return-void
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+.end method
+
+.method public i(I)Landroid/view/View;
     .locals 0
 
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public i(Landroid/view/View;II)I
+.method public j(ILandroid/view/View;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public k(Landroid/view/View;II)I
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->k()Z
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     .line 2
     .line 3
@@ -9693,17 +9711,7 @@
     .line 384
 .end method
 
-.method public j(III)I
-    .locals 0
-
-    invoke-static {p1, p2, p3}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public k()Z
+.method public l()Z
     .locals 2
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
@@ -9722,14 +9730,6 @@
     :cond_1
     :goto_0
     return v1
-.end method
-
-.method public l(Landroid/view/View;)I
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
 .end method
 
 .method protected onDraw(Landroid/graphics/Canvas;)V

@@ -685,7 +685,7 @@
 
     .line 11
     .line 12
-    invoke-interface {p1, v0}, Lxa/d;->b(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lxa/d;->g(Lxa/h;)Lcom/google/android/gms/tasks/Task;
 
     .line 13
     .line 14
@@ -711,12 +711,12 @@
 
     .line 25
     :cond_0
-    invoke-interface {p1, v0}, Lxa/d;->a(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lxa/d;->f(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
 
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1, p0}, Lxa/d;->f(Lxa/b;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, p0}, Lxa/d;->d(Lxa/b;)Lcom/google/android/gms/tasks/Task;
 
     .line 29
     .line 30
@@ -933,12 +933,12 @@
 
     .line 21
     .line 22
-    invoke-interface {p1, v1}, Lxa/d;->e(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v1}, Lxa/d;->c(Lxa/h;)Lcom/google/android/gms/tasks/Task;
 
     .line 23
     .line 24
     .line 25
-    invoke-interface {p1, v0}, Lxa/d;->d(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lxa/d;->b(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
 
     .line 26
     .line 27
@@ -947,7 +947,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p1, p0, v0}, Lxa/d;->c(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, p0, v0}, Lxa/d;->a(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
 
     .line 31
     .line 32
@@ -1138,7 +1138,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->v()[B
+    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
 
     .line 12
     .line 13
@@ -1362,7 +1362,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->v()[B
+    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
 
     .line 12
     .line 13

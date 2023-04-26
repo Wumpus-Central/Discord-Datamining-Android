@@ -23,21 +23,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/android/gms/common/api/Status;)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/internal/n;->a:Lcom/google/android/gms/tasks/TaskCompletionSource;
-
-    new-instance v1, Lu9/b;
-
-    invoke-direct {v1, p1}, Lu9/b;-><init>(Lcom/google/android/gms/common/api/Status;)V
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->b(Ljava/lang/Exception;)V
-
-    return-void
-.end method
-
-.method public final synthetic b(Ljava/lang/Object;)V
+.method public final synthetic a(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
@@ -75,5 +61,18 @@
     .line 24
     .line 25
     .line 26
-    .line 27
+.end method
+
+.method public final b(Lcom/google/android/gms/common/api/Status;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/internal/n;->a:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    new-instance v1, Lu9/b;
+
+    invoke-direct {v1, p1}, Lu9/b;-><init>(Lcom/google/android/gms/common/api/Status;)V
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->b(Ljava/lang/Exception;)V
+
+    return-void
 .end method

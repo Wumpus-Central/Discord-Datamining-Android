@@ -580,7 +580,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -675,7 +674,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -794,7 +792,7 @@
     move-result-object p2
 
     .line 52
-    invoke-interface {p1, v0, p2}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {p1, v0, p2}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     .line 53
     .line 54
@@ -1030,7 +1028,7 @@
     move-result-object p3
 
     .line 52
-    invoke-interface {p1, p2, p3}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {p1, p2, p3}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     .line 53
     .line 54
@@ -1580,7 +1578,7 @@
     move-result-object p2
 
     .line 47
-    invoke-interface {p1, p3, p2}, Lcom/facebook/datasource/DataSource;->g(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
+    invoke-interface {p1, p3, p2}, Lcom/facebook/datasource/DataSource;->d(Lcom/facebook/datasource/d;Ljava/util/concurrent/Executor;)V
 
     .line 48
     .line 49

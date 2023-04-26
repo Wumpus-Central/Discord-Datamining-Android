@@ -93,8 +93,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public static b(Landroid/content/Intent;)Landroid/net/Uri;
@@ -135,7 +133,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static c(Landroid/net/Uri;Landroid/net/Uri;)Lcom/yalantis/ucrop/a;
@@ -194,7 +191,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public d(Landroid/app/Activity;)V
@@ -282,8 +278,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public g(Lcom/yalantis/ucrop/a$a;)Lcom/yalantis/ucrop/a;

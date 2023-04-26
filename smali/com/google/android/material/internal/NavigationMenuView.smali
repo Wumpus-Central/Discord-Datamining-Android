@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/e;)V
+.method public a(Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     return-void

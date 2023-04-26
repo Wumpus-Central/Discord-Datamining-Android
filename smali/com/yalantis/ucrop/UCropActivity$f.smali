@@ -48,7 +48,21 @@
     return-void
 .end method
 
-.method public b(FF)V
+.method public b()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
+
+    invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->f(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/yalantis/ucrop/view/a;->t()V
+
+    return-void
+.end method
+
+.method public c(FF)V
     .locals 4
 
     .line 1
@@ -348,26 +362,4 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-.end method
-
-.method public c()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
-
-    invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->f(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/yalantis/ucrop/view/a;->t()V
-
-    return-void
 .end method

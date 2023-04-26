@@ -124,7 +124,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private o(Ljava/text/DecimalFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
@@ -528,23 +527,7 @@
     return-object p1
 .end method
 
-.method public b(D)Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/hermes/intl/p;->a:Ljava/text/Format;
-
-    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public c(Lg5/b;)Ljava/lang/String;
+.method public b(Lg5/b;)Ljava/lang/String;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -560,27 +543,23 @@
     return-object p1
 .end method
 
-.method public bridge synthetic d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
-    .locals 0
+.method public c(D)Ljava/lang/String;
+    .locals 1
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/hermes/intl/p;->v(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/p;
+    iget-object v0, p0, Lcom/facebook/hermes/intl/p;->a:Ljava/text/Format;
+
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public bridge synthetic e(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/facebook/hermes/intl/p;->t(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/p;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic f(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic d(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2}, Lcom/facebook/hermes/intl/p;->p(Ljava/lang/String;Lcom/facebook/hermes/intl/c$c;)Lcom/facebook/hermes/intl/p;
@@ -590,7 +569,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic g(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic e(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/facebook/hermes/intl/p;->u(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/p;
@@ -600,15 +579,7 @@
     return-object p1
 .end method
 
-.method public h(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
-    .locals 0
-
-    const-string p1, "literal"
-
-    return-object p1
-.end method
-
-.method public bridge synthetic i(I)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic f(I)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/facebook/hermes/intl/p;->s(I)Lcom/facebook/hermes/intl/p;
@@ -618,7 +589,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic j(Z)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic g(Z)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/facebook/hermes/intl/p;->r(Z)Lcom/facebook/hermes/intl/p;
@@ -628,7 +599,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic k(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual/range {p0 .. p6}, Lcom/facebook/hermes/intl/p;->m(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/p;
@@ -638,12 +609,40 @@
     return-object p1
 .end method
 
-.method public bridge synthetic l(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/facebook/hermes/intl/p;->q(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/p;
 
     move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/hermes/intl/p;->v(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/p;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic k(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/facebook/hermes/intl/p;->t(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/p;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public l(Ljava/text/AttributedCharacterIterator$Attribute;D)Ljava/lang/String;
+    .locals 0
+
+    const-string p1, "literal"
 
     return-object p1
 .end method
@@ -1826,7 +1825,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public u(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/p;

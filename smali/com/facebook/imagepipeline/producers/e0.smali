@@ -510,7 +510,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static h(Lcom/facebook/imagepipeline/request/ImageRequest;)I
@@ -636,7 +635,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected f()Ljava/lang/String;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/imagepipeline/backends/okhttp3/OkHttpNetworkFetcher$a;->a()V
+    value = Lcom/facebook/imagepipeline/backends/okhttp3/OkHttpNetworkFetcher$a;->b()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

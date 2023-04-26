@@ -224,9 +224,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public constructor <init>(Lcom/google/android/material/progressindicator/e;)V
@@ -279,7 +276,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method static synthetic i(Lcom/google/android/material/progressindicator/d;)I
@@ -535,14 +531,11 @@
     .line 92
     .line 93
     .line 94
-    .line 95
     :array_1
     .array-data 4
         0x0
         0x3f800000    # 1.0f
     .end array-data
-    .line 96
-    .line 97
 .end method
 
 .method private r(I)V
@@ -999,30 +992,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method private u(F)V
@@ -1483,30 +1452,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 
@@ -1545,7 +1490,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public c()V
@@ -1694,9 +1638,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method g()V
@@ -1734,7 +1675,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public h()V
@@ -1873,9 +1813,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method t(F)V
@@ -1924,5 +1861,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

@@ -1829,7 +1829,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getViewManagerNames(Lcom/facebook/react/bridge/ReactApplicationContext;)Ljava/util/Collection;
@@ -1962,5 +1961,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

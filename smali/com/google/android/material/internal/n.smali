@@ -284,14 +284,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method public static b(Landroidx/appcompat/widget/Toolbar;)Landroid/widget/ImageView;
@@ -366,7 +358,6 @@
     :goto_0
     return-object p0
     .line 26
-    .line 27
 .end method
 
 .method private static d(Landroidx/appcompat/widget/Toolbar;Ljava/lang/CharSequence;)Ljava/util/List;
@@ -472,8 +463,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public static e(Landroidx/appcompat/widget/Toolbar;)Landroid/widget/TextView;
@@ -534,5 +523,4 @@
     :goto_0
     return-object p0
     .line 26
-    .line 27
 .end method

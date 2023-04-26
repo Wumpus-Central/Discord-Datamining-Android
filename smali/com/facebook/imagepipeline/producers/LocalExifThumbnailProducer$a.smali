@@ -78,7 +78,7 @@
 .method protected j(Lu5/e;)V
     .locals 0
 
-    invoke-static {p1}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {p1}, Lu5/e;->h(Lu5/e;)V
 
     return-void
 .end method
@@ -200,7 +200,7 @@
     move-result-object v2
 
     .line 38
-    invoke-interface {v2, v1}, Ly3/h;->b([B)Ly3/g;
+    invoke-interface {v2, v1}, Ly3/h;->d([B)Ly3/g;
 
     .line 39
     .line 40

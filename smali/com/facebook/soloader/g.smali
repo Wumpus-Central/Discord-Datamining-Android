@@ -223,7 +223,7 @@
 
 
 # virtual methods
-.method public N(Ljava/nio/ByteBuffer;J)I
+.method public F(Ljava/nio/ByteBuffer;J)I
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/soloader/g;->m:Ljava/nio/channels/FileChannel;

@@ -23,47 +23,49 @@
 
 
 # virtual methods
-.method public final a(Lq1/b;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final b(ILandroid/os/Bundle;)Lq1/b;
+.method public final bridge synthetic a(Lq1/b;Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    new-instance p1, Lq9/g;
+    check-cast p2, Ljava/lang/Void;
 
     .line 2
     .line 3
-    iget-object p2, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
+    iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
     .line 4
     .line 5
-    invoke-static {}, Lu9/f;->c()Ljava/util/Set;
+    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->a(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)I
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result p2
 
     .line 9
-    invoke-direct {p1, p2, v0}, Lq9/g;-><init>(Landroid/content/Context;Ljava/util/Set;)V
+    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->b(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)Landroid/content/Intent;
 
     .line 10
     .line 11
     .line 12
-    return-object p1
+    move-result-object v0
+
     .line 13
+    invoke-virtual {p1, p2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+
     .line 14
     .line 15
     .line 16
+    iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
+
     .line 17
     .line 18
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+
     .line 19
     .line 20
     .line 21
+    return-void
     .line 22
     .line 23
     .line 24
@@ -258,49 +260,47 @@
     .line 213
 .end method
 
-.method public final bridge synthetic c(Lq1/b;Ljava/lang/Object;)V
+.method public final b(Lq1/b;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final c(ILandroid/os/Bundle;)Lq1/b;
     .locals 1
 
     .line 1
-    check-cast p2, Ljava/lang/Void;
+    new-instance p1, Lq9/g;
 
     .line 2
     .line 3
-    iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
+    iget-object p2, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
     .line 4
     .line 5
-    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->a(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)I
+    invoke-static {}, Lu9/f;->c()Ljava/util/Set;
 
     .line 6
     .line 7
     .line 8
-    move-result p2
+    move-result-object v0
 
     .line 9
-    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->b(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;)Landroid/content/Intent;
+    invoke-direct {p1, p2, v0}, Lq9/g;-><init>(Landroid/content/Context;Ljava/util/Set;)V
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
-
+    return-object p1
     .line 13
-    invoke-virtual {p1, p2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
-
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
-
     .line 17
     .line 18
-    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
-
     .line 19
     .line 20
     .line 21
-    return-void
     .line 22
     .line 23
     .line 24

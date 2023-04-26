@@ -65,7 +65,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->d()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 11
     .line 12
@@ -691,7 +691,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected bridge synthetic h(Ljava/lang/Object;I)V
@@ -749,7 +748,7 @@
     move-result-object v0
 
     .line 21
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 22
     .line 23
@@ -770,7 +769,7 @@
 
     .line 30
     .line 31
-    invoke-static {p1}, Lu5/e;->i(Lu5/e;)V
+    invoke-static {p1}, Lu5/e;->h(Lu5/e;)V
 
     .line 32
     .line 33
@@ -824,7 +823,7 @@
     const/4 p2, 0x0
 
     .line 57
-    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 58
     .line 59

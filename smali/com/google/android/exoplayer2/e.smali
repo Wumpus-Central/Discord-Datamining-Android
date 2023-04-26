@@ -161,7 +161,7 @@
 .method private b0()I
     .locals 2
 
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->P()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->V()I
 
     move-result v0
 
@@ -177,11 +177,11 @@
 
 
 # virtual methods
-.method public final B()I
+.method public final M()I
     .locals 4
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -208,7 +208,7 @@
 
     .line 13
     :cond_0
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->m()I
 
     .line 14
     .line 15
@@ -224,7 +224,7 @@
     move-result v2
 
     .line 21
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->S()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->W()Z
 
     .line 22
     .line 23
@@ -348,11 +348,11 @@
     .line 133
 .end method
 
-.method public final F()Z
+.method public final Q()Z
     .locals 2
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->E()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->P()I
 
     .line 2
     .line 3
@@ -367,7 +367,7 @@
 
     .line 7
     .line 8
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->h()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->E()Z
 
     .line 9
     .line 10
@@ -379,7 +379,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->M()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
 
     .line 15
     .line 16
@@ -515,11 +515,11 @@
     .line 133
 .end method
 
-.method public final K()I
+.method public final T()I
     .locals 4
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -546,7 +546,7 @@
 
     .line 13
     :cond_0
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->m()I
 
     .line 14
     .line 15
@@ -562,7 +562,7 @@
     move-result v2
 
     .line 21
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->S()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->W()Z
 
     .line 22
     .line 23
@@ -690,7 +690,7 @@
     .locals 10
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->D()J
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->O()J
 
     .line 2
     .line 3
@@ -879,7 +879,7 @@
     .locals 3
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -910,7 +910,7 @@
 
     .line 17
     :cond_0
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->m()I
 
     .line 18
     .line 19
@@ -1047,11 +1047,11 @@
 .method public final c0(J)V
     .locals 1
 
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->m()I
 
     move-result v0
 
-    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->g(IJ)V
+    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
 
     return-void
 .end method
@@ -1059,7 +1059,7 @@
 .method public final hasNext()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->K()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->T()I
 
     move-result v0
 
@@ -1081,7 +1081,7 @@
 .method public final hasPrevious()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->B()I
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->M()I
 
     move-result v0
 
@@ -1100,11 +1100,11 @@
     return v0
 .end method
 
-.method public final m()Z
+.method public final i()Z
     .locals 3
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->Q()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -1124,7 +1124,7 @@
 
     .line 10
     .line 11
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->u()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->m()I
 
     .line 12
     .line 13

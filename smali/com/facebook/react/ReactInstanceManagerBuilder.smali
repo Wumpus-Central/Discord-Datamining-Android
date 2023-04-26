@@ -1776,7 +1776,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setCurrentActivity(Landroid/app/Activity;)Lcom/facebook/react/ReactInstanceManagerBuilder;
@@ -1941,7 +1940,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setJSBundleLoader(Lcom/facebook/react/bridge/JSBundleLoader;)Lcom/facebook/react/ReactInstanceManagerBuilder;
@@ -2029,7 +2027,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setJSExceptionHandler(Lcom/facebook/react/bridge/JSExceptionHandler;)Lcom/facebook/react/ReactInstanceManagerBuilder;
@@ -2157,7 +2154,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setLazyViewManagersEnabled(Z)Lcom/facebook/react/ReactInstanceManagerBuilder;

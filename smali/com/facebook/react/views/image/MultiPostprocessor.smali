@@ -996,7 +996,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v2}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {v2}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -1024,12 +1024,12 @@
     move-result-object v0
 
     .line 35
-    invoke-static {v2}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v2}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     .line 39
     .line 40
@@ -1041,7 +1041,7 @@
 
     .line 43
     :cond_1
-    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->p()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {v0}, Lcom/facebook/common/references/CloseableReference;->l()Lcom/facebook/common/references/CloseableReference;
 
     .line 44
     .line 45
@@ -1051,7 +1051,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 47
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 48
     .line 49
@@ -1063,7 +1063,7 @@
     move-exception p1
 
     .line 52
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 53
     .line 54

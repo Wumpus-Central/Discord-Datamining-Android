@@ -180,7 +180,7 @@
 
     .line 17
     .line 18
-    invoke-interface {p1}, Lkotlinx/coroutines/Job;->i()Z
+    invoke-interface {p1}, Lkotlinx/coroutines/Job;->g()Z
 
     .line 19
     .line 20

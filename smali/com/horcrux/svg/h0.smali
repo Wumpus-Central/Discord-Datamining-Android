@@ -66,42 +66,51 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 
 # virtual methods
-.method draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+.method public B(Ljava/lang/String;)V
     .locals 0
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/horcrux/svg/l;->a(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/p0;->valueOf(Ljava/lang/String;)Lcom/horcrux/svg/p0;
 
-    return-void
-.end method
-
-.method f()V
-    .locals 0
-
-    return-void
-.end method
-
-.method g()V
-    .locals 0
-
-    return-void
-.end method
-
-.method getPath(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
-    .locals 0
-
-    invoke-virtual {p0, p1, p2}, Lcom/horcrux/svg/t0;->l(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
-
+    .line 2
+    .line 3
+    .line 4
     move-result-object p1
 
-    return-object p1
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/h0;->B:Lcom/horcrux/svg/p0;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/t0;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
 .end method
 
-.method p()Lcom/horcrux/svg/q0;
+.method M()Lcom/horcrux/svg/q0;
     .locals 1
 
     iget-object v0, p0, Lcom/horcrux/svg/h0;->z:Lcom/horcrux/svg/q0;
@@ -109,7 +118,7 @@
     return-object v0
 .end method
 
-.method q()Lcom/horcrux/svg/r0;
+.method N()Lcom/horcrux/svg/r0;
     .locals 1
 
     iget-object v0, p0, Lcom/horcrux/svg/h0;->y:Lcom/horcrux/svg/r0;
@@ -117,7 +126,7 @@
     return-object v0
 .end method
 
-.method r()Lcom/horcrux/svg/SVGLength;
+.method O()Lcom/horcrux/svg/SVGLength;
     .locals 1
 
     iget-object v0, p0, Lcom/horcrux/svg/h0;->A:Lcom/horcrux/svg/SVGLength;
@@ -125,7 +134,7 @@
     return-object v0
 .end method
 
-.method s(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
+.method P(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
     .locals 2
 
     .line 1
@@ -201,15 +210,10 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
-.method public setHref(Ljava/lang/String;)V
+.method public Q(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "href"
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/horcrux/svg/h0;->x:Ljava/lang/String;
@@ -242,58 +246,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setMethod(Ljava/lang/String;)V
+.method public R(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "method"
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/p0;->valueOf(Ljava/lang/String;)Lcom/horcrux/svg/p0;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    iput-object p1, p0, Lcom/horcrux/svg/h0;->B:Lcom/horcrux/svg/p0;
-
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Lcom/horcrux/svg/t0;->invalidate()V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-.end method
-
-.method public setSharp(Ljava/lang/String;)V
-    .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "midLine"
-    .end annotation
 
     .line 1
     invoke-static {p1}, Lcom/horcrux/svg/q0;->valueOf(Ljava/lang/String;)Lcom/horcrux/svg/q0;
@@ -330,14 +286,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setSide(Ljava/lang/String;)V
+.method public S(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "side"
-    .end annotation
 
     .line 1
     invoke-static {p1}, Lcom/horcrux/svg/r0;->valueOf(Ljava/lang/String;)Lcom/horcrux/svg/r0;
@@ -374,14 +326,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setSpacing(Ljava/lang/String;)V
+.method public T(Ljava/lang/String;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "spacing"
-    .end annotation
 
     .line 1
     invoke-static {p1}, Lcom/horcrux/svg/s0;->valueOf(Ljava/lang/String;)Lcom/horcrux/svg/s0;
@@ -418,17 +366,13 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
-.method public setStartOffset(Lcom/facebook/react/bridge/Dynamic;)V
+.method public U(Lcom/facebook/react/bridge/Dynamic;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "startOffset"
-    .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
 
     .line 2
     .line 3
@@ -462,5 +406,114 @@
     .line 24
     .line 25
     .line 26
-    .line 27
+.end method
+
+.method public V(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/h0;->A:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/t0;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public W(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lcom/horcrux/svg/h0;->A:Lcom/horcrux/svg/SVGLength;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/horcrux/svg/t0;->invalidate()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/horcrux/svg/l;->a(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+
+    return-void
+.end method
+
+.method f()V
+    .locals 0
+
+    return-void
+.end method
+
+.method g()V
+    .locals 0
+
+    return-void
+.end method
+
+.method getPath(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lcom/horcrux/svg/t0;->m(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
+
+    move-result-object p1
+
+    return-object p1
 .end method

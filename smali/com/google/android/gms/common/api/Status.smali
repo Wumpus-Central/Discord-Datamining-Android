@@ -207,7 +207,7 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p1}, Lt9/a;->G()Landroid/app/PendingIntent;
+    invoke-virtual {p1}, Lt9/a;->D()Landroid/app/PendingIntent;
 
     move-result-object v4
 
@@ -227,7 +227,7 @@
 
 
 # virtual methods
-.method public G()Ljava/lang/String;
+.method public D()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->m:Ljava/lang/String;
@@ -235,7 +235,7 @@
     return-object v0
 .end method
 
-.method public H()Z
+.method public E()Z
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->n:Landroid/app/PendingIntent;
@@ -252,7 +252,7 @@
     return v0
 .end method
 
-.method public I()Z
+.method public J()Z
     .locals 1
 
     iget v0, p0, Lcom/google/android/gms/common/api/Status;->l:I
@@ -269,11 +269,11 @@
     return v0
 .end method
 
-.method public K(Landroid/app/Activity;I)V
+.method public L(Landroid/app/Activity;I)V
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->H()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->E()Z
 
     .line 2
     .line 3
@@ -1047,14 +1047,6 @@
     .line 126
 .end method
 
-.method public v()Lt9/a;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->o:Lt9/a;
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -1070,7 +1062,7 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->z()I
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->y()I
 
     .line 7
     .line 8
@@ -1083,7 +1075,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->G()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->D()Ljava/lang/String;
 
     .line 14
     .line 15
@@ -1117,7 +1109,7 @@
     const/4 v1, 0x4
 
     .line 29
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->v()Lt9/a;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Status;->x()Lt9/a;
 
     .line 30
     .line 31
@@ -1318,7 +1310,15 @@
     .line 213
 .end method
 
-.method public z()I
+.method public x()Lt9/a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->o:Lt9/a;
+
+    return-object v0
+.end method
+
+.method public y()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/gms/common/api/Status;->l:I

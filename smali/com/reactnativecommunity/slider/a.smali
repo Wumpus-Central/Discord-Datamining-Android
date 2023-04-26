@@ -266,7 +266,6 @@
     .line 26
     :goto_0
     return-object p1
-    .line 27
 .end method
 
 .method private disableStateListAnimatorIfNeeded()V
@@ -307,7 +306,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private getStepValue()D
@@ -483,9 +481,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private updateValue()V
@@ -676,9 +671,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method b(Z)V
@@ -820,9 +812,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method setAccessibilityIncrements(Ljava/util/List;)V
@@ -883,7 +872,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method setMinValue(D)V
@@ -920,7 +908,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method setStep(D)V
@@ -957,7 +944,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setThumbImage(Ljava/lang/String;)V
@@ -1012,7 +998,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method setValue(D)V
@@ -1049,7 +1034,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setupAccessibility(I)V
@@ -1215,9 +1199,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public toRealProgress(I)D
@@ -1273,5 +1254,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

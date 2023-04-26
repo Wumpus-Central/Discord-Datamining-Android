@@ -445,7 +445,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static applyCustomBuilder(Lokhttp3/OkHttpClient$Builder;)V
@@ -534,7 +533,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private declared-synchronized cancelAllRequests()V
@@ -748,7 +746,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private constructMultipartBody(Lcom/facebook/react/bridge/ReadableArray;Ljava/lang/String;I)Lokhttp3/MultipartBody$Builder;
@@ -877,7 +874,7 @@
     move-result-object v7
 
     .line 61
-    invoke-virtual {v4}, Lokhttp3/Headers;->h()Lokhttp3/Headers$a;
+    invoke-virtual {v4}, Lokhttp3/Headers;->g()Lokhttp3/Headers$a;
 
     .line 62
     .line 63
@@ -1671,7 +1668,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private readWithProgress(Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;ILokhttp3/ResponseBody;)V
@@ -2237,7 +2233,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static setCustomClientBuilder(Lcom/facebook/react/modules/network/NetworkingModule$CustomClientBuilder;)V
@@ -2299,7 +2294,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p0, v1}, Lokhttp3/Headers;->f(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lokhttp3/Headers;->e(I)Ljava/lang/String;
 
     .line 14
     .line 15
@@ -2350,7 +2345,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p0, v1}, Lokhttp3/Headers;->n(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lokhttp3/Headers;->p(I)Ljava/lang/String;
 
     .line 41
     .line 42
@@ -2380,7 +2375,7 @@
 
     .line 55
     :cond_0
-    invoke-virtual {p0, v1}, Lokhttp3/Headers;->n(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lokhttp3/Headers;->p(I)Ljava/lang/String;
 
     .line 56
     .line 57
@@ -2417,7 +2412,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private wrapRequestBodyWithProgressEmitter(Lokhttp3/RequestBody;Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;I)Lokhttp3/RequestBody;
@@ -2528,7 +2522,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public addListener(Ljava/lang/String;)V
@@ -3122,7 +3115,7 @@
     :cond_4
     iget-object v10, v7, Lcom/facebook/react/modules/network/NetworkingModule;->mClient:Lokhttp3/OkHttpClient;
 
-    invoke-virtual {v10}, Lokhttp3/OkHttpClient;->n()I
+    invoke-virtual {v10}, Lokhttp3/OkHttpClient;->m()I
 
     move-result v10
 
@@ -3525,7 +3518,7 @@
     invoke-direct/range {v1 .. v6}, Lcom/facebook/react/modules/network/NetworkingModule$2;-><init>(Lcom/facebook/react/modules/network/NetworkingModule;ILcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;Ljava/lang/String;Z)V
 
     .line 59
-    invoke-interface {v0, v8}, Lokhttp3/Call;->i(Loj/d;)V
+    invoke-interface {v0, v8}, Lokhttp3/Call;->g(Loj/d;)V
 
     return-void
 

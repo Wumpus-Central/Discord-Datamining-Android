@@ -140,9 +140,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method static synthetic access$000(Lcom/shopify/reactnative/skia/PlatformContext;)Z
@@ -243,7 +240,6 @@
 
     .line 26
     return-object p1
-    .line 27
 .end method
 
 .method private native initHybrid(F)Lcom/facebook/jni/HybridData;
@@ -292,7 +288,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 
@@ -422,9 +417,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public endDrawLoop()V
@@ -465,7 +457,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected finalize()V
@@ -501,7 +492,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public getJniStreamFromSource(Ljava/lang/String;)[B
@@ -982,30 +972,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method onPause()V
@@ -1045,7 +1011,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method onResume()V
@@ -1175,9 +1140,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public raise(Ljava/lang/String;)V

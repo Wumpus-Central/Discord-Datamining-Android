@@ -178,7 +178,7 @@
 
     invoke-direct {v0, v1}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->C(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->G(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;
 
     move-result-object p1
 

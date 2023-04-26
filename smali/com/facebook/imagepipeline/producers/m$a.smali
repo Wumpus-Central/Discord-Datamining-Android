@@ -630,7 +630,7 @@
 .method protected w(Lu5/e;)I
     .locals 0
 
-    invoke-virtual {p1}, Lu5/e;->T()I
+    invoke-virtual {p1}, Lu5/e;->R()I
 
     move-result p1
 

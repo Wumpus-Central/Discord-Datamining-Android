@@ -226,14 +226,6 @@
     return-object v0
 .end method
 
-.method public v()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->l:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
@@ -258,7 +250,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->v()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
 
     .line 12
     .line 13
@@ -473,4 +465,12 @@
     .line 211
     .line 212
     .line 213
+.end method
+
+.method public x()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->l:Ljava/lang/String;
+
+    return-object v0
 .end method

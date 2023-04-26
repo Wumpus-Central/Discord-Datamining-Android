@@ -347,7 +347,7 @@
     .line 296
 .end method
 
-.method static synthetic i(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
+.method static synthetic h(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
     .locals 0
 
     iget-object p0, p0, Lcom/facebook/soloader/j$c;->k:[Lcom/facebook/soloader/j$b;
@@ -355,7 +355,7 @@
     return-object p0
 .end method
 
-.method static synthetic k(Lcom/facebook/soloader/j$c;)Ljava/util/zip/ZipFile;
+.method static synthetic i(Lcom/facebook/soloader/j$c;)Ljava/util/zip/ZipFile;
     .locals 0
 
     iget-object p0, p0, Lcom/facebook/soloader/j$c;->l:Ljava/util/zip/ZipFile;
@@ -389,7 +389,7 @@
     return-void
 .end method
 
-.method public final f()Lcom/facebook/soloader/r$e;
+.method public final g()Lcom/facebook/soloader/r$e;
     .locals 2
 
     new-instance v0, Lcom/facebook/soloader/j$c$a;
@@ -578,7 +578,7 @@
 
     iget-object v4, v4, Lcom/facebook/soloader/r$b;->k:Ljava/lang/String;
 
-    invoke-virtual {p0, v5, v4}, Lcom/facebook/soloader/j$c;->p(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
+    invoke-virtual {p0, v5, v4}, Lcom/facebook/soloader/j$c;->n(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -639,7 +639,7 @@
     return-object v0
 .end method
 
-.method protected p(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
+.method protected n(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z
     .locals 0
 
     const/4 p0, 0x0

@@ -125,7 +125,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private dispatchCancelEvent(Landroid/view/MotionEvent;Lcom/facebook/react/uimanager/events/EventDispatcher;)V
@@ -457,7 +456,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 

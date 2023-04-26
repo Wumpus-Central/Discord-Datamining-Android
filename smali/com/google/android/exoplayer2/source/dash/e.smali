@@ -1113,7 +1113,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/source/dash/e$b;->a()V
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/source/dash/e$b;->b()V
 
     .line 15
     .line 16
@@ -1237,7 +1237,7 @@
 
     iget-wide v1, p0, Lcom/google/android/exoplayer2/source/dash/e;->q:J
 
-    invoke-interface {v0, v1, v2}, Lcom/google/android/exoplayer2/source/dash/e$b;->b(J)V
+    invoke-interface {v0, v1, v2}, Lcom/google/android/exoplayer2/source/dash/e$b;->a(J)V
 
     return-void
 .end method

@@ -260,7 +260,7 @@
     move-result v2
 
     .line 13
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->q()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->B()I
 
     .line 14
     .line 15
@@ -298,7 +298,7 @@
     move-result v1
 
     .line 31
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->s()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->i()I
 
     .line 32
     .line 33
@@ -336,7 +336,7 @@
     move-result p3
 
     .line 49
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->D()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->H()I
 
     .line 50
     .line 51
@@ -374,7 +374,7 @@
     move-result p1
 
     .line 67
-    invoke-interface {v0}, Lcom/google/android/flexbox/b;->p()I
+    invoke-interface {v0}, Lcom/google/android/flexbox/b;->A()I
 
     .line 68
     .line 69

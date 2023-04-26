@@ -2306,7 +2306,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0}, Lcom/facebook/soloader/k;->f(Ljava/io/File;)Lcom/facebook/soloader/k;
+    invoke-static {p0}, Lcom/facebook/soloader/k;->g(Ljava/io/File;)Lcom/facebook/soloader/k;
 
     .line 4
     .line 5
@@ -2318,7 +2318,7 @@
 
     .line 8
     :cond_0
-    invoke-static {p0}, Lcom/facebook/soloader/k;->i(Ljava/io/File;)Lcom/facebook/soloader/k;
+    invoke-static {p0}, Lcom/facebook/soloader/k;->h(Ljava/io/File;)Lcom/facebook/soloader/k;
 
     .line 9
     .line 10

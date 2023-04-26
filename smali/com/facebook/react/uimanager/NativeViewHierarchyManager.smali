@@ -1730,7 +1730,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getReactContextForView(I)Lcom/facebook/react/uimanager/ThemedReactContext;
@@ -1849,7 +1848,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private mapRectFromViewToWindowCoords(Landroid/view/View;Landroid/graphics/RectF;)V
@@ -5162,7 +5160,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized manageChildren(I[I[Lcom/facebook/react/uimanager/ViewAtIndex;[I)V
@@ -6918,7 +6915,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final declared-synchronized resolveView(I)Landroid/view/View;
@@ -7052,7 +7048,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final declared-synchronized resolveViewManager(I)Lcom/facebook/react/uimanager/ViewManager;
@@ -7186,7 +7181,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public sendAccessibilityEvent(II)V

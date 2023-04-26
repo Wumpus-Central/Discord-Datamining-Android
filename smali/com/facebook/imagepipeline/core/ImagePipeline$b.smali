@@ -52,7 +52,7 @@
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipeline$b;->a:Landroid/net/Uri;
 
-    invoke-interface {p1, v0}, Lcom/facebook/cache/common/CacheKey;->a(Landroid/net/Uri;)Z
+    invoke-interface {p1, v0}, Lcom/facebook/cache/common/CacheKey;->b(Landroid/net/Uri;)Z
 
     move-result p1
 

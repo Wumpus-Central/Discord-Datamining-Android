@@ -106,7 +106,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, p2}, Lqi/a;->o(J)J
+    invoke-static {p1, p2}, Lqi/a;->m(J)J
 
     .line 6
     .line 7
@@ -114,7 +114,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {p1, p2}, Lqi/a;->s(J)I
+    invoke-static {p1, p2}, Lqi/a;->r(J)I
 
     .line 10
     .line 11
@@ -130,7 +130,7 @@
     move-result v4
 
     .line 17
-    invoke-static {p1, p2}, Lqi/a;->t(J)I
+    invoke-static {p1, p2}, Lqi/a;->s(J)I
 
     .line 18
     .line 19

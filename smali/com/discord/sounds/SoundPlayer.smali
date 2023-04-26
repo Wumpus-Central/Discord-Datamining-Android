@@ -316,7 +316,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static final initializeMediaPlayer$lambda$0(Lcom/discord/sounds/SoundPlayer;Landroid/media/MediaPlayer;)V
@@ -1122,7 +1121,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setNumberOfLoops(I)V
@@ -1280,7 +1278,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final setVolume(F)V
@@ -1392,7 +1389,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public final stop()V

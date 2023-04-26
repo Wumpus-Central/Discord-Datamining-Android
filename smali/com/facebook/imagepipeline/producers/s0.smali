@@ -69,7 +69,7 @@
 
     .line 11
     .line 12
-    invoke-interface {p2, p3, p4}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {p2, p3, p4}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -597,7 +597,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 8
     .line 9
@@ -625,7 +625,7 @@
 
     .line 19
     :goto_0
-    invoke-interface {v0, v1, v2, v3}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-interface {v0, v1, v2, v3}, Lcom/facebook/imagepipeline/producers/n0;->c(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 20
     .line 21
@@ -697,7 +697,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 8
     .line 9
@@ -788,7 +788,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected f(Ljava/lang/Object;)V
@@ -812,7 +811,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 8
     .line 9
@@ -852,7 +851,7 @@
     const/4 v1, 0x1
 
     .line 25
-    invoke-interface {v0, p1, v1}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, v1}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 26
     .line 27
@@ -905,7 +904,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected g()Ljava/util/Map;

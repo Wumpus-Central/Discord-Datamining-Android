@@ -20,7 +20,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p1}, Lcom/discord/reactions/ReactionsView;->a(Landroid/view/View;)V
+    invoke-static {p1}, Lcom/discord/reactions/ReactionsView;->b(Landroid/view/View;)V
 
     return-void
 .end method

@@ -84,7 +84,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p2}, Lcom/google/android/material/datepicker/d;->B()Ljava/util/Collection;
+    invoke-interface {p2}, Lcom/google/android/material/datepicker/d;->G()Ljava/util/Collection;
 
     .line 11
     .line 12
@@ -253,7 +253,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private h(J)Z
@@ -264,7 +263,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->B()Ljava/util/Collection;
+    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->G()Ljava/util/Collection;
 
     .line 4
     .line 5
@@ -393,9 +392,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private k(Landroid/widget/TextView;J)V
@@ -414,7 +410,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->h()Lcom/google/android/material/datepicker/a$c;
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/a;->q()Lcom/google/android/material/datepicker/a$c;
 
     .line 7
     .line 8
@@ -422,7 +418,7 @@
     move-result-object v0
 
     .line 10
-    invoke-interface {v0, p2, p3}, Lcom/google/android/material/datepicker/a$c;->x(J)Z
+    invoke-interface {v0, p2, p3}, Lcom/google/android/material/datepicker/a$c;->m(J)Z
 
     .line 11
     .line 12
@@ -665,21 +661,13 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private l(Lcom/google/android/material/datepicker/MaterialCalendarGridView;J)V
     .locals 2
 
     .line 1
-    invoke-static {p2, p3}, Lcom/google/android/material/datepicker/l;->f(J)Lcom/google/android/material/datepicker/l;
+    invoke-static {p2, p3}, Lcom/google/android/material/datepicker/l;->e(J)Lcom/google/android/material/datepicker/l;
 
     .line 2
     .line 3
@@ -707,7 +695,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v0, p2, p3}, Lcom/google/android/material/datepicker/l;->v(J)I
+    invoke-virtual {v0, p2, p3}, Lcom/google/android/material/datepicker/l;->x(J)I
 
     .line 16
     .line 17
@@ -767,8 +755,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 
@@ -792,7 +778,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/datepicker/m;->k:Lcom/google/android/material/datepicker/l;
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->i()I
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->q()I
 
     move-result v0
 
@@ -807,7 +793,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->i()I
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->q()I
 
     .line 4
     .line 5
@@ -847,7 +833,7 @@
     move-result p1
 
     .line 22
-    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/l;->n(I)J
+    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/l;->r(I)J
 
     .line 23
     .line 24
@@ -927,9 +913,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public d(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/widget/TextView;
@@ -1099,7 +1082,7 @@
 
     .line 79
     .line 80
-    invoke-virtual {p3, p2}, Lcom/google/android/material/datepicker/l;->n(I)J
+    invoke-virtual {p3, p2}, Lcom/google/android/material/datepicker/l;->r(I)J
 
     .line 81
     .line 82
@@ -1884,7 +1867,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/datepicker/m;->k:Lcom/google/android/material/datepicker/l;
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->i()I
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->q()I
 
     move-result v0
 
@@ -1904,7 +1887,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/datepicker/m;->k:Lcom/google/android/material/datepicker/l;
 
-    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->i()I
+    invoke-virtual {v0}, Lcom/google/android/material/datepicker/l;->q()I
 
     move-result v0
 
@@ -1981,7 +1964,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->B()Ljava/util/Collection;
+    invoke-interface {v0}, Lcom/google/android/material/datepicker/d;->G()Ljava/util/Collection;
 
     .line 32
     .line 33
@@ -2043,7 +2026,7 @@
 
     .line 60
     .line 61
-    invoke-interface {p1}, Lcom/google/android/material/datepicker/d;->B()Ljava/util/Collection;
+    invoke-interface {p1}, Lcom/google/android/material/datepicker/d;->G()Ljava/util/Collection;
 
     .line 62
     .line 63
@@ -2077,9 +2060,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method n(I)Z

@@ -166,7 +166,7 @@
     .line 14
     .line 15
     :try_start_0
-    invoke-virtual {v0}, Ld9/m;->f()V
+    invoke-virtual {v0}, Ld9/m;->g()V
 
     .line 16
     .line 17
@@ -313,13 +313,7 @@
     .line 126
 .end method
 
-.method public final b()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public c()J
+.method public b()J
     .locals 2
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/i;->d:Ld9/v;
@@ -329,6 +323,12 @@
     move-result-wide v0
 
     return-wide v0
+.end method
+
+.method public final c()V
+    .locals 0
+
+    return-void
 .end method
 
 .method public d()Ljava/util/Map;

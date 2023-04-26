@@ -157,7 +157,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public constructor <init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
@@ -196,7 +195,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public static final synthetic access$getCameraViewTransactions$cp()Ljava/util/HashMap;
@@ -415,9 +413,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -551,8 +546,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setCameraId(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -634,8 +627,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setColorSpace(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -715,8 +706,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setEnableDepthData(Lcom/mrousavy/camera/CameraView;Z)V
@@ -792,8 +781,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setEnableFrameProcessor(Lcom/mrousavy/camera/CameraView;Z)V
@@ -869,8 +856,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setEnableHighQualityPhotos(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -950,8 +935,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setEnablePortraitEffectsMatteDelivery(Lcom/mrousavy/camera/CameraView;Z)V
@@ -1027,8 +1010,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setEnableZoomGesture(Lcom/mrousavy/camera/CameraView;Z)V
@@ -1104,8 +1085,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setFormat(Lcom/mrousavy/camera/CameraView;Lcom/facebook/react/bridge/ReadableMap;)V
@@ -1185,8 +1164,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setFps(Lcom/mrousavy/camera/CameraView;I)V
@@ -1285,8 +1262,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setFrameProcessorFps(Lcom/mrousavy/camera/CameraView;D)V
@@ -1375,8 +1350,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setHdr(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -1456,8 +1429,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setIsActive(Lcom/mrousavy/camera/CameraView;Z)V
@@ -1533,8 +1504,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setLowLightBoost(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -1614,8 +1583,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setOrientation(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -1697,8 +1664,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setPhoto(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -1778,8 +1743,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setTorch(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -1861,8 +1824,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setVideo(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -1942,8 +1903,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public final setZoom(Lcom/mrousavy/camera/CameraView;D)V
@@ -2033,6 +1992,4 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method

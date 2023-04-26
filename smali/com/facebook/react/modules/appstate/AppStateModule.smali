@@ -139,7 +139,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private createAppStateEventMap()Lcom/facebook/react/bridge/WritableMap;
@@ -1127,7 +1126,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public removeListeners(D)V

@@ -160,7 +160,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private static levelToString(I)Ljava/lang/String;
@@ -315,7 +314,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static w(Lcom/facebook/react/bridge/ReactContext;Ljava/lang/String;)V

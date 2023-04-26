@@ -183,9 +183,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
@@ -240,5 +237,4 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method

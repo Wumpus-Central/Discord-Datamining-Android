@@ -650,7 +650,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected B(Landroid/graphics/Bitmap;)V
@@ -736,7 +735,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected C(Landroid/graphics/Bitmap;)I
@@ -824,7 +822,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected D(Lcom/facebook/imagepipeline/memory/c;)Landroid/graphics/Bitmap;
@@ -928,7 +925,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected E(Landroid/graphics/Bitmap;)Z
@@ -1032,7 +1028,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected bridge synthetic g(I)Ljava/lang/Object;

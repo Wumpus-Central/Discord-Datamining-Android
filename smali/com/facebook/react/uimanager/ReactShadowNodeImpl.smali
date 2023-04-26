@@ -772,7 +772,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private updatePadding()V
@@ -3129,7 +3128,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->h()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->i()Lcom/facebook/yoga/YogaDirection;
 
     move-result-object v0
 
@@ -3183,7 +3182,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->m()F
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->l()F
 
     move-result v0
 
@@ -3195,7 +3194,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->n()F
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->m()F
 
     move-result v0
 
@@ -3207,7 +3206,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->o()F
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->n()F
 
     move-result v0
 
@@ -3625,7 +3624,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->g()Lcom/facebook/yoga/YogaValue;
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->f()Lcom/facebook/yoga/YogaValue;
 
     move-result-object v0
 
@@ -3641,7 +3640,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Lcom/facebook/yoga/YogaNode;->p(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
+    invoke-virtual {v0, p1}, Lcom/facebook/yoga/YogaNode;->o(Lcom/facebook/yoga/e;)Lcom/facebook/yoga/YogaValue;
 
     move-result-object p1
 
@@ -5804,7 +5803,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setJustifyContent(Lcom/facebook/yoga/YogaJustify;)V
@@ -6823,5 +6821,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

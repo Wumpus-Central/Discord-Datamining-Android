@@ -343,7 +343,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public getTransform(Landroid/graphics/Matrix;)V
@@ -434,7 +433,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
@@ -520,7 +518,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setCurrent(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
@@ -608,5 +605,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

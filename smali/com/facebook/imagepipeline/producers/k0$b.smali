@@ -124,7 +124,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-interface {p5, p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->e(Lcom/facebook/imagepipeline/producers/m0;)V
+    invoke-interface {p5, p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->c(Lcom/facebook/imagepipeline/producers/m0;)V
 
     .line 28
     .line 29
@@ -747,7 +747,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private D(Lcom/facebook/common/references/CloseableReference;I)V
@@ -812,7 +811,7 @@
     move-result-object v0
 
     .line 25
-    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->c(Ljava/lang/Object;I)V
+    invoke-interface {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/Consumer;->b(Ljava/lang/Object;I)V
 
     .line 26
     .line 27
@@ -979,7 +978,7 @@
 
     .line 3
     .line 4
-    invoke-virtual {v0}, Lu5/d;->p()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lu5/d;->n()Landroid/graphics/Bitmap;
 
     .line 5
     .line 6
@@ -1011,7 +1010,7 @@
     move-result-object v1
 
     .line 20
-    invoke-virtual {v0}, Lu5/d;->F()I
+    invoke-virtual {v0}, Lu5/d;->C()I
 
     .line 21
     .line 22
@@ -1058,7 +1057,7 @@
     .line 42
     .line 43
     .line 44
-    invoke-static {v4}, Lcom/facebook/common/references/CloseableReference;->g0(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {v4}, Lcom/facebook/common/references/CloseableReference;->S(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 45
     .line 46
@@ -1068,7 +1067,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 48
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 49
     .line 50
@@ -1080,7 +1079,7 @@
     move-exception p1
 
     .line 53
-    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v1}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 54
     .line 55
@@ -1105,7 +1104,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private declared-synchronized G()Z
@@ -1144,7 +1142,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 17
     .line 18
@@ -1286,7 +1284,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->v(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->r(Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     .line 11
     .line 12
@@ -1322,7 +1320,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 26
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 27
     .line 28
@@ -1688,7 +1686,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 18
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 19
     .line 20
@@ -1763,7 +1761,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 2
     .line 3
@@ -1784,7 +1782,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -1829,7 +1827,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->e(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Lcom/facebook/imagepipeline/producers/n0;->d(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)V
 
     .line 35
     .line 36
@@ -1838,7 +1836,7 @@
 
     .line 38
     :try_start_0
-    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->F()Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/facebook/common/references/CloseableReference;->C()Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -1894,7 +1892,7 @@
     .line 62
     .line 63
     .line 64
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 65
     .line 66
@@ -1946,7 +1944,7 @@
     .line 85
     .line 86
     .line 87
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 88
     .line 89
@@ -1955,7 +1953,7 @@
 
     .line 91
     :goto_0
-    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->x(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-static {v0}, Lcom/facebook/common/references/CloseableReference;->t(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 92
     .line 93
@@ -2055,7 +2053,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/n0;->g(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
+    invoke-interface {p1, p2, v0}, Lcom/facebook/imagepipeline/producers/n0;->f(Lcom/facebook/imagepipeline/producers/ProducerContext;Ljava/lang/String;)Z
 
     .line 4
     .line 5
@@ -2447,7 +2445,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->T(Lcom/facebook/common/references/CloseableReference;)Z
+    invoke-static {p1}, Lcom/facebook/common/references/CloseableReference;->R(Lcom/facebook/common/references/CloseableReference;)Z
 
     .line 2
     .line 3

@@ -497,8 +497,6 @@
     .line 47
     :cond_2
     return-object v1
-    .line 48
-    .line 49
 .end method
 
 .method private static c(Landroid/net/Uri;)Z
@@ -541,7 +539,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private static d(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;)Ljava/io/File;

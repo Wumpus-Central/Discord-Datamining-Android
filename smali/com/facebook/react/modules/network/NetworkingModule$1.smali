@@ -92,7 +92,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p1}, Lokhttp3/Response;->T()Lokhttp3/Response$a;
+    invoke-virtual {p1}, Lokhttp3/Response;->R()Lokhttp3/Response$a;
 
     .line 24
     .line 25
@@ -157,5 +157,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

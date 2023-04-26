@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/otaliastudios/zoom/ZoomEngine$a;->f(FZ)V
+    value = Lcom/otaliastudios/zoom/ZoomEngine$a;->d(FZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -113,7 +113,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;

@@ -574,7 +574,6 @@
 
     .line 23
     return-object v0
-    .line 24
 .end method
 
 .method private getBottomInset()I
@@ -668,7 +667,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method static synthetic h0(Lcom/google/android/material/bottomappbar/BottomAppBar;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
@@ -723,7 +721,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private j0()V
@@ -767,7 +764,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private l0(ILjava/util/List;)V
@@ -857,8 +853,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private m0(IZLjava/util/List;)V
@@ -1161,143 +1155,6 @@
 
     .line 28
     .line 29
-    invoke-interface {v1, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$g;->b(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
-
-    .line 30
-    .line 31
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_0
-    return-void
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-.end method
-
-.method private o0()V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
-
-    .line 2
-    .line 3
-    add-int/lit8 v1, v0, 0x1
-
-    .line 4
-    .line 5
-    iput v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
-
-    .line 6
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Ljava/util/ArrayList;
-
-    .line 10
-    .line 11
-    if-eqz v0, :cond_0
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-eqz v1, :cond_0
-
-    .line 22
-    .line 23
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    check-cast v1, Lcom/google/android/material/bottomappbar/BottomAppBar$g;
-
-    .line 28
-    .line 29
     invoke-interface {v1, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$g;->a(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
     .line 30
@@ -1369,9 +1226,140 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
+.end method
+
+.method private o0()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
+
+    .line 2
+    .line 3
+    add-int/lit8 v1, v0, 0x1
+
+    .line 4
+    .line 5
+    iput v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:I
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Ljava/util/ArrayList;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-eqz v1, :cond_0
+
+    .line 22
+    .line 23
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    check-cast v1, Lcom/google/android/material/bottomappbar/BottomAppBar$g;
+
+    .line 28
+    .line 29
+    invoke-interface {v1, p0}, Lcom/google/android/material/bottomappbar/BottomAppBar$g;->b(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
+
+    .line 30
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    return-void
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
 .end method
 
 .method private p0()Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
@@ -1417,7 +1405,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private q0()Landroid/view/View;
@@ -1570,9 +1557,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private s0(I)F
@@ -1710,9 +1694,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private t0()Z
@@ -1762,7 +1743,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method private u0(IZ)V
@@ -2020,14 +2000,6 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method
 
 .method private v0(I)V
@@ -2179,9 +2151,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private w0(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
@@ -2237,7 +2206,6 @@
     return-object p1
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private y0()V
@@ -2373,9 +2341,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private z0()V
@@ -2527,9 +2492,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -2599,8 +2561,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method B0(I)Z
@@ -2642,7 +2602,7 @@
     move-result-object v0
 
     .line 18
-    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->p(F)V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->o(F)V
 
     .line 19
     .line 20
@@ -2725,9 +2685,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public getBackgroundTint()Landroid/content/res/ColorStateList;
@@ -2812,7 +2769,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->g()F
+    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->f()F
 
     move-result v0
 
@@ -2826,7 +2783,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->h()F
+    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->i()F
 
     move-result v0
 
@@ -2925,8 +2882,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method protected onAttachedToWindow()V
@@ -3052,9 +3007,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method protected onLayout(ZIIII)V
@@ -3679,7 +3631,6 @@
     .line 25
     .line 26
     return-void
-    .line 27
 .end method
 
 .method protected onSaveInstanceState()Landroid/os/Parcelable;
@@ -3725,7 +3676,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method protected r0(Landroidx/appcompat/widget/ActionMenuView;IZ)I
@@ -4060,7 +4010,6 @@
     return-void
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setElevation(F)V
@@ -4117,7 +4066,6 @@
     .line 25
     .line 26
     return-void
-    .line 27
 .end method
 
 .method public setFabAlignmentMode(I)V
@@ -4174,7 +4122,7 @@
     move-result-object v0
 
     .line 17
-    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->m(F)V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->l(F)V
 
     .line 18
     .line 19
@@ -4191,7 +4139,6 @@
     :cond_0
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public setFabCradleMargin(F)V
@@ -4199,6 +4146,57 @@
 
     .line 1
     invoke-virtual {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getFabCradleMargin()F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    cmpl-float v0, p1, v0
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getTopEdgeTreatment()Lcom/google/android/material/bottomappbar/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->m(F)V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+
+    .line 17
+    .line 18
+    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+
+    .line 19
+    .line 20
+    .line 21
+    :cond_0
+    return-void
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+.method public setFabCradleRoundedCornerRadius(F)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getFabCradleRoundedCornerRadius()F
 
     .line 2
     .line 3
@@ -4243,59 +4241,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
-.end method
-
-.method public setFabCradleRoundedCornerRadius(F)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getFabCradleRoundedCornerRadius()F
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    cmpl-float v0, p1, v0
-
-    .line 6
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    invoke-direct {p0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->getTopEdgeTreatment()Lcom/google/android/material/bottomappbar/a;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/a;->o(F)V
-
-    .line 14
-    .line 15
-    .line 16
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
-
-    .line 17
-    .line 18
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_0
-    return-void
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
 .end method
 
 .method public setHideOnScroll(Z)V
@@ -4363,7 +4308,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
@@ -4423,5 +4367,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

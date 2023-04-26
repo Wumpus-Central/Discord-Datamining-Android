@@ -358,7 +358,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v0, p1}, Lcom/yalantis/ucrop/view/b$b;->c(Ljava/lang/Exception;)V
+    invoke-interface {v0, p1}, Lcom/yalantis/ucrop/view/b$b;->b(Ljava/lang/Exception;)V
 
     .line 15
     .line 16
@@ -374,5 +374,4 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method

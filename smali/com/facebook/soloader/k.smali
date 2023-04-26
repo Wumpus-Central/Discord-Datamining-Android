@@ -679,7 +679,7 @@
     .line 296
 .end method
 
-.method public static f(Ljava/io/File;)Lcom/facebook/soloader/k;
+.method public static g(Ljava/io/File;)Lcom/facebook/soloader/k;
     .locals 2
 
     new-instance v0, Lcom/facebook/soloader/k;
@@ -691,7 +691,7 @@
     return-object v0
 .end method
 
-.method public static i(Ljava/io/File;)Lcom/facebook/soloader/k;
+.method public static h(Ljava/io/File;)Lcom/facebook/soloader/k;
     .locals 2
 
     .line 1

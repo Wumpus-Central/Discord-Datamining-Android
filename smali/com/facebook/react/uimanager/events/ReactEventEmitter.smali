@@ -116,7 +116,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private getEventEmitter(I)Lcom/facebook/react/uimanager/events/RCTEventEmitter;
@@ -265,7 +264,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -692,5 +690,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

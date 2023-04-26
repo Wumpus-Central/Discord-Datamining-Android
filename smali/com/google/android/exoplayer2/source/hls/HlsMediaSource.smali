@@ -1115,7 +1115,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v0, v1, p1, p0}, Ln8/k;->c(Landroid/net/Uri;Lh8/b0$a;Ln8/k$e;)V
+    invoke-interface {v0, v1, p1, p0}, Ln8/k;->a(Landroid/net/Uri;Lh8/b0$a;Ln8/k$e;)V
 
     .line 20
     .line 21
@@ -1348,7 +1348,7 @@
     .line 126
 .end method
 
-.method public f(Lh8/u$a;Ld9/b;J)Lh8/r;
+.method public c(Lh8/u$a;Ld9/b;J)Lh8/r;
     .locals 16
 
     .line 1
@@ -1364,7 +1364,7 @@
     move-result-object v9
 
     .line 7
-    invoke-virtual/range {p0 .. p1}, Lh8/a;->s(Lh8/u$a;)Lj7/v$a;
+    invoke-virtual/range {p0 .. p1}, Lh8/a;->t(Lh8/u$a;)Lj7/v$a;
 
     .line 8
     .line 9
@@ -1776,7 +1776,7 @@
     .line 384
 .end method
 
-.method public h()Lcom/google/android/exoplayer2/MediaItem;
+.method public d()Lcom/google/android/exoplayer2/MediaItem;
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/hls/HlsMediaSource;->B:Lcom/google/android/exoplayer2/MediaItem;
@@ -1784,7 +1784,7 @@
     return-object v0
 .end method
 
-.method public i(Ln8/g;)V
+.method public e(Ln8/g;)V
     .locals 27
 
     .line 1
@@ -1880,7 +1880,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v5}, Ln8/k;->g()Ln8/f;
+    invoke-interface {v5}, Ln8/k;->d()Ln8/f;
 
     .line 42
     .line 43
@@ -1909,7 +1909,7 @@
 
     .line 55
     .line 56
-    invoke-interface {v5}, Ln8/k;->f()Z
+    invoke-interface {v5}, Ln8/k;->k()Z
 
     .line 57
     .line 58
@@ -2003,7 +2003,7 @@
 
     .line 101
     .line 102
-    invoke-interface {v7}, Ln8/k;->e()J
+    invoke-interface {v7}, Ln8/k;->c()J
 
     .line 103
     .line 104
@@ -2869,17 +2869,17 @@
     .line 840
 .end method
 
-.method public j()V
+.method public l()V
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/hls/HlsMediaSource;->z:Ln8/k;
 
-    invoke-interface {v0}, Ln8/k;->h()V
+    invoke-interface {v0}, Ln8/k;->l()V
 
     return-void
 .end method
 
-.method public q(Lh8/r;)V
+.method public r(Lh8/r;)V
     .locals 0
 
     check-cast p1, Lm8/k;

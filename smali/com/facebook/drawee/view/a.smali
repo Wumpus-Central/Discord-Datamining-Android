@@ -2097,7 +2097,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
@@ -2367,7 +2366,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setController(Lcom/facebook/drawee/interfaces/DraweeController;)V
@@ -2461,7 +2459,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setHierarchy(Lcom/facebook/drawee/interfaces/DraweeHierarchy;)V
@@ -2560,7 +2557,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
@@ -2658,7 +2654,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -2756,7 +2751,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setImageResource(I)V
@@ -2854,7 +2848,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setImageURI(Landroid/net/Uri;)V
@@ -2952,7 +2945,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public setLegacyVisibilityHandlingEnabled(Z)V

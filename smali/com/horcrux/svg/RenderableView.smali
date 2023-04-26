@@ -131,7 +131,6 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method constructor <init>(Lcom/facebook/react/bridge/ReactContext;)V
@@ -269,9 +268,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private getAttributeList()Ljava/util/ArrayList;
@@ -2083,6 +2079,52 @@
     .line 691
 .end method
 
+.method public getHitSlopRect()Landroid/graphics/Rect;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/horcrux/svg/VirtualView;->mPointerEvents:Lcom/facebook/react/uimanager/PointerEvents;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/facebook/react/uimanager/PointerEvents;->BOX_NONE:Lcom/facebook/react/uimanager/PointerEvents;
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Landroid/graphics/Rect;
+
+    .line 8
+    .line 9
+    const/high16 v1, -0x80000000
+
+    .line 10
+    .line 11
+    invoke-direct {v0, v1, v1, v1, v1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v0
+
+    .line 15
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 16
+    return-object v0
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
 .method abstract getPath(Landroid/graphics/Canvas;Landroid/graphics/Paint;)Landroid/graphics/Path;
 .end method
 
@@ -2187,8 +2229,6 @@
     .line 46
     return-object v0
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method hitTest([F)I
@@ -2644,30 +2684,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method initBounds()V
@@ -3272,39 +3288,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method mergeProperties(Lcom/horcrux/svg/RenderableView;)V
@@ -3755,30 +3738,6 @@
     .line 332
     .line 333
     .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
 .end method
 
 .method render(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
@@ -3988,350 +3947,354 @@
     double-to-float v3, v3
 
     .line 100
-    invoke-virtual {v5, v6, v7, v8, v3}, Landroid/graphics/Canvas;->clipRect(FFFF)Z
+    add-float/2addr v8, v6
 
     .line 101
-    .line 102
-    .line 103
-    new-instance v3, Landroid/graphics/Paint;
+    add-float/2addr v3, v7
 
+    .line 102
+    invoke-virtual {v5, v6, v7, v8, v3}, Landroid/graphics/Canvas;->clipRect(FFFF)Z
+
+    .line 103
     .line 104
     .line 105
-    const/4 v4, 0x1
+    new-instance v3, Landroid/graphics/Paint;
 
     .line 106
+    .line 107
+    const/4 v4, 0x1
+
+    .line 108
     invoke-direct {v3, v4}, Landroid/graphics/Paint;-><init>(I)V
 
-    .line 107
-    .line 108
     .line 109
-    const/high16 v4, 0x3f800000    # 1.0f
-
     .line 110
     .line 111
-    invoke-virtual {v2, v5, v3, v4}, Lcom/horcrux/svg/l;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+    const/high16 v4, 0x3f800000    # 1.0f
 
     .line 112
     .line 113
-    .line 114
-    mul-int v4, v16, v13
+    invoke-virtual {v2, v5, v3, v4}, Lcom/horcrux/svg/l;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
 
+    .line 114
     .line 115
     .line 116
-    new-array v2, v4, [I
+    mul-int v4, v16, v13
 
     .line 117
     .line 118
-    const/4 v7, 0x0
+    new-array v2, v4, [I
 
     .line 119
-    const/4 v9, 0x0
-
     .line 120
-    const/16 v17, 0x0
+    const/4 v7, 0x0
 
     .line 121
+    const/4 v9, 0x0
+
     .line 122
-    move-object v5, v14
+    const/16 v17, 0x0
 
     .line 123
-    move-object v6, v2
-
     .line 124
-    move/from16 v8, v16
+    move-object v5, v14
 
     .line 125
+    move-object v6, v2
+
     .line 126
-    move-object/from16 v18, v10
+    move/from16 v8, v16
 
     .line 127
     .line 128
-    move/from16 v10, v17
+    move-object/from16 v18, v10
 
     .line 129
     .line 130
-    move-object/from16 v19, v11
+    move/from16 v10, v17
 
     .line 131
     .line 132
-    move/from16 v11, v16
+    move-object/from16 v19, v11
 
     .line 133
     .line 134
-    move-object/from16 v20, v12
+    move/from16 v11, v16
 
     .line 135
     .line 136
-    move v12, v13
+    move-object/from16 v20, v12
 
     .line 137
+    .line 138
+    move v12, v13
+
+    .line 139
     invoke-virtual/range {v5 .. v12}, Landroid/graphics/Bitmap;->getPixels([IIIIIII)V
 
-    .line 138
-    .line 139
     .line 140
+    .line 141
+    .line 142
     const/4 v5, 0x0
 
-    .line 141
+    .line 143
     :goto_1
     if-ge v5, v4, :cond_1
 
-    .line 142
-    .line 143
-    aget v6, v2, v5
-
     .line 144
     .line 145
-    shr-int/lit8 v7, v6, 0x10
+    aget v6, v2, v5
 
     .line 146
     .line 147
-    and-int/lit16 v7, v7, 0xff
+    shr-int/lit8 v7, v6, 0x10
 
     .line 148
     .line 149
-    shr-int/lit8 v8, v6, 0x8
+    and-int/lit16 v7, v7, 0xff
 
     .line 150
     .line 151
-    and-int/lit16 v8, v8, 0xff
+    shr-int/lit8 v8, v6, 0x8
 
     .line 152
     .line 153
-    and-int/lit16 v9, v6, 0xff
+    and-int/lit16 v8, v8, 0xff
 
     .line 154
     .line 155
-    ushr-int/lit8 v6, v6, 0x18
+    and-int/lit16 v9, v6, 0xff
 
     .line 156
     .line 157
-    const-wide v10, 0x3fd322d0e5604189L    # 0.299
+    ushr-int/lit8 v6, v6, 0x18
 
     .line 158
     .line 159
+    const-wide v10, 0x3fd322d0e5604189L    # 0.299
+
     .line 160
     .line 161
     .line 162
-    move-object/from16 v17, v3
-
     .line 163
     .line 164
-    move v12, v4
+    move-object/from16 v17, v3
 
     .line 165
-    int-to-double v3, v7
-
     .line 166
-    mul-double/2addr v3, v10
+    move v12, v4
 
     .line 167
-    const-wide v10, 0x3fe2c8b439581062L    # 0.587
+    int-to-double v3, v7
 
     .line 168
+    mul-double/2addr v3, v10
+
     .line 169
+    const-wide v10, 0x3fe2c8b439581062L    # 0.587
+
     .line 170
     .line 171
     .line 172
+    .line 173
+    .line 174
     int-to-double v7, v8
 
-    .line 173
+    .line 175
     mul-double/2addr v7, v10
 
-    .line 174
+    .line 176
     add-double/2addr v3, v7
 
-    .line 175
+    .line 177
     const-wide v7, 0x3fc26e978d4fdf3bL    # 0.144
 
-    .line 176
-    .line 177
     .line 178
     .line 179
     .line 180
+    .line 181
+    .line 182
     int-to-double v9, v9
 
-    .line 181
+    .line 183
     mul-double/2addr v9, v7
 
-    .line 182
+    .line 184
     add-double/2addr v3, v9
 
-    .line 183
+    .line 185
     const-wide v7, 0x406fe00000000000L    # 255.0
 
-    .line 184
-    .line 185
     .line 186
     .line 187
     .line 188
+    .line 189
+    .line 190
     div-double/2addr v3, v7
 
-    .line 189
+    .line 191
     invoke-static {v3, v4}, Lcom/horcrux/svg/RenderableView;->saturate(D)D
 
-    .line 190
-    .line 191
     .line 192
+    .line 193
+    .line 194
     move-result-wide v3
 
-    .line 193
+    .line 195
     int-to-double v6, v6
 
-    .line 194
+    .line 196
     mul-double/2addr v6, v3
 
-    .line 195
+    .line 197
     double-to-int v3, v6
 
-    .line 196
-    shl-int/lit8 v3, v3, 0x18
-
-    .line 197
     .line 198
-    aput v3, v2, v5
+    shl-int/lit8 v3, v3, 0x18
 
     .line 199
     .line 200
-    add-int/lit8 v5, v5, 0x1
+    aput v3, v2, v5
 
     .line 201
     .line 202
-    move v4, v12
+    add-int/lit8 v5, v5, 0x1
 
     .line 203
+    .line 204
+    move v4, v12
+
+    .line 205
     move-object/from16 v3, v17
 
-    .line 204
-    .line 205
+    .line 206
+    .line 207
     goto :goto_1
 
-    .line 206
+    .line 208
     :cond_1
     move-object/from16 v17, v3
 
-    .line 207
-    .line 208
+    .line 209
+    .line 210
     const/4 v7, 0x0
 
-    .line 209
+    .line 211
     const/4 v9, 0x0
 
-    .line 210
+    .line 212
     const/4 v10, 0x0
 
-    .line 211
+    .line 213
     move-object v5, v14
 
-    .line 212
+    .line 214
     move-object v6, v2
 
-    .line 213
-    move/from16 v8, v16
-
-    .line 214
     .line 215
-    move/from16 v11, v16
+    move/from16 v8, v16
 
     .line 216
     .line 217
-    move v12, v13
+    move/from16 v11, v16
 
     .line 218
+    .line 219
+    move v12, v13
+
+    .line 220
     invoke-virtual/range {v5 .. v12}, Landroid/graphics/Bitmap;->setPixels([IIIIIII)V
 
-    .line 219
-    .line 220
     .line 221
-    move/from16 v2, p3
-
     .line 222
     .line 223
-    move-object/from16 v3, v19
+    move/from16 v2, p3
 
     .line 224
     .line 225
-    invoke-virtual {v0, v3, v1, v2}, Lcom/horcrux/svg/RenderableView;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+    move-object/from16 v3, v19
 
     .line 226
     .line 227
-    .line 228
-    new-instance v2, Landroid/graphics/PorterDuffXfermode;
+    invoke-virtual {v0, v3, v1, v2}, Lcom/horcrux/svg/RenderableView;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
 
+    .line 228
     .line 229
     .line 230
-    sget-object v3, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
+    new-instance v2, Landroid/graphics/PorterDuffXfermode;
 
     .line 231
     .line 232
-    invoke-direct {v2, v3}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+    sget-object v3, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
 
     .line 233
     .line 234
-    .line 235
-    move-object/from16 v3, v17
+    invoke-direct {v2, v3}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
 
+    .line 235
     .line 236
     .line 237
-    invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+    move-object/from16 v3, v17
 
     .line 238
     .line 239
+    invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+
     .line 240
+    .line 241
+    .line 242
     const/4 v2, 0x0
 
-    .line 241
+    .line 243
     move-object/from16 v4, v18
 
-    .line 242
-    .line 243
+    .line 244
+    .line 245
     const/4 v5, 0x0
 
-    .line 244
+    .line 246
     invoke-virtual {v4, v15, v2, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 245
-    .line 246
     .line 247
-    invoke-virtual {v4, v14, v2, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
-
     .line 248
     .line 249
-    .line 250
-    move-object/from16 v3, p1
+    invoke-virtual {v4, v14, v2, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
+    .line 250
     .line 251
     .line 252
-    move-object/from16 v4, v20
+    move-object/from16 v3, p1
 
     .line 253
     .line 254
-    invoke-virtual {v3, v4, v2, v2, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
+    move-object/from16 v4, v20
 
     .line 255
     .line 256
+    invoke-virtual {v3, v4, v2, v2, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
+
     .line 257
+    .line 258
+    .line 259
     goto :goto_2
 
-    .line 258
+    .line 260
     :cond_2
     move-object/from16 v3, p1
 
-    .line 259
-    .line 260
-    move/from16 v2, p3
-
     .line 261
     .line 262
-    invoke-virtual/range {p0 .. p3}, Lcom/horcrux/svg/RenderableView;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+    move/from16 v2, p3
 
     .line 263
     .line 264
+    invoke-virtual/range {p0 .. p3}, Lcom/horcrux/svg/RenderableView;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
+
     .line 265
-    :goto_2
-    return-void
     .line 266
     .line 267
+    :goto_2
+    return-void
     .line 268
     .line 269
     .line 270
@@ -5036,7 +4999,7 @@
     move v11, v4
 
     .line 124
-    invoke-virtual/range {v6 .. v11}, Lcom/horcrux/svg/p;->j(Landroid/graphics/Canvas;Landroid/graphics/Paint;FLcom/horcrux/svg/y;F)V
+    invoke-virtual/range {v6 .. v11}, Lcom/horcrux/svg/p;->k(Landroid/graphics/Canvas;Landroid/graphics/Paint;FLcom/horcrux/svg/y;F)V
 
     .line 125
     .line 126
@@ -5794,521 +5757,348 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public setFill(Lcom/facebook/react/bridge/Dynamic;)V
     .locals 7
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "fill"
-    .end annotation
+
+    if-eqz p1, :cond_6
 
     .line 1
-    if-eqz p1, :cond_5
-
-    .line 2
-    .line 3
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->isNull()Z
 
-    .line 4
-    .line 5
-    .line 6
     move-result v0
 
-    .line 7
     if-eqz v0, :cond_0
 
-    .line 8
-    .line 9
-    goto :goto_2
+    goto/16 :goto_2
 
-    .line 10
+    .line 2
     :cond_0
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
 
-    .line 11
-    .line 12
-    .line 13
     move-result-object v0
 
-    .line 14
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
+    .line 3
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Map:Lcom/facebook/react/bridge/ReadableType;
 
-    .line 15
-    .line 16
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 17
-    .line 18
-    .line 19
     move-result v1
 
-    .line 20
-    const/4 v2, 0x0
-
-    .line 21
     if-eqz v1, :cond_1
 
-    .line 22
-    .line 23
-    const/4 v0, 0x2
+    .line 4
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asMap()Lcom/facebook/react/bridge/ReadableMap;
 
-    .line 24
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v1
-
-    .line 30
-    aput-object v1, v0, v2
-
-    .line 31
-    .line 32
-    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asInt()I
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p1
-
-    .line 36
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 37
-    .line 38
-    .line 39
     move-result-object p1
 
-    .line 40
-    const/4 v1, 0x1
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/horcrux/svg/RenderableView;->setFill(Lcom/facebook/react/bridge/ReadableMap;)V
 
-    .line 41
-    aput-object p1, v0, v1
+    return-void
 
-    .line 42
-    .line 43
-    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object p1
-
-    .line 47
-    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
-
-    .line 48
-    .line 49
-    goto :goto_1
-
-    .line 50
+    .line 6
     :cond_1
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
 
-    .line 51
-    .line 52
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 53
-    .line 54
-    .line 55
-    move-result v0
+    move-result v1
 
-    .line 56
-    if-eqz v0, :cond_2
+    const/4 v2, 0x0
 
-    .line 57
-    .line 58
-    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
+    if-eqz v1, :cond_2
 
-    .line 59
-    .line 60
-    .line 61
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 7
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asInt()I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     move-result-object p1
 
-    .line 62
+    const/4 v1, 0x1
+
+    aput-object p1, v0, v1
+
+    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
     iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 63
-    .line 64
     goto :goto_1
 
-    .line 65
+    .line 8
     :cond_2
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 9
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_1
+
+    .line 10
+    :cond_3
     new-instance v0, Lcom/facebook/react/bridge/JavaOnlyArray;
 
-    .line 66
-    .line 67
     invoke-direct {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;-><init>()V
 
-    .line 68
-    .line 69
-    .line 70
+    .line 11
     invoke-virtual {v0, v2}, Lcom/facebook/react/bridge/JavaOnlyArray;->pushInt(I)V
 
-    .line 71
-    .line 72
-    .line 73
+    .line 12
     sget-object v1, Lcom/horcrux/svg/RenderableView;->regex:Ljava/util/regex/Pattern;
 
-    .line 74
-    .line 75
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asString()Ljava/lang/String;
 
-    .line 76
-    .line 77
-    .line 78
     move-result-object p1
 
-    .line 79
     invoke-virtual {v1, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    .line 80
-    .line 81
-    .line 82
     move-result-object p1
 
-    .line 83
+    .line 13
     :goto_0
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
 
-    .line 84
-    .line 85
-    .line 86
     move-result v1
 
-    .line 87
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
-    .line 88
-    .line 89
+    .line 14
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
 
-    .line 90
-    .line 91
-    .line 92
     move-result-object v1
 
-    .line 93
     invoke-static {v1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
-    .line 94
-    .line 95
-    .line 96
     move-result-wide v3
 
-    .line 97
     add-int/lit8 v1, v2, 0x1
 
-    .line 98
-    .line 99
     const/4 v5, 0x3
 
-    .line 100
-    if-ge v2, v5, :cond_3
+    if-ge v2, v5, :cond_4
 
-    .line 101
-    .line 102
     const-wide v5, 0x406fe00000000000L    # 255.0
 
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
     div-double/2addr v3, v5
 
-    .line 108
-    :cond_3
+    .line 15
+    :cond_4
     invoke-virtual {v0, v3, v4}, Lcom/facebook/react/bridge/JavaOnlyArray;->pushDouble(D)V
 
-    .line 109
-    .line 110
-    .line 111
     move v2, v1
 
-    .line 112
     goto :goto_0
 
-    .line 113
-    :cond_4
+    .line 16
+    :cond_5
     iput-object v0, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 114
-    .line 115
+    .line 17
     :goto_1
     invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
 
-    .line 116
-    .line 117
-    .line 118
     return-void
 
-    .line 119
-    :cond_5
+    :cond_6
     :goto_2
     const/4 p1, 0x0
 
-    .line 120
+    .line 18
     iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 121
-    .line 122
+    .line 19
     invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
 
-    .line 123
-    .line 124
-    .line 125
     return-void
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-    .line 214
-    .line 215
-    .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
-    .line 227
-    .line 228
-    .line 229
-    .line 230
-    .line 231
-    .line 232
-    .line 233
-    .line 234
-    .line 235
-    .line 236
-    .line 237
-    .line 238
-    .line 239
-    .line 240
-    .line 241
-    .line 242
-    .line 243
-    .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
-    .line 260
-    .line 261
-    .line 262
-    .line 263
-    .line 264
-    .line 265
-    .line 266
-    .line 267
-    .line 268
-    .line 269
-    .line 270
-    .line 271
-    .line 272
-    .line 273
-    .line 274
-    .line 275
-    .line 276
-    .line 277
-    .line 278
-    .line 279
-    .line 280
-    .line 281
-    .line 282
-    .line 283
-    .line 284
-    .line 285
-    .line 286
-    .line 287
-    .line 288
-    .line 289
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
-    .line 297
-    .line 298
-    .line 299
-    .line 300
-    .line 301
-    .line 302
-    .line 303
-    .line 304
-    .line 305
-    .line 306
-    .line 307
-    .line 308
-    .line 309
-    .line 310
-    .line 311
-    .line 312
-    .line 313
-    .line 314
-    .line 315
-    .line 316
-    .line 317
-    .line 318
-    .line 319
-    .line 320
-    .line 321
-    .line 322
-    .line 323
-    .line 324
-    .line 325
-    .line 326
-    .line 327
-    .line 328
-    .line 329
-    .line 330
-    .line 331
-    .line 332
-    .line 333
-    .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
+.end method
+
+.method public setFill(Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 6
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 20
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    .line 21
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
+
+    :cond_0
+    const-string v0, "type"
+
+    .line 22
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-nez v0, :cond_2
+
+    const-string v0, "payload"
+
+    .line 23
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getType(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableType;
+
+    move-result-object v4
+
+    .line 24
+    sget-object v5, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 25
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    aput-object v4, v1, v2
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, v1, v3
+
+    invoke-static {v1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    .line 26
+    :cond_1
+    sget-object v5, Lcom/facebook/react/bridge/ReadableType;->Map:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 27
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    aput-object v4, v1, v2
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
+
+    move-result-object p1
+
+    aput-object p1, v1, v3
+
+    invoke-static {v1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    :cond_2
+    if-ne v0, v3, :cond_3
+
+    new-array v0, v1, [Ljava/lang/Object;
+
+    .line 28
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    const-string v1, "brushRef"
+
+    invoke-interface {p1, v1}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    aput-object p1, v0, v3
+
+    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    :cond_3
+    new-array p1, v3, [Ljava/lang/Object;
+
+    .line 29
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->fill:Lcom/facebook/react/bridge/ReadableArray;
+
+    .line 30
+    :cond_4
+    :goto_0
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
 .end method
 
 .method public setFillOpacity(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 1.0f
-        name = "fillOpacity"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/RenderableView;->fillOpacity:F
@@ -6341,15 +6131,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setFillRule(I)V
     .locals 3
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultInt = 0x1
-        name = "fillRule"
-    .end annotation
 
     .line 1
     if-eqz p1, :cond_1
@@ -6480,9 +6265,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setId(I)V
@@ -6494,7 +6276,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1, p0}, Lcom/horcrux/svg/RenderableViewManager;->setRenderableView(ILcom/horcrux/svg/RenderableView;)V
+    invoke-static {p1, p0}, Lcom/horcrux/svg/VirtualViewManager;->setRenderableView(ILcom/horcrux/svg/RenderableView;)V
 
     .line 5
     .line 6
@@ -6519,14 +6301,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setPropList(Lcom/facebook/react/bridge/ReadableArray;)V
     .locals 3
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "propList"
-    .end annotation
 
     .line 1
     if-eqz p1, :cond_0
@@ -6650,520 +6428,353 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setStroke(Lcom/facebook/react/bridge/Dynamic;)V
     .locals 7
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "stroke"
-    .end annotation
+
+    if-eqz p1, :cond_6
 
     .line 1
-    if-eqz p1, :cond_5
-
-    .line 2
-    .line 3
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->isNull()Z
 
-    .line 4
-    .line 5
-    .line 6
     move-result v0
 
-    .line 7
     if-eqz v0, :cond_0
 
-    .line 8
-    .line 9
-    goto :goto_2
+    goto/16 :goto_2
 
-    .line 10
+    .line 2
     :cond_0
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
 
-    .line 11
-    .line 12
-    .line 13
     move-result-object v0
 
-    .line 14
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
+    .line 3
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Map:Lcom/facebook/react/bridge/ReadableType;
 
-    .line 15
-    .line 16
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 17
-    .line 18
-    .line 19
-    move-result v1
-
-    .line 20
-    const/4 v2, 0x0
-
-    .line 21
-    if-eqz v1, :cond_1
-
-    .line 22
-    .line 23
-    const/4 v0, 0x2
-
-    .line 24
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v1
-
-    .line 30
-    aput-object v1, v0, v2
-
-    .line 31
-    .line 32
-    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asInt()I
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p1
-
-    .line 36
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object p1
-
-    .line 40
-    const/4 v1, 0x1
-
-    .line 41
-    aput-object p1, v0, v1
-
-    .line 42
-    .line 43
-    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object p1
-
-    .line 47
-    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
-
-    .line 48
-    .line 49
-    goto :goto_1
-
-    .line 50
-    :cond_1
-    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
-
-    .line 51
-    .line 52
-    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 53
-    .line 54
-    .line 55
     move-result v0
 
-    .line 56
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    .line 57
-    .line 58
-    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
+    .line 4
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asMap()Lcom/facebook/react/bridge/ReadableMap;
 
-    .line 59
-    .line 60
-    .line 61
     move-result-object p1
 
-    .line 62
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/horcrux/svg/RenderableView;->setStroke(Lcom/facebook/react/bridge/ReadableMap;)V
+
+    return-void
+
+    .line 6
+    :cond_1
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->getType()Lcom/facebook/react/bridge/ReadableType;
+
+    move-result-object v0
+
+    .line 7
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 8
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asInt()I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const/4 v1, 0x1
+
+    aput-object p1, v0, v1
+
+    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
     iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 63
-    .line 64
     goto :goto_1
 
-    .line 65
+    .line 9
     :cond_2
+    sget-object v1, Lcom/facebook/react/bridge/ReadableType;->Array:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 10
+    invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asArray()Lcom/facebook/react/bridge/ReadableArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_1
+
+    .line 11
+    :cond_3
     new-instance v0, Lcom/facebook/react/bridge/JavaOnlyArray;
 
-    .line 66
-    .line 67
     invoke-direct {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;-><init>()V
 
-    .line 68
-    .line 69
-    .line 70
+    .line 12
     invoke-virtual {v0, v2}, Lcom/facebook/react/bridge/JavaOnlyArray;->pushInt(I)V
 
-    .line 71
-    .line 72
-    .line 73
+    .line 13
     sget-object v1, Lcom/horcrux/svg/RenderableView;->regex:Ljava/util/regex/Pattern;
 
-    .line 74
-    .line 75
     invoke-interface {p1}, Lcom/facebook/react/bridge/Dynamic;->asString()Ljava/lang/String;
 
-    .line 76
-    .line 77
-    .line 78
     move-result-object p1
 
-    .line 79
     invoke-virtual {v1, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    .line 80
-    .line 81
-    .line 82
     move-result-object p1
 
-    .line 83
+    .line 14
     :goto_0
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
 
-    .line 84
-    .line 85
-    .line 86
     move-result v1
 
-    .line 87
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
-    .line 88
-    .line 89
+    .line 15
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
 
-    .line 90
-    .line 91
-    .line 92
     move-result-object v1
 
-    .line 93
     invoke-static {v1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
-    .line 94
-    .line 95
-    .line 96
     move-result-wide v3
 
-    .line 97
     add-int/lit8 v1, v2, 0x1
 
-    .line 98
-    .line 99
     const/4 v5, 0x3
 
-    .line 100
-    if-ge v2, v5, :cond_3
+    if-ge v2, v5, :cond_4
 
-    .line 101
-    .line 102
     const-wide v5, 0x406fe00000000000L    # 255.0
 
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
     div-double/2addr v3, v5
 
-    .line 108
-    :cond_3
+    .line 16
+    :cond_4
     invoke-virtual {v0, v3, v4}, Lcom/facebook/react/bridge/JavaOnlyArray;->pushDouble(D)V
 
-    .line 109
-    .line 110
-    .line 111
     move v2, v1
 
-    .line 112
     goto :goto_0
 
-    .line 113
-    :cond_4
+    .line 17
+    :cond_5
     iput-object v0, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 114
-    .line 115
+    .line 18
     :goto_1
     invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
 
-    .line 116
-    .line 117
-    .line 118
     return-void
 
-    .line 119
-    :cond_5
+    :cond_6
     :goto_2
     const/4 p1, 0x0
 
-    .line 120
+    .line 19
     iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
 
-    .line 121
-    .line 122
+    .line 20
     invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
 
-    .line 123
-    .line 124
-    .line 125
     return-void
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-    .line 214
-    .line 215
-    .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
-    .line 227
-    .line 228
-    .line 229
-    .line 230
-    .line 231
-    .line 232
-    .line 233
-    .line 234
-    .line 235
-    .line 236
-    .line 237
-    .line 238
-    .line 239
-    .line 240
-    .line 241
-    .line 242
-    .line 243
-    .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
-    .line 260
-    .line 261
-    .line 262
-    .line 263
-    .line 264
-    .line 265
-    .line 266
-    .line 267
-    .line 268
-    .line 269
-    .line 270
-    .line 271
-    .line 272
-    .line 273
-    .line 274
-    .line 275
-    .line 276
-    .line 277
-    .line 278
-    .line 279
-    .line 280
-    .line 281
-    .line 282
-    .line 283
-    .line 284
-    .line 285
-    .line 286
-    .line 287
-    .line 288
-    .line 289
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
-    .line 297
-    .line 298
-    .line 299
-    .line 300
-    .line 301
-    .line 302
-    .line 303
-    .line 304
-    .line 305
-    .line 306
-    .line 307
-    .line 308
-    .line 309
-    .line 310
-    .line 311
-    .line 312
-    .line 313
-    .line 314
-    .line 315
-    .line 316
-    .line 317
-    .line 318
-    .line 319
-    .line 320
-    .line 321
-    .line 322
-    .line 323
-    .line 324
-    .line 325
-    .line 326
-    .line 327
-    .line 328
-    .line 329
-    .line 330
-    .line 331
-    .line 332
-    .line 333
-    .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
+.end method
+
+.method public setStroke(Lcom/facebook/react/bridge/ReadableMap;)V
+    .locals 6
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 21
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    .line 22
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
+
+    :cond_0
+    const-string v0, "type"
+
+    .line 23
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-nez v0, :cond_2
+
+    const-string v0, "payload"
+
+    .line 24
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getType(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableType;
+
+    move-result-object v4
+
+    .line 25
+    sget-object v5, Lcom/facebook/react/bridge/ReadableType;->Number:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 26
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    aput-object v4, v1, v2
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    aput-object p1, v1, v3
+
+    invoke-static {v1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    .line 27
+    :cond_1
+    sget-object v5, Lcom/facebook/react/bridge/ReadableType;->Map:Lcom/facebook/react/bridge/ReadableType;
+
+    invoke-virtual {v4, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 28
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    aput-object v4, v1, v2
+
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getMap(Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
+
+    move-result-object p1
+
+    aput-object p1, v1, v3
+
+    invoke-static {v1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    :cond_2
+    if-ne v0, v3, :cond_3
+
+    new-array v0, v1, [Ljava/lang/Object;
+
+    .line 29
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    const-string v1, "brushRef"
+
+    invoke-interface {p1, v1}, Lcom/facebook/react/bridge/ReadableMap;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    aput-object p1, v0, v3
+
+    invoke-static {v0}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    goto :goto_0
+
+    :cond_3
+    new-array p1, v3, [Ljava/lang/Object;
+
+    .line 30
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Lcom/facebook/react/bridge/JavaOnlyArray;->of([Ljava/lang/Object;)Lcom/facebook/react/bridge/JavaOnlyArray;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->stroke:Lcom/facebook/react/bridge/ReadableArray;
+
+    .line 31
+    :cond_4
+    :goto_0
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
 .end method
 
 .method public setStrokeDasharray(Lcom/facebook/react/bridge/ReadableArray;)V
     .locals 4
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "strokeDasharray"
-    .end annotation
 
     .line 1
     if-eqz p1, :cond_0
@@ -7206,7 +6817,7 @@
     move-result-object v3
 
     .line 20
-    invoke-static {v3}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {v3}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
 
     .line 21
     .line 22
@@ -7292,16 +6903,10 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setStrokeDashoffset(F)V
     .locals 1
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "strokeDashoffset"
-    .end annotation
 
     .line 1
     iget v0, p0, Lcom/horcrux/svg/VirtualView;->mScale:F
@@ -7338,15 +6943,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setStrokeLinecap(I)V
     .locals 3
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultInt = 0x1
-        name = "strokeLinecap"
-    .end annotation
 
     .line 1
     if-eqz p1, :cond_2
@@ -7492,17 +7092,10 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setStrokeLinejoin(I)V
     .locals 3
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultInt = 0x1
-        name = "strokeLinejoin"
-    .end annotation
 
     .line 1
     if-eqz p1, :cond_2
@@ -7648,17 +7241,10 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public setStrokeMiterlimit(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 4.0f
-        name = "strokeMiterlimit"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/RenderableView;->strokeMiterlimit:F
@@ -7691,15 +7277,10 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setStrokeOpacity(F)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        defaultFloat = 1.0f
-        name = "strokeOpacity"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/RenderableView;->strokeOpacity:F
@@ -7732,58 +7313,58 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public setStrokeWidth(Lcom/facebook/react/bridge/Dynamic;)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "strokeWidth"
-    .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->b(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->c(Lcom/facebook/react/bridge/Dynamic;)Lcom/horcrux/svg/SVGLength;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object p1
 
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->strokeWidth:Lcom/horcrux/svg/SVGLength;
+
+    .line 2
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setStrokeWidth(Ljava/lang/Double;)V
+    .locals 0
+
     .line 5
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->d(Ljava/lang/Double;)Lcom/horcrux/svg/SVGLength;
+
+    move-result-object p1
+
     iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->strokeWidth:Lcom/horcrux/svg/SVGLength;
 
     .line 6
-    .line 7
     invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
 
-    .line 8
-    .line 9
-    .line 10
     return-void
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
+.end method
+
+.method public setStrokeWidth(Ljava/lang/String;)V
+    .locals 0
+
+    .line 3
+    invoke-static {p1}, Lcom/horcrux/svg/SVGLength;->e(Ljava/lang/String;)Lcom/horcrux/svg/SVGLength;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/horcrux/svg/RenderableView;->strokeWidth:Lcom/horcrux/svg/SVGLength;
+
+    .line 4
+    invoke-virtual {p0}, Lcom/horcrux/svg/VirtualView;->invalidate()V
+
+    return-void
 .end method
 
 .method public setVectorEffect(I)V
     .locals 0
-    .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
-        name = "vectorEffect"
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/horcrux/svg/RenderableView;->vectorEffect:I
@@ -7816,7 +7397,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method setupFillPaint(Landroid/graphics/Paint;F)Z
@@ -7901,8 +7481,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method setupStrokePaint(Landroid/graphics/Paint;F)Z
@@ -8205,12 +7783,4 @@
     .line 190
     .line 191
     .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
 .end method

@@ -241,7 +241,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p2}, Lokhttp3/Response;->o0()Z
+    invoke-virtual {p2}, Lokhttp3/Response;->Y()Z
 
     .line 2
     .line 3

@@ -192,7 +192,7 @@
     move-result-object v1
 
     .line 37
-    invoke-interface {p1, v1}, Lkotlin/coroutines/CoroutineContext;->w(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
+    invoke-interface {p1, v1}, Lkotlin/coroutines/CoroutineContext;->i0(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     .line 38
     .line 39

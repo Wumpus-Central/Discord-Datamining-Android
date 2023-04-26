@@ -86,7 +86,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lv3/g;->e([Ljava/lang/Object;)Lv3/g;
+    invoke-static {v0}, Lv3/g;->d([Ljava/lang/Object;)Lv3/g;
 
     .line 10
     .line 11
@@ -321,123 +321,6 @@
 
     .line 19
     .line 20
-    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/m0;->a()V
-
-    .line 21
-    .line 22
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_1
-    return-void
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-.end method
-
-.method public static r(Ljava/util/List;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lcom/facebook/imagepipeline/producers/m0;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    if-nez p0, :cond_0
-
-    .line 2
-    .line 3
-    return-void
-
-    .line 4
-    :cond_0
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p0
-
-    .line 8
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    if-eqz v0, :cond_1
-
-    .line 13
-    .line 14
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    check-cast v0, Lcom/facebook/imagepipeline/producers/m0;
-
-    .line 19
-    .line 20
     invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/m0;->b()V
 
     .line 21
@@ -499,7 +382,122 @@
     .line 73
     .line 74
     .line 75
-    .line 76
+.end method
+
+.method public static r(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/facebook/imagepipeline/producers/m0;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    if-eqz v0, :cond_1
+
+    .line 13
+    .line 14
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    check-cast v0, Lcom/facebook/imagepipeline/producers/m0;
+
+    .line 19
+    .line 20
+    invoke-interface {v0}, Lcom/facebook/imagepipeline/producers/m0;->a()V
+
+    .line 21
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_1
+    return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
 .end method
 
 .method public static s(Ljava/util/List;)V
@@ -616,7 +614,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public static t(Ljava/util/List;)V
@@ -733,7 +730,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -746,95 +742,7 @@
     return-object v0
 .end method
 
-.method public declared-synchronized b()Lcom/facebook/imagepipeline/common/Priority;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->i:Lcom/facebook/imagepipeline/common/Priority;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    monitor-exit p0
-
-    .line 5
-    return-object v0
-
-    .line 6
-    :catchall_0
-    move-exception v0
-
-    .line 7
-    monitor-exit p0
-
-    .line 8
-    throw v0
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-.end method
-
-.method public c(Ljava/lang/String;Ljava/lang/Object;)V
+.method public b(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
 
     .line 1
@@ -1020,15 +928,7 @@
     .line 165
 .end method
 
-.method public d()Lcom/facebook/imagepipeline/request/ImageRequest;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->a:Lcom/facebook/imagepipeline/request/ImageRequest;
-
-    return-object v0
-.end method
-
-.method public e(Lcom/facebook/imagepipeline/producers/m0;)V
+.method public c(Lcom/facebook/imagepipeline/producers/m0;)V
     .locals 1
 
     .line 1
@@ -1058,7 +958,7 @@
 
     .line 11
     .line 12
-    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/m0;->a()V
+    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/m0;->b()V
 
     .line 13
     .line 14
@@ -1135,10 +1035,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public f()Lq5/g;
+.method public d()Lq5/g;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->m:Lq5/g;
@@ -1146,7 +1045,7 @@
     return-object v0
 .end method
 
-.method public g(Ljava/lang/String;Ljava/lang/String;)V
+.method public e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
     .line 1
@@ -1329,6 +1228,99 @@
     .line 165
 .end method
 
+.method public f()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->c:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public g(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "default"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/d;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+.end method
+
 .method public getExtras()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -1354,7 +1346,199 @@
     return-object v0
 .end method
 
-.method public h(Ljava/util/Map;)V
+.method public h()Lcom/facebook/imagepipeline/producers/n0;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->d:Lcom/facebook/imagepipeline/producers/n0;
+
+    return-object v0
+.end method
+
+.method public declared-synchronized i()Z
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-boolean v0, p0, Lcom/facebook/imagepipeline/producers/d;->j:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    .line 4
+    monitor-exit p0
+
+    .line 5
+    return v0
+
+    .line 6
+    :catchall_0
+    move-exception v0
+
+    .line 7
+    monitor-exit p0
+
+    .line 8
+    throw v0
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+.end method
+
+.method public declared-synchronized j()Lcom/facebook/imagepipeline/common/Priority;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->i:Lcom/facebook/imagepipeline/common/Priority;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    .line 4
+    monitor-exit p0
+
+    .line 5
+    return-object v0
+
+    .line 6
+    :catchall_0
+    move-exception v0
+
+    .line 7
+    monitor-exit p0
+
+    .line 8
+    throw v0
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+.end method
+
+.method public k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    .locals 1
+
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->a:Lcom/facebook/imagepipeline/request/ImageRequest;
+
+    return-object v0
+.end method
+
+.method public l(Ljava/util/Map;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1435,7 +1619,7 @@
     move-result-object v0
 
     .line 34
-    invoke-virtual {p0, v1, v0}, Lcom/facebook/imagepipeline/producers/d;->c(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v1, v0}, Lcom/facebook/imagepipeline/producers/d;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 35
     .line 36
@@ -1482,10 +1666,9 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
-.method public declared-synchronized i()Z
+.method public declared-synchronized m()Z
     .locals 1
 
     .line 1
@@ -1573,7 +1756,7 @@
     .line 66
 .end method
 
-.method public j(Ljava/lang/String;)Ljava/lang/Object;
+.method public n(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1594,202 +1777,12 @@
     return-object p1
 .end method
 
-.method public k()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->c:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public l(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    const-string v0, "default"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/d;->g(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-.end method
-
-.method public m(Lu5/f;)V
+.method public o(Lu5/f;)V
     .locals 0
 
     iput-object p1, p0, Lcom/facebook/imagepipeline/producers/d;->n:Lu5/f;
 
     return-void
-.end method
-
-.method public n()Lcom/facebook/imagepipeline/producers/n0;
-    .locals 1
-
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->d:Lcom/facebook/imagepipeline/producers/n0;
-
-    return-object v0
-.end method
-
-.method public declared-synchronized o()Z
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/imagepipeline/producers/d;->j:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    monitor-exit p0
-
-    .line 5
-    return v0
-
-    .line 6
-    :catchall_0
-    move-exception v0
-
-    .line 7
-    monitor-exit p0
-
-    .line 8
-    throw v0
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
 .end method
 
 .method public p()Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;
@@ -2053,7 +2046,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized x(Z)Ljava/util/List;
@@ -2179,7 +2171,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public declared-synchronized y(Lcom/facebook/imagepipeline/common/Priority;)Ljava/util/List;
@@ -2307,5 +2298,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

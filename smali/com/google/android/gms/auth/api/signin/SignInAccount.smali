@@ -457,14 +457,6 @@
 
 
 # virtual methods
-.method public final v()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->l:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
-
-    return-object v0
-.end method
-
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
 
@@ -708,4 +700,12 @@
     .line 211
     .line 212
     .line 213
+.end method
+
+.method public final x()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/SignInAccount;->l:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+
+    return-object v0
 .end method

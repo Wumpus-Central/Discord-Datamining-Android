@@ -40,7 +40,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Scope;->v()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -48,7 +48,7 @@
     move-result-object p1
 
     .line 9
-    invoke-virtual {p2}, Lcom/google/android/gms/common/api/Scope;->v()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
 
     .line 10
     .line 11

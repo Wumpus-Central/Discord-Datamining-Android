@@ -275,7 +275,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/b;->a(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/b;->b(Lcom/google/android/gms/common/api/Status;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -510,7 +510,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/b;->a(Lcom/google/android/gms/common/api/Status;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/b;->b(Lcom/google/android/gms/common/api/Status;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 

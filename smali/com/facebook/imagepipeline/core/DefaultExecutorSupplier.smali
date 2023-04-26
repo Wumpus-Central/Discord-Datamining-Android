@@ -164,7 +164,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 
@@ -172,7 +171,7 @@
 .method public a()Ljava/util/concurrent/Executor;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->b:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->d:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
@@ -180,15 +179,15 @@
 .method public b()Ljava/util/concurrent/Executor;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->d:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
 
-.method public c()Ljava/util/concurrent/Executor;
+.method public c()Ljava/util/concurrent/ScheduledExecutorService;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->c:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->e:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-object v0
 .end method
@@ -196,7 +195,7 @@
 .method public d()Ljava/util/concurrent/Executor;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->b:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
@@ -204,7 +203,7 @@
 .method public e()Ljava/util/concurrent/Executor;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->c:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
@@ -217,10 +216,10 @@
     return-object v0
 .end method
 
-.method public g()Ljava/util/concurrent/ScheduledExecutorService;
+.method public g()Ljava/util/concurrent/Executor;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->e:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;->a:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method

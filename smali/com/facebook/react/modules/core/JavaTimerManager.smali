@@ -2496,7 +2496,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method hasActiveTimersInRange(J)Z
@@ -2654,7 +2653,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onHeadlessJsTaskFinish(I)V
@@ -2759,7 +2757,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onHeadlessJsTaskStart(I)V
@@ -2856,7 +2853,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method public onHostDestroy()V
@@ -3283,5 +3279,4 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method

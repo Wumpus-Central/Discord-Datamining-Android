@@ -1204,7 +1204,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private e(Ljava/util/ArrayList;)[Lcom/horcrux/svg/SVGLength;
@@ -1270,7 +1269,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method private f(Lcom/horcrux/svg/l;)Lcom/horcrux/svg/h;
@@ -1404,9 +1402,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method private static h(Ljava/util/ArrayList;I)V
@@ -1494,8 +1489,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private q()V
@@ -1646,9 +1639,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private r(Lcom/horcrux/svg/l;Lcom/facebook/react/bridge/ReadableMap;)V
@@ -1739,8 +1729,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method private s()V
@@ -1875,9 +1863,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 
@@ -2057,9 +2042,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method j()D
@@ -2205,9 +2187,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method k()D
@@ -2334,9 +2313,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method l(D)D
@@ -2479,9 +2455,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method m()D
@@ -2627,9 +2600,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method n()V
@@ -3414,39 +3384,6 @@
     .line 449
     .line 450
     .line 451
-    .line 452
-    .line 453
-    .line 454
-    .line 455
-    .line 456
-    .line 457
-    .line 458
-    .line 459
-    .line 460
-    .line 461
-    .line 462
-    .line 463
-    .line 464
-    .line 465
-    .line 466
-    .line 467
-    .line 468
-    .line 469
-    .line 470
-    .line 471
-    .line 472
-    .line 473
-    .line 474
-    .line 475
-    .line 476
-    .line 477
-    .line 478
-    .line 479
-    .line 480
-    .line 481
-    .line 482
-    .line 483
-    .line 484
 .end method
 
 .method o(Lcom/horcrux/svg/l;Lcom/facebook/react/bridge/ReadableMap;)V
@@ -3504,8 +3441,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method p(ZLcom/horcrux/svg/t0;Lcom/facebook/react/bridge/ReadableMap;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V

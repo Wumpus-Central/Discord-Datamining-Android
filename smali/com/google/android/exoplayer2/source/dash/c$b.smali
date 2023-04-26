@@ -50,7 +50,7 @@
     const-wide/16 v5, 0x0
 
     .line 2
-    invoke-virtual {p4}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {p4}, Ll8/i;->b()Lk8/e;
 
     move-result-object v7
 
@@ -772,7 +772,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v1}, Ll8/i;->l()Lk8/e;
+    invoke-virtual {v1}, Ll8/i;->b()Lk8/e;
 
     .line 8
     .line 9
@@ -780,7 +780,7 @@
     move-result-object v8
 
     .line 11
-    invoke-virtual/range {p3 .. p3}, Ll8/i;->l()Lk8/e;
+    invoke-virtual/range {p3 .. p3}, Ll8/i;->b()Lk8/e;
 
     .line 12
     .line 13
@@ -824,7 +824,7 @@
 
     .line 32
     :cond_0
-    invoke-interface {v8}, Lk8/e;->g()Z
+    invoke-interface {v8}, Lk8/e;->j()Z
 
     .line 33
     .line 34
@@ -918,7 +918,7 @@
 
     .line 76
     :cond_2
-    invoke-interface {v8}, Lk8/e;->h()J
+    invoke-interface {v8}, Lk8/e;->k()J
 
     .line 77
     .line 78
@@ -926,7 +926,7 @@
     move-result-wide v4
 
     .line 80
-    invoke-interface {v8, v4, v5}, Lk8/e;->a(J)J
+    invoke-interface {v8, v4, v5}, Lk8/e;->c(J)J
 
     .line 81
     .line 82
@@ -947,7 +947,7 @@
     sub-long/2addr v10, v12
 
     .line 89
-    invoke-interface {v8, v10, v11}, Lk8/e;->a(J)J
+    invoke-interface {v8, v10, v11}, Lk8/e;->c(J)J
 
     .line 90
     .line 91
@@ -955,7 +955,7 @@
     move-result-wide v14
 
     .line 93
-    invoke-interface {v8, v10, v11, v2, v3}, Lk8/e;->b(JJ)J
+    invoke-interface {v8, v10, v11, v2, v3}, Lk8/e;->d(JJ)J
 
     .line 94
     .line 95
@@ -967,7 +967,7 @@
 
     .line 98
     .line 99
-    invoke-interface {v9}, Lk8/e;->h()J
+    invoke-interface {v9}, Lk8/e;->k()J
 
     .line 100
     .line 101
@@ -979,7 +979,7 @@
 
     .line 104
     .line 105
-    invoke-interface {v9, v12, v13}, Lk8/e;->a(J)J
+    invoke-interface {v9, v12, v13}, Lk8/e;->c(J)J
 
     .line 106
     .line 107
@@ -1042,7 +1042,7 @@
 
     .line 132
     .line 133
-    invoke-interface {v9, v6, v7, v2, v3}, Lk8/e;->f(JJ)J
+    invoke-interface {v9, v6, v7, v2, v3}, Lk8/e;->h(JJ)J
 
     .line 134
     .line 135
@@ -1069,7 +1069,7 @@
 
     .line 144
     .line 145
-    invoke-interface {v8, v4, v5, v2, v3}, Lk8/e;->f(JJ)J
+    invoke-interface {v8, v4, v5, v2, v3}, Lk8/e;->h(JJ)J
 
     .line 146
     .line 147
@@ -1202,7 +1202,7 @@
 
     iget-wide v1, p0, Lcom/google/android/exoplayer2/source/dash/c$b;->d:J
 
-    invoke-interface {v0, v1, v2, p1, p2}, Lk8/e;->c(JJ)J
+    invoke-interface {v0, v1, v2, p1, p2}, Lk8/e;->e(JJ)J
 
     move-result-wide p1
 
@@ -1218,7 +1218,7 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/c$b;->c:Lk8/e;
 
-    invoke-interface {v0}, Lk8/e;->h()J
+    invoke-interface {v0}, Lk8/e;->k()J
 
     move-result-wide v0
 
@@ -1249,7 +1249,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v2, v3, v4, p1, p2}, Lk8/e;->j(JJ)I
+    invoke-interface {v2, v3, v4, p1, p2}, Lk8/e;->l(JJ)I
 
     .line 10
     .line 11
@@ -1403,7 +1403,7 @@
 
     .line 11
     .line 12
-    invoke-interface {v2, p1, p2, v3, v4}, Lk8/e;->b(JJ)J
+    invoke-interface {v2, p1, p2, v3, v4}, Lk8/e;->d(JJ)J
 
     .line 13
     .line 14
@@ -1514,7 +1514,7 @@
 
     iget-wide v1, p0, Lcom/google/android/exoplayer2/source/dash/c$b;->d:J
 
-    invoke-interface {v0, p1, p2, v1, v2}, Lk8/e;->f(JJ)J
+    invoke-interface {v0, p1, p2, v1, v2}, Lk8/e;->h(JJ)J
 
     move-result-wide p1
 
@@ -1534,7 +1534,7 @@
 
     sub-long/2addr p1, v1
 
-    invoke-interface {v0, p1, p2}, Lk8/e;->a(J)J
+    invoke-interface {v0, p1, p2}, Lk8/e;->c(J)J
 
     move-result-wide p1
 
@@ -1550,7 +1550,7 @@
 
     sub-long/2addr p1, v1
 
-    invoke-interface {v0, p1, p2}, Lk8/e;->e(J)Ll8/h;
+    invoke-interface {v0, p1, p2}, Lk8/e;->g(J)Ll8/h;
 
     move-result-object p1
 

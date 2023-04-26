@@ -64,7 +64,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1}, Lcom/facebook/soloader/j$c;->i(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
+    invoke-static {v1}, Lcom/facebook/soloader/j$c;->h(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
 
     .line 11
     .line 12
@@ -249,7 +249,7 @@
     .line 176
 .end method
 
-.method public f()Lcom/facebook/soloader/r$d;
+.method public g()Lcom/facebook/soloader/r$d;
     .locals 3
 
     .line 1
@@ -266,7 +266,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, Lcom/facebook/soloader/j$c;->i(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
+    invoke-static {v0}, Lcom/facebook/soloader/j$c;->h(Lcom/facebook/soloader/j$c;)[Lcom/facebook/soloader/j$b;
 
     .line 9
     .line 10
@@ -294,7 +294,7 @@
 
     .line 21
     .line 22
-    invoke-static {v1}, Lcom/facebook/soloader/j$c;->k(Lcom/facebook/soloader/j$c;)Ljava/util/zip/ZipFile;
+    invoke-static {v1}, Lcom/facebook/soloader/j$c;->i(Lcom/facebook/soloader/j$c;)Ljava/util/zip/ZipFile;
 
     .line 23
     .line 24

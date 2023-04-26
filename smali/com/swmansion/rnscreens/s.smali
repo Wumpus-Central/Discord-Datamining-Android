@@ -204,7 +204,6 @@
     :cond_1
     return-void
     .line 23
-    .line 24
 .end method
 
 .method private final K()Z
@@ -358,9 +357,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method private final L(Landroid/view/Menu;)V
@@ -500,9 +496,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 
@@ -671,9 +664,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public final D()Lcom/swmansion/rnscreens/c;
@@ -732,7 +722,6 @@
     return-void
     .line 22
     .line 23
-    .line 24
 .end method
 
 .method public final G(Lkotlin/jvm/functions/Function1;)V
@@ -871,9 +860,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final I(Z)V
@@ -937,7 +923,6 @@
     :cond_2
     return-void
     .line 26
-    .line 27
 .end method
 
 .method public final J(Z)V
@@ -1066,9 +1051,6 @@
     .line 85
     .line 86
     .line 87
-    .line 88
-    .line 89
-    .line 90
 .end method
 
 .method public final dismiss()V
@@ -1198,9 +1180,6 @@
     .line 92
     .line 93
     .line 94
-    .line 95
-    .line 96
-    .line 97
 .end method
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
@@ -1266,8 +1245,6 @@
     .line 45
     .line 46
     .line 47
-    .line 48
-    .line 49
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
@@ -1572,7 +1549,6 @@
     .line 24
     .line 25
     .line 26
-    .line 27
 .end method
 
 .method public r()V
@@ -1625,5 +1601,4 @@
     .line 21
     .line 22
     .line 23
-    .line 24
 .end method

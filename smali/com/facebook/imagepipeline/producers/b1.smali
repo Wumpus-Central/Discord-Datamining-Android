@@ -571,7 +571,7 @@
     move-result-object v1
 
     .line 45
-    invoke-interface {v1, v0, p1}, Lcom/facebook/imagepipeline/nativecode/i;->c(Ljava/io/InputStream;Ljava/io/OutputStream;)V
+    invoke-interface {v1, v0, p1}, Lcom/facebook/imagepipeline/nativecode/i;->b(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
     .line 46
     .line 47
@@ -602,7 +602,7 @@
 
     .line 59
     .line 60
-    invoke-interface {v1, v0, p1, v2}, Lcom/facebook/imagepipeline/nativecode/i;->a(Ljava/io/InputStream;Ljava/io/OutputStream;I)V
+    invoke-interface {v1, v0, p1, v2}, Lcom/facebook/imagepipeline/nativecode/i;->c(Ljava/io/InputStream;Ljava/io/OutputStream;I)V
 
     .line 61
     .line 62
@@ -786,7 +786,7 @@
 
     .line 33
     :cond_0
-    invoke-interface {v0, p0}, Lcom/facebook/imagepipeline/nativecode/i;->b(Li5/c;)Z
+    invoke-interface {v0, p0}, Lcom/facebook/imagepipeline/nativecode/i;->a(Li5/c;)Z
 
     .line 34
     .line 35
@@ -853,7 +853,6 @@
     .line 73
     .line 74
     .line 75
-    .line 76
 .end method
 
 .method private i(Lu5/e;Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;)V
@@ -876,7 +875,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lu5/e;->f(Lu5/e;)Lu5/e;
+    invoke-static {p1}, Lu5/e;->g(Lu5/e;)Lu5/e;
 
     .line 5
     .line 6
@@ -888,7 +887,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->n()Lcom/facebook/imagepipeline/producers/n0;
+    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->h()Lcom/facebook/imagepipeline/producers/n0;
 
     .line 11
     .line 12

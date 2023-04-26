@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public abstract l(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
+.method public abstract i(Lcom/google/android/exoplayer2/upstream/h$e;JJZ)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;JJZ)V"
@@ -32,7 +32,7 @@
     .end annotation
 .end method
 
-.method public abstract m(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+.method public abstract j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;JJ)V"
@@ -40,7 +40,7 @@
     .end annotation
 .end method
 
-.method public abstract t(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
+.method public abstract o(Lcom/google/android/exoplayer2/upstream/h$e;JJLjava/io/IOException;I)Lcom/google/android/exoplayer2/upstream/h$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;JJ",
