@@ -253,15 +253,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
 .end method
 
 .method private constructor <init>()V
@@ -475,15 +466,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
 .end method
 
 .method public deserialize(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/notifications/api/Sticker;

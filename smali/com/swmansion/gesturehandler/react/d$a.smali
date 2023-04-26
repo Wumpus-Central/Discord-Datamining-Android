@@ -190,6 +190,22 @@
     .line 45
     .line 46
     .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
 .end method
 
 .method public final b(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
@@ -360,4 +376,49 @@
     .line 127
     .line 128
     .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
 .end method

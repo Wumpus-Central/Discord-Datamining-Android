@@ -1,5 +1,5 @@
 .class public final Lcom/discord/client_info/ClientInfoManagerModule;
-.super Lcom/discord/codegen/client_info/NativeClientInfoManagerSpec;
+.super Lcom/discord/codegen/NativeClientInfoManagerSpec;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/client_info/ClientInfoManagerModule;",
-        "Lcom/discord/codegen/client_info/NativeClientInfoManagerSpec;",
+        "Lcom/discord/codegen/NativeClientInfoManagerSpec;",
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -71,7 +71,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1}, Lcom/discord/codegen/client_info/NativeClientInfoManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {p0, p1}, Lcom/discord/codegen/NativeClientInfoManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 7
     .line 8

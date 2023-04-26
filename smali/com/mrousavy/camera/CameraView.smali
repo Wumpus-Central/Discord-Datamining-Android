@@ -566,6 +566,97 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/ExecutorService;)V
@@ -913,6 +1004,16 @@
     .line 190
     .line 191
     .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
 .end method
 
 .method public static synthetic a(Lcom/mrousavy/camera/CameraView;Landroid/view/View;Landroid/view/MotionEvent;)Z
@@ -1084,6 +1185,236 @@
     .line 127
     .line 128
     .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
+    .line 252
+    .line 253
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
+    .line 278
+    .line 279
+    .line 280
+    .line 281
+    .line 282
+    .line 283
+    .line 284
+    .line 285
+    .line 286
+    .line 287
+    .line 288
+    .line 289
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    .line 307
+    .line 308
+    .line 309
+    .line 310
+    .line 311
+    .line 312
+    .line 313
+    .line 314
+    .line 315
+    .line 316
+    .line 317
+    .line 318
+    .line 319
+    .line 320
+    .line 321
+    .line 322
+    .line 323
+    .line 324
+    .line 325
+    .line 326
+    .line 327
+    .line 328
+    .line 329
+    .line 330
+    .line 331
+    .line 332
+    .line 333
+    .line 334
+    .line 335
+    .line 336
+    .line 337
+    .line 338
+    .line 339
+    .line 340
+    .line 341
+    .line 342
+    .line 343
+    .line 344
+    .line 345
+    .line 346
+    .line 347
+    .line 348
+    .line 349
+    .line 350
+    .line 351
+    .line 352
+    .line 353
+    .line 354
+    .line 355
+    .line 356
+    .line 357
+    .line 358
+    .line 359
 .end method
 
 .method public static final synthetic e(Lcom/mrousavy/camera/CameraView;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -1333,6 +1664,97 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method public static synthetic getPreviewView$react_native_vision_camera_release$annotations()V
@@ -1453,3208 +1875,1600 @@
         }
     .end annotation
 
-    .line 1
     move-object/from16 v1, p0
 
-    .line 2
-    .line 3
     move-object/from16 v0, p1
 
-    .line 4
-    .line 5
     instance-of v2, v0, Lcom/mrousavy/camera/CameraView$d;
 
-    .line 6
-    .line 7
     if-eqz v2, :cond_0
 
-    .line 8
-    .line 9
     move-object v2, v0
 
-    .line 10
     check-cast v2, Lcom/mrousavy/camera/CameraView$d;
 
-    .line 11
-    .line 12
     iget v3, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 13
-    .line 14
     const/high16 v4, -0x80000000
 
-    .line 15
-    .line 16
     and-int v5, v3, v4
 
-    .line 17
-    .line 18
     if-eqz v5, :cond_0
 
-    .line 19
-    .line 20
     sub-int/2addr v3, v4
 
-    .line 21
     iput v3, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 22
-    .line 23
     goto :goto_0
 
-    .line 24
     :cond_0
     new-instance v2, Lcom/mrousavy/camera/CameraView$d;
 
-    .line 25
-    .line 26
     invoke-direct {v2, v1, v0}, Lcom/mrousavy/camera/CameraView$d;-><init>(Lcom/mrousavy/camera/CameraView;Lkotlin/coroutines/Continuation;)V
 
-    .line 27
-    .line 28
-    .line 29
     :goto_0
     iget-object v0, v2, Lcom/mrousavy/camera/CameraView$d;->t:Ljava/lang/Object;
 
-    .line 30
-    .line 31
     invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
 
-    .line 32
-    .line 33
-    .line 34
     move-result-object v3
 
-    .line 35
+    .line 1
     iget v4, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 36
-    .line 37
     const/4 v5, 0x3
 
-    .line 38
     const/4 v6, 0x2
 
-    .line 39
     const-string v8, "CameraView"
 
-    .line 40
-    .line 41
     const/4 v9, 0x1
 
-    .line 42
     if-eqz v4, :cond_4
 
-    .line 43
-    .line 44
     if-eq v4, v9, :cond_3
 
-    .line 45
-    .line 46
     if-eq v4, v6, :cond_2
 
-    .line 47
-    .line 48
     if-ne v4, v5, :cond_1
 
-    .line 49
-    .line 50
     iget-wide v3, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 51
-    .line 52
     iget-object v5, v2, Lcom/mrousavy/camera/CameraView$d;->q:Ljava/lang/Object;
 
-    .line 53
-    .line 54
     check-cast v5, Landroidx/camera/core/m0$c;
 
-    .line 55
-    .line 56
     iget-object v11, v2, Lcom/mrousavy/camera/CameraView$d;->p:Ljava/lang/Object;
 
-    .line 57
-    .line 58
     check-cast v11, Li0/o0$h;
 
-    .line 59
-    .line 60
     iget-object v12, v2, Lcom/mrousavy/camera/CameraView$d;->o:Ljava/lang/Object;
 
-    .line 61
-    .line 62
     check-cast v12, Landroidx/camera/core/g1$e;
 
-    .line 63
-    .line 64
     iget-object v13, v2, Lcom/mrousavy/camera/CameraView$d;->n:Ljava/lang/Object;
 
-    .line 65
-    .line 66
     check-cast v13, Landroidx/camera/core/a2$b;
 
-    .line 67
-    .line 68
     iget-object v14, v2, Lcom/mrousavy/camera/CameraView$d;->m:Ljava/lang/Object;
 
-    .line 69
-    .line 70
     check-cast v14, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 71
-    .line 72
     iget-object v15, v2, Lcom/mrousavy/camera/CameraView$d;->l:Ljava/lang/Object;
 
-    .line 73
-    .line 74
     check-cast v15, Landroidx/camera/lifecycle/e;
 
-    .line 75
-    .line 76
     iget-object v2, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 77
-    .line 78
     check-cast v2, Lcom/mrousavy/camera/CameraView;
 
-    .line 79
-    .line 80
     :try_start_0
     invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 81
-    .line 82
-    .line 83
     move-object/from16 v17, v8
 
-    .line 84
-    .line 85
     goto/16 :goto_f
 
-    .line 86
-    .line 87
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 88
-    .line 89
     const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
 
-    .line 90
-    .line 91
     invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 92
-    .line 93
-    .line 94
     throw v0
 
-    .line 95
     :cond_2
     iget-wide v11, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 96
-    .line 97
     iget-object v4, v2, Lcom/mrousavy/camera/CameraView$d;->r:Ljava/lang/Object;
 
-    .line 98
-    .line 99
     check-cast v4, Landroidx/camera/core/m0$c;
 
-    .line 100
-    .line 101
     iget-object v13, v2, Lcom/mrousavy/camera/CameraView$d;->q:Ljava/lang/Object;
 
-    .line 102
-    .line 103
     check-cast v13, Li0/o0$h;
 
-    .line 104
-    .line 105
     iget-object v14, v2, Lcom/mrousavy/camera/CameraView$d;->p:Ljava/lang/Object;
 
-    .line 106
-    .line 107
     check-cast v14, Landroidx/camera/core/g1$e;
 
-    .line 108
-    .line 109
     iget-object v15, v2, Lcom/mrousavy/camera/CameraView$d;->o:Ljava/lang/Object;
 
-    .line 110
-    .line 111
     check-cast v15, Landroidx/camera/core/a2$b;
 
-    .line 112
-    .line 113
     iget-object v5, v2, Lcom/mrousavy/camera/CameraView$d;->n:Ljava/lang/Object;
 
-    .line 114
-    .line 115
     check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    .line 116
-    .line 117
     iget-object v6, v2, Lcom/mrousavy/camera/CameraView$d;->m:Ljava/lang/Object;
 
-    .line 118
-    .line 119
     check-cast v6, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 120
-    .line 121
     iget-object v10, v2, Lcom/mrousavy/camera/CameraView$d;->l:Ljava/lang/Object;
 
-    .line 122
-    .line 123
     check-cast v10, Landroidx/camera/lifecycle/e;
 
-    .line 124
-    .line 125
     iget-object v7, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 126
-    .line 127
     check-cast v7, Lcom/mrousavy/camera/CameraView;
 
-    .line 128
-    .line 129
     :try_start_1
     invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 130
-    .line 131
-    .line 132
     move-object v1, v3
 
-    .line 133
     move-object/from16 v17, v8
 
-    .line 134
-    .line 135
     goto/16 :goto_c
 
-    .line 136
-    .line 137
     :cond_3
     iget-wide v4, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 138
-    .line 139
     iget-object v6, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 140
-    .line 141
     check-cast v6, Lcom/mrousavy/camera/CameraView;
 
-    .line 142
-    .line 143
     :try_start_2
     invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 144
-    .line 145
-    .line 146
     move-wide v11, v4
 
-    .line 147
     move-object v7, v6
 
-    .line 148
     goto :goto_2
 
-    .line 149
     :cond_4
     invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
 
-    .line 150
-    .line 151
-    .line 152
+    .line 2
     :try_start_3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 153
-    .line 154
-    .line 155
     move-result-wide v4
 
-    .line 156
     const-string v0, "Configuring session..."
 
-    .line 157
-    .line 158
+    .line 3
     invoke-static {v8, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 159
-    .line 160
-    .line 161
+    .line 4
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    .line 162
-    .line 163
-    .line 164
     move-result-object v0
 
-    .line 165
     const-string v6, "android.permission.CAMERA"
 
-    .line 166
-    .line 167
     invoke-static {v0, v6}, Landroidx/core/content/a;->a(Landroid/content/Context;Ljava/lang/String;)I
 
-    .line 168
-    .line 169
-    .line 170
     move-result v0
 
-    .line 171
     if-nez v0, :cond_23
 
-    .line 172
-    .line 173
+    .line 5
     iget-object v0, v1, Lcom/mrousavy/camera/CameraView;->l:Ljava/lang/String;
 
-    .line 174
-    .line 175
     if-eqz v0, :cond_22
 
-    .line 176
-    .line 177
+    .line 6
     iget-object v0, v1, Lcom/mrousavy/camera/CameraView;->t:Lcom/facebook/react/bridge/ReadableMap;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 178
-    .line 179
     const-string v6, "Configuring session with Camera ID "
 
-    .line 180
-    .line 181
     if-eqz v0, :cond_5
 
-    .line 182
-    .line 183
+    .line 7
     :try_start_4
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 184
-    .line 185
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 186
-    .line 187
-    .line 188
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 189
-    .line 190
-    .line 191
     iget-object v6, v1, Lcom/mrousavy/camera/CameraView;->l:Ljava/lang/String;
 
-    .line 192
-    .line 193
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 194
-    .line 195
-    .line 196
     const-string v6, " and custom format..."
 
-    .line 197
-    .line 198
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 199
-    .line 200
-    .line 201
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 202
-    .line 203
-    .line 204
     move-result-object v0
 
-    .line 205
     invoke-static {v8, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 206
-    .line 207
-    .line 208
     goto :goto_1
 
-    .line 209
+    .line 8
     :cond_5
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 210
-    .line 211
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 212
-    .line 213
-    .line 214
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 215
-    .line 216
-    .line 217
     iget-object v6, v1, Lcom/mrousavy/camera/CameraView;->l:Ljava/lang/String;
 
-    .line 218
-    .line 219
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 220
-    .line 221
-    .line 222
     const-string v6, " and default format options..."
 
-    .line 223
-    .line 224
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 225
-    .line 226
-    .line 227
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 228
-    .line 229
-    .line 230
     move-result-object v0
 
-    .line 231
     invoke-static {v8, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 232
-    .line 233
-    .line 234
+    .line 9
     :goto_1
     invoke-direct/range {p0 .. p0}, Lcom/mrousavy/camera/CameraView;->getReactContext()Lcom/facebook/react/bridge/ReactContext;
 
-    .line 235
-    .line 236
-    .line 237
     move-result-object v0
 
-    .line 238
     invoke-static {v0}, Landroidx/camera/lifecycle/e;->g(Landroid/content/Context;)Lfc/b;
 
-    .line 239
-    .line 240
-    .line 241
     move-result-object v0
 
-    .line 242
     const-string v6, "getInstance(reactContext)"
 
-    .line 243
-    .line 244
     invoke-static {v0, v6}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 245
-    .line 246
-    .line 247
     iput-object v1, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 248
-    .line 249
     iput-wide v4, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 250
-    .line 251
     iput v9, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 252
-    .line 253
     invoke-static {v0, v2}, Lui/a;->b(Lfc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
-    .line 254
-    .line 255
-    .line 256
     move-result-object v0
 
-    .line 257
     if-ne v0, v3, :cond_6
 
-    .line 258
-    .line 259
     return-object v3
 
-    .line 260
     :cond_6
     move-object v7, v1
 
-    .line 261
     move-wide v11, v4
 
-    .line 262
+    .line 10
     :goto_2
     move-object v10, v0
 
-    .line 263
     check-cast v10, Landroidx/camera/lifecycle/e;
 
-    .line 264
-    .line 265
+    .line 11
     new-instance v6, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 266
-    .line 267
     invoke-direct {v6}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 268
-    .line 269
-    .line 270
     new-instance v0, Landroidx/camera/core/t$a;
 
-    .line 271
-    .line 272
     invoke-direct {v0}, Landroidx/camera/core/t$a;-><init>()V
 
-    .line 273
-    .line 274
-    .line 275
     iget-object v4, v7, Lcom/mrousavy/camera/CameraView;->l:Ljava/lang/String;
 
-    .line 276
-    .line 277
     invoke-static {v4}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 278
-    .line 279
-    .line 280
     invoke-static {v0, v4}, Lse/e;->b(Landroidx/camera/core/t$a;Ljava/lang/String;)Landroidx/camera/core/t$a;
 
-    .line 281
-    .line 282
-    .line 283
     move-result-object v0
 
-    .line 284
     invoke-virtual {v0}, Landroidx/camera/core/t$a;->b()Landroidx/camera/core/t;
 
-    .line 285
-    .line 286
-    .line 287
     move-result-object v0
 
-    .line 288
     const-string v4, "Builder().byID(cameraId!!).build()"
 
-    .line 289
-    .line 290
     invoke-static {v0, v4}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 291
-    .line 292
-    .line 293
     iput-object v0, v6, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
-    .line 294
-    .line 295
+    .line 12
     new-instance v5, Lcom/mrousavy/camera/CameraView$e;
 
-    .line 296
-    .line 297
     const/4 v4, 0x0
 
-    .line 298
     invoke-direct {v5, v7, v10, v6, v4}, Lcom/mrousavy/camera/CameraView$e;-><init>(Lcom/mrousavy/camera/CameraView;Landroidx/camera/lifecycle/e;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/coroutines/Continuation;)V
 
-    .line 299
-    .line 300
-    .line 301
+    .line 13
     new-instance v0, Landroidx/camera/core/a2$b;
 
-    .line 302
-    .line 303
     invoke-direct {v0}, Landroidx/camera/core/a2$b;-><init>()V
 
-    .line 304
-    .line 305
-    .line 306
+    .line 14
     invoke-direct {v7}, Lcom/mrousavy/camera/CameraView;->getInputRotation()I
 
-    .line 307
-    .line 308
-    .line 309
     move-result v4
 
-    .line 310
     invoke-virtual {v0, v4}, Landroidx/camera/core/a2$b;->p(I)Landroidx/camera/core/a2$b;
 
-    .line 311
-    .line 312
-    .line 313
     move-result-object v15
 
-    .line 314
     const-string v0, "Builder()\n        .setTa\u2026etRotation(inputRotation)"
 
-    .line 315
-    .line 316
     invoke-static {v15, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 317
-    .line 318
-    .line 319
+    .line 15
     new-instance v0, Landroidx/camera/core/g1$e;
 
-    .line 320
-    .line 321
     invoke-direct {v0}, Landroidx/camera/core/g1$e;-><init>()V
 
-    .line 322
-    .line 323
-    .line 324
+    .line 16
     invoke-direct {v7}, Lcom/mrousavy/camera/CameraView;->getOutputRotation()I
 
-    .line 325
-    .line 326
-    .line 327
     move-result v4
 
-    .line 328
     invoke-virtual {v0, v4}, Landroidx/camera/core/g1$e;->r(I)Landroidx/camera/core/g1$e;
 
-    .line 329
-    .line 330
-    .line 331
     move-result-object v0
 
-    .line 332
+    .line 17
     invoke-virtual {v0, v9}, Landroidx/camera/core/g1$e;->i(I)Landroidx/camera/core/g1$e;
 
-    .line 333
-    .line 334
-    .line 335
     move-result-object v14
 
-    .line 336
     const-string v0, "Builder()\n        .setTa\u2026RE_MODE_MINIMIZE_LATENCY)"
 
-    .line 337
-    .line 338
     invoke-static {v14, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 339
-    .line 340
-    .line 341
+    .line 18
     new-instance v0, Li0/o0$h;
 
-    .line 342
-    .line 343
     invoke-direct {v0}, Li0/o0$h;-><init>()V
 
-    .line 344
-    .line 345
-    .line 346
+    .line 19
     iget-object v4, v7, Lcom/mrousavy/camera/CameraView;->G:Ljava/util/concurrent/ExecutorService;
 
-    .line 347
-    .line 348
     invoke-virtual {v0, v4}, Li0/o0$h;->d(Ljava/util/concurrent/Executor;)Li0/o0$h;
 
-    .line 349
-    .line 350
-    .line 351
     move-result-object v13
 
-    .line 352
     const-string v0, "Builder()\n        .setExecutor(cameraExecutor)"
 
-    .line 353
-    .line 354
     invoke-static {v13, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 355
-    .line 356
-    .line 357
+    .line 20
     new-instance v0, Landroidx/camera/core/m0$c;
 
-    .line 358
-    .line 359
     invoke-direct {v0}, Landroidx/camera/core/m0$c;-><init>()V
 
-    .line 360
-    .line 361
-    .line 362
+    .line 21
     invoke-direct {v7}, Lcom/mrousavy/camera/CameraView;->getOutputRotation()I
 
-    .line 363
-    .line 364
-    .line 365
     move-result v4
 
-    .line 366
     invoke-virtual {v0, v4}, Landroidx/camera/core/m0$c;->p(I)Landroidx/camera/core/m0$c;
 
-    .line 367
-    .line 368
-    .line 369
     move-result-object v0
 
-    .line 370
     const/4 v4, 0x0
 
-    .line 371
+    .line 22
     invoke-virtual {v0, v4}, Landroidx/camera/core/m0$c;->i(I)Landroidx/camera/core/m0$c;
 
-    .line 372
-    .line 373
-    .line 374
     move-result-object v0
 
-    .line 375
+    .line 23
     iget-object v4, v7, Lcom/mrousavy/camera/CameraView;->k:Ljava/util/concurrent/ExecutorService;
 
-    .line 376
-    .line 377
     invoke-virtual {v0, v4}, Landroidx/camera/core/m0$c;->h(Ljava/util/concurrent/Executor;)Landroidx/camera/core/m0$c;
 
-    .line 378
-    .line 379
-    .line 380
     move-result-object v4
 
-    .line 381
     const-string v0, "Builder()\n        .setTa\u2026tor(frameProcessorThread)"
 
-    .line 382
-    .line 383
     invoke-static {v4, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 384
-    .line 385
-    .line 386
+    .line 24
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->t:Lcom/facebook/react/bridge/ReadableMap;
 
-    .line 387
-    .line 388
     if-nez v0, :cond_7
 
-    .line 389
-    .line 390
     const-string v0, "No custom format has been set, CameraX will automatically determine best configuration..."
 
-    .line 391
-    .line 392
+    .line 25
     invoke-static {v8, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 393
-    .line 394
-    .line 395
+    .line 26
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->F:Landroidx/camera/view/l;
 
-    .line 396
-    .line 397
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
-    .line 398
-    .line 399
-    .line 400
     move-result v0
 
-    .line 401
     iget-object v2, v7, Lcom/mrousavy/camera/CameraView;->F:Landroidx/camera/view/l;
 
-    .line 402
-    .line 403
     invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
-    .line 404
-    .line 405
-    .line 406
     move-result v2
 
-    .line 407
     invoke-static {v0, v2}, Lse/a;->a(II)I
 
-    .line 408
-    .line 409
-    .line 410
     move-result v0
 
-    .line 411
+    .line 27
     invoke-virtual {v15, v0}, Landroidx/camera/core/a2$b;->l(I)Landroidx/camera/core/a2$b;
 
-    .line 412
-    .line 413
-    .line 414
+    .line 28
     invoke-virtual {v14, v0}, Landroidx/camera/core/g1$e;->n(I)Landroidx/camera/core/g1$e;
 
-    .line 415
-    .line 416
-    .line 417
+    .line 29
     invoke-virtual {v4, v0}, Landroidx/camera/core/m0$c;->l(I)Landroidx/camera/core/m0$c;
 
-    .line 418
-    .line 419
-    .line 420
     move-object/from16 v17, v8
 
-    .line 421
-    .line 422
     const/4 v1, 0x0
 
-    .line 423
     goto/16 :goto_10
 
-    .line 424
-    .line 425
+    .line 30
     :cond_7
     new-instance v9, Lse/h;
 
-    .line 426
-    .line 427
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 428
-    .line 429
-    .line 430
     invoke-direct {v9, v0}, Lse/h;-><init>(Lcom/facebook/react/bridge/ReadableMap;)V
 
-    .line 431
-    .line 432
-    .line 433
+    .line 31
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 434
-    .line 435
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 436
-    .line 437
-    .line 438
     const-string v1, "Using custom format - photo: "
 
-    .line 439
-    .line 440
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 441
-    .line 442
-    .line 443
     invoke-virtual {v9}, Lse/h;->b()Landroid/util/Size;
 
-    .line 444
-    .line 445
-    .line 446
     move-result-object v1
 
-    .line 447
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 448
-    .line 449
-    .line 450
     const-string v1, ", video: "
 
-    .line 451
-    .line 452
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 453
-    .line 454
-    .line 455
     invoke-virtual {v9}, Lse/h;->c()Landroid/util/Size;
 
-    .line 456
-    .line 457
-    .line 458
     move-result-object v1
 
-    .line 459
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 460
-    .line 461
-    .line 462
     const-string v1, " @ "
 
-    .line 463
-    .line 464
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 465
-    .line 466
-    .line 467
     iget-object v1, v7, Lcom/mrousavy/camera/CameraView;->u:Ljava/lang/Integer;
 
-    .line 468
-    .line 469
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 470
-    .line 471
-    .line 472
     const-string v1, " FPS"
 
-    .line 473
-    .line 474
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 475
-    .line 476
-    .line 477
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 478
-    .line 479
-    .line 480
     move-result-object v0
 
-    .line 481
     invoke-static {v8, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 482
-    .line 483
-    .line 484
+    .line 32
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->q:Ljava/lang/Boolean;
 
-    .line 485
-    .line 486
     move-object/from16 v16, v3
 
-    .line 487
-    .line 488
     const/4 v1, 0x1
 
-    .line 489
     invoke-static {v1}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
 
-    .line 490
-    .line 491
-    .line 492
     move-result-object v3
 
-    .line 493
     invoke-static {v0, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 494
-    .line 495
-    .line 496
     move-result v0
 
-    .line 497
     if-eqz v0, :cond_8
 
-    .line 498
-    .line 499
+    .line 33
     invoke-virtual {v9}, Lse/h;->c()Landroid/util/Size;
 
-    .line 500
-    .line 501
-    .line 502
     move-result-object v0
 
-    .line 503
     invoke-virtual {v15, v0}, Landroidx/camera/core/a2$b;->o(Landroid/util/Size;)Landroidx/camera/core/a2$b;
 
-    .line 504
-    .line 505
-    .line 506
     goto :goto_3
 
-    .line 507
+    .line 34
     :cond_8
     invoke-virtual {v9}, Lse/h;->b()Landroid/util/Size;
 
-    .line 508
-    .line 509
-    .line 510
     move-result-object v0
 
-    .line 511
     invoke-virtual {v15, v0}, Landroidx/camera/core/a2$b;->o(Landroid/util/Size;)Landroidx/camera/core/a2$b;
 
-    .line 512
-    .line 513
-    .line 514
+    .line 35
     :goto_3
     invoke-virtual {v9}, Lse/h;->b()Landroid/util/Size;
 
-    .line 515
-    .line 516
-    .line 517
     move-result-object v0
 
-    .line 518
     invoke-virtual {v14, v0}, Landroidx/camera/core/g1$e;->q(Landroid/util/Size;)Landroidx/camera/core/g1$e;
 
-    .line 519
-    .line 520
-    .line 521
+    .line 36
     invoke-virtual {v9}, Lse/h;->b()Landroid/util/Size;
 
-    .line 522
-    .line 523
-    .line 524
     move-result-object v0
 
-    .line 525
     invoke-virtual {v4, v0}, Landroidx/camera/core/m0$c;->o(Landroid/util/Size;)Landroidx/camera/core/m0$c;
 
-    .line 526
-    .line 527
-    .line 528
+    .line 37
     invoke-virtual {v9}, Lse/h;->c()Landroid/util/Size;
 
-    .line 529
-    .line 530
-    .line 531
     move-result-object v0
 
-    .line 532
     invoke-virtual {v0}, Landroid/util/Size;->getHeight()I
 
-    .line 533
-    .line 534
-    .line 535
     move-result v0
 
-    .line 536
     invoke-virtual {v9}, Lse/h;->c()Landroid/util/Size;
 
-    .line 537
-    .line 538
-    .line 539
     move-result-object v1
 
-    .line 540
     invoke-virtual {v1}, Landroid/util/Size;->getWidth()I
 
-    .line 541
-    .line 542
-    .line 543
     move-result v1
 
-    .line 544
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
-    .line 545
-    .line 546
-    .line 547
     move-result v0
 
-    .line 548
     if-ltz v0, :cond_9
 
-    .line 549
-    .line 550
     const/16 v1, 0x1e1
 
-    .line 551
-    .line 552
     if-ge v0, v1, :cond_9
 
-    .line 553
-    .line 554
     const/4 v1, 0x1
 
-    .line 555
     goto :goto_4
 
-    .line 556
     :cond_9
     const/4 v1, 0x0
 
-    .line 557
     :goto_4
     if-eqz v1, :cond_a
 
-    .line 558
-    .line 559
+    .line 38
     sget-object v0, Li0/v;->a:Li0/v;
 
-    .line 560
-    .line 561
     invoke-static {v0}, Li0/w;->d(Li0/v;)Li0/w;
 
-    .line 562
-    .line 563
-    .line 564
     move-result-object v0
 
-    .line 565
     invoke-virtual {v13, v0}, Li0/o0$h;->e(Li0/w;)Li0/o0$h;
 
-    .line 566
-    .line 567
-    .line 568
     goto/16 :goto_9
 
-    .line 569
-    .line 570
     :cond_a
     const/16 v1, 0x1e0
 
-    .line 571
-    .line 572
     if-gt v1, v0, :cond_b
 
-    .line 573
-    .line 574
     const/16 v1, 0x2d1
 
-    .line 575
-    .line 576
     if-ge v0, v1, :cond_b
 
-    .line 577
-    .line 578
     const/4 v1, 0x1
 
-    .line 579
     goto :goto_5
 
-    .line 580
     :cond_b
     const/4 v1, 0x0
 
-    .line 581
     :goto_5
     if-eqz v1, :cond_c
 
-    .line 582
-    .line 583
+    .line 39
     sget-object v0, Li0/v;->b:Li0/v;
 
-    .line 584
-    .line 585
     invoke-static {v0}, Li0/n;->b(Li0/v;)Li0/n;
 
-    .line 586
-    .line 587
-    .line 588
     move-result-object v1
 
-    .line 589
     invoke-static {v0, v1}, Li0/w;->e(Li0/v;Li0/n;)Li0/w;
 
-    .line 590
-    .line 591
-    .line 592
     move-result-object v0
 
-    .line 593
     invoke-virtual {v13, v0}, Li0/o0$h;->e(Li0/w;)Li0/o0$h;
 
-    .line 594
-    .line 595
-    .line 596
     goto :goto_9
 
-    .line 597
     :cond_c
     const/16 v1, 0x2d0
 
-    .line 598
-    .line 599
     if-gt v1, v0, :cond_d
 
-    .line 600
-    .line 601
     const/16 v1, 0x439
 
-    .line 602
-    .line 603
     if-ge v0, v1, :cond_d
 
-    .line 604
-    .line 605
     const/4 v1, 0x1
 
-    .line 606
     goto :goto_6
 
-    .line 607
     :cond_d
     const/4 v1, 0x0
 
-    .line 608
     :goto_6
     if-eqz v1, :cond_e
 
-    .line 609
-    .line 610
+    .line 40
     sget-object v0, Li0/v;->c:Li0/v;
 
-    .line 611
-    .line 612
     invoke-static {v0}, Li0/n;->b(Li0/v;)Li0/n;
 
-    .line 613
-    .line 614
-    .line 615
     move-result-object v1
 
-    .line 616
     invoke-static {v0, v1}, Li0/w;->e(Li0/v;Li0/n;)Li0/w;
 
-    .line 617
-    .line 618
-    .line 619
     move-result-object v0
 
-    .line 620
     invoke-virtual {v13, v0}, Li0/o0$h;->e(Li0/w;)Li0/o0$h;
 
-    .line 621
-    .line 622
-    .line 623
     goto :goto_9
 
-    .line 624
     :cond_e
     const/16 v1, 0x438
 
-    .line 625
-    .line 626
     if-gt v1, v0, :cond_f
 
-    .line 627
-    .line 628
     const/16 v1, 0x871
 
-    .line 629
-    .line 630
     if-ge v0, v1, :cond_f
 
-    .line 631
-    .line 632
     const/4 v1, 0x1
 
-    .line 633
     goto :goto_7
 
-    .line 634
     :cond_f
     const/4 v1, 0x0
 
-    .line 635
     :goto_7
     if-eqz v1, :cond_10
 
-    .line 636
-    .line 637
+    .line 41
     sget-object v0, Li0/v;->d:Li0/v;
 
-    .line 638
-    .line 639
     invoke-static {v0}, Li0/n;->b(Li0/v;)Li0/n;
 
-    .line 640
-    .line 641
-    .line 642
     move-result-object v1
 
-    .line 643
     invoke-static {v0, v1}, Li0/w;->e(Li0/v;Li0/n;)Li0/w;
 
-    .line 644
-    .line 645
-    .line 646
     move-result-object v0
 
-    .line 647
     invoke-virtual {v13, v0}, Li0/o0$h;->e(Li0/w;)Li0/o0$h;
 
-    .line 648
-    .line 649
-    .line 650
     goto :goto_9
 
-    .line 651
     :cond_10
     const/16 v1, 0x870
 
-    .line 652
-    .line 653
     if-gt v1, v0, :cond_11
 
-    .line 654
-    .line 655
     const/16 v1, 0x10e1
 
-    .line 656
-    .line 657
     if-ge v0, v1, :cond_11
 
-    .line 658
-    .line 659
     const/4 v0, 0x1
 
-    .line 660
     goto :goto_8
 
-    .line 661
     :cond_11
     const/4 v0, 0x0
 
-    .line 662
     :goto_8
     if-eqz v0, :cond_12
 
-    .line 663
-    .line 664
+    .line 42
     sget-object v0, Li0/v;->f:Li0/v;
 
-    .line 665
-    .line 666
     invoke-static {v0}, Li0/n;->b(Li0/v;)Li0/n;
 
-    .line 667
-    .line 668
-    .line 669
     move-result-object v1
 
-    .line 670
     invoke-static {v0, v1}, Li0/w;->e(Li0/v;Li0/n;)Li0/w;
 
-    .line 671
-    .line 672
-    .line 673
     move-result-object v0
 
-    .line 674
     invoke-virtual {v13, v0}, Li0/o0$h;->e(Li0/w;)Li0/o0$h;
 
-    .line 675
-    .line 676
-    .line 677
+    .line 43
     :cond_12
     :goto_9
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->u:Ljava/lang/Integer;
 
-    .line 678
-    .line 679
     if-eqz v0, :cond_17
 
-    .line 680
-    .line 681
     invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
 
-    .line 682
-    .line 683
-    .line 684
     move-result v0
 
-    .line 685
+    .line 44
     invoke-virtual {v9}, Lse/h;->a()Ljava/util/List;
 
-    .line 686
-    .line 687
-    .line 688
     move-result-object v1
 
-    .line 689
+    .line 45
     instance-of v3, v1, Ljava/util/Collection;
 
-    .line 690
-    .line 691
     if-eqz v3, :cond_14
 
-    .line 692
-    .line 693
     invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
 
-    .line 694
-    .line 695
-    .line 696
     move-result v3
 
-    .line 697
     if-eqz v3, :cond_14
 
-    .line 698
-    .line 699
     :cond_13
     const/4 v1, 0x0
 
-    .line 700
     goto :goto_a
 
-    .line 701
+    .line 46
     :cond_14
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    .line 702
-    .line 703
-    .line 704
     move-result-object v1
 
-    .line 705
     :cond_15
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 706
-    .line 707
-    .line 708
     move-result v3
 
-    .line 709
     if-eqz v3, :cond_13
 
-    .line 710
-    .line 711
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 712
-    .line 713
-    .line 714
     move-result-object v3
 
-    .line 715
     check-cast v3, Landroid/util/Range;
 
-    .line 716
-    .line 717
+    .line 47
     invoke-static {v0}, Lkotlin/coroutines/jvm/internal/b;->c(I)Ljava/lang/Integer;
 
-    .line 718
-    .line 719
-    .line 720
     move-result-object v9
 
-    .line 721
     invoke-virtual {v3, v9}, Landroid/util/Range;->contains(Ljava/lang/Comparable;)Z
 
-    .line 722
-    .line 723
-    .line 724
     move-result v3
 
-    .line 725
     if-eqz v3, :cond_15
 
-    .line 726
-    .line 727
     const/4 v1, 0x1
 
-    .line 728
     :goto_a
     if-eqz v1, :cond_16
 
-    .line 729
-    .line 730
     const-wide/high16 v17, 0x3ff0000000000000L    # 1.0
 
-    .line 731
-    .line 732
     move-wide/from16 v19, v11
 
-    .line 733
-    .line 734
     int-to-double v11, v0
 
-    .line 735
     div-double v11, v17, v11
 
-    .line 736
-    .line 737
     double-to-long v11, v11
 
-    .line 738
     const v1, 0x3b9aca00
 
-    .line 739
-    .line 740
-    .line 741
     move-object v9, v4
 
-    .line 742
     int-to-long v3, v1
 
-    .line 743
     mul-long/2addr v11, v3
 
-    .line 744
+    .line 48
     new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 745
-    .line 746
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 747
-    .line 748
-    .line 749
     const-string v3, "Setting AE_TARGET_FPS_RANGE to "
 
-    .line 750
-    .line 751
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 752
-    .line 753
-    .line 754
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 755
-    .line 756
-    .line 757
     const/16 v3, 0x2d
 
-    .line 758
-    .line 759
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 760
-    .line 761
-    .line 762
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 763
-    .line 764
-    .line 765
     const-string v3, ", and SENSOR_FRAME_DURATION to "
 
-    .line 766
-    .line 767
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 768
-    .line 769
-    .line 770
     invoke-virtual {v1, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 771
-    .line 772
-    .line 773
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 774
-    .line 775
-    .line 776
     move-result-object v1
 
-    .line 777
     invoke-static {v8, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 778
-    .line 779
-    .line 780
+    .line 49
     new-instance v1, Lv/i;
 
-    .line 781
-    .line 782
     invoke-direct {v1, v15}, Lv/i;-><init>(Landroidx/camera/core/f0;)V
 
-    .line 783
-    .line 784
-    .line 785
+    .line 50
     sget-object v3, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 786
-    .line 787
     new-instance v4, Landroid/util/Range;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 788
-    .line 789
     move-object/from16 v17, v8
 
-    .line 790
-    .line 791
     :try_start_5
     invoke-static {v0}, Lkotlin/coroutines/jvm/internal/b;->c(I)Ljava/lang/Integer;
 
-    .line 792
-    .line 793
-    .line 794
     move-result-object v8
 
-    .line 795
     invoke-static {v0}, Lkotlin/coroutines/jvm/internal/b;->c(I)Ljava/lang/Integer;
 
-    .line 796
-    .line 797
-    .line 798
     move-result-object v0
 
-    .line 799
     invoke-direct {v4, v8, v0}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
 
-    .line 800
-    .line 801
-    .line 802
     invoke-virtual {v1, v3, v4}, Lv/i;->a(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)Lv/i;
 
-    .line 803
-    .line 804
-    .line 805
     move-result-object v0
 
-    .line 806
+    .line 51
     sget-object v1, Landroid/hardware/camera2/CaptureRequest;->SENSOR_FRAME_DURATION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 807
-    .line 808
     invoke-static {v11, v12}, Lkotlin/coroutines/jvm/internal/b;->d(J)Ljava/lang/Long;
 
-    .line 809
-    .line 810
-    .line 811
     move-result-object v3
 
-    .line 812
     invoke-virtual {v0, v1, v3}, Lv/i;->a(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)Lv/i;
 
-    .line 813
-    .line 814
-    .line 815
     goto :goto_b
 
-    .line 816
     :cond_16
     move-object/from16 v17, v8
 
-    .line 817
-    .line 818
+    .line 52
     new-instance v1, Lcom/mrousavy/camera/t;
 
-    .line 819
-    .line 820
     invoke-direct {v1, v0}, Lcom/mrousavy/camera/t;-><init>(I)V
 
-    .line 821
-    .line 822
-    .line 823
     throw v1
 
-    .line 824
     :cond_17
     move-object v9, v4
 
-    .line 825
     move-object/from16 v17, v8
 
-    .line 826
-    .line 827
     move-wide/from16 v19, v11
 
-    .line 828
-    .line 829
+    .line 53
     :goto_b
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->v:Ljava/lang/Boolean;
 
-    .line 830
-    .line 831
     const/4 v1, 0x1
 
-    .line 832
     invoke-static {v1}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
 
-    .line 833
-    .line 834
-    .line 835
     move-result-object v3
 
-    .line 836
     invoke-static {v0, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 837
-    .line 838
-    .line 839
     move-result v0
 
-    .line 840
     if-eqz v0, :cond_19
 
-    .line 841
-    .line 842
     const/4 v1, 0x2
 
-    .line 843
+    .line 54
     invoke-static {v1}, Lkotlin/coroutines/jvm/internal/b;->c(I)Ljava/lang/Integer;
 
-    .line 844
-    .line 845
-    .line 846
     move-result-object v0
 
-    .line 847
     iput-object v7, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 848
-    .line 849
     iput-object v10, v2, Lcom/mrousavy/camera/CameraView$d;->l:Ljava/lang/Object;
 
-    .line 850
-    .line 851
     iput-object v6, v2, Lcom/mrousavy/camera/CameraView$d;->m:Ljava/lang/Object;
 
-    .line 852
-    .line 853
     iput-object v5, v2, Lcom/mrousavy/camera/CameraView$d;->n:Ljava/lang/Object;
 
-    .line 854
-    .line 855
     iput-object v15, v2, Lcom/mrousavy/camera/CameraView$d;->o:Ljava/lang/Object;
 
-    .line 856
-    .line 857
     iput-object v14, v2, Lcom/mrousavy/camera/CameraView$d;->p:Ljava/lang/Object;
 
-    .line 858
-    .line 859
     iput-object v13, v2, Lcom/mrousavy/camera/CameraView$d;->q:Ljava/lang/Object;
 
-    .line 860
-    .line 861
     iput-object v9, v2, Lcom/mrousavy/camera/CameraView$d;->r:Ljava/lang/Object;
 
-    .line 862
-    .line 863
     move-wide/from16 v3, v19
 
-    .line 864
-    .line 865
     iput-wide v3, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 866
-    .line 867
     const/4 v1, 0x2
 
-    .line 868
     iput v1, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 869
-    .line 870
     invoke-interface {v5, v0, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 871
-    .line 872
-    .line 873
     move-result-object v0
 
-    .line 874
     move-object/from16 v1, v16
 
-    .line 875
-    .line 876
     if-ne v0, v1, :cond_18
 
-    .line 877
-    .line 878
     return-object v1
 
-    .line 879
     :cond_18
     move-wide v11, v3
 
-    .line 880
     move-object v4, v9
 
-    .line 881
     :goto_c
     move-object v9, v4
 
-    .line 882
     move-wide v3, v11
 
-    .line 883
     :goto_d
     move-object v11, v13
 
-    .line 884
     move-object v12, v14
 
-    .line 885
     move-object v13, v15
 
-    .line 886
     move-object v14, v6
 
-    .line 887
     move-object v15, v10
 
-    .line 888
     goto :goto_e
 
-    .line 889
     :cond_19
     move-object/from16 v1, v16
 
-    .line 890
-    .line 891
     move-wide/from16 v3, v19
 
-    .line 892
-    .line 893
     goto :goto_d
 
-    .line 894
+    .line 55
     :goto_e
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->x:Ljava/lang/Boolean;
 
-    .line 895
-    .line 896
     const/4 v6, 0x1
 
-    .line 897
     invoke-static {v6}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
 
-    .line 898
-    .line 899
-    .line 900
     move-result-object v8
 
-    .line 901
     invoke-static {v0, v8}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 902
-    .line 903
-    .line 904
     move-result v0
 
-    .line 905
     if-eqz v0, :cond_1b
 
-    .line 906
-    .line 907
     const/4 v0, 0x3
 
-    .line 908
+    .line 56
     invoke-static {v0}, Lkotlin/coroutines/jvm/internal/b;->c(I)Ljava/lang/Integer;
 
-    .line 909
-    .line 910
-    .line 911
     move-result-object v6
 
-    .line 912
     iput-object v7, v2, Lcom/mrousavy/camera/CameraView$d;->k:Ljava/lang/Object;
 
-    .line 913
-    .line 914
     iput-object v15, v2, Lcom/mrousavy/camera/CameraView$d;->l:Ljava/lang/Object;
 
-    .line 915
-    .line 916
     iput-object v14, v2, Lcom/mrousavy/camera/CameraView$d;->m:Ljava/lang/Object;
 
-    .line 917
-    .line 918
     iput-object v13, v2, Lcom/mrousavy/camera/CameraView$d;->n:Ljava/lang/Object;
 
-    .line 919
-    .line 920
     iput-object v12, v2, Lcom/mrousavy/camera/CameraView$d;->o:Ljava/lang/Object;
 
-    .line 921
-    .line 922
     iput-object v11, v2, Lcom/mrousavy/camera/CameraView$d;->p:Ljava/lang/Object;
 
-    .line 923
-    .line 924
     iput-object v9, v2, Lcom/mrousavy/camera/CameraView$d;->q:Ljava/lang/Object;
 
-    .line 925
-    .line 926
     const/4 v8, 0x0
 
-    .line 927
     iput-object v8, v2, Lcom/mrousavy/camera/CameraView$d;->r:Ljava/lang/Object;
 
-    .line 928
-    .line 929
     iput-wide v3, v2, Lcom/mrousavy/camera/CameraView$d;->s:J
 
-    .line 930
-    .line 931
     const/4 v0, 0x3
 
-    .line 932
     iput v0, v2, Lcom/mrousavy/camera/CameraView$d;->v:I
 
-    .line 933
-    .line 934
     invoke-interface {v5, v6, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 935
-    .line 936
-    .line 937
     move-result-object v0
 
-    .line 938
     if-ne v0, v1, :cond_1a
 
-    .line 939
-    .line 940
     return-object v1
 
-    .line 941
     :cond_1a
     move-object v2, v7
 
-    .line 942
     move-object v5, v9
 
-    .line 943
     :goto_f
     move-object v7, v2
 
-    .line 944
     move-object v6, v14
 
-    .line 945
     move-object v10, v15
 
-    .line 946
     const/4 v1, 0x0
 
-    .line 947
     move-object v14, v12
 
-    .line 948
     move-object v15, v13
 
-    .line 949
     move-object v13, v11
 
-    .line 950
     move-wide v11, v3
 
-    .line 951
     move-object v4, v5
 
-    .line 952
     goto :goto_10
 
-    .line 953
     :cond_1b
     move-object v6, v14
 
-    .line 954
     move-object v10, v15
 
-    .line 955
     const/4 v1, 0x0
 
-    .line 956
     move-object v14, v12
 
-    .line 957
     move-object v15, v13
 
-    .line 958
     move-object v13, v11
 
-    .line 959
     move-wide v11, v3
 
-    .line 960
     move-object v4, v9
 
-    .line 961
+    .line 57
     :goto_10
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->M:Li0/c1;
 
-    .line 962
-    .line 963
+    .line 58
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->L:Landroidx/camera/core/g1;
 
-    .line 964
-    .line 965
+    .line 59
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->N:Landroidx/camera/core/m0;
 
-    .line 966
-    .line 967
+    .line 60
     invoke-virtual {v10}, Landroidx/camera/lifecycle/e;->n()V
 
-    .line 968
-    .line 969
-    .line 970
+    .line 61
     new-instance v0, Ljava/util/ArrayList;
 
-    .line 971
-    .line 972
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 973
-    .line 974
-    .line 975
+    .line 62
     iget-object v1, v7, Lcom/mrousavy/camera/CameraView;->q:Ljava/lang/Boolean;
 
-    .line 976
-    .line 977
     const/4 v2, 0x1
 
-    .line 978
     invoke-static {v2}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
 
-    .line 979
-    .line 980
-    .line 981
     move-result-object v3
 
-    .line 982
     invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 983
-    .line 984
-    .line 985
     move-result v1
 
-    .line 986
     if-eqz v1, :cond_1c
 
-    .line 987
-    .line 988
     const-string v1, "Adding VideoCapture use-case..."
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 989
-    .line 990
     move-object/from16 v2, v17
 
-    .line 991
-    .line 992
+    .line 63
     :try_start_6
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 993
-    .line 994
-    .line 995
+    .line 64
     invoke-virtual {v13}, Li0/o0$h;->b()Li0/o0;
 
-    .line 996
-    .line 997
-    .line 998
     move-result-object v1
 
-    .line 999
     const-string v3, "videoRecorderBuilder.build()"
 
-    .line 1000
-    .line 1001
     invoke-static {v1, v3}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1002
-    .line 1003
-    .line 1004
+    .line 65
     invoke-static {v1}, Li0/c1;->Z(Li0/h1;)Li0/c1;
 
-    .line 1005
-    .line 1006
-    .line 1007
     move-result-object v1
 
-    .line 1008
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->M:Li0/c1;
 
-    .line 1009
-    .line 1010
+    .line 66
     invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1011
-    .line 1012
-    .line 1013
     invoke-direct {v7}, Lcom/mrousavy/camera/CameraView;->getOutputRotation()I
 
-    .line 1014
-    .line 1015
-    .line 1016
     move-result v3
 
-    .line 1017
     invoke-virtual {v1, v3}, Li0/c1;->X(I)V
 
-    .line 1018
-    .line 1019
-    .line 1020
+    .line 67
     iget-object v1, v7, Lcom/mrousavy/camera/CameraView;->M:Li0/c1;
 
-    .line 1021
-    .line 1022
     invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1023
-    .line 1024
-    .line 1025
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1026
-    .line 1027
-    .line 1028
     goto :goto_11
 
-    .line 1029
     :cond_1c
     move-object/from16 v2, v17
 
-    .line 1030
-    .line 1031
+    .line 68
     :goto_11
     iget-object v1, v7, Lcom/mrousavy/camera/CameraView;->p:Ljava/lang/Boolean;
 
-    .line 1032
-    .line 1033
     const/4 v3, 0x1
 
-    .line 1034
     invoke-static {v3}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
 
-    .line 1035
-    .line 1036
-    .line 1037
     move-result-object v5
 
-    .line 1038
     invoke-static {v1, v5}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 1039
-    .line 1040
-    .line 1041
     move-result v1
 
-    .line 1042
     if-eqz v1, :cond_1e
 
-    .line 1043
-    .line 1044
+    .line 69
     invoke-virtual {v7}, Lcom/mrousavy/camera/CameraView;->getFallbackToSnapshot$react_native_vision_camera_release()Z
 
-    .line 1045
-    .line 1046
-    .line 1047
     move-result v1
 
-    .line 1048
     if-eqz v1, :cond_1d
 
-    .line 1049
-    .line 1050
     const-string v1, "Tried to add photo use-case (`photo={true}`) but the Camera device only supports a single use-case at a time. Falling back to Snapshot capture."
 
-    .line 1051
-    .line 1052
+    .line 70
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1053
-    .line 1054
-    .line 1055
     goto :goto_12
 
-    .line 1056
     :cond_1d
     const-string v1, "Adding ImageCapture use-case..."
 
-    .line 1057
-    .line 1058
+    .line 71
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1059
-    .line 1060
-    .line 1061
+    .line 72
     invoke-virtual {v14}, Landroidx/camera/core/g1$e;->e()Landroidx/camera/core/g1;
 
-    .line 1062
-    .line 1063
-    .line 1064
     move-result-object v1
 
-    .line 1065
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->L:Landroidx/camera/core/g1;
 
-    .line 1066
-    .line 1067
+    .line 73
     invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1068
-    .line 1069
-    .line 1070
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1071
-    .line 1072
-    .line 1073
+    .line 74
     :cond_1e
     :goto_12
     iget-boolean v1, v7, Lcom/mrousavy/camera/CameraView;->s:Z
 
-    .line 1074
-    .line 1075
     if-eqz v1, :cond_1f
 
-    .line 1076
-    .line 1077
     const-string v1, "Adding ImageAnalysis use-case..."
 
-    .line 1078
-    .line 1079
+    .line 75
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1080
-    .line 1081
-    .line 1082
+    .line 76
     invoke-virtual {v4}, Landroidx/camera/core/m0$c;->e()Landroidx/camera/core/m0;
 
-    .line 1083
-    .line 1084
-    .line 1085
     move-result-object v1
 
-    .line 1086
+    .line 77
     iget-object v3, v7, Lcom/mrousavy/camera/CameraView;->G:Ljava/util/concurrent/ExecutorService;
 
-    .line 1087
-    .line 1088
     new-instance v4, Lcom/mrousavy/camera/h;
 
-    .line 1089
-    .line 1090
     invoke-direct {v4, v7}, Lcom/mrousavy/camera/h;-><init>(Lcom/mrousavy/camera/CameraView;)V
 
-    .line 1091
-    .line 1092
-    .line 1093
     invoke-virtual {v1, v3, v4}, Landroidx/camera/core/m0;->Y(Ljava/util/concurrent/Executor;Landroidx/camera/core/m0$a;)V
 
-    .line 1094
-    .line 1095
-    .line 1096
+    .line 78
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->N:Landroidx/camera/core/m0;
 
-    .line 1097
-    .line 1098
+    .line 79
     invoke-static {v1}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1099
-    .line 1100
-    .line 1101
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1102
-    .line 1103
-    .line 1104
+    .line 80
     :cond_1f
     invoke-virtual {v15}, Landroidx/camera/core/a2$b;->e()Landroidx/camera/core/a2;
 
-    .line 1105
-    .line 1106
-    .line 1107
     move-result-object v1
 
-    .line 1108
     iput-object v1, v7, Lcom/mrousavy/camera/CameraView;->O:Landroidx/camera/core/a2;
 
-    .line 1109
-    .line 1110
+    .line 81
     new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 1111
-    .line 1112
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1113
-    .line 1114
-    .line 1115
     const-string v3, "Attaching "
 
-    .line 1116
-    .line 1117
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1118
-    .line 1119
-    .line 1120
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    .line 1121
-    .line 1122
-    .line 1123
     move-result v3
 
-    .line 1124
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 1125
-    .line 1126
-    .line 1127
     const-string v3, " use-cases..."
 
-    .line 1128
-    .line 1129
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1130
-    .line 1131
-    .line 1132
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 1133
-    .line 1134
-    .line 1135
     move-result-object v1
 
-    .line 1136
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1137
-    .line 1138
-    .line 1139
+    .line 82
     iget-object v1, v6, Lkotlin/jvm/internal/Ref$ObjectRef;->k:Ljava/lang/Object;
 
-    .line 1140
-    .line 1141
     check-cast v1, Landroidx/camera/core/t;
 
-    .line 1142
-    .line 1143
     new-instance v3, Lkotlin/jvm/internal/j0;
 
-    .line 1144
-    .line 1145
     const/4 v4, 0x2
 
-    .line 1146
     invoke-direct {v3, v4}, Lkotlin/jvm/internal/j0;-><init>(I)V
 
-    .line 1147
-    .line 1148
-    .line 1149
     iget-object v4, v7, Lcom/mrousavy/camera/CameraView;->O:Landroidx/camera/core/a2;
 
-    .line 1150
-    .line 1151
     invoke-virtual {v3, v4}, Lkotlin/jvm/internal/j0;->a(Ljava/lang/Object;)V
 
-    .line 1152
-    .line 1153
-    .line 1154
     const/4 v4, 0x0
 
-    .line 1155
     new-array v5, v4, [Landroidx/camera/core/w2;
 
-    .line 1156
-    .line 1157
+    .line 83
     invoke-interface {v0, v5}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 1158
-    .line 1159
-    .line 1160
     move-result-object v0
 
-    .line 1161
+    .line 84
     invoke-virtual {v3, v0}, Lkotlin/jvm/internal/j0;->b(Ljava/lang/Object;)V
 
-    .line 1162
-    .line 1163
-    .line 1164
     invoke-virtual {v3}, Lkotlin/jvm/internal/j0;->c()I
 
-    .line 1165
-    .line 1166
-    .line 1167
     move-result v0
 
-    .line 1168
     new-array v0, v0, [Landroidx/camera/core/w2;
 
-    .line 1169
-    .line 1170
     invoke-virtual {v3, v0}, Lkotlin/jvm/internal/j0;->d([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 1171
-    .line 1172
-    .line 1173
     move-result-object v0
 
-    .line 1174
     check-cast v0, [Landroidx/camera/core/w2;
 
-    .line 1175
-    .line 1176
     invoke-virtual {v10, v7, v1, v0}, Landroidx/camera/lifecycle/e;->f(Landroidx/lifecycle/LifecycleOwner;Landroidx/camera/core/t;[Landroidx/camera/core/w2;)Landroidx/camera/core/k;
 
-    .line 1177
-    .line 1178
-    .line 1179
     move-result-object v0
 
-    .line 1180
     iput-object v0, v7, Lcom/mrousavy/camera/CameraView;->K:Landroidx/camera/core/k;
 
-    .line 1181
-    .line 1182
+    .line 85
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->O:Landroidx/camera/core/a2;
 
-    .line 1183
-    .line 1184
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1185
-    .line 1186
-    .line 1187
     iget-object v1, v7, Lcom/mrousavy/camera/CameraView;->F:Landroidx/camera/view/l;
 
-    .line 1188
-    .line 1189
     invoke-virtual {v1}, Landroidx/camera/view/l;->getSurfaceProvider()Landroidx/camera/core/a2$d;
 
-    .line 1190
-    .line 1191
-    .line 1192
     move-result-object v1
 
-    .line 1193
     invoke-virtual {v0, v1}, Landroidx/camera/core/a2;->T(Landroidx/camera/core/a2$d;)V
 
-    .line 1194
-    .line 1195
-    .line 1196
+    .line 86
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->K:Landroidx/camera/core/k;
 
-    .line 1197
-    .line 1198
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1199
-    .line 1200
-    .line 1201
     invoke-interface {v0}, Landroidx/camera/core/k;->a()Landroidx/camera/core/r;
 
-    .line 1202
-    .line 1203
-    .line 1204
     move-result-object v0
 
-    .line 1205
     invoke-interface {v0}, Landroidx/camera/core/r;->i()Landroidx/lifecycle/LiveData;
 
-    .line 1206
-    .line 1207
-    .line 1208
     move-result-object v0
 
-    .line 1209
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->f()Ljava/lang/Object;
 
-    .line 1210
-    .line 1211
-    .line 1212
     move-result-object v0
 
-    .line 1213
     check-cast v0, Landroidx/camera/core/d3;
 
-    .line 1214
-    .line 1215
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 1216
-    .line 1217
     if-eqz v0, :cond_20
 
-    .line 1218
-    .line 1219
     invoke-interface {v0}, Landroidx/camera/core/d3;->c()F
 
-    .line 1220
-    .line 1221
-    .line 1222
     move-result v0
 
-    .line 1223
     goto :goto_13
 
-    .line 1224
     :cond_20
     move v0, v1
 
-    .line 1225
     :goto_13
     iput v0, v7, Lcom/mrousavy/camera/CameraView;->a0:F
 
-    .line 1226
-    .line 1227
+    .line 87
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->K:Landroidx/camera/core/k;
 
-    .line 1228
-    .line 1229
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1230
-    .line 1231
-    .line 1232
     invoke-interface {v0}, Landroidx/camera/core/k;->a()Landroidx/camera/core/r;
 
-    .line 1233
-    .line 1234
-    .line 1235
     move-result-object v0
 
-    .line 1236
     invoke-interface {v0}, Landroidx/camera/core/r;->i()Landroidx/lifecycle/LiveData;
 
-    .line 1237
-    .line 1238
-    .line 1239
     move-result-object v0
 
-    .line 1240
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->f()Ljava/lang/Object;
 
-    .line 1241
-    .line 1242
-    .line 1243
     move-result-object v0
 
-    .line 1244
     check-cast v0, Landroidx/camera/core/d3;
 
-    .line 1245
-    .line 1246
     if-eqz v0, :cond_21
 
-    .line 1247
-    .line 1248
     invoke-interface {v0}, Landroidx/camera/core/d3;->a()F
 
-    .line 1249
-    .line 1250
-    .line 1251
     move-result v1
 
-    .line 1252
     :cond_21
     iput v1, v7, Lcom/mrousavy/camera/CameraView;->b0:F
 
-    .line 1253
-    .line 1254
+    .line 88
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 1255
-    .line 1256
-    .line 1257
     move-result-wide v0
 
-    .line 1258
     sub-long/2addr v0, v11
 
-    .line 1259
     const-string v3, "CameraView.performance"
 
-    .line 1260
-    .line 1261
+    .line 89
     new-instance v4, Ljava/lang/StringBuilder;
 
-    .line 1262
-    .line 1263
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1264
-    .line 1265
-    .line 1266
     const-string v5, "Session configured in "
 
-    .line 1267
-    .line 1268
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1269
-    .line 1270
-    .line 1271
     invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 1272
-    .line 1273
-    .line 1274
     const-string v0, " ms! Camera: "
 
-    .line 1275
-    .line 1276
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1277
-    .line 1278
-    .line 1279
     iget-object v0, v7, Lcom/mrousavy/camera/CameraView;->K:Landroidx/camera/core/k;
 
-    .line 1280
-    .line 1281
     invoke-static {v0}, Lkotlin/jvm/internal/q;->d(Ljava/lang/Object;)V
 
-    .line 1282
-    .line 1283
-    .line 1284
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 1285
-    .line 1286
-    .line 1287
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 1288
-    .line 1289
-    .line 1290
     move-result-object v0
 
-    .line 1291
     invoke-static {v3, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1292
-    .line 1293
-    .line 1294
+    .line 90
     invoke-static {v7}, Lcom/mrousavy/camera/m;->d(Lcom/mrousavy/camera/CameraView;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 1295
-    .line 1296
-    .line 1297
+    .line 91
     sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
 
-    .line 1298
-    .line 1299
     return-object v0
 
-    .line 1300
     :catchall_0
     move-exception v0
 
-    .line 1301
     move-object/from16 v2, v17
 
-    .line 1302
-    .line 1303
     goto :goto_14
 
-    .line 1304
     :cond_22
     move-object v2, v8
 
-    .line 1305
+    .line 92
     :try_start_7
     new-instance v0, Lcom/mrousavy/camera/d0;
 
-    .line 1306
-    .line 1307
     invoke-direct {v0}, Lcom/mrousavy/camera/d0;-><init>()V
 
-    .line 1308
-    .line 1309
-    .line 1310
     throw v0
 
-    .line 1311
     :cond_23
     move-object v2, v8
 
-    .line 1312
+    .line 93
     new-instance v0, Lcom/mrousavy/camera/e;
 
-    .line 1313
-    .line 1314
     invoke-direct {v0}, Lcom/mrousavy/camera/e;-><init>()V
 
-    .line 1315
-    .line 1316
-    .line 1317
     throw v0
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
-    .line 1318
     :catchall_1
     move-exception v0
 
-    .line 1319
     goto :goto_14
 
-    .line 1320
     :catchall_2
     move-exception v0
 
-    .line 1321
     move-object v2, v8
 
-    .line 1322
+    .line 94
     :goto_14
     new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 1323
-    .line 1324
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1325
-    .line 1326
-    .line 1327
     const-string v3, "Failed to configure session: "
 
-    .line 1328
-    .line 1329
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1330
-    .line 1331
-    .line 1332
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 1333
-    .line 1334
-    .line 1335
     move-result-object v3
 
-    .line 1336
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1337
-    .line 1338
-    .line 1339
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 1340
-    .line 1341
-    .line 1342
     move-result-object v1
 
-    .line 1343
     invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1344
-    .line 1345
-    .line 1346
+    .line 95
     instance-of v1, v0, Lcom/mrousavy/camera/a;
 
-    .line 1347
-    .line 1348
     if-nez v1, :cond_28
 
-    .line 1349
-    .line 1350
+    .line 96
     instance-of v1, v0, Ljava/lang/IllegalArgumentException;
 
-    .line 1351
-    .line 1352
     if-eqz v1, :cond_27
 
-    .line 1353
-    .line 1354
+    .line 97
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 1355
-    .line 1356
-    .line 1357
     move-result-object v1
 
-    .line 1358
     if-eqz v1, :cond_24
 
-    .line 1359
-    .line 1360
     const-string v2, "too many use cases"
 
-    .line 1361
-    .line 1362
     const/4 v3, 0x2
 
-    .line 1363
     const/4 v4, 0x0
 
-    .line 1364
     const/4 v5, 0x0
 
-    .line 1365
     invoke-static {v1, v2, v5, v3, v4}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
-    .line 1366
-    .line 1367
-    .line 1368
     move-result v1
 
-    .line 1369
     const/4 v2, 0x1
 
-    .line 1370
     if-ne v1, v2, :cond_25
 
-    .line 1371
-    .line 1372
     move v9, v2
 
-    .line 1373
     goto :goto_15
 
-    .line 1374
     :cond_24
     const/4 v5, 0x0
 
-    .line 1375
     :cond_25
     move v9, v5
 
-    .line 1376
     :goto_15
     if-eqz v9, :cond_26
 
-    .line 1377
-    .line 1378
+    .line 98
     new-instance v1, Lcom/mrousavy/camera/g0;
 
-    .line 1379
-    .line 1380
     invoke-direct {v1, v0}, Lcom/mrousavy/camera/g0;-><init>(Ljava/lang/Throwable;)V
 
-    .line 1381
-    .line 1382
-    .line 1383
     goto :goto_16
 
-    .line 1384
+    .line 99
     :cond_26
     new-instance v1, Lcom/mrousavy/camera/x;
 
-    .line 1385
-    .line 1386
     invoke-direct {v1, v0}, Lcom/mrousavy/camera/x;-><init>(Ljava/lang/Throwable;)V
 
-    .line 1387
-    .line 1388
-    .line 1389
     goto :goto_16
 
-    .line 1390
+    .line 100
     :cond_27
     new-instance v1, Lcom/mrousavy/camera/j0;
 
-    .line 1391
-    .line 1392
     invoke-direct {v1, v0}, Lcom/mrousavy/camera/j0;-><init>(Ljava/lang/Throwable;)V
 
-    .line 1393
-    .line 1394
-    .line 1395
     :goto_16
     move-object v0, v1
 
-    .line 1396
     :cond_28
     throw v0
-    .line 1397
-    .line 1398
-    .line 1399
-    .line 1400
-    .line 1401
-    .line 1402
-    .line 1403
-    .line 1404
-    .line 1405
-    .line 1406
-    .line 1407
-    .line 1408
-    .line 1409
-    .line 1410
-    .line 1411
-    .line 1412
-    .line 1413
-    .line 1414
-    .line 1415
-    .line 1416
-    .line 1417
-    .line 1418
-    .line 1419
-    .line 1420
-    .line 1421
-    .line 1422
-    .line 1423
-    .line 1424
-    .line 1425
-    .line 1426
-    .line 1427
-    .line 1428
-    .line 1429
-    .line 1430
-    .line 1431
-    .line 1432
-    .line 1433
-    .line 1434
-    .line 1435
-    .line 1436
-    .line 1437
-    .line 1438
-    .line 1439
-    .line 1440
-    .line 1441
-    .line 1442
-    .line 1443
-    .line 1444
-    .line 1445
-    .line 1446
-    .line 1447
-    .line 1448
-    .line 1449
-    .line 1450
-    .line 1451
-    .line 1452
-    .line 1453
-    .line 1454
-    .line 1455
-    .line 1456
-    .line 1457
-    .line 1458
-    .line 1459
-    .line 1460
-    .line 1461
-    .line 1462
-    .line 1463
-    .line 1464
-    .line 1465
-    .line 1466
-    .line 1467
-    .line 1468
-    .line 1469
-    .line 1470
-    .line 1471
-    .line 1472
-    .line 1473
-    .line 1474
-    .line 1475
-    .line 1476
-    .line 1477
-    .line 1478
-    .line 1479
-    .line 1480
-    .line 1481
-    .line 1482
-    .line 1483
-    .line 1484
-    .line 1485
-    .line 1486
-    .line 1487
-    .line 1488
-    .line 1489
-    .line 1490
-    .line 1491
-    .line 1492
-    .line 1493
-    .line 1494
-    .line 1495
-    .line 1496
-    .line 1497
-    .line 1498
-    .line 1499
-    .line 1500
-    .line 1501
-    .line 1502
-    .line 1503
-    .line 1504
-    .line 1505
-    .line 1506
-    .line 1507
-    .line 1508
-    .line 1509
-    .line 1510
-    .line 1511
-    .line 1512
-    .line 1513
-    .line 1514
-    .line 1515
-    .line 1516
-    .line 1517
-    .line 1518
-    .line 1519
-    .line 1520
-    .line 1521
-    .line 1522
-    .line 1523
-    .line 1524
-    .line 1525
-    .line 1526
-    .line 1527
-    .line 1528
-    .line 1529
-    .line 1530
-    .line 1531
-    .line 1532
-    .line 1533
-    .line 1534
-    .line 1535
-    .line 1536
-    .line 1537
-    .line 1538
-    .line 1539
-    .line 1540
-    .line 1541
-    .line 1542
-    .line 1543
-    .line 1544
-    .line 1545
-    .line 1546
-    .line 1547
-    .line 1548
-    .line 1549
-    .line 1550
-    .line 1551
-    .line 1552
-    .line 1553
-    .line 1554
-    .line 1555
-    .line 1556
-    .line 1557
-    .line 1558
-    .line 1559
-    .line 1560
-    .line 1561
-    .line 1562
-    .line 1563
-    .line 1564
-    .line 1565
-    .line 1566
-    .line 1567
-    .line 1568
-    .line 1569
-    .line 1570
-    .line 1571
-    .line 1572
-    .line 1573
-    .line 1574
-    .line 1575
-    .line 1576
-    .line 1577
-    .line 1578
-    .line 1579
-    .line 1580
-    .line 1581
-    .line 1582
-    .line 1583
-    .line 1584
-    .line 1585
-    .line 1586
-    .line 1587
-    .line 1588
-    .line 1589
-    .line 1590
-    .line 1591
-    .line 1592
-    .line 1593
-    .line 1594
-    .line 1595
-    .line 1596
-    .line 1597
-    .line 1598
-    .line 1599
-    .line 1600
-    .line 1601
-    .line 1602
-    .line 1603
-    .line 1604
-    .line 1605
-    .line 1606
-    .line 1607
-    .line 1608
-    .line 1609
-    .line 1610
-    .line 1611
-    .line 1612
-    .line 1613
-    .line 1614
-    .line 1615
-    .line 1616
-    .line 1617
-    .line 1618
-    .line 1619
-    .line 1620
-    .line 1621
-    .line 1622
-    .line 1623
-    .line 1624
-    .line 1625
-    .line 1626
-    .line 1627
-    .line 1628
-    .line 1629
-    .line 1630
-    .line 1631
-    .line 1632
-    .line 1633
-    .line 1634
-    .line 1635
-    .line 1636
-    .line 1637
-    .line 1638
-    .line 1639
-    .line 1640
-    .line 1641
-    .line 1642
-    .line 1643
-    .line 1644
-    .line 1645
-    .line 1646
-    .line 1647
-    .line 1648
-    .line 1649
-    .line 1650
-    .line 1651
-    .line 1652
-    .line 1653
-    .line 1654
-    .line 1655
-    .line 1656
-    .line 1657
-    .line 1658
-    .line 1659
-    .line 1660
-    .line 1661
-    .line 1662
-    .line 1663
-    .line 1664
-    .line 1665
-    .line 1666
-    .line 1667
-    .line 1668
-    .line 1669
-    .line 1670
-    .line 1671
-    .line 1672
-    .line 1673
-    .line 1674
-    .line 1675
-    .line 1676
-    .line 1677
-    .line 1678
-    .line 1679
-    .line 1680
-    .line 1681
-    .line 1682
-    .line 1683
-    .line 1684
-    .line 1685
-    .line 1686
-    .line 1687
-    .line 1688
-    .line 1689
-    .line 1690
-    .line 1691
-    .line 1692
-    .line 1693
-    .line 1694
-    .line 1695
-    .line 1696
-    .line 1697
-    .line 1698
-    .line 1699
-    .line 1700
-    .line 1701
-    .line 1702
-    .line 1703
-    .line 1704
-    .line 1705
-    .line 1706
-    .line 1707
-    .line 1708
 .end method
 
 .method private static final r(Lcom/mrousavy/camera/CameraView;Landroidx/camera/core/ImageProxy;)V
@@ -4913,6 +3727,16 @@
     .line 190
     .line 191
     .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
 .end method
 
 .method private final s()V
@@ -5102,6 +3926,97 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method private final u()Z
@@ -5209,6 +4124,161 @@
     .line 45
     .line 46
     .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
 .end method
 
 .method private final x()V
@@ -5507,272 +4577,6 @@
     .line 183
     .line 184
     .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-    .line 214
-    .line 215
-    .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
-    .line 227
-    .line 228
-    .line 229
-    .line 230
-    .line 231
-    .line 232
-    .line 233
-    .line 234
-    .line 235
-    .line 236
-    .line 237
-    .line 238
-    .line 239
-    .line 240
-    .line 241
-    .line 242
-    .line 243
-    .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
-    .line 260
-    .line 261
-    .line 262
-    .line 263
-    .line 264
-    .line 265
-    .line 266
-    .line 267
-    .line 268
-    .line 269
-    .line 270
-    .line 271
-    .line 272
-    .line 273
-    .line 274
-    .line 275
-    .line 276
-    .line 277
-    .line 278
-    .line 279
-    .line 280
-    .line 281
-    .line 282
-    .line 283
-    .line 284
-    .line 285
-    .line 286
-    .line 287
-    .line 288
-    .line 289
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
-    .line 297
-    .line 298
-    .line 299
-    .line 300
-    .line 301
-    .line 302
-    .line 303
-    .line 304
-    .line 305
-    .line 306
-    .line 307
-    .line 308
-    .line 309
-    .line 310
-    .line 311
-    .line 312
-    .line 313
-    .line 314
-    .line 315
-    .line 316
-    .line 317
-    .line 318
-    .line 319
-    .line 320
-    .line 321
-    .line 322
-    .line 323
-    .line 324
-    .line 325
-    .line 326
-    .line 327
-    .line 328
-    .line 329
-    .line 330
-    .line 331
-    .line 332
-    .line 333
-    .line 334
-    .line 335
-    .line 336
-    .line 337
-    .line 338
-    .line 339
-    .line 340
-    .line 341
-    .line 342
-    .line 343
-    .line 344
-    .line 345
-    .line 346
-    .line 347
-    .line 348
-    .line 349
-    .line 350
-    .line 351
-    .line 352
-    .line 353
-    .line 354
-    .line 355
-    .line 356
-    .line 357
-    .line 358
-    .line 359
-    .line 360
-    .line 361
-    .line 362
-    .line 363
-    .line 364
-    .line 365
-    .line 366
-    .line 367
-    .line 368
-    .line 369
-    .line 370
-    .line 371
-    .line 372
-    .line 373
-    .line 374
-    .line 375
-    .line 376
-    .line 377
-    .line 378
-    .line 379
-    .line 380
-    .line 381
-    .line 382
-    .line 383
-    .line 384
-    .line 385
-    .line 386
-    .line 387
-    .line 388
-    .line 389
-    .line 390
-    .line 391
-    .line 392
-    .line 393
-    .line 394
-    .line 395
-    .line 396
-    .line 397
-    .line 398
-    .line 399
-    .line 400
-    .line 401
-    .line 402
-    .line 403
-    .line 404
-    .line 405
-    .line 406
-    .line 407
-    .line 408
-    .line 409
-    .line 410
-    .line 411
-    .line 412
-    .line 413
-    .line 414
-    .line 415
-    .line 416
-    .line 417
-    .line 418
-    .line 419
-    .line 420
-    .line 421
-    .line 422
-    .line 423
-    .line 424
-    .line 425
-    .line 426
-    .line 427
-    .line 428
-    .line 429
-    .line 430
-    .line 431
-    .line 432
-    .line 433
-    .line 434
-    .line 435
-    .line 436
-    .line 437
-    .line 438
-    .line 439
-    .line 440
-    .line 441
-    .line 442
-    .line 443
-    .line 444
-    .line 445
-    .line 446
-    .line 447
-    .line 448
-    .line 449
-    .line 450
-    .line 451
 .end method
 
 .method private final y()V
@@ -5934,6 +4738,97 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 
@@ -6226,6 +5121,97 @@
     .line 92
     .line 93
     .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method public final getFormat()Lcom/facebook/react/bridge/ReadableMap;
@@ -6410,6 +5396,168 @@
     .line 22
     return-void
     .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -6446,6 +5594,138 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -6479,6 +5759,168 @@
     .line 21
     .line 22
     .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
 .end method
 
 .method public final setActive(Z)V
@@ -6565,6 +6007,138 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method public final setEnableDepthData(Z)V
@@ -6643,6 +6217,138 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method public final setFormat(Lcom/facebook/react/bridge/ReadableMap;)V
@@ -6785,6 +6491,77 @@
     .line 85
     .line 86
     .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method public final setHdr(Ljava/lang/Boolean;)V
@@ -6863,6 +6640,138 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method public final setVideo(Ljava/lang/Boolean;)V
@@ -6957,4 +6866,136 @@
     .line 24
     .line 25
     .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method

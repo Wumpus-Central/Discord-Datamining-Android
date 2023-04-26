@@ -545,6 +545,36 @@
     .line 515
     .line 516
     .line 517
+    .line 518
+    .line 519
+    .line 520
+    .line 521
+    .line 522
+    .line 523
+    .line 524
+    .line 525
+    .line 526
+    .line 527
+    .line 528
+    .line 529
+    .line 530
+    .line 531
+    .line 532
+    .line 533
+    .line 534
+    .line 535
+    .line 536
+    .line 537
+    .line 538
+    .line 539
+    .line 540
+    .line 541
+    .line 542
+    .line 543
+    .line 544
+    .line 545
+    .line 546
+    .line 547
 .end method
 
 .method public static bind(Landroid/view/View;)Lcom/discord/segmented/control/databinding/SegmentedControlBinding;
@@ -675,6 +705,89 @@
     .line 73
     .line 74
     .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
 .end method
 
 .method public static inflate(Landroid/view/LayoutInflater;)Lcom/discord/segmented/control/databinding/SegmentedControlBinding;

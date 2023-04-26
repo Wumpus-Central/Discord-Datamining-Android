@@ -1,5 +1,5 @@
 .class public final Lcom/discord/cache/HeartbeatKeyProviderModule;
-.super Lcom/discord/codegen/cache/NativeHeartbeatKeyProviderSpec;
+.super Lcom/discord/codegen/NativeHeartbeatKeyProviderSpec;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
     }
     d2 = {
         "Lcom/discord/cache/HeartbeatKeyProviderModule;",
-        "Lcom/discord/codegen/cache/NativeHeartbeatKeyProviderSpec;",
+        "Lcom/discord/codegen/NativeHeartbeatKeyProviderSpec;",
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -91,7 +91,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1}, Lcom/discord/codegen/cache/NativeHeartbeatKeyProviderSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {p0, p1}, Lcom/discord/codegen/NativeHeartbeatKeyProviderSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 7
     .line 8

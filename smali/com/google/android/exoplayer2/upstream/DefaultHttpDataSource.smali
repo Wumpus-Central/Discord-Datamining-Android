@@ -199,8 +199,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private constructor <init>(Ljava/lang/String;IIZLcom/google/android/exoplayer2/upstream/f$g;Lac/k;)V
@@ -726,6 +724,83 @@
     .line 382
     .line 383
     .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
+    .line 415
+    .line 416
+    .line 417
+    .line 418
+    .line 419
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
 .end method
 
 .method private C()V
@@ -958,8 +1033,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private t()V
@@ -1116,8 +1189,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method private static u(Ljava/net/HttpURLConnection;)J
@@ -2424,6 +2495,44 @@
     .line 211
     .line 212
     .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
 .end method
 
 .method private static w(Ljava/net/HttpURLConnection;)Z
@@ -2549,6 +2658,25 @@
     .line 105
     .line 106
     .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
 .end method
 
 .method private x(Lcom/google/android/exoplayer2/upstream/a;)Ljava/net/HttpURLConnection;
@@ -3633,404 +3761,226 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->A(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
-    .line 2
-    .line 3
-    .line 4
     move-result-object p1
 
-    .line 5
+    .line 2
     iget v0, p0, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->f:I
 
-    .line 6
-    .line 7
     invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
-    .line 8
-    .line 9
-    .line 10
+    .line 3
     iget v0, p0, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->g:I
 
-    .line 11
-    .line 12
     invoke-virtual {p1, v0}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
-    .line 13
-    .line 14
-    .line 15
+    .line 4
     new-instance v0, Ljava/util/HashMap;
 
-    .line 16
-    .line 17
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 18
-    .line 19
-    .line 20
+    .line 5
     iget-object v1, p0, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->i:Lcom/google/android/exoplayer2/upstream/f$g;
 
-    .line 21
-    .line 22
     if-eqz v1, :cond_0
 
-    .line 23
-    .line 24
+    .line 6
     invoke-virtual {v1}, Lcom/google/android/exoplayer2/upstream/f$g;->a()Ljava/util/Map;
 
-    .line 25
-    .line 26
-    .line 27
     move-result-object v1
 
-    .line 28
     invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 29
-    .line 30
-    .line 31
+    .line 7
     :cond_0
     iget-object v1, p0, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->j:Lcom/google/android/exoplayer2/upstream/f$g;
 
-    .line 32
-    .line 33
     invoke-virtual {v1}, Lcom/google/android/exoplayer2/upstream/f$g;->a()Ljava/util/Map;
 
-    .line 34
-    .line 35
-    .line 36
     move-result-object v1
 
-    .line 37
     invoke-interface {v0, v1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 38
-    .line 39
-    .line 40
+    .line 8
     invoke-interface {v0, p10}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 41
-    .line 42
-    .line 43
+    .line 9
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
-    .line 44
-    .line 45
-    .line 46
     move-result-object p10
 
-    .line 47
     invoke-interface {p10}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    .line 48
-    .line 49
-    .line 50
     move-result-object p10
 
-    .line 51
     :goto_0
     invoke-interface {p10}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 52
-    .line 53
-    .line 54
     move-result v0
 
-    .line 55
     if-eqz v0, :cond_1
 
-    .line 56
-    .line 57
     invoke-interface {p10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 58
-    .line 59
-    .line 60
     move-result-object v0
 
-    .line 61
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 62
-    .line 63
+    .line 10
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    .line 64
-    .line 65
-    .line 66
     move-result-object v1
 
-    .line 67
     check-cast v1, Ljava/lang/String;
 
-    .line 68
-    .line 69
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    .line 70
-    .line 71
-    .line 72
     move-result-object v0
 
-    .line 73
     check-cast v0, Ljava/lang/String;
 
-    .line 74
-    .line 75
     invoke-virtual {p1, v1, v0}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 76
-    .line 77
-    .line 78
     goto :goto_0
 
-    .line 79
     :cond_1
     const-wide/16 v0, 0x0
 
-    .line 80
-    .line 81
     cmp-long p10, p4, v0
 
-    .line 82
-    .line 83
     const-wide/16 v0, -0x1
 
-    .line 84
-    .line 85
     if-nez p10, :cond_2
 
-    .line 86
-    .line 87
     cmp-long p10, p6, v0
 
-    .line 88
-    .line 89
     if-eqz p10, :cond_4
 
-    .line 90
-    .line 91
+    .line 11
     :cond_2
     new-instance p10, Ljava/lang/StringBuilder;
 
-    .line 92
-    .line 93
     invoke-direct {p10}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 94
-    .line 95
-    .line 96
     const-string v2, "bytes="
 
-    .line 97
-    .line 98
     invoke-virtual {p10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 99
-    .line 100
-    .line 101
     invoke-virtual {p10, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 102
-    .line 103
-    .line 104
     const-string v2, "-"
 
-    .line 105
-    .line 106
     invoke-virtual {p10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 107
-    .line 108
-    .line 109
     invoke-virtual {p10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 110
-    .line 111
-    .line 112
     move-result-object p10
 
-    .line 113
     cmp-long v0, p6, v0
 
-    .line 114
-    .line 115
     if-eqz v0, :cond_3
 
-    .line 116
-    .line 117
+    .line 12
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 118
-    .line 119
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 120
-    .line 121
-    .line 122
     invoke-virtual {v0, p10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 123
-    .line 124
-    .line 125
     add-long/2addr p4, p6
 
-    .line 126
     const-wide/16 p6, 0x1
 
-    .line 127
-    .line 128
     sub-long/2addr p4, p6
 
-    .line 129
     invoke-virtual {v0, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 130
-    .line 131
-    .line 132
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 133
-    .line 134
-    .line 135
     move-result-object p10
 
-    .line 136
     :cond_3
     const-string p4, "Range"
 
-    .line 137
-    .line 138
+    .line 13
     invoke-virtual {p1, p4, p10}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 139
-    .line 140
-    .line 141
+    .line 14
     :cond_4
     iget-object p4, p0, Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource;->h:Ljava/lang/String;
 
-    .line 142
-    .line 143
     if-eqz p4, :cond_5
 
-    .line 144
-    .line 145
     const-string p5, "User-Agent"
 
-    .line 146
-    .line 147
+    .line 15
     invoke-virtual {p1, p5, p4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 148
-    .line 149
-    .line 150
     :cond_5
     if-eqz p8, :cond_6
 
-    .line 151
-    .line 152
     const-string p4, "gzip"
 
-    .line 153
-    .line 154
     goto :goto_1
 
-    .line 155
     :cond_6
     const-string p4, "identity"
 
-    .line 156
-    .line 157
     :goto_1
     const-string p5, "Accept-Encoding"
 
-    .line 158
-    .line 159
+    .line 16
     invoke-virtual {p1, p5, p4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 160
-    .line 161
-    .line 162
+    .line 17
     invoke-virtual {p1, p9}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
-    .line 163
-    .line 164
-    .line 165
     if-eqz p3, :cond_7
 
-    .line 166
-    .line 167
     const/4 p4, 0x1
 
-    .line 168
     goto :goto_2
 
-    .line 169
     :cond_7
     const/4 p4, 0x0
 
-    .line 170
+    .line 18
     :goto_2
     invoke-virtual {p1, p4}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
-    .line 171
-    .line 172
-    .line 173
+    .line 19
     invoke-static {p2}, Lcom/google/android/exoplayer2/upstream/a;->c(I)Ljava/lang/String;
 
-    .line 174
-    .line 175
-    .line 176
     move-result-object p2
 
-    .line 177
     invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 178
-    .line 179
-    .line 180
     if-eqz p3, :cond_8
 
-    .line 181
-    .line 182
+    .line 20
     array-length p2, p3
 
-    .line 183
     invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
-    .line 184
-    .line 185
-    .line 186
+    .line 21
     invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
-    .line 187
-    .line 188
-    .line 189
+    .line 22
     invoke-virtual {p1}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
-    .line 190
-    .line 191
-    .line 192
     move-result-object p2
 
-    .line 193
+    .line 23
     invoke-virtual {p2, p3}, Ljava/io/OutputStream;->write([B)V
 
-    .line 194
-    .line 195
-    .line 196
+    .line 24
     invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
 
-    .line 197
-    .line 198
-    .line 199
     goto :goto_3
 
-    .line 200
+    .line 25
     :cond_8
     invoke-virtual {p1}, Ljava/net/URLConnection;->connect()V
 
-    .line 201
-    .line 202
-    .line 203
     :goto_3
     return-object p1
 .end method
@@ -4360,6 +4310,44 @@
     .line 211
     .line 212
     .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
 .end method
 
 
@@ -5711,8 +5699,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public d()Ljava/util/Map;
@@ -6191,6 +6177,83 @@
     .line 382
     .line 383
     .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
+    .line 415
+    .line 416
+    .line 417
+    .line 418
+    .line 419
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
 .end method
 
 .method protected final s()J

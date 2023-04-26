@@ -287,58 +287,6 @@
     .line 122
     .line 123
     .line 124
-    .line 125
-    .line 126
-    .line 127
-    .line 128
-    .line 129
-    .line 130
-    .line 131
-    .line 132
-    .line 133
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    .line 150
-    .line 151
-    .line 152
-    .line 153
-    .line 154
-    .line 155
-    .line 156
-    .line 157
-    .line 158
-    .line 159
-    .line 160
-    .line 161
-    .line 162
-    .line 163
-    .line 164
-    .line 165
-    .line 166
-    .line 167
-    .line 168
-    .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
 .end method
 
 .method public constructor <init>(Landroid/content/Context;I)V
@@ -634,51 +582,6 @@
     .line 249
     .line 250
     .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
-    .line 260
-    .line 261
-    .line 262
-    .line 263
-    .line 264
-    .line 265
-    .line 266
-    .line 267
-    .line 268
-    .line 269
-    .line 270
-    .line 271
-    .line 272
-    .line 273
-    .line 274
-    .line 275
-    .line 276
-    .line 277
-    .line 278
-    .line 279
-    .line 280
-    .line 281
-    .line 282
-    .line 283
-    .line 284
-    .line 285
-    .line 286
-    .line 287
-    .line 288
-    .line 289
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
 .end method
 
 .method private final native nativeCreateInstance(Landroid/content/Context;Lorg/webrtc/EglBase$Context;I)J

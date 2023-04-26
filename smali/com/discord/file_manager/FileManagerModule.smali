@@ -1,5 +1,5 @@
 .class public final Lcom/discord/file_manager/FileManagerModule;
-.super Lcom/discord/codegen/file_manager/NativeFileManagerSpec;
+.super Lcom/discord/codegen/NativeFileManagerSpec;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/file_manager/FileManagerModule;",
-        "Lcom/discord/codegen/file_manager/NativeFileManagerSpec;",
+        "Lcom/discord/codegen/NativeFileManagerSpec;",
         "reactContext",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "(Lcom/facebook/react/bridge/ReactApplicationContext;)V",
@@ -112,7 +112,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1}, Lcom/discord/codegen/file_manager/NativeFileManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {p0, p1}, Lcom/discord/codegen/NativeFileManagerSpec;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 7
     .line 8
