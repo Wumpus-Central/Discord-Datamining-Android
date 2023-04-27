@@ -17,7 +17,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/facebook/imagepipeline/producers/z0<",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -26,13 +26,13 @@
 # instance fields
 .field private final a:Ljava/util/concurrent/Executor;
 
-.field private final b:Ly3/h;
+.field private final b:Lz3/h;
 
 .field private final c:Landroid/content/ContentResolver;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;Landroid/content/ContentResolver;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;Landroid/content/ContentResolver;)V
     .locals 0
 
     .line 1
@@ -45,7 +45,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->b:Ly3/h;
+    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->b:Lz3/h;
 
     .line 7
     .line 8
@@ -222,33 +222,33 @@
     .line 176
 .end method
 
-.method static synthetic c(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;)Ly3/h;
+.method static synthetic c(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;)Lz3/h;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->b:Ly3/h;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->b:Lz3/h;
 
     return-object p0
 .end method
 
-.method static synthetic d(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;Ly3/g;Landroid/media/ExifInterface;)Lu5/e;
+.method static synthetic d(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;Lz3/g;Landroid/media/ExifInterface;)Lv5/e;
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->e(Ly3/g;Landroid/media/ExifInterface;)Lu5/e;
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->e(Lz3/g;Landroid/media/ExifInterface;)Lv5/e;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private e(Ly3/g;Landroid/media/ExifInterface;)Lu5/e;
+.method private e(Lz3/g;Landroid/media/ExifInterface;)Lv5/e;
     .locals 3
 
     .line 1
-    new-instance v0, Ly3/i;
+    new-instance v0, Lz3/i;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Ly3/i;-><init>(Ly3/g;)V
+    invoke-direct {v0, p1}, Lz3/i;-><init>(Lz3/g;)V
 
     .line 4
     .line 5
@@ -330,11 +330,11 @@
 
     .line 41
     :try_start_0
-    new-instance v0, Lu5/e;
+    new-instance v0, Lv5/e;
 
     .line 42
     .line 43
-    invoke-direct {v0, p1}, Lu5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-direct {v0, p1}, Lv5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -346,26 +346,26 @@
     .line 47
     .line 48
     .line 49
-    sget-object p1, Li5/b;->a:Li5/c;
+    sget-object p1, Lj5/b;->a:Lj5/c;
 
     .line 50
     .line 51
-    invoke-virtual {v0, p1}, Lu5/e;->K0(Li5/c;)V
+    invoke-virtual {v0, p1}, Lv5/e;->K0(Lj5/c;)V
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v0, p2}, Lu5/e;->L0(I)V
+    invoke-virtual {v0, p2}, Lv5/e;->L0(I)V
 
     .line 55
     .line 56
     .line 57
-    invoke-virtual {v0, v2}, Lu5/e;->N0(I)V
+    invoke-virtual {v0, v2}, Lv5/e;->N0(I)V
 
     .line 58
     .line 59
     .line 60
-    invoke-virtual {v0, v1}, Lu5/e;->J0(I)V
+    invoke-virtual {v0, v1}, Lv5/e;->J0(I)V
 
     .line 61
     .line 62
@@ -426,7 +426,7 @@
     move-result-object p1
 
     .line 7
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -502,7 +502,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")V"
@@ -518,7 +518,7 @@
     move-result-object v3
 
     .line 5
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 6
     .line 7
@@ -729,7 +729,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Ld4/f;->b(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
+    invoke-static {v0, p1}, Le4/f;->b(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -778,7 +778,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, p1}, Ld4/f;->a(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/content/res/AssetFileDescriptor;
+    invoke-static {v0, p1}, Le4/f;->a(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/content/res/AssetFileDescriptor;
 
     .line 26
     .line 27
@@ -847,7 +847,7 @@
 
     .line 57
     .line 58
-    invoke-static {p1, v0}, Lw3/a;->f(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->f(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 59
     .line 60

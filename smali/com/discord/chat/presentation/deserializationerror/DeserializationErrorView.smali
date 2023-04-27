@@ -852,11 +852,11 @@
     .line 32
     .line 33
     .line 34
-    new-instance v0, Lb3/a;
+    new-instance v0, Lc3/a;
 
     .line 35
     .line 36
-    invoke-direct {v0, p0, p1}, Lb3/a;-><init>(Lcom/discord/chat/presentation/deserializationerror/DeserializationErrorView;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lc3/a;-><init>(Lcom/discord/chat/presentation/deserializationerror/DeserializationErrorView;Ljava/lang/String;)V
 
     .line 37
     .line 38

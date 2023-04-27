@@ -228,7 +228,7 @@
     mul-float/2addr v1, v0
 
     .line 11
-    invoke-static {v1}, Lzf/a;->a(F)I
+    invoke-static {v1}, Lbg/a;->a(F)I
 
     .line 12
     .line 13
@@ -542,17 +542,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private final configureCount(IZ)V
@@ -830,17 +819,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private final configureTextColor(Lcom/discord/reactions/BurstReactionView$BurstColorPalette;)V

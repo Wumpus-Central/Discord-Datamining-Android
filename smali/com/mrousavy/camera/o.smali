@@ -661,7 +661,7 @@
     move-result-object v0
 
     .line 106
-    invoke-interface {v0, p1}, Landroidx/camera/core/m;->f(Z)Lfc/b;
+    invoke-interface {v0, p1}, Landroidx/camera/core/m;->f(Z)Lgc/b;
 
     .line 107
     .line 108
@@ -1134,7 +1134,7 @@
     move-result p0
 
     .line 49
-    invoke-interface {v0, p0}, Landroidx/camera/core/m;->f(Z)Lfc/b;
+    invoke-interface {v0, p0}, Landroidx/camera/core/m;->f(Z)Lgc/b;
 
     .line 50
     .line 51

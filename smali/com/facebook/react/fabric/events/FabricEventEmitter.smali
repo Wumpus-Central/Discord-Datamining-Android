@@ -128,7 +128,7 @@
 
     const-wide/16 v10, 0x0
 
-    invoke-static {v10, v11, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v10, v11, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     move-object v0, p0
 
@@ -152,7 +152,7 @@
     invoke-virtual/range {v2 .. v9}, Lcom/facebook/react/fabric/FabricUIManager;->receiveEvent(IILjava/lang/String;ZILcom/facebook/react/bridge/WritableMap;I)V
 
     .line 5
-    invoke-static {v10, v11}, Lg6/a;->g(J)V
+    invoke-static {v10, v11}, Lh6/a;->g(J)V
 
     return-void
 .end method

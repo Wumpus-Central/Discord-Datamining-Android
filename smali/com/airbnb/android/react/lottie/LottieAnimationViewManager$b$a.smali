@@ -38,19 +38,19 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lg2/h;
+    check-cast p1, Lh2/h;
 
     .line 2
     .line 3
     const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {p1, v0}, Lg2/h;->setProgress(F)V
+    invoke-virtual {p1, v0}, Lh2/h;->setProgress(F)V
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p1}, Lg2/h;->playAnimation()V
+    invoke-virtual {p1}, Lh2/h;->playAnimation()V
 
     .line 8
     .line 9
@@ -95,7 +95,7 @@
 
     iget-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b$a;->k:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;
 
-    iget-object p1, p1, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object p1, p1, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 

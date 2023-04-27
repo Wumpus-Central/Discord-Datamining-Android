@@ -167,7 +167,7 @@
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v3, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v3, Lri/d;->b:Ljava/nio/charset/Charset;
 
     new-instance v4, Ljava/io/InputStreamReader;
 

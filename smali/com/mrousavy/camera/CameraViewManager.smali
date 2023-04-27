@@ -1075,17 +1075,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setCameraId(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -1311,17 +1300,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setColorSpace(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -1545,17 +1523,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setEnableDepthData(Lcom/mrousavy/camera/CameraView;Z)V
@@ -1775,17 +1742,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setEnableFrameProcessor(Lcom/mrousavy/camera/CameraView;Z)V
@@ -2005,17 +1961,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setEnableHighQualityPhotos(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -2239,17 +2184,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setEnablePortraitEffectsMatteDelivery(Lcom/mrousavy/camera/CameraView;Z)V
@@ -2469,17 +2403,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setEnableZoomGesture(Lcom/mrousavy/camera/CameraView;Z)V
@@ -2699,17 +2622,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setFormat(Lcom/mrousavy/camera/CameraView;Lcom/facebook/react/bridge/ReadableMap;)V
@@ -2933,17 +2845,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setFps(Lcom/mrousavy/camera/CameraView;I)V
@@ -3186,17 +3087,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setFrameProcessorFps(Lcom/mrousavy/camera/CameraView;D)V
@@ -3429,17 +3319,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setHdr(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -3663,17 +3542,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setIsActive(Lcom/mrousavy/camera/CameraView;Z)V
@@ -3893,17 +3761,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setLowLightBoost(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -4127,17 +3984,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setOrientation(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -4363,17 +4209,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setPhoto(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -4597,17 +4432,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setTorch(Lcom/mrousavy/camera/CameraView;Ljava/lang/String;)V
@@ -4833,17 +4657,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setVideo(Lcom/mrousavy/camera/CameraView;Ljava/lang/Boolean;)V
@@ -5067,17 +4880,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setZoom(Lcom/mrousavy/camera/CameraView;D)V
@@ -5311,15 +5113,4 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method

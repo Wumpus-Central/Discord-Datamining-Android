@@ -680,7 +680,7 @@
     move v0, v2
 
     :goto_0
-    invoke-static {v0}, Lc6/a;->a(Z)V
+    invoke-static {v0}, Ld6/a;->a(Z)V
 
     .line 2
     invoke-interface {p2, v2}, Lcom/facebook/react/bridge/ReadableArray;->getMap(I)Lcom/facebook/react/bridge/ReadableMap;

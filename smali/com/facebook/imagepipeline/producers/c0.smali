@@ -11,7 +11,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/facebook/imagepipeline/producers/l0<",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -20,11 +20,11 @@
 # instance fields
 .field private final a:Ljava/util/concurrent/Executor;
 
-.field private final b:Ly3/h;
+.field private final b:Lz3/h;
 
 
 # direct methods
-.method protected constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+.method protected constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;)V
     .locals 0
 
     .line 1
@@ -37,7 +37,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Ly3/h;
+    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Lz3/h;
 
     .line 7
     .line 8
@@ -137,7 +137,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")V"
@@ -153,7 +153,7 @@
     move-result-object v7
 
     .line 5
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 6
     .line 7
@@ -284,7 +284,7 @@
     .line 93
 .end method
 
-.method protected c(Ljava/io/InputStream;I)Lu5/e;
+.method protected c(Ljava/io/InputStream;I)Lv5/e;
     .locals 2
 
     .line 1
@@ -296,11 +296,11 @@
     .line 3
     .line 4
     :try_start_0
-    iget-object p2, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Ly3/h;
+    iget-object p2, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Lz3/h;
 
     .line 5
     .line 6
-    invoke-interface {p2, p1}, Ly3/h;->a(Ljava/io/InputStream;)Ly3/g;
+    invoke-interface {p2, p1}, Lz3/h;->a(Ljava/io/InputStream;)Lz3/g;
 
     .line 7
     .line 8
@@ -320,11 +320,11 @@
 
     .line 15
     :cond_0
-    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Ly3/h;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/c0;->b:Lz3/h;
 
     .line 16
     .line 17
-    invoke-interface {v1, p1, p2}, Ly3/h;->b(Ljava/io/InputStream;I)Ly3/g;
+    invoke-interface {v1, p1, p2}, Lz3/h;->b(Ljava/io/InputStream;I)Lz3/g;
 
     .line 18
     .line 19
@@ -344,18 +344,18 @@
     move-object v0, p2
 
     .line 26
-    new-instance p2, Lu5/e;
+    new-instance p2, Lv5/e;
 
     .line 27
     .line 28
-    invoke-direct {p2, v0}, Lu5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-direct {p2, v0}, Lv5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 29
     .line 30
     .line 31
-    invoke-static {p1}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {p1}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 32
     .line 33
@@ -372,7 +372,7 @@
     move-exception p2
 
     .line 39
-    invoke-static {p1}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {p1}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 40
     .line 41
@@ -433,13 +433,13 @@
     .line 93
 .end method
 
-.method protected abstract d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lu5/e;
+.method protected abstract d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lv5/e;
 .end method
 
-.method protected e(Ljava/io/InputStream;I)Lu5/e;
+.method protected e(Ljava/io/InputStream;I)Lv5/e;
     .locals 0
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;->c(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;->c(Ljava/io/InputStream;I)Lv5/e;
 
     move-result-object p1
 

@@ -23,7 +23,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/google/android/gms/nearby/exposurenotification/a;-><init>(Lwa/a;)V
+    invoke-direct {v0, v1}, Lcom/google/android/gms/nearby/exposurenotification/a;-><init>(Lxa/a;)V
 
     invoke-direct {p1, v0}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 

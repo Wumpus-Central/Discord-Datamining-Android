@@ -279,7 +279,7 @@
     .line 48
     .line 49
     .line 50
-    sget-object v3, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v3, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 51
     .line 52
@@ -1607,7 +1607,7 @@
     const/4 v7, 0x0
 
     .line 19
-    invoke-static/range {v0 .. v7}, Lpf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
+    invoke-static/range {v0 .. v7}, Lrf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
 
     .line 20
     .line 21

@@ -60,9 +60,9 @@
     .end annotation
 .end field
 
-.field private final m:Lq5/g;
+.field private final m:Lr5/g;
 
-.field private n:Lu5/f;
+.field private n:Lv5/f;
 
 
 # direct methods
@@ -86,7 +86,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lv3/g;->d([Ljava/lang/Object;)Lv3/g;
+    invoke-static {v0}, Lw3/g;->a([Ljava/lang/Object;)Lw3/g;
 
     .line 10
     .line 11
@@ -130,7 +130,7 @@
     .line 44
 .end method
 
-.method public constructor <init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lq5/g;)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lr5/g;)V
     .locals 11
 
     const/4 v3, 0x0
@@ -156,21 +156,21 @@
     move-object/from16 v10, p9
 
     .line 1
-    invoke-direct/range {v0 .. v10}, Lcom/facebook/imagepipeline/producers/d;-><init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lq5/g;)V
+    invoke-direct/range {v0 .. v10}, Lcom/facebook/imagepipeline/producers/d;-><init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lr5/g;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lq5/g;)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/String;Ljava/lang/String;Lcom/facebook/imagepipeline/producers/n0;Ljava/lang/Object;Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;ZZLcom/facebook/imagepipeline/common/Priority;Lr5/g;)V
     .locals 2
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    sget-object v0, Lu5/f;->l:Lu5/f;
+    sget-object v0, Lv5/f;->l:Lv5/f;
 
-    iput-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->n:Lu5/f;
+    iput-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->n:Lv5/f;
 
     .line 4
     iput-object p1, p0, Lcom/facebook/imagepipeline/producers/d;->a:Lcom/facebook/imagepipeline/request/ImageRequest;
@@ -241,7 +241,7 @@
     iput-object p1, p0, Lcom/facebook/imagepipeline/producers/d;->l:Ljava/util/List;
 
     .line 18
-    iput-object p10, p0, Lcom/facebook/imagepipeline/producers/d;->m:Lq5/g;
+    iput-object p10, p0, Lcom/facebook/imagepipeline/producers/d;->m:Lr5/g;
 
     return-void
 .end method
@@ -798,10 +798,10 @@
     .line 46
 .end method
 
-.method public d()Lq5/g;
+.method public d()Lr5/g;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->m:Lq5/g;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->m:Lr5/g;
 
     return-object v0
 .end method
@@ -1146,7 +1146,15 @@
     .line 44
 .end method
 
-.method public k()Lcom/facebook/imagepipeline/request/ImageRequest;
+.method public k(Lv5/f;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/d;->n:Lv5/f;
+
+    return-void
+.end method
+
+.method public l()Lcom/facebook/imagepipeline/request/ImageRequest;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/d;->a:Lcom/facebook/imagepipeline/request/ImageRequest;
@@ -1154,7 +1162,7 @@
     return-object v0
 .end method
 
-.method public l(Ljava/util/Map;)V
+.method public m(Ljava/util/Map;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1255,7 +1263,7 @@
     .line 46
 .end method
 
-.method public declared-synchronized m()Z
+.method public declared-synchronized n()Z
     .locals 1
 
     .line 1
@@ -1321,7 +1329,7 @@
     .line 44
 .end method
 
-.method public n(Ljava/lang/String;)Ljava/lang/Object;
+.method public o(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1340,14 +1348,6 @@
     move-result-object p1
 
     return-object p1
-.end method
-
-.method public o(Lu5/f;)V
-    .locals 0
-
-    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/d;->n:Lu5/f;
-
-    return-void
 .end method
 
 .method public p()Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private a:Lra/b0;
+.field private a:Lsa/b0;
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/u;)V
+.method synthetic constructor <init>(Lv2/u;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,10 +27,10 @@
     return-void
 .end method
 
-.method static bridge synthetic c(Lcom/android/billingclient/api/QueryProductDetailsParams$a;)Lra/b0;
+.method static bridge synthetic c(Lcom/android/billingclient/api/QueryProductDetailsParams$a;)Lsa/b0;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$a;->a:Lra/b0;
+    iget-object p0, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$a;->a:Lsa/b0;
 
     return-object p0
 .end method
@@ -44,7 +44,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/QueryProductDetailsParams;-><init>(Lcom/android/billingclient/api/QueryProductDetailsParams$a;Lu2/x;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/QueryProductDetailsParams;-><init>(Lcom/android/billingclient/api/QueryProductDetailsParams$a;Lv2/x;)V
 
     return-object v0
 .end method
@@ -177,7 +177,7 @@
 
     .line 56
     .line 57
-    invoke-static {p1}, Lra/b0;->t(Ljava/util/Collection;)Lra/b0;
+    invoke-static {p1}, Lsa/b0;->t(Ljava/util/Collection;)Lsa/b0;
 
     .line 58
     .line 59
@@ -185,7 +185,7 @@
     move-result-object p1
 
     .line 61
-    iput-object p1, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$a;->a:Lra/b0;
+    iput-object p1, p0, Lcom/android/billingclient/api/QueryProductDetailsParams$a;->a:Lsa/b0;
 
     .line 62
     .line 63
@@ -333,5 +333,4 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method

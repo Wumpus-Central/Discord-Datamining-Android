@@ -4,13 +4,13 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/ReactSoftExceptionLogger$ReactSoftExceptionListener;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -49,7 +49,7 @@
 
 .method public static addListener(Lcom/facebook/react/bridge/ReactSoftExceptionLogger$ReactSoftExceptionListener;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -114,7 +114,7 @@
 
 .method public static clearListeners()V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactSoftExceptionLogger;->sListeners:Ljava/util/List;
@@ -126,7 +126,7 @@
 
 .method private static logNoThrowSoftExceptionWithMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     new-instance v0, Lcom/facebook/react/bridge/ReactNoCrashSoftException;
@@ -140,7 +140,7 @@
 
 .method public static logSoftException(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -206,7 +206,7 @@
 
     .line 30
     .line 31
-    invoke-static {p0, v0, p1}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p0, v0, p1}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 32
     .line 33
@@ -276,7 +276,7 @@
 
 .method public static logSoftExceptionVerbose(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -413,7 +413,7 @@
 
 .method public static removeListener(Lcom/facebook/react/bridge/ReactSoftExceptionLogger$ReactSoftExceptionListener;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactSoftExceptionLogger;->sListeners:Ljava/util/List;

@@ -4,23 +4,23 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # instance fields
 .field private mContext:Lcom/facebook/react/bridge/ReactContext;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
 .field private mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
 .field private mPlatformContext:Lcom/shopify/reactnative/skia/PlatformContext;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -28,7 +28,7 @@
 # direct methods
 .method constructor <init>(Lcom/facebook/react/bridge/ReactContext;)V
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

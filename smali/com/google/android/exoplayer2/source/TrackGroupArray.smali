@@ -23,7 +23,7 @@
 # instance fields
 .field public final k:I
 
-.field private final l:[Lh8/u0;
+.field private final l:[Li8/u0;
 
 .field private m:I
 
@@ -40,11 +40,11 @@
     const/4 v1, 0x0
 
     .line 4
-    new-array v1, v1, [Lh8/u0;
+    new-array v1, v1, [Li8/u0;
 
     .line 5
     .line 6
-    invoke-direct {v0, v1}, Lcom/google/android/exoplayer2/source/TrackGroupArray;-><init>([Lh8/u0;)V
+    invoke-direct {v0, v1}, Lcom/google/android/exoplayer2/source/TrackGroupArray;-><init>([Li8/u0;)V
 
     .line 7
     .line 8
@@ -109,9 +109,9 @@
     iput v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->k:I
 
     .line 6
-    new-array v0, v0, [Lh8/u0;
+    new-array v0, v0, [Li8/u0;
 
-    iput-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iput-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     const/4 v0, 0x0
 
@@ -122,9 +122,9 @@
     if-ge v0, v1, :cond_0
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
-    const-class v2, Lh8/u0;
+    const-class v2, Li8/u0;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -134,7 +134,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lh8/u0;
+    check-cast v2, Li8/u0;
 
     aput-object v2, v1, v0
 
@@ -146,14 +146,14 @@
     return-void
 .end method
 
-.method public varargs constructor <init>([Lh8/u0;)V
+.method public varargs constructor <init>([Li8/u0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 3
     array-length p1, p1
@@ -165,17 +165,17 @@
 
 
 # virtual methods
-.method public b(I)Lh8/u0;
+.method public a(I)Li8/u0;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     aget-object p1, v0, p1
 
     return-object p1
 .end method
 
-.method public d(Lh8/u0;)I
+.method public b(Li8/u0;)I
     .locals 2
 
     .line 1
@@ -191,7 +191,7 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 7
     .line 8
@@ -334,11 +334,11 @@
 
     .line 24
     .line 25
-    iget-object v2, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v2, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 26
     .line 27
-    iget-object p1, p1, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object p1, p1, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 28
     .line 29
@@ -390,7 +390,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 6
     .line 7
@@ -471,7 +471,7 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Lh8/u0;
+    iget-object v1, p0, Lcom/google/android/exoplayer2/source/TrackGroupArray;->l:[Li8/u0;
 
     .line 13
     .line 14

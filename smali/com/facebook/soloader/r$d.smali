@@ -24,8 +24,8 @@
 .method public abstract getFileName()Ljava/lang/String;
 .end method
 
-.method public abstract q0(Ljava/io/DataOutput;[B)V
+.method public abstract m0(Ljava/io/DataOutput;[B)V
 .end method
 
-.method public abstract x0()Lcom/facebook/soloader/r$b;
+.method public abstract v0()Lcom/facebook/soloader/r$b;
 .end method

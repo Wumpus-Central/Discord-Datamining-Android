@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lje/b;",
+            "Lke/b;",
             ">;"
         }
     .end annotation
@@ -28,7 +28,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lje/a;",
+            "Lke/a;",
             ">;"
         }
     .end annotation
@@ -48,10 +48,10 @@
         value = {
             "(I",
             "Ljava/util/List<",
-            "Lje/b;",
+            "Lke/b;",
             ">;",
             "Ljava/util/List<",
-            "Lje/a;",
+            "Lke/a;",
             ">;",
             "Lcom/linkedin/android/litr/io/MediaRange;",
             "ZZ)V"

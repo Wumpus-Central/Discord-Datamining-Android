@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/j;)V
+.method synthetic constructor <init>(Lv2/j;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -841,7 +841,7 @@
 
     .line 369
     .line 370
-    invoke-direct {v5, v4}, Lcom/android/billingclient/api/BillingFlowParams;-><init>(Lu2/o;)V
+    invoke-direct {v5, v4}, Lcom/android/billingclient/api/BillingFlowParams;-><init>(Lv2/o;)V
 
     .line 371
     .line 372
@@ -1037,7 +1037,7 @@
 
     .line 467
     .line 468
-    invoke-static {v0}, Lra/b0;->t(Ljava/util/Collection;)Lra/b0;
+    invoke-static {v0}, Lsa/b0;->t(Ljava/util/Collection;)Lsa/b0;
 
     .line 469
     .line 470
@@ -1049,7 +1049,7 @@
 
     .line 473
     :cond_18
-    invoke-static {}, Lra/b0;->u()Lra/b0;
+    invoke-static {}, Lsa/b0;->u()Lsa/b0;
 
     .line 474
     .line 475
@@ -1058,7 +1058,7 @@
 
     .line 477
     :goto_d
-    invoke-static {v5, v0}, Lcom/android/billingclient/api/BillingFlowParams;->l(Lcom/android/billingclient/api/BillingFlowParams;Lra/b0;)V
+    invoke-static {v5, v0}, Lcom/android/billingclient/api/BillingFlowParams;->l(Lcom/android/billingclient/api/BillingFlowParams;Lsa/b0;)V
 
     .line 478
     .line 479

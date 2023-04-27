@@ -4,10 +4,10 @@
 
 
 # virtual methods
-.method public abstract a(Li5/c;)Z
+.method public abstract a(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 .end method
 
-.method public abstract b(Ljava/io/InputStream;Ljava/io/OutputStream;)V
+.method public abstract b(Lj5/c;)Z
 .end method
 
 .method public abstract c(Ljava/io/InputStream;Ljava/io/OutputStream;I)V

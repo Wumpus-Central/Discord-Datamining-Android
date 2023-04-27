@@ -8,7 +8,7 @@
     value = 0x13
 .end annotation
 
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -19,7 +19,7 @@
 # direct methods
 .method public constructor <init>(Lcom/facebook/imagepipeline/memory/f;)V
     .locals 0
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -192,7 +192,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;",
             "Landroid/graphics/BitmapFactory$Options;",
             ")",
@@ -209,11 +209,11 @@
     move-result-object p1
 
     .line 5
-    check-cast p1, Ly3/g;
+    check-cast p1, Lz3/g;
 
     .line 6
     .line 7
-    invoke-interface {p1}, Ly3/g;->size()I
+    invoke-interface {p1}, Lz3/g;->size()I
 
     .line 8
     .line 9
@@ -249,7 +249,7 @@
     const/4 v3, 0x0
 
     .line 24
-    invoke-interface {p1, v3, v2, v3, v0}, Ly3/g;->f(I[BII)I
+    invoke-interface {p1, v3, v2, v3, v0}, Lz3/g;->f(I[BII)I
 
     .line 25
     .line 26
@@ -266,7 +266,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1, p2}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, p2}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -352,7 +352,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;I",
             "Landroid/graphics/BitmapFactory$Options;",
             ")",
@@ -393,11 +393,11 @@
     move-result-object p1
 
     .line 15
-    check-cast p1, Ly3/g;
+    check-cast p1, Lz3/g;
 
     .line 16
     .line 17
-    invoke-interface {p1}, Ly3/g;->size()I
+    invoke-interface {p1}, Lz3/g;->size()I
 
     .line 18
     .line 19
@@ -431,7 +431,7 @@
     move-result-object v1
 
     .line 31
-    invoke-static {v1}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v1}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 32
     .line 33
@@ -465,7 +465,7 @@
 
     .line 47
     .line 48
-    invoke-interface {p1, v2, v4, v2, p2}, Ly3/g;->f(I[BII)I
+    invoke-interface {p1, v2, v4, v2, p2}, Lz3/g;->f(I[BII)I
 
     .line 49
     .line 50
@@ -495,7 +495,7 @@
 
     .line 62
     .line 63
-    invoke-static {p1, p2}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, p2}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
     .line 65

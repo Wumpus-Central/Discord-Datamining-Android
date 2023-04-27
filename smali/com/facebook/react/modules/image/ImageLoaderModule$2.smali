@@ -17,7 +17,7 @@
     value = {
         "Lcom/facebook/datasource/b<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -51,7 +51,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation
@@ -76,7 +76,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation
@@ -127,7 +127,7 @@
     move-result-object v1
 
     .line 22
-    check-cast v1, Lu5/c;
+    check-cast v1, Lv5/c;
 
     .line 23
     .line 24

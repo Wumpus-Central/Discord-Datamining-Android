@@ -192,7 +192,7 @@
     move-result-object p1
 
     .line 25
-    invoke-static {}, Lmf/s;->h()Ljava/util/Map;
+    invoke-static {}, Lof/s;->h()Ljava/util/Map;
 
     .line 26
     .line 27

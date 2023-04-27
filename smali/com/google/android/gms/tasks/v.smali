@@ -16,13 +16,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Lta/a;
+    new-instance v0, Lua/a;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lta/a;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v0, v1}, Lua/a;-><init>(Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/google/android/gms/tasks/v;->k:Landroid/os/Handler;
 

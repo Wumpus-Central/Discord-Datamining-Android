@@ -9,7 +9,7 @@
 
     new-instance v0, Lcom/google/android/gms/auth/api/signin/b;
 
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

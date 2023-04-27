@@ -13,7 +13,7 @@
     }
 .end annotation
 
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -25,7 +25,7 @@
 .field private volatile mDestroyed:Z
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -195,7 +195,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -264,7 +264,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -333,7 +333,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1, v0}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11

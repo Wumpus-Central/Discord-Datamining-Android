@@ -140,11 +140,11 @@
     move-object v5, v3
 
     .line 56
-    check-cast v5, Lmf/p;
+    check-cast v5, Lof/p;
 
     .line 57
     .line 58
-    invoke-virtual {v5}, Lmf/p;->nextInt()I
+    invoke-virtual {v5}, Lof/p;->nextInt()I
 
     .line 59
     .line 60

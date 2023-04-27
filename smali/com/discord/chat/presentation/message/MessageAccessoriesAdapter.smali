@@ -4884,9 +4884,9 @@
 
     .line 15
     :cond_b
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     throw p1
 
@@ -5097,9 +5097,9 @@
     return v1
 
     :cond_22
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     throw p1
 .end method
@@ -6419,9 +6419,9 @@
 
     .line 164
     :cond_37
-    new-instance v1, Llf/q;
+    new-instance v1, Lnf/q;
 
-    invoke-direct {v1}, Llf/q;-><init>()V
+    invoke-direct {v1}, Lnf/q;-><init>()V
 
     throw v1
 .end method

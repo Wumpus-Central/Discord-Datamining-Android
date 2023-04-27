@@ -15,34 +15,34 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/content/Context;Ly3/a;Ls5/c;Ls5/e;ZZZLq5/e;Ly3/h;Ly3/k;Lo5/s;Lo5/s;Lo5/e;Lo5/e;Lo5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILq5/a;ZI)Lq5/j;
+.method public abstract a(Landroid/content/Context;Lz3/a;Lt5/c;Lt5/e;ZZZLr5/e;Lz3/h;Lz3/k;Lp5/s;Lp5/s;Lp5/e;Lp5/e;Lp5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILr5/a;ZI)Lr5/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Ly3/a;",
-            "Ls5/c;",
-            "Ls5/e;",
+            "Lz3/a;",
+            "Lt5/c;",
+            "Lt5/e;",
             "ZZZ",
-            "Lq5/e;",
-            "Ly3/h;",
-            "Ly3/k;",
-            "Lo5/s<",
+            "Lr5/e;",
+            "Lz3/h;",
+            "Lz3/k;",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;",
-            "Lo5/e;",
-            "Lo5/e;",
-            "Lo5/f;",
+            "Lp5/e;",
+            "Lp5/e;",
+            "Lp5/f;",
             "Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;",
             "IIZI",
-            "Lq5/a;",
+            "Lr5/a;",
             "ZI)",
-            "Lq5/j;"
+            "Lr5/j;"
         }
     .end annotation
 .end method

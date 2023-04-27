@@ -124,7 +124,7 @@
     .locals 0
 
     .line 1
-    invoke-interface {p1}, Lokhttp3/Call;->p()Z
+    invoke-interface {p1}, Lokhttp3/Call;->i()Z
 
     .line 2
     .line 3
@@ -324,7 +324,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")",
@@ -398,7 +398,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     move-result-object v1
 
@@ -497,7 +497,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-interface {p3, v0}, Lokhttp3/Call;->g(Loj/d;)V
+    invoke-interface {p3, v0}, Lokhttp3/Call;->p(Lqj/d;)V
 
     .line 25
     .line 26

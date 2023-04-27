@@ -117,7 +117,7 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/google/android/flexbox/FlexboxLayoutManager$e;)I
+.method static synthetic a(Lcom/google/android/flexbox/FlexboxLayoutManager$e;)I
     .locals 0
 
     iget p0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->k:I
@@ -125,7 +125,7 @@
     return p0
 .end method
 
-.method static synthetic d(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)I
+.method static synthetic b(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)I
     .locals 0
 
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->k:I
@@ -141,7 +141,7 @@
     return p0
 .end method
 
-.method static synthetic h(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)I
+.method static synthetic f(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)I
     .locals 0
 
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->l:I
@@ -149,25 +149,25 @@
     return p1
 .end method
 
-.method static synthetic o(Lcom/google/android/flexbox/FlexboxLayoutManager$e;)V
+.method static synthetic i(Lcom/google/android/flexbox/FlexboxLayoutManager$e;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->t()V
+    invoke-direct {p0}, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->r()V
 
     return-void
 .end method
 
-.method static synthetic q(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)Z
+.method static synthetic j(Lcom/google/android/flexbox/FlexboxLayoutManager$e;I)Z
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->r(I)Z
+    invoke-direct {p0, p1}, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->p(I)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method private r(I)Z
+.method private p(I)Z
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$e;->k:I
@@ -187,7 +187,7 @@
     return p1
 .end method
 
-.method private t()V
+.method private r()V
     .locals 1
 
     const/4 v0, -0x1

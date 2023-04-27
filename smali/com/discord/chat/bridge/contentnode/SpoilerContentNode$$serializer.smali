@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/chat/bridge/contentnode/SpoilerContentNode.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -97,7 +97,7 @@
     const/4 v3, 0x2
 
     .line 13
-    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lbj/f0;I)V
 
     .line 14
     .line 15
@@ -207,7 +207,7 @@
 
     .line 3
     .line 4
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     .line 5
     .line 6
@@ -215,7 +215,7 @@
 
     .line 7
     .line 8
-    invoke-direct {v1, v2}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v2}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 9
     .line 10
@@ -230,7 +230,7 @@
     const/4 v1, 0x1
 
     .line 15
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     .line 16
     .line 17
@@ -326,11 +326,11 @@
 
     if-eqz v1, :cond_0
 
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     sget-object v5, Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;->INSTANCE:Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;
 
-    invoke-direct {v1, v5}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v5}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     invoke-interface {p1, v0, v3, v1, v4}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -377,18 +377,18 @@
     goto :goto_0
 
     :cond_1
-    new-instance p1, Lwi/n;
+    new-instance p1, Lyi/n;
 
-    invoke-direct {p1, v8}, Lwi/n;-><init>(I)V
+    invoke-direct {p1, v8}, Lyi/n;-><init>(I)V
 
     throw p1
 
     :cond_2
-    new-instance v8, Lzi/f;
+    new-instance v8, Lbj/f;
 
     sget-object v9, Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;->INSTANCE:Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;
 
-    invoke-direct {v8, v9}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v8, v9}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     invoke-interface {p1, v0, v3, v8, v1}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -487,7 +487,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

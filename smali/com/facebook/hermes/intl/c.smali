@@ -22,11 +22,11 @@
 .method public abstract a(D)Ljava/text/AttributedCharacterIterator;
 .end method
 
-.method public abstract b(Lg5/b;)Ljava/lang/String;
+.method public abstract b(Lh5/b;)Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;)",
             "Ljava/lang/String;"
         }
@@ -48,11 +48,17 @@
 .method public abstract g(Z)Lcom/facebook/hermes/intl/c;
 .end method
 
-.method public abstract h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+.method public abstract h(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.end method
+
+.method public abstract i(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+.end method
+
+.method public abstract j(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;",
             "Ljava/lang/String;",
             "Lcom/facebook/hermes/intl/c$h;",
@@ -63,12 +69,6 @@
             "Lcom/facebook/hermes/intl/c;"
         }
     .end annotation
-.end method
-
-.method public abstract i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
-.end method
-
-.method public abstract j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
 .end method
 
 .method public abstract k(Lcom/facebook/hermes/intl/c$g;)Lcom/facebook/hermes/intl/c;

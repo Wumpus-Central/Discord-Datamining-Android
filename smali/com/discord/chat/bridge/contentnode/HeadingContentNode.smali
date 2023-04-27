@@ -61,7 +61,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -114,7 +114,7 @@
 
     move-result-object p4
 
-    invoke-static {p1, v0, p4}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {p1, v0, p4}, Lbj/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_0
     const/4 p1, 0x0
@@ -218,12 +218,12 @@
     const/4 v1, 0x0
 
     .line 19
-    invoke-interface {p1, p2, v1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->w(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+    invoke-interface {p1, p2, v1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
 
     .line 20
     .line 21
     .line 22
-    new-instance v0, Lzi/f;
+    new-instance v0, Lbj/f;
 
     .line 23
     .line 24
@@ -231,7 +231,7 @@
 
     .line 25
     .line 26
-    invoke-direct {v0, v1}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v0, v1}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 27
     .line 28
@@ -243,7 +243,7 @@
     const/4 v1, 0x1
 
     .line 32
-    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     .line 33
     .line 34

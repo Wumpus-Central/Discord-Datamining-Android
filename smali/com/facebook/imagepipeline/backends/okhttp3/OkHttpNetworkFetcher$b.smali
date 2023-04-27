@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loj/d;
+.implements Lqj/d;
 
 
 # annotations
@@ -144,7 +144,7 @@
     .line 45
     :cond_0
     :try_start_0
-    invoke-virtual {p2}, Lokhttp3/Response;->Y()Z
+    invoke-virtual {p2}, Lokhttp3/Response;->X()Z
 
     .line 46
     .line 47

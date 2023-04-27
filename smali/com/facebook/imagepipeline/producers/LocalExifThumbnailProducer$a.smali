@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/producers/s0<",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -46,9 +46,9 @@
 .method protected bridge synthetic b(Ljava/lang/Object;)V
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->j(Lu5/e;)V
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->j(Lv5/e;)V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 .method protected bridge synthetic c()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->l()Lu5/e;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->l()Lv5/e;
 
     move-result-object v0
 
@@ -66,29 +66,29 @@
 .method protected bridge synthetic i(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->k(Lu5/e;)Ljava/util/Map;
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer$a;->k(Lv5/e;)Ljava/util/Map;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method protected j(Lu5/e;)V
+.method protected j(Lv5/e;)V
     .locals 0
 
-    invoke-static {p1}, Lu5/e;->h(Lu5/e;)V
+    invoke-static {p1}, Lv5/e;->h(Lv5/e;)V
 
     return-void
 .end method
 
-.method protected k(Lu5/e;)Ljava/util/Map;
+.method protected k(Lv5/e;)Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lu5/e;",
+            "Lv5/e;",
             ")",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -113,14 +113,14 @@
 
     const-string v0, "createdThumbnail"
 
-    invoke-static {v0, p1}, Lv3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {v0, p1}, Lw3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method protected l()Lu5/e;
+.method protected l()Lv5/e;
     .locals 3
 
     .line 1
@@ -176,7 +176,7 @@
     move-result-object v1
 
     .line 26
-    invoke-static {v1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
     .line 28
@@ -192,7 +192,7 @@
 
     .line 33
     .line 34
-    invoke-static {v2}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->c(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;)Ly3/h;
+    invoke-static {v2}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->c(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;)Lz3/h;
 
     .line 35
     .line 36
@@ -200,7 +200,7 @@
     move-result-object v2
 
     .line 38
-    invoke-interface {v2, v1}, Ly3/h;->d([B)Ly3/g;
+    invoke-interface {v2, v1}, Lz3/h;->d([B)Lz3/g;
 
     .line 39
     .line 40
@@ -212,7 +212,7 @@
 
     .line 43
     .line 44
-    invoke-static {v2, v1, v0}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->d(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;Ly3/g;Landroid/media/ExifInterface;)Lu5/e;
+    invoke-static {v2, v1, v0}, Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;->d(Lcom/facebook/imagepipeline/producers/LocalExifThumbnailProducer;Lz3/g;Landroid/media/ExifInterface;)Lv5/e;
 
     .line 45
     .line 46

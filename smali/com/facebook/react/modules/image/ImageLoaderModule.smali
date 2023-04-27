@@ -236,7 +236,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lk4/c;->a()Lcom/facebook/imagepipeline/core/ImagePipeline;
+    invoke-static {}, Ll4/c;->a()Lcom/facebook/imagepipeline/core/ImagePipeline;
 
     move-result-object v0
 
@@ -632,7 +632,7 @@
     .line 46
     .line 47
     .line 48
-    invoke-static {}, Lt3/a;->a()Lt3/a;
+    invoke-static {}, Lu3/a;->a()Lu3/a;
 
     .line 49
     .line 50
@@ -796,7 +796,7 @@
     .line 46
     .line 47
     .line 48
-    invoke-static {}, Lt3/a;->a()Lt3/a;
+    invoke-static {}, Lu3/a;->a()Lu3/a;
 
     .line 49
     .line 50
@@ -1143,7 +1143,7 @@
     .line 41
     .line 42
     .line 43
-    invoke-static {}, Lt3/a;->a()Lt3/a;
+    invoke-static {}, Lu3/a;->a()Lu3/a;
 
     .line 44
     .line 45

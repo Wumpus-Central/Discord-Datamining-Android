@@ -257,7 +257,7 @@
     .line 176
 .end method
 
-.method public static c(Lu5/e;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
+.method public static c(Lv5/e;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
     .locals 2
 
     .line 1
@@ -272,7 +272,7 @@
 
     .line 5
     :cond_0
-    invoke-virtual {p0}, Lu5/e;->H()I
+    invoke-virtual {p0}, Lv5/e;->H()I
 
     .line 6
     .line 7
@@ -296,7 +296,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p0}, Lu5/e;->getWidth()I
+    invoke-virtual {p0}, Lv5/e;->getWidth()I
 
     .line 18
     .line 19
@@ -304,7 +304,7 @@
     move-result v0
 
     .line 21
-    invoke-virtual {p0}, Lu5/e;->getHeight()I
+    invoke-virtual {p0}, Lv5/e;->getHeight()I
 
     .line 22
     .line 23
@@ -324,7 +324,7 @@
 
     .line 30
     :cond_1
-    invoke-virtual {p0}, Lu5/e;->getHeight()I
+    invoke-virtual {p0}, Lv5/e;->getHeight()I
 
     .line 31
     .line 32
@@ -332,7 +332,7 @@
     move-result v0
 
     .line 34
-    invoke-virtual {p0}, Lu5/e;->getWidth()I
+    invoke-virtual {p0}, Lv5/e;->getWidth()I
 
     .line 35
     .line 36

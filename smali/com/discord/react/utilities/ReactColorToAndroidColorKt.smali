@@ -30,7 +30,7 @@
 
     int-to-long v0, p0
 
-    invoke-static {v0, v1}, Llf/d0;->b(J)J
+    invoke-static {v0, v1}, Lnf/d0;->b(J)J
 
     move-result-wide v0
 

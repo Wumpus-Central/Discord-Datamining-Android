@@ -24,11 +24,11 @@
 
 .field private final b:Ljava/lang/Object;
 
-.field private c:Lcb/c;
+.field private c:Ldb/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lcb/c;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Ldb/c;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,15 +41,15 @@
 
     iput-object p1, p0, Lcom/google/android/gms/tasks/j;->a:Ljava/util/concurrent/Executor;
 
-    iput-object p2, p0, Lcom/google/android/gms/tasks/j;->c:Lcb/c;
+    iput-object p2, p0, Lcom/google/android/gms/tasks/j;->c:Ldb/c;
 
     return-void
 .end method
 
-.method static bridge synthetic a(Lcom/google/android/gms/tasks/j;)Lcb/c;
+.method static bridge synthetic a(Lcom/google/android/gms/tasks/j;)Ldb/c;
     .locals 0
 
-    iget-object p0, p0, Lcom/google/android/gms/tasks/j;->c:Lcb/c;
+    iget-object p0, p0, Lcom/google/android/gms/tasks/j;->c:Ldb/c;
 
     return-object p0
 .end method
@@ -95,7 +95,7 @@
 
     .line 10
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/tasks/j;->c:Lcb/c;
+    iget-object v0, p0, Lcom/google/android/gms/tasks/j;->c:Ldb/c;
 
     .line 11
     .line 12

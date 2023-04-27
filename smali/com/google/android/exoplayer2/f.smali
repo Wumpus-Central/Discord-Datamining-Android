@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ld7/d;
+.implements Le7/d;
 
 
 # instance fields
@@ -117,7 +117,7 @@
     move-result v0
 
     .line 33
-    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     .line 34
     .line 35
@@ -200,7 +200,7 @@
 
     .line 6
     .line 7
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->i()Z
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->h()Z
 
     .line 8
     .line 9
@@ -260,7 +260,7 @@
 .method public b(Lcom/google/android/exoplayer2/Player;IJ)Z
     .locals 0
 
-    invoke-interface {p1, p2, p3, p4}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p1, p2, p3, p4}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     const/4 p1, 0x1
 
@@ -270,7 +270,7 @@
 .method public c(Lcom/google/android/exoplayer2/Player;Z)Z
     .locals 0
 
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->F(Z)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->H(Z)V
 
     const/4 p1, 0x1
 
@@ -280,7 +280,7 @@
 .method public d(Lcom/google/android/exoplayer2/Player;I)Z
     .locals 0
 
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->S(I)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->R(I)V
 
     const/4 p1, 0x1
 
@@ -303,7 +303,7 @@
 
     .line 6
     .line 7
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->i()Z
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->h()Z
 
     .line 8
     .line 9
@@ -394,7 +394,7 @@
     .locals 8
 
     .line 1
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -450,7 +450,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->M()I
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->N()I
 
     .line 29
     .line 30
@@ -536,7 +536,7 @@
     .line 67
     .line 68
     .line 69
-    invoke-interface {p1, v0, v3, v4}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p1, v0, v3, v4}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     .line 70
     .line 71
@@ -553,7 +553,7 @@
 
     .line 76
     .line 77
-    invoke-interface {p1, v1, v3, v4}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p1, v1, v3, v4}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     .line 78
     .line 79
@@ -728,7 +728,7 @@
     .locals 6
 
     .line 1
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -784,7 +784,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->T()I
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->S()I
 
     .line 29
     .line 30
@@ -806,7 +806,7 @@
 
     .line 39
     .line 40
-    invoke-interface {p1, v0, v4, v5}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p1, v0, v4, v5}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     .line 41
     .line 42
@@ -843,7 +843,7 @@
 
     .line 57
     .line 58
-    invoke-interface {p1, v1, v4, v5}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p1, v1, v4, v5}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     .line 59
     .line 60
@@ -1058,7 +1058,7 @@
 .method public k(Lcom/google/android/exoplayer2/Player;Z)Z
     .locals 0
 
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->q(Z)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/Player;->o(Z)V
 
     const/4 p1, 0x1
 

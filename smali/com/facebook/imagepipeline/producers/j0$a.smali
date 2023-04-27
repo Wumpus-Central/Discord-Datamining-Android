@@ -17,10 +17,10 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -31,12 +31,12 @@
 
 .field private final d:Z
 
-.field private final e:Lo5/s;
+.field private final e:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -46,20 +46,20 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/cache/common/CacheKey;ZLo5/s;Z)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/cache/common/CacheKey;ZLp5/s;Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/cache/common/CacheKey;",
             "Z",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;Z)V"
         }
     .end annotation
@@ -78,7 +78,7 @@
 
     .line 7
     .line 8
-    iput-object p4, p0, Lcom/facebook/imagepipeline/producers/j0$a;->e:Lo5/s;
+    iput-object p4, p0, Lcom/facebook/imagepipeline/producers/j0$a;->e:Lp5/s;
 
     .line 9
     .line 10
@@ -653,7 +653,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation
@@ -728,7 +728,7 @@
 
     .line 32
     .line 33
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/j0$a;->e:Lo5/s;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/j0$a;->e:Lp5/s;
 
     .line 34
     .line 35
@@ -736,7 +736,7 @@
 
     .line 36
     .line 37
-    invoke-interface {v0, v1, p1}, Lo5/s;->d(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-interface {v0, v1, p1}, Lp5/s;->b(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     .line 38
     .line 39

@@ -17,13 +17,13 @@
 # instance fields
 .field final a:Ljava/net/URL;
 
-.field final b:Lp6/j;
+.field final b:Lq6/j;
 
 .field final c:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/net/URL;Lp6/j;Ljava/lang/String;)V
+.method constructor <init>(Ljava/net/URL;Lq6/j;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -36,7 +36,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/datatransport/cct/d$a;->b:Lp6/j;
+    iput-object p2, p0, Lcom/google/android/datatransport/cct/d$a;->b:Lq6/j;
 
     .line 7
     .line 8
@@ -220,11 +220,11 @@
 
     new-instance v0, Lcom/google/android/datatransport/cct/d$a;
 
-    iget-object v1, p0, Lcom/google/android/datatransport/cct/d$a;->b:Lp6/j;
+    iget-object v1, p0, Lcom/google/android/datatransport/cct/d$a;->b:Lq6/j;
 
     iget-object v2, p0, Lcom/google/android/datatransport/cct/d$a;->c:Ljava/lang/String;
 
-    invoke-direct {v0, p1, v1, v2}, Lcom/google/android/datatransport/cct/d$a;-><init>(Ljava/net/URL;Lp6/j;Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1, v2}, Lcom/google/android/datatransport/cct/d$a;-><init>(Ljava/net/URL;Lq6/j;Ljava/lang/String;)V
 
     return-object v0
 .end method

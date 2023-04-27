@@ -342,7 +342,7 @@
 
     move-result-object v6
 
-    invoke-static {v4, v6, v0}, Lw3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v6, v0}, Lx3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 33
     iget-object v4, v1, Lcom/facebook/react/modules/storage/AsyncStorageModule$1;->val$callback:Lcom/facebook/react/bridge/Callback;

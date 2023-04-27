@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw6/c;
+.implements Lx6/c;
 
 
 # direct methods

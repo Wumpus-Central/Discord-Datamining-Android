@@ -162,7 +162,7 @@
     const/4 p1, -0x1
 
     .line 25
-    invoke-static {v0, v1, p1}, Le6/a;->a(JI)Landroid/os/VibrationEffect;
+    invoke-static {v0, v1, p1}, Lf6/a;->a(JI)Landroid/os/VibrationEffect;
 
     .line 26
     .line 27
@@ -170,7 +170,7 @@
     move-result-object p1
 
     .line 29
-    invoke-static {p2, p1}, Le6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
+    invoke-static {p2, p1}, Lf6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
 
     .line 30
     .line 31
@@ -302,7 +302,7 @@
 
     .line 45
     .line 46
-    invoke-static {v0, p2}, Le6/c;->a([JI)Landroid/os/VibrationEffect;
+    invoke-static {v0, p2}, Lf6/c;->a([JI)Landroid/os/VibrationEffect;
 
     .line 47
     .line 48
@@ -310,7 +310,7 @@
     move-result-object p1
 
     .line 50
-    invoke-static {p3, p1}, Le6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
+    invoke-static {p3, p1}, Lf6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
 
     .line 51
     .line 52

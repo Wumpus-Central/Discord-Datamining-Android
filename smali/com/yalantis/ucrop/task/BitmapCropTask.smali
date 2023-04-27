@@ -38,9 +38,9 @@
 
 .field private final k:Ljava/lang/String;
 
-.field private final l:Lgf/c;
+.field private final l:Lif/c;
 
-.field private final m:Lff/a;
+.field private final m:Lhf/a;
 
 .field private n:I
 
@@ -91,7 +91,7 @@
     .line 29
 .end method
 
-.method public constructor <init>(Landroid/graphics/Bitmap;Lgf/d;Lgf/b;Lff/a;)V
+.method public constructor <init>(Landroid/graphics/Bitmap;Lif/d;Lif/b;Lhf/a;)V
     .locals 0
 
     .line 1
@@ -104,7 +104,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {p2}, Lgf/d;->a()Landroid/graphics/RectF;
+    invoke-virtual {p2}, Lif/d;->a()Landroid/graphics/RectF;
 
     .line 7
     .line 8
@@ -116,7 +116,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p2}, Lgf/d;->c()Landroid/graphics/RectF;
+    invoke-virtual {p2}, Lif/d;->c()Landroid/graphics/RectF;
 
     .line 13
     .line 14
@@ -128,7 +128,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p2}, Lgf/d;->d()F
+    invoke-virtual {p2}, Lif/d;->d()F
 
     .line 19
     .line 20
@@ -140,7 +140,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p2}, Lgf/d;->b()F
+    invoke-virtual {p2}, Lif/d;->b()F
 
     .line 25
     .line 26
@@ -152,7 +152,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p3}, Lgf/b;->f()I
+    invoke-virtual {p3}, Lif/b;->f()I
 
     .line 31
     .line 32
@@ -164,7 +164,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {p3}, Lgf/b;->g()I
+    invoke-virtual {p3}, Lif/b;->g()I
 
     .line 37
     .line 38
@@ -176,7 +176,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p3}, Lgf/b;->a()Landroid/graphics/Bitmap$CompressFormat;
+    invoke-virtual {p3}, Lif/b;->a()Landroid/graphics/Bitmap$CompressFormat;
 
     .line 43
     .line 44
@@ -188,7 +188,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {p3}, Lgf/b;->b()I
+    invoke-virtual {p3}, Lif/b;->b()I
 
     .line 49
     .line 50
@@ -200,7 +200,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {p3}, Lgf/b;->d()Ljava/lang/String;
+    invoke-virtual {p3}, Lif/b;->d()Ljava/lang/String;
 
     .line 55
     .line 56
@@ -212,7 +212,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {p3}, Lgf/b;->e()Ljava/lang/String;
+    invoke-virtual {p3}, Lif/b;->e()Ljava/lang/String;
 
     .line 61
     .line 62
@@ -224,7 +224,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p3}, Lgf/b;->c()Lgf/c;
+    invoke-virtual {p3}, Lif/b;->c()Lif/c;
 
     .line 67
     .line 68
@@ -232,11 +232,11 @@
     move-result-object p1
 
     .line 70
-    iput-object p1, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lgf/c;
+    iput-object p1, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lif/c;
 
     .line 71
     .line 72
-    iput-object p4, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lff/a;
+    iput-object p4, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lhf/a;
 
     .line 73
     .line 74
@@ -812,11 +812,11 @@
 
     .line 127
     .line 128
-    iget-object v2, v0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lgf/c;
+    iget-object v2, v0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lif/c;
 
     .line 129
     .line 130
-    invoke-virtual {v2}, Lgf/c;->a()I
+    invoke-virtual {v2}, Lif/c;->a()I
 
     .line 131
     .line 132
@@ -824,11 +824,11 @@
     move-result v15
 
     .line 134
-    iget-object v2, v0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lgf/c;
+    iget-object v2, v0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lif/c;
 
     .line 135
     .line 136
-    invoke-virtual {v2}, Lgf/c;->b()I
+    invoke-virtual {v2}, Lif/c;->b()I
 
     .line 137
     .line 138
@@ -884,7 +884,7 @@
 
     .line 163
     .line 164
-    invoke-static {v1, v3, v4, v5}, Lif/f;->b(Landroidx/exifinterface/media/a;IILjava/lang/String;)V
+    invoke-static {v1, v3, v4, v5}, Lkf/f;->b(Landroidx/exifinterface/media/a;IILjava/lang/String;)V
 
     .line 165
     .line 166
@@ -902,7 +902,7 @@
 
     .line 171
     .line 172
-    invoke-static {v1, v2}, Lif/e;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lkf/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 173
     .line 174
@@ -1699,11 +1699,11 @@
     .line 12
     .line 13
     .line 14
-    iget-object v2, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lgf/c;
+    iget-object v2, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lif/c;
 
     .line 15
     .line 16
-    invoke-virtual {v2}, Lgf/c;->a()I
+    invoke-virtual {v2}, Lif/c;->a()I
 
     .line 17
     .line 18
@@ -1719,11 +1719,11 @@
 
     .line 23
     .line 24
-    iget-object v2, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lgf/c;
+    iget-object v2, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->l:Lif/c;
 
     .line 25
     .line 26
-    invoke-virtual {v2}, Lgf/c;->a()I
+    invoke-virtual {v2}, Lif/c;->a()I
 
     .line 27
     .line 28
@@ -2659,7 +2659,7 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lff/a;
+    iget-object v0, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lhf/a;
 
     .line 2
     .line 3
@@ -2692,7 +2692,7 @@
     move-result-object v2
 
     .line 18
-    iget-object v1, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lff/a;
+    iget-object v1, p0, Lcom/yalantis/ucrop/task/BitmapCropTask;->m:Lhf/a;
 
     .line 19
     .line 20
@@ -2712,7 +2712,7 @@
 
     .line 27
     .line 28
-    invoke-interface/range {v1 .. v6}, Lff/a;->a(Landroid/net/Uri;IIII)V
+    invoke-interface/range {v1 .. v6}, Lhf/a;->a(Landroid/net/Uri;IIII)V
 
     .line 29
     .line 30
@@ -2721,7 +2721,7 @@
 
     .line 32
     :cond_0
-    invoke-interface {v0, p1}, Lff/a;->b(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lhf/a;->b(Ljava/lang/Throwable;)V
 
     .line 33
     .line 34

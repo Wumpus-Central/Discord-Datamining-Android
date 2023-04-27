@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lff/b;
+.implements Lhf/b;
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Bitmap;Lgf/c;Ljava/lang/String;Ljava/lang/String;)V
+.method public a(Landroid/graphics/Bitmap;Lif/c;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -60,7 +60,7 @@
 
     .line 12
     .line 13
-    invoke-static {p3, p2}, Lcom/yalantis/ucrop/view/b;->e(Lcom/yalantis/ucrop/view/b;Lgf/c;)Lgf/c;
+    invoke-static {p3, p2}, Lcom/yalantis/ucrop/view/b;->e(Lcom/yalantis/ucrop/view/b;Lif/c;)Lif/c;
 
     .line 14
     .line 15

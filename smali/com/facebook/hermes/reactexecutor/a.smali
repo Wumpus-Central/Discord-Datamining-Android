@@ -19,12 +19,12 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/facebook/hermes/reactexecutor/a;-><init>(Lh5/a;)V
+    invoke-direct {p0, v0}, Lcom/facebook/hermes/reactexecutor/a;-><init>(Li5/a;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lh5/a;)V
+.method public constructor <init>(Li5/a;)V
     .locals 0
 
     .line 2
@@ -56,7 +56,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v3, v1, v2}, Lcom/facebook/hermes/reactexecutor/HermesExecutor;-><init>(Lh5/a;ZLjava/lang/String;)V
+    invoke-direct {v0, v3, v1, v2}, Lcom/facebook/hermes/reactexecutor/HermesExecutor;-><init>(Li5/a;ZLjava/lang/String;)V
 
     return-object v0
 .end method

@@ -1906,11 +1906,11 @@
     .line 14
     .line 15
     .line 16
-    new-instance v0, Le3/a;
+    new-instance v0, Lf3/a;
 
     .line 17
     .line 18
-    invoke-direct {v0, p3, p1, p2}, Le3/a;-><init>(Lkotlin/jvm/functions/Function2;Lcom/discord/chat/bridge/sticker/Sticker;Lcom/discord/chat/bridge/Message;)V
+    invoke-direct {v0, p3, p1, p2}, Lf3/a;-><init>(Lkotlin/jvm/functions/Function2;Lcom/discord/chat/bridge/sticker/Sticker;Lcom/discord/chat/bridge/Message;)V
 
     .line 19
     .line 20

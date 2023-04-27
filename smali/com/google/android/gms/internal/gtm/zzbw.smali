@@ -19,7 +19,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -36,7 +36,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1, v0}, Lw9/p;->k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lx9/p;->k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15

@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -2194,7 +2194,7 @@
 
 .method public static makeNativeMap(Landroid/os/Bundle;)Lcom/facebook/react/bridge/WritableNativeMap;
     .locals 4
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 4
@@ -2244,9 +2244,6 @@
 
 .method public static makeNativeMap(Ljava/util/Map;)Lcom/facebook/react/bridge/WritableNativeMap;
     .locals 3
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2256,6 +2253,9 @@
             ">;)",
             "Lcom/facebook/react/bridge/WritableNativeMap;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

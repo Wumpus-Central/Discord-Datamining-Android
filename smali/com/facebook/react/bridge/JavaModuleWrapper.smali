@@ -4,13 +4,13 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/JavaModuleWrapper$MethodDescriptor;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -170,7 +170,7 @@
 
 .method private findMethods()V
     .locals 11
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -182,7 +182,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 6
     .line 7
@@ -471,7 +471,7 @@
 
     .line 149
     :cond_4
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 150
     .line 151
@@ -654,7 +654,7 @@
 # virtual methods
 .method public getConstants()Lcom/facebook/react/bridge/NativeMap;
     .locals 5
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -802,7 +802,7 @@
 
     .line 74
     .line 75
-    invoke-static {v2, v3, v1}, Lg6/b;->a(JLjava/lang/String;)Lg6/b$b;
+    invoke-static {v2, v3, v1}, Lh6/b;->a(JLjava/lang/String;)Lh6/b$b;
 
     .line 76
     .line 77
@@ -814,7 +814,7 @@
 
     .line 80
     .line 81
-    invoke-virtual {v1, v4, v0}, Lg6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lg6/b$b;
+    invoke-virtual {v1, v4, v0}, Lh6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lh6/b$b;
 
     .line 82
     .line 83
@@ -822,7 +822,7 @@
     move-result-object v1
 
     .line 85
-    invoke-virtual {v1}, Lg6/b$b;->c()V
+    invoke-virtual {v1}, Lh6/b$b;->c()V
 
     .line 86
     .line 87
@@ -848,7 +848,7 @@
 
     .line 98
     .line 99
-    invoke-static {v2, v3, v4}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v2, v3, v4}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 100
     .line 101
@@ -861,7 +861,7 @@
     move-result-object v1
 
     .line 106
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 107
     .line 108
@@ -870,7 +870,7 @@
 
     .line 110
     .line 111
-    invoke-static {v2, v3, v4}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v2, v3, v4}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 112
     .line 113
@@ -904,7 +904,7 @@
     .line 126
     .line 127
     .line 128
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 129
     .line 130
@@ -918,7 +918,7 @@
     .line 134
     .line 135
     .line 136
-    invoke-static {v2, v3}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v2, v3}, Lh6/b;->b(J)Lh6/b$b;
 
     .line 137
     .line 138
@@ -926,7 +926,7 @@
     move-result-object v0
 
     .line 140
-    invoke-virtual {v0}, Lg6/b$b;->c()V
+    invoke-virtual {v0}, Lh6/b$b;->c()V
 
     .line 141
     .line 142
@@ -947,7 +947,7 @@
     .line 148
     .line 149
     .line 150
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 151
     .line 152
@@ -961,7 +961,7 @@
     .line 156
     .line 157
     .line 158
-    invoke-static {v2, v3}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v2, v3}, Lh6/b;->b(J)Lh6/b$b;
 
     .line 159
     .line 160
@@ -969,7 +969,7 @@
     move-result-object v0
 
     .line 162
-    invoke-virtual {v0}, Lg6/b$b;->c()V
+    invoke-virtual {v0}, Lh6/b$b;->c()V
 
     .line 163
     .line 164
@@ -1137,9 +1137,6 @@
 
 .method public getMethodDescriptors()Ljava/util/List;
     .locals 1
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1147,6 +1144,9 @@
             "Lcom/facebook/react/bridge/JavaModuleWrapper$MethodDescriptor;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1211,7 +1211,7 @@
 
 .method public getModule()Lcom/facebook/react/bridge/BaseJavaModule;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/bridge/JavaModuleWrapper;->mModuleHolder:Lcom/facebook/react/bridge/ModuleHolder;
@@ -1227,7 +1227,7 @@
 
 .method public getName()Ljava/lang/String;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/bridge/JavaModuleWrapper;->mModuleHolder:Lcom/facebook/react/bridge/ModuleHolder;
@@ -1241,7 +1241,7 @@
 
 .method public invoke(ILcom/facebook/react/bridge/ReadableNativeArray;)V
     .locals 6
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

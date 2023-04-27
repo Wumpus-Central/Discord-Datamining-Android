@@ -2119,7 +2119,7 @@
     move-result v1
 
     .line 48
-    invoke-static {p1, v1}, Lkb/a;->a(II)I
+    invoke-static {p1, v1}, Llb/a;->a(II)I
 
     .line 49
     .line 50
@@ -2151,7 +2151,7 @@
     move-result v3
 
     .line 64
-    invoke-static {v1, v3}, Lkb/a;->a(II)I
+    invoke-static {v1, v3}, Llb/a;->a(II)I
 
     .line 65
     .line 66
@@ -2175,7 +2175,7 @@
 
     .line 75
     .line 76
-    invoke-static {}, Leb/c;->b()Leb/c;
+    invoke-static {}, Lfb/c;->b()Lfb/c;
 
     .line 77
     .line 78
@@ -2199,7 +2199,7 @@
     move-result-object v1
 
     .line 88
-    invoke-virtual {v4, v2, p1, v1}, Leb/c;->a(FLjava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+    invoke-virtual {v4, v2, p1, v1}, Lfb/c;->a(FLjava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
 
     .line 89
     .line 90
@@ -4240,7 +4240,7 @@
     move-result v3
 
     .line 18
-    invoke-static {v2, v3}, Lkb/a;->a(II)I
+    invoke-static {v2, v3}, Llb/a;->a(II)I
 
     .line 19
     .line 20

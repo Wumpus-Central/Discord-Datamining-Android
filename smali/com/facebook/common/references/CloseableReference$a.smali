@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lz3/c;
+.implements La4/c;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lz3/c<",
+        "La4/c<",
         "Ljava/io/Closeable;",
         ">;"
     }
@@ -43,7 +43,7 @@
     const/4 v0, 0x1
 
     :try_start_0
-    invoke-static {p1, v0}, Lv3/b;->a(Ljava/io/Closeable;Z)V
+    invoke-static {p1, v0}, Lw3/b;->a(Ljava/io/Closeable;Z)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

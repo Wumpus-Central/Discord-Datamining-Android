@@ -25,7 +25,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/j;",
         "Lcom/facebook/react/uimanager/events/Event;",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "handler",
         "",
@@ -35,7 +35,7 @@
         "dataExtractor",
         "",
         "c",
-        "(Lcf/d;IILcom/swmansion/gesturehandler/react/e;)V",
+        "(Lef/d;IILcom/swmansion/gesturehandler/react/e;)V",
         "onDispose",
         "",
         "getEventName",
@@ -158,20 +158,20 @@
     return-object v0
 .end method
 
-.method public static final synthetic b(Lcom/swmansion/gesturehandler/react/j;Lcf/d;IILcom/swmansion/gesturehandler/react/e;)V
+.method public static final synthetic b(Lcom/swmansion/gesturehandler/react/j;Lef/d;IILcom/swmansion/gesturehandler/react/e;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/swmansion/gesturehandler/react/j;->c(Lcf/d;IILcom/swmansion/gesturehandler/react/e;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/swmansion/gesturehandler/react/j;->c(Lef/d;IILcom/swmansion/gesturehandler/react/e;)V
 
     return-void
 .end method
 
-.method private final c(Lcf/d;IILcom/swmansion/gesturehandler/react/e;)V
+.method private final c(Lef/d;IILcom/swmansion/gesturehandler/react/e;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;II",
             "Lcom/swmansion/gesturehandler/react/e<",
             "TT;>;)V"
@@ -179,7 +179,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcf/d;->S()Landroid/view/View;
+    invoke-virtual {p1}, Lef/d;->S()Landroid/view/View;
 
     .line 2
     .line 3
@@ -209,7 +209,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, p1, p4, p2, p3}, Lcom/swmansion/gesturehandler/react/j$a;->a(Lcf/d;Lcom/swmansion/gesturehandler/react/e;II)Lcom/facebook/react/bridge/WritableMap;
+    invoke-virtual {v0, p1, p4, p2, p3}, Lcom/swmansion/gesturehandler/react/j$a;->a(Lef/d;Lcom/swmansion/gesturehandler/react/e;II)Lcom/facebook/react/bridge/WritableMap;
 
     .line 18
     .line 19

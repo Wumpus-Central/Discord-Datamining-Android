@@ -1,5 +1,5 @@
 .class public final Lcom/discord/image/fresco/config/FrescoBitmapSupplier;
-.super Lo5/j;
+.super Lp5/j;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/image/fresco/config/FrescoBitmapSupplier;",
-        "Lo5/j;",
+        "Lp5/j;",
         "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;",
         "get",
         "Landroid/content/Context;",
@@ -94,7 +94,7 @@
 
     .line 18
     .line 19
-    invoke-direct {p0, p1}, Lo5/j;-><init>(Landroid/app/ActivityManager;)V
+    invoke-direct {p0, p1}, Lp5/j;-><init>(Landroid/app/ActivityManager;)V
 
     .line 20
     .line 21
@@ -212,7 +212,7 @@
     .locals 8
 
     .line 2
-    invoke-super {p0}, Lo5/j;->get()Lcom/facebook/imagepipeline/cache/MemoryCacheParams;
+    invoke-super {p0}, Lp5/j;->get()Lcom/facebook/imagepipeline/cache/MemoryCacheParams;
 
     move-result-object v0
 

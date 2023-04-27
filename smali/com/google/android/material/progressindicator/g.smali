@@ -24,7 +24,7 @@
 
 .field final l:Lcom/google/android/material/progressindicator/b;
 
-.field m:Lrb/a;
+.field m:Lsb/a;
 
 .field private n:Landroid/animation/ValueAnimator;
 
@@ -104,16 +104,16 @@
 
     .line 14
     .line 15
-    new-instance p1, Lrb/a;
+    new-instance p1, Lsb/a;
 
     .line 16
     .line 17
-    invoke-direct {p1}, Lrb/a;-><init>()V
+    invoke-direct {p1}, Lsb/a;-><init>()V
 
     .line 18
     .line 19
     .line 20
-    iput-object p1, p0, Lcom/google/android/material/progressindicator/g;->m:Lrb/a;
+    iput-object p1, p0, Lcom/google/android/material/progressindicator/g;->m:Lsb/a;
 
     .line 21
     .line 22
@@ -715,7 +715,7 @@
 
     .line 25
     .line 26
-    sget-object v4, Leb/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v4, Lfb/a;->b:Landroid/animation/TimeInterpolator;
 
     .line 27
     .line 28
@@ -776,7 +776,7 @@
 
     .line 57
     .line 58
-    sget-object v1, Leb/a;->b:Landroid/animation/TimeInterpolator;
+    sget-object v1, Lfb/a;->b:Landroid/animation/TimeInterpolator;
 
     .line 59
     .line 60
@@ -1503,7 +1503,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/g;->m:Lrb/a;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/g;->m:Lsb/a;
 
     .line 2
     .line 3
@@ -1519,7 +1519,7 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v0, v1}, Lrb/a;->a(Landroid/content/ContentResolver;)F
+    invoke-virtual {v0, v1}, Lsb/a;->a(Landroid/content/ContentResolver;)F
 
     .line 10
     .line 11

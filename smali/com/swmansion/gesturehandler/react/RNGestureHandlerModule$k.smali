@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcf/n;
+.implements Lef/n;
 
 
 # annotations
@@ -22,22 +22,22 @@
     }
     d2 = {
         "com/swmansion/gesturehandler/react/RNGestureHandlerModule$k",
-        "Lcf/n;",
-        "Lcf/d;",
+        "Lef/n;",
+        "Lef/d;",
         "T",
         "handler",
         "Landroid/view/MotionEvent;",
         "event",
         "",
-        "a",
-        "(Lcf/d;Landroid/view/MotionEvent;)V",
+        "b",
+        "(Lef/d;Landroid/view/MotionEvent;)V",
         "",
         "newState",
         "oldState",
-        "b",
-        "(Lcf/d;II)V",
         "c",
-        "(Lcf/d;)V",
+        "(Lef/d;II)V",
+        "a",
+        "(Lef/d;)V",
         "react-native-gesture-handler_release"
     }
     k = 0x1
@@ -101,12 +101,68 @@
 
 
 # virtual methods
-.method public a(Lcf/d;Landroid/view/MotionEvent;)V
+.method public a(Lef/d;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
+            "TT;>;>(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "handler"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$k;->a:Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onTouchEvent(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+.end method
+
+.method public b(Lef/d;Landroid/view/MotionEvent;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lef/d<",
             "TT;>;>(TT;",
             "Landroid/view/MotionEvent;",
             ")V"
@@ -136,7 +192,7 @@
 
     .line 12
     .line 13
-    invoke-static {p2, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onHandlerUpdate(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;)V
+    invoke-static {p2, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onHandlerUpdate(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;)V
 
     .line 14
     .line 15
@@ -191,12 +247,12 @@
     .line 63
 .end method
 
-.method public b(Lcf/d;II)V
+.method public c(Lef/d;II)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;II)V"
         }
     .end annotation
@@ -215,7 +271,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onStateChange(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;II)V
+    invoke-static {v0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onStateChange(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;II)V
 
     .line 9
     .line 10
@@ -384,60 +440,4 @@
     .line 172
     .line 173
     .line 174
-.end method
-
-.method public c(Lcf/d;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Lcf/d<",
-            "TT;>;>(TT;)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string v0, "handler"
-
-    .line 2
-    .line 3
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$k;->a:Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;
-
-    .line 7
-    .line 8
-    invoke-static {v0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->access$onTouchEvent(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
 .end method

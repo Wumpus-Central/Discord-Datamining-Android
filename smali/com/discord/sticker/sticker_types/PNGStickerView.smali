@@ -144,7 +144,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {}, Lk4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+    invoke-static {}, Ll4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
 
     .line 7
     .line 8

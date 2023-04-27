@@ -77,11 +77,11 @@
 
     .line 9
     .line 10
-    sget-object v1, Lyi/e$i;->a:Lyi/e$i;
+    sget-object v1, Laj/e$i;->a:Laj/e$i;
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Lyi/g;->a(Ljava/lang/String;Lyi/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
+    invoke-static {v0, v1}, Laj/g;->a(Ljava/lang/String;Laj/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
 
     .line 13
     .line 14

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ltb/a$a;
+.implements Lub/a$a;
 
 
 # annotations

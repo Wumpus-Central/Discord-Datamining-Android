@@ -4,14 +4,14 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V

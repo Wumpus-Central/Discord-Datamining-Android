@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public final a:Lh8/u;
+.field public final a:Li8/u;
 
-.field public final b:Lh8/u$b;
+.field public final b:Li8/u$b;
 
-.field public final c:Lh8/b0;
+.field public final c:Li8/b0;
 
 
 # direct methods
-.method public constructor <init>(Lh8/u;Lh8/u$b;Lh8/b0;)V
+.method public constructor <init>(Li8/u;Li8/u$b;Li8/b0;)V
     .locals 0
 
     .line 1
@@ -32,15 +32,15 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/p0$b;->a:Lh8/u;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/p0$b;->a:Li8/u;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/exoplayer2/p0$b;->b:Lh8/u$b;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/p0$b;->b:Li8/u$b;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/google/android/exoplayer2/p0$b;->c:Lh8/b0;
+    iput-object p3, p0, Lcom/google/android/exoplayer2/p0$b;->c:Li8/b0;
 
     .line 9
     .line 10

@@ -787,7 +787,7 @@
 
     const/16 v4, 0xff
 
-    invoke-static {v1, v5, v4}, Lcg/h;->j(III)I
+    invoke-static {v1, v5, v4}, Leg/h;->j(III)I
 
     move-result v1
 
@@ -979,7 +979,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v9, v1}, Lcg/h;->f(FF)F
+    invoke-static {v9, v1}, Leg/h;->f(FF)F
 
     move-result v1
 
@@ -1161,7 +1161,7 @@
 
     float-to-int v1, v3
 
-    invoke-static {v1, v14, v13}, Lcg/h;->j(III)I
+    invoke-static {v1, v14, v13}, Leg/h;->j(III)I
 
     move-result v1
 
@@ -3665,7 +3665,7 @@
     const/4 v1, 0x0
 
     .line 34
-    invoke-static {p2, v1, v0}, Lcg/h;->j(III)I
+    invoke-static {p2, v1, v0}, Leg/h;->j(III)I
 
     .line 35
     .line 36

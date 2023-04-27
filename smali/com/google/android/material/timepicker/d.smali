@@ -152,7 +152,7 @@
     return-void
 .end method
 
-.method public static b(Landroid/content/res/Resources;Ljava/lang/CharSequence;)Ljava/lang/String;
+.method public static a(Landroid/content/res/Resources;Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -160,7 +160,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, p1, v0}, Lcom/google/android/material/timepicker/d;->d(Landroid/content/res/Resources;Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/google/android/material/timepicker/d;->b(Landroid/content/res/Resources;Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -343,7 +343,7 @@
     .line 179
 .end method
 
-.method public static d(Landroid/content/res/Resources;Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/String;
+.method public static b(Landroid/content/res/Resources;Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1

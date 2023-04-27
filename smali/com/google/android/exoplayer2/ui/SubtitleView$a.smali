@@ -15,14 +15,14 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/util/List;Lq8/a;FIF)V
+.method public abstract a(Ljava/util/List;Lr8/a;FIF)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lq8/b;",
+            "Lr8/b;",
             ">;",
-            "Lq8/a;",
+            "Lr8/a;",
             "FIF)V"
         }
     .end annotation

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw2/a;
+.implements Lx2/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
     }
     d2 = {
         "com/discord/analytics/InstallReferrerModuleKt$await$2$listener$1",
-        "Lw2/a;",
+        "Lx2/a;",
         "",
         "responseCode",
         "",
@@ -152,7 +152,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9

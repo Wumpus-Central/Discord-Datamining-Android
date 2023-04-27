@@ -803,11 +803,11 @@
     .line 108
     .line 109
     .line 110
-    new-instance v0, Ld3/a;
+    new-instance v0, Le3/a;
 
     .line 111
     .line 112
-    invoke-direct {v0, p2}, Ld3/a;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p2}, Le3/a;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 113
     .line 114

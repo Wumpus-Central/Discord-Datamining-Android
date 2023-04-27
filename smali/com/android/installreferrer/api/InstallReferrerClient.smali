@@ -77,8 +77,8 @@
 .method public abstract a()V
 .end method
 
-.method public abstract b()Lw2/b;
+.method public abstract b()Lx2/b;
 .end method
 
-.method public abstract d(Lw2/a;)V
+.method public abstract d(Lx2/a;)V
 .end method

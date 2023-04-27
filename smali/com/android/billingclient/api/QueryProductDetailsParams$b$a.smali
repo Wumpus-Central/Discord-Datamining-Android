@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/v;)V
+.method synthetic constructor <init>(Lv2/v;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -94,7 +94,7 @@
     const/4 v1, 0x0
 
     .line 22
-    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/QueryProductDetailsParams$b;-><init>(Lcom/android/billingclient/api/QueryProductDetailsParams$b$a;Lu2/w;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/QueryProductDetailsParams$b;-><init>(Lcom/android/billingclient/api/QueryProductDetailsParams$b$a;Lv2/w;)V
 
     .line 23
     .line 24
@@ -336,8 +336,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method public b(Ljava/lang/String;)Lcom/android/billingclient/api/QueryProductDetailsParams$b$a;

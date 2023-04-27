@@ -509,8 +509,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method private final getScreenshotData(Landroid/net/Uri;)Lcom/discord/bug_reporter/ScreenshotContentObserver$ScreenshotData;
@@ -685,7 +683,7 @@
 
     .line 71
     :cond_4
-    invoke-static {v0, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 72
     .line 73
@@ -764,7 +762,7 @@
     const/4 v4, 0x2
 
     .line 107
-    invoke-static {v2, v3, v1, v4, v1}, Lpi/l;->T0(Ljava/lang/String;CLjava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2, v3, v1, v4, v1}, Lri/l;->T0(Ljava/lang/String;CLjava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 108
     .line 109
@@ -871,7 +869,7 @@
     .line 157
     .line 158
     .line 159
-    invoke-static {v0, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 160
     .line 161
@@ -893,7 +891,7 @@
     move-exception v1
 
     .line 166
-    invoke-static {v0, p1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 167
     .line 168
@@ -903,7 +901,7 @@
     .line 170
     :cond_7
     :goto_6
-    invoke-static {v0, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 171
     .line 172
@@ -924,7 +922,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private final isWithinCurrentTimeWindow(JJ)Z
@@ -1089,7 +1086,7 @@
     const/4 v4, 0x0
 
     .line 19
-    invoke-static {v0, v1, v4, v2, v3}, Lpi/l;->u(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    invoke-static {v0, v1, v4, v2, v3}, Lri/l;->u(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     .line 20
     .line 21
@@ -1303,7 +1300,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 
@@ -1359,7 +1355,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final disconnect()V
@@ -1444,7 +1439,7 @@
     const/4 v3, 0x0
 
     .line 30
-    invoke-static {p1, v0, v3, v1, v2}, Lpi/l;->H(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    invoke-static {p1, v0, v3, v1, v2}, Lri/l;->H(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     .line 31
     .line 32

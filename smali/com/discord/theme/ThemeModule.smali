@@ -337,11 +337,11 @@
 
     .line 63
     .line 64
-    new-instance v0, Lm3/a;
+    new-instance v0, Ln3/a;
 
     .line 65
     .line 66
-    invoke-direct {v0, p0}, Lm3/a;-><init>(Lcom/discord/theme/ThemeModule;)V
+    invoke-direct {v0, p0}, Ln3/a;-><init>(Lcom/discord/theme/ThemeModule;)V
 
     .line 67
     .line 68

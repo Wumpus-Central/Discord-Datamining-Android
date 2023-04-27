@@ -414,11 +414,11 @@
     move-object v1, v0
 
     .line 54
-    check-cast v1, Lmf/p;
+    check-cast v1, Lof/p;
 
     .line 55
     .line 56
-    invoke-virtual {v1}, Lmf/p;->nextInt()I
+    invoke-virtual {v1}, Lof/p;->nextInt()I
 
     .line 57
     .line 58

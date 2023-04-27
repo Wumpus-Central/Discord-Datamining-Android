@@ -27,7 +27,7 @@
 
 .field private c:Z
 
-.field private d:Le4/b;
+.field private d:Lf4/b;
 
 .field private e:Z
 
@@ -151,7 +151,7 @@
 
     .line 28
     .line 29
-    invoke-static {v1}, Lv3/m;->a(Ljava/lang/Object;)Lcom/facebook/common/internal/Supplier;
+    invoke-static {v1}, Lw3/m;->a(Ljava/lang/Object;)Lcom/facebook/common/internal/Supplier;
 
     .line 30
     .line 31
@@ -404,7 +404,7 @@
     return p0
 .end method
 
-.method static synthetic b(Lcom/facebook/imagepipeline/core/a$b;)Le4/b$a;
+.method static synthetic b(Lcom/facebook/imagepipeline/core/a$b;)Lf4/b$a;
     .locals 0
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -486,10 +486,10 @@
     return p0
 .end method
 
-.method static synthetic l(Lcom/facebook/imagepipeline/core/a$b;)Le4/b;
+.method static synthetic l(Lcom/facebook/imagepipeline/core/a$b;)Lf4/b;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/a$b;->d:Le4/b;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/a$b;->d:Lf4/b;
 
     return-object p0
 .end method

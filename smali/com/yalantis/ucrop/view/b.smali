@@ -40,7 +40,7 @@
 
 .field private x:Ljava/lang/String;
 
-.field private y:Lgf/c;
+.field private y:Lif/c;
 
 
 # direct methods
@@ -122,10 +122,10 @@
     return-object p1
 .end method
 
-.method static synthetic e(Lcom/yalantis/ucrop/view/b;Lgf/c;)Lgf/c;
+.method static synthetic e(Lcom/yalantis/ucrop/view/b;Lif/c;)Lif/c;
     .locals 0
 
-    iput-object p1, p0, Lcom/yalantis/ucrop/view/b;->y:Lgf/c;
+    iput-object p1, p0, Lcom/yalantis/ucrop/view/b;->y:Lif/c;
 
     return-object p1
 .end method
@@ -351,10 +351,10 @@
     return v0
 .end method
 
-.method public getExifInfo()Lgf/c;
+.method public getExifInfo()Lif/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/yalantis/ucrop/view/b;->y:Lgf/c;
+    iget-object v0, p0, Lcom/yalantis/ucrop/view/b;->y:Lif/c;
 
     return-object v0
 .end method
@@ -395,7 +395,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lif/a;->b(Landroid/content/Context;)I
+    invoke-static {v0}, Lkf/a;->b(Landroid/content/Context;)I
 
     .line 10
     .line 11
@@ -451,7 +451,7 @@
     move-result-object v0
 
     .line 11
-    instance-of v0, v0, Lif/d;
+    instance-of v0, v0, Lkf/d;
 
     .line 12
     .line 13
@@ -471,11 +471,11 @@
     move-result-object v0
 
     .line 20
-    check-cast v0, Lif/d;
+    check-cast v0, Lkf/d;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Lif/d;->a()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lkf/d;->a()Landroid/graphics/Bitmap;
 
     .line 23
     .line 24
@@ -700,7 +700,7 @@
     .line 52
     .line 53
     .line 54
-    invoke-static {v2}, Lif/g;->b(Landroid/graphics/RectF;)[F
+    invoke-static {v2}, Lkf/g;->b(Landroid/graphics/RectF;)[F
 
     .line 55
     .line 56
@@ -712,7 +712,7 @@
 
     .line 59
     .line 60
-    invoke-static {v2}, Lif/g;->a(Landroid/graphics/RectF;)[F
+    invoke-static {v2}, Lkf/g;->a(Landroid/graphics/RectF;)[F
 
     .line 61
     .line 62
@@ -1364,7 +1364,7 @@
     move v3, v4
 
     .line 17
-    invoke-static/range {v0 .. v5}, Lif/a;->d(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;IILff/b;)V
+    invoke-static/range {v0 .. v5}, Lkf/a;->d(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;IILhf/b;)V
 
     .line 18
     .line 19
@@ -2280,9 +2280,9 @@
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
 
-    new-instance v0, Lif/d;
+    new-instance v0, Lkf/d;
 
-    invoke-direct {v0, p1}, Lif/d;-><init>(Landroid/graphics/Bitmap;)V
+    invoke-direct {v0, p1}, Lkf/d;-><init>(Landroid/graphics/Bitmap;)V
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/widget/n;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 

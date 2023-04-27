@@ -9,7 +9,7 @@
 # instance fields
 .field private final a:Landroid/content/Context;
 
-.field private final b:Ld9/x;
+.field private final b:Le9/x;
 
 .field private final c:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
 
@@ -21,12 +21,12 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, p1, v0, v0}, Lcom/google/android/exoplayer2/upstream/c;-><init>(Landroid/content/Context;Ljava/lang/String;Ld9/x;)V
+    invoke-direct {p0, p1, v0, v0}, Lcom/google/android/exoplayer2/upstream/c;-><init>(Landroid/content/Context;Ljava/lang/String;Le9/x;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ld9/x;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
+.method public constructor <init>(Landroid/content/Context;Le9/x;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
     .locals 0
 
     .line 3
@@ -40,7 +40,7 @@
     iput-object p1, p0, Lcom/google/android/exoplayer2/upstream/c;->a:Landroid/content/Context;
 
     .line 5
-    iput-object p2, p0, Lcom/google/android/exoplayer2/upstream/c;->b:Ld9/x;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/upstream/c;->b:Le9/x;
 
     .line 6
     iput-object p3, p0, Lcom/google/android/exoplayer2/upstream/c;->c:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ld9/x;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Le9/x;)V
     .locals 1
 
     .line 2
@@ -60,7 +60,7 @@
 
     move-result-object p2
 
-    invoke-direct {p0, p1, p3, p2}, Lcom/google/android/exoplayer2/upstream/c;-><init>(Landroid/content/Context;Ld9/x;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
+    invoke-direct {p0, p1, p3, p2}, Lcom/google/android/exoplayer2/upstream/c;-><init>(Landroid/content/Context;Le9/x;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
 
     return-void
 .end method
@@ -96,7 +96,7 @@
     .line 12
     .line 13
     .line 14
-    iget-object v1, p0, Lcom/google/android/exoplayer2/upstream/c;->b:Ld9/x;
+    iget-object v1, p0, Lcom/google/android/exoplayer2/upstream/c;->b:Le9/x;
 
     .line 15
     .line 16
@@ -104,7 +104,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/upstream/b;->h(Ld9/x;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/upstream/b;->c(Le9/x;)V
 
     .line 19
     .line 20

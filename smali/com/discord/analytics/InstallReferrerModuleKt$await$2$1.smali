@@ -86,7 +86,7 @@
     iget-object p1, p0, Lcom/discord/analytics/InstallReferrerModuleKt$await$2$1;->$this_await:Lcom/android/installreferrer/api/InstallReferrerClient;
 
     :try_start_0
-    sget-object v0, Llf/s;->l:Llf/s$a;
+    sget-object v0, Lnf/s;->l:Lnf/s$a;
 
     .line 3
     invoke-virtual {p1}, Lcom/android/installreferrer/api/InstallReferrerClient;->a()V
@@ -95,7 +95,7 @@
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
     .line 5
-    invoke-static {p1}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -104,13 +104,13 @@
     :catchall_0
     move-exception p1
 
-    sget-object v0, Llf/s;->l:Llf/s$a;
+    sget-object v0, Lnf/s;->l:Lnf/s$a;
 
-    invoke-static {p1}, Llf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {p1}, Lnf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-static {p1}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     return-void

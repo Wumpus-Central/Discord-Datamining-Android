@@ -1,5 +1,5 @@
 .class final Lcom/google/android/exoplayer2/source/smoothstreaming/a$b;
-.super Lj8/b;
+.super Lk8/b;
 .source "SourceFile"
 
 
@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field private final e:Lp8/a$b;
+.field private final e:Lq8/a$b;
 
 .field private final f:I
 
 
 # direct methods
-.method public constructor <init>(Lp8/a$b;II)V
+.method public constructor <init>(Lq8/a$b;II)V
     .locals 4
 
     .line 1
     int-to-long v0, p3
 
     .line 2
-    iget p3, p1, Lp8/a$b;->k:I
+    iget p3, p1, Lq8/a$b;->k:I
 
     .line 3
     .line 4
@@ -39,12 +39,12 @@
     int-to-long v2, p3
 
     .line 7
-    invoke-direct {p0, v0, v1, v2, v3}, Lj8/b;-><init>(JJ)V
+    invoke-direct {p0, v0, v1, v2, v3}, Lk8/b;-><init>(JJ)V
 
     .line 8
     .line 9
     .line 10
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/a$b;->e:Lp8/a$b;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/a$b;->e:Lq8/a$b;
 
     .line 11
     .line 12

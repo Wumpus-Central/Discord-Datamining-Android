@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # instance fields
 .field private arr:[F
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -32,7 +32,7 @@
 .field private m:Lcom/facebook/yoga/YogaMeasureFunction;
 
 .field private mLayoutDirection:I
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -208,7 +208,7 @@
 
 .method private final replaceChild(Lcom/facebook/yoga/YogaNodeJNIBase;I)J
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -906,7 +906,7 @@
 
 .method public final baseline(FF)F
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->n:Lcom/facebook/yoga/YogaBaselineFunction;
@@ -1223,21 +1223,7 @@
     return-void
 .end method
 
-.method public h0(Lcom/facebook/yoga/e;F)V
-    .locals 2
-
-    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
-
-    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
-
-    move-result p1
-
-    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPositionPercentJNI(JIF)V
-
-    return-void
-.end method
-
-.method public i()Lcom/facebook/yoga/YogaDirection;
+.method public h()Lcom/facebook/yoga/YogaDirection;
     .locals 2
 
     .line 1
@@ -1305,6 +1291,20 @@
     .line 42
     .line 43
     .line 44
+.end method
+
+.method public h0(Lcom/facebook/yoga/e;F)V
+    .locals 2
+
+    iget-wide v0, p0, Lcom/facebook/yoga/YogaNodeJNIBase;->o:J
+
+    invoke-virtual {p1}, Lcom/facebook/yoga/e;->b()I
+
+    move-result p1
+
+    invoke-static {v0, v1, p1, p2}, Lcom/facebook/yoga/YogaNative;->jni_YGNodeStyleSetPositionPercentJNI(JIF)V
+
+    return-void
 .end method
 
 .method public i0(Lcom/facebook/yoga/YogaPositionType;)V
@@ -1446,7 +1446,7 @@
 
     .line 41
     :pswitch_0
-    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->i()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->h()Lcom/facebook/yoga/YogaDirection;
 
     .line 42
     .line 43
@@ -1490,7 +1490,7 @@
 
     .line 60
     :pswitch_1
-    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->i()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {p0}, Lcom/facebook/yoga/YogaNodeJNIBase;->h()Lcom/facebook/yoga/YogaDirection;
 
     .line 61
     .line 62
@@ -1821,7 +1821,7 @@
 
 .method public final measure(FIFI)J
     .locals 7
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

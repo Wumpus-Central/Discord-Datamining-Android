@@ -68,7 +68,7 @@
 
     .line 17
     .line 18
-    sget v0, Ldb/i;->o:I
+    sget v0, Leb/i;->o:I
 
     .line 19
     .line 20
@@ -88,7 +88,7 @@
 
     .line 26
     .line 27
-    sget v0, Ldb/i;->m:I
+    sget v0, Leb/i;->m:I
 
     .line 28
     .line 29

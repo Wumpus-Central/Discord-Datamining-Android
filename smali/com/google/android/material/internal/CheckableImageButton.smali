@@ -312,7 +312,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lh1/a;->b()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lh1/a;->a()Landroid/os/Parcelable;
 
     .line 12
     .line 13

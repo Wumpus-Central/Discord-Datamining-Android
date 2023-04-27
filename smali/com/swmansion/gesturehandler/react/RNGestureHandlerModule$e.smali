@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c<",
-        "Lcf/l;",
+        "Lef/l;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$e;",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
-        "Lcf/l;",
+        "Lef/l;",
         "Landroid/content/Context;",
         "context",
         "f",
@@ -62,7 +62,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
-            "Lcf/l;",
+            "Lef/l;",
             ">;"
         }
     .end annotation
@@ -81,7 +81,7 @@
     .line 2
     .line 3
     .line 4
-    const-class v0, Lcf/l;
+    const-class v0, Lef/l;
 
     .line 5
     .line 6
@@ -119,10 +119,10 @@
 
 
 # virtual methods
-.method public bridge synthetic c(Landroid/content/Context;)Lcf/d;
+.method public bridge synthetic c(Landroid/content/Context;)Lef/d;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$e;->f(Landroid/content/Context;)Lcf/l;
+    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$e;->f(Landroid/content/Context;)Lef/l;
 
     move-result-object p1
 
@@ -143,7 +143,7 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Lcf/l;",
+            "Lef/l;",
             ">;"
         }
     .end annotation
@@ -153,12 +153,12 @@
     return-object v0
 .end method
 
-.method public f(Landroid/content/Context;)Lcf/l;
+.method public f(Landroid/content/Context;)Lef/l;
     .locals 0
 
-    new-instance p1, Lcf/l;
+    new-instance p1, Lef/l;
 
-    invoke-direct {p1}, Lcf/l;-><init>()V
+    invoke-direct {p1}, Lef/l;-><init>()V
 
     return-object p1
 .end method

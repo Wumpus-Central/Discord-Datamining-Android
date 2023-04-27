@@ -54,7 +54,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
     with = Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType$Serializer;
 .end annotation
 
@@ -263,7 +263,7 @@
 
     .line 64
     .line 65
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     .line 66
     .line 67
@@ -271,7 +271,7 @@
 
     .line 68
     .line 69
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 70
     .line 71

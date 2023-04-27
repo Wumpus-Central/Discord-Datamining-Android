@@ -4,14 +4,14 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/ReactMarker$FabricMarkerListener;,
         Lcom/facebook/react/bridge/ReactMarker$MarkerListener;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -110,7 +110,7 @@
 
 .method public static addFabricListener(Lcom/facebook/react/bridge/ReactMarker$FabricMarkerListener;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -175,7 +175,7 @@
 
 .method public static addListener(Lcom/facebook/react/bridge/ReactMarker$MarkerListener;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -240,7 +240,7 @@
 
 .method public static clearFabricMarkerListeners()V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactMarker;->sFabricMarkerListeners:Ljava/util/List;
@@ -252,7 +252,7 @@
 
 .method public static clearMarkerListeners()V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactMarker;->sListeners:Ljava/util/List;
@@ -264,7 +264,7 @@
 
 .method public static logFabricMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;Ljava/lang/String;I)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 3
@@ -279,7 +279,7 @@
 
 .method public static logFabricMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;Ljava/lang/String;IJ)V
     .locals 8
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -323,7 +323,7 @@
 
 .method public static logMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -338,7 +338,7 @@
 
 .method public static logMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;I)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -351,7 +351,7 @@
 
 .method public static logMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;Ljava/lang/String;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -364,7 +364,7 @@
 
 .method public static logMarker(Lcom/facebook/react/bridge/ReactMarkerConstants;Ljava/lang/String;I)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 9
@@ -401,7 +401,7 @@
 
 .method public static logMarker(Ljava/lang/String;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -414,7 +414,7 @@
 
 .method public static logMarker(Ljava/lang/String;I)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -427,7 +427,7 @@
 
 .method public static logMarker(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     const/4 v0, 0x0
@@ -440,7 +440,7 @@
 
 .method public static logMarker(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 4
@@ -456,7 +456,7 @@
 
 .method public static removeFabricListener(Lcom/facebook/react/bridge/ReactMarker$FabricMarkerListener;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactMarker;->sFabricMarkerListeners:Ljava/util/List;
@@ -468,7 +468,7 @@
 
 .method public static removeListener(Lcom/facebook/react/bridge/ReactMarker$MarkerListener;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     sget-object v0, Lcom/facebook/react/bridge/ReactMarker;->sListeners:Ljava/util/List;

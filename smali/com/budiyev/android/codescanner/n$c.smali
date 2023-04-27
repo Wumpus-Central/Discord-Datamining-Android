@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public a([I[I)I
+.method public b([I[I)I
     .locals 2
 
     .line 1
@@ -163,7 +163,7 @@
 
     check-cast p2, [I
 
-    invoke-virtual {p0, p1, p2}, Lcom/budiyev/android/codescanner/n$c;->a([I[I)I
+    invoke-virtual {p0, p1, p2}, Lcom/budiyev/android/codescanner/n$c;->b([I[I)I
 
     move-result p1
 

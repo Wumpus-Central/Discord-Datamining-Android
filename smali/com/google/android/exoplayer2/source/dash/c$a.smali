@@ -52,21 +52,21 @@
 
 
 # virtual methods
-.method public a(Ld9/t;Ll8/b;I[ILa9/h;IJZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;Ld9/x;)Lcom/google/android/exoplayer2/source/dash/a;
+.method public a(Le9/t;Lm8/b;I[ILb9/h;IJZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;Le9/x;)Lcom/google/android/exoplayer2/source/dash/a;
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ld9/t;",
-            "Ll8/b;",
+            "Le9/t;",
+            "Lm8/b;",
             "I[I",
-            "La9/h;",
+            "Lb9/h;",
             "IJZ",
             "Ljava/util/List<",
-            "Ld7/k;",
+            "Le7/k;",
             ">;",
             "Lcom/google/android/exoplayer2/source/dash/e$c;",
-            "Ld9/x;",
+            "Le9/x;",
             ")",
             "Lcom/google/android/exoplayer2/source/dash/a;"
         }
@@ -97,7 +97,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v10, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
+    invoke-interface {v10, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->c(Le9/x;)V
 
     .line 14
     .line 15
@@ -154,7 +154,7 @@
 
     .line 40
     .line 41
-    invoke-direct/range {v3 .. v16}, Lcom/google/android/exoplayer2/source/dash/c;-><init>(Ld9/t;Ll8/b;I[ILa9/h;ILcom/google/android/exoplayer2/upstream/DataSource;JIZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;)V
+    invoke-direct/range {v3 .. v16}, Lcom/google/android/exoplayer2/source/dash/c;-><init>(Le9/t;Lm8/b;I[ILb9/h;ILcom/google/android/exoplayer2/upstream/DataSource;JIZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;)V
 
     .line 42
     .line 43

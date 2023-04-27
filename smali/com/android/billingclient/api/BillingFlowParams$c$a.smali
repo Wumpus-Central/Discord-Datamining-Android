@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/m;)V
+.method synthetic constructor <init>(Lv2/m;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -184,7 +184,7 @@
 
     .line 57
     .line 58
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$c;-><init>(Lu2/n;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$c;-><init>(Lv2/n;)V
 
     .line 59
     .line 60
@@ -371,8 +371,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method public b(Ljava/lang/String;)Lcom/android/billingclient/api/BillingFlowParams$c$a;

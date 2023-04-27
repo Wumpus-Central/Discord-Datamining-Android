@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
-        "Lcf/d<",
+        "Lef/d<",
         "TT;>;>",
         "Ljava/lang/Object;",
         "Lcom/swmansion/gesturehandler/react/e<",
@@ -33,23 +33,23 @@
     }
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "Lcom/swmansion/gesturehandler/react/e;",
         "Landroid/content/Context;",
         "context",
         "c",
-        "(Landroid/content/Context;)Lcf/d;",
+        "(Landroid/content/Context;)Lef/d;",
         "handler",
         "Lcom/facebook/react/bridge/ReadableMap;",
         "config",
         "",
         "b",
-        "(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V",
+        "(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V",
         "Lcom/facebook/react/bridge/WritableMap;",
         "eventData",
         "a",
-        "(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V",
+        "(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V",
         "Ljava/lang/Class;",
         "e",
         "()Ljava/lang/Class;",
@@ -82,7 +82,7 @@
 
 
 # virtual methods
-.method public a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+.method public a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -111,7 +111,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcf/d;->M()I
+    invoke-virtual {p1}, Lef/d;->M()I
 
     .line 12
     .line 13
@@ -176,7 +176,7 @@
     .line 63
 .end method
 
-.method public b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -205,7 +205,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcf/d;->k0()V
+    invoke-virtual {p1}, Lef/d;->k0()V
 
     .line 12
     .line 13
@@ -234,7 +234,7 @@
     move-result v0
 
     .line 26
-    invoke-virtual {p1, v0}, Lcf/d;->y0(Z)Lcf/d;
+    invoke-virtual {p1, v0}, Lef/d;->y0(Z)Lef/d;
 
     .line 27
     .line 28
@@ -264,7 +264,7 @@
     move-result v0
 
     .line 41
-    invoke-virtual {p1, v0}, Lcf/d;->r0(Z)Lcf/d;
+    invoke-virtual {p1, v0}, Lef/d;->r0(Z)Lef/d;
 
     .line 42
     .line 43
@@ -290,7 +290,7 @@
 
     .line 53
     .line 54
-    invoke-static {v0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;->a(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-static {v0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;->a(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 55
     .line 56
@@ -320,7 +320,7 @@
     move-result v0
 
     .line 69
-    invoke-virtual {p1, v0}, Lcf/d;->w0(Z)V
+    invoke-virtual {p1, v0}, Lef/d;->w0(Z)V
 
     .line 70
     .line 71
@@ -350,7 +350,7 @@
     move-result p2
 
     .line 84
-    invoke-virtual {p1, p2}, Lcf/d;->v0(Z)Lcf/d;
+    invoke-virtual {p1, p2}, Lef/d;->v0(Z)Lef/d;
 
     .line 85
     .line 86
@@ -599,7 +599,7 @@
     .line 327
 .end method
 
-.method public abstract c(Landroid/content/Context;)Lcf/d;
+.method public abstract c(Landroid/content/Context;)Lef/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

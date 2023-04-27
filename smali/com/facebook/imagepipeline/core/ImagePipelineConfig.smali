@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lq5/g;
+.implements Lr5/g;
 
 
 # annotations
@@ -26,33 +26,33 @@
 
 .field private final C:Z
 
-.field private final D:Lr5/a;
+.field private final D:Ls5/a;
 
-.field private final E:Lo5/s;
+.field private final E:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final F:Lo5/s;
+.field private final F:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final G:Lt3/f;
+.field private final G:Lu3/f;
 
-.field private final H:Lo5/a;
+.field private final H:Lp5/a;
 
 .field private final a:Landroid/graphics/Bitmap$Config;
 
@@ -66,25 +66,25 @@
     .end annotation
 .end field
 
-.field private final c:Lo5/s$a;
+.field private final c:Lp5/s$a;
 
-.field private final d:Lo5/i$b;
+.field private final d:Lp5/i$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/i$b<",
+            "Lp5/i$b<",
             "Lcom/facebook/cache/common/CacheKey;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final e:Lo5/f;
+.field private final e:Lp5/f;
 
 .field private final f:Landroid/content/Context;
 
 .field private final g:Z
 
-.field private final h:Lq5/f;
+.field private final h:Lr5/f;
 
 .field private final i:Lcom/facebook/common/internal/Supplier;
     .annotation system Ldalvik/annotation/Signature;
@@ -96,13 +96,13 @@
     .end annotation
 .end field
 
-.field private final j:Lq5/e;
+.field private final j:Lr5/e;
 
-.field private final k:Lo5/o;
+.field private final k:Lp5/o;
 
-.field private final l:Ls5/c;
+.field private final l:Lt5/c;
 
-.field private final m:La6/d;
+.field private final m:Lb6/d;
 
 .field private final n:Ljava/lang/Integer;
 
@@ -118,7 +118,7 @@
 
 .field private final p:Lcom/facebook/cache/disk/DiskCacheConfig;
 
-.field private final q:Ly3/c;
+.field private final q:Lz3/c;
 
 .field private final r:I
 
@@ -128,9 +128,9 @@
 
 .field private final u:Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;
 
-.field private final v:Lx5/y;
+.field private final v:Ly5/y;
 
-.field private final w:Ls5/e;
+.field private final w:Lt5/e;
 
 .field private final x:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -146,7 +146,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lw5/d;",
+            "Lx5/d;",
             ">;"
         }
     .end annotation
@@ -177,7 +177,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     move-result v0
 
@@ -186,7 +186,7 @@
     const-string v0, "ImagePipelineConfig()"
 
     .line 4
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 5
     :cond_0
@@ -207,7 +207,7 @@
 
     if-nez v1, :cond_1
 
-    new-instance v1, Lo5/j;
+    new-instance v1, Lp5/j;
 
     .line 7
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->w(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Landroid/content/Context;
@@ -221,13 +221,13 @@
     move-result-object v2
 
     .line 8
-    invoke-static {v2}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/app/ActivityManager;
 
-    invoke-direct {v1, v2}, Lo5/j;-><init>(Landroid/app/ActivityManager;)V
+    invoke-direct {v1, v2}, Lp5/j;-><init>(Landroid/app/ActivityManager;)V
 
     goto :goto_0
 
@@ -241,33 +241,33 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->b:Lcom/facebook/common/internal/Supplier;
 
     .line 10
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s$a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s$a;
 
     move-result-object v1
 
     if-nez v1, :cond_2
 
-    new-instance v1, Lo5/c;
+    new-instance v1, Lp5/c;
 
-    invoke-direct {v1}, Lo5/c;-><init>()V
+    invoke-direct {v1}, Lp5/c;-><init>()V
 
     goto :goto_1
 
     .line 11
     :cond_2
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s$a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s$a;
 
     move-result-object v1
 
     :goto_1
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->c:Lo5/s$a;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->c:Lp5/s$a;
 
     .line 12
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->F(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/i$b;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->F(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/i$b;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->d:Lo5/i$b;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->d:Lp5/i$b;
 
     .line 13
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->G(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Landroid/graphics/Bitmap$Config;
@@ -289,14 +289,14 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->a:Landroid/graphics/Bitmap$Config;
 
     .line 14
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/f;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/f;
 
     move-result-object v1
 
     if-nez v1, :cond_4
 
     .line 15
-    invoke-static {}, Lo5/k;->f()Lo5/k;
+    invoke-static {}, Lp5/k;->f()Lp5/k;
 
     move-result-object v1
 
@@ -304,19 +304,19 @@
 
     .line 16
     :cond_4
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/f;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/f;
 
     move-result-object v1
 
     :goto_3
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lo5/f;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lp5/f;
 
     .line 17
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->w(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -325,30 +325,30 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->f:Landroid/content/Context;
 
     .line 18
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/f;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/f;
 
     move-result-object v1
 
     if-nez v1, :cond_5
 
-    new-instance v1, Lq5/b;
+    new-instance v1, Lr5/b;
 
-    new-instance v2, Lq5/d;
+    new-instance v2, Lr5/d;
 
-    invoke-direct {v2}, Lq5/d;-><init>()V
+    invoke-direct {v2}, Lr5/d;-><init>()V
 
-    invoke-direct {v1, v2}, Lq5/b;-><init>(Lq5/c;)V
+    invoke-direct {v1, v2}, Lr5/b;-><init>(Lr5/c;)V
 
     goto :goto_4
 
     .line 19
     :cond_5
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/f;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/f;
 
     move-result-object v1
 
     :goto_4
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lq5/f;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lr5/f;
 
     .line 20
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->J(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Z
@@ -364,9 +364,9 @@
 
     if-nez v1, :cond_6
 
-    new-instance v1, Lo5/l;
+    new-instance v1, Lp5/l;
 
-    invoke-direct {v1}, Lo5/l;-><init>()V
+    invoke-direct {v1}, Lp5/l;-><init>()V
 
     goto :goto_5
 
@@ -380,14 +380,14 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->i:Lcom/facebook/common/internal/Supplier;
 
     .line 23
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/o;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/o;
 
     move-result-object v1
 
     if-nez v1, :cond_7
 
     .line 24
-    invoke-static {}, Lo5/v;->o()Lo5/v;
+    invoke-static {}, Lp5/v;->o()Lp5/v;
 
     move-result-object v1
 
@@ -395,26 +395,26 @@
 
     .line 25
     :cond_7
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/o;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/o;
 
     move-result-object v1
 
     :goto_6
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lo5/o;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lp5/o;
 
     .line 26
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->d(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/c;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->d(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/c;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Ls5/c;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Lt5/c;
 
     .line 27
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->m:La6/d;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->m:Lb6/d;
 
     .line 28
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->e(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ljava/lang/Integer;
@@ -473,14 +473,14 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->p:Lcom/facebook/cache/disk/DiskCacheConfig;
 
     .line 34
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly3/c;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lz3/c;
 
     move-result-object v2
 
     if-nez v2, :cond_a
 
     .line 35
-    invoke-static {}, Ly3/d;->b()Ly3/d;
+    invoke-static {}, Lz3/d;->b()Lz3/d;
 
     move-result-object v2
 
@@ -488,12 +488,12 @@
 
     .line 36
     :cond_a
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly3/c;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lz3/c;
 
     move-result-object v2
 
     :goto_9
-    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Ly3/c;
+    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Lz3/c;
 
     .line 37
     invoke-static {p1, v0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;Lcom/facebook/imagepipeline/core/a;)I
@@ -523,7 +523,7 @@
     iput v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t:I
 
     .line 40
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     move-result v3
 
@@ -532,7 +532,7 @@
     const-string v3, "ImagePipelineConfig->mNetworkFetcher"
 
     .line 41
-    invoke-static {v3}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v3}, La6/b;->a(Ljava/lang/String;)V
 
     .line 42
     :cond_c
@@ -558,14 +558,14 @@
     iput-object v3, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->s:Lcom/facebook/imagepipeline/producers/NetworkFetcher;
 
     .line 44
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     move-result v2
 
     if-eqz v2, :cond_e
 
     .line 45
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 46
     :cond_e
@@ -576,57 +576,57 @@
     iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->u:Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;
 
     .line 47
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lx5/y;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly5/y;
 
     move-result-object v2
 
     if-nez v2, :cond_f
 
-    new-instance v2, Lx5/y;
+    new-instance v2, Ly5/y;
 
     .line 48
-    invoke-static {}, Lx5/x;->n()Lx5/x$b;
+    invoke-static {}, Ly5/x;->n()Ly5/x$b;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lx5/x$b;->m()Lx5/x;
+    invoke-virtual {v3}, Ly5/x$b;->m()Ly5/x;
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Lx5/y;-><init>(Lx5/x;)V
+    invoke-direct {v2, v3}, Ly5/y;-><init>(Ly5/x;)V
 
     goto :goto_c
 
     .line 49
     :cond_f
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lx5/y;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly5/y;
 
     move-result-object v2
 
     :goto_c
-    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Lx5/y;
+    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Ly5/y;
 
     .line 50
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/e;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/e;
 
     move-result-object v3
 
     if-nez v3, :cond_10
 
-    new-instance v3, Ls5/g;
+    new-instance v3, Lt5/g;
 
-    invoke-direct {v3}, Ls5/g;-><init>()V
+    invoke-direct {v3}, Lt5/g;-><init>()V
 
     goto :goto_d
 
     .line 51
     :cond_10
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/e;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/e;
 
     move-result-object v3
 
     :goto_d
-    iput-object v3, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->w:Ls5/e;
+    iput-object v3, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->w:Lt5/e;
 
     .line 52
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->o(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ljava/util/Set;
@@ -698,15 +698,15 @@
     iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->A:Lcom/facebook/cache/disk/DiskCacheConfig;
 
     .line 59
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->s(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/d;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->s(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/d;
 
     .line 60
-    invoke-virtual {v2}, Lx5/y;->e()I
+    invoke-virtual {v2}, Ly5/y;->e()I
 
     move-result v1
 
     .line 61
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/e;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/e;
 
     move-result-object v2
 
@@ -720,12 +720,12 @@
 
     .line 62
     :cond_14
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/e;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/e;
 
     move-result-object v2
 
     :goto_11
-    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->j:Lq5/e;
+    iput-object v2, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->j:Lr5/e;
 
     .line 63
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->u(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Z
@@ -735,76 +735,76 @@
     iput-boolean v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->C:Z
 
     .line 64
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->v(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr3/a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->v(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls3/a;
 
     .line 65
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->x(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->x(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/a;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Lr5/a;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Ls5/a;
 
     .line 66
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->y(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->y(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->E:Lo5/s;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->E:Lp5/s;
 
     .line 67
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/a;
 
     move-result-object v1
 
     if-nez v1, :cond_15
 
-    new-instance v1, Lo5/g;
+    new-instance v1, Lp5/g;
 
-    invoke-direct {v1}, Lo5/g;-><init>()V
+    invoke-direct {v1}, Lp5/g;-><init>()V
 
     goto :goto_12
 
     .line 68
     :cond_15
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/a;
 
     move-result-object v1
 
     :goto_12
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lo5/a;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lp5/a;
 
     .line 69
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->A(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->A(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->F:Lo5/s;
+    iput-object v1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->F:Lp5/s;
 
     .line 70
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->B(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt3/f;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->B(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lu3/f;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->G:Lt3/f;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->G:Lu3/f;
 
     .line 71
-    invoke-virtual {v0}, Lcom/facebook/imagepipeline/core/a;->m()Le4/b;
+    invoke-virtual {v0}, Lcom/facebook/imagepipeline/core/a;->m()Lf4/b;
 
     move-result-object p1
 
     if-eqz p1, :cond_16
 
     .line 72
-    new-instance v1, Ln5/c;
+    new-instance v1, Lo5/c;
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Lx5/y;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Ly5/y;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ln5/c;-><init>(Lx5/y;)V
+    invoke-direct {v1, v2}, Lo5/c;-><init>(Ly5/y;)V
 
     .line 73
-    invoke-static {p1, v0, v1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->K(Le4/b;Lcom/facebook/imagepipeline/core/a;Le4/a;)V
+    invoke-static {p1, v0, v1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->K(Lf4/b;Lcom/facebook/imagepipeline/core/a;Lf4/a;)V
 
     goto :goto_13
 
@@ -816,40 +816,40 @@
 
     if-eqz p1, :cond_17
 
-    sget-boolean p1, Le4/c;->a:Z
+    sget-boolean p1, Lf4/c;->a:Z
 
     if-eqz p1, :cond_17
 
     .line 75
-    invoke-static {}, Le4/c;->i()Le4/b;
+    invoke-static {}, Lf4/c;->i()Lf4/b;
 
     move-result-object p1
 
     if-eqz p1, :cond_17
 
     .line 76
-    new-instance v1, Ln5/c;
+    new-instance v1, Lo5/c;
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Lx5/y;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->t()Ly5/y;
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Ln5/c;-><init>(Lx5/y;)V
+    invoke-direct {v1, v2}, Lo5/c;-><init>(Ly5/y;)V
 
     .line 77
-    invoke-static {p1, v0, v1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->K(Le4/b;Lcom/facebook/imagepipeline/core/a;Le4/a;)V
+    invoke-static {p1, v0, v1}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->K(Lf4/b;Lcom/facebook/imagepipeline/core/a;Lf4/a;)V
 
     .line 78
     :cond_17
     :goto_13
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     move-result p1
 
     if-eqz p1, :cond_18
 
     .line 79
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     :cond_18
     return-void
@@ -877,7 +877,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -893,7 +893,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -917,7 +917,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 20
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 21
     .line 22
@@ -929,7 +929,7 @@
 
     .line 25
     .line 26
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 27
     .line 28
@@ -942,7 +942,7 @@
     move-exception p0
 
     .line 31
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 32
     .line 33
@@ -954,7 +954,7 @@
 
     .line 36
     .line 37
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 38
     .line 39
@@ -969,11 +969,11 @@
     .line 46
 .end method
 
-.method private static H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+.method private static H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
 
     .line 2
     .line 3
@@ -1019,7 +1019,7 @@
     .line 22
     :cond_1
     :goto_0
-    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
 
     .line 23
     .line 24
@@ -1031,7 +1031,7 @@
 
     .line 27
     .line 28
-    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+    invoke-static {p0}, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
 
     .line 29
     .line 30
@@ -1229,15 +1229,15 @@
     return-object v0
 .end method
 
-.method private static K(Le4/b;Lcom/facebook/imagepipeline/core/a;Le4/a;)V
+.method private static K(Lf4/b;Lcom/facebook/imagepipeline/core/a;Lf4/a;)V
     .locals 0
 
     .line 1
-    sput-object p0, Le4/c;->d:Le4/b;
+    sput-object p0, Lf4/c;->d:Lf4/b;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lcom/facebook/imagepipeline/core/a;->n()Le4/b$a;
+    invoke-virtual {p1}, Lcom/facebook/imagepipeline/core/a;->n()Lf4/b$a;
 
     .line 4
     .line 5
@@ -1246,7 +1246,7 @@
 
     .line 7
     .line 8
-    invoke-interface {p0, p2}, Le4/b;->a(Le4/a;)V
+    invoke-interface {p0, p2}, Lf4/b;->a(Lf4/a;)V
 
     .line 9
     .line 10
@@ -1422,23 +1422,23 @@
 
 
 # virtual methods
-.method public A()Lo5/o;
+.method public A()Lp5/o;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lo5/o;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->k:Lp5/o;
 
     return-object v0
 .end method
 
-.method public B()Ly3/c;
+.method public B()Lz3/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Ly3/c;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->q:Lz3/c;
 
     return-object v0
 .end method
 
-.method public C()Lr3/a;
+.method public C()Ls3/a;
     .locals 1
 
     const/4 v0, 0x0
@@ -1454,10 +1454,10 @@
     return-object v0
 .end method
 
-.method public E()Lq5/e;
+.method public E()Lr5/e;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->j:Lq5/e;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->j:Lr5/e;
 
     return-object v0
 .end method
@@ -1468,7 +1468,7 @@
         value = {
             "()",
             "Ljava/util/Set<",
-            "Lw5/d;",
+            "Lx5/d;",
             ">;"
         }
     .end annotation
@@ -1506,19 +1506,19 @@
     return-object v0
 .end method
 
-.method public d()Lo5/s;
+.method public d()Lp5/s;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->F:Lo5/s;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->F:Lp5/s;
 
     return-object v0
 .end method
@@ -1551,10 +1551,10 @@
     return-object v0
 .end method
 
-.method public g()Lo5/s$a;
+.method public g()Lp5/s$a;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->c:Lo5/s$a;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->c:Lp5/s$a;
 
     return-object v0
 .end method
@@ -1567,10 +1567,10 @@
     return-object v0
 .end method
 
-.method public h()Ls5/e;
+.method public h()Lt5/e;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->w:Ls5/e;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->w:Lt5/e;
 
     return-object v0
 .end method
@@ -1583,18 +1583,18 @@
     return-object v0
 .end method
 
-.method public j()Lo5/i$b;
+.method public j()Lp5/i$b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lo5/i$b<",
+            "Lp5/i$b<",
             "Lcom/facebook/cache/common/CacheKey;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->d:Lo5/i$b;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->d:Lp5/i$b;
 
     return-object v0
 .end method
@@ -1607,10 +1607,10 @@
     return v0
 .end method
 
-.method public l()Lt3/f;
+.method public l()Lu3/f;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->G:Lt3/f;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->G:Lu3/f;
 
     return-object v0
 .end method
@@ -1623,15 +1623,15 @@
     return-object v0
 .end method
 
-.method public n()La6/d;
+.method public n()Lb6/d;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->m:La6/d;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->m:Lb6/d;
 
     return-object v0
 .end method
 
-.method public o()Ls5/d;
+.method public o()Lt5/d;
     .locals 1
 
     const/4 v0, 0x0
@@ -1663,10 +1663,10 @@
     return-object v0
 .end method
 
-.method public r()Ls5/c;
+.method public r()Lt5/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Ls5/c;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->l:Lt5/c;
 
     return-object v0
 .end method
@@ -1687,10 +1687,10 @@
     return-object v0
 .end method
 
-.method public t()Lx5/y;
+.method public t()Ly5/y;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Lx5/y;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->v:Ly5/y;
 
     return-object v0
 .end method
@@ -1703,34 +1703,34 @@
     return v0
 .end method
 
-.method public v()Lq5/f;
+.method public v()Lr5/f;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lq5/f;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->h:Lr5/f;
 
     return-object v0
 .end method
 
-.method public w()Lr5/a;
+.method public w()Ls5/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Lr5/a;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->D:Ls5/a;
 
     return-object v0
 .end method
 
-.method public x()Lo5/a;
+.method public x()Lp5/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lo5/a;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->H:Lp5/a;
 
     return-object v0
 .end method
 
-.method public y()Lo5/f;
+.method public y()Lp5/f;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lo5/f;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig;->e:Lp5/f;
 
     return-object v0
 .end method

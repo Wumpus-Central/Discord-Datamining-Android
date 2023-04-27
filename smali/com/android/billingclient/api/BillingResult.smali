@@ -33,7 +33,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingResult$a;-><init>(Lu2/p;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingResult$a;-><init>(Lv2/p;)V
 
     return-object v0
 .end method
@@ -69,7 +69,7 @@
 
     iget v0, p0, Lcom/android/billingclient/api/BillingResult;->a:I
 
-    invoke-static {v0}, Lra/k;->j(I)Ljava/lang/String;
+    invoke-static {v0}, Lsa/k;->j(I)Ljava/lang/String;
 
     move-result-object v0
 

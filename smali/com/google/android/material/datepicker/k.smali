@@ -732,7 +732,7 @@
     move-object v6, p3
 
     .line 27
-    invoke-interface/range {v3 .. v8}, Lcom/google/android/material/datepicker/d;->C(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;Lcom/google/android/material/datepicker/a;Lcom/google/android/material/datepicker/o;)Landroid/view/View;
+    invoke-interface/range {v3 .. v8}, Lcom/google/android/material/datepicker/d;->G(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;Lcom/google/android/material/datepicker/a;Lcom/google/android/material/datepicker/o;)Landroid/view/View;
 
     .line 28
     .line 29

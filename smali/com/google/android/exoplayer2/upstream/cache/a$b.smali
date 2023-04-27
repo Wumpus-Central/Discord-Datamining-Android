@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/android/exoplayer2/upstream/cache/a;Le9/d;Le9/d;)V
+.method public abstract a(Lcom/google/android/exoplayer2/upstream/cache/a;Lf9/d;Lf9/d;)V
 .end method
 
-.method public abstract b(Lcom/google/android/exoplayer2/upstream/cache/a;Le9/d;)V
+.method public abstract b(Lcom/google/android/exoplayer2/upstream/cache/a;Lf9/d;)V
 .end method
 
-.method public abstract f(Lcom/google/android/exoplayer2/upstream/cache/a;Le9/d;)V
+.method public abstract d(Lcom/google/android/exoplayer2/upstream/cache/a;Lf9/d;)V
 .end method

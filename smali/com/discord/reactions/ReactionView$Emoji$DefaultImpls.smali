@@ -80,7 +80,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lpi/l;->o(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-static {v0}, Lri/l;->o(Ljava/lang/String;)Ljava/lang/Long;
 
     .line 8
     .line 9

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ld2/o0;
+.implements Le2/o0;
 
 
 # annotations

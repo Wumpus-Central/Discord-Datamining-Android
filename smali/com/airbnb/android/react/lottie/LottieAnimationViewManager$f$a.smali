@@ -50,11 +50,11 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lg2/h;
+    iget-object v0, v0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lh2/h;
 
     .line 6
     .line 7
-    invoke-static {v1, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-static {v1, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     .line 8
     .line 9
@@ -79,11 +79,11 @@
 
     .line 19
     .line 20
-    iget-object v0, v0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lg2/h;
+    iget-object v0, v0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lh2/h;
 
     .line 21
     .line 22
-    invoke-static {v1, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-static {v1, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     .line 23
     .line 24
@@ -107,5 +107,4 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method

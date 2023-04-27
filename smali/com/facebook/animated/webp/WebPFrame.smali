@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lj5/d;
+.implements Lk5/d;
 
 
 # instance fields
 .field private mNativeContext:J
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end field
 
@@ -16,7 +16,7 @@
 # direct methods
 .method constructor <init>(J)V
     .locals 0
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1

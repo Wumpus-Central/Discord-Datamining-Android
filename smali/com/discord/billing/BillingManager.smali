@@ -1437,7 +1437,7 @@
 
     invoke-direct {p2, p0, p4, p3, v0}, Lcom/discord/billing/f;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;)V
 
-    invoke-virtual {v1, p1, p2}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lu2/g;)V
+    invoke-virtual {v1, p1, p2}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lv2/g;)V
 
     return-void
 .end method
@@ -4240,7 +4240,7 @@
     .line 60
     .line 61
     .line 62
-    invoke-virtual {v12, v13, v14}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+    invoke-virtual {v12, v13, v14}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lv2/d;)V
 
     .line 63
     .line 64
@@ -4842,7 +4842,7 @@
     .line 57
     .line 58
     .line 59
-    invoke-virtual {v11, v12, v13}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lu2/g;)V
+    invoke-virtual {v11, v12, v13}, Lcom/android/billingclient/api/BillingClient;->i(Lcom/android/billingclient/api/SkuDetailsParams;Lv2/g;)V
 
     .line 60
     .line 61
@@ -5552,7 +5552,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private final verifyPurchase(Lcom/android/billingclient/api/Purchase;)V
@@ -5813,7 +5812,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 
@@ -5898,7 +5896,6 @@
     return-void
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final consumePurchase(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
@@ -5971,7 +5968,7 @@
 
     .line 28
     :cond_0
-    invoke-static {}, Lu2/b;->b()Lu2/b$a;
+    invoke-static {}, Lv2/b;->b()Lv2/b$a;
 
     .line 29
     .line 30
@@ -5979,7 +5976,7 @@
     move-result-object v0
 
     .line 32
-    invoke-virtual {v0, p1}, Lu2/b$a;->b(Ljava/lang/String;)Lu2/b$a;
+    invoke-virtual {v0, p1}, Lv2/b$a;->b(Ljava/lang/String;)Lv2/b$a;
 
     .line 33
     .line 34
@@ -5987,7 +5984,7 @@
     move-result-object p1
 
     .line 36
-    invoke-virtual {p1}, Lu2/b$a;->a()Lu2/b;
+    invoke-virtual {p1}, Lv2/b$a;->a()Lv2/b;
 
     .line 37
     .line 38
@@ -6034,7 +6031,7 @@
     .line 58
     .line 59
     .line 60
-    invoke-virtual {v0, p1, v1}, Lcom/android/billingclient/api/BillingClient;->a(Lu2/b;Lu2/c;)V
+    invoke-virtual {v0, p1, v1}, Lcom/android/billingclient/api/BillingClient;->a(Lv2/b;Lv2/c;)V
 
     .line 61
     .line 62
@@ -6376,7 +6373,7 @@
 
     invoke-direct {p2, p0, p5, p4, p3}, Lcom/discord/billing/b;-><init>(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$BooleanRef;)V
 
-    invoke-virtual {v1, p1, p2}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+    invoke-virtual {v1, p1, p2}, Lcom/android/billingclient/api/BillingClient;->g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lv2/d;)V
 
     :goto_1
     return-void
@@ -6479,7 +6476,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {p2, v3, v2}, Lcom/android/billingclient/api/BillingClient;->h(Ljava/lang/String;Lu2/e;)V
+    invoke-virtual {p2, v3, v2}, Lcom/android/billingclient/api/BillingClient;->h(Ljava/lang/String;Lv2/e;)V
 
     .line 42
     .line 43
@@ -6518,7 +6515,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {v0, v1, p2}, Lcom/android/billingclient/api/BillingClient;->h(Ljava/lang/String;Lu2/e;)V
+    invoke-virtual {v0, v1, p2}, Lcom/android/billingclient/api/BillingClient;->h(Ljava/lang/String;Lv2/e;)V
 
     .line 61
     .line 62
@@ -6586,7 +6583,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, Lcom/android/billingclient/api/BillingClient$a;->c(Lu2/f;)Lcom/android/billingclient/api/BillingClient$a;
+    invoke-virtual {p1, v0}, Lcom/android/billingclient/api/BillingClient$a;->c(Lv2/f;)Lcom/android/billingclient/api/BillingClient$a;
 
     .line 20
     .line 21
@@ -6673,7 +6670,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {v0, p1}, Lcom/android/billingclient/api/BillingClient;->j(Lu2/a;)V
+    invoke-virtual {v0, p1}, Lcom/android/billingclient/api/BillingClient;->j(Lv2/a;)V
 
     .line 61
     .line 62
@@ -6839,7 +6836,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public final purchase(Landroid/app/Activity;Ljava/lang/String;Lcom/discord/billing/types/SkuType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V

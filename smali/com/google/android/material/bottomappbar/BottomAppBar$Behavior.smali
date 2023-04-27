@@ -206,7 +206,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getShowMotionSpec()Leb/h;
+    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getShowMotionSpec()Lfb/h;
 
     .line 41
     .line 42
@@ -218,7 +218,7 @@
 
     .line 45
     .line 46
-    sget v1, Ldb/a;->b:I
+    sget v1, Leb/a;->b:I
 
     .line 47
     .line 48
@@ -228,7 +228,7 @@
     .line 50
     .line 51
     :cond_0
-    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getHideMotionSpec()Leb/h;
+    invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->getHideMotionSpec()Lfb/h;
 
     .line 52
     .line 53
@@ -240,7 +240,7 @@
 
     .line 56
     .line 57
-    sget v1, Ldb/a;->a:I
+    sget v1, Leb/a;->a:I
 
     .line 58
     .line 59

@@ -113,7 +113,7 @@
     :goto_0
     iget-object p2, v0, Lcom/discord/image/animated_image/apng/APNGView$fetchAPNG$1$1$emit$1;->result:Ljava/lang/Object;
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -136,7 +136,7 @@
 
     if-ne v2, v3, :cond_1
 
-    invoke-static {p2}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lnf/t;->b(Ljava/lang/Object;)V
 
     goto/16 :goto_1
 
@@ -150,7 +150,7 @@
     throw p1
 
     :cond_2
-    invoke-static {p2}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lnf/t;->b(Ljava/lang/Object;)V
 
     goto :goto_2
 
@@ -160,14 +160,14 @@
     check-cast p1, Lcom/discord/image/animated_image/apng/APNGView$fetchAPNG$1$1;
 
     :try_start_0
-    invoke-static {p2}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     goto :goto_2
 
     :cond_4
-    invoke-static {p2}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 2
     instance-of p2, p1, Lcom/discord/file_downloader/DownloadState$Completed;

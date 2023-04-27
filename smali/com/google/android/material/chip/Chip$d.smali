@@ -1065,7 +1065,7 @@
     move-result-object v2
 
     .line 30
-    sget v3, Ldb/i;->h:I
+    sget v3, Leb/i;->h:I
 
     .line 31
     .line 32

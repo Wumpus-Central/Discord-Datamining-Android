@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field public a:Lg5/b;
+.field public a:Lh5/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;"
         }
     .end annotation

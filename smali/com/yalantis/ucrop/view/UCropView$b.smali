@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lff/d;
+.implements Lhf/d;
 
 
 # annotations

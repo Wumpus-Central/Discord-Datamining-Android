@@ -758,7 +758,7 @@
     .line 461
 .end method
 
-.method public static b(Ljava/lang/String;)Lcom/google/android/gms/fido/common/Transport;
+.method public static a(Ljava/lang/String;)Lcom/google/android/gms/fido/common/Transport;
     .locals 6
 
     .line 1

@@ -311,11 +311,11 @@
 
     .line 27
     :cond_1
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 28
     .line 29
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 30
     .line 31
@@ -480,15 +480,4 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method

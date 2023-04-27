@@ -80,7 +80,7 @@
 
 
 # virtual methods
-.method public a(Ld9/t;Lp8/a;ILa9/h;Ld9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
+.method public a(Le9/t;Lq8/a;ILb9/h;Le9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
     .locals 7
 
     .line 1
@@ -100,7 +100,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v6, p5}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
+    invoke-interface {v6, p5}, Lcom/google/android/exoplayer2/upstream/DataSource;->c(Le9/x;)V
 
     .line 10
     .line 11
@@ -125,7 +125,7 @@
     move-object v5, p4
 
     .line 19
-    invoke-direct/range {v1 .. v6}, Lcom/google/android/exoplayer2/source/smoothstreaming/a;-><init>(Ld9/t;Lp8/a;ILa9/h;Lcom/google/android/exoplayer2/upstream/DataSource;)V
+    invoke-direct/range {v1 .. v6}, Lcom/google/android/exoplayer2/source/smoothstreaming/a;-><init>(Le9/t;Lq8/a;ILb9/h;Lcom/google/android/exoplayer2/upstream/DataSource;)V
 
     .line 20
     .line 21

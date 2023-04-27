@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr6/m;
+.implements Ls6/m;
 
 
 # annotations
@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field private final a:Llc/a;
+.field private final a:Lmc/a;
 
 .field private final b:Landroid/net/ConnectivityManager;
 
@@ -24,37 +24,37 @@
 
 .field final d:Ljava/net/URL;
 
-.field private final e:Lb7/a;
+.field private final e:Lc7/a;
 
-.field private final f:Lb7/a;
+.field private final f:Lc7/a;
 
 .field private final g:I
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lb7/a;Lb7/a;)V
+.method constructor <init>(Landroid/content/Context;Lc7/a;Lc7/a;)V
     .locals 1
 
     const v0, 0x9c40
 
     .line 9
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/datatransport/cct/d;-><init>(Landroid/content/Context;Lb7/a;Lb7/a;I)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/datatransport/cct/d;-><init>(Landroid/content/Context;Lc7/a;Lc7/a;I)V
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Lb7/a;Lb7/a;I)V
+.method constructor <init>(Landroid/content/Context;Lc7/a;Lc7/a;I)V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, Lp6/j;->b()Llc/a;
+    invoke-static {}, Lq6/j;->b()Lmc/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/datatransport/cct/d;->a:Llc/a;
+    iput-object v0, p0, Lcom/google/android/datatransport/cct/d;->a:Lmc/a;
 
     .line 3
     iput-object p1, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
@@ -80,10 +80,10 @@
     iput-object p1, p0, Lcom/google/android/datatransport/cct/d;->d:Ljava/net/URL;
 
     .line 6
-    iput-object p3, p0, Lcom/google/android/datatransport/cct/d;->e:Lb7/a;
+    iput-object p3, p0, Lcom/google/android/datatransport/cct/d;->e:Lc7/a;
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/datatransport/cct/d;->f:Lb7/a;
+    iput-object p2, p0, Lcom/google/android/datatransport/cct/d;->f:Lc7/a;
 
     .line 8
     iput p4, p0, Lcom/google/android/datatransport/cct/d;->g:I
@@ -127,7 +127,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v2, v0}, Lv6/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, Lw6/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -294,7 +294,7 @@
     :try_end_0
     .catch Ljava/net/ConnectException; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Llc/b; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lmc/b; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 93
@@ -311,11 +311,11 @@
     .line 97
     .line 98
     :try_start_2
-    iget-object v9, p0, Lcom/google/android/datatransport/cct/d;->a:Llc/a;
+    iget-object v9, p0, Lcom/google/android/datatransport/cct/d;->a:Lmc/a;
 
     .line 99
     .line 100
-    iget-object p1, p1, Lcom/google/android/datatransport/cct/d$a;->b:Lp6/j;
+    iget-object p1, p1, Lcom/google/android/datatransport/cct/d$a;->b:Lq6/j;
 
     .line 101
     .line 102
@@ -337,7 +337,7 @@
     .line 110
     .line 111
     .line 112
-    invoke-interface {v9, p1, v10}, Llc/a;->a(Ljava/lang/Object;Ljava/io/Writer;)V
+    invoke-interface {v9, p1, v10}, Lmc/a;->a(Ljava/lang/Object;Ljava/io/Writer;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_4
 
@@ -361,7 +361,7 @@
     :try_end_4
     .catch Ljava/net/ConnectException; {:try_start_4 .. :try_end_4} :catch_3
     .catch Ljava/net/UnknownHostException; {:try_start_4 .. :try_end_4} :catch_2
-    .catch Llc/b; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Lmc/b; {:try_start_4 .. :try_end_4} :catch_1
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
     .line 121
@@ -407,7 +407,7 @@
     move-result-object v7
 
     .line 144
-    invoke-static {v1, v7}, Lv6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lw6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 145
     .line 146
@@ -451,7 +451,7 @@
     move-result-object v5
 
     .line 168
-    invoke-static {v1, v5}, Lv6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lw6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 169
     .line 170
@@ -495,7 +495,7 @@
     move-result-object v5
 
     .line 192
-    invoke-static {v1, v5}, Lv6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lw6/a;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 193
     .line 194
@@ -595,7 +595,7 @@
     .line 238
     .line 239
     .line 240
-    invoke-static {v2}, Lp6/n;->b(Ljava/io/Reader;)Lp6/n;
+    invoke-static {v2}, Lq6/n;->b(Ljava/io/Reader;)Lq6/n;
 
     .line 241
     .line 242
@@ -603,7 +603,7 @@
     move-result-object v2
 
     .line 244
-    invoke-virtual {v2}, Lp6/n;->c()J
+    invoke-virtual {v2}, Lq6/n;->c()J
 
     .line 245
     .line 246
@@ -818,7 +818,7 @@
     :try_end_e
     .catch Ljava/net/ConnectException; {:try_start_e .. :try_end_e} :catch_3
     .catch Ljava/net/UnknownHostException; {:try_start_e .. :try_end_e} :catch_2
-    .catch Llc/b; {:try_start_e .. :try_end_e} :catch_1
+    .catch Lmc/b; {:try_start_e .. :try_end_e} :catch_1
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_0
 
     .line 327
@@ -838,7 +838,7 @@
 
     .line 331
     .line 332
-    invoke-static {v1, v0, p1}, Lv6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lw6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 333
     .line 334
@@ -875,7 +875,7 @@
 
     .line 347
     .line 348
-    invoke-static {v1, v0, p1}, Lv6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p1}, Lw6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 349
     .line 350
@@ -1790,11 +1790,11 @@
 
     .line 2
     .line 3
-    sget-object p0, Lp6/o$b;->l:Lp6/o$b;
+    sget-object p0, Lq6/o$b;->l:Lq6/o$b;
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lp6/o$b;->b()I
+    invoke-virtual {p0}, Lq6/o$b;->b()I
 
     .line 6
     .line 7
@@ -1821,11 +1821,11 @@
 
     .line 16
     .line 17
-    sget-object p0, Lp6/o$b;->F:Lp6/o$b;
+    sget-object p0, Lq6/o$b;->F:Lq6/o$b;
 
     .line 18
     .line 19
-    invoke-virtual {p0}, Lp6/o$b;->b()I
+    invoke-virtual {p0}, Lq6/o$b;->b()I
 
     .line 20
     .line 21
@@ -1837,7 +1837,7 @@
 
     .line 24
     :cond_1
-    invoke-static {p0}, Lp6/o$b;->a(I)Lp6/o$b;
+    invoke-static {p0}, Lq6/o$b;->a(I)Lq6/o$b;
 
     .line 25
     .line 26
@@ -1882,11 +1882,11 @@
 
     .line 2
     .line 3
-    sget-object p0, Lp6/o$c;->D:Lp6/o$c;
+    sget-object p0, Lq6/o$c;->D:Lq6/o$c;
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lp6/o$c;->b()I
+    invoke-virtual {p0}, Lq6/o$c;->b()I
 
     .line 6
     .line 7
@@ -1994,7 +1994,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, p0}, Lv6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p0}, Lw6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 23
     .line 24
@@ -2025,7 +2025,7 @@
     .line 46
 .end method
 
-.method private i(Lr6/f;)Lp6/j;
+.method private i(Ls6/f;)Lq6/j;
     .locals 9
 
     .line 1
@@ -2038,7 +2038,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Lr6/f;->b()Ljava/lang/Iterable;
+    invoke-virtual {p1}, Ls6/f;->b()Ljava/lang/Iterable;
 
     .line 7
     .line 8
@@ -2075,11 +2075,11 @@
     move-result-object v1
 
     .line 24
-    check-cast v1, Lq6/i;
+    check-cast v1, Lr6/i;
 
     .line 25
     .line 26
-    invoke-virtual {v1}, Lq6/i;->j()Ljava/lang/String;
+    invoke-virtual {v1}, Lr6/i;->j()Ljava/lang/String;
 
     .line 27
     .line 28
@@ -2216,11 +2216,11 @@
     move-result-object v2
 
     .line 94
-    check-cast v2, Lq6/i;
+    check-cast v2, Lr6/i;
 
     .line 95
     .line 96
-    invoke-static {}, Lp6/m;->a()Lp6/m$a;
+    invoke-static {}, Lq6/m;->a()Lq6/m$a;
 
     .line 97
     .line 98
@@ -2228,11 +2228,11 @@
     move-result-object v3
 
     .line 100
-    sget-object v4, Lp6/p;->l:Lp6/p;
+    sget-object v4, Lq6/p;->l:Lq6/p;
 
     .line 101
     .line 102
-    invoke-virtual {v3, v4}, Lp6/m$a;->f(Lp6/p;)Lp6/m$a;
+    invoke-virtual {v3, v4}, Lq6/m$a;->f(Lq6/p;)Lq6/m$a;
 
     .line 103
     .line 104
@@ -2240,11 +2240,11 @@
     move-result-object v3
 
     .line 106
-    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->f:Lb7/a;
+    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->f:Lc7/a;
 
     .line 107
     .line 108
-    invoke-interface {v4}, Lb7/a;->a()J
+    invoke-interface {v4}, Lc7/a;->a()J
 
     .line 109
     .line 110
@@ -2252,7 +2252,7 @@
     move-result-wide v4
 
     .line 112
-    invoke-virtual {v3, v4, v5}, Lp6/m$a;->g(J)Lp6/m$a;
+    invoke-virtual {v3, v4, v5}, Lq6/m$a;->g(J)Lq6/m$a;
 
     .line 113
     .line 114
@@ -2260,11 +2260,11 @@
     move-result-object v3
 
     .line 116
-    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->e:Lb7/a;
+    iget-object v4, p0, Lcom/google/android/datatransport/cct/d;->e:Lc7/a;
 
     .line 117
     .line 118
-    invoke-interface {v4}, Lb7/a;->a()J
+    invoke-interface {v4}, Lc7/a;->a()J
 
     .line 119
     .line 120
@@ -2272,7 +2272,7 @@
     move-result-wide v4
 
     .line 122
-    invoke-virtual {v3, v4, v5}, Lp6/m$a;->h(J)Lp6/m$a;
+    invoke-virtual {v3, v4, v5}, Lq6/m$a;->h(J)Lq6/m$a;
 
     .line 123
     .line 124
@@ -2280,7 +2280,7 @@
     move-result-object v3
 
     .line 126
-    invoke-static {}, Lp6/k;->a()Lp6/k$a;
+    invoke-static {}, Lq6/k;->a()Lq6/k$a;
 
     .line 127
     .line 128
@@ -2288,11 +2288,11 @@
     move-result-object v4
 
     .line 130
-    sget-object v5, Lp6/k$b;->m:Lp6/k$b;
+    sget-object v5, Lq6/k$b;->m:Lq6/k$b;
 
     .line 131
     .line 132
-    invoke-virtual {v4, v5}, Lp6/k$a;->c(Lp6/k$b;)Lp6/k$a;
+    invoke-virtual {v4, v5}, Lq6/k$a;->c(Lq6/k$b;)Lq6/k$a;
 
     .line 133
     .line 134
@@ -2300,7 +2300,7 @@
     move-result-object v4
 
     .line 136
-    invoke-static {}, Lp6/a;->a()Lp6/a$a;
+    invoke-static {}, Lq6/a;->a()Lq6/a$a;
 
     .line 137
     .line 138
@@ -2312,7 +2312,7 @@
 
     .line 141
     .line 142
-    invoke-virtual {v2, v6}, Lq6/i;->g(Ljava/lang/String;)I
+    invoke-virtual {v2, v6}, Lr6/i;->g(Ljava/lang/String;)I
 
     .line 143
     .line 144
@@ -2328,7 +2328,7 @@
     move-result-object v6
 
     .line 150
-    invoke-virtual {v5, v6}, Lp6/a$a;->m(Ljava/lang/Integer;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->m(Ljava/lang/Integer;)Lq6/a$a;
 
     .line 151
     .line 152
@@ -2340,7 +2340,7 @@
 
     .line 155
     .line 156
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 157
     .line 158
@@ -2348,7 +2348,7 @@
     move-result-object v6
 
     .line 160
-    invoke-virtual {v5, v6}, Lp6/a$a;->j(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->j(Ljava/lang/String;)Lq6/a$a;
 
     .line 161
     .line 162
@@ -2360,7 +2360,7 @@
 
     .line 165
     .line 166
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 167
     .line 168
@@ -2368,7 +2368,7 @@
     move-result-object v6
 
     .line 170
-    invoke-virtual {v5, v6}, Lp6/a$a;->f(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->f(Ljava/lang/String;)Lq6/a$a;
 
     .line 171
     .line 172
@@ -2380,7 +2380,7 @@
 
     .line 175
     .line 176
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 177
     .line 178
@@ -2388,7 +2388,7 @@
     move-result-object v6
 
     .line 180
-    invoke-virtual {v5, v6}, Lp6/a$a;->d(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->d(Ljava/lang/String;)Lq6/a$a;
 
     .line 181
     .line 182
@@ -2400,7 +2400,7 @@
 
     .line 185
     .line 186
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 187
     .line 188
@@ -2408,7 +2408,7 @@
     move-result-object v6
 
     .line 190
-    invoke-virtual {v5, v6}, Lp6/a$a;->l(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->l(Ljava/lang/String;)Lq6/a$a;
 
     .line 191
     .line 192
@@ -2420,7 +2420,7 @@
 
     .line 195
     .line 196
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 197
     .line 198
@@ -2428,7 +2428,7 @@
     move-result-object v6
 
     .line 200
-    invoke-virtual {v5, v6}, Lp6/a$a;->k(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->k(Ljava/lang/String;)Lq6/a$a;
 
     .line 201
     .line 202
@@ -2440,7 +2440,7 @@
 
     .line 205
     .line 206
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 207
     .line 208
@@ -2448,7 +2448,7 @@
     move-result-object v6
 
     .line 210
-    invoke-virtual {v5, v6}, Lp6/a$a;->h(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->h(Ljava/lang/String;)Lq6/a$a;
 
     .line 211
     .line 212
@@ -2460,7 +2460,7 @@
 
     .line 215
     .line 216
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 217
     .line 218
@@ -2468,7 +2468,7 @@
     move-result-object v6
 
     .line 220
-    invoke-virtual {v5, v6}, Lp6/a$a;->e(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->e(Ljava/lang/String;)Lq6/a$a;
 
     .line 221
     .line 222
@@ -2480,7 +2480,7 @@
 
     .line 225
     .line 226
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 227
     .line 228
@@ -2488,7 +2488,7 @@
     move-result-object v6
 
     .line 230
-    invoke-virtual {v5, v6}, Lp6/a$a;->c(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->c(Ljava/lang/String;)Lq6/a$a;
 
     .line 231
     .line 232
@@ -2500,7 +2500,7 @@
 
     .line 235
     .line 236
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 237
     .line 238
@@ -2508,7 +2508,7 @@
     move-result-object v6
 
     .line 240
-    invoke-virtual {v5, v6}, Lp6/a$a;->g(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->g(Ljava/lang/String;)Lq6/a$a;
 
     .line 241
     .line 242
@@ -2520,7 +2520,7 @@
 
     .line 245
     .line 246
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 247
     .line 248
@@ -2528,7 +2528,7 @@
     move-result-object v6
 
     .line 250
-    invoke-virtual {v5, v6}, Lp6/a$a;->i(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v6}, Lq6/a$a;->i(Ljava/lang/String;)Lq6/a$a;
 
     .line 251
     .line 252
@@ -2540,7 +2540,7 @@
 
     .line 255
     .line 256
-    invoke-virtual {v2, v6}, Lq6/i;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lr6/i;->b(Ljava/lang/String;)Ljava/lang/String;
 
     .line 257
     .line 258
@@ -2548,7 +2548,7 @@
     move-result-object v2
 
     .line 260
-    invoke-virtual {v5, v2}, Lp6/a$a;->b(Ljava/lang/String;)Lp6/a$a;
+    invoke-virtual {v5, v2}, Lq6/a$a;->b(Ljava/lang/String;)Lq6/a$a;
 
     .line 261
     .line 262
@@ -2556,7 +2556,7 @@
     move-result-object v2
 
     .line 264
-    invoke-virtual {v2}, Lp6/a$a;->a()Lp6/a;
+    invoke-virtual {v2}, Lq6/a$a;->a()Lq6/a;
 
     .line 265
     .line 266
@@ -2564,7 +2564,7 @@
     move-result-object v2
 
     .line 268
-    invoke-virtual {v4, v2}, Lp6/k$a;->b(Lp6/a;)Lp6/k$a;
+    invoke-virtual {v4, v2}, Lq6/k$a;->b(Lq6/a;)Lq6/k$a;
 
     .line 269
     .line 270
@@ -2572,7 +2572,7 @@
     move-result-object v2
 
     .line 272
-    invoke-virtual {v2}, Lp6/k$a;->a()Lp6/k;
+    invoke-virtual {v2}, Lq6/k$a;->a()Lq6/k;
 
     .line 273
     .line 274
@@ -2580,7 +2580,7 @@
     move-result-object v2
 
     .line 276
-    invoke-virtual {v3, v2}, Lp6/m$a;->b(Lp6/k;)Lp6/m$a;
+    invoke-virtual {v3, v2}, Lq6/m$a;->b(Lq6/k;)Lq6/m$a;
 
     .line 277
     .line 278
@@ -2609,7 +2609,7 @@
     move-result v3
 
     .line 290
-    invoke-virtual {v2, v3}, Lp6/m$a;->i(I)Lp6/m$a;
+    invoke-virtual {v2, v3}, Lq6/m$a;->i(I)Lq6/m$a;
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2632,7 +2632,7 @@
 
     .line 299
     .line 300
-    invoke-virtual {v2, v3}, Lp6/m$a;->j(Ljava/lang/String;)Lp6/m$a;
+    invoke-virtual {v2, v3}, Lq6/m$a;->j(Ljava/lang/String;)Lq6/m$a;
 
     .line 301
     .line 302
@@ -2688,11 +2688,11 @@
     move-result-object v4
 
     .line 328
-    check-cast v4, Lq6/i;
+    check-cast v4, Lr6/i;
 
     .line 329
     .line 330
-    invoke-virtual {v4}, Lq6/i;->e()Lq6/h;
+    invoke-virtual {v4}, Lr6/i;->e()Lr6/h;
 
     .line 331
     .line 332
@@ -2700,7 +2700,7 @@
     move-result-object v5
 
     .line 334
-    invoke-virtual {v5}, Lq6/h;->b()Lo6/b;
+    invoke-virtual {v5}, Lr6/h;->b()Lp6/b;
 
     .line 335
     .line 336
@@ -2712,7 +2712,7 @@
 
     .line 339
     .line 340
-    invoke-static {v7}, Lo6/b;->b(Ljava/lang/String;)Lo6/b;
+    invoke-static {v7}, Lp6/b;->b(Ljava/lang/String;)Lp6/b;
 
     .line 341
     .line 342
@@ -2720,7 +2720,7 @@
     move-result-object v7
 
     .line 344
-    invoke-virtual {v6, v7}, Lo6/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Lp6/b;->equals(Ljava/lang/Object;)Z
 
     .line 345
     .line 346
@@ -2732,7 +2732,7 @@
 
     .line 349
     .line 350
-    invoke-virtual {v5}, Lq6/h;->a()[B
+    invoke-virtual {v5}, Lr6/h;->a()[B
 
     .line 351
     .line 352
@@ -2740,7 +2740,7 @@
     move-result-object v5
 
     .line 354
-    invoke-static {v5}, Lp6/l;->j([B)Lp6/l$a;
+    invoke-static {v5}, Lq6/l;->j([B)Lq6/l$a;
 
     .line 355
     .line 356
@@ -2756,7 +2756,7 @@
 
     .line 360
     .line 361
-    invoke-static {v7}, Lo6/b;->b(Ljava/lang/String;)Lo6/b;
+    invoke-static {v7}, Lp6/b;->b(Ljava/lang/String;)Lp6/b;
 
     .line 362
     .line 363
@@ -2764,7 +2764,7 @@
     move-result-object v7
 
     .line 365
-    invoke-virtual {v6, v7}, Lo6/b;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Lp6/b;->equals(Ljava/lang/Object;)Z
 
     .line 366
     .line 367
@@ -2780,7 +2780,7 @@
 
     .line 372
     .line 373
-    invoke-virtual {v5}, Lq6/h;->a()[B
+    invoke-virtual {v5}, Lr6/h;->a()[B
 
     .line 374
     .line 375
@@ -2805,7 +2805,7 @@
     .line 384
     .line 385
     .line 386
-    invoke-static {v6}, Lp6/l;->i(Ljava/lang/String;)Lp6/l$a;
+    invoke-static {v6}, Lq6/l;->i(Ljava/lang/String;)Lq6/l$a;
 
     .line 387
     .line 388
@@ -2814,7 +2814,7 @@
 
     .line 390
     :goto_4
-    invoke-virtual {v4}, Lq6/i;->f()J
+    invoke-virtual {v4}, Lr6/i;->f()J
 
     .line 391
     .line 392
@@ -2822,7 +2822,7 @@
     move-result-wide v6
 
     .line 394
-    invoke-virtual {v5, v6, v7}, Lp6/l$a;->c(J)Lp6/l$a;
+    invoke-virtual {v5, v6, v7}, Lq6/l$a;->c(J)Lq6/l$a;
 
     .line 395
     .line 396
@@ -2830,7 +2830,7 @@
     move-result-object v6
 
     .line 398
-    invoke-virtual {v4}, Lq6/i;->k()J
+    invoke-virtual {v4}, Lr6/i;->k()J
 
     .line 399
     .line 400
@@ -2838,7 +2838,7 @@
     move-result-wide v7
 
     .line 402
-    invoke-virtual {v6, v7, v8}, Lp6/l$a;->d(J)Lp6/l$a;
+    invoke-virtual {v6, v7, v8}, Lq6/l$a;->d(J)Lq6/l$a;
 
     .line 403
     .line 404
@@ -2850,7 +2850,7 @@
 
     .line 407
     .line 408
-    invoke-virtual {v4, v7}, Lq6/i;->h(Ljava/lang/String;)J
+    invoke-virtual {v4, v7}, Lr6/i;->h(Ljava/lang/String;)J
 
     .line 409
     .line 410
@@ -2858,7 +2858,7 @@
     move-result-wide v7
 
     .line 412
-    invoke-virtual {v6, v7, v8}, Lp6/l$a;->h(J)Lp6/l$a;
+    invoke-virtual {v6, v7, v8}, Lq6/l$a;->h(J)Lq6/l$a;
 
     .line 413
     .line 414
@@ -2866,7 +2866,7 @@
     move-result-object v6
 
     .line 416
-    invoke-static {}, Lp6/o;->a()Lp6/o$a;
+    invoke-static {}, Lq6/o;->a()Lq6/o$a;
 
     .line 417
     .line 418
@@ -2878,7 +2878,7 @@
 
     .line 421
     .line 422
-    invoke-virtual {v4, v8}, Lq6/i;->g(Ljava/lang/String;)I
+    invoke-virtual {v4, v8}, Lr6/i;->g(Ljava/lang/String;)I
 
     .line 423
     .line 424
@@ -2886,7 +2886,7 @@
     move-result v8
 
     .line 426
-    invoke-static {v8}, Lp6/o$c;->a(I)Lp6/o$c;
+    invoke-static {v8}, Lq6/o$c;->a(I)Lq6/o$c;
 
     .line 427
     .line 428
@@ -2894,7 +2894,7 @@
     move-result-object v8
 
     .line 430
-    invoke-virtual {v7, v8}, Lp6/o$a;->c(Lp6/o$c;)Lp6/o$a;
+    invoke-virtual {v7, v8}, Lq6/o$a;->c(Lq6/o$c;)Lq6/o$a;
 
     .line 431
     .line 432
@@ -2906,7 +2906,7 @@
 
     .line 435
     .line 436
-    invoke-virtual {v4, v8}, Lq6/i;->g(Ljava/lang/String;)I
+    invoke-virtual {v4, v8}, Lr6/i;->g(Ljava/lang/String;)I
 
     .line 437
     .line 438
@@ -2914,7 +2914,7 @@
     move-result v8
 
     .line 440
-    invoke-static {v8}, Lp6/o$b;->a(I)Lp6/o$b;
+    invoke-static {v8}, Lq6/o$b;->a(I)Lq6/o$b;
 
     .line 441
     .line 442
@@ -2922,7 +2922,7 @@
     move-result-object v8
 
     .line 444
-    invoke-virtual {v7, v8}, Lp6/o$a;->b(Lp6/o$b;)Lp6/o$a;
+    invoke-virtual {v7, v8}, Lq6/o$a;->b(Lq6/o$b;)Lq6/o$a;
 
     .line 445
     .line 446
@@ -2930,7 +2930,7 @@
     move-result-object v7
 
     .line 448
-    invoke-virtual {v7}, Lp6/o$a;->a()Lp6/o;
+    invoke-virtual {v7}, Lq6/o$a;->a()Lq6/o;
 
     .line 449
     .line 450
@@ -2938,12 +2938,12 @@
     move-result-object v7
 
     .line 452
-    invoke-virtual {v6, v7}, Lp6/l$a;->e(Lp6/o;)Lp6/l$a;
+    invoke-virtual {v6, v7}, Lq6/l$a;->e(Lq6/o;)Lq6/l$a;
 
     .line 453
     .line 454
     .line 455
-    invoke-virtual {v4}, Lq6/i;->d()Ljava/lang/Integer;
+    invoke-virtual {v4}, Lr6/i;->d()Ljava/lang/Integer;
 
     .line 456
     .line 457
@@ -2955,7 +2955,7 @@
 
     .line 460
     .line 461
-    invoke-virtual {v4}, Lq6/i;->d()Ljava/lang/Integer;
+    invoke-virtual {v4}, Lr6/i;->d()Ljava/lang/Integer;
 
     .line 462
     .line 463
@@ -2963,13 +2963,13 @@
     move-result-object v4
 
     .line 465
-    invoke-virtual {v5, v4}, Lp6/l$a;->b(Ljava/lang/Integer;)Lp6/l$a;
+    invoke-virtual {v5, v4}, Lq6/l$a;->b(Ljava/lang/Integer;)Lq6/l$a;
 
     .line 466
     .line 467
     .line 468
     :cond_3
-    invoke-virtual {v5}, Lp6/l$a;->a()Lp6/l;
+    invoke-virtual {v5}, Lq6/l$a;->a()Lq6/l;
 
     .line 469
     .line 470
@@ -2995,7 +2995,7 @@
 
     .line 480
     .line 481
-    invoke-static {v4, v5, v6}, Lv6/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v4, v5, v6}, Lw6/a;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 482
     .line 483
@@ -3005,12 +3005,12 @@
     .line 485
     .line 486
     :cond_5
-    invoke-virtual {v2, v3}, Lp6/m$a;->c(Ljava/util/List;)Lp6/m$a;
+    invoke-virtual {v2, v3}, Lq6/m$a;->c(Ljava/util/List;)Lq6/m$a;
 
     .line 487
     .line 488
     .line 489
-    invoke-virtual {v2}, Lp6/m$a;->a()Lp6/m;
+    invoke-virtual {v2}, Lq6/m$a;->a()Lq6/m;
 
     .line 490
     .line 491
@@ -3028,7 +3028,7 @@
     .line 497
     .line 498
     :cond_6
-    invoke-static {p1}, Lp6/j;->a(Ljava/util/List;)Lp6/j;
+    invoke-static {p1}, Lq6/j;->a(Ljava/util/List;)Lq6/j;
 
     .line 499
     .line 500
@@ -3933,7 +3933,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1, v2, v0}, Lv6/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, Lw6/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 10
     .line 11
@@ -4231,11 +4231,426 @@
 
 
 # virtual methods
-.method public a(Lr6/f;)Lr6/g;
+.method public a(Lr6/i;)Lr6/i;
     .locals 4
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/google/android/datatransport/cct/d;->i(Lr6/f;)Lp6/j;
+    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->b:Landroid/net/ConnectivityManager;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {p1}, Lr6/i;->l()Lr6/i$a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    const-string v1, "sdk-version"
+
+    .line 12
+    .line 13
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->a(Ljava/lang/String;I)Lr6/i$a;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    const-string v1, "model"
+
+    .line 20
+    .line 21
+    sget-object v2, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    const-string v1, "hardware"
+
+    .line 28
+    .line 29
+    sget-object v2, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    const-string v1, "device"
+
+    .line 36
+    .line 37
+    sget-object v2, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    const-string v1, "product"
+
+    .line 44
+    .line 45
+    sget-object v2, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p1
+
+    .line 51
+    const-string v1, "os-uild"
+
+    .line 52
+    .line 53
+    sget-object v2, Landroid/os/Build;->ID:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p1
+
+    .line 59
+    const-string v1, "manufacturer"
+
+    .line 60
+    .line 61
+    sget-object v2, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    const-string v1, "fingerprint"
+
+    .line 68
+    .line 69
+    sget-object v2, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
+
+    .line 70
+    .line 71
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    const-string v1, "tz-offset"
+
+    .line 76
+    .line 77
+    invoke-static {}, Lcom/google/android/datatransport/cct/d;->k()J
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-wide v2
+
+    .line 81
+    invoke-virtual {p1, v1, v2, v3}, Lr6/i$a;->b(Ljava/lang/String;J)Lr6/i$a;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object p1
+
+    .line 85
+    const-string v1, "net-type"
+
+    .line 86
+    .line 87
+    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->g(Landroid/net/NetworkInfo;)I
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v2
+
+    .line 91
+    invoke-virtual {p1, v1, v2}, Lr6/i$a;->a(Ljava/lang/String;I)Lr6/i$a;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object p1
+
+    .line 95
+    const-string v1, "mobile-subtype"
+
+    .line 96
+    .line 97
+    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->f(Landroid/net/NetworkInfo;)I
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v0
+
+    .line 101
+    invoke-virtual {p1, v1, v0}, Lr6/i$a;->a(Ljava/lang/String;I)Lr6/i$a;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object p1
+
+    .line 105
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object v0
+
+    .line 109
+    invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v0
+
+    .line 113
+    const-string v1, "country"
+
+    .line 114
+    .line 115
+    invoke-virtual {p1, v1, v0}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object p1
+
+    .line 119
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v0
+
+    .line 123
+    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v0
+
+    .line 127
+    const-string v1, "locale"
+
+    .line 128
+    .line 129
+    invoke-virtual {p1, v1, v0}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object p1
+
+    .line 133
+    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
+
+    .line 134
+    .line 135
+    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->j(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v0
+
+    .line 139
+    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
+
+    .line 140
+    .line 141
+    .line 142
+    move-result-object v0
+
+    .line 143
+    const-string v1, "mcc_mnc"
+
+    .line 144
+    .line 145
+    invoke-virtual {p1, v1, v0}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 146
+    .line 147
+    .line 148
+    move-result-object p1
+
+    .line 149
+    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
+
+    .line 150
+    .line 151
+    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->h(Landroid/content/Context;)I
+
+    .line 152
+    .line 153
+    .line 154
+    move-result v0
+
+    .line 155
+    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    .line 156
+    .line 157
+    .line 158
+    move-result-object v0
+
+    .line 159
+    const-string v1, "application_build"
+
+    .line 160
+    .line 161
+    invoke-virtual {p1, v1, v0}, Lr6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lr6/i$a;
+
+    .line 162
+    .line 163
+    .line 164
+    move-result-object p1
+
+    .line 165
+    invoke-virtual {p1}, Lr6/i$a;->d()Lr6/i;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object p1
+
+    .line 169
+    return-object p1
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+.end method
+
+.method public b(Ls6/f;)Ls6/g;
+    .locals 4
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/google/android/datatransport/cct/d;->i(Ls6/f;)Lq6/j;
 
     .line 2
     .line 3
@@ -4247,7 +4662,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Lr6/f;->c()[B
+    invoke-virtual {p1}, Ls6/f;->c()[B
 
     .line 8
     .line 9
@@ -4263,7 +4678,7 @@
     .line 13
     .line 14
     :try_start_0
-    invoke-virtual {p1}, Lr6/f;->c()[B
+    invoke-virtual {p1}, Ls6/f;->c()[B
 
     .line 15
     .line 16
@@ -4340,7 +4755,7 @@
 
     .line 49
     :catch_0
-    invoke-static {}, Lr6/g;->a()Lr6/g;
+    invoke-static {}, Ls6/g;->a()Ls6/g;
 
     .line 50
     .line 51
@@ -4358,7 +4773,7 @@
 
     .line 55
     .line 56
-    invoke-direct {p1, v1, v0, v3}, Lcom/google/android/datatransport/cct/d$a;-><init>(Ljava/net/URL;Lp6/j;Ljava/lang/String;)V
+    invoke-direct {p1, v1, v0, v3}, Lcom/google/android/datatransport/cct/d$a;-><init>(Ljava/net/URL;Lq6/j;Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -4384,7 +4799,7 @@
     const/4 v2, 0x5
 
     .line 70
-    invoke-static {v2, p1, v0, v1}, Lw6/b;->a(ILjava/lang/Object;Lw6/a;Lw6/c;)Ljava/lang/Object;
+    invoke-static {v2, p1, v0, v1}, Lx6/b;->a(ILjava/lang/Object;Lx6/a;Lx6/c;)Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -4412,7 +4827,7 @@
 
     .line 83
     .line 84
-    invoke-static {v0, v1}, Lr6/g;->e(J)Lr6/g;
+    invoke-static {v0, v1}, Ls6/g;->e(J)Ls6/g;
 
     .line 85
     .line 86
@@ -4452,7 +4867,7 @@
 
     .line 101
     .line 102
-    invoke-static {}, Lr6/g;->d()Lr6/g;
+    invoke-static {}, Ls6/g;->d()Ls6/g;
 
     .line 103
     .line 104
@@ -4464,7 +4879,7 @@
 
     .line 107
     :cond_4
-    invoke-static {}, Lr6/g;->a()Lr6/g;
+    invoke-static {}, Ls6/g;->a()Ls6/g;
 
     .line 108
     .line 109
@@ -4477,7 +4892,7 @@
     .line 112
     :cond_5
     :goto_1
-    invoke-static {}, Lr6/g;->f()Lr6/g;
+    invoke-static {}, Ls6/g;->f()Ls6/g;
 
     .line 113
     .line 114
@@ -4502,12 +4917,12 @@
 
     .line 121
     .line 122
-    invoke-static {v0, v1, p1}, Lv6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lw6/a;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 123
     .line 124
     .line 125
-    invoke-static {}, Lr6/g;->f()Lr6/g;
+    invoke-static {}, Ls6/g;->f()Ls6/g;
 
     .line 126
     .line 127
@@ -4556,421 +4971,6 @@
     .line 167
     .line 168
     .line 169
-    .line 170
-    .line 171
-    .line 172
-    .line 173
-    .line 174
-    .line 175
-    .line 176
-    .line 177
-    .line 178
-    .line 179
-    .line 180
-    .line 181
-    .line 182
-    .line 183
-    .line 184
-    .line 185
-    .line 186
-    .line 187
-    .line 188
-    .line 189
-    .line 190
-    .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
-    .line 203
-    .line 204
-    .line 205
-    .line 206
-    .line 207
-    .line 208
-    .line 209
-    .line 210
-    .line 211
-    .line 212
-    .line 213
-    .line 214
-    .line 215
-    .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
-    .line 227
-    .line 228
-    .line 229
-    .line 230
-    .line 231
-    .line 232
-    .line 233
-    .line 234
-    .line 235
-    .line 236
-    .line 237
-    .line 238
-    .line 239
-    .line 240
-    .line 241
-.end method
-
-.method public b(Lq6/i;)Lq6/i;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->b:Landroid/net/ConnectivityManager;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    invoke-virtual {p1}, Lq6/i;->l()Lq6/i$a;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    const-string v1, "sdk-version"
-
-    .line 12
-    .line 13
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 14
-    .line 15
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->a(Ljava/lang/String;I)Lq6/i$a;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    const-string v1, "model"
-
-    .line 20
-    .line 21
-    sget-object v2, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    .line 22
-    .line 23
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
-
-    .line 27
-    const-string v1, "hardware"
-
-    .line 28
-    .line 29
-    sget-object v2, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
-
-    .line 35
-    const-string v1, "device"
-
-    .line 36
-    .line 37
-    sget-object v2, Landroid/os/Build;->DEVICE:Ljava/lang/String;
-
-    .line 38
-    .line 39
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    const-string v1, "product"
-
-    .line 44
-    .line 45
-    sget-object v2, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
-
-    .line 46
-    .line 47
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object p1
-
-    .line 51
-    const-string v1, "os-uild"
-
-    .line 52
-    .line 53
-    sget-object v2, Landroid/os/Build;->ID:Ljava/lang/String;
-
-    .line 54
-    .line 55
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object p1
-
-    .line 59
-    const-string v1, "manufacturer"
-
-    .line 60
-    .line 61
-    sget-object v2, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    .line 62
-    .line 63
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object p1
-
-    .line 67
-    const-string v1, "fingerprint"
-
-    .line 68
-    .line 69
-    sget-object v2, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p1
-
-    .line 75
-    const-string v1, "tz-offset"
-
-    .line 76
-    .line 77
-    invoke-static {}, Lcom/google/android/datatransport/cct/d;->k()J
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-wide v2
-
-    .line 81
-    invoke-virtual {p1, v1, v2, v3}, Lq6/i$a;->b(Ljava/lang/String;J)Lq6/i$a;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object p1
-
-    .line 85
-    const-string v1, "net-type"
-
-    .line 86
-    .line 87
-    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->g(Landroid/net/NetworkInfo;)I
-
-    .line 88
-    .line 89
-    .line 90
-    move-result v2
-
-    .line 91
-    invoke-virtual {p1, v1, v2}, Lq6/i$a;->a(Ljava/lang/String;I)Lq6/i$a;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object p1
-
-    .line 95
-    const-string v1, "mobile-subtype"
-
-    .line 96
-    .line 97
-    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->f(Landroid/net/NetworkInfo;)I
-
-    .line 98
-    .line 99
-    .line 100
-    move-result v0
-
-    .line 101
-    invoke-virtual {p1, v1, v0}, Lq6/i$a;->a(Ljava/lang/String;I)Lq6/i$a;
-
-    .line 102
-    .line 103
-    .line 104
-    move-result-object p1
-
-    .line 105
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    .line 106
-    .line 107
-    .line 108
-    move-result-object v0
-
-    .line 109
-    invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v0
-
-    .line 113
-    const-string v1, "country"
-
-    .line 114
-    .line 115
-    invoke-virtual {p1, v1, v0}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 116
-    .line 117
-    .line 118
-    move-result-object p1
-
-    .line 119
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    .line 120
-    .line 121
-    .line 122
-    move-result-object v0
-
-    .line 123
-    invoke-virtual {v0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v0
-
-    .line 127
-    const-string v1, "locale"
-
-    .line 128
-    .line 129
-    invoke-virtual {p1, v1, v0}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object p1
-
-    .line 133
-    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
-
-    .line 134
-    .line 135
-    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->j(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v0
-
-    .line 139
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
-
-    .line 140
-    .line 141
-    .line 142
-    move-result-object v0
-
-    .line 143
-    const-string v1, "mcc_mnc"
-
-    .line 144
-    .line 145
-    invoke-virtual {p1, v1, v0}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 146
-    .line 147
-    .line 148
-    move-result-object p1
-
-    .line 149
-    iget-object v0, p0, Lcom/google/android/datatransport/cct/d;->c:Landroid/content/Context;
-
-    .line 150
-    .line 151
-    invoke-static {v0}, Lcom/google/android/datatransport/cct/d;->h(Landroid/content/Context;)I
-
-    .line 152
-    .line 153
-    .line 154
-    move-result v0
-
-    .line 155
-    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    .line 156
-    .line 157
-    .line 158
-    move-result-object v0
-
-    .line 159
-    const-string v1, "application_build"
-
-    .line 160
-    .line 161
-    invoke-virtual {p1, v1, v0}, Lq6/i$a;->c(Ljava/lang/String;Ljava/lang/String;)Lq6/i$a;
-
-    .line 162
-    .line 163
-    .line 164
-    move-result-object p1
-
-    .line 165
-    invoke-virtual {p1}, Lq6/i$a;->d()Lq6/i;
-
-    .line 166
-    .line 167
-    .line 168
-    move-result-object p1
-
-    .line 169
-    return-object p1
     .line 170
     .line 171
     .line 172

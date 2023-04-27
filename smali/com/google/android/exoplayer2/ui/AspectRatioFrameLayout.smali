@@ -49,7 +49,7 @@
     move-result-object p1
 
     .line 13
-    sget-object v1, Lb9/l;->a:[I
+    sget-object v1, Lc9/l;->a:[I
 
     .line 14
     .line 15
@@ -62,7 +62,7 @@
 
     .line 19
     :try_start_0
-    sget p2, Lb9/l;->b:I
+    sget p2, Lc9/l;->b:I
 
     .line 20
     .line 21

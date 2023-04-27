@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu2/d;
+.implements Lv2/d;
 
 
 # instance fields

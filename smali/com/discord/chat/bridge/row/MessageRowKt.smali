@@ -153,9 +153,9 @@
     return-object v0
 
     :cond_4
-    new-instance v0, Llf/q;
+    new-instance v0, Lnf/q;
 
-    invoke-direct {v0}, Llf/q;-><init>()V
+    invoke-direct {v0}, Lnf/q;-><init>()V
 
     throw v0
 .end method

@@ -1345,7 +1345,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Status;->y()I
+    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Status;->r()I
 
     .line 48
     .line 49
@@ -1492,7 +1492,7 @@
 
     .line 111
     .line 112
-    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Status;->y()I
+    invoke-virtual {v3}, Lcom/google/android/gms/common/api/Status;->r()I
 
     .line 113
     .line 114

@@ -105,7 +105,7 @@
     move-result-object p1
 
     .line 34
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()Z
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->G()Z
 
     .line 35
     .line 36
@@ -260,7 +260,7 @@
 
     .line 108
     .line 109
-    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->v(Lcom/brentvatne/exoplayer/f;)F
+    invoke-static {v0}, Lcom/brentvatne/exoplayer/f;->w(Lcom/brentvatne/exoplayer/f;)F
 
     .line 110
     .line 111
@@ -354,5 +354,4 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method

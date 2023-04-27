@@ -1,17 +1,17 @@
 .class public final Lcom/google/android/gms/nearby/messages/internal/u;
-.super Lu9/e;
+.super Lv9/e;
 .source "SourceFile"
 
 # interfaces
-.implements Lxa/d;
+.implements Lya/d;
 
 
 # static fields
-.field private static final l:Lu9/a$g;
+.field private static final l:Lv9/a$g;
 
-.field private static final m:Lu9/a$a;
+.field private static final m:Lv9/a$a;
 
-.field private static final n:Lu9/a;
+.field private static final n:Lv9/a;
 
 .field public static final synthetic o:I
 
@@ -25,16 +25,16 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lu9/a$g;
+    new-instance v0, Lv9/a$g;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lu9/a$g;-><init>()V
+    invoke-direct {v0}, Lv9/a$g;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/u;->l:Lu9/a$g;
+    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/u;->l:Lv9/a$g;
 
     .line 7
     .line 8
@@ -47,11 +47,11 @@
     .line 11
     .line 12
     .line 13
-    sput-object v1, Lcom/google/android/gms/nearby/messages/internal/u;->m:Lu9/a$a;
+    sput-object v1, Lcom/google/android/gms/nearby/messages/internal/u;->m:Lv9/a$a;
 
     .line 14
     .line 15
-    new-instance v2, Lu9/a;
+    new-instance v2, Lv9/a;
 
     .line 16
     .line 17
@@ -59,12 +59,12 @@
 
     .line 18
     .line 19
-    invoke-direct {v2, v3, v1, v0}, Lu9/a;-><init>(Ljava/lang/String;Lu9/a$a;Lu9/a$g;)V
+    invoke-direct {v2, v3, v1, v0}, Lv9/a;-><init>(Ljava/lang/String;Lv9/a$a;Lv9/a$g;)V
 
     .line 20
     .line 21
     .line 22
-    sput-object v2, Lcom/google/android/gms/nearby/messages/internal/u;->n:Lu9/a;
+    sput-object v2, Lcom/google/android/gms/nearby/messages/internal/u;->n:Lv9/a;
 
     .line 23
     .line 24
@@ -128,19 +128,19 @@
     .line 81
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lxa/e;)V
+.method public constructor <init>(Landroid/content/Context;Lya/e;)V
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/nearby/messages/internal/u;->n:Lu9/a;
+    sget-object v0, Lcom/google/android/gms/nearby/messages/internal/u;->n:Lv9/a;
 
     .line 2
     .line 3
-    sget-object v1, Lu9/e$a;->c:Lu9/e$a;
+    sget-object v1, Lv9/e$a;->c:Lv9/e$a;
 
     .line 4
     .line 5
-    invoke-direct {p0, p1, v0, p2, v1}, Lu9/e;-><init>(Landroid/content/Context;Lu9/a;Lu9/a$d;Lu9/e$a;)V
+    invoke-direct {p0, p1, v0, p2, v1}, Lv9/e;-><init>(Landroid/content/Context;Lv9/a;Lv9/a$d;Lv9/e$a;)V
 
     .line 6
     .line 7
@@ -343,7 +343,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, p1, v0}, Lu9/e;->w(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/d;
+    invoke-virtual {p0, p1, v0}, Lv9/e;->w(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/d;
 
     move-result-object p1
 
@@ -375,7 +375,7 @@
     move-result-object p1
 
     .line 12
-    invoke-virtual {p0, v0, p1}, Lu9/e;->w(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/d;
+    invoke-virtual {p0, v0, p1}, Lv9/e;->w(Ljava/lang/Object;Ljava/lang/String;)Lcom/google/android/gms/common/api/internal/d;
 
     .line 13
     .line 14
@@ -476,7 +476,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/g$a;->b(Lv9/i;)Lcom/google/android/gms/common/api/internal/g$a;
+    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/g$a;->b(Lw9/i;)Lcom/google/android/gms/common/api/internal/g$a;
 
     .line 15
     .line 16
@@ -493,7 +493,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/api/internal/g$a;->d(Lv9/i;)Lcom/google/android/gms/common/api/internal/g$a;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/common/api/internal/g$a;->d(Lw9/i;)Lcom/google/android/gms/common/api/internal/g$a;
 
     .line 24
     .line 25
@@ -517,7 +517,7 @@
     move-result-object p1
 
     .line 35
-    invoke-virtual {p0, p1}, Lu9/e;->m(Lcom/google/android/gms/common/api/internal/g;)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p0, p1}, Lv9/e;->m(Lcom/google/android/gms/common/api/internal/g;)Lcom/google/android/gms/tasks/Task;
 
     .line 36
     .line 37
@@ -839,7 +839,7 @@
     move-result-object p1
 
     .line 18
-    invoke-virtual {p0, p1, p2}, Lu9/e;->o(Lcom/google/android/gms/common/api/internal/d$a;I)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p0, p1, p2}, Lv9/e;->o(Lcom/google/android/gms/common/api/internal/d$a;I)Lcom/google/android/gms/tasks/Task;
 
     .line 19
     .line 20
@@ -856,7 +856,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->b(Lcb/d;)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->b(Ldb/d;)Lcom/google/android/gms/tasks/Task;
 
     .line 28
     .line 29
@@ -1019,11 +1019,11 @@
 
 
 # virtual methods
-.method final synthetic C(Lcom/google/android/gms/nearby/messages/Message;Lcom/google/android/gms/nearby/messages/internal/r;Lxa/g;Lcom/google/android/gms/nearby/messages/internal/b;Lcom/google/android/gms/common/api/internal/d;)V
+.method final synthetic C(Lcom/google/android/gms/nearby/messages/Message;Lcom/google/android/gms/nearby/messages/internal/r;Lya/g;Lcom/google/android/gms/nearby/messages/internal/b;Lcom/google/android/gms/common/api/internal/d;)V
     .locals 6
 
     .line 1
-    invoke-static {p1}, Lya/f;->x(Lcom/google/android/gms/nearby/messages/Message;)Lya/f;
+    invoke-static {p1}, Lza/f;->p(Lcom/google/android/gms/nearby/messages/Message;)Lza/f;
 
     .line 2
     .line 3
@@ -1047,7 +1047,7 @@
     move-object v4, p3
 
     .line 11
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/nearby/messages/internal/b;->n0(Lcom/google/android/gms/common/api/internal/d;Lya/f;Lya/s;Lxa/g;I)V
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/nearby/messages/internal/b;->n0(Lcom/google/android/gms/common/api/internal/d;Lza/f;Lza/s;Lya/g;I)V
 
     .line 12
     .line 13
@@ -1288,17 +1288,130 @@
 
     move-object v4, p3
 
-    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/internal/b;->p0(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/common/api/internal/d;Lya/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;[BI)V
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/internal/b;->p0(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/common/api/internal/d;Lza/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;[BI)V
 
     return-void
 .end method
 
-.method public final a(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
+.method public final a(Lya/h;)Lcom/google/android/gms/tasks/Task;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lya/h;",
+            ")",
+            "Lcom/google/android/gms/tasks/Task<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0, p1}, Lcom/google/android/gms/nearby/messages/internal/u;->G(Ljava/lang/Object;)Lcom/google/android/gms/common/api/internal/d;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    new-instance v0, Lcom/google/android/gms/nearby/messages/internal/d;
+
+    .line 9
+    .line 10
+    invoke-direct {v0, p1}, Lcom/google/android/gms/nearby/messages/internal/d;-><init>(Lcom/google/android/gms/common/api/internal/d;)V
+
+    .line 11
+    .line 12
+    .line 13
+    new-instance v1, Lcom/google/android/gms/nearby/messages/internal/e;
+
+    .line 14
+    .line 15
+    invoke-direct {v1, p1}, Lcom/google/android/gms/nearby/messages/internal/e;-><init>(Lcom/google/android/gms/common/api/internal/d;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/16 v2, 0x4f6
+
+    .line 19
+    .line 20
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/nearby/messages/internal/u;->I(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/nearby/messages/internal/p;Lcom/google/android/gms/nearby/messages/internal/p;I)Lcom/google/android/gms/tasks/Task;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    return-object p1
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+.end method
+
+.method public final b(Lya/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lxa/b;",
+            "Lya/b;",
             "Lcom/google/android/gms/nearby/messages/SubscribeOptions;",
             ")",
             "Lcom/google/android/gms/tasks/Task<",
@@ -1308,17 +1421,17 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    invoke-static {p2}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c()Lxa/i;
+    invoke-virtual {p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c()Lya/i;
 
     .line 8
     .line 9
@@ -1326,7 +1439,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, Lxa/i;->x()I
+    invoke-virtual {v0}, Lya/i;->p()I
 
     .line 12
     .line 13
@@ -1353,7 +1466,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1}, Lw9/p;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lx9/p;->b(ZLjava/lang/Object;)V
 
     .line 23
     .line 24
@@ -1366,7 +1479,7 @@
     move-result-object p1
 
     .line 29
-    invoke-virtual {p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a()Lxa/j;
+    invoke-virtual {p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a()Lya/j;
 
     .line 30
     .line 31
@@ -1545,7 +1658,7 @@
     .line 179
 .end method
 
-.method public final b(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+.method public final c(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1559,16 +1672,16 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lxa/g;->c:Lxa/g;
+    sget-object v0, Lya/g;->c:Lya/g;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -1581,7 +1694,7 @@
     move-result-object v1
 
     .line 13
-    invoke-virtual {v0}, Lxa/g;->a()Lxa/f;
+    invoke-virtual {v0}, Lya/g;->a()Lya/f;
 
     .line 14
     .line 15
@@ -1610,7 +1723,7 @@
 
     .line 27
     .line 28
-    invoke-direct {v2, p0, p1, v3, v0}, Lcom/google/android/gms/nearby/messages/internal/j;-><init>(Lcom/google/android/gms/nearby/messages/internal/u;Lcom/google/android/gms/nearby/messages/Message;Lcom/google/android/gms/nearby/messages/internal/r;Lxa/g;)V
+    invoke-direct {v2, p0, p1, v3, v0}, Lcom/google/android/gms/nearby/messages/internal/j;-><init>(Lcom/google/android/gms/nearby/messages/internal/u;Lcom/google/android/gms/nearby/messages/Message;Lcom/google/android/gms/nearby/messages/internal/r;Lya/g;)V
 
     .line 29
     .line 30
@@ -1674,221 +1787,7 @@
     .line 77
 .end method
 
-.method public final c(Lxa/h;)Lcom/google/android/gms/tasks/Task;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxa/h;",
-            ")",
-            "Lcom/google/android/gms/tasks/Task<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0, p1}, Lcom/google/android/gms/nearby/messages/internal/u;->G(Ljava/lang/Object;)Lcom/google/android/gms/common/api/internal/d;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    new-instance v0, Lcom/google/android/gms/nearby/messages/internal/d;
-
-    .line 9
-    .line 10
-    invoke-direct {v0, p1}, Lcom/google/android/gms/nearby/messages/internal/d;-><init>(Lcom/google/android/gms/common/api/internal/d;)V
-
-    .line 11
-    .line 12
-    .line 13
-    new-instance v1, Lcom/google/android/gms/nearby/messages/internal/e;
-
-    .line 14
-    .line 15
-    invoke-direct {v1, p1}, Lcom/google/android/gms/nearby/messages/internal/e;-><init>(Lcom/google/android/gms/common/api/internal/d;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/16 v2, 0x4f6
-
-    .line 19
-    .line 20
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/android/gms/nearby/messages/internal/u;->I(Lcom/google/android/gms/common/api/internal/d;Lcom/google/android/gms/nearby/messages/internal/p;Lcom/google/android/gms/nearby/messages/internal/p;I)Lcom/google/android/gms/tasks/Task;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    return-object p1
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-.end method
-
-.method public final d(Lxa/b;)Lcom/google/android/gms/tasks/Task;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lxa/b;",
-            ")",
-            "Lcom/google/android/gms/tasks/Task<",
-            "Ljava/lang/Void;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    const/16 v0, 0x506
-
-    .line 5
-    .line 6
-    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-.end method
-
-.method public final f(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+.method public final d(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1902,7 +1801,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -1989,12 +1888,12 @@
     .line 77
 .end method
 
-.method public final g(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+.method public final e(Lya/b;)Lcom/google/android/gms/tasks/Task;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lxa/h;",
+            "Lya/b;",
             ")",
             "Lcom/google/android/gms/tasks/Task<",
             "Ljava/lang/Void;",
@@ -2003,7 +1902,108 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    const/16 v0, 0x506
+
+    .line 5
+    .line 6
+    invoke-direct {p0, p1, v0}, Lcom/google/android/gms/nearby/messages/internal/u;->J(Ljava/lang/Object;I)Lcom/google/android/gms/tasks/Task;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+.end method
+
+.method public final g(Lya/h;)Lcom/google/android/gms/tasks/Task;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lya/h;",
+            ")",
+            "Lcom/google/android/gms/tasks/Task<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -2090,11 +2090,11 @@
     .line 77
 .end method
 
-.method protected final i()Lw9/d$a;
+.method protected final i()Lx9/d$a;
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lu9/e;->i()Lw9/d$a;
+    invoke-super {p0}, Lv9/e;->i()Lx9/d$a;
 
     .line 2
     .line 3
@@ -2102,7 +2102,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p0}, Lu9/e;->s()Lu9/a$d;
+    invoke-virtual {p0}, Lv9/e;->s()Lv9/a$d;
 
     .line 6
     .line 7
@@ -2114,7 +2114,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0}, Lu9/e;->s()Lu9/a$d;
+    invoke-virtual {p0}, Lv9/e;->s()Lv9/a$d;
 
     .line 12
     .line 13
@@ -2122,11 +2122,11 @@
     move-result-object v1
 
     .line 15
-    check-cast v1, Lxa/e;
+    check-cast v1, Lya/e;
 
     .line 16
     .line 17
-    iget-object v1, v1, Lxa/e;->m:Ljava/lang/String;
+    iget-object v1, v1, Lya/e;->m:Ljava/lang/String;
 
     .line 18
     .line 19

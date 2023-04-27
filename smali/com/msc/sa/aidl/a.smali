@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract U(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
+.method public abstract R(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
 .end method
 
-.method public abstract X(ILjava/lang/String;Landroid/os/Bundle;)Z
+.method public abstract V(ILjava/lang/String;Landroid/os/Bundle;)Z
 .end method

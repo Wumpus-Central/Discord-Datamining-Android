@@ -39,7 +39,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9

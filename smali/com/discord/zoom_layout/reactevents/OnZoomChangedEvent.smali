@@ -60,7 +60,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -115,7 +115,7 @@
 
     move-result-object p3
 
-    invoke-static {p1, v0, p3}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {p1, v0, p3}, Lbj/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

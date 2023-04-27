@@ -235,11 +235,11 @@
     return p1
 .end method
 
-.method public b(Lvc/d;)Z
+.method public b(Lwc/d;)Z
     .locals 4
 
     .line 1
-    invoke-virtual {p1}, Lvc/d;->k()Z
+    invoke-virtual {p1}, Lwc/d;->k()Z
 
     .line 2
     .line 3
@@ -255,7 +255,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Lcom/google/firebase/installations/i;->f(Lvc/d;)Z
+    invoke-virtual {v0, p1}, Lcom/google/firebase/installations/i;->f(Lwc/d;)Z
 
     .line 10
     .line 11
@@ -279,7 +279,7 @@
     move-result-object v1
 
     .line 21
-    invoke-virtual {p1}, Lvc/d;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lwc/d;->b()Ljava/lang/String;
 
     .line 22
     .line 23
@@ -295,7 +295,7 @@
     move-result-object v1
 
     .line 29
-    invoke-virtual {p1}, Lvc/d;->c()J
+    invoke-virtual {p1}, Lwc/d;->c()J
 
     .line 30
     .line 31
@@ -311,7 +311,7 @@
     move-result-object v1
 
     .line 37
-    invoke-virtual {p1}, Lvc/d;->h()J
+    invoke-virtual {p1}, Lwc/d;->h()J
 
     .line 38
     .line 39

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/media/engine/video/events/OnVideoCallbackEvent;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/media/engine/video/events/OnVideoCallbackEvent.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/media/engine/video/events/OnVideoCallbackEvent;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -97,7 +97,7 @@
     const/4 v3, 0x5
 
     .line 13
-    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lbj/f0;I)V
 
     .line 14
     .line 15
@@ -268,7 +268,7 @@
     const/4 v1, 0x0
 
     .line 5
-    sget-object v2, Lzi/m0;->a:Lzi/m0;
+    sget-object v2, Lbj/m0;->a:Lbj/m0;
 
     .line 6
     .line 7
@@ -276,7 +276,7 @@
 
     .line 8
     .line 9
-    sget-object v1, Lzi/a2;->a:Lzi/a2;
+    sget-object v1, Lbj/a2;->a:Lbj/a2;
 
     .line 10
     .line 11
@@ -290,7 +290,7 @@
     const/4 v2, 0x2
 
     .line 15
-    sget-object v3, Lzi/w0;->a:Lzi/w0;
+    sget-object v3, Lbj/w0;->a:Lbj/w0;
 
     .line 16
     .line 17
@@ -533,9 +533,9 @@
     goto :goto_1
 
     :cond_1
-    new-instance v0, Lwi/n;
+    new-instance v0, Lyi/n;
 
-    invoke-direct {v0, v15}, Lwi/n;-><init>(I)V
+    invoke-direct {v0, v15}, Lyi/n;-><init>(I)V
 
     throw v0
 
@@ -681,7 +681,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

@@ -1588,7 +1588,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Ldb/f;->I:I
+    sget v0, Leb/f;->I:I
 
     .line 5
     .line 6
@@ -1608,7 +1608,7 @@
 
     .line 13
     .line 14
-    sget v0, Ldb/f;->H:I
+    sget v0, Leb/f;->H:I
 
     .line 15
     .line 16
@@ -1724,7 +1724,7 @@
     move-result-object v0
 
     .line 16
-    sget v2, Ldb/d;->g:I
+    sget v2, Leb/d;->g:I
 
     .line 17
     .line 18
@@ -1744,7 +1744,7 @@
     move-result-object v2
 
     .line 26
-    sget v3, Ldb/d;->f:I
+    sget v3, Leb/d;->f:I
 
     .line 27
     .line 28

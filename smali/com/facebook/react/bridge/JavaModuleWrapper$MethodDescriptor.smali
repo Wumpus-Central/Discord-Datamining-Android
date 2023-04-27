@@ -4,9 +4,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/facebook/react/bridge/JavaModuleWrapper;
 .end annotation
@@ -16,27 +13,30 @@
     name = "MethodDescriptor"
 .end annotation
 
+.annotation build Le6/a;
+.end annotation
+
 
 # instance fields
 .field method:Ljava/lang/reflect/Method;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
 .field name:Ljava/lang/String;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
 .field signature:Ljava/lang/String;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
 .field final synthetic this$0:Lcom/facebook/react/bridge/JavaModuleWrapper;
 
 .field type:Ljava/lang/String;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 

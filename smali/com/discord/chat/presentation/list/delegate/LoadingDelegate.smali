@@ -436,9 +436,9 @@
     goto :goto_0
 
     :cond_1
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     throw p1
 

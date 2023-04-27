@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a(Lz3/d;Ljava/lang/Throwable;)V
+.method public abstract a(La4/d;Ljava/lang/Throwable;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lz3/d<",
+            "La4/d<",
             "Ljava/lang/Object;",
             ">;",
             "Ljava/lang/Throwable;",

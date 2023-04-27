@@ -1,5 +1,5 @@
 .class Lcom/facebook/react/modules/network/ProgressResponseBody$1;
-.super Ldk/g;
+.super Lfk/g;
 .source "SourceFile"
 
 
@@ -24,7 +24,7 @@
 
     iput-object p1, p0, Lcom/facebook/react/modules/network/ProgressResponseBody$1;->this$0:Lcom/facebook/react/modules/network/ProgressResponseBody;
 
-    invoke-direct {p0, p2}, Ldk/g;-><init>(Lokio/Source;)V
+    invoke-direct {p0, p2}, Lfk/g;-><init>(Lokio/Source;)V
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .locals 7
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Ldk/g;->read(Lokio/Buffer;J)J
+    invoke-super {p0, p1, p2, p3}, Lfk/g;->read(Lokio/Buffer;J)J
 
     .line 2
     .line 3

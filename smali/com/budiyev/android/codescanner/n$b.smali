@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public a(Landroid/hardware/Camera$Size;Landroid/hardware/Camera$Size;)I
+.method public b(Landroid/hardware/Camera$Size;Landroid/hardware/Camera$Size;)I
     .locals 1
 
     iget v0, p2, Landroid/hardware/Camera$Size;->height:I
@@ -74,7 +74,7 @@
 
     check-cast p2, Landroid/hardware/Camera$Size;
 
-    invoke-virtual {p0, p1, p2}, Lcom/budiyev/android/codescanner/n$b;->a(Landroid/hardware/Camera$Size;Landroid/hardware/Camera$Size;)I
+    invoke-virtual {p0, p1, p2}, Lcom/budiyev/android/codescanner/n$b;->b(Landroid/hardware/Camera$Size;Landroid/hardware/Camera$Size;)I
 
     move-result p1
 

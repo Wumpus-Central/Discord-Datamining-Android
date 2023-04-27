@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv9/c;
+.implements Lw9/c;
 
 
 # instance fields
@@ -119,9 +119,9 @@
 
     iget-object v0, p0, Lcom/google/android/gms/nearby/messages/internal/n;->a:Lcom/google/android/gms/tasks/TaskCompletionSource;
 
-    new-instance v1, Lu9/b;
+    new-instance v1, Lv9/b;
 
-    invoke-direct {v1, p1}, Lu9/b;-><init>(Lcom/google/android/gms/common/api/Status;)V
+    invoke-direct {v1, p1}, Lv9/b;-><init>(Lcom/google/android/gms/common/api/Status;)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/gms/tasks/TaskCompletionSource;->b(Ljava/lang/Exception;)V
 

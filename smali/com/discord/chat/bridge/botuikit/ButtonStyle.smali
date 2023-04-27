@@ -55,7 +55,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
     with = Lcom/discord/chat/bridge/botuikit/ButtonStyle$Serializer;
 .end annotation
 
@@ -292,7 +292,7 @@
 
     .line 74
     .line 75
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     .line 76
     .line 77
@@ -300,7 +300,7 @@
 
     .line 78
     .line 79
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 80
     .line 81

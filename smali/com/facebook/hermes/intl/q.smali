@@ -11,7 +11,7 @@
 
 .field private b:Landroid/icu/text/NumberFormat;
 
-.field private c:Lg5/x;
+.field private c:Lh5/x;
 
 .field private d:Lcom/facebook/hermes/intl/c$h;
 
@@ -32,7 +32,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {p0}, Lg5/p1;->a(Ljava/lang/String;)Landroid/icu/util/Currency;
+    invoke-static {p0}, Lh5/p1;->a(Ljava/lang/String;)Landroid/icu/util/Currency;
 
     .line 2
     .line 3
@@ -40,7 +40,7 @@
     move-result-object p0
 
     .line 5
-    invoke-static {p0}, Lg5/v1;->a(Landroid/icu/util/Currency;)I
+    invoke-static {p0}, Lh5/v1;->a(Landroid/icu/util/Currency;)I
 
     .line 6
     .line 7
@@ -54,7 +54,7 @@
 
     .line 10
     :catch_0
-    new-instance p0, Lg5/j;
+    new-instance p0, Lh5/j;
 
     .line 11
     .line 12
@@ -62,7 +62,7 @@
 
     .line 13
     .line 14
-    invoke-direct {p0, v0}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -99,13 +99,13 @@
     .line 46
 .end method
 
-.method private o(Landroid/icu/text/NumberFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
+.method private o(Landroid/icu/text/NumberFormat;Lh5/b;Lcom/facebook/hermes/intl/c$h;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/icu/text/NumberFormat;",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;",
             "Lcom/facebook/hermes/intl/c$h;",
             ")V"
@@ -121,11 +121,11 @@
 
     .line 4
     .line 5
-    check-cast p2, Lg5/x;
+    check-cast p2, Lh5/x;
 
     .line 6
     .line 7
-    iput-object p2, p0, Lcom/facebook/hermes/intl/q;->c:Lg5/x;
+    iput-object p2, p0, Lcom/facebook/hermes/intl/q;->c:Lh5/x;
 
     .line 8
     .line 9
@@ -136,7 +136,7 @@
     const/4 p2, 0x4
 
     .line 12
-    invoke-static {p1, p2}, Lg5/d3;->a(Landroid/icu/text/NumberFormat;I)V
+    invoke-static {p1, p2}, Lh5/d3;->a(Landroid/icu/text/NumberFormat;I)V
 
     .line 13
     .line 14
@@ -309,7 +309,7 @@
     .locals 5
 
     .line 1
-    invoke-static {}, Lg5/a3;->a()Ljava/util/Set;
+    invoke-static {}, Lh5/a3;->a()Ljava/util/Set;
 
     .line 2
     .line 3
@@ -350,7 +350,7 @@
 
     .line 20
     .line 21
-    invoke-static {v1}, Lg5/b3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/b3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
 
     .line 22
     .line 23
@@ -370,7 +370,7 @@
 
     .line 30
     .line 31
-    invoke-static {v1}, Lg5/b3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/b3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -387,7 +387,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-static {v1}, Lg5/c3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/c3;->a(Landroid/icu/util/MeasureUnit;)Ljava/lang/String;
 
     .line 41
     .line 42
@@ -439,7 +439,7 @@
 
     .line 66
     :cond_2
-    new-instance v0, Lg5/j;
+    new-instance v0, Lh5/j;
 
     .line 67
     .line 68
@@ -474,7 +474,7 @@
     move-result-object p0
 
     .line 85
-    invoke-direct {v0, p0}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 86
     .line 87
@@ -723,7 +723,7 @@
 
     .line 38
     :catch_0
-    invoke-static {v0}, Lg5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
+    invoke-static {v0}, Lh5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
 
     .line 39
     .line 40
@@ -731,7 +731,7 @@
     move-result-object v0
 
     .line 42
-    invoke-static {v0}, Lg5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
+    invoke-static {v0}, Lh5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
 
     .line 43
     .line 44
@@ -747,7 +747,7 @@
     move-result-object p1
 
     .line 50
-    invoke-static {v0, p1}, Lg5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
+    invoke-static {v0, p1}, Lh5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
 
     .line 51
     .line 52
@@ -760,7 +760,7 @@
     .line 55
     :catch_1
     :try_start_1
-    invoke-static {}, Lg5/m2;->a()Landroid/icu/util/ULocale;
+    invoke-static {}, Lh5/m2;->a()Landroid/icu/util/ULocale;
 
     .line 56
     .line 57
@@ -768,7 +768,7 @@
     move-result-object v1
 
     .line 59
-    invoke-static {v1}, Lg5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
+    invoke-static {v1}, Lh5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
 
     .line 60
     .line 61
@@ -784,7 +784,7 @@
     move-result-object v2
 
     .line 67
-    invoke-static {v1, v2}, Lg5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
+    invoke-static {v1, v2}, Lh5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
 
     .line 68
     .line 69
@@ -798,7 +798,7 @@
 
     .line 72
     :catch_2
-    invoke-static {v0}, Lg5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
+    invoke-static {v0}, Lh5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
 
     .line 73
     .line 74
@@ -806,7 +806,7 @@
     move-result-object v0
 
     .line 76
-    invoke-static {v0}, Lg5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
+    invoke-static {v0}, Lh5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
 
     .line 77
     .line 78
@@ -822,7 +822,7 @@
     move-result-object p1
 
     .line 84
-    invoke-static {v0, p1}, Lg5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
+    invoke-static {v0, p1}, Lh5/o2;->a(Landroid/icu/text/NumberFormat;Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
 
     .line 85
     .line 86
@@ -986,28 +986,28 @@
     .line 241
 .end method
 
-.method public b(Lg5/b;)Ljava/lang/String;
+.method public b(Lh5/b;)Ljava/lang/String;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;)",
             "Ljava/lang/String;"
         }
     .end annotation
 
-    invoke-interface {p1}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p1}, Lh5/b;->h()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/icu/util/ULocale;
 
-    invoke-static {p1}, Lg5/y0;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberingSystem;
+    invoke-static {p1}, Lh5/y0;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberingSystem;
 
     move-result-object p1
 
-    invoke-static {p1}, Lg5/z0;->a(Landroid/icu/text/NumberingSystem;)Ljava/lang/String;
+    invoke-static {p1}, Lh5/z0;->a(Landroid/icu/text/NumberingSystem;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1096,7 +1096,7 @@
     .line 36
     :catch_0
     :try_start_1
-    invoke-static {}, Lg5/m2;->a()Landroid/icu/util/ULocale;
+    invoke-static {}, Lh5/m2;->a()Landroid/icu/util/ULocale;
 
     .line 37
     .line 38
@@ -1104,7 +1104,7 @@
     move-result-object v0
 
     .line 40
-    invoke-static {v0}, Lg5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
+    invoke-static {v0}, Lh5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
 
     .line 41
     .line 42
@@ -1112,7 +1112,7 @@
     move-result-object v0
 
     .line 44
-    invoke-static {v0, p1, p2}, Lg5/z2;->a(Landroid/icu/text/NumberFormat;D)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Lh5/z2;->a(Landroid/icu/text/NumberFormat;D)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -1130,7 +1130,7 @@
 
     .line 50
     .line 51
-    invoke-static {v0}, Lg5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
+    invoke-static {v0}, Lh5/p2;->a(Ljava/lang/String;)Landroid/icu/util/ULocale;
 
     .line 52
     .line 53
@@ -1138,7 +1138,7 @@
     move-result-object v0
 
     .line 55
-    invoke-static {v0}, Lg5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
+    invoke-static {v0}, Lh5/n2;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/NumberFormat;
 
     .line 56
     .line 57
@@ -1146,7 +1146,7 @@
     move-result-object v0
 
     .line 59
-    invoke-static {v0, p1, p2}, Lg5/z2;->a(Landroid/icu/text/NumberFormat;D)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Lh5/z2;->a(Landroid/icu/text/NumberFormat;D)Ljava/lang/String;
 
     .line 60
     .line 61
@@ -1375,17 +1375,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
-    .locals 0
-
-    invoke-virtual/range {p0 .. p6}, Lcom/facebook/hermes/intl/q;->m(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/q;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic h(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/facebook/hermes/intl/q;->r(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/q;
@@ -1395,10 +1385,20 @@
     return-object p1
 .end method
 
-.method public bridge synthetic j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic i(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2}, Lcom/facebook/hermes/intl/q;->w(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/q;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic j(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+    .locals 0
+
+    invoke-virtual/range {p0 .. p6}, Lcom/facebook/hermes/intl/q;->m(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/q;
 
     move-result-object p1
 
@@ -1419,7 +1419,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lg5/w1;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/w1;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 2
     .line 3
@@ -1463,7 +1463,7 @@
 
     .line 21
     :cond_1
-    invoke-static {}, Lg5/y1;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/y1;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 22
     .line 23
@@ -1523,7 +1523,7 @@
 
     .line 48
     :cond_4
-    invoke-static {}, Lg5/a2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/a2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 49
     .line 50
@@ -1543,7 +1543,7 @@
 
     .line 57
     :cond_5
-    invoke-static {}, Lg5/b2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/b2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 58
     .line 59
@@ -1563,7 +1563,7 @@
 
     .line 66
     :cond_6
-    invoke-static {}, Lg5/c2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/c2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 67
     .line 68
@@ -1583,7 +1583,7 @@
 
     .line 75
     :cond_7
-    invoke-static {}, Lg5/d2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/d2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 76
     .line 77
@@ -1603,7 +1603,7 @@
 
     .line 84
     :cond_8
-    invoke-static {}, Lg5/e2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/e2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 85
     .line 86
@@ -1623,7 +1623,7 @@
 
     .line 93
     :cond_9
-    invoke-static {}, Lg5/f2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/f2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 94
     .line 95
@@ -1643,7 +1643,7 @@
 
     .line 102
     :cond_a
-    invoke-static {}, Lg5/g2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/g2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 103
     .line 104
@@ -1663,7 +1663,7 @@
 
     .line 111
     :cond_b
-    invoke-static {}, Lg5/h2;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/h2;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 112
     .line 113
@@ -1683,7 +1683,7 @@
 
     .line 120
     :cond_c
-    invoke-static {}, Lg5/x1;->a()Landroid/icu/text/NumberFormat$Field;
+    invoke-static {}, Lh5/x1;->a()Landroid/icu/text/NumberFormat$Field;
 
     .line 121
     .line 122
@@ -2428,12 +2428,12 @@
     .line 832
 .end method
 
-.method public m(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/q;
+.method public m(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/q;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;",
             "Ljava/lang/String;",
             "Lcom/facebook/hermes/intl/c$h;",
@@ -2463,7 +2463,7 @@
     .line 8
     .line 9
     :try_start_0
-    invoke-static {p2}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -2471,7 +2471,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v1}, Lg5/s0;->a(Ljava/lang/String;)Landroid/icu/text/NumberingSystem;
+    invoke-static {v1}, Lh5/s0;->a(Ljava/lang/String;)Landroid/icu/text/NumberingSystem;
 
     .line 14
     .line 15
@@ -2494,7 +2494,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-static {p2}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -2511,7 +2511,7 @@
 
     .line 32
     .line 33
-    invoke-interface {p1, p2, v0}, Lg5/b;->f(Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-interface {p1, p2, v0}, Lh5/b;->f(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 34
     .line 35
@@ -2520,7 +2520,7 @@
 
     .line 37
     :cond_0
-    new-instance p1, Lg5/j;
+    new-instance p1, Lh5/j;
 
     .line 38
     .line 39
@@ -2551,7 +2551,7 @@
     move-result-object p2
 
     .line 54
-    invoke-direct {p1, p2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -2560,7 +2560,7 @@
 
     .line 58
     :catch_0
-    new-instance p1, Lg5/j;
+    new-instance p1, Lh5/j;
 
     .line 59
     .line 60
@@ -2591,7 +2591,7 @@
     move-result-object p2
 
     .line 75
-    invoke-direct {p1, p2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 76
     .line 77
@@ -2634,7 +2634,7 @@
 
     .line 94
     .line 95
-    invoke-static {}, Lg5/f3;->a()Landroid/icu/text/CompactDecimalFormat$CompactStyle;
+    invoke-static {}, Lh5/f3;->a()Landroid/icu/text/CompactDecimalFormat$CompactStyle;
 
     .line 96
     .line 97
@@ -2646,7 +2646,7 @@
 
     .line 100
     :cond_3
-    invoke-static {}, Lg5/g3;->a()Landroid/icu/text/CompactDecimalFormat$CompactStyle;
+    invoke-static {}, Lh5/g3;->a()Landroid/icu/text/CompactDecimalFormat$CompactStyle;
 
     .line 101
     .line 102
@@ -2655,7 +2655,7 @@
 
     .line 104
     :goto_1
-    invoke-interface {p1}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p1}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 105
     .line 106
@@ -2667,7 +2667,7 @@
 
     .line 109
     .line 110
-    invoke-static {p4, p2}, Lg5/h3;->a(Landroid/icu/util/ULocale;Landroid/icu/text/CompactDecimalFormat$CompactStyle;)Landroid/icu/text/CompactDecimalFormat;
+    invoke-static {p4, p2}, Lh5/h3;->a(Landroid/icu/util/ULocale;Landroid/icu/text/CompactDecimalFormat$CompactStyle;)Landroid/icu/text/CompactDecimalFormat;
 
     .line 111
     .line 112
@@ -2675,7 +2675,7 @@
     move-result-object p2
 
     .line 114
-    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/q;->o(Landroid/icu/text/NumberFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
+    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/q;->o(Landroid/icu/text/NumberFormat;Lh5/b;Lcom/facebook/hermes/intl/c$h;)V
 
     .line 115
     .line 116
@@ -2692,7 +2692,7 @@
     move-result p2
 
     .line 122
-    invoke-interface {p1}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p1}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 123
     .line 124
@@ -2704,7 +2704,7 @@
 
     .line 127
     .line 128
-    invoke-static {p4, p2}, Lg5/i3;->a(Landroid/icu/util/ULocale;I)Landroid/icu/text/NumberFormat;
+    invoke-static {p4, p2}, Lh5/i3;->a(Landroid/icu/util/ULocale;I)Landroid/icu/text/NumberFormat;
 
     .line 129
     .line 130
@@ -2723,13 +2723,13 @@
     const/4 p4, 0x3
 
     .line 137
-    invoke-static {p2, p4}, Lg5/j3;->a(Landroid/icu/text/NumberFormat;I)V
+    invoke-static {p2, p4}, Lh5/j3;->a(Landroid/icu/text/NumberFormat;I)V
 
     .line 138
     .line 139
     .line 140
     :cond_5
-    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/q;->o(Landroid/icu/text/NumberFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
+    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/q;->o(Landroid/icu/text/NumberFormat;Lh5/b;Lcom/facebook/hermes/intl/c$h;)V
 
     .line 141
     .line 142
@@ -3011,7 +3011,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lg5/p1;->a(Ljava/lang/String;)Landroid/icu/util/Currency;
+    invoke-static {p1}, Lh5/p1;->a(Ljava/lang/String;)Landroid/icu/util/Currency;
 
     .line 8
     .line 9
@@ -3023,7 +3023,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1, v0}, Lg5/q1;->a(Landroid/icu/text/NumberFormat;Landroid/icu/util/Currency;)V
+    invoke-static {v1, v0}, Lh5/q1;->a(Landroid/icu/text/NumberFormat;Landroid/icu/util/Currency;)V
 
     .line 14
     .line 15
@@ -3040,11 +3040,11 @@
 
     .line 21
     :cond_0
-    iget-object p1, p0, Lcom/facebook/hermes/intl/q;->c:Lg5/x;
+    iget-object p1, p0, Lcom/facebook/hermes/intl/q;->c:Lh5/x;
 
     .line 22
     .line 23
-    invoke-virtual {p1}, Lg5/x;->m()Landroid/icu/util/ULocale;
+    invoke-virtual {p1}, Lh5/x;->m()Landroid/icu/util/ULocale;
 
     .line 24
     .line 25
@@ -3063,7 +3063,7 @@
     const/4 v1, 0x0
 
     .line 32
-    invoke-static {v0, p1, p2, v1}, Lg5/r1;->a(Landroid/icu/util/Currency;Landroid/icu/util/ULocale;I[Z)Ljava/lang/String;
+    invoke-static {v0, p1, p2, v1}, Lh5/r1;->a(Landroid/icu/util/Currency;Landroid/icu/util/ULocale;I[Z)Ljava/lang/String;
 
     .line 33
     .line 34
@@ -3088,7 +3088,7 @@
 
     .line 43
     .line 44
-    invoke-static {p2}, Lg5/s1;->a(Landroid/icu/text/DecimalFormat;)Landroid/icu/text/DecimalFormatSymbols;
+    invoke-static {p2}, Lh5/s1;->a(Landroid/icu/text/DecimalFormat;)Landroid/icu/text/DecimalFormatSymbols;
 
     .line 45
     .line 46
@@ -3096,12 +3096,12 @@
     move-result-object v0
 
     .line 48
-    invoke-static {v0, p1}, Lg5/t1;->a(Landroid/icu/text/DecimalFormatSymbols;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/t1;->a(Landroid/icu/text/DecimalFormatSymbols;Ljava/lang/String;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-static {p2, v0}, Lg5/u1;->a(Landroid/icu/text/DecimalFormat;Landroid/icu/text/DecimalFormatSymbols;)V
+    invoke-static {p2, v0}, Lh5/u1;->a(Landroid/icu/text/DecimalFormat;Landroid/icu/text/DecimalFormatSymbols;)V
 
     .line 52
     .line 53
@@ -3169,7 +3169,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1, p2}, Lg5/o1;->a(Landroid/icu/text/NumberFormat;I)V
+    invoke-static {p1, p2}, Lh5/o1;->a(Landroid/icu/text/NumberFormat;I)V
 
     .line 10
     .line 11
@@ -3183,7 +3183,7 @@
 
     .line 15
     .line 16
-    invoke-static {p1, p3}, Lg5/z1;->a(Landroid/icu/text/NumberFormat;I)V
+    invoke-static {p1, p3}, Lh5/z1;->a(Landroid/icu/text/NumberFormat;I)V
 
     .line 17
     .line 18
@@ -3208,7 +3208,7 @@
     const/4 p2, 0x0
 
     .line 28
-    invoke-static {p1, p2}, Lg5/k2;->a(Landroid/icu/text/DecimalFormat;Z)V
+    invoke-static {p1, p2}, Lh5/k2;->a(Landroid/icu/text/DecimalFormat;Z)V
 
     .line 29
     .line 30
@@ -3367,7 +3367,7 @@
 
     iget-object v0, p0, Lcom/facebook/hermes/intl/q;->b:Landroid/icu/text/NumberFormat;
 
-    invoke-static {v0, p1}, Lg5/q2;->a(Landroid/icu/text/NumberFormat;Z)V
+    invoke-static {v0, p1}, Lh5/q2;->a(Landroid/icu/text/NumberFormat;Z)V
 
     return-object p0
 .end method
@@ -3381,7 +3381,7 @@
 
     iget-object v0, p0, Lcom/facebook/hermes/intl/q;->b:Landroid/icu/text/NumberFormat;
 
-    invoke-static {v0, p1}, Lg5/v2;->a(Landroid/icu/text/NumberFormat;I)V
+    invoke-static {v0, p1}, Lh5/v2;->a(Landroid/icu/text/NumberFormat;I)V
 
     :cond_0
     return-object p0
@@ -3407,7 +3407,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lg5/s1;->a(Landroid/icu/text/DecimalFormat;)Landroid/icu/text/DecimalFormatSymbols;
+    invoke-static {v0}, Lh5/s1;->a(Landroid/icu/text/DecimalFormat;)Landroid/icu/text/DecimalFormatSymbols;
 
     .line 10
     .line 11
@@ -3456,7 +3456,7 @@
 
     .line 31
     :cond_0
-    invoke-static {v0}, Lg5/w2;->a(Landroid/icu/text/DecimalFormat;)Ljava/lang/String;
+    invoke-static {v0}, Lh5/w2;->a(Landroid/icu/text/DecimalFormat;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -3487,7 +3487,7 @@
 
     .line 45
     .line 46
-    invoke-static {v1}, Lg5/x2;->a(Landroid/icu/text/DecimalFormatSymbols;)C
+    invoke-static {v1}, Lh5/x2;->a(Landroid/icu/text/DecimalFormatSymbols;)C
 
     .line 47
     .line 48
@@ -3504,13 +3504,13 @@
     .line 53
     .line 54
     .line 55
-    invoke-static {v0, p1}, Lg5/s2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/s2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 56
     .line 57
     .line 58
     :cond_1
-    invoke-static {v0}, Lg5/y2;->a(Landroid/icu/text/DecimalFormat;)Ljava/lang/String;
+    invoke-static {v0}, Lh5/y2;->a(Landroid/icu/text/DecimalFormat;)Ljava/lang/String;
 
     .line 59
     .line 60
@@ -3538,7 +3538,7 @@
 
     .line 71
     .line 72
-    invoke-static {v1}, Lg5/x2;->a(Landroid/icu/text/DecimalFormatSymbols;)C
+    invoke-static {v1}, Lh5/x2;->a(Landroid/icu/text/DecimalFormatSymbols;)C
 
     .line 73
     .line 74
@@ -3555,7 +3555,7 @@
     .line 79
     .line 80
     .line 81
-    invoke-static {v0, p1}, Lg5/r2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/r2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -3568,22 +3568,22 @@
 
     .line 86
     .line 87
-    invoke-static {v0, p1}, Lg5/s2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/s2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 88
     .line 89
     .line 90
-    invoke-static {v0, p1}, Lg5/r2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/r2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 91
     .line 92
     .line 93
-    invoke-static {v0, p1}, Lg5/t2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/t2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 94
     .line 95
     .line 96
-    invoke-static {v0, p1}, Lg5/u2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lh5/u2;->a(Landroid/icu/text/DecimalFormat;Ljava/lang/String;)V
 
     .line 97
     .line 98
@@ -3767,7 +3767,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, p2}, Lg5/i2;->a(Landroid/icu/text/DecimalFormat;I)V
+    invoke-static {v0, p2}, Lh5/i2;->a(Landroid/icu/text/DecimalFormat;I)V
 
     .line 16
     .line 17
@@ -3777,7 +3777,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, Lg5/j2;->a(Landroid/icu/text/DecimalFormat;)I
+    invoke-static {v0}, Lh5/j2;->a(Landroid/icu/text/DecimalFormat;)I
 
     .line 21
     .line 22
@@ -3789,7 +3789,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0, p3}, Lg5/l2;->a(Landroid/icu/text/DecimalFormat;I)V
+    invoke-static {v0, p3}, Lh5/l2;->a(Landroid/icu/text/DecimalFormat;I)V
 
     .line 27
     .line 28
@@ -3798,7 +3798,7 @@
 
     .line 30
     :cond_1
-    new-instance p1, Lg5/j;
+    new-instance p1, Lh5/j;
 
     .line 31
     .line 32
@@ -3806,7 +3806,7 @@
 
     .line 33
     .line 34
-    invoke-direct {p1, p2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 35
     .line 36
@@ -3819,7 +3819,7 @@
     const/4 p1, 0x1
 
     .line 39
-    invoke-static {v0, p1}, Lg5/k2;->a(Landroid/icu/text/DecimalFormat;Z)V
+    invoke-static {v0, p1}, Lh5/k2;->a(Landroid/icu/text/DecimalFormat;Z)V
 
     .line 40
     .line 41
@@ -3990,11 +3990,11 @@
 
     .line 12
     .line 13
-    iget-object p1, p0, Lcom/facebook/hermes/intl/q;->c:Lg5/x;
+    iget-object p1, p0, Lcom/facebook/hermes/intl/q;->c:Lh5/x;
 
     .line 14
     .line 15
-    invoke-virtual {p1}, Lg5/x;->m()Landroid/icu/util/ULocale;
+    invoke-virtual {p1}, Lh5/x;->m()Landroid/icu/util/ULocale;
 
     .line 16
     .line 17
@@ -4014,7 +4014,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, p2, v0}, Lg5/e3;->a(Landroid/icu/util/ULocale;Landroid/icu/text/MeasureFormat$FormatWidth;Landroid/icu/text/NumberFormat;)Landroid/icu/text/MeasureFormat;
+    invoke-static {p1, p2, v0}, Lh5/e3;->a(Landroid/icu/util/ULocale;Landroid/icu/text/MeasureFormat$FormatWidth;Landroid/icu/text/NumberFormat;)Landroid/icu/text/MeasureFormat;
 
     .line 26
     .line 27

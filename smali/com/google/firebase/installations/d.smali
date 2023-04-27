@@ -1,5 +1,5 @@
 .class public Lcom/google/firebase/installations/d;
-.super Lgc/j;
+.super Lhc/j;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lgc/j;-><init>()V
+    invoke-direct {p0}, Lhc/j;-><init>()V
 
     .line 2
     iput-object p1, p0, Lcom/google/firebase/installations/d;->k:Lcom/google/firebase/installations/d$a;
@@ -32,7 +32,7 @@
     .locals 0
 
     .line 3
-    invoke-direct {p0, p1}, Lgc/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lhc/j;-><init>(Ljava/lang/String;)V
 
     .line 4
     iput-object p2, p0, Lcom/google/firebase/installations/d;->k:Lcom/google/firebase/installations/d$a;

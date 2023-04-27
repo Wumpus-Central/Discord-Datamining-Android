@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILu2/a0;)V
+.method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILv2/a0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

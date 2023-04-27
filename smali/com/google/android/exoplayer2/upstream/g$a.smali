@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final a:Lh8/n;
+.field public final a:Li8/n;
 
-.field public final b:Lh8/q;
+.field public final b:Li8/q;
 
 .field public final c:Ljava/io/IOException;
 
@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lh8/n;Lh8/q;Ljava/io/IOException;I)V
+.method public constructor <init>(Li8/n;Li8/q;Ljava/io/IOException;I)V
     .locals 0
 
     .line 1
@@ -34,11 +34,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/upstream/g$a;->a:Lh8/n;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/upstream/g$a;->a:Li8/n;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/exoplayer2/upstream/g$a;->b:Lh8/q;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/upstream/g$a;->b:Li8/q;
 
     .line 7
     .line 8

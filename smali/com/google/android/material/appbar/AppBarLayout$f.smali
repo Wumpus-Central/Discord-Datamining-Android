@@ -49,14 +49,14 @@
     iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout$f;->a:I
 
     .line 3
-    sget-object v0, Ldb/k;->u:[I
+    sget-object v0, Leb/k;->u:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
     .line 4
-    sget v0, Ldb/k;->w:I
+    sget v0, Leb/k;->w:I
 
     const/4 v1, 0x0
 
@@ -67,7 +67,7 @@
     iput v0, p0, Lcom/google/android/material/appbar/AppBarLayout$f;->a:I
 
     .line 5
-    sget v0, Ldb/k;->v:I
+    sget v0, Leb/k;->v:I
 
     .line 6
     invoke-virtual {p2, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -82,7 +82,7 @@
     invoke-virtual {p0, v0}, Lcom/google/android/material/appbar/AppBarLayout$f;->f(Lcom/google/android/material/appbar/AppBarLayout$d;)V
 
     .line 8
-    sget v0, Ldb/k;->x:I
+    sget v0, Leb/k;->x:I
 
     invoke-virtual {p2, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
 

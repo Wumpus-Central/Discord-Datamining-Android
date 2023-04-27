@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/lang/Iterable;
-.implements Lyf/a;
+.implements Lag/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Iterable<",
         "Lcom/facebook/react/common/mapbuffer/MapBuffer$Entry;",
         ">;",
-        "Lyf/a;"
+        "Lag/a;"
     }
 .end annotation
 

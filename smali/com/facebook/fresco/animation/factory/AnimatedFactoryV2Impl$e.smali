@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ll5/b;
+.implements Lm5/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i()Ll5/b;
+    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i()Lm5/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,11 +34,11 @@
 
 
 # virtual methods
-.method public a(Lj5/e;Landroid/graphics/Rect;)Lj5/a;
+.method public a(Lk5/e;Landroid/graphics/Rect;)Lk5/a;
     .locals 3
 
     .line 1
-    new-instance v0, Ll5/a;
+    new-instance v0, Lm5/a;
 
     .line 2
     .line 3
@@ -46,7 +46,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Lm5/a;
+    invoke-static {v1}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Ln5/a;
 
     .line 6
     .line 7
@@ -66,7 +66,7 @@
     move-result v2
 
     .line 15
-    invoke-direct {v0, v1, p1, p2, v2}, Ll5/a;-><init>(Lm5/a;Lj5/e;Landroid/graphics/Rect;Z)V
+    invoke-direct {v0, v1, p1, p2, v2}, Lm5/a;-><init>(Ln5/a;Lk5/e;Landroid/graphics/Rect;Z)V
 
     .line 16
     .line 17

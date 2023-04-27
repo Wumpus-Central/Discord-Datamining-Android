@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # virtual methods
 .method public abstract setEnabled(Z)V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

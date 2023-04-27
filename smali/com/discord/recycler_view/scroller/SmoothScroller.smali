@@ -747,11 +747,11 @@
 
     .line 39
     :cond_2
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 40
     .line 41
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 42
     .line 43

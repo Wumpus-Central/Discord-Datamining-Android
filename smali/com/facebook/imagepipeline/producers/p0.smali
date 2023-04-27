@@ -8,11 +8,11 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;Landroid/content/ContentResolver;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;Landroid/content/ContentResolver;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Lz3/h;)V
 
     .line 2
     .line 3
@@ -196,7 +196,7 @@
 
 
 # virtual methods
-.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lu5/e;
+.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lv5/e;
     .locals 1
 
     .line 1
@@ -224,7 +224,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1, v0}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -232,7 +232,7 @@
     const/4 v0, -0x1
 
     .line 17
-    invoke-virtual {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, p1, v0}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 18
     .line 19

@@ -15,7 +15,10 @@
 
 
 # virtual methods
-.method public abstract N(Lq8/l;)V
+.method public abstract C(Lr8/l;)V
+.end method
+
+.method public abstract i(Lr8/l;)V
 .end method
 
 .method public abstract s()Ljava/util/List;
@@ -23,11 +26,8 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lq8/b;",
+            "Lr8/b;",
             ">;"
         }
     .end annotation
-.end method
-
-.method public abstract v(Lq8/l;)V
 .end method

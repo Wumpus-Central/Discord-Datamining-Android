@@ -111,7 +111,7 @@
 
     const-string v3, "com.discord.chat.input.bridge.ChatInputNodeFontWeight"
 
-    invoke-static {v3, v0, v1, v2}, Lzi/c0;->a(Ljava/lang/String;[Ljava/lang/Enum;[Ljava/lang/String;[[Ljava/lang/annotation/Annotation;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3, v0, v1, v2}, Lbj/c0;->a(Ljava/lang/String;[Ljava/lang/Enum;[Ljava/lang/String;[[Ljava/lang/annotation/Annotation;)Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

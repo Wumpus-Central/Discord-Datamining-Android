@@ -15,10 +15,10 @@
 
 
 # direct methods
-.method public constructor <init>(Ly3/c;Lx5/z;Lx5/a0;)V
+.method public constructor <init>(Lz3/c;Ly5/z;Ly5/a0;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/g;-><init>(Ly3/c;Lx5/z;Lx5/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/g;-><init>(Lz3/c;Ly5/z;Ly5/a0;)V
 
     return-void
 .end method
@@ -48,11 +48,11 @@
     move-result p1
 
     .line 7
-    iget-object v1, p0, Lcom/facebook/imagepipeline/memory/b;->c:Lx5/z;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/memory/b;->c:Ly5/z;
 
     .line 8
     .line 9
-    iget v1, v1, Lx5/z;->g:I
+    iget v1, v1, Ly5/z;->g:I
 
     .line 10
     .line 11

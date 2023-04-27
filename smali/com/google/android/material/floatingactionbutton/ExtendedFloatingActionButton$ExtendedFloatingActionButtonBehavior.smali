@@ -59,7 +59,7 @@
     invoke-direct {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 5
-    sget-object v0, Ldb/k;->K1:[I
+    sget-object v0, Leb/k;->K1:[I
 
     .line 6
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -67,7 +67,7 @@
     move-result-object p1
 
     .line 7
-    sget p2, Ldb/k;->L1:I
+    sget p2, Leb/k;->L1:I
 
     const/4 v0, 0x0
 
@@ -79,7 +79,7 @@
     iput-boolean p2, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;->b:Z
 
     .line 9
-    sget p2, Ldb/k;->M1:I
+    sget p2, Leb/k;->M1:I
 
     const/4 v0, 0x1
 

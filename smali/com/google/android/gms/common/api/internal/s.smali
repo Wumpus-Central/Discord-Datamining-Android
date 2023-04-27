@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw9/c$e;
+.implements Lx9/c$e;
 
 
 # instance fields

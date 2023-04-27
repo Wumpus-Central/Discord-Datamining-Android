@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/primitives/MessageId;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/primitives/MessageId.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/primitives/MessageId;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -98,7 +98,7 @@
 
     .line 11
     .line 12
-    invoke-direct {v1, v2, v0}, Lkotlinx/serialization/internal/InlineClassDescriptor;-><init>(Ljava/lang/String;Lzi/f0;)V
+    invoke-direct {v1, v2, v0}, Lkotlinx/serialization/internal/InlineClassDescriptor;-><init>(Ljava/lang/String;Lbj/f0;)V
 
     .line 13
     .line 14
@@ -211,7 +211,7 @@
     const/4 v1, 0x0
 
     .line 5
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     .line 6
     .line 7
@@ -463,7 +463,7 @@
     move-result-object v0
 
     .line 15
-    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->k(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Encoder;
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->j(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Encoder;
 
     .line 16
     .line 17
@@ -652,7 +652,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

@@ -25,7 +25,7 @@
 
 .field private e:J
 
-.field private f:Li8/a;
+.field private f:Lj8/a;
 
 
 # direct methods
@@ -38,11 +38,11 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Li8/a;->g:Li8/a;
+    sget-object v0, Lj8/a;->g:Lj8/a;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iput-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 7
     .line 8
@@ -90,13 +90,13 @@
 .method public a(I)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-object v0, v0, Li8/a;->d:[Li8/a$a;
+    iget-object v0, v0, Lj8/a;->d:[Lj8/a$a;
 
     aget-object p1, v0, p1
 
-    iget p1, p1, Li8/a$a;->a:I
+    iget p1, p1, Lj8/a$a;->a:I
 
     return p1
 .end method
@@ -105,11 +105,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 2
     .line 3
-    iget-object v0, v0, Li8/a;->d:[Li8/a$a;
+    iget-object v0, v0, Lj8/a;->d:[Lj8/a$a;
 
     .line 4
     .line 5
@@ -117,7 +117,7 @@
 
     .line 6
     .line 7
-    iget v0, p1, Li8/a$a;->a:I
+    iget v0, p1, Lj8/a$a;->a:I
 
     .line 8
     .line 9
@@ -128,7 +128,7 @@
 
     .line 11
     .line 12
-    iget-object p1, p1, Li8/a$a;->d:[J
+    iget-object p1, p1, Lj8/a$a;->d:[J
 
     .line 13
     .line 14
@@ -225,9 +225,9 @@
 .method public c()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget v0, v0, Li8/a;->b:I
+    iget v0, v0, Lj8/a;->b:I
 
     return v0
 .end method
@@ -235,11 +235,11 @@
 .method public d(J)I
     .locals 3
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     iget-wide v1, p0, Lcom/google/android/exoplayer2/Timeline$b;->d:J
 
-    invoke-virtual {v0, p1, p2, v1, v2}, Li8/a;->a(JJ)I
+    invoke-virtual {v0, p1, p2, v1, v2}, Lj8/a;->a(JJ)I
 
     move-result p1
 
@@ -249,11 +249,11 @@
 .method public e(J)I
     .locals 3
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     iget-wide v1, p0, Lcom/google/android/exoplayer2/Timeline$b;->d:J
 
-    invoke-virtual {v0, p1, p2, v1, v2}, Li8/a;->b(JJ)I
+    invoke-virtual {v0, p1, p2, v1, v2}, Lj8/a;->b(JJ)I
 
     move-result p1
 
@@ -322,7 +322,7 @@
 
     .line 26
     .line 27
-    invoke-static {v2, v3}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
     .line 29
@@ -342,7 +342,7 @@
 
     .line 36
     .line 37
-    invoke-static {v2, v3}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -398,15 +398,15 @@
 
     .line 64
     .line 65
-    iget-object v2, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v2, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 66
     .line 67
-    iget-object p1, p1, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object p1, p1, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 68
     .line 69
-    invoke-static {v2, p1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 70
     .line 71
@@ -600,9 +600,9 @@
 .method public f(I)J
     .locals 3
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-object v0, v0, Li8/a;->c:[J
+    iget-object v0, v0, Lj8/a;->c:[J
 
     aget-wide v1, v0, p1
 
@@ -612,9 +612,9 @@
 .method public g()J
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-wide v0, v0, Li8/a;->e:J
+    iget-wide v0, v0, Lj8/a;->e:J
 
     return-wide v0
 .end method
@@ -754,11 +754,11 @@
 
     .line 53
     .line 54
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 55
     .line 56
-    invoke-virtual {v0}, Li8/a;->hashCode()I
+    invoke-virtual {v0}, Lj8/a;->hashCode()I
 
     .line 57
     .line 58
@@ -1037,13 +1037,13 @@
 .method public i(I)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-object v0, v0, Li8/a;->d:[Li8/a$a;
+    iget-object v0, v0, Lj8/a;->d:[Lj8/a$a;
 
     aget-object p1, v0, p1
 
-    invoke-virtual {p1}, Li8/a$a;->a()I
+    invoke-virtual {p1}, Lj8/a$a;->a()I
 
     move-result p1
 
@@ -1053,13 +1053,13 @@
 .method public j(II)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-object v0, v0, Li8/a;->d:[Li8/a$a;
+    iget-object v0, v0, Lj8/a;->d:[Lj8/a$a;
 
     aget-object p1, v0, p1
 
-    invoke-virtual {p1, p2}, Li8/a$a;->b(I)I
+    invoke-virtual {p1, p2}, Lj8/a$a;->b(I)I
 
     move-result p1
 
@@ -1071,7 +1071,7 @@
 
     iget-wide v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->e:J
 
-    invoke-static {v0, v1}, Ld7/c;->d(J)J
+    invoke-static {v0, v1}, Le7/c;->d(J)J
 
     move-result-wide v0
 
@@ -1089,13 +1089,13 @@
 .method public m(I)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
-    iget-object v0, v0, Li8/a;->d:[Li8/a$a;
+    iget-object v0, v0, Lj8/a;->d:[Lj8/a$a;
 
     aget-object p1, v0, p1
 
-    invoke-virtual {p1}, Li8/a$a;->c()Z
+    invoke-virtual {p1}, Lj8/a$a;->c()Z
 
     move-result p1
 
@@ -1107,7 +1107,7 @@
 .method public n(Ljava/lang/Object;Ljava/lang/Object;IJJ)Lcom/google/android/exoplayer2/Timeline$b;
     .locals 9
 
-    sget-object v8, Li8/a;->g:Li8/a;
+    sget-object v8, Lj8/a;->g:Lj8/a;
 
     move-object v0, p0
 
@@ -1121,14 +1121,14 @@
 
     move-wide v6, p6
 
-    invoke-virtual/range {v0 .. v8}, Lcom/google/android/exoplayer2/Timeline$b;->o(Ljava/lang/Object;Ljava/lang/Object;IJJLi8/a;)Lcom/google/android/exoplayer2/Timeline$b;
+    invoke-virtual/range {v0 .. v8}, Lcom/google/android/exoplayer2/Timeline$b;->o(Ljava/lang/Object;Ljava/lang/Object;IJJLj8/a;)Lcom/google/android/exoplayer2/Timeline$b;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public o(Ljava/lang/Object;Ljava/lang/Object;IJJLi8/a;)Lcom/google/android/exoplayer2/Timeline$b;
+.method public o(Ljava/lang/Object;Ljava/lang/Object;IJJLj8/a;)Lcom/google/android/exoplayer2/Timeline$b;
     .locals 0
 
     .line 1
@@ -1152,7 +1152,7 @@
 
     .line 10
     .line 11
-    iput-object p8, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Li8/a;
+    iput-object p8, p0, Lcom/google/android/exoplayer2/Timeline$b;->f:Lj8/a;
 
     .line 12
     .line 13

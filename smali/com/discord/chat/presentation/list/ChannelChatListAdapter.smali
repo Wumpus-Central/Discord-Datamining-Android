@@ -1850,11 +1850,11 @@
 
     .line 89
     :cond_3
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 90
     .line 91
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 92
     .line 93

@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lg5/b;
+.implements Lh5/b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lg5/b<",
+        "Lh5/b<",
         "Ljava/util/Locale;",
         ">;"
     }
@@ -111,12 +111,12 @@
     return-void
 .end method
 
-.method public static i()Lg5/b;
+.method public static i()Lh5/b;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lg5/b<",
+            "Lh5/b<",
             "Ljava/util/Locale;",
             ">;"
         }
@@ -133,14 +133,14 @@
     return-object v0
 .end method
 
-.method public static j(Ljava/lang/String;)Lg5/b;
+.method public static j(Ljava/lang/String;)Lh5/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lg5/b<",
+            "Lh5/b<",
             "Ljava/util/Locale;",
             ">;"
         }
@@ -187,7 +187,7 @@
     move-exception v0
 
     .line 13
-    new-instance v1, Lg5/j;
+    new-instance v1, Lh5/j;
 
     .line 14
     .line 15
@@ -199,7 +199,7 @@
     move-result-object v0
 
     .line 19
-    invoke-direct {v1, v0}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -1559,7 +1559,7 @@
     move-exception v0
 
     .line 640
-    new-instance v1, Lg5/j;
+    new-instance v1, Lh5/j;
 
     .line 641
     .line 642
@@ -1571,7 +1571,7 @@
     move-result-object v0
 
     .line 646
-    invoke-direct {v1, v0}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 647
     .line 648
@@ -2068,12 +2068,12 @@
     return-object v0
 .end method
 
-.method public d()Lg5/b;
+.method public d()Lh5/b;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lg5/b<",
+            "Lh5/b<",
             "Ljava/util/Locale;",
             ">;"
         }

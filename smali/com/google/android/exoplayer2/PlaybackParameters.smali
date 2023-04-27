@@ -66,7 +66,7 @@
 
     .line 3
     :goto_0
-    invoke-static {v1}, Lf9/a;->a(Z)V
+    invoke-static {v1}, Lg9/a;->a(Z)V
 
     cmpl-float v0, p2, v0
 
@@ -79,7 +79,7 @@
 
     .line 4
     :goto_1
-    invoke-static {v2}, Lf9/a;->a(Z)V
+    invoke-static {v2}, Lg9/a;->a(Z)V
 
     .line 5
     iput p1, p0, Lcom/google/android/exoplayer2/PlaybackParameters;->a:F
@@ -352,7 +352,7 @@
 
     .line 23
     .line 24
-    invoke-static {v1, v0}, Lf9/q0;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lg9/q0;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 25
     .line 26

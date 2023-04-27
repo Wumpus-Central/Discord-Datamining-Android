@@ -74,14 +74,92 @@
 
     iget-object v0, p0, Lcom/facebook/hermes/intl/m;->a:Landroid/icu/text/RuleBasedCollator;
 
-    invoke-static {v0, p1, p2}, Lg5/f0;->a(Landroid/icu/text/RuleBasedCollator;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, p1, p2}, Lh5/f0;->a(Landroid/icu/text/RuleBasedCollator;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public b()Lcom/facebook/hermes/intl/a$c;
+.method public b(Lh5/b;)Lcom/facebook/hermes/intl/a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh5/b<",
+            "*>;)",
+            "Lcom/facebook/hermes/intl/a;"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Lh5/x;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lh5/x;->m()Landroid/icu/util/ULocale;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lh5/g0;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/Collator;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Landroid/icu/text/RuleBasedCollator;
+
+    .line 12
+    .line 13
+    iput-object p1, p0, Lcom/facebook/hermes/intl/m;->a:Landroid/icu/text/RuleBasedCollator;
+
+    .line 14
+    .line 15
+    const/16 v0, 0x11
+
+    .line 16
+    .line 17
+    invoke-static {p1, v0}, Lh5/h0;->a(Landroid/icu/text/RuleBasedCollator;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object p0
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+.end method
+
+.method public c()Lcom/facebook/hermes/intl/a$c;
     .locals 2
 
     .line 1
@@ -101,7 +179,7 @@
 
     .line 8
     :cond_0
-    invoke-static {v0}, Lg5/d0;->a(Landroid/icu/text/RuleBasedCollator;)I
+    invoke-static {v0}, Lh5/d0;->a(Landroid/icu/text/RuleBasedCollator;)I
 
     .line 9
     .line 10
@@ -117,7 +195,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0}, Lg5/e0;->a(Landroid/icu/text/RuleBasedCollator;)Z
+    invoke-static {v0}, Lh5/e0;->a(Landroid/icu/text/RuleBasedCollator;)Z
 
     .line 17
     .line 18
@@ -175,84 +253,6 @@
     .line 44
 .end method
 
-.method public c(Lg5/b;)Lcom/facebook/hermes/intl/a;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lg5/b<",
-            "*>;)",
-            "Lcom/facebook/hermes/intl/a;"
-        }
-    .end annotation
-
-    .line 1
-    check-cast p1, Lg5/x;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lg5/x;->m()Landroid/icu/util/ULocale;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    invoke-static {p1}, Lg5/g0;->a(Landroid/icu/util/ULocale;)Landroid/icu/text/Collator;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    check-cast p1, Landroid/icu/text/RuleBasedCollator;
-
-    .line 12
-    .line 13
-    iput-object p1, p0, Lcom/facebook/hermes/intl/m;->a:Landroid/icu/text/RuleBasedCollator;
-
-    .line 14
-    .line 15
-    const/16 v0, 0x11
-
-    .line 16
-    .line 17
-    invoke-static {p1, v0}, Lg5/h0;->a(Landroid/icu/text/RuleBasedCollator;I)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-object p0
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-.end method
-
 .method public d(Z)Lcom/facebook/hermes/intl/a;
     .locals 1
 
@@ -262,7 +262,7 @@
 
     const/4 v0, 0x1
 
-    invoke-static {p1, v0}, Lg5/i0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
+    invoke-static {p1, v0}, Lh5/i0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
 
     :cond_0
     return-object p0
@@ -306,7 +306,7 @@
 
     .line 16
     .line 17
-    invoke-static {p1}, Lg5/c0;->a(Landroid/icu/text/RuleBasedCollator;)V
+    invoke-static {p1}, Lh5/c0;->a(Landroid/icu/text/RuleBasedCollator;)V
 
     .line 18
     .line 19
@@ -319,7 +319,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1, v0}, Lg5/b0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
+    invoke-static {p1, v0}, Lh5/b0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
 
     .line 24
     .line 25
@@ -332,7 +332,7 @@
 
     .line 28
     .line 29
-    invoke-static {p1, v0}, Lg5/y;->a(Landroid/icu/text/RuleBasedCollator;Z)V
+    invoke-static {p1, v0}, Lh5/y;->a(Landroid/icu/text/RuleBasedCollator;Z)V
 
     .line 30
     .line 31
@@ -364,11 +364,11 @@
 
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v0}, Lg5/i;->e(Ljava/lang/Object;)Z
+    invoke-static {v0}, Lh5/i;->e(Ljava/lang/Object;)Z
 
     move-result v0
 
-    invoke-static {p1, v0}, Lg5/a0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
+    invoke-static {p1, v0}, Lh5/a0;->a(Landroid/icu/text/RuleBasedCollator;Z)V
 
     :cond_0
     return-object p0
@@ -433,7 +433,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, v2}, Lg5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
+    invoke-static {p1, v2}, Lh5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
 
     .line 26
     .line 27
@@ -446,7 +446,7 @@
 
     .line 30
     .line 31
-    invoke-static {p1, v0}, Lg5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
+    invoke-static {p1, v0}, Lh5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
 
     .line 32
     .line 33
@@ -455,7 +455,7 @@
 
     .line 35
     .line 36
-    invoke-static {p1, v1}, Lg5/z;->a(Landroid/icu/text/RuleBasedCollator;Z)V
+    invoke-static {p1, v1}, Lh5/z;->a(Landroid/icu/text/RuleBasedCollator;Z)V
 
     .line 37
     .line 38
@@ -468,7 +468,7 @@
 
     .line 41
     .line 42
-    invoke-static {p1, v1}, Lg5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
+    invoke-static {p1, v1}, Lh5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
 
     .line 43
     .line 44
@@ -481,7 +481,7 @@
 
     .line 47
     .line 48
-    invoke-static {p1, v0}, Lg5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
+    invoke-static {p1, v0}, Lh5/j0;->a(Landroid/icu/text/RuleBasedCollator;I)V
 
     .line 49
     .line 50

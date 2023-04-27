@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field private final b:Lh8/q0;
+.field private final b:Li8/q0;
 
 .field private final c:I
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method private constructor <init>(Ljava/util/List;Lh8/q0;IJ)V
+.method private constructor <init>(Ljava/util/List;Li8/q0;IJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -41,7 +41,7 @@
             "Ljava/util/List<",
             "Lcom/google/android/exoplayer2/p0$c;",
             ">;",
-            "Lh8/q0;",
+            "Li8/q0;",
             "IJ)V"
         }
     .end annotation
@@ -53,7 +53,7 @@
     iput-object p1, p0, Lcom/google/android/exoplayer2/g0$b;->a:Ljava/util/List;
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/exoplayer2/g0$b;->b:Lh8/q0;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/g0$b;->b:Li8/q0;
 
     .line 5
     iput p3, p0, Lcom/google/android/exoplayer2/g0$b;->c:I
@@ -64,11 +64,11 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljava/util/List;Lh8/q0;IJLcom/google/android/exoplayer2/g0$a;)V
+.method synthetic constructor <init>(Ljava/util/List;Li8/q0;IJLcom/google/android/exoplayer2/g0$a;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p5}, Lcom/google/android/exoplayer2/g0$b;-><init>(Ljava/util/List;Lh8/q0;IJ)V
+    invoke-direct/range {p0 .. p5}, Lcom/google/android/exoplayer2/g0$b;-><init>(Ljava/util/List;Li8/q0;IJ)V
 
     return-void
 .end method
@@ -89,10 +89,10 @@
     return-object p0
 .end method
 
-.method static synthetic c(Lcom/google/android/exoplayer2/g0$b;)Lh8/q0;
+.method static synthetic c(Lcom/google/android/exoplayer2/g0$b;)Li8/q0;
     .locals 0
 
-    iget-object p0, p0, Lcom/google/android/exoplayer2/g0$b;->b:Lh8/q0;
+    iget-object p0, p0, Lcom/google/android/exoplayer2/g0$b;->b:Li8/q0;
 
     return-object p0
 .end method

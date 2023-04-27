@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw6/a;
+.implements Lx6/a;
 
 
 # instance fields

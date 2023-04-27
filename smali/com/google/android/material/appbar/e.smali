@@ -129,7 +129,7 @@
     move-result-object v0
 
     .line 5
-    sget v1, Ldb/g;->a:I
+    sget v1, Leb/g;->a:I
 
     .line 6
     .line 7
@@ -169,7 +169,7 @@
 
     .line 24
     .line 25
-    sget v5, Ldb/b;->G:I
+    sget v5, Leb/b;->G:I
 
     .line 26
     .line 27
@@ -180,7 +180,7 @@
 
     .line 29
     .line 30
-    sget v5, Ldb/b;->H:I
+    sget v5, Leb/b;->H:I
 
     .line 31
     .line 32

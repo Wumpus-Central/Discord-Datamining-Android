@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb2/a$d;
+.implements Lc2/a$d;
 
 
 # annotations
@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public a(Lb2/a;II)V
+.method public a(Lc2/a;II)V
     .locals 0
 
     iget-object p1, p0, Lcom/henninghall/date_picker/pickers/IosClone$b;->a:Lcom/henninghall/date_picker/pickers/a$a;

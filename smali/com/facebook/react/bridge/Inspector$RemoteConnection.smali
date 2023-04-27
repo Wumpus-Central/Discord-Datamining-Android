@@ -4,9 +4,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/facebook/react/bridge/Inspector;
 .end annotation
@@ -16,14 +13,17 @@
     name = "RemoteConnection"
 .end annotation
 
+.annotation build Le6/a;
+.end annotation
+
 
 # virtual methods
 .method public abstract onDisconnect()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract onMessage(Ljava/lang/String;)V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

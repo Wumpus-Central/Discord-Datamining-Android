@@ -643,11 +643,11 @@
 
     .line 36
     :cond_0
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 37
     .line 38
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 39
     .line 40
@@ -1297,8 +1297,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method private final yOfRow(FI)F
@@ -1388,7 +1386,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final getHorizontalPadding()I
@@ -1672,7 +1669,7 @@
     int-to-float p2, p2
 
     .line 71
-    invoke-static {v0, p2}, Lcg/h;->f(FF)F
+    invoke-static {v0, p2}, Leg/h;->f(FF)F
 
     .line 72
     .line 73

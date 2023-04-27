@@ -810,7 +810,7 @@
     .line 23
     .line 24
     :cond_0
-    invoke-static {}, Lmf/s;->c()Ljava/util/Map;
+    invoke-static {}, Lof/s;->c()Ljava/util/Map;
 
     .line 25
     .line 26
@@ -849,7 +849,7 @@
     const/4 v2, 0x2
 
     .line 43
-    invoke-static {p1, v2}, Loi/j;->m(Lkotlin/sequences/Sequence;I)Lkotlin/sequences/Sequence;
+    invoke-static {p1, v2}, Lqi/j;->m(Lkotlin/sequences/Sequence;I)Lkotlin/sequences/Sequence;
 
     .line 44
     .line 45
@@ -951,7 +951,7 @@
 
     .line 93
     :cond_1
-    invoke-static {v1}, Lmf/s;->b(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v1}, Lof/s;->b(Ljava/util/Map;)Ljava/util/Map;
 
     .line 94
     .line 95

@@ -505,7 +505,7 @@
     move-result p0
 
     .line 11
-    invoke-static {v0, p0}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v0, p0}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 12
     .line 13

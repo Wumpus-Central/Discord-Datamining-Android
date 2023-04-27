@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Lcom/facebook/imagepipeline/producers/l0<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -340,7 +340,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Ld4/f;->k(Landroid/net/Uri;)Z
+    invoke-static {v0}, Le4/f;->k(Landroid/net/Uri;)Z
 
     .line 6
     .line 7
@@ -372,7 +372,7 @@
 
     .line 20
     :cond_0
-    invoke-static {v0}, Ld4/f;->j(Landroid/net/Uri;)Z
+    invoke-static {v0}, Le4/f;->j(Landroid/net/Uri;)Z
 
     .line 21
     .line 22
@@ -715,7 +715,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")V"
@@ -731,7 +731,7 @@
     move-result-object v6
 
     .line 5
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 6
     .line 7

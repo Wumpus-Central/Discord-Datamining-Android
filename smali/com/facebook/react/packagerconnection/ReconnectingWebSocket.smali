@@ -1,5 +1,5 @@
 .class public final Lcom/facebook/react/packagerconnection/ReconnectingWebSocket;
-.super Loj/t;
+.super Lqj/t;
 .source "SourceFile"
 
 
@@ -47,7 +47,7 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Loj/t;-><init>()V
+    invoke-direct {p0}, Lqj/t;-><init>()V
 
     .line 2
     .line 3
@@ -316,7 +316,7 @@
     move-result-object p1
 
     .line 20
-    invoke-static {v0, p1, p2}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1, p2}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 21
     .line 22
@@ -612,7 +612,7 @@
     move-result-object v1
 
     .line 35
-    invoke-static {v0, v1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -1043,7 +1043,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v1, v0, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Loj/t;)Lokhttp3/WebSocket;
+    invoke-virtual {v1, v0, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Lqj/t;)Lokhttp3/WebSocket;
 
     .line 23
     .line 24

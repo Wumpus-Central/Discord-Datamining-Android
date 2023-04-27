@@ -58,7 +58,7 @@
 
     .line 6
     .line 7
-    invoke-static {v2, v3, v0, v1}, Lg6/a;->e(JLjava/lang/String;I)V
+    invoke-static {v2, v3, v0, v1}, Lh6/a;->e(JLjava/lang/String;I)V
 
     .line 8
     .line 9

@@ -1,5 +1,5 @@
 .class public final Lcom/discord/image/fresco/postprocessors/processors/SafeRoundAsCirclePostprocessor;
-.super Ly5/a;
+.super Lz5/a;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/image/fresco/postprocessors/processors/SafeRoundAsCirclePostprocessor;",
-        "Ly5/a;",
+        "Lz5/a;",
         "Landroid/graphics/Bitmap;",
         "bitmap",
         "",
@@ -59,7 +59,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Ly5/a;-><init>()V
+    invoke-direct {p0}, Lz5/a;-><init>()V
 
     return-void
 .end method
@@ -106,7 +106,7 @@
 
     .line 18
     .line 19
-    invoke-super {p0, p1}, Ly5/a;->process(Landroid/graphics/Bitmap;)V
+    invoke-super {p0, p1}, Lz5/a;->process(Landroid/graphics/Bitmap;)V
 
     .line 20
     .line 21

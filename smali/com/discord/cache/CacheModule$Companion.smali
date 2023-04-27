@@ -227,7 +227,7 @@
     const/4 v8, 0x0
 
     .line 19
-    invoke-static/range {v1 .. v8}, Lpf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
+    invoke-static/range {v1 .. v8}, Lrf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
 
     .line 20
     .line 21

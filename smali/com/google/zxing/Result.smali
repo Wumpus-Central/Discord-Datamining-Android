@@ -10,15 +10,15 @@
 
 .field private final c:I
 
-.field private d:[Lcd/o;
+.field private d:[Ldd/o;
 
-.field private final e:Lcd/a;
+.field private final e:Ldd/a;
 
 .field private f:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Lcd/n;",
+            "Ldd/n;",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;[BI[Lcd/o;Lcd/a;J)V
+.method public constructor <init>(Ljava/lang/String;[BI[Ldd/o;Ldd/a;J)V
     .locals 0
 
     .line 3
@@ -45,10 +45,10 @@
     iput p3, p0, Lcom/google/zxing/Result;->c:I
 
     .line 7
-    iput-object p4, p0, Lcom/google/zxing/Result;->d:[Lcd/o;
+    iput-object p4, p0, Lcom/google/zxing/Result;->d:[Ldd/o;
 
     .line 8
-    iput-object p5, p0, Lcom/google/zxing/Result;->e:Lcd/a;
+    iput-object p5, p0, Lcom/google/zxing/Result;->e:Ldd/a;
 
     const/4 p1, 0x0
 
@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;[B[Lcd/o;Lcd/a;)V
+.method public constructor <init>(Ljava/lang/String;[B[Ldd/o;Ldd/a;)V
     .locals 7
 
     .line 1
@@ -79,12 +79,12 @@
 
     move-object v4, p4
 
-    invoke-direct/range {v0 .. v6}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[B[Lcd/o;Lcd/a;J)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[B[Ldd/o;Ldd/a;J)V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;[B[Lcd/o;Lcd/a;J)V
+.method public constructor <init>(Ljava/lang/String;[B[Ldd/o;Ldd/a;J)V
     .locals 9
 
     if-nez p2, :cond_0
@@ -114,18 +114,18 @@
 
     move-wide v7, p5
 
-    invoke-direct/range {v1 .. v8}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[BI[Lcd/o;Lcd/a;J)V
+    invoke-direct/range {v1 .. v8}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[BI[Ldd/o;Ldd/a;J)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a([Lcd/o;)V
+.method public a([Ldd/o;)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/zxing/Result;->d:[Lcd/o;
+    iget-object v0, p0, Lcom/google/zxing/Result;->d:[Ldd/o;
 
     .line 2
     .line 3
@@ -133,7 +133,7 @@
 
     .line 4
     .line 5
-    iput-object p1, p0, Lcom/google/zxing/Result;->d:[Lcd/o;
+    iput-object p1, p0, Lcom/google/zxing/Result;->d:[Ldd/o;
 
     .line 6
     .line 7
@@ -161,7 +161,7 @@
     add-int/2addr v1, v2
 
     .line 16
-    new-array v1, v1, [Lcd/o;
+    new-array v1, v1, [Ldd/o;
 
     .line 17
     .line 18
@@ -187,7 +187,7 @@
     .line 26
     .line 27
     .line 28
-    iput-object v1, p0, Lcom/google/zxing/Result;->d:[Lcd/o;
+    iput-object v1, p0, Lcom/google/zxing/Result;->d:[Ldd/o;
 
     .line 29
     .line 30
@@ -242,10 +242,10 @@
     .line 77
 .end method
 
-.method public b()Lcd/a;
+.method public b()Ldd/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/zxing/Result;->e:Lcd/a;
+    iget-object v0, p0, Lcom/google/zxing/Result;->e:Ldd/a;
 
     return-object v0
 .end method
@@ -264,7 +264,7 @@
         value = {
             "()",
             "Ljava/util/Map<",
-            "Lcd/n;",
+            "Ldd/n;",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -275,10 +275,10 @@
     return-object v0
 .end method
 
-.method public e()[Lcd/o;
+.method public e()[Ldd/o;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/zxing/Result;->d:[Lcd/o;
+    iget-object v0, p0, Lcom/google/zxing/Result;->d:[Ldd/o;
 
     return-object v0
 .end method
@@ -297,7 +297,7 @@
         value = {
             "(",
             "Ljava/util/Map<",
-            "Lcd/n;",
+            "Ldd/n;",
             "Ljava/lang/Object;",
             ">;)V"
         }
@@ -397,7 +397,7 @@
     .line 77
 .end method
 
-.method public h(Lcd/n;Ljava/lang/Object;)V
+.method public h(Ldd/n;Ljava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -413,7 +413,7 @@
 
     .line 6
     .line 7
-    const-class v1, Lcd/n;
+    const-class v1, Ldd/n;
 
     .line 8
     .line 9

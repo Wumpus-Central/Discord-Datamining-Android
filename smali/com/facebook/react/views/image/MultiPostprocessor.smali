@@ -633,11 +633,11 @@
 
     .line 32
     :cond_0
-    new-instance v1, Lp3/e;
+    new-instance v1, Lq3/e;
 
     .line 33
     .line 34
-    invoke-direct {v1, v0}, Lp3/e;-><init>(Ljava/util/List;)V
+    invoke-direct {v1, v0}, Lq3/e;-><init>(Ljava/util/List;)V
 
     .line 35
     .line 36

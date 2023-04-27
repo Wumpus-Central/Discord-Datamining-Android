@@ -118,7 +118,7 @@
 
     sget-object v0, Lkotlin/jvm/internal/c;->a:Lkotlin/jvm/internal/c;
 
-    invoke-static {v0}, Lxi/a;->w(Lkotlin/jvm/internal/c;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v0}, Lzi/a;->w(Lkotlin/jvm/internal/c;)Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

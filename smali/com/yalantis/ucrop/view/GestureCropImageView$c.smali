@@ -1,5 +1,5 @@
 .class Lcom/yalantis/ucrop/view/GestureCropImageView$c;
-.super Lif/h$b;
+.super Lkf/h$b;
 .source "SourceFile"
 
 
@@ -25,7 +25,7 @@
     .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$c;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
-    invoke-direct {p0}, Lif/h$b;-><init>()V
+    invoke-direct {p0}, Lkf/h$b;-><init>()V
 
     return-void
 .end method
@@ -41,12 +41,12 @@
 
 
 # virtual methods
-.method public a(Lif/h;)Z
+.method public a(Lkf/h;)Z
     .locals 3
 
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$c;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
-    invoke-virtual {p1}, Lif/h;->c()F
+    invoke-virtual {p1}, Lkf/h;->c()F
 
     move-result p1
 

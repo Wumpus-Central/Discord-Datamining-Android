@@ -20,7 +20,7 @@
         "Lorg/json/JSONArray;",
         "array",
         "",
-        "Lha/q;",
+        "Lia/q;",
         "parseCredentialDescriptors",
         "",
         "",
@@ -332,17 +332,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public static synthetic a(Lcom/discord/security_key/WebAuthn;Ljava/lang/Exception;)V
@@ -554,17 +543,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private static final authenticate$lambda$5(Lcom/discord/security_key/WebAuthn;Ljava/lang/Exception;)V
@@ -776,17 +754,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public static synthetic b(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)V
@@ -837,7 +804,7 @@
             "Lorg/json/JSONArray;",
             ")",
             "Ljava/util/List<",
-            "Lha/q;",
+            "Lia/q;",
             ">;"
         }
     .end annotation
@@ -863,7 +830,7 @@
     const/4 v2, 0x0
 
     .line 11
-    invoke-static {v2, v1}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v2, v1}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 12
     .line 13
@@ -895,11 +862,11 @@
     move-object v2, v1
 
     .line 26
-    check-cast v2, Lmf/p;
+    check-cast v2, Lof/p;
 
     .line 27
     .line 28
-    invoke-virtual {v2}, Lmf/p;->nextInt()I
+    invoke-virtual {v2}, Lof/p;->nextInt()I
 
     .line 29
     .line 30
@@ -915,15 +882,15 @@
     move-result-object v2
 
     .line 36
-    new-instance v3, Lha/q;
+    new-instance v3, Lia/q;
 
     .line 37
     .line 38
-    sget-object v4, Lha/u;->l:Lha/u;
+    sget-object v4, Lia/u;->l:Lia/u;
 
     .line 39
     .line 40
-    invoke-virtual {v4}, Lha/u;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Lia/u;->toString()Ljava/lang/String;
 
     .line 41
     .line 42
@@ -963,7 +930,7 @@
     const/4 v5, 0x0
 
     .line 60
-    invoke-direct {v3, v4, v2, v5}, Lha/q;-><init>(Ljava/lang/String;[BLjava/util/List;)V
+    invoke-direct {v3, v4, v2, v5}, Lia/q;-><init>(Ljava/lang/String;[BLjava/util/List;)V
 
     .line 61
     .line 62
@@ -1272,17 +1239,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private static final register$lambda$3(Lcom/discord/security_key/WebAuthn;Ljava/lang/Exception;)V
@@ -1494,17 +1450,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private final toBase64([B)Ljava/lang/String;
@@ -1538,11 +1483,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lha/s$a;
+    new-instance v1, Lia/s$a;
 
     .line 7
     .line 8
-    invoke-direct {v1}, Lha/s$a;-><init>()V
+    invoke-direct {v1}, Lia/s$a;-><init>()V
 
     .line 9
     .line 10
@@ -1602,7 +1547,7 @@
     move-result-object v0
 
     .line 40
-    invoke-virtual {v1, v0}, Lha/s$a;->c([B)Lha/s$a;
+    invoke-virtual {v1, v0}, Lia/s$a;->c([B)Lia/s$a;
 
     .line 41
     .line 42
@@ -1636,7 +1581,7 @@
     move-result-object v0
 
     .line 58
-    invoke-virtual {v1, v0}, Lha/s$a;->b(Ljava/util/List;)Lha/s$a;
+    invoke-virtual {v1, v0}, Lia/s$a;->b(Ljava/util/List;)Lia/s$a;
 
     .line 59
     .line 60
@@ -1653,7 +1598,7 @@
     move-result-object v0
 
     .line 67
-    invoke-virtual {v1, v0}, Lha/s$a;->d(Ljava/lang/String;)Lha/s$a;
+    invoke-virtual {v1, v0}, Lia/s$a;->d(Ljava/lang/String;)Lia/s$a;
 
     .line 68
     .line 69
@@ -1688,12 +1633,12 @@
     move-result-object p1
 
     .line 84
-    invoke-virtual {v1, p1}, Lha/s$a;->e(Ljava/lang/Double;)Lha/s$a;
+    invoke-virtual {v1, p1}, Lia/s$a;->e(Ljava/lang/Double;)Lia/s$a;
 
     .line 85
     .line 86
     .line 87
-    invoke-static {p2}, Lfa/a;->a(Landroid/app/Activity;)Lga/a;
+    invoke-static {p2}, Lga/a;->a(Landroid/app/Activity;)Lha/a;
 
     .line 88
     .line 89
@@ -1701,7 +1646,7 @@
     move-result-object p1
 
     .line 91
-    invoke-virtual {v1}, Lha/s$a;->a()Lha/s;
+    invoke-virtual {v1}, Lia/s$a;->a()Lia/s;
 
     .line 92
     .line 93
@@ -1709,7 +1654,7 @@
     move-result-object v0
 
     .line 95
-    invoke-virtual {p1, v0}, Lga/a;->D(Lha/s;)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p1, v0}, Lha/a;->D(Lia/s;)Lcom/google/android/gms/tasks/Task;
 
     .line 96
     .line 97
@@ -1735,7 +1680,7 @@
     .line 107
     .line 108
     .line 109
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->f(Lcb/f;)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->f(Ldb/f;)Lcom/google/android/gms/tasks/Task;
 
     .line 110
     .line 111
@@ -1749,7 +1694,7 @@
     .line 115
     .line 116
     .line 117
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->d(Lcb/e;)Lcom/google/android/gms/tasks/Task;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->d(Ldb/e;)Lcom/google/android/gms/tasks/Task;
 
     .line 118
     .line 119
@@ -1826,17 +1771,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final getReject()Lkotlin/jvm/functions/Function1;
@@ -1966,7 +1900,7 @@
 
     .line 41
     :cond_3
-    invoke-static {p2}, Lha/o;->x([B)Lha/o;
+    invoke-static {p2}, Lia/o;->p([B)Lia/o;
 
     .line 42
     .line 43
@@ -1974,7 +1908,7 @@
     move-result-object p2
 
     .line 45
-    invoke-virtual {p2}, Lha/o;->E()Lha/i;
+    invoke-virtual {p2}, Lia/o;->u()Lia/i;
 
     .line 46
     .line 47
@@ -1982,7 +1916,7 @@
     move-result-object p3
 
     .line 49
-    instance-of p3, p3, Lha/h;
+    instance-of p3, p3, Lia/h;
 
     .line 50
     .line 51
@@ -1994,7 +1928,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p2}, Lha/o;->E()Lha/i;
+    invoke-virtual {p2}, Lia/o;->u()Lia/i;
 
     .line 56
     .line 57
@@ -2011,11 +1945,11 @@
     .line 62
     .line 63
     .line 64
-    check-cast p2, Lha/h;
+    check-cast p2, Lia/h;
 
     .line 65
     .line 66
-    invoke-virtual {p2}, Lha/h;->D()Ljava/lang/String;
+    invoke-virtual {p2}, Lia/h;->t()Ljava/lang/String;
 
     .line 67
     .line 68
@@ -2082,7 +2016,7 @@
     .line 98
     .line 99
     :cond_5
-    invoke-virtual {p2}, Lha/o;->D()[B
+    invoke-virtual {p2}, Lia/o;->t()[B
 
     .line 100
     .line 101
@@ -2103,7 +2037,7 @@
     move-result-object p1
 
     .line 110
-    invoke-virtual {p2}, Lha/o;->E()Lha/i;
+    invoke-virtual {p2}, Lia/o;->u()Lia/i;
 
     .line 111
     .line 112
@@ -2120,7 +2054,7 @@
     .line 117
     .line 118
     .line 119
-    check-cast p2, Lha/f;
+    check-cast p2, Lia/f;
 
     .line 120
     .line 121
@@ -2143,11 +2077,11 @@
     .line 130
     .line 131
     .line 132
-    sget-object p1, Lha/u;->l:Lha/u;
+    sget-object p1, Lia/u;->l:Lia/u;
 
     .line 133
     .line 134
-    invoke-virtual {p1}, Lha/u;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lia/u;->toString()Ljava/lang/String;
 
     .line 135
     .line 136
@@ -2169,7 +2103,7 @@
     .line 144
     .line 145
     .line 146
-    invoke-virtual {p2}, Lha/f;->x()[B
+    invoke-virtual {p2}, Lia/f;->p()[B
 
     .line 147
     .line 148
@@ -2195,7 +2129,7 @@
     .line 158
     .line 159
     .line 160
-    invoke-virtual {p2}, Lha/f;->y()[B
+    invoke-virtual {p2}, Lia/f;->r()[B
 
     .line 161
     .line 162
@@ -2229,7 +2163,7 @@
     .line 176
     .line 177
     .line 178
-    invoke-virtual {p2}, Lha/f;->E()[B
+    invoke-virtual {p2}, Lia/f;->u()[B
 
     .line 179
     .line 180
@@ -2263,7 +2197,7 @@
     .line 194
     .line 195
     .line 196
-    invoke-virtual {p2}, Lha/f;->J()[B
+    invoke-virtual {p2}, Lia/f;->z()[B
 
     .line 197
     .line 198
@@ -2324,7 +2258,7 @@
 
     .line 227
     :cond_7
-    invoke-virtual {p2}, Lha/o;->D()[B
+    invoke-virtual {p2}, Lia/o;->t()[B
 
     .line 228
     .line 229
@@ -2345,7 +2279,7 @@
     move-result-object p1
 
     .line 238
-    invoke-virtual {p2}, Lha/o;->E()Lha/i;
+    invoke-virtual {p2}, Lia/o;->u()Lia/i;
 
     .line 239
     .line 240
@@ -2362,7 +2296,7 @@
     .line 245
     .line 246
     .line 247
-    check-cast p2, Lha/g;
+    check-cast p2, Lia/g;
 
     .line 248
     .line 249
@@ -2385,11 +2319,11 @@
     .line 258
     .line 259
     .line 260
-    sget-object p1, Lha/u;->l:Lha/u;
+    sget-object p1, Lia/u;->l:Lia/u;
 
     .line 261
     .line 262
-    invoke-virtual {p1}, Lha/u;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lia/u;->toString()Ljava/lang/String;
 
     .line 263
     .line 264
@@ -2411,7 +2345,7 @@
     .line 272
     .line 273
     .line 274
-    invoke-virtual {p2}, Lha/g;->x()[B
+    invoke-virtual {p2}, Lia/g;->p()[B
 
     .line 275
     .line 276
@@ -2437,7 +2371,7 @@
     .line 286
     .line 287
     .line 288
-    invoke-virtual {p2}, Lha/g;->y()[B
+    invoke-virtual {p2}, Lia/g;->r()[B
 
     .line 289
     .line 290
@@ -2543,298 +2477,540 @@
 .method public final register(Ljava/lang/String;Landroid/app/Activity;)V
     .locals 11
 
+    .line 1
     const-string v0, "challenge"
 
+    .line 2
+    .line 3
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    new-instance v1, Lha/p$a;
-
-    invoke-direct {v1}, Lha/p$a;-><init>()V
-
-    .line 2
-    new-instance v2, Lorg/json/JSONObject;
-
-    new-instance v3, Lorg/json/JSONTokener;
-
-    invoke-direct {v3, p1}, Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V
-
-    invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Lorg/json/JSONTokener;)V
-
-    .line 3
-    new-instance p1, Lha/v;
-
-    const-string v3, "user"
-
     .line 4
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v4
-
-    const-string v5, "id"
-
-    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v6, "obj.getJSONObject(\"user\").getString(\"id\")"
-
-    invoke-static {v4, v6}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0, v4}, Lcom/discord/security_key/WebAuthn;->decodeBase64(Ljava/lang/String;)[B
-
-    move-result-object v4
-
     .line 5
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    const-string v7, "name"
-
-    invoke-virtual {v6, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
     .line 6
-    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v3
-
-    const-string v8, "displayName"
-
-    invoke-virtual {v3, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
+    new-instance v1, Lia/p$a;
 
     .line 7
-    invoke-direct {p1, v4, v6, v8, v3}, Lha/v;-><init>([BLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 8
-    invoke-virtual {v1, p1}, Lha/p$a;->h(Lha/v;)Lha/p$a;
+    invoke-direct {v1}, Lia/p$a;-><init>()V
 
     .line 9
-    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "obj.getString(\"challenge\")"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0, p1}, Lcom/discord/security_key/WebAuthn;->decodeBase64(Ljava/lang/String;)[B
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1}, Lha/p$a;->c([B)Lha/p$a;
-
     .line 10
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    const-string v0, "pubKeyCredParams"
-
     .line 11
-    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v0
+    new-instance v2, Lorg/json/JSONObject;
 
     .line 12
+    .line 13
+    new-instance v3, Lorg/json/JSONTokener;
+
+    .line 14
+    .line 15
+    invoke-direct {v3, p1}, Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Lorg/json/JSONTokener;)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance p1, Lia/v;
+
+    .line 22
+    .line 23
+    const-string v3, "user"
+
+    .line 24
+    .line 25
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v4
+
+    .line 29
+    const-string v5, "id"
+
+    .line 30
+    .line 31
+    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v4
+
+    .line 35
+    const-string v6, "obj.getJSONObject(\"user\").getString(\"id\")"
+
+    .line 36
+    .line 37
+    invoke-static {v4, v6}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-direct {p0, v4}, Lcom/discord/security_key/WebAuthn;->decodeBase64(Ljava/lang/String;)[B
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v4
+
+    .line 44
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v6
+
+    .line 48
+    const-string v7, "name"
+
+    .line 49
+    .line 50
+    invoke-virtual {v6, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v6
+
+    .line 54
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v3
+
+    .line 58
+    const-string v8, "displayName"
+
+    .line 59
+    .line 60
+    invoke-virtual {v3, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v3
+
+    .line 64
+    const/4 v8, 0x0
+
+    .line 65
+    invoke-direct {p1, v4, v6, v8, v3}, Lia/v;-><init>([BLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v1, p1}, Lia/p$a;->h(Lia/v;)Lia/p$a;
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    const-string v0, "obj.getString(\"challenge\")"
+
+    .line 76
+    .line 77
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-direct {p0, p1}, Lcom/discord/security_key/WebAuthn;->decodeBase64(Ljava/lang/String;)[B
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    invoke-virtual {v1, p1}, Lia/p$a;->c([B)Lia/p$a;
+
+    .line 85
+    .line 86
+    .line 87
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 88
+    .line 89
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 90
+    .line 91
+    .line 92
+    const-string v0, "pubKeyCredParams"
+
+    .line 93
+    .line 94
+    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v0
+
+    .line 98
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
+    .line 99
+    .line 100
+    .line 101
     move-result v3
 
+    .line 102
     const/4 v4, 0x0
 
-    invoke-static {v4, v3}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    .line 103
+    invoke-static {v4, v3}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
+    .line 104
+    .line 105
+    .line 106
     move-result-object v3
 
-    .line 13
+    .line 107
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
+    .line 108
+    .line 109
+    .line 110
     move-result-object v3
 
+    .line 111
     :goto_0
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 112
+    .line 113
+    .line 114
     move-result v4
 
+    .line 115
     if-eqz v4, :cond_0
 
+    .line 116
+    .line 117
     move-object v4, v3
 
-    check-cast v4, Lmf/p;
+    .line 118
+    check-cast v4, Lof/p;
 
-    invoke-virtual {v4}, Lmf/p;->nextInt()I
+    .line 119
+    .line 120
+    invoke-virtual {v4}, Lof/p;->nextInt()I
 
+    .line 121
+    .line 122
+    .line 123
     move-result v4
 
-    .line 14
+    .line 124
     invoke-virtual {v0, v4}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
+    .line 125
+    .line 126
+    .line 127
     move-result-object v4
 
-    .line 15
-    new-instance v6, Lha/r;
+    .line 128
+    new-instance v6, Lia/r;
 
+    .line 129
+    .line 130
     const-string v9, "type"
 
-    .line 16
+    .line 131
+    .line 132
     invoke-virtual {v4, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 133
+    .line 134
+    .line 135
     move-result-object v9
 
+    .line 136
     const-string v10, "alg"
 
-    .line 17
+    .line 137
+    .line 138
     invoke-virtual {v4, v10}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
+    .line 139
+    .line 140
+    .line 141
     move-result v4
 
-    .line 18
-    invoke-direct {v6, v9, v4}, Lha/r;-><init>(Ljava/lang/String;I)V
+    .line 142
+    invoke-direct {v6, v9, v4}, Lia/r;-><init>(Ljava/lang/String;I)V
 
-    .line 19
+    .line 143
+    .line 144
+    .line 145
     invoke-interface {p1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 146
+    .line 147
+    .line 148
     goto :goto_0
 
-    .line 20
+    .line 149
     :cond_0
-    invoke-virtual {v1, p1}, Lha/p$a;->e(Ljava/util/List;)Lha/p$a;
+    invoke-virtual {v1, p1}, Lia/p$a;->e(Ljava/util/List;)Lia/p$a;
 
+    .line 150
+    .line 151
+    .line 152
     const-string p1, "timeout"
 
-    .line 21
+    .line 153
+    .line 154
     invoke-virtual {v2, p1}, Lorg/json/JSONObject;->getDouble(Ljava/lang/String;)D
 
+    .line 155
+    .line 156
+    .line 157
     move-result-wide v3
 
+    .line 158
     const/16 p1, 0x3e8
 
+    .line 159
+    .line 160
     int-to-double v9, p1
 
+    .line 161
     div-double/2addr v3, v9
 
+    .line 162
     invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 163
+    .line 164
+    .line 165
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Lha/p$a;->g(Ljava/lang/Double;)Lha/p$a;
+    .line 166
+    invoke-virtual {v1, p1}, Lia/p$a;->g(Ljava/lang/Double;)Lia/p$a;
 
+    .line 167
+    .line 168
+    .line 169
     const-string p1, "excludeCredentials"
 
-    .line 22
+    .line 170
+    .line 171
     invoke-virtual {v2, p1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
+    .line 172
+    .line 173
+    .line 174
     move-result-object p1
 
+    .line 175
     const-string v0, "obj.getJSONArray(\"excludeCredentials\")"
 
+    .line 176
+    .line 177
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 178
+    .line 179
+    .line 180
     invoke-direct {p0, p1}, Lcom/discord/security_key/WebAuthn;->parseCredentialDescriptors(Lorg/json/JSONArray;)Ljava/util/List;
 
+    .line 181
+    .line 182
+    .line 183
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Lha/p$a;->d(Ljava/util/List;)Lha/p$a;
+    .line 184
+    invoke-virtual {v1, p1}, Lia/p$a;->d(Ljava/util/List;)Lia/p$a;
 
-    .line 23
-    new-instance p1, Lha/j$a;
+    .line 185
+    .line 186
+    .line 187
+    new-instance p1, Lia/j$a;
 
-    invoke-direct {p1}, Lha/j$a;-><init>()V
+    .line 188
+    .line 189
+    invoke-direct {p1}, Lia/j$a;-><init>()V
 
+    .line 190
+    .line 191
+    .line 192
     const-string v0, "authenticatorSection"
 
-    .line 24
+    .line 193
+    .line 194
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
+    .line 195
+    .line 196
+    .line 197
     move-result-object v0
 
+    .line 198
     const-string v3, "authenticatorAttachment"
 
-    .line 25
+    .line 199
+    .line 200
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 201
+    .line 202
+    .line 203
     move-result-object v0
 
-    invoke-static {v0}, Lha/b;->b(Ljava/lang/String;)Lha/b;
+    .line 204
+    invoke-static {v0}, Lia/b;->a(Ljava/lang/String;)Lia/b;
 
+    .line 205
+    .line 206
+    .line 207
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lha/j$a;->b(Lha/b;)Lha/j$a;
+    .line 208
+    invoke-virtual {p1, v0}, Lia/j$a;->b(Lia/b;)Lia/j$a;
 
-    .line 26
-    invoke-virtual {p1}, Lha/j$a;->a()Lha/j;
+    .line 209
+    .line 210
+    .line 211
+    invoke-virtual {p1}, Lia/j$a;->a()Lia/j;
 
+    .line 212
+    .line 213
+    .line 214
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Lha/p$a;->b(Lha/j;)Lha/p$a;
+    .line 215
+    invoke-virtual {v1, p1}, Lia/p$a;->b(Lia/j;)Lia/p$a;
 
-    .line 27
-    new-instance p1, Lha/t;
+    .line 216
+    .line 217
+    .line 218
+    new-instance p1, Lia/t;
 
+    .line 219
+    .line 220
     const-string v0, "rp"
 
-    .line 28
+    .line 221
+    .line 222
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
+    .line 223
+    .line 224
+    .line 225
     move-result-object v3
 
+    .line 226
     invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 227
+    .line 228
+    .line 229
     move-result-object v3
 
-    .line 29
+    .line 230
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
+    .line 231
+    .line 232
+    .line 233
     move-result-object v0
 
+    .line 234
     invoke-virtual {v0, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 235
+    .line 236
+    .line 237
     move-result-object v0
 
-    .line 30
-    invoke-direct {p1, v3, v0, v8}, Lha/t;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .line 238
+    invoke-direct {p1, v3, v0, v8}, Lia/t;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
-    invoke-virtual {v1, p1}, Lha/p$a;->f(Lha/t;)Lha/p$a;
+    .line 239
+    .line 240
+    .line 241
+    invoke-virtual {v1, p1}, Lia/p$a;->f(Lia/t;)Lia/p$a;
 
-    .line 32
-    invoke-static {p2}, Lfa/a;->a(Landroid/app/Activity;)Lga/a;
+    .line 242
+    .line 243
+    .line 244
+    invoke-static {p2}, Lga/a;->a(Landroid/app/Activity;)Lha/a;
 
+    .line 245
+    .line 246
+    .line 247
     move-result-object p1
 
-    .line 33
-    invoke-virtual {v1}, Lha/p$a;->a()Lha/p;
+    .line 248
+    invoke-virtual {v1}, Lia/p$a;->a()Lia/p;
 
+    .line 249
+    .line 250
+    .line 251
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lga/a;->C(Lha/p;)Lcom/google/android/gms/tasks/Task;
+    .line 252
+    invoke-virtual {p1, v0}, Lha/a;->C(Lia/p;)Lcom/google/android/gms/tasks/Task;
 
+    .line 253
+    .line 254
+    .line 255
     move-result-object p1
 
-    .line 34
+    .line 256
     new-instance v0, Lcom/discord/security_key/WebAuthn$register$2;
 
+    .line 257
+    .line 258
     invoke-direct {v0, p2}, Lcom/discord/security_key/WebAuthn$register$2;-><init>(Landroid/app/Activity;)V
 
+    .line 259
+    .line 260
+    .line 261
     new-instance p2, Lcom/discord/security_key/a;
 
+    .line 262
+    .line 263
     invoke-direct {p2, v0}, Lcom/discord/security_key/a;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->f(Lcb/f;)Lcom/google/android/gms/tasks/Task;
+    .line 264
+    .line 265
+    .line 266
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->f(Ldb/f;)Lcom/google/android/gms/tasks/Task;
 
-    .line 35
+    .line 267
+    .line 268
+    .line 269
     new-instance p2, Lcom/discord/security_key/b;
 
+    .line 270
+    .line 271
     invoke-direct {p2, p0}, Lcom/discord/security_key/b;-><init>(Lcom/discord/security_key/WebAuthn;)V
 
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->d(Lcb/e;)Lcom/google/android/gms/tasks/Task;
+    .line 272
+    .line 273
+    .line 274
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/tasks/Task;->d(Ldb/e;)Lcom/google/android/gms/tasks/Task;
 
+    .line 275
+    .line 276
+    .line 277
     return-void
 .end method

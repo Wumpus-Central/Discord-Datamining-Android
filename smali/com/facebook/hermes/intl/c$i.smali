@@ -202,7 +202,7 @@
 
     .line 14
     .line 15
-    invoke-static {}, Lg5/e;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
+    invoke-static {}, Lh5/e;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
 
     .line 16
     .line 17
@@ -214,7 +214,7 @@
 
     .line 20
     :cond_0
-    invoke-static {}, Lg5/c;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
+    invoke-static {}, Lh5/c;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
 
     .line 21
     .line 22
@@ -226,7 +226,7 @@
 
     .line 25
     :cond_1
-    invoke-static {}, Lg5/d;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
+    invoke-static {}, Lh5/d;->a()Landroid/icu/text/MeasureFormat$FormatWidth;
 
     .line 26
     .line 27

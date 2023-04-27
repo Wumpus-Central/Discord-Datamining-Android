@@ -117,7 +117,7 @@
 
     .line 6
     :goto_0
-    invoke-static {v12}, Lf9/a;->a(Z)V
+    invoke-static {v12}, Lg9/a;->a(Z)V
 
     cmp-long v12, v4, v10
 
@@ -132,7 +132,7 @@
 
     .line 7
     :goto_1
-    invoke-static {v12}, Lf9/a;->a(Z)V
+    invoke-static {v12}, Lg9/a;->a(Z)V
 
     cmp-long v10, v6, v10
 
@@ -152,7 +152,7 @@
     .line 8
     :cond_3
     :goto_2
-    invoke-static {v13}, Lf9/a;->a(Z)V
+    invoke-static {v13}, Lg9/a;->a(Z)V
 
     move-object/from16 v10, p1
 

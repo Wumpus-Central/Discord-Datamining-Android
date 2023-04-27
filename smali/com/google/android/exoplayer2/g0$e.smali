@@ -341,7 +341,7 @@
 
     .line 15
     :goto_0
-    invoke-static {v1}, Lf9/a;->a(Z)V
+    invoke-static {v1}, Lg9/a;->a(Z)V
 
     .line 16
     .line 17

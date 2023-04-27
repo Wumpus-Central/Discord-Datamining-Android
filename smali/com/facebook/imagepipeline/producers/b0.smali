@@ -11,7 +11,7 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/c0;",
         "Lcom/facebook/imagepipeline/producers/z0<",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -131,11 +131,11 @@
     .line 44
 .end method
 
-.method public constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;Landroid/content/ContentResolver;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;Landroid/content/ContentResolver;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Lz3/h;)V
 
     .line 2
     .line 3
@@ -317,7 +317,7 @@
     .line 176
 .end method
 
-.method private g(Landroid/net/Uri;Lcom/facebook/imagepipeline/common/ResizeOptions;)Lu5/e;
+.method private g(Landroid/net/Uri;Lcom/facebook/imagepipeline/common/ResizeOptions;)Lv5/e;
     .locals 7
 
     .line 1
@@ -401,7 +401,7 @@
     move-result-wide v1
 
     .line 36
-    invoke-direct {p0, p2, v1, v2}, Lcom/facebook/imagepipeline/producers/b0;->j(Lcom/facebook/imagepipeline/common/ResizeOptions;J)Lu5/e;
+    invoke-direct {p0, p2, v1, v2}, Lcom/facebook/imagepipeline/producers/b0;->j(Lcom/facebook/imagepipeline/common/ResizeOptions;J)Lv5/e;
 
     .line 37
     .line 38
@@ -441,7 +441,7 @@
     move-result v0
 
     .line 56
-    invoke-virtual {p2, v0}, Lu5/e;->L0(I)V
+    invoke-virtual {p2, v0}, Lv5/e;->L0(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -592,7 +592,7 @@
 
     .line 29
     .line 30
-    invoke-static {v3, v2, p0, v1}, Lw3/a;->i(Ljava/lang/Class;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, v2, p0, v1}, Lx3/a;->i(Ljava/lang/Class;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 31
     .line 32
@@ -614,7 +614,7 @@
     .line 46
 .end method
 
-.method private j(Lcom/facebook/imagepipeline/common/ResizeOptions;J)Lu5/e;
+.method private j(Lcom/facebook/imagepipeline/common/ResizeOptions;J)Lv5/e;
     .locals 3
 
     .line 1
@@ -694,7 +694,7 @@
     move-result-object p2
 
     .line 36
-    invoke-static {p2}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 37
     .line 38
@@ -744,7 +744,7 @@
     move-result p2
 
     .line 62
-    invoke-virtual {p0, p3, p2}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, p3, p2}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 63
     .line 64
@@ -962,7 +962,7 @@
     .line 46
 .end method
 
-.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lu5/e;
+.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lv5/e;
     .locals 2
 
     .line 1
@@ -974,7 +974,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Ld4/f;->h(Landroid/net/Uri;)Z
+    invoke-static {v0}, Le4/f;->h(Landroid/net/Uri;)Z
 
     .line 6
     .line 7
@@ -994,7 +994,7 @@
     move-result-object p1
 
     .line 15
-    invoke-direct {p0, v0, p1}, Lcom/facebook/imagepipeline/producers/b0;->g(Landroid/net/Uri;Lcom/facebook/imagepipeline/common/ResizeOptions;)Lu5/e;
+    invoke-direct {p0, v0, p1}, Lcom/facebook/imagepipeline/producers/b0;->g(Landroid/net/Uri;Lcom/facebook/imagepipeline/common/ResizeOptions;)Lv5/e;
 
     .line 16
     .line 17

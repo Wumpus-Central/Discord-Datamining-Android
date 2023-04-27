@@ -27,7 +27,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/n;)V
+.method synthetic constructor <init>(Lv2/n;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$c$a;-><init>(Lu2/m;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$c$a;-><init>(Lv2/m;)V
 
     return-object v0
 .end method

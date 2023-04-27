@@ -1,5 +1,5 @@
 .class final Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper$b;
-.super Lcf/d;
+.super Lef/d;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcf/d<",
+        "Lef/d<",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper$b;",
         ">;"
     }
@@ -27,7 +27,7 @@
     }
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper$b;",
-        "Lcf/d;",
+        "Lef/d;",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;",
         "Landroid/view/MotionEvent;",
         "event",
@@ -63,7 +63,7 @@
 
     iput-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper$b;->L:Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;
 
-    invoke-direct {p0}, Lcf/d;-><init>()V
+    invoke-direct {p0}, Lef/d;-><init>()V
 
     return-void
 .end method
@@ -300,7 +300,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcf/d;->O()I
+    invoke-virtual {p0}, Lef/d;->O()I
 
     .line 12
     .line 13
@@ -312,7 +312,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p0}, Lcf/d;->o()V
+    invoke-virtual {p0}, Lef/d;->o()V
 
     .line 18
     .line 19
@@ -345,7 +345,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p0}, Lcf/d;->A()V
+    invoke-virtual {p0}, Lef/d;->A()V
 
     .line 34
     .line 35

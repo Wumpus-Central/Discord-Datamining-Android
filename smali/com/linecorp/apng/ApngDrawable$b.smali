@@ -166,7 +166,7 @@
     const/4 p2, 0x0
 
     .line 33
-    invoke-static {v0, p2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 34
     .line 35
@@ -188,7 +188,7 @@
     move-exception p2
 
     .line 40
-    invoke-static {v0, p1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 41
     .line 42

@@ -21,33 +21,33 @@
 
 .field private C:Z
 
-.field private D:Lr5/a;
+.field private D:Ls5/a;
 
-.field private E:Lo5/s;
+.field private E:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private F:Lo5/s;
+.field private F:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private G:Lt3/f;
+.field private G:Lu3/f;
 
-.field private H:Lo5/a;
+.field private H:Lp5/a;
 
 .field private a:Landroid/graphics/Bitmap$Config;
 
@@ -61,19 +61,19 @@
     .end annotation
 .end field
 
-.field private c:Lo5/i$b;
+.field private c:Lp5/i$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/i$b<",
+            "Lp5/i$b<",
             "Lcom/facebook/cache/common/CacheKey;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private d:Lo5/s$a;
+.field private d:Lp5/s$a;
 
-.field private e:Lo5/f;
+.field private e:Lp5/f;
 
 .field private final f:Landroid/content/Context;
 
@@ -89,13 +89,13 @@
     .end annotation
 .end field
 
-.field private i:Lq5/e;
+.field private i:Lr5/e;
 
-.field private j:Lo5/o;
+.field private j:Lp5/o;
 
-.field private k:Ls5/c;
+.field private k:Lt5/c;
 
-.field private l:La6/d;
+.field private l:Lb6/d;
 
 .field private m:Ljava/lang/Integer;
 
@@ -111,7 +111,7 @@
 
 .field private o:Lcom/facebook/cache/disk/DiskCacheConfig;
 
-.field private p:Ly3/c;
+.field private p:Lz3/c;
 
 .field private q:Ljava/lang/Integer;
 
@@ -119,9 +119,9 @@
 
 .field private s:Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;
 
-.field private t:Lx5/y;
+.field private t:Ly5/y;
 
-.field private u:Ls5/e;
+.field private u:Lt5/e;
 
 .field private v:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -137,7 +137,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lw5/d;",
+            "Lx5/d;",
             ">;"
         }
     .end annotation
@@ -147,7 +147,7 @@
 
 .field private y:Lcom/facebook/cache/disk/DiskCacheConfig;
 
-.field private z:Lq5/f;
+.field private z:Lr5/f;
 
 
 # direct methods
@@ -191,14 +191,14 @@
     iput-boolean v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->C:Z
 
     .line 10
-    new-instance v0, Lr5/b;
+    new-instance v0, Ls5/b;
 
-    invoke-direct {v0}, Lr5/b;-><init>()V
+    invoke-direct {v0}, Ls5/b;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->D:Lr5/a;
+    iput-object v0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->D:Ls5/a;
 
     .line 11
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -218,26 +218,26 @@
     return-void
 .end method
 
-.method static synthetic A(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s;
+.method static synthetic A(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->F:Lo5/s;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->F:Lp5/s;
 
     return-object p0
 .end method
 
-.method static synthetic B(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt3/f;
+.method static synthetic B(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lu3/f;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->G:Lt3/f;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->G:Lu3/f;
 
     return-object p0
 .end method
 
-.method static synthetic C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)La6/d;
+.method static synthetic C(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lb6/d;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->l:La6/d;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->l:Lb6/d;
 
     return-object p0
 .end method
@@ -250,18 +250,18 @@
     return-object p0
 .end method
 
-.method static synthetic E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s$a;
+.method static synthetic E(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s$a;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->d:Lo5/s$a;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->d:Lp5/s$a;
 
     return-object p0
 .end method
 
-.method static synthetic F(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/i$b;
+.method static synthetic F(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/i$b;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c:Lo5/i$b;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->c:Lp5/i$b;
 
     return-object p0
 .end method
@@ -274,18 +274,18 @@
     return-object p0
 .end method
 
-.method static synthetic H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/f;
+.method static synthetic H(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/f;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->e:Lo5/f;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->e:Lp5/f;
 
     return-object p0
 .end method
 
-.method static synthetic I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/f;
+.method static synthetic I(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/f;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z:Lq5/f;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->z:Lr5/f;
 
     return-object p0
 .end method
@@ -314,18 +314,18 @@
     return-object p0
 .end method
 
-.method static synthetic c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/o;
+.method static synthetic c(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/o;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->j:Lo5/o;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->j:Lp5/o;
 
     return-object p0
 .end method
 
-.method static synthetic d(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/c;
+.method static synthetic d(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/c;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->k:Ls5/c;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->k:Lt5/c;
 
     return-object p0
 .end method
@@ -354,10 +354,10 @@
     return-object p0
 .end method
 
-.method static synthetic h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly3/c;
+.method static synthetic h(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lz3/c;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->p:Ly3/c;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->p:Lz3/c;
 
     return-object p0
 .end method
@@ -394,18 +394,18 @@
     return-object p0
 .end method
 
-.method static synthetic m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lx5/y;
+.method static synthetic m(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ly5/y;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t:Lx5/y;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t:Ly5/y;
 
     return-object p0
 .end method
 
-.method static synthetic n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/e;
+.method static synthetic n(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/e;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->u:Ls5/e;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->u:Lt5/e;
 
     return-object p0
 .end method
@@ -442,7 +442,7 @@
     return-object p0
 .end method
 
-.method static synthetic s(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/d;
+.method static synthetic s(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lt5/d;
     .locals 0
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -452,10 +452,10 @@
     return-object p0
 .end method
 
-.method static synthetic t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lq5/e;
+.method static synthetic t(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/e;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->i:Lq5/e;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->i:Lr5/e;
 
     return-object p0
 .end method
@@ -468,7 +468,7 @@
     return p0
 .end method
 
-.method static synthetic v(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr3/a;
+.method static synthetic v(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls3/a;
     .locals 0
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -486,26 +486,26 @@
     return-object p0
 .end method
 
-.method static synthetic x(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lr5/a;
+.method static synthetic x(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Ls5/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->D:Lr5/a;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->D:Ls5/a;
 
     return-object p0
 .end method
 
-.method static synthetic y(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/s;
+.method static synthetic y(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/s;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E:Lo5/s;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->E:Lp5/s;
 
     return-object p0
 .end method
 
-.method static synthetic z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lo5/a;
+.method static synthetic z(Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;)Lp5/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H:Lo5/a;
+    iget-object p0, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->H:Lp5/a;
 
     return-object p0
 .end method
@@ -544,7 +544,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -579,10 +579,10 @@
     return-object p0
 .end method
 
-.method public Q(Lx5/y;)Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;
+.method public Q(Ly5/y;)Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;
     .locals 0
 
-    iput-object p1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t:Lx5/y;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/core/ImagePipelineConfig$Builder;->t:Ly5/y;
 
     return-object p0
 .end method

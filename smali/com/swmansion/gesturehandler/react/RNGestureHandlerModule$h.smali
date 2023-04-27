@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c<",
-        "Lcf/q;",
+        "Lef/q;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$h;",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
-        "Lcf/q;",
+        "Lef/q;",
         "Landroid/content/Context;",
         "context",
         "f",
@@ -67,7 +67,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
-            "Lcf/q;",
+            "Lef/q;",
             ">;"
         }
     .end annotation
@@ -86,7 +86,7 @@
     .line 2
     .line 3
     .line 4
-    const-class v0, Lcf/q;
+    const-class v0, Lef/q;
 
     .line 5
     .line 6
@@ -124,20 +124,20 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+.method public bridge synthetic a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 0
 
-    check-cast p1, Lcf/q;
+    check-cast p1, Lef/q;
 
-    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$h;->g(Lcf/q;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$h;->g(Lef/q;Lcom/facebook/react/bridge/WritableMap;)V
 
     return-void
 .end method
 
-.method public bridge synthetic c(Landroid/content/Context;)Lcf/d;
+.method public bridge synthetic c(Landroid/content/Context;)Lef/d;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$h;->f(Landroid/content/Context;)Lcf/q;
+    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$h;->f(Landroid/content/Context;)Lef/q;
 
     move-result-object p1
 
@@ -158,7 +158,7 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Lcf/q;",
+            "Lef/q;",
             ">;"
         }
     .end annotation
@@ -168,17 +168,17 @@
     return-object v0
 .end method
 
-.method public f(Landroid/content/Context;)Lcf/q;
+.method public f(Landroid/content/Context;)Lef/q;
     .locals 0
 
-    new-instance p1, Lcf/q;
+    new-instance p1, Lef/q;
 
-    invoke-direct {p1}, Lcf/q;-><init>()V
+    invoke-direct {p1}, Lef/q;-><init>()V
 
     return-object p1
 .end method
 
-.method public g(Lcf/q;Lcom/facebook/react/bridge/WritableMap;)V
+.method public g(Lef/q;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 3
 
     .line 1
@@ -200,12 +200,12 @@
     .line 9
     .line 10
     .line 11
-    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p1}, Lcf/q;->R0()D
+    invoke-virtual {p1}, Lef/q;->R0()D
 
     .line 15
     .line 16
@@ -222,7 +222,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p1}, Lcf/q;->P0()F
+    invoke-virtual {p1}, Lef/q;->P0()F
 
     .line 24
     .line 25
@@ -250,7 +250,7 @@
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p1}, Lcf/q;->Q0()F
+    invoke-virtual {p1}, Lef/q;->Q0()F
 
     .line 38
     .line 39
@@ -282,7 +282,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p1}, Lcf/q;->S0()D
+    invoke-virtual {p1}, Lef/q;->S0()D
 
     .line 54
     .line 55

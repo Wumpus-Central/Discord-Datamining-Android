@@ -26,7 +26,7 @@
         "onNewResultImpl",
         "Lcom/facebook/datasource/DataSource;",
         "Lcom/facebook/common/references/CloseableReference;",
-        "Lu5/c;",
+        "Lv5/c;",
         "dataSource",
         "onFailureImpl",
         "fresco_release"
@@ -336,7 +336,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation
@@ -358,7 +358,7 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-static {v0}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -489,7 +489,7 @@
 
     iget-object v0, p0, Lcom/discord/image/fresco/FrescoFetchDecodedImageKt$fetchDecodedImage$6$subscriber$1;->$continuation:Lkotlinx/coroutines/CancellableContinuation;
 
-    sget-object v1, Llf/s;->l:Llf/s$a;
+    sget-object v1, Lnf/s;->l:Lnf/s$a;
 
     iget-boolean v1, p0, Lcom/discord/image/fresco/FrescoFetchDecodedImageKt$fetchDecodedImage$6$subscriber$1;->$copyBitmap:Z
 
@@ -502,7 +502,7 @@
     move-result-object p1
 
     :cond_0
-    invoke-static {p1}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -1043,7 +1043,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p3}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1081,7 +1081,7 @@
     const/4 v0, -0x1
 
     .line 1
-    invoke-static {p2}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1194,7 +1194,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1802,7 +1802,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/events/TouchEvent;->mTouchEventType:Lcom/facebook/react/uimanager/events/TouchEventType;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1823,7 +1823,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1876,7 +1876,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/events/TouchEvent;->mTouchEventType:Lcom/facebook/react/uimanager/events/TouchEventType;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

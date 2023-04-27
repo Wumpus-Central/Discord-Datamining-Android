@@ -1,5 +1,5 @@
 .class public final Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;
-.super Ls9/b;
+.super Lt9/b;
 .source "SourceFile"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Ls9/b;-><init>()V
+    invoke-direct {p0}, Lt9/b;-><init>()V
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method protected b(Landroid/content/Context;Ls9/a;)I
+.method protected b(Landroid/content/Context;Lt9/a;)I
     .locals 1
 
     .line 1
@@ -42,7 +42,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p2}, Ls9/a;->x()Landroid/content/Intent;
+    invoke-virtual {p2}, Lt9/a;->p()Landroid/content/Intent;
 
     .line 7
     .line 8

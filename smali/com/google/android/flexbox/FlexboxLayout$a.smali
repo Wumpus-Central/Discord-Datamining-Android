@@ -110,7 +110,7 @@
     iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->s:I
 
     .line 11
-    sget-object v6, Lj9/a;->o:[I
+    sget-object v6, Lk9/a;->o:[I
 
     .line 12
     invoke-virtual {p1, p2, v6}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -118,7 +118,7 @@
     move-result-object p1
 
     .line 13
-    sget p2, Lj9/a;->x:I
+    sget p2, Lk9/a;->x:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -127,7 +127,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->k:I
 
     .line 14
-    sget p2, Lj9/a;->r:I
+    sget p2, Lk9/a;->r:I
 
     .line 15
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -137,7 +137,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->l:F
 
     .line 16
-    sget p2, Lj9/a;->s:I
+    sget p2, Lk9/a;->s:I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -146,7 +146,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->m:F
 
     .line 17
-    sget p2, Lj9/a;->p:I
+    sget p2, Lk9/a;->p:I
 
     .line 18
     invoke-virtual {p1, p2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -156,7 +156,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->n:I
 
     .line 19
-    sget p2, Lj9/a;->q:I
+    sget p2, Lk9/a;->q:I
 
     .line 20
     invoke-virtual {p1, p2, v0, v0, v4}, Landroid/content/res/TypedArray;->getFraction(IIIF)F
@@ -166,7 +166,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->o:F
 
     .line 21
-    sget p2, Lj9/a;->w:I
+    sget p2, Lk9/a;->w:I
 
     .line 22
     invoke-virtual {p1, p2, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -176,7 +176,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->p:I
 
     .line 23
-    sget p2, Lj9/a;->v:I
+    sget p2, Lk9/a;->v:I
 
     .line 24
     invoke-virtual {p1, p2, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -186,7 +186,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->q:I
 
     .line 25
-    sget p2, Lj9/a;->u:I
+    sget p2, Lk9/a;->u:I
 
     invoke-virtual {p1, p2, v5}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -195,7 +195,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->r:I
 
     .line 26
-    sget p2, Lj9/a;->t:I
+    sget p2, Lk9/a;->t:I
 
     invoke-virtual {p1, p2, v5}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -204,7 +204,7 @@
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->s:I
 
     .line 27
-    sget p2, Lj9/a;->y:I
+    sget p2, Lk9/a;->y:I
 
     const/4 v0, 0x0
 
@@ -583,7 +583,15 @@
 
 
 # virtual methods
-.method public A()I
+.method public D(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->p:I
+
+    return-void
+.end method
+
+.method public E()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
@@ -591,7 +599,7 @@
     return v0
 .end method
 
-.method public B()I
+.method public F()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
@@ -599,7 +607,7 @@
     return v0
 .end method
 
-.method public H()I
+.method public K()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
@@ -607,7 +615,7 @@
     return v0
 .end method
 
-.method public I()I
+.method public L()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->q:I
@@ -615,7 +623,7 @@
     return v0
 .end method
 
-.method public K()I
+.method public N()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->s:I
@@ -623,7 +631,7 @@
     return v0
 .end method
 
-.method public a()I
+.method public c()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->n:I
@@ -631,7 +639,7 @@
     return v0
 .end method
 
-.method public c()F
+.method public d()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->m:F
@@ -643,14 +651,6 @@
     .locals 1
 
     const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public g()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->p:I
 
     return v0
 .end method
@@ -679,7 +679,15 @@
     return v0
 .end method
 
-.method public i()I
+.method public h()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->p:I
+
+    return v0
+.end method
+
+.method public k()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
@@ -687,7 +695,7 @@
     return v0
 .end method
 
-.method public j(I)V
+.method public l(I)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->q:I
@@ -695,7 +703,7 @@
     return-void
 .end method
 
-.method public k()F
+.method public m()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->l:F
@@ -703,7 +711,7 @@
     return v0
 .end method
 
-.method public n()F
+.method public q()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->o:F
@@ -711,7 +719,7 @@
     return v0
 .end method
 
-.method public p()Z
+.method public s()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->t:Z
@@ -719,7 +727,7 @@
     return v0
 .end method
 
-.method public s()I
+.method public v()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->r:I
@@ -1046,12 +1054,4 @@
     .line 249
     .line 250
     .line 251
-.end method
-
-.method public z(I)V
-    .locals 0
-
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$a;->p:I
-
-    return-void
 .end method

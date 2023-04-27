@@ -55,7 +55,7 @@
     iput-object p3, p0, Lcom/yalantis/ucrop/view/widget/AspectRatioTextView;->l:Landroid/graphics/Rect;
 
     .line 5
-    sget-object p3, Lef/h;->Q:[I
+    sget-object p3, Lgf/h;->Q:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -147,7 +147,7 @@
     move-result-object p1
 
     .line 38
-    sget v4, Lef/a;->k:I
+    sget v4, Lgf/a;->k:I
 
     .line 39
     .line 40
@@ -278,7 +278,7 @@
     .line 3
     .line 4
     .line 5
-    sget v1, Lef/h;->R:I
+    sget v1, Lgf/h;->R:I
 
     .line 6
     .line 7
@@ -294,7 +294,7 @@
 
     .line 12
     .line 13
-    sget v1, Lef/h;->S:I
+    sget v1, Lgf/h;->S:I
 
     .line 14
     .line 15
@@ -313,7 +313,7 @@
 
     .line 21
     .line 22
-    sget v1, Lef/h;->T:I
+    sget v1, Lgf/h;->T:I
 
     .line 23
     .line 24
@@ -386,7 +386,7 @@
     move-result-object v1
 
     .line 55
-    sget v2, Lef/b;->h:I
+    sget v2, Lgf/b;->h:I
 
     .line 56
     .line 57
@@ -437,7 +437,7 @@
     move-result-object v0
 
     .line 82
-    sget v1, Lef/a;->l:I
+    sget v1, Lgf/a;->l:I
 
     .line 83
     .line 84
@@ -1081,11 +1081,11 @@
     .line 35
 .end method
 
-.method public setAspectRatio(Lgf/a;)V
+.method public setAspectRatio(Lif/a;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Lgf/a;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lif/a;->a()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -1097,7 +1097,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Lgf/a;->d()F
+    invoke-virtual {p1}, Lif/a;->b()F
 
     .line 8
     .line 9
@@ -1109,7 +1109,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Lgf/a;->e()F
+    invoke-virtual {p1}, Lif/a;->e()F
 
     .line 14
     .line 15

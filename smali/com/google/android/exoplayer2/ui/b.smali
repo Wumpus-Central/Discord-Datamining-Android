@@ -154,7 +154,7 @@
 
     .line 56
     .line 57
-    invoke-static {p0, v0}, Lf9/q0;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lg9/q0;->D(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 58
     .line 59

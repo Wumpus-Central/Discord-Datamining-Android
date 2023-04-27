@@ -8,24 +8,24 @@
     value = 0x1b
 .end annotation
 
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ly3/c;Lx5/z;Lx5/a0;)V
+.method public constructor <init>(Lz3/c;Ly5/z;Ly5/a0;)V
     .locals 0
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/h;-><init>(Ly3/c;Lx5/z;Lx5/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/h;-><init>(Lz3/c;Ly5/z;Ly5/a0;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic A(I)Lx5/s;
+.method public bridge synthetic A(I)Ly5/s;
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/AshmemMemoryChunkPool;->F(I)Lcom/facebook/imagepipeline/memory/a;

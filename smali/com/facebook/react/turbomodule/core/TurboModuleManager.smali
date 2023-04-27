@@ -34,7 +34,7 @@
 .end field
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -534,7 +534,7 @@
 
 .method private getJavaModule(Ljava/lang/String;)Lcom/facebook/react/turbomodule/core/interfaces/TurboModule;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -599,7 +599,7 @@
 
 .method private getLegacyCxxModule(Ljava/lang/String;)Lcom/facebook/react/bridge/CxxModuleWrapper;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

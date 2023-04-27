@@ -988,7 +988,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0, v1, v2, v3}, Lcg/h;->d(JJ)J
+    invoke-static {v0, v1, v2, v3}, Leg/h;->d(JJ)J
 
     .line 28
     .line 29
@@ -1014,7 +1014,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0, v1, v2, v3}, Lcg/h;->h(JJ)J
+    invoke-static {v0, v1, v2, v3}, Leg/h;->h(JJ)J
 
     .line 38
     .line 39

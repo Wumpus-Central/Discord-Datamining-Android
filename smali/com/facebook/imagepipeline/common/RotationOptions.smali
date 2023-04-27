@@ -443,7 +443,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Ld4/b;->c(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-static {v0, v1}, Le4/b;->c(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
 

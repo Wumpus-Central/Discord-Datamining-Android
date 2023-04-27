@@ -114,7 +114,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -1092,7 +1091,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private f()V
@@ -1146,7 +1144,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private g(Landroid/view/View;Lcom/budiyev/android/codescanner/b;II)V
@@ -4419,7 +4416,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public setAutoFocusButtonColor(I)V

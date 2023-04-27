@@ -39,13 +39,13 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/g0$a;->a:Lcom/google/android/exoplayer2/g0;
 
-    invoke-static {v0}, Lcom/google/android/exoplayer2/g0;->h(Lcom/google/android/exoplayer2/g0;)Lf9/m;
+    invoke-static {v0}, Lcom/google/android/exoplayer2/g0;->h(Lcom/google/android/exoplayer2/g0;)Lg9/m;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
-    invoke-interface {v0, v1}, Lf9/m;->h(I)Z
+    invoke-interface {v0, v1}, Lg9/m;->h(I)Z
 
     return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/common/api/Scope;
-.super Lx9/a;
+.super Ly9/a;
 .source "SourceFile"
 
 # interfaces
@@ -41,11 +41,11 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lx9/a;-><init>()V
+    invoke-direct {p0}, Ly9/a;-><init>()V
 
     const-string v0, "scopeUri must not be null or empty"
 
-    invoke-static {p2, v0}, Lw9/p;->g(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lx9/p;->g(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     iput p1, p0, Lcom/google/android/gms/common/api/Scope;->k:I
 
@@ -237,6 +237,14 @@
     return v0
 .end method
 
+.method public p()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->l:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public toString()Ljava/lang/String;
     .locals 1
 
@@ -249,7 +257,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lx9/c;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Ly9/c;->a(Landroid/os/Parcel;)I
 
     .line 2
     .line 3
@@ -264,12 +272,12 @@
 
     .line 7
     .line 8
-    invoke-static {p1, v0, v1}, Lx9/c;->j(Landroid/os/Parcel;II)V
+    invoke-static {p1, v0, v1}, Ly9/c;->j(Landroid/os/Parcel;II)V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->p()Ljava/lang/String;
 
     .line 12
     .line 13
@@ -283,12 +291,12 @@
     const/4 v2, 0x2
 
     .line 17
-    invoke-static {p1, v2, v0, v1}, Lx9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v2, v0, v1}, Ly9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 18
     .line 19
     .line 20
-    invoke-static {p1, p2}, Lx9/c;->b(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Ly9/c;->b(Landroid/os/Parcel;I)V
 
     .line 21
     .line 22
@@ -522,12 +530,4 @@
     .line 249
     .line 250
     .line 251
-.end method
-
-.method public x()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->l:Ljava/lang/String;
-
-    return-object v0
 .end method

@@ -1371,7 +1371,7 @@
 
     .line 39
     .line 40
-    invoke-static {p2}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     .line 42

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/chat/reactevents/TapCopyText;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/chat/reactevents/TapCopyText.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/chat/reactevents/TapCopyText;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -97,7 +97,7 @@
     const/4 v3, 0x1
 
     .line 13
-    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lbj/f0;I)V
 
     .line 14
     .line 15
@@ -201,7 +201,7 @@
 
     .line 3
     .line 4
-    new-instance v1, Lwi/c;
+    new-instance v1, Lyi/c;
 
     .line 5
     .line 6
@@ -224,7 +224,7 @@
 
     .line 14
     .line 15
-    invoke-direct {v1, v2, v4}, Lwi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
+    invoke-direct {v1, v2, v4}, Lyi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
 
     .line 16
     .line 17
@@ -322,7 +322,7 @@
 
     if-eqz v1, :cond_0
 
-    new-instance v1, Lwi/c;
+    new-instance v1, Lyi/c;
 
     invoke-static {v2}, Lkotlin/jvm/internal/f0;->b(Ljava/lang/Class;)Lkotlin/reflect/KClass;
 
@@ -330,7 +330,7 @@
 
     new-array v6, v4, [Ljava/lang/annotation/Annotation;
 
-    invoke-direct {v1, v2, v6}, Lwi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
+    invoke-direct {v1, v2, v6}, Lyi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
 
     invoke-interface {p1, v0, v4, v1, v5}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -356,7 +356,7 @@
 
     if-nez v7, :cond_1
 
-    new-instance v7, Lwi/c;
+    new-instance v7, Lyi/c;
 
     invoke-static {v2}, Lkotlin/jvm/internal/f0;->b(Ljava/lang/Class;)Lkotlin/reflect/KClass;
 
@@ -364,7 +364,7 @@
 
     new-array v9, v4, [Ljava/lang/annotation/Annotation;
 
-    invoke-direct {v7, v8, v9}, Lwi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
+    invoke-direct {v7, v8, v9}, Lyi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
 
     invoke-interface {p1, v0, v4, v7, v1}, Lkotlinx/serialization/encoding/c;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -375,9 +375,9 @@
     goto :goto_0
 
     :cond_1
-    new-instance p1, Lwi/n;
+    new-instance p1, Lyi/n;
 
-    invoke-direct {p1, v7}, Lwi/n;-><init>(I)V
+    invoke-direct {p1, v7}, Lyi/n;-><init>(I)V
 
     throw p1
 
@@ -468,7 +468,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

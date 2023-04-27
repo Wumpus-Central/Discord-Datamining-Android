@@ -225,307 +225,554 @@
     .line 1
     iget-object v0, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 2
+    .line 3
     invoke-static {v0}, Lcom/imagepicker/f;->w(Landroid/content/Context;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     const/4 v1, 0x0
 
+    .line 8
     const/4 v2, 0x0
 
+    .line 9
     const/4 v3, 0x1
 
+    .line 10
     if-nez v0, :cond_0
 
+    .line 11
+    .line 12
     new-array p1, v3, [Ljava/lang/Object;
 
-    .line 2
+    .line 13
+    .line 14
     sget-object v0, Lcom/imagepicker/f;->b:Ljava/lang/String;
 
+    .line 15
+    .line 16
     invoke-static {v0, v1}, Lcom/imagepicker/f;->j(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v0
 
+    .line 20
     aput-object v0, p1, v2
 
+    .line 21
+    .line 22
     invoke-interface {p2, p1}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
 
+    .line 23
+    .line 24
+    .line 25
     return-void
 
-    .line 3
+    .line 26
     :cond_0
     invoke-virtual {p0}, Lcom/facebook/react/bridge/ReactContextBaseJavaModule;->getCurrentActivity()Landroid/app/Activity;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object v0
 
+    .line 30
     if-nez v0, :cond_1
 
+    .line 31
+    .line 32
     new-array p1, v3, [Ljava/lang/Object;
 
-    .line 4
+    .line 33
+    .line 34
     sget-object v0, Lcom/imagepicker/f;->d:Ljava/lang/String;
 
+    .line 35
+    .line 36
     const-string v1, "Activity error"
 
+    .line 37
+    .line 38
     invoke-static {v0, v1}, Lcom/imagepicker/f;->j(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
+    .line 39
+    .line 40
+    .line 41
     move-result-object v0
 
+    .line 42
     aput-object v0, p1, v2
 
+    .line 43
+    .line 44
     invoke-interface {p2, p1}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
 
+    .line 45
+    .line 46
+    .line 47
     return-void
 
-    .line 5
+    .line 48
     :cond_1
     iget-object v4, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 49
+    .line 50
     invoke-static {v4, v0}, Lcom/imagepicker/f;->x(Landroid/content/Context;Landroid/app/Activity;)Z
 
+    .line 51
+    .line 52
+    .line 53
     move-result v4
 
+    .line 54
     if-nez v4, :cond_2
 
+    .line 55
+    .line 56
     new-array p1, v3, [Ljava/lang/Object;
 
-    .line 6
+    .line 57
+    .line 58
     sget-object v0, Lcom/imagepicker/f;->d:Ljava/lang/String;
 
+    .line 59
+    .line 60
     sget-object v1, Lcom/imagepicker/f;->i:Ljava/lang/String;
 
+    .line 61
+    .line 62
     invoke-static {v0, v1}, Lcom/imagepicker/f;->j(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
+    .line 63
+    .line 64
+    .line 65
     move-result-object v0
 
+    .line 66
     aput-object v0, p1, v2
 
+    .line 67
+    .line 68
     invoke-interface {p2, p1}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
 
+    .line 69
+    .line 70
+    .line 71
     return-void
 
-    .line 7
+    .line 72
     :cond_2
     iput-object p2, p0, Lcom/imagepicker/ImagePickerModule;->callback:Lcom/facebook/react/bridge/Callback;
 
-    .line 8
+    .line 73
+    .line 74
     new-instance v4, Lcom/imagepicker/e;
 
+    .line 75
+    .line 76
     invoke-direct {v4, p1}, Lcom/imagepicker/e;-><init>(Lcom/facebook/react/bridge/ReadableMap;)V
 
+    .line 77
+    .line 78
+    .line 79
     iput-object v4, p0, Lcom/imagepicker/ImagePickerModule;->options:Lcom/imagepicker/e;
 
-    .line 9
+    .line 80
+    .line 81
     iget-object p1, v4, Lcom/imagepicker/e;->h:Ljava/lang/Boolean;
 
+    .line 82
+    .line 83
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 84
+    .line 85
+    .line 86
     move-result p1
 
+    .line 87
     if-eqz p1, :cond_3
 
+    .line 88
+    .line 89
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 90
+    .line 91
     const/16 v4, 0x1c
 
+    .line 92
+    .line 93
     if-gt p1, v4, :cond_3
 
+    .line 94
+    .line 95
     invoke-static {v0}, Lcom/imagepicker/f;->v(Landroid/app/Activity;)Z
 
+    .line 96
+    .line 97
+    .line 98
     move-result p1
 
+    .line 99
     if-nez p1, :cond_3
 
+    .line 100
+    .line 101
     new-array p1, v3, [Ljava/lang/Object;
 
-    .line 10
+    .line 102
+    .line 103
     sget-object v0, Lcom/imagepicker/f;->c:Ljava/lang/String;
 
+    .line 104
+    .line 105
     invoke-static {v0, v1}, Lcom/imagepicker/f;->j(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
+    .line 106
+    .line 107
+    .line 108
     move-result-object v0
 
+    .line 109
     aput-object v0, p1, v2
 
+    .line 110
+    .line 111
     invoke-interface {p2, p1}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
 
-    .line 11
+    .line 112
+    .line 113
+    .line 114
     iput-object v1, p0, Lcom/imagepicker/ImagePickerModule;->callback:Lcom/facebook/react/bridge/Callback;
 
+    .line 115
+    .line 116
     return-void
 
-    .line 12
+    .line 117
     :cond_3
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
+    .line 118
+    .line 119
+    .line 120
     move-result-object p1
 
+    .line 121
     iput-object p1, p0, Lcom/imagepicker/ImagePickerModule;->identifier:Ljava/util/UUID;
 
-    .line 13
+    .line 122
+    .line 123
     iget-object p1, p0, Lcom/imagepicker/ImagePickerModule;->options:Lcom/imagepicker/e;
 
+    .line 124
+    .line 125
     iget-object p1, p1, Lcom/imagepicker/e;->k:Ljava/lang/String;
 
+    .line 126
+    .line 127
     sget-object v4, Lcom/imagepicker/f;->f:Ljava/lang/String;
 
+    .line 128
+    .line 129
     invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 130
+    .line 131
+    .line 132
     move-result p1
 
+    .line 133
     if-eqz p1, :cond_5
 
-    .line 14
+    .line 134
+    .line 135
     new-instance p1, Landroid/content/Intent;
 
+    .line 136
+    .line 137
     const-string v4, "android.media.action.VIDEO_CAPTURE"
 
+    .line 138
+    .line 139
     invoke-direct {p1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 15
+    .line 140
+    .line 141
+    .line 142
     iget-object v4, p0, Lcom/imagepicker/ImagePickerModule;->options:Lcom/imagepicker/e;
 
+    .line 143
+    .line 144
     iget v4, v4, Lcom/imagepicker/e;->d:I
 
+    .line 145
+    .line 146
     const-string v5, "android.intent.extra.videoQuality"
 
+    .line 147
+    .line 148
     invoke-virtual {p1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 16
+    .line 149
+    .line 150
+    .line 151
     iget-object v4, p0, Lcom/imagepicker/ImagePickerModule;->options:Lcom/imagepicker/e;
 
+    .line 152
+    .line 153
     iget v4, v4, Lcom/imagepicker/e;->i:I
 
+    .line 154
+    .line 155
     if-lez v4, :cond_4
 
+    .line 156
+    .line 157
     const-string v5, "android.intent.extra.durationLimit"
 
-    .line 17
+    .line 158
+    .line 159
     invoke-virtual {p1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 18
+    .line 160
+    .line 161
+    .line 162
     :cond_4
     iget-object v4, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 163
+    .line 164
     iget-object v5, p0, Lcom/imagepicker/ImagePickerModule;->identifier:Ljava/util/UUID;
 
+    .line 165
+    .line 166
     const-string v6, "mp4"
 
+    .line 167
+    .line 168
     invoke-static {v4, v5, v6}, Lcom/imagepicker/f;->c(Landroid/content/Context;Ljava/util/UUID;Ljava/lang/String;)Ljava/io/File;
 
+    .line 169
+    .line 170
+    .line 171
     move-result-object v4
 
-    .line 19
+    .line 172
     iget-object v5, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 173
+    .line 174
     invoke-static {v4, v5}, Lcom/imagepicker/f;->d(Ljava/io/File;Landroid/content/Context;)Landroid/net/Uri;
 
+    .line 175
+    .line 176
+    .line 177
     move-result-object v5
 
+    .line 178
     iput-object v5, p0, Lcom/imagepicker/ImagePickerModule;->cameraCaptureURI:Landroid/net/Uri;
 
+    .line 179
+    .line 180
     const/16 v5, 0x32ca
 
+    .line 181
+    .line 182
     goto :goto_0
 
-    .line 20
+    .line 183
     :cond_5
     new-instance p1, Landroid/content/Intent;
 
+    .line 184
+    .line 185
     const-string v4, "android.media.action.IMAGE_CAPTURE"
 
+    .line 186
+    .line 187
     invoke-direct {p1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 21
+    .line 188
+    .line 189
+    .line 190
     iget-object v4, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 191
+    .line 192
     iget-object v5, p0, Lcom/imagepicker/ImagePickerModule;->identifier:Ljava/util/UUID;
 
+    .line 193
+    .line 194
     const-string v6, "jpg"
 
+    .line 195
+    .line 196
     invoke-static {v4, v5, v6}, Lcom/imagepicker/f;->c(Landroid/content/Context;Ljava/util/UUID;Ljava/lang/String;)Ljava/io/File;
 
+    .line 197
+    .line 198
+    .line 199
     move-result-object v4
 
-    .line 22
+    .line 200
     iget-object v5, p0, Lcom/imagepicker/ImagePickerModule;->reactContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
+    .line 201
+    .line 202
     invoke-static {v4, v5}, Lcom/imagepicker/f;->d(Ljava/io/File;Landroid/content/Context;)Landroid/net/Uri;
 
+    .line 203
+    .line 204
+    .line 205
     move-result-object v5
 
+    .line 206
     iput-object v5, p0, Lcom/imagepicker/ImagePickerModule;->cameraCaptureURI:Landroid/net/Uri;
 
+    .line 207
+    .line 208
     const/16 v5, 0x32c9
 
-    .line 23
+    .line 209
+    .line 210
     :goto_0
     iget-object v6, p0, Lcom/imagepicker/ImagePickerModule;->options:Lcom/imagepicker/e;
 
+    .line 211
+    .line 212
     iget-object v6, v6, Lcom/imagepicker/e;->j:Ljava/lang/Boolean;
 
+    .line 213
+    .line 214
     invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 215
+    .line 216
+    .line 217
     move-result v6
 
+    .line 218
     if-eqz v6, :cond_6
 
-    .line 24
+    .line 219
+    .line 220
     invoke-static {p1}, Lcom/imagepicker/f;->E(Landroid/content/Intent;)V
 
-    .line 25
+    .line 221
+    .line 222
+    .line 223
     :cond_6
     invoke-static {v4}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
+    .line 224
+    .line 225
+    .line 226
     move-result-object v4
 
+    .line 227
     iput-object v4, p0, Lcom/imagepicker/ImagePickerModule;->fileUri:Landroid/net/Uri;
 
+    .line 228
+    .line 229
     const-string v4, "output"
 
-    .line 26
+    .line 230
+    .line 231
     iget-object v6, p0, Lcom/imagepicker/ImagePickerModule;->cameraCaptureURI:Landroid/net/Uri;
 
+    .line 232
+    .line 233
     invoke-virtual {p1, v4, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
+    .line 234
+    .line 235
+    .line 236
     const/4 v4, 0x3
 
-    .line 27
+    .line 237
     invoke-virtual {p1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 28
+    .line 238
+    .line 239
+    .line 240
     :try_start_0
     invoke-virtual {v0, p1, v5}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 241
+    .line 242
+    .line 243
     goto :goto_1
 
+    .line 244
     :catch_0
     move-exception p1
 
+    .line 245
     new-array v0, v3, [Ljava/lang/Object;
 
-    .line 29
+    .line 246
+    .line 247
     sget-object v3, Lcom/imagepicker/f;->d:Ljava/lang/String;
 
+    .line 248
+    .line 249
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
+    .line 250
+    .line 251
+    .line 252
     move-result-object p1
 
+    .line 253
     invoke-static {v3, p1}, Lcom/imagepicker/f;->j(Ljava/lang/String;Ljava/lang/String;)Lcom/facebook/react/bridge/ReadableMap;
 
+    .line 254
+    .line 255
+    .line 256
     move-result-object p1
 
+    .line 257
     aput-object p1, v0, v2
 
+    .line 258
+    .line 259
     invoke-interface {p2, v0}, Lcom/facebook/react/bridge/Callback;->invoke([Ljava/lang/Object;)V
 
-    .line 30
+    .line 260
+    .line 261
+    .line 262
     iput-object v1, p0, Lcom/imagepicker/ImagePickerModule;->callback:Lcom/facebook/react/bridge/Callback;
 
+    .line 263
+    .line 264
     :goto_1
     return-void
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
 .end method
 
 .method public launchImageLibrary(Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Callback;)V
@@ -909,17 +1156,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public onActivityResult(Landroid/app/Activity;IILandroid/content/Intent;)V

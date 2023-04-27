@@ -20,9 +20,6 @@
 # virtual methods
 .method public final getConstants()Ljava/util/Map;
     .locals 1
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -31,6 +28,9 @@
             "Ljava/lang/Object;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     invoke-virtual {p0}, Lcom/facebook/fbreact/specs/NativeDeviceInfoSpec;->getTypedExportedConstants()Ljava/util/Map;

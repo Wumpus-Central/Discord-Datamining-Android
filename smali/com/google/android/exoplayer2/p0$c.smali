@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final a:Lh8/p;
+.field public final a:Li8/p;
 
 .field public final b:Ljava/lang/Object;
 
@@ -26,7 +26,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lh8/u$a;",
+            "Li8/u$a;",
             ">;"
         }
     .end annotation
@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lh8/u;Z)V
+.method public constructor <init>(Li8/u;Z)V
     .locals 1
 
     .line 1
@@ -47,16 +47,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lh8/p;
+    new-instance v0, Li8/p;
 
     .line 5
     .line 6
-    invoke-direct {v0, p1, p2}, Lh8/p;-><init>(Lh8/u;Z)V
+    invoke-direct {v0, p1, p2}, Li8/p;-><init>(Li8/u;Z)V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/google/android/exoplayer2/p0$c;->a:Lh8/p;
+    iput-object v0, p0, Lcom/google/android/exoplayer2/p0$c;->a:Li8/p;
 
     .line 10
     .line 11
@@ -170,9 +170,9 @@
 .method public b()Lcom/google/android/exoplayer2/Timeline;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/p0$c;->a:Lh8/p;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/p0$c;->a:Li8/p;
 
-    invoke-virtual {v0}, Lh8/p;->O()Lcom/google/android/exoplayer2/Timeline;
+    invoke-virtual {v0}, Li8/p;->O()Lcom/google/android/exoplayer2/Timeline;
 
     move-result-object v0
 

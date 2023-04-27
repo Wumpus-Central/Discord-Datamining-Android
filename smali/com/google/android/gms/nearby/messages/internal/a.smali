@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Landroid/app/Activity;Lcom/google/android/gms/nearby/messages/internal/b;Lya/h;)V
+.method synthetic constructor <init>(Landroid/app/Activity;Lcom/google/android/gms/nearby/messages/internal/b;Lza/h;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

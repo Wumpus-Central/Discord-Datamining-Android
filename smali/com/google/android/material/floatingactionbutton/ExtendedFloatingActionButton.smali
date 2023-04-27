@@ -96,7 +96,7 @@
     .locals 3
 
     .line 1
-    sget v0, Ldb/j;->q:I
+    sget v0, Leb/j;->q:I
 
     .line 2
     .line 3
@@ -908,7 +908,7 @@
     .line 81
 .end method
 
-.method public getExtendMotionSpec()Leb/h;
+.method public getExtendMotionSpec()Lfb/h;
     .locals 1
 
     const/4 v0, 0x0
@@ -916,7 +916,7 @@
     throw v0
 .end method
 
-.method public getHideMotionSpec()Leb/h;
+.method public getHideMotionSpec()Lfb/h;
     .locals 1
 
     const/4 v0, 0x0
@@ -924,7 +924,7 @@
     throw v0
 .end method
 
-.method public getShowMotionSpec()Leb/h;
+.method public getShowMotionSpec()Lfb/h;
     .locals 1
 
     const/4 v0, 0x0
@@ -932,7 +932,7 @@
     throw v0
 .end method
 
-.method public getShrinkMotionSpec()Leb/h;
+.method public getShrinkMotionSpec()Lfb/h;
     .locals 1
 
     const/4 v0, 0x0
@@ -1070,7 +1070,7 @@
     return-void
 .end method
 
-.method public setExtendMotionSpec(Leb/h;)V
+.method public setExtendMotionSpec(Lfb/h;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -1085,11 +1085,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Leb/h;->c(Landroid/content/Context;I)Leb/h;
+    invoke-static {v0, p1}, Lfb/h;->c(Landroid/content/Context;I)Lfb/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setExtendMotionSpec(Leb/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setExtendMotionSpec(Lfb/h;)V
 
     return-void
 .end method
@@ -1186,7 +1186,7 @@
     .line 77
 .end method
 
-.method public setHideMotionSpec(Leb/h;)V
+.method public setHideMotionSpec(Lfb/h;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -1201,11 +1201,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Leb/h;->c(Landroid/content/Context;I)Leb/h;
+    invoke-static {v0, p1}, Lfb/h;->c(Landroid/content/Context;I)Lfb/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setHideMotionSpec(Leb/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setHideMotionSpec(Lfb/h;)V
 
     return-void
 .end method
@@ -1886,7 +1886,7 @@
     .line 313
 .end method
 
-.method public setShowMotionSpec(Leb/h;)V
+.method public setShowMotionSpec(Lfb/h;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -1901,16 +1901,16 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Leb/h;->c(Landroid/content/Context;I)Leb/h;
+    invoke-static {v0, p1}, Lfb/h;->c(Landroid/content/Context;I)Lfb/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShowMotionSpec(Leb/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShowMotionSpec(Lfb/h;)V
 
     return-void
 .end method
 
-.method public setShrinkMotionSpec(Leb/h;)V
+.method public setShrinkMotionSpec(Lfb/h;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -1925,11 +1925,11 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Leb/h;->c(Landroid/content/Context;I)Leb/h;
+    invoke-static {v0, p1}, Lfb/h;->c(Landroid/content/Context;I)Lfb/h;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShrinkMotionSpec(Leb/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->setShrinkMotionSpec(Lfb/h;)V
 
     return-void
 .end method

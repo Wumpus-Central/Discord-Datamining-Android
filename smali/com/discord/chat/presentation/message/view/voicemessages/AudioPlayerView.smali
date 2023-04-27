@@ -292,7 +292,7 @@
 
     invoke-direct {v0, p1}, Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$bounceAnimator$2;-><init>(Landroid/content/Context;)V
 
-    invoke-static {v0}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object v0
 
@@ -303,7 +303,7 @@
 
     invoke-direct {v0, p1, p0}, Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$animatorManager$2;-><init>(Landroid/content/Context;Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;)V
 
-    invoke-static {v0}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -4495,15 +4495,15 @@
 
     .line 14
     .line 15
-    sget-object v3, Lqi/a;->l:Lqi/a$a;
+    sget-object v3, Lsi/a;->l:Lsi/a$a;
 
     .line 16
     .line 17
-    sget-object v3, Lqi/d;->n:Lqi/d;
+    sget-object v3, Lsi/d;->n:Lsi/d;
 
     .line 18
     .line 19
-    invoke-static {v0, v1, v3}, Lqi/c;->t(JLqi/d;)J
+    invoke-static {v0, v1, v3}, Lsi/c;->t(JLsi/d;)J
 
     .line 20
     .line 21
@@ -4511,11 +4511,11 @@
     move-result-wide v0
 
     .line 23
-    sget-object v3, Lqi/d;->o:Lqi/d;
+    sget-object v3, Lsi/d;->o:Lsi/d;
 
     .line 24
     .line 25
-    invoke-static {v0, v1, v3}, Lqi/a;->F(JLqi/d;)D
+    invoke-static {v0, v1, v3}, Lsi/a;->E(JLsi/d;)D
 
     .line 26
     .line 27
@@ -4623,15 +4623,15 @@
 
     .line 14
     .line 15
-    sget-object v3, Lqi/a;->l:Lqi/a$a;
+    sget-object v3, Lsi/a;->l:Lsi/a$a;
 
     .line 16
     .line 17
-    sget-object v3, Lqi/d;->n:Lqi/d;
+    sget-object v3, Lsi/d;->n:Lsi/d;
 
     .line 18
     .line 19
-    invoke-static {v0, v1, v3}, Lqi/c;->t(JLqi/d;)J
+    invoke-static {v0, v1, v3}, Lsi/c;->t(JLsi/d;)J
 
     .line 20
     .line 21
@@ -4639,11 +4639,11 @@
     move-result-wide v0
 
     .line 23
-    sget-object v3, Lqi/d;->o:Lqi/d;
+    sget-object v3, Lsi/d;->o:Lsi/d;
 
     .line 24
     .line 25
-    invoke-static {v0, v1, v3}, Lqi/a;->F(JLqi/d;)D
+    invoke-static {v0, v1, v3}, Lsi/a;->E(JLsi/d;)D
 
     .line 26
     .line 27
@@ -6430,15 +6430,15 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lqi/a;->l:Lqi/a$a;
+    sget-object v0, Lsi/a;->l:Lsi/a$a;
 
     .line 2
     .line 3
-    sget-object v0, Lqi/d;->n:Lqi/d;
+    sget-object v0, Lsi/d;->n:Lsi/d;
 
     .line 4
     .line 5
-    invoke-static {p1, p2, v0}, Lqi/c;->t(JLqi/d;)J
+    invoke-static {p1, p2, v0}, Lsi/c;->t(JLsi/d;)J
 
     .line 6
     .line 7
@@ -6446,11 +6446,11 @@
     move-result-wide p1
 
     .line 9
-    sget-object v0, Lqi/d;->o:Lqi/d;
+    sget-object v0, Lsi/d;->o:Lsi/d;
 
     .line 10
     .line 11
-    invoke-static {p1, p2, v0}, Lqi/a;->F(JLqi/d;)D
+    invoke-static {p1, p2, v0}, Lsi/a;->E(JLsi/d;)D
 
     .line 12
     .line 13

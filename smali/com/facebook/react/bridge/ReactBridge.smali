@@ -100,7 +100,7 @@
 
     .line 19
     .line 20
-    invoke-static {v2, v3, v1}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v2, v3, v1}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 21
     .line 22
@@ -132,7 +132,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 39
     .line 40

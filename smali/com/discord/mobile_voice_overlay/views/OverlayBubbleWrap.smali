@@ -232,7 +232,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v1}, Lkotlin/jvm/internal/f0;->e(Lkotlin/jvm/internal/v;)Ldg/e;
+    invoke-static {v1}, Lkotlin/jvm/internal/f0;->e(Lkotlin/jvm/internal/v;)Lfg/e;
 
     .line 17
     .line 18

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ld9/h;
+.implements Le9/h;
 
 
 # annotations
@@ -18,10 +18,13 @@
 .method public abstract b(Lcom/google/android/exoplayer2/upstream/a;)J
 .end method
 
+.method public abstract c(Le9/x;)V
+.end method
+
 .method public abstract close()V
 .end method
 
-.method public abstract d()Ljava/util/Map;
+.method public abstract e()Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -32,9 +35,6 @@
             ">;>;"
         }
     .end annotation
-.end method
-
-.method public abstract h(Ld9/x;)V
 .end method
 
 .method public abstract m()Landroid/net/Uri;

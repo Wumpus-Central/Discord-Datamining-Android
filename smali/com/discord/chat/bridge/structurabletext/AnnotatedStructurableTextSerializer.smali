@@ -77,11 +77,11 @@
 
     .line 9
     .line 10
-    sget-object v1, Lyi/e$i;->a:Lyi/e$i;
+    sget-object v1, Laj/e$i;->a:Laj/e$i;
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Lyi/g;->a(Ljava/lang/String;Lyi/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
+    invoke-static {v0, v1}, Laj/g;->a(Ljava/lang/String;Laj/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
 
     .line 13
     .line 14
@@ -172,11 +172,11 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    new-instance v0, Lzi/f;
+    new-instance v0, Lbj/f;
 
     sget-object v1, Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;->INSTANCE:Lcom/discord/chat/bridge/contentnode/ContentNodeSerializer;
 
-    invoke-direct {v0, v1}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v0, v1}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Decoder;->G(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;
 

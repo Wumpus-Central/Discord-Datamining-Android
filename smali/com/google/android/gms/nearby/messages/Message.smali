@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/nearby/messages/Message;
-.super Lx9/a;
+.super Ly9/a;
 .source "SourceFile"
 
 # interfaces
@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field private static final q:[Lqa/v0;
+.field private static final q:[Lra/v0;
 
 
 # instance fields
@@ -29,7 +29,7 @@
 
 .field private final n:Ljava/lang/String;
 
-.field final o:[Lqa/v0;
+.field final o:[Lra/v0;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
@@ -49,29 +49,29 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lqa/v0;
+    new-array v0, v0, [Lra/v0;
 
     const/4 v1, 0x0
 
-    sget-object v2, Lqa/v0;->n:Lqa/v0;
+    sget-object v2, Lra/v0;->n:Lra/v0;
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/google/android/gms/nearby/messages/Message;->q:[Lqa/v0;
+    sput-object v0, Lcom/google/android/gms/nearby/messages/Message;->q:[Lra/v0;
 
     return-void
 .end method
 
-.method constructor <init>(I[BLjava/lang/String;Ljava/lang/String;[Lqa/v0;J)V
+.method constructor <init>(I[BLjava/lang/String;Ljava/lang/String;[Lra/v0;J)V
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lx9/a;-><init>()V
+    invoke-direct {p0}, Ly9/a;-><init>()V
 
     iput p1, p0, Lcom/google/android/gms/nearby/messages/Message;->k:I
 
     .line 2
-    invoke-static {p4}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p4}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -89,7 +89,7 @@
     iput-wide p6, p0, Lcom/google/android/gms/nearby/messages/Message;->p:J
 
     .line 3
-    invoke-static {p2}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     array-length p1, p2
@@ -131,7 +131,7 @@
     const-string p1, "Content length(%d) must not exceed MAX_CONTENT_SIZE_BYTES(%d)"
 
     .line 7
-    invoke-static {v0, p1, v2}, Lw9/p;->c(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, p1, v2}, Lx9/p;->c(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     iput-object p2, p0, Lcom/google/android/gms/nearby/messages/Message;->l:[B
 
@@ -142,10 +142,10 @@
     if-nez p1, :cond_3
 
     :cond_2
-    sget-object p5, Lcom/google/android/gms/nearby/messages/Message;->q:[Lqa/v0;
+    sget-object p5, Lcom/google/android/gms/nearby/messages/Message;->q:[Lra/v0;
 
     :cond_3
-    iput-object p5, p0, Lcom/google/android/gms/nearby/messages/Message;->o:[Lqa/v0;
+    iput-object p5, p0, Lcom/google/android/gms/nearby/messages/Message;->o:[Lra/v0;
 
     .line 8
     invoke-virtual {p4}, Ljava/lang/String;->length()I
@@ -187,7 +187,7 @@
     const-string p2, "Type length(%d) must not exceed MAX_TYPE_LENGTH(%d)"
 
     .line 11
-    invoke-static {p1, p2, p3}, Lw9/p;->c(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p1, p2, p3}, Lx9/p;->c(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -200,7 +200,7 @@
     const-string v3, ""
 
     .line 12
-    sget-object v4, Lcom/google/android/gms/nearby/messages/Message;->q:[Lqa/v0;
+    sget-object v4, Lcom/google/android/gms/nearby/messages/Message;->q:[Lra/v0;
 
     const-wide/16 v5, 0x0
 
@@ -208,12 +208,12 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/Message;-><init>([BLjava/lang/String;Ljava/lang/String;[Lqa/v0;J)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/Message;-><init>([BLjava/lang/String;Ljava/lang/String;[Lra/v0;J)V
 
     return-void
 .end method
 
-.method public constructor <init>([BLjava/lang/String;Ljava/lang/String;[Lqa/v0;J)V
+.method public constructor <init>([BLjava/lang/String;Ljava/lang/String;[Lra/v0;J)V
     .locals 8
 
     const/4 v1, 0x2
@@ -231,21 +231,13 @@
     move-object v5, p4
 
     .line 13
-    invoke-direct/range {v0 .. v7}, Lcom/google/android/gms/nearby/messages/Message;-><init>(I[BLjava/lang/String;Ljava/lang/String;[Lqa/v0;J)V
+    invoke-direct/range {v0 .. v7}, Lcom/google/android/gms/nearby/messages/Message;-><init>(I[BLjava/lang/String;Ljava/lang/String;[Lra/v0;J)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public D()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->m:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
 
@@ -467,7 +459,7 @@
 
     .line 35
     .line 36
-    invoke-static {v0}, Lw9/n;->c([Ljava/lang/Object;)I
+    invoke-static {v0}, Lx9/n;->c([Ljava/lang/Object;)I
 
     .line 37
     .line 38
@@ -517,6 +509,30 @@
     .line 79
     .line 80
     .line 81
+.end method
+
+.method public p()[B
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->l:[B
+
+    return-object v0
+.end method
+
+.method public r()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->n:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public t()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->m:Ljava/lang/String;
+
+    return-object v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -575,7 +591,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Lx9/c;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Ly9/c;->a(Landroid/os/Parcel;)I
 
     .line 2
     .line 3
@@ -583,7 +599,7 @@
     move-result v0
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->p()[B
 
     .line 6
     .line 7
@@ -597,7 +613,7 @@
     const/4 v3, 0x0
 
     .line 11
-    invoke-static {p1, v2, v1, v3}, Lx9/c;->f(Landroid/os/Parcel;I[BZ)V
+    invoke-static {p1, v2, v1, v3}, Ly9/c;->f(Landroid/os/Parcel;I[BZ)V
 
     .line 12
     .line 13
@@ -605,7 +621,7 @@
     const/4 v1, 0x2
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->D()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->t()Ljava/lang/String;
 
     .line 16
     .line 17
@@ -613,7 +629,7 @@
     move-result-object v2
 
     .line 19
-    invoke-static {p1, v1, v2, v3}, Lx9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Ly9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 20
     .line 21
@@ -621,7 +637,7 @@
     const/4 v1, 0x3
 
     .line 23
-    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->y()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/nearby/messages/Message;->r()Ljava/lang/String;
 
     .line 24
     .line 25
@@ -629,7 +645,7 @@
     move-result-object v2
 
     .line 27
-    invoke-static {p1, v1, v2, v3}, Lx9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2, v3}, Ly9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 28
     .line 29
@@ -637,11 +653,11 @@
     const/4 v1, 0x4
 
     .line 31
-    iget-object v2, p0, Lcom/google/android/gms/nearby/messages/Message;->o:[Lqa/v0;
+    iget-object v2, p0, Lcom/google/android/gms/nearby/messages/Message;->o:[Lra/v0;
 
     .line 32
     .line 33
-    invoke-static {p1, v1, v2, p2, v3}, Lx9/c;->s(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Ly9/c;->s(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
 
     .line 34
     .line 35
@@ -653,7 +669,7 @@
 
     .line 38
     .line 39
-    invoke-static {p1, p2, v1, v2}, Lx9/c;->m(Landroid/os/Parcel;IJ)V
+    invoke-static {p1, p2, v1, v2}, Ly9/c;->m(Landroid/os/Parcel;IJ)V
 
     .line 40
     .line 41
@@ -666,12 +682,12 @@
 
     .line 45
     .line 46
-    invoke-static {p1, p2, v1}, Lx9/c;->j(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v1}, Ly9/c;->j(Landroid/os/Parcel;II)V
 
     .line 47
     .line 48
     .line 49
-    invoke-static {p1, v0}, Lx9/c;->b(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Ly9/c;->b(Landroid/os/Parcel;I)V
 
     .line 50
     .line 51
@@ -804,20 +820,4 @@
     .line 177
     .line 178
     .line 179
-.end method
-
-.method public x()[B
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->l:[B
-
-    return-object v0
-.end method
-
-.method public y()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/Message;->n:Ljava/lang/String;
-
-    return-object v0
 .end method

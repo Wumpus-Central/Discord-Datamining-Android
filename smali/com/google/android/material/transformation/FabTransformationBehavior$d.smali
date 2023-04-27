@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic a:Lib/d;
+.field final synthetic a:Ljb/d;
 
 .field final synthetic b:Lcom/google/android/material/transformation/FabTransformationBehavior;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Lib/d;)V
+.method constructor <init>(Lcom/google/android/material/transformation/FabTransformationBehavior;Ljb/d;)V
     .locals 0
 
     iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->b:Lcom/google/android/material/transformation/FabTransformationBehavior;
 
-    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lib/d;
+    iput-object p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Ljb/d;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -39,11 +39,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lib/d;
+    iget-object p1, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Ljb/d;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lib/d;->getRevealInfo()Lib/d$e;
+    invoke-interface {p1}, Ljb/d;->getRevealInfo()Ljb/d$e;
 
     .line 4
     .line 5
@@ -56,15 +56,15 @@
     .line 8
     .line 9
     .line 10
-    iput v0, p1, Lib/d$e;->c:F
+    iput v0, p1, Ljb/d$e;->c:F
 
     .line 11
     .line 12
-    iget-object v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Lib/d;
+    iget-object v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior$d;->a:Ljb/d;
 
     .line 13
     .line 14
-    invoke-interface {v0, p1}, Lib/d;->setRevealInfo(Lib/d$e;)V
+    invoke-interface {v0, p1}, Ljb/d;->setRevealInfo(Ljb/d$e;)V
 
     .line 15
     .line 16

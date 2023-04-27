@@ -52,7 +52,7 @@
 
     .line 10
     :catch_0
-    new-instance p0, Lg5/j;
+    new-instance p0, Lh5/j;
 
     .line 11
     .line 12
@@ -60,7 +60,7 @@
 
     .line 13
     .line 14
-    invoke-direct {p0, v0}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -97,13 +97,13 @@
     .line 46
 .end method
 
-.method private o(Ljava/text/DecimalFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
+.method private o(Ljava/text/DecimalFormat;Lh5/b;Lcom/facebook/hermes/intl/c$h;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/text/DecimalFormat;",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;",
             "Lcom/facebook/hermes/intl/c$h;",
             ")V"
@@ -317,12 +317,12 @@
     return-object p1
 .end method
 
-.method public b(Lg5/b;)Ljava/lang/String;
+.method public b(Lh5/b;)Ljava/lang/String;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;)",
             "Ljava/lang/String;"
         }
@@ -389,17 +389,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic h(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
-    .locals 0
-
-    invoke-virtual/range {p0 .. p6}, Lcom/facebook/hermes/intl/p;->m(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/p;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic i(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic h(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/facebook/hermes/intl/p;->q(Lcom/facebook/hermes/intl/c$f;II)Lcom/facebook/hermes/intl/p;
@@ -409,10 +399,20 @@
     return-object p1
 .end method
 
-.method public bridge synthetic j(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
+.method public bridge synthetic i(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/c;
     .locals 0
 
     invoke-virtual {p0, p1, p2}, Lcom/facebook/hermes/intl/p;->v(Ljava/lang/String;Lcom/facebook/hermes/intl/c$i;)Lcom/facebook/hermes/intl/p;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic j(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/c;
+    .locals 0
+
+    invoke-virtual/range {p0 .. p6}, Lcom/facebook/hermes/intl/p;->m(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/p;
 
     move-result-object p1
 
@@ -437,12 +437,12 @@
     return-object p1
 .end method
 
-.method public m(Lg5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/p;
+.method public m(Lh5/b;Ljava/lang/String;Lcom/facebook/hermes/intl/c$h;Lcom/facebook/hermes/intl/c$d;Lcom/facebook/hermes/intl/c$e;Lcom/facebook/hermes/intl/c$b;)Lcom/facebook/hermes/intl/p;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;",
             "Ljava/lang/String;",
             "Lcom/facebook/hermes/intl/c$h;",
@@ -455,7 +455,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p1}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p1}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -488,7 +488,7 @@
 
     .line 17
     .line 18
-    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/p;->o(Ljava/text/DecimalFormat;Lg5/b;Lcom/facebook/hermes/intl/c$h;)V
+    invoke-direct {p0, p2, p1, p3}, Lcom/facebook/hermes/intl/p;->o(Ljava/text/DecimalFormat;Lh5/b;Lcom/facebook/hermes/intl/c$h;)V
 
     .line 19
     .line 20

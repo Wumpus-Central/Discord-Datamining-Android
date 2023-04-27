@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/android/material/button/MaterialButton;Lcom/google/android/material/button/MaterialButton;)I
+.method public b(Lcom/google/android/material/button/MaterialButton;Lcom/google/android/material/button/MaterialButton;)I
     .locals 2
 
     .line 1
@@ -309,7 +309,7 @@
 
     check-cast p2, Lcom/google/android/material/button/MaterialButton;
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->a(Lcom/google/android/material/button/MaterialButton;Lcom/google/android/material/button/MaterialButton;)I
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/button/MaterialButtonToggleGroup$a;->b(Lcom/google/android/material/button/MaterialButton;Lcom/google/android/material/button/MaterialButton;)I
 
     move-result p1
 

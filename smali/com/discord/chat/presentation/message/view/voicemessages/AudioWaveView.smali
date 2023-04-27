@@ -294,7 +294,7 @@
 
     .line 50
     .line 51
-    sget-object v1, Lqi/a;->l:Lqi/a$a;
+    sget-object v1, Lsi/a;->l:Lsi/a$a;
 
     .line 52
     .line 53
@@ -302,11 +302,11 @@
 
     .line 54
     .line 55
-    sget-object v2, Lqi/d;->o:Lqi/d;
+    sget-object v2, Lsi/d;->o:Lsi/d;
 
     .line 56
     .line 57
-    invoke-static {v1, v2}, Lqi/c;->s(ILqi/d;)J
+    invoke-static {v1, v2}, Lsi/c;->s(ILsi/d;)J
 
     .line 58
     .line 59
@@ -314,7 +314,7 @@
     move-result-wide v1
 
     .line 61
-    invoke-static {v1, v2}, Lqi/a;->n(J)J
+    invoke-static {v1, v2}, Lsi/a;->n(J)J
 
     .line 62
     .line 63
@@ -5036,7 +5036,7 @@
     const/4 p1, 0x5
 
     .line 32
-    invoke-static {v0, p1}, Lcg/h;->c(II)I
+    invoke-static {v0, p1}, Leg/h;->c(II)I
 
     .line 33
     .line 34
@@ -5613,7 +5613,7 @@
 
     .line 84
     .line 85
-    invoke-static {p1, v0}, Lcg/h;->g(II)I
+    invoke-static {p1, v0}, Leg/h;->g(II)I
 
     .line 86
     .line 87
@@ -5625,7 +5625,7 @@
 
     .line 90
     .line 91
-    invoke-static {p1, v0}, Lcg/h;->c(II)I
+    invoke-static {p1, v0}, Leg/h;->c(II)I
 
     .line 92
     .line 93
@@ -6071,7 +6071,7 @@
     const/4 v3, 0x0
 
     .line 50
-    invoke-static {v0, v3, v2}, Lcg/h;->i(FFF)F
+    invoke-static {v0, v3, v2}, Leg/h;->i(FFF)F
 
     .line 51
     .line 52

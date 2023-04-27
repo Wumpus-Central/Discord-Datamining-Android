@@ -223,7 +223,7 @@
     if-lt v1, v2, :cond_1
 
     .line 4
-    invoke-static {p0}, Ln3/a;->a(Landroid/view/View;)Landroid/view/WindowInsetsController;
+    invoke-static {p0}, Lo3/a;->a(Landroid/view/View;)Landroid/view/WindowInsetsController;
 
     move-result-object p0
 

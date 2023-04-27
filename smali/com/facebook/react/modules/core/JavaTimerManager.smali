@@ -1589,7 +1589,7 @@
 
 .method public createTimer(IJZ)V
     .locals 9
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1821,7 +1821,7 @@
 
 .method public deleteTimer(I)V
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -2607,7 +2607,7 @@
 
 .method public setSendIdleEvents(Z)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

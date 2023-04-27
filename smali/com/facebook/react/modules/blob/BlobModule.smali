@@ -2593,7 +2593,7 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -2960,7 +2960,7 @@
 
     .line 33
     .line 34
-    invoke-static {p1}, Lokio/ByteString;->p([B)Lokio/ByteString;
+    invoke-static {p1}, Lokio/ByteString;->o([B)Lokio/ByteString;
 
     .line 35
     .line 36

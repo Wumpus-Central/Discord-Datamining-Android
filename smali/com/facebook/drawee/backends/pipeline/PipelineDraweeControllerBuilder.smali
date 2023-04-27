@@ -10,7 +10,7 @@
         "Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;",
         "Lcom/facebook/imagepipeline/request/ImageRequest;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/imagepipeline/image/ImageInfo;",
         ">;"
@@ -21,37 +21,37 @@
 # instance fields
 .field private final s:Lcom/facebook/imagepipeline/core/ImagePipeline;
 
-.field private final t:Lk4/e;
+.field private final t:Ll4/e;
 
-.field private u:Lv3/e;
+.field private u:Lw3/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private v:Lm4/b;
+.field private v:Ln4/b;
 
-.field private w:Lm4/f;
+.field private w:Ln4/f;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk4/e;Lcom/facebook/imagepipeline/core/ImagePipeline;Ljava/util/Set;Ljava/util/Set;)V
+.method public constructor <init>(Landroid/content/Context;Ll4/e;Lcom/facebook/imagepipeline/core/ImagePipeline;Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lk4/e;",
+            "Ll4/e;",
             "Lcom/facebook/imagepipeline/core/ImagePipeline;",
             "Ljava/util/Set<",
             "Lcom/facebook/drawee/controller/ControllerListener;",
             ">;",
             "Ljava/util/Set<",
-            "Lf5/b;",
+            "Lg5/b;",
             ">;)V"
         }
     .end annotation
@@ -66,7 +66,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->t:Lk4/e;
+    iput-object p2, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->t:Ll4/e;
 
     .line 7
     .line 8
@@ -947,7 +947,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Lcom/facebook/imagepipeline/core/ImagePipeline;->k()Lo5/f;
+    invoke-virtual {v1}, Lcom/facebook/imagepipeline/core/ImagePipeline;->k()Lp5/f;
 
     .line 10
     .line 11
@@ -983,7 +983,7 @@
     move-result-object v2
 
     .line 27
-    invoke-interface {v1, v0, v2}, Lo5/f;->c(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
+    invoke-interface {v1, v0, v2}, Lp5/f;->c(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
 
     .line 28
     .line 29
@@ -1003,7 +1003,7 @@
     move-result-object v2
 
     .line 36
-    invoke-interface {v1, v0, v2}, Lo5/f;->a(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
+    invoke-interface {v1, v0, v2}, Lp5/f;->a(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
 
     .line 37
     .line 38
@@ -1039,7 +1039,7 @@
             ")",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;"
         }
     .end annotation
@@ -1696,7 +1696,7 @@
     .locals 8
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -1712,7 +1712,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -1751,11 +1751,11 @@
 
     .line 27
     :cond_1
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->t:Lk4/e;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->t:Ll4/e;
 
     .line 28
     .line 29
-    invoke-virtual {v0}, Lk4/e;->c()Lcom/facebook/drawee/backends/pipeline/a;
+    invoke-virtual {v0}, Ll4/e;->c()Lcom/facebook/drawee/backends/pipeline/a;
 
     .line 30
     .line 31
@@ -1788,38 +1788,38 @@
     move-result-object v5
 
     .line 45
-    iget-object v6, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->u:Lv3/e;
+    iget-object v6, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->u:Lw3/e;
 
     .line 46
     .line 47
-    iget-object v7, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->v:Lm4/b;
+    iget-object v7, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->v:Ln4/b;
 
     .line 48
     .line 49
     move-object v1, v0
 
     .line 50
-    invoke-virtual/range {v1 .. v7}, Lcom/facebook/drawee/backends/pipeline/a;->o0(Lcom/facebook/common/internal/Supplier;Ljava/lang/String;Lcom/facebook/cache/common/CacheKey;Ljava/lang/Object;Lv3/e;Lm4/b;)V
+    invoke-virtual/range {v1 .. v7}, Lcom/facebook/drawee/backends/pipeline/a;->o0(Lcom/facebook/common/internal/Supplier;Ljava/lang/String;Lcom/facebook/cache/common/CacheKey;Ljava/lang/Object;Lw3/e;Ln4/b;)V
 
     .line 51
     .line 52
     .line 53
-    iget-object v1, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->w:Lm4/f;
+    iget-object v1, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->w:Ln4/f;
 
     .line 54
     .line 55
-    sget-object v2, Lv3/m;->b:Lcom/facebook/common/internal/Supplier;
+    sget-object v2, Lw3/m;->b:Lcom/facebook/common/internal/Supplier;
 
     .line 56
     .line 57
-    invoke-virtual {v0, v1, p0, v2}, Lcom/facebook/drawee/backends/pipeline/a;->p0(Lm4/f;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/common/internal/Supplier;)V
+    invoke-virtual {v0, v1, p0, v2}, Lcom/facebook/drawee/backends/pipeline/a;->p0(Ln4/f;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/common/internal/Supplier;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 58
     .line 59
     .line 60
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 61
     .line 62
@@ -1831,7 +1831,7 @@
 
     .line 65
     .line 66
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 67
     .line 68
@@ -1844,7 +1844,7 @@
     move-exception v0
 
     .line 71
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 72
     .line 73
@@ -1856,7 +1856,7 @@
 
     .line 76
     .line 77
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 78
     .line 79
@@ -2108,11 +2108,11 @@
     .line 323
 .end method
 
-.method public M(Lm4/f;)Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+.method public M(Ln4/f;)Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->w:Lm4/f;
+    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->w:Ln4/f;
 
     .line 2
     .line 3
@@ -2340,7 +2340,7 @@
     .line 46
 .end method
 
-.method public bridge synthetic a(Landroid/net/Uri;)Lu4/b;
+.method public bridge synthetic a(Landroid/net/Uri;)Lv4/b;
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;->N(Landroid/net/Uri;)Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;

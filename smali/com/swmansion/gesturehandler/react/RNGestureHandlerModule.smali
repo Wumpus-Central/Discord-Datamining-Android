@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Laf/a;
+.implements Lcf/a;
 
 
 # annotations
@@ -33,7 +33,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;",
         "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;",
-        "Laf/a;",
+        "Lcf/a;",
         "",
         "jsiPtr",
         "",
@@ -42,17 +42,17 @@
         "viewTag",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;",
         "findRootHelperForViewAncestor",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "handler",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
         "findFactoryForHandler",
         "onHandlerUpdate",
-        "(Lcf/d;)V",
+        "(Lef/d;)V",
         "newState",
         "oldState",
         "onStateChange",
-        "(Lcf/d;II)V",
+        "(Lef/d;II)V",
         "onTouchEvent",
         "Lcom/facebook/react/uimanager/events/Event;",
         "event",
@@ -106,9 +106,9 @@
         "",
         "roots",
         "Ljava/util/List;",
-        "Lbf/c;",
+        "Ldf/c;",
         "reanimatedEventDispatcher",
-        "Lbf/c;",
+        "Ldf/c;",
         "Lcom/facebook/react/bridge/ReactApplicationContext;",
         "reactContext",
         "<init>",
@@ -240,7 +240,7 @@
 
 .field private final interactionManager:Lcom/swmansion/gesturehandler/react/f;
 
-.field private final reanimatedEventDispatcher:Lbf/c;
+.field private final reanimatedEventDispatcher:Ldf/c;
 
 .field private final registry:Lcom/swmansion/gesturehandler/react/h;
 
@@ -471,16 +471,16 @@
 
     .line 101
     .line 102
-    new-instance p1, Lbf/c;
+    new-instance p1, Ldf/c;
 
     .line 103
     .line 104
-    invoke-direct {p1}, Lbf/c;-><init>()V
+    invoke-direct {p1}, Ldf/c;-><init>()V
 
     .line 105
     .line 106
     .line 107
-    iput-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->reanimatedEventDispatcher:Lbf/c;
+    iput-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->reanimatedEventDispatcher:Ldf/c;
 
     .line 108
     .line 109
@@ -520,26 +520,26 @@
     .line 142
 .end method
 
-.method public static final synthetic access$onHandlerUpdate(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;)V
+.method public static final synthetic access$onHandlerUpdate(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onHandlerUpdate(Lcf/d;)V
+    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onHandlerUpdate(Lef/d;)V
 
     return-void
 .end method
 
-.method public static final synthetic access$onStateChange(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;II)V
+.method public static final synthetic access$onStateChange(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;II)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onStateChange(Lcf/d;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onStateChange(Lef/d;II)V
 
     return-void
 .end method
 
-.method public static final synthetic access$onTouchEvent(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lcf/d;)V
+.method public static final synthetic access$onTouchEvent(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;Lef/d;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onTouchEvent(Lcf/d;)V
+    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->onTouchEvent(Lef/d;)V
 
     return-void
 .end method
@@ -547,14 +547,14 @@
 .method private final native decorateRuntime(J)V
 .end method
 
-.method private final findFactoryForHandler(Lcf/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
+.method private final findFactoryForHandler(Lef/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;)",
             "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c<",
             "TT;>;"
@@ -880,18 +880,18 @@
     .line 142
 .end method
 
-.method private final onHandlerUpdate(Lcf/d;)V
+.method private final onHandlerUpdate(Lef/d;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcf/d;->P()I
+    invoke-virtual {p1}, Lef/d;->P()I
 
     .line 2
     .line 3
@@ -907,7 +907,7 @@
 
     .line 8
     :cond_0
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 9
     .line 10
@@ -922,7 +922,7 @@
 
     .line 14
     .line 15
-    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lcf/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
+    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lef/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
 
     .line 16
     .line 17
@@ -930,7 +930,7 @@
     move-result-object v4
 
     .line 19
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 20
     .line 21
@@ -961,7 +961,7 @@
     move-object v3, p1
 
     .line 32
-    invoke-static/range {v2 .. v7}, Lcom/swmansion/gesturehandler/react/d$a;->c(Lcom/swmansion/gesturehandler/react/d$a;Lcf/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
+    invoke-static/range {v2 .. v7}, Lcom/swmansion/gesturehandler/react/d$a;->c(Lcom/swmansion/gesturehandler/react/d$a;Lef/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
 
     .line 33
     .line 34
@@ -978,7 +978,7 @@
 
     .line 40
     :cond_1
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 41
     .line 42
@@ -1000,7 +1000,7 @@
     const/4 v1, 0x0
 
     .line 50
-    invoke-virtual {v0, p1, v4, v1}, Lcom/swmansion/gesturehandler/react/d$a;->b(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
+    invoke-virtual {v0, p1, v4, v1}, Lcom/swmansion/gesturehandler/react/d$a;->b(Lef/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
 
     .line 51
     .line 52
@@ -1017,7 +1017,7 @@
 
     .line 58
     :cond_2
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 59
     .line 60
@@ -1048,7 +1048,7 @@
     move-object v3, p1
 
     .line 71
-    invoke-static/range {v2 .. v7}, Lcom/swmansion/gesturehandler/react/d$a;->c(Lcom/swmansion/gesturehandler/react/d$a;Lcf/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
+    invoke-static/range {v2 .. v7}, Lcom/swmansion/gesturehandler/react/d$a;->c(Lcom/swmansion/gesturehandler/react/d$a;Lef/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
 
     .line 72
     .line 73
@@ -1065,7 +1065,7 @@
 
     .line 79
     :cond_3
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 80
     .line 81
@@ -1081,7 +1081,7 @@
 
     .line 86
     .line 87
-    invoke-virtual {v0, p1, v4}, Lcom/swmansion/gesturehandler/react/d$a;->a(Lcf/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;
+    invoke-virtual {v0, p1, v4}, Lcom/swmansion/gesturehandler/react/d$a;->a(Lef/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;
 
     .line 88
     .line 89
@@ -1149,18 +1149,18 @@
     .line 142
 .end method
 
-.method private final onStateChange(Lcf/d;II)V
+.method private final onStateChange(Lef/d;II)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;II)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcf/d;->P()I
+    invoke-virtual {p1}, Lef/d;->P()I
 
     .line 2
     .line 3
@@ -1176,7 +1176,7 @@
 
     .line 8
     :cond_0
-    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lcf/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
+    invoke-direct {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lef/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
 
     .line 9
     .line 10
@@ -1184,7 +1184,7 @@
     move-result-object v0
 
     .line 12
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 13
     .line 14
@@ -1203,7 +1203,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/swmansion/gesturehandler/react/j$a;->b(Lcf/d;IILcom/swmansion/gesturehandler/react/e;)Lcom/swmansion/gesturehandler/react/j;
+    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/swmansion/gesturehandler/react/j$a;->b(Lef/d;IILcom/swmansion/gesturehandler/react/e;)Lcom/swmansion/gesturehandler/react/j;
 
     .line 22
     .line 23
@@ -1220,7 +1220,7 @@
 
     .line 29
     :cond_1
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 30
     .line 31
@@ -1235,7 +1235,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 37
     .line 38
@@ -1254,7 +1254,7 @@
 
     .line 44
     :cond_2
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 45
     .line 46
@@ -1273,7 +1273,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {v1, p1, v0, p2, p3}, Lcom/swmansion/gesturehandler/react/j$a;->a(Lcf/d;Lcom/swmansion/gesturehandler/react/e;II)Lcom/facebook/react/bridge/WritableMap;
+    invoke-virtual {v1, p1, v0, p2, p3}, Lcom/swmansion/gesturehandler/react/j$a;->a(Lef/d;Lcom/swmansion/gesturehandler/react/e;II)Lcom/facebook/react/bridge/WritableMap;
 
     .line 54
     .line 55
@@ -1299,7 +1299,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/swmansion/gesturehandler/react/j$a;->b(Lcf/d;IILcom/swmansion/gesturehandler/react/e;)Lcom/swmansion/gesturehandler/react/j;
+    invoke-virtual {v1, p1, p2, p3, v0}, Lcom/swmansion/gesturehandler/react/j$a;->b(Lef/d;IILcom/swmansion/gesturehandler/react/e;)Lcom/swmansion/gesturehandler/react/j;
 
     .line 66
     .line 67
@@ -1419,18 +1419,18 @@
     .line 174
 .end method
 
-.method private final onTouchEvent(Lcf/d;)V
+.method private final onTouchEvent(Lef/d;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcf/d;->P()I
+    invoke-virtual {p1}, Lef/d;->P()I
 
     .line 2
     .line 3
@@ -1446,7 +1446,7 @@
 
     .line 8
     :cond_0
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 9
     .line 10
@@ -1464,7 +1464,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 17
     .line 18
@@ -1476,7 +1476,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 23
     .line 24
@@ -1488,7 +1488,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p1}, Lcf/d;->S()Landroid/view/View;
+    invoke-virtual {p1}, Lef/d;->S()Landroid/view/View;
 
     .line 29
     .line 30
@@ -1501,7 +1501,7 @@
     .line 33
     .line 34
     :cond_1
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 35
     .line 36
@@ -1520,7 +1520,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/k$a;->b(Lcf/d;)Lcom/swmansion/gesturehandler/react/k;
+    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/k$a;->b(Lef/d;)Lcom/swmansion/gesturehandler/react/k;
 
     .line 44
     .line 45
@@ -1537,7 +1537,7 @@
 
     .line 51
     :cond_2
-    invoke-virtual {p1}, Lcf/d;->E()I
+    invoke-virtual {p1}, Lef/d;->E()I
 
     .line 52
     .line 53
@@ -1553,7 +1553,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/k$a;->a(Lcf/d;)Lcom/facebook/react/bridge/WritableMap;
+    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/k$a;->a(Lef/d;)Lcom/facebook/react/bridge/WritableMap;
 
     .line 60
     .line 61
@@ -1687,7 +1687,7 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lbf/b;->a(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/uimanager/events/Event;)V
+    invoke-static {v0, p1}, Ldf/b;->a(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/uimanager/events/Event;)V
 
     return-void
 .end method
@@ -1703,7 +1703,7 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lbf/b;->a(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/uimanager/events/Event;)V
+    invoke-static {v0, p1}, Ldf/b;->a(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/uimanager/events/Event;)V
 
     return-void
 .end method
@@ -1948,7 +1948,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(",
             "Ljava/lang/String;",
             "I",
@@ -2023,7 +2023,7 @@
     move-result-object p1
 
     .line 33
-    invoke-virtual {v3, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->c(Landroid/content/Context;)Lcf/d;
+    invoke-virtual {v3, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->c(Landroid/content/Context;)Lef/d;
 
     .line 34
     .line 35
@@ -2031,7 +2031,7 @@
     move-result-object p1
 
     .line 37
-    invoke-virtual {p1, p2}, Lcf/d;->A0(I)V
+    invoke-virtual {p1, p2}, Lef/d;->A0(I)V
 
     .line 38
     .line 39
@@ -2040,7 +2040,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p1, p2}, Lcf/d;->x0(Lcf/n;)Lcf/d;
+    invoke-virtual {p1, p2}, Lef/d;->x0(Lef/n;)Lef/d;
 
     .line 43
     .line 44
@@ -2049,7 +2049,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {p2, p1}, Lcom/swmansion/gesturehandler/react/h;->j(Lcf/d;)V
+    invoke-virtual {p2, p1}, Lcom/swmansion/gesturehandler/react/h;->j(Lef/d;)V
 
     .line 48
     .line 49
@@ -2058,12 +2058,12 @@
 
     .line 51
     .line 52
-    invoke-virtual {p2, p1, p3}, Lcom/swmansion/gesturehandler/react/f;->e(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {p2, p1, p3}, Lcom/swmansion/gesturehandler/react/f;->e(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 53
     .line 54
     .line 55
-    invoke-virtual {v3, p1, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {v3, p1, p3}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 56
     .line 57
@@ -2314,7 +2314,7 @@
     move-result-object v6
 
     .line 18
-    invoke-static {v4, v6}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v4, v6}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 19
     .line 20
@@ -2330,7 +2330,7 @@
 
     .line 25
     .line 26
-    invoke-static {v4, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v4, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 27
     .line 28
@@ -2368,7 +2368,7 @@
 
     .line 43
     .line 44
-    invoke-static {v9, v8}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v9, v8}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 45
     .line 46
@@ -2395,7 +2395,7 @@
     move-result-object v11
 
     .line 57
-    invoke-static {v9, v11}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v9, v11}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 58
     .line 59
@@ -2411,7 +2411,7 @@
 
     .line 64
     .line 65
-    invoke-static {v9, v7}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v9, v7}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 66
     .line 67
@@ -2438,7 +2438,7 @@
     move-result-object v12
 
     .line 78
-    invoke-static {v9, v12}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v9, v12}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 79
     .line 80
@@ -2450,7 +2450,7 @@
 
     .line 83
     .line 84
-    invoke-static {v3}, Lmf/s;->k([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v3}, Lof/s;->k([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 85
     .line 86
@@ -2462,7 +2462,7 @@
 
     .line 89
     .line 90
-    invoke-static {v9, v3}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v9, v3}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 91
     .line 92
@@ -2482,7 +2482,7 @@
 
     .line 99
     .line 100
-    invoke-static {v4, v7}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v4, v7}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 101
     .line 102
@@ -2498,7 +2498,7 @@
 
     .line 107
     .line 108
-    invoke-static {v4, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v4, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 109
     .line 110
@@ -2514,7 +2514,7 @@
 
     .line 115
     .line 116
-    invoke-static {v1, v8}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v8}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 117
     .line 118
@@ -2542,7 +2542,7 @@
 
     .line 129
     .line 130
-    invoke-static {v1, v0}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v0}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 131
     .line 132
@@ -2554,7 +2554,7 @@
 
     .line 135
     .line 136
-    invoke-static {v3}, Lmf/s;->k([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v3}, Lof/s;->k([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 137
     .line 138
@@ -2566,7 +2566,7 @@
 
     .line 141
     .line 142
-    invoke-static {v1, v0}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v0}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 143
     .line 144
@@ -2578,7 +2578,7 @@
 
     .line 147
     .line 148
-    invoke-static {v2}, Lmf/s;->k([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v2}, Lof/s;->k([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 149
     .line 150
@@ -3343,7 +3343,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/h;->h(I)Lcf/d;
+    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/h;->h(I)Lef/d;
 
     .line 4
     .line 5
@@ -3394,7 +3394,7 @@
 
     .line 25
     :cond_0
-    invoke-virtual {p1}, Lcf/d;->A()V
+    invoke-virtual {p1}, Lef/d;->A()V
 
     .line 26
     .line 27
@@ -3403,7 +3403,7 @@
 
     .line 29
     :cond_1
-    invoke-virtual {p1, v0}, Lcf/d;->k(Z)V
+    invoke-virtual {p1, v0}, Lef/d;->k(Z)V
 
     .line 30
     .line 31
@@ -3412,7 +3412,7 @@
 
     .line 33
     :cond_2
-    invoke-virtual {p1}, Lcf/d;->p()V
+    invoke-virtual {p1}, Lef/d;->p()V
 
     .line 34
     .line 35
@@ -3421,7 +3421,7 @@
 
     .line 37
     :cond_3
-    invoke-virtual {p1}, Lcf/d;->o()V
+    invoke-virtual {p1}, Lef/d;->o()V
 
     .line 38
     .line 39
@@ -3430,7 +3430,7 @@
 
     .line 41
     :cond_4
-    invoke-virtual {p1}, Lcf/d;->C()V
+    invoke-virtual {p1}, Lef/d;->C()V
 
     .line 42
     .line 43
@@ -3532,7 +3532,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(I",
             "Lcom/facebook/react/bridge/ReadableMap;",
             ")V"
@@ -3553,7 +3553,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/h;->h(I)Lcf/d;
+    invoke-virtual {v0, p1}, Lcom/swmansion/gesturehandler/react/h;->h(I)Lef/d;
 
     .line 9
     .line 10
@@ -3565,7 +3565,7 @@
 
     .line 13
     .line 14
-    invoke-direct {p0, v0}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lcf/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
+    invoke-direct {p0, v0}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;->findFactoryForHandler(Lef/d;)Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;
 
     .line 15
     .line 16
@@ -3590,12 +3590,12 @@
 
     .line 26
     .line 27
-    invoke-virtual {p1, v0, p2}, Lcom/swmansion/gesturehandler/react/f;->e(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {p1, v0, p2}, Lcom/swmansion/gesturehandler/react/f;->e(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v1, v0, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {v1, v0, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 31
     .line 32

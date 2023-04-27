@@ -408,7 +408,7 @@
     move-result-object p2
 
     .line 15
-    sget v0, Ldb/h;->l:I
+    sget v0, Leb/h;->l:I
 
     .line 16
     .line 17
@@ -497,7 +497,7 @@
     move-result-object p1
 
     .line 59
-    sget p2, Ldb/i;->j:I
+    sget p2, Leb/i;->j:I
 
     .line 60
     .line 61

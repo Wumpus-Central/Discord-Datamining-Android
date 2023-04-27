@@ -849,7 +849,7 @@
 
     iget-object v1, p0, Lcom/hannesdorfmann/adapterdelegates4/AdapterDelegatesManager;->b:Lcom/hannesdorfmann/adapterdelegates4/AdapterDelegate;
 
-    invoke-virtual {v0, p1, v1}, Landroidx/collection/SparseArrayCompat;->i(ILjava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Landroidx/collection/SparseArrayCompat;->h(ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

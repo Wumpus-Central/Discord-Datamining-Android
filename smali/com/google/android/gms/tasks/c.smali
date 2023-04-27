@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lcb/i;)V
+.method synthetic constructor <init>(Ldb/i;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

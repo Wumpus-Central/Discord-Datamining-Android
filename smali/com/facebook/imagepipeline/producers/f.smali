@@ -4,24 +4,24 @@
 
 
 # direct methods
-.method public constructor <init>(Lo5/s;Lo5/f;Lcom/facebook/imagepipeline/producers/l0;)V
+.method public constructor <init>(Lp5/s;Lp5/f;Lcom/facebook/imagepipeline/producers/l0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;",
-            "Lo5/f;",
+            "Lp5/f;",
             "Lcom/facebook/imagepipeline/producers/l0<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/producers/h;-><init>(Lo5/s;Lo5/f;Lcom/facebook/imagepipeline/producers/l0;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/producers/h;-><init>(Lp5/s;Lp5/f;Lcom/facebook/imagepipeline/producers/l0;)V
 
     return-void
 .end method
@@ -51,13 +51,13 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/cache/common/CacheKey;",
             "Z)",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;"
         }
     .end annotation

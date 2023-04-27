@@ -17,7 +17,7 @@
 # instance fields
 .field private firstUptime:Ljava/lang/Long;
 
-.field private final gestureHandlerStateManager:Laf/a;
+.field private final gestureHandlerStateManager:Lcf/a;
 
 .field private final mContext:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
@@ -30,7 +30,7 @@
 .end field
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -277,7 +277,7 @@
     move-result-object p1
 
     .line 96
-    check-cast p1, Laf/a;
+    check-cast p1, Lcf/a;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -288,7 +288,7 @@
 
     .line 99
     :catch_0
-    iput-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->gestureHandlerStateManager:Laf/a;
+    iput-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->gestureHandlerStateManager:Lcf/a;
 
     .line 100
     .line 101
@@ -556,7 +556,7 @@
 
 .method private configureProps(Lcom/facebook/react/bridge/ReadableNativeArray;Lcom/facebook/react/bridge/ReadableNativeArray;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -720,7 +720,7 @@
 
 .method private getCurrentTime()J
     .locals 6
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -922,7 +922,7 @@
 
 .method private measure(I)[F
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->mNodesManager:Lcom/swmansion/reanimated/NodesManager;
@@ -936,7 +936,7 @@
 
 .method private obtainProp(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->mNodesManager:Lcom/swmansion/reanimated/NodesManager;
@@ -950,7 +950,7 @@
 
 .method private registerEventHandler(Lcom/swmansion/reanimated/NativeProxy$EventHandler;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1005,7 +1005,7 @@
 
 .method private registerSensor(IILcom/swmansion/reanimated/NativeProxy$SensorSetter;)I
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1197,7 +1197,7 @@
 
 .method private requestRender(Lcom/swmansion/reanimated/NativeProxy$AnimationFrameCallback;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->mNodesManager:Lcom/swmansion/reanimated/NodesManager;
@@ -1209,7 +1209,7 @@
 
 .method private scrollTo(IDDZ)V
     .locals 7
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->mNodesManager:Lcom/swmansion/reanimated/NodesManager;
@@ -1229,11 +1229,11 @@
 
 .method private setGestureState(II)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->gestureHandlerStateManager:Laf/a;
+    iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->gestureHandlerStateManager:Lcf/a;
 
     .line 2
     .line 3
@@ -1241,7 +1241,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, p1, p2}, Laf/a;->setGestureHandlerState(II)V
+    invoke-interface {v0, p1, p2}, Lcf/a;->setGestureHandlerState(II)V
 
     .line 6
     .line 7
@@ -1307,7 +1307,7 @@
 
 .method private subscribeForKeyboardEvents(Lcom/swmansion/reanimated/NativeProxy$KeyboardEventDataUpdater;)I
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->reanimatedKeyboardEventListener:Lcom/swmansion/reanimated/keyboardObserver/ReanimatedKeyboardEventListener;
@@ -1375,7 +1375,7 @@
 
 .method private unregisterSensor(I)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->reanimatedSensorContainer:Lcom/swmansion/reanimated/sensor/ReanimatedSensorContainer;
@@ -1387,7 +1387,7 @@
 
 .method private unsubscribeFromKeyboardEvents(I)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->reanimatedKeyboardEventListener:Lcom/swmansion/reanimated/keyboardObserver/ReanimatedKeyboardEventListener;
@@ -1399,9 +1399,6 @@
 
 .method private updateProps(ILjava/util/Map;)V
     .locals 1
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1410,6 +1407,9 @@
             "Ljava/lang/Object;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/swmansion/reanimated/NativeProxy;->mNodesManager:Lcom/swmansion/reanimated/NodesManager;

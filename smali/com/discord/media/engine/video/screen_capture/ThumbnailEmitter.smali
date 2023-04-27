@@ -1135,7 +1135,7 @@
 
     .line 77
     .line 78
-    invoke-static {v2}, Lzf/a;->a(F)I
+    invoke-static {v2}, Lbg/a;->a(F)I
 
     .line 79
     .line 80
@@ -1146,7 +1146,7 @@
     const/4 v8, 0x0
 
     .line 83
-    invoke-static {v1}, Lzf/a;->a(F)I
+    invoke-static {v1}, Lbg/a;->a(F)I
 
     .line 84
     .line 85
@@ -1203,7 +1203,7 @@
     const/4 v7, 0x0
 
     .line 107
-    invoke-static {v1}, Lzf/a;->a(F)I
+    invoke-static {v1}, Lbg/a;->a(F)I
 
     .line 108
     .line 109
@@ -1215,7 +1215,7 @@
 
     .line 112
     .line 113
-    invoke-static {v2}, Lzf/a;->a(F)I
+    invoke-static {v2}, Lbg/a;->a(F)I
 
     .line 114
     .line 115

@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lcom/google/android/exoplayer2/upstream/h$b<",
         "Lcom/google/android/exoplayer2/upstream/i<",
-        "Ll8/b;",
+        "Lm8/b;",
         ">;>;"
     }
 .end annotation
@@ -60,7 +60,7 @@
         value = {
             "(",
             "Lcom/google/android/exoplayer2/upstream/i<",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;JJZ)V"
         }
     .end annotation
@@ -84,7 +84,7 @@
         value = {
             "(",
             "Lcom/google/android/exoplayer2/upstream/i<",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;JJ)V"
         }
     .end annotation
@@ -108,7 +108,7 @@
         value = {
             "(",
             "Lcom/google/android/exoplayer2/upstream/i<",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;JJ",
             "Ljava/io/IOException;",
             "I)",
@@ -145,7 +145,7 @@
     return-void
 .end method
 
-.method public bridge synthetic j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+.method public bridge synthetic k(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     .locals 0
 
     check-cast p1, Lcom/google/android/exoplayer2/upstream/i;

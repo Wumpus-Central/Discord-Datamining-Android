@@ -89,7 +89,7 @@
     .end annotation
 
     .line 2
-    new-instance v0, Lzi/h1;
+    new-instance v0, Lbj/h1;
 
     sget-object v1, Lcom/discord/chat/reactevents/TapOpTagData;->INSTANCE:Lcom/discord/chat/reactevents/TapOpTagData;
 
@@ -99,7 +99,7 @@
 
     const-string v3, "com.discord.chat.reactevents.TapOpTagData"
 
-    invoke-direct {v0, v3, v1, v2}, Lzi/h1;-><init>(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/annotation/Annotation;)V
+    invoke-direct {v0, v3, v1, v2}, Lbj/h1;-><init>(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/annotation/Annotation;)V
 
     return-object v0
 .end method

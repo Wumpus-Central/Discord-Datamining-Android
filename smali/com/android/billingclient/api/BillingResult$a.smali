@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/p;)V
+.method synthetic constructor <init>(Lv2/p;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -90,7 +90,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public b(Ljava/lang/String;)Lcom/android/billingclient/api/BillingResult$a;

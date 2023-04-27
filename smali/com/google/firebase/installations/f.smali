@@ -124,11 +124,11 @@
     return p1
 .end method
 
-.method public b(Lvc/d;)Z
+.method public b(Lwc/d;)Z
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lvc/d;->l()Z
+    invoke-virtual {p1}, Lwc/d;->l()Z
 
     .line 2
     .line 3
@@ -140,7 +140,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Lvc/d;->k()Z
+    invoke-virtual {p1}, Lwc/d;->k()Z
 
     .line 8
     .line 9
@@ -152,7 +152,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Lvc/d;->i()Z
+    invoke-virtual {p1}, Lwc/d;->i()Z
 
     .line 14
     .line 15
@@ -180,7 +180,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Lvc/d;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lwc/d;->d()Ljava/lang/String;
 
     .line 25
     .line 26

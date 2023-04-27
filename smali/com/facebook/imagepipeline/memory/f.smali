@@ -12,10 +12,10 @@
 
 
 # instance fields
-.field private final a:Lz3/c;
+.field private final a:La4/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lz3/c<",
+            "La4/c<",
             "[B>;"
         }
     .end annotation
@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ly3/c;Lx5/z;)V
+.method public constructor <init>(Lz3/c;Ly5/z;)V
     .locals 2
 
     .line 1
@@ -34,7 +34,7 @@
     .line 2
     .line 3
     .line 4
-    iget v0, p2, Lx5/z;->g:I
+    iget v0, p2, Ly5/z;->g:I
 
     .line 5
     .line 6
@@ -61,7 +61,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 16
     .line 17
@@ -70,7 +70,7 @@
 
     .line 19
     .line 20
-    invoke-static {}, Lx5/v;->h()Lx5/v;
+    invoke-static {}, Ly5/v;->h()Ly5/v;
 
     .line 21
     .line 22
@@ -78,7 +78,7 @@
     move-result-object v1
 
     .line 24
-    invoke-direct {v0, p1, p2, v1}, Lcom/facebook/imagepipeline/memory/f$b;-><init>(Ly3/c;Lx5/z;Lx5/a0;)V
+    invoke-direct {v0, p1, p2, v1}, Lcom/facebook/imagepipeline/memory/f$b;-><init>(Lz3/c;Ly5/z;Ly5/a0;)V
 
     .line 25
     .line 26
@@ -96,7 +96,7 @@
     .line 32
     .line 33
     .line 34
-    iput-object p1, p0, Lcom/facebook/imagepipeline/memory/f;->a:Lz3/c;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/memory/f;->a:La4/c;
 
     .line 35
     .line 36
@@ -178,9 +178,9 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/memory/f;->a:Lz3/c;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/memory/f;->a:La4/c;
 
-    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p1, v0}, Lcom/facebook/common/references/CloseableReference;->Y(Ljava/lang/Object;La4/c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p1
 

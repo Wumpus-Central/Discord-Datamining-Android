@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/appbar/AppBarLayout;->x(Lwb/g;Z)V
+    value = Lcom/google/android/material/appbar/AppBarLayout;->x(Lxb/g;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lwb/g;
+.field final synthetic a:Lxb/g;
 
 .field final synthetic b:Lcom/google/android/material/appbar/AppBarLayout;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/appbar/AppBarLayout;Lwb/g;)V
+.method constructor <init>(Lcom/google/android/material/appbar/AppBarLayout;Lxb/g;)V
     .locals 0
 
     iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->b:Lcom/google/android/material/appbar/AppBarLayout;
 
-    iput-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lwb/g;
+    iput-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lxb/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,11 +62,11 @@
     move-result p1
 
     .line 11
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lxb/g;
 
     .line 12
     .line 13
-    invoke-virtual {v0, p1}, Lwb/g;->X(F)V
+    invoke-virtual {v0, p1}, Lxb/g;->X(F)V
 
     .line 14
     .line 15
@@ -83,7 +83,7 @@
     move-result-object v0
 
     .line 22
-    instance-of v0, v0, Lwb/g;
+    instance-of v0, v0, Lxb/g;
 
     .line 23
     .line 24
@@ -103,11 +103,11 @@
     move-result-object v0
 
     .line 32
-    check-cast v0, Lwb/g;
+    check-cast v0, Lxb/g;
 
     .line 33
     .line 34
-    invoke-virtual {v0, p1}, Lwb/g;->X(F)V
+    invoke-virtual {v0, p1}, Lxb/g;->X(F)V
 
     .line 35
     .line 36
@@ -158,11 +158,11 @@
 
     .line 58
     .line 59
-    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lwb/g;
+    iget-object v2, p0, Lcom/google/android/material/appbar/AppBarLayout$b;->a:Lxb/g;
 
     .line 60
     .line 61
-    invoke-virtual {v2}, Lwb/g;->A()I
+    invoke-virtual {v2}, Lxb/g;->A()I
 
     .line 62
     .line 63

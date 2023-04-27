@@ -91,7 +91,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lokio/ByteString;->y()I
+    invoke-virtual {p1}, Lokio/ByteString;->v()I
 
     .line 12
     .line 13
@@ -121,7 +121,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p1, v0}, Lokio/ByteString;->D(Ljava/io/OutputStream;)V
+    invoke-virtual {p1, v0}, Lokio/ByteString;->C(Ljava/io/OutputStream;)V
 
     .line 28
     .line 29
@@ -365,7 +365,7 @@
 
     iget v1, p0, Ljava/io/ByteArrayOutputStream;->count:I
 
-    sget-object v2, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v2, Lri/d;->b:Ljava/nio/charset/Charset;
 
     new-instance v3, Ljava/lang/String;
 

@@ -451,7 +451,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 6
     .line 7
@@ -473,7 +473,7 @@
     .line 15
     .line 16
     .line 17
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 18
     .line 19
@@ -528,7 +528,7 @@
     const-wide/16 v1, 0x0
 
     .line 2
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 3
     new-instance v7, Lcom/facebook/react/fabric/events/EventBeatManager;
@@ -545,7 +545,7 @@
     const-string v3, "FabricJSIModuleProvider.registerBinding"
 
     .line 5
-    invoke-static {v1, v2, v3}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v3}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 6
     new-instance v3, Lcom/facebook/react/fabric/Binding;
@@ -594,10 +594,10 @@
     invoke-virtual/range {v3 .. v9}, Lcom/facebook/react/fabric/Binding;->register(Lcom/facebook/react/bridge/RuntimeExecutor;Lcom/facebook/react/bridge/RuntimeScheduler;Lcom/facebook/react/fabric/FabricUIManager;Lcom/facebook/react/fabric/events/EventBeatManager;Lcom/facebook/react/fabric/ComponentFactory;Lcom/facebook/react/fabric/ReactNativeConfig;)V
 
     .line 13
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 14
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     return-object v0
 .end method

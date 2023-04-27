@@ -39,7 +39,7 @@
 
     .line 5
     :try_start_0
-    invoke-static {p0}, Lcom/google/android/gms/fido/common/Transport;->b(Ljava/lang/String;)Lcom/google/android/gms/fido/common/Transport;
+    invoke-static {p0}, Lcom/google/android/gms/fido/common/Transport;->a(Ljava/lang/String;)Lcom/google/android/gms/fido/common/Transport;
 
     .line 6
     .line 7

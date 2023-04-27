@@ -7,5 +7,5 @@
 .method public abstract a(Ljava/lang/Exception;)Z
 .end method
 
-.method public abstract b(Lvc/d;)Z
+.method public abstract b(Lwc/d;)Z
 .end method

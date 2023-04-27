@@ -166,7 +166,7 @@
 
     .line 45
     :goto_0
-    invoke-static {p1, p2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 46
     .line 47
@@ -191,7 +191,7 @@
     move-exception p3
 
     .line 53
-    invoke-static {p1, p2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 54
     .line 55
@@ -1824,7 +1824,7 @@
 
     .line 79
     :goto_0
-    invoke-static {p2, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p2, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 80
     .line 81
@@ -1849,7 +1849,7 @@
     move-exception v0
 
     .line 87
-    invoke-static {p2, p1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 88
     .line 89

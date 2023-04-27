@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/memory/b<",
-        "Lx5/s;",
+        "Ly5/s;",
         ">;"
     }
 .end annotation
@@ -18,20 +18,20 @@
 
 
 # direct methods
-.method constructor <init>(Ly3/c;Lx5/z;Lx5/a0;)V
+.method constructor <init>(Lz3/c;Ly5/z;Ly5/a0;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/b;-><init>(Ly3/c;Lx5/z;Lx5/a0;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/memory/b;-><init>(Lz3/c;Ly5/z;Ly5/a0;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p2, Lx5/z;->c:Landroid/util/SparseIntArray;
+    iget-object p1, p2, Ly5/z;->c:Landroid/util/SparseIntArray;
 
     .line 5
     .line 6
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -242,19 +242,19 @@
 
 
 # virtual methods
-.method protected abstract A(I)Lx5/s;
+.method protected abstract A(I)Ly5/s;
 .end method
 
-.method protected B(Lx5/s;)V
+.method protected B(Ly5/s;)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    invoke-interface {p1}, Lx5/s;->close()V
+    invoke-interface {p1}, Ly5/s;->close()V
 
     .line 5
     .line 6
@@ -301,16 +301,16 @@
     .line 46
 .end method
 
-.method protected C(Lx5/s;)I
+.method protected C(Ly5/s;)I
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    invoke-interface {p1}, Lx5/s;->getSize()I
+    invoke-interface {p1}, Ly5/s;->getSize()I
 
     .line 5
     .line 6
@@ -371,16 +371,16 @@
     return v0
 .end method
 
-.method protected E(Lx5/s;)Z
+.method protected E(Ly5/s;)Z
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    invoke-interface {p1}, Lx5/s;->isClosed()Z
+    invoke-interface {p1}, Ly5/s;->isClosed()Z
 
     .line 5
     .line 6
@@ -434,7 +434,7 @@
 .method protected bridge synthetic g(I)Ljava/lang/Object;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->A(I)Lx5/s;
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->A(I)Ly5/s;
 
     move-result-object p1
 
@@ -444,9 +444,9 @@
 .method protected bridge synthetic k(Ljava/lang/Object;)V
     .locals 0
 
-    check-cast p1, Lx5/s;
+    check-cast p1, Ly5/s;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->B(Lx5/s;)V
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->B(Ly5/s;)V
 
     return-void
 .end method
@@ -540,9 +540,9 @@
 .method protected bridge synthetic o(Ljava/lang/Object;)I
     .locals 0
 
-    check-cast p1, Lx5/s;
+    check-cast p1, Ly5/s;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->C(Lx5/s;)I
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->C(Ly5/s;)I
 
     move-result p1
 
@@ -558,9 +558,9 @@
 .method protected bridge synthetic u(Ljava/lang/Object;)Z
     .locals 0
 
-    check-cast p1, Lx5/s;
+    check-cast p1, Ly5/s;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->E(Lx5/s;)Z
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/memory/h;->E(Ly5/s;)Z
 
     move-result p1
 

@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -19,7 +19,7 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 1
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     const/4 v0, 0x0

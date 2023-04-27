@@ -4,15 +4,15 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
         "Lcom/facebook/yoga/YogaLogLevel;",
         ">;"
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -637,7 +637,7 @@
 
 .method public static fromInt(I)Lcom/facebook/yoga/YogaLogLevel;
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

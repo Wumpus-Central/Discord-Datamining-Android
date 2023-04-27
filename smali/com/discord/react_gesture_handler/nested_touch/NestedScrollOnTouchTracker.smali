@@ -1089,7 +1089,7 @@
     .line 179
     .line 180
     .line 181
-    invoke-virtual {v8}, Lkotlin/ranges/a;->h()Lmf/p;
+    invoke-virtual {v8}, Lkotlin/ranges/a;->g()Lof/p;
 
     .line 182
     .line 183
@@ -1111,7 +1111,7 @@
 
     .line 190
     .line 191
-    invoke-virtual {v6}, Lmf/p;->nextInt()I
+    invoke-virtual {v6}, Lof/p;->nextInt()I
 
     .line 192
     .line 193

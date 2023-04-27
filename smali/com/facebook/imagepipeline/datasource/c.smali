@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lw5/d;)V
+.method private constructor <init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lx5/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -26,17 +26,17 @@
             "Lcom/facebook/common/references/CloseableReference<",
             "TT;>;>;",
             "Lcom/facebook/imagepipeline/producers/r0;",
-            "Lw5/d;",
+            "Lx5/d;",
             ")V"
         }
     .end annotation
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/datasource/a;-><init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lw5/d;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/datasource/a;-><init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lx5/d;)V
 
     return-void
 .end method
 
-.method public static I(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lw5/d;)Lcom/facebook/datasource/DataSource;
+.method public static I(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lx5/d;)Lcom/facebook/datasource/DataSource;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -47,7 +47,7 @@
             "Lcom/facebook/common/references/CloseableReference<",
             "TT;>;>;",
             "Lcom/facebook/imagepipeline/producers/r0;",
-            "Lw5/d;",
+            "Lx5/d;",
             ")",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
@@ -56,7 +56,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -72,7 +72,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -82,12 +82,12 @@
 
     .line 13
     .line 14
-    invoke-direct {v0, p0, p1, p2}, Lcom/facebook/imagepipeline/datasource/c;-><init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lw5/d;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/facebook/imagepipeline/datasource/c;-><init>(Lcom/facebook/imagepipeline/producers/l0;Lcom/facebook/imagepipeline/producers/r0;Lx5/d;)V
 
     .line 15
     .line 16
     .line 17
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 18
     .line 19
@@ -99,7 +99,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 24
     .line 25

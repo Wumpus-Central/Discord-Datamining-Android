@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/auth/api/credentials/IdToken;
-.super Lx9/a;
+.super Ly9/a;
 .source "SourceFile"
 
 # interfaces
@@ -33,9 +33,9 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lm9/f;
+    new-instance v0, Ln9/f;
 
-    invoke-direct {v0}, Lm9/f;-><init>()V
+    invoke-direct {v0}, Ln9/f;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/auth/api/credentials/IdToken;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -46,7 +46,7 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Lx9/a;-><init>()V
+    invoke-direct {p0}, Ly9/a;-><init>()V
 
     .line 2
     .line 3
@@ -67,7 +67,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Lw9/p;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lx9/p;->b(ZLjava/lang/Object;)V
 
     .line 13
     .line 14
@@ -88,7 +88,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v1}, Lw9/p;->b(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lx9/p;->b(ZLjava/lang/Object;)V
 
     .line 24
     .line 25
@@ -369,7 +369,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lw9/n;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lx9/n;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -389,7 +389,7 @@
 
     .line 26
     .line 27
-    invoke-static {v1, p1}, Lw9/n;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lx9/n;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
     .line 29
@@ -500,11 +500,27 @@
     .line 126
 .end method
 
+.method public p()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->k:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public r()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->l:Ljava/lang/String;
+
+    return-object v0
+.end method
+
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lx9/c;->a(Landroid/os/Parcel;)I
+    invoke-static {p1}, Ly9/c;->a(Landroid/os/Parcel;)I
 
     .line 2
     .line 3
@@ -512,7 +528,7 @@
     move-result p2
 
     .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->x()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->p()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -526,7 +542,7 @@
     const/4 v2, 0x0
 
     .line 11
-    invoke-static {p1, v1, v0, v2}, Lx9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v0, v2}, Ly9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 12
     .line 13
@@ -534,7 +550,7 @@
     const/4 v0, 0x2
 
     .line 15
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->y()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/IdToken;->r()Ljava/lang/String;
 
     .line 16
     .line 17
@@ -542,12 +558,12 @@
     move-result-object v1
 
     .line 19
-    invoke-static {p1, v0, v1, v2}, Lx9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v0, v1, v2}, Ly9/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 20
     .line 21
     .line 22
-    invoke-static {p1, p2}, Lx9/c;->b(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Ly9/c;->b(Landroid/os/Parcel;I)V
 
     .line 23
     .line 24
@@ -779,20 +795,4 @@
     .line 249
     .line 250
     .line 251
-.end method
-
-.method public x()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->k:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public y()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->l:Ljava/lang/String;
-
-    return-object v0
 .end method

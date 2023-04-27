@@ -87,7 +87,7 @@
     const-string p2, "setState called without a StateWrapper"
 
     .line 1
-    invoke-static {p1, p2}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 

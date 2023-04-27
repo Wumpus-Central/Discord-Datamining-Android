@@ -1,5 +1,5 @@
 .class final Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder$a;
-.super Lp4/a;
+.super Lq4/a;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp4/a<",
+        "Lq4/a<",
         "Ljava/lang/Object;",
         ">;"
     }
@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lp4/a;-><init>()V
+    invoke-direct {p0}, Lq4/a;-><init>()V
 
     return-void
 .end method

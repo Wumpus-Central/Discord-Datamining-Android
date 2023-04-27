@@ -4,17 +4,17 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Lz3/h;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lu5/e;
+.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lv5/e;
     .locals 3
 
     .line 1
@@ -62,7 +62,7 @@
     long-to-int p1, v1
 
     .line 23
-    invoke-virtual {p0, v0, p1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, v0, p1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 24
     .line 25

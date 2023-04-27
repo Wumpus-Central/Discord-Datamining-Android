@@ -151,14 +151,14 @@
     invoke-direct {v1, p0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 9
-    new-instance p0, Loj/c;
+    new-instance p0, Lqj/c;
 
     int-to-long v2, p1
 
-    invoke-direct {p0, v1, v2, v3}, Loj/c;-><init>(Ljava/io/File;J)V
+    invoke-direct {p0, v1, v2, v3}, Lqj/c;-><init>(Ljava/io/File;J)V
 
     .line 10
-    invoke-virtual {v0, p0}, Lokhttp3/OkHttpClient$Builder;->d(Loj/c;)Lokhttp3/OkHttpClient$Builder;
+    invoke-virtual {v0, p0}, Lokhttp3/OkHttpClient$Builder;->d(Lqj/c;)Lokhttp3/OkHttpClient$Builder;
 
     move-result-object p0
 

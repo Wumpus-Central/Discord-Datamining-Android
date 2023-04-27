@@ -514,7 +514,7 @@
 
     .line 4
     .line 5
-    invoke-static/range {p5 .. p5}, Lrf/b;->c(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    invoke-static/range {p5 .. p5}, Ltf/b;->c(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
     .line 6
     .line 7
@@ -660,7 +660,7 @@
     move-object v7, v14
 
     .line 75
-    invoke-virtual/range {v0 .. v7}, Lcom/linkedin/android/litr/MediaTransformer;->h(Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Landroid/media/MediaFormat;Landroid/media/MediaFormat;Lfe/a;Lcom/linkedin/android/litr/d;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/linkedin/android/litr/MediaTransformer;->h(Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Landroid/media/MediaFormat;Landroid/media/MediaFormat;Lge/a;Lcom/linkedin/android/litr/d;)V
 
     .line 76
     .line 77
@@ -687,7 +687,7 @@
     move-result-object v0
 
     .line 90
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     .line 91
     .line 92

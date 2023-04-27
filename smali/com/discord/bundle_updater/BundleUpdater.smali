@@ -49,7 +49,7 @@
         "destinationFile",
         "",
         "attempt",
-        "Llf/s;",
+        "Lnf/s;",
         "Lokhttp3/Headers;",
         "downloadSingleFile-hUnOzRk",
         "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/discord/bundle_updater/BundleUpdater$Patch;Ljava/io/File;I)Ljava/lang/Object;",
@@ -281,6 +281,200 @@
     .line 39
     .line 40
     return-void
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
 .end method
 
 .method private constructor <init>(Landroid/content/SharedPreferences;Ljava/io/File;Landroid/content/res/AssetManager;Ljava/util/concurrent/ExecutorService;)V
@@ -304,7 +498,7 @@
     .line 6
     sget-object p1, Lcom/discord/bundle_updater/BundleUpdater$cookieManager$2;->INSTANCE:Lcom/discord/bundle_updater/BundleUpdater$cookieManager$2;
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -315,7 +509,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/bundle_updater/BundleUpdater$client$2;-><init>(Lcom/discord/bundle_updater/BundleUpdater;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -326,7 +520,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/bundle_updater/BundleUpdater$otasRootDirectory$2;-><init>(Lcom/discord/bundle_updater/BundleUpdater;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -868,7 +1062,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-static {v3}, Lvf/j;->i(Ljava/io/File;)Z
+    invoke-static {v3}, Lxf/j;->i(Ljava/io/File;)Z
 
     .line 73
     .line 74
@@ -993,7 +1187,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private final downloadManifest()Lcom/discord/bundle_updater/BundleUpdater$OtaResult;
@@ -1097,7 +1290,7 @@
     move-result-object v1
 
     .line 48
-    invoke-static {v0, v1}, Lvf/j;->n(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lxf/j;->n(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;
 
     .line 49
     .line 50
@@ -1132,7 +1325,7 @@
 
     .line 64
     .line 65
-    invoke-static/range {v13 .. v18}, Lpi/l;->y0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    invoke-static/range {v13 .. v18}, Lri/l;->y0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
     .line 66
     .line 67
@@ -1336,7 +1529,7 @@
     move-result-object v0
 
     .line 166
-    invoke-static {v0}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 167
     .line 168
@@ -1367,7 +1560,7 @@
 
     .line 178
     .line 179
-    invoke-static {v2, v0}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v2, v0}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 180
     .line 181
@@ -1425,7 +1618,7 @@
     move-result-object v0
 
     .line 203
-    invoke-static {v0}, Llf/s;->e(Ljava/lang/Object;)Ljava/lang/Throwable;
+    invoke-static {v0}, Lnf/s;->e(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     .line 204
     .line 205
@@ -1532,7 +1725,7 @@
 
     .line 256
     .line 257
-    invoke-virtual {v0, v1}, Lokhttp3/Headers;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lokhttp3/Headers;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 258
     .line 259
@@ -3126,7 +3319,7 @@
 
     .line 246
     .line 247
-    invoke-static/range {v19 .. v24}, Lpi/l;->D(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
+    invoke-static/range {v19 .. v24}, Lri/l;->D(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
 
     .line 248
     .line 249
@@ -3165,7 +3358,7 @@
     const/4 v4, 0x2
 
     .line 266
-    invoke-static {v8, v3, v14, v4, v9}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v8, v3, v14, v4, v9}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     .line 267
     .line 268
@@ -3330,7 +3523,7 @@
     const/4 v15, 0x0
 
     .line 349
-    invoke-static {v3, v14, v15, v8, v10}, Lvf/b;->b(Ljava/io/InputStream;Ljava/io/OutputStream;IILjava/lang/Object;)J
+    invoke-static {v3, v14, v15, v8, v10}, Lxf/b;->b(Ljava/io/InputStream;Ljava/io/OutputStream;IILjava/lang/Object;)J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -3338,14 +3531,14 @@
     .line 351
     .line 352
     :try_start_2
-    invoke-static {v14, v10}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v14, v10}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 353
     .line 354
     .line 355
-    invoke-static {v3, v10}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v10}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 356
     .line 357
@@ -3424,7 +3617,7 @@
 
     .line 390
     :try_start_4
-    invoke-static {v14, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v14, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 391
     .line 392
@@ -3454,7 +3647,7 @@
     move-object v2, v0
 
     .line 399
-    invoke-static {v3, v1}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v1}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 400
     .line 401
@@ -4546,7 +4739,7 @@
     move-result-object v0
 
     .line 82
-    invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 83
     .line 84
@@ -4584,7 +4777,7 @@
 
     .line 98
     .line 99
-    invoke-static/range {v0 .. v5}, Lvf/j;->h(Ljava/io/File;Ljava/io/File;ZIILjava/lang/Object;)Ljava/io/File;
+    invoke-static/range {v0 .. v5}, Lxf/j;->h(Ljava/io/File;Ljava/io/File;ZIILjava/lang/Object;)Ljava/io/File;
 
     .line 100
     .line 101
@@ -4927,7 +5120,7 @@
 
     .line 72
     .line 73
-    invoke-static {v10, v11}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v10, v11}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 74
     .line 75
@@ -4950,7 +5143,7 @@
 
     .line 83
     .line 84
-    invoke-static {v10, v14}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v10, v14}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 85
     .line 86
@@ -4965,7 +5158,7 @@
 
     .line 90
     .line 91
-    invoke-static {v9}, Lmf/s;->k([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v9}, Lof/s;->k([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 92
     .line 93
@@ -4994,7 +5187,7 @@
     .line 103
     .line 104
     :goto_0
-    invoke-static {v9, v10}, Lmf/s;->n(Ljava/util/Map;Ljava/lang/Iterable;)Ljava/util/Map;
+    invoke-static {v9, v10}, Lof/s;->n(Ljava/util/Map;Ljava/lang/Iterable;)Ljava/util/Map;
 
     .line 105
     .line 106
@@ -5023,7 +5216,7 @@
 
     .line 118
     :try_start_0
-    invoke-virtual {v12}, Lokhttp3/Response;->Y()Z
+    invoke-virtual {v12}, Lokhttp3/Response;->X()Z
 
     .line 119
     .line 120
@@ -5113,7 +5306,7 @@
 
     .line 159
     :cond_4
-    sget-object v0, Llf/s;->l:Llf/s$a;
+    sget-object v0, Lnf/s;->l:Lnf/s$a;
 
     .line 160
     .line 161
@@ -5134,7 +5327,7 @@
     .line 168
     .line 169
     .line 170
-    invoke-static {v0}, Llf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {v0}, Lnf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     .line 171
     .line 172
@@ -5142,7 +5335,7 @@
     move-result-object v0
 
     .line 174
-    invoke-static {v0}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 175
     .line 176
@@ -5153,7 +5346,7 @@
 
     .line 178
     :goto_1
-    invoke-static {v12, v11}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v12, v11}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 179
     .line 180
@@ -5283,7 +5476,7 @@
     .line 238
     .line 239
     .line 240
-    invoke-virtual/range {v16 .. v16}, Lokhttp3/Response;->y()Lokhttp3/Headers;
+    invoke-virtual/range {v16 .. v16}, Lokhttp3/Response;->z()Lokhttp3/Headers;
 
     .line 241
     .line 242
@@ -5295,7 +5488,7 @@
 
     .line 245
     .line 246
-    invoke-virtual {v9, v10}, Lokhttp3/Headers;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v9, v10}, Lokhttp3/Headers;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 247
     .line 248
@@ -5318,7 +5511,7 @@
     .line 255
     .line 256
     :try_start_4
-    new-instance v3, Ldk/i;
+    new-instance v3, Lfk/i;
 
     .line 257
     .line 258
@@ -5330,7 +5523,7 @@
     move-result-object v0
 
     .line 262
-    invoke-direct {v3, v0}, Ldk/i;-><init>(Lokio/Source;)V
+    invoke-direct {v3, v0}, Lfk/i;-><init>(Lokio/Source;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -5366,7 +5559,7 @@
 
     .line 276
     :goto_2
-    invoke-static {v3}, Ldk/m;->d(Lokio/Source;)Lokio/BufferedSource;
+    invoke-static {v3}, Lfk/m;->d(Lokio/Source;)Lokio/BufferedSource;
 
     .line 277
     .line 278
@@ -5434,7 +5627,7 @@
     const/4 v10, 0x1
 
     .line 302
-    invoke-static {v0, v15, v10, v9}, Ldk/m;->j(Ljava/io/File;ZILjava/lang/Object;)Lokio/Sink;
+    invoke-static {v0, v15, v10, v9}, Lfk/m;->j(Ljava/io/File;ZILjava/lang/Object;)Lokio/Sink;
 
     .line 303
     .line 304
@@ -5442,7 +5635,7 @@
     move-result-object v0
 
     .line 306
-    invoke-static {v0}, Ldk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
+    invoke-static {v0}, Lfk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
 
     .line 307
     .line 308
@@ -5461,7 +5654,7 @@
     .line 312
     .line 313
     :try_start_9
-    invoke-static {v11, v9}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v11, v9}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_6
 
@@ -5469,7 +5662,7 @@
     .line 315
     .line 316
     :try_start_a
-    invoke-static {v3, v9}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v9}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_9
 
@@ -5858,7 +6051,7 @@
 
     .line 507
     .line 508
-    invoke-static {v1, v9}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v9}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 509
     .line 510
@@ -5959,11 +6152,11 @@
     .line 557
     .line 558
     .line 559
-    sget-object v0, Llf/s;->l:Llf/s$a;
+    sget-object v0, Lnf/s;->l:Lnf/s$a;
 
     .line 560
     .line 561
-    invoke-virtual {v1}, Lokhttp3/Response;->y()Lokhttp3/Headers;
+    invoke-virtual {v1}, Lokhttp3/Response;->z()Lokhttp3/Headers;
 
     .line 562
     .line 563
@@ -5971,7 +6164,7 @@
     move-result-object v0
 
     .line 565
-    invoke-static {v0}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 566
     .line 567
@@ -5981,7 +6174,7 @@
     .catchall {:try_start_10 .. :try_end_10} :catchall_8
 
     .line 569
-    invoke-static {v1, v9}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v9}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 570
     .line 571
@@ -6014,7 +6207,7 @@
 
     .line 580
     :try_start_12
-    invoke-static {v11, v2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v11, v2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 581
     .line 582
@@ -6058,7 +6251,7 @@
 
     .line 593
     :try_start_14
-    invoke-static {v3, v2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 594
     .line 595
@@ -6111,7 +6304,7 @@
     move-object v3, v0
 
     .line 609
-    invoke-static {v1, v2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 610
     .line 611
@@ -6374,7 +6567,7 @@
 
     .line 77
     .line 78
-    invoke-static {v8, v6}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v8, v6}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 79
     .line 80
@@ -6426,7 +6619,7 @@
 
     .line 101
     .line 102
-    invoke-static {v6, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v6, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 103
     .line 104
@@ -6493,7 +6686,7 @@
 
     .line 132
     .line 133
-    invoke-static {v6, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v6, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 134
     .line 135
@@ -6520,7 +6713,7 @@
     move-result-object v0
 
     .line 146
-    invoke-static {v1, v0}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v0}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 147
     .line 148
@@ -6576,7 +6769,7 @@
 
     .line 172
     .line 173
-    invoke-static {v0, p1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v0, p1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 174
     .line 175
@@ -6591,7 +6784,7 @@
 
     .line 179
     .line 180
-    invoke-static {v5}, Lmf/s;->k([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v5}, Lof/s;->k([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 181
     .line 182
@@ -7805,6 +7998,200 @@
     .line 39
     .line 40
     return-object v0
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
+    .line 220
+    .line 221
+    .line 222
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
 .end method
 
 .method private final getOtasRootDirectory()Ljava/io/File;
@@ -8320,11 +8707,11 @@
     move-result-object v2
 
     .line 55
-    check-cast v2, Loj/k;
+    check-cast v2, Lqj/k;
 
     .line 56
     .line 57
-    invoke-virtual {v2}, Loj/k;->e()Ljava/lang/String;
+    invoke-virtual {v2}, Lqj/k;->e()Ljava/lang/String;
 
     .line 58
     .line 59
@@ -8348,7 +8735,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {v2}, Loj/k;->g()Ljava/lang/String;
+    invoke-virtual {v2}, Lqj/k;->g()Ljava/lang/String;
 
     .line 70
     .line 71
@@ -8570,8 +8957,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 
@@ -8690,7 +9075,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final getManifestETag()Ljava/lang/String;

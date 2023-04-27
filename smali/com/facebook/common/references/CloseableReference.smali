@@ -39,10 +39,10 @@
 
 .field private static p:I
 
-.field private static final q:Lz3/c;
+.field private static final q:La4/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lz3/c<",
+            "La4/c<",
             "Ljava/io/Closeable;",
             ">;"
         }
@@ -55,10 +55,10 @@
 # instance fields
 .field protected k:Z
 
-.field protected final l:Lz3/d;
+.field protected final l:La4/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lz3/d<",
+            "La4/d<",
             "TT;>;"
         }
     .end annotation
@@ -91,7 +91,7 @@
     .line 8
     .line 9
     .line 10
-    sput-object v0, Lcom/facebook/common/references/CloseableReference;->q:Lz3/c;
+    sput-object v0, Lcom/facebook/common/references/CloseableReference;->q:La4/c;
 
     .line 11
     .line 12
@@ -136,49 +136,12 @@
     .line 44
 .end method
 
-.method protected constructor <init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lz3/c<",
-            "TT;>;",
-            "Lcom/facebook/common/references/CloseableReference$c;",
-            "Ljava/lang/Throwable;",
-            ")V"
-        }
-    .end annotation
-
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 8
-    iput-boolean v0, p0, Lcom/facebook/common/references/CloseableReference;->k:Z
-
-    .line 9
-    new-instance v0, Lz3/d;
-
-    invoke-direct {v0, p1, p2}, Lz3/d;-><init>(Ljava/lang/Object;Lz3/c;)V
-
-    iput-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
-
-    .line 10
-    iput-object p3, p0, Lcom/facebook/common/references/CloseableReference;->m:Lcom/facebook/common/references/CloseableReference$c;
-
-    .line 11
-    iput-object p4, p0, Lcom/facebook/common/references/CloseableReference;->n:Ljava/lang/Throwable;
-
-    return-void
-.end method
-
-.method protected constructor <init>(Lz3/d;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+.method protected constructor <init>(La4/d;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lz3/d<",
+            "La4/d<",
             "TT;>;",
             "Lcom/facebook/common/references/CloseableReference$c;",
             "Ljava/lang/Throwable;",
@@ -195,22 +158,59 @@
     iput-boolean v0, p0, Lcom/facebook/common/references/CloseableReference;->k:Z
 
     .line 3
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lz3/d;
+    check-cast v0, La4/d;
 
-    iput-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
+    iput-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
 
     .line 4
-    invoke-virtual {p1}, Lz3/d;->b()V
+    invoke-virtual {p1}, La4/d;->b()V
 
     .line 5
     iput-object p2, p0, Lcom/facebook/common/references/CloseableReference;->m:Lcom/facebook/common/references/CloseableReference$c;
 
     .line 6
     iput-object p3, p0, Lcom/facebook/common/references/CloseableReference;->n:Ljava/lang/Throwable;
+
+    return-void
+.end method
+
+.method protected constructor <init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "La4/c<",
+            "TT;>;",
+            "Lcom/facebook/common/references/CloseableReference$c;",
+            "Ljava/lang/Throwable;",
+            ")V"
+        }
+    .end annotation
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 8
+    iput-boolean v0, p0, Lcom/facebook/common/references/CloseableReference;->k:Z
+
+    .line 9
+    new-instance v0, La4/d;
+
+    invoke-direct {v0, p1, p2}, La4/d;-><init>(Ljava/lang/Object;La4/c;)V
+
+    iput-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
+
+    .line 10
+    iput-object p3, p0, Lcom/facebook/common/references/CloseableReference;->m:Lcom/facebook/common/references/CloseableReference$c;
+
+    .line 11
+    iput-object p4, p0, Lcom/facebook/common/references/CloseableReference;->n:Ljava/lang/Throwable;
 
     return-void
 .end method
@@ -256,9 +256,9 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/facebook/common/references/CloseableReference;->q:Lz3/c;
+    sget-object v0, Lcom/facebook/common/references/CloseableReference;->q:La4/c;
 
-    invoke-static {p0, v0}, Lcom/facebook/common/references/CloseableReference;->Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, v0}, Lcom/facebook/common/references/CloseableReference;->Y(Ljava/lang/Object;La4/c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p0
 
@@ -291,7 +291,7 @@
 
     .line 5
     :cond_0
-    sget-object v1, Lcom/facebook/common/references/CloseableReference;->q:Lz3/c;
+    sget-object v1, Lcom/facebook/common/references/CloseableReference;->q:La4/c;
 
     .line 6
     .line 7
@@ -317,7 +317,7 @@
     .line 17
     .line 18
     :cond_1
-    invoke-static {p0, v1, p1, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, v1, p1, v0}, Lcom/facebook/common/references/CloseableReference;->f0(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 19
     .line 20
@@ -399,14 +399,14 @@
     .line 93
 .end method
 
-.method public static Z(Ljava/lang/Object;Lz3/c;)Lcom/facebook/common/references/CloseableReference;
+.method public static Y(Ljava/lang/Object;La4/c;)Lcom/facebook/common/references/CloseableReference;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(TT;",
-            "Lz3/c<",
+            "La4/c<",
             "TT;>;)",
             "Lcom/facebook/common/references/CloseableReference<",
             "TT;>;"
@@ -415,21 +415,21 @@
 
     sget-object v0, Lcom/facebook/common/references/CloseableReference;->r:Lcom/facebook/common/references/CloseableReference$c;
 
-    invoke-static {p0, p1, v0}, Lcom/facebook/common/references/CloseableReference;->c0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, p1, v0}, Lcom/facebook/common/references/CloseableReference;->b0(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static c0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
+.method public static b0(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;)Lcom/facebook/common/references/CloseableReference;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(TT;",
-            "Lz3/c<",
+            "La4/c<",
             "TT;>;",
             "Lcom/facebook/common/references/CloseableReference$c;",
             ")",
@@ -472,7 +472,7 @@
     .line 15
     .line 16
     :cond_1
-    invoke-static {p0, p1, p2, v0}, Lcom/facebook/common/references/CloseableReference;->i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-static {p0, p1, p2, v0}, Lcom/facebook/common/references/CloseableReference;->f0(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 17
     .line 18
@@ -639,22 +639,14 @@
     .line 176
 .end method
 
-.method static synthetic i()Ljava/lang/Class;
-    .locals 1
-
-    sget-object v0, Lcom/facebook/common/references/CloseableReference;->o:Ljava/lang/Class;
-
-    return-object v0
-.end method
-
-.method public static i0(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
+.method public static f0(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)Lcom/facebook/common/references/CloseableReference;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(TT;",
-            "Lz3/c<",
+            "La4/c<",
             "TT;>;",
             "Lcom/facebook/common/references/CloseableReference$c;",
             "Ljava/lang/Throwable;",
@@ -684,7 +676,7 @@
 
     .line 8
     .line 9
-    instance-of v0, p0, Lz3/a;
+    instance-of v0, p0, La4/a;
 
     .line 10
     .line 11
@@ -723,7 +715,7 @@
 
     .line 25
     .line 26
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/a;-><init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/a;-><init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
 
     .line 27
     .line 28
@@ -736,7 +728,7 @@
 
     .line 31
     .line 32
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/c;-><init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/c;-><init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
 
     .line 33
     .line 34
@@ -749,7 +741,7 @@
 
     .line 37
     .line 38
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/d;-><init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/d;-><init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
 
     .line 39
     .line 40
@@ -762,7 +754,7 @@
 
     .line 43
     .line 44
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/b;-><init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/facebook/common/references/b;-><init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
 
     .line 45
     .line 46
@@ -1118,7 +1110,15 @@
     .line 395
 .end method
 
-.method public static n0(I)V
+.method static synthetic h()Ljava/lang/Class;
+    .locals 1
+
+    sget-object v0, Lcom/facebook/common/references/CloseableReference;->o:Ljava/lang/Class;
+
+    return-object v0
+.end method
+
+.method public static j0(I)V
     .locals 0
 
     sput p0, Lcom/facebook/common/references/CloseableReference;->p:I
@@ -1279,7 +1279,27 @@
     return-void
 .end method
 
-.method public static y(Ljava/lang/Iterable;)V
+.method public static w0()Z
+    .locals 2
+
+    sget v0, Lcom/facebook/common/references/CloseableReference;->p:I
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public static z(Ljava/lang/Iterable;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1364,26 +1384,6 @@
     .line 46
 .end method
 
-.method public static z0()Z
-    .locals 2
-
-    sget v0, Lcom/facebook/common/references/CloseableReference;->p:I
-
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
 
 # virtual methods
 .method public declared-synchronized C()Ljava/lang/Object;
@@ -1418,16 +1418,16 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lv3/j;->i(Z)V
+    invoke-static {v0}, Lw3/j;->i(Z)V
 
     .line 10
     .line 11
     .line 12
-    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
+    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lz3/d;->f()Ljava/lang/Object;
+    invoke-virtual {v0}, La4/d;->f()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -1435,7 +1435,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {v0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -1488,9 +1488,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
+    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
 
-    invoke-virtual {v0}, Lz3/d;->f()Ljava/lang/Object;
+    invoke-virtual {v0}, La4/d;->f()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1620,11 +1620,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 12
-    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
+    iget-object v0, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lz3/d;->d()V
+    invoke-virtual {v0}, La4/d;->d()V
 
     .line 15
     .line 16
@@ -1713,7 +1713,7 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lcom/facebook/common/references/CloseableReference;->l:Lz3/d;
+    iget-object v1, p0, Lcom/facebook/common/references/CloseableReference;->l:La4/d;
 
     .line 15
     .line 16
@@ -1721,7 +1721,7 @@
 
     .line 17
     .line 18
-    invoke-interface {v0, v1, v2}, Lcom/facebook/common/references/CloseableReference$c;->a(Lz3/d;Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1, v2}, Lcom/facebook/common/references/CloseableReference$c;->a(La4/d;Ljava/lang/Throwable;)V
 
     .line 19
     .line 20

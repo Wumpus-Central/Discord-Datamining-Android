@@ -92,7 +92,7 @@
     move-result-object v0
 
     .line 12
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->x()Ljava/util/Map;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/RemoteMessage;->p()Ljava/util/Map;
 
     .line 13
     .line 14

@@ -1405,7 +1405,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-virtual {p0, v0}, Landroidx/transition/c0;->i(Landroidx/transition/Transition;)Landroidx/transition/c0;
+    invoke-virtual {p0, v0}, Landroidx/transition/c0;->h(Landroidx/transition/Transition;)Landroidx/transition/c0;
 
     .line 23
     .line 24
@@ -1413,7 +1413,7 @@
     move-result-object p0
 
     .line 26
-    invoke-virtual {p0, v1}, Landroidx/transition/c0;->i(Landroidx/transition/Transition;)Landroidx/transition/c0;
+    invoke-virtual {p0, v1}, Landroidx/transition/c0;->h(Landroidx/transition/Transition;)Landroidx/transition/c0;
 
     .line 27
     .line 28
@@ -1536,7 +1536,7 @@
 
     .line 50
     .line 51
-    invoke-virtual {v0, v2}, Landroidx/transition/c0;->i(Landroidx/transition/Transition;)Landroidx/transition/c0;
+    invoke-virtual {v0, v2}, Landroidx/transition/c0;->h(Landroidx/transition/Transition;)Landroidx/transition/c0;
 
     .line 52
     .line 53

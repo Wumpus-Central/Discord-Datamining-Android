@@ -70,7 +70,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lcom/google/android/gms/auth/api/signin/internal/a;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Lq9/x;)V
+    invoke-direct {v1, p0, v2}, Lcom/google/android/gms/auth/api/signin/internal/a;-><init>(Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;Lr9/x;)V
 
     const/4 v3, 0x0
 
@@ -496,7 +496,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->p()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 31
     .line 32
@@ -508,7 +508,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    invoke-virtual {v1}, Lcom/google/android/gms/auth/api/signin/SignInAccount;->p()Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 37
     .line 38
@@ -516,7 +516,7 @@
     move-result-object p1
 
     .line 40
-    invoke-static {p0}, Lq9/p;->a(Landroid/content/Context;)Lq9/p;
+    invoke-static {p0}, Lr9/p;->a(Landroid/content/Context;)Lr9/p;
 
     .line 41
     .line 42
@@ -528,7 +528,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->x()Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    invoke-virtual {v2}, Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;->p()Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 47
     .line 48
@@ -541,7 +541,7 @@
     .line 51
     .line 52
     .line 53
-    invoke-virtual {v1, v2, p1}, Lq9/p;->c(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
+    invoke-virtual {v1, v2, p1}, Lr9/p;->c(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;)V
 
     .line 54
     .line 55

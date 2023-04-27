@@ -744,7 +744,7 @@
     move-result-object v0
 
     .line 10
-    invoke-static {}, Lk4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+    invoke-static {}, Ll4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
 
     move-result-object v2
 

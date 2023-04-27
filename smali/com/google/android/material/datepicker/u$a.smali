@@ -70,7 +70,7 @@
 
     .line 14
     .line 15
-    invoke-static {p1, v0}, Lcom/google/android/material/datepicker/l;->d(II)Lcom/google/android/material/datepicker/l;
+    invoke-static {p1, v0}, Lcom/google/android/material/datepicker/l;->b(II)Lcom/google/android/material/datepicker/l;
 
     .line 16
     .line 17
@@ -98,7 +98,7 @@
     move-result-object v0
 
     .line 29
-    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/a;->o(Lcom/google/android/material/datepicker/l;)Lcom/google/android/material/datepicker/l;
+    invoke-virtual {v0, p1}, Lcom/google/android/material/datepicker/a;->i(Lcom/google/android/material/datepicker/l;)Lcom/google/android/material/datepicker/l;
 
     .line 30
     .line 31

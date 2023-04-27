@@ -716,7 +716,7 @@
 
     .line 53
     .line 54
-    invoke-static {v0}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 55
     .line 56
@@ -822,7 +822,7 @@
     const/4 p1, 0x4
 
     .line 99
-    invoke-static {v0, p1}, Lpi/l;->b1(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1}, Lri/l;->b1(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 100
     .line 101

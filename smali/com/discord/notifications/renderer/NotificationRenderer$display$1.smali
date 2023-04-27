@@ -265,7 +265,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -297,7 +297,7 @@
 
     .line 16
     .line 17
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 18
     .line 19
@@ -327,7 +327,7 @@
 
     .line 31
     :cond_1
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 32
     .line 33

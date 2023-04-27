@@ -17,7 +17,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/facebook/imagepipeline/producers/l0<",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -29,7 +29,7 @@
         value = {
             "[",
             "Lcom/facebook/imagepipeline/producers/z0<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;"
         }
     .end annotation
@@ -43,7 +43,7 @@
         value = {
             "([",
             "Lcom/facebook/imagepipeline/producers/z0<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;)V"
         }
     .end annotation
@@ -54,7 +54,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -76,7 +76,7 @@
     array-length p1, p1
 
     .line 14
-    invoke-static {v0, p1}, Lv3/j;->e(II)I
+    invoke-static {v0, p1}, Lw3/j;->e(II)I
 
     .line 15
     .line 16
@@ -253,7 +253,7 @@
         value = {
             "(I",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")Z"
@@ -261,7 +261,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 2
     .line 3
@@ -480,7 +480,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")V"
@@ -488,7 +488,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 2
     .line 3

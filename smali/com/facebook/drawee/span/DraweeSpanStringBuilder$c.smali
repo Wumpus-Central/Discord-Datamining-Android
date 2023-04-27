@@ -1,5 +1,5 @@
 .class Lcom/facebook/drawee/span/DraweeSpanStringBuilder$c;
-.super Lp4/a;
+.super Lq4/a;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp4/a<",
+        "Lq4/a<",
         "Lcom/facebook/imagepipeline/image/ImageInfo;",
         ">;"
     }
@@ -41,12 +41,12 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lp4/a;-><init>()V
+    invoke-direct {p0}, Lq4/a;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p2}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8

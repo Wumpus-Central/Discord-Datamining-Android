@@ -268,7 +268,7 @@
     move-result-object p1
 
     .line 10
-    invoke-static {v1, p1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, p1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 11
     .line 12
@@ -955,8 +955,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 
@@ -1099,7 +1097,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final getInitialBundleDownloaded(Lcom/facebook/react/bridge/Promise;)V

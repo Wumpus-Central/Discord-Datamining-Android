@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -21,19 +21,19 @@
 
 .field private f:Lcom/facebook/hermes/intl/a$b;
 
-.field private g:Lg5/b;
+.field private g:Lh5/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;"
         }
     .end annotation
 .end field
 
-.field private h:Lg5/b;
+.field private h:Lh5/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;"
         }
     .end annotation
@@ -45,9 +45,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Ljava/util/Map;)V
     .locals 2
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,6 +56,9 @@
             "Ljava/lang/Object;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -127,11 +127,11 @@
 
     .line 33
     .line 34
-    iget-object p2, p0, Lcom/facebook/hermes/intl/Collator;->g:Lg5/b;
+    iget-object p2, p0, Lcom/facebook/hermes/intl/Collator;->g:Lh5/b;
 
     .line 35
     .line 36
-    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/a;->c(Lg5/b;)Lcom/facebook/hermes/intl/a;
+    invoke-interface {p1, p2}, Lcom/facebook/hermes/intl/a;->b(Lh5/b;)Lcom/facebook/hermes/intl/a;
 
     .line 37
     .line 38
@@ -237,7 +237,7 @@
 
     .line 2
     .line 3
-    sget-object v1, Lg5/a;->e:[Ljava/lang/String;
+    sget-object v1, Lh5/a;->e:[Ljava/lang/String;
 
     .line 4
     .line 5
@@ -261,7 +261,7 @@
 
     .line 14
     .line 15
-    invoke-static {v1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 16
     .line 17
@@ -285,7 +285,7 @@
 
     .line 26
     .line 27
-    invoke-static {}, Lg5/i;->q()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->q()Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -293,7 +293,7 @@
     move-result-object v1
 
     .line 31
-    sget-object v2, Lg5/a;->a:[Ljava/lang/String;
+    sget-object v2, Lh5/a;->a:[Ljava/lang/String;
 
     .line 32
     .line 33
@@ -313,7 +313,7 @@
     move-result-object v2
 
     .line 41
-    invoke-static {v1, v4, v2}, Lg5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v4, v2}, Lh5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 42
     .line 43
@@ -322,7 +322,7 @@
 
     .line 45
     .line 46
-    invoke-static {}, Lg5/i;->d()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->d()Ljava/lang/Object;
 
     .line 47
     .line 48
@@ -330,7 +330,7 @@
     move-result-object v3
 
     .line 50
-    invoke-static {}, Lg5/i;->d()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->d()Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -350,7 +350,7 @@
     move-result-object v2
 
     .line 60
-    invoke-static {v2}, Lg5/i;->n(Ljava/lang/Object;)Z
+    invoke-static {v2}, Lh5/i;->n(Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -362,7 +362,7 @@
 
     .line 65
     .line 66
-    invoke-static {v2}, Lg5/i;->e(Ljava/lang/Object;)Z
+    invoke-static {v2}, Lh5/i;->e(Ljava/lang/Object;)Z
 
     .line 67
     .line 68
@@ -378,7 +378,7 @@
     move-result-object v2
 
     .line 74
-    invoke-static {v2}, Lg5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v2}, Lh5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 75
     .line 76
@@ -391,16 +391,16 @@
 
     .line 79
     .line 80
-    invoke-static {v1, v3, v2}, Lg5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v3, v2}, Lh5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 81
     .line 82
     .line 83
-    sget-object v2, Lg5/a;->d:[Ljava/lang/String;
+    sget-object v2, Lh5/a;->d:[Ljava/lang/String;
 
     .line 84
     .line 85
-    invoke-static {}, Lg5/i;->d()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->d()Ljava/lang/Object;
 
     .line 86
     .line 87
@@ -424,7 +424,7 @@
 
     .line 96
     .line 97
-    invoke-static {v1, v2, v0}, Lg5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v1, v2, v0}, Lh5/i;->c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 98
     .line 99
@@ -457,7 +457,7 @@
     move-result-object p1
 
     .line 114
-    invoke-static {p1}, Lg5/i;->g(Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {p1}, Lh5/i;->g(Ljava/lang/Object;)Ljava/util/Map;
 
     .line 115
     .line 116
@@ -477,15 +477,15 @@
     move-result-object v1
 
     .line 124
-    check-cast v1, Lg5/b;
+    check-cast v1, Lh5/b;
 
     .line 125
     .line 126
-    iput-object v1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lg5/b;
+    iput-object v1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lh5/b;
 
     .line 127
     .line 128
-    invoke-interface {v1}, Lg5/b;->d()Lg5/b;
+    invoke-interface {v1}, Lh5/b;->d()Lh5/b;
 
     .line 129
     .line 130
@@ -493,11 +493,11 @@
     move-result-object v1
 
     .line 132
-    iput-object v1, p0, Lcom/facebook/hermes/intl/Collator;->h:Lg5/b;
+    iput-object v1, p0, Lcom/facebook/hermes/intl/Collator;->h:Lh5/b;
 
     .line 133
     .line 134
-    invoke-static {p1, v0}, Lg5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lh5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 135
     .line 136
@@ -505,7 +505,7 @@
     move-result-object v1
 
     .line 138
-    invoke-static {v1}, Lg5/i;->j(Ljava/lang/Object;)Z
+    invoke-static {v1}, Lh5/i;->j(Ljava/lang/Object;)Z
 
     .line 139
     .line 140
@@ -521,7 +521,7 @@
 
     .line 145
     .line 146
-    invoke-static {v1}, Lg5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1}, Lh5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 147
     .line 148
@@ -530,7 +530,7 @@
 
     .line 150
     :cond_1
-    invoke-static {v1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 151
     .line 152
@@ -542,7 +542,7 @@
 
     .line 155
     .line 156
-    invoke-static {p1, v3}, Lg5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v3}, Lh5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 157
     .line 158
@@ -550,7 +550,7 @@
     move-result-object v1
 
     .line 160
-    invoke-static {v1}, Lg5/i;->j(Ljava/lang/Object;)Z
+    invoke-static {v1}, Lh5/i;->j(Ljava/lang/Object;)Z
 
     .line 161
     .line 162
@@ -573,7 +573,7 @@
 
     .line 170
     :cond_2
-    invoke-static {v1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 171
     .line 172
@@ -594,7 +594,7 @@
     .line 179
     .line 180
     :goto_0
-    invoke-static {p1, v2}, Lg5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v2}, Lh5/i;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 181
     .line 182
@@ -602,7 +602,7 @@
     move-result-object p1
 
     .line 184
-    invoke-static {p1}, Lg5/i;->j(Ljava/lang/Object;)Z
+    invoke-static {p1}, Lh5/i;->j(Ljava/lang/Object;)Z
 
     .line 185
     .line 186
@@ -618,7 +618,7 @@
 
     .line 191
     .line 192
-    invoke-static {p1}, Lg5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1}, Lh5/i;->r(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 193
     .line 194
@@ -631,7 +631,7 @@
 
     .line 197
     .line 198
-    invoke-static {p1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 199
     .line 200
@@ -667,7 +667,7 @@
 
     .line 215
     .line 216
-    iget-object p1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lg5/b;
+    iget-object p1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lh5/b;
 
     .line 217
     .line 218
@@ -675,7 +675,7 @@
 
     .line 219
     .line 220
-    invoke-interface {p1, v1}, Lg5/b;->b(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-interface {p1, v1}, Lh5/b;->b(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 221
     .line 222
@@ -725,7 +725,7 @@
 
     .line 244
     .line 245
-    invoke-static {v2}, Lg5/n3;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lh5/n3;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 246
     .line 247
@@ -746,7 +746,7 @@
 
     .line 254
     .line 255
-    invoke-static {p1}, Lg5/n3;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lh5/n3;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 256
     .line 257
@@ -759,11 +759,11 @@
     .line 260
     .line 261
     .line 262
-    iget-object p1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lg5/b;
+    iget-object p1, p0, Lcom/facebook/hermes/intl/Collator;->g:Lh5/b;
 
     .line 263
     .line 264
-    invoke-interface {p1, v0, v1}, Lg5/b;->f(Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-interface {p1, v0, v1}, Lh5/b;->f(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 265
     .line 266
@@ -773,11 +773,11 @@
 
     .line 268
     .line 269
-    sget-object v0, Lg5/a;->c:[Ljava/lang/String;
+    sget-object v0, Lh5/a;->c:[Ljava/lang/String;
 
     .line 270
     .line 271
-    invoke-static {}, Lg5/i;->d()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->d()Ljava/lang/Object;
 
     .line 272
     .line 273
@@ -797,7 +797,7 @@
     move-result-object p1
 
     .line 281
-    invoke-static {p1}, Lg5/i;->n(Ljava/lang/Object;)Z
+    invoke-static {p1}, Lh5/i;->n(Ljava/lang/Object;)Z
 
     .line 282
     .line 283
@@ -813,7 +813,7 @@
 
     .line 288
     .line 289
-    invoke-static {p1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 290
     .line 291
@@ -878,7 +878,7 @@
 
     .line 318
     .line 319
-    invoke-static {}, Lg5/i;->d()Ljava/lang/Object;
+    invoke-static {}, Lh5/i;->d()Ljava/lang/Object;
 
     .line 320
     .line 321
@@ -902,7 +902,7 @@
     move-result-object p1
 
     .line 331
-    invoke-static {p1}, Lg5/i;->e(Ljava/lang/Object;)Z
+    invoke-static {p1}, Lh5/i;->e(Ljava/lang/Object;)Z
 
     .line 332
     .line 333
@@ -1414,9 +1414,6 @@
 
 .method public static supportedLocalesOf(Ljava/util/List;Ljava/util/Map;)Ljava/util/List;
     .locals 4
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1433,12 +1430,15 @@
         }
     .end annotation
 
+    .annotation build Le6/a;
+    .end annotation
+
     .line 1
     sget-object v0, Lcom/facebook/hermes/intl/j$a;->l:Lcom/facebook/hermes/intl/j$a;
 
     .line 2
     .line 3
-    sget-object v1, Lg5/a;->a:[Ljava/lang/String;
+    sget-object v1, Lh5/a;->a:[Ljava/lang/String;
 
     .line 4
     .line 5
@@ -1458,7 +1458,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {p1}, Lg5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1}, Lh5/i;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 14
     .line 15
@@ -1604,7 +1604,7 @@
 # virtual methods
 .method public compare(Ljava/lang/String;Ljava/lang/String;)D
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/hermes/intl/Collator;->i:Lcom/facebook/hermes/intl/a;
@@ -1620,9 +1620,6 @@
 
 .method public resolvedOptions()Ljava/util/Map;
     .locals 4
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1631,6 +1628,9 @@
             "Ljava/lang/Object;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1643,11 +1643,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/facebook/hermes/intl/Collator;->h:Lg5/b;
+    iget-object v1, p0, Lcom/facebook/hermes/intl/Collator;->h:Lh5/b;
 
     .line 7
     .line 8
-    invoke-interface {v1}, Lg5/b;->g()Ljava/lang/String;
+    invoke-interface {v1}, Lh5/b;->g()Ljava/lang/String;
 
     .line 9
     .line 10
@@ -1721,7 +1721,7 @@
 
     .line 45
     .line 46
-    invoke-interface {v1}, Lcom/facebook/hermes/intl/a;->b()Lcom/facebook/hermes/intl/a$c;
+    invoke-interface {v1}, Lcom/facebook/hermes/intl/a;->c()Lcom/facebook/hermes/intl/a$c;
 
     .line 47
     .line 48

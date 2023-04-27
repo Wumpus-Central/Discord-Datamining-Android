@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public a(Landroid/view/View;Landroid/view/View;)I
+.method public b(Landroid/view/View;Landroid/view/View;)I
     .locals 0
 
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
@@ -60,7 +60,7 @@
 
     check-cast p2, Landroid/view/View;
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/internal/n$a;->a(Landroid/view/View;Landroid/view/View;)I
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/internal/n$a;->b(Landroid/view/View;Landroid/view/View;)I
 
     move-result p1
 

@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final s:Lh8/u$a;
+.field private static final s:Li8/u$a;
 
 
 # instance fields
 .field public final a:Lcom/google/android/exoplayer2/Timeline;
 
-.field public final b:Lh8/u$a;
+.field public final b:Li8/u$a;
 
 .field public final c:J
 
@@ -22,19 +22,19 @@
 
 .field public final g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-.field public final h:La9/n;
+.field public final h:Lb9/n;
 
 .field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Ly7/a;",
+            "Lz7/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j:Lh8/u$a;
+.field public final j:Li8/u$a;
 
 .field public final k:Z
 
@@ -57,35 +57,35 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lh8/u$a;
+    new-instance v0, Li8/u$a;
 
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0, v1}, Lh8/u$a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, v1}, Li8/u$a;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Lcom/google/android/exoplayer2/q0;->s:Lh8/u$a;
+    sput-object v0, Lcom/google/android/exoplayer2/q0;->s:Li8/u$a;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+.method public constructor <init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/android/exoplayer2/Timeline;",
-            "Lh8/u$a;",
+            "Li8/u$a;",
             "JI",
             "Lcom/google/android/exoplayer2/ExoPlaybackException;",
             "Z",
             "Lcom/google/android/exoplayer2/source/TrackGroupArray;",
-            "La9/n;",
+            "Lb9/n;",
             "Ljava/util/List<",
-            "Ly7/a;",
+            "Lz7/a;",
             ">;",
-            "Lh8/u$a;",
+            "Li8/u$a;",
             "ZI",
             "Lcom/google/android/exoplayer2/PlaybackParameters;",
             "JJJZZ)V"
@@ -105,7 +105,7 @@
     move-object v1, p2
 
     .line 3
-    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     move-wide v1, p3
 
@@ -135,7 +135,7 @@
     move-object v1, p9
 
     .line 9
-    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     move-object v1, p10
 
@@ -145,7 +145,7 @@
     move-object v1, p11
 
     .line 11
-    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iput-object v1, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     move v1, p12
 
@@ -190,7 +190,7 @@
     return-void
 .end method
 
-.method public static k(La9/n;)Lcom/google/android/exoplayer2/q0;
+.method public static k(Lb9/n;)Lcom/google/android/exoplayer2/q0;
     .locals 24
 
     .line 1
@@ -210,7 +210,7 @@
 
     .line 8
     .line 9
-    sget-object v2, Lcom/google/android/exoplayer2/q0;->s:Lh8/u$a;
+    sget-object v2, Lcom/google/android/exoplayer2/q0;->s:Li8/u$a;
 
     .line 10
     .line 11
@@ -237,7 +237,7 @@
 
     .line 21
     .line 22
-    invoke-static {}, Lbc/i0;->x()Lbc/i0;
+    invoke-static {}, Lcc/i0;->x()Lcc/i0;
 
     .line 23
     .line 24
@@ -275,7 +275,7 @@
 
     .line 39
     .line 40
-    invoke-direct/range {v0 .. v22}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v0 .. v22}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     .line 41
     .line 42
@@ -286,10 +286,10 @@
     .line 46
 .end method
 
-.method public static l()Lh8/u$a;
+.method public static l()Li8/u$a;
     .locals 1
 
-    sget-object v0, Lcom/google/android/exoplayer2/q0;->s:Lh8/u$a;
+    sget-object v0, Lcom/google/android/exoplayer2/q0;->s:Li8/u$a;
 
     return-object v0
 .end method
@@ -309,7 +309,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -319,11 +319,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -359,12 +359,12 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
 
-.method public b(Lh8/u$a;)Lcom/google/android/exoplayer2/q0;
+.method public b(Li8/u$a;)Lcom/google/android/exoplayer2/q0;
     .locals 26
 
     move-object/from16 v0, p0
@@ -377,7 +377,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -389,7 +389,7 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
@@ -427,22 +427,22 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
 
-.method public c(Lh8/u$a;JJJLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;)Lcom/google/android/exoplayer2/q0;
+.method public c(Li8/u$a;JJJLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;)Lcom/google/android/exoplayer2/q0;
     .locals 25
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lh8/u$a;",
+            "Li8/u$a;",
             "JJJ",
             "Lcom/google/android/exoplayer2/source/TrackGroupArray;",
-            "La9/n;",
+            "Lb9/n;",
             "Ljava/util/List<",
-            "Ly7/a;",
+            "Lz7/a;",
             ">;)",
             "Lcom/google/android/exoplayer2/q0;"
         }
@@ -476,7 +476,7 @@
 
     iget-boolean v8, v0, Lcom/google/android/exoplayer2/q0;->f:Z
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -504,7 +504,7 @@
 
     move-object/from16 v2, p2
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -522,7 +522,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -534,11 +534,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -570,7 +570,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -590,7 +590,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -602,11 +602,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-object v15, v0, Lcom/google/android/exoplayer2/q0;->m:Lcom/google/android/exoplayer2/PlaybackParameters;
 
@@ -638,7 +638,7 @@
 
     move-object/from16 v2, p2
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -656,7 +656,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -666,11 +666,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -706,7 +706,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -724,7 +724,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -736,11 +736,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -774,7 +774,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -792,7 +792,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -802,11 +802,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -842,7 +842,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -860,7 +860,7 @@
 
     iget-object v2, v0, Lcom/google/android/exoplayer2/q0;->a:Lcom/google/android/exoplayer2/Timeline;
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -872,11 +872,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -908,7 +908,7 @@
 
     move-object/from16 v2, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method
@@ -924,7 +924,7 @@
 
     move-object/from16 v1, v24
 
-    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Lh8/u$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/q0;->b:Li8/u$a;
 
     iget-wide v4, v0, Lcom/google/android/exoplayer2/q0;->c:J
 
@@ -936,11 +936,11 @@
 
     iget-object v9, v0, Lcom/google/android/exoplayer2/q0;->g:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:La9/n;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/q0;->h:Lb9/n;
 
     iget-object v11, v0, Lcom/google/android/exoplayer2/q0;->i:Ljava/util/List;
 
-    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Lh8/u$a;
+    iget-object v12, v0, Lcom/google/android/exoplayer2/q0;->j:Li8/u$a;
 
     iget-boolean v13, v0, Lcom/google/android/exoplayer2/q0;->k:Z
 
@@ -974,7 +974,7 @@
 
     move-object/from16 v1, v25
 
-    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Lh8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;La9/n;Ljava/util/List;Lh8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
+    invoke-direct/range {v1 .. v23}, Lcom/google/android/exoplayer2/q0;-><init>(Lcom/google/android/exoplayer2/Timeline;Li8/u$a;JILcom/google/android/exoplayer2/ExoPlaybackException;ZLcom/google/android/exoplayer2/source/TrackGroupArray;Lb9/n;Ljava/util/List;Li8/u$a;ZILcom/google/android/exoplayer2/PlaybackParameters;JJJZZ)V
 
     return-object v24
 .end method

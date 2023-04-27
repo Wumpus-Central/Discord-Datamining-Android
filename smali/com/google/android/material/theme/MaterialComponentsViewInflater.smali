@@ -37,9 +37,9 @@
 .method protected e(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/f;
     .locals 1
 
-    new-instance v0, Lgb/a;
+    new-instance v0, Lhb/a;
 
-    invoke-direct {v0, p1, p2}, Lgb/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Lhb/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
@@ -47,9 +47,9 @@
 .method protected k(Landroid/content/Context;Landroid/util/AttributeSet;)Landroidx/appcompat/widget/r;
     .locals 1
 
-    new-instance v0, Lsb/a;
+    new-instance v0, Ltb/a;
 
-    invoke-direct {v0, p1, p2}, Lsb/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, Ltb/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method

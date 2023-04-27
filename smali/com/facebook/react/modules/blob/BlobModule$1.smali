@@ -49,7 +49,7 @@
     .locals 3
 
     .line 2
-    invoke-virtual {p1}, Lokio/ByteString;->B()[B
+    invoke-virtual {p1}, Lokio/ByteString;->z()[B
 
     move-result-object p1
 

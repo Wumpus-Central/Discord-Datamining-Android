@@ -2339,7 +2339,7 @@
     move v0, v3
 
     :goto_0
-    invoke-static {v0}, Lc6/a;->a(Z)V
+    invoke-static {v0}, Ld6/a;->a(Z)V
 
     .line 3
     invoke-virtual {p1}, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->getNativeKind()Lcom/facebook/react/uimanager/NativeKind;
@@ -2356,7 +2356,7 @@
     move v2, v3
 
     :goto_1
-    invoke-static {v2}, Lc6/a;->a(Z)V
+    invoke-static {v2}, Ld6/a;->a(Z)V
 
     .line 4
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mNativeChildren:Ljava/util/ArrayList;
@@ -3322,7 +3322,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mYogaNode:Lcom/facebook/yoga/YogaNode;
 
-    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->i()Lcom/facebook/yoga/YogaDirection;
+    invoke-virtual {v0}, Lcom/facebook/yoga/YogaNode;->h()Lcom/facebook/yoga/YogaDirection;
 
     move-result-object v0
 
@@ -3694,7 +3694,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lc6/a;->a(Z)V
+    invoke-static {v0}, Ld6/a;->a(Z)V
 
     .line 9
     .line 10
@@ -3814,7 +3814,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mThemedContext:Lcom/facebook/react/uimanager/ThemedReactContext;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -3836,7 +3836,7 @@
 
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mViewClassName:Ljava/lang/String;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -3980,7 +3980,7 @@
     .line 2
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mNativeChildren:Ljava/util/ArrayList;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mNativeChildren:Ljava/util/ArrayList;
@@ -4513,7 +4513,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 53
     .line 54
@@ -4921,7 +4921,7 @@
     .line 2
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mNativeChildren:Ljava/util/ArrayList;
 
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget-object v0, p0, Lcom/facebook/react/uimanager/ReactShadowNodeImpl;->mNativeChildren:Ljava/util/ArrayList;
@@ -5226,7 +5226,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v3}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v3}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 15
     .line 16
@@ -5254,7 +5254,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0, v3}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v3}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 27
     .line 28
@@ -5283,7 +5283,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v0}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v1, v0}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 40
     .line 41

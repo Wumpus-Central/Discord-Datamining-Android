@@ -1,5 +1,5 @@
 .class public final Lcom/google/firebase/messaging/RemoteMessage;
-.super Lx9/a;
+.super Ly9/a;
 .source "SourceFile"
 
 
@@ -47,7 +47,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lx9/a;-><init>()V
+    invoke-direct {p0}, Ly9/a;-><init>()V
 
     .line 2
     .line 3
@@ -132,15 +132,7 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lcom/google/firebase/messaging/m0;->c(Lcom/google/firebase/messaging/RemoteMessage;Landroid/os/Parcel;I)V
-
-    return-void
-.end method
-
-.method public x()Ljava/util/Map;
+.method public p()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -249,4 +241,12 @@
     .line 79
     .line 80
     .line 81
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/google/firebase/messaging/m0;->c(Lcom/google/firebase/messaging/RemoteMessage;Landroid/os/Parcel;I)V
+
+    return-void
 .end method

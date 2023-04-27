@@ -54,7 +54,7 @@
     invoke-direct {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    sget-object v0, Ldb/k;->O1:[I
+    sget-object v0, Leb/k;->O1:[I
 
     .line 5
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -62,7 +62,7 @@
     move-result-object p1
 
     .line 6
-    sget p2, Ldb/k;->P1:I
+    sget p2, Leb/k;->P1:I
 
     const/4 v0, 0x1
 

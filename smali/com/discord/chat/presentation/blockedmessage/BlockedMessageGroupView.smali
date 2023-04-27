@@ -757,11 +757,11 @@
     .line 9
     .line 10
     .line 11
-    new-instance v0, La3/a;
+    new-instance v0, Lb3/a;
 
     .line 12
     .line 13
-    invoke-direct {v0, p2, p1}, La3/a;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/presentation/list/item/BlockedGroupChatListItem;)V
+    invoke-direct {v0, p2, p1}, Lb3/a;-><init>(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/presentation/list/item/BlockedGroupChatListItem;)V
 
     .line 14
     .line 15

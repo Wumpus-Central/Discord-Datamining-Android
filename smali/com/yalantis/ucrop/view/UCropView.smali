@@ -32,14 +32,14 @@
 
     move-result-object p3
 
-    sget v0, Lef/e;->d:I
+    sget v0, Lgf/e;->d:I
 
     const/4 v1, 0x1
 
     invoke-virtual {p3, v0, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     .line 4
-    sget p3, Lef/d;->b:I
+    sget p3, Lgf/d;->b:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -50,7 +50,7 @@
     iput-object p3, p0, Lcom/yalantis/ucrop/view/UCropView;->k:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     .line 5
-    sget p3, Lef/d;->y:I
+    sget p3, Lgf/d;->y:I
 
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
     iput-object p3, p0, Lcom/yalantis/ucrop/view/UCropView;->l:Lcom/yalantis/ucrop/view/OverlayView;
 
     .line 6
-    sget-object v0, Lef/h;->U:[I
+    sget-object v0, Lgf/h;->U:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -117,7 +117,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/a;->setCropBoundsChangeListener(Lff/c;)V
+    invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/a;->setCropBoundsChangeListener(Lhf/c;)V
 
     .line 9
     .line 10
@@ -135,7 +135,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/OverlayView;->setOverlayViewChangeListener(Lff/d;)V
+    invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/OverlayView;->setOverlayViewChangeListener(Lhf/d;)V
 
     .line 19
     .line 20

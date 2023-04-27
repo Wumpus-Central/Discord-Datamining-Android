@@ -233,7 +233,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lwi/e;->a()Lbj/c;
+    invoke-interface {v0}, Lyi/e;->a()Ldj/c;
 
     .line 4
     .line 5
@@ -250,7 +250,7 @@
     move-result-object v1
 
     .line 12
-    invoke-interface {v0, v1, p1}, Lwi/m;->b(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-interface {v0, v1, p1}, Lyi/m;->b(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 13
     .line 14

@@ -15,20 +15,20 @@
 
 
 # virtual methods
-.method public abstract a(Ld9/t;Ll8/b;I[ILa9/h;IJZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;Ld9/x;)Lcom/google/android/exoplayer2/source/dash/a;
+.method public abstract a(Le9/t;Lm8/b;I[ILb9/h;IJZLjava/util/List;Lcom/google/android/exoplayer2/source/dash/e$c;Le9/x;)Lcom/google/android/exoplayer2/source/dash/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ld9/t;",
-            "Ll8/b;",
+            "Le9/t;",
+            "Lm8/b;",
             "I[I",
-            "La9/h;",
+            "Lb9/h;",
             "IJZ",
             "Ljava/util/List<",
-            "Ld7/k;",
+            "Le7/k;",
             ">;",
             "Lcom/google/android/exoplayer2/source/dash/e$c;",
-            "Ld9/x;",
+            "Le9/x;",
             ")",
             "Lcom/google/android/exoplayer2/source/dash/a;"
         }

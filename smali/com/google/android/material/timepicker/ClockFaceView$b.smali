@@ -40,7 +40,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Ldb/f;->n:I
+    sget v0, Leb/f;->n:I
 
     .line 5
     .line 6

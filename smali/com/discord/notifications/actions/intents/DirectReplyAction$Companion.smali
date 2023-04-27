@@ -103,7 +103,7 @@
 
     .line 15
     .line 16
-    invoke-static {p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 17
     .line 18

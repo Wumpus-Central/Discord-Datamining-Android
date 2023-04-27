@@ -11,18 +11,18 @@
         "Lcom/facebook/cache/common/CacheKey;",
         "Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;",
         ">;",
-        "Lu5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field private final f:Lo5/f;
+.field private final f:Lp5/f;
 
 
 # direct methods
-.method public constructor <init>(Lo5/f;ZLcom/facebook/imagepipeline/producers/l0;)V
+.method public constructor <init>(Lp5/f;ZLcom/facebook/imagepipeline/producers/l0;)V
     .locals 2
 
     .line 1
@@ -39,7 +39,7 @@
     .line 6
     .line 7
     .line 8
-    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/r;->f:Lo5/f;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/r;->f:Lp5/f;
 
     .line 9
     .line 10
@@ -217,9 +217,9 @@
 .method public bridge synthetic g(Ljava/io/Closeable;)Ljava/io/Closeable;
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/r;->l(Lu5/e;)Lu5/e;
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/r;->l(Lv5/e;)Lv5/e;
 
     move-result-object p1
 
@@ -236,10 +236,10 @@
     return-object p1
 .end method
 
-.method public l(Lu5/e;)Lu5/e;
+.method public l(Lv5/e;)Lv5/e;
     .locals 0
 
-    invoke-static {p1}, Lu5/e;->g(Lu5/e;)Lu5/e;
+    invoke-static {p1}, Lv5/e;->g(Lv5/e;)Lv5/e;
 
     move-result-object p1
 
@@ -261,11 +261,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/r;->f:Lo5/f;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/r;->f:Lp5/f;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 4
     .line 5
@@ -281,7 +281,7 @@
     move-result-object v2
 
     .line 11
-    invoke-interface {v0, v1, v2}, Lo5/f;->d(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
+    invoke-interface {v0, v1, v2}, Lp5/f;->d(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
 
     .line 12
     .line 13

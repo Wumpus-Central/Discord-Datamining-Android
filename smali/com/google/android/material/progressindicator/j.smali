@@ -1434,7 +1434,7 @@
     .line 15
     .line 16
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/g;->m:Lrb/a;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/g;->m:Lsb/a;
 
     .line 17
     .line 18
@@ -1450,7 +1450,7 @@
     move-result-object v1
 
     .line 24
-    invoke-virtual {v0, v1}, Lrb/a;->a(Landroid/content/ContentResolver;)F
+    invoke-virtual {v0, v1}, Lsb/a;->a(Landroid/content/ContentResolver;)F
 
     .line 25
     .line 26

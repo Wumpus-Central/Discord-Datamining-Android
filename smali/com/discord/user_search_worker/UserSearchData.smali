@@ -35,7 +35,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
     with = Lcom/discord/user_search_worker/UserSearchData$Serializer;
 .end annotation
 

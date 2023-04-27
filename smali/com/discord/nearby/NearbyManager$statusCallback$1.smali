@@ -1,5 +1,5 @@
 .class public final Lcom/discord/nearby/NearbyManager$statusCallback$1;
-.super Lxa/h;
+.super Lya/h;
 .source "SourceFile"
 
 
@@ -19,7 +19,7 @@
     }
     d2 = {
         "com/discord/nearby/NearbyManager$statusCallback$1",
-        "Lxa/h;",
+        "Lya/h;",
         "",
         "permissionGranted",
         "",
@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lxa/h;-><init>()V
+    invoke-direct {p0}, Lya/h;-><init>()V
 
     .line 4
     .line 5
@@ -182,7 +182,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lxa/h;->onPermissionChanged(Z)V
+    invoke-super {p0, p1}, Lya/h;->onPermissionChanged(Z)V
 
     .line 2
     .line 3

@@ -394,7 +394,7 @@
 
     .line 8
     .line 9
-    invoke-static/range {p1 .. p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static/range {p1 .. p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 10
     .line 11
@@ -430,7 +430,7 @@
 
     .line 22
     .line 23
-    invoke-static/range {p2 .. p2}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static/range {p2 .. p2}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 24
     .line 25

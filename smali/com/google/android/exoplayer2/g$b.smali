@@ -79,7 +79,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, v1}, Ld7/c;->c(J)J
+    invoke-static {v0, v1}, Le7/c;->c(J)J
 
     .line 26
     .line 27
@@ -95,7 +95,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0, v1}, Ld7/c;->c(J)J
+    invoke-static {v0, v1}, Le7/c;->c(J)J
 
     .line 34
     .line 35

@@ -895,7 +895,7 @@
 
     .line 26
     .line 27
-    invoke-static {v4, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v4, v2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 28
     .line 29
@@ -947,7 +947,7 @@
 
     .line 52
     .line 53
-    invoke-static {v5, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v5, v2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 54
     .line 55
@@ -998,7 +998,7 @@
 
     .line 77
     .line 78
-    invoke-static {v2, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v2, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 79
     .line 80
@@ -1013,7 +1013,7 @@
 
     .line 84
     .line 85
-    invoke-static {v0}, Lmf/s;->l([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v0}, Lof/s;->l([Lkotlin/Pair;)Ljava/util/Map;
 
     .line 86
     .line 87
@@ -1092,11 +1092,11 @@
 
     .line 11
     :cond_0
-    new-instance v1, Li3/a;
+    new-instance v1, Lj3/a;
 
     .line 12
     .line 13
-    invoke-direct {v1, p0}, Li3/a;-><init>(Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;)V
+    invoke-direct {v1, p0}, Lj3/a;-><init>(Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;)V
 
     .line 14
     .line 15

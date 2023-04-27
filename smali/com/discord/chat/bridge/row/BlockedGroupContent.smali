@@ -58,7 +58,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -88,7 +88,7 @@
 .method public synthetic constructor <init>(ILcom/discord/chat/bridge/MessageBase;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
     .locals 1
     .param p2    # Lcom/discord/chat/bridge/MessageBase;
-        .annotation runtime Lwi/f;
+        .annotation runtime Lyi/f;
             with = Lcom/discord/chat/bridge/row/MessageSerializer;
         .end annotation
     .end param
@@ -106,7 +106,7 @@
 
     move-result-object p3
 
-    invoke-static {p1, v0, p3}, Lzi/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {p1, v0, p3}, Lbj/n1;->b(IILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -151,7 +151,7 @@
 
 .method public static synthetic getMessage$annotations()V
     .locals 0
-    .annotation runtime Lwi/f;
+    .annotation runtime Lyi/f;
         with = Lcom/discord/chat/bridge/row/MessageSerializer;
     .end annotation
 
@@ -200,7 +200,7 @@
     const/4 v1, 0x0
 
     .line 21
-    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v1, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     .line 22
     .line 23

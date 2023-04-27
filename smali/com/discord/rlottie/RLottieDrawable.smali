@@ -793,7 +793,7 @@
 
     new-instance v2, Ljava/lang/String;
 
-    sget-object v3, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v3, Lri/d;->b:Ljava/nio/charset/Charset;
 
     invoke-direct {v2, p2, v0, v1, v3}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
 
@@ -6832,17 +6832,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setPlaybackMode(Lcom/discord/rlottie/RLottieDrawable$PlaybackMode;)V

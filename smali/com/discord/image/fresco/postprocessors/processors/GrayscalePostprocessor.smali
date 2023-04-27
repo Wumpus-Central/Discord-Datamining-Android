@@ -79,13 +79,13 @@
 .method public getPostprocessorCacheKey()Lcom/facebook/cache/common/CacheKey;
     .locals 2
 
-    new-instance v0, Lp3/h;
+    new-instance v0, Lq3/h;
 
     invoke-virtual {p0}, Lcom/discord/image/fresco/postprocessors/processors/GrayscalePostprocessor;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lp3/h;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lq3/h;-><init>(Ljava/lang/String;)V
 
     return-object v0
 .end method

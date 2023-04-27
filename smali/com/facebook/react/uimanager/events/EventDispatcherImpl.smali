@@ -1644,7 +1644,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, v1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 8
     .line 9
@@ -1732,7 +1732,7 @@
 
     .line 49
     .line 50
-    invoke-static {v2, v3, v1, p1}, Lg6/a;->j(JLjava/lang/String;I)V
+    invoke-static {v2, v3, v1, p1}, Lh6/a;->j(JLjava/lang/String;I)V
 
     .line 51
     .line 52

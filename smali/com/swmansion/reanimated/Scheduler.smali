@@ -9,7 +9,7 @@
 .field private final mContext:Lcom/facebook/react/bridge/ReactApplicationContext;
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -103,7 +103,7 @@
 
 .method private scheduleOnUI()V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

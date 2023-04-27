@@ -43,7 +43,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lq5/h;->a()Z
+    invoke-static {}, Lr5/h;->a()Z
 
     .line 6
     .line 7

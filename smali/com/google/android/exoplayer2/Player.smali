@@ -15,37 +15,37 @@
 
 
 # virtual methods
-.method public abstract A()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
+.method public abstract B()Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;
 .end method
 
-.method public abstract B(I)I
+.method public abstract D(I)I
 .end method
 
-.method public abstract C()Lcom/google/android/exoplayer2/Player$b;
+.method public abstract E()Lcom/google/android/exoplayer2/Player$b;
 .end method
 
-.method public abstract D(IJ)V
+.method public abstract F(IJ)V
 .end method
 
-.method public abstract E()Z
+.method public abstract G()Z
 .end method
 
-.method public abstract F(Z)V
+.method public abstract H(Z)V
 .end method
 
-.method public abstract G()I
+.method public abstract I()I
 .end method
 
-.method public abstract I(Lcom/google/android/exoplayer2/Player$a;)V
+.method public abstract K(Lcom/google/android/exoplayer2/Player$a;)V
 .end method
 
-.method public abstract J()I
+.method public abstract L()I
 .end method
 
-.method public abstract L()J
+.method public abstract M()J
 .end method
 
-.method public abstract M()I
+.method public abstract N()I
 .end method
 
 .method public abstract O()J
@@ -57,16 +57,16 @@
 .method public abstract Q()Z
 .end method
 
-.method public abstract S(I)V
+.method public abstract R(I)V
 .end method
 
-.method public abstract T()I
+.method public abstract S()I
 .end method
 
-.method public abstract V()I
+.method public abstract U()I
 .end method
 
-.method public abstract W()Z
+.method public abstract V()Z
 .end method
 
 .method public abstract X()J
@@ -84,21 +84,24 @@
 .method public abstract d()Z
 .end method
 
-.method public abstract f()J
+.method public abstract e()J
+.end method
+
+.method public abstract g()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lz7/a;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method public abstract getDuration()J
 .end method
 
-.method public abstract h()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ly7/a;",
-            ">;"
-        }
-    .end annotation
+.method public abstract h()Z
 .end method
 
 .method public abstract hasNext()Z
@@ -107,22 +110,19 @@
 .method public abstract hasPrevious()Z
 .end method
 
-.method public abstract i()Z
-.end method
-
 .method public abstract l(Lcom/google/android/exoplayer2/Player$a;)V
 .end method
 
 .method public abstract m()I
 .end method
 
-.method public abstract o()Lcom/google/android/exoplayer2/ExoPlaybackException;
+.method public abstract n()Lcom/google/android/exoplayer2/ExoPlaybackException;
 .end method
 
-.method public abstract q(Z)V
+.method public abstract o(Z)V
 .end method
 
-.method public abstract r()Lcom/google/android/exoplayer2/Player$c;
+.method public abstract p()Lcom/google/android/exoplayer2/Player$c;
 .end method
 
 .method public abstract t()I
@@ -131,11 +131,11 @@
 .method public abstract u()I
 .end method
 
-.method public abstract w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+.method public abstract v()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 .end method
 
-.method public abstract x()Lcom/google/android/exoplayer2/Timeline;
+.method public abstract w()Lcom/google/android/exoplayer2/Timeline;
 .end method
 
-.method public abstract y()Landroid/os/Looper;
+.method public abstract x()Landroid/os/Looper;
 .end method

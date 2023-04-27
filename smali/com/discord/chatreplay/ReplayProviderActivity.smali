@@ -551,11 +551,11 @@
     move-object v4, v1
 
     .line 85
-    check-cast v4, Lmf/p;
+    check-cast v4, Lof/p;
 
     .line 86
     .line 87
-    invoke-virtual {v4}, Lmf/p;->nextInt()I
+    invoke-virtual {v4}, Lof/p;->nextInt()I
 
     .line 88
     .line 89
@@ -1911,12 +1911,12 @@
 
     .line 31
     .line 32
-    invoke-interface {v2}, Lwi/e;->a()Lbj/c;
+    invoke-interface {v2}, Lyi/e;->a()Ldj/c;
 
     .line 33
     .line 34
     .line 35
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 36
     .line 37
@@ -1924,12 +1924,12 @@
 
     .line 38
     .line 39
-    invoke-direct {v3, v4}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v4}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 40
     .line 41
     .line 42
-    invoke-interface {v2, v3, p1}, Lwi/m;->c(Lwi/h;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-interface {v2, v3, p1}, Lyi/m;->c(Lyi/h;Ljava/lang/Object;)Ljava/lang/String;
 
     .line 43
     .line 44

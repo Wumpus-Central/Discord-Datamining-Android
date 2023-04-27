@@ -337,7 +337,7 @@
 
     move v7, p1
 
-    invoke-static/range {v1 .. v8}, Lpf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
+    invoke-static/range {v1 .. v8}, Lrf/a;->b(ZZLjava/lang/ClassLoader;Ljava/lang/String;ILkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/Thread;
 
     return-void
 .end method
@@ -408,7 +408,7 @@
     const-string v12, "libdiscord_version"
 
     .line 5
-    invoke-static {v6, v12, v11, v10, v2}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v6, v12, v11, v10, v2}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v12
 
@@ -422,14 +422,14 @@
     const-string v12, "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***"
 
     .line 6
-    invoke-static {v6, v12, v11, v10, v2}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v6, v12, v11, v10, v2}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v10
 
     if-eqz v10, :cond_2
 
     .line 7
-    invoke-static {v1}, Lpi/l;->i(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Lri/l;->i(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
 
     move-object v5, v4
 
@@ -447,7 +447,7 @@
 
     .line 9
     :cond_3
-    invoke-static {v1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
@@ -492,7 +492,7 @@
     invoke-static {v13, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 14
-    invoke-static {v13}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {v13}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
@@ -504,18 +504,18 @@
     :cond_6
     new-instance v1, Lkotlin/text/Regex;
 
-    sget-object v3, Lpi/j;->n:Lpi/j;
+    sget-object v3, Lri/j;->n:Lri/j;
 
     const-string v5, "^Cause: (.+)$"
 
-    invoke-direct {v1, v5, v3}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lpi/j;)V
+    invoke-direct {v1, v5, v3}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lri/j;)V
 
     .line 16
     new-instance v5, Lkotlin/text/Regex;
 
     const-string v6, "^\\s+#\\d+ pc .+/(.+? .+?)\\+?[+)]"
 
-    invoke-direct {v5, v6, v3}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lpi/j;)V
+    invoke-direct {v5, v6, v3}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lri/j;)V
 
     .line 17
     new-instance v3, Lkotlin/text/Regex;
@@ -533,7 +533,7 @@
 
     invoke-direct {v6, v3}, Lcom/discord/crash_reporting/system_logs/SystemLogUtils$fetchLastTombstone$extractedGroups$1;-><init>(Lkotlin/text/Regex;)V
 
-    invoke-static {v5, v6}, Loi/j;->y(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
+    invoke-static {v5, v6}, Lqi/j;->y(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
 
     move-result-object v14
 
@@ -622,7 +622,7 @@
     const/16 v22, 0x0
 
     .line 24
-    invoke-static/range {v14 .. v22}, Loi/j;->w(Lkotlin/sequences/Sequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static/range {v14 .. v22}, Lqi/j;->w(Lkotlin/sequences/Sequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v15
 
@@ -695,7 +695,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v1, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 8
     .line 9
@@ -1851,7 +1851,7 @@
     .line 84
     :cond_6
     :goto_2
-    invoke-static {v3}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 85
     .line 86
@@ -1867,7 +1867,7 @@
 
     .line 91
     .line 92
-    invoke-static {v3, v7, v0, v5, v4}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v3, v7, v0, v5, v4}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     .line 93
     .line 94

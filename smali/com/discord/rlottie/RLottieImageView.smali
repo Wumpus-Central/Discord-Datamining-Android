@@ -265,7 +265,7 @@
 
     .line 42
     :cond_2
-    new-instance p1, Llf/y;
+    new-instance p1, Lnf/y;
 
     .line 43
     .line 44
@@ -273,7 +273,7 @@
 
     .line 45
     .line 46
-    invoke-direct {p1, v0}, Llf/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lnf/y;-><init>(Ljava/lang/String;)V
 
     .line 47
     .line 48
@@ -1880,17 +1880,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final setPlaybackMode(Lcom/discord/rlottie/RLottieDrawable$PlaybackMode;)V

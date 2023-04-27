@@ -192,7 +192,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/chat/presentation/message/view/MessageContentView$shadowView$2;-><init>(Lcom/discord/chat/presentation/message/view/MessageContentView;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -1773,7 +1773,7 @@
     if-eqz p20, :cond_1
 
     .line 5
-    invoke-static/range {p20 .. p20}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static/range {p20 .. p20}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result v2
 

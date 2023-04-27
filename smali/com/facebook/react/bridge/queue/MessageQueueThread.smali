@@ -4,25 +4,22 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # virtual methods
 .method public abstract assertIsOnThread()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract assertIsOnThread(Ljava/lang/String;)V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract callOnQueue(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -34,29 +31,32 @@
             "TT;>;"
         }
     .end annotation
+
+    .annotation build Le6/a;
+    .end annotation
 .end method
 
 .method public abstract getPerfStats()Lcom/facebook/react/bridge/queue/MessageQueueThreadPerfStats;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract isOnThread()Z
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract quitSynchronous()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract resetPerfStats()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract runOnQueue(Ljava/lang/Runnable;)Z
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

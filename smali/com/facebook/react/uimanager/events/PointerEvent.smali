@@ -1521,7 +1521,7 @@
 
     .line 3
     :cond_0
-    invoke-static {p3}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
@@ -1568,7 +1568,7 @@
 
     .line 7
     :cond_0
-    invoke-static {p3}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 

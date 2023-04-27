@@ -333,7 +333,7 @@
     const-string v2, "Could not open stack frame"
 
     .line 15
-    invoke-static {v1, v2, p1}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, p1}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
     return-object v0

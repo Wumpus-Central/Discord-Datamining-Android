@@ -26,7 +26,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             "ZI)V"
@@ -600,7 +600,7 @@
 
 
 # virtual methods
-.method protected declared-synchronized H(Lu5/e;I)Z
+.method protected declared-synchronized H(Lv5/e;I)Z
     .locals 1
 
     .line 1
@@ -633,7 +633,7 @@
     .line 11
     :cond_0
     :try_start_1
-    invoke-super {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lu5/e;I)Z
+    invoke-super {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lv5/e;I)Z
 
     .line 12
     .line 13
@@ -733,22 +733,22 @@
     .line 93
 .end method
 
-.method protected w(Lu5/e;)I
+.method protected w(Lv5/e;)I
     .locals 0
 
-    invoke-virtual {p1}, Lu5/e;->R()I
+    invoke-virtual {p1}, Lv5/e;->R()I
 
     move-result p1
 
     return p1
 .end method
 
-.method protected x()Lu5/i;
+.method protected x()Lv5/i;
     .locals 1
 
     const/4 v0, 0x0
 
-    invoke-static {v0, v0, v0}, Lu5/h;->d(IZZ)Lu5/i;
+    invoke-static {v0, v0, v0}, Lv5/h;->d(IZZ)Lv5/i;
 
     move-result-object v0
 

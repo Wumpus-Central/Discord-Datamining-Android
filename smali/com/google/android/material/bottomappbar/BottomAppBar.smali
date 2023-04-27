@@ -25,7 +25,7 @@
 
 .field private final f0:I
 
-.field private final g0:Lwb/g;
+.field private final g0:Lxb/g;
 
 .field private h0:Landroid/animation/Animator;
 
@@ -70,7 +70,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    sget v0, Ldb/j;->i:I
+    sget v0, Leb/j;->i:I
 
     sput v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->w0:I
 
@@ -734,11 +734,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lwb/g;->E()Lwb/k;
+    invoke-virtual {v0}, Lxb/g;->E()Lxb/k;
 
     .line 4
     .line 5
@@ -746,7 +746,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Lwb/k;->p()Lwb/f;
+    invoke-virtual {v0}, Lxb/k;->p()Lxb/f;
 
     .line 8
     .line 9
@@ -867,7 +867,7 @@
     const/4 v0, 0x0
 
     .line 15
-    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->g(Leb/k;)V
+    invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->g(Lfb/k;)V
 
     .line 16
     .line 17
@@ -3204,7 +3204,7 @@
     move-result-object v0
 
     .line 16
-    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 17
     .line 18
@@ -3240,7 +3240,7 @@
 
     .line 32
     :goto_0
-    invoke-virtual {v1, v2}, Lwb/g;->Z(F)V
+    invoke-virtual {v1, v2}, Lxb/g;->Z(F)V
 
     .line 33
     .line 34
@@ -3554,11 +3554,11 @@
     .line 19
     .line 20
     .line 21
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 22
     .line 23
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lxb/g;->invalidateSelf()V
 
     .line 24
     .line 25
@@ -3627,9 +3627,9 @@
 .method public getBackgroundTint()Landroid/content/res/ColorStateList;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
-    invoke-virtual {v0}, Lwb/g;->G()Landroid/content/res/ColorStateList;
+    invoke-virtual {v0}, Lxb/g;->G()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
@@ -3720,7 +3720,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->i()F
+    invoke-virtual {v0}, Lcom/google/android/material/bottomappbar/a;->h()F
 
     move-result v0
 
@@ -3962,11 +3962,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 5
     .line 6
-    invoke-static {p0, v0}, Lwb/h;->f(Landroid/view/View;Lwb/g;)V
+    invoke-static {p0, v0}, Lxb/h;->f(Landroid/view/View;Lxb/g;)V
 
     .line 7
     .line 8
@@ -4313,7 +4313,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lh1/a;->b()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lh1/a;->a()Landroid/os/Parcelable;
 
     .line 12
     .line 13
@@ -5118,7 +5118,7 @@
 .method public setBackgroundTint(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     invoke-static {v0, p1}, Landroidx/core/graphics/drawable/a;->o(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -5158,11 +5158,11 @@
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lxb/g;->invalidateSelf()V
 
     .line 19
     .line 20
@@ -5233,20 +5233,20 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lwb/g;->X(F)V
+    invoke-virtual {v0, p1}, Lxb/g;->X(F)V
 
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lwb/g;->D()I
+    invoke-virtual {p1}, Lxb/g;->D()I
 
     .line 9
     .line 10
@@ -5254,11 +5254,11 @@
     move-result p1
 
     .line 12
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lwb/g;->C()I
+    invoke-virtual {v0}, Lxb/g;->C()I
 
     .line 15
     .line 16
@@ -5395,11 +5395,11 @@
     .line 18
     .line 19
     .line 20
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lxb/g;->invalidateSelf()V
 
     .line 23
     .line 24
@@ -5493,11 +5493,11 @@
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lxb/g;->invalidateSelf()V
 
     .line 19
     .line 20
@@ -5595,11 +5595,11 @@
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lwb/g;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar;->g0:Lxb/g;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lwb/g;->invalidateSelf()V
+    invoke-virtual {p1}, Lxb/g;->invalidateSelf()V
 
     .line 19
     .line 20

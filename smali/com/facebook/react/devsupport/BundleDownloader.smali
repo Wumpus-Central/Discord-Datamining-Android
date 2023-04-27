@@ -125,7 +125,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {p1, p0}, Lokhttp3/Headers;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Lokhttp3/Headers;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
@@ -334,7 +334,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p4}, Lokio/BufferedSource;->v0()Ljava/lang/String;
+    invoke-interface {p4}, Lokio/BufferedSource;->s0()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -1477,7 +1477,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {p1}, Ldk/m;->f(Ljava/io/File;)Lokio/Sink;
+    invoke-static {p1}, Lfk/m;->f(Ljava/io/File;)Lokio/Sink;
 
     .line 2
     .line 3
@@ -1488,7 +1488,7 @@
 
     .line 5
     :try_start_1
-    invoke-interface {p0, p1}, Lokio/BufferedSource;->A0(Lokio/Sink;)J
+    invoke-interface {p0, p1}, Lokio/BufferedSource;->x0(Lokio/Sink;)J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1660,7 +1660,7 @@
 
     move-result-object p3
 
-    invoke-static {p3}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
@@ -1673,7 +1673,7 @@
 
     invoke-direct {p5, p0, p1, p2, p4}, Lcom/facebook/react/devsupport/BundleDownloader$1;-><init>(Lcom/facebook/react/devsupport/BundleDownloader;Lcom/facebook/react/devsupport/interfaces/DevBundleDownloadListener;Ljava/io/File;Lcom/facebook/react/devsupport/BundleDownloader$BundleInfo;)V
 
-    invoke-interface {p3, p5}, Lokhttp3/Call;->g(Loj/d;)V
+    invoke-interface {p3, p5}, Lokhttp3/Call;->p(Lqj/d;)V
 
     return-void
 .end method

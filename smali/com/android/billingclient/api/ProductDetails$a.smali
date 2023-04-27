@@ -25,7 +25,7 @@
 
 .field private final e:Ljava/lang/String;
 
-.field private final f:Lra/b0;
+.field private final f:Lsa/b0;
 
 
 # direct methods
@@ -189,7 +189,7 @@
 
     .line 79
     :cond_0
-    invoke-static {v0}, Lra/b0;->t(Ljava/util/Collection;)Lra/b0;
+    invoke-static {v0}, Lsa/b0;->t(Ljava/util/Collection;)Lsa/b0;
 
     .line 80
     .line 81
@@ -197,7 +197,7 @@
     move-result-object p1
 
     .line 83
-    iput-object p1, p0, Lcom/android/billingclient/api/ProductDetails$a;->f:Lra/b0;
+    iput-object p1, p0, Lcom/android/billingclient/api/ProductDetails$a;->f:Lsa/b0;
 
     .line 84
     .line 85
@@ -305,7 +305,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 

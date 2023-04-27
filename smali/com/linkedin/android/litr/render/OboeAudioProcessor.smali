@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loe/a;
+.implements Lpe/a;
 
 
 # annotations
@@ -19,7 +19,7 @@
     }
     d2 = {
         "Lcom/linkedin/android/litr/render/OboeAudioProcessor;",
-        "Loe/a;",
+        "Lpe/a;",
         "",
         "sourceChannelCount",
         "sourceSampleRate",
@@ -33,7 +33,7 @@
         "targetBuffer",
         "processAudioFrame",
         "releaseProcessor",
-        "Lhe/c;",
+        "Lie/c;",
         "sourceFrame",
         "targetFrame",
         "a",
@@ -874,7 +874,7 @@
 
 
 # virtual methods
-.method public a(Lhe/c;Lhe/c;)V
+.method public a(Lie/c;Lie/c;)V
     .locals 9
 
     .line 1
@@ -896,7 +896,7 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p1, Lhe/c;->b:Ljava/nio/ByteBuffer;
+    iget-object v0, p1, Lie/c;->b:Ljava/nio/ByteBuffer;
 
     .line 12
     .line 13
@@ -904,7 +904,7 @@
 
     .line 14
     .line 15
-    iget-object v1, p2, Lhe/c;->b:Ljava/nio/ByteBuffer;
+    iget-object v1, p2, Lie/c;->b:Ljava/nio/ByteBuffer;
 
     .line 16
     .line 17
@@ -912,7 +912,7 @@
 
     .line 18
     .line 19
-    iget-object v2, p1, Lhe/c;->c:Landroid/media/MediaCodec$BufferInfo;
+    iget-object v2, p1, Lie/c;->c:Landroid/media/MediaCodec$BufferInfo;
 
     .line 20
     .line 21
@@ -951,7 +951,7 @@
 
     .line 37
     .line 38
-    iget-object v1, p2, Lhe/c;->b:Ljava/nio/ByteBuffer;
+    iget-object v1, p2, Lie/c;->b:Ljava/nio/ByteBuffer;
 
     .line 39
     .line 40
@@ -960,7 +960,7 @@
     .line 41
     .line 42
     .line 43
-    iget-object v1, p2, Lhe/c;->b:Ljava/nio/ByteBuffer;
+    iget-object v1, p2, Lie/c;->b:Ljava/nio/ByteBuffer;
 
     .line 44
     .line 45
@@ -969,7 +969,7 @@
     .line 46
     .line 47
     .line 48
-    iget-object v3, p2, Lhe/c;->c:Landroid/media/MediaCodec$BufferInfo;
+    iget-object v3, p2, Lie/c;->c:Landroid/media/MediaCodec$BufferInfo;
 
     .line 49
     .line 50
@@ -980,7 +980,7 @@
 
     .line 52
     .line 53
-    iget-object p1, p1, Lhe/c;->c:Landroid/media/MediaCodec$BufferInfo;
+    iget-object p1, p1, Lie/c;->c:Landroid/media/MediaCodec$BufferInfo;
 
     .line 54
     .line 55
@@ -1148,17 +1148,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public release()V

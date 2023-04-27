@@ -166,7 +166,7 @@
 
     move-result-object p3
 
-    sget v0, Ldb/h;->a:I
+    sget v0, Leb/h;->a:I
 
     const/4 v1, 0x1
 
@@ -177,7 +177,7 @@
 
     move-result-object p1
 
-    sget p3, Ldb/d;->e:I
+    sget p3, Leb/d;->e:I
 
     invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -186,7 +186,7 @@
     invoke-virtual {p0, p1}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIconSize(I)V
 
     .line 7
-    sget p1, Ldb/f;->e:I
+    sget p1, Leb/f;->e:I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -478,7 +478,7 @@
 
     .line 6
     .line 7
-    sget v0, Ldb/f;->d:I
+    sget v0, Leb/f;->d:I
 
     .line 8
     .line 9
@@ -1444,7 +1444,7 @@
     move-result-object p1
 
     .line 50
-    sget v1, Ldb/e;->g:I
+    sget v1, Leb/e;->g:I
 
     .line 51
     .line 52

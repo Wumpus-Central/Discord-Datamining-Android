@@ -54,7 +54,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -70,7 +70,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -89,7 +89,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 20
     .line 21
@@ -101,7 +101,7 @@
 
     .line 24
     .line 25
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 26
     .line 27

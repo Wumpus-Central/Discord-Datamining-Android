@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private final a:Lxc/a;
+.field private final a:Lyc/a;
 
 
 # direct methods
@@ -121,7 +121,7 @@
     .line 81
 .end method
 
-.method private constructor <init>(Lxc/a;)V
+.method private constructor <init>(Lyc/a;)V
     .locals 0
 
     .line 1
@@ -130,7 +130,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/firebase/installations/i;->a:Lxc/a;
+    iput-object p1, p0, Lcom/google/firebase/installations/i;->a:Lyc/a;
 
     .line 5
     .line 6
@@ -211,18 +211,18 @@
 .method public static c()Lcom/google/firebase/installations/i;
     .locals 1
 
-    invoke-static {}, Lxc/b;->b()Lxc/b;
+    invoke-static {}, Lyc/b;->b()Lyc/b;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/firebase/installations/i;->d(Lxc/a;)Lcom/google/firebase/installations/i;
+    invoke-static {v0}, Lcom/google/firebase/installations/i;->d(Lyc/a;)Lcom/google/firebase/installations/i;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static d(Lxc/a;)Lcom/google/firebase/installations/i;
+.method public static d(Lyc/a;)Lcom/google/firebase/installations/i;
     .locals 1
 
     .line 1
@@ -238,7 +238,7 @@
 
     .line 6
     .line 7
-    invoke-direct {v0, p0}, Lcom/google/firebase/installations/i;-><init>(Lxc/a;)V
+    invoke-direct {v0, p0}, Lcom/google/firebase/installations/i;-><init>(Lyc/a;)V
 
     .line 8
     .line 9
@@ -428,9 +428,9 @@
 .method public a()J
     .locals 2
 
-    iget-object v0, p0, Lcom/google/firebase/installations/i;->a:Lxc/a;
+    iget-object v0, p0, Lcom/google/firebase/installations/i;->a:Lyc/a;
 
-    invoke-interface {v0}, Lxc/a;->a()J
+    invoke-interface {v0}, Lyc/a;->a()J
 
     move-result-wide v0
 
@@ -469,11 +469,11 @@
     return-wide v0
 .end method
 
-.method public f(Lvc/d;)Z
+.method public f(Lwc/d;)Z
     .locals 8
 
     .line 1
-    invoke-virtual {p1}, Lvc/d;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lwc/d;->b()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -500,7 +500,7 @@
 
     .line 13
     :cond_0
-    invoke-virtual {p1}, Lvc/d;->h()J
+    invoke-virtual {p1}, Lwc/d;->h()J
 
     .line 14
     .line 15
@@ -508,7 +508,7 @@
     move-result-wide v2
 
     .line 17
-    invoke-virtual {p1}, Lvc/d;->c()J
+    invoke-virtual {p1}, Lwc/d;->c()J
 
     .line 18
     .line 19

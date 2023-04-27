@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loj/d;
+.implements Lqj/d;
 
 
 # annotations
@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 16
-    invoke-interface {v0}, Lokhttp3/Call;->p()Z
+    invoke-interface {v0}, Lokhttp3/Call;->i()Z
 
     .line 17
     .line 18
@@ -253,7 +253,7 @@
     move-result-object p1
 
     .line 16
-    invoke-interface {p1}, Lokhttp3/Call;->p()Z
+    invoke-interface {p1}, Lokhttp3/Call;->i()Z
 
     .line 17
     .line 18
@@ -278,7 +278,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->b0()Lokhttp3/Request;
 
     .line 29
     .line 30
@@ -398,7 +398,7 @@
     move-result v2
 
     .line 86
-    invoke-virtual {p2}, Lokhttp3/Response;->y()Lokhttp3/Headers;
+    invoke-virtual {p2}, Lokhttp3/Response;->z()Lokhttp3/Headers;
 
     .line 87
     .line 88
@@ -422,7 +422,7 @@
     move-result-object p1
 
     .line 98
-    invoke-static {p1}, Ldk/m;->d(Lokio/Source;)Lokio/BufferedSource;
+    invoke-static {p1}, Lfk/m;->d(Lokio/Source;)Lokio/BufferedSource;
 
     .line 99
     .line 100

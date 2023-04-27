@@ -7,7 +7,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -826,7 +826,7 @@
 # virtual methods
 .method public assertIsOnThread()V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -843,7 +843,7 @@
 
 .method public assertIsOnThread(Ljava/lang/String;)V
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 2
@@ -878,9 +878,6 @@
 
 .method public callOnQueue(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     .locals 2
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -891,6 +888,9 @@
             "Ljava/util/concurrent/Future<",
             "TT;>;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -970,7 +970,7 @@
 
 .method public getPerfStats()Lcom/facebook/react/bridge/queue/MessageQueueThreadPerfStats;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/bridge/queue/MessageQueueThreadImpl;->mPerfStats:Lcom/facebook/react/bridge/queue/MessageQueueThreadPerfStats;
@@ -980,7 +980,7 @@
 
 .method public isOnThread()Z
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/bridge/queue/MessageQueueThreadImpl;->mLooper:Landroid/os/Looper;
@@ -1008,7 +1008,7 @@
 
 .method public quitSynchronous()V
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1397,7 +1397,7 @@
 
 .method public resetPerfStats()V
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1461,7 +1461,7 @@
 
 .method public runOnQueue(Ljava/lang/Runnable;)Z
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -1525,7 +1525,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0, p1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 34
     .line 35

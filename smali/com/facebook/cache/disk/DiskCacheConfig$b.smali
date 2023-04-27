@@ -35,13 +35,13 @@
 
 .field private f:J
 
-.field private g:Lq3/g;
+.field private g:Lr3/g;
 
-.field private h:Lp3/a;
+.field private h:Lq3/a;
 
-.field private i:Lp3/c;
+.field private i:Lq3/c;
 
-.field private j:Ls3/b;
+.field private j:Lt3/b;
 
 .field private k:Z
 
@@ -81,11 +81,11 @@
     iput-wide v0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->f:J
 
     .line 8
-    new-instance v0, Lq3/b;
+    new-instance v0, Lr3/b;
 
-    invoke-direct {v0}, Lq3/b;-><init>()V
+    invoke-direct {v0}, Lr3/b;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->g:Lq3/g;
+    iput-object v0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->g:Lr3/g;
 
     .line 9
     iput-object p1, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->l:Landroid/content/Context;
@@ -118,10 +118,10 @@
     return-object p0
 .end method
 
-.method static synthetic c(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lp3/c;
+.method static synthetic c(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lq3/c;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->i:Lp3/c;
+    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->i:Lq3/c;
 
     return-object p0
 .end method
@@ -134,10 +134,10 @@
     return-object p1
 .end method
 
-.method static synthetic e(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Ls3/b;
+.method static synthetic e(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lt3/b;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->j:Ls3/b;
+    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->j:Lt3/b;
 
     return-object p0
 .end method
@@ -190,18 +190,18 @@
     return-wide v0
 .end method
 
-.method static synthetic l(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lq3/g;
+.method static synthetic l(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lr3/g;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->g:Lq3/g;
+    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->g:Lr3/g;
 
     return-object p0
 .end method
 
-.method static synthetic m(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lp3/a;
+.method static synthetic m(Lcom/facebook/cache/disk/DiskCacheConfig$b;)Lq3/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->h:Lp3/a;
+    iget-object p0, p0, Lcom/facebook/cache/disk/DiskCacheConfig$b;->h:Lq3/a;
 
     return-object p0
 .end method
@@ -229,7 +229,7 @@
 .method public p(Ljava/io/File;)Lcom/facebook/cache/disk/DiskCacheConfig$b;
     .locals 0
 
-    invoke-static {p1}, Lv3/m;->a(Ljava/lang/Object;)Lcom/facebook/common/internal/Supplier;
+    invoke-static {p1}, Lw3/m;->a(Ljava/lang/Object;)Lcom/facebook/common/internal/Supplier;
 
     move-result-object p1
 

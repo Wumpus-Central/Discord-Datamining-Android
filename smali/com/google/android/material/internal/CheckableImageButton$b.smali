@@ -50,7 +50,7 @@
     invoke-direct {p0, p1, p2}, Lh1/a;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
     .line 3
-    invoke-direct {p0, p1}, Lcom/google/android/material/internal/CheckableImageButton$b;->d(Landroid/os/Parcel;)V
+    invoke-direct {p0, p1}, Lcom/google/android/material/internal/CheckableImageButton$b;->b(Landroid/os/Parcel;)V
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method private d(Landroid/os/Parcel;)V
+.method private b(Landroid/os/Parcel;)V
     .locals 1
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I

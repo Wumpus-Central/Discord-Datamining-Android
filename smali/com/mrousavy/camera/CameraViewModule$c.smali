@@ -193,7 +193,7 @@
 
     const-string v2, "id"
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -235,7 +235,7 @@
     check-cast v11, Lcom/facebook/react/bridge/Promise;
 
     :try_start_0
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_4
 
@@ -266,7 +266,7 @@
     check-cast v12, Lcom/facebook/react/bridge/Promise;
 
     :try_start_1
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -293,7 +293,7 @@
     check-cast v11, Lcom/facebook/react/bridge/Promise;
 
     :try_start_2
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_4
 
@@ -302,7 +302,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 2
     iget-object v11, v1, Lcom/mrousavy/camera/CameraViewModule$c;->q:Lcom/facebook/react/bridge/Promise;
@@ -317,7 +317,7 @@
 
     move-result-object v12
 
-    invoke-static {v12}, Landroidx/camera/lifecycle/e;->g(Landroid/content/Context;)Lfc/b;
+    invoke-static {v12}, Landroidx/camera/lifecycle/e;->g(Landroid/content/Context;)Lgc/b;
 
     move-result-object v12
 
@@ -331,7 +331,7 @@
 
     iput v8, v1, Lcom/mrousavy/camera/CameraViewModule$c;->p:I
 
-    invoke-static {v12, v1}, Lui/a;->b(Lfc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v12, v1}, Lwi/a;->b(Lgc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object v12
 
@@ -349,7 +349,7 @@
 
     move-result-object v13
 
-    invoke-static {v13, v12}, Landroidx/camera/extensions/ExtensionsManager;->c(Landroid/content/Context;Landroidx/camera/core/s;)Lfc/b;
+    invoke-static {v13, v12}, Landroidx/camera/extensions/ExtensionsManager;->c(Landroid/content/Context;Landroidx/camera/core/s;)Lgc/b;
 
     move-result-object v13
 
@@ -367,7 +367,7 @@
 
     iput v7, v1, Lcom/mrousavy/camera/CameraViewModule$c;->p:I
 
-    invoke-static {v13, v1}, Lui/a;->b(Lfc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v13, v1}, Lwi/a;->b(Lgc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object v13
     :try_end_3
@@ -396,7 +396,7 @@
 
     move-result-object v14
 
-    invoke-static {v14}, Landroidx/camera/lifecycle/e;->g(Landroid/content/Context;)Lfc/b;
+    invoke-static {v14}, Landroidx/camera/lifecycle/e;->g(Landroid/content/Context;)Lgc/b;
 
     move-result-object v14
 
@@ -414,7 +414,7 @@
 
     iput v6, v1, Lcom/mrousavy/camera/CameraViewModule$c;->p:I
 
-    invoke-static {v14, v1}, Lui/a;->b(Lfc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v14, v1}, Lwi/a;->b(Lgc/b;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object v5
     :try_end_4
@@ -502,7 +502,7 @@
 
     invoke-static {v7, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v6, v7}, Lse/e;->b(Landroidx/camera/core/t$a;Ljava/lang/String;)Landroidx/camera/core/t$a;
+    invoke-static {v6, v7}, Lte/e;->b(Landroidx/camera/core/t$a;Ljava/lang/String;)Landroidx/camera/core/t$a;
 
     move-result-object v6
 
@@ -589,7 +589,7 @@
 
     .line 18
     :goto_5
-    invoke-static {v1}, Lse/c;->a(Landroid/hardware/camera2/CameraCharacteristics;)Lcom/facebook/react/bridge/ReadableArray;
+    invoke-static {v1}, Lte/c;->a(Landroid/hardware/camera2/CameraCharacteristics;)Lcom/facebook/react/bridge/ReadableArray;
 
     move-result-object v3
 
@@ -810,7 +810,7 @@
 
     .line 33
     :goto_9
-    invoke-static {v1}, Lse/c;->b(Landroid/hardware/camera2/CameraCharacteristics;)D
+    invoke-static {v1}, Lte/c;->b(Landroid/hardware/camera2/CameraCharacteristics;)D
 
     move-result-wide v8
 
@@ -834,7 +834,7 @@
 
     move-result-object v15
 
-    invoke-static {v15}, Lre/b;->a(Ljava/lang/Integer;)Ljava/lang/String;
+    invoke-static {v15}, Lse/b;->a(Ljava/lang/Integer;)Ljava/lang/String;
 
     move-result-object v15
 
@@ -853,7 +853,7 @@
 
     move-result-object v13
 
-    invoke-static {v13}, Lre/b;->a(Ljava/lang/Integer;)Ljava/lang/String;
+    invoke-static {v13}, Lse/b;->a(Ljava/lang/Integer;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -1312,7 +1312,7 @@
     move/from16 v35, v0
 
     .line 80
-    invoke-static {v15}, Lre/a;->a(I)Ljava/lang/String;
+    invoke-static {v15}, Lse/a;->a(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1350,7 +1350,7 @@
     .line 83
     invoke-static {v6, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v6, v11}, Lre/c;->a(Landroid/util/Size;Landroid/util/Size;)Z
+    invoke-static {v6, v11}, Lse/c;->a(Landroid/util/Size;Landroid/util/Size;)Z
 
     move-result v2
     :try_end_8
@@ -1765,7 +1765,7 @@
     const/4 v6, 0x0
 
     :goto_20
-    invoke-static {v14, v0, v6}, Lse/p;->a(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Double;)V
+    invoke-static {v14, v0, v6}, Lte/p;->a(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Double;)V
 
     const-string v0, "videoWidth"
 
@@ -1788,7 +1788,7 @@
     const/4 v6, 0x0
 
     :goto_21
-    invoke-static {v14, v0, v6}, Lse/p;->a(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Double;)V
+    invoke-static {v14, v0, v6}, Lte/p;->a(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Double;)V
 
     const-string v0, "isHighestPhotoQualitySupported"
 
@@ -1822,7 +1822,7 @@
     const/4 v2, 0x0
 
     :goto_23
-    invoke-static {v14, v0, v2}, Lse/p;->b(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-static {v14, v0, v2}, Lte/p;->b(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Integer;)V
 
     const-string v0, "minISO"
 
@@ -1841,7 +1841,7 @@
     const/4 v2, 0x0
 
     :goto_24
-    invoke-static {v14, v0, v2}, Lse/p;->b(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-static {v14, v0, v2}, Lte/p;->b(Lcom/facebook/react/bridge/WritableMap;Ljava/lang/String;Ljava/lang/Integer;)V
 
     const-string v0, "fieldOfView"
 

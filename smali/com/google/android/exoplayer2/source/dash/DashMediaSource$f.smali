@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ld9/t;
+.implements Le9/t;
 
 
 # annotations

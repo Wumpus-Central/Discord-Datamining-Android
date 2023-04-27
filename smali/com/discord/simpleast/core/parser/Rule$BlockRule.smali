@@ -165,7 +165,7 @@
     const/4 v3, 0x0
 
     .line 13
-    invoke-static {p2, v2, v0, v1, v3}, Lpi/l;->P(Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    invoke-static {p2, v2, v0, v1, v3}, Lri/l;->P(Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
 
     .line 14
     .line 15

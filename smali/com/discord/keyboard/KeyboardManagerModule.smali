@@ -402,9 +402,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lh3/a;
+    new-instance v1, Li3/a;
 
-    invoke-direct {v1, p1}, Lh3/a;-><init>(Z)V
+    invoke-direct {v1, p1}, Li3/a;-><init>(Z)V
 
     invoke-virtual {v0, v1}, Lcom/facebook/react/bridge/ReactContext;->runOnUiQueueThread(Ljava/lang/Runnable;)V
 

@@ -24,10 +24,10 @@
 
 .field private final b:Ljava/lang/Object;
 
-.field private c:Lcb/d;
+.field private c:Ldb/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcb/d<",
+            "Ldb/d<",
             "TTResult;>;"
         }
     .end annotation
@@ -35,13 +35,13 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lcb/d;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Ldb/d;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/concurrent/Executor;",
-            "Lcb/d<",
+            "Ldb/d<",
             "TTResult;>;)V"
         }
     .end annotation
@@ -56,15 +56,15 @@
 
     iput-object p1, p0, Lcom/google/android/gms/tasks/l;->a:Ljava/util/concurrent/Executor;
 
-    iput-object p2, p0, Lcom/google/android/gms/tasks/l;->c:Lcb/d;
+    iput-object p2, p0, Lcom/google/android/gms/tasks/l;->c:Ldb/d;
 
     return-void
 .end method
 
-.method static bridge synthetic a(Lcom/google/android/gms/tasks/l;)Lcb/d;
+.method static bridge synthetic a(Lcom/google/android/gms/tasks/l;)Ldb/d;
     .locals 0
 
-    iget-object p0, p0, Lcom/google/android/gms/tasks/l;->c:Lcb/d;
+    iget-object p0, p0, Lcom/google/android/gms/tasks/l;->c:Ldb/d;
 
     return-object p0
 .end method
@@ -98,7 +98,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/tasks/l;->c:Lcb/d;
+    iget-object v1, p0, Lcom/google/android/gms/tasks/l;->c:Ldb/d;
 
     .line 5
     .line 6

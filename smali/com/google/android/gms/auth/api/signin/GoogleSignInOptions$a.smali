@@ -42,7 +42,7 @@
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/Integer;",
-            "Lq9/a;",
+            "Lr9/a;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
     iput-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions$a;->h:Ljava/util/Map;
 
     .line 5
-    invoke-static {p1}, Lw9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lx9/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -136,7 +136,7 @@
     iput-object v0, p0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions$a;->e:Ljava/lang/String;
 
     .line 11
-    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->S(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)Landroid/accounts/Account;
+    invoke-static {p1}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->M(Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;)Landroid/accounts/Account;
 
     move-result-object v0
 
@@ -323,7 +323,7 @@
     move-object v1, v0
 
     .line 73
-    invoke-direct/range {v1 .. v12}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;-><init>(ILjava/util/ArrayList;Landroid/accounts/Account;ZZZLjava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Lp9/d;)V
+    invoke-direct/range {v1 .. v12}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;-><init>(ILjava/util/ArrayList;Landroid/accounts/Account;ZZZLjava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Lq9/d;)V
 
     .line 74
     .line 75

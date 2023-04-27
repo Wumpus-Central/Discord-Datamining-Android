@@ -20,7 +20,7 @@
         "Ljava/lang/Object;",
         "Lcom/facebook/imagepipeline/producers/l0<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -32,7 +32,7 @@
         value = {
             "Lcom/facebook/imagepipeline/producers/l0<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;"
         }
     .end annotation
@@ -51,7 +51,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/l0<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;",
             "Ljava/util/concurrent/Executor;",
@@ -65,7 +65,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -85,7 +85,7 @@
 
     .line 13
     .line 14
-    invoke-static {p3}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -283,7 +283,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             ")V"
@@ -299,7 +299,7 @@
     move-result-object v3
 
     .line 5
-    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p2}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 6
     .line 7

@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
-            "Lg2/h;",
+            "Lh2/h;",
             ">;"
         }
     .end annotation
@@ -36,11 +36,11 @@
 
 .field private l:Lcom/facebook/react/bridge/ReadableArray;
 
-.field private m:Lg2/q0;
+.field private m:Lh2/q0;
 
 
 # direct methods
-.method public constructor <init>(Lg2/h;)V
+.method public constructor <init>(Lh2/h;)V
     .locals 1
 
     .line 1
@@ -112,7 +112,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lg2/h;
+    check-cast v0, Lh2/h;
 
     .line 8
     .line 9
@@ -147,11 +147,11 @@
 
     .line 22
     .line 23
-    new-instance v1, Lg2/s0;
+    new-instance v1, Lh2/s0;
 
     .line 24
     .line 25
-    invoke-direct {v1, v0}, Lg2/s0;-><init>(Lg2/h;)V
+    invoke-direct {v1, v0}, Lh2/s0;-><init>(Lh2/h;)V
 
     .line 26
     .line 27
@@ -212,7 +212,7 @@
     move-result-object v4
 
     .line 55
-    invoke-virtual {v1, v5, v4}, Lg2/s0;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v4}, Lh2/s0;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -225,7 +225,7 @@
 
     .line 61
     :cond_1
-    invoke-virtual {v0, v1}, Lg2/h;->setTextDelegate(Lg2/s0;)V
+    invoke-virtual {v0, v1}, Lh2/h;->setTextDelegate(Lh2/s0;)V
 
     .line 62
     .line 63
@@ -258,7 +258,7 @@
     move-result-object v4
 
     .line 77
-    invoke-virtual {v0, v1, v4}, Lg2/h;->y(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v4}, Lh2/h;->y(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 78
     .line 79
@@ -280,7 +280,7 @@
 
     .line 87
     .line 88
-    invoke-virtual {v0, v1}, Lg2/h;->setAnimation(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lh2/h;->setAnimation(Ljava/lang/String;)V
 
     .line 89
     .line 90
@@ -306,7 +306,7 @@
     move-result v1
 
     .line 101
-    invoke-virtual {v0, v1}, Lg2/h;->setProgress(F)V
+    invoke-virtual {v0, v1}, Lh2/h;->setProgress(F)V
 
     .line 102
     .line 103
@@ -347,7 +347,7 @@
 
     .line 119
     :goto_1
-    invoke-virtual {v0, v1}, Lg2/h;->setRepeatCount(I)V
+    invoke-virtual {v0, v1}, Lh2/h;->setRepeatCount(I)V
 
     .line 120
     .line 121
@@ -373,7 +373,7 @@
     move-result v1
 
     .line 132
-    invoke-virtual {v0, v1}, Lg2/h;->setSpeed(F)V
+    invoke-virtual {v0, v1}, Lh2/h;->setSpeed(F)V
 
     .line 133
     .line 134
@@ -401,7 +401,7 @@
     .line 145
     .line 146
     :cond_9
-    iget-object v1, p0, Lcom/airbnb/android/react/lottie/a;->m:Lg2/q0;
+    iget-object v1, p0, Lcom/airbnb/android/react/lottie/a;->m:Lh2/q0;
 
     .line 147
     .line 148
@@ -409,12 +409,12 @@
 
     .line 149
     .line 150
-    invoke-virtual {v0, v1}, Lg2/h;->setRenderMode(Lg2/q0;)V
+    invoke-virtual {v0, v1}, Lh2/h;->setRenderMode(Lh2/q0;)V
 
     .line 151
     .line 152
     .line 153
-    iput-object v3, p0, Lcom/airbnb/android/react/lottie/a;->m:Lg2/q0;
+    iput-object v3, p0, Lcom/airbnb/android/react/lottie/a;->m:Lh2/q0;
 
     .line 154
     .line 155
@@ -427,7 +427,7 @@
 
     .line 158
     .line 159
-    invoke-virtual {v0, v1}, Lg2/h;->setImageAssetsFolder(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lh2/h;->setImageAssetsFolder(Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -453,7 +453,7 @@
     move-result v1
 
     .line 172
-    invoke-virtual {v0, v1}, Lg2/h;->n(Z)V
+    invoke-virtual {v0, v1}, Lh2/h;->n(Z)V
 
     .line 173
     .line 174
@@ -589,11 +589,11 @@
     move-result-object v1
 
     .line 238
-    new-instance v4, Lg2/r0;
+    new-instance v4, Lh2/r0;
 
     .line 239
     .line 240
-    invoke-direct {v4, v3}, Lg2/r0;-><init>(I)V
+    invoke-direct {v4, v3}, Lh2/r0;-><init>(I)V
 
     .line 241
     .line 242
@@ -649,29 +649,29 @@
     move-result-object v1
 
     .line 270
-    new-instance v3, Ll2/e;
+    new-instance v3, Lm2/e;
 
     .line 271
     .line 272
-    invoke-direct {v3, v1}, Ll2/e;-><init>([Ljava/lang/String;)V
+    invoke-direct {v3, v1}, Lm2/e;-><init>([Ljava/lang/String;)V
 
     .line 273
     .line 274
     .line 275
-    new-instance v1, Lt2/c;
+    new-instance v1, Lu2/c;
 
     .line 276
     .line 277
-    invoke-direct {v1, v4}, Lt2/c;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, v4}, Lu2/c;-><init>(Ljava/lang/Object;)V
 
     .line 278
     .line 279
     .line 280
-    sget-object v4, Lg2/j0;->K:Landroid/graphics/ColorFilter;
+    sget-object v4, Lh2/j0;->K:Landroid/graphics/ColorFilter;
 
     .line 281
     .line 282
-    invoke-virtual {v0, v3, v4, v1}, Lg2/h;->j(Ll2/e;Ljava/lang/Object;Lt2/c;)V
+    invoke-virtual {v0, v3, v4, v1}, Lh2/h;->j(Lm2/e;Ljava/lang/Object;Lu2/c;)V
 
     .line 283
     .line 284
@@ -1646,10 +1646,10 @@
     return-void
 .end method
 
-.method public i(Lg2/q0;)V
+.method public i(Lh2/q0;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/airbnb/android/react/lottie/a;->m:Lg2/q0;
+    iput-object p1, p0, Lcom/airbnb/android/react/lottie/a;->m:Lh2/q0;
 
     return-void
 .end method

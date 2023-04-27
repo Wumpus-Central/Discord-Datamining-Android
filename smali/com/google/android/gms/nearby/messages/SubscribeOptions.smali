@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field private final a:Lxa/i;
+.field private final a:Lya/i;
 
-.field private final b:Lxa/a;
+.field private final b:Lya/a;
 
-.field private final c:Lxa/j;
+.field private final c:Lya/j;
 
 .field public final d:Z
 
@@ -44,16 +44,16 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lxa/i;Lxa/a;Lxa/j;ZILxa/o;)V
+.method synthetic constructor <init>(Lya/i;Lya/a;Lya/j;ZILya/o;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lxa/i;
+    iput-object p1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lya/i;
 
-    iput-object p2, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lxa/a;
+    iput-object p2, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lya/a;
 
-    iput-object p3, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c:Lxa/j;
+    iput-object p3, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c:Lya/j;
 
     const/4 p1, 0x0
 
@@ -66,26 +66,26 @@
 
 
 # virtual methods
-.method public a()Lxa/j;
+.method public a()Lya/j;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c:Lxa/j;
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->c:Lya/j;
 
     return-object v0
 .end method
 
-.method public b()Lxa/a;
+.method public b()Lya/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lxa/a;
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lya/a;
 
     return-object v0
 .end method
 
-.method public c()Lxa/i;
+.method public c()Lya/i;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lxa/i;
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lya/i;
 
     return-object v0
 .end method
@@ -93,13 +93,13 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lxa/i;
+    iget-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->a:Lya/i;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lxa/a;
+    iget-object v1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions;->b:Lya/a;
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 

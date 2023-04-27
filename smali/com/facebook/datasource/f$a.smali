@@ -270,7 +270,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-static {}, Lt3/a;->a()Lt3/a;
+    invoke-static {}, Lu3/a;->a()Lu3/a;
 
     .line 71
     .line 72

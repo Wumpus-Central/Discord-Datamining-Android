@@ -204,7 +204,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p1, p2}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->I(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-virtual {p1, p2}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->K(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 32
     .line 33
@@ -812,7 +812,7 @@
 
     iget-object v0, p0, Lcom/discord/media_player/MediaPlayer;->exoPlayer:Lcom/google/android/exoplayer2/SimpleExoPlayer;
 
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o()Lcom/google/android/exoplayer2/ExoPlaybackException;
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->n()Lcom/google/android/exoplayer2/ExoPlaybackException;
 
     move-result-object v0
 
@@ -874,7 +874,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->q(Z)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o(Z)V
 
     return-void
 .end method
@@ -886,7 +886,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->q(Z)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o(Z)V
 
     return-void
 .end method
@@ -920,7 +920,7 @@
     .line 12
     .line 13
     .line 14
-    new-instance v0, Lh8/k0$b;
+    new-instance v0, Li8/k0$b;
 
     .line 15
     .line 16
@@ -928,7 +928,7 @@
 
     .line 17
     .line 18
-    invoke-direct {v0, v1}, Lh8/k0$b;-><init>(Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
+    invoke-direct {v0, v1}, Li8/k0$b;-><init>(Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V
 
     .line 19
     .line 20
@@ -954,7 +954,7 @@
     move-result-object p1
 
     .line 32
-    invoke-virtual {v0, p1}, Lh8/k0$b;->c(Lcom/google/android/exoplayer2/MediaItem;)Lh8/k0;
+    invoke-virtual {v0, p1}, Li8/k0$b;->c(Lcom/google/android/exoplayer2/MediaItem;)Li8/k0;
 
     .line 33
     .line 34
@@ -975,7 +975,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->W0(Lh8/u;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->W0(Li8/u;)V
 
     .line 44
     .line 45
@@ -985,7 +985,7 @@
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v0, p3}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->S(I)V
+    invoke-virtual {v0, p3}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->R(I)V
 
     .line 50
     .line 51
@@ -1529,7 +1529,7 @@
     const/4 v1, 0x0
 
     .line 9
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->q(Z)V
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->o(Z)V
 
     .line 10
     .line 11
@@ -2112,7 +2112,7 @@
 
     iget-object v0, p0, Lcom/discord/media_player/MediaPlayer;->exoPlayer:Lcom/google/android/exoplayer2/SimpleExoPlayer;
 
-    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->E()Z
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->G()Z
 
     move-result v0
 

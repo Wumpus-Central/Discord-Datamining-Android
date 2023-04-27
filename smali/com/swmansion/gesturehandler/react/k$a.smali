@@ -20,15 +20,15 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/k$a;",
         "",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "handler",
         "Lcom/swmansion/gesturehandler/react/k;",
         "b",
-        "(Lcf/d;)Lcom/swmansion/gesturehandler/react/k;",
+        "(Lef/d;)Lcom/swmansion/gesturehandler/react/k;",
         "Lcom/facebook/react/bridge/WritableMap;",
         "a",
-        "(Lcf/d;)Lcom/facebook/react/bridge/WritableMap;",
+        "(Lef/d;)Lcom/facebook/react/bridge/WritableMap;",
         "Landroidx/core/util/Pools$SynchronizedPool;",
         "EVENTS_POOL",
         "Landroidx/core/util/Pools$SynchronizedPool;",
@@ -75,12 +75,12 @@
 
 
 # virtual methods
-.method public final a(Lcf/d;)Lcom/facebook/react/bridge/WritableMap;
+.method public final a(Lef/d;)Lcom/facebook/react/bridge/WritableMap;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;)",
             "Lcom/facebook/react/bridge/WritableMap;"
         }
@@ -104,7 +104,7 @@
     move-result-object v0
 
     .line 10
-    invoke-virtual {p1}, Lcf/d;->P()I
+    invoke-virtual {p1}, Lef/d;->P()I
 
     .line 11
     .line 12
@@ -121,7 +121,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 20
     .line 21
@@ -142,7 +142,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p1}, Lcf/d;->R()I
+    invoke-virtual {p1}, Lef/d;->R()I
 
     .line 31
     .line 32
@@ -159,7 +159,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p1}, Lcf/d;->Q()I
+    invoke-virtual {p1}, Lef/d;->Q()I
 
     .line 40
     .line 41
@@ -172,7 +172,7 @@
     .line 44
     .line 45
     .line 46
-    invoke-virtual {p1}, Lcf/d;->s()Lcom/facebook/react/bridge/WritableArray;
+    invoke-virtual {p1}, Lef/d;->s()Lcom/facebook/react/bridge/WritableArray;
 
     .line 47
     .line 48
@@ -194,7 +194,7 @@
     .line 56
     .line 57
     :cond_0
-    invoke-virtual {p1}, Lcf/d;->r()Lcom/facebook/react/bridge/WritableArray;
+    invoke-virtual {p1}, Lef/d;->r()Lcom/facebook/react/bridge/WritableArray;
 
     .line 58
     .line 59
@@ -216,7 +216,7 @@
     .line 67
     .line 68
     :cond_1
-    invoke-virtual {p1}, Lcf/d;->X()Z
+    invoke-virtual {p1}, Lef/d;->X()Z
 
     .line 69
     .line 70
@@ -228,7 +228,7 @@
 
     .line 73
     .line 74
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 75
     .line 76
@@ -316,12 +316,12 @@
     .line 142
 .end method
 
-.method public final b(Lcf/d;)Lcom/swmansion/gesturehandler/react/k;
+.method public final b(Lef/d;)Lcom/swmansion/gesturehandler/react/k;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;)",
             "Lcom/swmansion/gesturehandler/react/k;"
         }
@@ -374,7 +374,7 @@
     .line 23
     .line 24
     :cond_0
-    invoke-static {v0, p1}, Lcom/swmansion/gesturehandler/react/k;->b(Lcom/swmansion/gesturehandler/react/k;Lcf/d;)V
+    invoke-static {v0, p1}, Lcom/swmansion/gesturehandler/react/k;->b(Lcom/swmansion/gesturehandler/react/k;Lef/d;)V
 
     .line 25
     .line 26

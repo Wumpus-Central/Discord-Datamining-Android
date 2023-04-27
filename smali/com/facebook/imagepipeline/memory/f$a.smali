@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lz3/c;
+.implements La4/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/imagepipeline/memory/f;-><init>(Ly3/c;Lx5/z;)V
+    value = Lcom/facebook/imagepipeline/memory/f;-><init>(Lz3/c;Ly5/z;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lz3/c<",
+        "La4/c<",
         "[B>;"
     }
 .end annotation

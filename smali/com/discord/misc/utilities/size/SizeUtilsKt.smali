@@ -49,7 +49,7 @@
 
     mul-float/2addr p0, v0
 
-    invoke-static {p0}, Lzf/a;->a(F)I
+    invoke-static {p0}, Lbg/a;->a(F)I
 
     move-result p0
 
@@ -106,7 +106,7 @@
 
     mul-float/2addr p0, v0
 
-    invoke-static {p0}, Lzf/a;->a(F)I
+    invoke-static {p0}, Lbg/a;->a(F)I
 
     move-result p0
 

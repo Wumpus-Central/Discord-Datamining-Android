@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/s;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lve/b;",
+        "Lwe/b;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
         "\u0000\u0006\n\u0002\u0018\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\n"
     }
     d2 = {
-        "Lve/b;",
+        "Lwe/b;",
         "<anonymous>"
     }
     k = 0x3
@@ -61,12 +61,12 @@
 
 
 # virtual methods
-.method public final a()Lve/b;
+.method public final a()Lwe/b;
     .locals 1
 
     iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine$f;->k:Lcom/otaliastudios/zoom/ZoomEngine;
 
-    invoke-static {v0}, Lcom/otaliastudios/zoom/ZoomEngine;->g(Lcom/otaliastudios/zoom/ZoomEngine;)Lve/b;
+    invoke-static {v0}, Lcom/otaliastudios/zoom/ZoomEngine;->g(Lcom/otaliastudios/zoom/ZoomEngine;)Lwe/b;
 
     move-result-object v0
 
@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/otaliastudios/zoom/ZoomEngine$f;->a()Lve/b;
+    invoke-virtual {p0}, Lcom/otaliastudios/zoom/ZoomEngine$f;->a()Lwe/b;
 
     move-result-object v0
 

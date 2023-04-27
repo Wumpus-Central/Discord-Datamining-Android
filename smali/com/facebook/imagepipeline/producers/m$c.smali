@@ -16,9 +16,9 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
-        "Lu5/e;",
+        "Lv5/e;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -48,7 +48,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             "ZI)V"
@@ -89,7 +89,7 @@
 
     .line 17
     .line 18
-    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 19
     .line 20
@@ -668,7 +668,7 @@
     .line 558
 .end method
 
-.method private A(Lu5/c;I)V
+.method private A(Lv5/c;I)V
     .locals 1
 
     .line 1
@@ -676,7 +676,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/m;->e(Lcom/facebook/imagepipeline/producers/m;)Lq5/a;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/m;->e(Lcom/facebook/imagepipeline/producers/m;)Lr5/a;
 
     .line 4
     .line 5
@@ -684,7 +684,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0, p1}, Lq5/a;->b(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {v0, p1}, Lr5/a;->b(Ljava/io/Closeable;)Lcom/facebook/common/references/CloseableReference;
 
     .line 8
     .line 9
@@ -801,7 +801,7 @@
     .line 93
 .end method
 
-.method private B(Lu5/e;ILu5/i;)Lu5/c;
+.method private B(Lv5/e;ILv5/i;)Lv5/c;
     .locals 3
 
     .line 1
@@ -873,7 +873,7 @@
 
     .line 31
     .line 32
-    invoke-static {v1}, Lcom/facebook/imagepipeline/producers/m;->d(Lcom/facebook/imagepipeline/producers/m;)Ls5/c;
+    invoke-static {v1}, Lcom/facebook/imagepipeline/producers/m;->d(Lcom/facebook/imagepipeline/producers/m;)Lt5/c;
 
     .line 33
     .line 34
@@ -885,7 +885,7 @@
 
     .line 37
     .line 38
-    invoke-interface {v1, p1, p2, p3, v2}, Ls5/c;->a(Lu5/e;ILu5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lu5/c;
+    invoke-interface {v1, p1, p2, p3, v2}, Lt5/c;->a(Lv5/e;ILv5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lv5/c;
 
     .line 39
     .line 40
@@ -932,7 +932,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/m;->d(Lcom/facebook/imagepipeline/producers/m;)Ls5/c;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/m;->d(Lcom/facebook/imagepipeline/producers/m;)Lt5/c;
 
     .line 61
     .line 62
@@ -944,7 +944,7 @@
 
     .line 65
     .line 66
-    invoke-interface {v0, p1, p2, p3, v1}, Ls5/c;->a(Lu5/e;ILu5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lu5/c;
+    invoke-interface {v0, p1, p2, p3, v1}, Lt5/c;->a(Lv5/e;ILv5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lv5/c;
 
     .line 67
     .line 68
@@ -1231,11 +1231,11 @@
     .line 46
 .end method
 
-.method private E(Lu5/e;)V
+.method private E(Lv5/e;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual {p1}, Lv5/e;->t()Lj5/c;
 
     .line 2
     .line 3
@@ -1243,7 +1243,7 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, Li5/b;->a:Li5/c;
+    sget-object v1, Lj5/b;->a:Lj5/c;
 
     .line 6
     .line 7
@@ -1275,7 +1275,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1, v0, v1}, La6/a;->c(Lu5/e;II)I
+    invoke-static {p1, v0, v1}, Lb6/a;->c(Lv5/e;II)I
 
     .line 21
     .line 22
@@ -1283,7 +1283,7 @@
     move-result v0
 
     .line 24
-    invoke-virtual {p1, v0}, Lu5/e;->M0(I)V
+    invoke-virtual {p1, v0}, Lv5/e;->M0(I)V
 
     .line 25
     .line 26
@@ -1310,7 +1310,7 @@
     .line 46
 .end method
 
-.method private G(Lu5/e;Lu5/c;)V
+.method private G(Lv5/e;Lv5/c;)V
     .locals 3
 
     .line 1
@@ -1318,7 +1318,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lu5/e;->getWidth()I
+    invoke-virtual {p1}, Lv5/e;->getWidth()I
 
     .line 4
     .line 5
@@ -1347,7 +1347,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lu5/e;->getHeight()I
+    invoke-virtual {p1}, Lv5/e;->getHeight()I
 
     .line 19
     .line 20
@@ -1376,7 +1376,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lu5/e;->R()I
+    invoke-virtual {p1}, Lv5/e;->R()I
 
     .line 34
     .line 35
@@ -1401,7 +1401,7 @@
     .line 44
     .line 45
     .line 46
-    instance-of p1, p2, Lu5/b;
+    instance-of p1, p2, Lv5/b;
 
     .line 47
     .line 48
@@ -1412,11 +1412,11 @@
     move-object p1, p2
 
     .line 51
-    check-cast p1, Lu5/b;
+    check-cast p1, Lv5/b;
 
     .line 52
     .line 53
-    invoke-virtual {p1}, Lu5/b;->n()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lv5/b;->n()Landroid/graphics/Bitmap;
 
     .line 54
     .line 55
@@ -1482,7 +1482,7 @@
     move-result-object p1
 
     .line 84
-    invoke-virtual {p2, p1}, Lu5/c;->l(Ljava/util/Map;)V
+    invoke-virtual {p2, p1}, Lv5/c;->l(Ljava/util/Map;)V
 
     .line 85
     .line 86
@@ -1505,18 +1505,18 @@
     return-object p0
 .end method
 
-.method static synthetic q(Lcom/facebook/imagepipeline/producers/m$c;Lu5/e;)V
+.method static synthetic q(Lcom/facebook/imagepipeline/producers/m$c;Lv5/e;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/m$c;->E(Lu5/e;)V
+    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/m$c;->E(Lv5/e;)V
 
     return-void
 .end method
 
-.method static synthetic r(Lcom/facebook/imagepipeline/producers/m$c;Lu5/e;I)V
+.method static synthetic r(Lcom/facebook/imagepipeline/producers/m$c;Lv5/e;I)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->u(Lu5/e;I)V
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->u(Lv5/e;I)V
 
     return-void
 .end method
@@ -1537,7 +1537,7 @@
     return-void
 .end method
 
-.method private u(Lu5/e;I)V
+.method private u(Lv5/e;I)V
     .locals 20
 
     .line 1
@@ -1557,7 +1557,7 @@
 
     .line 8
     .line 9
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->t()Lj5/c;
 
     .line 10
     .line 11
@@ -1565,7 +1565,7 @@
     move-result-object v1
 
     .line 13
-    sget-object v2, Li5/b;->a:Li5/c;
+    sget-object v2, Lj5/b;->a:Lj5/c;
 
     .line 14
     .line 15
@@ -1601,7 +1601,7 @@
 
     .line 29
     .line 30
-    invoke-static/range {p1 .. p1}, Lu5/e;->n0(Lu5/e;)Z
+    invoke-static/range {p1 .. p1}, Lv5/e;->j0(Lv5/e;)Z
 
     .line 31
     .line 32
@@ -1618,7 +1618,7 @@
     .line 37
     .line 38
     :cond_1
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->t()Lj5/c;
 
     .line 39
     .line 40
@@ -1634,7 +1634,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {v1}, Li5/c;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lj5/c;->a()Ljava/lang/String;
 
     .line 47
     .line 48
@@ -1662,7 +1662,7 @@
     .line 56
     .line 57
     .line 58
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->getWidth()I
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->getWidth()I
 
     .line 59
     .line 60
@@ -1684,7 +1684,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->getHeight()I
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->getHeight()I
 
     .line 71
     .line 72
@@ -1705,7 +1705,7 @@
     move-result-object v8
 
     .line 81
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->Q()I
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->Q()I
 
     .line 82
     .line 83
@@ -1778,7 +1778,7 @@
 
     .line 113
     .line 114
-    invoke-interface {v15}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v15}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 115
     .line 116
@@ -1866,7 +1866,7 @@
 
     .line 156
     .line 157
-    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 158
     .line 159
@@ -1902,7 +1902,7 @@
 
     .line 174
     :cond_5
-    invoke-virtual/range {p0 .. p1}, Lcom/facebook/imagepipeline/producers/m$c;->w(Lu5/e;)I
+    invoke-virtual/range {p0 .. p1}, Lcom/facebook/imagepipeline/producers/m$c;->w(Lv5/e;)I
 
     .line 175
     .line 176
@@ -1915,7 +1915,7 @@
     .line 179
     :cond_6
     :goto_3
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->R()I
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->R()I
 
     .line 180
     .line 181
@@ -1936,7 +1936,7 @@
 
     .line 188
     :cond_7
-    invoke-virtual/range {p0 .. p0}, Lcom/facebook/imagepipeline/producers/m$c;->x()Lu5/i;
+    invoke-virtual/range {p0 .. p0}, Lcom/facebook/imagepipeline/producers/m$c;->x()Lv5/i;
 
     .line 189
     .line 190
@@ -1949,7 +1949,7 @@
     .line 193
     :cond_8
     :goto_5
-    sget-object v3, Lu5/h;->d:Lu5/i;
+    sget-object v3, Lv5/h;->d:Lv5/i;
 
     .line 194
     .line 195
@@ -1973,20 +1973,20 @@
     .line 202
     .line 203
     :try_start_1
-    invoke-direct {v11, v12, v2, v5}, Lcom/facebook/imagepipeline/producers/m$c;->B(Lu5/e;ILu5/i;)Lu5/c;
+    invoke-direct {v11, v12, v2, v5}, Lcom/facebook/imagepipeline/producers/m$c;->B(Lv5/e;ILv5/i;)Lv5/c;
 
     .line 204
     .line 205
     .line 206
     move-result-object v14
     :try_end_1
-    .catch Ls5/a; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Lt5/a; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 207
     :try_start_2
-    invoke-virtual/range {p1 .. p1}, Lu5/e;->Q()I
+    invoke-virtual/range {p1 .. p1}, Lv5/e;->Q()I
 
     .line 208
     .line 209
@@ -2021,7 +2021,7 @@
 
     .line 221
     :try_start_3
-    invoke-direct/range {v1 .. v10}, Lcom/facebook/imagepipeline/producers/m$c;->v(Lu5/c;JLu5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
+    invoke-direct/range {v1 .. v10}, Lcom/facebook/imagepipeline/producers/m$c;->v(Lv5/c;JLv5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
 
     .line 222
     .line 223
@@ -2042,19 +2042,19 @@
     .line 230
     .line 231
     .line 232
-    invoke-direct {v11, v12, v14}, Lcom/facebook/imagepipeline/producers/m$c;->G(Lu5/e;Lu5/c;)V
+    invoke-direct {v11, v12, v14}, Lcom/facebook/imagepipeline/producers/m$c;->G(Lv5/e;Lv5/c;)V
 
     .line 233
     .line 234
     .line 235
-    invoke-direct {v11, v14, v0}, Lcom/facebook/imagepipeline/producers/m$c;->A(Lu5/c;I)V
+    invoke-direct {v11, v14, v0}, Lcom/facebook/imagepipeline/producers/m$c;->A(Lv5/c;I)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 236
     .line 237
     .line 238
-    invoke-static/range {p1 .. p1}, Lu5/e;->h(Lu5/e;)V
+    invoke-static/range {p1 .. p1}, Lv5/e;->h(Lv5/e;)V
 
     .line 239
     .line 240
@@ -2090,7 +2090,7 @@
 
     .line 250
     :try_start_4
-    invoke-virtual {v2}, Ls5/a;->a()Lu5/e;
+    invoke-virtual {v2}, Lt5/a;->a()Lv5/e;
 
     .line 251
     .line 252
@@ -2134,7 +2134,7 @@
 
     .line 271
     .line 272
-    invoke-virtual {v0, v1}, Lu5/e;->s(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lv5/e;->s(I)Ljava/lang/String;
 
     .line 273
     .line 274
@@ -2149,7 +2149,7 @@
 
     .line 278
     .line 279
-    invoke-virtual {v0}, Lu5/e;->R()I
+    invoke-virtual {v0}, Lv5/e;->R()I
 
     .line 280
     .line 281
@@ -2172,7 +2172,7 @@
 
     .line 289
     .line 290
-    invoke-static {v14, v3, v9}, Lw3/a;->J(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v14, v3, v9}, Lx3/a;->J(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 291
     .line 292
@@ -2196,7 +2196,7 @@
 
     .line 299
     :try_start_5
-    invoke-direct/range {v1 .. v10}, Lcom/facebook/imagepipeline/producers/m$c;->v(Lu5/c;JLu5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
+    invoke-direct/range {v1 .. v10}, Lcom/facebook/imagepipeline/producers/m$c;->v(Lv5/c;JLv5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
 
     .line 300
     .line 301
@@ -2224,7 +2224,7 @@
     .line 311
     .line 312
     .line 313
-    invoke-static/range {p1 .. p1}, Lu5/e;->h(Lu5/e;)V
+    invoke-static/range {p1 .. p1}, Lv5/e;->h(Lv5/e;)V
 
     .line 314
     .line 315
@@ -2236,7 +2236,7 @@
     move-exception v0
 
     .line 318
-    invoke-static/range {p1 .. p1}, Lu5/e;->h(Lu5/e;)V
+    invoke-static/range {p1 .. p1}, Lv5/e;->h(Lv5/e;)V
 
     .line 319
     .line 320
@@ -2759,14 +2759,14 @@
     .line 832
 .end method
 
-.method private v(Lu5/c;JLu5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
+.method private v(Lv5/c;JLv5/i;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lu5/c;",
+            "Lv5/c;",
             "J",
-            "Lu5/i;",
+            "Lv5/i;",
             "Z",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
@@ -2844,7 +2844,7 @@
     move-result-object v6
 
     .line 31
-    invoke-interface/range {p4 .. p4}, Lu5/i;->b()Z
+    invoke-interface/range {p4 .. p4}, Lv5/i;->b()Z
 
     .line 32
     .line 33
@@ -2868,7 +2868,7 @@
     move-result-object v8
 
     .line 43
-    instance-of v9, v1, Lu5/d;
+    instance-of v9, v1, Lv5/d;
 
     .line 44
     .line 45
@@ -2904,11 +2904,11 @@
 
     .line 60
     .line 61
-    check-cast v1, Lu5/d;
+    check-cast v1, Lv5/d;
 
     .line 62
     .line 63
-    invoke-virtual {v1}, Lu5/d;->n()Landroid/graphics/Bitmap;
+    invoke-virtual {v1}, Lv5/d;->n()Landroid/graphics/Bitmap;
 
     .line 64
     .line 65
@@ -2916,7 +2916,7 @@
     move-result-object v1
 
     .line 67
-    invoke-static {v1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 68
     .line 69
@@ -3086,7 +3086,7 @@
     .line 159
     .line 160
     .line 161
-    invoke-static {v9}, Lv3/f;->a(Ljava/util/Map;)Lv3/f;
+    invoke-static {v9}, Lw3/f;->a(Ljava/util/Map;)Lw3/f;
 
     .line 162
     .line 163
@@ -3148,7 +3148,7 @@
     .line 192
     .line 193
     .line 194
-    invoke-static {v5}, Lv3/f;->a(Ljava/util/Map;)Lv3/f;
+    invoke-static {v5}, Lw3/f;->a(Ljava/util/Map;)Lw3/f;
 
     .line 195
     .line 196
@@ -3917,12 +3917,12 @@
 
 
 # virtual methods
-.method public F(Lu5/e;I)V
+.method public F(Lv5/e;I)V
     .locals 2
 
     .line 1
     :try_start_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -3938,7 +3938,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -3960,7 +3960,7 @@
 
     .line 19
     .line 20
-    new-instance p1, Ld4/a;
+    new-instance p1, Le4/a;
 
     .line 21
     .line 22
@@ -3968,7 +3968,7 @@
 
     .line 23
     .line 24
-    invoke-direct {p1, p2}, Ld4/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Le4/a;-><init>(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -3980,7 +3980,7 @@
     .line 28
     .line 29
     .line 30
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 31
     .line 32
@@ -3992,7 +3992,7 @@
 
     .line 35
     .line 36
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 37
     .line 38
@@ -4003,7 +4003,7 @@
     .line 40
     :cond_2
     :try_start_1
-    invoke-virtual {p1}, Lu5/e;->i0()Z
+    invoke-virtual {p1}, Lv5/e;->f0()Z
 
     .line 41
     .line 42
@@ -4015,7 +4015,7 @@
 
     .line 45
     .line 46
-    new-instance p1, Ld4/a;
+    new-instance p1, Le4/a;
 
     .line 47
     .line 48
@@ -4023,7 +4023,7 @@
 
     .line 49
     .line 50
-    invoke-direct {p1, p2}, Ld4/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Le4/a;-><init>(Ljava/lang/String;)V
 
     .line 51
     .line 52
@@ -4035,7 +4035,7 @@
     .line 54
     .line 55
     .line 56
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 57
     .line 58
@@ -4047,7 +4047,7 @@
 
     .line 61
     .line 62
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 63
     .line 64
@@ -4058,7 +4058,7 @@
     .line 66
     :cond_4
     :try_start_2
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lu5/e;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lv5/e;I)Z
 
     .line 67
     .line 68
@@ -4072,7 +4072,7 @@
 
     .line 71
     .line 72
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 73
     .line 74
@@ -4084,7 +4084,7 @@
 
     .line 77
     .line 78
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 79
     .line 80
@@ -4143,7 +4143,7 @@
     .line 103
     .line 104
     :cond_8
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 105
     .line 106
@@ -4155,7 +4155,7 @@
 
     .line 109
     .line 110
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 111
     .line 112
@@ -4168,7 +4168,7 @@
     move-exception p1
 
     .line 115
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 116
     .line 117
@@ -4180,7 +4180,7 @@
 
     .line 120
     .line 121
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 122
     .line 123
@@ -4897,12 +4897,12 @@
     .line 832
 .end method
 
-.method protected H(Lu5/e;I)Z
+.method protected H(Lv5/e;I)Z
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/m$c;->h:Lcom/facebook/imagepipeline/producers/y;
 
-    invoke-virtual {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/y;->k(Lu5/e;I)Z
+    invoke-virtual {v0, p1, p2}, Lcom/facebook/imagepipeline/producers/y;->k(Lv5/e;I)Z
 
     move-result p1
 
@@ -4928,9 +4928,9 @@
 .method public bridge synthetic h(Ljava/lang/Object;I)V
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->F(Lu5/e;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->F(Lv5/e;I)V
 
     return-void
 .end method
@@ -4947,8 +4947,8 @@
     return-void
 .end method
 
-.method protected abstract w(Lu5/e;)I
+.method protected abstract w(Lv5/e;)I
 .end method
 
-.method protected abstract x()Lu5/i;
+.method protected abstract x()Lv5/i;
 .end method

@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcb/f;
-.implements Lcb/e;
-.implements Lcb/c;
+.implements Ldb/f;
+.implements Ldb/e;
+.implements Ldb/c;
 
 
 # annotations
@@ -15,9 +15,9 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lcb/f<",
+        "Ldb/f<",
         "TT;>;",
-        "Lcb/e;",
-        "Lcb/c;"
+        "Ldb/e;",
+        "Ldb/c;"
     }
 .end annotation

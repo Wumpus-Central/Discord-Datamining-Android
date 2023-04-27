@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lxa/c;
+.implements Lya/c;
 
 
 # static fields
 .field public static final a:Lcom/google/android/gms/nearby/messages/internal/w;
 
-.field public static final b:Lu9/a$g;
+.field public static final b:Lv9/a$g;
 
-.field public static final c:Lu9/a$a;
+.field public static final c:Lv9/a$a;
 
 
 # direct methods
@@ -32,16 +32,16 @@
 
     .line 7
     .line 8
-    new-instance v0, Lu9/a$g;
+    new-instance v0, Lv9/a$g;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Lu9/a$g;-><init>()V
+    invoke-direct {v0}, Lv9/a$g;-><init>()V
 
     .line 11
     .line 12
     .line 13
-    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/w;->b:Lu9/a$g;
+    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/w;->b:Lv9/a$g;
 
     .line 14
     .line 15
@@ -54,7 +54,7 @@
     .line 18
     .line 19
     .line 20
-    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/w;->c:Lu9/a$a;
+    sput-object v0, Lcom/google/android/gms/nearby/messages/internal/w;->c:Lv9/a$a;
 
     .line 21
     .line 22

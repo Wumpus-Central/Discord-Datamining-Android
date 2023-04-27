@@ -207,7 +207,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lk9/n;->d()V
+    invoke-static {}, Ll9/n;->d()V
 
     .line 4
     .line 5

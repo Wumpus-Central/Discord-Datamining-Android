@@ -3,25 +3,25 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lk5/a;
+.implements Ll5/a;
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
 # instance fields
 .field private final a:Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;
 
-.field private final b:Lq5/e;
+.field private final b:Lr5/e;
 
-.field private final c:Lo5/i;
+.field private final c:Lp5/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/i<",
+            "Lp5/i<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -29,35 +29,35 @@
 
 .field private final d:Z
 
-.field private e:Lk5/d;
+.field private e:Ll5/d;
 
-.field private f:Ll5/b;
+.field private f:Lm5/b;
 
-.field private g:Lm5/a;
+.field private g:Ln5/a;
 
-.field private h:Lt5/a;
+.field private h:Lu5/a;
 
-.field private i:Lt3/f;
+.field private i:Lu3/f;
 
 
 # direct methods
-.method public constructor <init>(Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;Lq5/e;Lo5/i;ZLt3/f;)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;Lr5/e;Lp5/i;ZLu3/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;",
-            "Lq5/e;",
-            "Lo5/i<",
+            "Lr5/e;",
+            "Lp5/i<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;Z",
-            "Lt3/f;",
+            "Lu3/f;",
             ")V"
         }
     .end annotation
 
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -70,11 +70,11 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b:Lq5/e;
+    iput-object p2, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b:Lr5/e;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->c:Lo5/i;
+    iput-object p3, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->c:Lp5/i;
 
     .line 9
     .line 10
@@ -82,7 +82,7 @@
 
     .line 11
     .line 12
-    iput-object p5, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i:Lt3/f;
+    iput-object p5, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i:Lu3/f;
 
     .line 13
     .line 14
@@ -633,20 +633,20 @@
     .line 558
 .end method
 
-.method static synthetic d(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Lk5/d;
+.method static synthetic d(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Ll5/d;
     .locals 0
 
-    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->k()Lk5/d;
+    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->k()Ll5/d;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic e(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Lm5/a;
+.method static synthetic e(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Ln5/a;
     .locals 0
 
-    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->j()Lm5/a;
+    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->j()Ln5/a;
 
     move-result-object p0
 
@@ -661,7 +661,7 @@
     return p0
 .end method
 
-.method private g()Lk5/d;
+.method private g()Ll5/d;
     .locals 3
 
     .line 1
@@ -674,7 +674,7 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lk5/e;
+    new-instance v1, Ll5/e;
 
     .line 7
     .line 8
@@ -682,7 +682,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v1, v0, v2}, Lk5/e;-><init>(Ll5/b;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;)V
+    invoke-direct {v1, v0, v2}, Ll5/e;-><init>(Lm5/b;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;)V
 
     .line 11
     .line 12
@@ -721,7 +721,7 @@
     .line 44
 .end method
 
-.method private h()Lc5/a;
+.method private h()Ld5/a;
     .locals 11
 
     .line 1
@@ -734,7 +734,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i:Lt3/f;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i:Lu3/f;
 
     .line 7
     .line 8
@@ -742,15 +742,15 @@
 
     .line 9
     .line 10
-    new-instance v0, Lt3/c;
+    new-instance v0, Lu3/c;
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b:Lq5/e;
+    iget-object v1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b:Lr5/e;
 
     .line 13
     .line 14
-    invoke-interface {v1}, Lq5/e;->d()Ljava/util/concurrent/Executor;
+    invoke-interface {v1}, Lr5/e;->d()Ljava/util/concurrent/Executor;
 
     .line 15
     .line 16
@@ -758,7 +758,7 @@
     move-result-object v1
 
     .line 18
-    invoke-direct {v0, v1}, Lt3/c;-><init>(Ljava/util/concurrent/Executor;)V
+    invoke-direct {v0, v1}, Lu3/c;-><init>(Ljava/util/concurrent/Executor;)V
 
     .line 19
     .line 20
@@ -776,15 +776,15 @@
     .line 25
     .line 26
     .line 27
-    sget-object v9, Lv3/m;->b:Lcom/facebook/common/internal/Supplier;
+    sget-object v9, Lw3/m;->b:Lcom/facebook/common/internal/Supplier;
 
     .line 28
     .line 29
-    new-instance v10, Lc5/a;
+    new-instance v10, Ld5/a;
 
     .line 30
     .line 31
-    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i()Ll5/b;
+    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->i()Lm5/b;
 
     .line 32
     .line 33
@@ -792,7 +792,7 @@
     move-result-object v1
 
     .line 35
-    invoke-static {}, Lt3/h;->g()Lt3/h;
+    invoke-static {}, Lu3/h;->g()Lu3/h;
 
     .line 36
     .line 37
@@ -812,14 +812,14 @@
 
     .line 44
     .line 45
-    iget-object v6, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->c:Lo5/i;
+    iget-object v6, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->c:Lp5/i;
 
     .line 46
     .line 47
     move-object v0, v10
 
     .line 48
-    invoke-direct/range {v0 .. v9}, Lc5/a;-><init>(Ll5/b;Ljava/util/concurrent/ScheduledExecutorService;Ljava/util/concurrent/ExecutorService;Lc4/b;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;Lo5/i;Lcom/facebook/common/internal/Supplier;Lcom/facebook/common/internal/Supplier;Lcom/facebook/common/internal/Supplier;)V
+    invoke-direct/range {v0 .. v9}, Ld5/a;-><init>(Lm5/b;Ljava/util/concurrent/ScheduledExecutorService;Ljava/util/concurrent/ExecutorService;Ld4/b;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;Lp5/i;Lcom/facebook/common/internal/Supplier;Lcom/facebook/common/internal/Supplier;Lcom/facebook/common/internal/Supplier;)V
 
     .line 49
     .line 50
@@ -1099,11 +1099,11 @@
     .line 323
 .end method
 
-.method private i()Ll5/b;
+.method private i()Lm5/b;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Ll5/b;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Lm5/b;
 
     .line 2
     .line 3
@@ -1120,12 +1120,12 @@
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Ll5/b;
+    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Lm5/b;
 
     .line 11
     .line 12
     :cond_0
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Ll5/b;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->f:Lm5/b;
 
     .line 13
     .line 14
@@ -1162,11 +1162,11 @@
     .line 44
 .end method
 
-.method private j()Lm5/a;
+.method private j()Ln5/a;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Lm5/a;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Ln5/a;
 
     .line 2
     .line 3
@@ -1174,21 +1174,21 @@
 
     .line 4
     .line 5
-    new-instance v0, Lm5/a;
+    new-instance v0, Ln5/a;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Lm5/a;-><init>()V
+    invoke-direct {v0}, Ln5/a;-><init>()V
 
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Lm5/a;
+    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Ln5/a;
 
     .line 11
     .line 12
     :cond_0
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Lm5/a;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g:Ln5/a;
 
     .line 13
     .line 14
@@ -1225,11 +1225,11 @@
     .line 44
 .end method
 
-.method private k()Lk5/d;
+.method private k()Ll5/d;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Lk5/d;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Ll5/d;
 
     .line 2
     .line 3
@@ -1237,7 +1237,7 @@
 
     .line 4
     .line 5
-    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g()Lk5/d;
+    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->g()Ll5/d;
 
     .line 6
     .line 7
@@ -1245,12 +1245,12 @@
     move-result-object v0
 
     .line 9
-    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Lk5/d;
+    iput-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Ll5/d;
 
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Lk5/d;
+    iget-object v0, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->e:Ll5/d;
 
     .line 12
     .line 13
@@ -1290,11 +1290,11 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;)Lt5/a;
+.method public a(Landroid/content/Context;)Lu5/a;
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lt5/a;
+    iget-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lu5/a;
 
     .line 2
     .line 3
@@ -1302,7 +1302,7 @@
 
     .line 4
     .line 5
-    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h()Lc5/a;
+    invoke-direct {p0}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h()Ld5/a;
 
     .line 6
     .line 7
@@ -1310,12 +1310,12 @@
     move-result-object p1
 
     .line 9
-    iput-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lt5/a;
+    iput-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lu5/a;
 
     .line 10
     .line 11
     :cond_0
-    iget-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lt5/a;
+    iget-object p1, p0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->h:Lu5/a;
 
     .line 12
     .line 13
@@ -1355,7 +1355,7 @@
     .line 46
 .end method
 
-.method public b()Ls5/c;
+.method public b()Lt5/c;
     .locals 1
 
     new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$b;
@@ -1365,7 +1365,7 @@
     return-object v0
 .end method
 
-.method public c()Ls5/c;
+.method public c()Lt5/c;
     .locals 1
 
     new-instance v0, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl$a;

@@ -1,5 +1,5 @@
 .class final Lcom/google/android/gms/nearby/messages/internal/s;
-.super Lqa/d1;
+.super Lra/d1;
 .source "SourceFile"
 
 
@@ -7,7 +7,7 @@
 .method constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lqa/d1;-><init>()V
+    invoke-direct {p0}, Lra/d1;-><init>()V
 
     return-void
 .end method
@@ -18,11 +18,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lxa/j;
+    check-cast p1, Lya/j;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lxa/j;->a()V
+    invoke-virtual {p1}, Lya/j;->a()V
 
     .line 4
     .line 5

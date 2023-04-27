@@ -45,11 +45,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     sget-object v1, Lcom/discord/misc/utilities/threading/ThreadUtilsKt$uiHandler$2;->INSTANCE:Lcom/discord/misc/utilities/threading/ThreadUtilsKt$uiHandler$2;
 
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object v0
 

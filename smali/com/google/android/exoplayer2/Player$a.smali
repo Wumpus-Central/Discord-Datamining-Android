@@ -77,7 +77,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Ly7/a;",
+            "Lz7/a;",
             ">;)V"
         }
     .end annotation

@@ -83,7 +83,7 @@
 
     .line 4
     :cond_0
-    invoke-static {}, Lk4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+    invoke-static {}, Ll4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
 
     move-result-object v1
 

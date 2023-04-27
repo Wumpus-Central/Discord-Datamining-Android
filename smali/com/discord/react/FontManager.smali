@@ -107,7 +107,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v1}, Lkotlin/jvm/internal/f0;->e(Lkotlin/jvm/internal/v;)Ldg/e;
+    invoke-static {v1}, Lkotlin/jvm/internal/f0;->e(Lkotlin/jvm/internal/v;)Lfg/e;
 
     .line 17
     .line 18
@@ -153,7 +153,6 @@
     .line 38
     .line 39
     return-void
-    .line 40
 .end method
 
 .method private constructor <init>()V
@@ -1243,7 +1242,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public final declared-synchronized getScaledFontSize(Landroid/content/Context;)F

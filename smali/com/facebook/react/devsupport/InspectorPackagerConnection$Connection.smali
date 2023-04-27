@@ -1,5 +1,5 @@
 .class Lcom/facebook/react/devsupport/InspectorPackagerConnection$Connection;
-.super Loj/t;
+.super Lqj/t;
 .source "SourceFile"
 
 
@@ -43,7 +43,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Loj/t;-><init>()V
+    invoke-direct {p0}, Lqj/t;-><init>()V
 
     .line 4
     .line 5
@@ -189,7 +189,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, p1, p2}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1, p2}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 21
     .line 22
@@ -378,7 +378,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -628,7 +628,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {v1, v0, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Loj/t;)Lokhttp3/WebSocket;
+    invoke-virtual {v1, v0, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Lqj/t;)Lokhttp3/WebSocket;
 
     .line 58
     .line 59

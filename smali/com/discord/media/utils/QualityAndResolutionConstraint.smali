@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkf/a;
+.implements Lmf/a;
 
 
 # annotations
@@ -13,7 +13,7 @@
     }
     d2 = {
         "Lcom/discord/media/utils/QualityAndResolutionConstraint;",
-        "Lkf/a;",
+        "Lmf/a;",
         "Ljava/io/File;",
         "imageFile",
         "",
@@ -479,7 +479,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1, v0, v1}, Ljf/c;->e(Ljava/io/File;II)Landroid/graphics/Bitmap;
+    invoke-static {p1, v0, v1}, Llf/c;->e(Ljava/io/File;II)Landroid/graphics/Bitmap;
 
     .line 15
     .line 16
@@ -487,7 +487,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {p1, v0}, Ljf/c;->f(Ljava/io/File;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    invoke-static {p1, v0}, Llf/c;->f(Ljava/io/File;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     .line 19
     .line 20
@@ -511,7 +511,7 @@
     move-object v1, p1
 
     .line 28
-    invoke-static/range {v1 .. v6}, Ljf/c;->k(Ljava/io/File;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;IILjava/lang/Object;)Ljava/io/File;
+    invoke-static/range {v1 .. v6}, Llf/c;->k(Ljava/io/File;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;IILjava/lang/Object;)Ljava/io/File;
 
     .line 29
     .line 30
@@ -523,7 +523,7 @@
 
     .line 33
     :cond_0
-    invoke-static {p1}, Ljf/c;->i(Ljava/io/File;)Landroid/graphics/Bitmap;
+    invoke-static {p1}, Llf/c;->i(Ljava/io/File;)Landroid/graphics/Bitmap;
 
     .line 34
     .line 35
@@ -547,7 +547,7 @@
     move-object v0, p1
 
     .line 43
-    invoke-static/range {v0 .. v5}, Ljf/c;->k(Ljava/io/File;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;IILjava/lang/Object;)Ljava/io/File;
+    invoke-static/range {v0 .. v5}, Llf/c;->k(Ljava/io/File;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;IILjava/lang/Object;)Ljava/io/File;
 
     .line 44
     .line 45

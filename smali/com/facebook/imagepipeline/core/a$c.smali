@@ -28,35 +28,35 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;Ly3/a;Ls5/c;Ls5/e;ZZZLq5/e;Ly3/h;Ly3/k;Lo5/s;Lo5/s;Lo5/e;Lo5/e;Lo5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILq5/a;ZI)Lq5/j;
+.method public a(Landroid/content/Context;Lz3/a;Lt5/c;Lt5/e;ZZZLr5/e;Lz3/h;Lz3/k;Lp5/s;Lp5/s;Lp5/e;Lp5/e;Lp5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILr5/a;ZI)Lr5/j;
     .locals 24
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Ly3/a;",
-            "Ls5/c;",
-            "Ls5/e;",
+            "Lz3/a;",
+            "Lt5/c;",
+            "Lt5/e;",
             "ZZZ",
-            "Lq5/e;",
-            "Ly3/h;",
-            "Ly3/k;",
-            "Lo5/s<",
+            "Lr5/e;",
+            "Lz3/h;",
+            "Lz3/k;",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;",
-            "Lo5/e;",
-            "Lo5/e;",
-            "Lo5/f;",
+            "Lp5/e;",
+            "Lp5/e;",
+            "Lp5/f;",
             "Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;",
             "IIZI",
-            "Lq5/a;",
+            "Lr5/a;",
             "ZI)",
-            "Lq5/j;"
+            "Lr5/j;"
         }
     .end annotation
 
@@ -104,11 +104,11 @@
 
     move/from16 v22, p23
 
-    new-instance v23, Lq5/j;
+    new-instance v23, Lr5/j;
 
     move-object/from16 v0, v23
 
-    invoke-direct/range {v0 .. v22}, Lq5/j;-><init>(Landroid/content/Context;Ly3/a;Ls5/c;Ls5/e;ZZZLq5/e;Ly3/h;Lo5/s;Lo5/s;Lo5/e;Lo5/e;Lo5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILq5/a;ZI)V
+    invoke-direct/range {v0 .. v22}, Lr5/j;-><init>(Landroid/content/Context;Lz3/a;Lt5/c;Lt5/e;ZZZLr5/e;Lz3/h;Lp5/s;Lp5/s;Lp5/e;Lp5/e;Lp5/f;Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;IIZILr5/a;ZI)V
 
     return-object v23
 .end method

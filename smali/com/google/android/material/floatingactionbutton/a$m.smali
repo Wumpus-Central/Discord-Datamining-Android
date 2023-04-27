@@ -166,7 +166,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/a;->b:Lwb/g;
+    iget-object v0, v0, Lcom/google/android/material/floatingactionbutton/a;->b:Lxb/g;
 
     .line 8
     .line 9
@@ -181,7 +181,7 @@
 
     .line 13
     :cond_0
-    invoke-virtual {v0}, Lwb/g;->w()F
+    invoke-virtual {v0}, Lxb/g;->w()F
 
     .line 14
     .line 15

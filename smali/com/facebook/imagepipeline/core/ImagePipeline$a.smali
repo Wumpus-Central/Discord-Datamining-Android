@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv3/k;
+.implements Lw3/k;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lv3/k<",
+        "Lw3/k<",
         "Lcom/facebook/cache/common/CacheKey;",
         ">;"
     }

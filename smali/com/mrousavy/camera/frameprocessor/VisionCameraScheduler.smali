@@ -7,7 +7,7 @@
 .field private final a:Ljava/util/concurrent/ExecutorService;
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -200,7 +200,7 @@
 
 .method private scheduleTrigger()V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/mrousavy/camera/frameprocessor/VisionCameraScheduler;->a:Ljava/util/concurrent/ExecutorService;

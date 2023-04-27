@@ -31,7 +31,7 @@
         "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
     }
     d2 = {
-        "Lqi/a;",
+        "Lsi/a;",
         "duration",
         "",
         "emit-VtjQ1oo",
@@ -71,9 +71,9 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 2
 
-    check-cast p1, Lqi/a;
+    check-cast p1, Lsi/a;
 
-    invoke-virtual {p1}, Lqi/a;->K()J
+    invoke-virtual {p1}, Lsi/a;->K()J
 
     move-result-wide v0
 
@@ -106,7 +106,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, p2}, Lqi/a;->m(J)J
+    invoke-static {p1, p2}, Lsi/a;->m(J)J
 
     .line 6
     .line 7
@@ -114,7 +114,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {p1, p2}, Lqi/a;->r(J)I
+    invoke-static {p1, p2}, Lsi/a;->q(J)I
 
     .line 10
     .line 11
@@ -122,7 +122,7 @@
     move-result v3
 
     .line 13
-    invoke-static {p1, p2}, Lqi/a;->u(J)I
+    invoke-static {p1, p2}, Lsi/a;->s(J)I
 
     .line 14
     .line 15
@@ -130,7 +130,7 @@
     move-result v4
 
     .line 17
-    invoke-static {p1, p2}, Lqi/a;->s(J)I
+    invoke-static {p1, p2}, Lsi/a;->r(J)I
 
     .line 18
     .line 19

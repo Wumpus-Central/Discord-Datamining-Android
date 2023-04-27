@@ -20,7 +20,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;",
         "",
-        "Lcf/d;",
+        "Lef/d;",
         "handler",
         "Lcom/facebook/react/bridge/ReadableMap;",
         "config",
@@ -101,20 +101,20 @@
     return-void
 .end method
 
-.method public static final synthetic a(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public static final synthetic a(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;->b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-direct {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$a;->b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     return-void
 .end method
 
-.method private final b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+.method private final b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcf/d<",
+            "Lef/d<",
             "*>;",
             "Lcom/facebook/react/bridge/ReadableMap;",
             ")V"
@@ -178,7 +178,7 @@
     move v5, v6
 
     .line 27
-    invoke-virtual/range {v2 .. v8}, Lcf/d;->t0(FFFFFF)Lcf/d;
+    invoke-virtual/range {v2 .. v8}, Lef/d;->t0(FFFFFF)Lef/d;
 
     .line 28
     .line 29
@@ -517,7 +517,7 @@
     move-object v5, p1
 
     .line 184
-    invoke-virtual/range {v5 .. v11}, Lcf/d;->t0(FFFFFF)Lcf/d;
+    invoke-virtual/range {v5 .. v11}, Lef/d;->t0(FFFFFF)Lef/d;
 
     .line 185
     .line 186

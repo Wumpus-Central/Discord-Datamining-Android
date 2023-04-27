@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu5/g;
+.implements Lv5/g;
 
 
 # virtual methods

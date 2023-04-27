@@ -30,7 +30,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Ldb/f;->s:I
+    sget v0, Leb/f;->s:I
 
     .line 5
     .line 6
@@ -58,7 +58,7 @@
     .line 16
     .line 17
     .line 18
-    sget v1, Ldb/f;->o:I
+    sget v1, Leb/f;->o:I
 
     .line 19
     .line 20

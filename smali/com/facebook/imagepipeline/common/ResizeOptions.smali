@@ -61,7 +61,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     if-lez p2, :cond_1
 
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 6
     iput p1, p0, Lcom/facebook/imagepipeline/common/ResizeOptions;->a:I
@@ -213,7 +213,7 @@
 
     iget v1, p0, Lcom/facebook/imagepipeline/common/ResizeOptions;->b:I
 
-    invoke-static {v0, v1}, Ld4/b;->a(II)I
+    invoke-static {v0, v1}, Le4/b;->a(II)I
 
     move-result v0
 

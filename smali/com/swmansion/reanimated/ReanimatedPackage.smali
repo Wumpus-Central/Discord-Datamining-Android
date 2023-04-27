@@ -33,7 +33,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 11
     .line 12
@@ -68,7 +68,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 26
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 27
     .line 28
@@ -89,7 +89,7 @@
     move-exception p1
 
     .line 36
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 37
     .line 38

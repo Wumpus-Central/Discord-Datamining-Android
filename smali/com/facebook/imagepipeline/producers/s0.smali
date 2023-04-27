@@ -1,5 +1,5 @@
 .class public abstract Lcom/facebook/imagepipeline/producers/s0;
-.super Lt3/g;
+.super Lu3/g;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lt3/g<",
+        "Lu3/g<",
         "TT;>;"
     }
 .end annotation
@@ -48,7 +48,7 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Lt3/g;-><init>()V
+    invoke-direct {p0}, Lu3/g;-><init>()V
 
     .line 2
     .line 3

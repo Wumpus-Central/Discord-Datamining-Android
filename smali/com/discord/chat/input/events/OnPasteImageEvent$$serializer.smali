@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/chat/input/events/OnPasteImageEvent;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/chat/input/events/OnPasteImageEvent.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/chat/input/events/OnPasteImageEvent;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -97,7 +97,7 @@
     const/4 v3, 0x2
 
     .line 13
-    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lbj/f0;I)V
 
     .line 14
     .line 15
@@ -205,7 +205,7 @@
 
     .line 3
     .line 4
-    sget-object v1, Lzi/a2;->a:Lzi/a2;
+    sget-object v1, Lbj/a2;->a:Lbj/a2;
 
     .line 5
     .line 6
@@ -219,7 +219,7 @@
     const/4 v2, 0x1
 
     .line 10
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 11
     .line 12
@@ -326,7 +326,7 @@
 
     move-result-object v1
 
-    sget-object v3, Lzi/a2;->a:Lzi/a2;
+    sget-object v3, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {p1, v0, v2, v3, v4}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -360,7 +360,7 @@
 
     if-ne v8, v2, :cond_1
 
-    sget-object v8, Lzi/a2;->a:Lzi/a2;
+    sget-object v8, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {p1, v0, v2, v8, v5}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -371,9 +371,9 @@
     goto :goto_0
 
     :cond_1
-    new-instance p1, Lwi/n;
+    new-instance p1, Lyi/n;
 
-    invoke-direct {p1, v8}, Lwi/n;-><init>(I)V
+    invoke-direct {p1, v8}, Lyi/n;-><init>(I)V
 
     throw p1
 
@@ -475,7 +475,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

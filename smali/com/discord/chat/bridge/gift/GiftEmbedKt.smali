@@ -70,13 +70,13 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lkotlinx/serialization/json/JsonPrimitive;->b()Ljava/lang/String;
+    invoke-virtual {p0}, Lkotlinx/serialization/json/JsonPrimitive;->a()Ljava/lang/String;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    invoke-static {p0}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p0}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result p0
 

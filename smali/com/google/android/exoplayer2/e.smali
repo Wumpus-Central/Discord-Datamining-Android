@@ -72,7 +72,7 @@
 .method private b0()I
     .locals 2
 
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->V()I
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->U()I
 
     move-result v0
 
@@ -88,11 +88,11 @@
 
 
 # virtual methods
-.method public final M()I
+.method public final N()I
     .locals 4
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -135,7 +135,7 @@
     move-result v2
 
     .line 21
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->W()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->V()Z
 
     .line 22
     .line 23
@@ -189,7 +189,7 @@
 
     .line 7
     .line 8
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->E()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->G()Z
 
     .line 9
     .line 10
@@ -248,11 +248,11 @@
     .line 44
 .end method
 
-.method public final T()I
+.method public final S()I
     .locals 4
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -295,7 +295,7 @@
     move-result v2
 
     .line 21
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->W()Z
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->V()Z
 
     .line 22
     .line 23
@@ -416,7 +416,7 @@
     long-to-int v0, v0
 
     .line 39
-    invoke-static {v0, v7, v5}, Lf9/q0;->r(III)I
+    invoke-static {v0, v7, v5}, Lg9/q0;->r(III)I
 
     .line 40
     .line 41
@@ -434,7 +434,7 @@
     .locals 3
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -517,60 +517,16 @@
 
     move-result v0
 
-    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->D(IJ)V
+    invoke-interface {p0, v0, p1, p2}, Lcom/google/android/exoplayer2/Player;->F(IJ)V
 
     return-void
 .end method
 
-.method public final hasNext()Z
-    .locals 2
-
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->T()I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final hasPrevious()Z
-    .locals 2
-
-    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->M()I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final i()Z
+.method public final h()Z
     .locals 3
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -646,4 +602,48 @@
     .line 42
     .line 43
     .line 44
+.end method
+
+.method public final hasNext()Z
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->S()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final hasPrevious()Z
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/google/android/exoplayer2/e;->N()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
 .end method

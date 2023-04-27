@@ -80,7 +80,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/misc/utilities/time/TimeElapsed$durationMillis$2;-><init>(Lcom/discord/misc/utilities/time/TimeElapsed;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -91,7 +91,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/misc/utilities/time/TimeElapsed$duration$2;-><init>(Lcom/discord/misc/utilities/time/TimeElapsed;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 

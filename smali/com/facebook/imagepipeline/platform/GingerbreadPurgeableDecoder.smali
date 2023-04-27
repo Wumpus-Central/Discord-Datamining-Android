@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field private final c:Le4/b;
+.field private final c:Lf4/b;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -28,7 +28,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Le4/c;->i()Le4/b;
+    invoke-static {}, Lf4/c;->i()Lf4/b;
 
     .line 5
     .line 6
@@ -36,7 +36,7 @@
     move-result-object v0
 
     .line 8
-    iput-object v0, p0, Lcom/facebook/imagepipeline/platform/GingerbreadPurgeableDecoder;->c:Le4/b;
+    iput-object v0, p0, Lcom/facebook/imagepipeline/platform/GingerbreadPurgeableDecoder;->c:Lf4/b;
 
     .line 9
     .line 10
@@ -83,7 +83,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;I[B)",
             "Landroid/os/MemoryFile;"
         }
@@ -132,7 +132,7 @@
 
     .line 18
     :try_start_0
-    new-instance v4, Ly3/i;
+    new-instance v4, Lz3/i;
 
     .line 19
     .line 20
@@ -144,11 +144,11 @@
     move-result-object v5
 
     .line 24
-    check-cast v5, Ly3/g;
+    check-cast v5, Lz3/g;
 
     .line 25
     .line 26
-    invoke-direct {v4, v5}, Ly3/i;-><init>(Ly3/g;)V
+    invoke-direct {v4, v5}, Lz3/i;-><init>(Lz3/g;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
@@ -156,11 +156,11 @@
     .line 28
     .line 29
     :try_start_1
-    new-instance v5, Lb4/a;
+    new-instance v5, Lc4/a;
 
     .line 30
     .line 31
-    invoke-direct {v5, v4, p1}, Lb4/a;-><init>(Ljava/io/InputStream;I)V
+    invoke-direct {v5, v4, p1}, Lc4/a;-><init>(Ljava/io/InputStream;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -176,7 +176,7 @@
     move-result-object v3
 
     .line 38
-    invoke-static {v5, v3}, Lv3/a;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)J
+    invoke-static {v5, v3}, Lw3/a;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)J
 
     .line 39
     .line 40
@@ -201,17 +201,17 @@
     .line 48
     .line 49
     .line 50
-    invoke-static {v4}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v4}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 51
     .line 52
     .line 53
-    invoke-static {v5}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v5}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-static {v3, v1}, Lv3/b;->a(Ljava/io/Closeable;Z)V
+    invoke-static {v3, v1}, Lw3/b;->a(Ljava/io/Closeable;Z)V
 
     .line 57
     .line 58
@@ -262,17 +262,17 @@
     .line 72
     .line 73
     .line 74
-    invoke-static {v3}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v3}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 75
     .line 76
     .line 77
-    invoke-static {v5}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v5}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 78
     .line 79
     .line 80
-    invoke-static {p2, v1}, Lv3/b;->a(Ljava/io/Closeable;Z)V
+    invoke-static {p2, v1}, Lw3/b;->a(Ljava/io/Closeable;Z)V
 
     .line 81
     .line 82
@@ -379,7 +379,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;I[B",
             "Landroid/graphics/BitmapFactory$Options;",
             ")",
@@ -412,7 +412,7 @@
     move-result-object p2
 
     .line 10
-    iget-object p3, p0, Lcom/facebook/imagepipeline/platform/GingerbreadPurgeableDecoder;->c:Le4/b;
+    iget-object p3, p0, Lcom/facebook/imagepipeline/platform/GingerbreadPurgeableDecoder;->c:Lf4/b;
 
     .line 11
     .line 12
@@ -420,7 +420,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p3, p2, v0, p4}, Le4/b;->b(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+    invoke-interface {p3, p2, v0, p4}, Lf4/b;->b(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     .line 15
     .line 16
@@ -432,7 +432,7 @@
 
     .line 19
     .line 20
-    invoke-static {p2, p3}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2, p3}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -514,7 +514,7 @@
     .line 49
     :goto_0
     :try_start_3
-    invoke-static {p2}, Lv3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+    invoke-static {p2}, Lw3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     .line 50
     .line 51
@@ -934,7 +934,7 @@
 
     .line 21
     :try_start_2
-    invoke-static {v0}, Lv3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+    invoke-static {v0}, Lw3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     .line 22
     .line 23
@@ -1009,7 +1009,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -1030,7 +1030,7 @@
     move-exception p1
 
     .line 20
-    invoke-static {p1}, Lv3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+    invoke-static {p1}, Lw3/n;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     .line 21
     .line 22
@@ -1071,7 +1071,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;",
             "Landroid/graphics/BitmapFactory$Options;",
             ")",
@@ -1083,9 +1083,9 @@
 
     move-result-object v0
 
-    check-cast v0, Ly3/g;
+    check-cast v0, Lz3/g;
 
-    invoke-interface {v0}, Ly3/g;->size()I
+    invoke-interface {v0}, Lz3/g;->size()I
 
     move-result v0
 
@@ -1104,7 +1104,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;I",
             "Landroid/graphics/BitmapFactory$Options;",
             ")",

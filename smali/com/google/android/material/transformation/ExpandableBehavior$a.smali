@@ -22,13 +22,13 @@
 
 .field final synthetic l:I
 
-.field final synthetic m:Lob/a;
+.field final synthetic m:Lpb/a;
 
 .field final synthetic n:Lcom/google/android/material/transformation/ExpandableBehavior;
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILob/a;)V
+.method constructor <init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILpb/a;)V
     .locals 0
 
     iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->n:Lcom/google/android/material/transformation/ExpandableBehavior;
@@ -37,7 +37,7 @@
 
     iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->l:I
 
-    iput-object p4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->m:Lob/a;
+    iput-object p4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->m:Lpb/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +94,7 @@
 
     .line 22
     .line 23
-    iget-object v1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->m:Lob/a;
+    iget-object v1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->m:Lpb/a;
 
     .line 24
     .line 25
@@ -109,7 +109,7 @@
 
     .line 29
     .line 30
-    invoke-interface {v1}, Lob/a;->a()Z
+    invoke-interface {v1}, Lpb/a;->a()Z
 
     .line 31
     .line 32

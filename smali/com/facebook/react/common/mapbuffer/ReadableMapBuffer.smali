@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/common/mapbuffer/ReadableMapBuffer$MapBufferEntry;,
         Lcom/facebook/react/common/mapbuffer/ReadableMapBuffer$Companion;,
         Lcom/facebook/react/common/mapbuffer/ReadableMapBuffer$WhenMappings;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -39,7 +39,7 @@
         "expected",
         "getTypedValueOffsetForKey",
         "bufferPosition",
-        "Llf/g0;",
+        "Lnf/g0;",
         "readUnsignedShort-BwKQO78",
         "(I)S",
         "readUnsignedShort",
@@ -120,7 +120,7 @@
 .field private count:I
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -188,7 +188,7 @@
 
 .method private constructor <init>(Lcom/facebook/jni/HybridData;)V
     .locals 0
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -316,7 +316,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Lkotlin/ranges/a;->b()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->a()I
 
     .line 8
     .line 9
@@ -324,7 +324,7 @@
     move-result v1
 
     .line 11
-    invoke-virtual {v0}, Lkotlin/ranges/a;->e()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->b()I
 
     .line 12
     .line 13
@@ -371,7 +371,7 @@
     int-to-short p1, p1
 
     .line 29
-    invoke-static {p1}, Llf/g0;->b(S)S
+    invoke-static {p1}, Lnf/g0;->b(S)S
 
     .line 30
     .line 31
@@ -2173,7 +2173,7 @@
 
     .line 34
     .line 35
-    sget-object v0, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v0, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 36
     .line 37
@@ -2200,7 +2200,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Llf/g0;->b(S)S
+    invoke-static {p1}, Lnf/g0;->b(S)S
 
     move-result p1
 

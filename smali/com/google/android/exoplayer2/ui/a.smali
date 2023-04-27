@@ -21,7 +21,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lq8/b;",
+            "Lr8/b;",
             ">;"
         }
     .end annotation
@@ -31,7 +31,7 @@
 
 .field private n:F
 
-.field private o:Lq8/a;
+.field private o:Lr8/a;
 
 .field private p:F
 
@@ -79,9 +79,9 @@
     iput p1, p0, Lcom/google/android/exoplayer2/ui/a;->n:F
 
     .line 7
-    sget-object p1, Lq8/a;->g:Lq8/a;
+    sget-object p1, Lr8/a;->g:Lr8/a;
 
-    iput-object p1, p0, Lcom/google/android/exoplayer2/ui/a;->o:Lq8/a;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/ui/a;->o:Lr8/a;
 
     const p1, 0x3da3d70a    # 0.08f
 
@@ -91,11 +91,11 @@
     return-void
 .end method
 
-.method private static b(Lq8/b;)Lq8/b;
+.method private static b(Lr8/b;)Lr8/b;
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Lq8/b;->a()Lq8/b$b;
+    invoke-virtual {p0}, Lr8/b;->a()Lr8/b$b;
 
     .line 2
     .line 3
@@ -108,7 +108,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Lq8/b$b;->j(F)Lq8/b$b;
+    invoke-virtual {v0, v1}, Lr8/b$b;->j(F)Lr8/b$b;
 
     .line 9
     .line 10
@@ -120,7 +120,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Lq8/b$b;->k(I)Lq8/b$b;
+    invoke-virtual {v0, v1}, Lr8/b$b;->k(I)Lr8/b$b;
 
     .line 15
     .line 16
@@ -131,7 +131,7 @@
     const/4 v1, 0x0
 
     .line 19
-    invoke-virtual {v0, v1}, Lq8/b$b;->o(Landroid/text/Layout$Alignment;)Lq8/b$b;
+    invoke-virtual {v0, v1}, Lr8/b$b;->o(Landroid/text/Layout$Alignment;)Lr8/b$b;
 
     .line 20
     .line 21
@@ -139,7 +139,7 @@
     move-result-object v0
 
     .line 23
-    iget v1, p0, Lq8/b;->e:I
+    iget v1, p0, Lr8/b;->e:I
 
     .line 24
     .line 25
@@ -154,14 +154,14 @@
 
     .line 29
     .line 30
-    iget v1, p0, Lq8/b;->d:F
+    iget v1, p0, Lr8/b;->d:F
 
     .line 31
     .line 32
     sub-float/2addr v3, v1
 
     .line 33
-    invoke-virtual {v0, v3, v2}, Lq8/b$b;->h(FI)Lq8/b$b;
+    invoke-virtual {v0, v3, v2}, Lr8/b$b;->h(FI)Lr8/b$b;
 
     .line 34
     .line 35
@@ -170,7 +170,7 @@
 
     .line 37
     :cond_0
-    iget v1, p0, Lq8/b;->d:F
+    iget v1, p0, Lr8/b;->d:F
 
     .line 38
     .line 39
@@ -183,13 +183,13 @@
     const/4 v3, 0x1
 
     .line 42
-    invoke-virtual {v0, v1, v3}, Lq8/b$b;->h(FI)Lq8/b$b;
+    invoke-virtual {v0, v1, v3}, Lr8/b$b;->h(FI)Lr8/b$b;
 
     .line 43
     .line 44
     .line 45
     :goto_0
-    iget p0, p0, Lq8/b;->f:I
+    iget p0, p0, Lr8/b;->f:I
 
     .line 46
     .line 47
@@ -208,7 +208,7 @@
 
     .line 53
     :cond_1
-    invoke-virtual {v0, v2}, Lq8/b$b;->i(I)Lq8/b$b;
+    invoke-virtual {v0, v2}, Lr8/b$b;->i(I)Lr8/b$b;
 
     .line 54
     .line 55
@@ -217,13 +217,13 @@
 
     .line 57
     :cond_2
-    invoke-virtual {v0, v1}, Lq8/b$b;->i(I)Lq8/b$b;
+    invoke-virtual {v0, v1}, Lr8/b$b;->i(I)Lr8/b$b;
 
     .line 58
     .line 59
     .line 60
     :goto_1
-    invoke-virtual {v0}, Lq8/b$b;->a()Lq8/b;
+    invoke-virtual {v0}, Lr8/b$b;->a()Lr8/b;
 
     .line 61
     .line 62
@@ -298,15 +298,15 @@
 
 
 # virtual methods
-.method public a(Ljava/util/List;Lq8/a;FIF)V
+.method public a(Ljava/util/List;Lr8/a;FIF)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lq8/b;",
+            "Lr8/b;",
             ">;",
-            "Lq8/a;",
+            "Lr8/a;",
             "FIF)V"
         }
     .end annotation
@@ -316,7 +316,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/google/android/exoplayer2/ui/a;->o:Lq8/a;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/ui/a;->o:Lr8/a;
 
     .line 4
     .line 5
@@ -1069,11 +1069,11 @@
     move-result-object v3
 
     .line 73
-    check-cast v3, Lq8/b;
+    check-cast v3, Lr8/b;
 
     .line 74
     .line 75
-    iget v4, v3, Lq8/b;->o:I
+    iget v4, v3, Lr8/b;->o:I
 
     .line 76
     .line 77
@@ -1085,7 +1085,7 @@
 
     .line 80
     .line 81
-    invoke-static {v3}, Lcom/google/android/exoplayer2/ui/a;->b(Lq8/b;)Lq8/b;
+    invoke-static {v3}, Lcom/google/android/exoplayer2/ui/a;->b(Lr8/b;)Lr8/b;
 
     .line 82
     .line 83
@@ -1097,11 +1097,11 @@
     move-object v4, v3
 
     .line 86
-    iget v3, v4, Lq8/b;->m:I
+    iget v3, v4, Lr8/b;->m:I
 
     .line 87
     .line 88
-    iget v5, v4, Lq8/b;->n:F
+    iget v5, v4, Lr8/b;->n:F
 
     .line 89
     .line 90
@@ -1129,7 +1129,7 @@
 
     .line 101
     .line 102
-    iget-object v5, v0, Lcom/google/android/exoplayer2/ui/a;->o:Lq8/a;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/ui/a;->o:Lr8/a;
 
     .line 103
     .line 104
@@ -1178,7 +1178,7 @@
 
     .line 124
     .line 125
-    invoke-virtual/range {v3 .. v13}, Lcom/google/android/exoplayer2/ui/f;->b(Lq8/b;Lq8/a;FFFLandroid/graphics/Canvas;IIII)V
+    invoke-virtual/range {v3 .. v13}, Lcom/google/android/exoplayer2/ui/f;->b(Lr8/b;Lr8/a;FFFLandroid/graphics/Canvas;IIII)V
 
     .line 126
     .line 127

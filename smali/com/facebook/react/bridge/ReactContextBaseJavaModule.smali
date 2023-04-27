@@ -55,7 +55,7 @@
 
     const-string v1, "Tried to get ReactApplicationContext even though NativeModule wasn\'t instantiated with one"
 
-    invoke-static {v0, v1}, Lc6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ld6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -1,13 +1,13 @@
 .class final Lcom/google/android/gms/nearby/exposurenotification/a;
-.super Lqa/s;
+.super Lra/s;
 .source "SourceFile"
 
 
 # direct methods
-.method synthetic constructor <init>(Lwa/a;)V
+.method synthetic constructor <init>(Lxa/a;)V
     .locals 0
 
-    invoke-direct {p0}, Lqa/s;-><init>()V
+    invoke-direct {p0}, Lra/s;-><init>()V
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lk9/c;
+.implements Ll9/c;
 
 
 # instance fields

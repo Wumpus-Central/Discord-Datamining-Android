@@ -36,7 +36,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/SkuDetailsParams$a;-><init>(Lu2/y;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/SkuDetailsParams$a;-><init>(Lv2/y;)V
 
     return-object v0
 .end method

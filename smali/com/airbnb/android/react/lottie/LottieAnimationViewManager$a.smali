@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lg2/h;
+    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lh2/h;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lg2/h;
+.field final synthetic a:Lh2/h;
 
 .field final synthetic b:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)V
+.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)V
     .locals 0
 
     iput-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->b:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
-    iput-object p2, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lg2/h;
+    iput-object p2, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lh2/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +43,11 @@
 
     iget-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->b:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lh2/h;
 
     const/4 v1, 0x1
 
-    invoke-static {p1, v0, v1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;Z)V
+    invoke-static {p1, v0, v1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;Z)V
 
     return-void
 .end method
@@ -57,11 +57,11 @@
 
     iget-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->b:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;->a:Lh2/h;
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v0, v1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;Z)V
+    invoke-static {p1, v0, v1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;Z)V
 
     return-void
 .end method

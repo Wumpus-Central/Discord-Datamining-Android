@@ -278,7 +278,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private static final getActiveHeadsetFallback(Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothDevice;

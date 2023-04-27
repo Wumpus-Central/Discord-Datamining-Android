@@ -109,7 +109,7 @@
     move-result-object p1
 
     .line 15
-    invoke-static {p1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17

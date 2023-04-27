@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loj/d;
+.implements Lqj/d;
 
 
 # annotations

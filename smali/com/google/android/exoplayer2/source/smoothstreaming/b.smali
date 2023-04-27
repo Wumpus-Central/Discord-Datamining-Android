@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lj8/i;
+.implements Lk8/i;
 
 
 # annotations
@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract b(La9/h;)V
+.method public abstract b(Lb9/h;)V
 .end method
 
-.method public abstract j(Lp8/a;)V
+.method public abstract g(Lq8/a;)V
 .end method

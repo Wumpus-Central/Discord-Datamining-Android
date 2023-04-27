@@ -16,12 +16,12 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+.method constructor <init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
-            "Lz3/c<",
+            "La4/c<",
             "TT;>;",
             "Lcom/facebook/common/references/CloseableReference$c;",
             "Ljava/lang/Throwable;",
@@ -29,7 +29,7 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/facebook/common/references/CloseableReference;-><init>(Ljava/lang/Object;Lz3/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/facebook/common/references/CloseableReference;-><init>(Ljava/lang/Object;La4/c;Lcom/facebook/common/references/CloseableReference$c;Ljava/lang/Throwable;)V
 
     return-void
 .end method

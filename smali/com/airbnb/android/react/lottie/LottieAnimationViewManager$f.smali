@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->setSourceURL(Lg2/h;Ljava/lang/String;)V
+    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->setSourceURL(Lh2/h;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field final synthetic k:Ljava/lang/String;
 
-.field final synthetic l:Lg2/h;
+.field final synthetic l:Lh2/h;
 
 .field final synthetic m:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Ljava/lang/String;Lg2/h;)V
+.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Ljava/lang/String;Lh2/h;)V
     .locals 0
 
     iput-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->m:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
     iput-object p2, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->k:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lg2/h;
+    iput-object p3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;->l:Lh2/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -365,6 +365,4 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method

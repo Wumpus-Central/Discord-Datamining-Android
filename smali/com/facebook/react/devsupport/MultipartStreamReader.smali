@@ -145,7 +145,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {p1, v0}, Lokio/Buffer;->u(Lokio/ByteString;)J
+    invoke-virtual {p1, v0}, Lokio/Buffer;->v(Lokio/ByteString;)J
 
     .line 8
     .line 9
@@ -200,7 +200,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v0}, Lokio/ByteString;->y()I
+    invoke-virtual {v0}, Lokio/ByteString;->v()I
 
     .line 36
     .line 37
@@ -216,7 +216,7 @@
     .line 41
     .line 42
     .line 43
-    invoke-virtual {p1, v4}, Lokio/Buffer;->A0(Lokio/Sink;)J
+    invoke-virtual {p1, v4}, Lokio/Buffer;->x0(Lokio/Sink;)J
 
     .line 44
     .line 45
@@ -859,7 +859,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Lokio/Buffer;->v0()Ljava/lang/String;
+    invoke-virtual {p1}, Lokio/Buffer;->s0()Ljava/lang/String;
 
     .line 7
     .line 8
@@ -1310,7 +1310,7 @@
 
     .line 77
     :goto_0
-    invoke-virtual {v8}, Lokio/ByteString;->y()I
+    invoke-virtual {v8}, Lokio/ByteString;->v()I
 
     .line 78
     .line 79
@@ -1465,7 +1465,7 @@
     move-result-wide v0
 
     .line 152
-    invoke-virtual {v9}, Lokio/ByteString;->y()I
+    invoke-virtual {v9}, Lokio/ByteString;->v()I
 
     .line 153
     .line 154
@@ -1683,7 +1683,7 @@
 
     .line 252
     :cond_6
-    invoke-virtual {v7}, Lokio/ByteString;->y()I
+    invoke-virtual {v7}, Lokio/ByteString;->v()I
 
     .line 253
     .line 254

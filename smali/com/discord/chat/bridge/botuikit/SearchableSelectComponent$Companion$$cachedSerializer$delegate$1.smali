@@ -89,7 +89,7 @@
     .end annotation
 
     .line 2
-    new-instance v0, Lwi/c;
+    new-instance v0, Lyi/c;
 
     const-class v1, Lcom/discord/chat/bridge/botuikit/SearchableSelectComponent;
 
@@ -101,7 +101,7 @@
 
     new-array v2, v2, [Ljava/lang/annotation/Annotation;
 
-    invoke-direct {v0, v1, v2}, Lwi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
+    invoke-direct {v0, v1, v2}, Lyi/c;-><init>(Lkotlin/reflect/KClass;[Ljava/lang/annotation/Annotation;)V
 
     return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public Lcom/facebook/drawee/span/a;
-.super Lh6/a;
+.super Li6/a;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
     move-result-object v0
 
     .line 5
-    invoke-direct {p0, v0, p2}, Lh6/a;-><init>(Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct {p0, v0, p2}, Li6/a;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
     .line 6
     .line 7

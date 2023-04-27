@@ -1128,7 +1128,7 @@
     const/4 v4, 0x0
 
     .line 32
-    invoke-static {v1, v4, v2, v3}, Lif/b;->a(FFFF)F
+    invoke-static {v1, v4, v2, v3}, Lkf/b;->a(FFFF)F
 
     .line 33
     .line 34

@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc4/b;
+.implements Ld4/b;
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -38,7 +38,7 @@
 
 .method public static get()Lcom/facebook/common/time/RealtimeSinceBootClock;
     .locals 1
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     sget-object v0, Lcom/facebook/common/time/RealtimeSinceBootClock;->a:Lcom/facebook/common/time/RealtimeSinceBootClock;

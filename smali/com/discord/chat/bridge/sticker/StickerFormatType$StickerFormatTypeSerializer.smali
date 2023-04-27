@@ -168,11 +168,11 @@
 
     .line 2
     .line 3
-    sget-object v1, Lyi/e$f;->a:Lyi/e$f;
+    sget-object v1, Laj/e$f;->a:Laj/e$f;
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lyi/g;->a(Ljava/lang/String;Lyi/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
+    invoke-static {v0, v1}, Laj/g;->a(Ljava/lang/String;Laj/e;)Lkotlinx/serialization/descriptors/SerialDescriptor;
 
     .line 6
     .line 7
@@ -266,7 +266,7 @@
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->A(I)V
+    invoke-interface {p1, p2}, Lkotlinx/serialization/encoding/Encoder;->B(I)V
 
     return-void
 .end method

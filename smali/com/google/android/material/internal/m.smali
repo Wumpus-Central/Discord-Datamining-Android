@@ -21,7 +21,7 @@
 
     .line 3
     .line 4
-    sget v2, Ldb/b;->k:I
+    sget v2, Leb/b;->k:I
 
     .line 5
     .line 6
@@ -40,7 +40,7 @@
 
     .line 12
     .line 13
-    sget v1, Ldb/b;->l:I
+    sget v1, Leb/b;->l:I
 
     .line 14
     .line 15
@@ -133,7 +133,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ldb/k;->J6:[I
+    sget-object v0, Leb/k;->J6:[I
 
     .line 2
     .line 3
@@ -145,7 +145,7 @@
     move-result-object p1
 
     .line 7
-    sget p2, Ldb/k;->L6:I
+    sget p2, Leb/k;->L6:I
 
     .line 8
     .line 9
@@ -186,7 +186,7 @@
     move-result-object p2
 
     .line 28
-    sget p3, Ldb/b;->r:I
+    sget p3, Leb/b;->r:I
 
     .line 29
     .line 30
@@ -516,7 +516,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Ldb/k;->J6:[I
+    sget-object v0, Leb/k;->J6:[I
 
     .line 2
     .line 3
@@ -528,7 +528,7 @@
     move-result-object v0
 
     .line 7
-    sget v1, Ldb/k;->M6:I
+    sget v1, Leb/k;->M6:I
 
     .line 8
     .line 9
@@ -584,7 +584,7 @@
     .line 31
     :cond_2
     :goto_0
-    sget p0, Ldb/k;->K6:I
+    sget p0, Leb/k;->K6:I
 
     .line 32
     .line 33

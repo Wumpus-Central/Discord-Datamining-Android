@@ -115,33 +115,33 @@
         "Lcom/otaliastudios/zoom/ZoomEngine$a;",
         "Lcom/otaliastudios/zoom/ZoomEngine$a;",
         "callbacks",
-        "Lte/b;",
-        "Lte/b;",
+        "Lue/b;",
+        "Lue/b;",
         "getDispatcher$annotations",
         "()V",
         "dispatcher",
-        "Lte/a;",
-        "Lte/a;",
+        "Lue/a;",
+        "Lue/a;",
         "stateController",
-        "Lwe/b;",
-        "Lwe/b;",
+        "Lxe/b;",
+        "Lxe/b;",
         "getPanManager$annotations",
         "panManager",
-        "Lwe/c;",
-        "Lwe/c;",
+        "Lxe/c;",
+        "Lxe/c;",
         "L",
-        "()Lwe/c;",
+        "()Lxe/c;",
         "getZoomManager$library_release$annotations",
         "zoomManager",
-        "Lve/b;",
-        "Lve/b;",
+        "Lwe/b;",
+        "Lwe/b;",
         "matrixController",
-        "Lue/b;",
-        "Lue/b;",
+        "Lve/b;",
+        "Lve/b;",
         "scrollFlingDetector",
-        "Lue/a;",
+        "Lve/a;",
         "u",
-        "Lue/a;",
+        "Lve/a;",
         "pinchDetector",
         "G",
         "()F",
@@ -211,19 +211,19 @@
 
 .field private final n:Lcom/otaliastudios/zoom/ZoomEngine$a;
 
-.field private final o:Lte/b;
+.field private final o:Lue/b;
 
-.field private final p:Lte/a;
+.field private final p:Lue/a;
 
-.field private final q:Lwe/b;
+.field private final q:Lxe/b;
 
-.field private final r:Lwe/c;
+.field private final r:Lxe/c;
 
-.field private final s:Lve/b;
+.field private final s:Lwe/b;
 
-.field private final t:Lue/b;
+.field private final t:Lve/b;
 
-.field private final u:Lue/a;
+.field private final u:Lve/a;
 
 
 # direct methods
@@ -477,33 +477,33 @@
 
     .line 15
     .line 16
-    new-instance v1, Lte/b;
+    new-instance v1, Lue/b;
 
     .line 17
     .line 18
-    invoke-direct {v1, p0}, Lte/b;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;)V
+    invoke-direct {v1, p0}, Lue/b;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;)V
 
     .line 19
     .line 20
     .line 21
-    iput-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lte/b;
+    iput-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lue/b;
 
     .line 22
     .line 23
-    new-instance v6, Lte/a;
+    new-instance v6, Lue/a;
 
     .line 24
     .line 25
-    invoke-direct {v6, v0}, Lte/a;-><init>(Lte/a$a;)V
+    invoke-direct {v6, v0}, Lue/a;-><init>(Lue/a$a;)V
 
     .line 26
     .line 27
     .line 28
-    iput-object v6, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iput-object v6, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 29
     .line 30
-    new-instance v5, Lwe/b;
+    new-instance v5, Lxe/b;
 
     .line 31
     .line 32
@@ -516,16 +516,16 @@
     .line 35
     .line 36
     .line 37
-    invoke-direct {v5, p0, v1}, Lwe/b;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v5, p0, v1}, Lxe/b;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;Lkotlin/jvm/functions/Function0;)V
 
     .line 38
     .line 39
     .line 40
-    iput-object v5, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iput-object v5, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 41
     .line 42
-    new-instance v4, Lwe/c;
+    new-instance v4, Lxe/c;
 
     .line 43
     .line 44
@@ -538,42 +538,42 @@
     .line 47
     .line 48
     .line 49
-    invoke-direct {v4, p0, v1}, Lwe/c;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v4, p0, v1}, Lxe/c;-><init>(Lcom/otaliastudios/zoom/ZoomEngine;Lkotlin/jvm/functions/Function0;)V
 
     .line 50
     .line 51
     .line 52
-    iput-object v4, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iput-object v4, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 53
     .line 54
-    new-instance v7, Lve/b;
+    new-instance v7, Lwe/b;
 
     .line 55
     .line 56
-    invoke-direct {v7, v4, v5, v6, v0}, Lve/b;-><init>(Lwe/c;Lwe/b;Lte/a;Lve/b$a;)V
+    invoke-direct {v7, v4, v5, v6, v0}, Lwe/b;-><init>(Lxe/c;Lxe/b;Lue/a;Lwe/b$a;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object v7, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iput-object v7, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 60
     .line 61
-    new-instance v0, Lue/b;
+    new-instance v0, Lve/b;
 
     .line 62
     .line 63
-    invoke-direct {v0, p1, v5, v6, v7}, Lue/b;-><init>(Landroid/content/Context;Lwe/b;Lte/a;Lve/b;)V
+    invoke-direct {v0, p1, v5, v6, v7}, Lve/b;-><init>(Landroid/content/Context;Lxe/b;Lue/a;Lwe/b;)V
 
     .line 64
     .line 65
     .line 66
-    iput-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iput-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
     .line 67
     .line 68
-    new-instance v0, Lue/a;
+    new-instance v0, Lve/a;
 
     .line 69
     .line 70
@@ -583,12 +583,12 @@
     move-object v3, p1
 
     .line 72
-    invoke-direct/range {v2 .. v7}, Lue/a;-><init>(Landroid/content/Context;Lwe/c;Lwe/b;Lte/a;Lve/b;)V
+    invoke-direct/range {v2 .. v7}, Lve/a;-><init>(Landroid/content/Context;Lxe/c;Lxe/b;Lue/a;Lwe/b;)V
 
     .line 73
     .line 74
     .line 75
-    iput-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->u:Lue/a;
+    iput-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->u:Lve/a;
 
     .line 76
     .line 77
@@ -764,10 +764,10 @@
     return-object p0
 .end method
 
-.method public static final synthetic e(Lcom/otaliastudios/zoom/ZoomEngine;)Lte/b;
+.method public static final synthetic e(Lcom/otaliastudios/zoom/ZoomEngine;)Lue/b;
     .locals 0
 
-    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lte/b;
+    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lue/b;
 
     return-object p0
 .end method
@@ -780,34 +780,34 @@
     return-object v0
 .end method
 
-.method public static final synthetic g(Lcom/otaliastudios/zoom/ZoomEngine;)Lve/b;
+.method public static final synthetic g(Lcom/otaliastudios/zoom/ZoomEngine;)Lwe/b;
     .locals 0
 
-    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     return-object p0
 .end method
 
-.method public static final synthetic h(Lcom/otaliastudios/zoom/ZoomEngine;)Lue/a;
+.method public static final synthetic h(Lcom/otaliastudios/zoom/ZoomEngine;)Lve/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->u:Lue/a;
+    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->u:Lve/a;
 
     return-object p0
 .end method
 
-.method public static final synthetic i(Lcom/otaliastudios/zoom/ZoomEngine;)Lue/b;
+.method public static final synthetic i(Lcom/otaliastudios/zoom/ZoomEngine;)Lve/b;
     .locals 0
 
-    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
     return-object p0
 .end method
 
-.method public static final synthetic j(Lcom/otaliastudios/zoom/ZoomEngine;)Lte/a;
+.method public static final synthetic j(Lcom/otaliastudios/zoom/ZoomEngine;)Lue/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object p0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     return-object p0
 .end method
@@ -837,11 +837,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Lwe/b;->e()I
+    invoke-virtual {v0}, Lxe/b;->e()I
 
     .line 8
     .line 9
@@ -860,11 +860,11 @@
     move-result v0
 
     .line 16
-    iget-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 17
     .line 18
-    invoke-virtual {v1}, Lwe/b;->e()I
+    invoke-virtual {v1}, Lxe/b;->e()I
 
     .line 19
     .line 20
@@ -1096,14 +1096,14 @@
     move-result v2
 
     .line 35
-    iget-object v3, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v3, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 36
     .line 37
     const/4 v4, 0x1
 
     .line 38
-    invoke-virtual {v3, v2, v0, v4}, Lwe/b;->b(IFZ)F
+    invoke-virtual {v3, v2, v0, v4}, Lxe/b;->b(IFZ)F
 
     .line 39
     .line 40
@@ -1114,14 +1114,14 @@
     neg-float v0, v0
 
     .line 43
-    iget-object v3, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v3, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 44
     .line 45
     const/4 v4, 0x0
 
     .line 46
-    invoke-virtual {v3, v2, v1, v4}, Lwe/b;->b(IFZ)F
+    invoke-virtual {v3, v2, v1, v4}, Lxe/b;->b(IFZ)F
 
     .line 47
     .line 48
@@ -1607,9 +1607,9 @@
 .method public A()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0}, Lwe/c;->g()I
+    invoke-virtual {v0}, Lxe/c;->g()I
 
     move-result v0
 
@@ -1619,9 +1619,9 @@
 .method public B()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0}, Lwe/c;->h()F
+    invoke-virtual {v0}, Lxe/c;->h()F
 
     move-result v0
 
@@ -1631,9 +1631,9 @@
 .method public C()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0}, Lwe/c;->j()I
+    invoke-virtual {v0}, Lxe/c;->j()I
 
     move-result v0
 
@@ -1643,9 +1643,9 @@
 .method public D()Lcom/otaliastudios/zoom/AbsolutePoint;
     .locals 4
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->s()Lcom/otaliastudios/zoom/AbsolutePoint;
+    invoke-virtual {v0}, Lwe/b;->s()Lcom/otaliastudios/zoom/AbsolutePoint;
 
     move-result-object v0
 
@@ -1665,9 +1665,9 @@
 .method public E()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->t()F
+    invoke-virtual {v0}, Lwe/b;->t()F
 
     move-result v0
 
@@ -1677,9 +1677,9 @@
 .method public F()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->u()F
+    invoke-virtual {v0}, Lwe/b;->u()F
 
     move-result v0
 
@@ -1689,9 +1689,9 @@
 .method public G()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->y()F
+    invoke-virtual {v0}, Lwe/b;->y()F
 
     move-result v0
 
@@ -1701,9 +1701,9 @@
 .method public H()Lcom/otaliastudios/zoom/ScaledPoint;
     .locals 4
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->v()Lcom/otaliastudios/zoom/ScaledPoint;
+    invoke-virtual {v0}, Lwe/b;->v()Lcom/otaliastudios/zoom/ScaledPoint;
 
     move-result-object v0
 
@@ -1723,9 +1723,9 @@
 .method public I()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->w()F
+    invoke-virtual {v0}, Lwe/b;->w()F
 
     move-result v0
 
@@ -1735,9 +1735,9 @@
 .method public J()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->x()F
+    invoke-virtual {v0}, Lwe/b;->x()F
 
     move-result v0
 
@@ -1747,23 +1747,23 @@
 .method public K()F
     .locals 2
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     invoke-virtual {p0}, Lcom/otaliastudios/zoom/ZoomEngine;->G()F
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lwe/c;->n(F)F
+    invoke-virtual {v0, v1}, Lxe/c;->n(F)F
 
     move-result v0
 
     return v0
 .end method
 
-.method public final L()Lwe/c;
+.method public final L()Lxe/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     return-object v0
 .end method
@@ -1772,11 +1772,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lwe/c;->u(F)F
+    invoke-virtual {v0, p1}, Lxe/c;->u(F)F
 
     .line 4
     .line 5
@@ -1784,7 +1784,7 @@
     move-result p1
 
     .line 7
-    sget-object v0, Lve/c;->l:Lve/c$b;
+    sget-object v0, Lwe/c;->l:Lwe/c$b;
 
     .line 8
     .line 9
@@ -1797,7 +1797,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Lve/c$b;->a(Lkotlin/jvm/functions/Function1;)Lve/c;
+    invoke-virtual {v0, v1}, Lwe/c$b;->a(Lkotlin/jvm/functions/Function1;)Lwe/c;
 
     .line 15
     .line 16
@@ -1809,11 +1809,11 @@
 
     .line 19
     .line 20
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 21
     .line 22
-    invoke-virtual {p2, p1}, Lve/b;->f(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->f(Lwe/c;)V
 
     .line 23
     .line 24
@@ -1827,11 +1827,11 @@
     .line 27
     .line 28
     .line 29
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 30
     .line 31
-    invoke-virtual {p2, p1}, Lve/b;->h(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->h(Lwe/c;)V
 
     .line 32
     .line 33
@@ -2376,11 +2376,11 @@
     move-result p1
 
     .line 9
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Lwe/c;->i()F
+    invoke-virtual {v0}, Lxe/c;->i()F
 
     .line 12
     .line 13
@@ -2388,7 +2388,7 @@
     move-result v1
 
     .line 15
-    invoke-virtual {v0, v1}, Lwe/c;->n(F)F
+    invoke-virtual {v0, v1}, Lxe/c;->n(F)F
 
     .line 16
     .line 17
@@ -2396,11 +2396,11 @@
     move-result v0
 
     .line 19
-    iget-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 20
     .line 21
-    invoke-virtual {v1}, Lwe/c;->f()F
+    invoke-virtual {v1}, Lxe/c;->f()F
 
     .line 22
     .line 23
@@ -2408,7 +2408,7 @@
     move-result v2
 
     .line 25
-    invoke-virtual {v1, v2}, Lwe/c;->n(F)F
+    invoke-virtual {v1, v2}, Lxe/c;->n(F)F
 
     .line 26
     .line 27
@@ -2416,7 +2416,7 @@
     move-result v1
 
     .line 29
-    invoke-static {p1, v0, v1}, Lcg/h;->i(FFF)F
+    invoke-static {p1, v0, v1}, Leg/h;->i(FFF)F
 
     .line 30
     .line 31
@@ -2458,11 +2458,11 @@
 
     .line 48
     :goto_1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 49
     .line 50
-    invoke-virtual {v0, p1}, Lwe/c;->u(F)F
+    invoke-virtual {v0, p1}, Lxe/c;->u(F)F
 
     .line 51
     .line 52
@@ -2648,17 +2648,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final O(Landroid/view/MotionEvent;)Z
@@ -2674,11 +2663,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lte/a;->h(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lue/a;->h(Landroid/view/MotionEvent;)Z
 
     .line 9
     .line 10
@@ -2848,11 +2837,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lte/a;->i(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lue/a;->i(Landroid/view/MotionEvent;)Z
 
     .line 9
     .line 10
@@ -3013,7 +3002,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lve/c;->l:Lve/c$b;
+    sget-object v0, Lwe/c;->l:Lwe/c$b;
 
     .line 2
     .line 3
@@ -3026,7 +3015,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Lve/c$b;->a(Lkotlin/jvm/functions/Function1;)Lve/c;
+    invoke-virtual {v0, v1}, Lwe/c$b;->a(Lkotlin/jvm/functions/Function1;)Lwe/c;
 
     .line 9
     .line 10
@@ -3038,11 +3027,11 @@
 
     .line 13
     .line 14
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 15
     .line 16
-    invoke-virtual {p2, p1}, Lve/b;->f(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->f(Lwe/c;)V
 
     .line 17
     .line 18
@@ -3056,11 +3045,11 @@
     .line 21
     .line 22
     .line 23
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 24
     .line 25
-    invoke-virtual {p2, p1}, Lve/b;->h(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->h(Lwe/c;)V
 
     .line 26
     .line 27
@@ -3424,7 +3413,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lve/c;->l:Lve/c$b;
+    sget-object v0, Lwe/c;->l:Lwe/c$b;
 
     .line 2
     .line 3
@@ -3437,7 +3426,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Lve/c$b;->a(Lkotlin/jvm/functions/Function1;)Lve/c;
+    invoke-virtual {v0, v1}, Lwe/c$b;->a(Lkotlin/jvm/functions/Function1;)Lwe/c;
 
     .line 9
     .line 10
@@ -3449,11 +3438,11 @@
 
     .line 13
     .line 14
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 15
     .line 16
-    invoke-virtual {p2, p1}, Lve/b;->f(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->f(Lwe/c;)V
 
     .line 17
     .line 18
@@ -3467,11 +3456,11 @@
     .line 21
     .line 22
     .line 23
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
     .line 24
     .line 25
-    invoke-virtual {p2, p1}, Lve/b;->h(Lve/c;)V
+    invoke-virtual {p2, p1}, Lwe/b;->h(Lwe/c;)V
 
     .line 26
     .line 27
@@ -3641,25 +3630,14 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public T(I)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
-    invoke-virtual {v0, p1}, Lwe/b;->o(I)V
+    invoke-virtual {v0, p1}, Lxe/b;->o(I)V
 
     return-void
 .end method
@@ -3667,9 +3645,9 @@
 .method public U(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->j(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->j(Z)V
 
     return-void
 .end method
@@ -3677,9 +3655,9 @@
 .method public V(J)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0, p1, p2}, Lve/b;->D(J)V
+    invoke-virtual {v0, p1, p2}, Lwe/b;->D(J)V
 
     return-void
 .end method
@@ -3889,9 +3867,9 @@
 .method public final X(FFZ)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0, p1, p2, p3}, Lve/b;->E(FFZ)V
+    invoke-virtual {v0, p1, p2, p3}, Lwe/b;->E(FFZ)V
 
     return-void
 .end method
@@ -3899,9 +3877,9 @@
 .method public final Z(FFZ)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0, p1, p2, p3}, Lve/b;->F(FFZ)V
+    invoke-virtual {v0, p1, p2, p3}, Lwe/b;->F(FFZ)V
 
     return-void
 .end method
@@ -3909,9 +3887,9 @@
 .method public b0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->i(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->i(Z)V
 
     return-void
 .end method
@@ -3919,9 +3897,9 @@
 .method public c0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
-    invoke-virtual {v0, p1}, Lwe/b;->q(Z)V
+    invoke-virtual {v0, p1}, Lxe/b;->q(Z)V
 
     return-void
 .end method
@@ -3945,9 +3923,9 @@
 .method public f0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->k(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->k(Z)V
 
     return-void
 .end method
@@ -3965,11 +3943,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lwe/b;->r(Lcom/otaliastudios/zoom/OverPanRangeProvider;)V
+    invoke-virtual {v0, p1}, Lxe/b;->r(Lcom/otaliastudios/zoom/OverPanRangeProvider;)V
 
     .line 9
     .line 10
@@ -4127,9 +4105,9 @@
 .method public h0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0, p1}, Lwe/c;->r(Z)V
+    invoke-virtual {v0, p1}, Lxe/c;->r(Z)V
 
     return-void
 .end method
@@ -4137,9 +4115,9 @@
 .method public i0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
-    invoke-virtual {v0, p1}, Lwe/b;->p(Z)V
+    invoke-virtual {v0, p1}, Lxe/b;->p(Z)V
 
     return-void
 .end method
@@ -4147,9 +4125,9 @@
 .method public j0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
-    invoke-virtual {v0, p1}, Lwe/b;->s(Z)V
+    invoke-virtual {v0, p1}, Lxe/b;->s(Z)V
 
     return-void
 .end method
@@ -4167,11 +4145,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lwe/c;->s(Lcom/otaliastudios/zoom/OverZoomRangeProvider;)V
+    invoke-virtual {v0, p1}, Lxe/c;->s(Lcom/otaliastudios/zoom/OverZoomRangeProvider;)V
 
     .line 9
     .line 10
@@ -4347,11 +4325,11 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lte/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->o:Lue/b;
 
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, Lte/b;->a(Lcom/otaliastudios/zoom/ZoomEngine$c;)V
+    invoke-virtual {v0, p1}, Lue/b;->a(Lcom/otaliastudios/zoom/ZoomEngine$c;)V
 
     .line 13
     .line 14
@@ -4518,9 +4496,9 @@
 .method public l0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->l(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->l(Z)V
 
     return-void
 .end method
@@ -4529,11 +4507,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lte/a;->b()Z
+    invoke-virtual {v0}, Lue/a;->b()Z
 
     .line 4
     .line 5
@@ -4548,11 +4526,11 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lue/b;->e()V
+    invoke-virtual {v0}, Lve/b;->e()V
 
     .line 13
     .line 14
@@ -4561,11 +4539,11 @@
 
     .line 16
     :cond_0
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Lte/a;->a()Z
+    invoke-virtual {v0}, Lue/a;->a()Z
 
     .line 19
     .line 20
@@ -4577,11 +4555,11 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lte/a;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->p:Lue/a;
 
     .line 25
     .line 26
-    invoke-virtual {v0}, Lte/a;->f()Z
+    invoke-virtual {v0}, Lue/a;->f()Z
 
     .line 27
     .line 28
@@ -4753,9 +4731,9 @@
 .method public m0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->m(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->m(Z)V
 
     return-void
 .end method
@@ -4763,9 +4741,9 @@
 .method public final n()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->w()F
+    invoke-virtual {v0}, Lwe/b;->w()F
 
     move-result v0
 
@@ -4787,9 +4765,9 @@
 .method public final o()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->p()F
+    invoke-virtual {v0}, Lwe/b;->p()F
 
     move-result v0
 
@@ -4801,9 +4779,9 @@
 .method public o0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lue/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->t:Lve/b;
 
-    invoke-virtual {v0, p1}, Lue/b;->n(Z)V
+    invoke-virtual {v0, p1}, Lve/b;->n(Z)V
 
     return-void
 .end method
@@ -4811,9 +4789,9 @@
 .method public p0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lwe/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->q:Lxe/b;
 
-    invoke-virtual {v0, p1}, Lwe/b;->t(Z)V
+    invoke-virtual {v0, p1}, Lxe/b;->t(Z)V
 
     return-void
 .end method
@@ -4821,9 +4799,9 @@
 .method public q0(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0, p1}, Lwe/c;->o(Z)V
+    invoke-virtual {v0, p1}, Lxe/c;->o(Z)V
 
     return-void
 .end method
@@ -5031,25 +5009,14 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final s()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->x()F
+    invoke-virtual {v0}, Lwe/b;->x()F
 
     move-result v0
 
@@ -5076,11 +5043,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Lwe/c;->p(FI)V
+    invoke-virtual {v0, p1, p2}, Lxe/c;->p(FI)V
 
     .line 4
     .line 5
@@ -5093,11 +5060,11 @@
     move-result p1
 
     .line 10
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 11
     .line 12
-    invoke-virtual {p2}, Lwe/c;->f()F
+    invoke-virtual {p2}, Lxe/c;->f()F
 
     .line 13
     .line 14
@@ -5113,11 +5080,11 @@
 
     .line 19
     .line 20
-    iget-object p1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object p1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lwe/c;->f()F
+    invoke-virtual {p1}, Lxe/c;->f()F
 
     .line 23
     .line 24
@@ -5296,28 +5263,17 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public setMinZoom(FI)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Lwe/c;->q(FI)V
+    invoke-virtual {v0, p1, p2}, Lxe/c;->q(FI)V
 
     .line 4
     .line 5
@@ -5330,11 +5286,11 @@
     move-result p1
 
     .line 10
-    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object p2, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 11
     .line 12
-    invoke-virtual {p2}, Lwe/c;->i()F
+    invoke-virtual {p2}, Lxe/c;->i()F
 
     .line 13
     .line 14
@@ -5350,11 +5306,11 @@
 
     .line 19
     .line 20
-    iget-object p1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object p1, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lwe/c;->i()F
+    invoke-virtual {p1}, Lxe/c;->i()F
 
     .line 23
     .line 24
@@ -5533,17 +5489,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public setTransformation(II)V
@@ -5745,25 +5690,14 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final t()I
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->o()F
+    invoke-virtual {v0}, Lwe/b;->o()F
 
     move-result v0
 
@@ -5787,9 +5721,9 @@
 .method public final u()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->l()F
+    invoke-virtual {v0}, Lwe/b;->l()F
 
     move-result v0
 
@@ -5800,11 +5734,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lwe/c;->u(F)F
+    invoke-virtual {v0, p1}, Lxe/c;->u(F)F
 
     .line 4
     .line 5
@@ -5999,25 +5933,14 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public final v()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->m()F
+    invoke-virtual {v0}, Lwe/b;->m()F
 
     move-result v0
 
@@ -6027,9 +5950,9 @@
 .method public final w()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->n()F
+    invoke-virtual {v0}, Lwe/b;->n()F
 
     move-result v0
 
@@ -6039,9 +5962,9 @@
 .method public final x()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->q()F
+    invoke-virtual {v0}, Lwe/b;->q()F
 
     move-result v0
 
@@ -6051,9 +5974,9 @@
 .method public final y()Landroid/graphics/Matrix;
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lve/b;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->s:Lwe/b;
 
-    invoke-virtual {v0}, Lve/b;->r()Landroid/graphics/Matrix;
+    invoke-virtual {v0}, Lwe/b;->r()Landroid/graphics/Matrix;
 
     move-result-object v0
 
@@ -6063,9 +5986,9 @@
 .method public z()F
     .locals 1
 
-    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lwe/c;
+    iget-object v0, p0, Lcom/otaliastudios/zoom/ZoomEngine;->r:Lxe/c;
 
-    invoke-virtual {v0}, Lwe/c;->e()F
+    invoke-virtual {v0}, Lxe/c;->e()F
 
     move-result v0
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvb/b;
+.implements Lwb/b;
 
 
 # annotations

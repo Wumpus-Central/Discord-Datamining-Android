@@ -136,10 +136,10 @@
 .method public abstract g0(Lcom/facebook/yoga/e;F)V
 .end method
 
-.method public abstract h0(Lcom/facebook/yoga/e;F)V
+.method public abstract h()Lcom/facebook/yoga/YogaDirection;
 .end method
 
-.method public abstract i()Lcom/facebook/yoga/YogaDirection;
+.method public abstract h0(Lcom/facebook/yoga/e;F)V
 .end method
 
 .method public abstract i0(Lcom/facebook/yoga/YogaPositionType;)V

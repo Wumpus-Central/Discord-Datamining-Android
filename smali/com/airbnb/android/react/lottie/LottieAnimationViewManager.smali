@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/react/uimanager/SimpleViewManager<",
-        "Lg2/h;",
+        "Lh2/h;",
         ">;"
     }
 .end annotation
@@ -34,7 +34,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Lg2/h;",
+            "Lh2/h;",
             "Lcom/airbnb/android/react/lottie/a;",
             ">;"
         }
@@ -100,28 +100,27 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
-.method static synthetic access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;Z)V
+.method static synthetic access$000(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;Z)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->sendOnAnimationFinishEvent(Lg2/h;Z)V
+    invoke-direct {p0, p1, p2}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->sendOnAnimationFinishEvent(Lh2/h;Z)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+.method static synthetic access$100(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)Lcom/airbnb/android/react/lottie/a;
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+.method private getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
     .locals 2
 
     .line 1
@@ -149,7 +148,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v0, p1}, Lcom/airbnb/android/react/lottie/a;-><init>(Lg2/h;)V
+    invoke-direct {v0, p1}, Lcom/airbnb/android/react/lottie/a;-><init>(Lh2/h;)V
 
     .line 14
     .line 15
@@ -186,7 +185,7 @@
     .line 40
 .end method
 
-.method private sendOnAnimationFinishEvent(Lg2/h;Z)V
+.method private sendOnAnimationFinishEvent(Lh2/h;Z)V
     .locals 2
 
     .line 1
@@ -338,20 +337,20 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lg2/h;
+    invoke-virtual {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lh2/h;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lg2/h;
+.method public createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)Lh2/h;
     .locals 1
 
     .line 2
-    new-instance v0, Lg2/h;
+    new-instance v0, Lh2/h;
 
-    invoke-direct {v0, p1}, Lg2/h;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lh2/h;-><init>(Landroid/content/Context;)V
 
     .line 3
     sget-object p1, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
@@ -361,9 +360,9 @@
     .line 4
     new-instance p1, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;
 
-    invoke-direct {p1, p0, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)V
+    invoke-direct {p1, p0, v0}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$a;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)V
 
-    invoke-virtual {v0, p1}, Lg2/h;->i(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v0, p1}, Lh2/h;->i(Landroid/animation/Animator$AnimatorListener;)V
 
     return-object v0
 .end method
@@ -456,7 +455,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public getExportedCustomBubblingEventTypeConstants()Ljava/util/Map;
@@ -530,7 +528,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public getExportedViewConstants()Ljava/util/Map;
@@ -605,7 +602,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -620,21 +616,21 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lg2/h;
+    check-cast p1, Lh2/h;
 
-    invoke-virtual {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->onAfterUpdateTransaction(Lg2/h;)V
+    invoke-virtual {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->onAfterUpdateTransaction(Lh2/h;)V
 
     return-void
 .end method
 
-.method protected onAfterUpdateTransaction(Lg2/h;)V
+.method protected onAfterUpdateTransaction(Lh2/h;)V
     .locals 0
 
     .line 2
     invoke-super {p0, p1}, Lcom/facebook/react/uimanager/BaseViewManager;->onAfterUpdateTransaction(Landroid/view/View;)V
 
     .line 3
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -647,14 +643,14 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lg2/h;
+    check-cast p1, Lh2/h;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->receiveCommand(Lg2/h;ILcom/facebook/react/bridge/ReadableArray;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->receiveCommand(Lh2/h;ILcom/facebook/react/bridge/ReadableArray;)V
 
     return-void
 .end method
 
-.method public receiveCommand(Lg2/h;ILcom/facebook/react/bridge/ReadableArray;)V
+.method public receiveCommand(Lh2/h;ILcom/facebook/react/bridge/ReadableArray;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -687,7 +683,7 @@
 
     new-instance p3, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$e;
 
-    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$e;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)V
+    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$e;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)V
 
     invoke-virtual {p2, p3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -705,7 +701,7 @@
 
     new-instance p3, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$d;
 
-    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$d;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)V
+    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$d;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)V
 
     invoke-virtual {p2, p3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -723,7 +719,7 @@
 
     new-instance p3, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$c;
 
-    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$c;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lg2/h;)V
+    invoke-direct {p3, p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$c;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lh2/h;)V
 
     invoke-virtual {p2, p3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -741,7 +737,7 @@
 
     new-instance v0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;
 
-    invoke-direct {v0, p0, p3, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lcom/facebook/react/bridge/ReadableArray;Lg2/h;)V
+    invoke-direct {v0, p0, p3, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lcom/facebook/react/bridge/ReadableArray;Lh2/h;)V
 
     invoke-virtual {p2, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -749,24 +745,24 @@
     return-void
 .end method
 
-.method public setCacheComposition(Lg2/h;Z)V
+.method public setCacheComposition(Lh2/h;Z)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "cacheComposition"
     .end annotation
 
-    invoke-virtual {p1, p2}, Lg2/h;->setCacheComposition(Z)V
+    invoke-virtual {p1, p2}, Lh2/h;->setCacheComposition(Z)V
 
     return-void
 .end method
 
-.method public setColorFilters(Lg2/h;Lcom/facebook/react/bridge/ReadableArray;)V
+.method public setColorFilters(Lh2/h;Lcom/facebook/react/bridge/ReadableArray;)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "colorFilters"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -775,13 +771,13 @@
     return-void
 .end method
 
-.method public setEnableMergePaths(Lg2/h;Z)V
+.method public setEnableMergePaths(Lh2/h;Z)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "enableMergePathsAndroidForKitKatAndAbove"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -790,13 +786,13 @@
     return-void
 .end method
 
-.method public setImageAssetsFolder(Lg2/h;Ljava/lang/String;)V
+.method public setImageAssetsFolder(Lh2/h;Ljava/lang/String;)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "imageAssetsFolder"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -805,13 +801,13 @@
     return-void
 .end method
 
-.method public setLoop(Lg2/h;Z)V
+.method public setLoop(Lh2/h;Z)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "loop"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -820,13 +816,13 @@
     return-void
 .end method
 
-.method public setProgress(Lg2/h;F)V
+.method public setProgress(Lh2/h;F)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "progress"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -839,7 +835,7 @@
     return-void
 .end method
 
-.method public setRenderMode(Lg2/h;Ljava/lang/String;)V
+.method public setRenderMode(Lh2/h;Ljava/lang/String;)V
     .locals 1
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "renderMode"
@@ -862,7 +858,7 @@
 
     .line 8
     .line 9
-    sget-object p2, Lg2/q0;->k:Lg2/q0;
+    sget-object p2, Lh2/q0;->k:Lh2/q0;
 
     .line 10
     .line 11
@@ -886,7 +882,7 @@
 
     .line 19
     .line 20
-    sget-object p2, Lg2/q0;->l:Lg2/q0;
+    sget-object p2, Lh2/q0;->l:Lh2/q0;
 
     .line 21
     .line 22
@@ -910,7 +906,7 @@
 
     .line 30
     .line 31
-    sget-object p2, Lg2/q0;->m:Lg2/q0;
+    sget-object p2, Lh2/q0;->m:Lh2/q0;
 
     .line 32
     .line 33
@@ -922,7 +918,7 @@
 
     .line 35
     :goto_0
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     .line 36
     .line 37
@@ -930,7 +926,7 @@
     move-result-object p1
 
     .line 39
-    invoke-virtual {p1, p2}, Lcom/airbnb/android/react/lottie/a;->i(Lg2/q0;)V
+    invoke-virtual {p1, p2}, Lcom/airbnb/android/react/lottie/a;->i(Lh2/q0;)V
 
     .line 40
     .line 41
@@ -979,7 +975,7 @@
     .line 83
 .end method
 
-.method public setResizeMode(Lg2/h;Ljava/lang/String;)V
+.method public setResizeMode(Lh2/h;Ljava/lang/String;)V
     .locals 1
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "resizeMode"
@@ -1062,7 +1058,7 @@
 
     .line 35
     :goto_0
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     .line 36
     .line 37
@@ -1119,13 +1115,13 @@
     .line 83
 .end method
 
-.method public setSourceJson(Lg2/h;Ljava/lang/String;)V
+.method public setSourceJson(Lh2/h;Ljava/lang/String;)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "sourceJson"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -1134,7 +1130,7 @@
     return-void
 .end method
 
-.method public setSourceName(Lg2/h;Ljava/lang/String;)V
+.method public setSourceName(Lh2/h;Ljava/lang/String;)V
     .locals 1
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "sourceName"
@@ -1189,7 +1185,7 @@
 
     .line 26
     :cond_0
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     .line 27
     .line 28
@@ -1255,7 +1251,7 @@
     .line 83
 .end method
 
-.method public setSourceURL(Lg2/h;Ljava/lang/String;)V
+.method public setSourceURL(Lh2/h;Ljava/lang/String;)V
     .locals 2
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "sourceURL"
@@ -1270,7 +1266,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v1, p0, p2, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Ljava/lang/String;Lg2/h;)V
+    invoke-direct {v1, p0, p2, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$f;-><init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Ljava/lang/String;Lh2/h;)V
 
     .line 6
     .line 7
@@ -1357,13 +1353,13 @@
     .line 83
 .end method
 
-.method public setSpeed(Lg2/h;D)V
+.method public setSpeed(Lh2/h;D)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "speed"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 
@@ -1374,13 +1370,13 @@
     return-void
 .end method
 
-.method public setTextFilters(Lg2/h;Lcom/facebook/react/bridge/ReadableArray;)V
+.method public setTextFilters(Lh2/h;Lcom/facebook/react/bridge/ReadableArray;)V
     .locals 0
     .annotation runtime Lcom/facebook/react/uimanager/annotations/ReactProp;
         name = "textFiltersAndroid"
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lg2/h;)Lcom/airbnb/android/react/lottie/a;
+    invoke-direct {p0, p1}, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->getOrCreatePropertyManager(Lh2/h;)Lcom/airbnb/android/react/lottie/a;
 
     move-result-object p1
 

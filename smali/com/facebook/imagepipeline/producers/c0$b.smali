@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/facebook/imagepipeline/producers/c0$b;->a:Lcom/facebook/imagepipeline/producers/s0;
 
-    invoke-virtual {v0}, Lt3/g;->a()V
+    invoke-virtual {v0}, Lu3/g;->a()V
 
     return-void
 .end method

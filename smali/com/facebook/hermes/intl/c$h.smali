@@ -552,7 +552,7 @@
 
     .line 38
     :cond_3
-    new-instance p1, Lg5/j;
+    new-instance p1, Lh5/j;
 
     .line 39
     .line 40
@@ -560,7 +560,7 @@
 
     .line 41
     .line 42
-    invoke-direct {p1, p2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 43
     .line 44

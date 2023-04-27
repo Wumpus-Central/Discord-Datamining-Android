@@ -26,7 +26,7 @@
         "Lokhttp3/HttpUrl;",
         "url",
         "",
-        "Loj/k;",
+        "Lqj/k;",
         "loadForRequest",
         "cookies",
         "",
@@ -107,7 +107,7 @@
             "Lokhttp3/HttpUrl;",
             ")",
             "Ljava/util/List<",
-            "Loj/k;",
+            "Lqj/k;",
             ">;"
         }
     .end annotation
@@ -184,7 +184,7 @@
             "(",
             "Lokhttp3/HttpUrl;",
             "Ljava/util/List<",
-            "Loj/k;",
+            "Lqj/k;",
             ">;)V"
         }
     .end annotation

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcf/m$d;
+.implements Lef/m$d;
 
 
 # annotations
@@ -29,7 +29,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager$a;",
         "Landroid/view/ViewGroup;",
-        "Lcf/m$d;",
+        "Lef/m$d;",
         "Landroid/graphics/drawable/Drawable;",
         "h",
         "",
@@ -58,7 +58,7 @@
         "x",
         "y",
         "drawableHotspotChanged",
-        "d",
+        "c",
         "f",
         "performClick",
         "pressed",
@@ -1059,7 +1059,7 @@
 .method public a()Z
     .locals 1
 
-    invoke-static {p0}, Lcf/m$d$a;->d(Lcf/m$d;)Z
+    invoke-static {p0}, Lef/m$d$a;->d(Lef/m$d;)Z
 
     move-result v0
 
@@ -1069,31 +1069,14 @@
 .method public b()Z
     .locals 1
 
-    invoke-static {p0}, Lcf/m$d$a;->f(Lcf/m$d;)Z
+    invoke-static {p0}, Lef/m$d$a;->f(Lef/m$d;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public c(Lcf/d;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcf/d<",
-            "*>;)Z"
-        }
-    .end annotation
-
-    invoke-static {p0, p1}, Lcf/m$d$a;->e(Lcf/m$d;Lcf/d;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public d()Z
+.method public c()Z
     .locals 2
 
     .line 1
@@ -1137,6 +1120,23 @@
     .line 27
     .line 28
     .line 29
+.end method
+
+.method public d(Lef/d;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lef/d<",
+            "*>;)Z"
+        }
+    .end annotation
+
+    invoke-static {p0, p1}, Lef/m$d$a;->e(Lef/m$d;Lef/d;)Z
+
+    move-result p1
+
+    return p1
 .end method
 
 .method public dispatchDrawableHotspotChanged(FF)V
@@ -1227,7 +1227,7 @@
 .method public e(Landroid/view/MotionEvent;)V
     .locals 0
 
-    invoke-static {p0, p1}, Lcf/m$d$a;->c(Lcf/m$d;Landroid/view/MotionEvent;)V
+    invoke-static {p0, p1}, Lef/m$d$a;->c(Lef/m$d;Landroid/view/MotionEvent;)V
 
     return-void
 .end method

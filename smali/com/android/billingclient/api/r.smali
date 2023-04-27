@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lu2/f;Lu2/b0;)V
+.method constructor <init>(Landroid/content/Context;Lv2/f;Lv2/b0;)V
     .locals 1
 
     .line 2
@@ -22,14 +22,14 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, p0, p2, p3, v0}, Lcom/android/billingclient/api/q;-><init>(Lcom/android/billingclient/api/r;Lu2/f;Lu2/b0;Lu2/c0;)V
+    invoke-direct {p1, p0, p2, p3, v0}, Lcom/android/billingclient/api/q;-><init>(Lcom/android/billingclient/api/r;Lv2/f;Lv2/b0;Lv2/c0;)V
 
     iput-object p1, p0, Lcom/android/billingclient/api/r;->b:Lcom/android/billingclient/api/q;
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Lu2/s;)V
+.method constructor <init>(Landroid/content/Context;Lv2/s;)V
     .locals 0
 
     .line 1
@@ -41,7 +41,7 @@
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2, p2}, Lcom/android/billingclient/api/q;-><init>(Lcom/android/billingclient/api/r;Lu2/s;Lu2/c0;)V
+    invoke-direct {p1, p0, p2, p2}, Lcom/android/billingclient/api/q;-><init>(Lcom/android/billingclient/api/r;Lv2/s;Lv2/c0;)V
 
     iput-object p1, p0, Lcom/android/billingclient/api/r;->b:Lcom/android/billingclient/api/q;
 
@@ -58,24 +58,24 @@
 
 
 # virtual methods
-.method final b()Lu2/s;
+.method final b()Lv2/s;
     .locals 1
 
     iget-object v0, p0, Lcom/android/billingclient/api/r;->b:Lcom/android/billingclient/api/q;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/q;->a(Lcom/android/billingclient/api/q;)Lu2/s;
+    invoke-static {v0}, Lcom/android/billingclient/api/q;->a(Lcom/android/billingclient/api/q;)Lv2/s;
 
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
-.method final c()Lu2/f;
+.method final c()Lv2/f;
     .locals 1
 
     iget-object v0, p0, Lcom/android/billingclient/api/r;->b:Lcom/android/billingclient/api/q;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/q;->b(Lcom/android/billingclient/api/q;)Lu2/f;
+    invoke-static {v0}, Lcom/android/billingclient/api/q;->b(Lcom/android/billingclient/api/q;)Lv2/f;
 
     move-result-object v0
 
@@ -153,5 +153,4 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method

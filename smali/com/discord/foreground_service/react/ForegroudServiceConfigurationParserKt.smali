@@ -211,11 +211,11 @@
     move-object v5, p1
 
     .line 84
-    check-cast v5, Lmf/p;
+    check-cast v5, Lof/p;
 
     .line 85
     .line 86
-    invoke-virtual {v5}, Lmf/p;->nextInt()I
+    invoke-virtual {v5}, Lof/p;->nextInt()I
 
     .line 87
     .line 88
@@ -660,7 +660,7 @@
     .line 34
     .line 35
     :cond_0
-    invoke-static {}, Lmf/s;->h()Ljava/util/Map;
+    invoke-static {}, Lof/s;->h()Ljava/util/Map;
 
     .line 36
     .line 37
@@ -1135,11 +1135,11 @@
     move-object v1, p0
 
     .line 37
-    check-cast v1, Lmf/p;
+    check-cast v1, Lof/p;
 
     .line 38
     .line 39
-    invoke-virtual {v1}, Lmf/p;->nextInt()I
+    invoke-virtual {v1}, Lof/p;->nextInt()I
 
     .line 40
     .line 41

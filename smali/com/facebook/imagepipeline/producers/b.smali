@@ -532,7 +532,7 @@
 
     const-string v1, "unhandled exception"
 
-    invoke-static {v0, v1, p1}, Lw3/a;->L(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lx3/a;->L(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
 .end method

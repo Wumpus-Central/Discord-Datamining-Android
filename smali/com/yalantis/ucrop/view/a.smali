@@ -19,7 +19,7 @@
 
 .field private C:F
 
-.field private D:Lff/c;
+.field private D:Lhf/c;
 
 .field private E:Ljava/lang/Runnable;
 
@@ -560,7 +560,7 @@
 
     .line 24
     .line 25
-    invoke-static {v1}, Lif/g;->b(Landroid/graphics/RectF;)[F
+    invoke-static {v1}, Lkf/g;->b(Landroid/graphics/RectF;)[F
 
     .line 26
     .line 27
@@ -586,7 +586,7 @@
     .line 37
     .line 38
     .line 39
-    invoke-static {v0}, Lif/g;->d([F)Landroid/graphics/RectF;
+    invoke-static {v0}, Lkf/g;->d([F)Landroid/graphics/RectF;
 
     .line 40
     .line 41
@@ -594,7 +594,7 @@
     move-result-object v0
 
     .line 43
-    invoke-static {v1}, Lif/g;->d([F)Landroid/graphics/RectF;
+    invoke-static {v1}, Lkf/g;->d([F)Landroid/graphics/RectF;
 
     .line 44
     .line 45
@@ -1855,10 +1855,10 @@
     .line 174
 .end method
 
-.method public getCropBoundsChangeListener()Lff/c;
+.method public getCropBoundsChangeListener()Lhf/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/yalantis/ucrop/view/a;->D:Lff/c;
+    iget-object v0, p0, Lcom/yalantis/ucrop/view/a;->D:Lhf/c;
 
     return-object v0
 .end method
@@ -2063,7 +2063,7 @@
     .line 75
     .line 76
     .line 77
-    iget-object v0, p0, Lcom/yalantis/ucrop/view/a;->D:Lff/c;
+    iget-object v0, p0, Lcom/yalantis/ucrop/view/a;->D:Lhf/c;
 
     .line 78
     .line 79
@@ -2075,7 +2075,7 @@
 
     .line 82
     .line 83
-    invoke-interface {v0, v1}, Lff/c;->a(F)V
+    invoke-interface {v0, v1}, Lhf/c;->a(F)V
 
     .line 84
     .line 85
@@ -2397,10 +2397,10 @@
     .line 174
 .end method
 
-.method public setCropBoundsChangeListener(Lff/c;)V
+.method public setCropBoundsChangeListener(Lhf/c;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/yalantis/ucrop/view/a;->D:Lff/c;
+    iput-object p1, p0, Lcom/yalantis/ucrop/view/a;->D:Lhf/c;
 
     return-void
 .end method
@@ -2857,7 +2857,7 @@
 
     .line 115
     .line 116
-    invoke-static {v5}, Lif/g;->c([F)[F
+    invoke-static {v5}, Lkf/g;->c([F)[F
 
     .line 117
     .line 118
@@ -3905,7 +3905,7 @@
     .line 30
     .line 31
     :goto_0
-    iget-object p1, p0, Lcom/yalantis/ucrop/view/a;->D:Lff/c;
+    iget-object p1, p0, Lcom/yalantis/ucrop/view/a;->D:Lhf/c;
 
     .line 32
     .line 33
@@ -3917,7 +3917,7 @@
 
     .line 36
     .line 37
-    invoke-interface {p1, v0}, Lff/c;->a(F)V
+    invoke-interface {p1, v0}, Lhf/c;->a(F)V
 
     .line 38
     .line 39
@@ -4071,7 +4071,7 @@
     .line 29
 .end method
 
-.method public u(Landroid/graphics/Bitmap$CompressFormat;ILff/a;)V
+.method public u(Landroid/graphics/Bitmap$CompressFormat;ILhf/a;)V
     .locals 15
 
     .line 1
@@ -4091,7 +4091,7 @@
     .line 7
     .line 8
     .line 9
-    new-instance v2, Lgf/d;
+    new-instance v2, Lif/d;
 
     .line 10
     .line 11
@@ -4103,7 +4103,7 @@
 
     .line 14
     .line 15
-    invoke-static {v4}, Lif/g;->d([F)Landroid/graphics/RectF;
+    invoke-static {v4}, Lkf/g;->d([F)Landroid/graphics/RectF;
 
     .line 16
     .line 17
@@ -4127,12 +4127,12 @@
     move-result v6
 
     .line 27
-    invoke-direct {v2, v3, v4, v5, v6}, Lgf/d;-><init>(Landroid/graphics/RectF;Landroid/graphics/RectF;FF)V
+    invoke-direct {v2, v3, v4, v5, v6}, Lif/d;-><init>(Landroid/graphics/RectF;Landroid/graphics/RectF;FF)V
 
     .line 28
     .line 29
     .line 30
-    new-instance v3, Lgf/b;
+    new-instance v3, Lif/b;
 
     .line 31
     .line 32
@@ -4160,7 +4160,7 @@
     move-result-object v13
 
     .line 44
-    invoke-virtual {p0}, Lcom/yalantis/ucrop/view/b;->getExifInfo()Lgf/c;
+    invoke-virtual {p0}, Lcom/yalantis/ucrop/view/b;->getExifInfo()Lif/c;
 
     .line 45
     .line 46
@@ -4179,7 +4179,7 @@
 
     .line 52
     .line 53
-    invoke-direct/range {v7 .. v14}, Lgf/b;-><init>(IILandroid/graphics/Bitmap$CompressFormat;ILjava/lang/String;Ljava/lang/String;Lgf/c;)V
+    invoke-direct/range {v7 .. v14}, Lif/b;-><init>(IILandroid/graphics/Bitmap$CompressFormat;ILjava/lang/String;Ljava/lang/String;Lif/c;)V
 
     .line 54
     .line 55
@@ -4200,7 +4200,7 @@
 
     .line 63
     .line 64
-    invoke-direct {v4, v5, v2, v3, v6}, Lcom/yalantis/ucrop/task/BitmapCropTask;-><init>(Landroid/graphics/Bitmap;Lgf/d;Lgf/b;Lff/a;)V
+    invoke-direct {v4, v5, v2, v3, v6}, Lcom/yalantis/ucrop/task/BitmapCropTask;-><init>(Landroid/graphics/Bitmap;Lif/d;Lif/b;Lhf/a;)V
 
     .line 65
     .line 66
@@ -4390,7 +4390,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0}, Lif/g;->b(Landroid/graphics/RectF;)[F
+    invoke-static {v0}, Lkf/g;->b(Landroid/graphics/RectF;)[F
 
     .line 29
     .line 30
@@ -4407,7 +4407,7 @@
     .line 35
     .line 36
     .line 37
-    invoke-static {p1}, Lif/g;->d([F)Landroid/graphics/RectF;
+    invoke-static {p1}, Lkf/g;->d([F)Landroid/graphics/RectF;
 
     .line 38
     .line 39
@@ -4415,7 +4415,7 @@
     move-result-object p1
 
     .line 41
-    invoke-static {v0}, Lif/g;->d([F)Landroid/graphics/RectF;
+    invoke-static {v0}, Lkf/g;->d([F)Landroid/graphics/RectF;
 
     .line 42
     .line 43
@@ -4551,7 +4551,7 @@
     .locals 3
 
     .line 1
-    sget v0, Lef/h;->V:I
+    sget v0, Lgf/h;->V:I
 
     .line 2
     .line 3
@@ -4574,7 +4574,7 @@
     move-result v0
 
     .line 12
-    sget v2, Lef/h;->W:I
+    sget v2, Lgf/h;->W:I
 
     .line 13
     .line 14

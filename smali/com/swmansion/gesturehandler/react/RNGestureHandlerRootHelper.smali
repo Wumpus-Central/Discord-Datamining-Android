@@ -35,12 +35,12 @@
         "a",
         "Lcom/facebook/react/bridge/ReactContext;",
         "context",
-        "Lcf/g;",
+        "Lef/g;",
         "b",
-        "Lcf/g;",
+        "Lef/g;",
         "orchestrator",
-        "Lcf/d;",
-        "Lcf/d;",
+        "Lef/d;",
+        "Lef/d;",
         "jsGestureHandler",
         "Landroid/view/ViewGroup;",
         "d",
@@ -72,12 +72,12 @@
 # instance fields
 .field private final a:Lcom/facebook/react/bridge/ReactContext;
 
-.field private final b:Lcf/g;
+.field private final b:Lef/g;
 
-.field private final c:Lcf/d;
+.field private final c:Lef/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcf/d<",
+            "Lef/d<",
             "*>;"
         }
     .end annotation
@@ -253,7 +253,7 @@
     .line 73
     .line 74
     .line 75
-    new-instance v2, Lcf/g;
+    new-instance v2, Lef/g;
 
     .line 76
     .line 77
@@ -266,7 +266,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-direct {v2, p2, v1, v3}, Lcf/g;-><init>(Landroid/view/ViewGroup;Lcf/h;Lcf/x;)V
+    invoke-direct {v2, p2, v1, v3}, Lef/g;-><init>(Landroid/view/ViewGroup;Lef/h;Lef/x;)V
 
     .line 83
     .line 84
@@ -276,12 +276,12 @@
     .line 86
     .line 87
     .line 88
-    invoke-virtual {v2, p2}, Lcf/g;->y(F)V
+    invoke-virtual {v2, p2}, Lef/g;->y(F)V
 
     .line 89
     .line 90
     .line 91
-    iput-object v2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lcf/g;
+    iput-object v2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lef/g;
 
     .line 92
     .line 93
@@ -297,21 +297,21 @@
     neg-int v2, v0
 
     .line 99
-    invoke-virtual {p2, v2}, Lcf/d;->A0(I)V
+    invoke-virtual {p2, v2}, Lef/d;->A0(I)V
 
     .line 100
     .line 101
     .line 102
-    iput-object p2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lcf/d;
+    iput-object p2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lef/d;
 
     .line 103
     .line 104
-    invoke-virtual {v1, p2}, Lcom/swmansion/gesturehandler/react/h;->j(Lcf/d;)V
+    invoke-virtual {v1, p2}, Lcom/swmansion/gesturehandler/react/h;->j(Lef/d;)V
 
     .line 105
     .line 106
     .line 107
-    invoke-virtual {p2}, Lcf/d;->P()I
+    invoke-virtual {p2}, Lef/d;->P()I
 
     .line 108
     .line 109
@@ -636,7 +636,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lcf/d;
+    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lef/d;
 
     .line 2
     .line 3
@@ -644,7 +644,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lcf/d;->O()I
+    invoke-virtual {v0}, Lef/d;->O()I
 
     .line 6
     .line 7
@@ -659,12 +659,12 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lcf/d;->j()V
+    invoke-virtual {v0}, Lef/d;->j()V
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0}, Lcf/d;->A()V
+    invoke-virtual {v0}, Lef/d;->A()V
 
     .line 16
     .line 17
@@ -706,7 +706,7 @@
 
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lcf/g;
+    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lef/g;
 
     .line 10
     .line 11
@@ -715,7 +715,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v0, p1}, Lcf/g;->u(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lef/g;->u(Landroid/view/MotionEvent;)Z
 
     .line 15
     .line 16
@@ -774,7 +774,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lcf/g;
+    iget-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->b:Lef/g;
 
     .line 2
     .line 3
@@ -903,7 +903,7 @@
     move-result-object v1
 
     .line 42
-    iget-object v2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lcf/d;
+    iget-object v2, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootHelper;->c:Lef/d;
 
     .line 43
     .line 44
@@ -912,7 +912,7 @@
     .line 45
     .line 46
     .line 47
-    invoke-virtual {v2}, Lcf/d;->P()I
+    invoke-virtual {v2}, Lef/d;->P()I
 
     .line 48
     .line 49

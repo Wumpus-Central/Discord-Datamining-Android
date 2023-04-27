@@ -85,7 +85,7 @@
     move-result-object p1
 
     .line 15
-    invoke-static {p1}, Lf9/q0;->D0(Ljava/lang/String;)J
+    invoke-static {p1}, Lg9/q0;->D0(Ljava/lang/String;)J
 
     .line 16
     .line 17

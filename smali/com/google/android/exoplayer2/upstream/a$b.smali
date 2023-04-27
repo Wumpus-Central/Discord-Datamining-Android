@@ -158,7 +158,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v2}, Lf9/a;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v2}, Lg9/a;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9

@@ -4,13 +4,13 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/BackgroundExecutor$NamedThreadFactory;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -25,7 +25,7 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -93,7 +93,7 @@
 
 .method private queueRunnable(Ljava/lang/Runnable;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

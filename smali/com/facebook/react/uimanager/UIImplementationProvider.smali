@@ -27,7 +27,7 @@
     const-wide/16 v1, 0x0
 
     .line 9
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 10
     :try_start_0
@@ -38,14 +38,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 11
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     return-object v0
 
     :catchall_0
     move-exception p1
 
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 12
     throw p1
@@ -59,7 +59,7 @@
     const-wide/16 v1, 0x0
 
     .line 1
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 2
     :try_start_0
@@ -70,14 +70,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 3
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     return-object v0
 
     :catchall_0
     move-exception p1
 
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 4
     throw p1
@@ -103,7 +103,7 @@
     const-wide/16 v1, 0x0
 
     .line 5
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 6
     :try_start_0
@@ -114,14 +114,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     return-object v0
 
     :catchall_0
     move-exception p1
 
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 8
     throw p1

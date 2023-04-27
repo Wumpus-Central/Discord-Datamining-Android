@@ -7,7 +7,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -142,7 +142,7 @@
     move-result-object v0
 
     .line 21
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -241,7 +241,7 @@
     move-result-object v0
 
     .line 21
-    invoke-static {v0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23

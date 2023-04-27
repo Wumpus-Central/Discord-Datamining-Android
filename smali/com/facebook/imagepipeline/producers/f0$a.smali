@@ -17,7 +17,7 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/s0<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -170,7 +170,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)V"
         }
     .end annotation
@@ -186,7 +186,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -211,7 +211,7 @@
 
     const-string v0, "createdThumbnail"
 
-    invoke-static {v0, p1}, Lv3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {v0, p1}, Lw3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
 
@@ -224,7 +224,7 @@
         value = {
             "()",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -329,11 +329,11 @@
 
     .line 44
     :cond_1
-    new-instance v0, Lu5/d;
+    new-instance v0, Lv5/d;
 
     .line 45
     .line 46
-    invoke-static {}, Ln5/e;->a()Ln5/e;
+    invoke-static {}, Lo5/e;->a()Lo5/e;
 
     .line 47
     .line 48
@@ -341,14 +341,14 @@
     move-result-object v2
 
     .line 50
-    sget-object v3, Lu5/h;->d:Lu5/i;
+    sget-object v3, Lv5/h;->d:Lv5/i;
 
     .line 51
     .line 52
     const/4 v4, 0x0
 
     .line 53
-    invoke-direct {v0, v1, v2, v3, v4}, Lu5/d;-><init>(Landroid/graphics/Bitmap;Lz3/c;Lu5/i;I)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lv5/d;-><init>(Landroid/graphics/Bitmap;La4/c;Lv5/i;I)V
 
     .line 54
     .line 55
@@ -382,7 +382,7 @@
     move-result-object v1
 
     .line 71
-    invoke-virtual {v0, v1}, Lu5/c;->l(Ljava/util/Map;)V
+    invoke-virtual {v0, v1}, Lv5/c;->l(Ljava/util/Map;)V
 
     .line 72
     .line 73
@@ -649,7 +649,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)V"
         }
     .end annotation

@@ -664,11 +664,11 @@
     move-object v2, p3
 
     .line 78
-    check-cast v2, Lmf/p;
+    check-cast v2, Lof/p;
 
     .line 79
     .line 80
-    invoke-virtual {v2}, Lmf/p;->nextInt()I
+    invoke-virtual {v2}, Lof/p;->nextInt()I
 
     .line 81
     .line 82

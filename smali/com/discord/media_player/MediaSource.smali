@@ -181,9 +181,9 @@
 
     .line 11
     :cond_2
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     throw p1
 
@@ -191,7 +191,7 @@
     :goto_2
     if-eqz p1, :cond_5
 
-    invoke-static {p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result p1
 
@@ -217,7 +217,7 @@
     if-eqz p2, :cond_8
 
     .line 12
-    invoke-static {p2}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p2}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result p1
 

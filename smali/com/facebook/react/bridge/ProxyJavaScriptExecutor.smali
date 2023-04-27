@@ -4,13 +4,13 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/ProxyJavaScriptExecutor$Factory;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 

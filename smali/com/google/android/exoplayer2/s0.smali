@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Collection;Lh8/q0;)V
+.method public constructor <init>(Ljava/util/Collection;Li8/q0;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,7 +38,7 @@
             "+",
             "Lcom/google/android/exoplayer2/n0;",
             ">;",
-            "Lh8/q0;",
+            "Li8/q0;",
             ")V"
         }
     .end annotation
@@ -47,7 +47,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, v0, p2}, Lcom/google/android/exoplayer2/a;-><init>(ZLh8/q0;)V
+    invoke-direct {p0, v0, p2}, Lcom/google/android/exoplayer2/a;-><init>(ZLi8/q0;)V
 
     .line 3
     .line 4
@@ -1135,7 +1135,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, p1, v1, v1}, Lf9/q0;->h([IIZZ)I
+    invoke-static {v0, p1, v1, v1}, Lg9/q0;->h([IIZZ)I
 
     move-result p1
 
@@ -1151,7 +1151,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, p1, v1, v1}, Lf9/q0;->h([IIZZ)I
+    invoke-static {v0, p1, v1, v1}, Lg9/q0;->h([IIZZ)I
 
     move-result p1
 

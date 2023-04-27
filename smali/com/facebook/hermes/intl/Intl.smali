@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -160,11 +160,11 @@
 
     .line 63
     :cond_2
-    new-instance p0, Lg5/j;
+    new-instance p0, Lh5/j;
 
     .line 64
     .line 65
-    invoke-direct {p0, v2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -173,11 +173,11 @@
 
     .line 69
     :cond_3
-    new-instance p0, Lg5/j;
+    new-instance p0, Lh5/j;
 
     .line 70
     .line 71
-    invoke-direct {p0, v2}, Lg5/j;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lh5/j;-><init>(Ljava/lang/String;)V
 
     .line 72
     .line 73
@@ -357,9 +357,6 @@
 
 .method public static getCanonicalLocales(Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -372,6 +369,9 @@
         }
     .end annotation
 
+    .annotation build Le6/a;
+    .end annotation
+
     invoke-static {p0}, Lcom/facebook/hermes/intl/Intl;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
@@ -381,9 +381,6 @@
 
 .method public static toLocaleLowerCase(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -394,6 +391,9 @@
             ")",
             "Ljava/lang/String;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -441,11 +441,11 @@
     move-result-object p0
 
     .line 23
-    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lg5/b;
+    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lh5/b;
 
     .line 24
     .line 25
-    invoke-interface {p0}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p0}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -457,7 +457,7 @@
 
     .line 30
     .line 31
-    invoke-static {p0, p1}, Lg5/g;->a(Landroid/icu/util/ULocale;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lh5/g;->a(Landroid/icu/util/ULocale;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -489,11 +489,11 @@
     move-result-object p0
 
     .line 46
-    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lg5/b;
+    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lh5/b;
 
     .line 47
     .line 48
-    invoke-interface {p0}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p0}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 49
     .line 50
@@ -553,9 +553,6 @@
 
 .method public static toLocaleUpperCase(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -566,6 +563,9 @@
             ")",
             "Ljava/lang/String;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -613,11 +613,11 @@
     move-result-object p0
 
     .line 23
-    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lg5/b;
+    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lh5/b;
 
     .line 24
     .line 25
-    invoke-interface {p0}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p0}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -629,7 +629,7 @@
 
     .line 30
     .line 31
-    invoke-static {p0, p1}, Lg5/f;->a(Landroid/icu/util/ULocale;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lh5/f;->a(Landroid/icu/util/ULocale;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -661,11 +661,11 @@
     move-result-object p0
 
     .line 46
-    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lg5/b;
+    iget-object p0, p0, Lcom/facebook/hermes/intl/g$a;->a:Lh5/b;
 
     .line 47
     .line 48
-    invoke-interface {p0}, Lg5/b;->h()Ljava/lang/Object;
+    invoke-interface {p0}, Lh5/b;->h()Ljava/lang/Object;
 
     .line 49
     .line 50

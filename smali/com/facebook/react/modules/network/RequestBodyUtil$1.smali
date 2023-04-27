@@ -77,7 +77,7 @@
 
     .line 3
     .line 4
-    invoke-static {v1}, Ldk/m;->l(Ljava/io/InputStream;)Lokio/Source;
+    invoke-static {v1}, Lfk/m;->l(Ljava/io/InputStream;)Lokio/Source;
 
     .line 5
     .line 6
@@ -92,7 +92,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {v0}, Lpj/c;->j(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lrj/c;->j(Ljava/io/Closeable;)V
 
     .line 12
     .line 13
@@ -104,7 +104,7 @@
     move-exception p1
 
     .line 16
-    invoke-static {v0}, Lpj/c;->j(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lrj/c;->j(Ljava/io/Closeable;)V
 
     .line 17
     .line 18

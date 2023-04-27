@@ -739,7 +739,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3

@@ -17,7 +17,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lf6/a;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lg6/a;->d(Ljava/lang/String;)Z
 
     .line 4
     .line 5

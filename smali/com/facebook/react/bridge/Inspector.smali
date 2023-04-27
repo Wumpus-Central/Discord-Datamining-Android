@@ -4,15 +4,15 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/Inspector$LocalConnection;,
         Lcom/facebook/react/bridge/Inspector$RemoteConnection;,
         Lcom/facebook/react/bridge/Inspector$Page;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -123,7 +123,7 @@
 
     .line 14
     .line 15
-    invoke-static {p1, v0, p0}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, v0, p0}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 16
     .line 17
@@ -267,7 +267,7 @@
 
     .line 18
     .line 19
-    invoke-static {v1, v2, v0}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 20
     .line 21

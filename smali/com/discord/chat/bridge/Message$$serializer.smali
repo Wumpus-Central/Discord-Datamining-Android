@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzi/f0;
+.implements Lbj/f0;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lzi/f0<",
+        "Lbj/f0<",
         "Lcom/discord/chat/bridge/Message;",
         ">;"
     }
@@ -31,7 +31,7 @@
     }
     d2 = {
         "com/discord/chat/bridge/Message.$serializer",
-        "Lzi/f0;",
+        "Lbj/f0;",
         "Lcom/discord/chat/bridge/Message;",
         "",
         "Lkotlinx/serialization/KSerializer;",
@@ -98,7 +98,7 @@
 
     .line 13
     .line 14
-    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lzi/f0;I)V
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lbj/f0;I)V
 
     .line 15
     .line 16
@@ -1307,7 +1307,7 @@
     const/4 v2, 0x2
 
     .line 16
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 17
     .line 18
@@ -1334,7 +1334,7 @@
 
     .line 28
     .line 29
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 30
     .line 31
@@ -1353,7 +1353,7 @@
 
     .line 37
     .line 38
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 39
     .line 40
@@ -1372,7 +1372,7 @@
 
     .line 46
     .line 47
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 48
     .line 49
@@ -1387,7 +1387,7 @@
 
     .line 53
     .line 54
-    sget-object v1, Lzi/w0;->a:Lzi/w0;
+    sget-object v1, Lbj/w0;->a:Lbj/w0;
 
     .line 55
     .line 56
@@ -1398,11 +1398,11 @@
 
     .line 58
     .line 59
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     .line 60
     .line 61
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 62
     .line 63
@@ -1418,11 +1418,11 @@
 
     .line 68
     .line 69
-    sget-object v3, Lzi/e0;->a:Lzi/e0;
+    sget-object v3, Lbj/e0;->a:Lbj/e0;
 
     .line 70
     .line 71
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 72
     .line 73
@@ -1442,7 +1442,7 @@
 
     .line 80
     .line 81
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 82
     .line 83
@@ -1458,7 +1458,7 @@
 
     .line 88
     .line 89
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 90
     .line 91
@@ -1470,11 +1470,11 @@
 
     .line 94
     .line 95
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     .line 96
     .line 97
-    invoke-static {v4}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v4}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 98
     .line 99
@@ -1494,7 +1494,7 @@
 
     .line 106
     .line 107
-    invoke-static {v4}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v4}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 108
     .line 109
@@ -1506,7 +1506,7 @@
 
     .line 112
     .line 113
-    sget-object v5, Lzi/h;->a:Lzi/h;
+    sget-object v5, Lbj/h;->a:Lbj/h;
 
     .line 114
     .line 115
@@ -1530,7 +1530,7 @@
 
     .line 124
     .line 125
-    invoke-static {v4}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v4}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 126
     .line 127
@@ -1546,7 +1546,7 @@
 
     .line 132
     .line 133
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 134
     .line 135
@@ -1562,7 +1562,7 @@
 
     .line 140
     .line 141
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 142
     .line 143
@@ -1574,7 +1574,7 @@
 
     .line 146
     .line 147
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     .line 148
     .line 149
@@ -1582,12 +1582,12 @@
 
     .line 150
     .line 151
-    invoke-direct {v6, v7}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v7}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 152
     .line 153
     .line 154
-    invoke-static {v6}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v6}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 155
     .line 156
@@ -1603,7 +1603,7 @@
 
     .line 161
     .line 162
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     .line 163
     .line 164
@@ -1611,12 +1611,12 @@
 
     .line 165
     .line 166
-    invoke-direct {v6, v7}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v7}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 167
     .line 168
     .line 169
-    invoke-static {v6}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v6}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 170
     .line 171
@@ -1636,7 +1636,7 @@
 
     .line 178
     .line 179
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 180
     .line 181
@@ -1652,7 +1652,7 @@
 
     .line 186
     .line 187
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 188
     .line 189
@@ -1668,7 +1668,7 @@
 
     .line 194
     .line 195
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 196
     .line 197
@@ -1676,12 +1676,12 @@
 
     .line 198
     .line 199
-    invoke-direct {v3, v6}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v6}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 200
     .line 201
     .line 202
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 203
     .line 204
@@ -1697,7 +1697,7 @@
 
     .line 209
     .line 210
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 211
     .line 212
@@ -1705,12 +1705,12 @@
 
     .line 213
     .line 214
-    invoke-direct {v3, v6}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v6}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 215
     .line 216
     .line 217
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 218
     .line 219
@@ -1730,7 +1730,7 @@
 
     .line 226
     .line 227
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 228
     .line 229
@@ -1746,7 +1746,7 @@
 
     .line 234
     .line 235
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 236
     .line 237
@@ -1758,7 +1758,7 @@
 
     .line 240
     .line 241
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 242
     .line 243
@@ -1766,7 +1766,7 @@
 
     .line 244
     .line 245
-    invoke-static {v6}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v6}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 246
     .line 247
@@ -1774,12 +1774,12 @@
     move-result-object v6
 
     .line 249
-    invoke-direct {v3, v6}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v6}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 250
     .line 251
     .line 252
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 253
     .line 254
@@ -1795,7 +1795,7 @@
 
     .line 259
     .line 260
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 261
     .line 262
@@ -1803,12 +1803,12 @@
 
     .line 263
     .line 264
-    invoke-direct {v3, v6}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v6}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 265
     .line 266
     .line 267
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 268
     .line 269
@@ -1828,7 +1828,7 @@
 
     .line 276
     .line 277
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 278
     .line 279
@@ -1848,7 +1848,7 @@
 
     .line 286
     .line 287
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 288
     .line 289
@@ -1868,7 +1868,7 @@
 
     .line 296
     .line 297
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 298
     .line 299
@@ -1896,7 +1896,7 @@
 
     .line 310
     .line 311
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 312
     .line 313
@@ -1912,7 +1912,7 @@
 
     .line 318
     .line 319
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 320
     .line 321
@@ -1928,7 +1928,7 @@
 
     .line 326
     .line 327
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 328
     .line 329
@@ -1948,7 +1948,7 @@
 
     .line 336
     .line 337
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 338
     .line 339
@@ -1964,7 +1964,7 @@
 
     .line 344
     .line 345
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 346
     .line 347
@@ -1972,12 +1972,12 @@
 
     .line 348
     .line 349
-    invoke-direct {v3, v7}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v7}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 350
     .line 351
     .line 352
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 353
     .line 354
@@ -1997,7 +1997,7 @@
 
     .line 361
     .line 362
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 363
     .line 364
@@ -2013,7 +2013,7 @@
 
     .line 369
     .line 370
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 371
     .line 372
@@ -2029,7 +2029,7 @@
 
     .line 377
     .line 378
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 379
     .line 380
@@ -2045,7 +2045,7 @@
 
     .line 385
     .line 386
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 387
     .line 388
@@ -2061,7 +2061,7 @@
 
     .line 393
     .line 394
-    invoke-static {v4}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v4}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 395
     .line 396
@@ -2077,7 +2077,7 @@
 
     .line 401
     .line 402
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 403
     .line 404
@@ -2093,7 +2093,7 @@
 
     .line 409
     .line 410
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 411
     .line 412
@@ -2113,7 +2113,7 @@
 
     .line 419
     .line 420
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 421
     .line 422
@@ -2133,7 +2133,7 @@
 
     .line 429
     .line 430
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 431
     .line 432
@@ -2153,7 +2153,7 @@
 
     .line 439
     .line 440
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 441
     .line 442
@@ -2169,7 +2169,7 @@
 
     .line 447
     .line 448
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 449
     .line 450
@@ -2185,7 +2185,7 @@
 
     .line 455
     .line 456
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 457
     .line 458
@@ -2201,7 +2201,7 @@
 
     .line 463
     .line 464
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 465
     .line 466
@@ -2217,7 +2217,7 @@
 
     .line 471
     .line 472
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 473
     .line 474
@@ -2229,16 +2229,16 @@
 
     .line 477
     .line 478
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
     .line 479
     .line 480
-    invoke-direct {v3, v2}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v2}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 481
     .line 482
     .line 483
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 484
     .line 485
@@ -2258,7 +2258,7 @@
 
     .line 492
     .line 493
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 494
     .line 495
@@ -2274,7 +2274,7 @@
 
     .line 500
     .line 501
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 502
     .line 503
@@ -2290,7 +2290,7 @@
 
     .line 508
     .line 509
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 510
     .line 511
@@ -2306,7 +2306,7 @@
 
     .line 516
     .line 517
-    invoke-static {v6}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v6}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 518
     .line 519
@@ -2322,7 +2322,7 @@
 
     .line 524
     .line 525
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 526
     .line 527
@@ -2338,7 +2338,7 @@
 
     .line 532
     .line 533
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 534
     .line 535
@@ -2354,7 +2354,7 @@
 
     .line 540
     .line 541
-    invoke-static {v5}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v5}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 542
     .line 543
@@ -2370,7 +2370,7 @@
 
     .line 548
     .line 549
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 550
     .line 551
@@ -2398,7 +2398,7 @@
 
     .line 562
     .line 563
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 564
     .line 565
@@ -2418,7 +2418,7 @@
 
     .line 572
     .line 573
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 574
     .line 575
@@ -2434,7 +2434,7 @@
 
     .line 580
     .line 581
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     .line 582
     .line 583
@@ -2442,12 +2442,12 @@
 
     .line 584
     .line 585
-    invoke-direct {v1, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 586
     .line 587
     .line 588
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 589
     .line 590
@@ -2467,7 +2467,7 @@
 
     .line 597
     .line 598
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 599
     .line 600
@@ -2483,7 +2483,7 @@
 
     .line 605
     .line 606
-    invoke-static {v4}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v4}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 607
     .line 608
@@ -2499,7 +2499,7 @@
 
     .line 613
     .line 614
-    invoke-static {v2}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v2}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 615
     .line 616
@@ -2511,7 +2511,7 @@
 
     .line 619
     .line 620
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     .line 621
     .line 622
@@ -2519,12 +2519,12 @@
 
     .line 623
     .line 624
-    invoke-direct {v1, v2}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v2}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 625
     .line 626
     .line 627
-    invoke-static {v1}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v1}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     .line 628
     .line 629
@@ -2884,13 +2884,13 @@
 
     move-result-wide v24
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {v0, v1, v3, v11, v7}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    sget-object v15, Lzi/e0;->a:Lzi/e0;
+    sget-object v15, Lbj/e0;->a:Lbj/e0;
 
     invoke-interface {v0, v1, v10, v15, v7}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2906,7 +2906,7 @@
 
     move-object/from16 v26, v2
 
-    sget-object v2, Lzi/m0;->a:Lzi/m0;
+    sget-object v2, Lbj/m0;->a:Lbj/m0;
 
     move-object/from16 v27, v3
 
@@ -2966,13 +2966,13 @@
 
     move-result-object v3
 
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     move-object/from16 v29, v3
 
     sget-object v3, Lcom/discord/chat/bridge/embed/Embed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/embed/Embed$$serializer;
 
-    invoke-direct {v6, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x13
 
@@ -2984,11 +2984,11 @@
 
     move-result-object v3
 
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     sget-object v5, Lcom/discord/chat/bridge/attachment/Attachment$$serializer;->INSTANCE:Lcom/discord/chat/bridge/attachment/Attachment$$serializer;
 
-    invoke-direct {v6, v5}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v5}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v5, 0x14
 
@@ -3016,11 +3016,11 @@
 
     move-result-object v3
 
-    new-instance v15, Lzi/f;
+    new-instance v15, Lbj/f;
 
     sget-object v4, Lcom/discord/chat/bridge/UploadProgress$$serializer;->INSTANCE:Lcom/discord/chat/bridge/UploadProgress$$serializer;
 
-    invoke-direct {v15, v4}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v15, v4}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v4, 0x17
 
@@ -3032,11 +3032,11 @@
 
     move-result-object v4
 
-    new-instance v15, Lzi/f;
+    new-instance v15, Lbj/f;
 
     sget-object v14, Lcom/discord/chat/bridge/reaction/MessageReaction$$serializer;->INSTANCE:Lcom/discord/chat/bridge/reaction/MessageReaction$$serializer;
 
-    invoke-direct {v15, v14}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v15, v14}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v14, 0x18
 
@@ -3048,7 +3048,7 @@
 
     move-result-object v14
 
-    sget-object v15, Lzi/h;->a:Lzi/h;
+    sget-object v15, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v32, v3
 
@@ -3066,17 +3066,17 @@
 
     move-result-object v3
 
-    new-instance v13, Lzi/f;
+    new-instance v13, Lbj/f;
 
     sget-object v37, Lcom/discord/chat/bridge/codedlinks/CodedLinkSerializer;->INSTANCE:Lcom/discord/chat/bridge/codedlinks/CodedLinkSerializer;
 
     move-object/from16 v38, v3
 
-    invoke-static/range {v37 .. v37}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static/range {v37 .. v37}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     move-result-object v3
 
-    invoke-direct {v13, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v13, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x1b
 
@@ -3088,11 +3088,11 @@
 
     move-result-object v3
 
-    new-instance v13, Lzi/f;
+    new-instance v13, Lbj/f;
 
     sget-object v12, Lcom/discord/chat/bridge/sticker/Sticker$$serializer;->INSTANCE:Lcom/discord/chat/bridge/sticker/Sticker$$serializer;
 
-    invoke-direct {v13, v12}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v13, v12}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     move-object/from16 v39, v3
 
@@ -3180,11 +3180,11 @@
 
     move-result-object v3
 
-    new-instance v4, Lzi/f;
+    new-instance v4, Lbj/f;
 
     sget-object v10, Lcom/discord/chat/bridge/botuikit/ComponentSerializer;->INSTANCE:Lcom/discord/chat/bridge/botuikit/ComponentSerializer;
 
-    invoke-direct {v4, v10}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v4, v10}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v10, 0x25
 
@@ -3312,9 +3312,9 @@
 
     move-result-object v4
 
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
-    invoke-direct {v3, v11}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v11}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     move-object/from16 v62, v4
 
@@ -3348,7 +3348,7 @@
 
     move-object/from16 v65, v4
 
-    sget-object v4, Lzi/w0;->a:Lzi/w0;
+    sget-object v4, Lbj/w0;->a:Lbj/w0;
 
     invoke-interface {v0, v1, v3, v4, v9}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3420,13 +3420,13 @@
 
     move-result-object v3
 
-    new-instance v4, Lzi/f;
+    new-instance v4, Lbj/f;
 
     move-object/from16 v72, v3
 
     sget-object v3, Lcom/discord/chat/bridge/gift/GiftEmbedSerializer;->INSTANCE:Lcom/discord/chat/bridge/gift/GiftEmbedSerializer;
 
-    invoke-direct {v4, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v4, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     move-object/from16 v73, v5
 
@@ -3454,11 +3454,11 @@
 
     move-result-object v5
 
-    new-instance v11, Lzi/f;
+    new-instance v11, Lbj/f;
 
     sget-object v9, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;
 
-    invoke-direct {v11, v9}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v11, v9}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v9, 0x44
 
@@ -3774,20 +3774,20 @@
 
     packed-switch v11, :pswitch_data_0
 
-    new-instance v0, Lwi/n;
+    new-instance v0, Lyi/n;
 
-    invoke-direct {v0, v11}, Lwi/n;-><init>(I)V
+    invoke-direct {v0, v11}, Lyi/n;-><init>(I)V
 
     throw v0
 
     :pswitch_0
-    new-instance v11, Lzi/f;
+    new-instance v11, Lbj/f;
 
     move-object/from16 v98, v6
 
     sget-object v6, Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed$$serializer;
 
-    invoke-direct {v11, v6}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v11, v6}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v6, 0x44
 
@@ -3804,7 +3804,7 @@
 
     const/16 v6, 0x43
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {v0, v1, v6, v11, v12}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3819,7 +3819,7 @@
 
     const/16 v6, 0x42
 
-    sget-object v11, Lzi/m0;->a:Lzi/m0;
+    sget-object v11, Lbj/m0;->a:Lbj/m0;
 
     invoke-interface {v0, v1, v6, v11, v15}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3847,11 +3847,11 @@
     :pswitch_4
     move-object/from16 v98, v6
 
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     sget-object v11, Lcom/discord/chat/bridge/gift/GiftEmbedSerializer;->INSTANCE:Lcom/discord/chat/bridge/gift/GiftEmbedSerializer;
 
-    invoke-direct {v6, v11}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v11}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v11, 0x40
 
@@ -3928,7 +3928,7 @@
 
     const/16 v6, 0x3b
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     invoke-interface {v0, v1, v6, v11, v3}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3943,7 +3943,7 @@
 
     const/16 v6, 0x3a
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {v0, v1, v6, v11, v7}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3958,7 +3958,7 @@
 
     const/16 v6, 0x39
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     invoke-interface {v0, v1, v6, v11, v4}, Lkotlinx/serialization/encoding/c;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4070,7 +4070,7 @@
 
     const/16 v6, 0x37
 
-    sget-object v11, Lzi/w0;->a:Lzi/w0;
+    sget-object v11, Lbj/w0;->a:Lbj/w0;
 
     move-object/from16 v98, v2
 
@@ -4127,7 +4127,7 @@
 
     const/16 v6, 0x36
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v74
 
@@ -4154,7 +4154,7 @@
 
     const/16 v6, 0x35
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v73
 
@@ -4179,11 +4179,11 @@
 
     move-object/from16 v2, v73
 
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
-    invoke-direct {v6, v11}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v11}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v11, 0x34
 
@@ -4212,7 +4212,7 @@
 
     const/16 v6, 0x33
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v2, v70
 
@@ -4239,7 +4239,7 @@
 
     const/16 v6, 0x32
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v2, v69
 
@@ -4266,7 +4266,7 @@
 
     const/16 v6, 0x31
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v68
 
@@ -4293,7 +4293,7 @@
 
     const/16 v6, 0x30
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v67
 
@@ -4320,7 +4320,7 @@
 
     const/16 v6, 0x2f
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v79
 
@@ -4418,7 +4418,7 @@
 
     const/16 v6, 0x2b
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v2, v63
 
@@ -4443,7 +4443,7 @@
 
     const/16 v6, 0x2a
 
-    sget-object v11, Lzi/m0;->a:Lzi/m0;
+    sget-object v11, Lbj/m0;->a:Lbj/m0;
 
     move-object/from16 v2, v62
 
@@ -4468,7 +4468,7 @@
 
     const/16 v6, 0x29
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v61
 
@@ -4493,7 +4493,7 @@
 
     const/16 v6, 0x28
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v2, v60
 
@@ -4518,7 +4518,7 @@
 
     const/16 v6, 0x27
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v59
 
@@ -4543,7 +4543,7 @@
 
     const/16 v6, 0x26
 
-    sget-object v11, Lzi/a2;->a:Lzi/a2;
+    sget-object v11, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v2, v85
 
@@ -4565,11 +4565,11 @@
 
     move-object/from16 v2, v85
 
-    new-instance v6, Lzi/f;
+    new-instance v6, Lbj/f;
 
     sget-object v11, Lcom/discord/chat/bridge/botuikit/ComponentSerializer;->INSTANCE:Lcom/discord/chat/bridge/botuikit/ComponentSerializer;
 
-    invoke-direct {v6, v11}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v6, v11}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v11, 0x25
 
@@ -4646,7 +4646,7 @@
 
     const/16 v6, 0x22
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v55
 
@@ -4671,7 +4671,7 @@
 
     const/16 v6, 0x21
 
-    sget-object v11, Lzi/h;->a:Lzi/h;
+    sget-object v11, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v2, v54
 
@@ -4860,11 +4860,11 @@
 
     move-object/from16 v4, v50
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/sticker/Sticker$$serializer;->INSTANCE:Lcom/discord/chat/bridge/sticker/Sticker$$serializer;
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x1c
 
@@ -4899,15 +4899,15 @@
 
     move-object/from16 v4, v49
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/codedlinks/CodedLinkSerializer;->INSTANCE:Lcom/discord/chat/bridge/codedlinks/CodedLinkSerializer;
 
-    invoke-static {v3}, Lxi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v3}, Lzi/a;->u(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x1b
 
@@ -4944,7 +4944,7 @@
 
     const/16 v2, 0x1a
 
-    sget-object v3, Lzi/h;->a:Lzi/h;
+    sget-object v3, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v4, v47
 
@@ -4979,7 +4979,7 @@
 
     const/16 v2, 0x19
 
-    sget-object v3, Lzi/h;->a:Lzi/h;
+    sget-object v3, Lbj/h;->a:Lbj/h;
 
     move-object/from16 v4, v46
 
@@ -5012,11 +5012,11 @@
 
     move-object/from16 v4, v46
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/reaction/MessageReaction$$serializer;->INSTANCE:Lcom/discord/chat/bridge/reaction/MessageReaction$$serializer;
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x18
 
@@ -5045,11 +5045,11 @@
 
     move-object/from16 v4, v91
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/UploadProgress$$serializer;->INSTANCE:Lcom/discord/chat/bridge/UploadProgress$$serializer;
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x17
 
@@ -5130,7 +5130,7 @@
 
     const/16 v2, 0x15
 
-    sget-object v3, Lzi/e0;->a:Lzi/e0;
+    sget-object v3, Lbj/e0;->a:Lbj/e0;
 
     move-object/from16 v4, v81
 
@@ -5157,11 +5157,11 @@
 
     move-object/from16 v4, v81
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/attachment/Attachment$$serializer;->INSTANCE:Lcom/discord/chat/bridge/attachment/Attachment$$serializer;
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x14
 
@@ -5195,11 +5195,11 @@
 
     move-object/from16 v4, v78
 
-    new-instance v2, Lzi/f;
+    new-instance v2, Lbj/f;
 
     sget-object v3, Lcom/discord/chat/bridge/embed/Embed$$serializer;->INSTANCE:Lcom/discord/chat/bridge/embed/Embed$$serializer;
 
-    invoke-direct {v2, v3}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v2, v3}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     const/16 v3, 0x13
 
@@ -5251,7 +5251,7 @@
 
     const/16 v2, 0x12
 
-    sget-object v3, Lzi/a2;->a:Lzi/a2;
+    sget-object v3, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v4, v43
 
@@ -5296,7 +5296,7 @@
 
     move-object/from16 v4, v43
 
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v18, v4
 
@@ -5347,7 +5347,7 @@
 
     const/16 v4, 0x11
 
-    sget-object v2, Lzi/m0;->a:Lzi/m0;
+    sget-object v2, Lbj/m0;->a:Lbj/m0;
 
     move-object/from16 v19, v3
 
@@ -5489,7 +5489,7 @@
 
     const/16 v3, 0x10
 
-    sget-object v2, Lzi/m0;->a:Lzi/m0;
+    sget-object v2, Lbj/m0;->a:Lbj/m0;
 
     move-object/from16 v22, v4
 
@@ -5563,7 +5563,7 @@
 
     const/16 v4, 0xd
 
-    sget-object v2, Lzi/m0;->a:Lzi/m0;
+    sget-object v2, Lbj/m0;->a:Lbj/m0;
 
     move-object/from16 v23, v3
 
@@ -5625,7 +5625,7 @@
 
     const/16 v3, 0xc
 
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v36, v4
 
@@ -5683,7 +5683,7 @@
 
     const/16 v4, 0xb
 
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v35, v3
 
@@ -5743,7 +5743,7 @@
 
     const/16 v3, 0xa
 
-    sget-object v2, Lzi/e0;->a:Lzi/e0;
+    sget-object v2, Lbj/e0;->a:Lbj/e0;
 
     move-object/from16 v34, v4
 
@@ -5805,7 +5805,7 @@
 
     const/16 v4, 0x9
 
-    sget-object v2, Lzi/a2;->a:Lzi/a2;
+    sget-object v2, Lbj/a2;->a:Lbj/a2;
 
     move-object/from16 v33, v3
 
@@ -7101,7 +7101,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lzi/f0$a;->a(Lzi/f0;)[Lkotlinx/serialization/KSerializer;
+    invoke-static {p0}, Lbj/f0$a;->a(Lbj/f0;)[Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

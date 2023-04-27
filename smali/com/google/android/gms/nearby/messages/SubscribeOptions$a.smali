@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private a:Lxa/i;
+.field private a:Lya/i;
 
-.field private b:Lxa/a;
+.field private b:Lya/a;
 
-.field private c:Lxa/j;
+.field private c:Lya/j;
 
 
 # direct methods
@@ -32,19 +32,19 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lxa/i;->s:Lxa/i;
+    sget-object v0, Lya/i;->s:Lya/i;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lxa/i;
+    iput-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lya/i;
 
     .line 7
     .line 8
-    sget-object v0, Lxa/a;->q:Lxa/a;
+    sget-object v0, Lya/a;->q:Lya/a;
 
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b:Lxa/a;
+    iput-object v0, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b:Lya/a;
 
     .line 11
     .line 12
@@ -127,11 +127,11 @@
 
     new-instance v7, Lcom/google/android/gms/nearby/messages/SubscribeOptions;
 
-    iget-object v1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lxa/i;
+    iget-object v1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lya/i;
 
-    iget-object v2, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b:Lxa/a;
+    iget-object v2, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b:Lya/a;
 
-    iget-object v3, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->c:Lxa/j;
+    iget-object v3, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->c:Lya/j;
 
     const/4 v4, 0x0
 
@@ -141,15 +141,15 @@
 
     move-object v0, v7
 
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;-><init>(Lxa/i;Lxa/a;Lxa/j;ZILxa/o;)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/nearby/messages/SubscribeOptions;-><init>(Lya/i;Lya/a;Lya/j;ZILya/o;)V
 
     return-object v7
 .end method
 
-.method public b(Lxa/i;)Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;
+.method public b(Lya/i;)Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lxa/i;
+    iput-object p1, p0, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->a:Lya/i;
 
     return-object p0
 .end method

@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -19,7 +19,7 @@
 
 .method public static convertToCase(Ljava/lang/String;IZ)Ljava/lang/String;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -241,7 +241,7 @@
 
 .method public static dateFormat(DZZ)Ljava/lang/String;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -477,7 +477,7 @@
 
 .method public static localeCompare(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -586,7 +586,7 @@
 
 .method public static normalize(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

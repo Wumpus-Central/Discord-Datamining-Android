@@ -48,7 +48,7 @@
 
 .field private Q:Lcom/google/android/exoplayer2/Player;
 
-.field private R:Ld7/d;
+.field private R:Le7/d;
 
 .field private S:Z
 
@@ -136,7 +136,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Ld7/i;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Le7/i;->a(Ljava/lang/String;)V
 
     .line 4
     .line 5
@@ -300,7 +300,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    sget p2, Lb9/j;->b:I
+    sget p2, Lc9/j;->b:I
 
     const/16 p3, 0x1388
 
@@ -348,7 +348,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lb9/l;->w:[I
+    sget-object v3, Lc9/l;->w:[I
 
     .line 16
     invoke-virtual {v2, p4, v3, v0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -357,14 +357,14 @@
 
     .line 17
     :try_start_0
-    sget v3, Lb9/l;->A:I
+    sget v3, Lc9/l;->A:I
 
     invoke-virtual {v2, v3, p3}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p3
 
     .line 18
-    sget v3, Lb9/l;->y:I
+    sget v3, Lc9/l;->y:I
 
     .line 19
     invoke-virtual {v2, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -372,7 +372,7 @@
     move-result v1
 
     .line 20
-    sget v3, Lb9/l;->G:I
+    sget v3, Lc9/l;->G:I
 
     iget v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->W:I
 
@@ -383,7 +383,7 @@
     iput v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->W:I
 
     .line 21
-    sget v3, Lb9/l;->x:I
+    sget v3, Lc9/l;->x:I
 
     .line 22
     invoke-virtual {v2, v3, p2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -400,7 +400,7 @@
     iput v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->b0:I
 
     .line 24
-    sget v3, Lb9/l;->E:I
+    sget v3, Lc9/l;->E:I
 
     iget-boolean v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->c0:Z
 
@@ -412,7 +412,7 @@
     iput-boolean v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->c0:Z
 
     .line 26
-    sget v3, Lb9/l;->B:I
+    sget v3, Lc9/l;->B:I
 
     iget-boolean v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->d0:Z
 
@@ -424,7 +424,7 @@
     iput-boolean v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->d0:Z
 
     .line 28
-    sget v3, Lb9/l;->D:I
+    sget v3, Lc9/l;->D:I
 
     iget-boolean v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->e0:Z
 
@@ -436,7 +436,7 @@
     iput-boolean v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->e0:Z
 
     .line 30
-    sget v3, Lb9/l;->C:I
+    sget v3, Lc9/l;->C:I
 
     iget-boolean v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->f0:Z
 
@@ -448,7 +448,7 @@
     iput-boolean v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->f0:Z
 
     .line 32
-    sget v3, Lb9/l;->F:I
+    sget v3, Lc9/l;->F:I
 
     iget-boolean v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->g0:Z
 
@@ -460,7 +460,7 @@
     iput-boolean v3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->g0:Z
 
     .line 34
-    sget v3, Lb9/l;->H:I
+    sget v3, Lc9/l;->H:I
 
     iget v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->a0:I
 
@@ -566,19 +566,19 @@
 
     invoke-direct {v4, v5, v6, v7, v8}, Lcom/google/android/exoplayer2/f;-><init>(JJ)V
 
-    iput-object v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iput-object v4, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 50
-    new-instance p3, Lb9/d;
+    new-instance p3, Lc9/d;
 
-    invoke-direct {p3, p0}, Lb9/d;-><init>(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V
+    invoke-direct {p3, p0}, Lc9/d;-><init>(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V
 
     iput-object p3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->C:Ljava/lang/Runnable;
 
     .line 51
-    new-instance p3, Lb9/e;
+    new-instance p3, Lc9/e;
 
-    invoke-direct {p3, p0}, Lb9/e;-><init>(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V
+    invoke-direct {p3, p0}, Lc9/e;-><init>(Lcom/google/android/exoplayer2/ui/PlayerControlView;)V
 
     iput-object p3, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->D:Ljava/lang/Runnable;
 
@@ -595,7 +595,7 @@
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
 
     .line 54
-    sget p2, Lb9/h;->p:I
+    sget p2, Lc9/h;->p:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -604,7 +604,7 @@
     check-cast p3, Lcom/google/android/exoplayer2/ui/h;
 
     .line 55
-    sget v1, Lb9/h;->q:I
+    sget v1, Lc9/h;->q:I
 
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -664,7 +664,7 @@
 
     .line 66
     :goto_1
-    sget p2, Lb9/h;->g:I
+    sget p2, Lc9/h;->g:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -675,7 +675,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->v:Landroid/widget/TextView;
 
     .line 67
-    sget p2, Lb9/h;->n:I
+    sget p2, Lc9/h;->n:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -695,7 +695,7 @@
 
     .line 70
     :cond_3
-    sget p2, Lb9/h;->m:I
+    sget p2, Lc9/h;->m:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -710,7 +710,7 @@
 
     .line 72
     :cond_4
-    sget p2, Lb9/h;->l:I
+    sget p2, Lc9/h;->l:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -725,7 +725,7 @@
 
     .line 74
     :cond_5
-    sget p2, Lb9/h;->o:I
+    sget p2, Lc9/h;->o:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -740,7 +740,7 @@
 
     .line 76
     :cond_6
-    sget p2, Lb9/h;->j:I
+    sget p2, Lc9/h;->j:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -755,7 +755,7 @@
 
     .line 78
     :cond_7
-    sget p2, Lb9/h;->s:I
+    sget p2, Lc9/h;->s:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -770,7 +770,7 @@
 
     .line 80
     :cond_8
-    sget p2, Lb9/h;->i:I
+    sget p2, Lc9/h;->i:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -785,7 +785,7 @@
 
     .line 82
     :cond_9
-    sget p2, Lb9/h;->r:I
+    sget p2, Lc9/h;->r:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -802,7 +802,7 @@
 
     .line 84
     :cond_a
-    sget p2, Lb9/h;->t:I
+    sget p2, Lc9/h;->t:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -819,7 +819,7 @@
 
     .line 86
     :cond_b
-    sget p2, Lb9/h;->w:I
+    sget p2, Lc9/h;->w:I
 
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -839,7 +839,7 @@
     move-result-object p1
 
     .line 90
-    sget p2, Lb9/i;->b:I
+    sget p2, Lc9/i;->b:I
 
     .line 91
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getInteger(I)I
@@ -855,7 +855,7 @@
     iput p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->M:F
 
     .line 92
-    sget p2, Lb9/i;->a:I
+    sget p2, Lc9/i;->a:I
 
     .line 93
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getInteger(I)I
@@ -869,7 +869,7 @@
     iput p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->N:F
 
     .line 94
-    sget p2, Lb9/g;->b:I
+    sget p2, Lc9/g;->b:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -878,7 +878,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->E:Landroid/graphics/drawable/Drawable;
 
     .line 95
-    sget p2, Lb9/g;->c:I
+    sget p2, Lc9/g;->c:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -887,7 +887,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->F:Landroid/graphics/drawable/Drawable;
 
     .line 96
-    sget p2, Lb9/g;->a:I
+    sget p2, Lc9/g;->a:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -896,7 +896,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->G:Landroid/graphics/drawable/Drawable;
 
     .line 97
-    sget p2, Lb9/g;->e:I
+    sget p2, Lc9/g;->e:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -905,7 +905,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->K:Landroid/graphics/drawable/Drawable;
 
     .line 98
-    sget p2, Lb9/g;->d:I
+    sget p2, Lc9/g;->d:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -914,7 +914,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->L:Landroid/graphics/drawable/Drawable;
 
     .line 99
-    sget p2, Lb9/k;->c:I
+    sget p2, Lc9/k;->c:I
 
     .line 100
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -924,7 +924,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->H:Ljava/lang/String;
 
     .line 101
-    sget p2, Lb9/k;->d:I
+    sget p2, Lc9/k;->d:I
 
     .line 102
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -934,7 +934,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->I:Ljava/lang/String;
 
     .line 103
-    sget p2, Lb9/k;->b:I
+    sget p2, Lc9/k;->b:I
 
     .line 104
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -944,7 +944,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->J:Ljava/lang/String;
 
     .line 105
-    sget p2, Lb9/k;->g:I
+    sget p2, Lc9/k;->g:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -953,7 +953,7 @@
     iput-object p2, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->O:Ljava/lang/String;
 
     .line 106
-    sget p2, Lb9/k;->f:I
+    sget p2, Lc9/k;->f:I
 
     .line 107
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1269,11 +1269,11 @@
 .method private C(Lcom/google/android/exoplayer2/Player;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, p1, v1}, Ld7/d;->k(Lcom/google/android/exoplayer2/Player;Z)Z
+    invoke-interface {v0, p1, v1}, Le7/d;->k(Lcom/google/android/exoplayer2/Player;Z)Z
 
     return-void
 .end method
@@ -1297,11 +1297,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 9
     .line 10
-    invoke-interface {v0, p1}, Ld7/d;->g(Lcom/google/android/exoplayer2/Player;)Z
+    invoke-interface {v0, p1}, Le7/d;->g(Lcom/google/android/exoplayer2/Player;)Z
 
     .line 11
     .line 12
@@ -1339,11 +1339,11 @@
     .line 29
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 30
     .line 31
-    invoke-interface {v0, p1, v1}, Ld7/d;->k(Lcom/google/android/exoplayer2/Player;Z)Z
+    invoke-interface {v0, p1, v1}, Le7/d;->k(Lcom/google/android/exoplayer2/Player;Z)Z
 
     .line 32
     .line 33
@@ -1469,7 +1469,7 @@
 
     .line 10
     .line 11
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->E()Z
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->G()Z
 
     .line 12
     .line 13
@@ -1608,7 +1608,7 @@
 .method private static F(Landroid/content/res/TypedArray;I)I
     .locals 1
 
-    sget v0, Lb9/l;->z:I
+    sget v0, Lc9/l;->z:I
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -1999,9 +1999,9 @@
 .method private M(Lcom/google/android/exoplayer2/Player;IJ)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Ld7/d;->b(Lcom/google/android/exoplayer2/Player;IJ)Z
+    invoke-interface {v0, p1, p2, p3, p4}, Le7/d;->b(Lcom/google/android/exoplayer2/Player;IJ)Z
 
     move-result p1
 
@@ -2012,7 +2012,7 @@
     .locals 6
 
     .line 1
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 2
     .line 3
@@ -2383,7 +2383,7 @@
 
     .line 22
     .line 23
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->E()Z
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->G()Z
 
     .line 24
     .line 25
@@ -3177,7 +3177,7 @@
 
     .line 17
     .line 18
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 19
     .line 20
@@ -3285,11 +3285,11 @@
 
     .line 67
     .line 68
-    iget-object v5, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v5, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 69
     .line 70
-    invoke-interface {v5}, Ld7/d;->f()Z
+    invoke-interface {v5}, Le7/d;->f()Z
 
     .line 71
     .line 72
@@ -3316,11 +3316,11 @@
 
     .line 80
     .line 81
-    iget-object v6, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v6, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 82
     .line 83
-    invoke-interface {v6}, Ld7/d;->j()Z
+    invoke-interface {v6}, Le7/d;->j()Z
 
     .line 84
     .line 85
@@ -4252,7 +4252,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->L()J
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->M()J
 
     .line 20
     .line 21
@@ -4314,7 +4314,7 @@
 
     .line 46
     .line 47
-    invoke-static {v6, v7, v1, v2}, Lf9/q0;->f0(Ljava/lang/StringBuilder;Ljava/util/Formatter;J)Ljava/lang/String;
+    invoke-static {v6, v7, v1, v2}, Lg9/q0;->f0(Ljava/lang/StringBuilder;Ljava/util/Formatter;J)Ljava/lang/String;
 
     .line 48
     .line 49
@@ -4489,7 +4489,7 @@
 
     .line 126
     .line 127
-    invoke-static/range {v7 .. v12}, Lf9/q0;->s(JJJ)J
+    invoke-static/range {v7 .. v12}, Lg9/q0;->s(JJJ)J
 
     .line 128
     .line 129
@@ -5148,7 +5148,7 @@
     .line 49
     .line 50
     .line 51
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->V()I
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->U()I
 
     .line 52
     .line 53
@@ -5399,7 +5399,7 @@
 
     .line 52
     .line 53
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->W()Z
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->V()Z
 
     .line 54
     .line 55
@@ -5433,7 +5433,7 @@
 
     .line 68
     .line 69
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->W()Z
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->V()Z
 
     .line 70
     .line 71
@@ -5540,7 +5540,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 14
     .line 15
@@ -5587,7 +5587,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {v1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 35
     .line 36
@@ -5672,7 +5672,7 @@
 
     .line 69
     .line 70
-    invoke-static {v9, v10}, Ld7/c;->d(J)J
+    invoke-static {v9, v10}, Le7/c;->d(J)J
 
     .line 71
     .line 72
@@ -5724,7 +5724,7 @@
     xor-int/2addr v1, v4
 
     .line 97
-    invoke-static {v1}, Lf9/a;->f(Z)V
+    invoke-static {v1}, Lg9/a;->f(Z)V
 
     .line 98
     .line 99
@@ -5923,7 +5923,7 @@
 
     .line 189
     .line 190
-    invoke-static/range {v17 .. v18}, Ld7/c;->d(J)J
+    invoke-static/range {v17 .. v18}, Le7/c;->d(J)J
 
     .line 191
     .line 192
@@ -6014,7 +6014,7 @@
 
     .line 227
     :goto_9
-    invoke-static {v5, v6}, Ld7/c;->d(J)J
+    invoke-static {v5, v6}, Le7/c;->d(J)J
 
     .line 228
     .line 229
@@ -6038,7 +6038,7 @@
 
     .line 238
     .line 239
-    invoke-static {v4, v5, v1, v2}, Lf9/q0;->f0(Ljava/lang/StringBuilder;Ljava/util/Formatter;J)Ljava/lang/String;
+    invoke-static {v4, v5, v1, v2}, Lg9/q0;->f0(Ljava/lang/StringBuilder;Ljava/util/Formatter;J)Ljava/lang/String;
 
     .line 240
     .line 241
@@ -6568,10 +6568,10 @@
     return-object p0
 .end method
 
-.method static synthetic g(Lcom/google/android/exoplayer2/ui/PlayerControlView;)Ld7/d;
+.method static synthetic g(Lcom/google/android/exoplayer2/ui/PlayerControlView;)Le7/d;
     .locals 0
 
-    iget-object p0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     return-object p0
 .end method
@@ -6793,11 +6793,11 @@
 
     .line 32
     .line 33
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 34
     .line 35
-    invoke-interface {p1, v1}, Ld7/d;->e(Lcom/google/android/exoplayer2/Player;)Z
+    invoke-interface {p1, v1}, Le7/d;->e(Lcom/google/android/exoplayer2/Player;)Z
 
     .line 36
     .line 37
@@ -6814,11 +6814,11 @@
 
     .line 42
     .line 43
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 44
     .line 45
-    invoke-interface {p1, v1}, Ld7/d;->a(Lcom/google/android/exoplayer2/Player;)Z
+    invoke-interface {p1, v1}, Le7/d;->a(Lcom/google/android/exoplayer2/Player;)Z
 
     .line 46
     .line 47
@@ -6909,11 +6909,11 @@
 
     .line 88
     :cond_5
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 89
     .line 90
-    invoke-interface {p1, v1}, Ld7/d;->h(Lcom/google/android/exoplayer2/Player;)Z
+    invoke-interface {p1, v1}, Le7/d;->h(Lcom/google/android/exoplayer2/Player;)Z
 
     .line 91
     .line 92
@@ -6922,11 +6922,11 @@
 
     .line 94
     :cond_6
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 95
     .line 96
-    invoke-interface {p1, v1}, Ld7/d;->i(Lcom/google/android/exoplayer2/Player;)Z
+    invoke-interface {p1, v1}, Le7/d;->i(Lcom/google/android/exoplayer2/Player;)Z
 
     .line 97
     .line 98
@@ -7933,11 +7933,11 @@
     .line 124
 .end method
 
-.method public setControlDispatcher(Ld7/d;)V
+.method public setControlDispatcher(Le7/d;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 2
     .line 3
@@ -7945,7 +7945,7 @@
 
     .line 4
     .line 5
-    iput-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 6
     .line 7
@@ -8080,7 +8080,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 2
     .line 3
@@ -8223,7 +8223,7 @@
     .line 126
 .end method
 
-.method public setPlaybackPreparer(Ld7/p;)V
+.method public setPlaybackPreparer(Le7/p;)V
     .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -8272,7 +8272,7 @@
 
     .line 16
     :goto_0
-    invoke-static {v0}, Lf9/a;->f(Z)V
+    invoke-static {v0}, Lg9/a;->f(Z)V
 
     .line 17
     .line 18
@@ -8281,7 +8281,7 @@
 
     .line 20
     .line 21
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->y()Landroid/os/Looper;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Landroid/os/Looper;
 
     .line 22
     .line 23
@@ -8310,7 +8310,7 @@
     .line 33
     :cond_2
     :goto_1
-    invoke-static {v2}, Lf9/a;->a(Z)V
+    invoke-static {v2}, Lg9/a;->a(Z)V
 
     .line 34
     .line 35
@@ -8353,7 +8353,7 @@
 
     .line 53
     .line 54
-    invoke-interface {p1, v0}, Lcom/google/android/exoplayer2/Player;->I(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-interface {p1, v0}, Lcom/google/android/exoplayer2/Player;->K(Lcom/google/android/exoplayer2/Player$a;)V
 
     .line 55
     .line 56
@@ -8455,7 +8455,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->V()I
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/Player;->U()I
 
     .line 8
     .line 9
@@ -8471,7 +8471,7 @@
 
     .line 14
     .line 15
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 16
     .line 17
@@ -8482,7 +8482,7 @@
     const/4 v1, 0x0
 
     .line 20
-    invoke-interface {p1, v0, v1}, Ld7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
+    invoke-interface {p1, v0, v1}, Le7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
 
     .line 21
     .line 22
@@ -8505,7 +8505,7 @@
 
     .line 29
     .line 30
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 31
     .line 32
@@ -8513,7 +8513,7 @@
 
     .line 33
     .line 34
-    invoke-interface {p1, v0, v2}, Ld7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
+    invoke-interface {p1, v0, v2}, Le7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
 
     .line 35
     .line 36
@@ -8530,7 +8530,7 @@
 
     .line 41
     .line 42
-    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 43
     .line 44
@@ -8538,7 +8538,7 @@
 
     .line 45
     .line 46
-    invoke-interface {p1, v0, v1}, Ld7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
+    invoke-interface {p1, v0, v1}, Le7/d;->d(Lcom/google/android/exoplayer2/Player;I)Z
 
     .line 47
     .line 48
@@ -8633,7 +8633,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Ld7/d;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/ui/PlayerControlView;->R:Le7/d;
 
     .line 2
     .line 3
@@ -9891,7 +9891,7 @@
 
     const/16 v1, 0x3e8
 
-    invoke-static {p1, v0, v1}, Lf9/q0;->r(III)I
+    invoke-static {p1, v0, v1}, Lg9/q0;->r(III)I
 
     move-result p1
 
@@ -10061,7 +10061,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->receiveCommand(Lg2/h;ILcom/facebook/react/bridge/ReadableArray;)V
+    value = Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;->receiveCommand(Lh2/h;ILcom/facebook/react/bridge/ReadableArray;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field final synthetic k:Lcom/facebook/react/bridge/ReadableArray;
 
-.field final synthetic l:Lg2/h;
+.field final synthetic l:Lh2/h;
 
 .field final synthetic m:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lcom/facebook/react/bridge/ReadableArray;Lg2/h;)V
+.method constructor <init>(Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;Lcom/facebook/react/bridge/ReadableArray;Lh2/h;)V
     .locals 0
 
     iput-object p1, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->m:Lcom/airbnb/android/react/lottie/LottieAnimationViewManager;
 
     iput-object p2, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->k:Lcom/facebook/react/bridge/ReadableArray;
 
-    iput-object p3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iput-object p3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,20 +94,20 @@
 
     .line 22
     .line 23
-    iget-object v3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 24
     .line 25
-    invoke-virtual {v3, v1, v0}, Lg2/h;->A(II)V
+    invoke-virtual {v3, v1, v0}, Lh2/h;->A(II)V
 
     .line 26
     .line 27
     .line 28
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Lg2/h;->getSpeed()F
+    invoke-virtual {v0}, Lh2/h;->getSpeed()F
 
     .line 31
     .line 32
@@ -123,11 +123,11 @@
 
     .line 37
     .line 38
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 39
     .line 40
-    invoke-virtual {v0}, Lg2/h;->w()V
+    invoke-virtual {v0}, Lh2/h;->w()V
 
     .line 41
     .line 42
@@ -136,20 +136,20 @@
 
     .line 44
     :cond_0
-    iget-object v3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v3, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 45
     .line 46
-    invoke-virtual {v3, v0, v1}, Lg2/h;->A(II)V
+    invoke-virtual {v3, v0, v1}, Lh2/h;->A(II)V
 
     .line 47
     .line 48
     .line 49
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 50
     .line 51
-    invoke-virtual {v0}, Lg2/h;->getSpeed()F
+    invoke-virtual {v0}, Lh2/h;->getSpeed()F
 
     .line 52
     .line 53
@@ -165,18 +165,18 @@
 
     .line 58
     .line 59
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 60
     .line 61
-    invoke-virtual {v0}, Lg2/h;->w()V
+    invoke-virtual {v0}, Lh2/h;->w()V
 
     .line 62
     .line 63
     .line 64
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 65
     .line 66
@@ -192,20 +192,20 @@
 
     .line 71
     .line 72
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 73
     .line 74
-    invoke-virtual {v0, v2}, Lg2/h;->setProgress(F)V
+    invoke-virtual {v0, v2}, Lh2/h;->setProgress(F)V
 
     .line 75
     .line 76
     .line 77
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 78
     .line 79
-    invoke-virtual {v0}, Lg2/h;->playAnimation()V
+    invoke-virtual {v0}, Lh2/h;->playAnimation()V
 
     .line 80
     .line 81
@@ -214,7 +214,7 @@
 
     .line 83
     :cond_2
-    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lg2/h;
+    iget-object v0, p0, Lcom/airbnb/android/react/lottie/LottieAnimationViewManager$b;->l:Lh2/h;
 
     .line 84
     .line 85
@@ -375,6 +375,4 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method

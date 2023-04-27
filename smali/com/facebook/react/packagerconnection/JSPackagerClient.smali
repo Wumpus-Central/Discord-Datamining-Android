@@ -218,7 +218,7 @@
     move-result-object p2
 
     .line 30
-    invoke-static {p1, p2}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -382,7 +382,7 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -455,7 +455,7 @@
 
     const-string v1, "Handling the message failed"
 
-    invoke-static {v0, v1, p1}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -469,7 +469,7 @@
 
     const-string v0, "Websocket received message with payload of unexpected type binary"
 
-    invoke-static {p1, v0}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

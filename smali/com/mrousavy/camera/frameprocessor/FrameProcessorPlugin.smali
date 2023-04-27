@@ -7,7 +7,7 @@
 .annotation build Landroidx/annotation/Keep;
 .end annotation
 
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -204,7 +204,7 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -213,7 +213,7 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/mrousavy/camera/frameprocessor/FrameProcessorPlugin;->mName:Ljava/lang/String;

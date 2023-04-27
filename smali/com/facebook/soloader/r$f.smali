@@ -163,7 +163,7 @@
     return-object v0
 .end method
 
-.method public q0(Ljava/io/DataOutput;[B)V
+.method public m0(Ljava/io/DataOutput;[B)V
     .locals 2
 
     iget-object v0, p0, Lcom/facebook/soloader/r$f;->l:Ljava/io/InputStream;
@@ -175,7 +175,7 @@
     return-void
 .end method
 
-.method public x0()Lcom/facebook/soloader/r$b;
+.method public v0()Lcom/facebook/soloader/r$b;
     .locals 1
 
     iget-object v0, p0, Lcom/facebook/soloader/r$f;->k:Lcom/facebook/soloader/r$b;

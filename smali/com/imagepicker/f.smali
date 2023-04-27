@@ -255,17 +255,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method public static C(Landroid/net/Uri;Ljava/util/UUID;Landroid/content/Context;Lcom/imagepicker/e;)Landroid/net/Uri;
@@ -3800,17 +3789,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static e(Landroid/net/Uri;)V
@@ -4480,17 +4458,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static h(Ljava/lang/String;)Landroid/graphics/Bitmap$CompressFormat;
@@ -5098,17 +5065,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static k(Landroid/net/Uri;Landroid/content/Context;)Lcom/facebook/react/bridge/ReadableMap;
@@ -5338,17 +5294,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static l(Landroid/net/Uri;Landroid/content/Context;)D
@@ -5574,17 +5519,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static m(Ljava/lang/String;)Ljava/lang/String;
@@ -6111,17 +6045,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static p(Landroid/net/Uri;Lcom/imagepicker/e;Landroid/content/Context;)Lcom/facebook/react/bridge/ReadableMap;
@@ -6815,17 +6738,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static r(Landroid/net/Uri;)Ljava/lang/String;
@@ -7063,17 +6975,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static t(Ljava/util/List;Ljava/util/UUID;Lcom/imagepicker/e;Landroid/content/Context;)Lcom/facebook/react/bridge/ReadableMap;
@@ -8878,17 +8779,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method static y(Ljava/lang/String;Landroid/net/Uri;Landroid/content/Context;)Z
@@ -9472,15 +9362,4 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method

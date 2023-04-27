@@ -52,12 +52,12 @@
 
     .line 7
     .line 8
-    invoke-static {p1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    invoke-static {p2}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     .line 13

@@ -30,11 +30,11 @@
 
     .line 7
     .line 8
-    new-instance v0, Ld9/q;
+    new-instance v0, Le9/q;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ld9/q;-><init>()V
+    invoke-direct {v0}, Le9/q;-><init>()V
 
     .line 11
     .line 12
@@ -187,26 +187,26 @@
     throw p1
 .end method
 
+.method public c(Le9/x;)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public close()V
     .locals 0
 
     return-void
 .end method
 
-.method public synthetic d()Ljava/util/Map;
+.method public synthetic e()Ljava/util/Map;
     .locals 1
 
-    invoke-static {p0}, Ld9/k;->a(Lcom/google/android/exoplayer2/upstream/DataSource;)Ljava/util/Map;
+    invoke-static {p0}, Le9/k;->a(Lcom/google/android/exoplayer2/upstream/DataSource;)Ljava/util/Map;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public h(Ld9/x;)V
-    .locals 0
-
-    return-void
 .end method
 
 .method public m()Landroid/net/Uri;

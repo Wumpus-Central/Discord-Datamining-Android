@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements La2/d;
+.implements Lb2/d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/imagepipeline/producers/p;->h(Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;)La2/d;
+    value = Lcom/facebook/imagepipeline/producers/p;->h(Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;)Lb2/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,8 +19,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "La2/d<",
-        "Lu5/e;",
+        "Lb2/d<",
+        "Lv5/e;",
         "Ljava/lang/Void;",
         ">;"
     }
@@ -56,30 +56,30 @@
 
 
 # virtual methods
-.method public bridge synthetic a(La2/f;)Ljava/lang/Object;
+.method public bridge synthetic a(Lb2/f;)Ljava/lang/Object;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/p$a;->b(La2/f;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/facebook/imagepipeline/producers/p$a;->b(Lb2/f;)Ljava/lang/Void;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public b(La2/f;)Ljava/lang/Void;
+.method public b(Lb2/f;)Ljava/lang/Void;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La2/f<",
-            "Lu5/e;",
+            "Lb2/f<",
+            "Lv5/e;",
             ">;)",
             "Ljava/lang/Void;"
         }
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/facebook/imagepipeline/producers/p;->c(La2/f;)Z
+    invoke-static {p1}, Lcom/facebook/imagepipeline/producers/p;->c(Lb2/f;)Z
 
     .line 2
     .line 3
@@ -124,7 +124,7 @@
 
     .line 23
     :cond_0
-    invoke-virtual {p1}, La2/f;->n()Z
+    invoke-virtual {p1}, Lb2/f;->n()Z
 
     .line 24
     .line 25
@@ -144,7 +144,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, La2/f;->i()Ljava/lang/Exception;
+    invoke-virtual {p1}, Lb2/f;->i()Ljava/lang/Exception;
 
     .line 34
     .line 35
@@ -186,7 +186,7 @@
 
     .line 54
     :cond_1
-    invoke-virtual {p1}, La2/f;->j()Ljava/lang/Object;
+    invoke-virtual {p1}, Lb2/f;->j()Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -194,7 +194,7 @@
     move-result-object p1
 
     .line 58
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
     .line 59
     .line 60
@@ -210,7 +210,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p1}, Lu5/e;->R()I
+    invoke-virtual {p1}, Lv5/e;->R()I
 
     .line 67
     .line 68
@@ -282,7 +282,7 @@
     .line 102
     .line 103
     .line 104
-    invoke-virtual {p1}, Lu5/e;->close()V
+    invoke-virtual {p1}, Lv5/e;->close()V
 
     .line 105
     .line 106

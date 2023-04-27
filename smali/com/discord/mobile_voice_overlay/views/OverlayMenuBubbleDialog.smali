@@ -3246,7 +3246,7 @@
     move-result v2
 
     .line 27
-    invoke-static {v1, v2}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v1, v2}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 28
     .line 29

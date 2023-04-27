@@ -16,7 +16,7 @@
 # instance fields
 .field private L:Landroid/view/ScaleGestureDetector;
 
-.field private M:Lif/h;
+.field private M:Lkf/h;
 
 .field private N:Landroid/view/GestureDetector;
 
@@ -150,7 +150,7 @@
 
     .line 34
     .line 35
-    new-instance v0, Lif/h;
+    new-instance v0, Lkf/h;
 
     .line 36
     .line 37
@@ -163,12 +163,12 @@
     .line 40
     .line 41
     .line 42
-    invoke-direct {v0, v1}, Lif/h;-><init>(Lif/h$a;)V
+    invoke-direct {v0, v1}, Lkf/h;-><init>(Lkf/h$a;)V
 
     .line 43
     .line 44
     .line 45
-    iput-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->M:Lif/h;
+    iput-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->M:Lkf/h;
 
     .line 46
     .line 47
@@ -506,11 +506,11 @@
 
     .line 63
     .line 64
-    iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->M:Lif/h;
+    iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->M:Lkf/h;
 
     .line 65
     .line 66
-    invoke-virtual {v0, p1}, Lif/h;->d(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lkf/h;->d(Landroid/view/MotionEvent;)Z
 
     .line 67
     .line 68

@@ -1074,7 +1074,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p1}, Lpi/l;->o(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-static {p1}, Lri/l;->o(Ljava/lang/String;)Ljava/lang/Long;
 
     .line 7
     .line 8

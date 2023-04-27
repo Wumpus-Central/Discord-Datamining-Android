@@ -4,9 +4,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/facebook/react/bridge/Inspector;
 .end annotation
@@ -14,6 +11,9 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x9
     name = "LocalConnection"
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 

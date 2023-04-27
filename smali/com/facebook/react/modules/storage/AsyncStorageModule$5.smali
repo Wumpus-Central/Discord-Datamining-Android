@@ -124,7 +124,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4, p1}, Lw3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, p1}, Lx3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 7
     iget-object v3, p0, Lcom/facebook/react/modules/storage/AsyncStorageModule$5;->val$callback:Lcom/facebook/react/bridge/Callback;

@@ -78,7 +78,7 @@
     move-result-object v0
 
     .line 5
-    sget v1, Lef/a;->m:I
+    sget v1, Lgf/a;->m:I
 
     .line 6
     .line 7
@@ -110,7 +110,7 @@
     move-result-object v0
 
     .line 21
-    sget v1, Lef/b;->i:I
+    sget v1, Lgf/b;->i:I
 
     .line 22
     .line 23
@@ -142,7 +142,7 @@
     move-result-object v0
 
     .line 37
-    sget v1, Lef/b;->f:I
+    sget v1, Lgf/b;->f:I
 
     .line 38
     .line 39
@@ -174,7 +174,7 @@
     move-result-object v0
 
     .line 53
-    sget v1, Lef/b;->g:I
+    sget v1, Lgf/b;->g:I
 
     .line 54
     .line 55
@@ -243,7 +243,7 @@
     move-result-object v1
 
     .line 88
-    sget v2, Lef/a;->g:I
+    sget v2, Lgf/a;->g:I
 
     .line 89
     .line 90
@@ -319,7 +319,7 @@
     move-result-object v1
 
     .line 128
-    sget v2, Lef/b;->j:I
+    sget v2, Lgf/b;->j:I
 
     .line 129
     .line 130

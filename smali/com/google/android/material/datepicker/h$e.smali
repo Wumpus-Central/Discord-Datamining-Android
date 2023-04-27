@@ -205,7 +205,7 @@
     move-result-object v3
 
     .line 39
-    invoke-interface {v3}, Lcom/google/android/material/datepicker/d;->v()Ljava/util/Collection;
+    invoke-interface {v3}, Lcom/google/android/material/datepicker/d;->y()Ljava/util/Collection;
 
     .line 40
     .line 41

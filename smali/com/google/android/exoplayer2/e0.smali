@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lac/n;
+.implements Lbc/n;
 
 
 # instance fields

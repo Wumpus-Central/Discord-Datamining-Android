@@ -292,7 +292,15 @@
 
 
 # virtual methods
-.method public A()I
+.method public D(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->s:I
+
+    return-void
+.end method
+
+.method public E()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
@@ -300,7 +308,7 @@
     return v0
 .end method
 
-.method public B()I
+.method public F()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
@@ -308,7 +316,7 @@
     return v0
 .end method
 
-.method public H()I
+.method public K()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
@@ -316,7 +324,7 @@
     return v0
 .end method
 
-.method public I()I
+.method public L()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->t:I
@@ -324,7 +332,7 @@
     return v0
 .end method
 
-.method public K()I
+.method public N()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->v:I
@@ -332,7 +340,7 @@
     return v0
 .end method
 
-.method public a()I
+.method public c()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->q:I
@@ -340,7 +348,7 @@
     return v0
 .end method
 
-.method public c()F
+.method public d()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->p:F
@@ -352,14 +360,6 @@
     .locals 1
 
     const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public g()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->s:I
 
     return v0
 .end method
@@ -388,7 +388,15 @@
     return v0
 .end method
 
-.method public i()I
+.method public h()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->s:I
+
+    return v0
+.end method
+
+.method public k()I
     .locals 1
 
     iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
@@ -396,7 +404,7 @@
     return v0
 .end method
 
-.method public j(I)V
+.method public l(I)V
     .locals 0
 
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->t:I
@@ -404,7 +412,7 @@
     return-void
 .end method
 
-.method public k()F
+.method public m()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->o:F
@@ -412,7 +420,7 @@
     return v0
 .end method
 
-.method public n()F
+.method public q()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->r:F
@@ -420,7 +428,7 @@
     return v0
 .end method
 
-.method public p()Z
+.method public s()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->w:Z
@@ -428,7 +436,7 @@
     return v0
 .end method
 
-.method public s()I
+.method public v()I
     .locals 1
 
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->u:I
@@ -751,12 +759,4 @@
     .line 249
     .line 250
     .line 251
-.end method
-
-.method public z(I)V
-    .locals 0
-
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayoutManager$c;->s:I
-
-    return-void
 .end method

@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lkotlinx/coroutines/flow/Flow<",
-        "Lqi/a;",
+        "Lsi/a;",
         ">;"
     }
 .end annotation
@@ -512,7 +512,7 @@
     move-result-object p1
 
     .line 14
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     .line 15
     .line 16

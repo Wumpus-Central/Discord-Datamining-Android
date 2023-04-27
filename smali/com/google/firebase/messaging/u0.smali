@@ -66,7 +66,7 @@
     .line 15
     .line 16
     .line 17
-    new-instance v7, Lca/b;
+    new-instance v7, Lda/b;
 
     .line 18
     .line 19
@@ -74,7 +74,7 @@
 
     .line 20
     .line 21
-    invoke-direct {v7, v0}, Lca/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v0}, Lda/b;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23

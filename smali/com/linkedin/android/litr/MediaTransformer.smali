@@ -81,11 +81,11 @@
     return-void
 .end method
 
-.method private b(Lne/c;ILjava/lang/String;)Landroid/media/MediaFormat;
+.method private b(Loe/c;ILjava/lang/String;)Landroid/media/MediaFormat;
     .locals 5
 
     .line 1
-    invoke-interface {p1, p2}, Lne/c;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-interface {p1, p2}, Loe/c;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     .line 2
     .line 3
@@ -184,7 +184,7 @@
     move-result-object v3
 
     .line 48
-    invoke-static {p1, p2}, Lqe/h;->a(Lne/c;I)I
+    invoke-static {p1, p2}, Lre/h;->a(Loe/c;I)I
 
     .line 49
     .line 50
@@ -246,7 +246,7 @@
     move-result-object p1
 
     .line 78
-    invoke-static {v0, p1}, Lqe/f;->a(Landroid/media/MediaFormat;Ljava/lang/Number;)Ljava/lang/Number;
+    invoke-static {v0, p1}, Lre/f;->a(Landroid/media/MediaFormat;Ljava/lang/Number;)Ljava/lang/Number;
 
     .line 79
     .line 80
@@ -291,7 +291,7 @@
 
     .line 99
     .line 100
-    invoke-direct {p0, p1, p2, p3}, Lcom/linkedin/android/litr/MediaTransformer;->d(Lne/c;ILjava/lang/String;)Z
+    invoke-direct {p0, p1, p2, p3}, Lcom/linkedin/android/litr/MediaTransformer;->d(Loe/c;ILjava/lang/String;)Z
 
     .line 101
     .line 102
@@ -725,7 +725,7 @@
     .end packed-switch
 .end method
 
-.method private d(Lne/c;ILjava/lang/String;)Z
+.method private d(Loe/c;ILjava/lang/String;)Z
     .locals 3
 
     .line 1
@@ -740,7 +740,7 @@
 
     .line 5
     :cond_0
-    invoke-interface {p1, p2}, Lne/c;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-interface {p1, p2}, Loe/c;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     .line 6
     .line 7
@@ -2257,7 +2257,7 @@
     return-void
 .end method
 
-.method public h(Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Landroid/media/MediaFormat;Landroid/media/MediaFormat;Lfe/a;Lcom/linkedin/android/litr/d;)V
+.method public h(Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Landroid/media/MediaFormat;Landroid/media/MediaFormat;Lge/a;Lcom/linkedin/android/litr/d;)V
     .locals 16
 
     move-object/from16 v1, p0
@@ -2287,7 +2287,7 @@
     .line 2
     :goto_0
     :try_start_0
-    new-instance v6, Lne/a;
+    new-instance v6, Loe/a;
 
     iget-object v7, v1, Lcom/linkedin/android/litr/MediaTransformer;->a:Landroid/content/Context;
 
@@ -2295,7 +2295,7 @@
 
     move-object/from16 v9, p2
 
-    invoke-direct {v6, v7, v9, v8}, Lne/a;-><init>(Landroid/content/Context;Landroid/net/Uri;Lcom/linkedin/android/litr/io/MediaRange;)V
+    invoke-direct {v6, v7, v9, v8}, Loe/a;-><init>(Landroid/content/Context;Landroid/net/Uri;Lcom/linkedin/android/litr/io/MediaRange;)V
 
     const/4 v7, 0x0
 
@@ -2305,14 +2305,14 @@
 
     .line 3
     :goto_1
-    invoke-interface {v6}, Lne/c;->getTrackCount()I
+    invoke-interface {v6}, Loe/c;->getTrackCount()I
 
     move-result v9
 
     if-ge v8, v9, :cond_2
 
     .line 4
-    invoke-interface {v6, v8}, Lne/c;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-interface {v6, v8}, Loe/c;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     move-result-object v9
 
@@ -2324,8 +2324,8 @@
 
     move-result v9
     :try_end_0
-    .catch Lie/b; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Lie/c; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lje/b; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Lje/c; {:try_start_0 .. :try_end_0} :catch_2
 
     if-eqz v9, :cond_1
 
@@ -2399,12 +2399,12 @@
     if-lez v12, :cond_b
 
     .line 8
-    new-instance v8, Lne/b;
+    new-instance v8, Loe/b;
 
     iget-object v10, v1, Lcom/linkedin/android/litr/MediaTransformer;->a:Landroid/content/Context;
 
     .line 9
-    invoke-interface {v6}, Lne/c;->getOrientationHint()I
+    invoke-interface {v6}, Loe/c;->getOrientationHint()I
 
     move-result v13
 
@@ -2412,10 +2412,10 @@
 
     move-object/from16 v11, p3
 
-    invoke-direct/range {v9 .. v14}, Lne/b;-><init>(Landroid/content/Context;Landroid/net/Uri;III)V
+    invoke-direct/range {v9 .. v14}, Loe/b;-><init>(Landroid/content/Context;Landroid/net/Uri;III)V
 
     .line 10
-    invoke-interface {v6}, Lne/c;->getTrackCount()I
+    invoke-interface {v6}, Loe/c;->getTrackCount()I
 
     move-result v9
 
@@ -2428,7 +2428,7 @@
     if-ge v7, v9, :cond_a
 
     .line 12
-    invoke-interface {v6, v7}, Lne/c;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-interface {v6, v7}, Loe/c;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     move-result-object v11
 
@@ -2469,7 +2469,7 @@
     :cond_7
     new-instance v12, Lcom/linkedin/android/litr/b$b;
 
-    invoke-direct {v12, v6, v7, v8}, Lcom/linkedin/android/litr/b$b;-><init>(Lne/c;ILne/d;)V
+    invoke-direct {v12, v6, v7, v8}, Lcom/linkedin/android/litr/b$b;-><init>(Loe/c;ILoe/d;)V
 
     .line 17
     invoke-interface {v10}, Ljava/util/List;->size()I
@@ -2490,31 +2490,31 @@
     if-eqz v13, :cond_8
 
     .line 19
-    new-instance v11, Lhe/d;
+    new-instance v11, Lie/d;
 
-    invoke-direct {v11}, Lhe/d;-><init>()V
+    invoke-direct {v11}, Lie/d;-><init>()V
 
-    invoke-virtual {v12, v11}, Lcom/linkedin/android/litr/b$b;->b(Lhe/a;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v12, v11}, Lcom/linkedin/android/litr/b$b;->b(Lie/a;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v11
 
-    new-instance v13, Loe/g;
+    new-instance v13, Lpe/g;
 
     iget-object v14, v4, Lcom/linkedin/android/litr/d;->b:Ljava/util/List;
 
-    invoke-direct {v13, v14}, Loe/g;-><init>(Ljava/util/List;)V
+    invoke-direct {v13, v14}, Lpe/g;-><init>(Ljava/util/List;)V
 
     .line 20
-    invoke-virtual {v11, v13}, Lcom/linkedin/android/litr/b$b;->d(Loe/i;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v11, v13}, Lcom/linkedin/android/litr/b$b;->d(Lpe/i;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v11
 
-    new-instance v13, Lhe/e;
+    new-instance v13, Lie/e;
 
-    invoke-direct {v13}, Lhe/e;-><init>()V
+    invoke-direct {v13}, Lie/e;-><init>()V
 
     .line 21
-    invoke-virtual {v11, v13}, Lcom/linkedin/android/litr/b$b;->c(Lhe/b;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v11, v13}, Lcom/linkedin/android/litr/b$b;->c(Lie/b;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v11
 
@@ -2536,32 +2536,32 @@
     if-eqz v11, :cond_9
 
     .line 24
-    new-instance v11, Lhe/e;
+    new-instance v11, Lie/e;
 
-    invoke-direct {v11}, Lhe/e;-><init>()V
+    invoke-direct {v11}, Lie/e;-><init>()V
 
     .line 25
-    new-instance v13, Lhe/d;
+    new-instance v13, Lie/d;
 
-    invoke-direct {v13}, Lhe/d;-><init>()V
+    invoke-direct {v13}, Lie/d;-><init>()V
 
-    invoke-virtual {v12, v13}, Lcom/linkedin/android/litr/b$b;->b(Lhe/a;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v12, v13}, Lcom/linkedin/android/litr/b$b;->b(Lie/a;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v13
 
     .line 26
-    invoke-virtual {v13, v11}, Lcom/linkedin/android/litr/b$b;->c(Lhe/b;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v13, v11}, Lcom/linkedin/android/litr/b$b;->c(Lie/b;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v13
 
-    new-instance v14, Loe/c;
+    new-instance v14, Lpe/c;
 
     iget-object v5, v4, Lcom/linkedin/android/litr/d;->c:Ljava/util/List;
 
-    invoke-direct {v14, v11, v5}, Loe/c;-><init>(Lhe/b;Ljava/util/List;)V
+    invoke-direct {v14, v11, v5}, Lpe/c;-><init>(Lie/b;Ljava/util/List;)V
 
     .line 27
-    invoke-virtual {v13, v14}, Lcom/linkedin/android/litr/b$b;->d(Loe/i;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v13, v14}, Lcom/linkedin/android/litr/b$b;->d(Lpe/i;)Lcom/linkedin/android/litr/b$b;
 
     move-result-object v5
 
@@ -2570,8 +2570,8 @@
     .line 28
     invoke-virtual {v5, v11}, Lcom/linkedin/android/litr/b$b;->e(Landroid/media/MediaFormat;)Lcom/linkedin/android/litr/b$b;
     :try_end_1
-    .catch Lie/b; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Lie/c; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Lje/b; {:try_start_1 .. :try_end_1} :catch_3
+    .catch Lje/c; {:try_start_1 .. :try_end_1} :catch_2
 
     goto :goto_6
 
@@ -2584,8 +2584,8 @@
     :try_start_2
     invoke-virtual {v12, v5}, Lcom/linkedin/android/litr/b$b;->e(Landroid/media/MediaFormat;)Lcom/linkedin/android/litr/b$b;
     :try_end_2
-    .catch Lie/b; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Lie/c; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Lje/b; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Lje/c; {:try_start_2 .. :try_end_2} :catch_0
 
     .line 30
     :goto_6
@@ -2618,15 +2618,15 @@
     :cond_a
     iget v0, v4, Lcom/linkedin/android/litr/d;->a:I
 
-    invoke-virtual {v1, v2, v10, v3, v0}, Lcom/linkedin/android/litr/MediaTransformer;->i(Ljava/lang/String;Ljava/util/List;Lfe/a;I)V
+    invoke-virtual {v1, v2, v10, v3, v0}, Lcom/linkedin/android/litr/MediaTransformer;->i(Ljava/lang/String;Ljava/util/List;Lge/a;I)V
 
     goto :goto_b
 
     .line 32
     :cond_b
-    new-instance v0, Lie/c;
+    new-instance v0, Lje/c;
 
-    sget-object v4, Lie/c$a;->o:Lie/c$a;
+    sget-object v4, Lje/c$a;->o:Lje/c$a;
 
     new-instance v5, Ljava/lang/IllegalArgumentException;
 
@@ -2636,12 +2636,12 @@
 
     move-object/from16 v6, p3
 
-    invoke-direct {v0, v4, v6, v14, v5}, Lie/c;-><init>(Lie/c$a;Landroid/net/Uri;ILjava/lang/Throwable;)V
+    invoke-direct {v0, v4, v6, v14, v5}, Lje/c;-><init>(Lje/c$a;Landroid/net/Uri;ILjava/lang/Throwable;)V
 
     throw v0
     :try_end_3
-    .catch Lie/b; {:try_start_3 .. :try_end_3} :catch_3
-    .catch Lie/c; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Lje/b; {:try_start_3 .. :try_end_3} :catch_3
+    .catch Lje/c; {:try_start_3 .. :try_end_3} :catch_2
 
     :catch_2
     move-exception v0
@@ -2656,13 +2656,13 @@
 
     .line 33
     :goto_a
-    invoke-interface {v3, v2, v0, v4}, Lfe/a;->onError(Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/List;)V
+    invoke-interface {v3, v2, v0, v4}, Lge/a;->onError(Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/List;)V
 
     :goto_b
     return-void
 .end method
 
-.method public i(Ljava/lang/String;Ljava/util/List;Lfe/a;I)V
+.method public i(Ljava/lang/String;Ljava/util/List;Lge/a;I)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2671,7 +2671,7 @@
             "Ljava/util/List<",
             "Lcom/linkedin/android/litr/b;",
             ">;",
-            "Lfe/a;",
+            "Lge/a;",
             "I)V"
         }
     .end annotation
@@ -2724,7 +2724,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Lne/c;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Loe/c;
 
     .line 24
     .line 25
@@ -2740,7 +2740,7 @@
     move-result v5
 
     .line 31
-    invoke-interface {v4, v5}, Lne/c;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-interface {v4, v5}, Loe/c;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     .line 32
     .line 33
@@ -2896,7 +2896,7 @@
 
     .line 104
     .line 105
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Loe/i;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Lpe/i;
 
     .line 106
     .line 107
@@ -2908,7 +2908,7 @@
 
     .line 110
     .line 111
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Loe/i;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Lpe/i;
 
     .line 112
     .line 113
@@ -2916,7 +2916,7 @@
     move-result-object v4
 
     .line 115
-    invoke-interface {v4}, Loe/i;->a()Z
+    invoke-interface {v4}, Lpe/i;->a()Z
 
     .line 116
     .line 117
@@ -2929,7 +2929,7 @@
     .line 120
     .line 121
     :cond_3
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Lne/c;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Loe/c;
 
     .line 122
     .line 123
@@ -2945,7 +2945,7 @@
     move-result v5
 
     .line 129
-    invoke-direct {p0, v4, v5, v2}, Lcom/linkedin/android/litr/MediaTransformer;->d(Lne/c;ILjava/lang/String;)Z
+    invoke-direct {p0, v4, v5, v2}, Lcom/linkedin/android/litr/MediaTransformer;->d(Loe/c;ILjava/lang/String;)Z
 
     .line 130
     .line 131
@@ -2958,7 +2958,7 @@
     .line 134
     .line 135
     :cond_4
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Lne/c;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Loe/c;
 
     .line 136
     .line 137
@@ -2974,7 +2974,7 @@
     move-result v5
 
     .line 143
-    invoke-direct {p0, v4, v5, v2}, Lcom/linkedin/android/litr/MediaTransformer;->b(Lne/c;ILjava/lang/String;)Landroid/media/MediaFormat;
+    invoke-direct {p0, v4, v5, v2}, Lcom/linkedin/android/litr/MediaTransformer;->b(Loe/c;ILjava/lang/String;)Landroid/media/MediaFormat;
 
     .line 144
     .line 145
@@ -2986,7 +2986,7 @@
 
     .line 148
     .line 149
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Lne/c;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->c()Loe/c;
 
     .line 150
     .line 151
@@ -3002,7 +3002,7 @@
     move-result v7
 
     .line 157
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->d()Lne/d;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->d()Loe/d;
 
     .line 158
     .line 159
@@ -3010,7 +3010,7 @@
     move-result-object v8
 
     .line 161
-    invoke-direct {v5, v6, v7, v8}, Lcom/linkedin/android/litr/b$b;-><init>(Lne/c;ILne/d;)V
+    invoke-direct {v5, v6, v7, v8}, Lcom/linkedin/android/litr/b$b;-><init>(Loe/c;ILoe/d;)V
 
     .line 162
     .line 163
@@ -3031,7 +3031,7 @@
     move-result-object v5
 
     .line 172
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->a()Lhe/a;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->a()Lie/a;
 
     .line 173
     .line 174
@@ -3039,7 +3039,7 @@
     move-result-object v6
 
     .line 176
-    invoke-virtual {v5, v6}, Lcom/linkedin/android/litr/b$b;->b(Lhe/a;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v5, v6}, Lcom/linkedin/android/litr/b$b;->b(Lie/a;)Lcom/linkedin/android/litr/b$b;
 
     .line 177
     .line 178
@@ -3047,7 +3047,7 @@
     move-result-object v5
 
     .line 180
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->b()Lhe/b;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->b()Lie/b;
 
     .line 181
     .line 182
@@ -3055,7 +3055,7 @@
     move-result-object v6
 
     .line 184
-    invoke-virtual {v5, v6}, Lcom/linkedin/android/litr/b$b;->c(Lhe/b;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v5, v6}, Lcom/linkedin/android/litr/b$b;->c(Lie/b;)Lcom/linkedin/android/litr/b$b;
 
     .line 185
     .line 186
@@ -3063,7 +3063,7 @@
     move-result-object v5
 
     .line 188
-    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Loe/i;
+    invoke-virtual {v3}, Lcom/linkedin/android/litr/b;->e()Lpe/i;
 
     .line 189
     .line 190
@@ -3071,7 +3071,7 @@
     move-result-object v3
 
     .line 192
-    invoke-virtual {v5, v3}, Lcom/linkedin/android/litr/b$b;->d(Loe/i;)Lcom/linkedin/android/litr/b$b;
+    invoke-virtual {v5, v3}, Lcom/linkedin/android/litr/b$b;->d(Lpe/i;)Lcom/linkedin/android/litr/b$b;
 
     .line 193
     .line 194
@@ -3125,7 +3125,7 @@
 
     .line 217
     .line 218
-    invoke-direct {v1, v2, p3, v3}, Lcom/linkedin/android/litr/a;-><init>(Ljava/util/Map;Lfe/a;Landroid/os/Looper;)V
+    invoke-direct {v1, v2, p3, v3}, Lcom/linkedin/android/litr/a;-><init>(Ljava/util/Map;Lge/a;Landroid/os/Looper;)V
 
     .line 219
     .line 220

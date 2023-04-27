@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Llc/d;
+.implements Lmc/d;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Llc/d<",
+        "Lmc/d<",
         "Lcom/google/firebase/messaging/g0;",
         ">;"
     }
@@ -29,7 +29,7 @@
 # static fields
 .field static final a:Lcom/google/firebase/messaging/a$c;
 
-.field private static final b:Llc/c;
+.field private static final b:Lmc/c;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Llc/c;->d(Ljava/lang/String;)Llc/c;
+    invoke-static {v0}, Lmc/c;->d(Ljava/lang/String;)Lmc/c;
 
     .line 11
     .line 12
@@ -62,7 +62,7 @@
     move-result-object v0
 
     .line 14
-    sput-object v0, Lcom/google/firebase/messaging/a$c;->b:Llc/c;
+    sput-object v0, Lcom/google/firebase/messaging/a$c;->b:Lmc/c;
 
     .line 15
     .line 16
@@ -149,23 +149,23 @@
 
     check-cast p1, Lcom/google/firebase/messaging/g0;
 
-    check-cast p2, Llc/e;
+    check-cast p2, Lmc/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/a$c;->b(Lcom/google/firebase/messaging/g0;Llc/e;)V
+    invoke-virtual {p0, p1, p2}, Lcom/google/firebase/messaging/a$c;->b(Lcom/google/firebase/messaging/g0;Lmc/e;)V
 
     return-void
 .end method
 
-.method public b(Lcom/google/firebase/messaging/g0;Llc/e;)V
+.method public b(Lcom/google/firebase/messaging/g0;Lmc/e;)V
     .locals 1
 
-    sget-object v0, Lcom/google/firebase/messaging/a$c;->b:Llc/c;
+    sget-object v0, Lcom/google/firebase/messaging/a$c;->b:Lmc/c;
 
-    invoke-virtual {p1}, Lcom/google/firebase/messaging/g0;->b()Lzc/b;
+    invoke-virtual {p1}, Lcom/google/firebase/messaging/g0;->b()Lad/b;
 
     move-result-object p1
 
-    invoke-interface {p2, v0, p1}, Llc/e;->b(Llc/c;Ljava/lang/Object;)Llc/e;
+    invoke-interface {p2, v0, p1}, Lmc/e;->a(Lmc/c;Ljava/lang/Object;)Lmc/e;
 
     return-void
 .end method

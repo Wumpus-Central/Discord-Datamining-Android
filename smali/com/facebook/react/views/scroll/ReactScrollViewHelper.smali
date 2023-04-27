@@ -721,7 +721,7 @@
     move-result-object v10
 
     .line 75
-    invoke-static/range {v5 .. v10}, Lw3/a;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static/range {v5 .. v10}, Lx3/a;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 76
     .line 77
@@ -2924,7 +2924,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, v4, v1, v2, v3}, Lw3/a;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v4, v1, v2, v3}, Lx3/a;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -3225,7 +3225,7 @@
     const-string v4, "updateFabricScrollState[%d] scrollX %d scrollY %d"
 
     .line 7
-    invoke-static {v0, v4, v1, v2, v3}, Lw3/a;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v4, v1, v2, v3}, Lx3/a;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     :cond_0

@@ -57,7 +57,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lk4/c;->a()Lcom/facebook/imagepipeline/core/ImagePipeline;
+    invoke-static {}, Ll4/c;->a()Lcom/facebook/imagepipeline/core/ImagePipeline;
 
     .line 2
     .line 3

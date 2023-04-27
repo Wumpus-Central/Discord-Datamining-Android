@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -26,32 +26,32 @@
 .end method
 
 .method private static native nativeAddRoundedCornersFilter(Landroid/graphics/Bitmap;IIII)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private static native nativeToCircleFastFilter(Landroid/graphics/Bitmap;Z)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private static native nativeToCircleFilter(Landroid/graphics/Bitmap;Z)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private static native nativeToCircleWithBorderFilter(Landroid/graphics/Bitmap;IIZ)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method public static toCircle(Landroid/graphics/Bitmap;Z)V
     .locals 2
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -171,11 +171,11 @@
 
 .method public static toCircleFast(Landroid/graphics/Bitmap;Z)V
     .locals 2
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3

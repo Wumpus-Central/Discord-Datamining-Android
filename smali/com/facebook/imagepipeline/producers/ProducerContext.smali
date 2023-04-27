@@ -22,7 +22,7 @@
 .method public abstract c(Lcom/facebook/imagepipeline/producers/m0;)V
 .end method
 
-.method public abstract d()Lq5/g;
+.method public abstract d()Lr5/g;
 .end method
 
 .method public abstract e(Ljava/lang/String;Ljava/lang/String;)V
@@ -58,10 +58,13 @@
 .method public abstract j()Lcom/facebook/imagepipeline/common/Priority;
 .end method
 
-.method public abstract k()Lcom/facebook/imagepipeline/request/ImageRequest;
+.method public abstract k(Lv5/f;)V
 .end method
 
-.method public abstract l(Ljava/util/Map;)V
+.method public abstract l()Lcom/facebook/imagepipeline/request/ImageRequest;
+.end method
+
+.method public abstract m(Ljava/util/Map;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,10 +75,10 @@
     .end annotation
 .end method
 
-.method public abstract m()Z
+.method public abstract n()Z
 .end method
 
-.method public abstract n(Ljava/lang/String;)Ljava/lang/Object;
+.method public abstract o(Ljava/lang/String;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -85,9 +88,6 @@
             ")TE;"
         }
     .end annotation
-.end method
-
-.method public abstract o(Lu5/f;)V
 .end method
 
 .method public abstract p()Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;

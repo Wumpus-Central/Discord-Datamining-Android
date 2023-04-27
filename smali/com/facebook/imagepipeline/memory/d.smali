@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lx5/h;
+.implements Ly5/h;
 
 
 # annotations
@@ -16,17 +16,17 @@
         "Lcom/facebook/imagepipeline/memory/b<",
         "Landroid/graphics/Bitmap;",
         ">;",
-        "Lx5/h;"
+        "Ly5/h;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Ly3/c;Lx5/z;Lx5/a0;Z)V
+.method public constructor <init>(Lz3/c;Ly5/z;Ly5/a0;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/facebook/imagepipeline/memory/b;-><init>(Ly3/c;Lx5/z;Lx5/a0;Z)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/facebook/imagepipeline/memory/b;-><init>(Lz3/c;Ly5/z;Ly5/a0;Z)V
 
     .line 2
     .line 3
@@ -505,7 +505,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -561,7 +561,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -693,7 +693,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3

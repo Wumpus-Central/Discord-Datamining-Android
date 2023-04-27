@@ -1194,7 +1194,7 @@
 
     .line 15
     :goto_0
-    invoke-static {v2}, Lc6/a;->a(Z)V
+    invoke-static {v2}, Ld6/a;->a(Z)V
 
     .line 16
     .line 17

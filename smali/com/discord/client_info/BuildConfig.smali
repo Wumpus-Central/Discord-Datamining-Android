@@ -10,11 +10,11 @@
 
 .field public static final LIBRARY_PACKAGE_NAME:Ljava/lang/String; = "com.discord.client_info"
 
-.field public static final PROGUARD_UUID:Ljava/lang/String; = "495d76e0-5f7c-4ddf-bb84-cb5ff5e225e5"
+.field public static final PROGUARD_UUID:Ljava/lang/String; = "a1d1c8e8-1c03-4dfd-8457-f0a9099b4759"
 
 .field public static final SENTRY_DSN:Ljava/lang/String; = "https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375"
 
-.field public static final SENTRY_RELEASE:Ljava/lang/String; = "discord_android@177.3.0-2+177203"
+.field public static final SENTRY_RELEASE:Ljava/lang/String; = "discord_android@177.4.0-2+177204"
 
 
 # direct methods

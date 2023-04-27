@@ -373,7 +373,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private final onInitFinish()V
@@ -719,8 +718,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method public static synthetic post$default(Lcom/discord/async_init/AsyncInitDispatcher;ZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
@@ -1890,7 +1887,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final setInitialized(Z)V
@@ -2135,7 +2131,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public final validateState()V

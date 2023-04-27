@@ -22,7 +22,7 @@
 
 .field private final b:Z
 
-.field private final c:Le4/b;
+.field private final c:Lf4/b;
 
 .field private final d:Z
 
@@ -102,7 +102,7 @@
     iput-boolean v0, p0, Lcom/facebook/imagepipeline/core/a;->a:Z
 
     .line 4
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->b(Lcom/facebook/imagepipeline/core/a$b;)Le4/b$a;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->b(Lcom/facebook/imagepipeline/core/a$b;)Lf4/b$a;
 
     .line 5
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->k(Lcom/facebook/imagepipeline/core/a$b;)Z
@@ -112,11 +112,11 @@
     iput-boolean v0, p0, Lcom/facebook/imagepipeline/core/a;->b:Z
 
     .line 6
-    invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->l(Lcom/facebook/imagepipeline/core/a$b;)Le4/b;
+    invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->l(Lcom/facebook/imagepipeline/core/a$b;)Lf4/b;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/imagepipeline/core/a;->c:Le4/b;
+    iput-object v0, p0, Lcom/facebook/imagepipeline/core/a;->c:Lf4/b;
 
     .line 7
     invoke-static {p1}, Lcom/facebook/imagepipeline/core/a$b;->m(Lcom/facebook/imagepipeline/core/a$b;)Z
@@ -431,15 +431,15 @@
     return v0
 .end method
 
-.method public m()Le4/b;
+.method public m()Lf4/b;
     .locals 1
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/core/a;->c:Le4/b;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/core/a;->c:Lf4/b;
 
     return-object v0
 .end method
 
-.method public n()Le4/b$a;
+.method public n()Lf4/b$a;
     .locals 1
 
     const/4 v0, 0x0

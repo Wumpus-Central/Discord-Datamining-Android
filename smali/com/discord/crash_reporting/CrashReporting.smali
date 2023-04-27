@@ -115,7 +115,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lmf/s;->h()Ljava/util/Map;
+    invoke-static {}, Lof/s;->h()Ljava/util/Map;
 
     .line 6
     .line 7
@@ -521,11 +521,11 @@
 
     .line 45
     :cond_0
-    new-instance p0, Llf/q;
+    new-instance p0, Lnf/q;
 
     .line 46
     .line 47
-    invoke-direct {p0}, Llf/q;-><init>()V
+    invoke-direct {p0}, Lnf/q;-><init>()V
 
     .line 48
     .line 49
@@ -1783,7 +1783,7 @@
     .line 30
     .line 31
     .line 32
-    const-string v1, "discord_android@177.3.0-2+177203"
+    const-string v1, "discord_android@177.4.0-2+177204"
 
     .line 33
     .line 34
@@ -1895,7 +1895,7 @@
     .line 90
     .line 91
     .line 92
-    const-string p0, "495d76e0-5f7c-4ddf-bb84-cb5ff5e225e5"
+    const-string p0, "a1d1c8e8-1c03-4dfd-8457-f0a9099b4759"
 
     .line 93
     .line 94
@@ -2838,7 +2838,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1}, Llf/e;->b(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {p1}, Lnf/e;->b(Ljava/lang/Throwable;)Ljava/lang/String;
 
     .line 11
     .line 12
@@ -3251,7 +3251,7 @@
 
     const/4 v4, 0x0
 
-    invoke-static {v0, v3, v4, v1, v2}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v0, v3, v4, v1, v2}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v0
 
@@ -3371,7 +3371,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0, v4, v2, v1, v3}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v0, v4, v2, v1, v3}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -3627,7 +3627,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static {v1, v2, v3, v4, v5}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v1, v2, v3, v4, v5}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v1
 
@@ -3639,7 +3639,7 @@
 
     const-string v1, "canary"
 
-    invoke-static {v0, v1, v3, v4, v5}, Lpi/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
+    invoke-static {v0, v1, v3, v4, v5}, Lri/l;->M(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
 
     move-result v0
 

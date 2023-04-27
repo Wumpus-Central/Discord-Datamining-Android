@@ -4,9 +4,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/facebook/react/bridge/Inspector;
 .end annotation
@@ -14,6 +11,9 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x9
     name = "Page"
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -28,7 +28,7 @@
 # direct methods
 .method private constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

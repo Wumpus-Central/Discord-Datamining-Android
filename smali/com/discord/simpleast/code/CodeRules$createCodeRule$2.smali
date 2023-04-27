@@ -187,7 +187,7 @@
 
     .line 36
     .line 37
-    invoke-static {p1, v5, v4, v2, v3}, Lpi/l;->L(Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    invoke-static {p1, v5, v4, v2, v3}, Lri/l;->L(Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
 
     .line 38
     .line 39

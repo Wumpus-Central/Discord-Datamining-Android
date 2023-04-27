@@ -120,7 +120,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     move-result p1
 

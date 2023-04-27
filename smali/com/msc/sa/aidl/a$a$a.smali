@@ -196,7 +196,7 @@
 
 
 # virtual methods
-.method public U(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
+.method public R(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -308,7 +308,7 @@
     move-result-object v2
 
     .line 54
-    invoke-interface {v2, p1, p2, p3, p4}, Lcom/msc/sa/aidl/a;->U(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
+    invoke-interface {v2, p1, p2, p3, p4}, Lcom/msc/sa/aidl/a;->R(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/msc/sa/aidl/ISACallback;)Ljava/lang/String;
 
     .line 55
     .line 56
@@ -839,7 +839,7 @@
     .line 547
 .end method
 
-.method public X(ILjava/lang/String;Landroid/os/Bundle;)Z
+.method public V(ILjava/lang/String;Landroid/os/Bundle;)Z
     .locals 6
 
     .line 1
@@ -948,7 +948,7 @@
     move-result-object v2
 
     .line 53
-    invoke-interface {v2, p1, p2, p3}, Lcom/msc/sa/aidl/a;->X(ILjava/lang/String;Landroid/os/Bundle;)Z
+    invoke-interface {v2, p1, p2, p3}, Lcom/msc/sa/aidl/a;->V(ILjava/lang/String;Landroid/os/Bundle;)Z
 
     .line 54
     .line 55

@@ -133,7 +133,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-static {p2}, Lek/f;->a(Ljava/lang/String;)[B
+    invoke-static {p2}, Lgk/f;->a(Ljava/lang/String;)[B
 
     .line 33
     .line 34

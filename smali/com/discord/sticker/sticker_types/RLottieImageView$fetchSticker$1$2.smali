@@ -107,7 +107,7 @@
 
     move-result-object p1
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -141,7 +141,7 @@
 
     move-result-object p1
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object p2
 

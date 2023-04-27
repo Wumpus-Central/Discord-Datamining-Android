@@ -153,7 +153,7 @@
 
     invoke-direct {p1, p0}, Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener$scrollStateListener$2;-><init>(Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;)V
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 

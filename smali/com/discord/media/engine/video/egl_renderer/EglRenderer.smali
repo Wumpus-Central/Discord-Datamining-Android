@@ -3259,7 +3259,7 @@
 
     .line 68
     .line 69
-    invoke-static {v6, v7, v10, v11}, Lcg/h;->d(JJ)J
+    invoke-static {v6, v7, v10, v11}, Leg/h;->d(JJ)J
 
     .line 70
     .line 71

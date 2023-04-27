@@ -501,7 +501,7 @@
     const/4 v3, 0x0
 
     .line 172
-    invoke-static {v3, v2}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v3, v2}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 173
     .line 174
@@ -554,11 +554,11 @@
     move-object v4, v2
 
     .line 198
-    check-cast v4, Lmf/p;
+    check-cast v4, Lof/p;
 
     .line 199
     .line 200
-    invoke-virtual {v4}, Lmf/p;->nextInt()I
+    invoke-virtual {v4}, Lof/p;->nextInt()I
 
     .line 201
     .line 202
@@ -594,7 +594,7 @@
 
     .line 217
     :cond_4
-    invoke-static {v1, v9}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v9}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 218
     .line 219
@@ -622,7 +622,7 @@
     move-object v3, v0
 
     .line 226
-    invoke-static {v1, v2}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 227
     .line 228

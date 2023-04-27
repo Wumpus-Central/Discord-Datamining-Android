@@ -15,27 +15,27 @@
 
 
 # instance fields
-.field private final a:Lfe/a;
+.field private final a:Lge/a;
 
 
 # direct methods
-.method private constructor <init>(Landroid/os/Looper;Lfe/a;)V
+.method private constructor <init>(Landroid/os/Looper;Lge/a;)V
     .locals 0
 
     .line 2
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 3
-    iput-object p2, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iput-object p2, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Looper;Lfe/a;Lcom/linkedin/android/litr/a$a;)V
+.method synthetic constructor <init>(Landroid/os/Looper;Lge/a;Lcom/linkedin/android/litr/a$a;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/linkedin/android/litr/a$b;-><init>(Landroid/os/Looper;Lfe/a;)V
+    invoke-direct {p0, p1, p2}, Lcom/linkedin/android/litr/a$b;-><init>(Landroid/os/Looper;Lge/a;)V
 
     return-void
 .end method
@@ -178,11 +178,11 @@
 
     .line 64
     :cond_1
-    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     .line 65
     .line 66
-    invoke-interface {p1, v2, v0}, Lfe/a;->onCancelled(Ljava/lang/String;Ljava/util/List;)V
+    invoke-interface {p1, v2, v0}, Lge/a;->onCancelled(Ljava/lang/String;Ljava/util/List;)V
 
     .line 67
     .line 68
@@ -203,11 +203,11 @@
     move-result p1
 
     .line 76
-    iget-object v0, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iget-object v0, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     .line 77
     .line 78
-    invoke-interface {v0, v2, p1}, Lfe/a;->onProgress(Ljava/lang/String;F)V
+    invoke-interface {v0, v2, p1}, Lge/a;->onProgress(Ljava/lang/String;F)V
 
     .line 79
     .line 80
@@ -232,11 +232,11 @@
 
     .line 89
     .line 90
-    iget-object v1, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iget-object v1, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     .line 91
     .line 92
-    invoke-interface {v1, v2, p1, v0}, Lfe/a;->onError(Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/List;)V
+    invoke-interface {v1, v2, p1, v0}, Lge/a;->onError(Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/List;)V
 
     .line 93
     .line 94
@@ -245,11 +245,11 @@
 
     .line 96
     :cond_4
-    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     .line 97
     .line 98
-    invoke-interface {p1, v2, v0}, Lfe/a;->onCompleted(Ljava/lang/String;Ljava/util/List;)V
+    invoke-interface {p1, v2, v0}, Lge/a;->onCompleted(Ljava/lang/String;Ljava/util/List;)V
 
     .line 99
     .line 100
@@ -258,11 +258,11 @@
 
     .line 102
     :cond_5
-    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lfe/a;
+    iget-object p1, p0, Lcom/linkedin/android/litr/a$b;->a:Lge/a;
 
     .line 103
     .line 104
-    invoke-interface {p1, v2}, Lfe/a;->onStarted(Ljava/lang/String;)V
+    invoke-interface {p1, v2}, Lge/a;->onStarted(Ljava/lang/String;)V
 
     .line 105
     .line 106

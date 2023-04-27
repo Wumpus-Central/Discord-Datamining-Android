@@ -53,7 +53,7 @@
         value = {
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;"
         }
     .end annotation
@@ -68,7 +68,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation

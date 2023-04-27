@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loj/d;
+.implements Lqj/d;
 
 
 # annotations
@@ -261,7 +261,7 @@
     move-result v1
 
     .line 25
-    invoke-virtual {p2}, Lokhttp3/Response;->y()Lokhttp3/Headers;
+    invoke-virtual {p2}, Lokhttp3/Response;->z()Lokhttp3/Headers;
 
     .line 26
     .line 27
@@ -277,7 +277,7 @@
     move-result-object v2
 
     .line 33
-    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->b0()Lokhttp3/Request;
 
     .line 34
     .line 35
@@ -347,7 +347,7 @@
 
     .line 67
     .line 68
-    new-instance v0, Ldk/i;
+    new-instance v0, Lfk/i;
 
     .line 69
     .line 70
@@ -359,7 +359,7 @@
     move-result-object p1
 
     .line 74
-    invoke-direct {v0, p1}, Ldk/i;-><init>(Lokio/Source;)V
+    invoke-direct {v0, p1}, Lfk/i;-><init>(Lokio/Source;)V
 
     .line 75
     .line 76
@@ -396,7 +396,7 @@
 
     .line 91
     :goto_0
-    invoke-static {v0}, Ldk/m;->d(Lokio/Source;)Lokio/BufferedSource;
+    invoke-static {v0}, Lfk/m;->d(Lokio/Source;)Lokio/BufferedSource;
 
     .line 92
     .line 93
@@ -622,7 +622,7 @@
 
     .line 197
     :try_start_3
-    invoke-virtual {p2}, Lokhttp3/Response;->c0()Lokhttp3/Request;
+    invoke-virtual {p2}, Lokhttp3/Response;->b0()Lokhttp3/Request;
 
     .line 198
     .line 199

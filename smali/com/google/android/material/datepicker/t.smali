@@ -240,7 +240,7 @@
     move-result-object p1
 
     .line 9
-    invoke-static {p0, p1}, Lg5/x0;->a(Landroid/icu/text/DateFormat;Landroid/icu/util/TimeZone;)V
+    invoke-static {p0, p1}, Lh5/x0;->a(Landroid/icu/text/DateFormat;Landroid/icu/util/TimeZone;)V
 
     .line 10
     .line 11
@@ -1058,7 +1058,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lg5/w0;->a(Ljava/lang/String;)Landroid/icu/util/TimeZone;
+    invoke-static {v0}, Lh5/w0;->a(Ljava/lang/String;)Landroid/icu/util/TimeZone;
 
     .line 4
     .line 5

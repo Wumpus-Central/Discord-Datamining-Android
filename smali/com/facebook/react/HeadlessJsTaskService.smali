@@ -143,7 +143,7 @@
 
     .line 18
     .line 19
-    invoke-static {p0}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 20
     .line 21

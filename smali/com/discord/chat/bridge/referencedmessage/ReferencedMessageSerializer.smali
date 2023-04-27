@@ -141,7 +141,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p1}, Lkotlinx/serialization/json/JsonPrimitive;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lkotlinx/serialization/json/JsonPrimitive;->a()Ljava/lang/String;
 
     .line 27
     .line 28

@@ -11,11 +11,11 @@
 
 .field public final synthetic b:Lcom/android/billingclient/api/QueryProductDetailsParams;
 
-.field public final synthetic c:Lu2/d;
+.field public final synthetic c:Lv2/d;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/android/billingclient/api/a;Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+.method public synthetic constructor <init>(Lcom/android/billingclient/api/a;Lcom/android/billingclient/api/QueryProductDetailsParams;Lv2/d;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,7 +24,7 @@
 
     iput-object p2, p0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/QueryProductDetailsParams;
 
-    iput-object p3, p0, Lcom/android/billingclient/api/t;->c:Lu2/d;
+    iput-object p3, p0, Lcom/android/billingclient/api/t;->c:Lv2/d;
 
     return-void
 .end method
@@ -38,9 +38,9 @@
 
     iget-object v1, p0, Lcom/android/billingclient/api/t;->b:Lcom/android/billingclient/api/QueryProductDetailsParams;
 
-    iget-object v2, p0, Lcom/android/billingclient/api/t;->c:Lu2/d;
+    iget-object v2, p0, Lcom/android/billingclient/api/t;->c:Lv2/d;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/billingclient/api/a;->F(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lcom/android/billingclient/api/a;->F(Lcom/android/billingclient/api/QueryProductDetailsParams;Lv2/d;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 

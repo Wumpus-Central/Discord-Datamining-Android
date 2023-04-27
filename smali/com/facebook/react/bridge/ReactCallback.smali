@@ -4,22 +4,22 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
 # virtual methods
 .method public abstract decrementPendingJSCalls()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract incrementPendingJSCalls()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public abstract onBatchComplete()V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

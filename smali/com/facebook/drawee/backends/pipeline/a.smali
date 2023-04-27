@@ -8,7 +8,7 @@
     value = {
         "Lcom/facebook/drawee/controller/a<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/imagepipeline/image/ImageInfo;",
         ">;"
@@ -28,22 +28,22 @@
 
 
 # instance fields
-.field private final A:Lv3/e;
+.field private final A:Lw3/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final B:Lo5/s;
+.field private final B:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -57,7 +57,7 @@
             "Lcom/facebook/common/internal/Supplier<",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;>;"
         }
     .end annotation
@@ -65,17 +65,17 @@
 
 .field private E:Z
 
-.field private F:Lv3/e;
+.field private F:Lw3/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private G:Lm4/g;
+.field private G:Ln4/g;
 
 .field private H:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -87,9 +87,9 @@
     .end annotation
 .end field
 
-.field private I:Lm4/b;
+.field private I:Ln4/b;
 
-.field private J:Ll4/b;
+.field private J:Lm4/b;
 
 .field private K:Lcom/facebook/imagepipeline/request/ImageRequest;
 
@@ -99,7 +99,7 @@
 
 .field private final y:Landroid/content/res/Resources;
 
-.field private final z:Lt5/a;
+.field private final z:Lu5/a;
 
 
 # direct methods
@@ -113,21 +113,21 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/res/Resources;Lo4/a;Lt5/a;Ljava/util/concurrent/Executor;Lo5/s;Lv3/e;)V
+.method public constructor <init>(Landroid/content/res/Resources;Lp4/a;Lu5/a;Ljava/util/concurrent/Executor;Lp5/s;Lw3/e;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/res/Resources;",
-            "Lo4/a;",
-            "Lt5/a;",
+            "Lp4/a;",
+            "Lu5/a;",
             "Ljava/util/concurrent/Executor;",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;",
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;)V"
         }
     .end annotation
@@ -136,7 +136,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, p2, p4, v0, v0}, Lcom/facebook/drawee/controller/a;-><init>(Lo4/a;Ljava/util/concurrent/Executor;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-direct {p0, p2, p4, v0, v0}, Lcom/facebook/drawee/controller/a;-><init>(Lp4/a;Ljava/util/concurrent/Executor;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 3
     .line 4
@@ -145,24 +145,24 @@
 
     .line 6
     .line 7
-    new-instance p2, Lk4/a;
+    new-instance p2, Ll4/a;
 
     .line 8
     .line 9
-    invoke-direct {p2, p1, p3}, Lk4/a;-><init>(Landroid/content/res/Resources;Lt5/a;)V
+    invoke-direct {p2, p1, p3}, Ll4/a;-><init>(Landroid/content/res/Resources;Lu5/a;)V
 
     .line 10
     .line 11
     .line 12
-    iput-object p2, p0, Lcom/facebook/drawee/backends/pipeline/a;->z:Lt5/a;
+    iput-object p2, p0, Lcom/facebook/drawee/backends/pipeline/a;->z:Lu5/a;
 
     .line 13
     .line 14
-    iput-object p6, p0, Lcom/facebook/drawee/backends/pipeline/a;->A:Lv3/e;
+    iput-object p6, p0, Lcom/facebook/drawee/backends/pipeline/a;->A:Lw3/e;
 
     .line 15
     .line 16
-    iput-object p5, p0, Lcom/facebook/drawee/backends/pipeline/a;->B:Lo5/s;
+    iput-object p5, p0, Lcom/facebook/drawee/backends/pipeline/a;->B:Lp5/s;
 
     .line 17
     .line 18
@@ -559,7 +559,7 @@
             "Lcom/facebook/common/internal/Supplier<",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;>;)V"
         }
     .end annotation
@@ -572,7 +572,7 @@
     const/4 p1, 0x0
 
     .line 4
-    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lu5/c;)V
+    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lv5/c;)V
 
     .line 5
     .line 6
@@ -619,15 +619,15 @@
     .line 46
 .end method
 
-.method private q0(Lv3/e;Lu5/c;)Landroid/graphics/drawable/Drawable;
+.method private q0(Lw3/e;Lv5/c;)Landroid/graphics/drawable/Drawable;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;",
-            "Lu5/c;",
+            "Lv5/c;",
             ")",
             "Landroid/graphics/drawable/Drawable;"
         }
@@ -674,11 +674,11 @@
     move-result-object v1
 
     .line 19
-    check-cast v1, Lt5/a;
+    check-cast v1, Lu5/a;
 
     .line 20
     .line 21
-    invoke-interface {v1, p2}, Lt5/a;->b(Lu5/c;)Z
+    invoke-interface {v1, p2}, Lu5/a;->b(Lv5/c;)Z
 
     .line 22
     .line 23
@@ -690,7 +690,7 @@
 
     .line 26
     .line 27
-    invoke-interface {v1, p2}, Lt5/a;->a(Lu5/c;)Landroid/graphics/drawable/Drawable;
+    invoke-interface {v1, p2}, Lu5/a;->a(Lv5/c;)Landroid/graphics/drawable/Drawable;
 
     .line 28
     .line 29
@@ -768,7 +768,7 @@
     .line 93
 .end method
 
-.method private r0(Lu5/c;)V
+.method private r0(Lv5/c;)V
     .locals 3
 
     .line 1
@@ -796,34 +796,34 @@
 
     .line 11
     .line 12
-    new-instance v0, Lq4/a;
+    new-instance v0, Lr4/a;
 
     .line 13
     .line 14
-    invoke-direct {v0}, Lq4/a;-><init>()V
+    invoke-direct {v0}, Lr4/a;-><init>()V
 
     .line 15
     .line 16
     .line 17
-    new-instance v1, Lr4/a;
+    new-instance v1, Ls4/a;
 
     .line 18
     .line 19
-    invoke-direct {v1, v0}, Lr4/a;-><init>(Lr4/b;)V
+    invoke-direct {v1, v0}, Ls4/a;-><init>(Ls4/b;)V
 
     .line 20
     .line 21
     .line 22
-    new-instance v2, Ll4/b;
+    new-instance v2, Lm4/b;
 
     .line 23
     .line 24
-    invoke-direct {v2}, Ll4/b;-><init>()V
+    invoke-direct {v2}, Lm4/b;-><init>()V
 
     .line 25
     .line 26
     .line 27
-    iput-object v2, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Ll4/b;
+    iput-object v2, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Lm4/b;
 
     .line 28
     .line 29
@@ -838,7 +838,7 @@
     .line 34
     .line 35
     :cond_1
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 36
     .line 37
@@ -846,11 +846,11 @@
 
     .line 38
     .line 39
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Ll4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Lm4/b;
 
     .line 40
     .line 41
-    invoke-virtual {p0, v0}, Lcom/facebook/drawee/backends/pipeline/a;->f0(Lm4/b;)V
+    invoke-virtual {p0, v0}, Lcom/facebook/drawee/backends/pipeline/a;->f0(Ln4/b;)V
 
     .line 42
     .line 43
@@ -864,7 +864,7 @@
     move-result-object v0
 
     .line 48
-    instance-of v0, v0, Lq4/a;
+    instance-of v0, v0, Lr4/a;
 
     .line 49
     .line 50
@@ -880,11 +880,11 @@
     move-result-object v0
 
     .line 56
-    check-cast v0, Lq4/a;
+    check-cast v0, Lr4/a;
 
     .line 57
     .line 58
-    invoke-virtual {p0, p1, v0}, Lcom/facebook/drawee/backends/pipeline/a;->z0(Lu5/c;Lq4/a;)V
+    invoke-virtual {p0, p1, v0}, Lcom/facebook/drawee/backends/pipeline/a;->z0(Lv5/c;Lr4/a;)V
 
     .line 59
     .line 60
@@ -1101,7 +1101,7 @@
     .locals 1
 
     .line 1
-    instance-of v0, p1, Li4/a;
+    instance-of v0, p1, Lj4/a;
 
     .line 2
     .line 3
@@ -1109,11 +1109,11 @@
 
     .line 4
     .line 5
-    check-cast p1, Li4/a;
+    check-cast p1, Lj4/a;
 
     .line 6
     .line 7
-    invoke-interface {p1}, Li4/a;->a()V
+    invoke-interface {p1}, Lj4/a;->a()V
 
     .line 8
     .line 9
@@ -1180,7 +1180,7 @@
     const/4 p1, 0x0
 
     .line 5
-    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lu5/c;)V
+    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lv5/c;)V
 
     .line 6
     .line 7
@@ -1226,7 +1226,7 @@
     .line 46
 .end method
 
-.method public declared-synchronized f0(Lm4/b;)V
+.method public declared-synchronized f0(Ln4/b;)V
     .locals 4
 
     .line 1
@@ -1234,11 +1234,11 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 3
     .line 4
-    instance-of v1, v0, Lm4/a;
+    instance-of v1, v0, Ln4/a;
 
     .line 5
     .line 6
@@ -1246,11 +1246,11 @@
 
     .line 7
     .line 8
-    check-cast v0, Lm4/a;
+    check-cast v0, Ln4/a;
 
     .line 9
     .line 10
-    invoke-virtual {v0, p1}, Lm4/a;->b(Lm4/b;)V
+    invoke-virtual {v0, p1}, Ln4/a;->b(Ln4/b;)V
 
     .line 11
     .line 12
@@ -1263,14 +1263,14 @@
 
     .line 15
     .line 16
-    new-instance v1, Lm4/a;
+    new-instance v1, Ln4/a;
 
     .line 17
     .line 18
     const/4 v2, 0x2
 
     .line 19
-    new-array v2, v2, [Lm4/b;
+    new-array v2, v2, [Ln4/b;
 
     .line 20
     .line 21
@@ -1288,12 +1288,12 @@
 
     .line 26
     .line 27
-    invoke-direct {v1, v2}, Lm4/a;-><init>([Lm4/b;)V
+    invoke-direct {v1, v2}, Ln4/a;-><init>([Ln4/b;)V
 
     .line 28
     .line 29
     .line 30
-    iput-object v1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iput-object v1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 31
     .line 32
@@ -1301,7 +1301,7 @@
 
     .line 33
     :cond_1
-    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1423,7 +1423,7 @@
 
     .line 3
     :try_start_0
-    iput-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iput-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 4
     .line 5
@@ -1486,7 +1486,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)",
             "Landroid/graphics/drawable/Drawable;"
         }
@@ -1494,7 +1494,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -1510,7 +1510,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -1524,7 +1524,7 @@
     move-result v0
 
     .line 16
-    invoke-static {v0}, Lv3/j;->i(Z)V
+    invoke-static {v0}, Lw3/j;->i(Z)V
 
     .line 17
     .line 18
@@ -1537,20 +1537,20 @@
     move-result-object p1
 
     .line 23
-    check-cast p1, Lu5/c;
+    check-cast p1, Lv5/c;
 
     .line 24
     .line 25
-    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lu5/c;)V
+    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lv5/c;)V
 
     .line 26
     .line 27
     .line 28
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->F:Lv3/e;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->F:Lw3/e;
 
     .line 29
     .line 30
-    invoke-direct {p0, v0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->q0(Lv3/e;Lu5/c;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, v0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->q0(Lw3/e;Lv5/c;)Landroid/graphics/drawable/Drawable;
 
     .line 31
     .line 32
@@ -1564,7 +1564,7 @@
 
     .line 35
     .line 36
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 37
     .line 38
@@ -1576,7 +1576,7 @@
 
     .line 41
     .line 42
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 43
     .line 44
@@ -1587,11 +1587,11 @@
     .line 46
     :cond_2
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->A:Lv3/e;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->A:Lw3/e;
 
     .line 47
     .line 48
-    invoke-direct {p0, v0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->q0(Lv3/e;Lu5/c;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, v0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->q0(Lw3/e;Lv5/c;)Landroid/graphics/drawable/Drawable;
 
     .line 49
     .line 50
@@ -1605,7 +1605,7 @@
 
     .line 53
     .line 54
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 55
     .line 56
@@ -1617,7 +1617,7 @@
 
     .line 59
     .line 60
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 61
     .line 62
@@ -1628,11 +1628,11 @@
     .line 64
     :cond_4
     :try_start_2
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->z:Lt5/a;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->z:Lu5/a;
 
     .line 65
     .line 66
-    invoke-interface {v0, p1}, Lt5/a;->a(Lu5/c;)Landroid/graphics/drawable/Drawable;
+    invoke-interface {v0, p1}, Lu5/a;->a(Lv5/c;)Landroid/graphics/drawable/Drawable;
 
     .line 67
     .line 68
@@ -1646,7 +1646,7 @@
 
     .line 71
     .line 72
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 73
     .line 74
@@ -1658,7 +1658,7 @@
 
     .line 77
     .line 78
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 79
     .line 80
@@ -1718,7 +1718,7 @@
     move-exception p1
 
     .line 106
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 107
     .line 108
@@ -1730,7 +1730,7 @@
 
     .line 111
     .line 112
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 113
     .line 114
@@ -1871,13 +1871,13 @@
         value = {
             "()",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -1893,14 +1893,14 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->B:Lo5/s;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->B:Lp5/s;
 
     .line 13
     .line 14
@@ -1923,7 +1923,7 @@
 
     .line 22
     :cond_1
-    invoke-interface {v0, v2}, Lo5/s;->get(Ljava/lang/Object;)Lcom/facebook/common/references/CloseableReference;
+    invoke-interface {v0, v2}, Lp5/s;->get(Ljava/lang/Object;)Lcom/facebook/common/references/CloseableReference;
 
     .line 23
     .line 24
@@ -1943,11 +1943,11 @@
     move-result-object v2
 
     .line 32
-    check-cast v2, Lu5/c;
+    check-cast v2, Lv5/c;
 
     .line 33
     .line 34
-    invoke-virtual {v2}, Lu5/c;->b()Lu5/i;
+    invoke-virtual {v2}, Lv5/c;->b()Lv5/i;
 
     .line 35
     .line 36
@@ -1955,7 +1955,7 @@
     move-result-object v2
 
     .line 38
-    invoke-interface {v2}, Lu5/i;->a()Z
+    invoke-interface {v2}, Lv5/i;->a()Z
 
     .line 39
     .line 40
@@ -1974,7 +1974,7 @@
     .line 45
     .line 46
     .line 47
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 48
     .line 49
@@ -1986,7 +1986,7 @@
 
     .line 52
     .line 53
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 54
     .line 55
@@ -1996,7 +1996,7 @@
 
     .line 57
     :cond_3
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 58
     .line 59
@@ -2008,7 +2008,7 @@
 
     .line 62
     .line 63
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 64
     .line 65
@@ -2019,7 +2019,7 @@
     .line 67
     :cond_5
     :goto_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 68
     .line 69
@@ -2031,7 +2031,7 @@
 
     .line 72
     .line 73
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 74
     .line 75
@@ -2044,7 +2044,7 @@
     move-exception v0
 
     .line 78
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 79
     .line 80
@@ -2056,7 +2056,7 @@
 
     .line 83
     .line 84
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 85
     .line 86
@@ -2307,7 +2307,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)I"
         }
     .end annotation
@@ -2345,7 +2345,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)",
             "Lcom/facebook/imagepipeline/image/ImageInfo;"
         }
@@ -2360,7 +2360,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lv3/j;->i(Z)V
+    invoke-static {v0}, Lw3/j;->i(Z)V
 
     .line 6
     .line 7
@@ -2420,7 +2420,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 3
     .line 4
@@ -2428,7 +2428,7 @@
 
     .line 5
     .line 6
-    new-instance v0, Lm4/c;
+    new-instance v0, Ln4/c;
 
     .line 7
     .line 8
@@ -2440,11 +2440,11 @@
     move-result-object v1
 
     .line 12
-    iget-object v2, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object v2, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 13
     .line 14
-    invoke-direct {v0, v1, v2}, Lm4/c;-><init>(Ljava/lang/String;Lm4/b;)V
+    invoke-direct {v0, v1, v2}, Ln4/c;-><init>(Ljava/lang/String;Ln4/b;)V
 
     .line 15
     .line 16
@@ -2465,11 +2465,11 @@
 
     .line 22
     .line 23
-    new-instance v2, Lw5/c;
+    new-instance v2, Lx5/c;
 
     .line 24
     .line 25
-    invoke-direct {v2, v1}, Lw5/c;-><init>(Ljava/util/Set;)V
+    invoke-direct {v2, v1}, Lx5/c;-><init>(Ljava/util/Set;)V
 
     .line 26
     .line 27
@@ -2478,7 +2478,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v2, v0}, Lw5/c;->a(Lcom/facebook/imagepipeline/listener/RequestListener;)V
+    invoke-virtual {v2, v0}, Lx5/c;->a(Lcom/facebook/imagepipeline/listener/RequestListener;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2524,7 +2524,7 @@
     return-object v0
 .end method
 
-.method public o0(Lcom/facebook/common/internal/Supplier;Ljava/lang/String;Lcom/facebook/cache/common/CacheKey;Ljava/lang/Object;Lv3/e;Lm4/b;)V
+.method public o0(Lcom/facebook/common/internal/Supplier;Ljava/lang/String;Lcom/facebook/cache/common/CacheKey;Ljava/lang/Object;Lw3/e;Ln4/b;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2532,21 +2532,21 @@
             "Lcom/facebook/common/internal/Supplier<",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;>;",
             "Ljava/lang/String;",
             "Lcom/facebook/cache/common/CacheKey;",
             "Ljava/lang/Object;",
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;",
-            "Lm4/b;",
+            "Ln4/b;",
             ")V"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -2562,7 +2562,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -2582,7 +2582,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0, p5}, Lcom/facebook/drawee/backends/pipeline/a;->x0(Lv3/e;)V
+    invoke-virtual {p0, p5}, Lcom/facebook/drawee/backends/pipeline/a;->x0(Lw3/e;)V
 
     .line 21
     .line 22
@@ -2595,17 +2595,17 @@
     const/4 p1, 0x0
 
     .line 27
-    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lu5/c;)V
+    invoke-direct {p0, p1}, Lcom/facebook/drawee/backends/pipeline/a;->r0(Lv5/c;)V
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {p0, p6}, Lcom/facebook/drawee/backends/pipeline/a;->f0(Lm4/b;)V
+    invoke-virtual {p0, p6}, Lcom/facebook/drawee/backends/pipeline/a;->f0(Ln4/b;)V
 
     .line 31
     .line 32
     .line 33
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 34
     .line 35
@@ -2617,7 +2617,7 @@
 
     .line 38
     .line 39
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 40
     .line 41
@@ -2984,17 +2984,17 @@
     .line 400
 .end method
 
-.method protected declared-synchronized p0(Lm4/f;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/common/internal/Supplier;)V
+.method protected declared-synchronized p0(Ln4/f;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/common/internal/Supplier;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lm4/f;",
+            "Ln4/f;",
             "Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder<",
             "Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;",
             "Lcom/facebook/imagepipeline/request/ImageRequest;",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;",
             "Lcom/facebook/imagepipeline/image/ImageInfo;",
             ">;",
@@ -3009,7 +3009,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 3
     .line 4
@@ -3017,7 +3017,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lm4/g;->f()V
+    invoke-virtual {v0}, Ln4/g;->f()V
 
     .line 7
     .line 8
@@ -3027,7 +3027,7 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 12
     .line 13
@@ -3035,7 +3035,7 @@
 
     .line 14
     .line 15
-    new-instance v0, Lm4/g;
+    new-instance v0, Ln4/g;
 
     .line 16
     .line 17
@@ -3047,42 +3047,42 @@
     move-result-object v1
 
     .line 21
-    invoke-direct {v0, v1, p0, p3}, Lm4/g;-><init>(Lc4/b;Lcom/facebook/drawee/backends/pipeline/a;Lcom/facebook/common/internal/Supplier;)V
+    invoke-direct {v0, v1, p0, p3}, Ln4/g;-><init>(Ld4/b;Lcom/facebook/drawee/backends/pipeline/a;Lcom/facebook/common/internal/Supplier;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iput-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 25
     .line 26
     :cond_1
-    iget-object p3, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iget-object p3, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 27
     .line 28
-    invoke-virtual {p3, p1}, Lm4/g;->c(Lm4/f;)V
+    invoke-virtual {p3, p1}, Ln4/g;->c(Ln4/f;)V
 
     .line 29
     .line 30
     .line 31
-    iget-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iget-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 32
     .line 33
     const/4 p3, 0x1
 
     .line 34
-    invoke-virtual {p1, p3}, Lm4/g;->g(Z)V
+    invoke-virtual {p1, p3}, Ln4/g;->g(Z)V
 
     .line 35
     .line 36
     .line 37
-    iget-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Lm4/g;
+    iget-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->G:Ln4/g;
 
     .line 38
     .line 39
-    invoke-virtual {p1, p2}, Lm4/g;->i(Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;)V
+    invoke-virtual {p1, p2}, Ln4/g;->i(Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;)V
 
     .line 40
     .line 41
@@ -3267,13 +3267,13 @@
             "()",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -3289,7 +3289,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -3298,7 +3298,7 @@
     const/4 v0, 0x2
 
     .line 13
-    invoke-static {v0}, Lw3/a;->v(I)Z
+    invoke-static {v0}, Lx3/a;->v(I)Z
 
     .line 14
     .line 15
@@ -3334,7 +3334,7 @@
 
     .line 30
     .line 31
-    invoke-static {v0, v2, v1}, Lw3/a;->x(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-static {v0, v2, v1}, Lx3/a;->x(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 32
     .line 33
@@ -3356,7 +3356,7 @@
 
     .line 41
     .line 42
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 43
     .line 44
@@ -3368,7 +3368,7 @@
 
     .line 47
     .line 48
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 49
     .line 50
@@ -3670,7 +3670,7 @@
     return-object p1
 
     :cond_0
-    invoke-interface {p1}, Lu5/g;->getExtras()Ljava/util/Map;
+    invoke-interface {p1}, Lv5/g;->getExtras()Ljava/util/Map;
 
     move-result-object p1
 
@@ -3684,7 +3684,7 @@
             "(",
             "Ljava/lang/String;",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)V"
         }
     .end annotation
@@ -3699,7 +3699,7 @@
 
     .line 5
     :try_start_0
-    iget-object p2, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object p2, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 6
     .line 7
@@ -3717,7 +3717,7 @@
     const/4 v2, 0x1
 
     .line 13
-    invoke-interface {p2, p1, v1, v2, v0}, Lm4/b;->a(Ljava/lang/String;IZLjava/lang/String;)V
+    invoke-interface {p2, p1, v1, v2, v0}, Ln4/b;->a(Ljava/lang/String;IZLjava/lang/String;)V
 
     .line 14
     .line 15
@@ -3818,7 +3818,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Lv3/i;->c(Ljava/lang/Object;)Lv3/i$b;
+    invoke-static {p0}, Lw3/i;->c(Ljava/lang/Object;)Lw3/i$b;
 
     .line 2
     .line 3
@@ -3838,7 +3838,7 @@
     move-result-object v2
 
     .line 11
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 12
     .line 13
@@ -3854,7 +3854,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 20
     .line 21
@@ -3862,7 +3862,7 @@
     move-result-object v0
 
     .line 23
-    invoke-virtual {v0}, Lv3/i$b;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lw3/i$b;->toString()Ljava/lang/String;
 
     .line 24
     .line 25
@@ -3896,7 +3896,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)V"
         }
     .end annotation
@@ -3906,7 +3906,7 @@
     return-void
 .end method
 
-.method public declared-synchronized v0(Lm4/b;)V
+.method public declared-synchronized v0(Ln4/b;)V
     .locals 2
 
     .line 1
@@ -3914,11 +3914,11 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
 
     .line 3
     .line 4
-    instance-of v1, v0, Lm4/a;
+    instance-of v1, v0, Ln4/a;
 
     .line 5
     .line 6
@@ -3926,11 +3926,11 @@
 
     .line 7
     .line 8
-    check-cast v0, Lm4/a;
+    check-cast v0, Ln4/a;
 
     .line 9
     .line 10
-    invoke-virtual {v0, p1}, Lm4/a;->c(Lm4/b;)V
+    invoke-virtual {v0, p1}, Ln4/a;->c(Ln4/b;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -3952,7 +3952,7 @@
 
     .line 18
     :try_start_1
-    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Lm4/b;
+    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->I:Ln4/b;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -4089,18 +4089,18 @@
     return p1
 .end method
 
-.method public x0(Lv3/e;)V
+.method public x0(Lw3/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lv3/e<",
-            "Lt5/a;",
+            "Lw3/e<",
+            "Lu5/a;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->F:Lv3/e;
+    iput-object p1, p0, Lcom/facebook/drawee/backends/pipeline/a;->F:Lw3/e;
 
     return-void
 .end method
@@ -4136,14 +4136,14 @@
 
     sget-object v3, Lcom/facebook/imagepipeline/request/ImageRequest;->REQUEST_TO_URI_FN:Lcom/facebook/common/internal/Fn;
 
-    invoke-static {v0, v1, v2, v3}, Lf5/e;->a(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lcom/facebook/common/internal/Fn;)Landroid/net/Uri;
+    invoke-static {v0, v1, v2, v3}, Lg5/e;->a(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lcom/facebook/common/internal/Fn;)Landroid/net/Uri;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method protected z0(Lu5/c;Lq4/a;)V
+.method protected z0(Lv5/c;Lr4/a;)V
     .locals 2
 
     .line 1
@@ -4155,7 +4155,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p2, v0}, Lq4/a;->i(Ljava/lang/String;)V
+    invoke-virtual {p2, v0}, Lr4/a;->i(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -4207,16 +4207,16 @@
 
     .line 30
     :cond_0
-    invoke-virtual {p2, v1}, Lq4/a;->m(Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;)V
+    invoke-virtual {p2, v1}, Lr4/a;->m(Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;)V
 
     .line 31
     .line 32
     .line 33
-    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Ll4/b;
+    iget-object v0, p0, Lcom/facebook/drawee/backends/pipeline/a;->J:Lm4/b;
 
     .line 34
     .line 35
-    invoke-virtual {v0}, Ll4/b;->b()I
+    invoke-virtual {v0}, Lm4/b;->b()I
 
     .line 36
     .line 37
@@ -4224,7 +4224,7 @@
     move-result v0
 
     .line 39
-    invoke-static {v0}, Lm4/d;->b(I)Ljava/lang/String;
+    invoke-static {v0}, Ln4/d;->b(I)Ljava/lang/String;
 
     .line 40
     .line 41
@@ -4232,7 +4232,7 @@
     move-result-object v1
 
     .line 43
-    invoke-static {v0}, Ll4/a;->a(I)I
+    invoke-static {v0}, Lm4/a;->a(I)I
 
     .line 44
     .line 45
@@ -4240,7 +4240,7 @@
     move-result v0
 
     .line 47
-    invoke-virtual {p2, v1, v0}, Lq4/a;->l(Ljava/lang/String;I)V
+    invoke-virtual {p2, v1, v0}, Lr4/a;->l(Ljava/lang/String;I)V
 
     .line 48
     .line 49
@@ -4265,12 +4265,12 @@
     move-result v1
 
     .line 60
-    invoke-virtual {p2, v0, v1}, Lq4/a;->j(II)V
+    invoke-virtual {p2, v0, v1}, Lr4/a;->j(II)V
 
     .line 61
     .line 62
     .line 63
-    invoke-virtual {p1}, Lu5/c;->g()I
+    invoke-virtual {p1}, Lv5/c;->g()I
 
     .line 64
     .line 65
@@ -4278,7 +4278,7 @@
     move-result p1
 
     .line 67
-    invoke-virtual {p2, p1}, Lq4/a;->k(I)V
+    invoke-virtual {p2, p1}, Lr4/a;->k(I)V
 
     .line 68
     .line 69
@@ -4287,7 +4287,7 @@
 
     .line 71
     :cond_1
-    invoke-virtual {p2}, Lq4/a;->h()V
+    invoke-virtual {p2}, Lr4/a;->h()V
 
     .line 72
     .line 73

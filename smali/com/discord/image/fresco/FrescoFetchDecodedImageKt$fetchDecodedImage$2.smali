@@ -26,7 +26,7 @@
         "onNewResultImpl",
         "Lcom/facebook/datasource/DataSource;",
         "Lcom/facebook/common/references/CloseableReference;",
-        "Lu5/c;",
+        "Lv5/c;",
         "dataSource",
         "onFailureImpl",
         "fresco_release"
@@ -209,7 +209,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation

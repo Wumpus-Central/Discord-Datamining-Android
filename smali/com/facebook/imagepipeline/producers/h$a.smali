@@ -17,10 +17,10 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -67,14 +67,14 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation
 
     .line 1
     :try_start_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -90,7 +90,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -131,7 +131,7 @@
     .line 27
     .line 28
     :cond_1
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 29
     .line 30
@@ -143,7 +143,7 @@
 
     .line 33
     .line 34
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 35
     .line 36
@@ -162,11 +162,11 @@
     move-result-object v2
 
     .line 42
-    check-cast v2, Lu5/c;
+    check-cast v2, Lv5/c;
 
     .line 43
     .line 44
-    invoke-virtual {v2}, Lu5/c;->h()Z
+    invoke-virtual {v2}, Lv5/c;->h()Z
 
     .line 45
     .line 46
@@ -207,7 +207,7 @@
 
     .line 63
     .line 64
-    invoke-static {v2}, Lcom/facebook/imagepipeline/producers/h;->c(Lcom/facebook/imagepipeline/producers/h;)Lo5/s;
+    invoke-static {v2}, Lcom/facebook/imagepipeline/producers/h;->c(Lcom/facebook/imagepipeline/producers/h;)Lp5/s;
 
     .line 65
     .line 66
@@ -219,7 +219,7 @@
 
     .line 69
     .line 70
-    invoke-interface {v2, v3}, Lo5/s;->get(Ljava/lang/Object;)Lcom/facebook/common/references/CloseableReference;
+    invoke-interface {v2, v3}, Lp5/s;->get(Ljava/lang/Object;)Lcom/facebook/common/references/CloseableReference;
 
     .line 71
     .line 72
@@ -242,11 +242,11 @@
     move-result-object v3
 
     .line 80
-    check-cast v3, Lu5/c;
+    check-cast v3, Lv5/c;
 
     .line 81
     .line 82
-    invoke-virtual {v3}, Lu5/c;->b()Lu5/i;
+    invoke-virtual {v3}, Lv5/c;->b()Lv5/i;
 
     .line 83
     .line 84
@@ -262,11 +262,11 @@
     move-result-object v4
 
     .line 90
-    check-cast v4, Lu5/c;
+    check-cast v4, Lv5/c;
 
     .line 91
     .line 92
-    invoke-virtual {v4}, Lu5/c;->b()Lu5/i;
+    invoke-virtual {v4}, Lv5/c;->b()Lv5/i;
 
     .line 93
     .line 94
@@ -274,7 +274,7 @@
     move-result-object v4
 
     .line 96
-    invoke-interface {v4}, Lu5/i;->a()Z
+    invoke-interface {v4}, Lv5/i;->a()Z
 
     .line 97
     .line 98
@@ -286,7 +286,7 @@
 
     .line 101
     .line 102
-    invoke-interface {v4}, Lu5/i;->c()I
+    invoke-interface {v4}, Lv5/i;->c()I
 
     .line 103
     .line 104
@@ -294,7 +294,7 @@
     move-result v4
 
     .line 106
-    invoke-interface {v3}, Lu5/i;->c()I
+    invoke-interface {v3}, Lv5/i;->c()I
 
     .line 107
     .line 108
@@ -349,7 +349,7 @@
     .line 125
     .line 126
     .line 127
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 128
     .line 129
@@ -361,7 +361,7 @@
 
     .line 132
     .line 133
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 134
     .line 135
@@ -397,7 +397,7 @@
 
     .line 147
     .line 148
-    invoke-static {v1}, Lcom/facebook/imagepipeline/producers/h;->c(Lcom/facebook/imagepipeline/producers/h;)Lo5/s;
+    invoke-static {v1}, Lcom/facebook/imagepipeline/producers/h;->c(Lcom/facebook/imagepipeline/producers/h;)Lp5/s;
 
     .line 149
     .line 150
@@ -409,7 +409,7 @@
 
     .line 153
     .line 154
-    invoke-interface {v1, v2, p1}, Lo5/s;->d(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-interface {v1, v2, p1}, Lp5/s;->b(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     .line 155
     .line 156
@@ -474,7 +474,7 @@
     .line 180
     .line 181
     .line 182
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 183
     .line 184
@@ -486,7 +486,7 @@
 
     .line 187
     .line 188
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 189
     .line 190
@@ -525,7 +525,7 @@
     .line 202
     .line 203
     .line 204
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 205
     .line 206
@@ -537,7 +537,7 @@
 
     .line 209
     .line 210
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 211
     .line 212
@@ -550,7 +550,7 @@
     move-exception p1
 
     .line 215
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 216
     .line 217
@@ -562,7 +562,7 @@
 
     .line 220
     .line 221
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 222
     .line 223

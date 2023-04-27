@@ -668,7 +668,7 @@
     const-string v1, "Tried to start a task on a react context that has already been destroyed"
 
     .line 7
-    invoke-static {v0, v1}, Lc6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ld6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1018,7 +1018,7 @@
     move-result-object v1
 
     .line 34
-    invoke-static {v0, v1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 35
     .line 36
@@ -1098,7 +1098,7 @@
     move-result-object v1
 
     .line 74
-    invoke-static {v0, v1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 75
     .line 76
@@ -1490,7 +1490,7 @@
     move-result-object v4
 
     .line 43
-    invoke-static {v3, v4}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v3, v4}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 44
     .line 45

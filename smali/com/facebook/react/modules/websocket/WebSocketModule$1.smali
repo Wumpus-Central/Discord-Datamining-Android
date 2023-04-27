@@ -1,5 +1,5 @@
 .class Lcom/facebook/react/modules/websocket/WebSocketModule$1;
-.super Loj/t;
+.super Lqj/t;
 .source "SourceFile"
 
 
@@ -28,7 +28,7 @@
 
     iput p2, p0, Lcom/facebook/react/modules/websocket/WebSocketModule$1;->val$id:I
 
-    invoke-direct {p0}, Loj/t;-><init>()V
+    invoke-direct {p0}, Lqj/t;-><init>()V
 
     return-void
 .end method

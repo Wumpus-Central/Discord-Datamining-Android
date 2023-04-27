@@ -191,7 +191,7 @@
     .line 77
 .end method
 
-.method static d(II)Lcom/google/android/material/datepicker/l;
+.method static b(II)Lcom/google/android/material/datepicker/l;
     .locals 2
 
     .line 1
@@ -485,7 +485,7 @@
     .line 77
 .end method
 
-.method static h()Lcom/google/android/material/datepicker/l;
+.method static f()Lcom/google/android/material/datepicker/l;
     .locals 2
 
     new-instance v0, Lcom/google/android/material/datepicker/l;
@@ -501,230 +501,7 @@
 
 
 # virtual methods
-.method D()J
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
-
-    invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method E(I)Lcom/google/android/material/datepicker/l;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lcom/google/android/material/datepicker/t;->d(Ljava/util/Calendar;)Ljava/util/Calendar;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    const/4 v1, 0x2
-
-    .line 8
-    invoke-virtual {v0, v1, p1}, Ljava/util/Calendar;->add(II)V
-
-    .line 9
-    .line 10
-    .line 11
-    new-instance p1, Lcom/google/android/material/datepicker/l;
-
-    .line 12
-    .line 13
-    invoke-direct {p1, v0}, Lcom/google/android/material/datepicker/l;-><init>(Ljava/util/Calendar;)V
-
-    .line 14
-    .line 15
-    .line 16
-    return-object p1
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-.end method
-
-.method J(Lcom/google/android/material/datepicker/l;)I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
-
-    .line 2
-    .line 3
-    instance-of v0, v0, Ljava/util/GregorianCalendar;
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p1, Lcom/google/android/material/datepicker/l;->m:I
-
-    .line 8
-    .line 9
-    iget v1, p0, Lcom/google/android/material/datepicker/l;->m:I
-
-    .line 10
-    .line 11
-    sub-int/2addr v0, v1
-
-    .line 12
-    mul-int/lit8 v0, v0, 0xc
-
-    .line 13
-    .line 14
-    iget p1, p1, Lcom/google/android/material/datepicker/l;->l:I
-
-    .line 15
-    .line 16
-    iget v1, p0, Lcom/google/android/material/datepicker/l;->l:I
-
-    .line 17
-    .line 18
-    sub-int/2addr p1, v1
-
-    .line 19
-    add-int/2addr v0, p1
-
-    .line 20
-    return v0
-
-    .line 21
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    .line 22
-    .line 23
-    const-string v0, "Only Gregorian calendars are supported."
-
-    .line 24
-    .line 25
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    throw p1
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-.end method
-
-.method public b(Lcom/google/android/material/datepicker/l;)I
+.method public a(Lcom/google/android/material/datepicker/l;)I
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
@@ -743,7 +520,7 @@
 
     check-cast p1, Lcom/google/android/material/datepicker/l;
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/l;->b(Lcom/google/android/material/datepicker/l;)I
+    invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/l;->a(Lcom/google/android/material/datepicker/l;)I
 
     move-result p1
 
@@ -992,7 +769,7 @@
     .line 81
 .end method
 
-.method q()I
+.method i()I
     .locals 2
 
     .line 1
@@ -1102,7 +879,7 @@
     .line 81
 .end method
 
-.method r(I)J
+.method j(I)J
     .locals 2
 
     .line 1
@@ -1136,6 +913,318 @@
     .line 15
     return-wide v0
     .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+.end method
+
+.method p(J)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/android/material/datepicker/t;->d(Ljava/util/Calendar;)Ljava/util/Calendar;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0, p1, p2}, Ljava/util/Calendar;->setTimeInMillis(J)V
+
+    .line 8
+    .line 9
+    .line 10
+    const/4 p1, 0x5
+
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    return p1
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+.end method
+
+.method r()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide v0
+
+    .line 11
+    invoke-static {v0, v1}, Lcom/google/android/material/datepicker/e;->c(J)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    return-object v0
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+.end method
+
+.method t()J
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
+
+    invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method u(I)Lcom/google/android/material/datepicker/l;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/android/material/datepicker/t;->d(Ljava/util/Calendar;)Ljava/util/Calendar;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x2
+
+    .line 8
+    invoke-virtual {v0, v1, p1}, Ljava/util/Calendar;->add(II)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance p1, Lcom/google/android/material/datepicker/l;
+
+    .line 12
+    .line 13
+    invoke-direct {p1, v0}, Lcom/google/android/material/datepicker/l;-><init>(Ljava/util/Calendar;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p1
     .line 17
     .line 18
     .line 19
@@ -1392,154 +1481,69 @@
     .line 179
 .end method
 
-.method x(J)I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lcom/google/android/material/datepicker/t;->d(Ljava/util/Calendar;)Ljava/util/Calendar;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    invoke-virtual {v0, p1, p2}, Ljava/util/Calendar;->setTimeInMillis(J)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 p1, 0x5
-
-    .line 11
-    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    return p1
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-.end method
-
-.method y()Ljava/lang/String;
+.method z(Lcom/google/android/material/datepicker/l;)I
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    instance-of v0, v0, Ljava/util/GregorianCalendar;
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->k:Ljava/util/Calendar;
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
+    iget v0, p1, Lcom/google/android/material/datepicker/l;->m:I
 
     .line 8
     .line 9
-    .line 10
-    move-result-wide v0
+    iget v1, p0, Lcom/google/android/material/datepicker/l;->m:I
 
+    .line 10
     .line 11
-    invoke-static {v0, v1}, Lcom/google/android/material/datepicker/e;->c(J)Ljava/lang/String;
+    sub-int/2addr v0, v1
 
     .line 12
+    mul-int/lit8 v0, v0, 0xc
+
     .line 13
     .line 14
-    move-result-object v0
+    iget p1, p1, Lcom/google/android/material/datepicker/l;->l:I
 
     .line 15
-    iput-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
-
     .line 16
-    .line 17
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/material/datepicker/l;->q:Ljava/lang/String;
+    iget v1, p0, Lcom/google/android/material/datepicker/l;->l:I
 
+    .line 17
     .line 18
+    sub-int/2addr p1, v1
+
     .line 19
-    return-object v0
+    add-int/2addr v0, p1
+
     .line 20
+    return v0
+
     .line 21
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
     .line 22
     .line 23
+    const-string v0, "Only Gregorian calendars are supported."
+
     .line 24
     .line 25
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 26
     .line 27
     .line 28
+    throw p1
     .line 29
     .line 30
     .line 31
@@ -1589,8 +1593,4 @@
     .line 75
     .line 76
     .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
 .end method

@@ -1,5 +1,5 @@
 .class Lcom/google/android/material/chip/Chip$a;
-.super Ltb/f;
+.super Lub/f;
 .source "SourceFile"
 
 
@@ -24,7 +24,7 @@
 
     iput-object p1, p0, Lcom/google/android/material/chip/Chip$a;->a:Lcom/google/android/material/chip/Chip;
 
-    invoke-direct {p0}, Ltb/f;-><init>()V
+    invoke-direct {p0}, Lub/f;-><init>()V
 
     return-void
 .end method

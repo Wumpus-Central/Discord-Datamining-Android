@@ -437,7 +437,7 @@
 
     .line 85
     .line 86
-    invoke-static {p1}, Lpi/l;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Lri/l;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 87
     .line 88
@@ -484,7 +484,7 @@
     const/4 v7, 0x0
 
     .line 107
-    invoke-static/range {v2 .. v7}, Lpi/l;->y0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
+    invoke-static/range {v2 .. v7}, Lri/l;->y0(Ljava/lang/CharSequence;[CZIILjava/lang/Object;)Ljava/util/List;
 
     .line 108
     .line 109

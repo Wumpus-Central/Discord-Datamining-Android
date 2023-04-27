@@ -22,7 +22,7 @@
 
 .field private d:Lcom/android/billingclient/api/BillingFlowParams$c;
 
-.field private e:Lra/b0;
+.field private e:Lsa/b0;
 
 .field private f:Ljava/util/ArrayList;
 
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lu2/o;)V
+.method synthetic constructor <init>(Lv2/o;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$a;-><init>(Lu2/j;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/BillingFlowParams$a;-><init>(Lv2/j;)V
 
     return-object v0
 .end method
@@ -90,10 +90,10 @@
     return-void
 .end method
 
-.method static bridge synthetic l(Lcom/android/billingclient/api/BillingFlowParams;Lra/b0;)V
+.method static bridge synthetic l(Lcom/android/billingclient/api/BillingFlowParams;Lsa/b0;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/BillingFlowParams;->e:Lra/b0;
+    iput-object p1, p0, Lcom/android/billingclient/api/BillingFlowParams;->e:Lsa/b0;
 
     return-void
 .end method
@@ -207,13 +207,12 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final g()Ljava/util/List;
     .locals 1
 
-    iget-object v0, p0, Lcom/android/billingclient/api/BillingFlowParams;->e:Lra/b0;
+    iget-object v0, p0, Lcom/android/billingclient/api/BillingFlowParams;->e:Lsa/b0;
 
     return-object v0
 .end method

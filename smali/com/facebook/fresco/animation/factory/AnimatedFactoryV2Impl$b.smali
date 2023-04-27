@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls5/c;
+.implements Lt5/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b()Ls5/c;
+    value = Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->b()Lt5/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Lu5/e;ILu5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lu5/c;
+.method public a(Lv5/e;ILv5/i;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lv5/c;
     .locals 0
 
     .line 1
@@ -42,7 +42,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->d(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Lk5/d;
+    invoke-static {p2}, Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;->d(Lcom/facebook/fresco/animation/factory/AnimatedFactoryV2Impl;)Ll5/d;
 
     .line 4
     .line 5
@@ -54,7 +54,7 @@
 
     .line 8
     .line 9
-    invoke-interface {p2, p1, p4, p3}, Lk5/d;->a(Lu5/e;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;Landroid/graphics/Bitmap$Config;)Lu5/c;
+    invoke-interface {p2, p1, p4, p3}, Ll5/d;->b(Lv5/e;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;Landroid/graphics/Bitmap$Config;)Lv5/c;
 
     .line 10
     .line 11

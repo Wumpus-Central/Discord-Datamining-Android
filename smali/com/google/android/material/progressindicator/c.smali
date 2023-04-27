@@ -1141,7 +1141,7 @@
     move-result v1
 
     .line 13
-    invoke-static {v0, v1}, Lkb/a;->a(II)I
+    invoke-static {v0, v1}, Llb/a;->a(II)I
 
     .line 14
     .line 15

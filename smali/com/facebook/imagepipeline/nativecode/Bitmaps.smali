@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -31,7 +31,7 @@
 
 .method public static copyBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 4
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -80,7 +80,7 @@
     move-result-object v0
 
     .line 20
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 21
     .line 22
@@ -101,7 +101,7 @@
     move-result-object v0
 
     .line 31
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 32
     .line 33
@@ -145,7 +145,7 @@
     move-result-object v0
 
     .line 51
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 52
     .line 53
@@ -186,7 +186,7 @@
     move-result-object v0
 
     .line 70
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 71
     .line 72
@@ -229,6 +229,6 @@
 .end method
 
 .method private static native nativeCopyBitmap(Landroid/graphics/Bitmap;ILandroid/graphics/Bitmap;II)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method

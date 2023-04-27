@@ -89,7 +89,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 
@@ -219,11 +218,11 @@
 
     .line 51
     .line 52
-    const-string v2, "177.3"
+    const-string v2, "177.4"
 
     .line 53
     .line 54
-    const v3, 0x2b433
+    const v3, 0x2b434
 
     .line 55
     .line 56
@@ -520,6 +519,4 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method

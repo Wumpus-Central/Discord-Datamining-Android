@@ -13,7 +13,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Ld9/x;",
+            "Le9/x;",
             ">;"
         }
     .end annotation
@@ -60,7 +60,7 @@
 
     .line 9
     .line 10
-    invoke-static {p2}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -354,11 +354,11 @@
     move-result-object v1
 
     .line 16
-    check-cast v1, Ld9/x;
+    check-cast v1, Le9/x;
 
     .line 17
     .line 18
-    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
+    invoke-interface {p1, v1}, Lcom/google/android/exoplayer2/upstream/DataSource;->c(Le9/x;)V
 
     .line 19
     .line 20
@@ -488,7 +488,7 @@
 
     .line 4
     .line 5
-    new-instance v0, Ld9/c;
+    new-instance v0, Le9/c;
 
     .line 6
     .line 7
@@ -496,7 +496,7 @@
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Ld9/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Le9/c;-><init>(Landroid/content/Context;)V
 
     .line 10
     .line 11
@@ -635,7 +635,7 @@
 
     .line 4
     .line 5
-    new-instance v0, Ld9/g;
+    new-instance v0, Le9/g;
 
     .line 6
     .line 7
@@ -643,7 +643,7 @@
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Ld9/g;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Le9/g;-><init>(Landroid/content/Context;)V
 
     .line 10
     .line 11
@@ -782,11 +782,11 @@
 
     .line 4
     .line 5
-    new-instance v0, Ld9/i;
+    new-instance v0, Le9/i;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Ld9/i;-><init>()V
+    invoke-direct {v0}, Le9/i;-><init>()V
 
     .line 8
     .line 9
@@ -927,11 +927,11 @@
 
     .line 4
     .line 5
-    new-instance v0, Ld9/r;
+    new-instance v0, Le9/r;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Ld9/r;-><init>()V
+    invoke-direct {v0}, Le9/r;-><init>()V
 
     .line 8
     .line 9
@@ -1307,7 +1307,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0, v1}, Lf9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lg9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -1415,11 +1415,11 @@
 
     .line 4
     .line 5
-    new-instance v0, Ld9/y;
+    new-instance v0, Le9/y;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Ld9/y;-><init>()V
+    invoke-direct {v0}, Le9/y;-><init>()V
 
     .line 8
     .line 9
@@ -1548,12 +1548,12 @@
     .line 124
 .end method
 
-.method private w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
+.method private w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
     .locals 0
 
     if-eqz p1, :cond_0
 
-    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
+    invoke-interface {p1, p2}, Lcom/google/android/exoplayer2/upstream/DataSource;->c(Le9/x;)V
 
     :cond_0
     return-void
@@ -1584,7 +1584,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lf9/a;->f(Z)V
+    invoke-static {v0}, Lg9/a;->f(Z)V
 
     .line 9
     .line 10
@@ -1605,7 +1605,7 @@
 
     .line 18
     .line 19
-    invoke-static {v1}, Lf9/q0;->r0(Landroid/net/Uri;)Z
+    invoke-static {v1}, Lg9/q0;->r0(Landroid/net/Uri;)Z
 
     .line 20
     .line 21
@@ -2594,6 +2594,176 @@
     .line 840
 .end method
 
+.method public c(Le9/x;)V
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->c:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 5
+    .line 6
+    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/upstream/DataSource;->c(Le9/x;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->b:Ljava/util/List;
+
+    .line 10
+    .line 11
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->d:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 15
+    .line 16
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->e:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 20
+    .line 21
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 22
+    .line 23
+    .line 24
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->f:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 25
+    .line 26
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 27
+    .line 28
+    .line 29
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->g:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 30
+    .line 31
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 32
+    .line 33
+    .line 34
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->h:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 35
+    .line 36
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 37
+    .line 38
+    .line 39
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->i:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 40
+    .line 41
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->j:Lcom/google/android/exoplayer2/upstream/DataSource;
+
+    .line 45
+    .line 46
+    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Le9/x;)V
+
+    .line 47
+    .line 48
+    .line 49
+    return-void
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+.end method
+
 .method public close()V
     .locals 2
 
@@ -2748,7 +2918,7 @@
     .line 124
 .end method
 
-.method public d()Ljava/util/Map;
+.method public e()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2772,182 +2942,12 @@
     goto :goto_0
 
     :cond_0
-    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/DataSource;->d()Ljava/util/Map;
+    invoke-interface {v0}, Lcom/google/android/exoplayer2/upstream/DataSource;->e()Ljava/util/Map;
 
     move-result-object v0
 
     :goto_0
     return-object v0
-.end method
-
-.method public h(Ld9/x;)V
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->c:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 5
-    .line 6
-    invoke-interface {v0, p1}, Lcom/google/android/exoplayer2/upstream/DataSource;->h(Ld9/x;)V
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->b:Ljava/util/List;
-
-    .line 10
-    .line 11
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->d:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 15
-    .line 16
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 17
-    .line 18
-    .line 19
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->e:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 20
-    .line 21
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 22
-    .line 23
-    .line 24
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->f:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 25
-    .line 26
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 27
-    .line 28
-    .line 29
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->g:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 30
-    .line 31
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 32
-    .line 33
-    .line 34
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->h:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 35
-    .line 36
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 37
-    .line 38
-    .line 39
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->i:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 40
-    .line 41
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 42
-    .line 43
-    .line 44
-    iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->j:Lcom/google/android/exoplayer2/upstream/DataSource;
-
-    .line 45
-    .line 46
-    invoke-direct {p0, v0, p1}, Lcom/google/android/exoplayer2/upstream/b;->w(Lcom/google/android/exoplayer2/upstream/DataSource;Ld9/x;)V
-
-    .line 47
-    .line 48
-    .line 49
-    return-void
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-    .line 94
-    .line 95
-    .line 96
-    .line 97
-    .line 98
-    .line 99
-    .line 100
-    .line 101
-    .line 102
-    .line 103
-    .line 104
-    .line 105
-    .line 106
-    .line 107
-    .line 108
-    .line 109
-    .line 110
-    .line 111
-    .line 112
-    .line 113
-    .line 114
-    .line 115
-    .line 116
-    .line 117
-    .line 118
-    .line 119
-    .line 120
-    .line 121
-    .line 122
-    .line 123
-    .line 124
-    .line 125
-    .line 126
 .end method
 
 .method public m()Landroid/net/Uri;
@@ -2975,13 +2975,13 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/upstream/b;->k:Lcom/google/android/exoplayer2/upstream/DataSource;
 
-    invoke-static {v0}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/android/exoplayer2/upstream/DataSource;
 
-    invoke-interface {v0, p1, p2, p3}, Ld9/h;->read([BII)I
+    invoke-interface {v0, p1, p2, p3}, Le9/h;->read([BII)I
 
     move-result p1
 

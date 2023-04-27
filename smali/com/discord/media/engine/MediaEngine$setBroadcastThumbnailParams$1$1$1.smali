@@ -178,7 +178,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -201,7 +201,7 @@
 
     .line 11
     .line 12
-    invoke-static {p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 13
     .line 14
@@ -227,7 +227,7 @@
 
     .line 24
     :cond_1
-    invoke-static {p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     .line 25
     .line 26

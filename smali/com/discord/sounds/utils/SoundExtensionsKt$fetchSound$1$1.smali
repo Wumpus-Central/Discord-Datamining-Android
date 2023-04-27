@@ -146,7 +146,7 @@
     :goto_0
     iget-object v0, v2, Lcom/discord/sounds/utils/SoundExtensionsKt$fetchSound$1$1$emit$1;->result:Ljava/lang/Object;
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -169,7 +169,7 @@
 
     if-ne v4, v6, :cond_1
 
-    invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lnf/t;->b(Ljava/lang/Object;)V
 
     goto :goto_3
 
@@ -183,13 +183,13 @@
     throw v0
 
     :cond_2
-    invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lnf/t;->b(Ljava/lang/Object;)V
 
     goto :goto_2
 
     :cond_3
     :try_start_0
-    invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -201,7 +201,7 @@
     goto :goto_1
 
     :cond_4
-    invoke-static {v0}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lnf/t;->b(Ljava/lang/Object;)V
 
     move-object/from16 v0, p1
 

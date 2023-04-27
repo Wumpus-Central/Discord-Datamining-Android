@@ -23,7 +23,7 @@
         isBlockingSynchronousMethod = true
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -32,7 +32,7 @@
         isBlockingSynchronousMethod = true
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -41,7 +41,7 @@
         isBlockingSynchronousMethod = true
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -50,7 +50,7 @@
         isBlockingSynchronousMethod = true
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -58,7 +58,7 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -66,7 +66,7 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -74,7 +74,7 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -82,6 +82,6 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lic/h;
+.implements Ljc/h;
 
 
 # direct methods
@@ -17,10 +17,10 @@
 
 
 # virtual methods
-.method public final a(Lic/e;)Ljava/lang/Object;
+.method public final a(Ljc/e;)Ljava/lang/Object;
     .locals 0
 
-    invoke-static {p1}, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar;->a(Lic/e;)Lcom/google/firebase/messaging/FirebaseMessaging;
+    invoke-static {p1}, Lcom/google/firebase/messaging/FirebaseMessagingRegistrar;->a(Ljc/e;)Lcom/google/firebase/messaging/FirebaseMessaging;
 
     move-result-object p1
 

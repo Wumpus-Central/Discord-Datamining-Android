@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method constructor <init>(Lh5/a;ZLjava/lang/String;)V
+.method constructor <init>(Li5/a;ZLjava/lang/String;)V
     .locals 0
 
     .line 1

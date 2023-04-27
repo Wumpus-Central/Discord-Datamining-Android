@@ -534,17 +534,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private N(Landroid/graphics/Paint;Lcom/horcrux/svg/h;)V
@@ -553,305 +542,552 @@
     .line 1
     iget-object v0, p2, Lcom/horcrux/svg/h;->e:Lcom/horcrux/svg/l0;
 
+    .line 2
+    .line 3
     sget-object v1, Lcom/horcrux/svg/l0;->m:Lcom/horcrux/svg/l0;
 
+    .line 4
+    .line 5
     const/4 v2, 0x0
 
+    .line 6
     const/4 v3, 0x1
 
+    .line 7
     if-eq v0, v1, :cond_1
 
+    .line 8
+    .line 9
     iget v0, p2, Lcom/horcrux/svg/h;->f:I
 
+    .line 10
+    .line 11
     const/16 v1, 0x226
 
+    .line 12
+    .line 13
     if-lt v0, v1, :cond_0
 
+    .line 14
+    .line 15
     goto :goto_0
 
+    .line 16
     :cond_0
     move v0, v2
 
+    .line 17
     goto :goto_1
 
+    .line 18
     :cond_1
     :goto_0
     move v0, v3
 
-    .line 2
+    .line 19
     :goto_1
     iget-object v1, p2, Lcom/horcrux/svg/h;->c:Lcom/horcrux/svg/j0;
 
+    .line 20
+    .line 21
     sget-object v4, Lcom/horcrux/svg/j0;->l:Lcom/horcrux/svg/j0;
 
+    .line 22
+    .line 23
     if-ne v1, v4, :cond_2
 
+    .line 24
+    .line 25
     move v1, v3
 
+    .line 26
     goto :goto_2
 
+    .line 27
     :cond_2
     move v1, v2
 
+    .line 28
     :goto_2
     if-eqz v0, :cond_3
 
+    .line 29
+    .line 30
     if-eqz v1, :cond_3
 
+    .line 31
+    .line 32
     const/4 v2, 0x3
 
+    .line 33
     goto :goto_3
 
+    .line 34
     :cond_3
     if-eqz v0, :cond_4
 
+    .line 35
+    .line 36
     move v2, v3
 
+    .line 37
     goto :goto_3
 
+    .line 38
     :cond_4
     if-eqz v1, :cond_5
 
+    .line 39
+    .line 40
     const/4 v2, 0x2
 
-    .line 3
+    .line 41
     :cond_5
     :goto_3
     iget v0, p2, Lcom/horcrux/svg/h;->f:I
 
-    .line 4
+    .line 42
+    .line 43
     iget-object v4, p2, Lcom/horcrux/svg/h;->b:Ljava/lang/String;
 
+    .line 44
+    .line 45
     const/4 v5, 0x0
 
+    .line 46
     if-eqz v4, :cond_7
 
-    .line 5
+    .line 47
+    .line 48
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
+    .line 49
+    .line 50
+    .line 51
     move-result v6
 
+    .line 52
     if-lez v6, :cond_7
 
-    .line 6
+    .line 53
+    .line 54
     new-instance v6, Ljava/lang/StringBuilder;
 
+    .line 55
+    .line 56
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 57
+    .line 58
+    .line 59
     const-string v7, "fonts/"
 
+    .line 60
+    .line 61
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 62
+    .line 63
+    .line 64
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 65
+    .line 66
+    .line 67
     const-string v8, ".otf"
 
+    .line 68
+    .line 69
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 70
+    .line 71
+    .line 72
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 73
+    .line 74
+    .line 75
     move-result-object v6
 
-    .line 7
+    .line 76
     new-instance v8, Ljava/lang/StringBuilder;
 
+    .line 77
+    .line 78
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 79
+    .line 80
+    .line 81
     invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 82
+    .line 83
+    .line 84
     invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 85
+    .line 86
+    .line 87
     const-string v7, ".ttf"
 
+    .line 88
+    .line 89
     invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 90
+    .line 91
+    .line 92
     invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 93
+    .line 94
+    .line 95
     move-result-object v7
 
-    .line 8
+    .line 96
     sget v8, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 97
+    .line 98
     const/16 v9, 0x1a
 
+    .line 99
+    .line 100
     if-lt v8, v9, :cond_6
 
-    .line 9
+    .line 101
+    .line 102
     new-instance v5, Landroid/graphics/Typeface$Builder;
 
+    .line 103
+    .line 104
     iget-object v8, p0, Lcom/horcrux/svg/g0;->C:Landroid/content/res/AssetManager;
 
+    .line 105
+    .line 106
     invoke-direct {v5, v8, v6}, Landroid/graphics/Typeface$Builder;-><init>(Landroid/content/res/AssetManager;Ljava/lang/String;)V
 
-    .line 10
+    .line 107
+    .line 108
+    .line 109
     new-instance v6, Ljava/lang/StringBuilder;
 
+    .line 110
+    .line 111
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 112
+    .line 113
+    .line 114
     const-string v8, "\'wght\' "
 
+    .line 115
+    .line 116
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 117
+    .line 118
+    .line 119
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 120
+    .line 121
+    .line 122
     iget-object v9, p2, Lcom/horcrux/svg/h;->h:Ljava/lang/String;
 
+    .line 123
+    .line 124
     invoke-virtual {v6, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 125
+    .line 126
+    .line 127
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 128
+    .line 129
+    .line 130
     move-result-object v6
 
+    .line 131
     invoke-static {v5, v6}, Lcom/horcrux/svg/e0;->a(Landroid/graphics/Typeface$Builder;Ljava/lang/String;)Landroid/graphics/Typeface$Builder;
 
-    .line 11
+    .line 132
+    .line 133
+    .line 134
     invoke-static {v5, v0}, Landroidx/core/graphics/h;->a(Landroid/graphics/Typeface$Builder;I)Landroid/graphics/Typeface$Builder;
 
-    .line 12
+    .line 135
+    .line 136
+    .line 137
     invoke-static {v5, v1}, Landroidx/core/graphics/i;->a(Landroid/graphics/Typeface$Builder;Z)Landroid/graphics/Typeface$Builder;
 
-    .line 13
+    .line 138
+    .line 139
+    .line 140
     invoke-static {v5}, Landroidx/core/graphics/j;->a(Landroid/graphics/Typeface$Builder;)Landroid/graphics/Typeface;
 
+    .line 141
+    .line 142
+    .line 143
     move-result-object v5
 
+    .line 144
     if-nez v5, :cond_7
 
-    .line 14
+    .line 145
+    .line 146
     new-instance v5, Landroid/graphics/Typeface$Builder;
 
+    .line 147
+    .line 148
     iget-object v6, p0, Lcom/horcrux/svg/g0;->C:Landroid/content/res/AssetManager;
 
+    .line 149
+    .line 150
     invoke-direct {v5, v6, v7}, Landroid/graphics/Typeface$Builder;-><init>(Landroid/content/res/AssetManager;Ljava/lang/String;)V
 
-    .line 15
+    .line 151
+    .line 152
+    .line 153
     new-instance v6, Ljava/lang/StringBuilder;
 
+    .line 154
+    .line 155
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 156
+    .line 157
+    .line 158
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 159
+    .line 160
+    .line 161
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 162
+    .line 163
+    .line 164
     iget-object v7, p2, Lcom/horcrux/svg/h;->h:Ljava/lang/String;
 
+    .line 165
+    .line 166
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 167
+    .line 168
+    .line 169
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 170
+    .line 171
+    .line 172
     move-result-object v6
 
+    .line 173
     invoke-static {v5, v6}, Lcom/horcrux/svg/e0;->a(Landroid/graphics/Typeface$Builder;Ljava/lang/String;)Landroid/graphics/Typeface$Builder;
 
-    .line 16
+    .line 174
+    .line 175
+    .line 176
     invoke-static {v5, v0}, Landroidx/core/graphics/h;->a(Landroid/graphics/Typeface$Builder;I)Landroid/graphics/Typeface$Builder;
 
-    .line 17
+    .line 177
+    .line 178
+    .line 179
     invoke-static {v5, v1}, Landroidx/core/graphics/i;->a(Landroid/graphics/Typeface$Builder;Z)Landroid/graphics/Typeface$Builder;
 
-    .line 18
+    .line 180
+    .line 181
+    .line 182
     invoke-static {v5}, Landroidx/core/graphics/j;->a(Landroid/graphics/Typeface$Builder;)Landroid/graphics/Typeface;
 
+    .line 183
+    .line 184
+    .line 185
     move-result-object v5
 
+    .line 186
     goto :goto_4
 
-    .line 19
+    .line 187
     :cond_6
     :try_start_0
     iget-object v8, p0, Lcom/horcrux/svg/g0;->C:Landroid/content/res/AssetManager;
 
+    .line 188
+    .line 189
     invoke-static {v8, v6}, Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
 
+    .line 190
+    .line 191
+    .line 192
     move-result-object v5
 
-    .line 20
+    .line 193
     invoke-static {v5, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
 
+    .line 194
+    .line 195
+    .line 196
     move-result-object v5
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 197
     goto :goto_4
 
-    .line 21
+    .line 198
     :catch_0
     :try_start_1
     iget-object v6, p0, Lcom/horcrux/svg/g0;->C:Landroid/content/res/AssetManager;
 
+    .line 199
+    .line 200
     invoke-static {v6, v7}, Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
 
+    .line 201
+    .line 202
+    .line 203
     move-result-object v5
 
-    .line 22
+    .line 204
     invoke-static {v5, v2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
 
+    .line 205
+    .line 206
+    .line 207
     move-result-object v5
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 208
     :catch_1
     :cond_7
     :goto_4
     if-nez v5, :cond_8
 
-    .line 23
+    .line 209
+    .line 210
     :try_start_2
     invoke-static {}, Lcom/facebook/react/views/text/ReactFontManager;->getInstance()Lcom/facebook/react/views/text/ReactFontManager;
 
+    .line 211
+    .line 212
+    .line 213
     move-result-object v6
 
+    .line 214
     iget-object v7, p0, Lcom/horcrux/svg/g0;->C:Landroid/content/res/AssetManager;
 
+    .line 215
+    .line 216
     invoke-virtual {v6, v4, v2, v7}, Lcom/facebook/react/views/text/ReactFontManager;->getTypeface(Ljava/lang/String;ILandroid/content/res/AssetManager;)Landroid/graphics/Typeface;
 
+    .line 217
+    .line 218
+    .line 219
     move-result-object v5
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 24
+    .line 220
     :catch_2
     :cond_8
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 221
+    .line 222
     const/16 v4, 0x1c
 
+    .line 223
+    .line 224
     if-lt v2, v4, :cond_9
 
-    .line 25
+    .line 225
+    .line 226
     invoke-static {v5, v0, v1}, Landroidx/appcompat/widget/f0;->a(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
 
+    .line 227
+    .line 228
+    .line 229
     move-result-object v5
 
-    .line 26
+    .line 230
     :cond_9
     invoke-virtual {p1, v3}, Landroid/graphics/Paint;->setLinearText(Z)V
 
-    .line 27
+    .line 231
+    .line 232
+    .line 233
     invoke-virtual {p1, v3}, Landroid/graphics/Paint;->setSubpixelText(Z)V
 
-    .line 28
+    .line 234
+    .line 235
+    .line 236
     invoke-virtual {p1, v5}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 29
+    .line 237
+    .line 238
+    .line 239
     iget-wide v0, p2, Lcom/horcrux/svg/h;->a:D
 
+    .line 240
+    .line 241
     iget p2, p0, Lcom/horcrux/svg/VirtualView;->mScale:F
 
+    .line 242
+    .line 243
     float-to-double v2, p2
 
+    .line 244
     mul-double/2addr v0, v2
 
+    .line 245
     double-to-float p2, v0
 
+    .line 246
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextSize(F)V
 
+    .line 247
+    .line 248
+    .line 249
     const/4 p2, 0x0
 
-    .line 30
+    .line 250
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setLetterSpacing(F)V
 
+    .line 251
+    .line 252
+    .line 253
     return-void
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
 .end method
 
 .method private O(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
@@ -1181,17 +1417,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method private P(Lcom/horcrux/svg/SVGLength;DD)D
@@ -4758,17 +4983,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method hitTest([F)I

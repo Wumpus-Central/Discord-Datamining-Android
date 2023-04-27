@@ -6,13 +6,13 @@
 # instance fields
 .field public final a:I
 
-.field private final b:[La9/k;
+.field private final b:[Lb9/k;
 
 .field private c:I
 
 
 # direct methods
-.method public varargs constructor <init>([La9/k;)V
+.method public varargs constructor <init>([Lb9/k;)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[La9/k;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[Lb9/k;
 
     .line 5
     .line 6
@@ -154,10 +154,10 @@
 
 
 # virtual methods
-.method public a(I)La9/k;
+.method public a(I)Lb9/k;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[La9/k;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[Lb9/k;
 
     aget-object p1, v0, p1
 
@@ -207,11 +207,11 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[La9/k;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[Lb9/k;
 
     .line 19
     .line 20
-    iget-object p1, p1, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[La9/k;
+    iget-object p1, p1, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[Lb9/k;
 
     .line 21
     .line 22
@@ -344,7 +344,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[La9/k;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;->b:[Lb9/k;
 
     .line 6
     .line 7

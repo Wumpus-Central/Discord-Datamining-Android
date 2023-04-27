@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c<",
-        "Lcf/p;",
+        "Lef/p;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
-        "Lcf/p;",
+        "Lef/p;",
         "Landroid/content/Context;",
         "context",
         "g",
@@ -70,7 +70,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
-            "Lcf/p;",
+            "Lef/p;",
             ">;"
         }
     .end annotation
@@ -89,7 +89,7 @@
     .line 2
     .line 3
     .line 4
-    const-class v0, Lcf/p;
+    const-class v0, Lef/p;
 
     .line 5
     .line 6
@@ -127,30 +127,30 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+.method public bridge synthetic a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 0
 
-    check-cast p1, Lcf/p;
+    check-cast p1, Lef/p;
 
-    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->h(Lcf/p;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->h(Lef/p;Lcom/facebook/react/bridge/WritableMap;)V
 
     return-void
 .end method
 
-.method public bridge synthetic b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public bridge synthetic b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 0
 
-    check-cast p1, Lcf/p;
+    check-cast p1, Lef/p;
 
-    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->f(Lcf/p;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->f(Lef/p;Lcom/facebook/react/bridge/ReadableMap;)V
 
     return-void
 .end method
 
-.method public bridge synthetic c(Landroid/content/Context;)Lcf/d;
+.method public bridge synthetic c(Landroid/content/Context;)Lef/d;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->g(Landroid/content/Context;)Lcf/p;
+    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$g;->g(Landroid/content/Context;)Lef/p;
 
     move-result-object p1
 
@@ -171,7 +171,7 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Lcf/p;",
+            "Lef/p;",
             ">;"
         }
     .end annotation
@@ -181,7 +181,7 @@
     return-object v0
 .end method
 
-.method public f(Lcf/p;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public f(Lef/p;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 4
 
     .line 1
@@ -203,7 +203,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 12
     .line 13
@@ -243,7 +243,7 @@
     move-result v0
 
     .line 31
-    invoke-virtual {p1, v0}, Lcf/p;->S0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->S0(F)Lef/p;
 
     .line 32
     .line 33
@@ -291,7 +291,7 @@
     move-result v0
 
     .line 53
-    invoke-virtual {p1, v0}, Lcf/p;->R0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->R0(F)Lef/p;
 
     .line 54
     .line 55
@@ -332,7 +332,7 @@
     move-result v0
 
     .line 73
-    invoke-virtual {p1, v0}, Lcf/p;->X0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->X0(F)Lef/p;
 
     .line 74
     .line 75
@@ -373,7 +373,7 @@
     move-result v0
 
     .line 93
-    invoke-virtual {p1, v0}, Lcf/p;->W0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->W0(F)Lef/p;
 
     .line 94
     .line 95
@@ -414,7 +414,7 @@
     move-result v0
 
     .line 113
-    invoke-virtual {p1, v0}, Lcf/p;->U0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->U0(F)Lef/p;
 
     .line 114
     .line 115
@@ -455,7 +455,7 @@
     move-result v0
 
     .line 133
-    invoke-virtual {p1, v0}, Lcf/p;->T0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->T0(F)Lef/p;
 
     .line 134
     .line 135
@@ -496,7 +496,7 @@
     move-result v0
 
     .line 153
-    invoke-virtual {p1, v0}, Lcf/p;->Z0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->Z0(F)Lef/p;
 
     .line 154
     .line 155
@@ -537,7 +537,7 @@
     move-result v0
 
     .line 173
-    invoke-virtual {p1, v0}, Lcf/p;->Y0(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->Y0(F)Lef/p;
 
     .line 174
     .line 175
@@ -578,7 +578,7 @@
     move-result v0
 
     .line 193
-    invoke-virtual {p1, v0}, Lcf/p;->d1(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->d1(F)Lef/p;
 
     .line 194
     .line 195
@@ -619,7 +619,7 @@
     move-result v0
 
     .line 213
-    invoke-virtual {p1, v0}, Lcf/p;->e1(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->e1(F)Lef/p;
 
     .line 214
     .line 215
@@ -660,7 +660,7 @@
     move-result v0
 
     .line 233
-    invoke-virtual {p1, v0}, Lcf/p;->f1(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->f1(F)Lef/p;
 
     .line 234
     .line 235
@@ -705,7 +705,7 @@
     move-result v0
 
     .line 254
-    invoke-virtual {p1, v0}, Lcf/p;->b1(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->b1(F)Lef/p;
 
     .line 255
     .line 256
@@ -723,7 +723,7 @@
     .line 261
     .line 262
     .line 263
-    invoke-virtual {p1, v0}, Lcf/p;->b1(F)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->b1(F)Lef/p;
 
     .line 264
     .line 265
@@ -754,7 +754,7 @@
     move-result v0
 
     .line 278
-    invoke-virtual {p1, v0}, Lcf/p;->c1(I)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->c1(I)Lef/p;
 
     .line 279
     .line 280
@@ -784,7 +784,7 @@
     move-result v0
 
     .line 293
-    invoke-virtual {p1, v0}, Lcf/p;->a1(I)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->a1(I)Lef/p;
 
     .line 294
     .line 295
@@ -814,7 +814,7 @@
     move-result v0
 
     .line 308
-    invoke-virtual {p1, v0}, Lcf/p;->V0(Z)Lcf/p;
+    invoke-virtual {p1, v0}, Lef/p;->V0(Z)Lef/p;
 
     .line 309
     .line 310
@@ -847,7 +847,7 @@
     int-to-long v0, p2
 
     .line 324
-    invoke-virtual {p1, v0, v1}, Lcf/p;->Q0(J)Lcf/p;
+    invoke-virtual {p1, v0, v1}, Lef/p;->Q0(J)Lef/p;
 
     .line 325
     .line 326
@@ -856,17 +856,17 @@
     return-void
 .end method
 
-.method public g(Landroid/content/Context;)Lcf/p;
+.method public g(Landroid/content/Context;)Lef/p;
     .locals 1
 
-    new-instance v0, Lcf/p;
+    new-instance v0, Lef/p;
 
-    invoke-direct {v0, p1}, Lcf/p;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lef/p;-><init>(Landroid/content/Context;)V
 
     return-object v0
 .end method
 
-.method public h(Lcf/p;Lcom/facebook/react/bridge/WritableMap;)V
+.method public h(Lef/p;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 3
 
     .line 1
@@ -888,12 +888,12 @@
     .line 9
     .line 10
     .line 11
-    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p1}, Lcf/d;->J()F
+    invoke-virtual {p1}, Lef/d;->J()F
 
     .line 15
     .line 16
@@ -921,7 +921,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p1}, Lcf/d;->K()F
+    invoke-virtual {p1}, Lef/d;->K()F
 
     .line 29
     .line 30
@@ -949,7 +949,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {p1}, Lcf/d;->H()F
+    invoke-virtual {p1}, Lef/d;->H()F
 
     .line 43
     .line 44
@@ -977,7 +977,7 @@
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p1}, Lcf/d;->I()F
+    invoke-virtual {p1}, Lef/d;->I()F
 
     .line 57
     .line 58
@@ -1005,7 +1005,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-virtual {p1}, Lcf/p;->M0()F
+    invoke-virtual {p1}, Lef/p;->M0()F
 
     .line 71
     .line 72
@@ -1033,7 +1033,7 @@
     .line 82
     .line 83
     .line 84
-    invoke-virtual {p1}, Lcf/p;->N0()F
+    invoke-virtual {p1}, Lef/p;->N0()F
 
     .line 85
     .line 86
@@ -1061,7 +1061,7 @@
     .line 96
     .line 97
     .line 98
-    invoke-virtual {p1}, Lcf/p;->O0()F
+    invoke-virtual {p1}, Lef/p;->O0()F
 
     .line 99
     .line 100
@@ -1089,7 +1089,7 @@
     .line 110
     .line 111
     .line 112
-    invoke-virtual {p1}, Lcf/p;->P0()F
+    invoke-virtual {p1}, Lef/p;->P0()F
 
     .line 113
     .line 114

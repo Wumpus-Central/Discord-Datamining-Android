@@ -272,7 +272,7 @@
     move-result-object v0
 
     .line 21
-    invoke-static {p1, v0}, Lk4/c;->c(Landroid/content/Context;Lcom/facebook/imagepipeline/core/ImagePipelineConfig;)V
+    invoke-static {p1, v0}, Ll4/c;->c(Landroid/content/Context;Lcom/facebook/imagepipeline/core/ImagePipelineConfig;)V
 
     .line 22
     .line 23

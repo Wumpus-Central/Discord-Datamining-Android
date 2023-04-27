@@ -20,7 +20,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/d$a;",
         "",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "handler",
         "Lcom/swmansion/gesturehandler/react/e;",
@@ -29,10 +29,10 @@
         "useTopPrefixedName",
         "Lcom/swmansion/gesturehandler/react/d;",
         "b",
-        "(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;",
+        "(Lef/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;",
         "Lcom/facebook/react/bridge/WritableMap;",
         "a",
-        "(Lcf/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;",
+        "(Lef/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;",
         "Landroidx/core/util/Pools$SynchronizedPool;",
         "EVENTS_POOL",
         "Landroidx/core/util/Pools$SynchronizedPool;",
@@ -73,7 +73,7 @@
     return-void
 .end method
 
-.method public static synthetic c(Lcom/swmansion/gesturehandler/react/d$a;Lcf/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
+.method public static synthetic c(Lcom/swmansion/gesturehandler/react/d$a;Lef/d;Lcom/swmansion/gesturehandler/react/e;ZILjava/lang/Object;)Lcom/swmansion/gesturehandler/react/d;
     .locals 0
 
     and-int/lit8 p4, p4, 0x4
@@ -83,7 +83,7 @@
     const/4 p3, 0x0
 
     :cond_0
-    invoke-virtual {p0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/d$a;->b(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/d$a;->b(Lef/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
 
     move-result-object p0
 
@@ -92,12 +92,12 @@
 
 
 # virtual methods
-.method public final a(Lcf/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;
+.method public final a(Lef/d;Lcom/swmansion/gesturehandler/react/e;)Lcom/facebook/react/bridge/WritableMap;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;",
             "Lcom/swmansion/gesturehandler/react/e<",
             "TT;>;)",
@@ -136,13 +136,13 @@
     .line 15
     .line 16
     .line 17
-    invoke-interface {p2, p1, v0}, Lcom/swmansion/gesturehandler/react/e;->a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-interface {p2, p1, v0}, Lcom/swmansion/gesturehandler/react/e;->a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
 
     .line 18
     .line 19
     .line 20
     :cond_0
-    invoke-virtual {p1}, Lcf/d;->P()I
+    invoke-virtual {p1}, Lef/d;->P()I
 
     .line 21
     .line 22
@@ -163,7 +163,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1}, Lcf/d;->O()I
+    invoke-virtual {p1}, Lef/d;->O()I
 
     .line 32
     .line 33
@@ -208,12 +208,12 @@
     .line 63
 .end method
 
-.method public final b(Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
+.method public final b(Lef/d;Lcom/swmansion/gesturehandler/react/e;Z)Lcom/swmansion/gesturehandler/react/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Lcf/d<",
+            "Lef/d<",
             "TT;>;>(TT;",
             "Lcom/swmansion/gesturehandler/react/e<",
             "TT;>;Z)",
@@ -268,7 +268,7 @@
     .line 23
     .line 24
     :cond_0
-    invoke-static {v0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/d;->b(Lcom/swmansion/gesturehandler/react/d;Lcf/d;Lcom/swmansion/gesturehandler/react/e;Z)V
+    invoke-static {v0, p1, p2, p3}, Lcom/swmansion/gesturehandler/react/d;->b(Lcom/swmansion/gesturehandler/react/d;Lef/d;Lcom/swmansion/gesturehandler/react/e;Z)V
 
     .line 25
     .line 26

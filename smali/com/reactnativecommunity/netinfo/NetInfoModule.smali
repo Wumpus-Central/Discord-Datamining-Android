@@ -19,7 +19,7 @@
 # instance fields
 .field private final mAmazonConnectivityChecker:Lcom/reactnativecommunity/netinfo/a;
 
-.field private final mConnectivityReceiver:Lxe/b;
+.field private final mConnectivityReceiver:Lye/b;
 
 .field private numberOfListeners:I
 
@@ -53,16 +53,16 @@
 
     .line 12
     .line 13
-    new-instance v0, Lxe/g;
+    new-instance v0, Lye/g;
 
     .line 14
     .line 15
-    invoke-direct {v0, p1}, Lxe/g;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {v0, p1}, Lye/g;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iput-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 19
     .line 20
@@ -70,16 +70,16 @@
 
     .line 21
     :cond_0
-    new-instance v0, Lxe/a;
+    new-instance v0, Lye/a;
 
     .line 22
     .line 23
-    invoke-direct {v0, p1}, Lxe/a;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
+    invoke-direct {v0, p1}, Lye/a;-><init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     .line 24
     .line 25
     .line 26
-    iput-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iput-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 27
     .line 28
@@ -245,11 +245,11 @@
 
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object p1, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 8
     .line 9
-    iput-boolean v0, p1, Lxe/b;->e:Z
+    iput-boolean v0, p1, Lye/b;->e:Z
 
     .line 10
     .line 11
@@ -408,9 +408,9 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
-    invoke-virtual {v0, p1, p2}, Lxe/b;->d(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
+    invoke-virtual {v0, p1, p2}, Lye/b;->d(Ljava/lang/String;Lcom/facebook/react/bridge/Promise;)V
 
     return-void
 .end method
@@ -427,11 +427,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lxe/b;->g()V
+    invoke-virtual {v0}, Lye/b;->g()V
 
     .line 4
     .line 5
@@ -625,9 +625,9 @@
 .method public onAmazonFireDeviceConnectivityChanged(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
-    invoke-virtual {v0, p1}, Lxe/b;->i(Z)V
+    invoke-virtual {v0, p1}, Lye/b;->i(Z)V
 
     return-void
 .end method
@@ -645,23 +645,23 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lxe/b;->j()V
+    invoke-virtual {v0}, Lye/b;->j()V
 
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object v0, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 12
     .line 13
     const/4 v1, 0x0
 
     .line 14
-    iput-boolean v1, v0, Lxe/b;->e:Z
+    iput-boolean v1, v0, Lye/b;->e:Z
 
     .line 15
     .line 16
@@ -866,14 +866,14 @@
 
     .line 11
     .line 12
-    iget-object p1, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lxe/b;
+    iget-object p1, p0, Lcom/reactnativecommunity/netinfo/NetInfoModule;->mConnectivityReceiver:Lye/b;
 
     .line 13
     .line 14
     const/4 v0, 0x0
 
     .line 15
-    iput-boolean v0, p1, Lxe/b;->e:Z
+    iput-boolean v0, p1, Lye/b;->e:Z
 
     .line 16
     .line 17

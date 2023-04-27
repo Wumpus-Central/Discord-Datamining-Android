@@ -760,11 +760,11 @@
     .line 9
     .line 10
     .line 11
-    new-instance v0, Lc3/a;
+    new-instance v0, Ld3/a;
 
     .line 12
     .line 13
-    invoke-direct {v0, p2, p1}, Lc3/a;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/Message;)V
+    invoke-direct {v0, p2, p1}, Ld3/a;-><init>(Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/Message;)V
 
     .line 14
     .line 15

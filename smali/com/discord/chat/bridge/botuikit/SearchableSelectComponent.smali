@@ -48,7 +48,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -100,7 +100,7 @@
 
     .line 8
     .line 9
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     .line 10
     .line 11
@@ -108,7 +108,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 14
     .line 15
@@ -259,7 +259,7 @@
     const/4 v0, 0x0
 
     .line 20
-    invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     .line 21
     .line 22
@@ -298,7 +298,7 @@
 
     .line 35
     .line 36
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     .line 37
     .line 38
@@ -306,7 +306,7 @@
 
     .line 39
     .line 40
-    invoke-direct {v1, v2}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v2}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 41
     .line 42
@@ -315,7 +315,7 @@
 
     .line 44
     .line 45
-    invoke-interface {p1, p2, v0, v1, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v0, v1, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     .line 46
     .line 47

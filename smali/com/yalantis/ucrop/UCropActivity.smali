@@ -404,7 +404,7 @@
 
     .line 7
     .line 8
-    sget v1, Lef/d;->n:I
+    sget v1, Lgf/d;->n:I
 
     .line 9
     .line 10
@@ -438,7 +438,7 @@
 
     .line 21
     .line 22
-    sget v4, Lef/d;->o:I
+    sget v4, Lgf/d;->o:I
 
     .line 23
     .line 24
@@ -466,7 +466,7 @@
 
     .line 33
     .line 34
-    sget v5, Lef/d;->p:I
+    sget v5, Lgf/d;->p:I
 
     .line 35
     .line 36
@@ -664,7 +664,7 @@
     .line 4
     .line 5
     .line 6
-    sget v0, Lef/d;->t:I
+    sget v0, Lgf/d;->t:I
 
     .line 7
     .line 8
@@ -698,7 +698,7 @@
     .line 22
     .line 23
     .line 24
-    sget v1, Lef/d;->u:I
+    sget v1, Lgf/d;->u:I
 
     .line 25
     .line 26
@@ -941,11 +941,11 @@
     .line 28
     .line 29
     .line 30
-    new-instance v0, Lgf/a;
+    new-instance v0, Lif/a;
 
     .line 31
     .line 32
-    invoke-direct {v0, v3, v2, v2}, Lgf/a;-><init>(Ljava/lang/String;FF)V
+    invoke-direct {v0, v3, v2, v2}, Lif/a;-><init>(Ljava/lang/String;FF)V
 
     .line 33
     .line 34
@@ -955,7 +955,7 @@
     .line 36
     .line 37
     .line 38
-    new-instance v0, Lgf/a;
+    new-instance v0, Lif/a;
 
     .line 39
     .line 40
@@ -967,7 +967,7 @@
 
     .line 43
     .line 44
-    invoke-direct {v0, v3, v5, v4}, Lgf/a;-><init>(Ljava/lang/String;FF)V
+    invoke-direct {v0, v3, v5, v4}, Lif/a;-><init>(Ljava/lang/String;FF)V
 
     .line 45
     .line 46
@@ -977,11 +977,11 @@
     .line 48
     .line 49
     .line 50
-    new-instance v0, Lgf/a;
+    new-instance v0, Lif/a;
 
     .line 51
     .line 52
-    sget v4, Lef/g;->c:I
+    sget v4, Lgf/g;->c:I
 
     .line 53
     .line 54
@@ -1004,7 +1004,7 @@
     const/4 v6, 0x0
 
     .line 63
-    invoke-direct {v0, v4, v6, v6}, Lgf/a;-><init>(Ljava/lang/String;FF)V
+    invoke-direct {v0, v4, v6, v6}, Lif/a;-><init>(Ljava/lang/String;FF)V
 
     .line 64
     .line 65
@@ -1014,7 +1014,7 @@
     .line 67
     .line 68
     .line 69
-    new-instance v0, Lgf/a;
+    new-instance v0, Lif/a;
 
     .line 70
     .line 71
@@ -1022,7 +1022,7 @@
 
     .line 72
     .line 73
-    invoke-direct {v0, v3, v5, v4}, Lgf/a;-><init>(Ljava/lang/String;FF)V
+    invoke-direct {v0, v3, v5, v4}, Lif/a;-><init>(Ljava/lang/String;FF)V
 
     .line 74
     .line 75
@@ -1032,7 +1032,7 @@
     .line 77
     .line 78
     .line 79
-    new-instance v0, Lgf/a;
+    new-instance v0, Lif/a;
 
     .line 80
     .line 81
@@ -1044,7 +1044,7 @@
 
     .line 84
     .line 85
-    invoke-direct {v0, v3, v4, v5}, Lgf/a;-><init>(Ljava/lang/String;FF)V
+    invoke-direct {v0, v3, v4, v5}, Lif/a;-><init>(Ljava/lang/String;FF)V
 
     .line 86
     .line 87
@@ -1058,7 +1058,7 @@
 
     .line 92
     :cond_1
-    sget v4, Lef/d;->g:I
+    sget v4, Lgf/d;->g:I
 
     .line 93
     .line 94
@@ -1119,7 +1119,7 @@
     move-result-object v2
 
     .line 122
-    check-cast v2, Lgf/a;
+    check-cast v2, Lif/a;
 
     .line 123
     .line 124
@@ -1131,7 +1131,7 @@
     move-result-object v6
 
     .line 128
-    sget v7, Lef/e;->b:I
+    sget v7, Lgf/e;->b:I
 
     .line 129
     .line 130
@@ -1173,7 +1173,7 @@
     .line 148
     .line 149
     .line 150
-    invoke-virtual {v7, v2}, Lcom/yalantis/ucrop/view/widget/AspectRatioTextView;->setAspectRatio(Lgf/a;)V
+    invoke-virtual {v7, v2}, Lcom/yalantis/ucrop/view/widget/AspectRatioTextView;->setAspectRatio(Lif/a;)V
 
     .line 151
     .line 152
@@ -2011,7 +2011,7 @@
     .locals 3
 
     .line 1
-    sget v0, Lef/d;->r:I
+    sget v0, Lgf/d;->r:I
 
     .line 2
     .line 3
@@ -2031,7 +2031,7 @@
 
     .line 10
     .line 11
-    sget v0, Lef/d;->l:I
+    sget v0, Lgf/d;->l:I
 
     .line 12
     .line 13
@@ -2082,7 +2082,7 @@
     .line 36
     .line 37
     .line 38
-    sget v0, Lef/d;->z:I
+    sget v0, Lgf/d;->z:I
 
     .line 39
     .line 40
@@ -2108,7 +2108,7 @@
     .line 50
     .line 51
     .line 52
-    sget v0, Lef/d;->A:I
+    sget v0, Lgf/d;->A:I
 
     .line 53
     .line 54
@@ -2232,7 +2232,7 @@
     .locals 3
 
     .line 1
-    sget v0, Lef/d;->s:I
+    sget v0, Lgf/d;->s:I
 
     .line 2
     .line 3
@@ -2252,7 +2252,7 @@
 
     .line 10
     .line 11
-    sget v0, Lef/d;->m:I
+    sget v0, Lgf/d;->m:I
 
     .line 12
     .line 13
@@ -2429,7 +2429,7 @@
     .locals 6
 
     .line 1
-    sget v0, Lef/d;->f:I
+    sget v0, Lgf/d;->f:I
 
     .line 2
     .line 3
@@ -2445,7 +2445,7 @@
 
     .line 8
     .line 9
-    sget v1, Lef/d;->e:I
+    sget v1, Lgf/d;->e:I
 
     .line 10
     .line 11
@@ -2461,7 +2461,7 @@
 
     .line 16
     .line 17
-    sget v2, Lef/d;->d:I
+    sget v2, Lgf/d;->d:I
 
     .line 18
     .line 19
@@ -2477,7 +2477,7 @@
 
     .line 24
     .line 25
-    new-instance v3, Lif/i;
+    new-instance v3, Lkf/i;
 
     .line 26
     .line 27
@@ -2493,7 +2493,7 @@
 
     .line 32
     .line 33
-    invoke-direct {v3, v4, v5}, Lif/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct {v3, v4, v5}, Lkf/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
     .line 34
     .line 35
@@ -2503,7 +2503,7 @@
     .line 37
     .line 38
     .line 39
-    new-instance v0, Lif/i;
+    new-instance v0, Lkf/i;
 
     .line 40
     .line 41
@@ -2519,7 +2519,7 @@
 
     .line 46
     .line 47
-    invoke-direct {v0, v3, v4}, Lif/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct {v0, v3, v4}, Lkf/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
     .line 48
     .line 49
@@ -2529,7 +2529,7 @@
     .line 51
     .line 52
     .line 53
-    new-instance v0, Lif/i;
+    new-instance v0, Lkf/i;
 
     .line 54
     .line 55
@@ -2545,7 +2545,7 @@
 
     .line 60
     .line 61
-    invoke-direct {v0, v1, v3}, Lif/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct {v0, v1, v3}, Lkf/i;-><init>(Landroid/graphics/drawable/Drawable;I)V
 
     .line 62
     .line 63
@@ -2648,7 +2648,7 @@
     .locals 4
 
     .line 1
-    sget v0, Lef/a;->h:I
+    sget v0, Lgf/a;->h:I
 
     .line 2
     .line 3
@@ -2676,7 +2676,7 @@
 
     .line 14
     .line 15
-    sget v0, Lef/a;->i:I
+    sget v0, Lgf/a;->i:I
 
     .line 16
     .line 17
@@ -2704,7 +2704,7 @@
 
     .line 28
     .line 29
-    sget v0, Lef/a;->a:I
+    sget v0, Lgf/a;->a:I
 
     .line 30
     .line 31
@@ -2732,7 +2732,7 @@
 
     .line 42
     .line 43
-    sget v0, Lef/a;->j:I
+    sget v0, Lgf/a;->j:I
 
     .line 44
     .line 45
@@ -2764,7 +2764,7 @@
 
     .line 58
     .line 59
-    sget v1, Lef/c;->a:I
+    sget v1, Lgf/c;->a:I
 
     .line 60
     .line 61
@@ -2784,7 +2784,7 @@
 
     .line 68
     .line 69
-    sget v1, Lef/c;->b:I
+    sget v1, Lgf/c;->b:I
 
     .line 70
     .line 71
@@ -2832,7 +2832,7 @@
     move-result-object v0
 
     .line 92
-    sget v1, Lef/g;->b:I
+    sget v1, Lgf/g;->b:I
 
     .line 93
     .line 94
@@ -2849,7 +2849,7 @@
 
     .line 99
     .line 100
-    sget v0, Lef/a;->f:I
+    sget v0, Lgf/a;->f:I
 
     .line 101
     .line 102
@@ -2902,7 +2902,7 @@
 
     .line 124
     .line 125
-    sget v0, Lef/a;->b:I
+    sget v0, Lgf/a;->b:I
 
     .line 126
     .line 127
@@ -2948,7 +2948,7 @@
 
     .line 148
     .line 149
-    sget v0, Lef/d;->x:I
+    sget v0, Lgf/d;->x:I
 
     .line 150
     .line 151
@@ -2964,7 +2964,7 @@
 
     .line 156
     .line 157
-    sget v3, Lef/d;->a:I
+    sget v3, Lgf/d;->a:I
 
     .line 158
     .line 159
@@ -2993,7 +2993,7 @@
     move-result-object v1
 
     .line 172
-    sget v3, Lef/e;->c:I
+    sget v3, Lgf/e;->c:I
 
     .line 173
     .line 174
@@ -3024,7 +3024,7 @@
     .line 187
     .line 188
     .line 189
-    sget v0, Lef/d;->n:I
+    sget v0, Lgf/d;->n:I
 
     .line 190
     .line 191
@@ -3053,7 +3053,7 @@
     .line 202
     .line 203
     .line 204
-    sget v0, Lef/d;->o:I
+    sget v0, Lgf/d;->o:I
 
     .line 205
     .line 206
@@ -3082,7 +3082,7 @@
     .line 217
     .line 218
     .line 219
-    sget v0, Lef/d;->p:I
+    sget v0, Lgf/d;->p:I
 
     .line 220
     .line 221
@@ -3111,7 +3111,7 @@
     .line 232
     .line 233
     .line 234
-    sget v0, Lef/d;->g:I
+    sget v0, Lgf/d;->g:I
 
     .line 235
     .line 236
@@ -3131,7 +3131,7 @@
 
     .line 243
     .line 244
-    sget v0, Lef/d;->h:I
+    sget v0, Lgf/d;->h:I
 
     .line 245
     .line 246
@@ -3151,7 +3151,7 @@
 
     .line 253
     .line 254
-    sget v0, Lef/d;->i:I
+    sget v0, Lgf/d;->i:I
 
     .line 255
     .line 256
@@ -3969,7 +3969,7 @@
     const/4 v1, 0x3
 
     .line 19
-    sget v2, Lef/d;->t:I
+    sget v2, Lgf/d;->t:I
 
     .line 20
     .line 21
@@ -4000,7 +4000,7 @@
     .line 34
     .line 35
     :cond_0
-    sget v0, Lef/d;->x:I
+    sget v0, Lgf/d;->x:I
 
     .line 36
     .line 37
@@ -4137,7 +4137,7 @@
     .locals 4
 
     .line 1
-    sget v0, Lef/d;->x:I
+    sget v0, Lgf/d;->x:I
 
     .line 2
     .line 3
@@ -4166,7 +4166,7 @@
 
     .line 15
     .line 16
-    sget v1, Lef/d;->s:I
+    sget v1, Lgf/d;->s:I
 
     .line 17
     .line 18
@@ -4178,7 +4178,7 @@
     move-result-object v0
 
     .line 22
-    sget v1, Lef/d;->p:I
+    sget v1, Lgf/d;->p:I
 
     .line 23
     .line 24
@@ -4213,7 +4213,7 @@
 
     .line 36
     .line 37
-    sget v1, Lef/d;->q:I
+    sget v1, Lgf/d;->q:I
 
     .line 38
     .line 39
@@ -4225,7 +4225,7 @@
     move-result-object v0
 
     .line 43
-    sget v1, Lef/d;->n:I
+    sget v1, Lgf/d;->n:I
 
     .line 44
     .line 45
@@ -4253,7 +4253,7 @@
 
     .line 54
     .line 55
-    sget v1, Lef/d;->r:I
+    sget v1, Lgf/d;->r:I
 
     .line 56
     .line 57
@@ -4265,7 +4265,7 @@
     move-result-object v0
 
     .line 61
-    sget v1, Lef/d;->o:I
+    sget v1, Lgf/d;->o:I
 
     .line 62
     .line 63
@@ -4365,7 +4365,7 @@
     .locals 3
 
     .line 1
-    sget v0, Lef/d;->v:I
+    sget v0, Lgf/d;->v:I
 
     .line 2
     .line 3
@@ -4426,7 +4426,7 @@
     .line 30
     .line 31
     .line 32
-    sget v0, Lef/d;->c:I
+    sget v0, Lgf/d;->c:I
 
     .line 33
     .line 34
@@ -4455,7 +4455,7 @@
     .line 45
     .line 46
     .line 47
-    sget v0, Lef/d;->w:I
+    sget v0, Lgf/d;->w:I
 
     .line 48
     .line 49
@@ -4817,7 +4817,7 @@
     move-result-object v1
 
     .line 105
-    sget v3, Lef/a;->e:I
+    sget v3, Lgf/a;->e:I
 
     .line 106
     .line 107
@@ -4903,7 +4903,7 @@
     move-result-object v1
 
     .line 149
-    sget v4, Lef/a;->c:I
+    sget v4, Lgf/a;->c:I
 
     .line 150
     .line 151
@@ -4944,7 +4944,7 @@
     move-result-object v1
 
     .line 170
-    sget v4, Lef/b;->a:I
+    sget v4, Lgf/b;->a:I
 
     .line 171
     .line 172
@@ -5051,7 +5051,7 @@
     move-result-object v1
 
     .line 225
-    sget v3, Lef/a;->d:I
+    sget v3, Lgf/a;->d:I
 
     .line 226
     .line 227
@@ -5129,7 +5129,7 @@
     move-result-object v1
 
     .line 265
-    sget v3, Lef/b;->b:I
+    sget v3, Lgf/b;->b:I
 
     .line 266
     .line 267
@@ -5287,11 +5287,11 @@
     move-result-object v1
 
     .line 343
-    check-cast v1, Lgf/a;
+    check-cast v1, Lif/a;
 
     .line 344
     .line 345
-    invoke-virtual {v1}, Lgf/a;->d()F
+    invoke-virtual {v1}, Lif/a;->b()F
 
     .line 346
     .line 347
@@ -5307,11 +5307,11 @@
     move-result-object v3
 
     .line 353
-    check-cast v3, Lgf/a;
+    check-cast v3, Lif/a;
 
     .line 354
     .line 355
-    invoke-virtual {v3}, Lgf/a;->e()F
+    invoke-virtual {v3}, Lif/a;->e()F
 
     .line 356
     .line 357
@@ -6430,7 +6430,7 @@
 
     .line 39
     .line 40
-    sget v0, Lef/g;->a:I
+    sget v0, Lgf/g;->a:I
 
     .line 41
     .line 42
@@ -6576,7 +6576,7 @@
 
     .line 12
     .line 13
-    sget v0, Lef/d;->n:I
+    sget v0, Lgf/d;->n:I
 
     .line 14
     .line 15
@@ -6589,7 +6589,7 @@
 
     .line 19
     :cond_0
-    sget v0, Lef/d;->p:I
+    sget v0, Lgf/d;->p:I
 
     .line 20
     .line 21
@@ -6786,7 +6786,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v0, v1, v2, v3}, Lcom/yalantis/ucrop/view/a;->u(Landroid/graphics/Bitmap$CompressFormat;ILff/a;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/yalantis/ucrop/view/a;->u(Landroid/graphics/Bitmap$CompressFormat;ILhf/a;)V
 
     .line 24
     .line 25
@@ -6806,7 +6806,7 @@
     .line 2
     .line 3
     .line 4
-    sget p1, Lef/e;->a:I
+    sget p1, Lgf/e;->a:I
 
     .line 5
     .line 6
@@ -6868,7 +6868,7 @@
     move-result-object v0
 
     .line 5
-    sget v1, Lef/f;->a:I
+    sget v1, Lgf/f;->a:I
 
     .line 6
     .line 7
@@ -6877,7 +6877,7 @@
     .line 8
     .line 9
     .line 10
-    sget v0, Lef/d;->k:I
+    sget v0, Lgf/d;->k:I
 
     .line 11
     .line 12
@@ -6959,7 +6959,7 @@
 
     .line 47
     .line 48
-    sget v1, Lef/g;->d:I
+    sget v1, Lgf/g;->d:I
 
     .line 49
     .line 50
@@ -7015,7 +7015,7 @@
     .line 75
     .line 76
     :cond_0
-    sget v0, Lef/d;->j:I
+    sget v0, Lgf/d;->j:I
 
     .line 77
     .line 78
@@ -7121,7 +7121,7 @@
     move-result v0
 
     .line 5
-    sget v1, Lef/d;->j:I
+    sget v1, Lgf/d;->j:I
 
     .line 6
     .line 7
@@ -7186,7 +7186,7 @@
     .locals 2
 
     .line 1
-    sget v0, Lef/d;->j:I
+    sget v0, Lgf/d;->j:I
 
     .line 2
     .line 3
@@ -7211,7 +7211,7 @@
     .line 12
     .line 13
     .line 14
-    sget v0, Lef/d;->k:I
+    sget v0, Lgf/d;->k:I
 
     .line 15
     .line 16

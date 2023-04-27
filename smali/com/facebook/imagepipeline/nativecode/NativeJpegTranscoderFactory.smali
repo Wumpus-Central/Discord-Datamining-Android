@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements La6/d;
+.implements Lb6/d;
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -22,7 +22,7 @@
 # direct methods
 .method public constructor <init>(IZZ)V
     .locals 0
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -214,13 +214,13 @@
 
 
 # virtual methods
-.method public createImageTranscoder(Li5/c;Z)La6/c;
+.method public createImageTranscoder(Lj5/c;Z)Lb6/c;
     .locals 3
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
-    sget-object v0, Li5/b;->a:Li5/c;
+    sget-object v0, Lj5/b;->a:Lj5/c;
 
     .line 2
     .line 3

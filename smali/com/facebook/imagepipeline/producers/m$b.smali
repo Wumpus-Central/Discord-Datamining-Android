@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private final j:Ls5/f;
+.field private final j:Lt5/f;
 
-.field private final k:Ls5/e;
+.field private final k:Lt5/e;
 
 .field private l:I
 
@@ -25,18 +25,18 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/facebook/imagepipeline/producers/m;Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;Ls5/f;Ls5/e;ZI)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/producers/m;Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;Lt5/f;Lt5/e;ZI)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
-            "Ls5/f;",
-            "Ls5/e;",
+            "Lt5/f;",
+            "Lt5/e;",
             "ZI)V"
         }
     .end annotation
@@ -69,7 +69,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-static {p4}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p4}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -77,15 +77,15 @@
     move-result-object p1
 
     .line 16
-    check-cast p1, Ls5/f;
+    check-cast p1, Lt5/f;
 
     .line 17
     .line 18
-    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
     .line 19
     .line 20
-    invoke-static {p5}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p5}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -93,11 +93,11 @@
     move-result-object p1
 
     .line 24
-    check-cast p1, Ls5/e;
+    check-cast p1, Lt5/e;
 
     .line 25
     .line 26
-    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Ls5/e;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Lt5/e;
 
     .line 27
     .line 28
@@ -612,7 +612,7 @@
 
 
 # virtual methods
-.method protected declared-synchronized H(Lu5/e;I)Z
+.method protected declared-synchronized H(Lv5/e;I)Z
     .locals 3
 
     .line 1
@@ -620,7 +620,7 @@
 
     .line 2
     :try_start_0
-    invoke-super {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lu5/e;I)Z
+    invoke-super {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/m$c;->H(Lv5/e;I)Z
 
     .line 3
     .line 4
@@ -672,7 +672,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1}, Lu5/e;->n0(Lu5/e;)Z
+    invoke-static {p1}, Lv5/e;->j0(Lv5/e;)Z
 
     .line 28
     .line 29
@@ -684,7 +684,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual {p1}, Lv5/e;->t()Lj5/c;
 
     .line 34
     .line 35
@@ -692,7 +692,7 @@
     move-result-object p2
 
     .line 37
-    sget-object v1, Li5/b;->a:Li5/c;
+    sget-object v1, Lj5/b;->a:Lj5/c;
 
     .line 38
     .line 39
@@ -700,11 +700,11 @@
 
     .line 40
     .line 41
-    iget-object p2, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iget-object p2, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
     .line 42
     .line 43
-    invoke-virtual {p2, p1}, Ls5/f;->g(Lu5/e;)Z
+    invoke-virtual {p2, p1}, Lt5/f;->g(Lv5/e;)Z
 
     .line 44
     .line 45
@@ -729,11 +729,11 @@
     .line 52
     :cond_1
     :try_start_1
-    iget-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iget-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
     .line 53
     .line 54
-    invoke-virtual {p1}, Ls5/f;->d()I
+    invoke-virtual {p1}, Lt5/f;->d()I
 
     .line 55
     .line 56
@@ -759,11 +759,11 @@
     .line 64
     :cond_2
     :try_start_2
-    iget-object v2, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Ls5/e;
+    iget-object v2, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Lt5/e;
 
     .line 65
     .line 66
-    invoke-interface {v2, v1}, Ls5/e;->a(I)I
+    invoke-interface {v2, v1}, Lt5/e;->a(I)I
 
     .line 67
     .line 68
@@ -775,11 +775,11 @@
 
     .line 71
     .line 72
-    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
     .line 73
     .line 74
-    invoke-virtual {v1}, Ls5/f;->e()Z
+    invoke-virtual {v1}, Lt5/f;->e()Z
 
     .line 75
     .line 76
@@ -829,30 +829,30 @@
     .line 93
 .end method
 
-.method protected w(Lu5/e;)I
+.method protected w(Lv5/e;)I
     .locals 0
 
-    iget-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iget-object p1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
-    invoke-virtual {p1}, Ls5/f;->c()I
+    invoke-virtual {p1}, Lt5/f;->c()I
 
     move-result p1
 
     return p1
 .end method
 
-.method protected x()Lu5/i;
+.method protected x()Lv5/i;
     .locals 2
 
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Ls5/e;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/m$b;->k:Lt5/e;
 
-    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Ls5/f;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/m$b;->j:Lt5/f;
 
-    invoke-virtual {v1}, Ls5/f;->d()I
+    invoke-virtual {v1}, Lt5/f;->d()I
 
     move-result v1
 
-    invoke-interface {v0, v1}, Ls5/e;->b(I)Lu5/i;
+    invoke-interface {v0, v1}, Lt5/e;->b(I)Lv5/i;
 
     move-result-object v0
 

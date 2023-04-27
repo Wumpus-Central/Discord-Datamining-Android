@@ -32,7 +32,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1}, Lf6/a;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lg6/a;->d(Ljava/lang/String;)Z
 
     .line 11
     .line 12

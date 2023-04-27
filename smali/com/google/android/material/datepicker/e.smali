@@ -51,7 +51,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p2, v0}, Lg5/a1;->a(Landroid/icu/text/DateFormat;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lh5/a1;->a(Landroid/icu/text/DateFormat;Ljava/util/Date;)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -297,7 +297,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p2, v0}, Lg5/a1;->a(Landroid/icu/text/DateFormat;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lh5/a1;->a(Landroid/icu/text/DateFormat;Ljava/util/Date;)Ljava/lang/String;
 
     .line 17
     .line 18

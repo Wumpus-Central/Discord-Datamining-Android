@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/bottomappbar/a;
-.super Lwb/f;
+.super Lxb/f;
 .source "SourceFile"
 
 # interfaces
@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public c(FFFLwb/m;)V
+.method public c(FFFLxb/m;)V
     .locals 23
 
     .line 1
@@ -52,7 +52,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v9, v1, v10}, Lwb/m;->m(FF)V
+    invoke-virtual {v9, v1, v10}, Lxb/m;->m(FF)V
 
     .line 15
     .line 16
@@ -129,7 +129,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v9, v1, v10}, Lwb/m;->m(FF)V
+    invoke-virtual {v9, v1, v10}, Lxb/m;->m(FF)V
 
     .line 51
     .line 52
@@ -305,7 +305,7 @@
 
     .line 126
     .line 127
-    invoke-virtual {v9, v5, v10}, Lwb/m;->m(FF)V
+    invoke-virtual {v9, v5, v10}, Lxb/m;->m(FF)V
 
     .line 128
     .line 129
@@ -340,7 +340,7 @@
 
     .line 143
     .line 144
-    invoke-virtual/range {v2 .. v8}, Lwb/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lxb/m;->a(FFFFFF)V
 
     .line 145
     .line 146
@@ -388,7 +388,7 @@
 
     .line 167
     .line 168
-    invoke-virtual/range {v2 .. v8}, Lwb/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lxb/m;->a(FFFFFF)V
 
     .line 169
     .line 170
@@ -467,7 +467,7 @@
 
     .line 203
     .line 204
-    invoke-virtual/range {v2 .. v8}, Lwb/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lxb/m;->a(FFFFFF)V
 
     .line 205
     .line 206
@@ -494,7 +494,7 @@
     add-float/2addr v2, v15
 
     .line 217
-    invoke-virtual {v9, v3, v2}, Lwb/m;->m(FF)V
+    invoke-virtual {v9, v3, v2}, Lxb/m;->m(FF)V
 
     .line 218
     .line 219
@@ -538,7 +538,7 @@
 
     .line 238
     .line 239
-    invoke-virtual/range {v2 .. v8}, Lwb/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lxb/m;->a(FFFFFF)V
 
     .line 240
     .line 241
@@ -575,12 +575,12 @@
 
     .line 256
     .line 257
-    invoke-virtual/range {v2 .. v8}, Lwb/m;->a(FFFFFF)V
+    invoke-virtual/range {v2 .. v8}, Lxb/m;->a(FFFFFF)V
 
     .line 258
     .line 259
     .line 260
-    invoke-virtual {v9, v1, v10}, Lwb/m;->m(FF)V
+    invoke-virtual {v9, v1, v10}, Lxb/m;->m(FF)V
 
     .line 261
     .line 262
@@ -662,7 +662,7 @@
     return v0
 .end method
 
-.method i()F
+.method h()F
     .locals 1
 
     iget v0, p0, Lcom/google/android/material/bottomappbar/a;->k:F

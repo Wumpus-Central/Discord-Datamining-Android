@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field public final synthetic k:Lcf/d;
+.field public final synthetic k:Lef/d;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcf/d;)V
+.method public synthetic constructor <init>(Lef/d;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/swmansion/gesturehandler/react/g;->k:Lcf/d;
+    iput-object p1, p0, Lcom/swmansion/gesturehandler/react/g;->k:Lef/d;
 
     return-void
 .end method
@@ -26,9 +26,9 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/g;->k:Lcf/d;
+    iget-object v0, p0, Lcom/swmansion/gesturehandler/react/g;->k:Lef/d;
 
-    invoke-static {v0}, Lcom/swmansion/gesturehandler/react/h;->b(Lcf/d;)V
+    invoke-static {v0}, Lcom/swmansion/gesturehandler/react/h;->b(Lef/d;)V
 
     return-void
 .end method

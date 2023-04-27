@@ -32,7 +32,7 @@
     .end annotation
 .end method
 
-.method public abstract j(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
+.method public abstract k(Lcom/google/android/exoplayer2/upstream/h$e;JJ)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;JJ)V"

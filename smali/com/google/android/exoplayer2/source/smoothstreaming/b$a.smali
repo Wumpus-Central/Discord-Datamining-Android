@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(Ld9/t;Lp8/a;ILa9/h;Ld9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
+.method public abstract a(Le9/t;Lq8/a;ILb9/h;Le9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
 .end method

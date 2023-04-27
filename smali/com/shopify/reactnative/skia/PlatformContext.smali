@@ -13,7 +13,7 @@
 .field private final mContext:Lcom/facebook/react/bridge/ReactContext;
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -257,7 +257,7 @@
 # virtual methods
 .method public beginDrawLoop()V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -319,7 +319,7 @@
 
 .method public endDrawLoop()V
     .locals 1
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -406,7 +406,7 @@
 
 .method public getJniStreamFromSource(Ljava/lang/String;)[B
     .locals 3
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -927,7 +927,7 @@
 
 .method public raise(Ljava/lang/String;)V
     .locals 2
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     new-instance v0, Landroid/os/Handler;

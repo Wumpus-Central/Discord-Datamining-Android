@@ -16,20 +16,20 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
-        "Lu5/e;",
-        "Lu5/e;",
+        "Lv5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field private final c:Lo5/s;
+.field private final c:Lp5/s;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;"
         }
     .end annotation
@@ -43,17 +43,17 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/facebook/imagepipeline/producers/Consumer;Lo5/s;Lcom/facebook/cache/common/CacheKey;ZZ)V
+.method public constructor <init>(Lcom/facebook/imagepipeline/producers/Consumer;Lp5/s;Lcom/facebook/cache/common/CacheKey;ZZ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
-            "Lo5/s<",
+            "Lp5/s<",
             "Lcom/facebook/cache/common/CacheKey;",
-            "Ly3/g;",
+            "Lz3/g;",
             ">;",
             "Lcom/facebook/cache/common/CacheKey;",
             "ZZ)V"
@@ -66,7 +66,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/s$a;->c:Lo5/s;
+    iput-object p2, p0, Lcom/facebook/imagepipeline/producers/s$a;->c:Lp5/s;
 
     .line 5
     .line 6
@@ -636,19 +636,19 @@
 .method public bridge synthetic h(Ljava/lang/Object;I)V
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/s$a;->p(Lu5/e;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/s$a;->p(Lv5/e;I)V
 
     return-void
 .end method
 
-.method public p(Lu5/e;I)V
+.method public p(Lv5/e;I)V
     .locals 3
 
     .line 1
     :try_start_0
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 2
     .line 3
@@ -664,7 +664,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lz5/b;->a(Ljava/lang/String;)V
+    invoke-static {v0}, La6/b;->a(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -702,7 +702,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual {p1}, Lv5/e;->t()Lj5/c;
 
     .line 29
     .line 30
@@ -710,7 +710,7 @@
     move-result-object v0
 
     .line 32
-    sget-object v1, Li5/c;->c:Li5/c;
+    sget-object v1, Lj5/c;->c:Lj5/c;
 
     .line 33
     .line 34
@@ -722,7 +722,7 @@
 
     .line 37
     :cond_1
-    invoke-virtual {p1}, Lu5/e;->l()Lcom/facebook/common/references/CloseableReference;
+    invoke-virtual {p1}, Lv5/e;->l()Lcom/facebook/common/references/CloseableReference;
 
     .line 38
     .line 39
@@ -753,7 +753,7 @@
 
     .line 50
     .line 51
-    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/s$a;->c:Lo5/s;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/producers/s$a;->c:Lp5/s;
 
     .line 52
     .line 53
@@ -761,7 +761,7 @@
 
     .line 54
     .line 55
-    invoke-interface {v1, v2, v0}, Lo5/s;->d(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
+    invoke-interface {v1, v2, v0}, Lp5/s;->b(Ljava/lang/Object;Lcom/facebook/common/references/CloseableReference;)Lcom/facebook/common/references/CloseableReference;
 
     .line 56
     .line 57
@@ -792,16 +792,16 @@
     .line 65
     .line 66
     :try_start_3
-    new-instance v0, Lu5/e;
+    new-instance v0, Lv5/e;
 
     .line 67
     .line 68
-    invoke-direct {v0, v1}, Lu5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
+    invoke-direct {v0, v1}, Lv5/e;-><init>(Lcom/facebook/common/references/CloseableReference;)V
 
     .line 69
     .line 70
     .line 71
-    invoke-virtual {v0, p1}, Lu5/e;->i(Lu5/e;)V
+    invoke-virtual {v0, p1}, Lv5/e;->i(Lv5/e;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -850,14 +850,14 @@
     .line 92
     .line 93
     :try_start_6
-    invoke-static {v0}, Lu5/e;->h(Lu5/e;)V
+    invoke-static {v0}, Lv5/e;->h(Lv5/e;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     .line 94
     .line 95
     .line 96
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 97
     .line 98
@@ -869,7 +869,7 @@
 
     .line 101
     .line 102
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 103
     .line 104
@@ -883,7 +883,7 @@
 
     .line 107
     :try_start_7
-    invoke-static {v0}, Lu5/e;->h(Lu5/e;)V
+    invoke-static {v0}, Lv5/e;->h(Lv5/e;)V
 
     .line 108
     .line 109
@@ -931,7 +931,7 @@
     .line 126
     .line 127
     .line 128
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 129
     .line 130
@@ -943,7 +943,7 @@
 
     .line 133
     .line 134
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 135
     .line 136
@@ -970,7 +970,7 @@
     .line 143
     .line 144
     .line 145
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 146
     .line 147
@@ -982,7 +982,7 @@
 
     .line 150
     .line 151
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 152
     .line 153
@@ -995,7 +995,7 @@
     move-exception p1
 
     .line 156
-    invoke-static {}, Lz5/b;->d()Z
+    invoke-static {}, La6/b;->d()Z
 
     .line 157
     .line 158
@@ -1007,7 +1007,7 @@
 
     .line 161
     .line 162
-    invoke-static {}, Lz5/b;->b()V
+    invoke-static {}, La6/b;->b()V
 
     .line 163
     .line 164

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lf9/g0$b;
+.implements Lg9/g0$b;
 
 
 # annotations
@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$a;->a:Lcom/google/android/exoplayer2/source/dash/DashMediaSource;
 
-    invoke-static {}, Lf9/g0;->h()J
+    invoke-static {}, Lg9/g0;->h()J
 
     move-result-wide v1
 

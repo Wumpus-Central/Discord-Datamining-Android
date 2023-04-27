@@ -98,7 +98,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/discord/media/utils/QualityAndResolutionConstraint;-><init>(IZ)V
 
-    invoke-virtual {p1, v0}, Lid/zelory/compressor/constraint/Compression;->a(Lkf/a;)V
+    invoke-virtual {p1, v0}, Lid/zelory/compressor/constraint/Compression;->a(Lmf/a;)V
 
     return-void
 .end method

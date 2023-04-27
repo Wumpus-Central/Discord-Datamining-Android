@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -29,7 +29,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -63,7 +63,7 @@
     move-result-object v2
 
     .line 15
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 16
     .line 17
@@ -88,7 +88,7 @@
     move-result-object v0
 
     .line 26
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 27
     .line 28
@@ -246,6 +246,6 @@
 .end method
 
 .method private static native nativeIterativeBoxBlur(Landroid/graphics/Bitmap;II)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method

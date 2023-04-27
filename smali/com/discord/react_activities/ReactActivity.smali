@@ -555,11 +555,11 @@
     .line 7
     .line 8
     .line 9
-    sget-object v0, Lm6/b;->n:Lm6/b$a;
+    sget-object v0, Ln6/b;->n:Ln6/b$a;
 
     .line 10
     .line 11
-    invoke-virtual {v0, p0, p1}, Lm6/b$a;->a(Landroid/app/Activity;Landroid/content/res/Configuration;)V
+    invoke-virtual {v0, p0, p1}, Ln6/b$a;->a(Landroid/app/Activity;Landroid/content/res/Configuration;)V
 
     .line 12
     .line 13

@@ -17,18 +17,18 @@
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;)I
 .end method
 
-.method public abstract b()Lcom/facebook/hermes/intl/a$c;
-.end method
-
-.method public abstract c(Lg5/b;)Lcom/facebook/hermes/intl/a;
+.method public abstract b(Lh5/b;)Lcom/facebook/hermes/intl/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg5/b<",
+            "Lh5/b<",
             "*>;)",
             "Lcom/facebook/hermes/intl/a;"
         }
     .end annotation
+.end method
+
+.method public abstract c()Lcom/facebook/hermes/intl/a$c;
 .end method
 
 .method public abstract d(Z)Lcom/facebook/hermes/intl/a;

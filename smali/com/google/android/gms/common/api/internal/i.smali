@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<A::",
-        "Lu9/a$b;",
+        "Lv9/a$b;",
         "L:Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;"
@@ -67,7 +67,7 @@
     return-object v0
 .end method
 
-.method protected abstract b(Lu9/a$b;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+.method protected abstract b(Lv9/a$b;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TA;",

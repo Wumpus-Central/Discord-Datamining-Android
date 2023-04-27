@@ -8,7 +8,7 @@
     value = {
         "Lcom/facebook/datasource/b<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -35,7 +35,7 @@
             "(",
             "Lcom/facebook/datasource/DataSource<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;)V"
         }
     .end annotation
@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 20
-    instance-of v0, v0, Lu5/b;
+    instance-of v0, v0, Lv5/b;
 
     .line 21
     .line 22
@@ -97,11 +97,11 @@
     move-result-object v0
 
     .line 28
-    check-cast v0, Lu5/b;
+    check-cast v0, Lv5/b;
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Lu5/b;->n()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lv5/b;->n()Landroid/graphics/Bitmap;
 
     .line 31
     .line 32

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lf9/q$a;
+.implements Lg9/q$a;
 
 
 # direct methods

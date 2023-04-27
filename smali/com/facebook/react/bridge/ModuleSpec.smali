@@ -130,7 +130,7 @@
     const-string v0, "ModuleSpec"
 
     .line 4
-    invoke-static {v0, p0}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
     invoke-interface {p1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;

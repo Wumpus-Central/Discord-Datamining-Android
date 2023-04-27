@@ -45,16 +45,16 @@
 .method public abstract k()Z
 .end method
 
-.method public abstract l([Ld7/k;Lh8/o0;JJ)V
+.method public abstract l(Le7/u;[Le7/k;Li8/o0;JZZJJ)V
 .end method
 
-.method public abstract m()Ld7/t;
+.method public abstract m([Le7/k;Li8/o0;JJ)V
 .end method
 
-.method public abstract o(FF)V
+.method public abstract n()Le7/t;
 .end method
 
-.method public abstract p(Ld7/u;[Ld7/k;Lh8/o0;JZZJJ)V
+.method public abstract p(FF)V
 .end method
 
 .method public abstract r(JJ)V
@@ -63,7 +63,7 @@
 .method public abstract reset()V
 .end method
 
-.method public abstract s()Lh8/o0;
+.method public abstract s()Li8/o0;
 .end method
 
 .method public abstract setIndex(I)V
@@ -81,5 +81,5 @@
 .method public abstract u(J)V
 .end method
 
-.method public abstract v()Lf9/t;
+.method public abstract v()Lg9/t;
 .end method

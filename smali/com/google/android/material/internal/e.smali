@@ -78,7 +78,7 @@
     move-result-object p1
 
     .line 5
-    sget-object v0, Ldb/k;->Q1:[I
+    sget-object v0, Leb/k;->Q1:[I
 
     .line 6
     .line 7
@@ -93,7 +93,7 @@
     move-result-object p1
 
     .line 12
-    sget p2, Ldb/k;->S1:I
+    sget p2, Leb/k;->S1:I
 
     .line 13
     .line 14
@@ -109,7 +109,7 @@
 
     .line 19
     .line 20
-    sget p2, Ldb/k;->R1:I
+    sget p2, Leb/k;->R1:I
 
     .line 21
     .line 22
@@ -287,7 +287,7 @@
     .locals 1
 
     .line 1
-    sget v0, Ldb/f;->F:I
+    sget v0, Leb/f;->F:I
 
     .line 2
     .line 3
@@ -586,7 +586,7 @@
 
     .line 71
     .line 72
-    sget v5, Ldb/f;->F:I
+    sget v5, Leb/f;->F:I
 
     .line 73
     .line 74
@@ -706,7 +706,7 @@
 
     .line 126
     :cond_6
-    sget v2, Ldb/f;->F:I
+    sget v2, Leb/f;->F:I
 
     .line 127
     .line 128

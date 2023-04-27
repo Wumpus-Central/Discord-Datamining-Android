@@ -28,12 +28,12 @@
 
 
 # virtual methods
-.method public a(Lz3/d;Ljava/lang/Throwable;)V
+.method public a(La4/d;Ljava/lang/Throwable;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lz3/d<",
+            "La4/d<",
             "Ljava/lang/Object;",
             ">;",
             "Ljava/lang/Throwable;",
@@ -42,7 +42,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lz3/d;->f()Ljava/lang/Object;
+    invoke-virtual {p1}, La4/d;->f()Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -50,7 +50,7 @@
     move-result-object p2
 
     .line 5
-    invoke-static {}, Lcom/facebook/common/references/CloseableReference;->i()Ljava/lang/Class;
+    invoke-static {}, Lcom/facebook/common/references/CloseableReference;->h()Ljava/lang/Class;
 
     .line 6
     .line 7
@@ -150,7 +150,7 @@
 
     .line 50
     .line 51
-    invoke-static {v0, p1, v1}, Lw3/a;->F(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, p1, v1}, Lx3/a;->F(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 52
     .line 53

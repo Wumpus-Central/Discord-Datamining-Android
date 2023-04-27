@@ -72,7 +72,7 @@
 
     .line 18
     .line 19
-    invoke-static {p0, p1, p2, v0}, Lg3/b;->a(Landroid/app/Service;ILandroid/app/Notification;I)V
+    invoke-static {p0, p1, p2, v0}, Lh3/b;->a(Landroid/app/Service;ILandroid/app/Notification;I)V
 
     .line 20
     .line 21
@@ -587,7 +587,7 @@
 
     .line 16
     .line 17
-    invoke-static {p0, p1}, Lg3/a;->a(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-static {p0, p1}, Lh3/a;->a(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
 
     .line 18
     .line 19

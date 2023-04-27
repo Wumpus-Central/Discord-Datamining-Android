@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/common/mapbuffer/WritableMapBuffer$MapBufferEntry;,
         Lcom/facebook/react/common/mapbuffer/WritableMapBuffer$Companion;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -404,7 +404,7 @@
 
 .method private final getKeys()[I
     .locals 4
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/common/mapbuffer/WritableMapBuffer;->values:Landroid/util/SparseArray;
@@ -438,7 +438,7 @@
 
 .method private final getValues()[Ljava/lang/Object;
     .locals 5
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     iget-object v0, p0, Lcom/facebook/react/common/mapbuffer/WritableMapBuffer;->values:Landroid/util/SparseArray;
@@ -490,7 +490,7 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Lkotlin/ranges/a;->b()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->a()I
 
     .line 8
     .line 9
@@ -498,7 +498,7 @@
     move-result v1
 
     .line 11
-    invoke-virtual {v0}, Lkotlin/ranges/a;->e()I
+    invoke-virtual {v0}, Lkotlin/ranges/a;->b()I
 
     .line 12
     .line 13

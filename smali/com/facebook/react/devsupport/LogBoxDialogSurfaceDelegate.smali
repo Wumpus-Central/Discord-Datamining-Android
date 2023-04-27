@@ -93,7 +93,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1, v1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {p1, v1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 10
     .line 11

@@ -219,7 +219,7 @@
     move-result v7
 
     .line 65
-    invoke-static {v4, v7}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v4, v7}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 66
     .line 67
@@ -257,11 +257,11 @@
     move-object v9, v4
 
     .line 82
-    check-cast v9, Lmf/p;
+    check-cast v9, Lof/p;
 
     .line 83
     .line 84
-    invoke-virtual {v9}, Lmf/p;->nextInt()I
+    invoke-virtual {v9}, Lof/p;->nextInt()I
 
     .line 85
     .line 86

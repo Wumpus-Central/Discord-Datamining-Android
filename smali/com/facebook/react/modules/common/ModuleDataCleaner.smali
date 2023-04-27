@@ -72,7 +72,7 @@
 
     const-string v2, "ReactNative"
 
-    invoke-static {v2, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     check-cast v0, Lcom/facebook/react/modules/common/ModuleDataCleaner$Cleanable;
@@ -137,7 +137,7 @@
 
     const-string v2, "ReactNative"
 
-    invoke-static {v2, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     check-cast v0, Lcom/facebook/react/modules/common/ModuleDataCleaner$Cleanable;

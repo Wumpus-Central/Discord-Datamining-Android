@@ -7,9 +7,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/facebook/react/bridge/CatalystInstanceImpl$Builder;,
@@ -18,6 +15,9 @@
         Lcom/facebook/react/bridge/CatalystInstanceImpl$BridgeCallback;,
         Lcom/facebook/react/bridge/CatalystInstanceImpl$PendingJSCall;
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 
@@ -234,14 +234,14 @@
     const-string v8, "ReactNative"
 
     .line 14
-    invoke-static {v8, v2}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, v2}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "createCatalystInstanceImpl"
 
     const-wide/16 v9, 0x0
 
     .line 15
-    invoke-static {v9, v10, v2}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v9, v10, v2}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 16
     sget-boolean v2, Lcom/facebook/react/config/ReactFeatureFlags;->enableRuntimeSchedulerInTurboModule:Z
@@ -253,7 +253,7 @@
     if-nez v2, :cond_0
 
     .line 17
-    invoke-static {}, Lc6/a;->e()Ljava/lang/AssertionError;
+    invoke-static {}, Ld6/a;->e()Ljava/lang/AssertionError;
 
     .line 18
     :cond_0
@@ -324,17 +324,17 @@
     iput-object v2, v7, Lcom/facebook/react/bridge/CatalystInstanceImpl;->mTraceListener:Lcom/facebook/systrace/TraceListener;
 
     .line 29
-    invoke-static {v9, v10}, Lg6/a;->g(J)V
+    invoke-static {v9, v10}, Lh6/a;->g(J)V
 
     const-string v2, "Initializing React Xplat Bridge before initializeBridge"
 
     .line 30
-    invoke-static {v8, v2}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, v2}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "initializeCxxBridge"
 
     .line 31
-    invoke-static {v9, v10, v2}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v9, v10, v2}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 32
     sget-boolean v2, Lcom/facebook/react/config/ReactFeatureFlags;->warnOnLegacyNativeModuleSystemUse:Z
@@ -377,10 +377,10 @@
     const-string v0, "Initializing React Xplat Bridge after initializeBridge"
 
     .line 39
-    invoke-static {v8, v0}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, v0}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 40
-    invoke-static {v9, v10}, Lg6/a;->g(J)V
+    invoke-static {v9, v10}, Lh6/a;->g(J)V
 
     .line 41
     new-instance v0, Lcom/facebook/react/bridge/JavaScriptContextHolder;
@@ -532,7 +532,7 @@
 
     .line 15
     .line 16
-    invoke-static {v2, v3, v4, v0}, Lg6/a;->k(JLjava/lang/String;I)V
+    invoke-static {v2, v3, v4, v0}, Lh6/a;->k(JLjava/lang/String;I)V
 
     .line 17
     .line 18
@@ -708,7 +708,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lc6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Ld6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -802,7 +802,7 @@
 
     .line 17
     .line 18
-    invoke-static {v4, v5, v3, v0}, Lg6/a;->k(JLjava/lang/String;I)V
+    invoke-static {v4, v5, v3, v0}, Lh6/a;->k(JLjava/lang/String;I)V
 
     .line 19
     .line 20
@@ -1039,7 +1039,7 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -1118,7 +1118,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -1178,7 +1178,7 @@
 
     .line 35
     .line 36
-    invoke-static {v0}, Lg6/a;->m(Lcom/facebook/systrace/TraceListener;)V
+    invoke-static {v0}, Lh6/a;->m(Lcom/facebook/systrace/TraceListener;)V
 
     .line 37
     .line 38
@@ -2059,7 +2059,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -2078,7 +2078,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v2}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v2}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 15
     .line 16
@@ -2091,7 +2091,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0, v2}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v2}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 22
     .line 23
@@ -2149,7 +2149,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1, p2}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -2665,7 +2665,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -2684,7 +2684,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v2}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v2}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 15
     .line 16
@@ -2778,7 +2778,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0}, Lg6/a;->i(Lcom/facebook/systrace/TraceListener;)V
+    invoke-static {v0}, Lh6/a;->i(Lcom/facebook/systrace/TraceListener;)V
 
     .line 60
     .line 61

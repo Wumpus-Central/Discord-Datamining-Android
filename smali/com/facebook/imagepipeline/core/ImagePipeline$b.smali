@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv3/k;
+.implements Lw3/k;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/imagepipeline/core/ImagePipeline;->r(Landroid/net/Uri;)Lv3/k;
+    value = Lcom/facebook/imagepipeline/core/ImagePipeline;->r(Landroid/net/Uri;)Lw3/k;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lv3/k<",
+        "Lw3/k<",
         "Lcom/facebook/cache/common/CacheKey;",
         ">;"
     }

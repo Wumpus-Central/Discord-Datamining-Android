@@ -12,15 +12,15 @@
 
 
 # instance fields
-.field private final a:Lne/c;
+.field private final a:Loe/c;
 
-.field private final b:Lhe/a;
+.field private final b:Lie/a;
 
-.field private final c:Loe/i;
+.field private final c:Lpe/i;
 
-.field private final d:Lhe/b;
+.field private final d:Lie/b;
 
-.field private final e:Lne/d;
+.field private final e:Loe/d;
 
 .field private final f:Landroid/media/MediaFormat;
 
@@ -30,26 +30,26 @@
 
 
 # direct methods
-.method private constructor <init>(Lne/c;Lhe/a;Loe/i;Lhe/b;Lne/d;Landroid/media/MediaFormat;II)V
+.method private constructor <init>(Loe/c;Lie/a;Lpe/i;Lie/b;Loe/d;Landroid/media/MediaFormat;II)V
     .locals 0
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/linkedin/android/litr/b;->a:Lne/c;
+    iput-object p1, p0, Lcom/linkedin/android/litr/b;->a:Loe/c;
 
     .line 4
-    iput-object p2, p0, Lcom/linkedin/android/litr/b;->b:Lhe/a;
+    iput-object p2, p0, Lcom/linkedin/android/litr/b;->b:Lie/a;
 
     .line 5
-    iput-object p3, p0, Lcom/linkedin/android/litr/b;->c:Loe/i;
+    iput-object p3, p0, Lcom/linkedin/android/litr/b;->c:Lpe/i;
 
     .line 6
-    iput-object p4, p0, Lcom/linkedin/android/litr/b;->d:Lhe/b;
+    iput-object p4, p0, Lcom/linkedin/android/litr/b;->d:Lie/b;
 
     .line 7
-    iput-object p5, p0, Lcom/linkedin/android/litr/b;->e:Lne/d;
+    iput-object p5, p0, Lcom/linkedin/android/litr/b;->e:Loe/d;
 
     .line 8
     iput-object p6, p0, Lcom/linkedin/android/litr/b;->f:Landroid/media/MediaFormat;
@@ -63,53 +63,53 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lne/c;Lhe/a;Loe/i;Lhe/b;Lne/d;Landroid/media/MediaFormat;IILcom/linkedin/android/litr/b$a;)V
+.method synthetic constructor <init>(Loe/c;Lie/a;Lpe/i;Lie/b;Loe/d;Landroid/media/MediaFormat;IILcom/linkedin/android/litr/b$a;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p8}, Lcom/linkedin/android/litr/b;-><init>(Lne/c;Lhe/a;Loe/i;Lhe/b;Lne/d;Landroid/media/MediaFormat;II)V
+    invoke-direct/range {p0 .. p8}, Lcom/linkedin/android/litr/b;-><init>(Loe/c;Lie/a;Lpe/i;Lie/b;Loe/d;Landroid/media/MediaFormat;II)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lhe/a;
+.method public a()Lie/a;
     .locals 1
 
-    iget-object v0, p0, Lcom/linkedin/android/litr/b;->b:Lhe/a;
+    iget-object v0, p0, Lcom/linkedin/android/litr/b;->b:Lie/a;
 
     return-object v0
 .end method
 
-.method public b()Lhe/b;
+.method public b()Lie/b;
     .locals 1
 
-    iget-object v0, p0, Lcom/linkedin/android/litr/b;->d:Lhe/b;
+    iget-object v0, p0, Lcom/linkedin/android/litr/b;->d:Lie/b;
 
     return-object v0
 .end method
 
-.method public c()Lne/c;
+.method public c()Loe/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/linkedin/android/litr/b;->a:Lne/c;
+    iget-object v0, p0, Lcom/linkedin/android/litr/b;->a:Loe/c;
 
     return-object v0
 .end method
 
-.method public d()Lne/d;
+.method public d()Loe/d;
     .locals 1
 
-    iget-object v0, p0, Lcom/linkedin/android/litr/b;->e:Lne/d;
+    iget-object v0, p0, Lcom/linkedin/android/litr/b;->e:Loe/d;
 
     return-object v0
 .end method
 
-.method public e()Loe/i;
+.method public e()Lpe/i;
     .locals 1
 
-    iget-object v0, p0, Lcom/linkedin/android/litr/b;->c:Loe/i;
+    iget-object v0, p0, Lcom/linkedin/android/litr/b;->c:Lpe/i;
 
     return-object v0
 .end method

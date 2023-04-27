@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lh8/u$b;
+.implements Li8/u$b;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final a(Lh8/u;Lcom/google/android/exoplayer2/Timeline;)V
+.method public final a(Li8/u;Lcom/google/android/exoplayer2/Timeline;)V
     .locals 1
 
     iget-object v0, p0, Lcom/google/android/exoplayer2/o0;->a:Lcom/google/android/exoplayer2/p0;
 
-    invoke-static {v0, p1, p2}, Lcom/google/android/exoplayer2/p0;->a(Lcom/google/android/exoplayer2/p0;Lh8/u;Lcom/google/android/exoplayer2/Timeline;)V
+    invoke-static {v0, p1, p2}, Lcom/google/android/exoplayer2/p0;->a(Lcom/google/android/exoplayer2/p0;Li8/u;Lcom/google/android/exoplayer2/Timeline;)V
 
     return-void
 .end method

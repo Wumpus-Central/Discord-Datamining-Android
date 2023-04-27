@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lq6/g;
+.implements Lr6/g;
 
 
 # static fields
@@ -17,7 +17,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lo6/b;",
+            "Lp6/b;",
             ">;"
         }
     .end annotation
@@ -106,7 +106,7 @@
     const/4 v4, 0x2
 
     .line 34
-    new-array v4, v4, [Lo6/b;
+    new-array v4, v4, [Lp6/b;
 
     .line 35
     .line 36
@@ -114,7 +114,7 @@
 
     .line 37
     .line 38
-    invoke-static {v5}, Lo6/b;->b(Ljava/lang/String;)Lo6/b;
+    invoke-static {v5}, Lp6/b;->b(Ljava/lang/String;)Lp6/b;
 
     .line 39
     .line 40
@@ -133,7 +133,7 @@
 
     .line 46
     .line 47
-    invoke-static {v5}, Lo6/b;->b(Ljava/lang/String;)Lo6/b;
+    invoke-static {v5}, Lp6/b;->b(Ljava/lang/String;)Lp6/b;
 
     .line 48
     .line 49
@@ -898,7 +898,7 @@
         value = {
             "()",
             "Ljava/util/Set<",
-            "Lo6/b;",
+            "Lp6/b;",
             ">;"
         }
     .end annotation

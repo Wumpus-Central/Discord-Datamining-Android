@@ -7,9 +7,6 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/swmansion/reanimated/NativeProxy;
 .end annotation
@@ -19,12 +16,15 @@
     name = "EventHandler"
 .end annotation
 
+.annotation build Le6/a;
+.end annotation
+
 
 # instance fields
 .field private mCustomEventNamesResolver:Lcom/facebook/react/uimanager/UIManagerModule$CustomEventNamesResolver;
 
 .field private final mHybridData:Lcom/facebook/jni/HybridData;
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end field
 
@@ -32,7 +32,7 @@
 # direct methods
 .method private constructor <init>(Lcom/facebook/jni/HybridData;)V
     .locals 0
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1

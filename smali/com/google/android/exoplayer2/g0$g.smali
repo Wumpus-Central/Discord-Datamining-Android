@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final a:Lh8/u$a;
+.field public final a:Li8/u$a;
 
 .field public final b:J
 
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lh8/u$a;JJZZZ)V
+.method public constructor <init>(Li8/u$a;JJZZZ)V
     .locals 0
 
     .line 1
@@ -38,7 +38,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/g0$g;->a:Lh8/u$a;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/g0$g;->a:Li8/u$a;
 
     .line 5
     .line 6

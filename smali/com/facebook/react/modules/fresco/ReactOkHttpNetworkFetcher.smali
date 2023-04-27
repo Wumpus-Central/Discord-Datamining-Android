@@ -200,7 +200,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     move-result-object v1
 
@@ -213,7 +213,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {v1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     move-result-object v1
 
@@ -274,7 +274,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {v1}, Lokhttp3/Headers;->h(Ljava/util/Map;)Lokhttp3/Headers;
+    invoke-static {v1}, Lokhttp3/Headers;->g(Ljava/util/Map;)Lokhttp3/Headers;
 
     move-result-object v1
 

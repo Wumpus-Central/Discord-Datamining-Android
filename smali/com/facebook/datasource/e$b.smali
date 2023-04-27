@@ -1113,7 +1113,7 @@
     .line 27
     .line 28
     .line 29
-    invoke-static {}, Lt3/a;->a()Lt3/a;
+    invoke-static {}, Lu3/a;->a()Lu3/a;
 
     .line 30
     .line 31

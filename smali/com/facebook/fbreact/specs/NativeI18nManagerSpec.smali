@@ -22,7 +22,7 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -30,15 +30,12 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
 .method public final getConstants()Ljava/util/Map;
     .locals 1
-    .annotation build Ld6/a;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -47,6 +44,9 @@
             "Ljava/lang/Object;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Le6/a;
     .end annotation
 
     invoke-virtual {p0}, Lcom/facebook/fbreact/specs/NativeI18nManagerSpec;->getTypedExportedConstants()Ljava/util/Map;
@@ -72,6 +72,6 @@
     .annotation runtime Lcom/facebook/react/bridge/ReactMethod;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method

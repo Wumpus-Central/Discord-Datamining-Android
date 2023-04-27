@@ -4,15 +4,15 @@
 
 
 # annotations
-.annotation build Ld6/a;
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
         "Lcom/facebook/react/bridge/ReadableType;",
         ">;"
     }
+.end annotation
+
+.annotation build Le6/a;
 .end annotation
 
 

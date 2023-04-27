@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lf6/b;
+.implements Lg6/b;
 
 
 # direct methods

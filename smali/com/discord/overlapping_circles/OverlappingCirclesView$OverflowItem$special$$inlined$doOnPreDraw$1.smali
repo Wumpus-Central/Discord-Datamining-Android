@@ -100,7 +100,7 @@
     move-result v0
 
     .line 21
-    invoke-static {v3, v0}, Lcg/h;->c(II)I
+    invoke-static {v3, v0}, Leg/h;->c(II)I
 
     .line 22
     .line 23

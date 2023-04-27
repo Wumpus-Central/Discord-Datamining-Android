@@ -105,11 +105,11 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, Lc2/a;
+    new-instance v1, Ld2/a;
 
     .line 6
     .line 7
-    invoke-direct {v1}, Lc2/a;-><init>()V
+    invoke-direct {v1}, Ld2/a;-><init>()V
 
     .line 8
     .line 9
@@ -147,11 +147,11 @@
     .line 27
     .line 28
     .line 29
-    new-instance v1, Lv4/a;
+    new-instance v1, Lw4/a;
 
     .line 30
     .line 31
-    invoke-direct {v1}, Lv4/a;-><init>()V
+    invoke-direct {v1}, Lw4/a;-><init>()V
 
     .line 32
     .line 33
@@ -203,11 +203,11 @@
     .line 59
     .line 60
     .line 61
-    new-instance v1, Lxe/c;
+    new-instance v1, Lye/c;
 
     .line 62
     .line 63
-    invoke-direct {v1}, Lxe/c;-><init>()V
+    invoke-direct {v1}, Lye/c;-><init>()V
 
     .line 64
     .line 65
@@ -245,11 +245,11 @@
     .line 83
     .line 84
     .line 85
-    new-instance v1, Ly2/c;
+    new-instance v1, Lz2/c;
 
     .line 86
     .line 87
-    invoke-direct {v1}, Ly2/c;-><init>()V
+    invoke-direct {v1}, Lz2/c;-><init>()V
 
     .line 88
     .line 89
@@ -315,11 +315,11 @@
     .line 123
     .line 124
     .line 125
-    new-instance v1, Lbf/a;
+    new-instance v1, Ldf/a;
 
     .line 126
     .line 127
-    invoke-direct {v1}, Lbf/a;-><init>()V
+    invoke-direct {v1}, Ldf/a;-><init>()V
 
     .line 128
     .line 129
@@ -329,11 +329,11 @@
     .line 131
     .line 132
     .line 133
-    new-instance v1, Lik/a;
+    new-instance v1, Lkk/a;
 
     .line 134
     .line 135
-    invoke-direct {v1}, Lik/a;-><init>()V
+    invoke-direct {v1}, Lkk/a;-><init>()V
 
     .line 136
     .line 137
@@ -441,896 +441,896 @@
     .line 195
     .line 196
     .line 197
-    sget-object v1, Lcom/discord/bridge/DCDModuleProvider;->INSTANCE:Lcom/discord/bridge/DCDModuleProvider;
+    new-instance v1, Lcom/reactnativepagerview/b;
 
     .line 198
     .line 199
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$2;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$2;
+    invoke-direct {v1}, Lcom/reactnativepagerview/b;-><init>()V
 
     .line 200
     .line 201
-    invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
-
     .line 202
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 203
     .line 204
-    move-result-object v2
-
     .line 205
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    sget-object v1, Lcom/discord/bridge/DCDModuleProvider;->INSTANCE:Lcom/discord/bridge/DCDModuleProvider;
 
     .line 206
     .line 207
-    .line 208
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$3;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$3;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$2;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$2;
 
+    .line 208
     .line 209
-    .line 210
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 210
     .line 211
     .line 212
-    .line 213
     move-result-object v2
+
+    .line 213
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 214
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 215
     .line 216
-    .line 217
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$4;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$4;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$3;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$3;
 
+    .line 217
     .line 218
-    .line 219
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 219
     .line 220
     .line 221
-    .line 222
     move-result-object v2
+
+    .line 222
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 223
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 224
     .line 225
-    .line 226
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$5;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$5;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$4;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$4;
 
+    .line 226
     .line 227
-    .line 228
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 228
     .line 229
     .line 230
-    .line 231
     move-result-object v2
+
+    .line 231
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 232
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 233
     .line 234
-    .line 235
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$6;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$6;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$5;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$5;
 
+    .line 235
     .line 236
-    .line 237
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 237
     .line 238
     .line 239
-    .line 240
     move-result-object v2
+
+    .line 240
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 241
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 242
     .line 243
-    .line 244
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$7;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$7;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$6;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$6;
 
+    .line 244
     .line 245
-    .line 246
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 246
     .line 247
     .line 248
-    .line 249
     move-result-object v2
+
+    .line 249
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 250
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 251
     .line 252
-    .line 253
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$8;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$8;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$7;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$7;
 
+    .line 253
     .line 254
-    .line 255
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 255
     .line 256
     .line 257
-    .line 258
     move-result-object v2
+
+    .line 258
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 259
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 260
     .line 261
-    .line 262
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$9;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$9;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$8;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$8;
 
+    .line 262
     .line 263
-    .line 264
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 264
     .line 265
     .line 266
-    .line 267
     move-result-object v2
+
+    .line 267
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 268
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 269
     .line 270
-    .line 271
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$10;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$10;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$9;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$9;
 
+    .line 271
     .line 272
-    .line 273
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 273
     .line 274
     .line 275
-    .line 276
     move-result-object v2
+
+    .line 276
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 277
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 278
     .line 279
-    .line 280
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$11;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$11;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$10;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$10;
 
+    .line 280
     .line 281
-    .line 282
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 282
     .line 283
     .line 284
-    .line 285
     move-result-object v2
+
+    .line 285
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 286
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 287
     .line 288
-    .line 289
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$12;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$12;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$11;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$11;
 
+    .line 289
     .line 290
-    .line 291
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 291
     .line 292
     .line 293
-    .line 294
     move-result-object v2
+
+    .line 294
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 295
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 296
     .line 297
-    .line 298
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$13;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$13;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$12;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$12;
 
+    .line 298
     .line 299
-    .line 300
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 300
     .line 301
     .line 302
-    .line 303
     move-result-object v2
+
+    .line 303
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 304
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 305
     .line 306
-    .line 307
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$14;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$14;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$13;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$13;
 
+    .line 307
     .line 308
-    .line 309
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 309
     .line 310
     .line 311
-    .line 312
     move-result-object v2
+
+    .line 312
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 313
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 314
     .line 315
-    .line 316
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$15;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$15;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$14;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$14;
 
+    .line 316
     .line 317
-    .line 318
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 318
     .line 319
     .line 320
-    .line 321
     move-result-object v2
+
+    .line 321
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 322
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 323
     .line 324
-    .line 325
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$16;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$16;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$15;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$15;
 
+    .line 325
     .line 326
-    .line 327
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 327
     .line 328
     .line 329
-    .line 330
     move-result-object v2
+
+    .line 330
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 331
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 332
     .line 333
-    .line 334
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$17;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$17;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$16;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$16;
 
+    .line 334
     .line 335
-    .line 336
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 336
     .line 337
     .line 338
-    .line 339
     move-result-object v2
+
+    .line 339
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 340
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 341
     .line 342
-    .line 343
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$18;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$18;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$17;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$17;
 
+    .line 343
     .line 344
-    .line 345
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 345
     .line 346
     .line 347
-    .line 348
     move-result-object v2
+
+    .line 348
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 349
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 350
     .line 351
-    .line 352
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$19;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$19;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$18;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$18;
 
+    .line 352
     .line 353
-    .line 354
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 354
     .line 355
     .line 356
-    .line 357
     move-result-object v2
+
+    .line 357
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 358
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 359
     .line 360
-    .line 361
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$20;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$20;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$19;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$19;
 
+    .line 361
     .line 362
-    .line 363
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 363
     .line 364
     .line 365
-    .line 366
     move-result-object v2
+
+    .line 366
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 367
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 368
     .line 369
-    .line 370
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$21;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$21;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$20;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$20;
 
+    .line 370
     .line 371
-    .line 372
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 372
     .line 373
     .line 374
-    .line 375
     move-result-object v2
+
+    .line 375
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 376
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 377
     .line 378
-    .line 379
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$22;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$22;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$21;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$21;
 
+    .line 379
     .line 380
-    .line 381
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 381
     .line 382
     .line 383
-    .line 384
     move-result-object v2
+
+    .line 384
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 385
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 386
     .line 387
-    .line 388
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$23;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$23;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$22;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$22;
 
+    .line 388
     .line 389
-    .line 390
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 390
     .line 391
     .line 392
-    .line 393
     move-result-object v2
+
+    .line 393
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 394
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 395
     .line 396
-    .line 397
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$24;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$24;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$23;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$23;
 
+    .line 397
     .line 398
-    .line 399
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 399
     .line 400
     .line 401
-    .line 402
     move-result-object v2
+
+    .line 402
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 403
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 404
     .line 405
-    .line 406
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$25;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$25;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$24;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$24;
 
+    .line 406
     .line 407
-    .line 408
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 408
     .line 409
     .line 410
-    .line 411
     move-result-object v2
+
+    .line 411
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 412
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 413
     .line 414
-    .line 415
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$26;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$26;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$25;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$25;
 
+    .line 415
     .line 416
-    .line 417
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 417
     .line 418
     .line 419
-    .line 420
     move-result-object v2
+
+    .line 420
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 421
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 422
     .line 423
-    .line 424
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$27;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$27;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$26;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$26;
 
+    .line 424
     .line 425
-    .line 426
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 426
     .line 427
     .line 428
-    .line 429
     move-result-object v2
+
+    .line 429
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 430
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 431
     .line 432
-    .line 433
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$28;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$28;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$27;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$27;
 
+    .line 433
     .line 434
-    .line 435
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 435
     .line 436
     .line 437
-    .line 438
     move-result-object v2
+
+    .line 438
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 439
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 440
     .line 441
-    .line 442
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$29;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$29;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$28;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$28;
 
+    .line 442
     .line 443
-    .line 444
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 444
     .line 445
     .line 446
-    .line 447
     move-result-object v2
+
+    .line 447
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 448
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 449
     .line 450
-    .line 451
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$30;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$30;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$29;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$29;
 
+    .line 451
     .line 452
-    .line 453
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 453
     .line 454
     .line 455
-    .line 456
     move-result-object v2
+
+    .line 456
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 457
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 458
     .line 459
-    .line 460
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$31;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$31;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$30;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$30;
 
+    .line 460
     .line 461
-    .line 462
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 462
     .line 463
     .line 464
-    .line 465
     move-result-object v2
+
+    .line 465
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 466
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 467
     .line 468
-    .line 469
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$32;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$32;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$31;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$31;
 
+    .line 469
     .line 470
-    .line 471
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 471
     .line 472
     .line 473
-    .line 474
     move-result-object v2
+
+    .line 474
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 475
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 476
     .line 477
-    .line 478
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$33;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$33;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$32;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$32;
 
+    .line 478
     .line 479
-    .line 480
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 480
     .line 481
     .line 482
-    .line 483
     move-result-object v2
+
+    .line 483
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 484
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 485
     .line 486
-    .line 487
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$34;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$34;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$33;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$33;
 
+    .line 487
     .line 488
-    .line 489
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 489
     .line 490
     .line 491
-    .line 492
     move-result-object v2
+
+    .line 492
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 493
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 494
     .line 495
-    .line 496
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$35;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$35;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$34;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$34;
 
+    .line 496
     .line 497
-    .line 498
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 498
     .line 499
     .line 500
-    .line 501
     move-result-object v2
+
+    .line 501
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 502
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 503
     .line 504
-    .line 505
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$36;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$36;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$35;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$35;
 
+    .line 505
     .line 506
-    .line 507
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 507
     .line 508
     .line 509
-    .line 510
     move-result-object v2
+
+    .line 510
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 511
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 512
     .line 513
-    .line 514
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$37;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$37;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$36;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$36;
 
+    .line 514
     .line 515
-    .line 516
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 516
     .line 517
     .line 518
-    .line 519
     move-result-object v2
+
+    .line 519
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 520
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 521
     .line 522
-    .line 523
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$38;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$38;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$37;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$37;
 
+    .line 523
     .line 524
-    .line 525
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 525
     .line 526
     .line 527
-    .line 528
     move-result-object v2
+
+    .line 528
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 529
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 530
     .line 531
-    .line 532
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$39;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$39;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$38;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$38;
 
+    .line 532
     .line 533
-    .line 534
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 534
     .line 535
     .line 536
-    .line 537
     move-result-object v2
+
+    .line 537
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 538
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 539
     .line 540
-    .line 541
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$40;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$40;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$39;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$39;
 
+    .line 541
     .line 542
-    .line 543
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 543
     .line 544
     .line 545
-    .line 546
     move-result-object v2
+
+    .line 546
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 547
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 548
     .line 549
-    .line 550
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$41;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$41;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$40;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$40;
 
+    .line 550
     .line 551
-    .line 552
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 552
     .line 553
     .line 554
-    .line 555
     move-result-object v2
+
+    .line 555
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 556
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 557
     .line 558
-    .line 559
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$42;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$42;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$41;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$41;
 
+    .line 559
     .line 560
-    .line 561
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 561
     .line 562
     .line 563
-    .line 564
     move-result-object v2
+
+    .line 564
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 565
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 566
     .line 567
-    .line 568
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$43;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$43;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$42;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$42;
 
+    .line 568
     .line 569
-    .line 570
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 570
     .line 571
     .line 572
-    .line 573
     move-result-object v2
+
+    .line 573
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 574
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 575
     .line 576
-    .line 577
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$44;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$44;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$43;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$43;
 
+    .line 577
     .line 578
-    .line 579
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 579
     .line 580
     .line 581
-    .line 582
     move-result-object v2
+
+    .line 582
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 583
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 584
     .line 585
-    .line 586
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$45;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$45;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$44;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$44;
 
+    .line 586
     .line 587
-    .line 588
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 588
     .line 589
     .line 590
-    .line 591
     move-result-object v2
+
+    .line 591
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 592
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 593
     .line 594
-    .line 595
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$46;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$46;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$45;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$45;
 
+    .line 595
     .line 596
-    .line 597
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 597
     .line 598
     .line 599
-    .line 600
     move-result-object v2
+
+    .line 600
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 601
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 602
     .line 603
-    .line 604
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$47;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$47;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$46;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$46;
 
+    .line 604
     .line 605
-    .line 606
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 606
     .line 607
     .line 608
-    .line 609
     move-result-object v2
+
+    .line 609
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 610
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 611
     .line 612
-    .line 613
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$48;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$48;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$47;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$47;
 
+    .line 613
     .line 614
-    .line 615
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 615
     .line 616
     .line 617
-    .line 618
     move-result-object v2
+
+    .line 618
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 619
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 620
     .line 621
-    .line 622
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$49;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$49;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$48;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$48;
 
+    .line 622
     .line 623
-    .line 624
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 624
     .line 625
     .line 626
-    .line 627
     move-result-object v2
+
+    .line 627
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 628
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 629
     .line 630
-    .line 631
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$50;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$50;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$49;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$49;
 
+    .line 631
     .line 632
-    .line 633
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 633
     .line 634
     .line 635
-    .line 636
     move-result-object v2
+
+    .line 636
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 637
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 638
     .line 639
-    .line 640
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$51;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$51;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$50;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$50;
 
+    .line 640
     .line 641
-    .line 642
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 642
     .line 643
     .line 644
-    .line 645
     move-result-object v2
+
+    .line 645
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 646
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 647
     .line 648
-    .line 649
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$52;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$52;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$51;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$51;
 
+    .line 649
     .line 650
-    .line 651
     invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 651
     .line 652
     .line 653
-    .line 654
     move-result-object v2
 
-    .line 655
+    .line 654
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 655
     .line 656
     .line 657
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$52;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$52;
+
     .line 658
-    new-instance v2, Lcom/discord/chat/ChatPackage;
-
     .line 659
-    .line 660
-    invoke-direct {v2}, Lcom/discord/chat/ChatPackage;-><init>()V
+    invoke-virtual {v1, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModule(Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 660
     .line 661
     .line 662
+    move-result-object v2
+
     .line 663
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 664
     .line 665
     .line 666
-    new-instance v2, Lcom/discord/react_gesture_handler/DiscordGestureHandlerPackage;
+    new-instance v2, Lcom/discord/chat/ChatPackage;
 
     .line 667
     .line 668
-    invoke-direct {v2}, Lcom/discord/react_gesture_handler/DiscordGestureHandlerPackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/chat/ChatPackage;-><init>()V
 
     .line 669
     .line 670
@@ -1340,11 +1340,11 @@
     .line 672
     .line 673
     .line 674
-    new-instance v2, Lcom/discord/emoji_picker/react/EmojiPickerPackage;
+    new-instance v2, Lcom/discord/react_gesture_handler/DiscordGestureHandlerPackage;
 
     .line 675
     .line 676
-    invoke-direct {v2}, Lcom/discord/emoji_picker/react/EmojiPickerPackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/react_gesture_handler/DiscordGestureHandlerPackage;-><init>()V
 
     .line 677
     .line 678
@@ -1354,11 +1354,11 @@
     .line 680
     .line 681
     .line 682
-    new-instance v2, Lcom/discord/sticker_picker/react/StickerPickerPackage;
+    new-instance v2, Lcom/discord/emoji_picker/react/EmojiPickerPackage;
 
     .line 683
     .line 684
-    invoke-direct {v2}, Lcom/discord/sticker_picker/react/StickerPickerPackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/emoji_picker/react/EmojiPickerPackage;-><init>()V
 
     .line 685
     .line 686
@@ -1368,11 +1368,11 @@
     .line 688
     .line 689
     .line 690
-    new-instance v2, Lcom/discord/sticker/react/StickerPackage;
+    new-instance v2, Lcom/discord/sticker_picker/react/StickerPickerPackage;
 
     .line 691
     .line 692
-    invoke-direct {v2}, Lcom/discord/sticker/react/StickerPackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/sticker_picker/react/StickerPickerPackage;-><init>()V
 
     .line 693
     .line 694
@@ -1382,11 +1382,11 @@
     .line 696
     .line 697
     .line 698
-    new-instance v2, Lcom/discord/avatar/react/AvatarPackage;
+    new-instance v2, Lcom/discord/sticker/react/StickerPackage;
 
     .line 699
     .line 700
-    invoke-direct {v2}, Lcom/discord/avatar/react/AvatarPackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/sticker/react/StickerPackage;-><init>()V
 
     .line 701
     .line 702
@@ -1396,11 +1396,11 @@
     .line 704
     .line 705
     .line 706
-    new-instance v2, Lcom/discord/kvstorage/KvStoragePackage;
+    new-instance v2, Lcom/discord/avatar/react/AvatarPackage;
 
     .line 707
     .line 708
-    invoke-direct {v2}, Lcom/discord/kvstorage/KvStoragePackage;-><init>()V
+    invoke-direct {v2}, Lcom/discord/avatar/react/AvatarPackage;-><init>()V
 
     .line 709
     .line 710
@@ -1410,423 +1410,429 @@
     .line 712
     .line 713
     .line 714
-    sget-object v2, Lcom/discord/flipper/FlipperUtils;->INSTANCE:Lcom/discord/flipper/FlipperUtils;
+    new-instance v2, Lcom/discord/kvstorage/KvStoragePackage;
 
     .line 715
     .line 716
-    invoke-virtual {v2}, Lcom/discord/flipper/FlipperUtils;->getFlipperPackage()Lcom/facebook/react/ReactPackage;
+    invoke-direct {v2}, Lcom/discord/kvstorage/KvStoragePackage;-><init>()V
 
     .line 717
     .line 718
     .line 719
-    move-result-object v2
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 720
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 721
     .line 722
+    sget-object v2, Lcom/discord/flipper/FlipperUtils;->INSTANCE:Lcom/discord/flipper/FlipperUtils;
+
     .line 723
+    .line 724
+    invoke-virtual {v2}, Lcom/discord/flipper/FlipperUtils;->getFlipperPackage()Lcom/facebook/react/ReactPackage;
+
+    .line 725
+    .line 726
+    .line 727
+    move-result-object v2
+
+    .line 728
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 729
+    .line 730
+    .line 731
     sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$53;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$53;
 
-    .line 724
-    .line 725
-    const/4 v3, 0x0
-
-    .line 726
-    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
-
-    .line 727
-    .line 728
-    .line 729
-    move-result-object v2
-
-    .line 730
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 731
     .line 732
     .line 733
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$54;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$54;
+    const/4 v3, 0x0
 
     .line 734
-    .line 735
-    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$55;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$55;
+    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 735
     .line 736
     .line 737
-    invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
-
-    .line 738
-    .line 739
-    .line 740
     move-result-object v2
 
-    .line 741
+    .line 738
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 739
+    .line 740
+    .line 741
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$54;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$54;
 
     .line 742
     .line 743
+    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$55;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$55;
+
     .line 744
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$56;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$56;
-
     .line 745
-    .line 746
-    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$57;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$57;
-
-    .line 747
-    .line 748
     invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
-    .line 749
-    .line 750
-    .line 751
+    .line 746
+    .line 747
+    .line 748
     move-result-object v2
 
-    .line 752
+    .line 749
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 750
+    .line 751
+    .line 752
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$56;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$56;
 
     .line 753
     .line 754
+    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$57;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$57;
+
     .line 755
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$58;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$58;
-
     .line 756
-    .line 757
-    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
-
-    .line 758
-    .line 759
-    .line 760
-    move-result-object v2
-
-    .line 761
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 762
-    .line 763
-    .line 764
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$59;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$59;
-
-    .line 765
-    .line 766
-    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$60;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$60;
-
-    .line 767
-    .line 768
     invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
-    .line 769
-    .line 770
-    .line 771
+    .line 757
+    .line 758
+    .line 759
     move-result-object v2
 
-    .line 772
+    .line 760
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 761
+    .line 762
+    .line 763
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$58;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$58;
+
+    .line 764
+    .line 765
+    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
+
+    .line 766
+    .line 767
+    .line 768
+    move-result-object v2
+
+    .line 769
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 770
+    .line 771
+    .line 772
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$59;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$59;
 
     .line 773
     .line 774
+    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$60;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$60;
+
     .line 775
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$61;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$61;
-
     .line 776
-    .line 777
-    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$62;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$62;
-
-    .line 778
-    .line 779
     invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
-    .line 780
-    .line 781
-    .line 782
+    .line 777
+    .line 778
+    .line 779
     move-result-object v2
 
-    .line 783
+    .line 780
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 781
+    .line 782
+    .line 783
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$61;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$61;
 
     .line 784
     .line 785
+    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$62;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$62;
+
     .line 786
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$63;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$63;
-
     .line 787
-    .line 788
-    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
-
-    .line 789
-    .line 790
-    .line 791
-    move-result-object v2
-
-    .line 792
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 793
-    .line 794
-    .line 795
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$64;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$64;
-
-    .line 796
-    .line 797
-    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$65;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$65;
-
-    .line 798
-    .line 799
     invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
-    .line 800
-    .line 801
-    .line 802
+    .line 788
+    .line 789
+    .line 790
     move-result-object v2
 
-    .line 803
+    .line 791
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 792
+    .line 793
+    .line 794
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$63;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$63;
+
+    .line 795
+    .line 796
+    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
+
+    .line 797
+    .line 798
+    .line 799
+    move-result-object v2
+
+    .line 800
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 801
+    .line 802
+    .line 803
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$64;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$64;
 
     .line 804
     .line 805
+    sget-object v4, Lcom/discord/bridge/DCDPackageList$getPackages$65;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$65;
+
     .line 806
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$66;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$66;
-
     .line 807
-    .line 808
-    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
+    invoke-virtual {v1, v2, v4}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 808
     .line 809
     .line 810
-    .line 811
     move-result-object v2
+
+    .line 811
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 812
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 813
     .line 814
-    .line 815
-    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$67;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$67;
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$66;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$66;
 
+    .line 815
     .line 816
-    .line 817
     invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 817
     .line 818
     .line 819
-    .line 820
     move-result-object v2
+
+    .line 820
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 821
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 822
     .line 823
+    sget-object v2, Lcom/discord/bridge/DCDPackageList$getPackages$67;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$67;
+
     .line 824
-    const-string v2, "RTNAudioRouteEmitter"
-
     .line 825
-    .line 826
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$68;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$68;
+    invoke-virtual {v1, v3, v2}, Lcom/discord/bridge/DCDModuleProvider;->getLegacyPackageForModuleWithViewManager(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/ReactPackage;
 
+    .line 826
     .line 827
     .line 828
-    invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
-
-    .line 829
-    .line 830
-    .line 831
     move-result-object v2
 
-    .line 832
+    .line 829
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 830
+    .line 831
+    .line 832
+    const-string v2, "RTNAudioRouteEmitter"
 
     .line 833
     .line 834
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$68;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$68;
+
     .line 835
-    const-string v2, "RTNDeviceManager"
-
     .line 836
-    .line 837
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$69;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$69;
-
-    .line 838
-    .line 839
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 840
-    .line 841
-    .line 842
+    .line 837
+    .line 838
+    .line 839
     move-result-object v2
 
-    .line 843
+    .line 840
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 841
+    .line 842
+    .line 843
+    const-string v2, "RTNDeviceManager"
 
     .line 844
     .line 845
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$69;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$69;
+
     .line 846
-    const-string v2, "RTNDeviceLocaleManager"
-
     .line 847
-    .line 848
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$70;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$70;
-
-    .line 849
-    .line 850
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 851
-    .line 852
-    .line 853
+    .line 848
+    .line 849
+    .line 850
     move-result-object v2
 
-    .line 854
+    .line 851
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 852
+    .line 853
+    .line 854
+    const-string v2, "RTNDeviceLocaleManager"
 
     .line 855
     .line 856
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$70;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$70;
+
     .line 857
-    const-string v2, "RTNFileManager"
-
     .line 858
-    .line 859
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$71;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$71;
-
-    .line 860
-    .line 861
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 862
-    .line 863
-    .line 864
+    .line 859
+    .line 860
+    .line 861
     move-result-object v2
 
-    .line 865
+    .line 862
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 863
+    .line 864
+    .line 865
+    const-string v2, "RTNFileManager"
 
     .line 866
     .line 867
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$71;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$71;
+
     .line 868
-    const-string v2, "RTNClientInfoManager"
-
     .line 869
-    .line 870
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$72;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$72;
-
-    .line 871
-    .line 872
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 873
-    .line 874
-    .line 875
+    .line 870
+    .line 871
+    .line 872
     move-result-object v2
 
-    .line 876
+    .line 873
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 874
+    .line 875
+    .line 876
+    const-string v2, "RTNClientInfoManager"
 
     .line 877
     .line 878
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$72;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$72;
+
     .line 879
-    const-string v2, "RTNKeyboardManager"
-
     .line 880
-    .line 881
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$73;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$73;
-
-    .line 882
-    .line 883
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 884
-    .line 885
-    .line 886
+    .line 881
+    .line 882
+    .line 883
     move-result-object v2
 
-    .line 887
+    .line 884
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 885
+    .line 886
+    .line 887
+    const-string v2, "RTNKeyboardManager"
 
     .line 888
     .line 889
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$73;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$73;
+
     .line 890
-    const-string v2, "RTNHeartbeatKeyProvider"
-
     .line 891
-    .line 892
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$74;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$74;
-
-    .line 893
-    .line 894
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 895
-    .line 896
-    .line 897
+    .line 892
+    .line 893
+    .line 894
     move-result-object v2
 
-    .line 898
+    .line 895
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 896
+    .line 897
+    .line 898
+    const-string v2, "RTNHeartbeatKeyProvider"
 
     .line 899
     .line 900
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$74;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$74;
+
     .line 901
-    const-string v2, "RTNThemeManager"
-
     .line 902
-    .line 903
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$75;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$75;
-
-    .line 904
-    .line 905
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
-    .line 906
-    .line 907
-    .line 908
+    .line 903
+    .line 904
+    .line 905
     move-result-object v2
 
-    .line 909
+    .line 906
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 907
+    .line 908
+    .line 909
+    const-string v2, "RTNThemeManager"
 
     .line 910
     .line 911
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$75;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$75;
+
     .line 912
-    const-string v2, "RTNMobileVoiceOverlay"
-
     .line 913
-    .line 914
-    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$76;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$76;
-
-    .line 915
-    .line 916
     invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
+    .line 914
+    .line 915
+    .line 916
+    move-result-object v2
+
     .line 917
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 918
     .line 919
-    move-result-object v1
-
     .line 920
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const-string v2, "RTNMobileVoiceOverlay"
 
     .line 921
     .line 922
+    sget-object v3, Lcom/discord/bridge/DCDPackageList$getPackages$76;->INSTANCE:Lcom/discord/bridge/DCDPackageList$getPackages$76;
+
     .line 923
-    const-string v1, "packages"
-
     .line 924
-    .line 925
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/discord/bridge/DCDModuleProvider;->getTurboPackageForModule(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/facebook/react/TurboReactPackage;
 
+    .line 925
     .line 926
     .line 927
+    move-result-object v1
+
     .line 928
-    return-object v0
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 929
     .line 930
     .line 931
+    const-string v1, "packages"
+
     .line 932
     .line 933
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 934
     .line 935
     .line 936
+    return-object v0
     .line 937
     .line 938
     .line 939

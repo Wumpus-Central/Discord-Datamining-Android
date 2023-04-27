@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(IZZ)La6/d;
+.method public static a(IZZ)Lb6/d;
     .locals 7
 
     .line 1
@@ -105,7 +105,7 @@
     move-result-object p0
 
     .line 47
-    check-cast p0, La6/d;
+    check-cast p0, Lb6/d;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_6
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_5

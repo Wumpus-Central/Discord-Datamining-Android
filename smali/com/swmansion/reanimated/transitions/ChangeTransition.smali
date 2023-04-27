@@ -170,7 +170,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {v0, v1}, Landroidx/transition/g;->i(Z)V
+    invoke-virtual {v0, v1}, Landroidx/transition/g;->h(Z)V
 
     .line 5
     .line 6

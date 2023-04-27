@@ -131,7 +131,7 @@
     move-result-object p1
 
     .line 23
-    invoke-static {v3, p1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v3, p1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 24
     .line 25
@@ -154,7 +154,7 @@
 
     .line 33
     .line 34
-    invoke-static {p1, p2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {p1, p2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 35
     .line 36

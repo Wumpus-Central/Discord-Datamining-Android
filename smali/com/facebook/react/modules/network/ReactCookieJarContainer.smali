@@ -77,7 +77,7 @@
             "Lokhttp3/HttpUrl;",
             ")",
             "Ljava/util/List<",
-            "Loj/k;",
+            "Lqj/k;",
             ">;"
         }
     .end annotation
@@ -138,7 +138,7 @@
     move-result-object v1
 
     .line 28
-    check-cast v1, Loj/k;
+    check-cast v1, Lqj/k;
 
     .line 29
     .line 30
@@ -152,7 +152,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v1}, Loj/k;->e()Ljava/lang/String;
+    invoke-virtual {v1}, Lqj/k;->e()Ljava/lang/String;
 
     .line 36
     .line 37
@@ -160,7 +160,7 @@
     move-result-object v3
 
     .line 39
-    invoke-virtual {v1}, Loj/k;->g()Ljava/lang/String;
+    invoke-virtual {v1}, Lqj/k;->g()Ljava/lang/String;
 
     .line 40
     .line 41
@@ -402,7 +402,7 @@
             "(",
             "Lokhttp3/HttpUrl;",
             "Ljava/util/List<",
-            "Loj/k;",
+            "Lqj/k;",
             ">;)V"
         }
     .end annotation

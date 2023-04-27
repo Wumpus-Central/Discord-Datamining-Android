@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lpc/b;
+.implements Lqc/b;
 
 
 # instance fields
@@ -23,12 +23,12 @@
 
 
 # virtual methods
-.method public final a(Lpc/a;)V
+.method public final a(Lqc/a;)V
     .locals 1
 
     iget-object v0, p0, Lcom/google/firebase/messaging/w;->a:Lcom/google/firebase/messaging/FirebaseMessaging$a;
 
-    invoke-static {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging$a;->a(Lcom/google/firebase/messaging/FirebaseMessaging$a;Lpc/a;)V
+    invoke-static {v0, p1}, Lcom/google/firebase/messaging/FirebaseMessaging$a;->a(Lcom/google/firebase/messaging/FirebaseMessaging$a;Lqc/a;)V
 
     return-void
 .end method

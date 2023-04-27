@@ -2618,17 +2618,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method abstract draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;F)V
@@ -2737,7 +2726,7 @@
 
     move-result-object p2
 
-    invoke-static {v1, p2}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p2}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -2772,7 +2761,7 @@
 
     move-result-object p1
 
-    invoke-static {v1, p1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
     :cond_4
@@ -3140,7 +3129,7 @@
 
     .line 67
     .line 68
-    invoke-static {v1, v0}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 69
     .line 70
@@ -4574,17 +4563,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method relativeOnHeight(Lcom/horcrux/svg/SVGLength;)D
@@ -5437,17 +5415,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 .method saveDefinition()V
@@ -7244,7 +7211,7 @@
     const-string v0, "RNSVG: Transform matrices must be of size 6"
 
     .line 9
-    invoke-static {p1, v0}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

@@ -137,7 +137,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lokio/BufferedSink;->C0()Ljava/io/OutputStream;
+    invoke-interface {p1}, Lokio/BufferedSink;->A0()Ljava/io/OutputStream;
 
     .line 4
     .line 5
@@ -150,7 +150,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v0}, Ldk/m;->h(Ljava/io/OutputStream;)Lokio/Sink;
+    invoke-static {v0}, Lfk/m;->h(Ljava/io/OutputStream;)Lokio/Sink;
 
     .line 11
     .line 12
@@ -288,7 +288,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Ldk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
+    invoke-static {p1}, Lfk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
 
     .line 6
     .line 7

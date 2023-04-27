@@ -31,7 +31,7 @@
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/appbar/b;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    sget-object v0, Ldb/k;->w4:[I
+    sget-object v0, Leb/k;->w4:[I
 
     .line 4
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -39,7 +39,7 @@
     move-result-object p1
 
     .line 5
-    sget p2, Ldb/k;->x4:I
+    sget p2, Leb/k;->x4:I
 
     const/4 v0, 0x0
 

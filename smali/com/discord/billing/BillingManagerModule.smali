@@ -110,7 +110,7 @@
 
     .line 21
     .line 22
-    invoke-static {v3, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v3, v2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 23
     .line 24
@@ -141,7 +141,7 @@
 
     .line 36
     .line 37
-    invoke-static {v3, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v3, v2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 38
     .line 39
@@ -172,7 +172,7 @@
 
     .line 51
     .line 52
-    invoke-static {v3, v2}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v3, v2}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 53
     .line 54
@@ -339,7 +339,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public static final synthetic access$getReactEvents$p(Lcom/discord/billing/BillingManagerModule;)Lcom/discord/reactevents/ReactEvents;

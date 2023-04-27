@@ -842,7 +842,7 @@
     move-result v1
 
     .line 59
-    invoke-static {v0, v1}, Lkb/a;->a(II)I
+    invoke-static {v0, v1}, Llb/a;->a(II)I
 
     .line 60
     .line 61
@@ -1949,7 +1949,7 @@
     move-result p1
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/material/progressindicator/g;->m:Lrb/a;
+    iget-object p2, p0, Lcom/google/android/material/progressindicator/g;->m:Lsb/a;
 
     .line 6
     .line 7
@@ -1965,7 +1965,7 @@
     move-result-object p3
 
     .line 13
-    invoke-virtual {p2, p3}, Lrb/a;->a(Landroid/content/ContentResolver;)F
+    invoke-virtual {p2, p3}, Lsb/a;->a(Landroid/content/ContentResolver;)F
 
     .line 14
     .line 15

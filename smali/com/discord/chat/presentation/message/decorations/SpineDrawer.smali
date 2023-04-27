@@ -106,7 +106,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-static {p2}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p2}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 19
     .line 20
@@ -127,7 +127,7 @@
     .line 27
     .line 28
     .line 29
-    invoke-static {p2}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p2}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 30
     .line 31

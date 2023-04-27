@@ -4,10 +4,10 @@
 
 # interfaces
 .implements Lcom/google/android/exoplayer2/Player$a;
-.implements Lq8/l;
-.implements Lg9/q;
+.implements Lr8/l;
+.implements Lh9/q;
 .implements Landroid/view/View$OnLayoutChangeListener;
-.implements Lc9/e;
+.implements Ld9/e;
 .implements Lcom/google/android/exoplayer2/ui/PlayerControlView$d;
 
 
@@ -1120,18 +1120,18 @@
 .method public synthetic f(II)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lg9/p;->a(Lg9/q;II)V
+    invoke-static {p0, p1, p2}, Lh9/p;->a(Lh9/q;II)V
 
     return-void
 .end method
 
-.method public i(Ljava/util/List;)V
+.method public n(Ljava/util/List;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lq8/b;",
+            "Lr8/b;",
             ">;)V"
         }
     .end annotation
@@ -1165,7 +1165,7 @@
     move-result-object v0
 
     .line 15
-    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->i(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/exoplayer2/ui/SubtitleView;->n(Ljava/util/List;)V
 
     .line 16
     .line 17
@@ -1285,7 +1285,7 @@
 .method public synthetic onEvents(Lcom/google/android/exoplayer2/Player;Lcom/google/android/exoplayer2/Player$Events;)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ld7/q;->a(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Player;Lcom/google/android/exoplayer2/Player$Events;)V
+    invoke-static {p0, p1, p2}, Le7/q;->a(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Player;Lcom/google/android/exoplayer2/Player$Events;)V
 
     return-void
 .end method
@@ -1293,7 +1293,7 @@
 .method public synthetic onExperimentalOffloadSchedulingEnabledChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->b(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->b(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1301,7 +1301,7 @@
 .method public synthetic onExperimentalSleepingForOffloadChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->c(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->c(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1309,7 +1309,7 @@
 .method public synthetic onIsLoadingChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->d(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->d(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1317,7 +1317,7 @@
 .method public synthetic onIsPlayingChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->e(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->e(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1341,7 +1341,7 @@
 .method public synthetic onLoadingChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->f(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->f(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1349,7 +1349,7 @@
 .method public synthetic onMediaItemTransition(Lcom/google/android/exoplayer2/MediaItem;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ld7/q;->g(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/MediaItem;I)V
+    invoke-static {p0, p1, p2}, Le7/q;->g(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/MediaItem;I)V
 
     return-void
 .end method
@@ -1622,7 +1622,7 @@
 .method public synthetic onPlaybackParametersChanged(Lcom/google/android/exoplayer2/PlaybackParameters;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->i(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/PlaybackParameters;)V
+    invoke-static {p0, p1}, Le7/q;->i(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/PlaybackParameters;)V
 
     return-void
 .end method
@@ -1774,7 +1774,7 @@
 .method public synthetic onPlaybackSuppressionReasonChanged(I)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->k(Lcom/google/android/exoplayer2/Player$a;I)V
+    invoke-static {p0, p1}, Le7/q;->k(Lcom/google/android/exoplayer2/Player$a;I)V
 
     return-void
 .end method
@@ -1782,7 +1782,7 @@
 .method public synthetic onPlayerError(Lcom/google/android/exoplayer2/ExoPlaybackException;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->l(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/ExoPlaybackException;)V
+    invoke-static {p0, p1}, Le7/q;->l(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/ExoPlaybackException;)V
 
     return-void
 .end method
@@ -1790,7 +1790,7 @@
 .method public synthetic onPlayerStateChanged(ZI)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ld7/q;->m(Lcom/google/android/exoplayer2/Player$a;ZI)V
+    invoke-static {p0, p1, p2}, Le7/q;->m(Lcom/google/android/exoplayer2/Player$a;ZI)V
 
     return-void
 .end method
@@ -1951,7 +1951,7 @@
 .method public synthetic onRepeatModeChanged(I)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->o(Lcom/google/android/exoplayer2/Player$a;I)V
+    invoke-static {p0, p1}, Le7/q;->o(Lcom/google/android/exoplayer2/Player$a;I)V
 
     return-void
 .end method
@@ -1959,7 +1959,7 @@
 .method public synthetic onSeekProcessed()V
     .locals 0
 
-    invoke-static {p0}, Ld7/q;->p(Lcom/google/android/exoplayer2/Player$a;)V
+    invoke-static {p0}, Le7/q;->p(Lcom/google/android/exoplayer2/Player$a;)V
 
     return-void
 .end method
@@ -1967,7 +1967,7 @@
 .method public synthetic onShuffleModeEnabledChanged(Z)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->q(Lcom/google/android/exoplayer2/Player$a;Z)V
+    invoke-static {p0, p1}, Le7/q;->q(Lcom/google/android/exoplayer2/Player$a;Z)V
 
     return-void
 .end method
@@ -1987,7 +1987,7 @@
 .method public synthetic onStaticMetadataChanged(Ljava/util/List;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ld7/q;->r(Lcom/google/android/exoplayer2/Player$a;Ljava/util/List;)V
+    invoke-static {p0, p1}, Le7/q;->r(Lcom/google/android/exoplayer2/Player$a;Ljava/util/List;)V
 
     return-void
 .end method
@@ -1995,7 +1995,7 @@
 .method public synthetic onTimelineChanged(Lcom/google/android/exoplayer2/Timeline;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ld7/q;->s(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Timeline;I)V
+    invoke-static {p0, p1, p2}, Le7/q;->s(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Timeline;I)V
 
     return-void
 .end method
@@ -2003,7 +2003,7 @@
 .method public synthetic onTimelineChanged(Lcom/google/android/exoplayer2/Timeline;Ljava/lang/Object;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Ld7/q;->t(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Timeline;Ljava/lang/Object;I)V
+    invoke-static {p0, p1, p2, p3}, Le7/q;->t(Lcom/google/android/exoplayer2/Player$a;Lcom/google/android/exoplayer2/Timeline;Ljava/lang/Object;I)V
 
     return-void
 .end method
@@ -2024,7 +2024,7 @@
     move-result-object p1
 
     .line 7
-    invoke-static {p1}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -2036,7 +2036,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->x()Lcom/google/android/exoplayer2/Timeline;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/Timeline;
 
     .line 14
     .line 15
@@ -2067,7 +2067,7 @@
 
     .line 27
     :cond_0
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->w()Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->v()Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     .line 28
     .line 29
@@ -2087,7 +2087,7 @@
 
     .line 36
     .line 37
-    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->G()I
+    invoke-interface {p1}, Lcom/google/android/exoplayer2/Player;->I()I
 
     .line 38
     .line 39

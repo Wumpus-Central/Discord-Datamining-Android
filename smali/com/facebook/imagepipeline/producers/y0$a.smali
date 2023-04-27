@@ -16,8 +16,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
-        "Lu5/e;",
-        "Lu5/e;",
+        "Lv5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -40,7 +40,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;",
             "Lcom/facebook/imagepipeline/producers/ProducerContext;",
             "I)V"
@@ -65,7 +65,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p3}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 11
     .line 12
@@ -545,14 +545,14 @@
 .method protected bridge synthetic h(Ljava/lang/Object;I)V
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/y0$a;->p(Lu5/e;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/y0$a;->p(Lv5/e;I)V
 
     return-void
 .end method
 
-.method protected p(Lu5/e;I)V
+.method protected p(Lv5/e;I)V
     .locals 3
 
     .line 1
@@ -576,7 +576,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1, v0}, Lcom/facebook/imagepipeline/producers/a1;->c(Lu5/e;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
+    invoke-static {p1, v0}, Lcom/facebook/imagepipeline/producers/a1;->c(Lv5/e;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
 
     .line 12
     .line 13
@@ -618,7 +618,7 @@
 
     .line 30
     .line 31
-    invoke-static {p1}, Lu5/e;->h(Lu5/e;)V
+    invoke-static {p1}, Lv5/e;->h(Lv5/e;)V
 
     .line 32
     .line 33

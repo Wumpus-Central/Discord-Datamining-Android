@@ -217,7 +217,7 @@
 
     const-string v3, "ReactInstanceManager.ctor()"
 
-    invoke-static {v2, v3}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     invoke-static/range {p1 .. p1}, Lcom/facebook/react/ReactInstanceManager;->initializeSoLoaderIfNecessary(Landroid/content/Context;)V
@@ -273,7 +273,7 @@
     const-wide/16 v14, 0x0
 
     .line 23
-    invoke-static {v14, v15, v2}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v14, v15, v2}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 24
     invoke-direct/range {p0 .. p0}, Lcom/facebook/react/ReactInstanceManager;->createDevHelperInterface()Lcom/facebook/react/devsupport/ReactInstanceDevHelper;
@@ -304,7 +304,7 @@
     iput-object v2, v1, Lcom/facebook/react/ReactInstanceManager;->mDevSupportManager:Lcom/facebook/react/devsupport/interfaces/DevSupportManager;
 
     .line 26
-    invoke-static {v14, v15}, Lg6/a;->g(J)V
+    invoke-static {v14, v15}, Lh6/a;->g(J)V
 
     move-object/from16 v3, p11
 
@@ -338,16 +338,16 @@
 
     .line 33
     :try_start_0
-    invoke-static {}, Lg4/c;->a()Lg4/b;
+    invoke-static {}, Lh4/c;->a()Lh4/b;
 
     move-result-object v0
 
-    sget-object v3, Lh4/a;->c:Lf4/a;
+    sget-object v3, Li4/a;->c:Lg4/a;
 
     const-string v4, "RNCore: Use Split Packages"
 
     .line 34
-    invoke-interface {v0, v3, v4}, Lg4/b;->c(Lf4/a;Ljava/lang/String;)V
+    invoke-interface {v0, v3, v4}, Lh4/b;->a(Lg4/a;Ljava/lang/String;)V
 
     .line 35
     new-instance v0, Lcom/facebook/react/CoreModulesPackage;
@@ -591,7 +591,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -604,7 +604,7 @@
 
     .line 11
     .line 12
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 13
     .line 14
@@ -807,7 +807,7 @@
 
     .line 110
     .line 111
-    invoke-static {v1, v2, v3, v0}, Lg6/a;->a(JLjava/lang/String;I)V
+    invoke-static {v1, v2, v3, v0}, Lh6/a;->a(JLjava/lang/String;I)V
 
     .line 112
     .line 113
@@ -826,7 +826,7 @@
     .line 120
     .line 121
     .line 122
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 123
     .line 124
@@ -1065,7 +1065,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -1211,7 +1211,7 @@
 
     .line 78
     .line 79
-    invoke-static {v1, v2, p2}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, p2}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 80
     .line 81
@@ -1227,7 +1227,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 86
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 87
     .line 88
@@ -1440,7 +1440,7 @@
     .line 193
     .line 194
     :cond_4
-    invoke-static {v1, v2}, Lg6/a;->h(J)Z
+    invoke-static {v1, v2}, Lh6/a;->h(J)Z
 
     .line 195
     .line 196
@@ -1479,7 +1479,7 @@
 
     .line 213
     .line 214
-    invoke-static {v1, v2, p2}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, p2}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 215
     .line 216
@@ -1489,7 +1489,7 @@
     .line 218
     .line 219
     .line 220
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 221
     .line 222
@@ -1501,7 +1501,7 @@
     move-exception p1
 
     .line 225
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 226
     .line 227
@@ -2129,7 +2129,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -2352,7 +2352,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0, v2, v1}, Lw3/a;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, v1}, Lx3/a;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
 .end method
@@ -2735,7 +2735,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -2811,7 +2811,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -2891,7 +2891,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v2, v0}, Lg6/b;->a(JLjava/lang/String;)Lg6/b$b;
+    invoke-static {v1, v2, v0}, Lh6/b;->a(JLjava/lang/String;)Lh6/b$b;
 
     .line 6
     .line 7
@@ -2919,7 +2919,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v0, v4, v3}, Lg6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lg6/b$b;
+    invoke-virtual {v0, v4, v3}, Lh6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lh6/b$b;
 
     .line 20
     .line 21
@@ -2927,7 +2927,7 @@
     move-result-object v0
 
     .line 23
-    invoke-virtual {v0}, Lg6/b$b;->c()V
+    invoke-virtual {v0}, Lh6/b$b;->c()V
 
     .line 24
     .line 25
@@ -2972,7 +2972,7 @@
     .line 45
     .line 46
     :cond_1
-    invoke-static {v1, v2}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v1, v2}, Lh6/b;->b(J)Lh6/b$b;
 
     .line 47
     .line 48
@@ -2980,7 +2980,7 @@
     move-result-object p1
 
     .line 50
-    invoke-virtual {p1}, Lg6/b$b;->c()V
+    invoke-virtual {p1}, Lh6/b$b;->c()V
 
     .line 51
     .line 52
@@ -3133,7 +3133,7 @@
 
     .line 44
     .line 45
-    invoke-static {v2, v3, v4}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v2, v3, v4}, Lh6/a;->c(JLjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
@@ -3163,7 +3163,7 @@
     .line 57
     .line 58
     :try_start_2
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 59
     .line 60
@@ -3175,7 +3175,7 @@
     move-exception p2
 
     .line 63
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 64
     .line 65
@@ -3211,7 +3211,7 @@
 
     .line 79
     .line 80
-    invoke-static {v2, v3, p1}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v2, v3, p1}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 81
     .line 82
@@ -3227,7 +3227,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 87
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 88
     .line 89
@@ -3248,7 +3248,7 @@
     move-exception p1
 
     .line 97
-    invoke-static {v2, v3}, Lg6/a;->g(J)V
+    invoke-static {v2, v3}, Lh6/a;->g(J)V
 
     .line 98
     .line 99
@@ -3354,7 +3354,7 @@
     const-string v1, "ReactInstanceManager.recreateReactContextInBackground()"
 
     .line 3
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     invoke-static {}, Lcom/facebook/react/bridge/UiThreadUtil;->assertOnUiThread()V
@@ -3394,12 +3394,12 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-static {}, Lg4/c;->a()Lg4/b;
+    invoke-static {}, Lh4/c;->a()Lh4/b;
 
     .line 9
     .line 10
@@ -3407,7 +3407,7 @@
     move-result-object v0
 
     .line 12
-    sget-object v1, Lh4/a;->c:Lf4/a;
+    sget-object v1, Li4/a;->c:Lg4/a;
 
     .line 13
     .line 14
@@ -3415,7 +3415,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v0, v1, v2}, Lg4/b;->c(Lf4/a;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Lh4/b;->a(Lg4/a;Ljava/lang/String;)V
 
     .line 17
     .line 18
@@ -3466,12 +3466,12 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-static {}, Lg4/c;->a()Lg4/b;
+    invoke-static {}, Lh4/c;->a()Lh4/b;
 
     .line 9
     .line 10
@@ -3479,7 +3479,7 @@
     move-result-object v0
 
     .line 12
-    sget-object v1, Lh4/a;->c:Lf4/a;
+    sget-object v1, Li4/a;->c:Lg4/a;
 
     .line 13
     .line 14
@@ -3487,7 +3487,7 @@
 
     .line 15
     .line 16
-    invoke-interface {v0, v1, v2}, Lg4/b;->c(Lf4/a;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Lh4/b;->a(Lg4/a;Ljava/lang/String;)V
 
     .line 17
     .line 18
@@ -3529,7 +3529,7 @@
 
     .line 37
     .line 38
-    invoke-static {v1, v2}, Lg6/a;->h(J)Z
+    invoke-static {v1, v2}, Lh6/a;->h(J)Z
 
     .line 39
     .line 40
@@ -3860,7 +3860,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -4193,7 +4193,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -4224,7 +4224,7 @@
 
     .line 21
     .line 22
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 23
     .line 24
@@ -4247,7 +4247,7 @@
 
     .line 31
     :try_start_1
-    invoke-static {p1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -4277,7 +4277,7 @@
     move-result-object v3
 
     .line 44
-    invoke-static {v3}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -4482,7 +4482,7 @@
     .line 146
     .line 147
     .line 148
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 149
     .line 150
@@ -4620,7 +4620,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -5135,7 +5135,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -5544,7 +5544,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lg4/c;->a()Lg4/b;
+    invoke-static {}, Lh4/c;->a()Lh4/b;
 
     .line 5
     .line 6
@@ -5552,7 +5552,7 @@
     move-result-object v0
 
     .line 8
-    sget-object v1, Lh4/a;->c:Lf4/a;
+    sget-object v1, Li4/a;->c:Lg4/a;
 
     .line 9
     .line 10
@@ -5560,7 +5560,7 @@
 
     .line 11
     .line 12
-    invoke-interface {v0, v1, v2}, Lg4/b;->c(Lf4/a;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Lh4/b;->a(Lg4/a;Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -5594,7 +5594,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, v1}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -5786,7 +5786,7 @@
 
     .line 118
     .line 119
-    invoke-static {v0, v1}, Lw3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 120
     .line 121
@@ -6263,7 +6263,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 11
     .line 12
@@ -6376,7 +6376,7 @@
 
     .line 62
     :goto_1
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 63
     .line 64
@@ -6429,7 +6429,7 @@
     move-exception p1
 
     .line 80
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 81
     .line 82
@@ -6639,7 +6639,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1, v2, v0}, Lg6/a;->c(JLjava/lang/String;)V
+    invoke-static {v1, v2, v0}, Lh6/a;->c(JLjava/lang/String;)V
 
     .line 6
     .line 7
@@ -6767,7 +6767,7 @@
 
     .line 63
     .line 64
-    invoke-static {v1, v2, v7}, Lg6/b;->a(JLjava/lang/String;)Lg6/b$b;
+    invoke-static {v1, v2, v7}, Lh6/b;->a(JLjava/lang/String;)Lh6/b$b;
 
     .line 65
     .line 66
@@ -6795,7 +6795,7 @@
     move-result-object v9
 
     .line 78
-    invoke-virtual {v7, v8, v9}, Lg6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lg6/b$b;
+    invoke-virtual {v7, v8, v9}, Lh6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lh6/b$b;
 
     .line 79
     .line 80
@@ -6803,7 +6803,7 @@
     move-result-object v7
 
     .line 82
-    invoke-virtual {v7}, Lg6/b$b;->c()V
+    invoke-virtual {v7}, Lh6/b$b;->c()V
 
     .line 83
     .line 84
@@ -6838,7 +6838,7 @@
     .line 99
     .line 100
     :cond_2
-    invoke-static {v1, v2}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v1, v2}, Lh6/b;->b(J)Lh6/b$b;
 
     .line 101
     .line 102
@@ -6846,7 +6846,7 @@
     move-result-object v6
 
     .line 104
-    invoke-virtual {v6}, Lg6/b$b;->c()V
+    invoke-virtual {v6}, Lh6/b$b;->c()V
 
     .line 105
     .line 106
@@ -6855,7 +6855,7 @@
 
     .line 108
     :cond_3
-    invoke-static {v1, v2}, Lg6/a;->g(J)V
+    invoke-static {v1, v2}, Lh6/a;->g(J)V
 
     .line 109
     .line 110
@@ -7564,7 +7564,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -7840,7 +7840,7 @@
     move v0, v2
 
     :goto_0
-    invoke-static {v0}, Lc6/a;->a(Z)V
+    invoke-static {v0}, Ld6/a;->a(Z)V
 
     .line 8
     :cond_1
@@ -7898,7 +7898,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {v1, p1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v1, p1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 13
     :cond_3
@@ -8023,7 +8023,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1, v0}, Lw3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->H(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -8374,7 +8374,7 @@
 
     const-string v1, "recreateReactContextInBackground should only be called after the initial createReactContextInBackground call."
 
-    invoke-static {v0, v1}, Lc6/a;->b(ZLjava/lang/String;)V
+    invoke-static {v0, v1}, Ld6/a;->b(ZLjava/lang/String;)V
 
     .line 2
     invoke-direct {p0}, Lcom/facebook/react/ReactInstanceManager;->recreateReactContextInBackgroundInner()V
@@ -8438,7 +8438,7 @@
 
     .line 22
     .line 23
-    invoke-static {v1, v2, v0}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 24
     .line 25

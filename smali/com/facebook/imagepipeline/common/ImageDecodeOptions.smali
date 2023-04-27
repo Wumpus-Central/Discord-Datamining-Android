@@ -24,7 +24,7 @@
 
 .field public final h:Landroid/graphics/Bitmap$Config;
 
-.field public final i:Ls5/c;
+.field public final i:Lt5/c;
 
 .field public final j:Landroid/graphics/ColorSpace;
 
@@ -35,11 +35,11 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    invoke-static {}, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->b()Lp5/b;
+    invoke-static {}, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->b()Lq5/b;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lp5/b;->a()Lcom/facebook/imagepipeline/common/ImageDecodeOptions;
+    invoke-virtual {v0}, Lq5/b;->a()Lcom/facebook/imagepipeline/common/ImageDecodeOptions;
 
     move-result-object v0
 
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lp5/b;)V
+.method public constructor <init>(Lq5/b;)V
     .locals 1
 
     .line 1
@@ -57,7 +57,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p1}, Lp5/b;->l()I
+    invoke-virtual {p1}, Lq5/b;->l()I
 
     .line 5
     .line 6
@@ -69,7 +69,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Lp5/b;->k()I
+    invoke-virtual {p1}, Lq5/b;->k()I
 
     .line 11
     .line 12
@@ -81,7 +81,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Lp5/b;->h()Z
+    invoke-virtual {p1}, Lq5/b;->h()Z
 
     .line 17
     .line 18
@@ -93,7 +93,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lp5/b;->m()Z
+    invoke-virtual {p1}, Lq5/b;->m()Z
 
     .line 23
     .line 24
@@ -105,7 +105,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p1}, Lp5/b;->g()Z
+    invoke-virtual {p1}, Lq5/b;->g()Z
 
     .line 29
     .line 30
@@ -117,7 +117,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p1}, Lp5/b;->j()Z
+    invoke-virtual {p1}, Lq5/b;->j()Z
 
     .line 35
     .line 36
@@ -129,7 +129,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Lp5/b;->c()Landroid/graphics/Bitmap$Config;
+    invoke-virtual {p1}, Lq5/b;->c()Landroid/graphics/Bitmap$Config;
 
     .line 41
     .line 42
@@ -141,7 +141,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {p1}, Lp5/b;->b()Landroid/graphics/Bitmap$Config;
+    invoke-virtual {p1}, Lq5/b;->b()Landroid/graphics/Bitmap$Config;
 
     .line 47
     .line 48
@@ -153,7 +153,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {p1}, Lp5/b;->f()Ls5/c;
+    invoke-virtual {p1}, Lq5/b;->f()Lt5/c;
 
     .line 53
     .line 54
@@ -161,16 +161,16 @@
     move-result-object v0
 
     .line 56
-    iput-object v0, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Ls5/c;
+    iput-object v0, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Lt5/c;
 
     .line 57
     .line 58
-    invoke-virtual {p1}, Lp5/b;->d()Lb6/a;
+    invoke-virtual {p1}, Lq5/b;->d()Lc6/a;
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {p1}, Lp5/b;->e()Landroid/graphics/ColorSpace;
+    invoke-virtual {p1}, Lq5/b;->e()Landroid/graphics/ColorSpace;
 
     .line 62
     .line 63
@@ -182,7 +182,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {p1}, Lp5/b;->i()Z
+    invoke-virtual {p1}, Lq5/b;->i()Z
 
     .line 68
     .line 69
@@ -373,23 +373,23 @@
     return-object v0
 .end method
 
-.method public static b()Lp5/b;
+.method public static b()Lq5/b;
     .locals 1
 
-    new-instance v0, Lp5/b;
+    new-instance v0, Lq5/b;
 
-    invoke-direct {v0}, Lp5/b;-><init>()V
+    invoke-direct {v0}, Lq5/b;-><init>()V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method protected c()Lv3/i$b;
+.method protected c()Lw3/i$b;
     .locals 3
 
     .line 1
-    invoke-static {p0}, Lv3/i;->c(Ljava/lang/Object;)Lv3/i$b;
+    invoke-static {p0}, Lw3/i;->c(Ljava/lang/Object;)Lw3/i$b;
 
     .line 2
     .line 3
@@ -405,7 +405,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->a(Ljava/lang/String;I)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->a(Ljava/lang/String;I)Lw3/i$b;
 
     .line 10
     .line 11
@@ -421,7 +421,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->a(Ljava/lang/String;I)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->a(Ljava/lang/String;I)Lw3/i$b;
 
     .line 18
     .line 19
@@ -437,7 +437,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->c(Ljava/lang/String;Z)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->c(Ljava/lang/String;Z)Lw3/i$b;
 
     .line 26
     .line 27
@@ -453,7 +453,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->c(Ljava/lang/String;Z)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->c(Ljava/lang/String;Z)Lw3/i$b;
 
     .line 34
     .line 35
@@ -469,7 +469,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->c(Ljava/lang/String;Z)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->c(Ljava/lang/String;Z)Lw3/i$b;
 
     .line 42
     .line 43
@@ -485,7 +485,7 @@
 
     .line 48
     .line 49
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->c(Ljava/lang/String;Z)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->c(Ljava/lang/String;Z)Lw3/i$b;
 
     .line 50
     .line 51
@@ -509,7 +509,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {v0, v2, v1}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v2, v1}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 62
     .line 63
@@ -533,7 +533,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v0, v2, v1}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v2, v1}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 74
     .line 75
@@ -545,11 +545,11 @@
 
     .line 78
     .line 79
-    iget-object v2, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Ls5/c;
+    iget-object v2, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Lt5/c;
 
     .line 80
     .line 81
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 82
     .line 83
@@ -564,7 +564,7 @@
     const/4 v2, 0x0
 
     .line 88
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 89
     .line 90
@@ -580,7 +580,7 @@
 
     .line 95
     .line 96
-    invoke-virtual {v0, v1, v2}, Lv3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lv3/i$b;
+    invoke-virtual {v0, v1, v2}, Lw3/i$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lw3/i$b;
 
     .line 97
     .line 98
@@ -1004,11 +1004,11 @@
 
     .line 83
     :cond_9
-    iget-object v2, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Ls5/c;
+    iget-object v2, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Lt5/c;
 
     .line 84
     .line 85
-    iget-object v3, p1, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Ls5/c;
+    iget-object v3, p1, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Lt5/c;
 
     .line 86
     .line 87
@@ -1325,7 +1325,7 @@
 
     .line 60
     .line 61
-    iget-object v1, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Ls5/c;
+    iget-object v1, p0, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->i:Lt5/c;
 
     .line 62
     .line 63
@@ -1371,7 +1371,7 @@
 
     .line 80
     .line 81
-    invoke-static {v1}, Lp5/a;->a(Landroid/graphics/ColorSpace;)I
+    invoke-static {v1}, Lq5/a;->a(Landroid/graphics/ColorSpace;)I
 
     .line 82
     .line 83
@@ -1634,11 +1634,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->c()Lv3/i$b;
+    invoke-virtual {p0}, Lcom/facebook/imagepipeline/common/ImageDecodeOptions;->c()Lw3/i$b;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lv3/i$b;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lw3/i$b;->toString()Ljava/lang/String;
 
     move-result-object v1
 

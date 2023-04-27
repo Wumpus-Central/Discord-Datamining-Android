@@ -7,28 +7,28 @@
 
 
 # virtual methods
-.method public abstract A()I
+.method public abstract D(I)V
 .end method
 
-.method public abstract B()I
+.method public abstract E()I
 .end method
 
-.method public abstract H()I
-.end method
-
-.method public abstract I()I
+.method public abstract F()I
 .end method
 
 .method public abstract K()I
 .end method
 
-.method public abstract a()I
+.method public abstract L()I
 .end method
 
-.method public abstract c()F
+.method public abstract N()I
 .end method
 
-.method public abstract g()I
+.method public abstract c()I
+.end method
+
+.method public abstract d()F
 .end method
 
 .method public abstract getHeight()I
@@ -40,23 +40,23 @@
 .method public abstract getWidth()I
 .end method
 
-.method public abstract i()I
+.method public abstract h()I
 .end method
 
-.method public abstract j(I)V
+.method public abstract k()I
 .end method
 
-.method public abstract k()F
+.method public abstract l(I)V
 .end method
 
-.method public abstract n()F
+.method public abstract m()F
 .end method
 
-.method public abstract p()Z
+.method public abstract q()F
 .end method
 
-.method public abstract s()I
+.method public abstract s()Z
 .end method
 
-.method public abstract z(I)V
+.method public abstract v()I
 .end method

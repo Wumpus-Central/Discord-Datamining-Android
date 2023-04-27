@@ -458,7 +458,7 @@
 
     .line 79
     .line 80
-    invoke-static {v1, v0, p2}, Lw3/a;->g(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0, p2}, Lx3/a;->g(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 81
     .line 82
@@ -1425,7 +1425,7 @@
 
     .line 84
     .line 85
-    invoke-static {v0, p3, p2}, Lw3/a;->g(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p3, p2}, Lx3/a;->g(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 86
     .line 87

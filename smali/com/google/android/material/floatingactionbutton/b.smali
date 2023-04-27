@@ -4,10 +4,10 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lvb/b;)V
+.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lwb/b;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/a;-><init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lvb/b;)V
+    invoke-direct {p0, p1, p2}, Lcom/google/android/material/floatingactionbutton/a;-><init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lwb/b;)V
 
     return-void
 .end method
@@ -933,7 +933,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1}, Lub/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
+    invoke-static {p1}, Lvb/b;->a(Landroid/content/res/ColorStateList;)Landroid/content/res/ColorStateList;
 
     .line 10
     .line 11
@@ -1019,9 +1019,9 @@
 .method W()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->w:Lvb/b;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->w:Lwb/b;
 
-    invoke-interface {v0}, Lvb/b;->c()Z
+    invoke-interface {v0}, Lwb/b;->c()Z
 
     move-result v0
 
@@ -1070,11 +1070,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->w:Lvb/b;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/a;->w:Lwb/b;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lvb/b;->c()Z
+    invoke-interface {v0}, Lwb/b;->c()Z
 
     .line 4
     .line 5

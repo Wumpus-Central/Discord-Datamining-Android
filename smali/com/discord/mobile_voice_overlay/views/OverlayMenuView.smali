@@ -1800,11 +1800,11 @@
 
     .line 87
     :cond_2
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 88
     .line 89
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 90
     .line 91

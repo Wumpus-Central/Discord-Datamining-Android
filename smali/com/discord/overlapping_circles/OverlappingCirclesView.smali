@@ -237,7 +237,7 @@
 
     move-result p2
 
-    invoke-static {p2, v1}, Lcg/h;->c(II)I
+    invoke-static {p2, v1}, Leg/h;->c(II)I
 
     move-result p2
 

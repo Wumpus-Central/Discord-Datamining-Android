@@ -486,7 +486,7 @@
 .method public setAlpha(I)V
     .locals 2
 
-    new-instance p1, Llf/r;
+    new-instance p1, Lnf/r;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -504,7 +504,7 @@
 
     move-result-object v0
 
-    invoke-direct {p1, v0}, Llf/r;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lnf/r;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
@@ -814,7 +814,7 @@
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 2
 
-    new-instance p1, Llf/r;
+    new-instance p1, Lnf/r;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -832,7 +832,7 @@
 
     move-result-object v0
 
-    invoke-direct {p1, v0}, Llf/r;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Lnf/r;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method

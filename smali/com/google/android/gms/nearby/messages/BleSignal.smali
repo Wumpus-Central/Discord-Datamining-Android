@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract d()I
+.method public abstract a()I
 .end method
 
 .method public abstract e()I

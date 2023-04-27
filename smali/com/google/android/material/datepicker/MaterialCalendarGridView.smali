@@ -46,12 +46,12 @@
     if-eqz p1, :cond_0
 
     .line 5
-    sget p1, Ldb/f;->a:I
+    sget p1, Leb/f;->a:I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusLeftId(I)V
 
     .line 6
-    sget p1, Ldb/f;->c:I
+    sget p1, Leb/f;->c:I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusRightId(I)V
 
@@ -609,7 +609,7 @@
     move-result-object v7
 
     .line 46
-    invoke-interface {v2}, Lcom/google/android/material/datepicker/d;->v()Ljava/util/Collection;
+    invoke-interface {v2}, Lcom/google/android/material/datepicker/d;->y()Ljava/util/Collection;
 
     .line 47
     .line 48

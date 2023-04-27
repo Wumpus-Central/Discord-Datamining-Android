@@ -415,7 +415,7 @@
     mul-float/2addr v0, v2
 
     .line 64
-    invoke-static {v0}, Lzf/a;->a(F)I
+    invoke-static {v0}, Lbg/a;->a(F)I
 
     .line 65
     .line 66
@@ -554,17 +554,6 @@
     .line 189
     .line 190
     .line 191
-    .line 192
-    .line 193
-    .line 194
-    .line 195
-    .line 196
-    .line 197
-    .line 198
-    .line 199
-    .line 200
-    .line 201
-    .line 202
 .end method
 
 
@@ -572,9 +561,9 @@
 .method public final override()V
     .locals 1
 
-    new-instance v0, Lk3/a;
+    new-instance v0, Ll3/a;
 
-    invoke-direct {v0}, Lk3/a;-><init>()V
+    invoke-direct {v0}, Ll3/a;-><init>()V
 
     sput-object v0, Lcom/facebook/react/views/text/CustomLineHeightSpan;->chooseHeightOverride:Lcom/facebook/react/bridge/Callback;
 

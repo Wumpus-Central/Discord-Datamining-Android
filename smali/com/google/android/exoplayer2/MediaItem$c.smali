@@ -72,7 +72,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lg8/c;",
+            "Lh8/c;",
             ">;"
         }
     .end annotation
@@ -390,7 +390,7 @@
 
     .line 15
     :goto_1
-    invoke-static {v1}, Lf9/a;->f(Z)V
+    invoke-static {v1}, Lg9/a;->f(Z)V
 
     .line 16
     .line 17
@@ -604,7 +604,7 @@
 
     .line 112
     .line 113
-    invoke-static {v2}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
     .line 115
@@ -931,7 +931,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lg8/c;",
+            "Lh8/c;",
             ">;)",
             "Lcom/google/android/exoplayer2/MediaItem$c;"
         }

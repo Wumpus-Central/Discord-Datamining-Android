@@ -38,7 +38,7 @@
         "setPipAspectRatio",
         "force",
         "Lkotlin/Function1;",
-        "Llf/s;",
+        "Lnf/s;",
         "onResult",
         "Lcom/discord/external_pip/ExternalPipManager;",
         "manager",
@@ -147,7 +147,7 @@
 
     .line 28
     .line 29
-    invoke-static {v2, v1}, Llf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v2, v1}, Lnf/x;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     .line 30
     .line 31
@@ -445,7 +445,7 @@
             "(Z",
             "Lkotlin/jvm/functions/Function1<",
             "-",
-            "Llf/s<",
+            "Lnf/s<",
             "Lkotlin/Unit;",
             ">;",
             "Lkotlin/Unit;",

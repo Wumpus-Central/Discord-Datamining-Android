@@ -176,7 +176,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -374,7 +374,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v2, v4}, Lzi/n1;->a([I[ILkotlinx/serialization/descriptors/SerialDescriptor;)V
+    invoke-static {v3, v2, v4}, Lbj/n1;->a([I[ILkotlinx/serialization/descriptors/SerialDescriptor;)V
 
     :cond_2
     const/4 v2, 0x0
@@ -1999,7 +1999,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {p1, p2, v1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->w(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+    invoke-interface {p1, p2, v1, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getBorderColor()I
 
@@ -2007,7 +2007,7 @@
 
     const/4 v2, 0x1
 
-    invoke-interface {p1, p2, v2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->w(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+    invoke-interface {p1, p2, v2, v0}, Lkotlinx/serialization/encoding/CompositeEncoder;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
 
     const/4 v0, 0x2
 
@@ -2015,9 +2015,9 @@
 
     move-result v3
 
-    invoke-interface {p1, p2, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->w(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
+    invoke-interface {p1, p2, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->x(Lkotlinx/serialization/descriptors/SerialDescriptor;II)V
 
-    sget-object v0, Lzi/a2;->a:Lzi/a2;
+    sget-object v0, Lbj/a2;->a:Lbj/a2;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getHeaderText()Ljava/lang/String;
 
@@ -2025,11 +2025,11 @@
 
     const/4 v4, 0x3
 
-    invoke-interface {p1, p2, v4, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v4, v0, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     const/4 v3, 0x4
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2061,12 +2061,12 @@
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_2
     const/4 v3, 0x5
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2092,18 +2092,18 @@
     :goto_3
     if-eqz v4, :cond_5
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getAcceptLabelBackgroundColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_5
     const/4 v3, 0x6
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2129,18 +2129,18 @@
     :goto_5
     if-eqz v4, :cond_8
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getAcceptLabelBorderColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_8
     const/4 v3, 0x7
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2166,18 +2166,18 @@
     :goto_7
     if-eqz v4, :cond_b
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getAcceptLabelColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_b
     const/16 v3, 0x8
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2207,12 +2207,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_e
     const/16 v3, 0x9
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2242,12 +2242,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_11
     const/16 v3, 0xa
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2273,18 +2273,18 @@
     :goto_d
     if-eqz v4, :cond_14
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getBodyTextColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_14
     const/16 v3, 0xb
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2310,18 +2310,18 @@
     :goto_f
     if-eqz v4, :cond_17
 
-    sget-object v4, Lzi/h;->a:Lzi/h;
+    sget-object v4, Lbj/h;->a:Lbj/h;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getCanBeAccepted()Ljava/lang/Boolean;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_17
     const/16 v3, 0xc
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2347,18 +2347,18 @@
     :goto_11
     if-eqz v4, :cond_1a
 
-    sget-object v4, Lzi/h;->a:Lzi/h;
+    sget-object v4, Lbj/h;->a:Lbj/h;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getEmbedCanBeTapped()Ljava/lang/Boolean;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_1a
     const/16 v3, 0xd
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2384,18 +2384,18 @@
     :goto_13
     if-eqz v4, :cond_1d
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getResolvingGradientEnd()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_1d
     const/16 v3, 0xe
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2421,18 +2421,18 @@
     :goto_15
     if-eqz v4, :cond_20
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getResolvingGradientStart()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_20
     const/16 v3, 0xf
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2458,18 +2458,18 @@
     :goto_17
     if-eqz v4, :cond_23
 
-    sget-object v4, Lzi/h;->a:Lzi/h;
+    sget-object v4, Lbj/h;->a:Lbj/h;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getSplashHasRadialGradient()Ljava/lang/Boolean;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_23
     const/16 v3, 0x10
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2495,18 +2495,18 @@
     :goto_19
     if-eqz v4, :cond_26
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getSplashOpacity()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_26
     const/16 v3, 0x11
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2536,12 +2536,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_29
     const/16 v3, 0x12
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2571,12 +2571,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_2c
     const/16 v3, 0x13
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2606,12 +2606,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_2f
     const/16 v3, 0x14
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2637,18 +2637,18 @@
     :goto_21
     if-eqz v4, :cond_32
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getSubtitleColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_32
     const/16 v3, 0x15
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2674,18 +2674,18 @@
     :goto_23
     if-eqz v4, :cond_35
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getThumbnailBackgroundColor()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_35
     const/16 v3, 0x16
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2711,18 +2711,18 @@
     :goto_25
     if-eqz v4, :cond_38
 
-    sget-object v4, Lzi/m0;->a:Lzi/m0;
+    sget-object v4, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getThumbnailCornerRadius()Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v4, v5}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_38
     const/16 v3, 0x17
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v4
 
@@ -2752,12 +2752,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_3b
     const/16 v3, 0x18
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
@@ -2789,12 +2789,12 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_3e
     const/16 v3, 0x19
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
@@ -2820,7 +2820,7 @@
     :goto_2b
     if-eqz v3, :cond_41
 
-    sget-object v3, Lzi/m0;->a:Lzi/m0;
+    sget-object v3, Lbj/m0;->a:Lbj/m0;
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getTitleColor()Ljava/lang/Integer;
 
@@ -2828,12 +2828,12 @@
 
     const/16 v5, 0x19
 
-    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_41
     const/16 v3, 0x1a
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
@@ -2865,7 +2865,7 @@
 
     move-result-object v4
 
-    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v3, v0, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_44
     sget-object v3, Lcom/discord/primitives/ApplicationId$$serializer;->INSTANCE:Lcom/discord/primitives/ApplicationId$$serializer;
@@ -2880,7 +2880,7 @@
 
     const/16 v5, 0x1b
 
-    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     sget-object v3, Lcom/discord/primitives/ChannelId$$serializer;->INSTANCE:Lcom/discord/primitives/ChannelId$$serializer;
 
@@ -2894,11 +2894,11 @@
 
     const/16 v5, 0x1c
 
-    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     const/16 v3, 0x1d
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
@@ -2936,12 +2936,12 @@
 
     const/16 v5, 0x1d
 
-    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_47
-    new-instance v3, Lzi/f;
+    new-instance v3, Lbj/f;
 
-    invoke-direct {v3, v0}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v3, v0}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     invoke-virtual {p0}, Lcom/discord/chat/bridge/codedlinks/ActivityLauncherEmbedImpl;->getParticipantAvatarUris()Ljava/util/List;
 
@@ -2949,11 +2949,11 @@
 
     const/16 v5, 0x1e
 
-    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->B(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v5, v3, v4}, Lkotlinx/serialization/encoding/CompositeEncoder;->t(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     const/16 v3, 0x1f
 
-    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
+    invoke-interface {p1, p2, v3}, Lkotlinx/serialization/encoding/CompositeEncoder;->A(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z
 
     move-result v3
 
@@ -2983,7 +2983,7 @@
 
     move-result-object v2
 
-    invoke-interface {p1, p2, v1, v0, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->m(Lkotlinx/serialization/descriptors/SerialDescriptor;ILwi/h;Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v1, v0, v2}, Lkotlinx/serialization/encoding/CompositeEncoder;->p(Lkotlinx/serialization/descriptors/SerialDescriptor;ILyi/h;Ljava/lang/Object;)V
 
     :cond_4a
     const/16 v0, 0x20
@@ -2992,7 +2992,7 @@
 
     move-result-object p0
 
-    invoke-interface {p1, p2, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->y(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
+    invoke-interface {p1, p2, v0, p0}, Lkotlinx/serialization/encoding/CompositeEncoder;->z(Lkotlinx/serialization/descriptors/SerialDescriptor;ILjava/lang/String;)V
 
     return-void
 .end method

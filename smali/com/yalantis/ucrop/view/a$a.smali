@@ -568,7 +568,7 @@
     const/4 v4, 0x0
 
     .line 32
-    invoke-static {v1, v4, v2, v3}, Lif/b;->b(FFFF)F
+    invoke-static {v1, v4, v2, v3}, Lkf/b;->b(FFFF)F
 
     .line 33
     .line 34
@@ -587,7 +587,7 @@
     long-to-float v5, v5
 
     .line 41
-    invoke-static {v1, v4, v3, v5}, Lif/b;->b(FFFF)F
+    invoke-static {v1, v4, v3, v5}, Lkf/b;->b(FFFF)F
 
     .line 42
     .line 43
@@ -606,7 +606,7 @@
     long-to-float v6, v6
 
     .line 50
-    invoke-static {v1, v4, v5, v6}, Lif/b;->a(FFFF)F
+    invoke-static {v1, v4, v5, v6}, Lkf/b;->a(FFFF)F
 
     .line 51
     .line 52

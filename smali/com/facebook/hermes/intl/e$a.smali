@@ -447,7 +447,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->h(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->h(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -463,7 +463,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->i(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->i(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -479,7 +479,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->j(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->j(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -495,7 +495,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->k(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->k(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -511,7 +511,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->l(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->l(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -527,7 +527,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->m(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->m(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -543,7 +543,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->n(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->n(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -559,7 +559,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->o(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->o(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -575,7 +575,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->p(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->p(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -591,7 +591,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->q(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->q(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -607,7 +607,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->r(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->r(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 
@@ -623,7 +623,7 @@
 
     iget v2, p0, Lcom/facebook/hermes/intl/e$a;->c:I
 
-    invoke-static {v0, v1, v2}, Lg5/h;->s(Ljava/lang/CharSequence;II)Z
+    invoke-static {v0, v1, v2}, Lh5/h;->s(Ljava/lang/CharSequence;II)Z
 
     move-result v0
 

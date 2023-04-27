@@ -329,7 +329,7 @@
 
     .line 18
     .line 19
-    invoke-static {p0}, Lpi/l;->Y0(Ljava/lang/CharSequence;)Ljava/lang/Character;
+    invoke-static {p0}, Lri/l;->Y0(Ljava/lang/CharSequence;)Ljava/lang/Character;
 
     .line 20
     .line 21

@@ -99,7 +99,7 @@
     const-string v2, "Couldn\'t send event to packager"
 
     .line 4
-    invoke-static {v1, v2, p1}, Lw3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, p1}, Lx3/a;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_1
     :goto_0

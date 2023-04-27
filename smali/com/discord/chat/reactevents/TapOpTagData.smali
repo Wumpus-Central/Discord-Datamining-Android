@@ -28,7 +28,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
 .end annotation
 
 
@@ -65,7 +65,7 @@
 
     .line 7
     .line 8
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     .line 9
     .line 10
@@ -73,7 +73,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 13
     .line 14

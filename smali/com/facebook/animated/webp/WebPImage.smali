@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lj5/c;
 .implements Lk5/c;
+.implements Ll5/c;
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -16,7 +16,7 @@
 .field private a:Landroid/graphics/Bitmap$Config;
 
 .field private mNativeContext:J
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end field
 
@@ -24,7 +24,7 @@
 # direct methods
 .method public constructor <init>()V
     .locals 1
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -40,7 +40,7 @@
 
 .method constructor <init>(J)V
     .locals 1
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 3
@@ -211,7 +211,7 @@
     move-result-object v0
 
     .line 17
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 18
     .line 19
@@ -444,7 +444,7 @@
     return v0
 .end method
 
-.method public c(I)Lj5/b;
+.method public c(I)Lk5/b;
     .locals 10
 
     .line 1
@@ -457,7 +457,7 @@
 
     .line 5
     :try_start_0
-    new-instance v9, Lj5/b;
+    new-instance v9, Lk5/b;
 
     .line 6
     .line 7
@@ -505,7 +505,7 @@
 
     .line 28
     .line 29
-    sget-object v1, Lj5/b$a;->k:Lj5/b$a;
+    sget-object v1, Lk5/b$a;->k:Lk5/b$a;
 
     .line 30
     .line 31
@@ -513,7 +513,7 @@
 
     .line 32
     :cond_0
-    sget-object v1, Lj5/b$a;->l:Lj5/b$a;
+    sget-object v1, Lk5/b$a;->l:Lk5/b$a;
 
     .line 33
     .line 34
@@ -533,7 +533,7 @@
 
     .line 40
     .line 41
-    sget-object v1, Lj5/b$b;->l:Lj5/b$b;
+    sget-object v1, Lk5/b$b;->l:Lk5/b$b;
 
     .line 42
     .line 43
@@ -541,7 +541,7 @@
 
     .line 44
     :cond_1
-    sget-object v1, Lj5/b$b;->k:Lj5/b$b;
+    sget-object v1, Lk5/b$b;->k:Lk5/b$b;
 
     .line 45
     .line 46
@@ -555,7 +555,7 @@
     move v2, p1
 
     .line 49
-    invoke-direct/range {v1 .. v8}, Lj5/b;-><init>(IIIIILj5/b$a;Lj5/b$b;)V
+    invoke-direct/range {v1 .. v8}, Lk5/b;-><init>(IIIIILk5/b$a;Lk5/b$b;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -763,7 +763,7 @@
     .line 241
 .end method
 
-.method public d(Ljava/nio/ByteBuffer;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
+.method public d(Ljava/nio/ByteBuffer;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lk5/c;
     .locals 0
 
     invoke-static {p1, p2}, Lcom/facebook/animated/webp/WebPImage;->k(Ljava/nio/ByteBuffer;Lcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/webp/WebPImage;
@@ -781,7 +781,7 @@
     return v0
 .end method
 
-.method public f(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lj5/c;
+.method public f(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lk5/c;
     .locals 0
 
     invoke-static {p1, p2, p3, p4}, Lcom/facebook/animated/webp/WebPImage;->l(JILcom/facebook/imagepipeline/common/ImageDecodeOptions;)Lcom/facebook/animated/webp/WebPImage;
@@ -837,7 +837,7 @@
     return-object v0
 .end method
 
-.method public bridge synthetic i(I)Lj5/d;
+.method public bridge synthetic i(I)Lk5/d;
     .locals 0
 
     invoke-virtual {p0, p1}, Lcom/facebook/animated/webp/WebPImage;->m(I)Lcom/facebook/animated/webp/WebPFrame;

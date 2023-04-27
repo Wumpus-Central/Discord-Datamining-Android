@@ -16,8 +16,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
-        "Lu5/e;",
-        "Lu5/e;",
+        "Lv5/e;",
+        "Lv5/e;",
         ">;"
     }
 .end annotation
@@ -30,7 +30,7 @@
         value = {
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
-            "Lu5/e;",
+            "Lv5/e;",
             ">;)V"
         }
     .end annotation
@@ -55,14 +55,14 @@
 .method protected bridge synthetic h(Ljava/lang/Object;I)V
     .locals 0
 
-    check-cast p1, Lu5/e;
+    check-cast p1, Lv5/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/a$b;->p(Lu5/e;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/a$b;->p(Lv5/e;I)V
 
     return-void
 .end method
 
-.method protected p(Lu5/e;I)V
+.method protected p(Lv5/e;I)V
     .locals 1
 
     .line 1
@@ -90,7 +90,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p1}, Lu5/e;->c0(Lu5/e;)Z
+    invoke-static {p1}, Lv5/e;->b0(Lv5/e;)Z
 
     .line 13
     .line 14
@@ -102,7 +102,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lu5/e;->z0()V
+    invoke-virtual {p1}, Lv5/e;->w0()V
 
     .line 19
     .line 20

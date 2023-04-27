@@ -617,7 +617,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-interface {p1}, Lcom/facebook/soloader/r$d;->x0()Lcom/facebook/soloader/r$b;
+    invoke-interface {p1}, Lcom/facebook/soloader/r$d;->v0()Lcom/facebook/soloader/r$b;
 
     .line 16
     .line 17
@@ -1795,7 +1795,7 @@
     .line 110
     .line 111
     :cond_1
-    invoke-interface {p1, v6, p2}, Lcom/facebook/soloader/r$d;->q0(Ljava/io/DataOutput;[B)V
+    invoke-interface {p1, v6, p2}, Lcom/facebook/soloader/r$d;->m0(Ljava/io/DataOutput;[B)V
 
     .line 112
     .line 113
@@ -2973,7 +2973,7 @@
 
     .line 103
     .line 104
-    invoke-interface {v4}, Lcom/facebook/soloader/r$d;->x0()Lcom/facebook/soloader/r$b;
+    invoke-interface {v4}, Lcom/facebook/soloader/r$d;->v0()Lcom/facebook/soloader/r$b;
 
     .line 105
     .line 106
@@ -3021,7 +3021,7 @@
 
     .line 127
     .line 128
-    invoke-interface {v4}, Lcom/facebook/soloader/r$d;->x0()Lcom/facebook/soloader/r$b;
+    invoke-interface {v4}, Lcom/facebook/soloader/r$d;->v0()Lcom/facebook/soloader/r$b;
 
     .line 129
     .line 130

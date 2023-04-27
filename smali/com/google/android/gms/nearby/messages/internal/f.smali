@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv9/i;
+.implements Lw9/i;
 
 
 # instance fields

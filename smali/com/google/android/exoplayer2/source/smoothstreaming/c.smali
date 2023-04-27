@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lh8/r;
-.implements Lh8/p0$a;
+.implements Li8/r;
+.implements Li8/p0$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lh8/r;",
-        "Lh8/p0$a<",
-        "Lj8/h<",
+        "Li8/r;",
+        "Li8/p0$a<",
+        "Lk8/h<",
         "Lcom/google/android/exoplayer2/source/smoothstreaming/b;",
         ">;>;"
     }
@@ -23,44 +23,44 @@
 # instance fields
 .field private final k:Lcom/google/android/exoplayer2/source/smoothstreaming/b$a;
 
-.field private final l:Ld9/x;
+.field private final l:Le9/x;
 
-.field private final m:Ld9/t;
+.field private final m:Le9/t;
 
-.field private final n:Lj7/x;
+.field private final n:Lk7/x;
 
-.field private final o:Lj7/v$a;
+.field private final o:Lk7/v$a;
 
 .field private final p:Lcom/google/android/exoplayer2/upstream/g;
 
-.field private final q:Lh8/b0$a;
+.field private final q:Li8/b0$a;
 
-.field private final r:Ld9/b;
+.field private final r:Le9/b;
 
 .field private final s:Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
-.field private final t:Lh8/h;
+.field private final t:Li8/h;
 
-.field private u:Lh8/r$a;
+.field private u:Li8/r$a;
 
-.field private v:Lp8/a;
+.field private v:Lq8/a;
 
-.field private w:[Lj8/h;
+.field private w:[Lk8/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
-            "Lj8/h<",
+            "Lk8/h<",
             "Lcom/google/android/exoplayer2/source/smoothstreaming/b;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private x:Lh8/p0;
+.field private x:Li8/p0;
 
 
 # direct methods
-.method public constructor <init>(Lp8/a;Lcom/google/android/exoplayer2/source/smoothstreaming/b$a;Ld9/x;Lh8/h;Lj7/x;Lj7/v$a;Lcom/google/android/exoplayer2/upstream/g;Lh8/b0$a;Ld9/t;Ld9/b;)V
+.method public constructor <init>(Lq8/a;Lcom/google/android/exoplayer2/source/smoothstreaming/b$a;Le9/x;Li8/h;Lk7/x;Lk7/v$a;Lcom/google/android/exoplayer2/upstream/g;Li8/b0$a;Le9/t;Le9/b;)V
     .locals 0
 
     .line 1
@@ -69,7 +69,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lp8/a;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lq8/a;
 
     .line 5
     .line 6
@@ -77,19 +77,19 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->l:Ld9/x;
+    iput-object p3, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->l:Le9/x;
 
     .line 9
     .line 10
-    iput-object p9, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Ld9/t;
+    iput-object p9, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Le9/t;
 
     .line 11
     .line 12
-    iput-object p5, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->n:Lj7/x;
+    iput-object p5, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->n:Lk7/x;
 
     .line 13
     .line 14
-    iput-object p6, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->o:Lj7/v$a;
+    iput-object p6, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->o:Lk7/v$a;
 
     .line 15
     .line 16
@@ -97,19 +97,19 @@
 
     .line 17
     .line 18
-    iput-object p8, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->q:Lh8/b0$a;
+    iput-object p8, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->q:Li8/b0$a;
 
     .line 19
     .line 20
-    iput-object p10, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->r:Ld9/b;
+    iput-object p10, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->r:Le9/b;
 
     .line 21
     .line 22
-    iput-object p4, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->t:Lh8/h;
+    iput-object p4, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->t:Li8/h;
 
     .line 23
     .line 24
-    invoke-static {p1, p5}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m(Lp8/a;Lj7/x;)Lcom/google/android/exoplayer2/source/TrackGroupArray;
+    invoke-static {p1, p5}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->k(Lq8/a;Lk7/x;)Lcom/google/android/exoplayer2/source/TrackGroupArray;
 
     .line 25
     .line 26
@@ -124,7 +124,7 @@
     const/4 p1, 0x0
 
     .line 31
-    invoke-static {p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->p(I)[Lj8/h;
+    invoke-static {p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->p(I)[Lk8/h;
 
     .line 32
     .line 33
@@ -132,11 +132,11 @@
     move-result-object p1
 
     .line 35
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 36
     .line 37
-    invoke-interface {p4, p1}, Lh8/h;->a([Lh8/p0;)Lh8/p0;
+    invoke-interface {p4, p1}, Li8/h;->a([Li8/p0;)Li8/p0;
 
     .line 38
     .line 39
@@ -144,7 +144,7 @@
     move-result-object p1
 
     .line 41
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
     .line 42
     .line 43
@@ -275,14 +275,14 @@
     .line 167
 .end method
 
-.method private e(La9/h;J)Lj8/h;
+.method private e(Lb9/h;J)Lk8/h;
     .locals 15
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "La9/h;",
+            "Lb9/h;",
             "J)",
-            "Lj8/h<",
+            "Lk8/h<",
             "Lcom/google/android/exoplayer2/source/smoothstreaming/b;",
             ">;"
         }
@@ -296,7 +296,7 @@
 
     .line 3
     .line 4
-    invoke-interface/range {p1 .. p1}, La9/k;->l()Lh8/u0;
+    invoke-interface/range {p1 .. p1}, Lb9/k;->k()Li8/u0;
 
     .line 5
     .line 6
@@ -304,7 +304,7 @@
     move-result-object v1
 
     .line 8
-    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/source/TrackGroupArray;->d(Lh8/u0;)I
+    invoke-virtual {v0, v1}, Lcom/google/android/exoplayer2/source/TrackGroupArray;->b(Li8/u0;)I
 
     .line 9
     .line 10
@@ -316,15 +316,15 @@
 
     .line 13
     .line 14
-    iget-object v3, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Ld9/t;
+    iget-object v3, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Le9/t;
 
     .line 15
     .line 16
-    iget-object v4, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lp8/a;
+    iget-object v4, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lq8/a;
 
     .line 17
     .line 18
-    iget-object v7, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->l:Ld9/x;
+    iget-object v7, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->l:Le9/x;
 
     .line 19
     .line 20
@@ -335,7 +335,7 @@
 
     .line 22
     .line 23
-    invoke-interface/range {v2 .. v7}, Lcom/google/android/exoplayer2/source/smoothstreaming/b$a;->a(Ld9/t;Lp8/a;ILa9/h;Ld9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
+    invoke-interface/range {v2 .. v7}, Lcom/google/android/exoplayer2/source/smoothstreaming/b$a;->a(Le9/t;Lq8/a;ILb9/h;Le9/x;)Lcom/google/android/exoplayer2/source/smoothstreaming/b;
 
     .line 24
     .line 25
@@ -343,15 +343,15 @@
     move-result-object v4
 
     .line 27
-    new-instance v14, Lj8/h;
+    new-instance v14, Lk8/h;
 
     .line 28
     .line 29
-    iget-object v1, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lp8/a;
+    iget-object v1, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lq8/a;
 
     .line 30
     .line 31
-    iget-object v1, v1, Lp8/a;->f:[Lp8/a$b;
+    iget-object v1, v1, Lq8/a;->f:[Lq8/a$b;
 
     .line 32
     .line 33
@@ -359,7 +359,7 @@
 
     .line 34
     .line 35
-    iget v1, v0, Lp8/a$b;->a:I
+    iget v1, v0, Lq8/a$b;->a:I
 
     .line 36
     .line 37
@@ -369,15 +369,15 @@
     const/4 v3, 0x0
 
     .line 39
-    iget-object v6, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->r:Ld9/b;
+    iget-object v6, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->r:Le9/b;
 
     .line 40
     .line 41
-    iget-object v9, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->n:Lj7/x;
+    iget-object v9, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->n:Lk7/x;
 
     .line 42
     .line 43
-    iget-object v10, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->o:Lj7/v$a;
+    iget-object v10, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->o:Lk7/v$a;
 
     .line 44
     .line 45
@@ -385,7 +385,7 @@
 
     .line 46
     .line 47
-    iget-object v12, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->q:Lh8/b0$a;
+    iget-object v12, v13, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->q:Li8/b0$a;
 
     .line 48
     .line 49
@@ -399,7 +399,7 @@
 
     .line 52
     .line 53
-    invoke-direct/range {v0 .. v12}, Lj8/h;-><init>(I[I[Ld7/k;Lj8/i;Lh8/p0$a;Ld9/b;JLj7/x;Lj7/v$a;Lcom/google/android/exoplayer2/upstream/g;Lh8/b0$a;)V
+    invoke-direct/range {v0 .. v12}, Lk8/h;-><init>(I[I[Le7/k;Lk8/i;Li8/p0$a;Le9/b;JLk7/x;Lk7/v$a;Lcom/google/android/exoplayer2/upstream/g;Li8/b0$a;)V
 
     .line 54
     .line 55
@@ -444,18 +444,18 @@
     .line 93
 .end method
 
-.method private static m(Lp8/a;Lj7/x;)Lcom/google/android/exoplayer2/source/TrackGroupArray;
+.method private static k(Lq8/a;Lk7/x;)Lcom/google/android/exoplayer2/source/TrackGroupArray;
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lp8/a;->f:[Lp8/a$b;
+    iget-object v0, p0, Lq8/a;->f:[Lq8/a$b;
 
     .line 2
     .line 3
     array-length v0, v0
 
     .line 4
-    new-array v0, v0, [Lh8/u0;
+    new-array v0, v0, [Li8/u0;
 
     .line 5
     .line 6
@@ -466,7 +466,7 @@
 
     .line 8
     :goto_0
-    iget-object v3, p0, Lp8/a;->f:[Lp8/a$b;
+    iget-object v3, p0, Lq8/a;->f:[Lq8/a$b;
 
     .line 9
     .line 10
@@ -481,14 +481,14 @@
 
     .line 14
     .line 15
-    iget-object v3, v3, Lp8/a$b;->j:[Ld7/k;
+    iget-object v3, v3, Lq8/a$b;->j:[Le7/k;
 
     .line 16
     .line 17
     array-length v4, v3
 
     .line 18
-    new-array v4, v4, [Ld7/k;
+    new-array v4, v4, [Le7/k;
 
     .line 19
     .line 20
@@ -507,7 +507,7 @@
 
     .line 25
     .line 26
-    invoke-interface {p1, v6}, Lj7/x;->b(Ld7/k;)Ljava/lang/Class;
+    invoke-interface {p1, v6}, Lk7/x;->a(Le7/k;)Ljava/lang/Class;
 
     .line 27
     .line 28
@@ -515,7 +515,7 @@
     move-result-object v7
 
     .line 30
-    invoke-virtual {v6, v7}, Ld7/k;->d(Ljava/lang/Class;)Ld7/k;
+    invoke-virtual {v6, v7}, Le7/k;->b(Ljava/lang/Class;)Le7/k;
 
     .line 31
     .line 32
@@ -535,11 +535,11 @@
 
     .line 39
     :cond_0
-    new-instance v3, Lh8/u0;
+    new-instance v3, Li8/u0;
 
     .line 40
     .line 41
-    invoke-direct {v3, v4}, Lh8/u0;-><init>([Ld7/k;)V
+    invoke-direct {v3, v4}, Li8/u0;-><init>([Le7/k;)V
 
     .line 42
     .line 43
@@ -560,7 +560,7 @@
 
     .line 50
     .line 51
-    invoke-direct {p0, v0}, Lcom/google/android/exoplayer2/source/TrackGroupArray;-><init>([Lh8/u0;)V
+    invoke-direct {p0, v0}, Lcom/google/android/exoplayer2/source/TrackGroupArray;-><init>([Li8/u0;)V
 
     .line 52
     .line 53
@@ -607,18 +607,18 @@
     .line 93
 .end method
 
-.method private static p(I)[Lj8/h;
+.method private static p(I)[Lk8/h;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)[",
-            "Lj8/h<",
+            "Lk8/h<",
             "Lcom/google/android/exoplayer2/source/smoothstreaming/b;",
             ">;"
         }
     .end annotation
 
-    new-array p0, p0, [Lj8/h;
+    new-array p0, p0, [Lk8/h;
 
     return-object p0
 .end method
@@ -628,9 +628,9 @@
 .method public b()J
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
-    invoke-interface {v0}, Lh8/p0;->b()J
+    invoke-interface {v0}, Li8/p0;->b()J
 
     move-result-wide v0
 
@@ -640,20 +640,20 @@
 .method public c()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
-    invoke-interface {v0}, Lh8/p0;->c()Z
+    invoke-interface {v0}, Li8/p0;->c()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public d(JLd7/w;)J
+.method public d(JLe7/w;)J
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 2
     .line 3
@@ -672,7 +672,7 @@
 
     .line 8
     .line 9
-    iget v4, v3, Lj8/h;->k:I
+    iget v4, v3, Lk8/h;->k:I
 
     .line 10
     .line 11
@@ -683,7 +683,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v3, p1, p2, p3}, Lj8/h;->d(JLd7/w;)J
+    invoke-virtual {v3, p1, p2, p3}, Lk8/h;->d(JLe7/w;)J
 
     .line 15
     .line 16
@@ -780,9 +780,9 @@
 .method public f(J)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
-    invoke-interface {v0, p1, p2}, Lh8/p0;->f(J)Z
+    invoke-interface {v0, p1, p2}, Li8/p0;->f(J)Z
 
     move-result p1
 
@@ -792,9 +792,9 @@
 .method public g()J
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
-    invoke-interface {v0}, Lh8/p0;->g()J
+    invoke-interface {v0}, Li8/p0;->g()J
 
     move-result-wide v0
 
@@ -804,24 +804,205 @@
 .method public h(J)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
-    invoke-interface {v0, p1, p2}, Lh8/p0;->h(J)V
+    invoke-interface {v0, p1, p2}, Li8/p0;->h(J)V
 
     return-void
 .end method
 
-.method public bridge synthetic j(Lh8/p0;)V
+.method public bridge synthetic i(Li8/p0;)V
     .locals 0
 
-    check-cast p1, Lj8/h;
+    check-cast p1, Lk8/h;
 
-    invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->s(Lj8/h;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->s(Lk8/h;)V
 
     return-void
 .end method
 
-.method public k([La9/h;[Z[Lh8/o0;[ZJ)J
+.method public l(J)J
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    :goto_0
+    if-ge v2, v1, :cond_0
+
+    .line 6
+    .line 7
+    aget-object v3, v0, v2
+
+    .line 8
+    .line 9
+    invoke-virtual {v3, p1, p2}, Lk8/h;->S(J)V
+
+    .line 10
+    .line 11
+    .line 12
+    add-int/lit8 v2, v2, 0x1
+
+    .line 13
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    return-wide p1
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+.end method
+
+.method public m(Li8/r$a;J)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Li8/r$a;
+
+    .line 2
+    .line 3
+    invoke-interface {p1, p0}, Li8/r$a;->j(Li8/r;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+.end method
+
+.method public n()J
+    .locals 2
+
+    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
+
+    return-wide v0
+.end method
+
+.method public q([Lb9/h;[Z[Li8/o0;[ZJ)J
     .locals 5
 
     .line 1
@@ -853,7 +1034,7 @@
 
     .line 13
     .line 14
-    check-cast v2, Lj8/h;
+    check-cast v2, Lk8/h;
 
     .line 15
     .line 16
@@ -877,7 +1058,7 @@
 
     .line 25
     :cond_0
-    invoke-virtual {v2}, Lj8/h;->E()Lj8/i;
+    invoke-virtual {v2}, Lk8/h;->E()Lk8/i;
 
     .line 26
     .line 27
@@ -893,7 +1074,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v3, v4}, Lcom/google/android/exoplayer2/source/smoothstreaming/b;->b(La9/h;)V
+    invoke-interface {v3, v4}, Lcom/google/android/exoplayer2/source/smoothstreaming/b;->b(Lb9/h;)V
 
     .line 34
     .line 35
@@ -908,7 +1089,7 @@
     .line 40
     :cond_1
     :goto_1
-    invoke-virtual {v2}, Lj8/h;->P()V
+    invoke-virtual {v2}, Lk8/h;->P()V
 
     .line 41
     .line 42
@@ -938,7 +1119,7 @@
 
     .line 53
     .line 54
-    invoke-direct {p0, v2, p5, p6}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->e(La9/h;J)Lj8/h;
+    invoke-direct {p0, v2, p5, p6}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->e(Lb9/h;J)Lk8/h;
 
     .line 55
     .line 56
@@ -979,7 +1160,7 @@
     move-result p1
 
     .line 73
-    invoke-static {p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->p(I)[Lj8/h;
+    invoke-static {p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->p(I)[Lk8/h;
 
     .line 74
     .line 75
@@ -987,7 +1168,7 @@
     move-result-object p1
 
     .line 77
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 78
     .line 79
@@ -996,15 +1177,15 @@
     .line 80
     .line 81
     .line 82
-    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->t:Lh8/h;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->t:Li8/h;
 
     .line 83
     .line 84
-    iget-object p2, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iget-object p2, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 85
     .line 86
-    invoke-interface {p1, p2}, Lh8/h;->a([Lh8/p0;)Lh8/p0;
+    invoke-interface {p1, p2}, Li8/h;->a([Li8/p0;)Li8/p0;
 
     .line 87
     .line 88
@@ -1012,7 +1193,7 @@
     move-result-object p1
 
     .line 90
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Lh8/p0;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->x:Li8/p0;
 
     .line 91
     .line 92
@@ -1485,211 +1666,30 @@
     .line 558
 .end method
 
-.method public l(J)J
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
-
-    .line 2
-    .line 3
-    array-length v1, v0
-
-    .line 4
-    const/4 v2, 0x0
-
-    .line 5
-    :goto_0
-    if-ge v2, v1, :cond_0
-
-    .line 6
-    .line 7
-    aget-object v3, v0, v2
-
-    .line 8
-    .line 9
-    invoke-virtual {v3, p1, p2}, Lj8/h;->S(J)V
-
-    .line 10
-    .line 11
-    .line 12
-    add-int/lit8 v2, v2, 0x1
-
-    .line 13
-    .line 14
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    return-wide p1
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-.end method
-
-.method public n()J
-    .locals 2
-
-    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
-
-    return-wide v0
-.end method
-
-.method public q(Lh8/r$a;J)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Lh8/r$a;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, p0}, Lh8/r$a;->i(Lh8/r;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    .line 48
-    .line 49
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    .line 58
-    .line 59
-    .line 60
-    .line 61
-    .line 62
-    .line 63
-    .line 64
-    .line 65
-    .line 66
-    .line 67
-    .line 68
-    .line 69
-    .line 70
-    .line 71
-    .line 72
-    .line 73
-    .line 74
-    .line 75
-    .line 76
-    .line 77
-    .line 78
-    .line 79
-    .line 80
-    .line 81
-    .line 82
-    .line 83
-    .line 84
-    .line 85
-    .line 86
-    .line 87
-    .line 88
-    .line 89
-    .line 90
-    .line 91
-    .line 92
-    .line 93
-.end method
-
 .method public r()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Ld9/t;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->m:Le9/t;
 
-    invoke-interface {v0}, Ld9/t;->a()V
+    invoke-interface {v0}, Le9/t;->a()V
 
     return-void
 .end method
 
-.method public s(Lj8/h;)V
+.method public s(Lk8/h;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lj8/h<",
+            "Lk8/h<",
             "Lcom/google/android/exoplayer2/source/smoothstreaming/b;",
             ">;)V"
         }
     .end annotation
 
-    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Lh8/r$a;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Li8/r$a;
 
-    invoke-interface {p1, p0}, Lh8/p0$a;->j(Lh8/p0;)V
+    invoke-interface {p1, p0}, Li8/p0$a;->i(Li8/p0;)V
 
     return-void
 .end method
@@ -1706,7 +1706,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 2
     .line 3
@@ -1725,7 +1725,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v3, p1, p2, p3}, Lj8/h;->u(JZ)V
+    invoke-virtual {v3, p1, p2, p3}, Lk8/h;->u(JZ)V
 
     .line 10
     .line 11
@@ -1823,7 +1823,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 2
     .line 3
@@ -1842,7 +1842,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v3}, Lj8/h;->P()V
+    invoke-virtual {v3}, Lk8/h;->P()V
 
     .line 10
     .line 11
@@ -1858,7 +1858,7 @@
     const/4 v0, 0x0
 
     .line 16
-    iput-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Lh8/r$a;
+    iput-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Li8/r$a;
 
     .line 17
     .line 18
@@ -1891,15 +1891,15 @@
     .line 44
 .end method
 
-.method public w(Lp8/a;)V
+.method public w(Lq8/a;)V
     .locals 4
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lp8/a;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->v:Lq8/a;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lj8/h;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->w:[Lk8/h;
 
     .line 4
     .line 5
@@ -1918,7 +1918,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v3}, Lj8/h;->E()Lj8/i;
+    invoke-virtual {v3}, Lk8/h;->E()Lk8/i;
 
     .line 12
     .line 13
@@ -1930,7 +1930,7 @@
 
     .line 16
     .line 17
-    invoke-interface {v3, p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/b;->j(Lp8/a;)V
+    invoke-interface {v3, p1}, Lcom/google/android/exoplayer2/source/smoothstreaming/b;->g(Lq8/a;)V
 
     .line 18
     .line 19
@@ -1943,11 +1943,11 @@
 
     .line 23
     :cond_0
-    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Lh8/r$a;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/source/smoothstreaming/c;->u:Li8/r$a;
 
     .line 24
     .line 25
-    invoke-interface {p1, p0}, Lh8/p0$a;->j(Lh8/p0;)V
+    invoke-interface {p1, p0}, Li8/p0$a;->i(Li8/p0;)V
 
     .line 26
     .line 27

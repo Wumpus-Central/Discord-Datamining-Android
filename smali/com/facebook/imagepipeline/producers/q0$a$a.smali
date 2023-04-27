@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/facebook/imagepipeline/producers/q0$a;-><init>(Lcom/facebook/imagepipeline/producers/q0;Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;ZLa6/d;)V
+    value = Lcom/facebook/imagepipeline/producers/q0$a;-><init>(Lcom/facebook/imagepipeline/producers/q0;Lcom/facebook/imagepipeline/producers/Consumer;Lcom/facebook/imagepipeline/producers/ProducerContext;ZLb6/d;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public a(Lu5/e;I)V
+.method public a(Lv5/e;I)V
     .locals 4
 
     .line 1
@@ -46,7 +46,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->q(Lcom/facebook/imagepipeline/producers/q0$a;)La6/d;
+    invoke-static {v0}, Lcom/facebook/imagepipeline/producers/q0$a;->q(Lcom/facebook/imagepipeline/producers/q0$a;)Lb6/d;
 
     .line 4
     .line 5
@@ -54,7 +54,7 @@
     move-result-object v1
 
     .line 7
-    invoke-virtual {p1}, Lu5/e;->t()Li5/c;
+    invoke-virtual {p1}, Lv5/e;->t()Lj5/c;
 
     .line 8
     .line 9
@@ -74,7 +74,7 @@
     move-result v3
 
     .line 17
-    invoke-interface {v1, v2, v3}, La6/d;->createImageTranscoder(Li5/c;Z)La6/c;
+    invoke-interface {v1, v2, v3}, Lb6/d;->createImageTranscoder(Lj5/c;Z)Lb6/c;
 
     .line 18
     .line 19
@@ -82,7 +82,7 @@
     move-result-object v1
 
     .line 21
-    invoke-static {v1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -90,11 +90,11 @@
     move-result-object v1
 
     .line 25
-    check-cast v1, La6/c;
+    check-cast v1, Lb6/c;
 
     .line 26
     .line 27
-    invoke-static {v0, p1, p2, v1}, Lcom/facebook/imagepipeline/producers/q0$a;->r(Lcom/facebook/imagepipeline/producers/q0$a;Lu5/e;ILa6/c;)V
+    invoke-static {v0, p1, p2, v1}, Lcom/facebook/imagepipeline/producers/q0$a;->r(Lcom/facebook/imagepipeline/producers/q0$a;Lv5/e;ILb6/c;)V
 
     .line 28
     .line 29

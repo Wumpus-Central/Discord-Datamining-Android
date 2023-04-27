@@ -236,7 +236,7 @@
 
 
 # virtual methods
-.method public a(Lcd/i;)Lcom/google/zxing/Result;
+.method public a(Ldd/i;)Lcom/google/zxing/Result;
     .locals 13
 
     .line 1
@@ -369,7 +369,7 @@
 
     .line 59
     :cond_2
-    new-instance v1, Lcd/k;
+    new-instance v1, Ldd/k;
 
     .line 60
     .line 61
@@ -396,12 +396,12 @@
     move-object v4, v1
 
     .line 72
-    invoke-direct/range {v4 .. v12}, Lcd/k;-><init>([BIIIIIIZ)V
+    invoke-direct/range {v4 .. v12}, Ldd/k;-><init>([BIIIIIIZ)V
 
     .line 73
     .line 74
     .line 75
-    invoke-static {p1, v1}, Lcom/budiyev/android/codescanner/n;->h(Lcd/i;Lcd/h;)Lcom/google/zxing/Result;
+    invoke-static {p1, v1}, Lcom/budiyev/android/codescanner/n;->h(Ldd/i;Ldd/h;)Lcom/google/zxing/Result;
 
     .line 76
     .line 77
@@ -525,5 +525,4 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcb/h;
+.implements Ldb/h;
 
 
 # instance fields

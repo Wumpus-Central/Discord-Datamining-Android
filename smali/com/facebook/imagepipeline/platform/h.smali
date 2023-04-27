@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Lx5/y;Z)Lcom/facebook/imagepipeline/platform/g;
+.method public static a(Ly5/y;Z)Lcom/facebook/imagepipeline/platform/g;
     .locals 2
 
     .line 1
@@ -20,7 +20,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Lx5/y;->e()I
+    invoke-virtual {p0}, Ly5/y;->e()I
 
     .line 8
     .line 9
@@ -32,7 +32,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {p0}, Lx5/y;->b()Lx5/h;
+    invoke-virtual {p0}, Ly5/y;->b()Ly5/h;
 
     .line 14
     .line 15
@@ -49,7 +49,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-direct {v0, p0, p1, v1}, Lcom/facebook/imagepipeline/platform/f;-><init>(Lx5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
+    invoke-direct {v0, p0, p1, v1}, Lcom/facebook/imagepipeline/platform/f;-><init>(Ly5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
 
     .line 23
     .line 24
@@ -58,7 +58,7 @@
 
     .line 26
     :cond_0
-    invoke-virtual {p0}, Lx5/y;->e()I
+    invoke-virtual {p0}, Ly5/y;->e()I
 
     .line 27
     .line 28
@@ -70,7 +70,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {p0}, Lx5/y;->b()Lx5/h;
+    invoke-virtual {p0}, Ly5/y;->b()Ly5/h;
 
     .line 33
     .line 34
@@ -87,7 +87,7 @@
     .line 39
     .line 40
     .line 41
-    invoke-direct {v0, p0, p1, v1}, Lcom/facebook/imagepipeline/platform/a;-><init>(Lx5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
+    invoke-direct {v0, p0, p1, v1}, Lcom/facebook/imagepipeline/platform/a;-><init>(Ly5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
 
     .line 42
     .line 43

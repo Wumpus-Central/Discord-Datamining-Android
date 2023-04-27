@@ -170,7 +170,7 @@
 
 
 # virtual methods
-.method protected G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lob/a;
+.method protected G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lpb/a;
     .locals 5
 
     .line 1
@@ -222,7 +222,7 @@
 
     .line 23
     .line 24
-    check-cast v3, Lob/a;
+    check-cast v3, Lpb/a;
 
     .line 25
     .line 26
@@ -402,11 +402,11 @@
     .locals 1
 
     .line 1
-    check-cast p3, Lob/a;
+    check-cast p3, Lpb/a;
 
     .line 2
     .line 3
-    invoke-interface {p3}, Lob/a;->a()Z
+    invoke-interface {p3}, Lpb/a;->a()Z
 
     .line 4
     .line 5
@@ -426,7 +426,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p3}, Lob/a;->a()Z
+    invoke-interface {p3}, Lpb/a;->a()Z
 
     .line 14
     .line 15
@@ -463,7 +463,7 @@
 
     .line 27
     .line 28
-    invoke-interface {p3}, Lob/a;->a()Z
+    invoke-interface {p3}, Lpb/a;->a()Z
 
     .line 29
     .line 30
@@ -941,7 +941,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableBehavior;->G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lob/a;
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/transformation/ExpandableBehavior;->G(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)Lpb/a;
 
     .line 8
     .line 9
@@ -953,7 +953,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1}, Lob/a;->a()Z
+    invoke-interface {p1}, Lpb/a;->a()Z
 
     .line 14
     .line 15
@@ -973,7 +973,7 @@
 
     .line 22
     .line 23
-    invoke-interface {p1}, Lob/a;->a()Z
+    invoke-interface {p1}, Lpb/a;->a()Z
 
     .line 24
     .line 25
@@ -1012,7 +1012,7 @@
 
     .line 39
     .line 40
-    invoke-direct {v1, p0, p2, p3, p1}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILob/a;)V
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/google/android/material/transformation/ExpandableBehavior$a;-><init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILpb/a;)V
 
     .line 41
     .line 42

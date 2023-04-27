@@ -12,18 +12,18 @@
         "Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;",
         ">;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private final f:Lo5/f;
+.field private final f:Lp5/f;
 
 
 # direct methods
-.method public constructor <init>(Lo5/f;Lcom/facebook/imagepipeline/producers/l0;)V
+.method public constructor <init>(Lp5/f;Lcom/facebook/imagepipeline/producers/l0;)V
     .locals 2
 
     .line 1
@@ -40,7 +40,7 @@
     .line 6
     .line 7
     .line 8
-    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/g;->f:Lo5/f;
+    iput-object p1, p0, Lcom/facebook/imagepipeline/producers/g;->f:Lp5/f;
 
     .line 9
     .line 10
@@ -160,10 +160,10 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -190,11 +190,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/g;->f:Lo5/f;
+    iget-object v0, p0, Lcom/facebook/imagepipeline/producers/g;->f:Lp5/f;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->k()Lcom/facebook/imagepipeline/request/ImageRequest;
+    invoke-interface {p1}, Lcom/facebook/imagepipeline/producers/ProducerContext;->l()Lcom/facebook/imagepipeline/request/ImageRequest;
 
     .line 4
     .line 5
@@ -210,7 +210,7 @@
     move-result-object v2
 
     .line 11
-    invoke-interface {v0, v1, v2}, Lo5/f;->a(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
+    invoke-interface {v0, v1, v2}, Lp5/f;->a(Lcom/facebook/imagepipeline/request/ImageRequest;Ljava/lang/Object;)Lcom/facebook/cache/common/CacheKey;
 
     .line 12
     .line 13

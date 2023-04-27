@@ -94,7 +94,7 @@
     const/4 v0, 0x1
 
     .line 3
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->S(I)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->R(I)V
 
     goto :goto_0
 
@@ -102,7 +102,7 @@
     const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->S(I)V
+    invoke-virtual {p1, v0}, Lcom/google/android/exoplayer2/SimpleExoPlayer;->R(I)V
 
     :goto_0
     return-void

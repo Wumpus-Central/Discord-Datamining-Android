@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrc/a$a;
+.implements Lsc/a$a;
 
 
 # instance fields

@@ -32,12 +32,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Leb/k;)V
+.method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Lfb/k;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Leb/k<",
+            "Lfb/k<",
             "TT;>;)V"
         }
     .end annotation

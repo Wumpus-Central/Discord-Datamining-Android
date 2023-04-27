@@ -42,7 +42,7 @@
 
     const-string v0, "Notification is not supported"
 
-    invoke-static {p1, v0}, Lw3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lx3/a;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

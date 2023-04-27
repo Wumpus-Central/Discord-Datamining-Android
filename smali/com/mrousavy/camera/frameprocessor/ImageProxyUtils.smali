@@ -7,7 +7,7 @@
 .annotation build Landroidx/annotation/Keep;
 .end annotation
 
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -25,10 +25,10 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
-    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->f0()[Landroidx/camera/core/ImageProxy$a;
+    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->d0()[Landroidx/camera/core/ImageProxy$a;
 
     move-result-object p0
 
@@ -48,10 +48,10 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
-    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->f0()[Landroidx/camera/core/ImageProxy$a;
+    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->d0()[Landroidx/camera/core/ImageProxy$a;
 
     move-result-object p0
 
@@ -71,7 +71,7 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 
     .line 1
@@ -79,7 +79,7 @@
 
     .line 2
     :try_start_0
-    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->u0()Landroid/media/Image;
+    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->r0()Landroid/media/Image;
 
     .line 3
     .line 4
@@ -95,7 +95,7 @@
 
     .line 9
     :cond_0
-    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->u0()Landroid/media/Image;
+    invoke-interface {p0}, Landroidx/camera/core/ImageProxy;->r0()Landroid/media/Image;
 
     .line 10
     .line 11

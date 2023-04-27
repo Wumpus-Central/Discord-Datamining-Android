@@ -90,7 +90,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lkotlin/ranges/a;->b()I
+    invoke-virtual {p1}, Lkotlin/ranges/a;->a()I
 
     .line 13
     .line 14
@@ -102,7 +102,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lkotlin/ranges/a;->e()I
+    invoke-virtual {p1}, Lkotlin/ranges/a;->b()I
 
     .line 19
     .line 20
@@ -114,7 +114,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Lkotlin/ranges/a;->e()I
+    invoke-virtual {p1}, Lkotlin/ranges/a;->b()I
 
     .line 25
     .line 26
@@ -122,7 +122,7 @@
     move-result v0
 
     .line 28
-    invoke-virtual {p1}, Lkotlin/ranges/a;->b()I
+    invoke-virtual {p1}, Lkotlin/ranges/a;->a()I
 
     .line 29
     .line 30

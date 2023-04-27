@@ -17,10 +17,10 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -40,7 +40,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;II)V"
         }
     .end annotation
@@ -236,7 +236,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;)V"
         }
     .end annotation
@@ -270,7 +270,7 @@
     move-result-object p1
 
     .line 14
-    check-cast p1, Lu5/c;
+    check-cast p1, Lv5/c;
 
     .line 15
     .line 16
@@ -278,7 +278,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lu5/c;->isClosed()Z
+    invoke-virtual {p1}, Lv5/c;->isClosed()Z
 
     .line 19
     .line 20
@@ -294,7 +294,7 @@
 
     .line 25
     :cond_1
-    instance-of v0, p1, Lu5/d;
+    instance-of v0, p1, Lv5/d;
 
     .line 26
     .line 27
@@ -302,11 +302,11 @@
 
     .line 28
     .line 29
-    check-cast p1, Lu5/d;
+    check-cast p1, Lv5/d;
 
     .line 30
     .line 31
-    invoke-virtual {p1}, Lu5/d;->n()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lv5/d;->n()Landroid/graphics/Bitmap;
 
     .line 32
     .line 33
@@ -574,7 +574,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation

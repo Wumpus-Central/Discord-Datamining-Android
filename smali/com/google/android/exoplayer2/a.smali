@@ -6,13 +6,13 @@
 # instance fields
 .field private final b:I
 
-.field private final c:Lh8/q0;
+.field private final c:Li8/q0;
 
 .field private final d:Z
 
 
 # direct methods
-.method public constructor <init>(ZLh8/q0;)V
+.method public constructor <init>(ZLi8/q0;)V
     .locals 0
 
     .line 1
@@ -25,11 +25,11 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Li8/q0;
 
     .line 7
     .line 8
-    invoke-interface {p2}, Lh8/q0;->getLength()I
+    invoke-interface {p2}, Li8/q0;->getLength()I
 
     .line 9
     .line 10
@@ -131,11 +131,11 @@
 
     .line 2
     .line 3
-    iget-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
+    iget-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Li8/q0;
 
     .line 4
     .line 5
-    invoke-interface {p2, p1}, Lh8/q0;->c(I)I
+    invoke-interface {p2, p1}, Li8/q0;->c(I)I
 
     .line 6
     .line 7
@@ -252,9 +252,9 @@
 
     if-eqz p2, :cond_0
 
-    iget-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
+    iget-object p2, p0, Lcom/google/android/exoplayer2/a;->c:Li8/q0;
 
-    invoke-interface {p2, p1}, Lh8/q0;->b(I)I
+    invoke-interface {p2, p1}, Li8/q0;->b(I)I
 
     move-result p1
 
@@ -350,11 +350,11 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/a;->c:Li8/q0;
 
     .line 16
     .line 17
-    invoke-interface {v0}, Lh8/q0;->f()I
+    invoke-interface {v0}, Li8/q0;->f()I
 
     .line 18
     .line 19
@@ -752,11 +752,11 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lcom/google/android/exoplayer2/a;->c:Lh8/q0;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/a;->c:Li8/q0;
 
     .line 15
     .line 16
-    invoke-interface {v0}, Lh8/q0;->d()I
+    invoke-interface {v0}, Li8/q0;->d()I
 
     .line 17
     .line 18
@@ -1386,7 +1386,7 @@
 
     .line 33
     .line 34
-    invoke-static {p3}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
     .line 36

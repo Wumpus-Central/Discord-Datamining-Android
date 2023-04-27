@@ -138,14 +138,14 @@
     const-wide/16 v6, 0x0
 
     .line 11
-    invoke-static {v6, v7, v5}, Lg6/b;->a(JLjava/lang/String;)Lg6/b$b;
+    invoke-static {v6, v7, v5}, Lh6/b;->a(JLjava/lang/String;)Lh6/b$b;
 
     move-result-object v5
 
     const-string v8, "ViewManager"
 
     .line 12
-    invoke-virtual {v5, v8, v4}, Lg6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lg6/b$b;
+    invoke-virtual {v5, v8, v4}, Lh6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lh6/b$b;
 
     move-result-object v5
 
@@ -154,12 +154,12 @@
     .line 13
     sget-object v9, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-virtual {v5, v8, v9}, Lg6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lg6/b$b;
+    invoke-virtual {v5, v8, v9}, Lh6/b$b;->b(Ljava/lang/String;Ljava/lang/Object;)Lh6/b$b;
 
     move-result-object v5
 
     .line 14
-    invoke-virtual {v5}, Lg6/b$b;->c()V
+    invoke-virtual {v5}, Lh6/b$b;->c()V
 
     const/4 v5, 0x0
 
@@ -183,14 +183,14 @@
 
     .line 18
     :cond_2
-    invoke-static {v6, v7}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v6, v7}, Lh6/b;->b(J)Lh6/b$b;
 
     goto :goto_0
 
     :catchall_0
     move-exception p0
 
-    invoke-static {v6, v7}, Lg6/b;->b(J)Lg6/b$b;
+    invoke-static {v6, v7}, Lh6/b;->b(J)Lh6/b$b;
 
     .line 19
     throw p0

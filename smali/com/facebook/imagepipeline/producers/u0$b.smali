@@ -43,7 +43,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lt3/g;->a()V
+    invoke-virtual {v0}, Lu3/g;->a()V
 
     .line 4
     .line 5

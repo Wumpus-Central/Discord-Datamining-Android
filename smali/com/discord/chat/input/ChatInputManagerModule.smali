@@ -377,12 +377,12 @@
     move-result-object p1
 
     .line 7
-    invoke-interface {v0}, Lwi/e;->a()Lbj/c;
+    invoke-interface {v0}, Lyi/e;->a()Ldj/c;
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, Lzi/f;
+    new-instance v1, Lbj/f;
 
     .line 11
     .line 12
@@ -390,12 +390,12 @@
 
     .line 13
     .line 14
-    invoke-direct {v1, v2}, Lzi/f;-><init>(Lkotlinx/serialization/KSerializer;)V
+    invoke-direct {v1, v2}, Lbj/f;-><init>(Lkotlinx/serialization/KSerializer;)V
 
     .line 15
     .line 16
     .line 17
-    invoke-interface {v0, v1, p1}, Lwi/m;->b(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-interface {v0, v1, p1}, Lyi/m;->b(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 18
     .line 19

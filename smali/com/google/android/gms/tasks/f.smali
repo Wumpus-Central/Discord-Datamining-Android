@@ -24,10 +24,10 @@
 # instance fields
 .field private final a:Ljava/util/concurrent/Executor;
 
-.field private final b:Lcb/a;
+.field private final b:Ldb/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcb/a<",
+            "Ldb/a<",
             "TTResult;TTContinuationResult;>;"
         }
     .end annotation
@@ -44,13 +44,13 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lcb/a;Lcom/google/android/gms/tasks/w;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Ldb/a;Lcom/google/android/gms/tasks/w;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/concurrent/Executor;",
-            "Lcb/a<",
+            "Ldb/a<",
             "TTResult;TTContinuationResult;>;",
             "Lcom/google/android/gms/tasks/w<",
             "TTContinuationResult;>;)V"
@@ -61,17 +61,17 @@
 
     iput-object p1, p0, Lcom/google/android/gms/tasks/f;->a:Ljava/util/concurrent/Executor;
 
-    iput-object p2, p0, Lcom/google/android/gms/tasks/f;->b:Lcb/a;
+    iput-object p2, p0, Lcom/google/android/gms/tasks/f;->b:Ldb/a;
 
     iput-object p3, p0, Lcom/google/android/gms/tasks/f;->c:Lcom/google/android/gms/tasks/w;
 
     return-void
 .end method
 
-.method static bridge synthetic a(Lcom/google/android/gms/tasks/f;)Lcb/a;
+.method static bridge synthetic a(Lcom/google/android/gms/tasks/f;)Ldb/a;
     .locals 0
 
-    iget-object p0, p0, Lcom/google/android/gms/tasks/f;->b:Lcb/a;
+    iget-object p0, p0, Lcom/google/android/gms/tasks/f;->b:Ldb/a;
 
     return-object p0
 .end method

@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field private final k:Lw2/a;
+.field private final k:Lx2/a;
 
 .field final synthetic l:Lcom/android/installreferrer/api/a;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/installreferrer/api/a;Lw2/a;)V
+.method private constructor <init>(Lcom/android/installreferrer/api/a;Lx2/a;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/installreferrer/api/a$b;->l:Lcom/android/installreferrer/api/a;
@@ -34,7 +34,7 @@
     if-eqz p2, :cond_0
 
     .line 1
-    iput-object p2, p0, Lcom/android/installreferrer/api/a$b;->k:Lw2/a;
+    iput-object p2, p0, Lcom/android/installreferrer/api/a$b;->k:Lx2/a;
 
     return-void
 
@@ -50,10 +50,10 @@
     throw p1
 .end method
 
-.method synthetic constructor <init>(Lcom/android/installreferrer/api/a;Lw2/a;Lcom/android/installreferrer/api/a$a;)V
+.method synthetic constructor <init>(Lcom/android/installreferrer/api/a;Lx2/a;Lcom/android/installreferrer/api/a$a;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/installreferrer/api/a$b;-><init>(Lcom/android/installreferrer/api/a;Lw2/a;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/installreferrer/api/a$b;-><init>(Lcom/android/installreferrer/api/a;Lx2/a;)V
 
     return-void
 .end method
@@ -72,7 +72,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, v0}, Lx2/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ly2/a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -81,7 +81,7 @@
 
     .line 9
     .line 10
-    invoke-static {p2}, Li9/a$a;->b(Landroid/os/IBinder;)Li9/a;
+    invoke-static {p2}, Lj9/a$a;->b(Landroid/os/IBinder;)Lj9/a;
 
     .line 11
     .line 12
@@ -89,7 +89,7 @@
     move-result-object p2
 
     .line 14
-    invoke-static {p1, p2}, Lcom/android/installreferrer/api/a;->e(Lcom/android/installreferrer/api/a;Li9/a;)Li9/a;
+    invoke-static {p1, p2}, Lcom/android/installreferrer/api/a;->e(Lcom/android/installreferrer/api/a;Lj9/a;)Lj9/a;
 
     .line 15
     .line 16
@@ -106,14 +106,14 @@
     .line 21
     .line 22
     .line 23
-    iget-object p1, p0, Lcom/android/installreferrer/api/a$b;->k:Lw2/a;
+    iget-object p1, p0, Lcom/android/installreferrer/api/a$b;->k:Lx2/a;
 
     .line 24
     .line 25
     const/4 p2, 0x0
 
     .line 26
-    invoke-interface {p1, p2}, Lw2/a;->onInstallReferrerSetupFinished(I)V
+    invoke-interface {p1, p2}, Lx2/a;->onInstallReferrerSetupFinished(I)V
 
     .line 27
     .line 28
@@ -187,7 +187,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, v0}, Lx2/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ly2/a;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -199,7 +199,7 @@
     const/4 v0, 0x0
 
     .line 11
-    invoke-static {p1, v0}, Lcom/android/installreferrer/api/a;->e(Lcom/android/installreferrer/api/a;Li9/a;)Li9/a;
+    invoke-static {p1, v0}, Lcom/android/installreferrer/api/a;->e(Lcom/android/installreferrer/api/a;Lj9/a;)Lj9/a;
 
     .line 12
     .line 13
@@ -216,11 +216,11 @@
     .line 18
     .line 19
     .line 20
-    iget-object p1, p0, Lcom/android/installreferrer/api/a$b;->k:Lw2/a;
+    iget-object p1, p0, Lcom/android/installreferrer/api/a$b;->k:Lx2/a;
 
     .line 21
     .line 22
-    invoke-interface {p1}, Lw2/a;->onInstallReferrerServiceDisconnected()V
+    invoke-interface {p1}, Lx2/a;->onInstallReferrerServiceDisconnected()V
 
     .line 23
     .line 24

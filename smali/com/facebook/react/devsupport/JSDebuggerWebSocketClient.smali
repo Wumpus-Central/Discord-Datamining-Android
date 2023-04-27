@@ -1,5 +1,5 @@
 .class public Lcom/facebook/react/devsupport/JSDebuggerWebSocketClient;
-.super Loj/t;
+.super Lqj/t;
 .source "SourceFile"
 
 
@@ -41,7 +41,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Loj/t;-><init>()V
+    invoke-direct {p0}, Lqj/t;-><init>()V
 
     .line 2
     .line 3
@@ -140,7 +140,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, p1, p2}, Lw3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1, p2}, Lx3/a;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 21
     .line 22
@@ -815,7 +815,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p2, p1, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Loj/t;)Lokhttp3/WebSocket;
+    invoke-virtual {p2, p1, p0}, Lokhttp3/OkHttpClient;->C(Lokhttp3/Request;Lqj/t;)Lokhttp3/WebSocket;
 
     .line 54
     .line 55
@@ -2628,7 +2628,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, Lc6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ld6/a;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7

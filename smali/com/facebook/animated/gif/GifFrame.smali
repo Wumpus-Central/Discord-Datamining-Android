@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lj5/d;
+.implements Lk5/d;
 
 
 # instance fields
 .field private mNativeContext:J
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end field
 
@@ -16,7 +16,7 @@
 # direct methods
 .method constructor <init>(J)V
     .locals 0
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 
     .line 1
@@ -73,57 +73,57 @@
 .end method
 
 .method private native nativeDispose()V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeFinalize()V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetDisposalMode()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetDurationMs()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetHeight()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetTransparentPixelColor()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetWidth()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetXOffset()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeGetYOffset()I
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeHasTransparency()Z
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private native nativeRenderFrame(IILandroid/graphics/Bitmap;)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 

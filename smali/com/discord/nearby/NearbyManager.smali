@@ -1,5 +1,5 @@
 .class public final Lcom/discord/nearby/NearbyManager;
-.super Lxa/b;
+.super Lya/b;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
     }
     d2 = {
         "Lcom/discord/nearby/NearbyManager;",
-        "Lxa/b;",
+        "Lya/b;",
         "",
         "message",
         "",
@@ -168,7 +168,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-direct {p0}, Lxa/b;-><init>()V
+    invoke-direct {p0}, Lya/b;-><init>()V
 
     .line 17
     .line 18
@@ -194,11 +194,11 @@
     .line 28
     .line 29
     .line 30
-    sget-object p2, Lxa/i;->s:Lxa/i;
+    sget-object p2, Lya/i;->s:Lya/i;
 
     .line 31
     .line 32
-    invoke-virtual {p1, p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b(Lxa/i;)Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;
+    invoke-virtual {p1, p2}, Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;->b(Lya/i;)Lcom/google/android/gms/nearby/messages/SubscribeOptions$a;
 
     .line 33
     .line 34
@@ -673,7 +673,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p1}, Lua/a;->a(Landroid/content/Context;)Lxa/d;
+    invoke-static {p1}, Lva/a;->a(Landroid/content/Context;)Lya/d;
 
     .line 7
     .line 8
@@ -685,7 +685,7 @@
 
     .line 11
     .line 12
-    invoke-interface {p1, v0}, Lxa/d;->g(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lya/d;->g(Lya/h;)Lcom/google/android/gms/tasks/Task;
 
     .line 13
     .line 14
@@ -711,12 +711,12 @@
 
     .line 25
     :cond_0
-    invoke-interface {p1, v0}, Lxa/d;->f(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lya/d;->d(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
 
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1, p0}, Lxa/d;->d(Lxa/b;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, p0}, Lya/d;->e(Lya/b;)Lcom/google/android/gms/tasks/Task;
 
     .line 29
     .line 30
@@ -853,7 +853,7 @@
 
     .line 16
     :cond_0
-    invoke-static {p1}, Lua/a;->a(Landroid/content/Context;)Lxa/d;
+    invoke-static {p1}, Lva/a;->a(Landroid/content/Context;)Lya/d;
 
     .line 17
     .line 18
@@ -865,12 +865,12 @@
 
     .line 21
     .line 22
-    invoke-interface {p1, v1}, Lxa/d;->c(Lxa/h;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v1}, Lya/d;->a(Lya/h;)Lcom/google/android/gms/tasks/Task;
 
     .line 23
     .line 24
     .line 25
-    invoke-interface {p1, v0}, Lxa/d;->b(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, v0}, Lya/d;->c(Lcom/google/android/gms/nearby/messages/Message;)Lcom/google/android/gms/tasks/Task;
 
     .line 26
     .line 27
@@ -879,7 +879,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p1, p0, v0}, Lxa/d;->a(Lxa/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
+    invoke-interface {p1, p0, v0}, Lya/d;->b(Lya/b;Lcom/google/android/gms/nearby/messages/SubscribeOptions;)Lcom/google/android/gms/tasks/Task;
 
     .line 31
     .line 32
@@ -993,7 +993,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1}, Lxa/b;->onFound(Lcom/google/android/gms/nearby/messages/Message;)V
+    invoke-super {p0, p1}, Lya/b;->onFound(Lcom/google/android/gms/nearby/messages/Message;)V
 
     .line 7
     .line 8
@@ -1002,7 +1002,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
+    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->p()[B
 
     .line 12
     .line 13
@@ -1023,7 +1023,7 @@
 
     .line 21
     .line 22
-    sget-object v2, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v2, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 23
     .line 24
@@ -1149,7 +1149,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1}, Lxa/b;->onLost(Lcom/google/android/gms/nearby/messages/Message;)V
+    invoke-super {p0, p1}, Lya/b;->onLost(Lcom/google/android/gms/nearby/messages/Message;)V
 
     .line 7
     .line 8
@@ -1158,7 +1158,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->x()[B
+    invoke-virtual {p1}, Lcom/google/android/gms/nearby/messages/Message;->p()[B
 
     .line 12
     .line 13
@@ -1179,7 +1179,7 @@
 
     .line 21
     .line 22
-    sget-object v2, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v2, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 23
     .line 24
@@ -1309,7 +1309,7 @@
 
     .line 7
     .line 8
-    sget-object v1, Lpi/d;->b:Ljava/nio/charset/Charset;
+    sget-object v1, Lri/d;->b:Ljava/nio/charset/Charset;
 
     .line 9
     .line 10

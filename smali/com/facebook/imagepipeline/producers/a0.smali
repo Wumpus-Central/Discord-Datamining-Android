@@ -72,11 +72,11 @@
     .line 44
 .end method
 
-.method public constructor <init>(Ljava/util/concurrent/Executor;Ly3/h;Landroid/content/ContentResolver;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lz3/h;Landroid/content/ContentResolver;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Ly3/h;)V
+    invoke-direct {p0, p1, p2}, Lcom/facebook/imagepipeline/producers/c0;-><init>(Ljava/util/concurrent/Executor;Lz3/h;)V
 
     .line 2
     .line 3
@@ -258,7 +258,7 @@
     .line 176
 .end method
 
-.method private g(Landroid/net/Uri;)Lu5/e;
+.method private g(Landroid/net/Uri;)Lv5/e;
     .locals 4
 
     .line 1
@@ -307,7 +307,7 @@
     long-to-int p1, v2
 
     .line 23
-    invoke-virtual {p0, v1, p1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, v1, p1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 24
     .line 25
@@ -346,7 +346,7 @@
 
 
 # virtual methods
-.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lu5/e;
+.method protected d(Lcom/facebook/imagepipeline/request/ImageRequest;)Lv5/e;
     .locals 4
 
     .line 1
@@ -358,7 +358,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Ld4/f;->i(Landroid/net/Uri;)Z
+    invoke-static {p1}, Le4/f;->i(Landroid/net/Uri;)Z
 
     .line 6
     .line 7
@@ -532,7 +532,7 @@
 
     .line 88
     :goto_0
-    invoke-virtual {p0, p1, v1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, p1, v1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 89
     .line 90
@@ -584,7 +584,7 @@
 
     .line 114
     :cond_3
-    invoke-static {p1}, Ld4/f;->h(Landroid/net/Uri;)Z
+    invoke-static {p1}, Le4/f;->h(Landroid/net/Uri;)Z
 
     .line 115
     .line 116
@@ -596,7 +596,7 @@
 
     .line 119
     .line 120
-    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/a0;->g(Landroid/net/Uri;)Lu5/e;
+    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/a0;->g(Landroid/net/Uri;)Lv5/e;
 
     .line 121
     .line 122
@@ -624,7 +624,7 @@
     move-result-object p1
 
     .line 133
-    invoke-virtual {p0, p1, v1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lu5/e;
+    invoke-virtual {p0, p1, v1}, Lcom/facebook/imagepipeline/producers/c0;->e(Ljava/io/InputStream;I)Lv5/e;
 
     .line 134
     .line 135

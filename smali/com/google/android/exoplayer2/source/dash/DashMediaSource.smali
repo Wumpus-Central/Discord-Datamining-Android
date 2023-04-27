@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/exoplayer2/source/dash/DashMediaSource;
-.super Lh8/a;
+.super Li8/a;
 .source "SourceFile"
 
 
@@ -39,13 +39,13 @@
 
 .field private final F:Lcom/google/android/exoplayer2/source/dash/e$b;
 
-.field private final G:Ld9/t;
+.field private final G:Le9/t;
 
 .field private H:Lcom/google/android/exoplayer2/upstream/DataSource;
 
 .field private I:Lcom/google/android/exoplayer2/upstream/h;
 
-.field private J:Ld9/x;
+.field private J:Le9/x;
 
 .field private K:Ljava/io/IOException;
 
@@ -57,7 +57,7 @@
 
 .field private O:Landroid/net/Uri;
 
-.field private P:Ll8/b;
+.field private P:Lm8/b;
 
 .field private Q:Z
 
@@ -81,22 +81,22 @@
 
 .field private final t:Lcom/google/android/exoplayer2/source/dash/a$a;
 
-.field private final u:Lh8/h;
+.field private final u:Li8/h;
 
-.field private final v:Lj7/x;
+.field private final v:Lk7/x;
 
 .field private final w:Lcom/google/android/exoplayer2/upstream/g;
 
 .field private final x:J
 
-.field private final y:Lh8/b0$a;
+.field private final y:Li8/b0$a;
 
 .field private final z:Lcom/google/android/exoplayer2/upstream/i$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/exoplayer2/upstream/i$a<",
             "+",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;"
         }
     .end annotation
@@ -112,7 +112,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Ld7/i;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Le7/i;->a(Ljava/lang/String;)V
 
     .line 4
     .line 5
@@ -158,28 +158,28 @@
     .line 44
 .end method
 
-.method private constructor <init>(Lcom/google/android/exoplayer2/MediaItem;Ll8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Lh8/h;Lj7/x;Lcom/google/android/exoplayer2/upstream/g;J)V
+.method private constructor <init>(Lcom/google/android/exoplayer2/MediaItem;Lm8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Li8/h;Lk7/x;Lcom/google/android/exoplayer2/upstream/g;J)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/android/exoplayer2/MediaItem;",
-            "Ll8/b;",
+            "Lm8/b;",
             "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;",
             "Lcom/google/android/exoplayer2/upstream/i$a<",
             "+",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;",
             "Lcom/google/android/exoplayer2/source/dash/a$a;",
-            "Lh8/h;",
-            "Lj7/x;",
+            "Li8/h;",
+            "Lk7/x;",
             "Lcom/google/android/exoplayer2/upstream/g;",
             "J)V"
         }
     .end annotation
 
     .line 2
-    invoke-direct {p0}, Lh8/a;-><init>()V
+    invoke-direct {p0}, Li8/a;-><init>()V
 
     .line 3
     iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->q:Lcom/google/android/exoplayer2/MediaItem;
@@ -192,7 +192,7 @@
     .line 5
     iget-object v0, p1, Lcom/google/android/exoplayer2/MediaItem;->b:Lcom/google/android/exoplayer2/MediaItem$g;
 
-    invoke-static {v0}, Lf9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lg9/a;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
     iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->O:Landroid/net/Uri;
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 8
     iput-object p3, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->s:Lcom/google/android/exoplayer2/upstream/DataSource$Factory;
@@ -222,7 +222,7 @@
     iput-object p5, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->t:Lcom/google/android/exoplayer2/source/dash/a$a;
 
     .line 11
-    iput-object p7, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lj7/x;
+    iput-object p7, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lk7/x;
 
     .line 12
     iput-object p8, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->w:Lcom/google/android/exoplayer2/upstream/g;
@@ -231,7 +231,7 @@
     iput-wide p9, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->x:J
 
     .line 14
-    iput-object p6, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->u:Lh8/h;
+    iput-object p6, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->u:Li8/h;
 
     const/4 p1, 0x1
 
@@ -251,11 +251,11 @@
     const/4 p4, 0x0
 
     .line 16
-    invoke-virtual {p0, p4}, Lh8/a;->v(Lh8/u$a;)Lh8/b0$a;
+    invoke-virtual {p0, p4}, Li8/a;->v(Li8/u$a;)Li8/b0$a;
 
     move-result-object p5
 
-    iput-object p5, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iput-object p5, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 17
     new-instance p5, Ljava/lang/Object;
@@ -289,11 +289,11 @@
     if-eqz p3, :cond_1
 
     .line 22
-    iget-boolean p2, p2, Ll8/b;->d:Z
+    iget-boolean p2, p2, Lm8/b;->d:Z
 
     xor-int/2addr p1, p2
 
-    invoke-static {p1}, Lf9/a;->f(Z)V
+    invoke-static {p1}, Lg9/a;->f(Z)V
 
     .line 23
     iput-object p4, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->A:Lcom/google/android/exoplayer2/source/dash/DashMediaSource$e;
@@ -305,11 +305,11 @@
     iput-object p4, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->E:Ljava/lang/Runnable;
 
     .line 26
-    new-instance p1, Ld9/t$a;
+    new-instance p1, Le9/t$a;
 
-    invoke-direct {p1}, Ld9/t$a;-><init>()V
+    invoke-direct {p1}, Le9/t$a;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Ld9/t;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Le9/t;
 
     goto :goto_1
 
@@ -326,19 +326,19 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$f;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
 
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Ld9/t;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Le9/t;
 
     .line 29
-    new-instance p1, Lk8/b;
+    new-instance p1, Ll8/b;
 
-    invoke-direct {p1, p0}, Lk8/b;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
+    invoke-direct {p1, p0}, Ll8/b;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
 
     iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->D:Ljava/lang/Runnable;
 
     .line 30
-    new-instance p1, Lk8/c;
+    new-instance p1, Ll8/c;
 
-    invoke-direct {p1, p0}, Lk8/c;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
+    invoke-direct {p1, p0}, Ll8/c;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
 
     iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->E:Ljava/lang/Runnable;
 
@@ -346,11 +346,11 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/android/exoplayer2/MediaItem;Ll8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Lh8/h;Lj7/x;Lcom/google/android/exoplayer2/upstream/g;JLcom/google/android/exoplayer2/source/dash/DashMediaSource$a;)V
+.method synthetic constructor <init>(Lcom/google/android/exoplayer2/MediaItem;Lm8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Li8/h;Lk7/x;Lcom/google/android/exoplayer2/upstream/g;JLcom/google/android/exoplayer2/source/dash/DashMediaSource$a;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p10}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;-><init>(Lcom/google/android/exoplayer2/MediaItem;Ll8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Lh8/h;Lj7/x;Lcom/google/android/exoplayer2/upstream/g;J)V
+    invoke-direct/range {p0 .. p10}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;-><init>(Lcom/google/android/exoplayer2/MediaItem;Lm8/b;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;Lcom/google/android/exoplayer2/upstream/i$a;Lcom/google/android/exoplayer2/source/dash/a$a;Li8/h;Lk7/x;Lcom/google/android/exoplayer2/upstream/g;J)V
 
     return-void
 .end method
@@ -403,7 +403,7 @@
     return-object p0
 .end method
 
-.method private static J(Ll8/f;JJ)J
+.method private static J(Lm8/f;JJ)J
     .locals 17
 
     .line 1
@@ -419,11 +419,11 @@
 
     .line 6
     .line 7
-    iget-wide v5, v0, Ll8/f;->b:J
+    iget-wide v5, v0, Lm8/f;->b:J
 
     .line 8
     .line 9
-    invoke-static {v5, v6}, Ld7/c;->c(J)J
+    invoke-static {v5, v6}, Le7/c;->c(J)J
 
     .line 10
     .line 11
@@ -431,7 +431,7 @@
     move-result-wide v5
 
     .line 13
-    invoke-static/range {p0 .. p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->N(Ll8/f;)Z
+    invoke-static/range {p0 .. p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->N(Lm8/f;)Z
 
     .line 14
     .line 15
@@ -453,7 +453,7 @@
 
     .line 24
     :goto_0
-    iget-object v12, v0, Ll8/f;->c:Ljava/util/List;
+    iget-object v12, v0, Lm8/f;->c:Ljava/util/List;
 
     .line 25
     .line 26
@@ -469,7 +469,7 @@
 
     .line 31
     .line 32
-    iget-object v12, v0, Ll8/f;->c:Ljava/util/List;
+    iget-object v12, v0, Lm8/f;->c:Ljava/util/List;
 
     .line 33
     .line 34
@@ -481,11 +481,11 @@
     move-result-object v12
 
     .line 38
-    check-cast v12, Ll8/a;
+    check-cast v12, Lm8/a;
 
     .line 39
     .line 40
-    iget-object v13, v12, Ll8/a;->c:Ljava/util/List;
+    iget-object v13, v12, Lm8/a;->c:Ljava/util/List;
 
     .line 41
     .line 42
@@ -493,7 +493,7 @@
 
     .line 43
     .line 44
-    iget v12, v12, Ll8/a;->b:I
+    iget v12, v12, Lm8/a;->b:I
 
     .line 45
     .line 46
@@ -534,11 +534,11 @@
     move-result-object v12
 
     .line 62
-    check-cast v12, Ll8/i;
+    check-cast v12, Lm8/i;
 
     .line 63
     .line 64
-    invoke-virtual {v12}, Ll8/i;->b()Lk8/e;
+    invoke-virtual {v12}, Lm8/i;->b()Ll8/e;
 
     .line 65
     .line 66
@@ -557,7 +557,7 @@
 
     .line 72
     :cond_3
-    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->l(JJ)I
+    invoke-interface {v12, v1, v2, v3, v4}, Ll8/e;->l(JJ)I
 
     .line 73
     .line 74
@@ -573,7 +573,7 @@
 
     .line 79
     :cond_4
-    invoke-interface {v12, v1, v2, v3, v4}, Lk8/e;->e(JJ)J
+    invoke-interface {v12, v1, v2, v3, v4}, Ll8/e;->e(JJ)J
 
     .line 80
     .line 81
@@ -598,7 +598,7 @@
     sub-long/2addr v14, v10
 
     .line 90
-    invoke-interface {v12, v14, v15}, Lk8/e;->c(J)J
+    invoke-interface {v12, v14, v15}, Ll8/e;->c(J)J
 
     .line 91
     .line 92
@@ -609,7 +609,7 @@
     add-long/2addr v10, v5
 
     .line 95
-    invoke-interface {v12, v14, v15, v1, v2}, Lk8/e;->d(JJ)J
+    invoke-interface {v12, v14, v15, v1, v2}, Ll8/e;->d(JJ)J
 
     .line 96
     .line 97
@@ -711,15 +711,15 @@
     .line 176
 .end method
 
-.method private static K(Ll8/f;JJ)J
+.method private static K(Lm8/f;JJ)J
     .locals 10
 
     .line 1
-    iget-wide v0, p0, Ll8/f;->b:J
+    iget-wide v0, p0, Lm8/f;->b:J
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Ld7/c;->c(J)J
+    invoke-static {v0, v1}, Le7/c;->c(J)J
 
     .line 4
     .line 5
@@ -727,7 +727,7 @@
     move-result-wide v0
 
     .line 7
-    invoke-static {p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->N(Ll8/f;)Z
+    invoke-static {p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->N(Lm8/f;)Z
 
     .line 8
     .line 9
@@ -745,7 +745,7 @@
 
     .line 14
     :goto_0
-    iget-object v7, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v7, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 15
     .line 16
@@ -761,7 +761,7 @@
 
     .line 21
     .line 22
-    iget-object v7, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v7, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 23
     .line 24
@@ -773,11 +773,11 @@
     move-result-object v7
 
     .line 28
-    check-cast v7, Ll8/a;
+    check-cast v7, Lm8/a;
 
     .line 29
     .line 30
-    iget-object v8, v7, Ll8/a;->c:Ljava/util/List;
+    iget-object v8, v7, Lm8/a;->c:Ljava/util/List;
 
     .line 31
     .line 32
@@ -785,7 +785,7 @@
 
     .line 33
     .line 34
-    iget v7, v7, Ll8/a;->b:I
+    iget v7, v7, Lm8/a;->b:I
 
     .line 35
     .line 36
@@ -821,11 +821,11 @@
     move-result-object v7
 
     .line 50
-    check-cast v7, Ll8/i;
+    check-cast v7, Lm8/i;
 
     .line 51
     .line 52
-    invoke-virtual {v7}, Ll8/i;->b()Lk8/e;
+    invoke-virtual {v7}, Lm8/i;->b()Ll8/e;
 
     .line 53
     .line 54
@@ -841,7 +841,7 @@
 
     .line 59
     :cond_2
-    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->l(JJ)I
+    invoke-interface {v7, p1, p2, p3, p4}, Ll8/e;->l(JJ)I
 
     .line 60
     .line 61
@@ -857,7 +857,7 @@
 
     .line 66
     :cond_3
-    invoke-interface {v7, p1, p2, p3, p4}, Lk8/e;->e(JJ)J
+    invoke-interface {v7, p1, p2, p3, p4}, Ll8/e;->e(JJ)J
 
     .line 67
     .line 68
@@ -865,7 +865,7 @@
     move-result-wide v8
 
     .line 70
-    invoke-interface {v7, v8, v9}, Lk8/e;->c(J)J
+    invoke-interface {v7, v8, v9}, Ll8/e;->c(J)J
 
     .line 71
     .line 72
@@ -991,7 +991,7 @@
     .line 176
 .end method
 
-.method private static L(Ll8/b;J)J
+.method private static L(Lm8/b;J)J
     .locals 20
 
     .line 1
@@ -999,7 +999,7 @@
 
     .line 2
     .line 3
-    invoke-virtual/range {p0 .. p0}, Ll8/b;->e()I
+    invoke-virtual/range {p0 .. p0}, Lm8/b;->e()I
 
     .line 4
     .line 5
@@ -1011,7 +1011,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, v1}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v0, v1}, Lm8/b;->d(I)Lm8/f;
 
     .line 10
     .line 11
@@ -1019,11 +1019,11 @@
     move-result-object v2
 
     .line 13
-    iget-wide v3, v2, Ll8/f;->b:J
+    iget-wide v3, v2, Lm8/f;->b:J
 
     .line 14
     .line 15
-    invoke-static {v3, v4}, Ld7/c;->c(J)J
+    invoke-static {v3, v4}, Le7/c;->c(J)J
 
     .line 16
     .line 17
@@ -1031,7 +1031,7 @@
     move-result-wide v3
 
     .line 19
-    invoke-virtual {v0, v1}, Ll8/b;->g(I)J
+    invoke-virtual {v0, v1}, Lm8/b;->g(I)J
 
     .line 20
     .line 21
@@ -1039,7 +1039,7 @@
     move-result-wide v5
 
     .line 23
-    invoke-static/range {p1 .. p2}, Ld7/c;->c(J)J
+    invoke-static/range {p1 .. p2}, Le7/c;->c(J)J
 
     .line 24
     .line 25
@@ -1047,11 +1047,11 @@
     move-result-wide v7
 
     .line 27
-    iget-wide v0, v0, Ll8/b;->a:J
+    iget-wide v0, v0, Lm8/b;->a:J
 
     .line 28
     .line 29
-    invoke-static {v0, v1}, Ld7/c;->c(J)J
+    invoke-static {v0, v1}, Le7/c;->c(J)J
 
     .line 30
     .line 31
@@ -1063,7 +1063,7 @@
 
     .line 34
     .line 35
-    invoke-static {v9, v10}, Ld7/c;->c(J)J
+    invoke-static {v9, v10}, Le7/c;->c(J)J
 
     .line 36
     .line 37
@@ -1078,7 +1078,7 @@
 
     .line 41
     :goto_0
-    iget-object v13, v2, Ll8/f;->c:Ljava/util/List;
+    iget-object v13, v2, Lm8/f;->c:Ljava/util/List;
 
     .line 42
     .line 43
@@ -1094,7 +1094,7 @@
 
     .line 48
     .line 49
-    iget-object v13, v2, Ll8/f;->c:Ljava/util/List;
+    iget-object v13, v2, Lm8/f;->c:Ljava/util/List;
 
     .line 50
     .line 51
@@ -1106,11 +1106,11 @@
     move-result-object v13
 
     .line 55
-    check-cast v13, Ll8/a;
+    check-cast v13, Lm8/a;
 
     .line 56
     .line 57
-    iget-object v13, v13, Ll8/a;->c:Ljava/util/List;
+    iget-object v13, v13, Lm8/a;->c:Ljava/util/List;
 
     .line 58
     .line 59
@@ -1138,11 +1138,11 @@
     move-result-object v13
 
     .line 70
-    check-cast v13, Ll8/i;
+    check-cast v13, Lm8/i;
 
     .line 71
     .line 72
-    invoke-virtual {v13}, Ll8/i;->b()Lk8/e;
+    invoke-virtual {v13}, Lm8/i;->b()Ll8/e;
 
     .line 73
     .line 74
@@ -1158,7 +1158,7 @@
 
     .line 79
     .line 80
-    invoke-interface {v13, v5, v6, v7, v8}, Lk8/e;->f(JJ)J
+    invoke-interface {v13, v5, v6, v7, v8}, Ll8/e;->f(JJ)J
 
     .line 81
     .line 82
@@ -1232,7 +1232,7 @@
 
     .line 113
     .line 114
-    invoke-static {v9, v10, v0, v1, v2}, Ldc/b;->a(JJLjava/math/RoundingMode;)J
+    invoke-static {v9, v10, v0, v1, v2}, Lec/b;->a(JJLjava/math/RoundingMode;)J
 
     .line 115
     .line 116
@@ -1977,7 +1977,7 @@
     return-wide v0
 .end method
 
-.method private static N(Ll8/f;)Z
+.method private static N(Lm8/f;)Z
     .locals 5
 
     .line 1
@@ -1988,7 +1988,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v2, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 4
     .line 5
@@ -2004,7 +2004,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v2, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 12
     .line 13
@@ -2016,11 +2016,11 @@
     move-result-object v2
 
     .line 17
-    check-cast v2, Ll8/a;
+    check-cast v2, Lm8/a;
 
     .line 18
     .line 19
-    iget v2, v2, Ll8/a;->b:I
+    iget v2, v2, Lm8/a;->b:I
 
     .line 20
     .line 21
@@ -2072,7 +2072,7 @@
     .line 46
 .end method
 
-.method private static O(Ll8/f;)Z
+.method private static O(Lm8/f;)Z
     .locals 3
 
     .line 1
@@ -2083,7 +2083,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v2, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 4
     .line 5
@@ -2099,7 +2099,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Ll8/f;->c:Ljava/util/List;
+    iget-object v2, p0, Lm8/f;->c:Ljava/util/List;
 
     .line 12
     .line 13
@@ -2111,11 +2111,11 @@
     move-result-object v2
 
     .line 17
-    check-cast v2, Ll8/a;
+    check-cast v2, Lm8/a;
 
     .line 18
     .line 19
-    iget-object v2, v2, Ll8/a;->c:Ljava/util/List;
+    iget-object v2, v2, Lm8/a;->c:Ljava/util/List;
 
     .line 20
     .line 21
@@ -2127,11 +2127,11 @@
     move-result-object v2
 
     .line 25
-    check-cast v2, Ll8/i;
+    check-cast v2, Lm8/i;
 
     .line 26
     .line 27
-    invoke-virtual {v2}, Ll8/i;->b()Lk8/e;
+    invoke-virtual {v2}, Lm8/i;->b()Ll8/e;
 
     .line 28
     .line 29
@@ -2143,7 +2143,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v2}, Lk8/e;->j()Z
+    invoke-interface {v2}, Ll8/e;->j()Z
 
     .line 34
     .line 35
@@ -2198,7 +2198,7 @@
 
     invoke-direct {v1, p0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$a;-><init>(Lcom/google/android/exoplayer2/source/dash/DashMediaSource;)V
 
-    invoke-static {v0, v1}, Lf9/g0;->j(Lcom/google/android/exoplayer2/upstream/h;Lf9/g0$b;)V
+    invoke-static {v0, v1}, Lg9/g0;->j(Lcom/google/android/exoplayer2/upstream/h;Lg9/g0$b;)V
 
     return-void
 .end method
@@ -2215,7 +2215,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1, p1}, Lf9/r;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Lg9/r;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 6
     .line 7
@@ -2390,7 +2390,7 @@
 
     .line 30
     .line 31
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 32
     .line 33
@@ -2401,7 +2401,7 @@
     sub-int/2addr v3, v6
 
     .line 36
-    invoke-virtual {v4, v5, v3}, Lcom/google/android/exoplayer2/source/dash/b;->M(Ll8/b;I)V
+    invoke-virtual {v4, v5, v3}, Lcom/google/android/exoplayer2/source/dash/b;->M(Lm8/b;I)V
 
     .line 37
     .line 38
@@ -2415,11 +2415,11 @@
 
     .line 42
     :cond_1
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 43
     .line 44
-    invoke-virtual {v2, v1}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v2, v1}, Lm8/b;->d(I)Lm8/f;
 
     .line 45
     .line 46
@@ -2427,11 +2427,11 @@
     move-result-object v2
 
     .line 48
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 49
     .line 50
-    invoke-virtual {v3}, Ll8/b;->e()I
+    invoke-virtual {v3}, Lm8/b;->e()I
 
     .line 51
     .line 52
@@ -2445,11 +2445,11 @@
     sub-int/2addr v3, v4
 
     .line 56
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 57
     .line 58
-    invoke-virtual {v5, v3}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v5, v3}, Lm8/b;->d(I)Lm8/f;
 
     .line 59
     .line 60
@@ -2457,11 +2457,11 @@
     move-result-object v5
 
     .line 62
-    iget-object v6, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v6, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 63
     .line 64
-    invoke-virtual {v6, v3}, Ll8/b;->g(I)J
+    invoke-virtual {v6, v3}, Lm8/b;->g(I)J
 
     .line 65
     .line 66
@@ -2473,7 +2473,7 @@
 
     .line 69
     .line 70
-    invoke-static {v8, v9}, Lf9/q0;->Z(J)J
+    invoke-static {v8, v9}, Lg9/q0;->Z(J)J
 
     .line 71
     .line 72
@@ -2481,7 +2481,7 @@
     move-result-wide v8
 
     .line 74
-    invoke-static {v8, v9}, Ld7/c;->c(J)J
+    invoke-static {v8, v9}, Le7/c;->c(J)J
 
     .line 75
     .line 76
@@ -2489,11 +2489,11 @@
     move-result-wide v8
 
     .line 78
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 79
     .line 80
-    invoke-virtual {v3, v1}, Ll8/b;->g(I)J
+    invoke-virtual {v3, v1}, Lm8/b;->g(I)J
 
     .line 81
     .line 82
@@ -2501,7 +2501,7 @@
     move-result-wide v10
 
     .line 84
-    invoke-static {v2, v10, v11, v8, v9}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->K(Ll8/f;JJ)J
+    invoke-static {v2, v10, v11, v8, v9}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->K(Lm8/f;JJ)J
 
     .line 85
     .line 86
@@ -2509,7 +2509,7 @@
     move-result-wide v10
 
     .line 88
-    invoke-static {v5, v6, v7, v8, v9}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J(Ll8/f;JJ)J
+    invoke-static {v5, v6, v7, v8, v9}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J(Lm8/f;JJ)J
 
     .line 89
     .line 90
@@ -2517,11 +2517,11 @@
     move-result-wide v6
 
     .line 92
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 93
     .line 94
-    iget-boolean v3, v3, Ll8/b;->d:Z
+    iget-boolean v3, v3, Lm8/b;->d:Z
 
     .line 95
     .line 96
@@ -2529,7 +2529,7 @@
 
     .line 97
     .line 98
-    invoke-static {v5}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->O(Ll8/f;)Z
+    invoke-static {v5}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->O(Lm8/f;)Z
 
     .line 99
     .line 100
@@ -2563,11 +2563,11 @@
 
     .line 113
     .line 114
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 115
     .line 116
-    iget-wide v14, v5, Ll8/b;->f:J
+    iget-wide v14, v5, Lm8/b;->f:J
 
     .line 117
     .line 118
@@ -2579,7 +2579,7 @@
 
     .line 121
     .line 122
-    invoke-static {v14, v15}, Ld7/c;->c(J)J
+    invoke-static {v14, v15}, Le7/c;->c(J)J
 
     .line 123
     .line 124
@@ -2604,11 +2604,11 @@
 
     .line 133
     .line 134
-    iget-object v7, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v7, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 135
     .line 136
-    iget-boolean v14, v7, Ll8/b;->d:Z
+    iget-boolean v14, v7, Lm8/b;->d:Z
 
     .line 137
     .line 138
@@ -2620,7 +2620,7 @@
 
     .line 141
     .line 142
-    iget-wide v1, v7, Ll8/b;->a:J
+    iget-wide v1, v7, Lm8/b;->a:J
 
     .line 143
     .line 144
@@ -2643,20 +2643,20 @@
 
     .line 151
     :goto_2
-    invoke-static {v1}, Lf9/a;->f(Z)V
+    invoke-static {v1}, Lg9/a;->f(Z)V
 
     .line 152
     .line 153
     .line 154
-    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 155
     .line 156
-    iget-wide v1, v1, Ll8/b;->a:J
+    iget-wide v1, v1, Lm8/b;->a:J
 
     .line 157
     .line 158
-    invoke-static {v1, v2}, Ld7/c;->c(J)J
+    invoke-static {v1, v2}, Le7/c;->c(J)J
 
     .line 159
     .line 160
@@ -2675,15 +2675,15 @@
     .line 165
     .line 166
     .line 167
-    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 168
     .line 169
-    iget-wide v1, v1, Ll8/b;->a:J
+    iget-wide v1, v1, Lm8/b;->a:J
 
     .line 170
     .line 171
-    invoke-static {v10, v11}, Ld7/c;->d(J)J
+    invoke-static {v10, v11}, Le7/c;->d(J)J
 
     .line 172
     .line 173
@@ -2702,7 +2702,7 @@
 
     .line 179
     .line 180
-    invoke-static {v14, v15}, Ld7/c;->c(J)J
+    invoke-static {v14, v15}, Le7/c;->c(J)J
 
     .line 181
     .line 182
@@ -2783,11 +2783,11 @@
     .line 218
     .line 219
     :goto_4
-    iget-wide v1, v1, Ll8/f;->b:J
+    iget-wide v1, v1, Lm8/f;->b:J
 
     .line 220
     .line 221
-    invoke-static {v1, v2}, Ld7/c;->c(J)J
+    invoke-static {v1, v2}, Le7/c;->c(J)J
 
     .line 222
     .line 223
@@ -2803,11 +2803,11 @@
 
     .line 228
     .line 229
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 230
     .line 231
-    iget-wide v7, v2, Ll8/b;->a:J
+    iget-wide v7, v2, Lm8/b;->a:J
 
     .line 232
     .line 233
@@ -2823,7 +2823,7 @@
 
     .line 238
     .line 239
-    iget-boolean v12, v2, Ll8/b;->d:Z
+    iget-boolean v12, v2, Lm8/b;->d:Z
 
     .line 240
     .line 241
@@ -2873,12 +2873,12 @@
 
     .line 260
     .line 261
-    invoke-direct/range {v14 .. v30}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$b;-><init>(JJJIJJJLl8/b;Lcom/google/android/exoplayer2/MediaItem;Lcom/google/android/exoplayer2/MediaItem$f;)V
+    invoke-direct/range {v14 .. v30}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource$b;-><init>(JJJIJJJLm8/b;Lcom/google/android/exoplayer2/MediaItem;Lcom/google/android/exoplayer2/MediaItem$f;)V
 
     .line 262
     .line 263
     .line 264
-    invoke-virtual {v0, v1}, Lh8/a;->B(Lcom/google/android/exoplayer2/Timeline;)V
+    invoke-virtual {v0, v1}, Li8/a;->B(Lcom/google/android/exoplayer2/Timeline;)V
 
     .line 265
     .line 266
@@ -2916,7 +2916,7 @@
 
     .line 283
     .line 284
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 285
     .line 286
@@ -2924,7 +2924,7 @@
 
     .line 287
     .line 288
-    invoke-static {v4, v5}, Lf9/q0;->Z(J)J
+    invoke-static {v4, v5}, Lg9/q0;->Z(J)J
 
     .line 289
     .line 290
@@ -2932,7 +2932,7 @@
     move-result-wide v4
 
     .line 292
-    invoke-static {v3, v4, v5}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->L(Ll8/b;J)J
+    invoke-static {v3, v4, v5}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->L(Lm8/b;J)J
 
     .line 293
     .line 294
@@ -2967,11 +2967,11 @@
 
     .line 308
     .line 309
-    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 310
     .line 311
-    iget-boolean v2, v1, Ll8/b;->d:Z
+    iget-boolean v2, v1, Lm8/b;->d:Z
 
     .line 312
     .line 313
@@ -2979,7 +2979,7 @@
 
     .line 314
     .line 315
-    iget-wide v1, v1, Ll8/b;->e:J
+    iget-wide v1, v1, Lm8/b;->e:J
 
     .line 316
     .line 317
@@ -3946,11 +3946,11 @@
     .line 1244
 .end method
 
-.method private b0(Ll8/n;)V
+.method private b0(Lm8/n;)V
     .locals 2
 
     .line 1
-    iget-object v0, p1, Ll8/n;->a:Ljava/lang/String;
+    iget-object v0, p1, Lm8/n;->a:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -3958,7 +3958,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -3974,7 +3974,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -3994,7 +3994,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 23
     .line 24
@@ -4010,7 +4010,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -4030,7 +4030,7 @@
 
     .line 38
     .line 39
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -4046,7 +4046,7 @@
 
     .line 46
     .line 47
-    invoke-static {v0, v1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 48
     .line 49
@@ -4066,7 +4066,7 @@
 
     .line 55
     .line 56
-    invoke-static {v0, p1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 57
     .line 58
@@ -4082,7 +4082,7 @@
 
     .line 63
     .line 64
-    invoke-static {v0, p1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 65
     .line 66
@@ -4143,7 +4143,7 @@
     .line 90
     .line 91
     .line 92
-    invoke-direct {p0, p1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->d0(Ll8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->d0(Lm8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
 
     .line 93
     .line 94
@@ -4162,7 +4162,7 @@
     .line 99
     .line 100
     .line 101
-    invoke-direct {p0, p1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->d0(Ll8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->d0(Lm8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
 
     .line 102
     .line 103
@@ -4172,7 +4172,7 @@
     .line 105
     :cond_7
     :goto_3
-    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->c0(Ll8/n;)V
+    invoke-direct {p0, p1}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->c0(Lm8/n;)V
 
     .line 106
     .line 107
@@ -4314,16 +4314,16 @@
     .line 241
 .end method
 
-.method private c0(Ll8/n;)V
+.method private c0(Lm8/n;)V
     .locals 4
 
     .line 1
     :try_start_0
-    iget-object p1, p1, Ll8/n;->b:Ljava/lang/String;
+    iget-object p1, p1, Lm8/n;->b:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lf9/q0;->D0(Ljava/lang/String;)J
+    invoke-static {p1}, Lg9/q0;->D0(Ljava/lang/String;)J
 
     .line 4
     .line 5
@@ -4340,7 +4340,7 @@
     .line 10
     invoke-direct {p0, v0, v1}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->Z(J)V
     :try_end_0
-    .catch Ld7/o; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Le7/o; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 11
     .line 12
@@ -4389,12 +4389,12 @@
     .line 46
 .end method
 
-.method private d0(Ll8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
+.method private d0(Lm8/n;Lcom/google/android/exoplayer2/upstream/i$a;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ll8/n;",
+            "Lm8/n;",
             "Lcom/google/android/exoplayer2/upstream/i$a<",
             "Ljava/lang/Long;",
             ">;)V"
@@ -4405,7 +4405,7 @@
 
     iget-object v1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->H:Lcom/google/android/exoplayer2/upstream/DataSource;
 
-    iget-object p1, p1, Ll8/n;->b:Ljava/lang/String;
+    iget-object p1, p1, Lm8/n;->b:Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -4468,11 +4468,11 @@
     move-result-wide v5
 
     .line 7
-    iget-object p2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object p2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 8
     .line 9
-    new-instance p3, Lh8/n;
+    new-instance p3, Li8/n;
 
     .line 10
     .line 11
@@ -4487,7 +4487,7 @@
     move-object v1, p3
 
     .line 16
-    invoke-direct/range {v1 .. v6}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;J)V
+    invoke-direct/range {v1 .. v6}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;J)V
 
     .line 17
     .line 18
@@ -4496,7 +4496,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p2, p3, p1}, Lh8/b0$a;->z(Lh8/n;I)V
+    invoke-virtual {p2, p3, p1}, Li8/b0$a;->z(Li8/n;I)V
 
     .line 22
     .line 23
@@ -5100,11 +5100,11 @@
 
     .line 18
     :cond_0
-    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v1, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 19
     .line 20
-    iget-object v1, v1, Ll8/b;->j:Ll8/k;
+    iget-object v1, v1, Lm8/b;->j:Lm8/k;
 
     .line 21
     .line 22
@@ -5112,7 +5112,7 @@
 
     .line 23
     .line 24
-    iget-wide v1, v1, Ll8/k;->c:J
+    iget-wide v1, v1, Lm8/k;->c:J
 
     .line 25
     .line 26
@@ -5128,7 +5128,7 @@
 
     .line 31
     :cond_1
-    invoke-static/range {p1 .. p2}, Ld7/c;->d(J)J
+    invoke-static/range {p1 .. p2}, Le7/c;->d(J)J
 
     .line 32
     .line 33
@@ -5166,11 +5166,11 @@
 
     .line 47
     :cond_3
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 48
     .line 49
-    iget-object v5, v5, Ll8/b;->j:Ll8/k;
+    iget-object v5, v5, Lm8/b;->j:Lm8/k;
 
     .line 50
     .line 51
@@ -5178,7 +5178,7 @@
 
     .line 52
     .line 53
-    iget-wide v5, v5, Ll8/k;->b:J
+    iget-wide v5, v5, Lm8/k;->b:J
 
     .line 54
     .line 55
@@ -5198,7 +5198,7 @@
 
     .line 61
     .line 62
-    invoke-static {v5, v6}, Ld7/c;->d(J)J
+    invoke-static {v5, v6}, Le7/c;->d(J)J
 
     .line 63
     .line 64
@@ -5230,11 +5230,11 @@
 
     .line 77
     :cond_5
-    iget-object v7, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v7, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 78
     .line 79
-    iget-wide v7, v7, Ll8/b;->c:J
+    iget-wide v7, v7, Lm8/b;->c:J
 
     .line 80
     .line 81
@@ -5281,11 +5281,11 @@
 
     .line 100
     :cond_6
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 101
     .line 102
-    iget-object v6, v5, Ll8/b;->j:Ll8/k;
+    iget-object v6, v5, Lm8/b;->j:Lm8/k;
 
     .line 103
     .line 104
@@ -5293,7 +5293,7 @@
 
     .line 105
     .line 106
-    iget-wide v6, v6, Ll8/k;->a:J
+    iget-wide v6, v6, Lm8/k;->a:J
 
     .line 107
     .line 108
@@ -5312,7 +5312,7 @@
 
     .line 114
     :cond_7
-    iget-wide v5, v5, Ll8/b;->g:J
+    iget-wide v5, v5, Lm8/b;->g:J
 
     .line 115
     .line 116
@@ -5378,7 +5378,7 @@
 
     .line 144
     .line 145
-    invoke-static {v3, v4}, Ld7/c;->d(J)J
+    invoke-static {v3, v4}, Le7/c;->d(J)J
 
     .line 146
     .line 147
@@ -5392,7 +5392,7 @@
     move-wide v9, v1
 
     .line 151
-    invoke-static/range {v5 .. v10}, Lf9/q0;->s(JJJ)J
+    invoke-static/range {v5 .. v10}, Lg9/q0;->s(JJJ)J
 
     .line 152
     .line 153
@@ -5440,11 +5440,11 @@
 
     .line 172
     :cond_b
-    iget-object v4, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v4, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 173
     .line 174
-    iget-object v4, v4, Ll8/b;->j:Ll8/k;
+    iget-object v4, v4, Lm8/b;->j:Lm8/k;
 
     .line 175
     .line 176
@@ -5452,7 +5452,7 @@
 
     .line 177
     .line 178
-    iget v4, v4, Ll8/k;->d:F
+    iget v4, v4, Lm8/k;->d:F
 
     .line 179
     .line 180
@@ -5484,11 +5484,11 @@
 
     .line 190
     :cond_d
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 191
     .line 192
-    iget-object v3, v3, Ll8/b;->j:Ll8/k;
+    iget-object v3, v3, Lm8/b;->j:Lm8/k;
 
     .line 193
     .line 194
@@ -5496,7 +5496,7 @@
 
     .line 195
     .line 196
-    iget v3, v3, Ll8/k;->e:F
+    iget v3, v3, Lm8/k;->e:F
 
     .line 197
     .line 198
@@ -6159,19 +6159,19 @@
 
 
 # virtual methods
-.method protected A(Ld9/x;)V
+.method protected A(Le9/x;)V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J:Ld9/x;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J:Le9/x;
 
     .line 2
     .line 3
-    iget-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lj7/x;
+    iget-object p1, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lk7/x;
 
     .line 4
     .line 5
-    invoke-interface {p1}, Lj7/x;->c()V
+    invoke-interface {p1}, Lk7/x;->c()V
 
     .line 6
     .line 7
@@ -6229,7 +6229,7 @@
 
     .line 33
     .line 34
-    invoke-static {}, Lf9/q0;->x()Landroid/os/Handler;
+    invoke-static {}, Lg9/q0;->x()Landroid/os/Handler;
 
     .line 35
     .line 36
@@ -6309,7 +6309,7 @@
 
     .line 25
     .line 26
-    iget-object v2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 27
     .line 28
@@ -6321,7 +6321,7 @@
 
     .line 30
     :goto_0
-    iput-object v2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iput-object v2, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 31
     .line 32
@@ -6387,11 +6387,11 @@
     .line 63
     .line 64
     .line 65
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lj7/x;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lk7/x;
 
     .line 66
     .line 67
-    invoke-interface {v0}, Lj7/x;->release()V
+    invoke-interface {v0}, Lk7/x;->release()V
 
     .line 68
     .line 69
@@ -6796,7 +6796,7 @@
 
     .line 3
     .line 4
-    new-instance v14, Lh8/n;
+    new-instance v14, Li8/n;
 
     .line 5
     .line 6
@@ -6843,7 +6843,7 @@
 
     .line 26
     .line 27
-    invoke-direct/range {v2 .. v13}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
+    invoke-direct/range {v2 .. v13}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
     .line 28
     .line 29
@@ -6861,7 +6861,7 @@
     .line 35
     .line 36
     .line 37
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 38
     .line 39
@@ -6869,7 +6869,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v2, v14, v1}, Lh8/b0$a;->q(Lh8/n;I)V
+    invoke-virtual {v2, v14, v1}, Li8/b0$a;->q(Li8/n;I)V
 
     .line 42
     .line 43
@@ -7015,7 +7015,7 @@
         value = {
             "(",
             "Lcom/google/android/exoplayer2/upstream/i<",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;JJ)V"
         }
     .end annotation
@@ -7033,7 +7033,7 @@
 
     .line 6
     .line 7
-    new-instance v12, Lh8/n;
+    new-instance v12, Li8/n;
 
     .line 8
     .line 9
@@ -7087,7 +7087,7 @@
 
     .line 32
     .line 33
-    invoke-direct/range {v2 .. v13}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
+    invoke-direct/range {v2 .. v13}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
     .line 34
     .line 35
@@ -7105,7 +7105,7 @@
     .line 41
     .line 42
     .line 43
-    iget-object v2, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object v2, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 44
     .line 45
@@ -7113,7 +7113,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v2, v14, v3}, Lh8/b0$a;->t(Lh8/n;I)V
+    invoke-virtual {v2, v14, v3}, Li8/b0$a;->t(Li8/n;I)V
 
     .line 48
     .line 49
@@ -7126,11 +7126,11 @@
     move-result-object v2
 
     .line 54
-    check-cast v2, Ll8/b;
+    check-cast v2, Lm8/b;
 
     .line 55
     .line 56
-    iget-object v3, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v3, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 57
     .line 58
@@ -7148,7 +7148,7 @@
 
     .line 63
     :cond_0
-    invoke-virtual {v3}, Ll8/b;->e()I
+    invoke-virtual {v3}, Lm8/b;->e()I
 
     .line 64
     .line 65
@@ -7157,7 +7157,7 @@
 
     .line 67
     :goto_0
-    invoke-virtual {v2, v4}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v2, v4}, Lm8/b;->d(I)Lm8/f;
 
     .line 68
     .line 69
@@ -7165,7 +7165,7 @@
     move-result-object v5
 
     .line 71
-    iget-wide v5, v5, Ll8/f;->b:J
+    iget-wide v5, v5, Lm8/f;->b:J
 
     .line 72
     .line 73
@@ -7177,11 +7177,11 @@
 
     .line 75
     .line 76
-    iget-object v8, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v8, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 77
     .line 78
-    invoke-virtual {v8, v7}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v8, v7}, Lm8/b;->d(I)Lm8/f;
 
     .line 79
     .line 80
@@ -7189,7 +7189,7 @@
     move-result-object v8
 
     .line 82
-    iget-wide v8, v8, Ll8/f;->b:J
+    iget-wide v8, v8, Lm8/f;->b:J
 
     .line 83
     .line 84
@@ -7209,7 +7209,7 @@
 
     .line 91
     :cond_1
-    iget-boolean v5, v2, Ll8/b;->d:Z
+    iget-boolean v5, v2, Lm8/b;->d:Z
 
     .line 92
     .line 93
@@ -7224,7 +7224,7 @@
 
     .line 97
     .line 98
-    invoke-virtual {v2}, Ll8/b;->e()I
+    invoke-virtual {v2}, Lm8/b;->e()I
 
     .line 99
     .line 100
@@ -7244,7 +7244,7 @@
 
     .line 107
     .line 108
-    invoke-static {v5, v8}, Lf9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v8}, Lg9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 109
     .line 110
@@ -7276,7 +7276,7 @@
 
     .line 123
     .line 124
-    iget-wide v10, v2, Ll8/b;->h:J
+    iget-wide v10, v2, Lm8/b;->h:J
 
     .line 125
     .line 126
@@ -7317,7 +7317,7 @@
     .line 143
     .line 144
     .line 145
-    iget-wide v9, v2, Ll8/b;->h:J
+    iget-wide v9, v2, Lm8/b;->h:J
 
     .line 146
     .line 147
@@ -7352,7 +7352,7 @@
     move-result-object v8
 
     .line 164
-    invoke-static {v5, v8}, Lf9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v8}, Lg9/r;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
     .line 166
@@ -7418,11 +7418,11 @@
 
     .line 195
     :cond_4
-    new-instance v0, Lk8/a;
+    new-instance v0, Ll8/a;
 
     .line 196
     .line 197
-    invoke-direct {v0}, Lk8/a;-><init>()V
+    invoke-direct {v0}, Ll8/a;-><init>()V
 
     .line 198
     .line 199
@@ -7441,7 +7441,7 @@
     .line 204
     .line 205
     :cond_6
-    iput-object v2, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iput-object v2, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 206
     .line 207
@@ -7449,7 +7449,7 @@
 
     .line 208
     .line 209
-    iget-boolean v2, v2, Ll8/b;->d:Z
+    iget-boolean v2, v2, Lm8/b;->d:Z
 
     .line 210
     .line 211
@@ -7508,11 +7508,11 @@
 
     .line 235
     .line 236
-    iget-object v4, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v4, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 237
     .line 238
-    iget-object v4, v4, Ll8/b;->k:Landroid/net/Uri;
+    iget-object v4, v4, Lm8/b;->k:Landroid/net/Uri;
 
     .line 239
     .line 240
@@ -7547,11 +7547,11 @@
 
     .line 251
     .line 252
-    iget-object v0, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v0, v1, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 253
     .line 254
-    iget-boolean v2, v0, Ll8/b;->d:Z
+    iget-boolean v2, v0, Lm8/b;->d:Z
 
     .line 255
     .line 256
@@ -7559,7 +7559,7 @@
 
     .line 257
     .line 258
-    iget-object v0, v0, Ll8/b;->i:Ll8/n;
+    iget-object v0, v0, Lm8/b;->i:Lm8/n;
 
     .line 259
     .line 260
@@ -7567,7 +7567,7 @@
 
     .line 261
     .line 262
-    invoke-direct {v1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->b0(Ll8/n;)V
+    invoke-direct {v1, v0}, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->b0(Lm8/n;)V
 
     .line 263
     .line 264
@@ -8804,7 +8804,7 @@
         value = {
             "(",
             "Lcom/google/android/exoplayer2/upstream/i<",
-            "Ll8/b;",
+            "Lm8/b;",
             ">;JJ",
             "Ljava/io/IOException;",
             "I)",
@@ -8825,7 +8825,7 @@
 
     .line 6
     .line 7
-    new-instance v15, Lh8/n;
+    new-instance v15, Li8/n;
 
     .line 8
     .line 9
@@ -8872,12 +8872,12 @@
 
     .line 29
     .line 30
-    invoke-direct/range {v3 .. v14}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
+    invoke-direct/range {v3 .. v14}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
     .line 31
     .line 32
     .line 33
-    new-instance v3, Lh8/q;
+    new-instance v3, Li8/q;
 
     .line 34
     .line 35
@@ -8885,7 +8885,7 @@
 
     .line 36
     .line 37
-    invoke-direct {v3, v4}, Lh8/q;-><init>(I)V
+    invoke-direct {v3, v4}, Li8/q;-><init>(I)V
 
     .line 38
     .line 39
@@ -8898,7 +8898,7 @@
 
     .line 43
     .line 44
-    invoke-direct {v4, v15, v3, v2, v5}, Lcom/google/android/exoplayer2/upstream/g$a;-><init>(Lh8/n;Lh8/q;Ljava/io/IOException;I)V
+    invoke-direct {v4, v15, v3, v2, v5}, Lcom/google/android/exoplayer2/upstream/g$a;-><init>(Li8/n;Li8/q;Ljava/io/IOException;I)V
 
     .line 45
     .line 46
@@ -8962,7 +8962,7 @@
 
     .line 75
     .line 76
-    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object v5, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 77
     .line 78
@@ -8970,7 +8970,7 @@
 
     .line 79
     .line 80
-    invoke-virtual {v5, v15, v6, v2, v4}, Lh8/b0$a;->x(Lh8/n;ILjava/io/IOException;Z)V
+    invoke-virtual {v5, v15, v6, v2, v4}, Li8/b0$a;->x(Li8/n;ILjava/io/IOException;Z)V
 
     .line 81
     .line 82
@@ -9481,7 +9481,7 @@
 
     .line 3
     .line 4
-    new-instance v14, Lh8/n;
+    new-instance v14, Li8/n;
 
     .line 5
     .line 6
@@ -9528,7 +9528,7 @@
 
     .line 26
     .line 27
-    invoke-direct/range {v2 .. v13}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
+    invoke-direct/range {v2 .. v13}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
     .line 28
     .line 29
@@ -9546,7 +9546,7 @@
     .line 35
     .line 36
     .line 37
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 38
     .line 39
@@ -9554,7 +9554,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v2, v14, v3}, Lh8/b0$a;->t(Lh8/n;I)V
+    invoke-virtual {v2, v14, v3}, Li8/b0$a;->t(Li8/n;I)V
 
     .line 42
     .line 43
@@ -9735,11 +9735,11 @@
 
     .line 6
     .line 7
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Lh8/b0$a;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->y:Li8/b0$a;
 
     .line 8
     .line 9
-    new-instance v14, Lh8/n;
+    new-instance v14, Li8/n;
 
     .line 10
     .line 11
@@ -9792,7 +9792,7 @@
     move-wide v14, v15
 
     .line 34
-    invoke-direct/range {v4 .. v15}, Lh8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
+    invoke-direct/range {v4 .. v15}, Li8/n;-><init>(JLcom/google/android/exoplayer2/upstream/a;Landroid/net/Uri;Ljava/util/Map;JJJ)V
 
     .line 35
     .line 36
@@ -9804,7 +9804,7 @@
     const/4 v5, 0x1
 
     .line 40
-    invoke-virtual {v3, v0, v4, v2, v5}, Lh8/b0$a;->x(Lh8/n;ILjava/io/IOException;Z)V
+    invoke-virtual {v3, v0, v4, v2, v5}, Li8/b0$a;->x(Li8/n;ILjava/io/IOException;Z)V
 
     .line 41
     .line 42
@@ -10176,7 +10176,77 @@
     .line 395
 .end method
 
-.method public c(Lh8/u$a;Ld9/b;J)Lh8/r;
+.method public c()Lcom/google/android/exoplayer2/MediaItem;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->q:Lcom/google/android/exoplayer2/MediaItem;
+
+    return-object v0
+.end method
+
+.method public l(Li8/r;)V
+    .locals 1
+
+    .line 1
+    check-cast p1, Lcom/google/android/exoplayer2/source/dash/b;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lcom/google/android/exoplayer2/source/dash/b;->I()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->C:Landroid/util/SparseArray;
+
+    .line 7
+    .line 8
+    iget p1, p1, Lcom/google/android/exoplayer2/source/dash/b;->k:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->remove(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+.end method
+
+.method public m(Li8/u$a;Le9/b;J)Li8/r;
     .locals 20
 
     .line 1
@@ -10188,7 +10258,7 @@
 
     .line 4
     .line 5
-    iget-object v2, v1, Lh8/s;->a:Ljava/lang/Object;
+    iget-object v2, v1, Li8/s;->a:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -10212,11 +10282,11 @@
 
     .line 16
     .line 17
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 18
     .line 19
-    invoke-virtual {v2, v7}, Ll8/b;->d(I)Ll8/f;
+    invoke-virtual {v2, v7}, Lm8/b;->d(I)Lm8/f;
 
     .line 20
     .line 21
@@ -10224,11 +10294,11 @@
     move-result-object v2
 
     .line 23
-    iget-wide v2, v2, Ll8/f;->b:J
+    iget-wide v2, v2, Lm8/f;->b:J
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1, v2, v3}, Lh8/a;->w(Lh8/u$a;J)Lh8/b0$a;
+    invoke-virtual {v0, v1, v2, v3}, Li8/a;->w(Li8/u$a;J)Li8/b0$a;
 
     .line 26
     .line 27
@@ -10236,7 +10306,7 @@
     move-result-object v13
 
     .line 29
-    invoke-virtual/range {p0 .. p1}, Lh8/a;->t(Lh8/u$a;)Lj7/v$a;
+    invoke-virtual/range {p0 .. p1}, Li8/a;->t(Li8/u$a;)Lk7/v$a;
 
     .line 30
     .line 31
@@ -10256,7 +10326,7 @@
 
     .line 38
     .line 39
-    iget-object v6, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Ll8/b;
+    iget-object v6, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->P:Lm8/b;
 
     .line 40
     .line 41
@@ -10264,11 +10334,11 @@
 
     .line 42
     .line 43
-    iget-object v9, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J:Ld9/x;
+    iget-object v9, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->J:Le9/x;
 
     .line 44
     .line 45
-    iget-object v10, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lj7/x;
+    iget-object v10, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->v:Lk7/x;
 
     .line 46
     .line 47
@@ -10280,11 +10350,11 @@
 
     .line 50
     .line 51
-    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Ld9/t;
+    iget-object v2, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Le9/t;
 
     .line 52
     .line 53
-    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->u:Lh8/h;
+    iget-object v3, v0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->u:Li8/h;
 
     .line 54
     .line 55
@@ -10311,7 +10381,7 @@
 
     .line 65
     .line 66
-    invoke-direct/range {v4 .. v19}, Lcom/google/android/exoplayer2/source/dash/b;-><init>(ILl8/b;ILcom/google/android/exoplayer2/source/dash/a$a;Ld9/x;Lj7/x;Lj7/v$a;Lcom/google/android/exoplayer2/upstream/g;Lh8/b0$a;JLd9/t;Ld9/b;Lh8/h;Lcom/google/android/exoplayer2/source/dash/e$b;)V
+    invoke-direct/range {v4 .. v19}, Lcom/google/android/exoplayer2/source/dash/b;-><init>(ILm8/b;ILcom/google/android/exoplayer2/source/dash/a$a;Le9/x;Lk7/x;Lk7/v$a;Lcom/google/android/exoplayer2/upstream/g;Li8/b0$a;JLe9/t;Le9/b;Li8/h;Lcom/google/android/exoplayer2/source/dash/e$b;)V
 
     .line 67
     .line 68
@@ -10432,82 +10502,12 @@
     .line 176
 .end method
 
-.method public d()Lcom/google/android/exoplayer2/MediaItem;
+.method public n()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->q:Lcom/google/android/exoplayer2/MediaItem;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Le9/t;
 
-    return-object v0
-.end method
-
-.method public l()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->G:Ld9/t;
-
-    invoke-interface {v0}, Ld9/t;->a()V
+    invoke-interface {v0}, Le9/t;->a()V
 
     return-void
-.end method
-
-.method public r(Lh8/r;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Lcom/google/android/exoplayer2/source/dash/b;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lcom/google/android/exoplayer2/source/dash/b;->I()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lcom/google/android/exoplayer2/source/dash/DashMediaSource;->C:Landroid/util/SparseArray;
-
-    .line 7
-    .line 8
-    iget p1, p1, Lcom/google/android/exoplayer2/source/dash/b;->k:I
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->remove(I)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    .line 20
-    .line 21
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    .line 27
-    .line 28
-    .line 29
-    .line 30
-    .line 31
-    .line 32
-    .line 33
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    .line 39
-    .line 40
-    .line 41
-    .line 42
-    .line 43
-    .line 44
-    .line 45
-    .line 46
 .end method

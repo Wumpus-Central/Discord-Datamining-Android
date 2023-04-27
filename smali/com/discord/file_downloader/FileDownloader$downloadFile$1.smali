@@ -201,7 +201,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-static {}, Lrf/b;->d()Ljava/lang/Object;
+    invoke-static {}, Ltf/b;->d()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -239,7 +239,7 @@
     check-cast v2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     :try_start_0
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -289,7 +289,7 @@
 
     :goto_0
     :try_start_1
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -315,7 +315,7 @@
 
     check-cast v0, Lkotlinx/coroutines/flow/FlowCollector;
 
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     :cond_4
     move-object v6, v0
@@ -323,12 +323,12 @@
     goto :goto_2
 
     :cond_5
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     goto :goto_1
 
     :cond_6
-    invoke-static/range {p1 .. p1}, Llf/t;->b(Ljava/lang/Object;)V
+    invoke-static/range {p1 .. p1}, Lnf/t;->b(Ljava/lang/Object;)V
 
     iget-object v0, v1, Lcom/discord/file_downloader/FileDownloader$downloadFile$1;->L$0:Ljava/lang/Object;
 
@@ -477,11 +477,11 @@
     const/4 v5, 0x0
 
     .line 12
-    invoke-static {v0, v5, v8, v7}, Ldk/m;->j(Ljava/io/File;ZILjava/lang/Object;)Lokio/Sink;
+    invoke-static {v0, v5, v8, v7}, Lfk/m;->j(Ljava/io/File;ZILjava/lang/Object;)Lokio/Sink;
 
     move-result-object v5
 
-    invoke-static {v5}, Ldk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
+    invoke-static {v5}, Lfk/m;->c(Lokio/Sink;)Lokio/BufferedSink;
 
     move-result-object v5
     :try_end_2
@@ -504,7 +504,7 @@
 
     .line 14
     :try_start_4
-    invoke-static {v5, v7}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v5, v7}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 15
     new-instance v5, Lcom/discord/file_downloader/DownloadState$Completed;
@@ -558,7 +558,7 @@
     move-object v8, v0
 
     :try_start_6
-    invoke-static {v5, v4}, Lvf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4}, Lxf/c;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v8
     :try_end_6

@@ -369,7 +369,6 @@
     .line 38
     return-void
     .line 39
-    .line 40
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
@@ -732,11 +731,11 @@
     .line 174
     .line 175
     .line 176
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 177
     .line 178
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 179
     .line 180
@@ -1468,7 +1467,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private final activateDevice(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V
@@ -1774,7 +1772,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public static synthetic b(Lcom/discord/audio/DiscordAudioManager;)V
@@ -1852,11 +1849,11 @@
     .line 10
     .line 11
     .line 12
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 13
     .line 14
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 15
     .line 16
@@ -2336,7 +2333,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method private final onHeadsetConnectionStateUpdate(Lcom/discord/audio/enums/BluetoothProfileConnectionState$Update;)V
@@ -8602,7 +8598,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private static final registerAudioFocusListener$lambda$22(Lcom/discord/audio/DiscordAudioManager;I)V
@@ -9089,8 +9084,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method private final requestAudioFocus()Z
@@ -9449,8 +9442,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method private final setActiveAudioDevice(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V
@@ -9963,7 +9954,6 @@
     .line 38
     throw v0
     .line 39
-    .line 40
 .end method
 
 .method private final startObservingVolumeChanges()V
@@ -10043,7 +10033,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private final declared-synchronized stopBluetoothSco()V
@@ -10344,8 +10333,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method private final stopObservingVolumeChanges()V
@@ -10408,7 +10395,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method private final updateDeviceActivation()V
@@ -10769,8 +10755,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 
@@ -11280,8 +11264,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method public final registerHandlers$audio_release()V
@@ -11341,7 +11323,6 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method
 
 .method public final declared-synchronized resetEarpieceAvailability()V
@@ -11718,8 +11699,6 @@
     .line 232
     .line 233
     .line 234
-    .line 235
-    .line 236
 .end method
 
 .method public final setAudioFocusListener$audio_release(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V
@@ -12100,7 +12079,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public final setDevice(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)Z
@@ -12530,7 +12508,6 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method
 
 .method public final setMediaVolume(F)V
@@ -12659,7 +12636,7 @@
     mul-float/2addr p1, v2
 
     .line 57
-    invoke-static {p1}, Lzf/a;->a(F)I
+    invoke-static {p1}, Lbg/a;->a(F)I
 
     .line 58
     .line 59
@@ -12815,5 +12792,4 @@
     .line 186
     .line 187
     .line 188
-    .line 189
 .end method

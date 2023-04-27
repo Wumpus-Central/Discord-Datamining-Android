@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
-        "Lcf/d<",
+        "Lef/d<",
         "TT;>;>",
         "Ljava/lang/Object;"
     }
@@ -19,7 +19,7 @@
     }
     d2 = {
         "Lcom/swmansion/gesturehandler/react/e;",
-        "Lcf/d;",
+        "Lef/d;",
         "T",
         "",
         "handler",
@@ -27,7 +27,7 @@
         "eventData",
         "",
         "a",
-        "(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V",
+        "(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V",
         "react-native-gesture-handler_release"
     }
     k = 0x1
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public abstract a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+.method public abstract a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",

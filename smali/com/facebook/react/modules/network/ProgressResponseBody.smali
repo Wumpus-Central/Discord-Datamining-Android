@@ -215,7 +215,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ldk/m;->d(Lokio/Source;)Lokio/BufferedSource;
+    invoke-static {v0}, Lfk/m;->d(Lokio/Source;)Lokio/BufferedSource;
 
     move-result-object v0
 

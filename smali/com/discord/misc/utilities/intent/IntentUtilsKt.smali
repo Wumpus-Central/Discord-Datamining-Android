@@ -485,7 +485,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lwf/a;->b(Lkotlin/reflect/KClass;)Ljava/lang/Class;
+    invoke-static {p0}, Lyf/a;->b(Lkotlin/reflect/KClass;)Ljava/lang/Class;
 
     move-result-object p0
 

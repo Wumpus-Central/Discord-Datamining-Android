@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c<",
-        "Lcf/w;",
+        "Lef/w;",
         ">;"
     }
 .end annotation
@@ -28,7 +28,7 @@
     d2 = {
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;",
         "Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;",
-        "Lcf/w;",
+        "Lef/w;",
         "Landroid/content/Context;",
         "context",
         "g",
@@ -70,7 +70,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
-            "Lcf/w;",
+            "Lef/w;",
             ">;"
         }
     .end annotation
@@ -89,7 +89,7 @@
     .line 2
     .line 3
     .line 4
-    const-class v0, Lcf/w;
+    const-class v0, Lef/w;
 
     .line 5
     .line 6
@@ -127,30 +127,30 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+.method public bridge synthetic a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 0
 
-    check-cast p1, Lcf/w;
+    check-cast p1, Lef/w;
 
-    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->h(Lcf/w;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->h(Lef/w;Lcom/facebook/react/bridge/WritableMap;)V
 
     return-void
 .end method
 
-.method public bridge synthetic b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public bridge synthetic b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 0
 
-    check-cast p1, Lcf/w;
+    check-cast p1, Lef/w;
 
-    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->f(Lcf/w;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-virtual {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->f(Lef/w;Lcom/facebook/react/bridge/ReadableMap;)V
 
     return-void
 .end method
 
-.method public bridge synthetic c(Landroid/content/Context;)Lcf/d;
+.method public bridge synthetic c(Landroid/content/Context;)Lef/d;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->g(Landroid/content/Context;)Lcf/w;
+    invoke-virtual {p0, p1}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$j;->g(Landroid/content/Context;)Lef/w;
 
     move-result-object p1
 
@@ -171,7 +171,7 @@
         value = {
             "()",
             "Ljava/lang/Class<",
-            "Lcf/w;",
+            "Lef/w;",
             ">;"
         }
     .end annotation
@@ -181,7 +181,7 @@
     return-object v0
 .end method
 
-.method public f(Lcf/w;Lcom/facebook/react/bridge/ReadableMap;)V
+.method public f(Lef/w;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 2
 
     .line 1
@@ -203,7 +203,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lcf/d;Lcom/facebook/react/bridge/ReadableMap;)V
+    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->b(Lef/d;Lcom/facebook/react/bridge/ReadableMap;)V
 
     .line 12
     .line 13
@@ -232,7 +232,7 @@
     move-result v0
 
     .line 26
-    invoke-virtual {p1, v0}, Lcf/w;->T0(I)Lcf/w;
+    invoke-virtual {p1, v0}, Lef/w;->T0(I)Lef/w;
 
     .line 27
     .line 28
@@ -265,7 +265,7 @@
     int-to-long v0, v0
 
     .line 42
-    invoke-virtual {p1, v0, v1}, Lcf/w;->P0(J)Lcf/w;
+    invoke-virtual {p1, v0, v1}, Lef/w;->P0(J)Lef/w;
 
     .line 43
     .line 44
@@ -298,7 +298,7 @@
     int-to-long v0, v0
 
     .line 58
-    invoke-virtual {p1, v0, v1}, Lcf/w;->N0(J)Lcf/w;
+    invoke-virtual {p1, v0, v1}, Lef/w;->N0(J)Lef/w;
 
     .line 59
     .line 60
@@ -336,7 +336,7 @@
     move-result v0
 
     .line 77
-    invoke-virtual {p1, v0}, Lcf/w;->Q0(F)Lcf/w;
+    invoke-virtual {p1, v0}, Lef/w;->Q0(F)Lef/w;
 
     .line 78
     .line 79
@@ -374,7 +374,7 @@
     move-result v0
 
     .line 96
-    invoke-virtual {p1, v0}, Lcf/w;->R0(F)Lcf/w;
+    invoke-virtual {p1, v0}, Lef/w;->R0(F)Lef/w;
 
     .line 97
     .line 98
@@ -412,7 +412,7 @@
     move-result v0
 
     .line 115
-    invoke-virtual {p1, v0}, Lcf/w;->O0(F)Lcf/w;
+    invoke-virtual {p1, v0}, Lef/w;->O0(F)Lef/w;
 
     .line 116
     .line 117
@@ -442,7 +442,7 @@
     move-result p2
 
     .line 130
-    invoke-virtual {p1, p2}, Lcf/w;->S0(I)Lcf/w;
+    invoke-virtual {p1, p2}, Lef/w;->S0(I)Lef/w;
 
     .line 131
     .line 132
@@ -645,17 +645,17 @@
     .line 327
 .end method
 
-.method public g(Landroid/content/Context;)Lcf/w;
+.method public g(Landroid/content/Context;)Lef/w;
     .locals 0
 
-    new-instance p1, Lcf/w;
+    new-instance p1, Lef/w;
 
-    invoke-direct {p1}, Lcf/w;-><init>()V
+    invoke-direct {p1}, Lef/w;-><init>()V
 
     return-object p1
 .end method
 
-.method public h(Lcf/w;Lcom/facebook/react/bridge/WritableMap;)V
+.method public h(Lef/w;Lcom/facebook/react/bridge/WritableMap;)V
     .locals 3
 
     .line 1
@@ -677,12 +677,12 @@
     .line 9
     .line 10
     .line 11
-    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lcf/d;Lcom/facebook/react/bridge/WritableMap;)V
+    invoke-super {p0, p1, p2}, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$c;->a(Lef/d;Lcom/facebook/react/bridge/WritableMap;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p1}, Lcf/d;->J()F
+    invoke-virtual {p1}, Lef/d;->J()F
 
     .line 15
     .line 16
@@ -710,7 +710,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p1}, Lcf/d;->K()F
+    invoke-virtual {p1}, Lef/d;->K()F
 
     .line 29
     .line 30
@@ -738,7 +738,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {p1}, Lcf/d;->H()F
+    invoke-virtual {p1}, Lef/d;->H()F
 
     .line 43
     .line 44
@@ -766,7 +766,7 @@
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p1}, Lcf/d;->I()F
+    invoke-virtual {p1}, Lef/d;->I()F
 
     .line 57
     .line 58

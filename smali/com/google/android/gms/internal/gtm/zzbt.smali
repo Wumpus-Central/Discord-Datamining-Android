@@ -14,7 +14,7 @@
     .locals 3
 
     .line 1
-    sget v0, Lt9/g;->a:I
+    sget v0, Lu9/g;->a:I
 
     .line 2
     .line 3

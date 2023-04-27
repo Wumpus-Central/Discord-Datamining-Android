@@ -36,7 +36,7 @@
 .method private static final hasGif(Ljava/lang/String;)Z
     .locals 3
 
-    invoke-static {p0}, Ld4/f;->o(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {p0}, Le4/f;->o(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p0
 
@@ -54,7 +54,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v1, v2}, Lpi/l;->r(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p0, v1, v2}, Lri/l;->r(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result p0
 
@@ -108,7 +108,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 15
     .line 16
@@ -154,7 +154,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-static {}, Lk4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+    invoke-static {}, Ll4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
 
     .line 33
     .line 34

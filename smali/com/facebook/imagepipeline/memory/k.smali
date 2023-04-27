@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList<",
-            "Lz3/b<",
+            "La4/b<",
             "TV;>;>;"
         }
     .end annotation
@@ -243,7 +243,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lz3/b;
+    check-cast v0, La4/b;
 
     .line 8
     .line 9
@@ -251,17 +251,17 @@
 
     .line 10
     .line 11
-    new-instance v0, Lz3/b;
+    new-instance v0, La4/b;
 
     .line 12
     .line 13
-    invoke-direct {v0}, Lz3/b;-><init>()V
+    invoke-direct {v0}, La4/b;-><init>()V
 
     .line 14
     .line 15
     .line 16
     :cond_0
-    invoke-virtual {v0, p1}, Lz3/b;->c(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, La4/b;->c(Ljava/lang/Object;)V
 
     .line 17
     .line 18
@@ -321,16 +321,16 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lz3/b;
+    check-cast v0, La4/b;
 
     .line 8
     .line 9
-    invoke-static {v0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {v0}, Lz3/b;->b()Ljava/lang/Object;
+    invoke-virtual {v0}, La4/b;->b()Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -338,7 +338,7 @@
     move-result-object v1
 
     .line 16
-    invoke-virtual {v0}, Lz3/b;->a()V
+    invoke-virtual {v0}, La4/b;->a()V
 
     .line 17
     .line 18

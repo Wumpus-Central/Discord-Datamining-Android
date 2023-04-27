@@ -70,7 +70,7 @@
 
     .line 16
     .line 17
-    invoke-static {v4, v5}, Lc6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v4, v5}, Ld6/a;->d(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 18
     .line 19

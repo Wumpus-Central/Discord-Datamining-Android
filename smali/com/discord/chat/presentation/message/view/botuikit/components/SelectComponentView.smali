@@ -164,7 +164,7 @@
     .line 3
     sget-object p1, Lcom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView$postProcessor$2;->INSTANCE:Lcom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView$postProcessor$2;
 
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     move-result-object p1
 
@@ -820,7 +820,7 @@
     .line 48
     .line 49
     :cond_0
-    invoke-static {}, Lk4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
+    invoke-static {}, Ll4/c;->g()Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;
 
     .line 50
     .line 51

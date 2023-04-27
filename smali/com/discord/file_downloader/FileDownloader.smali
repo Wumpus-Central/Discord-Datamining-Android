@@ -75,7 +75,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 11
     .line 12
@@ -170,7 +170,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lmf/s;->h()Ljava/util/Map;
+    invoke-static {}, Lof/s;->h()Ljava/util/Map;
 
     .line 6
     .line 7

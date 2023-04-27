@@ -490,7 +490,7 @@
 
     .line 6
     .line 7
-    sget v1, Ldb/e;->a:I
+    sget v1, Leb/e;->a:I
 
     .line 8
     .line 9
@@ -512,7 +512,7 @@
     move-result-object v1
 
     .line 18
-    sget v2, Ldb/i;->p:I
+    sget v2, Leb/i;->p:I
 
     .line 19
     .line 20

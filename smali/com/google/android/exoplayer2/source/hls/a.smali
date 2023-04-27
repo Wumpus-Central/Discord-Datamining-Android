@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Ln8/f;
+.field public final a:Lo8/f;
 
-.field public final b:Ln8/g;
+.field public final b:Lo8/g;
 
 
 # direct methods
-.method constructor <init>(Ln8/f;Ln8/g;)V
+.method constructor <init>(Lo8/f;Lo8/g;)V
     .locals 0
 
     .line 1
@@ -19,11 +19,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/source/hls/a;->a:Ln8/f;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/source/hls/a;->a:Lo8/f;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/exoplayer2/source/hls/a;->b:Ln8/g;
+    iput-object p2, p0, Lcom/google/android/exoplayer2/source/hls/a;->b:Lo8/g;
 
     .line 7
     .line 8

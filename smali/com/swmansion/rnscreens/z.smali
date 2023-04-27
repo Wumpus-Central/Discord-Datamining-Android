@@ -156,11 +156,11 @@
     .line 12
     .line 13
     .line 14
-    new-instance p1, Llf/q;
+    new-instance p1, Lnf/q;
 
     .line 15
     .line 16
-    invoke-direct {p1}, Llf/q;-><init>()V
+    invoke-direct {p1}, Lnf/q;-><init>()V
 
     .line 17
     .line 18

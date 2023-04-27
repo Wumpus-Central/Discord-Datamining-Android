@@ -126,7 +126,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static/range {v1 .. v6}, Lpi/l;->z0(Ljava/lang/CharSequence;[Ljava/lang/String;ZIILjava/lang/Object;)Ljava/util/List;
+    invoke-static/range {v1 .. v6}, Lri/l;->z0(Ljava/lang/CharSequence;[Ljava/lang/String;ZIILjava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -156,7 +156,7 @@
     check-cast v1, Ljava/lang/String;
 
     .line 6
-    invoke-static {v1}, Lpi/l;->o(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-static {v1}, Lri/l;->o(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v1
 
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lxi/a;->h(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+    invoke-static {v0}, Lzi/a;->h(Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
 
     move-result-object v0
 

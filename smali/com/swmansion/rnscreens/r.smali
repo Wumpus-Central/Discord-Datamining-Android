@@ -301,7 +301,7 @@
 
     .line 21
     .line 22
-    new-instance v1, Ldf/h;
+    new-instance v1, Lff/h;
 
     .line 23
     .line 24
@@ -313,7 +313,7 @@
     move-result v2
 
     .line 28
-    invoke-direct {v1, v2}, Ldf/h;-><init>(I)V
+    invoke-direct {v1, v2}, Lff/h;-><init>(I)V
 
     .line 29
     .line 30
@@ -891,7 +891,7 @@
     sub-int/2addr v3, v2
 
     .line 32
-    invoke-static {v1, v3}, Lcg/h;->q(II)Lkotlin/ranges/IntRange;
+    invoke-static {v1, v3}, Leg/h;->q(II)Lkotlin/ranges/IntRange;
 
     .line 33
     .line 34

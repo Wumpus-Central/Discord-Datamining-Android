@@ -7,5 +7,5 @@
 .method public abstract a(I)Lcom/google/android/exoplayer2/upstream/g;
 .end method
 
-.method public abstract b()Ld9/o;
+.method public abstract b()Le9/o;
 .end method

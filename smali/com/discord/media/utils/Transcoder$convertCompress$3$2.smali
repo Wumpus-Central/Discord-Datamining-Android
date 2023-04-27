@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lfe/a;
+.implements Lge/a;
 
 
 # annotations
@@ -22,7 +22,7 @@
     }
     d2 = {
         "com/discord/media/utils/Transcoder$convertCompress$3$2",
-        "Lfe/a;",
+        "Lge/a;",
         "",
         "id",
         "",
@@ -31,7 +31,7 @@
         "progress",
         "onProgress",
         "",
-        "Lge/a;",
+        "Lhe/a;",
         "infos",
         "onCompleted",
         "",
@@ -681,7 +681,7 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lge/a;",
+            "Lhe/a;",
             ">;)V"
         }
     .end annotation
@@ -980,7 +980,7 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lge/a;",
+            "Lhe/a;",
             ">;)V"
         }
     .end annotation
@@ -1046,7 +1046,7 @@
 
     .line 32
     .line 33
-    sget-object p2, Llf/s;->l:Llf/s$a;
+    sget-object p2, Lnf/s;->l:Lnf/s$a;
 
     .line 34
     .line 35
@@ -1062,7 +1062,7 @@
     move-result-object p2
 
     .line 41
-    invoke-static {p2}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     .line 43
@@ -1289,7 +1289,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/Throwable;",
             "Ljava/util/List<",
-            "Lge/a;",
+            "Lhe/a;",
             ">;)V"
         }
     .end annotation
@@ -1334,7 +1334,7 @@
 
     .line 21
     .line 22
-    sget-object p3, Llf/s;->l:Llf/s$a;
+    sget-object p3, Lnf/s;->l:Lnf/s$a;
 
     .line 23
     .line 24
@@ -1356,7 +1356,7 @@
     .line 32
     .line 33
     :cond_0
-    invoke-static {p2}, Llf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {p2}, Lnf/t;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -1364,7 +1364,7 @@
     move-result-object p2
 
     .line 37
-    invoke-static {p2}, Llf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Lnf/s;->b(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
     .line 39

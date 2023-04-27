@@ -226,7 +226,7 @@
     move-result-object v0
 
     .line 20
-    invoke-static {p1, v0}, Le6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
+    invoke-static {p1, v0}, Lf6/b;->a(Landroid/os/Vibrator;Landroid/os/VibrationEffect;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lo6/e;
+.implements Lp6/e;
 
 
 # direct methods
@@ -20,9 +20,9 @@
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lzc/b;
+    check-cast p1, Lad/b;
 
-    invoke-virtual {p1}, Lzc/b;->c()[B
+    invoke-virtual {p1}, Lad/b;->c()[B
 
     move-result-object p1
 

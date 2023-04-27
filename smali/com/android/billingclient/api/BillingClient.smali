@@ -27,14 +27,14 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/BillingClient$a;-><init>(Landroid/content/Context;Lu2/d0;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/billingclient/api/BillingClient$a;-><init>(Landroid/content/Context;Lv2/d0;)V
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public abstract a(Lu2/b;Lu2/c;)V
+.method public abstract a(Lv2/b;Lv2/c;)V
 .end method
 
 .method public abstract b()V
@@ -49,18 +49,18 @@
 .method public abstract e(Landroid/app/Activity;Lcom/android/billingclient/api/BillingFlowParams;)Lcom/android/billingclient/api/BillingResult;
 .end method
 
-.method public abstract g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lu2/d;)V
+.method public abstract g(Lcom/android/billingclient/api/QueryProductDetailsParams;Lv2/d;)V
 .end method
 
-.method public abstract h(Ljava/lang/String;Lu2/e;)V
+.method public abstract h(Ljava/lang/String;Lv2/e;)V
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract i(Lcom/android/billingclient/api/SkuDetailsParams;Lu2/g;)V
+.method public abstract i(Lcom/android/billingclient/api/SkuDetailsParams;Lv2/g;)V
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end method
 
-.method public abstract j(Lu2/a;)V
+.method public abstract j(Lv2/a;)V
 .end method

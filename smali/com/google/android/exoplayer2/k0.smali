@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lh8/u$a;
+.field public final a:Li8/u$a;
 
 .field public final b:J
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method constructor <init>(Lh8/u$a;JJJJZZZ)V
+.method constructor <init>(Li8/u$a;JJJJZZZ)V
     .locals 0
 
     .line 1
@@ -31,7 +31,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 5
     .line 6
@@ -911,7 +911,7 @@
 
     .line 12
     .line 13
-    iget-object v4, v0, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iget-object v4, v0, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 14
     .line 15
@@ -946,7 +946,7 @@
 
     .line 29
     .line 30
-    invoke-direct/range {v3 .. v15}, Lcom/google/android/exoplayer2/k0;-><init>(Lh8/u$a;JJJJZZZ)V
+    invoke-direct/range {v3 .. v15}, Lcom/google/android/exoplayer2/k0;-><init>(Li8/u$a;JJJJZZZ)V
 
     .line 31
     .line 32
@@ -999,7 +999,7 @@
 
     .line 12
     .line 13
-    iget-object v4, v0, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iget-object v4, v0, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 14
     .line 15
@@ -1034,7 +1034,7 @@
 
     .line 29
     .line 30
-    invoke-direct/range {v3 .. v15}, Lcom/google/android/exoplayer2/k0;-><init>(Lh8/u$a;JJJJZZZ)V
+    invoke-direct/range {v3 .. v15}, Lcom/google/android/exoplayer2/k0;-><init>(Li8/u$a;JJJJZZZ)V
 
     .line 31
     .line 32
@@ -1202,15 +1202,15 @@
 
     .line 68
     .line 69
-    iget-object v2, p0, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iget-object v2, p0, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 70
     .line 71
-    iget-object p1, p1, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iget-object p1, p1, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 72
     .line 73
-    invoke-static {v2, p1}, Lf9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Lg9/q0;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 74
     .line 75
@@ -1401,11 +1401,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/k0;->a:Lh8/u$a;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/k0;->a:Li8/u$a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lh8/s;->hashCode()I
+    invoke-virtual {v0}, Li8/s;->hashCode()I
 
     .line 4
     .line 5

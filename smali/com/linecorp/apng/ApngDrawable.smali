@@ -94,7 +94,7 @@
         "Landroidx/vectordrawable/graphics/drawable/b;",
         "s",
         "animationCallbacks",
-        "Lee/a;",
+        "Lfe/a;",
         "t",
         "repeatAnimationCallbacks",
         "",
@@ -184,7 +184,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lee/a;",
+            "Lfe/a;",
             ">;"
         }
     .end annotation
@@ -2254,7 +2254,7 @@
     move-result-object v1
 
     .line 125
-    check-cast v1, Lee/a;
+    check-cast v1, Lfe/a;
 
     .line 126
     .line 127
@@ -2270,7 +2270,7 @@
 
     .line 132
     .line 133
-    invoke-interface {v1, p0, v3}, Lee/a;->b(Lcom/linecorp/apng/ApngDrawable;I)V
+    invoke-interface {v1, p0, v3}, Lfe/a;->b(Lcom/linecorp/apng/ApngDrawable;I)V
 
     .line 134
     .line 135
@@ -2286,7 +2286,7 @@
     add-int/2addr v3, v2
 
     .line 141
-    invoke-interface {v1, p0, v3}, Lee/a;->a(Lcom/linecorp/apng/ApngDrawable;I)V
+    invoke-interface {v1, p0, v3}, Lfe/a;->a(Lcom/linecorp/apng/ApngDrawable;I)V
 
     .line 142
     .line 143

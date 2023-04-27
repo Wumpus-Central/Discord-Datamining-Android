@@ -10,10 +10,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lx5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
+.method public constructor <init>(Ly5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/platform/b;-><init>(Lx5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/imagepipeline/platform/b;-><init>(Ly5/h;ILandroidx/core/util/Pools$SynchronizedPool;)V
 
     return-void
 .end method

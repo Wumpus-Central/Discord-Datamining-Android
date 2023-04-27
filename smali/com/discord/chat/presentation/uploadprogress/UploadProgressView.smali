@@ -985,11 +985,11 @@
     .line 166
     .line 167
     .line 168
-    new-instance p2, Lf3/a;
+    new-instance p2, Lg3/a;
 
     .line 169
     .line 170
-    invoke-direct {p2, p8}, Lf3/a;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p8}, Lg3/a;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 171
     .line 172

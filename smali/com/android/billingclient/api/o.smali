@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method synthetic constructor <init>(Lu2/z;)V
+.method synthetic constructor <init>(Lv2/z;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -69,7 +69,7 @@
     move-object v1, v0
 
     .line 18
-    invoke-direct/range {v1 .. v6}, Lcom/android/billingclient/api/p;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILu2/a0;)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/billingclient/api/p;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILv2/a0;)V
 
     .line 19
     .line 20
@@ -102,5 +102,4 @@
     .line 37
     .line 38
     .line 39
-    .line 40
 .end method

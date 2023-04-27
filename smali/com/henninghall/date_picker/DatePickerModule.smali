@@ -16,7 +16,7 @@
     const/4 v0, 0x0
 
     .line 5
-    invoke-static {p1, v0}, Ldj/a;->b(Landroid/content/Context;Z)V
+    invoke-static {p1, v0}, Lfj/a;->b(Landroid/content/Context;Z)V
 
     .line 6
     .line 7

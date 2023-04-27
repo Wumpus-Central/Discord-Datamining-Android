@@ -38,7 +38,7 @@
 
     .line 10
     :cond_0
-    invoke-static {}, Ld2/e;->j()Ld2/m;
+    invoke-static {}, Le2/e;->j()Le2/m;
 
     .line 11
     .line 12
@@ -46,7 +46,7 @@
     move-result-object v0
 
     .line 14
-    invoke-virtual {v0, p2, p1}, Ld2/m;->A(Ljava/lang/String;Landroid/content/Context;)V
+    invoke-virtual {v0, p2, p1}, Le2/m;->A(Ljava/lang/String;Landroid/content/Context;)V
 
     .line 15
     .line 16

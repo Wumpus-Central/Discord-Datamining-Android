@@ -9,7 +9,7 @@
 
 
 # annotations
-.annotation build Ld6/a;
+.annotation build Le6/a;
 .end annotation
 
 
@@ -29,7 +29,7 @@
 .end method
 
 .method public abstract callFunction(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/NativeArray;)V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 
@@ -124,7 +124,7 @@
 .end method
 
 .method public abstract invokeCallback(ILcom/facebook/react/bridge/NativeArrayInterface;)V
-    .annotation build Ld6/a;
+    .annotation build Le6/a;
     .end annotation
 .end method
 

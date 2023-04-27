@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements La6/c;
+.implements Lb6/c;
 
 
 # annotations
-.annotation build Lv3/d;
+.annotation build Lw3/d;
 .end annotation
 
 
@@ -472,7 +472,7 @@
     move-result-object v2
 
     .line 15
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 16
     .line 17
@@ -504,7 +504,7 @@
     move-result-object v2
 
     .line 29
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 30
     .line 31
@@ -532,7 +532,7 @@
     move-result-object v2
 
     .line 41
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 42
     .line 43
@@ -564,12 +564,12 @@
     move-result-object v2
 
     .line 55
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-static {p2}, La6/e;->j(I)Z
+    invoke-static {p2}, Lb6/e;->j(I)Z
 
     .line 59
     .line 60
@@ -585,7 +585,7 @@
     move-result-object v2
 
     .line 66
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 67
     .line 68
@@ -611,12 +611,12 @@
 
     .line 77
     .line 78
-    invoke-static {v0, v1}, Lv3/j;->c(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lw3/j;->c(ZLjava/lang/Object;)V
 
     .line 79
     .line 80
     .line 81
-    invoke-static {p0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -628,7 +628,7 @@
 
     .line 86
     .line 87
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -1148,7 +1148,7 @@
     move-result-object v2
 
     .line 15
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 16
     .line 17
@@ -1180,7 +1180,7 @@
     move-result-object v2
 
     .line 29
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 30
     .line 31
@@ -1208,7 +1208,7 @@
     move-result-object v2
 
     .line 41
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 42
     .line 43
@@ -1240,12 +1240,12 @@
     move-result-object v2
 
     .line 55
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-static {p2}, La6/e;->i(I)Z
+    invoke-static {p2}, Lb6/e;->i(I)Z
 
     .line 59
     .line 60
@@ -1261,7 +1261,7 @@
     move-result-object v2
 
     .line 66
-    invoke-static {v2}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v2}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 67
     .line 68
@@ -1287,12 +1287,12 @@
 
     .line 77
     .line 78
-    invoke-static {v0, v1}, Lv3/j;->c(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lw3/j;->c(ZLjava/lang/Object;)V
 
     .line 79
     .line 80
     .line 81
-    invoke-static {p0}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -1304,7 +1304,7 @@
 
     .line 86
     .line 87
-    invoke-static {p1}, Lv3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lw3/j;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -1787,12 +1787,12 @@
 .end method
 
 .method private static native nativeTranscodeJpeg(Ljava/io/InputStream;Ljava/io/OutputStream;III)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
 .method private static native nativeTranscodeJpegWithExifOrientation(Ljava/io/InputStream;Ljava/io/OutputStream;III)V
-    .annotation build Lv3/d;
+    .annotation build Lw3/d;
     .end annotation
 .end method
 
@@ -1806,10 +1806,10 @@
     return-object v0
 .end method
 
-.method public b(Li5/c;)Z
+.method public b(Lj5/c;)Z
     .locals 1
 
-    sget-object v0, Li5/b;->a:Li5/c;
+    sget-object v0, Lj5/b;->a:Lj5/c;
 
     if-ne p1, v0, :cond_0
 
@@ -1824,7 +1824,7 @@
     return p1
 .end method
 
-.method public c(Lu5/e;Ljava/io/OutputStream;Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Li5/c;Ljava/lang/Integer;)La6/b;
+.method public c(Lv5/e;Ljava/io/OutputStream;Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lj5/c;Ljava/lang/Integer;)Lb6/b;
     .locals 3
 
     .line 1
@@ -1862,7 +1862,7 @@
 
     .line 16
     .line 17
-    invoke-static {p3, p4, p1, p5}, La6/a;->b(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lu5/e;I)I
+    invoke-static {p3, p4, p1, p5}, Lb6/a;->b(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lv5/e;I)I
 
     .line 18
     .line 19
@@ -1878,7 +1878,7 @@
 
     .line 23
     .line 24
-    invoke-static {p3, p4, p1, v1}, La6/e;->f(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lu5/e;Z)I
+    invoke-static {p3, p4, p1, v1}, Lb6/e;->f(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lv5/e;Z)I
 
     .line 25
     .line 26
@@ -1886,7 +1886,7 @@
     move-result p4
 
     .line 28
-    invoke-static {p5}, La6/e;->a(I)I
+    invoke-static {p5}, Lb6/e;->a(I)I
 
     .line 29
     .line 30
@@ -1906,7 +1906,7 @@
 
     .line 37
     :cond_2
-    invoke-virtual {p1}, Lu5/e;->y()Ljava/io/InputStream;
+    invoke-virtual {p1}, Lv5/e;->z()Ljava/io/InputStream;
 
     .line 38
     .line 39
@@ -1914,11 +1914,11 @@
     move-result-object v0
 
     .line 41
-    sget-object v1, La6/e;->a:Lv3/e;
+    sget-object v1, Lb6/e;->a:Lw3/e;
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Lu5/e;->r()I
+    invoke-virtual {p1}, Lv5/e;->r()I
 
     .line 44
     .line 45
@@ -1953,7 +1953,7 @@
     .line 58
     .line 59
     :try_start_1
-    invoke-static {p3, p1}, La6/e;->d(Lcom/facebook/imagepipeline/common/RotationOptions;Lu5/e;)I
+    invoke-static {p3, p1}, Lb6/e;->d(Lcom/facebook/imagepipeline/common/RotationOptions;Lv5/e;)I
 
     .line 60
     .line 61
@@ -1961,7 +1961,7 @@
     move-result p1
 
     .line 63
-    invoke-static {v0, v2}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -1990,7 +1990,7 @@
 
     .line 77
     :cond_3
-    invoke-static {p3, p1}, La6/e;->e(Lcom/facebook/imagepipeline/common/RotationOptions;Lu5/e;)I
+    invoke-static {p3, p1}, Lb6/e;->e(Lcom/facebook/imagepipeline/common/RotationOptions;Lv5/e;)I
 
     .line 78
     .line 79
@@ -1998,7 +1998,7 @@
     move-result p1
 
     .line 81
-    invoke-static {v0, v2}, Lv3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lw3/j;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -2026,12 +2026,12 @@
     .line 93
     .line 94
     :goto_0
-    invoke-static {v0}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v0}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 95
     .line 96
     .line 97
-    new-instance p1, La6/b;
+    new-instance p1, Lb6/b;
 
     .line 98
     .line 99
@@ -2050,7 +2050,7 @@
 
     .line 104
     :goto_1
-    invoke-direct {p1, p2}, La6/b;-><init>(I)V
+    invoke-direct {p1, p2}, Lb6/b;-><init>(I)V
 
     .line 105
     .line 106
@@ -2062,7 +2062,7 @@
     move-exception p1
 
     .line 109
-    invoke-static {v0}, Lv3/b;->b(Ljava/io/InputStream;)V
+    invoke-static {v0}, Lw3/b;->b(Ljava/io/InputStream;)V
 
     .line 110
     .line 111
@@ -2358,7 +2358,7 @@
     .line 400
 .end method
 
-.method public d(Lu5/e;Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
+.method public d(Lv5/e;Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;)Z
     .locals 1
 
     .line 1
@@ -2379,7 +2379,7 @@
 
     .line 8
     .line 9
-    invoke-static {p2, p3, p1, v0}, La6/e;->f(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lu5/e;Z)I
+    invoke-static {p2, p3, p1, v0}, Lb6/e;->f(Lcom/facebook/imagepipeline/common/RotationOptions;Lcom/facebook/imagepipeline/common/ResizeOptions;Lv5/e;Z)I
 
     .line 10
     .line 11

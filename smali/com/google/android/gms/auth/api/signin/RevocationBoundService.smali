@@ -164,11 +164,11 @@
     .line 70
     .line 71
     :cond_2
-    new-instance p1, Lq9/v;
+    new-instance p1, Lr9/v;
 
     .line 72
     .line 73
-    invoke-direct {p1, p0}, Lq9/v;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p0}, Lr9/v;-><init>(Landroid/content/Context;)V
 
     .line 74
     .line 75

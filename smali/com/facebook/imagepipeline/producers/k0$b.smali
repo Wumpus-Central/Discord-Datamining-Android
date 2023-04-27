@@ -17,10 +17,10 @@
     value = {
         "Lcom/facebook/imagepipeline/producers/o<",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;",
         "Lcom/facebook/common/references/CloseableReference<",
-        "Lu5/c;",
+        "Lv5/c;",
         ">;>;"
     }
 .end annotation
@@ -39,7 +39,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -62,7 +62,7 @@
             "(",
             "Lcom/facebook/imagepipeline/producers/Consumer<",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;>;",
             "Lcom/facebook/imagepipeline/producers/n0;",
             "Lcom/facebook/imagepipeline/request/Postprocessor;",
@@ -860,7 +860,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation
@@ -990,15 +990,15 @@
     .line 93
 .end method
 
-.method private F(Lu5/c;)Lcom/facebook/common/references/CloseableReference;
+.method private F(Lv5/c;)Lcom/facebook/common/references/CloseableReference;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lu5/c;",
+            "Lv5/c;",
             ")",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;"
         }
     .end annotation
@@ -1007,11 +1007,11 @@
     move-object v0, p1
 
     .line 2
-    check-cast v0, Lu5/d;
+    check-cast v0, Lv5/d;
 
     .line 3
     .line 4
-    invoke-virtual {v0}, Lu5/d;->n()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lv5/d;->n()Landroid/graphics/Bitmap;
 
     .line 5
     .line 6
@@ -1043,7 +1043,7 @@
     move-result-object v1
 
     .line 20
-    invoke-virtual {v0}, Lu5/d;->C()I
+    invoke-virtual {v0}, Lv5/d;->C()I
 
     .line 21
     .line 22
@@ -1051,7 +1051,7 @@
     move-result v2
 
     .line 24
-    invoke-virtual {v0}, Lu5/d;->y()I
+    invoke-virtual {v0}, Lv5/d;->z()I
 
     .line 25
     .line 26
@@ -1060,11 +1060,11 @@
 
     .line 28
     :try_start_0
-    new-instance v4, Lu5/d;
+    new-instance v4, Lv5/d;
 
     .line 29
     .line 30
-    invoke-virtual {p1}, Lu5/c;->b()Lu5/i;
+    invoke-virtual {p1}, Lv5/c;->b()Lv5/i;
 
     .line 31
     .line 32
@@ -1072,12 +1072,12 @@
     move-result-object p1
 
     .line 34
-    invoke-direct {v4, v1, p1, v2, v3}, Lu5/d;-><init>(Lcom/facebook/common/references/CloseableReference;Lu5/i;II)V
+    invoke-direct {v4, v1, p1, v2, v3}, Lv5/d;-><init>(Lcom/facebook/common/references/CloseableReference;Lv5/i;II)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v0}, Lu5/c;->getExtras()Ljava/util/Map;
+    invoke-virtual {v0}, Lv5/c;->getExtras()Ljava/util/Map;
 
     .line 38
     .line 39
@@ -1085,7 +1085,7 @@
     move-result-object p1
 
     .line 41
-    invoke-virtual {v4, p1}, Lu5/c;->l(Ljava/util/Map;)V
+    invoke-virtual {v4, p1}, Lv5/c;->l(Ljava/util/Map;)V
 
     .line 42
     .line 43
@@ -1400,10 +1400,10 @@
     .line 44
 .end method
 
-.method private H(Lu5/c;)Z
+.method private H(Lv5/c;)Z
     .locals 0
 
-    instance-of p1, p1, Lu5/d;
+    instance-of p1, p1, Lv5/d;
 
     return p1
 .end method
@@ -1432,7 +1432,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation
@@ -1816,7 +1816,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation
@@ -1838,7 +1838,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lv3/j;->b(Ljava/lang/Boolean;)V
+    invoke-static {v0}, Lw3/j;->b(Ljava/lang/Boolean;)V
 
     .line 10
     .line 11
@@ -1851,11 +1851,11 @@
     move-result-object v0
 
     .line 16
-    check-cast v0, Lu5/c;
+    check-cast v0, Lv5/c;
 
     .line 17
     .line 18
-    invoke-direct {p0, v0}, Lcom/facebook/imagepipeline/producers/k0$b;->H(Lu5/c;)Z
+    invoke-direct {p0, v0}, Lcom/facebook/imagepipeline/producers/k0$b;->H(Lv5/c;)Z
 
     .line 19
     .line 20
@@ -1905,11 +1905,11 @@
     move-result-object p1
 
     .line 42
-    check-cast p1, Lu5/c;
+    check-cast p1, Lv5/c;
 
     .line 43
     .line 44
-    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/k0$b;->F(Lu5/c;)Lcom/facebook/common/references/CloseableReference;
+    invoke-direct {p0, p1}, Lcom/facebook/imagepipeline/producers/k0$b;->F(Lv5/c;)Lcom/facebook/common/references/CloseableReference;
 
     .line 45
     .line 46
@@ -2812,7 +2812,7 @@
     move-result-object p2
 
     .line 17
-    invoke-static {p1, p2}, Lv3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {p1, p2}, Lw3/f;->of(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     .line 18
     .line 19
@@ -2986,7 +2986,7 @@
         value = {
             "(",
             "Lcom/facebook/common/references/CloseableReference<",
-            "Lu5/c;",
+            "Lv5/c;",
             ">;I)V"
         }
     .end annotation

@@ -88,7 +88,7 @@
 
     .line 8
     .line 9
-    sget-object v0, Lpi/j;->r:Lpi/j;
+    sget-object v0, Lri/j;->r:Lri/j;
 
     .line 10
     .line 11
@@ -100,7 +100,7 @@
 
     .line 14
     .line 15
-    invoke-direct {v1, v2, v0}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lpi/j;)V
+    invoke-direct {v1, v2, v0}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lri/j;)V
 
     .line 16
     .line 17

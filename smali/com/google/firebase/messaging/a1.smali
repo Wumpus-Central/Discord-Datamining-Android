@@ -8,7 +8,7 @@
 
 .field private static final b:Ljava/lang/Object;
 
-.field private static c:Lbb/a;
+.field private static c:Lcb/a;
 
 
 # direct methods
@@ -119,7 +119,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/firebase/messaging/a1;->c:Lbb/a;
+    sget-object v0, Lcom/google/firebase/messaging/a1;->c:Lcb/a;
 
     .line 2
     .line 3
@@ -127,7 +127,7 @@
 
     .line 4
     .line 5
-    new-instance v0, Lbb/a;
+    new-instance v0, Lcb/a;
 
     .line 6
     .line 7
@@ -138,16 +138,16 @@
     const/4 v2, 0x1
 
     .line 10
-    invoke-direct {v0, p0, v2, v1}, Lbb/a;-><init>(Landroid/content/Context;ILjava/lang/String;)V
+    invoke-direct {v0, p0, v2, v1}, Lcb/a;-><init>(Landroid/content/Context;ILjava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    sput-object v0, Lcom/google/firebase/messaging/a1;->c:Lbb/a;
+    sput-object v0, Lcom/google/firebase/messaging/a1;->c:Lcb/a;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v2}, Lbb/a;->d(Z)V
+    invoke-virtual {v0, v2}, Lcb/a;->d(Z)V
 
     .line 16
     .line 17
@@ -227,7 +227,7 @@
 
     .line 4
     :try_start_0
-    sget-object v1, Lcom/google/firebase/messaging/a1;->c:Lbb/a;
+    sget-object v1, Lcom/google/firebase/messaging/a1;->c:Lcb/a;
 
     .line 5
     .line 6
@@ -255,11 +255,11 @@
     .line 16
     .line 17
     .line 18
-    sget-object p0, Lcom/google/firebase/messaging/a1;->c:Lbb/a;
+    sget-object p0, Lcom/google/firebase/messaging/a1;->c:Lcb/a;
 
     .line 19
     .line 20
-    invoke-virtual {p0}, Lbb/a;->c()V
+    invoke-virtual {p0}, Lcb/a;->c()V
 
     .line 21
     .line 22
@@ -672,7 +672,7 @@
 
     .line 25
     .line 26
-    sget-object p1, Lcom/google/firebase/messaging/a1;->c:Lbb/a;
+    sget-object p1, Lcom/google/firebase/messaging/a1;->c:Lcb/a;
 
     .line 27
     .line 28
@@ -680,7 +680,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p1, v1, v2}, Lbb/a;->a(J)V
+    invoke-virtual {p1, v1, v2}, Lcb/a;->a(J)V
 
     .line 31
     .line 32

@@ -109,7 +109,7 @@
 
     .line 18
     .line 19
-    sget-object p1, Llf/p;->m:Llf/p;
+    sget-object p1, Lnf/p;->m:Lnf/p;
 
     .line 20
     .line 21
@@ -122,7 +122,7 @@
     .line 24
     .line 25
     .line 26
-    invoke-static {p1, p3}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1, p3}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 27
     .line 28

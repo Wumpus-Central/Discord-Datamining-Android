@@ -779,7 +779,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, Lpi/l;->w(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lri/l;->w(Ljava/lang/CharSequence;)Z
 
     .line 14
     .line 15

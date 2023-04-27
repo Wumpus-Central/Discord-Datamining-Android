@@ -94,7 +94,7 @@
     xi = 0x30
 .end annotation
 
-.annotation runtime Lwi/f;
+.annotation runtime Lyi/f;
     with = Lcom/discord/chat/bridge/MessageType$Serializer;
 .end annotation
 
@@ -1595,7 +1595,7 @@
 
     .line 584
     .line 585
-    sget-object v0, Llf/p;->l:Llf/p;
+    sget-object v0, Lnf/p;->l:Lnf/p;
 
     .line 586
     .line 587
@@ -1603,7 +1603,7 @@
 
     .line 588
     .line 589
-    invoke-static {v0, v1}, Llf/m;->b(Llf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 590
     .line 591
@@ -1932,7 +1932,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 12
     .line 13
@@ -1953,7 +1953,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 23
     .line 24
@@ -1974,7 +1974,7 @@
     .line 31
     .line 32
     .line 33
-    invoke-static {p1}, Llf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {p1}, Lnf/m;->a(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
     .line 34
     .line 35
