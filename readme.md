@@ -12,7 +12,7 @@ This repository contains the following directories:
 
 - `./assets/`: This directory contains assets such as app emotes, manifest, and other files that may not be important.
 - `./res/`: This directory contains resources used in the data mining process, such as configuration files or reference data or even application graphic content (we are using xxhdpi assets).
-- `./smali/`: This directory contains the decompiled source code from the DEX files.
+- `./src/`: This directory contains the decompiled source code from the DEX files.
 
 ## How to Use this Repository
 
