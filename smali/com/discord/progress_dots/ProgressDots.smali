@@ -343,7 +343,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method static synthetic start$default(Lcom/discord/progress_dots/ProgressDots;ZILjava/lang/Object;)V
@@ -612,7 +611,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 
@@ -891,7 +889,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setupColors()V

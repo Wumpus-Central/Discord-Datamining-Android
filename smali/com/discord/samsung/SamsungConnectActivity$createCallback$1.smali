@@ -656,7 +656,7 @@
 
     .line 23
     .line 24
-    const-string v3, "Saamsung"
+    const-string v3, "Samsung"
 
     .line 25
     .line 26
@@ -912,7 +912,7 @@
     .line 146
     .line 147
     .line 148
-    const-string v3, "Saamsung"
+    const-string v3, "Samsung"
 
     .line 149
     .line 150

@@ -157,7 +157,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final push(Lcom/facebook/react/bridge/WritableNativeArray;Ljava/lang/Object;)V
@@ -575,7 +574,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final toJson(Lcom/facebook/react/bridge/ReadableArray;)Lorg/json/JSONArray;
@@ -1599,7 +1597,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final toNativeArray(Ljava/util/Collection;)Lcom/facebook/react/bridge/ReadableNativeArray;
@@ -1864,5 +1861,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

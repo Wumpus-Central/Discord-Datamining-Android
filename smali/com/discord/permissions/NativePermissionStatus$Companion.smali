@@ -205,7 +205,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final fromAndroidPermissionStatus(Ljava/lang/Object;)Ljava/io/Serializable;

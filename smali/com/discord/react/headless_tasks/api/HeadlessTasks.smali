@@ -263,7 +263,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final synthetic access$getSERVICE_CLASS$cp()Ljava/lang/Class;

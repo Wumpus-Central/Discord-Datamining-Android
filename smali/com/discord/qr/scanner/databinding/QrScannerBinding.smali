@@ -316,7 +316,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lcom/discord/qr/scanner/databinding/QrScannerBinding;

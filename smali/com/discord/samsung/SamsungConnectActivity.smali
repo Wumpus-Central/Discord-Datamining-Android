@@ -64,7 +64,7 @@
 
 .field public static final EXTRA_REQ_AUTH_PARAM_AUTH_SERVER_URL:Ljava/lang/String; = "com.discord.samsung.intent.extra.SERVER_URL"
 
-.field private static final LOG_TAG:Ljava/lang/String; = "Saamsung"
+.field private static final LOG_TAG:Ljava/lang/String; = "Samsung"
 
 .field public static final RESULT_SA_BINDING_FAILED:I = 0x1f4
 
@@ -548,7 +548,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 4
     .line 5
@@ -850,7 +850,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 4
     .line 5
@@ -1083,7 +1083,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 4
     .line 5
@@ -1124,7 +1124,7 @@
 
     .line 21
     .line 22
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 23
     .line 24
@@ -1172,7 +1172,7 @@
 
     .line 42
     .line 43
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 44
     .line 45
@@ -1347,7 +1347,7 @@
 
     .line 5
     .line 6
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 7
     .line 8
@@ -1530,7 +1530,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 4
     .line 5

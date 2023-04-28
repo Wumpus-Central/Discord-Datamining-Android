@@ -245,7 +245,7 @@
 
     .line 12
     .line 13
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 14
     .line 15
@@ -323,7 +323,7 @@
     move-result-object v7
 
     .line 49
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 50
     .line 51
@@ -442,7 +442,7 @@
     move-result p1
 
     .line 109
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 110
     .line 111
@@ -507,7 +507,7 @@
 
     .line 138
     .line 139
-    const-string v0, "Saamsung"
+    const-string v0, "Samsung"
 
     .line 140
     .line 141
@@ -581,7 +581,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Saamsung"
+    const-string v1, "Samsung"
 
     .line 4
     .line 5

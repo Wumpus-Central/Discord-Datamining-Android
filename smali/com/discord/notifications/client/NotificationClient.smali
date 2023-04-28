@@ -498,7 +498,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private final setNotification(Ljava/util/Map;)V
@@ -614,7 +613,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private final showNotification(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;Ljava/util/Map;Z)V
@@ -827,215 +825,235 @@
 
     .line 93
     .line 94
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
     .line 95
     .line 96
     :try_start_0
-    iget-object v0, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
+    sget-object v0, Lcom/discord/notifications/client/SilentNotificationManager;->Companion:Lcom/discord/notifications/client/SilentNotificationManager$Companion;
 
     .line 97
     .line 98
-    invoke-virtual {v0, p1}, Lcom/discord/notifications/renderer/NotificationRenderer;->initIconUrlUtils(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/discord/notifications/client/SilentNotificationManager$Companion;->get(Landroid/content/Context;)Lcom/discord/notifications/client/SilentNotificationManager;
 
     .line 99
     .line 100
     .line 101
-    iget-object v0, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
+    move-result-object v0
 
     .line 102
-    .line 103
-    invoke-virtual {v0, p1}, Lcom/discord/notifications/renderer/NotificationRenderer;->initFresco(Landroid/content/Context;)V
+    invoke-virtual {v0, p2}, Lcom/discord/notifications/client/SilentNotificationManager;->shouldDisplayNotification(Lcom/discord/notifications/api/NotificationData;)Z
 
+    .line 103
     .line 104
     .line 105
+    move-result v1
+
     .line 106
-    iget-object v1, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
+    if-eqz v1, :cond_2
 
     .line 107
     .line 108
-    iget-object v0, p0, Lcom/discord/notifications/client/NotificationClient;->cache:Lcom/discord/notifications/client/NotificationCache;
+    iget-object v1, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
 
     .line 109
     .line 110
-    invoke-virtual {v0, p1}, Lcom/discord/notifications/client/NotificationCache;->getCurrentUsername(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Lcom/discord/notifications/renderer/NotificationRenderer;->initIconUrlUtils(Landroid/content/Context;)V
 
     .line 111
     .line 112
     .line 113
-    move-result-object v4
+    iget-object v1, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
 
     .line 114
-    invoke-direct {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->getBehaviors(Landroid/content/Context;)Lcom/discord/notifications/renderer/NotificationBehaviors;
-
     .line 115
+    invoke-virtual {v1, p1}, Lcom/discord/notifications/renderer/NotificationRenderer;->initFresco(Landroid/content/Context;)V
+
     .line 116
     .line 117
-    move-result-object v6
-
     .line 118
-    invoke-virtual {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->shouldNotifyEveryTime(Landroid/content/Context;)Z
+    iget-object v2, p0, Lcom/discord/notifications/client/NotificationClient;->renderer:Lcom/discord/notifications/renderer/NotificationRenderer;
 
     .line 119
     .line 120
-    .line 121
-    move-result v8
+    iget-object v1, p0, Lcom/discord/notifications/client/NotificationClient;->cache:Lcom/discord/notifications/client/NotificationCache;
 
+    .line 121
     .line 122
-    move-object v2, p1
+    invoke-virtual {v1, p1}, Lcom/discord/notifications/client/NotificationCache;->getCurrentUsername(Landroid/content/Context;)Ljava/lang/String;
 
     .line 123
-    move-object v3, p2
-
     .line 124
-    move-object v5, p3
-
     .line 125
-    move v7, p4
+    move-result-object v5
 
     .line 126
-    invoke-virtual/range {v1 .. v8}, Lcom/discord/notifications/renderer/NotificationRenderer;->display(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;Ljava/lang/String;Ljava/util/Map;Lcom/discord/notifications/renderer/NotificationBehaviors;ZZ)V
+    invoke-direct {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->getBehaviors(Landroid/content/Context;)Lcom/discord/notifications/renderer/NotificationBehaviors;
 
     .line 127
     .line 128
     .line 129
-    invoke-virtual {p2}, Lcom/discord/notifications/api/NotificationData;->getType()Ljava/lang/String;
+    move-result-object v7
 
     .line 130
+    invoke-virtual {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->shouldNotifyEveryTime(Landroid/content/Context;)Z
+
     .line 131
     .line 132
-    move-result-object p2
-
     .line 133
-    const-string p3, "MESSAGE_CREATE"
+    move-result v9
 
     .line 134
+    move-object v3, p1
+
     .line 135
-    invoke-static {p2, p3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-object v4, p2
 
     .line 136
+    move-object v6, p3
+
     .line 137
+    move v8, p4
+
     .line 138
-    move-result p2
+    invoke-virtual/range {v2 .. v9}, Lcom/discord/notifications/renderer/NotificationRenderer;->display(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;Ljava/lang/String;Ljava/util/Map;Lcom/discord/notifications/renderer/NotificationBehaviors;ZZ)V
 
     .line 139
-    if-eqz p2, :cond_2
-
     .line 140
     .line 141
-    invoke-direct {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->updateAndComputeIfShouldRunBackgroundSync(Landroid/content/Context;)Z
+    invoke-virtual {v0, p2}, Lcom/discord/notifications/client/SilentNotificationManager;->onDisplayNotification(Lcom/discord/notifications/api/NotificationData;)V
 
     .line 142
     .line 143
     .line 144
-    move-result p2
+    goto :goto_0
 
     .line 145
-    if-eqz p2, :cond_2
+    :cond_2
+    invoke-virtual {v0, p2}, Lcom/discord/notifications/client/SilentNotificationManager;->onSilentNotification(Lcom/discord/notifications/api/NotificationData;)V
 
     .line 146
     .line 147
-    sget-object v0, Lcom/discord/react/headless_tasks/api/HeadlessTasks;->Companion:Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;
-
     .line 148
-    .line 149
-    const-string v2, "BackgroundSync"
+    :goto_0
+    invoke-virtual {p2}, Lcom/discord/notifications/api/NotificationData;->getType()Ljava/lang/String;
 
+    .line 149
     .line 150
     .line 151
-    const-wide/16 v3, 0x7530
+    move-result-object p2
 
     .line 152
-    .line 153
-    const/4 v5, 0x0
+    const-string p3, "MESSAGE_CREATE"
 
+    .line 153
     .line 154
-    const/4 v6, 0x0
+    invoke-static {p2, p3}, Lkotlin/jvm/internal/q;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 155
-    const/4 v7, 0x1
-
     .line 156
-    const/16 v8, 0x18
-
     .line 157
+    move-result p2
+
     .line 158
-    const/4 v9, 0x0
+    if-eqz p2, :cond_3
 
     .line 159
-    move-object v1, p1
-
     .line 160
-    invoke-static/range {v0 .. v9}, Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;->startHeadlessTask$default(Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;Landroid/content/Context;Ljava/lang/String;JZLandroid/os/Bundle;ZILjava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-direct {p0, p1}, Lcom/discord/notifications/client/NotificationClient;->updateAndComputeIfShouldRunBackgroundSync(Landroid/content/Context;)Z
 
     .line 161
     .line 162
     .line 163
-    goto :goto_0
+    move-result p2
 
     .line 164
-    :catch_0
-    move-exception p1
+    if-eqz p2, :cond_3
 
     .line 165
-    sget-object p2, Lcom/discord/logging/Log;->INSTANCE:Lcom/discord/logging/Log;
-
     .line 166
+    sget-object v0, Lcom/discord/react/headless_tasks/api/HeadlessTasks;->Companion:Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;
+
     .line 167
-    const-class p3, Lcom/discord/notifications/client/NotificationClient;
-
     .line 168
-    .line 169
-    invoke-virtual {p3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    const-string v2, "BackgroundSync"
 
+    .line 169
     .line 170
+    const-wide/16 v3, 0x7530
+
     .line 171
     .line 172
-    move-result-object p3
+    const/4 v5, 0x0
 
     .line 173
-    const-string p4, "javaClass.simpleName"
+    const/4 v6, 0x0
 
     .line 174
+    const/4 v7, 0x1
+
     .line 175
-    invoke-static {p3, p4}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/16 v8, 0x18
 
     .line 176
     .line 177
+    const/4 v9, 0x0
+
     .line 178
-    const-string p4, "Unable to display notification"
+    move-object v1, p1
 
     .line 179
-    .line 180
-    invoke-virtual {p2, p3, p4, p1}, Lcom/discord/logging/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static/range {v0 .. v9}, Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;->startHeadlessTask$default(Lcom/discord/react/headless_tasks/api/HeadlessTasks$Companion;Landroid/content/Context;Ljava/lang/String;JZLandroid/os/Bundle;ZILjava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 180
     .line 181
     .line 182
+    goto :goto_1
+
     .line 183
-    :cond_2
-    :goto_0
-    return-void
+    :catch_0
+    move-exception p1
+
     .line 184
+    sget-object p2, Lcom/discord/logging/Log;->INSTANCE:Lcom/discord/logging/Log;
+
     .line 185
     .line 186
+    const-class p3, Lcom/discord/notifications/client/NotificationClient;
+
     .line 187
     .line 188
+    invoke-virtual {p3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
     .line 189
     .line 190
     .line 191
+    move-result-object p3
+
     .line 192
+    const-string p4, "javaClass.simpleName"
+
     .line 193
     .line 194
+    invoke-static {p3, p4}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 195
     .line 196
     .line 197
+    const-string p4, "Unable to display notification"
+
     .line 198
     .line 199
+    invoke-virtual {p2, p3, p4, p1}, Lcom/discord/logging/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
     .line 200
     .line 201
     .line 202
+    :cond_3
+    :goto_1
+    return-void
     .line 203
     .line 204
     .line 205
@@ -1275,7 +1293,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 
@@ -1368,7 +1385,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final getPendingNotification()Ljava/util/Map;
@@ -2358,7 +2374,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isSoundsEnabled(Landroid/content/Context;)Z
@@ -2451,7 +2466,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isVibrationsEnabled(Landroid/content/Context;)Z
@@ -2544,7 +2558,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final markNotificationAsDirectReply(Landroid/content/Context;J)V
@@ -3951,7 +3964,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setNotificationListener(Lkotlin/jvm/functions/Function1;)V
@@ -4053,7 +4065,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setNotifyEveryTime(Landroid/content/Context;Z)V
@@ -4541,7 +4552,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setTokenListener(Lkotlin/jvm/functions/Function1;)V
@@ -4647,7 +4657,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setVibrationsEnabled(Landroid/content/Context;Z)V
@@ -4933,5 +4942,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

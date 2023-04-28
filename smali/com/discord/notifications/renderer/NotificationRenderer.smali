@@ -381,7 +381,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final display(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;Ljava/lang/String;Ljava/util/Map;Lcom/discord/notifications/renderer/NotificationBehaviors;ZZ)V
@@ -1096,7 +1095,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final initIconUrlUtils(Landroid/content/Context;)V
@@ -1197,7 +1195,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final initNotificationCategories(Landroid/content/Context;Ljava/util/Map;Ljava/util/Map;)V

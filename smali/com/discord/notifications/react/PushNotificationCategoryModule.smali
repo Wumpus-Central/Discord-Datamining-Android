@@ -127,7 +127,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 
@@ -250,7 +249,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final registerNotificationCategoriesAndGroups(Lcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/ReadableMap;)V

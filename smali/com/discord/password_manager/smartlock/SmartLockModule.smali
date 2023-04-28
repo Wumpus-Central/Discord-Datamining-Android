@@ -313,7 +313,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static synthetic a(Lcom/discord/password_manager/smartlock/SmartLockModule;Lcom/google/android/gms/tasks/Task;)V
@@ -1444,7 +1443,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -1553,7 +1551,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final updateAccountCredentials(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z

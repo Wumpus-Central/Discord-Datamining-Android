@@ -166,7 +166,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private final getPermissionsModule()Lcom/facebook/react/modules/permissions/PermissionsModule;
@@ -319,7 +318,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasBluetoothAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -422,7 +420,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasCameraAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -525,7 +522,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasContactAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -628,7 +624,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasExternalStorageAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -731,7 +726,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasMicrophoneAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -834,7 +828,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasModifyAudioAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -937,7 +930,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final hasPhotoAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1040,7 +1032,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestBluetoothAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1143,7 +1134,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestCameraAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1246,7 +1236,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestContactsAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1349,7 +1338,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestExternalStorageAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1452,7 +1440,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestMicrophoneAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1555,7 +1542,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestModifyAudioAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1658,7 +1644,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final requestPhotoAuthorization(Lcom/facebook/react/bridge/Promise;)V
@@ -1761,5 +1746,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

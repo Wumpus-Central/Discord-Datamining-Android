@@ -167,7 +167,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public onNewToken(Ljava/lang/String;)V
@@ -262,5 +261,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

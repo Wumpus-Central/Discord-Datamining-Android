@@ -4540,7 +4540,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final getIconUrl(Lcom/discord/notifications/api/NotificationData;Landroid/content/Context;)Ljava/lang/String;
@@ -7166,7 +7165,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final getSender(Lcom/discord/notifications/api/NotificationData;Landroid/graphics/Bitmap;)Landroidx/core/app/Person;
@@ -8094,7 +8092,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final getSound(Lcom/discord/notifications/api/NotificationData;Landroid/content/Context;)Landroid/net/Uri;
@@ -11727,7 +11724,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final isGroupConversation(Lcom/discord/notifications/api/NotificationData;)Z
@@ -11849,7 +11845,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final renderMessageContent(Lcom/discord/notifications/api/NotificationData;Landroid/content/Context;)Ljava/lang/CharSequence;
@@ -12260,7 +12255,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private static final toIconCompat(Landroid/graphics/Bitmap;)Landroidx/core/graphics/drawable/IconCompat;

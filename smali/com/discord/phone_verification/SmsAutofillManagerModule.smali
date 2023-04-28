@@ -169,7 +169,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final synthetic access$getReactEvents$p(Lcom/discord/phone_verification/SmsAutofillManagerModule;)Lcom/discord/reactevents/ReactEvents;

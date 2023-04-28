@@ -217,7 +217,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 
@@ -318,7 +317,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final getCurrentUsername(Landroid/content/Context;)Ljava/lang/String;
@@ -417,7 +415,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isAuthed(Landroid/content/Context;)Z
@@ -516,7 +513,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isLightsEnabled(Landroid/content/Context;)Z
@@ -615,7 +611,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isSoundsEnabled(Landroid/content/Context;)Z
@@ -714,7 +709,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final isVibrationsEnabled(Landroid/content/Context;)Z
@@ -813,7 +807,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setBackgroundSyncRan(Landroid/content/Context;)V
@@ -922,7 +915,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final setCurrentUsername(Landroid/content/Context;Ljava/lang/String;)V
@@ -2263,5 +2255,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

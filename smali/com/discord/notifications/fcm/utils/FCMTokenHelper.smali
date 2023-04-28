@@ -160,7 +160,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private static final getToken$lambda$1(Lkotlin/jvm/functions/Function1;Lcom/google/android/gms/tasks/Task;)V
@@ -552,5 +551,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

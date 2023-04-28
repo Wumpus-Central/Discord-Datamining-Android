@@ -186,7 +186,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static final synthetic access$getEventEmitter(Lcom/discord/notifications/react/PushNotificationModule;)Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;
@@ -467,7 +466,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final clearAllNotifications()V
@@ -604,7 +602,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final getLightsEnabled(Lcom/facebook/react/bridge/Promise;)V
@@ -717,7 +714,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -838,7 +834,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final getVibrationsEnabled(Lcom/facebook/react/bridge/Promise;)V
@@ -951,7 +946,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final handleDirectReplySuccess(Ljava/lang/String;)V
@@ -1056,7 +1050,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final markNotificationAsDirectReply(Ljava/lang/String;)V
@@ -1172,7 +1165,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final onRegisterNotificationToken()V
@@ -2342,5 +2334,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

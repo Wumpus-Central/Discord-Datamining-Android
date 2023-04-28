@@ -174,7 +174,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method private final transformRequestResult(Lcom/facebook/react/bridge/Promise;)Lcom/discord/react/utilities/PromiseWrapper;
@@ -277,5 +276,4 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method

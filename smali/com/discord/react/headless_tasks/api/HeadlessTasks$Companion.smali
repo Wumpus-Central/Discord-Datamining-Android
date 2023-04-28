@@ -900,7 +900,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public final startHeadlessTask(Landroid/content/Context;Ljava/lang/String;JZLandroid/os/Bundle;Z)V

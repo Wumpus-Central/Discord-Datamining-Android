@@ -125,7 +125,6 @@
     .line 74
     .line 75
     .line 76
-    .line 77
 .end method
 
 .method public static synthetic copy$default(Lcom/discord/overlapping_circles/OverlappingItem;Ljava/lang/String;ILjava/lang/Object;)Lcom/discord/overlapping_circles/OverlappingItem;
