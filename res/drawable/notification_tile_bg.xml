@@ -1,2 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android" android:src="0x7f080646" android:tileMode="repeat"/>
+<bitmap android:src="@drawable/APKTOOL_DUMMY_646" android:tileMode="repeat"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

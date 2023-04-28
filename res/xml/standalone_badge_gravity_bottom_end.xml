@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<badge xmlns:app="http://schemas.android.com/apk/res-auto" app:badgeGravity="8388693" app:maxCharacterCount="2"/>
+<badge app:badgeGravity="BOTTOM_END" app:maxCharacterCount="2" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -82,7 +82,7 @@
         <item name="colorTertiary">@color/m3_sys_color_dynamic_light_tertiary</item>
         <item name="colorTertiaryContainer">@color/m3_sys_color_dynamic_light_tertiary_container</item>
     </style>
-    <style name="ThemeOverlay.Material3.DynamicColors.Dark">
+    <style name="ThemeOverlay.Material3.DynamicColors.Dark" parent="">
         <item name="android:colorBackground">@color/m3_sys_color_dynamic_dark_background</item>
         <item name="android:textColorPrimary">@color/m3_dynamic_dark_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_dynamic_dark_primary_text_disable_only</item>
@@ -123,7 +123,7 @@
         <item name="colorTertiary">@color/m3_sys_color_dynamic_dark_tertiary</item>
         <item name="colorTertiaryContainer">@color/m3_sys_color_dynamic_dark_tertiary_container</item>
     </style>
-    <style name="ThemeOverlay.Material3.DynamicColors.Light">
+    <style name="ThemeOverlay.Material3.DynamicColors.Light" parent="">
         <item name="android:colorBackground">@color/m3_sys_color_dynamic_light_background</item>
         <item name="android:textColorPrimary">@color/m3_dynamic_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_dynamic_primary_text_disable_only</item>
