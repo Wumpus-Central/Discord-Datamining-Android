@@ -3,7 +3,7 @@ package com.discord.misc.utilities.measure;
 import android.util.Size;
 import android.view.View;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003:\u0001\u0018B\u0013\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0002J'\u0010\f\u001a\u00020\r\"\b\b\u0001\u0010\u0001*\u00020\u00022\u0006\u0010\u000e\u001a\u0002H\u00012\u0006\u0010\u000f\u001a\u00020\u0010H\u0002¢\u0006\u0002\u0010\u0011J1\u0010\f\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\u00132\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00160\u00152\u0006\u0010\u000f\u001a\u00020\u0010H\u0001¢\u0006\u0002\b\u0017R\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00028\u0000X\u0082.¢\u0006\u0004\n\u0002\u0010\b¨\u0006\u0019"}, m15073d2 = {"Lcom/discord/misc/utilities/measure/HeadlessViewMeasurer;", "T", "Landroid/view/View;", "", "clazz", "Ljava/lang/Class;", "(Ljava/lang/Class;)V", "shadowView", "Landroid/view/View;", "getMeasureSpecMode", "", "size", "measure", "Landroid/util/Size;", "view", "measureBounds", "Lcom/discord/misc/utilities/measure/HeadlessViewMeasurer$MeasureBounds;", "(Landroid/view/View;Lcom/discord/misc/utilities/measure/HeadlessViewMeasurer$MeasureBounds;)Landroid/util/Size;", "context", "Landroid/content/Context;", "configureView", "Lkotlin/Function1;", "", "measure$misc_utilities_release", "MeasureBounds", "misc_utilities_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -13,7 +13,7 @@ public final class HeadlessViewMeasurer<T extends View> {
     private T shadowView;
 
     public HeadlessViewMeasurer(Class<T> clazz) {
-        C9971q.m14633g(clazz, "clazz");
+        C9677q.m14633g(clazz, "clazz");
         this.clazz = clazz;
     }
 
@@ -50,17 +50,17 @@ public final class HeadlessViewMeasurer<T extends View> {
         /*
             r7 = this;
             java.lang.String r0 = "context"
-            kotlin.jvm.internal.C9971q.m14633g(r8, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r8, r0)
             java.lang.String r0 = "configureView"
-            kotlin.jvm.internal.C9971q.m14633g(r9, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r9, r0)
             java.lang.String r0 = "measureBounds"
-            kotlin.jvm.internal.C9971q.m14633g(r10, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r10, r0)
             T extends android.view.View r0 = r7.shadowView
             r1 = 0
             java.lang.String r2 = "shadowView"
             if (r0 == 0) goto L_0x0022
             if (r0 != 0) goto L_0x001c
-            kotlin.jvm.internal.C9971q.m14615y(r2)
+            kotlin.jvm.internal.C9677q.m14615y(r2)
             r0 = r1
         L_0x001c:
             android.content.Context r0 = r0.getContext()
@@ -77,19 +77,19 @@ public final class HeadlessViewMeasurer<T extends View> {
             r3[r6] = r8
             java.lang.Object r8 = r0.newInstance(r3)
             java.lang.String r0 = "null cannot be cast to non-null type T of com.discord.misc.utilities.measure.HeadlessViewMeasurer"
-            kotlin.jvm.internal.C9971q.m14635e(r8, r0)
+            kotlin.jvm.internal.C9677q.m14635e(r8, r0)
             android.view.View r8 = (android.view.View) r8
             r7.shadowView = r8
         L_0x0041:
             T extends android.view.View r8 = r7.shadowView
             if (r8 != 0) goto L_0x0049
-            kotlin.jvm.internal.C9971q.m14615y(r2)
+            kotlin.jvm.internal.C9677q.m14615y(r2)
             r8 = r1
         L_0x0049:
             r9.invoke(r8)
             T extends android.view.View r8 = r7.shadowView
             if (r8 != 0) goto L_0x0054
-            kotlin.jvm.internal.C9971q.m14615y(r2)
+            kotlin.jvm.internal.C9677q.m14615y(r2)
             goto L_0x0055
         L_0x0054:
             r1 = r8
@@ -145,7 +145,7 @@ public final class HeadlessViewMeasurer<T extends View> {
                 return false;
             }
             MeasureBounds measureBounds = (MeasureBounds) obj;
-            return C9971q.m14638b(this.widthPx, measureBounds.widthPx) && C9971q.m14638b(this.heightPx, measureBounds.heightPx);
+            return C9677q.m14638b(this.widthPx, measureBounds.widthPx) && C9677q.m14638b(this.heightPx, measureBounds.heightPx);
         }
 
         public final Integer getHeightPx() {

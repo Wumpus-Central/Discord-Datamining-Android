@@ -1,11 +1,11 @@
 package com.discord.emoji;
 
-import co.discord.media_engine.C4081a;
+import co.discord.media_engine.C2968a;
 import com.discord.icons.IconUrlUtils;
 import java.util.Set;
 import kotlin.Metadata;
-import kotlin.collections.C9921w;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9625w;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000 \n2\u00020\u0001:\u0004\n\u000b\f\rB\u0007\b\u0004¢\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H&J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH&\u0082\u0001\u0003\u000e\u000f\u0010¨\u0006\u0011"}, m15073d2 = {"Lcom/discord/emoji/RenderableEmoji;", "", "()V", "getContentDescription", "", "getUrl", "allowAnimation", "", "sizePx", "", "Companion", "CustomWithEmojiId", "CustomWithUrl", "Unicode", "Lcom/discord/emoji/RenderableEmoji$CustomWithEmojiId;", "Lcom/discord/emoji/RenderableEmoji$CustomWithUrl;", "Lcom/discord/emoji/RenderableEmoji$Unicode;", "emoji_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -25,18 +25,18 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithEmojiId customWithEmojiId(long j, boolean z, String alt) {
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(alt, "alt");
             return new CustomWithEmojiId(j, z, alt);
         }
 
         public final CustomWithUrl customWithUrl(String url, String alt) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(alt, "alt");
             return new CustomWithUrl(url, alt);
         }
 
         public final Unicode unicode(String surrogates) {
-            C9971q.m14633g(surrogates, "surrogates");
+            C9677q.m14633g(surrogates, "surrogates");
             return new Unicode(Surrogates.m41986constructorimpl(surrogates), null);
         }
     }
@@ -51,7 +51,7 @@ public abstract class RenderableEmoji {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public CustomWithEmojiId(long j, boolean z, String alt) {
             super(null);
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(alt, "alt");
             this.emojiId = j;
             this.isAnimated = z;
             this.alt = alt;
@@ -83,7 +83,7 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithEmojiId copy(long j, boolean z, String alt) {
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(alt, "alt");
             return new CustomWithEmojiId(j, z, alt);
         }
 
@@ -95,7 +95,7 @@ public abstract class RenderableEmoji {
                 return false;
             }
             CustomWithEmojiId customWithEmojiId = (CustomWithEmojiId) obj;
-            return this.emojiId == customWithEmojiId.emojiId && this.isAnimated == customWithEmojiId.isAnimated && C9971q.m14638b(this.alt, customWithEmojiId.alt);
+            return this.emojiId == customWithEmojiId.emojiId && this.isAnimated == customWithEmojiId.isAnimated && C9677q.m14638b(this.alt, customWithEmojiId.alt);
         }
 
         public final String getAlt() {
@@ -117,7 +117,7 @@ public abstract class RenderableEmoji {
         }
 
         public int hashCode() {
-            int a = C4081a.m32873a(this.emojiId) * 31;
+            int a = C2968a.m32873a(this.emojiId) * 31;
             boolean z = this.isAnimated;
             if (z) {
                 z = true;
@@ -149,8 +149,8 @@ public abstract class RenderableEmoji {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public CustomWithUrl(String url, String alt) {
             super(null);
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(alt, "alt");
             this.url = url;
             this.alt = alt;
         }
@@ -174,8 +174,8 @@ public abstract class RenderableEmoji {
         }
 
         public final CustomWithUrl copy(String url, String alt) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(alt, "alt");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(alt, "alt");
             return new CustomWithUrl(url, alt);
         }
 
@@ -187,7 +187,7 @@ public abstract class RenderableEmoji {
                 return false;
             }
             CustomWithUrl customWithUrl = (CustomWithUrl) obj;
-            return C9971q.m14638b(this.url, customWithUrl.url) && C9971q.m14638b(this.alt, customWithUrl.alt);
+            return C9677q.m14638b(this.url, customWithUrl.url) && C9677q.m14638b(this.alt, customWithUrl.alt);
         }
 
         public final String getAlt() {
@@ -253,7 +253,7 @@ public abstract class RenderableEmoji {
 
         /* renamed from: copy-hLBmEAo  reason: not valid java name */
         public final Unicode m41983copyhLBmEAo(String surrogates) {
-            C9971q.m14633g(surrogates, "surrogates");
+            C9677q.m14633g(surrogates, "surrogates");
             return new Unicode(surrogates, null);
         }
 
@@ -295,7 +295,7 @@ public abstract class RenderableEmoji {
 
     static {
         Set<String> i;
-        i = C9921w.m14717i("™", "©", "®");
+        i = C9625w.m14717i("™", "©", "®");
         exceptions = i;
     }
 

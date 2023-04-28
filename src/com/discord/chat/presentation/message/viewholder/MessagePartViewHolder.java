@@ -10,7 +10,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class MessagePartViewHolder extends RecyclerView.ViewHolder {
     private MessagePartViewHolder(View view) {
         super(view);
-        view.setLayoutParams(new RecyclerView.C3109i(-1, -2));
+        view.setLayoutParams(new RecyclerView.C1954i(-1, -2));
     }
 
     public /* synthetic */ MessagePartViewHolder(View view, DefaultConstructorMarker defaultConstructorMarker) {

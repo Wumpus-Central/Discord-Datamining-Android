@@ -1,19 +1,19 @@
 package com.discord.safearea.events;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0081\b\u0018\u0000 )2\u00020\u0001:\u0002()BA\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fB-\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005¢\u0006\u0002\u0010\rJ\t\u0010\u0014\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0005HÆ\u0003J;\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001dHÖ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001f\u001a\u00020 HÖ\u0001J!\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u00002\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'HÇ\u0001R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000fR\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000f¨\u0006*"}, m15073d2 = {"Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", ViewProps.TOP, "", ViewProps.BOTTOM, ViewProps.LEFT, ViewProps.RIGHT, "imeInsetsBottom", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IFFFFFLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(FFFFF)V", "getBottom", "()F", "getImeInsetsBottom", "getLeft", "getRight", "getTop", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "safe_area_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
 public final class OnSafeAreaInsetsDidChangeData implements ReactEvent {
@@ -67,9 +67,9 @@ public final class OnSafeAreaInsetsDidChangeData implements ReactEvent {
     }
 
     public static final void write$Self(OnSafeAreaInsetsDidChangeData self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13871s(serialDesc, 0, self.top);
         output.mo13871s(serialDesc, 1, self.bottom);
         output.mo13871s(serialDesc, 2, self.left);
@@ -152,7 +152,7 @@ public final class OnSafeAreaInsetsDidChangeData implements ReactEvent {
 
     public /* synthetic */ OnSafeAreaInsetsDidChangeData(int i, float f, float f2, float f3, float f4, float f5, SerializationConstructorMarker serializationConstructorMarker) {
         if (31 != (i & 31)) {
-            C3681n1.m33818b(i, 31, OnSafeAreaInsetsDidChangeData$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 31, OnSafeAreaInsetsDidChangeData$$serializer.INSTANCE.getDescriptor());
         }
         this.top = f;
         this.bottom = f2;

@@ -15,7 +15,7 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.webrtc.RendererCommon;
 import org.webrtc.VideoFrame;
@@ -52,7 +52,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VideoStreamTextureView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ VideoStreamTextureView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -112,7 +112,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
             Debug debug = Debug.INSTANCE;
             String unused = this.name;
             SurfaceTexture surfaceTexture = getSurfaceTexture();
-            C9971q.m14636d(surfaceTexture);
+            C9677q.m14636d(surfaceTexture);
             surfaceTexture.setDefaultBufferSize(getMeasuredWidth(), getMeasuredHeight());
         }
     }
@@ -122,7 +122,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         Debug debug = Debug.INSTANCE;
         RendererCommon.RendererEvents rendererEvents = this.rendererEvents;
         if (rendererEvents == null) {
-            C9971q.m14615y("rendererEvents");
+            C9677q.m14615y("rendererEvents");
             rendererEvents = null;
         }
         rendererEvents.onFirstFrameRendered();
@@ -130,7 +130,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
 
     @Override // org.webrtc.VideoSink
     public void onFrame(VideoFrame videoFrame) {
-        C9971q.m14633g(videoFrame, "videoFrame");
+        C9677q.m14633g(videoFrame, "videoFrame");
         this.eglRenderer.onFrame(videoFrame);
     }
 
@@ -151,7 +151,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         Debug debug = Debug.INSTANCE;
         RendererCommon.RendererEvents rendererEvents = this.rendererEvents;
         if (rendererEvents == null) {
-            C9971q.m14615y("rendererEvents");
+            C9677q.m14615y("rendererEvents");
             rendererEvents = null;
         }
         rendererEvents.onFrameResolutionChanged(i, i2, i3);
@@ -205,8 +205,8 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
     }
 
     public final void startRenderingStream(String streamId, RendererCommon.RendererEvents events) {
-        C9971q.m14633g(streamId, "streamId");
-        C9971q.m14633g(events, "events");
+        C9677q.m14633g(streamId, "streamId");
+        C9677q.m14633g(events, "events");
         Debug debug = Debug.INSTANCE;
         this.startRenderingTimestampNs = System.nanoTime();
         attachToStream(this.mediaEngine, streamId, events);
@@ -222,7 +222,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public VideoStreamTextureView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         String str = "VideoStreamTextureView-" + count.incrementAndGet();
         this.name = str;
         this.videoLayoutMeasure = new RendererCommon.VideoLayoutMeasure();
@@ -234,7 +234,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
 
             @Override // android.view.TextureView.SurfaceTextureListener
             public void onSurfaceTextureAvailable(SurfaceTexture surface, int i, int i2) {
-                C9971q.m14633g(surface, "surface");
+                C9677q.m14633g(surface, "surface");
                 Debug debug = Debug.INSTANCE;
                 String unused = VideoStreamTextureView.this.name;
                 VideoStreamTextureView.this.updateSurfaceSize();
@@ -243,7 +243,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
 
             @Override // android.view.TextureView.SurfaceTextureListener
             public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
-                C9971q.m14633g(surface, "surface");
+                C9677q.m14633g(surface, "surface");
                 System.nanoTime();
                 boolean onSurfaceTextureDestroyed = VideoStreamTextureView.this.eglRenderer.onSurfaceTextureDestroyed(surface);
                 Debug debug = Debug.INSTANCE;
@@ -253,7 +253,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
 
             @Override // android.view.TextureView.SurfaceTextureListener
             public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int i, int i2) {
-                C9971q.m14633g(surface, "surface");
+                C9677q.m14633g(surface, "surface");
                 Debug debug = Debug.INSTANCE;
                 String unused = VideoStreamTextureView.this.name;
                 VideoStreamTextureView.this.eglRenderer.onSurfaceTextureSizeChanged(surface, i, i2);
@@ -261,7 +261,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
 
             @Override // android.view.TextureView.SurfaceTextureListener
             public void onSurfaceTextureUpdated(SurfaceTexture surface) {
-                C9971q.m14633g(surface, "surface");
+                C9677q.m14633g(surface, "surface");
                 VideoStreamTextureView.this.eglRenderer.onSurfaceTextureUpdated(surface);
             }
         });

@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000 \u000e2\u00020\u0001:\u0001\u000eB\u0005¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u00062\u0006\u0010\b\u001a\u00020\u0005H\u0086\u0002J\u0016\u0010\t\u001a\u00020\n2\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\u000b\u001a\u00020\u0006J\u000e\u0010\f\u001a\u00020\n2\u0006\u0010\b\u001a\u00020\u0005J\u0006\u0010\r\u001a\u00020\nR\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, m15073d2 = {"Lcom/discord/media/engine/MediaEngineNativeSpeedTestConnections;", "", "()V", "connections", "", "", "Lcom/discord/native/engine/NativeSpeedTestConnection;", "get", "connectionId", "register", "", "connection", "removeAndDispose", "removeAndDisposeAll", "Companion", "media_engine_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -32,7 +32,7 @@ public final class MediaEngineNativeSpeedTestConnections {
     }
 
     public final void register(int i, NativeSpeedTestConnection connection) {
-        C9971q.m14633g(connection, "connection");
+        C9677q.m14633g(connection, "connection");
         if (!(!this.connections.containsKey(Integer.valueOf(i)))) {
             throw new IllegalStateException("Check failed.".toString());
         } else if (!this.connections.containsValue(connection)) {
@@ -50,7 +50,7 @@ public final class MediaEngineNativeSpeedTestConnections {
             System.nanoTime();
             remove.dispose();
             Debug debug = Debug.INSTANCE;
-            unit = Unit.f22042a;
+            unit = Unit.f25780a;
         } else {
             unit = null;
         }

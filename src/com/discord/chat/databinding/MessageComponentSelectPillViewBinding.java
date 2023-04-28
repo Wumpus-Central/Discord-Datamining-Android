@@ -3,7 +3,7 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.google.android.material.textview.MaterialTextView;
 
 /* loaded from: classes4.dex */
@@ -26,7 +26,7 @@ public final class MessageComponentSelectPillViewBinding {
     }
 
     public static MessageComponentSelectPillViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.message_component_select_pill_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.message_component_select_pill_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

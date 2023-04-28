@@ -6,7 +6,7 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 \u000e2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u000eB\u0005¢\u0006\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0006H\u0014J\b\u0010\u0007\u001a\u00020\bH\u0016J\u0018\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\rH\u0007¨\u0006\u000f"}, m15073d2 = {"Lcom/discord/core/LocalImageThumbnailManager;", "Lcom/facebook/react/uimanager/SimpleViewManager;", "Lcom/discord/core/LocalImageThumbnailView;", "()V", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "setLocalImageSource", "", "view", "source", "Lcom/facebook/react/bridge/ReadableMap;", "Companion", "core_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -33,17 +33,17 @@ public final class LocalImageThumbnailManager extends SimpleViewManager<LocalIma
 
     @ReactProp(name = "localImageSource")
     public final void setLocalImageSource(LocalImageThumbnailView view, ReadableMap source) {
-        C9971q.m14633g(view, "view");
-        C9971q.m14633g(source, "source");
+        C9677q.m14633g(view, "view");
+        C9677q.m14633g(source, "source");
         Uri uri = Uri.parse(source.getString("uri"));
-        C9971q.m14634f(uri, "uri");
+        C9677q.m14634f(uri, "uri");
         view.setLocalImageSource(uri, (int) source.getDouble("width"), (int) source.getDouble("height"));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.uimanager.ViewManager
     public LocalImageThumbnailView createViewInstance(ThemedReactContext reactContext) {
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         return new LocalImageThumbnailView(reactContext, null, 0, 6, null);
     }
 }

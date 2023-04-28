@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.view.ViewBackgroundUtilsKt;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayAssets;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
 import com.discord.mobile_voice_overlay.databinding.OverlayVoiceChannelSelectorBinding;
@@ -30,7 +30,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0011\b\u0016\u0012\u0006\u0010'\u001a\u00020&¢\u0006\u0004\b(\u0010)B\u001b\b\u0016\u0012\u0006\u0010'\u001a\u00020&\u0012\b\u0010+\u001a\u0004\u0018\u00010*¢\u0006\u0004\b(\u0010,B#\b\u0016\u0012\u0006\u0010'\u001a\u00020&\u0012\b\u0010+\u001a\u0004\u0018\u00010*\u0012\u0006\u0010.\u001a\u00020-¢\u0006\u0004\b(\u0010/J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u0011\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\u0006\u001a\u00020\u0002H\u0002J\u0012\u0010\t\u001a\u00020\u00022\b\u0010\b\u001a\u0004\u0018\u00010\u0007H\u0014J\b\u0010\n\u001a\u00020\u0002H\u0014J\b\u0010\f\u001a\u00020\u000bH\u0016J\u0010\u0010\u000f\u001a\u00020\u00022\u0006\u0010\u000e\u001a\u00020\rH\u0016J\u0010\u0010\u0012\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\u0010H\u0016R\u0016\u0010\u0014\u001a\u00020\u00138\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0014\u0010\u0015R\u0018\u0010\u000e\u001a\u0004\u0018\u00010\r8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u000e\u0010\u0016R\u0014\u0010\u0018\u001a\u00020\u00178\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R.\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00020\u001a8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u001c\u0010\u001d\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R1\u0010#\u001a\u000e\u0012\u0004\u0012\u00020\"\u0012\u0004\u0012\u00020\u00020\u001a8\u0006@\u0006X\u0086\u000eø\u0001\u0000¢\u0006\u0012\n\u0004\b#\u0010\u001d\u001a\u0004\b$\u0010\u001f\"\u0004\b%\u0010!\u0082\u0002\u0004\n\u0002\b\u0019¨\u00060"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayVoiceSelectorBubbleDialog;", "Lcom/discord/mobile_voice_overlay/views/OverlayDialog;", "", "onViewBound", "bindData", "()Lkotlin/Unit;", "bindAssets", "Landroid/content/res/Configuration;", "newConfig", "onConfigurationChanged", "onAttachedToWindow", "Landroid/animation/Animator;", "getClosingAnimator", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "data", "setData", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayAssets;", "assets", "setAssets", "Lcom/discord/mobile_voice_overlay/databinding/OverlayVoiceChannelSelectorBinding;", "binding", "Lcom/discord/mobile_voice_overlay/databinding/OverlayVoiceChannelSelectorBinding;", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "Lcom/discord/mobile_voice_overlay/views/ResultAdapter;", "adapter", "Lcom/discord/mobile_voice_overlay/views/ResultAdapter;", "Lkotlin/Function1;", "", "onTextChanged", "Lkotlin/jvm/functions/Function1;", "getOnTextChanged", "()Lkotlin/jvm/functions/Function1;", "setOnTextChanged", "(Lkotlin/jvm/functions/Function1;)V", "Lcom/discord/primitives/ChannelId;", "onChannelSelected", "getOnChannelSelected", "setOnChannelSelected", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Landroid/util/AttributeSet;", "attrs", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "attributeSetId", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes5.dex */
@@ -44,9 +44,9 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceSelectorBubbleDialog(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceChannelSelectorBinding inflate = OverlayVoiceChannelSelectorBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         WindowUtils.INSTANCE.removeFlag(getWindowLayoutParams(), 8);
     }
@@ -59,10 +59,10 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
             this.binding.overlayChannelSearch.setHint(overlayAssets.getSearchChannels());
             this.binding.close.setContentDescription(overlayAssets.getCloseWindow());
             SimpleDraweeView simpleDraweeView = this.binding.close;
-            C9971q.m14634f(simpleDraweeView, "binding.close");
+            C9677q.m14634f(simpleDraweeView, "binding.close");
             ColorUtilsKt.setTintColor(simpleDraweeView, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
             SimpleDraweeView simpleDraweeView2 = this.binding.close;
-            C9971q.m14634f(simpleDraweeView2, "binding.close");
+            C9677q.m14634f(simpleDraweeView2, "binding.close");
             ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.Close);
         }
     }
@@ -75,7 +75,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
         }
         boolean isEmpty = mobileVoiceOverlayData.getChannelSelectorResults().isEmpty();
         TextView textView = this.binding.emptyResults;
-        C9971q.m14634f(textView, "binding.emptyResults");
+        C9677q.m14634f(textView, "binding.emptyResults");
         int i2 = 0;
         if (isEmpty) {
             i = 0;
@@ -84,7 +84,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
         }
         textView.setVisibility(i);
         RecyclerView recyclerView = this.binding.resultsRv;
-        C9971q.m14634f(recyclerView, "binding.resultsRv");
+        C9677q.m14634f(recyclerView, "binding.resultsRv");
         if (!(!isEmpty)) {
             i2 = 8;
         }
@@ -92,7 +92,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
         if (!isEmpty) {
             this.adapter.setResults(mobileVoiceOverlayData.getChannelSelectorResults());
         }
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     private final void onViewBound() {
@@ -103,7 +103,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
             }
         });
         EditText editText = this.binding.overlayChannelSearch;
-        C9971q.m14634f(editText, "binding.overlayChannelSearch");
+        C9677q.m14634f(editText, "binding.overlayChannelSearch");
         editText.addTextChangedListener(new TextWatcher() { // from class: com.discord.mobile_voice_overlay.views.OverlayVoiceSelectorBubbleDialog$onViewBound$$inlined$doOnTextChanged$1
             @Override // android.text.TextWatcher
             public void afterTextChanged(Editable editable) {
@@ -124,24 +124,24 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
             }
         });
         TextView textView = this.binding.channelSelect;
-        C9971q.m14634f(textView, "binding.channelSelect");
+        C9677q.m14634f(textView, "binding.channelSelect");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         TextView onViewBound$lambda$2 = this.binding.emptyResults;
-        C9971q.m14634f(onViewBound$lambda$2, "onViewBound$lambda$2");
+        C9677q.m14634f(onViewBound$lambda$2, "onViewBound$lambda$2");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(onViewBound$lambda$2, discordFont);
         onViewBound$lambda$2.setVisibility(8);
         EditText editText2 = this.binding.overlayChannelSearch;
-        C9971q.m14634f(editText2, "binding.overlayChannelSearch");
+        C9677q.m14634f(editText2, "binding.overlayChannelSearch");
         DiscordFontUtilsKt.setDiscordFont(editText2, discordFont);
         LinearLayout linearLayout = this.binding.menuContainer;
-        C9971q.m14634f(linearLayout, "binding.menuContainer");
+        C9677q.m14634f(linearLayout, "binding.menuContainer");
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(linearLayout, ThemeManagerKt.getTheme().getBackgroundTertiary(), 4, null, 0, 12, null);
         this.binding.dialogCard.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundMobilePrimary());
         this.binding.channelSelect.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         this.binding.emptyResults.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         EditText onViewBound$lambda$3 = this.binding.overlayChannelSearch;
-        C9971q.m14634f(onViewBound$lambda$3, "onViewBound$lambda$3");
+        C9677q.m14634f(onViewBound$lambda$3, "onViewBound$lambda$3");
         ViewBackgroundUtilsKt.setBackgroundRectangle$default(onViewBound$lambda$3, ThemeManagerKt.getTheme().getInteractiveMuted(), 8, null, 0, 12, null);
         onViewBound$lambda$3.setHintTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         onViewBound$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
@@ -152,15 +152,15 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void onViewBound$lambda$0(OverlayVoiceSelectorBubbleDialog this$0, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.closeDialog();
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayDialog
     public Animator getClosingAnimator() {
-        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.overlay_slide_down_fade_out);
+        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.overlay_slide_down_fade_out);
         loadAnimator.setTarget(this.binding.dialogCard);
-        C9971q.m14634f(loadAnimator, "loadAnimator(context, R.…ing.dialogCard)\n        }");
+        C9677q.m14634f(loadAnimator, "loadAnimator(context, R.…ing.dialogCard)\n        }");
         return loadAnimator;
     }
 
@@ -176,7 +176,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         onViewBound();
-        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.overlay_slide_up_fade_in);
+        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.overlay_slide_up_fade_in);
         loadAnimator.setTarget(this.binding.dialogCard);
         loadAnimator.start();
     }
@@ -187,41 +187,41 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
         super.onConfigurationChanged(configuration);
         removeAllViewsInLayout();
         OverlayVoiceChannelSelectorBinding inflate = OverlayVoiceChannelSelectorBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         onViewBound();
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setAssets(MobileVoiceOverlayAssets assets) {
-        C9971q.m14633g(assets, "assets");
+        C9677q.m14633g(assets, "assets");
         super.setAssets(assets);
         bindAssets();
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setData(MobileVoiceOverlayData data) {
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(data, "data");
         this.data = data;
         bindData();
     }
 
     public final void setOnChannelSelected(Function1<? super ChannelId, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onChannelSelected = function1;
     }
 
     public final void setOnTextChanged(Function1<? super String, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onTextChanged = function1;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceSelectorBubbleDialog(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceChannelSelectorBinding inflate = OverlayVoiceChannelSelectorBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         WindowUtils.INSTANCE.removeFlag(getWindowLayoutParams(), 8);
     }
@@ -229,9 +229,9 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceSelectorBubbleDialog(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceChannelSelectorBinding inflate = OverlayVoiceChannelSelectorBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
         WindowUtils.INSTANCE.removeFlag(getWindowLayoutParams(), 8);
     }

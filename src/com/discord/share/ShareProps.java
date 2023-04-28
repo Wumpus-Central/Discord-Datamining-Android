@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import androidx.core.p018os.C2436d;
+import androidx.core.p018os.C1253d;
 import com.discord.share.intent.GetFileNameKt;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0080\b\u0018\u0000 \u001b2\u00020\u0001:\u0002\u001a\u001bB%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\bJ\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\u000f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003HÆ\u0003J/\u0010\u0011\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001J\u0006\u0010\u0017\u001a\u00020\u0018J\t\u0010\u0019\u001a\u00020\u0003HÖ\u0001R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\f¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/share/ShareProps;", "", "text", "", "attachments", "", "Lcom/discord/share/ShareProps$Attachment;", "targetChannelId", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V", "getAttachments", "()Ljava/util/List;", "getTargetChannelId", "()Ljava/lang/String;", "getText", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "", "toBundle", "Landroid/os/Bundle;", "toString", "Attachment", "Companion", "share_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -34,8 +34,8 @@ public final class ShareProps {
         private final String uri;
 
         public Attachment(String name, String uri, String str) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(uri, "uri");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(uri, "uri");
             this.name = name;
             this.uri = uri;
             this.mimeType = str;
@@ -67,8 +67,8 @@ public final class ShareProps {
         }
 
         public final Attachment copy(String name, String uri, String str) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(uri, "uri");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(uri, "uri");
             return new Attachment(name, uri, str);
         }
 
@@ -80,7 +80,7 @@ public final class ShareProps {
                 return false;
             }
             Attachment attachment = (Attachment) obj;
-            return C9971q.m14638b(this.name, attachment.name) && C9971q.m14638b(this.uri, attachment.uri) && C9971q.m14638b(this.mimeType, attachment.mimeType);
+            return C9677q.m14638b(this.name, attachment.name) && C9677q.m14638b(this.uri, attachment.uri) && C9677q.m14638b(this.mimeType, attachment.mimeType);
         }
 
         public final String getMimeType() {
@@ -102,7 +102,7 @@ public final class ShareProps {
         }
 
         public final Bundle toBundle() {
-            return C2436d.m37746a(C11098x.m10921a("name", this.name), C11098x.m10921a("uri", this.uri), C11098x.m10921a("mimeType", this.mimeType));
+            return C1253d.m37746a(C10853x.m10921a("name", this.name), C10853x.m10921a("uri", this.uri), C10853x.m10921a("mimeType", this.mimeType));
         }
 
         public String toString() {
@@ -129,28 +129,28 @@ public final class ShareProps {
             if (parcelableArrayListExtra != null) {
                 return parcelableArrayListExtra;
             }
-            m = C9906j.m14816m(intent.getParcelableExtra("android.intent.extra.STREAM"));
+            m = C9610j.m14816m(intent.getParcelableExtra("android.intent.extra.STREAM"));
             return m;
         }
 
         public final ShareProps createShareProps(Intent intent, Context context) {
             int t;
             String str;
-            C9971q.m14633g(intent, "<this>");
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(intent, "<this>");
+            C9677q.m14633g(context, "context");
             String stringExtra = intent.getStringExtra("android.intent.extra.TEXT");
             if (stringExtra == null) {
                 stringExtra = "";
             }
             List<Uri> uriExtras = getUriExtras(intent);
-            t = C9907k.m14809t(uriExtras, 10);
+            t = C9611k.m14809t(uriExtras, 10);
             ArrayList arrayList = new ArrayList(t);
             for (Uri uri : uriExtras) {
                 ContentResolver contentResolver = context.getContentResolver();
-                C9971q.m14634f(contentResolver, "context.contentResolver");
+                C9677q.m14634f(contentResolver, "context.contentResolver");
                 String fileName = GetFileNameKt.getFileName(contentResolver, uri);
                 String uri2 = uri.toString();
-                C9971q.m14634f(uri2, "uri.toString()");
+                C9677q.m14634f(uri2, "uri.toString()");
                 arrayList.add(new Attachment(fileName, uri2, context.getContentResolver().getType(uri)));
             }
             if (Build.VERSION.SDK_INT >= 29) {
@@ -163,8 +163,8 @@ public final class ShareProps {
     }
 
     public ShareProps(String text, List<Attachment> attachments, String str) {
-        C9971q.m14633g(text, "text");
-        C9971q.m14633g(attachments, "attachments");
+        C9677q.m14633g(text, "text");
+        C9677q.m14633g(attachments, "attachments");
         this.text = text;
         this.attachments = attachments;
         this.targetChannelId = str;
@@ -197,8 +197,8 @@ public final class ShareProps {
     }
 
     public final ShareProps copy(String text, List<Attachment> attachments, String str) {
-        C9971q.m14633g(text, "text");
-        C9971q.m14633g(attachments, "attachments");
+        C9677q.m14633g(text, "text");
+        C9677q.m14633g(attachments, "attachments");
         return new ShareProps(text, attachments, str);
     }
 
@@ -210,7 +210,7 @@ public final class ShareProps {
             return false;
         }
         ShareProps shareProps = (ShareProps) obj;
-        return C9971q.m14638b(this.text, shareProps.text) && C9971q.m14638b(this.attachments, shareProps.attachments) && C9971q.m14638b(this.targetChannelId, shareProps.targetChannelId);
+        return C9677q.m14638b(this.text, shareProps.text) && C9677q.m14638b(this.attachments, shareProps.attachments) && C9677q.m14638b(this.targetChannelId, shareProps.targetChannelId);
     }
 
     public final List<Attachment> getAttachments() {
@@ -234,16 +234,16 @@ public final class ShareProps {
     public final Bundle toBundle() {
         int t;
         Pair[] pairArr = new Pair[3];
-        pairArr[0] = C11098x.m10921a("text", this.text);
+        pairArr[0] = C10853x.m10921a("text", this.text);
         List<Attachment> list = this.attachments;
-        t = C9907k.m14809t(list, 10);
+        t = C9611k.m14809t(list, 10);
         ArrayList arrayList = new ArrayList(t);
         for (Attachment attachment : list) {
             arrayList.add(attachment.toBundle());
         }
-        pairArr[1] = C11098x.m10921a("attachments", arrayList.toArray(new Bundle[0]));
-        pairArr[2] = C11098x.m10921a("targetChannelId", this.targetChannelId);
-        return C2436d.m37746a(pairArr);
+        pairArr[1] = C10853x.m10921a("attachments", arrayList.toArray(new Bundle[0]));
+        pairArr[2] = C10853x.m10921a("targetChannelId", this.targetChannelId);
+        return C1253d.m37746a(pairArr);
     }
 
     public String toString() {

@@ -12,8 +12,8 @@ import com.discord.primitives.UserId;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ViewDefaults;
 import kotlin.Metadata;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004B\u0019\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007B!\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\u000e\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014J\b\u0010\u0015\u001a\u00020\u0012H\u0002J\b\u0010\u0016\u001a\u00020\u0012H\u0002J\u0012\u0010\u0017\u001a\u00020\u00122\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u0014J\u0010\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001cH\u0016R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\u00020\u000e8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u001e"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "Lcom/discord/mobile_voice_overlay/views/OverlayBubbleWrap;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "attributeSetId", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/mobile_voice_overlay/databinding/OverlayVoiceBubbleBinding;", "imageView", "Lcom/facebook/drawee/view/SimpleDraweeView;", "getImageView$mobile_voice_overlay_release", "()Lcom/facebook/drawee/view/SimpleDraweeView;", "configureUI", "", "user", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayDataUser;", "fadeActive", "fadeDormant", "onConfigurationChanged", "newConfig", "Landroid/content/res/Configuration;", "setData", "data", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "Companion", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -39,9 +39,9 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceBubble(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 
@@ -55,11 +55,11 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     public final void configureUI(MobileVoiceOverlayDataUser user) {
         String str;
-        C9971q.m14633g(user, "user");
+        C9677q.m14633g(user, "user");
         SimpleDraweeView simpleDraweeView = this.binding.overlayBubbleIv;
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
-        C9971q.m14634f(context, "context");
+        C9677q.m14634f(context, "context");
         str = iconUrlUtils.m42004getForUser_fRzTXg(context, UserId.m42153boximpl(user.m42017getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         simpleDraweeView.setImageURI(str);
         if (user.getSpeaking()) {
@@ -71,7 +71,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     public final SimpleDraweeView getImageView$mobile_voice_overlay_release() {
         SimpleDraweeView simpleDraweeView = this.binding.overlayBubbleIv;
-        C9971q.m14634f(simpleDraweeView, "binding.overlayBubbleIv");
+        C9677q.m14634f(simpleDraweeView, "binding.overlayBubbleIv");
         return simpleDraweeView;
     }
 
@@ -81,7 +81,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         int i;
         int i2 = getWindowLayoutParams().x;
         Context context = getContext();
-        C9971q.m14634f(context, "context");
+        C9677q.m14634f(context, "context");
         if (i2 > getAllowedAreaBounds(context).centerX()) {
             i = ViewDefaults.NUMBER_OF_LINES;
         } else {
@@ -96,8 +96,8 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setData(MobileVoiceOverlayData data) {
         Object W;
-        C9971q.m14633g(data, "data");
-        W = C9914r.m14768W(data.getUsers());
+        C9677q.m14633g(data, "data");
+        W = C9618r.m14768W(data.getUsers());
         MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) W;
         if (mobileVoiceOverlayDataUser != null) {
             configureUI(mobileVoiceOverlayDataUser);
@@ -107,18 +107,18 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceBubble(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayVoiceBubble(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         OverlayVoiceBubbleBinding inflate = OverlayVoiceBubbleBinding.inflate(LayoutInflater.from(getContext()), this, true);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this, true)");
         this.binding = inflate;
     }
 }

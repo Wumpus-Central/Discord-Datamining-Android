@@ -10,8 +10,8 @@ import com.discord.chat.databinding.MessageComponentActionRowViewBinding;
 import com.discord.chat.presentation.message.view.botuikit.ComponentView;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.reflect.KClass;
 
@@ -31,10 +31,10 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
         }
 
         public final ComponentView<ActionRowComponent> inflateComponent(Context context, ViewGroup root) {
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(root, "root");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(root, "root");
             ActionRowComponentView root2 = MessageComponentActionRowViewBinding.inflate(LayoutInflater.from(context), root, false).getRoot();
-            C9971q.m14634f(root2, "inflate(\n               …false,\n            ).root");
+            C9677q.m14634f(root2, "inflate(\n               …false,\n            ).root");
             return root2;
         }
     }
@@ -42,13 +42,13 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ActionRowComponentView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ActionRowComponentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ActionRowComponentView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -74,13 +74,13 @@ public final class ActionRowComponentView extends LinearLayout implements Compon
 
     @Override // com.discord.chat.presentation.message.view.botuikit.ComponentView
     public KClass<ActionRowComponent> getComponentType() {
-        return C9951f0.m14684b(ActionRowComponent.class);
+        return C9656f0.m14684b(ActionRowComponent.class);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ActionRowComponentView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x005f, code lost:

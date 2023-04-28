@@ -11,7 +11,7 @@ import com.discord.react.headless_tasks.api.HeadlessTasks;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u000b\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B+\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0014\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0006¢\u0006\u0002\u0010\u0007J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\u0017\u0010\u000f\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0006HÆ\u0003J5\u0010\u0010\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\u0016\b\u0002\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0006HÆ\u0001J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0012HÖ\u0001J\u0018\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\u0016\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001e\u001a\u00020\u0014J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J\u0019\u0010 \u001a\u00020\u00192\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u0012HÖ\u0001R\u001f\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0006¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000b¨\u0006$"}, m15073d2 = {"Lcom/discord/notifications/actions/intents/GenericAction;", "Lcom/discord/notifications/actions/intents/NotificationAction;", "tag", "", "taskName", "data", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V", "getData", "()Ljava/util/Map;", "getTag", "()Ljava/lang/String;", "getTaskName", "component1", "component2", "component3", "copy", "describeContents", "", "equals", "", "other", "", "hashCode", "onNotificationAction", "", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "taskInvokingFromBroadcastReceiver", "toString", "writeToParcel", "parcel", "Landroid/os/Parcel;", "flags", "notification_actions_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -27,7 +27,7 @@ public final class GenericAction implements NotificationAction {
         /* JADX WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final GenericAction createFromParcel(Parcel parcel) {
-            C9971q.m14633g(parcel, "parcel");
+            C9677q.m14633g(parcel, "parcel");
             String readString = parcel.readString();
             String readString2 = parcel.readString();
             int readInt = parcel.readInt();
@@ -46,9 +46,9 @@ public final class GenericAction implements NotificationAction {
     }
 
     public GenericAction(String tag, String taskName, Map<String, String> data) {
-        C9971q.m14633g(tag, "tag");
-        C9971q.m14633g(taskName, "taskName");
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(tag, "tag");
+        C9677q.m14633g(taskName, "taskName");
+        C9677q.m14633g(data, "data");
         this.tag = tag;
         this.taskName = taskName;
         this.data = data;
@@ -81,9 +81,9 @@ public final class GenericAction implements NotificationAction {
     }
 
     public final GenericAction copy(String tag, String taskName, Map<String, String> data) {
-        C9971q.m14633g(tag, "tag");
-        C9971q.m14633g(taskName, "taskName");
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(tag, "tag");
+        C9677q.m14633g(taskName, "taskName");
+        C9677q.m14633g(data, "data");
         return new GenericAction(tag, taskName, data);
     }
 
@@ -100,7 +100,7 @@ public final class GenericAction implements NotificationAction {
             return false;
         }
         GenericAction genericAction = (GenericAction) obj;
-        return C9971q.m14638b(getTag(), genericAction.getTag()) && C9971q.m14638b(this.taskName, genericAction.taskName) && C9971q.m14638b(this.data, genericAction.data);
+        return C9677q.m14638b(getTag(), genericAction.getTag()) && C9677q.m14638b(this.taskName, genericAction.taskName) && C9677q.m14638b(this.data, genericAction.data);
     }
 
     public final Map<String, String> getData() {
@@ -127,8 +127,8 @@ public final class GenericAction implements NotificationAction {
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
     public void onNotificationAction(Context context, Intent intent) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(intent, "intent");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(intent, "intent");
         onNotificationAction(context, true);
     }
 
@@ -151,7 +151,7 @@ public final class GenericAction implements NotificationAction {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel out, int i) {
-        C9971q.m14633g(out, "out");
+        C9677q.m14633g(out, "out");
         out.writeString(this.tag);
         out.writeString(this.taskName);
         Map<String, String> map = this.data;
@@ -163,7 +163,7 @@ public final class GenericAction implements NotificationAction {
     }
 
     public final void onNotificationAction(Context context, boolean z) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         String str = this.taskName;
         Bundle bundle = new Bundle();

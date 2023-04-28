@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
-import p412x1.C13922a;
+import com.discord.chat.C3147R;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class AltTextButtonViewBinding {
@@ -21,11 +21,11 @@ public final class AltTextButtonViewBinding {
     }
 
     public static AltTextButtonViewBinding bind(View view) {
-        int i = C4254R.C4256id.alt_text_container;
-        FrameLayout frameLayout = (FrameLayout) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.alt_text_container;
+        FrameLayout frameLayout = (FrameLayout) C13836a.m2313a(view, i);
         if (frameLayout != null) {
-            i = C4254R.C4256id.alt_text_label;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.alt_text_label;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
                 return new AltTextButtonViewBinding((FrameLayout) view, frameLayout, textView);
             }
@@ -38,7 +38,7 @@ public final class AltTextButtonViewBinding {
     }
 
     public static AltTextButtonViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.alt_text_button_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.alt_text_button_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

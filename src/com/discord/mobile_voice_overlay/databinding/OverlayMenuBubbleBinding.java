@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.discord.mobile_voice_overlay.views.OverlayMenuView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes5.dex */
 public final class OverlayMenuBubbleBinding {
@@ -30,17 +30,17 @@ public final class OverlayMenuBubbleBinding {
 
     public static OverlayMenuBubbleBinding bind(View view) {
         View a;
-        int i = C4573R.C4575id.overlay_header;
-        LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
-        if (!(linearLayout == null || (a = C13922a.m2313a(view, (i = C4573R.C4575id.overlay_linked_anchor_view))) == null)) {
-            i = C4573R.C4575id.overlay_members_overflow_text;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+        int i = C3521R.C3523id.overlay_header;
+        LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
+        if (!(linearLayout == null || (a = C13836a.m2313a(view, (i = C3521R.C3523id.overlay_linked_anchor_view))) == null)) {
+            i = C3521R.C3523id.overlay_members_overflow_text;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4573R.C4575id.overlay_members_recycler;
-                RecyclerView recyclerView = (RecyclerView) C13922a.m2313a(view, i);
+                i = C3521R.C3523id.overlay_members_recycler;
+                RecyclerView recyclerView = (RecyclerView) C13836a.m2313a(view, i);
                 if (recyclerView != null) {
-                    i = C4573R.C4575id.overlay_menu;
-                    OverlayMenuView overlayMenuView = (OverlayMenuView) C13922a.m2313a(view, i);
+                    i = C3521R.C3523id.overlay_menu;
+                    OverlayMenuView overlayMenuView = (OverlayMenuView) C13836a.m2313a(view, i);
                     if (overlayMenuView != null) {
                         return new OverlayMenuBubbleBinding((LinearLayout) view, linearLayout, a, textView, recyclerView, overlayMenuView);
                     }
@@ -55,7 +55,7 @@ public final class OverlayMenuBubbleBinding {
     }
 
     public static OverlayMenuBubbleBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4573R.layout.overlay_menu_bubble, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3521R.layout.overlay_menu_bubble, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

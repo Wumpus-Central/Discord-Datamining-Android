@@ -6,12 +6,12 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n¢\u0006\u0002\b\u0003"}, m15073d2 = {"<anonymous>", "Landroid/animation/ValueAnimator;", "kotlin.jvm.PlatformType", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-final class AudioPlayerWipeAnimatorManager$textColorAnimator$2 extends AbstractC9973s implements Function0<ValueAnimator> {
+final class AudioPlayerWipeAnimatorManager$textColorAnimator$2 extends AbstractC9679s implements Function0<ValueAnimator> {
     final /* synthetic */ AudioPlayerViewBinding $binding;
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -23,10 +23,10 @@ final class AudioPlayerWipeAnimatorManager$textColorAnimator$2 extends AbstractC
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, ValueAnimator valueAnimator) {
-        C9971q.m14633g(binding, "$binding");
+        C9677q.m14633g(binding, "$binding");
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = binding.text;
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Int");
         simpleDraweeSpanTextView.setTextColor(((Integer) animatedValue).intValue());
     }
 

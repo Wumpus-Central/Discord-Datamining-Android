@@ -3,15 +3,15 @@ package com.discord.misc.utilities.time;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.flow.FlowCollector;
 
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/flow/FlowCollector;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.misc.utilities.time.IntervalFlowKt$intervalFlow$1", m14701f = "IntervalFlow.kt", m14700l = {14, 16, 17}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.misc.utilities.time.IntervalFlowKt$intervalFlow$1", m14701f = "IntervalFlow.kt", m14700l = {14, 16, 17}, m14699m = "invokeSuspend")
 /* loaded from: classes5.dex */
-final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Function2<FlowCollector<? super Unit>, Continuation<? super Unit>, Object> {
+final class IntervalFlowKt$intervalFlow$1 extends AbstractC9643k implements Function2<FlowCollector<? super Unit>, Continuation<? super Unit>, Object> {
     final /* synthetic */ long $initialDelay;
     final /* synthetic */ long $period;
     private /* synthetic */ Object L$0;
@@ -25,7 +25,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
         this.$period = j2;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         IntervalFlowKt$intervalFlow$1 intervalFlowKt$intervalFlow$1 = new IntervalFlowKt$intervalFlow$1(this.$initialDelay, this.$period, continuation);
         intervalFlowKt$intervalFlow$1.L$0 = obj;
@@ -33,7 +33,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
     }
 
     public final Object invoke(FlowCollector<? super Unit> flowCollector, Continuation<? super Unit> continuation) {
-        return ((IntervalFlowKt$intervalFlow$1) create(flowCollector, continuation)).invokeSuspend(Unit.f22042a);
+        return ((IntervalFlowKt$intervalFlow$1) create(flowCollector, continuation)).invokeSuspend(Unit.f25780a);
     }
 
     /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -45,7 +45,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
     /* JADX WARN: Removed duplicated region for block: B:17:0x004c A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:20:0x0059 A[RETURN] */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:19:0x0057 -> B:15:0x0040). Please submit an issue!!! */
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -53,7 +53,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
     public final java.lang.Object invokeSuspend(java.lang.Object r8) {
         /*
             r7 = this;
-            java.lang.Object r0 = tf.C13075b.m4650d()
+            java.lang.Object r0 = tf.C12956b.m4650d()
             int r1 = r7.label
             r2 = 3
             r3 = 2
@@ -65,7 +65,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
         L_0x0011:
             java.lang.Object r1 = r7.L$0
             kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-            nf.C11093t.m10930b(r8)
+            nf.C10848t.m10930b(r8)
             goto L_0x003f
         L_0x0019:
             java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
@@ -75,24 +75,24 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
         L_0x0021:
             java.lang.Object r1 = r7.L$0
             kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-            nf.C11093t.m10930b(r8)
+            nf.C10848t.m10930b(r8)
             r8 = r7
             goto L_0x004d
         L_0x002a:
-            nf.C11093t.m10930b(r8)
+            nf.C10848t.m10930b(r8)
             java.lang.Object r8 = r7.L$0
             r1 = r8
             kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
             long r5 = r7.$initialDelay
             r7.L$0 = r1
             r7.label = r4
-            java.lang.Object r8 = kotlinx.coroutines.C10210t0.m13991b(r5, r7)
+            java.lang.Object r8 = kotlinx.coroutines.C9926t0.m13991b(r5, r7)
             if (r8 != r0) goto L_0x003f
             return r0
         L_0x003f:
             r8 = r7
         L_0x0040:
-            kotlin.Unit r4 = kotlin.Unit.f22042a
+            kotlin.Unit r4 = kotlin.Unit.f25780a
             r8.L$0 = r1
             r8.label = r3
             java.lang.Object r4 = r1.emit(r4, r8)
@@ -102,7 +102,7 @@ final class IntervalFlowKt$intervalFlow$1 extends AbstractC9938k implements Func
             long r4 = r8.$period
             r8.L$0 = r1
             r8.label = r2
-            java.lang.Object r4 = kotlinx.coroutines.C10210t0.m13991b(r4, r8)
+            java.lang.Object r4 = kotlinx.coroutines.C9926t0.m13991b(r4, r8)
             if (r4 != r0) goto L_0x0040
             return r0
         */

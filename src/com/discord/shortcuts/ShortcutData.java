@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9905i;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9609i;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010$\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\b\u0018\u0000 \u00142\u00020\u0001:\u0001\u0014B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\u0015\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003J)\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u0014\b\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0001J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0003HÖ\u0001R\u001d\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/shortcuts/ShortcutData;", "", "tag", "", "data", "", "(Ljava/lang/String;Ljava/util/Map;)V", "getData", "()Ljava/util/Map;", "getTag", "()Ljava/lang/String;", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "Companion", "shortcuts_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -33,13 +33,13 @@ public final class ShortcutData {
         public final Intent createShortcutIntent(Context context, String action, Class<?> clazz, String tag, Map<String, String> data) {
             List c;
             List a;
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(action, "action");
-            C9971q.m14633g(clazz, "clazz");
-            C9971q.m14633g(tag, "tag");
-            C9971q.m14633g(data, "data");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(action, "action");
+            C9677q.m14633g(clazz, "clazz");
+            C9677q.m14633g(tag, "tag");
+            C9677q.m14633g(data, "data");
             Intent putExtra = new Intent(action, null, context, clazz).putExtra(ShortcutData.KEY_SHORTCUT, true).putExtra(ShortcutData.KEY_TAG, tag);
-            c = C9905i.m14826c();
+            c = C9609i.m14826c();
             for (Map.Entry<String, String> entry : data.entrySet()) {
                 String key = entry.getKey();
                 String value = entry.getValue();
@@ -48,18 +48,18 @@ public final class ShortcutData {
                     c.add(value);
                 }
             }
-            Unit unit = Unit.f22042a;
-            a = C9905i.m14828a(c);
+            Unit unit = Unit.f25780a;
+            a = C9609i.m14828a(c);
             Intent putExtra2 = putExtra.putExtra(ShortcutData.KEY_DATA, (String[]) a.toArray(new String[0]));
-            C9971q.m14634f(putExtra2, "Intent(action, null, con…rray(),\n                )");
+            C9677q.m14634f(putExtra2, "Intent(action, null, con…rray(),\n                )");
             return putExtra2;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0029, code lost:
-            r6 = p306qi.C12200o.m7432m(r6, 2);
+            r6 = p307qi.C12051o.m7432m(r6, 2);
          */
         /* JADX WARN: Code restructure failed: missing block: B:9:0x0023, code lost:
-            r6 = kotlin.collections.C9899f.m14915u(r6);
+            r6 = kotlin.collections.C9603f.m14915u(r6);
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -69,7 +69,7 @@ public final class ShortcutData {
             /*
                 r5 = this;
                 java.lang.String r0 = "<this>"
-                kotlin.jvm.internal.C9971q.m14633g(r6, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r6, r0)
                 java.lang.String r0 = "discord_shortcut"
                 boolean r0 = r6.hasExtra(r0)
                 if (r0 == 0) goto L_0x0066
@@ -78,14 +78,14 @@ public final class ShortcutData {
                 if (r0 != 0) goto L_0x0017
                 java.lang.String r0 = ""
             L_0x0017:
-                java.util.Map r1 = p267of.C11286s.m10272c()
+                java.util.Map r1 = p268of.C11050s.m10272c()
                 java.lang.String r2 = "discord_shortcut_data"
                 java.lang.String[] r6 = r6.getStringArrayExtra(r2)
                 if (r6 == 0) goto L_0x005c
-                kotlin.sequences.Sequence r6 = kotlin.collections.C9894b.m15003u(r6)
+                kotlin.sequences.Sequence r6 = kotlin.collections.C9598b.m15003u(r6)
                 if (r6 == 0) goto L_0x005c
                 r2 = 2
-                kotlin.sequences.Sequence r6 = p306qi.C12189j.m7464m(r6, r2)
+                kotlin.sequences.Sequence r6 = p307qi.C12040j.m7464m(r6, r2)
                 if (r6 == 0) goto L_0x005c
                 java.util.Iterator r6 = r6.iterator()
             L_0x0034:
@@ -100,13 +100,13 @@ public final class ShortcutData {
                 java.lang.Object r2 = r2.get(r4)
                 java.lang.String r2 = (java.lang.String) r2
                 java.lang.String r4 = "key"
-                kotlin.jvm.internal.C9971q.m14634f(r3, r4)
+                kotlin.jvm.internal.C9677q.m14634f(r3, r4)
                 java.lang.String r4 = "value"
-                kotlin.jvm.internal.C9971q.m14634f(r2, r4)
+                kotlin.jvm.internal.C9677q.m14634f(r2, r4)
                 r1.put(r3, r2)
                 goto L_0x0034
             L_0x005c:
-                java.util.Map r6 = p267of.C11286s.m10273b(r1)
+                java.util.Map r6 = p268of.C11050s.m10273b(r1)
                 com.discord.shortcuts.ShortcutData r1 = new com.discord.shortcuts.ShortcutData
                 r1.<init>(r0, r6)
                 goto L_0x0067
@@ -120,8 +120,8 @@ public final class ShortcutData {
     }
 
     public ShortcutData(String tag, Map<String, String> data) {
-        C9971q.m14633g(tag, "tag");
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(tag, "tag");
+        C9677q.m14633g(data, "data");
         this.tag = tag;
         this.data = data;
     }
@@ -146,8 +146,8 @@ public final class ShortcutData {
     }
 
     public final ShortcutData copy(String tag, Map<String, String> data) {
-        C9971q.m14633g(tag, "tag");
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(tag, "tag");
+        C9677q.m14633g(data, "data");
         return new ShortcutData(tag, data);
     }
 
@@ -159,7 +159,7 @@ public final class ShortcutData {
             return false;
         }
         ShortcutData shortcutData = (ShortcutData) obj;
-        return C9971q.m14638b(this.tag, shortcutData.tag) && C9971q.m14638b(this.data, shortcutData.data);
+        return C9677q.m14638b(this.tag, shortcutData.tag) && C9677q.m14638b(this.data, shortcutData.data);
     }
 
     public final Map<String, String> getData() {

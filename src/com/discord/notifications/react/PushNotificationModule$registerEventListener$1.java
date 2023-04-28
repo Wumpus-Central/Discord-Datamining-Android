@@ -5,13 +5,13 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "token", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes3.dex */
-final class PushNotificationModule$registerEventListener$1 extends AbstractC9973s implements Function1<String, Unit> {
+final class PushNotificationModule$registerEventListener$1 extends AbstractC9679s implements Function1<String, Unit> {
     final /* synthetic */ PushNotificationModule this$0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -24,14 +24,14 @@ final class PushNotificationModule$registerEventListener$1 extends AbstractC9973
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(String token) {
         DeviceEventManagerModule.RCTDeviceEventEmitter eventEmitter;
-        C9971q.m14633g(token, "token");
+        C9677q.m14633g(token, "token");
         eventEmitter = this.this$0.getEventEmitter();
-        eventEmitter.emit("register", NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("token", token)));
+        eventEmitter.emit("register", NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("token", token)));
     }
 }

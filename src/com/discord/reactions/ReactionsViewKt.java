@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
-import p303qf.C12120c;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
+import p304qf.C11965c;
 
 @Metadata(m15074d1 = {"\u0000\u0018\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\b\u0003\u001a\u0016\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004\u001a$\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u00062\u0006\u0010\b\u001a\u00020\u0004¨\u0006\t"}, m15073d2 = {"copyReactionWithoutCount", "Lcom/discord/reactions/ReactionView$Reaction;", "reaction", "isBurstReaction", "", "separateAndSortDuplicateReactions", "", "reactions", "sortReactions", "reactions_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
 public final class ReactionsViewKt {
     public static final ReactionView.Reaction copyReactionWithoutCount(final ReactionView.Reaction reaction, final boolean z) {
-        C9971q.m14633g(reaction, "reaction");
+        C9677q.m14633g(reaction, "reaction");
         return new ReactionView.Reaction(z, reaction) { // from class: com.discord.reactions.ReactionsViewKt$copyReactionWithoutCount$1
             private final int burstCount;
             private final int count;
@@ -99,11 +99,11 @@ public final class ReactionsViewKt {
         if (!z) {
             return arrayList;
         }
-        w0 = C9914r.m14742w0(arrayList, new Comparator() { // from class: com.discord.reactions.ReactionsViewKt$separateAndSortDuplicateReactions$$inlined$sortedByDescending$1
+        w0 = C9618r.m14742w0(arrayList, new Comparator() { // from class: com.discord.reactions.ReactionsViewKt$separateAndSortDuplicateReactions$$inlined$sortedByDescending$1
             @Override // java.util.Comparator
             public final int compare(T t, T t2) {
                 int d;
-                d = C12120c.m7778d(Boolean.valueOf(((ReactionView.Reaction) t2).isBurstReaction()), Boolean.valueOf(((ReactionView.Reaction) t).isBurstReaction()));
+                d = C11965c.m7778d(Boolean.valueOf(((ReactionView.Reaction) t2).isBurstReaction()), Boolean.valueOf(((ReactionView.Reaction) t).isBurstReaction()));
                 return d;
             }
         });

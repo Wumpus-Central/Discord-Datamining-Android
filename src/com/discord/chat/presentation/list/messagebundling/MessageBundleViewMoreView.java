@@ -11,7 +11,7 @@ import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002B%\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\f\u0010\r¨\u0006\u000e"}, m15073d2 = {"Lcom/discord/chat/presentation/list/messagebundling/MessageBundleViewMoreView;", "Landroidx/appcompat/widget/AppCompatTextView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "spineOriginView", "Landroid/view/View;", "getSpineOriginView", "()Landroid/view/View;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -20,13 +20,13 @@ public final class MessageBundleViewMoreView extends AppCompatTextView implement
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageBundleViewMoreView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageBundleViewMoreView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ MessageBundleViewMoreView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -41,7 +41,7 @@ public final class MessageBundleViewMoreView extends AppCompatTextView implement
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageBundleViewMoreView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         DiscordFontUtilsKt.setDiscordFont(this, DiscordFont.PrimarySemibold);
         setTextColor(ThemeManagerKt.getTheme().getTextLink());
         SetTextSizeSpKt.setTextSizeSp(this, MessageUtilsKt.getChatTextSizeSp(context));

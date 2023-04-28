@@ -4,7 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.constraintlayout.widget.Guideline;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 
 /* loaded from: classes4.dex */
 public final class MessageStartGuidelineBinding {
@@ -29,7 +29,7 @@ public final class MessageStartGuidelineBinding {
     }
 
     public static MessageStartGuidelineBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.message_start_guideline, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.message_start_guideline, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

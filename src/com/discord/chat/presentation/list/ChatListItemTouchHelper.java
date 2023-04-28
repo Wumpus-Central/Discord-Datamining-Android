@@ -12,13 +12,13 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import androidx.core.view.C2733w0;
+import androidx.core.view.C1559w0;
 import androidx.core.view.GestureDetectorCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
-import p310r1.C12319b;
+import p311r1.C12176b;
 
 /* loaded from: classes4.dex */
 public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
@@ -44,7 +44,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     private static final String TAG = "ItemTouchHelper";
 
     /* renamed from: UP */
-    public static final int f36273UP = 1;
+    public static final int f8479UP = 1;
     ChatListCallback mCallback;
     private List<Integer> mDistances;
     private long mDragScrollStartTimeInMs;
@@ -82,7 +82,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                 }
                 ChatListItemTouchHelper chatListItemTouchHelper3 = ChatListItemTouchHelper.this;
                 chatListItemTouchHelper3.mRecyclerView.removeCallbacks(chatListItemTouchHelper3.mScrollRunnable);
-                C2733w0.m37006i0(ChatListItemTouchHelper.this.mRecyclerView, this);
+                C1559w0.m37006i0(ChatListItemTouchHelper.this.mRecyclerView, this);
             }
         }
     };
@@ -104,8 +104,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                 ChatListItemTouchHelper chatListItemTouchHelper = ChatListItemTouchHelper.this;
                 if (chatListItemTouchHelper.mSelected == null && (findAnimation = chatListItemTouchHelper.findAnimation(motionEvent)) != null) {
                     ChatListItemTouchHelper chatListItemTouchHelper2 = ChatListItemTouchHelper.this;
-                    chatListItemTouchHelper2.mInitialTouchX -= findAnimation.f36274mX;
-                    chatListItemTouchHelper2.mInitialTouchY -= findAnimation.f36275mY;
+                    chatListItemTouchHelper2.mInitialTouchX -= findAnimation.f8480mX;
+                    chatListItemTouchHelper2.mInitialTouchY -= findAnimation.f8481mY;
                     chatListItemTouchHelper2.endRecoverAnimation(findAnimation.mViewHolder, true);
                     if (ChatListItemTouchHelper.this.mPendingCleanup.remove(findAnimation.mViewHolder.itemView)) {
                         ChatListItemTouchHelper chatListItemTouchHelper3 = ChatListItemTouchHelper.this;
@@ -265,10 +265,10 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         final RecyclerView.ViewHolder mViewHolder;
 
         /* renamed from: mX */
-        float f36274mX;
+        float f8480mX;
 
         /* renamed from: mY */
-        float f36275mY;
+        float f8481mY;
         boolean mOverridden = false;
         boolean mEnded = false;
 
@@ -338,16 +338,16 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             float f = this.mStartDx;
             float f2 = this.mTargetX;
             if (f == f2) {
-                this.f36274mX = this.mViewHolder.itemView.getTranslationX();
+                this.f8480mX = this.mViewHolder.itemView.getTranslationX();
             } else {
-                this.f36274mX = f + (this.mFraction * (f2 - f));
+                this.f8480mX = f + (this.mFraction * (f2 - f));
             }
             float f3 = this.mStartDy;
             float f4 = this.mTargetY;
             if (f3 == f4) {
-                this.f36275mY = this.mViewHolder.itemView.getTranslationY();
+                this.f8481mY = this.mViewHolder.itemView.getTranslationY();
             } else {
-                this.f36275mY = f3 + (this.mFraction * (f4 - f3));
+                this.f8481mY = f3 + (this.mFraction * (f4 - f3));
             }
         }
     }
@@ -586,7 +586,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             return 0;
         }
         int movementFlags = this.mCallback.getMovementFlags(this.mRecyclerView, viewHolder);
-        int convertToAbsoluteDirection = (this.mCallback.convertToAbsoluteDirection(movementFlags, C2733w0.m37063B(this.mRecyclerView)) & ACTION_MODE_SWIPE_MASK) >> 8;
+        int convertToAbsoluteDirection = (this.mCallback.convertToAbsoluteDirection(movementFlags, C1559w0.m37063B(this.mRecyclerView)) & ACTION_MODE_SWIPE_MASK) >> 8;
         if (convertToAbsoluteDirection == 0) {
             return 0;
         }
@@ -599,7 +599,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                     return checkVerticalSwipe;
                 }
             } else if ((i & checkHorizontalSwipe) == 0) {
-                return ItemTouchHelper.AbstractC3083c.convertToRelativeDirection(checkHorizontalSwipe, C2733w0.m37063B(this.mRecyclerView));
+                return ItemTouchHelper.AbstractC1928c.convertToRelativeDirection(checkHorizontalSwipe, C1559w0.m37063B(this.mRecyclerView));
             } else {
                 return checkHorizontalSwipe;
             }
@@ -611,7 +611,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             int checkHorizontalSwipe2 = checkHorizontalSwipe(viewHolder, convertToAbsoluteDirection);
             if (checkHorizontalSwipe2 > 0) {
                 if ((i & checkHorizontalSwipe2) == 0) {
-                    return ItemTouchHelper.AbstractC3083c.convertToRelativeDirection(checkHorizontalSwipe2, C2733w0.m37063B(this.mRecyclerView));
+                    return ItemTouchHelper.AbstractC1928c.convertToRelativeDirection(checkHorizontalSwipe2, C1559w0.m37063B(this.mRecyclerView));
                 }
                 return checkHorizontalSwipe2;
             }
@@ -628,8 +628,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mRecyclerView = recyclerView;
             if (recyclerView != null) {
                 Resources resources = recyclerView.getResources();
-                this.mSwipeEscapeVelocity = resources.getDimension(C12319b.f27670f);
-                this.mMaxSwipeVelocity = resources.getDimension(C12319b.f27669e);
+                this.mSwipeEscapeVelocity = resources.getDimension(C12176b.f31870f);
+                this.mMaxSwipeVelocity = resources.getDimension(C12176b.f31869e);
                 setupCallbacks();
             }
         }
@@ -710,7 +710,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         for (int size = this.mRecoverAnimations.size() - 1; size >= 0; size--) {
             RecoverAnimation recoverAnimation = this.mRecoverAnimations.get(size);
             View view2 = recoverAnimation.mViewHolder.itemView;
-            if (hitTest(view2, x, y, recoverAnimation.f36274mX, recoverAnimation.f36275mY)) {
+            if (hitTest(view2, x, y, recoverAnimation.f8480mX, recoverAnimation.f8481mY)) {
                 return view2;
             }
         }

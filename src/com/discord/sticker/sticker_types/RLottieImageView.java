@@ -10,9 +10,9 @@ import com.discord.rlottie.RLottieDrawable;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.coroutines.C10129j;
-import kotlinx.coroutines.C10230y0;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.coroutines.C9840j;
+import kotlinx.coroutines.C9946y0;
 
 @Metadata(m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001:\u0001\u0013B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\tH\u0002J\u000e\u0010\r\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\tJ\b\u0010\u000e\u001a\u00020\u000bH\u0014J\b\u0010\u000f\u001a\u00020\u000bH\u0014J\u0010\u0010\u0010\u001a\u00020\u000b2\b\b\u0002\u0010\u0011\u001a\u00020\u0012R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, m15073d2 = {"Lcom/discord/sticker/sticker_types/RLottieImageView;", "Lcom/discord/rlottie/RLottieImageView;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", ReactTextInputShadowNode.PROP_PLACEHOLDER, "Landroid/graphics/drawable/ShapeDrawable;", "rLottieStateManager", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "Lcom/discord/sticker/sticker_types/RLottieImageView$Config;", "fetchSticker", "", "config", "loadImage", "onAttachedToWindow", "onDetachedFromWindow", "recycle", "resetState", "", "Config", "sticker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -31,8 +31,8 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
         private final int widthDp;
 
         public Config(String url, boolean z, int i, int i2, String asset, int i3) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(asset, "asset");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(asset, "asset");
             this.url = url;
             this.animate = z;
             this.widthDp = i;
@@ -88,8 +88,8 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
         }
 
         public final Config copy(String url, boolean z, int i, int i2, String asset, int i3) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(asset, "asset");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(asset, "asset");
             return new Config(url, z, i, i2, asset, i3);
         }
 
@@ -101,7 +101,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
                 return false;
             }
             Config config = (Config) obj;
-            return C9971q.m14638b(this.url, config.url) && this.animate == config.animate && this.widthDp == config.widthDp && this.heightDp == config.heightDp && C9971q.m14638b(this.asset, config.asset) && this.renderMode == config.renderMode;
+            return C9677q.m14638b(this.url, config.url) && this.animate == config.animate && this.widthDp == config.widthDp && this.heightDp == config.heightDp && C9677q.m14638b(this.asset, config.asset) && this.renderMode == config.renderMode;
         }
 
         public final boolean getAnimate() {
@@ -154,7 +154,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public RLottieImageView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());
@@ -163,7 +163,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void fetchSticker(Config config) {
-        C10129j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), C10230y0.m13946b(), null, new RLottieImageView$fetchSticker$1(this, config, null), 2, null);
+        C9840j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), C9946y0.m13946b(), null, new RLottieImageView$fetchSticker$1(this, config, null), 2, null);
     }
 
     public static /* synthetic */ void recycle$default(RLottieImageView rLottieImageView, boolean z, int i, Object obj) {
@@ -174,7 +174,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     }
 
     public final void loadImage(Config config) {
-        C9971q.m14633g(config, "config");
+        C9677q.m14633g(config, "config");
         this.rLottieStateManager.onTryFetch(config);
     }
 

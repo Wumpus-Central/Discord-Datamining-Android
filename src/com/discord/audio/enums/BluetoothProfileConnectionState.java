@@ -4,7 +4,7 @@ import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
 import com.discord.audio.utils.ExtensionsKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\n\b\u0086\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, m15073d2 = {"Lcom/discord/audio/enums/BluetoothProfileConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "Disconnected", "Connecting", "Connected", "Disconnecting", "Companion", "Update", "audio_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -46,8 +46,8 @@ public enum BluetoothProfileConnectionState {
 
         public final Update getUpdate(Intent intent) {
             BluetoothProfileConnectionState bluetoothProfileConnectionState;
-            C9971q.m14633g(intent, "intent");
-            if (C9971q.m14638b(intent.getAction(), "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED")) {
+            C9677q.m14633g(intent, "intent");
+            if (C9677q.m14638b(intent.getAction(), "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED")) {
                 Integer intExtraOrNull = ExtensionsKt.getIntExtraOrNull(intent, "android.bluetooth.profile.extra.PREVIOUS_STATE");
                 BluetoothProfileConnectionState bluetoothProfileConnectionState2 = null;
                 if (intExtraOrNull != null) {
@@ -115,7 +115,7 @@ public enum BluetoothProfileConnectionState {
                 return false;
             }
             Update update = (Update) obj;
-            return this.previous == update.previous && this.current == update.current && C9971q.m14638b(this.device, update.device);
+            return this.previous == update.previous && this.current == update.current && C9677q.m14638b(this.device, update.device);
         }
 
         public final BluetoothProfileConnectionState getCurrent() {

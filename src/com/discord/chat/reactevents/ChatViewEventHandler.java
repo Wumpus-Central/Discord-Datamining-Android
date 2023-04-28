@@ -26,7 +26,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000è\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0002\b\n\n\u0002\u0010\r\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\b\u0018\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u0007\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0016\u0018\u00002\u00020\u0001B-\u0012\b\u0010Ã\u0001\u001a\u00030Â\u0001\u0012\b\u0010Å\u0001\u001a\u00030Ä\u0001\u0012\u000e\u0010Ç\u0001\u001a\t\u0012\u0004\u0012\u00020B0Æ\u0001¢\u0006\u0006\bÈ\u0001\u0010É\u0001J%\u0010\t\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0007\u0010\bJ/\u0010\t\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\n2\b\u0010\f\u001a\u0004\u0018\u00010\nH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\r\u0010\u000eJ%\u0010\u0013\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0011\u0010\u0012J/\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0018\u0010\u0019J%\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001b\u0010\u0012J\u0010\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u001dH\u0016J\u0010\u0010!\u001a\u00020\u00062\u0006\u0010 \u001a\u00020\u001fH\u0016J%\u0010&\u001a\u00020\u00062\u0006\u0010#\u001a\u00020\"2\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b$\u0010%J%\u0010(\u001a\u00020\u00062\u0006\u0010#\u001a\u00020\"2\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b'\u0010%J%\u0010*\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b)\u0010\u0012J?\u00104\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010,\u001a\u00020+2\b\u0010-\u001a\u0004\u0018\u00010\n2\u0006\u0010/\u001a\u00020.2\u0006\u00101\u001a\u000200H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b2\u00103J%\u00106\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b5\u0010\u0012J$\u00108\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\n2\b\u00107\u001a\u0004\u0018\u00010\n2\b\u0010\u0003\u001a\u0004\u0018\u00010\nH\u0016J.\u0010:\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\n2\b\u00107\u001a\u0004\u0018\u00010\n2\b\u0010\u0003\u001a\u0004\u0018\u00010\n2\b\u00109\u001a\u0004\u0018\u00010\nH\u0016J\u0010\u0010=\u001a\u00020\u00062\u0006\u0010<\u001a\u00020;H\u0016J\u0010\u0010?\u001a\u00020\u00062\u0006\u0010>\u001a\u00020\nH\u0016J\u0010\u0010@\u001a\u00020\u00062\u0006\u0010>\u001a\u00020\nH\u0016J\u0010\u0010A\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0016Ji\u0010P\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010C\u001a\u00020B2\u0006\u0010D\u001a\u00020\n2\u0006\u0010E\u001a\u00020B2\u0006\u0010F\u001a\u00020B2\u0006\u0010G\u001a\u00020B2\u0006\u0010H\u001a\u00020B2\u0006\u0010J\u001a\u00020I2\b\u0010L\u001a\u0004\u0018\u00010K2\b\u0010M\u001a\u0004\u0018\u00010BH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bN\u0010OJ9\u0010W\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010Q\u001a\u00020B2\b\u0010S\u001a\u0004\u0018\u00010R2\b\u0010T\u001a\u0004\u0018\u00010RH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bU\u0010VJ\b\u0010X\u001a\u00020\u0006H\u0016J\b\u0010Y\u001a\u00020\u0006H\u0016J\u0018\u0010Z\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\nH\u0016J\u0010\u0010[\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u001dH\u0016J%\u0010_\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\\\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b]\u0010^J1\u0010c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\b\u0010\u0017\u001a\u0004\u0018\u00010\u00162\b\u0010`\u001a\u0004\u0018\u00010RH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\ba\u0010bJ\u0018\u0010f\u001a\u00020\u00062\u0006\u0010d\u001a\u00020\n2\u0006\u0010e\u001a\u00020\nH\u0016J\b\u0010g\u001a\u00020\u0006H\u0016J(\u0010i\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\n2\u0006\u00107\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\n2\u0006\u0010h\u001a\u00020\nH\u0016J-\u0010n\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010,\u001a\u00020+2\u0006\u0010k\u001a\u00020jH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bl\u0010mJ\u0010\u0010p\u001a\u00020\u00062\u0006\u0010o\u001a\u00020\nH\u0016J\u001d\u0010s\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bq\u0010rJ\u001d\u0010u\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bt\u0010rJ%\u0010w\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bv\u0010\u0012J\u0010\u0010y\u001a\u00020\u00062\u0006\u0010x\u001a\u00020\nH\u0016J\u0018\u0010|\u001a\u00020\u00062\u0006\u0010z\u001a\u00020\n2\u0006\u0010{\u001a\u00020\nH\u0016J%\u0010~\u001a\u00020\u00062\u0006\u0010#\u001a\u00020\"2\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b}\u0010%J\u001e\u0010\u0080\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u007f\u0010rJ\u001f\u0010\u0082\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u0081\u0001\u0010rJ\u0013\u0010\u0085\u0001\u001a\u00020\u00062\b\u0010\u0084\u0001\u001a\u00030\u0083\u0001H\u0016J'\u0010\u0087\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u0086\u0001\u0010\u0012J)\u0010\u008b\u0001\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\u00142\u0007\u00107\u001a\u00030\u0088\u0001H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\b\u0089\u0001\u0010\u008a\u0001J'\u0010\u008d\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u008c\u0001\u0010\u0012J'\u0010\u008f\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u008e\u0001\u0010\u0012J'\u0010\u0091\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u0090\u0001\u0010\u0012J\t\u0010\u0092\u0001\u001a\u00020\u0006H\u0016J\u001f\u0010\u0094\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u0093\u0001\u0010rJ\u0012\u0010\u0096\u0001\u001a\u00020\u00062\u0007\u0010\u0095\u0001\u001a\u00020\nH\u0016J'\u0010\u0098\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0005\b\u0097\u0001\u0010\u0012J=\u0010\u009f\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\b\u0010\u009a\u0001\u001a\u00030\u0099\u00012\b\u0010\u009b\u0001\u001a\u00030\u0099\u00012\u0007\u0010\u009c\u0001\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\b\u009d\u0001\u0010\u009e\u0001J=\u0010¢\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\b\u0010\u009a\u0001\u001a\u00030\u0099\u00012\b\u0010 \u0001\u001a\u00030\u0099\u00012\u0007\u0010\u009c\u0001\u001a\u00020\u000fH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\b¡\u0001\u0010\u009e\u0001J+\u0010¦\u0001\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\t\u0010£\u0001\u001a\u0004\u0018\u00010\nH\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\b¤\u0001\u0010¥\u0001J\u0012\u0010¨\u0001\u001a\u00020\u00062\u0007\u0010§\u0001\u001a\u00020\nH\u0016J\u0012\u0010©\u0001\u001a\u00020\u00062\u0007\u0010§\u0001\u001a\u00020\nH\u0016J(\u0010«\u0001\u001a\u00020\u00062\u0006\u0010/\u001a\u00020.2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\bª\u0001\u0010\u008a\u0001J;\u0010°\u0001\u001a\u00020\u00062\u0007\u00107\u001a\u00030\u0088\u00012\u0007\u0010¬\u0001\u001a\u00020\u00142\u0007\u0010\u00ad\u0001\u001a\u00020\u00142\u0006\u0010\u0003\u001a\u00020\u0002H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\b®\u0001\u0010¯\u0001R%\u0010³\u0001\u001a\u0010\u0012\u0005\u0012\u00030²\u0001\u0012\u0004\u0012\u00020\u00060±\u00018\u0002X\u0082\u0004¢\u0006\b\n\u0006\b³\u0001\u0010´\u0001RO\u0010¸\u0001\u001a/\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0014\u0012\u0006\u0012\u0004\u0018\u00010B\u0012\u0007\u0012\u0005\u0018\u00010¶\u0001\u0012\u0004\u0012\u00020\u0006\u0018\u00010µ\u0001j\u0005\u0018\u0001`·\u00018\u0016X\u0096\u0004ø\u0001\u0001¢\u0006\u0010\n\u0006\b¸\u0001\u0010¹\u0001\u001a\u0006\bº\u0001\u0010»\u0001R>\u0010¾\u0001\u001a\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0006\u0018\u00010¼\u0001j\u0005\u0018\u0001`½\u00018\u0016X\u0096\u0004ø\u0001\u0001¢\u0006\u0010\n\u0006\b¾\u0001\u0010¿\u0001\u001a\u0006\bÀ\u0001\u0010Á\u0001\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006Ê\u0001"}, m15073d2 = {"Lcom/discord/chat/reactevents/ChatViewEventHandler;", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "Lcom/discord/primitives/MessageId;", "messageId", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "node", "", "onLinkClicked-ntcYbpo", "(Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContentNode;)V", "onLinkClicked", "", "url", "title", "onLinkClicked-u7_MRrM", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "Lcom/discord/primitives/UserId;", "userId", "onLongPressAvatar-x5gers8", "(Ljava/lang/String;J)V", "onLongPressAvatar", "Lcom/discord/primitives/ChannelId;", "channelId", "Lcom/discord/reactions/ReactionView$Reaction;", "reaction", "onLongPressReaction-Eqy5D80", "(Ljava/lang/String;JLcom/discord/reactions/ReactionView$Reaction;)V", "onLongPressReaction", "onLongPressUsername-x5gers8", "onLongPressUsername", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onLongPressCommand", "Lcom/discord/chat/presentation/list/ScrollState;", "scrollState", "onScrollStateChanged", "Lcom/discord/chat/bridge/sticker/Sticker;", "sticker", "onStickerClicked-Ayv7vGE", "(Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;)V", "onStickerClicked", "onStickerLongClicked-Ayv7vGE", "onStickerLongClicked", "onTapAvatar-x5gers8", "onTapAvatar", "", "messageFlags", "customId", "Lcom/discord/primitives/ApplicationId;", "applicationId", "", "indices", "onTapButtonActionComponent-NkFJqEg", "(Ljava/lang/String;JLjava/lang/String;J[I)V", "onTapButtonActionComponent", "onTapCall-pfaIj0E", "onTapCall", "guildId", "onTapChannel", "originalLink", "onLongPressChannel", "", "text", "onTapCopyText", "giftCode", "onTapGiftCodeAccept", "onTapGiftCodeEmbed", "onLinkLongClicked", "", "attachmentIndex", "type", "viewWidth", "viewHeight", "viewX", "viewY", "Lcom/discord/chat/reactevents/ViewResizeMode;", "viewResizeMode", "", "portal", "embedIndex", "onTapImage-a6FnO-k", "(Ljava/lang/String;ILjava/lang/String;IIIILcom/discord/chat/reactevents/ViewResizeMode;Ljava/lang/Double;Ljava/lang/Integer;)V", "onTapImage", "index", "", "primary", "secondary", "onTapInviteEmbed-AFFcxXc", "(Ljava/lang/String;ILjava/lang/Boolean;Ljava/lang/Boolean;)V", "onTapInviteEmbed", "onTapLoadMessagesAfter", "onTapLoadMessagesBefore", "onTapMention", "onTapCommand", "originId", "onTapMessageReply-0eiqbug", "(JLjava/lang/String;)V", "onTapMessageReply", "isBurst", "onTapReaction-u7_MRrM", "(Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;Ljava/lang/Boolean;)V", "onTapReaction", "roleName", "roleIconSource", "onTapRoleIcon", "onTapSuppressNotificationsIcon", "roleId", "onTapConnectionsRoleTag", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "selectComponent", "onTapSelectActionComponent-u7_MRrM", "(Ljava/lang/String;JLcom/discord/chat/bridge/botuikit/SelectComponent;)V", "onTapSelectActionComponent", "timestamp", "onTapTimestamp", "onTapThreadEmbed-1xi1bu0", "(Ljava/lang/String;)V", "onTapThreadEmbed", "onTapToggleBlockedMessages-1xi1bu0", "onTapToggleBlockedMessages", "onTapUsername-x5gers8", "onTapUsername", "fileId", "onTapUploadProgressClose", "uploaderId", "itemId", "onTapCancelUploadItem", "onWelcomeReplyClicked-Ayv7vGE", "onWelcomeReplyClicked", "onTapInviteToSpeak-1xi1bu0", "onTapInviteToSpeak", "onTapJoinActivity-1xi1bu0", "onTapJoinActivity", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "emoji", "onTapEmoji", "onTapFollowForumPost-pfaIj0E", "onTapFollowForumPost", "Lcom/discord/primitives/GuildId;", "onTapShareForumPost-mgk6anA", "(JJ)V", "onTapShareForumPost", "onTapReactionOverflow-pfaIj0E", "onTapReactionOverflow", "onTapAutoModerationActions-pfaIj0E", "onTapAutoModerationActions", "onTapAutoModerationFeedback-pfaIj0E", "onTapAutoModerationFeedback", "onTapOpTag", "onTapSeeMore-1xi1bu0", "onTapSeeMore", "description", "onTapShowAltText", "onInitiateReply-pfaIj0E", "onInitiateReply", "", "totalDurationSecs", "startDurationSecs", "senderUserId", "voiceMessagePlaybackStarted-OuNwOLg", "(Ljava/lang/String;FFJ)V", "voiceMessagePlaybackStarted", "endDurationSecs", "voiceMessagePlaybackEnded-OuNwOLg", "voiceMessagePlaybackEnded", "errorMessage", "voiceMessagePlaybackFailed-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)V", "voiceMessagePlaybackFailed", "embeddedActivityKey", "onTapJoinEmbeddedActivity", "onTapDismissEmbeddedActivity", "onTapActivityLauncherEmbed-uU1mFKc", "onTapActivityLauncherEmbed", "parentChannelId", "threadId", "onTapPostPreviewEmbed-kUTrp-s", "(JJJLjava/lang/String;)V", "onTapPostPreviewEmbed", "Lkotlin/Function1;", "Lcom/discord/reactevents/ReactEvent;", "emitReactEvent", "Lkotlin/jvm/functions/Function1;", "Lkotlin/Function4;", "Lcom/discord/chat/bridge/MediaType;", "Lcom/discord/chat/presentation/events/MessageLongPress;", "onMessageLongPressed", "Lkotlin/jvm/functions/Function4;", "getOnMessageLongPressed", "()Lkotlin/jvm/functions/Function4;", "Lkotlin/Function2;", "Lcom/discord/chat/presentation/events/MessageTapped;", "onMessageTapped", "Lkotlin/jvm/functions/Function2;", "getOnMessageTapped", "()Lkotlin/jvm/functions/Function2;", "Landroid/content/Context;", "context", "Lcom/discord/reactevents/ReactEvents;", "reactEvents", "Lkotlin/Function0;", "reactTag", "<init>", "(Landroid/content/Context;Lcom/discord/reactevents/ReactEvents;Lkotlin/jvm/functions/Function0;)V", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
@@ -37,9 +37,9 @@ public class ChatViewEventHandler implements ChatEventHandler {
     private final Function2<MessageId, ChannelId, Unit> onMessageTapped = new ChatViewEventHandler$onMessageTapped$1(this);
 
     public ChatViewEventHandler(Context context, ReactEvents reactEvents, Function0<Integer> reactTag) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(reactEvents, "reactEvents");
-        C9971q.m14633g(reactTag, "reactTag");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(reactEvents, "reactEvents");
+        C9677q.m14633g(reactTag, "reactTag");
         this.emitReactEvent = new ChatViewEventHandler$emitReactEvent$1(reactEvents, context, reactTag);
     }
 
@@ -56,23 +56,23 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onInitiateReply-pfaIj0E */
     public void mo41702onInitiateReplypfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new InitiateReplyData(messageId, j, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLinkClicked-ntcYbpo */
     public void mo41703onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(node, "node");
         this.emitReactEvent.invoke(new TapLinkData(messageId, node, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLinkClicked-u7_MRrM */
     public void mo41704onLinkClickedu7_MRrM(String messageId, String url, String str) {
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(url, "url");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(url, "url");
         Function1<ReactEvent, Unit> function1 = this.emitReactEvent;
         if (str == null) {
             str = "";
@@ -82,40 +82,40 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onLinkLongClicked(LinkContentNode node) {
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(node, "node");
         this.emitReactEvent.invoke(new LongPressLinkData(node.getTarget()));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressAvatar-x5gers8 */
     public void mo41705onLongPressAvatarx5gers8(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m42121toStringimpl(messageId), UserId.m42160toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onLongPressChannel(String channelId, String str, String str2, String str3) {
-        C9971q.m14633g(channelId, "channelId");
+        C9677q.m14633g(channelId, "channelId");
         this.emitReactEvent.invoke(new LongPressChannelData(str, channelId, str2, str3));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onLongPressCommand(CommandMentionContentNode node) {
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(node, "node");
         this.emitReactEvent.invoke(new LongPressCommandData(node));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressReaction-Eqy5D80 */
     public void mo41706onLongPressReactionEqy5D80(String messageId, long j, ReactionView.Reaction reaction) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressReactionData(messageId, j, reaction, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressUsername-x5gers8 */
     public void mo41707onLongPressUsernamex5gers8(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m42121toStringimpl(messageId), UserId.m42160toStringimpl(j)));
     }
 
@@ -124,7 +124,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         boolean z;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(scrollState, "scrollState");
+        C9677q.m14633g(scrollState, "scrollState");
         if (!scrollState.isNearBottom() || scrollState.getScrollDirection() != ScrollDirection.DOWN) {
             z = false;
         } else {
@@ -150,16 +150,16 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onStickerClicked-Ayv7vGE */
     public void mo41708onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
-        C9971q.m14633g(sticker, "sticker");
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(sticker, "sticker");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapStickerData(sticker, messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onStickerLongClicked-Ayv7vGE */
     public void mo41709onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
-        C9971q.m14633g(sticker, "sticker");
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(sticker, "sticker");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressStickerData(messageId, sticker, null));
     }
 
@@ -172,137 +172,137 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAutoModerationActions-pfaIj0E */
     public void mo41711onTapAutoModerationActionspfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m42121toStringimpl(messageId), ChannelId.m42096toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAutoModerationFeedback-pfaIj0E */
     public void mo41712onTapAutoModerationFeedbackpfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m42121toStringimpl(messageId), ChannelId.m42096toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAvatar-x5gers8 */
     public void mo41713onTapAvatarx5gers8(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapAvatarData(MessageId.m42121toStringimpl(messageId), UserId.m42160toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapButtonActionComponent-NkFJqEg */
     public void mo41714onTapButtonActionComponentNkFJqEg(String messageId, long j, String str, long j2, int[] indices) {
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(indices, "indices");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(indices, "indices");
         this.emitReactEvent.invoke(new TapButtonActionComponent(messageId, j, str, j2, indices, (DefaultConstructorMarker) null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapCall-pfaIj0E */
     public void mo41715onTapCallpfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapCallData(messageId, j, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapCancelUploadItem(String uploaderId, String itemId) {
-        C9971q.m14633g(uploaderId, "uploaderId");
-        C9971q.m14633g(itemId, "itemId");
+        C9677q.m14633g(uploaderId, "uploaderId");
+        C9677q.m14633g(itemId, "itemId");
         this.emitReactEvent.invoke(new TapCancelUploadItemData(uploaderId, itemId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapChannel(String channelId, String str, String str2) {
-        C9971q.m14633g(channelId, "channelId");
+        C9677q.m14633g(channelId, "channelId");
         this.emitReactEvent.invoke(new TapChannelData(str, channelId, str2));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapCommand(CommandMentionContentNode node) {
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(node, "node");
         this.emitReactEvent.invoke(new TapCommandData(node));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapConnectionsRoleTag(String userId, String guildId, String channelId, String roleId) {
-        C9971q.m14633g(userId, "userId");
-        C9971q.m14633g(guildId, "guildId");
-        C9971q.m14633g(channelId, "channelId");
-        C9971q.m14633g(roleId, "roleId");
+        C9677q.m14633g(userId, "userId");
+        C9677q.m14633g(guildId, "guildId");
+        C9677q.m14633g(channelId, "channelId");
+        C9677q.m14633g(roleId, "roleId");
         this.emitReactEvent.invoke(new TapConnectionsRoleTagData(userId, guildId, channelId, roleId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapCopyText(CharSequence text) {
-        C9971q.m14633g(text, "text");
+        C9677q.m14633g(text, "text");
         this.emitReactEvent.invoke(new TapCopyText(text));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapDismissEmbeddedActivity(String embeddedActivityKey) {
-        C9971q.m14633g(embeddedActivityKey, "embeddedActivityKey");
+        C9677q.m14633g(embeddedActivityKey, "embeddedActivityKey");
         this.emitReactEvent.invoke(new TapDismissEmbeddedActivityData(embeddedActivityKey));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapEmoji(EmojiContentNode emoji) {
-        C9971q.m14633g(emoji, "emoji");
+        C9677q.m14633g(emoji, "emoji");
         this.emitReactEvent.invoke(new TapEmojiData(emoji));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapFollowForumPost-pfaIj0E */
     public void mo41716onTapFollowForumPostpfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m42121toStringimpl(messageId), ChannelId.m42096toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapGiftCodeAccept(String giftCode) {
-        C9971q.m14633g(giftCode, "giftCode");
+        C9677q.m14633g(giftCode, "giftCode");
         this.emitReactEvent.invoke(new TapGiftCodeAcceptData(giftCode));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapGiftCodeEmbed(String giftCode) {
-        C9971q.m14633g(giftCode, "giftCode");
+        C9677q.m14633g(giftCode, "giftCode");
         this.emitReactEvent.invoke(new TapGiftCodeEmbedData(giftCode));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapImage-a6FnO-k */
     public void mo41717onTapImagea6FnOk(String messageId, int i, String type, int i2, int i3, int i4, int i5, ViewResizeMode viewResizeMode, Double d, Integer num) {
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(type, "type");
-        C9971q.m14633g(viewResizeMode, "viewResizeMode");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(type, "type");
+        C9677q.m14633g(viewResizeMode, "viewResizeMode");
         this.emitReactEvent.invoke(new TapImageData(MessageId.m42121toStringimpl(messageId), i, type, new TapImageData.Layout(i2, i3, i4, i5, viewResizeMode), d, num));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapInviteEmbed-AFFcxXc */
     public void mo41718onTapInviteEmbedAFFcxXc(String messageId, int i, Boolean bool, Boolean bool2) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapInviteEvent(messageId, i, bool, bool2));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapInviteToSpeak-1xi1bu0 */
     public void mo41719onTapInviteToSpeak1xi1bu0(String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapInviteToSpeakData(messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapJoinActivity-1xi1bu0 */
     public void mo41720onTapJoinActivity1xi1bu0(String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapJoinActivityData(messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapJoinEmbeddedActivity(String embeddedActivityKey) {
-        C9971q.m14633g(embeddedActivityKey, "embeddedActivityKey");
+        C9677q.m14633g(embeddedActivityKey, "embeddedActivityKey");
         this.emitReactEvent.invoke(new TapJoinEmbeddedActivityData(embeddedActivityKey));
     }
 
@@ -318,15 +318,15 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapMention(String userId, String channelId) {
-        C9971q.m14633g(userId, "userId");
-        C9971q.m14633g(channelId, "channelId");
+        C9677q.m14633g(userId, "userId");
+        C9677q.m14633g(channelId, "channelId");
         this.emitReactEvent.invoke(new TapMentionData(userId, channelId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapMessageReply-0eiqbug */
     public void mo41721onTapMessageReply0eiqbug(long j, String originId) {
-        C9971q.m14633g(originId, "originId");
+        C9677q.m14633g(originId, "originId");
         this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m42096toStringimpl(j), MessageId.m42121toStringimpl(originId)));
     }
 
@@ -338,43 +338,43 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapPostPreviewEmbed-kUTrp-s */
     public void mo41722onTapPostPreviewEmbedkUTrps(long j, long j2, long j3, String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m42109toStringimpl(j), ChannelId.m42096toStringimpl(j2), ChannelId.m42096toStringimpl(j3), messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapReaction-u7_MRrM */
     public void mo41723onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapReactionData(messageId, reaction, bool, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapReactionOverflow-pfaIj0E */
     public void mo41724onTapReactionOverflowpfaIj0E(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m42121toStringimpl(messageId), ChannelId.m42096toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapRoleIcon(String roleName, String roleIconSource) {
-        C9971q.m14633g(roleName, "roleName");
-        C9971q.m14633g(roleIconSource, "roleIconSource");
+        C9677q.m14633g(roleName, "roleName");
+        C9677q.m14633g(roleIconSource, "roleIconSource");
         this.emitReactEvent.invoke(new TapRoleIconData(roleName, roleIconSource));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapSeeMore-1xi1bu0 */
     public void mo41725onTapSeeMore1xi1bu0(String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapSeeMoreData(messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapSelectActionComponent-u7_MRrM */
     public void mo41726onTapSelectActionComponentu7_MRrM(String messageId, long j, SelectComponent selectComponent) {
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(selectComponent, "selectComponent");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(selectComponent, "selectComponent");
         this.emitReactEvent.invoke(new TapSelectActionComponent(messageId, j, selectComponent, null));
     }
 
@@ -386,7 +386,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapShowAltText(String description) {
-        C9971q.m14633g(description, "description");
+        C9677q.m14633g(description, "description");
         this.emitReactEvent.invoke(new TapShowAltTextData(description));
     }
 
@@ -398,62 +398,62 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapThreadEmbed-1xi1bu0 */
     public void mo41728onTapThreadEmbed1xi1bu0(String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapThreadEmbedEvent(messageId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapTimestamp(String timestamp) {
-        C9971q.m14633g(timestamp, "timestamp");
+        C9677q.m14633g(timestamp, "timestamp");
         this.emitReactEvent.invoke(new TapTimestampEvent(timestamp));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapToggleBlockedMessages-1xi1bu0 */
     public void mo41729onTapToggleBlockedMessages1xi1bu0(String messageId) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m42121toStringimpl(messageId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapUploadProgressClose(String fileId) {
-        C9971q.m14633g(fileId, "fileId");
+        C9677q.m14633g(fileId, "fileId");
         this.emitReactEvent.invoke(new TapUploadProgressCloseData(fileId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapUsername-x5gers8 */
     public void mo41730onTapUsernamex5gers8(String messageId, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapUsernameData(MessageId.m42121toStringimpl(messageId), UserId.m42160toStringimpl(j)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onWelcomeReplyClicked-Ayv7vGE */
     public void mo41731onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
-        C9971q.m14633g(sticker, "sticker");
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(sticker, "sticker");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapWelcomeReplyData(sticker.getId(), messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackEnded-OuNwOLg */
     public void mo41732voiceMessagePlaybackEndedOuNwOLg(String messageId, float f, float f2, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackEndedData(messageId, f, f2, j, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackFailed-ntcYbpo */
     public void mo41733voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackFailedData(messageId, str, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackStarted-OuNwOLg */
     public void mo41734voiceMessagePlaybackStartedOuNwOLg(String messageId, float f, float f2, long j) {
-        C9971q.m14633g(messageId, "messageId");
+        C9677q.m14633g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackStartedData(messageId, f, f2, j, null));
     }
 }

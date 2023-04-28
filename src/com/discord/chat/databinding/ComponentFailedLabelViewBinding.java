@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class ComponentFailedLabelViewBinding {
@@ -22,11 +22,11 @@ public final class ComponentFailedLabelViewBinding {
     }
 
     public static ComponentFailedLabelViewBinding bind(View view) {
-        int i = C4254R.C4256id.view_interaction_failed_label_icon;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.view_interaction_failed_label_icon;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.view_interaction_failed_label_message;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.view_interaction_failed_label_message;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
                 return new ComponentFailedLabelViewBinding((ConstraintLayout) view, simpleDraweeView, textView);
             }
@@ -39,7 +39,7 @@ public final class ComponentFailedLabelViewBinding {
     }
 
     public static ComponentFailedLabelViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.component_failed_label_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.component_failed_label_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

@@ -4,12 +4,12 @@ import com.discord.chat.presentation.events.ChatEventHandler;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9968n;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9674n;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-/* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$10 extends C9968n implements Function2<String, String, Unit> {
+/* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$10 extends C9674n implements Function2<String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$10(Object obj) {
         super(2, obj, ChatEventHandler.class, "onTapMention", "onTapMention(Ljava/lang/String;Ljava/lang/String;)V", 0);
@@ -18,13 +18,13 @@ import kotlin.jvm.internal.C9971q;
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(String p0, String p1) {
-        C9971q.m14633g(p0, "p0");
-        C9971q.m14633g(p1, "p1");
+        C9677q.m14633g(p0, "p0");
+        C9677q.m14633g(p1, "p1");
         ((ChatEventHandler) this.receiver).onTapMention(p0, p1);
     }
 }

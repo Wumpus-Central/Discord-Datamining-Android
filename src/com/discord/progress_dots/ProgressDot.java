@@ -9,7 +9,7 @@ import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u0001\u001aB%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010\u0013\u001a\u00020\u000bH\u0014J\u0010\u0010\u0014\u001a\u00020\u000b2\b\b\u0002\u0010\u0015\u001a\u00020\u0016J\b\u0010\u0017\u001a\u00020\u000bH\u0002J\b\u0010\u0018\u001a\u00020\u000bH\u0002J\u0006\u0010\u0019\u001a\u00020\u000bR\"\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/progress_dots/ProgressDot;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "onScaleDownCompleteListener", "Lkotlin/Function0;", "", "getOnScaleDownCompleteListener", "()Lkotlin/jvm/functions/Function0;", "setOnScaleDownCompleteListener", "(Lkotlin/jvm/functions/Function0;)V", "scaleAndFadeDownAnimation", "Landroid/view/animation/Animation;", "scaleAndFadeUpAnimation", "onDetachedFromWindow", ViewProps.START, "delay", "", "startDownAnimation", "startUpAnimation", "stop", "AnimationListenerImpl", "progress_dots_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -26,7 +26,7 @@ public final class ProgressDot extends View {
         private final Function0<Unit> onComplete;
 
         public AnimationListenerImpl(Function0<Unit> onComplete) {
-            C9971q.m14633g(onComplete, "onComplete");
+            C9677q.m14633g(onComplete, "onComplete");
             this.onComplete = onComplete;
         }
 
@@ -51,13 +51,13 @@ public final class ProgressDot extends View {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ProgressDot(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ProgressDot(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ProgressDot(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -109,12 +109,12 @@ public final class ProgressDot extends View {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ProgressDot(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
-        Animation loadAnimation = AnimationUtils.loadAnimation(context, C4635R.anim.anim_progress_dots_scale_up);
-        C9971q.m14634f(loadAnimation, "loadAnimation(context, R…m_progress_dots_scale_up)");
+        C9677q.m14633g(context, "context");
+        Animation loadAnimation = AnimationUtils.loadAnimation(context, C3587R.anim.anim_progress_dots_scale_up);
+        C9677q.m14634f(loadAnimation, "loadAnimation(context, R…m_progress_dots_scale_up)");
         this.scaleAndFadeUpAnimation = loadAnimation;
-        Animation loadAnimation2 = AnimationUtils.loadAnimation(context, C4635R.anim.anim_progress_dots_scale_down);
-        C9971q.m14634f(loadAnimation2, "loadAnimation(context, R…progress_dots_scale_down)");
+        Animation loadAnimation2 = AnimationUtils.loadAnimation(context, C3587R.anim.anim_progress_dots_scale_down);
+        C9677q.m14634f(loadAnimation2, "loadAnimation(context, R…progress_dots_scale_down)");
         this.scaleAndFadeDownAnimation = loadAnimation2;
     }
 }

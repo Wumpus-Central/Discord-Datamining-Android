@@ -9,9 +9,9 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.flow.C10062q;
+import kotlinx.coroutines.flow.C9773q;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableStateFlow;
 
@@ -46,7 +46,7 @@ public final class PortalViewContextManager {
     }
 
     static {
-        MutableStateFlow<Event> a = C10062q.m14364a(null);
+        MutableStateFlow<Event> a = C9773q.m14364a(null);
         _portalContextIdsFlow = a;
         portalContextIdsFlow = a;
     }
@@ -71,11 +71,11 @@ public final class PortalViewContextManager {
     }
 
     public final void addPortal(double d, View view, Function1<? super View, Unit> removeViewFromParent, Function1<? super View, Unit> onViewAddedToPortal, Function1<? super View, Unit> onViewRemovedFromPortal, Function1<? super View, Unit> returnViewToParent) {
-        C9971q.m14633g(view, "view");
-        C9971q.m14633g(removeViewFromParent, "removeViewFromParent");
-        C9971q.m14633g(onViewAddedToPortal, "onViewAddedToPortal");
-        C9971q.m14633g(onViewRemovedFromPortal, "onViewRemovedFromPortal");
-        C9971q.m14633g(returnViewToParent, "returnViewToParent");
+        C9677q.m14633g(view, "view");
+        C9677q.m14633g(removeViewFromParent, "removeViewFromParent");
+        C9677q.m14633g(onViewAddedToPortal, "onViewAddedToPortal");
+        C9677q.m14633g(onViewRemovedFromPortal, "onViewRemovedFromPortal");
+        C9677q.m14633g(returnViewToParent, "returnViewToParent");
         if (portalContextMap.get(Double.valueOf(d)) == null) {
             portalContextMap.put(Double.valueOf(d), new PortalViewContext(new WeakReference(view), removeViewFromParent, onViewAddedToPortal, onViewRemovedFromPortal, returnViewToParent));
         }
@@ -98,10 +98,10 @@ public final class PortalViewContextManager {
 
     public final void registerView(double d, FrameLayout portalView) {
         View view;
-        C9971q.m14633g(portalView, "portalView");
+        C9677q.m14633g(portalView, "portalView");
         PortalViewContext portalViewContext = portalContextMap.get(Double.valueOf(d));
         if (portalViewContext != null && (view = portalViewContext.getView().get()) != null) {
-            C9971q.m14634f(view, "context.view.get() ?: return@let");
+            C9677q.m14634f(view, "context.view.get() ?: return@let");
             portalViewContext.getRemoveViewFromParent().invoke(view);
             portalView.addView(view);
             ViewMeasureExtensionsKt.measureAndLayout(portalView);
@@ -116,7 +116,7 @@ public final class PortalViewContextManager {
             _portalContextIdsFlow.setValue(null);
             View view = remove.getView().get();
             if (view != null) {
-                C9971q.m14634f(view, "context.view.get() ?: return");
+                C9677q.m14634f(view, "context.view.get() ?: return");
                 PortalViewContextUtilsKt.removeFromParent(view);
                 remove.getOnViewRemovedFromPortal().invoke(view);
                 remove.getReturnViewToParent().invoke(view);

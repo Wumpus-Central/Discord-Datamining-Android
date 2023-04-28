@@ -5,7 +5,7 @@ import com.discord.chat.bridge.MessageKt;
 import com.discord.chat.presentation.root.MessageContext;
 import com.discord.primitives.MessageId;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\t\u0010\u000f\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0007HÆ\u0003J'\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00072\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0017HÖ\u0001J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000e¨\u0006\u001a"}, m15073d2 = {"Lcom/discord/chat/presentation/list/item/AutomodSystemMessageItem;", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "message", "Lcom/discord/chat/bridge/Message;", "messageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "allowChildGestures", "", "(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;Z)V", "getAllowChildGestures", "()Z", "getMessage", "()Lcom/discord/chat/bridge/Message;", "getMessageContext", "()Lcom/discord/chat/presentation/root/MessageContext;", "component1", "component2", "component3", "copy", "equals", "other", "", "hashCode", "", "toString", "", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -58,8 +58,8 @@ public final class AutomodSystemMessageItem extends ChatListItem {
     }
 
     public final AutomodSystemMessageItem copy(Message message, MessageContext messageContext, boolean z) {
-        C9971q.m14633g(message, "message");
-        C9971q.m14633g(messageContext, "messageContext");
+        C9677q.m14633g(message, "message");
+        C9677q.m14633g(messageContext, "messageContext");
         return new AutomodSystemMessageItem(message, messageContext, z);
     }
 
@@ -71,7 +71,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
             return false;
         }
         AutomodSystemMessageItem automodSystemMessageItem = (AutomodSystemMessageItem) obj;
-        return C9971q.m14638b(this.message, automodSystemMessageItem.message) && C9971q.m14638b(this.messageContext, automodSystemMessageItem.messageContext) && this.allowChildGestures == automodSystemMessageItem.allowChildGestures;
+        return C9677q.m14638b(this.message, automodSystemMessageItem.message) && C9677q.m14638b(this.messageContext, automodSystemMessageItem.messageContext) && this.allowChildGestures == automodSystemMessageItem.allowChildGestures;
     }
 
     public final boolean getAllowChildGestures() {
@@ -108,8 +108,8 @@ public final class AutomodSystemMessageItem extends ChatListItem {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z) {
         super(MessageId.m42121toStringimpl(message.m41579getId3Eiw7ao()), null);
-        C9971q.m14633g(message, "message");
-        C9971q.m14633g(messageContext, "messageContext");
+        C9677q.m14633g(message, "message");
+        C9677q.m14633g(messageContext, "messageContext");
         this.message = message;
         this.messageContext = messageContext;
         this.allowChildGestures = z;

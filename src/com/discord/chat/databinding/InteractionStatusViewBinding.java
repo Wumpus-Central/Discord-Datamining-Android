@@ -5,10 +5,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.progress_dots.ProgressDots;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class InteractionStatusViewBinding {
@@ -27,17 +27,17 @@ public final class InteractionStatusViewBinding {
     }
 
     public static InteractionStatusViewBinding bind(View view) {
-        int i = C4254R.C4256id.view_interaction_status_danger_icon;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.view_interaction_status_danger_icon;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.view_interaction_status_label_icon;
-            LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.view_interaction_status_label_icon;
+            LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
             if (linearLayout != null) {
-                i = C4254R.C4256id.view_interaction_status_label_message;
-                TextView textView = (TextView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.view_interaction_status_label_message;
+                TextView textView = (TextView) C13836a.m2313a(view, i);
                 if (textView != null) {
-                    i = C4254R.C4256id.view_interaction_status_loading_dots;
-                    ProgressDots progressDots = (ProgressDots) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.view_interaction_status_loading_dots;
+                    ProgressDots progressDots = (ProgressDots) C13836a.m2313a(view, i);
                     if (progressDots != null) {
                         return new InteractionStatusViewBinding(view, simpleDraweeView, linearLayout, textView, progressDots);
                     }
@@ -49,7 +49,7 @@ public final class InteractionStatusViewBinding {
 
     public static InteractionStatusViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.interaction_status_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.interaction_status_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

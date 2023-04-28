@@ -7,11 +7,11 @@ import android.text.style.TextAppearanceSpan;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
+import kotlin.jvm.internal.AbstractC9679s;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, m15073d2 = {"spanProvider", "Landroid/text/style/CharacterStyle;", "R", "S", "header", "", "invoke"}, m15072k = 3, m15071mv = {1, 4, 0})
 /* loaded from: classes7.dex */
-final class MarkdownRules$createHeaderRules$1 extends AbstractC9973s implements Function1<Integer, CharacterStyle> {
+final class MarkdownRules$createHeaderRules$1 extends AbstractC9679s implements Function1<Integer, CharacterStyle> {
     final /* synthetic */ Context $context;
     final /* synthetic */ List $headerStyles;
 

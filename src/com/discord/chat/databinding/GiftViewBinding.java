@@ -8,10 +8,10 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Group;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class GiftViewBinding {
@@ -57,36 +57,36 @@ public final class GiftViewBinding {
         View a3;
         View a4;
         View a5;
-        int i = C4254R.C4256id.acceptButton;
-        DCDButton dCDButton = (DCDButton) C13922a.m2313a(view, i);
-        if (!(dCDButton == null || (a = C13922a.m2313a(view, (i = C4254R.C4256id.acceptButtonGradient))) == null)) {
-            i = C4254R.C4256id.barrier;
-            Barrier barrier = (Barrier) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.acceptButton;
+        DCDButton dCDButton = (DCDButton) C13836a.m2313a(view, i);
+        if (!(dCDButton == null || (a = C13836a.m2313a(view, (i = C3147R.C3149id.acceptButtonGradient))) == null)) {
+            i = C3147R.C3149id.barrier;
+            Barrier barrier = (Barrier) C13836a.m2313a(view, i);
             if (barrier != null) {
-                i = C4254R.C4256id.body;
-                TextView textView = (TextView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.body;
+                TextView textView = (TextView) C13836a.m2313a(view, i);
                 if (textView != null) {
-                    i = C4254R.C4256id.content;
-                    ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.content;
+                    ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
                     if (constraintLayout != null) {
-                        i = C4254R.C4256id.gradients;
-                        Group group = (Group) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.gradients;
+                        Group group = (Group) C13836a.m2313a(view, i);
                         if (group != null) {
-                            i = C4254R.C4256id.header;
-                            TextView textView2 = (TextView) C13922a.m2313a(view, i);
-                            if (!(textView2 == null || (a2 = C13922a.m2313a(view, (i = C4254R.C4256id.headerGradient))) == null)) {
-                                i = C4254R.C4256id.splash;
-                                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.header;
+                            TextView textView2 = (TextView) C13836a.m2313a(view, i);
+                            if (!(textView2 == null || (a2 = C13836a.m2313a(view, (i = C3147R.C3149id.headerGradient))) == null)) {
+                                i = C3147R.C3149id.splash;
+                                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                                 if (simpleDraweeView != null) {
-                                    i = C4254R.C4256id.subtitle;
-                                    TextView textView3 = (TextView) C13922a.m2313a(view, i);
-                                    if (!(textView3 == null || (a3 = C13922a.m2313a(view, (i = C4254R.C4256id.subtitleGradient))) == null)) {
-                                        i = C4254R.C4256id.thumbnail;
-                                        SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
-                                        if (!(simpleDraweeView2 == null || (a4 = C13922a.m2313a(view, (i = C4254R.C4256id.thumbnailGradient))) == null)) {
-                                            i = C4254R.C4256id.title;
-                                            TextView textView4 = (TextView) C13922a.m2313a(view, i);
-                                            if (!(textView4 == null || (a5 = C13922a.m2313a(view, (i = C4254R.C4256id.titleGradient))) == null)) {
+                                    i = C3147R.C3149id.subtitle;
+                                    TextView textView3 = (TextView) C13836a.m2313a(view, i);
+                                    if (!(textView3 == null || (a3 = C13836a.m2313a(view, (i = C3147R.C3149id.subtitleGradient))) == null)) {
+                                        i = C3147R.C3149id.thumbnail;
+                                        SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
+                                        if (!(simpleDraweeView2 == null || (a4 = C13836a.m2313a(view, (i = C3147R.C3149id.thumbnailGradient))) == null)) {
+                                            i = C3147R.C3149id.title;
+                                            TextView textView4 = (TextView) C13836a.m2313a(view, i);
+                                            if (!(textView4 == null || (a5 = C13836a.m2313a(view, (i = C3147R.C3149id.titleGradient))) == null)) {
                                                 return new GiftViewBinding((FrameLayout) view, dCDButton, a, barrier, textView, constraintLayout, group, textView2, a2, simpleDraweeView, textView3, a3, simpleDraweeView2, a4, textView4, a5);
                                             }
                                         }
@@ -106,7 +106,7 @@ public final class GiftViewBinding {
     }
 
     public static GiftViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.gift_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.gift_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

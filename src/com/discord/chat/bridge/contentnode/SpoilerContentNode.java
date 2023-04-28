@@ -1,19 +1,19 @@
 package com.discord.chat.bridge.contentnode;
 
-import bj.C3643f;
-import bj.C3681n1;
+import bj.C2521f;
+import bj.C2560n1;
 import com.discord.chat.bridge.spoiler.SpoilerableData;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 !2\u00020\u00012\u00020\u0002:\u0002 !B3\b\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bB\u0013\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006¢\u0006\u0002\u0010\fJ\u000f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006HÆ\u0003J\u0019\u0010\u0012\u001a\u00020\u00002\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0004HÖ\u0001J\t\u0010\u0018\u001a\u00020\bHÖ\u0001J!\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u00002\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fHÇ\u0001R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u0007\u001a\u00020\bX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006\""}, m15073d2 = {"Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "seen1", "", "content", "", "spoilerOrNull", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/util/List;)V", "getContent", "()Ljava/util/List;", "getSpoilerOrNull", "()Ljava/lang/String;", "component1", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class SpoilerContentNode extends ContentNode implements SpoilerableData {
@@ -40,7 +40,7 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
     public /* synthetic */ SpoilerContentNode(int i, List list, String str, SerializationConstructorMarker serializationConstructorMarker) {
         super(null);
         if (1 != (i & 1)) {
-            C3681n1.m33818b(i, 1, SpoilerContentNode$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 1, SpoilerContentNode$$serializer.INSTANCE.getDescriptor());
         }
         this.content = list;
         if ((i & 2) == 0) {
@@ -59,12 +59,12 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
     }
 
     public static final void write$Self(SpoilerContentNode self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z = false;
-        output.mo13870t(serialDesc, 0, new C3643f(ContentNodeSerializer.INSTANCE), self.content);
-        if (output.mo13893A(serialDesc, 1) || !C9971q.m14638b(self.getSpoilerOrNull(), "")) {
+        output.mo13870t(serialDesc, 0, new C2521f(ContentNodeSerializer.INSTANCE), self.content);
+        if (output.mo13893A(serialDesc, 1) || !C9677q.m14638b(self.getSpoilerOrNull(), "")) {
             z = true;
         }
         if (z) {
@@ -77,7 +77,7 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
     }
 
     public final SpoilerContentNode copy(List<? extends ContentNode> content) {
-        C9971q.m14633g(content, "content");
+        C9677q.m14633g(content, "content");
         return new SpoilerContentNode(content);
     }
 
@@ -85,7 +85,7 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
         if (this == obj) {
             return true;
         }
-        return (obj instanceof SpoilerContentNode) && C9971q.m14638b(this.content, ((SpoilerContentNode) obj).content);
+        return (obj instanceof SpoilerContentNode) && C9677q.m14638b(this.content, ((SpoilerContentNode) obj).content);
     }
 
     public final List<ContentNode> getContent() {
@@ -110,7 +110,7 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
     /* JADX WARN: Multi-variable type inference failed */
     public SpoilerContentNode(List<? extends ContentNode> content) {
         super(null);
-        C9971q.m14633g(content, "content");
+        C9677q.m14633g(content, "content");
         this.content = content;
         this.spoilerOrNull = "";
     }

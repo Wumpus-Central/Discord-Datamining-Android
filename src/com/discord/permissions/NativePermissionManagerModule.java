@@ -11,7 +11,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.permissions.PermissionsModule;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @ReactModule(name = "NativePermissionManager")
@@ -32,7 +32,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
         /* JADX INFO: Access modifiers changed from: private */
         public final PromiseWrapper transformHasAuthorizationResult(Promise promise) {
-            return new PromiseWrapper(promise, new C4621x4956bbec(NativePermissionStatus.Companion), null, 4, null);
+            return new PromiseWrapper(promise, new C3571x4956bbec(NativePermissionStatus.Companion), null, 4, null);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -44,12 +44,12 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public NativePermissionManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     private final PermissionsModule getPermissionsModule() {
         NativeModule nativeModule = getReactApplicationContext().getNativeModule(PermissionsModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         return (PermissionsModule) nativeModule;
     }
 
@@ -60,7 +60,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void getNotificationAuthorizationStatus(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         if (NotificationManagerCompat.m38426g(getReactApplicationContext()).m38432a()) {
             promise.resolve(2);
         } else {
@@ -70,85 +70,85 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
 
     @ReactMethod
     public final void hasBluetoothAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.BLUETOOTH", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasCameraAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.CAMERA", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasContactAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.READ_CONTACTS", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasExternalStorageAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.WRITE_EXTERNAL_STORAGE", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasMicrophoneAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.RECORD_AUDIO", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasModifyAudioAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.MODIFY_AUDIO_SETTINGS", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void hasPhotoAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().checkPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformHasAuthorizationResult(promise));
     }
 
     @ReactMethod
     public final void requestBluetoothAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.BLUETOOTH", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestCameraAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.CAMERA", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestContactsAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.READ_CONTACTS", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestExternalStorageAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.WRITE_EXTERNAL_STORAGE", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestMicrophoneAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.RECORD_AUDIO", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestModifyAudioAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.MODIFY_AUDIO_SETTINGS", Companion.transformRequestResult(promise));
     }
 
     @ReactMethod
     public final void requestPhotoAuthorization(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         getPermissionsModule().requestPermission("android.permission.READ_EXTERNAL_STORAGE", Companion.transformRequestResult(promise));
     }
 }

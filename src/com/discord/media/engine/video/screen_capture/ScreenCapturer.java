@@ -13,7 +13,7 @@ import co.discord.media_engine.NativeCapturerObserver;
 import co.discord.media_engine.SoundshareAudioSource;
 import com.discord.logging.Log;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.webrtc.CapturerObserver;
 import org.webrtc.ScreenCapturerAndroid;
@@ -94,7 +94,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
                     if (TimestampAligner.getRtcTimeNanos() - l.longValue() > screenCapturer.intervalNanos) {
                         NativeCapturerObserver nativeCapturerObserver = screenCapturer.nativeObserver;
                         if (nativeCapturerObserver == null) {
-                            C9971q.m14615y("nativeObserver");
+                            C9677q.m14615y("nativeObserver");
                             nativeCapturerObserver = null;
                         }
                         nativeCapturerObserver.repeatLastFrame();
@@ -108,7 +108,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ScreenCapturer(Intent mediaProjectionPermissionResultData) {
         super(mediaProjectionPermissionResultData, new OnStopCallback());
-        C9971q.m14633g(mediaProjectionPermissionResultData, "mediaProjectionPermissionResultData");
+        C9677q.m14633g(mediaProjectionPermissionResultData, "mediaProjectionPermissionResultData");
     }
 
     private final AudioRecord createRecorder() {
@@ -125,7 +125,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
         addMatchingUsage2 = addMatchingUsage.addMatchingUsage(14);
         addMatchingUsage3 = addMatchingUsage2.addMatchingUsage(0);
         build = addMatchingUsage3.build();
-        C9971q.m14634f(build, "Builder(mediaProjection)…\n                .build()");
+        C9677q.m14634f(build, "Builder(mediaProjection)…\n                .build()");
         try {
             audioPlaybackCaptureConfig = new AudioRecord.Builder().setAudioFormat(new AudioFormat.Builder().setEncoding(2).setSampleRate(SAMPLING_RATE_IN_HZ).setChannelMask(16).build()).setAudioPlaybackCaptureConfig(build);
             return audioPlaybackCaptureConfig.build();
@@ -161,7 +161,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
     }
 
     public final synchronized void changeCaptureFormatInternal(Rect measuredSize, int i) {
-        C9971q.m14633g(measuredSize, "measuredSize");
+        C9677q.m14633g(measuredSize, "measuredSize");
         int max = Math.max(measuredSize.width(), measuredSize.height());
         if (max > 0) {
             float f = i / max;
@@ -200,9 +200,9 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
 
     @Override // org.webrtc.ScreenCapturerAndroid, org.webrtc.VideoCapturer
     public synchronized void initialize(SurfaceTextureHelper surfaceTextureHelper, Context applicationContext, CapturerObserver capturerObserver) {
-        C9971q.m14633g(surfaceTextureHelper, "surfaceTextureHelper");
-        C9971q.m14633g(applicationContext, "applicationContext");
-        C9971q.m14633g(capturerObserver, "capturerObserver");
+        C9677q.m14633g(surfaceTextureHelper, "surfaceTextureHelper");
+        C9677q.m14633g(applicationContext, "applicationContext");
+        C9677q.m14633g(capturerObserver, "capturerObserver");
         this.surfaceTextureHelper = surfaceTextureHelper;
         this.context = applicationContext;
         this.nativeObserver = (NativeCapturerObserver) capturerObserver;
@@ -216,11 +216,11 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
             Companion companion = Companion;
             Context context = this.context;
             if (context == null) {
-                C9971q.m14615y("context");
+                C9677q.m14615y("context");
                 context = null;
             }
             rect.set(companion.getScreenSize(context));
-            if (!C9971q.m14638b(this.currMeasuredSize, this.lastMeasuredSize)) {
+            if (!C9677q.m14638b(this.currMeasuredSize, this.lastMeasuredSize)) {
                 this.lastMeasuredSize.set(this.currMeasuredSize);
                 changeCaptureFormatInternal(this.currMeasuredSize, this.maxDimension);
             }
@@ -243,7 +243,7 @@ public final class ScreenCapturer extends ScreenCapturerAndroid {
         if (this.framerate > 0) {
             SurfaceTextureHelper surfaceTextureHelper = this.surfaceTextureHelper;
             if (surfaceTextureHelper == null) {
-                C9971q.m14615y("surfaceTextureHelper");
+                C9677q.m14615y("surfaceTextureHelper");
                 surfaceTextureHelper = null;
             }
             surfaceTextureHelper.getHandler().postDelayed(this.watchdog, this.intervalNanos / 1000000);

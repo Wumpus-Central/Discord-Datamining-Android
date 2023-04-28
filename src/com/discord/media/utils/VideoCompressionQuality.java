@@ -3,7 +3,7 @@ package com.discord.media.utils;
 import com.facebook.react.uimanager.ViewDefaults;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0010\b\u0086\u0001\u0018\u0000 \u00142\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0014B\u001f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0002\u0010\u0007R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/media/utils/VideoCompressionQuality;", "", "value", "", "targetResolution", "", "targetBitrate", "(Ljava/lang/String;ILjava/lang/String;II)V", "getTargetBitrate", "()I", "getTargetResolution", "getValue", "()Ljava/lang/String;", "Original", "VeryHigh", "High", "Medium", "Low", "VeryLow", "None", "Companion", "media_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -43,7 +43,7 @@ public enum VideoCompressionQuality {
                     break;
                 }
                 videoCompressionQuality = values[i];
-                if (C9971q.m14638b(videoCompressionQuality.getValue(), str)) {
+                if (C9677q.m14638b(videoCompressionQuality.getValue(), str)) {
                     break;
                 }
                 i++;

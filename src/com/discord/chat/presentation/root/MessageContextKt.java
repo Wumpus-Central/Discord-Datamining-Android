@@ -7,7 +7,7 @@ import com.discord.chat.bridge.reaction.ReactionsTheme;
 import com.discord.chat.bridge.row.MessageRow;
 import com.discord.chat.bridge.truncation.Truncation;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002¨\u0006\u0003"}, m15073d2 = {"getMessageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "Lcom/discord/chat/bridge/row/MessageRow;", "chat_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -19,7 +19,7 @@ public final class MessageContextKt {
         boolean z3;
         boolean z4;
         boolean z5;
-        C9971q.m14633g(messageRow, "<this>");
+        C9677q.m14633g(messageRow, "<this>");
         MessageFrame messageFrame = messageRow.getMessageFrame();
         if (messageFrame != null) {
             messageFrameType = messageFrame.getType();
@@ -33,7 +33,7 @@ public final class MessageContextKt {
         }
         Boolean canAddNewReactions = messageRow.getCanAddNewReactions();
         Boolean bool = Boolean.TRUE;
-        boolean b = C9971q.m14638b(canAddNewReactions, bool);
+        boolean b = C9677q.m14638b(canAddNewReactions, bool);
         String addReactionLabel = messageRow.getAddReactionLabel();
         String str = "";
         if (addReactionLabel == null) {
@@ -49,23 +49,23 @@ public final class MessageContextKt {
         }
         ReactionsTheme reactionsTheme = messageRow.getReactionsTheme();
         Truncation truncation = messageRow.getTruncation();
-        if (!(messageRow.getMessage() instanceof Message) || !C9971q.m14638b(((Message) messageRow.getMessage()).getUseAttachmentGridLayout(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !C9677q.m14638b(((Message) messageRow.getMessage()).getUseAttachmentGridLayout(), bool)) {
             z2 = false;
         } else {
             z2 = true;
         }
-        if (!(messageRow.getMessage() instanceof Message) || !C9971q.m14638b(((Message) messageRow.getMessage()).getUseAttachmentUploadPreview(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !C9677q.m14638b(((Message) messageRow.getMessage()).getUseAttachmentUploadPreview(), bool)) {
             z3 = false;
         } else {
             z3 = true;
         }
         boolean enableSwipeToReply = messageRow.getEnableSwipeToReply();
-        if (!(messageRow.getMessage() instanceof Message) || !C9971q.m14638b(((Message) messageRow.getMessage()).getUseSortedReactions(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !C9677q.m14638b(((Message) messageRow.getMessage()).getUseSortedReactions(), bool)) {
             z4 = false;
         } else {
             z4 = true;
         }
-        if (!(messageRow.getMessage() instanceof Message) || !C9971q.m14638b(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !C9677q.m14638b(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
             z5 = false;
         } else {
             z5 = true;

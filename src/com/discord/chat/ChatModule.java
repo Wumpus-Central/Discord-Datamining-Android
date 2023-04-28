@@ -27,15 +27,15 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.coroutines.AbstractC10225x;
-import kotlinx.coroutines.C10129j;
-import kotlinx.coroutines.C10135k0;
-import kotlinx.coroutines.C10146m1;
-import kotlinx.coroutines.C10159p2;
-import kotlinx.coroutines.C10227x1;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.coroutines.AbstractC9941x;
+import kotlinx.coroutines.C9840j;
+import kotlinx.coroutines.C9846k0;
+import kotlinx.coroutines.C9858m1;
+import kotlinx.coroutines.C9871p2;
+import kotlinx.coroutines.C9943x1;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.serialization.json.C10285k;
+import kotlinx.serialization.json.C10006k;
 import kotlinx.serialization.json.Json;
 
 @ReactModule(name = "DCDChatManager")
@@ -44,7 +44,7 @@ import kotlinx.serialization.json.Json;
 public final class ChatModule extends ReactContextBaseJavaModule {
     private final CoroutineScope moduleScope;
     private final ReactApplicationContext reactContext;
-    private final Json json = C10285k.m13694b(null, ChatModule$json$1.INSTANCE, 1, null);
+    private final Json json = C10006k.m13694b(null, ChatModule$json$1.INSTANCE, 1, null);
     private final Map<Integer, ChatListManager> listManagers = new LinkedHashMap();
     private int previousRowUpdateTag = -1;
     private final Map<Integer, RowLogger> rowUpdateLoggers = new LinkedHashMap();
@@ -52,12 +52,12 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ChatModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.reactContext = reactContext;
-        AbstractC10225x b = C10159p2.m14110b(null, 1, null);
+        AbstractC9941x b = C9871p2.m14110b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
-        C9971q.m14634f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.moduleScope = C10135k0.m14187a(b.mo3485f0(C10146m1.m14166a(newSingleThreadExecutor)));
+        C9677q.m14634f(newSingleThreadExecutor, "newSingleThreadExecutor()");
+        this.moduleScope = C9846k0.m14187a(b.mo3485f0(C9858m1.m14166a(newSingleThreadExecutor)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -73,12 +73,12 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     }
 
     private final void withChatManager(int i, Function2<? super ChatListManager, ? super Continuation<? super Unit>, ? extends Object> function2) {
-        C10129j.m14195d(this.moduleScope, null, null, new ChatModule$withChatManager$1(function2, getChatListManager(i), null), 3, null);
+        C9840j.m14195d(this.moduleScope, null, null, new ChatModule$withChatManager$1(function2, getChatListManager(i), null), 3, null);
     }
 
     private final void withChatView(final int i, final Function1<? super ChatView, Unit> function1) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$withChatView$$inlined$uiManagerResolveView$1
             @Override // com.facebook.react.uimanager.UIBlock
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -132,13 +132,13 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         super.invalidate();
         CoroutineContext coroutineContext = this.moduleScope.getCoroutineContext();
         String simpleName = ChatModule.class.getSimpleName();
-        C10227x1.m13956e(coroutineContext, new CancellationException(simpleName + " invalidate()"));
+        C9943x1.m13956e(coroutineContext, new CancellationException(simpleName + " invalidate()"));
     }
 
     @ReactMethod
     public final void scrollIntoView(final int i, final int i2, final boolean z) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollIntoView$$inlined$withChatView$1
             @Override // com.facebook.react.uimanager.UIBlock
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -155,7 +155,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void scrollTo(final int i, final int i2, final boolean z) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollTo$$inlined$withChatView$1
             @Override // com.facebook.react.uimanager.UIBlock
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -172,7 +172,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void scrollToBottom(final int i, final boolean z) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollToBottom$$inlined$withChatView$1
             @Override // com.facebook.react.uimanager.UIBlock
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
@@ -196,7 +196,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void updateRows(int i, String rowsJSON, boolean z) {
-        C9971q.m14633g(rowsJSON, "rowsJSON");
+        C9677q.m14633g(rowsJSON, "rowsJSON");
         TTIMetrics.record$default(TTIMetrics.INSTANCE, "ChatModule.updateRows() Start", 0L, null, false, 14, null);
         withChatManager(i, new ChatModule$updateRows$1(this, i, rowsJSON, null));
     }

@@ -5,7 +5,7 @@ import com.discord.chat.presentation.events.ChatEventHandler;
 import com.discord.chat.presentation.message.messagepart.GuildInviteMessageAccessory;
 import com.discord.chat.presentation.message.view.GuildInviteView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u000e\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, m15073d2 = {"Lcom/discord/chat/presentation/message/viewholder/GuildInviteViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "guildInviteView", "Lcom/discord/chat/presentation/message/view/GuildInviteView;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "(Lcom/discord/chat/presentation/message/view/GuildInviteView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V", "getEventHandler", "()Lcom/discord/chat/presentation/events/ChatEventHandler;", "bind", "", "inviteAccessory", "Lcom/discord/chat/presentation/message/messagepart/GuildInviteMessageAccessory;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -16,16 +16,16 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GuildInviteViewHolder(GuildInviteView guildInviteView, ChatEventHandler eventHandler) {
         super(guildInviteView, null);
-        C9971q.m14633g(guildInviteView, "guildInviteView");
-        C9971q.m14633g(eventHandler, "eventHandler");
+        C9677q.m14633g(guildInviteView, "guildInviteView");
+        C9677q.m14633g(eventHandler, "eventHandler");
         this.guildInviteView = guildInviteView;
         this.eventHandler = eventHandler;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1$lambda$0(GuildInviteViewHolder this$0, GuildInviteMessageAccessory inviteAccessory, View view) {
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(inviteAccessory, "$inviteAccessory");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(inviteAccessory, "$inviteAccessory");
         this$0.eventHandler.mo41718onTapInviteEmbedAFFcxXc(inviteAccessory.mo41765getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
     }
 
@@ -42,14 +42,14 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
         /*
             r6 = this;
             java.lang.String r0 = "inviteAccessory"
-            kotlin.jvm.internal.C9971q.m14633g(r7, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r7, r0)
             com.discord.chat.bridge.codedlinks.GuildInviteEmbedImpl r0 = r7.getInvite()
             com.discord.chat.presentation.message.view.GuildInviteView r1 = r6.guildInviteView
             java.lang.String r2 = r0.getSubtitle()
             r3 = 0
             r4 = 1
             if (r2 == 0) goto L_0x001c
-            boolean r2 = p326ri.C12707l.m5767w(r2)
+            boolean r2 = p327ri.C12576l.m5767w(r2)
             if (r2 == 0) goto L_0x001a
             goto L_0x001c
         L_0x001a:
@@ -64,7 +64,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
         L_0x0024:
             java.lang.String r2 = r0.getChannelIcon()
             if (r2 == 0) goto L_0x0030
-            boolean r2 = p326ri.C12707l.m5767w(r2)
+            boolean r2 = p327ri.C12576l.m5767w(r2)
             if (r2 == 0) goto L_0x0031
         L_0x0030:
             r3 = r4

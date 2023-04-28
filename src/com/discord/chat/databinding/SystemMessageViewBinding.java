@@ -3,10 +3,10 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class SystemMessageViewBinding {
@@ -21,11 +21,11 @@ public final class SystemMessageViewBinding {
     }
 
     public static SystemMessageViewBinding bind(View view) {
-        int i = C4254R.C4256id.accessories_view;
-        MessageAccessoriesView messageAccessoriesView = (MessageAccessoriesView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.accessories_view;
+        MessageAccessoriesView messageAccessoriesView = (MessageAccessoriesView) C13836a.m2313a(view, i);
         if (messageAccessoriesView != null) {
-            i = C4254R.C4256id.icon;
-            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.icon;
+            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
             if (simpleDraweeView != null) {
                 return new SystemMessageViewBinding(view, messageAccessoriesView, simpleDraweeView);
             }
@@ -35,7 +35,7 @@ public final class SystemMessageViewBinding {
 
     public static SystemMessageViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.system_message_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.system_message_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

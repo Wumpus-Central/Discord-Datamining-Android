@@ -2,7 +2,7 @@ package com.discord.chat.presentation.list;
 
 import android.graphics.Canvas;
 import android.util.Pair;
-import androidx.core.view.C2733w0;
+import androidx.core.view.C1559w0;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.list.ChatListItemTouchHelper;
@@ -10,10 +10,10 @@ import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: classes4.dex */
-public abstract class ChatListCallback extends ItemTouchHelper.AbstractC3083c {
+public abstract class ChatListCallback extends ItemTouchHelper.AbstractC1928c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int getAbsoluteMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-        return convertToAbsoluteDirection(getMovementFlags(recyclerView, viewHolder), C2733w0.m37063B(recyclerView));
+        return convertToAbsoluteDirection(getMovementFlags(recyclerView, viewHolder), C1559w0.m37063B(recyclerView));
     }
 
     public Pair getEffectiveDxDy(float f, float f2) {
@@ -32,7 +32,7 @@ public abstract class ChatListCallback extends ItemTouchHelper.AbstractC3083c {
             ChatListItemTouchHelper.RecoverAnimation recoverAnimation = list.get(i2);
             recoverAnimation.update();
             int save = canvas.save();
-            onChildDraw(canvas, recyclerView, recoverAnimation.mViewHolder, recoverAnimation.f36274mX, recoverAnimation.f36275mY, recoverAnimation.mActionState, false);
+            onChildDraw(canvas, recyclerView, recoverAnimation.mViewHolder, recoverAnimation.f8480mX, recoverAnimation.f8481mY, recoverAnimation.mActionState, false);
             canvas.restoreToCount(save);
         }
         if (viewHolder != null) {
@@ -49,7 +49,7 @@ public abstract class ChatListCallback extends ItemTouchHelper.AbstractC3083c {
         for (int i2 = 0; i2 < size; i2++) {
             ChatListItemTouchHelper.RecoverAnimation recoverAnimation = list.get(i2);
             int save = canvas.save();
-            onChildDrawOver(canvas, recyclerView, recoverAnimation.mViewHolder, recoverAnimation.f36274mX, recoverAnimation.f36275mY, recoverAnimation.mActionState, false);
+            onChildDrawOver(canvas, recyclerView, recoverAnimation.mViewHolder, recoverAnimation.f8480mX, recoverAnimation.f8481mY, recoverAnimation.mActionState, false);
             canvas.restoreToCount(save);
         }
         if (viewHolder != null) {

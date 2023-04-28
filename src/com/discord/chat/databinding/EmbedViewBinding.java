@@ -7,12 +7,12 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.EmbedViewResizingMediaView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class EmbedViewBinding {
@@ -72,74 +72,74 @@ public final class EmbedViewBinding {
 
     public static EmbedViewBinding bind(View view) {
         View a;
-        int i = C4254R.C4256id.author_avatar;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.author_avatar;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.author_container;
-            LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.author_container;
+            LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
             if (linearLayout != null) {
-                i = C4254R.C4256id.author_name;
-                TextView textView = (TextView) C13922a.m2313a(view, i);
-                if (!(textView == null || (a = C13922a.m2313a(view, (i = C4254R.C4256id.border))) == null)) {
-                    i = C4254R.C4256id.description;
-                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.author_name;
+                TextView textView = (TextView) C13836a.m2313a(view, i);
+                if (!(textView == null || (a = C13836a.m2313a(view, (i = C3147R.C3149id.border))) == null)) {
+                    i = C3147R.C3149id.description;
+                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
                     if (simpleDraweeSpanTextView != null) {
-                        i = C4254R.C4256id.error;
-                        TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.error;
+                        TextView textView2 = (TextView) C13836a.m2313a(view, i);
                         if (textView2 != null) {
-                            i = C4254R.C4256id.error_icon;
-                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.error_icon;
+                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                             if (simpleDraweeView2 != null) {
-                                i = C4254R.C4256id.fields_bottom_wrap;
-                                LinearLayout linearLayout2 = (LinearLayout) C13922a.m2313a(view, i);
+                                i = C3147R.C3149id.fields_bottom_wrap;
+                                LinearLayout linearLayout2 = (LinearLayout) C13836a.m2313a(view, i);
                                 if (linearLayout2 != null) {
-                                    i = C4254R.C4256id.fields_container;
-                                    LinearLayout linearLayout3 = (LinearLayout) C13922a.m2313a(view, i);
+                                    i = C3147R.C3149id.fields_container;
+                                    LinearLayout linearLayout3 = (LinearLayout) C13836a.m2313a(view, i);
                                     if (linearLayout3 != null) {
-                                        i = C4254R.C4256id.fields_top_wrap;
-                                        LinearLayout linearLayout4 = (LinearLayout) C13922a.m2313a(view, i);
+                                        i = C3147R.C3149id.fields_top_wrap;
+                                        LinearLayout linearLayout4 = (LinearLayout) C13836a.m2313a(view, i);
                                         if (linearLayout4 != null) {
-                                            i = C4254R.C4256id.footer_avatar;
-                                            SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                            i = C3147R.C3149id.footer_avatar;
+                                            SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                             if (simpleDraweeView3 != null) {
-                                                i = C4254R.C4256id.footer_container;
-                                                LinearLayout linearLayout5 = (LinearLayout) C13922a.m2313a(view, i);
+                                                i = C3147R.C3149id.footer_container;
+                                                LinearLayout linearLayout5 = (LinearLayout) C13836a.m2313a(view, i);
                                                 if (linearLayout5 != null) {
-                                                    i = C4254R.C4256id.footer_text;
-                                                    TextView textView3 = (TextView) C13922a.m2313a(view, i);
+                                                    i = C3147R.C3149id.footer_text;
+                                                    TextView textView3 = (TextView) C13836a.m2313a(view, i);
                                                     if (textView3 != null) {
-                                                        i = C4254R.C4256id.inline_media_container;
-                                                        ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+                                                        i = C3147R.C3149id.inline_media_container;
+                                                        ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
                                                         if (constraintLayout != null) {
-                                                            i = C4254R.C4256id.inline_media_view;
-                                                            EmbedViewResizingMediaView embedViewResizingMediaView = (EmbedViewResizingMediaView) C13922a.m2313a(view, i);
+                                                            i = C3147R.C3149id.inline_media_view;
+                                                            EmbedViewResizingMediaView embedViewResizingMediaView = (EmbedViewResizingMediaView) C13836a.m2313a(view, i);
                                                             if (embedViewResizingMediaView != null) {
-                                                                i = C4254R.C4256id.inline_media_view2;
-                                                                EmbedViewResizingMediaView embedViewResizingMediaView2 = (EmbedViewResizingMediaView) C13922a.m2313a(view, i);
+                                                                i = C3147R.C3149id.inline_media_view2;
+                                                                EmbedViewResizingMediaView embedViewResizingMediaView2 = (EmbedViewResizingMediaView) C13836a.m2313a(view, i);
                                                                 if (embedViewResizingMediaView2 != null) {
-                                                                    i = C4254R.C4256id.inline_media_view3;
-                                                                    EmbedViewResizingMediaView embedViewResizingMediaView3 = (EmbedViewResizingMediaView) C13922a.m2313a(view, i);
+                                                                    i = C3147R.C3149id.inline_media_view3;
+                                                                    EmbedViewResizingMediaView embedViewResizingMediaView3 = (EmbedViewResizingMediaView) C13836a.m2313a(view, i);
                                                                     if (embedViewResizingMediaView3 != null) {
-                                                                        i = C4254R.C4256id.inline_media_view4;
-                                                                        EmbedViewResizingMediaView embedViewResizingMediaView4 = (EmbedViewResizingMediaView) C13922a.m2313a(view, i);
+                                                                        i = C3147R.C3149id.inline_media_view4;
+                                                                        EmbedViewResizingMediaView embedViewResizingMediaView4 = (EmbedViewResizingMediaView) C13836a.m2313a(view, i);
                                                                         if (embedViewResizingMediaView4 != null) {
-                                                                            i = C4254R.C4256id.media_view;
-                                                                            EmbedViewResizingMediaView embedViewResizingMediaView5 = (EmbedViewResizingMediaView) C13922a.m2313a(view, i);
+                                                                            i = C3147R.C3149id.media_view;
+                                                                            EmbedViewResizingMediaView embedViewResizingMediaView5 = (EmbedViewResizingMediaView) C13836a.m2313a(view, i);
                                                                             if (embedViewResizingMediaView5 != null) {
-                                                                                i = C4254R.C4256id.provider;
-                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+                                                                                i = C3147R.C3149id.provider;
+                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
                                                                                 if (simpleDraweeSpanTextView2 != null) {
-                                                                                    i = C4254R.C4256id.spacer;
-                                                                                    Space space = (Space) C13922a.m2313a(view, i);
+                                                                                    i = C3147R.C3149id.spacer;
+                                                                                    Space space = (Space) C13836a.m2313a(view, i);
                                                                                     if (space != null) {
-                                                                                        i = C4254R.C4256id.spoiler;
-                                                                                        SpoilerView spoilerView = (SpoilerView) C13922a.m2313a(view, i);
+                                                                                        i = C3147R.C3149id.spoiler;
+                                                                                        SpoilerView spoilerView = (SpoilerView) C13836a.m2313a(view, i);
                                                                                         if (spoilerView != null) {
-                                                                                            i = C4254R.C4256id.thumbnail;
-                                                                                            SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                                                            i = C3147R.C3149id.thumbnail;
+                                                                                            SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                                                             if (simpleDraweeView4 != null) {
-                                                                                                i = C4254R.C4256id.title;
-                                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+                                                                                                i = C3147R.C3149id.title;
+                                                                                                SimpleDraweeSpanTextView simpleDraweeSpanTextView3 = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
                                                                                                 if (simpleDraweeSpanTextView3 != null) {
                                                                                                     return new EmbedViewBinding(view, simpleDraweeView, linearLayout, textView, a, simpleDraweeSpanTextView, textView2, simpleDraweeView2, linearLayout2, linearLayout3, linearLayout4, simpleDraweeView3, linearLayout5, textView3, constraintLayout, embedViewResizingMediaView, embedViewResizingMediaView2, embedViewResizingMediaView3, embedViewResizingMediaView4, embedViewResizingMediaView5, simpleDraweeSpanTextView2, space, spoilerView, simpleDraweeView4, simpleDraweeSpanTextView3);
                                                                                                 }
@@ -170,7 +170,7 @@ public final class EmbedViewBinding {
 
     public static EmbedViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.embed_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.embed_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

@@ -6,15 +6,15 @@ import java.util.EnumSet;
 import java.util.Set;
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
-import nf.C11084n;
-import nf.EnumC11087p;
-import p449yi.AbstractC14435f;
+import nf.C10839n;
+import nf.EnumC10842p;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = Serializer.class)
+@AbstractC14370f(with = Serializer.class)
 @Metadata(m15074d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b0\b\u0087\u0001\u0018\u0000 52\b\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u000256B\u000f\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005R\u001b\u0010\u0006\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0006\u0010\bR\u001b\u0010\u000b\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\n\u001a\u0004\b\u000b\u0010\bR\u001b\u0010\r\u001a\u00020\u00078FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u000e\u0010\n\u001a\u0004\b\r\u0010\bR\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4¨\u00067"}, m15073d2 = {"Lcom/discord/chat/bridge/MessageType;", "", "Lcom/discord/serialization/IntEnum;", "serialNumber", "", "(Ljava/lang/String;II)V", "isAutomodSystem", "", "()Z", "isAutomodSystem$delegate", "Lkotlin/Lazy;", "isCall", "isCall$delegate", "isSystem", "isSystem$delegate", "getSerialNumber", "()I", "DEFAULT", "RECIPIENT_ADD", "RECIPIENT_REMOVE", "CALL", "CHANNEL_NAME_CHANGE", "CHANNEL_ICON_CHANGE", "CHANNEL_PINNED_MESSAGE", "USER_JOIN", "USER_PREMIUM_GUILD_SUBSCRIPTION", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2", "USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3", "CHANNEL_FOLLOW_ADD", "GUILD_STREAM", "GUILD_DISCOVERY_DISQUALIFIED", "GUILD_DISCOVERY_REQUALIFIED", "GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING", "GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING", "THREAD_CREATED", "REPLY", "CHAT_INPUT_COMMAND", "THREAD_STARTER_MESSAGE", "GUILD_INVITE_REMINDER", "CONTEXT_MENU_COMMAND", "AUTO_MODERATION_ACTION", "ROLE_SUBSCRIPTION_PURCHASE", "INTERACTION_PREMIUM_UPSELL", "STAGE_START", "STAGE_END", "STAGE_SPEAKER", "STAGE_RAISE_HAND", "STAGE_TOPIC", "GUILD_APPLICATION_PREMIUM_SUBSCRIPTION", "PRIVATE_CHANNEL_INTEGRATION_ADDED", "PRIVATE_CHANNEL_INTEGRATION_REMOVED", "PREMIUM_REFERRAL", "Companion", "Serializer", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public enum MessageType implements IntEnum {
@@ -97,7 +97,7 @@ public enum MessageType implements IntEnum {
         public static final Serializer INSTANCE = new Serializer();
 
         private Serializer() {
-            super(C9951f0.m14684b(MessageType.class), null, 2, null);
+            super(C9656f0.m14684b(MessageType.class), null, 2, null);
         }
     }
 
@@ -130,12 +130,12 @@ public enum MessageType implements IntEnum {
         MessageType messageType25 = CALL;
         MessageType messageType26 = GUILD_STREAM;
         EnumSet of = EnumSet.of(r0, messageType, messageType25, messageType2, messageType3, messageType4, messageType5, messageType6, messageType7, messageType8, messageType9, messageType10, messageType26, messageType11, messageType12, messageType13, messageType14, messageType15, messageType16, messageType17, messageType18, messageType19, messageType20, messageType21, messageType22, messageType23, messageType24);
-        C9971q.m14634f(of, "of(\n            RECIPIEN…M_SUBSCRIPTION,\n        )");
+        C9677q.m14634f(of, "of(\n            RECIPIEN…M_SUBSCRIPTION,\n        )");
         SystemTypes = of;
         EnumSet of2 = EnumSet.of(messageType25, messageType26);
-        C9971q.m14634f(of2, "of(\n            CALL,\n  …  GUILD_STREAM,\n        )");
+        C9677q.m14634f(of2, "of(\n            CALL,\n  …  GUILD_STREAM,\n        )");
         CallTypes = of2;
-        b = C11084n.m10944b(EnumC11087p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        b = C10839n.m10944b(EnumC10842p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
         $cachedSerializer$delegate = b;
     }
 
@@ -144,11 +144,11 @@ public enum MessageType implements IntEnum {
         Lazy a2;
         Lazy a3;
         this.serialNumber = i;
-        a = C11084n.m10945a(new MessageType$isSystem$2(this));
+        a = C10839n.m10945a(new MessageType$isSystem$2(this));
         this.isSystem$delegate = a;
-        a2 = C11084n.m10945a(new MessageType$isAutomodSystem$2(this));
+        a2 = C10839n.m10945a(new MessageType$isAutomodSystem$2(this));
         this.isAutomodSystem$delegate = a2;
-        a3 = C11084n.m10945a(new MessageType$isCall$2(this));
+        a3 = C10839n.m10945a(new MessageType$isCall$2(this));
         this.isCall$delegate = a3;
     }
 

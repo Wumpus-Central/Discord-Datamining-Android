@@ -1,7 +1,7 @@
 package com.discord.p047native.engine;
 
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000f\u001a\u00020\u0006HÆ\u0003J'\u0010\u0010\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u0006HÆ\u0001J\u0013\u0010\u0011\u001a\u00020\u00122\b\u0010\u0013\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0014\u001a\u00020\u0015HÖ\u0001J\t\u0010\u0016\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000b¨\u0006\u0017"}, m15073d2 = {"Lcom/discord/native/engine/VideoInputDeviceDescription;", "", "name", "", "guid", "facing", "Lcom/discord/native/engine/VideoInputDeviceFacing;", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/native/engine/VideoInputDeviceFacing;)V", "getFacing", "()Lcom/discord/native/engine/VideoInputDeviceFacing;", "getGuid", "()Ljava/lang/String;", "getName", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "", "toString", "android_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* renamed from: com.discord.native.engine.VideoInputDeviceDescription */
@@ -12,9 +12,9 @@ public final class VideoInputDeviceDescription {
     private final String name;
 
     public VideoInputDeviceDescription(String name, String guid, VideoInputDeviceFacing facing) {
-        C9971q.m14633g(name, "name");
-        C9971q.m14633g(guid, "guid");
-        C9971q.m14633g(facing, "facing");
+        C9677q.m14633g(name, "name");
+        C9677q.m14633g(guid, "guid");
+        C9677q.m14633g(facing, "facing");
         this.name = name;
         this.guid = guid;
         this.facing = facing;
@@ -46,9 +46,9 @@ public final class VideoInputDeviceDescription {
     }
 
     public final VideoInputDeviceDescription copy(String name, String guid, VideoInputDeviceFacing facing) {
-        C9971q.m14633g(name, "name");
-        C9971q.m14633g(guid, "guid");
-        C9971q.m14633g(facing, "facing");
+        C9677q.m14633g(name, "name");
+        C9677q.m14633g(guid, "guid");
+        C9677q.m14633g(facing, "facing");
         return new VideoInputDeviceDescription(name, guid, facing);
     }
 
@@ -60,7 +60,7 @@ public final class VideoInputDeviceDescription {
             return false;
         }
         VideoInputDeviceDescription videoInputDeviceDescription = (VideoInputDeviceDescription) obj;
-        return C9971q.m14638b(this.name, videoInputDeviceDescription.name) && C9971q.m14638b(this.guid, videoInputDeviceDescription.guid) && this.facing == videoInputDeviceDescription.facing;
+        return C9677q.m14638b(this.name, videoInputDeviceDescription.name) && C9677q.m14638b(this.guid, videoInputDeviceDescription.guid) && this.facing == videoInputDeviceDescription.facing;
     }
 
     public final VideoInputDeviceFacing getFacing() {

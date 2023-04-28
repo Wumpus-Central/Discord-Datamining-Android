@@ -5,26 +5,26 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import kotlin.Metadata;
-import kotlin.collections.C9921w;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9625w;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.json.AbstractC10273e;
-import kotlinx.serialization.json.C10274f;
+import kotlinx.serialization.json.AbstractC9993e;
+import kotlinx.serialization.json.C9994f;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonNull;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.JsonPrimitive;
-import nf.C11098x;
-import p014aj.AbstractC1413e;
-import p014aj.C1427g;
-import p267of.C11289v;
-import p449yi.AbstractC14435f;
+import nf.C10853x;
+import p014aj.AbstractC0192e;
+import p014aj.C0207g;
+import p268of.C11053v;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = Serializer.class)
+@AbstractC14370f(with = Serializer.class)
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\b\u0014\n\u0002\u0010\b\n\u0002\b\u0004\b\u0081\b\u0018\u0000 !2\u00020\u0001:\u0002!\"BO\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\u0014\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\n¢\u0006\u0002\u0010\u000bJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u000fJ\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u000fJ\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0017\u0010\u0019\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\nHÆ\u0003J^\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\u0016\b\u0002\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\nHÆ\u0001¢\u0006\u0002\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u00062\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u001fHÖ\u0001J\t\u0010 \u001a\u00020\u0003HÖ\u0001R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0015\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u0005\u0010\u000fR\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u0007\u0010\u000fR\u001f\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0006\u0012\u0004\u0018\u00010\u00030\n¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\r¨\u0006#"}, m15073d2 = {"Lcom/discord/user_search_worker/UserSearchTransformedUser;", "", "id", "", "username", "isBot", "", "isFriend", "friendNickname", "nicknames", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;)V", "getFriendNickname", "()Ljava/lang/String;", "getId", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getNicknames", "()Ljava/util/Map;", "getUsername", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;)Lcom/discord/user_search_worker/UserSearchTransformedUser;", "equals", "other", "hashCode", "", "toString", "Companion", "Serializer", "user_search_worker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
 public final class UserSearchTransformedUser {
@@ -32,7 +32,7 @@ public final class UserSearchTransformedUser {
     private final String friendNickname;
 
     /* renamed from: id */
-    private final String f7544id;
+    private final String f9618id;
     private final Boolean isBot;
     private final Boolean isFriend;
     private final Map<String, String> nicknames;
@@ -61,16 +61,16 @@ public final class UserSearchTransformedUser {
 
         static {
             Set<String> i;
-            i = C9921w.m14717i("id", "username", "isBot", "isFriend", "friendNickname");
+            i = C9625w.m14717i("id", "username", "isBot", "isFriend", "friendNickname");
             TRANSFORMED_USER_KEYS = i;
         }
 
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, p449yi.AbstractC14437h, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, p450yi.AbstractC14372h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return C1427g.m41131a("UserSearchTransformedUser", AbstractC1413e.C1421i.f471a);
+            return C0207g.m41131a("UserSearchTransformedUser", AbstractC0192e.C0201i.f537a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -79,52 +79,52 @@ public final class UserSearchTransformedUser {
             JsonPrimitive k;
             JsonPrimitive k2;
             JsonPrimitive k3;
-            C9971q.m14633g(decoder, "decoder");
-            JsonElement g = ((AbstractC10273e) decoder).mo13729g();
-            C9971q.m14635e(g, "null cannot be cast to non-null type kotlinx.serialization.json.JsonObject");
+            C9677q.m14633g(decoder, "decoder");
+            JsonElement g = ((AbstractC9993e) decoder).mo13729g();
+            C9677q.m14635e(g, "null cannot be cast to non-null type kotlinx.serialization.json.JsonObject");
             JsonObject jsonObject = (JsonObject) g;
             LinkedHashMap linkedHashMap = new LinkedHashMap();
             for (Map.Entry<String, JsonElement> entry : jsonObject.entrySet()) {
                 JsonElement value = entry.getValue();
-                if (!TRANSFORMED_USER_KEYS.contains(entry.getKey()) && (C10274f.m13718k(value).mo13691b() || (C10274f.m13718k(value) instanceof JsonNull))) {
+                if (!TRANSFORMED_USER_KEYS.contains(entry.getKey()) && (C9994f.m13718k(value).mo13691b() || (C9994f.m13718k(value) instanceof JsonNull))) {
                     linkedHashMap.put(entry.getKey(), entry.getValue());
                 }
             }
             ArrayList arrayList = new ArrayList(linkedHashMap.size());
             for (Map.Entry entry2 : linkedHashMap.entrySet()) {
-                arrayList.add(C11098x.m10921a((String) entry2.getKey(), C10274f.m13718k((JsonElement) entry2.getValue()).mo13692a()));
+                arrayList.add(C10853x.m10921a((String) entry2.getKey(), C9994f.m13718k((JsonElement) entry2.getValue()).mo13692a()));
             }
-            r = C11289v.m10241r(arrayList);
+            r = C11053v.m10241r(arrayList);
             Object obj = jsonObject.get("id");
-            C9971q.m14636d(obj);
-            String a = C10274f.m13718k((JsonElement) obj).mo13692a();
+            C9677q.m14636d(obj);
+            String a = C9994f.m13718k((JsonElement) obj).mo13692a();
             Object obj2 = jsonObject.get("username");
-            C9971q.m14636d(obj2);
-            String a2 = C10274f.m13718k((JsonElement) obj2).mo13692a();
+            C9677q.m14636d(obj2);
+            String a2 = C9994f.m13718k((JsonElement) obj2).mo13692a();
             JsonElement jsonElement = (JsonElement) jsonObject.get("isBot");
             String str = null;
-            Boolean valueOf = (jsonElement == null || (k3 = C10274f.m13718k(jsonElement)) == null) ? null : Boolean.valueOf(C10274f.m13726c(k3));
+            Boolean valueOf = (jsonElement == null || (k3 = C9994f.m13718k(jsonElement)) == null) ? null : Boolean.valueOf(C9994f.m13726c(k3));
             JsonElement jsonElement2 = (JsonElement) jsonObject.get("isFriend");
-            Boolean valueOf2 = (jsonElement2 == null || (k2 = C10274f.m13718k(jsonElement2)) == null) ? null : Boolean.valueOf(C10274f.m13726c(k2));
+            Boolean valueOf2 = (jsonElement2 == null || (k2 = C9994f.m13718k(jsonElement2)) == null) ? null : Boolean.valueOf(C9994f.m13726c(k2));
             JsonElement jsonElement3 = (JsonElement) jsonObject.get("friendNickname");
-            if (!(jsonElement3 == null || (k = C10274f.m13718k(jsonElement3)) == null || !k.mo13691b())) {
+            if (!(jsonElement3 == null || (k = C9994f.m13718k(jsonElement3)) == null || !k.mo13691b())) {
                 str = k.mo13692a();
             }
             return new UserSearchTransformedUser(a, a2, valueOf, valueOf2, str, r);
         }
 
         public void serialize(Encoder encoder, UserSearchTransformedUser value) {
-            C9971q.m14633g(encoder, "encoder");
-            C9971q.m14633g(value, "value");
+            C9677q.m14633g(encoder, "encoder");
+            C9677q.m14633g(value, "value");
             throw new UnsupportedOperationException();
         }
     }
 
     public UserSearchTransformedUser(String id2, String username, Boolean bool, Boolean bool2, String str, Map<String, String> nicknames) {
-        C9971q.m14633g(id2, "id");
-        C9971q.m14633g(username, "username");
-        C9971q.m14633g(nicknames, "nicknames");
-        this.f7544id = id2;
+        C9677q.m14633g(id2, "id");
+        C9677q.m14633g(username, "username");
+        C9677q.m14633g(nicknames, "nicknames");
+        this.f9618id = id2;
         this.username = username;
         this.isBot = bool;
         this.isFriend = bool2;
@@ -135,7 +135,7 @@ public final class UserSearchTransformedUser {
     /* JADX WARN: Multi-variable type inference failed */
     public static /* synthetic */ UserSearchTransformedUser copy$default(UserSearchTransformedUser userSearchTransformedUser, String str, String str2, Boolean bool, Boolean bool2, String str3, Map map, int i, Object obj) {
         if ((i & 1) != 0) {
-            str = userSearchTransformedUser.f7544id;
+            str = userSearchTransformedUser.f9618id;
         }
         if ((i & 2) != 0) {
             str2 = userSearchTransformedUser.username;
@@ -156,7 +156,7 @@ public final class UserSearchTransformedUser {
     }
 
     public final String component1() {
-        return this.f7544id;
+        return this.f9618id;
     }
 
     public final String component2() {
@@ -180,9 +180,9 @@ public final class UserSearchTransformedUser {
     }
 
     public final UserSearchTransformedUser copy(String id2, String username, Boolean bool, Boolean bool2, String str, Map<String, String> nicknames) {
-        C9971q.m14633g(id2, "id");
-        C9971q.m14633g(username, "username");
-        C9971q.m14633g(nicknames, "nicknames");
+        C9677q.m14633g(id2, "id");
+        C9677q.m14633g(username, "username");
+        C9677q.m14633g(nicknames, "nicknames");
         return new UserSearchTransformedUser(id2, username, bool, bool2, str, nicknames);
     }
 
@@ -194,7 +194,7 @@ public final class UserSearchTransformedUser {
             return false;
         }
         UserSearchTransformedUser userSearchTransformedUser = (UserSearchTransformedUser) obj;
-        return C9971q.m14638b(this.f7544id, userSearchTransformedUser.f7544id) && C9971q.m14638b(this.username, userSearchTransformedUser.username) && C9971q.m14638b(this.isBot, userSearchTransformedUser.isBot) && C9971q.m14638b(this.isFriend, userSearchTransformedUser.isFriend) && C9971q.m14638b(this.friendNickname, userSearchTransformedUser.friendNickname) && C9971q.m14638b(this.nicknames, userSearchTransformedUser.nicknames);
+        return C9677q.m14638b(this.f9618id, userSearchTransformedUser.f9618id) && C9677q.m14638b(this.username, userSearchTransformedUser.username) && C9677q.m14638b(this.isBot, userSearchTransformedUser.isBot) && C9677q.m14638b(this.isFriend, userSearchTransformedUser.isFriend) && C9677q.m14638b(this.friendNickname, userSearchTransformedUser.friendNickname) && C9677q.m14638b(this.nicknames, userSearchTransformedUser.nicknames);
     }
 
     public final String getFriendNickname() {
@@ -202,7 +202,7 @@ public final class UserSearchTransformedUser {
     }
 
     public final String getId() {
-        return this.f7544id;
+        return this.f9618id;
     }
 
     public final Map<String, String> getNicknames() {
@@ -214,7 +214,7 @@ public final class UserSearchTransformedUser {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f7544id.hashCode() * 31) + this.username.hashCode()) * 31;
+        int hashCode = ((this.f9618id.hashCode() * 31) + this.username.hashCode()) * 31;
         Boolean bool = this.isBot;
         int i = 0;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
@@ -236,7 +236,7 @@ public final class UserSearchTransformedUser {
     }
 
     public String toString() {
-        String str = this.f7544id;
+        String str = this.f9618id;
         String str2 = this.username;
         Boolean bool = this.isBot;
         Boolean bool2 = this.isFriend;

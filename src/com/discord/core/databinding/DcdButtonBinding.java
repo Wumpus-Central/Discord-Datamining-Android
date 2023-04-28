@@ -4,9 +4,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import com.discord.core.C4418R;
+import com.discord.core.C3349R;
 import com.google.android.material.button.MaterialButton;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class DcdButtonBinding {
@@ -21,11 +21,11 @@ public final class DcdButtonBinding {
     }
 
     public static DcdButtonBinding bind(View view) {
-        int i = C4418R.C4420id.button;
-        MaterialButton materialButton = (MaterialButton) C13922a.m2313a(view, i);
+        int i = C3349R.C3351id.button;
+        MaterialButton materialButton = (MaterialButton) C13836a.m2313a(view, i);
         if (materialButton != null) {
-            i = C4418R.C4420id.progress;
-            ProgressBar progressBar = (ProgressBar) C13922a.m2313a(view, i);
+            i = C3349R.C3351id.progress;
+            ProgressBar progressBar = (ProgressBar) C13836a.m2313a(view, i);
             if (progressBar != null) {
                 return new DcdButtonBinding(view, materialButton, progressBar);
             }
@@ -35,7 +35,7 @@ public final class DcdButtonBinding {
 
     public static DcdButtonBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4418R.layout.dcd_button, viewGroup);
+            layoutInflater.inflate(C3349R.layout.dcd_button, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

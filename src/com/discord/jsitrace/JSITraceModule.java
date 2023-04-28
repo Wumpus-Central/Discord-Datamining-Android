@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @ReactModule(name = JSITraceModule.NAME)
@@ -31,7 +31,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JSITraceModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     private final native void nativeInstall(long j);
@@ -49,7 +49,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
             }
             System.loadLibrary("jsitrace");
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
             nativeInstall(ReactContextExtensionsKt.jsiId(reactApplicationContext));
             return true;
         } catch (Exception unused) {
@@ -61,7 +61,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
     public final boolean isEnabled() {
         JSITraceCache jSITraceCache = JSITraceCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         return jSITraceCache.isEnabled(reactApplicationContext);
     }
 
@@ -69,7 +69,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
     public final void setEnabled(boolean z) {
         JSITraceCache jSITraceCache = JSITraceCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         jSITraceCache.setEnabled(reactApplicationContext, z);
     }
 }

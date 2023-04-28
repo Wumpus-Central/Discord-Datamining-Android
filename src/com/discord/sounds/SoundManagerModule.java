@@ -10,7 +10,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import java.io.File;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0007\u001a\u00020\bH\u0016J\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J*\u0010\u000e\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\b2\b\u0010\u0010\u001a\u0004\u0018\u00010\b2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0018\u0010\u0014\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\fH\u0007J\u0018\u0010\u0016\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\fH\u0007J\u0018\u0010\u0017\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\fH\u0007J\u0018\u0010\u0018\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u0019H\u0007J\u0010\u0010\u001a\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u001e\u0010\u001b\u001a\u00020\f*\u00020\u001c2\u0006\u0010\u000f\u001a\u00020\b2\b\b\u0002\u0010\u001d\u001a\u00020\bH\u0003R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, m15073d2 = {"Lcom/discord/sounds/SoundManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "soundManager", "Lcom/discord/sounds/SoundManager;", "getName", "", "pause", "", "key", "", "play", "prepare", "fileName", "usage", "callback", "Lcom/facebook/react/bridge/Callback;", "release", "setCurrentTime", "value", "setNumberOfLoops", "setPan", "setVolume", "", "stop", "resolveRawResId", "Landroid/content/Context;", "type", "sounds_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -20,7 +20,7 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SoundManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.soundManager = new SoundManager(reactContext);
     }
 
@@ -70,8 +70,8 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     public final void prepare(String fileName, String str, int i, Callback callback) {
         String str2;
         Integer num;
-        C9971q.m14633g(fileName, "fileName");
-        C9971q.m14633g(callback, "callback");
+        C9677q.m14633g(fileName, "fileName");
+        C9677q.m14633g(callback, "callback");
         Log.i$default(Log.INSTANCE, SoundManager.Companion.getLogTag(), "Prepare " + fileName + " with " + i + ".", (Throwable) null, 4, (Object) null);
         int i2 = 5;
         if (str != null) {
@@ -91,11 +91,11 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
         if (URLUtil.isValidUrl(fileName)) {
             String remoteSoundFilename = SoundExtensionsKt.getRemoteSoundFilename(fileName);
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
             File file = new File(SoundExtensionsKt.getSoundsCacheDirectory(reactApplicationContext), remoteSoundFilename);
             if (!file.exists()) {
                 ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-                C9971q.m14634f(reactApplicationContext2, "reactApplicationContext");
+                C9677q.m14634f(reactApplicationContext2, "reactApplicationContext");
                 SoundExtensionsKt.fetchSound(reactApplicationContext2, fileName, this.soundManager, i, i2, new SoundManagerModule$prepare$1(callback));
                 return;
             }
@@ -104,7 +104,7 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
             num = null;
         } else {
             ReactApplicationContext reactApplicationContext3 = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext3, "reactApplicationContext");
+            C9677q.m14634f(reactApplicationContext3, "reactApplicationContext");
             num = Integer.valueOf(resolveRawResId$default(this, reactApplicationContext3, fileName, null, 2, null));
             str2 = null;
         }

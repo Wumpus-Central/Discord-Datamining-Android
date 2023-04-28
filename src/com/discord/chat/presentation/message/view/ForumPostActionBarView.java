@@ -21,12 +21,12 @@ import com.discord.theme.ThemeManagerKt;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9905i;
-import kotlin.collections.C9914r;
+import kotlin.collections.C9609i;
+import kotlin.collections.C9618r;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p163j$.util.Spliterator;
+import p164j$.util.Spliterator;
 
 @Metadata(m15074d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010(\u001a\u00020'\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010)\u0012\b\b\u0002\u0010+\u001a\u00020\u0013¢\u0006\u0004\b,\u0010-Jb\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u00022\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\b\u0010\b\u001a\u0004\u0018\u00010\u00072\u0006\u0010\n\u001a\u00020\t2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\f0\u000b2\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\f0\u000b2\u0006\u0010\u0010\u001a\u00020\u000fH\u0002JÏ\u0001\u0010#\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u00022\u0006\u0010\u0019\u001a\u00020\u00022\u000e\u0010\u001a\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00042\b\u0010\u001b\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u001c\u001a\u00020\u000f2\u0006\u0010\u001d\u001a\u00020\u00022\b\u0010\b\u001a\u0004\u0018\u00010\u00072\u0006\u0010\n\u001a\u00020\t2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\f0\u000b2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\f0\u000b2\u0006\u0010\u001e\u001a\u00020\t2\u0006\u0010\u001f\u001a\u00020\t2\u0006\u0010 \u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u000fø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b!\u0010\"R\u0014\u0010%\u001a\u00020$8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b%\u0010&\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006."}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/ForumPostActionBarView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "", "messageId", "", "Lcom/discord/reactions/ReactionView$Reaction;", "reactionsToDisplay", "Lcom/discord/reactions/ReactionView$ReactionsTheme;", "reactionsTheme", "Landroid/view/View$OnClickListener;", "onAddReactionClick", "Lkotlin/Function1;", "", "onReactionClick", "onReactionLongPress", "", "useSortedReactions", "setReactions", "Lcom/discord/primitives/MessageId;", "", "numDisplayedReactions", "isFollowing", "followIcon", "followLabel", "shareIcon", "shareLabel", "reactions", "defaultReaction", "canAddNewReactions", "addNewReactionAccessibilityLabel", "onTapFollowForumPost", "onTapShareForumPost", "onTapReactionOverflow", "configure-m9bs0RY", "(Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/discord/reactions/ReactionView$Reaction;ZLjava/lang/String;Lcom/discord/reactions/ReactionView$ReactionsTheme;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Z)V", "configure", "Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;", "binding", "Lcom/discord/chat/databinding/ForumPostActionBarViewBinding;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -36,13 +36,13 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ForumPostActionBarView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ForumPostActionBarView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ForumPostActionBarView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -51,10 +51,10 @@ public final class ForumPostActionBarView extends ConstraintLayout {
 
     private final void setReactions(String str, List<? extends ReactionView.Reaction> list, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onClickListener, Function1<? super ReactionView.Reaction, Unit> function1, Function1<? super ReactionView.Reaction, Unit> function12, boolean z) {
         ReactionsView reactionsView = this.binding.reactionsView;
-        C9971q.m14634f(reactionsView, "binding.reactionsView");
+        C9677q.m14634f(reactionsView, "binding.reactionsView");
         reactionsView.setVisibility(0);
         ReactionsView reactionsView2 = this.binding.reactionsView;
-        C9971q.m14634f(reactionsView2, "binding.reactionsView");
+        C9677q.m14634f(reactionsView2, "binding.reactionsView");
         reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r34 & Spliterator.NONNULL) != 0 ? 
         /*  JADX ERROR: Method code generation error
             jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0039: INVOKE  
@@ -124,13 +124,13 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             com.discord.chat.databinding.ForumPostActionBarViewBinding r1 = r0.binding
             com.discord.reactions.ReactionsView r1 = r1.reactionsView
             java.lang.String r4 = "binding.reactionsView"
-            kotlin.jvm.internal.C9971q.m14634f(r1, r4)
+            kotlin.jvm.internal.C9677q.m14634f(r1, r4)
             r5 = 0
             r1.setVisibility(r5)
             com.discord.chat.databinding.ForumPostActionBarViewBinding r1 = r0.binding
             com.discord.reactions.ReactionsView r5 = r1.reactionsView
             r1 = r5
-            kotlin.jvm.internal.C9971q.m14634f(r5, r4)
+            kotlin.jvm.internal.C9677q.m14634f(r5, r4)
             r4 = 0
             r5 = 0
             java.lang.String r6 = ""
@@ -168,33 +168,33 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         boolean z5;
         List<? extends ReactionView.Reaction> x0;
         List d;
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(followIcon, "followIcon");
-        C9971q.m14633g(followLabel, "followLabel");
-        C9971q.m14633g(shareIcon, "shareIcon");
-        C9971q.m14633g(shareLabel, "shareLabel");
-        C9971q.m14633g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
-        C9971q.m14633g(onAddReactionClick, "onAddReactionClick");
-        C9971q.m14633g(onReactionClick, "onReactionClick");
-        C9971q.m14633g(onReactionLongPress, "onReactionLongPress");
-        C9971q.m14633g(onTapFollowForumPost, "onTapFollowForumPost");
-        C9971q.m14633g(onTapShareForumPost, "onTapShareForumPost");
-        C9971q.m14633g(onTapReactionOverflow, "onTapReactionOverflow");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(followIcon, "followIcon");
+        C9677q.m14633g(followLabel, "followLabel");
+        C9677q.m14633g(shareIcon, "shareIcon");
+        C9677q.m14633g(shareLabel, "shareLabel");
+        C9677q.m14633g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
+        C9677q.m14633g(onAddReactionClick, "onAddReactionClick");
+        C9677q.m14633g(onReactionClick, "onReactionClick");
+        C9677q.m14633g(onReactionLongPress, "onReactionLongPress");
+        C9677q.m14633g(onTapFollowForumPost, "onTapFollowForumPost");
+        C9677q.m14633g(onTapShareForumPost, "onTapShareForumPost");
+        C9677q.m14633g(onTapReactionOverflow, "onTapReactionOverflow");
         boolean z6 = true;
         if (list != null && !list.isEmpty()) {
             z6 = false;
         }
         if (z6) {
             DCDButton dCDButton = this.binding.otherReactionsCount;
-            C9971q.m14634f(dCDButton, "binding.otherReactionsCount");
+            C9677q.m14634f(dCDButton, "binding.otherReactionsCount");
             dCDButton.setVisibility(8);
             if (reaction == null || !z2) {
                 i2 = 2;
                 ReactionsView reactionsView = this.binding.reactionsView;
-                C9971q.m14634f(reactionsView, "binding.reactionsView");
+                C9677q.m14634f(reactionsView, "binding.reactionsView");
                 reactionsView.setVisibility(8);
             } else {
-                d = C9905i.m14825d(reaction);
+                d = C9609i.m14825d(reaction);
                 i2 = 2;
                 setReactions$default(this, MessageId.m42121toStringimpl(messageId), d, reactionsTheme, onAddReactionClick, onReactionClick, null, z3, 32, null);
             }
@@ -203,19 +203,19 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         } else {
             i2 = 2;
             int i4 = i - 1;
-            x0 = C9914r.m14741x0(list, i4);
+            x0 = C9618r.m14741x0(list, i4);
             ReactionsView reactionsView2 = this.binding.reactionsView;
-            C9971q.m14634f(reactionsView2, "binding.reactionsView");
+            C9677q.m14634f(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
             z4 = false;
             setReactions(MessageId.m42121toStringimpl(messageId), x0, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z3);
             int max = Math.max(list.size() - i4, 0);
             DCDButton configure_m9bs0RY$lambda$3 = this.binding.otherReactionsCount;
-            C9971q.m14634f(configure_m9bs0RY$lambda$3, "configure_m9bs0RY$lambda$3");
+            C9677q.m14634f(configure_m9bs0RY$lambda$3, "configure_m9bs0RY$lambda$3");
             configure_m9bs0RY$lambda$3.setVisibility(max != 0 ? 0 : 8);
             if (configure_m9bs0RY$lambda$3.getVisibility() == 0) {
                 Context context = configure_m9bs0RY$lambda$3.getContext();
-                C9971q.m14634f(context, "context");
+                C9677q.m14634f(context, "context");
                 configure_m9bs0RY$lambda$3.setText(I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_REACTIONS_OVERFLOW, new ForumPostActionBarView$configure$1$1(max)));
                 obj = null;
                 RippleUtilsKt.addRipple$default(configure_m9bs0RY$lambda$3, true, 0, 2, null);
@@ -239,7 +239,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         dCDButton3.setOnClickButtonListener(onTapShareForumPost);
         dCDButton3.setContentDescription(shareLabel);
         AddReactionView configure_m9bs0RY$lambda$6 = this.binding.addReaction;
-        C9971q.m14634f(configure_m9bs0RY$lambda$6, "configure_m9bs0RY$lambda$6");
+        C9677q.m14634f(configure_m9bs0RY$lambda$6, "configure_m9bs0RY$lambda$6");
         configure_m9bs0RY$lambda$6.setVisibility(z2 ? z4 : 8);
         if (configure_m9bs0RY$lambda$6.getVisibility() == 0) {
             z5 = true;
@@ -262,9 +262,9 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ForumPostActionBarView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ForumPostActionBarViewBinding inflate = ForumPostActionBarViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.footerDivider.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.headerDivider.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundModifierAccent());

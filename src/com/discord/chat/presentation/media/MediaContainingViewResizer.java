@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\rB\u0007\b\u0002¢\u0006\u0002\u0010\u0002J4\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u00072\b\b\u0002\u0010\u000b\u001a\u00020\f¨\u0006\u000e"}, m15073d2 = {"Lcom/discord/chat/presentation/media/MediaContainingViewResizer;", "", "()V", "resizeLayoutParams", "", "Landroid/view/View;", "targetWidthPx", "", "targetHeightPx", "maxWidthPx", "maxHeightPx", ViewProps.RESIZE_MODE, "Lcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;", "ResizeMode", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -32,8 +32,8 @@ public final class MediaContainingViewResizer {
     public final void resizeLayoutParams(View view, int i, int i2, int i3, int i4, ResizeMode resizeMode) {
         boolean z;
         float f;
-        C9971q.m14633g(view, "<this>");
-        C9971q.m14633g(resizeMode, "resizeMode");
+        C9677q.m14633g(view, "<this>");
+        C9677q.m14633g(resizeMode, "resizeMode");
         boolean z2 = false;
         if (resizeMode == ResizeMode.Fill || resizeMode == ResizeMode.Cover || i > i3 || i2 > i4) {
             z = true;

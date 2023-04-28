@@ -3,7 +3,7 @@ package com.discord.file_downloader;
 import com.facebook.react.util.JSStackTrace;
 import java.io.File;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0003\u0004\u0005B\u0007\b\u0004¢\u0006\u0002\u0010\u0002\u0082\u0001\u0003\u0006\u0007\b¨\u0006\t"}, m15073d2 = {"Lcom/discord/file_downloader/DownloadState;", "", "()V", "Completed", "Failure", "InProgress", "Lcom/discord/file_downloader/DownloadState$Completed;", "Lcom/discord/file_downloader/DownloadState$Failure;", "Lcom/discord/file_downloader/DownloadState$InProgress;", "file_downloader_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -18,7 +18,7 @@ public abstract class DownloadState {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Completed(File file) {
             super(null);
-            C9971q.m14633g(file, "file");
+            C9677q.m14633g(file, "file");
             this.file = file;
         }
 
@@ -34,7 +34,7 @@ public abstract class DownloadState {
         }
 
         public final Completed copy(File file) {
-            C9971q.m14633g(file, "file");
+            C9677q.m14633g(file, "file");
             return new Completed(file);
         }
 
@@ -42,7 +42,7 @@ public abstract class DownloadState {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Completed) && C9971q.m14638b(this.file, ((Completed) obj).file);
+            return (obj instanceof Completed) && C9677q.m14638b(this.file, ((Completed) obj).file);
         }
 
         public final File getFile() {
@@ -67,7 +67,7 @@ public abstract class DownloadState {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Failure(Exception exception) {
             super(null);
-            C9971q.m14633g(exception, "exception");
+            C9677q.m14633g(exception, "exception");
             this.exception = exception;
         }
 
@@ -83,7 +83,7 @@ public abstract class DownloadState {
         }
 
         public final Failure copy(Exception exception) {
-            C9971q.m14633g(exception, "exception");
+            C9677q.m14633g(exception, "exception");
             return new Failure(exception);
         }
 
@@ -91,7 +91,7 @@ public abstract class DownloadState {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Failure) && C9971q.m14638b(this.exception, ((Failure) obj).exception);
+            return (obj instanceof Failure) && C9677q.m14638b(this.exception, ((Failure) obj).exception);
         }
 
         public final Exception getException() {

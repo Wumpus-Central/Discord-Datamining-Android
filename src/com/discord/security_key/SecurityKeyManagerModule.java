@@ -9,7 +9,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u00003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t*\u0001\u0006\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\tH\u0007J\b\u0010\u0011\u001a\u00020\u000fH\u0016J\b\u0010\u0012\u001a\u00020\rH\u0016J\b\u0010\u0013\u001a\u00020\rH\u0016J\u0018\u0010\u0014\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\tH\u0007J\u0010\u0010\u0015\u001a\u00020\r2\u0006\u0010\u0016\u001a\u00020\u000fH\u0002J\u0010\u0010\u0017\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002R\u0010\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0007R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0018"}, m15073d2 = {"Lcom/discord/security_key/SecurityKeyManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "activityEventListener", "com/discord/security_key/SecurityKeyManagerModule$activityEventListener$1", "Lcom/discord/security_key/SecurityKeyManagerModule$activityEventListener$1;", "currentPromise", "Lcom/facebook/react/bridge/Promise;", "webauthn", "Lcom/discord/security_key/WebAuthn;", "authenticate", "", "data", "", BaseJavaModule.METHOD_TYPE_PROMISE, "getName", "initialize", "invalidate", "register", "reject", "message", "resolve", "security_key_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
@@ -29,13 +29,13 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
     /* JADX WARN: Type inference failed for: r3v2, types: [com.discord.security_key.SecurityKeyManagerModule$activityEventListener$1] */
     public SecurityKeyManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void reject(String str) {
         Promise promise = this.currentPromise;
-        C9971q.m14636d(promise);
+        C9677q.m14636d(promise);
         promise.reject("failed", str);
         this.currentPromise = null;
     }
@@ -43,15 +43,15 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public final void resolve(String str) {
         Promise promise = this.currentPromise;
-        C9971q.m14636d(promise);
+        C9677q.m14636d(promise);
         promise.resolve(str);
         this.currentPromise = null;
     }
 
     @ReactMethod
     public final void authenticate(String data, Promise promise) {
-        C9971q.m14633g(data, "data");
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(data, "data");
+        C9677q.m14633g(promise, "promise");
         if (this.currentPromise != null) {
             promise.reject("failed", "already running");
             return;
@@ -79,8 +79,8 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void register(String data, Promise promise) {
-        C9971q.m14633g(data, "data");
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(data, "data");
+        C9677q.m14633g(promise, "promise");
         if (this.currentPromise != null) {
             promise.reject("failed", "already running");
             return;

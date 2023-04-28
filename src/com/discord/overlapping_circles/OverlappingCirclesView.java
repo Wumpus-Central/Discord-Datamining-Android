@@ -15,8 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.URLUtil;
 import android.widget.LinearLayout;
-import androidx.core.view.C2733w0;
-import androidx.core.view.ViewTreeObserver$OnPreDrawListenerC2722u0;
+import androidx.core.view.C1559w0;
+import androidx.core.view.ViewTreeObserver$OnPreDrawListenerC1548u0;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
@@ -28,17 +28,17 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.textview.MaterialTextView;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11084n;
-import nf.EnumC11087p;
+import nf.C10839n;
+import nf.EnumC10842p;
 
 @Metadata(m15074d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00182\u00020\u0001:\u0004\u0018\u0019\u001a\u001bB\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0014\u0010\u0013\u001a\u00020\u00142\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016R\u0012\u0010\u0007\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\f\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\r\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/overlapping_circles/OverlappingCirclesView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "imageLoadingColor", "", "imageLoadingColorDrawable", "Landroid/graphics/drawable/ColorDrawable;", "maxItems", "overflowBgColor", "overflowTextColor", "overflowTextSizePx", "overlapNegativeMargin", "overlapPx", "placeholderCircleColor", "separatorSizePx", "setItems", "", "items", "", "Lcom/discord/overlapping_circles/OverlappingItem;", "Companion", "OverflowItem", "OverlappingClippedItem", "PlaceholderItem", "overlapping_circles_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes3.dex */
@@ -81,7 +81,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             super(context);
             int i6;
             int i7;
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             DiscordFontUtilsKt.setDiscordFont(this, DiscordFont.PrimaryBold);
             setTextSize(0, i2);
             setTextColor(i3);
@@ -101,7 +101,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             setPadding(i6, 0, i7, 0);
             setBackgroundColor(i4);
             ViewClippingUtilsKt.clipToCircle(this);
-            C9971q.m14634f(ViewTreeObserver$OnPreDrawListenerC2722u0.m37085a(this, new Runnable() { // from class: com.discord.overlapping_circles.OverlappingCirclesView$OverflowItem$special$$inlined$doOnPreDraw$1
+            C9677q.m14634f(ViewTreeObserver$OnPreDrawListenerC1548u0.m37085a(this, new Runnable() { // from class: com.discord.overlapping_circles.OverlappingCirclesView$OverflowItem$special$$inlined$doOnPreDraw$1
                 @Override // java.lang.Runnable
                 public final void run() {
                     int c;
@@ -110,7 +110,7 @@ public final class OverlappingCirclesView extends LinearLayout {
                     ViewGroup.LayoutParams layoutParams = overflowItem.getLayoutParams();
                     if (layoutParams != null) {
                         LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) layoutParams;
-                        c = C6884j.m23961c(view.getWidth(), view.getHeight());
+                        c = C6322j.m23961c(view.getWidth(), view.getHeight());
                         layoutParams2.width = c;
                         overflowItem.setLayoutParams(layoutParams2);
                         return;
@@ -130,16 +130,16 @@ public final class OverlappingCirclesView extends LinearLayout {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public OverlappingClippedItem(Context context, String imageUri, final boolean z, final int i, final int i2, Drawable defaultImg) {
             super(context);
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(imageUri, "imageUri");
-            C9971q.m14633g(defaultImg, "defaultImg");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(imageUri, "imageUri");
+            C9677q.m14633g(defaultImg, "defaultImg");
             setHierarchy(GenericDraweeHierarchyBuilder.m31735u(getResources()).m31764D(defaultImg).m31767A(defaultImg).m31731y(1.0f).m31755a());
             setImageURI(imageUri);
-            if (!C2733w0.m37029U(this) || isLayoutRequested()) {
+            if (!C1559w0.m37029U(this) || isLayoutRequested()) {
                 addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.discord.overlapping_circles.OverlappingCirclesView$OverlappingClippedItem$special$$inlined$doOnLayout$1
                     @Override // android.view.View.OnLayoutChangeListener
                     public void onLayoutChange(View view, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10) {
-                        C9971q.m14633g(view, "view");
+                        C9677q.m14633g(view, "view");
                         view.removeOnLayoutChangeListener(this);
                         float f = OverlappingCirclesView.OverlappingClippedItem.this.getLayoutParams().width / 2.0f;
                         OverlappingCirclesView.OverlappingClippedItem.this.clipPath.addCircle(f, f, f, Path.Direction.CW);
@@ -159,7 +159,7 @@ public final class OverlappingCirclesView extends LinearLayout {
 
         @Override // android.widget.ImageView, android.view.View
         protected void onDraw(Canvas canvas) {
-            C9971q.m14633g(canvas, "canvas");
+            C9677q.m14633g(canvas, "canvas");
             int save = canvas.save();
             try {
                 canvas.clipPath(this.clipPath);
@@ -184,11 +184,11 @@ public final class OverlappingCirclesView extends LinearLayout {
         public PlaceholderItem(Context context, int i, boolean z, int i2, int i3, int i4) {
             super(context);
             Lazy b;
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             this.showSeparation = z;
             this.overlapPx = i2;
             this.radius = i4 / 2.0f;
-            b = C11084n.m10944b(EnumC11087p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i3));
+            b = C10839n.m10944b(EnumC10842p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i3));
             this.separatorClipPath$delegate = b;
             Paint paint = new Paint();
             paint.setColor(i);
@@ -202,7 +202,7 @@ public final class OverlappingCirclesView extends LinearLayout {
 
         @Override // android.view.View
         protected void onDraw(Canvas canvas) {
-            C9971q.m14633g(canvas, "canvas");
+            C9677q.m14633g(canvas, "canvas");
             int save = canvas.save();
             try {
                 if (this.showSeparation) {
@@ -223,7 +223,7 @@ public final class OverlappingCirclesView extends LinearLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public OverlappingCirclesView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ OverlappingCirclesView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -238,7 +238,7 @@ public final class OverlappingCirclesView extends LinearLayout {
         View view;
         boolean z4;
         String str;
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         removeAllViews();
         if (items.size() > this.maxItems) {
             z = true;
@@ -250,12 +250,12 @@ public final class OverlappingCirclesView extends LinearLayout {
         if (z) {
             i--;
         }
-        x0 = C9914r.m14741x0(items, i);
+        x0 = C9618r.m14741x0(items, i);
         int i2 = 0;
         for (Object obj : x0) {
             int i3 = i2 + 1;
             if (i2 < 0) {
-                C9906j.m14810s();
+                C9610j.m14810s();
             }
             OverlappingItem overlappingItem = (OverlappingItem) obj;
             if (i2 != min) {
@@ -273,14 +273,14 @@ public final class OverlappingCirclesView extends LinearLayout {
                     str = overlappingItem.getImageUri();
                 } else {
                     Context context = getContext();
-                    C9971q.m14634f(context, "context");
+                    C9677q.m14634f(context, "context");
                     ReactAsset reactAsset = ReactAsset.DefaultAvatar0;
                     Context context2 = getContext();
-                    C9971q.m14634f(context2, "context");
+                    C9677q.m14634f(context2, "context");
                     str = ReactAssetUtilsKt.getReactImageUrl(context, reactAsset.getUri(context2));
                 }
                 Context context3 = getContext();
-                C9971q.m14634f(context3, "context");
+                C9677q.m14634f(context3, "context");
                 view = new OverlappingClippedItem(context3, str, z3, this.overlapPx, this.separatorSizePx, this.imageLoadingColorDrawable);
             } else {
                 Context context4 = getContext();
@@ -288,7 +288,7 @@ public final class OverlappingCirclesView extends LinearLayout {
                 int i4 = this.overlapPx;
                 int i5 = this.separatorSizePx;
                 int i6 = getLayoutParams().height;
-                C9971q.m14634f(context4, "context");
+                C9677q.m14634f(context4, "context");
                 view = new PlaceholderItem(context4, backgroundAccent, z3, i4, i5, i6);
             }
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(getLayoutParams().height, getLayoutParams().height);
@@ -305,11 +305,11 @@ public final class OverlappingCirclesView extends LinearLayout {
         }
         if (z) {
             Context context5 = getContext();
-            C9971q.m14634f(context5, "context");
+            C9677q.m14634f(context5, "context");
             View overflowItem = new OverflowItem(context5, items.size() - i, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22042a;
+            Unit unit = Unit.f25780a;
             addView(overflowItem, layoutParams2);
         }
     }
@@ -318,7 +318,7 @@ public final class OverlappingCirclesView extends LinearLayout {
     public OverlappingCirclesView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         int c;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.maxItems = 3;
         this.overlapPx = SizeUtilsKt.getDpToPx(4);
         this.separatorSizePx = SizeUtilsKt.getDpToPx(3);
@@ -328,19 +328,19 @@ public final class OverlappingCirclesView extends LinearLayout {
         this.overflowTextSizePx = SizeUtilsKt.getSpToPx(12);
         this.placeholderCircleColor = ThemeManagerKt.getTheme().getBackgroundAccent();
         this.imageLoadingColorDrawable = new ColorDrawable(this.imageLoadingColor);
-        int[] OverlappingCirclesView = C4612R.styleable.OverlappingCirclesView;
-        C9971q.m14634f(OverlappingCirclesView, "OverlappingCirclesView");
+        int[] OverlappingCirclesView = C3562R.styleable.OverlappingCirclesView;
+        C9677q.m14634f(OverlappingCirclesView, "OverlappingCirclesView");
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, OverlappingCirclesView, 0, 0);
-        C9971q.m14634f(obtainStyledAttributes, "obtainStyledAttributes(s…efStyleAttr, defStyleRes)");
-        c = C6884j.m23961c(obtainStyledAttributes.getInt(C4612R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
+        C9677q.m14634f(obtainStyledAttributes, "obtainStyledAttributes(s…efStyleAttr, defStyleRes)");
+        c = C6322j.m23961c(obtainStyledAttributes.getInt(C3562R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
         this.maxItems = c;
-        this.overlapPx = obtainStyledAttributes.getDimensionPixelSize(C4612R.styleable.OverlappingCirclesView_oc_overlap, this.overlapPx);
-        this.separatorSizePx = obtainStyledAttributes.getDimensionPixelSize(C4612R.styleable.OverlappingCirclesView_oc_separation, this.separatorSizePx);
-        this.imageLoadingColor = obtainStyledAttributes.getColor(C4612R.styleable.OverlappingCirclesView_oc_circleBgColor, this.imageLoadingColor);
-        this.overflowBgColor = obtainStyledAttributes.getColor(C4612R.styleable.OverlappingCirclesView_oc_overflowBgColor, this.overflowBgColor);
-        this.overflowTextColor = obtainStyledAttributes.getColor(C4612R.styleable.OverlappingCirclesView_oc_overflowTextColor, this.overflowTextColor);
-        this.overflowTextSizePx = obtainStyledAttributes.getDimensionPixelSize(C4612R.styleable.OverlappingCirclesView_oc_overflowTextSize, this.overflowTextSizePx);
-        this.placeholderCircleColor = obtainStyledAttributes.getColor(C4612R.styleable.OverlappingCirclesView_oc_placeholderColor, this.placeholderCircleColor);
+        this.overlapPx = obtainStyledAttributes.getDimensionPixelSize(C3562R.styleable.OverlappingCirclesView_oc_overlap, this.overlapPx);
+        this.separatorSizePx = obtainStyledAttributes.getDimensionPixelSize(C3562R.styleable.OverlappingCirclesView_oc_separation, this.separatorSizePx);
+        this.imageLoadingColor = obtainStyledAttributes.getColor(C3562R.styleable.OverlappingCirclesView_oc_circleBgColor, this.imageLoadingColor);
+        this.overflowBgColor = obtainStyledAttributes.getColor(C3562R.styleable.OverlappingCirclesView_oc_overflowBgColor, this.overflowBgColor);
+        this.overflowTextColor = obtainStyledAttributes.getColor(C3562R.styleable.OverlappingCirclesView_oc_overflowTextColor, this.overflowTextColor);
+        this.overflowTextSizePx = obtainStyledAttributes.getDimensionPixelSize(C3562R.styleable.OverlappingCirclesView_oc_overflowTextSize, this.overflowTextSizePx);
+        this.placeholderCircleColor = obtainStyledAttributes.getColor(C3562R.styleable.OverlappingCirclesView_oc_placeholderColor, this.placeholderCircleColor);
         obtainStyledAttributes.recycle();
         setOrientation(0);
         this.overlapNegativeMargin = -Math.abs(this.overlapPx);

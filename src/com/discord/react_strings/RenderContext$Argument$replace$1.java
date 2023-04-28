@@ -3,13 +3,13 @@ package com.discord.react_strings;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.AbstractC9973s;
+import kotlin.jvm.internal.AbstractC9679s;
 import kotlin.text.MatchResult;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "match", "Lkotlin/text/MatchResult;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
-public final class RenderContext$Argument$replace$1 extends AbstractC9973s implements Function1<MatchResult, CharSequence> {
+public final class RenderContext$Argument$replace$1 extends AbstractC9679s implements Function1<MatchResult, CharSequence> {
     final /* synthetic */ Function3<String, String, Boolean, CharSequence> $onMatch;
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -31,7 +31,7 @@ public final class RenderContext$Argument$replace$1 extends AbstractC9973s imple
         /*
             r6 = this;
             java.lang.String r0 = "match"
-            kotlin.jvm.internal.C9971q.m14633g(r7, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r7, r0)
             com.discord.react_strings.RenderContext$Argument r0 = com.discord.react_strings.RenderContext.Argument.INSTANCE
             r1 = 3
             java.lang.String r1 = com.discord.react_strings.RenderContext.Argument.access$get(r0, r7, r1)

@@ -4,11 +4,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.core.DCDButton;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class PostPreviewEmbedViewBinding {
@@ -34,23 +34,23 @@ public final class PostPreviewEmbedViewBinding {
 
     public static PostPreviewEmbedViewBinding bind(View view) {
         View a;
-        int i = C4254R.C4256id.cover_image;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.cover_image;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.cover_image_overlay_button;
-            DCDButton dCDButton = (DCDButton) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.cover_image_overlay_button;
+            DCDButton dCDButton = (DCDButton) C13836a.m2313a(view, i);
             if (dCDButton != null) {
-                i = C4254R.C4256id.cta;
-                DCDButton dCDButton2 = (DCDButton) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.cta;
+                DCDButton dCDButton2 = (DCDButton) C13836a.m2313a(view, i);
                 if (dCDButton2 != null) {
-                    i = C4254R.C4256id.footer;
-                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
-                    if (!(simpleDraweeSpanTextView == null || (a = C13922a.m2313a(view, (i = C4254R.C4256id.header_divider))) == null)) {
-                        i = C4254R.C4256id.subtitle;
-                        TextView textView = (TextView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.footer;
+                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
+                    if (!(simpleDraweeSpanTextView == null || (a = C13836a.m2313a(view, (i = C3147R.C3149id.header_divider))) == null)) {
+                        i = C3147R.C3149id.subtitle;
+                        TextView textView = (TextView) C13836a.m2313a(view, i);
                         if (textView != null) {
-                            i = C4254R.C4256id.title;
-                            TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.title;
+                            TextView textView2 = (TextView) C13836a.m2313a(view, i);
                             if (textView2 != null) {
                                 return new PostPreviewEmbedViewBinding(view, simpleDraweeView, dCDButton, dCDButton2, simpleDraweeSpanTextView, a, textView, textView2);
                             }
@@ -64,7 +64,7 @@ public final class PostPreviewEmbedViewBinding {
 
     public static PostPreviewEmbedViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.post_preview_embed_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.post_preview_embed_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

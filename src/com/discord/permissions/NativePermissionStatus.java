@@ -3,7 +3,7 @@ package com.discord.permissions;
 import java.io.Serializable;
 import java.util.Locale;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0086\u0001\u0018\u0000 \u00072\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0007B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\b"}, m15073d2 = {"Lcom/discord/permissions/NativePermissionStatus;", "", "(Ljava/lang/String;I)V", "AUTHORIZED", "DENIED", "RESTRICTED", "UNDETERMINED", "Companion", "permissions_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -30,13 +30,13 @@ public enum NativePermissionStatus {
         }
 
         public final Serializable fromAndroidAuthorizationStatus(Object obj) {
-            if (C9971q.m14638b(obj, Boolean.TRUE)) {
+            if (C9677q.m14638b(obj, Boolean.TRUE)) {
                 String lowerCase = "AUTHORIZED".toLowerCase(Locale.ROOT);
-                C9971q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C9677q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase;
-            } else if (C9971q.m14638b(obj, Boolean.FALSE)) {
+            } else if (C9677q.m14638b(obj, Boolean.FALSE)) {
                 String lowerCase2 = "DENIED".toLowerCase(Locale.ROOT);
-                C9971q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C9677q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase2;
             } else {
                 return new IllegalStateException("Unknown authorization result: " + obj);
@@ -44,17 +44,17 @@ public enum NativePermissionStatus {
         }
 
         public final Serializable fromAndroidPermissionStatus(Object obj) {
-            if (C9971q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_GRANTED)) {
+            if (C9677q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_GRANTED)) {
                 String lowerCase = "AUTHORIZED".toLowerCase(Locale.ROOT);
-                C9971q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C9677q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase;
-            } else if (C9971q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_DENIED)) {
+            } else if (C9677q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_DENIED)) {
                 String lowerCase2 = "DENIED".toLowerCase(Locale.ROOT);
-                C9971q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C9677q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase2;
-            } else if (C9971q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_NEVER_ASK_AGAIN)) {
+            } else if (C9677q.m14638b(obj, NativePermissionStatus.ANDROID_PERMISSION_NEVER_ASK_AGAIN)) {
                 String lowerCase3 = "DENIED".toLowerCase(Locale.ROOT);
-                C9971q.m14634f(lowerCase3, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C9677q.m14634f(lowerCase3, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 return lowerCase3;
             } else {
                 return new IllegalStateException("Unknown permission result: " + obj);

@@ -6,19 +6,19 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import androidx.appcompat.app.ActivityC1510b;
+import androidx.appcompat.app.ActivityC0300b;
 import com.discord.BuildConfig;
 import com.discord.logging.Log;
-import com.msc.p051sa.aidl.AbstractC6088a;
+import com.msc.p051sa.aidl.AbstractC5436a;
 import com.msc.p051sa.aidl.ISACallback;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000;\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\b\b*\u0001\u0015\u0018\u0000 \u001a2\u00020\u0001:\u0002\u001a\u001bB\u0007¢\u0006\u0004\b\u0018\u0010\u0019J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u001c\u0010\u0007\u001a\u00020\u00022\b\u0010\u0005\u001a\u0004\u0018\u00010\u00042\b\u0010\u0006\u001a\u0004\u0018\u00010\u0004H\u0002J\b\u0010\b\u001a\u00020\u0002H\u0002J\b\u0010\n\u001a\u00020\tH\u0002J\u0012\u0010\r\u001a\u00020\u00022\b\u0010\f\u001a\u0004\u0018\u00010\u000bH\u0014J\b\u0010\u000e\u001a\u00020\u0002H\u0014R\u0016\u0010\u0010\u001a\u00020\u000f8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0013\u001a\u00020\u00128\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0016\u001a\u00020\u00158\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/samsung/SamsungConnectActivity;", "Landroidx/appcompat/app/b;", "", "finishedWithRestartRequested", "", "authCode", "authServerUrl", "finishWithResult", "startAndBindSamsungAuthService", "Lcom/msc/sa/aidl/ISACallback$Stub;", "createCallback", "Landroid/os/Bundle;", "savedInstanceState", "onCreate", "onStop", "Lcom/msc/sa/aidl/ISACallback;", "samsungAccountServiceCallback", "Lcom/msc/sa/aidl/ISACallback;", "", "serviceBound", "Z", "com/discord/samsung/SamsungConnectActivity$serviceConnection$1", "serviceConnection", "Lcom/discord/samsung/SamsungConnectActivity$serviceConnection$1;", "<init>", "()V", "Companion", "Result", "samsung_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes6.dex */
-public final class SamsungConnectActivity extends ActivityC1510b {
+public final class SamsungConnectActivity extends ActivityC0300b {
     public static final Companion Companion = new Companion(null);
     public static final String EXTRA_ATTEMPT_COUNT = "com.discord.samsung.intent.extra.ATTEMPT_COUNT";
     public static final String EXTRA_REQ_AUTH_PARAM_AUTH_CODE = "com.discord.samsung.intent.extra.AUTH_CODE";
@@ -34,13 +34,13 @@ public final class SamsungConnectActivity extends ActivityC1510b {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            AbstractC6088a b = AbstractC6088a.AbstractBinderC0178a.m26366b(iBinder);
+            AbstractC5436a b = AbstractC5436a.AbstractBinderC5437a.m26366b(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Saamsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
                 iSACallback = SamsungConnectActivity.this.samsungAccountServiceCallback;
                 if (iSACallback == null) {
-                    C9971q.m14615y("samsungAccountServiceCallback");
+                    C9677q.m14615y("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
                 String R = b.mo26364R(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
@@ -51,7 +51,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f22042a;
+                Unit unit = Unit.f25780a;
                 Log.i$default(log, "Saamsung", "Samsung Account service connection established: isReqSucc? " + b.mo26363V(1221, R, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.m32179e("Saamsung", "Unable to connect to Samsung", th2);
@@ -85,9 +85,9 @@ public final class SamsungConnectActivity extends ActivityC1510b {
         }
 
         public final Intent getIntent(Context context, int i) {
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             Intent addFlags = new Intent(context, SamsungConnectActivity.class).putExtra(SamsungConnectActivity.EXTRA_ATTEMPT_COUNT, i).addFlags(65536);
-            C9971q.m14634f(addFlags, "Intent(context, SamsungC…AG_ACTIVITY_NO_ANIMATION)");
+            C9677q.m14634f(addFlags, "Intent(context, SamsungC…AG_ACTIVITY_NO_ANIMATION)");
             return addFlags;
         }
     }
@@ -180,8 +180,8 @@ public final class SamsungConnectActivity extends ActivityC1510b {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Success(String authCode, String serverUrl) {
                 super(null);
-                C9971q.m14633g(authCode, "authCode");
-                C9971q.m14633g(serverUrl, "serverUrl");
+                C9677q.m14633g(authCode, "authCode");
+                C9677q.m14633g(serverUrl, "serverUrl");
                 this.authCode = authCode;
                 this.serverUrl = serverUrl;
             }
@@ -205,8 +205,8 @@ public final class SamsungConnectActivity extends ActivityC1510b {
             }
 
             public final Success copy(String authCode, String serverUrl) {
-                C9971q.m14633g(authCode, "authCode");
-                C9971q.m14633g(serverUrl, "serverUrl");
+                C9677q.m14633g(authCode, "authCode");
+                C9677q.m14633g(serverUrl, "serverUrl");
                 return new Success(authCode, serverUrl);
             }
 
@@ -218,7 +218,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
                     return false;
                 }
                 Success success = (Success) obj;
-                return C9971q.m14638b(this.authCode, success.authCode) && C9971q.m14638b(this.serverUrl, success.serverUrl);
+                return C9677q.m14638b(this.authCode, success.authCode) && C9677q.m14638b(this.serverUrl, success.serverUrl);
             }
 
             public final String getAuthCode() {
@@ -250,7 +250,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
 
     static {
         Intent intent = new Intent("com.msc.action.samsungaccount.REQUEST_SERVICE").setPackage("com.osp.app.signin");
-        C9971q.m14634f(intent, "Intent(\"com.msc.action.s…age(\"com.osp.app.signin\")");
+        C9677q.m14634f(intent, "Intent(\"com.msc.action.s…age(\"com.osp.app.signin\")");
         serviceIntent = intent;
     }
 
@@ -302,7 +302,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
                     com.discord.logging.Log.i$default(r2, r3, r4, r5, r6, r7)
                     if (r11 == 0) goto L_0x0041
                     if (r0 == 0) goto L_0x003e
-                    boolean r11 = p326ri.C12707l.m5767w(r0)
+                    boolean r11 = p327ri.C12576l.m5767w(r0)
                     if (r11 == 0) goto L_0x003c
                     goto L_0x003e
                 L_0x003c:
@@ -333,7 +333,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
                     r2.append(r3)
                     if (r0 == 0) goto L_0x0066
                     r10 = 4
-                    java.lang.String r10 = p326ri.C12707l.m5788b1(r0, r10)
+                    java.lang.String r10 = p327ri.C12576l.m5788b1(r0, r10)
                 L_0x0066:
                     java.lang.StringBuilder r3 = new java.lang.StringBuilder
                     r3.<init>()
@@ -350,7 +350,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
                     r2.append(r10)
                     java.lang.String r4 = r2.toString()
                     java.lang.String r10 = "StringBuilder()\n        …              .toString()"
-                    kotlin.jvm.internal.C9971q.m14634f(r4, r10)
+                    kotlin.jvm.internal.C9677q.m14634f(r4, r10)
                     java.lang.String r3 = "Saamsung"
                     r5 = 0
                     r6 = 4
@@ -424,7 +424,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
             r0 = 1
             r1 = 0
             if (r7 == 0) goto L_0x0030
-            boolean r2 = p326ri.C12707l.m5767w(r7)
+            boolean r2 = p327ri.C12576l.m5767w(r7)
             if (r2 == 0) goto L_0x002e
             goto L_0x0030
         L_0x002e:
@@ -435,7 +435,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
         L_0x0031:
             if (r2 != 0) goto L_0x0056
             if (r8 == 0) goto L_0x003d
-            boolean r2 = p326ri.C12707l.m5767w(r8)
+            boolean r2 = p327ri.C12576l.m5767w(r8)
             if (r2 == 0) goto L_0x003c
             goto L_0x003d
         L_0x003c:
@@ -450,7 +450,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
             r0.putExtra(r1, r7)
             java.lang.String r7 = "com.discord.samsung.intent.extra.SERVER_URL"
             r0.putExtra(r7, r8)
-            kotlin.Unit r7 = kotlin.Unit.f22042a
+            kotlin.Unit r7 = kotlin.Unit.f25780a
             r7 = -1
             r6.setResult(r7, r0)
             goto L_0x0059
@@ -491,7 +491,7 @@ public final class SamsungConnectActivity extends ActivityC1510b {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // androidx.appcompat.app.ActivityC1510b, androidx.fragment.app.FragmentActivity, android.app.Activity
+    @Override // androidx.appcompat.app.ActivityC0300b, androidx.fragment.app.FragmentActivity, android.app.Activity
     public void onStop() {
         Log.i$default(Log.INSTANCE, LOG_TAG, "onStop SamsungConnectActivity", (Throwable) null, 4, (Object) null);
         if (this.serviceBound) {

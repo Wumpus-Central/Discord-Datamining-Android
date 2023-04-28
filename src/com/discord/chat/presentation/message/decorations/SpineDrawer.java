@@ -7,11 +7,11 @@ import android.graphics.drawable.PaintDrawable;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.channel_spine.ChannelSpineView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import nf.C11084n;
+import kotlin.jvm.internal.C9677q;
+import nf.C10839n;
 
 @Metadata(m15074d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J.\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001e2\u0006\u0010 \u001a\u00020\u0005J0\u0010!\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010 \u001a\u00020\u00052\b\b\u0002\u0010\"\u001a\u00020\u0005R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\n\u001a\u00020\u000b8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\f\u0010\rR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u0012\u001a\u00020\u00138BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0016\u0010\u000f\u001a\u0004\b\u0014\u0010\u0015¨\u0006#"}, m15073d2 = {"Lcom/discord/chat/presentation/message/decorations/SpineDrawer;", "Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;", "context", "Landroid/content/Context;", "contentStartPositionPx", "", "(Landroid/content/Context;I)V", "getContext", "()Landroid/content/Context;", "itemPaddingOffset", "lineDrawable", "Landroid/graphics/drawable/PaintDrawable;", "getLineDrawable", "()Landroid/graphics/drawable/PaintDrawable;", "lineDrawable$delegate", "Lkotlin/Lazy;", "spineRect", "Landroid/graphics/Rect;", "splineView", "Lcom/discord/channel_spine/ChannelSpineView;", "getSplineView", "()Lcom/discord/channel_spine/ChannelSpineView;", "splineView$delegate", "drawSpineCurve", "", "canvas", "Landroid/graphics/Canvas;", "parent", "Landroidx/recyclerview/widget/RecyclerView;", "child", "Landroid/view/View;", "viewToCenterSpine", "middle", "drawSpinePiece", "topOffsetPx", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -26,14 +26,14 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     public SpineDrawer(Context context, int i) {
         Lazy a;
         Lazy a2;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.context = context;
         this.contentStartPositionPx = i;
-        a = C11084n.m10945a(new SpineDrawer$lineDrawable$2(this));
+        a = C10839n.m10945a(new SpineDrawer$lineDrawable$2(this));
         this.lineDrawable$delegate = a;
-        a2 = C11084n.m10945a(new SpineDrawer$splineView$2(this));
+        a2 = C10839n.m10945a(new SpineDrawer$splineView$2(this));
         this.splineView$delegate = a2;
-        this.itemPaddingOffset = context.getResources().getDimensionPixelSize(C4254R.dimen.message_accessories_vertical_spacing);
+        this.itemPaddingOffset = context.getResources().getDimensionPixelSize(C3147R.dimen.message_accessories_vertical_spacing);
     }
 
     public static /* synthetic */ void drawSpinePiece$default(SpineDrawer spineDrawer, Canvas canvas, RecyclerView recyclerView, View view, int i, int i2, int i3, Object obj) {
@@ -52,10 +52,10 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     }
 
     public final void drawSpineCurve(Canvas canvas, RecyclerView parent, View child, View viewToCenterSpine, int i) {
-        C9971q.m14633g(canvas, "canvas");
-        C9971q.m14633g(parent, "parent");
-        C9971q.m14633g(child, "child");
-        C9971q.m14633g(viewToCenterSpine, "viewToCenterSpine");
+        C9677q.m14633g(canvas, "canvas");
+        C9677q.m14633g(parent, "parent");
+        C9677q.m14633g(child, "child");
+        C9677q.m14633g(viewToCenterSpine, "viewToCenterSpine");
         canvas.save();
         parent.getDecoratedBoundsWithMargins(child, this.spineRect);
         Rect rect = new Rect(i - (getLineDrawable().getIntrinsicWidth() / 2), child.getTop(), this.contentStartPositionPx, child.getTop() + ((viewToCenterSpine.getBottom() - viewToCenterSpine.getTop()) / 2) + this.itemPaddingOffset);
@@ -69,9 +69,9 @@ public final class SpineDrawer extends RecyclerView.ItemDecoration {
     }
 
     public final void drawSpinePiece(Canvas canvas, RecyclerView parent, View child, int i, int i2) {
-        C9971q.m14633g(canvas, "canvas");
-        C9971q.m14633g(parent, "parent");
-        C9971q.m14633g(child, "child");
+        C9677q.m14633g(canvas, "canvas");
+        C9677q.m14633g(parent, "parent");
+        C9677q.m14633g(child, "child");
         canvas.save();
         parent.getDecoratedBoundsWithMargins(child, this.spineRect);
         PaintDrawable lineDrawable = getLineDrawable();

@@ -27,11 +27,11 @@ import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9905i;
-import kotlin.jvm.internal.C9971q;
-import nf.C11090s;
-import nf.C11093t;
-import p326ri.C12719v;
+import kotlin.collections.C9609i;
+import kotlin.jvm.internal.C9677q;
+import nf.C10845s;
+import nf.C10848t;
+import p327ri.C12588v;
 
 @Metadata(m15074d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001c\u0010\u000f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u00060\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0002J \u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u0005H\u0002J\u001e\u0010\u0018\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u0005R0\u0010\u0003\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u0006\u0012\u0004\u0012\u00020\u00010\u0004j\u0002`\u00078BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR6\u0010\n\u001a*\u0012\u0004\u0012\u00020\f\u0012 \u0012\u001e\u0012\u0004\u0012\u00020\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u0006\u0012\u0004\u0012\u00020\u00010\u0004j\u0002`\u00070\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\u000eX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019"}, m15073d2 = {"Lcom/discord/chat/presentation/textutils/CodeStyle;", "", "()V", "parser", "Lcom/discord/simpleast/core/parser/Parser;", "Lcom/discord/chat/presentation/textutils/RenderContext;", "Lcom/discord/simpleast/core/node/Node;", "Lcom/discord/chat/presentation/textutils/CodeParser;", "getParser", "()Lcom/discord/simpleast/core/parser/Parser;", "parsers", "", "", "staticCodeStyles", "Lcom/discord/simpleast/code/CodeStyleProviders;", "generateAst", "", "node", "Lcom/discord/chat/bridge/contentnode/CodeBlockContentNode;", "renderCode", "", "builder", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "rc", "renderCodeBlock", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -88,16 +88,16 @@ public final class CodeStyle {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable _get_parser_$lambda$9$lambda$6(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(ThemeManagerKt.getTheme().getHeaderSecondary()));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(ThemeManagerKt.getTheme().getHeaderSecondary()));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable _get_parser_$lambda$9$lambda$7(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(ThemeManagerKt.getTheme().getTextMuted()));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(ThemeManagerKt.getTheme().getTextMuted()));
         return d;
     }
 
@@ -106,20 +106,20 @@ public final class CodeStyle {
         CharSequence V02;
         List list;
         List d;
-        V0 = C12719v.m5690V0(codeBlockContentNode.getLang());
+        V0 = C12588v.m5690V0(codeBlockContentNode.getLang());
         String obj = V0.toString();
-        V02 = C12719v.m5690V0(codeBlockContentNode.getContent());
+        V02 = C12588v.m5690V0(codeBlockContentNode.getContent());
         String obj2 = V02.toString();
         String str = "```" + obj + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + obj2 + "\n```";
         try {
-            C11090s.C11091a aVar = C11090s.f24606l;
-            list = C11090s.m10940b(Parser.parse$default(getParser(), str, Unit.f22042a, null, 4, null));
+            C10845s.C10846a aVar = C10845s.f28533l;
+            list = C10845s.m10940b(Parser.parse$default(getParser(), str, Unit.f25780a, null, 4, null));
         } catch (Throwable th2) {
-            C11090s.C11091a aVar2 = C11090s.f24606l;
-            list = C11090s.m10940b(C11093t.m10931a(th2));
+            C10845s.C10846a aVar2 = C10845s.f28533l;
+            list = C10845s.m10940b(C10848t.m10931a(th2));
         }
-        d = C9905i.m14825d(new TextNode(obj2));
-        if (C11090s.m10935g(list)) {
+        d = C9609i.m14825d(new TextNode(obj2));
+        if (C10845s.m10935g(list)) {
             list = d;
         }
         return (List) list;
@@ -129,7 +129,7 @@ public final class CodeStyle {
         CodeStyleProviders copy;
         Map<String, Parser<RenderContext, Node<RenderContext>, Object>> map = parsers;
         String simpleName = ThemeManagerKt.getTheme().getClass().getSimpleName();
-        C9971q.m14634f(simpleName, "Theme::class.java.simpleName");
+        C9677q.m14634f(simpleName, "Theme::class.java.simpleName");
         Parser<RenderContext, Node<RenderContext>, Object> parser = map.get(simpleName);
         if (parser == null) {
             copy = r3.copy((r18 & 1) != 0 ? r3.defaultStyleProvider : new StyleNode.SpanProvider() { // from class: com.discord.chat.presentation.textutils.g
@@ -164,56 +164,56 @@ public final class CodeStyle {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$0(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#199A79")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#199A79")));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$1(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#7A8E00")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#7A8E00")));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$2(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#4C9CDF")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#4C9CDF")));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$3(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#AED581")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#AED581")));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$4(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#A77B02")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#A77B02")));
         return d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Iterable staticCodeStyles$lambda$5(RenderContext it) {
         List d;
-        C9971q.m14633g(it, "it");
-        d = C9905i.m14825d(new ForegroundColorSpan(Color.parseColor("#AF8AF4")));
+        C9677q.m14633g(it, "it");
+        d = C9609i.m14825d(new ForegroundColorSpan(Color.parseColor("#AF8AF4")));
         return d;
     }
 
     public final void renderCodeBlock(DraweeSpanStringBuilder builder, CodeBlockContentNode node, RenderContext rc) {
         int i;
-        C9971q.m14633g(builder, "builder");
-        C9971q.m14633g(node, "node");
-        C9971q.m14633g(rc, "rc");
+        C9677q.m14633g(builder, "builder");
+        C9677q.m14633g(node, "node");
+        C9677q.m14633g(rc, "rc");
         if (rc.spoilerIsHidden()) {
             i = rc.getTheme().getSpoilerHiddenBackground();
         } else {

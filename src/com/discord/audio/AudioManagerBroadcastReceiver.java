@@ -11,9 +11,9 @@ import com.discord.logging.Log;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
+import kotlin.collections.C9610j;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB-\u0012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u0012\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0002\u0010\bJ\u001a\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u000e\u0010\u000e\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u000bR\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/audio/AudioManagerBroadcastReceiver;", "Landroid/content/BroadcastReceiver;", "onWiredHeadsetPlug", "Lkotlin/Function1;", "Lcom/discord/audio/enums/WiredHeadsetState;", "", "onScoAudioStateUpdate", "Lcom/discord/audio/enums/ScoAudioState$Update;", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "onReceive", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "register", "Companion", "audio_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -56,15 +56,15 @@ public final class AudioManagerBroadcastReceiver extends BroadcastReceiver {
 
     /* JADX WARN: Multi-variable type inference failed */
     public AudioManagerBroadcastReceiver(Function1<? super WiredHeadsetState, Unit> onWiredHeadsetPlug, Function1<? super ScoAudioState.Update, Unit> onScoAudioStateUpdate) {
-        C9971q.m14633g(onWiredHeadsetPlug, "onWiredHeadsetPlug");
-        C9971q.m14633g(onScoAudioStateUpdate, "onScoAudioStateUpdate");
+        C9677q.m14633g(onWiredHeadsetPlug, "onWiredHeadsetPlug");
+        C9677q.m14633g(onScoAudioStateUpdate, "onScoAudioStateUpdate");
         this.onWiredHeadsetPlug = onWiredHeadsetPlug;
         this.onScoAudioStateUpdate = onScoAudioStateUpdate;
     }
 
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         if (intent != null) {
             AudioManagerBroadcastAction from = AudioManagerBroadcastAction.Companion.from(intent);
             if (from == null) {
@@ -89,8 +89,8 @@ public final class AudioManagerBroadcastReceiver extends BroadcastReceiver {
 
     public final void register(Context context) {
         List<AudioManagerBroadcastAction> l;
-        C9971q.m14633g(context, "context");
-        l = C9906j.m14817l(AudioManagerBroadcastAction.HeadsetPlug, AudioManagerBroadcastAction.ScoAudioStateUpdated);
+        C9677q.m14633g(context, "context");
+        l = C9610j.m14817l(AudioManagerBroadcastAction.HeadsetPlug, AudioManagerBroadcastAction.ScoAudioStateUpdated);
         IntentFilter intentFilter = new IntentFilter();
         for (AudioManagerBroadcastAction audioManagerBroadcastAction : l) {
             intentFilter.addAction(audioManagerBroadcastAction.getAction());

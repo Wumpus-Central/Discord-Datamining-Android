@@ -3,7 +3,7 @@ package com.discord.media.utils;
 import android.graphics.Bitmap;
 import java.io.ByteArrayOutputStream;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001c\u0010\u0005\u001a\u00020\u0006*\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u0004J\u001c\u0010\u0005\u001a\u00020\u0006*\u00020\u00072\u0006\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\n\u001a\u00020\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\r"}, m15073d2 = {"Lcom/discord/media/utils/BitmapUtils;", "", "()V", "DEFAULT_QUALITY", "", "toByteArray", "", "Landroid/graphics/Bitmap;", "format", "Landroid/graphics/Bitmap$CompressFormat;", "quality", "mimeType", "", "media_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -22,12 +22,12 @@ public final class BitmapUtils {
     }
 
     public final byte[] toByteArray(Bitmap bitmap, Bitmap.CompressFormat format, int i) {
-        C9971q.m14633g(bitmap, "<this>");
-        C9971q.m14633g(format, "format");
+        C9677q.m14633g(bitmap, "<this>");
+        C9677q.m14633g(format, "format");
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(format, i, byteArrayOutputStream);
         byte[] byteArray = byteArrayOutputStream.toByteArray();
-        C9971q.m14634f(byteArray, "ByteArrayOutputStream().…)\n        }.toByteArray()");
+        C9677q.m14634f(byteArray, "ByteArrayOutputStream().…)\n        }.toByteArray()");
         return byteArray;
     }
 
@@ -55,9 +55,9 @@ public final class BitmapUtils {
         /*
             r2 = this;
             java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.C9971q.m14633g(r3, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r3, r0)
             java.lang.String r0 = "mimeType"
-            kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r4, r0)
             int r0 = r4.hashCode()
             r1 = -1487394660(0xffffffffa758289c, float:-2.9998036E-15)
             if (r0 == r1) goto L_0x0037

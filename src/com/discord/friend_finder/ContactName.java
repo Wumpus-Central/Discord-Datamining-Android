@@ -1,17 +1,17 @@
 package com.discord.friend_finder;
 
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 %2\u00020\u0001:\u0002$%B=\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0001\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\nB#\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u000bJ\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0005HÆ\u0003J-\u0010\u0017\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001c\u001a\u00020\u0005HÖ\u0001J!\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00002\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#HÇ\u0001R\u001e\u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\f\u0010\r\u001a\u0004\b\u000e\u0010\u000fR\u001e\u0010\u0007\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0010\u0010\r\u001a\u0004\b\u0011\u0010\u000fR\u001e\u0010\u0006\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0012\u0010\r\u001a\u0004\b\u0013\u0010\u000f¨\u0006&"}, m15073d2 = {"Lcom/discord/friend_finder/ContactName;", "", "seen1", "", "displayName", "", "givenName", "familyName", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getDisplayName$annotations", "()V", "getDisplayName", "()Ljava/lang/String;", "getFamilyName$annotations", "getFamilyName", "getGivenName$annotations", "getGivenName", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "friend_finder_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
 public final class ContactName {
@@ -37,7 +37,7 @@ public final class ContactName {
 
     public /* synthetic */ ContactName(int i, String str, String str2, String str3, SerializationConstructorMarker serializationConstructorMarker) {
         if (7 != (i & 7)) {
-            C3681n1.m33818b(i, 7, ContactName$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 7, ContactName$$serializer.INSTANCE.getDescriptor());
         }
         this.displayName = str;
         this.givenName = str2;
@@ -67,10 +67,10 @@ public final class ContactName {
     }
 
     public static final void write$Self(ContactName self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
-        C3622a2 a2Var = C3622a2.f5917a;
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
+        C2500a2 a2Var = C2500a2.f6719a;
         output.mo13874p(serialDesc, 0, a2Var, self.displayName);
         output.mo13874p(serialDesc, 1, a2Var, self.givenName);
         output.mo13874p(serialDesc, 2, a2Var, self.familyName);
@@ -100,7 +100,7 @@ public final class ContactName {
             return false;
         }
         ContactName contactName = (ContactName) obj;
-        return C9971q.m14638b(this.displayName, contactName.displayName) && C9971q.m14638b(this.givenName, contactName.givenName) && C9971q.m14638b(this.familyName, contactName.familyName);
+        return C9677q.m14638b(this.displayName, contactName.displayName) && C9677q.m14638b(this.givenName, contactName.givenName) && C9677q.m14638b(this.familyName, contactName.familyName);
     }
 
     public final String getDisplayName() {

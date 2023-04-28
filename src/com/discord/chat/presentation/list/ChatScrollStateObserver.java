@@ -2,11 +2,11 @@ package com.discord.chat.presentation.list;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import eg.C6884j;
+import eg.C6322j;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u00002\u00020\u0001:\u0002\u001a\u001bB\u0019\u0012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0002\u0010\u0006J(\u0010\f\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000f\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\u0011H\u0002J\b\u0010\u0012\u001a\u0004\u0018\u00010\u0004J\u0018\u0010\u0013\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u0014\u001a\u00020\u000bH\u0016J \u0010\u0015\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u0016\u001a\u00020\u000b2\u0006\u0010\u0017\u001a\u00020\u000bH\u0016J\u0016\u0010\u0018\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0011J\u0006\u0010\u0019\u001a\u00020\u0005R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/chat/presentation/list/ChatScrollStateObserver;", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "scrollStateUpdated", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/list/ScrollState;", "", "(Lkotlin/jvm/functions/Function1;)V", "isWatching", "", "scrollState", "scrollStateInt", "", "computeScrollState", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "scrollAmountY", "emitMode", "Lcom/discord/chat/presentation/list/ChatScrollStateObserver$EmitMode;", "getScrollState", "onScrollStateChanged", "newState", "onScrolled", "dx", "dy", "startWatching", "stopWatching", "EmitMode", "Thresholds", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -37,7 +37,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
 
     /* JADX WARN: Multi-variable type inference failed */
     public ChatScrollStateObserver(Function1<? super ScrollState, Unit> scrollStateUpdated) {
-        C9971q.m14633g(scrollStateUpdated, "scrollStateUpdated");
+        C9677q.m14633g(scrollStateUpdated, "scrollStateUpdated");
         this.scrollStateUpdated = scrollStateUpdated;
     }
 
@@ -56,7 +56,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
         if (this.isWatching) {
             this.scrollStateInt = i;
             RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-            C9971q.m14635e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+            C9677q.m14635e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
             LinearLayoutManager linearLayoutManager = (LinearLayoutManager) layoutManager;
             boolean x2 = linearLayoutManager.m35546x2();
             int i22 = linearLayoutManager.m35561i2();
@@ -86,7 +86,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
             if (x2) {
                 i4 = 15;
             }
-            c = C6884j.m23961c(j0 - i4, 0);
+            c = C6322j.m23961c(j0 - i4, 0);
             if (c > j2 || j2 > j0) {
                 z4 = false;
             } else {
@@ -111,7 +111,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
                 scrollDirection = null;
             }
             RecyclerView.Adapter adapter = recyclerView.getAdapter();
-            C9971q.m14635e(adapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChannelChatListAdapter");
+            C9677q.m14635e(adapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChannelChatListAdapter");
             int firstMessageItemPosition = ((ChannelChatListAdapter) adapter).getFirstMessageItemPosition();
             if (i22 > firstMessageItemPosition || firstMessageItemPosition > j2) {
                 z7 = false;
@@ -123,7 +123,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
             } else {
                 scrollState = new ScrollState(z5, z6, z4, z3, z2, z, scrollDirection, z7, i22, j2);
             }
-            boolean z8 = !C9971q.m14638b(this.scrollState, scrollState);
+            boolean z8 = !C9677q.m14638b(this.scrollState, scrollState);
             this.scrollState = scrollState;
             if (emitMode == EmitMode.YES || (emitMode == EmitMode.IF_CHANGED && z8)) {
                 this.scrollStateUpdated.invoke(scrollState);
@@ -137,19 +137,19 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
 
     @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
     public void onScrollStateChanged(RecyclerView recyclerView, int i) {
-        C9971q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(recyclerView, "recyclerView");
         computeScrollState(recyclerView, i, 0, EmitMode.IF_CHANGED);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
     public void onScrolled(RecyclerView recyclerView, int i, int i2) {
-        C9971q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(recyclerView, "recyclerView");
         computeScrollState(recyclerView, this.scrollStateInt, i2, EmitMode.IF_CHANGED);
     }
 
     public final void startWatching(RecyclerView recyclerView, EmitMode emitMode) {
-        C9971q.m14633g(recyclerView, "recyclerView");
-        C9971q.m14633g(emitMode, "emitMode");
+        C9677q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(emitMode, "emitMode");
         this.isWatching = true;
         computeScrollState(recyclerView, this.scrollStateInt, 0, emitMode);
     }

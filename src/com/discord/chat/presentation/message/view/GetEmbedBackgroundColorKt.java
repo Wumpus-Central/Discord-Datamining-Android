@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.view;
 
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.theme.ThemeManagerKt;
 import kotlin.Metadata;
 
@@ -8,6 +8,6 @@ import kotlin.Metadata;
 /* loaded from: classes4.dex */
 public final class GetEmbedBackgroundColorKt {
     public static final int getEmbedBackgroundColor() {
-        return ThemeManagerKt.getTheme().getColorRes(C4254R.color.primary_130, C4254R.color.primary_630);
+        return ThemeManagerKt.getTheme().getColorRes(C3147R.color.primary_130, C3147R.color.primary_630);
     }
 }

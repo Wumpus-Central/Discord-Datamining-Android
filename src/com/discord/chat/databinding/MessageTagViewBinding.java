@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class MessageTagViewBinding {
@@ -24,14 +24,14 @@ public final class MessageTagViewBinding {
     }
 
     public static MessageTagViewBinding bind(View view) {
-        int i = C4254R.C4256id.layout;
-        ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.layout;
+        ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
         if (constraintLayout != null) {
-            i = C4254R.C4256id.tag;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.tag;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4254R.C4256id.verified_bot_icon;
-                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.verified_bot_icon;
+                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView != null) {
                     return new MessageTagViewBinding(view, constraintLayout, textView, simpleDraweeView);
                 }
@@ -42,7 +42,7 @@ public final class MessageTagViewBinding {
 
     public static MessageTagViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.message_tag_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.message_tag_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

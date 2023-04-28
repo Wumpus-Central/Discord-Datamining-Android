@@ -4,11 +4,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class AttachmentUploadOverlayViewBinding {
@@ -34,23 +34,23 @@ public final class AttachmentUploadOverlayViewBinding {
 
     public static AttachmentUploadOverlayViewBinding bind(View view) {
         View a;
-        int i = C4254R.C4256id.upload_cancel;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.upload_cancel;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.upload_complete;
-            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.upload_complete;
+            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
             if (simpleDraweeView2 != null) {
-                i = C4254R.C4256id.upload_complete_background;
-                MaterialCardView materialCardView = (MaterialCardView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.upload_complete_background;
+                MaterialCardView materialCardView = (MaterialCardView) C13836a.m2313a(view, i);
                 if (materialCardView != null) {
-                    i = C4254R.C4256id.upload_complete_layout;
-                    ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.upload_complete_layout;
+                    ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
                     if (constraintLayout != null) {
-                        i = C4254R.C4256id.upload_progress;
-                        CircularProgressIndicator circularProgressIndicator = (CircularProgressIndicator) C13922a.m2313a(view, i);
-                        if (!(circularProgressIndicator == null || (a = C13922a.m2313a(view, (i = C4254R.C4256id.upload_progress_background))) == null)) {
-                            i = C4254R.C4256id.upload_progress_layout;
-                            ConstraintLayout constraintLayout2 = (ConstraintLayout) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.upload_progress;
+                        CircularProgressIndicator circularProgressIndicator = (CircularProgressIndicator) C13836a.m2313a(view, i);
+                        if (!(circularProgressIndicator == null || (a = C13836a.m2313a(view, (i = C3147R.C3149id.upload_progress_background))) == null)) {
+                            i = C3147R.C3149id.upload_progress_layout;
+                            ConstraintLayout constraintLayout2 = (ConstraintLayout) C13836a.m2313a(view, i);
                             if (constraintLayout2 != null) {
                                 return new AttachmentUploadOverlayViewBinding(view, simpleDraweeView, simpleDraweeView2, materialCardView, constraintLayout, circularProgressIndicator, a, constraintLayout2);
                             }
@@ -64,7 +64,7 @@ public final class AttachmentUploadOverlayViewBinding {
 
     public static AttachmentUploadOverlayViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.attachment_upload_overlay_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.attachment_upload_overlay_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

@@ -14,9 +14,9 @@ import com.discord.tti_manager.TTILoggingApplication;
 import com.facebook.react.ReactActivityDelegate;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p242n6.C10719b;
+import p243n6.C10468b;
 
 @Metadata(m15074d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b&\u0018\u0000 \u00142\u00020\u0001:\u0002\u0013\u0014B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0014J\f\u0010\u0007\u001a\u00060\bR\u00020\u0000H\u0004J\f\u0010\t\u001a\u00060\bR\u00020\u0000H&J\b\u0010\n\u001a\u00020\u000bH\u0004J\b\u0010\f\u001a\u00020\u000bH&J\u0010\u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u000fH\u0016J\u0012\u0010\u0010\u001a\u00020\u00042\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0014¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/react_activities/ReactActivity;", "Lcom/facebook/react/ReactActivity;", "()V", "attachBaseContext", "", "newBase", "Landroid/content/Context;", "createReactActivityDelegate", "Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "getActivityDelegate", "getMainComponentName", "", "getNameOfComponent", "onConfigurationChanged", "newConfig", "Landroid/content/res/Configuration;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "ActivityDelegate", "Registry", "react_activity_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
@@ -33,11 +33,11 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public ActivityDelegate(ReactActivity reactActivity, ReactActivity activity) {
             super((com.facebook.react.ReactActivity) activity, reactActivity.getNameOfComponent());
-            C9971q.m14633g(activity, "activity");
+            C9677q.m14633g(activity, "activity");
             this.this$0 = reactActivity;
             TTILoggingApplication.Companion.trackActivityDelegateInitialized();
             CrashReporting crashReporting = CrashReporting.INSTANCE;
-            if (C9971q.m14638b(crashReporting.isCrashedLastRun(), Boolean.TRUE)) {
+            if (C9677q.m14638b(crashReporting.isCrashedLastRun(), Boolean.TRUE)) {
                 CrashReporting.addBreadcrumb$default(crashReporting, "Checking for blocking OTA update", null, null, 6, null);
                 BundleUpdater.checkForUpdate$default(BundleUpdater.Companion.instance(), 0, null, 2, null).get();
             }
@@ -64,17 +64,17 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
     }
 
     static {
-        C9971q.m14634f(MainActivity.class, "forName(\"com.discord.main.MainActivity\")");
-        C9971q.m14634f(ShareActivity.class, "forName(\"com.discord.share.ShareActivity\")");
+        C9677q.m14634f(MainActivity.class, "forName(\"com.discord.main.MainActivity\")");
+        C9677q.m14634f(ShareActivity.class, "forName(\"com.discord.share.ShareActivity\")");
     }
 
-    @Override // androidx.appcompat.app.ActivityC1510b, android.app.Activity, android.view.ContextThemeWrapper, android.content.ContextWrapper
+    @Override // androidx.appcompat.app.ActivityC0300b, android.app.Activity, android.view.ContextThemeWrapper, android.content.ContextWrapper
     protected void attachBaseContext(Context newBase) {
-        C9971q.m14633g(newBase, "newBase");
+        C9677q.m14633g(newBase, "newBase");
         super.attachBaseContext(FontScaleUtilsKt.getFontScaledContext(newBase));
-        Unit unit = Unit.f22042a;
+        Unit unit = Unit.f25780a;
         Context applicationContext = getApplicationContext();
-        C9971q.m14634f(applicationContext, "applicationContext");
+        C9677q.m14634f(applicationContext, "applicationContext");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
     }
 
@@ -87,11 +87,11 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
 
     public abstract String getNameOfComponent();
 
-    @Override // com.facebook.react.ReactActivity, androidx.appcompat.app.ActivityC1510b, androidx.fragment.app.FragmentActivity, android.app.Activity, android.content.ComponentCallbacks
+    @Override // com.facebook.react.ReactActivity, androidx.appcompat.app.ActivityC0300b, androidx.fragment.app.FragmentActivity, android.app.Activity, android.content.ComponentCallbacks
     public void onConfigurationChanged(Configuration newConfig) {
-        C9971q.m14633g(newConfig, "newConfig");
+        C9677q.m14633g(newConfig, "newConfig");
         super.onConfigurationChanged(newConfig);
-        C10719b.f23750n.m12569a(this, newConfig);
+        C10468b.f27551n.m12569a(this, newConfig);
     }
 
     @Override // com.facebook.react.ReactActivity, androidx.fragment.app.FragmentActivity, androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity

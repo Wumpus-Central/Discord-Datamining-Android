@@ -4,7 +4,7 @@ import android.content.Context;
 import com.facebook.react.modules.network.OkHttpClientFactory;
 import com.facebook.react.modules.network.OkHttpClientProvider;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import okhttp3.Dispatcher;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -22,13 +22,13 @@ public final class ClientUserAgent {
         private final String userAgent;
 
         public DiscordUserAgentInterceptor(String userAgent) {
-            C9971q.m14633g(userAgent, "userAgent");
+            C9677q.m14633g(userAgent, "userAgent");
             this.userAgent = userAgent;
         }
 
         @Override // okhttp3.Interceptor
         public Response intercept(Interceptor.Chain chain) {
-            C9971q.m14633g(chain, "chain");
+            C9677q.m14633g(chain, "chain");
             return chain.mo2360a(chain.mo2359b().m9880i().m9868i("User-Agent").m9876a("User-Agent", this.userAgent).m9875b());
         }
     }
@@ -45,14 +45,14 @@ public final class ClientUserAgent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final OkHttpClient init$lambda$0(Context context, String userAgent) {
-        C9971q.m14633g(context, "$context");
-        C9971q.m14633g(userAgent, "$userAgent");
+        C9677q.m14633g(context, "$context");
+        C9677q.m14633g(userAgent, "$userAgent");
         return OkHttpClientProvider.createClientBuilder(context).m9910g(INSTANCE.createDispatcher()).m9916a(new DiscordUserAgentInterceptor(userAgent)).m9914c();
     }
 
     public final void init(final Context context, final String userAgent) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(userAgent, "userAgent");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(userAgent, "userAgent");
         OkHttpClientProvider.setOkHttpClientFactory(new OkHttpClientFactory() { // from class: com.discord.client_info.a
             @Override // com.facebook.react.modules.network.OkHttpClientFactory
             public final OkHttpClient createNewNetworkModuleClient() {

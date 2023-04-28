@@ -279,6 +279,8 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="discord_8th_bday_pink">#ffff00</color>
+    <color name="discord_8th_bday_yellow">#ff52d2</color>
     <color name="display_banner_overflow_background_dark">#801e1f22</color>
     <color name="display_banner_overflow_background_light">#80ffffff</color>
     <color name="ebay">#0064d2</color>

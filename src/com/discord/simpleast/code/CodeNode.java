@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0016\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002:\u0002\u0014\u0015B%\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\b¢\u0006\u0002\u0010\tJ\u0013\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rH\u0096\u0002J\u001d\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0013R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, m15073d2 = {"Lcom/discord/simpleast/code/CodeNode;", "RC", "Lcom/discord/simpleast/core/node/TextNode;", "content", "Lcom/discord/simpleast/code/CodeNode$Content;", "language", "", "stylesProvider", "Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;", "(Lcom/discord/simpleast/code/CodeNode$Content;Ljava/lang/String;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;)V", "equals", "", "other", "", "render", "", "builder", "Landroid/text/SpannableStringBuilder;", "renderContext", "(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V", "Content", "DefinitionNode", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
@@ -31,8 +31,8 @@ public class CodeNode<RC> extends TextNode<RC> {
             /* JADX WARN: Multi-variable type inference failed */
             public Parsed(String raw, List<? extends Node<RC>> children) {
                 super(raw, null);
-                C9971q.m14633g(raw, "raw");
-                C9971q.m14633g(children, "children");
+                C9677q.m14633g(raw, "raw");
+                C9677q.m14633g(children, "children");
                 this.children = children;
             }
 
@@ -47,7 +47,7 @@ public class CodeNode<RC> extends TextNode<RC> {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Raw(String body) {
                 super(body, null);
-                C9971q.m14633g(body, "body");
+                C9677q.m14633g(body, "body");
             }
         }
 
@@ -70,17 +70,17 @@ public class CodeNode<RC> extends TextNode<RC> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public DefinitionNode(String pre, String name, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(pre, codeStyleProviders.getKeywordStyleProvider()), new StyleNode.TextStyledNode(name, codeStyleProviders.getTypesStyleProvider()));
-            C9971q.m14633g(pre, "pre");
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+            C9677q.m14633g(pre, "pre");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public CodeNode(Content content, String str, StyleNode.SpanProvider<RC> stylesProvider) {
         super(content.getBody());
-        C9971q.m14633g(content, "content");
-        C9971q.m14633g(stylesProvider, "stylesProvider");
+        C9677q.m14633g(content, "content");
+        C9677q.m14633g(stylesProvider, "stylesProvider");
         this.language = str;
         this.stylesProvider = stylesProvider;
         if (content instanceof Content.Parsed) {
@@ -99,7 +99,7 @@ public class CodeNode<RC> extends TextNode<RC> {
     public boolean equals(Object obj) {
         if (obj instanceof CodeNode) {
             CodeNode codeNode = (CodeNode) obj;
-            if (C9971q.m14638b(codeNode.language, this.language) && C9971q.m14638b(codeNode.getContent(), getContent())) {
+            if (C9677q.m14638b(codeNode.language, this.language) && C9677q.m14638b(codeNode.getContent(), getContent())) {
                 return true;
             }
         }
@@ -108,7 +108,7 @@ public class CodeNode<RC> extends TextNode<RC> {
 
     @Override // com.discord.simpleast.core.node.TextNode, com.discord.simpleast.core.node.Node
     public void render(SpannableStringBuilder builder, RC rc) {
-        C9971q.m14633g(builder, "builder");
+        C9677q.m14633g(builder, "builder");
         Iterable<?> iterable = this.stylesProvider.get(rc);
         if (hasChildren()) {
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();

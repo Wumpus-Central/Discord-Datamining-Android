@@ -13,7 +13,7 @@ import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ-\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\u0012\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0013R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0014"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/GuildView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/GuildViewBinding;", "boundIconUrl", "", "boundShortGuildName", "configure", "", "iconUrl", "shortGuildName", "thumbnailBackgroundColor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -26,13 +26,13 @@ public final class GuildView extends FrameLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public GuildView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public GuildView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ GuildView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -56,10 +56,10 @@ public final class GuildView extends FrameLayout {
         /*
             r5 = this;
             java.lang.String r0 = r5.boundIconUrl
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r6)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r6)
             if (r0 == 0) goto L_0x0011
             java.lang.String r0 = r5.boundShortGuildName
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r7)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r7)
             if (r0 == 0) goto L_0x0011
             return
         L_0x0011:
@@ -67,7 +67,7 @@ public final class GuildView extends FrameLayout {
             r5.boundShortGuildName = r7
             r0 = 0
             if (r6 == 0) goto L_0x0021
-            boolean r1 = p326ri.C12707l.m5767w(r6)
+            boolean r1 = p327ri.C12576l.m5767w(r6)
             if (r1 == 0) goto L_0x001f
             goto L_0x0021
         L_0x001f:
@@ -82,11 +82,11 @@ public final class GuildView extends FrameLayout {
             if (r1 == 0) goto L_0x005f
             com.discord.chat.databinding.GuildViewBinding r6 = r5.binding
             com.facebook.drawee.view.SimpleDraweeView r6 = r6.guildAvatar
-            kotlin.jvm.internal.C9971q.m14634f(r6, r4)
+            kotlin.jvm.internal.C9677q.m14634f(r6, r4)
             r6.setVisibility(r2)
             com.discord.chat.databinding.GuildViewBinding r6 = r5.binding
             android.widget.TextView r6 = r6.guildText
-            kotlin.jvm.internal.C9971q.m14634f(r6, r3)
+            kotlin.jvm.internal.C9677q.m14634f(r6, r3)
             r6.setVisibility(r0)
             com.discord.chat.databinding.GuildViewBinding r6 = r5.binding
             android.widget.TextView r6 = r6.guildText
@@ -97,8 +97,8 @@ public final class GuildView extends FrameLayout {
         L_0x004c:
             android.content.Context r6 = r5.getContext()
             java.lang.String r7 = "context"
-            kotlin.jvm.internal.C9971q.m14634f(r6, r7)
-            int r7 = com.discord.chat.C4254R.color.brand
+            kotlin.jvm.internal.C9677q.m14634f(r6, r7)
+            int r7 = com.discord.chat.C3147R.color.brand
             int r6 = com.discord.theme.utils.ColorUtilsKt.getColorCompat(r6, r7)
         L_0x005b:
             r5.setBackgroundColor(r6)
@@ -106,11 +106,11 @@ public final class GuildView extends FrameLayout {
         L_0x005f:
             com.discord.chat.databinding.GuildViewBinding r7 = r5.binding
             com.facebook.drawee.view.SimpleDraweeView r7 = r7.guildAvatar
-            kotlin.jvm.internal.C9971q.m14634f(r7, r4)
+            kotlin.jvm.internal.C9677q.m14634f(r7, r4)
             r7.setVisibility(r0)
             com.discord.chat.databinding.GuildViewBinding r7 = r5.binding
             android.widget.TextView r7 = r7.guildText
-            kotlin.jvm.internal.C9971q.m14634f(r7, r3)
+            kotlin.jvm.internal.C9677q.m14634f(r7, r3)
             r7.setVisibility(r2)
             com.discord.chat.databinding.GuildViewBinding r7 = r5.binding
             com.facebook.drawee.view.SimpleDraweeView r7 = r7.guildAvatar
@@ -128,15 +128,15 @@ public final class GuildView extends FrameLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GuildView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         GuildViewBinding inflate = GuildViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         View root = inflate.getRoot();
-        C9971q.m14634f(root, "binding.root");
+        C9677q.m14634f(root, "binding.root");
         ViewClippingUtilsKt.clipToRoundedRectangle(root, SizeUtilsKt.getDpToPx(16));
         TextView _init_$lambda$0 = inflate.guildText;
-        C9971q.m14634f(_init_$lambda$0, "_init_$lambda$0");
+        C9677q.m14634f(_init_$lambda$0, "_init_$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 14.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryNormal);
     }

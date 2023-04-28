@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\r\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0007\u001a\u00020\bH\u0016J\b\u0010\t\u001a\u00020\nH\u0016J\b\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\f\u001a\u00020\nH\u0007J\u001a\u0010\r\u001a\u00020\n2\b\u0010\u000e\u001a\u0004\u0018\u00010\b2\u0006\u0010\u000f\u001a\u00020\bH\u0007J\u001c\u0010\u0010\u001a\u00020\n2\b\u0010\u0011\u001a\u0004\u0018\u00010\b2\b\u0010\u0012\u001a\u0004\u0018\u00010\bH\u0007J&\u0010\u0013\u001a\u00020\n2\b\u0010\u0014\u001a\u0004\u0018\u00010\b2\b\u0010\u0015\u001a\u0004\u0018\u00010\b2\b\u0010\u0016\u001a\u0004\u0018\u00010\bH\u0007R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0017"}, m15073d2 = {"Lcom/discord/share/ShareManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "shareBroadcastReceiver", "Lcom/discord/share/ShareBroadcastReceiver;", "getName", "", "initialize", "", "invalidate", "launchApp", "setAuthenticationToken", "authenticationToken", "superProperties", "setSelectedChannel", "channelJSON", "guildJSON", "share", "text", "url", "chooserText", "share_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -17,7 +17,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ShareManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.shareBroadcastReceiver = new ShareBroadcastReceiver(reactContext);
     }
 
@@ -31,7 +31,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         super.initialize();
         ShareBroadcastReceiver.Companion companion = ShareBroadcastReceiver.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         companion.register(reactApplicationContext, this.shareBroadcastReceiver);
     }
 
@@ -41,7 +41,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         try {
             ShareBroadcastReceiver.Companion companion = ShareBroadcastReceiver.Companion;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
             companion.unregister(reactApplicationContext, this.shareBroadcastReceiver);
         } catch (Exception unused) {
         }
@@ -65,7 +65,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void setAuthenticationToken(String str, String superProperties) {
-        C9971q.m14633g(superProperties, "superProperties");
+        C9677q.m14633g(superProperties, "superProperties");
     }
 
     @ReactMethod
@@ -89,7 +89,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             r2 = 0
             r3 = 1
             if (r0 == 0) goto L_0x0011
-            boolean r4 = p326ri.C12707l.m5767w(r16)
+            boolean r4 = p327ri.C12576l.m5767w(r16)
             if (r4 == 0) goto L_0x000f
             goto L_0x0011
         L_0x000f:
@@ -100,7 +100,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         L_0x0012:
             if (r4 == 0) goto L_0x0025
             if (r1 == 0) goto L_0x001f
-            boolean r4 = p326ri.C12707l.m5767w(r17)
+            boolean r4 = p327ri.C12576l.m5767w(r17)
             if (r4 == 0) goto L_0x001d
             goto L_0x001f
         L_0x001d:
@@ -128,7 +128,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             java.lang.String[] r5 = new java.lang.String[r5]
             r5[r2] = r0
             r5[r3] = r1
-            java.util.List r6 = kotlin.collections.C9904h.m14852n(r5)
+            java.util.List r6 = kotlin.collections.C9608h.m14852n(r5)
             java.lang.String r7 = "\n"
             r8 = 0
             r9 = 0
@@ -137,7 +137,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             r12 = 0
             r13 = 62
             r14 = 0
-            java.lang.String r0 = kotlin.collections.C9904h.m14867e0(r6, r7, r8, r9, r10, r11, r12, r13, r14)
+            java.lang.String r0 = kotlin.collections.C9608h.m14867e0(r6, r7, r8, r9, r10, r11, r12, r13, r14)
             java.lang.String r1 = "android.intent.extra.TEXT"
             r4.putExtra(r1, r0)
             com.facebook.react.bridge.ReactApplicationContext r0 = r15.getReactApplicationContext()
@@ -152,7 +152,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             com.discord.share.ShareBroadcastReceiver$Companion r2 = com.discord.share.ShareBroadcastReceiver.Companion
             com.facebook.react.bridge.ReactApplicationContext r3 = r15.getReactApplicationContext()
             java.lang.String r5 = "reactApplicationContext"
-            kotlin.jvm.internal.C9971q.m14634f(r3, r5)
+            kotlin.jvm.internal.C9677q.m14634f(r3, r5)
             android.content.IntentSender r2 = r2.getPendingIntentSender(r3)
             android.content.Intent r1 = android.content.Intent.createChooser(r4, r1, r2)
             r0.startActivity(r1)

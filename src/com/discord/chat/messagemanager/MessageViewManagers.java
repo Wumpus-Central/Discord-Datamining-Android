@@ -36,17 +36,17 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.serialization.json.C10285k;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.serialization.json.C10006k;
 import kotlinx.serialization.json.Json;
-import nf.C11098x;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\bÆ\u0002\u0018\u00002\u00020\u0001:\u0004\u0016\u0017\u0018\u0019B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0002J\u0014\u0010\u000b\u001a\u00020\f*\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0002J$\u0010\u000f\u001a\u00020\u0010*\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0015\u001a\u00020\u0013H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, m15073d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers;", "", "()V", "json", "Lkotlinx/serialization/json/Json;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "convertRowJsonToMessageRow", "Lcom/discord/chat/bridge/row/MessageRow;", "rowJson", "", "getEventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "context", "Landroid/content/Context;", "updateNodeSize", "", "Lcom/facebook/react/bridge/ReactContext;", "id", "", "width", "height", "GuildMultilineSystemMessageViewManager", "MessageBundleViewManager", "MessageViewManager", "SystemMessageViewManager", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class MessageViewManagers {
     public static final MessageViewManagers INSTANCE = new MessageViewManagers();
-    private static final Json json = C10285k.m13694b(null, MessageViewManagers$json$1.INSTANCE, 1, null);
+    private static final Json json = C10006k.m13694b(null, MessageViewManagers$json$1.INSTANCE, 1, null);
     private static final ReactEvents reactEvents;
 
     @Metadata(m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0014J\b\u0010\t\u001a\u00020\nH\u0016¨\u0006\u000b"}, m15073d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$GuildMultilineSystemMessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/MessageView;", "()V", "createViewInstance", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -59,7 +59,7 @@ public final class MessageViewManagers {
 
         @Override // com.facebook.react.uimanager.ViewManager
         protected Void createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             throw new UnsupportedOperationException("multiline system messages are not supported.");
         }
     }
@@ -68,7 +68,7 @@ public final class MessageViewManagers {
     /* loaded from: classes4.dex */
     public static final class MessageBundleViewManager extends ViewGroupManager<ViewMeasuringWrapper<MessageBundleView>> {
         private final RecyclerView.RecycledViewPool messageRowViewPool;
-        private final ReactEvents reactEvents = new ReactEvents(C11098x.m10921a("onTapItem", C9951f0.m14684b(OnTapMessageBundleItemData.class)), C11098x.m10921a("onLongPressItem", C9951f0.m14684b(OnLongPressMessageBundleItemData.class)), C11098x.m10921a("onTruncateMessage", C9951f0.m14684b(OnTruncateMessageData.class)), C11098x.m10921a("onTapReplyItem", C9951f0.m14684b(OnTapReplyItemData.class)), C11098x.m10921a("onTapViewMoreText", C9951f0.m14684b(OnTapViewMoreTextData.class)));
+        private final ReactEvents reactEvents = new ReactEvents(C10853x.m10921a("onTapItem", C9656f0.m14684b(OnTapMessageBundleItemData.class)), C10853x.m10921a("onLongPressItem", C9656f0.m14684b(OnLongPressMessageBundleItemData.class)), C10853x.m10921a("onTruncateMessage", C9656f0.m14684b(OnTruncateMessageData.class)), C10853x.m10921a("onTapReplyItem", C9656f0.m14684b(OnTapReplyItemData.class)), C10853x.m10921a("onTapViewMoreText", C9656f0.m14684b(OnTapViewMoreTextData.class)));
         private final RecyclerView.RecycledViewPool messageAccessoriesViewPool = ChatListUtilsKt.getMessageAccessoriesViewPool();
 
         public MessageBundleViewManager() {
@@ -79,22 +79,22 @@ public final class MessageViewManagers {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void data$lambda$3(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            C9971q.m14633g(this$0, "this$0");
-            C9971q.m14633g(wrappedView, "$wrappedView");
+            C9677q.m14633g(this$0, "this$0");
+            C9677q.m14633g(wrappedView, "$wrappedView");
             this$0.emitOnTapItem(wrappedView);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final boolean data$lambda$4(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            C9971q.m14633g(this$0, "this$0");
-            C9971q.m14633g(wrappedView, "$wrappedView");
+            C9677q.m14633g(this$0, "this$0");
+            C9677q.m14633g(wrappedView, "$wrappedView");
             return this$0.emitOnLongPressItem(wrappedView);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void data$lambda$5(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            C9971q.m14633g(this$0, "this$0");
-            C9971q.m14633g(wrappedView, "$wrappedView");
+            C9677q.m14633g(this$0, "this$0");
+            C9677q.m14633g(wrappedView, "$wrappedView");
             this$0.emitOnTapViewMoreText(wrappedView);
         }
 
@@ -125,8 +125,8 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "data")
         public final void data(final ViewMeasuringWrapper<MessageBundleView> wrappedView, String data) {
-            C9971q.m14633g(wrappedView, "wrappedView");
-            C9971q.m14633g(data, "data");
+            C9677q.m14633g(wrappedView, "wrappedView");
+            C9677q.m14633g(data, "data");
             Json json = MessageViewManagers.json;
             json.mo611a();
             wrappedView.getView().setBundle((MessageBundleView.MessageBundle) json.mo578b(MessageBundleView.MessageBundle.Companion.serializer(), data), new View.OnClickListener() { // from class: com.discord.chat.messagemanager.b
@@ -162,12 +162,12 @@ public final class MessageViewManagers {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.uimanager.ViewManager
         public ViewMeasuringWrapper<MessageBundleView> createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
-            ViewMeasuringWrapper<MessageBundleView> viewMeasuringWrapper = new ViewMeasuringWrapper<>(new MessageBundleView(reactContext, null, 0, 6, null), new C4271x62a6ca56(reactContext));
+            C9677q.m14633g(reactContext, "reactContext");
+            ViewMeasuringWrapper<MessageBundleView> viewMeasuringWrapper = new ViewMeasuringWrapper<>(new MessageBundleView(reactContext, null, 0, 6, null), new C3171x62a6ca56(reactContext));
             MessageBundleView view = viewMeasuringWrapper.getView();
             view.setMessageRowViewPool(this.messageRowViewPool);
             view.setMessageAccessoriesViewPool(this.messageAccessoriesViewPool);
-            view.setOnTruncateMessage(new C4272xc30ce0b1(this, view, viewMeasuringWrapper));
+            view.setOnTruncateMessage(new C3172xc30ce0b1(this, view, viewMeasuringWrapper));
             return viewMeasuringWrapper;
         }
     }
@@ -183,8 +183,8 @@ public final class MessageViewManagers {
         @ReactProp(name = "row")
         public final void row(ViewMeasuringWrapper<DecoratedMessageView> wrappedView, String rowJson) {
             MessageFrameType messageFrameType;
-            C9971q.m14633g(wrappedView, "wrappedView");
-            C9971q.m14633g(rowJson, "rowJson");
+            C9677q.m14633g(wrappedView, "wrappedView");
+            C9677q.m14633g(rowJson, "rowJson");
             MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
             MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(rowJson);
             MessageFrame messageFrame = convertRowJsonToMessageRow.getMessageFrame();
@@ -199,11 +199,11 @@ public final class MessageViewManagers {
             }
             DecoratedMessageView view = wrappedView.getView();
             MessageBase message = convertRowJsonToMessageRow.getMessage();
-            C9971q.m14635e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+            C9677q.m14635e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
             MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
             MessageFrame messageFrame2 = convertRowJsonToMessageRow.getMessageFrame();
             Context context = wrappedView.getContext();
-            C9971q.m14634f(context, "wrappedView.context");
+            C9677q.m14634f(context, "wrappedView.context");
             DecoratedMessageView.setMessage$default(view, (Message) message, messageContext, messageFrame2, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context), null, null, false, convertRowJsonToMessageRow.isHighlight(), false, 368, null);
             ThemeManager.INSTANCE.setThemeOverride(null);
         }
@@ -211,7 +211,7 @@ public final class MessageViewManagers {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.uimanager.ViewManager
         public ViewMeasuringWrapper<DecoratedMessageView> createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new ViewMeasuringWrapper<>(new DecoratedMessageView(reactContext, null, 2, null), new MessageViewManagers$MessageViewManager$createViewInstance$1(reactContext));
         }
     }
@@ -226,23 +226,23 @@ public final class MessageViewManagers {
 
         @ReactProp(name = "row")
         public final void row(ViewMeasuringWrapper<SystemMessageWrapperView> wrappedView, String rowJson) {
-            C9971q.m14633g(wrappedView, "wrappedView");
-            C9971q.m14633g(rowJson, "rowJson");
+            C9677q.m14633g(wrappedView, "wrappedView");
+            C9677q.m14633g(rowJson, "rowJson");
             MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
             MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(rowJson);
             MessageBase message = convertRowJsonToMessageRow.getMessage();
-            C9971q.m14635e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+            C9677q.m14635e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
             MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
             Context context = wrappedView.getContext();
-            C9971q.m14634f(context, "wrappedView.context");
+            C9677q.m14634f(context, "wrappedView.context");
             wrappedView.getView().setMessage((Message) message, messageContext, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context));
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.uimanager.ViewManager
         public ViewMeasuringWrapper<SystemMessageWrapperView> createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
-            return new ViewMeasuringWrapper<>(new SystemMessageWrapperView(reactContext, null, 2, null), new C4273xaf74b5c5(reactContext));
+            C9677q.m14633g(reactContext, "reactContext");
+            return new ViewMeasuringWrapper<>(new SystemMessageWrapperView(reactContext, null, 2, null), new C3173xaf74b5c5(reactContext));
         }
     }
 
@@ -260,7 +260,7 @@ public final class MessageViewManagers {
         Json json2 = json;
         json2.mo611a();
         Object b = json2.mo578b(Row.Companion.serializer(), str);
-        C9971q.m14635e(b, "null cannot be cast to non-null type com.discord.chat.bridge.row.MessageRow");
+        C9677q.m14635e(b, "null cannot be cast to non-null type com.discord.chat.bridge.row.MessageRow");
         return (MessageRow) b;
     }
 
@@ -284,9 +284,9 @@ public final class MessageViewManagers {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void updateNodeSize$lambda$1(ReactContext this_updateNodeSize, int i, int i2, int i3) {
-        C9971q.m14633g(this_updateNodeSize, "$this_updateNodeSize");
+        C9677q.m14633g(this_updateNodeSize, "$this_updateNodeSize");
         NativeModule nativeModule = this_updateNodeSize.getNativeModule(UIManagerModule.class);
-        C9971q.m14636d(nativeModule);
+        C9677q.m14636d(nativeModule);
         ((UIManagerModule) nativeModule).updateNodeSize(i, i2, i3);
     }
 }

@@ -9,13 +9,13 @@ import com.discord.chat.databinding.AudioPlayerViewBinding;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n¢\u0006\u0002\b\u0003"}, m15073d2 = {"<anonymous>", "Landroid/animation/ValueAnimator;", "kotlin.jvm.PlatformType", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends AbstractC9973s implements Function0<ValueAnimator> {
+public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends AbstractC9679s implements Function0<ValueAnimator> {
     final /* synthetic */ AudioPlayerViewBinding $binding;
     final /* synthetic */ AudioPlayerWipeAnimatorManager this$0;
 
@@ -34,10 +34,10 @@ public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends Abstra
         ColorDrawable buttonContainerActiveDrawable;
         Drawable buttonContainerDefaultDrawable2;
         ColorDrawable buttonContainerActiveDrawable2;
-        C9971q.m14633g(binding, "$binding");
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(binding, "$binding");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         float floatValue = ((Float) animatedValue).floatValue();
         if (binding.playerContainer.getWidth() <= 0 || binding.wipe.getWidth() <= 0) {
             f = 0.0f;
@@ -59,7 +59,7 @@ public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends Abstra
         buttonContainerActiveDrawable2 = this$0.getButtonContainerActiveDrawable();
         view.setBackground(new LayerDrawable(new Drawable[]{buttonContainerDefaultDrawable2, buttonContainerActiveDrawable2}));
         View view2 = binding.buttonContainer;
-        C9971q.m14634f(view2, "binding.buttonContainer");
+        C9677q.m14634f(view2, "binding.buttonContainer");
         ViewClippingUtilsKt.clipToCircle(view2);
     }
 

@@ -5,9 +5,9 @@ import com.facebook.react.bridge.ReactMarker;
 import com.facebook.react.bridge.ReactMarkerConstants;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9977w;
-import kotlin.properties.C9981a;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9683w;
+import kotlin.properties.C9687a;
 import kotlin.properties.ReadWriteProperty;
 import kotlin.reflect.KProperty;
 
@@ -17,12 +17,12 @@ public final class ReactMarkerListener implements ReactMarker.MarkerListener {
     private static final ReadWriteProperty bundleLoadedTimestamp$delegate;
     private static final ReadWriteProperty bundleParsedTimestamp$delegate;
     private static final ReadWriteProperty bundleStartedTimestamp$delegate;
-    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9951f0.m14681e(new C9977w(ReactMarkerListener.class, "bundleStartedTimestamp", "getBundleStartedTimestamp()J", 0)), C9951f0.m14681e(new C9977w(ReactMarkerListener.class, "bundleLoadedTimestamp", "getBundleLoadedTimestamp()J", 0)), C9951f0.m14681e(new C9977w(ReactMarkerListener.class, "bundleParsedTimestamp", "getBundleParsedTimestamp()J", 0))};
+    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9656f0.m14681e(new C9683w(ReactMarkerListener.class, "bundleStartedTimestamp", "getBundleStartedTimestamp()J", 0)), C9656f0.m14681e(new C9683w(ReactMarkerListener.class, "bundleLoadedTimestamp", "getBundleLoadedTimestamp()J", 0)), C9656f0.m14681e(new C9683w(ReactMarkerListener.class, "bundleParsedTimestamp", "getBundleParsedTimestamp()J", 0))};
     public static final ReactMarkerListener INSTANCE = new ReactMarkerListener();
     private static boolean stopped = true;
 
     static {
-        C9981a aVar = C9981a.f22098a;
+        C9687a aVar = C9687a.f25836a;
         bundleStartedTimestamp$delegate = aVar.m14610a();
         bundleLoadedTimestamp$delegate = aVar.m14610a();
         bundleParsedTimestamp$delegate = aVar.m14610a();

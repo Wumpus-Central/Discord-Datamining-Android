@@ -26,9 +26,9 @@ import com.facebook.react.uimanager.events.TouchesHelper;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u001a\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000¢\u0006\u0002\u0010\u0006BB\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\b\u0002\u0010\n\u001a\u00020\b\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\fø\u0001\u0000¢\u0006\u0002\u0010\rJ\u001b\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0017\u0010\u000fJ\u000b\u0010\u0018\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u0010\u001a\u001a\u00020\bHÆ\u0003J\u000b\u0010\u001b\u001a\u0004\u0018\u00010\fHÆ\u0003JP\u0010\u001c\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\n\u001a\u00020\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\fHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001d\u0010\u001eJ\u0013\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\"HÖ\u0003J\t\u0010#\u001a\u00020$HÖ\u0001J\b\u0010%\u001a\u00020&H\u0016J\t\u0010'\u001a\u00020\bHÖ\u0001J\f\u0010(\u001a\u00020)*\u00020\fH\u0002R\u0011\u0010\n\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u001e\u0010\u0002\u001a\u0004\u0018\u00010\u0003ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0012\u0010\u000fR\u0013\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000fR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u000f\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006*"}, m15073d2 = {"Lcom/discord/chat/reactevents/TapLinkData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "node", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "(Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContentNode;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "title", "", TouchesHelper.TARGET_KEY, "content", "context", "Lcom/discord/chat/bridge/contentnode/LinkContext;", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContext;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getContent", "()Ljava/lang/String;", "getContext", "()Lcom/discord/chat/bridge/contentnode/LinkContext;", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getTarget", "getTitle", "component1", "component1-N_6c4I0", "component2", "component3", "component4", "component5", "copy", "copy-fCSJrew", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContext;)Lcom/discord/chat/reactevents/TapLinkData;", "equals", "", "other", "", "hashCode", "", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "toMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -86,7 +86,7 @@ public final class TapLinkData implements ReactEvent {
                         HandleDelete handleDelete = linkContext.getHandleDelete();
                         if (handleDelete != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleDelete.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("id", handleDelete.getMessage().m41625getId3Eiw7ao()), C11098x.m10921a("channel_id", ChannelId.m42096toStringimpl(handleDelete.getMessage().m41624getChannelIdo4g7jtM())), C11098x.m10921a("loggingName", handleDelete.getMessage().getLoggingName()), C11098x.m10921a("author", NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("username", handleDelete.getMessage().getAuthor().getUsername())))));
+                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("id", handleDelete.getMessage().m41625getId3Eiw7ao()), C10853x.m10921a("channel_id", ChannelId.m42096toStringimpl(handleDelete.getMessage().m41624getChannelIdo4g7jtM())), C10853x.m10921a("loggingName", handleDelete.getMessage().getLoggingName()), C10853x.m10921a("author", NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("username", handleDelete.getMessage().getAuthor().getUsername())))));
                             break;
                         }
                     }
@@ -114,7 +114,7 @@ public final class TapLinkData implements ReactEvent {
                                 if (guildId != null) {
                                     NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m42109toStringimpl(guildId.m42111unboximpl()));
                                 }
-                                Unit unit = Unit.f22042a;
+                                Unit unit = Unit.f25780a;
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                                 break;
                             }
@@ -187,7 +187,7 @@ public final class TapLinkData implements ReactEvent {
                         HandleMessage handleMessage = linkContext.getHandleMessage();
                         if (handleMessage != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleMessage.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("id", handleMessage.getMessage().m41632getId3Eiw7ao()), C11098x.m10921a("channel_id", ChannelId.m42096toStringimpl(handleMessage.getMessage().m41631getChannelIdo4g7jtM())), C11098x.m10921a("loggingName", handleMessage.getMessage().getLoggingName())));
+                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("id", handleMessage.getMessage().m41632getId3Eiw7ao()), C10853x.m10921a("channel_id", ChannelId.m42096toStringimpl(handleMessage.getMessage().m41631getChannelIdo4g7jtM())), C10853x.m10921a("loggingName", handleMessage.getMessage().getLoggingName())));
                             break;
                         }
                     }
@@ -242,7 +242,7 @@ public final class TapLinkData implements ReactEvent {
 
     /* renamed from: copy-fCSJrew  reason: not valid java name */
     public final TapLinkData m41939copyfCSJrew(String str, String str2, String str3, String content, LinkContext linkContext) {
-        C9971q.m14633g(content, "content");
+        C9677q.m14633g(content, "content");
         return new TapLinkData(str, str2, str3, content, linkContext, null);
     }
 
@@ -284,25 +284,25 @@ public final class TapLinkData implements ReactEvent {
         L_0x0021:
             java.lang.String r1 = r4.title
             java.lang.String r3 = r5.title
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x002c
             return r2
         L_0x002c:
             java.lang.String r1 = r4.target
             java.lang.String r3 = r5.target
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x0037
             return r2
         L_0x0037:
             java.lang.String r1 = r4.content
             java.lang.String r3 = r5.content
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x0042
             return r2
         L_0x0042:
             com.discord.chat.bridge.contentnode.LinkContext r1 = r4.context
             com.discord.chat.bridge.contentnode.LinkContext r5 = r5.context
-            boolean r5 = kotlin.jvm.internal.C9971q.m14638b(r1, r5)
+            boolean r5 = kotlin.jvm.internal.C9677q.m14638b(r1, r5)
             if (r5 != 0) goto L_0x004d
             return r2
         L_0x004d:
@@ -360,12 +360,12 @@ public final class TapLinkData implements ReactEvent {
             } else {
                 str = MessageId.m42121toStringimpl(str2);
             }
-            pairArr[0] = C11098x.m10921a("messageId", str);
-            pairArr[1] = C11098x.m10921a("url", this.target);
-            pairArr[2] = C11098x.m10921a("node", NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("title", this.title), C11098x.m10921a(TouchesHelper.TARGET_KEY, this.target), C11098x.m10921a("content", this.content)));
+            pairArr[0] = C10853x.m10921a("messageId", str);
+            pairArr[1] = C10853x.m10921a("url", this.target);
+            pairArr[2] = C10853x.m10921a("node", NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("title", this.title), C10853x.m10921a(TouchesHelper.TARGET_KEY, this.target), C10853x.m10921a("content", this.content)));
             writableNativeMap = NativeMapExtensionsKt.nativeMapOf(pairArr);
         }
-        return NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("data", writableNativeMap));
+        return NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("data", writableNativeMap));
     }
 
     public String toString() {

@@ -15,21 +15,21 @@ import android.util.Pair;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
-import androidx.core.content.res.C2367h;
-import androidx.dynamicanimation.animation.C2851b;
+import androidx.core.content.res.C1183h;
+import androidx.dynamicanimation.animation.C1680b;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.react.uimanager.events.TouchesHelper;
-import eg.C6884j;
+import eg.C6322j;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p166j1.C9461b;
+import p167j1.C9138b;
 
 @Metadata(m15074d1 = {"\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0017\b\u0000\u0018\u0000 @2\u00020\u0001:\u0001@B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!H\u0002J(\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u000e2\u0006\u0010'\u001a\u00020\u000b2\u0006\u0010(\u001a\u00020\u000bH\u0016J$\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0*2\u0006\u0010+\u001a\u00020\u000b2\u0006\u0010,\u001a\u00020\u000bH\u0016J\u0018\u0010-\u001a\u00020\u000e2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u0011H\u0016J@\u0010/\u001a\u00020\u001f2\u0006\u00100\u001a\u00020!2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000b2\u0006\u00101\u001a\u00020\u000b2\u0006\u00102\u001a\u00020\u000e2\u0006\u00103\u001a\u00020\u001bH\u0016J \u00104\u001a\u00020\u001b2\u0006\u0010$\u001a\u00020%2\u0006\u0010.\u001a\u00020\u00112\u0006\u00105\u001a\u00020\u0011H\u0016J\u001a\u00106\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%2\b\u0010.\u001a\u0004\u0018\u00010\u0011H\u0016J\u001a\u00107\u001a\u00020\u001f2\b\u0010.\u001a\u0004\u0018\u00010\u00112\u0006\u00102\u001a\u00020\u000eH\u0016J\u0018\u00108\u001a\u00020\u001f2\u0006\u0010.\u001a\u00020\u00112\u0006\u00109\u001a\u00020\u000eH\u0016J\b\u0010:\u001a\u00020\u001bH\u0016J\b\u0010;\u001a\u00020\u001bH\u0016J\u0010\u0010<\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\u0010\u0010=\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\u0010\u0010>\u001a\u00020\u001f2\u0006\u0010$\u001a\u00020%H\u0002J\b\u0010?\u001a\u00020\u001fH\u0002R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006A"}, m15073d2 = {"Lcom/discord/chat/presentation/list/SwipeHelper;", "Lcom/discord/chat/presentation/list/ChatListCallback;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "arrowAnimator", "Landroid/animation/ValueAnimator;", "arrowRotationAnimator", "arrowRotationSpringAnimation", "Landroidx/dynamicanimation/animation/SpringAnimation;", "curArrowRotationRadians", "", "curArrowScale", "curRippleAlpha", "", "curRippleRadius", "currentItemViewHolder", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "dX", "mView", "Landroid/view/View;", "replyIcon", "Landroid/graphics/drawable/Drawable;", "replyIconOutline", "rippleAnimator", "rippleFadeAnimator", "shouldPerformHapticFeedback", "", "shouldTriggerReply", "swipeBack", "drawContextArea", "", "canvas", "Landroid/graphics/Canvas;", "getAnimationDuration", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "animationType", "animateDx", "animateDy", "getEffectiveDxDy", "Landroid/util/Pair;", "rawDx", "rawDy", "getMovementFlags", "viewHolder", "onChildDraw", "c", "dY", "actionState", "isCurrentlyActive", "onMove", TouchesHelper.TARGET_KEY, "onReleased", "onSelectedChanged", "onSwiped", "direction", "shouldReturnToOriginalPosition", "shouldUseSpringyExit", "startArrowPulseAnimation", "startRippleAnimation", "updateHapticFeedbackTrigger", "updateReplyTrigger", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -53,7 +53,7 @@ public final class SwipeHelper extends ChatListCallback {
     private RecyclerView.ViewHolder currentItemViewHolder;
 
     /* renamed from: dX */
-    private float f36278dX;
+    private float f8484dX;
     private View mView;
     private Drawable replyIcon;
     private Drawable replyIconOutline;
@@ -91,10 +91,10 @@ public final class SwipeHelper extends ChatListCallback {
     }
 
     public SwipeHelper(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.context = context;
-        this.replyIcon = C2367h.m37984f(context.getResources(), C4254R.C4255drawable.ic_swipe_reply, context.getTheme());
-        this.replyIconOutline = C2367h.m37984f(context.getResources(), C4254R.C4255drawable.ic_swipe_reply_outline, context.getTheme());
+        this.replyIcon = C1183h.m37984f(context.getResources(), C3147R.C3148drawable.ic_swipe_reply, context.getTheme());
+        this.replyIconOutline = C1183h.m37984f(context.getResources(), C3147R.C3148drawable.ic_swipe_reply_outline, context.getTheme());
     }
 
     private final void drawContextArea(Canvas canvas) {
@@ -105,31 +105,31 @@ public final class SwipeHelper extends ChatListCallback {
             View view = this.mView;
             View view2 = null;
             if (view == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view = null;
             }
             float abs = Math.abs(view.getTranslationX());
             View view3 = this.mView;
             if (view3 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view3 = null;
             }
             float measuredHeight = view3.getMeasuredHeight();
             View view4 = this.mView;
             if (view4 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view4 = null;
             }
             float measuredWidth = view4.getMeasuredWidth();
             View view5 = this.mView;
             if (view5 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view5 = null;
             }
             float translationX = measuredWidth + view5.getTranslationX();
             View view6 = this.mView;
             if (view6 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view6 = null;
             }
             float top = view6.getTop();
@@ -137,20 +137,20 @@ public final class SwipeHelper extends ChatListCallback {
             float f3 = 235;
             View view7 = this.mView;
             if (view7 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view7 = null;
             }
             float translationX2 = view7.getTranslationX();
             int i = SWIPE_STOP_OFFSET_X;
-            j = C6884j.m23954j((int) (f2 + (f3 * (translationX2 / i))), 0, 255);
+            j = C6322j.m23954j((int) (f2 + (f3 * (translationX2 / i))), 0, 255);
             Paint paint = new Paint();
-            paint.setColor(ColorUtilsKt.getColorCompat(this.context, C4254R.color.brand_500));
+            paint.setColor(ColorUtilsKt.getColorCompat(this.context, C3147R.color.brand_500));
             paint.setAlpha(j);
             paint.setStyle(Paint.Style.FILL);
             canvas.save();
             View view8 = this.mView;
             if (view8 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
             } else {
                 view2 = view8;
             }
@@ -164,8 +164,8 @@ public final class SwipeHelper extends ChatListCallback {
             path.addRoundRect(translationX, top, f5, f6, fArr, Path.Direction.CW);
             canvas.clipPath(path);
             canvas.drawRect(translationX, top, f5, f6, paint);
-            f = C6884j.m23958f(measuredHeight - SizeUtilsKt.getDpToPx(6), SizeUtilsKt.getDpToPx(24));
-            PorterDuffColorFilter porterDuffColorFilter = new PorterDuffColorFilter(ColorUtilsKt.getColorCompat(this.context, C4254R.color.white), PorterDuff.Mode.SRC_ATOP);
+            f = C6322j.m23958f(measuredHeight - SizeUtilsKt.getDpToPx(6), SizeUtilsKt.getDpToPx(24));
+            PorterDuffColorFilter porterDuffColorFilter = new PorterDuffColorFilter(ColorUtilsKt.getColorCompat(this.context, C3147R.color.white), PorterDuff.Mode.SRC_ATOP);
             Drawable drawable = this.replyIcon;
             if (drawable != null) {
                 drawable.setColorFilter(porterDuffColorFilter);
@@ -176,7 +176,7 @@ public final class SwipeHelper extends ChatListCallback {
             }
             canvas.save();
             canvas.translate(translationX + 4.0f + (abs / 2.0f), top + f4);
-            paint.setColor(ColorUtilsKt.getColorCompat(this.context, C4254R.color.white_500));
+            paint.setColor(ColorUtilsKt.getColorCompat(this.context, C3147R.color.white_500));
             paint.setAlpha(this.curRippleAlpha);
             paint.setStyle(Paint.Style.FILL);
             canvas.drawCircle(0.0f, 0.0f, this.curRippleRadius, paint);
@@ -197,7 +197,7 @@ public final class SwipeHelper extends ChatListCallback {
             float pow = (float) Math.pow(max, 5);
             Drawable drawable5 = this.replyIcon;
             if (drawable5 != null) {
-                j2 = C6884j.m23954j((int) (j * pow), 0, 255);
+                j2 = C6322j.m23954j((int) (j * pow), 0, 255);
                 drawable5.setAlpha(j2);
             }
             Drawable drawable6 = this.replyIconOutline;
@@ -249,23 +249,23 @@ public final class SwipeHelper extends ChatListCallback {
         valueAnimator3.addListener(new Animator.AnimatorListener() { // from class: com.discord.chat.presentation.list.SwipeHelper$startArrowPulseAnimation$lambda$5$$inlined$doOnEnd$1
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
                 SpringAnimation springAnimation;
                 SpringAnimation springAnimation2;
-                C2851b bVar;
+                C1680b bVar;
                 SpringAnimation springAnimation3;
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 SwipeHelper swipeHelper = SwipeHelper.this;
-                SpringAnimation springAnimation4 = new SpringAnimation(new C9461b(r2 * 300.0f));
-                springAnimation4.m36508t(new C2851b().m36493d(0.2f).m36491f(200.0f));
+                SpringAnimation springAnimation4 = new SpringAnimation(new C9138b(r2 * 300.0f));
+                springAnimation4.m36508t(new C1680b().m36493d(0.2f).m36491f(200.0f));
                 final SwipeHelper swipeHelper2 = SwipeHelper.this;
                 final RecyclerView recyclerView2 = recyclerView;
-                springAnimation4.m36555b(new DynamicAnimation.AbstractC2845r() { // from class: com.discord.chat.presentation.list.SwipeHelper$startArrowPulseAnimation$2$2$1$1
-                    @Override // androidx.dynamicanimation.animation.DynamicAnimation.AbstractC2845r
+                springAnimation4.m36555b(new DynamicAnimation.AbstractC1672r() { // from class: com.discord.chat.presentation.list.SwipeHelper$startArrowPulseAnimation$2$2$1$1
+                    @Override // androidx.dynamicanimation.animation.DynamicAnimation.AbstractC1672r
                     public final void onAnimationUpdate(DynamicAnimation dynamicAnimation, float f, float f2) {
                         SwipeHelper.this.curArrowRotationRadians = f;
                         recyclerView2.invalidate();
@@ -293,12 +293,12 @@ public final class SwipeHelper extends ChatListCallback {
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         this.arrowRotationAnimator = valueAnimator3;
@@ -307,20 +307,20 @@ public final class SwipeHelper extends ChatListCallback {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void startArrowPulseAnimation$lambda$1$lambda$0(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(recyclerView, "$recyclerView");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(recyclerView, "$recyclerView");
         Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_ARROW_SCALE);
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curArrowScale = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void startArrowPulseAnimation$lambda$5$lambda$2(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(recyclerView, "$recyclerView");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(recyclerView, "$recyclerView");
         Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_ARROW_ROTATION);
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curArrowRotationRadians = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
@@ -338,7 +338,7 @@ public final class SwipeHelper extends ChatListCallback {
         this.curRippleAlpha = 26;
         View view = this.mView;
         if (view == null) {
-            C9971q.m14615y("mView");
+            C9677q.m14615y("mView");
             view = null;
         }
         float max = Math.max(view.getMeasuredHeight(), Math.abs(MAX_CONTEXT_AREA_WIDTH) + SizeUtilsKt.getDpToPx(50));
@@ -381,10 +381,10 @@ public final class SwipeHelper extends ChatListCallback {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void startRippleAnimation$lambda$7$lambda$6(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(recyclerView, "$recyclerView");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(recyclerView, "$recyclerView");
         Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_RIPPLE_SCALE);
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.curRippleRadius = ((Float) animatedValue).floatValue();
         recyclerView.invalidate();
     }
@@ -392,11 +392,11 @@ public final class SwipeHelper extends ChatListCallback {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void startRippleAnimation$lambda$9$lambda$8(SwipeHelper this$0, RecyclerView recyclerView, ValueAnimator valueAnimator) {
         int j;
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(recyclerView, "$recyclerView");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(recyclerView, "$recyclerView");
         Object animatedValue = valueAnimator.getAnimatedValue(ANIM_VALUE_RIPPLE_FADE);
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
-        j = C6884j.m23954j((int) (((Float) animatedValue).floatValue() * 255), 0, 255);
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        j = C6322j.m23954j((int) (((Float) animatedValue).floatValue() * 255), 0, 255);
         this$0.curRippleAlpha = j;
         recyclerView.invalidate();
     }
@@ -406,13 +406,13 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldPerformHapticFeedback) {
             View view2 = this.mView;
             if (view2 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() <= HAPTIC_TRIGGER_X) {
                 View view3 = this.mView;
                 if (view3 == null) {
-                    C9971q.m14615y("mView");
+                    C9677q.m14615y("mView");
                 } else {
                     view = view3;
                 }
@@ -426,7 +426,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldPerformHapticFeedback) {
             View view4 = this.mView;
             if (view4 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
             } else {
                 view = view4;
             }
@@ -441,7 +441,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (this.shouldTriggerReply) {
             View view2 = this.mView;
             if (view2 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
                 view2 = null;
             }
             if (view2.getTranslationX() > REPLY_RESET_X) {
@@ -452,7 +452,7 @@ public final class SwipeHelper extends ChatListCallback {
         if (!this.shouldTriggerReply) {
             View view3 = this.mView;
             if (view3 == null) {
-                C9971q.m14615y("mView");
+                C9677q.m14615y("mView");
             } else {
                 view = view3;
             }
@@ -462,9 +462,9 @@ public final class SwipeHelper extends ChatListCallback {
         }
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public long getAnimationDuration(RecyclerView recyclerView, int i, float f, float f2) {
-        C9971q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(recyclerView, "recyclerView");
         return ANIM_RETURN_DURATION;
     }
 
@@ -477,61 +477,61 @@ public final class SwipeHelper extends ChatListCallback {
         return new Pair<>(Float.valueOf(i - (((float) Math.atan(Math.abs(f - i) / 120.0f)) * 120.0f)), Float.valueOf(f2));
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         int i;
-        C9971q.m14633g(recyclerView, "recyclerView");
-        C9971q.m14633g(viewHolder, "viewHolder");
+        C9677q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(viewHolder, "viewHolder");
         View view = viewHolder.itemView;
-        C9971q.m14634f(view, "viewHolder.itemView");
+        C9677q.m14634f(view, "viewHolder.itemView");
         this.mView = view;
         View view2 = viewHolder.itemView;
         if (view2 instanceof SwipeReplyInitiator) {
-            C9971q.m14635e(view2, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
+            C9677q.m14635e(view2, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
             if (((SwipeReplyInitiator) view2).getEnableSwipeToReply()) {
                 i = 4;
-                return ItemTouchHelper.AbstractC3083c.makeMovementFlags(0, i);
+                return ItemTouchHelper.AbstractC1928c.makeMovementFlags(0, i);
             }
         }
         i = 0;
-        return ItemTouchHelper.AbstractC3083c.makeMovementFlags(0, i);
+        return ItemTouchHelper.AbstractC1928c.makeMovementFlags(0, i);
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float f, float f2, int i, boolean z) {
-        C9971q.m14633g(c, "c");
-        C9971q.m14633g(recyclerView, "recyclerView");
-        C9971q.m14633g(viewHolder, "viewHolder");
+        C9677q.m14633g(c, "c");
+        C9677q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(viewHolder, "viewHolder");
         super.onChildDraw(c, recyclerView, viewHolder, f, f2, i, z);
-        this.f36278dX = f;
+        this.f8484dX = f;
         this.currentItemViewHolder = viewHolder;
         drawContextArea(c);
         updateHapticFeedbackTrigger(recyclerView);
         updateReplyTrigger();
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-        C9971q.m14633g(recyclerView, "recyclerView");
-        C9971q.m14633g(viewHolder, "viewHolder");
-        C9971q.m14633g(target, "target");
+        C9677q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(viewHolder, "viewHolder");
+        C9677q.m14633g(target, "target");
         return false;
     }
 
     @Override // com.discord.chat.presentation.list.ChatListCallback
     public void onReleased(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-        C9971q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(recyclerView, "recyclerView");
         this.swipeBack = true;
         if (this.shouldTriggerReply && viewHolder != null) {
             View view = viewHolder.itemView;
             if (view instanceof SwipeReplyInitiator) {
-                C9971q.m14635e(view, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
+                C9677q.m14635e(view, "null cannot be cast to non-null type com.discord.chat.presentation.list.SwipeReplyInitiator");
                 ((SwipeReplyInitiator) view).getOnInitiateReply().invoke();
             }
         }
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int i) {
         boolean z;
         super.onSelectedChanged(viewHolder, i);
@@ -543,9 +543,9 @@ public final class SwipeHelper extends ChatListCallback {
         this.swipeBack = z;
     }
 
-    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC3083c
+    @Override // androidx.recyclerview.widget.ItemTouchHelper.AbstractC1928c
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int i) {
-        C9971q.m14633g(viewHolder, "viewHolder");
+        C9677q.m14633g(viewHolder, "viewHolder");
     }
 
     @Override // com.discord.chat.presentation.list.ChatListCallback

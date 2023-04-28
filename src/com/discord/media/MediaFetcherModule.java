@@ -13,10 +13,10 @@ import com.facebook.react.bridge.WritableNativeMap;
 import java.util.Comparator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
-import p303qf.C12120c;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
+import p304qf.C11965c;
 
 @Metadata(m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0018\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0012\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0006H\u0002¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/media/MediaFetcherModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "getPhotos", "", "params", "Lcom/facebook/react/bridge/ReadableMap;", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getQueryType", "Lcom/discord/media/utils/ContentResolverMedia$QueryType;", "filter", "media_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -24,7 +24,7 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MediaFetcherModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     private final ContentResolverMedia.QueryType getQueryType(String str) {
@@ -58,8 +58,8 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
         WritableNativeMap writableNativeMap;
         Object U;
         Object g0;
-        C9971q.m14633g(params, "params");
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(params, "params");
+        C9677q.m14633g(promise, "promise");
         int i = params.getInt("first");
         if (params.hasKey("offset")) {
             num = Integer.valueOf(params.getInt("offset"));
@@ -70,22 +70,22 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
         try {
             ContentResolverMedia.Companion companion = ContentResolverMedia.Companion;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
-            w0 = C9914r.m14742w0(companion.getMedia(reactApplicationContext, queryType, i, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
+            C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
+            w0 = C9618r.m14742w0(companion.getMedia(reactApplicationContext, queryType, i, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
                 @Override // java.util.Comparator
                 public final int compare(T t, T t2) {
                     int d;
-                    d = C12120c.m7778d(Integer.valueOf(((ContentResolverMedia) t2).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t).getDateAdded()));
+                    d = C11965c.m7778d(Integer.valueOf(((ContentResolverMedia) t2).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t).getDateAdded()));
                     return d;
                 }
             });
-            x0 = C9914r.m14741x0(w0, i);
+            x0 = C9618r.m14741x0(w0, i);
             if (x0.size() == i) {
-                U = C9914r.m14770U(x0);
-                g0 = C9914r.m14758g0(x0);
-                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("start_cursor", String.valueOf(((ContentResolverMedia) U).getUri())), C11098x.m10921a("end_cursor", String.valueOf(((ContentResolverMedia) g0).getUri())), C11098x.m10921a("has_next_page", Boolean.TRUE));
+                U = C9618r.m14770U(x0);
+                g0 = C9618r.m14758g0(x0);
+                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("start_cursor", String.valueOf(((ContentResolverMedia) U).getUri())), C10853x.m10921a("end_cursor", String.valueOf(((ContentResolverMedia) g0).getUri())), C10853x.m10921a("has_next_page", Boolean.TRUE));
             } else {
-                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("has_next_page", Boolean.FALSE));
+                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("has_next_page", Boolean.FALSE));
             }
             WritableNativeMap nativeMap = new GetPhotosData(x0).toNativeMap();
             nativeMap.putMap("page_info", writableNativeMap);

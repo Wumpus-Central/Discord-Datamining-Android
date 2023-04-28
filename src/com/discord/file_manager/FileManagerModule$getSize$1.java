@@ -7,20 +7,20 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
-import kotlin.coroutines.jvm.internal.C9928b;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
+import kotlin.coroutines.jvm.internal.C9633b;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import nf.C11090s;
-import nf.C11093t;
-import p426xf.C14082c;
-import tf.C13080d;
+import nf.C10845s;
+import nf.C10848t;
+import p427xf.C14001c;
+import tf.C12962d;
 
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.file_manager.FileManagerModule$getSize$1", m14701f = "FileManagerModule.kt", m14700l = {}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.file_manager.FileManagerModule$getSize$1", m14701f = "FileManagerModule.kt", m14700l = {}, m14699m = "invokeSuspend")
 /* loaded from: classes4.dex */
-final class FileManagerModule$getSize$1 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+final class FileManagerModule$getSize$1 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Promise $promise;
     final /* synthetic */ String $uri;
     private /* synthetic */ Object L$0;
@@ -36,7 +36,7 @@ final class FileManagerModule$getSize$1 extends AbstractC9938k implements Functi
         this.$promise = promise;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         FileManagerModule$getSize$1 fileManagerModule$getSize$1 = new FileManagerModule$getSize$1(this.this$0, this.$uri, this.$promise, continuation);
         fileManagerModule$getSize$1.L$0 = obj;
@@ -44,29 +44,29 @@ final class FileManagerModule$getSize$1 extends AbstractC9938k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Object invokeSuspend(Object obj) {
         Object obj2;
         ReactApplicationContext reactApplicationContext;
         long j;
         boolean z;
-        C13080d.m4646d();
+        C12962d.m4646d();
         if (this.label == 0) {
-            C11093t.m10930b(obj);
+            C10848t.m10930b(obj);
             CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
             FileManagerModule fileManagerModule = this.this$0;
             String str = this.$uri;
             Promise promise = this.$promise;
             try {
-                C11090s.C11091a aVar = C11090s.f24606l;
+                C10845s.C10846a aVar = C10845s.f28533l;
                 reactApplicationContext = fileManagerModule.getReactApplicationContext();
                 ParcelFileDescriptor openFileDescriptor = reactApplicationContext.getContentResolver().openFileDescriptor(Uri.parse(str), "r");
                 if (openFileDescriptor != null) {
                     j = openFileDescriptor.getStatSize();
-                    C14082c.m1713a(openFileDescriptor, null);
+                    C14001c.m1713a(openFileDescriptor, null);
                 } else {
                     j = 0;
                 }
@@ -76,18 +76,18 @@ final class FileManagerModule$getSize$1 extends AbstractC9938k implements Functi
                     z = false;
                 }
             } catch (Throwable th2) {
-                C11090s.C11091a aVar2 = C11090s.f24606l;
-                obj2 = C11090s.m10940b(C11093t.m10931a(th2));
+                C10845s.C10846a aVar2 = C10845s.f28533l;
+                obj2 = C10845s.m10940b(C10848t.m10931a(th2));
             }
             if (z) {
-                promise.resolve(C9928b.m14705b(j));
-                obj2 = C11090s.m10940b(Unit.f22042a);
+                promise.resolve(C9633b.m14705b(j));
+                obj2 = C10845s.m10940b(Unit.f25780a);
                 Promise promise2 = this.$promise;
-                Throwable e = C11090s.m10937e(obj2);
+                Throwable e = C10845s.m10937e(obj2);
                 if (e != null) {
                     promise2.reject(e);
                 }
-                return Unit.f22042a;
+                return Unit.f25780a;
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
         } else {

@@ -28,14 +28,14 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11084n;
-import nf.EnumC11087p;
-import p076e4.C6706f;
-import p208l4.C10338c;
+import nf.C10839n;
+import nf.EnumC10842p;
+import p076e4.C6139f;
+import p209l4.C10061c;
 
 @Metadata(m15074d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u000e\u0018\u00002\u00020\u0001:\u00018B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\"\u0010\u0011\u001a\u00020\u00122\b\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0016H\u0002J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0012H\u0002Jn\u0010\u001b\u001a\u00020\u00192\b\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u001c\u001a\u00020\u00162\u0006\u0010\u001d\u001a\u00020\u00142\u0006\u0010\u001e\u001a\u00020\u00142\u0010\u0010\u001f\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0014\u0018\u00010 2\u0006\u0010!\u001a\u00020\u00072\b\u0010\"\u001a\u0004\u0018\u00010\u00142\b\u0010#\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010$\u001a\u00020\u00142\u0006\u0010%\u001a\u00020&J\u001a\u0010'\u001a\u00020\u00192\u0010\u0010(\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0014\u0018\u00010 H\u0002J\u001c\u0010)\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+2\b\b\u0001\u0010,\u001a\u00020\u0007H\u0002J\u0012\u0010-\u001a\u00020\u00192\b\u0010.\u001a\u0004\u0018\u00010\u0014H\u0002J\u0010\u0010/\u001a\u00020\u00192\u0006\u00100\u001a\u00020\u0016H\u0016J \u00101\u001a\u00020\u00192\u0006\u00102\u001a\u00020\u00142\u0006\u00103\u001a\u00020\u00162\u0006\u00104\u001a\u00020\u0016H\u0002J\u0012\u00105\u001a\u00020\u00192\b\u0010\u001d\u001a\u0004\u0018\u00010+H\u0002J\u0012\u00106\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+H\u0002J\u0012\u00107\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u000b\u001a\u00020\f8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\r\u0010\u000e¨\u00069"}, m15073d2 = {"Lcom/discord/activity_invites/ActivityInviteEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/activity_invites/databinding/ActivityInviteEmbedViewBinding;", "grayscalePostprocessor", "Lcom/facebook/imagepipeline/request/Postprocessor;", "getGrayscalePostprocessor", "()Lcom/facebook/imagepipeline/request/Postprocessor;", "grayscalePostprocessor$delegate", "Lkotlin/Lazy;", "buildImageConfig", "Lcom/discord/activity_invites/ActivityInviteEmbedView$ImageConfig;", "imageUri", "", "listening", "", "joinable", "configureImage", "", "imageConfig", "setActivityInviteEmbed", "isListening", "headerText", "partyStatus", "avatarsToRender", "", "maxPartySize", "name", "subtext", "ctaText", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "setAvatars", "avatars", "setBottomEndLabel", "text", "", ViewProps.COLOR, "setButtonText", "buttonText", "setEnabled", ViewProps.ENABLED, "setEndImage", "uri", "fullSize", "grayscale", "setHeaderText", "setHeroText", "setSubtext", "ImageConfig", "activity_invites_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes.dex */
@@ -57,7 +57,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public End(String uri, boolean z, boolean z2) {
                 super(null);
-                C9971q.m14633g(uri, "uri");
+                C9677q.m14633g(uri, "uri");
                 this.uri = uri;
                 this.fullSize = z;
                 this.grayscale = z2;
@@ -89,7 +89,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
 
             public final End copy(String uri, boolean z, boolean z2) {
-                C9971q.m14633g(uri, "uri");
+                C9677q.m14633g(uri, "uri");
                 return new End(uri, z, z2);
             }
 
@@ -101,7 +101,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
                     return false;
                 }
                 End end = (End) obj;
-                return C9971q.m14638b(this.uri, end.uri) && this.fullSize == end.fullSize && this.grayscale == end.grayscale;
+                return C9677q.m14638b(this.uri, end.uri) && this.fullSize == end.fullSize && this.grayscale == end.grayscale;
             }
 
             public final boolean getFullSize() {
@@ -160,7 +160,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Start(String uri) {
                 super(null);
-                C9971q.m14633g(uri, "uri");
+                C9677q.m14633g(uri, "uri");
                 this.uri = uri;
             }
 
@@ -176,7 +176,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
 
             public final Start copy(String uri) {
-                C9971q.m14633g(uri, "uri");
+                C9677q.m14633g(uri, "uri");
                 return new Start(uri);
             }
 
@@ -184,7 +184,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof Start) && C9971q.m14638b(this.uri, ((Start) obj).uri);
+                return (obj instanceof Start) && C9677q.m14638b(this.uri, ((Start) obj).uri);
             }
 
             public final String getUri() {
@@ -212,13 +212,13 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ActivityInviteEmbedView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ActivityInviteEmbedView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ActivityInviteEmbedView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -248,28 +248,28 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         int i;
         if (imageConfig instanceof ImageConfig.None) {
             View view = this.binding.bgGradient;
-            C9971q.m14634f(view, "binding.bgGradient");
+            C9677q.m14634f(view, "binding.bgGradient");
             view.setVisibility(8);
             SimpleDraweeView simpleDraweeView = this.binding.endImage;
-            C9971q.m14634f(simpleDraweeView, "binding.endImage");
+            C9677q.m14634f(simpleDraweeView, "binding.endImage");
             simpleDraweeView.setVisibility(8);
             SimpleDraweeView simpleDraweeView2 = this.binding.startImage;
-            C9971q.m14634f(simpleDraweeView2, "binding.startImage");
+            C9677q.m14634f(simpleDraweeView2, "binding.startImage");
             simpleDraweeView2.setVisibility(8);
         } else if (imageConfig instanceof ImageConfig.Start) {
             View view2 = this.binding.bgGradient;
-            C9971q.m14634f(view2, "binding.bgGradient");
+            C9677q.m14634f(view2, "binding.bgGradient");
             view2.setVisibility(8);
             SimpleDraweeView simpleDraweeView3 = this.binding.startImage;
-            C9971q.m14634f(simpleDraweeView3, "binding.startImage");
+            C9677q.m14634f(simpleDraweeView3, "binding.startImage");
             simpleDraweeView3.setVisibility(0);
             SimpleDraweeView simpleDraweeView4 = this.binding.endImage;
-            C9971q.m14634f(simpleDraweeView4, "binding.endImage");
+            C9677q.m14634f(simpleDraweeView4, "binding.endImage");
             simpleDraweeView4.setVisibility(8);
             this.binding.startImage.setImageURI(((ImageConfig.Start) imageConfig).getUri());
         } else if (imageConfig instanceof ImageConfig.End) {
             View view3 = this.binding.bgGradient;
-            C9971q.m14634f(view3, "binding.bgGradient");
+            C9677q.m14634f(view3, "binding.bgGradient");
             ImageConfig.End end = (ImageConfig.End) imageConfig;
             if (end.getFullSize()) {
                 i = 0;
@@ -278,10 +278,10 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
             view3.setVisibility(i);
             SimpleDraweeView simpleDraweeView5 = this.binding.startImage;
-            C9971q.m14634f(simpleDraweeView5, "binding.startImage");
+            C9677q.m14634f(simpleDraweeView5, "binding.startImage");
             simpleDraweeView5.setVisibility(8);
             SimpleDraweeView simpleDraweeView6 = this.binding.endImage;
-            C9971q.m14634f(simpleDraweeView6, "binding.endImage");
+            C9677q.m14634f(simpleDraweeView6, "binding.endImage");
             simpleDraweeView6.setVisibility(0);
             setEndImage(end.getUri(), end.getFullSize(), end.getGrayscale());
         }
@@ -295,10 +295,10 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         int i;
         int t;
         if (list == null) {
-            list = C9906j.m14820i();
+            list = C9610j.m14820i();
         }
         OverlappingCirclesView overlappingCirclesView = this.binding.avatars;
-        C9971q.m14634f(overlappingCirclesView, "binding.avatars");
+        C9677q.m14634f(overlappingCirclesView, "binding.avatars");
         if (!list.isEmpty()) {
             i = 0;
         } else {
@@ -306,7 +306,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         }
         overlappingCirclesView.setVisibility(i);
         OverlappingCirclesView overlappingCirclesView2 = this.binding.avatars;
-        t = C9907k.m14809t(list, 10);
+        t = C9611k.m14809t(list, 10);
         ArrayList arrayList = new ArrayList(t);
         for (String str : list) {
             arrayList.add(new OverlappingItem(str));
@@ -316,7 +316,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
 
     private final void setBottomEndLabel(CharSequence charSequence, int i) {
         TextView textView = this.binding.bottomEndLabel;
-        C9971q.m14634f(textView, "binding.bottomEndLabel");
+        C9677q.m14634f(textView, "binding.bottomEndLabel");
         ViewUtilsKt.setOptionalText(textView, charSequence);
         this.binding.bottomEndLabel.setTextColor(i);
     }
@@ -328,7 +328,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     private final void setEndImage(String str, boolean z, boolean z2) {
         if (z) {
             SimpleDraweeView simpleDraweeView = this.binding.endImage;
-            C9971q.m14634f(simpleDraweeView, "binding.endImage");
+            C9677q.m14634f(simpleDraweeView, "binding.endImage");
             ViewGroup.LayoutParams layoutParams = simpleDraweeView.getLayoutParams();
             if (layoutParams != null) {
                 ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
@@ -343,7 +343,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             }
         } else {
             SimpleDraweeView simpleDraweeView2 = this.binding.endImage;
-            C9971q.m14634f(simpleDraweeView2, "binding.endImage");
+            C9677q.m14634f(simpleDraweeView2, "binding.endImage");
             ViewGroup.LayoutParams layoutParams3 = simpleDraweeView2.getLayoutParams();
             if (layoutParams3 != null) {
                 ConstraintLayout.LayoutParams layoutParams4 = (ConstraintLayout.LayoutParams) layoutParams3;
@@ -357,28 +357,28 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
                 throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
             }
         }
-        ImageRequestBuilder s = ImageRequestBuilder.m30874s(C6706f.m24595o(str));
+        ImageRequestBuilder s = ImageRequestBuilder.m30874s(C6139f.m24595o(str));
         if (z2) {
             s.m30902A(getGrayscalePostprocessor());
         }
-        this.binding.endImage.setController(C10338c.m13583g().m31933D(s.m30892a()).build());
+        this.binding.endImage.setController(C10061c.m13583g().m31933D(s.m30892a()).build());
     }
 
     private final void setHeaderText(CharSequence charSequence) {
         TextView textView = this.binding.header;
-        C9971q.m14634f(textView, "binding.header");
+        C9677q.m14634f(textView, "binding.header");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     private final void setHeroText(CharSequence charSequence) {
         TextView textView = this.binding.heroText;
-        C9971q.m14634f(textView, "binding.heroText");
+        C9677q.m14634f(textView, "binding.heroText");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     private final void setSubtext(CharSequence charSequence) {
         TextView textView = this.binding.subtext;
-        C9971q.m14634f(textView, "binding.subtext");
+        C9677q.m14634f(textView, "binding.subtext");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
@@ -393,13 +393,13 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         /*
             r0 = this;
             java.lang.String r6 = "headerText"
-            kotlin.jvm.internal.C9971q.m14633g(r3, r6)
+            kotlin.jvm.internal.C9677q.m14633g(r3, r6)
             java.lang.String r6 = "partyStatus"
-            kotlin.jvm.internal.C9971q.m14633g(r4, r6)
+            kotlin.jvm.internal.C9677q.m14633g(r4, r6)
             java.lang.String r6 = "ctaText"
-            kotlin.jvm.internal.C9971q.m14633g(r10, r6)
+            kotlin.jvm.internal.C9677q.m14633g(r10, r6)
             java.lang.String r6 = "onButtonClickListener"
-            kotlin.jvm.internal.C9971q.m14633g(r11, r6)
+            kotlin.jvm.internal.C9677q.m14633g(r11, r6)
             r0.setHeaderText(r3)
             r0.setButtonText(r10)
             r0.setAvatars(r5)
@@ -412,7 +412,7 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
             com.discord.activity_invites.databinding.ActivityInviteEmbedViewBinding r2 = r0.binding
             android.widget.TextView r2 = r2.bottomEndLabel
             java.lang.String r3 = "binding.bottomEndLabel"
-            kotlin.jvm.internal.C9971q.m14634f(r2, r3)
+            kotlin.jvm.internal.C9677q.m14634f(r2, r3)
             r3 = 8
             r2.setVisibility(r3)
             com.discord.activity_invites.databinding.ActivityInviteEmbedViewBinding r2 = r0.binding
@@ -472,37 +472,37 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     public ActivityInviteEmbedView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         Lazy b;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ActivityInviteEmbedViewBinding inflate = ActivityInviteEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
-        b = C11084n.m10944b(EnumC11087p.NONE, ActivityInviteEmbedView$grayscalePostprocessor$2.INSTANCE);
+        b = C10839n.m10944b(EnumC10842p.NONE, ActivityInviteEmbedView$grayscalePostprocessor$2.INSTANCE);
         this.grayscalePostprocessor$delegate = b;
         setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         ViewClippingUtilsKt.clipToRoundedRectangle(this, SizeUtilsKt.getDpToPx(8));
         SimpleDraweeView simpleDraweeView = inflate.startImage;
-        C9971q.m14634f(simpleDraweeView, "binding.startImage");
+        C9677q.m14634f(simpleDraweeView, "binding.startImage");
         ViewClippingUtilsKt.clipToRoundedRectangle(simpleDraweeView, SizeUtilsKt.getDpToPx(8));
         TextView _init_$lambda$0 = inflate.header;
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(_init_$lambda$0, "_init_$lambda$0");
+        C9677q.m14634f(_init_$lambda$0, "_init_$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryBold);
         TextView _init_$lambda$1 = inflate.bottomEndLabel;
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        C9971q.m14634f(_init_$lambda$1, "_init_$lambda$1");
+        C9677q.m14634f(_init_$lambda$1, "_init_$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 16.0f);
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         TextView _init_$lambda$2 = inflate.heroText;
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        C9971q.m14634f(_init_$lambda$2, "_init_$lambda$2");
+        C9677q.m14634f(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         TextView _init_$lambda$3 = inflate.subtext;
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(_init_$lambda$3, "_init_$lambda$3");
+        C9677q.m14634f(_init_$lambda$3, "_init_$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, DiscordFont.PrimaryMedium);
-        inflate.button.setBackgroundColor(ColorUtilsKt.getColorCompat(this, C4199R.color.green_360));
+        inflate.button.setBackgroundColor(ColorUtilsKt.getColorCompat(this, C3089R.color.green_360));
         inflate.bgGradient.setBackgroundTintList(ColorStateList.valueOf(ThemeManagerKt.getTheme().getBackgroundSecondary()));
     }
 }

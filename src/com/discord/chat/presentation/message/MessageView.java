@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.bridge.MediaType;
 import com.discord.chat.bridge.Message;
 import com.discord.chat.bridge.MessageKt;
@@ -45,14 +45,14 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9914r;
+import kotlin.collections.C9618r;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11088q;
-import p163j$.util.Spliterator;
+import nf.C10843q;
+import p164j$.util.Spliterator;
 
 @Metadata(m15074d1 = {"\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0001TB\u001d\b\u0007\u0012\u0006\u0010O\u001a\u00020N\u0012\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010P¢\u0006\u0004\bR\u0010SJ\u0010\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\u001c\u0010\u000e\u001a\u00020\u0007*\u00020\t2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0002J]\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u001120\u0010\u0019\u001a,\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015\u0012\u0006\u0012\u0004\u0018\u00010\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0017\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0013j\u0004\u0018\u0001`\u0018H\u0002ø\u0001\u0000J \u0010\u001f\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0016\u0010!\u001a\u00020\u00072\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aH\u0002J\u0018\u0010#\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J \u0010%\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0010\u0010(\u001a\u00020\u00052\u0006\u0010'\u001a\u00020&H\u0016J\u0010\u0010*\u001a\u00020\u00072\u0006\u0010)\u001a\u00020\u0005H\u0016Jf\u00102\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\b\u0002\u0010\r\u001a\u00020\f2\n\b\u0002\u0010,\u001a\u0004\u0018\u00010+2\u000e\b\u0002\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-2\b\b\u0002\u0010/\u001a\u00020\u00052\b\b\u0002\u00100\u001a\u00020\u00052\b\b\u0002\u00101\u001a\u00020\u0005J\u000e\u00105\u001a\u00020\u00072\u0006\u00104\u001a\u000203J\u000f\u00106\u001a\u00020\u0016H\u0016¢\u0006\u0004\b6\u00107R\u0014\u00109\u001a\u0002088\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010:R\u001c\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u0010;R\u0016\u0010/\u001a\u00020\u00058\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b/\u0010<R(\u0010=\u001a\b\u0012\u0004\u0012\u00020\u00070-8\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\b=\u0010;\u001a\u0004\b>\u0010?\"\u0004\b@\u0010AR\"\u0010B\u001a\u00020\u00058\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\bB\u0010<\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR&\u0010I\u001a\u0012\u0012\u0004\u0012\u00020\u001b0Gj\b\u0012\u0004\u0012\u00020\u001b`H8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bI\u0010JR\u0014\u0010M\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bK\u0010L\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006U"}, m15073d2 = {"Lcom/discord/chat/presentation/message/MessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "Lcom/discord/chat/presentation/list/SwipeReplyInitiator;", "", "showDivider", "", "configureDivider", "Landroid/view/View;", "Lcom/discord/chat/bridge/Message;", "message", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "configureAuthorClickListeners", "Lcom/discord/chat/presentation/root/MessageContext;", "messageContext", "Lcom/discord/chat/bridge/messageframe/MessageFrame;", "messageFrame", "Lkotlin/Function4;", "Lcom/discord/primitives/MessageId;", "Lcom/discord/primitives/ChannelId;", "", "Lcom/discord/chat/bridge/MediaType;", "Lcom/discord/chat/presentation/events/MessageLongPress;", "onLongClick", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "generateMessageAccessories", "Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "chainPart", "configureAuthor", "items", "configureAccessoriesMargin", "isCommunicationDisabled", "configureCommunicationDisabled", "isSuppressNotifications", "configureSuppressNotifications", "Landroid/view/MotionEvent;", "ev", "onInterceptTouchEvent", "pressed", "setPressed", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentProvider", "Lkotlin/Function0;", "onChainPart", "allowChildGestures", "isHighlight", "renderContentOnly", "setMessage", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "recycledViewPool", "setAccessoriesRecycledViewPool", "spacingPxOverride", "()Ljava/lang/Integer;", "Lcom/discord/chat/databinding/MessageViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageViewBinding;", "Lkotlin/jvm/functions/Function0;", "Z", "onInitiateReply", "getOnInitiateReply", "()Lkotlin/jvm/functions/Function0;", "setOnInitiateReply", "(Lkotlin/jvm/functions/Function0;)V", "enableSwipeToReply", "getEnableSwipeToReply", "()Z", "setEnableSwipeToReply", "(Z)V", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "accessories", "Ljava/util/ArrayList;", "getSpineOriginView", "()Landroid/view/View;", "spineOriginView", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "ChainPart", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -114,7 +114,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ MessageView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -126,7 +126,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         boolean z;
         boolean z2;
         int i;
-        W = C9914r.m14768W(list);
+        W = C9618r.m14768W(list);
         boolean z3 = W instanceof MessageContentAccessory;
         int i2 = 0;
         boolean z4 = true;
@@ -153,7 +153,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             i2 = SizeUtilsKt.getDpToPx(4);
         }
         ViewGroup.LayoutParams layoutParams = this.binding.accessoriesView.getLayoutParams();
-        C9971q.m14635e(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        C9677q.m14635e(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
         int i3 = marginLayoutParams.topMargin;
         int i4 = marginLayoutParams.bottomMargin;
@@ -169,17 +169,17 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             TextView configureAuthor$lambda$25 = this.binding.authorName;
             configureAuthor$lambda$25.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
             configureAuthor$lambda$25.setText(message.getUsername());
-            C9971q.m14634f(configureAuthor$lambda$25, "configureAuthor$lambda$25");
+            C9677q.m14634f(configureAuthor$lambda$25, "configureAuthor$lambda$25");
             configureAuthorClickListeners(configureAuthor$lambda$25, message, chatEventHandler);
             View view = this.binding.roleDot;
-            C9971q.m14634f(view, "binding.roleDot");
+            C9677q.m14634f(view, "binding.roleDot");
             configureAuthorClickListeners(view, message, chatEventHandler);
             this.binding.timestamp.setText(message.getTimestamp());
             SimpleDraweeView configureAuthor$lambda$28 = this.binding.authorAvatar;
             Context context = configureAuthor$lambda$28.getContext();
-            C9971q.m14634f(context, "context");
+            C9677q.m14634f(context, "context");
             configureAuthor$lambda$28.setImageURI(MessageKt.avatarUrl(message, context));
-            C9971q.m14634f(configureAuthor$lambda$28, "configureAuthor$lambda$28");
+            C9677q.m14634f(configureAuthor$lambda$28, "configureAuthor$lambda$28");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.m
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
@@ -196,106 +196,106 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             }, 1, null);
             if (message.getAvatarDecorationURL() != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.authorAvatarDecoration;
-                C9971q.m14634f(simpleDraweeView, "binding.authorAvatarDecoration");
+                C9677q.m14634f(simpleDraweeView, "binding.authorAvatarDecoration");
                 simpleDraweeView.setVisibility(0);
                 this.binding.authorAvatarDecoration.setImageURI(message.getAvatarDecorationURL());
             } else {
                 SimpleDraweeView simpleDraweeView2 = this.binding.authorAvatarDecoration;
-                C9971q.m14634f(simpleDraweeView2, "binding.authorAvatarDecoration");
+                C9677q.m14634f(simpleDraweeView2, "binding.authorAvatarDecoration");
                 simpleDraweeView2.setVisibility(8);
             }
             TextView textView = this.binding.timestamp;
-            C9971q.m14634f(textView, "binding.timestamp");
+            C9677q.m14634f(textView, "binding.timestamp");
             textView.setVisibility(0);
             TextView textView2 = this.binding.authorName;
-            C9971q.m14634f(textView2, "binding.authorName");
+            C9677q.m14634f(textView2, "binding.authorName");
             textView2.setVisibility(0);
             SimpleDraweeView simpleDraweeView3 = this.binding.authorAvatar;
-            C9971q.m14634f(simpleDraweeView3, "binding.authorAvatar");
+            C9677q.m14634f(simpleDraweeView3, "binding.authorAvatar");
             simpleDraweeView3.setVisibility(0);
             if (message.getShouldShowRoleDot()) {
                 RoleDotView roleDotView = this.binding.roleDot;
-                C9971q.m14634f(roleDotView, "binding.roleDot");
+                C9677q.m14634f(roleDotView, "binding.roleDot");
                 roleDotView.setVisibility(0);
                 RoleDotView roleDotView2 = this.binding.roleDot;
-                C9971q.m14634f(roleDotView2, "binding.roleDot");
+                C9677q.m14634f(roleDotView2, "binding.roleDot");
                 RoleDotView.configure$default(roleDotView2, MessageKt.roleDotColor$default(message, 0, 1, null), 0, 2, null);
             } else {
                 RoleDotView roleDotView3 = this.binding.roleDot;
-                C9971q.m14634f(roleDotView3, "binding.roleDot");
+                C9677q.m14634f(roleDotView3, "binding.roleDot");
                 roleDotView3.setVisibility(8);
             }
             if (message.getRoleIcon() != null) {
                 this.binding.roleIcon.configureRoleIcon(message.getRoleIcon(), chatEventHandler);
                 RoleIconView roleIconView = this.binding.roleIcon;
-                C9971q.m14634f(roleIconView, "binding.roleIcon");
+                C9677q.m14634f(roleIconView, "binding.roleIcon");
                 roleIconView.setVisibility(0);
             } else {
                 RoleIconView roleIconView2 = this.binding.roleIcon;
-                C9971q.m14634f(roleIconView2, "binding.roleIcon");
+                C9677q.m14634f(roleIconView2, "binding.roleIcon");
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
                 this.binding.connectionsRoleTag.m41745configureConnectionsRoleTaguESh2Cg(message.m41576getAuthorIdwUX8bhU(), message.m41578getGuildIdqOKuAAo(), ChannelId.m42089boximpl(message.m41577getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
-                C9971q.m14634f(connectionsRoleTagView, "binding.connectionsRoleTag");
+                C9677q.m14634f(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
                 i = 8;
             } else {
                 ConnectionsRoleTagView connectionsRoleTagView2 = this.binding.connectionsRoleTag;
-                C9971q.m14634f(connectionsRoleTagView2, "binding.connectionsRoleTag");
+                C9677q.m14634f(connectionsRoleTagView2, "binding.connectionsRoleTag");
                 i = 8;
                 connectionsRoleTagView2.setVisibility(8);
             }
             if (message.getTagText() == null && message.getOpTagText() == null) {
                 MessageTagView messageTagView = this.binding.messageTagView;
-                C9971q.m14634f(messageTagView, "binding.messageTagView");
+                C9677q.m14634f(messageTagView, "binding.messageTagView");
                 messageTagView.setVisibility(i);
                 return;
             }
             MessageTagView messageTagView2 = this.binding.messageTagView;
-            C9971q.m14634f(messageTagView2, "binding.messageTagView");
+            C9677q.m14634f(messageTagView2, "binding.messageTagView");
             messageTagView2.setVisibility(0);
             this.binding.messageTagView.configureTagView(message.getTagText(), message.getTagVerified(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler);
             return;
         }
         TextView textView3 = this.binding.timestamp;
-        C9971q.m14634f(textView3, "binding.timestamp");
+        C9677q.m14634f(textView3, "binding.timestamp");
         textView3.setVisibility(8);
         TextView textView4 = this.binding.authorName;
-        C9971q.m14634f(textView4, "binding.authorName");
+        C9677q.m14634f(textView4, "binding.authorName");
         textView4.setVisibility(8);
         SimpleDraweeView simpleDraweeView4 = this.binding.authorAvatar;
-        C9971q.m14634f(simpleDraweeView4, "binding.authorAvatar");
+        C9677q.m14634f(simpleDraweeView4, "binding.authorAvatar");
         simpleDraweeView4.setVisibility(8);
         SimpleDraweeView simpleDraweeView5 = this.binding.authorAvatarDecoration;
-        C9971q.m14634f(simpleDraweeView5, "binding.authorAvatarDecoration");
+        C9677q.m14634f(simpleDraweeView5, "binding.authorAvatarDecoration");
         simpleDraweeView5.setVisibility(8);
         RoleDotView roleDotView4 = this.binding.roleDot;
-        C9971q.m14634f(roleDotView4, "binding.roleDot");
+        C9677q.m14634f(roleDotView4, "binding.roleDot");
         roleDotView4.setVisibility(8);
         RoleIconView roleIconView3 = this.binding.roleIcon;
-        C9971q.m14634f(roleIconView3, "binding.roleIcon");
+        C9677q.m14634f(roleIconView3, "binding.roleIcon");
         roleIconView3.setVisibility(8);
         ConnectionsRoleTagView connectionsRoleTagView3 = this.binding.connectionsRoleTag;
-        C9971q.m14634f(connectionsRoleTagView3, "binding.connectionsRoleTag");
+        C9677q.m14634f(connectionsRoleTagView3, "binding.connectionsRoleTag");
         connectionsRoleTagView3.setVisibility(8);
         MessageTagView messageTagView3 = this.binding.messageTagView;
-        C9971q.m14634f(messageTagView3, "binding.messageTagView");
+        C9677q.m14634f(messageTagView3, "binding.messageTagView");
         messageTagView3.setVisibility(8);
     }
 
     public static final void configureAuthor$lambda$28$lambda$26(Message message, ChatEventHandler eventHandler, View view) {
-        C9971q.m14633g(message, "$message");
-        C9971q.m14633g(eventHandler, "$eventHandler");
+        C9677q.m14633g(message, "$message");
+        C9677q.m14633g(eventHandler, "$eventHandler");
         if (message.m41576getAuthorIdwUX8bhU() != null) {
             eventHandler.mo41713onTapAvatarx5gers8(message.m41579getId3Eiw7ao(), message.m41576getAuthorIdwUX8bhU().m42162unboximpl());
         }
     }
 
     public static final boolean configureAuthor$lambda$28$lambda$27(Message message, ChatEventHandler eventHandler, View view) {
-        C9971q.m14633g(message, "$message");
-        C9971q.m14633g(eventHandler, "$eventHandler");
+        C9677q.m14633g(message, "$message");
+        C9677q.m14633g(eventHandler, "$eventHandler");
         if (message.m41576getAuthorIdwUX8bhU() == null) {
             return true;
         }
@@ -321,16 +321,16 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void configureAuthorClickListeners$lambda$4(Message message, ChatEventHandler eventHandler, View view) {
-        C9971q.m14633g(message, "$message");
-        C9971q.m14633g(eventHandler, "$eventHandler");
+        C9677q.m14633g(message, "$message");
+        C9677q.m14633g(eventHandler, "$eventHandler");
         if (message.m41576getAuthorIdwUX8bhU() != null) {
             eventHandler.mo41730onTapUsernamex5gers8(message.m41579getId3Eiw7ao(), message.m41576getAuthorIdwUX8bhU().m42162unboximpl());
         }
     }
 
     public static final boolean configureAuthorClickListeners$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
-        C9971q.m14633g(message, "$message");
-        C9971q.m14633g(eventHandler, "$eventHandler");
+        C9677q.m14633g(message, "$message");
+        C9677q.m14633g(eventHandler, "$eventHandler");
         if (message.m41576getAuthorIdwUX8bhU() == null) {
             return true;
         }
@@ -350,13 +350,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             z2 = true;
         }
         SimpleDraweeView simpleDraweeView = this.binding.guildCommunicationDisabledIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.guildCommunicationDisabledIcon");
         if (!z2) {
             i = 8;
         }
         simpleDraweeView.setVisibility(i);
         SimpleDraweeView simpleDraweeView2 = this.binding.guildCommunicationDisabledIcon;
-        C9971q.m14634f(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
+        C9677q.m14634f(simpleDraweeView2, "binding.guildCommunicationDisabledIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.ClockTimeout);
         SimpleDraweeView simpleDraweeView3 = this.binding.authorAvatar;
         float f4 = 0.5f;
@@ -390,7 +390,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     private final void configureDivider(boolean z) {
         int i;
         View view = this.binding.messageHeaderDivider;
-        C9971q.m14634f(view, "binding.messageHeaderDivider");
+        C9677q.m14634f(view, "binding.messageHeaderDivider");
         if (z) {
             i = 0;
         } else {
@@ -408,7 +408,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             z2 = true;
         }
         SimpleDraweeView simpleDraweeView = this.binding.suppressNotificationsIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.suppressNotificationsIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.suppressNotificationsIcon");
         if (z2) {
             i = 0;
         } else {
@@ -417,14 +417,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         simpleDraweeView.setVisibility(i);
         if (z2) {
             SimpleDraweeView simpleDraweeView2 = this.binding.suppressNotificationsIcon;
-            C9971q.m14634f(simpleDraweeView2, "binding.suppressNotificationsIcon");
+            C9677q.m14634f(simpleDraweeView2, "binding.suppressNotificationsIcon");
             ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, ReactAsset.BellSnooze);
             SimpleDraweeView simpleDraweeView3 = this.binding.suppressNotificationsIcon;
-            C9971q.m14634f(simpleDraweeView3, "binding.suppressNotificationsIcon");
+            C9677q.m14634f(simpleDraweeView3, "binding.suppressNotificationsIcon");
             ColorUtilsKt.setTintColor(simpleDraweeView3, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         }
         SimpleDraweeView simpleDraweeView4 = this.binding.suppressNotificationsIcon;
-        C9971q.m14634f(simpleDraweeView4, "binding.suppressNotificationsIcon");
+        C9677q.m14634f(simpleDraweeView4, "binding.suppressNotificationsIcon");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.l
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -434,7 +434,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void configureSuppressNotifications$lambda$29(ChatEventHandler eventHandler, View view) {
-        C9971q.m14633g(eventHandler, "$eventHandler");
+        C9677q.m14633g(eventHandler, "$eventHandler");
         eventHandler.onTapSuppressNotificationsIcon();
     }
 
@@ -469,8 +469,8 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
 
     /* renamed from: generateMessageAccessories$getLongClickListener$lambda$7$lambda$6 */
     public static final boolean m32291xca729c2f(Function4 function4, Message message, int i, MediaType mediaType, View view) {
-        C9971q.m14633g(message, "$message");
-        C9971q.m14633g(mediaType, "$mediaType");
+        C9677q.m14633g(message, "$message");
+        C9677q.m14633g(mediaType, "$mediaType");
         function4.invoke(MessageId.m42115boximpl(message.m41579getId3Eiw7ao()), ChannelId.m42089boximpl(message.m41577getChannelIdo4g7jtM()), Integer.valueOf(i), mediaType);
         return true;
     }
@@ -522,14 +522,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
-        C9971q.m14633g(onMessageTapped, "$onMessageTapped");
-        C9971q.m14633g(message, "$message");
+        C9677q.m14633g(onMessageTapped, "$onMessageTapped");
+        C9677q.m14633g(message, "$message");
         onMessageTapped.invoke(MessageId.m42115boximpl(message.m41579getId3Eiw7ao()), ChannelId.m42089boximpl(message.m41577getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
-        C9971q.m14633g(it, "$it");
-        C9971q.m14633g(message, "$message");
+        C9677q.m14633g(it, "$it");
+        C9677q.m14633g(message, "$message");
         it.invoke(MessageId.m42115boximpl(message.m41579getId3Eiw7ao()), ChannelId.m42089boximpl(message.m41577getChannelIdo4g7jtM()), null, null);
         return true;
     }
@@ -547,18 +547,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     @Override // com.discord.chat.presentation.spine.SpineParentMessage
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
-        C9971q.m14634f(simpleDraweeView, "binding.authorAvatar");
+        C9677q.m14634f(simpleDraweeView, "binding.authorAvatar");
         return simpleDraweeView;
     }
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        C9971q.m14633g(ev, "ev");
+        C9677q.m14633g(ev, "ev");
         return !this.allowChildGestures;
     }
 
     public final void setAccessoriesRecycledViewPool(RecyclerView.RecycledViewPool recycledViewPool) {
-        C9971q.m14633g(recycledViewPool, "recycledViewPool");
+        C9677q.m14633g(recycledViewPool, "recycledViewPool");
         this.binding.accessoriesView.setRecycledViewPool(recycledViewPool);
     }
 
@@ -568,28 +568,28 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     public final void setMessage(final Message message, MessageContext messageContext, MessageFrame messageFrame, ChatEventHandler eventHandler, ComponentProvider componentProvider, Function0<? extends ChainPart> onChainPart, boolean z, boolean z2, boolean z3) {
-        C9971q.m14633g(message, "message");
-        C9971q.m14633g(messageContext, "messageContext");
-        C9971q.m14633g(eventHandler, "eventHandler");
-        C9971q.m14633g(onChainPart, "onChainPart");
+        C9677q.m14633g(message, "message");
+        C9677q.m14633g(messageContext, "messageContext");
+        C9677q.m14633g(eventHandler, "eventHandler");
+        C9677q.m14633g(onChainPart, "onChainPart");
         this.onChainPart = onChainPart;
         setOnInitiateReply(new MessageView$setMessage$2(eventHandler, message));
         setEnableSwipeToReply(messageContext.getEnableSwipeToReply());
         this.allowChildGestures = z;
         ChainPart chainPart = (ChainPart) onChainPart.invoke();
         if (z3) {
-            this.binding.accessoriesView.updateLeftMargin(getResources().getDimensionPixelSize(C4254R.dimen.message_horizontal_spacing));
+            this.binding.accessoriesView.updateLeftMargin(getResources().getDimensionPixelSize(C3147R.dimen.message_horizontal_spacing));
         } else {
-            this.binding.accessoriesView.updateLeftMargin(getResources().getDimensionPixelSize(C4254R.dimen.message_start_guideline));
+            this.binding.accessoriesView.updateLeftMargin(getResources().getDimensionPixelSize(C3147R.dimen.message_start_guideline));
         }
         int i = 8;
         if (messageFrame == null || (messageFrame instanceof UnknownMessageFrame)) {
             MessageFrameHeaderView messageFrameHeaderView = this.binding.messageFrameHeader;
-            C9971q.m14634f(messageFrameHeaderView, "binding.messageFrameHeader");
+            C9677q.m14634f(messageFrameHeaderView, "binding.messageFrameHeader");
             messageFrameHeaderView.setVisibility(8);
         } else {
             MessageFrameHeaderView messageFrameHeaderView2 = this.binding.messageFrameHeader;
-            C9971q.m14634f(messageFrameHeaderView2, "binding.messageFrameHeader");
+            C9677q.m14634f(messageFrameHeaderView2, "binding.messageFrameHeader");
             messageFrameHeaderView2.setVisibility(0);
             this.binding.messageFrameHeader.configure(messageFrame);
         }
@@ -597,14 +597,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         configureDivider(messageContext.getShowDivider());
         this.binding.threadStarterHeader.configure(message.getThreadStarterMessageHeader(), message.getReferencedMessage() != null);
         MessageHighlightHeader messageHighlightHeader = this.binding.highlightHeader;
-        C9971q.m14634f(messageHighlightHeader, "binding.highlightHeader");
+        C9677q.m14634f(messageHighlightHeader, "binding.highlightHeader");
         if (z2) {
             i = 0;
         }
         messageHighlightHeader.setVisibility(i);
         if (message.getReferencedMessage() != null) {
             MessageViewReplyPreview messageViewReplyPreview = this.binding.replyPreview;
-            C9971q.m14634f(messageViewReplyPreview, "binding.replyPreview");
+            C9677q.m14634f(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
             this.binding.replyPreview.m41761configureExecutedCommandLdU2QRA(message.m41579getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
@@ -635,14 +635,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
         this.binding.accessoriesView.m41760setAccessoriesRC8ZMxU(message.m41579getId3Eiw7ao(), message.m41577getChannelIdo4g7jtM(), message.m41578getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
-        configureCommunicationDisabled(C9971q.m14638b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
+        configureCommunicationDisabled(C9677q.m14638b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
         this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, jVar, onLongClickListener));
     }
 
     @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
     public void setOnInitiateReply(Function0<Unit> function0) {
-        C9971q.m14633g(function0, "<set-?>");
+        C9677q.m14633g(function0, "<set-?>");
         this.onInitiateReply = function0;
     }
 
@@ -660,7 +660,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         } else if (i2 == 3 || i2 == 4) {
             i = 0;
         } else {
-            throw new C11088q();
+            throw new C10843q();
         }
         return Integer.valueOf(i);
     }
@@ -668,29 +668,29 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         MessageViewBinding inflate = MessageViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         setPadding(0, SizeUtilsKt.getDpToPx(2), 0, SizeUtilsKt.getDpToPx(2));
         RippleUtilsKt.addRipple$default(this, false, 0, 3, null);
         TextView textView = inflate.timestamp;
-        C9971q.m14634f(textView, "binding.timestamp");
+        C9677q.m14634f(textView, "binding.timestamp");
         DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimaryMedium);
         inflate.timestamp.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         TextView textView2 = inflate.timestamp;
-        C9971q.m14634f(textView2, "binding.timestamp");
+        C9677q.m14634f(textView2, "binding.timestamp");
         SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f, 15.0f);
         TextView textView3 = inflate.authorName;
-        C9971q.m14634f(textView3, "binding.authorName");
+        C9677q.m14634f(textView3, "binding.authorName");
         DiscordFontUtilsKt.setDiscordFont(textView3, DiscordFont.PrimarySemibold);
         TextView textView4 = inflate.authorName;
-        C9971q.m14634f(textView4, "binding.authorName");
+        C9677q.m14634f(textView4, "binding.authorName");
         SetTextSizeSpKt.setTextSizeSp(textView4, 16.0f, 20.0f);
         SimpleDraweeView simpleDraweeView = inflate.authorAvatar;
-        C9971q.m14634f(simpleDraweeView, "binding.authorAvatar");
+        C9677q.m14634f(simpleDraweeView, "binding.authorAvatar");
         ViewClippingUtilsKt.clipToCircle(simpleDraweeView);
-        inflate.messageHeaderDivider.setBackgroundColor(ColorUtilsKt.getThemeColor(context, C4254R.color.message_divider_light, C4254R.color.message_divider_dark));
+        inflate.messageHeaderDivider.setBackgroundColor(ColorUtilsKt.getThemeColor(context, C3147R.color.message_divider_light, C3147R.color.message_divider_dark));
         this.onChainPart = MessageView$onChainPart$1.INSTANCE;
         this.allowChildGestures = true;
         this.onInitiateReply = MessageView$onInitiateReply$1.INSTANCE;

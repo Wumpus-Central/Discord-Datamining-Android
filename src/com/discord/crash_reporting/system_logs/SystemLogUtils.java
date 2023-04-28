@@ -14,20 +14,20 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9899f;
-import kotlin.collections.C9921w;
+import kotlin.collections.C9603f;
+import kotlin.collections.C9625w;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.sequences.Sequence;
 import kotlin.text.MatchResult;
 import kotlin.text.Regex;
-import p306qi.C12200o;
-import p323rf.C12581a;
-import p326ri.C12694d;
-import p326ri.C12714q;
-import p326ri.C12718u;
-import p326ri.C12719v;
-import p326ri.EnumC12705j;
+import p307qi.C12051o;
+import p324rf.C12444a;
+import p327ri.C12563d;
+import p327ri.C12583q;
+import p327ri.C12587u;
+import p327ri.C12588v;
+import p327ri.EnumC12574j;
 
 @Metadata(m15074d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\bÀ\u0002\u0018\u00002\u00020\u0001:\u0001)B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0014J,\u0010\u0012\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\f2\u0018\u0010\u0017\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0019\u0012\u0004\u0012\u00020\u00150\u0018H\u0002J\u001c\u0010\u001a\u001a\u00020\u00152\u0014\u0010\u0017\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u001b\u0012\u0004\u0012\u00020\u00150\u0018J\u0018\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u00040\u001dH\u0002J\u0010\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020\u0004H\u0002J\u0010\u0010 \u001a\u00020\u00152\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J-\u0010!\u001a\u00020\u00152\u0006\u0010\"\u001a\u00020#2\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00040\u00192\b\u0010\u0016\u001a\u0004\u0018\u00010\fH\u0000¢\u0006\u0002\b%J\u0010\u0010&\u001a\u00020\u00152\u0006\u0010'\u001a\u00020(H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0080T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082T¢\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u00020\fX\u0080\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\r\u0010\u0002\u001a\u0004\b\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006*"}, m15073d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils;", "", "()V", "DEFAULT_TAG", "", "LIBDISCORD_VERSION_CATEGORY", "debugPrintables", "Lcom/discord/crash_reporting/system_logs/DebugPrintableCollection;", "logcatPath", "maxLogSize", "", "regexExtractTombstone", "Lkotlin/text/Regex;", "getRegexExtractTombstone$crash_reporting_release$annotations", "getRegexExtractTombstone$crash_reporting_release", "()Lkotlin/text/Regex;", "systemLogCapture", "Lcom/discord/crash_reporting/system_logs/SystemLogCapture;", "fetch", "context", "Landroid/content/Context;", "", "filter", "cb", "Lkotlin/Function1;", "Ljava/util/LinkedList;", "fetchLastTombstone", "Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "crashes", "", "hashString", "input", "initSystemLogCapture", "processLogs", "reader", "Ljava/io/BufferedReader;", "output", "processLogs$crash_reporting_release", "waitFor", "process", "Ljava/lang/Process;", "Tombstone", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -39,7 +39,7 @@ public final class SystemLogUtils {
     private static final DebugPrintableCollection debugPrintables = new DebugPrintableCollection();
     private static final SystemLogCapture systemLogCapture = new SystemLogCapture();
     private static final String LIBDISCORD_VERSION_CATEGORY = "libdiscord_version";
-    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f22112l.m14577c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
+    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f25850l.m14577c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
 
     @Metadata(m15074d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003¢\u0006\u0002\u0010\tJ\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003JG\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u001cHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000bR\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000bR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000bR\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000b¨\u0006\u001e"}, m15073d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "", "text", "", "cause", "groupBy", "origin", "groupHash", "textHash", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCause", "()Ljava/lang/String;", "getGroupBy", "getGroupHash", "getOrigin", "getText", "getTextHash", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "", "toString", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* loaded from: classes4.dex */
@@ -52,11 +52,11 @@ public final class SystemLogUtils {
         private final String textHash;
 
         public Tombstone(String text, String str, String groupBy, String origin, String groupHash, String textHash) {
-            C9971q.m14633g(text, "text");
-            C9971q.m14633g(groupBy, "groupBy");
-            C9971q.m14633g(origin, "origin");
-            C9971q.m14633g(groupHash, "groupHash");
-            C9971q.m14633g(textHash, "textHash");
+            C9677q.m14633g(text, "text");
+            C9677q.m14633g(groupBy, "groupBy");
+            C9677q.m14633g(origin, "origin");
+            C9677q.m14633g(groupHash, "groupHash");
+            C9677q.m14633g(textHash, "textHash");
             this.text = text;
             this.cause = str;
             this.groupBy = groupBy;
@@ -112,11 +112,11 @@ public final class SystemLogUtils {
         }
 
         public final Tombstone copy(String text, String str, String groupBy, String origin, String groupHash, String textHash) {
-            C9971q.m14633g(text, "text");
-            C9971q.m14633g(groupBy, "groupBy");
-            C9971q.m14633g(origin, "origin");
-            C9971q.m14633g(groupHash, "groupHash");
-            C9971q.m14633g(textHash, "textHash");
+            C9677q.m14633g(text, "text");
+            C9677q.m14633g(groupBy, "groupBy");
+            C9677q.m14633g(origin, "origin");
+            C9677q.m14633g(groupHash, "groupHash");
+            C9677q.m14633g(textHash, "textHash");
             return new Tombstone(text, str, groupBy, origin, groupHash, textHash);
         }
 
@@ -128,7 +128,7 @@ public final class SystemLogUtils {
                 return false;
             }
             Tombstone tombstone = (Tombstone) obj;
-            return C9971q.m14638b(this.text, tombstone.text) && C9971q.m14638b(this.cause, tombstone.cause) && C9971q.m14638b(this.groupBy, tombstone.groupBy) && C9971q.m14638b(this.origin, tombstone.origin) && C9971q.m14638b(this.groupHash, tombstone.groupHash) && C9971q.m14638b(this.textHash, tombstone.textHash);
+            return C9677q.m14638b(this.text, tombstone.text) && C9677q.m14638b(this.cause, tombstone.cause) && C9677q.m14638b(this.groupBy, tombstone.groupBy) && C9677q.m14638b(this.origin, tombstone.origin) && C9677q.m14638b(this.groupHash, tombstone.groupHash) && C9677q.m14638b(this.textHash, tombstone.textHash);
         }
 
         public final String getCause() {
@@ -181,11 +181,11 @@ public final class SystemLogUtils {
     private final String hashString(String str) {
         String Z;
         MessageDigest instance = MessageDigest.getInstance("SHA-1");
-        byte[] bytes = str.getBytes(C12694d.f28536b);
-        C9971q.m14634f(bytes, "this as java.lang.String).getBytes(charset)");
+        byte[] bytes = str.getBytes(C12563d.f32852b);
+        C9677q.m14634f(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] bytes2 = instance.digest(bytes);
-        C9971q.m14634f(bytes2, "bytes");
-        Z = C9899f.m14937Z(bytes2, "", null, null, 0, null, SystemLogUtils$hashString$1.INSTANCE, 30, null);
+        C9677q.m14634f(bytes2, "bytes");
+        Z = C9603f.m14937Z(bytes2, "", null, null, 0, null, SystemLogUtils$hashString$1.INSTANCE, 30, null);
         return Z;
     }
 
@@ -205,17 +205,17 @@ public final class SystemLogUtils {
     }
 
     public final String fetch(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         StringBuilder sb2 = new StringBuilder();
         debugPrintables.debugPrint(context, sb2);
         systemLogCapture.appendOutput(sb2);
         String sb3 = sb2.toString();
-        C9971q.m14634f(sb3, "sb.toString()");
+        C9677q.m14634f(sb3, "sb.toString()");
         return sb3;
     }
 
     public final void fetchLastTombstone(Function1<? super Tombstone, Unit> cb) {
-        C9971q.m14633g(cb, "cb");
+        C9677q.m14633g(cb, "cb");
         fetch(regexExtractTombstone, new SystemLogUtils$fetchLastTombstone$1(cb));
     }
 
@@ -225,7 +225,7 @@ public final class SystemLogUtils {
 
     @SuppressLint({"LogNotTimber"})
     public final void initSystemLogCapture(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         String libdiscordVersion = DebugPrintableCollection.Companion.libdiscordVersion(context);
         Log.v("Discord", "[" + LIBDISCORD_VERSION_CATEGORY + "]: " + libdiscordVersion);
         systemLogCapture.startThread();
@@ -242,9 +242,9 @@ public final class SystemLogUtils {
         /*
             r9 = this;
             java.lang.String r0 = "reader"
-            kotlin.jvm.internal.C9971q.m14633g(r10, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r10, r0)
             java.lang.String r0 = "output"
-            kotlin.jvm.internal.C9971q.m14633g(r11, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r11, r0)
             r0 = 0
             r1 = r0
         L_0x000c:
@@ -287,10 +287,10 @@ public final class SystemLogUtils {
             r10.<init>(r0)     // Catch: Exception -> 0x0079
             throw r10     // Catch: Exception -> 0x0079
         L_0x0053:
-            boolean r7 = p326ri.C12707l.m5767w(r3)     // Catch: Exception -> 0x0079
+            boolean r7 = p327ri.C12576l.m5767w(r3)     // Catch: Exception -> 0x0079
             if (r7 != 0) goto L_0x000c
             java.lang.String r7 = "Accessing hidden method"
-            boolean r4 = p326ri.C12707l.m5807M(r3, r7, r0, r5, r4)     // Catch: Exception -> 0x0079
+            boolean r4 = p327ri.C12576l.m5807M(r3, r7, r0, r5, r4)     // Catch: Exception -> 0x0079
             if (r4 != 0) goto L_0x000c
             int r4 = r3.length()     // Catch: Exception -> 0x0079
             int r4 = r4 + r6
@@ -343,44 +343,44 @@ public final class SystemLogUtils {
         String str3 = null;
         String str4 = null;
         for (String str5 : collection) {
-            M = C12719v.m5709M(str5, LIBDISCORD_VERSION_CATEGORY, false, 2, null);
+            M = C12588v.m5709M(str5, LIBDISCORD_VERSION_CATEGORY, false, 2, null);
             if (M) {
                 str3 = str5;
             } else {
-                M2 = C12719v.m5709M(str5, "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***", false, 2, null);
+                M2 = C12588v.m5709M(str5, "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***", false, 2, null);
                 if (M2) {
-                    C12714q.m5751i(sb2);
+                    C12583q.m5751i(sb2);
                     str4 = str3;
                 }
                 sb2.append(str5);
-                C9971q.m14634f(sb2, "append(value)");
+                C9677q.m14634f(sb2, "append(value)");
                 sb2.append('\n');
-                C9971q.m14634f(sb2, "append('\\n')");
+                C9677q.m14634f(sb2, "append('\\n')");
             }
         }
-        w = C12718u.m5729w(sb2);
+        w = C12587u.m5729w(sb2);
         if (!w) {
             sb2.append('\n');
-            C9971q.m14634f(sb2, "append('\\n')");
+            C9677q.m14634f(sb2, "append('\\n')");
             sb2.append("Tombstone's libdiscord_version: ");
             if (str4 == null) {
                 str4 = "Unknown libdiscord_version";
             }
             sb2.append(str4);
-            C9971q.m14634f(sb2, "append(value)");
+            C9677q.m14634f(sb2, "append(value)");
             sb2.append('\n');
-            C9971q.m14634f(sb2, "append('\\n')");
+            C9677q.m14634f(sb2, "append('\\n')");
         }
         String sb3 = sb2.toString();
-        C9971q.m14634f(sb3, "StringBuilder().also { s…   }\n        }.toString()");
-        w2 = C12718u.m5729w(sb3);
+        C9677q.m14634f(sb3, "StringBuilder().also { s…   }\n        }.toString()");
+        w2 = C12587u.m5729w(sb3);
         if (w2) {
             return null;
         }
-        EnumC12705j jVar = EnumC12705j.MULTILINE;
+        EnumC12574j jVar = EnumC12574j.MULTILINE;
         Regex regex = new Regex("^Cause: (.+)$", jVar);
-        y = C12200o.m7420y(Regex.m14585e(new Regex("^\\s+#\\d+ pc .+/(.+? .+?)\\+?[+)]", jVar), sb3, 0, 2, null), new SystemLogUtils$fetchLastTombstone$extractedGroups$1(new Regex("classes\\d+.dex")));
-        e = C9921w.m14721e("libc.so (abort", "libart.so (art::Runtime::Abort(char const*", "libbase.so (android::base::LogMessage::~LogMessage(");
+        y = C12051o.m7420y(Regex.m14585e(new Regex("^\\s+#\\d+ pc .+/(.+? .+?)\\+?[+)]", jVar), sb3, 0, 2, null), new SystemLogUtils$fetchLastTombstone$extractedGroups$1(new Regex("classes\\d+.dex")));
+        e = C9625w.m14721e("libc.so (abort", "libart.so (art::Runtime::Abort(char const*", "libbase.so (android::base::LogMessage::~LogMessage(");
         try {
         } catch (NoSuchElementException unused) {
             str = "Unknown";
@@ -388,7 +388,7 @@ public final class SystemLogUtils {
         for (Object obj : y) {
             if (!e.contains((String) obj)) {
                 str = (String) obj;
-                w3 = C12200o.m7422w(y, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null);
+                w3 = C12051o.m7422w(y, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, null, 62, null);
                 MatchResult c = Regex.m14587c(regex, sb3, 0, 2, null);
                 if (!(c == null || (b = c.mo5841b()) == null)) {
                     str2 = b.get(1);
@@ -409,6 +409,6 @@ public final class SystemLogUtils {
             function1.invoke(linkedList);
             return;
         }
-        C12581a.m6476b(false, false, null, null, 0, new SystemLogUtils$fetch$1(linkedList, regex, z, function1), 31, null);
+        C12444a.m6476b(false, false, null, null, 0, new SystemLogUtils$fetch$1(linkedList, regex, z, function1), 31, null);
     }
 }

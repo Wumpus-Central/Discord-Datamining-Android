@@ -6,9 +6,9 @@ import com.discord.image.fresco.config.FrescoMemoryTrimmer;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.modules.fresco.FrescoModule;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p208l4.C10338c;
+import p209l4.C10061c;
 
 @Metadata(m15074d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u0000 \n2\u00020\u0001:\u0001\nB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016J\b\u0010\t\u001a\u00020\bH\u0002¨\u0006\u000b"}, m15073d2 = {"Lcom/discord/image/fresco/FrescoModuleDiscord;", "Lcom/facebook/react/modules/fresco/FrescoModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "canOverrideExistingModule", "", "initialize", "", "initializeSkinny", "Companion", "fresco_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -38,10 +38,10 @@ public final class FrescoModuleDiscord extends FrescoModule {
         }
 
         public final synchronized void initializeFresco(Context context) {
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             if (!isFrescoInitialized()) {
                 FrescoModuleDiscord.isFrescoExternallyInitialized = true;
-                C10338c.m13587c(context, FrescoConfigKt.frescoConfig(context));
+                C10061c.m13587c(context, FrescoConfigKt.frescoConfig(context));
                 FrescoMemoryTrimmer.INSTANCE.initialize(context);
             }
         }
@@ -50,7 +50,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FrescoModuleDiscord(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     private final void initializeSkinny() {
@@ -66,7 +66,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
     public void initialize() {
         Companion companion = Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         companion.initializeFresco(reactApplicationContext);
         initializeSkinny();
     }

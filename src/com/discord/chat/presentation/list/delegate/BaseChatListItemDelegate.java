@@ -11,8 +11,8 @@ import java.util.List;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @kotlin.Metadata(m15074d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\b&\u0018\u0000*\b\b\u0000\u0010\u0002*\u00020\u0001*\b\b\u0001\u0010\u0004*\u00020\u00032\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00010\u00060\u0005:\u0001+B/\u0012\u0010\u0010!\u001a\f\u0012\u0004\u0012\u00020\u001f0\u001ej\u0002` \u0012\u0014\b\u0002\u0010$\u001a\u000e\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00020\u00130#¢\u0006\u0004\b)\u0010*J\u0018\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0007\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\bH&J\u0017\u0010\u000e\u001a\u00028\u00012\u0006\u0010\r\u001a\u00020\fH&¢\u0006\u0004\b\u000e\u0010\u000fJ-\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00028\u00012\u0006\u0010\u0007\u001a\u00028\u00002\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00028\u00010\u0011H&¢\u0006\u0004\b\u0014\u0010\u0015J\u001e\u0010\u0017\u001a\u00020\n2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\u0006\u0010\t\u001a\u00020\bH\u0004J\u0010\u0010\u0019\u001a\u00020\u00182\u0006\u0010\r\u001a\u00020\fH\u0004J4\u0010\u001d\u001a\u00020\u00132\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\u0006\u0010\t\u001a\u00020\b2\u0006\u0010\u001a\u001a\u00020\u00182\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001b0\u0006H\u0004R\u001e\u0010!\u001a\f\u0012\u0004\u0012\u00020\u001f0\u001ej\u0002` 8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u0010\"R \u0010$\u001a\u000e\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00020\u00130#8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010%R\u0014\u0010(\u001a\u00020\u001f8DX\u0084\u0004¢\u0006\u0006\u001a\u0004\b&\u0010'¨\u0006,"}, m15073d2 = {"Lcom/discord/chat/presentation/list/delegate/BaseChatListItemDelegate;", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "T", "Landroid/view/View;", "V", "Lcom/hannesdorfmann/adapterdelegates4/AdapterDelegate;", "", "item", "", ViewProps.POSITION, "", "isForItem", "Landroid/view/ViewGroup;", "parent", "createView", "(Landroid/view/ViewGroup;)Landroid/view/View;", "view", "Lcom/discord/chat/presentation/list/delegate/BaseChatListItemDelegate$Metadata;", "metadata", "", "bindView", "(Landroid/view/View;Lcom/discord/chat/presentation/list/item/ChatListItem;Lcom/discord/chat/presentation/list/delegate/BaseChatListItemDelegate$Metadata;)V", "items", "isForViewType", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "onCreateViewHolder", "holder", "", "payloads", "onBindViewHolder", "Lkotlin/Function0;", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "Lcom/discord/chat/presentation/list/delegate/EventHandlerProvider;", "eventHandlerProvider", "Lkotlin/jvm/functions/Function0;", "Lkotlin/Function1;", "initBlock", "Lkotlin/jvm/functions/Function1;", "getEventHandler", "()Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "<init>", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "Metadata", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
@@ -24,23 +24,23 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
     @kotlin.Metadata(m15074d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\b\b\u0001\u0010\u0004*\u00020\u0005*\u0002H\u0004H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, m15073d2 = {"<anonymous>", "", "T", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "V", "Landroid/view/View;", "invoke", "(Landroid/view/View;)V"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate$1 */
     /* loaded from: classes4.dex */
-    static final class AnonymousClass1 extends AbstractC9973s implements Function1<V, Unit> {
-        public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
+    static final class C31921 extends AbstractC9679s implements Function1<V, Unit> {
+        public static final C31921 INSTANCE = new C31921();
 
-        AnonymousClass1() {
+        C31921() {
             super(1);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Object obj) {
-            invoke((AnonymousClass1) ((View) obj));
-            return Unit.f22042a;
+            invoke((C31921) ((View) obj));
+            return Unit.f25780a;
         }
 
         public final void invoke(V v) {
-            C9971q.m14633g(v, "$this$null");
-            v.setLayoutParams(new RecyclerView.C3109i(-1, -2));
+            C9677q.m14633g(v, "$this$null");
+            v.setLayoutParams(new RecyclerView.C1954i(-1, -2));
         }
     }
 
@@ -53,9 +53,9 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
 
         /* JADX WARN: Multi-variable type inference failed */
         public Metadata(ChatListItemViewHolder<V> holder, List<? extends ChatListItem> items, List<? extends Object> payloads) {
-            C9971q.m14633g(holder, "holder");
-            C9971q.m14633g(items, "items");
-            C9971q.m14633g(payloads, "payloads");
+            C9677q.m14633g(holder, "holder");
+            C9677q.m14633g(items, "items");
+            C9677q.m14633g(payloads, "payloads");
             this.holder = holder;
             this.items = items;
             this.payloads = payloads;
@@ -88,9 +88,9 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
         }
 
         public final Metadata<V> copy(ChatListItemViewHolder<V> holder, List<? extends ChatListItem> items, List<? extends Object> payloads) {
-            C9971q.m14633g(holder, "holder");
-            C9971q.m14633g(items, "items");
-            C9971q.m14633g(payloads, "payloads");
+            C9677q.m14633g(holder, "holder");
+            C9677q.m14633g(items, "items");
+            C9677q.m14633g(payloads, "payloads");
             return new Metadata<>(holder, items, payloads);
         }
 
@@ -102,7 +102,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
                 return false;
             }
             Metadata metadata = (Metadata) obj;
-            return C9971q.m14638b(this.holder, metadata.holder) && C9971q.m14638b(this.items, metadata.items) && C9971q.m14638b(this.payloads, metadata.payloads);
+            return C9677q.m14638b(this.holder, metadata.holder) && C9677q.m14638b(this.items, metadata.items) && C9677q.m14638b(this.payloads, metadata.payloads);
         }
 
         public final ChatListItemViewHolder<V> getHolder() {
@@ -130,7 +130,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
     }
 
     public /* synthetic */ BaseChatListItemDelegate(Function0 function0, Function1 function1, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(function0, (i & 2) != 0 ? AnonymousClass1.INSTANCE : function1);
+        this(function0, (i & 2) != 0 ? C31921.INSTANCE : function1);
     }
 
     public abstract void bindView(V v, T t, Metadata<V> metadata);
@@ -152,7 +152,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.hannesdorfmann.adapterdelegates4.AdapterDelegate
     public final RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {
-        C9971q.m14633g(parent, "parent");
+        C9677q.m14633g(parent, "parent");
         V createView = createView(parent);
         this.initBlock.invoke(createView);
         return new ChatListItemViewHolder(createView);
@@ -160,27 +160,27 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean isForViewType(List<? extends ChatListItem> items, int i) {
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         return isForItem((ChatListItem) items.get(i), i);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: onBindViewHolder  reason: avoid collision after fix types in other method */
     protected final void onBindViewHolder2(List<? extends ChatListItem> items, int i, RecyclerView.ViewHolder holder, List<? extends Object> payloads) {
-        C9971q.m14633g(items, "items");
-        C9971q.m14633g(holder, "holder");
-        C9971q.m14633g(payloads, "payloads");
+        C9677q.m14633g(items, "items");
+        C9677q.m14633g(holder, "holder");
+        C9677q.m14633g(payloads, "payloads");
         ChatListItemViewHolder chatListItemViewHolder = (ChatListItemViewHolder) holder;
         Object obj = items.get(i);
-        C9971q.m14635e(obj, "null cannot be cast to non-null type T of com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate");
+        C9677q.m14635e(obj, "null cannot be cast to non-null type T of com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate");
         Metadata metadata = new Metadata(chatListItemViewHolder, items, payloads);
         bindView(chatListItemViewHolder.getView(), (ChatListItem) obj, metadata);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public BaseChatListItemDelegate(Function0<? extends ChatEventHandler> eventHandlerProvider, Function1<? super V, Unit> initBlock) {
-        C9971q.m14633g(eventHandlerProvider, "eventHandlerProvider");
-        C9971q.m14633g(initBlock, "initBlock");
+        C9677q.m14633g(eventHandlerProvider, "eventHandlerProvider");
+        C9677q.m14633g(initBlock, "initBlock");
         this.eventHandlerProvider = eventHandlerProvider;
         this.initBlock = initBlock;
     }

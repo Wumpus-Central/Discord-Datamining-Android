@@ -7,24 +7,24 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
-import co.discord.media_engine.C4081a;
+import co.discord.media_engine.C2968a;
 import com.reactnativecommunity.webview.RNCWebViewManager;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9905i;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9907k;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9609i;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9611k;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.ranges.IntRange;
-import nf.C11088q;
+import nf.C10843q;
 import org.webrtc.MediaStreamTrack;
-import p267of.AbstractC11283p;
-import p426xf.C14082c;
+import p268of.AbstractC11047p;
+import p427xf.C14001c;
 
 @Metadata(m15074d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\t\b\u0080\b\u0018\u0000 /2\u00020\u0001:\u0005./012BQ\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\f¢\u0006\u0002\u0010\u0010J\t\u0010\u001f\u001a\u00020\u0003HÆ\u0003J\t\u0010 \u001a\u00020\u0005HÆ\u0003J\t\u0010!\u001a\u00020\u0007HÆ\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\tHÆ\u0003J\t\u0010$\u001a\u00020\fHÆ\u0003J\t\u0010%\u001a\u00020\fHÆ\u0003J\t\u0010&\u001a\u00020\fHÆ\u0003J\t\u0010'\u001a\u00020\fHÆ\u0003Jg\u0010(\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\fHÆ\u0001J\u0013\u0010)\u001a\u00020*2\b\u0010+\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010,\u001a\u00020\fHÖ\u0001J\t\u0010-\u001a\u00020\tHÖ\u0001R\u0011\u0010\r\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0012R\u0011\u0010\u000f\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0013\u0010\n\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u000e\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0012¨\u00063"}, m15073d2 = {"Lcom/discord/media/utils/ContentResolverMedia;", "", "id", "", "uri", "Landroid/net/Uri;", "mediaType", "Lcom/discord/media/utils/ContentResolverMedia$MediaType;", "mimeType", "", "name", "duration", "", "dateAdded", "width", "height", "(JLandroid/net/Uri;Lcom/discord/media/utils/ContentResolverMedia$MediaType;Ljava/lang/String;Ljava/lang/String;IIII)V", "getDateAdded", "()I", "getDuration", "getHeight", "getId", "()J", "getMediaType", "()Lcom/discord/media/utils/ContentResolverMedia$MediaType;", "getMimeType", "()Ljava/lang/String;", "getName", "getUri", "()Landroid/net/Uri;", "getWidth", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "hashCode", "toString", "Column", "Companion", "MediaType", "QueryColumns", "QueryType", "media_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -35,7 +35,7 @@ public final class ContentResolverMedia {
     private final int height;
 
     /* renamed from: id */
-    private final long f7482id;
+    private final long f8960id;
     private final MediaType mediaType;
     private final String mimeType;
     private final String name;
@@ -49,7 +49,7 @@ public final class ContentResolverMedia {
         private final String field;
 
         public Column(String field) {
-            C9971q.m14633g(field, "field");
+            C9677q.m14633g(field, "field");
             this.field = field;
         }
 
@@ -59,7 +59,7 @@ public final class ContentResolverMedia {
             }
             Number number = this.columnIndex;
             if (number == null) {
-                C9971q.m14615y("columnIndex");
+                C9677q.m14615y("columnIndex");
                 number = null;
             }
             return number.intValue();
@@ -70,17 +70,17 @@ public final class ContentResolverMedia {
         }
 
         public final int getInt(Cursor cursor) {
-            C9971q.m14633g(cursor, "cursor");
+            C9677q.m14633g(cursor, "cursor");
             return cursor.getInt(getColumnIndex(cursor));
         }
 
         public final long getLong(Cursor cursor) {
-            C9971q.m14633g(cursor, "cursor");
+            C9677q.m14633g(cursor, "cursor");
             return cursor.getLong(getColumnIndex(cursor));
         }
 
         public final String getString(Cursor cursor) {
-            C9971q.m14633g(cursor, "cursor");
+            C9677q.m14633g(cursor, "cursor");
             return cursor.getString(getColumnIndex(cursor));
         }
     }
@@ -119,7 +119,7 @@ public final class ContentResolverMedia {
             }
             ContentResolverUtils contentResolverUtils = ContentResolverUtils.INSTANCE;
             ContentResolver contentResolver = context.getContentResolver();
-            C9971q.m14634f(contentResolver, "context.contentResolver");
+            C9677q.m14634f(contentResolver, "context.contentResolver");
             String[] projection = queryColumns.getProjection();
             th = 0;
             if (isAtLeastQ()) {
@@ -130,12 +130,12 @@ public final class ContentResolverMedia {
             Cursor queryCompat = contentResolverUtils.queryCompat(contentResolver, uri, projection, i, "date_added DESC", str, num);
             if (queryCompat != null) {
                 try {
-                    q = C6884j.m23947q(0, queryCompat.getCount());
-                    t = C9907k.m14809t(q, 10);
+                    q = C6322j.m23947q(0, queryCompat.getCount());
+                    t = C9611k.m14809t(q, 10);
                     ArrayList arrayList = new ArrayList(t);
                     Iterator<Integer> it = q.iterator();
                     while (it.hasNext()) {
-                        queryCompat.moveToPosition(((AbstractC11283p) it).nextInt());
+                        queryCompat.moveToPosition(((AbstractC11047p) it).nextInt());
                         arrayList.add(queryColumns.getContentResolverMedia(uri, queryCompat));
                     }
                     return arrayList;
@@ -143,11 +143,11 @@ public final class ContentResolverMedia {
                     try {
                         throw th2;
                     } finally {
-                        C14082c.m1713a(queryCompat, th2);
+                        C14001c.m1713a(queryCompat, th2);
                     }
                 }
             } else {
-                i2 = C9906j.m14820i();
+                i2 = C9610j.m14820i();
                 return i2;
             }
         }
@@ -157,32 +157,32 @@ public final class ContentResolverMedia {
             List<? extends ContentResolverMedia> list2;
             List c;
             List<ContentResolverMedia> a;
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(queryType, "queryType");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(queryType, "queryType");
             ContentResolverMedia$Companion$getMedia$performQuery$1 contentResolverMedia$Companion$getMedia$performQuery$1 = new ContentResolverMedia$Companion$getMedia$performQuery$1(context, queryType, i, num);
             if (isAtLeastQ()) {
                 Uri contentUri = MediaStore.Files.getContentUri("external");
-                C9971q.m14634f(contentUri, "getContentUri(MediaStore.VOLUME_EXTERNAL)");
+                C9677q.m14634f(contentUri, "getContentUri(MediaStore.VOLUME_EXTERNAL)");
                 return (List) contentResolverMedia$Companion$getMedia$performQuery$1.invoke((ContentResolverMedia$Companion$getMedia$performQuery$1) contentUri);
             }
             if (queryType.shouldIncludeImages()) {
                 Uri EXTERNAL_CONTENT_URI = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-                C9971q.m14634f(EXTERNAL_CONTENT_URI, "EXTERNAL_CONTENT_URI");
+                C9677q.m14634f(EXTERNAL_CONTENT_URI, "EXTERNAL_CONTENT_URI");
                 list = contentResolverMedia$Companion$getMedia$performQuery$1.invoke((ContentResolverMedia$Companion$getMedia$performQuery$1) EXTERNAL_CONTENT_URI);
             } else {
-                list = C9906j.m14820i();
+                list = C9610j.m14820i();
             }
             if (queryType.shouldIncludeVideo()) {
                 Uri EXTERNAL_CONTENT_URI2 = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-                C9971q.m14634f(EXTERNAL_CONTENT_URI2, "EXTERNAL_CONTENT_URI");
+                C9677q.m14634f(EXTERNAL_CONTENT_URI2, "EXTERNAL_CONTENT_URI");
                 list2 = contentResolverMedia$Companion$getMedia$performQuery$1.invoke((ContentResolverMedia$Companion$getMedia$performQuery$1) EXTERNAL_CONTENT_URI2);
             } else {
-                list2 = C9906j.m14820i();
+                list2 = C9610j.m14820i();
             }
-            c = C9905i.m14826c();
+            c = C9609i.m14826c();
             c.addAll(list);
             c.addAll(list2);
-            a = C9905i.m14828a(c);
+            a = C9609i.m14828a(c);
             return a;
         }
     }
@@ -221,7 +221,7 @@ public final class ContentResolverMedia {
             if (i == 2) {
                 return "ALAssetTypeVideo";
             }
-            throw new C11088q();
+            throw new C10843q();
         }
     }
 
@@ -248,14 +248,14 @@ public final class ContentResolverMedia {
             /* JADX INFO: Access modifiers changed from: private */
             public final String getUnsupportedImageMimeTypes() {
                 String e0;
-                e0 = C9914r.m14760e0(QueryType.UNSUPPORTED_IMAGE_MIME_TYPES, ",", null, null, 0, null, C4553x69014d2f.INSTANCE, 30, null);
+                e0 = C9618r.m14760e0(QueryType.UNSUPPORTED_IMAGE_MIME_TYPES, ",", null, null, 0, null, C3493x69014d2f.INSTANCE, 30, null);
                 return e0;
             }
         }
 
         static {
             List<String> d;
-            d = C9905i.m14825d("image/x-adobe-dng");
+            d = C9609i.m14825d("image/x-adobe-dng");
             UNSUPPORTED_IMAGE_MIME_TYPES = d;
         }
 
@@ -272,8 +272,8 @@ public final class ContentResolverMedia {
             if (shouldIncludeVideo()) {
                 str2 = "media_type = 3";
             }
-            n = C9906j.m14815n(str, str2);
-            e0 = C9914r.m14760e0(n, " OR ", null, null, 0, null, null, 62, null);
+            n = C9610j.m14815n(str, str2);
+            e0 = C9618r.m14760e0(n, " OR ", null, null, 0, null, null, 62, null);
             return e0;
         }
 
@@ -287,9 +287,9 @@ public final class ContentResolverMedia {
     }
 
     public ContentResolverMedia(long j, Uri uri, MediaType mediaType, String str, String str2, int i, int i2, int i3, int i4) {
-        C9971q.m14633g(uri, "uri");
-        C9971q.m14633g(mediaType, "mediaType");
-        this.f7482id = j;
+        C9677q.m14633g(uri, "uri");
+        C9677q.m14633g(mediaType, "mediaType");
+        this.f8960id = j;
         this.uri = uri;
         this.mediaType = mediaType;
         this.mimeType = str;
@@ -301,7 +301,7 @@ public final class ContentResolverMedia {
     }
 
     public final long component1() {
-        return this.f7482id;
+        return this.f8960id;
     }
 
     public final Uri component2() {
@@ -337,8 +337,8 @@ public final class ContentResolverMedia {
     }
 
     public final ContentResolverMedia copy(long j, Uri uri, MediaType mediaType, String str, String str2, int i, int i2, int i3, int i4) {
-        C9971q.m14633g(uri, "uri");
-        C9971q.m14633g(mediaType, "mediaType");
+        C9677q.m14633g(uri, "uri");
+        C9677q.m14633g(mediaType, "mediaType");
         return new ContentResolverMedia(j, uri, mediaType, str, str2, i, i2, i3, i4);
     }
 
@@ -350,7 +350,7 @@ public final class ContentResolverMedia {
             return false;
         }
         ContentResolverMedia contentResolverMedia = (ContentResolverMedia) obj;
-        return this.f7482id == contentResolverMedia.f7482id && C9971q.m14638b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && C9971q.m14638b(this.mimeType, contentResolverMedia.mimeType) && C9971q.m14638b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
+        return this.f8960id == contentResolverMedia.f8960id && C9677q.m14638b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && C9677q.m14638b(this.mimeType, contentResolverMedia.mimeType) && C9677q.m14638b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
     }
 
     public final int getDateAdded() {
@@ -366,7 +366,7 @@ public final class ContentResolverMedia {
     }
 
     public final long getId() {
-        return this.f7482id;
+        return this.f8960id;
     }
 
     public final MediaType getMediaType() {
@@ -390,7 +390,7 @@ public final class ContentResolverMedia {
     }
 
     public int hashCode() {
-        int a = ((((C4081a.m32873a(this.f7482id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
+        int a = ((((C2968a.m32873a(this.f8960id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
         String str = this.mimeType;
         int i = 0;
         int hashCode = (a + (str == null ? 0 : str.hashCode())) * 31;
@@ -402,7 +402,7 @@ public final class ContentResolverMedia {
     }
 
     public String toString() {
-        long j = this.f7482id;
+        long j = this.f8960id;
         Uri uri = this.uri;
         MediaType mediaType = this.mediaType;
         String str = this.mimeType;
@@ -431,12 +431,12 @@ public final class ContentResolverMedia {
         }
 
         public QueryColumns(Column queryColumnId, Column queryColumnDisplayName, Column queryColumnMimeType, Column queryColumnWidth, Column queryColumnHeight, Column queryColumnDateAdded, Column column, Column column2) {
-            C9971q.m14633g(queryColumnId, "queryColumnId");
-            C9971q.m14633g(queryColumnDisplayName, "queryColumnDisplayName");
-            C9971q.m14633g(queryColumnMimeType, "queryColumnMimeType");
-            C9971q.m14633g(queryColumnWidth, "queryColumnWidth");
-            C9971q.m14633g(queryColumnHeight, "queryColumnHeight");
-            C9971q.m14633g(queryColumnDateAdded, "queryColumnDateAdded");
+            C9677q.m14633g(queryColumnId, "queryColumnId");
+            C9677q.m14633g(queryColumnDisplayName, "queryColumnDisplayName");
+            C9677q.m14633g(queryColumnMimeType, "queryColumnMimeType");
+            C9677q.m14633g(queryColumnWidth, "queryColumnWidth");
+            C9677q.m14633g(queryColumnHeight, "queryColumnHeight");
+            C9677q.m14633g(queryColumnDateAdded, "queryColumnDateAdded");
             this.queryColumnId = queryColumnId;
             this.queryColumnDisplayName = queryColumnDisplayName;
             this.queryColumnMimeType = queryColumnMimeType;
@@ -451,8 +451,8 @@ public final class ContentResolverMedia {
             boolean z;
             MediaType mediaType;
             boolean z2;
-            C9971q.m14633g(queryUri, "queryUri");
-            C9971q.m14633g(cursor, "cursor");
+            C9677q.m14633g(queryUri, "queryUri");
+            C9677q.m14633g(cursor, "cursor");
             Column column = this.queryMediaType;
             boolean z3 = true;
             int i = 0;
@@ -474,7 +474,7 @@ public final class ContentResolverMedia {
             }
             long j = this.queryColumnId.getLong(cursor);
             Uri withAppendedId = ContentUris.withAppendedId(queryUri, this.queryColumnId.getLong(cursor));
-            C9971q.m14634f(withAppendedId, "withAppendedId(queryUri,…ColumnId.getLong(cursor))");
+            C9677q.m14634f(withAppendedId, "withAppendedId(queryUri,…ColumnId.getLong(cursor))");
             if (z3) {
                 mediaType = MediaType.VIDEO;
             } else {
@@ -512,7 +512,7 @@ public final class ContentResolverMedia {
                 str2 = column2.getField();
             }
             strArr[7] = str2;
-            n = C9906j.m14815n(strArr);
+            n = C9610j.m14815n(strArr);
             return (String[]) n.toArray(new String[0]);
         }
 

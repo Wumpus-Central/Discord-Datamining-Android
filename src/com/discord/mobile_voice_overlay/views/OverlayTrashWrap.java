@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.ScaleAnimation;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayAssets;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
 import com.discord.mobile_voice_overlay.databinding.TrashWrapBinding;
@@ -25,7 +25,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004B\u0019\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007B!\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\b\u0010\u0018\u001a\u00020\u0017H\u0016J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\b\u0010\u001d\u001a\u00020\u001aH\u0002J\u0006\u0010\u001e\u001a\u00020\u001aJ0\u0010\u001f\u001a\u00020\u001a2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\t2\u0006\u0010#\u001a\u00020\t2\u0006\u0010$\u001a\u00020\t2\u0006\u0010%\u001a\u00020\tH\u0014J\u0016\u0010&\u001a\u00020!2\u0006\u0010'\u001a\u00020\u00122\u0006\u0010(\u001a\u00020)J\u0010\u0010*\u001a\u00020\u001a2\u0006\u0010+\u001a\u00020,H\u0016J\u0010\u0010-\u001a\u00020\u001a2\u0006\u0010.\u001a\u00020/H\u0016J\u0006\u00100\u001a\u00020\u001aR\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000¨\u00061"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "Lcom/discord/mobile_voice_overlay/views/OverlayView;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "attributeSetId", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/mobile_voice_overlay/databinding/TrashWrapBinding;", "hideAnimator", "Landroid/animation/Animator;", "locationOnScreen", "", "previousBubbleOverTrashZone", "Lcom/discord/mobile_voice_overlay/views/OverlayBubbleWrap;", "showAnimator", "trashZoneRect", "Landroid/graphics/Rect;", "windowLayoutParams", "Landroid/view/WindowManager$LayoutParams;", "getInitialLayoutParams", "handleViewDraggedIntoTrashZone", "", "view", "Landroid/view/View;", "handleViewDraggedOutOfTrashZone", "hide", ViewProps.ON_LAYOUT, "changed", "", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "processMotionEvent", "bubble", "motionEvent", "Landroid/view/MotionEvent;", "setAssets", "assets", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayAssets;", "setData", "data", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "show", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -41,7 +41,7 @@ public final class OverlayTrashWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayTrashWrap(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -49,67 +49,67 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
-        setBackgroundResource(C4573R.C4574drawable.trash_bg);
+        setBackgroundResource(C3521R.C3522drawable.trash_bg);
         setVisibility(4);
         inflate.trashWrapTargetContainer.setActivated(false);
         AnimatorSet animatorSet = new AnimatorSet();
-        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_in);
+        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22042a;
-        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_in_bottom);
+        Unit unit = Unit.f25780a;
+        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$1
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
         this.showAnimator = animatorSet;
         AnimatorSet animatorSet2 = new AnimatorSet();
-        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_out);
+        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_out);
         loadAnimator3.setTarget(this);
-        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_out_bottom);
+        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
         animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$1
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;
@@ -157,8 +157,8 @@ public final class OverlayTrashWrap extends OverlayView {
     }
 
     public final boolean processMotionEvent(OverlayBubbleWrap bubble, MotionEvent motionEvent) {
-        C9971q.m14633g(bubble, "bubble");
-        C9971q.m14633g(motionEvent, "motionEvent");
+        C9677q.m14633g(bubble, "bubble");
+        C9677q.m14633g(motionEvent, "motionEvent");
         if (!this.trashZoneRect.contains((int) motionEvent.getRawX(), (int) motionEvent.getRawY())) {
             bubble = null;
         }
@@ -168,10 +168,10 @@ public final class OverlayTrashWrap extends OverlayView {
         } else if (bubble == null && isActivated) {
             handleViewDraggedOutOfTrashZone();
         }
-        if (!C9971q.m14638b(bubble, this.previousBubbleOverTrashZone)) {
+        if (!C9677q.m14638b(bubble, this.previousBubbleOverTrashZone)) {
             if (bubble != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.trashWrapIcon;
-                C9971q.m14634f(simpleDraweeView, "binding.trashWrapIcon");
+                C9677q.m14634f(simpleDraweeView, "binding.trashWrapIcon");
                 bubble.anchorOn(simpleDraweeView);
             }
             performHapticFeedback(6);
@@ -189,19 +189,19 @@ public final class OverlayTrashWrap extends OverlayView {
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setAssets(MobileVoiceOverlayAssets assets) {
-        C9971q.m14633g(assets, "assets");
+        C9677q.m14633g(assets, "assets");
         super.setAssets(assets);
         SimpleDraweeView simpleDraweeView = this.binding.trashWrapIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.trashWrapIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.trashWrapIcon");
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, ReactAsset.Close);
         SimpleDraweeView simpleDraweeView2 = this.binding.trashWrapIcon;
-        C9971q.m14634f(simpleDraweeView2, "binding.trashWrapIcon");
+        C9677q.m14634f(simpleDraweeView2, "binding.trashWrapIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setData(MobileVoiceOverlayData data) {
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(data, "data");
     }
 
     public final void show() {
@@ -211,7 +211,7 @@ public final class OverlayTrashWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayTrashWrap(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -219,67 +219,67 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
-        setBackgroundResource(C4573R.C4574drawable.trash_bg);
+        setBackgroundResource(C3521R.C3522drawable.trash_bg);
         setVisibility(4);
         inflate.trashWrapTargetContainer.setActivated(false);
         AnimatorSet animatorSet = new AnimatorSet();
-        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_in);
+        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22042a;
-        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_in_bottom);
+        Unit unit = Unit.f25780a;
+        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$2
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
         this.showAnimator = animatorSet;
         AnimatorSet animatorSet2 = new AnimatorSet();
-        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_out);
+        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_out);
         loadAnimator3.setTarget(this);
-        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_out_bottom);
+        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
         animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$2
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;
@@ -288,7 +288,7 @@ public final class OverlayTrashWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayTrashWrap(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowUtils windowUtils = WindowUtils.INSTANCE;
         WindowManager.LayoutParams createWindowLayoutParams = windowUtils.createWindowLayoutParams();
         createWindowLayoutParams.width = -1;
@@ -296,67 +296,67 @@ public final class OverlayTrashWrap extends OverlayView {
         windowUtils.addFlag(createWindowLayoutParams, 16);
         this.windowLayoutParams = createWindowLayoutParams;
         TrashWrapBinding inflate = TrashWrapBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
-        setBackgroundResource(C4573R.C4574drawable.trash_bg);
+        setBackgroundResource(C3521R.C3522drawable.trash_bg);
         setVisibility(4);
         inflate.trashWrapTargetContainer.setActivated(false);
         AnimatorSet animatorSet = new AnimatorSet();
-        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_in);
+        Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22042a;
-        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_in_bottom);
+        Unit unit = Unit.f25780a;
+        Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
         animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$3
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
             }
         });
         this.showAnimator = animatorSet;
         AnimatorSet animatorSet2 = new AnimatorSet();
-        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.fade_out);
+        Animator loadAnimator3 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.fade_out);
         loadAnimator3.setTarget(this);
-        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C4573R.animator.slide_out_bottom);
+        Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), C3521R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
         animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$3
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         this.hideAnimator = animatorSet2;

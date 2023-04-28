@@ -1,19 +1,19 @@
 package com.discord.media.engine.video.events;
 
-import bj.C3681n1;
-import co.discord.media_engine.C4081a;
+import bj.C2560n1;
+import co.discord.media_engine.C2968a;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0081\b\u0018\u0000 ,2\u00020\u0001:\u0002+,BK\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\u0010\u0007\u001a\u00060\bj\u0002`\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0002\u0010\u000eB1\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\u0010\u0007\u001a\u00060\bj\u0002`\t\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\u0006¢\u0006\u0002\u0010\u000fJ\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0006HÆ\u0003J\r\u0010\u001a\u001a\u00060\bj\u0002`\tHÆ\u0003J\t\u0010\u001b\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0006HÆ\u0003J?\u0010\u001d\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\f\b\u0002\u0010\u0007\u001a\u00060\bj\u0002`\t2\b\b\u0002\u0010\n\u001a\u00020\u00062\b\b\u0002\u0010\u000b\u001a\u00020\u0006HÆ\u0001J\u0013\u0010\u001e\u001a\u00020\u001f2\b\u0010 \u001a\u0004\u0018\u00010!HÖ\u0003J\t\u0010\"\u001a\u00020\u0003HÖ\u0001J\t\u0010#\u001a\u00020\u0006HÖ\u0001J!\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u00002\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0015\u0010\u0007\u001a\u00060\bj\u0002`\t¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0015¨\u0006-"}, m15073d2 = {"Lcom/discord/media/engine/video/events/OnVideoCallbackEvent;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", "connectionId", "userId", "", "ssrc", "", "Lcom/discord/media/engine/types/SSRC64;", "streamId", "videoStreamParametersJSON", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;JLjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILjava/lang/String;JLjava/lang/String;Ljava/lang/String;)V", "getConnectionId", "()I", "getSsrc", "()J", "getStreamId", "()Ljava/lang/String;", "getUserId", "getVideoStreamParametersJSON", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "media_engine_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
 public final class OnVideoCallbackEvent implements ReactEvent {
@@ -41,7 +41,7 @@ public final class OnVideoCallbackEvent implements ReactEvent {
 
     public /* synthetic */ OnVideoCallbackEvent(int i, int i2, String str, long j, String str2, String str3, SerializationConstructorMarker serializationConstructorMarker) {
         if (31 != (i & 31)) {
-            C3681n1.m33818b(i, 31, OnVideoCallbackEvent$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 31, OnVideoCallbackEvent$$serializer.INSTANCE.getDescriptor());
         }
         this.connectionId = i2;
         this.userId = str;
@@ -70,9 +70,9 @@ public final class OnVideoCallbackEvent implements ReactEvent {
     }
 
     public static final void write$Self(OnVideoCallbackEvent self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13866x(serialDesc, 0, self.connectionId);
         output.mo13864z(serialDesc, 1, self.userId);
         output.mo13889E(serialDesc, 2, self.ssrc);
@@ -101,9 +101,9 @@ public final class OnVideoCallbackEvent implements ReactEvent {
     }
 
     public final OnVideoCallbackEvent copy(int i, String userId, long j, String streamId, String videoStreamParametersJSON) {
-        C9971q.m14633g(userId, "userId");
-        C9971q.m14633g(streamId, "streamId");
-        C9971q.m14633g(videoStreamParametersJSON, "videoStreamParametersJSON");
+        C9677q.m14633g(userId, "userId");
+        C9677q.m14633g(streamId, "streamId");
+        C9677q.m14633g(videoStreamParametersJSON, "videoStreamParametersJSON");
         return new OnVideoCallbackEvent(i, userId, j, streamId, videoStreamParametersJSON);
     }
 
@@ -115,7 +115,7 @@ public final class OnVideoCallbackEvent implements ReactEvent {
             return false;
         }
         OnVideoCallbackEvent onVideoCallbackEvent = (OnVideoCallbackEvent) obj;
-        return this.connectionId == onVideoCallbackEvent.connectionId && C9971q.m14638b(this.userId, onVideoCallbackEvent.userId) && this.ssrc == onVideoCallbackEvent.ssrc && C9971q.m14638b(this.streamId, onVideoCallbackEvent.streamId) && C9971q.m14638b(this.videoStreamParametersJSON, onVideoCallbackEvent.videoStreamParametersJSON);
+        return this.connectionId == onVideoCallbackEvent.connectionId && C9677q.m14638b(this.userId, onVideoCallbackEvent.userId) && this.ssrc == onVideoCallbackEvent.ssrc && C9677q.m14638b(this.streamId, onVideoCallbackEvent.streamId) && C9677q.m14638b(this.videoStreamParametersJSON, onVideoCallbackEvent.videoStreamParametersJSON);
     }
 
     public final int getConnectionId() {
@@ -139,7 +139,7 @@ public final class OnVideoCallbackEvent implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((((this.connectionId * 31) + this.userId.hashCode()) * 31) + C4081a.m32873a(this.ssrc)) * 31) + this.streamId.hashCode()) * 31) + this.videoStreamParametersJSON.hashCode();
+        return (((((((this.connectionId * 31) + this.userId.hashCode()) * 31) + C2968a.m32873a(this.ssrc)) * 31) + this.streamId.hashCode()) * 31) + this.videoStreamParametersJSON.hashCode();
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -157,9 +157,9 @@ public final class OnVideoCallbackEvent implements ReactEvent {
     }
 
     public OnVideoCallbackEvent(int i, String userId, long j, String streamId, String videoStreamParametersJSON) {
-        C9971q.m14633g(userId, "userId");
-        C9971q.m14633g(streamId, "streamId");
-        C9971q.m14633g(videoStreamParametersJSON, "videoStreamParametersJSON");
+        C9677q.m14633g(userId, "userId");
+        C9677q.m14633g(streamId, "streamId");
+        C9677q.m14633g(videoStreamParametersJSON, "videoStreamParametersJSON");
         this.connectionId = i;
         this.userId = userId;
         this.ssrc = j;

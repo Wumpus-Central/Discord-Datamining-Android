@@ -1,12 +1,12 @@
 package com.discord.misc.utilities.backoff;
 
-import eg.C6884j;
+import eg.C6322j;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.coroutines.C10139l;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.coroutines.C9851l;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 
@@ -22,7 +22,7 @@ public final class ExponentialBackoff {
     private final CoroutineScope scope;
 
     public ExponentialBackoff(CoroutineScope scope, long j, long j2, int i) {
-        C9971q.m14633g(scope, "scope");
+        C9677q.m14633g(scope, "scope");
         this.scope = scope;
         this.initialDelay = j;
         this.maxDelay = j2;
@@ -32,7 +32,7 @@ public final class ExponentialBackoff {
     private final void cancelCurrentJob() {
         Job job = this.job;
         if (job != null) {
-            Job.C9996a.m14571a(job, null, 1, null);
+            Job.C9704a.m14571a(job, null, 1, null);
         }
     }
 
@@ -50,19 +50,19 @@ public final class ExponentialBackoff {
         long j;
         long h;
         Job d;
-        C9971q.m14633g(action, "action");
+        C9677q.m14633g(action, "action");
         cancelCurrentJob();
         if (this.currentAttempt <= this.maxAttempts) {
             long j2 = this.currentDelay;
             if (j2 == 0) {
-                j = C6884j.m23960d(this.initialDelay, 1L);
+                j = C6322j.m23960d(this.initialDelay, 1L);
             } else {
                 j = j2 * 2;
             }
-            h = C6884j.m23956h(j, this.maxDelay);
+            h = C6322j.m23956h(j, this.maxDelay);
             this.currentDelay = h;
             this.currentAttempt++;
-            d = C10139l.m14174d(this.scope, null, null, new ExponentialBackoff$fail$1(this, action, null), 3, null);
+            d = C9851l.m14174d(this.scope, null, null, new ExponentialBackoff$fail$1(this, action, null), 3, null);
             this.job = d;
             return;
         }

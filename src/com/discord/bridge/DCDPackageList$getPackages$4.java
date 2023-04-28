@@ -4,12 +4,12 @@ import com.discord.chat.presentation.message.view.voicemessages.AudioPlayerManag
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9968n;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9674n;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$4 extends C9968n implements Function1<ReactApplicationContext, AudioPlayerManagerModule> {
+/* synthetic */ class DCDPackageList$getPackages$4 extends C9674n implements Function1<ReactApplicationContext, AudioPlayerManagerModule> {
     public static final DCDPackageList$getPackages$4 INSTANCE = new DCDPackageList$getPackages$4();
 
     DCDPackageList$getPackages$4() {
@@ -17,7 +17,7 @@ import kotlin.jvm.internal.C9971q;
     }
 
     public final AudioPlayerManagerModule invoke(ReactApplicationContext p0) {
-        C9971q.m14633g(p0, "p0");
+        C9677q.m14633g(p0, "p0");
         return new AudioPlayerManagerModule(p0);
     }
 }

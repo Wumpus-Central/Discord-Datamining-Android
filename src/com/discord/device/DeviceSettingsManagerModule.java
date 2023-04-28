@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.view.Window;
-import androidx.core.view.C2696r2;
+import androidx.core.view.C1520r2;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -16,7 +16,7 @@ import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u000f\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\u000f\u0010\n\u001a\u0004\u0018\u00010\bH\u0007¢\u0006\u0002\u0010\tJ\b\u0010\u000b\u001a\u00020\bH\u0007J\u0018\u0010\f\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u0010\u0010\u0011\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0012\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\f\u0010\u0007\u001a\u00020\b*\u00020\u0013H\u0002J\f\u0010\u0014\u001a\u00020\b*\u00020\u0013H\u0002J\f\u0010\u0015\u001a\u00020\b*\u00020\u0013H\u0003¨\u0006\u0016"}, m15073d2 = {"Lcom/discord/device/DeviceSettingsManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "openAccessibilitySettings", "", "()Lkotlin/Unit;", "openNotificationSettings", "openPrivacySettings", "setInsetsVisible", ViewProps.VISIBLE, "", "insetType", "", "setNavigationBarVisible", "setStatusBarVisible", "Landroid/content/Context;", "openApplicationDetailSettings", "openApplicationNotificationSettings", "device_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -24,7 +24,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeviceSettingsManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     private final void openApplicationDetailSettings(Context context) {
@@ -49,7 +49,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setInsetsVisible$lambda$0(DeviceSettingsManagerModule this$0, boolean z, int i) {
         Window window;
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Activity currentActivity = this$0.getReactApplicationContext().getCurrentActivity();
         if (currentActivity != null) {
             window = currentActivity.getWindow();
@@ -57,8 +57,8 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
             window = null;
         }
         if (window != null) {
-            WindowInsetsControllerCompat a = C2696r2.m37145a(window, window.getDecorView());
-            C9971q.m14634f(a, "getInsetsController(window, window.decorView)");
+            WindowInsetsControllerCompat a = C1520r2.m37145a(window, window.getDecorView());
+            C9677q.m14634f(a, "getInsetsController(window, window.decorView)");
             a.m37450d(2);
             if (z) {
                 a.m37449e(i);
@@ -80,7 +80,7 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
             return null;
         }
         openAccessibilitySettings(currentActivity);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     @ReactMethod
@@ -91,31 +91,31 @@ public final class DeviceSettingsManagerModule extends ReactContextBaseJavaModul
                 return null;
             }
             openApplicationNotificationSettings(currentActivity);
-            return Unit.f22042a;
+            return Unit.f25780a;
         }
         Activity currentActivity2 = getReactApplicationContext().getCurrentActivity();
         if (currentActivity2 == null) {
             return null;
         }
         openApplicationDetailSettings(currentActivity2);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     @ReactMethod
     public final void openPrivacySettings() {
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         openApplicationDetailSettings(reactApplicationContext);
     }
 
     @ReactMethod
     public final void setNavigationBarVisible(boolean z) {
-        setInsetsVisible(z, WindowInsetsCompat.C2542m.m37457e());
+        setInsetsVisible(z, WindowInsetsCompat.C1362m.m37457e());
     }
 
     @ReactMethod
     public final void setStatusBarVisible(boolean z) {
-        setInsetsVisible(z, WindowInsetsCompat.C2542m.m37456f());
+        setInsetsVisible(z, WindowInsetsCompat.C1362m.m37456f());
     }
 
     private final void openAccessibilitySettings(Context context) {

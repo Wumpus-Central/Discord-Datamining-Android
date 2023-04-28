@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
-import p412x1.C13922a;
+import com.discord.chat.C3147R;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class FlaggedMessageEmbedFooterViewBinding {
@@ -23,14 +23,14 @@ public final class FlaggedMessageEmbedFooterViewBinding {
     }
 
     public static FlaggedMessageEmbedFooterViewBinding bind(View view) {
-        int i = C4254R.C4256id.flagged_message_keyword;
-        TextView textView = (TextView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.flagged_message_keyword;
+        TextView textView = (TextView) C13836a.m2313a(view, i);
         if (textView != null) {
-            i = C4254R.C4256id.flagged_message_rule_name;
-            TextView textView2 = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.flagged_message_rule_name;
+            TextView textView2 = (TextView) C13836a.m2313a(view, i);
             if (textView2 != null) {
-                i = C4254R.C4256id.separator_dot;
-                ImageView imageView = (ImageView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.separator_dot;
+                ImageView imageView = (ImageView) C13836a.m2313a(view, i);
                 if (imageView != null) {
                     return new FlaggedMessageEmbedFooterViewBinding(view, textView, textView2, imageView);
                 }
@@ -41,7 +41,7 @@ public final class FlaggedMessageEmbedFooterViewBinding {
 
     public static FlaggedMessageEmbedFooterViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.flagged_message_embed_footer_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.flagged_message_embed_footer_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

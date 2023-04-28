@@ -24,15 +24,15 @@ import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9899f;
+import kotlin.collections.C9603f;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11084n;
+import nf.C10839n;
 
 @Metadata(m15074d1 = {"\u0000 \u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 F2\u00020\u00012\u00020\u0002:\u0001FB'\b\u0007\u0012\u0006\u0010@\u001a\u00020?\u0012\n\b\u0002\u0010B\u001a\u0004\u0018\u00010A\u0012\b\b\u0002\u0010C\u001a\u00020\u0007¢\u0006\u0004\bD\u0010EJI\u0010\u0010\u001a\u00020\f2\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\t2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f0\u000bH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u000e\u0010\u000fJ\u0018\u0010\u0014\u001a\u00020\f2\u0006\u0010\n\u001a\u00020\u00112\u0006\u0010\u0013\u001a\u00020\u0012H\u0002J\u008d\u0003\u00103\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\u00172\u0006\u0010\u001a\u001a\u00020\u00172\u0018\u0010\u001d\u001a\u0014\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u001c\u0012\u0004\u0012\u00020\f0\u001b2\u0012\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\u001c\u0012\u0004\u0012\u00020\f0\u000b2\"\u0010 \u001a\u001e\u0012\u0004\u0012\u00020\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0004\u0012\u00020\f0\u001f2*\u0010\"\u001a&\u0012\u0004\u0012\u00020\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0004\u0012\u00020\f0!2\u0018\u0010#\u001a\u0014\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\f0\u001b2\u0012\u0010%\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\f0\u000b2\u0012\u0010&\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\f0\u000b2\f\u0010(\u001a\b\u0012\u0004\u0012\u00020\f0'2\u0012\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\f0\u000b2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00020*\u0012\u0004\u0012\u00020\f0\u000b2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\f0\u000b2\u0014\b\u0002\u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u001c\u0012\u0004\u0012\u00020,0\u000b2\u0006\u0010.\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00122\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u00100\u001a\u00020/ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b1\u00102J\u0012\u00106\u001a\u00020\f2\b\u00105\u001a\u0004\u0018\u000104H\u0016J\u0011\u00107\u001a\u0004\u0018\u00010\u0007H\u0016¢\u0006\u0004\b7\u00108R\u0018\u0010.\u001a\u0004\u0018\u00010\u00078\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u00109R\u001b\u0010>\u001a\u00020\u00018BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006G"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/MessageContentView;", "Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/primitives/MessageId;", "messageId", "Lcom/discord/chat/bridge/truncation/Truncation;", "truncation", "", "constrainedWidth", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "spannableStringBuilder", "Lkotlin/Function1;", "", "onTapSeeMore", "truncate-pPZZVto", "(Ljava/lang/String;Lcom/discord/chat/bridge/truncation/Truncation;ILcom/facebook/drawee/span/DraweeSpanStringBuilder;Lkotlin/jvm/functions/Function1;)V", "truncate", "Landroid/text/SpannableStringBuilder;", "", "editedLabel", "appendEditedLabel", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageContent", "", "shouldAnimateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "Lkotlin/Function2;", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "onTapLink", "onLongTapLink", "Lkotlin/Function3;", "onTapChannel", "Lkotlin/Function4;", "onLongPressChannel", "onTapMention", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onTapCommand", "onLongPressCommand", "Lkotlin/Function0;", "onTapSpoiler", "onTapTimestamp", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "onTapEmoji", "Lcom/discord/chat/presentation/textutils/LinkStyle;", "linkStyleProvider", "bottomSpacingPx", "Lcom/discord/theme/DiscordTheme;", "theme", "setMessageContent-2i9KL1s", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;IILjava/lang/String;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/theme/DiscordTheme;)V", "setMessageContent", "Landroid/view/View$OnClickListener;", "l", "setOnClickListener", "spacingPxOverride", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "shadowView$delegate", "Lkotlin/Lazy;", "getShadowView", "()Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;", "shadowView", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -57,13 +57,13 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageContentView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageContentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ MessageContentView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -73,8 +73,8 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     private final void appendEditedLabel(SpannableStringBuilder spannableStringBuilder, String str) {
         Object E;
         Object[] spans = spannableStringBuilder.getSpans(spannableStringBuilder.length(), spannableStringBuilder.length(), QuoteSpan.class);
-        C9971q.m14634f(spans, "spannableStringBuilder.g…an::class.java,\n        )");
-        E = C9899f.m14964E(spans);
+        C9677q.m14634f(spans, "spannableStringBuilder.g…an::class.java,\n        )");
+        E = C9603f.m14964E(spans);
         QuoteSpan quoteSpan = (QuoteSpan) E;
         int length = spannableStringBuilder.length();
         spannableStringBuilder.append((CharSequence) (" (" + str + ")"));
@@ -98,7 +98,7 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     private final void m41863truncatepPZZVto(String str, Truncation truncation, int i, DraweeSpanStringBuilder draweeSpanStringBuilder, Function1<? super MessageId, Unit> function1) {
         int i2;
         int i3;
-        boolean b = C9971q.m14638b(truncation.getForceShow(), Boolean.TRUE);
+        boolean b = C9677q.m14638b(truncation.getForceShow(), Boolean.TRUE);
         int numberOfLines = truncation.getNumberOfLines();
         String seeMoreLabel = truncation.getSeeMoreLabel();
         Integer seeMoreLabelColor = truncation.getSeeMoreLabelColor();
@@ -160,8 +160,8 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     public MessageContentView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         Lazy a;
-        C9971q.m14633g(context, "context");
-        a = C11084n.m10945a(new MessageContentView$shadowView$2(this));
+        C9677q.m14633g(context, "context");
+        a = C10839n.m10945a(new MessageContentView$shadowView$2(this));
         this.shadowView$delegate = a;
         setLineSpacing(LINE_SPACING_ADD, LINE_SPACING_MULT);
         setImportantForAccessibility(4);

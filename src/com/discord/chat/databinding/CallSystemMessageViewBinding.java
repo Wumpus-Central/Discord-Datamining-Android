@@ -4,10 +4,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class CallSystemMessageViewBinding {
@@ -26,17 +26,17 @@ public final class CallSystemMessageViewBinding {
     }
 
     public static CallSystemMessageViewBinding bind(View view) {
-        int i = C4254R.C4256id.icon;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.icon;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.info;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.info;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4254R.C4256id.message;
-                TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.message;
+                TextView textView2 = (TextView) C13836a.m2313a(view, i);
                 if (textView2 != null) {
-                    i = C4254R.C4256id.participants;
-                    OverlappingCirclesView overlappingCirclesView = (OverlappingCirclesView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.participants;
+                    OverlappingCirclesView overlappingCirclesView = (OverlappingCirclesView) C13836a.m2313a(view, i);
                     if (overlappingCirclesView != null) {
                         return new CallSystemMessageViewBinding(view, simpleDraweeView, textView, textView2, overlappingCirclesView);
                     }
@@ -48,7 +48,7 @@ public final class CallSystemMessageViewBinding {
 
     public static CallSystemMessageViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.call_system_message_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.call_system_message_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

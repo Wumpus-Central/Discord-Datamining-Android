@@ -2,14 +2,14 @@ package com.discord.chat.presentation.textutils;
 
 import com.facebook.react.views.text.TypefaceStyle;
 import com.reactnativecommunity.webview.RNCWebViewManager;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import p326ri.C12719v;
+import kotlin.jvm.internal.C9677q;
+import p327ri.C12588v;
 
 @Metadata(m15074d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bJ\u000e\u0010\u000b\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\bR\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00050\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m15073d2 = {"Lcom/discord/chat/presentation/textutils/NumericUtils;", "", "()V", "letters", "", "", "romanNumeralMap", "Ljava/util/TreeMap;", "", "toLetter", "number", "toRomanNumeral", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -20,7 +20,7 @@ public final class NumericUtils {
 
     static {
         List z0;
-        z0 = C12719v.m5660z0("abcdefghijklmnopqrstuvwxyz", new String[]{""}, false, 0, 6, null);
+        z0 = C12588v.m5660z0("abcdefghijklmnopqrstuvwxyz", new String[]{""}, false, 0, 6, null);
         ArrayList arrayList = new ArrayList();
         Iterator it = z0.iterator();
         while (true) {
@@ -72,7 +72,7 @@ public final class NumericUtils {
             return letters.get(i - 1);
         } else {
             int i2 = i / 26;
-            c = C6884j.m23961c(i % 26, 1);
+            c = C6322j.m23961c(i % 26, 1);
             return toLetter(i2) + toLetter(c);
         }
     }
@@ -85,12 +85,12 @@ public final class NumericUtils {
         if (z) {
             TreeMap<Integer, String> treeMap = romanNumeralMap;
             Integer floorKey = treeMap.floorKey(Integer.valueOf(i));
-            C9971q.m14636d(floorKey);
+            C9677q.m14636d(floorKey);
             int intValue = floorKey.intValue();
             if (i == intValue) {
                 String str = treeMap.get(Integer.valueOf(i));
-                C9971q.m14636d(str);
-                C9971q.m14634f(str, "{\n            romanNumeralMap[number]!!\n        }");
+                C9677q.m14636d(str);
+                C9677q.m14634f(str, "{\n            romanNumeralMap[number]!!\n        }");
                 return str;
             }
             String str2 = treeMap.get(Integer.valueOf(intValue));

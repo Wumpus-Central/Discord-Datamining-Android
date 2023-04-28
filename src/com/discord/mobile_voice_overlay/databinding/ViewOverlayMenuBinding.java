@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes5.dex */
 public final class ViewOverlayMenuBinding {
@@ -43,41 +43,41 @@ public final class ViewOverlayMenuBinding {
     }
 
     public static ViewOverlayMenuBinding bind(View view) {
-        int i = C4573R.C4575id.disconnect_btn;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3521R.C3523id.disconnect_btn;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4573R.C4575id.menu_bottom;
-            CardView cardView = (CardView) C13922a.m2313a(view, i);
+            i = C3521R.C3523id.menu_bottom;
+            CardView cardView = (CardView) C13836a.m2313a(view, i);
             if (cardView != null) {
-                i = C4573R.C4575id.menu_top;
-                CardView cardView2 = (CardView) C13922a.m2313a(view, i);
+                i = C3521R.C3523id.menu_top;
+                CardView cardView2 = (CardView) C13836a.m2313a(view, i);
                 if (cardView2 != null) {
-                    i = C4573R.C4575id.menu_top_status_container;
-                    ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+                    i = C3521R.C3523id.menu_top_status_container;
+                    ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
                     if (constraintLayout != null) {
-                        i = C4573R.C4575id.mute_toggle;
-                        SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                        i = C3521R.C3523id.mute_toggle;
+                        SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                         if (simpleDraweeView2 != null) {
-                            i = C4573R.C4575id.overlay_channel_name;
-                            TextView textView = (TextView) C13922a.m2313a(view, i);
+                            i = C3521R.C3523id.overlay_channel_name;
+                            TextView textView = (TextView) C13836a.m2313a(view, i);
                             if (textView != null) {
-                                i = C4573R.C4575id.overlay_guild_name;
-                                TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                                i = C3521R.C3523id.overlay_guild_name;
+                                TextView textView2 = (TextView) C13836a.m2313a(view, i);
                                 if (textView2 != null) {
-                                    i = C4573R.C4575id.overlay_invite_link;
-                                    TextView textView3 = (TextView) C13922a.m2313a(view, i);
+                                    i = C3521R.C3523id.overlay_invite_link;
+                                    TextView textView3 = (TextView) C13836a.m2313a(view, i);
                                     if (textView3 != null) {
-                                        i = C4573R.C4575id.overlay_network_icon;
-                                        SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                        i = C3521R.C3523id.overlay_network_icon;
+                                        SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                         if (simpleDraweeView3 != null) {
-                                            i = C4573R.C4575id.overlay_open_app;
-                                            TextView textView4 = (TextView) C13922a.m2313a(view, i);
+                                            i = C3521R.C3523id.overlay_open_app;
+                                            TextView textView4 = (TextView) C13836a.m2313a(view, i);
                                             if (textView4 != null) {
-                                                i = C4573R.C4575id.overlay_switch_channels;
-                                                TextView textView5 = (TextView) C13922a.m2313a(view, i);
+                                                i = C3521R.C3523id.overlay_switch_channels;
+                                                TextView textView5 = (TextView) C13836a.m2313a(view, i);
                                                 if (textView5 != null) {
-                                                    i = C4573R.C4575id.src_toggle;
-                                                    SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                    i = C3521R.C3523id.src_toggle;
+                                                    SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                     if (simpleDraweeView4 != null) {
                                                         return new ViewOverlayMenuBinding(view, simpleDraweeView, cardView, cardView2, constraintLayout, simpleDraweeView2, textView, textView2, textView3, simpleDraweeView3, textView4, textView5, simpleDraweeView4);
                                                     }
@@ -97,7 +97,7 @@ public final class ViewOverlayMenuBinding {
 
     public static ViewOverlayMenuBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4573R.layout.view_overlay_menu, viewGroup);
+            layoutInflater.inflate(C3521R.layout.view_overlay_menu, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

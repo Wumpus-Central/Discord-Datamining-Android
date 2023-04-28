@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.mobile_voice_overlay.C4573R;
-import p412x1.C13922a;
+import com.discord.mobile_voice_overlay.C3521R;
+import p413x1.C13836a;
 
 /* loaded from: classes5.dex */
 public final class OverlayVoiceChannelSearchResultBinding {
@@ -25,15 +25,15 @@ public final class OverlayVoiceChannelSearchResultBinding {
     }
 
     public static OverlayVoiceChannelSearchResultBinding bind(View view) {
-        int i = C4573R.C4575id.category_name;
-        TextView textView = (TextView) C13922a.m2313a(view, i);
+        int i = C3521R.C3523id.category_name;
+        TextView textView = (TextView) C13836a.m2313a(view, i);
         if (textView != null) {
-            i = C4573R.C4575id.channel_name;
-            TextView textView2 = (TextView) C13922a.m2313a(view, i);
+            i = C3521R.C3523id.channel_name;
+            TextView textView2 = (TextView) C13836a.m2313a(view, i);
             if (textView2 != null) {
                 ConstraintLayout constraintLayout = (ConstraintLayout) view;
-                i = C4573R.C4575id.guild_name;
-                TextView textView3 = (TextView) C13922a.m2313a(view, i);
+                i = C3521R.C3523id.guild_name;
+                TextView textView3 = (TextView) C13836a.m2313a(view, i);
                 if (textView3 != null) {
                     return new OverlayVoiceChannelSearchResultBinding(constraintLayout, textView, textView2, constraintLayout, textView3);
                 }
@@ -47,7 +47,7 @@ public final class OverlayVoiceChannelSearchResultBinding {
     }
 
     public static OverlayVoiceChannelSearchResultBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4573R.layout.overlay_voice_channel_search_result, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3521R.layout.overlay_voice_channel_search_result, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

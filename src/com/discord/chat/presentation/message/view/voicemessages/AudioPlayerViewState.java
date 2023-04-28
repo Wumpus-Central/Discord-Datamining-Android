@@ -100,7 +100,7 @@ public final class AudioPlayerViewState {
         L_0x0021:
             java.lang.String r1 = r4.sourceUrl
             java.lang.String r3 = r5.sourceUrl
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x002c
             return r2
         L_0x002c:
@@ -194,7 +194,7 @@ public final class AudioPlayerViewState {
             return null;
         }
         AudioPlayerManager.INSTANCE.setCurrentProgress(audioSource, f, j);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     public final boolean shouldEmitDuration$chat_release() {

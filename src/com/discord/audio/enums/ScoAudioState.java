@@ -2,7 +2,7 @@ package com.discord.audio.enums;
 
 import android.content.Intent;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\n\b\u0086\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, m15073d2 = {"Lcom/discord/audio/enums/ScoAudioState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "Disconnected", "Connected", "Connecting", "Error", "Companion", "Update", "audio_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -28,13 +28,13 @@ public enum ScoAudioState {
 
         private final ScoAudioState getCurrentState(Intent intent) {
             ScoAudioState from = from(intent.getIntExtra("android.media.extra.SCO_AUDIO_STATE", 0));
-            C9971q.m14636d(from);
+            C9677q.m14636d(from);
             return from;
         }
 
         private final ScoAudioState getPrevState(Intent intent) {
             ScoAudioState from = from(intent.getIntExtra("android.media.extra.SCO_AUDIO_PREVIOUS_STATE", 0));
-            C9971q.m14636d(from);
+            C9677q.m14636d(from);
             return from;
         }
 
@@ -55,8 +55,8 @@ public enum ScoAudioState {
         }
 
         public final Update getScoAudioUpdate(Intent intent) {
-            C9971q.m14633g(intent, "intent");
-            if (C9971q.m14638b(intent.getAction(), "android.media.ACTION_SCO_AUDIO_STATE_UPDATED")) {
+            C9677q.m14633g(intent, "intent");
+            if (C9677q.m14638b(intent.getAction(), "android.media.ACTION_SCO_AUDIO_STATE_UPDATED")) {
                 return new Update(getCurrentState(intent), getPrevState(intent));
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
@@ -70,8 +70,8 @@ public enum ScoAudioState {
         private final ScoAudioState previous;
 
         public Update(ScoAudioState current, ScoAudioState previous) {
-            C9971q.m14633g(current, "current");
-            C9971q.m14633g(previous, "previous");
+            C9677q.m14633g(current, "current");
+            C9677q.m14633g(previous, "previous");
             this.current = current;
             this.previous = previous;
         }
@@ -95,8 +95,8 @@ public enum ScoAudioState {
         }
 
         public final Update copy(ScoAudioState current, ScoAudioState previous) {
-            C9971q.m14633g(current, "current");
-            C9971q.m14633g(previous, "previous");
+            C9677q.m14633g(current, "current");
+            C9677q.m14633g(previous, "previous");
             return new Update(current, previous);
         }
 

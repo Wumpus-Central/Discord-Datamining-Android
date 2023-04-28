@@ -3,19 +3,19 @@ package com.discord.chat.bridge.sticker;
 import java.util.NoSuchElementException;
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import nf.C11084n;
-import nf.EnumC11087p;
-import p014aj.AbstractC1413e;
-import p014aj.C1427g;
-import p449yi.AbstractC14435f;
+import nf.C10839n;
+import nf.EnumC10842p;
+import p014aj.AbstractC0192e;
+import p014aj.C0207g;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = StickerFormatTypeSerializer.class)
+@AbstractC14370f(with = StickerFormatTypeSerializer.class)
 @Metadata(m15074d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, m15073d2 = {"Lcom/discord/chat/bridge/sticker/StickerFormatType;", "", "intType", "", "(Ljava/lang/String;II)V", "getIntType", "()I", "PNG", "APNG", "LOTTIE", "GIF", "Companion", "StickerFormatTypeSerializer", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public enum StickerFormatType {
@@ -55,15 +55,15 @@ public enum StickerFormatType {
         private StickerFormatTypeSerializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, p449yi.AbstractC14437h, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, p450yi.AbstractC14372h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return C1427g.m41131a("StickerFormatType", AbstractC1413e.C1418f.f468a);
+            return C0207g.m41131a("StickerFormatType", AbstractC0192e.C0198f.f534a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
         public StickerFormatType deserialize(Decoder decoder) {
             StickerFormatType[] values;
-            C9971q.m14633g(decoder, "decoder");
+            C9677q.m14633g(decoder, "decoder");
             int h = decoder.mo13903h();
             for (StickerFormatType stickerFormatType : StickerFormatType.values()) {
                 if (stickerFormatType.getIntType() == h) {
@@ -74,15 +74,15 @@ public enum StickerFormatType {
         }
 
         public void serialize(Encoder encoder, StickerFormatType value) {
-            C9971q.m14633g(encoder, "encoder");
-            C9971q.m14633g(value, "value");
+            C9677q.m14633g(encoder, "encoder");
+            C9677q.m14633g(value, "value");
             encoder.mo13892B(value.getIntType());
         }
     }
 
     static {
         Lazy<KSerializer<Object>> b;
-        b = C11084n.m10944b(EnumC11087p.PUBLICATION, StickerFormatType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        b = C10839n.m10944b(EnumC10842p.PUBLICATION, StickerFormatType$Companion$$cachedSerializer$delegate$1.INSTANCE);
         $cachedSerializer$delegate = b;
     }
 

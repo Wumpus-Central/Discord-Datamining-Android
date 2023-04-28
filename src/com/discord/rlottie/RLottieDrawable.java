@@ -28,11 +28,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
-import kotlin.collections.C9899f;
-import kotlin.jvm.internal.C9949e0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9603f;
+import kotlin.jvm.internal.C9654e0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p326ri.C12694d;
+import p327ri.C12563d;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000\u009c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0015\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b#\b\u0016\u0018\u0000 \u007f2\u00020\u00012\u00020\u0002:\u0003\u007f\u0080\u0001BC\b\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u000fBO\b\u0017\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\b\b\u0001\u0010\u0012\u001a\u00020\u0006\u0012\u0006\u0010\u0013\u001a\u00020\u0014\u0012\u0006\u0010\u0015\u001a\u00020\u0006\u0012\u0006\u0010\u0016\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\b\u0002\u0010\u0017\u001a\u00020\t\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u0018J\u0010\u0010U\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u0006\u0010X\u001a\u00020VJ\b\u0010Y\u001a\u00020VH\u0002J\u0006\u0010Z\u001a\u00020VJ\b\u0010[\u001a\u00020VH\u0002J\u0010\u0010\\\u001a\u00020V2\u0006\u0010]\u001a\u00020^H\u0016J\b\u0010_\u001a\u00020\u0006H\u0016J\b\u0010`\u001a\u00020\u0006H\u0016J\b\u0010a\u001a\u00020\u0006H\u0016J\b\u0010b\u001a\u00020\u0006H\u0016J\b\u0010c\u001a\u00020\u0006H\u0016J\u0006\u0010d\u001a\u00020\tJ\b\u0010e\u001a\u00020\tH\u0002J\b\u0010f\u001a\u00020VH\u0002J\b\u00101\u001a\u00020\tH\u0016J\u0010\u0010g\u001a\u00020V2\u0006\u0010h\u001a\u00020,H\u0014J\u0006\u0010i\u001a\u00020VJ\b\u0010j\u001a\u00020VH\u0002J\u0010\u0010k\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u001b\u0010l\u001a\u00020V2\u000e\u0010m\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;¢\u0006\u0002\u0010nJ\b\u0010o\u001a\u00020VH\u0002J\u0006\u0010p\u001a\u00020\tJ\b\u0010q\u001a\u00020\tH\u0002J\u000e\u0010r\u001a\u00020V2\u0006\u0010s\u001a\u00020\tJ\u0010\u0010t\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u0016\u0010u\u001a\u00020V2\u0006\u0010v\u001a\u00020\u00142\u0006\u0010w\u001a\u00020\u0006J\u000e\u0010x\u001a\u00020V2\u0006\u0010s\u001a\u00020FJ\u000e\u0010y\u001a\u00020V2\u0006\u0010z\u001a\u00020\fJ\u001c\u0010{\u001a\u00020V2\u0014\u0010|\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000109J\b\u0010}\u001a\u00020VH\u0016J\b\u0010~\u001a\u00020VH\u0016R\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u001a8F¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u000e\u0010\u001d\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010!\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001cR\u0010\u0010#\u001a\u0004\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010'X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020,X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010.\u001a\u00020\t8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b.\u0010/R\u000e\u00100\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00101\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u00105\u001a\u0004\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u000203X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u00108\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u000609X\u0082\u0004¢\u0006\u0002\n\u0000R\u0018\u0010:\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;X\u0082\u000e¢\u0006\u0004\n\u0002\u0010<R\u000e\u0010=\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010>\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b?\u0010\u001cR\u001c\u0010@\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010'0B0AX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010C\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u000609X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010D\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;X\u0082\u000e¢\u0006\u0004\n\u0002\u0010<R\u000e\u0010E\u001a\u00020FX\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010G\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\bH\u0010\u001cR\u000e\u0010I\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010J\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010K\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010L\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010M\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010N\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010Q\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010R\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010S\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010T\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000109X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0081\u0001"}, m15073d2 = {"Lcom/discord/rlottie/RLottieDrawable;", "Landroid/graphics/drawable/BitmapDrawable;", "Landroid/graphics/drawable/Animatable;", JSStackTrace.FILE_KEY, "Ljava/io/File;", "w", "", "h", "precache", "", "limitFps", "screenRefreshRate", "", "colorReplacement", "", "(Ljava/io/File;IIZZF[I)V", "context", "Landroid/content/Context;", "rawRes", "name", "", "width", "height", "startDecode", "(Landroid/content/Context;ILjava/lang/String;IIFZ[I)V", "animatedBitmap", "Landroid/graphics/Bitmap;", "getAnimatedBitmap", "()Landroid/graphics/Bitmap;", "applyTransformation", "applyingLayerColors", "autoRepeatPlayCount", "<set-?>", "backgroundBitmap", "getBackgroundBitmap", "cacheGenerateTask", "Ljava/lang/Runnable;", "currentFrame", "currentParentView", "Landroid/view/View;", "customEndFrame", "decodeSingleFrame", "destroyWhenDone", "dstRect", "Landroid/graphics/Rect;", "forceFrameRedraw", "isCurrentParentViewMaster", "()Z", "isRecycled", "isRunning", "lastFrameTime", "", "loadFrameRunnable", "loadFrameTask", "metaData", "nativePtr", "newColorUpdates", "Ljava/util/HashMap;", "newReplaceColors", "", "[Ljava/lang/Integer;", "nextFrameIsLast", "nextRenderingBitmap", "getNextRenderingBitmap", "parentViews", "Ljava/util/ArrayList;", "Ljava/lang/ref/WeakReference;", "pendingColorUpdates", "pendingReplaceColors", "playbackMode", "Lcom/discord/rlottie/RLottieDrawable$PlaybackMode;", "renderingBitmap", "getRenderingBitmap", ViewProps.SCALE_X, ViewProps.SCALE_Y, "shouldLimitFps", "singleFrameDecoded", "timeBetweenFrames", "uiRunnable", "uiRunnableCacheFinished", "uiRunnableGenerateCache", "uiRunnableGenerateCacheQueue", "uiRunnableLastFrame", "uiRunnableNoFrame", "vibrationPattern", "addParentView", "", "view", "beginApplyLayerColors", "checkRunningTasks", "commitApplyLayerColors", "decodeFrameFinishedInternal", "draw", "canvas", "Landroid/graphics/Canvas;", "getIntrinsicHeight", "getIntrinsicWidth", "getMinimumHeight", "getMinimumWidth", "getOpacity", "hasBitmap", "hasParentView", "invalidateInternal", "onBoundsChange", "bounds", "recycle", "recycleResources", "removeParentView", "replaceColors", LinearGradientManager.PROP_COLORS, "([Ljava/lang/Integer;)V", "requestRedrawColors", "restart", "scheduleNextGetFrame", "setAllowDecodeSingleFrame", "value", "setCurrentParentView", "setLayerColor", "layerName", ViewProps.COLOR, "setPlaybackMode", "setProgress", "oldProgress", "setVibrationPattern", "pattern", ViewProps.START, "stop", "Companion", "PlaybackMode", "rlottie_release"}, m15072k = 1, m15071mv = {1, 1, 16})
 /* loaded from: classes6.dex */
@@ -147,7 +147,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         if (this.cacheGenerateTask != null) {
             ThreadPoolExecutor threadPoolExecutor = lottieCacheGenerateQueue;
             if (threadPoolExecutor == null) {
-                C9971q.m14621s();
+                C9677q.m14621s();
             }
             if (threadPoolExecutor.remove(this.cacheGenerateTask)) {
                 this.cacheGenerateTask = null;
@@ -231,7 +231,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         if (this.renderingBitmap != null) {
             Bitmap bitmap = this.renderingBitmap;
             if (bitmap == null) {
-                C9971q.m14621s();
+                C9677q.m14621s();
             }
             bitmap.recycle();
             this.renderingBitmap = null;
@@ -239,7 +239,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         if (this.backgroundBitmap != null) {
             Bitmap bitmap2 = this.backgroundBitmap;
             if (bitmap2 == null) {
-                C9971q.m14621s();
+                C9677q.m14621s();
             }
             bitmap2.recycle();
             this.backgroundBitmap = null;
@@ -335,7 +335,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         int i;
         View view;
         int i2;
-        C9971q.m14632h(canvas, "canvas");
+        C9677q.m14632h(canvas, "canvas");
         if (this.nativePtr != 0 && !this.destroyWhenDone) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
             long abs = Math.abs(elapsedRealtime - this.lastFrameTime);
@@ -352,7 +352,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                     HashMap<Integer, Integer> hashMap = this.vibrationPattern;
                     if (!(hashMap == null || this.currentParentView == null)) {
                         if (hashMap == null) {
-                            C9971q.m14621s();
+                            C9677q.m14621s();
                         }
                         Integer num = hashMap.get(Integer.valueOf(this.currentFrame - 1));
                         if (!(num == null || (view = this.currentParentView) == null)) {
@@ -407,7 +407,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 canvas.scale(this.scaleX, this.scaleY);
                 Bitmap bitmap = this.renderingBitmap;
                 if (bitmap == null) {
-                    C9971q.m14621s();
+                    C9677q.m14621s();
                 }
                 canvas.drawBitmap(bitmap, 0.0f, 0.0f, getPaint());
                 if (this.isRunning) {
@@ -476,7 +476,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
 
     @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect bounds) {
-        C9971q.m14632h(bounds, "bounds");
+        C9677q.m14632h(bounds, "bounds");
         super.onBoundsChange(bounds);
         this.applyTransformation = true;
     }
@@ -541,13 +541,13 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
     }
 
     public final void setLayerColor(String layerName, int i) {
-        C9971q.m14632h(layerName, "layerName");
+        C9677q.m14632h(layerName, "layerName");
         this.newColorUpdates.put(layerName, Integer.valueOf(i));
         requestRedrawColors();
     }
 
     public final void setPlaybackMode(PlaybackMode value) {
-        C9971q.m14632h(value, "value");
+        C9677q.m14632h(value, "value");
         if (this.playbackMode != PlaybackMode.ONCE || value != PlaybackMode.FREEZE || this.currentFrame == 0) {
             this.playbackMode = value;
         }
@@ -617,7 +617,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
     }
 
     public RLottieDrawable(File file, int i, int i2, boolean z, boolean z2, float f, int[] iArr) {
-        C9971q.m14632h(file, "file");
+        C9677q.m14632h(file, "file");
         int[] iArr2 = new int[3];
         this.metaData = iArr2;
         this.customEndFrame = -1;
@@ -797,7 +797,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                         if (numArr != null) {
                             RLottieDrawable.Companion companion2 = RLottieDrawable.Companion;
                             j3 = RLottieDrawable.this.nativePtr;
-                            n0 = C9899f.m14923n0(numArr);
+                            n0 = C9603f.m14923n0(numArr);
                             companion2.replaceColors(j3, n0);
                         }
                         RLottieDrawable.this.pendingReplaceColors = null;
@@ -807,13 +807,13 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                             i5 = RLottieDrawable.this.currentFrame;
                             Bitmap backgroundBitmap = RLottieDrawable.this.getBackgroundBitmap();
                             if (backgroundBitmap == null) {
-                                C9971q.m14621s();
+                                C9677q.m14621s();
                             }
                             i6 = RLottieDrawable.this.width;
                             i7 = RLottieDrawable.this.height;
                             Bitmap backgroundBitmap2 = RLottieDrawable.this.getBackgroundBitmap();
                             if (backgroundBitmap2 == null) {
-                                C9971q.m14621s();
+                                C9677q.m14621s();
                             }
                             frame = companion3.getFrame(j2, i5, backgroundBitmap, i6, i7, backgroundBitmap2.getRowBytes(), true);
                             if (frame == -1) {
@@ -886,11 +886,11 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this.shouldLimitFps = z2;
         this.screenRefreshRate = f;
         Paint paint = getPaint();
-        C9971q.m14637c(paint, "paint");
+        C9677q.m14637c(paint, "paint");
         paint.setFlags(2);
         Companion companion = Companion;
         String absolutePath = file.getAbsolutePath();
-        C9971q.m14637c(absolutePath, "file.absolutePath");
+        C9677q.m14637c(absolutePath, "file.absolutePath");
         this.nativePtr = companion.create(absolutePath, i, i2, iArr2, z, iArr, this.shouldLimitFps);
         if (z && lottieCacheGenerateQueue == null) {
             lottieCacheGenerateQueue = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue());
@@ -909,8 +909,8 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
     }
 
     public RLottieDrawable(Context context, int i, String name, int i2, int i3, float f, boolean z, int[] iArr) {
-        C9971q.m14632h(context, "context");
-        C9971q.m14632h(name, "name");
+        C9677q.m14632h(context, "context");
+        C9677q.m14632h(name, "name");
         this.metaData = new int[3];
         this.customEndFrame = -1;
         this.newColorUpdates = new HashMap<>();
@@ -1086,7 +1086,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                         if (numArr != null) {
                             RLottieDrawable.Companion companion2 = RLottieDrawable.Companion;
                             j3 = RLottieDrawable.this.nativePtr;
-                            n0 = C9899f.m14923n0(numArr);
+                            n0 = C9603f.m14923n0(numArr);
                             companion2.replaceColors(j3, n0);
                         }
                         RLottieDrawable.this.pendingReplaceColors = null;
@@ -1096,13 +1096,13 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                             i5 = RLottieDrawable.this.currentFrame;
                             Bitmap backgroundBitmap = RLottieDrawable.this.getBackgroundBitmap();
                             if (backgroundBitmap == null) {
-                                C9971q.m14621s();
+                                C9677q.m14621s();
                             }
                             i6 = RLottieDrawable.this.width;
                             i7 = RLottieDrawable.this.height;
                             Bitmap backgroundBitmap2 = RLottieDrawable.this.getBackgroundBitmap();
                             if (backgroundBitmap2 == null) {
-                                C9971q.m14621s();
+                                C9677q.m14621s();
                             }
                             frame = companion3.getFrame(j2, i5, backgroundBitmap, i6, i7, backgroundBitmap2.getRowBytes(), true);
                             if (frame == -1) {
@@ -1172,13 +1172,13 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         };
         try {
             InputStream openRawResource = context.getResources().openRawResource(i);
-            C9971q.m14637c(openRawResource, "context.resources.openRawResource(rawRes)");
-            C9949e0 e0Var = new C9949e0();
+            C9677q.m14637c(openRawResource, "context.resources.openRawResource(rawRes)");
+            C9654e0 e0Var = new C9654e0();
             int i4 = 0;
             while (true) {
                 byte[] bArr = buffer;
                 int read = openRawResource.read(bArr, 0, bArr.length);
-                e0Var.f22075k = read;
+                e0Var.f25813k = read;
                 if (read <= 0) {
                     break;
                 }
@@ -1188,16 +1188,16 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                     System.arraycopy(bArr2, 0, bArr3, 0, i4);
                     readBuffer = bArr3;
                 }
-                System.arraycopy(bArr, 0, readBuffer, i4, e0Var.f22075k);
-                i4 += e0Var.f22075k;
+                System.arraycopy(bArr, 0, readBuffer, i4, e0Var.f25813k);
+                i4 += e0Var.f25813k;
             }
-            String str = new String(readBuffer, 0, i4, C12694d.f28536b);
+            String str = new String(readBuffer, 0, i4, C12563d.f32852b);
             openRawResource.close();
             this.width = i2;
             this.height = i3;
             this.screenRefreshRate = f;
             Paint paint = getPaint();
-            C9971q.m14637c(paint, "paint");
+            C9677q.m14637c(paint, "paint");
             paint.setFlags(2);
             this.nativePtr = Companion.createWithJson(str, name, this.metaData, iArr);
             this.timeBetweenFrames = Math.max(16, (int) (1000.0f / this.metaData[1]));

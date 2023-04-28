@@ -3,9 +3,9 @@ package com.discord.icons.media;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.media.utils.DiscordVideoMediaSource;
 import kotlin.Metadata;
-import kotlin.collections.C9899f;
-import kotlin.jvm.internal.C9971q;
-import p163j$.util.Spliterator;
+import kotlin.collections.C9603f;
+import kotlin.jvm.internal.C9677q;
+import p164j$.util.Spliterator;
 
 @Metadata(m15074d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0004\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0019\u0010\b\u001a\u0004\u0018\u00010\u00042\b\u0010\t\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0002\u0010\nJ)\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\f2\b\u0010\t\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\u000fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0080T¢\u0006\u0002\n\u0000R\u0016\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0006X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0007¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/icons/media/MediaProxy;", "", "()V", "IMAGE_SIZE_ASSET_DEFAULT_PX", "", "MEDIA_PROXY_SIZES", "", "[Ljava/lang/Integer;", "getMediaProxySize", "size", "(Ljava/lang/Integer;)Ljava/lang/Integer;", "withSize", "", "url", "params", "(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;", "icons_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -48,7 +48,7 @@ public final class MediaProxy {
         if (num2 != null) {
             i = num2.intValue();
         } else {
-            d0 = C9899f.m14933d0(MEDIA_PROXY_SIZES);
+            d0 = C9603f.m14933d0(MEDIA_PROXY_SIZES);
             i = ((Number) d0).intValue();
         }
         return Integer.valueOf(i);
@@ -62,7 +62,7 @@ public final class MediaProxy {
     }
 
     public final String withSize(String url, Integer num, String str) {
-        C9971q.m14633g(url, "url");
+        C9677q.m14633g(url, "url");
         String str2 = "";
         String str3 = null;
         if (num == null || num.intValue() <= 0) {

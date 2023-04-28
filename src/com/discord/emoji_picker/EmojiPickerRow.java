@@ -2,7 +2,7 @@ package com.discord.emoji_picker;
 
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0080\b\u0018\u00002\u00020\u0001:\u0001\u001bB-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\u0011\u0010\u0013\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007HÆ\u0003J9\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\u0010\b\u0002\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0019\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000b¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/emoji_picker/EmojiPickerRow;", "", "rowContentWidth", "", "rowContentPaddingVertical", "itemSize", "items", "", "Lcom/discord/emoji_picker/EmojiPickerRow$Emoji;", "(IIILjava/util/List;)V", "getItemSize", "()I", "getItems", "()Ljava/util/List;", "getRowContentPaddingVertical", "getRowContentWidth", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "", "Emoji", "emoji_picker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -18,14 +18,14 @@ public final class EmojiPickerRow {
         private final boolean disabled;
 
         /* renamed from: id */
-        private final String f7441id;
+        private final String f8759id;
         private final String name;
         private final String url;
 
         public Emoji(String str, String name, String url, boolean z) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(url, "url");
-            this.f7441id = str;
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(url, "url");
+            this.f8759id = str;
             this.name = name;
             this.url = url;
             this.disabled = z;
@@ -33,7 +33,7 @@ public final class EmojiPickerRow {
 
         public static /* synthetic */ Emoji copy$default(Emoji emoji, String str, String str2, String str3, boolean z, int i, Object obj) {
             if ((i & 1) != 0) {
-                str = emoji.f7441id;
+                str = emoji.f8759id;
             }
             if ((i & 2) != 0) {
                 str2 = emoji.name;
@@ -48,7 +48,7 @@ public final class EmojiPickerRow {
         }
 
         public final String component1() {
-            return this.f7441id;
+            return this.f8759id;
         }
 
         public final String component2() {
@@ -64,8 +64,8 @@ public final class EmojiPickerRow {
         }
 
         public final Emoji copy(String str, String name, String url, boolean z) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(url, "url");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(url, "url");
             return new Emoji(str, name, url, z);
         }
 
@@ -77,7 +77,7 @@ public final class EmojiPickerRow {
                 return false;
             }
             Emoji emoji = (Emoji) obj;
-            return C9971q.m14638b(this.f7441id, emoji.f7441id) && C9971q.m14638b(this.name, emoji.name) && C9971q.m14638b(this.url, emoji.url) && this.disabled == emoji.disabled;
+            return C9677q.m14638b(this.f8759id, emoji.f8759id) && C9677q.m14638b(this.name, emoji.name) && C9677q.m14638b(this.url, emoji.url) && this.disabled == emoji.disabled;
         }
 
         public final boolean getDisabled() {
@@ -85,7 +85,7 @@ public final class EmojiPickerRow {
         }
 
         public final String getId() {
-            return this.f7441id;
+            return this.f8759id;
         }
 
         public final String getName() {
@@ -97,7 +97,7 @@ public final class EmojiPickerRow {
         }
 
         public int hashCode() {
-            String str = this.f7441id;
+            String str = this.f8759id;
             int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31) + this.url.hashCode()) * 31;
             boolean z = this.disabled;
             if (z) {
@@ -110,7 +110,7 @@ public final class EmojiPickerRow {
         }
 
         public String toString() {
-            String str = this.f7441id;
+            String str = this.f8759id;
             String str2 = this.name;
             String str3 = this.url;
             boolean z = this.disabled;
@@ -119,7 +119,7 @@ public final class EmojiPickerRow {
     }
 
     public EmojiPickerRow(int i, int i2, int i3, List<Emoji> items) {
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         this.rowContentWidth = i;
         this.rowContentPaddingVertical = i2;
         this.itemSize = i3;
@@ -160,7 +160,7 @@ public final class EmojiPickerRow {
     }
 
     public final EmojiPickerRow copy(int i, int i2, int i3, List<Emoji> items) {
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         return new EmojiPickerRow(i, i2, i3, items);
     }
 
@@ -172,7 +172,7 @@ public final class EmojiPickerRow {
             return false;
         }
         EmojiPickerRow emojiPickerRow = (EmojiPickerRow) obj;
-        return this.rowContentWidth == emojiPickerRow.rowContentWidth && this.rowContentPaddingVertical == emojiPickerRow.rowContentPaddingVertical && this.itemSize == emojiPickerRow.itemSize && C9971q.m14638b(this.items, emojiPickerRow.items);
+        return this.rowContentWidth == emojiPickerRow.rowContentWidth && this.rowContentPaddingVertical == emojiPickerRow.rowContentPaddingVertical && this.itemSize == emojiPickerRow.itemSize && C9677q.m14638b(this.items, emojiPickerRow.items);
     }
 
     public final int getItemSize() {

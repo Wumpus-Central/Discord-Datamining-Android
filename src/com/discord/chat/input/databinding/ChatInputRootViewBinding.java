@@ -3,9 +3,9 @@ package com.discord.chat.input.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.input.C4263R;
+import com.discord.chat.input.C3159R;
 import com.discord.chat.input.views.DCDChatInput;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class ChatInputRootViewBinding {
@@ -18,8 +18,8 @@ public final class ChatInputRootViewBinding {
     }
 
     public static ChatInputRootViewBinding bind(View view) {
-        int i = C4263R.C4265id.chat_input_edit_text;
-        DCDChatInput dCDChatInput = (DCDChatInput) C13922a.m2313a(view, i);
+        int i = C3159R.C3161id.chat_input_edit_text;
+        DCDChatInput dCDChatInput = (DCDChatInput) C13836a.m2313a(view, i);
         if (dCDChatInput != null) {
             return new ChatInputRootViewBinding(view, dCDChatInput);
         }
@@ -28,7 +28,7 @@ public final class ChatInputRootViewBinding {
 
     public static ChatInputRootViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4263R.layout.chat_input_root_view, viewGroup);
+            layoutInflater.inflate(C3159R.layout.chat_input_root_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

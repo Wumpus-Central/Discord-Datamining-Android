@@ -8,10 +8,10 @@ import com.facebook.imagepipeline.request.BasePostprocessor;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11088q;
+import nf.C10843q;
 
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bv\u0018\u0000 \u00052\u00020\u0001:\u0005\u0004\u0005\u0006\u0007\bJ\b\u0010\u0002\u001a\u00020\u0003H\u0016\u0082\u0001\u0004\t\n\u000b\f¨\u0006\r"}, m15073d2 = {"Lcom/discord/image/fresco/postprocessors/PostProcessor;", "", "create", "Lcom/facebook/imagepipeline/request/BasePostprocessor;", "Circle", "Companion", "Composite", "Gradient", "Grayscale", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Circle;", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Composite;", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Gradient;", "Lcom/discord/image/fresco/postprocessors/PostProcessor$Grayscale;", "fresco_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -42,10 +42,10 @@ public interface PostProcessor {
 
         public final BasePostprocessor create(PostProcessor processor) {
             int t;
-            C9971q.m14633g(processor, "processor");
+            C9677q.m14633g(processor, "processor");
             if (processor instanceof Composite) {
                 List<PostProcessor> postprocessors = ((Composite) processor).getPostprocessors();
-                t = C9907k.m14809t(postprocessors, 10);
+                t = C9611k.m14809t(postprocessors, 10);
                 ArrayList arrayList = new ArrayList(t);
                 for (PostProcessor postProcessor : postprocessors) {
                     arrayList.add($$INSTANCE.create(postProcessor));
@@ -60,7 +60,7 @@ public interface PostProcessor {
                 if (processor instanceof Gradient) {
                     return new GradientPostprocessor((Gradient) processor);
                 }
-                throw new C11088q();
+                throw new C10843q();
             }
         }
     }
@@ -72,7 +72,7 @@ public interface PostProcessor {
 
         /* JADX WARN: Multi-variable type inference failed */
         public Composite(List<? extends PostProcessor> postprocessors) {
-            C9971q.m14633g(postprocessors, "postprocessors");
+            C9677q.m14633g(postprocessors, "postprocessors");
             this.postprocessors = postprocessors;
         }
 
@@ -89,7 +89,7 @@ public interface PostProcessor {
         }
 
         public final Composite copy(List<? extends PostProcessor> postprocessors) {
-            C9971q.m14633g(postprocessors, "postprocessors");
+            C9677q.m14633g(postprocessors, "postprocessors");
             return new Composite(postprocessors);
         }
 
@@ -102,7 +102,7 @@ public interface PostProcessor {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Composite) && C9971q.m14638b(this.postprocessors, ((Composite) obj).postprocessors);
+            return (obj instanceof Composite) && C9677q.m14638b(this.postprocessors, ((Composite) obj).postprocessors);
         }
 
         public final List<PostProcessor> getPostprocessors() {
@@ -127,8 +127,8 @@ public interface PostProcessor {
             /*
                 r1 = this;
                 java.lang.String r0 = "postprocessors"
-                kotlin.jvm.internal.C9971q.m14633g(r2, r0)
-                java.util.List r2 = kotlin.collections.C9894b.m15002u0(r2)
+                kotlin.jvm.internal.C9677q.m14633g(r2, r0)
+                java.util.List r2 = kotlin.collections.C9598b.m15002u0(r2)
                 r1.<init>(r2)
                 return
             */
@@ -179,7 +179,7 @@ public interface PostProcessor {
         }
 
         public Gradient(Direction direction, int i, int i2, float f, float f2) {
-            C9971q.m14633g(direction, "direction");
+            C9677q.m14633g(direction, "direction");
             this.direction = direction;
             this.startColor = i;
             this.endColor = i2;
@@ -227,7 +227,7 @@ public interface PostProcessor {
         }
 
         public final Gradient copy(Direction direction, int i, int i2, float f, float f2) {
-            C9971q.m14633g(direction, "direction");
+            C9677q.m14633g(direction, "direction");
             return new Gradient(direction, i, i2, f, f2);
         }
 

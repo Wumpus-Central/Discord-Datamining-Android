@@ -17,7 +17,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000?\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0003*\u0001\n\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0007J\u0018\u0010\u0010\u001a\u00020\r2\u0006\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u0013H\u0007J\b\u0010\u0014\u001a\u00020\u000fH\u0016J\b\u0010\u0015\u001a\u00020\rH\u0002J\u0010\u0010\u0016\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0007J\u0010\u0010\u0017\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0007J\u0010\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0019\u001a\u00020\u001aH\u0007J\b\u0010\u001b\u001a\u00020\rH\u0002R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0010\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u000bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001d"}, m15073d2 = {"Lcom/discord/media/PhotoLibraryHelperModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "eventEmitter", "Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;", "getEventEmitter", "()Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;", "listener", "com/discord/media/PhotoLibraryHelperModule$listener$1", "Lcom/discord/media/PhotoLibraryHelperModule$listener$1;", "addListener", "", "type", "", "doesAttachmentExist", "uri", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getName", "register", "registerEventListener", "removeEventListener", "removeListeners", "count", "", "unregister", "Companion", "media_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -43,7 +43,7 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
     /* JADX WARN: Type inference failed for: r0v2, types: [com.discord.media.PhotoLibraryHelperModule$listener$1] */
     public PhotoLibraryHelperModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.reactContext = reactContext;
         final Handler handler = new Handler(Looper.getMainLooper());
         this.listener = new ContentObserver(handler) { // from class: com.discord.media.PhotoLibraryHelperModule$listener$1
@@ -60,7 +60,7 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public final DeviceEventManagerModule.RCTDeviceEventEmitter getEventEmitter() {
         JavaScriptModule jSModule = getReactApplicationContext().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
-        C9971q.m14634f(jSModule, "reactApplicationContext.…EventEmitter::class.java)");
+        C9677q.m14634f(jSModule, "reactApplicationContext.…EventEmitter::class.java)");
         return (DeviceEventManagerModule.RCTDeviceEventEmitter) jSModule;
     }
 
@@ -79,8 +79,8 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void addListener(String type) {
-        C9971q.m14633g(type, "type");
-        if (C9971q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
+        C9677q.m14633g(type, "type");
+        if (C9677q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
             register();
         }
     }
@@ -88,8 +88,8 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void doesAttachmentExist(String uri, Promise promise) {
         int i;
-        C9971q.m14633g(uri, "uri");
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(uri, "uri");
+        C9677q.m14633g(promise, "promise");
         Cursor query = this.reactContext.getContentResolver().query(Uri.parse(uri), new String[]{"_id"}, null, null, null, null);
         boolean z = false;
         if (query != null) {
@@ -113,16 +113,16 @@ public final class PhotoLibraryHelperModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void registerEventListener(String type) {
-        C9971q.m14633g(type, "type");
-        if (C9971q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
+        C9677q.m14633g(type, "type");
+        if (C9677q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
             register();
         }
     }
 
     @ReactMethod
     public final void removeEventListener(String type) {
-        C9971q.m14633g(type, "type");
-        if (C9971q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
+        C9677q.m14633g(type, "type");
+        if (C9677q.m14638b(type, PHOTO_LIBRARY_CHANGED)) {
             unregister();
         }
     }

@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import java.util.Map;
-import p078e6.AbstractC6709a;
+import p078e6.AbstractC6142a;
 
 /* loaded from: classes4.dex */
 public abstract class NativeDeviceLocaleManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
@@ -14,7 +14,7 @@ public abstract class NativeDeviceLocaleManagerSpec extends ReactContextBaseJava
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
-    @AbstractC6709a
+    @AbstractC6142a
     public final Map<String, Object> getConstants() {
         return getTypedExportedConstants();
     }

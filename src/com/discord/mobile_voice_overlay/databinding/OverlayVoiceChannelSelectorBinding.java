@@ -8,9 +8,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes5.dex */
 public final class OverlayVoiceChannelSelectorBinding {
@@ -35,24 +35,24 @@ public final class OverlayVoiceChannelSelectorBinding {
     }
 
     public static OverlayVoiceChannelSelectorBinding bind(View view) {
-        int i = C4573R.C4575id.channel_select;
-        TextView textView = (TextView) C13922a.m2313a(view, i);
+        int i = C3521R.C3523id.channel_select;
+        TextView textView = (TextView) C13836a.m2313a(view, i);
         if (textView != null) {
-            i = C4573R.C4575id.close;
-            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+            i = C3521R.C3523id.close;
+            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
             if (simpleDraweeView != null) {
                 CardView cardView = (CardView) view;
-                i = C4573R.C4575id.empty_results;
-                TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                i = C3521R.C3523id.empty_results;
+                TextView textView2 = (TextView) C13836a.m2313a(view, i);
                 if (textView2 != null) {
-                    i = C4573R.C4575id.menu_container;
-                    LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+                    i = C3521R.C3523id.menu_container;
+                    LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
                     if (linearLayout != null) {
-                        i = C4573R.C4575id.overlay_channel_search;
-                        EditText editText = (EditText) C13922a.m2313a(view, i);
+                        i = C3521R.C3523id.overlay_channel_search;
+                        EditText editText = (EditText) C13836a.m2313a(view, i);
                         if (editText != null) {
-                            i = C4573R.C4575id.results_rv;
-                            RecyclerView recyclerView = (RecyclerView) C13922a.m2313a(view, i);
+                            i = C3521R.C3523id.results_rv;
+                            RecyclerView recyclerView = (RecyclerView) C13836a.m2313a(view, i);
                             if (recyclerView != null) {
                                 return new OverlayVoiceChannelSelectorBinding(cardView, textView, simpleDraweeView, cardView, textView2, linearLayout, editText, recyclerView);
                             }
@@ -69,7 +69,7 @@ public final class OverlayVoiceChannelSelectorBinding {
     }
 
     public static OverlayVoiceChannelSelectorBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4573R.layout.overlay_voice_channel_selector, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3521R.layout.overlay_voice_channel_selector, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

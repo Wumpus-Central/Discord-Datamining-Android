@@ -13,7 +13,7 @@ import com.discord.chat.input.spans.DCDDeleteOnBackspaceSpan;
 import com.discord.chat.input.spans.DCDInputSpan;
 import com.discord.chat.input.spans.DCDNoSelectionSpan;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u00004\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u001a \u0010\u0000\u001a\u00020\u0001*\u00020\u00022\b\u0010\u0003\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u0006H\u0000\u001a\u001c\u0010\u0007\u001a\u00020\u0001*\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0000\u001a\u0014\u0010\r\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000e\u001a\u00020\u000fH\u0000\u001a\u0014\u0010\u0010\u001a\u00020\u0001*\u00020\b2\u0006\u0010\u000b\u001a\u00020\fH\u0000¨\u0006\u0011"}, m15073d2 = {"addEllipsizedHint", "", "Landroid/widget/EditText;", "hint", "", "hintTruncateAt", "Landroid/text/TextUtils$TruncateAt;", "applyDCDSpan", "Landroid/text/Editable;", "span", "Lcom/discord/chat/input/spans/DCDInputSpan;", "node", "Lcom/discord/chat/input/bridge/ChatInputNode;", "removeEllipsizedHint", "maxLines", "", "setChatInputNodeStyle", "chat_input_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -35,8 +35,8 @@ public final class EditTextUtilsKt {
     }
 
     public static final void addEllipsizedHint(EditText editText, CharSequence charSequence, TextUtils.TruncateAt hintTruncateAt) {
-        C9971q.m14633g(editText, "<this>");
-        C9971q.m14633g(hintTruncateAt, "hintTruncateAt");
+        C9677q.m14633g(editText, "<this>");
+        C9677q.m14633g(hintTruncateAt, "hintTruncateAt");
         if (editText.getMaxLines() != 1) {
             editText.setMaxLines(1);
         }
@@ -52,16 +52,16 @@ public final class EditTextUtilsKt {
     }
 
     public static final void applyDCDSpan(Editable editable, DCDInputSpan span, ChatInputNode node) {
-        C9971q.m14633g(editable, "<this>");
-        C9971q.m14633g(span, "span");
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(editable, "<this>");
+        C9677q.m14633g(span, "span");
+        C9677q.m14633g(node, "node");
         if (node.getLocation() <= editable.length() && node.getLocation() + node.getLength() <= editable.length()) {
             editable.setSpan(span, node.getLocation(), node.getLocation() + node.getLength(), 33);
         }
     }
 
     public static final void removeEllipsizedHint(EditText editText, int i) {
-        C9971q.m14633g(editText, "<this>");
+        C9677q.m14633g(editText, "<this>");
         if (editText.getMaxLines() != i) {
             editText.setMaxLines(i);
         }
@@ -71,8 +71,8 @@ public final class EditTextUtilsKt {
 
     public static final void setChatInputNodeStyle(Editable editable, ChatInputNode node) {
         int i;
-        C9971q.m14633g(editable, "<this>");
-        C9971q.m14633g(node, "node");
+        C9677q.m14633g(editable, "<this>");
+        C9677q.m14633g(node, "node");
         ChatInputNodeStyle style = node.getStyle();
         if (style != null) {
             applyDCDSpan(editable, new DCDColorSpan(style.getColor()), node);

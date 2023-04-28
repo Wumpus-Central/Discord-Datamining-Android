@@ -14,9 +14,9 @@ import com.discord.notifications.actions.intents.NotificationAction;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u000e\u0018\u0000 \u001f2\u00020\u0001:\u0001\u001fB\u0005¢\u0006\u0002\u0010\u0002J\u001d\u0010\n\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f¢\u0006\u0002\u0010\u0010J\r\u0010\u0011\u001a\u00020\u0012H\u0000¢\u0006\u0002\b\u0013J\u0015\u0010\u0014\u001a\u00020\u000b2\u0006\u0010\u0015\u001a\u00020\u0004H\u0000¢\u0006\u0002\b\u0016J\u0015\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rH\u0000¢\u0006\u0002\b\u0018J\r\u0010\u0019\u001a\u00020\u000bH\u0000¢\u0006\u0002\b\u001aJ#\u0010\u001b\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006H\u0000¢\u0006\u0002\b\u001cJ\u0015\u0010\u001d\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\rH\u0000¢\u0006\u0002\b\u001eR\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006 "}, m15073d2 = {"Lcom/discord/foreground_service/ForegroundServiceManager;", "", "()V", "service", "Landroid/app/Service;", "serviceConfigurations", "", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration;", "serviceWakelocks", "Lcom/discord/foreground_service/utils/Wakelocks;", "handleIntent", "", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "(Landroid/content/Context;Landroid/content/Intent;)Lkotlin/Unit;", "isRunning", "", "isRunning$foreground_service_release", "onServiceConnected", "foregroundService", "onServiceConnected$foreground_service_release", "onServiceCreated", "onServiceCreated$foreground_service_release", "onServiceDisconnected", "onServiceDisconnected$foreground_service_release", "startService", "startService$foreground_service_release", "stopService", "stopService$foreground_service_release", "Companion", "foreground_service_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -47,19 +47,19 @@ public final class ForegroundServiceManager {
 
     public ForegroundServiceManager() {
         List<ServiceNotificationConfiguration> i;
-        i = C9906j.m14820i();
+        i = C9610j.m14820i();
         this.serviceConfigurations = i;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         this.serviceWakelocks = new Wakelocks(tag2, 0L, 2, null);
     }
 
     public final Unit handleIntent(Context context, Intent intent) {
         NotificationAction notificationAction;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(intent, "intent");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(intent, "intent");
         NotificationAction.Companion companion = NotificationAction.Companion;
-        if (IntentUtilsKt.hasExtra(intent, C9951f0.m14684b(GenericAction.class))) {
+        if (IntentUtilsKt.hasExtra(intent, C9656f0.m14684b(GenericAction.class))) {
             notificationAction = (NotificationAction) IntentUtilsKt.getIntentParcelable(intent);
         } else {
             notificationAction = null;
@@ -69,7 +69,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {
@@ -83,10 +83,10 @@ public final class ForegroundServiceManager {
     }
 
     public final synchronized void onServiceConnected$foreground_service_release(Service foregroundService) {
-        C9971q.m14633g(foregroundService, "foregroundService");
+        C9677q.m14633g(foregroundService, "foregroundService");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service connected.", null, 4, null);
         this.service = foregroundService;
         if (foregroundService != null) {
@@ -94,17 +94,17 @@ public final class ForegroundServiceManager {
                 ServiceNotification.INSTANCE.startForegroundCompat(foregroundService, foregroundService, this.serviceConfigurations);
             } else {
                 stopService$foreground_service_release(foregroundService);
-                C9971q.m14634f(tag2, "tag");
+                C9677q.m14634f(tag2, "tag");
                 Log.i$foreground_service_release$default(log, tag2, "No configuration present (process liked died), stopping service.", null, 4, null);
             }
         }
     }
 
     public final synchronized void onServiceCreated$foreground_service_release(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service created.", null, 4, null);
         this.serviceWakelocks.acquire(context);
     }
@@ -112,18 +112,18 @@ public final class ForegroundServiceManager {
     public final synchronized void onServiceDisconnected$foreground_service_release() {
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "On service destroyed.", null, 4, null);
         this.serviceWakelocks.release();
         this.service = null;
     }
 
     public final synchronized void startService$foreground_service_release(Context context, List<ServiceNotificationConfiguration> serviceConfigurations) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(serviceConfigurations, "serviceConfigurations");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(serviceConfigurations, "serviceConfigurations");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         int size = serviceConfigurations.size();
         Log.i$foreground_service_release$default(log, tag2, "Start service with " + size + " configurations.", null, 4, null);
         this.serviceConfigurations = serviceConfigurations;
@@ -131,10 +131,10 @@ public final class ForegroundServiceManager {
     }
 
     public final synchronized void stopService$foreground_service_release(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         Log log = Log.INSTANCE;
         String tag2 = tag;
-        C9971q.m14634f(tag2, "tag");
+        C9677q.m14634f(tag2, "tag");
         Log.i$foreground_service_release$default(log, tag2, "Stop service.", null, 4, null);
         ForegroundService.Companion.stop(context, this.service);
     }

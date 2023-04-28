@@ -1,17 +1,17 @@
 package com.discord.chat.bridge.reaction;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.discord.reactions.ReactionView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 32\u00020\u0001:\u000223BY\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\b\u0001\u0010\n\u001a\u00020\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\u0006\u0010\r\u001a\u00020\u0006\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0010B=\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\u0011J\t\u0010\u001e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001f\u001a\u00020\u0006HÆ\u0003J\t\u0010 \u001a\u00020\u0006HÆ\u0003J\t\u0010!\u001a\u00020\tHÆ\u0003J\t\u0010\"\u001a\u00020\u0003HÆ\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\fHÆ\u0003JG\u0010$\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\fHÆ\u0001J\u0013\u0010%\u001a\u00020\u00062\b\u0010&\u001a\u0004\u0018\u00010'HÖ\u0003J\t\u0010(\u001a\u00020\u0003HÖ\u0001J\t\u0010)\u001a\u00020*HÖ\u0001J!\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020\u00002\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u000201HÇ\u0001R\u001c\u0010\n\u001a\u00020\u00038\u0016X\u0097\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0014\u0010\u0015R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0014\u0010\b\u001a\u00020\tX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0014\u0010\r\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u0019R\u001c\u0010\u0007\u001a\u00020\u00068\u0016X\u0097\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001a\u0010\u0013\u001a\u0004\b\u0007\u0010\u0019R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0019R\u0016\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001d¨\u00064"}, m15073d2 = {"Lcom/discord/chat/bridge/reaction/MessageReaction;", "Lcom/discord/reactions/ReactionView$Reaction;", "seen1", "", "count", "me", "", "isMeBurst", "emoji", "Lcom/discord/chat/bridge/reaction/MessageReactionEmoji;", "burstCount", "themedBurstColors", "Lcom/discord/chat/bridge/reaction/ThemedBurstReactionColorPalette;", "isMe", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIZZLcom/discord/chat/bridge/reaction/MessageReactionEmoji;ILcom/discord/chat/bridge/reaction/ThemedBurstReactionColorPalette;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(IZZLcom/discord/chat/bridge/reaction/MessageReactionEmoji;ILcom/discord/chat/bridge/reaction/ThemedBurstReactionColorPalette;)V", "getBurstCount$annotations", "()V", "getBurstCount", "()I", "getCount", "getEmoji", "()Lcom/discord/chat/bridge/reaction/MessageReactionEmoji;", "()Z", "isMeBurst$annotations", "getMe", "getThemedBurstColors", "()Lcom/discord/chat/bridge/reaction/ThemedBurstReactionColorPalette;", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "other", "", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class MessageReaction implements ReactionView.Reaction {
@@ -23,7 +23,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     private final boolean isMeBurst;
 
     /* renamed from: me */
-    private final boolean f7209me;
+    private final boolean f8431me;
     private final ThemedBurstReactionColorPalette themedBurstColors;
 
     @Metadata(m15074d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, m15073d2 = {"Lcom/discord/chat/bridge/reaction/MessageReaction$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/reaction/MessageReaction;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -43,10 +43,10 @@ public final class MessageReaction implements ReactionView.Reaction {
 
     public /* synthetic */ MessageReaction(int i, int i2, boolean z, boolean z2, MessageReactionEmoji messageReactionEmoji, int i3, ThemedBurstReactionColorPalette themedBurstReactionColorPalette, boolean z3, SerializationConstructorMarker serializationConstructorMarker) {
         if (11 != (i & 11)) {
-            C3681n1.m33818b(i, 11, MessageReaction$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 11, MessageReaction$$serializer.INSTANCE.getDescriptor());
         }
         this.count = i2;
-        this.f7209me = z;
+        this.f8431me = z;
         if ((i & 4) == 0) {
             this.isMeBurst = false;
         } else {
@@ -75,7 +75,7 @@ public final class MessageReaction implements ReactionView.Reaction {
             i = messageReaction.getCount();
         }
         if ((i3 & 2) != 0) {
-            z = messageReaction.f7209me;
+            z = messageReaction.f8431me;
         }
         if ((i3 & 4) != 0) {
             z2 = messageReaction.isMeBurst();
@@ -102,12 +102,12 @@ public final class MessageReaction implements ReactionView.Reaction {
         boolean z;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z4 = false;
         output.mo13866x(serialDesc, 0, self.getCount());
-        output.mo13865y(serialDesc, 1, self.f7209me);
+        output.mo13865y(serialDesc, 1, self.f8431me);
         if (!output.mo13893A(serialDesc, 2) && !self.isMeBurst()) {
             z = false;
         } else {
@@ -133,7 +133,7 @@ public final class MessageReaction implements ReactionView.Reaction {
         if (z3) {
             output.mo13874p(serialDesc, 5, ThemedBurstReactionColorPalette$$serializer.INSTANCE, self.getThemedBurstColors());
         }
-        if (output.mo13893A(serialDesc, 6) || self.isMe() != self.f7209me) {
+        if (output.mo13893A(serialDesc, 6) || self.isMe() != self.f8431me) {
             z4 = true;
         }
         if (z4) {
@@ -146,7 +146,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public final boolean component2() {
-        return this.f7209me;
+        return this.f8431me;
     }
 
     public final boolean component3() {
@@ -166,7 +166,7 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public final MessageReaction copy(int i, boolean z, boolean z2, MessageReactionEmoji emoji, int i2, ThemedBurstReactionColorPalette themedBurstReactionColorPalette) {
-        C9971q.m14633g(emoji, "emoji");
+        C9677q.m14633g(emoji, "emoji");
         return new MessageReaction(i, z, z2, emoji, i2, themedBurstReactionColorPalette);
     }
 
@@ -178,7 +178,7 @@ public final class MessageReaction implements ReactionView.Reaction {
             return false;
         }
         MessageReaction messageReaction = (MessageReaction) obj;
-        return getCount() == messageReaction.getCount() && this.f7209me == messageReaction.f7209me && isMeBurst() == messageReaction.isMeBurst() && C9971q.m14638b(getEmoji(), messageReaction.getEmoji()) && getBurstCount() == messageReaction.getBurstCount() && C9971q.m14638b(getThemedBurstColors(), messageReaction.getThemedBurstColors());
+        return getCount() == messageReaction.getCount() && this.f8431me == messageReaction.f8431me && isMeBurst() == messageReaction.isMeBurst() && C9677q.m14638b(getEmoji(), messageReaction.getEmoji()) && getBurstCount() == messageReaction.getBurstCount() && C9677q.m14638b(getThemedBurstColors(), messageReaction.getThemedBurstColors());
     }
 
     @Override // com.discord.reactions.ReactionView.Reaction
@@ -197,12 +197,12 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public final boolean getMe() {
-        return this.f7209me;
+        return this.f8431me;
     }
 
     public int hashCode() {
         int count = getCount() * 31;
-        boolean z = this.f7209me;
+        boolean z = this.f8431me;
         int i = 1;
         if (z) {
             z = true;
@@ -235,7 +235,7 @@ public final class MessageReaction implements ReactionView.Reaction {
 
     public String toString() {
         int count = getCount();
-        boolean z = this.f7209me;
+        boolean z = this.f8431me;
         boolean isMeBurst = isMeBurst();
         MessageReactionEmoji emoji = getEmoji();
         int burstCount = getBurstCount();
@@ -244,9 +244,9 @@ public final class MessageReaction implements ReactionView.Reaction {
     }
 
     public MessageReaction(int i, boolean z, boolean z2, MessageReactionEmoji emoji, int i2, ThemedBurstReactionColorPalette themedBurstReactionColorPalette) {
-        C9971q.m14633g(emoji, "emoji");
+        C9677q.m14633g(emoji, "emoji");
         this.count = i;
-        this.f7209me = z;
+        this.f8431me = z;
         this.isMeBurst = z2;
         this.emoji = emoji;
         this.burstCount = i2;

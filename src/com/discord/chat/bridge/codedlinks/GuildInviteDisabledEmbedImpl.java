@@ -1,24 +1,24 @@
 package com.discord.chat.bridge.codedlinks;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.C3622a2;
-import bj.C3652h;
-import bj.C3676m0;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2530h;
+import bj.C2555m0;
+import bj.C2560n1;
 import com.discord.chat.bridge.codedlinks.CodedLinkExtendedType;
 import com.discord.chat.bridge.codedlinks.InviteType;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u000b\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\bX\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 \u0095\u00012\u00020\u00012\u00020\u00022\u00020\u0003:\u0004\u0094\u0001\u0095\u0001B\u008d\u0003\b\u0017\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010 \u001a\u0004\u0018\u00010\u0005\u0012\b\u0010!\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\"\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010#\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010$\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010%\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010&\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010'\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010(\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010)\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010*\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010+\u001a\u0004\u0018\u00010,\u0012\b\u0010-\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010.\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010/\u001a\u0004\u0018\u00010\u000b\u0012\b\u00100\u001a\u0004\u0018\u000101¢\u0006\u0002\u00102B\u009d\u0003\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0005\u0012\b\b\u0001\u0010\b\u001a\u00020\u0005\u0012\b\b\u0001\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000b\u0012\u0006\u0010\u000f\u001a\u00020\u000b\u0012\u0006\u0010\u0010\u001a\u00020\u000b\u0012\u0006\u0010\u0011\u001a\u00020\u000b\u0012\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u0010\u0014\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0003\u0010\u0017\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010+\u001a\u00020,\u0012\u0006\u0010-\u001a\u00020\u000b\u0012\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u00103J\t\u0010a\u001a\u00020\u0005HÆ\u0003J\u0010\u0010b\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010c\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010d\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u000b\u0010e\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010f\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010g\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010h\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0002\u0010AJ\u000b\u0010i\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010j\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010k\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0002\u0010AJ\t\u0010l\u001a\u00020\u0005HÆ\u0003J\u000b\u0010m\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010n\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010o\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010p\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010q\u001a\u0004\u0018\u00010\u0019HÆ\u0003¢\u0006\u0002\u0010AJ\u0010\u0010r\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u000b\u0010s\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010t\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010u\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u0010\u0010v\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\t\u0010w\u001a\u00020\u0005HÆ\u0003J\u0010\u0010x\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\u000b\u0010y\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010z\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010{\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u00105J\t\u0010|\u001a\u00020,HÆ\u0003J\t\u0010}\u001a\u00020\u000bHÆ\u0003J\u000b\u0010~\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010\u007f\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\n\u0010\u0080\u0001\u001a\u00020\u000bHÆ\u0003J\n\u0010\u0081\u0001\u001a\u00020\rHÆ\u0003J\n\u0010\u0082\u0001\u001a\u00020\u000bHÆ\u0003J\n\u0010\u0083\u0001\u001a\u00020\u000bHÆ\u0003J\n\u0010\u0084\u0001\u001a\u00020\u000bHÆ\u0003J\n\u0010\u0085\u0001\u001a\u00020\u000bHÆ\u0003J¶\u0003\u0010\u0086\u0001\u001a\u00020\u00002\b\b\u0003\u0010\u0007\u001a\u00020\u00052\b\b\u0003\u0010\b\u001a\u00020\u00052\b\b\u0003\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000b2\b\b\u0002\u0010\u000f\u001a\u00020\u000b2\b\b\u0002\u0010\u0010\u001a\u00020\u000b2\b\b\u0002\u0010\u0011\u001a\u00020\u000b2\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u0010\u0013\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u0010\u0014\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010\u0017\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010%\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u0010&\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010*\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020\u000b2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u000bHÆ\u0001¢\u0006\u0003\u0010\u0087\u0001J\u0016\u0010\u0088\u0001\u001a\u00020\u00192\n\u0010\u0089\u0001\u001a\u0005\u0018\u00010\u008a\u0001HÖ\u0003J\n\u0010\u008b\u0001\u001a\u00020\u0005HÖ\u0001J\n\u0010\u008c\u0001\u001a\u00020\u000bHÖ\u0001J(\u0010\u008d\u0001\u001a\u00030\u008e\u00012\u0007\u0010\u008f\u0001\u001a\u00020\u00002\b\u0010\u0090\u0001\u001a\u00030\u0091\u00012\b\u0010\u0092\u0001\u001a\u00030\u0093\u0001HÇ\u0001R\u0018\u0010\u0012\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\b4\u00105R\u0018\u0010\u0013\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\b7\u00105R\u0018\u0010\u0014\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\b8\u00105R\u0016\u0010\u0015\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0014\u0010\u0007\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b;\u0010<R\u0016\u0010\u0016\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b=\u0010:R\u0018\u0010\u0017\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\b>\u00105R\u0014\u0010\b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b?\u0010<R\u0018\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0096\u0004¢\u0006\n\n\u0002\u0010B\u001a\u0004\b@\u0010AR\u0016\u0010\u001a\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bC\u0010:R\u0016\u0010\u001b\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bD\u0010:R\u0018\u0010\u001c\u001a\u0004\u0018\u00010\u0019X\u0096\u0004¢\u0006\n\n\u0002\u0010B\u001a\u0004\bE\u0010AR\u0014\u0010+\u001a\u00020,X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010GR\u0016\u0010.\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bH\u0010:R\u0014\u0010-\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bI\u0010:R\u0014\u0010\t\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010<R\u0016\u0010/\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bK\u0010:R\u0014\u0010\n\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bL\u0010:R\u0014\u0010\u0010\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bM\u0010:R\u0014\u0010\u0011\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u0010:R\u0016\u0010$\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bO\u0010:R\u0016\u0010\u001d\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bP\u0010:R\u0016\u0010\u001e\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bQ\u0010:R\u0018\u0010\u001f\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bR\u00105R\u0018\u0010 \u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bS\u00105R\u0018\u0010!\u001a\u0004\u0018\u00010\u0019X\u0096\u0004¢\u0006\n\n\u0002\u0010B\u001a\u0004\bT\u0010AR\u0018\u0010\"\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bU\u00105R\u0016\u0010#\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bV\u0010:R\u0014\u0010\u000f\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bW\u0010:R\u0018\u0010%\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bX\u00105R\u0018\u0010&\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bY\u00105R\u0018\u0010'\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\bZ\u00105R\u0016\u0010(\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b[\u0010:R\u0016\u0010)\u001a\u0004\u0018\u00010\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010:R\u0018\u0010*\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u00106\u001a\u0004\b]\u00105R\u0014\u0010\u000e\u001a\u00020\u000bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b^\u0010:R\u0014\u0010\f\u001a\u00020\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b_\u0010`¨\u0006\u0096\u0001"}, m15073d2 = {"Lcom/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl;", "Lcom/discord/chat/bridge/codedlinks/GuildDisabledInviteEmbed;", "Lcom/discord/chat/bridge/codedlinks/GuildInviteExtendedEmbed;", "Lcom/discord/chat/bridge/codedlinks/CodedLinkEmbed;", "seen1", "", "seen2", ViewProps.BACKGROUND_COLOR, ViewProps.BORDER_COLOR, "headerColor", "headerText", "", "type", "Lcom/discord/chat/bridge/codedlinks/InviteType;", "titleText", "subtitle", "helpCenterArticleLabel", "helpCenterArticleURL", "acceptLabelBackgroundColor", "acceptLabelBorderColor", "acceptLabelColor", "acceptLabelText", "bodyText", "bodyTextColor", "canBeAccepted", "", "channelIcon", "channelName", "embedCanBeTapped", "memberText", "onlineText", "resolvingGradientEnd", "resolvingGradientStart", "splashHasRadialGradient", "splashOpacity", "splashUrl", "inviteSplash", "subtitleColor", "thumbnailBackgroundColor", "thumbnailCornerRadius", "thumbnailText", "thumbnailUrl", "titleColor", "extendedType", "Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;", "guildName", "guildIcon", "headerIcon", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIIIILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(IIILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getAcceptLabelBackgroundColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getAcceptLabelBorderColor", "getAcceptLabelColor", "getAcceptLabelText", "()Ljava/lang/String;", "getBackgroundColor", "()I", "getBodyText", "getBodyTextColor", "getBorderColor", "getCanBeAccepted", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getChannelIcon", "getChannelName", "getEmbedCanBeTapped", "getExtendedType", "()Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;", "getGuildIcon", "getGuildName", "getHeaderColor", "getHeaderIcon", "getHeaderText", "getHelpCenterArticleLabel", "getHelpCenterArticleURL", "getInviteSplash", "getMemberText", "getOnlineText", "getResolvingGradientEnd", "getResolvingGradientStart", "getSplashHasRadialGradient", "getSplashOpacity", "getSplashUrl", "getSubtitle", "getSubtitleColor", "getThumbnailBackgroundColor", "getThumbnailCornerRadius", "getThumbnailText", "getThumbnailUrl", "getTitleColor", "getTitleText", "getType", "()Lcom/discord/chat/bridge/codedlinks/InviteType;", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component3", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "(IIILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implements GuildDisabledInviteEmbed, GuildInviteExtendedEmbed {
@@ -80,7 +80,7 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
     public /* synthetic */ GuildInviteDisabledEmbedImpl(int i, int i2, int i3, int i4, int i5, String str, InviteType inviteType, String str2, String str3, String str4, String str5, Integer num, Integer num2, Integer num3, String str6, String str7, Integer num4, Boolean bool, String str8, String str9, Boolean bool2, String str10, String str11, Integer num5, Integer num6, Boolean bool3, Integer num7, String str12, String str13, Integer num8, Integer num9, Integer num10, String str14, String str15, Integer num11, CodedLinkExtendedType codedLinkExtendedType, String str16, String str17, String str18, SerializationConstructorMarker serializationConstructorMarker) {
         super(null);
         if ((511 != (i & 511)) || (4 != (i2 & 4))) {
-            C3681n1.m33819a(new int[]{i, i2}, new int[]{511, 4}, GuildInviteDisabledEmbedImpl$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33819a(new int[]{i, i2}, new int[]{511, 4}, GuildInviteDisabledEmbedImpl$$serializer.INSTANCE.getDescriptor());
         }
         this.backgroundColor = i3;
         this.borderColor = i4;
@@ -226,9 +226,9 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
     }
 
     public static final void write$Self(GuildInviteDisabledEmbedImpl self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z = false;
         output.mo13866x(serialDesc, 0, self.getBackgroundColor());
         output.mo13866x(serialDesc, 1, self.getBorderColor());
@@ -240,89 +240,89 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
         output.mo13864z(serialDesc, 7, self.getHelpCenterArticleLabel());
         output.mo13864z(serialDesc, 8, self.getHelpCenterArticleURL());
         if (output.mo13893A(serialDesc, 9) || self.getAcceptLabelBackgroundColor() != null) {
-            output.mo13874p(serialDesc, 9, C3676m0.f5992a, self.getAcceptLabelBackgroundColor());
+            output.mo13874p(serialDesc, 9, C2555m0.f6794a, self.getAcceptLabelBackgroundColor());
         }
         if (output.mo13893A(serialDesc, 10) || self.getAcceptLabelBorderColor() != null) {
-            output.mo13874p(serialDesc, 10, C3676m0.f5992a, self.getAcceptLabelBorderColor());
+            output.mo13874p(serialDesc, 10, C2555m0.f6794a, self.getAcceptLabelBorderColor());
         }
         if (output.mo13893A(serialDesc, 11) || self.getAcceptLabelColor() != null) {
-            output.mo13874p(serialDesc, 11, C3676m0.f5992a, self.getAcceptLabelColor());
+            output.mo13874p(serialDesc, 11, C2555m0.f6794a, self.getAcceptLabelColor());
         }
         if (output.mo13893A(serialDesc, 12) || self.getAcceptLabelText() != null) {
-            output.mo13874p(serialDesc, 12, C3622a2.f5917a, self.getAcceptLabelText());
+            output.mo13874p(serialDesc, 12, C2500a2.f6719a, self.getAcceptLabelText());
         }
         if (output.mo13893A(serialDesc, 13) || self.getBodyText() != null) {
-            output.mo13874p(serialDesc, 13, C3622a2.f5917a, self.getBodyText());
+            output.mo13874p(serialDesc, 13, C2500a2.f6719a, self.getBodyText());
         }
         if (output.mo13893A(serialDesc, 14) || self.getBodyTextColor() != null) {
-            output.mo13874p(serialDesc, 14, C3676m0.f5992a, self.getBodyTextColor());
+            output.mo13874p(serialDesc, 14, C2555m0.f6794a, self.getBodyTextColor());
         }
         if (output.mo13893A(serialDesc, 15) || self.getCanBeAccepted() != null) {
-            output.mo13874p(serialDesc, 15, C3652h.f5959a, self.getCanBeAccepted());
+            output.mo13874p(serialDesc, 15, C2530h.f6761a, self.getCanBeAccepted());
         }
         if (output.mo13893A(serialDesc, 16) || self.getChannelIcon() != null) {
-            output.mo13874p(serialDesc, 16, C3622a2.f5917a, self.getChannelIcon());
+            output.mo13874p(serialDesc, 16, C2500a2.f6719a, self.getChannelIcon());
         }
         if (output.mo13893A(serialDesc, 17) || self.getChannelName() != null) {
-            output.mo13874p(serialDesc, 17, C3622a2.f5917a, self.getChannelName());
+            output.mo13874p(serialDesc, 17, C2500a2.f6719a, self.getChannelName());
         }
         if (output.mo13893A(serialDesc, 18) || self.getEmbedCanBeTapped() != null) {
-            output.mo13874p(serialDesc, 18, C3652h.f5959a, self.getEmbedCanBeTapped());
+            output.mo13874p(serialDesc, 18, C2530h.f6761a, self.getEmbedCanBeTapped());
         }
         if (output.mo13893A(serialDesc, 19) || self.getMemberText() != null) {
-            output.mo13874p(serialDesc, 19, C3622a2.f5917a, self.getMemberText());
+            output.mo13874p(serialDesc, 19, C2500a2.f6719a, self.getMemberText());
         }
         if (output.mo13893A(serialDesc, 20) || self.getOnlineText() != null) {
-            output.mo13874p(serialDesc, 20, C3622a2.f5917a, self.getOnlineText());
+            output.mo13874p(serialDesc, 20, C2500a2.f6719a, self.getOnlineText());
         }
         if (output.mo13893A(serialDesc, 21) || self.getResolvingGradientEnd() != null) {
-            output.mo13874p(serialDesc, 21, C3676m0.f5992a, self.getResolvingGradientEnd());
+            output.mo13874p(serialDesc, 21, C2555m0.f6794a, self.getResolvingGradientEnd());
         }
         if (output.mo13893A(serialDesc, 22) || self.getResolvingGradientStart() != null) {
-            output.mo13874p(serialDesc, 22, C3676m0.f5992a, self.getResolvingGradientStart());
+            output.mo13874p(serialDesc, 22, C2555m0.f6794a, self.getResolvingGradientStart());
         }
         if (output.mo13893A(serialDesc, 23) || self.getSplashHasRadialGradient() != null) {
-            output.mo13874p(serialDesc, 23, C3652h.f5959a, self.getSplashHasRadialGradient());
+            output.mo13874p(serialDesc, 23, C2530h.f6761a, self.getSplashHasRadialGradient());
         }
         if (output.mo13893A(serialDesc, 24) || self.getSplashOpacity() != null) {
-            output.mo13874p(serialDesc, 24, C3676m0.f5992a, self.getSplashOpacity());
+            output.mo13874p(serialDesc, 24, C2555m0.f6794a, self.getSplashOpacity());
         }
         if (output.mo13893A(serialDesc, 25) || self.getSplashUrl() != null) {
-            output.mo13874p(serialDesc, 25, C3622a2.f5917a, self.getSplashUrl());
+            output.mo13874p(serialDesc, 25, C2500a2.f6719a, self.getSplashUrl());
         }
         if (output.mo13893A(serialDesc, 26) || self.getInviteSplash() != null) {
-            output.mo13874p(serialDesc, 26, C3622a2.f5917a, self.getInviteSplash());
+            output.mo13874p(serialDesc, 26, C2500a2.f6719a, self.getInviteSplash());
         }
         if (output.mo13893A(serialDesc, 27) || self.getSubtitleColor() != null) {
-            output.mo13874p(serialDesc, 27, C3676m0.f5992a, self.getSubtitleColor());
+            output.mo13874p(serialDesc, 27, C2555m0.f6794a, self.getSubtitleColor());
         }
         if (output.mo13893A(serialDesc, 28) || self.getThumbnailBackgroundColor() != null) {
-            output.mo13874p(serialDesc, 28, C3676m0.f5992a, self.getThumbnailBackgroundColor());
+            output.mo13874p(serialDesc, 28, C2555m0.f6794a, self.getThumbnailBackgroundColor());
         }
         if (output.mo13893A(serialDesc, 29) || self.getThumbnailCornerRadius() != null) {
-            output.mo13874p(serialDesc, 29, C3676m0.f5992a, self.getThumbnailCornerRadius());
+            output.mo13874p(serialDesc, 29, C2555m0.f6794a, self.getThumbnailCornerRadius());
         }
         if (output.mo13893A(serialDesc, 30) || self.getThumbnailText() != null) {
-            output.mo13874p(serialDesc, 30, C3622a2.f5917a, self.getThumbnailText());
+            output.mo13874p(serialDesc, 30, C2500a2.f6719a, self.getThumbnailText());
         }
         if (output.mo13893A(serialDesc, 31) || self.getThumbnailUrl() != null) {
-            output.mo13874p(serialDesc, 31, C3622a2.f5917a, self.getThumbnailUrl());
+            output.mo13874p(serialDesc, 31, C2500a2.f6719a, self.getThumbnailUrl());
         }
         if (output.mo13893A(serialDesc, 32) || self.getTitleColor() != null) {
-            output.mo13874p(serialDesc, 32, C3676m0.f5992a, self.getTitleColor());
+            output.mo13874p(serialDesc, 32, C2555m0.f6794a, self.getTitleColor());
         }
         if (output.mo13893A(serialDesc, 33) || self.getExtendedType() != CodedLinkExtendedType.GUILD_INVITE_DISABLED) {
             output.mo13870t(serialDesc, 33, CodedLinkExtendedType.Serializer.INSTANCE, self.getExtendedType());
         }
         output.mo13864z(serialDesc, 34, self.getGuildName());
         if (output.mo13893A(serialDesc, 35) || self.getGuildIcon() != null) {
-            output.mo13874p(serialDesc, 35, C3622a2.f5917a, self.getGuildIcon());
+            output.mo13874p(serialDesc, 35, C2500a2.f6719a, self.getGuildIcon());
         }
         if (output.mo13893A(serialDesc, 36) || self.getHeaderIcon() != null) {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 36, C3622a2.f5917a, self.getHeaderIcon());
+            output.mo13874p(serialDesc, 36, C2500a2.f6719a, self.getHeaderIcon());
         }
     }
 
@@ -475,14 +475,14 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
     }
 
     public final GuildInviteDisabledEmbedImpl copy(int i, int i2, int i3, String headerText, InviteType type, String titleText, String subtitle, String helpCenterArticleLabel, String helpCenterArticleURL, Integer num, Integer num2, Integer num3, String str, String str2, Integer num4, Boolean bool, String str3, String str4, Boolean bool2, String str5, String str6, Integer num5, Integer num6, Boolean bool3, Integer num7, String str7, String str8, Integer num8, Integer num9, Integer num10, String str9, String str10, Integer num11, CodedLinkExtendedType extendedType, String guildName, String str11, String str12) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(type, "type");
-        C9971q.m14633g(titleText, "titleText");
-        C9971q.m14633g(subtitle, "subtitle");
-        C9971q.m14633g(helpCenterArticleLabel, "helpCenterArticleLabel");
-        C9971q.m14633g(helpCenterArticleURL, "helpCenterArticleURL");
-        C9971q.m14633g(extendedType, "extendedType");
-        C9971q.m14633g(guildName, "guildName");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(type, "type");
+        C9677q.m14633g(titleText, "titleText");
+        C9677q.m14633g(subtitle, "subtitle");
+        C9677q.m14633g(helpCenterArticleLabel, "helpCenterArticleLabel");
+        C9677q.m14633g(helpCenterArticleURL, "helpCenterArticleURL");
+        C9677q.m14633g(extendedType, "extendedType");
+        C9677q.m14633g(guildName, "guildName");
         return new GuildInviteDisabledEmbedImpl(i, i2, i3, headerText, type, titleText, subtitle, helpCenterArticleLabel, helpCenterArticleURL, num, num2, num3, str, str2, num4, bool, str3, str4, bool2, str5, str6, num5, num6, bool3, num7, str7, str8, num8, num9, num10, str9, str10, num11, extendedType, guildName, str11, str12);
     }
 
@@ -494,7 +494,7 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
             return false;
         }
         GuildInviteDisabledEmbedImpl guildInviteDisabledEmbedImpl = (GuildInviteDisabledEmbedImpl) obj;
-        return getBackgroundColor() == guildInviteDisabledEmbedImpl.getBackgroundColor() && getBorderColor() == guildInviteDisabledEmbedImpl.getBorderColor() && getHeaderColor() == guildInviteDisabledEmbedImpl.getHeaderColor() && C9971q.m14638b(getHeaderText(), guildInviteDisabledEmbedImpl.getHeaderText()) && getType() == guildInviteDisabledEmbedImpl.getType() && C9971q.m14638b(getTitleText(), guildInviteDisabledEmbedImpl.getTitleText()) && C9971q.m14638b(getSubtitle(), guildInviteDisabledEmbedImpl.getSubtitle()) && C9971q.m14638b(getHelpCenterArticleLabel(), guildInviteDisabledEmbedImpl.getHelpCenterArticleLabel()) && C9971q.m14638b(getHelpCenterArticleURL(), guildInviteDisabledEmbedImpl.getHelpCenterArticleURL()) && C9971q.m14638b(getAcceptLabelBackgroundColor(), guildInviteDisabledEmbedImpl.getAcceptLabelBackgroundColor()) && C9971q.m14638b(getAcceptLabelBorderColor(), guildInviteDisabledEmbedImpl.getAcceptLabelBorderColor()) && C9971q.m14638b(getAcceptLabelColor(), guildInviteDisabledEmbedImpl.getAcceptLabelColor()) && C9971q.m14638b(getAcceptLabelText(), guildInviteDisabledEmbedImpl.getAcceptLabelText()) && C9971q.m14638b(getBodyText(), guildInviteDisabledEmbedImpl.getBodyText()) && C9971q.m14638b(getBodyTextColor(), guildInviteDisabledEmbedImpl.getBodyTextColor()) && C9971q.m14638b(getCanBeAccepted(), guildInviteDisabledEmbedImpl.getCanBeAccepted()) && C9971q.m14638b(getChannelIcon(), guildInviteDisabledEmbedImpl.getChannelIcon()) && C9971q.m14638b(getChannelName(), guildInviteDisabledEmbedImpl.getChannelName()) && C9971q.m14638b(getEmbedCanBeTapped(), guildInviteDisabledEmbedImpl.getEmbedCanBeTapped()) && C9971q.m14638b(getMemberText(), guildInviteDisabledEmbedImpl.getMemberText()) && C9971q.m14638b(getOnlineText(), guildInviteDisabledEmbedImpl.getOnlineText()) && C9971q.m14638b(getResolvingGradientEnd(), guildInviteDisabledEmbedImpl.getResolvingGradientEnd()) && C9971q.m14638b(getResolvingGradientStart(), guildInviteDisabledEmbedImpl.getResolvingGradientStart()) && C9971q.m14638b(getSplashHasRadialGradient(), guildInviteDisabledEmbedImpl.getSplashHasRadialGradient()) && C9971q.m14638b(getSplashOpacity(), guildInviteDisabledEmbedImpl.getSplashOpacity()) && C9971q.m14638b(getSplashUrl(), guildInviteDisabledEmbedImpl.getSplashUrl()) && C9971q.m14638b(getInviteSplash(), guildInviteDisabledEmbedImpl.getInviteSplash()) && C9971q.m14638b(getSubtitleColor(), guildInviteDisabledEmbedImpl.getSubtitleColor()) && C9971q.m14638b(getThumbnailBackgroundColor(), guildInviteDisabledEmbedImpl.getThumbnailBackgroundColor()) && C9971q.m14638b(getThumbnailCornerRadius(), guildInviteDisabledEmbedImpl.getThumbnailCornerRadius()) && C9971q.m14638b(getThumbnailText(), guildInviteDisabledEmbedImpl.getThumbnailText()) && C9971q.m14638b(getThumbnailUrl(), guildInviteDisabledEmbedImpl.getThumbnailUrl()) && C9971q.m14638b(getTitleColor(), guildInviteDisabledEmbedImpl.getTitleColor()) && getExtendedType() == guildInviteDisabledEmbedImpl.getExtendedType() && C9971q.m14638b(getGuildName(), guildInviteDisabledEmbedImpl.getGuildName()) && C9971q.m14638b(getGuildIcon(), guildInviteDisabledEmbedImpl.getGuildIcon()) && C9971q.m14638b(getHeaderIcon(), guildInviteDisabledEmbedImpl.getHeaderIcon());
+        return getBackgroundColor() == guildInviteDisabledEmbedImpl.getBackgroundColor() && getBorderColor() == guildInviteDisabledEmbedImpl.getBorderColor() && getHeaderColor() == guildInviteDisabledEmbedImpl.getHeaderColor() && C9677q.m14638b(getHeaderText(), guildInviteDisabledEmbedImpl.getHeaderText()) && getType() == guildInviteDisabledEmbedImpl.getType() && C9677q.m14638b(getTitleText(), guildInviteDisabledEmbedImpl.getTitleText()) && C9677q.m14638b(getSubtitle(), guildInviteDisabledEmbedImpl.getSubtitle()) && C9677q.m14638b(getHelpCenterArticleLabel(), guildInviteDisabledEmbedImpl.getHelpCenterArticleLabel()) && C9677q.m14638b(getHelpCenterArticleURL(), guildInviteDisabledEmbedImpl.getHelpCenterArticleURL()) && C9677q.m14638b(getAcceptLabelBackgroundColor(), guildInviteDisabledEmbedImpl.getAcceptLabelBackgroundColor()) && C9677q.m14638b(getAcceptLabelBorderColor(), guildInviteDisabledEmbedImpl.getAcceptLabelBorderColor()) && C9677q.m14638b(getAcceptLabelColor(), guildInviteDisabledEmbedImpl.getAcceptLabelColor()) && C9677q.m14638b(getAcceptLabelText(), guildInviteDisabledEmbedImpl.getAcceptLabelText()) && C9677q.m14638b(getBodyText(), guildInviteDisabledEmbedImpl.getBodyText()) && C9677q.m14638b(getBodyTextColor(), guildInviteDisabledEmbedImpl.getBodyTextColor()) && C9677q.m14638b(getCanBeAccepted(), guildInviteDisabledEmbedImpl.getCanBeAccepted()) && C9677q.m14638b(getChannelIcon(), guildInviteDisabledEmbedImpl.getChannelIcon()) && C9677q.m14638b(getChannelName(), guildInviteDisabledEmbedImpl.getChannelName()) && C9677q.m14638b(getEmbedCanBeTapped(), guildInviteDisabledEmbedImpl.getEmbedCanBeTapped()) && C9677q.m14638b(getMemberText(), guildInviteDisabledEmbedImpl.getMemberText()) && C9677q.m14638b(getOnlineText(), guildInviteDisabledEmbedImpl.getOnlineText()) && C9677q.m14638b(getResolvingGradientEnd(), guildInviteDisabledEmbedImpl.getResolvingGradientEnd()) && C9677q.m14638b(getResolvingGradientStart(), guildInviteDisabledEmbedImpl.getResolvingGradientStart()) && C9677q.m14638b(getSplashHasRadialGradient(), guildInviteDisabledEmbedImpl.getSplashHasRadialGradient()) && C9677q.m14638b(getSplashOpacity(), guildInviteDisabledEmbedImpl.getSplashOpacity()) && C9677q.m14638b(getSplashUrl(), guildInviteDisabledEmbedImpl.getSplashUrl()) && C9677q.m14638b(getInviteSplash(), guildInviteDisabledEmbedImpl.getInviteSplash()) && C9677q.m14638b(getSubtitleColor(), guildInviteDisabledEmbedImpl.getSubtitleColor()) && C9677q.m14638b(getThumbnailBackgroundColor(), guildInviteDisabledEmbedImpl.getThumbnailBackgroundColor()) && C9677q.m14638b(getThumbnailCornerRadius(), guildInviteDisabledEmbedImpl.getThumbnailCornerRadius()) && C9677q.m14638b(getThumbnailText(), guildInviteDisabledEmbedImpl.getThumbnailText()) && C9677q.m14638b(getThumbnailUrl(), guildInviteDisabledEmbedImpl.getThumbnailUrl()) && C9677q.m14638b(getTitleColor(), guildInviteDisabledEmbedImpl.getTitleColor()) && getExtendedType() == guildInviteDisabledEmbedImpl.getExtendedType() && C9677q.m14638b(getGuildName(), guildInviteDisabledEmbedImpl.getGuildName()) && C9677q.m14638b(getGuildIcon(), guildInviteDisabledEmbedImpl.getGuildIcon()) && C9677q.m14638b(getHeaderIcon(), guildInviteDisabledEmbedImpl.getHeaderIcon());
     }
 
     @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
@@ -739,14 +739,14 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GuildInviteDisabledEmbedImpl(int i, int i2, int i3, String headerText, InviteType type, String titleText, String subtitle, String helpCenterArticleLabel, String helpCenterArticleURL, Integer num, Integer num2, Integer num3, String str, String str2, Integer num4, Boolean bool, String str3, String str4, Boolean bool2, String str5, String str6, Integer num5, Integer num6, Boolean bool3, Integer num7, String str7, String str8, Integer num8, Integer num9, Integer num10, String str9, String str10, Integer num11, CodedLinkExtendedType extendedType, String guildName, String str11, String str12) {
         super(null);
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(type, "type");
-        C9971q.m14633g(titleText, "titleText");
-        C9971q.m14633g(subtitle, "subtitle");
-        C9971q.m14633g(helpCenterArticleLabel, "helpCenterArticleLabel");
-        C9971q.m14633g(helpCenterArticleURL, "helpCenterArticleURL");
-        C9971q.m14633g(extendedType, "extendedType");
-        C9971q.m14633g(guildName, "guildName");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(type, "type");
+        C9677q.m14633g(titleText, "titleText");
+        C9677q.m14633g(subtitle, "subtitle");
+        C9677q.m14633g(helpCenterArticleLabel, "helpCenterArticleLabel");
+        C9677q.m14633g(helpCenterArticleURL, "helpCenterArticleURL");
+        C9677q.m14633g(extendedType, "extendedType");
+        C9677q.m14633g(guildName, "guildName");
         this.backgroundColor = i;
         this.borderColor = i2;
         this.headerColor = i3;

@@ -4,16 +4,16 @@ import android.view.View;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$handleTouch$2", m14701f = "NestedScrollOnTouchTracker.kt", m14700l = {70, 78}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$handleTouch$2", m14701f = "NestedScrollOnTouchTracker.kt", m14700l = {70, 78}, m14699m = "invokeSuspend")
 /* loaded from: classes6.dex */
-public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ View $view;
     int label;
     final /* synthetic */ NestedScrollOnTouchTracker this$0;
@@ -26,20 +26,20 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
         this.$view = view;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new NestedScrollOnTouchTracker$handleTouch$2(this.this$0, this.$view, continuation);
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NestedScrollOnTouchTracker$handleTouch$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((NestedScrollOnTouchTracker$handleTouch$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:23:0x0069  */
     /* JADX WARN: Removed duplicated region for block: B:24:0x0074  */
     /* JADX WARN: Removed duplicated region for block: B:27:0x0080  */
     /* JADX WARN: Removed duplicated region for block: B:28:0x0086  */
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -47,14 +47,14 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
     public final java.lang.Object invokeSuspend(java.lang.Object r9) {
         /*
             r8 = this;
-            java.lang.Object r0 = tf.C13075b.m4650d()
+            java.lang.Object r0 = tf.C12956b.m4650d()
             int r1 = r8.label
             r2 = 2
             r3 = 1
             if (r1 == 0) goto L_0x001e
             if (r1 == r3) goto L_0x001a
             if (r1 != r2) goto L_0x0012
-            nf.C11093t.m10930b(r9)
+            nf.C10848t.m10930b(r9)
             goto L_0x0061
         L_0x0012:
             java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
@@ -62,14 +62,14 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
             r9.<init>(r0)
             throw r9
         L_0x001a:
-            nf.C11093t.m10930b(r9)
+            nf.C10848t.m10930b(r9)
             goto L_0x0032
         L_0x001e:
-            nf.C11093t.m10930b(r9)
+            nf.C10848t.m10930b(r9)
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$Companion r9 = com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker.access$getCompanion$p()
             long r4 = r9.getCLICK_MAX_DOWN_TIME()
             r8.label = r3
-            java.lang.Object r9 = kotlinx.coroutines.C10210t0.m13992a(r4, r8)
+            java.lang.Object r9 = kotlinx.coroutines.C9926t0.m13992a(r4, r8)
             if (r9 != r0) goto L_0x0032
             return r0
         L_0x0032:
@@ -88,7 +88,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
             long r6 = r9.getCLICK_MAX_DOWN_TIME()
             long r4 = r4 - r6
             r8.label = r2
-            java.lang.Object r9 = kotlinx.coroutines.C10210t0.m13992a(r4, r8)
+            java.lang.Object r9 = kotlinx.coroutines.C9926t0.m13992a(r4, r8)
             if (r9 != r0) goto L_0x0061
             return r0
         L_0x0061:
@@ -97,13 +97,13 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
             if (r9 == 0) goto L_0x0074
             android.view.View r0 = r8.$view
             boolean r9 = r9.onLongClick(r0)
-            java.lang.Boolean r9 = kotlin.coroutines.jvm.internal.C9928b.m14706a(r9)
+            java.lang.Boolean r9 = kotlin.coroutines.jvm.internal.C9633b.m14706a(r9)
             goto L_0x0075
         L_0x0074:
             r9 = 0
         L_0x0075:
-            java.lang.Boolean r0 = kotlin.coroutines.jvm.internal.C9928b.m14706a(r3)
-            boolean r9 = kotlin.jvm.internal.C9971q.m14638b(r9, r0)
+            java.lang.Boolean r0 = kotlin.coroutines.jvm.internal.C9633b.m14706a(r3)
+            boolean r9 = kotlin.jvm.internal.C9677q.m14638b(r9, r0)
             r0 = 0
             if (r9 == 0) goto L_0x0086
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker r9 = r8.this$0
@@ -127,7 +127,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends AbstractC993
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker r9 = r8.this$0
             android.view.View r0 = r8.$view
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker.access$cleanUp(r9, r0)
-            kotlin.Unit r9 = kotlin.Unit.f22042a
+            kotlin.Unit r9 = kotlin.Unit.f25780a
             return r9
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$handleTouch$2.invokeSuspend(java.lang.Object):java.lang.Object");

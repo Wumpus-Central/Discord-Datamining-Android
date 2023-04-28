@@ -1,7 +1,7 @@
 package com.discord.chat.listmanager;
 
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.ranges.IntRange;
 
@@ -66,7 +66,7 @@ public abstract class ListOperation {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public ChangeRange(IntRange range) {
             super(null);
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             this.range = range;
             this.first = range.m14605a();
             this.last = range.m14604b();
@@ -85,7 +85,7 @@ public abstract class ListOperation {
         }
 
         public final ChangeRange copy(IntRange range) {
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             return new ChangeRange(range);
         }
 
@@ -93,7 +93,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof ChangeRange) && C9971q.m14638b(this.range, ((ChangeRange) obj).range);
+            return (obj instanceof ChangeRange) && C9677q.m14638b(this.range, ((ChangeRange) obj).range);
         }
 
         public final int getCount() {
@@ -179,7 +179,7 @@ public abstract class ListOperation {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public InsertRange(IntRange range) {
             super(null);
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             this.range = range;
             this.first = range.m14605a();
             this.last = range.m14604b();
@@ -198,7 +198,7 @@ public abstract class ListOperation {
         }
 
         public final InsertRange copy(IntRange range) {
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             return new InsertRange(range);
         }
 
@@ -206,7 +206,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof InsertRange) && C9971q.m14638b(this.range, ((InsertRange) obj).range);
+            return (obj instanceof InsertRange) && C9677q.m14638b(this.range, ((InsertRange) obj).range);
         }
 
         public final int getCount() {
@@ -292,7 +292,7 @@ public abstract class ListOperation {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public RemoveRange(IntRange range) {
             super(null);
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             this.range = range;
             this.first = range.m14605a();
             this.last = range.m14604b();
@@ -311,7 +311,7 @@ public abstract class ListOperation {
         }
 
         public final RemoveRange copy(IntRange range) {
-            C9971q.m14633g(range, "range");
+            C9677q.m14633g(range, "range");
             return new RemoveRange(range);
         }
 
@@ -319,7 +319,7 @@ public abstract class ListOperation {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof RemoveRange) && C9971q.m14638b(this.range, ((RemoveRange) obj).range);
+            return (obj instanceof RemoveRange) && C9677q.m14638b(this.range, ((RemoveRange) obj).range);
         }
 
         public final int getCount() {

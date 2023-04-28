@@ -2,7 +2,7 @@ package com.discord.simpleast.code;
 
 import com.discord.simpleast.core.node.StyleNode;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002B\u0085\u0001\u0012\u000e\b\u0002\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\u0002\u0010\fJ\u000f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u000f\u0010\u001d\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0003J\u008f\u0001\u0010\u001e\u001a\b\u0012\u0004\u0012\u00028\u00000\u00002\u000e\b\u0002\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00028\u00000\u00042\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004HÆ\u0001J\u0013\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\u0002HÖ\u0003J\t\u0010\"\u001a\u00020#HÖ\u0001J\t\u0010$\u001a\u00020%HÖ\u0001R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000eR\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000eR\u0017\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u000eR\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000eR\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000eR\u0017\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u000e¨\u0006&"}, m15073d2 = {"Lcom/discord/simpleast/code/CodeStyleProviders;", "R", "", "defaultStyleProvider", "Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;", "commentStyleProvider", "literalStyleProvider", "keywordStyleProvider", "identifierStyleProvider", "typesStyleProvider", "genericsStyleProvider", "paramsStyleProvider", "(Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;)V", "getCommentStyleProvider", "()Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;", "getDefaultStyleProvider", "getGenericsStyleProvider", "getIdentifierStyleProvider", "getKeywordStyleProvider", "getLiteralStyleProvider", "getParamsStyleProvider", "getTypesStyleProvider", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "equals", "", "other", "hashCode", "", "toString", "", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
@@ -22,14 +22,14 @@ public final class CodeStyleProviders<R> {
     }
 
     public CodeStyleProviders(StyleNode.SpanProvider<R> defaultStyleProvider, StyleNode.SpanProvider<R> commentStyleProvider, StyleNode.SpanProvider<R> literalStyleProvider, StyleNode.SpanProvider<R> keywordStyleProvider, StyleNode.SpanProvider<R> identifierStyleProvider, StyleNode.SpanProvider<R> typesStyleProvider, StyleNode.SpanProvider<R> genericsStyleProvider, StyleNode.SpanProvider<R> paramsStyleProvider) {
-        C9971q.m14633g(defaultStyleProvider, "defaultStyleProvider");
-        C9971q.m14633g(commentStyleProvider, "commentStyleProvider");
-        C9971q.m14633g(literalStyleProvider, "literalStyleProvider");
-        C9971q.m14633g(keywordStyleProvider, "keywordStyleProvider");
-        C9971q.m14633g(identifierStyleProvider, "identifierStyleProvider");
-        C9971q.m14633g(typesStyleProvider, "typesStyleProvider");
-        C9971q.m14633g(genericsStyleProvider, "genericsStyleProvider");
-        C9971q.m14633g(paramsStyleProvider, "paramsStyleProvider");
+        C9677q.m14633g(defaultStyleProvider, "defaultStyleProvider");
+        C9677q.m14633g(commentStyleProvider, "commentStyleProvider");
+        C9677q.m14633g(literalStyleProvider, "literalStyleProvider");
+        C9677q.m14633g(keywordStyleProvider, "keywordStyleProvider");
+        C9677q.m14633g(identifierStyleProvider, "identifierStyleProvider");
+        C9677q.m14633g(typesStyleProvider, "typesStyleProvider");
+        C9677q.m14633g(genericsStyleProvider, "genericsStyleProvider");
+        C9677q.m14633g(paramsStyleProvider, "paramsStyleProvider");
         this.defaultStyleProvider = defaultStyleProvider;
         this.commentStyleProvider = commentStyleProvider;
         this.literalStyleProvider = literalStyleProvider;
@@ -73,14 +73,14 @@ public final class CodeStyleProviders<R> {
     }
 
     public final CodeStyleProviders<R> copy(StyleNode.SpanProvider<R> defaultStyleProvider, StyleNode.SpanProvider<R> commentStyleProvider, StyleNode.SpanProvider<R> literalStyleProvider, StyleNode.SpanProvider<R> keywordStyleProvider, StyleNode.SpanProvider<R> identifierStyleProvider, StyleNode.SpanProvider<R> typesStyleProvider, StyleNode.SpanProvider<R> genericsStyleProvider, StyleNode.SpanProvider<R> paramsStyleProvider) {
-        C9971q.m14633g(defaultStyleProvider, "defaultStyleProvider");
-        C9971q.m14633g(commentStyleProvider, "commentStyleProvider");
-        C9971q.m14633g(literalStyleProvider, "literalStyleProvider");
-        C9971q.m14633g(keywordStyleProvider, "keywordStyleProvider");
-        C9971q.m14633g(identifierStyleProvider, "identifierStyleProvider");
-        C9971q.m14633g(typesStyleProvider, "typesStyleProvider");
-        C9971q.m14633g(genericsStyleProvider, "genericsStyleProvider");
-        C9971q.m14633g(paramsStyleProvider, "paramsStyleProvider");
+        C9677q.m14633g(defaultStyleProvider, "defaultStyleProvider");
+        C9677q.m14633g(commentStyleProvider, "commentStyleProvider");
+        C9677q.m14633g(literalStyleProvider, "literalStyleProvider");
+        C9677q.m14633g(keywordStyleProvider, "keywordStyleProvider");
+        C9677q.m14633g(identifierStyleProvider, "identifierStyleProvider");
+        C9677q.m14633g(typesStyleProvider, "typesStyleProvider");
+        C9677q.m14633g(genericsStyleProvider, "genericsStyleProvider");
+        C9677q.m14633g(paramsStyleProvider, "paramsStyleProvider");
         return new CodeStyleProviders<>(defaultStyleProvider, commentStyleProvider, literalStyleProvider, keywordStyleProvider, identifierStyleProvider, typesStyleProvider, genericsStyleProvider, paramsStyleProvider);
     }
 
@@ -92,7 +92,7 @@ public final class CodeStyleProviders<R> {
             return false;
         }
         CodeStyleProviders codeStyleProviders = (CodeStyleProviders) obj;
-        return C9971q.m14638b(this.defaultStyleProvider, codeStyleProviders.defaultStyleProvider) && C9971q.m14638b(this.commentStyleProvider, codeStyleProviders.commentStyleProvider) && C9971q.m14638b(this.literalStyleProvider, codeStyleProviders.literalStyleProvider) && C9971q.m14638b(this.keywordStyleProvider, codeStyleProviders.keywordStyleProvider) && C9971q.m14638b(this.identifierStyleProvider, codeStyleProviders.identifierStyleProvider) && C9971q.m14638b(this.typesStyleProvider, codeStyleProviders.typesStyleProvider) && C9971q.m14638b(this.genericsStyleProvider, codeStyleProviders.genericsStyleProvider) && C9971q.m14638b(this.paramsStyleProvider, codeStyleProviders.paramsStyleProvider);
+        return C9677q.m14638b(this.defaultStyleProvider, codeStyleProviders.defaultStyleProvider) && C9677q.m14638b(this.commentStyleProvider, codeStyleProviders.commentStyleProvider) && C9677q.m14638b(this.literalStyleProvider, codeStyleProviders.literalStyleProvider) && C9677q.m14638b(this.keywordStyleProvider, codeStyleProviders.keywordStyleProvider) && C9677q.m14638b(this.identifierStyleProvider, codeStyleProviders.identifierStyleProvider) && C9677q.m14638b(this.typesStyleProvider, codeStyleProviders.typesStyleProvider) && C9677q.m14638b(this.genericsStyleProvider, codeStyleProviders.genericsStyleProvider) && C9677q.m14638b(this.paramsStyleProvider, codeStyleProviders.paramsStyleProvider);
     }
 
     public final StyleNode.SpanProvider<R> getCommentStyleProvider() {

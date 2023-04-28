@@ -3,9 +3,9 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class EmbedFieldViewBinding {
@@ -20,11 +20,11 @@ public final class EmbedFieldViewBinding {
     }
 
     public static EmbedFieldViewBinding bind(View view) {
-        int i = C4254R.C4256id.name;
-        SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.name;
+        SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
         if (simpleDraweeSpanTextView != null) {
-            i = C4254R.C4256id.value;
-            SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.value;
+            SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
             if (simpleDraweeSpanTextView2 != null) {
                 return new EmbedFieldViewBinding(view, simpleDraweeSpanTextView, simpleDraweeSpanTextView2);
             }
@@ -34,7 +34,7 @@ public final class EmbedFieldViewBinding {
 
     public static EmbedFieldViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.embed_field_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.embed_field_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

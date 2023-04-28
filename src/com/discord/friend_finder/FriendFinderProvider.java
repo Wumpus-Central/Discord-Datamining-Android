@@ -13,10 +13,10 @@ import java.io.FileDescriptor;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.collections.C9897e;
-import kotlin.jvm.internal.C9971q;
-import p326ri.C12718u;
-import p426xf.C14082c;
+import kotlin.collections.C9601e;
+import kotlin.jvm.internal.C9677q;
+import p327ri.C12587u;
+import p427xf.C14001c;
 
 @Metadata(m15074d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00042\u0006\u0010\u0007\u001a\u00020\bJ\u001a\u0010\t\u001a\u0004\u0018\u00010\n2\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\u0005H\u0002J\u0018\u0010\f\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\u0005J \u0010\r\u001a\u0004\u0018\u00010\u0005*\u00020\u000e2\u0006\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\u000f\u001a\u00020\u0010H\u0002J\u0016\u0010\u0011\u001a\u0004\u0018\u00010\u0005*\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0005H\u0002¨\u0006\u0014"}, m15073d2 = {"Lcom/discord/friend_finder/FriendFinderProvider;", "", "()V", "fetchContacts", "", "", "Lcom/discord/friend_finder/ContactsDataEntry;", "context", "Landroid/content/Context;", "getContactName", "Lcom/discord/friend_finder/ContactNameEntry;", "contactId", "getImageForContactId", "asBase64BitmapString", "Landroid/net/Uri;", "quality", "", "getColumnString", "Landroid/database/Cursor;", "columnName", "friend_finder_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -49,7 +49,7 @@ public final class FriendFinderProvider {
             try {
                 throw th2;
             } finally {
-                C14082c.m1713a(openAssetFileDescriptor, th2);
+                C14001c.m1713a(openAssetFileDescriptor, th2);
             }
         }
     }
@@ -109,7 +109,7 @@ public final class FriendFinderProvider {
         String str2;
         boolean z;
         boolean t;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         Cursor query = context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, new String[]{"_id", "data4", "display_name", "photo_file_id", "contact_id", "data2"}, null, null, null);
         if (query == null) {
@@ -123,9 +123,9 @@ public final class FriendFinderProvider {
                 String str3 = "";
                 try {
                     str = context.getResources().getString(ContactsContract.CommonDataKinds.Phone.getTypeLabelResource(query.getInt(query.getColumnIndexOrThrow("data2"))));
-                    C9971q.m14634f(str, "context.getResources().g…tTypeLabelResource(type))");
+                    C9677q.m14634f(str, "context.getResources().g…tTypeLabelResource(type))");
                     try {
-                        t = C12718u.m5732t(str, "Custom", true);
+                        t = C12587u.m5732t(str, "Custom", true);
                     } catch (Exception unused) {
                         str3 = str;
                     }
@@ -133,7 +133,7 @@ public final class FriendFinderProvider {
                 }
                 if (t) {
                     str3 = query.getString(query.getColumnIndexOrThrow("data3"));
-                    C9971q.m14634f(str3, "phoneCursor.getString(ph…onDataKinds.Phone.LABEL))");
+                    C9677q.m14634f(str3, "phoneCursor.getString(ph…onDataKinds.Phone.LABEL))");
                     str = str3;
                 }
                 ContactNameEntry contactName = getContactName(context, columnString3);
@@ -154,11 +154,11 @@ public final class FriendFinderProvider {
                 }
                 ContactsDataEntry contactsDataEntry = (ContactsDataEntry) linkedHashMap.get(columnString2);
                 if (contactsDataEntry != null) {
-                    C9897e.m14980o(contactsDataEntry.getContactNames(), contactName2);
+                    C9601e.m14980o(contactsDataEntry.getContactNames(), contactName2);
                     if (z) {
                         contactsDataEntry.setHasImageData(true);
                     }
-                    C9897e.m14980o(contactsDataEntry.getDeviceContactIds(), columnString3);
+                    C9601e.m14980o(contactsDataEntry.getDeviceContactIds(), columnString3);
                     linkedHashMap.put(columnString2, contactsDataEntry);
                 } else {
                     linkedHashMap.put(columnString2, new ContactsDataEntry(columnString2, str, "phone", new ContactName[]{contactName2}, z, new String[]{columnString3}));
@@ -173,8 +173,8 @@ public final class FriendFinderProvider {
     public final String getImageForContactId(Context context, String contactId) {
         String str;
         Uri parse;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(contactId, "contactId");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(contactId, "contactId");
         Cursor query = context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, new String[]{"contact_id", "photo_thumb_uri"}, "contact_id = ?", new String[]{contactId}, null);
         th = 0;
         if (query == null) {
@@ -186,7 +186,7 @@ public final class FriendFinderProvider {
                 FriendFinderProvider friendFinderProvider = INSTANCE;
                 String columnString = friendFinderProvider.getColumnString(query, "photo_thumb_uri");
                 if (!(columnString == null || (parse = Uri.parse(columnString)) == null)) {
-                    C9971q.m14634f(parse, "parse(it)");
+                    C9677q.m14634f(parse, "parse(it)");
                     str = asBase64BitmapString$default(friendFinderProvider, parse, context, 0, 2, null);
                     return str;
                 }
@@ -197,7 +197,7 @@ public final class FriendFinderProvider {
             try {
                 throw th2;
             } finally {
-                C14082c.m1713a(query, th2);
+                C14001c.m1713a(query, th2);
             }
         }
     }

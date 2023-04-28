@@ -6,11 +6,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class GuildEventInviteViewBinding {
@@ -57,59 +57,59 @@ public final class GuildEventInviteViewBinding {
     }
 
     public static GuildEventInviteViewBinding bind(View view) {
-        int i = C4254R.C4256id.accept_button;
-        DCDButton dCDButton = (DCDButton) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.accept_button;
+        DCDButton dCDButton = (DCDButton) C13836a.m2313a(view, i);
         if (dCDButton != null) {
-            i = C4254R.C4256id.badge_container;
-            ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.badge_container;
+            ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
             if (constraintLayout != null) {
-                i = C4254R.C4256id.badge_icon;
-                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.badge_icon;
+                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView != null) {
-                    i = C4254R.C4256id.badge_text;
-                    TextView textView = (TextView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.badge_text;
+                    TextView textView = (TextView) C13836a.m2313a(view, i);
                     if (textView != null) {
-                        i = C4254R.C4256id.channel_bottom_barrier;
-                        Barrier barrier = (Barrier) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.channel_bottom_barrier;
+                        Barrier barrier = (Barrier) C13836a.m2313a(view, i);
                         if (barrier != null) {
-                            i = C4254R.C4256id.channel_icon;
-                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.channel_icon;
+                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                             if (simpleDraweeView2 != null) {
-                                i = C4254R.C4256id.channel_name;
-                                TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                                i = C3147R.C3149id.channel_name;
+                                TextView textView2 = (TextView) C13836a.m2313a(view, i);
                                 if (textView2 != null) {
-                                    i = C4254R.C4256id.channel_start_barrier;
-                                    Barrier barrier2 = (Barrier) C13922a.m2313a(view, i);
+                                    i = C3147R.C3149id.channel_start_barrier;
+                                    Barrier barrier2 = (Barrier) C13836a.m2313a(view, i);
                                     if (barrier2 != null) {
-                                        i = C4254R.C4256id.channel_top_barrier;
-                                        Barrier barrier3 = (Barrier) C13922a.m2313a(view, i);
+                                        i = C3147R.C3149id.channel_top_barrier;
+                                        Barrier barrier3 = (Barrier) C13836a.m2313a(view, i);
                                         if (barrier3 != null) {
-                                            i = C4254R.C4256id.creator_avatar;
-                                            SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                            i = C3147R.C3149id.creator_avatar;
+                                            SimpleDraweeView simpleDraweeView3 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                             if (simpleDraweeView3 != null) {
-                                                i = C4254R.C4256id.description_text;
-                                                MessageContentView messageContentView = (MessageContentView) C13922a.m2313a(view, i);
+                                                i = C3147R.C3149id.description_text;
+                                                MessageContentView messageContentView = (MessageContentView) C13836a.m2313a(view, i);
                                                 if (messageContentView != null) {
-                                                    i = C4254R.C4256id.guild_icon;
-                                                    SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                    i = C3147R.C3149id.guild_icon;
+                                                    SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                     if (simpleDraweeView4 != null) {
-                                                        i = C4254R.C4256id.guild_name;
-                                                        TextView textView3 = (TextView) C13922a.m2313a(view, i);
+                                                        i = C3147R.C3149id.guild_name;
+                                                        TextView textView3 = (TextView) C13836a.m2313a(view, i);
                                                         if (textView3 != null) {
-                                                            i = C4254R.C4256id.header_barrier;
-                                                            Barrier barrier4 = (Barrier) C13922a.m2313a(view, i);
+                                                            i = C3147R.C3149id.header_barrier;
+                                                            Barrier barrier4 = (Barrier) C13836a.m2313a(view, i);
                                                             if (barrier4 != null) {
-                                                                i = C4254R.C4256id.header_icon;
-                                                                SimpleDraweeView simpleDraweeView5 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                                i = C3147R.C3149id.header_icon;
+                                                                SimpleDraweeView simpleDraweeView5 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                                 if (simpleDraweeView5 != null) {
-                                                                    i = C4254R.C4256id.header_text;
-                                                                    TextView textView4 = (TextView) C13922a.m2313a(view, i);
+                                                                    i = C3147R.C3149id.header_text;
+                                                                    TextView textView4 = (TextView) C13836a.m2313a(view, i);
                                                                     if (textView4 != null) {
-                                                                        i = C4254R.C4256id.secondary_button;
-                                                                        SimpleDraweeView simpleDraweeView6 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                                        i = C3147R.C3149id.secondary_button;
+                                                                        SimpleDraweeView simpleDraweeView6 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                                         if (simpleDraweeView6 != null) {
-                                                                            i = C4254R.C4256id.title_text;
-                                                                            TextView textView5 = (TextView) C13922a.m2313a(view, i);
+                                                                            i = C3147R.C3149id.title_text;
+                                                                            TextView textView5 = (TextView) C13836a.m2313a(view, i);
                                                                             if (textView5 != null) {
                                                                                 return new GuildEventInviteViewBinding(view, dCDButton, constraintLayout, simpleDraweeView, textView, barrier, simpleDraweeView2, textView2, barrier2, barrier3, simpleDraweeView3, messageContentView, simpleDraweeView4, textView3, barrier4, simpleDraweeView5, textView4, simpleDraweeView6, textView5);
                                                                             }
@@ -135,7 +135,7 @@ public final class GuildEventInviteViewBinding {
 
     public static GuildEventInviteViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.guild_event_invite_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.guild_event_invite_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

@@ -4,16 +4,16 @@ import java.io.File;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.flow.FlowCollector;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/flow/FlowCollector;", "Lcom/discord/file_downloader/DownloadState;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.file_downloader.FileDownloader$downloadFile$1", m14701f = "FileDownloader.kt", m14700l = {52, 56, 64, 71, 77}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.file_downloader.FileDownloader$downloadFile$1", m14701f = "FileDownloader.kt", m14700l = {52, 56, 64, 71, 77}, m14699m = "invokeSuspend")
 /* loaded from: classes4.dex */
-public final class FileDownloader$downloadFile$1 extends AbstractC9938k implements Function2<FlowCollector<? super DownloadState>, Continuation<? super Unit>, Object> {
+public final class FileDownloader$downloadFile$1 extends AbstractC9643k implements Function2<FlowCollector<? super DownloadState>, Continuation<? super Unit>, Object> {
     final /* synthetic */ File $downloadDirectory;
     final /* synthetic */ String $fileName;
     final /* synthetic */ String $fileUrl;
@@ -32,7 +32,7 @@ public final class FileDownloader$downloadFile$1 extends AbstractC9938k implemen
         this.$logErrors = z;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         FileDownloader$downloadFile$1 fileDownloader$downloadFile$1 = new FileDownloader$downloadFile$1(this.$downloadDirectory, this.$fileName, this.$fileUrl, this.$logErrors, continuation);
         fileDownloader$downloadFile$1.L$0 = obj;
@@ -40,7 +40,7 @@ public final class FileDownloader$downloadFile$1 extends AbstractC9938k implemen
     }
 
     public final Object invoke(FlowCollector<? super DownloadState> flowCollector, Continuation<? super Unit> continuation) {
-        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f22042a);
+        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f25780a);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0109, code lost:
@@ -53,7 +53,7 @@ public final class FileDownloader$downloadFile$1 extends AbstractC9938k implemen
         if (r0 == null) goto L_0x013e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x0140, code lost:
-        return kotlin.Unit.f22042a;
+        return kotlin.Unit.f25780a;
      */
     /* JADX WARN: Not initialized variable reg: 9, insn: 0x0119: MOVE  (r2 I:??[OBJECT, ARRAY]) = (r9 I:??[OBJECT, ARRAY]), block:B:60:0x0119 */
     /* JADX WARN: Removed duplicated region for block: B:40:0x00b8 A[Catch: all -> 0x0118, Exception -> 0x011b, TryCatch #3 {Exception -> 0x011b, blocks: (B:38:0x00a4, B:40:0x00b8, B:44:0x00d3, B:46:0x00f0, B:57:0x0114, B:58:0x0117), top: B:82:0x00a4 }] */
@@ -64,7 +64,7 @@ public final class FileDownloader$downloadFile$1 extends AbstractC9938k implemen
     /* JADX WARN: Removed duplicated region for block: B:76:0x0147  */
     /* JADX WARN: Type inference failed for: r0v18, types: [T, okhttp3.ResponseBody] */
     /* JADX WARN: Unknown variable types count: 1 */
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences

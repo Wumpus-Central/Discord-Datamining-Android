@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import androidx.cardview.widget.CardView;
-import com.discord.segmented.control.C4713R;
-import p412x1.C13922a;
+import com.discord.segmented.control.C3669R;
+import p413x1.C13836a;
 
 /* loaded from: classes6.dex */
 public final class SegmentedControlBinding {
@@ -24,11 +24,11 @@ public final class SegmentedControlBinding {
 
     public static SegmentedControlBinding bind(View view) {
         CardView cardView = (CardView) view;
-        int i = C4713R.C4715id.segmentContainer;
-        LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+        int i = C3669R.C3671id.segmentContainer;
+        LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
         if (linearLayout != null) {
-            i = C4713R.C4715id.selectedSegmentBg;
-            CardView cardView2 = (CardView) C13922a.m2313a(view, i);
+            i = C3669R.C3671id.selectedSegmentBg;
+            CardView cardView2 = (CardView) C13836a.m2313a(view, i);
             if (cardView2 != null) {
                 return new SegmentedControlBinding(cardView, cardView, linearLayout, cardView2);
             }
@@ -41,7 +41,7 @@ public final class SegmentedControlBinding {
     }
 
     public static SegmentedControlBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4713R.layout.segmented_control, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3669R.layout.segmented_control, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

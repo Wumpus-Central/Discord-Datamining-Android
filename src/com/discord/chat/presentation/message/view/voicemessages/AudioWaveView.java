@@ -15,18 +15,18 @@ import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react_gesture_handler.GetDiscordGestureHandlerEnabledRootViewKt;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.react.uimanager.ViewProps;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.Arrays;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.C10129j;
+import kotlinx.coroutines.C9840j;
 import kotlinx.coroutines.Job;
-import si.C12905a;
-import si.C12907c;
-import si.EnumC12908d;
+import si.C12782a;
+import si.C12785c;
+import si.EnumC12786d;
 
 @Metadata(m15074d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0012\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u0000 Y2\u00020\u0001:\u0002YZB%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010A\u001a\u000202H\u0002J\u0010\u0010B\u001a\u0002022\u0006\u0010C\u001a\u00020DH\u0014J0\u0010E\u001a\u0002022\u0006\u0010F\u001a\u00020<2\u0006\u0010G\u001a\u00020\u00072\u0006\u0010H\u001a\u00020\u00072\u0006\u0010I\u001a\u00020\u00072\u0006\u0010J\u001a\u00020\u0007H\u0014J\u0018\u0010K\u001a\u0002022\u0006\u0010L\u001a\u00020\u00072\u0006\u0010M\u001a\u00020\u0007H\u0014J\u0010\u0010N\u001a\u00020<2\u0006\u0010O\u001a\u00020PH\u0017J$\u0010Q\u001a\u0002022\b\b\u0002\u00107\u001a\u00020\"2\b\b\u0002\u0010-\u001a\u00020\u00072\u0006\u0010R\u001a\u00020<H\u0002J\u0006\u0010S\u001a\u000202J\u001a\u0010\u0014\u001a\u0002022\b\b\u0001\u0010\u0013\u001a\u00020\u00122\b\b\u0002\u0010A\u001a\u00020<J&\u0010T\u001a\u000202*\u00020D2\u0006\u0010U\u001a\u00020\u00122\u0006\u0010V\u001a\u00020\u00182\b\b\u0002\u0010W\u001a\u00020<H\u0002J\f\u0010X\u001a\u00020\u0018*\u00020\u0018H\u0002R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0013\u001a\u0004\u0018\u00010\u00122\b\u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0002@BX\u0083\u000e¢\u0006\n\n\u0002\u0010\u0016\"\u0004\b\u0014\u0010\u0015R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0019\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u00078\u0006@FX\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u001f\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u00078\u0006@FX\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b \u0010\u001b\"\u0004\b!\u0010\u001dR\u001e\u0010#\u001a\u00020\"2\u0006\u0010\u0011\u001a\u00020\"@BX\u0082\u000e¢\u0006\b\n\u0000\"\u0004\b$\u0010%R*\u0010'\u001a\u0004\u0018\u00010&2\b\u0010\u0011\u001a\u0004\u0018\u00010&@FX\u0086\u000e¢\u0006\u0010\n\u0002\u0010,\u001a\u0004\b(\u0010)\"\u0004\b*\u0010+R\u001e\u0010-\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u0007@BX\u0082\u000e¢\u0006\b\n\u0000\"\u0004\b.\u0010\u001dR(\u0010/\u001a\u0010\u0012\u0004\u0012\u000201\u0012\u0004\u0012\u000202\u0018\u000100X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R$\u00107\u001a\u00020\"2\u0006\u0010\u0011\u001a\u00020\"@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b8\u00109\"\u0004\b:\u0010%R\u001a\u0010;\u001a\u00020<X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@¨\u0006["}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveView;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "animationJob", "Lkotlinx/coroutines/Job;", "getAnimationJob", "()Lkotlinx/coroutines/Job;", "setAnimationJob", "(Lkotlinx/coroutines/Job;)V", "animationManager", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveAnimationManager;", "value", "", "audioProgress", "setAudioProgress", "(Ljava/lang/Float;)V", "Ljava/lang/Float;", "audioProgressPaint", "Landroid/graphics/Paint;", "audioProgressPaintColor", "getAudioProgressPaintColor", "()I", "setAudioProgressPaintColor", "(I)V", "defaultPaint", "defaultPaintColor", "getDefaultPaintColor", "setDefaultPaintColor", "", "downSampleData", "setDownSampleData", "([B)V", "", "duration", "getDuration", "()Ljava/lang/Long;", "setDuration", "(Ljava/lang/Long;)V", "Ljava/lang/Long;", "numChunks", "setNumChunks", "onAudioProgressChange", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveView$ProgressEvent;", "", "getOnAudioProgressChange", "()Lkotlin/jvm/functions/Function1;", "setOnAudioProgressChange", "(Lkotlin/jvm/functions/Function1;)V", "originalSampleData", "getOriginalSampleData", "()[B", "setOriginalSampleData", "shouldAnimate", "", "getShouldAnimate", "()Z", "setShouldAnimate", "(Z)V", "finishAnimation", "onDraw", "canvas", "Landroid/graphics/Canvas;", ViewProps.ON_LAYOUT, "changed", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "onMeasure", "widthMeasureSpec", "heightMeasureSpec", "onTouchEvent", "event", "Landroid/view/MotionEvent;", "recalculateSampleData", "downSample", "reset", "draw", "progress", "paint", "animate", "init", "Companion", "ProgressEvent", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -53,7 +53,7 @@ public final class AudioWaveView extends View {
     private static final int CHUNK_RADIUS = SizeUtilsKt.getDpToPx(8);
     private static final float CHUNK_MIN_HEIGHT = SizeUtilsKt.getDpToPx(1);
     private static final float CHUNK_MAX_HEIGHT = SizeUtilsKt.getDpToPx(12);
-    private static final long MAX_DURATION = C12905a.m5124n(C12907c.m5090s(30, EnumC12908d.SECONDS));
+    private static final long MAX_DURATION = C12782a.m5124n(C12785c.m5090s(30, EnumC12786d.SECONDS));
     private static final int MAX_WIDTH = SizeUtilsKt.getDpToPx(600);
     private static final int FINISH_ANIMATION_NUM_REPEAT = 10;
 
@@ -138,20 +138,20 @@ public final class AudioWaveView extends View {
         CHUNK_SPACING = dpToPx2;
         int i = dpToPx + dpToPx2;
         CHUNK_SIZE = i;
-        C12905a.C0415a aVar = C12905a.f28981l;
+        C12782a.C12783a aVar = C12782a.f33313l;
         MIN_WIDTH = i * 5;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public AudioWaveView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public AudioWaveView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ AudioWaveView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -211,9 +211,9 @@ public final class AudioWaveView extends View {
     private final void finishAnimation() {
         Job job = this.animationJob;
         if (job != null) {
-            Job.C9996a.m14571a(job, null, 1, null);
+            Job.C9704a.m14571a(job, null, 1, null);
         }
-        this.animationJob = C10129j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$finishAnimation$1(this, null), 3, null);
+        this.animationJob = C9840j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$finishAnimation$1(this, null), 3, null);
     }
 
     private final Paint init(Paint paint) {
@@ -226,7 +226,7 @@ public final class AudioWaveView extends View {
         if (!z || i == this.downSampleData.length) {
             invalidate();
         } else {
-            C10129j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$recalculateSampleData$1(this, bArr, i, null), 3, null);
+            C9840j.m14195d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$recalculateSampleData$1(this, bArr, i, null), 3, null);
         }
     }
 
@@ -300,7 +300,7 @@ public final class AudioWaveView extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         float f;
-        C9971q.m14633g(canvas, "canvas");
+        C9677q.m14633g(canvas, "canvas");
         super.onDraw(canvas);
         if (this.numChunks != this.downSampleData.length) {
             recalculateSampleData$default(this, null, 0, true, 3, null);
@@ -333,7 +333,7 @@ public final class AudioWaveView extends View {
                 i5 = 0;
             }
             int i7 = this.numChunks;
-            c = C6884j.m23961c((getWidth() / i6) + i5, 5);
+            c = C6322j.m23961c((getWidth() / i6) + i5, 5);
             setNumChunks(c);
             if (i7 != this.numChunks) {
                 z2 = true;
@@ -385,7 +385,7 @@ public final class AudioWaveView extends View {
             r3 = 0
             if (r1 == 0) goto L_0x0039
             android.view.ViewGroup$MarginLayoutParams r0 = (android.view.ViewGroup.MarginLayoutParams) r0
-            int r0 = androidx.core.view.C2731w.m37076b(r0)
+            int r0 = androidx.core.view.C1557w.m37076b(r0)
             goto L_0x003a
         L_0x0039:
             r0 = r3
@@ -395,7 +395,7 @@ public final class AudioWaveView extends View {
             boolean r1 = r0 instanceof android.view.ViewGroup.MarginLayoutParams
             if (r1 == 0) goto L_0x0049
             android.view.ViewGroup$MarginLayoutParams r0 = (android.view.ViewGroup.MarginLayoutParams) r0
-            int r3 = androidx.core.view.C2731w.m37077a(r0)
+            int r3 = androidx.core.view.C1557w.m37077a(r0)
         L_0x0049:
             int r6 = r6 - r3
             float r6 = (float) r6
@@ -406,9 +406,9 @@ public final class AudioWaveView extends View {
             int r6 = android.view.View.MeasureSpec.getSize(r6)
         L_0x0052:
             int r0 = com.discord.chat.presentation.message.view.voicemessages.AudioWaveView.MAX_WIDTH
-            int r6 = eg.C6882h.m23974g(r6, r0)
+            int r6 = eg.C6320h.m23974g(r6, r0)
             int r0 = com.discord.chat.presentation.message.view.voicemessages.AudioWaveView.MIN_WIDTH
-            int r6 = eg.C6882h.m23978c(r6, r0)
+            int r6 = eg.C6320h.m23978c(r6, r0)
             int r7 = android.view.View.MeasureSpec.getSize(r7)
             r5.setMeasuredDimension(r6, r7)
             return
@@ -420,7 +420,7 @@ public final class AudioWaveView extends View {
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouchEvent(MotionEvent event) {
         float i;
-        C9971q.m14633g(event, "event");
+        C9677q.m14633g(event, "event");
         if (!isEnabled()) {
             return super.onTouchEvent(event);
         }
@@ -431,7 +431,7 @@ public final class AudioWaveView extends View {
                 parent.requestDisallowInterceptTouchEvent(true);
             }
         }
-        i = C6884j.m23955i(event.getX(), 0.0f, getWidth());
+        i = C6322j.m23955i(event.getX(), 0.0f, getWidth());
         float width = i / getWidth();
         int action = event.getAction();
         if (action != 0 && action != 1 && action != 2) {
@@ -478,7 +478,7 @@ public final class AudioWaveView extends View {
     }
 
     public final void setOriginalSampleData(byte[] value) {
-        C9971q.m14633g(value, "value");
+        C9677q.m14633g(value, "value");
         recalculateSampleData$default(this, value, 0, !Arrays.equals(this.originalSampleData, value), 2, null);
         this.originalSampleData = value;
     }
@@ -490,7 +490,7 @@ public final class AudioWaveView extends View {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AudioWaveView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.animationManager = new AudioWaveAnimationManager();
         this.downSampleData = new byte[0];
         this.originalSampleData = new byte[0];

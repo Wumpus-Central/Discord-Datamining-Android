@@ -7,9 +7,9 @@ import com.facebook.react.bridge.WritableNativeMap;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0005J\t\u0010\t\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\n\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u001f\u0010\u000b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fHÖ\u0003J\t\u0010\u0010\u001a\u00020\u0011HÖ\u0001J\b\u0010\u0012\u001a\u00020\u0013H\u0016J\t\u0010\u0014\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0007¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/chat/reactevents/TapSeparatorData;", "Lcom/discord/reactevents/ReactEvent;", "type", "", "context", "(Ljava/lang/String;Ljava/lang/String;)V", "getContext", "()Ljava/lang/String;", "getType", "component1", "component2", "copy", "equals", "", "other", "", "hashCode", "", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -18,7 +18,7 @@ public final class TapSeparatorData implements ReactEvent {
     private final String type;
 
     public TapSeparatorData(String type, String str) {
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(type, "type");
         this.type = type;
         this.context = str;
     }
@@ -42,7 +42,7 @@ public final class TapSeparatorData implements ReactEvent {
     }
 
     public final TapSeparatorData copy(String type, String str) {
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(type, "type");
         return new TapSeparatorData(type, str);
     }
 
@@ -54,7 +54,7 @@ public final class TapSeparatorData implements ReactEvent {
             return false;
         }
         TapSeparatorData tapSeparatorData = (TapSeparatorData) obj;
-        return C9971q.m14638b(this.type, tapSeparatorData.type) && C9971q.m14638b(this.context, tapSeparatorData.context);
+        return C9677q.m14638b(this.type, tapSeparatorData.type) && C9677q.m14638b(this.context, tapSeparatorData.context);
     }
 
     public final String getContext() {
@@ -73,19 +73,19 @@ public final class TapSeparatorData implements ReactEvent {
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableMap serialize() {
-        WritableNativeMap nativeMapOf = NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("type", this.type));
+        WritableNativeMap nativeMapOf = NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("type", this.type));
         String str = this.context;
         if (str != null) {
             nativeMapOf.putString("context", str);
         }
         Pair[] pairArr = new Pair[1];
-        WritableNativeMap nativeMapOf2 = NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("type", this.type));
+        WritableNativeMap nativeMapOf2 = NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("type", this.type));
         String str2 = this.context;
         if (str2 != null) {
             nativeMapOf2.putString("context", str2);
         }
-        Unit unit = Unit.f22042a;
-        pairArr[0] = C11098x.m10921a("action", nativeMapOf2);
+        Unit unit = Unit.f25780a;
+        pairArr[0] = C10853x.m10921a("action", nativeMapOf2);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);
     }
 

@@ -5,7 +5,7 @@ import com.discord.simpleast.core.node.Node;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0016\u0018\u0000 \u000f*\u0004\b\u0000\u0010\u0001*\u0004\b\u0001\u0010\u00022\b\u0012\u0004\u0012\u0002H\u00010\u0003:\u0003\u000f\u0010\u0011B\u0013\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00010\u0005¢\u0006\u0002\u0010\u0006J\u001d\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u000eR\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\u0012"}, m15073d2 = {"Lcom/discord/simpleast/core/node/StyleNode;", "RC", "T", "Lcom/discord/simpleast/core/node/Node$Parent;", "styles", "", "(Ljava/util/List;)V", "getStyles", "()Ljava/util/List;", "render", "", "builder", "Landroid/text/SpannableStringBuilder;", "renderContext", "(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V", "Companion", "SpanProvider", "TextStyledNode", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
@@ -25,8 +25,8 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
         }
 
         public final <RC, T> StyleNode<RC, T> wrapText(String content, List<? extends T> styles) {
-            C9971q.m14633g(content, "content");
-            C9971q.m14633g(styles, "styles");
+            C9677q.m14633g(content, "content");
+            C9677q.m14633g(styles, "styles");
             StyleNode<RC, T> styleNode = new StyleNode<>(styles);
             styleNode.addChild(new TextNode(content));
             return styleNode;
@@ -47,8 +47,8 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public TextStyledNode(String content, SpanProvider<RC> stylesProvider) {
             super(content);
-            C9971q.m14633g(content, "content");
-            C9971q.m14633g(stylesProvider, "stylesProvider");
+            C9677q.m14633g(content, "content");
+            C9677q.m14633g(stylesProvider, "stylesProvider");
             this.stylesProvider = stylesProvider;
         }
 
@@ -58,7 +58,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
 
         @Override // com.discord.simpleast.core.node.TextNode, com.discord.simpleast.core.node.Node
         public void render(SpannableStringBuilder builder, RC rc) {
-            C9971q.m14633g(builder, "builder");
+            C9677q.m14633g(builder, "builder");
             int length = builder.length();
             super.render(builder, rc);
             Iterator<?> it = this.stylesProvider.get(rc).iterator();
@@ -72,7 +72,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
     /* JADX WARN: Multi-variable type inference failed */
     public StyleNode(List<? extends T> styles) {
         super(new Node[0]);
-        C9971q.m14633g(styles, "styles");
+        C9677q.m14633g(styles, "styles");
         this.styles = styles;
     }
 
@@ -86,7 +86,7 @@ public class StyleNode<RC, T> extends Node.Parent<RC> {
 
     @Override // com.discord.simpleast.core.node.Node.Parent, com.discord.simpleast.core.node.Node
     public void render(SpannableStringBuilder builder, RC rc) {
-        C9971q.m14633g(builder, "builder");
+        C9677q.m14633g(builder, "builder");
         int length = builder.length();
         super.render(builder, rc);
         for (T t : this.styles) {

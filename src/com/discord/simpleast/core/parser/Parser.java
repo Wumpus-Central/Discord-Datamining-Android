@@ -10,12 +10,12 @@ import java.util.Stack;
 import java.util.regex.Matcher;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.collections.C9897e;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9964l0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9601e;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9669l0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
+import nf.C10853x;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u001e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010!\n\u0000\n\u0002\u0010 \n\u0002\b\u0004\b\u0016\u0018\u0000 \u001d*\u0004\b\u0000\u0010\u0001*\u000e\b\u0001\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00010\u0003*\u0004\b\u0002\u0010\u00042\u00020\u0005:\u0002\u001d\u001eB\u0011\b\u0007\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ4\u0010\f\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u00002\u001a\u0010\r\u001a\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000bJY\u0010\u000e\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u00002:\u0010\u000f\u001a\u001e\u0012\u001a\b\u0001\u0012\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000b0\u0010\"\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000b¢\u0006\u0002\u0010\u0011J:\u0010\u000e\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u00002 \u0010\u000f\u001a\u001c\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000b0\u0012JF\u0010\u0013\u001a\u00020\u0014\"\u0004\b\u0003\u0010\u0001\"\u000e\b\u0004\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00010\u0003\"\u0004\b\u0005\u0010\u00042\u0018\u0010\r\u001a\u0014\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00040\u000b2\u0006\u0010\u0015\u001a\u00020\u0016H\u0002JF\u0010\u0017\u001a\u00020\u0014\"\u0004\b\u0003\u0010\u0001\"\u000e\b\u0004\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00010\u0003\"\u0004\b\u0005\u0010\u00042\u0018\u0010\r\u001a\u0014\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00040\u000b2\u0006\u0010\u0015\u001a\u00020\u0016H\u0002JG\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00010\u00192\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00028\u00022\"\b\u0002\u0010\t\u001a\u001c\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000b0\u001bH\u0007¢\u0006\u0002\u0010\u001cR\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R(\u0010\t\u001a\u001c\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00028\u0000\u0012\u0006\b\u0001\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u00020\u000b0\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001f"}, m15073d2 = {"Lcom/discord/simpleast/core/parser/Parser;", "R", "T", "Lcom/discord/simpleast/core/node/Node;", "S", "", "enableDebugging", "", "(Z)V", "rules", "Ljava/util/ArrayList;", "Lcom/discord/simpleast/core/parser/Rule;", "addRule", "rule", "addRules", "newRules", "", "([Lcom/discord/simpleast/core/parser/Rule;)Lcom/discord/simpleast/core/parser/Parser;", "", "logMatch", "", "source", "", "logMiss", "parse", "", "initialState", "", "(Ljava/lang/CharSequence;Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;", "Companion", "ParseException", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
 /* loaded from: classes7.dex */
@@ -46,7 +46,7 @@ public class Parser<R, T extends Node<R>, S> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public ParseException(String message, CharSequence charSequence, Throwable th2) {
             super("Error while parsing: " + message + " \n Source: " + charSequence, th2);
-            C9971q.m14633g(message, "message");
+            C9677q.m14633g(message, "message");
         }
     }
 
@@ -83,15 +83,15 @@ public class Parser<R, T extends Node<R>, S> {
     }
 
     public final Parser<R, T, S> addRule(Rule<R, ? extends T, S> rule) {
-        C9971q.m14633g(rule, "rule");
+        C9677q.m14633g(rule, "rule");
         this.rules.add(rule);
         return this;
     }
 
     public final Parser<R, T, S> addRules(Rule<R, ? extends T, S>... newRules) {
         List d;
-        C9971q.m14633g(newRules, "newRules");
-        d = C9897e.m14991d(newRules);
+        C9677q.m14633g(newRules, "newRules");
+        d = C9601e.m14991d(newRules);
         return addRules(d);
     }
 
@@ -103,8 +103,8 @@ public class Parser<R, T extends Node<R>, S> {
     public final List<T> parse(CharSequence source, S s, List<? extends Rule<R, ? extends T, S>> rules) {
         List<T> list;
         Pair pair;
-        C9971q.m14633g(source, "source");
-        C9971q.m14633g(rules, "rules");
+        C9677q.m14633g(source, "source");
+        C9677q.m14633g(rules, "rules");
         Stack stack = new Stack();
         List<T> list2 = null;
         boolean z = true;
@@ -137,7 +137,7 @@ public class Parser<R, T extends Node<R>, S> {
                     continue;
                 } else {
                     logMatch(rule, subSequence);
-                    pair = C11098x.m10921a(rule, match);
+                    pair = C10853x.m10921a(rule, match);
                     continue;
                 }
                 if (pair != null) {
@@ -168,11 +168,11 @@ public class Parser<R, T extends Node<R>, S> {
         }
         Collection<Node<R>> children = node.getChildren();
         if (children != null) {
-            list = C9914r.m14788F0(children);
+            list = C9618r.m14788F0(children);
         } else {
             list = null;
         }
-        if (C9964l0.m14647j(list)) {
+        if (C9669l0.m14647j(list)) {
             list2 = list;
         }
         if (list2 != null) {
@@ -182,7 +182,7 @@ public class Parser<R, T extends Node<R>, S> {
     }
 
     public final Parser<R, T, S> addRules(Collection<? extends Rule<R, ? extends T, S>> newRules) {
-        C9971q.m14633g(newRules, "newRules");
+        C9677q.m14633g(newRules, "newRules");
         this.rules.addAll(newRules);
         return this;
     }

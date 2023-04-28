@@ -13,9 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
-import androidx.core.util.AbstractC2518h;
-import androidx.core.view.AbstractC2702s0;
-import androidx.core.view.C2733w0;
+import androidx.core.util.AbstractC1338h;
+import androidx.core.view.AbstractC1526s0;
+import androidx.core.view.C1559w0;
 import androidx.core.view.ContentInfoCompat;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.input.bridge.ChatInputNode;
@@ -33,7 +33,7 @@ import com.discord.misc.utilities.keyboard.KeyboardExtensionsKt;
 import com.discord.span.utilities.BackgroundSpanDrawer;
 import com.discord.span.utilities.SpannableExtensionsKt;
 import com.facebook.react.uimanager.ViewProps;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
@@ -42,19 +42,19 @@ import java.util.Set;
 import java.util.UUID;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9907k;
+import kotlin.collections.C9611k;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.ranges.IntRange;
-import kotlinx.coroutines.C10139l;
+import kotlinx.coroutines.C9851l;
 import kotlinx.coroutines.Job;
-import kotlinx.coroutines.flow.C10062q;
+import kotlinx.coroutines.flow.C9773q;
 import kotlinx.coroutines.flow.MutableStateFlow;
-import p267of.AbstractC11283p;
+import p268of.AbstractC11047p;
 
 @Metadata(m15074d1 = {"\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002:\u0002\\]B%\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tJ\u0006\u0010>\u001a\u00020?J\u001e\u0010@\u001a\u00020?2\b\u0010A\u001a\u0004\u0018\u00010\u00172\f\u0010B\u001a\b\u0012\u0004\u0012\u00020D0CJ\u0006\u0010E\u001a\u00020?J\b\u0010F\u001a\u00020?H\u0014J\u0010\u0010G\u001a\u00020?2\u0006\u0010H\u001a\u00020%H\u0016J>\u0010I\u001a\u00020?2\u0006\u0010J\u001a\u00020\b2\u0006\u0010K\u001a\u00020\b2\u0006\u00108\u001a\u00020\u00172\f\u0010L\u001a\b\u0012\u0004\u0012\u00020D0C2\u0006\u0010M\u001a\u00020%2\b\u0010A\u001a\u0004\u0018\u00010\u0017J\u0006\u0010N\u001a\u00020%J\u0018\u0010O\u001a\u00020?2\u0006\u0010P\u001a\u00020\b2\b\b\u0002\u0010Q\u001a\u00020\bJ\u000e\u0010R\u001a\u00020?2\u0006\u0010S\u001a\u00020TJ \u0010U\u001a\u00020?2\f\u0010B\u001a\b\u0012\u0004\u0012\u00020D0C2\b\b\u0002\u0010V\u001a\u00020\bH\u0002J\b\u0010W\u001a\u00020?H\u0002J!\u0010X\u001a\u00020?*\u00020$2\u0012\u0010Y\u001a\u000e\u0012\u0004\u0012\u00020[\u0012\u0004\u0012\u00020?0ZH\u0082\bR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R(\u0010\u0018\u001a\u0004\u0018\u00010\u00172\b\u0010\u0016\u001a\u0004\u0018\u00010\u00178F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR&\u0010\u001d\u001a\u00020\b2\b\b\u0001\u0010\u0016\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u0014\u0010\"\u001a\b\u0012\u0004\u0012\u00020$0#X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010&\u001a\u00020%2\u0006\u0010\u0016\u001a\u00020%8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R$\u0010*\u001a\u00020%2\u0006\u0010\u0016\u001a\u00020%8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b*\u0010'\"\u0004\b+\u0010)R\u000e\u0010,\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0013\u0010-\u001a\u0004\u0018\u00010\b8F¢\u0006\u0006\u001a\u0004\b.\u0010/R\u000e\u00100\u001a\u000201X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u00102\u001a\u0004\u0018\u000103X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R$\u00108\u001a\u00020\u00172\u0006\u0010\u0016\u001a\u00020\u00178F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b9\u0010\u001a\"\u0004\b:\u0010\u001cR&\u0010;\u001a\u00020\b2\b\b\u0001\u0010\u0016\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b<\u0010\u001f\"\u0004\b=\u0010!¨\u0006^"}, m15073d2 = {"Lcom/discord/chat/input/views/ChatInputRootView;", "Landroid/widget/RelativeLayout;", "Lcom/discord/keyboard/KeyboardEvent;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/input/databinding/ChatInputRootViewBinding;", "blurJob", "Lkotlinx/coroutines/Job;", "currentTextFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/discord/chat/input/views/ChatInputRootView$CurrentTextAndSelection;", "editText", "Lcom/discord/chat/input/views/DCDChatInput;", "editTextHint", "", "editTextMaxLines", "value", "", "hint", "getHint", "()Ljava/lang/String;", "setHint", "(Ljava/lang/String;)V", "hintTextColor", "getHintTextColor", "()I", "setHintTextColor", "(I)V", "insertedPayloads", "", "Landroidx/core/view/ContentInfoCompat;", "", "isCursorVisible", "()Z", "setCursorVisible", "(Z)V", "isEditTextEnabled", "setEditTextEnabled", "lastEditId", "lineCount", "getLineCount", "()Ljava/lang/Integer;", "lineHeightMeasurer", "Lcom/discord/chat/input/views/ChatInputRootViewMeasurer;", "listener", "Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "getListener", "()Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "setListener", "(Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;)V", "text", "getText", "setText", "textColor", "getTextColor", "setTextColor", "backspace", "", "clearAndApplyChatNodes", "editId", "chatInputNodes", "", "Lcom/discord/chat/input/bridge/ChatInputNode;", "clearInputFocus", "onAttachedToWindow", "onKeyboardStateChanged", "opened", "replaceRange", "location", "length", "styleBlocks", "keepCursorPosition", "requestInputFocus", "setSelection", ViewProps.START, "stop", "showKeyboard", "window", "Landroid/view/Window;", "updateChatNodes", "offset", "updateHintEllipsis", "forEachUri", "action", "Lkotlin/Function1;", "Landroid/net/Uri;", "ChatInputListener", "CurrentTextAndSelection", "chat_input_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -74,9 +74,9 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     @Metadata(m15074d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, m15073d2 = {"<anonymous>", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.chat.input.views.ChatInputRootView$1 */
     /* loaded from: classes4.dex */
-    public static final class AnonymousClass1 extends AbstractC9973s implements Function0<Unit> {
+    public static final class C31621 extends AbstractC9679s implements Function0<Unit> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass1() {
+        C31621() {
             super(0);
             ChatInputRootView.this = r1;
         }
@@ -95,9 +95,9 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     @Metadata(m15074d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0005"}, m15073d2 = {"<anonymous>", "", "selStart", "", "selEnd", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.chat.input.views.ChatInputRootView$2 */
     /* loaded from: classes4.dex */
-    public static final class AnonymousClass2 extends AbstractC9973s implements Function2<Integer, Integer, Unit> {
+    public static final class C31632 extends AbstractC9679s implements Function2<Integer, Integer, Unit> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass2() {
+        C31632() {
             super(2);
             ChatInputRootView.this = r1;
         }
@@ -105,7 +105,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Unit invoke(Integer num, Integer num2) {
             invoke(num.intValue(), num2.intValue());
-            return Unit.f22042a;
+            return Unit.f25780a;
         }
 
         public final void invoke(int i, int i2) {
@@ -138,8 +138,8 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         private final String text;
 
         public CurrentTextAndSelection(int i, int i2, String text, String editId) {
-            C9971q.m14633g(text, "text");
-            C9971q.m14633g(editId, "editId");
+            C9677q.m14633g(text, "text");
+            C9677q.m14633g(editId, "editId");
             this.selectionStart = i;
             this.selectionEnd = i2;
             this.text = text;
@@ -179,8 +179,8 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         }
 
         public final CurrentTextAndSelection copy(int i, int i2, String text, String editId) {
-            C9971q.m14633g(text, "text");
-            C9971q.m14633g(editId, "editId");
+            C9677q.m14633g(text, "text");
+            C9677q.m14633g(editId, "editId");
             return new CurrentTextAndSelection(i, i2, text, editId);
         }
 
@@ -192,7 +192,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
                 return false;
             }
             CurrentTextAndSelection currentTextAndSelection = (CurrentTextAndSelection) obj;
-            return this.selectionStart == currentTextAndSelection.selectionStart && this.selectionEnd == currentTextAndSelection.selectionEnd && C9971q.m14638b(this.text, currentTextAndSelection.text) && C9971q.m14638b(this.editId, currentTextAndSelection.editId);
+            return this.selectionStart == currentTextAndSelection.selectionStart && this.selectionEnd == currentTextAndSelection.selectionEnd && C9677q.m14638b(this.text, currentTextAndSelection.text) && C9677q.m14638b(this.editId, currentTextAndSelection.editId);
         }
 
         public final String getEditId() {
@@ -227,13 +227,13 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ChatInputRootView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ChatInputRootView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ChatInputRootView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -242,7 +242,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
 
     public static final void _init_$lambda$0(ChatInputRootView this$0, View view, boolean z) {
         ChatInputListener chatInputListener;
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         if (z && (chatInputListener = this$0.listener) != null) {
             chatInputListener.onFocus(this$0.editText.getSelectionStart(), this$0.editText.getSelectionStart());
         }
@@ -250,28 +250,28 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
 
     public static final ContentInfoCompat _init_$lambda$3(ChatInputRootView this$0, final Context context, View view, ContentInfoCompat payload) {
         IntRange q;
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(context, "$context");
-        C9971q.m14633g(view, "<anonymous parameter 0>");
-        C9971q.m14633g(payload, "payload");
-        Pair<ContentInfoCompat, ContentInfoCompat> i = payload.m37569i(new AbstractC2518h() { // from class: com.discord.chat.input.views.a
-            @Override // androidx.core.util.AbstractC2518h
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(context, "$context");
+        C9677q.m14633g(view, "<anonymous parameter 0>");
+        C9677q.m14633g(payload, "payload");
+        Pair<ContentInfoCompat, ContentInfoCompat> i = payload.m37569i(new AbstractC1338h() { // from class: com.discord.chat.input.views.a
+            @Override // androidx.core.util.AbstractC1338h
             public final boolean test(Object obj) {
                 boolean lambda$3$lambda$1;
                 lambda$3$lambda$1 = ChatInputRootView.lambda$3$lambda$1(context, (ClipData.Item) obj);
                 return lambda$3$lambda$1;
             }
         });
-        C9971q.m14634f(i, "partition {\n            …/\") == true\n            }");
+        C9677q.m14634f(i, "partition {\n            …/\") == true\n            }");
         ContentInfoCompat contentInfoCompat = (ContentInfoCompat) i.first;
         ContentInfoCompat contentInfoCompat2 = (ContentInfoCompat) i.second;
         if (contentInfoCompat != null) {
             this$0.insertedPayloads.add(payload);
-            q = C6884j.m23947q(0, contentInfoCompat.m37575c().getItemCount());
+            q = C6322j.m23947q(0, contentInfoCompat.m37575c().getItemCount());
             Iterator<Integer> it = q.iterator();
             while (it.hasNext()) {
-                Uri uri = contentInfoCompat.m37575c().getItemAt(((AbstractC11283p) it).nextInt()).getUri();
-                C9971q.m14634f(uri, "clip.getItemAt(itemIndex).uri");
+                Uri uri = contentInfoCompat.m37575c().getItemAt(((AbstractC11047p) it).nextInt()).getUri();
+                C9677q.m14634f(uri, "clip.getItemAt(itemIndex).uri");
                 ChatInputListener chatInputListener = this$0.listener;
                 if (chatInputListener != null) {
                     chatInputListener.onImageInserted(uri);
@@ -283,11 +283,11 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
 
     private final void forEachUri(ContentInfoCompat contentInfoCompat, Function1<? super Uri, Unit> function1) {
         IntRange q;
-        q = C6884j.m23947q(0, contentInfoCompat.m37575c().getItemCount());
+        q = C6322j.m23947q(0, contentInfoCompat.m37575c().getItemCount());
         Iterator<Integer> it = q.iterator();
         while (it.hasNext()) {
-            Uri uri = contentInfoCompat.m37575c().getItemAt(((AbstractC11283p) it).nextInt()).getUri();
-            C9971q.m14634f(uri, "clip.getItemAt(itemIndex).uri");
+            Uri uri = contentInfoCompat.m37575c().getItemAt(((AbstractC11047p) it).nextInt()).getUri();
+            C9677q.m14634f(uri, "clip.getItemAt(itemIndex).uri");
             function1.invoke(uri);
         }
     }
@@ -301,7 +301,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     public static final boolean lambda$3$lambda$1(android.content.Context r4, android.content.ClipData.Item r5) {
         /*
             java.lang.String r0 = "$context"
-            kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r4, r0)
             android.net.Uri r0 = r5.getUri()
             r1 = 0
             if (r0 == 0) goto L_0x002b
@@ -313,7 +313,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
             r0 = 2
             r2 = 0
             java.lang.String r3 = "image/"
-            boolean r4 = p326ri.C12707l.m5813H(r4, r3, r1, r0, r2)
+            boolean r4 = p327ri.C12576l.m5813H(r4, r3, r1, r0, r2)
             if (r4 != r5) goto L_0x0027
             r4 = r5
             goto L_0x0028
@@ -338,21 +338,21 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     private final void updateChatNodes(List<ChatInputNode> list, int i) {
         int t;
         boolean z;
-        t = C9907k.m14809t(list, 10);
+        t = C9611k.m14809t(list, 10);
         ArrayList<ChatInputNode> arrayList = new ArrayList(t);
         for (ChatInputNode chatInputNode : list) {
             arrayList.add(ChatInputNode.copy$default(chatInputNode, 0, chatInputNode.getLocation() + i, 0, null, false, null, false, 125, null));
         }
         for (ChatInputNode chatInputNode2 : arrayList) {
             Editable editableText = this.editText.getEditableText();
-            C9971q.m14634f(editableText, "editText.editableText");
+            C9677q.m14634f(editableText, "editText.editableText");
             EditTextUtilsKt.setChatInputNodeStyle(editableText, chatInputNode2);
         }
         Editable editableText2 = this.editText.getEditableText();
-        C9971q.m14634f(editableText2, "editText.editableText");
+        C9677q.m14634f(editableText2, "editText.editableText");
         boolean z2 = false;
         Object[] spans = editableText2.getSpans(0, editableText2.length(), BackgroundSpanDrawer.class);
-        C9971q.m14634f(spans, "getSpans(0, length, T::class.java)");
+        C9677q.m14634f(spans, "getSpans(0, length, T::class.java)");
         if (spans.length == 0) {
             z = true;
         } else {
@@ -360,19 +360,19 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         }
         if (!(!z)) {
             Editable editableText3 = this.editText.getEditableText();
-            C9971q.m14634f(editableText3, "editText.editableText");
+            C9677q.m14634f(editableText3, "editText.editableText");
             SpannableExtensionsKt.coverWithSpan(editableText3, new BackgroundSpanDrawer(this.editText));
         }
         Editable editableText4 = this.editText.getEditableText();
-        C9971q.m14634f(editableText4, "editText.editableText");
+        C9677q.m14634f(editableText4, "editText.editableText");
         Object[] spans2 = editableText4.getSpans(0, editableText4.length(), SelectionGuardSpanWatcher.class);
-        C9971q.m14634f(spans2, "getSpans(0, length, T::class.java)");
+        C9677q.m14634f(spans2, "getSpans(0, length, T::class.java)");
         if (spans2.length == 0) {
             z2 = true;
         }
         if (!(!z2)) {
             Editable editableText5 = this.editText.getEditableText();
-            C9971q.m14634f(editableText5, "editText.editableText");
+            C9677q.m14634f(editableText5, "editText.editableText");
             SpannableExtensionsKt.coverWithSpan(editableText5, new SelectionGuardSpanWatcher());
         }
     }
@@ -403,12 +403,12 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     public final void clearAndApplyChatNodes(String str, List<ChatInputNode> chatInputNodes) {
-        C9971q.m14633g(chatInputNodes, "chatInputNodes");
-        if (C9971q.m14638b(this.lastEditId, str) || str == null) {
+        C9677q.m14633g(chatInputNodes, "chatInputNodes");
+        if (C9677q.m14638b(this.lastEditId, str) || str == null) {
             Editable editableText = this.editText.getEditableText();
             DCDInputSpan[] dCDInputSpanArr = (DCDInputSpan[]) editableText.getSpans(0, editableText.length(), DCDInputSpan.class);
             if (dCDInputSpanArr != null) {
-                C9971q.m14634f(dCDInputSpanArr, "getSpans(0, length, DCDInputSpan::class.java)");
+                C9677q.m14634f(dCDInputSpanArr, "getSpans(0, length, DCDInputSpan::class.java)");
                 for (DCDInputSpan dCDInputSpan : dCDInputSpanArr) {
                     editableText.removeSpan(dCDInputSpan);
                 }
@@ -464,7 +464,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        C10139l.m14174d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onAttachedToWindow$1(this, null), 3, null);
+        C9851l.m14174d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onAttachedToWindow$1(this, null), 3, null);
     }
 
     @Override // com.discord.keyboard.KeyboardEvent
@@ -472,10 +472,10 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         Job d;
         Job job = this.blurJob;
         if (job != null) {
-            Job.C9996a.m14571a(job, null, 1, null);
+            Job.C9704a.m14571a(job, null, 1, null);
         }
         if (!z) {
-            d = C10139l.m14174d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onKeyboardStateChanged$1(this, null), 3, null);
+            d = C9851l.m14174d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onKeyboardStateChanged$1(this, null), 3, null);
             this.blurJob = d;
         }
     }
@@ -483,9 +483,9 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     public final void replaceRange(int i, int i2, String text, List<ChatInputNode> styleBlocks, boolean z, String str) {
         int i3;
         int i4;
-        C9971q.m14633g(text, "text");
-        C9971q.m14633g(styleBlocks, "styleBlocks");
-        if (C9971q.m14638b(str, this.lastEditId) || str == null) {
+        C9677q.m14633g(text, "text");
+        C9677q.m14633g(styleBlocks, "styleBlocks");
+        if (C9677q.m14638b(str, this.lastEditId) || str == null) {
             Editable text2 = this.editText.getText();
             if (text2 != null) {
                 i3 = text2.length();
@@ -530,7 +530,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     public final void setText(String value) {
-        C9971q.m14633g(value, "value");
+        C9677q.m14633g(value, "value");
         this.editText.setText(value);
     }
 
@@ -539,40 +539,40 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     public final void showKeyboard(Window window) {
-        C9971q.m14633g(window, "window");
+        C9677q.m14633g(window, "window");
         KeyboardExtensionsKt.showKeyboard(this.editText, window);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ChatInputRootView(final Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ChatInputRootViewBinding inflate = ChatInputRootViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        C9677q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         this.lineHeightMeasurer = new ChatInputRootViewMeasurer(this, new ChatInputRootView$lineHeightMeasurer$1(this));
         DCDChatInput dCDChatInput = inflate.chatInputEditText;
-        C9971q.m14634f(dCDChatInput, "binding.chatInputEditText");
+        C9677q.m14634f(dCDChatInput, "binding.chatInputEditText");
         this.editText = dCDChatInput;
         this.insertedPayloads = new LinkedHashSet();
         this.editTextHint = dCDChatInput.getHint();
         this.editTextMaxLines = dCDChatInput.getMaxLines();
         String uuid = UUID.randomUUID().toString();
-        C9971q.m14634f(uuid, "randomUUID().toString()");
+        C9677q.m14634f(uuid, "randomUUID().toString()");
         this.lastEditId = uuid;
-        this.currentTextFlow = C10062q.m14364a(null);
+        this.currentTextFlow = C9773q.m14364a(null);
         DiscordFontUtilsKt.setDiscordFont(dCDChatInput, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(dCDChatInput, 16.0f);
-        dCDChatInput.setOnRequestSend(new AnonymousClass1());
-        dCDChatInput.setOnSelectionChanged(new AnonymousClass2());
+        dCDChatInput.setOnRequestSend(new C31621());
+        dCDChatInput.setOnSelectionChanged(new C31632());
         dCDChatInput.setOnFocusChangeListener(new View.OnFocusChangeListener() { // from class: com.discord.chat.input.views.b
             @Override // android.view.View.OnFocusChangeListener
             public final void onFocusChange(View view, boolean z) {
                 ChatInputRootView._init_$lambda$0(ChatInputRootView.this, view, z);
             }
         });
-        C2733w0.m37056E0(dCDChatInput, new String[]{"image/*"}, new AbstractC2702s0() { // from class: com.discord.chat.input.views.c
-            @Override // androidx.core.view.AbstractC2702s0
+        C1559w0.m37056E0(dCDChatInput, new String[]{"image/*"}, new AbstractC1526s0() { // from class: com.discord.chat.input.views.c
+            @Override // androidx.core.view.AbstractC1526s0
             /* renamed from: a */
             public final ContentInfoCompat mo32330a(View view, ContentInfoCompat contentInfoCompat) {
                 ContentInfoCompat _init_$lambda$3;
@@ -586,7 +586,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
                 String valueOf = String.valueOf(editable);
                 ChatInputRootView chatInputRootView = ChatInputRootView.this;
                 String uuid2 = UUID.randomUUID().toString();
-                C9971q.m14634f(uuid2, "randomUUID().toString()");
+                C9677q.m14634f(uuid2, "randomUUID().toString()");
                 chatInputRootView.lastEditId = uuid2;
                 ChatInputRootView.this.currentTextFlow.setValue(new ChatInputRootView.CurrentTextAndSelection(ChatInputRootView.this.editText.getSelectionStart(), ChatInputRootView.this.editText.getSelectionEnd(), valueOf, ChatInputRootView.this.lastEditId));
                 ChatInputRootView.this.lineHeightMeasurer.measure(false);
@@ -602,11 +602,11 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
             }
         });
         dCDChatInput.addTextChangedListener(new DeleteNodeOnBackspaceTextWatcher());
-        if (!C2733w0.m37029U(this) || isLayoutRequested()) {
+        if (!C1559w0.m37029U(this) || isLayoutRequested()) {
             addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.discord.chat.input.views.ChatInputRootView$special$$inlined$doOnLayout$1
                 @Override // android.view.View.OnLayoutChangeListener
                 public void onLayoutChange(View view, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) {
-                    C9971q.m14633g(view, "view");
+                    C9677q.m14633g(view, "view");
                     view.removeOnLayoutChangeListener(this);
                     ChatInputRootView.this.lineHeightMeasurer.measure(true);
                 }

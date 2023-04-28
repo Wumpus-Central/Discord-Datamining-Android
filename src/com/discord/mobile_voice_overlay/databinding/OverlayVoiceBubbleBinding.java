@@ -3,7 +3,7 @@ package com.discord.mobile_voice_overlay.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 /* loaded from: classes5.dex */
@@ -29,7 +29,7 @@ public final class OverlayVoiceBubbleBinding {
     }
 
     public static OverlayVoiceBubbleBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4573R.layout.overlay_voice_bubble, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3521R.layout.overlay_voice_bubble, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

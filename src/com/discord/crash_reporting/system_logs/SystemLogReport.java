@@ -8,7 +8,7 @@ import com.discord.logging.Log;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\u00020\u0001:\u0001\u0015B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0004H\u0002J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u0004H\u0002J3\u0010\u000f\u001a\u00020\f2\u0006\u0010\b\u001a\u00020\t2\u001c\u0010\u0010\u001a\u0018\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0013\u0012\u0004\u0012\u00020\f0\u0011H\u0000¢\u0006\u0002\b\u0014R\u0016\u0010\u0003\u001a\n \u0005*\u0004\u0018\u00010\u00040\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, m15073d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogReport;", "", "()V", "TAG", "", "kotlin.jvm.PlatformType", "checkHashChanged", "", "context", "Landroid/content/Context;", "hash", "recordBreadcrumb", "", "msg", "category", "reportLastCrash", "cb", "Lkotlin/Function2;", "Lcom/discord/crash_reporting/system_logs/HistoricalProcessExitReason$Reason;", "Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "reportLastCrash$crash_reporting_release", "LastStoredTombstoneCache", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -28,20 +28,20 @@ public final class SystemLogReport {
 
         private final SharedPreferences getCache(Context context) {
             SharedPreferences sharedPreferences = context.getSharedPreferences(CACHE_KEY, 0);
-            C9971q.m14634f(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
+            C9677q.m14634f(sharedPreferences, "getSharedPreferences(CAC…EY, Context.MODE_PRIVATE)");
             return sharedPreferences;
         }
 
         public final String get(Context context) {
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             return getCache(context).getString(CACHE_KEY, null);
         }
 
         public final void set(Context context, String hash) {
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(hash, "hash");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(hash, "hash");
             SharedPreferences.Editor editor = getCache(context).edit();
-            C9971q.m14634f(editor, "editor");
+            C9677q.m14634f(editor, "editor");
             editor.putString(CACHE_KEY, hash);
             editor.apply();
         }
@@ -53,7 +53,7 @@ public final class SystemLogReport {
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean checkHashChanged(Context context, String str) {
         LastStoredTombstoneCache lastStoredTombstoneCache = LastStoredTombstoneCache.INSTANCE;
-        if (C9971q.m14638b(lastStoredTombstoneCache.get(context), str)) {
+        if (C9677q.m14638b(lastStoredTombstoneCache.get(context), str)) {
             return false;
         }
         lastStoredTombstoneCache.set(context, str);
@@ -64,13 +64,13 @@ public final class SystemLogReport {
     public final void recordBreadcrumb(String str, String str2) {
         Log log = Log.INSTANCE;
         String TAG2 = TAG;
-        C9971q.m14634f(TAG2, "TAG");
+        C9677q.m14634f(TAG2, "TAG");
         Log.i$default(log, TAG2, "Breadcrumb, [" + str2 + "]: " + str, (Throwable) null, 4, (Object) null);
     }
 
     public final void reportLastCrash$crash_reporting_release(Context context, Function2<? super HistoricalProcessExitReason.Reason, ? super SystemLogUtils.Tombstone, Unit> cb) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(cb, "cb");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(cb, "cb");
         SystemLogUtils.INSTANCE.fetchLastTombstone(new SystemLogReport$reportLastCrash$1(cb, context));
     }
 }

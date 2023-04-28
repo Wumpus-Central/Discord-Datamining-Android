@@ -11,9 +11,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
-import p326ri.C12690b;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
+import p327ri.C12559b;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0014B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\r\u001a\u001a\u0012\u0004\u0012\u0002H\u000f\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000f0\u0010\u0012\u0004\u0012\u0002H\u00110\u000e\"\u0004\b\u0000\u0010\u000f\"\u0004\b\u0001\u0010\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u0002H\u000f0\u0013R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/simpleast/code/Xml;", "", "()V", "PATTERN_XML_COMMENT", "Ljava/util/regex/Pattern;", "getPATTERN_XML_COMMENT", "()Ljava/util/regex/Pattern;", "PATTERN_XML_TAG", "getPATTERN_XML_TAG", "PATTERN_XML_TAG_CLOSING_GROUP", "", "PATTERN_XML_TAG_CONTENT_GROUP", "PATTERN_XML_TAG_OPENING_GROUP", "createTagRule", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "TagNode", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
 /* loaded from: classes7.dex */
@@ -35,8 +35,8 @@ public final class Xml {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public TagNode(String opening, String str, CodeStyleProviders<RC> codeStyleProviders) {
             super(new Node[0]);
-            C9971q.m14633g(opening, "opening");
-            C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+            C9677q.m14633g(opening, "opening");
+            C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
             this.opening = opening;
             this.closing = str;
             this.codeStyleProviders = codeStyleProviders;
@@ -55,7 +55,7 @@ public final class Xml {
             Pair pair;
             boolean c;
             boolean z;
-            C9971q.m14633g(builder, "builder");
+            C9677q.m14633g(builder, "builder");
             String str = this.opening;
             int length = str.length();
             boolean z2 = false;
@@ -66,7 +66,7 @@ public final class Xml {
                     break;
                 }
                 char charAt = str.charAt(i);
-                c = C12690b.m5868c(charAt);
+                c = C12559b.m5868c(charAt);
                 if (c || charAt == '/') {
                     z = true;
                 } else {
@@ -81,12 +81,12 @@ public final class Xml {
                 String str2 = this.opening;
                 if (str2 != null) {
                     String substring = str2.substring(0, i);
-                    C9971q.m14634f(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
+                    C9677q.m14634f(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
                     String str3 = this.opening;
                     if (str3 != null) {
                         String substring2 = str3.substring(i);
-                        C9971q.m14634f(substring2, "(this as java.lang.String).substring(startIndex)");
-                        pair = C11098x.m10921a(substring, substring2);
+                        C9677q.m14634f(substring2, "(this as java.lang.String).substring(startIndex)");
+                        pair = C10853x.m10921a(substring, substring2);
                     } else {
                         throw new NullPointerException("null cannot be cast to non-null type java.lang.String");
                     }
@@ -94,7 +94,7 @@ public final class Xml {
                     throw new NullPointerException("null cannot be cast to non-null type java.lang.String");
                 }
             } else {
-                pair = C11098x.m10921a(this.opening, "");
+                pair = C10853x.m10921a(this.opening, "");
             }
             String str4 = (String) pair.m15066b();
             Xml$TagNode$render$typeStylesProvider$1 xml$TagNode$render$typeStylesProvider$1 = new Xml$TagNode$render$typeStylesProvider$1(this.codeStyleProviders.getGenericsStyleProvider());
@@ -132,10 +132,10 @@ public final class Xml {
 
     static {
         Pattern compile = Pattern.compile("^<!--[\\s\\S]*?-->", 32);
-        C9971q.m14634f(compile, "Pattern.compile(\"\"\"^<!--…*?-->\"\"\", Pattern.DOTALL)");
+        C9677q.m14634f(compile, "Pattern.compile(\"\"\"^<!--…*?-->\"\"\", Pattern.DOTALL)");
         PATTERN_XML_COMMENT = compile;
         Pattern compile2 = Pattern.compile("^<([\\s\\S]+?)(?:>(.*?)<\\/([\\s\\S]+?))?>", 32);
-        C9971q.m14634f(compile2, "Pattern.compile(\n      \"…?))?>\"\"\", Pattern.DOTALL)");
+        C9677q.m14634f(compile2, "Pattern.compile(\n      \"…?))?>\"\"\", Pattern.DOTALL)");
         PATTERN_XML_TAG = compile2;
     }
 
@@ -143,15 +143,15 @@ public final class Xml {
     }
 
     public final <RC, S> Rule<RC, Node<RC>, S> createTagRule(final CodeStyleProviders<RC> codeStyleProviders) {
-        C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+        C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
         final Pattern pattern = PATTERN_XML_TAG;
         return new Rule<RC, Node<RC>, S>(pattern) { // from class: com.discord.simpleast.code.Xml$createTagRule$1
             @Override // com.discord.simpleast.core.parser.Rule
             public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s) {
-                C9971q.m14633g(matcher, "matcher");
-                C9971q.m14633g(parser, "parser");
+                C9677q.m14633g(matcher, "matcher");
+                C9677q.m14633g(parser, "parser");
                 String group = matcher.group(1);
-                C9971q.m14636d(group);
+                C9677q.m14636d(group);
                 String group2 = matcher.group(3);
                 if (matcher.group(2) != null) {
                     return ParseSpec.Companion.createNonterminal(new Xml.TagNode(group, group2, codeStyleProviders), s, matcher.start(2), matcher.end(2));

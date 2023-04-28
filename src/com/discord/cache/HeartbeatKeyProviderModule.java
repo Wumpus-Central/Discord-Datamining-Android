@@ -6,7 +6,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.module.annotations.ReactModule;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @ReactModule(name = "HeartbeatKeyProviderModule")
@@ -28,7 +28,7 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new HeartbeatKeyProviderModule(reactContext);
         }
     }
@@ -36,7 +36,7 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public HeartbeatKeyProviderModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.sharedPrefs = reactContext.getSharedPreferences("heartbeat_keys", 0);
     }
 
@@ -67,44 +67,44 @@ public final class HeartbeatKeyProviderModule extends NativeHeartbeatKeyProvider
 
     @Override // com.discord.codegen.NativeHeartbeatKeyProviderSpec
     public void setHeartbeatInitializedTimestamp(String timestamp) {
-        C9971q.m14633g(timestamp, "timestamp");
+        C9677q.m14633g(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        C9971q.m14634f(sharedPrefs, "sharedPrefs");
+        C9677q.m14634f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        C9971q.m14634f(editor, "editor");
+        C9677q.m14634f(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_INITIALIZED_TIMESTAMP, timestamp);
         editor.apply();
     }
 
     @Override // com.discord.codegen.NativeHeartbeatKeyProviderSpec
     public void setHeartbeatRefreshedTimestamp(String timestamp) {
-        C9971q.m14633g(timestamp, "timestamp");
+        C9677q.m14633g(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        C9971q.m14634f(sharedPrefs, "sharedPrefs");
+        C9677q.m14634f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        C9971q.m14634f(editor, "editor");
+        C9677q.m14634f(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_TIMESTAMP, timestamp);
         editor.apply();
     }
 
     @Override // com.discord.codegen.NativeHeartbeatKeyProviderSpec
     public void setHeartbeatUUID(String uuid) {
-        C9971q.m14633g(uuid, "uuid");
+        C9677q.m14633g(uuid, "uuid");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        C9971q.m14634f(sharedPrefs, "sharedPrefs");
+        C9677q.m14634f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        C9971q.m14634f(editor, "editor");
+        C9677q.m14634f(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAT_UUID, uuid);
         editor.apply();
     }
 
     @Override // com.discord.codegen.NativeHeartbeatKeyProviderSpec
     public void setLatestHeartbeatEventTimestamp(String timestamp) {
-        C9971q.m14633g(timestamp, "timestamp");
+        C9677q.m14633g(timestamp, "timestamp");
         SharedPreferences sharedPrefs = this.sharedPrefs;
-        C9971q.m14634f(sharedPrefs, "sharedPrefs");
+        C9677q.m14634f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
-        C9971q.m14634f(editor, "editor");
+        C9677q.m14634f(editor, "editor");
         editor.putString(HeartbeatKeyProviderModuleKt.LATEST_HEARTBEAST_TIMESTAMP, timestamp);
         editor.apply();
     }

@@ -1,17 +1,17 @@
 package com.discord.chat.bridge;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 <2\u00020\u0001:\u0002;<Bw\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0003\u0012\u0006\u0010\u0010\u001a\u00020\u0003\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\u0002\u0010\u0013B]\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0003\u0012\u0006\u0010\u0010\u001a\u00020\u0003¢\u0006\u0002\u0010\u0014J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\tHÆ\u0003J\t\u0010)\u001a\u00020\u0005HÆ\u0003J\t\u0010*\u001a\u00020\u0005HÆ\u0003J\t\u0010+\u001a\u00020\u0003HÆ\u0003J\t\u0010,\u001a\u00020\u0003HÆ\u0003J\t\u0010-\u001a\u00020\u0003HÆ\u0003Jw\u0010.\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u00032\b\b\u0002\u0010\u0010\u001a\u00020\u0003HÆ\u0001J\u0013\u0010/\u001a\u0002002\b\u00101\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00102\u001a\u00020\u0003HÖ\u0001J\t\u00103\u001a\u00020\u0005HÖ\u0001J!\u00104\u001a\u0002052\u0006\u00106\u001a\u00020\u00002\u0006\u00107\u001a\u0002082\u0006\u00109\u001a\u00020:HÇ\u0001R\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0010\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0016R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u000b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0019R\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0016R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0019R\u0011\u0010\u000f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0016R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0016R\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0016R\u0011\u0010\f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0016¨\u0006="}, m15073d2 = {"Lcom/discord/chat/bridge/UploadProgress;", "", "seen1", "", "headerText", "", "headerColor", ViewProps.BACKGROUND_COLOR, "progress", "", "fileId", "fileType", "progressTrackColor", "progressStartColor", "progressEndColor", "iconTintColor", "closeTintColor", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;IIFLjava/lang/String;Ljava/lang/String;IIIIILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;IIFLjava/lang/String;Ljava/lang/String;IIIII)V", "getBackgroundColor", "()I", "getCloseTintColor", "getFileId", "()Ljava/lang/String;", "getFileType", "getHeaderColor", "getHeaderText", "getIconTintColor", "getProgress", "()F", "getProgressEndColor", "getProgressStartColor", "getProgressTrackColor", "component1", "component10", "component11", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class UploadProgress {
@@ -45,7 +45,7 @@ public final class UploadProgress {
 
     public /* synthetic */ UploadProgress(int i, String str, int i2, int i3, float f, String str2, String str3, int i4, int i5, int i6, int i7, int i8, SerializationConstructorMarker serializationConstructorMarker) {
         if (2047 != (i & 2047)) {
-            C3681n1.m33818b(i, 2047, UploadProgress$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 2047, UploadProgress$$serializer.INSTANCE.getDescriptor());
         }
         this.headerText = str;
         this.headerColor = i2;
@@ -61,9 +61,9 @@ public final class UploadProgress {
     }
 
     public static final void write$Self(UploadProgress self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13864z(serialDesc, 0, self.headerText);
         output.mo13866x(serialDesc, 1, self.headerColor);
         output.mo13866x(serialDesc, 2, self.backgroundColor);
@@ -122,9 +122,9 @@ public final class UploadProgress {
     }
 
     public final UploadProgress copy(String headerText, int i, int i2, float f, String fileId, String fileType, int i3, int i4, int i5, int i6, int i7) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(fileId, "fileId");
-        C9971q.m14633g(fileType, "fileType");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(fileId, "fileId");
+        C9677q.m14633g(fileType, "fileType");
         return new UploadProgress(headerText, i, i2, f, fileId, fileType, i3, i4, i5, i6, i7);
     }
 
@@ -136,7 +136,7 @@ public final class UploadProgress {
             return false;
         }
         UploadProgress uploadProgress = (UploadProgress) obj;
-        return C9971q.m14638b(this.headerText, uploadProgress.headerText) && this.headerColor == uploadProgress.headerColor && this.backgroundColor == uploadProgress.backgroundColor && Float.compare(this.progress, uploadProgress.progress) == 0 && C9971q.m14638b(this.fileId, uploadProgress.fileId) && C9971q.m14638b(this.fileType, uploadProgress.fileType) && this.progressTrackColor == uploadProgress.progressTrackColor && this.progressStartColor == uploadProgress.progressStartColor && this.progressEndColor == uploadProgress.progressEndColor && this.iconTintColor == uploadProgress.iconTintColor && this.closeTintColor == uploadProgress.closeTintColor;
+        return C9677q.m14638b(this.headerText, uploadProgress.headerText) && this.headerColor == uploadProgress.headerColor && this.backgroundColor == uploadProgress.backgroundColor && Float.compare(this.progress, uploadProgress.progress) == 0 && C9677q.m14638b(this.fileId, uploadProgress.fileId) && C9677q.m14638b(this.fileType, uploadProgress.fileType) && this.progressTrackColor == uploadProgress.progressTrackColor && this.progressStartColor == uploadProgress.progressStartColor && this.progressEndColor == uploadProgress.progressEndColor && this.iconTintColor == uploadProgress.iconTintColor && this.closeTintColor == uploadProgress.closeTintColor;
     }
 
     public final int getBackgroundColor() {
@@ -203,9 +203,9 @@ public final class UploadProgress {
     }
 
     public UploadProgress(String headerText, int i, int i2, float f, String fileId, String fileType, int i3, int i4, int i5, int i6, int i7) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(fileId, "fileId");
-        C9971q.m14633g(fileType, "fileType");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(fileId, "fileId");
+        C9677q.m14633g(fileType, "fileType");
         this.headerText = headerText;
         this.headerColor = i;
         this.backgroundColor = i2;

@@ -12,12 +12,12 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import kotlin.Metadata;
-import kotlin.collections.C9905i;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9914r;
+import kotlin.collections.C9609i;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9618r;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.text.Regex;
 
@@ -40,9 +40,9 @@ public final class MarkdownRules {
         /* JADX WARN: Multi-variable type inference failed */
         public HeaderLineClassedRule(Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider, Function1<? super String, ? extends T> classSpanProvider, List<? extends Rule<RC, Node<RC>, S>> innerRules) {
             super(MarkdownRules.INSTANCE.getPATTERN_HEADER_ITEM_ALT_CLASSED(), styleSpanProvider);
-            C9971q.m14633g(styleSpanProvider, "styleSpanProvider");
-            C9971q.m14633g(classSpanProvider, "classSpanProvider");
-            C9971q.m14633g(innerRules, "innerRules");
+            C9677q.m14633g(styleSpanProvider, "styleSpanProvider");
+            C9677q.m14633g(classSpanProvider, "classSpanProvider");
+            C9677q.m14633g(innerRules, "innerRules");
             this.classSpanProvider = classSpanProvider;
             this.innerRules = innerRules;
         }
@@ -67,13 +67,13 @@ public final class MarkdownRules {
             /*
                 r8 = this;
                 java.lang.String r0 = "matcher"
-                kotlin.jvm.internal.C9971q.m14633g(r9, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r9, r0)
                 java.lang.String r0 = "parser"
-                kotlin.jvm.internal.C9971q.m14633g(r10, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r10, r0)
                 r0 = 4
                 java.lang.String r0 = r9.group(r0)
                 java.lang.String r1 = "matcher.group(4)"
-                kotlin.jvm.internal.C9971q.m14634f(r0, r1)
+                kotlin.jvm.internal.C9677q.m14634f(r0, r1)
                 com.discord.simpleast.core.node.StyleNode r0 = r8.createHeaderStyleNode(r0)
                 r1 = 1
                 java.lang.String r2 = r9.group(r1)
@@ -84,7 +84,7 @@ public final class MarkdownRules {
                 java.lang.String r2 = r9.group(r2)
             L_0x0025:
                 java.lang.String r3 = "headerBody"
-                kotlin.jvm.internal.C9971q.m14634f(r2, r3)
+                kotlin.jvm.internal.C9677q.m14634f(r2, r3)
                 java.util.List<com.discord.simpleast.core.parser.Rule<RC, com.discord.simpleast.core.node.Node<RC>, S>> r3 = r8.innerRules
                 java.util.List r10 = r10.parse(r2, r11, r3)
                 java.util.Iterator r10 = r10.iterator()
@@ -105,7 +105,7 @@ public final class MarkdownRules {
                 r10 = 2
                 java.lang.String r9 = r9.group(r10)
                 if (r9 == 0) goto L_0x006f
-                java.lang.CharSequence r9 = p326ri.C12707l.m5797V0(r9)
+                java.lang.CharSequence r9 = p327ri.C12576l.m5797V0(r9)
                 java.lang.String r2 = r9.toString()
                 if (r2 == 0) goto L_0x006f
                 char[] r3 = new char[r1]
@@ -116,7 +116,7 @@ public final class MarkdownRules {
                 r5 = 0
                 r6 = 6
                 r7 = 0
-                java.util.List r9 = p326ri.C12707l.m5764y0(r2, r3, r4, r5, r6, r7)
+                java.util.List r9 = p327ri.C12576l.m5764y0(r2, r3, r4, r5, r6, r7)
                 goto L_0x0070
             L_0x006f:
                 r9 = 0
@@ -136,7 +136,7 @@ public final class MarkdownRules {
                 r10.add(r2)
                 goto L_0x007b
             L_0x0093:
-                java.util.List r10 = kotlin.collections.C9904h.m14862i()
+                java.util.List r10 = kotlin.collections.C9608h.m14862i()
             L_0x0097:
                 boolean r9 = r10.isEmpty()
                 r9 = r9 ^ r1
@@ -162,16 +162,16 @@ public final class MarkdownRules {
             /*
                 r3 = this;
                 java.lang.String r0 = "styleSpanProvider"
-                kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r4, r0)
                 java.lang.String r0 = "classSpanProvider"
-                kotlin.jvm.internal.C9971q.m14633g(r5, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r5, r0)
                 r0 = 2
                 r1 = 0
                 r2 = 0
                 java.util.List r0 = com.discord.simpleast.core.simple.SimpleMarkdownRules.createSimpleMarkdownRules$default(r2, r2, r0, r1)
                 com.discord.simpleast.core.simple.SimpleMarkdownRules r1 = com.discord.simpleast.core.simple.SimpleMarkdownRules.INSTANCE
                 com.discord.simpleast.core.parser.Rule r1 = r1.createTextRule()
-                java.util.List r0 = kotlin.collections.C9904h.m14847p0(r0, r1)
+                java.util.List r0 = kotlin.collections.C9608h.m14847p0(r0, r1)
                 r3.<init>(r4, r5, r0)
                 return
             */
@@ -190,31 +190,31 @@ public final class MarkdownRules {
         protected StyleNode<R, CharacterStyle> createHeaderStyleNode(String headerStyleGroup) {
             int i;
             List d;
-            C9971q.m14633g(headerStyleGroup, "headerStyleGroup");
+            C9677q.m14633g(headerStyleGroup, "headerStyleGroup");
             if (headerStyleGroup.hashCode() == 61 && headerStyleGroup.equals("=")) {
                 i = 1;
             } else {
                 i = 2;
             }
-            d = C9905i.m14825d(getStyleSpanProvider().invoke(Integer.valueOf(i)));
+            d = C9609i.m14825d(getStyleSpanProvider().invoke(Integer.valueOf(i)));
             return new StyleNode<>(d);
         }
 
         @Override // com.discord.simpleast.markdown.MarkdownRules.HeaderRule, com.discord.simpleast.core.parser.Rule
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s) {
-            C9971q.m14633g(matcher, "matcher");
-            C9971q.m14633g(parser, "parser");
+            C9677q.m14633g(matcher, "matcher");
+            C9677q.m14633g(parser, "parser");
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group = matcher.group(2);
-            C9971q.m14634f(group, "matcher.group(2)");
+            C9677q.m14634f(group, "matcher.group(2)");
             return companion.createNonterminal(createHeaderStyleNode(group), s, matcher.start(1), matcher.end(1));
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public HeaderLineRule(Pattern pattern, Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             super(pattern, styleSpanProvider);
-            C9971q.m14633g(pattern, "pattern");
-            C9971q.m14633g(styleSpanProvider, "styleSpanProvider");
+            C9677q.m14633g(pattern, "pattern");
+            C9677q.m14633g(styleSpanProvider, "styleSpanProvider");
         }
     }
 
@@ -227,15 +227,15 @@ public final class MarkdownRules {
         /* JADX WARN: Multi-variable type inference failed */
         public HeaderRule(Pattern pattern, Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             super(pattern);
-            C9971q.m14633g(pattern, "pattern");
-            C9971q.m14633g(styleSpanProvider, "styleSpanProvider");
+            C9677q.m14633g(pattern, "pattern");
+            C9677q.m14633g(styleSpanProvider, "styleSpanProvider");
             this.styleSpanProvider = styleSpanProvider;
         }
 
         protected StyleNode<R, CharacterStyle> createHeaderStyleNode(String headerStyleGroup) {
             List d;
-            C9971q.m14633g(headerStyleGroup, "headerStyleGroup");
-            d = C9905i.m14825d(this.styleSpanProvider.invoke(Integer.valueOf(headerStyleGroup.length())));
+            C9677q.m14633g(headerStyleGroup, "headerStyleGroup");
+            d = C9609i.m14825d(this.styleSpanProvider.invoke(Integer.valueOf(headerStyleGroup.length())));
             return new StyleNode<>(d);
         }
 
@@ -245,18 +245,18 @@ public final class MarkdownRules {
 
         @Override // com.discord.simpleast.core.parser.Rule
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s) {
-            C9971q.m14633g(matcher, "matcher");
-            C9971q.m14633g(parser, "parser");
+            C9677q.m14633g(matcher, "matcher");
+            C9677q.m14633g(parser, "parser");
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group = matcher.group(1);
-            C9971q.m14634f(group, "matcher.group(1)");
+            C9677q.m14634f(group, "matcher.group(1)");
             return companion.createNonterminal(createHeaderStyleNode(group), s, matcher.start(2), matcher.end(2));
         }
 
         /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
         public HeaderRule(Function1<? super Integer, ? extends CharacterStyle> styleSpanProvider) {
             this(MarkdownRules.INSTANCE.getPATTERN_HEADER_ITEM(), styleSpanProvider);
-            C9971q.m14633g(styleSpanProvider, "styleSpanProvider");
+            C9677q.m14633g(styleSpanProvider, "styleSpanProvider");
         }
     }
 
@@ -269,27 +269,27 @@ public final class MarkdownRules {
         /* JADX WARN: Multi-variable type inference failed */
         public ListItemRule(Function0<? extends BulletSpan> bulletSpanProvider) {
             super(MarkdownRules.INSTANCE.getPATTERN_LIST_ITEM());
-            C9971q.m14633g(bulletSpanProvider, "bulletSpanProvider");
+            C9677q.m14633g(bulletSpanProvider, "bulletSpanProvider");
             this.bulletSpanProvider = bulletSpanProvider;
         }
 
         @Override // com.discord.simpleast.core.parser.Rule
         public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s) {
-            C9971q.m14633g(matcher, "matcher");
-            C9971q.m14633g(parser, "parser");
+            C9677q.m14633g(matcher, "matcher");
+            C9677q.m14633g(parser, "parser");
             return ParseSpec.Companion.createNonterminal(new MarkdownListItemNode(this.bulletSpanProvider), s, matcher.start(1), matcher.end(1));
         }
     }
 
     static {
         Pattern compile = Pattern.compile("^\\*[ \\t](.*)(?=\\n|$)", 0);
-        C9971q.m14634f(compile, "java.util.regex.Pattern.compile(this, flags)");
+        C9677q.m14634f(compile, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_LIST_ITEM = compile;
         Pattern compile2 = Pattern.compile("^\\s*(#+)[ \\t](.*) *(?=\\n|$)", 0);
-        C9971q.m14634f(compile2, "java.util.regex.Pattern.compile(this, flags)");
+        C9677q.m14634f(compile2, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_HEADER_ITEM = compile2;
         Pattern compile3 = Pattern.compile("^\\s*(.+)\\n *(=|-){3,} *(?=\\n|$)", 0);
-        C9971q.m14634f(compile3, "java.util.regex.Pattern.compile(this, flags)");
+        C9677q.m14634f(compile3, "java.util.regex.Pattern.compile(this, flags)");
         PATTERN_HEADER_ITEM_ALT = compile3;
     }
 
@@ -298,18 +298,18 @@ public final class MarkdownRules {
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createHeaderRules(Context context, List<Integer> headerStyles) {
         List<Rule<R, Node<R>, S>> l;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(headerStyles, "headerStyles");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(headerStyles, "headerStyles");
         MarkdownRules$createHeaderRules$1 markdownRules$createHeaderRules$1 = new MarkdownRules$createHeaderRules$1(context, headerStyles);
-        l = C9906j.m14817l(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
+        l = C9610j.m14817l(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
         return l;
     }
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createMarkdownRules(Context context, List<Integer> headerStyles) {
         List<Rule<R, Node<R>, S>> p0;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(headerStyles, "headerStyles");
-        p0 = C9914r.m14749p0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(headerStyles, "headerStyles");
+        p0 = C9618r.m14749p0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
         return p0;
     }
 

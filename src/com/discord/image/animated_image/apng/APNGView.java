@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
-import androidx.appcompat.widget.C1696n;
+import androidx.appcompat.widget.C0492n;
 import com.discord.image.animated_image.animated_image_utils.AnimatedImageStateManager;
 import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.discord.theme.ThemeManagerKt;
@@ -12,18 +12,18 @@ import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import com.linecorp.apng.ApngDrawable;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9914r;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9618r;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.text.MatchResult;
 import kotlin.text.Regex;
-import kotlinx.coroutines.C10139l;
-import kotlinx.coroutines.C10230y0;
-import p326ri.C12718u;
+import kotlinx.coroutines.C9851l;
+import kotlinx.coroutines.C9946y0;
+import p327ri.C12587u;
 
 @Metadata(m15074d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u00192\u00020\u0001:\u0002\u0019\u001aB\u000f\u0012\u0006\u0010\u0016\u001a\u00020\u0015¢\u0006\u0004\b\u0017\u0010\u0018J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0006\u001a\u00020\u0004H\u0002J\b\u0010\u0007\u001a\u00020\u0004H\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u001a\u0010\f\u001a\u00020\u00042\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\tJ\b\u0010\r\u001a\u00020\u0004H\u0014J\b\u0010\u000e\u001a\u00020\u0004H\u0014R\u0014\u0010\u0010\u001a\u00020\u000f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/image/animated_image/apng/APNGView;", "Landroidx/appcompat/widget/n;", "Lcom/discord/image/animated_image/apng/APNGView$Config;", "config", "", "fetchAPNG", "playApngAnimation", "pauseApngAnimation", "loadImage", "", "resetState", "showLoading", "recycle", "onDetachedFromWindow", "onAttachedToWindow", "Landroid/graphics/drawable/ShapeDrawable;", ReactTextInputShadowNode.PROP_PLACEHOLDER, "Landroid/graphics/drawable/ShapeDrawable;", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "apngStateManager", "Lcom/discord/image/animated_image/animated_image_utils/AnimatedImageStateManager;", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Companion", "Config", "animated_image_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes5.dex */
-public final class APNGView extends C1696n {
+public final class APNGView extends C0492n {
     public static final Companion Companion = new Companion(null);
     private static final Regex nameRegex = new Regex("(\\w+.png)");
     private final AnimatedImageStateManager<Config> apngStateManager = new AnimatedImageStateManager<>(new APNGView$apngStateManager$1(this), new APNGView$apngStateManager$2(this), new APNGView$apngStateManager$3(this), new APNGView$apngStateManager$4(this), new APNGView$apngStateManager$5(this));
@@ -44,7 +44,7 @@ public final class APNGView extends C1696n {
             Object W;
             MatchResult b2 = APNGView.nameRegex.m14588b(str, 0);
             if (!(b2 == null || (b = b2.mo5841b()) == null)) {
-                W = C9914r.m14768W(b);
+                W = C9618r.m14768W(b);
                 String str2 = (String) W;
                 if (str2 != null) {
                     return str2;
@@ -55,7 +55,7 @@ public final class APNGView extends C1696n {
 
         public final boolean hasFilename(String str) {
             boolean w;
-            w = C12718u.m5729w(getFilename(str));
+            w = C12587u.m5729w(getFilename(str));
             return !w;
         }
     }
@@ -63,7 +63,7 @@ public final class APNGView extends C1696n {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public APNGView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ShapeDrawable shapeDrawable = new ShapeDrawable();
         shapeDrawable.setShape(new OvalShape());
         shapeDrawable.getPaint().setColor(ThemeManagerKt.getTheme().getBackgroundAccent());
@@ -71,7 +71,7 @@ public final class APNGView extends C1696n {
     }
 
     public final void fetchAPNG(Config config) {
-        C10139l.m14174d(CoroutineViewUtilsKt.attachedScope(this, true), C10230y0.m13946b(), null, new APNGView$fetchAPNG$1(this, config, null), 2, null);
+        C9851l.m14174d(CoroutineViewUtilsKt.attachedScope(this, true), C9946y0.m13946b(), null, new APNGView$fetchAPNG$1(this, config, null), 2, null);
     }
 
     public final void pauseApngAnimation() {
@@ -101,7 +101,7 @@ public final class APNGView extends C1696n {
     }
 
     public final void loadImage(Config config) {
-        C9971q.m14633g(config, "config");
+        C9677q.m14633g(config, "config");
         this.apngStateManager.onTryFetch(config);
     }
 
@@ -144,8 +144,8 @@ public final class APNGView extends C1696n {
         private final Integer widthDp;
 
         public Config(String url, boolean z, boolean z2, Integer num, Integer num2, String cacheDirectory) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(cacheDirectory, "cacheDirectory");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(cacheDirectory, "cacheDirectory");
             this.url = url;
             this.animate = z;
             this.showLoading = z2;
@@ -201,8 +201,8 @@ public final class APNGView extends C1696n {
         }
 
         public final Config copy(String url, boolean z, boolean z2, Integer num, Integer num2, String cacheDirectory) {
-            C9971q.m14633g(url, "url");
-            C9971q.m14633g(cacheDirectory, "cacheDirectory");
+            C9677q.m14633g(url, "url");
+            C9677q.m14633g(cacheDirectory, "cacheDirectory");
             return new Config(url, z, z2, num, num2, cacheDirectory);
         }
 
@@ -214,7 +214,7 @@ public final class APNGView extends C1696n {
                 return false;
             }
             Config config = (Config) obj;
-            return C9971q.m14638b(this.url, config.url) && this.animate == config.animate && this.showLoading == config.showLoading && C9971q.m14638b(this.widthDp, config.widthDp) && C9971q.m14638b(this.heightDp, config.heightDp) && C9971q.m14638b(this.cacheDirectory, config.cacheDirectory);
+            return C9677q.m14638b(this.url, config.url) && this.animate == config.animate && this.showLoading == config.showLoading && C9677q.m14638b(this.widthDp, config.widthDp) && C9677q.m14638b(this.heightDp, config.heightDp) && C9677q.m14638b(this.cacheDirectory, config.cacheDirectory);
         }
 
         public final boolean getAnimate() {

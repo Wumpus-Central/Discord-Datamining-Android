@@ -4,9 +4,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.reactions.C4675R;
+import com.discord.reactions.C3630R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes6.dex */
 public final class AddReactionViewBinding {
@@ -21,11 +21,11 @@ public final class AddReactionViewBinding {
     }
 
     public static AddReactionViewBinding bind(View view) {
-        int i = C4675R.C4677id.add_reaction_image;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3630R.C3632id.add_reaction_image;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4675R.C4677id.add_reaction_text;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3630R.C3632id.add_reaction_text;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
                 return new AddReactionViewBinding(view, simpleDraweeView, textView);
             }
@@ -35,7 +35,7 @@ public final class AddReactionViewBinding {
 
     public static AddReactionViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4675R.layout.add_reaction_view, viewGroup);
+            layoutInflater.inflate(C3630R.layout.add_reaction_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

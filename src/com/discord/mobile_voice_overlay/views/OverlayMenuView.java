@@ -18,8 +18,8 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import nf.C11088q;
+import kotlin.jvm.internal.C9677q;
+import nf.C10843q;
 
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004B\u0019\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007B!\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\u000e\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u000b\u001a\u00020\fJ\u000e\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u0015R\u000e\u0010\u000b\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u0011\u0010\r\u001a\u00020\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u0016"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayMenuView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "attributeSetId", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "assets", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayAssets;", "binding", "Lcom/discord/mobile_voice_overlay/databinding/ViewOverlayMenuBinding;", "getBinding", "()Lcom/discord/mobile_voice_overlay/databinding/ViewOverlayMenuBinding;", "setAssets", "", "setData", "data", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -57,22 +57,22 @@ public final class OverlayMenuView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayMenuView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        C9971q.m14634f(textView, "binding.overlayGuildName");
+        C9677q.m14634f(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        C9971q.m14634f(textView2, "binding.overlayInviteLink");
+        C9677q.m14634f(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        C9971q.m14634f(textView3, "binding.overlaySwitchChannels");
+        C9677q.m14634f(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        C9971q.m14634f(textView4, "binding.overlayOpenApp");
+        C9677q.m14634f(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());
@@ -90,21 +90,21 @@ public final class OverlayMenuView extends LinearLayout {
     }
 
     public final void setAssets(MobileVoiceOverlayAssets assets) {
-        C9971q.m14633g(assets, "assets");
+        C9677q.m14633g(assets, "assets");
         this.assets = assets;
         SimpleDraweeView setAssets$lambda$0 = this.binding.srcToggle;
         setAssets$lambda$0.setContentDescription(assets.getUseSpeaker());
-        C9971q.m14634f(setAssets$lambda$0, "setAssets$lambda$0");
+        C9677q.m14634f(setAssets$lambda$0, "setAssets$lambda$0");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$0, ReactAsset.Speaker);
         ColorUtilsKt.setTintColor(setAssets$lambda$0, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         SimpleDraweeView setAssets$lambda$1 = this.binding.muteToggle;
         setAssets$lambda$1.setContentDescription(assets.getMute());
-        C9971q.m14634f(setAssets$lambda$1, "setAssets$lambda$1");
+        C9677q.m14634f(setAssets$lambda$1, "setAssets$lambda$1");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$1, ReactAsset.Mic);
         ColorUtilsKt.setTintColor(setAssets$lambda$1, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         SimpleDraweeView setAssets$lambda$2 = this.binding.disconnectBtn;
         setAssets$lambda$2.setContentDescription(assets.getDisconnectFromVoice());
-        C9971q.m14634f(setAssets$lambda$2, "setAssets$lambda$2");
+        C9677q.m14634f(setAssets$lambda$2, "setAssets$lambda$2");
         ReactAssetUtilsKt.setReactAsset(setAssets$lambda$2, ReactAsset.Disconnect);
         ColorUtilsKt.setTintColor(setAssets$lambda$2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
         this.binding.overlayInviteLink.setText(assets.getGetInvite());
@@ -116,9 +116,9 @@ public final class OverlayMenuView extends LinearLayout {
         int i;
         ReactAsset reactAsset;
         ReactAsset reactAsset2;
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(data, "data");
         TextView textView = this.binding.overlayInviteLink;
-        C9971q.m14634f(textView, "binding.overlayInviteLink");
+        C9677q.m14634f(textView, "binding.overlayInviteLink");
         if (data.getCanGenerateInvite()) {
             i = 0;
         } else {
@@ -126,7 +126,7 @@ public final class OverlayMenuView extends LinearLayout {
         }
         textView.setVisibility(i);
         SimpleDraweeView simpleDraweeView = this.binding.muteToggle;
-        C9971q.m14634f(simpleDraweeView, "binding.muteToggle");
+        C9677q.m14634f(simpleDraweeView, "binding.muteToggle");
         if (data.getMuted()) {
             reactAsset = ReactAsset.MicMutedDark;
         } else {
@@ -134,7 +134,7 @@ public final class OverlayMenuView extends LinearLayout {
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView, reactAsset);
         SimpleDraweeView simpleDraweeView2 = this.binding.overlayNetworkIcon;
-        C9971q.m14634f(simpleDraweeView2, "binding.overlayNetworkIcon");
+        C9677q.m14634f(simpleDraweeView2, "binding.overlayNetworkIcon");
         int i2 = WhenMappings.$EnumSwitchMapping$0[data.getConnectionQuality().ordinal()];
         if (i2 == 1) {
             reactAsset2 = ReactAsset.CallStatusGreen;
@@ -145,7 +145,7 @@ public final class OverlayMenuView extends LinearLayout {
         } else if (i2 == 4) {
             reactAsset2 = ReactAsset.CallStatusUnknown;
         } else {
-            throw new C11088q();
+            throw new C10843q();
         }
         ReactAssetUtilsKt.setReactAsset(simpleDraweeView2, reactAsset2);
         this.binding.overlayGuildName.setText(data.getGuildName());
@@ -155,22 +155,22 @@ public final class OverlayMenuView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayMenuView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        C9971q.m14634f(textView, "binding.overlayGuildName");
+        C9677q.m14634f(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        C9971q.m14634f(textView2, "binding.overlayInviteLink");
+        C9677q.m14634f(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        C9971q.m14634f(textView3, "binding.overlaySwitchChannels");
+        C9677q.m14634f(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        C9971q.m14634f(textView4, "binding.overlayOpenApp");
+        C9677q.m14634f(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());
@@ -186,22 +186,22 @@ public final class OverlayMenuView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayMenuView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ViewOverlayMenuBinding inflate = ViewOverlayMenuBinding.inflate(LayoutInflater.from(getContext()), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView textView = inflate.overlayGuildName;
-        C9971q.m14634f(textView, "binding.overlayGuildName");
+        C9677q.m14634f(textView, "binding.overlayGuildName");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.overlayInviteLink;
-        C9971q.m14634f(textView2, "binding.overlayInviteLink");
+        C9677q.m14634f(textView2, "binding.overlayInviteLink");
         DiscordFontUtilsKt.setDiscordFont(textView2, discordFont);
         TextView textView3 = inflate.overlaySwitchChannels;
-        C9971q.m14634f(textView3, "binding.overlaySwitchChannels");
+        C9677q.m14634f(textView3, "binding.overlaySwitchChannels");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.overlayOpenApp;
-        C9971q.m14634f(textView4, "binding.overlayOpenApp");
+        C9677q.m14634f(textView4, "binding.overlayOpenApp");
         DiscordFontUtilsKt.setDiscordFont(textView4, discordFont);
         inflate.menuTop.setCardBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         inflate.menuTopStatusContainer.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundTertiary());

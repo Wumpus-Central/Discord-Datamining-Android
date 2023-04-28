@@ -7,13 +7,13 @@ import com.discord.emoji.RenderableEmojiKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000\u0018\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002\u001a\u0014\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u0002¨\u0006\u0007"}, m15073d2 = {"renderable", "Lcom/discord/emoji/RenderableEmoji;", "Lcom/discord/chat/bridge/botuikit/ComponentEmoji;", "setEmojiOrHide", "", "Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;", "componentEmoji", "chat_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class ComponentViewKt {
     /* JADX WARN: Code restructure failed: missing block: B:4:0x000b, code lost:
-        r0 = p326ri.C12717t.m5745o(r0);
+        r0 = p327ri.C12586t.m5745o(r0);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -22,10 +22,10 @@ public final class ComponentViewKt {
     public static final com.discord.emoji.RenderableEmoji renderable(com.discord.chat.bridge.botuikit.ComponentEmoji r5) {
         /*
             java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.C9971q.m14633g(r5, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r5, r0)
             java.lang.String r0 = r5.getId()
             if (r0 == 0) goto L_0x0026
-            java.lang.Long r0 = p326ri.C12707l.m5778o(r0)
+            java.lang.Long r0 = p327ri.C12576l.m5778o(r0)
             if (r0 == 0) goto L_0x0026
             long r0 = r0.longValue()
             com.discord.emoji.RenderableEmoji$Companion r2 = com.discord.emoji.RenderableEmoji.Companion
@@ -48,7 +48,7 @@ public final class ComponentViewKt {
     }
 
     public static final void setEmojiOrHide(SimpleDraweeSpanTextView simpleDraweeSpanTextView, ComponentEmoji componentEmoji) {
-        C9971q.m14633g(simpleDraweeSpanTextView, "<this>");
+        C9677q.m14633g(simpleDraweeSpanTextView, "<this>");
         if (componentEmoji == null) {
             simpleDraweeSpanTextView.setVisibility(8);
             return;
@@ -56,7 +56,7 @@ public final class ComponentViewKt {
         simpleDraweeSpanTextView.setVisibility(0);
         RenderableEmoji renderable = renderable(componentEmoji);
         Context context = simpleDraweeSpanTextView.getContext();
-        C9971q.m14634f(context, "context");
+        C9677q.m14634f(context, "context");
         simpleDraweeSpanTextView.setDraweeSpanStringBuilder(RenderableEmojiKt.renderEmoji$default(renderable, context, SizeUtilsKt.getDpToPx(20), componentEmoji.getAnimated(), 1, null, 32, null));
     }
 }

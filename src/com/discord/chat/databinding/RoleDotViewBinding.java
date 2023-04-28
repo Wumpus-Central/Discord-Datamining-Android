@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import com.discord.chat.C4254R;
-import p412x1.C13922a;
+import com.discord.chat.C3147R;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class RoleDotViewBinding {
@@ -21,11 +21,11 @@ public final class RoleDotViewBinding {
     }
 
     public static RoleDotViewBinding bind(View view) {
-        int i = C4254R.C4256id.role_dot_view_background;
-        FrameLayout frameLayout = (FrameLayout) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.role_dot_view_background;
+        FrameLayout frameLayout = (FrameLayout) C13836a.m2313a(view, i);
         if (frameLayout != null) {
-            i = C4254R.C4256id.role_dot_view_dot;
-            ImageView imageView = (ImageView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.role_dot_view_dot;
+            ImageView imageView = (ImageView) C13836a.m2313a(view, i);
             if (imageView != null) {
                 return new RoleDotViewBinding(view, frameLayout, imageView);
             }
@@ -35,7 +35,7 @@ public final class RoleDotViewBinding {
 
     public static RoleDotViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.role_dot_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.role_dot_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

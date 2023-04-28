@@ -5,11 +5,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.core.DCDButton;
 import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class EmbeddedActivityMessageViewBinding {
@@ -32,23 +32,23 @@ public final class EmbeddedActivityMessageViewBinding {
     }
 
     public static EmbeddedActivityMessageViewBinding bind(View view) {
-        int i = C4254R.C4256id.card;
-        ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.card;
+        ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
         if (constraintLayout != null) {
-            i = C4254R.C4256id.dismiss;
-            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.dismiss;
+            SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
             if (simpleDraweeView != null) {
-                i = C4254R.C4256id.icon;
-                SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.icon;
+                SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView2 != null) {
-                    i = C4254R.C4256id.join_button;
-                    DCDButton dCDButton = (DCDButton) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.join_button;
+                    DCDButton dCDButton = (DCDButton) C13836a.m2313a(view, i);
                     if (dCDButton != null) {
-                        i = C4254R.C4256id.message;
-                        TextView textView = (TextView) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.message;
+                        TextView textView = (TextView) C13836a.m2313a(view, i);
                         if (textView != null) {
-                            i = C4254R.C4256id.participants;
-                            OverlappingCirclesView overlappingCirclesView = (OverlappingCirclesView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.participants;
+                            OverlappingCirclesView overlappingCirclesView = (OverlappingCirclesView) C13836a.m2313a(view, i);
                             if (overlappingCirclesView != null) {
                                 return new EmbeddedActivityMessageViewBinding(view, constraintLayout, simpleDraweeView, simpleDraweeView2, dCDButton, textView, overlappingCirclesView);
                             }
@@ -62,7 +62,7 @@ public final class EmbeddedActivityMessageViewBinding {
 
     public static EmbeddedActivityMessageViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.embedded_activity_message_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.embedded_activity_message_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

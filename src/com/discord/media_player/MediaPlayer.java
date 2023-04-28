@@ -16,11 +16,11 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p079e7.C6715e;
-import p079e7.C6730q;
-import p153i8.C8264k0;
+import p079e7.C6148e;
+import p079e7.C6163q;
+import p153i8.C7751k0;
 
 @Metadata(m15074d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 52\u00020\u0001:\u0003567B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0019\u001a\u00020\u0016H\u0007J\u0006\u0010\u001a\u001a\u00020\u001bJ\b\u0010\u001c\u001a\u00020\u0016H\u0007J\u0006\u0010\u001d\u001a\u00020\u001bJ\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u001fJ\u0006\u0010!\u001a\u00020\u001fJ\u0006\u0010\"\u001a\u00020\u001fJ\b\u0010#\u001a\u00020\nH\u0007J\b\u0010$\u001a\u00020\nH\u0007JF\u0010%\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010&\u001a\u00020\u001f2\b\b\u0002\u0010'\u001a\u00020\u001f2\b\b\u0002\u0010(\u001a\u00020\u001b2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*2\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,H\u0007J\b\u0010-\u001a\u00020\nH\u0007J\u000e\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\u001bJ\u0010\u00100\u001a\u00020\n2\u0006\u00101\u001a\u00020\tH\u0002J\u0010\u00102\u001a\u00020\n2\u0006\u00103\u001a\u00020\u0016H\u0007J\u0006\u00104\u001a\u00020\u001fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R&\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000e¨\u00068"}, m15073d2 = {"Lcom/discord/media_player/MediaPlayer;", "", "exoPlayer", "Lcom/google/android/exoplayer2/SimpleExoPlayer;", "dataSourceFactory", "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;", "(Lcom/google/android/exoplayer2/SimpleExoPlayer;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V", "eventListener", "Lkotlin/Function1;", "Lcom/discord/media_player/MediaPlayer$Event;", "", "getEventListener", "()Lkotlin/jvm/functions/Function1;", "setEventListener", "(Lkotlin/jvm/functions/Function1;)V", "mediaSource", "Lcom/discord/media_player/MediaSource;", "getMediaSource", "()Lcom/discord/media_player/MediaSource;", "setMediaSource", "(Lcom/discord/media_player/MediaSource;)V", "volumeListener", "", "getVolumeListener", "setVolumeListener", "bufferedPercentage", "currentPositionMs", "", "currentPositionPercentage", "durationMs", "hasEnded", "", "hasError", "isMuted", "isPlaying", "pause", "play", "preparePlayer", "autoPlayWhenReady", "loopMedia", "initialSeekPositionMs", "playerView", "Lcom/discord/media_player/MediaPlayerView;", "playerControlView", "Lcom/discord/media_player/MediaPlayerView$ControlView;", "reset", "seekTo", "positionMs", "setEvent", "event", "setVolume", "volume", "shouldPlay", "Companion", "Event", "Factory", "media_player_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -99,7 +99,7 @@ public final class MediaPlayer {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public PlaybackError(Exception exception) {
                 super(null);
-                C9971q.m14633g(exception, "exception");
+                C9677q.m14633g(exception, "exception");
                 this.exception = exception;
             }
 
@@ -115,7 +115,7 @@ public final class MediaPlayer {
             }
 
             public final PlaybackError copy(Exception exception) {
-                C9971q.m14633g(exception, "exception");
+                C9677q.m14633g(exception, "exception");
                 return new PlaybackError(exception);
             }
 
@@ -123,7 +123,7 @@ public final class MediaPlayer {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof PlaybackError) && C9971q.m14638b(this.exception, ((PlaybackError) obj).exception);
+                return (obj instanceof PlaybackError) && C9677q.m14638b(this.exception, ((PlaybackError) obj).exception);
             }
 
             public final Exception getException() {
@@ -167,44 +167,44 @@ public final class MediaPlayer {
         }
 
         public final MediaPlayer create(Context context) {
-            C9971q.m14633g(context, "context");
-            C6715e a = new C6715e.C6716a().m24545d(MediaPlayer.MIN_BUFFER_MS, MediaPlayer.MAX_BUFFER_MS, MediaPlayer.BUFFER_FOR_PLAYBACK_MS, MediaPlayer.BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS).m24548a();
-            C9971q.m14634f(a, "Builder()\n              …\n                .build()");
-            SimpleExoPlayer w = new SimpleExoPlayer.C5157b(context).m30442y(a).m30444w();
-            C9971q.m14634f(w, "Builder(context)\n       …\n                .build()");
+            C9677q.m14633g(context, "context");
+            C6148e a = new C6148e.C6149a().m24545d(MediaPlayer.MIN_BUFFER_MS, MediaPlayer.MAX_BUFFER_MS, MediaPlayer.BUFFER_FOR_PLAYBACK_MS, MediaPlayer.BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS).m24548a();
+            C9677q.m14634f(a, "Builder()\n              …\n                .build()");
+            SimpleExoPlayer w = new SimpleExoPlayer.C4466b(context).m30442y(a).m30444w();
+            C9677q.m14634f(w, "Builder(context)\n       …\n                .build()");
             return new MediaPlayer(w, CacheDataSourceFactory.Companion.getInstance());
         }
     }
 
     public MediaPlayer(SimpleExoPlayer exoPlayer, DataSource.Factory dataSourceFactory) {
-        C9971q.m14633g(exoPlayer, "exoPlayer");
-        C9971q.m14633g(dataSourceFactory, "dataSourceFactory");
+        C9677q.m14633g(exoPlayer, "exoPlayer");
+        C9677q.m14633g(dataSourceFactory, "dataSourceFactory");
         this.exoPlayer = exoPlayer;
         this.dataSourceFactory = dataSourceFactory;
-        exoPlayer.mo30364K(new Player.AbstractC5153a() { // from class: com.discord.media_player.MediaPlayer.1
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+        exoPlayer.mo30364K(new Player.AbstractC4462a() { // from class: com.discord.media_player.MediaPlayer.1
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onEvents(Player player, Player.Events events) {
-                C6730q.m24451a(this, player, events);
+                C6163q.m24451a(this, player, events);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onExperimentalOffloadSchedulingEnabledChanged(boolean z) {
-                C6730q.m24450b(this, z);
+                C6163q.m24450b(this, z);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onExperimentalSleepingForOffloadChanged(boolean z) {
-                C6730q.m24449c(this, z);
+                C6163q.m24449c(this, z);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onIsLoadingChanged(boolean z) {
-                C6730q.m24448d(this, z);
+                C6163q.m24448d(this, z);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public void onIsPlayingChanged(boolean z) {
-                C6730q.m24447e(this, z);
+                C6163q.m24447e(this, z);
                 if (z) {
                     MediaPlayer.this.setEvent(Event.StartedPlaying.INSTANCE);
                 } else if (MediaPlayer.this.exoPlayer.mo30355P() != 4) {
@@ -212,30 +212,30 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             @Deprecated
             public /* bridge */ /* synthetic */ void onLoadingChanged(boolean z) {
-                C6730q.m24446f(this, z);
+                C6163q.m24446f(this, z);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onMediaItemTransition(MediaItem mediaItem, int i) {
-                C6730q.m24445g(this, mediaItem, i);
+                C6163q.m24445g(this, mediaItem, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onPlayWhenReadyChanged(boolean z, int i) {
-                C6730q.m24444h(this, z, i);
+                C6163q.m24444h(this, z, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
-                C6730q.m24443i(this, playbackParameters);
+                C6163q.m24443i(this, playbackParameters);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public void onPlaybackStateChanged(int i) {
-                C6730q.m24442j(this, i);
+                C6163q.m24442j(this, i);
                 if (i == 2) {
                     MediaPlayer.this.setEvent(Event.BufferStart.INSTANCE);
                 } else if (i == 3) {
@@ -245,20 +245,20 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onPlaybackSuppressionReasonChanged(int i) {
-                C6730q.m24441k(this, i);
+                C6163q.m24441k(this, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public void onPlayerError(ExoPlaybackException error) {
                 String str;
-                C9971q.m14633g(error, "error");
-                C6730q.m24440l(this, error);
+                C9677q.m14633g(error, "error");
+                C6163q.m24440l(this, error);
                 MediaPlayer.this.setEvent(new Event.PlaybackError(error));
                 Log log = Log.INSTANCE;
-                String simpleName = AnonymousClass1.class.getSimpleName();
-                C9971q.m14634f(simpleName, "javaClass.simpleName");
+                String simpleName = C34951.class.getSimpleName();
+                C9677q.m14634f(simpleName, "javaClass.simpleName");
                 MediaSource mediaSource = MediaPlayer.this.getMediaSource();
                 if (mediaSource != null) {
                     str = mediaSource.getFeatureTag();
@@ -268,52 +268,52 @@ public final class MediaPlayer {
                 log.m32179e(simpleName, "Playback error for feature: " + str, error);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             @Deprecated
             public /* bridge */ /* synthetic */ void onPlayerStateChanged(boolean z, int i) {
-                C6730q.m24439m(this, z, i);
+                C6163q.m24439m(this, z, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onPositionDiscontinuity(int i) {
-                C6730q.m24438n(this, i);
+                C6163q.m24438n(this, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onRepeatModeChanged(int i) {
-                C6730q.m24437o(this, i);
+                C6163q.m24437o(this, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             @Deprecated
             public /* bridge */ /* synthetic */ void onSeekProcessed() {
-                C6730q.m24436p(this);
+                C6163q.m24436p(this);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onShuffleModeEnabledChanged(boolean z) {
-                C6730q.m24435q(this, z);
+                C6163q.m24435q(this, z);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onStaticMetadataChanged(List list) {
-                C6730q.m24434r(this, list);
+                C6163q.m24434r(this, list);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, int i) {
-                C6730q.m24433s(this, timeline, i);
+                C6163q.m24433s(this, timeline, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             @Deprecated
             public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, Object obj, int i) {
-                C6730q.m24432t(this, timeline, obj, i);
+                C6163q.m24432t(this, timeline, obj, i);
             }
 
-            @Override // com.google.android.exoplayer2.Player.AbstractC5153a
+            @Override // com.google.android.exoplayer2.Player.AbstractC4462a
             public /* bridge */ /* synthetic */ void onTracksChanged(TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
-                C6730q.m24431u(this, trackGroupArray, trackSelectionArray);
+                C6163q.m24431u(this, trackGroupArray, trackSelectionArray);
             }
         });
     }
@@ -391,14 +391,14 @@ public final class MediaPlayer {
     }
 
     public final void preparePlayer(MediaSource mediaSource, boolean z, boolean z2, long j, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView) {
-        C9971q.m14633g(mediaSource, "mediaSource");
+        C9677q.m14633g(mediaSource, "mediaSource");
         this.mediaSource = mediaSource;
         this.exoPlayer.m30506a1(1);
-        C8264k0.C8266b bVar = new C8264k0.C8266b(this.dataSourceFactory);
+        C7751k0.C7753b bVar = new C7751k0.C7753b(this.dataSourceFactory);
         String sourceUrl = mediaSource.getSourceUrl();
-        C9971q.m14636d(sourceUrl);
-        C8264k0 c = bVar.m20138c(MediaItem.m30552b(sourceUrl));
-        C9971q.m14634f(c, "Factory(dataSourceFactor…mediaSource.sourceUrl!!))");
+        C9677q.m14636d(sourceUrl);
+        C7751k0 c = bVar.m20138c(MediaItem.m30552b(sourceUrl));
+        C9677q.m14634f(c, "Factory(dataSourceFactor…mediaSource.sourceUrl!!))");
         SimpleExoPlayer simpleExoPlayer = this.exoPlayer;
         simpleExoPlayer.m30511W0(c);
         simpleExoPlayer.m30274c0(j);
@@ -425,7 +425,7 @@ public final class MediaPlayer {
     }
 
     public final void setEventListener(Function1<? super Event, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.eventListener = function1;
     }
 
@@ -439,7 +439,7 @@ public final class MediaPlayer {
     }
 
     public final void setVolumeListener(Function1<? super Float, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.volumeListener = function1;
     }
 

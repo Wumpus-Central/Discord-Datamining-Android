@@ -1,18 +1,18 @@
 package com.discord.emoji_picker.react_events;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0081\b\u0018\u0000 \u001c2\u00020\u0001:\u0002\u001b\u001cB#\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\bB\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\tJ\t\u0010\f\u001a\u00020\u0005HÆ\u0003J\u0013\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0005HÖ\u0001J!\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aHÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000b¨\u0006\u001d"}, m15073d2 = {"Lcom/discord/emoji_picker/react_events/OnPressEmojiEvent;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", "emojiName", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;)V", "getEmojiName", "()Ljava/lang/String;", "component1", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "emoji_picker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class OnPressEmojiEvent implements ReactEvent {
@@ -36,7 +36,7 @@ public final class OnPressEmojiEvent implements ReactEvent {
 
     public /* synthetic */ OnPressEmojiEvent(int i, String str, SerializationConstructorMarker serializationConstructorMarker) {
         if (1 != (i & 1)) {
-            C3681n1.m33818b(i, 1, OnPressEmojiEvent$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 1, OnPressEmojiEvent$$serializer.INSTANCE.getDescriptor());
         }
         this.emojiName = str;
     }
@@ -49,9 +49,9 @@ public final class OnPressEmojiEvent implements ReactEvent {
     }
 
     public static final void write$Self(OnPressEmojiEvent self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13864z(serialDesc, 0, self.emojiName);
     }
 
@@ -60,7 +60,7 @@ public final class OnPressEmojiEvent implements ReactEvent {
     }
 
     public final OnPressEmojiEvent copy(String emojiName) {
-        C9971q.m14633g(emojiName, "emojiName");
+        C9677q.m14633g(emojiName, "emojiName");
         return new OnPressEmojiEvent(emojiName);
     }
 
@@ -68,7 +68,7 @@ public final class OnPressEmojiEvent implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OnPressEmojiEvent) && C9971q.m14638b(this.emojiName, ((OnPressEmojiEvent) obj).emojiName);
+        return (obj instanceof OnPressEmojiEvent) && C9677q.m14638b(this.emojiName, ((OnPressEmojiEvent) obj).emojiName);
     }
 
     public final String getEmojiName() {
@@ -90,7 +90,7 @@ public final class OnPressEmojiEvent implements ReactEvent {
     }
 
     public OnPressEmojiEvent(String emojiName) {
-        C9971q.m14633g(emojiName, "emojiName");
+        C9677q.m14633g(emojiName, "emojiName");
         this.emojiName = emojiName;
     }
 }

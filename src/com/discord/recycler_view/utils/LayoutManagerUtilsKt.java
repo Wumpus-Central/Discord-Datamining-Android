@@ -3,7 +3,7 @@ package com.discord.recycler_view.utils;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.ranges.IntRange;
 
 @Metadata(m15074d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u001a\u001b\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000¢\u0006\u0002\u0010\u0005¨\u0006\u0006"}, m15073d2 = {"isPositionVisible", "", "Landroidx/recyclerview/widget/LinearLayoutManager;", ViewProps.POSITION, "", "(Landroidx/recyclerview/widget/LinearLayoutManager;I)Ljava/lang/Boolean;", "recycler_view_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -13,7 +13,7 @@ public final class LayoutManagerUtilsKt {
         boolean z;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(linearLayoutManager, "<this>");
+        C9677q.m14633g(linearLayoutManager, "<this>");
         Integer valueOf = Integer.valueOf(linearLayoutManager.m35565e2());
         boolean z4 = true;
         if (valueOf.intValue() != -1) {

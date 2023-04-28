@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u00006\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\u0002\u001a\f\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002\u001a\n\u0010\u0003\u001a\u00020\u0004*\u00020\u0002\u001a\u001a\u0010\u0005\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006*\u00020\u0002\u001a\n\u0010\b\u001a\u00020\t*\u00020\u0002\u001a\u0012\u0010\n\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u000b*\u00020\u0002\u001a#\u0010\r\u001a\u0004\u0018\u00010\f*\u00020\u00022\u0006\u0010\u000e\u001a\u00020\t2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0002\u0010\u0011¨\u0006\u0012"}, m15073d2 = {"getMedia", "Lcom/discord/chat/bridge/embed/EmbedUrlProvider;", "Lcom/discord/chat/bridge/embed/Embed;", "getTag", "", "getTargetDimensions", "Lkotlin/Pair;", "", "isInlineMedia", "", "toImageMediaSources", "", "Lcom/discord/media_player/MediaSource;", "toMediaSource", "shouldAutoPlay", "portal", "", "(Lcom/discord/chat/bridge/embed/Embed;ZLjava/lang/Double;)Lcom/discord/media_player/MediaSource;", "chat_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -55,7 +55,7 @@ public final class EmbedUtilsKt {
 
     public static final EmbedUrlProvider getMedia(Embed embed) {
         EmbedMedia embedMedia;
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         switch (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()]) {
             case 1:
             case 2:
@@ -82,7 +82,7 @@ public final class EmbedUtilsKt {
     }
 
     public static final String getTag(Embed embed) {
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         String simpleName = embed.getClass().getSimpleName();
         String name = embed.getType().name();
         return simpleName + ": " + name;
@@ -92,7 +92,7 @@ public final class EmbedUtilsKt {
         Integer num;
         Integer num2;
         Pair<Integer, Integer> a;
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         int i = WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()];
         Integer num3 = null;
         if (i == 1) {
@@ -106,11 +106,11 @@ public final class EmbedUtilsKt {
             if (thumbnail2 != null) {
                 num3 = Integer.valueOf(thumbnail2.getHeight());
             }
-            return C11098x.m10921a(num, num3);
+            return C10853x.m10921a(num, num3);
         } else if (i != 2) {
             EmbedMedia image = embed.getImage();
-            if (image == null || (a = C11098x.m10921a(Integer.valueOf(image.getWidth()), Integer.valueOf(image.getHeight()))) == null) {
-                return C11098x.m10921a(null, null);
+            if (image == null || (a = C10853x.m10921a(Integer.valueOf(image.getWidth()), Integer.valueOf(image.getHeight()))) == null) {
+                return C10853x.m10921a(null, null);
             }
             return a;
         } else {
@@ -124,12 +124,12 @@ public final class EmbedUtilsKt {
             if (video2 != null) {
                 num3 = Integer.valueOf(video2.getHeight());
             }
-            return C11098x.m10921a(num2, num3);
+            return C10853x.m10921a(num2, num3);
         }
     }
 
     public static final boolean isInlineMedia(Embed embed) {
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         if (getMedia(embed) == null && embed.getVideo() == null) {
             return true;
         }
@@ -142,12 +142,12 @@ public final class EmbedUtilsKt {
 
     public static final List<MediaSource> toImageMediaSources(Embed embed) {
         int t;
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         List<EmbedMedia> images = embed.getImages();
         if (images == null) {
             return null;
         }
-        t = C9907k.m14809t(images, 10);
+        t = C9611k.m14809t(images, 10);
         ArrayList arrayList = new ArrayList(t);
         for (EmbedMedia embedMedia : images) {
             arrayList.add(new MediaSource(null, embedMedia.getEmbedUrl(), getTag(embed), MediaType.IMAGE, false, null, 33, null));
@@ -159,7 +159,7 @@ public final class EmbedUtilsKt {
         String str;
         String str2;
         String embedUrl;
-        C9971q.m14633g(embed, "<this>");
+        C9677q.m14633g(embed, "<this>");
         int i = WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()];
         String str3 = null;
         if (i == 1) {

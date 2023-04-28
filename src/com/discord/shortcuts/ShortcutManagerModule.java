@@ -1,12 +1,12 @@
 package com.discord.shortcuts;
 
-import androidx.core.content.p017pm.C2353b;
+import androidx.core.content.p017pm.C1168b;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @ReactModule(name = ShortcutManagerModule.NAME)
@@ -31,7 +31,7 @@ public final class ShortcutManagerModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ShortcutManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
@@ -42,6 +42,6 @@ public final class ShortcutManagerModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void handleLogout() {
-        C2353b.m38063g(this.reactContext);
+        C1168b.m38063g(this.reactContext);
     }
 }

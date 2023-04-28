@@ -1,9 +1,9 @@
 package com.discord.image.color_quantizer;
 
 import android.graphics.Color;
-import bg.C3491c;
+import bg.C2362c;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007J(\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007¨\u0006\f"}, m15073d2 = {"Lcom/discord/image/color_quantizer/ColorUtils;", "", "()V", "HSLtoRGB", "", "hsl", "", "RGBtoHSL", "", "r", "g", "b", "color_quantizer_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -18,7 +18,7 @@ public final class ColorUtils {
         int i2;
         int i3;
         int i4;
-        C9971q.m14633g(hsl, "hsl");
+        C9677q.m14633g(hsl, "hsl");
         float f = hsl[0];
         float f2 = hsl[1];
         float f3 = hsl[2];
@@ -27,37 +27,37 @@ public final class ColorUtils {
         float abs2 = (1.0f - Math.abs(((f / 60.0f) % 2.0f) - 1.0f)) * abs;
         switch (((int) f) / 60) {
             case 0:
-                i3 = C3491c.m34305a((abs + f4) * 255.0f);
-                i2 = C3491c.m34305a((abs2 + f4) * 255.0f);
-                i = C3491c.m34305a(f4 * 255.0f);
+                i3 = C2362c.m34305a((abs + f4) * 255.0f);
+                i2 = C2362c.m34305a((abs2 + f4) * 255.0f);
+                i = C2362c.m34305a(f4 * 255.0f);
                 break;
             case 1:
-                i3 = C3491c.m34305a((abs2 + f4) * 255.0f);
-                i2 = C3491c.m34305a((abs + f4) * 255.0f);
-                i = C3491c.m34305a(f4 * 255.0f);
+                i3 = C2362c.m34305a((abs2 + f4) * 255.0f);
+                i2 = C2362c.m34305a((abs + f4) * 255.0f);
+                i = C2362c.m34305a(f4 * 255.0f);
                 break;
             case 2:
-                i3 = C3491c.m34305a(f4 * 255.0f);
-                i2 = C3491c.m34305a((abs + f4) * 255.0f);
-                i = C3491c.m34305a((abs2 + f4) * 255.0f);
+                i3 = C2362c.m34305a(f4 * 255.0f);
+                i2 = C2362c.m34305a((abs + f4) * 255.0f);
+                i = C2362c.m34305a((abs2 + f4) * 255.0f);
                 break;
             case 3:
-                i3 = C3491c.m34305a(f4 * 255.0f);
-                i4 = C3491c.m34305a((abs2 + f4) * 255.0f);
-                i = C3491c.m34305a((abs + f4) * 255.0f);
+                i3 = C2362c.m34305a(f4 * 255.0f);
+                i4 = C2362c.m34305a((abs2 + f4) * 255.0f);
+                i = C2362c.m34305a((abs + f4) * 255.0f);
                 i2 = i4;
                 break;
             case 4:
-                i3 = C3491c.m34305a((abs2 + f4) * 255.0f);
-                i4 = C3491c.m34305a(f4 * 255.0f);
-                i = C3491c.m34305a((abs + f4) * 255.0f);
+                i3 = C2362c.m34305a((abs2 + f4) * 255.0f);
+                i4 = C2362c.m34305a(f4 * 255.0f);
+                i = C2362c.m34305a((abs + f4) * 255.0f);
                 i2 = i4;
                 break;
             case 5:
             case 6:
-                i3 = C3491c.m34305a((abs + f4) * 255.0f);
-                i2 = C3491c.m34305a(f4 * 255.0f);
-                i = C3491c.m34305a((abs2 + f4) * 255.0f);
+                i3 = C2362c.m34305a((abs + f4) * 255.0f);
+                i2 = C2362c.m34305a(f4 * 255.0f);
+                i = C2362c.m34305a((abs2 + f4) * 255.0f);
                 break;
             default:
                 i = 0;
@@ -74,7 +74,7 @@ public final class ColorUtils {
         float f2;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(hsl, "hsl");
+        C9677q.m14633g(hsl, "hsl");
         float f3 = i / 255.0f;
         float f4 = i2 / 255.0f;
         float f5 = i3 / 255.0f;

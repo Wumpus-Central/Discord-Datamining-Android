@@ -5,7 +5,7 @@ import android.media.AudioAttributes;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
 import android.os.Build;
-import co.discord.media_engine.C4081a;
+import co.discord.media_engine.C2968a;
 import com.discord.media_player.MediaPlayer;
 import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
@@ -15,9 +15,9 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.flow.C10062q;
+import kotlinx.coroutines.flow.C9773q;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import org.webrtc.MediaStreamTrack;
@@ -79,8 +79,8 @@ public final class AudioPlayerManager {
 
         /* renamed from: copy-ntcYbpo  reason: not valid java name */
         public final AudioSource m41871copyntcYbpo(String messageId, String url) {
-            C9971q.m14633g(messageId, "messageId");
-            C9971q.m14633g(url, "url");
+            C9677q.m14633g(messageId, "messageId");
+            C9677q.m14633g(url, "url");
             return new AudioSource(messageId, url, null);
         }
 
@@ -92,7 +92,7 @@ public final class AudioPlayerManager {
                 return false;
             }
             AudioSource audioSource = (AudioSource) obj;
-            return MessageId.m42119equalsimpl0(this.messageId, audioSource.messageId) && C9971q.m14638b(this.url, audioSource.url);
+            return MessageId.m42119equalsimpl0(this.messageId, audioSource.messageId) && C9677q.m14638b(this.url, audioSource.url);
         }
 
         /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
@@ -174,7 +174,7 @@ public final class AudioPlayerManager {
         }
 
         public int hashCode() {
-            return (C4081a.m32873a(this.currentProgress) * 31) + C4081a.m32873a(this.durationMs);
+            return (C2968a.m32873a(this.currentProgress) * 31) + C2968a.m32873a(this.durationMs);
         }
 
         public String toString() {
@@ -185,7 +185,7 @@ public final class AudioPlayerManager {
     }
 
     static {
-        MutableStateFlow<AudioSource> a = C10062q.m14364a(null);
+        MutableStateFlow<AudioSource> a = C9773q.m14364a(null);
         _currentPlayerSourceFlow = a;
         currentPlayerSourceFlow = a;
     }
@@ -200,12 +200,12 @@ public final class AudioPlayerManager {
         if (Build.VERSION.SDK_INT >= 26) {
             AudioManager audioManager3 = audioManager;
             if (audioManager3 == null) {
-                C9971q.m14615y("audioManager");
+                C9677q.m14615y("audioManager");
                 audioManager3 = null;
             }
             AudioFocusRequest audioFocusRequest2 = focusRequest;
             if (audioFocusRequest2 == null) {
-                C9971q.m14615y("focusRequest");
+                C9677q.m14615y("focusRequest");
             } else {
                 audioFocusRequest = audioFocusRequest2;
             }
@@ -214,7 +214,7 @@ public final class AudioPlayerManager {
         }
         AudioManager audioManager4 = audioManager;
         if (audioManager4 == null) {
-            C9971q.m14615y("audioManager");
+            C9677q.m14615y("audioManager");
         } else {
             audioManager2 = audioManager4;
         }
@@ -265,12 +265,12 @@ public final class AudioPlayerManager {
         if (Build.VERSION.SDK_INT >= 26) {
             AudioManager audioManager3 = audioManager;
             if (audioManager3 == null) {
-                C9971q.m14615y("audioManager");
+                C9677q.m14615y("audioManager");
                 audioManager3 = null;
             }
             AudioFocusRequest audioFocusRequest2 = focusRequest;
             if (audioFocusRequest2 == null) {
-                C9971q.m14615y("focusRequest");
+                C9677q.m14615y("focusRequest");
             } else {
                 audioFocusRequest = audioFocusRequest2;
             }
@@ -278,7 +278,7 @@ public final class AudioPlayerManager {
         } else {
             AudioManager audioManager4 = audioManager;
             if (audioManager4 == null) {
-                C9971q.m14615y("audioManager");
+                C9677q.m14615y("audioManager");
             } else {
                 audioManager2 = audioManager4;
             }
@@ -313,22 +313,22 @@ public final class AudioPlayerManager {
     }
 
     public final boolean hasCurrentPlayer(AudioSource audioSource) {
-        return audioSource != null && C9971q.m14638b(getCurrentPlayerSource(), audioSource);
+        return audioSource != null && C9677q.m14638b(getCurrentPlayerSource(), audioSource);
     }
 
     public final void init(Context context) {
         AudioFocusRequest.Builder onAudioFocusChangeListener;
         AudioFocusRequest.Builder audioAttributes;
         AudioFocusRequest build;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         Object systemService = context.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND);
-        C9971q.m14635e(systemService, "null cannot be cast to non-null type android.media.AudioManager");
+        C9677q.m14635e(systemService, "null cannot be cast to non-null type android.media.AudioManager");
         audioManager = (AudioManager) systemService;
         if (Build.VERSION.SDK_INT >= 26) {
             onAudioFocusChangeListener = new AudioFocusRequest.Builder(4).setOnAudioFocusChangeListener(focusListener);
             audioAttributes = onAudioFocusChangeListener.setAudioAttributes(playbackAttributes);
             build = audioAttributes.build();
-            C9971q.m14634f(build, "Builder(AudioManager.AUD…\n                .build()");
+            C9677q.m14634f(build, "Builder(AudioManager.AUD…\n                .build()");
             focusRequest = build;
         }
     }
@@ -366,7 +366,7 @@ public final class AudioPlayerManager {
     }
 
     public final void setCurrentProgress(AudioSource source, float f, long j) {
-        C9971q.m14633g(source, "source");
+        C9677q.m14633g(source, "source");
         Map<AudioSource, CurrentProgress> map = currentProgressMap;
         CurrentProgress currentProgress = map.get(source);
         if (currentProgress != null || (currentProgress = maybeCreateDuration(source, j)) != null) {
@@ -376,13 +376,13 @@ public final class AudioPlayerManager {
 
     public final void setupPlayer(Context context, AudioSource source, long j, Function1<? super MediaPlayer.Event, Unit> onStateChanged) {
         long j2;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(source, "source");
-        C9971q.m14633g(onStateChanged, "onStateChanged");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(source, "source");
+        C9677q.m14633g(onStateChanged, "onStateChanged");
         if (mediaPlayer == null) {
             mediaPlayer = MediaPlayer.Factory.INSTANCE.create(context);
         }
-        if (!C9971q.m14638b(source, getCurrentPlayerSource())) {
+        if (!C9677q.m14638b(source, getCurrentPlayerSource())) {
             storeDuration(getCurrentPlayerSource());
             mediaPlayerState = null;
             MutableStateFlow<AudioSource> mutableStateFlow = _currentPlayerSourceFlow;
@@ -391,7 +391,7 @@ public final class AudioPlayerManager {
             if (requestAudioFocus()) {
                 mutableStateFlow.setValue(source);
                 MediaPlayer mediaPlayer2 = mediaPlayer;
-                C9971q.m14636d(mediaPlayer2);
+                C9677q.m14636d(mediaPlayer2);
                 String url = source.getUrl();
                 String url2 = source.getUrl();
                 MediaSource mediaSource = new MediaSource(url, null, "audio attachment: " + url2, MediaType.AUDIO, false, null, 50, null);
@@ -405,7 +405,7 @@ public final class AudioPlayerManager {
             }
         }
         MediaPlayer mediaPlayer3 = mediaPlayer;
-        C9971q.m14636d(mediaPlayer3);
+        C9677q.m14636d(mediaPlayer3);
         mediaPlayer3.setEventListener(new AudioPlayerManager$setupPlayer$1$1(source, onStateChanged));
         mediaPlayer3.setVolume(1.0f);
     }
@@ -415,7 +415,7 @@ public final class AudioPlayerManager {
         CurrentProgress copy$default;
         if (hasCurrentPlayer(audioSource) && (mediaPlayer2 = mediaPlayer) != null) {
             Map<AudioSource, CurrentProgress> map = currentProgressMap;
-            C9971q.m14636d(audioSource);
+            C9677q.m14636d(audioSource);
             CurrentProgress currentProgress = map.get(audioSource);
             if (currentProgress != null && (copy$default = CurrentProgress.copy$default(currentProgress, mediaPlayer2.currentPositionMs(), 0L, 2, null)) != null) {
                 map.put(audioSource, copy$default);

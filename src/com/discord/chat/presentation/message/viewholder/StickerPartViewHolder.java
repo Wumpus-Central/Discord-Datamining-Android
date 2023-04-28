@@ -8,7 +8,7 @@ import com.discord.ripple.RippleUtilsKt;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b&\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004JH\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00060\n2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00060\n2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\rH&¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/chat/presentation/message/viewholder/StickerPartViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "view", "Landroid/view/View;", "(Landroid/view/View;)V", "bind", "", "sticker", "Lcom/discord/chat/bridge/sticker/Sticker;", "onStickerClicked", "Lkotlin/Function1;", "onStickerLongClicked", "widthDp", "", "heightDp", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -36,8 +36,8 @@ public abstract class StickerPartViewHolder extends MessagePartViewHolder {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public StickerPartViewHolder(View view) {
         super(view, null);
-        C9971q.m14633g(view, "view");
-        view.setLayoutParams(new RecyclerView.C3109i(SizeUtilsKt.getDpToPx(160), SizeUtilsKt.getDpToPx(160)));
+        C9677q.m14633g(view, "view");
+        view.setLayoutParams(new RecyclerView.C1954i(SizeUtilsKt.getDpToPx(160), SizeUtilsKt.getDpToPx(160)));
         int i = DEFAULT_STICKER_PADDING_PX;
         view.setPadding(i, i, i, i);
         RippleUtilsKt.addRipple$default(view, false, 0, 3, null);

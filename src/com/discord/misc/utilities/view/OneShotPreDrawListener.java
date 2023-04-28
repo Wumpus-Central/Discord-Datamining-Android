@@ -5,7 +5,7 @@ import android.view.ViewTreeObserver;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB%\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ\b\u0010\r\u001a\u00020\u0003H\u0016J\b\u0010\u000e\u001a\u00020\bH\u0002R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \f*\u0004\u0018\u00010\u000b0\u000bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/misc/utilities/view/OneShotPreDrawListener;", "Landroid/view/ViewTreeObserver$OnPreDrawListener;", "proceedWithDrawingPass", "", "view", "Landroid/view/View;", "action", "Lkotlin/Function0;", "", "(ZLandroid/view/View;Lkotlin/jvm/functions/Function0;)V", "viewTreeObserver", "Landroid/view/ViewTreeObserver;", "kotlin.jvm.PlatformType", "onPreDraw", "removeListener", "Companion", "misc_utilities_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -28,8 +28,8 @@ public final class OneShotPreDrawListener implements ViewTreeObserver.OnPreDrawL
         }
 
         public final OneShotPreDrawListener add(boolean z, View view, Function0<Unit> action) {
-            C9971q.m14633g(view, "view");
-            C9971q.m14633g(action, "action");
+            C9677q.m14633g(view, "view");
+            C9677q.m14633g(action, "action");
             OneShotPreDrawListener oneShotPreDrawListener = new OneShotPreDrawListener(z, view, action, null);
             view.getViewTreeObserver().addOnPreDrawListener(oneShotPreDrawListener);
             return oneShotPreDrawListener;

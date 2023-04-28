@@ -4,7 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 
 /* loaded from: classes4.dex */
 public final class TimestampViewBinding {
@@ -26,7 +26,7 @@ public final class TimestampViewBinding {
     }
 
     public static TimestampViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.timestamp_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.timestamp_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

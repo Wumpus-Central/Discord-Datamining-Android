@@ -24,7 +24,7 @@ import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\r\n\u0000\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010\r\u001a\u00020\u000eH\u0002J\u001a\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014J\u000e\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u0014J*\u0010\u0017\u001a\u00020\u00102\b\u0010\u0018\u001a\u0004\u0018\u00010\u00142\b\u0010\u0019\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0012J\u0010\u0010\u001d\u001a\u00020\u00102\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fR\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006 "}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/ThreadEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/ThreadEmbedViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/ThreadEmbedViewBinding;", "getLeadingMarginSpan", "Landroid/text/style/LeadingMarginSpan;", "setArchived", "", "archived", "", "iconUrl", "", "setLabel", "label", "setMessage", "imageUrl", "username", "message", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "italicizeMessage", "setTitle", "title", "", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -35,13 +35,13 @@ public final class ThreadEmbedView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ThreadEmbedView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ThreadEmbedView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ThreadEmbedView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -67,10 +67,10 @@ public final class ThreadEmbedView extends ConstraintLayout {
     public final void setArchived(boolean z, String str) {
         int i;
         SimpleDraweeView simpleDraweeView = this.binding.threadEmbedIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.threadEmbedIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.threadEmbedIcon");
         ReactAssetUtilsKt.setOptionalReactImageUrl(simpleDraweeView, str);
         SimpleDraweeView simpleDraweeView2 = this.binding.threadEmbedIcon;
-        C9971q.m14634f(simpleDraweeView2, "binding.threadEmbedIcon");
+        C9677q.m14634f(simpleDraweeView2, "binding.threadEmbedIcon");
         if (z) {
             i = 0;
         } else {
@@ -80,9 +80,9 @@ public final class ThreadEmbedView extends ConstraintLayout {
     }
 
     public final void setLabel(String label) {
-        C9971q.m14633g(label, "label");
+        C9677q.m14633g(label, "label");
         TextView textView = this.binding.threadEmbedMessagesCount;
-        C9971q.m14634f(textView, "binding.threadEmbedMessagesCount");
+        C9677q.m14634f(textView, "binding.threadEmbedMessagesCount");
         ViewUtilsKt.setOptionalText(textView, label);
     }
 
@@ -90,9 +90,9 @@ public final class ThreadEmbedView extends ConstraintLayout {
         boolean z2;
         int i;
         DiscordFont discordFont;
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(message, "message");
         TextView textView = this.binding.threadEmbedMostRecentMessageName;
-        C9971q.m14634f(textView, "binding.threadEmbedMostRecentMessageName");
+        C9677q.m14634f(textView, "binding.threadEmbedMostRecentMessageName");
         ViewUtilsKt.setOptionalText(textView, str2);
         this.binding.threadEmbedMostRecentMessageAvatar.setImageURI(str);
         if (str2 != null) {
@@ -101,7 +101,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
             z2 = false;
         }
         LinearLayout linearLayout = this.binding.threadEmbedMostRecentMessageHeader;
-        C9971q.m14634f(linearLayout, "binding.threadEmbedMostRecentMessageHeader");
+        C9677q.m14634f(linearLayout, "binding.threadEmbedMostRecentMessageHeader");
         if (z2) {
             i = 0;
         } else {
@@ -109,7 +109,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         }
         linearLayout.setVisibility(i);
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = this.binding.threadEmbedMostRecentMessageContent;
-        C9971q.m14634f(simpleDraweeSpanTextView, "binding.threadEmbedMostRecentMessageContent");
+        C9677q.m14634f(simpleDraweeSpanTextView, "binding.threadEmbedMostRecentMessageContent");
         if (z) {
             discordFont = DiscordFont.PrimaryNormalItalic;
         } else {
@@ -120,42 +120,42 @@ public final class ThreadEmbedView extends ConstraintLayout {
             message.setSpan(getLeadingMarginSpan(), 0, message.length(), 33);
         }
         SimpleDraweeSpanTextView simpleDraweeSpanTextView2 = this.binding.threadEmbedMostRecentMessageContent;
-        C9971q.m14634f(simpleDraweeSpanTextView2, "binding.threadEmbedMostRecentMessageContent");
+        C9677q.m14634f(simpleDraweeSpanTextView2, "binding.threadEmbedMostRecentMessageContent");
         SpannableExtensionsKt.coverWithSpan(message, new BackgroundSpanDrawer(simpleDraweeSpanTextView2));
         this.binding.threadEmbedMostRecentMessageContent.setDraweeSpanStringBuilder(message);
     }
 
     public final void setTitle(CharSequence charSequence) {
         TextView textView = this.binding.threadEmbedName;
-        C9971q.m14634f(textView, "binding.threadEmbedName");
+        C9677q.m14634f(textView, "binding.threadEmbedName");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ThreadEmbedView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ThreadEmbedViewBinding inflate = ThreadEmbedViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView _init_$lambda$0 = inflate.threadEmbedName;
-        C9971q.m14634f(_init_$lambda$0, "_init_$lambda$0");
+        C9677q.m14634f(_init_$lambda$0, "_init_$lambda$0");
         DiscordFont discordFont = DiscordFont.PrimaryBold;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 14.0f);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView _init_$lambda$1 = inflate.threadEmbedMessagesCount;
-        C9971q.m14634f(_init_$lambda$1, "_init_$lambda$1");
+        C9677q.m14634f(_init_$lambda$1, "_init_$lambda$1");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$1, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$1, 14.0f);
         _init_$lambda$1.setTextColor(ThemeManagerKt.getTheme().getTextLink());
         TextView _init_$lambda$2 = inflate.threadEmbedMostRecentMessageName;
-        C9971q.m14634f(_init_$lambda$2, "_init_$lambda$2");
+        C9677q.m14634f(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, discordFont);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$2, 14.0f);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
         SimpleDraweeSpanTextView _init_$lambda$3 = inflate.threadEmbedMostRecentMessageContent;
-        C9971q.m14634f(_init_$lambda$3, "_init_$lambda$3");
+        C9677q.m14634f(_init_$lambda$3, "_init_$lambda$3");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$3, 14.0f);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getTextNormal());

@@ -9,11 +9,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.GuildView;
 import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class GuildInviteViewBinding {
@@ -58,56 +58,56 @@ public final class GuildInviteViewBinding {
     }
 
     public static GuildInviteViewBinding bind(View view) {
-        int i = C4254R.C4256id.barrier_button;
-        Barrier barrier = (Barrier) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.barrier_button;
+        Barrier barrier = (Barrier) C13836a.m2313a(view, i);
         if (barrier != null) {
-            i = C4254R.C4256id.barrier_header;
-            Barrier barrier2 = (Barrier) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.barrier_header;
+            Barrier barrier2 = (Barrier) C13836a.m2313a(view, i);
             if (barrier2 != null) {
-                i = C4254R.C4256id.item_bottom_container;
-                ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.item_bottom_container;
+                ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
                 if (constraintLayout != null) {
-                    i = C4254R.C4256id.item_invite_header;
-                    TextView textView = (TextView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.item_invite_header;
+                    TextView textView = (TextView) C13836a.m2313a(view, i);
                     if (textView != null) {
-                        i = C4254R.C4256id.item_invite_hub_layout;
-                        FrameLayout frameLayout = (FrameLayout) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.item_invite_hub_layout;
+                        FrameLayout frameLayout = (FrameLayout) C13836a.m2313a(view, i);
                         if (frameLayout != null) {
-                            i = C4254R.C4256id.item_invite_hub_link;
-                            TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.item_invite_hub_link;
+                            TextView textView2 = (TextView) C13836a.m2313a(view, i);
                             if (textView2 != null) {
-                                i = C4254R.C4256id.item_invite_image;
-                                GuildView guildView = (GuildView) C13922a.m2313a(view, i);
+                                i = C3147R.C3149id.item_invite_image;
+                                GuildView guildView = (GuildView) C13836a.m2313a(view, i);
                                 if (guildView != null) {
-                                    i = C4254R.C4256id.item_invite_joined_button;
-                                    DCDButton dCDButton = (DCDButton) C13922a.m2313a(view, i);
+                                    i = C3147R.C3149id.item_invite_joined_button;
+                                    DCDButton dCDButton = (DCDButton) C13836a.m2313a(view, i);
                                     if (dCDButton != null) {
-                                        i = C4254R.C4256id.item_invite_member_container;
-                                        LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+                                        i = C3147R.C3149id.item_invite_member_container;
+                                        LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
                                         if (linearLayout != null) {
-                                            i = C4254R.C4256id.item_invite_online_dot;
-                                            ImageView imageView = (ImageView) C13922a.m2313a(view, i);
+                                            i = C3147R.C3149id.item_invite_online_dot;
+                                            ImageView imageView = (ImageView) C13836a.m2313a(view, i);
                                             if (imageView != null) {
-                                                i = C4254R.C4256id.item_invite_online_text;
-                                                TextView textView3 = (TextView) C13922a.m2313a(view, i);
+                                                i = C3147R.C3149id.item_invite_online_text;
+                                                TextView textView3 = (TextView) C13836a.m2313a(view, i);
                                                 if (textView3 != null) {
-                                                    i = C4254R.C4256id.item_invite_splash;
-                                                    SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                    i = C3147R.C3149id.item_invite_splash;
+                                                    SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                     if (simpleDraweeView != null) {
-                                                        i = C4254R.C4256id.item_invite_subtitle;
-                                                        TextView textView4 = (TextView) C13922a.m2313a(view, i);
+                                                        i = C3147R.C3149id.item_invite_subtitle;
+                                                        TextView textView4 = (TextView) C13836a.m2313a(view, i);
                                                         if (textView4 != null) {
-                                                            i = C4254R.C4256id.item_invite_subtitle_icon;
-                                                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                                                            i = C3147R.C3149id.item_invite_subtitle_icon;
+                                                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                                                             if (simpleDraweeView2 != null) {
-                                                                i = C4254R.C4256id.item_invite_title;
-                                                                TextView textView5 = (TextView) C13922a.m2313a(view, i);
+                                                                i = C3147R.C3149id.item_invite_title;
+                                                                TextView textView5 = (TextView) C13836a.m2313a(view, i);
                                                                 if (textView5 != null) {
-                                                                    i = C4254R.C4256id.item_invite_total_member_dot;
-                                                                    ImageView imageView2 = (ImageView) C13922a.m2313a(view, i);
+                                                                    i = C3147R.C3149id.item_invite_total_member_dot;
+                                                                    ImageView imageView2 = (ImageView) C13836a.m2313a(view, i);
                                                                     if (imageView2 != null) {
-                                                                        i = C4254R.C4256id.item_invite_total_member_text;
-                                                                        TextView textView6 = (TextView) C13922a.m2313a(view, i);
+                                                                        i = C3147R.C3149id.item_invite_total_member_text;
+                                                                        TextView textView6 = (TextView) C13836a.m2313a(view, i);
                                                                         if (textView6 != null) {
                                                                             return new GuildInviteViewBinding(view, barrier, barrier2, constraintLayout, textView, frameLayout, textView2, guildView, dCDButton, linearLayout, imageView, textView3, simpleDraweeView, textView4, simpleDraweeView2, textView5, imageView2, textView6);
                                                                         }
@@ -132,7 +132,7 @@ public final class GuildInviteViewBinding {
 
     public static GuildInviteViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.guild_invite_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.guild_invite_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

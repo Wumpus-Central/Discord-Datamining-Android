@@ -3,8 +3,8 @@ package com.discord.crash_reporting;
 import com.facebook.react.bridge.ReactMarker;
 import com.facebook.react.bridge.ReactMarkerConstants;
 import com.facebook.react.uimanager.ViewProps;
-import io.sentry.AbstractC8932m0;
-import io.sentry.C8915k2;
+import io.sentry.AbstractC8449m0;
+import io.sentry.C8432k2;
 import io.sentry.ISpan;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import kotlin.Metadata;
-import kotlin.collections.C9914r;
-import kotlin.collections.C9921w;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9618r;
+import kotlin.collections.C9625w;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
-import p267of.C11289v;
-import p326ri.C12718u;
-import p326ri.C12719v;
+import nf.C10853x;
+import p268of.C11053v;
+import p327ri.C12587u;
+import p327ri.C12588v;
 
 @Metadata(m15074d1 = {"\u0000|\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010!\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010$\n\u0002\b\u0003\n\u0002\u0010\"\n\u0002\b\b\u0018\u0000 M2\u00020\u0001:\u0003MNOB\u0007¢\u0006\u0004\bK\u0010LJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u001c\u0010\b\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0006\u001a\u00020\u00042\b\u0010\u0007\u001a\u0004\u0018\u00010\u0004H\u0002J\u0012\u0010\n\u001a\u0004\u0018\u00010\u00042\u0006\u0010\t\u001a\u00020\u0002H\u0002J\u0006\u0010\f\u001a\u00020\u000bJ\u0006\u0010\r\u001a\u00020\u000bJ\u0006\u0010\u000e\u001a\u00020\u000bJ\u000e\u0010\u0011\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\u000fJ\u000e\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\u000fJ\u000e\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\u0002J\u000e\u0010\u0014\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\u0004J\u0018\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\t\u001a\u00020\u00042\b\u0010\u0007\u001a\u0004\u0018\u00010\u0004J$\u0010\u0018\u001a\u00020\u000b2\b\u0010\t\u001a\u0004\u0018\u00010\u00152\b\u0010\u0007\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0017\u001a\u00020\u0016H\u0016R \u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u001a0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u001cR \u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u001d0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u001cR \u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u001f0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b \u0010\u001cR$\u0010!\u001a\u0004\u0018\u00010\u001d8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R$\u0010'\u001a\u0004\u0018\u00010\u001d8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b'\u0010\"\u001a\u0004\b(\u0010$\"\u0004\b)\u0010&R\"\u0010+\u001a\u00020*8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b+\u0010,\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R$\u00102\u001a\u0004\u0018\u0001018\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b2\u00103\u001a\u0004\b4\u00105\"\u0004\b6\u00107R\u001d\u00109\u001a\b\u0012\u0004\u0012\u000201088\u0006¢\u0006\f\n\u0004\b9\u0010:\u001a\u0004\b;\u0010<R\"\u0010>\u001a\u00020=8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b>\u0010?\u001a\u0004\b@\u0010A\"\u0004\bB\u0010CR#\u0010E\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040D8\u0006¢\u0006\f\n\u0004\bE\u0010\u001c\u001a\u0004\bF\u0010GR\u001a\u0010I\u001a\b\u0012\u0004\u0012\u00020\u00040H8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bI\u0010J¨\u0006P"}, m15073d2 = {"Lcom/discord/crash_reporting/PerformanceTracing;", "Lcom/facebook/react/bridge/ReactMarker$MarkerListener;", "Lcom/discord/crash_reporting/PerformanceTracing$TransactionMarker;", "transactionMarker", "", "getMarkerName", "name", "tag", "getMarker", "marker", "getParentSpanName", "", ViewProps.START, "stop", "startNativeModuleInit", "Lcom/discord/crash_reporting/TraceTransaction;", "transaction", "startTransaction", "stopTransaction", "logSpanForTransaction", "checkAndSetInitSection", "Lcom/facebook/react/bridge/ReactMarkerConstants;", "", "instanceKey", "logMarker", "", "Lio/sentry/m0;", "ongoingTransactions", "Ljava/util/Map;", "Lio/sentry/ISpan;", "ongoingSpans", "", "spanStarts", "lastNativeModuleSetupStart", "Lio/sentry/ISpan;", "getLastNativeModuleSetupStart", "()Lio/sentry/ISpan;", "setLastNativeModuleSetupStart", "(Lio/sentry/ISpan;)V", "lastProcessPackage", "getLastProcessPackage", "setLastProcessPackage", "", "stopped", "Z", "getStopped", "()Z", "setStopped", "(Z)V", "Lcom/discord/crash_reporting/PackageProcessTimings;", "currentProcessPackage", "Lcom/discord/crash_reporting/PackageProcessTimings;", "getCurrentProcessPackage", "()Lcom/discord/crash_reporting/PackageProcessTimings;", "setCurrentProcessPackage", "(Lcom/discord/crash_reporting/PackageProcessTimings;)V", "", "processPackageTimings", "Ljava/util/List;", "getProcessPackageTimings", "()Ljava/util/List;", "Lcom/discord/crash_reporting/StartupInitSection;", "startupInitSection", "Lcom/discord/crash_reporting/StartupInitSection;", "getStartupInitSection", "()Lcom/discord/crash_reporting/StartupInitSection;", "setStartupInitSection", "(Lcom/discord/crash_reporting/StartupInitSection;)V", "", "startupRootEventsTree", "getStartupRootEventsTree", "()Ljava/util/Map;", "", "wildcardEventNames", "Ljava/util/Set;", "<init>", "()V", "Companion", "MarkerEnd", "TransactionMarker", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -31,7 +31,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     private ISpan lastProcessPackage;
     private final Map<String, String> startupRootEventsTree;
     private final Set<String> wildcardEventNames;
-    private final Map<TraceTransaction, AbstractC8932m0> ongoingTransactions = new LinkedHashMap();
+    private final Map<TraceTransaction, AbstractC8449m0> ongoingTransactions = new LinkedHashMap();
     private final Map<String, ISpan> ongoingSpans = new LinkedHashMap();
     private final Map<String, Long> spanStarts = new LinkedHashMap();
     private boolean stopped = true;
@@ -53,7 +53,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
                 PerformanceTracing.performanceTracingInstance = new PerformanceTracing();
             }
             PerformanceTracing performanceTracing = PerformanceTracing.performanceTracingInstance;
-            C9971q.m14636d(performanceTracing);
+            C9677q.m14636d(performanceTracing);
             return performanceTracing;
         }
     }
@@ -73,8 +73,8 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         private final String tag;
 
         public TransactionMarker(String name, String str, MarkerEnd markerEnd) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(markerEnd, "markerEnd");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(markerEnd, "markerEnd");
             this.name = name;
             this.tag = str;
             this.markerEnd = markerEnd;
@@ -106,8 +106,8 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         }
 
         public final TransactionMarker copy(String name, String str, MarkerEnd markerEnd) {
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(markerEnd, "markerEnd");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(markerEnd, "markerEnd");
             return new TransactionMarker(name, str, markerEnd);
         }
 
@@ -119,7 +119,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
                 return false;
             }
             TransactionMarker transactionMarker = (TransactionMarker) obj;
-            return C9971q.m14638b(this.name, transactionMarker.name) && C9971q.m14638b(this.tag, transactionMarker.tag) && this.markerEnd == transactionMarker.markerEnd;
+            return C9677q.m14638b(this.name, transactionMarker.name) && C9677q.m14638b(this.tag, transactionMarker.tag) && this.markerEnd == transactionMarker.markerEnd;
         }
 
         public final MarkerEnd getMarkerEnd() {
@@ -151,9 +151,9 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     public PerformanceTracing() {
         Map<String, String> k;
         Set<String> i;
-        k = C11289v.m10248k(C11098x.m10921a("GET_REACT_INSTANCE_MANAGER", "root"), C11098x.m10921a("BUILD_REACT_INSTANCE_MANAGER", "GET_REACT_INSTANCE_MANAGER"), C11098x.m10921a("ROOT_VIEW_ON_MEASURE", "root"), C11098x.m10921a("ROOT_VIEW_ATTACH_TO_REACT_INSTANCE_MANAGER", "ROOT_VIEW_ON_MEASURE"), C11098x.m10921a("REACT_BRIDGE_LOADING", "root"), C11098x.m10921a("CREATE_REACT_CONTEXT", "REACT_BRIDGE_LOADING"), C11098x.m10921a("PROCESS_PACKAGES", "CREATE_REACT_CONTEXT"), C11098x.m10921a("PROCESS_CORE_REACT_PACKAGE", "PROCESS_PACKAGES"), C11098x.m10921a("PROCESS_PACKAGE", "PROCESS_PACKAGES"), C11098x.m10921a("PROCESS_PACKAGE_MODULE", "PROCESS_PACKAGE"), C11098x.m10921a("BUILD_NATIVE_MODULE_REGISTRY", "CREATE_REACT_CONTEXT"), C11098x.m10921a("CREATE_CATALYST_INSTANCE", "CREATE_REACT_CONTEXT"), C11098x.m10921a("LOAD_REACT_NATIVE_SO_FILE", "CREATE_CATALYST_INSTANCE"), C11098x.m10921a("PRE_RUN_JS_BUNDLE", "REACT_BRIDGE_LOADING"), C11098x.m10921a("SETUP_REACT_CONTEXT", "REACT_BRIDGE_LOADING"), C11098x.m10921a("ON_HOST_RESUME", "SETUP_REACT_CONTEXT"), C11098x.m10921a("ATTACH_MEASURED_ROOT_VIEWS", "SETUP_REACT_CONTEXT"), C11098x.m10921a("CREATE_MODULE UiManager", "ATTACH_MEASURED_ROOT_VIEWS"), C11098x.m10921a("CREATE_UI_MANAGER_MODULE", "CREATE_MODULE UiManager"), C11098x.m10921a("CREATE_VIEW_MANAGERS", "CREATE_UI_MANAGER_MODULE"), C11098x.m10921a("ROOT_VIEW_UPDATE_LAYOUT_SPECS", "SETUP_REACT_CONTEXT"), C11098x.m10921a("RUN_JS_BUNDLE", "root"));
+        k = C11053v.m10248k(C10853x.m10921a("GET_REACT_INSTANCE_MANAGER", "root"), C10853x.m10921a("BUILD_REACT_INSTANCE_MANAGER", "GET_REACT_INSTANCE_MANAGER"), C10853x.m10921a("ROOT_VIEW_ON_MEASURE", "root"), C10853x.m10921a("ROOT_VIEW_ATTACH_TO_REACT_INSTANCE_MANAGER", "ROOT_VIEW_ON_MEASURE"), C10853x.m10921a("REACT_BRIDGE_LOADING", "root"), C10853x.m10921a("CREATE_REACT_CONTEXT", "REACT_BRIDGE_LOADING"), C10853x.m10921a("PROCESS_PACKAGES", "CREATE_REACT_CONTEXT"), C10853x.m10921a("PROCESS_CORE_REACT_PACKAGE", "PROCESS_PACKAGES"), C10853x.m10921a("PROCESS_PACKAGE", "PROCESS_PACKAGES"), C10853x.m10921a("PROCESS_PACKAGE_MODULE", "PROCESS_PACKAGE"), C10853x.m10921a("BUILD_NATIVE_MODULE_REGISTRY", "CREATE_REACT_CONTEXT"), C10853x.m10921a("CREATE_CATALYST_INSTANCE", "CREATE_REACT_CONTEXT"), C10853x.m10921a("LOAD_REACT_NATIVE_SO_FILE", "CREATE_CATALYST_INSTANCE"), C10853x.m10921a("PRE_RUN_JS_BUNDLE", "REACT_BRIDGE_LOADING"), C10853x.m10921a("SETUP_REACT_CONTEXT", "REACT_BRIDGE_LOADING"), C10853x.m10921a("ON_HOST_RESUME", "SETUP_REACT_CONTEXT"), C10853x.m10921a("ATTACH_MEASURED_ROOT_VIEWS", "SETUP_REACT_CONTEXT"), C10853x.m10921a("CREATE_MODULE UiManager", "ATTACH_MEASURED_ROOT_VIEWS"), C10853x.m10921a("CREATE_UI_MANAGER_MODULE", "CREATE_MODULE UiManager"), C10853x.m10921a("CREATE_VIEW_MANAGERS", "CREATE_UI_MANAGER_MODULE"), C10853x.m10921a("ROOT_VIEW_UPDATE_LAYOUT_SPECS", "SETUP_REACT_CONTEXT"), C10853x.m10921a("RUN_JS_BUNDLE", "root"));
         this.startupRootEventsTree = k;
-        i = C9921w.m14717i("NATIVE_MODULE_SETUP", "INITIALIZE_MODULE", "CREATE_REACT_CONTEXT", "CREATE_MODULE", "RUN_JS_BUNDLE", "PROCESS_PACKAGE", "PROCESS_PACKAGE_MODULE");
+        i = C9625w.m14717i("NATIVE_MODULE_SETUP", "INITIALIZE_MODULE", "CREATE_REACT_CONTEXT", "CREATE_MODULE", "RUN_JS_BUNDLE", "PROCESS_PACKAGE", "PROCESS_PACKAGE_MODULE");
         this.wildcardEventNames = i;
     }
 
@@ -162,21 +162,21 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         boolean s2;
         String q0;
         String q02;
-        s = C12718u.m5733s(str, "_START", false, 2, null);
+        s = C12587u.m5733s(str, "_START", false, 2, null);
         if (s) {
-            q02 = C12719v.m5669q0(str, "_START");
+            q02 = C12588v.m5669q0(str, "_START");
             return new TransactionMarker(q02, str2, MarkerEnd.START);
         }
-        s2 = C12718u.m5733s(str, "_END", false, 2, null);
+        s2 = C12587u.m5733s(str, "_END", false, 2, null);
         if (!s2) {
             return null;
         }
-        q0 = C12719v.m5669q0(str, "_END");
+        q0 = C12588v.m5669q0(str, "_END");
         return new TransactionMarker(q0, str2, MarkerEnd.END);
     }
 
     private final String getMarkerName(TransactionMarker transactionMarker) {
-        if (transactionMarker.getTag() == null || C9971q.m14638b(transactionMarker.getName(), "CREATE_REACT_CONTEXT")) {
+        if (transactionMarker.getTag() == null || C9677q.m14638b(transactionMarker.getName(), "CREATE_REACT_CONTEXT")) {
             return transactionMarker.getName();
         }
         String name = transactionMarker.getName();
@@ -194,7 +194,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             return null;
         }
         String str2 = this.startupRootEventsTree.get(transactionMarker.getName());
-        M = C9914r.m14778M(this.wildcardEventNames, str2);
+        M = C9618r.m14778M(this.wildcardEventNames, str2);
         if (!M) {
             return str2;
         }
@@ -205,7 +205,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public final void checkAndSetInitSection(String marker) {
         StartupInitSection startupInitSection;
-        C9971q.m14633g(marker, "marker");
+        C9677q.m14633g(marker, "marker");
         switch (marker.hashCode()) {
             case -1149178597:
                 if (marker.equals("NATIVE_MODULE_INITIALIZE")) {
@@ -284,7 +284,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         if (str2 != null) {
             logSpanForTransaction(str2, str);
         }
-        u = C12718u.m5731u(str2, "CONTENT_APPEARED", false, 2, null);
+        u = C12587u.m5731u(str2, "CONTENT_APPEARED", false, 2, null);
         if (u) {
             stop();
         }
@@ -297,21 +297,21 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         boolean s;
         ISpan iSpan2;
         ISpan iSpan3;
-        C9971q.m14633g(marker, "marker");
+        C9677q.m14633g(marker, "marker");
         checkAndSetInitSection(marker.getName());
         String markerName = getMarkerName(marker);
         String parentSpanName = getParentSpanName(marker);
         if (marker.getMarkerEnd() == MarkerEnd.START) {
-            if (this.startupInitSection == StartupInitSection.NativeModuleSetup && C9971q.m14638b(marker.getName(), "NATIVE_MODULE_SETUP") && (iSpan3 = this.lastNativeModuleSetupStart) != null) {
+            if (this.startupInitSection == StartupInitSection.NativeModuleSetup && C9677q.m14638b(marker.getName(), "NATIVE_MODULE_SETUP") && (iSpan3 = this.lastNativeModuleSetupStart) != null) {
                 if (iSpan3 != null) {
                     iSpan3.mo16840d();
                 }
                 this.lastNativeModuleSetupStart = null;
             }
-            if (C9971q.m14638b(marker.getName(), "RUN_JS_BUNDLE") && (iSpan2 = this.ongoingSpans.get("PRE_RUN_JS_BUNDLE")) != null) {
+            if (C9677q.m14638b(marker.getName(), "RUN_JS_BUNDLE") && (iSpan2 = this.ongoingSpans.get("PRE_RUN_JS_BUNDLE")) != null) {
                 iSpan2.mo16840d();
             }
-            if (C9971q.m14638b(marker.getName(), "PROCESS_PACKAGE_MODULE")) {
+            if (C9677q.m14638b(marker.getName(), "PROCESS_PACKAGE_MODULE")) {
                 iSpan = this.lastProcessPackage;
             } else {
                 iSpan = this.ongoingSpans.get(parentSpanName);
@@ -319,7 +319,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             if (iSpan == null) {
                 boolean z = false;
                 if (parentSpanName != null) {
-                    s = C12718u.m5733s(parentSpanName, "~", false, 2, null);
+                    s = C12587u.m5733s(parentSpanName, "~", false, 2, null);
                     if (s) {
                         z = true;
                     }
@@ -335,16 +335,16 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             }
             if (iSpan != null) {
                 ISpan g = iSpan.mo16837g(markerName);
-                C9971q.m14634f(g, "parentSpan.startChild(markerName)");
+                C9677q.m14634f(g, "parentSpan.startChild(markerName)");
                 this.ongoingSpans.put(markerName, g);
                 this.spanStarts.put(markerName, Long.valueOf(System.currentTimeMillis()));
-                if (C9971q.m14638b(marker.getName(), "PROCESS_PACKAGE")) {
+                if (C9677q.m14638b(marker.getName(), "PROCESS_PACKAGE")) {
                     this.lastProcessPackage = g;
                     PackageProcessTimings packageProcessTimings2 = new PackageProcessTimings();
                     this.currentProcessPackage = packageProcessTimings2;
                     this.processPackageTimings.add(packageProcessTimings2);
                 }
-                if (!(!C9971q.m14638b(marker.getName(), "PROCESS_PACKAGE_MODULE") || (packageProcessTimings = this.currentProcessPackage) == null || (modules = packageProcessTimings.getModules()) == null)) {
+                if (!(!C9677q.m14638b(marker.getName(), "PROCESS_PACKAGE_MODULE") || (packageProcessTimings = this.currentProcessPackage) == null || (modules = packageProcessTimings.getModules()) == null)) {
                     String tag = marker.getTag();
                     if (tag == null) {
                         tag = "";
@@ -357,7 +357,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             if (iSpan5 != null) {
                 iSpan5.mo16840d();
                 this.ongoingSpans.remove(markerName);
-                if (C9971q.m14638b(marker.getName(), "PROCESS_PACKAGE")) {
+                if (C9677q.m14638b(marker.getName(), "PROCESS_PACKAGE")) {
                     PackageProcessTimings packageProcessTimings3 = this.currentProcessPackage;
                     if (packageProcessTimings3 != null) {
                         packageProcessTimings3.setEndTime(System.currentTimeMillis());
@@ -381,7 +381,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     }
 
     public final void setStartupInitSection(StartupInitSection startupInitSection) {
-        C9971q.m14633g(startupInitSection, "<set-?>");
+        C9677q.m14633g(startupInitSection, "<set-?>");
         this.startupInitSection = startupInitSection;
     }
 
@@ -402,10 +402,10 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     }
 
     public final void startTransaction(TraceTransaction transaction) {
-        C9971q.m14633g(transaction, "transaction");
+        C9677q.m14633g(transaction, "transaction");
         if (!this.ongoingTransactions.containsKey(transaction)) {
-            AbstractC8932m0 w = C8915k2.m17691w(transaction.getTransactionName(), transaction.getOperation());
-            C9971q.m14634f(w, "startTransaction(transac…e, transaction.operation)");
+            AbstractC8449m0 w = C8432k2.m17691w(transaction.getTransactionName(), transaction.getOperation());
+            C9677q.m14634f(w, "startTransaction(transac…e, transaction.operation)");
             this.ongoingTransactions.put(transaction, w);
             this.ongoingSpans.put("root", w);
             this.spanStarts.put("root", Long.valueOf(System.currentTimeMillis()));
@@ -421,8 +421,8 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     }
 
     public final void stopTransaction(TraceTransaction transaction) {
-        C9971q.m14633g(transaction, "transaction");
-        AbstractC8932m0 m0Var = this.ongoingTransactions.get(transaction);
+        C9677q.m14633g(transaction, "transaction");
+        AbstractC8449m0 m0Var = this.ongoingTransactions.get(transaction);
         if (m0Var != null) {
             m0Var.mo16840d();
         }
@@ -430,7 +430,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     }
 
     public final synchronized void logSpanForTransaction(String marker, String str) {
-        C9971q.m14633g(marker, "marker");
+        C9677q.m14633g(marker, "marker");
         TransactionMarker marker2 = getMarker(marker, str);
         if (marker2 != null) {
             logSpanForTransaction(marker2);

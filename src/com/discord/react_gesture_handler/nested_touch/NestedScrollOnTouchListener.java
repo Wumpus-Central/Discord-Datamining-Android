@@ -5,13 +5,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import androidx.core.view.C2549a;
-import androidx.core.view.C2733w0;
+import androidx.core.view.C1369a;
+import androidx.core.view.C1559w0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\r\u001a\u00020\u00052\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\tH\u0017R\u001a\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, m15073d2 = {"Lcom/discord/react_gesture_handler/nested_touch/NestedScrollOnTouchListener;", "Landroid/view/View$OnTouchListener;", "view", "Landroid/view/View;", "viewManagesAccessibility", "", "(Landroid/view/View;Z)V", "onSupplementalMotionEventReceived", "Lkotlin/Function1;", "Landroid/view/MotionEvent;", "", "viewTouchTracker", "Lcom/discord/react_gesture_handler/nested_touch/NestedScrollOnTouchTracker;", "onTouch", "event", "Companion", "react_gesture_handler_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -51,13 +51,13 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     }
 
     public NestedScrollOnTouchListener(final View view, boolean z) {
-        C9971q.m14633g(view, "view");
+        C9677q.m14633g(view, "view");
         if (!z) {
-            C2733w0.m36990q0(view, new C2549a() { // from class: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener.1
-                @Override // androidx.core.view.C2549a
+            C1559w0.m36990q0(view, new C1369a() { // from class: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener.1
+                @Override // androidx.core.view.C1369a
                 public boolean performAccessibilityAction(View host, int i, Bundle bundle) {
                     View.OnLongClickListener onLongClickListener;
-                    C9971q.m14633g(host, "host");
+                    C9677q.m14633g(host, "host");
                     if (i == 16) {
                         View.OnClickListener onClickListener = NestedScrollOnTouchUtilsKt.getViewClickListeners().get(view);
                         if (onClickListener != null) {
@@ -71,7 +71,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
             });
         }
         Context context = view.getContext();
-        C9971q.m14634f(context, "view.context");
+        C9677q.m14634f(context, "view.context");
         this.viewTouchTracker = new NestedScrollOnTouchTracker(context, NestedScrollOnTouchUtilsKt.getViewClickListeners().get(view), NestedScrollOnTouchUtilsKt.getViewLongClickListeners().get(view), new NestedScrollOnTouchListener$viewTouchTracker$1(this), new NestedScrollOnTouchListener$viewTouchTracker$2(this));
         this.onSupplementalMotionEventReceived = new NestedScrollOnTouchListener$onSupplementalMotionEventReceived$1(this, view);
     }
@@ -79,8 +79,8 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     @Override // android.view.View.OnTouchListener
     @SuppressLint({"ClickableViewAccessibility"})
     public boolean onTouch(View view, MotionEvent event) {
-        C9971q.m14633g(view, "view");
-        C9971q.m14633g(event, "event");
+        C9677q.m14633g(view, "view");
+        C9677q.m14633g(event, "event");
         return this.viewTouchTracker.handleTouch$react_gesture_handler_release(view, event, false);
     }
 }

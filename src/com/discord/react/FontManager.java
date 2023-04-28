@@ -3,10 +3,10 @@ package com.discord.react;
 import android.content.Context;
 import android.content.SharedPreferences;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
-import kotlin.jvm.internal.C9977w;
-import kotlin.properties.C9981a;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
+import kotlin.jvm.internal.C9683w;
+import kotlin.properties.C9687a;
 import kotlin.properties.ReadWriteProperty;
 import kotlin.reflect.KProperty;
 
@@ -15,9 +15,9 @@ import kotlin.reflect.KProperty;
 public final class FontManager {
     private static final String FONT_SCALE_CHAT_CLASSIC_KEY = "FONT_SCALE_CHAT_CLASSIC_KEY";
     private static final String FONT_SCALE_KEY = "FONT_SCALE_KEY";
-    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9951f0.m14681e(new C9977w(FontManager.class, "initialFontSize", "getInitialFontSize()F", 0))};
+    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9656f0.m14681e(new C9683w(FontManager.class, "initialFontSize", "getInitialFontSize()F", 0))};
     public static final FontManager INSTANCE = new FontManager();
-    private static final ReadWriteProperty initialFontSize$delegate = C9981a.f22098a.m14610a();
+    private static final ReadWriteProperty initialFontSize$delegate = C9687a.f25836a.m14610a();
 
     private FontManager() {
     }
@@ -45,17 +45,17 @@ public final class FontManager {
     }
 
     public final synchronized float getFontScale(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         return getCache(context).getFloat(FONT_SCALE_KEY, 1.0f);
     }
 
     public final synchronized boolean getIsClassicChatFontScaleEnabled(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         if (!getCache(context).contains(FONT_SCALE_CHAT_CLASSIC_KEY)) {
             SharedPreferences cache = getCache(context);
-            C9971q.m14634f(cache, "context.getCache()");
+            C9677q.m14634f(cache, "context.getCache()");
             SharedPreferences.Editor editor = cache.edit();
-            C9971q.m14634f(editor, "editor");
+            C9677q.m14634f(editor, "editor");
             editor.putBoolean(FONT_SCALE_CHAT_CLASSIC_KEY, true);
             editor.apply();
         }
@@ -63,21 +63,21 @@ public final class FontManager {
     }
 
     public final synchronized float getScaledFontSize(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         return getInitialFontSize() * getFontScale(context);
     }
 
     public final void init(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         setInitialFontSize(context.getResources().getConfiguration().fontScale);
     }
 
     public final synchronized void setFontSize(Context context, float f, boolean z) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         SharedPreferences cache = getCache(context);
-        C9971q.m14634f(cache, "context.getCache()");
+        C9677q.m14634f(cache, "context.getCache()");
         SharedPreferences.Editor editor = cache.edit();
-        C9971q.m14634f(editor, "editor");
+        C9677q.m14634f(editor, "editor");
         editor.putFloat(FONT_SCALE_KEY, f);
         editor.putBoolean(FONT_SCALE_CHAT_CLASSIC_KEY, z);
         editor.commit();

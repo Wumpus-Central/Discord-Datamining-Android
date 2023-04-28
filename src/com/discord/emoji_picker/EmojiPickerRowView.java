@@ -17,9 +17,9 @@ import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
+import kotlin.collections.C9610j;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u000f\u0012\u0006\u0010\u0017\u001a\u00020\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\u0018\u0010\u0006\u001a\u00020\u00052\u000e\u0010\u0004\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0002H\u0002J\u0010\u0010\t\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0002J\u000e\u0010\n\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007R.\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00050\u000b8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R.\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00050\u000b8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0013\u0010\u000e\u001a\u0004\b\u0014\u0010\u0010\"\u0004\b\u0015\u0010\u0012¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/emoji_picker/EmojiPickerRowView;", "Landroid/widget/LinearLayout;", "", "Lcom/discord/emoji_picker/EmojiPickerRow$Emoji;", "emojis", "", "configureRowEmojiViews", "Lcom/discord/emoji_picker/EmojiPickerRow;", "rowData", "createRowEmojiViews", "setRowData", "Lkotlin/Function1;", "", "onPressEmoji", "Lkotlin/jvm/functions/Function1;", "getOnPressEmoji", "()Lkotlin/jvm/functions/Function1;", "setOnPressEmoji", "(Lkotlin/jvm/functions/Function1;)V", "onLongPressEmoji", "getOnLongPressEmoji", "setOnLongPressEmoji", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Companion", "emoji_picker_release"}, m15072k = 1, m15071mv = {1, 8, 0})
@@ -51,7 +51,7 @@ public final class EmojiPickerRowView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public EmojiPickerRowView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         setOrientation(0);
     }
 
@@ -61,11 +61,11 @@ public final class EmojiPickerRowView extends LinearLayout {
         for (Object obj : list) {
             int i2 = i + 1;
             if (i < 0) {
-                C9906j.m14810s();
+                C9610j.m14810s();
             }
             final EmojiPickerRow.Emoji emoji = (EmojiPickerRow.Emoji) obj;
             View childAt = getChildAt(i);
-            C9971q.m14635e(childAt, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
+            C9677q.m14635e(childAt, "null cannot be cast to non-null type com.facebook.drawee.view.SimpleDraweeView");
             SimpleDraweeView simpleDraweeView = (SimpleDraweeView) childAt;
             if (emoji == null) {
                 simpleDraweeView.setImageURI((String) null);
@@ -101,13 +101,13 @@ public final class EmojiPickerRowView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureRowEmojiViews$lambda$2$lambda$0(EmojiPickerRowView this$0, EmojiPickerRow.Emoji emoji, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.onPressEmoji.invoke(emoji.getName());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean configureRowEmojiViews$lambda$2$lambda$1(EmojiPickerRowView this$0, EmojiPickerRow.Emoji emoji, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.onLongPressEmoji.invoke(emoji.getName());
         return true;
     }
@@ -123,7 +123,7 @@ public final class EmojiPickerRowView extends LinearLayout {
         for (Object obj : emojiPickerRow.getItems()) {
             int i3 = i2 + 1;
             if (i2 < 0) {
-                C9906j.m14810s();
+                C9610j.m14810s();
             }
             EmojiPickerRow.Emoji emoji = (EmojiPickerRow.Emoji) obj;
             if (i2 == 0) {
@@ -134,7 +134,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             SimpleDraweeView simpleDraweeView = new SimpleDraweeView(getContext());
             RippleUtilsKt.addCircleRipple$default(simpleDraweeView, false, 1, null);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).m31768z(placeholder);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).m31774t(ScalingUtils.ScaleType.f7707e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).m31774t(ScalingUtils.ScaleType.f9823e);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
             layoutParams.setMargins(i, dpToPx3, 0, dpToPx3);
             simpleDraweeView.setLayoutParams(layoutParams);
@@ -152,17 +152,17 @@ public final class EmojiPickerRowView extends LinearLayout {
     }
 
     public final void setOnLongPressEmoji(Function1<? super String, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onLongPressEmoji = function1;
     }
 
     public final void setOnPressEmoji(Function1<? super String, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onPressEmoji = function1;
     }
 
     public final void setRowData(EmojiPickerRow rowData) {
-        C9971q.m14633g(rowData, "rowData");
+        C9677q.m14633g(rowData, "rowData");
         if (rowData.getItems().size() != getChildCount()) {
             createRowEmojiViews(rowData);
         }

@@ -4,12 +4,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.AltTextButtonView;
 import com.discord.chat.presentation.message.view.AttachmentUploadOverlayView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class ImageAttachmentViewBinding {
@@ -30,20 +30,20 @@ public final class ImageAttachmentViewBinding {
     }
 
     public static ImageAttachmentViewBinding bind(View view) {
-        int i = C4254R.C4256id.image;
-        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.image;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
         if (simpleDraweeView != null) {
-            i = C4254R.C4256id.image_alt_text;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.image_alt_text;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4254R.C4256id.media_view_alt_text_button;
-                AltTextButtonView altTextButtonView = (AltTextButtonView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.media_view_alt_text_button;
+                AltTextButtonView altTextButtonView = (AltTextButtonView) C13836a.m2313a(view, i);
                 if (altTextButtonView != null) {
-                    i = C4254R.C4256id.spoiler;
-                    SpoilerView spoilerView = (SpoilerView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.spoiler;
+                    SpoilerView spoilerView = (SpoilerView) C13836a.m2313a(view, i);
                     if (spoilerView != null) {
-                        i = C4254R.C4256id.upload_overlay;
-                        AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.upload_overlay;
+                        AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) C13836a.m2313a(view, i);
                         if (attachmentUploadOverlayView != null) {
                             return new ImageAttachmentViewBinding(view, simpleDraweeView, textView, altTextButtonView, spoilerView, attachmentUploadOverlayView);
                         }
@@ -56,7 +56,7 @@ public final class ImageAttachmentViewBinding {
 
     public static ImageAttachmentViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.image_attachment_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.image_attachment_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

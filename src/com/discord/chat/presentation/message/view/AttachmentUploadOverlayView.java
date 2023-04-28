@@ -25,7 +25,7 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001:\u000256B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J#\u0010\u0017\u001a\u00020\u000f2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0019¢\u0006\u0002\u0010\u001bJS\u0010\u001c\u001a\u00020\u000f2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u0019¢\u0006\u0002\u0010#J\b\u0010$\u001a\u00020\u000fH\u0002J\u0014\u0010%\u001a\u00020\u000f2\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ!\u0010&\u001a\u00020\u000f2\b\u0010'\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0002\u0010(J\u0018\u0010)\u001a\u00020\u000f2\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0019H\u0002J\u0014\u0010-\u001a\u00020\u000f2\f\u0010.\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ\b\u0010/\u001a\u000200H\u0002J\b\u00101\u001a\u000202H\u0002J\b\u00103\u001a\u000202H\u0002J\b\u00104\u001a\u000202H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000¨\u00067"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "animationStartDelay", "", "binding", "Lcom/discord/chat/databinding/AttachmentUploadOverlayViewBinding;", "completeViewConfig", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$CompleteViewConfig;", "onAnimationComplete", "Lkotlin/Function0;", "", "progressViewConfig", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$ProgressViewConfig;", "transitionDelay", "transitionInDuration", "transitionOutDuration", "uploadContext", "Lcom/discord/chat/presentation/message/view/UploadContext;", "configureCompleteView", "backgroundSize", "", "checkmarkButtonSize", "(Ljava/lang/Integer;Ljava/lang/Integer;)V", "configureProgressView", "backgroundDrawable", "Landroid/graphics/drawable/Drawable;", "cancelButtonSize", "primaryColor", "progressIndicatorSize", "trackColor", "(Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V", "resetUploadOverlay", "setOnProgressAnimationComplete", "setProgress", "progress", "(Ljava/lang/Integer;Lcom/discord/chat/presentation/message/view/UploadContext;)V", "setSquareLayoutParam", "view", "Landroid/view/View;", "dimension", "setUploadCancel", "onCancelUpload", "setUploadCompleteBackgroundVisible", "Landroid/animation/ValueAnimator;", "uploadCompleteAnimationSequence", "Landroid/animation/AnimatorSet;", "uploadCompleteCheckmarkFadeInAnim", "uploadCompleteCheckmarkFadeOutAnim", "CompleteViewConfig", "ProgressViewConfig", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -82,7 +82,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 return false;
             }
             CompleteViewConfig completeViewConfig = (CompleteViewConfig) obj;
-            return C9971q.m14638b(this.backgroundSize, completeViewConfig.backgroundSize) && C9971q.m14638b(this.checkmarkButtonSize, completeViewConfig.checkmarkButtonSize);
+            return C9677q.m14638b(this.backgroundSize, completeViewConfig.backgroundSize) && C9677q.m14638b(this.checkmarkButtonSize, completeViewConfig.checkmarkButtonSize);
         }
 
         public final Integer getBackgroundSize() {
@@ -188,7 +188,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 return false;
             }
             ProgressViewConfig progressViewConfig = (ProgressViewConfig) obj;
-            return C9971q.m14638b(this.backgroundSize, progressViewConfig.backgroundSize) && C9971q.m14638b(this.backgroundDrawable, progressViewConfig.backgroundDrawable) && C9971q.m14638b(this.cancelButtonSize, progressViewConfig.cancelButtonSize) && C9971q.m14638b(this.primaryColor, progressViewConfig.primaryColor) && C9971q.m14638b(this.progressIndicatorSize, progressViewConfig.progressIndicatorSize) && C9971q.m14638b(this.trackColor, progressViewConfig.trackColor);
+            return C9677q.m14638b(this.backgroundSize, progressViewConfig.backgroundSize) && C9677q.m14638b(this.backgroundDrawable, progressViewConfig.backgroundDrawable) && C9677q.m14638b(this.cancelButtonSize, progressViewConfig.cancelButtonSize) && C9677q.m14638b(this.primaryColor, progressViewConfig.primaryColor) && C9677q.m14638b(this.progressIndicatorSize, progressViewConfig.progressIndicatorSize) && C9677q.m14638b(this.trackColor, progressViewConfig.trackColor);
         }
 
         public final Drawable getBackgroundDrawable() {
@@ -248,7 +248,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public AttachmentUploadOverlayView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ AttachmentUploadOverlayView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -302,7 +302,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     private final void setSquareLayoutParam(View view, int i) {
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
-        C9971q.m14634f(layoutParams, "view.layoutParams");
+        C9677q.m14634f(layoutParams, "view.layoutParams");
         layoutParams.width = i;
         layoutParams.height = i;
         view.setLayoutParams(layoutParams);
@@ -310,7 +310,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setUploadCancel$lambda$19(Function0 onCancelUpload, View view) {
-        C9971q.m14633g(onCancelUpload, "$onCancelUpload");
+        C9677q.m14633g(onCancelUpload, "$onCancelUpload");
         onCancelUpload.invoke();
     }
 
@@ -334,9 +334,9 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setUploadCompleteBackgroundVisible$lambda$3$lambda$2(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.binding.uploadCompleteLayout.setAlpha(((Float) animatedValue).floatValue());
     }
 
@@ -346,25 +346,25 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.chat.presentation.message.view.AttachmentUploadOverlayView$uploadCompleteAnimationSequence$lambda$18$$inlined$doOnEnd$1
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
                 Function0 function0;
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 function0 = AttachmentUploadOverlayView.this.onAnimationComplete;
                 function0.invoke();
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         return animatorSet;
@@ -381,7 +381,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$5$lambda$4(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f22042a;
+        Unit unit = Unit.f25780a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(0.8f, 0.9f);
         valueAnimator2.setInterpolator(new OvershootInterpolator(8.0f));
@@ -405,17 +405,17 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$5$lambda$4(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.binding.uploadComplete.setAlpha(((Float) animatedValue).floatValue());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$7$lambda$6(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         float floatValue = ((Float) animatedValue).floatValue();
         this$0.binding.uploadCompleteBackground.setScaleX(floatValue);
         this$0.binding.uploadCompleteBackground.setScaleY(floatValue);
@@ -423,9 +423,9 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$9$lambda$8(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.binding.uploadProgressLayout.setAlpha(((Float) animatedValue).floatValue());
     }
 
@@ -441,7 +441,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$12$lambda$11(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f22042a;
+        Unit unit = Unit.f25780a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(1.0f, 0.0f);
         valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.g
@@ -454,32 +454,32 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.chat.presentation.message.view.AttachmentUploadOverlayView$uploadCompleteCheckmarkFadeOutAnim$lambda$16$$inlined$doOnEnd$1
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationCancel(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationEnd(Animator animator) {
                 AttachmentUploadOverlayViewBinding attachmentUploadOverlayViewBinding;
                 AttachmentUploadOverlayViewBinding attachmentUploadOverlayViewBinding2;
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
                 attachmentUploadOverlayViewBinding = AttachmentUploadOverlayView.this.binding;
                 ConstraintLayout constraintLayout = attachmentUploadOverlayViewBinding.uploadProgressLayout;
-                C9971q.m14634f(constraintLayout, "binding.uploadProgressLayout");
+                C9677q.m14634f(constraintLayout, "binding.uploadProgressLayout");
                 constraintLayout.setVisibility(8);
                 attachmentUploadOverlayViewBinding2 = AttachmentUploadOverlayView.this.binding;
                 ConstraintLayout constraintLayout2 = attachmentUploadOverlayViewBinding2.uploadCompleteLayout;
-                C9971q.m14634f(constraintLayout2, "binding.uploadCompleteLayout");
+                C9677q.m14634f(constraintLayout2, "binding.uploadCompleteLayout");
                 constraintLayout2.setVisibility(8);
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationRepeat(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
 
             @Override // android.animation.Animator.AnimatorListener
             public void onAnimationStart(Animator animator) {
-                C9971q.m14633g(animator, "animator");
+                C9677q.m14633g(animator, "animator");
             }
         });
         return animatorSet;
@@ -487,9 +487,9 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$12$lambda$11(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         float floatValue = ((Float) animatedValue).floatValue();
         this$0.binding.uploadCompleteLayout.setScaleX(floatValue);
         this$0.binding.uploadCompleteLayout.setScaleY(floatValue);
@@ -497,23 +497,23 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$14$lambda$13(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
-        C9971q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+        C9677q.m14635e(animatedValue, "null cannot be cast to non-null type kotlin.Float");
         this$0.binding.uploadCompleteLayout.setAlpha(((Float) animatedValue).floatValue());
     }
 
     public final void configureCompleteView(Integer num, Integer num2) {
         CompleteViewConfig completeViewConfig = new CompleteViewConfig(num, num2);
-        if (!C9971q.m14638b(this.completeViewConfig, completeViewConfig)) {
+        if (!C9677q.m14638b(this.completeViewConfig, completeViewConfig)) {
             if (num != null) {
                 MaterialCardView materialCardView = this.binding.uploadCompleteBackground;
-                C9971q.m14634f(materialCardView, "binding.uploadCompleteBackground");
+                C9677q.m14634f(materialCardView, "binding.uploadCompleteBackground");
                 setSquareLayoutParam(materialCardView, num.intValue());
             }
             if (num2 != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.uploadComplete;
-                C9971q.m14634f(simpleDraweeView, "binding.uploadComplete");
+                C9677q.m14634f(simpleDraweeView, "binding.uploadComplete");
                 setSquareLayoutParam(simpleDraweeView, num2.intValue());
             }
             this.completeViewConfig = completeViewConfig;
@@ -522,10 +522,10 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
 
     public final void configureProgressView(Integer num, Drawable drawable, Integer num2, Integer num3, Integer num4, Integer num5) {
         ProgressViewConfig progressViewConfig = new ProgressViewConfig(num, drawable, num2, num3, num4, num5);
-        if (!C9971q.m14638b(this.progressViewConfig, progressViewConfig)) {
+        if (!C9677q.m14638b(this.progressViewConfig, progressViewConfig)) {
             if (num != null) {
                 View view = this.binding.uploadProgressBackground;
-                C9971q.m14634f(view, "binding.uploadProgressBackground");
+                C9677q.m14634f(view, "binding.uploadProgressBackground");
                 setSquareLayoutParam(view, num.intValue());
             }
             if (drawable != null) {
@@ -533,12 +533,12 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
             }
             if (num2 != null) {
                 SimpleDraweeView simpleDraweeView = this.binding.uploadCancel;
-                C9971q.m14634f(simpleDraweeView, "binding.uploadCancel");
+                C9677q.m14634f(simpleDraweeView, "binding.uploadCancel");
                 setSquareLayoutParam(simpleDraweeView, num2.intValue());
             }
             if (num3 != null) {
                 SimpleDraweeView simpleDraweeView2 = this.binding.uploadCancel;
-                C9971q.m14634f(simpleDraweeView2, "binding.uploadCancel");
+                C9677q.m14634f(simpleDraweeView2, "binding.uploadCancel");
                 ColorUtilsKt.setTintColor(simpleDraweeView2, num3);
                 this.binding.uploadProgress.setIndicatorColor(num3.intValue());
             }
@@ -553,13 +553,13 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     }
 
     public final void setOnProgressAnimationComplete(Function0<Unit> onAnimationComplete) {
-        C9971q.m14633g(onAnimationComplete, "onAnimationComplete");
+        C9677q.m14633g(onAnimationComplete, "onAnimationComplete");
         this.onAnimationComplete = onAnimationComplete;
     }
 
     public final void setProgress(Integer num, UploadContext uploadContext) {
         boolean z;
-        if (!C9971q.m14638b(this.uploadContext, uploadContext)) {
+        if (!C9677q.m14638b(this.uploadContext, uploadContext)) {
             this.uploadContext = uploadContext;
             resetUploadOverlay();
         }
@@ -571,12 +571,12 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         }
         if (num != null && z) {
             ConstraintLayout constraintLayout = this.binding.uploadProgressLayout;
-            C9971q.m14634f(constraintLayout, "binding.uploadProgressLayout");
+            C9677q.m14634f(constraintLayout, "binding.uploadProgressLayout");
             constraintLayout.setVisibility(0);
             this.binding.uploadProgress.m27804o(num.intValue(), true);
             if (num.intValue() >= 100) {
                 ConstraintLayout constraintLayout2 = this.binding.uploadCompleteLayout;
-                C9971q.m14634f(constraintLayout2, "binding.uploadCompleteLayout");
+                C9677q.m14634f(constraintLayout2, "binding.uploadCompleteLayout");
                 constraintLayout2.setVisibility(0);
                 uploadCompleteAnimationSequence().start();
             }
@@ -584,10 +584,10 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     }
 
     public final void setUploadCancel(final Function0<Unit> onCancelUpload) {
-        C9971q.m14633g(onCancelUpload, "onCancelUpload");
+        C9677q.m14633g(onCancelUpload, "onCancelUpload");
         if (this.binding.uploadProgress.getProgress() != 100) {
             ConstraintLayout constraintLayout = this.binding.uploadProgressLayout;
-            C9971q.m14634f(constraintLayout, "binding.uploadProgressLayout");
+            C9677q.m14634f(constraintLayout, "binding.uploadProgressLayout");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.h
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -597,7 +597,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
             return;
         }
         ConstraintLayout constraintLayout2 = this.binding.uploadProgressLayout;
-        C9971q.m14634f(constraintLayout2, "binding.uploadProgressLayout");
+        C9677q.m14634f(constraintLayout2, "binding.uploadProgressLayout");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout2, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.i
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -609,22 +609,22 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AttachmentUploadOverlayView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.transitionInDuration = 250L;
         this.transitionOutDuration = 175L;
         this.transitionDelay = 400L;
         this.animationStartDelay = 1000L;
         AttachmentUploadOverlayViewBinding inflate = AttachmentUploadOverlayViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         this.onAnimationComplete = AttachmentUploadOverlayView$onAnimationComplete$1.INSTANCE;
         SimpleDraweeView it = inflate.uploadCancel;
-        C9971q.m14634f(it, "it");
+        C9677q.m14634f(it, "it");
         ReactAssetUtilsKt.setReactAsset(it, ReactAsset.Cancel);
         ColorUtilsKt.setTintColor(it, Integer.valueOf(Color.argb(255, 255, 255, 255)));
         I18nUtilsKt.i18nContentDescription$default(it, I18nMessage.CANCEL, (Function1) null, 2, (Object) null);
         SimpleDraweeView it2 = inflate.uploadComplete;
-        C9971q.m14634f(it2, "it");
+        C9677q.m14634f(it2, "it");
         ReactAssetUtilsKt.setReactAsset(it2, ReactAsset.Checkmark);
         ColorUtilsKt.setTintColor(it2, Integer.valueOf(Color.argb(255, 88, 101, 242)));
         I18nUtilsKt.i18nContentDescription$default(it2, I18nMessage.UPLOAD_COMPLETE, (Function1) null, 2, (Object) null);

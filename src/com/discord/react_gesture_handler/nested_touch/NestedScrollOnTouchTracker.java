@@ -6,7 +6,7 @@ import android.view.ViewConfiguration;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.coroutines.Job;
 
@@ -49,7 +49,7 @@ public final class NestedScrollOnTouchTracker {
 
     /* JADX WARN: Multi-variable type inference failed */
     public NestedScrollOnTouchTracker(Context context, View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener, Function1<? super View, Unit> function1, Function1<? super View, Unit> function12) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.onClickListener = onClickListener;
         this.onLongClickListener = onLongClickListener;
         this.onTrackingStart = function1;
@@ -62,7 +62,7 @@ public final class NestedScrollOnTouchTracker {
         this.originTracker.cleanUp();
         Job job = this.job;
         if (job != null) {
-            Job.C9996a.m14571a(job, null, 1, null);
+            Job.C9704a.m14571a(job, null, 1, null);
         }
         view.setPressed(false);
         this.spanBeingTouched = null;

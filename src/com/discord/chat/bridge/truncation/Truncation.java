@@ -1,19 +1,19 @@
 package com.discord.chat.bridge.truncation;
 
-import bj.C3652h;
-import bj.C3676m0;
-import bj.C3681n1;
+import bj.C2530h;
+import bj.C2555m0;
+import bj.C2560n1;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 *2\u00020\u0001:\u0002)*B?\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fB-\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0003\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\rJ\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0006HÆ\u0003J\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0016J\u0010\u0010\u001b\u001a\u0004\u0018\u00010\tHÆ\u0003¢\u0006\u0002\u0010\u000fJ:\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0003\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0002\u0010\u001dJ\u0013\u0010\u001e\u001a\u00020\t2\b\u0010\u001f\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\t\u0010!\u001a\u00020\u0006HÖ\u0001J!\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00002\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(HÇ\u0001R\u0015\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u0017\u001a\u0004\b\u0015\u0010\u0016¨\u0006+"}, m15073d2 = {"Lcom/discord/chat/bridge/truncation/Truncation;", "", "seen1", "", ViewProps.NUMBER_OF_LINES, "seeMoreLabel", "", "seeMoreLabelColor", "forceShow", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)V", "getForceShow", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getNumberOfLines", "()I", "getSeeMoreLabel", "()Ljava/lang/String;", "getSeeMoreLabelColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "component1", "component2", "component3", "component4", "copy", "(ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)Lcom/discord/chat/bridge/truncation/Truncation;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class Truncation {
@@ -40,7 +40,7 @@ public final class Truncation {
 
     public /* synthetic */ Truncation(int i, int i2, String str, Integer num, Boolean bool, SerializationConstructorMarker serializationConstructorMarker) {
         if (3 != (i & 3)) {
-            C3681n1.m33818b(i, 3, Truncation$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 3, Truncation$$serializer.INSTANCE.getDescriptor());
         }
         this.numberOfLines = i2;
         this.seeMoreLabel = str;
@@ -74,9 +74,9 @@ public final class Truncation {
 
     public static final void write$Self(Truncation self, CompositeEncoder output, SerialDescriptor serialDesc) {
         boolean z;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z2 = false;
         output.mo13866x(serialDesc, 0, self.numberOfLines);
         output.mo13864z(serialDesc, 1, self.seeMoreLabel);
@@ -86,13 +86,13 @@ public final class Truncation {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 2, C3676m0.f5992a, self.seeMoreLabelColor);
+            output.mo13874p(serialDesc, 2, C2555m0.f6794a, self.seeMoreLabelColor);
         }
         if (output.mo13893A(serialDesc, 3) || self.forceShow != null) {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 3, C3652h.f5959a, self.forceShow);
+            output.mo13874p(serialDesc, 3, C2530h.f6761a, self.forceShow);
         }
     }
 
@@ -113,7 +113,7 @@ public final class Truncation {
     }
 
     public final Truncation copy(int i, String seeMoreLabel, Integer num, Boolean bool) {
-        C9971q.m14633g(seeMoreLabel, "seeMoreLabel");
+        C9677q.m14633g(seeMoreLabel, "seeMoreLabel");
         return new Truncation(i, seeMoreLabel, num, bool);
     }
 
@@ -125,7 +125,7 @@ public final class Truncation {
             return false;
         }
         Truncation truncation = (Truncation) obj;
-        return this.numberOfLines == truncation.numberOfLines && C9971q.m14638b(this.seeMoreLabel, truncation.seeMoreLabel) && C9971q.m14638b(this.seeMoreLabelColor, truncation.seeMoreLabelColor) && C9971q.m14638b(this.forceShow, truncation.forceShow);
+        return this.numberOfLines == truncation.numberOfLines && C9677q.m14638b(this.seeMoreLabel, truncation.seeMoreLabel) && C9677q.m14638b(this.seeMoreLabelColor, truncation.seeMoreLabelColor) && C9677q.m14638b(this.forceShow, truncation.forceShow);
     }
 
     public final Boolean getForceShow() {
@@ -165,7 +165,7 @@ public final class Truncation {
     }
 
     public Truncation(int i, String seeMoreLabel, Integer num, Boolean bool) {
-        C9971q.m14633g(seeMoreLabel, "seeMoreLabel");
+        C9677q.m14633g(seeMoreLabel, "seeMoreLabel");
         this.numberOfLines = i;
         this.seeMoreLabel = seeMoreLabel;
         this.seeMoreLabelColor = num;

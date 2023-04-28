@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
-import androidx.core.graphics.C2382a;
-import bg.C3491c;
+import androidx.core.graphics.C1198a;
+import bg.C2362c;
 import com.discord.SetTextSizeSpKt;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -19,7 +19,7 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0002\u001d\u001eB\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u001a\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u0016\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\u000fH\u0002J\u0012\u0010\u0019\u001a\u00020\u00122\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u000e\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001cR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0010¨\u0006\u001f"}, m15073d2 = {"Lcom/discord/reactions/BurstReactionView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/reactions/databinding/ReactionViewBinding;", "currentCount", "", "Ljava/lang/Integer;", "currentEmojiId", "", "currentShouldAnimate", "", "Ljava/lang/Boolean;", "configureBackground", "", "isMe", "palette", "Lcom/discord/reactions/BurstReactionView$BurstColorPalette;", "configureCount", "count", "animate", "configureTextColor", "setReaction", "reaction", "Lcom/discord/reactions/ReactionView$Reaction;", "BurstColorPalette", "ThemedBurstColorPalette", "reactions_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -53,7 +53,7 @@ public final class BurstReactionView extends LinearLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public BurstReactionView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ BurstReactionView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -69,13 +69,13 @@ public final class BurstReactionView extends LinearLayout {
         String backgroundColor;
         int i3 = 255;
         if (burstColorPalette != null) {
-            i3 = C3491c.m34305a(burstColorPalette.getOpacity() * 255);
+            i3 = C2362c.m34305a(burstColorPalette.getOpacity() * 255);
         }
         Integer num3 = null;
         if (burstColorPalette == null || (backgroundColor = burstColorPalette.getBackgroundColor()) == null) {
             num = null;
         } else {
-            num = Integer.valueOf(C2382a.m37920k(Color.parseColor(backgroundColor), i3));
+            num = Integer.valueOf(C1198a.m37920k(Color.parseColor(backgroundColor), i3));
         }
         if (burstColorPalette == null || (accentColor = burstColorPalette.getAccentColor()) == null) {
             num2 = null;
@@ -86,8 +86,8 @@ public final class BurstReactionView extends LinearLayout {
             i = num.intValue();
         } else if (z) {
             Context context = getContext();
-            C9971q.m14634f(context, "context");
-            i = ColorUtilsKt.getColorCompat(context, C4675R.color.brand_new_500_alpha_20);
+            C9677q.m14634f(context, "context");
+            i = ColorUtilsKt.getColorCompat(context, C3630R.color.brand_new_500_alpha_20);
         } else {
             i = ThemeManagerKt.getTheme().getBackgroundSecondary();
         }
@@ -96,8 +96,8 @@ public final class BurstReactionView extends LinearLayout {
                 i2 = num2.intValue();
             } else {
                 Context context2 = getContext();
-                C9971q.m14634f(context2, "context");
-                i2 = ColorUtilsKt.getColorCompat(context2, C4675R.color.brand_560);
+                C9677q.m14634f(context2, "context");
+                i2 = ColorUtilsKt.getColorCompat(context2, C3630R.color.brand_560);
             }
             num3 = Integer.valueOf(i2);
         }
@@ -116,11 +116,11 @@ public final class BurstReactionView extends LinearLayout {
                 i2 = 0;
             }
             if (i > i2) {
-                textSwitcher.setInAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_in_up);
-                textSwitcher.setOutAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_out_up);
+                textSwitcher.setInAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_in_up);
+                textSwitcher.setOutAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_out_up);
             } else {
-                textSwitcher.setInAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_in_down);
-                textSwitcher.setOutAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_out_down);
+                textSwitcher.setInAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_in_down);
+                textSwitcher.setOutAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_out_down);
             }
             textSwitcher.setText(String.valueOf(i));
         } else {
@@ -157,7 +157,7 @@ public final class BurstReactionView extends LinearLayout {
         /*
             r10 = this;
             java.lang.String r0 = "reaction"
-            kotlin.jvm.internal.C9971q.m14633g(r11, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r11, r0)
             com.discord.reactions.databinding.ReactionViewBinding r0 = r10.binding
             android.view.View r0 = r0.getRoot()
             com.discord.reactions.ReactionView$Emoji r1 = r11.getEmoji()
@@ -166,7 +166,7 @@ public final class BurstReactionView extends LinearLayout {
             java.lang.String r0 = r10.currentEmojiId
             com.discord.reactions.ReactionView$Emoji r1 = r11.getEmoji()
             java.lang.String r1 = r1.getEmojiId()
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r1)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r1)
             r1 = 1
             r2 = 0
             if (r0 == 0) goto L_0x003e
@@ -174,7 +174,7 @@ public final class BurstReactionView extends LinearLayout {
             com.discord.reactions.ReactionView$Emoji r3 = r11.getEmoji()
             boolean r3 = r3.getShouldAnimate()
             java.lang.Boolean r3 = java.lang.Boolean.valueOf(r3)
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r3)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r3)
             if (r0 == 0) goto L_0x003e
             r0 = r1
             goto L_0x003f
@@ -226,7 +226,7 @@ public final class BurstReactionView extends LinearLayout {
             com.discord.emoji.RenderableEmoji r2 = r1.renderable()
             android.content.Context r3 = r10.getContext()
             java.lang.String r1 = "context"
-            kotlin.jvm.internal.C9971q.m14634f(r3, r1)
+            kotlin.jvm.internal.C9677q.m14634f(r3, r1)
             com.discord.reactions.ReactionView$Companion r1 = com.discord.reactions.ReactionView.Companion
             int r4 = r1.getEMOJI_SIZE()
             com.discord.reactions.ReactionView$Emoji r1 = r11.getEmoji()
@@ -248,9 +248,9 @@ public final class BurstReactionView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public BurstReactionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ReactionViewBinding inflate = ReactionViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        C9677q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         setOrientation(0);
         setGravity(16);
@@ -258,17 +258,17 @@ public final class BurstReactionView extends LinearLayout {
         setMinimumWidth(companion.getMINIMUM_WIDTH());
         setPadding(companion.getHORIZ_PADDING(), 0, companion.getHORIZ_PADDING(), 0);
         TextView textView = inflate.reactionCount1;
-        C9971q.m14634f(textView, "binding.reactionCount1");
+        C9677q.m14634f(textView, "binding.reactionCount1");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.reactionCount1;
-        C9971q.m14634f(textView2, "binding.reactionCount1");
+        C9677q.m14634f(textView2, "binding.reactionCount1");
         SetTextSizeSpKt.setTextSizeSp(textView2, 14.0f, 14.0f);
         TextView textView3 = inflate.reactionCount2;
-        C9971q.m14634f(textView3, "binding.reactionCount2");
+        C9677q.m14634f(textView3, "binding.reactionCount2");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.reactionCount2;
-        C9971q.m14634f(textView4, "binding.reactionCount2");
+        C9677q.m14634f(textView4, "binding.reactionCount2");
         SetTextSizeSpKt.setTextSizeSp(textView4, 14.0f, 14.0f);
         inflate.reactionCountSwitcher.setMeasureAllChildren(false);
     }

@@ -9,21 +9,21 @@ import java.io.File;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import nf.C11093t;
-import tf.C13080d;
+import nf.C10848t;
+import tf.C12962d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1", m14701f = "SoundExtensions.kt", m14700l = {42}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1", m14701f = "SoundExtensions.kt", m14700l = {42}, m14699m = "invokeSuspend")
 /* loaded from: classes7.dex */
-public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Context $context;
     final /* synthetic */ String $fileName;
     final /* synthetic */ int $key;
@@ -49,41 +49,41 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
         this.$soundResIdPrepared = function1;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new SoundExtensionsKt$fetchSound$1(this.$context, this.$url, this.$fileName, this.$soundDirectory, this.$soundManager, this.$key, this.$usage, this.$soundResIdPrepared, continuation);
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Object invokeSuspend(Object obj) {
         Object d;
-        d = C13080d.m4646d();
+        d = C12962d.m4646d();
         int i = this.label;
         if (i == 0) {
-            C11093t.m10930b(obj);
+            C10848t.m10930b(obj);
             Flow downloadFile$default = FileDownloader.downloadFile$default(FileDownloader.INSTANCE, this.$context, this.$url, this.$fileName, this.$soundDirectory, false, 16, null);
-            AnonymousClass1 r1 = new AnonymousClass1(this.$soundManager, this.$key, this.$usage, this.$soundResIdPrepared);
+            C36931 r1 = new C36931(this.$soundManager, this.$key, this.$usage, this.$soundResIdPrepared);
             this.label = 1;
             if (downloadFile$default.collect(r1, this) == d) {
                 return d;
             }
         } else if (i == 1) {
-            C11093t.m10930b(obj);
+            C10848t.m10930b(obj);
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(m15074d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, m15073d2 = {"<anonymous>", "", "downloadState", "Lcom/discord/file_downloader/DownloadState;", "emit", "(Lcom/discord/file_downloader/DownloadState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1 */
     /* loaded from: classes7.dex */
-    public static final class AnonymousClass1<T> implements FlowCollector {
+    public static final class C36931<T> implements FlowCollector {
         final /* synthetic */ int $key;
         final /* synthetic */ SoundManager $soundManager;
         final /* synthetic */ Function1<Integer, Unit> $soundResIdPrepared;
@@ -91,10 +91,10 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-        @AbstractC9931e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
+        @AbstractC9636e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1 */
         /* loaded from: classes7.dex */
-        public static final class C01081 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+        public static final class C36941 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ DownloadState $downloadState;
             final /* synthetic */ int $key;
             final /* synthetic */ SoundManager $soundManager;
@@ -104,7 +104,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             /* JADX WARN: Multi-variable type inference failed */
-            C01081(SoundManager soundManager, int i, int i2, DownloadState downloadState, Function1<? super Integer, Unit> function1, Continuation<? super C01081> continuation) {
+            C36941(SoundManager soundManager, int i, int i2, DownloadState downloadState, Function1<? super Integer, Unit> function1, Continuation<? super C36941> continuation) {
                 super(2, continuation);
                 this.$soundManager = soundManager;
                 this.$key = i;
@@ -113,22 +113,22 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
                 this.$soundResIdPrepared = function1;
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new C01081(this.$soundManager, this.$key, this.$usage, this.$downloadState, this.$soundResIdPrepared, continuation);
+                return new C36941(this.$soundManager, this.$key, this.$usage, this.$downloadState, this.$soundResIdPrepared, continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((C01081) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+                return ((C36941) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Object invokeSuspend(Object obj) {
-                C13080d.m4646d();
+                C12962d.m4646d();
                 if (this.label == 0) {
-                    C11093t.m10930b(obj);
+                    C10848t.m10930b(obj);
                     this.$soundManager.prepare(this.$key, this.$usage, null, ((DownloadState.Completed) this.$downloadState).getFile().getAbsolutePath(), this.$soundResIdPrepared);
-                    return Unit.f22042a;
+                    return Unit.f25780a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -136,37 +136,37 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-        @AbstractC9931e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
+        @AbstractC9636e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2 */
         /* loaded from: classes7.dex */
-        public static final class AnonymousClass2 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+        public static final class C36952 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
 
             /* renamed from: $e */
-            final /* synthetic */ Exception f36988$e;
+            final /* synthetic */ Exception f9497$e;
             int label;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            AnonymousClass2(Exception exc, Continuation<? super AnonymousClass2> continuation) {
+            C36952(Exception exc, Continuation<? super C36952> continuation) {
                 super(2, continuation);
-                this.f36988$e = exc;
+                this.f9497$e = exc;
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new AnonymousClass2(this.f36988$e, continuation);
+                return new C36952(this.f9497$e, continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+                return ((C36952) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Object invokeSuspend(Object obj) {
-                C13080d.m4646d();
+                C12962d.m4646d();
                 if (this.label == 0) {
-                    C11093t.m10930b(obj);
-                    Log.INSTANCE.m32175w(SoundManager.Companion.getLogTag(), "Failed to download sound.", this.f36988$e);
-                    return Unit.f22042a;
+                    C10848t.m10930b(obj);
+                    Log.INSTANCE.m32175w(SoundManager.Companion.getLogTag(), "Failed to download sound.", this.f9497$e);
+                    return Unit.f25780a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -174,30 +174,30 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-        @AbstractC9931e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
+        @AbstractC9636e(m14702c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3", m14701f = "SoundExtensions.kt", m14700l = {}, m14699m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3 */
         /* loaded from: classes7.dex */
-        public static final class AnonymousClass3 extends AbstractC9938k implements Function2<CoroutineScope, Continuation, Object> {
+        public static final class C36963 extends AbstractC9643k implements Function2<CoroutineScope, Continuation, Object> {
             int label;
 
-            AnonymousClass3(Continuation<? super AnonymousClass3> continuation) {
+            C36963(Continuation<? super C36963> continuation) {
                 super(2, continuation);
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new AnonymousClass3(continuation);
+                return new C36963(continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+                return ((C36963) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
             }
 
-            @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+            @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
             public final Object invokeSuspend(Object obj) {
-                C13080d.m4646d();
+                C12962d.m4646d();
                 if (this.label == 0) {
-                    C11093t.m10930b(obj);
+                    C10848t.m10930b(obj);
                     return null;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -205,7 +205,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
         }
 
         /* JADX WARN: Multi-variable type inference failed */
-        AnonymousClass1(SoundManager soundManager, int i, int i2, Function1<? super Integer, Unit> function1) {
+        C36931(SoundManager soundManager, int i, int i2, Function1<? super Integer, Unit> function1) {
             this.$soundManager = soundManager;
             this.$key = i;
             this.$usage = i2;
@@ -241,7 +241,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
                 r2.<init>(r1, r0)
             L_0x001c:
                 java.lang.Object r0 = r2.result
-                java.lang.Object r3 = tf.C13075b.m4650d()
+                java.lang.Object r3 = tf.C12956b.m4650d()
                 int r4 = r2.label
                 r5 = 0
                 r6 = 3
@@ -251,7 +251,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
                 if (r4 == r8) goto L_0x0040
                 if (r4 == r7) goto L_0x003c
                 if (r4 != r6) goto L_0x0034
-                nf.C11093t.m10930b(r0)
+                nf.C10848t.m10930b(r0)
                 goto L_0x0094
             L_0x0034:
                 java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
@@ -259,20 +259,20 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
                 r0.<init>(r2)
                 throw r0
             L_0x003c:
-                nf.C11093t.m10930b(r0)
+                nf.C10848t.m10930b(r0)
                 goto L_0x007f
             L_0x0040:
-                nf.C11093t.m10930b(r0)     // Catch: Exception -> 0x0044
+                nf.C10848t.m10930b(r0)     // Catch: Exception -> 0x0044
                 goto L_0x007f
             L_0x0044:
                 r0 = move-exception
                 goto L_0x006d
             L_0x0046:
-                nf.C11093t.m10930b(r0)
+                nf.C10848t.m10930b(r0)
                 r0 = r17
                 boolean r4 = r0 instanceof com.discord.file_downloader.DownloadState.Completed
                 if (r4 == 0) goto L_0x0082
-                kotlinx.coroutines.f2 r4 = kotlinx.coroutines.C10230y0.m13945c()     // Catch: Exception -> 0x0044
+                kotlinx.coroutines.f2 r4 = kotlinx.coroutines.C9946y0.m13945c()     // Catch: Exception -> 0x0044
                 com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1 r6 = new com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1     // Catch: Exception -> 0x0044
                 com.discord.sounds.SoundManager r10 = r1.$soundManager     // Catch: Exception -> 0x0044
                 int r11 = r1.$key     // Catch: Exception -> 0x0044
@@ -283,32 +283,32 @@ public final class SoundExtensionsKt$fetchSound$1 extends AbstractC9938k impleme
                 r13 = r17
                 r9.<init>(r10, r11, r12, r13, r14, r15)     // Catch: Exception -> 0x0044
                 r2.label = r8     // Catch: Exception -> 0x0044
-                java.lang.Object r0 = kotlinx.coroutines.C10129j.m14192g(r4, r6, r2)     // Catch: Exception -> 0x0044
+                java.lang.Object r0 = kotlinx.coroutines.C9840j.m14192g(r4, r6, r2)     // Catch: Exception -> 0x0044
                 if (r0 != r3) goto L_0x007f
                 return r3
             L_0x006d:
-                kotlinx.coroutines.f2 r4 = kotlinx.coroutines.C10230y0.m13945c()
+                kotlinx.coroutines.f2 r4 = kotlinx.coroutines.C9946y0.m13945c()
                 com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2 r6 = new com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2
                 r6.<init>(r0, r5)
                 r2.label = r7
-                java.lang.Object r0 = kotlinx.coroutines.C10129j.m14192g(r4, r6, r2)
+                java.lang.Object r0 = kotlinx.coroutines.C9840j.m14192g(r4, r6, r2)
                 if (r0 != r3) goto L_0x007f
                 return r3
             L_0x007f:
-                kotlin.Unit r0 = kotlin.Unit.f22042a
+                kotlin.Unit r0 = kotlin.Unit.f25780a
                 return r0
             L_0x0082:
-                kotlinx.coroutines.f2 r0 = kotlinx.coroutines.C10230y0.m13945c()
+                kotlinx.coroutines.f2 r0 = kotlinx.coroutines.C9946y0.m13945c()
                 com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3 r4 = new com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3
                 r4.<init>(r5)
                 r2.label = r6
-                java.lang.Object r0 = kotlinx.coroutines.C10129j.m14192g(r0, r4, r2)
+                java.lang.Object r0 = kotlinx.coroutines.C9840j.m14192g(r0, r4, r2)
                 if (r0 != r3) goto L_0x0094
                 return r3
             L_0x0094:
                 return r0
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1.AnonymousClass1.emit(com.discord.file_downloader.DownloadState, kotlin.coroutines.Continuation):java.lang.Object");
+            throw new UnsupportedOperationException("Method not decompiled: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1.C36931.emit(com.discord.file_downloader.DownloadState, kotlin.coroutines.Continuation):java.lang.Object");
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector

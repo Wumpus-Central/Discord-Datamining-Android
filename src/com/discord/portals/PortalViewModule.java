@@ -10,8 +10,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.coroutines.C10139l;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.coroutines.C9851l;
 
 @Metadata(m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001\u000bB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007¨\u0006\f"}, m15073d2 = {"Lcom/discord/portals/PortalViewModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "unregisterView", "", "portal", "", "PortalViewManager", "portals_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes3.dex */
@@ -27,14 +27,14 @@ public final class PortalViewModule extends ReactContextBaseJavaModule {
 
         @ReactProp(name = "portal")
         public final void portal(FrameLayout portalView, double d) {
-            C9971q.m14633g(portalView, "portalView");
-            C10139l.m14174d(CoroutineViewUtilsKt.getAttachedScope(portalView), null, null, new PortalViewModule$PortalViewManager$portal$1(d, portalView, null), 3, null);
+            C9677q.m14633g(portalView, "portalView");
+            C9851l.m14174d(CoroutineViewUtilsKt.getAttachedScope(portalView), null, null, new PortalViewModule$PortalViewManager$portal$1(d, portalView, null), 3, null);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.uimanager.ViewManager
         public FrameLayout createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new FrameLayout(reactContext);
         }
     }
@@ -42,7 +42,7 @@ public final class PortalViewModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PortalViewModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     /* JADX INFO: Access modifiers changed from: private */

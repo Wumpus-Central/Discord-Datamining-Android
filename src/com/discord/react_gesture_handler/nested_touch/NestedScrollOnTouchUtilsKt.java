@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.TextView;
 import java.util.WeakHashMap;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000,\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\u001a\u0016\u0010\f\u001a\u00020\r*\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a \u0010\u0011\u001a\u00020\r*\u00020\u00022\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\u0010\u0012\u001a\u0004\u0018\u00010\u0003H\u0007\u001a \u0010\u0013\u001a\u00020\r*\u00020\u00022\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\u0010\u0014\u001a\u0004\u0018\u00010\tH\u0007\u001a\f\u0010\u0015\u001a\u00020\r*\u00020\u0002H\u0002\u001a\f\u0010\u0016\u001a\u00020\t*\u00020\tH\u0002\"&\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0004\u0010\u0005\"\u0004\b\u0006\u0010\u0007\"&\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t0\u0001X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u0005\"\u0004\b\u000b\u0010\u0007¨\u0006\u0017"}, m15073d2 = {"viewClickListeners", "Ljava/util/WeakHashMap;", "Landroid/view/View;", "Landroid/view/View$OnClickListener;", "getViewClickListeners", "()Ljava/util/WeakHashMap;", "setViewClickListeners", "(Ljava/util/WeakHashMap;)V", "viewLongClickListeners", "Landroid/view/View$OnLongClickListener;", "getViewLongClickListeners", "setViewLongClickListeners", "enableNestedSpanClickListener", "", "Landroid/widget/TextView;", "viewManagesAccessibility", "", "setOnClickListenerNested", "onClickListener", "setOnLongClickListenerNested", "onLongPress", "updateClickablity", "updateWithOngoingGestureCancelling", "react_gesture_handler_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
@@ -13,7 +13,7 @@ public final class NestedScrollOnTouchUtilsKt {
     private static WeakHashMap<View, View.OnLongClickListener> viewLongClickListeners = new WeakHashMap<>();
 
     public static final void enableNestedSpanClickListener(TextView textView, boolean z) {
-        C9971q.m14633g(textView, "<this>");
+        C9677q.m14633g(textView, "<this>");
         textView.setOnTouchListener(new NestedScrollOnTouchListener(textView, z));
     }
 
@@ -33,7 +33,7 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setOnClickListenerNested(View view, boolean z, View.OnClickListener onClickListener) {
-        C9971q.m14633g(view, "<this>");
+        C9677q.m14633g(view, "<this>");
         if (onClickListener == null) {
             viewClickListeners.remove(view);
         } else {
@@ -51,7 +51,7 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setOnLongClickListenerNested(View view, boolean z, View.OnLongClickListener onLongClickListener) {
-        C9971q.m14633g(view, "<this>");
+        C9677q.m14633g(view, "<this>");
         if (onLongClickListener == null) {
             viewLongClickListeners.remove(view);
         } else {
@@ -69,12 +69,12 @@ public final class NestedScrollOnTouchUtilsKt {
     }
 
     public static final void setViewClickListeners(WeakHashMap<View, View.OnClickListener> weakHashMap) {
-        C9971q.m14633g(weakHashMap, "<set-?>");
+        C9677q.m14633g(weakHashMap, "<set-?>");
         viewClickListeners = weakHashMap;
     }
 
     public static final void setViewLongClickListeners(WeakHashMap<View, View.OnLongClickListener> weakHashMap) {
-        C9971q.m14633g(weakHashMap, "<set-?>");
+        C9677q.m14633g(weakHashMap, "<set-?>");
         viewLongClickListeners = weakHashMap;
     }
 
@@ -114,9 +114,9 @@ public final class NestedScrollOnTouchUtilsKt {
     public static final boolean updateWithOngoingGestureCancelling$lambda$1(android.view.View.OnLongClickListener r4, android.view.View r5) {
         /*
             java.lang.String r0 = "$this_updateWithOngoingGestureCancelling"
-            kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r4, r0)
             java.lang.String r0 = "view"
-            kotlin.jvm.internal.C9971q.m14634f(r5, r0)
+            kotlin.jvm.internal.C9677q.m14634f(r5, r0)
             java.util.ArrayList r0 = new java.util.ArrayList
             r0.<init>()
             android.view.ViewParent r1 = r5.getParent()

@@ -19,7 +19,7 @@ import com.discord.recycler_view.utils.ItemDiffableType;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u001d2\u00020\u0001:\u0004\u001d\u001e\u001f B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u001a\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u0016\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\u000fH\u0002J\u001a\u0010\u0019\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001c2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0010¨\u0006!"}, m15073d2 = {"Lcom/discord/reactions/ReactionView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/reactions/databinding/ReactionViewBinding;", "currentCount", "", "Ljava/lang/Integer;", "currentEmojiId", "", "currentShouldAnimate", "", "Ljava/lang/Boolean;", "configureBackground", "", "isMe", "reactionsTheme", "Lcom/discord/reactions/ReactionView$ReactionsTheme;", "configureCount", "count", "animate", "configureTextColor", "setReaction", "reaction", "Lcom/discord/reactions/ReactionView$Reaction;", "Companion", "Emoji", "Reaction", "ReactionsTheme", "reactions_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -88,7 +88,7 @@ public final class ReactionView extends LinearLayout {
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:4:0x0006, code lost:
-                r0 = p326ri.C12717t.m5745o(r0);
+                r0 = p327ri.C12586t.m5745o(r0);
              */
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
@@ -98,7 +98,7 @@ public final class ReactionView extends LinearLayout {
                 /*
                     java.lang.String r0 = r5.getId()
                     if (r0 == 0) goto L_0x0021
-                    java.lang.Long r0 = p326ri.C12707l.m5778o(r0)
+                    java.lang.Long r0 = p327ri.C12576l.m5778o(r0)
                     if (r0 == 0) goto L_0x0021
                     long r0 = r0.longValue()
                     com.discord.emoji.RenderableEmoji$Companion r2 = com.discord.emoji.RenderableEmoji.Companion
@@ -193,7 +193,7 @@ public final class ReactionView extends LinearLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ReactionView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ReactionView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -211,16 +211,16 @@ public final class ReactionView extends LinearLayout {
         if (z) {
             if (reactionsTheme == null || (activeReactionBackgroundColor = reactionsTheme.getActiveReactionBackgroundColor()) == null) {
                 Context context = getContext();
-                C9971q.m14634f(context, "context");
-                i2 = ColorUtilsKt.getColorCompat(context, C4675R.color.brand_new_500_alpha_20);
+                C9677q.m14634f(context, "context");
+                i2 = ColorUtilsKt.getColorCompat(context, C3630R.color.brand_new_500_alpha_20);
             } else {
                 i2 = activeReactionBackgroundColor.intValue();
             }
             int i4 = CORNER_RADIUS;
             if (reactionsTheme == null || (activeReactionBorderColor = reactionsTheme.getActiveReactionBorderColor()) == null) {
                 Context context2 = getContext();
-                C9971q.m14634f(context2, "context");
-                i3 = ColorUtilsKt.getColorCompat(context2, C4675R.color.brand_560);
+                C9677q.m14634f(context2, "context");
+                i3 = ColorUtilsKt.getColorCompat(context2, C3630R.color.brand_560);
             } else {
                 i3 = activeReactionBorderColor.intValue();
             }
@@ -251,11 +251,11 @@ public final class ReactionView extends LinearLayout {
                 i2 = 0;
             }
             if (i > i2) {
-                textSwitcher.setInAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_in_up);
-                textSwitcher.setOutAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_out_up);
+                textSwitcher.setInAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_in_up);
+                textSwitcher.setOutAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_out_up);
             } else {
-                textSwitcher.setInAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_in_down);
-                textSwitcher.setOutAnimation(textSwitcher.getContext(), C4675R.anim.anim_slide_out_down);
+                textSwitcher.setInAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_in_down);
+                textSwitcher.setOutAnimation(textSwitcher.getContext(), C3630R.anim.anim_slide_out_down);
             }
             textSwitcher.setText(String.valueOf(i));
         } else {
@@ -297,7 +297,7 @@ public final class ReactionView extends LinearLayout {
         /*
             r9 = this;
             java.lang.String r0 = "reaction"
-            kotlin.jvm.internal.C9971q.m14633g(r10, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r10, r0)
             com.discord.reactions.databinding.ReactionViewBinding r0 = r9.binding
             android.view.View r0 = r0.getRoot()
             com.discord.reactions.ReactionView$Emoji r1 = r10.getEmoji()
@@ -306,7 +306,7 @@ public final class ReactionView extends LinearLayout {
             java.lang.String r0 = r9.currentEmojiId
             com.discord.reactions.ReactionView$Emoji r1 = r10.getEmoji()
             java.lang.String r1 = r1.getEmojiId()
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r1)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r1)
             r1 = 1
             r2 = 0
             if (r0 == 0) goto L_0x003e
@@ -314,7 +314,7 @@ public final class ReactionView extends LinearLayout {
             com.discord.reactions.ReactionView$Emoji r3 = r10.getEmoji()
             boolean r3 = r3.getShouldAnimate()
             java.lang.Boolean r3 = java.lang.Boolean.valueOf(r3)
-            boolean r0 = kotlin.jvm.internal.C9971q.m14638b(r0, r3)
+            boolean r0 = kotlin.jvm.internal.C9677q.m14638b(r0, r3)
             if (r0 == 0) goto L_0x003e
             r0 = r1
             goto L_0x003f
@@ -354,7 +354,7 @@ public final class ReactionView extends LinearLayout {
             com.discord.emoji.RenderableEmoji r1 = r0.renderable()
             android.content.Context r2 = r9.getContext()
             java.lang.String r0 = "context"
-            kotlin.jvm.internal.C9971q.m14634f(r2, r0)
+            kotlin.jvm.internal.C9677q.m14634f(r2, r0)
             int r3 = com.discord.reactions.ReactionView.EMOJI_SIZE
             com.discord.reactions.ReactionView$Emoji r0 = r10.getEmoji()
             boolean r4 = r0.getShouldAnimate()
@@ -375,9 +375,9 @@ public final class ReactionView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReactionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ReactionViewBinding inflate = ReactionViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
+        C9677q.m14634f(inflate, "inflate(\n        LayoutI…ext),\n        this,\n    )");
         this.binding = inflate;
         setOrientation(0);
         setGravity(16);
@@ -385,17 +385,17 @@ public final class ReactionView extends LinearLayout {
         int i = HORIZ_PADDING;
         setPadding(i, 0, i, 0);
         TextView textView = inflate.reactionCount1;
-        C9971q.m14634f(textView, "binding.reactionCount1");
+        C9677q.m14634f(textView, "binding.reactionCount1");
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(textView, discordFont);
         TextView textView2 = inflate.reactionCount1;
-        C9971q.m14634f(textView2, "binding.reactionCount1");
+        C9677q.m14634f(textView2, "binding.reactionCount1");
         SetTextSizeSpKt.setTextSizeSp(textView2, 14.0f, 14.0f);
         TextView textView3 = inflate.reactionCount2;
-        C9971q.m14634f(textView3, "binding.reactionCount2");
+        C9677q.m14634f(textView3, "binding.reactionCount2");
         DiscordFontUtilsKt.setDiscordFont(textView3, discordFont);
         TextView textView4 = inflate.reactionCount2;
-        C9971q.m14634f(textView4, "binding.reactionCount2");
+        C9677q.m14634f(textView4, "binding.reactionCount2");
         SetTextSizeSpKt.setTextSizeSp(textView4, 14.0f, 14.0f);
         inflate.reactionCountSwitcher.setMeasureAllChildren(false);
     }

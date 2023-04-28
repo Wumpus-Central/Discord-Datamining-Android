@@ -13,7 +13,7 @@ import com.discord.theme.ThemeManagerKt;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0002\u0018\u00002\u00020\u0001B.\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\tø\u0001\u0000¢\u0006\u0002\u0010\nJ\u000e\u0010\u0011\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\fR\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005X\u0082\u0004ø\u0001\u0000¢\u0006\u0002\n\u0000R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0012"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/ResultViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "parent", "Landroid/view/ViewGroup;", "onChannelSelected", "Lkotlin/Function1;", "Lcom/discord/primitives/ChannelId;", "", "binding", "Lcom/discord/mobile_voice_overlay/databinding/OverlayVoiceChannelSearchResultBinding;", "(Landroid/view/ViewGroup;Lkotlin/jvm/functions/Function1;Lcom/discord/mobile_voice_overlay/databinding/OverlayVoiceChannelSearchResultBinding;)V", "result", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;", "getResult", "()Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;", "setResult", "(Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;)V", "bind", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -38,7 +38,7 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
             r4 = 0
             com.discord.mobile_voice_overlay.databinding.OverlayVoiceChannelSearchResultBinding r3 = com.discord.mobile_voice_overlay.databinding.OverlayVoiceChannelSearchResultBinding.inflate(r3, r1, r4)
             java.lang.String r4 = "inflate(LayoutInflater.f….context), parent, false)"
-            kotlin.jvm.internal.C9971q.m14634f(r3, r4)
+            kotlin.jvm.internal.C9677q.m14634f(r3, r4)
         L_0x0016:
             r0.<init>(r1, r2, r3)
             return
@@ -48,7 +48,7 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void _init_$lambda$1(ResultViewHolder this$0, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult = this$0.result;
         if (mobileVoiceOverlaySelectorResult != null) {
             this$0.onChannelSelected.invoke(ChannelId.m42089boximpl(mobileVoiceOverlaySelectorResult.m42022getChannelIdo4g7jtM()));
@@ -56,7 +56,7 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
     }
 
     public final void bind(MobileVoiceOverlaySelectorResult result) {
-        C9971q.m14633g(result, "result");
+        C9677q.m14633g(result, "result");
         this.result = result;
         this.binding.channelName.setText(result.getChannelName());
         this.binding.categoryName.setText(result.getCategoryName());
@@ -75,9 +75,9 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
     /* JADX WARN: Multi-variable type inference failed */
     public ResultViewHolder(ViewGroup parent, Function1<? super ChannelId, Unit> onChannelSelected, OverlayVoiceChannelSearchResultBinding binding) {
         super(binding.getRoot());
-        C9971q.m14633g(parent, "parent");
-        C9971q.m14633g(onChannelSelected, "onChannelSelected");
-        C9971q.m14633g(binding, "binding");
+        C9677q.m14633g(parent, "parent");
+        C9677q.m14633g(onChannelSelected, "onChannelSelected");
+        C9677q.m14633g(binding, "binding");
         this.onChannelSelected = onChannelSelected;
         this.binding = binding;
         binding.container.setOnClickListener(new View.OnClickListener() { // from class: com.discord.mobile_voice_overlay.views.i
@@ -87,16 +87,16 @@ public final class ResultViewHolder extends RecyclerView.ViewHolder {
             }
         });
         TextView _init_$lambda$2 = binding.channelName;
-        C9971q.m14634f(_init_$lambda$2, "_init_$lambda$2");
+        C9677q.m14634f(_init_$lambda$2, "_init_$lambda$2");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$2, DiscordFont.PrimarySemibold);
         _init_$lambda$2.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
         TextView _init_$lambda$3 = binding.categoryName;
-        C9971q.m14634f(_init_$lambda$3, "_init_$lambda$3");
+        C9677q.m14634f(_init_$lambda$3, "_init_$lambda$3");
         DiscordFont discordFont = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$3, discordFont);
         _init_$lambda$3.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
         TextView _init_$lambda$4 = binding.guildName;
-        C9971q.m14634f(_init_$lambda$4, "_init_$lambda$4");
+        C9677q.m14634f(_init_$lambda$4, "_init_$lambda$4");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$4, discordFont);
         _init_$lambda$4.setTextColor(ThemeManagerKt.getTheme().getHeaderSecondary());
     }

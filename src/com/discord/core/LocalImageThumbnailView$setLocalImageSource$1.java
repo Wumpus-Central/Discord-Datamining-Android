@@ -15,24 +15,24 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
-import kotlinx.coroutines.AbstractC10034f2;
-import kotlinx.coroutines.C10129j;
-import kotlinx.coroutines.C10230y0;
+import kotlin.jvm.internal.C9677q;
+import kotlinx.coroutines.AbstractC9742f2;
+import kotlinx.coroutines.C9840j;
+import kotlinx.coroutines.C9946y0;
 import kotlinx.coroutines.CoroutineScope;
-import nf.C11093t;
-import nf.C11098x;
-import p267of.C11289v;
-import tf.C13080d;
+import nf.C10848t;
+import nf.C10853x;
+import p268of.C11053v;
+import tf.C12962d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1", m14701f = "LocalImageThumbnailView.kt", m14700l = {82, 101}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1", m14701f = "LocalImageThumbnailView.kt", m14700l = {82, 101}, m14699m = "invokeSuspend")
 /* loaded from: classes4.dex */
-public final class LocalImageThumbnailView$setLocalImageSource$1 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+public final class LocalImageThumbnailView$setLocalImageSource$1 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ int $heightDp;
     final /* synthetic */ Uri $uri;
     final /* synthetic */ int $widthDp;
@@ -41,10 +41,10 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-    @AbstractC9931e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$1", m14701f = "LocalImageThumbnailView.kt", m14700l = {}, m14699m = "invokeSuspend")
+    @AbstractC9636e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$1", m14701f = "LocalImageThumbnailView.kt", m14700l = {}, m14699m = "invokeSuspend")
     /* renamed from: com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$1 */
     /* loaded from: classes4.dex */
-    public static final class AnonymousClass1 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    public static final class C33471 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Bitmap $bitmap;
         final /* synthetic */ boolean $isBitmapEmpty;
         final /* synthetic */ Uri $uri;
@@ -52,7 +52,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
         final /* synthetic */ LocalImageThumbnailView this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass1(LocalImageThumbnailView localImageThumbnailView, boolean z, Uri uri, Bitmap bitmap, Continuation<? super AnonymousClass1> continuation) {
+        C33471(LocalImageThumbnailView localImageThumbnailView, boolean z, Uri uri, Bitmap bitmap, Continuation<? super C33471> continuation) {
             super(2, continuation);
             this.this$0 = localImageThumbnailView;
             this.$isBitmapEmpty = z;
@@ -60,22 +60,22 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
             this.$bitmap = bitmap;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+        @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass1(this.this$0, this.$isBitmapEmpty, this.$uri, this.$bitmap, continuation);
+            return new C33471(this.this$0, this.$isBitmapEmpty, this.$uri, this.$bitmap, continuation);
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+            return ((C33471) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+        @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
         public final Object invokeSuspend(Object obj) {
             ImageView imageView;
             SimpleDraweeView simpleDraweeView;
-            C13080d.m4646d();
+            C12962d.m4646d();
             if (this.label == 0) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
                 this.this$0.toggleImages(this.$isBitmapEmpty);
                 if (this.$isBitmapEmpty) {
                     LocalImageThumbnailView localImageThumbnailView = this.this$0;
@@ -85,7 +85,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
                     imageView = this.this$0.imageView;
                     imageView.setImageBitmap(this.$bitmap);
                 }
-                return Unit.f22042a;
+                return Unit.f25780a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -93,41 +93,41 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-    @AbstractC9931e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$2", m14701f = "LocalImageThumbnailView.kt", m14700l = {}, m14699m = "invokeSuspend")
+    @AbstractC9636e(m14702c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$2", m14701f = "LocalImageThumbnailView.kt", m14700l = {}, m14699m = "invokeSuspend")
     /* renamed from: com.discord.core.LocalImageThumbnailView$setLocalImageSource$1$2 */
     /* loaded from: classes4.dex */
-    public static final class AnonymousClass2 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    public static final class C33482 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Uri $uri;
         int label;
         final /* synthetic */ LocalImageThumbnailView this$0;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass2(LocalImageThumbnailView localImageThumbnailView, Uri uri, Continuation<? super AnonymousClass2> continuation) {
+        C33482(LocalImageThumbnailView localImageThumbnailView, Uri uri, Continuation<? super C33482> continuation) {
             super(2, continuation);
             this.this$0 = localImageThumbnailView;
             this.$uri = uri;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+        @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-            return new AnonymousClass2(this.this$0, this.$uri, continuation);
+            return new C33482(this.this$0, this.$uri, continuation);
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+            return ((C33482) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+        @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
         public final Object invokeSuspend(Object obj) {
             SimpleDraweeView simpleDraweeView;
-            C13080d.m4646d();
+            C12962d.m4646d();
             if (this.label == 0) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
                 this.this$0.toggleImages(true);
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 simpleDraweeView = localImageThumbnailView.simpleDraweeView;
                 localImageThumbnailView.loadDefaultBitmap(simpleDraweeView, this.$uri);
-                return Unit.f22042a;
+                return Unit.f25780a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -143,16 +143,16 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
         this.$uri = uri;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new LocalImageThumbnailView$setLocalImageSource$1(this.$widthDp, this.$heightDp, this.this$0, this.$uri, continuation);
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Object invokeSuspend(Object obj) {
         Object d;
         Map k;
@@ -161,15 +161,15 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
         int i;
         boolean z;
         boolean z2;
-        d = C13080d.m4646d();
+        d = C12962d.m4646d();
         int i2 = this.label;
         try {
             if (i2 == 0) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
                 int dpToPx = SizeUtilsKt.getDpToPx(this.$widthDp);
                 int dpToPx2 = SizeUtilsKt.getDpToPx(this.$heightDp);
                 if (dpToPx == 0 || dpToPx2 == 0) {
-                    size = new Size(ItemTouchHelper.AbstractC3083c.DEFAULT_DRAG_ANIMATION_DURATION, ItemTouchHelper.AbstractC3083c.DEFAULT_DRAG_ANIMATION_DURATION);
+                    size = new Size(ItemTouchHelper.AbstractC1928c.DEFAULT_DRAG_ANIMATION_DURATION, ItemTouchHelper.AbstractC1928c.DEFAULT_DRAG_ANIMATION_DURATION);
                 } else {
                     size = new Size(dpToPx, dpToPx2);
                 }
@@ -178,7 +178,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
                 } else {
                     ContentResolver contentResolver = this.this$0.getContext().getContentResolver();
                     String lastPathSegment = this.$uri.getLastPathSegment();
-                    C9971q.m14636d(lastPathSegment);
+                    C9677q.m14636d(lastPathSegment);
                     thumbnail = MediaStore.Images.Thumbnails.getThumbnail(contentResolver, Long.parseLong(lastPathSegment), 1, null);
                 }
                 if (thumbnail != null) {
@@ -191,36 +191,36 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends Abstrac
                 } else {
                     z = false;
                 }
-                AbstractC10034f2 c = C10230y0.m13945c();
+                AbstractC9742f2 c = C9946y0.m13945c();
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 if (z) {
                     z2 = true;
                 } else {
                     z2 = false;
                 }
-                AnonymousClass1 r12 = new AnonymousClass1(localImageThumbnailView, z2, this.$uri, thumbnail, null);
+                C33471 r12 = new C33471(localImageThumbnailView, z2, this.$uri, thumbnail, null);
                 this.label = 1;
-                if (C10129j.m14192g(c, r12, this) == d) {
+                if (C9840j.m14192g(c, r12, this) == d) {
                     return d;
                 }
             } else if (i2 == 1) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
             } else if (i2 == 2) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
         } catch (Exception e) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
-            k = C11289v.m10248k(C11098x.m10921a("exception", e.toString()), C11098x.m10921a("url", this.$uri.toString()));
+            k = C11053v.m10248k(C10853x.m10921a("exception", e.toString()), C10853x.m10921a("url", this.$uri.toString()));
             CrashReporting.addBreadcrumb$default(crashReporting, "DCDLocalImageThumbnail - Failed to load thumbnail", k, null, 4, null);
-            AbstractC10034f2 c2 = C10230y0.m13945c();
-            AnonymousClass2 r1 = new AnonymousClass2(this.this$0, this.$uri, null);
+            AbstractC9742f2 c2 = C9946y0.m13945c();
+            C33482 r1 = new C33482(this.this$0, this.$uri, null);
             this.label = 2;
-            if (C10129j.m14192g(c2, r1, this) == d) {
+            if (C9840j.m14192g(c2, r1, this) == d) {
                 return d;
             }
         }
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 }

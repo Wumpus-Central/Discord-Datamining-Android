@@ -7,8 +7,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
-import com.discord.chat.C4254R;
-import p412x1.C13922a;
+import com.discord.chat.C3147R;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class ConnectionsRoleTagViewBinding {
@@ -29,20 +29,20 @@ public final class ConnectionsRoleTagViewBinding {
     }
 
     public static ConnectionsRoleTagViewBinding bind(View view) {
-        int i = C4254R.C4256id.connections_role_tag_container;
-        CardView cardView = (CardView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.connections_role_tag_container;
+        CardView cardView = (CardView) C13836a.m2313a(view, i);
         if (cardView != null) {
-            i = C4254R.C4256id.role_name;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.role_name;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4254R.C4256id.verified_check_icon;
-                ImageView imageView = (ImageView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.verified_check_icon;
+                ImageView imageView = (ImageView) C13836a.m2313a(view, i);
                 if (imageView != null) {
-                    i = C4254R.C4256id.verified_check_icon_background;
-                    ImageView imageView2 = (ImageView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.verified_check_icon_background;
+                    ImageView imageView2 = (ImageView) C13836a.m2313a(view, i);
                     if (imageView2 != null) {
-                        i = C4254R.C4256id.verified_check_icon_container;
-                        FrameLayout frameLayout = (FrameLayout) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.verified_check_icon_container;
+                        FrameLayout frameLayout = (FrameLayout) C13836a.m2313a(view, i);
                         if (frameLayout != null) {
                             return new ConnectionsRoleTagViewBinding(view, cardView, textView, imageView, imageView2, frameLayout);
                         }
@@ -55,7 +55,7 @@ public final class ConnectionsRoleTagViewBinding {
 
     public static ConnectionsRoleTagViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.connections_role_tag_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.connections_role_tag_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

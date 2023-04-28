@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.C2549a;
-import androidx.core.view.C2733w0;
+import androidx.core.view.C1369a;
+import androidx.core.view.C1559w0;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.databinding.ImageAttachmentViewBinding;
@@ -21,7 +21,7 @@ import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u00015B\u001d\b\u0007\u0012\u0006\u00100\u001a\u00020/\u0012\n\b\u0002\u00102\u001a\u0004\u0018\u000101¢\u0006\u0004\b3\u00104J\u0081\u0001\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\u000b2\b\u0010\u000e\u001a\u0004\u0018\u00010\r2\u0006\u0010\u000f\u001a\u00020\u00042\b\u0010\u0010\u001a\u0004\u0018\u00010\u00042\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00112\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\u001a\u0010\u001c\u001a\u00020\u00122\b\u0010\u001a\u001a\u0004\u0018\u00010\u00022\b\u0010\u001b\u001a\u0004\u0018\u00010\u0002J\u0018\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0002J0\u0010\"\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u00022\u0016\u0010!\u001a\u0012\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00120\u001fj\u0002` J\u0010\u0010$\u001a\u00020\u00122\b\u0010#\u001a\u0004\u0018\u00010\u0002R\u0017\u0010&\u001a\u00020%8\u0006¢\u0006\f\n\u0004\b&\u0010'\u001a\u0004\b(\u0010)R\u0016\u0010+\u001a\u00020*8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b+\u0010,R\u0016\u0010-\u001a\u00020\u00028\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b-\u0010.¨\u00066"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/ImageAttachmentView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "", "url", "", "width", "height", "maxHeightPx", "maxWidthPx", "Lcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;", ViewProps.RESIZE_MODE, "", "isSpoiler", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "radiusPx", "progress", "Lkotlin/Function0;", "", "onCancelUpload", "Lcom/discord/chat/presentation/message/view/UploadContext;", "uploadContext", "", "attachmentsOpacity", "setContent", "(Ljava/lang/String;IIIILcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;ILjava/lang/Integer;Lkotlin/jvm/functions/Function0;Lcom/discord/chat/presentation/message/view/UploadContext;Ljava/lang/Float;)V", "description", "hint", "setDescription", "show", "showDescription", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onTapShowAltText", "showAltTextButton", "role", "setRole", "Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "binding", "Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "Lcom/discord/chat/presentation/message/view/ImageAttachmentView$TargetSize;", "targetSize", "Lcom/discord/chat/presentation/message/view/ImageAttachmentView$TargetSize;", "targetUrl", "Ljava/lang/String;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "TargetSize", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
@@ -111,7 +111,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ImageAttachmentView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ImageAttachmentView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -123,10 +123,10 @@ public final class ImageAttachmentView extends ConstraintLayout {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:14:0x005f, code lost:
-        if (kotlin.jvm.internal.C9971q.m14638b(r1, r0) == false) goto L_0x0061;
+        if (kotlin.jvm.internal.C9677q.m14638b(r1, r0) == false) goto L_0x0061;
      */
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0032, code lost:
-        if (kotlin.jvm.internal.C9971q.m14638b(r1, r14) == false) goto L_0x0034;
+        if (kotlin.jvm.internal.C9677q.m14638b(r1, r14) == false) goto L_0x0034;
      */
     /* JADX WARN: Removed duplicated region for block: B:32:0x00d6  */
     /* JADX WARN: Removed duplicated region for block: B:33:0x00db  */
@@ -154,11 +154,11 @@ public final class ImageAttachmentView extends ConstraintLayout {
 
     public final void setRole(final String str) {
         if (str != null) {
-            C2733w0.m36990q0(this.binding.image, new C2549a() { // from class: com.discord.chat.presentation.message.view.ImageAttachmentView$setRole$1
-                @Override // androidx.core.view.C2549a
+            C1559w0.m36990q0(this.binding.image, new C1369a() { // from class: com.discord.chat.presentation.message.view.ImageAttachmentView$setRole$1
+                @Override // androidx.core.view.C1369a
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
-                    C9971q.m14633g(host, "host");
-                    C9971q.m14633g(info, "info");
+                    C9677q.m14633g(host, "host");
+                    C9677q.m14633g(info, "info");
                     super.onInitializeAccessibilityNodeInfo(host, info);
                     info.m37347v0(str);
                 }
@@ -167,7 +167,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     }
 
     public final void showAltTextButton(boolean z, String str, Function1<? super String, Unit> onTapShowAltText) {
-        C9971q.m14633g(onTapShowAltText, "onTapShowAltText");
+        C9677q.m14633g(onTapShowAltText, "onTapShowAltText");
         AltTextButtonView altTextButtonView = this.binding.mediaViewAltTextButton;
         if (!z) {
             str = null;
@@ -178,7 +178,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
     public final void showDescription(boolean z, String str) {
         boolean z2;
         TextView showDescription$lambda$1 = this.binding.imageAltText;
-        C9971q.m14634f(showDescription$lambda$1, "showDescription$lambda$1");
+        C9677q.m14634f(showDescription$lambda$1, "showDescription$lambda$1");
         ViewUtilsKt.setOptionalText(showDescription$lambda$1, str);
         int i = 0;
         if (str == null || !z) {
@@ -195,14 +195,14 @@ public final class ImageAttachmentView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ImageAttachmentView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         ImageAttachmentViewBinding inflate = ImageAttachmentViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         inflate.image.getHierarchy().m31768z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundSecondaryAlt()));
         TextView _init_$lambda$0 = inflate.imageAltText;
         _init_$lambda$0.setImportantForAccessibility(4);
-        C9971q.m14634f(_init_$lambda$0, "_init_$lambda$0");
+        C9677q.m14634f(_init_$lambda$0, "_init_$lambda$0");
         DiscordFontUtilsKt.setDiscordFont(_init_$lambda$0, DiscordFont.PrimaryNormal);
         _init_$lambda$0.setTextColor(ThemeManagerKt.getTheme().getTextMuted());
         SetTextSizeSpKt.setTextSizeSp(_init_$lambda$0, 12.0f);

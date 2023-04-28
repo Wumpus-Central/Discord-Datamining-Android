@@ -1,22 +1,22 @@
 package com.discord.chat.bridge.botuikit;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.C3681n1;
+import bj.C2560n1;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010 \n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\"\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 F2\u00020\u0001:\u0002EFB\u009b\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\u000e\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u0006\u0012\u000e\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0002\u0010\u0017B\u0087\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00030\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u0006\u0012\u0010\b\u0002\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006¢\u0006\u0002\u0010\u0018J\t\u0010*\u001a\u00020\u0003HÆ\u0003J\t\u0010+\u001a\u00020\u0011HÆ\u0003J\u000f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00130\u0006HÆ\u0003J\u0011\u0010-\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006HÆ\u0003J\u000f\u0010.\u001a\b\u0012\u0004\u0012\u00020\u00030\u0006HÆ\u0003J\t\u0010/\u001a\u00020\bHÆ\u0003J\t\u00100\u001a\u00020\bHÆ\u0003J\u000b\u00101\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u00102\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u00103\u001a\u00020\u0003HÆ\u0003J\t\u00104\u001a\u00020\u0003HÆ\u0003J\t\u00105\u001a\u00020\u000fHÆ\u0003J\u0099\u0001\u00106\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00030\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00112\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u00062\u0010\b\u0002\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006HÆ\u0001J\u0013\u00107\u001a\u00020\u000f2\b\u00108\u001a\u0004\u0018\u000109HÖ\u0003J\u000e\u0010:\u001a\b\u0012\u0004\u0012\u00020;0\u0006H\u0016J\t\u0010<\u001a\u00020\u0003HÖ\u0001J\t\u0010=\u001a\u00020\bHÖ\u0001J!\u0010>\u001a\u00020?2\u0006\u0010@\u001a\u00020\u00002\u0006\u0010A\u001a\u00020B2\u0006\u0010C\u001a\u00020DHÇ\u0001R\u0016\u0010\u000b\u001a\u0004\u0018\u00010\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0014\u0010\u0007\u001a\u00020\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0014\u0010\t\u001a\u00020\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001aR\u0014\u0010\u000e\u001a\u00020\u000fX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u001a\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00030\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0014\u0010\r\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0014\u0010\f\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\"R\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u0006¢\u0006\b\n\u0000\u001a\u0004\b$\u0010 R\u0016\u0010\n\u001a\u0004\u0018\u00010\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u001aR\u0019\u0010\u0014\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b&\u0010 R\u0014\u0010\u0010\u001a\u00020\u0011X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b)\u0010\"¨\u0006G"}, m15073d2 = {"Lcom/discord/chat/bridge/botuikit/StringSelectComponent;", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "seen1", "", "type", "indices", "", "applicationId", "", "customId", ReactTextInputShadowNode.PROP_PLACEHOLDER, ViewProps.ACCESSIBILITY_LABEL, "minValues", "maxValues", "disabled", "", "state", "Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "options", "Lcom/discord/chat/bridge/botuikit/StringSelectItem;", "selectedOptions", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILjava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/util/List;Ljava/util/List;)V", "getAccessibilityLabel", "()Ljava/lang/String;", "getApplicationId", "getCustomId", "getDisabled", "()Z", "getIndices", "()Ljava/util/List;", "getMaxValues", "()I", "getMinValues", "getOptions", "getPlaceholder", "getSelectedOptions", "getState", "()Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "getType", "component1", "component10", "component11", "component12", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "", "getSelectedItems", "Lcom/discord/chat/bridge/botuikit/SelectItem;", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class StringSelectComponent extends SelectComponent {
@@ -53,7 +53,7 @@ public final class StringSelectComponent extends SelectComponent {
     public /* synthetic */ StringSelectComponent(int i, int i2, List list, String str, String str2, String str3, String str4, int i3, int i4, boolean z, ActionComponentState actionComponentState, List list2, List list3, SerializationConstructorMarker serializationConstructorMarker) {
         super(i, serializationConstructorMarker);
         if (719 != (i & 719)) {
-            C3681n1.m33818b(i, 719, StringSelectComponent$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 719, StringSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i2;
         this.indices = list;
@@ -73,7 +73,7 @@ public final class StringSelectComponent extends SelectComponent {
         this.maxValues = i4;
         this.disabled = (i & Spliterator.NONNULL) == 0 ? false : z;
         this.state = actionComponentState;
-        this.options = (i & Spliterator.IMMUTABLE) == 0 ? C9906j.m14820i() : list2;
+        this.options = (i & Spliterator.IMMUTABLE) == 0 ? C9610j.m14820i() : list2;
         if ((i & RecyclerView.ItemAnimator.FLAG_MOVED) == 0) {
             this.selectedOptions = null;
         } else {
@@ -145,11 +145,11 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     public final StringSelectComponent copy(int i, List<Integer> indices, String applicationId, String customId, String str, String str2, int i2, int i3, boolean z, ActionComponentState state, List<StringSelectItem> options, List<Integer> list) {
-        C9971q.m14633g(indices, "indices");
-        C9971q.m14633g(applicationId, "applicationId");
-        C9971q.m14633g(customId, "customId");
-        C9971q.m14633g(state, "state");
-        C9971q.m14633g(options, "options");
+        C9677q.m14633g(indices, "indices");
+        C9677q.m14633g(applicationId, "applicationId");
+        C9677q.m14633g(customId, "customId");
+        C9677q.m14633g(state, "state");
+        C9677q.m14633g(options, "options");
         return new StringSelectComponent(i, indices, applicationId, customId, str, str2, i2, i3, z, state, options, list);
     }
 
@@ -161,7 +161,7 @@ public final class StringSelectComponent extends SelectComponent {
             return false;
         }
         StringSelectComponent stringSelectComponent = (StringSelectComponent) obj;
-        return getType() == stringSelectComponent.getType() && C9971q.m14638b(getIndices(), stringSelectComponent.getIndices()) && C9971q.m14638b(getApplicationId(), stringSelectComponent.getApplicationId()) && C9971q.m14638b(getCustomId(), stringSelectComponent.getCustomId()) && C9971q.m14638b(getPlaceholder(), stringSelectComponent.getPlaceholder()) && C9971q.m14638b(getAccessibilityLabel(), stringSelectComponent.getAccessibilityLabel()) && getMinValues() == stringSelectComponent.getMinValues() && getMaxValues() == stringSelectComponent.getMaxValues() && getDisabled() == stringSelectComponent.getDisabled() && getState() == stringSelectComponent.getState() && C9971q.m14638b(this.options, stringSelectComponent.options) && C9971q.m14638b(this.selectedOptions, stringSelectComponent.selectedOptions);
+        return getType() == stringSelectComponent.getType() && C9677q.m14638b(getIndices(), stringSelectComponent.getIndices()) && C9677q.m14638b(getApplicationId(), stringSelectComponent.getApplicationId()) && C9677q.m14638b(getCustomId(), stringSelectComponent.getCustomId()) && C9677q.m14638b(getPlaceholder(), stringSelectComponent.getPlaceholder()) && C9677q.m14638b(getAccessibilityLabel(), stringSelectComponent.getAccessibilityLabel()) && getMinValues() == stringSelectComponent.getMinValues() && getMaxValues() == stringSelectComponent.getMaxValues() && getDisabled() == stringSelectComponent.getDisabled() && getState() == stringSelectComponent.getState() && C9677q.m14638b(this.options, stringSelectComponent.options) && C9677q.m14638b(this.selectedOptions, stringSelectComponent.selectedOptions);
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -216,13 +216,13 @@ public final class StringSelectComponent extends SelectComponent {
             List<StringSelectItem> list2 = this.options;
             ArrayList arrayList = new ArrayList();
             for (Object obj : list2) {
-                if (C9971q.m14638b(((StringSelectItem) obj).getDefault(), Boolean.TRUE)) {
+                if (C9677q.m14638b(((StringSelectItem) obj).getDefault(), Boolean.TRUE)) {
                     arrayList.add(obj);
                 }
             }
             return arrayList;
         }
-        t = C9907k.m14809t(list, 10);
+        t = C9611k.m14809t(list, 10);
         ArrayList arrayList2 = new ArrayList(t);
         for (Number number : list) {
             arrayList2.add(this.options.get(number.intValue()));
@@ -312,7 +312,7 @@ public final class StringSelectComponent extends SelectComponent {
         L_0x001c:
             r1 = r0 & 1024(0x400, float:1.435E-42)
             if (r1 == 0) goto L_0x0026
-            java.util.List r1 = kotlin.collections.C9904h.m14862i()
+            java.util.List r1 = kotlin.collections.C9608h.m14862i()
             r14 = r1
             goto L_0x0028
         L_0x0026:
@@ -340,11 +340,11 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     public StringSelectComponent(int i, List<Integer> indices, String applicationId, String customId, String str, String str2, int i2, int i3, boolean z, ActionComponentState state, List<StringSelectItem> options, List<Integer> list) {
-        C9971q.m14633g(indices, "indices");
-        C9971q.m14633g(applicationId, "applicationId");
-        C9971q.m14633g(customId, "customId");
-        C9971q.m14633g(state, "state");
-        C9971q.m14633g(options, "options");
+        C9677q.m14633g(indices, "indices");
+        C9677q.m14633g(applicationId, "applicationId");
+        C9677q.m14633g(customId, "customId");
+        C9677q.m14633g(state, "state");
+        C9677q.m14633g(options, "options");
         this.type = i;
         this.indices = indices;
         this.applicationId = applicationId;

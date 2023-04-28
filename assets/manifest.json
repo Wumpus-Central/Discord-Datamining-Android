@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "177205",
+        "build": "177206",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "5b5f227c5723ce42f44f8f5adca3a454",
+        "app/src/main/assets/index.android.bundle": "dc4af736ee1bd40ec68b0d8af563aa2c",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -38,7 +38,7 @@
         "app/src/main/res/drawable-mdpi/images_native_community_icapplicationrequired.png": "f0c916a91a29c1b7e2041538214ac370",
         "app/src/main/res/drawable-mdpi/images_native_community_icapplicationsubmitted.png": "1be3aef430631bfdb9e123a576019fda",
         "app/src/main/res/drawable-mdpi/images_native_community_pendingalert.png": "ef9d56c194a825dcec3402397830d365",
-        "app/src/main/res/drawable-mdpi/images_native_community_pendingfolder.png": "1d9ec863d37f99cf58b693208110dc48",
+        "app/src/main/res/drawable-mdpi/images_native_community_pendingfolder.png": "1d9ec863d37f99cf5F8b693208110dc48",
         "app/src/main/res/drawable-mdpi/images_native_community_rejectedalert.png": "e82ab0b72075d8add331e77521fe2188",
         "app/src/main/res/drawable-mdpi/images_native_empties_empty_blocked_users.png": "fb531ecb4700e1d5f6a6543110461c95",
         "app/src/main/res/drawable-mdpi/images_native_empties_empty_channel_no_text_channels_dark.png": "cfbe9e25a9d08e04b6008742fb1104ef",

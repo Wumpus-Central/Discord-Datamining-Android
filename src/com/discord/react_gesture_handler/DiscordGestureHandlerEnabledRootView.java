@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.core.view.C2655k2;
+import androidx.core.view.C1479k2;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener;
 import com.discord.theme.ThemeManager;
 import com.swmansion.gesturehandler.react.RNGestureHandlerRootView;
@@ -16,7 +16,7 @@ import java.util.WeakHashMap;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0000\u0018\u0000 \u000e2\u00020\u0001:\u0001\u000eB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\bH\u0016J\b\u0010\r\u001a\u00020\tH\u0014R&\u0010\u0005\u001a\u001a\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t0\u0007\u0012\u0004\u0012\u00020\n0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, m15073d2 = {"Lcom/discord/react_gesture_handler/DiscordGestureHandlerEnabledRootView;", "Lcom/swmansion/gesturehandler/react/RNGestureHandlerRootView;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "supplementalMotionEventReceivedCallbacks", "", "Lkotlin/Function1;", "Landroid/view/MotionEvent;", "", "", "dispatchTouchEvent", "ev", "onAttachedToWindow", "Companion", "react_gesture_handler_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -43,7 +43,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
             if (!(view instanceof ViewGroup)) {
                 return null;
             }
-            for (View view2 : C2655k2.m37222a((ViewGroup) view)) {
+            for (View view2 : C1479k2.m37222a((ViewGroup) view)) {
                 DiscordGestureHandlerEnabledRootView find = DiscordGestureHandlerEnabledRootView.Companion.find(view2);
                 if (find != null) {
                     return find;
@@ -100,7 +100,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
                 java.util.WeakHashMap r1 = com.discord.react_gesture_handler.DiscordGestureHandlerEnabledRootView.access$getGestureHandlersToRootView$cp()
                 r1.remove(r4)
                 java.lang.String r4 = "rootView"
-                kotlin.jvm.internal.C9971q.m14634f(r0, r4)
+                kotlin.jvm.internal.C9677q.m14634f(r0, r4)
                 com.discord.react_gesture_handler.DiscordGestureHandlerEnabledRootView r2 = r3.find(r0)
                 if (r2 == 0) goto L_0x005c
                 java.util.WeakHashMap r4 = com.discord.react_gesture_handler.DiscordGestureHandlerEnabledRootView.access$getGestureHandlersToRootView$cp()
@@ -116,14 +116,14 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
         /* JADX INFO: Access modifiers changed from: private */
         public final void initNestedScrollOnTouchListeners() {
             NestedScrollOnTouchListener.Companion companion = NestedScrollOnTouchListener.Companion;
-            companion.setOnAddNativeEventListener(C4660x1eafcca1.INSTANCE);
-            companion.setOnRemoveNativeEventListener(C4661x1eafcca2.INSTANCE);
+            companion.setOnAddNativeEventListener(C3614x1eafcca1.INSTANCE);
+            companion.setOnRemoveNativeEventListener(C3615x1eafcca2.INSTANCE);
         }
 
         public final DiscordGestureHandlerEnabledRootView get$react_gesture_handler_release(View view) {
-            C9971q.m14633g(view, "view");
+            C9677q.m14633g(view, "view");
             DiscordGestureHandlerEnabledRootView nullable = getNullable(view);
-            C9971q.m14636d(nullable);
+            C9677q.m14636d(nullable);
             return nullable;
         }
     }
@@ -137,12 +137,12 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DiscordGestureHandlerEnabledRootView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     @Override // com.swmansion.gesturehandler.react.RNGestureHandlerRootView, android.view.ViewGroup, android.view.View
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        C9971q.m14633g(ev, "ev");
+        C9677q.m14633g(ev, "ev");
         Iterator<Map.Entry<Function1<MotionEvent, Unit>, Boolean>> it = this.supplementalMotionEventReceivedCallbacks.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry<Function1<MotionEvent, Unit>, Boolean> next = it.next();
@@ -166,9 +166,9 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
         super.onAttachedToWindow();
         ThemeManager themeManager = ThemeManager.INSTANCE;
         themeManager.updateSystemUi(this);
-        if (C9971q.m14638b(Companion.getNullable(this), this)) {
+        if (C9677q.m14638b(Companion.getNullable(this), this)) {
             Context context = getContext();
-            C9971q.m14634f(context, "context");
+            C9677q.m14634f(context, "context");
             themeManager.updateWindowBackground(context, false);
         }
     }

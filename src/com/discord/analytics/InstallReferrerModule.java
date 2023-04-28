@@ -7,11 +7,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Ref$ObjectRef;
-import kotlinx.coroutines.C10135k0;
-import kotlinx.coroutines.C10139l;
+import kotlinx.coroutines.C9846k0;
+import kotlinx.coroutines.C9851l;
 
 @Metadata(m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0018\u0000 \u000b2\u00020\u0001:\u0001\u000bB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007J\b\u0010\t\u001a\u00020\nH\u0016¨\u0006\f"}, m15073d2 = {"Lcom/discord/analytics/InstallReferrerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "context", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "get", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getName", "", "Companion", "analytics_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes.dex */
@@ -33,22 +33,22 @@ public final class InstallReferrerModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public InstallReferrerModule(ReactApplicationContext context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: Type inference failed for: r0v3, types: [T, java.lang.String] */
     @ReactMethod
     public final void get(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         SharedPreferences sharedPreferences = getReactApplicationContext().getSharedPreferences("InstallReferrer", 0);
         Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f22069k = sharedPreferences.getString("referrer", null);
+        ref$ObjectRef.f25807k = sharedPreferences.getString("referrer", null);
         int i = sharedPreferences.getInt("attempts", 0);
-        Object obj = ref$ObjectRef.f22069k;
+        Object obj = ref$ObjectRef.f25807k;
         if (obj != null) {
             promise.resolve(obj);
         } else if (i < 10) {
-            C10139l.m14174d(C10135k0.m14186b(), null, null, new InstallReferrerModule$get$1(new Ref$ObjectRef(), this, ref$ObjectRef, sharedPreferences, promise, i, null), 3, null);
+            C9851l.m14174d(C9846k0.m14186b(), null, null, new InstallReferrerModule$get$1(new Ref$ObjectRef(), this, ref$ObjectRef, sharedPreferences, promise, i, null), 3, null);
         } else {
             promise.resolve(null);
         }

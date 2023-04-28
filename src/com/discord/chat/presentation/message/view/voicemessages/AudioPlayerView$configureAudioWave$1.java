@@ -5,14 +5,14 @@ import com.discord.media_player.MediaPlayer;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 import kotlinx.coroutines.Job;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "progressEvent", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveView$ProgressEvent;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-public final class AudioPlayerView$configureAudioWave$1 extends AbstractC9973s implements Function1<AudioWaveView.ProgressEvent, Unit> {
+public final class AudioPlayerView$configureAudioWave$1 extends AbstractC9679s implements Function1<AudioWaveView.ProgressEvent, Unit> {
     final /* synthetic */ AudioPlayerViewState $state;
     final /* synthetic */ AudioPlayerView this$0;
 
@@ -27,7 +27,7 @@ public final class AudioPlayerView$configureAudioWave$1 extends AbstractC9973s i
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(AudioWaveView.ProgressEvent progressEvent) {
         invoke2(progressEvent);
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -37,10 +37,10 @@ public final class AudioPlayerView$configureAudioWave$1 extends AbstractC9973s i
         long j2;
         long j3;
         boolean z;
-        C9971q.m14633g(progressEvent, "progressEvent");
+        C9677q.m14633g(progressEvent, "progressEvent");
         job = this.this$0.resetJob;
         if (job != null) {
-            Job.C9996a.m14571a(job, null, 1, null);
+            Job.C9704a.m14571a(job, null, 1, null);
         }
         MediaPlayer player$chat_release = this.$state.getPlayer$chat_release();
         int eventAction = progressEvent.getEventAction();

@@ -1,7 +1,7 @@
 package com.discord.media_player;
 
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u001a\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001BC\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fJ\u000b\u0010\u001b\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001f\u001a\u00020\tHÆ\u0003J\u0010\u0010 \u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u0014JP\u0010!\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000bHÆ\u0001¢\u0006\u0002\u0010\"J\u0013\u0010#\u001a\u00020\t2\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020&HÖ\u0001J\t\u0010'\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0011\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0011\u0010\u0012\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u000eR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0010R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001a¨\u0006("}, m15073d2 = {"Lcom/discord/media_player/MediaSource;", "", "sourceUrl", "", "previewUrl", "featureTag", "type", "Lcom/discord/media_player/MediaType;", "shouldAutoPlay", "", "portal", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/media_player/MediaType;ZLjava/lang/Double;)V", "getFeatureTag", "()Ljava/lang/String;", "isGifv", "()Z", "isValid", "isVideo", "getPortal", "()Ljava/lang/Double;", "Ljava/lang/Double;", "getPreviewUrl", "getShouldAutoPlay", "getSourceUrl", "getType", "()Lcom/discord/media_player/MediaType;", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/media_player/MediaType;ZLjava/lang/Double;)Lcom/discord/media_player/MediaSource;", "equals", "other", "hashCode", "", "toString", "media_player_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -67,9 +67,9 @@ public final class MediaSource {
         /*
             r1 = this;
             java.lang.String r0 = "featureTag"
-            kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r4, r0)
             java.lang.String r0 = "type"
-            kotlin.jvm.internal.C9971q.m14633g(r5, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r5, r0)
             r1.<init>()
             r1.sourceUrl = r2
             r1.previewUrl = r3
@@ -112,7 +112,7 @@ public final class MediaSource {
             throw r2
         L_0x0047:
             if (r2 == 0) goto L_0x0052
-            boolean r2 = p326ri.C12707l.m5767w(r2)
+            boolean r2 = p327ri.C12576l.m5767w(r2)
             if (r2 == 0) goto L_0x0050
             goto L_0x0052
         L_0x0050:
@@ -125,7 +125,7 @@ public final class MediaSource {
             goto L_0x0064
         L_0x0056:
             if (r3 == 0) goto L_0x0061
-            boolean r2 = p326ri.C12707l.m5767w(r3)
+            boolean r2 = p327ri.C12576l.m5767w(r3)
             if (r2 == 0) goto L_0x005f
             goto L_0x0061
         L_0x005f:
@@ -191,8 +191,8 @@ public final class MediaSource {
     }
 
     public final MediaSource copy(String str, String str2, String featureTag, MediaType type, boolean z, Double d) {
-        C9971q.m14633g(featureTag, "featureTag");
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(featureTag, "featureTag");
+        C9677q.m14633g(type, "type");
         return new MediaSource(str, str2, featureTag, type, z, d);
     }
 
@@ -204,7 +204,7 @@ public final class MediaSource {
             return false;
         }
         MediaSource mediaSource = (MediaSource) obj;
-        return C9971q.m14638b(this.sourceUrl, mediaSource.sourceUrl) && C9971q.m14638b(this.previewUrl, mediaSource.previewUrl) && C9971q.m14638b(this.featureTag, mediaSource.featureTag) && this.type == mediaSource.type && this.shouldAutoPlay == mediaSource.shouldAutoPlay && C9971q.m14638b(this.portal, mediaSource.portal);
+        return C9677q.m14638b(this.sourceUrl, mediaSource.sourceUrl) && C9677q.m14638b(this.previewUrl, mediaSource.previewUrl) && C9677q.m14638b(this.featureTag, mediaSource.featureTag) && this.type == mediaSource.type && this.shouldAutoPlay == mediaSource.shouldAutoPlay && C9677q.m14638b(this.portal, mediaSource.portal);
     }
 
     public final String getFeatureTag() {

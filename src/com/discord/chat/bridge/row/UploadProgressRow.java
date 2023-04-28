@@ -1,19 +1,19 @@
 package com.discord.chat.bridge.row;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.discord.chat.bridge.ChangeType;
 import com.discord.chat.bridge.Message;
 import com.discord.chat.bridge.Message$$serializer;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 *2\u00020\u0001:\u0002)*B?\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rB%\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n¢\u0006\u0002\u0010\u000eJ\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0006HÆ\u0003J\t\u0010\u0019\u001a\u00020\bHÆ\u0003J\t\u0010\u001a\u001a\u00020\nHÆ\u0003J1\u0010\u001b\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\nHÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\t\u0010!\u001a\u00020\nHÖ\u0001J!\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00002\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(HÇ\u0001R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006+"}, m15073d2 = {"Lcom/discord/chat/bridge/row/UploadProgressRow;", "Lcom/discord/chat/bridge/row/Row;", "seen1", "", "index", "changeType", "Lcom/discord/chat/bridge/ChangeType;", "message", "Lcom/discord/chat/bridge/Message;", "fileId", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILcom/discord/chat/bridge/ChangeType;Lcom/discord/chat/bridge/Message;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILcom/discord/chat/bridge/ChangeType;Lcom/discord/chat/bridge/Message;Ljava/lang/String;)V", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getFileId", "()Ljava/lang/String;", "getIndex", "()I", "getMessage", "()Lcom/discord/chat/bridge/Message;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class UploadProgressRow extends Row {
@@ -42,7 +42,7 @@ public final class UploadProgressRow extends Row {
     public /* synthetic */ UploadProgressRow(int i, int i2, ChangeType changeType, Message message, String str, SerializationConstructorMarker serializationConstructorMarker) {
         super(null);
         if (15 != (i & 15)) {
-            C3681n1.m33818b(i, 15, UploadProgressRow$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 15, UploadProgressRow$$serializer.INSTANCE.getDescriptor());
         }
         this.index = i2;
         this.changeType = changeType;
@@ -67,9 +67,9 @@ public final class UploadProgressRow extends Row {
     }
 
     public static final void write$Self(UploadProgressRow self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13866x(serialDesc, 0, self.getIndex());
         output.mo13870t(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
         output.mo13870t(serialDesc, 2, Message$$serializer.INSTANCE, self.message);
@@ -93,9 +93,9 @@ public final class UploadProgressRow extends Row {
     }
 
     public final UploadProgressRow copy(int i, ChangeType changeType, Message message, String fileId) {
-        C9971q.m14633g(changeType, "changeType");
-        C9971q.m14633g(message, "message");
-        C9971q.m14633g(fileId, "fileId");
+        C9677q.m14633g(changeType, "changeType");
+        C9677q.m14633g(message, "message");
+        C9677q.m14633g(fileId, "fileId");
         return new UploadProgressRow(i, changeType, message, fileId);
     }
 
@@ -107,7 +107,7 @@ public final class UploadProgressRow extends Row {
             return false;
         }
         UploadProgressRow uploadProgressRow = (UploadProgressRow) obj;
-        return getIndex() == uploadProgressRow.getIndex() && getChangeType() == uploadProgressRow.getChangeType() && C9971q.m14638b(this.message, uploadProgressRow.message) && C9971q.m14638b(this.fileId, uploadProgressRow.fileId);
+        return getIndex() == uploadProgressRow.getIndex() && getChangeType() == uploadProgressRow.getChangeType() && C9677q.m14638b(this.message, uploadProgressRow.message) && C9677q.m14638b(this.fileId, uploadProgressRow.fileId);
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -143,9 +143,9 @@ public final class UploadProgressRow extends Row {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public UploadProgressRow(int i, ChangeType changeType, Message message, String fileId) {
         super(null);
-        C9971q.m14633g(changeType, "changeType");
-        C9971q.m14633g(message, "message");
-        C9971q.m14633g(fileId, "fileId");
+        C9677q.m14633g(changeType, "changeType");
+        C9677q.m14633g(message, "message");
+        C9677q.m14633g(fileId, "fileId");
         this.index = i;
         this.changeType = changeType;
         this.message = message;

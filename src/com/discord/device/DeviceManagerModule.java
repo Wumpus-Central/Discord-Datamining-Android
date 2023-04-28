@@ -7,10 +7,10 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
-import p267of.C11289v;
+import nf.C10853x;
+import p268of.C11053v;
 
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010%\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u000b2\u00020\u0001:\u0001\u000bB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u001e\u0010\u0007\u001a\u0018\u0012\u0004\u0012\u00020\u0006\u0012\u000e\b\u0001\u0012\n \n*\u0004\u0018\u00010\t0\t0\bH\u0014R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m15073d2 = {"Lcom/discord/device/DeviceManagerModule;", "Lcom/discord/codegen/NativeDeviceManagerSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "getTypedExportedConstants", "", "", "kotlin.jvm.PlatformType", "Companion", "device_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -45,7 +45,7 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new DeviceManagerModule(reactContext);
         }
     }
@@ -53,7 +53,7 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeviceManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         this.reactContext = reactContext;
     }
 
@@ -65,7 +65,7 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
     @Override // com.discord.codegen.NativeDeviceManagerSpec
     protected Map<String, ? extends Object> getTypedExportedConstants() {
         Map<String, ? extends Object> l;
-        l = C11289v.m10247l(C11098x.m10921a("systemVersion", String.valueOf(Build.VERSION.SDK_INT)), C11098x.m10921a("device", Build.DEVICE), C11098x.m10921a("deviceModel", Build.MODEL), C11098x.m10921a("deviceBrand", Build.BRAND), C11098x.m10921a("deviceProduct", Build.PRODUCT), C11098x.m10921a("deviceManufacturer", Build.MANUFACTURER), C11098x.m10921a("isTablet", Boolean.valueOf(Companion.isTablet$default(Companion, this.reactContext, 0, 1, null))), C11098x.m10921a("smallestScreenWidth", Integer.valueOf(this.reactContext.getResources().getConfiguration().smallestScreenWidthDp)));
+        l = C11053v.m10247l(C10853x.m10921a("systemVersion", String.valueOf(Build.VERSION.SDK_INT)), C10853x.m10921a("device", Build.DEVICE), C10853x.m10921a("deviceModel", Build.MODEL), C10853x.m10921a("deviceBrand", Build.BRAND), C10853x.m10921a("deviceProduct", Build.PRODUCT), C10853x.m10921a("deviceManufacturer", Build.MANUFACTURER), C10853x.m10921a("isTablet", Boolean.valueOf(Companion.isTablet$default(Companion, this.reactContext, 0, 1, null))), C10853x.m10921a("smallestScreenWidth", Integer.valueOf(this.reactContext.getResources().getConfiguration().smallestScreenWidthDp)));
         return l;
     }
 }

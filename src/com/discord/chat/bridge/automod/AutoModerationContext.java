@@ -1,18 +1,18 @@
 package com.discord.chat.bridge.automod;
 
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 72\u00020\u0001:\u000267Bs\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0002\u0010\u0012B]\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\r\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0013J\t\u0010 \u001a\u00020\u0005HÆ\u0003J\t\u0010!\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010$\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\t\u0010&\u001a\u00020\u0005HÆ\u0003J\t\u0010'\u001a\u00020\rHÆ\u0003J\u000b\u0010(\u001a\u0004\u0018\u00010\u000fHÆ\u0003Jk\u0010)\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000fHÆ\u0001J\u0013\u0010*\u001a\u00020+2\b\u0010,\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010-\u001a\u00020\u0003HÖ\u0001J\t\u0010.\u001a\u00020\u0005HÖ\u0001J!\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\u00002\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u000205HÇ\u0001R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0015R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0015R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0015R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0015¨\u00068"}, m15073d2 = {"Lcom/discord/chat/bridge/automod/AutoModerationContext;", "", "seen1", "", "headerText", "", "headerBadgeText", "ruleDisplayText", "keywordDisplayText", "actionsIconURL", "actionsText", "feedbackText", "message", "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "notification", "Lcom/discord/chat/bridge/automod/AutoModerationNotification;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;Lcom/discord/chat/bridge/automod/AutoModerationNotification;)V", "getActionsIconURL", "()Ljava/lang/String;", "getActionsText", "getFeedbackText", "getHeaderBadgeText", "getHeaderText", "getKeywordDisplayText", "getMessage", "()Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "getNotification", "()Lcom/discord/chat/bridge/automod/AutoModerationNotification;", "getRuleDisplayText", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class AutoModerationContext {
@@ -44,7 +44,7 @@ public final class AutoModerationContext {
 
     public /* synthetic */ AutoModerationContext(int i, String str, String str2, String str3, String str4, String str5, String str6, String str7, FlaggedMessageEmbed flaggedMessageEmbed, AutoModerationNotification autoModerationNotification, SerializationConstructorMarker serializationConstructorMarker) {
         if (227 != (i & 227)) {
-            C3681n1.m33818b(i, 227, AutoModerationContext$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 227, AutoModerationContext$$serializer.INSTANCE.getDescriptor());
         }
         this.headerText = str;
         this.headerBadgeText = str2;
@@ -77,9 +77,9 @@ public final class AutoModerationContext {
         boolean z;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z4 = false;
         output.mo13864z(serialDesc, 0, self.headerText);
         output.mo13864z(serialDesc, 1, self.headerBadgeText);
@@ -89,7 +89,7 @@ public final class AutoModerationContext {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 2, C3622a2.f5917a, self.ruleDisplayText);
+            output.mo13874p(serialDesc, 2, C2500a2.f6719a, self.ruleDisplayText);
         }
         if (!output.mo13893A(serialDesc, 3) && self.keywordDisplayText == null) {
             z2 = false;
@@ -97,7 +97,7 @@ public final class AutoModerationContext {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 3, C3622a2.f5917a, self.keywordDisplayText);
+            output.mo13874p(serialDesc, 3, C2500a2.f6719a, self.keywordDisplayText);
         }
         if (!output.mo13893A(serialDesc, 4) && self.actionsIconURL == null) {
             z3 = false;
@@ -105,7 +105,7 @@ public final class AutoModerationContext {
             z3 = true;
         }
         if (z3) {
-            output.mo13874p(serialDesc, 4, C3622a2.f5917a, self.actionsIconURL);
+            output.mo13874p(serialDesc, 4, C2500a2.f6719a, self.actionsIconURL);
         }
         output.mo13864z(serialDesc, 5, self.actionsText);
         output.mo13864z(serialDesc, 6, self.feedbackText);
@@ -155,11 +155,11 @@ public final class AutoModerationContext {
     }
 
     public final AutoModerationContext copy(String headerText, String headerBadgeText, String str, String str2, String str3, String actionsText, String feedbackText, FlaggedMessageEmbed message, AutoModerationNotification autoModerationNotification) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(headerBadgeText, "headerBadgeText");
-        C9971q.m14633g(actionsText, "actionsText");
-        C9971q.m14633g(feedbackText, "feedbackText");
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(headerBadgeText, "headerBadgeText");
+        C9677q.m14633g(actionsText, "actionsText");
+        C9677q.m14633g(feedbackText, "feedbackText");
+        C9677q.m14633g(message, "message");
         return new AutoModerationContext(headerText, headerBadgeText, str, str2, str3, actionsText, feedbackText, message, autoModerationNotification);
     }
 
@@ -171,7 +171,7 @@ public final class AutoModerationContext {
             return false;
         }
         AutoModerationContext autoModerationContext = (AutoModerationContext) obj;
-        return C9971q.m14638b(this.headerText, autoModerationContext.headerText) && C9971q.m14638b(this.headerBadgeText, autoModerationContext.headerBadgeText) && C9971q.m14638b(this.ruleDisplayText, autoModerationContext.ruleDisplayText) && C9971q.m14638b(this.keywordDisplayText, autoModerationContext.keywordDisplayText) && C9971q.m14638b(this.actionsIconURL, autoModerationContext.actionsIconURL) && C9971q.m14638b(this.actionsText, autoModerationContext.actionsText) && C9971q.m14638b(this.feedbackText, autoModerationContext.feedbackText) && C9971q.m14638b(this.message, autoModerationContext.message) && C9971q.m14638b(this.notification, autoModerationContext.notification);
+        return C9677q.m14638b(this.headerText, autoModerationContext.headerText) && C9677q.m14638b(this.headerBadgeText, autoModerationContext.headerBadgeText) && C9677q.m14638b(this.ruleDisplayText, autoModerationContext.ruleDisplayText) && C9677q.m14638b(this.keywordDisplayText, autoModerationContext.keywordDisplayText) && C9677q.m14638b(this.actionsIconURL, autoModerationContext.actionsIconURL) && C9677q.m14638b(this.actionsText, autoModerationContext.actionsText) && C9677q.m14638b(this.feedbackText, autoModerationContext.feedbackText) && C9677q.m14638b(this.message, autoModerationContext.message) && C9677q.m14638b(this.notification, autoModerationContext.notification);
     }
 
     public final String getActionsIconURL() {
@@ -240,11 +240,11 @@ public final class AutoModerationContext {
     }
 
     public AutoModerationContext(String headerText, String headerBadgeText, String str, String str2, String str3, String actionsText, String feedbackText, FlaggedMessageEmbed message, AutoModerationNotification autoModerationNotification) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(headerBadgeText, "headerBadgeText");
-        C9971q.m14633g(actionsText, "actionsText");
-        C9971q.m14633g(feedbackText, "feedbackText");
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(headerBadgeText, "headerBadgeText");
+        C9677q.m14633g(actionsText, "actionsText");
+        C9677q.m14633g(feedbackText, "feedbackText");
+        C9677q.m14633g(message, "message");
         this.headerText = headerText;
         this.headerBadgeText = headerBadgeText;
         this.ruleDisplayText = str;

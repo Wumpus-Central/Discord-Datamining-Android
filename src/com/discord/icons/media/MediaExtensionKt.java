@@ -3,8 +3,8 @@ package com.discord.icons.media;
 import android.os.Build;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9906j;
-import p326ri.C12718u;
+import kotlin.collections.C9610j;
+import p327ri.C12587u;
 
 @Metadata(m15074d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\u001a\u001c\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0001H\u0000\u001a\u0012\u0010\u0007\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, m15073d2 = {"ANIMATED_IMAGE_EXTENSION", "", "STATIC_IMAGE_EXTENSION", "getMediaExtension", "allowAnimation", "", "imageHash", "isImageHashAnimated", "icons_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -15,7 +15,7 @@ public final class MediaExtensionKt {
     static {
         List l;
         String str;
-        l = C9906j.m14817l(28, 29);
+        l = C9610j.m14817l(28, 29);
         if (l.contains(Integer.valueOf(Build.VERSION.SDK_INT))) {
             str = "png";
         } else {
@@ -43,7 +43,7 @@ public final class MediaExtensionKt {
         if (str == null) {
             return true;
         }
-        H = C12718u.m5736H(str, "a_", false, 2, null);
+        H = C12587u.m5736H(str, "a_", false, 2, null);
         return H;
     }
 }

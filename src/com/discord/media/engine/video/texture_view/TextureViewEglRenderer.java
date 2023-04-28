@@ -13,8 +13,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9962k0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9667k0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.webrtc.RendererCommon;
 import org.webrtc.ThreadUtils;
@@ -46,9 +46,9 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
         /* JADX INFO: Access modifiers changed from: private */
         public final String toNiceString(float f) {
-            C9962k0 k0Var = C9962k0.f22091a;
+            C9667k0 k0Var = C9667k0.f25829a;
             String format = String.format(Locale.getDefault(), "%.3f", Arrays.copyOf(new Object[]{Float.valueOf(f)}, 1));
-            C9971q.m14634f(format, "format(locale, format, *args)");
+            C9677q.m14634f(format, "format(locale, format, *args)");
             return format;
         }
     }
@@ -56,7 +56,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public TextureViewEglRenderer(String name) {
         super(name);
-        C9971q.m14633g(name, "name");
+        C9677q.m14633g(name, "name");
     }
 
     private final void debugOnFrame() {
@@ -87,12 +87,12 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                 this.frameRotation = videoFrame.getRotation();
             }
-            Unit unit = Unit.f22042a;
+            Unit unit = Unit.f25780a;
         }
     }
 
     public final void initialize(RendererCommon.RendererEvents rendererEvents) {
-        C9971q.m14633g(rendererEvents, "rendererEvents");
+        C9677q.m14633g(rendererEvents, "rendererEvents");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.rendererEvents = rendererEvents;
             synchronized (this.layoutLock) {
@@ -100,7 +100,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f22042a;
+                Unit unit = Unit.f25780a;
             }
             init();
             setErrorCallback(this);
@@ -112,7 +112,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override // com.discord.media.engine.video.egl_renderer.EglRenderer, org.webrtc.VideoSink
     public void onFrame(VideoFrame frame) {
-        C9971q.m14633g(frame, "frame");
+        C9677q.m14633g(frame, "frame");
         updateFrameDimensionsAndReportEvents(frame);
         super.onFrame(frame);
     }
@@ -124,7 +124,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override // android.view.TextureView.SurfaceTextureListener
     public void onSurfaceTextureAvailable(SurfaceTexture surface, int i, int i2) {
-        C9971q.m14633g(surface, "surface");
+        C9677q.m14633g(surface, "surface");
         if (ThreadUtilsKt.isOnMainThread()) {
             Log log = Log.INSTANCE;
             String name = getName();
@@ -139,7 +139,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override // android.view.TextureView.SurfaceTextureListener
     public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
-        C9971q.m14633g(surface, "surface");
+        C9677q.m14633g(surface, "surface");
         if (ThreadUtilsKt.isOnMainThread()) {
             long currentTimeMillis = System.currentTimeMillis();
             CountDownLatch countDownLatch = new CountDownLatch(1);
@@ -158,11 +158,11 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
     @Override // android.view.TextureView.SurfaceTextureListener
     public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int i, int i2) {
-        C9971q.m14633g(surface, "surface");
+        C9677q.m14633g(surface, "surface");
     }
 
     @Override // android.view.TextureView.SurfaceTextureListener
     public void onSurfaceTextureUpdated(SurfaceTexture surface) {
-        C9971q.m14633g(surface, "surface");
+        C9677q.m14633g(surface, "surface");
     }
 }

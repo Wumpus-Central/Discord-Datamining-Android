@@ -3,25 +3,25 @@ package com.discord.notifications.renderer;
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.net.Uri;
-import androidx.core.app.C2283p0;
+import androidx.core.app.C1096p0;
 import androidx.core.app.NotificationChannelCompat;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.collections.C9907k;
+import kotlin.collections.C9611k;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
-import p267of.C11288u;
+import nf.C10853x;
+import p268of.C11052u;
 
 @Metadata(m15074d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001:\u0002\u001f B\t\b\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J*\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002JT\u0010\u0015\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u001c\b\u0002\u0010\u0014\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0002J\"\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J\u001a\u0010\u0019\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J6\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007J\n\u0010\u001c\u001a\u00020\b*\u00020\u001b¨\u0006!"}, m15073d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getLegacyNotificationChannel", "", "", "localizedGroupNames", "", "Landroidx/core/app/p0;", "createNotificationChannelGroups", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "legacyChannel", "builder", "configureCallChannel", "configureMediaChannel", "init", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "<init>", "()V", "Category", "ChannelGroup", "notification_renderer_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes3.dex */
@@ -65,7 +65,7 @@ public final class NotificationChannels {
         private final ChannelGroup group;
 
         /* renamed from: id */
-        private final String f7503id;
+        private final String f9117id;
         private final int importance;
         private final String legacyId;
 
@@ -140,7 +140,7 @@ public final class NotificationChannels {
             }
 
             public final String defaultLabel(Category category) {
-                C9971q.m14633g(category, "category");
+                C9677q.m14633g(category, "category");
                 switch (WhenMappings.$EnumSwitchMapping$0[category.ordinal()]) {
                     case 1:
                         return "Incoming calls";
@@ -286,7 +286,7 @@ public final class NotificationChannels {
         }
 
         Category(String str, int i, ChannelGroup channelGroup, String str2) {
-            this.f7503id = str;
+            this.f9117id = str;
             this.importance = i;
             this.group = channelGroup;
             this.legacyId = str2;
@@ -297,7 +297,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7503id;
+            return this.f9117id;
         }
 
         public final int getImportance() {
@@ -326,7 +326,7 @@ public final class NotificationChannels {
         private final String groupId;
 
         /* renamed from: id */
-        private final String f7504id;
+        private final String f9118id;
 
         @Metadata(m15074d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, m15073d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup$Companion;", "", "()V", "defaultLabel", "", "id", "notification_renderer_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
         /* loaded from: classes3.dex */
@@ -339,7 +339,7 @@ public final class NotificationChannels {
             }
 
             public final String defaultLabel(String id2) {
-                C9971q.m14633g(id2, "id");
+                C9677q.m14633g(id2, "id");
                 int hashCode = id2.hashCode();
                 if (hashCode != -905826493) {
                     if (hashCode != -897050771) {
@@ -357,7 +357,7 @@ public final class NotificationChannels {
         }
 
         ChannelGroup(String str, String str2) {
-            this.f7504id = str;
+            this.f9118id = str;
             this.groupId = str2;
         }
 
@@ -366,7 +366,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7504id;
+            return this.f9118id;
         }
     }
 
@@ -386,7 +386,7 @@ public final class NotificationChannels {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("android.resource://");
         String packageName = context.getPackageName();
-        int i = C4605R.raw.call_ringing;
+        int i = C3555R.raw.call_ringing;
         sb2.append(packageName + "/" + i);
         g.m38626h(Uri.parse(sb2.toString()), new AudioAttributes.Builder().setUsage(7).setContentType(2).build());
     }
@@ -419,7 +419,7 @@ public final class NotificationChannels {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final java.util.List<androidx.core.app.C2283p0> createNotificationChannelGroups(android.content.Context r10, java.util.Map<java.lang.String, java.lang.String> r11) {
+    private final java.util.List<androidx.core.app.C1096p0> createNotificationChannelGroups(android.content.Context r10, java.util.Map<java.lang.String, java.lang.String> r11) {
         /*
             r9 = this;
             com.discord.notifications.renderer.NotificationChannels$ChannelGroup[] r0 = com.discord.notifications.renderer.NotificationChannels.ChannelGroup.values()
@@ -439,7 +439,7 @@ public final class NotificationChannels {
             java.lang.Object r6 = r11.get(r6)
             java.lang.CharSequence r6 = (java.lang.CharSequence) r6
             if (r6 == 0) goto L_0x0030
-            boolean r6 = p326ri.C12707l.m5767w(r6)
+            boolean r6 = p327ri.C12576l.m5767w(r6)
             if (r6 == 0) goto L_0x002e
             goto L_0x0030
         L_0x002e:
@@ -530,7 +530,7 @@ public final class NotificationChannels {
             java.lang.CharSequence r5 = (java.lang.CharSequence) r5
             r1 = 1
             if (r5 == 0) goto L_0x0031
-            boolean r5 = p326ri.C12707l.m5767w(r5)
+            boolean r5 = p327ri.C12576l.m5767w(r5)
             if (r5 == 0) goto L_0x002f
             goto L_0x0031
         L_0x002f:
@@ -577,7 +577,7 @@ public final class NotificationChannels {
             androidx.core.app.NotificationChannelCompat$Builder r5 = r5.m38629e(r1)
             androidx.core.app.NotificationChannelCompat$Builder r5 = r5.m38630d(r7)
             java.lang.String r6 = "builder"
-            kotlin.jvm.internal.C9971q.m14634f(r5, r6)
+            kotlin.jvm.internal.C9677q.m14634f(r5, r6)
             r9.invoke(r0, r5)
             androidx.core.app.NotificationChannelCompat r5 = r5.m38633a()
             return r5
@@ -596,7 +596,7 @@ public final class NotificationChannels {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public final String getNotificationChannelId(NotificationData notificationData) {
         Category category;
-        C9971q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(notificationData, "<this>");
         String type = notificationData.getType();
         switch (type.hashCode()) {
             case -1502317553:
@@ -677,11 +677,11 @@ public final class NotificationChannels {
         int d;
         int c;
         boolean z;
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(localizedCategoryNames, "localizedCategoryNames");
-        C9971q.m14633g(localizedGroupNames, "localizedGroupNames");
-        int colorCompat = ColorUtilsKt.getColorCompat(context, C4605R.color.brand);
-        List<C2283p0> createNotificationChannelGroups = createNotificationChannelGroups(context, localizedGroupNames);
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(localizedCategoryNames, "localizedCategoryNames");
+        C9677q.m14633g(localizedGroupNames, "localizedGroupNames");
+        int colorCompat = ColorUtilsKt.getColorCompat(context, C3555R.color.brand);
+        List<C1096p0> createNotificationChannelGroups = createNotificationChannelGroups(context, localizedGroupNames);
         Category[] values = Category.values();
         ArrayList arrayList = new ArrayList();
         for (Category category : values) {
@@ -694,18 +694,18 @@ public final class NotificationChannels {
             NotificationManagerUtilsKt.getNotificationManagerCompat(context).m38428e(arrayList);
         } catch (Exception e) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
-            t = C9907k.m14809t(createNotificationChannelGroups, 10);
-            d = C11288u.m10255d(t);
-            c = C6884j.m23961c(d, 16);
+            t = C9611k.m14809t(createNotificationChannelGroups, 10);
+            d = C11052u.m10255d(t);
+            c = C6322j.m23961c(d, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c);
-            for (C2283p0 p0Var : createNotificationChannelGroups) {
+            for (C1096p0 p0Var : createNotificationChannelGroups) {
                 String valueOf = String.valueOf(p0Var.m38209b());
                 if (NotificationManagerUtilsKt.getNotificationManagerCompat(context).m38422k(p0Var.m38210a()) != null) {
                     z = true;
                 } else {
                     z = false;
                 }
-                Pair a = C11098x.m10921a(valueOf, String.valueOf(z));
+                Pair a = C10853x.m10921a(valueOf, String.valueOf(z));
                 linkedHashMap.put(a.m15065c(), a.m15064d());
             }
             CrashReporting.addBreadcrumb$default(crashReporting, "Failed to create notification group or channel", linkedHashMap, null, 4, null);

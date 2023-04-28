@@ -1,19 +1,19 @@
 package com.discord.media_player;
 
 import android.content.Context;
-import com.brentvatne.exoplayer.C4142b;
+import com.brentvatne.exoplayer.C3031b;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
-import com.google.android.exoplayer2.upstream.cache.C5295b;
-import com.google.android.exoplayer2.upstream.cache.C5297c;
+import com.google.android.exoplayer2.upstream.cache.C4611b;
+import com.google.android.exoplayer2.upstream.cache.C4613c;
 import com.google.android.exoplayer2.upstream.cache.SimpleCache;
 import java.io.File;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p081e9.C6787r;
-import p100f9.C7098j;
-import p131h7.C7933c;
+import p081e9.C6223r;
+import p100f9.C6545j;
+import p131h7.C7411c;
 
 @Metadata(m15074d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 \u00072\u00020\u0001:\u0001\u0007B\u0011\b\u0002\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, m15073d2 = {"Lcom/discord/media_player/CacheDataSourceFactory;", "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;", "defaultDatasourceFactory", "Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$Factory;", "(Lcom/google/android/exoplayer2/upstream/DefaultHttpDataSource$Factory;)V", "createDataSource", "Lcom/google/android/exoplayer2/upstream/DataSource;", "Companion", "media_player_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -36,7 +36,7 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
         }
 
         private final SimpleCache getSimpleCache(Context context) {
-            return new SimpleCache(new File(context.getCacheDir(), CacheDataSourceFactory.CACHE_DIR_NAME), new C7098j(CacheDataSourceFactory.CACHE_MAX_SIZE), new C7933c(context));
+            return new SimpleCache(new File(context.getCacheDir(), CacheDataSourceFactory.CACHE_DIR_NAME), new C6545j(CacheDataSourceFactory.CACHE_MAX_SIZE), new C7411c(context));
         }
 
         public final CacheDataSourceFactory getInstance() {
@@ -44,22 +44,22 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
             if (cacheDataSourceFactory != null) {
                 return cacheDataSourceFactory;
             }
-            C9971q.m14615y("factory");
+            C9677q.m14615y("factory");
             return null;
         }
 
         public final void init(Context context) {
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             CacheDataSourceFactory.cache = getSimpleCache(context);
             CacheDataSourceFactory cacheDataSourceFactory = null;
             CacheDataSourceFactory.factory = new CacheDataSourceFactory(null, 1, null);
             CacheDataSourceFactory cacheDataSourceFactory2 = CacheDataSourceFactory.factory;
             if (cacheDataSourceFactory2 == null) {
-                C9971q.m14615y("factory");
+                C9677q.m14615y("factory");
             } else {
                 cacheDataSourceFactory = cacheDataSourceFactory2;
             }
-            C4142b.m32654f(cacheDataSourceFactory);
+            C3031b.m32654f(cacheDataSourceFactory);
         }
     }
 
@@ -73,20 +73,20 @@ public final class CacheDataSourceFactory implements DataSource.Factory {
         SimpleCache simpleCache2 = cache;
         SimpleCache simpleCache3 = null;
         if (simpleCache2 == null) {
-            C9971q.m14615y("cache");
+            C9677q.m14615y("cache");
             simpleCache = null;
         } else {
             simpleCache = simpleCache2;
         }
         DefaultHttpDataSource a = this.defaultDatasourceFactory.createDataSource();
-        C6787r rVar = new C6787r();
+        C6223r rVar = new C6223r();
         SimpleCache simpleCache4 = cache;
         if (simpleCache4 == null) {
-            C9971q.m14615y("cache");
+            C9677q.m14615y("cache");
         } else {
             simpleCache3 = simpleCache4;
         }
-        return new C5297c(simpleCache, a, rVar, new C5295b(simpleCache3, CACHE_MAX_SIZE), 3, null);
+        return new C4613c(simpleCache, a, rVar, new C4611b(simpleCache3, CACHE_MAX_SIZE), 3, null);
     }
 
     /* synthetic */ CacheDataSourceFactory(DefaultHttpDataSource.Factory factory2, int i, DefaultConstructorMarker defaultConstructorMarker) {

@@ -7,7 +7,7 @@ import com.discord.primitives.MessageId;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\b\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB\u0018\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000¢\u0006\u0002\u0010\u0006J\u0019\u0010\u000b\u001a\u00020\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\f\u0010\bJ\t\u0010\r\u001a\u00020\u0005HÆ\u0003J\u0018\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u000e\b\u0002\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011J*\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u0015J\u0013\u0010\u0016\u001a\u00020\u00172\b\u0010\u0018\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001J\t\u0010\u001b\u001a\u00020\u0005HÖ\u0001R\u001c\u0010\u0002\u001a\u00020\u0003ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\t\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\b\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001d"}, m15073d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "", "identifier", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "label", "", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getIdentifier-Bq9X6Gg", "()Ljava/lang/String;", "Ljava/lang/String;", "getLabel", "component1", "component1-Bq9X6Gg", "component2", "configure", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "onTapSpoiler", "Lkotlin/Function0;", "", "copy", "copy-BDqOPVI", "(Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "equals", "", "other", "hashCode", "", "toString", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -38,16 +38,16 @@ public final class SpoilerAttributes {
         }
 
         public final SpoilerAttributes forAttachment(Attachment attachment, Message message, int i) {
-            C9971q.m14633g(attachment, "attachment");
-            C9971q.m14633g(message, "message");
+            C9677q.m14633g(attachment, "attachment");
+            C9677q.m14633g(message, "message");
             String str = message.m41579getId3Eiw7ao();
             String indexLabel = attachment.type().getIndexLabel();
             return m41683forItemA9xMOlw(attachment, str, indexLabel + i);
         }
 
         public final SpoilerAttributes forEmbed(Embed embed, Message message, int i) {
-            C9971q.m14633g(embed, "embed");
-            C9971q.m14633g(message, "message");
+            C9677q.m14633g(embed, "embed");
+            C9677q.m14633g(message, "message");
             String str = message.m41579getId3Eiw7ao();
             return m41683forItemA9xMOlw(embed, str, "embedIndex" + i);
         }
@@ -92,7 +92,7 @@ public final class SpoilerAttributes {
 
     public final SpoilerConfig configure(Function0<Unit> onTapSpoiler) {
         SpoilerAttributes spoilerAttributes;
-        C9971q.m14633g(onTapSpoiler, "onTapSpoiler");
+        C9677q.m14633g(onTapSpoiler, "onTapSpoiler");
         if (SpoilerManager.INSTANCE.m41693isNotRevealedV2PEE7g(this.identifier)) {
             spoilerAttributes = this;
         } else {
@@ -106,8 +106,8 @@ public final class SpoilerAttributes {
 
     /* renamed from: copy-BDqOPVI  reason: not valid java name */
     public final SpoilerAttributes m41681copyBDqOPVI(String identifier, String label) {
-        C9971q.m14633g(identifier, "identifier");
-        C9971q.m14633g(label, "label");
+        C9677q.m14633g(identifier, "identifier");
+        C9677q.m14633g(label, "label");
         return new SpoilerAttributes(identifier, label, null);
     }
 
@@ -119,7 +119,7 @@ public final class SpoilerAttributes {
             return false;
         }
         SpoilerAttributes spoilerAttributes = (SpoilerAttributes) obj;
-        return SpoilerIdentifier.m41688equalsimpl0(this.identifier, spoilerAttributes.identifier) && C9971q.m14638b(this.label, spoilerAttributes.label);
+        return SpoilerIdentifier.m41688equalsimpl0(this.identifier, spoilerAttributes.identifier) && C9677q.m14638b(this.label, spoilerAttributes.label);
     }
 
     /* renamed from: getIdentifier-Bq9X6Gg  reason: not valid java name */

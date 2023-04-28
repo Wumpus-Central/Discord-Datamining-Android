@@ -6,7 +6,7 @@ import com.discord.chat.presentation.message.view.ThreadEmbedView;
 import com.discord.primitives.MessageId;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J%\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00060\nø\u0001\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\f"}, m15073d2 = {"Lcom/discord/chat/presentation/message/viewholder/ThreadEmbedViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "threadEmbedView", "Lcom/discord/chat/presentation/message/view/ThreadEmbedView;", "(Lcom/discord/chat/presentation/message/view/ThreadEmbedView;)V", "bind", "", "threadItem", "Lcom/discord/chat/presentation/message/messagepart/ThreadEmbedMessageAccessory;", "onTapThreadEmbed", "Lkotlin/Function1;", "Lcom/discord/primitives/MessageId;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -16,14 +16,14 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ThreadEmbedViewHolder(ThreadEmbedView threadEmbedView) {
         super(threadEmbedView, null);
-        C9971q.m14633g(threadEmbedView, "threadEmbedView");
+        C9677q.m14633g(threadEmbedView, "threadEmbedView");
         this.threadEmbedView = threadEmbedView;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1$lambda$0(Function1 onTapThreadEmbed, ThreadEmbedMessageAccessory threadItem, View view) {
-        C9971q.m14633g(onTapThreadEmbed, "$onTapThreadEmbed");
-        C9971q.m14633g(threadItem, "$threadItem");
+        C9677q.m14633g(onTapThreadEmbed, "$onTapThreadEmbed");
+        C9677q.m14633g(threadItem, "$threadItem");
         onTapThreadEmbed.invoke(MessageId.m42115boximpl(threadItem.mo41765getMessageId3Eiw7ao()));
     }
 
@@ -40,9 +40,9 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             r0 = r34
             r1 = r35
             java.lang.String r2 = "threadItem"
-            kotlin.jvm.internal.C9971q.m14633g(r0, r2)
+            kotlin.jvm.internal.C9677q.m14633g(r0, r2)
             java.lang.String r2 = "onTapThreadEmbed"
-            kotlin.jvm.internal.C9971q.m14633g(r1, r2)
+            kotlin.jvm.internal.C9677q.m14633g(r1, r2)
             com.discord.chat.bridge.threads.ThreadEmbed r2 = r34.getThreadEmbed()
             r3 = r33
             com.discord.chat.presentation.message.view.ThreadEmbedView r4 = r3.threadEmbedView
@@ -52,7 +52,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             r4.setLabel(r5)
             java.lang.Boolean r5 = r2.getArchived()
             java.lang.Boolean r6 = java.lang.Boolean.TRUE
-            boolean r5 = kotlin.jvm.internal.C9971q.m14638b(r5, r6)
+            boolean r5 = kotlin.jvm.internal.C9677q.m14638b(r5, r6)
             java.lang.String r7 = r2.getArchivedIconUrl()
             r4.setArchived(r5, r7)
             com.discord.chat.presentation.message.viewholder.t r5 = new com.discord.chat.presentation.message.viewholder.t
@@ -86,7 +86,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             com.discord.chat.bridge.structurabletext.StructurableText r11 = r5.getContent()
             android.content.Context r8 = r4.getContext()
             r12 = r8
-            kotlin.jvm.internal.C9971q.m14634f(r8, r9)
+            kotlin.jvm.internal.C9677q.m14634f(r8, r9)
             java.lang.String r13 = r5.m41579getId3Eiw7ao()
             boolean r14 = com.discord.chat.bridge.MessageKt.shouldAnimateEmoji(r5)
             boolean r15 = r5.getShouldShowRoleDot()
@@ -109,7 +109,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             android.text.TextPaint r8 = r8.getPaint()
             android.graphics.Paint$FontMetrics r8 = r8.getFontMetrics()
             java.lang.String r10 = "binding.threadEmbedMostR…Content.paint.fontMetrics"
-            kotlin.jvm.internal.C9971q.m14634f(r8, r10)
+            kotlin.jvm.internal.C9677q.m14634f(r8, r10)
             float r30 = com.discord.chat.presentation.textutils.TextUtilsKt.getBaselineHeight(r8)
             r31 = 196576(0x2ffe0, float:2.75462E-40)
             r32 = 0
@@ -118,7 +118,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
         L_0x00bd:
             com.facebook.drawee.span.DraweeSpanStringBuilder r10 = new com.facebook.drawee.span.DraweeSpanStringBuilder
             android.content.Context r11 = r4.getContext()
-            kotlin.jvm.internal.C9971q.m14634f(r11, r9)
+            kotlin.jvm.internal.C9677q.m14634f(r11, r9)
             java.lang.CharSequence r11 = com.discord.chat.presentation.message.viewholder.ThreadEmbedViewHolderKt.access$getContentlessPreviewText(r11, r5)
             if (r11 != 0) goto L_0x00cd
             goto L_0x00ce
@@ -129,7 +129,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
         L_0x00d1:
             if (r5 == 0) goto L_0x00df
             android.content.Context r8 = r4.getContext()
-            kotlin.jvm.internal.C9971q.m14634f(r8, r9)
+            kotlin.jvm.internal.C9677q.m14634f(r8, r9)
             java.lang.String r8 = com.discord.chat.bridge.MessageKt.avatarUrl(r5, r8)
             goto L_0x00e0
         L_0x00df:
@@ -139,7 +139,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             java.lang.String r7 = r5.getUsername()
         L_0x00e6:
             java.lang.Boolean r2 = r2.getArchived()
-            boolean r2 = kotlin.jvm.internal.C9971q.m14638b(r2, r6)
+            boolean r2 = kotlin.jvm.internal.C9677q.m14638b(r2, r6)
             if (r2 != 0) goto L_0x00f8
             if (r5 == 0) goto L_0x00f8
             com.discord.chat.bridge.structurabletext.StructurableText r2 = r5.getContent()

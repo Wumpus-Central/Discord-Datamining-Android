@@ -12,20 +12,20 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "it", "Lcom/discord/mobile_voice_overlay/utils/OverlayViewProvider;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
-public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC9973s implements Function1<OverlayViewProvider<OverlayVoiceBubble>, OverlayVoiceBubble> {
+public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC9679s implements Function1<OverlayViewProvider<OverlayVoiceBubble>, OverlayVoiceBubble> {
     final /* synthetic */ MobileVoiceOverlay this$0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "event", "Landroid/view/MotionEvent;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2 */
     /* loaded from: classes5.dex */
-    public static final class AnonymousClass2 extends AbstractC9973s implements Function1<MotionEvent, Unit> {
+    public static final class C35132 extends AbstractC9679s implements Function1<MotionEvent, Unit> {
         final /* synthetic */ OverlayVoiceBubble $voiceBubble;
         final /* synthetic */ MobileVoiceOverlay this$0;
 
@@ -33,13 +33,13 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
         /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2$1 */
         /* loaded from: classes5.dex */
-        public static final class AnonymousClass1 extends AbstractC9973s implements Function1<OverlayTrashWrap, Unit> {
+        public static final class C35141 extends AbstractC9679s implements Function1<OverlayTrashWrap, Unit> {
             final /* synthetic */ MotionEvent $event;
             final /* synthetic */ OverlayVoiceBubble $voiceBubble;
             final /* synthetic */ MobileVoiceOverlay this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            AnonymousClass1(OverlayVoiceBubble overlayVoiceBubble, MotionEvent motionEvent, MobileVoiceOverlay mobileVoiceOverlay) {
+            C35141(OverlayVoiceBubble overlayVoiceBubble, MotionEvent motionEvent, MobileVoiceOverlay mobileVoiceOverlay) {
                 super(1);
                 this.$voiceBubble = overlayVoiceBubble;
                 this.$event = motionEvent;
@@ -49,12 +49,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f22042a;
+                return Unit.f25780a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
             public final void invoke2(OverlayTrashWrap trashWrap) {
-                C9971q.m14633g(trashWrap, "trashWrap");
+                C9677q.m14633g(trashWrap, "trashWrap");
                 if (trashWrap.processMotionEvent(this.$voiceBubble, this.$event)) {
                     this.this$0.onTrashVoiceBubble();
                 }
@@ -62,7 +62,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass2(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
+        C35132(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
             super(1);
             this.this$0 = mobileVoiceOverlay;
             this.$voiceBubble = overlayVoiceBubble;
@@ -71,13 +71,13 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
-            return Unit.f22042a;
+            return Unit.f25780a;
         }
 
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
         public final void invoke2(MotionEvent event) {
-            C9971q.m14633g(event, "event");
-            this.this$0.trashWrapProvider.withView(new AnonymousClass1(this.$voiceBubble, event, this.this$0));
+            C9677q.m14633g(event, "event");
+            this.this$0.trashWrapProvider.withView(new C35141(this.$voiceBubble, event, this.this$0));
         }
     }
 
@@ -85,7 +85,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
     @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "isMoving", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3 */
     /* loaded from: classes5.dex */
-    public static final class AnonymousClass3 extends AbstractC9973s implements Function1<Boolean, Unit> {
+    public static final class C35153 extends AbstractC9679s implements Function1<Boolean, Unit> {
         final /* synthetic */ OverlayVoiceBubble $voiceBubble;
         final /* synthetic */ MobileVoiceOverlay this$0;
 
@@ -93,13 +93,13 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         @Metadata(m15074d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, m15073d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
         /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3$1 */
         /* loaded from: classes5.dex */
-        public static final class AnonymousClass1 extends AbstractC9973s implements Function1<OverlayTrashWrap, Unit> {
+        public static final class C35161 extends AbstractC9679s implements Function1<OverlayTrashWrap, Unit> {
             final /* synthetic */ boolean $isMoving;
             final /* synthetic */ OverlayVoiceBubble $voiceBubble;
             final /* synthetic */ MobileVoiceOverlay this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            AnonymousClass1(boolean z, MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
+            C35161(boolean z, MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
                 super(1);
                 this.$isMoving = z;
                 this.this$0 = mobileVoiceOverlay;
@@ -109,12 +109,12 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f22042a;
+                return Unit.f25780a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
             public final void invoke2(OverlayTrashWrap trashWrap) {
-                C9971q.m14633g(trashWrap, "trashWrap");
+                C9677q.m14633g(trashWrap, "trashWrap");
                 if (this.$isMoving) {
                     trashWrap.show();
                     return;
@@ -125,7 +125,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        AnonymousClass3(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
+        C35153(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
             super(1);
             this.this$0 = mobileVoiceOverlay;
             this.$voiceBubble = overlayVoiceBubble;
@@ -134,11 +134,11 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f22042a;
+            return Unit.f25780a;
         }
 
         public final void invoke(boolean z) {
-            this.this$0.trashWrapProvider.withView(new AnonymousClass1(z, this.this$0, this.$voiceBubble));
+            this.this$0.trashWrapProvider.withView(new C35161(z, this.this$0, this.$voiceBubble));
         }
     }
 
@@ -158,10 +158,10 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
         ViewGroup.MarginLayoutParams marginLayoutParams3;
         int i3;
         int i4;
-        C9971q.m14633g(voiceBubble, "$voiceBubble");
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(voiceBubble, "$voiceBubble");
+        C9677q.m14633g(this$0, "this$0");
         SimpleDraweeView imageView$mobile_voice_overlay_release = voiceBubble.getImageView$mobile_voice_overlay_release();
-        C9971q.m14635e(imageView$mobile_voice_overlay_release, "null cannot be cast to non-null type android.view.View");
+        C9677q.m14635e(imageView$mobile_voice_overlay_release, "null cannot be cast to non-null type android.view.View");
         ViewGroup.LayoutParams layoutParams = imageView$mobile_voice_overlay_release.getLayoutParams();
         ViewGroup.MarginLayoutParams marginLayoutParams4 = null;
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
@@ -212,9 +212,9 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
     public final OverlayVoiceBubble invoke(OverlayViewProvider<OverlayVoiceBubble> it) {
         ReactApplicationContext reactApplicationContext;
         ReactApplicationContext reactApplicationContext2;
-        C9971q.m14633g(it, "it");
+        C9677q.m14633g(it, "it");
         reactApplicationContext = this.this$0.context;
-        int dimensionPixelOffset = reactApplicationContext.getResources().getDimensionPixelOffset(C4573R.dimen.overlay_safe_margin);
+        int dimensionPixelOffset = reactApplicationContext.getResources().getDimensionPixelOffset(C3521R.dimen.overlay_safe_margin);
         reactApplicationContext2 = this.this$0.context;
         final OverlayVoiceBubble overlayVoiceBubble = new OverlayVoiceBubble(reactApplicationContext2);
         int i = -dimensionPixelOffset;
@@ -226,8 +226,8 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends AbstractC997
                 MobileVoiceOverlay$voiceBubbleProvider$1.invoke$lambda$2(OverlayVoiceBubble.this, mobileVoiceOverlay, view);
             }
         });
-        overlayVoiceBubble.setTouchDispatchSideEffectHandler$mobile_voice_overlay_release(new AnonymousClass2(this.this$0, overlayVoiceBubble));
-        overlayVoiceBubble.setOnMovingStateChanged(new AnonymousClass3(this.this$0, overlayVoiceBubble));
+        overlayVoiceBubble.setTouchDispatchSideEffectHandler$mobile_voice_overlay_release(new C35132(this.this$0, overlayVoiceBubble));
+        overlayVoiceBubble.setOnMovingStateChanged(new C35153(this.this$0, overlayVoiceBubble));
         return overlayVoiceBubble;
     }
 }

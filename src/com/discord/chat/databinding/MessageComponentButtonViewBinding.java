@@ -3,14 +3,14 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.botuikit.components.ButtonComponentView;
 import com.discord.progress_dots.ProgressDots;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class MessageComponentButtonViewBinding {
@@ -31,20 +31,20 @@ public final class MessageComponentButtonViewBinding {
     }
 
     public static MessageComponentButtonViewBinding bind(View view) {
-        int i = C4254R.C4256id.button;
-        MaterialButton materialButton = (MaterialButton) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.button;
+        MaterialButton materialButton = (MaterialButton) C13836a.m2313a(view, i);
         if (materialButton != null) {
-            i = C4254R.C4256id.emoji;
-            SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.emoji;
+            SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
             if (simpleDraweeSpanTextView != null) {
-                i = C4254R.C4256id.label;
-                MaterialTextView materialTextView = (MaterialTextView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.label;
+                MaterialTextView materialTextView = (MaterialTextView) C13836a.m2313a(view, i);
                 if (materialTextView != null) {
-                    i = C4254R.C4256id.link_icon;
-                    SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.link_icon;
+                    SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                     if (simpleDraweeView != null) {
-                        i = C4254R.C4256id.loading_dots;
-                        ProgressDots progressDots = (ProgressDots) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.loading_dots;
+                        ProgressDots progressDots = (ProgressDots) C13836a.m2313a(view, i);
                         if (progressDots != null) {
                             return new MessageComponentButtonViewBinding((ButtonComponentView) view, materialButton, simpleDraweeSpanTextView, materialTextView, simpleDraweeView, progressDots);
                         }
@@ -60,7 +60,7 @@ public final class MessageComponentButtonViewBinding {
     }
 
     public static MessageComponentButtonViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
-        View inflate = layoutInflater.inflate(C4254R.layout.message_component_button_view, viewGroup, false);
+        View inflate = layoutInflater.inflate(C3147R.layout.message_component_button_view, viewGroup, false);
         if (z) {
             viewGroup.addView(inflate);
         }

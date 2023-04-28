@@ -6,9 +6,9 @@ import java.util.Map;
 import java.util.Set;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9921w;
+import kotlin.collections.C9625w;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoSink;
 
@@ -27,13 +27,13 @@ public final class AttachedVideoSinks {
 
         public VideoOutputSinks(VideoSink sink) {
             Set<VideoSink> g;
-            C9971q.m14633g(sink, "sink");
-            g = C9921w.m14719g(sink);
+            C9677q.m14633g(sink, "sink");
+            g = C9625w.m14719g(sink);
             this.sinks = g;
         }
 
         public final synchronized boolean add(VideoSink sink) {
-            C9971q.m14633g(sink, "sink");
+            C9677q.m14633g(sink, "sink");
             return this.sinks.add(sink);
         }
 
@@ -42,7 +42,7 @@ public final class AttachedVideoSinks {
         }
 
         public final synchronized boolean onFrame(VideoFrame frame) {
-            C9971q.m14633g(frame, "frame");
+            C9677q.m14633g(frame, "frame");
             for (VideoSink videoSink : this.sinks) {
                 videoSink.onFrame(frame);
             }
@@ -51,7 +51,7 @@ public final class AttachedVideoSinks {
         }
 
         public final synchronized boolean remove(VideoSink sink) {
-            C9971q.m14633g(sink, "sink");
+            C9677q.m14633g(sink, "sink");
             return this.sinks.remove(sink);
         }
     }
@@ -60,9 +60,9 @@ public final class AttachedVideoSinks {
     }
 
     public final synchronized void addSink(MediaEngine mediaEngine, VideoSink sink, String streamId) {
-        C9971q.m14633g(mediaEngine, "mediaEngine");
-        C9971q.m14633g(sink, "sink");
-        C9971q.m14633g(streamId, "streamId");
+        C9677q.m14633g(mediaEngine, "mediaEngine");
+        C9677q.m14633g(sink, "sink");
+        C9677q.m14633g(streamId, "streamId");
         VideoOutputSinks videoOutputSinks = streamOutputMap.get(streamId);
         if (videoOutputSinks != null) {
             videoOutputSinks.add(sink);
@@ -82,9 +82,9 @@ public final class AttachedVideoSinks {
     }
 
     public final synchronized void removeSink(MediaEngine mediaEngine, VideoSink sink, String streamId) {
-        C9971q.m14633g(mediaEngine, "mediaEngine");
-        C9971q.m14633g(sink, "sink");
-        C9971q.m14633g(streamId, "streamId");
+        C9677q.m14633g(mediaEngine, "mediaEngine");
+        C9677q.m14633g(sink, "sink");
+        C9677q.m14633g(streamId, "streamId");
         VideoOutputSinks videoOutputSinks = streamOutputMap.get(streamId);
         if (videoOutputSinks != null) {
             synchronized (videoOutputSinks) {
@@ -93,7 +93,7 @@ public final class AttachedVideoSinks {
                     mediaEngine.setVideoOutputSink$media_engine_release(streamId, null);
                     streamOutputMap.remove(streamId);
                 }
-                Unit unit = Unit.f22042a;
+                Unit unit = Unit.f25780a;
             }
             Function2<? super String, ? super Boolean, Unit> function2 = activeSinksChangeCallback;
             if (function2 != null) {
@@ -103,7 +103,7 @@ public final class AttachedVideoSinks {
     }
 
     public final synchronized void setActiveSinksChangeCallback(Function2<? super String, ? super Boolean, Unit> callback) {
-        C9971q.m14633g(callback, "callback");
+        C9677q.m14633g(callback, "callback");
         activeSinksChangeCallback = callback;
     }
 }

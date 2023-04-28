@@ -10,7 +10,7 @@ import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\u0018\u0000 \u000e2\u00020\u0001:\u0001\u000eB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\b\u0010\u0007\u001a\u00020\u0006H\u0016J\b\u0010\b\u001a\u00020\tH\u0016J\u0010\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\fH\u0016J\b\u0010\r\u001a\u00020\u0006H\u0016¨\u0006\u000f"}, m15073d2 = {"Lcom/discord/keyboard/KeyboardManagerModule;", "Lcom/discord/codegen/NativeKeyboardManagerSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "clearCurrentFocusAndDismissKeyboard", "", "dismissGlobalKeyboard", "getName", "", "onKeyboardChanged", "opened", "", "showGlobalKeyboard", "Companion", "keyboard_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -30,7 +30,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new KeyboardManagerModule(reactContext);
         }
     }
@@ -38,7 +38,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public KeyboardManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -4,9 +4,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.sticker.StickerView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class WelcomeStickerViewBinding {
@@ -21,11 +21,11 @@ public final class WelcomeStickerViewBinding {
     }
 
     public static WelcomeStickerViewBinding bind(View view) {
-        int i = C4254R.C4256id.sticker_view;
-        StickerView stickerView = (StickerView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.sticker_view;
+        StickerView stickerView = (StickerView) C13836a.m2313a(view, i);
         if (stickerView != null) {
-            i = C4254R.C4256id.welcome_reply_text;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.welcome_reply_text;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
                 return new WelcomeStickerViewBinding(view, stickerView, textView);
             }
@@ -35,7 +35,7 @@ public final class WelcomeStickerViewBinding {
 
     public static WelcomeStickerViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.welcome_sticker_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.welcome_sticker_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

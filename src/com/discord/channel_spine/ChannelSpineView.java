@@ -10,14 +10,14 @@ import android.view.View;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.collections.C9906j;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11088q;
+import nf.C10843q;
 
 @Metadata(m15074d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001:\u00012B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\b\u0010#\u001a\u00020\u0018H\u0002J\u0006\u0010$\u001a\u00020%J \u0010&\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010'\u001a\u00020\n2\u0006\u0010(\u001a\u00020)H\u0002J\u0010\u0010*\u001a\u00020%2\u0006\u0010+\u001a\u00020,H\u0014J\u0018\u0010-\u001a\u00020%2\u0006\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\nH\u0014J\b\u00100\u001a\u00020%H\u0002J\u0018\u00101\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010'\u001a\u00020\nH\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\n@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\f\"\u0004\b\u0014\u0010\u000eR\u0014\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0011\u001a\u00020\u0018@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010 \u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\f\"\u0004\b\"\u0010\u000e¨\u00063"}, m15073d2 = {"Lcom/discord/channel_spine/ChannelSpineView;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "arcRect", "Landroid/graphics/RectF;", "horizontalPadding", "", "getHorizontalPadding", "()I", "setHorizontalPadding", "(I)V", "isReplySpline", "", "value", "numRows", "getNumRows", "setNumRows", "paths", "", "Landroid/graphics/Path;", "", "rowHeight", "getRowHeight", "()F", "setRowHeight", "(F)V", "spinePaint", "Landroid/graphics/Paint;", "verticalPadding", "getVerticalPadding", "setVerticalPadding", "arcPercent", "configureAsReplySpline", "", "createSpinePath", "rowIndex", "direction", "Lcom/discord/channel_spine/ChannelSpineView$SpineDirection;", "onDraw", "canvas", "Landroid/graphics/Canvas;", "onMeasure", "widthMeasureSpec", "heightMeasureSpec", "rebuildLayout", "yOfRow", "SpineDirection", "channel_spine_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes.dex */
@@ -71,7 +71,7 @@ public final class ChannelSpineView extends View {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ChannelSpineView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ChannelSpineView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -84,7 +84,7 @@ public final class ChannelSpineView extends View {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAsReplySpline$lambda$1(ChannelSpineView this$0, View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.setRowHeight(SizeUtilsKt.getPxToDp(i4 - i2));
     }
 
@@ -100,7 +100,7 @@ public final class ChannelSpineView extends View {
         } else if (i2 == 2) {
             f2 = yOfRow(f, i + 1);
         } else {
-            throw new C11088q();
+            throw new C10843q();
         }
         if (this.isReplySpline) {
             f3 = SizeUtilsKt.getDpToPx(9);
@@ -128,7 +128,7 @@ public final class ChannelSpineView extends View {
         int i2 = this.numRows;
         float dpToPx = SizeUtilsKt.getDpToPx(this.rowHeight);
         if (i2 == 0 || dpToPx <= 1.0E-4f) {
-            i = C9906j.m14820i();
+            i = C9610j.m14820i();
             this.paths = i;
             return;
         }
@@ -194,7 +194,7 @@ public final class ChannelSpineView extends View {
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
-        C9971q.m14633g(canvas, "canvas");
+        C9677q.m14633g(canvas, "canvas");
         super.onDraw(canvas);
         int save = canvas.save();
         for (Path path : this.paths) {
@@ -226,7 +226,7 @@ public final class ChannelSpineView extends View {
                 float f2 = this.numRows * this.rowHeight;
                 int mode2 = View.MeasureSpec.getMode(i2);
                 if (mode2 == Integer.MIN_VALUE) {
-                    f = C6884j.m23958f(f2, View.MeasureSpec.getSize(i2));
+                    f = C6322j.m23958f(f2, View.MeasureSpec.getSize(i2));
                     number = Float.valueOf(f);
                 } else if (mode2 != 1073741824) {
                     number = Float.valueOf(f2);
@@ -292,23 +292,23 @@ public final class ChannelSpineView extends View {
         super(context, attributeSet);
         int i;
         List<? extends Path> i2;
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         Paint paint = new Paint();
         if (!isInEditMode()) {
             i = ThemeManagerKt.getTheme().getBackgroundAccent();
         } else {
-            i = ColorUtilsKt.getColorCompat(context, C4250R.color.primary_500);
+            i = ColorUtilsKt.getColorCompat(context, C3143R.color.primary_500);
         }
         paint.setColor(i);
         paint.setAntiAlias(true);
         paint.setStrokeCap(Paint.Cap.ROUND);
-        paint.setStrokeWidth(getResources().getDimension(C4250R.dimen.spine_width));
+        paint.setStrokeWidth(getResources().getDimension(C3143R.dimen.spine_width));
         paint.setStyle(Paint.Style.STROKE);
         this.spinePaint = paint;
         this.verticalPadding = SizeUtilsKt.getDpToPx(8);
         this.horizontalPadding = SizeUtilsKt.getDpToPx(0);
         this.arcRect = new RectF();
-        i2 = C9906j.m14820i();
+        i2 = C9610j.m14820i();
         this.paths = i2;
         setWillNotDraw(false);
     }

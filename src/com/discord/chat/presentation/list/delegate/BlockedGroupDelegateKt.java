@@ -10,7 +10,7 @@ import kotlin.Metadata;
 public final class BlockedGroupDelegateKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setupLayout(BlockedMessageGroupView blockedMessageGroupView) {
-        RecyclerView.C3109i iVar = new RecyclerView.C3109i(-1, -2);
+        RecyclerView.C1954i iVar = new RecyclerView.C1954i(-1, -2);
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         iVar.setMargins(dpToPx, 0, dpToPx, 0);
         blockedMessageGroupView.setLayoutParams(iVar);

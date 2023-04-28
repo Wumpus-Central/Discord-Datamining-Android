@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.contentnode;
 
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import com.discord.chat.bridge.MessageType;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
@@ -10,15 +10,15 @@ import com.discord.primitives.MessageId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 82\u00020\u0001:\u000278BX\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010ø\u0001\u0000¢\u0006\u0002\u0010\u0011BP\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000¢\u0006\u0002\u0010\u0012J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0019\u0010\u001f\u001a\u0004\u0018\u00010\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b J\u001b\u0010!\u001a\u0004\u0018\u00010\tHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\"\u0010\u0014J\u0019\u0010#\u001a\u0004\u0018\u00010\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b$J\u000b\u0010%\u001a\u0004\u0018\u00010\fHÆ\u0003J\u0019\u0010&\u001a\u0004\u0018\u00010\u000eHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b'J^\u0010(\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b)\u0010*J\u0013\u0010+\u001a\u00020,2\b\u0010-\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010.\u001a\u00020\u0003HÖ\u0001J\t\u0010/\u001a\u00020\u0005HÖ\u0001J!\u00100\u001a\u0002012\u0006\u00102\u001a\u00020\u00002\u0006\u00103\u001a\u0002042\u0006\u00105\u001a\u000206HÇ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u001c\u0010\n\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001c\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u001e\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001a\u001a\u0004\b\u0019\u0010\u0014R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0016\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u00069"}, m15073d2 = {"Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "", "seen1", "", "action", "", "userId", "Lcom/discord/primitives/UserId;", "messageId", "Lcom/discord/primitives/MessageId;", "applicationUserId", "messageType", "Lcom/discord/chat/bridge/MessageType;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAction", "()Ljava/lang/String;", "getApplicationUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getMessageChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getMessageType", "()Lcom/discord/chat/bridge/MessageType;", "getUserId-wUX8bhU", "component1", "component2", "component2-wUX8bhU", "component3", "component3-N_6c4I0", "component4", "component4-wUX8bhU", "component5", "component6", "component6-qMVnFVQ", "copy", "copy-jIMHauk", "(Ljava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;)Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class CommandOnClick {
@@ -47,7 +47,7 @@ public final class CommandOnClick {
 
     private CommandOnClick(int i, String str, UserId userId, String str2, UserId userId2, MessageType messageType, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker) {
         if ((i & 0) != 0) {
-            C3681n1.m33818b(i, 0, CommandOnClick$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 0, CommandOnClick$$serializer.INSTANCE.getDescriptor());
         }
         if ((i & 1) == 0) {
             this.action = null;
@@ -119,9 +119,9 @@ public final class CommandOnClick {
         boolean z4;
         boolean z5;
         MessageId messageId;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z6 = false;
         if (!output.mo13893A(serialDesc, 0) && self.action == null) {
             z = false;
@@ -129,7 +129,7 @@ public final class CommandOnClick {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 0, C3622a2.f5917a, self.action);
+            output.mo13874p(serialDesc, 0, C2500a2.f6719a, self.action);
         }
         if (!output.mo13893A(serialDesc, 1) && self.userId == null) {
             z2 = false;
@@ -232,13 +232,13 @@ public final class CommandOnClick {
             com.discord.chat.bridge.contentnode.CommandOnClick r5 = (com.discord.chat.bridge.contentnode.CommandOnClick) r5
             java.lang.String r1 = r4.action
             java.lang.String r3 = r5.action
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x0017
             return r2
         L_0x0017:
             com.discord.primitives.UserId r1 = r4.userId
             com.discord.primitives.UserId r3 = r5.userId
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x0022
             return r2
         L_0x0022:
@@ -261,7 +261,7 @@ public final class CommandOnClick {
         L_0x0037:
             com.discord.primitives.UserId r1 = r4.applicationUserId
             com.discord.primitives.UserId r3 = r5.applicationUserId
-            boolean r1 = kotlin.jvm.internal.C9971q.m14638b(r1, r3)
+            boolean r1 = kotlin.jvm.internal.C9677q.m14638b(r1, r3)
             if (r1 != 0) goto L_0x0042
             return r2
         L_0x0042:
@@ -272,7 +272,7 @@ public final class CommandOnClick {
         L_0x0049:
             com.discord.primitives.ChannelId r1 = r4.messageChannelId
             com.discord.primitives.ChannelId r5 = r5.messageChannelId
-            boolean r5 = kotlin.jvm.internal.C9971q.m14638b(r1, r5)
+            boolean r5 = kotlin.jvm.internal.C9677q.m14638b(r1, r5)
             if (r5 != 0) goto L_0x0054
             return r2
         L_0x0054:

@@ -2,9 +2,9 @@ package com.discord.notifications.api;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import bj.C3652h;
-import bj.C3681n1;
-import bj.C3710w0;
+import bj.C2530h;
+import bj.C2560n1;
+import bj.C2589w0;
 import com.discord.notifications.api.StickerFormatType;
 import com.discord.notifications.api.StickerType;
 import com.discord.primitives.GuildId;
@@ -12,17 +12,17 @@ import com.discord.primitives.GuildId$$serializer;
 import com.discord.primitives.StickerId;
 import com.discord.primitives.StickerId$$serializer;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import nf.C11088q;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import nf.C10843q;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b0\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 W2\u00020\u0001:\u0002VWB\u0088\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0001\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0001\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0001\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0001\u0010\f\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0001\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\b\u0001\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015ø\u0001\u0000¢\u0006\u0002\u0010\u0016Bf\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\b\u0002\u0010\f\u001a\u00020\u0007\u0012\b\b\u0002\u0010\r\u001a\u00020\u000e\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0011\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013ø\u0001\u0000¢\u0006\u0002\u0010\u0017J\u0019\u00105\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b6\u0010(J\t\u00107\u001a\u00020\u0007HÆ\u0003J\u0010\u00108\u001a\u0004\u0018\u00010\tHÆ\u0003¢\u0006\u0002\u0010.J\u0019\u00109\u001a\u0004\u0018\u00010\u000bHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b:J\t\u0010;\u001a\u00020\u0007HÆ\u0003J\t\u0010<\u001a\u00020\u000eHÆ\u0003J\t\u0010=\u001a\u00020\u0007HÆ\u0003J\t\u0010>\u001a\u00020\u0011HÆ\u0003J\u0010\u0010?\u001a\u0004\u0018\u00010\u0013HÆ\u0003¢\u0006\u0002\u0010\u001bJv\u0010@\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\b\u0002\u0010\f\u001a\u00020\u00072\b\b\u0002\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00072\b\b\u0002\u0010\u0010\u001a\u00020\u00112\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\bA\u0010BJ\t\u0010C\u001a\u00020\u0003HÖ\u0001J\u0013\u0010D\u001a\u00020\u00132\b\u0010E\u001a\u0004\u0018\u00010FHÖ\u0003J\u0006\u0010G\u001a\u00020\u0007J\t\u0010H\u001a\u00020\u0003HÖ\u0001J\u0006\u0010I\u001a\u00020\u0013J\t\u0010J\u001a\u00020\u0007HÖ\u0001J!\u0010K\u001a\u00020L2\u0006\u0010M\u001a\u00020\u00002\u0006\u0010N\u001a\u00020O2\u0006\u0010P\u001a\u00020QHÇ\u0001J\u0019\u0010R\u001a\u00020L2\u0006\u0010S\u001a\u00020T2\u0006\u0010U\u001a\u00020\u0003HÖ\u0001R \u0010\u0012\u001a\u0004\u0018\u00010\u00138\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\u001c\u0012\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001bR\u001c\u0010\f\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u001d\u0010\u0019\u001a\u0004\b\u001e\u0010\u001fR\u001c\u0010\r\u001a\u00020\u000e8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b \u0010\u0019\u001a\u0004\b!\u0010\"R'\u0010\n\u001a\u0004\u0018\u00010\u000b8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u000e\n\u0000\u0012\u0004\b#\u0010\u0019\u001a\u0004\b$\u0010%R'\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0010\n\u0002\u0010)\u0012\u0004\b&\u0010\u0019\u001a\u0004\b'\u0010(R\u001c\u0010\u0006\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b*\u0010\u0019\u001a\u0004\b+\u0010\u001fR \u0010\b\u001a\u0004\u0018\u00010\t8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010/\u0012\u0004\b,\u0010\u0019\u001a\u0004\b-\u0010.R\u001c\u0010\u000f\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b0\u0010\u0019\u001a\u0004\b1\u0010\u001fR\u001c\u0010\u0010\u001a\u00020\u00118\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b2\u0010\u0019\u001a\u0004\b3\u00104\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006X"}, m15073d2 = {"Lcom/discord/notifications/api/Sticker;", "Landroid/os/Parcelable;", "seen1", "", "id", "Lcom/discord/primitives/StickerId;", "name", "", "packId", "", "guildId", "Lcom/discord/primitives/GuildId;", "description", "formatType", "Lcom/discord/notifications/api/StickerFormatType;", "tags", "type", "Lcom/discord/notifications/api/StickerType;", "available", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/StickerId;Ljava/lang/String;Ljava/lang/Long;Lcom/discord/primitives/GuildId;Ljava/lang/String;Lcom/discord/notifications/api/StickerFormatType;Ljava/lang/String;Lcom/discord/notifications/api/StickerType;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(JLjava/lang/String;Ljava/lang/Long;Lcom/discord/primitives/GuildId;Ljava/lang/String;Lcom/discord/notifications/api/StickerFormatType;Ljava/lang/String;Lcom/discord/notifications/api/StickerType;Ljava/lang/Boolean;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAvailable$annotations", "()V", "getAvailable", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getDescription$annotations", "getDescription", "()Ljava/lang/String;", "getFormatType$annotations", "getFormatType", "()Lcom/discord/notifications/api/StickerFormatType;", "getGuildId-qOKuAAo$annotations", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getId-e_wqtJY$annotations", "getId-e_wqtJY", "()J", "J", "getName$annotations", "getName", "getPackId$annotations", "getPackId", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getTags$annotations", "getTags", "getType$annotations", "getType", "()Lcom/discord/notifications/api/StickerType;", "component1", "component1-e_wqtJY", "component2", "component3", "component4", "component4-qOKuAAo", "component5", "component6", "component7", "component8", "component9", "copy", "copy-fJhvhH4", "(JLjava/lang/String;Ljava/lang/Long;Lcom/discord/primitives/GuildId;Ljava/lang/String;Lcom/discord/notifications/api/StickerFormatType;Ljava/lang/String;Lcom/discord/notifications/api/StickerType;Ljava/lang/Boolean;)Lcom/discord/notifications/api/Sticker;", "describeContents", "equals", "other", "", "getExtension", "hashCode", "isAnimated", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "writeToParcel", "parcel", "Landroid/os/Parcel;", "flags", "$serializer", "Companion", "notification_api_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
 public final class Sticker implements Parcelable {
@@ -32,7 +32,7 @@ public final class Sticker implements Parcelable {
     private final GuildId guildId;
 
     /* renamed from: id */
-    private final long f7502id;
+    private final long f9038id;
     private final String name;
     private final Long packId;
     private final String tags;
@@ -62,7 +62,7 @@ public final class Sticker implements Parcelable {
         @Override // android.os.Parcelable.Creator
         public final Sticker createFromParcel(Parcel parcel) {
             Boolean bool;
-            C9971q.m14633g(parcel, "parcel");
+            C9677q.m14633g(parcel, "parcel");
             long j = ((StickerId) parcel.readParcelable(Sticker.class.getClassLoader())).m42149unboximpl();
             String readString = parcel.readString();
             Long valueOf = parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong());
@@ -116,14 +116,14 @@ public final class Sticker implements Parcelable {
     private Sticker(int i, StickerId stickerId, String str, Long l, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool, SerializationConstructorMarker serializationConstructorMarker) {
         long j;
         if (2 != (i & 2)) {
-            C3681n1.m33818b(i, 2, Sticker$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 2, Sticker$$serializer.INSTANCE.getDescriptor());
         }
         if ((i & 1) == 0) {
             j = StickerId.m42141constructorimpl(0L);
         } else {
             j = stickerId.m42149unboximpl();
         }
-        this.f7502id = j;
+        this.f9038id = j;
         this.name = str;
         if ((i & 4) == 0) {
             this.packId = null;
@@ -207,17 +207,17 @@ public final class Sticker implements Parcelable {
         boolean z5;
         boolean z6;
         boolean z7;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z8 = false;
-        if (!output.mo13893A(serialDesc, 0) && StickerId.m42144equalsimpl0(self.f7502id, StickerId.m42141constructorimpl(0L))) {
+        if (!output.mo13893A(serialDesc, 0) && StickerId.m42144equalsimpl0(self.f9038id, StickerId.m42141constructorimpl(0L))) {
             z = false;
         } else {
             z = true;
         }
         if (z) {
-            output.mo13870t(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m42140boximpl(self.f7502id));
+            output.mo13870t(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m42140boximpl(self.f9038id));
         }
         output.mo13864z(serialDesc, 1, self.name);
         if (!output.mo13893A(serialDesc, 2) && self.packId == null) {
@@ -226,7 +226,7 @@ public final class Sticker implements Parcelable {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 2, C3710w0.f6033a, self.packId);
+            output.mo13874p(serialDesc, 2, C2589w0.f6835a, self.packId);
         }
         if (!output.mo13893A(serialDesc, 3) && self.guildId == null) {
             z3 = false;
@@ -236,7 +236,7 @@ public final class Sticker implements Parcelable {
         if (z3) {
             output.mo13874p(serialDesc, 3, GuildId$$serializer.INSTANCE, self.guildId);
         }
-        if (!output.mo13893A(serialDesc, 4) && C9971q.m14638b(self.description, "")) {
+        if (!output.mo13893A(serialDesc, 4) && C9677q.m14638b(self.description, "")) {
             z4 = false;
         } else {
             z4 = true;
@@ -252,7 +252,7 @@ public final class Sticker implements Parcelable {
         if (z5) {
             output.mo13870t(serialDesc, 5, StickerFormatType.Serializer.INSTANCE, self.formatType);
         }
-        if (!output.mo13893A(serialDesc, 6) && C9971q.m14638b(self.tags, "")) {
+        if (!output.mo13893A(serialDesc, 6) && C9677q.m14638b(self.tags, "")) {
             z6 = false;
         } else {
             z6 = true;
@@ -272,13 +272,13 @@ public final class Sticker implements Parcelable {
             z8 = true;
         }
         if (z8) {
-            output.mo13874p(serialDesc, 8, C3652h.f5959a, self.available);
+            output.mo13874p(serialDesc, 8, C2530h.f6761a, self.available);
         }
     }
 
     /* renamed from: component1-e_wqtJY  reason: not valid java name */
     public final long m42070component1e_wqtJY() {
-        return this.f7502id;
+        return this.f9038id;
     }
 
     public final String component2() {
@@ -316,11 +316,11 @@ public final class Sticker implements Parcelable {
 
     /* renamed from: copy-fJhvhH4  reason: not valid java name */
     public final Sticker m42072copyfJhvhH4(long j, String name, Long l, GuildId guildId, String description, StickerFormatType formatType, String tags, StickerType type, Boolean bool) {
-        C9971q.m14633g(name, "name");
-        C9971q.m14633g(description, "description");
-        C9971q.m14633g(formatType, "formatType");
-        C9971q.m14633g(tags, "tags");
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(name, "name");
+        C9677q.m14633g(description, "description");
+        C9677q.m14633g(formatType, "formatType");
+        C9677q.m14633g(tags, "tags");
+        C9677q.m14633g(type, "type");
         return new Sticker(j, name, l, guildId, description, formatType, tags, type, bool, null);
     }
 
@@ -337,7 +337,7 @@ public final class Sticker implements Parcelable {
             return false;
         }
         Sticker sticker = (Sticker) obj;
-        return StickerId.m42144equalsimpl0(this.f7502id, sticker.f7502id) && C9971q.m14638b(this.name, sticker.name) && C9971q.m14638b(this.packId, sticker.packId) && C9971q.m14638b(this.guildId, sticker.guildId) && C9971q.m14638b(this.description, sticker.description) && this.formatType == sticker.formatType && C9971q.m14638b(this.tags, sticker.tags) && this.type == sticker.type && C9971q.m14638b(this.available, sticker.available);
+        return StickerId.m42144equalsimpl0(this.f9038id, sticker.f9038id) && C9677q.m14638b(this.name, sticker.name) && C9677q.m14638b(this.packId, sticker.packId) && C9677q.m14638b(this.guildId, sticker.guildId) && C9677q.m14638b(this.description, sticker.description) && this.formatType == sticker.formatType && C9677q.m14638b(this.tags, sticker.tags) && this.type == sticker.type && C9677q.m14638b(this.available, sticker.available);
     }
 
     public final Boolean getAvailable() {
@@ -359,7 +359,7 @@ public final class Sticker implements Parcelable {
         if (i == 4) {
             return ".json";
         }
-        throw new C11088q();
+        throw new C10843q();
     }
 
     public final StickerFormatType getFormatType() {
@@ -373,7 +373,7 @@ public final class Sticker implements Parcelable {
 
     /* renamed from: getId-e_wqtJY  reason: not valid java name */
     public final long m42074getIde_wqtJY() {
-        return this.f7502id;
+        return this.f9038id;
     }
 
     public final String getName() {
@@ -393,7 +393,7 @@ public final class Sticker implements Parcelable {
     }
 
     public int hashCode() {
-        int i = ((StickerId.m42145hashCodeimpl(this.f7502id) * 31) + this.name.hashCode()) * 31;
+        int i = ((StickerId.m42145hashCodeimpl(this.f9038id) * 31) + this.name.hashCode()) * 31;
         Long l = this.packId;
         int i2 = 0;
         int hashCode = (i + (l == null ? 0 : l.hashCode())) * 31;
@@ -412,7 +412,7 @@ public final class Sticker implements Parcelable {
     }
 
     public String toString() {
-        String str = StickerId.m42147toStringimpl(this.f7502id);
+        String str = StickerId.m42147toStringimpl(this.f9038id);
         String str2 = this.name;
         Long l = this.packId;
         GuildId guildId = this.guildId;
@@ -426,8 +426,8 @@ public final class Sticker implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel out, int i) {
-        C9971q.m14633g(out, "out");
-        out.writeParcelable(StickerId.m42140boximpl(this.f7502id), i);
+        C9677q.m14633g(out, "out");
+        out.writeParcelable(StickerId.m42140boximpl(this.f9038id), i);
         out.writeString(this.name);
         Long l = this.packId;
         if (l == null) {
@@ -451,7 +451,7 @@ public final class Sticker implements Parcelable {
     }
 
     private Sticker(long j, String str, Long l, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool) {
-        this.f7502id = j;
+        this.f9038id = j;
         this.name = str;
         this.packId = l;
         this.guildId = guildId;

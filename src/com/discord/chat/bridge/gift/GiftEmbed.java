@@ -1,20 +1,20 @@
 package com.discord.chat.bridge.gift;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = GiftEmbedSerializer.class)
+@AbstractC14370f(with = GiftEmbedSerializer.class)
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u000e2\u00020\u0001:\u0003\u000e\u000f\u0010R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0012\u0010\b\u001a\u00020\tX¦\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0012\u0010\f\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u0005\u0082\u0001\u0002\u0011\u0012¨\u0006\u0013"}, m15073d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed;", "", ViewProps.BACKGROUND_COLOR, "", "getBackgroundColor", "()I", "headerColor", "getHeaderColor", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "thumbnailCornerRadius", "getThumbnailCornerRadius", "Companion", "Resolved", "Resolving", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public interface GiftEmbed {
@@ -37,7 +37,7 @@ public interface GiftEmbed {
     /* loaded from: classes4.dex */
     public interface Resolved extends GiftEmbed {
 
-        @AbstractC14435f
+        @AbstractC14370f
         @Metadata(m15074d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u001a\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 82\u00020\u0001:\u000278Bq\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0002\u0010\u0011BU\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u0006\u0010\u000e\u001a\u00020\u0003¢\u0006\u0002\u0010\u0012J\t\u0010\u001f\u001a\u00020\u0005HÆ\u0003J\t\u0010 \u001a\u00020\u0003HÆ\u0003J\t\u0010!\u001a\u00020\u0003HÆ\u0003J\t\u0010\"\u001a\u00020\u0003HÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\u0005HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0005HÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003Jm\u0010)\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\u00052\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u0003HÆ\u0001J\u0013\u0010*\u001a\u00020+2\b\u0010,\u001a\u0004\u0018\u00010-HÖ\u0003J\t\u0010.\u001a\u00020\u0003HÖ\u0001J\t\u0010/\u001a\u00020\u0005HÖ\u0001J!\u00100\u001a\u0002012\u0006\u00102\u001a\u00020\u00002\u0006\u00103\u001a\u0002042\u0006\u00105\u001a\u000206HÇ\u0001R\u0014\u0010\u0007\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0006\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0014\u0010\f\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0014\u0010\r\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0014R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0014R\u0014\u0010\b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0014R\u0014\u0010\t\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0017R\u0014\u0010\u000b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0014R\u0014\u0010\n\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0017¨\u00069"}, m15073d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved$Invalid;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "seen1", "", "headerText", "", "headerColor", ViewProps.BACKGROUND_COLOR, "thumbnailCornerRadius", "thumbnailUrl", "titleText", "titleColor", "subtitle", "subtitleColor", "thumbnailBackgroundColor", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;IIILjava/lang/String;Ljava/lang/String;ILjava/lang/String;IILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;ILjava/lang/String;II)V", "getBackgroundColor", "()I", "getHeaderColor", "getHeaderText", "()Ljava/lang/String;", "getSubtitle", "getSubtitleColor", "getThumbnailBackgroundColor", "getThumbnailCornerRadius", "getThumbnailUrl", "getTitleColor", "getTitleText", "component1", "component10", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
         /* loaded from: classes4.dex */
         public static final class Invalid implements Resolved {
@@ -70,7 +70,7 @@ public interface GiftEmbed {
 
             public /* synthetic */ Invalid(int i, String str, int i2, int i3, int i4, String str2, String str3, int i5, String str4, int i6, int i7, SerializationConstructorMarker serializationConstructorMarker) {
                 if (1023 != (i & 1023)) {
-                    C3681n1.m33818b(i, 1023, GiftEmbed$Resolved$Invalid$$serializer.INSTANCE.getDescriptor());
+                    C2560n1.m33818b(i, 1023, GiftEmbed$Resolved$Invalid$$serializer.INSTANCE.getDescriptor());
                 }
                 this.headerText = str;
                 this.headerColor = i2;
@@ -85,9 +85,9 @@ public interface GiftEmbed {
             }
 
             public static final void write$Self(Invalid self, CompositeEncoder output, SerialDescriptor serialDesc) {
-                C9971q.m14633g(self, "self");
-                C9971q.m14633g(output, "output");
-                C9971q.m14633g(serialDesc, "serialDesc");
+                C9677q.m14633g(self, "self");
+                C9677q.m14633g(output, "output");
+                C9677q.m14633g(serialDesc, "serialDesc");
                 output.mo13864z(serialDesc, 0, self.getHeaderText());
                 output.mo13866x(serialDesc, 1, self.getHeaderColor());
                 output.mo13866x(serialDesc, 2, self.getBackgroundColor());
@@ -141,10 +141,10 @@ public interface GiftEmbed {
             }
 
             public final Invalid copy(String headerText, int i, int i2, int i3, String thumbnailUrl, String titleText, int i4, String subtitle, int i5, int i6) {
-                C9971q.m14633g(headerText, "headerText");
-                C9971q.m14633g(thumbnailUrl, "thumbnailUrl");
-                C9971q.m14633g(titleText, "titleText");
-                C9971q.m14633g(subtitle, "subtitle");
+                C9677q.m14633g(headerText, "headerText");
+                C9677q.m14633g(thumbnailUrl, "thumbnailUrl");
+                C9677q.m14633g(titleText, "titleText");
+                C9677q.m14633g(subtitle, "subtitle");
                 return new Invalid(headerText, i, i2, i3, thumbnailUrl, titleText, i4, subtitle, i5, i6);
             }
 
@@ -156,7 +156,7 @@ public interface GiftEmbed {
                     return false;
                 }
                 Invalid invalid = (Invalid) obj;
-                return C9971q.m14638b(getHeaderText(), invalid.getHeaderText()) && getHeaderColor() == invalid.getHeaderColor() && getBackgroundColor() == invalid.getBackgroundColor() && getThumbnailCornerRadius() == invalid.getThumbnailCornerRadius() && C9971q.m14638b(getThumbnailUrl(), invalid.getThumbnailUrl()) && C9971q.m14638b(getTitleText(), invalid.getTitleText()) && getTitleColor() == invalid.getTitleColor() && C9971q.m14638b(getSubtitle(), invalid.getSubtitle()) && getSubtitleColor() == invalid.getSubtitleColor() && this.thumbnailBackgroundColor == invalid.thumbnailBackgroundColor;
+                return C9677q.m14638b(getHeaderText(), invalid.getHeaderText()) && getHeaderColor() == invalid.getHeaderColor() && getBackgroundColor() == invalid.getBackgroundColor() && getThumbnailCornerRadius() == invalid.getThumbnailCornerRadius() && C9677q.m14638b(getThumbnailUrl(), invalid.getThumbnailUrl()) && C9677q.m14638b(getTitleText(), invalid.getTitleText()) && getTitleColor() == invalid.getTitleColor() && C9677q.m14638b(getSubtitle(), invalid.getSubtitle()) && getSubtitleColor() == invalid.getSubtitleColor() && this.thumbnailBackgroundColor == invalid.thumbnailBackgroundColor;
             }
 
             @Override // com.discord.chat.bridge.gift.GiftEmbed
@@ -227,10 +227,10 @@ public interface GiftEmbed {
             }
 
             public Invalid(String headerText, int i, int i2, int i3, String thumbnailUrl, String titleText, int i4, String subtitle, int i5, int i6) {
-                C9971q.m14633g(headerText, "headerText");
-                C9971q.m14633g(thumbnailUrl, "thumbnailUrl");
-                C9971q.m14633g(titleText, "titleText");
-                C9971q.m14633g(subtitle, "subtitle");
+                C9677q.m14633g(headerText, "headerText");
+                C9677q.m14633g(thumbnailUrl, "thumbnailUrl");
+                C9677q.m14633g(titleText, "titleText");
+                C9677q.m14633g(subtitle, "subtitle");
                 this.headerText = headerText;
                 this.headerColor = i;
                 this.backgroundColor = i2;
@@ -244,7 +244,7 @@ public interface GiftEmbed {
             }
         }
 
-        @AbstractC14435f
+        @AbstractC14370f
         @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b-\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 S2\u00020\u0001:\u0002RSB¹\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000f\u001a\u00020\u0003\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0011\u001a\u00020\u0003\u0012\u0006\u0010\u0012\u001a\u00020\u0003\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u0012\u0006\u0010\u0016\u001a\u00020\u0017\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u001a¢\u0006\u0002\u0010\u001bB\u00ad\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000f\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0011\u001a\u00020\u0003\u0012\u0006\u0010\u0012\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u0012\u0006\u0010\u0016\u001a\u00020\u0017\u0012\u0006\u0010\u0018\u001a\u00020\u0005¢\u0006\u0002\u0010\u001cJ\t\u00103\u001a\u00020\u0005HÆ\u0003J\u000b\u00104\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u00105\u001a\u00020\u0003HÆ\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u00107\u001a\u00020\u0003HÆ\u0003J\t\u00108\u001a\u00020\u0003HÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010:\u001a\u00020\u0015HÆ\u0003J\t\u0010;\u001a\u00020\u0017HÆ\u0003J\t\u0010<\u001a\u00020\u0005HÆ\u0003J\t\u0010=\u001a\u00020\u0003HÆ\u0003J\t\u0010>\u001a\u00020\u0003HÆ\u0003J\t\u0010?\u001a\u00020\u0003HÆ\u0003J\u000b\u0010@\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010A\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010B\u001a\u00020\u0003HÆ\u0003J\u000b\u0010C\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010D\u001a\u00020\u0003HÆ\u0003JÉ\u0001\u0010E\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00032\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\r\u001a\u00020\u00032\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000f\u001a\u00020\u00032\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0011\u001a\u00020\u00032\b\b\u0002\u0010\u0012\u001a\u00020\u00032\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0014\u001a\u00020\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u0005HÆ\u0001J\u0013\u0010F\u001a\u00020\u00172\b\u0010G\u001a\u0004\u0018\u00010HHÖ\u0003J\t\u0010I\u001a\u00020\u0003HÖ\u0001J\t\u0010J\u001a\u00020\u0005HÖ\u0001J!\u0010K\u001a\u00020L2\u0006\u0010M\u001a\u00020\u00002\u0006\u0010N\u001a\u00020O2\u0006\u0010P\u001a\u00020QHÇ\u0001R\u0011\u0010\u0012\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u0011\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u001eR\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0014\u0010\u0007\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001eR\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b#\u0010!R\u0011\u0010\u000f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\u001eR\u0011\u0010\u0016\u001a\u00020\u0017¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0011\u0010\u0018\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b'\u0010!R\u0014\u0010\u0006\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\u001eR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b)\u0010!R\u0011\u0010\u0014\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b*\u0010+R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b,\u0010!R\u0016\u0010\f\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b-\u0010!R\u0014\u0010\r\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\u001eR\u0014\u0010\b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b/\u0010\u001eR\u0016\u0010\t\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b0\u0010!R\u0014\u0010\u000b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b1\u0010\u001eR\u0016\u0010\n\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u0010!¨\u0006T"}, m15073d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved$Valid;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "seen1", "", "headerText", "", "headerColor", ViewProps.BACKGROUND_COLOR, "thumbnailCornerRadius", "thumbnailUrl", "titleText", "titleColor", "subtitle", "subtitleColor", "bodyText", "bodyTextColor", "acceptLabelText", "acceptLabelColor", "acceptLabelBackgroundColor", "splashUrl", "splashOpacity", "", "canBeAccepted", "", "giftCode", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;IIILjava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;ILjava/lang/String;IILjava/lang/String;FZLjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;ILjava/lang/String;IILjava/lang/String;FZLjava/lang/String;)V", "getAcceptLabelBackgroundColor", "()I", "getAcceptLabelColor", "getAcceptLabelText", "()Ljava/lang/String;", "getBackgroundColor", "getBodyText", "getBodyTextColor", "getCanBeAccepted", "()Z", "getGiftCode", "getHeaderColor", "getHeaderText", "getSplashOpacity", "()F", "getSplashUrl", "getSubtitle", "getSubtitleColor", "getThumbnailCornerRadius", "getThumbnailUrl", "getTitleColor", "getTitleText", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
         /* loaded from: classes4.dex */
         public static final class Valid implements Resolved {
@@ -285,7 +285,7 @@ public interface GiftEmbed {
 
             public /* synthetic */ Valid(int i, String str, int i2, int i3, int i4, String str2, String str3, int i5, String str4, int i6, String str5, int i7, String str6, int i8, int i9, String str7, float f, boolean z, String str8, SerializationConstructorMarker serializationConstructorMarker) {
                 if (243023 != (i & 243023)) {
-                    C3681n1.m33818b(i, 243023, GiftEmbed$Resolved$Valid$$serializer.INSTANCE.getDescriptor());
+                    C2560n1.m33818b(i, 243023, GiftEmbed$Resolved$Valid$$serializer.INSTANCE.getDescriptor());
                 }
                 this.headerText = str;
                 this.headerColor = i2;
@@ -337,9 +337,9 @@ public interface GiftEmbed {
                 boolean z3;
                 boolean z4;
                 boolean z5;
-                C9971q.m14633g(self, "self");
-                C9971q.m14633g(output, "output");
-                C9971q.m14633g(serialDesc, "serialDesc");
+                C9677q.m14633g(self, "self");
+                C9677q.m14633g(output, "output");
+                C9677q.m14633g(serialDesc, "serialDesc");
                 boolean z6 = false;
                 output.mo13864z(serialDesc, 0, self.getHeaderText());
                 output.mo13866x(serialDesc, 1, self.getHeaderColor());
@@ -351,7 +351,7 @@ public interface GiftEmbed {
                     z = true;
                 }
                 if (z) {
-                    output.mo13874p(serialDesc, 4, C3622a2.f5917a, self.getThumbnailUrl());
+                    output.mo13874p(serialDesc, 4, C2500a2.f6719a, self.getThumbnailUrl());
                 }
                 if (!output.mo13893A(serialDesc, 5) && self.getTitleText() == null) {
                     z2 = false;
@@ -359,7 +359,7 @@ public interface GiftEmbed {
                     z2 = true;
                 }
                 if (z2) {
-                    output.mo13874p(serialDesc, 5, C3622a2.f5917a, self.getTitleText());
+                    output.mo13874p(serialDesc, 5, C2500a2.f6719a, self.getTitleText());
                 }
                 output.mo13866x(serialDesc, 6, self.getTitleColor());
                 if (!output.mo13893A(serialDesc, 7) && self.getSubtitle() == null) {
@@ -368,7 +368,7 @@ public interface GiftEmbed {
                     z3 = true;
                 }
                 if (z3) {
-                    output.mo13874p(serialDesc, 7, C3622a2.f5917a, self.getSubtitle());
+                    output.mo13874p(serialDesc, 7, C2500a2.f6719a, self.getSubtitle());
                 }
                 output.mo13866x(serialDesc, 8, self.getSubtitleColor());
                 if (!output.mo13893A(serialDesc, 9) && self.bodyText == null) {
@@ -377,7 +377,7 @@ public interface GiftEmbed {
                     z4 = true;
                 }
                 if (z4) {
-                    output.mo13874p(serialDesc, 9, C3622a2.f5917a, self.bodyText);
+                    output.mo13874p(serialDesc, 9, C2500a2.f6719a, self.bodyText);
                 }
                 output.mo13866x(serialDesc, 10, self.bodyTextColor);
                 if (!output.mo13893A(serialDesc, 11) && self.acceptLabelText == null) {
@@ -386,7 +386,7 @@ public interface GiftEmbed {
                     z5 = true;
                 }
                 if (z5) {
-                    output.mo13874p(serialDesc, 11, C3622a2.f5917a, self.acceptLabelText);
+                    output.mo13874p(serialDesc, 11, C2500a2.f6719a, self.acceptLabelText);
                 }
                 output.mo13866x(serialDesc, 12, self.acceptLabelColor);
                 output.mo13866x(serialDesc, 13, self.acceptLabelBackgroundColor);
@@ -394,7 +394,7 @@ public interface GiftEmbed {
                     z6 = true;
                 }
                 if (z6) {
-                    output.mo13874p(serialDesc, 14, C3622a2.f5917a, self.splashUrl);
+                    output.mo13874p(serialDesc, 14, C2500a2.f6719a, self.splashUrl);
                 }
                 output.mo13871s(serialDesc, 15, self.splashOpacity);
                 output.mo13865y(serialDesc, 16, self.canBeAccepted);
@@ -474,8 +474,8 @@ public interface GiftEmbed {
             }
 
             public final Valid copy(String headerText, int i, int i2, int i3, String str, String str2, int i4, String str3, int i5, String str4, int i6, String str5, int i7, int i8, String str6, float f, boolean z, String giftCode) {
-                C9971q.m14633g(headerText, "headerText");
-                C9971q.m14633g(giftCode, "giftCode");
+                C9677q.m14633g(headerText, "headerText");
+                C9677q.m14633g(giftCode, "giftCode");
                 return new Valid(headerText, i, i2, i3, str, str2, i4, str3, i5, str4, i6, str5, i7, i8, str6, f, z, giftCode);
             }
 
@@ -487,7 +487,7 @@ public interface GiftEmbed {
                     return false;
                 }
                 Valid valid = (Valid) obj;
-                return C9971q.m14638b(getHeaderText(), valid.getHeaderText()) && getHeaderColor() == valid.getHeaderColor() && getBackgroundColor() == valid.getBackgroundColor() && getThumbnailCornerRadius() == valid.getThumbnailCornerRadius() && C9971q.m14638b(getThumbnailUrl(), valid.getThumbnailUrl()) && C9971q.m14638b(getTitleText(), valid.getTitleText()) && getTitleColor() == valid.getTitleColor() && C9971q.m14638b(getSubtitle(), valid.getSubtitle()) && getSubtitleColor() == valid.getSubtitleColor() && C9971q.m14638b(this.bodyText, valid.bodyText) && this.bodyTextColor == valid.bodyTextColor && C9971q.m14638b(this.acceptLabelText, valid.acceptLabelText) && this.acceptLabelColor == valid.acceptLabelColor && this.acceptLabelBackgroundColor == valid.acceptLabelBackgroundColor && C9971q.m14638b(this.splashUrl, valid.splashUrl) && Float.compare(this.splashOpacity, valid.splashOpacity) == 0 && this.canBeAccepted == valid.canBeAccepted && C9971q.m14638b(this.giftCode, valid.giftCode);
+                return C9677q.m14638b(getHeaderText(), valid.getHeaderText()) && getHeaderColor() == valid.getHeaderColor() && getBackgroundColor() == valid.getBackgroundColor() && getThumbnailCornerRadius() == valid.getThumbnailCornerRadius() && C9677q.m14638b(getThumbnailUrl(), valid.getThumbnailUrl()) && C9677q.m14638b(getTitleText(), valid.getTitleText()) && getTitleColor() == valid.getTitleColor() && C9677q.m14638b(getSubtitle(), valid.getSubtitle()) && getSubtitleColor() == valid.getSubtitleColor() && C9677q.m14638b(this.bodyText, valid.bodyText) && this.bodyTextColor == valid.bodyTextColor && C9677q.m14638b(this.acceptLabelText, valid.acceptLabelText) && this.acceptLabelColor == valid.acceptLabelColor && this.acceptLabelBackgroundColor == valid.acceptLabelBackgroundColor && C9677q.m14638b(this.splashUrl, valid.splashUrl) && Float.compare(this.splashOpacity, valid.splashOpacity) == 0 && this.canBeAccepted == valid.canBeAccepted && C9677q.m14638b(this.giftCode, valid.giftCode);
             }
 
             public final int getAcceptLabelBackgroundColor() {
@@ -616,8 +616,8 @@ public interface GiftEmbed {
             }
 
             public Valid(String headerText, int i, int i2, int i3, String str, String str2, int i4, String str3, int i5, String str4, int i6, String str5, int i7, int i8, String str6, float f, boolean z, String giftCode) {
-                C9971q.m14633g(headerText, "headerText");
-                C9971q.m14633g(giftCode, "giftCode");
+                C9677q.m14633g(headerText, "headerText");
+                C9677q.m14633g(giftCode, "giftCode");
                 this.headerText = headerText;
                 this.headerColor = i;
                 this.backgroundColor = i2;
@@ -654,7 +654,7 @@ public interface GiftEmbed {
         String getTitleText();
     }
 
-    @AbstractC14435f
+    @AbstractC14370f
     @Metadata(m15074d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ,2\u00020\u0001:\u0002+,BK\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rB5\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0003¢\u0006\u0002\u0010\u000eJ\t\u0010\u0017\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003JE\u0010\u001d\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u001e\u001a\u00020\u001f2\b\u0010 \u001a\u0004\u0018\u00010!HÖ\u0003J\t\u0010\"\u001a\u00020\u0003HÖ\u0001J\t\u0010#\u001a\u00020\u0005HÖ\u0001J!\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u00002\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*HÇ\u0001R\u0014\u0010\u0007\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0006\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0010R\u0011\u0010\t\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0010R\u0014\u0010\b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0010¨\u0006-"}, m15073d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "Lcom/discord/chat/bridge/gift/GiftEmbed;", "seen1", "", "headerText", "", "headerColor", ViewProps.BACKGROUND_COLOR, "thumbnailCornerRadius", "resolvingGradientStart", "resolvingGradientEnd", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;IIIIILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;IIIII)V", "getBackgroundColor", "()I", "getHeaderColor", "getHeaderText", "()Ljava/lang/String;", "getResolvingGradientEnd", "getResolvingGradientStart", "getThumbnailCornerRadius", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* loaded from: classes4.dex */
     public static final class Resolving implements GiftEmbed {
@@ -683,7 +683,7 @@ public interface GiftEmbed {
 
         public /* synthetic */ Resolving(int i, String str, int i2, int i3, int i4, int i5, int i6, SerializationConstructorMarker serializationConstructorMarker) {
             if (63 != (i & 63)) {
-                C3681n1.m33818b(i, 63, GiftEmbed$Resolving$$serializer.INSTANCE.getDescriptor());
+                C2560n1.m33818b(i, 63, GiftEmbed$Resolving$$serializer.INSTANCE.getDescriptor());
             }
             this.headerText = str;
             this.headerColor = i2;
@@ -716,9 +716,9 @@ public interface GiftEmbed {
         }
 
         public static final void write$Self(Resolving self, CompositeEncoder output, SerialDescriptor serialDesc) {
-            C9971q.m14633g(self, "self");
-            C9971q.m14633g(output, "output");
-            C9971q.m14633g(serialDesc, "serialDesc");
+            C9677q.m14633g(self, "self");
+            C9677q.m14633g(output, "output");
+            C9677q.m14633g(serialDesc, "serialDesc");
             output.mo13864z(serialDesc, 0, self.getHeaderText());
             output.mo13866x(serialDesc, 1, self.getHeaderColor());
             output.mo13866x(serialDesc, 2, self.getBackgroundColor());
@@ -752,7 +752,7 @@ public interface GiftEmbed {
         }
 
         public final Resolving copy(String headerText, int i, int i2, int i3, int i4, int i5) {
-            C9971q.m14633g(headerText, "headerText");
+            C9677q.m14633g(headerText, "headerText");
             return new Resolving(headerText, i, i2, i3, i4, i5);
         }
 
@@ -764,7 +764,7 @@ public interface GiftEmbed {
                 return false;
             }
             Resolving resolving = (Resolving) obj;
-            return C9971q.m14638b(getHeaderText(), resolving.getHeaderText()) && getHeaderColor() == resolving.getHeaderColor() && getBackgroundColor() == resolving.getBackgroundColor() && getThumbnailCornerRadius() == resolving.getThumbnailCornerRadius() && this.resolvingGradientStart == resolving.resolvingGradientStart && this.resolvingGradientEnd == resolving.resolvingGradientEnd;
+            return C9677q.m14638b(getHeaderText(), resolving.getHeaderText()) && getHeaderColor() == resolving.getHeaderColor() && getBackgroundColor() == resolving.getBackgroundColor() && getThumbnailCornerRadius() == resolving.getThumbnailCornerRadius() && this.resolvingGradientStart == resolving.resolvingGradientStart && this.resolvingGradientEnd == resolving.resolvingGradientEnd;
         }
 
         @Override // com.discord.chat.bridge.gift.GiftEmbed
@@ -810,7 +810,7 @@ public interface GiftEmbed {
         }
 
         public Resolving(String headerText, int i, int i2, int i3, int i4, int i5) {
-            C9971q.m14633g(headerText, "headerText");
+            C9677q.m14633g(headerText, "headerText");
             this.headerText = headerText;
             this.headerColor = i;
             this.backgroundColor = i2;

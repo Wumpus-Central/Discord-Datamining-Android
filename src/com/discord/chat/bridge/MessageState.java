@@ -2,19 +2,19 @@ package com.discord.chat.bridge;
 
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import nf.C11084n;
-import nf.EnumC11087p;
-import p014aj.AbstractC1413e;
-import p014aj.C1427g;
-import p449yi.AbstractC14435f;
+import nf.C10839n;
+import nf.EnumC10842p;
+import p014aj.AbstractC0192e;
+import p014aj.C0207g;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = Serializer.class)
+@AbstractC14370f(with = Serializer.class)
 @Metadata(m15074d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, m15073d2 = {"Lcom/discord/chat/bridge/MessageState;", "", "key", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getKey", "()Ljava/lang/String;", "Sent", "Sending", "SendFailed", "Unknown", "Companion", "Serializer", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public enum MessageState {
@@ -43,7 +43,7 @@ public enum MessageState {
 
         public final MessageState fromValue(String key) {
             MessageState messageState;
-            C9971q.m14633g(key, "key");
+            C9677q.m14633g(key, "key");
             MessageState[] values = MessageState.values();
             int length = values.length;
             int i = 0;
@@ -53,7 +53,7 @@ public enum MessageState {
                     break;
                 }
                 messageState = values[i];
-                if (C9971q.m14638b(messageState.getKey(), key)) {
+                if (C9677q.m14638b(messageState.getKey(), key)) {
                     break;
                 }
                 i++;
@@ -77,27 +77,27 @@ public enum MessageState {
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, p449yi.AbstractC14437h, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, p450yi.AbstractC14372h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return C1427g.m41131a("MessageState", AbstractC1413e.C1421i.f471a);
+            return C0207g.m41131a("MessageState", AbstractC0192e.C0201i.f537a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
         public MessageState deserialize(Decoder decoder) {
-            C9971q.m14633g(decoder, "decoder");
+            C9677q.m14633g(decoder, "decoder");
             return MessageState.Companion.fromValue(decoder.mo13894z());
         }
 
         public void serialize(Encoder encoder, MessageState value) {
-            C9971q.m14633g(encoder, "encoder");
-            C9971q.m14633g(value, "value");
+            C9677q.m14633g(encoder, "encoder");
+            C9677q.m14633g(value, "value");
             throw new UnsupportedOperationException();
         }
     }
 
     static {
         Lazy<KSerializer<Object>> b;
-        b = C11084n.m10944b(EnumC11087p.PUBLICATION, MessageState$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        b = C10839n.m10944b(EnumC10842p.PUBLICATION, MessageState$Companion$$cachedSerializer$delegate$1.INSTANCE);
         $cachedSerializer$delegate = b;
     }
 

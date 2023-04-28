@@ -1,17 +1,17 @@
 package com.discord.chat.bridge.contentnode;
 
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 '2\u00020\u0001:\u0002&'BK\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fB3\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\rJ\t\u0010\u0014\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005HÆ\u0003JA\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001e\u001a\u00020\u0005HÖ\u0001J!\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000fR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u000fR\u0013\u0010\t\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000f¨\u0006("}, m15073d2 = {"Lcom/discord/chat/bridge/contentnode/RoleSubscriptionOnClick;", "", "seen1", "", "action", "", "guildId", "messageId", "channelId", "roleSubscriptionListingId", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getAction", "()Ljava/lang/String;", "getChannelId", "getGuildId", "getMessageId", "getRoleSubscriptionListingId", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class RoleSubscriptionOnClick {
@@ -39,7 +39,7 @@ public final class RoleSubscriptionOnClick {
 
     public /* synthetic */ RoleSubscriptionOnClick(int i, String str, String str2, String str3, String str4, String str5, SerializationConstructorMarker serializationConstructorMarker) {
         if (31 != (i & 31)) {
-            C3681n1.m33818b(i, 31, RoleSubscriptionOnClick$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 31, RoleSubscriptionOnClick$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
         this.guildId = str2;
@@ -68,12 +68,12 @@ public final class RoleSubscriptionOnClick {
     }
 
     public static final void write$Self(RoleSubscriptionOnClick self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13864z(serialDesc, 0, self.action);
         output.mo13864z(serialDesc, 1, self.guildId);
-        C3622a2 a2Var = C3622a2.f5917a;
+        C2500a2 a2Var = C2500a2.f6719a;
         output.mo13874p(serialDesc, 2, a2Var, self.messageId);
         output.mo13874p(serialDesc, 3, a2Var, self.channelId);
         output.mo13874p(serialDesc, 4, a2Var, self.roleSubscriptionListingId);
@@ -100,8 +100,8 @@ public final class RoleSubscriptionOnClick {
     }
 
     public final RoleSubscriptionOnClick copy(String action, String guildId, String str, String str2, String str3) {
-        C9971q.m14633g(action, "action");
-        C9971q.m14633g(guildId, "guildId");
+        C9677q.m14633g(action, "action");
+        C9677q.m14633g(guildId, "guildId");
         return new RoleSubscriptionOnClick(action, guildId, str, str2, str3);
     }
 
@@ -113,7 +113,7 @@ public final class RoleSubscriptionOnClick {
             return false;
         }
         RoleSubscriptionOnClick roleSubscriptionOnClick = (RoleSubscriptionOnClick) obj;
-        return C9971q.m14638b(this.action, roleSubscriptionOnClick.action) && C9971q.m14638b(this.guildId, roleSubscriptionOnClick.guildId) && C9971q.m14638b(this.messageId, roleSubscriptionOnClick.messageId) && C9971q.m14638b(this.channelId, roleSubscriptionOnClick.channelId) && C9971q.m14638b(this.roleSubscriptionListingId, roleSubscriptionOnClick.roleSubscriptionListingId);
+        return C9677q.m14638b(this.action, roleSubscriptionOnClick.action) && C9677q.m14638b(this.guildId, roleSubscriptionOnClick.guildId) && C9677q.m14638b(this.messageId, roleSubscriptionOnClick.messageId) && C9677q.m14638b(this.channelId, roleSubscriptionOnClick.channelId) && C9677q.m14638b(this.roleSubscriptionListingId, roleSubscriptionOnClick.roleSubscriptionListingId);
     }
 
     public final String getAction() {
@@ -160,8 +160,8 @@ public final class RoleSubscriptionOnClick {
     }
 
     public RoleSubscriptionOnClick(String action, String guildId, String str, String str2, String str3) {
-        C9971q.m14633g(action, "action");
-        C9971q.m14633g(guildId, "guildId");
+        C9677q.m14633g(action, "action");
+        C9677q.m14633g(guildId, "guildId");
         this.action = action;
         this.guildId = guildId;
         this.messageId = str;

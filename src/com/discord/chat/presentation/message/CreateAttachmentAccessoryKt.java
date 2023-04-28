@@ -13,8 +13,8 @@ import com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageA
 import com.discord.primitives.MessageFlag;
 import com.discord.primitives.MessageFlagKt;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import nf.C11088q;
+import kotlin.jvm.internal.C9677q;
+import nf.C10843q;
 
 @Metadata(m15074d1 = {"\u0000 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\u001a6\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\u00062\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0000¨\u0006\u000b"}, m15073d2 = {"createAttachmentAccessory", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "Lcom/discord/chat/bridge/attachment/Attachment;", "message", "Lcom/discord/chat/bridge/Message;", "index", "", "constrainedWidth", "radiusPx", "onLongClick", "Landroid/view/View$OnLongClickListener;", "chat_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -54,10 +54,10 @@ public final class CreateAttachmentAccessoryKt {
         boolean z3;
         boolean z4;
         FileAttachmentMessageAccessory fileAttachmentMessageAccessory;
-        C9971q.m14633g(attachment, "<this>");
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(attachment, "<this>");
+        C9677q.m14633g(message, "message");
         SpoilerAttributes forAttachment = SpoilerAttributes.Companion.forAttachment(attachment, message, i);
-        if (!C9971q.m14638b(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (str = message.m41580getNonceN_6c4I0()) == null) {
+        if (!C9677q.m14638b(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (str = message.m41580getNonceN_6c4I0()) == null) {
             str = message.m41579getId3Eiw7ao();
         }
         int i4 = WhenMappings.$EnumSwitchMapping$0[attachment.type().ordinal()];
@@ -73,7 +73,7 @@ public final class CreateAttachmentAccessoryKt {
             if (i4 == 3) {
                 fileAttachmentMessageAccessory = new FileAttachmentMessageAccessory(str, i, attachment, forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), message.getAttachmentsOpacity(), null);
             } else if (i4 != 4) {
-                throw new C11088q();
+                throw new C10843q();
             } else if (MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE)) {
                 return new AudioAttachmentMessageAccessory(str, message.m41576getAuthorIdwUX8bhU(), i, attachment, message.getAttachmentsOpacity(), null);
             } else {

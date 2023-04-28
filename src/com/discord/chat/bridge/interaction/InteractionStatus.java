@@ -1,19 +1,19 @@
 package com.discord.chat.bridge.interaction;
 
-import bj.C3681n1;
+import bj.C2560n1;
 import com.discord.chat.bridge.interaction.InteractionStatusViewState;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 #2\u00020\u0001:\u0002\"#B-\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\nB\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\u000bJ\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0007HÆ\u0003J\u001d\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÖ\u0001J\u0006\u0010\u0017\u001a\u00020\u0014J\u0006\u0010\u0018\u001a\u00020\u0014J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001J!\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u00002\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006$"}, m15073d2 = {"Lcom/discord/chat/bridge/interaction/InteractionStatus;", "", "seen1", "", "state", "Lcom/discord/chat/bridge/interaction/InteractionStatusViewState;", "text", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/interaction/InteractionStatusViewState;Lcom/discord/chat/bridge/structurabletext/StructurableText;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/bridge/interaction/InteractionStatusViewState;Lcom/discord/chat/bridge/structurabletext/StructurableText;)V", "getState", "()Lcom/discord/chat/bridge/interaction/InteractionStatusViewState;", "getText", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "component1", "component2", "copy", "equals", "", "other", "hashCode", "isFailed", "isLoading", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class InteractionStatus {
@@ -38,7 +38,7 @@ public final class InteractionStatus {
 
     public /* synthetic */ InteractionStatus(int i, InteractionStatusViewState interactionStatusViewState, StructurableText structurableText, SerializationConstructorMarker serializationConstructorMarker) {
         if (3 != (i & 3)) {
-            C3681n1.m33818b(i, 3, InteractionStatus$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 3, InteractionStatus$$serializer.INSTANCE.getDescriptor());
         }
         this.state = interactionStatusViewState;
         this.text = structurableText;
@@ -55,9 +55,9 @@ public final class InteractionStatus {
     }
 
     public static final void write$Self(InteractionStatus self, CompositeEncoder output, SerialDescriptor serialDesc) {
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         output.mo13870t(serialDesc, 0, InteractionStatusViewState.Serializer.INSTANCE, self.state);
         output.mo13870t(serialDesc, 1, StructurableTextSerializer.INSTANCE, self.text);
     }
@@ -71,8 +71,8 @@ public final class InteractionStatus {
     }
 
     public final InteractionStatus copy(InteractionStatusViewState state, StructurableText text) {
-        C9971q.m14633g(state, "state");
-        C9971q.m14633g(text, "text");
+        C9677q.m14633g(state, "state");
+        C9677q.m14633g(text, "text");
         return new InteractionStatus(state, text);
     }
 
@@ -84,7 +84,7 @@ public final class InteractionStatus {
             return false;
         }
         InteractionStatus interactionStatus = (InteractionStatus) obj;
-        return this.state == interactionStatus.state && C9971q.m14638b(this.text, interactionStatus.text);
+        return this.state == interactionStatus.state && C9677q.m14638b(this.text, interactionStatus.text);
     }
 
     public final InteractionStatusViewState getState() {
@@ -114,8 +114,8 @@ public final class InteractionStatus {
     }
 
     public InteractionStatus(InteractionStatusViewState state, StructurableText text) {
-        C9971q.m14633g(state, "state");
-        C9971q.m14633g(text, "text");
+        C9677q.m14633g(state, "state");
+        C9677q.m14633g(text, "text");
         this.state = state;
         this.text = text;
     }

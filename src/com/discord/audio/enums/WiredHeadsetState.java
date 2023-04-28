@@ -2,7 +2,7 @@ package com.discord.audio.enums;
 
 import android.content.Intent;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000 \u00032\u00020\u0001:\u0003\u0003\u0004\u0005B\u0007\b\u0004¢\u0006\u0002\u0010\u0002\u0082\u0001\u0002\u0006\u0007¨\u0006\b"}, m15073d2 = {"Lcom/discord/audio/enums/WiredHeadsetState;", "", "()V", "Companion", "PluggedIn", "Unplugged", "Lcom/discord/audio/enums/WiredHeadsetState$PluggedIn;", "Lcom/discord/audio/enums/WiredHeadsetState$Unplugged;", "audio_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -38,8 +38,8 @@ public abstract class WiredHeadsetState {
 
         public final WiredHeadsetState from(Intent intent) {
             boolean z;
-            C9971q.m14633g(intent, "intent");
-            if (C9971q.m14638b(intent.getAction(), "android.intent.action.HEADSET_PLUG")) {
+            C9677q.m14633g(intent, "intent");
+            if (C9677q.m14638b(intent.getAction(), "android.intent.action.HEADSET_PLUG")) {
                 boolean z2 = false;
                 if (intent.getIntExtra("state", 0) == 1) {
                     z = true;
@@ -71,7 +71,7 @@ public abstract class WiredHeadsetState {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public PluggedIn(String name, boolean z) {
             super(null);
-            C9971q.m14633g(name, "name");
+            C9677q.m14633g(name, "name");
             this.name = name;
             this.hasMic = z;
         }
@@ -95,7 +95,7 @@ public abstract class WiredHeadsetState {
         }
 
         public final PluggedIn copy(String name, boolean z) {
-            C9971q.m14633g(name, "name");
+            C9677q.m14633g(name, "name");
             return new PluggedIn(name, z);
         }
 
@@ -107,7 +107,7 @@ public abstract class WiredHeadsetState {
                 return false;
             }
             PluggedIn pluggedIn = (PluggedIn) obj;
-            return C9971q.m14638b(this.name, pluggedIn.name) && this.hasMic == pluggedIn.hasMic;
+            return C9677q.m14638b(this.name, pluggedIn.name) && this.hasMic == pluggedIn.hasMic;
         }
 
         public final boolean getHasMic() {

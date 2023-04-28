@@ -2,14 +2,14 @@ package com.discord.media.utils;
 
 import kotlin.Metadata;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9930d;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
+import kotlin.coroutines.jvm.internal.AbstractC9635d;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
-@AbstractC9931e(m14702c = "com.discord.media.utils.MediaResolver", m14701f = "MediaResolver.kt", m14700l = {104, 113, 121, 124}, m14699m = "handleVideo")
+@AbstractC9636e(m14702c = "com.discord.media.utils.MediaResolver", m14701f = "MediaResolver.kt", m14700l = {104, 113, 121, 124}, m14699m = "handleVideo")
 /* loaded from: classes5.dex */
-public final class MediaResolver$handleVideo$1 extends AbstractC9930d {
+public final class MediaResolver$handleVideo$1 extends AbstractC9635d {
     Object L$0;
     Object L$1;
     Object L$2;
@@ -26,7 +26,7 @@ public final class MediaResolver$handleVideo$1 extends AbstractC9930d {
         this.this$0 = mediaResolver;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Object invokeSuspend(Object obj) {
         Object handleVideo;
         this.result = obj;

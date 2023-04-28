@@ -9,27 +9,27 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
-import androidx.core.view.C2733w0;
+import androidx.core.view.C1559w0;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.SpringAnimation;
-import com.discord.mobile_voice_overlay.C4573R;
+import com.discord.mobile_voice_overlay.C3521R;
 import com.discord.mobile_voice_overlay.utils.WindowUtils;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
-import kotlin.jvm.internal.C9977w;
-import kotlin.properties.AbstractC9983c;
-import kotlin.properties.C9981a;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
+import kotlin.jvm.internal.C9683w;
+import kotlin.properties.AbstractC9689c;
+import kotlin.properties.C9687a;
 import kotlin.properties.ReadWriteProperty;
 import kotlin.reflect.KProperty;
 
 @Metadata(m15074d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u0015\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0002\b\u0005\b&\u0018\u00002\u00020\u0001B\u0011\b\u0016\u0012\u0006\u0010\u0015\u001a\u00020\u0014¢\u0006\u0004\bl\u0010mB\u001b\b\u0016\u0012\u0006\u0010\u0015\u001a\u00020\u0014\u0012\b\u0010o\u001a\u0004\u0018\u00010n¢\u0006\u0004\bl\u0010pB#\b\u0016\u0012\u0006\u0010\u0015\u001a\u00020\u0014\u0012\b\u0010o\u001a\u0004\u0018\u00010n\u0012\u0006\u0010q\u001a\u00020\u000b¢\u0006\u0004\bl\u0010rJ\u001c\u0010\u0007\u001a\u00020\u0006*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u0003H\u0002J\u0010\u0010\n\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\bH\u0002J\u0018\u0010\u000e\u001a\u00020\b2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u000bH\u0002J!\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u000f\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\u000bH\u0082\bJ\b\u0010\u0013\u001a\u00020\u0006H\u0002J\u0010\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0015\u001a\u00020\u0014H\u0004J\b\u0010\u0018\u001a\u00020\u0006H\u0004J\u000e\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u0019J\b\u0010\u001d\u001a\u00020\u001cH\u0016J0\u0010#\u001a\u00020\u00062\u0006\u0010\u001e\u001a\u00020\u00192\u0006\u0010\u001f\u001a\u00020\u000b2\u0006\u0010 \u001a\u00020\u000b2\u0006\u0010!\u001a\u00020\u000b2\u0006\u0010\"\u001a\u00020\u000bH\u0014J\u0012\u0010&\u001a\u00020\u00062\b\u0010%\u001a\u0004\u0018\u00010$H\u0015J\u0010\u0010)\u001a\u00020\u00192\u0006\u0010(\u001a\u00020'H\u0016J\u0010\u0010*\u001a\u00020\u00192\u0006\u0010(\u001a\u00020'H\u0016J\b\u0010+\u001a\u00020\u0003H\u0016J\u0010\u0010-\u001a\u00020\u00062\u0006\u0010,\u001a\u00020\u0003H\u0016J\b\u0010.\u001a\u00020\u0003H\u0016J\u0010\u00100\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u0003H\u0016J \u00104\u001a\u00020\u00062\u0006\u00101\u001a\u00020\u000b2\u0006\u00102\u001a\u00020\u000b2\b\b\u0002\u00103\u001a\u00020\u0016J\b\u00105\u001a\u0004\u0018\u00010\bJ\u0010\u00108\u001a\u00020\u00062\u0006\u00107\u001a\u000206H\u0016J\u0012\u0010:\u001a\u00020\u00062\b\b\u0002\u00109\u001a\u00020\u0019H\u0016R\"\u0010;\u001a\u00020\u001c8\u0004@\u0004X\u0084\u000e¢\u0006\u0012\n\u0004\b;\u0010<\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@R.\u0010B\u001a\u000e\u0012\u0004\u0012\u00020'\u0012\u0004\u0012\u00020\u00060A8\u0000@\u0000X\u0080\u000e¢\u0006\u0012\n\u0004\bB\u0010C\u001a\u0004\bD\u0010E\"\u0004\bF\u0010GR\u0017\u0010H\u001a\u00020\u00168\u0006¢\u0006\f\n\u0004\bH\u0010I\u001a\u0004\bJ\u0010KR\u0014\u0010L\u001a\u00020\u000b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bL\u0010MR+\u0010Q\u001a\u00020\u00192\u0006\u0010N\u001a\u00020\u00198V@VX\u0096\u008e\u0002¢\u0006\u0012\n\u0004\bO\u0010P\u001a\u0004\bQ\u0010R\"\u0004\bS\u0010TR0\u0010U\u001a\u0010\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u0006\u0018\u00010A8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bU\u0010C\u001a\u0004\bV\u0010E\"\u0004\bW\u0010GR\u0014\u0010Y\u001a\u00020X8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bY\u0010ZR\u0016\u0010[\u001a\u00020\u000b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b[\u0010MR\u0016\u0010\\\u001a\u00020\u000b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\\\u0010MR \u0010]\u001a\u00020\u00028\u0004X\u0084\u0004¢\u0006\u0012\n\u0004\b]\u0010^\u0012\u0004\ba\u0010b\u001a\u0004\b_\u0010`R \u0010c\u001a\u00020\u00028\u0004X\u0084\u0004¢\u0006\u0012\n\u0004\bc\u0010^\u0012\u0004\be\u0010b\u001a\u0004\bd\u0010`R\u0016\u0010f\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bf\u0010gR\u0018\u0010h\u001a\u0004\u0018\u00010\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bh\u0010gR\u0011\u0010\f\u001a\u00020\u000b8F¢\u0006\u0006\u001a\u0004\bi\u0010jR\u0011\u0010\r\u001a\u00020\u000b8F¢\u0006\u0006\u001a\u0004\bk\u0010j¨\u0006s"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayBubbleWrap;", "Lcom/discord/mobile_voice_overlay/views/OverlayView;", "Landroidx/dynamicanimation/animation/SpringAnimation;", "", "fromPosition", "toPosition", "", "animateTo", "Landroid/graphics/Point;", "newAnchorPoint", "setAnchorAt", "", "centerX", "centerY", "setAnchorAround", "minValue", "desiredValue", "maxValue", "boundAllowedArea", "computeScreenOffset", "Landroid/content/Context;", "context", "Landroid/graphics/Rect;", "getAllowedAreaBounds", "updateViewLayout", "", "isTouchable", "setBubbleTouchable", "Landroid/view/WindowManager$LayoutParams;", "getInitialLayoutParams", "changed", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, ViewProps.ON_LAYOUT, "Landroid/content/res/Configuration;", "newConfig", "onConfigurationChanged", "Landroid/view/MotionEvent;", "motionEvent", "dispatchTouchEvent", "onInterceptTouchEvent", "getX", "x", "setX", "getY", "y", "setY", "dockX", "dockY", "screenBounds", "animateToCoordinate", "moveToAnchorPoint", "Landroid/view/View;", "targetView", "anchorOn", "animate", "anchorOff", "windowLayoutParams", "Landroid/view/WindowManager$LayoutParams;", "getWindowLayoutParams", "()Landroid/view/WindowManager$LayoutParams;", "setWindowLayoutParams", "(Landroid/view/WindowManager$LayoutParams;)V", "Lkotlin/Function1;", "touchDispatchSideEffectHandler", "Lkotlin/jvm/functions/Function1;", "getTouchDispatchSideEffectHandler$mobile_voice_overlay_release", "()Lkotlin/jvm/functions/Function1;", "setTouchDispatchSideEffectHandler$mobile_voice_overlay_release", "(Lkotlin/jvm/functions/Function1;)V", "insetMargins", "Landroid/graphics/Rect;", "getInsetMargins", "()Landroid/graphics/Rect;", "moveThresholdPx", "I", "<set-?>", "isMoving$delegate", "Lkotlin/properties/ReadWriteProperty;", "isMoving", "()Z", "setMoving", "(Z)V", "onMovingStateChanged", "getOnMovingStateChanged", "setOnMovingStateChanged", "", "screenOffset", "[I", "deltaX", "deltaY", "springAnimationX", "Landroidx/dynamicanimation/animation/SpringAnimation;", "getSpringAnimationX", "()Landroidx/dynamicanimation/animation/SpringAnimation;", "getSpringAnimationX$annotations", "()V", "springAnimationY", "getSpringAnimationY", "getSpringAnimationY$annotations", "actualPosition", "Landroid/graphics/Point;", "anchorPosition", "getCenterX", "()I", "getCenterY", "<init>", "(Landroid/content/Context;)V", "Landroid/util/AttributeSet;", "attrs", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "attributeSetId", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes5.dex */
 public abstract class OverlayBubbleWrap extends OverlayView {
-    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9951f0.m14681e(new C9977w(OverlayBubbleWrap.class, "isMoving", "isMoving()Z", 0))};
+    static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {C9656f0.m14681e(new C9683w(OverlayBubbleWrap.class, "isMoving", "isMoving()Z", 0))};
     private Point actualPosition;
     private Point anchorPosition;
     private int deltaX;
@@ -47,20 +47,20 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayBubbleWrap(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
         this.touchDispatchSideEffectHandler = OverlayBubbleWrap$touchDispatchSideEffectHandler$1.INSTANCE;
         this.insetMargins = new Rect();
-        this.moveThresholdPx = getResources().getDimensionPixelOffset(C4573R.dimen.movement_threshold_dp);
-        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C4573R.C4574drawable.bubble_state_selector));
-        C9981a aVar = C9981a.f22098a;
+        this.moveThresholdPx = getResources().getDimensionPixelOffset(C3521R.dimen.movement_threshold_dp);
+        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C3521R.C3522drawable.bubble_state_selector));
+        C9687a aVar = C9687a.f25836a;
         final Boolean bool = Boolean.FALSE;
-        this.isMoving$delegate = new AbstractC9983c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$1
-            @Override // kotlin.properties.AbstractC9983c
+        this.isMoving$delegate = new AbstractC9689c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$1
+            @Override // kotlin.properties.AbstractC9689c
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                C9971q.m14633g(property, "property");
+                C9677q.m14633g(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -77,12 +77,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3778u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f4428u, 0.0f);
         springAnimation.m36547k(50.0f);
         springAnimation.m36511q().m36491f(200.0f);
         springAnimation.m36511q().m36493d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3779v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f4429v, 0.0f);
         springAnimation2.m36547k(50.0f);
         springAnimation2.m36511q().m36493d(0.75f);
         springAnimation2.m36511q().m36491f(200.0f);
@@ -112,7 +112,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         if (obj == null) {
             if ((i3 & 4) != 0) {
                 Context context = overlayBubbleWrap.getContext();
-                C9971q.m14634f(context, "context");
+                C9677q.m14634f(context, "context");
                 rect = overlayBubbleWrap.getAllowedAreaBounds(context);
             }
             overlayBubbleWrap.animateToCoordinate(i, i2, rect);
@@ -170,7 +170,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public void anchorOn(View targetView) {
-        C9971q.m14633g(targetView, "targetView");
+        C9677q.m14633g(targetView, "targetView");
         int[] centerPointOnScreen = WindowUtils.INSTANCE.getCenterPointOnScreen(targetView, new int[2]);
         int i = centerPointOnScreen[0];
         int[] iArr = this.screenOffset;
@@ -179,14 +179,14 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public final void animateToCoordinate(int i, int i2, Rect screenBounds) {
-        C9971q.m14633g(screenBounds, "screenBounds");
+        C9677q.m14633g(screenBounds, "screenBounds");
         animateTo(this.springAnimationX, this.windowLayoutParams.x, Math.min(Math.max(screenBounds.left, i), screenBounds.right - getWidth()));
         animateTo(this.springAnimationY, this.windowLayoutParams.y, Math.min(Math.max(screenBounds.top - this.screenOffset[1], i2), screenBounds.bottom - getHeight()));
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        C9971q.m14633g(motionEvent, "motionEvent");
+        C9677q.m14633g(motionEvent, "motionEvent");
         int action = motionEvent.getAction();
         if (action != 0) {
             boolean z = false;
@@ -202,7 +202,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
                     } else {
                         this.actualPosition.x = ((int) motionEvent.getRawX()) - this.deltaX;
                         this.actualPosition.y = ((int) motionEvent.getRawY()) - this.deltaY;
-                        if (C2733w0.m37030T(this) && this.anchorPosition == null) {
+                        if (C1559w0.m37030T(this) && this.anchorPosition == null) {
                             WindowManager.LayoutParams layoutParams = this.windowLayoutParams;
                             Point point = this.actualPosition;
                             layoutParams.x = point.x;
@@ -224,7 +224,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Rect getAllowedAreaBounds(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         Rect screenSize = WindowUtils.INSTANCE.getScreenSize(context);
         int i = screenSize.left;
         Rect rect = this.insetMargins;
@@ -305,11 +305,11 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         updateViewLayout();
-        if (!C2733w0.m37029U(this) || isLayoutRequested()) {
+        if (!C1559w0.m37029U(this) || isLayoutRequested()) {
             addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$onConfigurationChanged$$inlined$doOnLayout$1
                 @Override // android.view.View.OnLayoutChangeListener
                 public void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
-                    C9971q.m14633g(view, "view");
+                    C9677q.m14633g(view, "view");
                     view.removeOnLayoutChangeListener(this);
                     OverlayBubbleWrap.this.computeScreenOffset();
                 }
@@ -321,7 +321,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        C9971q.m14633g(motionEvent, "motionEvent");
+        C9677q.m14633g(motionEvent, "motionEvent");
         if (motionEvent.getAction() == 2) {
             return isMoving();
         }
@@ -350,12 +350,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     }
 
     public final void setTouchDispatchSideEffectHandler$mobile_voice_overlay_release(Function1<? super MotionEvent, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.touchDispatchSideEffectHandler = function1;
     }
 
     protected final void setWindowLayoutParams(WindowManager.LayoutParams layoutParams) {
-        C9971q.m14633g(layoutParams, "<set-?>");
+        C9677q.m14633g(layoutParams, "<set-?>");
         this.windowLayoutParams = layoutParams;
     }
 
@@ -375,7 +375,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     public final void updateViewLayout() {
         if (isAttachedToWindow() && isManagedByWindow()) {
             Object systemService = getContext().getSystemService("window");
-            C9971q.m14635e(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+            C9677q.m14635e(systemService, "null cannot be cast to non-null type android.view.WindowManager");
             ((WindowManager) systemService).updateViewLayout(this, this.windowLayoutParams);
         }
     }
@@ -383,20 +383,20 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayBubbleWrap(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
         this.touchDispatchSideEffectHandler = OverlayBubbleWrap$touchDispatchSideEffectHandler$1.INSTANCE;
         this.insetMargins = new Rect();
-        this.moveThresholdPx = getResources().getDimensionPixelOffset(C4573R.dimen.movement_threshold_dp);
-        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C4573R.C4574drawable.bubble_state_selector));
-        C9981a aVar = C9981a.f22098a;
+        this.moveThresholdPx = getResources().getDimensionPixelOffset(C3521R.dimen.movement_threshold_dp);
+        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C3521R.C3522drawable.bubble_state_selector));
+        C9687a aVar = C9687a.f25836a;
         final Boolean bool = Boolean.FALSE;
-        this.isMoving$delegate = new AbstractC9983c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$2
-            @Override // kotlin.properties.AbstractC9983c
+        this.isMoving$delegate = new AbstractC9689c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$2
+            @Override // kotlin.properties.AbstractC9689c
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                C9971q.m14633g(property, "property");
+                C9677q.m14633g(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -413,12 +413,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3778u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f4428u, 0.0f);
         springAnimation.m36547k(50.0f);
         springAnimation.m36511q().m36491f(200.0f);
         springAnimation.m36511q().m36493d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3779v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f4429v, 0.0f);
         springAnimation2.m36547k(50.0f);
         springAnimation2.m36511q().m36493d(0.75f);
         springAnimation2.m36511q().m36491f(200.0f);
@@ -430,20 +430,20 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlayBubbleWrap(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         WindowManager.LayoutParams createWindowLayoutParams = WindowUtils.INSTANCE.createWindowLayoutParams();
         createWindowLayoutParams.gravity = 51;
         this.windowLayoutParams = createWindowLayoutParams;
         this.touchDispatchSideEffectHandler = OverlayBubbleWrap$touchDispatchSideEffectHandler$1.INSTANCE;
         this.insetMargins = new Rect();
-        this.moveThresholdPx = getResources().getDimensionPixelOffset(C4573R.dimen.movement_threshold_dp);
-        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C4573R.C4574drawable.bubble_state_selector));
-        C9981a aVar = C9981a.f22098a;
+        this.moveThresholdPx = getResources().getDimensionPixelOffset(C3521R.dimen.movement_threshold_dp);
+        setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), C3521R.C3522drawable.bubble_state_selector));
+        C9687a aVar = C9687a.f25836a;
         final Boolean bool = Boolean.FALSE;
-        this.isMoving$delegate = new AbstractC9983c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$3
-            @Override // kotlin.properties.AbstractC9983c
+        this.isMoving$delegate = new AbstractC9689c<Boolean>(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$3
+            @Override // kotlin.properties.AbstractC9689c
             protected void afterChange(KProperty<?> property, Boolean bool2, Boolean bool3) {
-                C9971q.m14633g(property, "property");
+                C9677q.m14633g(property, "property");
                 boolean booleanValue = bool3.booleanValue();
                 if (bool2.booleanValue() != booleanValue) {
                     Function1<Boolean, Unit> onMovingStateChanged = this.getOnMovingStateChanged();
@@ -460,12 +460,12 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f3778u, 0.0f);
+        SpringAnimation springAnimation = new SpringAnimation(this, DynamicAnimation.f4428u, 0.0f);
         springAnimation.m36547k(50.0f);
         springAnimation.m36511q().m36491f(200.0f);
         springAnimation.m36511q().m36493d(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f3779v, 0.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, DynamicAnimation.f4429v, 0.0f);
         springAnimation2.m36547k(50.0f);
         springAnimation2.m36511q().m36493d(0.75f);
         springAnimation2.m36511q().m36491f(200.0f);

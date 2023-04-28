@@ -7,8 +7,8 @@ import com.facebook.react.bridge.WritableNativeMap;
 import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\b\u0000\u0018\u00002\u00020\u0001BS\u0012\u0018\u0010\u0002\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003\u0012\u0018\u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003\u0012\u0018\u0010\b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003¢\u0006\u0002\u0010\tJ\b\u0010\n\u001a\u00020\u000bH\u0016R \u0010\u0002\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R \u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R \u0010\b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m15073d2 = {"Lcom/discord/media/engine/video/events/DeviceChangedEvent;", "Lcom/discord/reactevents/ReactEvent;", "inputDevices", "", "", "", "", "outputDevices", "videoInputDevices", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V", "serialize", "Lcom/facebook/react/bridge/WritableNativeMap;", "media_engine_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -19,9 +19,9 @@ public final class DeviceChangedEvent implements ReactEvent {
 
     /* JADX WARN: Multi-variable type inference failed */
     public DeviceChangedEvent(List<? extends Map<String, ? extends Object>> inputDevices, List<? extends Map<String, ? extends Object>> outputDevices, List<? extends Map<String, ? extends Object>> videoInputDevices) {
-        C9971q.m14633g(inputDevices, "inputDevices");
-        C9971q.m14633g(outputDevices, "outputDevices");
-        C9971q.m14633g(videoInputDevices, "videoInputDevices");
+        C9677q.m14633g(inputDevices, "inputDevices");
+        C9677q.m14633g(outputDevices, "outputDevices");
+        C9677q.m14633g(videoInputDevices, "videoInputDevices");
         this.inputDevices = inputDevices;
         this.outputDevices = outputDevices;
         this.videoInputDevices = videoInputDevices;
@@ -29,6 +29,6 @@ public final class DeviceChangedEvent implements ReactEvent {
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableNativeMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("inputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.inputDevices)), C11098x.m10921a("outputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.outputDevices)), C11098x.m10921a("videoInputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.videoInputDevices)));
+        return NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("inputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.inputDevices)), C10853x.m10921a("outputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.outputDevices)), C10853x.m10921a("videoInputDevices", NativeArrayExtensionsKt.toNativeArrayOfMaps(this.videoInputDevices)));
     }
 }

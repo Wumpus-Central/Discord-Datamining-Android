@@ -9,7 +9,7 @@ import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u0001\u001aB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\u000b\u001a\u00020\fJ\u0018\u0010\r\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0002JN\u0010\u0012\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0013\u001a\u00020\u00142\u000e\b\u0002\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\f0\u00162\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\f0\u00162\u000e\b\u0002\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\f0\u0016JB\u0010\u0019\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\f0\u00162\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\f0\u00162\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\f0\u0016H\u0002R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u00020\b8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/recycler_view/scroller/Scroller;", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "(Landroidx/recyclerview/widget/RecyclerView;)V", "currentSearch", "Ljava/lang/Runnable;", "layoutManager", "Landroidx/recyclerview/widget/LinearLayoutManager;", "getLayoutManager", "()Landroidx/recyclerview/widget/LinearLayoutManager;", "cancel", "", "doScrollToPosition", ViewProps.POSITION, "", "targetAlignment", "Lcom/discord/recycler_view/scroller/Scroller$TargetAlignment;", "scrollToPosition", "animate", "", "onStart", "Lkotlin/Function0;", "onComplete", "onScrollProgress", "search", "TargetAlignment", "recycler_view_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -97,7 +97,7 @@ public final class Scroller {
     }
 
     public Scroller(RecyclerView recyclerView) {
-        C9971q.m14633g(recyclerView, "recyclerView");
+        C9677q.m14633g(recyclerView, "recyclerView");
         this.recyclerView = recyclerView;
         recyclerView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { // from class: com.discord.recycler_view.scroller.Scroller.1
             @Override // android.view.View.OnAttachStateChangeListener
@@ -123,7 +123,7 @@ public final class Scroller {
 
     private final LinearLayoutManager getLayoutManager() {
         RecyclerView.LayoutManager layoutManager = this.recyclerView.getLayoutManager();
-        C9971q.m14635e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
+        C9677q.m14635e(layoutManager, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager");
         return (LinearLayoutManager) layoutManager;
     }
 
@@ -165,11 +165,11 @@ public final class Scroller {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void search$lambda$0(Scroller this$0, int i, TargetAlignment targetAlignment, Function0 onStart, Function0 onComplete, Function0 onScrollProgress) {
-        C9971q.m14633g(this$0, "this$0");
-        C9971q.m14633g(targetAlignment, "$targetAlignment");
-        C9971q.m14633g(onStart, "$onStart");
-        C9971q.m14633g(onComplete, "$onComplete");
-        C9971q.m14633g(onScrollProgress, "$onScrollProgress");
+        C9677q.m14633g(this$0, "this$0");
+        C9677q.m14633g(targetAlignment, "$targetAlignment");
+        C9677q.m14633g(onStart, "$onStart");
+        C9677q.m14633g(onComplete, "$onComplete");
+        C9677q.m14633g(onScrollProgress, "$onScrollProgress");
         this$0.search(i, targetAlignment, onStart, onComplete, onScrollProgress);
     }
 
@@ -182,10 +182,10 @@ public final class Scroller {
     }
 
     public final void scrollToPosition(int i, TargetAlignment targetAlignment, boolean z, Function0<Unit> onStart, Function0<Unit> onComplete, Function0<Unit> onScrollProgress) {
-        C9971q.m14633g(targetAlignment, "targetAlignment");
-        C9971q.m14633g(onStart, "onStart");
-        C9971q.m14633g(onComplete, "onComplete");
-        C9971q.m14633g(onScrollProgress, "onScrollProgress");
+        C9677q.m14633g(targetAlignment, "targetAlignment");
+        C9677q.m14633g(onStart, "onStart");
+        C9677q.m14633g(onComplete, "onComplete");
+        C9677q.m14633g(onScrollProgress, "onScrollProgress");
         cancel();
         onStart.invoke();
         if (z) {

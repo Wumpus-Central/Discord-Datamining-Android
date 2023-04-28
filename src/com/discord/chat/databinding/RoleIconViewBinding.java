@@ -3,9 +3,9 @@ package com.discord.chat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class RoleIconViewBinding {
@@ -18,8 +18,8 @@ public final class RoleIconViewBinding {
     }
 
     public static RoleIconViewBinding bind(View view) {
-        int i = C4254R.C4256id.role_icon_view_unicode_emoji;
-        SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.role_icon_view_unicode_emoji;
+        SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) C13836a.m2313a(view, i);
         if (simpleDraweeSpanTextView != null) {
             return new RoleIconViewBinding(view, simpleDraweeSpanTextView);
         }
@@ -28,7 +28,7 @@ public final class RoleIconViewBinding {
 
     public static RoleIconViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.role_icon_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.role_icon_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

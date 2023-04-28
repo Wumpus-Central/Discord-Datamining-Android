@@ -10,15 +10,15 @@ import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.recycler_view.scroller.Scroller;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9914r;
+import kotlin.collections.C9618r;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.AbstractC9973s;
+import kotlin.jvm.internal.AbstractC9679s;
 import kotlin.jvm.internal.Ref$BooleanRef;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, m15073d2 = {"<anonymous>", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-public final class ChatListView$onChatListUpdate$1$2 extends AbstractC9973s implements Function0<Unit> {
+public final class ChatListView$onChatListUpdate$1$2 extends AbstractC9679s implements Function0<Unit> {
     final /* synthetic */ ChatListUpdate $update;
     final /* synthetic */ Ref$BooleanRef $wasAtBottom;
     final /* synthetic */ ChatListView this$0;
@@ -45,7 +45,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends AbstractC9973s impl
         }
         ChatListAction action = this.$update.getAction();
         if (action instanceof ChatListAction.ScrollTo) {
-            X = C9914r.m14767X(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
+            X = C9618r.m14767X(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
             if (((ChatListItem) X) instanceof SeparatorChatListItem) {
                 targetAlignment = new Scroller.TargetAlignment.Top(SizeUtilsKt.getDpToPx(4));
             } else {
@@ -53,7 +53,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends AbstractC9973s impl
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f22067k) {
+            if (!this.$wasAtBottom.f25805k) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

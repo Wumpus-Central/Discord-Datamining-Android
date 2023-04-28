@@ -1,10 +1,10 @@
 package com.discord.chat.bridge.row;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.C3622a2;
-import bj.C3652h;
-import bj.C3676m0;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2530h;
+import bj.C2555m0;
+import bj.C2560n1;
 import com.discord.chat.bridge.BackgroundHighlight;
 import com.discord.chat.bridge.BackgroundHighlight$$serializer;
 import com.discord.chat.bridge.ChangeType;
@@ -16,16 +16,16 @@ import com.discord.chat.bridge.reaction.ReactionsTheme$$serializer;
 import com.discord.chat.bridge.truncation.Truncation;
 import com.discord.chat.bridge.truncation.Truncation$$serializer;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p163j$.util.Spliterator;
-import p449yi.AbstractC14435f;
+import p164j$.util.Spliterator;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b:\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 f2\u00020\u0001:\u0002efBÑ\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\n\b\u0001\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\u0006\u0010\u0015\u001a\u00020\b\u0012\u0006\u0010\u0016\u001a\u00020\b\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u001d\u0012\u0006\u0010\u001e\u001a\u00020\b\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010 ¢\u0006\u0002\u0010!B×\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\b\b\u0002\u0010\u0015\u001a\u00020\b\u0012\b\b\u0002\u0010\u0016\u001a\u00020\b\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u001b\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001d\u0012\b\b\u0002\u0010\u001e\u001a\u00020\b¢\u0006\u0002\u0010\"J\t\u0010D\u001a\u00020\u0003HÆ\u0003J\u000b\u0010E\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u000b\u0010F\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u000b\u0010G\u001a\u0004\u0018\u00010\u0014HÆ\u0003J\t\u0010H\u001a\u00020\bHÆ\u0003J\t\u0010I\u001a\u00020\bHÆ\u0003J\u000b\u0010J\u001a\u0004\u0018\u00010\u0018HÆ\u0003J\u0010\u0010K\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010<J\u000b\u0010L\u001a\u0004\u0018\u00010\u001bHÆ\u0003J\u000b\u0010M\u001a\u0004\u0018\u00010\u001dHÆ\u0003J\t\u0010N\u001a\u00020\bHÆ\u0003J\t\u0010O\u001a\u00020\u0006HÆ\u0003J\u0010\u0010P\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010(J\u0010\u0010Q\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010(J\t\u0010R\u001a\u00020\u000bHÆ\u0003J\u0010\u0010S\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010(J\u0010\u0010T\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010(J\u0010\u0010U\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010(J\u000b\u0010V\u001a\u0004\u0018\u00010\u0010HÆ\u0003Jæ\u0001\u0010W\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\n\u001a\u00020\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00142\b\b\u0002\u0010\u0015\u001a\u00020\b2\b\b\u0002\u0010\u0016\u001a\u00020\b2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\b\b\u0002\u0010\u001e\u001a\u00020\bHÆ\u0001¢\u0006\u0002\u0010XJ\u0013\u0010Y\u001a\u00020\b2\b\u0010Z\u001a\u0004\u0018\u00010[HÖ\u0003J\t\u0010\\\u001a\u00020\u0003HÖ\u0001J\t\u0010]\u001a\u00020\u0010HÖ\u0001J!\u0010^\u001a\u00020_2\u0006\u0010`\u001a\u00020\u00002\u0006\u0010a\u001a\u00020b2\u0006\u0010c\u001a\u00020dHÇ\u0001R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b%\u0010$R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b&\u0010$R\u0015\u0010\r\u001a\u0004\u0018\u00010\b¢\u0006\n\n\u0002\u0010)\u001a\u0004\b'\u0010(R\u0013\u0010\u001c\u001a\u0004\u0018\u00010\u001d¢\u0006\b\n\u0000\u001a\u0004\b*\u0010+R\u0015\u0010\u000e\u001a\u0004\u0018\u00010\b¢\u0006\n\n\u0002\u0010)\u001a\u0004\b,\u0010(R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b-\u0010.R\u0011\u0010\u001e\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b/\u00100R\u0015\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\n\n\u0002\u0010)\u001a\u0004\b1\u0010(R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u00103R\u0011\u0010\u0015\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u00100R\u0015\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\n\n\u0002\u0010)\u001a\u0004\b4\u0010(R\u001c\u0010\n\u001a\u00020\u000b8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b5\u00106\u001a\u0004\b7\u00108R\u0013\u0010\u0017\u001a\u0004\u0018\u00010\u0018¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0015\u0010\u0019\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010=\u001a\u0004\b;\u0010<R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\b\n\u0000\u001a\u0004\b>\u0010?R\u0011\u0010\u0016\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b@\u00100R\u0015\u0010\f\u001a\u0004\u0018\u00010\b¢\u0006\n\n\u0002\u0010)\u001a\u0004\bA\u0010(R\u0013\u0010\u001a\u001a\u0004\u0018\u00010\u001b¢\u0006\b\n\u0000\u001a\u0004\bB\u0010C¨\u0006g"}, m15073d2 = {"Lcom/discord/chat/bridge/row/MessageRow;", "Lcom/discord/chat/bridge/row/Row;", "seen1", "", "index", "changeType", "Lcom/discord/chat/bridge/ChangeType;", "jumped", "", "highlightJumpedOnceOnly", "message", "Lcom/discord/chat/bridge/MessageBase;", "scrollTo", "animated", "canAddNewReactions", "addReactionLabel", "", "addNewReactionAccessibilityLabel", "addNewBurstReactionAccessibilityLabel", "reactionsTheme", "Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "isHighlight", "renderContentOnly", "messageFrame", "Lcom/discord/chat/bridge/messageframe/MessageFrame;", "reactTag", "truncation", "Lcom/discord/chat/bridge/truncation/Truncation;", "backgroundHighlight", "Lcom/discord/chat/bridge/BackgroundHighlight;", "enableSwipeToReply", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;ZZLcom/discord/chat/bridge/messageframe/MessageFrame;Ljava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(ILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;ZZLcom/discord/chat/bridge/messageframe/MessageFrame;Ljava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;Z)V", "getAddNewBurstReactionAccessibilityLabel", "()Ljava/lang/String;", "getAddNewReactionAccessibilityLabel", "getAddReactionLabel", "getAnimated", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getBackgroundHighlight", "()Lcom/discord/chat/bridge/BackgroundHighlight;", "getCanAddNewReactions", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getEnableSwipeToReply", "()Z", "getHighlightJumpedOnceOnly", "getIndex", "()I", "getJumped", "getMessage$annotations", "()V", "getMessage", "()Lcom/discord/chat/bridge/MessageBase;", "getMessageFrame", "()Lcom/discord/chat/bridge/messageframe/MessageFrame;", "getReactTag", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getReactionsTheme", "()Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "getRenderContentOnly", "getScrollTo", "getTruncation", "()Lcom/discord/chat/bridge/truncation/Truncation;", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "(ILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;ZZLcom/discord/chat/bridge/messageframe/MessageFrame;Ljava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;Z)Lcom/discord/chat/bridge/row/MessageRow;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class MessageRow extends Row {
@@ -66,10 +66,10 @@ public final class MessageRow extends Row {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ MessageRow(int i, int i2, ChangeType changeType, Boolean bool, Boolean bool2, @AbstractC14435f(with = MessageSerializer.class) MessageBase messageBase, Boolean bool3, Boolean bool4, Boolean bool5, String str, String str2, String str3, ReactionsTheme reactionsTheme, boolean z, boolean z2, MessageFrame messageFrame, Integer num, Truncation truncation, BackgroundHighlight backgroundHighlight, boolean z3, SerializationConstructorMarker serializationConstructorMarker) {
+    public /* synthetic */ MessageRow(int i, int i2, ChangeType changeType, Boolean bool, Boolean bool2, @AbstractC14370f(with = MessageSerializer.class) MessageBase messageBase, Boolean bool3, Boolean bool4, Boolean bool5, String str, String str2, String str3, ReactionsTheme reactionsTheme, boolean z, boolean z2, MessageFrame messageFrame, Integer num, Truncation truncation, BackgroundHighlight backgroundHighlight, boolean z3, SerializationConstructorMarker serializationConstructorMarker) {
         super(null);
         if (19 != (i & 19)) {
-            C3681n1.m33818b(i, 19, MessageRow$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 19, MessageRow$$serializer.INSTANCE.getDescriptor());
         }
         BackgroundHighlight backgroundHighlight2 = null;
         this.index = i2;
@@ -153,7 +153,7 @@ public final class MessageRow extends Row {
         }
     }
 
-    @AbstractC14435f(with = MessageSerializer.class)
+    @AbstractC14370f(with = MessageSerializer.class)
     public static /* synthetic */ void getMessage$annotations() {
     }
 
@@ -173,9 +173,9 @@ public final class MessageRow extends Row {
         boolean z13;
         boolean z14;
         boolean z15;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z16 = false;
         output.mo13866x(serialDesc, 0, self.getIndex());
         output.mo13870t(serialDesc, 1, ChangeType.Serializer.INSTANCE, self.getChangeType());
@@ -185,7 +185,7 @@ public final class MessageRow extends Row {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 2, C3652h.f5959a, self.jumped);
+            output.mo13874p(serialDesc, 2, C2530h.f6761a, self.jumped);
         }
         if (!output.mo13893A(serialDesc, 3) && self.highlightJumpedOnceOnly == null) {
             z2 = false;
@@ -193,7 +193,7 @@ public final class MessageRow extends Row {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 3, C3652h.f5959a, self.highlightJumpedOnceOnly);
+            output.mo13874p(serialDesc, 3, C2530h.f6761a, self.highlightJumpedOnceOnly);
         }
         output.mo13870t(serialDesc, 4, MessageSerializer.INSTANCE, self.message);
         if (!output.mo13893A(serialDesc, 5) && self.scrollTo == null) {
@@ -202,7 +202,7 @@ public final class MessageRow extends Row {
             z3 = true;
         }
         if (z3) {
-            output.mo13874p(serialDesc, 5, C3652h.f5959a, self.scrollTo);
+            output.mo13874p(serialDesc, 5, C2530h.f6761a, self.scrollTo);
         }
         if (!output.mo13893A(serialDesc, 6) && self.animated == null) {
             z4 = false;
@@ -210,7 +210,7 @@ public final class MessageRow extends Row {
             z4 = true;
         }
         if (z4) {
-            output.mo13874p(serialDesc, 6, C3652h.f5959a, self.animated);
+            output.mo13874p(serialDesc, 6, C2530h.f6761a, self.animated);
         }
         if (!output.mo13893A(serialDesc, 7) && self.canAddNewReactions == null) {
             z5 = false;
@@ -218,7 +218,7 @@ public final class MessageRow extends Row {
             z5 = true;
         }
         if (z5) {
-            output.mo13874p(serialDesc, 7, C3652h.f5959a, self.canAddNewReactions);
+            output.mo13874p(serialDesc, 7, C2530h.f6761a, self.canAddNewReactions);
         }
         if (!output.mo13893A(serialDesc, 8) && self.addReactionLabel == null) {
             z6 = false;
@@ -226,7 +226,7 @@ public final class MessageRow extends Row {
             z6 = true;
         }
         if (z6) {
-            output.mo13874p(serialDesc, 8, C3622a2.f5917a, self.addReactionLabel);
+            output.mo13874p(serialDesc, 8, C2500a2.f6719a, self.addReactionLabel);
         }
         if (!output.mo13893A(serialDesc, 9) && self.addNewReactionAccessibilityLabel == null) {
             z7 = false;
@@ -234,7 +234,7 @@ public final class MessageRow extends Row {
             z7 = true;
         }
         if (z7) {
-            output.mo13874p(serialDesc, 9, C3622a2.f5917a, self.addNewReactionAccessibilityLabel);
+            output.mo13874p(serialDesc, 9, C2500a2.f6719a, self.addNewReactionAccessibilityLabel);
         }
         if (!output.mo13893A(serialDesc, 10) && self.addNewBurstReactionAccessibilityLabel == null) {
             z8 = false;
@@ -242,7 +242,7 @@ public final class MessageRow extends Row {
             z8 = true;
         }
         if (z8) {
-            output.mo13874p(serialDesc, 10, C3622a2.f5917a, self.addNewBurstReactionAccessibilityLabel);
+            output.mo13874p(serialDesc, 10, C2500a2.f6719a, self.addNewBurstReactionAccessibilityLabel);
         }
         if (!output.mo13893A(serialDesc, 11) && self.reactionsTheme == null) {
             z9 = false;
@@ -282,7 +282,7 @@ public final class MessageRow extends Row {
             z13 = true;
         }
         if (z13) {
-            output.mo13874p(serialDesc, 15, C3676m0.f5992a, self.reactTag);
+            output.mo13874p(serialDesc, 15, C2555m0.f6794a, self.reactTag);
         }
         if (!output.mo13893A(serialDesc, 16) && self.truncation == null) {
             z14 = false;
@@ -385,8 +385,8 @@ public final class MessageRow extends Row {
     }
 
     public final MessageRow copy(int i, ChangeType changeType, Boolean bool, Boolean bool2, MessageBase message, Boolean bool3, Boolean bool4, Boolean bool5, String str, String str2, String str3, ReactionsTheme reactionsTheme, boolean z, boolean z2, MessageFrame messageFrame, Integer num, Truncation truncation, BackgroundHighlight backgroundHighlight, boolean z3) {
-        C9971q.m14633g(changeType, "changeType");
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(changeType, "changeType");
+        C9677q.m14633g(message, "message");
         return new MessageRow(i, changeType, bool, bool2, message, bool3, bool4, bool5, str, str2, str3, reactionsTheme, z, z2, messageFrame, num, truncation, backgroundHighlight, z3);
     }
 
@@ -398,7 +398,7 @@ public final class MessageRow extends Row {
             return false;
         }
         MessageRow messageRow = (MessageRow) obj;
-        return getIndex() == messageRow.getIndex() && getChangeType() == messageRow.getChangeType() && C9971q.m14638b(this.jumped, messageRow.jumped) && C9971q.m14638b(this.highlightJumpedOnceOnly, messageRow.highlightJumpedOnceOnly) && C9971q.m14638b(this.message, messageRow.message) && C9971q.m14638b(this.scrollTo, messageRow.scrollTo) && C9971q.m14638b(this.animated, messageRow.animated) && C9971q.m14638b(this.canAddNewReactions, messageRow.canAddNewReactions) && C9971q.m14638b(this.addReactionLabel, messageRow.addReactionLabel) && C9971q.m14638b(this.addNewReactionAccessibilityLabel, messageRow.addNewReactionAccessibilityLabel) && C9971q.m14638b(this.addNewBurstReactionAccessibilityLabel, messageRow.addNewBurstReactionAccessibilityLabel) && C9971q.m14638b(this.reactionsTheme, messageRow.reactionsTheme) && this.isHighlight == messageRow.isHighlight && this.renderContentOnly == messageRow.renderContentOnly && C9971q.m14638b(this.messageFrame, messageRow.messageFrame) && C9971q.m14638b(this.reactTag, messageRow.reactTag) && C9971q.m14638b(this.truncation, messageRow.truncation) && C9971q.m14638b(this.backgroundHighlight, messageRow.backgroundHighlight) && this.enableSwipeToReply == messageRow.enableSwipeToReply;
+        return getIndex() == messageRow.getIndex() && getChangeType() == messageRow.getChangeType() && C9677q.m14638b(this.jumped, messageRow.jumped) && C9677q.m14638b(this.highlightJumpedOnceOnly, messageRow.highlightJumpedOnceOnly) && C9677q.m14638b(this.message, messageRow.message) && C9677q.m14638b(this.scrollTo, messageRow.scrollTo) && C9677q.m14638b(this.animated, messageRow.animated) && C9677q.m14638b(this.canAddNewReactions, messageRow.canAddNewReactions) && C9677q.m14638b(this.addReactionLabel, messageRow.addReactionLabel) && C9677q.m14638b(this.addNewReactionAccessibilityLabel, messageRow.addNewReactionAccessibilityLabel) && C9677q.m14638b(this.addNewBurstReactionAccessibilityLabel, messageRow.addNewBurstReactionAccessibilityLabel) && C9677q.m14638b(this.reactionsTheme, messageRow.reactionsTheme) && this.isHighlight == messageRow.isHighlight && this.renderContentOnly == messageRow.renderContentOnly && C9677q.m14638b(this.messageFrame, messageRow.messageFrame) && C9677q.m14638b(this.reactTag, messageRow.reactTag) && C9677q.m14638b(this.truncation, messageRow.truncation) && C9677q.m14638b(this.backgroundHighlight, messageRow.backgroundHighlight) && this.enableSwipeToReply == messageRow.enableSwipeToReply;
     }
 
     public final String getAddNewBurstReactionAccessibilityLabel() {
@@ -565,8 +565,8 @@ public final class MessageRow extends Row {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageRow(int i, ChangeType changeType, Boolean bool, Boolean bool2, MessageBase message, Boolean bool3, Boolean bool4, Boolean bool5, String str, String str2, String str3, ReactionsTheme reactionsTheme, boolean z, boolean z2, MessageFrame messageFrame, Integer num, Truncation truncation, BackgroundHighlight backgroundHighlight, boolean z3) {
         super(null);
-        C9971q.m14633g(changeType, "changeType");
-        C9971q.m14633g(message, "message");
+        C9677q.m14633g(changeType, "changeType");
+        C9677q.m14633g(message, "message");
         this.index = i;
         this.changeType = changeType;
         this.jumped = bool;

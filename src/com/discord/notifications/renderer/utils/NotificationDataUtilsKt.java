@@ -24,7 +24,7 @@ import com.discord.notifications.actions.intents.NotificationAction;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.api.NotificationMessage;
 import com.discord.notifications.api.Sticker;
-import com.discord.notifications.renderer.C4605R;
+import com.discord.notifications.renderer.C3555R;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.MessageFlag;
 import com.discord.primitives.MessageFlagKt;
@@ -39,19 +39,19 @@ import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
-import kotlin.collections.C9905i;
-import kotlin.collections.C9906j;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
-import p267of.C11289v;
+import kotlin.collections.C9609i;
+import kotlin.collections.C9610j;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
+import p268of.C11053v;
 
 @Metadata(m15074d1 = {"\u0000l\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\u0006H\u0002\u001a/\u0010\b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0006H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\r\u001a(\u0010\u000e\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a0\u0010\u0010\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0012\u001a\u00020\u00132\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005\u001a\u0016\u0010\u0014\u001a\u0004\u0018\u00010\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a(\u0010\u0015\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a\u000e\u0010\u0016\u001a\u0004\u0018\u00010\t*\u00020\u000fH\u0000\u001a\u0014\u0010\u0017\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u0018\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u0019\u001a\u00020\u0006*\u00020\u000fH\u0000\u001a\u0014\u0010\u001a\u001a\u00020\u0006*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0014\u0010\u001b\u001a\u00020\u0006*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001c\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u001d\u001a\u00020\u0006*\u00020\u000fH\u0000\u001a\f\u0010\u001e\u001a\u00020\u001f*\u00020\u000fH\u0000\u001a\u0016\u0010 \u001a\u00020!*\u00020\u000f2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0000\u001a\u0018\u0010$\u001a\u0004\u0018\u00010!*\u00020\u000f2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0000\u001a<\u0010%\u001a\u00020&*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\b\u0010\"\u001a\u0004\u0018\u00010#2\b\u0010'\u001a\u0004\u0018\u00010#H\u0000\u001a\f\u0010(\u001a\u00020)*\u00020\u000fH\u0000\u001a\u0016\u0010*\u001a\u0004\u0018\u00010+*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u0010,\u001a\u00020\u0006*\u00020\u000f\u001a\u001c\u0010-\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010.\u001a\u00020)\u001a\u0014\u0010/\u001a\u00020\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00100\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\f\u00101\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\u0016\u00102\u001a\u0004\u0018\u00010\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00103\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\f\u00104\u001a\u000205*\u00020#H\u0002\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u00066"}, m15073d2 = {"getPendingIntent", "Landroid/app/PendingIntent;", "context", "Landroid/content/Context;", "notificationDataMap", "", "", "tag", "getSystemMessageUserJoin", "", "userId", "Lcom/discord/primitives/UserId;", "userName", "getSystemMessageUserJoin-_NT-lnE", "getButtonPendingIntent", "Lcom/discord/notifications/api/NotificationData;", "getCallAction", "Landroidx/core/app/NotificationCompat$Action;", "isAcceptAction", "", "getContent", "getContentPendingIntent", "getConversationTitle", "getDeletePendingIntent", "getDirectReplyAction", "getGroupKey", "getIconUrl", "getIconUrlForAvatar", "getMarkAsReadAction", "getNotificationCategory", "getSendTime", "", "getSender", "Landroidx/core/app/Person;", "icon", "Landroid/graphics/Bitmap;", "getSenderForMessageNotification", "getShortcutInfo", "Landroidx/core/content/pm/ShortcutInfoCompat;", "avatar", "getSmallIcon", "", "getSound", "Landroid/net/Uri;", "getTag", "getTimedMuteAction", "numMessages", "getTitle", "isConversation", "isGroupConversation", "renderMessageContent", "shouldUseBigText", "toIconCompat", "Landroidx/core/graphics/drawable/IconCompat;", "notification_renderer_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes3.dex */
 public final class NotificationDataUtilsKt {
     public static final PendingIntent getButtonPendingIntent(NotificationData notificationData, Context context, Map<String, String> notificationDataMap) {
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(notificationDataMap, "notificationDataMap");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(notificationDataMap, "notificationDataMap");
         String tag = getTag(notificationData);
         return getPendingIntent(context, notificationDataMap, tag + "button");
     }
@@ -62,25 +62,25 @@ public final class NotificationDataUtilsKt {
         Pair pair;
         int i;
         Map v;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(notificationDataMap, "notificationDataMap");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(notificationDataMap, "notificationDataMap");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
             return null;
         }
         long j = channelId.m42098unboximpl();
         if (z) {
-            v = C11289v.m10237v(notificationDataMap);
+            v = C11053v.m10237v(notificationDataMap);
             v.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f22042a;
+            Unit unit = Unit.f25780a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j, null), context, 0, false, 6, null);
         }
         if (z) {
-            pair = C11098x.m10921a(I18nUtilsKt.i18nFormat$default(context, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context, C4605R.color.green_360)));
+            pair = C10853x.m10921a(I18nUtilsKt.i18nFormat$default(context, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context, C3555R.color.green_360)));
         } else {
-            pair = C11098x.m10921a(I18nUtilsKt.i18nFormat$default(context, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context, C4605R.color.red_400)));
+            pair = C10853x.m10921a(I18nUtilsKt.i18nFormat$default(context, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context, C3555R.color.red_400)));
         }
         int intValue = ((Number) pair.m15066b()).intValue();
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
@@ -92,11 +92,11 @@ public final class NotificationDataUtilsKt {
         spannableStringBuilder.setSpan(foregroundColorSpan, length2, spannableStringBuilder.length(), 17);
         spannableStringBuilder.setSpan(styleSpan, length, spannableStringBuilder.length(), 17);
         if (z) {
-            i = C4605R.C4606drawable.ic_call_24dp;
+            i = C3555R.C3556drawable.ic_call_24dp;
         } else {
-            i = C4605R.C4606drawable.ic_call_disconnect_24dp;
+            i = C3555R.C3556drawable.ic_call_disconnect_24dp;
         }
-        return new NotificationCompat.Action.C2165a(i, spannableStringBuilder, pendingIntent).m38584b();
+        return new NotificationCompat.Action.C0976a(i, spannableStringBuilder, pendingIntent).m38584b();
     }
 
     public static final CharSequence getContent(NotificationData notificationData, Context context) {
@@ -107,8 +107,8 @@ public final class NotificationDataUtilsKt {
         boolean z3;
         boolean z4;
         boolean z5;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
         String type = notificationData.getType();
         boolean z6 = false;
         switch (type.hashCode()) {
@@ -227,9 +227,9 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final PendingIntent getContentPendingIntent(NotificationData notificationData, Context context, Map<String, String> notificationDataMap) {
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(notificationDataMap, "notificationDataMap");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(notificationDataMap, "notificationDataMap");
         String tag = getTag(notificationData);
         return getPendingIntent(context, notificationDataMap, tag + "content");
     }
@@ -240,8 +240,8 @@ public final class NotificationDataUtilsKt {
         boolean z3;
         boolean z4;
         String userUsername;
-        C9971q.m14633g(notificationData, "<this>");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
+        C9677q.m14633g(notificationData, "<this>");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
             return null;
         }
         Integer channelType = notificationData.getChannelType();
@@ -284,23 +284,23 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final PendingIntent getDeletePendingIntent(NotificationData notificationData, Context context) {
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
         return NotificationAction.DefaultImpls.toPendingIntent$default(new DeleteAction(getTag(notificationData)), context, 0, false, 6, null);
     }
 
     public static final NotificationCompat.Action getDirectReplyAction(NotificationData notificationData, Context context) {
         ChannelId channelId;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.C2165a(C4605R.C4606drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m42098unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).m38585a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).m38581e(true).m38578h(1).m38577i(false).m38584b();
+        return new NotificationCompat.Action.C0976a(C3555R.C3556drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m42098unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).m38585a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).m38581e(true).m38578h(1).m38577i(false).m38584b();
     }
 
     public static final String getGroupKey(NotificationData notificationData) {
-        C9971q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(notificationData, "<this>");
         String type = notificationData.getType();
         return "GROUP_" + type;
     }
@@ -326,8 +326,8 @@ public final class NotificationDataUtilsKt {
     public static final String getIconUrlForAvatar(NotificationData notificationData, Context context) {
         boolean z;
         String str;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         String str2 = IconUrlUtils.m41998getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m42063getGuildIdqOKuAAo(), notificationData.m42066getUserIdwUX8bhU(), null, false, 24, null);
         if (str2.length() == 0) {
@@ -344,9 +344,9 @@ public final class NotificationDataUtilsKt {
 
     public static final NotificationCompat.Action getMarkAsReadAction(NotificationData notificationData, Context context) {
         ChannelId channelId;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
             return null;
         }
         long j = channelId.m42098unboximpl();
@@ -354,7 +354,7 @@ public final class NotificationDataUtilsKt {
         if (str == null) {
             return null;
         }
-        return new NotificationCompat.Action.C2165a(C4605R.C4606drawable.ic_check_grey_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.MARK_AS_READ, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MarkAsReadAction(getTag(notificationData), j, str, null), context, 0, false, 6, null)).m38578h(2).m38577i(false).m38584b();
+        return new NotificationCompat.Action.C0976a(C3555R.C3556drawable.ic_check_grey_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.MARK_AS_READ, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MarkAsReadAction(getTag(notificationData), j, str, null), context, 0, false, 6, null)).m38578h(2).m38577i(false).m38584b();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x005f A[RETURN, SYNTHETIC] */
@@ -366,7 +366,7 @@ public final class NotificationDataUtilsKt {
     public static final java.lang.String getNotificationCategory(com.discord.notifications.api.NotificationData r1) {
         /*
             java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.C9971q.m14633g(r1, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r1, r0)
             java.lang.String r1 = r1.getType()
             int r0 = r1.hashCode()
             switch(r0) {
@@ -444,7 +444,7 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final long getSendTime(NotificationData notificationData) {
-        C9971q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(notificationData, "<this>");
         return System.currentTimeMillis();
     }
 
@@ -458,7 +458,7 @@ public final class NotificationDataUtilsKt {
     public static final androidx.core.app.Person getSender(com.discord.notifications.api.NotificationData r2, android.graphics.Bitmap r3) {
         /*
             java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.C9971q.m14633g(r2, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r2, r0)
             androidx.core.app.Person$c r0 = new androidx.core.app.Person$c
             r0.<init>()
             java.lang.String r1 = r2.getUserUsername()
@@ -487,14 +487,14 @@ public final class NotificationDataUtilsKt {
             androidx.core.app.Person$c r2 = r2.m38388c(r3)
             androidx.core.app.Person r2 = r2.m38390a()
             java.lang.String r3 = "Builder()\n        .setNa…ompat())\n        .build()"
-            kotlin.jvm.internal.C9971q.m14634f(r2, r3)
+            kotlin.jvm.internal.C9677q.m14634f(r2, r3)
             return r2
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getSender(com.discord.notifications.api.NotificationData, android.graphics.Bitmap):androidx.core.app.Person");
     }
 
     public static final Person getSenderForMessageNotification(NotificationData notificationData, Bitmap bitmap) {
-        C9971q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(notificationData, "<this>");
         if (notificationData.isFromCurrentUser()) {
             return null;
         }
@@ -504,46 +504,46 @@ public final class NotificationDataUtilsKt {
     public static final ShortcutInfoCompat getShortcutInfo(NotificationData notificationData, Context context, Map<String, String> notificationDataMap, Bitmap bitmap, Bitmap bitmap2) {
         List d;
         ShortcutInfoCompat createShortcut;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(notificationDataMap, "notificationDataMap");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(notificationDataMap, "notificationDataMap");
         String valueOf = String.valueOf(notificationData.m42062getChannelIdqMVnFVQ());
         CharSequence title = getTitle(notificationData, context);
         CharSequence title2 = getTitle(notificationData, context);
         Intent createShortcutIntent = ShortcutData.Companion.createShortcutIntent(context, "android.intent.action.VIEW", NotificationAction.Companion.getActivityClass(), getTag(notificationData), notificationDataMap);
-        d = C9905i.m14825d(getSender(notificationData, bitmap2));
+        d = C9609i.m14825d(getSender(notificationData, bitmap2));
         createShortcut = ShortcutUtilsKt.createShortcut(context, valueOf, title, title2, bitmap, d, createShortcutIntent, (r17 & 64) != 0 ? 0 : 0);
         return createShortcut;
     }
 
     public static final int getSmallIcon(NotificationData notificationData) {
-        C9971q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(notificationData, "<this>");
         String type = notificationData.getType();
         int hashCode = type.hashCode();
         if (hashCode != -1327124998) {
             if (hashCode != 998188116) {
                 if (hashCode == 1770025841 && type.equals(NotificationData.TYPE_CALL_RING)) {
-                    return C4605R.C4606drawable.ic_notification_call_24dp;
+                    return C3555R.C3556drawable.ic_notification_call_24dp;
                 }
             } else if (type.equals(NotificationData.TYPE_MESSAGE_CREATE)) {
-                return C4605R.C4606drawable.ic_notification_message_24dp;
+                return C3555R.C3556drawable.ic_notification_message_24dp;
             }
         } else if (type.equals(NotificationData.TYPE_RELATIONSHIP_ADD)) {
-            return C4605R.C4606drawable.ic_notification_friends_24dp;
+            return C3555R.C3556drawable.ic_notification_friends_24dp;
         }
-        return C4605R.C4606drawable.ic_notification_24dp;
+        return C3555R.C3556drawable.ic_notification_24dp;
     }
 
     public static final Uri getSound(NotificationData notificationData, Context context) {
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_CALL_RING)) {
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_CALL_RING)) {
             return null;
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append("android.resource://");
         String packageName = context.getPackageName();
-        int i = C4605R.raw.call_ringing;
+        int i = C3555R.raw.call_ringing;
         sb2.append(packageName + "/" + i);
         return Uri.parse(sb2.toString());
     }
@@ -552,7 +552,7 @@ public final class NotificationDataUtilsKt {
     private static final CharSequence m42075getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
         List l;
         long j;
-        l = C9906j.m14817l(I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_001, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_002, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_003, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_004, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_005, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_006, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_007, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_008, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_009, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_010, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_011, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_012, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_013);
+        l = C9610j.m14817l(I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_001, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_002, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_003, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_004, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_005, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_006, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_007, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_008, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_009, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_010, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_011, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_012, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_013);
         if (userId != null) {
             j = userId.m42162unboximpl();
         } else {
@@ -590,7 +590,7 @@ public final class NotificationDataUtilsKt {
     public static final java.lang.String getTag(com.discord.notifications.api.NotificationData r3) {
         /*
             java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.C9971q.m14633g(r3, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r3, r0)
             java.lang.String r0 = r3.getType()
             int r1 = r0.hashCode()
             switch(r1) {
@@ -710,12 +710,12 @@ public final class NotificationDataUtilsKt {
 
     public static final NotificationCompat.Action getTimedMuteAction(NotificationData notificationData, Context context, int i) {
         ChannelId channelId;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i < 2 || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i < 2 || (channelId = notificationData.m42062getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.C2165a(C4605R.C4606drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m42063getGuildIdqOKuAAo(), channelId.m42098unboximpl(), null), context, 0, false, 6, null)).m38584b();
+        return new NotificationCompat.Action.C0976a(C3555R.C3556drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m42063getGuildIdqOKuAAo(), channelId.m42098unboximpl(), null), context, 0, false, 6, null)).m38584b();
     }
 
     public static final CharSequence getTitle(NotificationData notificationData, Context context) {
@@ -726,8 +726,8 @@ public final class NotificationDataUtilsKt {
         boolean z2;
         boolean z3;
         boolean z4;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
         String type = notificationData.getType();
         switch (type.hashCode()) {
             case -1502317553:
@@ -835,14 +835,14 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final boolean isConversation(NotificationData notificationData) {
-        C9971q.m14633g(notificationData, "<this>");
-        return C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE);
+        C9677q.m14633g(notificationData, "<this>");
+        return C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE);
     }
 
     public static final boolean isGroupConversation(NotificationData notificationData) {
         Integer channelType;
-        C9971q.m14633g(notificationData, "<this>");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
+        C9677q.m14633g(notificationData, "<this>");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
             return false;
         }
         return true;
@@ -851,8 +851,8 @@ public final class NotificationDataUtilsKt {
     public static final CharSequence renderMessageContent(NotificationData notificationData, Context context) {
         Sticker sticker;
         boolean z;
-        C9971q.m14633g(notificationData, "<this>");
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(notificationData, "<this>");
+        C9677q.m14633g(context, "context");
         NotificationMessage message = notificationData.getMessage();
         if (message != null) {
             sticker = message.getSticker();
@@ -875,13 +875,13 @@ public final class NotificationDataUtilsKt {
             return notificationData.getMessageContent();
         }
         String messageContent2 = notificationData.getMessageContent();
-        C9971q.m14636d(messageContent2);
+        C9677q.m14636d(messageContent2);
         return RenderNotificationMessageContentKt.renderNotificationMessageContent(messageContent2);
     }
 
     public static final boolean shouldUseBigText(NotificationData notificationData) {
-        C9971q.m14633g(notificationData, "<this>");
-        if (!C9971q.m14638b(notificationData.getType(), NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) || !C9971q.m14638b(notificationData.getExpandSubtitle(), Boolean.TRUE)) {
+        C9677q.m14633g(notificationData, "<this>");
+        if (!C9677q.m14638b(notificationData.getType(), NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) || !C9677q.m14638b(notificationData.getExpandSubtitle(), Boolean.TRUE)) {
             return false;
         }
         return true;
@@ -889,7 +889,7 @@ public final class NotificationDataUtilsKt {
 
     private static final IconCompat toIconCompat(Bitmap bitmap) {
         IconCompat h = IconCompat.m37875h(bitmap);
-        C9971q.m14634f(h, "createWithBitmap(this)");
+        C9677q.m14634f(h, "createWithBitmap(this)");
         return h;
     }
 }

@@ -10,21 +10,21 @@ import java.util.concurrent.CancellationException;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.AbstractC9931e;
-import kotlin.coroutines.jvm.internal.AbstractC9938k;
+import kotlin.coroutines.jvm.internal.AbstractC9636e;
+import kotlin.coroutines.jvm.internal.AbstractC9643k;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlinx.coroutines.CoroutineScope;
-import nf.C11090s;
-import nf.C11093t;
-import nf.C11098x;
-import p267of.C11289v;
-import tf.C13080d;
+import nf.C10845s;
+import nf.C10848t;
+import nf.C10853x;
+import p268of.C11053v;
+import tf.C12962d;
 
 @Metadata(m15074d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, m15073d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, m15072k = 3, m15071mv = {1, 8, 0})
-@AbstractC9931e(m14702c = "com.discord.media.MediaManagerModule$resolveToMediaFilePath$1", m14701f = "MediaManagerModule.kt", m14700l = {75}, m14699m = "invokeSuspend")
+@AbstractC9636e(m14702c = "com.discord.media.MediaManagerModule$resolveToMediaFilePath$1", m14701f = "MediaManagerModule.kt", m14700l = {75}, m14699m = "invokeSuspend")
 /* loaded from: classes5.dex */
-final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9643k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ boolean $canCancelCompression;
     final /* synthetic */ int $imageCompressionQuality;
     final /* synthetic */ Uri $inputUri;
@@ -50,7 +50,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
         this.$uri = str;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         MediaManagerModule$resolveToMediaFilePath$1 mediaManagerModule$resolveToMediaFilePath$1 = new MediaManagerModule$resolveToMediaFilePath$1(this.this$0, this.$inputUri, this.$imageCompressionQuality, this.$videoCompressionQuality, this.$isLowQuality, this.$promise, this.$canCancelCompression, this.$uri, continuation);
         mediaManagerModule$resolveToMediaFilePath$1.L$0 = obj;
@@ -58,10 +58,10 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f25780a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.AbstractC9927a
+    @Override // kotlin.coroutines.jvm.internal.AbstractC9632a
     public final Object invokeSuspend(Object obj) {
         Object d;
         Object obj2;
@@ -71,11 +71,11 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
         Promise promise;
         MediaResolver mediaResolver2;
         boolean z;
-        d = C13080d.m4646d();
+        d = C12962d.m4646d();
         int i = this.label;
         try {
             if (i == 0) {
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
                 CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
                 MediaManagerModule mediaManagerModule = this.this$0;
                 Uri inputUri = this.$inputUri;
@@ -83,9 +83,9 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
                 VideoCompressionQuality videoCompressionQuality = this.$videoCompressionQuality;
                 boolean z2 = this.$isLowQuality;
                 Promise promise2 = this.$promise;
-                C11090s.C11091a aVar = C11090s.f24606l;
+                C10845s.C10846a aVar = C10845s.f28533l;
                 mediaResolver2 = mediaManagerModule.mediaResolver;
-                C9971q.m14634f(inputUri, "inputUri");
+                C9677q.m14634f(inputUri, "inputUri");
                 if (z2) {
                     z = true;
                 } else {
@@ -100,23 +100,23 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
                 promise = promise2;
             } else if (i == 1) {
                 promise = (Promise) this.L$0;
-                C11093t.m10930b(obj);
+                C10848t.m10930b(obj);
                 obj3 = obj;
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             promise.resolve(((Uri) obj3).toString());
-            obj2 = C11090s.m10940b(Unit.f22042a);
+            obj2 = C10845s.m10940b(Unit.f25780a);
         } catch (Throwable th2) {
-            C11090s.C11091a aVar2 = C11090s.f24606l;
-            obj2 = C11090s.m10940b(C11093t.m10931a(th2));
+            C10845s.C10846a aVar2 = C10845s.f28533l;
+            obj2 = C10845s.m10940b(C10848t.m10931a(th2));
         }
         boolean z3 = this.$canCancelCompression;
         Promise promise3 = this.$promise;
         String str = this.$uri;
         MediaManagerModule mediaManagerModule2 = this.this$0;
         Uri inputUri2 = this.$inputUri;
-        Throwable e = C11090s.m10937e(obj2);
+        Throwable e = C10845s.m10937e(obj2);
         if (e != null) {
             if (e instanceof CancellationException) {
                 if (z3) {
@@ -127,12 +127,12 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends AbstractC9938k i
             }
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             mediaResolver = mediaManagerModule2.mediaResolver;
-            C9971q.m14634f(inputUri2, "inputUri");
-            k = C11289v.m10248k(C11098x.m10921a("uri", str), C11098x.m10921a("mimeType", String.valueOf(mediaResolver.getMimeType(inputUri2))));
+            C9677q.m14634f(inputUri2, "inputUri");
+            k = C11053v.m10248k(C10853x.m10921a("uri", str), C10853x.m10921a("mimeType", String.valueOf(mediaResolver.getMimeType(inputUri2))));
             CrashReporting.addBreadcrumb$default(crashReporting, "Failed to resolve URI to file", k, null, 4, null);
             crashReporting.captureException(e);
             promise3.reject(e);
         }
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 }

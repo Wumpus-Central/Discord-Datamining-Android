@@ -3,7 +3,7 @@ package com.discord.sticker_picker;
 import android.content.Context;
 import android.view.View;
 import android.widget.LinearLayout;
-import androidx.core.view.C2655k2;
+import androidx.core.view.C1479k2;
 import com.discord.misc.utilities.measure.ViewMeasureExtensionsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
@@ -12,9 +12,9 @@ import com.discord.sticker.StickerView;
 import com.discord.sticker_picker.StickerPickerRow;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
+import kotlin.collections.C9610j;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0018\u001a\u00020\u0017¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0006\u0010\u0007\u001a\u00020\u0004J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002R\u0016\u0010\n\u001a\u00020\t8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\n\u0010\u000bR.\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00040\f8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u000e\u0010\u000f\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R.\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00040\f8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0014\u0010\u000f\u001a\u0004\b\u0015\u0010\u0011\"\u0004\b\u0016\u0010\u0013¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/sticker_picker/StickerPickerRowView;", "Landroid/widget/LinearLayout;", "Lcom/discord/sticker_picker/StickerPickerRow;", "rowData", "", "configureRowStickerViews", "createRowStickerViews", "clean", "setRowData", "", "firstRenderPass", "Z", "Lkotlin/Function1;", "", "onPressSticker", "Lkotlin/jvm/functions/Function1;", "getOnPressSticker", "()Lkotlin/jvm/functions/Function1;", "setOnPressSticker", "(Lkotlin/jvm/functions/Function1;)V", "onLongPressSticker", "getOnLongPressSticker", "setOnLongPressSticker", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "sticker_picker_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes7.dex */
@@ -53,7 +53,7 @@ public final class StickerPickerRowView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public StickerPickerRowView(Context context) {
         super(context);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         setOrientation(0);
     }
 
@@ -63,11 +63,11 @@ public final class StickerPickerRowView extends LinearLayout {
         for (Object obj : stickerPickerRow.getItems()) {
             int i2 = i + 1;
             if (i < 0) {
-                C9906j.m14810s();
+                C9610j.m14810s();
             }
             final StickerPickerRow.Sticker sticker = (StickerPickerRow.Sticker) obj;
             View childAt = getChildAt(i);
-            C9971q.m14635e(childAt, "null cannot be cast to non-null type com.discord.sticker.StickerView");
+            C9677q.m14635e(childAt, "null cannot be cast to non-null type com.discord.sticker.StickerView");
             StickerView stickerView = (StickerView) childAt;
             if (sticker == null) {
                 stickerView.setVisibility(4);
@@ -112,13 +112,13 @@ public final class StickerPickerRowView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureRowStickerViews$lambda$3$lambda$1(StickerPickerRowView this$0, StickerPickerRow.Sticker sticker, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.onPressSticker.invoke(sticker.getId());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean configureRowStickerViews$lambda$3$lambda$2(StickerPickerRowView this$0, StickerPickerRow.Sticker sticker, View view) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         this$0.onLongPressSticker.invoke(sticker.getId());
         return true;
     }
@@ -134,7 +134,7 @@ public final class StickerPickerRowView extends LinearLayout {
         for (Object obj : stickerPickerRow.getItems()) {
             int i3 = i2 + 1;
             if (i2 < 0) {
-                C9906j.m14810s();
+                C9610j.m14810s();
             }
             StickerPickerRow.Sticker sticker = (StickerPickerRow.Sticker) obj;
             if (i2 == 0) {
@@ -143,7 +143,7 @@ public final class StickerPickerRowView extends LinearLayout {
                 i = dpToPx2;
             }
             Context context = getContext();
-            C9971q.m14634f(context, "context");
+            C9677q.m14634f(context, "context");
             View stickerView = new StickerView(context, null, 0, 6, null);
             RippleUtilsKt.addRipple$default(stickerView, true, 0, 2, null);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
@@ -155,8 +155,8 @@ public final class StickerPickerRowView extends LinearLayout {
     }
 
     public final void clean() {
-        for (View view : C2655k2.m37222a(this)) {
-            C9971q.m14635e(view, "null cannot be cast to non-null type com.discord.sticker.StickerView");
+        for (View view : C1479k2.m37222a(this)) {
+            C9677q.m14635e(view, "null cannot be cast to non-null type com.discord.sticker.StickerView");
             ((StickerView) view).recycle();
         }
     }
@@ -170,17 +170,17 @@ public final class StickerPickerRowView extends LinearLayout {
     }
 
     public final void setOnLongPressSticker(Function1<? super String, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onLongPressSticker = function1;
     }
 
     public final void setOnPressSticker(Function1<? super String, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onPressSticker = function1;
     }
 
     public final void setRowData(StickerPickerRow rowData) {
-        C9971q.m14633g(rowData, "rowData");
+        C9677q.m14633g(rowData, "rowData");
         if (rowData.getItems().size() != getChildCount()) {
             createRowStickerViews(rowData);
         }

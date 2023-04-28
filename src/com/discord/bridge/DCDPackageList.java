@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.airbnb.android.react.lottie.C4097b;
+import com.airbnb.android.react.lottie.C2985b;
 import com.discord.audio.AudioRouteEmitterModule;
 import com.discord.avatar.react.AvatarPackage;
 import com.discord.cache.HeartbeatKeyProviderModule;
@@ -21,33 +21,33 @@ import com.discord.theme.ThemeModule;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.github.yamill.orientation.AbstractC5135a;
-import com.henninghall.date_picker.C5882b;
+import com.github.yamill.orientation.AbstractC4443a;
+import com.henninghall.date_picker.C5220b;
 import com.horcrux.svg.SvgPackage;
-import com.imagepicker.C5998c;
-import com.mkuczera.C6014a;
-import com.mrousavy.camera.C6040d;
-import com.p046BV.LinearGradient.C4084a;
-import com.reactnative.ivpusic.imagepicker.C6123e;
-import com.reactnativecommunity.clipboard.C6127a;
-import com.reactnativecommunity.slider.C6137c;
-import com.reactnativecommunity.webview.C6170e1;
-import com.reactnativedocumentpicker.C6217b;
-import com.reactnativepagerview.C6221b;
+import com.imagepicker.C5340c;
+import com.mkuczera.C5359a;
+import com.mrousavy.camera.C5385d;
+import com.p046BV.LinearGradient.C2971a;
+import com.reactnative.ivpusic.imagepicker.C5474e;
+import com.reactnativecommunity.clipboard.C5478a;
+import com.reactnativecommunity.slider.C5490c;
+import com.reactnativecommunity.webview.C5524e1;
+import com.reactnativedocumentpicker.C5571b;
+import com.reactnativepagerview.C5575b;
 import com.shopify.reactnative.skia.RNSkiaPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
-import com.swmansion.rnscreens.C6306i;
-import com.th3rdwave.safeareacontext.C6350b;
-import io.sentry.react.C9045i;
+import com.swmansion.rnscreens.C5721i;
+import com.th3rdwave.safeareacontext.C5765b;
+import io.sentry.react.C8564i;
 import java.util.ArrayList;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
-import p055d2.C6392a;
-import p067df.C6458a;
-import p202kk.C9891a;
-import p395w4.C13748a;
-import p454z2.C14528c;
-import ye.C14369c;
+import kotlin.jvm.internal.C9677q;
+import p055d2.C5810a;
+import p067df.C5879a;
+import p203kk.C9595a;
+import p396w4.C13655a;
+import p455z2.C14466c;
+import ye.C14299c;
 
 @Metadata(m15074d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\b\u0012\u0004\u0012\u00020\u0007`\bH\u0016¨\u0006\t"}, m15073d2 = {"Lcom/discord/bridge/DCDPackageList;", "Lcom/facebook/react/PackageList;", "host", "Lcom/facebook/react/ReactNativeHost;", "(Lcom/facebook/react/ReactNativeHost;)V", "getPackages", "Ljava/util/ArrayList;", "Lcom/facebook/react/ReactPackage;", "Lkotlin/collections/ArrayList;", "app_canaryRelease"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes.dex */
@@ -55,38 +55,38 @@ public final class DCDPackageList extends PackageList {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DCDPackageList(ReactNativeHost host) {
         super(host);
-        C9971q.m14633g(host, "host");
+        C9677q.m14633g(host, "host");
     }
 
     @Override // com.facebook.react.PackageList
     public ArrayList<ReactPackage> getPackages() {
         ArrayList<ReactPackage> packages = super.getPackages();
-        packages.add(new C6392a());
-        packages.add(new C6127a());
-        packages.add(new C5998c());
-        packages.add(new C13748a());
-        packages.add(new C6123e());
-        packages.add(new C4084a());
-        packages.add(new C4097b());
-        packages.add(new C14369c());
-        packages.add(new AbstractC5135a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
+        packages.add(new C5810a());
+        packages.add(new C5478a());
+        packages.add(new C5340c());
+        packages.add(new C13655a());
+        packages.add(new C5474e());
+        packages.add(new C2971a());
+        packages.add(new C2985b());
+        packages.add(new C14299c());
+        packages.add(new AbstractC4443a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
         });
-        packages.add(new C6137c());
-        packages.add(new C14528c());
+        packages.add(new C5490c());
+        packages.add(new C14466c());
         packages.add(new ReanimatedPackage());
-        packages.add(new C6170e1());
-        packages.add(new C5882b());
-        packages.add(new C6217b());
-        packages.add(new C6458a());
-        packages.add(new C9891a());
-        packages.add(new C6014a());
-        packages.add(new C6306i());
-        packages.add(new C9045i());
-        packages.add(new C6350b());
+        packages.add(new C5524e1());
+        packages.add(new C5220b());
+        packages.add(new C5571b());
+        packages.add(new C5879a());
+        packages.add(new C9595a());
+        packages.add(new C5359a());
+        packages.add(new C5721i());
+        packages.add(new C8564i());
+        packages.add(new C5765b());
         packages.add(new SvgPackage());
-        packages.add(new C6040d());
+        packages.add(new C5385d());
         packages.add(new RNSkiaPackage());
-        packages.add(new C6221b());
+        packages.add(new C5575b());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$3.INSTANCE));
@@ -166,7 +166,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(dCDModuleProvider.getTurboPackageForModule(HeartbeatKeyProviderModule.NAME, DCDPackageList$getPackages$74.INSTANCE));
         packages.add(dCDModuleProvider.getTurboPackageForModule(ThemeModule.NAME, DCDPackageList$getPackages$75.INSTANCE));
         packages.add(dCDModuleProvider.getTurboPackageForModule(MobileVoiceOverlayManagerModule.NAME, DCDPackageList$getPackages$76.INSTANCE));
-        C9971q.m14634f(packages, "packages");
+        C9677q.m14634f(packages, "packages");
         return packages;
     }
 }

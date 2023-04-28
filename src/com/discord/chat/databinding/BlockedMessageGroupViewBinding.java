@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class BlockedMessageGroupViewBinding {
@@ -24,14 +24,14 @@ public final class BlockedMessageGroupViewBinding {
     }
 
     public static BlockedMessageGroupViewBinding bind(View view) {
-        int i = C4254R.C4256id.blocked_message_group_button;
-        TextView textView = (TextView) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.blocked_message_group_button;
+        TextView textView = (TextView) C13836a.m2313a(view, i);
         if (textView != null) {
-            i = C4254R.C4256id.blocked_messages;
-            RecyclerView recyclerView = (RecyclerView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.blocked_messages;
+            RecyclerView recyclerView = (RecyclerView) C13836a.m2313a(view, i);
             if (recyclerView != null) {
-                i = C4254R.C4256id.close_icon;
-                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.close_icon;
+                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView != null) {
                     return new BlockedMessageGroupViewBinding(view, textView, recyclerView, simpleDraweeView);
                 }
@@ -42,7 +42,7 @@ public final class BlockedMessageGroupViewBinding {
 
     public static BlockedMessageGroupViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.blocked_message_group_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.blocked_message_group_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

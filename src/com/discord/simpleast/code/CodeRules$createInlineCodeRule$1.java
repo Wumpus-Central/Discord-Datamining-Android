@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u001a\u0012\u0004\u0012\u00028\u0000\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u0002\u0012\u0004\u0012\u00028\u00010\u0001JK\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u00042\u0006\u0010\u0005\u001a\u00020\u00062 \u0010\u0007\u001a\u001c\u0012\u0004\u0012\u00028\u0000\u0012\f\b\u0000\u0012\b\u0012\u0004\u0012\u00028\u00000\u0002\u0012\u0004\u0012\u00028\u00010\b2\u0006\u0010\t\u001a\u00028\u0001H\u0016¢\u0006\u0002\u0010\n¨\u0006\u000b"}, m15073d2 = {"com/discord/simpleast/code/CodeRules$createInlineCodeRule$1", "Lcom/discord/simpleast/core/parser/Rule;", "Lcom/discord/simpleast/core/node/Node;", "parse", "Lcom/discord/simpleast/core/parser/ParseSpec;", "matcher", "Ljava/util/regex/Matcher;", "parser", "Lcom/discord/simpleast/core/parser/Parser;", "state", "(Ljava/util/regex/Matcher;Lcom/discord/simpleast/core/parser/Parser;Ljava/lang/Object;)Lcom/discord/simpleast/core/parser/ParseSpec;", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
 /* loaded from: classes7.dex */
@@ -33,8 +33,8 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
     @Override // com.discord.simpleast.core.parser.Rule
     public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s) {
         boolean z;
-        C9971q.m14633g(matcher, "matcher");
-        C9971q.m14633g(parser, "parser");
+        C9677q.m14633g(matcher, "matcher");
+        C9677q.m14633g(parser, "parser");
         String group = matcher.group(2);
         if (group == null) {
             group = "";
@@ -47,7 +47,7 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
         if (z) {
             ParseSpec.Companion companion = ParseSpec.Companion;
             String group2 = matcher.group();
-            C9971q.m14634f(group2, "matcher.group()");
+            C9677q.m14634f(group2, "matcher.group()");
             return companion.createTerminal(new TextNode(group2), s);
         }
         final CodeNode codeNode = new CodeNode(new CodeNode.Content.Raw(group), null, this.$textStyleProvider);
@@ -55,7 +55,7 @@ public final class CodeRules$createInlineCodeRule$1 extends Rule<R, Node<R>, S> 
         return ParseSpec.Companion.createTerminal(new Node.Parent<R>(nodeArr) { // from class: com.discord.simpleast.code.CodeRules$createInlineCodeRule$1$parse$node$1
             @Override // com.discord.simpleast.core.node.Node.Parent, com.discord.simpleast.core.node.Node
             public void render(SpannableStringBuilder builder, R r) {
-                C9971q.m14633g(builder, "builder");
+                C9677q.m14633g(builder, "builder");
                 int length = builder.length();
                 super.render(builder, r);
                 Iterator<?> it = CodeRules$createInlineCodeRule$1.this.$bgStyleProvider.get(r).iterator();

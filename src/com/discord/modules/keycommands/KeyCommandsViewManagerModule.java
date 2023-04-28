@@ -7,10 +7,10 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.views.view.ReactViewGroup;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import nf.C11098x;
-import p267of.C11289v;
+import nf.C10853x;
+import p268of.C11053v;
 
 @Metadata(m15074d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0004\u0018\u0000 \n2\u00020\u0001:\u0002\n\u000bB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0016\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0006H\u0016J\b\u0010\t\u001a\u00020\u0007H\u0016¨\u0006\f"}, m15073d2 = {"Lcom/discord/modules/keycommands/KeyCommandsViewManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getConstants", "", "", "", "getName", "Companion", KeyCommandsViewManagerModule.MODULE_NAME, "app_canaryRelease"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
@@ -41,7 +41,7 @@ public final class KeyCommandsViewManagerModule extends ReactContextBaseJavaModu
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.uimanager.ViewManager
         public ReactViewGroup createViewInstance(ThemedReactContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new ReactViewGroup(reactContext);
         }
     }
@@ -49,13 +49,13 @@ public final class KeyCommandsViewManagerModule extends ReactContextBaseJavaModu
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public KeyCommandsViewManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
     public Map<String, Object> getConstants() {
         Map<String, Object> l;
-        l = C11289v.m10247l(C11098x.m10921a("keyModifierAlphaShift", 65536), C11098x.m10921a("keyModifierShift", 131072), C11098x.m10921a("keyModifierControl", 262144), C11098x.m10921a("keyModifierAlternate", 524288), C11098x.m10921a("keyModifierCommand", 1048576), C11098x.m10921a("keyModifierNumericPad", 2097152));
+        l = C11053v.m10247l(C10853x.m10921a("keyModifierAlphaShift", 65536), C10853x.m10921a("keyModifierShift", 131072), C10853x.m10921a("keyModifierControl", 262144), C10853x.m10921a("keyModifierAlternate", 524288), C10853x.m10921a("keyModifierCommand", 1048576), C10853x.m10921a("keyModifierNumericPad", 2097152));
         return l;
     }
 

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001:\u0001\u0016B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\f\u001a\u00020\rJ\u0016\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u0012J\u001c\u0010\u000e\u001a\u00020\u000f*\u00020\b2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0014H\u0002R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u00020\u000b8\u0002X\u0083\u0004¢\u0006\u0002\n\u0000¨\u0006\u0017"}, m15073d2 = {"Lcom/discord/react_gesture_handler/nested_touch/OriginTracker;", "", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "getContext", "()Landroid/content/Context;", "origin", "Lcom/discord/react_gesture_handler/nested_touch/OriginTracker$Origin;", "originSupplemental", "scaledTouchSlopPx", "", "cleanUp", "", "hasOriginMoved", "", "isSupplementalEvent", "event", "Landroid/view/MotionEvent;", "x", "", "y", "Origin", "react_gesture_handler_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes6.dex */
@@ -78,7 +78,7 @@ public final class OriginTracker {
     }
 
     public OriginTracker(Context context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.context = context;
         this.scaledTouchSlopPx = ViewConfiguration.get(context).getScaledTouchSlop();
     }
@@ -93,7 +93,7 @@ public final class OriginTracker {
     }
 
     public final boolean hasOriginMoved(boolean z, MotionEvent event) {
-        C9971q.m14633g(event, "event");
+        C9677q.m14633g(event, "event");
         if (z) {
             if (this.originSupplemental == null) {
                 this.originSupplemental = new Origin(event.getX(), event.getY());

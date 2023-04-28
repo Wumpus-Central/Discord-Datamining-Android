@@ -3,9 +3,9 @@ package com.discord.progress_dots.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.discord.progress_dots.C4635R;
+import com.discord.progress_dots.C3587R;
 import com.discord.progress_dots.ProgressDot;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes3.dex */
 public final class ProgressDotsViewBinding {
@@ -22,14 +22,14 @@ public final class ProgressDotsViewBinding {
     }
 
     public static ProgressDotsViewBinding bind(View view) {
-        int i = C4635R.C4637id.view_progress_dots_1;
-        ProgressDot progressDot = (ProgressDot) C13922a.m2313a(view, i);
+        int i = C3587R.C3589id.view_progress_dots_1;
+        ProgressDot progressDot = (ProgressDot) C13836a.m2313a(view, i);
         if (progressDot != null) {
-            i = C4635R.C4637id.view_progress_dots_2;
-            ProgressDot progressDot2 = (ProgressDot) C13922a.m2313a(view, i);
+            i = C3587R.C3589id.view_progress_dots_2;
+            ProgressDot progressDot2 = (ProgressDot) C13836a.m2313a(view, i);
             if (progressDot2 != null) {
-                i = C4635R.C4637id.view_progress_dots_3;
-                ProgressDot progressDot3 = (ProgressDot) C13922a.m2313a(view, i);
+                i = C3587R.C3589id.view_progress_dots_3;
+                ProgressDot progressDot3 = (ProgressDot) C13836a.m2313a(view, i);
                 if (progressDot3 != null) {
                     return new ProgressDotsViewBinding(view, progressDot, progressDot2, progressDot3);
                 }
@@ -40,7 +40,7 @@ public final class ProgressDotsViewBinding {
 
     public static ProgressDotsViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4635R.layout.progress_dots_view, viewGroup);
+            layoutInflater.inflate(C3587R.layout.progress_dots_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

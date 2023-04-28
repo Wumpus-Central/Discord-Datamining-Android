@@ -16,9 +16,9 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p326ri.C12717t;
+import p327ri.C12586t;
 
 @Metadata(m15074d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\b\u0018\u0000 +2\u00020\u0001:\u0001+B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\fH\u0007J\b\u0010\u000f\u001a\u00020\nH\u0007J\u0010\u0010\u0010\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\b\u0010\u0014\u001a\u00020\fH\u0016J\u0010\u0010\u0015\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010\u0016\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\fH\u0007J\u0010\u0010\u0019\u001a\u00020\n2\u0006\u0010\u001a\u001a\u00020\fH\u0007J\b\u0010\u001b\u001a\u00020\nH\u0007J\u0010\u0010\u001c\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0010\u0010\u001d\u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0012\u0010 \u001a\u00020\n2\b\u0010!\u001a\u0004\u0018\u00010\fH\u0007J\u0010\u0010\"\u001a\u00020\n2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010%\u001a\u00020\n2\u0006\u0010&\u001a\u00020$H\u0007J\u0010\u0010'\u001a\u00020\n2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010(\u001a\u00020\n2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010)\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\b\u0010*\u001a\u00020\nH\u0002R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006,"}, m15073d2 = {"Lcom/discord/notifications/react/PushNotificationModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "eventEmitter", "Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;", "getEventEmitter", "()Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;", "addListener", "", "type", "", "appStateChanged", "appState", "clearAllNotifications", "getInitialNotification", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getLightsEnabled", "getName", "getSoundsEnabled", "getVibrationsEnabled", "handleDirectReplySuccess", "notificationString", "markNotificationAsDirectReply", "channelId", "onRegisterNotificationToken", "registerEventListener", "removeListeners", "count", "", "setCurrentUsername", "username", "setLightsEnabled", ViewProps.ENABLED, "", "setNotifyEveryTime", "notifyEveryTime", "setSoundsEnabled", "setVibrationsEnabled", "shouldNotifyEveryTime", "updateAuthState", "Companion", "notification_react_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes3.dex */
@@ -42,55 +42,55 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PushNotificationModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         MessagingService.Companion.init();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final DeviceEventManagerModule.RCTDeviceEventEmitter getEventEmitter() {
         JavaScriptModule jSModule = getReactApplicationContext().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
-        C9971q.m14634f(jSModule, "reactApplicationContext.…EventEmitter::class.java)");
+        C9677q.m14634f(jSModule, "reactApplicationContext.…EventEmitter::class.java)");
         return (DeviceEventManagerModule.RCTDeviceEventEmitter) jSModule;
     }
 
     private final void updateAuthState() {
         CacheModule.Companion companion = CacheModule.Companion;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         boolean z = false;
         if (CacheModule.getToken$default(companion.get(reactApplicationContext), false, 1, null) != null) {
             z = true;
         }
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext2, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext2, "reactApplicationContext");
         instance.setIsAuthed(reactApplicationContext2, z);
     }
 
     @ReactMethod
     public final void addListener(String type) {
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(type, "type");
     }
 
     @ReactMethod
     public final void appStateChanged(String appState) {
-        C9971q.m14633g(appState, "appState");
+        C9677q.m14633g(appState, "appState");
         updateAuthState();
-        NotificationClient.Companion.getInstance().setActive(C9971q.m14638b(appState, AppStateModule.APP_STATE_ACTIVE));
+        NotificationClient.Companion.getInstance().setActive(C9677q.m14638b(appState, AppStateModule.APP_STATE_ACTIVE));
     }
 
     @ReactMethod
     public final void clearAllNotifications() {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.clearAllNotifications(reactApplicationContext);
     }
 
     @ReactMethod
     public final void getInitialNotification(Promise promise) {
         WritableNativeMap writableNativeMap;
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         Map<String, String> pendingNotification = NotificationClient.Companion.getInstance().getPendingNotification();
         if (pendingNotification != null) {
             writableNativeMap = NativeMapExtensionsKt.toNativeMap(pendingNotification);
@@ -102,10 +102,10 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getLightsEnabled(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         promise.resolve(Boolean.valueOf(instance.isLightsEnabled(reactApplicationContext)));
     }
 
@@ -116,41 +116,41 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void getSoundsEnabled(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         promise.resolve(Boolean.valueOf(instance.isSoundsEnabled(reactApplicationContext)));
     }
 
     @ReactMethod
     public final void getVibrationsEnabled(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         promise.resolve(Boolean.valueOf(instance.isVibrationsEnabled(reactApplicationContext)));
     }
 
     @ReactMethod
     public final void handleDirectReplySuccess(String notificationString) {
-        C9971q.m14633g(notificationString, "notificationString");
+        C9677q.m14633g(notificationString, "notificationString");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.onDirectReplySuccess(reactApplicationContext, notificationString);
     }
 
     @ReactMethod
     public final void markNotificationAsDirectReply(String channelId) {
         Long o;
-        C9971q.m14633g(channelId, "channelId");
-        o = C12717t.m5745o(channelId);
+        C9677q.m14633g(channelId, "channelId");
+        o = C12586t.m5745o(channelId);
         if (o != null) {
             long longValue = o.longValue();
             NotificationClient instance = NotificationClient.Companion.getInstance();
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
             instance.markNotificationAsDirectReply(reactApplicationContext, longValue);
         }
     }
@@ -162,7 +162,7 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void registerEventListener(String type) {
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(type, "type");
         int hashCode = type.hashCode();
         if (hashCode != -690213213) {
             if (hashCode != -145165322) {
@@ -189,7 +189,7 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public final void setCurrentUsername(String str) {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.setCurrentUsername(reactApplicationContext, str);
     }
 
@@ -197,7 +197,7 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public final void setLightsEnabled(boolean z) {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.setLightsEnabled(reactApplicationContext, z);
     }
 
@@ -205,7 +205,7 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public final void setNotifyEveryTime(boolean z) {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.setNotifyEveryTime(reactApplicationContext, z);
     }
 
@@ -213,7 +213,7 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public final void setSoundsEnabled(boolean z) {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.setSoundsEnabled(reactApplicationContext, z);
     }
 
@@ -221,16 +221,16 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public final void setVibrationsEnabled(boolean z) {
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         instance.setVibrationsEnabled(reactApplicationContext, z);
     }
 
     @ReactMethod
     public final void shouldNotifyEveryTime(Promise promise) {
-        C9971q.m14633g(promise, "promise");
+        C9677q.m14633g(promise, "promise");
         NotificationClient instance = NotificationClient.Companion.getInstance();
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        C9677q.m14634f(reactApplicationContext, "reactApplicationContext");
         promise.resolve(Boolean.valueOf(instance.shouldNotifyEveryTime(reactApplicationContext)));
     }
 }

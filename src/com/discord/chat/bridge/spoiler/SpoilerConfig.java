@@ -3,7 +3,7 @@ package com.discord.chat.bridge.spoiler;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B$\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005ø\u0001\u0000¢\u0006\u0002\u0010\bJ\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\u0018\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005HÂ\u0003ø\u0001\u0000J,\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u0014\b\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005HÆ\u0001ø\u0001\u0000J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001J\u0006\u0010\u0004\u001a\u00020\u0007J\t\u0010\u0013\u001a\u00020\u0014HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u001d\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005X\u0082\u0004ø\u0001\u0000¢\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0015"}, m15073d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "", "attributes", "Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "onReveal", "Lkotlin/Function1;", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "", "(Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;Lkotlin/jvm/functions/Function1;)V", "getAttributes", "()Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -13,8 +13,8 @@ public final class SpoilerConfig {
 
     /* JADX WARN: Multi-variable type inference failed */
     public SpoilerConfig(SpoilerAttributes attributes, Function1<? super SpoilerIdentifier, Unit> onReveal) {
-        C9971q.m14633g(attributes, "attributes");
-        C9971q.m14633g(onReveal, "onReveal");
+        C9677q.m14633g(attributes, "attributes");
+        C9677q.m14633g(onReveal, "onReveal");
         this.attributes = attributes;
         this.onReveal = onReveal;
     }
@@ -39,8 +39,8 @@ public final class SpoilerConfig {
     }
 
     public final SpoilerConfig copy(SpoilerAttributes attributes, Function1<? super SpoilerIdentifier, Unit> onReveal) {
-        C9971q.m14633g(attributes, "attributes");
-        C9971q.m14633g(onReveal, "onReveal");
+        C9677q.m14633g(attributes, "attributes");
+        C9677q.m14633g(onReveal, "onReveal");
         return new SpoilerConfig(attributes, onReveal);
     }
 
@@ -52,7 +52,7 @@ public final class SpoilerConfig {
             return false;
         }
         SpoilerConfig spoilerConfig = (SpoilerConfig) obj;
-        return C9971q.m14638b(this.attributes, spoilerConfig.attributes) && C9971q.m14638b(this.onReveal, spoilerConfig.onReveal);
+        return C9677q.m14638b(this.attributes, spoilerConfig.attributes) && C9677q.m14638b(this.onReveal, spoilerConfig.onReveal);
     }
 
     public final SpoilerAttributes getAttributes() {

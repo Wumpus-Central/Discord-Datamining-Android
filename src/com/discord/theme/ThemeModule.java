@@ -6,7 +6,7 @@ import com.discord.theme.utils.ActivityThemeUtils;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u0000 \n2\u00020\u0001:\u0001\nB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0012\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\u0006H\u0016¨\u0006\u000b"}, m15073d2 = {"Lcom/discord/theme/ThemeModule;", "Lcom/discord/codegen/NativeThemeManagerSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "updateTheme", "", "theme", "Companion", "theme_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -26,7 +26,7 @@ public final class ThemeModule extends NativeThemeManagerSpec {
         }
 
         public final NativeModule create(ReactApplicationContext reactContext) {
-            C9971q.m14633g(reactContext, "reactContext");
+            C9677q.m14633g(reactContext, "reactContext");
             return new ThemeModule(reactContext);
         }
     }
@@ -34,13 +34,13 @@ public final class ThemeModule extends NativeThemeManagerSpec {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ThemeModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        C9971q.m14633g(reactContext, "reactContext");
+        C9677q.m14633g(reactContext, "reactContext");
         ThemeManager.INSTANCE.init(reactContext);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void updateTheme$lambda$0(ThemeModule this$0) {
-        C9971q.m14633g(this$0, "this$0");
+        C9677q.m14633g(this$0, "this$0");
         Activity currentActivity = this$0.getCurrentActivity();
         if (currentActivity != null) {
             ActivityThemeUtils.INSTANCE.updateActivityTheming$theme_release(currentActivity);

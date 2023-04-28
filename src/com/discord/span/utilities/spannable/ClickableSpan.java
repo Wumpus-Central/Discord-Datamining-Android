@@ -3,13 +3,13 @@ package com.discord.span.utilities.spannable;
 import android.text.TextPaint;
 import android.view.View;
 import android.widget.TextView;
-import androidx.core.graphics.C2382a;
+import androidx.core.graphics.C1198a;
 import com.discord.react_gesture_handler.nested_touch.NestedClickableSpan;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0012\b\u0086\b\u0018\u00002\u00020\u00012\u00020\u0002BG\u0012\b\b\u0002\u0010\u0017\u001a\u00020\u0015\u0012\n\b\u0003\u0010\u0018\u001a\u0004\u0018\u00010\u0003\u0012\u0014\b\u0002\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006\u0012\u0012\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u0006¢\u0006\u0004\b0\u00101J\u0012\u0010\u0004\u001a\u0004\u0018\u00010\u0003HÂ\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0015\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006HÂ\u0003J\u0015\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u0006HÂ\u0003J\u0010\u0010\u000e\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0016J\u0010\u0010\u0010\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u0007H\u0016J\u0010\u0010\u0011\u001a\u00020\b2\u0006\u0010\u000f\u001a\u00020\u0007H\u0016J\u0010\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\u0012H\u0016J\t\u0010\u0016\u001a\u00020\u0015HÆ\u0003JR\u0010\u001b\u001a\u00020\u00002\b\b\u0002\u0010\u0017\u001a\u00020\u00152\n\b\u0003\u0010\u0018\u001a\u0004\u0018\u00010\u00032\u0014\b\u0002\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0014\b\u0002\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u0006HÆ\u0001¢\u0006\u0004\b\u001b\u0010\u001cJ\t\u0010\u001e\u001a\u00020\u001dHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J\u0013\u0010\"\u001a\u00020\b2\b\u0010!\u001a\u0004\u0018\u00010 HÖ\u0003R\u001a\u0010\u0017\u001a\u00020\u00158\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0017\u0010#\u001a\u0004\b$\u0010%R\u0016\u0010\u0018\u001a\u0004\u0018\u00010\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010&R \u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010'R \u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001a\u0010'R(\u0010)\u001a\u0004\u0018\u00010\f2\b\u0010(\u001a\u0004\u0018\u00010\f8\u0002@BX\u0082\u000e¢\u0006\f\n\u0004\b)\u0010*\"\u0004\b+\u0010,R\u0019\u0010/\u001a\u00020\u0003*\u00020\u00038Ã\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b-\u0010.¨\u00062"}, m15073d2 = {"Lcom/discord/span/utilities/spannable/ClickableSpan;", "Landroid/text/style/ClickableSpan;", "Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan;", "", "component2", "()Ljava/lang/Integer;", "Lkotlin/Function1;", "Landroid/view/View;", "", "component3", "", "component4", "Landroid/widget/TextView;", "textView", "enableHighlight", "view", "onClick", "onLongClick", "Landroid/text/TextPaint;", "textPaint", "updateDrawState", "Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan$TouchPriority;", "component1", "touchPriority", "textColor", "onLongClickListener", "onClickListener", "copy", "(Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan$TouchPriority;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lcom/discord/span/utilities/spannable/ClickableSpan;", "", "toString", "hashCode", "", "other", "equals", "Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan$TouchPriority;", "getTouchPriority", "()Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan$TouchPriority;", "Ljava/lang/Integer;", "Lkotlin/jvm/functions/Function1;", "value", "spanView", "Landroid/widget/TextView;", "setSpanView", "(Landroid/widget/TextView;)V", "getDarken", "(I)I", "darken", "<init>", "(Lcom/discord/react_gesture_handler/nested_touch/NestedClickableSpan$TouchPriority;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "span_utilities_release"}, m15072k = 1, m15071mv = {1, 8, 0})
@@ -24,21 +24,21 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     @Metadata(m15074d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, m15073d2 = {"<anonymous>", "", "it", "Landroid/view/View;", "invoke", "(Landroid/view/View;)Ljava/lang/Boolean;"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.span.utilities.spannable.ClickableSpan$1 */
     /* loaded from: classes7.dex */
-    static final class AnonymousClass1 extends AbstractC9973s implements Function1<View, Boolean> {
-        public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
+    static final class C37001 extends AbstractC9679s implements Function1<View, Boolean> {
+        public static final C37001 INSTANCE = new C37001();
 
-        AnonymousClass1() {
+        C37001() {
             super(1);
         }
 
         public final Boolean invoke(View it) {
-            C9971q.m14633g(it, "it");
+            C9677q.m14633g(it, "it");
             return Boolean.FALSE;
         }
     }
 
     public /* synthetic */ ClickableSpan(NestedClickableSpan.TouchPriority touchPriority, Integer num, Function1 function1, Function1 function12, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i & 1) != 0 ? NestedClickableSpan.TouchPriority.DEFAULT : touchPriority, (i & 2) != 0 ? null : num, (i & 4) != 0 ? AnonymousClass1.INSTANCE : function1, function12);
+        this((i & 1) != 0 ? NestedClickableSpan.TouchPriority.DEFAULT : touchPriority, (i & 2) != 0 ? null : num, (i & 4) != 0 ? C37001.INSTANCE : function1, function12);
     }
 
     private final Integer component2() {
@@ -71,7 +71,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     }
 
     private final int getDarken(int i) {
-        return C2382a.m37928c(i, -16777216, 0.1f);
+        return C1198a.m37928c(i, -16777216, 0.1f);
     }
 
     private final void setSpanView(TextView textView) {
@@ -91,15 +91,15 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     }
 
     public final ClickableSpan copy(NestedClickableSpan.TouchPriority touchPriority, Integer num, Function1<? super View, Boolean> onLongClickListener, Function1<? super View, Unit> onClickListener) {
-        C9971q.m14633g(touchPriority, "touchPriority");
-        C9971q.m14633g(onLongClickListener, "onLongClickListener");
-        C9971q.m14633g(onClickListener, "onClickListener");
+        C9677q.m14633g(touchPriority, "touchPriority");
+        C9677q.m14633g(onLongClickListener, "onLongClickListener");
+        C9677q.m14633g(onClickListener, "onClickListener");
         return new ClickableSpan(touchPriority, num, onLongClickListener, onClickListener);
     }
 
     @Override // com.discord.react_gesture_handler.nested_touch.NestedClickableSpan
     public void enableHighlight(TextView textView) {
-        C9971q.m14633g(textView, "textView");
+        C9677q.m14633g(textView, "textView");
         setSpanView(textView);
     }
 
@@ -111,7 +111,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
             return false;
         }
         ClickableSpan clickableSpan = (ClickableSpan) obj;
-        return getTouchPriority() == clickableSpan.getTouchPriority() && C9971q.m14638b(this.textColor, clickableSpan.textColor) && C9971q.m14638b(this.onLongClickListener, clickableSpan.onLongClickListener) && C9971q.m14638b(this.onClickListener, clickableSpan.onClickListener);
+        return getTouchPriority() == clickableSpan.getTouchPriority() && C9677q.m14638b(this.textColor, clickableSpan.textColor) && C9677q.m14638b(this.onLongClickListener, clickableSpan.onLongClickListener) && C9677q.m14638b(this.onClickListener, clickableSpan.onClickListener);
     }
 
     @Override // com.discord.react_gesture_handler.nested_touch.NestedClickableSpan
@@ -127,15 +127,15 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
 
     @Override // android.text.style.ClickableSpan, com.discord.react_gesture_handler.nested_touch.NestedClickableSpan
     public void onClick(View view) {
-        C9971q.m14633g(view, "view");
+        C9677q.m14633g(view, "view");
         this.onClickListener.invoke(view);
-        Unit unit = Unit.f22042a;
+        Unit unit = Unit.f25780a;
         setSpanView(null);
     }
 
     @Override // com.discord.react_gesture_handler.nested_touch.NestedClickableSpan
     public boolean onLongClick(View view) {
-        C9971q.m14633g(view, "view");
+        C9677q.m14633g(view, "view");
         Boolean invoke = this.onLongClickListener.invoke(view);
         invoke.booleanValue();
         setSpanView(null);
@@ -153,12 +153,12 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     @Override // android.text.style.ClickableSpan, android.text.style.CharacterStyle
     public void updateDrawState(TextPaint textPaint) {
         int i;
-        C9971q.m14633g(textPaint, "textPaint");
+        C9677q.m14633g(textPaint, "textPaint");
         super.updateDrawState(textPaint);
         Integer num = this.textColor;
         if (num != null) {
             if (this.spanView != null) {
-                i = C2382a.m37928c(num.intValue(), -16777216, 0.1f);
+                i = C1198a.m37928c(num.intValue(), -16777216, 0.1f);
             } else {
                 i = num.intValue();
             }
@@ -169,9 +169,9 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
 
     /* JADX WARN: Multi-variable type inference failed */
     public ClickableSpan(NestedClickableSpan.TouchPriority touchPriority, Integer num, Function1<? super View, Boolean> onLongClickListener, Function1<? super View, Unit> onClickListener) {
-        C9971q.m14633g(touchPriority, "touchPriority");
-        C9971q.m14633g(onLongClickListener, "onLongClickListener");
-        C9971q.m14633g(onClickListener, "onClickListener");
+        C9677q.m14633g(touchPriority, "touchPriority");
+        C9677q.m14633g(onLongClickListener, "onLongClickListener");
+        C9677q.m14633g(onClickListener, "onClickListener");
         this.touchPriority = touchPriority;
         this.textColor = num;
         this.onLongClickListener = onLongClickListener;

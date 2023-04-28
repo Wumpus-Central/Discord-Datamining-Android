@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.SetTextSizeSpKt;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.databinding.GuildInviteViewBinding;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -21,7 +21,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0017\u0010\u000b\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011J\u0017\u0010\u0012\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ+\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00152\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0018J\u0019\u0010\u0019\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010\u001b\u001a\u00020\f2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0011J\u0010\u0010\u001d\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015J\u000e\u0010\u001e\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020 J\u0010\u0010!\u001a\u00020\f2\b\u0010\"\u001a\u0004\u0018\u00010#J\u001a\u0010$\u001a\u00020\f2\b\u0010%\u001a\u0004\u0018\u00010\u00112\b\u0010&\u001a\u0004\u0018\u00010\u0011J\u0010\u0010'\u001a\u00020\f2\b\u0010(\u001a\u0004\u0018\u00010\u0011J\u0017\u0010)\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010*\u001a\u00020\f2\b\u0010+\u001a\u0004\u0018\u00010\u0015J\u0019\u0010,\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010-\u001a\u00020\f2\b\u0010.\u001a\u0004\u0018\u00010\u0011R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006/"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/GuildInviteView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/GuildInviteViewBinding;", "setButtonBackgroundColor", "", ViewProps.COLOR, "(Ljava/lang/Integer;)V", "setButtonText", "text", "", "setButtonTextColor", "setGuildImage", "url", "", "thumbnailText", "thumbnailBackgroundColor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V", "setHeaderColor", "(Ljava/lang/Integer;)Lkotlin/Unit;", "setHeaderText", "headerText", "setInviteSplash", "setLoading", "loading", "", "setOnButtonClickListener", "listener", "Landroid/view/View$OnClickListener;", "setPresence", "onlineText", "memberText", "setSubtitle", "subtitle", "setSubtitleColor", "setSubtitleIcon", "subtitleIconUrl", "setTitleColor", "setTitleText", "name", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -32,13 +32,13 @@ public final class GuildInviteView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public GuildInviteView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public GuildInviteView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ GuildInviteView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -60,11 +60,11 @@ public final class GuildInviteView extends ConstraintLayout {
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r4.binding
             com.discord.core.DCDButton r0 = r0.itemInviteJoinedButton
             java.lang.String r1 = "binding.itemInviteJoinedButton"
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = p326ri.C12707l.m5767w(r5)
+            boolean r3 = p327ri.C12576l.m5767w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -101,13 +101,13 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteHeader.setTextColor(num.intValue());
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     public final void setHeaderText(CharSequence charSequence) {
         boolean z;
         TextView textView = this.binding.itemInviteHeader;
-        C9971q.m14634f(textView, "binding.itemInviteHeader");
+        C9677q.m14634f(textView, "binding.itemInviteHeader");
         int i = 0;
         if (charSequence == null || charSequence.length() == 0) {
             z = true;
@@ -124,7 +124,7 @@ public final class GuildInviteView extends ConstraintLayout {
     public final void setInviteSplash(String str) {
         boolean z;
         SimpleDraweeView simpleDraweeView = this.binding.itemInviteSplash;
-        C9971q.m14634f(simpleDraweeView, "binding.itemInviteSplash");
+        C9677q.m14634f(simpleDraweeView, "binding.itemInviteSplash");
         int i = 0;
         if (str == null || str.length() == 0) {
             z = true;
@@ -165,11 +165,11 @@ public final class GuildInviteView extends ConstraintLayout {
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
             android.widget.ImageView r0 = r0.itemInviteOnlineDot
             java.lang.String r1 = "binding.itemInviteOnlineDot"
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
             r2 = 1
             r3 = 0
             if (r9 == 0) goto L_0x0016
-            boolean r4 = p326ri.C12707l.m5767w(r9)
+            boolean r4 = p327ri.C12576l.m5767w(r9)
             if (r4 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -189,8 +189,8 @@ public final class GuildInviteView extends ConstraintLayout {
             r0.setVisibility(r4)
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
             android.widget.ImageView r0 = r0.itemInviteOnlineDot
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
-            int r1 = com.discord.chat.C4254R.color.green_360
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
+            int r1 = com.discord.chat.C3147R.color.green_360
             int r1 = com.discord.theme.utils.ColorUtilsKt.getColorCompat(r8, r1)
             r4 = 2
             r6 = 0
@@ -201,9 +201,9 @@ public final class GuildInviteView extends ConstraintLayout {
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
             android.widget.ImageView r0 = r0.itemInviteTotalMemberDot
             java.lang.String r1 = "binding.itemInviteTotalMemberDot"
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
             if (r10 == 0) goto L_0x004f
-            boolean r7 = p326ri.C12707l.m5767w(r10)
+            boolean r7 = p327ri.C12576l.m5767w(r10)
             if (r7 == 0) goto L_0x004d
             goto L_0x004f
         L_0x004d:
@@ -222,8 +222,8 @@ public final class GuildInviteView extends ConstraintLayout {
             r0.setVisibility(r7)
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
             android.widget.ImageView r0 = r0.itemInviteTotalMemberDot
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
-            int r1 = com.discord.chat.C4254R.color.primary_500
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
+            int r1 = com.discord.chat.C3147R.color.primary_500
             int r1 = com.discord.theme.utils.ColorUtilsKt.getColorCompat(r8, r1)
             com.discord.misc.utilities.view.ViewBackgroundUtilsKt.setBackgroundOval$default(r0, r1, r3, r4, r6)
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
@@ -232,9 +232,9 @@ public final class GuildInviteView extends ConstraintLayout {
             com.discord.chat.databinding.GuildInviteViewBinding r0 = r8.binding
             android.widget.LinearLayout r0 = r0.itemInviteMemberContainer
             java.lang.String r1 = "binding.itemInviteMemberContainer"
-            kotlin.jvm.internal.C9971q.m14634f(r0, r1)
+            kotlin.jvm.internal.C9677q.m14634f(r0, r1)
             if (r9 == 0) goto L_0x0084
-            boolean r9 = p326ri.C12707l.m5767w(r9)
+            boolean r9 = p327ri.C12576l.m5767w(r9)
             if (r9 == 0) goto L_0x0082
             goto L_0x0084
         L_0x0082:
@@ -245,7 +245,7 @@ public final class GuildInviteView extends ConstraintLayout {
         L_0x0085:
             if (r9 == 0) goto L_0x0097
             if (r10 == 0) goto L_0x0092
-            boolean r9 = p326ri.C12707l.m5767w(r10)
+            boolean r9 = p327ri.C12576l.m5767w(r10)
             if (r9 == 0) goto L_0x0090
             goto L_0x0092
         L_0x0090:
@@ -272,7 +272,7 @@ public final class GuildInviteView extends ConstraintLayout {
 
     public final void setSubtitle(CharSequence charSequence) {
         TextView textView = this.binding.itemInviteSubtitle;
-        C9971q.m14634f(textView, "binding.itemInviteSubtitle");
+        C9677q.m14634f(textView, "binding.itemInviteSubtitle");
         ViewUtilsKt.setOptionalText(textView, charSequence);
     }
 
@@ -281,13 +281,13 @@ public final class GuildInviteView extends ConstraintLayout {
             this.binding.itemInviteSubtitle.setTextColor(num.intValue());
         }
         SimpleDraweeView simpleDraweeView = this.binding.itemInviteSubtitleIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.itemInviteSubtitleIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.itemInviteSubtitleIcon");
         ColorUtilsKt.setTintColor(simpleDraweeView, num);
     }
 
     public final void setSubtitleIcon(String str) {
         SimpleDraweeView setSubtitleIcon$lambda$9 = this.binding.itemInviteSubtitleIcon;
-        C9971q.m14634f(setSubtitleIcon$lambda$9, "setSubtitleIcon$lambda$9");
+        C9677q.m14634f(setSubtitleIcon$lambda$9, "setSubtitleIcon$lambda$9");
         ReactAssetUtilsKt.setOptionalReactImageUrl(setSubtitleIcon$lambda$9, str);
     }
 
@@ -296,7 +296,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteTitle.setTextColor(num.intValue());
-        return Unit.f22042a;
+        return Unit.f25780a;
     }
 
     public final void setTitleText(CharSequence charSequence) {
@@ -306,41 +306,41 @@ public final class GuildInviteView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public GuildInviteView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         GuildInviteViewBinding inflate = GuildInviteViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView lambda$6$lambda$0 = inflate.itemInviteHeader;
         lambda$6$lambda$0.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(lambda$6$lambda$0, "lambda$6$lambda$0");
+        C9677q.m14634f(lambda$6$lambda$0, "lambda$6$lambda$0");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$0, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$0, DiscordFont.PrimaryBold);
         TextView lambda$6$lambda$1 = inflate.itemInviteTitle;
         lambda$6$lambda$1.setTextColor(ThemeManagerKt.getTheme().getHeaderPrimary());
-        C9971q.m14634f(lambda$6$lambda$1, "lambda$6$lambda$1");
+        C9677q.m14634f(lambda$6$lambda$1, "lambda$6$lambda$1");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$1, 16.0f);
         DiscordFont discordFont = DiscordFont.PrimarySemibold;
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$1, discordFont);
         TextView lambda$6$lambda$2 = inflate.itemInviteSubtitle;
         lambda$6$lambda$2.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(lambda$6$lambda$2, "lambda$6$lambda$2");
+        C9677q.m14634f(lambda$6$lambda$2, "lambda$6$lambda$2");
         DiscordFont discordFont2 = DiscordFont.PrimaryMedium;
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$2, discordFont2);
         TextView lambda$6$lambda$3 = inflate.itemInviteOnlineText;
         lambda$6$lambda$3.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(lambda$6$lambda$3, "lambda$6$lambda$3");
+        C9677q.m14634f(lambda$6$lambda$3, "lambda$6$lambda$3");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$3, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$3, discordFont);
         TextView lambda$6$lambda$4 = inflate.itemInviteTotalMemberText;
         lambda$6$lambda$4.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(lambda$6$lambda$4, "lambda$6$lambda$4");
+        C9677q.m14634f(lambda$6$lambda$4, "lambda$6$lambda$4");
         SetTextSizeSpKt.setTextSizeSp(lambda$6$lambda$4, 12.0f);
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$4, discordFont);
         TextView lambda$6$lambda$5 = inflate.itemInviteHubLink;
         lambda$6$lambda$5.setTextColor(ThemeManagerKt.getTheme().getInteractiveNormal());
-        C9971q.m14634f(lambda$6$lambda$5, "lambda$6$lambda$5");
+        C9677q.m14634f(lambda$6$lambda$5, "lambda$6$lambda$5");
         DiscordFontUtilsKt.setDiscordFont(lambda$6$lambda$5, discordFont2);
-        inflate.itemInviteJoinedButton.setBackgroundColor(ColorUtilsKt.getColorCompat(context, C4254R.color.brand));
-        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ColorUtilsKt.getColorCompat(context, ThemeManagerKt.getTheme().getColorRes(C4254R.color.primary_100, C4254R.color.primary_630)), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
+        inflate.itemInviteJoinedButton.setBackgroundColor(ColorUtilsKt.getColorCompat(context, C3147R.color.brand));
+        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ColorUtilsKt.getColorCompat(context, ThemeManagerKt.getTheme().getColorRes(C3147R.color.primary_100, C3147R.color.primary_630)), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
     }
 }

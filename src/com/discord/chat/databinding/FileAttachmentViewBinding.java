@@ -8,11 +8,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.AttachmentUploadOverlayView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class FileAttachmentViewBinding {
@@ -43,35 +43,35 @@ public final class FileAttachmentViewBinding {
     }
 
     public static FileAttachmentViewBinding bind(View view) {
-        int i = C4254R.C4256id.file_action_group;
-        ConstraintLayout constraintLayout = (ConstraintLayout) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.file_action_group;
+        ConstraintLayout constraintLayout = (ConstraintLayout) C13836a.m2313a(view, i);
         if (constraintLayout != null) {
-            i = C4254R.C4256id.file_attachment_description;
-            TextView textView = (TextView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.file_attachment_description;
+            TextView textView = (TextView) C13836a.m2313a(view, i);
             if (textView != null) {
-                i = C4254R.C4256id.file_attachment_download;
-                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.file_attachment_download;
+                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView != null) {
-                    i = C4254R.C4256id.file_attachment_download_icon_barrier;
-                    Barrier barrier = (Barrier) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.file_attachment_download_icon_barrier;
+                    Barrier barrier = (Barrier) C13836a.m2313a(view, i);
                     if (barrier != null) {
-                        i = C4254R.C4256id.file_attachment_download_progress_bar;
-                        ProgressBar progressBar = (ProgressBar) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.file_attachment_download_progress_bar;
+                        ProgressBar progressBar = (ProgressBar) C13836a.m2313a(view, i);
                         if (progressBar != null) {
-                            i = C4254R.C4256id.file_attachment_icon;
-                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13922a.m2313a(view, i);
+                            i = C3147R.C3149id.file_attachment_icon;
+                            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) C13836a.m2313a(view, i);
                             if (simpleDraweeView2 != null) {
-                                i = C4254R.C4256id.file_attachment_name;
-                                TextView textView2 = (TextView) C13922a.m2313a(view, i);
+                                i = C3147R.C3149id.file_attachment_name;
+                                TextView textView2 = (TextView) C13836a.m2313a(view, i);
                                 if (textView2 != null) {
-                                    i = C4254R.C4256id.spoiler;
-                                    SpoilerView spoilerView = (SpoilerView) C13922a.m2313a(view, i);
+                                    i = C3147R.C3149id.spoiler;
+                                    SpoilerView spoilerView = (SpoilerView) C13836a.m2313a(view, i);
                                     if (spoilerView != null) {
-                                        i = C4254R.C4256id.upload_overlay;
-                                        AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) C13922a.m2313a(view, i);
+                                        i = C3147R.C3149id.upload_overlay;
+                                        AttachmentUploadOverlayView attachmentUploadOverlayView = (AttachmentUploadOverlayView) C13836a.m2313a(view, i);
                                         if (attachmentUploadOverlayView != null) {
-                                            i = C4254R.C4256id.upload_overlay_background;
-                                            LinearLayout linearLayout = (LinearLayout) C13922a.m2313a(view, i);
+                                            i = C3147R.C3149id.upload_overlay_background;
+                                            LinearLayout linearLayout = (LinearLayout) C13836a.m2313a(view, i);
                                             if (linearLayout != null) {
                                                 return new FileAttachmentViewBinding(view, constraintLayout, textView, simpleDraweeView, barrier, progressBar, simpleDraweeView2, textView2, spoilerView, attachmentUploadOverlayView, linearLayout);
                                             }
@@ -89,7 +89,7 @@ public final class FileAttachmentViewBinding {
 
     public static FileAttachmentViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.file_attachment_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.file_attachment_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

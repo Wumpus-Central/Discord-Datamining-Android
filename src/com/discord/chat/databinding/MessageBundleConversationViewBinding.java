@@ -5,11 +5,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.reactions.ReactionsView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import p412x1.C13922a;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class MessageBundleConversationViewBinding {
@@ -30,20 +30,20 @@ public final class MessageBundleConversationViewBinding {
     }
 
     public static MessageBundleConversationViewBinding bind(View view) {
-        int i = C4254R.C4256id.barrier;
-        Barrier barrier = (Barrier) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.barrier;
+        Barrier barrier = (Barrier) C13836a.m2313a(view, i);
         if (barrier != null) {
-            i = C4254R.C4256id.reactions_view;
-            ReactionsView reactionsView = (ReactionsView) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.reactions_view;
+            ReactionsView reactionsView = (ReactionsView) C13836a.m2313a(view, i);
             if (reactionsView != null) {
-                i = C4254R.C4256id.reply_author_avatar;
-                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13922a.m2313a(view, i);
+                i = C3147R.C3149id.reply_author_avatar;
+                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) C13836a.m2313a(view, i);
                 if (simpleDraweeView != null) {
-                    i = C4254R.C4256id.reply_author_name;
-                    TextView textView = (TextView) C13922a.m2313a(view, i);
+                    i = C3147R.C3149id.reply_author_name;
+                    TextView textView = (TextView) C13836a.m2313a(view, i);
                     if (textView != null) {
-                        i = C4254R.C4256id.reply_text;
-                        MessageContentView messageContentView = (MessageContentView) C13922a.m2313a(view, i);
+                        i = C3147R.C3149id.reply_text;
+                        MessageContentView messageContentView = (MessageContentView) C13836a.m2313a(view, i);
                         if (messageContentView != null) {
                             return new MessageBundleConversationViewBinding(view, barrier, reactionsView, simpleDraweeView, textView, messageContentView);
                         }
@@ -56,7 +56,7 @@ public final class MessageBundleConversationViewBinding {
 
     public static MessageBundleConversationViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.message_bundle_conversation_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.message_bundle_conversation_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

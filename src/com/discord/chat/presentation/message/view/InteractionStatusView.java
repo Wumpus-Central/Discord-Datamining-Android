@@ -21,7 +21,7 @@ import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J#\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u000f\u0010\u0010R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\u0011"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/InteractionStatusView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/chat/databinding/InteractionStatusViewBinding;", "setInteractionStatus", "", "messageId", "Lcom/discord/primitives/MessageId;", "interactionStatus", "Lcom/discord/chat/bridge/interaction/InteractionStatus;", "setInteractionStatus-ntcYbpo", "(Ljava/lang/String;Lcom/discord/chat/bridge/interaction/InteractionStatus;)V", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -32,7 +32,7 @@ public final class InteractionStatusView extends ConstraintLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public InteractionStatusView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ InteractionStatusView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -43,10 +43,10 @@ public final class InteractionStatusView extends ConstraintLayout {
     public final void m41861setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i;
         int i2;
-        C9971q.m14633g(messageId, "messageId");
-        C9971q.m14633g(interactionStatus, "interactionStatus");
+        C9677q.m14633g(messageId, "messageId");
+        C9677q.m14633g(interactionStatus, "interactionStatus");
         ProgressDots progressDots = this.binding.viewInteractionStatusLoadingDots;
-        C9971q.m14634f(progressDots, "binding.viewInteractionStatusLoadingDots");
+        C9677q.m14634f(progressDots, "binding.viewInteractionStatusLoadingDots");
         int i3 = 0;
         if (interactionStatus.isLoading()) {
             i = 0;
@@ -55,18 +55,18 @@ public final class InteractionStatusView extends ConstraintLayout {
         }
         progressDots.setVisibility(i);
         SimpleDraweeView simpleDraweeView = this.binding.viewInteractionStatusDangerIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.viewInteractionStatusDangerIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.viewInteractionStatusDangerIcon");
         if (!interactionStatus.isFailed()) {
             i3 = 8;
         }
         simpleDraweeView.setVisibility(i3);
         TextView setInteractionStatus_ntcYbpo$lambda$2 = this.binding.viewInteractionStatusLabelMessage;
-        C9971q.m14634f(setInteractionStatus_ntcYbpo$lambda$2, "setInteractionStatus_ntcYbpo$lambda$2");
+        C9677q.m14634f(setInteractionStatus_ntcYbpo$lambda$2, "setInteractionStatus_ntcYbpo$lambda$2");
         StructurableText text = interactionStatus.getText();
         Context context = setInteractionStatus_ntcYbpo$lambda$2.getContext();
-        C9971q.m14634f(context, "context");
+        C9677q.m14634f(context, "context");
         Paint.FontMetrics fontMetrics = setInteractionStatus_ntcYbpo$lambda$2.getPaint().getFontMetrics();
-        C9971q.m14634f(fontMetrics, "paint.fontMetrics");
+        C9677q.m14634f(fontMetrics, "paint.fontMetrics");
         DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(text, context, messageId, false, false, false, null, null, null, null, null, null, null, null, null, null, null, false, null, TextUtilsKt.getBaselineHeight(fontMetrics), 262112, null);
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(setInteractionStatus_ntcYbpo$lambda$2));
         ViewUtilsKt.setOptionalText(setInteractionStatus_ntcYbpo$lambda$2, spannable$default);
@@ -81,12 +81,12 @@ public final class InteractionStatusView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public InteractionStatusView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         InteractionStatusViewBinding inflate = InteractionStatusViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         SimpleDraweeView _init_$lambda$0 = inflate.viewInteractionStatusDangerIcon;
-        C9971q.m14634f(_init_$lambda$0, "_init_$lambda$0");
+        C9677q.m14634f(_init_$lambda$0, "_init_$lambda$0");
         ReactAssetUtilsKt.setReactAsset(_init_$lambda$0, ReactAsset.Warning);
         ColorUtilsKt.setTintColor(_init_$lambda$0, Integer.valueOf(ThemeManagerKt.getTheme().getTextDanger()));
     }

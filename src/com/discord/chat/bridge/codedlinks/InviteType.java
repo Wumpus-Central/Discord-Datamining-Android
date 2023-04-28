@@ -4,14 +4,14 @@ import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
 import kotlin.Lazy;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
+import kotlin.jvm.internal.C9656f0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
-import nf.C11084n;
-import nf.EnumC11087p;
-import p449yi.AbstractC14435f;
+import nf.C10839n;
+import nf.EnumC10842p;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f(with = Serializer.class)
+@AbstractC14370f(with = Serializer.class)
 @Metadata(m15074d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\t\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, m15073d2 = {"Lcom/discord/chat/bridge/codedlinks/InviteType;", "", "Lcom/discord/serialization/IntEnum;", "serialNumber", "", "(Ljava/lang/String;II)V", "getSerialNumber", "()I", "GUILD", "GROUP_DM", "FRIEND", "Companion", "Serializer", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public enum InviteType implements IntEnum {
@@ -48,13 +48,13 @@ public enum InviteType implements IntEnum {
         public static final Serializer INSTANCE = new Serializer();
 
         private Serializer() {
-            super(C9951f0.m14684b(InviteType.class), null, 2, null);
+            super(C9656f0.m14684b(InviteType.class), null, 2, null);
         }
     }
 
     static {
         Lazy<KSerializer<Object>> b;
-        b = C11084n.m10944b(EnumC11087p.PUBLICATION, InviteType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        b = C10839n.m10944b(EnumC10842p.PUBLICATION, InviteType$Companion$$cachedSerializer$delegate$1.INSTANCE);
         $cachedSerializer$delegate = b;
     }
 

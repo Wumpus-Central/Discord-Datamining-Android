@@ -4,7 +4,7 @@ import android.content.Context;
 import co.discord.media_engine.CameraEnumeratorProvider;
 import co.discord.media_engine.SharedEglBaseContext;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.webrtc.EglBase;
 import org.webrtc.VideoFrame;
@@ -141,15 +141,15 @@ public final class NativeEngine {
     }
 
     public NativeEngine(Context context, int i) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.logLevel = i;
         Context applicationContext = context.getApplicationContext();
-        C9971q.m14634f(applicationContext, "context.applicationContext");
+        C9677q.m14634f(applicationContext, "context.applicationContext");
         CameraEnumeratorProvider.maybeInit(applicationContext);
         Context applicationContext2 = context.getApplicationContext();
-        C9971q.m14634f(applicationContext2, "context.applicationContext");
+        C9677q.m14634f(applicationContext2, "context.applicationContext");
         EglBase.Context eglContext = SharedEglBaseContext.getEglContext();
-        C9971q.m14634f(eglContext, "getEglContext()");
+        C9677q.m14634f(eglContext, "getEglContext()");
         this.nativeInstance = nativeCreateInstance(applicationContext2, eglContext, i);
     }
 

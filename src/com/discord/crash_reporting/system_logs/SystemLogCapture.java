@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p323rf.C12581a;
-import p326ri.C12694d;
-import p326ri.C12719v;
+import p324rf.C12444a;
+import p327ri.C12563d;
+import p327ri.C12588v;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \u000e2\u00020\u0001:\u0001\u000eB\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0006\u001a\u00020\u00072\n\u0010\b\u001a\u00060\tj\u0002`\nJ\b\u0010\u000b\u001a\u00020\u0007H\u0002J\u0006\u0010\f\u001a\u00020\rR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, m15073d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogCapture;", "", "()V", "buffer", "Lcom/discord/crash_reporting/system_logs/FixedSizeLineBuffer;", "tombstoneBuffer", "appendOutput", "", "sb", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", ViewProps.START, "startThread", "Ljava/lang/Thread;", "Companion", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
@@ -32,8 +32,8 @@ public final class SystemLogCapture {
 
         public final boolean shouldIncludeLogLine$crash_reporting_release(String line) {
             boolean M;
-            C9971q.m14633g(line, "line");
-            M = C12719v.m5709M(line, "chatty  : uid=", false, 2, null);
+            C9677q.m14633g(line, "line");
+            M = C12588v.m5709M(line, "chatty  : uid=", false, 2, null);
             return !M;
         }
     }
@@ -51,8 +51,8 @@ public final class SystemLogCapture {
                 try {
                     process = new ProcessBuilder(SystemLogUtils.logcatPath).redirectErrorStream(true).start();
                     InputStream inputStream = process.getInputStream();
-                    C9971q.m14634f(inputStream, "logcatProcess.inputStream");
-                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, C12694d.f28536b);
+                    C9677q.m14634f(inputStream, "logcatProcess.inputStream");
+                    InputStreamReader inputStreamReader = new InputStreamReader(inputStream, C12563d.f32852b);
                     if (inputStreamReader instanceof BufferedReader) {
                         bufferedReader = (BufferedReader) inputStreamReader;
                     } else {
@@ -77,7 +77,7 @@ public final class SystemLogCapture {
                 } catch (Exception e) {
                     this.buffer.addLine("Exception getting system logs '" + e + "'");
                     StackTraceElement[] stackTrace = e.getStackTrace();
-                    C9971q.m14634f(stackTrace, "e.stackTrace");
+                    C9677q.m14634f(stackTrace, "e.stackTrace");
                     for (StackTraceElement stackTraceElement : stackTrace) {
                         this.buffer.addLine("    " + stackTraceElement);
                     }
@@ -96,12 +96,12 @@ public final class SystemLogCapture {
     }
 
     public final void appendOutput(StringBuilder sb2) {
-        C9971q.m14633g(sb2, "sb");
+        C9677q.m14633g(sb2, "sb");
         this.tombstoneBuffer.appendString(sb2);
         this.buffer.appendString(sb2);
     }
 
     public final Thread startThread() {
-        return C12581a.m6476b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new SystemLogCapture$startThread$1(this), 20, null);
+        return C12444a.m6476b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new SystemLogCapture$startThread$1(this), 20, null);
     }
 }

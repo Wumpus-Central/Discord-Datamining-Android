@@ -5,13 +5,13 @@ import android.graphics.drawable.PaintDrawable;
 import android.view.View;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\b\b\u0001\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u0004\u001a7\u0010\u0006\u001a\u00020\u0001*\u00020\u00022\b\b\u0001\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00042\n\b\u0003\u0010\u0007\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\b\u001a\u00020\u0004¢\u0006\u0002\u0010\t¨\u0006\n"}, m15073d2 = {"setBackgroundOval", "", "Landroid/view/View;", ViewProps.COLOR, "", "radiusPx", "setBackgroundRectangle", "strokeColor", "strokeWidth", "(Landroid/view/View;IILjava/lang/Integer;I)V", "misc_utilities_release"}, m15072k = 2, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes5.dex */
 public final class ViewBackgroundUtilsKt {
     public static final void setBackgroundOval(View view, int i, int i2) {
-        C9971q.m14633g(view, "<this>");
+        C9677q.m14633g(view, "<this>");
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(1);
         gradientDrawable.setColor(i);
@@ -29,7 +29,7 @@ public final class ViewBackgroundUtilsKt {
     /* JADX WARN: Multi-variable type inference failed */
     public static final void setBackgroundRectangle(View view, int i, int i2, Integer num, int i3) {
         PaintDrawable paintDrawable;
-        C9971q.m14633g(view, "<this>");
+        C9677q.m14633g(view, "<this>");
         if (num != null) {
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setShape(0);

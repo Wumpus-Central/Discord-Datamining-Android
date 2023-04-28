@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Pair;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
-import nf.C11098x;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
+import nf.C10853x;
 
 @Metadata(m15074d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0080\b\u0018\u00002\u00020\u0001B+\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006¢\u0006\u0002\u0010\tJ\u000f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0006HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0006HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0006HÆ\u0003J7\u0010\u0014\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u0006HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018HÖ\u0003J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001J\b\u0010\u001b\u001a\u00020\u001cH\u0016J\t\u0010\u001d\u001a\u00020\u0006HÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000b¨\u0006\u001e"}, m15073d2 = {"Lcom/discord/user_search_worker/react_events/ReturnResultsEvent;", "Lcom/discord/reactevents/ReactEvent;", "results", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "query", "", "uuid", "type", "(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getQuery", "()Ljava/lang/String;", "getResults", "()Ljava/util/List;", "getType", "getUuid", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "", "hashCode", "", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "user_search_worker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -22,10 +22,10 @@ public final class ReturnResultsEvent implements ReactEvent {
     private final String uuid;
 
     public ReturnResultsEvent(List<UserSearchWorkerResult> results, String query, String uuid, String type) {
-        C9971q.m14633g(results, "results");
-        C9971q.m14633g(query, "query");
-        C9971q.m14633g(uuid, "uuid");
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(results, "results");
+        C9677q.m14633g(query, "query");
+        C9677q.m14633g(uuid, "uuid");
+        C9677q.m14633g(type, "type");
         this.results = results;
         this.query = query;
         this.uuid = uuid;
@@ -66,10 +66,10 @@ public final class ReturnResultsEvent implements ReactEvent {
     }
 
     public final ReturnResultsEvent copy(List<UserSearchWorkerResult> results, String query, String uuid, String type) {
-        C9971q.m14633g(results, "results");
-        C9971q.m14633g(query, "query");
-        C9971q.m14633g(uuid, "uuid");
-        C9971q.m14633g(type, "type");
+        C9677q.m14633g(results, "results");
+        C9677q.m14633g(query, "query");
+        C9677q.m14633g(uuid, "uuid");
+        C9677q.m14633g(type, "type");
         return new ReturnResultsEvent(results, query, uuid, type);
     }
 
@@ -81,7 +81,7 @@ public final class ReturnResultsEvent implements ReactEvent {
             return false;
         }
         ReturnResultsEvent returnResultsEvent = (ReturnResultsEvent) obj;
-        return C9971q.m14638b(this.results, returnResultsEvent.results) && C9971q.m14638b(this.query, returnResultsEvent.query) && C9971q.m14638b(this.uuid, returnResultsEvent.uuid) && C9971q.m14638b(this.type, returnResultsEvent.type);
+        return C9677q.m14638b(this.results, returnResultsEvent.results) && C9677q.m14638b(this.query, returnResultsEvent.query) && C9677q.m14638b(this.uuid, returnResultsEvent.uuid) && C9677q.m14638b(this.type, returnResultsEvent.type);
     }
 
     public final String getQuery() {
@@ -108,18 +108,18 @@ public final class ReturnResultsEvent implements ReactEvent {
     public WritableMap serialize() {
         int t;
         Pair[] pairArr = new Pair[3];
-        pairArr[0] = C11098x.m10921a("uuid", this.uuid);
-        pairArr[1] = C11098x.m10921a("type", this.type);
+        pairArr[0] = C10853x.m10921a("uuid", this.uuid);
+        pairArr[1] = C10853x.m10921a("type", this.type);
         Pair[] pairArr2 = new Pair[2];
-        pairArr2[0] = C11098x.m10921a("query", this.query);
+        pairArr2[0] = C10853x.m10921a("query", this.query);
         List<UserSearchWorkerResult> list = this.results;
-        t = C9907k.m14809t(list, 10);
+        t = C9611k.m14809t(list, 10);
         ArrayList arrayList = new ArrayList(t);
         for (UserSearchWorkerResult userSearchWorkerResult : list) {
-            arrayList.add(NativeMapExtensionsKt.nativeMapOf(C11098x.m10921a("id", userSearchWorkerResult.getId()), C11098x.m10921a("username", userSearchWorkerResult.getUsername()), C11098x.m10921a("comparator", userSearchWorkerResult.getComparator()), C11098x.m10921a("score", Double.valueOf(userSearchWorkerResult.getScore()))));
+            arrayList.add(NativeMapExtensionsKt.nativeMapOf(C10853x.m10921a("id", userSearchWorkerResult.getId()), C10853x.m10921a("username", userSearchWorkerResult.getUsername()), C10853x.m10921a("comparator", userSearchWorkerResult.getComparator()), C10853x.m10921a("score", Double.valueOf(userSearchWorkerResult.getScore()))));
         }
-        pairArr2[1] = C11098x.m10921a("results", NativeArrayExtensionsKt.toNativeArray(arrayList));
-        pairArr[2] = C11098x.m10921a("payload", NativeMapExtensionsKt.nativeMapOf(pairArr2));
+        pairArr2[1] = C10853x.m10921a("results", NativeArrayExtensionsKt.toNativeArray(arrayList));
+        pairArr[2] = C10853x.m10921a("payload", NativeMapExtensionsKt.nativeMapOf(pairArr2));
         return NativeMapExtensionsKt.nativeMapOf(pairArr);
     }
 

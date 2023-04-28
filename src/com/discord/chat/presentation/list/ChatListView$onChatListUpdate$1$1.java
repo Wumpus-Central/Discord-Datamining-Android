@@ -5,13 +5,13 @@ import com.discord.chat.listmanager.ChatListUpdate;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.AbstractC9973s;
+import kotlin.jvm.internal.AbstractC9679s;
 import kotlin.jvm.internal.Ref$BooleanRef;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, m15073d2 = {"<anonymous>", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-public final class ChatListView$onChatListUpdate$1$1 extends AbstractC9973s implements Function0<Unit> {
+public final class ChatListView$onChatListUpdate$1$1 extends AbstractC9679s implements Function0<Unit> {
     final /* synthetic */ ChatListUpdate $update;
     final /* synthetic */ Ref$BooleanRef $wasAtBottom;
     final /* synthetic */ ChatListView this$0;
@@ -37,7 +37,7 @@ public final class ChatListView$onChatListUpdate$1$1 extends AbstractC9973s impl
         if (scrollState != null && scrollState.isAtBottom()) {
             z = true;
         }
-        ref$BooleanRef.f22067k = z;
+        ref$BooleanRef.f25805k = z;
         if (this.$update.getAction() instanceof ChatListAction.Clear) {
             chatScrollStateObserver2 = this.this$0.scrollStateObserver;
             chatScrollStateObserver2.stopWatching();

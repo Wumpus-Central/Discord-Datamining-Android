@@ -9,17 +9,17 @@ import java.util.Locale;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
-import kotlin.collections.C9914r;
+import kotlin.collections.C9610j;
+import kotlin.collections.C9618r;
 import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.text.Regex;
-import kotlinx.serialization.json.C10285k;
+import kotlinx.serialization.json.C10006k;
 import kotlinx.serialization.json.Json;
-import nf.C11088q;
-import p303qf.C12120c;
-import p326ri.EnumC12705j;
+import nf.C10843q;
+import p304qf.C11965c;
+import p327ri.EnumC12574j;
 
 @Metadata(m15074d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0007\b\u0000\u0018\u0000 .2\u00020\u0001:\u0001.B-\u0012$\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e¢\u0006\u0004\b,\u0010-J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0006H\u0002J\u0010\u0010\t\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\bH\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u0018\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\nH\u0002J\u0018\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u000e\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010\u001d\u001a\u00020\u0004R5\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e8\u0006¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'R \u0010)\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\f0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R \u0010+\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000e0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010*¨\u0006/"}, m15073d2 = {"Lcom/discord/user_search_worker/UserSearchWorker;", "", "Lcom/discord/user_search_worker/UserSearchUpdateUsersData;", "data", "", "mergeUsers", "Lcom/discord/user_search_worker/UserSearchQuerySetData;", "setNewQuery", "Lcom/discord/user_search_worker/UserSearchQueryClearData;", "clearQuery", "", "id", "Lcom/discord/user_search_worker/UserSearchTransformedUser;", "user", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "payload", "", "isValid", "needleBase", "haystackBase", "fuzzySearch", "", "score", "booster", "calculateScore", "uuid", "searchUsers", "dataJSON", "onMessage", "terminate", "Lkotlin/Function3;", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "onResults", "Lkotlin/jvm/functions/Function3;", "getOnResults", "()Lkotlin/jvm/functions/Function3;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "", "users", "Ljava/util/Map;", "queries", "<init>", "(Lkotlin/jvm/functions/Function3;)V", "Companion", "user_search_worker_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes7.dex */
@@ -30,7 +30,7 @@ public final class UserSearchWorker {
     private final Function3<List<UserSearchWorkerResult>, String, String, Unit> onResults;
     public static final Companion Companion = new Companion(null);
     private static final Regex STRIP_DIACRITICS_REGEX_PATTERN = new Regex("[\\u0300-\\u036f]");
-    private final Json json = C10285k.m13694b(null, UserSearchWorker$json$1.INSTANCE, 1, null);
+    private final Json json = C10006k.m13694b(null, UserSearchWorker$json$1.INSTANCE, 1, null);
     private final Map<String, UserSearchTransformedUser> users = new LinkedHashMap();
     private final Map<String, UserSearchQuerySetPayload> queries = new LinkedHashMap();
 
@@ -46,7 +46,7 @@ public final class UserSearchWorker {
             private final double score;
 
             public LocalResult(String comparator, double d) {
-                C9971q.m14633g(comparator, "comparator");
+                C9677q.m14633g(comparator, "comparator");
                 this.comparator = comparator;
                 this.score = d;
             }
@@ -70,7 +70,7 @@ public final class UserSearchWorker {
             }
 
             public final LocalResult copy(String comparator, double d) {
-                C9971q.m14633g(comparator, "comparator");
+                C9677q.m14633g(comparator, "comparator");
                 return new LocalResult(comparator, d);
             }
 
@@ -82,7 +82,7 @@ public final class UserSearchWorker {
                     return false;
                 }
                 LocalResult localResult = (LocalResult) obj;
-                return C9971q.m14638b(this.comparator, localResult.comparator) && Double.compare(this.score, localResult.score) == 0;
+                return C9677q.m14638b(this.comparator, localResult.comparator) && Double.compare(this.score, localResult.score) == 0;
             }
 
             public final String getComparator() {
@@ -114,14 +114,14 @@ public final class UserSearchWorker {
         /* JADX INFO: Access modifiers changed from: private */
         public final String strippedOfDiacritics(String str) {
             String nfdNormalized = Normalizer.normalize(str, Normalizer.Form.NFD);
-            C9971q.m14634f(nfdNormalized, "nfdNormalized");
+            C9677q.m14634f(nfdNormalized, "nfdNormalized");
             return UserSearchWorker.STRIP_DIACRITICS_REGEX_PATTERN.m14582h(nfdNormalized, "");
         }
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public UserSearchWorker(Function3<? super List<UserSearchWorkerResult>, ? super String, ? super String, Unit> onResults) {
-        C9971q.m14633g(onResults, "onResults");
+        C9677q.m14633g(onResults, "onResults");
         this.onResults = onResults;
     }
 
@@ -139,16 +139,16 @@ public final class UserSearchWorker {
     private final boolean fuzzySearch(String str, String str2) {
         Locale locale = Locale.ROOT;
         String lowerCase = str.toLowerCase(locale);
-        C9971q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+        C9677q.m14634f(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
         String lowerCase2 = str2.toLowerCase(locale);
-        C9971q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+        C9677q.m14634f(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
         int length = lowerCase2.length();
         int length2 = lowerCase.length();
         if (length2 > length) {
             return false;
         }
         if (length2 == length) {
-            return C9971q.m14638b(lowerCase, lowerCase2);
+            return C9677q.m14638b(lowerCase, lowerCase2);
         }
         int length3 = lowerCase.length();
         int i = 0;
@@ -202,7 +202,7 @@ public final class UserSearchWorker {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:31:0x0096, code lost:
-        if (kotlin.jvm.internal.C9971q.m14638b(r3, r6) == false) goto L_0x0098;
+        if (kotlin.jvm.internal.C9677q.m14638b(r3, r6) == false) goto L_0x0098;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -245,7 +245,7 @@ public final class UserSearchWorker {
             r10 = r5
             java.util.Map r5 = r4.getNicknames()
             java.util.Map r11 = r2.getNicknames()
-            java.util.Map r11 = p267of.C11286s.m10262o(r5, r11)
+            java.util.Map r11 = p268of.C11050s.m10262o(r5, r11)
             r5 = r4
             com.discord.user_search_worker.UserSearchTransformedUser r5 = r5.copy(r6, r7, r8, r9, r10, r11)
             if (r5 != 0) goto L_0x0065
@@ -268,13 +268,13 @@ public final class UserSearchWorker {
         L_0x0081:
             r7 = r6
         L_0x0082:
-            boolean r3 = kotlin.jvm.internal.C9971q.m14638b(r3, r7)
+            boolean r3 = kotlin.jvm.internal.C9677q.m14638b(r3, r7)
             if (r3 == 0) goto L_0x0098
             java.lang.String r3 = r2.getFriendNickname()
             if (r4 == 0) goto L_0x0092
             java.lang.String r6 = r4.getFriendNickname()
         L_0x0092:
-            boolean r3 = kotlin.jvm.internal.C9971q.m14638b(r3, r6)
+            boolean r3 = kotlin.jvm.internal.C9677q.m14638b(r3, r6)
             if (r3 != 0) goto L_0x0099
         L_0x0098:
             r1 = r5
@@ -300,7 +300,7 @@ public final class UserSearchWorker {
             if (r4 == 0) goto L_0x00ec
             java.lang.Boolean r5 = r4.getFriends()
             java.lang.Boolean r6 = java.lang.Boolean.valueOf(r1)
-            boolean r5 = kotlin.jvm.internal.C9971q.m14638b(r5, r6)
+            boolean r5 = kotlin.jvm.internal.C9677q.m14638b(r5, r6)
             if (r5 != 0) goto L_0x00ec
             java.lang.String r5 = r4.getGuild()
             if (r5 == 0) goto L_0x00b0
@@ -349,8 +349,8 @@ public final class UserSearchWorker {
             this.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c3 = Regex.f22112l.m14577c(query);
-        EnumC12705j jVar = EnumC12705j.IGNORE_CASE;
+        String c3 = Regex.f25850l.m14577c(query);
+        EnumC12574j jVar = EnumC12574j.IGNORE_CASE;
         Regex regex2 = new Regex("^" + c3, jVar);
         Regex regex3 = new Regex(c3, jVar);
         for (Map.Entry<String, UserSearchTransformedUser> entry : this.users.entrySet()) {
@@ -370,17 +370,17 @@ public final class UserSearchWorker {
                         str2 = null;
                     }
                     strArr[2] = nicknames.get(str2);
-                    list = C9906j.m14817l(strArr);
+                    list = C9610j.m14817l(strArr);
                 } else if (!z) {
                     String[] strArr2 = new String[2];
                     strArr2[c] = value.getUsername();
                     strArr2[c2] = value.getFriendNickname();
-                    l = C9906j.m14817l(strArr2);
-                    list = C9914r.m14750o0(l, value.getNicknames().values());
+                    l = C9610j.m14817l(strArr2);
+                    list = C9618r.m14750o0(l, value.getNicknames().values());
                 } else {
-                    throw new C11088q();
+                    throw new C10843q();
                 }
-                R = C9914r.m14773R(list);
+                R = C9618r.m14773R(list);
                 UserSearchWorkerResult userSearchWorkerResult = null;
                 for (String str3 : R) {
                     Double d2 = userSearchQuerySetPayload.getBoosters().get(key);
@@ -419,9 +419,9 @@ public final class UserSearchWorker {
                 c2 = 1;
             }
         }
-        b = C12120c.m7780b(UserSearchWorker$searchUsers$sortedResults$1.INSTANCE, UserSearchWorker$searchUsers$sortedResults$2.INSTANCE);
-        w0 = C9914r.m14742w0(arrayList, b);
-        x0 = C9914r.m14741x0(w0, userSearchQuerySetPayload.getLimit());
+        b = C11965c.m7780b(UserSearchWorker$searchUsers$sortedResults$1.INSTANCE, UserSearchWorker$searchUsers$sortedResults$2.INSTANCE);
+        w0 = C9618r.m14742w0(arrayList, b);
+        x0 = C9618r.m14741x0(w0, userSearchQuerySetPayload.getLimit());
         this.onResults.invoke(x0, query, str);
     }
 
@@ -435,7 +435,7 @@ public final class UserSearchWorker {
     }
 
     public final void onMessage(String dataJSON) {
-        C9971q.m14633g(dataJSON, "dataJSON");
+        C9677q.m14633g(dataJSON, "dataJSON");
         Json json = this.json;
         json.mo611a();
         UserSearchData userSearchData = (UserSearchData) json.mo578b(UserSearchData.Companion.serializer(), dataJSON);

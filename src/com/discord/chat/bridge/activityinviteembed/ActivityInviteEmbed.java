@@ -1,20 +1,20 @@
 package com.discord.chat.bridge.activityinviteembed;
 
-import bj.C3622a2;
-import bj.C3643f;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2521f;
+import bj.C2560n1;
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
-import p469zi.C14667a;
+import p450yi.AbstractC14370f;
+import p470zi.C14606a;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 92\u00020\u0001:\u000289B\u007f\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0010\u0010\n\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u000b\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000f\u001a\u00020\u0007\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\u0002\u0010\u0013Bm\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0012\b\u0002\u0010\n\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u000b\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000f\u001a\u00020\u0007\u0012\u0006\u0010\u0010\u001a\u00020\u0005¢\u0006\u0002\u0010\u0014J\u000b\u0010\"\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0007HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\t\u0010&\u001a\u00020\u0005HÆ\u0003J\u0013\u0010'\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u000bHÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\u000b\u0010)\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010+\u001a\u00020\u0007HÆ\u0003J}\u0010,\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\u0012\b\u0002\u0010\n\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u000b2\b\b\u0002\u0010\f\u001a\u00020\u00032\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000f\u001a\u00020\u00072\b\b\u0002\u0010\u0010\u001a\u00020\u0005HÆ\u0001J\u0013\u0010-\u001a\u00020\u00072\b\u0010.\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010/\u001a\u00020\u0003HÖ\u0001J\t\u00100\u001a\u00020\u0005HÖ\u0001J!\u00101\u001a\u0002022\u0006\u00103\u001a\u00020\u00002\u0006\u00104\u001a\u0002052\u0006\u00106\u001a\u000207HÇ\u0001R\u001b\u0010\n\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0010\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0018R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u001bR\u0011\u0010\u000f\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001bR\u0011\u0010\f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0018R\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0018R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0018¨\u0006:"}, m15073d2 = {"Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;", "", "seen1", "", "coverImage", "", "isListening", "", "headerText", "partyStatus", "avatarsToRender", "", "maxPartySize", "name", "subtext", "joinable", "ctaText", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V", "getAvatarsToRender", "()Ljava/util/List;", "getCoverImage", "()Ljava/lang/String;", "getCtaText", "getHeaderText", "()Z", "getJoinable", "getMaxPartySize", "()I", "getName", "getPartyStatus", "getSubtext", "component1", "component10", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class ActivityInviteEmbed {
@@ -47,7 +47,7 @@ public final class ActivityInviteEmbed {
 
     public /* synthetic */ ActivityInviteEmbed(int i, String str, boolean z, String str2, String str3, List list, int i2, String str4, String str5, boolean z2, String str6, SerializationConstructorMarker serializationConstructorMarker) {
         if (814 != (i & 814)) {
-            C3681n1.m33818b(i, 814, ActivityInviteEmbed$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 814, ActivityInviteEmbed$$serializer.INSTANCE.getDescriptor());
         }
         if ((i & 1) == 0) {
             this.coverImage = null;
@@ -81,9 +81,9 @@ public final class ActivityInviteEmbed {
         boolean z;
         boolean z2;
         boolean z3;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z4 = false;
         if (!output.mo13893A(serialDesc, 0) && self.coverImage == null) {
             z = false;
@@ -91,7 +91,7 @@ public final class ActivityInviteEmbed {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 0, C3622a2.f5917a, self.coverImage);
+            output.mo13874p(serialDesc, 0, C2500a2.f6719a, self.coverImage);
         }
         output.mo13865y(serialDesc, 1, self.isListening);
         output.mo13864z(serialDesc, 2, self.headerText);
@@ -102,7 +102,7 @@ public final class ActivityInviteEmbed {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 4, new C3643f(C14667a.m13u(C3622a2.f5917a)), self.avatarsToRender);
+            output.mo13874p(serialDesc, 4, new C2521f(C14606a.m13u(C2500a2.f6719a)), self.avatarsToRender);
         }
         output.mo13866x(serialDesc, 5, self.maxPartySize);
         if (!output.mo13893A(serialDesc, 6) && self.name == null) {
@@ -111,13 +111,13 @@ public final class ActivityInviteEmbed {
             z3 = true;
         }
         if (z3) {
-            output.mo13874p(serialDesc, 6, C3622a2.f5917a, self.name);
+            output.mo13874p(serialDesc, 6, C2500a2.f6719a, self.name);
         }
         if (output.mo13893A(serialDesc, 7) || self.subtext != null) {
             z4 = true;
         }
         if (z4) {
-            output.mo13874p(serialDesc, 7, C3622a2.f5917a, self.subtext);
+            output.mo13874p(serialDesc, 7, C2500a2.f6719a, self.subtext);
         }
         output.mo13865y(serialDesc, 8, self.joinable);
         output.mo13864z(serialDesc, 9, self.ctaText);
@@ -164,9 +164,9 @@ public final class ActivityInviteEmbed {
     }
 
     public final ActivityInviteEmbed copy(String str, boolean z, String headerText, String partyStatus, List<String> list, int i, String str2, String str3, boolean z2, String ctaText) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(partyStatus, "partyStatus");
-        C9971q.m14633g(ctaText, "ctaText");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(partyStatus, "partyStatus");
+        C9677q.m14633g(ctaText, "ctaText");
         return new ActivityInviteEmbed(str, z, headerText, partyStatus, list, i, str2, str3, z2, ctaText);
     }
 
@@ -178,7 +178,7 @@ public final class ActivityInviteEmbed {
             return false;
         }
         ActivityInviteEmbed activityInviteEmbed = (ActivityInviteEmbed) obj;
-        return C9971q.m14638b(this.coverImage, activityInviteEmbed.coverImage) && this.isListening == activityInviteEmbed.isListening && C9971q.m14638b(this.headerText, activityInviteEmbed.headerText) && C9971q.m14638b(this.partyStatus, activityInviteEmbed.partyStatus) && C9971q.m14638b(this.avatarsToRender, activityInviteEmbed.avatarsToRender) && this.maxPartySize == activityInviteEmbed.maxPartySize && C9971q.m14638b(this.name, activityInviteEmbed.name) && C9971q.m14638b(this.subtext, activityInviteEmbed.subtext) && this.joinable == activityInviteEmbed.joinable && C9971q.m14638b(this.ctaText, activityInviteEmbed.ctaText);
+        return C9677q.m14638b(this.coverImage, activityInviteEmbed.coverImage) && this.isListening == activityInviteEmbed.isListening && C9677q.m14638b(this.headerText, activityInviteEmbed.headerText) && C9677q.m14638b(this.partyStatus, activityInviteEmbed.partyStatus) && C9677q.m14638b(this.avatarsToRender, activityInviteEmbed.avatarsToRender) && this.maxPartySize == activityInviteEmbed.maxPartySize && C9677q.m14638b(this.name, activityInviteEmbed.name) && C9677q.m14638b(this.subtext, activityInviteEmbed.subtext) && this.joinable == activityInviteEmbed.joinable && C9677q.m14638b(this.ctaText, activityInviteEmbed.ctaText);
     }
 
     public final List<String> getAvatarsToRender() {
@@ -265,9 +265,9 @@ public final class ActivityInviteEmbed {
     }
 
     public ActivityInviteEmbed(String str, boolean z, String headerText, String partyStatus, List<String> list, int i, String str2, String str3, boolean z2, String ctaText) {
-        C9971q.m14633g(headerText, "headerText");
-        C9971q.m14633g(partyStatus, "partyStatus");
-        C9971q.m14633g(ctaText, "ctaText");
+        C9677q.m14633g(headerText, "headerText");
+        C9677q.m14633g(partyStatus, "partyStatus");
+        C9677q.m14633g(ctaText, "ctaText");
         this.coverImage = str;
         this.isListening = z;
         this.headerText = headerText;

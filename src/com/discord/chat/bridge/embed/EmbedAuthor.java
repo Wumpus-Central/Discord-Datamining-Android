@@ -1,21 +1,21 @@
 package com.discord.chat.bridge.embed;
 
-import bj.C3622a2;
-import bj.C3681n1;
+import bj.C2500a2;
+import bj.C2560n1;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.AbstractC9973s;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.AbstractC9679s;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import nf.C11084n;
-import p449yi.AbstractC14435f;
+import nf.C10839n;
+import p450yi.AbstractC14370f;
 
-@AbstractC14435f
+@AbstractC14370f
 @Metadata(m15074d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 (2\u00020\u0001:\u0002'(BA\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bB1\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\fJ\t\u0010\u0016\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0005HÆ\u0003J7\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001f\u001a\u00020\u0005HÖ\u0001J!\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&HÇ\u0001R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u001d\u0010\u0010\u001a\u0004\u0018\u00010\u00058FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0011\u0010\u000eR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000eR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u000e¨\u0006)"}, m15073d2 = {"Lcom/discord/chat/bridge/embed/EmbedAuthor;", "", "seen1", "", "name", "", "url", "iconURL", "iconProxyURL", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getIconProxyURL", "()Ljava/lang/String;", "getIconURL", "imageUrl", "getImageUrl", "imageUrl$delegate", "Lkotlin/Lazy;", "getName", "getUrl", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
 public final class EmbedAuthor {
@@ -29,8 +29,8 @@ public final class EmbedAuthor {
     @Metadata(m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* renamed from: com.discord.chat.bridge.embed.EmbedAuthor$1 */
     /* loaded from: classes4.dex */
-    static final class AnonymousClass1 extends AbstractC9973s implements Function0<String> {
-        AnonymousClass1() {
+    static final class C31511 extends AbstractC9679s implements Function0<String> {
+        C31511() {
             super(0);
         }
 
@@ -58,7 +58,7 @@ public final class EmbedAuthor {
     public /* synthetic */ EmbedAuthor(int i, String str, String str2, String str3, String str4, SerializationConstructorMarker serializationConstructorMarker) {
         Lazy a;
         if (1 != (i & 1)) {
-            C3681n1.m33818b(i, 1, EmbedAuthor$$serializer.INSTANCE.getDescriptor());
+            C2560n1.m33818b(i, 1, EmbedAuthor$$serializer.INSTANCE.getDescriptor());
         }
         this.name = str;
         if ((i & 2) == 0) {
@@ -76,7 +76,7 @@ public final class EmbedAuthor {
         } else {
             this.iconProxyURL = str4;
         }
-        a = C11084n.m10945a(new AnonymousClass1());
+        a = C10839n.m10945a(new C31511());
         this.imageUrl$delegate = a;
     }
 
@@ -99,9 +99,9 @@ public final class EmbedAuthor {
     public static final void write$Self(EmbedAuthor self, CompositeEncoder output, SerialDescriptor serialDesc) {
         boolean z;
         boolean z2;
-        C9971q.m14633g(self, "self");
-        C9971q.m14633g(output, "output");
-        C9971q.m14633g(serialDesc, "serialDesc");
+        C9677q.m14633g(self, "self");
+        C9677q.m14633g(output, "output");
+        C9677q.m14633g(serialDesc, "serialDesc");
         boolean z3 = false;
         output.mo13864z(serialDesc, 0, self.name);
         if (!output.mo13893A(serialDesc, 1) && self.url == null) {
@@ -110,7 +110,7 @@ public final class EmbedAuthor {
             z = true;
         }
         if (z) {
-            output.mo13874p(serialDesc, 1, C3622a2.f5917a, self.url);
+            output.mo13874p(serialDesc, 1, C2500a2.f6719a, self.url);
         }
         if (!output.mo13893A(serialDesc, 2) && self.iconURL == null) {
             z2 = false;
@@ -118,13 +118,13 @@ public final class EmbedAuthor {
             z2 = true;
         }
         if (z2) {
-            output.mo13874p(serialDesc, 2, C3622a2.f5917a, self.iconURL);
+            output.mo13874p(serialDesc, 2, C2500a2.f6719a, self.iconURL);
         }
         if (output.mo13893A(serialDesc, 3) || self.iconProxyURL != null) {
             z3 = true;
         }
         if (z3) {
-            output.mo13874p(serialDesc, 3, C3622a2.f5917a, self.iconProxyURL);
+            output.mo13874p(serialDesc, 3, C2500a2.f6719a, self.iconProxyURL);
         }
     }
 
@@ -145,7 +145,7 @@ public final class EmbedAuthor {
     }
 
     public final EmbedAuthor copy(String name, String str, String str2, String str3) {
-        C9971q.m14633g(name, "name");
+        C9677q.m14633g(name, "name");
         return new EmbedAuthor(name, str, str2, str3);
     }
 
@@ -157,7 +157,7 @@ public final class EmbedAuthor {
             return false;
         }
         EmbedAuthor embedAuthor = (EmbedAuthor) obj;
-        return C9971q.m14638b(this.name, embedAuthor.name) && C9971q.m14638b(this.url, embedAuthor.url) && C9971q.m14638b(this.iconURL, embedAuthor.iconURL) && C9971q.m14638b(this.iconProxyURL, embedAuthor.iconProxyURL);
+        return C9677q.m14638b(this.name, embedAuthor.name) && C9677q.m14638b(this.url, embedAuthor.url) && C9677q.m14638b(this.iconURL, embedAuthor.iconURL) && C9677q.m14638b(this.iconProxyURL, embedAuthor.iconProxyURL);
     }
 
     public final String getIconProxyURL() {
@@ -204,12 +204,12 @@ public final class EmbedAuthor {
 
     public EmbedAuthor(String name, String str, String str2, String str3) {
         Lazy a;
-        C9971q.m14633g(name, "name");
+        C9677q.m14633g(name, "name");
         this.name = name;
         this.url = str;
         this.iconURL = str2;
         this.iconProxyURL = str3;
-        a = C11084n.m10945a(new EmbedAuthor$imageUrl$2(this));
+        a = C10839n.m10945a(new EmbedAuthor$imageUrl$2(this));
         this.imageUrl$delegate = a;
     }
 

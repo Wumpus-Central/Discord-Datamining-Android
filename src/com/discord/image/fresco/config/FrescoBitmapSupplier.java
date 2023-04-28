@@ -3,11 +3,11 @@ package com.discord.image.fresco.config;
 import com.facebook.imagepipeline.cache.MemoryCacheParams;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import p278p5.C11550j;
+import p279p5.C11379j;
 
 @Metadata(m15074d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000 \b2\u00020\u0001:\u0001\bB\u000f\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\b\u0010\u0003\u001a\u00020\u0002H\u0016¨\u0006\t"}, m15073d2 = {"Lcom/discord/image/fresco/config/FrescoBitmapSupplier;", "Lp5/j;", "Lcom/facebook/imagepipeline/cache/MemoryCacheParams;", "get", "Landroid/content/Context;", "context", "<init>", "(Landroid/content/Context;)V", "Companion", "fresco_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes5.dex */
-public final class FrescoBitmapSupplier extends C11550j {
+public final class FrescoBitmapSupplier extends C11379j {
     public static final Companion Companion = new Companion(null);
     private static final int MAX_BITMAP_MEM_CACHE_SIZE_RATIO = 3;
 
@@ -31,11 +31,11 @@ public final class FrescoBitmapSupplier extends C11550j {
         /*
             r1 = this;
             java.lang.String r0 = "context"
-            kotlin.jvm.internal.C9971q.m14633g(r2, r0)
+            kotlin.jvm.internal.C9677q.m14633g(r2, r0)
             java.lang.String r0 = "activity"
             java.lang.Object r2 = r2.getSystemService(r0)
             java.lang.String r0 = "null cannot be cast to non-null type android.app.ActivityManager"
-            kotlin.jvm.internal.C9971q.m14635e(r2, r0)
+            kotlin.jvm.internal.C9677q.m14635e(r2, r0)
             android.app.ActivityManager r2 = (android.app.ActivityManager) r2
             r1.<init>(r2)
             return
@@ -44,10 +44,10 @@ public final class FrescoBitmapSupplier extends C11550j {
     }
 
     /* JADX WARN: Can't rename method to resolve collision */
-    @Override // p278p5.C11550j, com.facebook.common.internal.Supplier
+    @Override // p279p5.C11379j, com.facebook.common.internal.Supplier
     public MemoryCacheParams get() {
         MemoryCacheParams memoryCacheParams = super.get();
-        int i = memoryCacheParams.f8116a;
-        return new MemoryCacheParams(i, memoryCacheParams.f8117b, memoryCacheParams.f8118c, memoryCacheParams.f8119d, i / 3);
+        int i = memoryCacheParams.f10258a;
+        return new MemoryCacheParams(i, memoryCacheParams.f10259b, memoryCacheParams.f10260c, memoryCacheParams.f10261d, i / 3);
     }
 }

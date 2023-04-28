@@ -5,14 +5,14 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableNativeArray;
-import eg.C6884j;
+import eg.C6322j;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import kotlin.Metadata;
-import kotlin.collections.C9907k;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9611k;
+import kotlin.jvm.internal.C9677q;
 import kotlin.ranges.IntRange;
 import org.json.JSONArray;
 
@@ -56,7 +56,7 @@ public final class NativeArrayExtensionsKt {
     }
 
     public static final ReadableNativeArray nativeArrayOf(Object... elements) {
-        C9971q.m14633g(elements, "elements");
+        C9677q.m14633g(elements, "elements");
         WritableNativeArray writableNativeArray = new WritableNativeArray();
         for (Object obj : elements) {
             push(writableNativeArray, obj);
@@ -66,7 +66,7 @@ public final class NativeArrayExtensionsKt {
 
     public static final <V> void push(WritableNativeArray writableNativeArray, V v) {
         boolean z;
-        C9971q.m14633g(writableNativeArray, "<this>");
+        C9677q.m14633g(writableNativeArray, "<this>");
         if (v instanceof String) {
             writableNativeArray.pushString((String) v);
         } else if (v instanceof Integer) {
@@ -97,13 +97,13 @@ public final class NativeArrayExtensionsKt {
 
     public static final IntRange sizeRange(ReadableArray readableArray) {
         IntRange q;
-        C9971q.m14633g(readableArray, "<this>");
-        q = C6884j.m23947q(0, readableArray.size());
+        C9677q.m14633g(readableArray, "<this>");
+        q = C6322j.m23947q(0, readableArray.size());
         return q;
     }
 
     public static final JSONArray toJson(ReadableArray readableArray) {
-        C9971q.m14633g(readableArray, "<this>");
+        C9677q.m14633g(readableArray, "<this>");
         JSONArray jSONArray = new JSONArray();
         int size = readableArray.size();
         for (int i = 0; i < size; i++) {
@@ -116,11 +116,11 @@ public final class NativeArrayExtensionsKt {
                 jSONArray.put(readableArray.getString(i));
             } else if (i2 == 5) {
                 ReadableMap map = readableArray.getMap(i);
-                C9971q.m14634f(map, "getMap(i)");
+                C9677q.m14634f(map, "getMap(i)");
                 jSONArray.put(NativeMapExtensionsKt.toJson(map));
             } else if (i2 == 6) {
                 ReadableArray array = readableArray.getArray(i);
-                C9971q.m14634f(array, "getArray(i)");
+                C9677q.m14634f(array, "getArray(i)");
                 jSONArray.put(toJson(array));
             }
         }
@@ -128,14 +128,14 @@ public final class NativeArrayExtensionsKt {
     }
 
     public static final String toJsonString(ReadableArray readableArray) {
-        C9971q.m14633g(readableArray, "<this>");
+        C9677q.m14633g(readableArray, "<this>");
         String jSONArray = toJson(readableArray).toString();
-        C9971q.m14634f(jSONArray, "toJson().toString()");
+        C9677q.m14634f(jSONArray, "toJson().toString()");
         return jSONArray;
     }
 
     public static final <T> ReadableNativeArray toNativeArray(Collection<? extends T> collection) {
-        C9971q.m14633g(collection, "<this>");
+        C9677q.m14633g(collection, "<this>");
         WritableNativeArray writableNativeArray = new WritableNativeArray();
         for (T t : collection) {
             push(writableNativeArray, t);
@@ -145,8 +145,8 @@ public final class NativeArrayExtensionsKt {
 
     public static final <V> ReadableNativeArray toNativeArrayOfMaps(Collection<? extends Map<String, ? extends V>> collection) {
         int t;
-        C9971q.m14633g(collection, "<this>");
-        t = C9907k.m14809t(collection, 10);
+        C9677q.m14633g(collection, "<this>");
+        t = C9611k.m14809t(collection, 10);
         ArrayList arrayList = new ArrayList(t);
         Iterator<T> it = collection.iterator();
         while (it.hasNext()) {
@@ -156,7 +156,7 @@ public final class NativeArrayExtensionsKt {
     }
 
     public static final <T> ReadableNativeArray toNativeArray(T[] tArr) {
-        C9971q.m14633g(tArr, "<this>");
+        C9677q.m14633g(tArr, "<this>");
         WritableNativeArray writableNativeArray = new WritableNativeArray();
         for (T t : tArr) {
             push(writableNativeArray, t);
@@ -165,7 +165,7 @@ public final class NativeArrayExtensionsKt {
     }
 
     public static final ReadableNativeArray toNativeArray(int[] iArr) {
-        C9971q.m14633g(iArr, "<this>");
+        C9677q.m14633g(iArr, "<this>");
         WritableNativeArray writableNativeArray = new WritableNativeArray();
         for (int i : iArr) {
             push(writableNativeArray, Integer.valueOf(i));

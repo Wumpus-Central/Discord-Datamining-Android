@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import com.discord.chat.C4254R;
-import p412x1.C13922a;
+import com.discord.chat.C3147R;
+import p413x1.C13836a;
 
 /* loaded from: classes4.dex */
 public final class ChatLoadingViewBinding {
@@ -21,11 +21,11 @@ public final class ChatLoadingViewBinding {
     }
 
     public static ChatLoadingViewBinding bind(View view) {
-        int i = C4254R.C4256id.button;
-        Button button = (Button) C13922a.m2313a(view, i);
+        int i = C3147R.C3149id.button;
+        Button button = (Button) C13836a.m2313a(view, i);
         if (button != null) {
-            i = C4254R.C4256id.progress_spinner;
-            ProgressBar progressBar = (ProgressBar) C13922a.m2313a(view, i);
+            i = C3147R.C3149id.progress_spinner;
+            ProgressBar progressBar = (ProgressBar) C13836a.m2313a(view, i);
             if (progressBar != null) {
                 return new ChatLoadingViewBinding(view, button, progressBar);
             }
@@ -35,7 +35,7 @@ public final class ChatLoadingViewBinding {
 
     public static ChatLoadingViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(C4254R.layout.chat_loading_view, viewGroup);
+            layoutInflater.inflate(C3147R.layout.chat_loading_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

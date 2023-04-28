@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 
@@ -43,8 +43,8 @@ public final class RenderContext {
         }
 
         public final String replace(CharSequence input, Function3<? super String, ? super String, ? super Boolean, ? extends CharSequence> onMatch) {
-            C9971q.m14633g(input, "input");
-            C9971q.m14633g(onMatch, "onMatch");
+            C9677q.m14633g(input, "input");
+            C9677q.m14633g(onMatch, "onMatch");
             return argumentRegex.m14581i(input, new RenderContext$Argument$replace$1(onMatch));
         }
     }

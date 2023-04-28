@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
 import com.facebook.react.uimanager.events.TouchesHelper;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u0001\u0013B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J&\u0010\u000b\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u000fR\u001a\u0010\u0007\u001a\u00020\bX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\f¨\u0006\u0014"}, m15073d2 = {"Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView;", "Lcom/discord/chat/presentation/message/view/MediaView;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", TouchesHelper.TARGET_KEY, "Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView$Target;", "getTarget", "()Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView$Target;", "setTarget", "(Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView$Target;)V", "", "width", "", "height", "maxHeightPx", "maxWidthPx", "Target", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -107,7 +107,7 @@ public final class EmbedViewResizingMediaView extends MediaView {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public EmbedViewResizingMediaView(Context context) {
         this(context, null, 2, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ EmbedViewResizingMediaView(Context context, AttributeSet attributeSet, int i, DefaultConstructorMarker defaultConstructorMarker) {
@@ -119,24 +119,24 @@ public final class EmbedViewResizingMediaView extends MediaView {
         if (target != null) {
             return target;
         }
-        C9971q.m14615y(TouchesHelper.TARGET_KEY);
+        C9677q.m14615y(TouchesHelper.TARGET_KEY);
         return null;
     }
 
     public final void setTarget(Target target) {
-        C9971q.m14633g(target, "<set-?>");
+        C9677q.m14633g(target, "<set-?>");
         this.target = target;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public EmbedViewResizingMediaView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public final void setTarget(int i, int i2, int i3, int i4) {
         Target target = new Target(i, i2, i3, i4);
-        if (this.target == null || !C9971q.m14638b(getTarget(), target)) {
+        if (this.target == null || !C9677q.m14638b(getTarget(), target)) {
             setTarget(target);
         }
         MediaContainingViewResizer.resizeLayoutParams$default(MediaContainingViewResizer.INSTANCE, this, getTarget().getWidth(), getTarget().getHeight(), i4, i3, null, 16, null);

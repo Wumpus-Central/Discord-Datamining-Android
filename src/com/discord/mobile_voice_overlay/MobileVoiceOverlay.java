@@ -17,7 +17,7 @@ import com.facebook.react.bridge.WritableNativeArray;
 import com.facebook.react.uimanager.ViewDefaults;
 import com.facebook.react.util.JSStackTrace;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u0000 $2\u00020\u0001:\u0001$B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u0012H\u0002J\r\u0010\u0013\u001a\u00020\u000fH\u0001¢\u0006\u0002\b\u0014J\u001c\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u00172\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0017H\u0002J\b\u0010\u0019\u001a\u00020\u001aH\u0002J\b\u0010\u001b\u001a\u00020\u000fH\u0002J\u0015\u0010\u001c\u001a\u00020\u000f2\u0006\u0010\u001d\u001a\u00020\u001eH\u0001¢\u0006\u0002\b\u001fJ\u0015\u0010 \u001a\u00020\u000f2\u0006\u0010!\u001a\u00020\"H\u0001¢\u0006\u0002\b#R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006%"}, m15073d2 = {"Lcom/discord/mobile_voice_overlay/MobileVoiceOverlay;", "", "context", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "menuDialogProvider", "Lcom/discord/mobile_voice_overlay/utils/OverlayViewProvider;", "Lcom/discord/mobile_voice_overlay/views/OverlayMenuBubbleDialog;", "selectorDialogProvider", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceSelectorBubbleDialog;", "trashWrapProvider", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "voiceBubbleProvider", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "closeMenuDialog", "", "floatBubbleToHorizontalEdge", "bubble", "Lcom/discord/mobile_voice_overlay/views/OverlayBubbleWrap;", "hideOverlay", "hideOverlay$mobile_voice_overlay_release", "invokeJs", JSStackTrace.METHOD_NAME_KEY, "", "query", "isOverlayShowing", "", "onTrashVoiceBubble", "setData", "data", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "setData$mobile_voice_overlay_release", "showOverlay", "assets", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayAssets;", "showOverlay$mobile_voice_overlay_release", "Companion", "mobile_voice_overlay_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -45,21 +45,21 @@ public final class MobileVoiceOverlay {
         public static /* synthetic */ void startHeadlessTask$default(Companion companion, Context context, String str, Bundle EMPTY, int i, Object obj) {
             if ((i & 4) != 0) {
                 EMPTY = Bundle.EMPTY;
-                C9971q.m14634f(EMPTY, "EMPTY");
+                C9677q.m14634f(EMPTY, "EMPTY");
             }
             companion.startHeadlessTask(context, str, EMPTY);
         }
 
         public final void startHeadlessTask(Context context, String taskName, Bundle taskParams) {
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(taskName, "taskName");
-            C9971q.m14633g(taskParams, "taskParams");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(taskName, "taskName");
+            C9677q.m14633g(taskParams, "taskParams");
             HeadlessTasks.Companion.startHeadlessTask$default(HeadlessTasks.Companion, context, taskName, 0L, false, taskParams, false, 12, null);
         }
     }
 
     public MobileVoiceOverlay(ReactApplicationContext context) {
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         this.context = context;
     }
 
@@ -125,7 +125,7 @@ public final class MobileVoiceOverlay {
     }
 
     public final void setData$mobile_voice_overlay_release(MobileVoiceOverlayData data) {
-        C9971q.m14633g(data, "data");
+        C9677q.m14633g(data, "data");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.voiceBubbleProvider.setData(data);
             this.menuDialogProvider.setData(data);
@@ -138,7 +138,7 @@ public final class MobileVoiceOverlay {
     }
 
     public final void showOverlay$mobile_voice_overlay_release(MobileVoiceOverlayAssets assets) {
-        C9971q.m14633g(assets, "assets");
+        C9677q.m14633g(assets, "assets");
         if (ThreadUtilsKt.isOnMainThread()) {
             this.selectorDialogProvider.setAssets(assets);
             this.menuDialogProvider.setAssets(assets);

@@ -5,13 +5,13 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.AbstractC9973s;
+import kotlin.jvm.internal.AbstractC9679s;
 import kotlin.text.Regex;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(m15074d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, m15073d2 = {"<anonymous>", "", "invoke"}, m15072k = 3, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes4.dex */
-public final class SystemLogUtils$fetch$1 extends AbstractC9973s implements Function0<Unit> {
+public final class SystemLogUtils$fetch$1 extends AbstractC9679s implements Function0<Unit> {
     final /* synthetic */ Function1<LinkedList<String>, Unit> $cb;
     final /* synthetic */ Regex $filter;
     final /* synthetic */ boolean $logErrors;
@@ -53,8 +53,8 @@ public final class SystemLogUtils$fetch$1 extends AbstractC9973s implements Func
             com.discord.crash_reporting.system_logs.SystemLogUtils.access$waitFor(r1, r0)     // Catch: all -> 0x0049, Exception -> 0x004b
             java.io.InputStream r2 = r0.getInputStream()     // Catch: all -> 0x0049, Exception -> 0x004b
             java.lang.String r3 = "logcatProcess.inputStream"
-            kotlin.jvm.internal.C9971q.m14634f(r2, r3)     // Catch: all -> 0x0049, Exception -> 0x004b
-            java.nio.charset.Charset r3 = p326ri.C12694d.f28536b     // Catch: all -> 0x0049, Exception -> 0x004b
+            kotlin.jvm.internal.C9677q.m14634f(r2, r3)     // Catch: all -> 0x0049, Exception -> 0x004b
+            java.nio.charset.Charset r3 = p327ri.C12563d.f32852b     // Catch: all -> 0x0049, Exception -> 0x004b
             java.io.InputStreamReader r4 = new java.io.InputStreamReader     // Catch: all -> 0x0049, Exception -> 0x004b
             r4.<init>(r2, r3)     // Catch: all -> 0x0049, Exception -> 0x004b
             boolean r2 = r4 instanceof java.io.BufferedReader     // Catch: all -> 0x0049, Exception -> 0x004b
@@ -94,7 +94,7 @@ public final class SystemLogUtils$fetch$1 extends AbstractC9973s implements Func
             r2.add(r3)     // Catch: all -> 0x0049
             java.lang.StackTraceElement[] r1 = r1.getStackTrace()     // Catch: all -> 0x0049
             java.lang.String r2 = "e.stackTrace"
-            kotlin.jvm.internal.C9971q.m14634f(r1, r2)     // Catch: all -> 0x0049
+            kotlin.jvm.internal.C9677q.m14634f(r1, r2)     // Catch: all -> 0x0049
             java.util.LinkedList<java.lang.String> r2 = r8.$output     // Catch: all -> 0x0049
             int r3 = r1.length     // Catch: all -> 0x0049
             r4 = 0

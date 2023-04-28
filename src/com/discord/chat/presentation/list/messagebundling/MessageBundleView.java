@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import bj.C3681n1;
-import com.discord.chat.C4254R;
+import bj.C2560n1;
+import com.discord.chat.C3147R;
 import com.discord.chat.bridge.row.MessageRow;
 import com.discord.chat.databinding.MessageBundleViewBinding;
 import com.discord.chat.presentation.list.ChatListUtilsKt;
@@ -22,13 +22,13 @@ import com.discord.ripple.RippleUtilsKt;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.collections.C9906j;
+import kotlin.collections.C9610j;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import p449yi.AbstractC14435f;
+import p450yi.AbstractC14370f;
 
 @Metadata(m15074d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001:\u00013B'\b\u0007\u0012\u0006\u0010-\u001a\u00020,\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010.\u0012\b\b\u0002\u00100\u001a\u00020\u0014¢\u0006\u0004\b1\u00102J=\u0010\r\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\b2\u0006\u0010\f\u001a\u00020\u0004ø\u0001\u0000R\u0014\u0010\u000f\u001a\u00020\u000e8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0012\u001a\u00020\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0017\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0016R\u0014\u0010\u0019\u001a\u00020\u00188\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR.\u0010\u001d\u001a\u0004\u0018\u00010\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u001d\u0010\u001e\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R.\u0010#\u001a\u0004\u0018\u00010\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b#\u0010\u001e\u001a\u0004\b$\u0010 \"\u0004\b%\u0010\"R1\u0010&\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\b8\u0006@\u0006X\u0086\u000eø\u0001\u0000¢\u0006\u0012\n\u0004\b&\u0010'\u001a\u0004\b(\u0010)\"\u0004\b*\u0010+\u0082\u0002\u0004\n\u0002\b\u0019¨\u00064"}, m15073d2 = {"Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView;", "Landroid/widget/LinearLayout;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView$MessageBundle;", "messageBundle", "Landroid/view/View$OnClickListener;", "onClickListener", "Landroid/view/View$OnLongClickListener;", "onLongClickListener", "Lkotlin/Function1;", "Lcom/discord/primitives/MessageId;", "", "onTapReply", "onTapViewMoreText", "setBundle", "Lcom/discord/chat/databinding/MessageBundleViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageBundleViewBinding;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleAdapter;", "adapter", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleAdapter;", "", "leftMarginPx", "I", "rightMarginPx", "Lcom/discord/chat/presentation/message/decorations/MessageBundleSpineItemDecoration;", "spineItemDecoration", "Lcom/discord/chat/presentation/message/decorations/MessageBundleSpineItemDecoration;", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "value", "messageRowViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "getMessageRowViewPool", "()Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "setMessageRowViewPool", "(Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;)V", "messageAccessoriesViewPool", "getMessageAccessoriesViewPool", "setMessageAccessoriesViewPool", "onTruncateMessage", "Lkotlin/jvm/functions/Function1;", "getOnTruncateMessage", "()Lkotlin/jvm/functions/Function1;", "setOnTruncateMessage", "(Lkotlin/jvm/functions/Function1;)V", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "MessageBundle", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -45,13 +45,13 @@ public final class MessageBundleView extends LinearLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageBundleView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public MessageBundleView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ MessageBundleView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -60,7 +60,7 @@ public final class MessageBundleView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setBundle$lambda$10$lambda$9$lambda$8(View.OnLongClickListener onLongClickListener, View view) {
-        C9971q.m14633g(onLongClickListener, "$onLongClickListener");
+        C9677q.m14633g(onLongClickListener, "$onLongClickListener");
         onLongClickListener.onLongClick(view);
     }
 
@@ -108,22 +108,22 @@ public final class MessageBundleView extends LinearLayout {
     }
 
     public final void setOnTruncateMessage(Function1<? super MessageId, Unit> function1) {
-        C9971q.m14633g(function1, "<set-?>");
+        C9677q.m14633g(function1, "<set-?>");
         this.onTruncateMessage = function1;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageBundleView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
         MessageBundleViewBinding inflate = MessageBundleViewBinding.inflate(LayoutInflater.from(context), this);
-        C9971q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
+        C9677q.m14634f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         MessageBundleAdapter messageBundleAdapter = new MessageBundleAdapter();
         this.adapter = messageBundleAdapter;
-        int dimensionPixelSize = getResources().getDimensionPixelSize(C4254R.dimen.message_start_guideline);
+        int dimensionPixelSize = getResources().getDimensionPixelSize(C3147R.dimen.message_start_guideline);
         this.leftMarginPx = dimensionPixelSize;
-        int dimensionPixelSize2 = getResources().getDimensionPixelSize(C4254R.dimen.message_horizontal_spacing);
+        int dimensionPixelSize2 = getResources().getDimensionPixelSize(C3147R.dimen.message_horizontal_spacing);
         this.rightMarginPx = dimensionPixelSize2;
         MessageBundleSpineItemDecoration messageBundleSpineItemDecoration = new MessageBundleSpineItemDecoration(context, dimensionPixelSize);
         this.spineItemDecoration = messageBundleSpineItemDecoration;
@@ -132,14 +132,14 @@ public final class MessageBundleView extends LinearLayout {
         setOrientation(1);
         setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
         MessageBundleRecyclerView _init_$lambda$2 = inflate.chatListView;
-        C9971q.m14634f(_init_$lambda$2, "_init_$lambda$2");
+        C9677q.m14634f(_init_$lambda$2, "_init_$lambda$2");
         ChatListUtilsKt.configureMessageRecyclerView(_init_$lambda$2, context, new VerticalSpacingItemDecoration(SizeUtilsKt.getDpToPx(8), 0, SizeUtilsKt.getDpToPx(8), false, 10, null), messageBundleSpineItemDecoration, new MessageBundleHorizontalSpacingDecoration(dimensionPixelSize, dimensionPixelSize2));
         _init_$lambda$2.setLayoutManager(new LinearLayoutManager(context));
         _init_$lambda$2.setAdapter(messageBundleAdapter);
         _init_$lambda$2.setNestedScrollingEnabled(false);
     }
 
-    @AbstractC14435f
+    @AbstractC14370f
     @Metadata(m15074d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 02\u00020\u0001:\u0002/0BW\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u000e\u0010\u000b\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0010BG\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0002\u0010\u0011J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u0010\u0010\u001e\u001a\u0004\u0018\u00010\nHÆ\u0003¢\u0006\u0002\u0010\u0018J\u000f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\rHÆ\u0003JR\u0010!\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\rHÆ\u0001¢\u0006\u0002\u0010\"J\u0013\u0010#\u001a\u00020$2\b\u0010%\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010&\u001a\u00020\u0003HÖ\u0001J\t\u0010'\u001a\u00020\rHÖ\u0001J!\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u00002\u0006\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020.HÇ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0015\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001b¨\u00061"}, m15073d2 = {"Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView$MessageBundle;", "", "seen1", "", "messageFrame", "Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;", "rows", "", "Lcom/discord/chat/bridge/row/MessageRow;", "truncationThreshold", "", "referenceMessageRows", "viewMoreText", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;Ljava/util/List;Ljava/lang/Float;Ljava/util/List;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;Ljava/util/List;Ljava/lang/Float;Ljava/util/List;Ljava/lang/String;)V", "getMessageFrame", "()Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;", "getReferenceMessageRows", "()Ljava/util/List;", "getRows", "getTruncationThreshold", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getViewMoreText", "()Ljava/lang/String;", "component1", "component2", "component3", "component4", "component5", "copy", "(Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;Ljava/util/List;Ljava/lang/Float;Ljava/util/List;Ljava/lang/String;)Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView$MessageBundle;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
     /* loaded from: classes4.dex */
     public static final class MessageBundle {
@@ -168,7 +168,7 @@ public final class MessageBundleView extends LinearLayout {
         public /* synthetic */ MessageBundle(int i, MessageFrameFeedHeaderView.MessageBundleHeader messageBundleHeader, List list, Float f, List list2, String str, SerializationConstructorMarker serializationConstructorMarker) {
             List<MessageRow> i2;
             if (2 != (i & 2)) {
-                C3681n1.m33818b(i, 2, MessageBundleView$MessageBundle$$serializer.INSTANCE.getDescriptor());
+                C2560n1.m33818b(i, 2, MessageBundleView$MessageBundle$$serializer.INSTANCE.getDescriptor());
             }
             if ((i & 1) == 0) {
                 this.messageFrame = null;
@@ -182,7 +182,7 @@ public final class MessageBundleView extends LinearLayout {
                 this.truncationThreshold = f;
             }
             if ((i & 8) == 0) {
-                i2 = C9906j.m14820i();
+                i2 = C9610j.m14820i();
                 this.referenceMessageRows = i2;
             } else {
                 this.referenceMessageRows = list2;
@@ -224,11 +224,11 @@ public final class MessageBundleView extends LinearLayout {
         public static final void write$Self(com.discord.chat.presentation.list.messagebundling.MessageBundleView.MessageBundle r6, kotlinx.serialization.encoding.CompositeEncoder r7, kotlinx.serialization.descriptors.SerialDescriptor r8) {
             /*
                 java.lang.String r0 = "self"
-                kotlin.jvm.internal.C9971q.m14633g(r6, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r6, r0)
                 java.lang.String r0 = "output"
-                kotlin.jvm.internal.C9971q.m14633g(r7, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r7, r0)
                 java.lang.String r0 = "serialDesc"
-                kotlin.jvm.internal.C9971q.m14633g(r8, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r8, r0)
                 r0 = 0
                 boolean r1 = r7.mo13893A(r8, r0)
                 r2 = 1
@@ -267,7 +267,7 @@ public final class MessageBundleView extends LinearLayout {
                 r4 = r0
             L_0x0043:
                 if (r4 == 0) goto L_0x004c
-                bj.e0 r4 = bj.C3640e0.f5942a
+                bj.e0 r4 = bj.C2518e0.f6744a
                 java.lang.Float r5 = r6.truncationThreshold
                 r7.mo13874p(r8, r1, r4, r5)
             L_0x004c:
@@ -279,8 +279,8 @@ public final class MessageBundleView extends LinearLayout {
                 goto L_0x0063
             L_0x0055:
                 java.util.List<com.discord.chat.bridge.row.MessageRow> r4 = r6.referenceMessageRows
-                java.util.List r5 = kotlin.collections.C9904h.m14862i()
-                boolean r4 = kotlin.jvm.internal.C9971q.m14638b(r4, r5)
+                java.util.List r5 = kotlin.collections.C9608h.m14862i()
+                boolean r4 = kotlin.jvm.internal.C9677q.m14638b(r4, r5)
                 if (r4 != 0) goto L_0x0062
                 goto L_0x0053
             L_0x0062:
@@ -304,7 +304,7 @@ public final class MessageBundleView extends LinearLayout {
                 goto L_0x0076
             L_0x007d:
                 if (r0 == 0) goto L_0x0086
-                bj.a2 r0 = bj.C3622a2.f5917a
+                bj.a2 r0 = bj.C2500a2.f6719a
                 java.lang.String r6 = r6.viewMoreText
                 r7.mo13874p(r8, r1, r0, r6)
             L_0x0086:
@@ -334,8 +334,8 @@ public final class MessageBundleView extends LinearLayout {
         }
 
         public final MessageBundle copy(MessageFrameFeedHeaderView.MessageBundleHeader messageBundleHeader, List<MessageRow> rows, Float f, List<MessageRow> referenceMessageRows, String str) {
-            C9971q.m14633g(rows, "rows");
-            C9971q.m14633g(referenceMessageRows, "referenceMessageRows");
+            C9677q.m14633g(rows, "rows");
+            C9677q.m14633g(referenceMessageRows, "referenceMessageRows");
             return new MessageBundle(messageBundleHeader, rows, f, referenceMessageRows, str);
         }
 
@@ -347,7 +347,7 @@ public final class MessageBundleView extends LinearLayout {
                 return false;
             }
             MessageBundle messageBundle = (MessageBundle) obj;
-            return C9971q.m14638b(this.messageFrame, messageBundle.messageFrame) && C9971q.m14638b(this.rows, messageBundle.rows) && C9971q.m14638b(this.truncationThreshold, messageBundle.truncationThreshold) && C9971q.m14638b(this.referenceMessageRows, messageBundle.referenceMessageRows) && C9971q.m14638b(this.viewMoreText, messageBundle.viewMoreText);
+            return C9677q.m14638b(this.messageFrame, messageBundle.messageFrame) && C9677q.m14638b(this.rows, messageBundle.rows) && C9677q.m14638b(this.truncationThreshold, messageBundle.truncationThreshold) && C9677q.m14638b(this.referenceMessageRows, messageBundle.referenceMessageRows) && C9677q.m14638b(this.viewMoreText, messageBundle.viewMoreText);
         }
 
         public final MessageFrameFeedHeaderView.MessageBundleHeader getMessageFrame() {
@@ -393,8 +393,8 @@ public final class MessageBundleView extends LinearLayout {
         }
 
         public MessageBundle(MessageFrameFeedHeaderView.MessageBundleHeader messageBundleHeader, List<MessageRow> rows, Float f, List<MessageRow> referenceMessageRows, String str) {
-            C9971q.m14633g(rows, "rows");
-            C9971q.m14633g(referenceMessageRows, "referenceMessageRows");
+            C9677q.m14633g(rows, "rows");
+            C9677q.m14633g(referenceMessageRows, "referenceMessageRows");
             this.messageFrame = messageBundleHeader;
             this.rows = rows;
             this.truncationThreshold = f;
@@ -403,7 +403,7 @@ public final class MessageBundleView extends LinearLayout {
         }
 
         public /* synthetic */ MessageBundle(MessageFrameFeedHeaderView.MessageBundleHeader messageBundleHeader, List list, Float f, List list2, String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i & 1) != 0 ? null : messageBundleHeader, list, (i & 4) != 0 ? null : f, (i & 8) != 0 ? C9906j.m14820i() : list2, (i & 16) != 0 ? null : str);
+            this((i & 1) != 0 ? null : messageBundleHeader, list, (i & 4) != 0 ? null : f, (i & 8) != 0 ? C9610j.m14820i() : list2, (i & 16) != 0 ? null : str);
         }
     }
 }

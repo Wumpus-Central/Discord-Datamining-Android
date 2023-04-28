@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.discord.chat.C4254R;
+import com.discord.chat.C3147R;
 import com.discord.chat.bridge.botuikit.ActionComponentState;
 import com.discord.chat.bridge.botuikit.ButtonComponent;
 import com.discord.chat.bridge.botuikit.ButtonStyle;
@@ -31,8 +31,8 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9951f0;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9656f0;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.reflect.KClass;
 
@@ -52,10 +52,10 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         }
 
         public final ButtonComponentView inflateComponent(Context context, ViewGroup root) {
-            C9971q.m14633g(context, "context");
-            C9971q.m14633g(root, "root");
+            C9677q.m14633g(context, "context");
+            C9677q.m14633g(root, "root");
             ButtonComponentView root2 = MessageComponentButtonViewBinding.inflate(LayoutInflater.from(context), root, false).getRoot();
-            C9971q.m14634f(root2, "inflate(\n               …false,\n            ).root");
+            C9677q.m14634f(root2, "inflate(\n               …false,\n            ).root");
             return root2;
         }
     }
@@ -98,13 +98,13 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ButtonComponentView(Context context) {
         this(context, null, 0, 6, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ButtonComponentView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public /* synthetic */ ButtonComponentView(Context context, AttributeSet attributeSet, int i, int i2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -113,8 +113,8 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configure$lambda$1(ButtonComponent component, ComponentActionListener componentActionListener, View view) {
-        C9971q.m14633g(component, "$component");
-        C9971q.m14633g(componentActionListener, "$componentActionListener");
+        C9677q.m14633g(component, "$component");
+        C9677q.m14633g(componentActionListener, "$componentActionListener");
         if (component.getUrl() != null) {
             componentActionListener.openLink(component.getUrl());
         } else if (component.getCustomId() != null) {
@@ -199,35 +199,35 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
 
     @Override // com.discord.chat.presentation.message.view.botuikit.ComponentView
     public KClass<ButtonComponent> getComponentType() {
-        return C9951f0.m14684b(ButtonComponent.class);
+        return C9656f0.m14684b(ButtonComponent.class);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ButtonComponentView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        C9971q.m14633g(context, "context");
+        C9677q.m14633g(context, "context");
     }
 
     public void configure(final ButtonComponent component, ComponentProvider componentProvider, final ComponentActionListener componentActionListener) {
-        C9971q.m14633g(component, "component");
-        C9971q.m14633g(componentProvider, "componentProvider");
-        C9971q.m14633g(componentActionListener, "componentActionListener");
+        C9677q.m14633g(component, "component");
+        C9677q.m14633g(componentProvider, "componentProvider");
+        C9677q.m14633g(componentActionListener, "componentActionListener");
         MessageComponentButtonViewBinding bind = MessageComponentButtonViewBinding.bind(this);
-        C9971q.m14634f(bind, "bind(this)");
+        C9677q.m14634f(bind, "bind(this)");
         int i = 0;
         boolean z = component.getState() == ActionComponentState.DISABLED || component.getDisabled();
         boolean z2 = component.getState() == ActionComponentState.LOADING;
         MaterialButton materialButton = bind.button;
-        C9971q.m14634f(materialButton, "binding.button");
+        C9677q.m14634f(materialButton, "binding.button");
         configureStyle(materialButton, component.getStyle());
         SimpleDraweeSpanTextView simpleDraweeSpanTextView = bind.emoji;
-        C9971q.m14634f(simpleDraweeSpanTextView, "binding.emoji");
+        C9677q.m14634f(simpleDraweeSpanTextView, "binding.emoji");
         configureEmoji(simpleDraweeSpanTextView, component.getEmoji(), z2);
         SimpleDraweeView simpleDraweeView = bind.linkIcon;
-        C9971q.m14634f(simpleDraweeView, "binding.linkIcon");
+        C9677q.m14634f(simpleDraweeView, "binding.linkIcon");
         configureLinkIcon(simpleDraweeView, component.getStyle() == ButtonStyle.LINK);
         MaterialTextView materialTextView = bind.label;
-        C9971q.m14634f(materialTextView, "binding.label");
+        C9677q.m14634f(materialTextView, "binding.label");
         configureLabelPadding(materialTextView, component);
         float f = 1.0f;
         bind.label.setAlpha(z ? 0.5f : 1.0f);
@@ -240,13 +240,13 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         bind.button.setEnabled(!z);
         MaterialTextView configure$lambda$0 = bind.label;
         configure$lambda$0.setText(component.getLabel());
-        C9971q.m14634f(configure$lambda$0, "configure$lambda$0");
+        C9677q.m14634f(configure$lambda$0, "configure$lambda$0");
         configure$lambda$0.setVisibility(z2 ? 4 : 0);
         DiscordFontUtilsKt.setDiscordFont(configure$lambda$0, DiscordFont.PrimaryMedium);
-        configure$lambda$0.setTextColor(ColorUtilsKt.getColorCompat(configure$lambda$0, C4254R.color.white));
+        configure$lambda$0.setTextColor(ColorUtilsKt.getColorCompat(configure$lambda$0, C3147R.color.white));
         if (!z2) {
             MaterialButton materialButton2 = bind.button;
-            C9971q.m14634f(materialButton2, "binding.button");
+            C9677q.m14634f(materialButton2, "binding.button");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(materialButton2, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.botuikit.components.a
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -255,7 +255,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
             }, 1, null);
         } else {
             MaterialButton materialButton3 = bind.button;
-            C9971q.m14634f(materialButton3, "binding.button");
+            C9677q.m14634f(materialButton3, "binding.button");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(materialButton3, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.botuikit.components.b
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -264,7 +264,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
             }, 1, null);
         }
         ProgressDots progressDots = bind.loadingDots;
-        C9971q.m14634f(progressDots, "binding.loadingDots");
+        C9677q.m14634f(progressDots, "binding.loadingDots");
         if (!z2) {
             i = 8;
         }

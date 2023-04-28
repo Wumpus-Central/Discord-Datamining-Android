@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.discord.react_activities.ReactActivity;
 import com.discord.share.ShareProps;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\f\u0010\u0003\u001a\u00060\u0004R\u00020\u0001H\u0016J\b\u0010\u0005\u001a\u00020\u0006H\u0016¨\u0006\u0007"}, m15073d2 = {"Lcom/discord/share/ShareActivity;", "Lcom/discord/react_activities/ReactActivity;", "()V", "getActivityDelegate", "Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "getNameOfComponent", "", "share_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -25,7 +25,7 @@ public final class ShareActivity extends ReactActivity {
             protected Bundle getLaunchOptions() {
                 ShareProps shareProps = this.shareProps;
                 if (shareProps == null) {
-                    C9971q.m14615y("shareProps");
+                    C9677q.m14615y("shareProps");
                     shareProps = null;
                 }
                 return shareProps.toBundle();
@@ -36,9 +36,9 @@ public final class ShareActivity extends ReactActivity {
             public void onCreate(Bundle bundle) {
                 ShareProps.Companion companion = ShareProps.Companion;
                 Intent intent = ShareActivity.this.getIntent();
-                C9971q.m14634f(intent, "intent");
+                C9677q.m14634f(intent, "intent");
                 Context context = getContext();
-                C9971q.m14634f(context, "context");
+                C9677q.m14634f(context, "context");
                 this.shareProps = companion.createShareProps(intent, context);
                 super.onCreate(bundle);
             }

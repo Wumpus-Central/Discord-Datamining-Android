@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 @Metadata(m15074d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 \u001a2\u00020\u0001:\u0002\u001a\u001bB\u0005¢\u0006\u0002\u0010\u0002J \u0010\n\u001a\u00060\u0005j\u0002`\u00062\u0006\u0010\u000b\u001a\u00020\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0002J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u001a\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\n\u0010\u0016\u001a\u00060\u0017j\u0002`\u0018J\b\u0010\u0019\u001a\u00020\u0010H\u0002R\u001e\u0010\u0003\u001a\u0012\u0012\b\u0012\u00060\u0005j\u0002`\u0006\u0012\u0004\u0012\u00020\u00070\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\b\u001a\u00060\u0005j\u0002`\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/crash_reporting/system_logs/DebugPrintableCollection;", "", "()V", "collection", "", "", "Lcom/discord/crash_reporting/system_logs/DebugPrintableId;", "Lcom/discord/crash_reporting/system_logs/DebugPrintableCollection$DebugPrintableRef;", "idCounter", BaseJavaModule.METHOD_TYPE_SYNC, "add", "ref", "Lcom/discord/crash_reporting/system_logs/DebugPrintable;", "tag", "", "addSystemEntry", "", "context", "Landroid/content/Context;", "dp", "Lcom/discord/crash_reporting/system_logs/DebugPrintBuilder;", "debugPrint", "sb", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", "removeDeadReferencesLocked", "Companion", "DebugPrintableRef", "crash_reporting_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
@@ -36,7 +36,7 @@ public final class DebugPrintableCollection {
 
         public final String libdiscordVersion(Context context) {
             String string;
-            C9971q.m14633g(context, "context");
+            C9677q.m14633g(context, "context");
             Bundle bundle = context.getPackageManager().getApplicationInfo(context.getPackageName(), 128).metaData;
             if (bundle == null || (string = bundle.getString("libdiscord_version")) == null) {
                 return "Unknown libdiscord version";
@@ -53,7 +53,7 @@ public final class DebugPrintableCollection {
         private final String tag;
 
         public DebugPrintableRef(String str, WeakReference<DebugPrintable> reference) {
-            C9971q.m14633g(reference, "reference");
+            C9677q.m14633g(reference, "reference");
             this.tag = str;
             this.reference = reference;
         }
@@ -78,7 +78,7 @@ public final class DebugPrintableCollection {
         }
 
         public final DebugPrintableRef copy(String str, WeakReference<DebugPrintable> reference) {
-            C9971q.m14633g(reference, "reference");
+            C9677q.m14633g(reference, "reference");
             return new DebugPrintableRef(str, reference);
         }
 
@@ -90,7 +90,7 @@ public final class DebugPrintableCollection {
                 return false;
             }
             DebugPrintableRef debugPrintableRef = (DebugPrintableRef) obj;
-            return C9971q.m14638b(this.tag, debugPrintableRef.tag) && C9971q.m14638b(this.reference, debugPrintableRef.reference);
+            return C9677q.m14638b(this.tag, debugPrintableRef.tag) && C9677q.m14638b(this.reference, debugPrintableRef.reference);
         }
 
         public final WeakReference<DebugPrintable> getReference() {
@@ -169,8 +169,8 @@ public final class DebugPrintableCollection {
     }
 
     public final void debugPrint(Context context, StringBuilder sb2) {
-        C9971q.m14633g(context, "context");
-        C9971q.m14633g(sb2, "sb");
+        C9677q.m14633g(context, "context");
+        C9677q.m14633g(sb2, "sb");
         DebugPrintBuilder debugPrintBuilder = new DebugPrintBuilder(sb2);
         synchronized (this.sync) {
             addSystemEntry(context, debugPrintBuilder);
@@ -184,23 +184,23 @@ public final class DebugPrintableCollection {
                 DebugPrintableRef value = next.getValue();
                 DebugPrintable debugPrintable = value.getReference().get();
                 if (debugPrintable != null) {
-                    C9971q.m14634f(debugPrintable, "printableRef.reference.get() ?: continue");
+                    C9677q.m14634f(debugPrintable, "printableRef.reference.get() ?: continue");
                     sb2.append(longValue);
                     if (value.getTag() != null) {
                         sb2.append(' ');
                         sb2.append(value.getTag());
                     }
                     sb2.append(":");
-                    C9971q.m14634f(sb2, "append(value)");
+                    C9677q.m14634f(sb2, "append(value)");
                     sb2.append('\n');
-                    C9971q.m14634f(sb2, "append('\\n')");
+                    C9677q.m14634f(sb2, "append('\\n')");
                     try {
                         debugPrintable.debugPrint(debugPrintBuilder);
                     } catch (Exception e) {
                         sb2.append("Exception: " + e);
                     }
                     sb2.append('\n');
-                    C9971q.m14634f(sb2, "append('\\n')");
+                    C9677q.m14634f(sb2, "append('\\n')");
                     if (sb2.length() > maxDebugPrintableStringLength) {
                         sb2.delete(maxDebugPrintableStringLength, sb2.length() - 1);
                         sb2.append(" {truncated}");
@@ -208,7 +208,7 @@ public final class DebugPrintableCollection {
                     }
                 }
             }
-            Unit unit = Unit.f22042a;
+            Unit unit = Unit.f25780a;
         }
     }
 }

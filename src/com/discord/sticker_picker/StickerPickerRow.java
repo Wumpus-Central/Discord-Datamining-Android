@@ -2,7 +2,7 @@ package com.discord.sticker_picker;
 
 import java.util.List;
 import kotlin.Metadata;
-import kotlin.jvm.internal.C9971q;
+import kotlin.jvm.internal.C9677q;
 
 @Metadata(m15074d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0080\b\u0018\u00002\u00020\u0001:\u0001\u001bB-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\u0011\u0010\u0013\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007HÆ\u0003J9\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\u0010\b\u0002\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0019\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000b¨\u0006\u001c"}, m15073d2 = {"Lcom/discord/sticker_picker/StickerPickerRow;", "", "rowContentWidth", "", "rowContentPaddingVertical", "itemSize", "items", "", "Lcom/discord/sticker_picker/StickerPickerRow$Sticker;", "(IIILjava/util/List;)V", "getItemSize", "()I", "getItems", "()Ljava/util/List;", "getRowContentPaddingVertical", "getRowContentWidth", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "", "Sticker", "sticker_picker_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
 /* loaded from: classes7.dex */
@@ -19,7 +19,7 @@ public final class StickerPickerRow {
         private final boolean disabled;
 
         /* renamed from: id */
-        private final String f7534id;
+        private final String f9576id;
         private final String name;
         private final boolean opaque;
         private final Type type;
@@ -35,11 +35,11 @@ public final class StickerPickerRow {
         }
 
         public Sticker(String id2, String name, Type type, boolean z, String url, boolean z2, boolean z3) {
-            C9971q.m14633g(id2, "id");
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(type, "type");
-            C9971q.m14633g(url, "url");
-            this.f7534id = id2;
+            C9677q.m14633g(id2, "id");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(type, "type");
+            C9677q.m14633g(url, "url");
+            this.f9576id = id2;
             this.name = name;
             this.type = type;
             this.animated = z;
@@ -50,7 +50,7 @@ public final class StickerPickerRow {
 
         public static /* synthetic */ Sticker copy$default(Sticker sticker, String str, String str2, Type type, boolean z, String str3, boolean z2, boolean z3, int i, Object obj) {
             if ((i & 1) != 0) {
-                str = sticker.f7534id;
+                str = sticker.f9576id;
             }
             if ((i & 2) != 0) {
                 str2 = sticker.name;
@@ -74,7 +74,7 @@ public final class StickerPickerRow {
         }
 
         public final String component1() {
-            return this.f7534id;
+            return this.f9576id;
         }
 
         public final String component2() {
@@ -102,10 +102,10 @@ public final class StickerPickerRow {
         }
 
         public final Sticker copy(String id2, String name, Type type, boolean z, String url, boolean z2, boolean z3) {
-            C9971q.m14633g(id2, "id");
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(type, "type");
-            C9971q.m14633g(url, "url");
+            C9677q.m14633g(id2, "id");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(type, "type");
+            C9677q.m14633g(url, "url");
             return new Sticker(id2, name, type, z, url, z2, z3);
         }
 
@@ -117,7 +117,7 @@ public final class StickerPickerRow {
                 return false;
             }
             Sticker sticker = (Sticker) obj;
-            return C9971q.m14638b(this.f7534id, sticker.f7534id) && C9971q.m14638b(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && C9971q.m14638b(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
+            return C9677q.m14638b(this.f9576id, sticker.f9576id) && C9677q.m14638b(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && C9677q.m14638b(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
         }
 
         public final boolean getAnimated() {
@@ -129,7 +129,7 @@ public final class StickerPickerRow {
         }
 
         public final String getId() {
-            return this.f7534id;
+            return this.f9576id;
         }
 
         public final String getName() {
@@ -149,7 +149,7 @@ public final class StickerPickerRow {
         }
 
         public int hashCode() {
-            int hashCode = ((((this.f7534id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
+            int hashCode = ((((this.f9576id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
             boolean z = this.animated;
             int i = 1;
             if (z) {
@@ -175,7 +175,7 @@ public final class StickerPickerRow {
         }
 
         public String toString() {
-            String str = this.f7534id;
+            String str = this.f9576id;
             String str2 = this.name;
             Type type = this.type;
             boolean z = this.animated;
@@ -187,7 +187,7 @@ public final class StickerPickerRow {
     }
 
     public StickerPickerRow(int i, int i2, int i3, List<Sticker> items) {
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         this.rowContentWidth = i;
         this.rowContentPaddingVertical = i2;
         this.itemSize = i3;
@@ -228,7 +228,7 @@ public final class StickerPickerRow {
     }
 
     public final StickerPickerRow copy(int i, int i2, int i3, List<Sticker> items) {
-        C9971q.m14633g(items, "items");
+        C9677q.m14633g(items, "items");
         return new StickerPickerRow(i, i2, i3, items);
     }
 
@@ -240,7 +240,7 @@ public final class StickerPickerRow {
             return false;
         }
         StickerPickerRow stickerPickerRow = (StickerPickerRow) obj;
-        return this.rowContentWidth == stickerPickerRow.rowContentWidth && this.rowContentPaddingVertical == stickerPickerRow.rowContentPaddingVertical && this.itemSize == stickerPickerRow.itemSize && C9971q.m14638b(this.items, stickerPickerRow.items);
+        return this.rowContentWidth == stickerPickerRow.rowContentWidth && this.rowContentPaddingVertical == stickerPickerRow.rowContentPaddingVertical && this.itemSize == stickerPickerRow.itemSize && C9677q.m14638b(this.items, stickerPickerRow.items);
     }
 
     public final int getItemSize() {

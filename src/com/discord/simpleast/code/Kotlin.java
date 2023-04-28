@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import kotlin.Metadata;
-import kotlin.collections.C9906j;
-import kotlin.jvm.internal.C9971q;
+import kotlin.collections.C9610j;
+import kotlin.jvm.internal.C9677q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.text.Regex;
-import p326ri.EnumC12705j;
+import p327ri.EnumC12574j;
 
 @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u0019\u001aB\u0007\b\u0002¢\u0006\u0002\u0010\u0002JE\u0010\u0010\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0013\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00130\u0014\u0012\u0004\u0012\u0002H\u00150\u00120\u0011\"\u0004\b\u0000\u0010\u0013\"\u0004\b\u0001\u0010\u00152\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u0002H\u00130\u0017H\u0000¢\u0006\u0002\b\u0018R\u0019\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0019\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0016\u0010\u000b\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \r*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, m15073d2 = {"Lcom/discord/simpleast/code/Kotlin;", "", "()V", "BUILT_INS", "", "", "getBUILT_INS", "()[Ljava/lang/String;", "[Ljava/lang/String;", "KEYWORDS", "getKEYWORDS", "PATTERN_KOTLIN_ANNOTATION", "Ljava/util/regex/Pattern;", "kotlin.jvm.PlatformType", "PATTERN_KOTLIN_COMMENTS", "PATTERN_KOTLIN_STRINGS", "createKotlinCodeRules", "", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "createKotlinCodeRules$simpleast_core_release", "FieldNode", "FunctionNode", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
 /* loaded from: classes7.dex */
@@ -43,19 +43,19 @@ public final class Kotlin {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFieldRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+                C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
                 final Pattern PATTERN_KOTLIN_FIELD = FieldNode.PATTERN_KOTLIN_FIELD;
-                C9971q.m14634f(PATTERN_KOTLIN_FIELD, "PATTERN_KOTLIN_FIELD");
+                C9677q.m14634f(PATTERN_KOTLIN_FIELD, "PATTERN_KOTLIN_FIELD");
                 return new Rule<RC, Node<RC>, S>(PATTERN_KOTLIN_FIELD) { // from class: com.discord.simpleast.code.Kotlin$FieldNode$Companion$createFieldRule$1
                     @Override // com.discord.simpleast.core.parser.Rule
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s) {
-                        C9971q.m14633g(matcher, "matcher");
-                        C9971q.m14633g(parser, "parser");
+                        C9677q.m14633g(matcher, "matcher");
+                        C9677q.m14633g(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        C9971q.m14636d(group);
-                        C9971q.m14636d(group2);
+                        C9677q.m14636d(group);
+                        C9677q.m14636d(group2);
                         return companion.createTerminal(new Kotlin.FieldNode(group, group2, codeStyleProviders), s);
                     }
                 };
@@ -65,9 +65,9 @@ public final class Kotlin {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public FieldNode(String definition, String name, CodeStyleProviders<RC> codeStyleProviders) {
             super(new StyleNode.TextStyledNode(definition, codeStyleProviders.getKeywordStyleProvider()), new StyleNode.TextStyledNode(name, codeStyleProviders.getIdentifierStyleProvider()));
-            C9971q.m14633g(definition, "definition");
-            C9971q.m14633g(name, "name");
-            C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+            C9677q.m14633g(definition, "definition");
+            C9677q.m14633g(name, "name");
+            C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
         }
     }
 
@@ -75,7 +75,7 @@ public final class Kotlin {
     /* loaded from: classes7.dex */
     public static final class FunctionNode<RC> extends Node.Parent<RC> {
         public static final Companion Companion = new Companion(null);
-        private static final Pattern PATTERN_KOTLIN_FUNC = new Regex("^(fun)( *<.*>)?( \\w+)( *\\(.*?\\))", EnumC12705j.DOT_MATCHES_ALL).m14580j();
+        private static final Pattern PATTERN_KOTLIN_FUNC = new Regex("^(fun)( *<.*>)?( \\w+)( *\\(.*?\\))", EnumC12574j.DOT_MATCHES_ALL).m14580j();
 
         @Metadata(m15075bv = {1, 0, 3}, m15074d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\u0005\u001a\u001a\u0012\u0004\u0012\u0002H\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00070\b\u0012\u0004\u0012\u0002H\t0\u0006\"\u0004\b\u0001\u0010\u0007\"\u0004\b\u0002\u0010\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\u00070\u000bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m15073d2 = {"Lcom/discord/simpleast/code/Kotlin$FunctionNode$Companion;", "", "()V", "PATTERN_KOTLIN_FUNC", "Ljava/util/regex/Pattern;", "createFunctionRule", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "simpleast-core_release"}, m15072k = 1, m15071mv = {1, 4, 0})
         /* loaded from: classes7.dex */
@@ -88,21 +88,21 @@ public final class Kotlin {
             }
 
             public final <RC, S> Rule<RC, Node<RC>, S> createFunctionRule(final CodeStyleProviders<RC> codeStyleProviders) {
-                C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+                C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
                 final Pattern pattern = FunctionNode.PATTERN_KOTLIN_FUNC;
                 return new Rule<RC, Node<RC>, S>(pattern) { // from class: com.discord.simpleast.code.Kotlin$FunctionNode$Companion$createFunctionRule$1
                     @Override // com.discord.simpleast.core.parser.Rule
                     public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s) {
-                        C9971q.m14633g(matcher, "matcher");
-                        C9971q.m14633g(parser, "parser");
+                        C9677q.m14633g(matcher, "matcher");
+                        C9677q.m14633g(parser, "parser");
                         String group = matcher.group(1);
                         String group2 = matcher.group(2);
                         String group3 = matcher.group(3);
                         String group4 = matcher.group(4);
                         ParseSpec.Companion companion = ParseSpec.Companion;
-                        C9971q.m14636d(group);
-                        C9971q.m14636d(group3);
-                        C9971q.m14636d(group4);
+                        C9677q.m14636d(group);
+                        C9677q.m14636d(group3);
+                        C9677q.m14636d(group4);
                         return companion.createTerminal(new Kotlin.FunctionNode(group, group2, group3, group4, codeStyleProviders), s);
                     }
                 };
@@ -118,13 +118,13 @@ public final class Kotlin {
             /*
                 r3 = this;
                 java.lang.String r0 = "pre"
-                kotlin.jvm.internal.C9971q.m14633g(r4, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r4, r0)
                 java.lang.String r0 = "signature"
-                kotlin.jvm.internal.C9971q.m14633g(r6, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r6, r0)
                 java.lang.String r0 = "params"
-                kotlin.jvm.internal.C9971q.m14633g(r7, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r7, r0)
                 java.lang.String r0 = "codeStyleProviders"
-                kotlin.jvm.internal.C9971q.m14633g(r8, r0)
+                kotlin.jvm.internal.C9677q.m14633g(r8, r0)
                 r0 = 4
                 com.discord.simpleast.core.node.Node[] r0 = new com.discord.simpleast.core.node.Node[r0]
                 com.discord.simpleast.core.node.StyleNode$TextStyledNode r1 = new com.discord.simpleast.core.node.StyleNode$TextStyledNode
@@ -164,15 +164,15 @@ public final class Kotlin {
 
     public final <RC, S> List<Rule<RC, Node<RC>, S>> createKotlinCodeRules$simpleast_core_release(CodeStyleProviders<RC> codeStyleProviders) {
         List<Rule<RC, Node<RC>, S>> l;
-        C9971q.m14633g(codeStyleProviders, "codeStyleProviders");
+        C9677q.m14633g(codeStyleProviders, "codeStyleProviders");
         CodeRules codeRules = CodeRules.INSTANCE;
         Pattern PATTERN_KOTLIN_COMMENTS2 = PATTERN_KOTLIN_COMMENTS;
-        C9971q.m14634f(PATTERN_KOTLIN_COMMENTS2, "PATTERN_KOTLIN_COMMENTS");
+        C9677q.m14634f(PATTERN_KOTLIN_COMMENTS2, "PATTERN_KOTLIN_COMMENTS");
         Pattern PATTERN_KOTLIN_STRINGS2 = PATTERN_KOTLIN_STRINGS;
-        C9971q.m14634f(PATTERN_KOTLIN_STRINGS2, "PATTERN_KOTLIN_STRINGS");
+        C9677q.m14634f(PATTERN_KOTLIN_STRINGS2, "PATTERN_KOTLIN_STRINGS");
         Pattern PATTERN_KOTLIN_ANNOTATION2 = PATTERN_KOTLIN_ANNOTATION;
-        C9971q.m14634f(PATTERN_KOTLIN_ANNOTATION2, "PATTERN_KOTLIN_ANNOTATION");
-        l = C9906j.m14817l(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
+        C9677q.m14634f(PATTERN_KOTLIN_ANNOTATION2, "PATTERN_KOTLIN_ANNOTATION");
+        l = C9610j.m14817l(CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_COMMENTS2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_STRINGS2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), CodeRules.toMatchGroupRule$default(codeRules, PATTERN_KOTLIN_ANNOTATION2, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null), FieldNode.Companion.createFieldRule(codeStyleProviders), FunctionNode.Companion.createFunctionRule(codeStyleProviders));
         return l;
     }
 
