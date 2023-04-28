@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/player_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <FrameLayout android:gravity="center" android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="32.0dip" android:layout_height="32.0dip">
-            <View android:id="@id/wipe" android:layout_width="32.0dip" android:layout_height="32.0dip" />
-            <View android:id="@id/button_container" android:layout_width="32.0dip" android:layout_height="32.0dip" />
-            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/button" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="fitCenter" android:tint="@color/white" />
-            <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" android:indeterminateDrawable="@drawable/drawable_voice_message_view" />
-            <LinearLayout android:id="@id/upload_overlay_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="2.0dip" android:outlineProvider="none">
-                <com.discord.chat.presentation.message.view.AttachmentUploadOverlayView android:id="@id/upload_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/player_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center" android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="32dp" android:layout_height="32dp">
+            <View android:id="@+id/wipe" android:layout_width="32dp" android:layout_height="32dp"/>
+            <View android:id="@+id/button_container" android:layout_width="32dp" android:layout_height="32dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/button" android:layout_width="18dp" android:layout_height="18dp" android:scaleType="fitCenter" android:tint="@color/white"/>
+            <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminate="true" android:indeterminateDrawable="@drawable/drawable_voice_message_view"/>
+            <LinearLayout android:id="@+id/upload_overlay_background" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="2dp" android:outlineProvider="none">
+                <com.discord.chat.presentation.message.view.AttachmentUploadOverlayView android:id="@+id/upload_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
             </LinearLayout>
         </FrameLayout>
-        <com.discord.chat.presentation.message.view.voicemessages.AudioWaveView android:id="@id/wave" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="2.0dip" />
-        <com.facebook.drawee.span.SimpleDraweeSpanTextView android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginEnd="2.0dip" />
+        <com.discord.chat.presentation.message.view.voicemessages.AudioWaveView android:id="@+id/wave" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="12dp" android:layout_marginEnd="2dp"/>
+        <com.facebook.drawee.span.SimpleDraweeSpanTextView android:layout_gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginEnd="2dp"/>
     </LinearLayout>
 </merge>

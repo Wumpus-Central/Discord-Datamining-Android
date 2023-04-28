@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/highlight_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:maxWidth="14.0dip" android:maxHeight="14.0dip" android:layout_marginStart="@dimen/message_start_guideline" android:layout_marginEnd="4.0dip" />
-    <TextView android:layout_gravity="center_vertical" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/highlight_icon" android:layout_width="14dp" android:layout_height="14dp" android:maxWidth="14dp" android:maxHeight="14dp" android:layout_marginStart="@dimen/message_start_guideline" android:layout_marginEnd="4dp"/>
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 </merge>

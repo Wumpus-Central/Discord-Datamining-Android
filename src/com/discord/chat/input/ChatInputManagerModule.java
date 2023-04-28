@@ -1,0 +1,280 @@
+package com.discord.chat.input;
+
+import android.app.Activity;
+import android.view.View;
+import android.view.Window;
+import bj.C3643f;
+import com.discord.chat.input.bridge.ChatInputNode;
+import com.discord.chat.input.bridge.ChatInputNode$$serializer;
+import com.discord.chat.input.views.ChatInputRootView;
+import com.discord.misc.utilities.keyboard.KeyboardExtensionsKt;
+import com.discord.react.utilities.NativeArrayExtensionsKt;
+import com.facebook.react.bridge.BaseJavaModule;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.uimanager.NativeViewHierarchyManager;
+import com.facebook.react.uimanager.UIBlock;
+import com.facebook.react.uimanager.UIManagerModule;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.C9971q;
+import kotlinx.serialization.json.C10285k;
+import kotlinx.serialization.json.Json;
+
+@Metadata(m15074d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\u000b\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\f\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\r\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\b\u0010\u000e\u001a\u00020\u000fH\u0016J\u0018\u0010\u0010\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010\u0013\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\u0014\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\u0015\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\u0016\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007JB\u0010\u0017\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\n2\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010\u000fH\u0007J \u0010 \u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\n2\u0006\u0010\u0019\u001a\u00020\nH\u0007J\u0018\u0010!\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u001a\u001a\u00020\u000fH\u0007J\"\u0010\"\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010#\u001a\u00020\u001c2\b\u0010\u001f\u001a\u0004\u0018\u00010\u000fH\u0007J\u0012\u0010$\u001a\b\u0012\u0004\u0012\u00020&0%*\u00020\u001cH\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006'"}, m15073d2 = {"Lcom/discord/chat/input/ChatInputManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "json", "Lkotlinx/serialization/json/Json;", "backspace", "", "tag", "", "blur", "closeCustomKeyboard", "focus", "getName", "", "getText", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "markTextInputChanged", "openCustomKeyboard", "openSystemKeyboard", "reloadInputViews", "replaceRange", "location", "length", "text", "styleBlocks", "Lcom/facebook/react/bridge/ReadableArray;", "keepCursorPosition", "", "editId", "setSelectedRange", "setText", "updateTextBlocks", "blocks", "toStyleBlocks", "", "Lcom/discord/chat/input/bridge/ChatInputNode;", "chat_input_release"}, m15072k = 1, m15071mv = {1, 8, 0}, m15069xi = 48)
+/* loaded from: classes4.dex */
+public final class ChatInputManagerModule extends ReactContextBaseJavaModule {
+    private final Json json = C10285k.m13694b(null, ChatInputManagerModule$json$1.INSTANCE, 1, null);
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ChatInputManagerModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        C9971q.m14633g(reactContext, "reactContext");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final List<ChatInputNode> toStyleBlocks(ReadableArray readableArray) {
+        Json json = this.json;
+        String jsonString = NativeArrayExtensionsKt.toJsonString(readableArray);
+        json.mo611a();
+        return (List) json.mo578b(new C3643f(ChatInputNode$$serializer.INSTANCE), jsonString);
+    }
+
+    @ReactMethod
+    public final void backspace(final int i) {
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$backspace$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    ((ChatInputRootView) resolveView).backspace();
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void blur(final int i) {
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$blur$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    ((ChatInputRootView) resolveView).clearInputFocus();
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void closeCustomKeyboard(int i) {
+    }
+
+    @ReactMethod
+    public final void focus(final int i) {
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$focus$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    ((ChatInputRootView) resolveView).requestInputFocus();
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @Override // com.facebook.react.bridge.NativeModule
+    public String getName() {
+        return "DCDChatInputManager";
+    }
+
+    @ReactMethod
+    public final void getText(final int i, final Promise promise) {
+        C9971q.m14633g(promise, "promise");
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$getText$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    promise.resolve(((ChatInputRootView) resolveView).getText());
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void markTextInputChanged(int i) {
+    }
+
+    @ReactMethod
+    public final void openCustomKeyboard(final int i) {
+        final Window window;
+        Activity currentActivity = getCurrentActivity();
+        if (currentActivity != null && (window = currentActivity.getWindow()) != null) {
+            ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+            C9971q.m14636d(nativeModule);
+            ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$openCustomKeyboard$lambda$5$$inlined$uiManagerResolveView$1
+                @Override // com.facebook.react.uimanager.UIBlock
+                public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                    View resolveView = nativeViewHierarchyManager.resolveView(i);
+                    if (resolveView != null) {
+                        KeyboardExtensionsKt.hideKeyboard((ChatInputRootView) resolveView, window);
+                        return;
+                    }
+                    throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+                }
+            });
+        }
+    }
+
+    @ReactMethod
+    public final void openSystemKeyboard(final int i) {
+        final Window window;
+        Activity currentActivity = getCurrentActivity();
+        if (currentActivity != null && (window = currentActivity.getWindow()) != null) {
+            ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+            C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+            NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+            C9971q.m14636d(nativeModule);
+            ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$openSystemKeyboard$lambda$7$$inlined$uiManagerResolveView$1
+                @Override // com.facebook.react.uimanager.UIBlock
+                public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                    View resolveView = nativeViewHierarchyManager.resolveView(i);
+                    if (resolveView != null) {
+                        ((ChatInputRootView) resolveView).showKeyboard(window);
+                        return;
+                    }
+                    throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+                }
+            });
+        }
+    }
+
+    @ReactMethod
+    public final void reloadInputViews(int i) {
+    }
+
+    @ReactMethod
+    public final void replaceRange(final int i, final int i2, final int i3, final String text, final ReadableArray styleBlocks, final boolean z, final String str) {
+        C9971q.m14633g(text, "text");
+        C9971q.m14633g(styleBlocks, "styleBlocks");
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$replaceRange$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                List<ChatInputNode> styleBlocks2;
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    int i4 = i2;
+                    int i5 = i3;
+                    String str2 = text;
+                    styleBlocks2 = this.toStyleBlocks(styleBlocks);
+                    ((ChatInputRootView) resolveView).replaceRange(i4, i5, str2, styleBlocks2, z, str);
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void setSelectedRange(final int i, final int i2, final int i3) {
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$setSelectedRange$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    int i4 = i2;
+                    ((ChatInputRootView) resolveView).setSelection(i4, i3 + i4);
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void setText(final int i, final String text) {
+        C9971q.m14633g(text, "text");
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$setText$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    ChatInputRootView chatInputRootView = (ChatInputRootView) resolveView;
+                    chatInputRootView.setText(text);
+                    ChatInputRootView.setSelection$default(chatInputRootView, text.length(), 0, 2, null);
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+
+    @ReactMethod
+    public final void updateTextBlocks(final int i, ReadableArray blocks, final String str) {
+        C9971q.m14633g(blocks, "blocks");
+        final List<ChatInputNode> styleBlocks = toStyleBlocks(blocks);
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        C9971q.m14634f(reactApplicationContext, "reactApplicationContext");
+        NativeModule nativeModule = reactApplicationContext.getNativeModule(UIManagerModule.class);
+        C9971q.m14636d(nativeModule);
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.input.ChatInputManagerModule$updateTextBlocks$$inlined$uiManagerResolveView$1
+            @Override // com.facebook.react.uimanager.UIBlock
+            public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
+                View resolveView = nativeViewHierarchyManager.resolveView(i);
+                if (resolveView != null) {
+                    ChatInputRootView chatInputRootView = (ChatInputRootView) resolveView;
+                    String str2 = str;
+                    if (str2 == null) {
+                        str2 = "";
+                    }
+                    chatInputRootView.clearAndApplyChatNodes(str2, styleBlocks);
+                    return;
+                }
+                throw new NullPointerException("null cannot be cast to non-null type com.discord.chat.input.views.ChatInputRootView");
+            }
+        });
+    }
+}

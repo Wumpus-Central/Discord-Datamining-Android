@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector android:constantSize="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:constantSize="true">
     <item android:state_enabled="false" android:state_pressed="true">
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_3d" />
+        <bitmap android:gravity="center" android:src="0x7f08003d"/>
     </item>
     <item android:state_enabled="false">
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_3d" />
+        <bitmap android:gravity="center" android:src="0x7f08003d"/>
     </item>
     <item android:state_pressed="true">
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_3f" />
+        <bitmap android:gravity="center" android:src="0x7f08003f"/>
     </item>
     <item>
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_3e" />
+        <bitmap android:gravity="center" android:src="0x7f08003e"/>
     </item>
 </selector>

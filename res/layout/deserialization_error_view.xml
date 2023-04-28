@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/red_400" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Something went wrong!" android:layout_marginStart="8.0dip" />
-    <TextView android:ellipsize="end" android:id="@id/cause_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Cause: " android:maxLines="3" android:layout_marginStart="8.0dip" />
-    <TextView android:ellipsize="end" android:id="@id/exception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="15" android:layout_marginStart="8.0dip" />
-    <TextView android:ellipsize="end" android:id="@id/json_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Relevant json (truncated): " android:maxLines="3" android:layout_marginStart="8.0dip" />
-    <TextView android:ellipsize="end" android:id="@id/json" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="3" android:layout_marginStart="8.0dip" />
-    <Button android:layout_gravity="center_horizontal" android:id="@id/copy_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Copy JSON  to clipboard" android:layout_marginStart="8.0dip" />
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/red_400" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Something went wrong!" android:layout_marginStart="8dp"/>
+    <TextView android:ellipsize="end" android:id="@+id/cause_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Cause: " android:maxLines="3" android:layout_marginStart="8dp"/>
+    <TextView android:ellipsize="end" android:id="@+id/exception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="15" android:layout_marginStart="8dp"/>
+    <TextView android:ellipsize="end" android:id="@+id/json_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Relevant json (truncated): " android:maxLines="3" android:layout_marginStart="8dp"/>
+    <TextView android:ellipsize="end" android:id="@+id/json" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="3" android:layout_marginStart="8dp"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/copy_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Copy JSON  to clipboard" android:layout_marginStart="8dp"/>
 </merge>

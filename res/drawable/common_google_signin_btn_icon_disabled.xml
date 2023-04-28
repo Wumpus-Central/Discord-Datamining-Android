@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:left="3.0dip" android:top="3.0dip" android:right="3.0dip" android:bottom="3.0dip">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
         <shape android:shape="rectangle">
-            <solid android:color="#ffebebeb" />
-            <corners android:radius="2.0dip" />
-            <padding android:left="7.0dip" android:top="7.0dip" android:right="7.0dip" android:bottom="7.0dip" />
+            <solid android:color="#ebebeb"/>
+            <corners android:radius="2dp"/>
+            <padding android:left="7dp" android:top="7dp" android:right="7dp" android:bottom="7dp"/>
         </shape>
     </item>
     <item>
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_db" />
+        <bitmap android:gravity="center" android:src="0x7f0800db"/>
     </item>
 </layer-list>
