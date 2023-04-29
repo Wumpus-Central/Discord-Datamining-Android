@@ -8,11 +8,13 @@ Data mining is the process of discovering resources, patterns in code, and their
 
 ## Repository Contents
 
-This repository contains the following directories:
+This repository contains the following directories and files:
 
 - `./assets/`: This directory contains assets such as app emotes, manifest, and other files that may not be important.
 - `./res/`: This directory contains resources used in the data mining process, such as configuration files or reference data or even application graphic content (we are using xxhdpi assets).
-- `./smali/`: This directory contains the decompiled source code from the DEX files.
+- `./discord-java/`: This directory contains the decompiled source code to JAVA from the DEX files. (easier to read)
+- `./discord-smali/`: This directory contains the decompiled source code to SMALI from the DEX files. (harder to read)
+- `,/AndroidManifest.xml`: This file is containing essential information about the app's behavior and interactions with the device.
 
 ## How to Use this Repository
 
