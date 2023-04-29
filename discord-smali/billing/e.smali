@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lcom/discord/billing/e;->a:Lcom/discord/billing/BillingManager;
 
-    invoke-static {v0, p1, p2}, Lcom/discord/billing/BillingManager;->f(Lcom/discord/billing/BillingManager;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static {v0, p1, p2}, Lcom/discord/billing/BillingManager;->c(Lcom/discord/billing/BillingManager;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method

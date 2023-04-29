@@ -412,7 +412,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public getName()Ljava/lang/String;

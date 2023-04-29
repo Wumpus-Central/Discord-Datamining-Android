@@ -976,7 +976,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final getGrayscalePostprocessor()Lcom/facebook/imagepipeline/request/Postprocessor;
@@ -1267,7 +1266,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final setBottomEndLabel(Ljava/lang/CharSequence;I)V
@@ -1372,7 +1370,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method private final setButtonText(Ljava/lang/String;)V

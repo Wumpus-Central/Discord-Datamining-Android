@@ -1466,7 +1466,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final activateDevice(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)V
@@ -1771,7 +1770,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public static synthetic b(Lcom/discord/audio/DiscordAudioManager;)V
@@ -2332,7 +2330,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final onHeadsetConnectionStateUpdate(Lcom/discord/audio/enums/BluetoothProfileConnectionState$Update;)V
@@ -8743,7 +8740,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method private final releaseAudioFocus()V
@@ -12078,7 +12074,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public final setDevice(Lcom/discord/audio/DiscordAudioManager$DeviceTypes;)Z
@@ -12507,7 +12502,6 @@
     throw p1
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public final setMediaVolume(F)V
@@ -12791,5 +12785,4 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method

@@ -20,10 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/s;",
         "Lkotlin/jvm/functions/Function1<",
-        "Ljava/util/List<",
-        "+",
-        "Lcom/android/billingclient/api/SkuDetails;",
-        ">;",
+        "Ljava/lang/Exception;",
         "Lkotlin/Unit;",
         ">;"
     }
@@ -31,14 +28,14 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u000c\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003H\n\u00a2\u0006\u0002\u0008\u0005"
+        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n\u00a2\u0006\u0002\u0008\u0005"
     }
     d2 = {
         "<anonymous>",
         "",
-        "skuDetails",
-        "",
-        "Lcom/android/billingclient/api/SkuDetails;",
+        "e",
+        "Ljava/lang/Exception;",
+        "Lkotlin/Exception;",
         "invoke"
     }
     k = 0x3
@@ -74,39 +71,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Ljava/util/List;
+    check-cast p1, Ljava/lang/Exception;
 
-    invoke-virtual {p0, p1}, Lcom/discord/billing/BillingManagerModule$getSkus$1;->invoke(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/discord/billing/BillingManagerModule$getSkus$1;->invoke(Ljava/lang/Exception;)V
 
     sget-object p1, Lkotlin/Unit;->a:Lkotlin/Unit;
 
     return-object p1
 .end method
 
-.method public final invoke(Ljava/util/List;)V
+.method public final invoke(Ljava/lang/Exception;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "+",
-            "Lcom/android/billingclient/api/SkuDetails;",
-            ">;)V"
-        }
-    .end annotation
 
-    const-string v0, "skuDetails"
+    const-string v0, "e"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/q;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/discord/billing/BillingManagerModule$getSkus$1;->$promise:Lcom/facebook/react/bridge/Promise;
 
-    invoke-static {p1}, Lcom/discord/billing/react/events/serialization/SerializeSkuDetailsKt;->serializeSkuDetails(Ljava/util/List;)Lcom/facebook/react/bridge/ReadableNativeArray;
-
-    move-result-object p1
-
-    invoke-interface {v0, p1}, Lcom/facebook/react/bridge/Promise;->resolve(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lcom/facebook/react/bridge/Promise;->reject(Ljava/lang/Throwable;)V
 
     return-void
 .end method

@@ -510,7 +510,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method private final setJSBundle(Lcom/facebook/react/ReactInstanceManager;Ljava/lang/String;)V
@@ -658,7 +657,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method private final showSpinnerView()V

@@ -216,7 +216,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method public final rowHeight(Lcom/discord/channel_spine/ChannelSpineView;F)V
@@ -311,5 +310,4 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method

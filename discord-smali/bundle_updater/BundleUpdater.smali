@@ -1186,7 +1186,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final downloadManifest()Lcom/discord/bundle_updater/BundleUpdater$OtaResult;
@@ -8335,7 +8334,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method private final otaFile(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;

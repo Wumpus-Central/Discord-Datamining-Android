@@ -343,7 +343,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final getPriceAmountMicros(Lcom/android/billingclient/api/ProductDetails;)J
@@ -667,7 +666,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method private final getProrationMode(Lcom/android/billingclient/api/ProductDetails;Lcom/android/billingclient/api/ProductDetails;)I

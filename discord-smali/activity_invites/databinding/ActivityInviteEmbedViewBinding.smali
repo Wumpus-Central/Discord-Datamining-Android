@@ -534,7 +534,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lcom/discord/activity_invites/databinding/ActivityInviteEmbedViewBinding;
@@ -642,7 +641,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 

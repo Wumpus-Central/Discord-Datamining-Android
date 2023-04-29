@@ -156,7 +156,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method public static synthetic copy$default(Lcom/discord/audio/enums/ScoAudioState$Update;Lcom/discord/audio/enums/ScoAudioState;Lcom/discord/audio/enums/ScoAudioState;ILjava/lang/Object;)Lcom/discord/audio/enums/ScoAudioState$Update;

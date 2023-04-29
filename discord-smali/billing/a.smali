@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method public final a(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+.method public final onProductDetailsResponse(Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
     .locals 12
 
     iget-object v0, p0, Lcom/discord/billing/a;->a:Lcom/discord/billing/BillingManager;
@@ -86,7 +86,7 @@
 
     move-object v11, p2
 
-    invoke-static/range {v0 .. v11}, Lcom/discord/billing/BillingManager;->c(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
+    invoke-static/range {v0 .. v11}, Lcom/discord/billing/BillingManager;->e(Lcom/discord/billing/BillingManager;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/Activity;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/Ref$BooleanRef;Lcom/android/billingclient/api/BillingResult;Ljava/util/List;)V
 
     return-void
 .end method

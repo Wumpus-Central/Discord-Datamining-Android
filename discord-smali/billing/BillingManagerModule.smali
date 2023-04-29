@@ -338,7 +338,6 @@
     .line 185
     .line 186
     .line 187
-    .line 188
 .end method
 
 .method public static final synthetic access$getReactEvents$p(Lcom/discord/billing/BillingManagerModule;)Lcom/discord/reactevents/ReactEvents;
@@ -350,7 +349,7 @@
 .end method
 
 .method private final getSkus(Lcom/discord/billing/BillingManager;Lcom/facebook/react/bridge/ReadableArray;Lcom/discord/billing/types/SkuType;Lcom/facebook/react/bridge/Promise;)V
-    .locals 7
+    .locals 3
 
     .line 1
     invoke-interface {p2}, Lcom/facebook/react/bridge/ReadableArray;->toArrayList()Ljava/util/ArrayList;
@@ -370,11 +369,11 @@
     .line 8
     .line 9
     .line 10
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 11
     .line 12
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 13
     .line 14
@@ -394,10 +393,10 @@
     .line 20
     .line 21
     .line 22
-    move-result v0
+    move-result v1
 
     .line 23
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 24
     .line 25
@@ -406,18 +405,18 @@
     .line 26
     .line 27
     .line 28
-    move-result-object v0
+    move-result-object v1
 
     .line 29
-    instance-of v1, v0, Ljava/lang/String;
+    instance-of v2, v1, Ljava/lang/String;
 
     .line 30
     .line 31
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 32
     .line 33
-    invoke-interface {v2, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -426,45 +425,33 @@
 
     .line 37
     :cond_1
-    new-instance v4, Lcom/discord/billing/BillingManagerModule$getSkus$1;
+    new-instance p2, Lcom/discord/billing/BillingManagerModule$getSkus$1;
 
     .line 38
     .line 39
-    invoke-direct {v4, p4}, Lcom/discord/billing/BillingManagerModule$getSkus$1;-><init>(Lcom/facebook/react/bridge/Promise;)V
+    invoke-direct {p2, p4}, Lcom/discord/billing/BillingManagerModule$getSkus$1;-><init>(Lcom/facebook/react/bridge/Promise;)V
 
     .line 40
     .line 41
     .line 42
-    new-instance v5, Lcom/discord/billing/BillingManagerModule$getSkus$2;
+    invoke-virtual {p1, v0, p3, p4, p2}, Lcom/discord/billing/BillingManager;->getSkus(Ljava/util/List;Lcom/discord/billing/types/SkuType;Lcom/facebook/react/bridge/Promise;Lkotlin/jvm/functions/Function1;)V
 
     .line 43
     .line 44
-    invoke-direct {v5, p4}, Lcom/discord/billing/BillingManagerModule$getSkus$2;-><init>(Lcom/facebook/react/bridge/Promise;)V
-
     .line 45
+    return-void
     .line 46
     .line 47
-    new-instance v6, Lcom/discord/billing/BillingManagerModule$getSkus$3;
-
     .line 48
     .line 49
-    invoke-direct {v6, p4}, Lcom/discord/billing/BillingManagerModule$getSkus$3;-><init>(Lcom/facebook/react/bridge/Promise;)V
-
     .line 50
     .line 51
     .line 52
-    move-object v1, p1
-
     .line 53
-    move-object v3, p3
-
     .line 54
-    invoke-virtual/range {v1 .. v6}, Lcom/discord/billing/BillingManager;->getSkus(Ljava/util/List;Lcom/discord/billing/types/SkuType;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
-
     .line 55
     .line 56
     .line 57
-    return-void
     .line 58
     .line 59
     .line 60
@@ -898,7 +885,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method public final getIAPSkus(Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/Promise;)V
@@ -1003,7 +989,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method public getName()Ljava/lang/String;
@@ -1116,7 +1101,6 @@
     .line 80
     .line 81
     .line 82
-    .line 83
 .end method
 
 .method public final loadPurchases(Lcom/facebook/react/bridge/Promise;)V
@@ -1198,7 +1182,7 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/discord/billing/BillingManager;->open(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/discord/billing/BillingManager;->open(Lcom/facebook/react/bridge/ReactApplicationContext;)V
 
     return-void
 .end method
