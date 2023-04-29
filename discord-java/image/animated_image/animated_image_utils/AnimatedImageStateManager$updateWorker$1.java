@@ -19,7 +19,7 @@ public final class AnimatedImageStateManager$updateWorker$1 extends s implements
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(AnimatedImageStateManager<?> animatedImageStateManager) {
         invoke2(animatedImageStateManager);
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

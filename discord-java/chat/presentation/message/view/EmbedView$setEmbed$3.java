@@ -27,7 +27,7 @@ final class EmbedView$setEmbed$3 extends s implements Function1<LinkContentNode,
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

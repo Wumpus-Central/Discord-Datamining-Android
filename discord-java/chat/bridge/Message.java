@@ -109,7 +109,7 @@ public final class Message extends MessageBase {
     private final GuildId guildId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7202id;
+    private final String f7194id;
     private final InteractionStatus interactionStatus;
     private final Boolean isCallActive;
     private final Boolean isCurrentUserMessageAuthor;
@@ -195,7 +195,7 @@ public final class Message extends MessageBase {
             n1.a(new int[]{i10, i11, i12}, new int[]{11, 1, 0}, Message$$serializer.INSTANCE.getDescriptor());
         }
         this.type = messageType;
-        this.f7202id = str;
+        this.f7194id = str;
         if ((i10 & 4) == 0) {
             this.nonce = null;
         } else {
@@ -525,7 +525,7 @@ public final class Message extends MessageBase {
         boolean z10 = false;
         output.t(serialDesc, 0, MessageType.Serializer.INSTANCE, self.type);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.t(serialDesc, 1, messageId$$serializer, MessageId.m558boximpl(self.f7202id));
+        output.t(serialDesc, 1, messageId$$serializer, MessageId.m558boximpl(self.f7194id));
         if (output.A(serialDesc, 2) || self.nonce != null) {
             String str = self.nonce;
             output.p(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m558boximpl(str) : null);
@@ -775,7 +775,7 @@ public final class Message extends MessageBase {
 
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
     public final String m7component23Eiw7ao() {
-        return this.f7202id;
+        return this.f7194id;
     }
 
     public final List<Embed> component20() {
@@ -1144,7 +1144,7 @@ public final class Message extends MessageBase {
 
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m16getId3Eiw7ao() {
-        return this.f7202id;
+        return this.f7194id;
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -1305,7 +1305,7 @@ public final class Message extends MessageBase {
     }
 
     public int hashCode() {
-        int hashCode = ((this.type.hashCode() * 31) + MessageId.m563hashCodeimpl(this.f7202id)) * 31;
+        int hashCode = ((this.type.hashCode() * 31) + MessageId.m563hashCodeimpl(this.f7194id)) * 31;
         String str = this.nonce;
         int i10 = 0;
         int i11 = (((hashCode + (str == null ? 0 : MessageId.m563hashCodeimpl(str))) * 31) + ChannelId.m537hashCodeimpl(this.channelId)) * 31;
@@ -1478,7 +1478,7 @@ public final class Message extends MessageBase {
 
     public String toString() {
         MessageType messageType = this.type;
-        String str = MessageId.m564toStringimpl(this.f7202id);
+        String str = MessageId.m564toStringimpl(this.f7194id);
         String str2 = this.nonce;
         String str3 = str2 == null ? "null" : MessageId.m564toStringimpl(str2);
         String str4 = ChannelId.m539toStringimpl(this.channelId);
@@ -1559,7 +1559,7 @@ public final class Message extends MessageBase {
         super(null);
         Lazy a10;
         this.type = messageType;
-        this.f7202id = str;
+        this.f7194id = str;
         this.nonce = str2;
         this.channelId = j10;
         this.guildId = guildId;

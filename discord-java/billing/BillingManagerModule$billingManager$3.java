@@ -26,7 +26,7 @@ public final class BillingManagerModule$billingManager$3 extends s implements Fu
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     public final void invoke(int i10) {

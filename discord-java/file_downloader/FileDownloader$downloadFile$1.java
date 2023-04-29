@@ -40,7 +40,7 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
     }
 
     public final Object invoke(FlowCollector<? super DownloadState> flowCollector, Continuation<? super Unit> continuation) {
-        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f22042a);
+        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f22034a);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0109, code lost:
@@ -53,7 +53,7 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
         if (r0 == null) goto L_0x013e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x0140, code lost:
-        return kotlin.Unit.f22042a;
+        return kotlin.Unit.f22034a;
      */
     /* JADX WARN: Not initialized variable reg: 9, insn: 0x0119: MOVE  (r2 I:??[OBJECT, ARRAY]) = (r9 I:??[OBJECT, ARRAY]), block:B:60:0x0119 */
     /* JADX WARN: Removed duplicated region for block: B:40:0x00b8 A[Catch: all -> 0x0118, Exception -> 0x011b, TryCatch #3 {Exception -> 0x011b, blocks: (B:38:0x00a4, B:40:0x00b8, B:44:0x00d3, B:46:0x00f0, B:57:0x0114, B:58:0x0117), top: B:82:0x00a4 }] */

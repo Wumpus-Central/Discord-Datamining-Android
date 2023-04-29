@@ -36,7 +36,7 @@ public final class ExternalPipManager {
             z11 = false;
         }
         if (!z11 || Build.VERSION.SDK_INT < 26) {
-            s.a aVar = s.f24606l;
+            s.a aVar = s.f24598l;
             onResult.invoke(s.a(s.b(t.a(new Exception("Disabled or unsupported.")))));
             return;
         }
@@ -46,13 +46,13 @@ public final class ExternalPipManager {
                 build = aspectRatio.build();
                 activity.enterPictureInPictureMode(build);
             } catch (Exception e10) {
-                s.a aVar2 = s.f24606l;
+                s.a aVar2 = s.f24598l;
                 onResult.invoke(s.a(s.b(t.a(e10))));
                 return;
             }
         }
-        s.a aVar3 = s.f24606l;
-        onResult.invoke(s.a(s.b(Unit.f22042a)));
+        s.a aVar3 = s.f24598l;
+        onResult.invoke(s.a(s.b(Unit.f22034a)));
     }
 
     public final void setEnabled(boolean z10) {

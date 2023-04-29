@@ -27,7 +27,7 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
         m444invokeR7gqayM(channelId.m541unboximpl());
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke-R7gqayM  reason: not valid java name */

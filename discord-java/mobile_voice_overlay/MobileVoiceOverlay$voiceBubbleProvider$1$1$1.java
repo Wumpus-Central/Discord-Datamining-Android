@@ -30,7 +30,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1$1$1 extends s implem
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(OverlayMenuBubbleDialog overlayMenuBubbleDialog) {
         invoke2(overlayMenuBubbleDialog);
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

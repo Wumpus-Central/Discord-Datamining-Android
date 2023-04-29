@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 public final class PortalViewChatListItem extends ChatListItem {
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7253id;
+    private final String f7245id;
     private final Pair<Integer, Integer> measuredDimensions;
     private final View view;
 
@@ -64,7 +64,7 @@ public final class PortalViewChatListItem extends ChatListItem {
 
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     public String getId() {
-        return this.f7253id;
+        return this.f7245id;
     }
 
     public final Pair<Integer, Integer> getMeasuredDimensions() {
@@ -93,7 +93,7 @@ public final class PortalViewChatListItem extends ChatListItem {
         super(id2, null);
         q.g(id2, "id");
         q.g(view, "view");
-        this.f7253id = id2;
+        this.f7245id = id2;
         this.view = view;
         this.measuredDimensions = pair;
     }

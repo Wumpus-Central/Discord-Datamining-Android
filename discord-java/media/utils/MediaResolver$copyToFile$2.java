@@ -40,7 +40,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22034a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
                 try {
                     q.f(inputStream, "inputStream");
                     FileUtilsKt.writeTo(inputStream, file);
-                    Unit unit = Unit.f22042a;
+                    Unit unit = Unit.f22034a;
                     th = null;
                 } finally {
                     try {

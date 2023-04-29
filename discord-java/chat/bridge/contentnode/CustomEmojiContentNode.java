@@ -20,7 +20,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     private final String frozenSrc;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f7206id;
+    private final long f7198id;
     private final boolean jumboable;
     private final String src;
 
@@ -45,7 +45,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, CustomEmojiContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7206id = j10;
+        this.f7198id = j10;
         this.alt = str;
         this.src = str2;
         this.frozenSrc = str3;
@@ -58,7 +58,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static /* synthetic */ CustomEmojiContentNode copy$default(CustomEmojiContentNode customEmojiContentNode, long j10, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = customEmojiContentNode.f7206id;
+            j10 = customEmojiContentNode.f7198id;
         }
         if ((i10 & 2) != 0) {
             str = customEmojiContentNode.alt;
@@ -81,7 +81,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.g(serialDesc, "serialDesc");
         EmojiContentNode.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.E(serialDesc, 0, self.f7206id);
+        output.E(serialDesc, 0, self.f7198id);
         output.z(serialDesc, 1, self.alt);
         output.z(serialDesc, 2, self.src);
         output.z(serialDesc, 3, self.frozenSrc);
@@ -94,7 +94,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long component1() {
-        return this.f7206id;
+        return this.f7198id;
     }
 
     public final String component2() {
@@ -128,7 +128,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
             return false;
         }
         CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) obj;
-        return this.f7206id == customEmojiContentNode.f7206id && q.b(this.alt, customEmojiContentNode.alt) && q.b(this.src, customEmojiContentNode.src) && q.b(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
+        return this.f7198id == customEmojiContentNode.f7198id && q.b(this.alt, customEmojiContentNode.alt) && q.b(this.src, customEmojiContentNode.src) && q.b(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
     }
 
     public final String getAlt() {
@@ -140,7 +140,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long getId() {
-        return this.f7206id;
+        return this.f7198id;
     }
 
     @Override // com.discord.chat.presentation.textutils.Jumboable
@@ -153,7 +153,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        int a10 = ((((((a.a(this.f7206id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
+        int a10 = ((((((a.a(this.f7198id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
         boolean jumboable = getJumboable();
         if (jumboable) {
             jumboable = true;
@@ -165,7 +165,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public String toString() {
-        long j10 = this.f7206id;
+        long j10 = this.f7198id;
         String str = this.alt;
         String str2 = this.src;
         String str3 = this.frozenSrc;
@@ -183,7 +183,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.g(alt, "alt");
         q.g(src, "src");
         q.g(frozenSrc, "frozenSrc");
-        this.f7206id = j10;
+        this.f7198id = j10;
         this.alt = alt;
         this.src = src;
         this.frozenSrc = frozenSrc;

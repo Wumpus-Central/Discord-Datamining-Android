@@ -39,7 +39,7 @@ public final class ForegroundService extends Service {
                 return ForegroundServiceUtilsKt.startForegroundServiceCompat(context, getServiceIntent(context));
             } catch (Exception e10) {
                 onError.invoke(e10);
-                return Unit.f22042a;
+                return Unit.f22034a;
             }
         }
 

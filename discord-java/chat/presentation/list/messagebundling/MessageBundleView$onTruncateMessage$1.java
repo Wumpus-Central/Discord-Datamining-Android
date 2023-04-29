@@ -19,7 +19,7 @@ final class MessageBundleView$onTruncateMessage$1 extends s implements Function1
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
         m179invoke1xi1bu0(messageId.m566unboximpl());
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */

@@ -137,7 +137,7 @@ public final class AudioWaveView extends View {
         CHUNK_SPACING = dpToPx2;
         int i10 = dpToPx + dpToPx2;
         CHUNK_SIZE = i10;
-        a.C0415a aVar = a.f28981l;
+        a.C0415a aVar = a.f28973l;
         MIN_WIDTH = i10 * 5;
     }
 

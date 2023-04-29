@@ -899,22 +899,22 @@ public final class R {
         public static final int exo_styled_controls_subtitle_off = 0x7f0800d6;
         public static final int exo_styled_controls_subtitle_on = 0x7f0800d7;
         public static final int exo_styled_controls_vr = 0x7f0800d8;
-        public static final int notification_action_background = 0x7f08063a;
-        public static final int notification_bg = 0x7f08063b;
-        public static final int notification_bg_low = 0x7f08063c;
-        public static final int notification_bg_low_normal = 0x7f08063d;
-        public static final int notification_bg_low_pressed = 0x7f08063e;
-        public static final int notification_bg_normal = 0x7f08063f;
-        public static final int notification_bg_normal_pressed = 0x7f080640;
-        public static final int notification_icon_background = 0x7f080641;
-        public static final int notification_template_icon_bg = 0x7f080642;
-        public static final int notification_template_icon_low_bg = 0x7f080643;
-        public static final int notification_tile_bg = 0x7f080644;
-        public static final int notify_panel_notification_icon_bg = 0x7f080645;
-        public static final int redbox_top_border_background = 0x7f080647;
-        public static final int test_level_drawable = 0x7f080649;
-        public static final int tooltip_frame_dark = 0x7f08064a;
-        public static final int tooltip_frame_light = 0x7f08064b;
+        public static final int notification_action_background = 0x7f080638;
+        public static final int notification_bg = 0x7f080639;
+        public static final int notification_bg_low = 0x7f08063a;
+        public static final int notification_bg_low_normal = 0x7f08063b;
+        public static final int notification_bg_low_pressed = 0x7f08063c;
+        public static final int notification_bg_normal = 0x7f08063d;
+        public static final int notification_bg_normal_pressed = 0x7f08063e;
+        public static final int notification_icon_background = 0x7f08063f;
+        public static final int notification_template_icon_bg = 0x7f080640;
+        public static final int notification_template_icon_low_bg = 0x7f080641;
+        public static final int notification_tile_bg = 0x7f080642;
+        public static final int notify_panel_notification_icon_bg = 0x7f080643;
+        public static final int redbox_top_border_background = 0x7f080645;
+        public static final int test_level_drawable = 0x7f080647;
+        public static final int tooltip_frame_dark = 0x7f080648;
+        public static final int tooltip_frame_light = 0x7f080649;
 
         private drawable() {
         }

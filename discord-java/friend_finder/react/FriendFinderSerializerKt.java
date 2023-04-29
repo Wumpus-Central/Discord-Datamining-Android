@@ -42,7 +42,7 @@ public final class FriendFinderSerializerKt {
         q.g(callback, "callback");
         try {
             Map<String, ContactsDataEntry> fetchContacts = FriendFinderProvider.INSTANCE.fetchContacts(reactContext);
-            Json.a aVar = Json.f22543d;
+            Json.a aVar = Json.f22535d;
             aVar.a();
             callback.invoke(null, aVar.c(new r0(a2.f5917a, ContactsDataEntry$$serializer.INSTANCE), fetchContacts));
         } catch (SecurityException unused) {
@@ -69,6 +69,6 @@ public final class FriendFinderSerializerKt {
             return null;
         }
         nativePermissionManagerModule.hasContactAuthorization(new PromiseWrapper(promise, FriendFinderSerializerKt$serializeHasContactPermissionsResult$1.INSTANCE, null, 4, null));
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 }

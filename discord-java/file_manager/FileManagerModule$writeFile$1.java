@@ -47,7 +47,7 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22042a);
+        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22034a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                 String str = this.$storageDir;
                 hashMap3 = this.this$0.storageDirs;
                 promise.reject("err", "Unknown storage directory " + str + ". Supported storage directories: " + hashMap3.keySet());
-                return Unit.f22042a;
+                return Unit.f22034a;
             }
             try {
                 hashMap2 = this.this$0.storageDirs;
@@ -87,21 +87,21 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                 if (q.b(this.$encoding, "base64")) {
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     fileOutputStream.write(Base64.decode(this.$data, 0));
-                    Unit unit = Unit.f22042a;
+                    Unit unit = Unit.f22034a;
                     c.a(fileOutputStream, null);
                 } else {
                     FileOutputStream fileOutputStream2 = new FileOutputStream(file);
-                    byte[] bytes = this.$data.getBytes(ri.d.f28536b);
+                    byte[] bytes = this.$data.getBytes(ri.d.f28528b);
                     q.f(bytes, "this as java.lang.String).getBytes(charset)");
                     fileOutputStream2.write(bytes);
-                    Unit unit2 = Unit.f22042a;
+                    Unit unit2 = Unit.f22034a;
                     c.a(fileOutputStream2, null);
                 }
                 this.$promise.resolve(file.getAbsolutePath());
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f22042a;
+            return Unit.f22034a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

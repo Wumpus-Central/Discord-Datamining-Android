@@ -27,7 +27,7 @@ final class BrowserManager$tryOpenUrlWithCustomTabs$1 extends s implements Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

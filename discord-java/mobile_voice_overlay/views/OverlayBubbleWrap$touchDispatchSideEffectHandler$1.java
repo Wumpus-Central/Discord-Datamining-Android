@@ -19,7 +19,7 @@ final class OverlayBubbleWrap$touchDispatchSideEffectHandler$1 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MotionEvent motionEvent) {
         invoke2(motionEvent);
-        return Unit.f22042a;
+        return Unit.f22034a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

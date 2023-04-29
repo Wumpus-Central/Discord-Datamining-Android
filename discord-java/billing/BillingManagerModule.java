@@ -40,7 +40,7 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
                 arrayList2.add(obj);
             }
         }
-        billingManager.getSkus(arrayList2, skuType, new BillingManagerModule$getSkus$1(promise), new BillingManagerModule$getSkus$2(promise), new BillingManagerModule$getSkus$3(promise));
+        billingManager.getSkus(arrayList2, skuType, promise, new BillingManagerModule$getSkus$1(promise));
     }
 
     @ReactMethod

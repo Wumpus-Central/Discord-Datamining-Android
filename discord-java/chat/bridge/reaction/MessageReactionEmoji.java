@@ -23,7 +23,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7210id;
+    private final String f7202id;
     private final String name;
     private final String src;
 
@@ -54,9 +54,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f7210id = null;
+            this.f7202id = null;
         } else {
-            this.f7210id = str4;
+            this.f7202id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -171,7 +171,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override // com.discord.reactions.ReactionView.Emoji
     public String getId() {
-        return this.f7210id;
+        return this.f7202id;
     }
 
     @Override // com.discord.reactions.ReactionView.Emoji
@@ -218,7 +218,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f7210id = str2;
+        this.f7202id = str2;
         this.animated = bool;
     }
 
