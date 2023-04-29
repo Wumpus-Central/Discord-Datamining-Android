@@ -72,11 +72,11 @@
 
 .field public static packageName:Ljava/lang/String; = null
 
-.field public static final proguardUUID:Ljava/lang/String; = "2fdd3c8c-6d3c-4396-9ef4-dd5e976babbc"
+.field public static final proguardUUID:Ljava/lang/String; = "88c5b3fc-9435-4549-8cee-0cced8611e45"
 
 .field public static final sentryDsn:Ljava/lang/String; = "https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375"
 
-.field public static final sentryRelease:Ljava/lang/String; = "discord_android@177.7.0-2+177207"
+.field public static final sentryRelease:Ljava/lang/String; = "discord_android@177.8.0-2+177208"
 
 .field public static versionCode:Ljava/lang/String;
 
