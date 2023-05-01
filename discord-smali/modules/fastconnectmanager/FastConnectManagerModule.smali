@@ -261,54 +261,70 @@
 .end method
 
 .method private final handleWebSocketOpen(Lokhttp3/WebSocket;I)V
-    .locals 1
+    .locals 8
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->sendIdentify(Lokhttp3/WebSocket;I)Z
+    sget-object v0, Lcom/discord/tti_manager/TTIMetrics;->INSTANCE:Lcom/discord/tti_manager/TTIMetrics;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    const-string v1, "Native WebSocket opened"
 
+    .line 4
     .line 5
-    if-nez v0, :cond_0
+    const-wide/16 v2, 0x0
 
     .line 6
     .line 7
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v4, 0x0
 
     .line 8
-    .line 9
-    .line 10
-    move-result-object p2
+    const/4 v5, 0x0
 
+    .line 9
+    const/16 v6, 0xe
+
+    .line 10
     .line 11
-    iget-object v0, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->sockets:Lj$/util/concurrent/ConcurrentHashMap;
+    const/4 v7, 0x0
 
     .line 12
-    .line 13
-    invoke-interface {v0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v7}, Lcom/discord/tti_manager/TTIMetrics;->record$default(Lcom/discord/tti_manager/TTIMetrics;Ljava/lang/String;JLjava/lang/String;ZILjava/lang/Object;)V
 
+    .line 13
     .line 14
     .line 15
+    invoke-direct {p0, p1, p2}, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->sendIdentify(Lokhttp3/WebSocket;I)Z
+
     .line 16
-    :cond_0
-    return-void
     .line 17
     .line 18
+    move-result v0
+
     .line 19
+    if-nez v0, :cond_0
+
     .line 20
     .line 21
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 22
     .line 23
     .line 24
+    move-result-object p2
+
     .line 25
+    iget-object v0, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->sockets:Lj$/util/concurrent/ConcurrentHashMap;
+
     .line 26
     .line 27
+    invoke-interface {v0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 28
     .line 29
     .line 30
+    :cond_0
+    return-void
     .line 31
     .line 32
     .line 33
@@ -533,7 +549,7 @@
 .end method
 
 .method private final sendIdentify(Lokhttp3/WebSocket;I)Z
-    .locals 3
+    .locals 11
 
     .line 1
     const/4 v0, 0x0
@@ -591,35 +607,51 @@
 
     .line 23
     .line 24
-    iget-object p2, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->identifyPayload:Ljava/lang/String;
+    sget-object v3, Lcom/discord/tti_manager/TTIMetrics;->INSTANCE:Lcom/discord/tti_manager/TTIMetrics;
 
     .line 25
     .line 26
-    invoke-interface {p1, p2}, Lokhttp3/WebSocket;->b(Ljava/lang/String;)Z
+    const-string v4, "Native WebSocket sent identify"
 
     .line 27
     .line 28
-    .line 29
-    iput-boolean v2, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->identified:Z
+    const-wide/16 v5, 0x0
 
+    .line 29
     .line 30
+    const/4 v7, 0x0
+
     .line 31
-    :cond_3
-    return v0
+    const/4 v8, 0x0
+
     .line 32
+    const/16 v9, 0xe
+
     .line 33
     .line 34
+    const/4 v10, 0x0
+
     .line 35
+    invoke-static/range {v3 .. v10}, Lcom/discord/tti_manager/TTIMetrics;->record$default(Lcom/discord/tti_manager/TTIMetrics;Ljava/lang/String;JLjava/lang/String;ZILjava/lang/Object;)V
+
     .line 36
     .line 37
     .line 38
+    iget-object p2, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->identifyPayload:Ljava/lang/String;
+
     .line 39
     .line 40
+    invoke-interface {p1, p2}, Lokhttp3/WebSocket;->b(Ljava/lang/String;)Z
+
     .line 41
     .line 42
     .line 43
+    iput-boolean v2, p0, Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;->identified:Z
+
     .line 44
     .line 45
+    :cond_3
+    return v0
     .line 46
     .line 47
     .line 48
