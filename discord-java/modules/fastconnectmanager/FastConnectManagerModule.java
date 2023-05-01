@@ -2,6 +2,7 @@ package com.discord.modules.fastconnectmanager;
 
 import com.discord.cache.CacheModule;
 import com.discord.modules.fastconnectmanager.FastConnectManagerModule;
+import com.discord.tti_manager.TTIMetrics;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -38,6 +39,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void handleWebSocketOpen(WebSocket webSocket, int i10) {
+        TTIMetrics.record$default(TTIMetrics.INSTANCE, "Native WebSocket opened", 0L, null, false, 14, null);
         if (!sendIdentify(webSocket, i10)) {
             this.sockets.put(Integer.valueOf(i10), webSocket);
         }
@@ -53,6 +55,7 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
             z10 = true;
         }
         if (z10) {
+            TTIMetrics.record$default(TTIMetrics.INSTANCE, "Native WebSocket sent identify", 0L, null, false, 14, null);
             webSocket.b(this.identifyPayload);
             this.identified = true;
         }
