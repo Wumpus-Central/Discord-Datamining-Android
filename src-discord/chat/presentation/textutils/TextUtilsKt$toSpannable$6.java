@@ -20,7 +20,7 @@ public final class TextUtilsKt$toSpannable$6 extends s implements Function1<Comm
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

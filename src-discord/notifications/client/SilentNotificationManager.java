@@ -47,54 +47,54 @@ public final class SilentNotificationManager {
     }
 
     /* renamed from: getNumAccumulatedMessagesForChannel-R7gqayM  reason: not valid java name */
-    private final int m512getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
-        return this.sharedPrefs.getInt(m516toMessageCountKeyR7gqayM(j10), 0);
+    private final int m517getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
+        return this.sharedPrefs.getInt(m521toMessageCountKeyR7gqayM(j10), 0);
     }
 
     /* renamed from: lastMessagedReceivedAgoInMins-R7gqayM  reason: not valid java name */
-    private final long m513lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
-        long j11 = this.sharedPrefs.getLong(ChannelId.m539toStringimpl(j10), 0L);
+    private final long m518lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
+        long j11 = this.sharedPrefs.getLong(ChannelId.m544toStringimpl(j10), 0L);
         return TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - j11);
     }
 
     /* renamed from: setLastMessageReceivedForChannel-LJLSWy8  reason: not valid java name */
-    private final void m514setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
+    private final void m519setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         q.f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
         q.f(editor, "editor");
-        editor.putLong(ChannelId.m539toStringimpl(j10), j11);
+        editor.putLong(ChannelId.m544toStringimpl(j10), j11);
         editor.apply();
     }
 
     private final void setMessageReceivedForChannel(NotificationData notificationData) {
-        ChannelId channelId = notificationData.m499getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m504getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m541unboximpl();
-            m515setNumAccumulatedMessagesForChannelLJLSWy8(j10, m512getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
-            m517updateLastMessageReceivedForChannelR7gqayM(j10);
+            long j10 = channelId.m546unboximpl();
+            m520setNumAccumulatedMessagesForChannelLJLSWy8(j10, m517getNumAccumulatedMessagesForChannelR7gqayM(j10) + 1);
+            m522updateLastMessageReceivedForChannelR7gqayM(j10);
         }
     }
 
     /* renamed from: setNumAccumulatedMessagesForChannel-LJLSWy8  reason: not valid java name */
-    private final void m515setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
+    private final void m520setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         q.f(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor editor = sharedPrefs.edit();
         q.f(editor, "editor");
-        editor.putInt(m516toMessageCountKeyR7gqayM(j10), i10);
+        editor.putInt(m521toMessageCountKeyR7gqayM(j10), i10);
         editor.apply();
     }
 
     /* renamed from: toMessageCountKey-R7gqayM  reason: not valid java name */
-    private final String m516toMessageCountKeyR7gqayM(long j10) {
-        String str = ChannelId.m539toStringimpl(j10);
+    private final String m521toMessageCountKeyR7gqayM(long j10) {
+        String str = ChannelId.m544toStringimpl(j10);
         return str + "_num";
     }
 
     /* renamed from: updateLastMessageReceivedForChannel-R7gqayM  reason: not valid java name */
-    private final void m517updateLastMessageReceivedForChannelR7gqayM(long j10) {
-        m514setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
+    private final void m522updateLastMessageReceivedForChannelR7gqayM(long j10) {
+        m519setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
     }
 
     public final void onDisplayNotification(NotificationData notificationData) {
@@ -116,14 +116,14 @@ public final class SilentNotificationManager {
         if (channelType != null && channelType.intValue() == 1) {
             return true;
         }
-        ChannelId channelId = notificationData.m499getChannelIdqMVnFVQ();
+        ChannelId channelId = notificationData.m504getChannelIdqMVnFVQ();
         if (channelId != null) {
-            long j10 = channelId.m541unboximpl();
-            if (m512getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
+            long j10 = channelId.m546unboximpl();
+            if (m517getNumAccumulatedMessagesForChannelR7gqayM(j10) < 3) {
                 return true;
             }
-            if (m513lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
-                m515setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
+            if (m518lastMessagedReceivedAgoInMinsR7gqayM(j10) >= 15) {
+                m520setNumAccumulatedMessagesForChannelLJLSWy8(j10, 0);
                 return true;
             }
         }

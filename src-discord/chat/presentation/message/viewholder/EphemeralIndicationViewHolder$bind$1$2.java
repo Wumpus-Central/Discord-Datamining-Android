@@ -26,7 +26,7 @@ public final class EphemeralIndicationViewHolder$bind$1$2 extends s implements F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -34,6 +34,6 @@ public final class EphemeralIndicationViewHolder$bind$1$2 extends s implements F
         ChatEventHandler chatEventHandler;
         q.g(it, "it");
         chatEventHandler = this.this$0.eventHandler;
-        ChatEventHandler.DefaultImpls.m172onLinkClickedu7_MRrM$default(chatEventHandler, this.$ephemeralAccessory.mo202getMessageId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m173onLinkClickedu7_MRrM$default(chatEventHandler, this.$ephemeralAccessory.mo203getMessageId3Eiw7ao(), it, null, 4, null);
     }
 }

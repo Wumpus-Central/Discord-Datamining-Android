@@ -26,14 +26,14 @@ public final class TapStickerData implements ReactEvent {
     }
 
     /* renamed from: copy-Ayv7vGE$default  reason: not valid java name */
-    public static /* synthetic */ TapStickerData m394copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
+    public static /* synthetic */ TapStickerData m399copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             sticker = tapStickerData.sticker;
         }
         if ((i10 & 2) != 0) {
             str = tapStickerData.messageId;
         }
-        return tapStickerData.m396copyAyv7vGE(sticker, str);
+        return tapStickerData.m401copyAyv7vGE(sticker, str);
     }
 
     public final Sticker component1() {
@@ -41,12 +41,12 @@ public final class TapStickerData implements ReactEvent {
     }
 
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m395component23Eiw7ao() {
+    public final String m400component23Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-Ayv7vGE  reason: not valid java name */
-    public final TapStickerData m396copyAyv7vGE(Sticker sticker, String messageId) {
+    public final TapStickerData m401copyAyv7vGE(Sticker sticker, String messageId) {
         q.g(sticker, "sticker");
         q.g(messageId, "messageId");
         return new TapStickerData(sticker, messageId, null);
@@ -60,11 +60,11 @@ public final class TapStickerData implements ReactEvent {
             return false;
         }
         TapStickerData tapStickerData = (TapStickerData) obj;
-        return q.b(this.sticker, tapStickerData.sticker) && MessageId.m562equalsimpl0(this.messageId, tapStickerData.messageId);
+        return q.b(this.sticker, tapStickerData.sticker) && MessageId.m567equalsimpl0(this.messageId, tapStickerData.messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m397getMessageId3Eiw7ao() {
+    public final String m402getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -73,7 +73,7 @@ public final class TapStickerData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (this.sticker.hashCode() * 31) + MessageId.m563hashCodeimpl(this.messageId);
+        return (this.sticker.hashCode() * 31) + MessageId.m568hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -83,7 +83,7 @@ public final class TapStickerData implements ReactEvent {
 
     public String toString() {
         Sticker sticker = this.sticker;
-        String str = MessageId.m564toStringimpl(this.messageId);
+        String str = MessageId.m569toStringimpl(this.messageId);
         return "TapStickerData(sticker=" + sticker + ", messageId=" + str + ")";
     }
 }

@@ -24,7 +24,7 @@ final class PushNotificationModule$registerEventListener$2 extends s implements 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Map<String, ? extends String> map) {
         invoke2((Map<String, String>) map);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

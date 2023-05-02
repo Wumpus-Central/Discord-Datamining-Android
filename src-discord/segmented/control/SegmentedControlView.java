@@ -188,7 +188,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     private final <T> ReadWriteProperty<Object, T> updateViewOnChange(final T t10, final boolean z10) {
-        kotlin.properties.a aVar = kotlin.properties.a.f22090a;
+        kotlin.properties.a aVar = kotlin.properties.a.f22091a;
         return new c<T>(t10) { // from class: com.discord.segmented.control.SegmentedControlView$updateViewOnChange$$inlined$observable$1
             @Override // kotlin.properties.c
             protected void afterChange(KProperty<?> property, T t11, T t12) {

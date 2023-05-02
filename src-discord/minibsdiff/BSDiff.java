@@ -40,7 +40,7 @@ public final class BSDiff {
     }
 
     static {
-        byte[] bytes = "MBSDIF43".getBytes(d.f28528b);
+        byte[] bytes = "MBSDIF43".getBytes(d.f28529b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         BSDIFF_CONFIG_MAGIC = bytes;
     }
@@ -150,7 +150,7 @@ public final class BSDiff {
         try {
             try {
                 INSTANCE.bspatchStreamingInner(randomAccessFile, inputStream, bufferedInputStream, bufferedInputStream2, bufferedInputStream3, inputStream);
-                Unit unit = Unit.f22034a;
+                Unit unit = Unit.f22035a;
                 th = null;
                 c.a(inputStream, th);
                 c.a(bufferedInputStream3, th);

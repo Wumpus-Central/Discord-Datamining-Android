@@ -43,7 +43,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
 
     @Override // bj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f6038a, a.u(a2.f5917a), ApplicationId$$serializer.INSTANCE, f.f22528c};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f6038a, a.u(a2.f5917a), ApplicationId$$serializer.INSTANCE, f.f22529c};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,7 +62,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
             d10 = b10.F(descriptor2, 1);
             obj = b10.n(descriptor2, 2, a2.f5917a, null);
             obj3 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, null);
-            obj2 = b10.y(descriptor2, 4, f.f22528c, null);
+            obj2 = b10.y(descriptor2, 4, f.f22529c, null);
             i10 = 31;
         } else {
             double d11 = 0.0d;
@@ -89,7 +89,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
                     obj6 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, obj6);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj7 = b10.y(descriptor2, 4, f.f22528c, obj7);
+                    obj7 = b10.y(descriptor2, 4, f.f22529c, obj7);
                     i11 |= 16;
                 } else {
                     throw new n(o10);
@@ -103,7 +103,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
-        return new TapButtonActionComponent(i10, messageId != null ? messageId.m566unboximpl() : null, d10, (String) obj, (ApplicationId) obj3, (int[]) obj2, null, null);
+        return new TapButtonActionComponent(i10, messageId != null ? messageId.m571unboximpl() : null, d10, (String) obj, (ApplicationId) obj3, (int[]) obj2, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

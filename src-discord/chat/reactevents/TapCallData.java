@@ -46,7 +46,7 @@ public final class TapCallData implements ReactEvent {
             n1.b(i10, 3, TapCallData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m541unboximpl();
+        this.channelId = channelId.m546unboximpl();
     }
 
     public /* synthetic */ TapCallData(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -58,36 +58,36 @@ public final class TapCallData implements ReactEvent {
     }
 
     /* renamed from: copy-pfaIj0E$default  reason: not valid java name */
-    public static /* synthetic */ TapCallData m360copypfaIj0E$default(TapCallData tapCallData, String str, long j10, int i10, Object obj) {
+    public static /* synthetic */ TapCallData m361copypfaIj0E$default(TapCallData tapCallData, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapCallData.messageId;
         }
         if ((i10 & 2) != 0) {
             j10 = tapCallData.channelId;
         }
-        return tapCallData.m363copypfaIj0E(str, j10);
+        return tapCallData.m364copypfaIj0E(str, j10);
     }
 
     public static final void write$Self(TapCallData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m558boximpl(self.messageId));
-        output.t(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m532boximpl(self.channelId));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
+        output.t(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m361component13Eiw7ao() {
+    public final String m362component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m362component2o4g7jtM() {
+    public final long m363component2o4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: copy-pfaIj0E  reason: not valid java name */
-    public final TapCallData m363copypfaIj0E(String messageId, long j10) {
+    public final TapCallData m364copypfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
         return new TapCallData(messageId, j10, null);
     }
@@ -100,31 +100,31 @@ public final class TapCallData implements ReactEvent {
             return false;
         }
         TapCallData tapCallData = (TapCallData) obj;
-        return MessageId.m562equalsimpl0(this.messageId, tapCallData.messageId) && ChannelId.m536equalsimpl0(this.channelId, tapCallData.channelId);
+        return MessageId.m567equalsimpl0(this.messageId, tapCallData.messageId) && ChannelId.m541equalsimpl0(this.channelId, tapCallData.channelId);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m364getChannelIdo4g7jtM() {
+    public final long m365getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m365getMessageId3Eiw7ao() {
+    public final String m366getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m563hashCodeimpl(this.messageId) * 31) + ChannelId.m537hashCodeimpl(this.channelId);
+        return (MessageId.m568hashCodeimpl(this.messageId) * 31) + ChannelId.m542hashCodeimpl(this.channelId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("data", NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m564toStringimpl(this.messageId)), x.a("channelId", ChannelId.m539toStringimpl(this.channelId)))));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("data", NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m569toStringimpl(this.messageId)), x.a("channelId", ChannelId.m544toStringimpl(this.channelId)))));
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
-        String str2 = ChannelId.m539toStringimpl(this.channelId);
+        String str = MessageId.m569toStringimpl(this.messageId);
+        String str2 = ChannelId.m544toStringimpl(this.channelId);
         return "TapCallData(messageId=" + str + ", channelId=" + str2 + ")";
     }
 

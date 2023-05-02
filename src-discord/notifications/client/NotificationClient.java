@@ -80,7 +80,7 @@ public final class NotificationClient {
     private final void showNotification(Context context, NotificationData notificationData, Map<String, String> map, boolean z10) {
         Map k10;
         CrashReporting crashReporting = CrashReporting.INSTANCE;
-        k10 = v.k(x.a("type", notificationData.getType()), x.a("channelId", String.valueOf(notificationData.m499getChannelIdqMVnFVQ())), x.a("messageId", String.valueOf(notificationData.m499getChannelIdqMVnFVQ())));
+        k10 = v.k(x.a("type", notificationData.getType()), x.a("channelId", String.valueOf(notificationData.m504getChannelIdqMVnFVQ())), x.a("messageId", String.valueOf(notificationData.m504getChannelIdqMVnFVQ())));
         CrashReporting.addBreadcrumb$default(crashReporting, "Notification received in native code.", k10, null, 4, null);
         if (this.cache.isAuthed(context)) {
             if (q.b(notificationData.getType(), NotificationData.TYPE_CHANNEL_ACK)) {
@@ -205,12 +205,12 @@ public final class NotificationClient {
         NotificationData notificationData = DirectReplyMessage.Companion.toNotificationData(data);
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("type", notificationData.getType());
-        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m499getChannelIdqMVnFVQ()));
-        String str2 = notificationData.m501getMessageIdN_6c4I0();
+        pairArr[1] = x.a("channel_id", String.valueOf(notificationData.m504getChannelIdqMVnFVQ()));
+        String str2 = notificationData.m506getMessageIdN_6c4I0();
         if (str2 == null) {
             str = "null";
         } else {
-            str = MessageId.m564toStringimpl(str2);
+            str = MessageId.m569toStringimpl(str2);
         }
         pairArr[2] = x.a("message_id", str);
         k10 = v.k(pairArr);
@@ -220,7 +220,7 @@ public final class NotificationClient {
     public final void onNotificationReceived(Context context, Map<String, String> data) {
         q.g(context, "context");
         q.g(data, "data");
-        showNotification(context, (NotificationData) a.f15088b.d(NotificationData.Companion.serializer(), data), data, true);
+        showNotification(context, (NotificationData) a.f15089b.d(NotificationData.Companion.serializer(), data), data, true);
     }
 
     public final void setActive(boolean z10) {

@@ -26,7 +26,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(GuildInviteViewHolder this$0, GuildInviteMessageAccessory inviteAccessory, View view) {
         q.g(this$0, "this$0");
         q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo155onTapInviteEmbedAFFcxXc(inviteAccessory.mo202getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
+        this$0.eventHandler.mo156onTapInviteEmbedAFFcxXc(inviteAccessory.mo203getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x002e, code lost:

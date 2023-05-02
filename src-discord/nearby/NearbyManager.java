@@ -56,7 +56,7 @@ public final class NearbyManager extends b {
         this.onFoundUser = onFoundUser;
         this.onLostUser = onLostUser;
         this.onError = onError;
-        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f32446s).a();
+        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f32447s).a();
         q.f(a10, "Builder()\n        .setSt…DEFAULT)\n        .build()");
         this.subscribeOptions = a10;
     }
@@ -94,7 +94,7 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onFoundUser;
         byte[] p10 = message.p();
         q.f(p10, "message.content");
-        function1.invoke(new String(p10, ri.d.f28528b));
+        function1.invoke(new String(p10, ri.d.f28529b));
     }
 
     @Override // ya.b
@@ -104,12 +104,12 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onLostUser;
         byte[] p10 = message.p();
         q.f(p10, "message.content");
-        function1.invoke(new String(p10, ri.d.f28528b));
+        function1.invoke(new String(p10, ri.d.f28529b));
     }
 
     public final void setOutboundMessage(String message) {
         q.g(message, "message");
-        byte[] bytes = message.getBytes(ri.d.f28528b);
+        byte[] bytes = message.getBytes(ri.d.f28529b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         this.outboundMessage = new Message(bytes);
     }

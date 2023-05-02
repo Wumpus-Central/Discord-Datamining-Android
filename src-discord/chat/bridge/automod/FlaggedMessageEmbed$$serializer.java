@@ -216,7 +216,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj10;
-        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m566unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
+        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m571unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

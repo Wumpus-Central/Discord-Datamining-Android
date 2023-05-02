@@ -52,7 +52,7 @@ public final class SurveyIndicationView extends ConstraintLayout {
     }
 
     /* renamed from: setSurveyIndication-u7_MRrM  reason: not valid java name */
-    public final void m304setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m305setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         q.g(messageId, "messageId");
         q.g(surveyIndication, "surveyIndication");
         q.g(onLinkClicked, "onLinkClicked");

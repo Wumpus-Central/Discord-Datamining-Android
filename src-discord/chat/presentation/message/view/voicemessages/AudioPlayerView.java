@@ -352,7 +352,7 @@ public final class AudioPlayerView extends FrameLayout {
             long longValue = currentPosition.longValue();
             Listener listener = this.listener;
             if (listener != null) {
-                a.C0415a aVar = a.f28973l;
+                a.C0415a aVar = a.f28974l;
                 listener.voiceMessagePlaybackEnded((float) a.E(c.t(longValue, d.MILLISECONDS), d.SECONDS));
             }
         }
@@ -373,7 +373,7 @@ public final class AudioPlayerView extends FrameLayout {
             long longValue = currentPosition.longValue();
             Listener listener = this.listener;
             if (listener != null) {
-                a.C0415a aVar = a.f28973l;
+                a.C0415a aVar = a.f28974l;
                 listener.voiceMessagePlaybackStarted((float) a.E(c.t(longValue, d.MILLISECONDS), d.SECONDS));
             }
         }
@@ -452,7 +452,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     private final int toSeconds(long j10) {
-        a.C0415a aVar = a.f28973l;
+        a.C0415a aVar = a.f28974l;
         return (int) Math.ceil(a.E(c.t(j10, d.MILLISECONDS), d.SECONDS));
     }
 
@@ -462,7 +462,7 @@ public final class AudioPlayerView extends FrameLayout {
         Job job = this.durationJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);
-            Unit unit = Unit.f22034a;
+            Unit unit = Unit.f22035a;
         }
         this.durationJob = null;
         if (z10) {
@@ -512,7 +512,7 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     /* renamed from: setSourceUrl-ntcYbpo  reason: not valid java name */
-    public final void m310setSourceUrlntcYbpo(String messageId, String str) {
+    public final void m311setSourceUrlntcYbpo(String messageId, String str) {
         q.g(messageId, "messageId");
         this.binding.wave.setEnabled(false);
         if (!q.b(str, this.state.getSourceUrl())) {
@@ -547,7 +547,7 @@ public final class AudioPlayerView extends FrameLayout {
         Context context = getContext();
         q.f(context, "context");
         paint.setColor(ColorUtilsKt.getColorCompat(context, 17170445));
-        Unit unit = Unit.f22034a;
+        Unit unit = Unit.f22035a;
         attachmentUploadOverlayView.configureProgressView(valueOf, shapeDrawable, Integer.valueOf(SizeUtilsKt.getDpToPx(16)), Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()), Integer.valueOf(SizeUtilsKt.getDpToPx(29)), Integer.valueOf(ThemeManagerKt.getTheme().getBackgroundModifierAccent()));
         this.binding.uploadOverlay.configureCompleteView(Integer.valueOf(SizeUtilsKt.getDpToPx(32)), Integer.valueOf(SizeUtilsKt.getDpToPx(19)));
         if (z10 && !this.uploadFinished) {

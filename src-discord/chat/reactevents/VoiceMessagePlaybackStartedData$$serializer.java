@@ -95,7 +95,7 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m566unboximpl();
+            str = messageId.m571unboximpl();
         }
         return new VoiceMessagePlaybackStartedData(i10, str, f11, f10, (UserId) obj, null, null);
     }

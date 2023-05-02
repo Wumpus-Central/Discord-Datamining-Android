@@ -46,7 +46,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
         if (31 != (i10 & 31)) {
             n1.b(i10, 31, CommandMentionContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.channelId = channelId.m541unboximpl();
+        this.channelId = channelId.m546unboximpl();
         this.commandId = str;
         this.commandName = str2;
         this.commandKey = str3;
@@ -87,7 +87,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         MentionContentNode.write$Self(self, output, serialDesc);
-        output.t(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m532boximpl(self.channelId));
+        output.t(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
         output.z(serialDesc, 1, self.commandId);
         output.z(serialDesc, 2, self.commandName);
         output.z(serialDesc, 3, self.commandKey);
@@ -132,7 +132,7 @@ public final class CommandMentionContentNode extends MentionContentNode {
             return false;
         }
         CommandMentionContentNode commandMentionContentNode = (CommandMentionContentNode) obj;
-        return ChannelId.m536equalsimpl0(this.channelId, commandMentionContentNode.channelId) && q.b(this.commandId, commandMentionContentNode.commandId) && q.b(this.commandName, commandMentionContentNode.commandName) && q.b(this.commandKey, commandMentionContentNode.commandKey) && q.b(getContent(), commandMentionContentNode.getContent());
+        return ChannelId.m541equalsimpl0(this.channelId, commandMentionContentNode.channelId) && q.b(this.commandId, commandMentionContentNode.commandId) && q.b(this.commandName, commandMentionContentNode.commandName) && q.b(this.commandKey, commandMentionContentNode.commandKey) && q.b(getContent(), commandMentionContentNode.getContent());
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
@@ -158,11 +158,11 @@ public final class CommandMentionContentNode extends MentionContentNode {
     }
 
     public int hashCode() {
-        return (((((((ChannelId.m537hashCodeimpl(this.channelId) * 31) + this.commandId.hashCode()) * 31) + this.commandName.hashCode()) * 31) + this.commandKey.hashCode()) * 31) + getContent().hashCode();
+        return (((((((ChannelId.m542hashCodeimpl(this.channelId) * 31) + this.commandId.hashCode()) * 31) + this.commandName.hashCode()) * 31) + this.commandKey.hashCode()) * 31) + getContent().hashCode();
     }
 
     public String toString() {
-        String str = ChannelId.m539toStringimpl(this.channelId);
+        String str = ChannelId.m544toStringimpl(this.channelId);
         String str2 = this.commandId;
         String str3 = this.commandName;
         String str4 = this.commandKey;

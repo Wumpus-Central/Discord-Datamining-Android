@@ -201,7 +201,7 @@ public final class Message extends MessageBase {
         } else {
             this.nonce = str2;
         }
-        this.channelId = channelId.m541unboximpl();
+        this.channelId = channelId.m546unboximpl();
         if ((i10 & 16) == 0) {
             this.guildId = null;
         } else {
@@ -525,12 +525,12 @@ public final class Message extends MessageBase {
         boolean z10 = false;
         output.t(serialDesc, 0, MessageType.Serializer.INSTANCE, self.type);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.t(serialDesc, 1, messageId$$serializer, MessageId.m558boximpl(self.f7194id));
+        output.t(serialDesc, 1, messageId$$serializer, MessageId.m563boximpl(self.f7194id));
         if (output.A(serialDesc, 2) || self.nonce != null) {
             String str = self.nonce;
-            output.p(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m558boximpl(str) : null);
+            output.p(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m563boximpl(str) : null);
         }
-        output.t(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m532boximpl(self.channelId));
+        output.t(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
         if (output.A(serialDesc, 4) || self.guildId != null) {
             output.p(serialDesc, 4, GuildId$$serializer.INSTANCE, self.guildId);
         }
@@ -1305,16 +1305,16 @@ public final class Message extends MessageBase {
     }
 
     public int hashCode() {
-        int hashCode = ((this.type.hashCode() * 31) + MessageId.m563hashCodeimpl(this.f7194id)) * 31;
+        int hashCode = ((this.type.hashCode() * 31) + MessageId.m568hashCodeimpl(this.f7194id)) * 31;
         String str = this.nonce;
         int i10 = 0;
-        int i11 = (((hashCode + (str == null ? 0 : MessageId.m563hashCodeimpl(str))) * 31) + ChannelId.m537hashCodeimpl(this.channelId)) * 31;
+        int i11 = (((hashCode + (str == null ? 0 : MessageId.m568hashCodeimpl(str))) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
-        int i12 = (i11 + (guildId == null ? 0 : GuildId.m550hashCodeimpl(guildId.m554unboximpl()))) * 31;
+        int i12 = (i11 + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()))) * 31;
         MessageState messageState = this.state;
         int hashCode2 = (i12 + (messageState == null ? 0 : messageState.hashCode())) * 31;
         UserId userId = this.authorId;
-        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m601hashCodeimpl(userId.m605unboximpl()))) * 31) + co.discord.media_engine.a.a(this.flags)) * 31;
+        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m606hashCodeimpl(userId.m610unboximpl()))) * 31) + co.discord.media_engine.a.a(this.flags)) * 31;
         String str2 = this.edited;
         int hashCode3 = (i13 + (str2 == null ? 0 : str2.hashCode())) * 31;
         Float f10 = this._constrainedWidth;
@@ -1478,10 +1478,10 @@ public final class Message extends MessageBase {
 
     public String toString() {
         MessageType messageType = this.type;
-        String str = MessageId.m564toStringimpl(this.f7194id);
+        String str = MessageId.m569toStringimpl(this.f7194id);
         String str2 = this.nonce;
-        String str3 = str2 == null ? "null" : MessageId.m564toStringimpl(str2);
-        String str4 = ChannelId.m539toStringimpl(this.channelId);
+        String str3 = str2 == null ? "null" : MessageId.m569toStringimpl(str2);
+        String str4 = ChannelId.m544toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         MessageState messageState = this.state;
         UserId userId = this.authorId;

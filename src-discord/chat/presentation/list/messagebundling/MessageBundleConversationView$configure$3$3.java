@@ -27,12 +27,12 @@ public final class MessageBundleConversationView$configure$3$3 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(ReactionView.Reaction it) {
         q.g(it, "it");
-        ChatEventHandler.DefaultImpls.m174onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m16getId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(this.$eventHandler, this.$message.m16getId3Eiw7ao(), it, null, 4, null);
     }
 }

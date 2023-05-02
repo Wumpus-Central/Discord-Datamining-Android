@@ -26,13 +26,13 @@ public abstract class MessageAccessory implements ItemDiffableType {
     }
 
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     @Override // com.discord.recycler_view.utils.ItemDiffableType
     public Long getItemId() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         String str2 = this.accessoryDescription;
         return Long.valueOf(IdUtilsKt.convertToId(str + " - " + str2));
     }

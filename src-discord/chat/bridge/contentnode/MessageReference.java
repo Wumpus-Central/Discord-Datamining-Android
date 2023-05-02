@@ -41,7 +41,7 @@ public final class MessageReference {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, MessageReference$$serializer.INSTANCE.getDescriptor());
         }
-        this.channelId = channelId.m541unboximpl();
+        this.channelId = channelId.m546unboximpl();
         if ((i10 & 2) == 0) {
             this.guildId = null;
         } else {
@@ -81,7 +81,7 @@ public final class MessageReference {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.t(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m532boximpl(self.channelId));
+        output.t(serialDesc, 0, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
         if (output.A(serialDesc, 1) || self.guildId != null) {
             z10 = true;
         }
@@ -113,7 +113,7 @@ public final class MessageReference {
             return false;
         }
         MessageReference messageReference = (MessageReference) obj;
-        return ChannelId.m536equalsimpl0(this.channelId, messageReference.channelId) && q.b(this.guildId, messageReference.guildId);
+        return ChannelId.m541equalsimpl0(this.channelId, messageReference.channelId) && q.b(this.guildId, messageReference.guildId);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
@@ -127,13 +127,13 @@ public final class MessageReference {
     }
 
     public int hashCode() {
-        int i10 = ChannelId.m537hashCodeimpl(this.channelId) * 31;
+        int i10 = ChannelId.m542hashCodeimpl(this.channelId) * 31;
         GuildId guildId = this.guildId;
-        return i10 + (guildId == null ? 0 : GuildId.m550hashCodeimpl(guildId.m554unboximpl()));
+        return i10 + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()));
     }
 
     public String toString() {
-        String str = ChannelId.m539toStringimpl(this.channelId);
+        String str = ChannelId.m544toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         return "MessageReference(channelId=" + str + ", guildId=" + guildId + ")";
     }

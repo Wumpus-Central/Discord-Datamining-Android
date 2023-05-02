@@ -35,7 +35,7 @@ public final class ChannelListSerializer implements KSerializer<List<? extends C
         ArrayList arrayList = new ArrayList();
         for (String str : z02) {
             o10 = t.o(str);
-            ChannelId channelId = o10 != null ? ChannelId.m532boximpl(ChannelId.m533constructorimpl(o10.longValue())) : null;
+            ChannelId channelId = o10 != null ? ChannelId.m537boximpl(ChannelId.m538constructorimpl(o10.longValue())) : null;
             if (channelId != null) {
                 arrayList.add(channelId);
             }

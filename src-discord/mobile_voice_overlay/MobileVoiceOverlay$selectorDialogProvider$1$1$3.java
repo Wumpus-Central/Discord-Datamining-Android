@@ -26,12 +26,12 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
-        m444invokeR7gqayM(channelId.m541unboximpl());
-        return Unit.f22034a;
+        m449invokeR7gqayM(channelId.m546unboximpl());
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke-R7gqayM  reason: not valid java name */
-    public final void m444invokeR7gqayM(long j10) {
+    public final void m449invokeR7gqayM(long j10) {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.$this_apply.getContext();
         q.f(context, "context");

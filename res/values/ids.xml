@@ -562,6 +562,12 @@
     <item type="id" name="selection_type" />
     <item type="id" name="separator_dot" />
     <item type="id" name="share_button" />
+    <item type="id" name="share_prompt_close_button" />
+    <item type="id" name="share_prompt_container" />
+    <item type="id" name="share_prompt_copy_link_button" />
+    <item type="id" name="share_prompt_icon" />
+    <item type="id" name="share_prompt_subtitle" />
+    <item type="id" name="share_prompt_title" />
     <item type="id" name="shortcut" />
     <item type="id" name="snackbar_action" />
     <item type="id" name="snackbar_text" />

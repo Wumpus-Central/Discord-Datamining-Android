@@ -36,13 +36,13 @@ public final class MessageId implements Parcelable {
     public static final class Creator implements Parcelable.Creator<MessageId> {
         @Override // android.os.Parcelable.Creator
         public /* bridge */ /* synthetic */ MessageId createFromParcel(Parcel parcel) {
-            return MessageId.m558boximpl(m569createFromParcelMpY7Jxs(parcel));
+            return MessageId.m563boximpl(m574createFromParcelMpY7Jxs(parcel));
         }
 
         /* renamed from: createFromParcel-MpY7Jxs  reason: not valid java name */
-        public final String m569createFromParcelMpY7Jxs(Parcel parcel) {
+        public final String m574createFromParcelMpY7Jxs(Parcel parcel) {
             q.g(parcel, "parcel");
-            return MessageId.m559constructorimpl(parcel.readString());
+            return MessageId.m564constructorimpl(parcel.readString());
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -57,54 +57,54 @@ public final class MessageId implements Parcelable {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ MessageId m558boximpl(String str) {
+    public static final /* synthetic */ MessageId m563boximpl(String str) {
         return new MessageId(str);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m559constructorimpl(String value) {
+    public static String m564constructorimpl(String value) {
         q.g(value, "value");
         return value;
     }
 
     /* renamed from: describeContents-impl  reason: not valid java name */
-    public static int m560describeContentsimpl(String str) {
+    public static int m565describeContentsimpl(String str) {
         return 0;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m561equalsimpl(String str, Object obj) {
-        return (obj instanceof MessageId) && q.b(str, ((MessageId) obj).m566unboximpl());
+    public static boolean m566equalsimpl(String str, Object obj) {
+        return (obj instanceof MessageId) && q.b(str, ((MessageId) obj).m571unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m562equalsimpl0(String str, String str2) {
+    public static final boolean m567equalsimpl0(String str, String str2) {
         return q.b(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m563hashCodeimpl(String str) {
+    public static int m568hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m564toStringimpl(String str) {
+    public static String m569toStringimpl(String str) {
         return str;
     }
 
     /* renamed from: writeToParcel-impl  reason: not valid java name */
-    public static void m565writeToParcelimpl(String str, Parcel out, int i10) {
+    public static void m570writeToParcelimpl(String str, Parcel out, int i10) {
         q.g(out, "out");
         out.writeString(str);
     }
 
     @Override // android.os.Parcelable
     public int describeContents() {
-        return m560describeContentsimpl(this.value);
+        return m565describeContentsimpl(this.value);
     }
 
     public boolean equals(Object obj) {
-        return m561equalsimpl(this.value, obj);
+        return m566equalsimpl(this.value, obj);
     }
 
     public final String getValue() {
@@ -112,21 +112,21 @@ public final class MessageId implements Parcelable {
     }
 
     public int hashCode() {
-        return m563hashCodeimpl(this.value);
+        return m568hashCodeimpl(this.value);
     }
 
     public String toString() {
-        return m564toStringimpl(this.value);
+        return m569toStringimpl(this.value);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m566unboximpl() {
+    public final /* synthetic */ String m571unboximpl() {
         return this.value;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
-        m565writeToParcelimpl(this.value, out, i10);
+        m570writeToParcelimpl(this.value, out, i10);
     }
 }

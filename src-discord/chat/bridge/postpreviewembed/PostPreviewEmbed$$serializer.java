@@ -189,7 +189,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
-        return new PostPreviewEmbed(i10, (ChannelId) obj, (ChannelId) obj9, messageId != null ? messageId.m566unboximpl() : null, (GuildId) obj2, str, str2, (StructurableText) obj5, (String) obj6, (String) obj3, (String) obj7, (String) obj8, null, null);
+        return new PostPreviewEmbed(i10, (ChannelId) obj, (ChannelId) obj9, messageId != null ? messageId.m571unboximpl() : null, (GuildId) obj2, str, str2, (StructurableText) obj5, (String) obj6, (String) obj3, (String) obj7, (String) obj8, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

@@ -46,7 +46,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
         /* JADX INFO: Access modifiers changed from: private */
         public final String toNiceString(float f10) {
-            k0 k0Var = k0.f22083a;
+            k0 k0Var = k0.f22084a;
             String format = String.format(Locale.getDefault(), "%.3f", Arrays.copyOf(new Object[]{Float.valueOf(f10)}, 1));
             q.f(format, "format(locale, format, *args)");
             return format;
@@ -87,7 +87,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                 this.frameRotation = videoFrame.getRotation();
             }
-            Unit unit = Unit.f22034a;
+            Unit unit = Unit.f22035a;
         }
     }
 
@@ -100,7 +100,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f22034a;
+                Unit unit = Unit.f22035a;
             }
             init();
             setErrorCallback(this);

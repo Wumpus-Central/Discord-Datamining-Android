@@ -31,6 +31,6 @@ final class OverlayMenuBubbleDialog$setData$7 extends s implements Function0<Uni
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.this$0.getContext();
         q.f(context, "context");
-        companion.startHeadlessTask(context, "Disconnect", d.a(x.a("channelId", String.valueOf(this.$data.m449getChannelIdo4g7jtM()))));
+        companion.startHeadlessTask(context, "Disconnect", d.a(x.a("channelId", String.valueOf(this.$data.m454getChannelIdo4g7jtM()))));
     }
 }

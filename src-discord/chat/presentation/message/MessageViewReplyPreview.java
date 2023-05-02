@@ -101,7 +101,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     /* renamed from: configureExecutedCommand-LdU2QRA */
-    public final void m198configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m199configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
         q.g(messageId, "messageId");
         q.g(executedCommand, "executedCommand");
         q.g(eventHandler, "eventHandler");
@@ -122,7 +122,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         textView.setVisibility(8);
         SimpleDraweeView simpleDraweeView2 = this.binding.replyAuthorAvatar;
         q.f(simpleDraweeView2, "binding.replyAuthorAvatar");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView2, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.s
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView2, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.t
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MessageViewReplyPreview.configureExecutedCommand_LdU2QRA$lambda$7(ChatEventHandler.this, messageId, executedCommand, view);
@@ -145,7 +145,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView messageContentView3 = this.binding.replyText;
         q.f(messageContentView3, "binding.replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f22034a;
+        Unit unit = Unit.f22035a;
         messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
         MessageContentView messageContentView4 = this.binding.replyText;
         q.f(messageContentView4, "binding.replyText");
@@ -156,7 +156,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     public final void configureReply(ReferencedMessage reply, boolean z10, final Function0<Unit> onClick) {
         q.g(reply, "reply");
         q.g(onClick, "onClick");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.r
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.s
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MessageViewReplyPreview.configureReply$lambda$4(Function0.this, view);
@@ -235,7 +235,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.f(messageContentView4, "binding.replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f22034a;
+                Unit unit = Unit.f22035a;
                 messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
             } else {
                 this.binding.replyText.setText((CharSequence) null);

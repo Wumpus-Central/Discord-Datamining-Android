@@ -179,13 +179,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.f(context, "context");
             configureAuthor$lambda$28.setImageURI(MessageKt.avatarUrl(message, context));
             q.f(configureAuthor$lambda$28, "configureAuthor$lambda$28");
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.m
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.n
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     MessageView.configureAuthor$lambda$28$lambda$26(Message.this, chatEventHandler, view2);
                 }
             }, 1, null);
-            NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.n
+            NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.o
                 @Override // android.view.View.OnLongClickListener
                 public final boolean onLongClick(View view2) {
                     boolean configureAuthor$lambda$28$lambda$27;
@@ -235,7 +235,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m182configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m532boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m183configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
                 q.f(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
@@ -288,7 +288,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo150onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m605unboximpl());
+            eventHandler.mo150onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
         }
     }
 
@@ -298,18 +298,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo142onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m605unboximpl());
+        eventHandler.mo142onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
         return true;
     }
 
     private final void configureAuthorClickListeners(View view, final Message message, final ChatEventHandler chatEventHandler) {
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(view, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.o
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(view, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.p
             @Override // android.view.View.OnClickListener
             public final void onClick(View view2) {
                 MessageView.configureAuthorClickListeners$lambda$4(Message.this, chatEventHandler, view2);
             }
         }, 1, null);
-        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(view, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.p
+        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(view, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.q
             @Override // android.view.View.OnLongClickListener
             public final boolean onLongClick(View view2) {
                 boolean configureAuthorClickListeners$lambda$5;
@@ -323,7 +323,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo167onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m605unboximpl());
+            eventHandler.mo168onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
         }
     }
 
@@ -333,7 +333,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo144onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m605unboximpl());
+        eventHandler.mo144onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
         return true;
     }
 
@@ -424,7 +424,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
         SimpleDraweeView simpleDraweeView4 = this.binding.suppressNotificationsIcon;
         q.f(simpleDraweeView4, "binding.suppressNotificationsIcon");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.l
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.m
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MessageView.configureSuppressNotifications$lambda$29(ChatEventHandler.this, view);
@@ -454,7 +454,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
 
     private static final View.OnLongClickListener generateMessageAccessories$getLongClickListener(final Function4<? super MessageId, ? super ChannelId, ? super Integer, ? super MediaType, Unit> function4, final Message message, final int i10, final MediaType mediaType) {
         if (function4 != null) {
-            return new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.q
+            return new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.r
                 @Override // android.view.View.OnLongClickListener
                 public final boolean onLongClick(View view) {
                     boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6;
@@ -469,7 +469,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
         q.g(message, "$message");
         q.g(mediaType, "$mediaType");
-        function4.invoke(MessageId.m558boximpl(message.m16getId3Eiw7ao()), ChannelId.m532boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        function4.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -522,13 +522,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
         q.g(onMessageTapped, "$onMessageTapped");
         q.g(message, "$message");
-        onMessageTapped.invoke(MessageId.m558boximpl(message.m16getId3Eiw7ao()), ChannelId.m532boximpl(message.m14getChannelIdo4g7jtM()));
+        onMessageTapped.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
         q.g(it, "$it");
         q.g(message, "$message");
-        it.invoke(MessageId.m558boximpl(message.m16getId3Eiw7ao()), ChannelId.m532boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+        it.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -605,13 +605,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.f(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m198configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m199configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
         final Function2<MessageId, ChannelId, Unit> onMessageTapped = eventHandler.getOnMessageTapped();
         View.OnLongClickListener onLongClickListener = null;
-        View.OnClickListener jVar = onMessageTapped != null ? new View.OnClickListener() { // from class: com.discord.chat.presentation.message.j
+        View.OnClickListener kVar = onMessageTapped != null ? new View.OnClickListener() { // from class: com.discord.chat.presentation.message.k
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MessageView.setMessage$lambda$1$lambda$0(Function2.this, message, view);
@@ -619,7 +619,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         } : null;
         final Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onLongClickListener = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.k
+            onLongClickListener = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.l
                 @Override // android.view.View.OnLongClickListener
                 public final boolean onLongClick(View view) {
                     boolean message$lambda$3$lambda$2;
@@ -628,14 +628,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 }
             };
         }
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, jVar);
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, kVar);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
-        this.binding.accessoriesView.m197setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
+        this.binding.accessoriesView.m198setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
-        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, jVar, onLongClickListener));
+        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, kVar, onLongClickListener));
     }
 
     @Override // com.discord.chat.presentation.list.SwipeReplyInitiator

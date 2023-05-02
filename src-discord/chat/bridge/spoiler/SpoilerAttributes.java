@@ -33,7 +33,7 @@ public final class SpoilerAttributes {
             if (spoilerOrNull == null) {
                 return null;
             }
-            String str3 = MessageId.m564toStringimpl(str);
+            String str3 = MessageId.m569toStringimpl(str);
             return new SpoilerAttributes(SpoilerIdentifier.m123constructorimpl("spoiler:messageId" + str3 + ":" + str2), spoilerOrNull, null);
         }
 

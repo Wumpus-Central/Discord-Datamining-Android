@@ -122,7 +122,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m566unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
+        return new CommandOnClick(i10, (String) obj6, (UserId) obj, messageId != null ? messageId.m571unboximpl() : null, (UserId) obj4, (MessageType) obj3, (ChannelId) obj5, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

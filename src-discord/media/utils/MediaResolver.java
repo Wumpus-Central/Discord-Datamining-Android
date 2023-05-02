@@ -63,7 +63,7 @@ public final class MediaResolver {
         Object d10;
         Object g10 = j.g(y0.b(), new MediaResolver$checkFreeSpace$2(this, null), continuation);
         d10 = d.d();
-        return g10 == d10 ? g10 : Unit.f22034a;
+        return g10 == d10 ? g10 : Unit.f22035a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -163,7 +163,7 @@ public final class MediaResolver {
             r5 = r3
         L_0x0068:
             if (r14 == 0) goto L_0x009e
-            lf.a r1 = lf.a.f22803a
+            lf.a r1 = lf.a.f22804a
             android.content.Context r2 = r10.context
             r4 = 0
             com.discord.media.utils.MediaResolver$handleImage$compressed$1 r13 = new com.discord.media.utils.MediaResolver$handleImage$compressed$1

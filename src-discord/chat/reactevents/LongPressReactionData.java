@@ -31,7 +31,7 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
-    public static /* synthetic */ LongPressReactionData m336copyEqy5D80$default(LongPressReactionData longPressReactionData, String str, long j10, ReactionView.Reaction reaction, int i10, Object obj) {
+    public static /* synthetic */ LongPressReactionData m337copyEqy5D80$default(LongPressReactionData longPressReactionData, String str, long j10, ReactionView.Reaction reaction, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = longPressReactionData.messageId;
         }
@@ -41,16 +41,16 @@ public final class LongPressReactionData implements ReactEvent {
         if ((i10 & 4) != 0) {
             reaction = longPressReactionData.reaction;
         }
-        return longPressReactionData.m339copyEqy5D80(str, j10, reaction);
+        return longPressReactionData.m340copyEqy5D80(str, j10, reaction);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m337component13Eiw7ao() {
+    public final String m338component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m338component2o4g7jtM() {
+    public final long m339component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -59,7 +59,7 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-Eqy5D80  reason: not valid java name */
-    public final LongPressReactionData m339copyEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
+    public final LongPressReactionData m340copyEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
         q.g(messageId, "messageId");
         return new LongPressReactionData(messageId, j10, reaction, null);
     }
@@ -72,16 +72,16 @@ public final class LongPressReactionData implements ReactEvent {
             return false;
         }
         LongPressReactionData longPressReactionData = (LongPressReactionData) obj;
-        return MessageId.m562equalsimpl0(this.messageId, longPressReactionData.messageId) && ChannelId.m536equalsimpl0(this.channelId, longPressReactionData.channelId) && q.b(this.reaction, longPressReactionData.reaction);
+        return MessageId.m567equalsimpl0(this.messageId, longPressReactionData.messageId) && ChannelId.m541equalsimpl0(this.channelId, longPressReactionData.channelId) && q.b(this.reaction, longPressReactionData.reaction);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m340getChannelIdo4g7jtM() {
+    public final long m341getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m341getMessageId3Eiw7ao() {
+    public final String m342getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -90,7 +90,7 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m563hashCodeimpl(this.messageId) * 31) + ChannelId.m537hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m568hashCodeimpl(this.messageId) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
         ReactionView.Reaction reaction = this.reaction;
         return i10 + (reaction == null ? 0 : reaction.hashCode());
     }
@@ -107,7 +107,7 @@ public final class LongPressReactionData implements ReactEvent {
         }
         Pair[] pairArr = new Pair[4];
         pairArr[0] = x.a("messageId", this.messageId);
-        pairArr[1] = x.a("channelId", ChannelId.m539toStringimpl(this.channelId));
+        pairArr[1] = x.a("channelId", ChannelId.m544toStringimpl(this.channelId));
         pairArr[2] = x.a("reaction", writableNativeMap);
         ReactionView.Reaction reaction2 = this.reaction;
         if (reaction2 != null) {
@@ -118,8 +118,8 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
-        String str2 = ChannelId.m539toStringimpl(this.channelId);
+        String str = MessageId.m569toStringimpl(this.messageId);
+        String str2 = ChannelId.m544toStringimpl(this.channelId);
         ReactionView.Reaction reaction = this.reaction;
         return "LongPressReactionData(messageId=" + str + ", channelId=" + str2 + ", reaction=" + reaction + ")";
     }

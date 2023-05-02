@@ -95,7 +95,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
         if (messageId != null) {
-            str = messageId.m566unboximpl();
+            str = messageId.m571unboximpl();
         }
         return new HandleDeleteMessage(i10, str, (ChannelId) obj, (String) obj2, (HandleDeleteMessageAuthor) obj3, null, null);
     }

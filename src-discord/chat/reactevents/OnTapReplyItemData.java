@@ -52,27 +52,27 @@ public final class OnTapReplyItemData implements ReactEvent {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ OnTapReplyItemData m346copy1xi1bu0$default(OnTapReplyItemData onTapReplyItemData, String str, int i10, Object obj) {
+    public static /* synthetic */ OnTapReplyItemData m347copy1xi1bu0$default(OnTapReplyItemData onTapReplyItemData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = onTapReplyItemData.messageId;
         }
-        return onTapReplyItemData.m348copy1xi1bu0(str);
+        return onTapReplyItemData.m349copy1xi1bu0(str);
     }
 
     public static final void write$Self(OnTapReplyItemData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m558boximpl(self.messageId));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m347component13Eiw7ao() {
+    public final String m348component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final OnTapReplyItemData m348copy1xi1bu0(String messageId) {
+    public final OnTapReplyItemData m349copy1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         return new OnTapReplyItemData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class OnTapReplyItemData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OnTapReplyItemData) && MessageId.m562equalsimpl0(this.messageId, ((OnTapReplyItemData) obj).messageId);
+        return (obj instanceof OnTapReplyItemData) && MessageId.m567equalsimpl0(this.messageId, ((OnTapReplyItemData) obj).messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m349getMessageId3Eiw7ao() {
+    public final String m350getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m563hashCodeimpl(this.messageId);
+        return MessageId.m568hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -99,7 +99,7 @@ public final class OnTapReplyItemData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
+        String str = MessageId.m569toStringimpl(this.messageId);
         return "OnTapReplyItemData(messageId=" + str + ")";
     }
 

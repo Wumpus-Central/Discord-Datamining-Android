@@ -107,7 +107,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10) {
-        super(MessageId.m564toStringimpl(message.m16getId3Eiw7ao()), null);
+        super(MessageId.m569toStringimpl(message.m16getId3Eiw7ao()), null);
         q.g(message, "message");
         q.g(messageContext, "messageContext");
         this.message = message;

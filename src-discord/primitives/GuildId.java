@@ -38,13 +38,13 @@ public final class GuildId implements SnowflakePrimitive {
     public static final class Creator implements Parcelable.Creator<GuildId> {
         @Override // android.os.Parcelable.Creator
         public /* bridge */ /* synthetic */ GuildId createFromParcel(Parcel parcel) {
-            return GuildId.m545boximpl(m557createFromParcelhCFrBxw(parcel));
+            return GuildId.m550boximpl(m562createFromParcelhCFrBxw(parcel));
         }
 
         /* renamed from: createFromParcel-hCFrBxw  reason: not valid java name */
-        public final long m557createFromParcelhCFrBxw(Parcel parcel) {
+        public final long m562createFromParcelhCFrBxw(Parcel parcel) {
             q.g(parcel, "parcel");
-            return GuildId.m546constructorimpl(parcel.readLong());
+            return GuildId.m551constructorimpl(parcel.readLong());
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -59,58 +59,58 @@ public final class GuildId implements SnowflakePrimitive {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ GuildId m545boximpl(long j10) {
+    public static final /* synthetic */ GuildId m550boximpl(long j10) {
         return new GuildId(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m546constructorimpl(long j10) {
+    public static long m551constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: describeContents-impl  reason: not valid java name */
-    public static int m547describeContentsimpl(long j10) {
+    public static int m552describeContentsimpl(long j10) {
         return 0;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m548equalsimpl(long j10, Object obj) {
-        return (obj instanceof GuildId) && j10 == ((GuildId) obj).m554unboximpl();
+    public static boolean m553equalsimpl(long j10, Object obj) {
+        return (obj instanceof GuildId) && j10 == ((GuildId) obj).m559unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m549equalsimpl0(long j10, long j11) {
+    public static final boolean m554equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m550hashCodeimpl(long j10) {
+    public static int m555hashCodeimpl(long j10) {
         return a.a(j10);
     }
 
     /* renamed from: isValid-impl  reason: not valid java name */
-    public static boolean m551isValidimpl(long j10) {
+    public static boolean m556isValidimpl(long j10) {
         return j10 > 0;
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m552toStringimpl(long j10) {
+    public static String m557toStringimpl(long j10) {
         return String.valueOf(j10);
     }
 
     /* renamed from: writeToParcel-impl  reason: not valid java name */
-    public static void m553writeToParcelimpl(long j10, Parcel out, int i10) {
+    public static void m558writeToParcelimpl(long j10, Parcel out, int i10) {
         q.g(out, "out");
         out.writeLong(j10);
     }
 
     @Override // android.os.Parcelable
     public int describeContents() {
-        return m547describeContentsimpl(this.snowflake);
+        return m552describeContentsimpl(this.snowflake);
     }
 
     public boolean equals(Object obj) {
-        return m548equalsimpl(this.snowflake, obj);
+        return m553equalsimpl(this.snowflake, obj);
     }
 
     @Override // com.discord.snowflake.SnowflakePrimitive
@@ -119,26 +119,26 @@ public final class GuildId implements SnowflakePrimitive {
     }
 
     public int hashCode() {
-        return m550hashCodeimpl(this.snowflake);
+        return m555hashCodeimpl(this.snowflake);
     }
 
     @Override // com.discord.snowflake.SnowflakePrimitive
     public boolean isValid() {
-        return m551isValidimpl(this.snowflake);
+        return m556isValidimpl(this.snowflake);
     }
 
     public String toString() {
-        return m552toStringimpl(this.snowflake);
+        return m557toStringimpl(this.snowflake);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m554unboximpl() {
+    public final /* synthetic */ long m559unboximpl() {
         return this.snowflake;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
-        m553writeToParcelimpl(this.snowflake, out, i10);
+        m558writeToParcelimpl(this.snowflake, out, i10);
     }
 }

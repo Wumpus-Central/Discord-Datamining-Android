@@ -27,9 +27,9 @@ public final class ActivityLauncherMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ ActivityLauncherMessageAccessory m203copyAFFcxXc$default(ActivityLauncherMessageAccessory activityLauncherMessageAccessory, String str, int i10, ActivityLauncherEmbedImpl activityLauncherEmbedImpl, int i11, int i12, Object obj) {
+    public static /* synthetic */ ActivityLauncherMessageAccessory m204copyAFFcxXc$default(ActivityLauncherMessageAccessory activityLauncherMessageAccessory, String str, int i10, ActivityLauncherEmbedImpl activityLauncherEmbedImpl, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
-            str = activityLauncherMessageAccessory.mo202getMessageId3Eiw7ao();
+            str = activityLauncherMessageAccessory.mo203getMessageId3Eiw7ao();
         }
         if ((i12 & 2) != 0) {
             i10 = activityLauncherMessageAccessory.codedLinkIndex;
@@ -40,12 +40,12 @@ public final class ActivityLauncherMessageAccessory extends MessageAccessory {
         if ((i12 & 8) != 0) {
             i11 = activityLauncherMessageAccessory.constrainedWidth;
         }
-        return activityLauncherMessageAccessory.m205copyAFFcxXc(str, i10, activityLauncherEmbedImpl, i11);
+        return activityLauncherMessageAccessory.m206copyAFFcxXc(str, i10, activityLauncherEmbedImpl, i11);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m204component13Eiw7ao() {
-        return mo202getMessageId3Eiw7ao();
+    public final String m205component13Eiw7ao() {
+        return mo203getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -61,7 +61,7 @@ public final class ActivityLauncherMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final ActivityLauncherMessageAccessory m205copyAFFcxXc(String messageId, int i10, ActivityLauncherEmbedImpl activityLauncherEmbed, int i11) {
+    public final ActivityLauncherMessageAccessory m206copyAFFcxXc(String messageId, int i10, ActivityLauncherEmbedImpl activityLauncherEmbed, int i11) {
         q.g(messageId, "messageId");
         q.g(activityLauncherEmbed, "activityLauncherEmbed");
         return new ActivityLauncherMessageAccessory(messageId, i10, activityLauncherEmbed, i11, null);
@@ -75,7 +75,7 @@ public final class ActivityLauncherMessageAccessory extends MessageAccessory {
             return false;
         }
         ActivityLauncherMessageAccessory activityLauncherMessageAccessory = (ActivityLauncherMessageAccessory) obj;
-        return MessageId.m562equalsimpl0(mo202getMessageId3Eiw7ao(), activityLauncherMessageAccessory.mo202getMessageId3Eiw7ao()) && this.codedLinkIndex == activityLauncherMessageAccessory.codedLinkIndex && q.b(this.activityLauncherEmbed, activityLauncherMessageAccessory.activityLauncherEmbed) && this.constrainedWidth == activityLauncherMessageAccessory.constrainedWidth;
+        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), activityLauncherMessageAccessory.mo203getMessageId3Eiw7ao()) && this.codedLinkIndex == activityLauncherMessageAccessory.codedLinkIndex && q.b(this.activityLauncherEmbed, activityLauncherMessageAccessory.activityLauncherEmbed) && this.constrainedWidth == activityLauncherMessageAccessory.constrainedWidth;
     }
 
     public final ActivityLauncherEmbedImpl getActivityLauncherEmbed() {
@@ -92,16 +92,16 @@ public final class ActivityLauncherMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((MessageId.m563hashCodeimpl(mo202getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityLauncherEmbed.hashCode()) * 31) + this.constrainedWidth;
+        return (((((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.activityLauncherEmbed.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         ActivityLauncherEmbedImpl activityLauncherEmbedImpl = this.activityLauncherEmbed;
         int i11 = this.constrainedWidth;

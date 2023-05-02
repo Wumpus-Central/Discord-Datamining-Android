@@ -32,7 +32,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends k implements
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NestedScrollOnTouchTracker$handleTouch$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22034a);
+        return ((NestedScrollOnTouchTracker$handleTouch$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:23:0x0069  */
@@ -127,7 +127,7 @@ public final class NestedScrollOnTouchTracker$handleTouch$2 extends k implements
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker r9 = r8.this$0
             android.view.View r0 = r8.$view
             com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker.access$cleanUp(r9, r0)
-            kotlin.Unit r9 = kotlin.Unit.f22034a
+            kotlin.Unit r9 = kotlin.Unit.f22035a
             return r9
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchTracker$handleTouch$2.invokeSuspend(java.lang.Object):java.lang.Object");

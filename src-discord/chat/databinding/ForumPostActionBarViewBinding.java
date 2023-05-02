@@ -4,11 +4,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Space;
+import android.widget.TextView;
 import androidx.constraintlayout.widget.Barrier;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.chat.R;
 import com.discord.core.DCDButton;
 import com.discord.reactions.AddReactionView;
 import com.discord.reactions.ReactionsView;
+import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
 /* loaded from: classes4.dex */
@@ -23,10 +26,16 @@ public final class ForumPostActionBarViewBinding {
     public final ReactionsView reactionsView;
     private final View rootView;
     public final DCDButton shareButton;
+    public final DCDButton sharePromptCloseButton;
+    public final ConstraintLayout sharePromptContainer;
+    public final DCDButton sharePromptCopyLinkButton;
+    public final SimpleDraweeView sharePromptIcon;
+    public final TextView sharePromptSubtitle;
+    public final TextView sharePromptTitle;
     public final Space spacer;
     public final Space startSpacer;
 
-    private ForumPostActionBarViewBinding(View view, AddReactionView addReactionView, DCDButton dCDButton, Barrier barrier, View view2, Barrier barrier2, View view3, DCDButton dCDButton2, ReactionsView reactionsView, DCDButton dCDButton3, Space space, Space space2) {
+    private ForumPostActionBarViewBinding(View view, AddReactionView addReactionView, DCDButton dCDButton, Barrier barrier, View view2, Barrier barrier2, View view3, DCDButton dCDButton2, ReactionsView reactionsView, DCDButton dCDButton3, DCDButton dCDButton4, ConstraintLayout constraintLayout, DCDButton dCDButton5, SimpleDraweeView simpleDraweeView, TextView textView, TextView textView2, Space space, Space space2) {
         this.rootView = view;
         this.addReaction = addReactionView;
         this.followButton = dCDButton;
@@ -37,6 +46,12 @@ public final class ForumPostActionBarViewBinding {
         this.otherReactionsCount = dCDButton2;
         this.reactionsView = reactionsView;
         this.shareButton = dCDButton3;
+        this.sharePromptCloseButton = dCDButton4;
+        this.sharePromptContainer = constraintLayout;
+        this.sharePromptCopyLinkButton = dCDButton5;
+        this.sharePromptIcon = simpleDraweeView;
+        this.sharePromptSubtitle = textView;
+        this.sharePromptTitle = textView2;
         this.spacer = space;
         this.startSpacer = space2;
     }
@@ -65,13 +80,37 @@ public final class ForumPostActionBarViewBinding {
                                 i10 = R.id.share_button;
                                 DCDButton dCDButton3 = (DCDButton) a.a(view, i10);
                                 if (dCDButton3 != null) {
-                                    i10 = R.id.spacer;
-                                    Space space = (Space) a.a(view, i10);
-                                    if (space != null) {
-                                        i10 = R.id.start_spacer;
-                                        Space space2 = (Space) a.a(view, i10);
-                                        if (space2 != null) {
-                                            return new ForumPostActionBarViewBinding(view, addReactionView, dCDButton, barrier, a10, barrier2, a11, dCDButton2, reactionsView, dCDButton3, space, space2);
+                                    i10 = R.id.share_prompt_close_button;
+                                    DCDButton dCDButton4 = (DCDButton) a.a(view, i10);
+                                    if (dCDButton4 != null) {
+                                        i10 = R.id.share_prompt_container;
+                                        ConstraintLayout constraintLayout = (ConstraintLayout) a.a(view, i10);
+                                        if (constraintLayout != null) {
+                                            i10 = R.id.share_prompt_copy_link_button;
+                                            DCDButton dCDButton5 = (DCDButton) a.a(view, i10);
+                                            if (dCDButton5 != null) {
+                                                i10 = R.id.share_prompt_icon;
+                                                SimpleDraweeView simpleDraweeView = (SimpleDraweeView) a.a(view, i10);
+                                                if (simpleDraweeView != null) {
+                                                    i10 = R.id.share_prompt_subtitle;
+                                                    TextView textView = (TextView) a.a(view, i10);
+                                                    if (textView != null) {
+                                                        i10 = R.id.share_prompt_title;
+                                                        TextView textView2 = (TextView) a.a(view, i10);
+                                                        if (textView2 != null) {
+                                                            i10 = R.id.spacer;
+                                                            Space space = (Space) a.a(view, i10);
+                                                            if (space != null) {
+                                                                i10 = R.id.start_spacer;
+                                                                Space space2 = (Space) a.a(view, i10);
+                                                                if (space2 != null) {
+                                                                    return new ForumPostActionBarViewBinding(view, addReactionView, dCDButton, barrier, a10, barrier2, a11, dCDButton2, reactionsView, dCDButton3, dCDButton4, constraintLayout, dCDButton5, simpleDraweeView, textView, textView2, space, space2);
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }

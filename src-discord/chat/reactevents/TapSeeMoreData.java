@@ -52,27 +52,27 @@ public final class TapSeeMoreData implements ReactEvent {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ TapSeeMoreData m386copy1xi1bu0$default(TapSeeMoreData tapSeeMoreData, String str, int i10, Object obj) {
+    public static /* synthetic */ TapSeeMoreData m391copy1xi1bu0$default(TapSeeMoreData tapSeeMoreData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapSeeMoreData.messageId;
         }
-        return tapSeeMoreData.m388copy1xi1bu0(str);
+        return tapSeeMoreData.m393copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapSeeMoreData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m558boximpl(self.messageId));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m387component13Eiw7ao() {
+    public final String m392component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final TapSeeMoreData m388copy1xi1bu0(String messageId) {
+    public final TapSeeMoreData m393copy1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         return new TapSeeMoreData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapSeeMoreData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapSeeMoreData) && MessageId.m562equalsimpl0(this.messageId, ((TapSeeMoreData) obj).messageId);
+        return (obj instanceof TapSeeMoreData) && MessageId.m567equalsimpl0(this.messageId, ((TapSeeMoreData) obj).messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m389getMessageId3Eiw7ao() {
+    public final String m394getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m563hashCodeimpl(this.messageId);
+        return MessageId.m568hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -99,7 +99,7 @@ public final class TapSeeMoreData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
+        String str = MessageId.m569toStringimpl(this.messageId);
         return "TapSeeMoreData(messageId=" + str + ")";
     }
 

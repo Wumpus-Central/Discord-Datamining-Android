@@ -401,7 +401,7 @@
     <dimen name="message_avatar">40.0dip</dimen>
     <dimen name="message_avatar_decoration_size">48.0dip</dimen>
     <dimen name="message_embed_margin">16.0dip</dimen>
-    <dimen name="message_embed_max_thumbnail_size">48.0dip</dimen>
+    <dimen name="message_embed_max_thumbnail_size">70.0dip</dimen>
     <dimen name="message_gutter_width">2.0dip</dimen>
     <dimen name="message_horizontal_spacing">12.0dip</dimen>
     <dimen name="message_media_grid_inner_radius">2.0dip</dimen>

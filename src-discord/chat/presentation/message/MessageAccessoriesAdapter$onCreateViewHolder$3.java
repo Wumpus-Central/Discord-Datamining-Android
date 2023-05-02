@@ -19,13 +19,13 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$3 exte
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m196invoke1xi1bu0(messageId.m566unboximpl());
-        return Unit.f22034a;
+        m197invoke1xi1bu0(messageId.m571unboximpl());
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m196invoke1xi1bu0(String p02) {
+    public final void m197invoke1xi1bu0(String p02) {
         q.g(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo156onTapInviteToSpeak1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).mo157onTapInviteToSpeak1xi1bu0(p02);
     }
 }

@@ -29,11 +29,11 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$3 extends s implem
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Double d10, Integer num) {
         invoke2(d10, num);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Double d10, Integer num) {
-        this.this$0.m184onMediaClickedl3ndGo(this.$holder, this.$part.mo202getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
+        this.this$0.m185onMediaClickedl3ndGo(this.$holder, this.$part.mo203getMessageId3Eiw7ao(), ((EmbedMessageAccessory) this.$part).getIndex(), "embed", d10, num, ViewResizeMode.Fill);
     }
 }

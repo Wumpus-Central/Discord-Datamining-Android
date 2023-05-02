@@ -23,19 +23,19 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ EphemeralIndicationMessageAccessory m220copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
+    public static /* synthetic */ EphemeralIndicationMessageAccessory m221copyntcYbpo$default(EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String str, EphemeralIndication ephemeralIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = ephemeralIndicationMessageAccessory.mo202getMessageId3Eiw7ao();
+            str = ephemeralIndicationMessageAccessory.mo203getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             ephemeralIndication = ephemeralIndicationMessageAccessory.ephemeralIndication;
         }
-        return ephemeralIndicationMessageAccessory.m222copyntcYbpo(str, ephemeralIndication);
+        return ephemeralIndicationMessageAccessory.m223copyntcYbpo(str, ephemeralIndication);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m221component13Eiw7ao() {
-        return mo202getMessageId3Eiw7ao();
+    public final String m222component13Eiw7ao() {
+        return mo203getMessageId3Eiw7ao();
     }
 
     public final EphemeralIndication component2() {
@@ -43,7 +43,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final EphemeralIndicationMessageAccessory m222copyntcYbpo(String messageId, EphemeralIndication ephemeralIndication) {
+    public final EphemeralIndicationMessageAccessory m223copyntcYbpo(String messageId, EphemeralIndication ephemeralIndication) {
         q.g(messageId, "messageId");
         q.g(ephemeralIndication, "ephemeralIndication");
         return new EphemeralIndicationMessageAccessory(messageId, ephemeralIndication, null);
@@ -57,7 +57,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
             return false;
         }
         EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory = (EphemeralIndicationMessageAccessory) obj;
-        return MessageId.m562equalsimpl0(mo202getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo202getMessageId3Eiw7ao()) && q.b(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
+        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), ephemeralIndicationMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
     }
 
     public final EphemeralIndication getEphemeralIndication() {
@@ -66,16 +66,16 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m563hashCodeimpl(mo202getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
+        return (MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.ephemeralIndication.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         EphemeralIndication ephemeralIndication = this.ephemeralIndication;
         return "EphemeralIndicationMessageAccessory(messageId=" + str + ", ephemeralIndication=" + ephemeralIndication + ")";
     }

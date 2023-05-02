@@ -43,7 +43,7 @@ final class ReactAssetUtilsKt$setReactIcon$1$1$1 extends k implements Function2<
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Drawable> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22034a);
+        return ((ReactAssetUtilsKt$setReactIcon$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a

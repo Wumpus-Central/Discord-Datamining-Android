@@ -33,8 +33,8 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m266component13Eiw7ao() {
-        return mo202getMessageId3Eiw7ao();
+    public final String m267component13Eiw7ao() {
+        return mo203getMessageId3Eiw7ao();
     }
 
     public final boolean component10() {
@@ -74,7 +74,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-a6FnO-k  reason: not valid java name */
-    public final ReactionsMessageAccessory m267copya6FnOk(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, boolean z12) {
+    public final ReactionsMessageAccessory m268copya6FnOk(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, boolean z12) {
         q.g(messageId, "messageId");
         q.g(reactions, "reactions");
         q.g(addReactionLabel, "addReactionLabel");
@@ -91,7 +91,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
             return false;
         }
         ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) obj;
-        return MessageId.m562equalsimpl0(mo202getMessageId3Eiw7ao(), reactionsMessageAccessory.mo202getMessageId3Eiw7ao()) && q.b(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && this.canAddNewBurstReactions == reactionsMessageAccessory.canAddNewBurstReactions && q.b(this.addReactionLabel, reactionsMessageAccessory.addReactionLabel) && q.b(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && q.b(this.addNewBurstReactionAccessibilityLabel, reactionsMessageAccessory.addNewBurstReactionAccessibilityLabel) && q.b(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && q.b(this.theme, reactionsMessageAccessory.theme) && this.useSortedReactions == reactionsMessageAccessory.useSortedReactions;
+        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), reactionsMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && this.canAddNewBurstReactions == reactionsMessageAccessory.canAddNewBurstReactions && q.b(this.addReactionLabel, reactionsMessageAccessory.addReactionLabel) && q.b(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && q.b(this.addNewBurstReactionAccessibilityLabel, reactionsMessageAccessory.addNewBurstReactionAccessibilityLabel) && q.b(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && q.b(this.theme, reactionsMessageAccessory.theme) && this.useSortedReactions == reactionsMessageAccessory.useSortedReactions;
     }
 
     public final String getAddNewBurstReactionAccessibilityLabel() {
@@ -116,7 +116,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -137,7 +137,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m563hashCodeimpl(mo202getMessageId3Eiw7ao()) * 31) + this.reactions.hashCode()) * 31;
+        int i10 = ((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.reactions.hashCode()) * 31;
         boolean z10 = this.canAddNewReactions;
         int i11 = 1;
         if (z10) {
@@ -171,7 +171,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         boolean z11 = this.canAddNewBurstReactions;

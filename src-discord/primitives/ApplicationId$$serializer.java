@@ -34,13 +34,13 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return ApplicationId.m519boximpl(m529deserializeUV2lyTI(decoder));
+        return ApplicationId.m524boximpl(m534deserializeUV2lyTI(decoder));
     }
 
     /* renamed from: deserialize-UV2lyTI  reason: not valid java name */
-    public long m529deserializeUV2lyTI(Decoder decoder) {
+    public long m534deserializeUV2lyTI(Decoder decoder) {
         q.g(decoder, "decoder");
-        return ApplicationId.m520constructorimpl(decoder.q(getDescriptor()).l());
+        return ApplicationId.m525constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override // yi.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m530serializemvAn8kk(encoder, ((ApplicationId) obj).m528unboximpl());
+        m535serializemvAn8kk(encoder, ((ApplicationId) obj).m533unboximpl());
     }
 
     /* renamed from: serialize-mvAn8kk  reason: not valid java name */
-    public void m530serializemvAn8kk(Encoder encoder, long j10) {
+    public void m535serializemvAn8kk(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

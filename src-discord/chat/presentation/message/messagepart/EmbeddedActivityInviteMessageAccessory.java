@@ -27,9 +27,9 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ EmbeddedActivityInviteMessageAccessory m217copyAFFcxXc$default(EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory, String str, int i10, EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl, int i11, int i12, Object obj) {
+    public static /* synthetic */ EmbeddedActivityInviteMessageAccessory m218copyAFFcxXc$default(EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory, String str, int i10, EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
-            str = embeddedActivityInviteMessageAccessory.mo202getMessageId3Eiw7ao();
+            str = embeddedActivityInviteMessageAccessory.mo203getMessageId3Eiw7ao();
         }
         if ((i12 & 2) != 0) {
             i10 = embeddedActivityInviteMessageAccessory.codedLinkIndex;
@@ -40,12 +40,12 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
         if ((i12 & 8) != 0) {
             i11 = embeddedActivityInviteMessageAccessory.constrainedWidth;
         }
-        return embeddedActivityInviteMessageAccessory.m219copyAFFcxXc(str, i10, embeddedActivityInviteEmbedImpl, i11);
+        return embeddedActivityInviteMessageAccessory.m220copyAFFcxXc(str, i10, embeddedActivityInviteEmbedImpl, i11);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m218component13Eiw7ao() {
-        return mo202getMessageId3Eiw7ao();
+    public final String m219component13Eiw7ao() {
+        return mo203getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -61,7 +61,7 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
     }
 
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final EmbeddedActivityInviteMessageAccessory m219copyAFFcxXc(String messageId, int i10, EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbed, int i11) {
+    public final EmbeddedActivityInviteMessageAccessory m220copyAFFcxXc(String messageId, int i10, EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbed, int i11) {
         q.g(messageId, "messageId");
         q.g(embeddedActivityInviteEmbed, "embeddedActivityInviteEmbed");
         return new EmbeddedActivityInviteMessageAccessory(messageId, i10, embeddedActivityInviteEmbed, i11, null);
@@ -75,7 +75,7 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
             return false;
         }
         EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory = (EmbeddedActivityInviteMessageAccessory) obj;
-        return MessageId.m562equalsimpl0(mo202getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.mo202getMessageId3Eiw7ao()) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && q.b(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
+        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), embeddedActivityInviteMessageAccessory.mo203getMessageId3Eiw7ao()) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && q.b(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
     }
 
     public final int getCodedLinkIndex() {
@@ -92,16 +92,16 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((MessageId.m563hashCodeimpl(mo202getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + this.constrainedWidth;
+        return (((((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl = this.embeddedActivityInviteEmbed;
         int i11 = this.constrainedWidth;

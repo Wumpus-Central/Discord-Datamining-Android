@@ -18,7 +18,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     private final ChatEventHandler eventHandler;
     private final MessageComponentsView messageComponentsView;
     private long messageFlags;
-    private String messageId = MessageId.m559constructorimpl("0");
+    private String messageId = MessageId.m564constructorimpl("0");
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageComponentsViewHolder(MessageComponentsView messageComponentsView, ChatEventHandler eventHandler) {
@@ -31,7 +31,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
 
     public final void bind(MessageComponentsAccessory componentsComponentsAccessory, ComponentProvider componentProvider) {
         q.g(componentsComponentsAccessory, "componentsComponentsAccessory");
-        this.messageId = componentsComponentsAccessory.mo202getMessageId3Eiw7ao();
+        this.messageId = componentsComponentsAccessory.mo203getMessageId3Eiw7ao();
         this.messageFlags = componentsComponentsAccessory.getMessageFlags();
         this.messageComponentsView.setComponents(componentProvider, componentsComponentsAccessory.getMessageComponents(), this);
     }
@@ -41,13 +41,13 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m323getMessageId3Eiw7ao() {
+    public final String m324getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     @Override // com.discord.chat.presentation.message.view.botuikit.ComponentActionListener
     /* renamed from: onTapButtonActionComponent-y43Yjpg */
-    public void mo305onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
+    public void mo306onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
         int[] C0;
         q.g(indices, "indices");
         ChatEventHandler chatEventHandler = this.eventHandler;
@@ -60,7 +60,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     @Override // com.discord.chat.presentation.message.view.botuikit.ComponentActionListener
     public void onTapSelectActionComponent(SelectComponent selectComponent) {
         q.g(selectComponent, "selectComponent");
-        this.eventHandler.mo163onTapSelectActionComponentu7_MRrM(this.messageId, this.messageFlags, selectComponent);
+        this.eventHandler.mo164onTapSelectActionComponentu7_MRrM(this.messageId, this.messageFlags, selectComponent);
     }
 
     @Override // com.discord.chat.presentation.message.view.botuikit.ComponentActionListener
@@ -74,7 +74,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     /* renamed from: setMessageId-1xi1bu0  reason: not valid java name */
-    public final void m324setMessageId1xi1bu0(String str) {
+    public final void m325setMessageId1xi1bu0(String str) {
         q.g(str, "<set-?>");
         this.messageId = str;
     }

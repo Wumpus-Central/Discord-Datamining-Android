@@ -52,27 +52,27 @@ public final class OnTruncateMessageData implements ReactEvent {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ OnTruncateMessageData m350copy1xi1bu0$default(OnTruncateMessageData onTruncateMessageData, String str, int i10, Object obj) {
+    public static /* synthetic */ OnTruncateMessageData m351copy1xi1bu0$default(OnTruncateMessageData onTruncateMessageData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = onTruncateMessageData.messageId;
         }
-        return onTruncateMessageData.m352copy1xi1bu0(str);
+        return onTruncateMessageData.m353copy1xi1bu0(str);
     }
 
     public static final void write$Self(OnTruncateMessageData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m558boximpl(self.messageId));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m351component13Eiw7ao() {
+    public final String m352component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final OnTruncateMessageData m352copy1xi1bu0(String messageId) {
+    public final OnTruncateMessageData m353copy1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         return new OnTruncateMessageData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class OnTruncateMessageData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof OnTruncateMessageData) && MessageId.m562equalsimpl0(this.messageId, ((OnTruncateMessageData) obj).messageId);
+        return (obj instanceof OnTruncateMessageData) && MessageId.m567equalsimpl0(this.messageId, ((OnTruncateMessageData) obj).messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m353getMessageId3Eiw7ao() {
+    public final String m354getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m563hashCodeimpl(this.messageId);
+        return MessageId.m568hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -99,7 +99,7 @@ public final class OnTruncateMessageData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
+        String str = MessageId.m569toStringimpl(this.messageId);
         return "OnTruncateMessageData(messageId=" + str + ")";
     }
 

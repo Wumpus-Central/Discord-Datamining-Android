@@ -56,7 +56,7 @@ public final class NotificationRenderer {
         q.g(context, "context");
         q.g(notification, "notification");
         for (ChannelId channelId : notification.getAckChannelIds()) {
-            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m539toStringimpl(channelId.m541unboximpl());
+            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m544toStringimpl(channelId.m546unboximpl());
             NotificationChannels notificationChannels = NotificationChannels.INSTANCE;
             if (!NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, notificationChannels.getNotificationChannelId(notification), NotificationManagerUtilsKt.getActiveNotification(context, str)).l().getBoolean(IGNORE_ACK_KEY, false)) {
                 clear(context, str);

@@ -38,7 +38,7 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
         } catch (Exception e10) {
             CrashReporting.INSTANCE.captureException(e10);
             UUID randomUUID = UUID.randomUUID();
-            String str = MessageId.m559constructorimpl("RENDERING_ERROR_" + randomUUID);
+            String str = MessageId.m564constructorimpl("RENDERING_ERROR_" + randomUUID);
             b10 = f.b(e10);
             return new ErrorMessage(str, b10, null);
         }

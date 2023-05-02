@@ -30,7 +30,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ TapReactionData m382copyu7_MRrM$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
+    public static /* synthetic */ TapReactionData m387copyu7_MRrM$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapReactionData.messageId;
         }
@@ -40,11 +40,11 @@ public final class TapReactionData implements ReactEvent {
         if ((i10 & 4) != 0) {
             bool = tapReactionData.isBurst;
         }
-        return tapReactionData.m384copyu7_MRrM(str, reaction, bool);
+        return tapReactionData.m389copyu7_MRrM(str, reaction, bool);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m383component13Eiw7ao() {
+    public final String m388component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -57,7 +57,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final TapReactionData m384copyu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
+    public final TapReactionData m389copyu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
         q.g(messageId, "messageId");
         return new TapReactionData(messageId, reaction, bool, null);
     }
@@ -70,11 +70,11 @@ public final class TapReactionData implements ReactEvent {
             return false;
         }
         TapReactionData tapReactionData = (TapReactionData) obj;
-        return MessageId.m562equalsimpl0(this.messageId, tapReactionData.messageId) && q.b(this.reaction, tapReactionData.reaction) && q.b(this.isBurst, tapReactionData.isBurst);
+        return MessageId.m567equalsimpl0(this.messageId, tapReactionData.messageId) && q.b(this.reaction, tapReactionData.reaction) && q.b(this.isBurst, tapReactionData.isBurst);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m385getMessageId3Eiw7ao() {
+    public final String m390getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -83,7 +83,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     public int hashCode() {
-        int i10 = MessageId.m563hashCodeimpl(this.messageId) * 31;
+        int i10 = MessageId.m568hashCodeimpl(this.messageId) * 31;
         ReactionView.Reaction reaction = this.reaction;
         int i11 = 0;
         int hashCode = (i10 + (reaction == null ? 0 : reaction.hashCode())) * 31;
@@ -122,7 +122,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(this.messageId);
+        String str = MessageId.m569toStringimpl(this.messageId);
         ReactionView.Reaction reaction = this.reaction;
         Boolean bool = this.isBurst;
         return "TapReactionData(messageId=" + str + ", reaction=" + reaction + ", isBurst=" + bool + ")";

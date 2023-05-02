@@ -21,7 +21,7 @@ public final class FrescoConfigKt {
         ImagePipelineConfig.Builder M = defaultConfigBuilder.O(frescoDiskCache.newRegularDiskCache(context)).S(frescoDiskCache.newSmallDiskCache(context)).M(new FrescoBitmapSupplier(context));
         x.b n10 = x.n();
         z a10 = l.a();
-        ImagePipelineConfig K = M.Q(new y(n10.n(new z(a10.f32209b, a10.f32208a * 2, a10.f32210c)).m())).N(true).L().t(true).K();
+        ImagePipelineConfig K = M.Q(new y(n10.n(new z(a10.f32210b, a10.f32209a * 2, a10.f32211c)).m())).N(true).L().t(true).K();
         q.f(K, "getDefaultConfigBuilder(…ns(true)\n        .build()");
         return K;
     }

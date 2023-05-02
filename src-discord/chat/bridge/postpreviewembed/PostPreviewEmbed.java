@@ -56,10 +56,10 @@ public final class PostPreviewEmbed {
         if (127 != (i10 & 127)) {
             n1.b(i10, 127, PostPreviewEmbed$$serializer.INSTANCE.getDescriptor());
         }
-        this.parentChannelId = channelId.m541unboximpl();
-        this.threadId = channelId2.m541unboximpl();
+        this.parentChannelId = channelId.m546unboximpl();
+        this.threadId = channelId2.m546unboximpl();
         this.messageId = str;
-        this.guildId = guildId.m554unboximpl();
+        this.guildId = guildId.m559unboximpl();
         this.title = str2;
         this.ctaText = str3;
         this.footer = structurableText;
@@ -102,10 +102,10 @@ public final class PostPreviewEmbed {
         q.g(serialDesc, "serialDesc");
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
         boolean z13 = false;
-        output.t(serialDesc, 0, channelId$$serializer, ChannelId.m532boximpl(self.parentChannelId));
-        output.t(serialDesc, 1, channelId$$serializer, ChannelId.m532boximpl(self.threadId));
-        output.t(serialDesc, 2, MessageId$$serializer.INSTANCE, MessageId.m558boximpl(self.messageId));
-        output.t(serialDesc, 3, GuildId$$serializer.INSTANCE, GuildId.m545boximpl(self.guildId));
+        output.t(serialDesc, 0, channelId$$serializer, ChannelId.m537boximpl(self.parentChannelId));
+        output.t(serialDesc, 1, channelId$$serializer, ChannelId.m537boximpl(self.threadId));
+        output.t(serialDesc, 2, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
+        output.t(serialDesc, 3, GuildId$$serializer.INSTANCE, GuildId.m550boximpl(self.guildId));
         output.z(serialDesc, 4, self.title);
         output.z(serialDesc, 5, self.ctaText);
         output.t(serialDesc, 6, StructurableTextSerializer.INSTANCE, self.footer);
@@ -206,7 +206,7 @@ public final class PostPreviewEmbed {
             return false;
         }
         PostPreviewEmbed postPreviewEmbed = (PostPreviewEmbed) obj;
-        return ChannelId.m536equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m536equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m562equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m549equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText);
+        return ChannelId.m541equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m541equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m567equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m554equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText);
     }
 
     public final String getBlurredCoverImage() {
@@ -258,7 +258,7 @@ public final class PostPreviewEmbed {
     }
 
     public int hashCode() {
-        int i10 = ((((((((((((ChannelId.m537hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m537hashCodeimpl(this.threadId)) * 31) + MessageId.m563hashCodeimpl(this.messageId)) * 31) + GuildId.m550hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
+        int i10 = ((((((((((((ChannelId.m542hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m542hashCodeimpl(this.threadId)) * 31) + MessageId.m568hashCodeimpl(this.messageId)) * 31) + GuildId.m555hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
         String str = this.subtitle;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -274,10 +274,10 @@ public final class PostPreviewEmbed {
     }
 
     public String toString() {
-        String str = ChannelId.m539toStringimpl(this.parentChannelId);
-        String str2 = ChannelId.m539toStringimpl(this.threadId);
-        String str3 = MessageId.m564toStringimpl(this.messageId);
-        String str4 = GuildId.m552toStringimpl(this.guildId);
+        String str = ChannelId.m544toStringimpl(this.parentChannelId);
+        String str2 = ChannelId.m544toStringimpl(this.threadId);
+        String str3 = MessageId.m569toStringimpl(this.messageId);
+        String str4 = GuildId.m557toStringimpl(this.guildId);
         String str5 = this.title;
         String str6 = this.ctaText;
         StructurableText structurableText = this.footer;

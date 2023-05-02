@@ -26,9 +26,9 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ FlaggedMessageEmbedAccessory m229copyu7_MRrM$default(FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory, String str, Message message, MessageContext messageContext, int i10, Object obj) {
+    public static /* synthetic */ FlaggedMessageEmbedAccessory m230copyu7_MRrM$default(FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory, String str, Message message, MessageContext messageContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = flaggedMessageEmbedAccessory.mo202getMessageId3Eiw7ao();
+            str = flaggedMessageEmbedAccessory.mo203getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             message = flaggedMessageEmbedAccessory.message;
@@ -36,12 +36,12 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             messageContext = flaggedMessageEmbedAccessory.messageContext;
         }
-        return flaggedMessageEmbedAccessory.m231copyu7_MRrM(str, message, messageContext);
+        return flaggedMessageEmbedAccessory.m232copyu7_MRrM(str, message, messageContext);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m230component13Eiw7ao() {
-        return mo202getMessageId3Eiw7ao();
+    public final String m231component13Eiw7ao() {
+        return mo203getMessageId3Eiw7ao();
     }
 
     public final Message component2() {
@@ -53,7 +53,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final FlaggedMessageEmbedAccessory m231copyu7_MRrM(String messageId, Message message, MessageContext messageContext) {
+    public final FlaggedMessageEmbedAccessory m232copyu7_MRrM(String messageId, Message message, MessageContext messageContext) {
         q.g(messageId, "messageId");
         q.g(message, "message");
         q.g(messageContext, "messageContext");
@@ -68,7 +68,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
             return false;
         }
         FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory = (FlaggedMessageEmbedAccessory) obj;
-        return MessageId.m562equalsimpl0(mo202getMessageId3Eiw7ao(), flaggedMessageEmbedAccessory.mo202getMessageId3Eiw7ao()) && q.b(this.message, flaggedMessageEmbedAccessory.message) && q.b(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
+        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), flaggedMessageEmbedAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.message, flaggedMessageEmbedAccessory.message) && q.b(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
     }
 
     public final Message getMessage() {
@@ -81,16 +81,16 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo202getMessageId3Eiw7ao() {
+    public String mo203getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m563hashCodeimpl(mo202getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
+        return (((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m564toStringimpl(mo202getMessageId3Eiw7ao());
+        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
         Message message = this.message;
         MessageContext messageContext = this.messageContext;
         return "FlaggedMessageEmbedAccessory(messageId=" + str + ", message=" + message + ", messageContext=" + messageContext + ")";

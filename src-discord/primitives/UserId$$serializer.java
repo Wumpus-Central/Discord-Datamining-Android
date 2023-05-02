@@ -34,13 +34,13 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return UserId.m596boximpl(m606deserializePmcOV3I(decoder));
+        return UserId.m601boximpl(m611deserializePmcOV3I(decoder));
     }
 
     /* renamed from: deserialize-PmcOV3I  reason: not valid java name */
-    public long m606deserializePmcOV3I(Decoder decoder) {
+    public long m611deserializePmcOV3I(Decoder decoder) {
         q.g(decoder, "decoder");
-        return UserId.m597constructorimpl(decoder.q(getDescriptor()).l());
+        return UserId.m602constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class UserId$$serializer implements f0<UserId> {
 
     @Override // yi.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m607serialize2YFG4pU(encoder, ((UserId) obj).m605unboximpl());
+        m612serialize2YFG4pU(encoder, ((UserId) obj).m610unboximpl());
     }
 
     /* renamed from: serialize-2YFG4pU  reason: not valid java name */
-    public void m607serialize2YFG4pU(Encoder encoder, long j10) {
+    public void m612serialize2YFG4pU(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

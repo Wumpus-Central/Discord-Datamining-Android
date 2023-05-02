@@ -35,7 +35,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Object obj) {
             invoke((AnonymousClass1) ((View) obj));
-            return Unit.f22034a;
+            return Unit.f22035a;
         }
 
         public final void invoke(V v10) {

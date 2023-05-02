@@ -233,16 +233,12 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         setHasStableIds(true);
     }
 
-    public static final /* synthetic */ Function1 access$getOnTapSpoiler$p(MessageAccessoriesAdapter messageAccessoriesAdapter) {
-        return messageAccessoriesAdapter.onTapSpoiler;
-    }
-
     /* JADX INFO: Access modifiers changed from: private */
     public static final void onBindViewHolder$lambda$0(MessageAccessory part, MessageAccessoriesAdapter this$0, MessagePartViewHolder holder, View view) {
         q.g(part, "$part");
         q.g(this$0, "this$0");
         q.g(holder, "$holder");
-        this$0.m184onMediaClickedl3ndGo(holder, part.mo202getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m185onMediaClickedl3ndGo(holder, part.mo203getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -255,7 +251,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m174onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -268,7 +264,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        chatEventHandler.mo160onTapReactionu7_MRrM(str, null, Boolean.TRUE);
+        chatEventHandler.mo161onTapReactionu7_MRrM(str, null, Boolean.TRUE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -283,7 +279,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo153onTapFollowForumPostpfaIj0E(str, channelId.m541unboximpl());
+        chatEventHandler.mo154onTapFollowForumPostpfaIj0E(str, channelId.m546unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -296,10 +292,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        long j10 = channelId.m541unboximpl();
+        long j10 = channelId.m546unboximpl();
         GuildId guildId = this$0.guildId;
         q.d(guildId);
-        chatEventHandler.mo164onTapShareForumPostmgk6anA(j10, guildId.m554unboximpl());
+        chatEventHandler.mo165onTapShareForumPostmgk6anA(j10, guildId.m559unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -312,7 +308,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m174onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -327,12 +323,26 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo161onTapReactionOverflowpfaIj0E(str, channelId.m541unboximpl());
+        chatEventHandler.mo162onTapReactionOverflowpfaIj0E(str, channelId.m546unboximpl());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void onBindViewHolder$lambda$8(MessageAccessoriesAdapter this$0, View view) {
+        q.g(this$0, "this$0");
+        String str = this$0.messageId;
+        if (str != null) {
+            ChatEventHandler chatEventHandler = this$0.eventHandler;
+            if (chatEventHandler == null) {
+                q.y("eventHandler");
+                chatEventHandler = null;
+            }
+            chatEventHandler.mo153onTapDismissMediaPostSharePrompt1xi1bu0(str);
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: onMediaClicked-l3ndG-o  reason: not valid java name */
-    public final void m184onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
+    public final void m185onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
         View itemView = messagePartViewHolder.itemView;
         q.f(itemView, "itemView");
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(itemView);
@@ -341,7 +351,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo154onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
+        chatEventHandler.mo155onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -477,11 +487,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     @SuppressLint({"NotifyDataSetChanged"})
     /* renamed from: setItems-bo5iIEc  reason: not valid java name */
-    public final void m185setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
+    public final void m186setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
         q.g(messageId, "messageId");
         q.g(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m532boximpl(j10);
+        this.channelId = ChannelId.m537boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -636,9 +646,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler2);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str = messageAccessory.mo202getMessageId3Eiw7ao();
+            String str = messageAccessory.mo203getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m326bindoSm889w(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
+            ((ReactionsViewHolder) holder).m327bindoSm889w(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -692,13 +702,18 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$6(MessageAccessoriesAdapter.this, view);
                 }
-            }, new MessageAccessoriesAdapter$onBindViewHolder$34(this), new MessageAccessoriesAdapter$onBindViewHolder$35(this), forumPostActionBar.getUseSortedReactions());
+            }, new MessageAccessoriesAdapter$onBindViewHolder$34(this), new MessageAccessoriesAdapter$onBindViewHolder$35(this), forumPostActionBar.getUseSortedReactions(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.i
+                @Override // android.view.View.OnClickListener
+                public final void onClick(View view) {
+                    MessageAccessoriesAdapter.onBindViewHolder$lambda$8(MessageAccessoriesAdapter.this, view);
+                }
+            });
         } else if (messageAccessory instanceof FileAttachmentMessageAccessory) {
             FileAttachmentViewHolder fileAttachmentViewHolder = (FileAttachmentViewHolder) holder;
             FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) messageAccessory;
-            MessageAccessoriesAdapter$onBindViewHolder$36 messageAccessoriesAdapter$onBindViewHolder$36 = new MessageAccessoriesAdapter$onBindViewHolder$36(this);
+            MessageAccessoriesAdapter$onBindViewHolder$37 messageAccessoriesAdapter$onBindViewHolder$37 = new MessageAccessoriesAdapter$onBindViewHolder$37(this);
             SpoilerAttributes spoilerAttributes4 = fileAttachmentMessageAccessory.getSpoilerAttributes();
-            fileAttachmentViewHolder.bind(fileAttachmentMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$36, spoilerAttributes4 != null ? spoilerAttributes4.configure(new MessageAccessoriesAdapter$onBindViewHolder$37(this, holder)) : null, fileAttachmentMessageAccessory.getAttachmentsOpacity());
+            fileAttachmentViewHolder.bind(fileAttachmentMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$37, spoilerAttributes4 != null ? spoilerAttributes4.configure(new MessageAccessoriesAdapter$onBindViewHolder$38(this, holder)) : null, fileAttachmentMessageAccessory.getAttachmentsOpacity());
         } else if (messageAccessory instanceof MessageComponentsAccessory) {
             ((MessageComponentsViewHolder) holder).bind((MessageComponentsAccessory) messageAccessory, this.botComponentProvider);
         } else if (messageAccessory instanceof FlaggedMessageEmbedAccessory) {
@@ -711,13 +726,13 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler18 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$38 messageAccessoriesAdapter$onBindViewHolder$38 = new MessageAccessoriesAdapter$onBindViewHolder$38(chatEventHandler18);
+            MessageAccessoriesAdapter$onBindViewHolder$39 messageAccessoriesAdapter$onBindViewHolder$39 = new MessageAccessoriesAdapter$onBindViewHolder$39(chatEventHandler18);
             ChatEventHandler chatEventHandler19 = this.eventHandler;
             if (chatEventHandler19 == null) {
                 q.y("eventHandler");
                 chatEventHandler19 = null;
             }
-            flaggedMessageActionBarViewHolder.bind(flaggedMessageActionBarAccessory, messageAccessoriesAdapter$onBindViewHolder$38, new MessageAccessoriesAdapter$onBindViewHolder$39(chatEventHandler19));
+            flaggedMessageActionBarViewHolder.bind(flaggedMessageActionBarAccessory, messageAccessoriesAdapter$onBindViewHolder$39, new MessageAccessoriesAdapter$onBindViewHolder$40(chatEventHandler19));
         } else if (messageAccessory instanceof AutoModerationNotificationEmbedAccessory) {
             AutoModerationNotificationEmbedViewHolder autoModerationNotificationEmbedViewHolder = (AutoModerationNotificationEmbedViewHolder) holder;
             AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) messageAccessory;
@@ -726,13 +741,13 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler20 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$40 messageAccessoriesAdapter$onBindViewHolder$40 = new MessageAccessoriesAdapter$onBindViewHolder$40(chatEventHandler20);
+            MessageAccessoriesAdapter$onBindViewHolder$41 messageAccessoriesAdapter$onBindViewHolder$41 = new MessageAccessoriesAdapter$onBindViewHolder$41(chatEventHandler20);
             ChatEventHandler chatEventHandler21 = this.eventHandler;
             if (chatEventHandler21 == null) {
                 q.y("eventHandler");
                 chatEventHandler21 = null;
             }
-            autoModerationNotificationEmbedViewHolder.bind(autoModerationNotificationEmbedAccessory, messageAccessoriesAdapter$onBindViewHolder$40, new MessageAccessoriesAdapter$onBindViewHolder$41(chatEventHandler21));
+            autoModerationNotificationEmbedViewHolder.bind(autoModerationNotificationEmbedAccessory, messageAccessoriesAdapter$onBindViewHolder$41, new MessageAccessoriesAdapter$onBindViewHolder$42(chatEventHandler21));
         } else if (messageAccessory instanceof TimestampMessageAccessory) {
             ((TimestampViewHolder) holder).bind((TimestampMessageAccessory) messageAccessory);
         } else if (messageAccessory instanceof WelcomeStickerAccessory) {
@@ -745,7 +760,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler22 = null;
             }
-            activityInviteEmbedViewHolder.bind(activityInviteEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$42(chatEventHandler22));
+            activityInviteEmbedViewHolder.bind(activityInviteEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$43(chatEventHandler22));
         } else if (messageAccessory instanceof EphemeralIndicationMessageAccessory) {
             ((EphemeralIndicationViewHolder) holder).bind((EphemeralIndicationMessageAccessory) messageAccessory);
         } else if (messageAccessory instanceof SurveyIndicationMessageAccessory) {
@@ -776,11 +791,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler24 = null;
             }
-            postPreviewEmbedViewHolder.bind(postPreviewEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$43(chatEventHandler24));
+            postPreviewEmbedViewHolder.bind(postPreviewEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$44(chatEventHandler24));
         } else {
             throw new nf.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f22034a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f22035a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

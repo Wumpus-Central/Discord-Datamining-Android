@@ -63,7 +63,7 @@ public final class TapSeeMoreData$$serializer implements f0<TapSeeMoreData> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapSeeMoreData(i10, messageId != null ? messageId.m566unboximpl() : null, null, null);
+        return new TapSeeMoreData(i10, messageId != null ? messageId.m571unboximpl() : null, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

@@ -34,13 +34,13 @@ public final class GuildId$$serializer implements f0<GuildId> {
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return GuildId.m545boximpl(m555deserializehCFrBxw(decoder));
+        return GuildId.m550boximpl(m560deserializehCFrBxw(decoder));
     }
 
     /* renamed from: deserialize-hCFrBxw  reason: not valid java name */
-    public long m555deserializehCFrBxw(Decoder decoder) {
+    public long m560deserializehCFrBxw(Decoder decoder) {
         q.g(decoder, "decoder");
-        return GuildId.m546constructorimpl(decoder.q(getDescriptor()).l());
+        return GuildId.m551constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class GuildId$$serializer implements f0<GuildId> {
 
     @Override // yi.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m556serializejkIi_8I(encoder, ((GuildId) obj).m554unboximpl());
+        m561serializejkIi_8I(encoder, ((GuildId) obj).m559unboximpl());
     }
 
     /* renamed from: serialize-jkIi_8I  reason: not valid java name */
-    public void m556serializejkIi_8I(Encoder encoder, long j10) {
+    public void m561serializejkIi_8I(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

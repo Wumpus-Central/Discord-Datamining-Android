@@ -92,7 +92,7 @@ public final class MessageTagView extends FrameLayout {
             ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout3, ColorUtilsKt.getThemeColor(context3, R.color.brand_200, R.color.brand_260), SizeUtilsKt.getDpToPx(8), null, 0, 12, null);
             ConstraintLayout constraintLayout4 = this.binding.layout;
             q.f(constraintLayout4, "binding.layout");
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.i
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.j
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageTagView.configureTagView$lambda$0(ChatEventHandler.this, view);

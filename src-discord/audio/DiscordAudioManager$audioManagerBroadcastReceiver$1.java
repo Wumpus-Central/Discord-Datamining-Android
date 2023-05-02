@@ -19,7 +19,7 @@ public /* synthetic */ class DiscordAudioManager$audioManagerBroadcastReceiver$1
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(WiredHeadsetState wiredHeadsetState) {
         invoke2(wiredHeadsetState);
-        return Unit.f22034a;
+        return Unit.f22035a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

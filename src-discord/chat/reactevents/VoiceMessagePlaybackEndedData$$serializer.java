@@ -95,7 +95,7 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m566unboximpl();
+            str = messageId.m571unboximpl();
         }
         return new VoiceMessagePlaybackEndedData(i10, str, f11, f10, (UserId) obj, null, null);
     }

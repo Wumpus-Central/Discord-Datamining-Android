@@ -63,7 +63,7 @@ public final class OnTruncateMessageData$$serializer implements f0<OnTruncateMes
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new OnTruncateMessageData(i10, messageId != null ? messageId.m566unboximpl() : null, null, null);
+        return new OnTruncateMessageData(i10, messageId != null ? messageId.m571unboximpl() : null, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy

@@ -70,7 +70,7 @@ public final class DirectReplyAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final DirectReplyAction createFromParcel(Parcel parcel) {
             q.g(parcel, "parcel");
-            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m541unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), null);
+            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m546unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -93,7 +93,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m463component2o4g7jtM() {
+    private final long m468component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -110,7 +110,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: copy-H-xa5aA$default  reason: not valid java name */
-    public static /* synthetic */ DirectReplyAction m464copyHxa5aA$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, int i10, Object obj) {
+    public static /* synthetic */ DirectReplyAction m469copyHxa5aA$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = directReplyAction.getTag();
         }
@@ -126,7 +126,7 @@ public final class DirectReplyAction implements NotificationAction {
         if ((i10 & 16) != 0) {
             str3 = directReplyAction.guildName;
         }
-        return directReplyAction.m465copyHxa5aA(str, j10, str2, num, str3);
+        return directReplyAction.m470copyHxa5aA(str, j10, str2, num, str3);
     }
 
     public final String component1() {
@@ -134,7 +134,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: copy-H-xa5aA  reason: not valid java name */
-    public final DirectReplyAction m465copyHxa5aA(String tag, long j10, String str, Integer num, String str2) {
+    public final DirectReplyAction m470copyHxa5aA(String tag, long j10, String str, Integer num, String str2) {
         q.g(tag, "tag");
         return new DirectReplyAction(tag, j10, str, num, str2, null);
     }
@@ -152,7 +152,7 @@ public final class DirectReplyAction implements NotificationAction {
             return false;
         }
         DirectReplyAction directReplyAction = (DirectReplyAction) obj;
-        return q.b(getTag(), directReplyAction.getTag()) && ChannelId.m536equalsimpl0(this.channelId, directReplyAction.channelId) && q.b(this.channelName, directReplyAction.channelName) && q.b(this.channelType, directReplyAction.channelType) && q.b(this.guildName, directReplyAction.guildName);
+        return q.b(getTag(), directReplyAction.getTag()) && ChannelId.m541equalsimpl0(this.channelId, directReplyAction.channelId) && q.b(this.channelName, directReplyAction.channelName) && q.b(this.channelType, directReplyAction.channelType) && q.b(this.guildName, directReplyAction.guildName);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -166,7 +166,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     public int hashCode() {
-        int hashCode = ((getTag().hashCode() * 31) + ChannelId.m537hashCodeimpl(this.channelId)) * 31;
+        int hashCode = ((getTag().hashCode() * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
         String str = this.channelName;
         int i10 = 0;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
@@ -209,7 +209,7 @@ public final class DirectReplyAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m539toStringimpl(this.channelId);
+        String str = ChannelId.m544toStringimpl(this.channelId);
         String str2 = this.channelName;
         Integer num = this.channelType;
         String str3 = this.guildName;
@@ -221,7 +221,7 @@ public final class DirectReplyAction implements NotificationAction {
         int i11;
         q.g(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m532boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m537boximpl(this.channelId), i10);
         out.writeString(this.channelName);
         Integer num = this.channelType;
         if (num == null) {

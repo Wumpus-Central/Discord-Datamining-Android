@@ -123,10 +123,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.g(eventHandler, "$eventHandler");
         q.g(automodContext, "$automodContext");
-        String str2 = ChannelId.m539toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
+        String str2 = ChannelId.m544toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
         GuildId guildId = automodContext.getMessage().m25getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m552toStringimpl(guildId.m554unboximpl());
+            str = GuildId.m557toStringimpl(guildId.m559unboximpl());
         } else {
             str = null;
         }
@@ -266,7 +266,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m197setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m198setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

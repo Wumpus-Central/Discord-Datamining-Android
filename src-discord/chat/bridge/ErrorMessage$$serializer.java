@@ -75,7 +75,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str2 = messageId.m566unboximpl();
+            str2 = messageId.m571unboximpl();
         }
         return new ErrorMessage(i10, str2, str, null, null);
     }

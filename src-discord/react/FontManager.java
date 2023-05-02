@@ -11,13 +11,13 @@ import kotlin.properties.a;
 import kotlin.reflect.KProperty;
 
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u000f\u001a\u00020\u00072\u0006\u0010\u0010\u001a\u00020\u0011J\u000e\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0011J\u000e\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0010\u001a\u00020\u0011J\u000e\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0010\u001a\u00020\u0011J\"\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0010\u001a\u00020\u00112\b\b\u0002\u0010\u0018\u001a\u00020\u00072\b\b\u0002\u0010\u0019\u001a\u00020\u0013J\u0014\u0010\u001a\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001b*\u00020\u0011H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R+\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u00078B@BX\u0082\u008e\u0002¢\u0006\u0012\n\u0004\b\r\u0010\u000e\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\f¨\u0006\u001d"}, d2 = {"Lcom/discord/react/FontManager;", "", "()V", FontManager.FONT_SCALE_CHAT_CLASSIC_KEY, "", FontManager.FONT_SCALE_KEY, "<set-?>", "", "initialFontSize", "getInitialFontSize", "()F", "setInitialFontSize", "(F)V", "initialFontSize$delegate", "Lkotlin/properties/ReadWriteProperty;", "getFontScale", "context", "Landroid/content/Context;", "getIsClassicChatFontScaleEnabled", "", "getScaledFontSize", "init", "", "setFontSize", "fontScale", "isClassicChatFontScaleEnabled", "getCache", "Landroid/content/SharedPreferences;", "kotlin.jvm.PlatformType", "fonts_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
+/* loaded from: classes4.dex */
 public final class FontManager {
     private static final String FONT_SCALE_CHAT_CLASSIC_KEY = "FONT_SCALE_CHAT_CLASSIC_KEY";
     private static final String FONT_SCALE_KEY = "FONT_SCALE_KEY";
     static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {f0.e(new w(FontManager.class, "initialFontSize", "getInitialFontSize()F", 0))};
     public static final FontManager INSTANCE = new FontManager();
-    private static final ReadWriteProperty initialFontSize$delegate = a.f22090a.a();
+    private static final ReadWriteProperty initialFontSize$delegate = a.f22091a.a();
 
     private FontManager() {
     }

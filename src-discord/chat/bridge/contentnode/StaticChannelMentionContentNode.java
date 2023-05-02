@@ -141,7 +141,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     public int hashCode() {
         int hashCode = this.channelId.hashCode() * 31;
         GuildId guildId = this.guildId;
-        return ((hashCode + (guildId == null ? 0 : GuildId.m550hashCodeimpl(guildId.m554unboximpl()))) * 31) + getContent().hashCode();
+        return ((hashCode + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()))) * 31) + getContent().hashCode();
     }
 
     public String toString() {

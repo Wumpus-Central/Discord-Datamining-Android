@@ -26,7 +26,7 @@ public final class BundleUpdaterUtilsKt {
         q.g(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.f(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f28528b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f28529b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {

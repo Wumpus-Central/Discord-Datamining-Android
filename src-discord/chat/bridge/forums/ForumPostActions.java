@@ -13,7 +13,7 @@ import kotlinx.serialization.internal.SerializationConstructorMarker;
 import yi.f;
 
 @f
-@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 02\u00020\u0001:\u0002/0B[\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0010BA\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\n\u001a\u00020\b\u0012\u0006\u0010\u000b\u001a\u00020\b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0002\u0010\u0011J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001e\u001a\u00020\bHÆ\u0003J\t\u0010\u001f\u001a\u00020\bHÆ\u0003J\t\u0010 \u001a\u00020\bHÆ\u0003J\t\u0010!\u001a\u00020\bHÆ\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\rHÆ\u0003JQ\u0010#\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\b2\b\b\u0002\u0010\u000b\u001a\u00020\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\rHÆ\u0001J\u0013\u0010$\u001a\u00020\u00062\b\u0010%\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010&\u001a\u00020\u0003HÖ\u0001J\t\u0010'\u001a\u00020\bHÖ\u0001J!\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u00002\u0006\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020.HÇ\u0001R\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0017R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\n\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0015¨\u00061"}, d2 = {"Lcom/discord/chat/bridge/forums/ForumPostActions;", "", "seen1", "", "numDisplayedReactions", "isFollowing", "", "followIcon", "", "followLabel", "shareIcon", "shareLabel", "defaultReaction", "Lcom/discord/chat/bridge/reaction/MessageReaction;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/MessageReaction;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/MessageReaction;)V", "getDefaultReaction", "()Lcom/discord/chat/bridge/reaction/MessageReaction;", "getFollowIcon", "()Ljava/lang/String;", "getFollowLabel", "()Z", "getNumDisplayedReactions", "()I", "getShareIcon", "getShareLabel", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 52\u00020\u0001:\u000245Be\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0002\u0010\u0012BM\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\n\u001a\u00020\b\u0012\u0006\u0010\u000b\u001a\u00020\b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0002\u0010\u0013J\t\u0010 \u001a\u00020\u0003HÆ\u0003J\t\u0010!\u001a\u00020\u0006HÆ\u0003J\t\u0010\"\u001a\u00020\bHÆ\u0003J\t\u0010#\u001a\u00020\bHÆ\u0003J\t\u0010$\u001a\u00020\bHÆ\u0003J\t\u0010%\u001a\u00020\bHÆ\u0003J\u000b\u0010&\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010'\u001a\u0004\u0018\u00010\u000fHÆ\u0003J]\u0010(\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\b2\b\b\u0002\u0010\u000b\u001a\u00020\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000fHÆ\u0001J\u0013\u0010)\u001a\u00020\u00062\b\u0010*\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010+\u001a\u00020\u0003HÖ\u0001J\t\u0010,\u001a\u00020\bHÖ\u0001J!\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00002\u0006\u00100\u001a\u0002012\u0006\u00102\u001a\u000203HÇ\u0001R\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\n\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0017R\u0011\u0010\u000b\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0017R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001f¨\u00066"}, d2 = {"Lcom/discord/chat/bridge/forums/ForumPostActions;", "", "seen1", "", "numDisplayedReactions", "isFollowing", "", "followIcon", "", "followLabel", "shareIcon", "shareLabel", "defaultReaction", "Lcom/discord/chat/bridge/reaction/MessageReaction;", "sharePrompt", "Lcom/discord/chat/bridge/forums/PostSharePrompt;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/MessageReaction;Lcom/discord/chat/bridge/forums/PostSharePrompt;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/MessageReaction;Lcom/discord/chat/bridge/forums/PostSharePrompt;)V", "getDefaultReaction", "()Lcom/discord/chat/bridge/reaction/MessageReaction;", "getFollowIcon", "()Ljava/lang/String;", "getFollowLabel", "()Z", "getNumDisplayedReactions", "()I", "getShareIcon", "getShareLabel", "getSharePrompt", "()Lcom/discord/chat/bridge/forums/PostSharePrompt;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes4.dex */
 public final class ForumPostActions {
     public static final Companion Companion = new Companion(null);
@@ -24,6 +24,7 @@ public final class ForumPostActions {
     private final int numDisplayedReactions;
     private final String shareIcon;
     private final String shareLabel;
+    private final PostSharePrompt sharePrompt;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/forums/ForumPostActions$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/forums/ForumPostActions;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes4.dex */
@@ -40,7 +41,7 @@ public final class ForumPostActions {
         }
     }
 
-    public /* synthetic */ ForumPostActions(int i10, int i11, boolean z10, String str, String str2, String str3, String str4, MessageReaction messageReaction, SerializationConstructorMarker serializationConstructorMarker) {
+    public /* synthetic */ ForumPostActions(int i10, int i11, boolean z10, String str, String str2, String str3, String str4, MessageReaction messageReaction, PostSharePrompt postSharePrompt, SerializationConstructorMarker serializationConstructorMarker) {
         if (63 != (i10 & 63)) {
             n1.b(i10, 63, ForumPostActions$$serializer.INSTANCE.getDescriptor());
         }
@@ -55,49 +56,38 @@ public final class ForumPostActions {
         } else {
             this.defaultReaction = messageReaction;
         }
-    }
-
-    public static /* synthetic */ ForumPostActions copy$default(ForumPostActions forumPostActions, int i10, boolean z10, String str, String str2, String str3, String str4, MessageReaction messageReaction, int i11, Object obj) {
-        if ((i11 & 1) != 0) {
-            i10 = forumPostActions.numDisplayedReactions;
+        if ((i10 & 128) == 0) {
+            this.sharePrompt = null;
+        } else {
+            this.sharePrompt = postSharePrompt;
         }
-        if ((i11 & 2) != 0) {
-            z10 = forumPostActions.isFollowing;
-        }
-        if ((i11 & 4) != 0) {
-            str = forumPostActions.followIcon;
-        }
-        if ((i11 & 8) != 0) {
-            str2 = forumPostActions.followLabel;
-        }
-        if ((i11 & 16) != 0) {
-            str3 = forumPostActions.shareIcon;
-        }
-        if ((i11 & 32) != 0) {
-            str4 = forumPostActions.shareLabel;
-        }
-        if ((i11 & 64) != 0) {
-            messageReaction = forumPostActions.defaultReaction;
-        }
-        return forumPostActions.copy(i10, z10, str, str2, str3, str4, messageReaction);
     }
 
     public static final void write$Self(ForumPostActions self, CompositeEncoder output, SerialDescriptor serialDesc) {
+        boolean z10;
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        boolean z10 = false;
+        boolean z11 = false;
         output.x(serialDesc, 0, self.numDisplayedReactions);
         output.y(serialDesc, 1, self.isFollowing);
         output.z(serialDesc, 2, self.followIcon);
         output.z(serialDesc, 3, self.followLabel);
         output.z(serialDesc, 4, self.shareIcon);
         output.z(serialDesc, 5, self.shareLabel);
-        if (output.A(serialDesc, 6) || self.defaultReaction != null) {
+        if (!output.A(serialDesc, 6) && self.defaultReaction == null) {
+            z10 = false;
+        } else {
             z10 = true;
         }
         if (z10) {
             output.p(serialDesc, 6, MessageReaction$$serializer.INSTANCE, self.defaultReaction);
+        }
+        if (output.A(serialDesc, 7) || self.sharePrompt != null) {
+            z11 = true;
+        }
+        if (z11) {
+            output.p(serialDesc, 7, PostSharePrompt$$serializer.INSTANCE, self.sharePrompt);
         }
     }
 
@@ -129,12 +119,16 @@ public final class ForumPostActions {
         return this.defaultReaction;
     }
 
-    public final ForumPostActions copy(int i10, boolean z10, String followIcon, String followLabel, String shareIcon, String shareLabel, MessageReaction messageReaction) {
+    public final PostSharePrompt component8() {
+        return this.sharePrompt;
+    }
+
+    public final ForumPostActions copy(int i10, boolean z10, String followIcon, String followLabel, String shareIcon, String shareLabel, MessageReaction messageReaction, PostSharePrompt postSharePrompt) {
         q.g(followIcon, "followIcon");
         q.g(followLabel, "followLabel");
         q.g(shareIcon, "shareIcon");
         q.g(shareLabel, "shareLabel");
-        return new ForumPostActions(i10, z10, followIcon, followLabel, shareIcon, shareLabel, messageReaction);
+        return new ForumPostActions(i10, z10, followIcon, followLabel, shareIcon, shareLabel, messageReaction, postSharePrompt);
     }
 
     public boolean equals(Object obj) {
@@ -145,7 +139,7 @@ public final class ForumPostActions {
             return false;
         }
         ForumPostActions forumPostActions = (ForumPostActions) obj;
-        return this.numDisplayedReactions == forumPostActions.numDisplayedReactions && this.isFollowing == forumPostActions.isFollowing && q.b(this.followIcon, forumPostActions.followIcon) && q.b(this.followLabel, forumPostActions.followLabel) && q.b(this.shareIcon, forumPostActions.shareIcon) && q.b(this.shareLabel, forumPostActions.shareLabel) && q.b(this.defaultReaction, forumPostActions.defaultReaction);
+        return this.numDisplayedReactions == forumPostActions.numDisplayedReactions && this.isFollowing == forumPostActions.isFollowing && q.b(this.followIcon, forumPostActions.followIcon) && q.b(this.followLabel, forumPostActions.followLabel) && q.b(this.shareIcon, forumPostActions.shareIcon) && q.b(this.shareLabel, forumPostActions.shareLabel) && q.b(this.defaultReaction, forumPostActions.defaultReaction) && q.b(this.sharePrompt, forumPostActions.sharePrompt);
     }
 
     public final MessageReaction getDefaultReaction() {
@@ -172,6 +166,10 @@ public final class ForumPostActions {
         return this.shareLabel;
     }
 
+    public final PostSharePrompt getSharePrompt() {
+        return this.sharePrompt;
+    }
+
     public int hashCode() {
         int i10 = this.numDisplayedReactions * 31;
         boolean z10 = this.isFollowing;
@@ -183,7 +181,13 @@ public final class ForumPostActions {
         int i13 = z10 ? 1 : 0;
         int hashCode = (((((((((i10 + i11) * 31) + this.followIcon.hashCode()) * 31) + this.followLabel.hashCode()) * 31) + this.shareIcon.hashCode()) * 31) + this.shareLabel.hashCode()) * 31;
         MessageReaction messageReaction = this.defaultReaction;
-        return hashCode + (messageReaction == null ? 0 : messageReaction.hashCode());
+        int i14 = 0;
+        int hashCode2 = (hashCode + (messageReaction == null ? 0 : messageReaction.hashCode())) * 31;
+        PostSharePrompt postSharePrompt = this.sharePrompt;
+        if (postSharePrompt != null) {
+            i14 = postSharePrompt.hashCode();
+        }
+        return hashCode2 + i14;
     }
 
     public final boolean isFollowing() {
@@ -198,10 +202,11 @@ public final class ForumPostActions {
         String str3 = this.shareIcon;
         String str4 = this.shareLabel;
         MessageReaction messageReaction = this.defaultReaction;
-        return "ForumPostActions(numDisplayedReactions=" + i10 + ", isFollowing=" + z10 + ", followIcon=" + str + ", followLabel=" + str2 + ", shareIcon=" + str3 + ", shareLabel=" + str4 + ", defaultReaction=" + messageReaction + ")";
+        PostSharePrompt postSharePrompt = this.sharePrompt;
+        return "ForumPostActions(numDisplayedReactions=" + i10 + ", isFollowing=" + z10 + ", followIcon=" + str + ", followLabel=" + str2 + ", shareIcon=" + str3 + ", shareLabel=" + str4 + ", defaultReaction=" + messageReaction + ", sharePrompt=" + postSharePrompt + ")";
     }
 
-    public ForumPostActions(int i10, boolean z10, String followIcon, String followLabel, String shareIcon, String shareLabel, MessageReaction messageReaction) {
+    public ForumPostActions(int i10, boolean z10, String followIcon, String followLabel, String shareIcon, String shareLabel, MessageReaction messageReaction, PostSharePrompt postSharePrompt) {
         q.g(followIcon, "followIcon");
         q.g(followLabel, "followLabel");
         q.g(shareIcon, "shareIcon");
@@ -213,9 +218,10 @@ public final class ForumPostActions {
         this.shareIcon = shareIcon;
         this.shareLabel = shareLabel;
         this.defaultReaction = messageReaction;
+        this.sharePrompt = postSharePrompt;
     }
 
-    public /* synthetic */ ForumPostActions(int i10, boolean z10, String str, String str2, String str3, String str4, MessageReaction messageReaction, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(i10, z10, str, str2, str3, str4, (i11 & 64) != 0 ? null : messageReaction);
+    public /* synthetic */ ForumPostActions(int i10, boolean z10, String str, String str2, String str3, String str4, MessageReaction messageReaction, PostSharePrompt postSharePrompt, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(i10, z10, str, str2, str3, str4, (i11 & 64) != 0 ? null : messageReaction, (i11 & 128) != 0 ? null : postSharePrompt);
     }
 }
