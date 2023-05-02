@@ -446,7 +446,7 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 31
+    .locals 33
 
     .line 1
     new-instance v0, Lcom/discord/chat/bridge/MessageType;
@@ -1263,36 +1263,36 @@
 
     .line 420
     .line 421
-    new-instance v0, Lcom/discord/chat/bridge/MessageType;
+    new-instance v2, Lcom/discord/chat/bridge/MessageType;
 
     .line 422
     .line 423
-    const/16 v2, 0x22
+    const/16 v3, 0x22
 
     .line 424
     .line 425
-    const/16 v3, 0x22
+    const/16 v5, 0x22
 
     .line 426
     .line 427
-    const-string v5, "PRIVATE_CHANNEL_INTEGRATION_REMOVED"
+    move-object/from16 v31, v0
 
     .line 428
     .line 429
-    invoke-direct {v0, v5, v2, v3}, Lcom/discord/chat/bridge/MessageType;-><init>(Ljava/lang/String;II)V
+    const-string v0, "PRIVATE_CHANNEL_INTEGRATION_REMOVED"
 
     .line 430
     .line 431
-    .line 432
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->PRIVATE_CHANNEL_INTEGRATION_REMOVED:Lcom/discord/chat/bridge/MessageType;
+    invoke-direct {v2, v0, v3, v5}, Lcom/discord/chat/bridge/MessageType;-><init>(Ljava/lang/String;II)V
 
+    .line 432
     .line 433
     .line 434
-    new-instance v0, Lcom/discord/chat/bridge/MessageType;
+    sput-object v2, Lcom/discord/chat/bridge/MessageType;->PRIVATE_CHANNEL_INTEGRATION_REMOVED:Lcom/discord/chat/bridge/MessageType;
 
     .line 435
     .line 436
-    const/16 v2, 0x23
+    new-instance v0, Lcom/discord/chat/bridge/MessageType;
 
     .line 437
     .line 438
@@ -1300,334 +1300,346 @@
 
     .line 439
     .line 440
-    const-string v5, "PREMIUM_REFERRAL"
+    const/16 v5, 0x23
 
     .line 441
     .line 442
-    invoke-direct {v0, v5, v2, v3}, Lcom/discord/chat/bridge/MessageType;-><init>(Ljava/lang/String;II)V
+    move-object/from16 v32, v2
 
     .line 443
     .line 444
+    const-string v2, "PREMIUM_REFERRAL"
+
     .line 445
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->PREMIUM_REFERRAL:Lcom/discord/chat/bridge/MessageType;
-
     .line 446
-    .line 447
-    invoke-static {}, Lcom/discord/chat/bridge/MessageType;->$values()[Lcom/discord/chat/bridge/MessageType;
+    invoke-direct {v0, v2, v3, v5}, Lcom/discord/chat/bridge/MessageType;-><init>(Ljava/lang/String;II)V
 
+    .line 447
     .line 448
     .line 449
-    .line 450
-    move-result-object v0
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->PREMIUM_REFERRAL:Lcom/discord/chat/bridge/MessageType;
 
+    .line 450
     .line 451
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->$VALUES:[Lcom/discord/chat/bridge/MessageType;
+    invoke-static {}, Lcom/discord/chat/bridge/MessageType;->$values()[Lcom/discord/chat/bridge/MessageType;
 
     .line 452
     .line 453
-    new-instance v0, Lcom/discord/chat/bridge/MessageType$Companion;
-
     .line 454
+    move-result-object v0
+
     .line 455
-    const/4 v2, 0x0
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->$VALUES:[Lcom/discord/chat/bridge/MessageType;
 
     .line 456
-    invoke-direct {v0, v2}, Lcom/discord/chat/bridge/MessageType$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
     .line 457
+    new-instance v0, Lcom/discord/chat/bridge/MessageType$Companion;
+
     .line 458
     .line 459
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->Companion:Lcom/discord/chat/bridge/MessageType$Companion;
+    const/4 v2, 0x0
 
     .line 460
-    .line 461
-    const/16 v0, 0x1a
+    invoke-direct {v0, v2}, Lcom/discord/chat/bridge/MessageType$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
+    .line 461
     .line 462
     .line 463
-    new-array v0, v0, [Lcom/discord/chat/bridge/MessageType;
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->Companion:Lcom/discord/chat/bridge/MessageType$Companion;
 
     .line 464
     .line 465
-    const/4 v2, 0x0
+    const/16 v0, 0x1c
 
     .line 466
-    aput-object v1, v0, v2
-
     .line 467
-    .line 468
-    const/4 v1, 0x1
+    new-array v0, v0, [Lcom/discord/chat/bridge/MessageType;
 
+    .line 468
     .line 469
-    aput-object v4, v0, v1
+    const/4 v2, 0x0
 
     .line 470
-    .line 471
-    const/4 v1, 0x2
+    aput-object v1, v0, v2
 
+    .line 471
     .line 472
-    aput-object v6, v0, v1
+    const/4 v1, 0x1
 
     .line 473
-    .line 474
-    const/4 v1, 0x3
+    aput-object v4, v0, v1
 
+    .line 474
     .line 475
-    aput-object v8, v0, v1
+    const/4 v1, 0x2
 
     .line 476
-    .line 477
-    const/4 v1, 0x4
+    aput-object v6, v0, v1
 
+    .line 477
     .line 478
-    aput-object v10, v0, v1
+    const/4 v1, 0x3
 
     .line 479
-    .line 480
-    const/4 v1, 0x5
+    aput-object v8, v0, v1
 
+    .line 480
     .line 481
-    aput-object v12, v0, v1
+    const/4 v1, 0x4
 
     .line 482
-    .line 483
-    const/4 v1, 0x6
+    aput-object v10, v0, v1
 
+    .line 483
     .line 484
-    aput-object v14, v0, v1
+    const/4 v1, 0x5
 
     .line 485
-    .line 486
-    const/4 v1, 0x7
+    aput-object v12, v0, v1
 
+    .line 486
     .line 487
-    aput-object v15, v0, v1
+    const/4 v1, 0x6
 
     .line 488
-    .line 489
-    const/16 v1, 0x8
+    aput-object v14, v0, v1
 
+    .line 489
     .line 490
+    const/4 v1, 0x7
+
     .line 491
-    aput-object v13, v0, v1
+    aput-object v15, v0, v1
 
     .line 492
     .line 493
-    const/16 v1, 0x9
+    const/16 v1, 0x8
 
     .line 494
     .line 495
-    aput-object v11, v0, v1
+    aput-object v13, v0, v1
 
     .line 496
     .line 497
-    const/16 v1, 0xa
+    const/16 v1, 0x9
 
     .line 498
     .line 499
-    aput-object v9, v0, v1
+    aput-object v11, v0, v1
 
     .line 500
     .line 501
-    const/16 v1, 0xb
+    const/16 v1, 0xa
 
     .line 502
     .line 503
-    aput-object v7, v0, v1
+    aput-object v9, v0, v1
 
     .line 504
     .line 505
-    const/16 v1, 0xc
+    const/16 v1, 0xb
 
     .line 506
     .line 507
-    aput-object v22, v0, v1
+    aput-object v7, v0, v1
 
     .line 508
     .line 509
-    const/16 v1, 0xd
+    const/16 v1, 0xc
 
     .line 510
     .line 511
-    aput-object v17, v0, v1
+    aput-object v22, v0, v1
 
     .line 512
     .line 513
-    const/16 v1, 0xe
+    const/16 v1, 0xd
 
     .line 514
     .line 515
-    aput-object v18, v0, v1
+    aput-object v17, v0, v1
 
     .line 516
     .line 517
-    const/16 v1, 0xf
+    const/16 v1, 0xe
 
     .line 518
     .line 519
-    aput-object v19, v0, v1
+    aput-object v18, v0, v1
 
     .line 520
     .line 521
-    const/16 v1, 0x10
+    const/16 v1, 0xf
 
     .line 522
     .line 523
-    aput-object v20, v0, v1
+    aput-object v19, v0, v1
 
     .line 524
     .line 525
-    const/16 v1, 0x11
+    const/16 v1, 0x10
 
     .line 526
     .line 527
-    aput-object v21, v0, v1
+    aput-object v20, v0, v1
 
     .line 528
     .line 529
-    const/16 v1, 0x12
+    const/16 v1, 0x11
 
     .line 530
     .line 531
-    aput-object v23, v0, v1
+    aput-object v21, v0, v1
 
     .line 532
     .line 533
-    const/16 v1, 0x13
+    const/16 v1, 0x12
 
     .line 534
     .line 535
-    aput-object v24, v0, v1
+    aput-object v23, v0, v1
 
     .line 536
     .line 537
-    const/16 v1, 0x14
+    const/16 v1, 0x13
 
     .line 538
     .line 539
-    aput-object v25, v0, v1
+    aput-object v24, v0, v1
 
     .line 540
     .line 541
-    const/16 v1, 0x15
+    const/16 v1, 0x14
 
     .line 542
     .line 543
-    aput-object v26, v0, v1
+    aput-object v25, v0, v1
 
     .line 544
     .line 545
-    const/16 v1, 0x16
+    const/16 v1, 0x15
 
     .line 546
     .line 547
-    aput-object v27, v0, v1
+    aput-object v26, v0, v1
 
     .line 548
     .line 549
-    const/16 v1, 0x17
+    const/16 v1, 0x16
 
     .line 550
     .line 551
-    aput-object v28, v0, v1
+    aput-object v27, v0, v1
 
     .line 552
     .line 553
-    const/16 v1, 0x18
+    const/16 v1, 0x17
 
     .line 554
     .line 555
-    aput-object v29, v0, v1
+    aput-object v28, v0, v1
 
     .line 556
     .line 557
-    const/16 v1, 0x19
+    const/16 v1, 0x18
 
     .line 558
     .line 559
-    aput-object v30, v0, v1
+    aput-object v29, v0, v1
 
     .line 560
     .line 561
-    move-object/from16 v1, v16
+    const/16 v1, 0x19
 
     .line 562
     .line 563
-    invoke-static {v1, v0}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;[Ljava/lang/Enum;)Ljava/util/EnumSet;
+    aput-object v30, v0, v1
 
     .line 564
     .line 565
-    .line 566
-    move-result-object v0
+    const/16 v1, 0x1a
 
+    .line 566
     .line 567
-    const-string v1, "of(\n            RECIPIEN\u2026M_SUBSCRIPTION,\n        )"
+    aput-object v31, v0, v1
 
     .line 568
     .line 569
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/16 v1, 0x1b
 
     .line 570
     .line 571
+    aput-object v32, v0, v1
+
     .line 572
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->SystemTypes:Ljava/util/Set;
-
     .line 573
-    .line 574
-    invoke-static {v4, v7}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;
+    move-object/from16 v1, v16
 
+    .line 574
     .line 575
+    invoke-static {v1, v0}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;[Ljava/lang/Enum;)Ljava/util/EnumSet;
+
     .line 576
     .line 577
-    move-result-object v0
-
     .line 578
-    const-string v1, "of(\n            CALL,\n  \u2026  GUILD_STREAM,\n        )"
+    move-result-object v0
 
     .line 579
+    const-string v1, "of(\n            RECIPIEN\u2026RATION_REMOVED,\n        )"
+
     .line 580
+    .line 581
     invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 581
     .line 582
     .line 583
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->CallTypes:Ljava/util/Set;
-
     .line 584
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->SystemTypes:Ljava/util/Set;
+
     .line 585
-    sget-object v0, Lnf/p;->l:Lnf/p;
-
     .line 586
-    .line 587
-    sget-object v1, Lcom/discord/chat/bridge/MessageType$Companion$$cachedSerializer$delegate$1;->INSTANCE:Lcom/discord/chat/bridge/MessageType$Companion$$cachedSerializer$delegate$1;
+    invoke-static {v4, v7}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;
 
+    .line 587
     .line 588
     .line 589
-    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
-
-    .line 590
-    .line 591
-    .line 592
     move-result-object v0
 
-    .line 593
-    sput-object v0, Lcom/discord/chat/bridge/MessageType;->$cachedSerializer$delegate:Lkotlin/Lazy;
+    .line 590
+    const-string v1, "of(\n            CALL,\n  \u2026  GUILD_STREAM,\n        )"
 
+    .line 591
+    .line 592
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/q;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 593
     .line 594
     .line 595
-    return-void
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->CallTypes:Ljava/util/Set;
+
     .line 596
     .line 597
+    sget-object v0, Lnf/p;->l:Lnf/p;
+
     .line 598
     .line 599
+    sget-object v1, Lcom/discord/chat/bridge/MessageType$Companion$$cachedSerializer$delegate$1;->INSTANCE:Lcom/discord/chat/bridge/MessageType$Companion$$cachedSerializer$delegate$1;
+
     .line 600
     .line 601
+    invoke-static {v0, v1}, Lnf/m;->b(Lnf/p;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
     .line 602
     .line 603
     .line 604
+    move-result-object v0
+
     .line 605
+    sput-object v0, Lcom/discord/chat/bridge/MessageType;->$cachedSerializer$delegate:Lkotlin/Lazy;
+
     .line 606
     .line 607
+    return-void
     .line 608
     .line 609
     .line 610
