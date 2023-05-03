@@ -1,9 +1,9 @@
 package com.discord.notifications.api;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes3.dex */
 public final class R {
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class attr {
         public static final int alpha = 0x7f040033;
         public static final int font = 0x7f0401d1;
@@ -27,20 +27,20 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class color {
         public static final int androidx_core_ripple_material_light = 0x7f06001f;
         public static final int androidx_core_secondary_text_default_material_light = 0x7f060020;
-        public static final int notification_action_color_filter = 0x7f06035e;
-        public static final int notification_icon_bg_color = 0x7f06035f;
-        public static final int ripple_material_light = 0x7f0603f5;
-        public static final int secondary_text_default_material_light = 0x7f060411;
+        public static final int notification_action_color_filter = 0x7f06035f;
+        public static final int notification_icon_bg_color = 0x7f060360;
+        public static final int ripple_material_light = 0x7f0603f6;
+        public static final int secondary_text_default_material_light = 0x7f060412;
 
         private color() {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class dimen {
         public static final int compat_button_inset_horizontal_material = 0x7f07005b;
         public static final int compat_button_inset_vertical_material = 0x7f07005c;
@@ -69,27 +69,27 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class drawable {
         public static final int abc_vector_test = 0x7f080056;
-        public static final int notification_action_background = 0x7f080639;
-        public static final int notification_bg = 0x7f08063a;
-        public static final int notification_bg_low = 0x7f08063b;
-        public static final int notification_bg_low_normal = 0x7f08063c;
-        public static final int notification_bg_low_pressed = 0x7f08063d;
-        public static final int notification_bg_normal = 0x7f08063e;
-        public static final int notification_bg_normal_pressed = 0x7f08063f;
-        public static final int notification_icon_background = 0x7f080640;
-        public static final int notification_template_icon_bg = 0x7f080641;
-        public static final int notification_template_icon_low_bg = 0x7f080642;
-        public static final int notification_tile_bg = 0x7f080643;
-        public static final int notify_panel_notification_icon_bg = 0x7f080644;
+        public static final int notification_action_background = 0x7f080638;
+        public static final int notification_bg = 0x7f080639;
+        public static final int notification_bg_low = 0x7f08063a;
+        public static final int notification_bg_low_normal = 0x7f08063b;
+        public static final int notification_bg_low_pressed = 0x7f08063c;
+        public static final int notification_bg_normal = 0x7f08063d;
+        public static final int notification_bg_normal_pressed = 0x7f08063e;
+        public static final int notification_icon_background = 0x7f08063f;
+        public static final int notification_template_icon_bg = 0x7f080640;
+        public static final int notification_template_icon_low_bg = 0x7f080641;
+        public static final int notification_tile_bg = 0x7f080642;
+        public static final int notify_panel_notification_icon_bg = 0x7f080643;
 
         private drawable() {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class id {
         public static final int accessibility_action_clickable_span = 0x7f0a0013;
         public static final int accessibility_custom_action_0 = 0x7f0a0017;
@@ -170,7 +170,7 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f0b003e;
 
@@ -178,7 +178,7 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class layout {
         public static final int custom_dialog = 0x7f0d002d;
         public static final int notification_action = 0x7f0d00a1;
@@ -192,7 +192,7 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class string {
         public static final int status_bar_notification_info_overflow = 0x7f120112;
 
@@ -200,7 +200,7 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f1301df;
         public static final int TextAppearance_Compat_Notification_Info = 0x7f1301e0;
@@ -214,7 +214,7 @@ public final class R {
         }
     }
 
-    /* loaded from: classes5.dex */
+    /* loaded from: classes3.dex */
     public static final class styleable {
         public static final int AnimatedStateListDrawableCompat_android_constantSize = 0x00000003;
         public static final int AnimatedStateListDrawableCompat_android_dither = 0x00000000;
