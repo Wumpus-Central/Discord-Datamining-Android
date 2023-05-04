@@ -254,7 +254,6 @@ public class EglRenderer implements VideoSink {
         float f10;
         float f11;
         float f12;
-        float f13;
         long d10;
         synchronized (this.frameLock) {
             VideoFrame videoFrame = this.pendingFrame;
@@ -304,13 +303,7 @@ public class EglRenderer implements VideoSink {
                 }
                 this.drawMatrix.reset();
                 this.drawMatrix.preTranslate(0.5f, 0.5f);
-                Matrix matrix = this.drawMatrix;
-                if (this.mirrorHorizontally) {
-                    f13 = -1.0f;
-                } else {
-                    f13 = 1.0f;
-                }
-                matrix.preScale(f13, 1.0f);
+                this.drawMatrix.preScale(this.mirrorHorizontally ? -1.0f : 1.0f, 1.0f);
                 this.drawMatrix.preScale(f11, f12);
                 this.drawMatrix.preTranslate(-0.5f, -0.5f);
                 try {

@@ -7,6 +7,6 @@
         <ImageView app:srcCompat="@drawable/ucrop_ic_reset" style="@style/ucrop_ImageViewWidgetIcon" />
     </FrameLayout>
     <FrameLayout android:id="@id/wrapper_rotate_by_angle" android:background="?selectableItemBackground" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ucrop_WrapperRotateButton">
-        <ImageView android:src="@drawable/APKTOOL_DUMMY_64c" android:tint="@color/ucrop_color_widget_rotate_angle" style="@style/ucrop_ImageViewWidgetIcon" />
+        <ImageView android:src="@drawable/APKTOOL_DUMMY_652" android:tint="@color/ucrop_color_widget_rotate_angle" style="@style/ucrop_ImageViewWidgetIcon" />
     </FrameLayout>
 </RelativeLayout>

@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.mobile_voice_overlay.MobileVoiceOverlayManagerModule;
+import com.discord.theme.ThemeModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$76 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.g(it, "it");
-        return MobileVoiceOverlayManagerModule.Companion.create(it);
+        return ThemeModule.Companion.create(it);
     }
 }

@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.channel_spine.ChannelSpineViewManager;
+import com.discord.animatable_underlay.AnimatableUnderlayViewManager;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewManager;
@@ -20,6 +20,6 @@ final class DCDPackageList$getPackages$53 extends s implements Function1<ReactAp
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
         q.g(it, "it");
-        return new ChannelSpineViewManager();
+        return new AnimatableUnderlayViewManager();
     }
 }

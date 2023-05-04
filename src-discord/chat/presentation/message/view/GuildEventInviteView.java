@@ -62,7 +62,9 @@ public final class GuildEventInviteView extends ConstraintLayout {
 
     public final void setAcceptButton(String str, String str2, Integer num, Integer num2, Integer num3, View.OnClickListener onClickListener) {
         DCDButton dCDButton = this.binding.acceptButton;
-        dCDButton.setIcon(str, SizeUtilsKt.getDpToPx(24));
+        if (str != null) {
+            dCDButton.setIcon(str, SizeUtilsKt.getDpToPx(24));
+        }
         dCDButton.setText(str2);
         dCDButton.setTextColor(num);
         dCDButton.setBackgroundColor(num3);

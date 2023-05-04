@@ -46,38 +46,29 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
     public final Object invokeSuspend(Object obj) {
         Object d10;
         MaterialButton materialButton;
-        Drawable drawable;
-        MaterialButton materialButton2;
         d10 = d.d();
         int i10 = this.label;
         if (i10 == 0) {
             t.b(obj);
-            materialButton = this.$this_setReactIcon;
+            MaterialButton materialButton2 = this.$this_setReactIcon;
             String str = this.$assetUrl;
-            drawable = null;
-            if (str != null) {
-                CoroutineDispatcher b10 = y0.b();
-                ReactAssetUtilsKt$setReactIcon$1$1$1 reactAssetUtilsKt$setReactIcon$1$1$1 = new ReactAssetUtilsKt$setReactIcon$1$1$1(materialButton, str, null);
-                this.L$0 = materialButton;
-                this.label = 1;
-                Object g10 = j.g(b10, reactAssetUtilsKt$setReactIcon$1$1$1, this);
-                if (g10 == d10) {
-                    return d10;
-                }
-                materialButton2 = materialButton;
-                obj = g10;
+            CoroutineDispatcher b10 = y0.b();
+            ReactAssetUtilsKt$setReactIcon$1$1$1 reactAssetUtilsKt$setReactIcon$1$1$1 = new ReactAssetUtilsKt$setReactIcon$1$1$1(materialButton2, str, null);
+            this.L$0 = materialButton2;
+            this.label = 1;
+            Object g10 = j.g(b10, reactAssetUtilsKt$setReactIcon$1$1$1, this);
+            if (g10 == d10) {
+                return d10;
             }
-            materialButton.setIcon(drawable);
-            return Unit.f22035a;
+            materialButton = materialButton2;
+            obj = g10;
         } else if (i10 == 1) {
-            materialButton2 = (MaterialButton) this.L$0;
+            materialButton = (MaterialButton) this.L$0;
             t.b(obj);
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        drawable = (Drawable) obj;
-        materialButton = materialButton2;
-        materialButton.setIcon(drawable);
+        materialButton.setIcon((Drawable) obj);
         return Unit.f22035a;
     }
 }

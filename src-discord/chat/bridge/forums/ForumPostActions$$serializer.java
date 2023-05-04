@@ -31,9 +31,9 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
         PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.bridge.forums.ForumPostActions", forumPostActions$$serializer, 8);
         pluginGeneratedSerialDescriptor.l("numDisplayedReactions", false);
         pluginGeneratedSerialDescriptor.l("isFollowing", false);
-        pluginGeneratedSerialDescriptor.l("followIcon", false);
+        pluginGeneratedSerialDescriptor.l("followIcon", true);
         pluginGeneratedSerialDescriptor.l("followLabel", false);
-        pluginGeneratedSerialDescriptor.l("shareIcon", false);
+        pluginGeneratedSerialDescriptor.l("shareIcon", true);
         pluginGeneratedSerialDescriptor.l("shareLabel", false);
         pluginGeneratedSerialDescriptor.l("defaultReaction", true);
         pluginGeneratedSerialDescriptor.l("sharePrompt", true);
@@ -46,94 +46,95 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
     @Override // bj.f0
     public KSerializer<?>[] childSerializers() {
         a2 a2Var = a2.f5917a;
-        return new KSerializer[]{m0.f5992a, h.f5959a, a2Var, a2Var, a2Var, a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
+        return new KSerializer[]{m0.f5992a, h.f5959a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public ForumPostActions deserialize(Decoder decoder) {
         String str;
         String str2;
-        String str3;
-        String str4;
         boolean z10;
         int i10;
         int i11;
         Object obj;
         Object obj2;
+        Object obj3;
+        Object obj4;
+        char c10;
         q.g(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
+        int i12 = 7;
         if (b10.p()) {
             i10 = b10.i(descriptor2, 0);
             z10 = b10.C(descriptor2, 1);
-            str4 = b10.m(descriptor2, 2);
-            str3 = b10.m(descriptor2, 3);
-            str2 = b10.m(descriptor2, 4);
+            a2 a2Var = a2.f5917a;
+            obj = b10.n(descriptor2, 2, a2Var, null);
+            str2 = b10.m(descriptor2, 3);
+            obj2 = b10.n(descriptor2, 4, a2Var, null);
             str = b10.m(descriptor2, 5);
-            obj = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, null);
-            obj2 = b10.n(descriptor2, 7, PostSharePrompt$$serializer.INSTANCE, null);
+            obj3 = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, null);
+            obj4 = b10.n(descriptor2, 7, PostSharePrompt$$serializer.INSTANCE, null);
             i11 = 255;
         } else {
             boolean z11 = true;
-            int i12 = 0;
             int i13 = 0;
-            Object obj3 = null;
-            str4 = null;
-            str3 = null;
+            int i14 = 0;
+            Object obj5 = null;
+            Object obj6 = null;
             str2 = null;
+            Object obj7 = null;
             str = null;
-            Object obj4 = null;
+            Object obj8 = null;
             boolean z12 = false;
             while (z11) {
                 int o10 = b10.o(descriptor2);
                 switch (o10) {
                     case -1:
                         z11 = false;
-                        break;
                     case 0:
-                        i12 = b10.i(descriptor2, 0);
-                        i13 |= 1;
-                        continue;
+                        i13 = b10.i(descriptor2, 0);
+                        i14 |= 1;
+                        i12 = 7;
                     case 1:
+                        c10 = 2;
                         z12 = b10.C(descriptor2, 1);
-                        i13 |= 2;
-                        continue;
+                        i14 |= 2;
+                        i12 = 7;
                     case 2:
-                        str4 = b10.m(descriptor2, 2);
-                        i13 |= 4;
-                        continue;
+                        c10 = 2;
+                        obj6 = b10.n(descriptor2, 2, a2.f5917a, obj6);
+                        i14 |= 4;
+                        i12 = 7;
                     case 3:
-                        str3 = b10.m(descriptor2, 3);
-                        i13 |= 8;
-                        break;
+                        str2 = b10.m(descriptor2, 3);
+                        i14 |= 8;
                     case 4:
-                        str2 = b10.m(descriptor2, 4);
-                        i13 |= 16;
-                        break;
+                        obj7 = b10.n(descriptor2, 4, a2.f5917a, obj7);
+                        i14 |= 16;
                     case 5:
                         str = b10.m(descriptor2, 5);
-                        i13 |= 32;
-                        break;
+                        i14 |= 32;
                     case 6:
-                        obj4 = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, obj4);
-                        i13 |= 64;
-                        break;
+                        obj8 = b10.n(descriptor2, 6, MessageReaction$$serializer.INSTANCE, obj8);
+                        i14 |= 64;
                     case 7:
-                        obj3 = b10.n(descriptor2, 7, PostSharePrompt$$serializer.INSTANCE, obj3);
-                        i13 |= 128;
-                        break;
+                        obj5 = b10.n(descriptor2, i12, PostSharePrompt$$serializer.INSTANCE, obj5);
+                        i14 |= 128;
                     default:
                         throw new n(o10);
                 }
             }
-            obj2 = obj3;
-            obj = obj4;
-            i11 = i13;
+            obj4 = obj5;
+            obj3 = obj8;
+            i11 = i14;
+            obj = obj6;
+            obj2 = obj7;
             z10 = z12;
-            i10 = i12;
+            i10 = i13;
         }
         b10.c(descriptor2);
-        return new ForumPostActions(i11, i10, z10, str4, str3, str2, str, (MessageReaction) obj, (PostSharePrompt) obj2, (SerializationConstructorMarker) null);
+        return new ForumPostActions(i11, i10, z10, (String) obj, str2, (String) obj2, str, (MessageReaction) obj3, (PostSharePrompt) obj4, (SerializationConstructorMarker) null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
