@@ -279,6 +279,10 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="discord_8th_bday_blue">#ff5665f9</color>
+    <color name="discord_8th_bday_dark_blue">#ff3241e0</color>
+    <color name="discord_8th_bday_green">#ffa4ef00</color>
+    <color name="discord_8th_bday_light_blue">#ff5e8fff</color>
     <color name="discord_8th_bday_pink">#ffff52d2</color>
     <color name="discord_8th_bday_purple">#ff5665f9</color>
     <color name="discord_8th_bday_yellow">#ffffff00</color>

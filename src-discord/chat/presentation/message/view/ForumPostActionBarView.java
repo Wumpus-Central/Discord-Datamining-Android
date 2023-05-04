@@ -242,17 +242,17 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             reactionsView2.setVisibility(0);
             setReactions(MessageId.m569toStringimpl(messageId), x02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z12);
             int max = Math.max(list.size() - i13, 0);
-            DCDButton configure_CgeVRR0$lambda$6 = this.binding.otherReactionsCount;
-            q.f(configure_CgeVRR0$lambda$6, "configure_CgeVRR0$lambda$6");
-            configure_CgeVRR0$lambda$6.setVisibility(max != 0 ? 0 : 8);
-            if (configure_CgeVRR0$lambda$6.getVisibility() == 0) {
-                Context context = configure_CgeVRR0$lambda$6.getContext();
+            DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
+            q.f(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
+            configure_CgeVRR0$lambda$7.setVisibility(max != 0 ? 0 : 8);
+            if (configure_CgeVRR0$lambda$7.getVisibility() == 0) {
+                Context context = configure_CgeVRR0$lambda$7.getContext();
                 q.f(context, "context");
-                configure_CgeVRR0$lambda$6.setText(I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_REACTIONS_OVERFLOW, new ForumPostActionBarView$configure$1$1(max)));
+                configure_CgeVRR0$lambda$7.setText(I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_REACTIONS_OVERFLOW, new ForumPostActionBarView$configure$1$1(max)));
                 i11 = 2;
                 obj = null;
-                RippleUtilsKt.addRipple$default(configure_CgeVRR0$lambda$6, true, 0, 2, null);
-                configure_CgeVRR0$lambda$6.setOnClickButtonListener(onTapReactionOverflow);
+                RippleUtilsKt.addRipple$default(configure_CgeVRR0$lambda$7, true, 0, 2, null);
+                configure_CgeVRR0$lambda$7.setOnClickButtonListener(onTapReactionOverflow);
             } else {
                 i11 = 2;
                 obj = null;
@@ -276,10 +276,10 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         }
         dCDButton3.setOnClickButtonListener(onTapShareForumPost);
         dCDButton3.setContentDescription(shareLabel);
-        AddReactionView configure_CgeVRR0$lambda$9 = this.binding.addReaction;
-        q.f(configure_CgeVRR0$lambda$9, "configure_CgeVRR0$lambda$9");
-        configure_CgeVRR0$lambda$9.setVisibility(z11 ? 0 : 8);
-        if (configure_CgeVRR0$lambda$9.getVisibility() == 0) {
+        AddReactionView configure_CgeVRR0$lambda$10 = this.binding.addReaction;
+        q.f(configure_CgeVRR0$lambda$10, "configure_CgeVRR0$lambda$10");
+        configure_CgeVRR0$lambda$10.setVisibility(z11 ? 0 : 8);
+        if (configure_CgeVRR0$lambda$10.getVisibility() == 0) {
             boolean z15 = z13 ? 1 : 0;
             Object[] objArr = z13 ? 1 : 0;
             Object[] objArr2 = z13 ? 1 : 0;
@@ -289,13 +289,13 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             z14 = false;
         }
         if (z14) {
-            RippleUtilsKt.addRipple$default(configure_CgeVRR0$lambda$9, z13, 0, i11, obj);
-            configure_CgeVRR0$lambda$9.setContentDescription(addNewReactionAccessibilityLabel);
+            RippleUtilsKt.addRipple$default(configure_CgeVRR0$lambda$10, z13, 0, i11, obj);
+            configure_CgeVRR0$lambda$10.setContentDescription(addNewReactionAccessibilityLabel);
             int i14 = z13 ? 1 : 0;
             int i15 = z13 ? 1 : 0;
             int i16 = z13 ? 1 : 0;
             int i17 = z13 ? 1 : 0;
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$9, false, onAddReactionClick, i14, obj);
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$10, false, onAddReactionClick, i14, obj);
         }
         setSharePrompt(postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick);
     }
@@ -340,9 +340,11 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         dCDButton4.setCornerRadius(SizeUtilsKt.getDpToPx(20));
         dCDButton4.setTextSizeSp(14.0f);
         dCDButton4.setBackgroundColor(context.getColor(R.color.brand_500));
-        dCDButton4.setTextColor(Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveActive()));
+        dCDButton4.setTextColor(Integer.valueOf(ThemeManagerKt.getTheme().getWhite()));
         dCDButton4.setDiscordFont(discordFont2);
         dCDButton4.setIconPadding(8);
-        inflate.sharePromptCloseButton.setBackgroundColor(0);
+        DCDButton dCDButton5 = inflate.sharePromptCloseButton;
+        dCDButton5.setTextColor(Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
+        dCDButton5.setBackgroundColor(0);
     }
 }

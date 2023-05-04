@@ -104,7 +104,7 @@ public final class CrashReporting {
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@178.4.0-2+178204");
+        options.setRelease("discord_android@178.5.0-2+178205");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -112,7 +112,7 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("cb41b8d1-3414-40dc-abdf-78edbc5ddc21");
+        options.setProguardUuid("3ba6b01f-2bc3-4a83-a918-3fe3849f476e");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }

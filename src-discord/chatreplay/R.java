@@ -31,8 +31,8 @@ public final class R {
     public static final class color {
         public static final int androidx_core_ripple_material_light = 0x7f06001f;
         public static final int androidx_core_secondary_text_default_material_light = 0x7f060020;
-        public static final int notification_action_color_filter = 0x7f06035f;
-        public static final int notification_icon_bg_color = 0x7f060360;
+        public static final int notification_action_color_filter = 0x7f060363;
+        public static final int notification_icon_bg_color = 0x7f060364;
 
         private color() {
         }
@@ -69,18 +69,18 @@ public final class R {
 
     /* loaded from: classes4.dex */
     public static final class drawable {
-        public static final int notification_action_background = 0x7f08063e;
-        public static final int notification_bg = 0x7f08063f;
-        public static final int notification_bg_low = 0x7f080640;
-        public static final int notification_bg_low_normal = 0x7f080641;
-        public static final int notification_bg_low_pressed = 0x7f080642;
-        public static final int notification_bg_normal = 0x7f080643;
-        public static final int notification_bg_normal_pressed = 0x7f080644;
-        public static final int notification_icon_background = 0x7f080645;
-        public static final int notification_template_icon_bg = 0x7f080646;
-        public static final int notification_template_icon_low_bg = 0x7f080647;
-        public static final int notification_tile_bg = 0x7f080648;
-        public static final int notify_panel_notification_icon_bg = 0x7f080649;
+        public static final int notification_action_background = 0x7f08063d;
+        public static final int notification_bg = 0x7f08063e;
+        public static final int notification_bg_low = 0x7f08063f;
+        public static final int notification_bg_low_normal = 0x7f080640;
+        public static final int notification_bg_low_pressed = 0x7f080641;
+        public static final int notification_bg_normal = 0x7f080642;
+        public static final int notification_bg_normal_pressed = 0x7f080643;
+        public static final int notification_icon_background = 0x7f080644;
+        public static final int notification_template_icon_bg = 0x7f080645;
+        public static final int notification_template_icon_low_bg = 0x7f080646;
+        public static final int notification_tile_bg = 0x7f080647;
+        public static final int notify_panel_notification_icon_bg = 0x7f080648;
 
         private drawable() {
         }
