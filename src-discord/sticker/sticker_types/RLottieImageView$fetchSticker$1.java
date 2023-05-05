@@ -160,8 +160,11 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                         File file = ((DownloadState.Completed) this.$downloadState).getFile();
                         int dpToPx = SizeUtilsKt.getDpToPx(this.$config.getWidthDp());
                         int dpToPx2 = SizeUtilsKt.getDpToPx(this.$config.getHeightDp());
-                        if (this.$config.getRenderMode() == 0) {
+                        int renderMode = this.$config.getRenderMode();
+                        if (renderMode == 0) {
                             playbackMode = RLottieDrawable.PlaybackMode.LOOP;
+                        } else if (renderMode != 1) {
+                            playbackMode = RLottieDrawable.PlaybackMode.ONCE;
                         } else {
                             playbackMode = RLottieDrawable.PlaybackMode.FREEZE;
                         }
