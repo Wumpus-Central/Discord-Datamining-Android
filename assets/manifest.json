@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "178206",
+        "build": "178207",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "9f7bb1e306b13e3fb6109fd97b2b3dab",
+        "app/src/main/assets/index.android.bundle": "fe1546226a44dbb52a82b8ed5e777c2c",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -462,7 +462,7 @@
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_blocked_users.png": "365e1f9367b12a6aeef8efe49746c1fd",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_contact_invite_suggestions.png": "681b695d001ab830aa76c9a010ed97db",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_contacts.png": "95b0f832b2de26aa47f50bc3d50de076",
-        "app/src/main/res/drawable-xhdpi/images_native_empties_empty_dms_activities.png": "6be8d220e6f4adca1f7da901d60a96e3",
+        "app/src/main/res/drawable-xhdpi/images_native_empties_empty_dms_activities.png": "a110b23b43885772cdabfaa625859bf7",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_dms.png": "174accd13c59dff6001c6f911998002d",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_expanded_friend_list_dark.png": "a28655d5d278e633d72bb0b4022c8d53",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_expanded_friend_list_light.png": "767f9a46e7d7c6b9253985480bbbc491",
@@ -1617,7 +1617,7 @@
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_blocked_users.png": "0a41e0510e2c1c1b2203275ebda463df",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_contact_invite_suggestions.png": "5cac66bb461a5ce4997d8666d4a569bd",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_contacts.png": "7a958a9fbcded4c33db4e781a72ff191",
-        "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_dms_activities.png": "539e7cb71dcff23db5227fe5a71628d9",
+        "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_dms_activities.png": "31220175dd8cf88d1708843805ccef79",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_dms.png": "475c841cb6f9687486e65371132cb3b3",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_expanded_friend_list_dark.png": "6cccce159085f614bb3859554326032a",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_expanded_friend_list_light.png": "2f48c633f5c8e72f7d35ec3020db703c",
