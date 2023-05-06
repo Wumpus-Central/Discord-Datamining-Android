@@ -2,9 +2,11 @@ package com.discord.share;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import com.discord.react_activities.ReactActivity;
 import com.discord.share.ShareProps;
+import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -39,7 +41,17 @@ public final class ShareActivity extends ReactActivity {
                 q.f(intent, "intent");
                 Context context = getContext();
                 q.f(context, "context");
-                this.shareProps = companion.createShareProps(intent, context);
+                ShareProps createShareProps = companion.createShareProps(intent, context);
+                this.shareProps = createShareProps;
+                if (createShareProps == null) {
+                    q.y("shareProps");
+                    createShareProps = null;
+                }
+                List<ShareProps.Attachment> attachments = createShareProps.getAttachments();
+                ShareActivity shareActivity = ShareActivity.this;
+                for (ShareProps.Attachment attachment : attachments) {
+                    shareActivity.grantUriPermission(shareActivity.getPackageName(), Uri.parse(attachment.getUri()), 1);
+                }
                 super.onCreate(bundle);
             }
         };
