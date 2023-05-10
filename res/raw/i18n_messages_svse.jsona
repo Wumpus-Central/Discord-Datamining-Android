@@ -827,7 +827,7 @@
   "POMELO_EXISTING_FLOW_ERROR_DOT_DOT": "Användarnamnet får inte innehålla flera punkter i rad.",
   "POMELO_SUGGESTION_ORIGIN_NOTICE": "Förslag utifrån ditt gamla användarnamn, {source}.",
   "POMELO_CHANGELOG_TITLE": "Lystring! Nu stöps användarnamnen om",
-  "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_1": "Under de kommande veckorna kommer alla att få uppdatera sina användarnamn till ett nytt format. Istället för diskriminatorn (#0001-numret) blir användarnamnen helt unika (**@användarnamn**). Visningsnamnet som du har i dag kan du behålla, eller så kan du uppdatera det till något mer uttrycksfullt.",
+  "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_1": "Under de kommande veckorna kommer alla att få uppdatera sina användarnamn till ett nytt format. Istället för diskriminatorn (#0001-numret) blir användarnamnen helt unika (@användarnamn). Visningsnamnet som du har i dag kan du behålla, eller så kan du uppdatera det till något mer uttrycksfullt.",
   "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_2": "Vi vet att det här är samma grej som i andra appar, men det är poängen. De nya användarnamnen blir enklare att minnas och dela med vännerna. **Vi säger till när du kan ändra**. Ju längre du har använt Discord, desto förr kommer din tur.",
   "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_3": "Det här är inget vi ändrar i förbigående. [Läs ett meddelande]({url}) från en av våra grundare om bakgrunden.",
   "ACTIVITIES_SHARE_LOGS": "Dela aktivitetsloggar",

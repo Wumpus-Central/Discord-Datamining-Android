@@ -827,7 +827,7 @@
   "POMELO_EXISTING_FLOW_ERROR_DOT_DOT": "El nombre de usuario no puede contener puntos repetidos.",
   "POMELO_SUGGESTION_ORIGIN_NOTICE": "Sugerencia de tu antiguo nombre de usuario, {source}.",
   "POMELO_CHANGELOG_TITLE": "¡Anda! ¡Los nombres de usuario están evolucionando!",
-  "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_1": "Durante las próximas semanas, todo el mundo tendrá que actualizar su nombre de usuario a un nuevo formato. En lugar de tener una terminación numérica (el número #0001), los nuevos nombres de usuario serán únicos (**@nombredeusuario**). Podrás conservar el nombre que ya muestras a los demás u optar por un nuevo nombre más alocado para expresarte mejor.",
+  "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_1": "Durante las próximas semanas, todo el mundo tendrá que actualizar su nombre de usuario a un nuevo formato. En lugar de tener una terminación numérica (el número #0001), los nuevos nombres de usuario serán únicos (@nombredeusuario). Podrás conservar el nombre que ya muestras a los demás u optar por un nuevo nombre más alocado para expresarte mejor.",
   "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_2": "Sabemos que era algo que nos diferenciaba del resto de aplicaciones, pero he ahí la cuestión. Los nuevos nombres de usuario serán más fáciles de recordar y harán que vuestros amigos puedan encontraros con mayor facilidad. **Avisaremos de cuándo se podrá realizar este cambio**. Cuanto más se haya usado Discord, antes se podrá hacer el cambio.",
   "POMELO_ANNOUNCEMENT_BODY_PARAGRAPH_3": "No es un cambio que hayamos llevado a cabo la ligera. [Aquí podéis leer el comunicado]({url}) de uno de nuestros cofundadores con respecto a esta decisión.",
   "ACTIVITIES_SHARE_LOGS": "Compartir registros de actividad",
