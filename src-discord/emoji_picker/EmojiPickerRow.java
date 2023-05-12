@@ -18,14 +18,14 @@ public final class EmojiPickerRow {
         private final boolean disabled;
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f7434id;
+        private final String f7435id;
         private final String name;
         private final String url;
 
         public Emoji(String str, String name, String url, boolean z10) {
             q.g(name, "name");
             q.g(url, "url");
-            this.f7434id = str;
+            this.f7435id = str;
             this.name = name;
             this.url = url;
             this.disabled = z10;
@@ -33,7 +33,7 @@ public final class EmojiPickerRow {
 
         public static /* synthetic */ Emoji copy$default(Emoji emoji, String str, String str2, String str3, boolean z10, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = emoji.f7434id;
+                str = emoji.f7435id;
             }
             if ((i10 & 2) != 0) {
                 str2 = emoji.name;
@@ -48,7 +48,7 @@ public final class EmojiPickerRow {
         }
 
         public final String component1() {
-            return this.f7434id;
+            return this.f7435id;
         }
 
         public final String component2() {
@@ -77,7 +77,7 @@ public final class EmojiPickerRow {
                 return false;
             }
             Emoji emoji = (Emoji) obj;
-            return q.b(this.f7434id, emoji.f7434id) && q.b(this.name, emoji.name) && q.b(this.url, emoji.url) && this.disabled == emoji.disabled;
+            return q.b(this.f7435id, emoji.f7435id) && q.b(this.name, emoji.name) && q.b(this.url, emoji.url) && this.disabled == emoji.disabled;
         }
 
         public final boolean getDisabled() {
@@ -85,7 +85,7 @@ public final class EmojiPickerRow {
         }
 
         public final String getId() {
-            return this.f7434id;
+            return this.f7435id;
         }
 
         public final String getName() {
@@ -97,7 +97,7 @@ public final class EmojiPickerRow {
         }
 
         public int hashCode() {
-            String str = this.f7434id;
+            String str = this.f7435id;
             int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31) + this.url.hashCode()) * 31;
             boolean z10 = this.disabled;
             if (z10) {
@@ -110,7 +110,7 @@ public final class EmojiPickerRow {
         }
 
         public String toString() {
-            String str = this.f7434id;
+            String str = this.f7435id;
             String str2 = this.name;
             String str3 = this.url;
             boolean z10 = this.disabled;

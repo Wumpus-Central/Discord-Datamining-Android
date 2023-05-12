@@ -26,7 +26,7 @@ public final class GuildInviteDisabledViewHolder$bind$1$1 extends s implements F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

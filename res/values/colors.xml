@@ -159,6 +159,10 @@
     <color name="blue_830">#ff001630</color>
     <color name="blue_860">#ff00132b</color>
     <color name="blue_900">#ff001024</color>
+    <color name="border_strong_dark">#29ffffff</color>
+    <color name="border_strong_light">#29000000</color>
+    <color name="border_subtle_dark">#14ffffff</color>
+    <color name="border_subtle_light">#14000000</color>
     <color name="brand">#ff5865f2</color>
     <color name="brand_100">#fff7f7fe</color>
     <color name="brand_130">#fff0f1fe</color>
@@ -288,6 +292,10 @@
     <color name="discord_8th_bday_yellow">#ffffff00</color>
     <color name="display_banner_overflow_background_dark">#801e1f22</color>
     <color name="display_banner_overflow_background_light">#80ffffff</color>
+    <color name="divider_strong_dark">#29ffffff</color>
+    <color name="divider_strong_light">#29000000</color>
+    <color name="divider_subtle_dark">#14ffffff</color>
+    <color name="divider_subtle_light">#14000000</color>
     <color name="ebay">#ff0064d2</color>
     <color name="epic_games">#ff3c3935</color>
     <color name="error_color_material_dark">#ffff7043</color>

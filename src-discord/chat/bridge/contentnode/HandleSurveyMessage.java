@@ -23,7 +23,7 @@ public final class HandleSurveyMessage {
     private final long channelId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7200id;
+    private final String f7201id;
     private final String loggingName;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/contentnode/HandleSurveyMessage$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/HandleSurveyMessage;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -45,7 +45,7 @@ public final class HandleSurveyMessage {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, HandleSurveyMessage$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7200id = str;
+        this.f7201id = str;
         this.channelId = channelId.m546unboximpl();
         if ((i10 & 4) == 0) {
             this.loggingName = null;
@@ -65,7 +65,7 @@ public final class HandleSurveyMessage {
     /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
     public static /* synthetic */ HandleSurveyMessage m63copyEqy5D80$default(HandleSurveyMessage handleSurveyMessage, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = handleSurveyMessage.f7200id;
+            str = handleSurveyMessage.f7201id;
         }
         if ((i10 & 2) != 0) {
             j10 = handleSurveyMessage.channelId;
@@ -85,7 +85,7 @@ public final class HandleSurveyMessage {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.f7200id));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.f7201id));
         output.t(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
         if (output.A(serialDesc, 2) || self.loggingName != null) {
             z10 = true;
@@ -97,7 +97,7 @@ public final class HandleSurveyMessage {
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
     public final String m65component13Eiw7ao() {
-        return this.f7200id;
+        return this.f7201id;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -123,7 +123,7 @@ public final class HandleSurveyMessage {
             return false;
         }
         HandleSurveyMessage handleSurveyMessage = (HandleSurveyMessage) obj;
-        return MessageId.m567equalsimpl0(this.f7200id, handleSurveyMessage.f7200id) && ChannelId.m541equalsimpl0(this.channelId, handleSurveyMessage.channelId) && q.b(this.loggingName, handleSurveyMessage.loggingName);
+        return MessageId.m567equalsimpl0(this.f7201id, handleSurveyMessage.f7201id) && ChannelId.m541equalsimpl0(this.channelId, handleSurveyMessage.channelId) && q.b(this.loggingName, handleSurveyMessage.loggingName);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
@@ -133,7 +133,7 @@ public final class HandleSurveyMessage {
 
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m69getId3Eiw7ao() {
-        return this.f7200id;
+        return this.f7201id;
     }
 
     public final String getLoggingName() {
@@ -141,20 +141,20 @@ public final class HandleSurveyMessage {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m568hashCodeimpl(this.f7200id) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m568hashCodeimpl(this.f7201id) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
         String str = this.loggingName;
         return i10 + (str == null ? 0 : str.hashCode());
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(this.f7200id);
+        String str = MessageId.m569toStringimpl(this.f7201id);
         String str2 = ChannelId.m544toStringimpl(this.channelId);
         String str3 = this.loggingName;
         return "HandleSurveyMessage(id=" + str + ", channelId=" + str2 + ", loggingName=" + str3 + ")";
     }
 
     private HandleSurveyMessage(String str, long j10, String str2) {
-        this.f7200id = str;
+        this.f7201id = str;
         this.channelId = j10;
         this.loggingName = str2;
     }

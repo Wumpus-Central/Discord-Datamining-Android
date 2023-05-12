@@ -22,11 +22,11 @@ public final class GiftEmbedSerializer extends d<GiftEmbed> {
     @Override // kotlinx.serialization.json.d
     protected DeserializationStrategy<GiftEmbed> selectDeserializer(JsonElement element) {
         q.g(element, "element");
-        JsonObject j10 = f.j(element);
-        if (GiftEmbedKt.access$hasPrimitives(j10, "resolvingGradientStart", "resolvingGradientEnd")) {
+        JsonObject l10 = f.l(element);
+        if (GiftEmbedKt.access$hasPrimitives(l10, "resolvingGradientStart", "resolvingGradientEnd")) {
             return GiftEmbed.Resolving.Companion.serializer();
         }
-        if (GiftEmbedKt.access$hasPrimitive(j10, "giftCode")) {
+        if (GiftEmbedKt.access$hasPrimitive(l10, "giftCode")) {
             return GiftEmbed.Resolved.Valid.Companion.serializer();
         }
         return GiftEmbed.Resolved.Invalid.Companion.serializer();

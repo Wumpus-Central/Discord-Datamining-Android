@@ -8,11 +8,11 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class MessageBundleItem extends ChatListItem {
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7244id;
+    private final String f7245id;
 
     private MessageBundleItem(String str) {
         super(str, null);
-        this.f7244id = str;
+        this.f7245id = str;
     }
 
     public /* synthetic */ MessageBundleItem(String str, DefaultConstructorMarker defaultConstructorMarker) {
@@ -21,6 +21,6 @@ public abstract class MessageBundleItem extends ChatListItem {
 
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     public String getId() {
-        return this.f7244id;
+        return this.f7245id;
     }
 }

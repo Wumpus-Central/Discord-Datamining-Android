@@ -63,7 +63,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
         a2 a2Var = a2.f5917a;
         m0 m0Var = m0.f5992a;
         h hVar = h.f5959a;
-        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f5942a), a.u(a2Var), hVar, a.u(b.f22525c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
+        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f5942a), a.u(a2Var), hVar, a.u(b.f22526c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -116,7 +116,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
             obj7 = b10.n(descriptor2, 15, e0.f5942a, null);
             obj11 = b10.n(descriptor2, 16, a2Var, null);
             z11 = b10.C(descriptor2, 17);
-            obj15 = b10.n(descriptor2, 18, b.f22525c, null);
+            obj15 = b10.n(descriptor2, 18, b.f22526c, null);
             obj10 = b10.n(descriptor2, 19, a2Var, null);
             obj = b10.n(descriptor2, 20, m0Var, null);
             obj14 = b10.n(descriptor2, 21, m0Var, null);
@@ -281,7 +281,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 18:
                         obj21 = obj21;
-                        obj23 = b10.n(descriptor2, 18, b.f22525c, obj23);
+                        obj23 = b10.n(descriptor2, 18, b.f22526c, obj23);
                         i11 = 262144;
                         i12 |= i11;
                         obj20 = obj20;

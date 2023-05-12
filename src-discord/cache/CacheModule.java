@@ -2,6 +2,7 @@ package com.discord.cache;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import com.discord.app_database.AppDatabaseModule;
 import com.discord.cache.legacy.LegacyCacheUtilsKt;
 import com.discord.logging.Log;
 import com.discord.misc.utilities.time.TimeElapsed;
@@ -71,7 +72,7 @@ public final class CacheModule extends ReactContextBaseJavaModule {
 
     static {
         HashSet<String> e10;
-        e10 = w.e("_clientStateKey", "_userIdKey", "token");
+        e10 = w.e("_clientStateKey", "_userIdKey", AppDatabaseModule.LAST_DATABASE_USER_ID_PREFERENCES_KEY, "token");
         FAST_CACHE_KEYS = e10;
         String simpleName = CacheModule.class.getSimpleName();
         q.f(simpleName, "CacheModule::class.java.simpleName");

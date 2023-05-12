@@ -19,7 +19,7 @@ final class NotificationChannels$migrateOrCreateNotificationChannel$1 extends s 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         invoke2(notificationChannelCompat, builder);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

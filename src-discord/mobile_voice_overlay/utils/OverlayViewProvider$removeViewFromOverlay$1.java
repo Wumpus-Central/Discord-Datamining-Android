@@ -19,7 +19,7 @@ final class OverlayViewProvider$removeViewFromOverlay$1 extends s implements Fun
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Object obj) {
         invoke((OverlayView) obj);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* JADX WARN: Incorrect types in method signature: (TT;)V */

@@ -21,13 +21,13 @@ public final class CodedLinkSerializer extends d<CodedLinkEmbed> {
     @Override // kotlinx.serialization.json.d
     protected DeserializationStrategy<CodedLinkEmbed> selectDeserializer(JsonElement element) {
         String str;
-        JsonPrimitive k10;
+        JsonPrimitive m10;
         q.g(element, "element");
-        JsonElement jsonElement = (JsonElement) f.j(element).get("extendedType");
-        if (jsonElement == null || (k10 = f.k(jsonElement)) == null) {
+        JsonElement jsonElement = (JsonElement) f.l(element).get("extendedType");
+        if (jsonElement == null || (m10 = f.m(jsonElement)) == null) {
             str = null;
         } else {
-            str = k10.a();
+            str = m10.a();
         }
         if (q.b(str, String.valueOf(CodedLinkExtendedType.GUILD_SCHEDULED_EVENT.getSerialNumber()))) {
             return GuildEventInviteEmbedImpl.Companion.serializer();

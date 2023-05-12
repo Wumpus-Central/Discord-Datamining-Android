@@ -43,14 +43,14 @@ public final class ComponentSerializer extends d<Component> {
     protected DeserializationStrategy<Component> selectDeserializer(JsonElement element) {
         Integer num;
         boolean M;
-        JsonPrimitive k10;
+        JsonPrimitive m10;
         q.g(element, "element");
         List<Integer> list = knownTypes;
-        JsonElement jsonElement = (JsonElement) f.j(element).get("type");
-        if (jsonElement == null || (k10 = f.k(jsonElement)) == null) {
+        JsonElement jsonElement = (JsonElement) f.l(element).get("type");
+        if (jsonElement == null || (m10 = f.m(jsonElement)) == null) {
             num = null;
         } else {
-            num = Integer.valueOf(f.i(k10));
+            num = Integer.valueOf(f.k(m10));
         }
         M = r.M(list, num);
         if (M) {

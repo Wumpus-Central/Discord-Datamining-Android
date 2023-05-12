@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.segmented.control.SegmentedControlViewManager;
+import com.discord.safearea.SafeAreaProviderManager;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewManager;
@@ -20,6 +20,6 @@ final class DCDPackageList$getPackages$67 extends s implements Function1<ReactAp
 
     public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
         q.g(it, "it");
-        return new SegmentedControlViewManager();
+        return new SafeAreaProviderManager();
     }
 }

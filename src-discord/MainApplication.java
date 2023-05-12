@@ -1,5 +1,6 @@
 package com.discord;
 
+import com.discord.app_database.AppDatabaseModule;
 import com.discord.bridge.DCDReactNativeHost;
 import com.discord.bundle_updater.BundleUpdater;
 import com.discord.cache.CacheModule;
@@ -31,6 +32,9 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         TTIMetrics.record$default(tTIMetrics, "Start MainApplication.initialize()", 0L, null, false, 14, null);
         ReactMarkerListener.INSTANCE.start();
         CacheModule.Companion.quickInitCache(this);
+        TTIMetrics.record$default(tTIMetrics, "quickInitCache()", 0L, null, false, 14, null);
+        AppDatabaseModule.Companion.initializeAppDatabase(this);
+        TTIMetrics.record$default(tTIMetrics, "initializeAppDatabase()", 0L, null, false, 14, null);
         I18nUtil.getInstance().allowRTL(this, false);
         TTIMetrics.record$default(tTIMetrics, "I18nUtil.allowRtl()", 0L, null, false, 14, null);
         BundleUpdater.Companion companion = BundleUpdater.Companion;

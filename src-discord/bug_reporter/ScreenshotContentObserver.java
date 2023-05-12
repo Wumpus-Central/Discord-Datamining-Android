@@ -60,7 +60,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f7176id;
+        private final long f7177id;
         private final String path;
         private final String relativePath;
         private final Uri uri;
@@ -69,7 +69,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             q.g(fileName, "fileName");
             q.g(relativePath, "relativePath");
             q.g(uri, "uri");
-            this.f7176id = j10;
+            this.f7177id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -78,7 +78,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f7176id;
+            return this.f7177id;
         }
 
         public final String component2() {
@@ -112,7 +112,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
                 return false;
             }
             ScreenshotData screenshotData = (ScreenshotData) obj;
-            return this.f7176id == screenshotData.f7176id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+            return this.f7177id == screenshotData.f7177id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
         }
 
         public final long getDateAdded() {
@@ -124,7 +124,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f7176id;
+            return this.f7177id;
         }
 
         public final String getPath() {
@@ -140,11 +140,11 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((a.a(this.f7176id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + a.a(this.dateAdded);
+            return (((((((a.a(this.f7177id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + a.a(this.dateAdded);
         }
 
         public String toString() {
-            long j10 = this.f7176id;
+            long j10 = this.f7177id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;

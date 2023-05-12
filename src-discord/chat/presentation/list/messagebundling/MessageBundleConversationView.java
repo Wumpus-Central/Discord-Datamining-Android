@@ -82,7 +82,6 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
-        boolean z10;
         q.g(messageItem, "messageItem");
         q.g(eventHandler, "eventHandler");
         final Message message = messageItem.getMessage();
@@ -164,12 +163,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             }
         }, new MessageBundleConversationView$configure$3$3(eventHandler, message), (r34 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? ReactionsView$setReactions$3.INSTANCE : null, (r34 & 4096) != 0 ? null : ThemeManagerKt.getTheme(), (r34 & 8192) != 0 ? false : ChatView.Companion.getAreChatAnimationsEnabled(), messageContext.getUseSortedReactions());
         List<MessageReaction> reactions2 = message.getReactions();
-        if (reactions2 == null || reactions2.isEmpty()) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        if (!(!z10)) {
+        if (!(!(reactions2 == null || reactions2.isEmpty()))) {
             i10 = 8;
         }
         configure$lambda$7.setVisibility(i10);

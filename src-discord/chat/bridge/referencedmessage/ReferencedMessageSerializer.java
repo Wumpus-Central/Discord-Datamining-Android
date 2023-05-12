@@ -23,13 +23,13 @@ public final class ReferencedMessageSerializer extends d<ReferencedMessage> {
     @Override // kotlinx.serialization.json.d
     protected DeserializationStrategy<ReferencedMessage> selectDeserializer(JsonElement element) {
         String str;
-        JsonPrimitive k10;
+        JsonPrimitive m10;
         q.g(element, "element");
-        JsonElement jsonElement = (JsonElement) f.j(element).get("state");
-        if (jsonElement == null || (k10 = f.k(jsonElement)) == null) {
+        JsonElement jsonElement = (JsonElement) f.l(element).get("state");
+        if (jsonElement == null || (m10 = f.m(jsonElement)) == null) {
             str = null;
         } else {
-            str = k10.a();
+            str = m10.a();
         }
         if (q.b(str, STATE_LOADED)) {
             return LoadedReferencedMessage.Companion.serializer();

@@ -77,12 +77,13 @@ public final class TapLinkData implements ReactEvent {
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     private final WritableNativeMap toMap(LinkContext linkContext) {
+        String str;
         WritableNativeMap nativeMapOf = NativeMapExtensionsKt.nativeMapOf(new Pair[0]);
-        String str = this.target;
-        if (str != null) {
-            switch (str.hashCode()) {
+        String str2 = this.target;
+        if (str2 != null) {
+            switch (str2.hashCode()) {
                 case -1732468237:
-                    if (str.equals("handleDelete")) {
+                    if (str2.equals("handleDelete")) {
                         HandleDelete handleDelete = linkContext.getHandleDelete();
                         if (handleDelete != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleDelete.getAction());
@@ -92,7 +93,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case -1226627713:
-                    if (str.equals("threadOnClick")) {
+                    if (str2.equals("threadOnClick")) {
                         ThreadOnClick threadOnClick = linkContext.getThreadOnClick();
                         if (threadOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", threadOnClick.getAction());
@@ -102,7 +103,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case -1138120985:
-                    if (str.equals("webhookNameOnClick")) {
+                    if (str2.equals("webhookNameOnClick")) {
                         WebhookNameOnClick webhookNameOnClick = linkContext.getWebhookNameOnClick();
                         if (webhookNameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", webhookNameOnClick.getAction());
@@ -114,7 +115,7 @@ public final class TapLinkData implements ReactEvent {
                                 if (guildId != null) {
                                     NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m557toStringimpl(guildId.m559unboximpl()));
                                 }
-                                Unit unit = Unit.f22035a;
+                                Unit unit = Unit.f22036a;
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                                 break;
                             }
@@ -122,7 +123,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case -933189749:
-                    if (str.equals("pinsOnClick")) {
+                    if (str2.equals("pinsOnClick")) {
                         PinsOnClick pinsOnClick = linkContext.getPinsOnClick();
                         if (pinsOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", pinsOnClick.getAction());
@@ -132,7 +133,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case -932369101:
-                    if (str.equals("usernameOnClick")) {
+                    if (str2.equals("usernameOnClick")) {
                         UserNameOnClick usernameOnClick = linkContext.getUsernameOnClick();
                         if (usernameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", usernameOnClick.getAction());
@@ -146,7 +147,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case -86972746:
-                    if (str.equals("roleSubscriptionOnClick")) {
+                    if (str2.equals("roleSubscriptionOnClick")) {
                         RoleSubscriptionOnClick roleSubscriptionOnClick = linkContext.getRoleSubscriptionOnClick();
                         if (roleSubscriptionOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", roleSubscriptionOnClick.getAction());
@@ -159,7 +160,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case 371724472:
-                    if (str.equals("actorHook")) {
+                    if (str2.equals("actorHook")) {
                         ActorHook actorHook = linkContext.getActorHook();
                         if (actorHook != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", actorHook.getAction());
@@ -169,7 +170,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case 1318937603:
-                    if (str.equals("otherUsernameOnClick")) {
+                    if (str2.equals("otherUsernameOnClick")) {
                         UserNameOnClick otherUsernameOnClick = linkContext.getOtherUsernameOnClick();
                         if (otherUsernameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", otherUsernameOnClick.getAction());
@@ -183,7 +184,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case 1532521663:
-                    if (str.equals("handleMessage")) {
+                    if (str2.equals("handleMessage")) {
                         HandleMessage handleMessage = linkContext.getHandleMessage();
                         if (handleMessage != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleMessage.getAction());
@@ -193,7 +194,7 @@ public final class TapLinkData implements ReactEvent {
                     }
                     break;
                 case 2071245203:
-                    if (str.equals("commandNameOnClick")) {
+                    if (str2.equals("commandNameOnClick")) {
                         CommandOnClick commandNameOnClick = linkContext.getCommandNameOnClick();
                         if (commandNameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", commandNameOnClick.getAction());
@@ -202,8 +203,13 @@ public final class TapLinkData implements ReactEvent {
                             if (messageType != null) {
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageType", Integer.valueOf(messageType.getSerialNumber()));
                             }
-                            String str2 = commandNameOnClick.m54getMessageIdN_6c4I0();
-                            NativeMapExtensionsKt.put(nativeMapOf, "messageId", str2 == null ? "null" : MessageId.m569toStringimpl(str2));
+                            String str3 = commandNameOnClick.m54getMessageIdN_6c4I0();
+                            if (str3 == null) {
+                                str = "null";
+                            } else {
+                                str = MessageId.m569toStringimpl(str3);
+                            }
+                            NativeMapExtensionsKt.put(nativeMapOf, "messageId", str);
                             NativeMapExtensionsKt.put(nativeMapOf, "applicationUserId", String.valueOf(commandNameOnClick.m52getApplicationUserIdwUX8bhU()));
                             NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", String.valueOf(commandNameOnClick.m53getMessageChannelIdqMVnFVQ()));
                             break;
@@ -214,8 +220,8 @@ public final class TapLinkData implements ReactEvent {
             return nativeMapOf;
         }
         Log log = Log.INSTANCE;
-        String str3 = this.target;
-        Log.e$default(log, "TapLink", "Missing target type in context: " + str3, (Throwable) null, 4, (Object) null);
+        String str4 = this.target;
+        Log.e$default(log, "TapLink", "Missing target type in context: " + str4, (Throwable) null, 4, (Object) null);
         return nativeMapOf;
     }
 

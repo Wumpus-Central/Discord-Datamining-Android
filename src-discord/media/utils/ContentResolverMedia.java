@@ -33,7 +33,7 @@ public final class ContentResolverMedia {
     private final int height;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f7475id;
+    private final long f7476id;
     private final MediaType mediaType;
     private final String mimeType;
     private final String name;
@@ -287,7 +287,7 @@ public final class ContentResolverMedia {
     public ContentResolverMedia(long j10, Uri uri, MediaType mediaType, String str, String str2, int i10, int i11, int i12, int i13) {
         q.g(uri, "uri");
         q.g(mediaType, "mediaType");
-        this.f7475id = j10;
+        this.f7476id = j10;
         this.uri = uri;
         this.mediaType = mediaType;
         this.mimeType = str;
@@ -299,7 +299,7 @@ public final class ContentResolverMedia {
     }
 
     public final long component1() {
-        return this.f7475id;
+        return this.f7476id;
     }
 
     public final Uri component2() {
@@ -348,7 +348,7 @@ public final class ContentResolverMedia {
             return false;
         }
         ContentResolverMedia contentResolverMedia = (ContentResolverMedia) obj;
-        return this.f7475id == contentResolverMedia.f7475id && q.b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && q.b(this.mimeType, contentResolverMedia.mimeType) && q.b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
+        return this.f7476id == contentResolverMedia.f7476id && q.b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && q.b(this.mimeType, contentResolverMedia.mimeType) && q.b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
     }
 
     public final int getDateAdded() {
@@ -364,7 +364,7 @@ public final class ContentResolverMedia {
     }
 
     public final long getId() {
-        return this.f7475id;
+        return this.f7476id;
     }
 
     public final MediaType getMediaType() {
@@ -388,7 +388,7 @@ public final class ContentResolverMedia {
     }
 
     public int hashCode() {
-        int a10 = ((((a.a(this.f7475id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
+        int a10 = ((((a.a(this.f7476id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
         String str = this.mimeType;
         int i10 = 0;
         int hashCode = (a10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -400,7 +400,7 @@ public final class ContentResolverMedia {
     }
 
     public String toString() {
-        long j10 = this.f7475id;
+        long j10 = this.f7476id;
         Uri uri = this.uri;
         MediaType mediaType = this.mediaType;
         String str = this.mimeType;

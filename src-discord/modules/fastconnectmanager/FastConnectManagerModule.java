@@ -1,6 +1,9 @@
 package com.discord.modules.fastconnectmanager;
 
+import com.discord.app_database.AppDatabaseModule;
+import com.discord.app_database.GuildVersion;
 import com.discord.cache.CacheModule;
+import com.discord.logging.Log;
 import com.discord.modules.fastconnectmanager.FastConnectManagerModule;
 import com.discord.tti_manager.TTIMetrics;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -15,10 +18,11 @@ import nf.x;
 import of.v;
 import okhttp3.WebSocket;
 
-@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\b\u0007\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010#\u001a\u00020\"¢\u0006\u0004\b$\u0010%J\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u001a\u0010\t\u001a\u00020\b2\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\b\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\f\u001a\u00020\u0006H\u0016J\b\u0010\r\u001a\u00020\u0006H\u0016J\u0016\u0010\u000f\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\u000eH\u0016J\u0012\u0010\u0011\u001a\u00020\u00062\b\u0010\u0010\u001a\u0004\u0018\u00010\nH\u0007J\u0012\u0010\u0013\u001a\u00020\u00062\b\u0010\u0012\u001a\u0004\u0018\u00010\nH\u0007J\u0018\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0005\u001a\u00020\u0004H\u0007R \u0010\u0017\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00020\u00168\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0018R\u0016\u0010\u0019\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR\u0018\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0005\u0010\u001bR\u0016\u0010\u001c\u001a\u00020\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001c\u0010\u001dR\u0016\u0010!\u001a\u0004\u0018\u00010\u001e8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001f\u0010 ¨\u0006&"}, d2 = {"Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "Lokhttp3/WebSocket;", "webSocket", "", "socketId", "", "handleWebSocketOpen", "", "sendIdentify", "", "getName", "initialize", "invalidate", "", "getConstants", "clientState", "setClientState", "userId", "setUserId", "payload", "prepareIdentify", "j$/util/concurrent/ConcurrentHashMap", "sockets", "Lj$/util/concurrent/ConcurrentHashMap;", "identified", "Z", "Ljava/lang/Integer;", "identifyPayload", "Ljava/lang/String;", "Lcom/facebook/react/modules/websocket/WebSocketModule;", "getWebSocketModule", "()Lcom/facebook/react/modules/websocket/WebSocketModule;", "webSocketModule", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "app_canaryRelease"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010%\n\u0002\b\u0006\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010&\u001a\u00020%¢\u0006\u0004\b'\u0010(J\u001a\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u0002H\u0002J\u0018\u0010\u000b\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\tH\u0002J\u001a\u0010\r\u001a\u00020\f2\b\u0010\b\u001a\u0004\u0018\u00010\u00072\u0006\u0010\n\u001a\u00020\tH\u0002J\b\u0010\u000e\u001a\u00020\u0002H\u0016J\b\u0010\u000f\u001a\u00020\u0005H\u0016J\b\u0010\u0010\u001a\u00020\u0005H\u0016J\u0016\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u00020\u0002\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0011H\u0016J\u001c\u0010\u0015\u001a\u00020\u00052\b\u0010\u0013\u001a\u0004\u0018\u00010\u00022\b\u0010\u0014\u001a\u0004\u0018\u00010\u0002H\u0007J\"\u0010\u0017\u001a\u00020\u00052\b\u0010\u0013\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\n\u001a\u00020\tH\u0007R \u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00070\u00188\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR\u0016\u0010\u001b\u001a\u00020\f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001b\u0010\u001cR\u0018\u0010\n\u001a\u0004\u0018\u00010\t8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\n\u0010\u001dR\u0018\u0010\u001e\u001a\u0004\u0018\u00010\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u001e\u0010\u001fR\u0016\u0010 \u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b \u0010\u001fR\u0016\u0010$\u001a\u0004\u0018\u00010!8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\"\u0010#¨\u0006)"}, d2 = {"Lcom/discord/modules/fastconnectmanager/FastConnectManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "", "key", "value", "", "setCacheValue", "Lokhttp3/WebSocket;", "webSocket", "", "socketId", "handleWebSocketOpen", "", "sendIdentify", "getName", "initialize", "invalidate", "", "getConstants", "userId", "clientState", "setClientState", "payload", "prepareIdentify", "j$/util/concurrent/ConcurrentHashMap", "sockets", "Lj$/util/concurrent/ConcurrentHashMap;", "identified", "Z", "Ljava/lang/Integer;", "identifyUserId", "Ljava/lang/String;", "identifyPayload", "Lcom/facebook/react/modules/websocket/WebSocketModule;", "getWebSocketModule", "()Lcom/facebook/react/modules/websocket/WebSocketModule;", "webSocketModule", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "app_canaryRelease"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes5.dex */
 public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
     private boolean identified;
+    private String identifyUserId;
     private Integer socketId;
     private final ConcurrentHashMap<Integer, WebSocket> sockets = new ConcurrentHashMap<>();
     private String identifyPayload = "";
@@ -47,19 +51,43 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
 
     private final boolean sendIdentify(WebSocket webSocket, int i10) {
         Integer num;
-        boolean z10 = false;
-        if (webSocket == null) {
+        GuildVersion[] guildVersionArr;
+        String str;
+        if (webSocket == null || (num = this.socketId) == null || i10 != num.intValue() || this.identified) {
             return false;
         }
-        if (!this.identified && (num = this.socketId) != null && num.intValue() == i10) {
-            z10 = true;
+        String str2 = this.identifyUserId;
+        if (str2 != null) {
+            guildVersionArr = AppDatabaseModule.Companion.getGuildVersions(str2);
+        } else {
+            guildVersionArr = new GuildVersion[0];
         }
-        if (z10) {
-            TTIMetrics.record$default(TTIMetrics.INSTANCE, "Native WebSocket sent identify", 0L, null, false, 14, null);
-            webSocket.b(this.identifyPayload);
-            this.identified = true;
+        if (str2 != null) {
+            str = IdentifyPayload.INSTANCE.withGuildVersions(this.identifyPayload, guildVersionArr);
+        } else {
+            str = this.identifyPayload;
         }
-        return z10;
+        if (!q.b(this.identifyPayload, str)) {
+            Log log = Log.INSTANCE;
+            int length = guildVersionArr.length;
+            Log.i$default(log, "FastConnectManagerModule", length + " guild_versions added to identify payload", (Throwable) null, 4, (Object) null);
+        }
+        TTIMetrics.record$default(TTIMetrics.INSTANCE, "Native WebSocket sent identify", 0L, null, false, 14, null);
+        webSocket.b(str);
+        this.identified = true;
+        return true;
+    }
+
+    private final void setCacheValue(String str, String str2) {
+        CacheModule.Companion companion = CacheModule.Companion;
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        q.f(reactApplicationContext, "reactApplicationContext");
+        CacheModule cacheModule = companion.get(reactApplicationContext);
+        if (str2 == null) {
+            cacheModule.removeItem(str);
+        } else {
+            cacheModule.setItem(str, str2);
+        }
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
@@ -105,40 +133,17 @@ public final class FastConnectManagerModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public final void prepareIdentify(String payload, int i10) {
+    public final void prepareIdentify(String str, String payload, int i10) {
         q.g(payload, "payload");
         this.socketId = Integer.valueOf(i10);
+        this.identifyUserId = str;
         this.identifyPayload = payload;
         sendIdentify(this.sockets.get(Integer.valueOf(i10)), i10);
     }
 
     @ReactMethod
-    public final void setClientState(String str) {
-        if (str == null) {
-            CacheModule.Companion companion = CacheModule.Companion;
-            ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
-            companion.get(reactApplicationContext).removeItem("_clientStateKey");
-            return;
-        }
-        CacheModule.Companion companion2 = CacheModule.Companion;
-        ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-        q.f(reactApplicationContext2, "reactApplicationContext");
-        companion2.get(reactApplicationContext2).setItem("_clientStateKey", str);
-    }
-
-    @ReactMethod
-    public final void setUserId(String str) {
-        if (str == null) {
-            CacheModule.Companion companion = CacheModule.Companion;
-            ReactApplicationContext reactApplicationContext = getReactApplicationContext();
-            q.f(reactApplicationContext, "reactApplicationContext");
-            companion.get(reactApplicationContext).removeItem("_userIdKey");
-            return;
-        }
-        CacheModule.Companion companion2 = CacheModule.Companion;
-        ReactApplicationContext reactApplicationContext2 = getReactApplicationContext();
-        q.f(reactApplicationContext2, "reactApplicationContext");
-        companion2.get(reactApplicationContext2).setItem("_userIdKey", str);
+    public final void setClientState(String str, String str2) {
+        setCacheValue("_userIdKey", str);
+        setCacheValue("_clientStateKey", str2);
     }
 }

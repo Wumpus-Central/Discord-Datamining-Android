@@ -38,13 +38,13 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
             audioPlayerView.shouldAnimate(attachment.isAnimated());
             audioPlayerView.setListener(new AudioPlayerView.Listener() { // from class: com.discord.chat.presentation.message.viewholder.VoiceMessageViewHolder$bind$1$1$1
                 @Override // com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.Listener
-                public void voiceMessagePlaybackEnded(float f11) {
+                public void voiceMessagePlaybackEnded(float f11, float f12) {
                     ChatEventHandler chatEventHandler = ChatEventHandler.this;
                     String str = accessory.mo203getMessageId3Eiw7ao();
-                    float f12 = floatValue;
+                    float f13 = floatValue;
                     UserId userId = accessory.m211getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo170voiceMessagePlaybackEndedOuNwOLg(str, f12, f11, userId.m610unboximpl());
+                        chatEventHandler.mo170voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m610unboximpl(), f12);
                     }
                 }
 

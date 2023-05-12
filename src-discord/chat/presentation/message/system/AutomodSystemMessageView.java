@@ -169,7 +169,6 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
     }
 
     private final List<MessageAccessory> generateMessageAccessories(Message message, MessageContext messageContext) {
-        boolean z10;
         List<MessageReaction> reactions;
         this.accessories.clear();
         AutoModerationContext autoModerationContext = message.getAutoModerationContext();
@@ -189,13 +188,8 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         Integer roleColor = message2.getRoleColor();
         boolean shouldShowRoleDot = message2.getShouldShowRoleDot();
         Boolean communicationDisabled = message2.getCommunicationDisabled();
-        boolean z11 = false;
-        if (communicationDisabled != null) {
-            z10 = communicationDisabled.booleanValue();
-        } else {
-            z10 = false;
-        }
-        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, 2147483518, 31, (DefaultConstructorMarker) null);
+        boolean z10 = false;
+        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(communicationDisabled != null ? communicationDisabled.booleanValue() : false), (String) null, (Boolean) null, (Integer) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, 2147483518, 31, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
             this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
@@ -203,9 +197,9 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             this.accessories.add(new FlaggedMessageActionBarAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
         }
         if (message.getReactions() != null && (!reactions.isEmpty())) {
-            z11 = true;
+            z10 = true;
         }
-        if (z11) {
+        if (z10) {
             this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();

@@ -28,7 +28,7 @@ public final class AudioPlayerView$configureDuration$1 extends s implements Func
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

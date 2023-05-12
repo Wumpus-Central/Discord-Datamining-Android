@@ -168,7 +168,7 @@ public class EglRenderer implements VideoSink {
                 String averageTimeAsString2 = companion.averageTimeAsString(this.renderSwapBufferTimeNs, this.framesRendered);
                 logD("[logStatistics] Duration: " + millis + " ms. Frames received: " + i10 + ". Dropped: " + i11 + ". Rendered: " + i12 + ". Render fps: " + format + ". Average render time: " + averageTimeAsString + ". Average swapBuffer time: " + averageTimeAsString2 + ".");
                 resetStatistics(nanoTime);
-                Unit unit = Unit.f22035a;
+                Unit unit = Unit.f22036a;
             }
         }
     }
@@ -183,7 +183,7 @@ public class EglRenderer implements VideoSink {
                 handler.removeCallbacks(this$0.logStatisticsTask());
                 handler.postDelayed(this$0.logStatisticsTask(), LOG_INTERVAL_MS);
             }
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
     }
 
@@ -214,7 +214,7 @@ public class EglRenderer implements VideoSink {
         q.f(lock, "lock");
         synchronized (lock) {
             GLES20.glUseProgram(0);
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
         this$0.drawer.release();
         this$0.frameDrawer.release();
@@ -254,6 +254,7 @@ public class EglRenderer implements VideoSink {
         float f10;
         float f11;
         float f12;
+        float f13;
         long d10;
         synchronized (this.frameLock) {
             VideoFrame videoFrame = this.pendingFrame;
@@ -303,7 +304,13 @@ public class EglRenderer implements VideoSink {
                 }
                 this.drawMatrix.reset();
                 this.drawMatrix.preTranslate(0.5f, 0.5f);
-                this.drawMatrix.preScale(this.mirrorHorizontally ? -1.0f : 1.0f, 1.0f);
+                Matrix matrix = this.drawMatrix;
+                if (this.mirrorHorizontally) {
+                    f13 = -1.0f;
+                } else {
+                    f13 = 1.0f;
+                }
+                matrix.preScale(f13, 1.0f);
                 this.drawMatrix.preScale(f11, f12);
                 this.drawMatrix.preTranslate(-0.5f, -0.5f);
                 try {
@@ -319,7 +326,7 @@ public class EglRenderer implements VideoSink {
                                 this.framesRendered++;
                                 this.renderTimeNs += nanoTime3 - nanoTime;
                                 this.renderSwapBufferTimeNs += nanoTime3 - nanoTime2;
-                                Unit unit = Unit.f22035a;
+                                Unit unit = Unit.f22036a;
                             }
                         } catch (GlUtil.GlOutOfMemoryException e10) {
                             logE("Error while drawing frame", e10);
@@ -346,7 +353,7 @@ public class EglRenderer implements VideoSink {
             this.framesRendered = 0;
             this.renderTimeNs = 0L;
             this.renderSwapBufferTimeNs = 0L;
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
     }
 
@@ -476,7 +483,7 @@ public class EglRenderer implements VideoSink {
                 }
             });
             this.renderThreadHandler = null;
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
             ThreadUtils.awaitUninterruptibly(countDownLatch);
             synchronized (this.frameLock) {
                 VideoFrame videoFrame = this.pendingFrame;
@@ -527,7 +534,7 @@ public class EglRenderer implements VideoSink {
             if (j10 != j11) {
                 this.nextFrameTimeNs = System.nanoTime();
             }
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
     }
 
@@ -545,7 +552,7 @@ public class EglRenderer implements VideoSink {
             } else {
                 this.layoutAspectRatio = 0.0f;
             }
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
     }
 
@@ -553,7 +560,7 @@ public class EglRenderer implements VideoSink {
         logD("setMirrorHorizontally: " + z10);
         synchronized (this.layoutLock) {
             this.mirrorHorizontally = z10;
-            Unit unit = Unit.f22035a;
+            Unit unit = Unit.f22036a;
         }
     }
 

@@ -1,6 +1,6 @@
 package com.discord.react.headless_tasks.api;
 
-/* loaded from: classes.dex */
+/* loaded from: classes6.dex */
 public final class BuildConfig {
     public static final String BUILD_TYPE = "release";
     public static final boolean DEBUG = false;

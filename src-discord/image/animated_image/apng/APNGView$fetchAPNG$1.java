@@ -44,7 +44,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
+        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -71,7 +71,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -107,7 +107,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((C01071) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
+                return ((C01071) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -147,7 +147,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -184,7 +184,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -302,10 +302,10 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
                 if (r14 != r1) goto L_0x00a3
                 return r1
             L_0x00a3:
-                kotlin.Unit r14 = kotlin.Unit.f22035a
+                kotlin.Unit r14 = kotlin.Unit.f22036a
                 return r14
             L_0x00a6:
-                kotlin.Unit r14 = kotlin.Unit.f22035a
+                kotlin.Unit r14 = kotlin.Unit.f22036a
                 return r14
             */
             throw new UnsupportedOperationException("Method not decompiled: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1.AnonymousClass1.emit(com.discord.file_downloader.DownloadState, kotlin.coroutines.Continuation):java.lang.Object");

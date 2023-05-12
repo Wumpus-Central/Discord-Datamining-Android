@@ -11,12 +11,12 @@ import nf.p;
 public abstract class ChatListItem {
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7242id;
+    private final String f7243id;
     private final Lazy recyclerItemId$delegate;
 
     private ChatListItem(String str) {
         Lazy b10;
-        this.f7242id = str;
+        this.f7243id = str;
         b10 = n.b(p.NONE, new ChatListItem$recyclerItemId$2(this));
         this.recyclerItemId$delegate = b10;
     }
@@ -26,7 +26,7 @@ public abstract class ChatListItem {
     }
 
     public String getId() {
-        return this.f7242id;
+        return this.f7243id;
     }
 
     public final long getRecyclerItemId() {

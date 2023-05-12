@@ -23,7 +23,7 @@ final class MediaEngineModule$connectionInstanceGetEncryptionModes$1 extends s i
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String[] strArr) {
         invoke2(strArr);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

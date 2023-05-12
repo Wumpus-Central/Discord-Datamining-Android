@@ -39,11 +39,11 @@ public final class InstallReferrerModuleKt {
         };
         pVar.k(new InstallReferrerModuleKt$await$2$1(installReferrerClient));
         try {
-            s.a aVar = s.f24599l;
+            s.a aVar = s.f24600l;
             installReferrerClient.d(installReferrerModuleKt$await$2$listener$1);
-            obj = s.b(Unit.f22035a);
+            obj = s.b(Unit.f22036a);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f24599l;
+            s.a aVar2 = s.f24600l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);

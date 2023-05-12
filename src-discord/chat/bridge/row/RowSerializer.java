@@ -30,17 +30,17 @@ public final class RowSerializer extends d<Row> {
     @Override // kotlinx.serialization.json.d
     protected DeserializationStrategy<Row> selectDeserializer(JsonElement element) {
         String str;
-        JsonPrimitive k10;
+        JsonPrimitive m10;
         q.g(element, "element");
-        JsonObject j10 = f.j(element);
-        if (j10.containsKey("type")) {
+        JsonObject l10 = f.l(element);
+        if (l10.containsKey("type")) {
             return rowSealedClassSerializer;
         }
-        JsonElement jsonElement = (JsonElement) j10.get("changeType");
-        if (jsonElement == null || (k10 = f.k(jsonElement)) == null) {
+        JsonElement jsonElement = (JsonElement) l10.get("changeType");
+        if (jsonElement == null || (m10 = f.m(jsonElement)) == null) {
             str = null;
         } else {
-            str = k10.a();
+            str = m10.a();
         }
         if (q.b(str, CHANGE_TYPE_DELETE)) {
             return DeleteRow.Companion.serializer();

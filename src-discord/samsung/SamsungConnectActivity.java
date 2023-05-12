@@ -51,7 +51,7 @@ public final class SamsungConnectActivity extends b {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f22035a;
+                Unit unit = Unit.f22036a;
                 Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + b10.V(1221, R, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
@@ -450,7 +450,7 @@ public final class SamsungConnectActivity extends b {
             r0.putExtra(r1, r7)
             java.lang.String r7 = "com.discord.samsung.intent.extra.SERVER_URL"
             r0.putExtra(r7, r8)
-            kotlin.Unit r7 = kotlin.Unit.f22035a
+            kotlin.Unit r7 = kotlin.Unit.f22036a
             r7 = -1
             r6.setResult(r7, r0)
             goto L_0x0059

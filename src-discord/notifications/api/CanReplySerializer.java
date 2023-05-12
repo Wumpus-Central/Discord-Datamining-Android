@@ -19,7 +19,7 @@ public final class CanReplySerializer implements KSerializer<Boolean> {
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return a.w(c.f22065a).getDescriptor();
+        return a.w(c.f22066a).getDescriptor();
     }
 
     @Override // yi.h

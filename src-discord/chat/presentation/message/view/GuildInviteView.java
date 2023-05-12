@@ -101,7 +101,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteHeader.setTextColor(num.intValue());
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     public final void setHeaderText(CharSequence charSequence) {
@@ -296,7 +296,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteTitle.setTextColor(num.intValue());
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     public final void setTitleText(CharSequence charSequence) {

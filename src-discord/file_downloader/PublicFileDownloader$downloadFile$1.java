@@ -49,8 +49,8 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22061k));
-            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f22061k, this.$fileName);
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22062k));
+            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f22062k, this.$fileName);
         }
     }
 
@@ -70,7 +70,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22061k));
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22062k));
         }
     }
 
@@ -92,7 +92,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     }
 
     public final Object invoke(ProducerScope<? super DownloadState> producerScope, Continuation<? super Unit> continuation) {
-        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f22035a);
+        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f22036a);
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(9:2|(1:(1:(1:(3:7|39|40)(2:8|9))(9:10|42|11|30|35|36|(1:38)|39|40))(1:13))(2:14|(1:16))|17|41|18|(2:24|(2:26|(1:28)(7:29|30|35|36|(0)|39|40))(5:31|36|(0)|39|40))|20|(0)(0)|(1:(0))) */

@@ -1,9 +1,8 @@
-package com.discord.kvstorage;
+package com.discord.kvstorage.reactnative;
 
 import com.facebook.react.bridge.JavaScriptContextHolder;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.turbomodule.core.CallInvokerHolderImpl;
-import java.io.File;
 
 /* loaded from: classes5.dex */
 public class KvStorageBridge {
@@ -13,7 +12,7 @@ public class KvStorageBridge {
 
     public void activate(ReactContext reactContext) {
         JavaScriptContextHolder javaScriptContextHolder = reactContext.getJavaScriptContextHolder();
-        File filesDir = reactContext.getFilesDir();
-        activateNative(javaScriptContextHolder.get(), (CallInvokerHolderImpl) reactContext.getCatalystInstance().getJSCallInvokerHolder(), filesDir.getAbsolutePath());
+        String absolutePath = reactContext.getFilesDir().getAbsolutePath();
+        activateNative(javaScriptContextHolder.get(), (CallInvokerHolderImpl) reactContext.getCatalystInstance().getJSCallInvokerHolder(), absolutePath);
     }
 }

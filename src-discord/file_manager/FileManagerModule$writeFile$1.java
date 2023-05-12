@@ -47,13 +47,15 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22035a);
+        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         HashMap hashMap;
         HashMap hashMap2;
+        boolean z10;
+        String str;
         HashMap hashMap3;
         d.d();
         if (this.label == 0) {
@@ -61,10 +63,10 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
             hashMap = this.this$0.storageDirs;
             if (!hashMap.containsKey(this.$storageDir)) {
                 Promise promise = this.$promise;
-                String str = this.$storageDir;
+                String str2 = this.$storageDir;
                 hashMap3 = this.this$0.storageDirs;
-                promise.reject("err", "Unknown storage directory " + str + ". Supported storage directories: " + hashMap3.keySet());
-                return Unit.f22035a;
+                promise.reject("err", "Unknown storage directory " + str2 + ". Supported storage directories: " + hashMap3.keySet());
+                return Unit.f22036a;
             }
             try {
                 hashMap2 = this.this$0.storageDirs;
@@ -72,36 +74,46 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                 q.d(obj2);
                 File file = new File((String) obj2, this.$path);
                 File parentFile = file.getParentFile();
-                boolean z10 = true;
-                if (parentFile != null && !parentFile.exists()) {
+                boolean z11 = true;
+                if (parentFile == null || parentFile.exists()) {
+                    z10 = false;
+                } else {
+                    z10 = true;
+                }
+                if (z10) {
                     File parentFile2 = file.getParentFile();
                     if (parentFile2 == null || parentFile2.mkdirs()) {
-                        z10 = false;
+                        z11 = false;
                     }
-                    if (z10) {
+                    if (z11) {
                         Promise promise2 = this.$promise;
                         File parentFile3 = file.getParentFile();
-                        promise2.reject((String) null, "Failed to create parent directory " + (parentFile3 != null ? parentFile3.toString() : null));
+                        if (parentFile3 != null) {
+                            str = parentFile3.toString();
+                        } else {
+                            str = null;
+                        }
+                        promise2.reject((String) null, "Failed to create parent directory " + str);
                     }
                 }
                 if (q.b(this.$encoding, "base64")) {
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     fileOutputStream.write(Base64.decode(this.$data, 0));
-                    Unit unit = Unit.f22035a;
+                    Unit unit = Unit.f22036a;
                     c.a(fileOutputStream, null);
                 } else {
                     FileOutputStream fileOutputStream2 = new FileOutputStream(file);
-                    byte[] bytes = this.$data.getBytes(ri.d.f28529b);
+                    byte[] bytes = this.$data.getBytes(ri.d.f28530b);
                     q.f(bytes, "this as java.lang.String).getBytes(charset)");
                     fileOutputStream2.write(bytes);
-                    Unit unit2 = Unit.f22035a;
+                    Unit unit2 = Unit.f22036a;
                     c.a(fileOutputStream2, null);
                 }
                 this.$promise.resolve(file.getAbsolutePath());
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f22035a;
+            return Unit.f22036a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

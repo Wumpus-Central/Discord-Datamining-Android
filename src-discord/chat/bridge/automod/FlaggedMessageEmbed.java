@@ -38,7 +38,7 @@ public final class FlaggedMessageEmbed {
     private final GuildId guildId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7195id;
+    private final String f7196id;
     private final Integer roleColor;
     private final boolean shouldShowRoleDot;
     private final UserId userId;
@@ -64,7 +64,7 @@ public final class FlaggedMessageEmbed {
         if (643 != (i10 & 643)) {
             n1.b(i10, 643, FlaggedMessageEmbed$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7195id = str;
+        this.f7196id = str;
         this.channelId = channelId.m546unboximpl();
         if ((i10 & 4) == 0) {
             this.guildId = null;
@@ -130,7 +130,7 @@ public final class FlaggedMessageEmbed {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z17 = false;
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.f7195id));
+        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.f7196id));
         output.t(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
         if (!output.A(serialDesc, 2) && self.guildId == null) {
             z10 = false;
@@ -200,7 +200,7 @@ public final class FlaggedMessageEmbed {
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
     public final String m19component13Eiw7ao() {
-        return this.f7195id;
+        return this.f7196id;
     }
 
     public final boolean component10() {
@@ -264,7 +264,7 @@ public final class FlaggedMessageEmbed {
             return false;
         }
         FlaggedMessageEmbed flaggedMessageEmbed = (FlaggedMessageEmbed) obj;
-        return MessageId.m567equalsimpl0(this.f7195id, flaggedMessageEmbed.f7195id) && ChannelId.m541equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && q.b(this.guildId, flaggedMessageEmbed.guildId) && q.b(this.userId, flaggedMessageEmbed.userId) && q.b(this.content, flaggedMessageEmbed.content) && q.b(this.channelName, flaggedMessageEmbed.channelName) && q.b(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && q.b(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && q.b(this.avatarURL, flaggedMessageEmbed.avatarURL) && q.b(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
+        return MessageId.m567equalsimpl0(this.f7196id, flaggedMessageEmbed.f7196id) && ChannelId.m541equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && q.b(this.guildId, flaggedMessageEmbed.guildId) && q.b(this.userId, flaggedMessageEmbed.userId) && q.b(this.content, flaggedMessageEmbed.content) && q.b(this.channelName, flaggedMessageEmbed.channelName) && q.b(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && q.b(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && q.b(this.avatarURL, flaggedMessageEmbed.avatarURL) && q.b(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
     }
 
     public final String getAvatarURL() {
@@ -295,7 +295,7 @@ public final class FlaggedMessageEmbed {
 
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m26getId3Eiw7ao() {
-        return this.f7195id;
+        return this.f7196id;
     }
 
     public final Integer getRoleColor() {
@@ -320,7 +320,7 @@ public final class FlaggedMessageEmbed {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m568hashCodeimpl(this.f7195id) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m568hashCodeimpl(this.f7196id) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
         int i11 = 0;
         int i12 = (i10 + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()))) * 31;
@@ -352,7 +352,7 @@ public final class FlaggedMessageEmbed {
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(this.f7195id);
+        String str = MessageId.m569toStringimpl(this.f7196id);
         String str2 = ChannelId.m544toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         UserId userId = this.userId;
@@ -368,7 +368,7 @@ public final class FlaggedMessageEmbed {
     }
 
     private FlaggedMessageEmbed(String str, long j10, GuildId guildId, UserId userId, StructurableText structurableText, String str2, String str3, int i10, Integer num, boolean z10, String str4, Boolean bool) {
-        this.f7195id = str;
+        this.f7196id = str;
         this.channelId = j10;
         this.guildId = guildId;
         this.userId = userId;

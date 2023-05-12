@@ -24,18 +24,12 @@ public final class OrderedListBulletSpan implements LeadingMarginSpan {
 
     @Override // android.text.style.LeadingMarginSpan
     public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence text, int i15, int i16, boolean z10, Layout layout) {
-        boolean z11;
         float b10;
         q.g(canvas, "canvas");
         q.g(paint, "paint");
         q.g(text, "text");
         q.g(layout, "layout");
         if (((Spanned) text).getSpanStart(this) == i15) {
-            z11 = true;
-        } else {
-            z11 = false;
-        }
-        if (z11) {
             float measureText = paint.measureText(this.leadingText);
             String str = this.leadingText;
             b10 = j.b(i10 - measureText, 0.0f);

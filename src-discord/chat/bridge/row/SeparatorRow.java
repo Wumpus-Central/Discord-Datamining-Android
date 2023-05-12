@@ -22,7 +22,7 @@ public final class SeparatorRow extends Row {
     private final int color;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7203id;
+    private final String f7204id;
     private final int index;
     private final Boolean scrollTo;
     private final String text;
@@ -51,7 +51,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i11;
         this.text = str;
-        this.f7203id = str2;
+        this.f7204id = str2;
         this.color = i12;
         if ((i10 & 32) == 0) {
             this.scrollTo = null;
@@ -71,7 +71,7 @@ public final class SeparatorRow extends Row {
             str = separatorRow.text;
         }
         if ((i12 & 8) != 0) {
-            str2 = separatorRow.f7203id;
+            str2 = separatorRow.f7204id;
         }
         if ((i12 & 16) != 0) {
             i11 = separatorRow.color;
@@ -90,7 +90,7 @@ public final class SeparatorRow extends Row {
         output.t(serialDesc, 0, ChangeType.Serializer.INSTANCE, self.getChangeType());
         output.x(serialDesc, 1, self.getIndex());
         output.z(serialDesc, 2, self.text);
-        output.z(serialDesc, 3, self.f7203id);
+        output.z(serialDesc, 3, self.f7204id);
         output.x(serialDesc, 4, self.color);
         if (output.A(serialDesc, 5) || self.scrollTo != null) {
             z10 = true;
@@ -113,7 +113,7 @@ public final class SeparatorRow extends Row {
     }
 
     public final String component4() {
-        return this.f7203id;
+        return this.f7204id;
     }
 
     public final int component5() {
@@ -139,7 +139,7 @@ public final class SeparatorRow extends Row {
             return false;
         }
         SeparatorRow separatorRow = (SeparatorRow) obj;
-        return getChangeType() == separatorRow.getChangeType() && getIndex() == separatorRow.getIndex() && q.b(this.text, separatorRow.text) && q.b(this.f7203id, separatorRow.f7203id) && this.color == separatorRow.color && q.b(this.scrollTo, separatorRow.scrollTo);
+        return getChangeType() == separatorRow.getChangeType() && getIndex() == separatorRow.getIndex() && q.b(this.text, separatorRow.text) && q.b(this.f7204id, separatorRow.f7204id) && this.color == separatorRow.color && q.b(this.scrollTo, separatorRow.scrollTo);
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -152,7 +152,7 @@ public final class SeparatorRow extends Row {
     }
 
     public final String getId() {
-        return this.f7203id;
+        return this.f7204id;
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -169,7 +169,7 @@ public final class SeparatorRow extends Row {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((getChangeType().hashCode() * 31) + getIndex()) * 31) + this.text.hashCode()) * 31) + this.f7203id.hashCode()) * 31) + this.color) * 31;
+        int hashCode = ((((((((getChangeType().hashCode() * 31) + getIndex()) * 31) + this.text.hashCode()) * 31) + this.f7204id.hashCode()) * 31) + this.color) * 31;
         Boolean bool = this.scrollTo;
         return hashCode + (bool == null ? 0 : bool.hashCode());
     }
@@ -178,7 +178,7 @@ public final class SeparatorRow extends Row {
         ChangeType changeType = getChangeType();
         int index = getIndex();
         String str = this.text;
-        String str2 = this.f7203id;
+        String str2 = this.f7204id;
         int i10 = this.color;
         Boolean bool = this.scrollTo;
         return "SeparatorRow(changeType=" + changeType + ", index=" + index + ", text=" + str + ", id=" + str2 + ", color=" + i10 + ", scrollTo=" + bool + ")";
@@ -197,7 +197,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i10;
         this.text = text;
-        this.f7203id = id2;
+        this.f7204id = id2;
         this.color = i11;
         this.scrollTo = bool;
     }

@@ -20,11 +20,11 @@ public final class GiftEmbedKt {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean hasPrimitive(JsonObject jsonObject, String str) {
-        JsonPrimitive k10;
+        JsonPrimitive m10;
         String a10;
         boolean w10;
         JsonElement jsonElement = (JsonElement) jsonObject.get(str);
-        if (jsonElement == null || (k10 = f.k(jsonElement)) == null || (a10 = k10.a()) == null) {
+        if (jsonElement == null || (m10 = f.m(jsonElement)) == null || (a10 = m10.a()) == null) {
             return false;
         }
         w10 = u.w(a10);

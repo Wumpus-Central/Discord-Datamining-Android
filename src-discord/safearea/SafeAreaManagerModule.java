@@ -36,7 +36,7 @@ public final class SafeAreaManagerModule extends ReactContextBaseJavaModule {
         if (currentActivity == null || (rootView = ActivityExtensionsKt.getRootView(currentActivity)) == null) {
             return new LinkedHashMap();
         }
-        DCDSafeAreaUtils.SafeAreaEdgeInsets b10 = DCDSafeAreaUtils.f12927a.b(rootView);
+        DCDSafeAreaUtils.SafeAreaEdgeInsets b10 = DCDSafeAreaUtils.f12928a.b(rootView);
         if (b10 == null) {
             return new LinkedHashMap();
         }
@@ -59,11 +59,11 @@ public final class SafeAreaManagerModule extends ReactContextBaseJavaModule {
         if (currentActivity == null || (rootView = ActivityExtensionsKt.getRootView(currentActivity)) == null) {
             safeAreaEdgeInsets = null;
         } else {
-            safeAreaEdgeInsets = DCDSafeAreaUtils.f12927a.c(rootView);
+            safeAreaEdgeInsets = DCDSafeAreaUtils.f12928a.c(rootView);
         }
         if (safeAreaEdgeInsets != null) {
             promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a(ViewProps.TOP, Float.valueOf(safeAreaEdgeInsets.d())), x.a(ViewProps.BOTTOM, Float.valueOf(safeAreaEdgeInsets.a())), x.a(ViewProps.LEFT, Float.valueOf(safeAreaEdgeInsets.b())), x.a(ViewProps.RIGHT, Float.valueOf(safeAreaEdgeInsets.c()))));
-            unit = Unit.f22035a;
+            unit = Unit.f22036a;
         }
         if (unit == null) {
             promise.reject(new Exception("Unable to obtain stable safe area insets."));

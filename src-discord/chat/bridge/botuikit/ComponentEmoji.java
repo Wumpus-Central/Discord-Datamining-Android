@@ -19,7 +19,7 @@ public final class ComponentEmoji {
     private final boolean animated;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7196id;
+    private final String f7197id;
     private final String name;
     private final String src;
     private final String surrogates;
@@ -44,9 +44,9 @@ public final class ComponentEmoji {
             n1.b(i10, 2, ComponentEmoji$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            this.f7196id = null;
+            this.f7197id = null;
         } else {
-            this.f7196id = str;
+            this.f7197id = str;
         }
         this.name = str2;
         if ((i10 & 4) == 0) {
@@ -68,7 +68,7 @@ public final class ComponentEmoji {
 
     public static /* synthetic */ ComponentEmoji copy$default(ComponentEmoji componentEmoji, String str, String str2, String str3, boolean z10, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = componentEmoji.f7196id;
+            str = componentEmoji.f7197id;
         }
         if ((i10 & 2) != 0) {
             str2 = componentEmoji.name;
@@ -93,13 +93,13 @@ public final class ComponentEmoji {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z13 = false;
-        if (!output.A(serialDesc, 0) && self.f7196id == null) {
+        if (!output.A(serialDesc, 0) && self.f7197id == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.p(serialDesc, 0, a2.f5917a, self.f7196id);
+            output.p(serialDesc, 0, a2.f5917a, self.f7197id);
         }
         output.z(serialDesc, 1, self.name);
         if (!output.A(serialDesc, 2) && self.src == null) {
@@ -127,7 +127,7 @@ public final class ComponentEmoji {
     }
 
     public final String component1() {
-        return this.f7196id;
+        return this.f7197id;
     }
 
     public final String component2() {
@@ -159,7 +159,7 @@ public final class ComponentEmoji {
             return false;
         }
         ComponentEmoji componentEmoji = (ComponentEmoji) obj;
-        return q.b(this.f7196id, componentEmoji.f7196id) && q.b(this.name, componentEmoji.name) && q.b(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.b(this.surrogates, componentEmoji.surrogates);
+        return q.b(this.f7197id, componentEmoji.f7197id) && q.b(this.name, componentEmoji.name) && q.b(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && q.b(this.surrogates, componentEmoji.surrogates);
     }
 
     public final boolean getAnimated() {
@@ -167,7 +167,7 @@ public final class ComponentEmoji {
     }
 
     public final String getId() {
-        return this.f7196id;
+        return this.f7197id;
     }
 
     public final String getName() {
@@ -183,7 +183,7 @@ public final class ComponentEmoji {
     }
 
     public int hashCode() {
-        String str = this.f7196id;
+        String str = this.f7197id;
         int i10 = 0;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.src;
@@ -204,7 +204,7 @@ public final class ComponentEmoji {
     }
 
     public String toString() {
-        String str = this.f7196id;
+        String str = this.f7197id;
         String str2 = this.name;
         String str3 = this.src;
         boolean z10 = this.animated;
@@ -214,7 +214,7 @@ public final class ComponentEmoji {
 
     public ComponentEmoji(String str, String name, String str2, boolean z10, String str3) {
         q.g(name, "name");
-        this.f7196id = str;
+        this.f7197id = str;
         this.name = name;
         this.src = str2;
         this.animated = z10;

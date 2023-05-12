@@ -30,7 +30,7 @@ public final class ChatListHighlightItemAtPositionKt$animateBackgroundColor$1 ex
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Animator animator) {
         invoke2(animator);
-        return Unit.f22035a;
+        return Unit.f22036a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -154,13 +154,13 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     public void addEventEmitters(ThemedReactContext reactContext, final SafeAreaProvider view) {
         q.g(reactContext, "reactContext");
         q.g(view, "view");
-        DCDSafeAreaUtils dCDSafeAreaUtils = DCDSafeAreaUtils.f12927a;
+        DCDSafeAreaUtils dCDSafeAreaUtils = DCDSafeAreaUtils.f12928a;
         view.setOnInsetsChangeListener(new SafeAreaProvider.a() { // from class: com.discord.safearea.SafeAreaProviderManager$addEventEmitters$$inlined$setOnInsetsChangeListener$1
             @Override // com.th3rdwave.safeareacontext.SafeAreaProvider.a
             public final void onInsetsChange(SafeAreaProvider safeAreaProvider, EdgeInsets insets, Rect rect) {
                 DCDSafeAreaUtils.SafeAreaEdgeInsets d10;
                 Insets insets2;
-                DCDSafeAreaUtils dCDSafeAreaUtils2 = DCDSafeAreaUtils.f12927a;
+                DCDSafeAreaUtils dCDSafeAreaUtils2 = DCDSafeAreaUtils.f12928a;
                 q.f(insets, "insets");
                 d10 = dCDSafeAreaUtils2.d(insets);
                 SafeAreaProviderManager safeAreaProviderManager = SafeAreaProviderManager.this;

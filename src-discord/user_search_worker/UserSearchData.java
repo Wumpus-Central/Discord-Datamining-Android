@@ -44,13 +44,13 @@ public abstract class UserSearchData {
         @Override // kotlinx.serialization.json.d
         protected DeserializationStrategy<UserSearchData> selectDeserializer(JsonElement element) {
             String str;
-            JsonPrimitive k10;
+            JsonPrimitive m10;
             q.g(element, "element");
-            JsonElement jsonElement = (JsonElement) kotlinx.serialization.json.f.j(element).get("type");
-            if (jsonElement == null || (k10 = kotlinx.serialization.json.f.k(jsonElement)) == null) {
+            JsonElement jsonElement = (JsonElement) kotlinx.serialization.json.f.l(element).get("type");
+            if (jsonElement == null || (m10 = kotlinx.serialization.json.f.m(jsonElement)) == null) {
                 str = null;
             } else {
-                str = k10.a();
+                str = m10.a();
             }
             if (str != null) {
                 int hashCode = str.hashCode();

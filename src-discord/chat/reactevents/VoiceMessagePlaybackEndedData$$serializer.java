@@ -26,11 +26,12 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
     static {
         VoiceMessagePlaybackEndedData$$serializer voiceMessagePlaybackEndedData$$serializer = new VoiceMessagePlaybackEndedData$$serializer();
         INSTANCE = voiceMessagePlaybackEndedData$$serializer;
-        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.reactevents.VoiceMessagePlaybackEndedData", voiceMessagePlaybackEndedData$$serializer, 4);
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.reactevents.VoiceMessagePlaybackEndedData", voiceMessagePlaybackEndedData$$serializer, 5);
         pluginGeneratedSerialDescriptor.l("messageId", false);
         pluginGeneratedSerialDescriptor.l("totalDurationSecs", false);
         pluginGeneratedSerialDescriptor.l("endDurationSecs", false);
         pluginGeneratedSerialDescriptor.l("senderUserId", false);
+        pluginGeneratedSerialDescriptor.l("durationListeningSecs", false);
         descriptor = pluginGeneratedSerialDescriptor;
     }
 
@@ -40,29 +41,31 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
     @Override // bj.f0
     public KSerializer<?>[] childSerializers() {
         e0 e0Var = e0.f5942a;
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE, e0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public VoiceMessagePlaybackEndedData deserialize(Decoder decoder) {
         float f10;
         float f11;
+        float f12;
         int i10;
         Object obj;
         Object obj2;
         q.g(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
-        String str = null;
         if (b10.p()) {
             obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            f11 = b10.u(descriptor2, 1);
-            f10 = b10.u(descriptor2, 2);
+            f12 = b10.u(descriptor2, 1);
+            f11 = b10.u(descriptor2, 2);
             obj = b10.y(descriptor2, 3, UserId$$serializer.INSTANCE, null);
-            i10 = 15;
+            f10 = b10.u(descriptor2, 4);
+            i10 = 31;
         } else {
-            float f12 = 0.0f;
+            f10 = 0.0f;
             float f13 = 0.0f;
+            float f14 = 0.0f;
             boolean z10 = true;
             int i11 = 0;
             obj2 = null;
@@ -75,29 +78,29 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
                     obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    f13 = b10.u(descriptor2, 1);
+                    f14 = b10.u(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    f12 = b10.u(descriptor2, 2);
+                    f13 = b10.u(descriptor2, 2);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj3 = b10.y(descriptor2, 3, UserId$$serializer.INSTANCE, obj3);
                     i11 |= 8;
+                } else if (o10 == 4) {
+                    f10 = b10.u(descriptor2, 4);
+                    i11 |= 16;
                 } else {
                     throw new n(o10);
                 }
             }
             obj = obj3;
-            f10 = f12;
-            i10 = i11;
             f11 = f13;
+            f12 = f14;
+            i10 = i11;
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        if (messageId != null) {
-            str = messageId.m571unboximpl();
-        }
-        return new VoiceMessagePlaybackEndedData(i10, str, f11, f10, (UserId) obj, null, null);
+        return new VoiceMessagePlaybackEndedData(i10, messageId != null ? messageId.m571unboximpl() : null, f12, f11, (UserId) obj, f10, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
