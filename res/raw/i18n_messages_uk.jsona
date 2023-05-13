@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Зробіть перерву та пофарбуйте за числами з друзями в цій розслаблюючій заплутаній грі.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Неможливо поділитися порожніми журналами",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "До дня народження Discord усі активності безкоштовні до 15 червня. Зверніть увагу на щотижневі сюрпризи. Передплатники Nitro можуть веселитися разом із [особливими перевагами Nitro]({linkToSurprises}) цілий місяць!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "До дня народження Discord усі активності безкоштовні до 15 червня. Зверніть увагу на щотижневі сюрпризи. Передплатники Nitro можуть веселитися разом із $[особливими перевагами Nitro](linkToSurprises) цілий місяць!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} гравців",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ хв.",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Розпочніть активну діяльність або розділіть її з друзями!",

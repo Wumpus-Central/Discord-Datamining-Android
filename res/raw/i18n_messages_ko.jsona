@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "잠시 여유를 가지고 친구와 함께 편안하고 정교한 숫자 색칠 게임을 즐겨 보세요.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "빈 로그를 공유할 수 없음",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord의 생일을 기념해서 6월 15일까지 무료로 활동을 즐길 수 있어요. 매주 깜짤 놀랄 소식이 찾아오고 Nitro 멤버는 한 달 내내 [특별한 Nitro 특전]({linkToSurprises})을 즐길 수 있어요!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord의 생일을 기념해서 6월 15일까지 무료로 활동을 즐길 수 있어요. 매주 깜짤 놀랄 소식이 찾아오고 Nitro 멤버는 한 달 내내 $[특별한 Nitro 특전](linkToSurprises)을 즐길 수 있어요!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers}명",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+분",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "활동을 시작하거나 친구와 공유하세요!",

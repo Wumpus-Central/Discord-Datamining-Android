@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "มาคลายเครียดและระบายสีร่วมกับเพื่อนๆ ในเกมระบายสีตามหมายเลขแสนสวยงามที่จะช่วยให้ผ่อนคลาย",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "แชร์บันทึกที่ว่างเปล่าไม่ได้",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "เพื่อเป็นการฉลองวันเกิดของ Discord กิจกรรมทั้งหมดเปิดให้ใช้งานได้ฟรีจนถึงวันที่ 15 มิถุนายน เตรียมพบกับเซอร์ไพรส์ประจำสัปดาห์ และสมาชิก Nitro จะสามารถร่วมสนุกด้วย[สิทธิประโยชน์จาก Nitro สุดพิเศษ]({linkToSurprises})ได้ตลอดเดือน!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "เพื่อเป็นการฉลองวันเกิดของ Discord กิจกรรมทั้งหมดเปิดให้ใช้งานได้ฟรีจนถึงวันที่ 15 มิถุนายน เตรียมพบกับเซอร์ไพรส์ประจำสัปดาห์ และสมาชิก Nitro จะสามารถร่วมสนุกด้วย$[สิทธิประโยชน์จาก Nitro สุดพิเศษ](linkToSurprises)ได้ตลอดเดือน!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "ผู้เล่น {nPlayers} คน",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ นาที",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "เริ่มกิจกรรมหรือแชร์กับเพื่อนๆ!",

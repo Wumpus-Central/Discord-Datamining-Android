@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Bir mola verip bu rahatlatıcı ve sayılara göre boyama yapılan oyunda arkadaşlarınla boyama yap.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Boş günlükler paylaşılamıyor",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord'un doğum günü şerefine 15 Haziran'a kadar tüm etkinlikler ücretsiz! Haftalık sürprizleri kaçırma. Nitro üyeleri ay boyunca [özel Nitro avantajlarından]({linkToSurprises}) faydalanarak eğlenceye dahil olabilir!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord'un doğum günü şerefine 15 Haziran'a kadar tüm etkinlikler ücretsiz! Haftalık sürprizleri kaçırma. Nitro üyeleri ay boyunca $[özel Nitro avantajlarından](linkToSurprises) faydalanarak eğlenceye dahil olabilir!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} oyuncu",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ dakika",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Bir etkinlik başlat veya arkadaşlarınla paylaş!",

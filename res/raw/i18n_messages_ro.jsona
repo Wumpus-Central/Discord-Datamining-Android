@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Ia o pauză și pictează cu prietenii în acest joc relaxant și complex de colorat pe bază de numere.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Nu se pot partaja jurnale goale",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Pentru a sărbători aniversarea Discord, activitățile sunt gratuite până pe 15 iunie. Stai cu ochii în patru după surprize săptămânale, iar membrii Nitro primesc [avantaje Nitro speciale]({linkToSurprises}) toată luna!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Pentru a sărbători aniversarea Discord, activitățile sunt gratuite până pe 15 iunie. Stai cu ochii în patru după surprize săptămânale, iar membrii Nitro primesc $[avantaje Nitro speciale](linkToSurprises) toată luna!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} jucători",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Începe o activitate sau partajeaz-o cu prietenii tăi!",

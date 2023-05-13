@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Tag en pause, og med dine venner i dette afslappende, snørklede \"farv efter tal\"-spil.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Farvemekka",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Kan ikke dele tomme log-filer",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Vi fejrer Discords fødselsdag med gratis aktiviteter frem til den 15. juni. Hold øje med ugentlige overraskelser, og Nitro-medlemmer får [særlige Nitro-fordele]({linkToSurprises}) gennem hele måneden!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Vi fejrer Discords fødselsdag med gratis aktiviteter frem til den 15. juni. Hold øje med ugentlige overraskelser, og Nitro-medlemmer får $[særlige Nitro-fordele](linkToSurprises) gennem hele måneden!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} spillere",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ minutter",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Start en aktivitet, eller del den med dine venner!",

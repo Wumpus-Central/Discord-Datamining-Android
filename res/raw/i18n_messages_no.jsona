@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Ta en pause og fargelegg med venner i et avslappende og detaljert farge-etter-nummer-spill.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Kan ikke dele tomme logger",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "I anledning Discords fødselsdag er aktiviteter gratis til og med 15. juni. Følg med for å få med deg ukentlige overraskelser. Nitro-medlemmer kan være med på moroa med [spesielle Nitro-fordeler]({linkToSurprises}) hele måneden!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "I anledning Discords fødselsdag er aktiviteter gratis til og med 15. juni. Følg med for å få med deg ukentlige overraskelser. Nitro-medlemmer kan være med på moroa med $[spesielle Nitro-fordeler](linkToSurprises) hele måneden!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} spillere",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Start en aktivitet eller del den med venner!",

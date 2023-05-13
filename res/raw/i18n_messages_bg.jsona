@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Вземи си почивка и рисувай заедно с приятели в тази релаксираща игра за оцветяване по номера.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Оцветявайте заедно",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Не може да се споделят празни записи",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "За да отпразнуваме рождения ден на Discord, направихме дейностите безплатни до 15 юни. Оглеждай се за седмични изненади! Членовете на Nitro могат да се присъединят към забавленията със [специални Nitro бонуси]({linkToSurprises}) през целия месец!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "За да отпразнуваме рождения ден на Discord, направихме дейностите безплатни до 15 юни. Оглеждай се за седмични изненади! Членовете на Nitro могат да се присъединят към забавленията със $[специални Nitro бонуси](linkToSurprises) през целия месец!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} играчи",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ мин",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Стартирай дейност или я сподели с приятели!",

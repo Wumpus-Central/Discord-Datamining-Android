@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Tire um tempo para pintar com amigos neste jogo relaxante de colorir com números.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Não é possível compartilhar registros vazios",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Para comemorar o aniversário do Discord, as atividades estão gratuitas até 15 de junho. Vai ter surpresas semanais e membros Nitro podem participar da diversão com [vantagens Nitro especiais]({linkToSurprises}) o mês todo!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Para comemorar o aniversário do Discord, as atividades estão gratuitas até 15 de junho. Vai ter surpresas semanais e membros Nitro podem participar da diversão com $[vantagens Nitro especiais](linkToSurprises) o mês todo!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} jogadores",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Comece atividades ou compartilhe com seus amigos!",

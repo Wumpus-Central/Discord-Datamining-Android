@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Дайте себе передышку, вместе с друзьями пораскрашивайте картинки по номерам.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Невозможно отправить пустые журналы",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "В честь дня рождения Discord все активности бесплатны до 15 июня. Каждую неделю вас будут ждать сюрпризы, а подписчики Nitro смогут пользоваться [особыми бонусами]({linkToSurprises}) на протяжении всего месяца!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "В честь дня рождения Discord все активности бесплатны до 15 июня. Каждую неделю вас будут ждать сюрпризы, а подписчики Nitro смогут пользоваться $[особыми бонусами](linkToSurprises) на протяжении всего месяца!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers, plural, =1 {{nPlayers} игрок} few {{nPlayers} игрока} other {{nPlayers} игроков}}",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ мин.",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Начните активность или поделитесь ею с друзьями!",

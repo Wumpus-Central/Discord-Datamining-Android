@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Nghỉ giải lao và tô màu cùng bạn bè trong trò chơi tô màu theo số nhẹ nhàng này.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Không thể chia sẻ nhật ký trống",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Để chào mừng sinh nhật Discord, các Hoạt Động sẽ mở miễn phí cho tới ngày 15/06. Hãy đón chờ những bất ngờ hàng tuần và thành viên Nitro có thể chung vui với [đặc quyền Nitro đặc biệt]({linkToSurprises}) trong suốt cả tháng!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Để chào mừng sinh nhật Discord, các Hoạt Động sẽ mở miễn phí cho tới ngày 15/06. Hãy đón chờ những bất ngờ hàng tuần và thành viên Nitro có thể chung vui với $[đặc quyền Nitro đặc biệt](linkToSurprises) trong suốt cả tháng!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} người chơi",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ phút",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Bắt đầu một Hoạt Động hoặc chia sẻ nó với bạn bè của bạn!",

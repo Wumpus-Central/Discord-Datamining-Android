@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Pidä taukoa keskustelusta ja keskity maalaamaan pikkutarkkoja kuvia numerovärityspelissä.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Tyhjiä lokeja ei voida jakaa",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discordin syntymäpäivän kunniaksi toiminnot ovat ilmaisia 15. kesäkuuta asti. Pidä myös silmät auki viikoittaisten yllätysten varalta. Nitro-jäsenet puolestaan pääsevät nauttimaan [Nitron erikoiseduista]({linkToSurprises}) koko kuukauden ajan!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discordin syntymäpäivän kunniaksi toiminnot ovat ilmaisia 15. kesäkuuta asti. Pidä myös silmät auki viikoittaisten yllätysten varalta. Nitro-jäsenet puolestaan pääsevät nauttimaan $[Nitron erikoiseduista](linkToSurprises) koko kuukauden ajan!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} pelaajaa",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Käynnistä toiminto tai jaa se kaverisi kanssa!",

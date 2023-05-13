@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Napravi predah i bojaj s prijateljima u ovoj opuštajućoj, ali zamršenoj igri bojanja s brojevima.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Bojajte zajedno",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Nije moguće dijeliti prazne zapisnike",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Kako bismo proslavili Discordov rođendan, aktivnosti su besplatne do 15. lipnja. Pazi na tjedna iznenađenja, a Nitro članovi mogu se pridružiti zabavi uz [posebne Nitro pogodnosti]({linkToSurprises}) tijekom cijelog mjeseca!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Kako bismo proslavili Discordov rođendan, aktivnosti su besplatne do 15. lipnja. Pazi na tjedna iznenađenja, a Nitro članovi mogu se pridružiti zabavi uz $[posebne Nitro pogodnosti](linkToSurprises) tijekom cijelog mjeseca!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} igrača",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Pokreni neku aktivnost ili je podijeli sa svojim prijateljima!",

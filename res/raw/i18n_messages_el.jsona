@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Κάνε ένα διάλειμμα και ζωγράφισε με τους φίλους σου σε αυτό το χαλαρωτικό και σύνθετο παιχνίδι ζωγραφικής με αριθμούς.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Αδυναμία κοινοποίησης κενών αρχείων καταγραφής",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Για να γιορτάσουμε τα γενέθλια του Discord, οι Δραστηριότητες είναι δωρεάν έως τις 15 Ιουνίου. Αναζήτησε τις εβδομαδιαίες εκπλήξεις, ενώ τα μέλη του Nitro μπορούν να πάρουν μέρος στη διασκέδαση με τα [ειδικά προνόμια Nitro]({linkToSurprises}) ολόκληρο τον μήνα!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Για να γιορτάσουμε τα γενέθλια του Discord, οι Δραστηριότητες είναι δωρεάν έως τις 15 Ιουνίου. Αναζήτησε τις εβδομαδιαίες εκπλήξεις, ενώ τα μέλη του Nitro μπορούν να πάρουν μέρος στη διασκέδαση με τα $[ειδικά προνόμια Nitro](linkToSurprises) ολόκληρο τον μήνα!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} παίκτες",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ λεπτά",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Ξεκίνα μια Δραστηριότητα ή μοιράσου τη με τους φίλους σου!",

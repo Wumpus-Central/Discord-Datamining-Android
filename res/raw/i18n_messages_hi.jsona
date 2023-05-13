@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "फ़्रेंड्स के साथ ब्रेक लेकर इस रिलैक्सिंग, पेचीदा कलर-बाय-नंबर गेम में पेंट करें.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "कलर टुगेदर",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "खाली लॉग्स शेयर नहीं कर पा रहे हैं",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord का बर्थडे मनाने के लिए, 15 जून तक एक्टिविटीज़ फ़्री हैं. वीकली सरप्राइज़ पर नज़र रखें और Nitro मेंबर्स पूरे महीने [खास Nitro पर्क]({linkToSurprises}) के साथ मौज-मस्ती में जुड़ सकते हैं!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discord का बर्थडे मनाने के लिए, 15 जून तक एक्टिविटीज़ फ़्री हैं. वीकली सरप्राइज़ पर नज़र रखें और Nitro मेंबर्स पूरे महीने $[खास Nitro पर्क](linkToSurprises) के साथ मौज-मस्ती में जुड़ सकते हैं!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} प्लेयर्स",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ मिनट",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "एक्टिविटी शुरू करें या अपने फ़्रेंड्स के साथ इसे शेयर करें!",

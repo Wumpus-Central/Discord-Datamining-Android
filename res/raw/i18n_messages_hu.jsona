@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Tarts egy kis szüntet, és festegess a barátaiddal ezzel a pihentető és kifinomult, számszínezős játékkal!",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Az üres naplók megosztása sikertelen",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "A Discord születésnapja alkalmából június 15-ig ingyenesek a tevékenységek. Heti szinten meglepetésekre számíthatsz, a Nitro-tagokat pedig egész hónapban [különleges Nitro-jutalmakkal]({linkToSurprises}) örvendeztetjük meg!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "A Discord születésnapja alkalmából június 15-ig ingyenesek a tevékenységek. Heti szinten meglepetésekre számíthatsz, a Nitro-tagokat pedig egész hónapban $[különleges Nitro-jutalmakkal](linkToSurprises) örvendeztetjük meg!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} játékos",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ perc",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Indíts el valamilyen tevékenységet, vagy ossz meg egyet a barátaiddal!",

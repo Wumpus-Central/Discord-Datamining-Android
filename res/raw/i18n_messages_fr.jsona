@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Fais une pause avec tes amis en jouant à ce jeu de coloriage numéroté à la fois reposant et complexe.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Impossible de partager des journaux vides",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Pour fêter l'anniversaire de Discord, les Activités sont gratuites jusqu'au 15 juin. Prépare-toi pour des surprises hebdomadaires ! Les membres Nitro peuvent se joindre à la fête en profitant d'[avantages Nitro spéciaux]({linkToSurprises}) pendant tout le mois !",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Pour fêter l'anniversaire de Discord, les Activités sont gratuites jusqu'au 15 juin. Prépare-toi pour des surprises hebdomadaires ! Les membres Nitro peuvent se joindre à la fête en profitant d'$[avantages Nitro spéciaux](linkToSurprises) pendant tout le mois !",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} joueurs",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Lance une Activité ou partage-la avec tes amis !",

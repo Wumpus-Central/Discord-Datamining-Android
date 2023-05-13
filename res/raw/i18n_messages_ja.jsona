@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "この心の落ち着く細かい塗り絵で、友達と一緒に一休みしよう。",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "空白のログを共有できませんでした",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discordのアニバーサリーを祝して、アクティビティは6月15日まで無料です。毎週サプライズを準備したので、お楽しみに！Nitroのメンバーには今月、[特別なNitro特典]({linkToSurprises})を用意しております！",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Discordのアニバーサリーを祝して、アクティビティは6月15日まで無料です。毎週サプライズを準備したので、お楽しみに！Nitroのメンバーには今月、$[特別なNitro特典](linkToSurprises)を用意しております！",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers}人のプレイヤー",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+分",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "アクティビティを開始したり、フレンドと共有しよう！",

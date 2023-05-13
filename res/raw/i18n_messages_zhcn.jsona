@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "休息一下吧，来这个看似复杂但又很放松的数字填色游戏中与好友一起作画。",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "无法分享空白日志",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "为了庆祝 Discord 的生日，6 月 15 日前所有小活动全部免费。敬请留意每周的惊喜，Nitro 会员在整个月中都可以用[Nitro 特权]({linkToSurprises})畅享更多乐趣！",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "为了庆祝 Discord 的生日，6 月 15 日前所有小活动全部免费。敬请留意每周的惊喜，Nitro 会员在整个月中都可以用$[Nitro 特权](linkToSurprises)畅享更多乐趣！",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} 名玩家",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ 分钟",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "开始小活动或者与好友分享！",

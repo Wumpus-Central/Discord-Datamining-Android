@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Dej si pauzu a zakresli si s přáteli v této odpočinkové hře. Čím více lidí, tím to bude pestřejší.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Color Together",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Prázdné protokoly nelze sdílet",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Na oslavu narozenin Discordu jsou aktivity až do 15. června zadarmo. Vyhlížej týdenní překvapení! Předplatitelé Nitra si navíc můžou celý měsíc užívat spoustu zábavy se [speciálními výhodami Nitra]({linkToSurprises}).",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Na oslavu narozenin Discordu jsou aktivity až do 15. června zadarmo. Vyhlížej týdenní překvapení! Předplatitelé Nitra si navíc můžou celý měsíc užívat spoustu zábavy se $[speciálními výhodami Nitra](linkToSurprises).",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers, plural, =1{{nPlayers} hráč} few {{nPlayers} hráči} other {{nPlayers} hráčů}}",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "{nMinutes}+ min",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Zahaj aktivitu nebo ji sdílej s přáteli!",

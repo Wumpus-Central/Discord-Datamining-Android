@@ -781,7 +781,7 @@
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_DESCRIPTION": "Mach eine Pause und male mit Freunden in diesem entspannenden, komplexen Malen-nach-Zahlen-Spiel.",
   "EMBEDDED_ACTIVITIES_WHATS_NEW_COLOR_TOGETHER_TILE_IMG_ALT": "Gemeinsam malen",
   "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE": "Leere Protokolle können nicht geteilt werden",
-  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Zur Geburtstagsfeier von Discord sind Aktivitäten bis zum 15. Juni kostenlos. Dich erwarten wöchentliche Überraschungen, und Nitro-Mitglieder können den ganzen Monat lang mit [speziellen Vorteilen mit Nitro]({linkToSurprises}) mitfeiern!",
+  "EMBEDDED_ACTIVITIES_BIRTHDAY_HERO_TEXT": "Zur Geburtstagsfeier von Discord sind Aktivitäten bis zum 15. Juni kostenlos. Dich erwarten wöchentliche Überraschungen, und Nitro-Mitglieder können den ganzen Monat lang mit $[speziellen Vorteilen mit Nitro](linkToSurprises) mitfeiern!",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_PLAYERS": "{nPlayers} Spieler",
   "EMBEDDED_ACTIVITIES_NUMBER_OF_MINUTES": "+{nMinutes} Min.",
   "EMBEDDED_ACTIVITIES_START_OR_SHARE": "Starte eine Aktivität oder teile sie mit deinen Freunden!",
