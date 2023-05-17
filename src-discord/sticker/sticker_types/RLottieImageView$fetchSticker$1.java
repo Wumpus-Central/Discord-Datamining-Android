@@ -28,7 +28,7 @@ import tf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1", f = "RLottieImageView.kt", l = {73, 82}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class RLottieImageView$fetchSticker$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ RLottieImageView.Config $config;
     int label;
@@ -38,7 +38,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
     /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
         final /* synthetic */ RLottieImageView this$0;
@@ -122,7 +122,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1  reason: invalid class name */
-            /* loaded from: classes7.dex */
+            /* loaded from: classes6.dex */
             public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 final /* synthetic */ RLottieImageView.Config $config;
                 final /* synthetic */ DownloadState $downloadState;
@@ -181,7 +181,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2  reason: invalid class name and collision with other inner class name */
-            /* loaded from: classes7.dex */
+            /* loaded from: classes6.dex */
             public static final class C01092 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 int label;
                 final /* synthetic */ RLottieImageView this$0;

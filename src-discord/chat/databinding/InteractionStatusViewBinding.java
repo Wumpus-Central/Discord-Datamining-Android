@@ -10,7 +10,7 @@ import com.discord.progress_dots.ProgressDots;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class InteractionStatusViewBinding {
     private final View rootView;
     public final SimpleDraweeView viewInteractionStatusDangerIcon;

@@ -7,7 +7,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.n;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 /* synthetic */ class SpoilerView$configure$1 extends n implements Function0<Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public SpoilerView$configure$1(Object obj) {

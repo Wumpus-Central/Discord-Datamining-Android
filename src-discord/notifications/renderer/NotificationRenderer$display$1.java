@@ -36,7 +36,7 @@ import tf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1", f = "NotificationRenderer.kt", l = {134}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 public final class NotificationRenderer$display$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ NotificationBehaviors $behaviors;
     final /* synthetic */ Context $context;
@@ -52,7 +52,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/Bitmap;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1$1", f = "NotificationRenderer.kt", l = {135}, m = "invokeSuspend")
     /* renamed from: com.discord.notifications.renderer.NotificationRenderer$display$1$1  reason: invalid class name */
-    /* loaded from: classes3.dex */
+    /* loaded from: classes4.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
         final /* synthetic */ Context $context;
         final /* synthetic */ Ref$ObjectRef<String> $iconUrl;
@@ -101,7 +101,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/Bitmap;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1$2", f = "NotificationRenderer.kt", l = {136}, m = "invokeSuspend")
     /* renamed from: com.discord.notifications.renderer.NotificationRenderer$display$1$2  reason: invalid class name */
-    /* loaded from: classes3.dex */
+    /* loaded from: classes4.dex */
     public static final class AnonymousClass2 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
         final /* synthetic */ Context $context;
         final /* synthetic */ NotificationData $notification;

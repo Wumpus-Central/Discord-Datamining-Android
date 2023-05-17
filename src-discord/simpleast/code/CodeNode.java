@@ -12,18 +12,18 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0016\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002:\u0002\u0014\u0015B%\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\b¢\u0006\u0002\u0010\tJ\u0013\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rH\u0096\u0002J\u001d\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0013R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00028\u00000\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/discord/simpleast/code/CodeNode;", "RC", "Lcom/discord/simpleast/core/node/TextNode;", "content", "Lcom/discord/simpleast/code/CodeNode$Content;", "language", "", "stylesProvider", "Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;", "(Lcom/discord/simpleast/code/CodeNode$Content;Ljava/lang/String;Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;)V", "equals", "", "other", "", "render", "", "builder", "Landroid/text/SpannableStringBuilder;", "renderContext", "(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V", "Content", "DefinitionNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public class CodeNode<RC> extends TextNode<RC> {
     private final String language;
     private final StyleNode.SpanProvider<RC> stylesProvider;
 
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0007\bB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0002\t\n¨\u0006\u000b"}, d2 = {"Lcom/discord/simpleast/code/CodeNode$Content;", "", "body", "", "(Ljava/lang/String;)V", "getBody", "()Ljava/lang/String;", "Parsed", "Raw", "Lcom/discord/simpleast/code/CodeNode$Content$Raw;", "Lcom/discord/simpleast/code/CodeNode$Content$Parsed;", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static abstract class Content {
         private final String body;
 
         @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000*\u0004\b\u0001\u0010\u00012\u00020\u0002B!\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0012\u0010\u0005\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00010\u00070\u0006¢\u0006\u0002\u0010\bR\u001d\u0010\u0005\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00010\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/discord/simpleast/code/CodeNode$Content$Parsed;", "RC", "Lcom/discord/simpleast/code/CodeNode$Content;", "raw", "", "children", "", "Lcom/discord/simpleast/core/node/Node;", "(Ljava/lang/String;Ljava/util/List;)V", "getChildren", "()Ljava/util/List;", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class Parsed<RC> extends Content {
             private final List<Node<RC>> children;
 
@@ -42,7 +42,7 @@ public class CodeNode<RC> extends TextNode<RC> {
         }
 
         @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004¨\u0006\u0005"}, d2 = {"Lcom/discord/simpleast/code/CodeNode$Content$Raw;", "Lcom/discord/simpleast/code/CodeNode$Content;", "body", "", "(Ljava/lang/String;)V", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class Raw extends Content {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Raw(String body) {
@@ -65,7 +65,7 @@ public class CodeNode<RC> extends TextNode<RC> {
     }
 
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000*\u0004\b\u0001\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B#\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00010\u0007¢\u0006\u0002\u0010\b¨\u0006\t"}, d2 = {"Lcom/discord/simpleast/code/CodeNode$DefinitionNode;", "RC", "Lcom/discord/simpleast/core/node/Node$Parent;", "pre", "", "name", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/simpleast/code/CodeStyleProviders;)V", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class DefinitionNode<RC> extends Node.Parent<RC> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public DefinitionNode(String pre, String name, CodeStyleProviders<RC> codeStyleProviders) {

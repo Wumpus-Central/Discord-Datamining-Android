@@ -4,7 +4,7 @@ import com.facebook.react.bridge.JavaScriptContextHolder;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.turbomodule.core.CallInvokerHolderImpl;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes8.dex */
 public class KvStorageBridge {
     public static final KvStorageBridge instance = new KvStorageBridge();
 

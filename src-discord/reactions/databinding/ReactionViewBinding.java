@@ -9,7 +9,7 @@ import com.discord.reactions.R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import x1.a;
 
-/* loaded from: classes6.dex */
+/* loaded from: classes7.dex */
 public final class ReactionViewBinding {
     public final TextView reactionCount1;
     public final TextView reactionCount2;

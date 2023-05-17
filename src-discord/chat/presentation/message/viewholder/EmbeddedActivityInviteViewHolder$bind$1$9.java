@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$9 extends n implements Function1<EmojiContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbeddedActivityInviteViewHolder$bind$1$9(Object obj) {

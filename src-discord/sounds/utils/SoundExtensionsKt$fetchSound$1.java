@@ -22,7 +22,7 @@ import tf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1", f = "SoundExtensions.kt", l = {42}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Context $context;
     final /* synthetic */ String $fileName;
@@ -82,7 +82,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "downloadState", "Lcom/discord/file_downloader/DownloadState;", "emit", "(Lcom/discord/file_downloader/DownloadState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class AnonymousClass1<T> implements FlowCollector {
         final /* synthetic */ int $key;
         final /* synthetic */ SoundManager $soundManager;
@@ -93,7 +93,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1", f = "SoundExtensions.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1  reason: invalid class name and collision with other inner class name */
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class C01081 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ DownloadState $downloadState;
             final /* synthetic */ int $key;
@@ -138,7 +138,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2", f = "SoundExtensions.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$2  reason: invalid class name */
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class AnonymousClass2 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ Exception $e;
             int label;
@@ -174,7 +174,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3", f = "SoundExtensions.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$3  reason: invalid class name */
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class AnonymousClass3 extends k implements Function2<CoroutineScope, Continuation, Object> {
             int label;
 

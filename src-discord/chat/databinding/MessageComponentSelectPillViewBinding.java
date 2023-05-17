@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.chat.R;
 import com.google.android.material.textview.MaterialTextView;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class MessageComponentSelectPillViewBinding {
     private final MaterialTextView rootView;
 

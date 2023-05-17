@@ -27,7 +27,7 @@ import tf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1", f = "CallSystemMessageView.kt", l = {82}, m = "invokeSuspend")
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class CallSystemMessageView$setMessage$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Message $message;
     final /* synthetic */ long $start;
@@ -38,7 +38,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1", f = "CallSystemMessageView.kt", l = {90}, m = "invokeSuspend")
     /* renamed from: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1  reason: invalid class name */
-    /* loaded from: classes4.dex */
+    /* loaded from: classes5.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Message $message;
         final /* synthetic */ long $start;
@@ -76,7 +76,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
 
                     @Metadata(d1 = {"\u0000\f\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\u0010\u0006\u001a\u00020\u0003\"\u0004\b\u0000\u0010\u0000\"\u0004\b\u0001\u0010\u00012\u0006\u0010\u0002\u001a\u00028\u0000H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"T", "R", "value", "", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
                     /* renamed from: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1$2  reason: invalid class name */
-                    /* loaded from: classes4.dex */
+                    /* loaded from: classes5.dex */
                     public static final class AnonymousClass2<T> implements FlowCollector {
                         final /* synthetic */ long $start$inlined;
                         final /* synthetic */ FlowCollector $this_unsafeFlow;
@@ -84,7 +84,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
                         @e(c = "com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1$2", f = "CallSystemMessageView.kt", l = {223}, m = "emit")
                         /* renamed from: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1$2$1  reason: invalid class name */
-                        /* loaded from: classes4.dex */
+                        /* loaded from: classes5.dex */
                         public static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.d {
                             Object L$0;
                             int label;

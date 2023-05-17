@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.discord.chat.R;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class MessageFrameJumpHeaderBinding {
     public final TextView messageHeaderSubtitle;
     public final TextView messageHeaderTitle;

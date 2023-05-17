@@ -11,7 +11,7 @@ import com.discord.chat.presentation.message.view.MediaView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class VideoAttachmentViewBinding {
     public final MediaView mediaView;
     public final TextView mediaViewAltText;

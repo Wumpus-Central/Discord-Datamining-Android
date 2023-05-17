@@ -17,7 +17,7 @@ import tf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$portal$1", f = "PortalViewModule.kt", l = {37}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 final class PortalViewModule$PortalViewManager$portal$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ double $portal;
     final /* synthetic */ FrameLayout $portalView;
@@ -27,7 +27,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$portal$1$1", f = "PortalViewModule.kt", l = {38}, m = "invokeSuspend")
     /* renamed from: com.discord.portals.PortalViewModule$PortalViewManager$portal$1$1  reason: invalid class name */
-    /* loaded from: classes3.dex */
+    /* loaded from: classes4.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 

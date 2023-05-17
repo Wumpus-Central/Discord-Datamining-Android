@@ -9,11 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public class TreeMatcher {
     private Map<Class, NodeMatcher> matchers = new HashMap();
 
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public interface NodeMatcher {
         boolean matches(Node node, Node node2);
     }

@@ -12,7 +12,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$44 extends n implements Function4<GuildId, ChannelId, ChannelId, MessageId, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$44(Object obj) {

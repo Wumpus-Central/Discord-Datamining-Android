@@ -9,7 +9,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 public /* synthetic */ class MessagingService$Companion$init$1 extends n implements Function1<String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessagingService$Companion$init$1(Object obj) {

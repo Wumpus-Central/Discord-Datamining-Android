@@ -8,7 +8,7 @@ import com.discord.chat.presentation.message.view.botuikit.components.ActionRowC
 import com.google.android.flexbox.FlexboxLayout;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class MessageComponentActionRowViewBinding {
     public final FlexboxLayout actionRowComponentViewGroup;
     public final ComponentFailedLabelViewBinding actionRowComponentViewGroupErrorRow;

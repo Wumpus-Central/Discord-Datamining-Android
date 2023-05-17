@@ -1,6 +1,6 @@
 package com.discord.user_search_worker;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class BuildConfig {
     public static final String BUILD_TYPE = "release";
     public static final boolean DEBUG = false;

@@ -15,7 +15,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a(\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010\u0007\u001a\u00020\u0006H\u0002\u001a2\u0010\b\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010\t\u001a\u00020\u00062\b\b\u0001\u0010\u0007\u001a\u00020\u0006H\u0002\u001a\u001e\u0010\n\u001a\u00020\u0001*\u00020\u000b2\u0006\u0010\f\u001a\u00020\u00062\b\b\u0002\u0010\r\u001a\u00020\u0004H\u0000\u001a\u001e\u0010\u000e\u001a\u00020\u0001*\u00020\u000b2\u0006\u0010\f\u001a\u00020\u00062\b\b\u0002\u0010\r\u001a\u00020\u0004H\u0000¨\u0006\u000f"}, d2 = {"animateBackgroundColor", "", "Landroid/view/View;", "delay", "", "startColor", "", "endColor", "animateHighlightBackgroundColor", "fullColor", "chatListEmphasizeHighlightItemAtPosition", "Landroidx/recyclerview/widget/RecyclerView;", ViewProps.POSITION, "delayMilliseconds", "chatListHighlightItemAtPosition", "chat_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class ChatListHighlightItemAtPositionKt {
     private static final void animateBackgroundColor(View view, long j10, int i10, int i11) {
         animateBackgroundColor$anim(j10, view, i10, i11, new ChatListHighlightItemAtPositionKt$animateBackgroundColor$1(i11, i10, j10, view));

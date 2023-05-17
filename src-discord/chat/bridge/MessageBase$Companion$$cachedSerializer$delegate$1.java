@@ -10,7 +10,7 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.SealedClassSerializer;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 final class MessageBase$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final MessageBase$Companion$$cachedSerializer$delegate$1 INSTANCE = new MessageBase$Companion$$cachedSerializer$delegate$1();
 

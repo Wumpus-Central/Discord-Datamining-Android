@@ -2,7 +2,7 @@ package com.discord.crash_reporting;
 
 import io.sentry.j2;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 class WebrtcCrashReporting {
     WebrtcCrashReporting() {
     }

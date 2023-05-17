@@ -8,7 +8,7 @@ import kotlin.jvm.internal.s;
 import kotlinx.serialization.KSerializer;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 final class TapSuppressNotificationsIconData$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final TapSuppressNotificationsIconData$$cachedSerializer$delegate$1 INSTANCE = new TapSuppressNotificationsIconData$$cachedSerializer$delegate$1();
 

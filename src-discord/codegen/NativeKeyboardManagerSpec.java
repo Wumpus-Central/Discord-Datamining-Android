@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import e6.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public abstract class NativeKeyboardManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeKeyboardManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);

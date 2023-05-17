@@ -7,7 +7,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class RoleIconViewBinding {
     public final SimpleDraweeSpanTextView roleIconViewUnicodeEmoji;
     private final View rootView;

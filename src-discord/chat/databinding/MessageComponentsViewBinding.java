@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import com.discord.chat.R;
 import x1.a;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public final class MessageComponentsViewBinding {
     public final LinearLayout itemComponentsRoot;
     private final View rootView;

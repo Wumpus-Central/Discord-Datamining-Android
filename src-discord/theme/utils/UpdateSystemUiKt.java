@@ -12,7 +12,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0002\u001a\f\u0010\u0005\u001a\u00020\u0001*\u00020\u0006H\u0000\u001a\f\u0010\u0005\u001a\u00020\u0001*\u00020\u0007H\u0000¨\u0006\b"}, d2 = {"setLightTheme", "", "Landroidx/core/view/WindowInsetsControllerCompat;", "isLightTheme", "", "updateSystemUi", "Landroid/app/Activity;", "Landroid/view/View;", "theme_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class UpdateSystemUiKt {
     private static final void setLightTheme(WindowInsetsControllerCompat windowInsetsControllerCompat, boolean z10) {
         windowInsetsControllerCompat.c(z10);

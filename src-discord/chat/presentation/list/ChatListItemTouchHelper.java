@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import r1.b;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes5.dex */
 public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
     static final int ACTION_MODE_DRAG_MASK = 16711680;
     private static final int ACTION_MODE_IDLE_MASK = 255;
@@ -205,7 +205,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     };
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: classes4.dex */
+    /* loaded from: classes5.dex */
     public class ItemTouchHelperGestureListener extends GestureDetector.SimpleOnGestureListener {
         private boolean mShouldReactToLongPress = true;
 
@@ -249,7 +249,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: classes4.dex */
+    /* loaded from: classes5.dex */
     public static class RecoverAnimation implements Animator.AnimatorListener {
         final int mActionState;
         final int mAnimationType;

@@ -8,7 +8,7 @@ import kotlin.coroutines.jvm.internal.e;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @e(c = "com.discord.misc.utilities.backoff.ExponentialBackoff", f = "ExponentialBackoff.kt", l = {63, 65, 76, 77}, m = "performBackoff")
-/* loaded from: classes5.dex */
+/* loaded from: classes8.dex */
 public final class ExponentialBackoff$performBackoff$1<T> extends d {
     Object L$0;
     Object L$1;
