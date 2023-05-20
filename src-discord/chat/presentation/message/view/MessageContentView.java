@@ -89,12 +89,12 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
         return (SimpleDraweeSpanTextView) this.shadowView$delegate.getValue();
     }
 
-    /* renamed from: setMessageContent-2i9KL1s$default */
+    /* renamed from: setMessageContent-2i9KL1s$default  reason: not valid java name */
     public static /* synthetic */ void m301setMessageContent2i9KL1s$default(MessageContentView messageContentView, StructurableText structurableText, String str, boolean z10, boolean z11, boolean z12, Function2 function2, Function1 function1, Function3 function3, Function4 function4, Function2 function22, Function1 function12, Function1 function13, Function0 function0, Function1 function14, Function1 function15, Function1 function16, Function1 function17, int i10, int i11, String str2, Truncation truncation, DiscordTheme discordTheme, int i12, Object obj) {
         messageContentView.m303setMessageContent2i9KL1s(structurableText, str, z10, z11, z12, function2, function1, function3, function4, function22, function12, function13, function0, function14, function15, function16, (i12 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : function17, i10, i11, (i12 & 524288) != 0 ? null : str2, (i12 & 1048576) != 0 ? null : truncation, (i12 & 2097152) != 0 ? ThemeManagerKt.getTheme() : discordTheme);
     }
 
-    /* renamed from: truncate-pPZZVto */
+    /* renamed from: truncate-pPZZVto  reason: not valid java name */
     private final void m302truncatepPZZVto(String str, Truncation truncation, int i10, DraweeSpanStringBuilder draweeSpanStringBuilder, Function1<? super MessageId, Unit> function1) {
         int i11;
         int i12;
@@ -133,7 +133,7 @@ public final class MessageContentView extends SimpleDraweeSpanTextView implement
     /* JADX WARN: Removed duplicated region for block: B:10:0x00d9  */
     /* JADX WARN: Removed duplicated region for block: B:12:0x00dd  */
     /* JADX WARN: Removed duplicated region for block: B:9:0x00d1  */
-    /* renamed from: setMessageContent-2i9KL1s */
+    /* renamed from: setMessageContent-2i9KL1s  reason: not valid java name */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences

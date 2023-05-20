@@ -3375,48 +3375,48 @@
     <public type="drawable" name="material_ic_keyboard_arrow_right_black_24dp" id="0x7f0804a2" />
     <public type="drawable" name="material_ic_menu_arrow_down_black_24dp" id="0x7f0804a3" />
     <public type="drawable" name="material_ic_menu_arrow_up_black_24dp" id="0x7f0804a4" />
-    <public type="drawable" name="mtrl_dialog_background" id="0x7f08062a" />
-    <public type="drawable" name="mtrl_dropdown_arrow" id="0x7f08062b" />
-    <public type="drawable" name="mtrl_ic_arrow_drop_down" id="0x7f08062c" />
-    <public type="drawable" name="mtrl_ic_arrow_drop_up" id="0x7f08062d" />
-    <public type="drawable" name="mtrl_ic_cancel" id="0x7f08062e" />
-    <public type="drawable" name="mtrl_ic_error" id="0x7f08062f" />
-    <public type="drawable" name="mtrl_navigation_bar_item_background" id="0x7f080630" />
-    <public type="drawable" name="mtrl_popupmenu_background" id="0x7f080631" />
-    <public type="drawable" name="mtrl_popupmenu_background_overlay" id="0x7f080632" />
-    <public type="drawable" name="mtrl_tabs_default_indicator" id="0x7f080633" />
-    <public type="drawable" name="navigation_empty_icon" id="0x7f080634" />
-    <public type="drawable" name="notification_action_background" id="0x7f08065b" />
-    <public type="drawable" name="notification_bg" id="0x7f08065c" />
-    <public type="drawable" name="notification_bg_low" id="0x7f08065d" />
-    <public type="drawable" name="notification_icon_background" id="0x7f080662" />
-    <public type="drawable" name="notification_template_icon_bg" id="0x7f080663" />
-    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f080664" />
-    <public type="drawable" name="notification_tile_bg" id="0x7f080665" />
-    <public type="drawable" name="overlay" id="0x7f080667" />
-    <public type="drawable" name="redbox_top_border_background" id="0x7f080668" />
-    <public type="drawable" name="test_custom_background" id="0x7f080669" />
-    <public type="drawable" name="test_level_drawable" id="0x7f08066a" />
-    <public type="drawable" name="tooltip_frame_dark" id="0x7f08066b" />
-    <public type="drawable" name="tooltip_frame_light" id="0x7f08066c" />
-    <public type="drawable" name="trash_bg" id="0x7f08066d" />
-    <public type="drawable" name="ucrop_crop" id="0x7f08066e" />
-    <public type="drawable" name="ucrop_ic_crop" id="0x7f080670" />
-    <public type="drawable" name="ucrop_ic_crop_unselected" id="0x7f080671" />
-    <public type="drawable" name="ucrop_ic_cross" id="0x7f080672" />
-    <public type="drawable" name="ucrop_ic_next" id="0x7f080674" />
-    <public type="drawable" name="ucrop_ic_reset" id="0x7f080675" />
-    <public type="drawable" name="ucrop_ic_rotate" id="0x7f080676" />
-    <public type="drawable" name="ucrop_ic_rotate_unselected" id="0x7f080677" />
-    <public type="drawable" name="ucrop_ic_scale" id="0x7f080678" />
-    <public type="drawable" name="ucrop_ic_scale_unselected" id="0x7f080679" />
-    <public type="drawable" name="ucrop_rotate" id="0x7f08067a" />
-    <public type="drawable" name="ucrop_scale" id="0x7f08067b" />
-    <public type="drawable" name="ucrop_shadow_upside" id="0x7f08067c" />
-    <public type="drawable" name="ucrop_vector_ic_crop" id="0x7f08067d" />
-    <public type="drawable" name="ucrop_vector_loader" id="0x7f08067e" />
-    <public type="drawable" name="ucrop_vector_loader_animated" id="0x7f08067f" />
-    <public type="drawable" name="ucrop_wrapper_controls_shape" id="0x7f080680" />
+    <public type="drawable" name="mtrl_dialog_background" id="0x7f08062b" />
+    <public type="drawable" name="mtrl_dropdown_arrow" id="0x7f08062c" />
+    <public type="drawable" name="mtrl_ic_arrow_drop_down" id="0x7f08062d" />
+    <public type="drawable" name="mtrl_ic_arrow_drop_up" id="0x7f08062e" />
+    <public type="drawable" name="mtrl_ic_cancel" id="0x7f08062f" />
+    <public type="drawable" name="mtrl_ic_error" id="0x7f080630" />
+    <public type="drawable" name="mtrl_navigation_bar_item_background" id="0x7f080631" />
+    <public type="drawable" name="mtrl_popupmenu_background" id="0x7f080632" />
+    <public type="drawable" name="mtrl_popupmenu_background_overlay" id="0x7f080633" />
+    <public type="drawable" name="mtrl_tabs_default_indicator" id="0x7f080634" />
+    <public type="drawable" name="navigation_empty_icon" id="0x7f080635" />
+    <public type="drawable" name="notification_action_background" id="0x7f08065c" />
+    <public type="drawable" name="notification_bg" id="0x7f08065d" />
+    <public type="drawable" name="notification_bg_low" id="0x7f08065e" />
+    <public type="drawable" name="notification_icon_background" id="0x7f080663" />
+    <public type="drawable" name="notification_template_icon_bg" id="0x7f080664" />
+    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f080665" />
+    <public type="drawable" name="notification_tile_bg" id="0x7f080666" />
+    <public type="drawable" name="overlay" id="0x7f080668" />
+    <public type="drawable" name="redbox_top_border_background" id="0x7f080669" />
+    <public type="drawable" name="test_custom_background" id="0x7f08066a" />
+    <public type="drawable" name="test_level_drawable" id="0x7f08066b" />
+    <public type="drawable" name="tooltip_frame_dark" id="0x7f08066c" />
+    <public type="drawable" name="tooltip_frame_light" id="0x7f08066d" />
+    <public type="drawable" name="trash_bg" id="0x7f08066e" />
+    <public type="drawable" name="ucrop_crop" id="0x7f08066f" />
+    <public type="drawable" name="ucrop_ic_crop" id="0x7f080671" />
+    <public type="drawable" name="ucrop_ic_crop_unselected" id="0x7f080672" />
+    <public type="drawable" name="ucrop_ic_cross" id="0x7f080673" />
+    <public type="drawable" name="ucrop_ic_next" id="0x7f080675" />
+    <public type="drawable" name="ucrop_ic_reset" id="0x7f080676" />
+    <public type="drawable" name="ucrop_ic_rotate" id="0x7f080677" />
+    <public type="drawable" name="ucrop_ic_rotate_unselected" id="0x7f080678" />
+    <public type="drawable" name="ucrop_ic_scale" id="0x7f080679" />
+    <public type="drawable" name="ucrop_ic_scale_unselected" id="0x7f08067a" />
+    <public type="drawable" name="ucrop_rotate" id="0x7f08067b" />
+    <public type="drawable" name="ucrop_scale" id="0x7f08067c" />
+    <public type="drawable" name="ucrop_shadow_upside" id="0x7f08067d" />
+    <public type="drawable" name="ucrop_vector_ic_crop" id="0x7f08067e" />
+    <public type="drawable" name="ucrop_vector_loader" id="0x7f08067f" />
+    <public type="drawable" name="ucrop_vector_loader_animated" id="0x7f080680" />
+    <public type="drawable" name="ucrop_wrapper_controls_shape" id="0x7f080681" />
     <public type="drawable" name="APKTOOL_DUMMY_8" id="0x7f080008" />
     <public type="drawable" name="APKTOOL_DUMMY_d" id="0x7f08000d" />
     <public type="drawable" name="APKTOOL_DUMMY_e" id="0x7f08000e" />
@@ -4326,7 +4326,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_4bb" id="0x7f0804bb" />
     <public type="drawable" name="APKTOOL_DUMMY_4bc" id="0x7f0804bc" />
     <public type="drawable" name="APKTOOL_DUMMY_4bd" id="0x7f0804bd" />
-    <public type="drawable" name="APKTOOL_DUMMY_4c1" id="0x7f0804c1" />
+    <public type="drawable" name="APKTOOL_DUMMY_4be" id="0x7f0804be" />
     <public type="drawable" name="APKTOOL_DUMMY_4c2" id="0x7f0804c2" />
     <public type="drawable" name="APKTOOL_DUMMY_4c3" id="0x7f0804c3" />
     <public type="drawable" name="APKTOOL_DUMMY_4c4" id="0x7f0804c4" />
@@ -4349,7 +4349,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_4d5" id="0x7f0804d5" />
     <public type="drawable" name="APKTOOL_DUMMY_4d6" id="0x7f0804d6" />
     <public type="drawable" name="APKTOOL_DUMMY_4d7" id="0x7f0804d7" />
-    <public type="drawable" name="APKTOOL_DUMMY_4d9" id="0x7f0804d9" />
+    <public type="drawable" name="APKTOOL_DUMMY_4d8" id="0x7f0804d8" />
     <public type="drawable" name="APKTOOL_DUMMY_4da" id="0x7f0804da" />
     <public type="drawable" name="APKTOOL_DUMMY_4db" id="0x7f0804db" />
     <public type="drawable" name="APKTOOL_DUMMY_4dc" id="0x7f0804dc" />
@@ -4392,7 +4392,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_501" id="0x7f080501" />
     <public type="drawable" name="APKTOOL_DUMMY_502" id="0x7f080502" />
     <public type="drawable" name="APKTOOL_DUMMY_503" id="0x7f080503" />
-    <public type="drawable" name="APKTOOL_DUMMY_506" id="0x7f080506" />
+    <public type="drawable" name="APKTOOL_DUMMY_504" id="0x7f080504" />
     <public type="drawable" name="APKTOOL_DUMMY_507" id="0x7f080507" />
     <public type="drawable" name="APKTOOL_DUMMY_508" id="0x7f080508" />
     <public type="drawable" name="APKTOOL_DUMMY_509" id="0x7f080509" />
@@ -4483,7 +4483,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_55e" id="0x7f08055e" />
     <public type="drawable" name="APKTOOL_DUMMY_55f" id="0x7f08055f" />
     <public type="drawable" name="APKTOOL_DUMMY_560" id="0x7f080560" />
-    <public type="drawable" name="APKTOOL_DUMMY_562" id="0x7f080562" />
+    <public type="drawable" name="APKTOOL_DUMMY_561" id="0x7f080561" />
     <public type="drawable" name="APKTOOL_DUMMY_563" id="0x7f080563" />
     <public type="drawable" name="APKTOOL_DUMMY_564" id="0x7f080564" />
     <public type="drawable" name="APKTOOL_DUMMY_565" id="0x7f080565" />
@@ -4511,7 +4511,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_57b" id="0x7f08057b" />
     <public type="drawable" name="APKTOOL_DUMMY_57c" id="0x7f08057c" />
     <public type="drawable" name="APKTOOL_DUMMY_57d" id="0x7f08057d" />
-    <public type="drawable" name="APKTOOL_DUMMY_580" id="0x7f080580" />
+    <public type="drawable" name="APKTOOL_DUMMY_57e" id="0x7f08057e" />
     <public type="drawable" name="APKTOOL_DUMMY_581" id="0x7f080581" />
     <public type="drawable" name="APKTOOL_DUMMY_582" id="0x7f080582" />
     <public type="drawable" name="APKTOOL_DUMMY_583" id="0x7f080583" />
@@ -4560,14 +4560,14 @@
     <public type="drawable" name="APKTOOL_DUMMY_5ae" id="0x7f0805ae" />
     <public type="drawable" name="APKTOOL_DUMMY_5af" id="0x7f0805af" />
     <public type="drawable" name="APKTOOL_DUMMY_5b0" id="0x7f0805b0" />
-    <public type="drawable" name="APKTOOL_DUMMY_5b2" id="0x7f0805b2" />
+    <public type="drawable" name="APKTOOL_DUMMY_5b1" id="0x7f0805b1" />
     <public type="drawable" name="APKTOOL_DUMMY_5b3" id="0x7f0805b3" />
     <public type="drawable" name="APKTOOL_DUMMY_5b4" id="0x7f0805b4" />
     <public type="drawable" name="APKTOOL_DUMMY_5b5" id="0x7f0805b5" />
     <public type="drawable" name="APKTOOL_DUMMY_5b6" id="0x7f0805b6" />
     <public type="drawable" name="APKTOOL_DUMMY_5b7" id="0x7f0805b7" />
     <public type="drawable" name="APKTOOL_DUMMY_5b8" id="0x7f0805b8" />
-    <public type="drawable" name="APKTOOL_DUMMY_5be" id="0x7f0805be" />
+    <public type="drawable" name="APKTOOL_DUMMY_5b9" id="0x7f0805b9" />
     <public type="drawable" name="APKTOOL_DUMMY_5bf" id="0x7f0805bf" />
     <public type="drawable" name="APKTOOL_DUMMY_5c0" id="0x7f0805c0" />
     <public type="drawable" name="APKTOOL_DUMMY_5c1" id="0x7f0805c1" />
@@ -4587,13 +4587,13 @@
     <public type="drawable" name="APKTOOL_DUMMY_5cf" id="0x7f0805cf" />
     <public type="drawable" name="APKTOOL_DUMMY_5d0" id="0x7f0805d0" />
     <public type="drawable" name="APKTOOL_DUMMY_5d1" id="0x7f0805d1" />
-    <public type="drawable" name="APKTOOL_DUMMY_5d3" id="0x7f0805d3" />
+    <public type="drawable" name="APKTOOL_DUMMY_5d2" id="0x7f0805d2" />
     <public type="drawable" name="APKTOOL_DUMMY_5d4" id="0x7f0805d4" />
     <public type="drawable" name="APKTOOL_DUMMY_5d5" id="0x7f0805d5" />
     <public type="drawable" name="APKTOOL_DUMMY_5d6" id="0x7f0805d6" />
     <public type="drawable" name="APKTOOL_DUMMY_5d7" id="0x7f0805d7" />
     <public type="drawable" name="APKTOOL_DUMMY_5d8" id="0x7f0805d8" />
-    <public type="drawable" name="APKTOOL_DUMMY_5da" id="0x7f0805da" />
+    <public type="drawable" name="APKTOOL_DUMMY_5d9" id="0x7f0805d9" />
     <public type="drawable" name="APKTOOL_DUMMY_5db" id="0x7f0805db" />
     <public type="drawable" name="APKTOOL_DUMMY_5dc" id="0x7f0805dc" />
     <public type="drawable" name="APKTOOL_DUMMY_5dd" id="0x7f0805dd" />
@@ -4626,8 +4626,8 @@
     <public type="drawable" name="APKTOOL_DUMMY_5f8" id="0x7f0805f8" />
     <public type="drawable" name="APKTOOL_DUMMY_5f9" id="0x7f0805f9" />
     <public type="drawable" name="APKTOOL_DUMMY_5fa" id="0x7f0805fa" />
-    <public type="drawable" name="APKTOOL_DUMMY_5fc" id="0x7f0805fc" />
-    <public type="drawable" name="APKTOOL_DUMMY_5fe" id="0x7f0805fe" />
+    <public type="drawable" name="APKTOOL_DUMMY_5fb" id="0x7f0805fb" />
+    <public type="drawable" name="APKTOOL_DUMMY_5fd" id="0x7f0805fd" />
     <public type="drawable" name="APKTOOL_DUMMY_5ff" id="0x7f0805ff" />
     <public type="drawable" name="APKTOOL_DUMMY_600" id="0x7f080600" />
     <public type="drawable" name="APKTOOL_DUMMY_601" id="0x7f080601" />
@@ -4671,17 +4671,18 @@
     <public type="drawable" name="APKTOOL_DUMMY_627" id="0x7f080627" />
     <public type="drawable" name="APKTOOL_DUMMY_628" id="0x7f080628" />
     <public type="drawable" name="APKTOOL_DUMMY_629" id="0x7f080629" />
-    <public type="drawable" name="APKTOOL_DUMMY_653" id="0x7f080653" />
-    <public type="drawable" name="APKTOOL_DUMMY_655" id="0x7f080655" />
-    <public type="drawable" name="APKTOOL_DUMMY_657" id="0x7f080657" />
-    <public type="drawable" name="APKTOOL_DUMMY_659" id="0x7f080659" />
-    <public type="drawable" name="APKTOOL_DUMMY_65e" id="0x7f08065e" />
+    <public type="drawable" name="APKTOOL_DUMMY_62a" id="0x7f08062a" />
+    <public type="drawable" name="APKTOOL_DUMMY_654" id="0x7f080654" />
+    <public type="drawable" name="APKTOOL_DUMMY_656" id="0x7f080656" />
+    <public type="drawable" name="APKTOOL_DUMMY_658" id="0x7f080658" />
+    <public type="drawable" name="APKTOOL_DUMMY_65a" id="0x7f08065a" />
     <public type="drawable" name="APKTOOL_DUMMY_65f" id="0x7f08065f" />
     <public type="drawable" name="APKTOOL_DUMMY_660" id="0x7f080660" />
     <public type="drawable" name="APKTOOL_DUMMY_661" id="0x7f080661" />
-    <public type="drawable" name="APKTOOL_DUMMY_666" id="0x7f080666" />
-    <public type="drawable" name="APKTOOL_DUMMY_66f" id="0x7f08066f" />
-    <public type="drawable" name="APKTOOL_DUMMY_673" id="0x7f080673" />
+    <public type="drawable" name="APKTOOL_DUMMY_662" id="0x7f080662" />
+    <public type="drawable" name="APKTOOL_DUMMY_667" id="0x7f080667" />
+    <public type="drawable" name="APKTOOL_DUMMY_670" id="0x7f080670" />
+    <public type="drawable" name="APKTOOL_DUMMY_674" id="0x7f080674" />
     <public type="drawable" name="adaptive_icon" id="0x7f080058" />
     <public type="drawable" name="autofill_inline_suggestion_chip_background" id="0x7f08005b" />
     <public type="drawable" name="images_auth_backgroundsplashdev" id="0x7f0800fe" />
@@ -4746,6 +4747,13 @@
     <public type="drawable" name="images_native_verification_img_baddies_light_theme" id="0x7f080459" />
     <public type="drawable" name="images_native_verification_img_verify_phone_dark_theme" id="0x7f08045a" />
     <public type="drawable" name="images_native_verification_img_verify_phone_light_theme" id="0x7f08045b" />
+    <public type="drawable" name="images_native_wumpus_wumpusash" id="0x7f08045c" />
+    <public type="drawable" name="images_native_wumpus_wumpuslink" id="0x7f08045d" />
+    <public type="drawable" name="images_native_wumpus_wumpusluigi" id="0x7f08045e" />
+    <public type="drawable" name="images_native_wumpus_wumpusmario" id="0x7f08045f" />
+    <public type="drawable" name="images_native_wumpus_wumpuspikachu" id="0x7f080460" />
+    <public type="drawable" name="images_native_wumpus_wumpuswizard" id="0x7f080461" />
+    <public type="drawable" name="images_native_wumpus_wumpuswump" id="0x7f080462" />
     <public type="drawable" name="images_noappicon" id="0x7f080464" />
     <public type="drawable" name="images_platforms_img_account_sync_battlenet_light_and_dark" id="0x7f080465" />
     <public type="drawable" name="images_platforms_img_account_sync_battlenet_white" id="0x7f080466" />
@@ -4791,70 +4799,63 @@
     <public type="drawable" name="images_platforms_img_account_sync_youtube_white" id="0x7f08048e" />
     <public type="drawable" name="images_public_guilds_systemuseravatar" id="0x7f08048f" />
     <public type="drawable" name="modules_auth_native_images_welcomesplashart" id="0x7f0804af" />
-    <public type="drawable" name="modules_clyde_ai_assets_clydeavatar" id="0x7f0804be" />
-    <public type="drawable" name="modules_clyde_ai_assets_clydeprofile" id="0x7f0804bf" />
-    <public type="drawable" name="modules_clyde_ai_assets_clydeprofilebanner" id="0x7f0804c0" />
-    <public type="drawable" name="modules_guild_boosting_native_images_top_perk_streaming_quality" id="0x7f080504" />
-    <public type="drawable" name="modules_guild_boosting_native_images_top_perk_vanity_url" id="0x7f080505" />
-    <public type="drawable" name="modules_main_tabs_v2_native_images_gameemptystate" id="0x7f08057e" />
-    <public type="drawable" name="modules_main_tabs_v2_native_images_gameemptystatecontroller" id="0x7f08057f" />
-    <public type="drawable" name="modules_messages_images_noresults" id="0x7f0805b1" />
-    <public type="drawable" name="modules_notifications_images_ic_bell_off" id="0x7f0805b9" />
-    <public type="drawable" name="modules_notifications_images_ic_bell_on" id="0x7f0805ba" />
-    <public type="drawable" name="modules_notifications_images_ic_discord" id="0x7f0805bb" />
-    <public type="drawable" name="modules_notifications_images_ic_essentials_sparkle" id="0x7f0805bc" />
-    <public type="drawable" name="modules_notifications_images_ic_slider" id="0x7f0805bd" />
-    <public type="drawable" name="modules_parent_tools_images_family_center_chat_check_icon" id="0x7f0805d2" />
-    <public type="drawable" name="modules_pomelo_images_ic_legacy_username" id="0x7f0805d9" />
-    <public type="drawable" name="modules_user_settings_images_collectibles_shop" id="0x7f0805fd" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_bg" id="0x7f080635" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_cs" id="0x7f080636" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_da" id="0x7f080637" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_de" id="0x7f080638" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_el" id="0x7f080639" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_engb" id="0x7f08063a" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_enus" id="0x7f08063b" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_eses" id="0x7f08063c" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_fi" id="0x7f08063d" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_fr" id="0x7f08063e" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_hi" id="0x7f08063f" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_hr" id="0x7f080640" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_hu" id="0x7f080641" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_it" id="0x7f080642" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_ja" id="0x7f080643" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_ko" id="0x7f080644" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_lt" id="0x7f080645" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_nl" id="0x7f080646" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_no" id="0x7f080647" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_pl" id="0x7f080648" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_ptbr" id="0x7f080649" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_ro" id="0x7f08064a" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_ru" id="0x7f08064b" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_svse" id="0x7f08064c" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_th" id="0x7f08064d" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_tr" id="0x7f08064e" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_uk" id="0x7f08064f" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_vi" id="0x7f080650" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_zhcn" id="0x7f080651" />
-    <public type="drawable" name="node_modules_discordapp_common_images_flags_zhtw" id="0x7f080652" />
-    <public type="drawable" name="node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080654" />
-    <public type="drawable" name="node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080656" />
-    <public type="drawable" name="node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080658" />
-    <public type="drawable" name="node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f08065a" />
+    <public type="drawable" name="modules_clyde_ai_assets_clydeavatar" id="0x7f0804bf" />
+    <public type="drawable" name="modules_clyde_ai_assets_clydeprofile" id="0x7f0804c0" />
+    <public type="drawable" name="modules_clyde_ai_assets_clydeprofilebanner" id="0x7f0804c1" />
+    <public type="drawable" name="modules_guild_boosting_native_images_top_perk_streaming_quality" id="0x7f080505" />
+    <public type="drawable" name="modules_guild_boosting_native_images_top_perk_vanity_url" id="0x7f080506" />
+    <public type="drawable" name="modules_main_tabs_v2_native_images_gameemptystate" id="0x7f08057f" />
+    <public type="drawable" name="modules_main_tabs_v2_native_images_gameemptystatecontroller" id="0x7f080580" />
+    <public type="drawable" name="modules_messages_images_noresults" id="0x7f0805b2" />
+    <public type="drawable" name="modules_notifications_images_ic_bell_off" id="0x7f0805ba" />
+    <public type="drawable" name="modules_notifications_images_ic_bell_on" id="0x7f0805bb" />
+    <public type="drawable" name="modules_notifications_images_ic_discord" id="0x7f0805bc" />
+    <public type="drawable" name="modules_notifications_images_ic_essentials_sparkle" id="0x7f0805bd" />
+    <public type="drawable" name="modules_notifications_images_ic_slider" id="0x7f0805be" />
+    <public type="drawable" name="modules_parent_tools_images_family_center_chat_check_icon" id="0x7f0805d3" />
+    <public type="drawable" name="modules_pomelo_images_ic_legacy_username" id="0x7f0805da" />
+    <public type="drawable" name="modules_user_settings_images_collectibles_shop" id="0x7f0805fe" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_bg" id="0x7f080636" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_cs" id="0x7f080637" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_da" id="0x7f080638" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_de" id="0x7f080639" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_el" id="0x7f08063a" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_engb" id="0x7f08063b" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_enus" id="0x7f08063c" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_eses" id="0x7f08063d" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_fi" id="0x7f08063e" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_fr" id="0x7f08063f" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_hi" id="0x7f080640" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_hr" id="0x7f080641" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_hu" id="0x7f080642" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_it" id="0x7f080643" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_ja" id="0x7f080644" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_ko" id="0x7f080645" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_lt" id="0x7f080646" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_nl" id="0x7f080647" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_no" id="0x7f080648" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_pl" id="0x7f080649" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_ptbr" id="0x7f08064a" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_ro" id="0x7f08064b" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_ru" id="0x7f08064c" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_svse" id="0x7f08064d" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_th" id="0x7f08064e" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_tr" id="0x7f08064f" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_uk" id="0x7f080650" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_vi" id="0x7f080651" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_zhcn" id="0x7f080652" />
+    <public type="drawable" name="node_modules_discordapp_common_images_flags_zhtw" id="0x7f080653" />
+    <public type="drawable" name="node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080655" />
+    <public type="drawable" name="node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080657" />
+    <public type="drawable" name="node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080659" />
+    <public type="drawable" name="node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f08065b" />
     <public type="drawable" name="images_googleauthlogo" id="0x7f080115" />
     <public type="drawable" name="images_native_empties_search_empty_state_dark" id="0x7f080184" />
-    <public type="drawable" name="images_native_wumpus_wumpusash" id="0x7f08045c" />
-    <public type="drawable" name="images_native_wumpus_wumpuslink" id="0x7f08045d" />
-    <public type="drawable" name="images_native_wumpus_wumpusluigi" id="0x7f08045e" />
-    <public type="drawable" name="images_native_wumpus_wumpusmario" id="0x7f08045f" />
-    <public type="drawable" name="images_native_wumpus_wumpuspikachu" id="0x7f080460" />
-    <public type="drawable" name="images_native_wumpus_wumpuswizard" id="0x7f080461" />
-    <public type="drawable" name="images_native_wumpus_wumpuswump" id="0x7f080462" />
-    <public type="drawable" name="modules_directory_channels_native_images_hub_header" id="0x7f0804d8" />
-    <public type="drawable" name="modules_user_profile_images_banner_sample_banner" id="0x7f0805fb" />
+    <public type="drawable" name="modules_directory_channels_native_images_hub_header" id="0x7f0804d9" />
+    <public type="drawable" name="modules_user_profile_images_banner_sample_banner" id="0x7f0805fc" />
     <public type="drawable" name="ic_send_white_24dp" id="0x7f0800f8" />
     <public type="drawable" name="modules_age_gate_native_images_nsfw_gate" id="0x7f0804a8" />
-    <public type="drawable" name="modules_hub_native_images_hubbacktoschool" id="0x7f080561" />
+    <public type="drawable" name="modules_hub_native_images_hubbacktoschool" id="0x7f080562" />
     <public type="drawable" name="$adaptive_icon_foreground__0" id="0x7f080000" />
     <public type="drawable" name="$icon_with_gradient__0" id="0x7f080007" />
     <public type="drawable" name="adaptive_icon_foreground" id="0x7f08005a" />

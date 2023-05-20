@@ -5,16 +5,14 @@ import android.os.Build;
 import com.discord.BuildConfig;
 import com.discord.client_info.ClientInfo;
 import com.discord.logging.Log;
-import io.sentry.Hint;
 import io.sentry.Scope;
-import io.sentry.SentryEvent;
-import io.sentry.a2;
 import io.sentry.android.core.SentryAndroidOptions;
 import io.sentry.android.core.b1;
+import io.sentry.b2;
 import io.sentry.d;
-import io.sentry.j2;
-import io.sentry.l3;
-import io.sentry.m3;
+import io.sentry.k2;
+import io.sentry.n3;
+import io.sentry.o3;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
@@ -79,9 +77,9 @@ public final class CrashReporting {
         crashReporting.captureMessage(str, str2, errorLevel);
     }
 
-    public static final void captureMessage$lambda$4(String tag, String message, ErrorLevel errorLevel, Scope SentryScope) {
+    public static final void captureMessage$lambda$1(String tag, String message, ErrorLevel errorLevel, Scope SentryScope) {
         List<String> d10;
-        l3 l3Var;
+        n3 n3Var;
         q.g(tag, "$tag");
         q.g(message, "$message");
         q.g(errorLevel, "$errorLevel");
@@ -90,23 +88,23 @@ public final class CrashReporting {
         SentryScope.v(d10);
         int i10 = WhenMappings.$EnumSwitchMapping$0[errorLevel.ordinal()];
         if (i10 == 1) {
-            l3Var = l3.INFO;
+            n3Var = n3.INFO;
         } else if (i10 == 2) {
-            l3Var = l3.WARNING;
+            n3Var = n3.WARNING;
         } else {
             throw new jg.q();
         }
-        j2.h(message, l3Var);
+        k2.h(message, n3Var);
     }
 
-    public static final void init$lambda$3(Context context, SentryAndroidOptions options) {
+    public static final void init$lambda$0(Context context, SentryAndroidOptions options) {
         q.g(context, "$context");
         q.g(options, "options");
         options.setDsn("https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375");
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@180.9.0-2+180209");
+        options.setRelease("discord_android@180.10.0-2+180210");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -114,75 +112,9 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("b943fb62-b452-4541-99e2-57157ee601ad");
+        options.setProguardUuid("ccd57ff4-ee58-4d11-92e1-40553cb3fe79");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
-        options.setBeforeSend(new m3.b() { // from class: com.discord.crash_reporting.a
-            @Override // io.sentry.m3.b
-            public final SentryEvent a(SentryEvent sentryEvent, Hint hint) {
-                SentryEvent init$lambda$3$lambda$2;
-                init$lambda$3$lambda$2 = CrashReporting.init$lambda$3$lambda$2(sentryEvent, hint);
-                return init$lambda$3$lambda$2;
-            }
-        });
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:26:0x0046 A[SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
-    public static final io.sentry.SentryEvent init$lambda$3$lambda$2(io.sentry.SentryEvent r6, io.sentry.Hint r7) {
-        /*
-            java.lang.String r7 = "sentryEvent"
-            kotlin.jvm.internal.q.g(r6, r7)
-            java.util.List r7 = r6.n0()
-            r0 = 0
-            r1 = 0
-            if (r7 == 0) goto L_0x004a
-            java.lang.String r2 = "exceptions"
-            kotlin.jvm.internal.q.f(r7, r2)
-            boolean r2 = r7.isEmpty()
-            r3 = 1
-            if (r2 == 0) goto L_0x001b
-        L_0x0019:
-            r7 = r1
-            goto L_0x0047
-        L_0x001b:
-            java.util.Iterator r7 = r7.iterator()
-        L_0x001f:
-            boolean r2 = r7.hasNext()
-            if (r2 == 0) goto L_0x0019
-            java.lang.Object r2 = r7.next()
-            io.sentry.protocol.o r2 = (io.sentry.protocol.o) r2
-            if (r2 == 0) goto L_0x0043
-            java.lang.String r2 = r2.i()
-            if (r2 == 0) goto L_0x0043
-            java.lang.String r4 = "type"
-            kotlin.jvm.internal.q.f(r2, r4)
-            java.lang.String r4 = "JavascriptException"
-            r5 = 2
-            boolean r2 = nj.l.M(r2, r4, r1, r5, r0)
-            if (r2 != r3) goto L_0x0043
-            r2 = r3
-            goto L_0x0044
-        L_0x0043:
-            r2 = r1
-        L_0x0044:
-            if (r2 == 0) goto L_0x001f
-            r7 = r3
-        L_0x0047:
-            if (r7 != r3) goto L_0x004a
-            r1 = r3
-        L_0x004a:
-            if (r1 == 0) goto L_0x004d
-            goto L_0x004e
-        L_0x004d:
-            r6 = r0
-        L_0x004e:
-            return r6
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.crash_reporting.CrashReporting.init$lambda$3$lambda$2(io.sentry.SentryEvent, io.sentry.Hint):io.sentry.SentryEvent");
     }
 
     public final void addBreadcrumb(String breadcrumbMessage, Map<String, String> breadcrumbData, String str) {
@@ -194,7 +126,7 @@ public final class CrashReporting {
         }
         dVar.l(str);
         Log.i$default(Log.INSTANCE, "SentryBreadcrumb", breadcrumbMessage, (Throwable) null, 4, (Object) null);
-        j2.b(dVar);
+        k2.b(dVar);
     }
 
     public final void captureException(Throwable throwable) {
@@ -203,7 +135,7 @@ public final class CrashReporting {
         Log log = Log.INSTANCE;
         b10 = f.b(throwable);
         Log.e$default(log, "SentryBreadcrumb", b10, (Throwable) null, 4, (Object) null);
-        j2.f(throwable);
+        k2.f(throwable);
     }
 
     public final void captureMessage(final String tag, final String message, final ErrorLevel errorLevel) {
@@ -216,10 +148,10 @@ public final class CrashReporting {
         } else if (i10 == 2) {
             Log.w$default(Log.INSTANCE, tag, message, (Throwable) null, 4, (Object) null);
         }
-        j2.x(new a2() { // from class: com.discord.crash_reporting.c
-            @Override // io.sentry.a2
+        k2.x(new b2() { // from class: com.discord.crash_reporting.b
+            @Override // io.sentry.b2
             public final void a(Scope scope) {
-                CrashReporting.captureMessage$lambda$4(tag, message, errorLevel, scope);
+                CrashReporting.captureMessage$lambda$1(tag, message, errorLevel, scope);
             }
         });
     }
@@ -253,13 +185,13 @@ public final class CrashReporting {
                     return;
                 }
             }
-            b1.f(context, new j2.a() { // from class: com.discord.crash_reporting.b
-                @Override // io.sentry.j2.a
-                public final void a(m3 m3Var) {
-                    CrashReporting.init$lambda$3(context, (SentryAndroidOptions) m3Var);
+            b1.f(context, new k2.a() { // from class: com.discord.crash_reporting.a
+                @Override // io.sentry.k2.a
+                public final void a(o3 o3Var) {
+                    CrashReporting.init$lambda$0(context, (SentryAndroidOptions) o3Var);
                 }
             });
-            isCrashedLastRun = j2.q();
+            isCrashedLastRun = k2.q();
         }
     }
 
