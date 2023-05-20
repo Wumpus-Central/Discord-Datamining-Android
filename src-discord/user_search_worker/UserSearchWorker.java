@@ -15,9 +15,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.text.Regex;
 import kotlinx.serialization.json.Json;
-import kotlinx.serialization.json.k;
-import qf.c;
-import ri.j;
+import kotlinx.serialization.json.l;
+import mg.c;
+import nj.j;
 
 @Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0007\b\u0000\u0018\u0000 .2\u00020\u0001:\u0001.B-\u0012$\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e¢\u0006\u0004\b,\u0010-J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0006H\u0002J\u0010\u0010\t\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\bH\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u0018\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\nH\u0002J\u0018\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u000e\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010\u001d\u001a\u00020\u0004R5\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e8\u0006¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'R \u0010)\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\f0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R \u0010+\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000e0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010*¨\u0006/"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker;", "", "Lcom/discord/user_search_worker/UserSearchUpdateUsersData;", "data", "", "mergeUsers", "Lcom/discord/user_search_worker/UserSearchQuerySetData;", "setNewQuery", "Lcom/discord/user_search_worker/UserSearchQueryClearData;", "clearQuery", "", "id", "Lcom/discord/user_search_worker/UserSearchTransformedUser;", "user", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "payload", "", "isValid", "needleBase", "haystackBase", "fuzzySearch", "", "score", "booster", "calculateScore", "uuid", "searchUsers", "dataJSON", "onMessage", "terminate", "Lkotlin/Function3;", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "onResults", "Lkotlin/jvm/functions/Function3;", "getOnResults", "()Lkotlin/jvm/functions/Function3;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "", "users", "Ljava/util/Map;", "queries", "<init>", "(Lkotlin/jvm/functions/Function3;)V", "Companion", "user_search_worker_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes6.dex */
@@ -28,7 +28,7 @@ public final class UserSearchWorker {
     private final Function3<List<UserSearchWorkerResult>, String, String, Unit> onResults;
     public static final Companion Companion = new Companion(null);
     private static final Regex STRIP_DIACRITICS_REGEX_PATTERN = new Regex("[\\u0300-\\u036f]");
-    private final Json json = k.b(null, UserSearchWorker$json$1.INSTANCE, 1, null);
+    private final Json json = l.b(null, UserSearchWorker$json$1.INSTANCE, 1, null);
     private final Map<String, UserSearchTransformedUser> users = new LinkedHashMap();
     private final Map<String, UserSearchQuerySetPayload> queries = new LinkedHashMap();
 
@@ -248,7 +248,7 @@ public final class UserSearchWorker {
             r11 = r5
             java.util.Map r5 = r4.getNicknames()
             java.util.Map r12 = r2.getNicknames()
-            java.util.Map r12 = of.s.o(r5, r12)
+            java.util.Map r12 = kg.s.o(r5, r12)
             r5 = r4
             com.discord.user_search_worker.UserSearchTransformedUser r5 = r5.copy(r6, r7, r8, r9, r10, r11, r12)
             if (r5 != 0) goto L_0x0070
@@ -352,7 +352,7 @@ public final class UserSearchWorker {
             this.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f22106l.c(query);
+        String c12 = Regex.f22146l.c(query);
         j jVar = j.IGNORE_CASE;
         Regex regex2 = new Regex("^" + c12, jVar);
         Regex regex3 = new Regex(c12, jVar);
@@ -383,7 +383,7 @@ public final class UserSearchWorker {
                     l10 = kotlin.collections.j.l(strArr2);
                     list = r.o0(l10, value.getNicknames().values());
                 } else {
-                    throw new nf.q();
+                    throw new jg.q();
                 }
                 R = r.R(list);
                 UserSearchWorkerResult userSearchWorkerResult = null;

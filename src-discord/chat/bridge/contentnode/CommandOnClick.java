@@ -1,7 +1,5 @@
 package com.discord.chat.bridge.contentnode;
 
-import bj.a2;
-import bj.n1;
 import com.discord.chat.bridge.MessageType;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
@@ -16,10 +14,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import yi.f;
+import uj.f;
+import xj.a2;
+import xj.n1;
 
-@f
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 82\u00020\u0001:\u000278BX\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010ø\u0001\u0000¢\u0006\u0002\u0010\u0011BP\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000¢\u0006\u0002\u0010\u0012J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0019\u0010\u001f\u001a\u0004\u0018\u00010\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b J\u001b\u0010!\u001a\u0004\u0018\u00010\tHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\"\u0010\u0014J\u0019\u0010#\u001a\u0004\u0018\u00010\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b$J\u000b\u0010%\u001a\u0004\u0018\u00010\fHÆ\u0003J\u0019\u0010&\u001a\u0004\u0018\u00010\u000eHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b'J^\u0010(\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b)\u0010*J\u0013\u0010+\u001a\u00020,2\b\u0010-\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010.\u001a\u00020\u0003HÖ\u0001J\t\u0010/\u001a\u00020\u0005HÖ\u0001J!\u00100\u001a\u0002012\u0006\u00102\u001a\u00020\u00002\u0006\u00103\u001a\u0002042\u0006\u00105\u001a\u000206HÇ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u001c\u0010\n\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001c\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u001e\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001a\u001a\u0004\b\u0019\u0010\u0014R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0016\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u00069"}, d2 = {"Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "", "seen1", "", "action", "", "userId", "Lcom/discord/primitives/UserId;", "messageId", "Lcom/discord/primitives/MessageId;", "applicationUserId", "messageType", "Lcom/discord/chat/bridge/MessageType;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAction", "()Ljava/lang/String;", "getApplicationUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getMessageChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getMessageType", "()Lcom/discord/chat/bridge/MessageType;", "getUserId-wUX8bhU", "component1", "component2", "component2-wUX8bhU", "component3", "component3-N_6c4I0", "component4", "component4-wUX8bhU", "component5", "component6", "component6-qMVnFVQ", "copy", "copy-jIMHauk", "(Ljava/lang/String;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;)Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public final class CommandOnClick {
     public static final Companion Companion = new Companion(null);
@@ -90,7 +90,7 @@ public final class CommandOnClick {
     }
 
     /* renamed from: copy-jIMHauk$default  reason: not valid java name */
-    public static /* synthetic */ CommandOnClick m46copyjIMHauk$default(CommandOnClick commandOnClick, String str, UserId userId, String str2, UserId userId2, MessageType messageType, ChannelId channelId, int i10, Object obj) {
+    public static /* synthetic */ CommandOnClick m47copyjIMHauk$default(CommandOnClick commandOnClick, String str, UserId userId, String str2, UserId userId2, MessageType messageType, ChannelId channelId, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = commandOnClick.action;
         }
@@ -109,7 +109,7 @@ public final class CommandOnClick {
         if ((i10 & 32) != 0) {
             channelId = commandOnClick.messageChannelId;
         }
-        return commandOnClick.m51copyjIMHauk(str, userId, str2, userId2, messageType, channelId);
+        return commandOnClick.m52copyjIMHauk(str, userId, str2, userId2, messageType, channelId);
     }
 
     public static final void write$Self(CommandOnClick self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -129,7 +129,7 @@ public final class CommandOnClick {
             z10 = true;
         }
         if (z10) {
-            output.p(serialDesc, 0, a2.f5917a, self.action);
+            output.h(serialDesc, 0, a2.f32309a, self.action);
         }
         if (!output.A(serialDesc, 1) && self.userId == null) {
             z11 = false;
@@ -137,7 +137,7 @@ public final class CommandOnClick {
             z11 = true;
         }
         if (z11) {
-            output.p(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
+            output.h(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
         }
         if (!output.A(serialDesc, 2) && self.messageId == null) {
             z12 = false;
@@ -148,11 +148,11 @@ public final class CommandOnClick {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = self.messageId;
             if (str != null) {
-                messageId = MessageId.m563boximpl(str);
+                messageId = MessageId.m572boximpl(str);
             } else {
                 messageId = null;
             }
-            output.p(serialDesc, 2, messageId$$serializer, messageId);
+            output.h(serialDesc, 2, messageId$$serializer, messageId);
         }
         if (!output.A(serialDesc, 3) && self.applicationUserId == null) {
             z13 = false;
@@ -160,7 +160,7 @@ public final class CommandOnClick {
             z13 = true;
         }
         if (z13) {
-            output.p(serialDesc, 3, UserId$$serializer.INSTANCE, self.applicationUserId);
+            output.h(serialDesc, 3, UserId$$serializer.INSTANCE, self.applicationUserId);
         }
         if (!output.A(serialDesc, 4) && self.messageType == null) {
             z14 = false;
@@ -168,13 +168,13 @@ public final class CommandOnClick {
             z14 = true;
         }
         if (z14) {
-            output.p(serialDesc, 4, MessageType.Serializer.INSTANCE, self.messageType);
+            output.h(serialDesc, 4, MessageType.Serializer.INSTANCE, self.messageType);
         }
         if (output.A(serialDesc, 5) || self.messageChannelId != null) {
             z15 = true;
         }
         if (z15) {
-            output.p(serialDesc, 5, ChannelId$$serializer.INSTANCE, self.messageChannelId);
+            output.h(serialDesc, 5, ChannelId$$serializer.INSTANCE, self.messageChannelId);
         }
     }
 
@@ -183,17 +183,17 @@ public final class CommandOnClick {
     }
 
     /* renamed from: component2-wUX8bhU  reason: not valid java name */
-    public final UserId m47component2wUX8bhU() {
+    public final UserId m48component2wUX8bhU() {
         return this.userId;
     }
 
     /* renamed from: component3-N_6c4I0  reason: not valid java name */
-    public final String m48component3N_6c4I0() {
+    public final String m49component3N_6c4I0() {
         return this.messageId;
     }
 
     /* renamed from: component4-wUX8bhU  reason: not valid java name */
-    public final UserId m49component4wUX8bhU() {
+    public final UserId m50component4wUX8bhU() {
         return this.applicationUserId;
     }
 
@@ -202,12 +202,12 @@ public final class CommandOnClick {
     }
 
     /* renamed from: component6-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m50component6qMVnFVQ() {
+    public final ChannelId m51component6qMVnFVQ() {
         return this.messageChannelId;
     }
 
     /* renamed from: copy-jIMHauk  reason: not valid java name */
-    public final CommandOnClick m51copyjIMHauk(String str, UserId userId, String str2, UserId userId2, MessageType messageType, ChannelId channelId) {
+    public final CommandOnClick m52copyjIMHauk(String str, UserId userId, String str2, UserId userId2, MessageType messageType, ChannelId channelId) {
         return new CommandOnClick(str, userId, str2, userId2, messageType, channelId, null);
     }
 
@@ -254,7 +254,7 @@ public final class CommandOnClick {
             r1 = r2
             goto L_0x0034
         L_0x0030:
-            boolean r1 = com.discord.primitives.MessageId.m567equalsimpl0(r1, r3)
+            boolean r1 = com.discord.primitives.MessageId.m576equalsimpl0(r1, r3)
         L_0x0034:
             if (r1 != 0) goto L_0x0037
             return r2
@@ -286,17 +286,17 @@ public final class CommandOnClick {
     }
 
     /* renamed from: getApplicationUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m52getApplicationUserIdwUX8bhU() {
+    public final UserId m53getApplicationUserIdwUX8bhU() {
         return this.applicationUserId;
     }
 
     /* renamed from: getMessageChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m53getMessageChannelIdqMVnFVQ() {
+    public final ChannelId m54getMessageChannelIdqMVnFVQ() {
         return this.messageChannelId;
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m54getMessageIdN_6c4I0() {
+    public final String m55getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -305,7 +305,7 @@ public final class CommandOnClick {
     }
 
     /* renamed from: getUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m55getUserIdwUX8bhU() {
+    public final UserId m56getUserIdwUX8bhU() {
         return this.userId;
     }
 
@@ -314,16 +314,16 @@ public final class CommandOnClick {
         int i10 = 0;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
         UserId userId = this.userId;
-        int i11 = (hashCode + (userId == null ? 0 : UserId.m606hashCodeimpl(userId.m610unboximpl()))) * 31;
+        int i11 = (hashCode + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31;
         String str2 = this.messageId;
-        int i12 = (i11 + (str2 == null ? 0 : MessageId.m568hashCodeimpl(str2))) * 31;
+        int i12 = (i11 + (str2 == null ? 0 : MessageId.m577hashCodeimpl(str2))) * 31;
         UserId userId2 = this.applicationUserId;
-        int i13 = (i12 + (userId2 == null ? 0 : UserId.m606hashCodeimpl(userId2.m610unboximpl()))) * 31;
+        int i13 = (i12 + (userId2 == null ? 0 : UserId.m615hashCodeimpl(userId2.m619unboximpl()))) * 31;
         MessageType messageType = this.messageType;
         int hashCode2 = (i13 + (messageType == null ? 0 : messageType.hashCode())) * 31;
         ChannelId channelId = this.messageChannelId;
         if (channelId != null) {
-            i10 = ChannelId.m542hashCodeimpl(channelId.m546unboximpl());
+            i10 = ChannelId.m551hashCodeimpl(channelId.m555unboximpl());
         }
         return hashCode2 + i10;
     }
@@ -332,7 +332,7 @@ public final class CommandOnClick {
         String str = this.action;
         UserId userId = this.userId;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m569toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m578toStringimpl(str2);
         UserId userId2 = this.applicationUserId;
         MessageType messageType = this.messageType;
         ChannelId channelId = this.messageChannelId;

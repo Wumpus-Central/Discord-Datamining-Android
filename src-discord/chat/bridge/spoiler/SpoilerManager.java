@@ -15,21 +15,21 @@ public final class SpoilerManager {
     }
 
     /* renamed from: isNotRevealed-V2PEE7g  reason: not valid java name */
-    public final boolean m130isNotRevealedV2PEE7g(String id2) {
+    public final boolean m131isNotRevealedV2PEE7g(String id2) {
         q.g(id2, "id");
-        return !m131isRevealedV2PEE7g(id2);
+        return !m132isRevealedV2PEE7g(id2);
     }
 
     /* renamed from: isRevealed-V2PEE7g  reason: not valid java name */
-    public final boolean m131isRevealedV2PEE7g(String id2) {
+    public final boolean m132isRevealedV2PEE7g(String id2) {
         q.g(id2, "id");
-        return revealedSpoilers.contains(SpoilerIdentifier.m122boximpl(id2));
+        return revealedSpoilers.contains(SpoilerIdentifier.m123boximpl(id2));
     }
 
     /* renamed from: markRevealed-V2PEE7g  reason: not valid java name */
-    public final void m132markRevealedV2PEE7g(String id2) {
+    public final void m133markRevealedV2PEE7g(String id2) {
         q.g(id2, "id");
-        revealedSpoilers.add(SpoilerIdentifier.m122boximpl(id2));
+        revealedSpoilers.add(SpoilerIdentifier.m123boximpl(id2));
     }
 
     public final void reset() {

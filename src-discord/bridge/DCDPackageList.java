@@ -1,6 +1,7 @@
 package com.discord.bridge;
 
 import com.airbnb.android.react.lottie.b;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.audio.AudioRouteEmitterModule;
 import com.discord.avatar.react.AvatarPackage;
 import com.discord.cache.HeartbeatKeyProviderModule;
@@ -34,7 +35,7 @@ import java.util.ArrayList;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\b\u0012\u0004\u0012\u00020\u0007`\bH\u0016¨\u0006\t"}, d2 = {"Lcom/discord/bridge/DCDPackageList;", "Lcom/facebook/react/PackageList;", "host", "Lcom/facebook/react/ReactNativeHost;", "(Lcom/facebook/react/ReactNativeHost;)V", "getPackages", "Ljava/util/ArrayList;", "Lcom/facebook/react/ReactPackage;", "Lkotlin/collections/ArrayList;", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\b\u0012\u0004\u0012\u00020\u0007`\bH\u0016¨\u0006\t"}, d2 = {"Lcom/discord/bridge/DCDPackageList;", "Lcom/facebook/react/PackageList;", ZeroconfModule.KEY_SERVICE_HOST, "Lcom/facebook/react/ReactNativeHost;", "(Lcom/facebook/react/ReactNativeHost;)V", "getPackages", "Ljava/util/ArrayList;", "Lcom/facebook/react/ReactPackage;", "Lkotlin/collections/ArrayList;", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
 public final class DCDPackageList extends PackageList {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -49,21 +50,21 @@ public final class DCDPackageList extends PackageList {
         packages.add(new a());
         packages.add(new com.reactnativecommunity.clipboard.a());
         packages.add(new c());
-        packages.add(new w4.a());
+        packages.add(new z4.a());
         packages.add(new e());
         packages.add(new com.BV.LinearGradient.a());
         packages.add(new b());
-        packages.add(new ye.c());
+        packages.add(new df.c());
         packages.add(new com.github.yamill.orientation.a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
         });
         packages.add(new com.reactnativecommunity.slider.c());
-        packages.add(new z2.c());
+        packages.add(new c3.c());
         packages.add(new ReanimatedPackage());
         packages.add(new e1());
         packages.add(new com.henninghall.date_picker.b());
         packages.add(new com.reactnativedocumentpicker.b());
-        packages.add(new df.a());
-        packages.add(new kk.a());
+        packages.add(new p001if.a());
+        packages.add(new gl.a());
         packages.add(new com.mkuczera.a());
         packages.add(new i());
         packages.add(new io.sentry.react.i());
@@ -72,6 +73,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(new d());
         packages.add(new RNSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
+        packages.add(new z2.c());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$3.INSTANCE));

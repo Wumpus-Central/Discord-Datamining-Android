@@ -123,10 +123,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.g(eventHandler, "$eventHandler");
         q.g(automodContext, "$automodContext");
-        String str2 = ChannelId.m544toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
-        GuildId guildId = automodContext.getMessage().m25getGuildIdqOKuAAo();
+        String str2 = ChannelId.m553toStringimpl(automodContext.getMessage().m25getChannelIdo4g7jtM());
+        GuildId guildId = automodContext.getMessage().m26getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m557toStringimpl(guildId.m559unboximpl());
+            str = GuildId.m566toStringimpl(guildId.m568unboximpl());
         } else {
             str = null;
         }
@@ -177,10 +177,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         }
         FlaggedMessageEmbed message2 = autoModerationContext.getMessage();
         MessageType messageType = MessageType.DEFAULT;
-        String str = message2.m26getId3Eiw7ao();
-        long j10 = message2.m24getChannelIdo4g7jtM();
-        GuildId guildId = message2.m25getGuildIdqOKuAAo();
-        UserId userId = message2.m27getUserIdwUX8bhU();
+        String str = message2.m27getId3Eiw7ao();
+        long j10 = message2.m25getChannelIdo4g7jtM();
+        GuildId guildId = message2.m26getGuildIdqOKuAAo();
+        UserId userId = message2.m28getUserIdwUX8bhU();
         String username = message2.getUsername();
         String avatarURL = message2.getAvatarURL();
         StructurableText content = message2.getContent();
@@ -191,20 +191,20 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         boolean z10 = false;
         Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(communicationDisabled != null ? communicationDisabled.booleanValue() : false), (String) null, (Boolean) null, (Integer) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, 2147483518, 31, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
-            this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
+            this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m17getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
-            this.accessories.add(new FlaggedMessageEmbedAccessory(message3.m16getId3Eiw7ao(), message3, messageContext, null));
-            this.accessories.add(new FlaggedMessageActionBarAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
+            this.accessories.add(new FlaggedMessageEmbedAccessory(message3.m17getId3Eiw7ao(), message3, messageContext, null));
+            this.accessories.add(new FlaggedMessageActionBarAccessory(message3.m17getId3Eiw7ao(), message, autoModerationContext, null));
         }
         if (message.getReactions() != null && (!reactions.isEmpty())) {
             z10 = true;
         }
         if (z10) {
-            this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
+            this.accessories.add(new ReactionsMessageAccessory(message.m17getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();
         if (threadEmbed != null) {
-            this.accessories.add(new ThreadEmbedMessageAccessory(message.m16getId3Eiw7ao(), threadEmbed, null));
+            this.accessories.add(new ThreadEmbedMessageAccessory(message.m17getId3Eiw7ao(), threadEmbed, null));
         }
         return this.accessories;
     }
@@ -260,7 +260,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m198setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m199setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

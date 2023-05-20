@@ -39,8 +39,8 @@ public final class MessageContentAccessory extends MessageAccessory {
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m261component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m262component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final int component10() {
@@ -100,7 +100,7 @@ public final class MessageContentAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-UwkiYZs  reason: not valid java name */
-    public final MessageContentAccessory m262copyUwkiYZs(String messageId, StructurableText messageContent, boolean z10, boolean z11, boolean z12, int i10, int i11, int i12, DiscordFont messageFont, int i13, boolean z13, int i14, String str, Truncation truncation, DiscordTheme theme) {
+    public final MessageContentAccessory m263copyUwkiYZs(String messageId, StructurableText messageContent, boolean z10, boolean z11, boolean z12, int i10, int i11, int i12, DiscordFont messageFont, int i13, boolean z13, int i14, String str, Truncation truncation, DiscordTheme theme) {
         q.g(messageId, "messageId");
         q.g(messageContent, "messageContent");
         q.g(messageFont, "messageFont");
@@ -116,7 +116,7 @@ public final class MessageContentAccessory extends MessageAccessory {
             return false;
         }
         MessageContentAccessory messageContentAccessory = (MessageContentAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), messageContentAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.messageContent, messageContentAccessory.messageContent) && this.shouldAnimateEmoji == messageContentAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == messageContentAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == messageContentAccessory.shouldShowRoleOnName && this.bottomSpacingPx == messageContentAccessory.bottomSpacingPx && this.linkColor == messageContentAccessory.linkColor && this.messageTextColor == messageContentAccessory.messageTextColor && this.messageFont == messageContentAccessory.messageFont && this.textSizeSp == messageContentAccessory.textSizeSp && this.boldLinkText == messageContentAccessory.boldLinkText && this.constrainedWidth == messageContentAccessory.constrainedWidth && q.b(this.editedLabel, messageContentAccessory.editedLabel) && q.b(this.truncation, messageContentAccessory.truncation) && q.b(this.theme, messageContentAccessory.theme);
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), messageContentAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.messageContent, messageContentAccessory.messageContent) && this.shouldAnimateEmoji == messageContentAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == messageContentAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == messageContentAccessory.shouldShowRoleOnName && this.bottomSpacingPx == messageContentAccessory.bottomSpacingPx && this.linkColor == messageContentAccessory.linkColor && this.messageTextColor == messageContentAccessory.messageTextColor && this.messageFont == messageContentAccessory.messageFont && this.textSizeSp == messageContentAccessory.textSizeSp && this.boldLinkText == messageContentAccessory.boldLinkText && this.constrainedWidth == messageContentAccessory.constrainedWidth && q.b(this.editedLabel, messageContentAccessory.editedLabel) && q.b(this.truncation, messageContentAccessory.truncation) && q.b(this.theme, messageContentAccessory.theme);
     }
 
     public final boolean getBoldLinkText() {
@@ -149,7 +149,7 @@ public final class MessageContentAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -182,7 +182,7 @@ public final class MessageContentAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.messageContent.hashCode()) * 31;
+        int i10 = ((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.messageContent.hashCode()) * 31;
         boolean z10 = this.shouldAnimateEmoji;
         int i11 = 1;
         if (z10) {
@@ -224,7 +224,7 @@ public final class MessageContentAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         StructurableText structurableText = this.messageContent;
         boolean z10 = this.shouldAnimateEmoji;
         boolean z11 = this.shouldShowRoleDot;

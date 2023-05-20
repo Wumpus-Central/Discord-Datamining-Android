@@ -25,9 +25,9 @@ public final class GiftMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ GiftMessageAccessory m236copyu7_MRrM$default(GiftMessageAccessory giftMessageAccessory, String str, int i10, GiftEmbed giftEmbed, int i11, Object obj) {
+    public static /* synthetic */ GiftMessageAccessory m237copyu7_MRrM$default(GiftMessageAccessory giftMessageAccessory, String str, int i10, GiftEmbed giftEmbed, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = giftMessageAccessory.mo203getMessageId3Eiw7ao();
+            str = giftMessageAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = giftMessageAccessory.index;
@@ -35,12 +35,12 @@ public final class GiftMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             giftEmbed = giftMessageAccessory.gift;
         }
-        return giftMessageAccessory.m238copyu7_MRrM(str, i10, giftEmbed);
+        return giftMessageAccessory.m239copyu7_MRrM(str, i10, giftEmbed);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m237component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m238component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -52,7 +52,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final GiftMessageAccessory m238copyu7_MRrM(String messageId, int i10, GiftEmbed gift) {
+    public final GiftMessageAccessory m239copyu7_MRrM(String messageId, int i10, GiftEmbed gift) {
         q.g(messageId, "messageId");
         q.g(gift, "gift");
         return new GiftMessageAccessory(messageId, i10, gift, null);
@@ -66,7 +66,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
             return false;
         }
         GiftMessageAccessory giftMessageAccessory = (GiftMessageAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), giftMessageAccessory.mo203getMessageId3Eiw7ao()) && this.index == giftMessageAccessory.index && q.b(this.gift, giftMessageAccessory.gift);
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), giftMessageAccessory.mo204getMessageId3Eiw7ao()) && this.index == giftMessageAccessory.index && q.b(this.gift, giftMessageAccessory.gift);
     }
 
     public final GiftEmbed getGift() {
@@ -79,16 +79,16 @@ public final class GiftMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.gift.hashCode();
+        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.gift.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         int i10 = this.index;
         GiftEmbed giftEmbed = this.gift;
         return "GiftMessageAccessory(messageId=" + str + ", index=" + i10 + ", gift=" + giftEmbed + ")";

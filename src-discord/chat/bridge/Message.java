@@ -1,12 +1,6 @@
 package com.discord.chat.bridge;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.a2;
-import bj.e0;
-import bj.h;
-import bj.m0;
-import bj.n1;
-import bj.w0;
 import com.discord.chat.bridge.MessageState;
 import com.discord.chat.bridge.MessageType;
 import com.discord.chat.bridge.activityinviteembed.ActivityInviteEmbed;
@@ -60,6 +54,7 @@ import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import j$.util.Spliterator;
 import java.util.List;
+import jg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -70,12 +65,17 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import nf.n;
-import yi.f;
-import zi.a;
+import uj.f;
+import vj.a;
+import xj.a2;
+import xj.e0;
+import xj.h;
+import xj.m0;
+import xj.n1;
+import xj.w0;
 
-@f
 @Metadata(d1 = {"\u0000\u008b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0003\b»\u0001\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ³\u00022\u00020\u0001:\u0004²\u0002³\u0002B\u0096\u0006\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\u0006\u0010\u0013\u001a\u00020\u0014\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u001d\u001a\u00020\u001e\u0012\u0006\u0010\u001f\u001a\u00020\u001e\u0012\b\u0010 \u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010!\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\"\u001a\u0004\u0018\u00010\u0016\u0012\u000e\u0010#\u001a\n\u0012\u0004\u0012\u00020%\u0018\u00010$\u0012\u000e\u0010&\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010$\u0012\b\u0010(\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010)\u001a\u0004\u0018\u00010*\u0012\u000e\u0010+\u001a\n\u0012\u0004\u0012\u00020,\u0018\u00010$\u0012\u000e\u0010-\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010$\u0012\b\u0010/\u001a\u0004\u0018\u00010\u001e\u0012\b\u00100\u001a\u0004\u0018\u00010\u001e\u0012\u0010\u00101\u001a\f\u0012\u0006\u0012\u0004\u0018\u000102\u0018\u00010$\u0012\u000e\u00103\u001a\n\u0012\u0004\u0012\u000204\u0018\u00010$\u0012\b\u00105\u001a\u0004\u0018\u000106\u0012\b\u00107\u001a\u0004\u0018\u000108\u0012\b\u00109\u001a\u0004\u0018\u00010:\u0012\u0006\u0010;\u001a\u00020\u001e\u0012\b\u0010<\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010=\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010>\u001a\u0004\u0018\u00010?\u0012\b\u0010@\u001a\u0004\u0018\u00010A\u0012\u000e\u0010B\u001a\n\u0012\u0004\u0012\u00020C\u0018\u00010$\u0012\b\u0010D\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010E\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010F\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010G\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010I\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010J\u001a\u0004\u0018\u00010K\u0012\b\u0010L\u001a\u0004\u0018\u00010M\u0012\b\u0010N\u001a\u0004\u0018\u00010O\u0012\b\u0010P\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010Q\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010R\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010S\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010T\u001a\u0004\u0018\u00010\u0016\u0012\u000e\u0010U\u001a\n\u0012\u0004\u0012\u00020\u0016\u0018\u00010$\u0012\b\u0010V\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010W\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010X\u001a\u0004\u0018\u00010\u0014\u0012\b\u0010Y\u001a\u0004\u0018\u000104\u0012\b\u0010Z\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010[\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\\\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010]\u001a\u0004\u0018\u00010^\u0012\u0006\u0010_\u001a\u00020\u001e\u0012\b\u0010`\u001a\u0004\u0018\u00010a\u0012\b\u0010b\u001a\u0004\u0018\u00010c\u0012\u000e\u0010d\u001a\n\u0012\u0004\u0012\u00020e\u0018\u00010$\u0012\b\u0010f\u001a\u0004\u0018\u00010e\u0012\b\u0010g\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010h\u001a\u0004\u0018\u00010\u0016\u0012\u000e\u0010i\u001a\n\u0012\u0004\u0012\u00020j\u0018\u00010$\u0012\b\u0010k\u001a\u0004\u0018\u00010lø\u0001\u0000¢\u0006\u0002\u0010mBê\u0006\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\b\u0002\u0010\u0013\u001a\u00020\u0014\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u001d\u001a\u00020\u001e\u0012\b\b\u0002\u0010\u001f\u001a\u00020\u001e\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u0016\u0012\u0010\b\u0002\u0010#\u001a\n\u0012\u0004\u0012\u00020%\u0018\u00010$\u0012\u0010\b\u0002\u0010&\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010$\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*\u0012\u0010\b\u0002\u0010+\u001a\n\u0012\u0004\u0012\u00020,\u0018\u00010$\u0012\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010$\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u00100\u001a\u0004\u0018\u00010\u001e\u0012\u0012\b\u0002\u00101\u001a\f\u0012\u0006\u0012\u0004\u0018\u000102\u0018\u00010$\u0012\u0010\b\u0002\u00103\u001a\n\u0012\u0004\u0012\u000204\u0018\u00010$\u0012\n\b\u0002\u00105\u001a\u0004\u0018\u000106\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u000108\u0012\n\b\u0002\u00109\u001a\u0004\u0018\u00010:\u0012\u0006\u0010;\u001a\u00020\u001e\u0012\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010>\u001a\u0004\u0018\u00010?\u0012\n\b\u0002\u0010@\u001a\u0004\u0018\u00010A\u0012\u0010\b\u0002\u0010B\u001a\n\u0012\u0004\u0012\u00020C\u0018\u00010$\u0012\n\b\u0002\u0010D\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010J\u001a\u0004\u0018\u00010K\u0012\n\b\u0002\u0010L\u001a\u0004\u0018\u00010M\u0012\n\b\u0002\u0010N\u001a\u0004\u0018\u00010O\u0012\n\b\u0002\u0010P\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010R\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010S\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010T\u001a\u0004\u0018\u00010\u0016\u0012\u0010\b\u0002\u0010U\u001a\n\u0012\u0004\u0012\u00020\u0016\u0018\u00010$\u0012\n\b\u0002\u0010V\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010W\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010X\u001a\u0004\u0018\u00010\u0014\u0012\n\b\u0002\u0010Y\u001a\u0004\u0018\u000104\u0012\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010[\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010]\u001a\u0004\u0018\u00010^\u0012\b\b\u0002\u0010_\u001a\u00020\u001e\u0012\n\b\u0002\u0010`\u001a\u0004\u0018\u00010a\u0012\n\b\u0002\u0010b\u001a\u0004\u0018\u00010c\u0012\u0010\b\u0002\u0010d\u001a\n\u0012\u0004\u0012\u00020e\u0018\u00010$\u0012\n\b\u0002\u0010f\u001a\u0004\u0018\u00010e\u0012\n\b\u0002\u0010g\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u0016\u0012\u0010\b\u0002\u0010i\u001a\n\u0012\u0004\u0012\u00020j\u0018\u00010$ø\u0001\u0000¢\u0006\u0002\u0010nJ\n\u0010Ø\u0001\u001a\u00020\u0007HÆ\u0003J\u0011\u0010Ù\u0001\u001a\u0004\u0018\u00010\u0018HÆ\u0003¢\u0006\u0002\u0010rJ\f\u0010Ú\u0001\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\f\u0010Û\u0001\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u0012\u0010Ü\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0003\u0010\u008b\u0001J\u0012\u0010Ý\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0003\u0010\u008b\u0001J\n\u0010Þ\u0001\u001a\u00020\u001eHÆ\u0003J\n\u0010ß\u0001\u001a\u00020\u001eHÆ\u0003J\u0012\u0010à\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0003\u0010\u008b\u0001J\u0012\u0010á\u0001\u001a\u0004\u0018\u00010\u0016HÀ\u0003¢\u0006\u0003\bâ\u0001J\f\u0010ã\u0001\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u001c\u0010ä\u0001\u001a\u00020\tHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\bå\u0001\u0010\u0081\u0001J\u0012\u0010æ\u0001\u001a\n\u0012\u0004\u0012\u00020%\u0018\u00010$HÆ\u0003J\u0012\u0010ç\u0001\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010$HÆ\u0003J\u0011\u0010è\u0001\u001a\u0004\u0018\u00010\u0018HÆ\u0003¢\u0006\u0002\u0010rJ\f\u0010é\u0001\u001a\u0004\u0018\u00010*HÆ\u0003J\u0012\u0010ê\u0001\u001a\n\u0012\u0004\u0012\u00020,\u0018\u00010$HÆ\u0003J\u0012\u0010ë\u0001\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010$HÆ\u0003J\u0011\u0010ì\u0001\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0011\u0010í\u0001\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0014\u0010î\u0001\u001a\f\u0012\u0006\u0012\u0004\u0018\u000102\u0018\u00010$HÆ\u0003J\u0012\u0010ï\u0001\u001a\n\u0012\u0004\u0012\u000204\u0018\u00010$HÆ\u0003J\u001e\u0010ð\u0001\u001a\u0004\u0018\u00010\tHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\bñ\u0001\u0010\u0081\u0001J\f\u0010ò\u0001\u001a\u0004\u0018\u000106HÆ\u0003J\f\u0010ó\u0001\u001a\u0004\u0018\u000108HÆ\u0003J\f\u0010ô\u0001\u001a\u0004\u0018\u00010:HÆ\u0003J\n\u0010õ\u0001\u001a\u00020\u001eHÆ\u0003J\u0011\u0010ö\u0001\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0011\u0010÷\u0001\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\f\u0010ø\u0001\u001a\u0004\u0018\u00010?HÆ\u0003J\f\u0010ù\u0001\u001a\u0004\u0018\u00010AHÆ\u0003J\u0012\u0010ú\u0001\u001a\n\u0012\u0004\u0012\u00020C\u0018\u00010$HÆ\u0003J\f\u0010û\u0001\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u001c\u0010ü\u0001\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\bý\u0001\u0010\u0087\u0001J\u0011\u0010þ\u0001\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\f\u0010ÿ\u0001\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u0011\u0010\u0080\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0012\u0010\u0081\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0003\u0010\u008b\u0001J\f\u0010\u0082\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\f\u0010\u0083\u0002\u001a\u0004\u0018\u00010KHÆ\u0003J\f\u0010\u0084\u0002\u001a\u0004\u0018\u00010MHÆ\u0003J\f\u0010\u0085\u0002\u001a\u0004\u0018\u00010OHÆ\u0003J\u0011\u0010\u0086\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0011\u0010\u0087\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u001b\u0010\u0088\u0002\u001a\u0004\u0018\u00010\u000eHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b\u0089\u0002J\u0011\u0010\u008a\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\f\u0010\u008b\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\f\u0010\u008c\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u0012\u0010\u008d\u0002\u001a\n\u0012\u0004\u0012\u00020\u0016\u0018\u00010$HÆ\u0003J\u0011\u0010\u008e\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0011\u0010\u008f\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\u0012\u0010\u0090\u0002\u001a\u0004\u0018\u00010\u0014HÆ\u0003¢\u0006\u0003\u0010±\u0001J\f\u0010\u0091\u0002\u001a\u0004\u0018\u000104HÆ\u0003J\f\u0010\u0092\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\f\u0010\u0093\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\f\u0010\u0094\u0002\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u0011\u0010\u0095\u0002\u001a\u0004\u0018\u00010\u001eHÆ\u0003¢\u0006\u0002\u0010wJ\f\u0010\u0096\u0002\u001a\u0004\u0018\u00010^HÆ\u0003J\n\u0010\u0097\u0002\u001a\u00020\u001eHÆ\u0003J\f\u0010\u0098\u0002\u001a\u0004\u0018\u00010aHÆ\u0003J\f\u0010\u0099\u0002\u001a\u0004\u0018\u00010cHÆ\u0003J\u0012\u0010\u009a\u0002\u001a\n\u0012\u0004\u0012\u00020e\u0018\u00010$HÆ\u0003J\f\u0010\u009b\u0002\u001a\u0004\u0018\u00010eHÆ\u0003J\u0012\u0010\u009c\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0003\u0010\u008b\u0001J\f\u0010\u009d\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u0012\u0010\u009e\u0002\u001a\n\u0012\u0004\u0012\u00020j\u0018\u00010$HÆ\u0003J\u001b\u0010\u009f\u0002\u001a\u0004\u0018\u00010\u0012HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b \u0002J\n\u0010¡\u0002\u001a\u00020\u0014HÆ\u0003J\f\u0010¢\u0002\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u0083\u0007\u0010£\u0002\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u00142\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u001d\u001a\u00020\u001e2\b\b\u0002\u0010\u001f\u001a\u00020\u001e2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u00162\u0010\b\u0002\u0010#\u001a\n\u0012\u0004\u0012\u00020%\u0018\u00010$2\u0010\b\u0002\u0010&\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010$2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*2\u0010\b\u0002\u0010+\u001a\n\u0012\u0004\u0012\u00020,\u0018\u00010$2\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010$2\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u00100\u001a\u0004\u0018\u00010\u001e2\u0012\b\u0002\u00101\u001a\f\u0012\u0006\u0012\u0004\u0018\u000102\u0018\u00010$2\u0010\b\u0002\u00103\u001a\n\u0012\u0004\u0012\u000204\u0018\u00010$2\n\b\u0002\u00105\u001a\u0004\u0018\u0001062\n\b\u0002\u00107\u001a\u0004\u0018\u0001082\n\b\u0002\u00109\u001a\u0004\u0018\u00010:2\b\b\u0002\u0010;\u001a\u00020\u001e2\n\b\u0002\u0010<\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010>\u001a\u0004\u0018\u00010?2\n\b\u0002\u0010@\u001a\u0004\u0018\u00010A2\u0010\b\u0002\u0010B\u001a\n\u0012\u0004\u0012\u00020C\u0018\u00010$2\n\b\u0002\u0010D\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010G\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010H\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010I\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010J\u001a\u0004\u0018\u00010K2\n\b\u0002\u0010L\u001a\u0004\u0018\u00010M2\n\b\u0002\u0010N\u001a\u0004\u0018\u00010O2\n\b\u0002\u0010P\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010R\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010S\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010T\u001a\u0004\u0018\u00010\u00162\u0010\b\u0002\u0010U\u001a\n\u0012\u0004\u0012\u00020\u0016\u0018\u00010$2\n\b\u0002\u0010V\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010W\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010X\u001a\u0004\u0018\u00010\u00142\n\b\u0002\u0010Y\u001a\u0004\u0018\u0001042\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010[\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010]\u001a\u0004\u0018\u00010^2\b\b\u0002\u0010_\u001a\u00020\u001e2\n\b\u0002\u0010`\u001a\u0004\u0018\u00010a2\n\b\u0002\u0010b\u001a\u0004\u0018\u00010c2\u0010\b\u0002\u0010d\u001a\n\u0012\u0004\u0012\u00020e\u0018\u00010$2\n\b\u0002\u0010f\u001a\u0004\u0018\u00010e2\n\b\u0002\u0010g\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010h\u001a\u0004\u0018\u00010\u00162\u0010\b\u0002\u0010i\u001a\n\u0012\u0004\u0012\u00020j\u0018\u00010$HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\b¤\u0002\u0010¥\u0002J\u0016\u0010¦\u0002\u001a\u00020\u001e2\n\u0010§\u0002\u001a\u0005\u0018\u00010¨\u0002HÖ\u0003J\n\u0010©\u0002\u001a\u00020\u0003HÖ\u0001J\n\u0010ª\u0002\u001a\u00020\u0016HÖ\u0001J(\u0010«\u0002\u001a\u00030¬\u00022\u0007\u0010\u00ad\u0002\u001a\u00020\u00002\b\u0010®\u0002\u001a\u00030¯\u00022\b\u0010°\u0002\u001a\u00030±\u0002HÇ\u0001R \u0010\u0017\u001a\u0004\u0018\u00010\u00188\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010s\u0012\u0004\bo\u0010p\u001a\u0004\bq\u0010rR\u0013\u0010]\u001a\u0004\u0018\u00010^¢\u0006\b\n\u0000\u001a\u0004\bt\u0010uR\u0015\u0010=\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010x\u001a\u0004\bv\u0010wR\u0019\u0010&\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010$¢\u0006\b\n\u0000\u001a\u0004\by\u0010zR\u0015\u0010(\u001a\u0004\u0018\u00010\u0018¢\u0006\n\n\u0002\u0010s\u001a\u0004\b{\u0010rR\u001c\u0010\u0011\u001a\u0004\u0018\u00010\u0012ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b|\u0010}R\u0013\u0010b\u001a\u0004\u0018\u00010c¢\u0006\b\n\u0000\u001a\u0004\b~\u0010\u007fR\u0015\u0010\"\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\b\u0080\u0001\u0010\u0081\u0001R!\u0010!\u001a\u0004\u0018\u00010\u00168\u0000X\u0081\u0004¢\u0006\u0011\n\u0000\u0012\u0005\b\u0082\u0001\u0010p\u001a\u0006\b\u0083\u0001\u0010\u0081\u0001R\u001a\u0010U\u001a\n\u0012\u0004\u0012\u00020\u0016\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0001\u0010zR\u0015\u0010[\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\b\u0085\u0001\u0010\u0081\u0001R\u001f\u0010\u000b\u001a\u00020\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\r\n\u0003\u0010\u0088\u0001\u001a\u0006\b\u0086\u0001\u0010\u0087\u0001R\u001c\u00101\u001a\f\u0012\u0006\u0012\u0004\u0018\u000102\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b\u0089\u0001\u0010zR\u0018\u0010 \u001a\u0004\u0018\u00010\u0003¢\u0006\r\n\u0003\u0010\u008c\u0001\u001a\u0006\b\u008a\u0001\u0010\u008b\u0001R\u0016\u0010E\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\b\u008d\u0001\u0010wR\u001a\u0010B\u001a\n\u0012\u0004\u0012\u00020C\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0001\u0010zR\u0015\u00107\u001a\u0004\u0018\u000108¢\u0006\n\n\u0000\u001a\u0006\b\u008f\u0001\u0010\u0090\u0001R\"\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u00038FX\u0086\u0084\u0002¢\u0006\u0010\n\u0006\b\u0093\u0001\u0010\u0094\u0001\u001a\u0006\b\u0092\u0001\u0010\u008b\u0001R\u0015\u0010)\u001a\u0004\u0018\u00010*¢\u0006\n\n\u0000\u001a\u0006\b\u0095\u0001\u0010\u0096\u0001R\u0015\u0010T\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\b\u0097\u0001\u0010\u0081\u0001R\u0015\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\b\u0098\u0001\u0010\u0081\u0001R\u001a\u0010#\u001a\n\u0012\u0004\u0012\u00020%\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b\u0099\u0001\u0010zR\u0015\u0010J\u001a\u0004\u0018\u00010K¢\u0006\n\n\u0000\u001a\u0006\b\u009a\u0001\u0010\u009b\u0001R\u0015\u0010@\u001a\u0004\u0018\u00010A¢\u0006\n\n\u0000\u001a\u0006\b\u009c\u0001\u0010\u009d\u0001R\u0013\u0010\u0013\u001a\u00020\u0014¢\u0006\n\n\u0000\u001a\u0006\b\u009e\u0001\u0010\u0087\u0001R\u0016\u0010<\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\b\u009f\u0001\u0010wR\u001a\u0010d\u001a\n\u0012\u0004\u0012\u00020e\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b \u0001\u0010zR\u001e\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0000\u001a\u0006\b¡\u0001\u0010¢\u0001R\u001f\u0010\b\u001a\u00020\tø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\r\n\u0003\u0010¤\u0001\u001a\u0006\b£\u0001\u0010\u0081\u0001R\u0015\u0010N\u001a\u0004\u0018\u00010O¢\u0006\n\n\u0000\u001a\u0006\b¥\u0001\u0010¦\u0001R\u0015\u0010V\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010x\u001a\u0004\bV\u0010wR\u0015\u0010R\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010x\u001a\u0004\bR\u0010wR\u0012\u0010_\u001a\u00020\u001e¢\u0006\t\n\u0000\u001a\u0005\b_\u0010§\u0001R\u0013\u0010;\u001a\u00020\u001e¢\u0006\n\n\u0000\u001a\u0006\b¨\u0001\u0010§\u0001R\u0016\u0010W\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\b©\u0001\u0010wR!\u0010\n\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\r\n\u0003\u0010¤\u0001\u001a\u0006\bª\u0001\u0010\u0081\u0001R\u0015\u0010I\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\b«\u0001\u0010\u0081\u0001R\u0015\u0010`\u001a\u0004\u0018\u00010a¢\u0006\n\n\u0000\u001a\u0006\b¬\u0001\u0010\u00ad\u0001R\u001a\u0010i\u001a\n\u0012\u0004\u0012\u00020j\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b®\u0001\u0010zR\u001a\u0010+\u001a\n\u0012\u0004\u0012\u00020,\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b¯\u0001\u0010zR\u0018\u0010X\u001a\u0004\u0018\u00010\u0014¢\u0006\r\n\u0003\u0010²\u0001\u001a\u0006\b°\u0001\u0010±\u0001R\u001a\u0010-\u001a\n\u0012\u0004\u0012\u00020.\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\b³\u0001\u0010zR\u0015\u0010>\u001a\u0004\u0018\u00010?¢\u0006\n\n\u0000\u001a\u0006\b´\u0001\u0010µ\u0001R\u0015\u0010f\u001a\u0004\u0018\u00010e¢\u0006\n\n\u0000\u001a\u0006\b¶\u0001\u0010·\u0001R\u0018\u0010\u001c\u001a\u0004\u0018\u00010\u0003¢\u0006\r\n\u0003\u0010\u008c\u0001\u001a\u0006\b¸\u0001\u0010\u008b\u0001R\u0015\u00105\u001a\u0004\u0018\u000106¢\u0006\n\n\u0000\u001a\u0006\b¹\u0001\u0010º\u0001R\u0013\u0010\u001d\u001a\u00020\u001e¢\u0006\n\n\u0000\u001a\u0006\b»\u0001\u0010§\u0001R\u0013\u0010\u001f\u001a\u00020\u001e¢\u0006\n\n\u0000\u001a\u0006\b¼\u0001\u0010§\u0001R\u0016\u0010\\\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\b½\u0001\u0010wR\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\n\n\u0000\u001a\u0006\b¾\u0001\u0010¿\u0001R\u0015\u0010Y\u001a\u0004\u0018\u000104¢\u0006\n\n\u0000\u001a\u0006\bÀ\u0001\u0010Á\u0001R\u0015\u0010Z\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÂ\u0001\u0010\u0081\u0001R\u001a\u00103\u001a\n\u0012\u0004\u0012\u000204\u0018\u00010$¢\u0006\t\n\u0000\u001a\u0005\bÃ\u0001\u0010zR\u0015\u0010L\u001a\u0004\u0018\u00010M¢\u0006\n\n\u0000\u001a\u0006\bÄ\u0001\u0010Å\u0001R\u0015\u0010h\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÆ\u0001\u0010\u0081\u0001R\u0018\u0010H\u001a\u0004\u0018\u00010\u0003¢\u0006\r\n\u0003\u0010\u008c\u0001\u001a\u0006\bÇ\u0001\u0010\u008b\u0001R\u0015\u0010F\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÈ\u0001\u0010\u0081\u0001R\u0016\u0010G\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\bÉ\u0001\u0010wR\u0015\u00109\u001a\u0004\u0018\u00010:¢\u0006\n\n\u0000\u001a\u0006\bÊ\u0001\u0010Ë\u0001R\u0015\u0010D\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÌ\u0001\u0010\u0081\u0001R\u0015\u0010\u0019\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÍ\u0001\u0010\u0081\u0001R\u0015\u0010S\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÎ\u0001\u0010\u0081\u0001R\u0018\u0010g\u001a\u0004\u0018\u00010\u0003¢\u0006\r\n\u0003\u0010\u008c\u0001\u001a\u0006\bÏ\u0001\u0010\u008b\u0001R\u0013\u0010\u0006\u001a\u00020\u0007¢\u0006\n\n\u0000\u001a\u0006\bÐ\u0001\u0010Ñ\u0001R\u0016\u00100\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\bÒ\u0001\u0010wR\u0016\u0010P\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\bÓ\u0001\u0010wR\u0016\u0010Q\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\bÔ\u0001\u0010wR\u0016\u0010/\u001a\u0004\u0018\u00010\u001e¢\u0006\u000b\n\u0002\u0010x\u001a\u0005\bÕ\u0001\u0010wR\u0015\u0010\u001a\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0000\u001a\u0006\bÖ\u0001\u0010\u0081\u0001R\u0018\u0010\u001b\u001a\u0004\u0018\u00010\u0003¢\u0006\r\n\u0003\u0010\u008c\u0001\u001a\u0006\b×\u0001\u0010\u008b\u0001\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006´\u0002"}, d2 = {"Lcom/discord/chat/bridge/Message;", "Lcom/discord/chat/bridge/MessageBase;", "seen1", "", "seen2", "seen3", "type", "Lcom/discord/chat/bridge/MessageType;", "id", "Lcom/discord/primitives/MessageId;", "nonce", "channelId", "Lcom/discord/primitives/ChannelId;", "guildId", "Lcom/discord/primitives/GuildId;", "state", "Lcom/discord/chat/bridge/MessageState;", "authorId", "Lcom/discord/primitives/UserId;", "flags", "", "edited", "", "_constrainedWidth", "", "timestamp", "username", "usernameColor", "roleColor", "shouldShowRoleDot", "", "shouldShowRoleOnName", "colorString", "avatarURL", "avatarDecorationURL", "embeds", "", "Lcom/discord/chat/bridge/embed/Embed;", "attachments", "Lcom/discord/chat/bridge/attachment/Attachment;", "attachmentsOpacity", "content", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "progress", "Lcom/discord/chat/bridge/UploadProgress;", "reactions", "Lcom/discord/chat/bridge/reaction/MessageReaction;", "useSortedReactions", "useAddBurstReaction", "codedLinks", "Lcom/discord/chat/bridge/codedlinks/CodedLinkEmbed;", "stickers", "Lcom/discord/chat/bridge/sticker/Sticker;", "roleIcon", "Lcom/discord/chat/bridge/roleicons/RoleIcon;", "connectionsRoleTag", "Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;", "threadEmbed", "Lcom/discord/chat/bridge/threads/ThreadEmbed;", "mentioned", "gifAutoPlay", "animateEmoji", "referencedMessage", "Lcom/discord/chat/bridge/referencedmessage/ReferencedMessage;", "executedCommand", "Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;", "components", "Lcom/discord/chat/bridge/botuikit/Component;", "threadStarterMessageHeader", "communicationDisabled", "tagText", "tagVerified", "tagBackgroundColor", "opTagText", "ephemeralIndication", "Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;", "surveyIndication", "Lcom/discord/chat/bridge/feedback/SurveyIndication;", "interactionStatus", "Lcom/discord/chat/bridge/interaction/InteractionStatus;", "useAttachmentGridLayout", "useAttachmentUploadPreview", "isCurrentUserMessageAuthor", "title", "description", "avatarURLs", "isCallActive", "missed", "rawMilliseconds", "sticker", "stickerLabel", "buttonLabel", "showInviteToSpeakButton", "activityInviteEmbed", "Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;", "isFirstForumPostMessage", "postActions", "Lcom/discord/chat/bridge/forums/ForumPostActions;", "autoModerationContext", "Lcom/discord/chat/bridge/automod/AutoModerationContext;", "giftCodes", "Lcom/discord/chat/bridge/gift/GiftEmbed;", "referralTrialOffer", "totalMonthsSubscribed", "swipeToReplyIconUrl", "postPreviewEmbeds", "Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIILcom/discord/chat/bridge/MessageType;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/GuildId;Lcom/discord/chat/bridge/MessageState;Lcom/discord/primitives/UserId;JLjava/lang/String;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Float;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;Lcom/discord/chat/bridge/threads/ThreadEmbed;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/referencedmessage/ReferencedMessage;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;Ljava/util/List;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;Lcom/discord/chat/bridge/feedback/SurveyIndication;Lcom/discord/chat/bridge/interaction/InteractionStatus;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;ZLcom/discord/chat/bridge/forums/ForumPostActions;Lcom/discord/chat/bridge/automod/AutoModerationContext;Ljava/util/List;Lcom/discord/chat/bridge/gift/GiftEmbed;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Lcom/discord/chat/bridge/MessageType;Ljava/lang/String;Ljava/lang/String;JLcom/discord/primitives/GuildId;Lcom/discord/chat/bridge/MessageState;Lcom/discord/primitives/UserId;JLjava/lang/String;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Float;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;Lcom/discord/chat/bridge/threads/ThreadEmbed;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/referencedmessage/ReferencedMessage;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;Ljava/util/List;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;Lcom/discord/chat/bridge/feedback/SurveyIndication;Lcom/discord/chat/bridge/interaction/InteractionStatus;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;ZLcom/discord/chat/bridge/forums/ForumPostActions;Lcom/discord/chat/bridge/automod/AutoModerationContext;Ljava/util/List;Lcom/discord/chat/bridge/gift/GiftEmbed;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "get_constrainedWidth$annotations", "()V", "get_constrainedWidth", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getActivityInviteEmbed", "()Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;", "getAnimateEmoji", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getAttachments", "()Ljava/util/List;", "getAttachmentsOpacity", "getAuthorId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getAutoModerationContext", "()Lcom/discord/chat/bridge/automod/AutoModerationContext;", "getAvatarDecorationURL", "()Ljava/lang/String;", "getAvatarURL$chat_release$annotations", "getAvatarURL$chat_release", "getAvatarURLs", "getButtonLabel", "getChannelId-o4g7jtM", "()J", "J", "getCodedLinks", "getColorString", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getCommunicationDisabled", "getComponents", "getConnectionsRoleTag", "()Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;", "constrainedWidth", "getConstrainedWidth", "constrainedWidth$delegate", "Lkotlin/Lazy;", "getContent", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getDescription", "getEdited", "getEmbeds", "getEphemeralIndication", "()Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;", "getExecutedCommand", "()Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;", "getFlags", "getGifAutoPlay", "getGiftCodes", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getId-3Eiw7ao", "Ljava/lang/String;", "getInteractionStatus", "()Lcom/discord/chat/bridge/interaction/InteractionStatus;", "()Z", "getMentioned", "getMissed", "getNonce-N_6c4I0", "getOpTagText", "getPostActions", "()Lcom/discord/chat/bridge/forums/ForumPostActions;", "getPostPreviewEmbeds", "getProgress", "getRawMilliseconds", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getReactions", "getReferencedMessage", "()Lcom/discord/chat/bridge/referencedmessage/ReferencedMessage;", "getReferralTrialOffer", "()Lcom/discord/chat/bridge/gift/GiftEmbed;", "getRoleColor", "getRoleIcon", "()Lcom/discord/chat/bridge/roleicons/RoleIcon;", "getShouldShowRoleDot", "getShouldShowRoleOnName", "getShowInviteToSpeakButton", "getState", "()Lcom/discord/chat/bridge/MessageState;", "getSticker", "()Lcom/discord/chat/bridge/sticker/Sticker;", "getStickerLabel", "getStickers", "getSurveyIndication", "()Lcom/discord/chat/bridge/feedback/SurveyIndication;", "getSwipeToReplyIconUrl", "getTagBackgroundColor", "getTagText", "getTagVerified", "getThreadEmbed", "()Lcom/discord/chat/bridge/threads/ThreadEmbed;", "getThreadStarterMessageHeader", "getTimestamp", "getTitle", "getTotalMonthsSubscribed", "getType", "()Lcom/discord/chat/bridge/MessageType;", "getUseAddBurstReaction", "getUseAttachmentGridLayout", "getUseAttachmentUploadPreview", "getUseSortedReactions", "getUsername", "getUsernameColor", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component18$chat_release", "component19", "component2", "component2-3Eiw7ao", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component3", "component3-N_6c4I0", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component4", "component4-o4g7jtM", "component40", "component41", "component42", "component43", "component44", "component45", "component46", "component47", "component48", "component49", "component5", "component5-qOKuAAo", "component50", "component51", "component52", "component53", "component54", "component55", "component56", "component57", "component58", "component59", "component6", "component60", "component61", "component62", "component63", "component64", "component65", "component66", "component67", "component68", "component69", "component7", "component7-wUX8bhU", "component8", "component9", "copy", "copy-HxUhIIA", "(Lcom/discord/chat/bridge/MessageType;Ljava/lang/String;Ljava/lang/String;JLcom/discord/primitives/GuildId;Lcom/discord/chat/bridge/MessageState;Lcom/discord/primitives/UserId;JLjava/lang/String;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Float;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/roleicons/RoleIcon;Lcom/discord/chat/bridge/connectionsroletag/ConnectionsRoleTag;Lcom/discord/chat/bridge/threads/ThreadEmbed;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lcom/discord/chat/bridge/referencedmessage/ReferencedMessage;Lcom/discord/chat/bridge/executedcommand/ExecutedCommand;Ljava/util/List;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/chat/bridge/ephemeral/EphemeralIndication;Lcom/discord/chat/bridge/feedback/SurveyIndication;Lcom/discord/chat/bridge/interaction/InteractionStatus;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/activityinviteembed/ActivityInviteEmbed;ZLcom/discord/chat/bridge/forums/ForumPostActions;Lcom/discord/chat/bridge/automod/AutoModerationContext;Ljava/util/List;Lcom/discord/chat/bridge/gift/GiftEmbed;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;)Lcom/discord/chat/bridge/Message;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public final class Message extends MessageBase {
     public static final Companion Companion = new Companion(null);
@@ -109,7 +109,7 @@ public final class Message extends MessageBase {
     private final GuildId guildId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7195id;
+    private final String f7693id;
     private final InteractionStatus interactionStatus;
     private final Boolean isCallActive;
     private final Boolean isCurrentUserMessageAuthor;
@@ -190,18 +190,18 @@ public final class Message extends MessageBase {
     /* JADX WARN: Multi-variable type inference failed */
     private Message(int i10, int i11, int i12, MessageType messageType, String str, String str2, ChannelId channelId, GuildId guildId, MessageState messageState, UserId userId, long j10, String str3, Float f10, String str4, String str5, Integer num, Integer num2, boolean z10, boolean z11, Integer num3, String str6, String str7, List<Embed> list, List<Attachment> list2, Float f11, StructurableText structurableText, List<UploadProgress> list3, List<MessageReaction> list4, Boolean bool, Boolean bool2, List<? extends CodedLinkEmbed> list5, List<Sticker> list6, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool3, Boolean bool4, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List<? extends Component> list7, String str8, Boolean bool5, String str9, Boolean bool6, Integer num4, String str10, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool7, Boolean bool8, Boolean bool9, String str11, String str12, List<String> list8, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str13, String str14, Boolean bool12, ActivityInviteEmbed activityInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, List<? extends GiftEmbed> list9, GiftEmbed giftEmbed, Integer num5, String str15, List<PostPreviewEmbed> list10, SerializationConstructorMarker serializationConstructorMarker) {
         super(i10, serializationConstructorMarker);
-        Lazy a10;
+        Lazy b10;
         if (((11 != (i10 & 11)) | (1 != (i11 & 1))) || ((i12 & 0) != 0)) {
             n1.a(new int[]{i10, i11, i12}, new int[]{11, 1, 0}, Message$$serializer.INSTANCE.getDescriptor());
         }
         this.type = messageType;
-        this.f7195id = str;
+        this.f7693id = str;
         if ((i10 & 4) == 0) {
             this.nonce = null;
         } else {
             this.nonce = str2;
         }
-        this.channelId = channelId.m546unboximpl();
+        this.channelId = channelId.m555unboximpl();
         if ((i10 & 16) == 0) {
             this.guildId = null;
         } else {
@@ -499,8 +499,8 @@ public final class Message extends MessageBase {
         } else {
             this.postPreviewEmbeds = list10;
         }
-        a10 = n.a(new AnonymousClass1());
-        this.constrainedWidth$delegate = a10;
+        b10 = n.b(new AnonymousClass1());
+        this.constrainedWidth$delegate = b10;
     }
 
     public /* synthetic */ Message(int i10, int i11, int i12, MessageType messageType, String str, String str2, ChannelId channelId, GuildId guildId, MessageState messageState, UserId userId, long j10, String str3, Float f10, String str4, String str5, Integer num, Integer num2, boolean z10, boolean z11, Integer num3, String str6, String str7, List list, List list2, Float f11, StructurableText structurableText, List list3, List list4, Boolean bool, Boolean bool2, List list5, List list6, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool3, Boolean bool4, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List list7, String str8, Boolean bool5, String str9, Boolean bool6, Integer num4, String str10, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool7, Boolean bool8, Boolean bool9, String str11, String str12, List list8, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str13, String str14, Boolean bool12, ActivityInviteEmbed activityInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, List list9, GiftEmbed giftEmbed, Integer num5, String str15, List list10, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -523,209 +523,209 @@ public final class Message extends MessageBase {
         q.g(serialDesc, "serialDesc");
         MessageBase.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.t(serialDesc, 0, MessageType.Serializer.INSTANCE, self.type);
+        output.z(serialDesc, 0, MessageType.Serializer.INSTANCE, self.type);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.t(serialDesc, 1, messageId$$serializer, MessageId.m563boximpl(self.f7195id));
+        output.z(serialDesc, 1, messageId$$serializer, MessageId.m572boximpl(self.f7693id));
         if (output.A(serialDesc, 2) || self.nonce != null) {
             String str = self.nonce;
-            output.p(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m563boximpl(str) : null);
+            output.h(serialDesc, 2, messageId$$serializer, str != null ? MessageId.m572boximpl(str) : null);
         }
-        output.t(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m537boximpl(self.channelId));
+        output.z(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m546boximpl(self.channelId));
         if (output.A(serialDesc, 4) || self.guildId != null) {
-            output.p(serialDesc, 4, GuildId$$serializer.INSTANCE, self.guildId);
+            output.h(serialDesc, 4, GuildId$$serializer.INSTANCE, self.guildId);
         }
         if (output.A(serialDesc, 5) || self.state != null) {
-            output.p(serialDesc, 5, MessageState.Serializer.INSTANCE, self.state);
+            output.h(serialDesc, 5, MessageState.Serializer.INSTANCE, self.state);
         }
         if (output.A(serialDesc, 6) || self.authorId != null) {
-            output.p(serialDesc, 6, UserId$$serializer.INSTANCE, self.authorId);
+            output.h(serialDesc, 6, UserId$$serializer.INSTANCE, self.authorId);
         }
         if (output.A(serialDesc, 7) || self.flags != 0) {
             output.E(serialDesc, 7, self.flags);
         }
         if (output.A(serialDesc, 8) || self.edited != null) {
-            output.p(serialDesc, 8, a2.f5917a, self.edited);
+            output.h(serialDesc, 8, a2.f32309a, self.edited);
         }
         if (output.A(serialDesc, 9) || self._constrainedWidth != null) {
-            output.p(serialDesc, 9, e0.f5942a, self._constrainedWidth);
+            output.h(serialDesc, 9, e0.f32334a, self._constrainedWidth);
         }
         if (output.A(serialDesc, 10) || self.timestamp != null) {
-            output.p(serialDesc, 10, a2.f5917a, self.timestamp);
+            output.h(serialDesc, 10, a2.f32309a, self.timestamp);
         }
         if (output.A(serialDesc, 11) || self.username != null) {
-            output.p(serialDesc, 11, a2.f5917a, self.username);
+            output.h(serialDesc, 11, a2.f32309a, self.username);
         }
         if (output.A(serialDesc, 12) || self.usernameColor != null) {
-            output.p(serialDesc, 12, m0.f5992a, self.usernameColor);
+            output.h(serialDesc, 12, m0.f32384a, self.usernameColor);
         }
         if (output.A(serialDesc, 13) || self.roleColor != null) {
-            output.p(serialDesc, 13, m0.f5992a, self.roleColor);
+            output.h(serialDesc, 13, m0.f32384a, self.roleColor);
         }
         if (output.A(serialDesc, 14) || self.shouldShowRoleDot) {
-            output.y(serialDesc, 14, self.shouldShowRoleDot);
+            output.x(serialDesc, 14, self.shouldShowRoleDot);
         }
         if (output.A(serialDesc, 15) || self.shouldShowRoleOnName) {
-            output.y(serialDesc, 15, self.shouldShowRoleOnName);
+            output.x(serialDesc, 15, self.shouldShowRoleOnName);
         }
         if (output.A(serialDesc, 16) || self.colorString != null) {
-            output.p(serialDesc, 16, m0.f5992a, self.colorString);
+            output.h(serialDesc, 16, m0.f32384a, self.colorString);
         }
         if (output.A(serialDesc, 17) || self.avatarURL != null) {
-            output.p(serialDesc, 17, a2.f5917a, self.avatarURL);
+            output.h(serialDesc, 17, a2.f32309a, self.avatarURL);
         }
         if (output.A(serialDesc, 18) || self.avatarDecorationURL != null) {
-            output.p(serialDesc, 18, a2.f5917a, self.avatarDecorationURL);
+            output.h(serialDesc, 18, a2.f32309a, self.avatarDecorationURL);
         }
         if (output.A(serialDesc, 19) || self.embeds != null) {
-            output.p(serialDesc, 19, new bj.f(Embed$$serializer.INSTANCE), self.embeds);
+            output.h(serialDesc, 19, new xj.f(Embed$$serializer.INSTANCE), self.embeds);
         }
         if (output.A(serialDesc, 20) || self.attachments != null) {
-            output.p(serialDesc, 20, new bj.f(Attachment$$serializer.INSTANCE), self.attachments);
+            output.h(serialDesc, 20, new xj.f(Attachment$$serializer.INSTANCE), self.attachments);
         }
         if (output.A(serialDesc, 21) || self.attachmentsOpacity != null) {
-            output.p(serialDesc, 21, e0.f5942a, self.attachmentsOpacity);
+            output.h(serialDesc, 21, e0.f32334a, self.attachmentsOpacity);
         }
         if (output.A(serialDesc, 22) || self.content != null) {
-            output.p(serialDesc, 22, StructurableTextSerializer.INSTANCE, self.content);
+            output.h(serialDesc, 22, StructurableTextSerializer.INSTANCE, self.content);
         }
         if (output.A(serialDesc, 23) || self.progress != null) {
-            output.p(serialDesc, 23, new bj.f(UploadProgress$$serializer.INSTANCE), self.progress);
+            output.h(serialDesc, 23, new xj.f(UploadProgress$$serializer.INSTANCE), self.progress);
         }
         if (output.A(serialDesc, 24) || self.reactions != null) {
-            output.p(serialDesc, 24, new bj.f(MessageReaction$$serializer.INSTANCE), self.reactions);
+            output.h(serialDesc, 24, new xj.f(MessageReaction$$serializer.INSTANCE), self.reactions);
         }
         if (output.A(serialDesc, 25) || !q.b(self.useSortedReactions, Boolean.TRUE)) {
-            output.p(serialDesc, 25, h.f5959a, self.useSortedReactions);
+            output.h(serialDesc, 25, h.f32351a, self.useSortedReactions);
         }
         if (output.A(serialDesc, 26) || !q.b(self.useAddBurstReaction, Boolean.FALSE)) {
-            output.p(serialDesc, 26, h.f5959a, self.useAddBurstReaction);
+            output.h(serialDesc, 26, h.f32351a, self.useAddBurstReaction);
         }
         if (output.A(serialDesc, 27) || self.codedLinks != null) {
-            output.p(serialDesc, 27, new bj.f(a.u(CodedLinkSerializer.INSTANCE)), self.codedLinks);
+            output.h(serialDesc, 27, new xj.f(a.u(CodedLinkSerializer.INSTANCE)), self.codedLinks);
         }
         if (output.A(serialDesc, 28) || self.stickers != null) {
-            output.p(serialDesc, 28, new bj.f(Sticker$$serializer.INSTANCE), self.stickers);
+            output.h(serialDesc, 28, new xj.f(Sticker$$serializer.INSTANCE), self.stickers);
         }
         if (output.A(serialDesc, 29) || self.roleIcon != null) {
-            output.p(serialDesc, 29, RoleIcon$$serializer.INSTANCE, self.roleIcon);
+            output.h(serialDesc, 29, RoleIcon$$serializer.INSTANCE, self.roleIcon);
         }
         if (output.A(serialDesc, 30) || self.connectionsRoleTag != null) {
-            output.p(serialDesc, 30, ConnectionsRoleTag$$serializer.INSTANCE, self.connectionsRoleTag);
+            output.h(serialDesc, 30, ConnectionsRoleTag$$serializer.INSTANCE, self.connectionsRoleTag);
         }
         if (output.A(serialDesc, 31) || self.threadEmbed != null) {
-            output.p(serialDesc, 31, ThreadEmbed$$serializer.INSTANCE, self.threadEmbed);
+            output.h(serialDesc, 31, ThreadEmbed$$serializer.INSTANCE, self.threadEmbed);
         }
-        output.y(serialDesc, 32, self.mentioned);
+        output.x(serialDesc, 32, self.mentioned);
         if (output.A(serialDesc, 33) || self.gifAutoPlay != null) {
-            output.p(serialDesc, 33, h.f5959a, self.gifAutoPlay);
+            output.h(serialDesc, 33, h.f32351a, self.gifAutoPlay);
         }
         if (output.A(serialDesc, 34) || self.animateEmoji != null) {
-            output.p(serialDesc, 34, h.f5959a, self.animateEmoji);
+            output.h(serialDesc, 34, h.f32351a, self.animateEmoji);
         }
         if (output.A(serialDesc, 35) || self.referencedMessage != null) {
-            output.p(serialDesc, 35, ReferencedMessageSerializer.INSTANCE, self.referencedMessage);
+            output.h(serialDesc, 35, ReferencedMessageSerializer.INSTANCE, self.referencedMessage);
         }
         if (output.A(serialDesc, 36) || self.executedCommand != null) {
-            output.p(serialDesc, 36, ExecutedCommand$$serializer.INSTANCE, self.executedCommand);
+            output.h(serialDesc, 36, ExecutedCommand$$serializer.INSTANCE, self.executedCommand);
         }
         if (output.A(serialDesc, 37) || self.components != null) {
-            output.p(serialDesc, 37, new bj.f(ComponentSerializer.INSTANCE), self.components);
+            output.h(serialDesc, 37, new xj.f(ComponentSerializer.INSTANCE), self.components);
         }
         if (output.A(serialDesc, 38) || self.threadStarterMessageHeader != null) {
-            output.p(serialDesc, 38, a2.f5917a, self.threadStarterMessageHeader);
+            output.h(serialDesc, 38, a2.f32309a, self.threadStarterMessageHeader);
         }
         if (output.A(serialDesc, 39) || self.communicationDisabled != null) {
-            output.p(serialDesc, 39, h.f5959a, self.communicationDisabled);
+            output.h(serialDesc, 39, h.f32351a, self.communicationDisabled);
         }
         if (output.A(serialDesc, 40) || self.tagText != null) {
-            output.p(serialDesc, 40, a2.f5917a, self.tagText);
+            output.h(serialDesc, 40, a2.f32309a, self.tagText);
         }
         if (output.A(serialDesc, 41) || self.tagVerified != null) {
-            output.p(serialDesc, 41, h.f5959a, self.tagVerified);
+            output.h(serialDesc, 41, h.f32351a, self.tagVerified);
         }
         if (output.A(serialDesc, 42) || self.tagBackgroundColor != null) {
-            output.p(serialDesc, 42, m0.f5992a, self.tagBackgroundColor);
+            output.h(serialDesc, 42, m0.f32384a, self.tagBackgroundColor);
         }
         if (output.A(serialDesc, 43) || self.opTagText != null) {
-            output.p(serialDesc, 43, a2.f5917a, self.opTagText);
+            output.h(serialDesc, 43, a2.f32309a, self.opTagText);
         }
         if (output.A(serialDesc, 44) || self.ephemeralIndication != null) {
-            output.p(serialDesc, 44, EphemeralIndication$$serializer.INSTANCE, self.ephemeralIndication);
+            output.h(serialDesc, 44, EphemeralIndication$$serializer.INSTANCE, self.ephemeralIndication);
         }
         if (output.A(serialDesc, 45) || self.surveyIndication != null) {
-            output.p(serialDesc, 45, SurveyIndication$$serializer.INSTANCE, self.surveyIndication);
+            output.h(serialDesc, 45, SurveyIndication$$serializer.INSTANCE, self.surveyIndication);
         }
         if (output.A(serialDesc, 46) || self.interactionStatus != null) {
-            output.p(serialDesc, 46, InteractionStatus$$serializer.INSTANCE, self.interactionStatus);
+            output.h(serialDesc, 46, InteractionStatus$$serializer.INSTANCE, self.interactionStatus);
         }
         if (output.A(serialDesc, 47) || !q.b(self.useAttachmentGridLayout, Boolean.FALSE)) {
-            output.p(serialDesc, 47, h.f5959a, self.useAttachmentGridLayout);
+            output.h(serialDesc, 47, h.f32351a, self.useAttachmentGridLayout);
         }
         if (output.A(serialDesc, 48) || !q.b(self.useAttachmentUploadPreview, Boolean.FALSE)) {
-            output.p(serialDesc, 48, h.f5959a, self.useAttachmentUploadPreview);
+            output.h(serialDesc, 48, h.f32351a, self.useAttachmentUploadPreview);
         }
         if (output.A(serialDesc, 49) || !q.b(self.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            output.p(serialDesc, 49, h.f5959a, self.isCurrentUserMessageAuthor);
+            output.h(serialDesc, 49, h.f32351a, self.isCurrentUserMessageAuthor);
         }
         if (output.A(serialDesc, 50) || self.title != null) {
-            output.p(serialDesc, 50, a2.f5917a, self.title);
+            output.h(serialDesc, 50, a2.f32309a, self.title);
         }
         if (output.A(serialDesc, 51) || self.description != null) {
-            output.p(serialDesc, 51, a2.f5917a, self.description);
+            output.h(serialDesc, 51, a2.f32309a, self.description);
         }
         if (output.A(serialDesc, 52) || self.avatarURLs != null) {
-            output.p(serialDesc, 52, new bj.f(a2.f5917a), self.avatarURLs);
+            output.h(serialDesc, 52, new xj.f(a2.f32309a), self.avatarURLs);
         }
         if (output.A(serialDesc, 53) || self.isCallActive != null) {
-            output.p(serialDesc, 53, h.f5959a, self.isCallActive);
+            output.h(serialDesc, 53, h.f32351a, self.isCallActive);
         }
         if (output.A(serialDesc, 54) || self.missed != null) {
-            output.p(serialDesc, 54, h.f5959a, self.missed);
+            output.h(serialDesc, 54, h.f32351a, self.missed);
         }
         if (output.A(serialDesc, 55) || self.rawMilliseconds != null) {
-            output.p(serialDesc, 55, w0.f6033a, self.rawMilliseconds);
+            output.h(serialDesc, 55, w0.f32425a, self.rawMilliseconds);
         }
         if (output.A(serialDesc, 56) || self.sticker != null) {
-            output.p(serialDesc, 56, Sticker$$serializer.INSTANCE, self.sticker);
+            output.h(serialDesc, 56, Sticker$$serializer.INSTANCE, self.sticker);
         }
         if (output.A(serialDesc, 57) || self.stickerLabel != null) {
-            output.p(serialDesc, 57, a2.f5917a, self.stickerLabel);
+            output.h(serialDesc, 57, a2.f32309a, self.stickerLabel);
         }
         if (output.A(serialDesc, 58) || self.buttonLabel != null) {
-            output.p(serialDesc, 58, a2.f5917a, self.buttonLabel);
+            output.h(serialDesc, 58, a2.f32309a, self.buttonLabel);
         }
         if (output.A(serialDesc, 59) || self.showInviteToSpeakButton != null) {
-            output.p(serialDesc, 59, h.f5959a, self.showInviteToSpeakButton);
+            output.h(serialDesc, 59, h.f32351a, self.showInviteToSpeakButton);
         }
         if (output.A(serialDesc, 60) || self.activityInviteEmbed != null) {
-            output.p(serialDesc, 60, ActivityInviteEmbed$$serializer.INSTANCE, self.activityInviteEmbed);
+            output.h(serialDesc, 60, ActivityInviteEmbed$$serializer.INSTANCE, self.activityInviteEmbed);
         }
         if (output.A(serialDesc, 61) || self.isFirstForumPostMessage) {
-            output.y(serialDesc, 61, self.isFirstForumPostMessage);
+            output.x(serialDesc, 61, self.isFirstForumPostMessage);
         }
         if (output.A(serialDesc, 62) || self.postActions != null) {
-            output.p(serialDesc, 62, ForumPostActions$$serializer.INSTANCE, self.postActions);
+            output.h(serialDesc, 62, ForumPostActions$$serializer.INSTANCE, self.postActions);
         }
         if (output.A(serialDesc, 63) || self.autoModerationContext != null) {
-            output.p(serialDesc, 63, AutoModerationContext$$serializer.INSTANCE, self.autoModerationContext);
+            output.h(serialDesc, 63, AutoModerationContext$$serializer.INSTANCE, self.autoModerationContext);
         }
         if (output.A(serialDesc, 64) || self.giftCodes != null) {
-            output.p(serialDesc, 64, new bj.f(GiftEmbedSerializer.INSTANCE), self.giftCodes);
+            output.h(serialDesc, 64, new xj.f(GiftEmbedSerializer.INSTANCE), self.giftCodes);
         }
         if (output.A(serialDesc, 65) || self.referralTrialOffer != null) {
-            output.p(serialDesc, 65, GiftEmbedSerializer.INSTANCE, self.referralTrialOffer);
+            output.h(serialDesc, 65, GiftEmbedSerializer.INSTANCE, self.referralTrialOffer);
         }
         if (output.A(serialDesc, 66) || self.totalMonthsSubscribed != null) {
-            output.p(serialDesc, 66, m0.f5992a, self.totalMonthsSubscribed);
+            output.h(serialDesc, 66, m0.f32384a, self.totalMonthsSubscribed);
         }
         if (output.A(serialDesc, 67) || self.swipeToReplyIconUrl != null) {
-            output.p(serialDesc, 67, a2.f5917a, self.swipeToReplyIconUrl);
+            output.h(serialDesc, 67, a2.f32309a, self.swipeToReplyIconUrl);
         }
         if (output.A(serialDesc, 68) || self.postPreviewEmbeds != null) {
             z10 = true;
         }
         if (z10) {
-            output.p(serialDesc, 68, new bj.f(PostPreviewEmbed$$serializer.INSTANCE), self.postPreviewEmbeds);
+            output.h(serialDesc, 68, new xj.f(PostPreviewEmbed$$serializer.INSTANCE), self.postPreviewEmbeds);
         }
     }
 
@@ -774,8 +774,8 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m7component23Eiw7ao() {
-        return this.f7195id;
+    public final String m8component23Eiw7ao() {
+        return this.f7693id;
     }
 
     public final List<Embed> component20() {
@@ -819,7 +819,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: component3-N_6c4I0  reason: not valid java name */
-    public final String m8component3N_6c4I0() {
+    public final String m9component3N_6c4I0() {
         return this.nonce;
     }
 
@@ -864,7 +864,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: component4-o4g7jtM  reason: not valid java name */
-    public final long m9component4o4g7jtM() {
+    public final long m10component4o4g7jtM() {
         return this.channelId;
     }
 
@@ -909,7 +909,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: component5-qOKuAAo  reason: not valid java name */
-    public final GuildId m10component5qOKuAAo() {
+    public final GuildId m11component5qOKuAAo() {
         return this.guildId;
     }
 
@@ -998,7 +998,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: component7-wUX8bhU  reason: not valid java name */
-    public final UserId m11component7wUX8bhU() {
+    public final UserId m12component7wUX8bhU() {
         return this.authorId;
     }
 
@@ -1011,7 +1011,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: copy-HxUhIIA  reason: not valid java name */
-    public final Message m12copyHxUhIIA(MessageType type, String id2, String str, long j10, GuildId guildId, MessageState messageState, UserId userId, long j11, String str2, Float f10, String str3, String str4, Integer num, Integer num2, boolean z10, boolean z11, Integer num3, String str5, String str6, List<Embed> list, List<Attachment> list2, Float f11, StructurableText structurableText, List<UploadProgress> list3, List<MessageReaction> list4, Boolean bool, Boolean bool2, List<? extends CodedLinkEmbed> list5, List<Sticker> list6, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool3, Boolean bool4, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List<? extends Component> list7, String str7, Boolean bool5, String str8, Boolean bool6, Integer num4, String str9, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool7, Boolean bool8, Boolean bool9, String str10, String str11, List<String> list8, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str12, String str13, Boolean bool12, ActivityInviteEmbed activityInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, List<? extends GiftEmbed> list9, GiftEmbed giftEmbed, Integer num5, String str14, List<PostPreviewEmbed> list10) {
+    public final Message m13copyHxUhIIA(MessageType type, String id2, String str, long j10, GuildId guildId, MessageState messageState, UserId userId, long j11, String str2, Float f10, String str3, String str4, Integer num, Integer num2, boolean z10, boolean z11, Integer num3, String str5, String str6, List<Embed> list, List<Attachment> list2, Float f11, StructurableText structurableText, List<UploadProgress> list3, List<MessageReaction> list4, Boolean bool, Boolean bool2, List<? extends CodedLinkEmbed> list5, List<Sticker> list6, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool3, Boolean bool4, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List<? extends Component> list7, String str7, Boolean bool5, String str8, Boolean bool6, Integer num4, String str9, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool7, Boolean bool8, Boolean bool9, String str10, String str11, List<String> list8, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str12, String str13, Boolean bool12, ActivityInviteEmbed activityInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, List<? extends GiftEmbed> list9, GiftEmbed giftEmbed, Integer num5, String str14, List<PostPreviewEmbed> list10) {
         q.g(type, "type");
         q.g(id2, "id");
         return new Message(type, id2, str, j10, guildId, messageState, userId, j11, str2, f10, str3, str4, num, num2, z10, z11, num3, str5, str6, list, list2, f11, structurableText, list3, list4, bool, bool2, list5, list6, roleIcon, connectionsRoleTag, threadEmbed, z12, bool3, bool4, referencedMessage, executedCommand, list7, str7, bool5, str8, bool6, num4, str9, ephemeralIndication, surveyIndication, interactionStatus, bool7, bool8, bool9, str10, str11, list8, bool10, bool11, l10, sticker, str12, str13, bool12, activityInviteEmbed, z13, forumPostActions, autoModerationContext, list9, giftEmbed, num5, str14, list10, null);
@@ -1048,7 +1048,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: getAuthorId-wUX8bhU  reason: not valid java name */
-    public final UserId m13getAuthorIdwUX8bhU() {
+    public final UserId m14getAuthorIdwUX8bhU() {
         return this.authorId;
     }
 
@@ -1073,7 +1073,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m14getChannelIdo4g7jtM() {
+    public final long m15getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -1138,13 +1138,13 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m15getGuildIdqOKuAAo() {
+    public final GuildId m16getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
-    public final String m16getId3Eiw7ao() {
-        return this.f7195id;
+    public final String m17getId3Eiw7ao() {
+        return this.f7693id;
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -1160,7 +1160,7 @@ public final class Message extends MessageBase {
     }
 
     /* renamed from: getNonce-N_6c4I0  reason: not valid java name */
-    public final String m17getNonceN_6c4I0() {
+    public final String m18getNonceN_6c4I0() {
         return this.nonce;
     }
 
@@ -1305,16 +1305,16 @@ public final class Message extends MessageBase {
     }
 
     public int hashCode() {
-        int hashCode = ((this.type.hashCode() * 31) + MessageId.m568hashCodeimpl(this.f7195id)) * 31;
+        int hashCode = ((this.type.hashCode() * 31) + MessageId.m577hashCodeimpl(this.f7693id)) * 31;
         String str = this.nonce;
         int i10 = 0;
-        int i11 = (((hashCode + (str == null ? 0 : MessageId.m568hashCodeimpl(str))) * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31;
+        int i11 = (((hashCode + (str == null ? 0 : MessageId.m577hashCodeimpl(str))) * 31) + ChannelId.m551hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
-        int i12 = (i11 + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()))) * 31;
+        int i12 = (i11 + (guildId == null ? 0 : GuildId.m564hashCodeimpl(guildId.m568unboximpl()))) * 31;
         MessageState messageState = this.state;
         int hashCode2 = (i12 + (messageState == null ? 0 : messageState.hashCode())) * 31;
         UserId userId = this.authorId;
-        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m606hashCodeimpl(userId.m610unboximpl()))) * 31) + co.discord.media_engine.a.a(this.flags)) * 31;
+        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31) + co.discord.media_engine.a.a(this.flags)) * 31;
         String str2 = this.edited;
         int hashCode3 = (i13 + (str2 == null ? 0 : str2.hashCode())) * 31;
         Float f10 = this._constrainedWidth;
@@ -1478,10 +1478,10 @@ public final class Message extends MessageBase {
 
     public String toString() {
         MessageType messageType = this.type;
-        String str = MessageId.m569toStringimpl(this.f7195id);
+        String str = MessageId.m578toStringimpl(this.f7693id);
         String str2 = this.nonce;
-        String str3 = str2 == null ? "null" : MessageId.m569toStringimpl(str2);
-        String str4 = ChannelId.m544toStringimpl(this.channelId);
+        String str3 = str2 == null ? "null" : MessageId.m578toStringimpl(str2);
+        String str4 = ChannelId.m553toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         MessageState messageState = this.state;
         UserId userId = this.authorId;
@@ -1557,9 +1557,9 @@ public final class Message extends MessageBase {
     /* JADX WARN: Multi-variable type inference failed */
     private Message(MessageType messageType, String str, String str2, long j10, GuildId guildId, MessageState messageState, UserId userId, long j11, String str3, Float f10, String str4, String str5, Integer num, Integer num2, boolean z10, boolean z11, Integer num3, String str6, String str7, List<Embed> list, List<Attachment> list2, Float f11, StructurableText structurableText, List<UploadProgress> list3, List<MessageReaction> list4, Boolean bool, Boolean bool2, List<? extends CodedLinkEmbed> list5, List<Sticker> list6, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool3, Boolean bool4, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List<? extends Component> list7, String str8, Boolean bool5, String str9, Boolean bool6, Integer num4, String str10, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool7, Boolean bool8, Boolean bool9, String str11, String str12, List<String> list8, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str13, String str14, Boolean bool12, ActivityInviteEmbed activityInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, List<? extends GiftEmbed> list9, GiftEmbed giftEmbed, Integer num5, String str15, List<PostPreviewEmbed> list10) {
         super(null);
-        Lazy a10;
+        Lazy b10;
         this.type = messageType;
-        this.f7195id = str;
+        this.f7693id = str;
         this.nonce = str2;
         this.channelId = j10;
         this.guildId = guildId;
@@ -1627,7 +1627,7 @@ public final class Message extends MessageBase {
         this.totalMonthsSubscribed = num5;
         this.swipeToReplyIconUrl = str15;
         this.postPreviewEmbeds = list10;
-        a10 = n.a(new Message$constrainedWidth$2(this));
-        this.constrainedWidth$delegate = a10;
+        b10 = n.b(new Message$constrainedWidth$2(this));
+        this.constrainedWidth$delegate = b10;
     }
 }

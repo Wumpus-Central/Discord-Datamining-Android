@@ -1,5 +1,6 @@
 package com.discord;
 
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.app_database.AppDatabaseModule;
 import com.discord.bridge.DCDReactNativeHost;
 import com.discord.bundle_updater.BundleUpdater;
@@ -21,7 +22,7 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.modules.i18nmanager.I18nUtil;
 import kotlin.Metadata;
 
-@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0005¢\u0006\u0002\u0010\u0003J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/MainApplication;", "Lcom/discord/tti_manager/TTILoggingApplication;", "Lcom/facebook/react/ReactApplication;", "()V", "host", "Lcom/discord/bridge/DCDReactNativeHost;", "getReactNativeHost", "initialize", "", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0005¢\u0006\u0002\u0010\u0003J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/MainApplication;", "Lcom/discord/tti_manager/TTILoggingApplication;", "Lcom/facebook/react/ReactApplication;", "()V", ZeroconfModule.KEY_SERVICE_HOST, "Lcom/discord/bridge/DCDReactNativeHost;", "getReactNativeHost", "initialize", "", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
 public final class MainApplication extends TTILoggingApplication implements ReactApplication {
     private final DCDReactNativeHost host = new DCDReactNativeHost(this);

@@ -12,11 +12,11 @@ import com.th3rdwave.safeareacontext.EdgeInsets;
 import com.th3rdwave.safeareacontext.Rect;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
 import java.util.Map;
+import jg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
-import nf.x;
 
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0005\u0018\u0000 \u001a2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u001a\u001bB\u0005¢\u0006\u0002\u0010\u0003J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0002H\u0014J\u0010\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u0011H\u0014J\u0014\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015H\u0016J\b\u0010\u0018\u001a\u00020\u0016H\u0016J\"\u0010\u0019\u001a\u00020\u000f2\u0006\u0010\f\u001a\u00020\r2\b\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0012\u001a\u00020\u0002H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/safearea/SafeAreaProviderManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/th3rdwave/safeareacontext/SafeAreaProvider;", "()V", "changeData", "Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "dimensions", "Lcom/discord/safearea/SafeAreaProviderManager$SafeAreaProviderDimensions;", "imeInsets", "Landroidx/core/graphics/Insets;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "safeAreaEdgeInsets", "Lcom/th3rdwave/safeareacontext/DCDSafeAreaUtils$SafeAreaEdgeInsets;", "addEventEmitters", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "view", "createViewInstance", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "handleInsetsChanged", "Companion", "SafeAreaProviderDimensions", "safe_area_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -125,7 +125,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         float b10 = safeAreaEdgeInsets.b();
         float c10 = safeAreaEdgeInsets.c();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f3329d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f3308d);
         } else {
             f10 = 0.0f;
         }
@@ -154,13 +154,13 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     public void addEventEmitters(ThemedReactContext reactContext, final SafeAreaProvider view) {
         q.g(reactContext, "reactContext");
         q.g(view, "view");
-        DCDSafeAreaUtils dCDSafeAreaUtils = DCDSafeAreaUtils.f12928a;
+        DCDSafeAreaUtils dCDSafeAreaUtils = DCDSafeAreaUtils.f13427a;
         view.setOnInsetsChangeListener(new SafeAreaProvider.a() { // from class: com.discord.safearea.SafeAreaProviderManager$addEventEmitters$$inlined$setOnInsetsChangeListener$1
             @Override // com.th3rdwave.safeareacontext.SafeAreaProvider.a
             public final void onInsetsChange(SafeAreaProvider safeAreaProvider, EdgeInsets insets, Rect rect) {
                 DCDSafeAreaUtils.SafeAreaEdgeInsets d10;
                 Insets insets2;
-                DCDSafeAreaUtils dCDSafeAreaUtils2 = DCDSafeAreaUtils.f12928a;
+                DCDSafeAreaUtils dCDSafeAreaUtils2 = DCDSafeAreaUtils.f13427a;
                 q.f(insets, "insets");
                 d10 = dCDSafeAreaUtils2.d(insets);
                 SafeAreaProviderManager safeAreaProviderManager = SafeAreaProviderManager.this;

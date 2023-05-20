@@ -20,7 +20,7 @@ public /* synthetic */ class EmbedViewHolder$bind$4 extends n implements Functio
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

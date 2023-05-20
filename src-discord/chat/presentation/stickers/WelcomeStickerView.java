@@ -88,14 +88,14 @@ public final class WelcomeStickerView extends LinearLayout {
         q.g(onWelcomeReplyClicked, "$onWelcomeReplyClicked");
         q.g(sticker, "$sticker");
         q.g(message, "$message");
-        onWelcomeReplyClicked.invoke(sticker, MessageId.m563boximpl(message.m16getId3Eiw7ao()));
+        onWelcomeReplyClicked.invoke(sticker, MessageId.m572boximpl(message.m17getId3Eiw7ao()));
     }
 
     public final void setSticker(final Sticker sticker, final Message message, final Function2<? super Sticker, ? super MessageId, Unit> onWelcomeReplyClicked) {
         q.g(sticker, "sticker");
         q.g(message, "message");
         q.g(onWelcomeReplyClicked, "onWelcomeReplyClicked");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: f3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: i3.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 WelcomeStickerView.setSticker$lambda$1(Function2.this, sticker, message, view);

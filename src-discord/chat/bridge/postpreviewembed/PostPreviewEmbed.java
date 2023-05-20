@@ -1,7 +1,5 @@
 package com.discord.chat.bridge.postpreviewembed;
 
-import bj.a2;
-import bj.n1;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.bridge.structurabletext.StructurableTextSerializer;
 import com.discord.primitives.ChannelId;
@@ -18,10 +16,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import yi.f;
+import uj.f;
+import xj.a2;
+import xj.n1;
 
-@f
 @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b%\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 G2\u00020\u0001:\u0002FGB\u008a\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015ø\u0001\u0000¢\u0006\u0002\u0010\u0016Bp\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\fø\u0001\u0000¢\u0006\u0002\u0010\u0017J\u0019\u0010(\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b)\u0010 J\u000b\u0010*\u001a\u0004\u0018\u00010\fHÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\fHÆ\u0003J\u0019\u0010,\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b-\u0010 J\u0019\u0010.\u001a\u00020\bHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b/\u0010\u0019J\u0019\u00100\u001a\u00020\nHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b1\u0010 J\t\u00102\u001a\u00020\fHÆ\u0003J\t\u00103\u001a\u00020\fHÆ\u0003J\t\u00104\u001a\u00020\u000fHÆ\u0003J\u000b\u00105\u001a\u0004\u0018\u00010\fHÆ\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\fHÆ\u0003J\u008c\u0001\u00107\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\fHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b8\u00109J\u0013\u0010:\u001a\u00020;2\b\u0010<\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010=\u001a\u00020\u0003HÖ\u0001J\t\u0010>\u001a\u00020\fHÖ\u0001J!\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020\u00002\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020EHÇ\u0001R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0019R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0019R\u0011\u0010\r\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0019R\u0011\u0010\u000e\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u001c\u0010\t\u001a\u00020\nø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010!\u001a\u0004\b\u001f\u0010 R\u001c\u0010\u0007\u001a\u00020\bø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010#\u001a\u0004\b\"\u0010\u0019R\u001c\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010!\u001a\u0004\b$\u0010 R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u0019R\u001c\u0010\u0006\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010!\u001a\u0004\b&\u0010 R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b'\u0010\u0019\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006H"}, d2 = {"Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "", "seen1", "", "parentChannelId", "Lcom/discord/primitives/ChannelId;", "threadId", "messageId", "Lcom/discord/primitives/MessageId;", "guildId", "Lcom/discord/primitives/GuildId;", "title", "", "ctaText", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "subtitle", "coverImage", "blurredCoverImage", "coverImageOverlayText", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/ChannelId;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(JJLjava/lang/String;JLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getBlurredCoverImage", "()Ljava/lang/String;", "getCoverImage", "getCoverImageOverlayText", "getCtaText", "getFooter", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getGuildId-fYKD8eg", "()J", "J", "getMessageId-3Eiw7ao", "Ljava/lang/String;", "getParentChannelId-o4g7jtM", "getSubtitle", "getThreadId-o4g7jtM", "getTitle", "component1", "component1-o4g7jtM", "component10", "component11", "component2", "component2-o4g7jtM", "component3", "component3-3Eiw7ao", "component4", "component4-fYKD8eg", "component5", "component6", "component7", "component8", "component9", "copy", "copy-2wKWx2Q", "(JJLjava/lang/String;JLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public final class PostPreviewEmbed {
     public static final Companion Companion = new Companion(null);
@@ -56,10 +56,10 @@ public final class PostPreviewEmbed {
         if (127 != (i10 & 127)) {
             n1.b(i10, 127, PostPreviewEmbed$$serializer.INSTANCE.getDescriptor());
         }
-        this.parentChannelId = channelId.m546unboximpl();
-        this.threadId = channelId2.m546unboximpl();
+        this.parentChannelId = channelId.m555unboximpl();
+        this.threadId = channelId2.m555unboximpl();
         this.messageId = str;
-        this.guildId = guildId.m559unboximpl();
+        this.guildId = guildId.m568unboximpl();
         this.title = str2;
         this.ctaText = str3;
         this.footer = structurableText;
@@ -102,20 +102,20 @@ public final class PostPreviewEmbed {
         q.g(serialDesc, "serialDesc");
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
         boolean z13 = false;
-        output.t(serialDesc, 0, channelId$$serializer, ChannelId.m537boximpl(self.parentChannelId));
-        output.t(serialDesc, 1, channelId$$serializer, ChannelId.m537boximpl(self.threadId));
-        output.t(serialDesc, 2, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
-        output.t(serialDesc, 3, GuildId$$serializer.INSTANCE, GuildId.m550boximpl(self.guildId));
-        output.z(serialDesc, 4, self.title);
-        output.z(serialDesc, 5, self.ctaText);
-        output.t(serialDesc, 6, StructurableTextSerializer.INSTANCE, self.footer);
+        output.z(serialDesc, 0, channelId$$serializer, ChannelId.m546boximpl(self.parentChannelId));
+        output.z(serialDesc, 1, channelId$$serializer, ChannelId.m546boximpl(self.threadId));
+        output.z(serialDesc, 2, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.messageId));
+        output.z(serialDesc, 3, GuildId$$serializer.INSTANCE, GuildId.m559boximpl(self.guildId));
+        output.y(serialDesc, 4, self.title);
+        output.y(serialDesc, 5, self.ctaText);
+        output.z(serialDesc, 6, StructurableTextSerializer.INSTANCE, self.footer);
         if (!output.A(serialDesc, 7) && self.subtitle == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.p(serialDesc, 7, a2.f5917a, self.subtitle);
+            output.h(serialDesc, 7, a2.f32309a, self.subtitle);
         }
         if (!output.A(serialDesc, 8) && self.coverImage == null) {
             z11 = false;
@@ -123,7 +123,7 @@ public final class PostPreviewEmbed {
             z11 = true;
         }
         if (z11) {
-            output.p(serialDesc, 8, a2.f5917a, self.coverImage);
+            output.h(serialDesc, 8, a2.f32309a, self.coverImage);
         }
         if (!output.A(serialDesc, 9) && self.blurredCoverImage == null) {
             z12 = false;
@@ -131,18 +131,18 @@ public final class PostPreviewEmbed {
             z12 = true;
         }
         if (z12) {
-            output.p(serialDesc, 9, a2.f5917a, self.blurredCoverImage);
+            output.h(serialDesc, 9, a2.f32309a, self.blurredCoverImage);
         }
         if (output.A(serialDesc, 10) || self.coverImageOverlayText != null) {
             z13 = true;
         }
         if (z13) {
-            output.p(serialDesc, 10, a2.f5917a, self.coverImageOverlayText);
+            output.h(serialDesc, 10, a2.f32309a, self.coverImageOverlayText);
         }
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m107component1o4g7jtM() {
+    public final long m108component1o4g7jtM() {
         return this.parentChannelId;
     }
 
@@ -155,17 +155,17 @@ public final class PostPreviewEmbed {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m108component2o4g7jtM() {
+    public final long m109component2o4g7jtM() {
         return this.threadId;
     }
 
     /* renamed from: component3-3Eiw7ao  reason: not valid java name */
-    public final String m109component33Eiw7ao() {
+    public final String m110component33Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component4-fYKD8eg  reason: not valid java name */
-    public final long m110component4fYKD8eg() {
+    public final long m111component4fYKD8eg() {
         return this.guildId;
     }
 
@@ -190,7 +190,7 @@ public final class PostPreviewEmbed {
     }
 
     /* renamed from: copy-2wKWx2Q  reason: not valid java name */
-    public final PostPreviewEmbed m111copy2wKWx2Q(long j10, long j11, String messageId, long j12, String title, String ctaText, StructurableText footer, String str, String str2, String str3, String str4) {
+    public final PostPreviewEmbed m112copy2wKWx2Q(long j10, long j11, String messageId, long j12, String title, String ctaText, StructurableText footer, String str, String str2, String str3, String str4) {
         q.g(messageId, "messageId");
         q.g(title, "title");
         q.g(ctaText, "ctaText");
@@ -206,7 +206,7 @@ public final class PostPreviewEmbed {
             return false;
         }
         PostPreviewEmbed postPreviewEmbed = (PostPreviewEmbed) obj;
-        return ChannelId.m541equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m541equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m567equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m554equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText);
+        return ChannelId.m550equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m550equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m576equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m563equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText);
     }
 
     public final String getBlurredCoverImage() {
@@ -230,17 +230,17 @@ public final class PostPreviewEmbed {
     }
 
     /* renamed from: getGuildId-fYKD8eg  reason: not valid java name */
-    public final long m112getGuildIdfYKD8eg() {
+    public final long m113getGuildIdfYKD8eg() {
         return this.guildId;
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m113getMessageId3Eiw7ao() {
+    public final String m114getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: getParentChannelId-o4g7jtM  reason: not valid java name */
-    public final long m114getParentChannelIdo4g7jtM() {
+    public final long m115getParentChannelIdo4g7jtM() {
         return this.parentChannelId;
     }
 
@@ -249,7 +249,7 @@ public final class PostPreviewEmbed {
     }
 
     /* renamed from: getThreadId-o4g7jtM  reason: not valid java name */
-    public final long m115getThreadIdo4g7jtM() {
+    public final long m116getThreadIdo4g7jtM() {
         return this.threadId;
     }
 
@@ -258,7 +258,7 @@ public final class PostPreviewEmbed {
     }
 
     public int hashCode() {
-        int i10 = ((((((((((((ChannelId.m542hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m542hashCodeimpl(this.threadId)) * 31) + MessageId.m568hashCodeimpl(this.messageId)) * 31) + GuildId.m555hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
+        int i10 = ((((((((((((ChannelId.m551hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m551hashCodeimpl(this.threadId)) * 31) + MessageId.m577hashCodeimpl(this.messageId)) * 31) + GuildId.m564hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
         String str = this.subtitle;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -274,10 +274,10 @@ public final class PostPreviewEmbed {
     }
 
     public String toString() {
-        String str = ChannelId.m544toStringimpl(this.parentChannelId);
-        String str2 = ChannelId.m544toStringimpl(this.threadId);
-        String str3 = MessageId.m569toStringimpl(this.messageId);
-        String str4 = GuildId.m557toStringimpl(this.guildId);
+        String str = ChannelId.m553toStringimpl(this.parentChannelId);
+        String str2 = ChannelId.m553toStringimpl(this.threadId);
+        String str3 = MessageId.m578toStringimpl(this.messageId);
+        String str4 = GuildId.m566toStringimpl(this.guildId);
         String str5 = this.title;
         String str6 = this.ctaText;
         StructurableText structurableText = this.footer;

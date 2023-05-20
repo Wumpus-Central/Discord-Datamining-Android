@@ -105,7 +105,7 @@ public final class MarkdownRules {
                 r10 = 2
                 java.lang.String r9 = r9.group(r10)
                 if (r9 == 0) goto L_0x006f
-                java.lang.CharSequence r9 = ri.l.V0(r9)
+                java.lang.CharSequence r9 = nj.l.V0(r9)
                 java.lang.String r2 = r9.toString()
                 if (r2 == 0) goto L_0x006f
                 char[] r3 = new char[r1]
@@ -116,7 +116,7 @@ public final class MarkdownRules {
                 r5 = 0
                 r6 = 6
                 r7 = 0
-                java.util.List r9 = ri.l.y0(r2, r3, r4, r5, r6, r7)
+                java.util.List r9 = nj.l.y0(r2, r3, r4, r5, r6, r7)
                 goto L_0x0070
             L_0x006f:
                 r9 = 0

@@ -12,6 +12,9 @@ import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.Map;
+import jg.t;
+import jg.x;
+import kg.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -23,10 +26,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.f2;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
-import nf.t;
-import nf.x;
-import of.v;
-import tf.d;
+import pg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -66,7 +66,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -85,7 +85,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                     imageView = this.this$0.imageView;
                     imageView.setImageBitmap(this.$bitmap);
                 }
-                return Unit.f22036a;
+                return Unit.f22076a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -114,7 +114,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -127,7 +127,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 LocalImageThumbnailView localImageThumbnailView = this.this$0;
                 simpleDraweeView = localImageThumbnailView.simpleDraweeView;
                 localImageThumbnailView.loadDefaultBitmap(simpleDraweeView, this.$uri);
-                return Unit.f22036a;
+                return Unit.f22076a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -149,7 +149,7 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -221,6 +221,6 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
                 return d10;
             }
         }
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 }

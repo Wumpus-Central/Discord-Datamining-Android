@@ -1,7 +1,7 @@
 package com.discord.chat.reactevents;
 
-import bj.n1;
 import co.discord.media_engine.a;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.chat.bridge.botuikit.ChannelSelectComponent;
 import com.discord.chat.bridge.botuikit.ComponentEmoji;
 import com.discord.chat.bridge.botuikit.SearchableSelectComponent;
@@ -21,6 +21,7 @@ import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import java.util.ArrayList;
 import java.util.List;
+import jg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -31,11 +32,11 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import nf.x;
-import yi.f;
+import uj.f;
+import xj.n1;
 
-@f
 @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 -2\u00020\u0001:\u0002,-B8\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000bø\u0001\u0000¢\u0006\u0002\u0010\fB \u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\tø\u0001\u0000¢\u0006\u0002\u0010\rJ\u0019\u0010\u0015\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0016\u0010\u0011J\t\u0010\u0017\u001a\u00020\u0007HÆ\u0003J\t\u0010\u0018\u001a\u00020\tHÆ\u0003J4\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\tHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001a\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\b\u0010!\u001a\u00020\"H\u0016J\t\u0010#\u001a\u00020$HÖ\u0001J!\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00002\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+HÇ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006."}, d2 = {"Lcom/discord/chat/reactevents/TapSelectActionComponent;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", "messageId", "Lcom/discord/primitives/MessageId;", "messageFlags", "", "selectionActionComponent", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;JLcom/discord/chat/bridge/botuikit/SelectComponent;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;JLcom/discord/chat/bridge/botuikit/SelectComponent;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageFlags", "()J", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getSelectionActionComponent", "()Lcom/discord/chat/bridge/botuikit/SelectComponent;", "component1", "component1-3Eiw7ao", "component2", "component3", "copy", "copy-u7_MRrM", "(Ljava/lang/String;JLcom/discord/chat/bridge/botuikit/SelectComponent;)Lcom/discord/chat/reactevents/TapSelectActionComponent;", "equals", "", "other", "", "hashCode", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public final class TapSelectActionComponent implements ReactEvent {
     public static final Companion Companion = new Companion(null);
@@ -76,7 +77,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ TapSelectActionComponent m395copyu7_MRrM$default(TapSelectActionComponent tapSelectActionComponent, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
+    public static /* synthetic */ TapSelectActionComponent m396copyu7_MRrM$default(TapSelectActionComponent tapSelectActionComponent, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapSelectActionComponent.messageId;
         }
@@ -86,20 +87,20 @@ public final class TapSelectActionComponent implements ReactEvent {
         if ((i10 & 4) != 0) {
             selectComponent = tapSelectActionComponent.selectionActionComponent;
         }
-        return tapSelectActionComponent.m397copyu7_MRrM(str, j10, selectComponent);
+        return tapSelectActionComponent.m398copyu7_MRrM(str, j10, selectComponent);
     }
 
     public static final void write$Self(TapSelectActionComponent self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.t(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m563boximpl(self.messageId));
+        output.z(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.messageId));
         output.E(serialDesc, 1, self.messageFlags);
-        output.t(serialDesc, 2, SelectComponent.Companion.serializer(), self.selectionActionComponent);
+        output.z(serialDesc, 2, SelectComponent.Companion.serializer(), self.selectionActionComponent);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m396component13Eiw7ao() {
+    public final String m397component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -112,7 +113,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final TapSelectActionComponent m397copyu7_MRrM(String messageId, long j10, SelectComponent selectionActionComponent) {
+    public final TapSelectActionComponent m398copyu7_MRrM(String messageId, long j10, SelectComponent selectionActionComponent) {
         q.g(messageId, "messageId");
         q.g(selectionActionComponent, "selectionActionComponent");
         return new TapSelectActionComponent(messageId, j10, selectionActionComponent, null);
@@ -126,7 +127,7 @@ public final class TapSelectActionComponent implements ReactEvent {
             return false;
         }
         TapSelectActionComponent tapSelectActionComponent = (TapSelectActionComponent) obj;
-        return MessageId.m567equalsimpl0(this.messageId, tapSelectActionComponent.messageId) && this.messageFlags == tapSelectActionComponent.messageFlags && q.b(this.selectionActionComponent, tapSelectActionComponent.selectionActionComponent);
+        return MessageId.m576equalsimpl0(this.messageId, tapSelectActionComponent.messageId) && this.messageFlags == tapSelectActionComponent.messageFlags && q.b(this.selectionActionComponent, tapSelectActionComponent.selectionActionComponent);
     }
 
     public final long getMessageFlags() {
@@ -134,7 +135,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m398getMessageId3Eiw7ao() {
+    public final String m399getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -143,7 +144,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((MessageId.m568hashCodeimpl(this.messageId) * 31) + a.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
+        return (((MessageId.m577hashCodeimpl(this.messageId) * 31) + a.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -190,7 +191,7 @@ public final class TapSelectActionComponent implements ReactEvent {
         }
         int i10 = 3;
         Pair[] pairArr = new Pair[3];
-        pairArr[0] = x.a("messageId", MessageId.m569toStringimpl(this.messageId));
+        pairArr[0] = x.a("messageId", MessageId.m578toStringimpl(this.messageId));
         pairArr[1] = x.a("messageFlags", Double.valueOf(this.messageFlags));
         Pair[] pairArr2 = new Pair[13];
         pairArr2[0] = x.a("selectedOptions", readableNativeArray);
@@ -215,7 +216,7 @@ public final class TapSelectActionComponent implements ReactEvent {
             if (emoji != null) {
                 Pair[] pairArr4 = new Pair[i10];
                 pairArr4[0] = x.a("id", emoji.getId());
-                pairArr4[1] = x.a("name", emoji.getName());
+                pairArr4[1] = x.a(ZeroconfModule.KEY_SERVICE_NAME, emoji.getName());
                 c10 = 2;
                 pairArr4[2] = x.a("src", emoji.getSrc());
                 writableNativeMap = NativeMapExtensionsKt.nativeMapOf(pairArr4);
@@ -238,7 +239,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(this.messageId);
+        String str = MessageId.m578toStringimpl(this.messageId);
         long j10 = this.messageFlags;
         SelectComponent selectComponent = this.selectionActionComponent;
         return "TapSelectActionComponent(messageId=" + str + ", messageFlags=" + j10 + ", selectionActionComponent=" + selectComponent + ")";

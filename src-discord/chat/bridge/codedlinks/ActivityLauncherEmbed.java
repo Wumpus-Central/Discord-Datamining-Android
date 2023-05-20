@@ -7,10 +7,10 @@ import kotlin.Metadata;
 /* loaded from: classes5.dex */
 public interface ActivityLauncherEmbed {
     /* renamed from: getApplicationId-VavddsQ  reason: not valid java name */
-    long mo32getApplicationIdVavddsQ();
+    long mo33getApplicationIdVavddsQ();
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    long mo33getChannelIdo4g7jtM();
+    long mo34getChannelIdo4g7jtM();
 
     String getDescription();
 

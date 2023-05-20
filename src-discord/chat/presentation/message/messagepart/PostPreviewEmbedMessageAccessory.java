@@ -25,9 +25,9 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ PostPreviewEmbedMessageAccessory m263copyu7_MRrM$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, int i11, Object obj) {
+    public static /* synthetic */ PostPreviewEmbedMessageAccessory m264copyu7_MRrM$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = postPreviewEmbedMessageAccessory.mo203getMessageId3Eiw7ao();
+            str = postPreviewEmbedMessageAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             postPreviewEmbed = postPreviewEmbedMessageAccessory.postPreviewEmbed;
@@ -35,12 +35,12 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             i10 = postPreviewEmbedMessageAccessory.index;
         }
-        return postPreviewEmbedMessageAccessory.m265copyu7_MRrM(str, postPreviewEmbed, i10);
+        return postPreviewEmbedMessageAccessory.m266copyu7_MRrM(str, postPreviewEmbed, i10);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m264component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m265component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final PostPreviewEmbed component2() {
@@ -52,7 +52,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final PostPreviewEmbedMessageAccessory m265copyu7_MRrM(String messageId, PostPreviewEmbed postPreviewEmbed, int i10) {
+    public final PostPreviewEmbedMessageAccessory m266copyu7_MRrM(String messageId, PostPreviewEmbed postPreviewEmbed, int i10) {
         q.g(messageId, "messageId");
         q.g(postPreviewEmbed, "postPreviewEmbed");
         return new PostPreviewEmbedMessageAccessory(messageId, postPreviewEmbed, i10, null);
@@ -66,7 +66,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
             return false;
         }
         PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index;
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index;
     }
 
     public final int getIndex() {
@@ -75,7 +75,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -84,11 +84,11 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.postPreviewEmbed.hashCode()) * 31) + this.index;
+        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.postPreviewEmbed.hashCode()) * 31) + this.index;
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         PostPreviewEmbed postPreviewEmbed = this.postPreviewEmbed;
         int i10 = this.index;
         return "PostPreviewEmbedMessageAccessory(messageId=" + str + ", postPreviewEmbed=" + postPreviewEmbed + ", index=" + i10 + ")";

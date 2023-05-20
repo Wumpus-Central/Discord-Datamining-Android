@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.net.Uri;
 import java.io.File;
 import java.io.InputStream;
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -12,8 +13,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import nf.t;
-import tf.d;
+import pg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -40,7 +40,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
                 try {
                     q.f(inputStream, "inputStream");
                     FileUtilsKt.writeTo(inputStream, file);
-                    Unit unit = Unit.f22036a;
+                    Unit unit = Unit.f22076a;
                     th = null;
                 } finally {
                     try {

@@ -42,13 +42,13 @@ import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.ArrayList;
 import java.util.List;
+import jg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import nf.x;
 
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u001b\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007J\u001e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\n0\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0003\u001a\u00020\u001cH\u0002J\u001c\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u000f0\u001e2\u0006\u0010 \u001a\u00020!H\u0002J\u000e\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%J \u0010&\u001a\u00020#2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0003\u001a\u00020\u001c2\b\b\u0002\u0010'\u001a\u00020(R\u001e\u0010\b\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\b\u0012\u0004\u0012\u00020\n`\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\u00020\u00148VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0015\u0010\u0016R\u000e\u0010\u0017\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006)"}, d2 = {"Lcom/discord/chat/presentation/message/system/SystemMessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "accessories", "Ljava/util/ArrayList;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "Lkotlin/collections/ArrayList;", "binding", "Lcom/discord/chat/databinding/SystemMessageViewBinding;", "greenIconColor", "", "normalIconColor", "pinkIconColor", "redIconColor", "spineOriginView", "Landroid/view/View;", "getSpineOriginView", "()Landroid/view/View;", "warnIconColor", "generateMessageAccessories", "", "message", "Lcom/discord/chat/bridge/Message;", "Lcom/discord/chat/presentation/root/MessageContext;", "getIconAndColor", "Lkotlin/Pair;", "Lcom/discord/react_asset_fetcher/ReactAsset;", "messageType", "Lcom/discord/chat/bridge/MessageType;", "setAccessoriesRecycledViewPool", "", "recycledViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "setMessage", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
@@ -203,18 +203,18 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         StructurableText content = message.getContent();
         boolean z10 = false;
         if (content != null) {
-            this.accessories.add(new MessageContentAccessory(message.m16getId3Eiw7ao(), content, MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), message.getTimestamp() != null ? 0 : getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), ThemeManagerKt.getTheme().getTextNormal(), ThemeManagerKt.getTheme().getTextNormal(), DiscordFont.PrimaryNormal, 16, true, intValue, null, null, null, 24576, null));
+            this.accessories.add(new MessageContentAccessory(message.m17getId3Eiw7ao(), content, MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), message.getTimestamp() != null ? 0 : getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), ThemeManagerKt.getTheme().getTextNormal(), ThemeManagerKt.getTheme().getTextNormal(), DiscordFont.PrimaryNormal, 16, true, intValue, null, null, null, 24576, null));
         }
         String timestamp = message.getTimestamp();
         if (timestamp != null) {
-            this.accessories.add(new TimestampMessageAccessory(message.m16getId3Eiw7ao(), timestamp, ThemeManagerKt.getTheme().getTextMuted(), DiscordFont.PrimaryMedium, null));
+            this.accessories.add(new TimestampMessageAccessory(message.m17getId3Eiw7ao(), timestamp, ThemeManagerKt.getTheme().getTextMuted(), DiscordFont.PrimaryMedium, null));
         }
         Integer totalMonthsSubscribed = message.getTotalMonthsSubscribed();
         if (totalMonthsSubscribed == null || totalMonthsSubscribed.intValue() > 1) {
             message2 = message;
         } else {
             ArrayList<MessageAccessory> arrayList = this.accessories;
-            String str = message.m16getId3Eiw7ao();
+            String str = message.m17getId3Eiw7ao();
             String username = message.getUsername();
             Context context = this.binding.getRoot().getContext();
             q.f(context, "binding.root.context");
@@ -232,15 +232,15 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
             z10 = true;
         }
         if (z10) {
-            this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
+            this.accessories.add(new ReactionsMessageAccessory(message.m17getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();
         if (threadEmbed != null) {
-            this.accessories.add(new ThreadEmbedMessageAccessory(message.m16getId3Eiw7ao(), threadEmbed, null));
+            this.accessories.add(new ThreadEmbedMessageAccessory(message.m17getId3Eiw7ao(), threadEmbed, null));
         }
         EphemeralIndication ephemeralIndication = message.getEphemeralIndication();
         if (ephemeralIndication != null) {
-            this.accessories.add(new EphemeralIndicationMessageAccessory(message.m16getId3Eiw7ao(), ephemeralIndication, null));
+            this.accessories.add(new EphemeralIndicationMessageAccessory(message.m17getId3Eiw7ao(), ephemeralIndication, null));
         }
         return this.accessories;
     }
@@ -311,7 +311,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m572boximpl(message.m17getId3Eiw7ao()), ChannelId.m546boximpl(message.m15getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }
@@ -351,7 +351,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.f(simpleDraweeView2, "binding.icon");
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(intValue));
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, context);
-        this.binding.accessoriesView.m198setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
+        this.binding.accessoriesView.m199setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null);
         MessageAccessoriesView messageAccessoriesView = this.binding.accessoriesView;
         q.f(messageAccessoriesView, "binding.accessoriesView");
         if (!generateMessageAccessories.isEmpty()) {

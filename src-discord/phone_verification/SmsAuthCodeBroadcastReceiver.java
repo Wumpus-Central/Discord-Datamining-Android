@@ -105,7 +105,7 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
                 status = null;
             }
             if (status != null) {
-                num = Integer.valueOf(status.r());
+                num = Integer.valueOf(status.p());
             } else {
                 num = null;
             }
@@ -117,7 +117,7 @@ public final class SmsAuthCodeBroadcastReceiver extends BroadcastReceiver {
             } else {
                 Log log = Log.INSTANCE;
                 if (status != null) {
-                    num2 = Integer.valueOf(status.r());
+                    num2 = Integer.valueOf(status.p());
                 }
                 Log.i$default(log, TAG, "Unexpected status code while waiting for SMS code: " + num2, (Throwable) null, 4, (Object) null);
             }

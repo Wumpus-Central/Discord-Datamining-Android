@@ -29,7 +29,7 @@ public final class MarkAsReadAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final MarkAsReadAction createFromParcel(Parcel parcel) {
             q.g(parcel, "parcel");
-            return new MarkAsReadAction(parcel.readString(), ((ChannelId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m546unboximpl(), ((MessageId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m571unboximpl(), null);
+            return new MarkAsReadAction(parcel.readString(), ((ChannelId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m555unboximpl(), ((MessageId) parcel.readParcelable(MarkAsReadAction.class.getClassLoader())).m580unboximpl(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -50,17 +50,17 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m474component2o4g7jtM() {
+    private final long m475component2o4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: component3-3Eiw7ao  reason: not valid java name */
-    private final String m475component33Eiw7ao() {
+    private final String m476component33Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-SHRpUJI$default  reason: not valid java name */
-    public static /* synthetic */ MarkAsReadAction m476copySHRpUJI$default(MarkAsReadAction markAsReadAction, String str, long j10, String str2, int i10, Object obj) {
+    public static /* synthetic */ MarkAsReadAction m477copySHRpUJI$default(MarkAsReadAction markAsReadAction, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = markAsReadAction.getTag();
         }
@@ -70,7 +70,7 @@ public final class MarkAsReadAction implements NotificationAction {
         if ((i10 & 4) != 0) {
             str2 = markAsReadAction.messageId;
         }
-        return markAsReadAction.m477copySHRpUJI(str, j10, str2);
+        return markAsReadAction.m478copySHRpUJI(str, j10, str2);
     }
 
     public final String component1() {
@@ -78,7 +78,7 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     /* renamed from: copy-SHRpUJI  reason: not valid java name */
-    public final MarkAsReadAction m477copySHRpUJI(String tag, long j10, String messageId) {
+    public final MarkAsReadAction m478copySHRpUJI(String tag, long j10, String messageId) {
         q.g(tag, "tag");
         q.g(messageId, "messageId");
         return new MarkAsReadAction(tag, j10, messageId, null);
@@ -97,7 +97,7 @@ public final class MarkAsReadAction implements NotificationAction {
             return false;
         }
         MarkAsReadAction markAsReadAction = (MarkAsReadAction) obj;
-        return q.b(getTag(), markAsReadAction.getTag()) && ChannelId.m541equalsimpl0(this.channelId, markAsReadAction.channelId) && MessageId.m567equalsimpl0(this.messageId, markAsReadAction.messageId);
+        return q.b(getTag(), markAsReadAction.getTag()) && ChannelId.m550equalsimpl0(this.channelId, markAsReadAction.channelId) && MessageId.m576equalsimpl0(this.messageId, markAsReadAction.messageId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -111,7 +111,7 @@ public final class MarkAsReadAction implements NotificationAction {
     }
 
     public int hashCode() {
-        return (((getTag().hashCode() * 31) + ChannelId.m542hashCodeimpl(this.channelId)) * 31) + MessageId.m568hashCodeimpl(this.messageId);
+        return (((getTag().hashCode() * 31) + ChannelId.m551hashCodeimpl(this.channelId)) * 31) + MessageId.m577hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -120,8 +120,8 @@ public final class MarkAsReadAction implements NotificationAction {
         q.g(intent, "intent");
         HeadlessTasks.Companion companion = HeadlessTasks.Companion;
         Bundle bundle = new Bundle();
-        bundle.putString("channelId", ChannelId.m544toStringimpl(this.channelId));
-        bundle.putString("messageId", MessageId.m569toStringimpl(this.messageId));
+        bundle.putString("channelId", ChannelId.m553toStringimpl(this.channelId));
+        bundle.putString("messageId", MessageId.m578toStringimpl(this.messageId));
         HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "MarkAsRead", 0L, false, bundle, true, 12, null);
     }
 
@@ -137,8 +137,8 @@ public final class MarkAsReadAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m544toStringimpl(this.channelId);
-        String str2 = MessageId.m569toStringimpl(this.messageId);
+        String str = ChannelId.m553toStringimpl(this.channelId);
+        String str2 = MessageId.m578toStringimpl(this.messageId);
         return "MarkAsReadAction(tag=" + tag + ", channelId=" + str + ", messageId=" + str2 + ")";
     }
 
@@ -146,7 +146,7 @@ public final class MarkAsReadAction implements NotificationAction {
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m537boximpl(this.channelId), i10);
-        out.writeParcelable(MessageId.m563boximpl(this.messageId), i10);
+        out.writeParcelable(ChannelId.m546boximpl(this.channelId), i10);
+        out.writeParcelable(MessageId.m572boximpl(this.messageId), i10);
     }
 }

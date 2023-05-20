@@ -12,7 +12,7 @@ public final class CallSystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public CallSystemMessageItem(Message message) {
-        super(message.m16getId3Eiw7ao(), null);
+        super(message.m17getId3Eiw7ao(), null);
         q.g(message, "message");
         this.message = message;
         if (!MessageKt.isCallMessage(message)) {

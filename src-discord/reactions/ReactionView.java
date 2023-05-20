@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.SetTextSizeSpKt;
 import com.discord.emoji.RenderableEmoji;
 import com.discord.fonts.DiscordFont;
@@ -67,7 +68,7 @@ public final class ReactionView extends LinearLayout {
         }
     }
 
-    @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\b\u0010\u0015\u001a\u00020\u0016H\u0016R\u0014\u0010\u0002\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0016\u0010\n\u001a\u0004\u0018\u00010\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\tR\u0014\u0010\f\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\tR\u0014\u0010\u000e\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\tR\u0014\u0010\u0010\u001a\u00020\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012R\u0012\u0010\u0013\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\t¨\u0006\u0017"}, d2 = {"Lcom/discord/reactions/ReactionView$Emoji;", "", "animated", "", "getAnimated", "()Ljava/lang/Boolean;", "displayName", "", "getDisplayName", "()Ljava/lang/String;", "emojiId", "getEmojiId", "id", "getId", "name", "getName", "shouldAnimate", "getShouldAnimate", "()Z", "src", "getSrc", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\b\u0010\u0015\u001a\u00020\u0016H\u0016R\u0014\u0010\u0002\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0016\u0010\n\u001a\u0004\u0018\u00010\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\tR\u0014\u0010\f\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\tR\u0014\u0010\u000e\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\tR\u0014\u0010\u0010\u001a\u00020\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012R\u0012\u0010\u0013\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\t¨\u0006\u0017"}, d2 = {"Lcom/discord/reactions/ReactionView$Emoji;", "", "animated", "", "getAnimated", "()Ljava/lang/Boolean;", "displayName", "", "getDisplayName", "()Ljava/lang/String;", "emojiId", "getEmojiId", "id", "getId", ZeroconfModule.KEY_SERVICE_NAME, "getName", "shouldAnimate", "getShouldAnimate", "()Z", "src", "getSrc", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes7.dex */
     public interface Emoji {
 
@@ -88,7 +89,7 @@ public final class ReactionView extends LinearLayout {
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:4:0x0006, code lost:
-                r0 = ri.t.o(r0);
+                r0 = nj.t.o(r0);
              */
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
@@ -98,7 +99,7 @@ public final class ReactionView extends LinearLayout {
                 /*
                     java.lang.String r0 = r5.getId()
                     if (r0 == 0) goto L_0x0021
-                    java.lang.Long r0 = ri.l.o(r0)
+                    java.lang.Long r0 = nj.l.o(r0)
                     if (r0 == 0) goto L_0x0021
                     long r0 = r0.longValue()
                     com.discord.emoji.RenderableEmoji$Companion r2 = com.discord.emoji.RenderableEmoji.Companion

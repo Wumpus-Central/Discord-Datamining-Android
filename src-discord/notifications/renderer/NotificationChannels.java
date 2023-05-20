@@ -1,5 +1,6 @@
 package com.discord.notifications.renderer;
 
+import ah.j;
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.net.Uri;
@@ -9,19 +10,18 @@ import com.discord.crash_reporting.CrashReporting;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import eg.j;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jg.x;
+import kg.u;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import nf.x;
-import of.u;
 
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001:\u0002\u001f B\t\b\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J*\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002JT\u0010\u0015\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u001c\b\u0002\u0010\u0014\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0002J\"\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J\u001a\u0010\u0019\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J6\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007J\n\u0010\u001c\u001a\u00020\b*\u00020\u001b¨\u0006!"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getLegacyNotificationChannel", "", "", "localizedGroupNames", "", "Landroidx/core/app/p0;", "createNotificationChannelGroups", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "legacyChannel", "builder", "configureCallChannel", "configureMediaChannel", "init", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "<init>", "()V", "Category", "ChannelGroup", "notification_renderer_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes4.dex */
@@ -65,7 +65,7 @@ public final class NotificationChannels {
         private final ChannelGroup group;
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f7497id;
+        private final String f7996id;
         private final int importance;
         private final String legacyId;
 
@@ -286,7 +286,7 @@ public final class NotificationChannels {
         }
 
         Category(String str, int i10, ChannelGroup channelGroup, String str2) {
-            this.f7497id = str;
+            this.f7996id = str;
             this.importance = i10;
             this.group = channelGroup;
             this.legacyId = str2;
@@ -297,7 +297,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7497id;
+            return this.f7996id;
         }
 
         public final int getImportance() {
@@ -326,7 +326,7 @@ public final class NotificationChannels {
         private final String groupId;
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f7498id;
+        private final String f7997id;
 
         @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup$Companion;", "", "()V", "defaultLabel", "", "id", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
         /* loaded from: classes4.dex */
@@ -357,7 +357,7 @@ public final class NotificationChannels {
         }
 
         ChannelGroup(String str, String str2) {
-            this.f7498id = str;
+            this.f7997id = str;
             this.groupId = str2;
         }
 
@@ -366,7 +366,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7498id;
+            return this.f7997id;
         }
     }
 
@@ -439,7 +439,7 @@ public final class NotificationChannels {
             java.lang.Object r6 = r11.get(r6)
             java.lang.CharSequence r6 = (java.lang.CharSequence) r6
             if (r6 == 0) goto L_0x0030
-            boolean r6 = ri.l.w(r6)
+            boolean r6 = nj.l.w(r6)
             if (r6 == 0) goto L_0x002e
             goto L_0x0030
         L_0x002e:
@@ -530,7 +530,7 @@ public final class NotificationChannels {
             java.lang.CharSequence r5 = (java.lang.CharSequence) r5
             r1 = 1
             if (r5 == 0) goto L_0x0031
-            boolean r5 = ri.l.w(r5)
+            boolean r5 = nj.l.w(r5)
             if (r5 == 0) goto L_0x002f
             goto L_0x0031
         L_0x002f:

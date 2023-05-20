@@ -1,12 +1,12 @@
 package com.discord.analytics;
 
 import com.android.installreferrer.api.InstallReferrerClient;
+import jg.s;
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.s;
-import nf.s;
-import nf.t;
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -23,19 +23,19 @@ final class InstallReferrerModuleKt$await$2$1 extends s implements Function1<Thr
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Throwable th2) {
         InstallReferrerClient installReferrerClient = this.$this_await;
         try {
-            s.a aVar = nf.s.f24600l;
+            s.a aVar = jg.s.f21283l;
             installReferrerClient.a();
-            nf.s.b(Unit.f22036a);
+            jg.s.b(Unit.f22076a);
         } catch (Throwable th3) {
-            s.a aVar2 = nf.s.f24600l;
-            nf.s.b(t.a(th3));
+            s.a aVar2 = jg.s.f21283l;
+            jg.s.b(t.a(th3));
         }
     }
 }

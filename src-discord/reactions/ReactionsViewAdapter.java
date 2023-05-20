@@ -277,7 +277,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             addReactionView2.setLayoutParams(cVar);
             viewHolder = new AddBurstReactionViewHolder(addReactionView2);
         } else {
-            throw new nf.q();
+            throw new jg.q();
         }
         themeManager.setThemeOverride(themeOverride);
         return viewHolder;

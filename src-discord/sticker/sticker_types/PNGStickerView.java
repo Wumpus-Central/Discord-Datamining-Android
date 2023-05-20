@@ -10,7 +10,7 @@ import com.facebook.react.uimanager.ViewDefaults;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
-import l4.c;
+import o4.c;
 
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J/\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\u0010\r\u001a\u0004\u0018\u00010\f2\u0006\u0010\u000e\u001a\u00020\u000f¢\u0006\u0002\u0010\u0010J'\u0010\u0011\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\u0010\r\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\u0012R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/discord/sticker/sticker_types/PNGStickerView;", "Lcom/facebook/drawee/view/SimpleDraweeView;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", ReactTextInputShadowNode.PROP_PLACEHOLDER, "Landroid/graphics/drawable/ShapeDrawable;", "loadGifImage", "", "url", "", "widthDp", "", "heightDp", "animate", "", "(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Z)V", "loadImage", "(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V", "sticker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes6.dex */
@@ -48,7 +48,7 @@ public final class PNGStickerView extends SimpleDraweeView {
         int i10;
         q.g(url, "url");
         setImageURI(url);
-        getHierarchy().t(ScalingUtils.ScaleType.f7701e);
+        getHierarchy().t(ScalingUtils.ScaleType.f8200e);
         getHierarchy().z(this.placeholder);
         int i11 = ViewDefaults.NUMBER_OF_LINES;
         if (num != null) {

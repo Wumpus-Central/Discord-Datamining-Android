@@ -18,11 +18,11 @@ import io.sentry.m3;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
+import jg.f;
+import kg.v;
 import kotlin.Metadata;
 import kotlin.collections.i;
 import kotlin.jvm.internal.q;
-import nf.f;
-import of.v;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u0003\n\u0002\u0010\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001#B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J0\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00042\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0013J\u001a\u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\n\u0010\u0016\u001a\u00060\u0017j\u0002`\u0018J \u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u00042\b\b\u0002\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\u001c\u001a\u00020\u001dJ\u0006\u0010\u001e\u001a\u00020\u001dJ\u000e\u0010\u001f\u001a\u00020\f2\u0006\u0010 \u001a\u00020!J\u0006\u0010\"\u001a\u00020\u0007R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R$\u0010\b\u001a\u0004\u0018\u00010\u00072\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007@BX\u0086\u000e¢\u0006\n\n\u0002\u0010\n\u001a\u0004\b\b\u0010\t¨\u0006$"}, d2 = {"Lcom/discord/crash_reporting/CrashReporting;", "", "()V", "TAG_APP_VERSION", "", "TAG_BUILD_NUMBER", "<set-?>", "", "isCrashedLastRun", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "addBreadcrumb", "", "breadcrumbMessage", "breadcrumbData", "", "breadcrumbCategory", "captureException", "throwable", "", "captureMessage", "tag", "exception", "Ljava/lang/Exception;", "Lkotlin/Exception;", "message", "errorLevel", "Lcom/discord/crash_reporting/CrashReporting$ErrorLevel;", "getSampleRate", "", "getTracingSampleRate", "init", "context", "Landroid/content/Context;", "isProductionChannel", "ErrorLevel", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
@@ -94,7 +94,7 @@ public final class CrashReporting {
         } else if (i10 == 2) {
             l3Var = l3.WARNING;
         } else {
-            throw new nf.q();
+            throw new jg.q();
         }
         j2.h(message, l3Var);
     }
@@ -106,7 +106,7 @@ public final class CrashReporting {
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@180.4.0-2+180204");
+        options.setRelease("discord_android@180.9.0-2+180209");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -114,7 +114,7 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("4666e759-9d4e-44be-9d52-75dabdd0c404");
+        options.setProguardUuid("b943fb62-b452-4541-99e2-57157ee601ad");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
         options.setBeforeSend(new m3.b() { // from class: com.discord.crash_reporting.a
@@ -162,7 +162,7 @@ public final class CrashReporting {
             kotlin.jvm.internal.q.f(r2, r4)
             java.lang.String r4 = "JavascriptException"
             r5 = 2
-            boolean r2 = ri.l.M(r2, r4, r1, r5, r0)
+            boolean r2 = nj.l.M(r2, r4, r1, r5, r0)
             if (r2 != r3) goto L_0x0043
             r2 = r3
             goto L_0x0044
@@ -230,7 +230,7 @@ public final class CrashReporting {
 
     public final double getTracingSampleRate() {
         boolean M;
-        M = ri.v.M(ClientInfo.INSTANCE.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
+        M = nj.v.M(ClientInfo.INSTANCE.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
         return M ? 0.05d : 0.0d;
     }
 
@@ -248,7 +248,7 @@ public final class CrashReporting {
             if (isProductionChannel()) {
                 String DEVICE = Build.DEVICE;
                 q.f(DEVICE, "DEVICE");
-                M = ri.v.M(DEVICE, "vivo", false, 2, null);
+                M = nj.v.M(DEVICE, "vivo", false, 2, null);
                 if (M) {
                     return;
                 }
@@ -271,11 +271,11 @@ public final class CrashReporting {
         boolean M;
         boolean M2;
         ClientInfo clientInfo = ClientInfo.INSTANCE;
-        M = ri.v.M(clientInfo.getReleaseChannel(), "beta", false, 2, null);
+        M = nj.v.M(clientInfo.getReleaseChannel(), "beta", false, 2, null);
         if (M) {
             return false;
         }
-        M2 = ri.v.M(clientInfo.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
+        M2 = nj.v.M(clientInfo.getReleaseChannel(), BuildConfig.FLAVOR, false, 2, null);
         return !M2;
     }
 

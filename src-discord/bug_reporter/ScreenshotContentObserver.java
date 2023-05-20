@@ -17,8 +17,8 @@ import kotlin.collections.e;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import ri.u;
-import ri.v;
+import nj.u;
+import nj.v;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0004\u0018\u0000 \u001c2\u00020\u0001:\u0002\u001c\u001dB\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\u0002\u0010\u0007J\u0006\u0010\f\u001a\u00020\u0006J\u0006\u0010\r\u001a\u00020\u0006J\u0013\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000b0\u000fH\u0002¢\u0006\u0002\u0010\u0010J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0003J\u001a\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0016\u001a\u00020\u00172\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0016J\u0010\u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0014\u0010\u0019\u001a\u00020\u0017*\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001aH\u0002R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/discord/bug_reporter/ScreenshotContentObserver;", "Landroid/database/ContentObserver;", "contentResolver", "Landroid/content/ContentResolver;", "onScreenshot", "Lkotlin/Function0;", "", "(Landroid/content/ContentResolver;Lkotlin/jvm/functions/Function0;)V", "getContentResolver", "()Landroid/content/ContentResolver;", "lastProcessedPath", "", "connect", "disconnect", "getProjection", "", "()[Ljava/lang/String;", "getScreenshotData", "Lcom/discord/bug_reporter/ScreenshotContentObserver$ScreenshotData;", "uri", "Landroid/net/Uri;", "onChange", "selfChange", "", "process", "isWithinCurrentTimeWindow", "", "window", "Companion", "ScreenshotData", "bug_reporter_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -60,7 +60,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f7177id;
+        private final long f7675id;
         private final String path;
         private final String relativePath;
         private final Uri uri;
@@ -69,7 +69,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             q.g(fileName, "fileName");
             q.g(relativePath, "relativePath");
             q.g(uri, "uri");
-            this.f7177id = j10;
+            this.f7675id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -78,7 +78,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f7177id;
+            return this.f7675id;
         }
 
         public final String component2() {
@@ -112,7 +112,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
                 return false;
             }
             ScreenshotData screenshotData = (ScreenshotData) obj;
-            return this.f7177id == screenshotData.f7177id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+            return this.f7675id == screenshotData.f7675id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
         }
 
         public final long getDateAdded() {
@@ -124,7 +124,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f7177id;
+            return this.f7675id;
         }
 
         public final String getPath() {
@@ -140,11 +140,11 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((a.a(this.f7177id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + a.a(this.dateAdded);
+            return (((((((a.a(this.f7675id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + a.a(this.dateAdded);
         }
 
         public String toString() {
-            long j10 = this.f7177id;
+            long j10 = this.f7675id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;

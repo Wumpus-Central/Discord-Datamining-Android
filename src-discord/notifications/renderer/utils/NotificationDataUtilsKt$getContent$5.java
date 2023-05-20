@@ -1,5 +1,6 @@
 package com.discord.notifications.renderer.utils;
 
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.notifications.api.NotificationData;
 import com.discord.react_strings.RenderContext;
 import kotlin.Metadata;
@@ -23,12 +24,12 @@ final class NotificationDataUtilsKt$getContent$5 extends s implements Function1<
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(RenderContext i18nFormat) {
         q.g(i18nFormat, "$this$i18nFormat");
-        i18nFormat.getArgs().put("name", this.$this_getContent.getApplicationName());
+        i18nFormat.getArgs().put(ZeroconfModule.KEY_SERVICE_NAME, this.$this_getContent.getApplicationName());
     }
 }

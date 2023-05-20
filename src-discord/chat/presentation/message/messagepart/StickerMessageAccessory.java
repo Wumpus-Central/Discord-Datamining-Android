@@ -41,19 +41,19 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ StickerMessageAccessory m272copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
+    public static /* synthetic */ StickerMessageAccessory m273copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = stickerMessageAccessory.mo203getMessageId3Eiw7ao();
+            str = stickerMessageAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             sticker = stickerMessageAccessory.sticker;
         }
-        return stickerMessageAccessory.m274copyntcYbpo(str, sticker);
+        return stickerMessageAccessory.m275copyntcYbpo(str, sticker);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m273component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m274component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final Sticker component2() {
@@ -61,7 +61,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final StickerMessageAccessory m274copyntcYbpo(String messageId, Sticker sticker) {
+    public final StickerMessageAccessory m275copyntcYbpo(String messageId, Sticker sticker) {
         q.g(messageId, "messageId");
         q.g(sticker, "sticker");
         return new StickerMessageAccessory(messageId, sticker, null);
@@ -75,12 +75,12 @@ public final class StickerMessageAccessory extends MessageAccessory {
             return false;
         }
         StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), stickerMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.sticker, stickerMessageAccessory.sticker);
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), stickerMessageAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.sticker, stickerMessageAccessory.sticker);
     }
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -89,11 +89,11 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.sticker.hashCode();
+        return (MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.sticker.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         Sticker sticker = this.sticker;
         return "StickerMessageAccessory(messageId=" + str + ", sticker=" + sticker + ")";
     }

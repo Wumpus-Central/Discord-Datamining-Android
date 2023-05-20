@@ -27,9 +27,9 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ TimestampMessageAccessory m281copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
+    public static /* synthetic */ TimestampMessageAccessory m282copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = timestampMessageAccessory.mo203getMessageId3Eiw7ao();
+            str = timestampMessageAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             str2 = timestampMessageAccessory.timestamp;
@@ -40,12 +40,12 @@ public final class TimestampMessageAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             discordFont = timestampMessageAccessory.discordFont;
         }
-        return timestampMessageAccessory.m283copyAFFcxXc(str, str2, i10, discordFont);
+        return timestampMessageAccessory.m284copyAFFcxXc(str, str2, i10, discordFont);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m282component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m283component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final String component2() {
@@ -61,7 +61,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final TimestampMessageAccessory m283copyAFFcxXc(String messageId, String timestamp, int i10, DiscordFont discordFont) {
+    public final TimestampMessageAccessory m284copyAFFcxXc(String messageId, String timestamp, int i10, DiscordFont discordFont) {
         q.g(messageId, "messageId");
         q.g(timestamp, "timestamp");
         q.g(discordFont, "discordFont");
@@ -76,7 +76,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
             return false;
         }
         TimestampMessageAccessory timestampMessageAccessory = (TimestampMessageAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), timestampMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), timestampMessageAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
     }
 
     public final DiscordFont getDiscordFont() {
@@ -85,7 +85,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -98,11 +98,11 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.timestamp.hashCode()) * 31) + this.textColor) * 31) + this.discordFont.hashCode();
+        return (((((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.timestamp.hashCode()) * 31) + this.textColor) * 31) + this.discordFont.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         String str2 = this.timestamp;
         int i10 = this.textColor;
         DiscordFont discordFont = this.discordFont;

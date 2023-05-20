@@ -235,7 +235,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m183configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m184configureConnectionsRoleTaguESh2Cg(message.m14getAuthorIdwUX8bhU(), message.m16getGuildIdqOKuAAo(), ChannelId.m546boximpl(message.m15getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
                 q.f(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
@@ -287,18 +287,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void configureAuthor$lambda$28$lambda$26(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo150onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo151onTapAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m619unboximpl());
         }
     }
 
     public static final boolean configureAuthor$lambda$28$lambda$27(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() == null) {
+        if (message.m14getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo142onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
+        eventHandler.mo143onLongPressAvatarx5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m619unboximpl());
         return true;
     }
 
@@ -322,18 +322,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void configureAuthorClickListeners$lambda$4(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo168onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
+        if (message.m14getAuthorIdwUX8bhU() != null) {
+            eventHandler.mo169onTapUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m619unboximpl());
         }
     }
 
     public static final boolean configureAuthorClickListeners$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
-        if (message.m13getAuthorIdwUX8bhU() == null) {
+        if (message.m14getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo144onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m610unboximpl());
+        eventHandler.mo145onLongPressUsernamex5gers8(message.m17getId3Eiw7ao(), message.m14getAuthorIdwUX8bhU().m619unboximpl());
         return true;
     }
 
@@ -469,7 +469,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
         q.g(message, "$message");
         q.g(mediaType, "$mediaType");
-        function4.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        function4.invoke(MessageId.m572boximpl(message.m17getId3Eiw7ao()), ChannelId.m546boximpl(message.m15getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -522,13 +522,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
         q.g(onMessageTapped, "$onMessageTapped");
         q.g(message, "$message");
-        onMessageTapped.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()));
+        onMessageTapped.invoke(MessageId.m572boximpl(message.m17getId3Eiw7ao()), ChannelId.m546boximpl(message.m15getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
         q.g(it, "$it");
         q.g(message, "$message");
-        it.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()), ChannelId.m537boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+        it.invoke(MessageId.m572boximpl(message.m17getId3Eiw7ao()), ChannelId.m546boximpl(message.m15getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -605,7 +605,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.f(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m199configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m200configureExecutedCommandLdU2QRA(message.m17getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
@@ -631,7 +631,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, kVar);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
-        this.binding.accessoriesView.m198setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
+        this.binding.accessoriesView.m199setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
@@ -658,7 +658,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         } else if (i11 == 3 || i11 == 4) {
             i10 = 0;
         } else {
-            throw new nf.q();
+            throw new jg.q();
         }
         return Integer.valueOf(i10);
     }

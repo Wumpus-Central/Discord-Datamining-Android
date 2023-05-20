@@ -64,7 +64,7 @@ public final class SpoilerConfig {
     }
 
     public final void onReveal() {
-        this.onReveal.invoke(SpoilerIdentifier.m122boximpl(this.attributes.m119getIdentifierBq9X6Gg()));
+        this.onReveal.invoke(SpoilerIdentifier.m123boximpl(this.attributes.m120getIdentifierBq9X6Gg()));
     }
 
     public String toString() {

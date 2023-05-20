@@ -242,7 +242,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(part, "$part");
         q.g(this$0, "this$0");
         q.g(holder, "$holder");
-        this$0.m185onMediaClickedl3ndGo(holder, part.mo203getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m186onMediaClickedl3ndGo(holder, part.mo204getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -255,7 +255,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m176onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -268,7 +268,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        chatEventHandler.mo161onTapReactionu7_MRrM(str, null, Boolean.TRUE);
+        chatEventHandler.mo162onTapReactionu7_MRrM(str, null, Boolean.TRUE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -283,7 +283,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo154onTapFollowForumPostpfaIj0E(str, channelId.m546unboximpl());
+        chatEventHandler.mo155onTapFollowForumPostpfaIj0E(str, channelId.m555unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -296,10 +296,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        long j10 = channelId.m546unboximpl();
+        long j10 = channelId.m555unboximpl();
         GuildId guildId = this$0.guildId;
         q.d(guildId);
-        chatEventHandler.mo165onTapShareForumPostmgk6anA(j10, guildId.m559unboximpl());
+        chatEventHandler.mo166onTapShareForumPostmgk6anA(j10, guildId.m568unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -312,7 +312,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m176onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -327,7 +327,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo162onTapReactionOverflowpfaIj0E(str, channelId.m546unboximpl());
+        chatEventHandler.mo163onTapReactionOverflowpfaIj0E(str, channelId.m555unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -340,13 +340,13 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 q.y("eventHandler");
                 chatEventHandler = null;
             }
-            chatEventHandler.mo153onTapDismissMediaPostSharePrompt1xi1bu0(str);
+            chatEventHandler.mo154onTapDismissMediaPostSharePrompt1xi1bu0(str);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: onMediaClicked-l3ndG-o  reason: not valid java name */
-    public final void m185onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
+    public final void m186onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
         View itemView = messagePartViewHolder.itemView;
         q.f(itemView, "itemView");
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(itemView);
@@ -355,7 +355,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo155onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
+        chatEventHandler.mo156onTapImagea6FnOk(str, i10, str2, messagePartViewHolder.itemView.getWidth(), messagePartViewHolder.itemView.getHeight(), locationInWindow.x, locationInWindow.y, viewResizeMode, d10, num);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -418,7 +418,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (i11 == 4) {
                 return 27;
             }
-            throw new nf.q();
+            throw new jg.q();
         } else if (messageAccessory instanceof ThreadEmbedMessageAccessory) {
             return 9;
         } else {
@@ -476,7 +476,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (messageAccessory instanceof PostPreviewEmbedMessageAccessory) {
                 return 32;
             }
-            throw new nf.q();
+            throw new jg.q();
         }
     }
 
@@ -491,11 +491,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     @SuppressLint({"NotifyDataSetChanged"})
     /* renamed from: setItems-bo5iIEc  reason: not valid java name */
-    public final void m186setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
+    public final void m187setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
         q.g(messageId, "messageId");
         q.g(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m537boximpl(j10);
+        this.channelId = ChannelId.m546boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -650,9 +650,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler2);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str = messageAccessory.mo203getMessageId3Eiw7ao();
+            String str = messageAccessory.mo204getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m327bindoSm889w(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
+            ((ReactionsViewHolder) holder).m328bindoSm889w(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -797,9 +797,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             postPreviewEmbedViewHolder.bind(postPreviewEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$44(chatEventHandler24));
         } else {
-            throw new nf.q();
+            throw new jg.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f22036a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f22076a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

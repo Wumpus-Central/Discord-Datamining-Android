@@ -25,45 +25,45 @@ public interface ChatEventHandler {
     /* loaded from: classes5.dex */
     public static final class DefaultImpls {
         /* renamed from: onLinkClicked-u7_MRrM$default  reason: not valid java name */
-        public static /* synthetic */ void m173onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
+        public static /* synthetic */ void m174onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     str3 = null;
                 }
-                chatEventHandler.mo141onLinkClickedu7_MRrM(str, str2, str3);
+                chatEventHandler.mo142onLinkClickedu7_MRrM(str, str2, str3);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onLinkClicked-u7_MRrM");
         }
 
         /* renamed from: onTapButtonActionComponent-NkFJqEg$default  reason: not valid java name */
-        public static /* synthetic */ void m174onTapButtonActionComponentNkFJqEg$default(ChatEventHandler chatEventHandler, String str, long j10, String str2, long j11, int[] iArr, int i10, Object obj) {
+        public static /* synthetic */ void m175onTapButtonActionComponentNkFJqEg$default(ChatEventHandler chatEventHandler, String str, long j10, String str2, long j11, int[] iArr, int i10, Object obj) {
             if (obj == null) {
-                chatEventHandler.mo151onTapButtonActionComponentNkFJqEg(str, (i10 & 2) != 0 ? 0L : j10, str2, j11, iArr);
+                chatEventHandler.mo152onTapButtonActionComponentNkFJqEg(str, (i10 & 2) != 0 ? 0L : j10, str2, j11, iArr);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapButtonActionComponent-NkFJqEg");
         }
 
         /* renamed from: onTapReaction-u7_MRrM$default  reason: not valid java name */
-        public static /* synthetic */ void m175onTapReactionu7_MRrM$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
+        public static /* synthetic */ void m176onTapReactionu7_MRrM$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     bool = Boolean.FALSE;
                 }
-                chatEventHandler.mo161onTapReactionu7_MRrM(str, reaction, bool);
+                chatEventHandler.mo162onTapReactionu7_MRrM(str, reaction, bool);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapReaction-u7_MRrM");
         }
 
         /* renamed from: onTapSelectActionComponent-u7_MRrM$default  reason: not valid java name */
-        public static /* synthetic */ void m176onTapSelectActionComponentu7_MRrM$default(ChatEventHandler chatEventHandler, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
+        public static /* synthetic */ void m177onTapSelectActionComponentu7_MRrM$default(ChatEventHandler chatEventHandler, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 2) != 0) {
                     j10 = 0;
                 }
-                chatEventHandler.mo164onTapSelectActionComponentu7_MRrM(str, j10, selectComponent);
+                chatEventHandler.mo165onTapSelectActionComponentu7_MRrM(str, j10, selectComponent);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapSelectActionComponent-u7_MRrM");
@@ -82,20 +82,20 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onInitiateReply-pfaIj0E */
-        public void mo139onInitiateReplypfaIj0E(String messageId, long j10) {
+        public void mo140onInitiateReplypfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLinkClicked-ntcYbpo */
-        public void mo140onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
+        public void mo141onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
             q.g(messageId, "messageId");
             q.g(node, "node");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLinkClicked-u7_MRrM */
-        public void mo141onLinkClickedu7_MRrM(String messageId, String url, String str) {
+        public void mo142onLinkClickedu7_MRrM(String messageId, String url, String str) {
             q.g(messageId, "messageId");
             q.g(url, "url");
         }
@@ -107,7 +107,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressAvatar-x5gers8 */
-        public void mo142onLongPressAvatarx5gers8(String messageId, long j10) {
+        public void mo143onLongPressAvatarx5gers8(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -123,13 +123,13 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressReaction-Eqy5D80 */
-        public void mo143onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
+        public void mo144onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressUsername-x5gers8 */
-        public void mo144onLongPressUsernamex5gers8(String messageId, long j10) {
+        public void mo145onLongPressUsernamex5gers8(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -140,51 +140,51 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onStickerClicked-Ayv7vGE */
-        public void mo145onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo146onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
             q.g(sticker, "sticker");
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onStickerLongClicked-Ayv7vGE */
-        public void mo146onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo147onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
             q.g(sticker, "sticker");
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapActivityLauncherEmbed-uU1mFKc */
-        public void mo147onTapActivityLauncherEmbeduU1mFKc(long j10, long j11) {
+        public void mo148onTapActivityLauncherEmbeduU1mFKc(long j10, long j11) {
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAutoModerationActions-pfaIj0E */
-        public void mo148onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
+        public void mo149onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAutoModerationFeedback-pfaIj0E */
-        public void mo149onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
+        public void mo150onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAvatar-x5gers8 */
-        public void mo150onTapAvatarx5gers8(String messageId, long j10) {
+        public void mo151onTapAvatarx5gers8(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapButtonActionComponent-NkFJqEg */
-        public void mo151onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
+        public void mo152onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
             q.g(messageId, "messageId");
             q.g(indices, "indices");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapCall-pfaIj0E */
-        public void mo152onTapCallpfaIj0E(String messageId, long j10) {
+        public void mo153onTapCallpfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -224,7 +224,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapDismissMediaPostSharePrompt-1xi1bu0 */
-        public void mo153onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
+        public void mo154onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
@@ -235,7 +235,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapFollowForumPost-pfaIj0E */
-        public void mo154onTapFollowForumPostpfaIj0E(String messageId, long j10) {
+        public void mo155onTapFollowForumPostpfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -251,7 +251,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapImage-a6FnO-k */
-        public void mo155onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
+        public void mo156onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
             q.g(messageId, "messageId");
             q.g(type, "type");
             q.g(viewResizeMode, "viewResizeMode");
@@ -259,19 +259,19 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInviteEmbed-AFFcxXc */
-        public void mo156onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
+        public void mo157onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInviteToSpeak-1xi1bu0 */
-        public void mo157onTapInviteToSpeak1xi1bu0(String messageId) {
+        public void mo158onTapInviteToSpeak1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapJoinActivity-1xi1bu0 */
-        public void mo158onTapJoinActivity1xi1bu0(String messageId) {
+        public void mo159onTapJoinActivity1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
@@ -296,7 +296,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapMessageReply-0eiqbug */
-        public void mo159onTapMessageReply0eiqbug(long j10, String originId) {
+        public void mo160onTapMessageReply0eiqbug(long j10, String originId) {
             q.g(originId, "originId");
         }
 
@@ -306,19 +306,19 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapPostPreviewEmbed-kUTrp-s */
-        public void mo160onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
+        public void mo161onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapReaction-u7_MRrM */
-        public void mo161onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
+        public void mo162onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapReactionOverflow-pfaIj0E */
-        public void mo162onTapReactionOverflowpfaIj0E(String messageId, long j10) {
+        public void mo163onTapReactionOverflowpfaIj0E(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -330,20 +330,20 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSeeMore-1xi1bu0 */
-        public void mo163onTapSeeMore1xi1bu0(String messageId) {
+        public void mo164onTapSeeMore1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSelectActionComponent-u7_MRrM */
-        public void mo164onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
+        public void mo165onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
             q.g(messageId, "messageId");
             q.g(selectComponent, "selectComponent");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapShareForumPost-mgk6anA */
-        public void mo165onTapShareForumPostmgk6anA(long j10, long j11) {
+        public void mo166onTapShareForumPostmgk6anA(long j10, long j11) {
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -357,7 +357,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapThreadEmbed-1xi1bu0 */
-        public void mo166onTapThreadEmbed1xi1bu0(String messageId) {
+        public void mo167onTapThreadEmbed1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
@@ -368,7 +368,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapToggleBlockedMessages-1xi1bu0 */
-        public void mo167onTapToggleBlockedMessages1xi1bu0(String messageId) {
+        public void mo168onTapToggleBlockedMessages1xi1bu0(String messageId) {
             q.g(messageId, "messageId");
         }
 
@@ -379,32 +379,32 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapUsername-x5gers8 */
-        public void mo168onTapUsernamex5gers8(String messageId, long j10) {
+        public void mo169onTapUsernamex5gers8(String messageId, long j10) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onWelcomeReplyClicked-Ayv7vGE */
-        public void mo169onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
+        public void mo170onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
             q.g(sticker, "sticker");
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: voiceMessagePlaybackEnded-HuwN0RY */
-        public void mo170voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
+        public void mo171voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: voiceMessagePlaybackFailed-ntcYbpo */
-        public void mo171voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
+        public void mo172voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
             q.g(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: voiceMessagePlaybackStarted-OuNwOLg */
-        public void mo172voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
+        public void mo173voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
             q.g(messageId, "messageId");
         }
 
@@ -424,54 +424,54 @@ public interface ChatEventHandler {
     Function2<MessageId, ChannelId, Unit> getOnMessageTapped();
 
     /* renamed from: onInitiateReply-pfaIj0E  reason: not valid java name */
-    void mo139onInitiateReplypfaIj0E(String str, long j10);
+    void mo140onInitiateReplypfaIj0E(String str, long j10);
 
     /* renamed from: onLinkClicked-ntcYbpo  reason: not valid java name */
-    void mo140onLinkClickedntcYbpo(String str, LinkContentNode linkContentNode);
+    void mo141onLinkClickedntcYbpo(String str, LinkContentNode linkContentNode);
 
     /* renamed from: onLinkClicked-u7_MRrM  reason: not valid java name */
-    void mo141onLinkClickedu7_MRrM(String str, String str2, String str3);
+    void mo142onLinkClickedu7_MRrM(String str, String str2, String str3);
 
     void onLinkLongClicked(LinkContentNode linkContentNode);
 
     /* renamed from: onLongPressAvatar-x5gers8  reason: not valid java name */
-    void mo142onLongPressAvatarx5gers8(String str, long j10);
+    void mo143onLongPressAvatarx5gers8(String str, long j10);
 
     void onLongPressChannel(String str, String str2, String str3, String str4);
 
     void onLongPressCommand(CommandMentionContentNode commandMentionContentNode);
 
     /* renamed from: onLongPressReaction-Eqy5D80  reason: not valid java name */
-    void mo143onLongPressReactionEqy5D80(String str, long j10, ReactionView.Reaction reaction);
+    void mo144onLongPressReactionEqy5D80(String str, long j10, ReactionView.Reaction reaction);
 
     /* renamed from: onLongPressUsername-x5gers8  reason: not valid java name */
-    void mo144onLongPressUsernamex5gers8(String str, long j10);
+    void mo145onLongPressUsernamex5gers8(String str, long j10);
 
     void onScrollStateChanged(ScrollState scrollState);
 
     /* renamed from: onStickerClicked-Ayv7vGE  reason: not valid java name */
-    void mo145onStickerClickedAyv7vGE(Sticker sticker, String str);
+    void mo146onStickerClickedAyv7vGE(Sticker sticker, String str);
 
     /* renamed from: onStickerLongClicked-Ayv7vGE  reason: not valid java name */
-    void mo146onStickerLongClickedAyv7vGE(Sticker sticker, String str);
+    void mo147onStickerLongClickedAyv7vGE(Sticker sticker, String str);
 
     /* renamed from: onTapActivityLauncherEmbed-uU1mFKc  reason: not valid java name */
-    void mo147onTapActivityLauncherEmbeduU1mFKc(long j10, long j11);
+    void mo148onTapActivityLauncherEmbeduU1mFKc(long j10, long j11);
 
     /* renamed from: onTapAutoModerationActions-pfaIj0E  reason: not valid java name */
-    void mo148onTapAutoModerationActionspfaIj0E(String str, long j10);
+    void mo149onTapAutoModerationActionspfaIj0E(String str, long j10);
 
     /* renamed from: onTapAutoModerationFeedback-pfaIj0E  reason: not valid java name */
-    void mo149onTapAutoModerationFeedbackpfaIj0E(String str, long j10);
+    void mo150onTapAutoModerationFeedbackpfaIj0E(String str, long j10);
 
     /* renamed from: onTapAvatar-x5gers8  reason: not valid java name */
-    void mo150onTapAvatarx5gers8(String str, long j10);
+    void mo151onTapAvatarx5gers8(String str, long j10);
 
     /* renamed from: onTapButtonActionComponent-NkFJqEg  reason: not valid java name */
-    void mo151onTapButtonActionComponentNkFJqEg(String str, long j10, String str2, long j11, int[] iArr);
+    void mo152onTapButtonActionComponentNkFJqEg(String str, long j10, String str2, long j11, int[] iArr);
 
     /* renamed from: onTapCall-pfaIj0E  reason: not valid java name */
-    void mo152onTapCallpfaIj0E(String str, long j10);
+    void mo153onTapCallpfaIj0E(String str, long j10);
 
     void onTapCancelUploadItem(String str, String str2);
 
@@ -486,28 +486,28 @@ public interface ChatEventHandler {
     void onTapDismissEmbeddedActivity(String str);
 
     /* renamed from: onTapDismissMediaPostSharePrompt-1xi1bu0  reason: not valid java name */
-    void mo153onTapDismissMediaPostSharePrompt1xi1bu0(String str);
+    void mo154onTapDismissMediaPostSharePrompt1xi1bu0(String str);
 
     void onTapEmoji(EmojiContentNode emojiContentNode);
 
     /* renamed from: onTapFollowForumPost-pfaIj0E  reason: not valid java name */
-    void mo154onTapFollowForumPostpfaIj0E(String str, long j10);
+    void mo155onTapFollowForumPostpfaIj0E(String str, long j10);
 
     void onTapGiftCodeAccept(String str);
 
     void onTapGiftCodeEmbed(String str);
 
     /* renamed from: onTapImage-a6FnO-k  reason: not valid java name */
-    void mo155onTapImagea6FnOk(String str, int i10, String str2, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num);
+    void mo156onTapImagea6FnOk(String str, int i10, String str2, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num);
 
     /* renamed from: onTapInviteEmbed-AFFcxXc  reason: not valid java name */
-    void mo156onTapInviteEmbedAFFcxXc(String str, int i10, Boolean bool, Boolean bool2);
+    void mo157onTapInviteEmbedAFFcxXc(String str, int i10, Boolean bool, Boolean bool2);
 
     /* renamed from: onTapInviteToSpeak-1xi1bu0  reason: not valid java name */
-    void mo157onTapInviteToSpeak1xi1bu0(String str);
+    void mo158onTapInviteToSpeak1xi1bu0(String str);
 
     /* renamed from: onTapJoinActivity-1xi1bu0  reason: not valid java name */
-    void mo158onTapJoinActivity1xi1bu0(String str);
+    void mo159onTapJoinActivity1xi1bu0(String str);
 
     void onTapJoinEmbeddedActivity(String str);
 
@@ -518,56 +518,56 @@ public interface ChatEventHandler {
     void onTapMention(String str, String str2);
 
     /* renamed from: onTapMessageReply-0eiqbug  reason: not valid java name */
-    void mo159onTapMessageReply0eiqbug(long j10, String str);
+    void mo160onTapMessageReply0eiqbug(long j10, String str);
 
     void onTapOpTag();
 
     /* renamed from: onTapPostPreviewEmbed-kUTrp-s  reason: not valid java name */
-    void mo160onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String str);
+    void mo161onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String str);
 
     /* renamed from: onTapReaction-u7_MRrM  reason: not valid java name */
-    void mo161onTapReactionu7_MRrM(String str, ReactionView.Reaction reaction, Boolean bool);
+    void mo162onTapReactionu7_MRrM(String str, ReactionView.Reaction reaction, Boolean bool);
 
     /* renamed from: onTapReactionOverflow-pfaIj0E  reason: not valid java name */
-    void mo162onTapReactionOverflowpfaIj0E(String str, long j10);
+    void mo163onTapReactionOverflowpfaIj0E(String str, long j10);
 
     void onTapRoleIcon(String str, String str2);
 
     /* renamed from: onTapSeeMore-1xi1bu0  reason: not valid java name */
-    void mo163onTapSeeMore1xi1bu0(String str);
+    void mo164onTapSeeMore1xi1bu0(String str);
 
     /* renamed from: onTapSelectActionComponent-u7_MRrM  reason: not valid java name */
-    void mo164onTapSelectActionComponentu7_MRrM(String str, long j10, SelectComponent selectComponent);
+    void mo165onTapSelectActionComponentu7_MRrM(String str, long j10, SelectComponent selectComponent);
 
     /* renamed from: onTapShareForumPost-mgk6anA  reason: not valid java name */
-    void mo165onTapShareForumPostmgk6anA(long j10, long j11);
+    void mo166onTapShareForumPostmgk6anA(long j10, long j11);
 
     void onTapShowAltText(String str);
 
     void onTapSuppressNotificationsIcon();
 
     /* renamed from: onTapThreadEmbed-1xi1bu0  reason: not valid java name */
-    void mo166onTapThreadEmbed1xi1bu0(String str);
+    void mo167onTapThreadEmbed1xi1bu0(String str);
 
     void onTapTimestamp(String str);
 
     /* renamed from: onTapToggleBlockedMessages-1xi1bu0  reason: not valid java name */
-    void mo167onTapToggleBlockedMessages1xi1bu0(String str);
+    void mo168onTapToggleBlockedMessages1xi1bu0(String str);
 
     void onTapUploadProgressClose(String str);
 
     /* renamed from: onTapUsername-x5gers8  reason: not valid java name */
-    void mo168onTapUsernamex5gers8(String str, long j10);
+    void mo169onTapUsernamex5gers8(String str, long j10);
 
     /* renamed from: onWelcomeReplyClicked-Ayv7vGE  reason: not valid java name */
-    void mo169onWelcomeReplyClickedAyv7vGE(Sticker sticker, String str);
+    void mo170onWelcomeReplyClickedAyv7vGE(Sticker sticker, String str);
 
     /* renamed from: voiceMessagePlaybackEnded-HuwN0RY  reason: not valid java name */
-    void mo170voiceMessagePlaybackEndedHuwN0RY(String str, float f10, float f11, long j10, float f12);
+    void mo171voiceMessagePlaybackEndedHuwN0RY(String str, float f10, float f11, long j10, float f12);
 
     /* renamed from: voiceMessagePlaybackFailed-ntcYbpo  reason: not valid java name */
-    void mo171voiceMessagePlaybackFailedntcYbpo(String str, String str2);
+    void mo172voiceMessagePlaybackFailedntcYbpo(String str, String str2);
 
     /* renamed from: voiceMessagePlaybackStarted-OuNwOLg  reason: not valid java name */
-    void mo172voiceMessagePlaybackStartedOuNwOLg(String str, float f10, float f11, long j10);
+    void mo173voiceMessagePlaybackStartedOuNwOLg(String str, float f10, float f11, long j10);
 }

@@ -22,7 +22,7 @@ final class BillingManagerModule$subscribe$2 extends s implements Function1<Exce
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

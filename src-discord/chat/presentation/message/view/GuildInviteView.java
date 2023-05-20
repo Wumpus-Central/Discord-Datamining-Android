@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.databinding.GuildInviteViewBinding;
@@ -24,7 +25,7 @@ import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0017\u0010\u000b\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011J\u0017\u0010\u0012\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ+\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00152\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0018J\u0019\u0010\u0019\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010\u001b\u001a\u00020\f2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0011J\u0010\u0010\u001d\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015J\u000e\u0010\u001e\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020 J\u0010\u0010!\u001a\u00020\f2\b\u0010\"\u001a\u0004\u0018\u00010#J\u001a\u0010$\u001a\u00020\f2\b\u0010%\u001a\u0004\u0018\u00010\u00112\b\u0010&\u001a\u0004\u0018\u00010\u0011J\u0010\u0010'\u001a\u00020\f2\b\u0010(\u001a\u0004\u0018\u00010\u0011J\u0017\u0010)\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010*\u001a\u00020\f2\b\u0010+\u001a\u0004\u0018\u00010\u0015J\u0019\u0010,\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010-\u001a\u00020\f2\b\u0010.\u001a\u0004\u0018\u00010\u0011R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006/"}, d2 = {"Lcom/discord/chat/presentation/message/view/GuildInviteView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/GuildInviteViewBinding;", "setButtonBackgroundColor", "", ViewProps.COLOR, "(Ljava/lang/Integer;)V", "setButtonText", "text", "", "setButtonTextColor", "setGuildImage", "url", "", "thumbnailText", "thumbnailBackgroundColor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V", "setHeaderColor", "(Ljava/lang/Integer;)Lkotlin/Unit;", "setHeaderText", "headerText", "setInviteSplash", "setLoading", "loading", "", "setOnButtonClickListener", "listener", "Landroid/view/View$OnClickListener;", "setPresence", "onlineText", "memberText", "setSubtitle", "subtitle", "setSubtitleColor", "setSubtitleIcon", "subtitleIconUrl", "setTitleColor", "setTitleText", "name", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0017\u0010\u000b\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011J\u0017\u0010\u0012\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ+\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00152\n\b\u0001\u0010\u0017\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0018J\u0019\u0010\u0019\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010\u001b\u001a\u00020\f2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0011J\u0010\u0010\u001d\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015J\u000e\u0010\u001e\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020 J\u0010\u0010!\u001a\u00020\f2\b\u0010\"\u001a\u0004\u0018\u00010#J\u001a\u0010$\u001a\u00020\f2\b\u0010%\u001a\u0004\u0018\u00010\u00112\b\u0010&\u001a\u0004\u0018\u00010\u0011J\u0010\u0010'\u001a\u00020\f2\b\u0010(\u001a\u0004\u0018\u00010\u0011J\u0017\u0010)\u001a\u00020\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u000eJ\u0010\u0010*\u001a\u00020\f2\b\u0010+\u001a\u0004\u0018\u00010\u0015J\u0019\u0010,\u001a\u0004\u0018\u00010\f2\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u001aJ\u0010\u0010-\u001a\u00020\f2\b\u0010.\u001a\u0004\u0018\u00010\u0011R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006/"}, d2 = {"Lcom/discord/chat/presentation/message/view/GuildInviteView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/GuildInviteViewBinding;", "setButtonBackgroundColor", "", ViewProps.COLOR, "(Ljava/lang/Integer;)V", "setButtonText", "text", "", "setButtonTextColor", "setGuildImage", "url", "", "thumbnailText", "thumbnailBackgroundColor", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V", "setHeaderColor", "(Ljava/lang/Integer;)Lkotlin/Unit;", "setHeaderText", "headerText", "setInviteSplash", "setLoading", "loading", "", "setOnButtonClickListener", "listener", "Landroid/view/View$OnClickListener;", "setPresence", "onlineText", "memberText", "setSubtitle", "subtitle", "setSubtitleColor", "setSubtitleIcon", "subtitleIconUrl", "setTitleColor", "setTitleText", ZeroconfModule.KEY_SERVICE_NAME, "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
 public final class GuildInviteView extends ConstraintLayout {
     private final GuildInviteViewBinding binding;
@@ -64,7 +65,7 @@ public final class GuildInviteView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = ri.l.w(r5)
+            boolean r3 = nj.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -101,7 +102,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteHeader.setTextColor(num.intValue());
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     public final void setHeaderText(CharSequence charSequence) {
@@ -169,7 +170,7 @@ public final class GuildInviteView extends ConstraintLayout {
             r2 = 1
             r3 = 0
             if (r9 == 0) goto L_0x0016
-            boolean r4 = ri.l.w(r9)
+            boolean r4 = nj.l.w(r9)
             if (r4 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -203,7 +204,7 @@ public final class GuildInviteView extends ConstraintLayout {
             java.lang.String r1 = "binding.itemInviteTotalMemberDot"
             kotlin.jvm.internal.q.f(r0, r1)
             if (r10 == 0) goto L_0x004f
-            boolean r7 = ri.l.w(r10)
+            boolean r7 = nj.l.w(r10)
             if (r7 == 0) goto L_0x004d
             goto L_0x004f
         L_0x004d:
@@ -234,7 +235,7 @@ public final class GuildInviteView extends ConstraintLayout {
             java.lang.String r1 = "binding.itemInviteMemberContainer"
             kotlin.jvm.internal.q.f(r0, r1)
             if (r9 == 0) goto L_0x0084
-            boolean r9 = ri.l.w(r9)
+            boolean r9 = nj.l.w(r9)
             if (r9 == 0) goto L_0x0082
             goto L_0x0084
         L_0x0082:
@@ -245,7 +246,7 @@ public final class GuildInviteView extends ConstraintLayout {
         L_0x0085:
             if (r9 == 0) goto L_0x0097
             if (r10 == 0) goto L_0x0092
-            boolean r9 = ri.l.w(r10)
+            boolean r9 = nj.l.w(r10)
             if (r9 == 0) goto L_0x0090
             goto L_0x0092
         L_0x0090:
@@ -296,7 +297,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteTitle.setTextColor(num.intValue());
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     public final void setTitleText(CharSequence charSequence) {

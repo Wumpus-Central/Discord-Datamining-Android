@@ -27,9 +27,9 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ MediaMosaicAttachmentMessageAccessory m254copyu7_MRrM$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, List list, int i10, int i11, Object obj) {
+    public static /* synthetic */ MediaMosaicAttachmentMessageAccessory m255copyu7_MRrM$default(MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory, String str, List list, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = mediaMosaicAttachmentMessageAccessory.mo203getMessageId3Eiw7ao();
+            str = mediaMosaicAttachmentMessageAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             list = mediaMosaicAttachmentMessageAccessory.attachments;
@@ -37,12 +37,12 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
         if ((i11 & 4) != 0) {
             i10 = mediaMosaicAttachmentMessageAccessory.constrainedWidth;
         }
-        return mediaMosaicAttachmentMessageAccessory.m256copyu7_MRrM(str, list, i10);
+        return mediaMosaicAttachmentMessageAccessory.m257copyu7_MRrM(str, list, i10);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m255component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m256component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final List<MessageAccessory> component2() {
@@ -54,7 +54,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final MediaMosaicAttachmentMessageAccessory m256copyu7_MRrM(String messageId, List<? extends MessageAccessory> attachments, int i10) {
+    public final MediaMosaicAttachmentMessageAccessory m257copyu7_MRrM(String messageId, List<? extends MessageAccessory> attachments, int i10) {
         q.g(messageId, "messageId");
         q.g(attachments, "attachments");
         return new MediaMosaicAttachmentMessageAccessory(messageId, attachments, i10, null);
@@ -68,7 +68,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
             return false;
         }
         MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory = (MediaMosaicAttachmentMessageAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth;
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), mediaMosaicAttachmentMessageAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth;
     }
 
     public final List<MessageAccessory> getAttachments() {
@@ -81,16 +81,16 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31) + this.attachments.hashCode()) * 31) + this.constrainedWidth;
+        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.attachments.hashCode()) * 31) + this.constrainedWidth;
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         List<MessageAccessory> list = this.attachments;
         int i10 = this.constrainedWidth;
         return "MediaMosaicAttachmentMessageAccessory(messageId=" + str + ", attachments=" + list + ", constrainedWidth=" + i10 + ")";

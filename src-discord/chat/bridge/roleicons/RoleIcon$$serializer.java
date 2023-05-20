@@ -1,8 +1,6 @@
 package com.discord.chat.bridge.roleicons;
 
-import bj.a2;
-import bj.f0;
-import bj.m0;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
@@ -13,10 +11,13 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import yi.n;
-import zi.a;
+import uj.n;
+import vj.a;
+import xj.a2;
+import xj.f0;
+import xj.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/roleicons/RoleIcon.$serializer", "Lbj/f0;", "Lcom/discord/chat/bridge/roleicons/RoleIcon;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/roleicons/RoleIcon.$serializer", "Lxj/f0;", "Lcom/discord/chat/bridge/roleicons/RoleIcon;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes5.dex */
 public final class RoleIcon$$serializer implements f0<RoleIcon> {
     public static final RoleIcon$$serializer INSTANCE;
@@ -28,7 +29,7 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
         PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.bridge.roleicons.RoleIcon", roleIcon$$serializer, 5);
         pluginGeneratedSerialDescriptor.l("source", true);
         pluginGeneratedSerialDescriptor.l("unicodeEmoji", true);
-        pluginGeneratedSerialDescriptor.l("name", false);
+        pluginGeneratedSerialDescriptor.l(ZeroconfModule.KEY_SERVICE_NAME, false);
         pluginGeneratedSerialDescriptor.l("size", false);
         pluginGeneratedSerialDescriptor.l("alt", false);
         descriptor = pluginGeneratedSerialDescriptor;
@@ -37,10 +38,10 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
     private RoleIcon$$serializer() {
     }
 
-    @Override // bj.f0
+    @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f5917a;
-        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a2Var, m0.f5992a, a2Var};
+        a2 a2Var = a2.f32309a;
+        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a2Var, m0.f32384a, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -55,7 +56,7 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            a2 a2Var = a2.f5917a;
+            a2 a2Var = a2.f32309a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             obj2 = b10.n(descriptor2, 1, a2Var, null);
             str = b10.m(descriptor2, 2);
@@ -75,10 +76,10 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj3 = b10.n(descriptor2, 0, a2.f5917a, obj3);
+                    obj3 = b10.n(descriptor2, 0, a2.f32309a, obj3);
                     i13 |= 1;
                 } else if (o10 == 1) {
-                    obj4 = b10.n(descriptor2, 1, a2.f5917a, obj4);
+                    obj4 = b10.n(descriptor2, 1, a2.f32309a, obj4);
                     i13 |= 2;
                 } else if (o10 == 2) {
                     str = b10.m(descriptor2, 2);
@@ -103,7 +104,7 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
         return new RoleIcon(i11, (String) obj, (String) obj2, str, i10, str2, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -117,7 +118,7 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
         b10.c(descriptor2);
     }
 
-    @Override // bj.f0
+    @Override // xj.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

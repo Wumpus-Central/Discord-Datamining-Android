@@ -27,12 +27,12 @@ final class EphemeralIndicationView$setEphemeralIndication$2$1 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(LinkContentNode node) {
         q.g(node, "node");
-        this.$onLinkClicked.invoke(MessageId.m563boximpl(this.$messageId), node);
+        this.$onLinkClicked.invoke(MessageId.m572boximpl(this.$messageId), node);
     }
 }

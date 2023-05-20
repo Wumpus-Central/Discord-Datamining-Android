@@ -12,14 +12,14 @@ import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
 import com.google.android.exoplayer2.upstream.DataSource;
-import e7.e;
-import i8.k0;
+import j7.e;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import n8.k0;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 52\u00020\u0001:\u0003567B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0019\u001a\u00020\u0016H\u0007J\u0006\u0010\u001a\u001a\u00020\u001bJ\b\u0010\u001c\u001a\u00020\u0016H\u0007J\u0006\u0010\u001d\u001a\u00020\u001bJ\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u001fJ\u0006\u0010!\u001a\u00020\u001fJ\u0006\u0010\"\u001a\u00020\u001fJ\b\u0010#\u001a\u00020\nH\u0007J\b\u0010$\u001a\u00020\nH\u0007JF\u0010%\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010&\u001a\u00020\u001f2\b\b\u0002\u0010'\u001a\u00020\u001f2\b\b\u0002\u0010(\u001a\u00020\u001b2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*2\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,H\u0007J\b\u0010-\u001a\u00020\nH\u0007J\u000e\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\u001bJ\u0010\u00100\u001a\u00020\n2\u0006\u00101\u001a\u00020\tH\u0002J\u0010\u00102\u001a\u00020\n2\u0006\u00103\u001a\u00020\u0016H\u0007J\u0006\u00104\u001a\u00020\u001fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R&\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000e¨\u00068"}, d2 = {"Lcom/discord/media_player/MediaPlayer;", "", "exoPlayer", "Lcom/google/android/exoplayer2/SimpleExoPlayer;", "dataSourceFactory", "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;", "(Lcom/google/android/exoplayer2/SimpleExoPlayer;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V", "eventListener", "Lkotlin/Function1;", "Lcom/discord/media_player/MediaPlayer$Event;", "", "getEventListener", "()Lkotlin/jvm/functions/Function1;", "setEventListener", "(Lkotlin/jvm/functions/Function1;)V", "mediaSource", "Lcom/discord/media_player/MediaSource;", "getMediaSource", "()Lcom/discord/media_player/MediaSource;", "setMediaSource", "(Lcom/discord/media_player/MediaSource;)V", "volumeListener", "", "getVolumeListener", "setVolumeListener", "bufferedPercentage", "currentPositionMs", "", "currentPositionPercentage", "durationMs", "hasEnded", "", "hasError", "isMuted", "isPlaying", "pause", "play", "preparePlayer", "autoPlayWhenReady", "loopMedia", "initialSeekPositionMs", "playerView", "Lcom/discord/media_player/MediaPlayerView;", "playerControlView", "Lcom/discord/media_player/MediaPlayerView$ControlView;", "reset", "seekTo", "positionMs", "setEvent", "event", "setVolume", "volume", "shouldPlay", "Companion", "Event", "Factory", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
@@ -180,33 +180,33 @@ public final class MediaPlayer {
         q.g(dataSourceFactory, "dataSourceFactory");
         this.exoPlayer = exoPlayer;
         this.dataSourceFactory = dataSourceFactory;
-        exoPlayer.K(new Player.a() { // from class: com.discord.media_player.MediaPlayer.1
+        exoPlayer.H(new Player.a() { // from class: com.discord.media_player.MediaPlayer.1
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onEvents(Player player, Player.Events events) {
-                e7.q.a(this, player, events);
+                j7.q.a(this, player, events);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onExperimentalOffloadSchedulingEnabledChanged(boolean z10) {
-                e7.q.b(this, z10);
+                j7.q.b(this, z10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onExperimentalSleepingForOffloadChanged(boolean z10) {
-                e7.q.c(this, z10);
+                j7.q.c(this, z10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onIsLoadingChanged(boolean z10) {
-                e7.q.d(this, z10);
+                j7.q.d(this, z10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public void onIsPlayingChanged(boolean z10) {
-                e7.q.e(this, z10);
+                j7.q.e(this, z10);
                 if (z10) {
                     MediaPlayer.this.setEvent(Event.StartedPlaying.INSTANCE);
-                } else if (MediaPlayer.this.exoPlayer.P() != 4) {
+                } else if (MediaPlayer.this.exoPlayer.O() != 4) {
                     MediaPlayer.this.setEvent(Event.Paused.INSTANCE);
                 }
             }
@@ -214,27 +214,27 @@ public final class MediaPlayer {
             @Override // com.google.android.exoplayer2.Player.a
             @Deprecated
             public /* bridge */ /* synthetic */ void onLoadingChanged(boolean z10) {
-                e7.q.f(this, z10);
+                j7.q.f(this, z10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onMediaItemTransition(MediaItem mediaItem, int i10) {
-                e7.q.g(this, mediaItem, i10);
+                j7.q.g(this, mediaItem, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onPlayWhenReadyChanged(boolean z10, int i10) {
-                e7.q.h(this, z10, i10);
+                j7.q.h(this, z10, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
-                e7.q.i(this, playbackParameters);
+                j7.q.i(this, playbackParameters);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public void onPlaybackStateChanged(int i10) {
-                e7.q.j(this, i10);
+                j7.q.j(this, i10);
                 if (i10 == 2) {
                     MediaPlayer.this.setEvent(Event.BufferStart.INSTANCE);
                 } else if (i10 == 3) {
@@ -246,14 +246,14 @@ public final class MediaPlayer {
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onPlaybackSuppressionReasonChanged(int i10) {
-                e7.q.k(this, i10);
+                j7.q.k(this, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public void onPlayerError(ExoPlaybackException error) {
                 String str;
                 q.g(error, "error");
-                e7.q.l(this, error);
+                j7.q.l(this, error);
                 MediaPlayer.this.setEvent(new Event.PlaybackError(error));
                 Log log = Log.INSTANCE;
                 String simpleName = AnonymousClass1.class.getSimpleName();
@@ -270,49 +270,49 @@ public final class MediaPlayer {
             @Override // com.google.android.exoplayer2.Player.a
             @Deprecated
             public /* bridge */ /* synthetic */ void onPlayerStateChanged(boolean z10, int i10) {
-                e7.q.m(this, z10, i10);
+                j7.q.m(this, z10, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onPositionDiscontinuity(int i10) {
-                e7.q.n(this, i10);
+                j7.q.n(this, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onRepeatModeChanged(int i10) {
-                e7.q.o(this, i10);
+                j7.q.o(this, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             @Deprecated
             public /* bridge */ /* synthetic */ void onSeekProcessed() {
-                e7.q.p(this);
+                j7.q.p(this);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onShuffleModeEnabledChanged(boolean z10) {
-                e7.q.q(this, z10);
+                j7.q.q(this, z10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onStaticMetadataChanged(List list) {
-                e7.q.r(this, list);
+                j7.q.r(this, list);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, int i10) {
-                e7.q.s(this, timeline, i10);
+                j7.q.s(this, timeline, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             @Deprecated
             public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, Object obj, int i10) {
-                e7.q.t(this, timeline, obj, i10);
+                j7.q.t(this, timeline, obj, i10);
             }
 
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onTracksChanged(TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
-                e7.q.u(this, trackGroupArray, trackSelectionArray);
+                j7.q.u(this, trackGroupArray, trackSelectionArray);
             }
         });
     }
@@ -366,11 +366,11 @@ public final class MediaPlayer {
     }
 
     public final boolean hasEnded() {
-        return this.exoPlayer.P() == 4;
+        return this.exoPlayer.O() == 4;
     }
 
     public final boolean hasError() {
-        return this.exoPlayer.n() != null;
+        return this.exoPlayer.o() != null;
     }
 
     public final boolean isMuted() {
@@ -378,15 +378,15 @@ public final class MediaPlayer {
     }
 
     public final boolean isPlaying() {
-        return this.exoPlayer.Q();
+        return this.exoPlayer.P();
     }
 
     public final void pause() {
-        this.exoPlayer.o(false);
+        this.exoPlayer.p(false);
     }
 
     public final void play() {
-        this.exoPlayer.o(true);
+        this.exoPlayer.p(true);
     }
 
     public final void preparePlayer(MediaSource mediaSource, boolean z10, boolean z11, long j10, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView) {
@@ -401,7 +401,7 @@ public final class MediaPlayer {
         SimpleExoPlayer simpleExoPlayer = this.exoPlayer;
         simpleExoPlayer.W0(c10);
         simpleExoPlayer.c0(j10);
-        simpleExoPlayer.R(z11 ? 1 : 0);
+        simpleExoPlayer.Q(z11 ? 1 : 0);
         simpleExoPlayer.c();
         if (mediaPlayerView != null) {
             mediaPlayerView.setPlayer$media_player_release(this.exoPlayer);
@@ -416,7 +416,7 @@ public final class MediaPlayer {
 
     public final void reset() {
         seekTo(0L);
-        this.exoPlayer.o(false);
+        this.exoPlayer.p(false);
     }
 
     public final void seekTo(long j10) {
@@ -443,6 +443,6 @@ public final class MediaPlayer {
     }
 
     public final boolean shouldPlay() {
-        return this.exoPlayer.G();
+        return this.exoPlayer.D();
     }
 }

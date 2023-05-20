@@ -17,7 +17,7 @@ final class Transcoder$convertCompress$2 extends s implements Function1<Float, U
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     public final void invoke(float f10) {

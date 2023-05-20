@@ -13,6 +13,7 @@ import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
 import com.facebook.react.bridge.Promise;
 import java.util.List;
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -26,9 +27,8 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.p;
-import nf.t;
-import tf.c;
-import tf.d;
+import pg.c;
+import pg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -75,7 +75,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -99,7 +99,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 this.label = 1;
                 c10 = c.c(this);
                 final p pVar = new p(c10, 1);
-                pVar.C();
+                pVar.B();
                 billingClient = billingManager.billingClient;
                 if (billingClient == null) {
                     q.y("billingClient");
@@ -127,7 +127,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                         @Override // kotlin.jvm.functions.Function1
                         public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
                             invoke2(th2);
-                            return Unit.f22036a;
+                            return Unit.f22076a;
                         }
 
                         /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -192,7 +192,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -227,7 +227,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -279,6 +279,6 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 CrashReporting.INSTANCE.captureMessage("Found exception when exponentially retrying queryProductDetails call", e11);
             }
         }
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 }

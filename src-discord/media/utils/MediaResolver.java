@@ -8,6 +8,8 @@ import com.discord.crash_reporting.CrashReporting;
 import java.io.File;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import jg.x;
+import kg.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -16,9 +18,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
-import nf.x;
-import of.v;
-import tf.d;
+import pg.d;
 
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000 22\u00020\u0001:\u00012B)\u0012\u0006\u0010!\u001a\u00020 \u0012\u0018\u0010$\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00020#¢\u0006\u0004\b0\u00101J\u0013\u0010\u0003\u001a\u00020\u0002H\u0083@ø\u0001\u0000¢\u0006\u0004\b\u0003\u0010\u0004J#\u0010\t\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0082@ø\u0001\u0000¢\u0006\u0004\b\t\u0010\nJ+\u0010\u000e\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\fH\u0082@ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ'\u0010\u0013\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0082@ø\u0001\u0000¢\u0006\u0004\b\u0013\u0010\u0014J(\u0010\u0019\u001a\u00020\u00022\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0018\u001a\u00020\u0005H\u0002J\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u00152\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010\u001b\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0005J5\u0010\u001e\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\b\b\u0001\u0010\u001c\u001a\u00020\u000b2\u0006\u0010\u001d\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\fH\u0086@ø\u0001\u0000¢\u0006\u0004\b\u001e\u0010\u001fR\u0014\u0010!\u001a\u00020 8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u0010\"R&\u0010$\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00020#8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010%R\u001c\u0010'\u001a\n &*\u0004\u0018\u00010\u00110\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010(R\u0014\u0010,\u001a\u00020)8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b*\u0010+R\u0018\u0010/\u001a\u00020\u0015*\u00020\u00058BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b-\u0010.\u0082\u0002\u0004\n\u0002\b\u0019¨\u00063"}, d2 = {"Lcom/discord/media/utils/MediaResolver;", "", "", "checkFreeSpace", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Landroid/net/Uri;", "inputUri", "Lcom/discord/media/utils/VideoCompressionQuality;", "compressionQuality", "handleVideo", "(Landroid/net/Uri;Lcom/discord/media/utils/VideoCompressionQuality;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "", "", "isLowQuality", "handleImage", "(Landroid/net/Uri;IZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "uri", "Ljava/io/File;", "targetFile", "copyToFile", "(Landroid/net/Uri;Ljava/io/File;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "", "tag", "message", "outputUri", "logMediaError", "getMimeType", "cancel", "imageCompressionQuality", "videoCompressionQuality", "resolveToUri", "(Landroid/net/Uri;ILcom/discord/media/utils/VideoCompressionQuality;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Landroid/content/Context;", "context", "Landroid/content/Context;", "Lkotlin/Function2;", "onProgress", "Lkotlin/jvm/functions/Function2;", "kotlin.jvm.PlatformType", "cacheDir", "Ljava/io/File;", "Landroid/content/ContentResolver;", "getResolver", "()Landroid/content/ContentResolver;", "resolver", "getRequestId", "(Landroid/net/Uri;)Ljava/lang/String;", "requestId", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function2;)V", "Companion", "media_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes8.dex */
@@ -63,7 +63,7 @@ public final class MediaResolver {
         Object d10;
         Object g10 = j.g(y0.b(), new MediaResolver$checkFreeSpace$2(this, null), continuation);
         d10 = d.d();
-        return g10 == d10 ? g10 : Unit.f22036a;
+        return g10 == d10 ? g10 : Unit.f22076a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -118,14 +118,14 @@ public final class MediaResolver {
             r0.<init>(r10, r14)
         L_0x0018:
             java.lang.Object r14 = r0.result
-            java.lang.Object r9 = tf.b.d()
+            java.lang.Object r9 = pg.b.d()
             int r1 = r0.label
             r2 = 2
             r3 = 1
             if (r1 == 0) goto L_0x0041
             if (r1 == r3) goto L_0x0035
             if (r1 != r2) goto L_0x002d
-            nf.t.b(r14)
+            jg.t.b(r14)
             goto L_0x00ad
         L_0x002d:
             java.lang.IllegalStateException r11 = new java.lang.IllegalStateException
@@ -137,10 +137,10 @@ public final class MediaResolver {
             android.net.Uri r11 = (android.net.Uri) r11
             java.lang.Object r12 = r0.L$0
             com.discord.media.utils.MediaResolver r12 = (com.discord.media.utils.MediaResolver) r12
-            nf.t.b(r14)
+            jg.t.b(r14)
             goto L_0x0087
         L_0x0041:
-            nf.t.b(r14)
+            jg.t.b(r14)
             android.content.ContentResolver r14 = r10.getResolver()
             com.discord.media.utils.ContentResolverUtils r1 = com.discord.media.utils.ContentResolverUtils.INSTANCE
             boolean r4 = r1.isHeif(r14, r11)
@@ -163,7 +163,7 @@ public final class MediaResolver {
             r5 = r3
         L_0x0068:
             if (r14 == 0) goto L_0x009e
-            lf.a r1 = lf.a.f22805a
+            qf.a r1 = qf.a.f27857a
             android.content.Context r2 = r10.context
             r4 = 0
             com.discord.media.utils.MediaResolver$handleImage$compressed$1 r13 = new com.discord.media.utils.MediaResolver$handleImage$compressed$1
@@ -176,7 +176,7 @@ public final class MediaResolver {
             r3 = r11
             r5 = r13
             r6 = r0
-            java.lang.Object r14 = lf.a.b(r1, r2, r3, r4, r5, r6, r7, r8)
+            java.lang.Object r14 = qf.a.b(r1, r2, r3, r4, r5, r6, r7, r8)
             if (r14 != r9) goto L_0x0086
             return r9
         L_0x0086:

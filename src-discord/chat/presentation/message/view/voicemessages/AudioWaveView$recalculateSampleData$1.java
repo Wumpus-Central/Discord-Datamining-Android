@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -10,8 +11,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
-import nf.t;
-import tf.d;
+import pg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -47,7 +47,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -106,6 +106,6 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 }

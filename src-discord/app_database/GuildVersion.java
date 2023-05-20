@@ -1,6 +1,5 @@
 package com.discord.app_database;
 
-import bj.n1;
 import co.discord.media_engine.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -9,16 +8,17 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import yi.f;
+import uj.f;
+import xj.n1;
 
-@f
 @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000  2\u00020\u0001:\u0002\u001f B+\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\nB\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\u000bJ\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0007HÆ\u0003J\u001d\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0017\u001a\u00020\u0005HÖ\u0001J!\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00002\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eHÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006!"}, d2 = {"Lcom/discord/app_database/GuildVersion;", "", "seen1", "", "id", "", "version", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;JLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;J)V", "getId", "()Ljava/lang/String;", "getVersion", "()J", "component1", "component2", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "app_database_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes.dex */
 public final class GuildVersion {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7148id;
+    private final String f7646id;
     private final long version;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/app_database/GuildVersion$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/app_database/GuildVersion;", "app_database_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -40,13 +40,13 @@ public final class GuildVersion {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, GuildVersion$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7148id = str;
+        this.f7646id = str;
         this.version = j10;
     }
 
     public static /* synthetic */ GuildVersion copy$default(GuildVersion guildVersion, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = guildVersion.f7148id;
+            str = guildVersion.f7646id;
         }
         if ((i10 & 2) != 0) {
             j10 = guildVersion.version;
@@ -58,12 +58,12 @@ public final class GuildVersion {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.z(serialDesc, 0, self.f7148id);
+        output.y(serialDesc, 0, self.f7646id);
         output.E(serialDesc, 1, self.version);
     }
 
     public final String component1() {
-        return this.f7148id;
+        return this.f7646id;
     }
 
     public final long component2() {
@@ -83,11 +83,11 @@ public final class GuildVersion {
             return false;
         }
         GuildVersion guildVersion = (GuildVersion) obj;
-        return q.b(this.f7148id, guildVersion.f7148id) && this.version == guildVersion.version;
+        return q.b(this.f7646id, guildVersion.f7646id) && this.version == guildVersion.version;
     }
 
     public final String getId() {
-        return this.f7148id;
+        return this.f7646id;
     }
 
     public final long getVersion() {
@@ -95,18 +95,18 @@ public final class GuildVersion {
     }
 
     public int hashCode() {
-        return (this.f7148id.hashCode() * 31) + a.a(this.version);
+        return (this.f7646id.hashCode() * 31) + a.a(this.version);
     }
 
     public String toString() {
-        String str = this.f7148id;
+        String str = this.f7646id;
         long j10 = this.version;
         return "GuildVersion(id=" + str + ", version=" + j10 + ")";
     }
 
     public GuildVersion(String id2, long j10) {
         q.g(id2, "id");
-        this.f7148id = id2;
+        this.f7646id = id2;
         this.version = j10;
     }
 }

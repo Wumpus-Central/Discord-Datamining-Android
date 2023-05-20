@@ -70,14 +70,14 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        ChatEventHandler.DefaultImpls.m175onTapReactionu7_MRrM$default(eventHandler, message.m16getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m176onTapReactionu7_MRrM$default(eventHandler, message.m17getId3Eiw7ao(), null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        eventHandler.mo161onTapReactionu7_MRrM(message.m16getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo162onTapReactionu7_MRrM(message.m17getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
@@ -100,7 +100,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             StructurableText content = message.getContent();
             Context context2 = getContext();
             q.f(context2, "context");
-            String str = message.m16getId3Eiw7ao();
+            String str = message.m17getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
             boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
@@ -136,7 +136,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }
         ReactionsView configure$lambda$7 = this.binding.reactionsView;
         q.f(configure$lambda$7, "configure$lambda$7");
-        String str2 = message.m16getId3Eiw7ao();
+        String str2 = message.m17getId3Eiw7ao();
         List<MessageReaction> reactions = message.getReactions();
         if (reactions == null) {
             reactions = j.i();

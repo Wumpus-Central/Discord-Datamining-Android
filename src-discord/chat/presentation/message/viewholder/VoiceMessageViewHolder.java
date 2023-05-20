@@ -31,7 +31,7 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
             final float floatValue = durationSecs.floatValue();
             VoiceMessageViewHolder$bind$1$onCancelUpload$1 voiceMessageViewHolder$bind$1$onCancelUpload$1 = new VoiceMessageViewHolder$bind$1$onCancelUpload$1(attachment, eventHandler);
             AudioPlayerView audioPlayerView = this.view;
-            audioPlayerView.m311setSourceUrlntcYbpo(accessory.mo203getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
+            audioPlayerView.m312setSourceUrlntcYbpo(accessory.mo204getMessageId3Eiw7ao(), accessory.getAttachment().getUrl());
             audioPlayerView.setSampleData(waveformByteArray);
             audioPlayerView.setDurationMs(((float) RNCWebViewManager.COMMAND_CLEAR_FORM_DATA) * floatValue);
             audioPlayerView.setUploadProgress(attachment.getProgress(), voiceMessageViewHolder$bind$1$onCancelUpload$1, f10);
@@ -40,27 +40,27 @@ public final class VoiceMessageViewHolder extends MessagePartViewHolder {
                 @Override // com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.Listener
                 public void voiceMessagePlaybackEnded(float f11, float f12) {
                     ChatEventHandler chatEventHandler = ChatEventHandler.this;
-                    String str = accessory.mo203getMessageId3Eiw7ao();
+                    String str = accessory.mo204getMessageId3Eiw7ao();
                     float f13 = floatValue;
-                    UserId userId = accessory.m211getAuthorIdwUX8bhU();
+                    UserId userId = accessory.m212getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo170voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m610unboximpl(), f12);
+                        chatEventHandler.mo171voiceMessagePlaybackEndedHuwN0RY(str, f13, f11, userId.m619unboximpl(), f12);
                     }
                 }
 
                 @Override // com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.Listener
                 public void voiceMessagePlaybackFailed(String str) {
-                    ChatEventHandler.this.mo171voiceMessagePlaybackFailedntcYbpo(accessory.mo203getMessageId3Eiw7ao(), str);
+                    ChatEventHandler.this.mo172voiceMessagePlaybackFailedntcYbpo(accessory.mo204getMessageId3Eiw7ao(), str);
                 }
 
                 @Override // com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.Listener
                 public void voiceMessagePlaybackStarted(float f11) {
                     ChatEventHandler chatEventHandler = ChatEventHandler.this;
-                    String str = accessory.mo203getMessageId3Eiw7ao();
+                    String str = accessory.mo204getMessageId3Eiw7ao();
                     float f12 = floatValue;
-                    UserId userId = accessory.m211getAuthorIdwUX8bhU();
+                    UserId userId = accessory.m212getAuthorIdwUX8bhU();
                     if (userId != null) {
-                        chatEventHandler.mo172voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m610unboximpl());
+                        chatEventHandler.mo173voiceMessagePlaybackStartedOuNwOLg(str, f12, f11, userId.m619unboximpl());
                     }
                 }
             });

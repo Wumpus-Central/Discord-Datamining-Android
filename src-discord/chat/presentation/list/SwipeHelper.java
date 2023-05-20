@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.list;
 
+import ah.j;
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -25,7 +26,6 @@ import com.discord.chat.R;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.react.uimanager.events.TouchesHelper;
-import eg.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;

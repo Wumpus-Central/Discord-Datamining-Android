@@ -26,9 +26,9 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ RoleSubscriptionPurchaseAccessory m269copyAFFcxXc$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, String str2, String str3, int i10, int i11, Object obj) {
+    public static /* synthetic */ RoleSubscriptionPurchaseAccessory m270copyAFFcxXc$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, String str2, String str3, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = roleSubscriptionPurchaseAccessory.mo203getMessageId3Eiw7ao();
+            str = roleSubscriptionPurchaseAccessory.mo204getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             str2 = roleSubscriptionPurchaseAccessory.authorUsername;
@@ -39,12 +39,12 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             i10 = roleSubscriptionPurchaseAccessory.constrainedWidth;
         }
-        return roleSubscriptionPurchaseAccessory.m271copyAFFcxXc(str, str2, str3, i10);
+        return roleSubscriptionPurchaseAccessory.m272copyAFFcxXc(str, str2, str3, i10);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m270component13Eiw7ao() {
-        return mo203getMessageId3Eiw7ao();
+    public final String m271component13Eiw7ao() {
+        return mo204getMessageId3Eiw7ao();
     }
 
     public final String component2() {
@@ -60,7 +60,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final RoleSubscriptionPurchaseAccessory m271copyAFFcxXc(String messageId, String str, String str2, int i10) {
+    public final RoleSubscriptionPurchaseAccessory m272copyAFFcxXc(String messageId, String str, String str2, int i10) {
         q.g(messageId, "messageId");
         return new RoleSubscriptionPurchaseAccessory(messageId, str, str2, i10, null);
     }
@@ -73,7 +73,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
             return false;
         }
         RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory = (RoleSubscriptionPurchaseAccessory) obj;
-        return MessageId.m567equalsimpl0(mo203getMessageId3Eiw7ao(), roleSubscriptionPurchaseAccessory.mo203getMessageId3Eiw7ao()) && q.b(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && q.b(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth;
+        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), roleSubscriptionPurchaseAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && q.b(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth;
     }
 
     public final String getAuthorAvatar() {
@@ -90,12 +90,12 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo203getMessageId3Eiw7ao() {
+    public String mo204getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int i10 = MessageId.m568hashCodeimpl(mo203getMessageId3Eiw7ao()) * 31;
+        int i10 = MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31;
         String str = this.authorUsername;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -107,7 +107,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m569toStringimpl(mo203getMessageId3Eiw7ao());
+        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
         String str2 = this.authorUsername;
         String str3 = this.authorAvatar;
         int i10 = this.constrainedWidth;

@@ -55,14 +55,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onInitiateReply-pfaIj0E */
-    public void mo139onInitiateReplypfaIj0E(String messageId, long j10) {
+    public void mo140onInitiateReplypfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new InitiateReplyData(messageId, j10, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLinkClicked-ntcYbpo */
-    public void mo140onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
+    public void mo141onLinkClickedntcYbpo(String messageId, LinkContentNode node) {
         q.g(messageId, "messageId");
         q.g(node, "node");
         this.emitReactEvent.invoke(new TapLinkData(messageId, node, null));
@@ -70,7 +70,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLinkClicked-u7_MRrM */
-    public void mo141onLinkClickedu7_MRrM(String messageId, String url, String str) {
+    public void mo142onLinkClickedu7_MRrM(String messageId, String url, String str) {
         q.g(messageId, "messageId");
         q.g(url, "url");
         Function1<ReactEvent, Unit> function1 = this.emitReactEvent;
@@ -88,9 +88,9 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressAvatar-x5gers8 */
-    public void mo142onLongPressAvatarx5gers8(String messageId, long j10) {
+    public void mo143onLongPressAvatarx5gers8(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m569toStringimpl(messageId), UserId.m608toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m578toStringimpl(messageId), UserId.m617toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -107,16 +107,16 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressReaction-Eqy5D80 */
-    public void mo143onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
+    public void mo144onLongPressReactionEqy5D80(String messageId, long j10, ReactionView.Reaction reaction) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressReactionData(messageId, j10, reaction, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onLongPressUsername-x5gers8 */
-    public void mo144onLongPressUsernamex5gers8(String messageId, long j10) {
+    public void mo145onLongPressUsernamex5gers8(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m569toStringimpl(messageId), UserId.m608toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m578toStringimpl(messageId), UserId.m617toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -149,7 +149,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onStickerClicked-Ayv7vGE */
-    public void mo145onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
+    public void mo146onStickerClickedAyv7vGE(Sticker sticker, String messageId) {
         q.g(sticker, "sticker");
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapStickerData(sticker, messageId, null));
@@ -157,7 +157,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onStickerLongClicked-Ayv7vGE */
-    public void mo146onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
+    public void mo147onStickerLongClickedAyv7vGE(Sticker sticker, String messageId) {
         q.g(sticker, "sticker");
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new LongPressStickerData(messageId, sticker, null));
@@ -165,34 +165,34 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapActivityLauncherEmbed-uU1mFKc */
-    public void mo147onTapActivityLauncherEmbeduU1mFKc(long j10, long j11) {
-        this.emitReactEvent.invoke(new TapActivityLauncherEmbedData(ApplicationId.m531toStringimpl(j10), ChannelId.m544toStringimpl(j11)));
+    public void mo148onTapActivityLauncherEmbeduU1mFKc(long j10, long j11) {
+        this.emitReactEvent.invoke(new TapActivityLauncherEmbedData(ApplicationId.m540toStringimpl(j10), ChannelId.m553toStringimpl(j11)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAutoModerationActions-pfaIj0E */
-    public void mo148onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
+    public void mo149onTapAutoModerationActionspfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m569toStringimpl(messageId), ChannelId.m544toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m578toStringimpl(messageId), ChannelId.m553toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAutoModerationFeedback-pfaIj0E */
-    public void mo149onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
+    public void mo150onTapAutoModerationFeedbackpfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m569toStringimpl(messageId), ChannelId.m544toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m578toStringimpl(messageId), ChannelId.m553toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAvatar-x5gers8 */
-    public void mo150onTapAvatarx5gers8(String messageId, long j10) {
+    public void mo151onTapAvatarx5gers8(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m569toStringimpl(messageId), UserId.m608toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m578toStringimpl(messageId), UserId.m617toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapButtonActionComponent-NkFJqEg */
-    public void mo151onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
+    public void mo152onTapButtonActionComponentNkFJqEg(String messageId, long j10, String str, long j11, int[] indices) {
         q.g(messageId, "messageId");
         q.g(indices, "indices");
         this.emitReactEvent.invoke(new TapButtonActionComponent(messageId, j10, str, j11, indices, (DefaultConstructorMarker) null));
@@ -200,7 +200,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapCall-pfaIj0E */
-    public void mo152onTapCallpfaIj0E(String messageId, long j10) {
+    public void mo153onTapCallpfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapCallData(messageId, j10, null));
     }
@@ -247,7 +247,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapDismissMediaPostSharePrompt-1xi1bu0 */
-    public void mo153onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
+    public void mo154onTapDismissMediaPostSharePrompt1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapDismissMediaPostSharePromptData(messageId, null));
     }
@@ -260,9 +260,9 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapFollowForumPost-pfaIj0E */
-    public void mo154onTapFollowForumPostpfaIj0E(String messageId, long j10) {
+    public void mo155onTapFollowForumPostpfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m569toStringimpl(messageId), ChannelId.m544toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m578toStringimpl(messageId), ChannelId.m553toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -279,30 +279,30 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapImage-a6FnO-k */
-    public void mo155onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
+    public void mo156onTapImagea6FnOk(String messageId, int i10, String type, int i11, int i12, int i13, int i14, ViewResizeMode viewResizeMode, Double d10, Integer num) {
         q.g(messageId, "messageId");
         q.g(type, "type");
         q.g(viewResizeMode, "viewResizeMode");
-        this.emitReactEvent.invoke(new TapImageData(MessageId.m569toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num));
+        this.emitReactEvent.invoke(new TapImageData(MessageId.m578toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapInviteEmbed-AFFcxXc */
-    public void mo156onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
+    public void mo157onTapInviteEmbedAFFcxXc(String messageId, int i10, Boolean bool, Boolean bool2) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapInviteEvent(messageId, i10, bool, bool2));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapInviteToSpeak-1xi1bu0 */
-    public void mo157onTapInviteToSpeak1xi1bu0(String messageId) {
+    public void mo158onTapInviteToSpeak1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapInviteToSpeakData(messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapJoinActivity-1xi1bu0 */
-    public void mo158onTapJoinActivity1xi1bu0(String messageId) {
+    public void mo159onTapJoinActivity1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapJoinActivityData(messageId, null));
     }
@@ -332,9 +332,9 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapMessageReply-0eiqbug */
-    public void mo159onTapMessageReply0eiqbug(long j10, String originId) {
+    public void mo160onTapMessageReply0eiqbug(long j10, String originId) {
         q.g(originId, "originId");
-        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m544toStringimpl(j10), MessageId.m569toStringimpl(originId)));
+        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m553toStringimpl(j10), MessageId.m578toStringimpl(originId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -344,23 +344,23 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapPostPreviewEmbed-kUTrp-s */
-    public void mo160onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
+    public void mo161onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, String messageId) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m557toStringimpl(j10), ChannelId.m544toStringimpl(j11), ChannelId.m544toStringimpl(j12), messageId, null));
+        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m566toStringimpl(j10), ChannelId.m553toStringimpl(j11), ChannelId.m553toStringimpl(j12), messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapReaction-u7_MRrM */
-    public void mo161onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
+    public void mo162onTapReactionu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapReactionData(messageId, reaction, bool, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapReactionOverflow-pfaIj0E */
-    public void mo162onTapReactionOverflowpfaIj0E(String messageId, long j10) {
+    public void mo163onTapReactionOverflowpfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m569toStringimpl(messageId), ChannelId.m544toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m578toStringimpl(messageId), ChannelId.m553toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -372,14 +372,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapSeeMore-1xi1bu0 */
-    public void mo163onTapSeeMore1xi1bu0(String messageId) {
+    public void mo164onTapSeeMore1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapSeeMoreData(messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapSelectActionComponent-u7_MRrM */
-    public void mo164onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
+    public void mo165onTapSelectActionComponentu7_MRrM(String messageId, long j10, SelectComponent selectComponent) {
         q.g(messageId, "messageId");
         q.g(selectComponent, "selectComponent");
         this.emitReactEvent.invoke(new TapSelectActionComponent(messageId, j10, selectComponent, null));
@@ -387,8 +387,8 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapShareForumPost-mgk6anA */
-    public void mo165onTapShareForumPostmgk6anA(long j10, long j11) {
-        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m544toStringimpl(j10), GuildId.m557toStringimpl(j11)));
+    public void mo166onTapShareForumPostmgk6anA(long j10, long j11) {
+        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m553toStringimpl(j10), GuildId.m566toStringimpl(j11)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -404,7 +404,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapThreadEmbed-1xi1bu0 */
-    public void mo166onTapThreadEmbed1xi1bu0(String messageId) {
+    public void mo167onTapThreadEmbed1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapThreadEmbedEvent(messageId));
     }
@@ -417,9 +417,9 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapToggleBlockedMessages-1xi1bu0 */
-    public void mo167onTapToggleBlockedMessages1xi1bu0(String messageId) {
+    public void mo168onTapToggleBlockedMessages1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m569toStringimpl(messageId)));
+        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m578toStringimpl(messageId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -430,14 +430,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapUsername-x5gers8 */
-    public void mo168onTapUsernamex5gers8(String messageId, long j10) {
+    public void mo169onTapUsernamex5gers8(String messageId, long j10) {
         q.g(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m569toStringimpl(messageId), UserId.m608toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m578toStringimpl(messageId), UserId.m617toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onWelcomeReplyClicked-Ayv7vGE */
-    public void mo169onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
+    public void mo170onWelcomeReplyClickedAyv7vGE(Sticker sticker, String messageId) {
         q.g(sticker, "sticker");
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new TapWelcomeReplyData(sticker.getId(), messageId, null));
@@ -445,21 +445,21 @@ public class ChatViewEventHandler implements ChatEventHandler {
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackEnded-HuwN0RY */
-    public void mo170voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
+    public void mo171voiceMessagePlaybackEndedHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackEndedData(messageId, f10, f11, j10, f12, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackFailed-ntcYbpo */
-    public void mo171voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
+    public void mo172voiceMessagePlaybackFailedntcYbpo(String messageId, String str) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackFailedData(messageId, str, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: voiceMessagePlaybackStarted-OuNwOLg */
-    public void mo172voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
+    public void mo173voiceMessagePlaybackStartedOuNwOLg(String messageId, float f10, float f11, long j10) {
         q.g(messageId, "messageId");
         this.emitReactEvent.invoke(new VoiceMessagePlaybackStartedData(messageId, f10, f11, j10, null));
     }

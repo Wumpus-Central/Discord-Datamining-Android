@@ -92,7 +92,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
         if (!isEmpty) {
             this.adapter.setResults(mobileVoiceOverlayData.getChannelSelectorResults());
         }
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     private final void onViewBound() {

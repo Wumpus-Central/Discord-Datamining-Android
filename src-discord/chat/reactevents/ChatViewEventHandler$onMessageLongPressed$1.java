@@ -25,19 +25,19 @@ public final class ChatViewEventHandler$onMessageLongPressed$1 extends s impleme
 
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, ChannelId channelId, Integer num, MediaType mediaType) {
-        m329invoke8a0ehIg(messageId.m571unboximpl(), channelId.m546unboximpl(), num, mediaType);
-        return Unit.f22036a;
+        m330invoke8a0ehIg(messageId.m580unboximpl(), channelId.m555unboximpl(), num, mediaType);
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke-8a0ehIg  reason: not valid java name */
-    public final void m329invoke8a0ehIg(String messageId, long j10, Integer num, MediaType mediaType) {
+    public final void m330invoke8a0ehIg(String messageId, long j10, Integer num, MediaType mediaType) {
         Function1 function1;
         int i10;
         String str;
         q.g(messageId, "messageId");
         function1 = this.this$0.emitReactEvent;
-        String str2 = MessageId.m569toStringimpl(messageId);
-        String str3 = ChannelId.m544toStringimpl(j10);
+        String str2 = MessageId.m578toStringimpl(messageId);
+        String str3 = ChannelId.m553toStringimpl(j10);
         if (num != null) {
             i10 = num.intValue();
         } else {

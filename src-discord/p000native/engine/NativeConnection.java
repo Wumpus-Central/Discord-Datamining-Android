@@ -1,5 +1,6 @@
 package com.discord.p000native.engine;
 
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
@@ -25,14 +26,14 @@ public final class NativeConnection {
         void onStats(String str);
     }
 
-    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\bæ\u0080\u0001\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005H&¨\u0006\n"}, d2 = {"Lcom/discord/native/engine/NativeConnection$OnPingCallback;", "", "onPing", "", "ping", "", "server", "", "port", "seq", "android_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\bæ\u0080\u0001\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005H&¨\u0006\n"}, d2 = {"Lcom/discord/native/engine/NativeConnection$OnPingCallback;", "", "onPing", "", "ping", "", "server", "", ZeroconfModule.KEY_SERVICE_PORT, "seq", "android_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.native.engine.NativeConnection$OnPingCallback */
     /* loaded from: classes8.dex */
     public interface OnPingCallback {
         void onPing(int i10, String str, int i11, int i12);
     }
 
-    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\bæ\u0080\u0001\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0007H&¨\u0006\n"}, d2 = {"Lcom/discord/native/engine/NativeConnection$OnPingTimeoutCallback;", "", "onPingTimeout", "", "server", "", "port", "", "seq", "timeout", "android_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\bæ\u0080\u0001\u0018\u00002\u00020\u0001J(\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0007H&¨\u0006\n"}, d2 = {"Lcom/discord/native/engine/NativeConnection$OnPingTimeoutCallback;", "", "onPingTimeout", "", "server", "", ZeroconfModule.KEY_SERVICE_PORT, "", "seq", "timeout", "android_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.native.engine.NativeConnection$OnPingTimeoutCallback */
     /* loaded from: classes8.dex */
     public interface OnPingTimeoutCallback {

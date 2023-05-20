@@ -71,7 +71,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             r2 = 1
             r3 = 0
             if (r6 == 0) goto L_0x0016
-            boolean r4 = ri.l.w(r6)
+            boolean r4 = nj.l.w(r6)
             if (r4 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -82,7 +82,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         L_0x0017:
             if (r4 == 0) goto L_0x002a
             if (r7 == 0) goto L_0x0024
-            boolean r4 = ri.l.w(r7)
+            boolean r4 = nj.l.w(r7)
             if (r4 == 0) goto L_0x0022
             goto L_0x0024
         L_0x0022:
@@ -107,7 +107,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         L_0x0031:
             r0.setVisibility(r4)
             if (r6 == 0) goto L_0x003f
-            boolean r0 = ri.l.w(r6)
+            boolean r0 = nj.l.w(r6)
             if (r0 == 0) goto L_0x003d
             goto L_0x003f
         L_0x003d:
@@ -123,7 +123,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             goto L_0x0060
         L_0x004a:
             if (r7 == 0) goto L_0x0054
-            boolean r6 = ri.l.w(r7)
+            boolean r6 = nj.l.w(r7)
             if (r6 == 0) goto L_0x0053
             goto L_0x0054
         L_0x0053:
@@ -155,7 +155,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = ri.l.w(r5)
+            boolean r3 = nj.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -178,7 +178,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     /* renamed from: setFooter-Ayv7vGE  reason: not valid java name */
-    private final void m303setFooterAyv7vGE(StructurableText structurableText, String str) {
+    private final void m304setFooterAyv7vGE(StructurableText structurableText, String str) {
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.f(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
@@ -204,7 +204,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = ri.l.w(r5)
+            boolean r3 = nj.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -233,7 +233,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
     }
 
     /* renamed from: setPostPreviewEmbed-DzehxI4  reason: not valid java name */
-    public final void m304setPostPreviewEmbedDzehxI4(String title, String str, String ctaCopy, StructurableText footer, String messageId, String str2, String str3, String str4, View.OnClickListener onButtonClickListener) {
+    public final void m305setPostPreviewEmbedDzehxI4(String title, String str, String ctaCopy, StructurableText footer, String messageId, String str2, String str3, String str4, View.OnClickListener onButtonClickListener) {
         q.g(title, "title");
         q.g(ctaCopy, "ctaCopy");
         q.g(footer, "footer");
@@ -242,7 +242,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setButtonText(ctaCopy);
         setTitle(title);
         setSubtitle(str);
-        m303setFooterAyv7vGE(footer, messageId);
+        m304setFooterAyv7vGE(footer, messageId);
         setCoverImage(str2, str3);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);

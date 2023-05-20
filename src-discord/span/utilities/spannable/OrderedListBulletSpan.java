@@ -1,12 +1,12 @@
 package com.discord.span.utilities.spannable;
 
+import ah.j;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.text.Layout;
 import android.text.Spanned;
 import android.text.style.LeadingMarginSpan;
 import com.facebook.react.uimanager.ViewProps;
-import eg.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 

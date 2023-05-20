@@ -49,6 +49,10 @@ public final class ShortcutUtilsKt {
         return a10;
     }
 
+    public static /* synthetic */ ShortcutInfoCompat createShortcut$default(Context context, String str, CharSequence charSequence, CharSequence charSequence2, Bitmap bitmap, List list, Intent intent, int i10, int i11, Object obj) {
+        return createShortcut(context, str, charSequence, charSequence2, bitmap, list, intent, (i11 & 64) != 0 ? 0 : i10);
+    }
+
     private static final Set<String> getShareCategories() {
         Set<String> i10;
         Set<String> c10;

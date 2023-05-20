@@ -27,7 +27,7 @@ final class ImageManagerModule$getDominantColors$1 extends s implements Function
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

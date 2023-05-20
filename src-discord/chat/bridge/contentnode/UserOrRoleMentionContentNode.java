@@ -1,6 +1,5 @@
 package com.discord.chat.bridge.contentnode;
 
-import bj.n1;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.GuildId;
@@ -17,10 +16,11 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import yi.f;
+import uj.f;
+import xj.n1;
 
-@f
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ;2\u00020\u0001:\u0002:;B\\\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\u000e\u0010\r\u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u000e\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011ø\u0001\u0000¢\u0006\u0002\u0010\u0012BP\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eø\u0001\u0000¢\u0006\u0002\u0010\u0013J\u0019\u0010 \u001a\u0004\u0018\u00010\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b!J\u0019\u0010\"\u001a\u0004\u0018\u00010\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b#J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\u0019\u0010%\u001a\u0004\u0018\u00010\nHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b&J\u0019\u0010'\u001a\u0004\u0018\u00010\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b(J\u000f\u0010)\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eHÆ\u0003J^\u0010*\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\u000e\b\u0002\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b+J\u0013\u0010,\u001a\u00020-2\b\u0010.\u001a\u0004\u0018\u00010/HÖ\u0003J\t\u00100\u001a\u00020\u0003HÖ\u0001J\t\u00101\u001a\u000202HÖ\u0001J!\u00103\u001a\u0002042\u0006\u00105\u001a\u00020\u00002\u0006\u00106\u001a\u0002072\u0006\u00108\u001a\u000209HÇ\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u001a\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u001c\u0010\t\u001a\u0004\u0018\u00010\nø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u001c\u0010\u000b\u001a\u0004\u0018\u00010\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001f\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006<"}, d2 = {"Lcom/discord/chat/bridge/contentnode/UserOrRoleMentionContentNode;", "Lcom/discord/chat/bridge/contentnode/MentionContentNode;", "seen1", "", "channelId", "Lcom/discord/primitives/ChannelId;", "userId", "Lcom/discord/primitives/UserId;", "roleColor", "guildId", "Lcom/discord/primitives/GuildId;", "roleId", "Lcom/discord/primitives/RoleId;", "content", "", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/UserId;ILcom/discord/primitives/GuildId;Lcom/discord/primitives/RoleId;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getContent", "()Ljava/util/List;", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getRoleColor", "()I", "getRoleId-fYaclRY", "()Lcom/discord/primitives/RoleId;", "getUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "component1", "component1-qMVnFVQ", "component2", "component2-wUX8bhU", "component3", "component4", "component4-qOKuAAo", "component5", "component5-fYaclRY", "component6", "copy", "copy-DZRaReU", "equals", "", "other", "", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public final class UserOrRoleMentionContentNode extends MentionContentNode {
     public static final Companion Companion = new Companion(null);
@@ -91,7 +91,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: copy-DZRaReU$default  reason: not valid java name */
-    public static /* synthetic */ UserOrRoleMentionContentNode m92copyDZRaReU$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
+    public static /* synthetic */ UserOrRoleMentionContentNode m93copyDZRaReU$default(UserOrRoleMentionContentNode userOrRoleMentionContentNode, ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List list, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             channelId = userOrRoleMentionContentNode.channelId;
         }
@@ -110,7 +110,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
         if ((i11 & 32) != 0) {
             list = userOrRoleMentionContentNode.getContent();
         }
-        return userOrRoleMentionContentNode.m97copyDZRaReU(channelId, userId, i10, guildId, roleId, list);
+        return userOrRoleMentionContentNode.m98copyDZRaReU(channelId, userId, i10, guildId, roleId, list);
     }
 
     public static final void write$Self(UserOrRoleMentionContentNode self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -129,7 +129,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             z10 = true;
         }
         if (z10) {
-            output.p(serialDesc, 0, ChannelId$$serializer.INSTANCE, self.channelId);
+            output.h(serialDesc, 0, ChannelId$$serializer.INSTANCE, self.channelId);
         }
         if (!output.A(serialDesc, 1) && self.userId == null) {
             z11 = false;
@@ -137,7 +137,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             z11 = true;
         }
         if (z11) {
-            output.p(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
+            output.h(serialDesc, 1, UserId$$serializer.INSTANCE, self.userId);
         }
         if (!output.A(serialDesc, 2) && self.roleColor == 0) {
             z12 = false;
@@ -145,7 +145,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             z12 = true;
         }
         if (z12) {
-            output.x(serialDesc, 2, self.roleColor);
+            output.w(serialDesc, 2, self.roleColor);
         }
         if (!output.A(serialDesc, 3) && self.guildId == null) {
             z13 = false;
@@ -153,24 +153,24 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             z13 = true;
         }
         if (z13) {
-            output.p(serialDesc, 3, GuildId$$serializer.INSTANCE, self.guildId);
+            output.h(serialDesc, 3, GuildId$$serializer.INSTANCE, self.guildId);
         }
         if (output.A(serialDesc, 4) || self.roleId != null) {
             z14 = true;
         }
         if (z14) {
-            output.p(serialDesc, 4, RoleId$$serializer.INSTANCE, self.roleId);
+            output.h(serialDesc, 4, RoleId$$serializer.INSTANCE, self.roleId);
         }
-        output.t(serialDesc, 5, new bj.f(ContentNodeSerializer.INSTANCE), self.getContent());
+        output.z(serialDesc, 5, new xj.f(ContentNodeSerializer.INSTANCE), self.getContent());
     }
 
     /* renamed from: component1-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m93component1qMVnFVQ() {
+    public final ChannelId m94component1qMVnFVQ() {
         return this.channelId;
     }
 
     /* renamed from: component2-wUX8bhU  reason: not valid java name */
-    public final UserId m94component2wUX8bhU() {
+    public final UserId m95component2wUX8bhU() {
         return this.userId;
     }
 
@@ -179,12 +179,12 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: component4-qOKuAAo  reason: not valid java name */
-    public final GuildId m95component4qOKuAAo() {
+    public final GuildId m96component4qOKuAAo() {
         return this.guildId;
     }
 
     /* renamed from: component5-fYaclRY  reason: not valid java name */
-    public final RoleId m96component5fYaclRY() {
+    public final RoleId m97component5fYaclRY() {
         return this.roleId;
     }
 
@@ -193,7 +193,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: copy-DZRaReU  reason: not valid java name */
-    public final UserOrRoleMentionContentNode m97copyDZRaReU(ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List<? extends ContentNode> content) {
+    public final UserOrRoleMentionContentNode m98copyDZRaReU(ChannelId channelId, UserId userId, int i10, GuildId guildId, RoleId roleId, List<? extends ContentNode> content) {
         q.g(content, "content");
         return new UserOrRoleMentionContentNode(channelId, userId, i10, guildId, roleId, content, null);
     }
@@ -210,7 +210,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m98getChannelIdqMVnFVQ() {
+    public final ChannelId m99getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -220,7 +220,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m99getGuildIdqOKuAAo() {
+    public final GuildId m100getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -229,26 +229,26 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     }
 
     /* renamed from: getRoleId-fYaclRY  reason: not valid java name */
-    public final RoleId m100getRoleIdfYaclRY() {
+    public final RoleId m101getRoleIdfYaclRY() {
         return this.roleId;
     }
 
     /* renamed from: getUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m101getUserIdwUX8bhU() {
+    public final UserId m102getUserIdwUX8bhU() {
         return this.userId;
     }
 
     public int hashCode() {
         ChannelId channelId = this.channelId;
         int i10 = 0;
-        int i11 = (channelId == null ? 0 : ChannelId.m542hashCodeimpl(channelId.m546unboximpl())) * 31;
+        int i11 = (channelId == null ? 0 : ChannelId.m551hashCodeimpl(channelId.m555unboximpl())) * 31;
         UserId userId = this.userId;
-        int i12 = (((i11 + (userId == null ? 0 : UserId.m606hashCodeimpl(userId.m610unboximpl()))) * 31) + this.roleColor) * 31;
+        int i12 = (((i11 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31) + this.roleColor) * 31;
         GuildId guildId = this.guildId;
-        int i13 = (i12 + (guildId == null ? 0 : GuildId.m555hashCodeimpl(guildId.m559unboximpl()))) * 31;
+        int i13 = (i12 + (guildId == null ? 0 : GuildId.m564hashCodeimpl(guildId.m568unboximpl()))) * 31;
         RoleId roleId = this.roleId;
         if (roleId != null) {
-            i10 = RoleId.m580hashCodeimpl(roleId.m584unboximpl());
+            i10 = RoleId.m589hashCodeimpl(roleId.m593unboximpl());
         }
         return ((i13 + i10) * 31) + getContent().hashCode();
     }

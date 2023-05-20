@@ -35,7 +35,7 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((FileManagerModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:32:0x0094 A[Catch: all -> 0x009e, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x00ca, blocks: (B:5:0x000a, B:7:0x0016, B:12:0x0025, B:14:0x002d, B:15:0x0039, B:18:0x0042, B:21:0x004c, B:23:0x0055, B:24:0x005b, B:26:0x0061, B:27:0x007d, B:28:0x0088, B:29:0x0089, B:34:0x00a6, B:36:0x00b3, B:37:0x00be, B:39:0x00c2, B:40:0x00c6, B:32:0x0094), top: B:47:0x000a }] */
@@ -50,10 +50,10 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
     public final java.lang.Object invokeSuspend(java.lang.Object r7) {
         /*
             r6 = this;
-            tf.b.d()
+            pg.b.d()
             int r0 = r6.label
             if (r0 != 0) goto L_0x00d3
-            nf.t.b(r7)
+            jg.t.b(r7)
             java.lang.String r7 = r6.$assetUri     // Catch: all -> 0x00ca
             android.net.Uri r7 = android.net.Uri.parse(r7)     // Catch: all -> 0x00ca
             java.lang.String r0 = r7.getScheme()     // Catch: all -> 0x00ca
@@ -100,7 +100,7 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
             r3 = 0
             r4 = 6
             r5 = 0
-            java.util.List r0 = ri.l.z0(r0, r1, r2, r3, r4, r5)     // Catch: all -> 0x00ca
+            java.util.List r0 = nj.l.z0(r0, r1, r2, r3, r4, r5)     // Catch: all -> 0x00ca
             r1 = 0
             java.lang.Object r0 = r0.get(r1)     // Catch: all -> 0x00ca
             java.lang.String r0 = (java.lang.String) r0     // Catch: all -> 0x00ca
@@ -121,19 +121,19 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
             if (r7 == 0) goto L_0x00a5
             java.lang.String r1 = "it"
             kotlin.jvm.internal.q.f(r7, r1)     // Catch: all -> 0x009e
-            byte[] r1 = xf.b.c(r7)     // Catch: all -> 0x009e
+            byte[] r1 = tg.b.c(r7)     // Catch: all -> 0x009e
             goto L_0x00a6
         L_0x009e:
             r0 = move-exception
             throw r0     // Catch: all -> 0x00a0
         L_0x00a0:
             r1 = move-exception
-            xf.c.a(r7, r0)     // Catch: all -> 0x00ca
+            tg.c.a(r7, r0)     // Catch: all -> 0x00ca
             throw r1     // Catch: all -> 0x00ca
         L_0x00a5:
             r1 = r0
         L_0x00a6:
-            xf.c.a(r7, r0)     // Catch: all -> 0x00ca
+            tg.c.a(r7, r0)     // Catch: all -> 0x00ca
             java.lang.String r7 = r6.$encoding     // Catch: all -> 0x00ca
             java.lang.String r2 = "base64"
             boolean r7 = kotlin.jvm.internal.q.b(r7, r2)     // Catch: all -> 0x00ca
@@ -146,7 +146,7 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
         L_0x00be:
             com.facebook.react.bridge.Promise r7 = r6.$promise     // Catch: all -> 0x00ca
             if (r1 == 0) goto L_0x00c6
-            java.lang.String r0 = ri.l.q(r1)     // Catch: all -> 0x00ca
+            java.lang.String r0 = nj.l.q(r1)     // Catch: all -> 0x00ca
         L_0x00c6:
             r7.resolve(r0)     // Catch: all -> 0x00ca
             goto L_0x00d0
@@ -155,7 +155,7 @@ final class FileManagerModule$readAsset$1 extends k implements Function2<Corouti
             com.facebook.react.bridge.Promise r0 = r6.$promise
             r0.reject(r7)
         L_0x00d0:
-            kotlin.Unit r7 = kotlin.Unit.f22036a
+            kotlin.Unit r7 = kotlin.Unit.f22076a
             return r7
         L_0x00d3:
             java.lang.IllegalStateException r7 = new java.lang.IllegalStateException

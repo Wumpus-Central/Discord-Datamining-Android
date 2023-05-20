@@ -26,13 +26,13 @@ final class MessageViewManagers$MessageBundleViewManager$data$3 extends s implem
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m138invoke1xi1bu0(messageId.m571unboximpl());
-        return Unit.f22036a;
+        m139invoke1xi1bu0(messageId.m580unboximpl());
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m138invoke1xi1bu0(String messageId) {
+    public final void m139invoke1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
-        this.this$0.m135emitOnTapReplyAyv7vGE(this.$wrappedView, messageId);
+        this.this$0.m136emitOnTapReplyAyv7vGE(this.$wrappedView, messageId);
     }
 }

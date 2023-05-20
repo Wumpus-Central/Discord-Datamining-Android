@@ -2,6 +2,7 @@ package com.discord.media.engine.video.texture_view;
 
 import android.graphics.SurfaceTexture;
 import android.view.TextureView;
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.logging.Log;
 import com.discord.media.engine.types.Debug;
 import com.discord.media.engine.video.egl_renderer.EglRenderer;
@@ -20,7 +21,7 @@ import org.webrtc.RendererCommon;
 import org.webrtc.ThreadUtils;
 import org.webrtc.VideoFrame;
 
-@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\b\u0000\u0018\u0000 %2\u00020\u00012\u00020\u00022\u00020\u0003:\u0001%B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0013\u001a\u00020\u0014H\u0002J\u0010\u0010\u0015\u001a\u00020\u00142\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\b\u0010\u0019\u001a\u00020\u0014H\u0016J \u0010\u001a\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\b2\u0006\u0010\u001e\u001a\u00020\bH\u0017J\u0010\u0010\u001f\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u001cH\u0017J \u0010 \u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010!\u001a\u00020\b2\u0006\u0010\"\u001a\u00020\bH\u0016J\u0010\u0010#\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001cH\u0016J\u0010\u0010$\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0018H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/discord/media/engine/video/texture_view/TextureViewEglRenderer;", "Lcom/discord/media/engine/video/egl_renderer/EglRenderer;", "Landroid/view/TextureView$SurfaceTextureListener;", "Lcom/discord/media/engine/video/egl_renderer/ErrorCallback;", "name", "", "(Ljava/lang/String;)V", "frameRotation", "", "isFirstFrameRendered", "", "layoutLock", "", "rendererEvents", "Lorg/webrtc/RendererCommon$RendererEvents;", "rotatedFrameHeight", "rotatedFrameWidth", "surfaceTextureFrameCount", "webRtcFrameCount", "debugOnFrame", "", "initialize", "onFrame", "frame", "Lorg/webrtc/VideoFrame;", "onGlOutOfMemory", "onSurfaceTextureAvailable", "surface", "Landroid/graphics/SurfaceTexture;", "width", "height", "onSurfaceTextureDestroyed", "onSurfaceTextureSizeChanged", "w", "h", "onSurfaceTextureUpdated", "updateFrameDimensionsAndReportEvents", "Companion", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\b\u0000\u0018\u0000 %2\u00020\u00012\u00020\u00022\u00020\u0003:\u0001%B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0013\u001a\u00020\u0014H\u0002J\u0010\u0010\u0015\u001a\u00020\u00142\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\b\u0010\u0019\u001a\u00020\u0014H\u0016J \u0010\u001a\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\b2\u0006\u0010\u001e\u001a\u00020\bH\u0017J\u0010\u0010\u001f\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u001cH\u0017J \u0010 \u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010!\u001a\u00020\b2\u0006\u0010\"\u001a\u00020\bH\u0016J\u0010\u0010#\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001cH\u0016J\u0010\u0010$\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0018H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/discord/media/engine/video/texture_view/TextureViewEglRenderer;", "Lcom/discord/media/engine/video/egl_renderer/EglRenderer;", "Landroid/view/TextureView$SurfaceTextureListener;", "Lcom/discord/media/engine/video/egl_renderer/ErrorCallback;", ZeroconfModule.KEY_SERVICE_NAME, "", "(Ljava/lang/String;)V", "frameRotation", "", "isFirstFrameRendered", "", "layoutLock", "", "rendererEvents", "Lorg/webrtc/RendererCommon$RendererEvents;", "rotatedFrameHeight", "rotatedFrameWidth", "surfaceTextureFrameCount", "webRtcFrameCount", "debugOnFrame", "", "initialize", "onFrame", "frame", "Lorg/webrtc/VideoFrame;", "onGlOutOfMemory", "onSurfaceTextureAvailable", "surface", "Landroid/graphics/SurfaceTexture;", "width", "height", "onSurfaceTextureDestroyed", "onSurfaceTextureSizeChanged", "w", "h", "onSurfaceTextureUpdated", "updateFrameDimensionsAndReportEvents", "Companion", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
 public final class TextureViewEglRenderer extends EglRenderer implements TextureView.SurfaceTextureListener, ErrorCallback {
     public static final Companion Companion = new Companion(null);
@@ -46,7 +47,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
         /* JADX INFO: Access modifiers changed from: private */
         public final String toNiceString(float f10) {
-            k0 k0Var = k0.f22085a;
+            k0 k0Var = k0.f22125a;
             String format = String.format(Locale.getDefault(), "%.3f", Arrays.copyOf(new Object[]{Float.valueOf(f10)}, 1));
             q.f(format, "format(locale, format, *args)");
             return format;
@@ -87,7 +88,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                 this.frameRotation = videoFrame.getRotation();
             }
-            Unit unit = Unit.f22036a;
+            Unit unit = Unit.f22076a;
         }
     }
 
@@ -100,7 +101,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f22036a;
+                Unit unit = Unit.f22076a;
             }
             init();
             setErrorCallback(this);

@@ -54,7 +54,7 @@ public final class DeserializationErrorView extends LinearLayout {
         this.binding.exception.setText(causeMessage);
         Button button = this.binding.copyButton;
         q.f(button, "binding.copyButton");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button, false, new View.OnClickListener() { // from class: c3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button, false, new View.OnClickListener() { // from class: f3.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DeserializationErrorView.configure$lambda$0(DeserializationErrorView.this, json, view);

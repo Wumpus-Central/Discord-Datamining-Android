@@ -1,5 +1,6 @@
 package com.discord.overlapping_circles;
 
+import ah.j;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -28,16 +29,15 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.textview.MaterialTextView;
-import eg.j;
 import java.util.List;
+import jg.n;
+import jg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.r;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import nf.n;
-import nf.p;
 
 @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00182\u00020\u0001:\u0004\u0018\u0019\u001a\u001bB\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0014\u0010\u0013\u001a\u00020\u00142\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016R\u0012\u0010\u0007\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\f\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\r\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/overlapping_circles/OverlappingCirclesView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "imageLoadingColor", "", "imageLoadingColorDrawable", "Landroid/graphics/drawable/ColorDrawable;", "maxItems", "overflowBgColor", "overflowTextColor", "overflowTextSizePx", "overlapNegativeMargin", "overlapPx", "placeholderCircleColor", "separatorSizePx", "setItems", "", "items", "", "Lcom/discord/overlapping_circles/OverlappingItem;", "Companion", "OverflowItem", "OverlappingClippedItem", "PlaceholderItem", "overlapping_circles_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes4.dex */
@@ -182,13 +182,13 @@ public final class OverlappingCirclesView extends LinearLayout {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public PlaceholderItem(Context context, int i10, boolean z10, int i11, int i12, int i13) {
             super(context);
-            Lazy b10;
+            Lazy a10;
             q.g(context, "context");
             this.showSeparation = z10;
             this.overlapPx = i11;
             this.radius = i13 / 2.0f;
-            b10 = n.b(p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i12));
-            this.separatorClipPath$delegate = b10;
+            a10 = n.a(p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i12));
+            this.separatorClipPath$delegate = a10;
             Paint paint = new Paint();
             paint.setColor(i10);
             paint.setAntiAlias(true);
@@ -308,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22036a;
+            Unit unit = Unit.f22076a;
             addView(overflowItem, layoutParams2);
         }
     }

@@ -12,6 +12,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.Person;
 import androidx.core.content.pm.ShortcutInfoCompat;
 import androidx.core.graphics.drawable.IconCompat;
+import com.discord.crash_reporting.CrashReporting;
 import com.discord.icons.IconUrlUtils;
 import com.discord.misc.utilities.intent.PendingIntentUtils;
 import com.discord.notifications.actions.intents.ContentAction;
@@ -21,33 +22,63 @@ import com.discord.notifications.actions.intents.DismissCallAction;
 import com.discord.notifications.actions.intents.MarkAsReadAction;
 import com.discord.notifications.actions.intents.MuteAction;
 import com.discord.notifications.actions.intents.NotificationAction;
+import com.discord.notifications.api.KvMessageEntry;
 import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.api.NotificationMessage;
 import com.discord.notifications.api.Sticker;
 import com.discord.notifications.renderer.R;
 import com.discord.primitives.ChannelId;
+import com.discord.primitives.GuildId;
 import com.discord.primitives.MessageFlag;
 import com.discord.primitives.MessageFlagKt;
+import com.discord.primitives.MessageId;
 import com.discord.primitives.UserId;
 import com.discord.react_strings.I18nMessage;
 import com.discord.react_strings.I18nUtilsKt;
 import com.discord.shortcuts.ShortcutData;
 import com.discord.shortcuts.ShortcutUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+import jg.x;
+import kg.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.collections.i;
 import kotlin.collections.j;
+import kotlin.collections.r;
 import kotlin.jvm.internal.q;
-import nf.x;
-import of.v;
+import kotlinx.serialization.json.Json;
+import kotlinx.serialization.json.JsonElement;
+import kotlinx.serialization.json.JsonObject;
+import kotlinx.serialization.json.f;
+import kotlinx.serialization.json.g;
+import kotlinx.serialization.json.s;
 
-@Metadata(d1 = {"\u0000l\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\u0006H\u0002\u001a/\u0010\b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0006H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\r\u001a(\u0010\u000e\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a0\u0010\u0010\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0012\u001a\u00020\u00132\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005\u001a\u0016\u0010\u0014\u001a\u0004\u0018\u00010\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a(\u0010\u0015\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a\u000e\u0010\u0016\u001a\u0004\u0018\u00010\t*\u00020\u000fH\u0000\u001a\u0014\u0010\u0017\u001a\u00020\u0001*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u0018\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u0019\u001a\u00020\u0006*\u00020\u000fH\u0000\u001a\u0014\u0010\u001a\u001a\u00020\u0006*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0014\u0010\u001b\u001a\u00020\u0006*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001c\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u001d\u001a\u00020\u0006*\u00020\u000fH\u0000\u001a\f\u0010\u001e\u001a\u00020\u001f*\u00020\u000fH\u0000\u001a\u0016\u0010 \u001a\u00020!*\u00020\u000f2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0000\u001a\u0018\u0010$\u001a\u0004\u0018\u00010!*\u00020\u000f2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0000\u001a<\u0010%\u001a\u00020&*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\b\u0010\"\u001a\u0004\u0018\u00010#2\b\u0010'\u001a\u0004\u0018\u00010#H\u0000\u001a\f\u0010(\u001a\u00020)*\u00020\u000fH\u0000\u001a\u0016\u0010*\u001a\u0004\u0018\u00010+*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u0010,\u001a\u00020\u0006*\u00020\u000f\u001a\u001c\u0010-\u001a\u0004\u0018\u00010\u0011*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010.\u001a\u00020)\u001a\u0014\u0010/\u001a\u00020\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00100\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\f\u00101\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\u0016\u00102\u001a\u0004\u0018\u00010\t*\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00103\u001a\u00020\u0013*\u00020\u000fH\u0000\u001a\f\u00104\u001a\u000205*\u00020#H\u0002\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u00066"}, d2 = {"getPendingIntent", "Landroid/app/PendingIntent;", "context", "Landroid/content/Context;", "notificationDataMap", "", "", "tag", "getSystemMessageUserJoin", "", "userId", "Lcom/discord/primitives/UserId;", "userName", "getSystemMessageUserJoin-_NT-lnE", "getButtonPendingIntent", "Lcom/discord/notifications/api/NotificationData;", "getCallAction", "Landroidx/core/app/NotificationCompat$Action;", "isAcceptAction", "", "getContent", "getContentPendingIntent", "getConversationTitle", "getDeletePendingIntent", "getDirectReplyAction", "getGroupKey", "getIconUrl", "getIconUrlForAvatar", "getMarkAsReadAction", "getNotificationCategory", "getSendTime", "", "getSender", "Landroidx/core/app/Person;", "icon", "Landroid/graphics/Bitmap;", "getSenderForMessageNotification", "getShortcutInfo", "Landroidx/core/content/pm/ShortcutInfoCompat;", "avatar", "getSmallIcon", "", "getSound", "Landroid/net/Uri;", "getTag", "getTimedMuteAction", "numMessages", "getTitle", "isConversation", "isGroupConversation", "renderMessageContent", "shouldUseBigText", "toIconCompat", "Landroidx/core/graphics/drawable/IconCompat;", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\u0006H\u0002\u001a/\u0010\b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0006H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\r\u001a\f\u0010\u000e\u001a\u0004\u0018\u00010\u000f*\u00020\u0010\u001a(\u0010\u0011\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a0\u0010\u0012\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00152\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005\u001a\u0016\u0010\u0016\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a(\u0010\u0017\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a\u000e\u0010\u0018\u001a\u0004\u0018\u00010\t*\u00020\u0010H\u0000\u001a\u0014\u0010\u0019\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001a\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u001b\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\u0014\u0010\u001c\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0014\u0010\u001d\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001e\u001a\u0004\u0018\u00010\u001f*\u00020\u00102\b\u0010 \u001a\u0004\u0018\u00010\u0006\u001a\u0016\u0010!\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\"\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\f\u0010#\u001a\u00020$*\u00020\u0010H\u0000\u001a\u0016\u0010%\u001a\u00020&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a\u0018\u0010)\u001a\u0004\u0018\u00010&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a<\u0010*\u001a\u00020+*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\b\u0010'\u001a\u0004\u0018\u00010(2\b\u0010,\u001a\u0004\u0018\u00010(H\u0000\u001a\f\u0010-\u001a\u00020.*\u00020\u0010H\u0000\u001a\u0016\u0010/\u001a\u0004\u0018\u000100*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u00101\u001a\u00020\u0006*\u00020\u0010\u001a\u001c\u00102\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u00103\u001a\u00020.\u001a\u0014\u00104\u001a\u00020\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00105\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00106\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\u0016\u00107\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00108\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00109\u001a\u00020:*\u00020(H\u0002\u001a\u0014\u0010;\u001a\u0004\u0018\u00010\u000f*\u00020\u00102\u0006\u0010<\u001a\u00020\u000f\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006="}, d2 = {"getPendingIntent", "Landroid/app/PendingIntent;", "context", "Landroid/content/Context;", "notificationDataMap", "", "", "tag", "getSystemMessageUserJoin", "", "userId", "Lcom/discord/primitives/UserId;", "userName", "getSystemMessageUserJoin-_NT-lnE", "getAuthor", "Lkotlinx/serialization/json/JsonObject;", "Lcom/discord/notifications/api/NotificationData;", "getButtonPendingIntent", "getCallAction", "Landroidx/core/app/NotificationCompat$Action;", "isAcceptAction", "", "getContent", "getContentPendingIntent", "getConversationTitle", "getDeletePendingIntent", "getDirectReplyAction", "getGroupKey", "getIconUrl", "getIconUrlForAvatar", "getKvMessage", "Lcom/discord/notifications/api/KvMessageEntry;", "rawMessage", "getMarkAsReadAction", "getNotificationCategory", "getSendTime", "", "getSender", "Landroidx/core/app/Person;", "icon", "Landroid/graphics/Bitmap;", "getSenderForMessageNotification", "getShortcutInfo", "Landroidx/core/content/pm/ShortcutInfoCompat;", "avatar", "getSmallIcon", "", "getSound", "Landroid/net/Uri;", "getTag", "getTimedMuteAction", "numMessages", "getTitle", "isConversation", "isGroupConversation", "renderMessageContent", "shouldUseBigText", "toIconCompat", "Landroidx/core/graphics/drawable/IconCompat;", "toNotificationMessage", "author", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes4.dex */
 public final class NotificationDataUtilsKt {
+    public static final JsonObject getAuthor(NotificationData notificationData) {
+        q.g(notificationData, "<this>");
+        String userAvatar = notificationData.getUserAvatar();
+        UserId userId = notificationData.m517getUserIdwUX8bhU();
+        String userUsername = notificationData.getUserUsername();
+        if (userAvatar == null || userId == null || userUsername == null) {
+            return null;
+        }
+        s sVar = new s();
+        f.c(sVar, "avatar", userAvatar);
+        f.c(sVar, "id", UserId.m617toStringimpl(userId.m619unboximpl()));
+        f.c(sVar, "username", userUsername);
+        f.c(sVar, "global_name", notificationData.getUserGlobalName());
+        f.a(sVar, "incomplete", Boolean.TRUE);
+        return sVar.a();
+    }
+
     public static final PendingIntent getButtonPendingIntent(NotificationData notificationData, Context context, Map<String, String> notificationDataMap) {
         q.g(notificationData, "<this>");
         q.g(context, "context");
@@ -65,14 +96,14 @@ public final class NotificationDataUtilsKt {
         q.g(notificationData, "<this>");
         q.g(context, "context");
         q.g(notificationDataMap, "notificationDataMap");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m504getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m513getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        long j10 = channelId.m546unboximpl();
+        long j10 = channelId.m555unboximpl();
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f22036a;
+            Unit unit = Unit.f22076a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -197,7 +228,7 @@ public final class NotificationDataUtilsKt {
                 if (z14) {
                     Integer messageType = notificationData.getMessageType();
                     if (messageType != null && messageType.intValue() == 7) {
-                        return m523getSystemMessageUserJoin_NTlnE(context, notificationData.m508getUserIdwUX8bhU(), notificationData.getUserUsername());
+                        return m532getSystemMessageUserJoin_NTlnE(context, notificationData.m517getUserIdwUX8bhU(), notificationData.getUserUsername());
                     }
                     Integer messageActivityType = notificationData.getMessageActivityType();
                     if (messageActivityType != null && messageActivityType.intValue() == 1) {
@@ -293,10 +324,10 @@ public final class NotificationDataUtilsKt {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m504getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m513getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m546unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).e(true).h(1).i(false).b();
+        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m555unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).e(true).h(1).i(false).b();
     }
 
     public static final String getGroupKey(NotificationData notificationData) {
@@ -329,7 +360,7 @@ public final class NotificationDataUtilsKt {
         q.g(notificationData, "<this>");
         q.g(context, "context");
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
-        String str2 = IconUrlUtils.m440getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m505getGuildIdqOKuAAo(), notificationData.m508getUserIdwUX8bhU(), null, false, 24, null);
+        String str2 = IconUrlUtils.m441getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m514getGuildIdqOKuAAo(), notificationData.m517getUserIdwUX8bhU(), null, false, 24, null);
         if (str2.length() == 0) {
             z10 = true;
         } else {
@@ -338,19 +369,53 @@ public final class NotificationDataUtilsKt {
         if (!z10) {
             return str2;
         }
-        str = iconUrlUtils.m446getForUser_fRzTXg(context, notificationData.m508getUserIdwUX8bhU(), notificationData.getUserAvatar(), (r16 & 8) != 0 ? null : notificationData.getUserDiscriminator(), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        str = iconUrlUtils.m447getForUser_fRzTXg(context, notificationData.m517getUserIdwUX8bhU(), notificationData.getUserAvatar(), (r16 & 8) != 0 ? null : notificationData.getUserDiscriminator(), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         return str;
+    }
+
+    public static final KvMessageEntry getKvMessage(NotificationData notificationData, String str) {
+        JsonObject notificationMessage;
+        List i10;
+        List d10;
+        List i11;
+        List d11;
+        List o02;
+        q.g(notificationData, "<this>");
+        String str2 = notificationData.m515getMessageIdN_6c4I0();
+        ChannelId channelId = notificationData.m513getChannelIdqMVnFVQ();
+        if (!(str2 == null || channelId == null || !q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE))) {
+            NotificationMessage message = notificationData.getMessage();
+            if (str == null || message == null) {
+                JsonObject author = getAuthor(notificationData);
+                if (author == null || (notificationMessage = toNotificationMessage(notificationData, author)) == null) {
+                    CrashReporting.INSTANCE.captureException(new Exception("Failed to derive push message"));
+                } else {
+                    i10 = j.i();
+                    d10 = i.d(author);
+                    return new KvMessageEntry(i10, d10, notificationMessage, str2, channelId.m555unboximpl(), null);
+                }
+            } else {
+                JsonElement g10 = Json.f22577d.g(str);
+                i11 = j.i();
+                JsonObject author2 = message.getAuthor();
+                q.d(author2);
+                d11 = i.d(author2);
+                o02 = r.o0(d11, message.getMentions());
+                return new KvMessageEntry(i11, o02, g.m(g10), str2, channelId.m555unboximpl(), null);
+            }
+        }
+        return null;
     }
 
     public static final NotificationCompat.Action getMarkAsReadAction(NotificationData notificationData, Context context) {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m504getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m513getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        long j10 = channelId.m546unboximpl();
-        String str = notificationData.m506getMessageIdN_6c4I0();
+        long j10 = channelId.m555unboximpl();
+        String str = notificationData.m515getMessageIdN_6c4I0();
         if (str == null) {
             return null;
         }
@@ -463,7 +528,7 @@ public final class NotificationDataUtilsKt {
             r0.<init>()
             java.lang.String r1 = r2.getUserUsername()
             androidx.core.app.Person$c r0 = r0.f(r1)
-            com.discord.primitives.UserId r1 = r2.m508getUserIdwUX8bhU()
+            com.discord.primitives.UserId r1 = r2.m517getUserIdwUX8bhU()
             java.lang.String r1 = java.lang.String.valueOf(r1)
             androidx.core.app.Person$c r0 = r0.e(r1)
             java.lang.Integer r2 = r2.getRelationshipType()
@@ -503,17 +568,15 @@ public final class NotificationDataUtilsKt {
 
     public static final ShortcutInfoCompat getShortcutInfo(NotificationData notificationData, Context context, Map<String, String> notificationDataMap, Bitmap bitmap, Bitmap bitmap2) {
         List d10;
-        ShortcutInfoCompat createShortcut;
         q.g(notificationData, "<this>");
         q.g(context, "context");
         q.g(notificationDataMap, "notificationDataMap");
-        String valueOf = String.valueOf(notificationData.m504getChannelIdqMVnFVQ());
+        String valueOf = String.valueOf(notificationData.m513getChannelIdqMVnFVQ());
         CharSequence title = getTitle(notificationData, context);
         CharSequence title2 = getTitle(notificationData, context);
         Intent createShortcutIntent = ShortcutData.Companion.createShortcutIntent(context, "android.intent.action.VIEW", NotificationAction.Companion.getActivityClass(), getTag(notificationData), notificationDataMap);
         d10 = i.d(getSender(notificationData, bitmap2));
-        createShortcut = ShortcutUtilsKt.createShortcut(context, valueOf, title, title2, bitmap, d10, createShortcutIntent, (r17 & 64) != 0 ? 0 : 0);
-        return createShortcut;
+        return ShortcutUtilsKt.createShortcut$default(context, valueOf, title, title2, bitmap, d10, createShortcutIntent, 0, 64, null);
     }
 
     public static final int getSmallIcon(NotificationData notificationData) {
@@ -549,12 +612,12 @@ public final class NotificationDataUtilsKt {
     }
 
     /* renamed from: getSystemMessageUserJoin-_NT-lnE  reason: not valid java name */
-    private static final CharSequence m523getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
+    private static final CharSequence m532getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
         List l10;
         long j10;
         l10 = j.l(I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_001, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_002, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_003, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_004, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_005, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_006, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_007, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_008, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_009, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_010, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_011, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_012, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_013);
         if (userId != null) {
-            j10 = userId.m610unboximpl();
+            j10 = userId.m619unboximpl();
         } else {
             j10 = 0;
         }
@@ -572,7 +635,7 @@ public final class NotificationDataUtilsKt {
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x00a8, code lost:
         r0 = r3.getType();
-        r3 = r3.m504getChannelIdqMVnFVQ();
+        r3 = r3.m513getChannelIdqMVnFVQ();
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:?, code lost:
         return r0 + r3;
@@ -641,7 +704,7 @@ public final class NotificationDataUtilsKt {
             boolean r0 = r0.equals(r1)
             if (r0 == 0) goto L_0x00e0
             java.lang.String r0 = r3.getType()
-            com.discord.primitives.ApplicationId r3 = r3.m503getApplicationIdUtIrSio()
+            com.discord.primitives.ApplicationId r3 = r3.m512getApplicationIdUtIrSio()
             java.lang.StringBuilder r1 = new java.lang.StringBuilder
             r1.<init>()
             r1.append(r0)
@@ -658,7 +721,7 @@ public final class NotificationDataUtilsKt {
             boolean r0 = r0.equals(r1)
             if (r0 == 0) goto L_0x00e0
             java.lang.String r0 = r3.getType()
-            com.discord.primitives.UserId r3 = r3.m508getUserIdwUX8bhU()
+            com.discord.primitives.UserId r3 = r3.m517getUserIdwUX8bhU()
             java.lang.StringBuilder r1 = new java.lang.StringBuilder
             r1.<init>()
             r1.append(r0)
@@ -671,7 +734,7 @@ public final class NotificationDataUtilsKt {
             if (r0 == 0) goto L_0x00e0
         L_0x00a8:
             java.lang.String r0 = r3.getType()
-            com.discord.primitives.ChannelId r3 = r3.m504getChannelIdqMVnFVQ()
+            com.discord.primitives.ChannelId r3 = r3.m513getChannelIdqMVnFVQ()
             java.lang.StringBuilder r1 = new java.lang.StringBuilder
             r1.<init>()
             r1.append(r0)
@@ -712,10 +775,10 @@ public final class NotificationDataUtilsKt {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || (channelId = notificationData.m504getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || (channelId = notificationData.m513getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m505getGuildIdqOKuAAo(), channelId.m546unboximpl(), null), context, 0, false, 6, null)).b();
+        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m514getGuildIdqOKuAAo(), channelId.m555unboximpl(), null), context, 0, false, 6, null)).b();
     }
 
     public static final CharSequence getTitle(NotificationData notificationData, Context context) {
@@ -891,5 +954,32 @@ public final class NotificationDataUtilsKt {
         IconCompat h10 = IconCompat.h(bitmap);
         q.f(h10, "createWithBitmap(this)");
         return h10;
+    }
+
+    public static final JsonObject toNotificationMessage(NotificationData notificationData, JsonObject author) {
+        q.g(notificationData, "<this>");
+        q.g(author, "author");
+        String messageContent = notificationData.getMessageContent();
+        Long messageFlags = notificationData.getMessageFlags();
+        Integer messageType = notificationData.getMessageType();
+        String str = notificationData.m515getMessageIdN_6c4I0();
+        ChannelId channelId = notificationData.m513getChannelIdqMVnFVQ();
+        GuildId guildId = notificationData.m514getGuildIdqOKuAAo();
+        if (messageContent == null || messageFlags == null || messageType == null || str == null || channelId == null) {
+            return null;
+        }
+        String format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS", Locale.getDefault()).format(new Date());
+        s sVar = new s();
+        f.c(sVar, "content", messageContent);
+        f.b(sVar, "flags", messageFlags);
+        f.b(sVar, "type", notificationData.getMessageType());
+        f.c(sVar, "id", MessageId.m578toStringimpl(str));
+        f.c(sVar, "channel_id", ChannelId.m553toStringimpl(channelId.m555unboximpl()));
+        f.c(sVar, "timestamp", format);
+        sVar.b("author", author);
+        if (guildId != null) {
+            f.c(sVar, "guild_id", GuildId.m566toStringimpl(guildId.m568unboximpl()));
+        }
+        return sVar.a();
     }
 }

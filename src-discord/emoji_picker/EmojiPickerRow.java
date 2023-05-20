@@ -1,5 +1,6 @@
 package com.discord.emoji_picker;
 
+import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -12,20 +13,20 @@ public final class EmojiPickerRow {
     private final int rowContentPaddingVertical;
     private final int rowContentWidth;
 
-    @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u000f\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B'\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0007HÆ\u0003J3\u0010\u0013\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00072\b\u0010\u0015\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0017HÖ\u0001J\t\u0010\u0018\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\fR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\f¨\u0006\u0019"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerRow$Emoji;", "", "id", "", "name", "url", "disabled", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "getDisabled", "()Z", "getId", "()Ljava/lang/String;", "getName", "getUrl", "component1", "component2", "component3", "component4", "copy", "equals", "other", "hashCode", "", "toString", "emoji_picker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u000f\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B'\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0007HÆ\u0003J3\u0010\u0013\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00072\b\u0010\u0015\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0017HÖ\u0001J\t\u0010\u0018\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\fR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\f¨\u0006\u0019"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerRow$Emoji;", "", "id", "", ZeroconfModule.KEY_SERVICE_NAME, "url", "disabled", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "getDisabled", "()Z", "getId", "()Ljava/lang/String;", "getName", "getUrl", "component1", "component2", "component3", "component4", "copy", "equals", "other", "hashCode", "", "toString", "emoji_picker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes5.dex */
     public static final class Emoji {
         private final boolean disabled;
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f7435id;
+        private final String f7933id;
         private final String name;
         private final String url;
 
         public Emoji(String str, String name, String url, boolean z10) {
             q.g(name, "name");
             q.g(url, "url");
-            this.f7435id = str;
+            this.f7933id = str;
             this.name = name;
             this.url = url;
             this.disabled = z10;
@@ -33,7 +34,7 @@ public final class EmojiPickerRow {
 
         public static /* synthetic */ Emoji copy$default(Emoji emoji, String str, String str2, String str3, boolean z10, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = emoji.f7435id;
+                str = emoji.f7933id;
             }
             if ((i10 & 2) != 0) {
                 str2 = emoji.name;
@@ -48,7 +49,7 @@ public final class EmojiPickerRow {
         }
 
         public final String component1() {
-            return this.f7435id;
+            return this.f7933id;
         }
 
         public final String component2() {
@@ -77,7 +78,7 @@ public final class EmojiPickerRow {
                 return false;
             }
             Emoji emoji = (Emoji) obj;
-            return q.b(this.f7435id, emoji.f7435id) && q.b(this.name, emoji.name) && q.b(this.url, emoji.url) && this.disabled == emoji.disabled;
+            return q.b(this.f7933id, emoji.f7933id) && q.b(this.name, emoji.name) && q.b(this.url, emoji.url) && this.disabled == emoji.disabled;
         }
 
         public final boolean getDisabled() {
@@ -85,7 +86,7 @@ public final class EmojiPickerRow {
         }
 
         public final String getId() {
-            return this.f7435id;
+            return this.f7933id;
         }
 
         public final String getName() {
@@ -97,7 +98,7 @@ public final class EmojiPickerRow {
         }
 
         public int hashCode() {
-            String str = this.f7435id;
+            String str = this.f7933id;
             int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31) + this.url.hashCode()) * 31;
             boolean z10 = this.disabled;
             if (z10) {
@@ -110,7 +111,7 @@ public final class EmojiPickerRow {
         }
 
         public String toString() {
-            String str = this.f7435id;
+            String str = this.f7933id;
             String str2 = this.name;
             String str3 = this.url;
             boolean z10 = this.disabled;

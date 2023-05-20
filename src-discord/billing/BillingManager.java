@@ -266,7 +266,7 @@ public final class BillingManager {
         this.onConnectionUpdated = onConnectionUpdated;
         this.onPurchaseUpdated = onPurchaseUpdated;
         this.onDowngradeCommand = onDowngradeCommand;
-        n1 n1Var = n1.f22350k;
+        n1 n1Var = n1.f22390k;
         this.coroutineScope = n1Var;
         this.backoff = new ExponentialBackoff(n1Var, 1000L, 300000L, 10);
     }
@@ -409,9 +409,9 @@ public final class BillingManager {
         q.g(billingResult, "billingResult");
         q.g(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f22061k) {
-                completed.f22061k = true;
-                Unit unit = Unit.f22036a;
+            if (!completed.f22101k) {
+                completed.f22101k = true;
+                Unit unit = Unit.f22076a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -469,9 +469,9 @@ public final class BillingManager {
         q.g(completed, "$completed");
         q.g(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f22061k) {
-                completed.f22061k = true;
-                Unit unit = Unit.f22036a;
+            if (!completed.f22101k) {
+                completed.f22101k = true;
+                Unit unit = Unit.f22076a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);

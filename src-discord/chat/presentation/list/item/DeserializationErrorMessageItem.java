@@ -11,7 +11,7 @@ public final class DeserializationErrorMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeserializationErrorMessageItem(ErrorMessage message) {
-        super(message.m5getId3Eiw7ao(), null);
+        super(message.m6getId3Eiw7ao(), null);
         q.g(message, "message");
         this.message = message;
     }

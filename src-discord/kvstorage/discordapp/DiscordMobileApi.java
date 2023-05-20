@@ -15,4 +15,6 @@ public final class DiscordMobileApi {
     private static native void nativeInitialize(String str);
 
     public static native void openAsync(String str);
+
+    public static native void putMessage(String str, String str2, String str3, String str4, String str5);
 }

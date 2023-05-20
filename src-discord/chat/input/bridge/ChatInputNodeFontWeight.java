@@ -1,15 +1,15 @@
 package com.discord.chat.input.bridge;
 
+import jg.n;
+import jg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
-import nf.n;
-import nf.p;
-import yi.f;
+import uj.f;
 
-@f
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0004\b\u0087\u0001\u0018\u0000 \u00042\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0004B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/input/bridge/ChatInputNodeFontWeight;", "", "(Ljava/lang/String;I)V", "Bold", "Companion", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@f
 /* loaded from: classes5.dex */
 public enum ChatInputNodeFontWeight {
     Bold;
@@ -37,8 +37,8 @@ public enum ChatInputNodeFontWeight {
     }
 
     static {
-        Lazy<KSerializer<Object>> b10;
-        b10 = n.b(p.PUBLICATION, ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1.INSTANCE);
-        $cachedSerializer$delegate = b10;
+        Lazy<KSerializer<Object>> a10;
+        a10 = n.a(p.PUBLICATION, ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        $cachedSerializer$delegate = a10;
     }
 }

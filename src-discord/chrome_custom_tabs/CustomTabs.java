@@ -23,7 +23,7 @@ public final class CustomTabs {
         q.g(uri, "uri");
         q.g(onFailure, "onFailure");
         if (CustomTabsPackages.INSTANCE.getCustomTabsDefaultPackage(context) != null) {
-            a a10 = new a.C0345a().b(i10).d(i10).c(i10).a();
+            a a10 = new a.C0357a().b(i10).d(i10).c(i10).a();
             q.f(a10, "Builder()\n              …\n                .build()");
             b.a e10 = new b.a().b(a10).e(z10);
             if (!(num == null || num2 == null)) {
@@ -35,7 +35,7 @@ public final class CustomTabs {
             b a11 = e10.a();
             q.f(a11, "Builder()\n              …\n                .build()");
             try {
-                a11.f23611a.setData(uri);
+                a11.f24335a.setData(uri);
                 a11.a(context, uri);
             } catch (ActivityNotFoundException e11) {
                 onFailure.invoke(e11);

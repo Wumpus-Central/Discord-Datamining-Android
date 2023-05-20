@@ -3,10 +3,10 @@ package com.discord.image.fresco;
 import android.net.Uri;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ViewProps;
-import e4.f;
+import h4.f;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
-import ri.u;
+import nj.u;
 
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\u001a4\u0010\t\u001a\u00020\u0007*\u00020\u00002\b\u0010\u0002\u001a\u0004\u0018\u00010\u00012\b\b\u0002\u0010\u0004\u001a\u00020\u00032\u0014\b\u0002\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005\u001a\u0012\u0010\u000b\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u0001H\u0002¨\u0006\f"}, d2 = {"Lcom/facebook/drawee/view/SimpleDraweeView;", "", "imageUrl", "", "autoPlayAnimations", "Lkotlin/Function1;", "Lcom/facebook/drawee/backends/pipeline/PipelineDraweeControllerBuilder;", "", ViewProps.TRANSFORM, "setOptionalImageUrl", "url", "hasGif", "fresco_release"}, k = 2, mv = {1, 8, 0})
 /* loaded from: classes8.dex */
@@ -35,7 +35,7 @@ public final class SetOptionalImageUrlKt {
             kotlin.jvm.internal.q.g(r5, r0)
             r0 = 0
             if (r3 == 0) goto L_0x0016
-            boolean r1 = ri.l.w(r3)
+            boolean r1 = nj.l.w(r3)
             if (r1 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -50,7 +50,7 @@ public final class SetOptionalImageUrlKt {
             r0 = 8
         L_0x001c:
             r2.setVisibility(r0)
-            com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r0 = l4.c.g()
+            com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r0 = o4.c.g()
             com.facebook.imagepipeline.request.ImageRequest r3 = com.facebook.imagepipeline.request.ImageRequest.fromUri(r3)
             com.facebook.drawee.controller.AbstractDraweeControllerBuilder r3 = r0.D(r3)
             com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r3 = (com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder) r3

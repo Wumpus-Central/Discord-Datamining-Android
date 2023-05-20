@@ -41,7 +41,7 @@ public final class UpdateSystemUiKt {
             int r1 = android.os.Build.VERSION.SDK_INT
             r2 = 30
             if (r1 < r2) goto L_0x002e
-            android.view.WindowInsetsController r3 = o3.a.a(r3)
+            android.view.WindowInsetsController r3 = r3.a.a(r3)
             if (r3 == 0) goto L_0x002e
             androidx.core.view.WindowInsetsControllerCompat r3 = androidx.core.view.WindowInsetsControllerCompat.f(r3)
             java.lang.String r1 = "toWindowInsetsControllerCompat(it)"

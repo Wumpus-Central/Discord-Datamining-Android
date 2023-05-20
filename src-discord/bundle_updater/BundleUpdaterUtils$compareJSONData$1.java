@@ -1,11 +1,11 @@
 package com.discord.bundle_updater;
 
+import jg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
-import nf.x;
 import org.json.JSONObject;
 
 /* JADX INFO: Access modifiers changed from: package-private */

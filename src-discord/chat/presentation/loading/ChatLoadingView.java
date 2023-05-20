@@ -69,7 +69,7 @@ public final class ChatLoadingView extends ConstraintLayout {
         button4.setTextColor(i10);
         Button button5 = this.binding.button;
         q.f(button5, "binding.button");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button5, false, new View.OnClickListener() { // from class: e3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button5, false, new View.OnClickListener() { // from class: h3.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ChatLoadingView.showButton$lambda$0(Function0.this, view);

@@ -19,6 +19,6 @@ public final class InteractionStatusViewHolder extends MessagePartViewHolder {
 
     public final void bind(InteractionStatusMessageAccessory accessory) {
         q.g(accessory, "accessory");
-        this.interactionStatusView.m299setInteractionStatusntcYbpo(accessory.mo203getMessageId3Eiw7ao(), accessory.getInteractionStatus());
+        this.interactionStatusView.m300setInteractionStatusntcYbpo(accessory.mo204getMessageId3Eiw7ao(), accessory.getInteractionStatus());
     }
 }

@@ -48,13 +48,13 @@ public final class InviteToSpeakView extends LinearLayout {
     public static final void setProps$lambda$1(Function1 onInviteToSpeakClicked, Message message, View view) {
         q.g(onInviteToSpeakClicked, "$onInviteToSpeakClicked");
         q.g(message, "$message");
-        onInviteToSpeakClicked.invoke(MessageId.m563boximpl(message.m16getId3Eiw7ao()));
+        onInviteToSpeakClicked.invoke(MessageId.m572boximpl(message.m17getId3Eiw7ao()));
     }
 
     public final void setProps(final Message message, final Function1<? super MessageId, Unit> onInviteToSpeakClicked) {
         q.g(message, "message");
         q.g(onInviteToSpeakClicked, "onInviteToSpeakClicked");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: d3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: g3.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 InviteToSpeakView.setProps$lambda$1(Function1.this, message, view);

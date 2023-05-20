@@ -19,7 +19,7 @@ public final class TextUtilsKt$toSpannable$5 extends s implements Function2<Stri
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

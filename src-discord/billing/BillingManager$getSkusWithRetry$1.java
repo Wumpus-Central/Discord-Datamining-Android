@@ -12,6 +12,7 @@ import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
 import com.facebook.react.bridge.Promise;
 import java.util.List;
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -24,9 +25,8 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.p;
-import nf.t;
-import tf.c;
-import tf.d;
+import pg.c;
+import pg.d;
 import v2.g;
 
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -74,7 +74,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
 
         public final Object invoke(Continuation<? super BillingManager.SkuDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -98,7 +98,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                 this.label = 1;
                 c10 = c.c(this);
                 final p pVar = new p(c10, 1);
-                pVar.C();
+                pVar.B();
                 billingClient = billingManager.billingClient;
                 if (billingClient == null) {
                     q.y("billingClient");
@@ -126,7 +126,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                         @Override // kotlin.jvm.functions.Function1
                         public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
                             invoke2(th2);
-                            return Unit.f22036a;
+                            return Unit.f22076a;
                         }
 
                         /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -190,7 +190,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
 
         public final Object invoke(BillingManager.SkuDetailsResponse skuDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(skuDetailsResponse, continuation)).invokeSuspend(Unit.f22036a);
+            return ((AnonymousClass2) create(skuDetailsResponse, continuation)).invokeSuspend(Unit.f22076a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -225,7 +225,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getSkusWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((BillingManager$getSkusWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -273,6 +273,6 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                 CrashReporting.INSTANCE.captureMessage("Found exception when exponentially retrying querySkuDetails call", e10);
             }
         }
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 }

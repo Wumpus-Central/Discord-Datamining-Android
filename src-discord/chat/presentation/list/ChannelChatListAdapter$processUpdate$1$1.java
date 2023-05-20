@@ -1,5 +1,6 @@
 package com.discord.chat.presentation.list;
 
+import jg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -7,8 +8,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import nf.t;
-import tf.d;
+import pg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -31,7 +31,7 @@ public final class ChannelChatListAdapter$processUpdate$1$1 extends k implements
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22036a);
+        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -41,7 +41,7 @@ public final class ChannelChatListAdapter$processUpdate$1$1 extends k implements
             t.b(obj);
             this.this$0.isProcessingUpdate = false;
             this.this$0.processNextUpdate();
-            return Unit.f22036a;
+            return Unit.f22076a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

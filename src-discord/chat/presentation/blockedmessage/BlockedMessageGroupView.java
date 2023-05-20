@@ -53,7 +53,7 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
     public static final void bind$lambda$2(ChatEventHandler eventHandler, BlockedGroupChatListItem item, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(item, "$item");
-        eventHandler.mo167onTapToggleBlockedMessages1xi1bu0(MessageId.m564constructorimpl(item.getId()));
+        eventHandler.mo168onTapToggleBlockedMessages1xi1bu0(MessageId.m573constructorimpl(item.getId()));
     }
 
     @SuppressLint({"NotifyDataSetChanged"})
@@ -61,7 +61,7 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
         int i10;
         q.g(item, "item");
         q.g(eventHandler, "eventHandler");
-        setOnClickListener(new View.OnClickListener() { // from class: b3.a
+        setOnClickListener(new View.OnClickListener() { // from class: e3.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 BlockedMessageGroupView.bind$lambda$2(ChatEventHandler.this, item, view);

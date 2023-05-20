@@ -4,17 +4,17 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.util.Base64;
+import cl.f;
 import com.discord.logging.Log;
-import gk.f;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import jg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.e;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import nf.n;
 
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u0007\u0018\u0000 \f2\u00020\u0001:\u0001\fB\u000f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0004R!\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u00068FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\t¨\u0006\r"}, d2 = {"Lcom/discord/phone_verification/AppSignatureHelper;", "Landroid/content/ContextWrapper;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "appSignatures", "", "", "getAppSignatures", "()Ljava/util/List;", "appSignatures$delegate", "Lkotlin/Lazy;", "Companion", "phone_verification_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @SuppressLint({"PackageManagerGetSignatures"})
@@ -72,9 +72,9 @@ public final class AppSignatureHelper extends ContextWrapper {
 
     public AppSignatureHelper(Context context) {
         super(context);
-        Lazy a10;
-        a10 = n.a(new AppSignatureHelper$appSignatures$2(this));
-        this.appSignatures$delegate = a10;
+        Lazy b10;
+        b10 = n.b(new AppSignatureHelper$appSignatures$2(this));
+        this.appSignatures$delegate = b10;
     }
 
     public final List<String> getAppSignatures() {

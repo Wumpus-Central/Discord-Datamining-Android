@@ -1,11 +1,6 @@
 package com.discord.chat.bridge.codedlinks;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bj.a2;
-import bj.f;
-import bj.f0;
-import bj.h;
-import bj.m0;
 import com.discord.chat.bridge.codedlinks.CodedLinkExtendedType;
 import com.discord.chat.bridge.codedlinks.InviteType;
 import com.discord.chat.bridge.structurabletext.AnnotatedStructurableText;
@@ -23,10 +18,15 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import yi.n;
-import zi.a;
+import uj.n;
+import vj.a;
+import xj.a2;
+import xj.f;
+import xj.f0;
+import xj.h;
+import xj.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl.$serializer", "Lbj/f0;", "Lcom/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl.$serializer", "Lxj/f0;", "Lcom/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes5.dex */
 public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<EmbeddedActivityInviteEmbedImpl> {
     public static final EmbeddedActivityInviteEmbedImpl$$serializer INSTANCE;
@@ -74,11 +74,11 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
     private EmbeddedActivityInviteEmbedImpl$$serializer() {
     }
 
-    @Override // bj.f0
+    @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f5992a;
-        a2 a2Var = a2.f5917a;
-        h hVar = h.f5959a;
+        m0 m0Var = m0.f32384a;
+        a2 a2Var = a2.f32309a;
+        h hVar = h.f32351a;
         return new KSerializer[]{m0Var, m0Var, m0Var, a.u(a2Var), a.u(InviteType.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(hVar), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(hVar), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), new f(a2Var), CodedLinkExtendedType.Serializer.INSTANCE, a.u(AnnotatedStructurableTextSerializer.INSTANCE), a2Var, hVar};
     }
 
@@ -125,17 +125,17 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
             i12 = b10.i(descriptor2, 0);
             i11 = b10.i(descriptor2, 1);
             i10 = b10.i(descriptor2, 2);
-            a2 a2Var = a2.f5917a;
+            a2 a2Var = a2.f32309a;
             obj22 = b10.n(descriptor2, 3, a2Var, null);
             obj21 = b10.n(descriptor2, 4, InviteType.Serializer.INSTANCE, null);
-            m0 m0Var = m0.f5992a;
+            m0 m0Var = m0.f32384a;
             obj10 = b10.n(descriptor2, 5, m0Var, null);
             obj20 = b10.n(descriptor2, 6, m0Var, null);
             obj19 = b10.n(descriptor2, 7, m0Var, null);
             obj4 = b10.n(descriptor2, 8, a2Var, null);
             obj18 = b10.n(descriptor2, 9, a2Var, null);
             obj17 = b10.n(descriptor2, 10, m0Var, null);
-            h hVar = h.f5959a;
+            h hVar = h.f32351a;
             obj12 = b10.n(descriptor2, 11, hVar, null);
             obj13 = b10.n(descriptor2, 12, hVar, null);
             obj14 = b10.n(descriptor2, 13, m0Var, null);
@@ -215,7 +215,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         z11 = false;
-                        Unit unit = Unit.f22036a;
+                        Unit unit = Unit.f22076a;
                     case 0:
                         obj29 = obj29;
                         obj30 = obj30;
@@ -236,7 +236,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                         i12 = b10.i(descriptor2, 0);
                         i15 |= 1;
-                        Unit unit2 = Unit.f22036a;
+                        Unit unit2 = Unit.f22076a;
                     case 1:
                         obj29 = obj29;
                         obj30 = obj30;
@@ -257,7 +257,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                         i11 = b10.i(descriptor2, 1);
                         i15 |= 2;
-                        Unit unit3 = Unit.f22036a;
+                        Unit unit3 = Unit.f22076a;
                     case 2:
                         obj29 = obj29;
                         obj30 = obj30;
@@ -278,7 +278,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                         i10 = b10.i(descriptor2, 2);
                         i15 |= 4;
-                        Unit unit4 = Unit.f22036a;
+                        Unit unit4 = Unit.f22076a;
                     case 3:
                         obj29 = obj29;
                         obj30 = obj30;
@@ -297,9 +297,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj41 = obj41;
-                        obj40 = b10.n(descriptor2, 3, a2.f5917a, obj40);
+                        obj40 = b10.n(descriptor2, 3, a2.f32309a, obj40);
                         i15 |= 8;
-                        Unit unit5 = Unit.f22036a;
+                        Unit unit5 = Unit.f22076a;
                     case 4:
                         obj30 = obj30;
                         obj28 = obj28;
@@ -318,7 +318,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj42 = obj42;
                         obj41 = b10.n(descriptor2, 4, InviteType.Serializer.INSTANCE, obj41);
                         i15 |= 16;
-                        Unit unit6 = Unit.f22036a;
+                        Unit unit6 = Unit.f22076a;
                         obj29 = obj29;
                     case 5:
                         obj29 = obj29;
@@ -336,9 +336,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj43 = obj43;
-                        obj42 = b10.n(descriptor2, 5, m0.f5992a, obj42);
+                        obj42 = b10.n(descriptor2, 5, m0.f32384a, obj42);
                         i15 |= 32;
-                        Unit unit7 = Unit.f22036a;
+                        Unit unit7 = Unit.f22076a;
                         obj41 = obj41;
                     case 6:
                         obj30 = obj30;
@@ -354,9 +354,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj44 = obj44;
-                        obj43 = b10.n(descriptor2, 6, m0.f5992a, obj43);
+                        obj43 = b10.n(descriptor2, 6, m0.f32384a, obj43);
                         i15 |= 64;
-                        Unit unit8 = Unit.f22036a;
+                        Unit unit8 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -374,9 +374,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj45 = obj45;
-                        obj44 = b10.n(descriptor2, 7, m0.f5992a, obj44);
+                        obj44 = b10.n(descriptor2, 7, m0.f32384a, obj44);
                         i15 |= 128;
-                        Unit unit9 = Unit.f22036a;
+                        Unit unit9 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -392,9 +392,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj46 = obj46;
-                        obj45 = b10.n(descriptor2, 8, a2.f5917a, obj45);
+                        obj45 = b10.n(descriptor2, 8, a2.f32309a, obj45);
                         i15 |= Spliterator.NONNULL;
-                        Unit unit10 = Unit.f22036a;
+                        Unit unit10 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -412,9 +412,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj47 = obj47;
-                        obj46 = b10.n(descriptor2, 9, a2.f5917a, obj46);
+                        obj46 = b10.n(descriptor2, 9, a2.f32309a, obj46);
                         i15 |= 512;
-                        Unit unit11 = Unit.f22036a;
+                        Unit unit11 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -430,9 +430,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj48 = obj48;
-                        obj47 = b10.n(descriptor2, 10, m0.f5992a, obj47);
+                        obj47 = b10.n(descriptor2, 10, m0.f32384a, obj47);
                         i15 |= Spliterator.IMMUTABLE;
-                        Unit unit12 = Unit.f22036a;
+                        Unit unit12 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -450,9 +450,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj49 = obj49;
-                        obj48 = b10.n(descriptor2, 11, h.f5959a, obj48);
+                        obj48 = b10.n(descriptor2, 11, h.f32351a, obj48);
                         i15 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f22036a;
+                        Unit unit13 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -468,9 +468,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj50 = obj50;
-                        obj49 = b10.n(descriptor2, 12, h.f5959a, obj49);
+                        obj49 = b10.n(descriptor2, 12, h.f32351a, obj49);
                         i15 |= 4096;
-                        Unit unit14 = Unit.f22036a;
+                        Unit unit14 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -488,9 +488,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj51 = obj51;
-                        obj50 = b10.n(descriptor2, 13, m0.f5992a, obj50);
+                        obj50 = b10.n(descriptor2, 13, m0.f32384a, obj50);
                         i15 |= 8192;
-                        Unit unit15 = Unit.f22036a;
+                        Unit unit15 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -506,9 +506,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                         obj36 = obj36;
                         obj52 = obj52;
-                        obj51 = b10.n(descriptor2, 14, m0.f5992a, obj51);
+                        obj51 = b10.n(descriptor2, 14, m0.f32384a, obj51);
                         i15 |= Spliterator.SUBSIZED;
-                        Unit unit16 = Unit.f22036a;
+                        Unit unit16 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -526,9 +526,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj28 = obj28;
                         obj36 = obj36;
                         obj53 = obj53;
-                        obj52 = b10.n(descriptor2, 15, h.f5959a, obj52);
+                        obj52 = b10.n(descriptor2, 15, h.f32351a, obj52);
                         i15 |= 32768;
-                        Unit unit17 = Unit.f22036a;
+                        Unit unit17 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -544,9 +544,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj30 = obj30;
                         obj28 = obj28;
                         obj36 = obj36;
-                        obj53 = b10.n(descriptor2, 16, m0.f5992a, obj53);
+                        obj53 = b10.n(descriptor2, 16, m0.f32384a, obj53);
                         i15 |= 65536;
-                        Unit unit18 = Unit.f22036a;
+                        Unit unit18 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -564,9 +564,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj29 = obj29;
                         obj30 = obj30;
                         obj28 = obj28;
-                        obj36 = b10.n(descriptor2, 17, a2.f5917a, obj36);
+                        obj36 = b10.n(descriptor2, 17, a2.f32309a, obj36);
                         i15 |= 131072;
-                        Unit unit19 = Unit.f22036a;
+                        Unit unit19 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -582,9 +582,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj53 = obj53;
                     case 18:
                         obj30 = obj30;
-                        obj28 = b10.n(descriptor2, 18, a2.f5917a, obj28);
+                        obj28 = b10.n(descriptor2, 18, a2.f32309a, obj28);
                         i15 |= 262144;
-                        Unit unit20 = Unit.f22036a;
+                        Unit unit20 = Unit.f22076a;
                         obj29 = obj29;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -602,9 +602,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 19:
                         obj29 = obj29;
-                        obj37 = b10.n(descriptor2, 19, a2.f5917a, obj37);
+                        obj37 = b10.n(descriptor2, 19, a2.f32309a, obj37);
                         i15 |= 524288;
-                        Unit unit21 = Unit.f22036a;
+                        Unit unit21 = Unit.f22076a;
                         obj30 = obj30;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -622,9 +622,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                         obj28 = obj28;
                     case 20:
-                        obj54 = b10.n(descriptor2, 20, m0.f5992a, obj54);
+                        obj54 = b10.n(descriptor2, 20, m0.f32384a, obj54);
                         i15 |= 1048576;
-                        Unit unit22 = Unit.f22036a;
+                        Unit unit22 = Unit.f22076a;
                         obj30 = obj30;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -643,10 +643,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj28 = obj28;
                     case 21:
                         obj28 = obj28;
-                        obj29 = b10.n(descriptor2, 21, m0.f5992a, obj29);
+                        obj29 = b10.n(descriptor2, 21, m0.f32384a, obj29);
                         i14 = 2097152;
                         i15 |= i14;
-                        Unit unit23 = Unit.f22036a;
+                        Unit unit23 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -663,10 +663,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 22:
                         obj28 = obj28;
-                        obj35 = b10.n(descriptor2, 22, m0.f5992a, obj35);
+                        obj35 = b10.n(descriptor2, 22, m0.f32384a, obj35);
                         i14 = 4194304;
                         i15 |= i14;
-                        Unit unit232 = Unit.f22036a;
+                        Unit unit232 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -683,10 +683,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 23:
                         obj28 = obj28;
-                        obj32 = b10.n(descriptor2, 23, a2.f5917a, obj32);
+                        obj32 = b10.n(descriptor2, 23, a2.f32309a, obj32);
                         i14 = 8388608;
                         i15 |= i14;
-                        Unit unit2322 = Unit.f22036a;
+                        Unit unit2322 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -703,10 +703,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 24:
                         obj28 = obj28;
-                        obj33 = b10.n(descriptor2, 24, a2.f5917a, obj33);
+                        obj33 = b10.n(descriptor2, 24, a2.f32309a, obj33);
                         i14 = 16777216;
                         i15 |= i14;
-                        Unit unit23222 = Unit.f22036a;
+                        Unit unit23222 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -723,10 +723,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 25:
                         obj28 = obj28;
-                        obj30 = b10.n(descriptor2, 25, m0.f5992a, obj30);
+                        obj30 = b10.n(descriptor2, 25, m0.f32384a, obj30);
                         i14 = 33554432;
                         i15 |= i14;
-                        Unit unit232222 = Unit.f22036a;
+                        Unit unit232222 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -743,10 +743,10 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 26:
                         obj28 = obj28;
-                        obj31 = b10.n(descriptor2, 26, a2.f5917a, obj31);
+                        obj31 = b10.n(descriptor2, 26, a2.f32309a, obj31);
                         i14 = 67108864;
                         i15 |= i14;
-                        Unit unit2322222 = Unit.f22036a;
+                        Unit unit2322222 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -763,9 +763,9 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj36 = obj36;
                     case 27:
                         obj28 = obj28;
-                        obj39 = b10.y(descriptor2, 27, new f(a2.f5917a), obj39);
+                        obj39 = b10.y(descriptor2, 27, new f(a2.f32309a), obj39);
                         i15 |= 134217728;
-                        Unit unit24 = Unit.f22036a;
+                        Unit unit24 = Unit.f22076a;
                         obj30 = obj30;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -786,7 +786,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj34 = b10.y(descriptor2, 28, CodedLinkExtendedType.Serializer.INSTANCE, obj34);
                         i14 = 268435456;
                         i15 |= i14;
-                        Unit unit23222222 = Unit.f22036a;
+                        Unit unit23222222 = Unit.f22076a;
                         obj41 = obj41;
                         obj42 = obj42;
                         obj43 = obj43;
@@ -805,7 +805,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                         obj28 = obj28;
                         obj38 = b10.n(descriptor2, 29, AnnotatedStructurableTextSerializer.INSTANCE, obj38);
                         i15 |= 536870912;
-                        Unit unit25 = Unit.f22036a;
+                        Unit unit25 = Unit.f22076a;
                         obj30 = obj30;
                         obj41 = obj41;
                         obj42 = obj42;
@@ -824,7 +824,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                     case 30:
                         str = b10.m(descriptor2, 30);
                         i15 |= 1073741824;
-                        Unit unit26 = Unit.f22036a;
+                        Unit unit26 = Unit.f22076a;
                         obj30 = obj30;
                         obj28 = obj28;
                         obj41 = obj41;
@@ -844,7 +844,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
                     case 31:
                         z10 = b10.C(descriptor2, 31);
                         i15 |= Integer.MIN_VALUE;
-                        Unit unit27 = Unit.f22036a;
+                        Unit unit27 = Unit.f22076a;
                         obj30 = obj30;
                         obj28 = obj28;
                         obj41 = obj41;
@@ -898,7 +898,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
         return new EmbeddedActivityInviteEmbedImpl(i13, 0, i12, i11, i10, (String) obj22, (InviteType) obj21, (Integer) obj10, (Integer) obj20, (Integer) obj19, (String) obj4, (String) obj18, (Integer) obj17, (Boolean) obj12, (Boolean) obj13, (Integer) obj14, (Integer) obj16, (Boolean) obj15, (Integer) obj11, (String) obj27, (String) obj26, (String) obj25, (Integer) obj24, (Integer) obj23, (Integer) obj9, (String) obj8, (String) obj7, (Integer) obj6, (String) obj5, (List) obj, (CodedLinkExtendedType) obj3, (AnnotatedStructurableText) obj2, str, z10, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, yi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -912,7 +912,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
         b10.c(descriptor2);
     }
 
-    @Override // bj.f0
+    @Override // xj.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

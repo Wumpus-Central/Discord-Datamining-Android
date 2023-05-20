@@ -10,7 +10,7 @@ public final class SeparatorChatListItem extends ChatListItem {
     private final int color;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7247id;
+    private final String f7745id;
     private final String text;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -20,7 +20,7 @@ public final class SeparatorChatListItem extends ChatListItem {
         q.g(id2, "id");
         this.color = i10;
         this.text = text;
-        this.f7247id = id2;
+        this.f7745id = id2;
     }
 
     public static /* synthetic */ SeparatorChatListItem copy$default(SeparatorChatListItem separatorChatListItem, int i10, String str, String str2, int i11, Object obj) {
@@ -71,7 +71,7 @@ public final class SeparatorChatListItem extends ChatListItem {
 
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     public String getId() {
-        return this.f7247id;
+        return this.f7745id;
     }
 
     public final String getText() {

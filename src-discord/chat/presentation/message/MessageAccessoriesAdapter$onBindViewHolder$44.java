@@ -21,13 +21,13 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$44 exten
 
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(GuildId guildId, ChannelId channelId, ChannelId channelId2, MessageId messageId) {
-        m194invokekUTrps(guildId.m559unboximpl(), channelId.m546unboximpl(), channelId2.m546unboximpl(), messageId.m571unboximpl());
-        return Unit.f22036a;
+        m195invokekUTrps(guildId.m568unboximpl(), channelId.m555unboximpl(), channelId2.m555unboximpl(), messageId.m580unboximpl());
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke-kUTrp-s  reason: not valid java name */
-    public final void m194invokekUTrps(long j10, long j11, long j12, String p32) {
+    public final void m195invokekUTrps(long j10, long j11, long j12, String p32) {
         q.g(p32, "p3");
-        ((ChatEventHandler) this.receiver).mo160onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
+        ((ChatEventHandler) this.receiver).mo161onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
     }
 }

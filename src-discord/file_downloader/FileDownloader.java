@@ -4,13 +4,13 @@ import android.content.Context;
 import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
+import jg.n;
+import kg.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.d;
-import nf.n;
-import of.v;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -22,9 +22,9 @@ public final class FileDownloader {
     private static final Lazy defaultClient$delegate;
 
     static {
-        Lazy a10;
-        a10 = n.a(FileDownloader$defaultClient$2.INSTANCE);
-        defaultClient$delegate = a10;
+        Lazy b10;
+        b10 = n.b(FileDownloader$defaultClient$2.INSTANCE);
+        defaultClient$delegate = b10;
     }
 
     private FileDownloader() {

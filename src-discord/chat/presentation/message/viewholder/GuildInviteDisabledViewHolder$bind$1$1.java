@@ -26,12 +26,12 @@ public final class GuildInviteDisabledViewHolder$bind$1$1 extends s implements F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22036a;
+        return Unit.f22076a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(String it) {
         q.g(it, "it");
-        ChatEventHandler.DefaultImpls.m173onLinkClickedu7_MRrM$default(this.this$0.getEventHandler(), this.$inviteAccessory.mo203getMessageId3Eiw7ao(), it, null, 4, null);
+        ChatEventHandler.DefaultImpls.m174onLinkClickedu7_MRrM$default(this.this$0.getEventHandler(), this.$inviteAccessory.mo204getMessageId3Eiw7ao(), it, null, 4, null);
     }
 }
