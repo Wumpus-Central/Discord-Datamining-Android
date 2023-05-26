@@ -965,7 +965,7 @@ public final class NotificationDataUtilsKt {
         String str = notificationData.m515getMessageIdN_6c4I0();
         ChannelId channelId = notificationData.m513getChannelIdqMVnFVQ();
         GuildId guildId = notificationData.m514getGuildIdqOKuAAo();
-        if (messageContent == null || messageFlags == null || messageType == null || str == null || channelId == null) {
+        if (messageContent == null || messageType == null || str == null || channelId == null) {
             return null;
         }
         String format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS", Locale.getDefault()).format(new Date());
