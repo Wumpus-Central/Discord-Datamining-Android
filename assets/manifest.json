@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "181207",
+        "build": "181208",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "6202829927cc54d1d93433d425e954ac",
+        "app/src/main/assets/index.android.bundle": "d7ec952e98fd57fdc9e828999f4f1212",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -477,7 +477,6 @@
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_add_recipient.png": "2b22556d6658cf6922d56b3cd0ae8a40",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_blocked_users.png": "365e1f9367b12a6aeef8efe49746c1fd",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_contact_invite_suggestions.png": "681b695d001ab830aa76c9a010ed97db",
-        "app/src/main/res/drawable-xhdpi/images_native_empties_empty_contacts.png": "95b0f832b2de26aa47f50bc3d50de076",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_dms_activities.png": "a110b23b43885772cdabfaa625859bf7",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_dms.png": "174accd13c59dff6001c6f911998002d",
         "app/src/main/res/drawable-xhdpi/images_native_empties_empty_expanded_friend_list_dark.png": "a28655d5d278e633d72bb0b4022c8d53",
@@ -626,6 +625,7 @@
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_ban_24px.png": "88b73cba708e8f4396aa3c1e5c315b9d",
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_bell_snooze_16px.png": "d70bb9e31417099051ded78828304d78",
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_big_arrow_down.png": "1131e189b4b97ff20869740f1469c043",
+        "app/src/main/res/drawable-xhdpi/images_native_icons_ic_binoculars.png": "13537b3dd24c4a1d60d4364be6893aee",
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_bulb.png": "81267bd7758586e0e0dad2a728771558",
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_call_audio_stop_24px.png": "dff8c418c0a3748b533e4a670b139296",
         "app/src/main/res/drawable-xhdpi/images_native_icons_ic_call_ended.png": "cd802722d28eed8ef1cadad042471ad2",
@@ -1658,7 +1658,6 @@
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_add_recipient.png": "e2e87f974dcd4c64781e7dae776831c1",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_blocked_users.png": "0a41e0510e2c1c1b2203275ebda463df",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_contact_invite_suggestions.png": "5cac66bb461a5ce4997d8666d4a569bd",
-        "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_contacts.png": "7a958a9fbcded4c33db4e781a72ff191",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_dms_activities.png": "31220175dd8cf88d1708843805ccef79",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_dms.png": "475c841cb6f9687486e65371132cb3b3",
         "app/src/main/res/drawable-xxhdpi/images_native_empties_empty_expanded_friend_list_dark.png": "6cccce159085f614bb3859554326032a",
@@ -1806,6 +1805,7 @@
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_ban_24px.png": "2aa5bc5aace437a8ec178a65e543b40a",
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_bell_snooze_16px.png": "330d6b17baffc33129f6320b51023c56",
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_big_arrow_down.png": "8eba9b70292d2bd738be3b412ca86c85",
+        "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_binoculars.png": "e11f7ec33ea8e21bf20222a1854cfb8e",
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_bulb.png": "cfb2be90c8252d92a587b1da80de6320",
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_call_audio_stop_24px.png": "2988e89374250abde7a79b6f83da18b0",
         "app/src/main/res/drawable-xxhdpi/images_native_icons_ic_call_ended.png": "e2ad96a490f1845e2b175f72314765b1",

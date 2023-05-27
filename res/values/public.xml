@@ -3610,10 +3610,10 @@
     <public type="drawable" name="APKTOOL_DUMMY_180" id="0x7f080180" />
     <public type="drawable" name="APKTOOL_DUMMY_181" id="0x7f080181" />
     <public type="drawable" name="APKTOOL_DUMMY_182" id="0x7f080182" />
-    <public type="drawable" name="APKTOOL_DUMMY_183" id="0x7f080183" />
+    <public type="drawable" name="APKTOOL_DUMMY_184" id="0x7f080184" />
     <public type="drawable" name="APKTOOL_DUMMY_185" id="0x7f080185" />
     <public type="drawable" name="APKTOOL_DUMMY_186" id="0x7f080186" />
-    <public type="drawable" name="APKTOOL_DUMMY_187" id="0x7f080187" />
+    <public type="drawable" name="APKTOOL_DUMMY_189" id="0x7f080189" />
     <public type="drawable" name="APKTOOL_DUMMY_18a" id="0x7f08018a" />
     <public type="drawable" name="APKTOOL_DUMMY_18b" id="0x7f08018b" />
     <public type="drawable" name="APKTOOL_DUMMY_18c" id="0x7f08018c" />
@@ -3624,7 +3624,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_191" id="0x7f080191" />
     <public type="drawable" name="APKTOOL_DUMMY_192" id="0x7f080192" />
     <public type="drawable" name="APKTOOL_DUMMY_193" id="0x7f080193" />
-    <public type="drawable" name="APKTOOL_DUMMY_194" id="0x7f080194" />
+    <public type="drawable" name="APKTOOL_DUMMY_197" id="0x7f080197" />
     <public type="drawable" name="APKTOOL_DUMMY_198" id="0x7f080198" />
     <public type="drawable" name="APKTOOL_DUMMY_199" id="0x7f080199" />
     <public type="drawable" name="APKTOOL_DUMMY_19a" id="0x7f08019a" />
@@ -3689,7 +3689,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_1d5" id="0x7f0801d5" />
     <public type="drawable" name="APKTOOL_DUMMY_1d6" id="0x7f0801d6" />
     <public type="drawable" name="APKTOOL_DUMMY_1d7" id="0x7f0801d7" />
-    <public type="drawable" name="APKTOOL_DUMMY_1d8" id="0x7f0801d8" />
+    <public type="drawable" name="APKTOOL_DUMMY_1db" id="0x7f0801db" />
     <public type="drawable" name="APKTOOL_DUMMY_1dc" id="0x7f0801dc" />
     <public type="drawable" name="APKTOOL_DUMMY_1dd" id="0x7f0801dd" />
     <public type="drawable" name="APKTOOL_DUMMY_1de" id="0x7f0801de" />
@@ -4708,14 +4708,14 @@
     <public type="drawable" name="images_native_captcha_header" id="0x7f080141" />
     <public type="drawable" name="images_native_empties_empty_channel_no_text_channels_dark" id="0x7f080160" />
     <public type="drawable" name="images_native_empties_empty_channel_no_text_channels_light" id="0x7f080161" />
-    <public type="drawable" name="images_native_forum_channels_channel_settings_grid_view_example_post" id="0x7f080188" />
-    <public type="drawable" name="images_native_forum_channels_channel_settings_list_view_example_post" id="0x7f080189" />
-    <public type="drawable" name="images_native_gradient_overlays_chat_dark" id="0x7f080195" />
-    <public type="drawable" name="images_native_gradient_overlays_chat_light" id="0x7f080196" />
-    <public type="drawable" name="images_native_gradient_overlays_chat_medium" id="0x7f080197" />
-    <public type="drawable" name="images_native_icongroup" id="0x7f0801d9" />
-    <public type="drawable" name="images_native_icons_activenowdark2x" id="0x7f0801da" />
-    <public type="drawable" name="images_native_icons_activenowlight2x" id="0x7f0801db" />
+    <public type="drawable" name="images_native_forum_channels_channel_settings_grid_view_example_post" id="0x7f080187" />
+    <public type="drawable" name="images_native_forum_channels_channel_settings_list_view_example_post" id="0x7f080188" />
+    <public type="drawable" name="images_native_gradient_overlays_chat_dark" id="0x7f080194" />
+    <public type="drawable" name="images_native_gradient_overlays_chat_light" id="0x7f080195" />
+    <public type="drawable" name="images_native_gradient_overlays_chat_medium" id="0x7f080196" />
+    <public type="drawable" name="images_native_icongroup" id="0x7f0801d8" />
+    <public type="drawable" name="images_native_icons_activenowdark2x" id="0x7f0801d9" />
+    <public type="drawable" name="images_native_icons_activenowlight2x" id="0x7f0801da" />
     <public type="drawable" name="images_native_icons_ic_file_small_acrobat" id="0x7f080232" />
     <public type="drawable" name="images_native_icons_ic_file_small_ae" id="0x7f080233" />
     <public type="drawable" name="images_native_icons_ic_file_small_ai" id="0x7f080234" />
@@ -4850,7 +4850,7 @@
     <public type="drawable" name="node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f080659" />
     <public type="drawable" name="node_modules_reactnavigation_stack_node_modules_reactnavigation_elements_src_assets_backiconmask" id="0x7f08065b" />
     <public type="drawable" name="images_googleauthlogo" id="0x7f080115" />
-    <public type="drawable" name="images_native_empties_search_empty_state_dark" id="0x7f080184" />
+    <public type="drawable" name="images_native_empties_search_empty_state_dark" id="0x7f080183" />
     <public type="drawable" name="modules_directory_channels_native_images_hub_header" id="0x7f0804d9" />
     <public type="drawable" name="modules_user_profile_images_banner_sample_banner" id="0x7f0805fc" />
     <public type="drawable" name="ic_send_white_24dp" id="0x7f0800f8" />
