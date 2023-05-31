@@ -61,7 +61,6 @@ public final class IdentifyPayload {
         Object obj;
         List<String> l10;
         int d10;
-        int c10;
         q.g(json, "json");
         q.g(versions, "versions");
         try {
@@ -79,8 +78,7 @@ public final class IdentifyPayload {
             JsonObject jsonObject = (JsonObject) jsonElement;
             l10 = j.l("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            c10 = ah.j.c(d10, 16);
-            LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
+            LinkedHashMap linkedHashMap = new LinkedHashMap(ah.j.c(d10, 16));
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));
                 linkedHashMap.put(a10.c(), a10.d());
