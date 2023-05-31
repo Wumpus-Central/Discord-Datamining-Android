@@ -17,7 +17,7 @@ public final class MessageKt {
         if (message.getAvatarURL$chat_release() == null) {
             return null;
         }
-        if (URLUtil.isValidUrl(message.getAvatarURL$chat_release())) {
+        if (URLUtil.isNetworkUrl(message.getAvatarURL$chat_release())) {
             return message.getAvatarURL$chat_release();
         }
         return ReactAssetUtilsKt.getReactImageUrl(context, message.getAvatarURL$chat_release());
