@@ -320,62 +320,43 @@ public final class UserSearchWorker {
     }
 
     private final void searchUsers(String str, UserSearchQuerySetPayload userSearchQuerySetPayload) {
-        boolean z10;
-        boolean z11;
         Comparator b10;
         List w02;
         List<UserSearchWorkerResult> x02;
         List list;
         List<String> R;
-        double d10;
-        Regex regex;
         Companion.LocalResult localResult;
         List l10;
-        String str2;
         Boolean strict;
         String query = userSearchQuerySetPayload.getQuery();
         UserSearchQuerySetFilters filters = userSearchQuerySetPayload.getFilters();
         char c10 = 0;
-        if (filters == null || (strict = filters.getStrict()) == null) {
-            z10 = false;
-        } else {
-            z10 = strict.booleanValue();
-        }
+        boolean booleanValue = (filters == null || (strict = filters.getStrict()) == null) ? false : strict.booleanValue();
         ArrayList arrayList = new ArrayList();
         char c11 = 1;
         if (query.length() == 0) {
-            z11 = true;
-        } else {
-            z11 = false;
-        }
-        if (z11) {
             this.onResults.invoke(arrayList, query, str);
             return;
         }
         String c12 = Regex.f22146l.c(query);
         j jVar = j.IGNORE_CASE;
-        Regex regex2 = new Regex("^" + c12, jVar);
-        Regex regex3 = new Regex(c12, jVar);
+        Regex regex = new Regex("^" + c12, jVar);
+        Regex regex2 = new Regex(c12, jVar);
         for (Map.Entry<String, UserSearchTransformedUser> entry : this.users.entrySet()) {
             String key = entry.getKey();
             UserSearchTransformedUser value = entry.getValue();
             String username = value.getUsername();
             if (isValid(key, value, userSearchQuerySetPayload)) {
-                if (z10 == c11) {
+                if (booleanValue == c11) {
                     String[] strArr = new String[4];
                     strArr[c10] = value.getUsername();
                     strArr[c11] = value.getGlobalName();
                     strArr[2] = value.getFriendNickname();
                     Map<String, String> nicknames = value.getNicknames();
                     UserSearchQuerySetFilters filters2 = userSearchQuerySetPayload.getFilters();
-                    if (filters2 != null) {
-                        str2 = filters2.getGuild();
-                    } else {
-                        str2 = null;
-                    }
-                    strArr[3] = nicknames.get(str2);
+                    strArr[3] = nicknames.get(filters2 != null ? filters2.getGuild() : null);
                     list = kotlin.collections.j.l(strArr);
-                } else if (!z10) {
+                } else if (!booleanValue) {
                     String[] strArr2 = new String[3];
                     strArr2[c10] = value.getUsername();
                     strArr2[c11] = value.getGlobalName();
@@ -387,31 +368,24 @@ public final class UserSearchWorker {
                 }
                 R = r.R(list);
                 UserSearchWorkerResult userSearchWorkerResult = null;
-                for (String str3 : R) {
-                    Double d11 = userSearchQuerySetPayload.getBoosters().get(key);
-                    if (d11 != null) {
-                        d10 = d11.doubleValue();
+                for (String str2 : R) {
+                    Double d10 = userSearchQuerySetPayload.getBoosters().get(key);
+                    double doubleValue = d10 != null ? d10.doubleValue() : 0.0d;
+                    if (regex.a(str2)) {
+                        regex = regex;
+                        localResult = new Companion.LocalResult(str2, calculateScore(EXACT_MATCH_VALUE, doubleValue));
                     } else {
-                        d10 = 0.0d;
-                    }
-                    if (regex2.a(str3)) {
-                        regex = regex2;
-                        localResult = new Companion.LocalResult(str3, calculateScore(EXACT_MATCH_VALUE, d10));
-                    } else {
-                        regex = regex2;
-                        if (regex3.a(str3)) {
-                            localResult = new Companion.LocalResult(str3, calculateScore(CONTAIN_MATCH_VALUE, d10));
-                        } else if (fuzzySearch(query, Companion.strippedOfDiacritics(str3))) {
-                            localResult = new Companion.LocalResult(str3, calculateScore(FUZZY_MATCH_VALUE, d10));
+                        regex = regex;
+                        if (regex2.a(str2)) {
+                            localResult = new Companion.LocalResult(str2, calculateScore(CONTAIN_MATCH_VALUE, doubleValue));
                         } else {
-                            localResult = null;
+                            localResult = fuzzySearch(query, Companion.strippedOfDiacritics(str2)) ? new Companion.LocalResult(str2, calculateScore(FUZZY_MATCH_VALUE, doubleValue)) : null;
                         }
                     }
                     if (localResult != null && (userSearchWorkerResult == null || userSearchWorkerResult.getScore() < localResult.getScore())) {
                         userSearchWorkerResult = new UserSearchWorkerResult(key, username, localResult.getComparator(), localResult.getScore());
                     }
                     arrayList = arrayList;
-                    regex2 = regex;
                 }
                 if (userSearchWorkerResult != null) {
                     arrayList.add(userSearchWorkerResult);
@@ -419,7 +393,7 @@ public final class UserSearchWorker {
                 } else {
                     arrayList = arrayList;
                 }
-                regex2 = regex2;
+                regex = regex;
                 c10 = 0;
                 c11 = 1;
             }

@@ -133,36 +133,25 @@ public final class NotificationDataUtilsKt {
     public static final CharSequence getContent(NotificationData notificationData, Context context) {
         String subtitle;
         Integer activityType;
-        boolean z10;
-        boolean z11;
-        boolean z12;
-        boolean z13;
-        boolean z14;
         q.g(notificationData, "<this>");
         q.g(context, "context");
         String type = notificationData.getType();
-        boolean z15 = false;
+        boolean z10 = false;
         switch (type.hashCode()) {
             case -1502317553:
-                if (type.equals(NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) && (subtitle = notificationData.getSubtitle()) != null) {
-                    return subtitle;
-                }
-                return "";
+                return (type.equals(NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) && (subtitle = notificationData.getSubtitle()) != null) ? subtitle : "";
             case -1489275252:
                 if (!type.equals(NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE)) {
                     return "";
                 }
                 Integer guildScheduledEventEntityType = notificationData.getGuildScheduledEventEntityType();
                 if ((guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 2) || (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 1)) {
-                    z15 = true;
+                    z10 = true;
                 }
-                if (z15) {
+                if (z10) {
                     return I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_STAGE_START_BODY, new NotificationDataUtilsKt$getContent$8(notificationData));
                 }
-                if (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 3) {
-                    return I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_EXTERNAL_START_BODY, new NotificationDataUtilsKt$getContent$9(notificationData));
-                }
-                return "";
+                return (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 3) ? I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_EXTERNAL_START_BODY, new NotificationDataUtilsKt$getContent$9(notificationData)) : "";
             case -1327124998:
                 if (!type.equals(NotificationData.TYPE_RELATIONSHIP_ADD)) {
                     return "";
@@ -171,61 +160,21 @@ public final class NotificationDataUtilsKt {
                 if (relationshipType != null && relationshipType.intValue() == 1) {
                     return I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_ACCEPTED_FRIEND_REQUEST, null, 2, null);
                 }
-                if (relationshipType != null && relationshipType.intValue() == 3) {
-                    return I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_PENDING_FRIEND_REQUEST, null, 2, null);
-                }
-                return "";
+                return (relationshipType != null && relationshipType.intValue() == 3) ? I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_PENDING_FRIEND_REQUEST, null, 2, null) : "";
             case -1263316859:
-                if (!type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_BODY, new NotificationDataUtilsKt$getContent$6(notificationData));
+                return !type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_BODY, new NotificationDataUtilsKt$getContent$6(notificationData));
             case -1237752112:
-                if (!type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_BODY, new NotificationDataUtilsKt$getContent$5(notificationData));
+                return !type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_BODY, new NotificationDataUtilsKt$getContent$5(notificationData));
             case -437641071:
-                if (!type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_BODY_MOBILE, new NotificationDataUtilsKt$getContent$7(notificationData));
+                return !type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_BODY_MOBILE, new NotificationDataUtilsKt$getContent$7(notificationData));
             case 974015250:
-                if (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) {
-                    return I18nUtilsKt.i18nFormat(context, I18nMessage.NOTIFICATION_BODY_START_GAME, new NotificationDataUtilsKt$getContent$3(notificationData));
-                }
-                return "";
+                return (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) ? I18nUtilsKt.i18nFormat(context, I18nMessage.NOTIFICATION_BODY_START_GAME, new NotificationDataUtilsKt$getContent$3(notificationData)) : "";
             case 998188116:
                 if (!type.equals(NotificationData.TYPE_MESSAGE_CREATE)) {
                     return "";
                 }
                 Integer channelType = notificationData.getChannelType();
-                if ((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) {
-                    z10 = true;
-                } else {
-                    z10 = false;
-                }
-                if (!z10 && (channelType == null || channelType.intValue() != 5)) {
-                    z11 = false;
-                } else {
-                    z11 = true;
-                }
-                if (!z11 && (channelType == null || channelType.intValue() != 10)) {
-                    z12 = false;
-                } else {
-                    z12 = true;
-                }
-                if (!z12 && (channelType == null || channelType.intValue() != 11)) {
-                    z13 = false;
-                } else {
-                    z13 = true;
-                }
-                if (!z13 && (channelType == null || channelType.intValue() != 12)) {
-                    z14 = false;
-                } else {
-                    z14 = true;
-                }
-                if (z14) {
+                if ((((((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) || (channelType != null && channelType.intValue() == 5)) || (channelType != null && channelType.intValue() == 10)) || (channelType != null && channelType.intValue() == 11)) || (channelType != null && channelType.intValue() == 12)) {
                     Integer messageType = notificationData.getMessageType();
                     if (messageType != null && messageType.intValue() == 7) {
                         return m532getSystemMessageUserJoin_NTlnE(context, notificationData.m517getUserIdwUX8bhU(), notificationData.getUserUsername());
@@ -237,9 +186,9 @@ public final class NotificationDataUtilsKt {
                     return renderMessageContent(notificationData, context);
                 }
                 if ((channelType != null && channelType.intValue() == 3) || (channelType != null && channelType.intValue() == 1)) {
-                    z15 = true;
+                    z10 = true;
                 }
-                if (!z15) {
+                if (!z10) {
                     return "";
                 }
                 Integer messageActivityType2 = notificationData.getMessageActivityType();
@@ -248,10 +197,7 @@ public final class NotificationDataUtilsKt {
                 }
                 return renderMessageContent(notificationData, context);
             case 1770025841:
-                if (!type.equals(NotificationData.TYPE_CALL_RING)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.OVERLAY_FRIEND_CALLING, new NotificationDataUtilsKt$getContent$4(notificationData));
+                return !type.equals(NotificationData.TYPE_CALL_RING) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.OVERLAY_FRIEND_CALLING, new NotificationDataUtilsKt$getContent$4(notificationData));
             default:
                 return "";
         }
@@ -785,10 +731,6 @@ public final class NotificationDataUtilsKt {
         String title;
         Integer guildScheduledEventEntityType;
         Integer activityType;
-        boolean z10;
-        boolean z11;
-        boolean z12;
-        boolean z13;
         q.g(notificationData, "<this>");
         q.g(context, "context");
         String type = notificationData.getType();
@@ -799,65 +741,30 @@ public final class NotificationDataUtilsKt {
                 }
                 break;
             case -1489275252:
-                if (type.equals(NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE) && (guildScheduledEventEntityType = notificationData.getGuildScheduledEventEntityType()) != null && guildScheduledEventEntityType.intValue() == 1) {
-                    return I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_STAGE_START_TITLE, new NotificationDataUtilsKt$getTitle$3(notificationData));
-                }
-                return "";
+                return (type.equals(NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE) && (guildScheduledEventEntityType = notificationData.getGuildScheduledEventEntityType()) != null && guildScheduledEventEntityType.intValue() == 1) ? I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_STAGE_START_TITLE, new NotificationDataUtilsKt$getTitle$3(notificationData)) : "";
             case -1327124998:
                 if (!type.equals(NotificationData.TYPE_RELATIONSHIP_ADD) || (title = notificationData.getUserUsername()) == null) {
                     return "";
                 }
                 break;
             case -1263316859:
-                if (!type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_TITLE, new NotificationDataUtilsKt$getTitle$1(notificationData));
+                return !type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_TITLE, new NotificationDataUtilsKt$getTitle$1(notificationData));
             case -1237752112:
-                if (!type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat$default(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_TITLE, null, 2, null);
+                return !type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE) ? "" : I18nUtilsKt.i18nFormat$default(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_TITLE, null, 2, null);
             case -437641071:
-                if (!type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED)) {
-                    return "";
-                }
-                return I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_TITLE_MOBILE, new NotificationDataUtilsKt$getTitle$2(notificationData));
+                return !type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_TITLE_MOBILE, new NotificationDataUtilsKt$getTitle$2(notificationData));
             case 974015250:
-                if (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) {
-                    return I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_TITLE_START_GAME, null, 2, null);
-                }
-                return "";
+                return (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) ? I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_TITLE_START_GAME, null, 2, null) : "";
             case 998188116:
                 if (!type.equals(NotificationData.TYPE_MESSAGE_CREATE)) {
                     return "";
                 }
                 Integer channelType = notificationData.getChannelType();
-                boolean z14 = false;
-                if ((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) {
+                boolean z10 = false;
+                if ((((((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) || (channelType != null && channelType.intValue() == 5)) || (channelType != null && channelType.intValue() == 10)) || (channelType != null && channelType.intValue() == 11)) || (channelType != null && channelType.intValue() == 12)) {
                     z10 = true;
-                } else {
-                    z10 = false;
                 }
-                if (!z10 && (channelType == null || channelType.intValue() != 5)) {
-                    z11 = false;
-                } else {
-                    z11 = true;
-                }
-                if (!z11 && (channelType == null || channelType.intValue() != 10)) {
-                    z12 = false;
-                } else {
-                    z12 = true;
-                }
-                if (!z12 && (channelType == null || channelType.intValue() != 11)) {
-                    z13 = false;
-                } else {
-                    z13 = true;
-                }
-                if (z13 || (channelType != null && channelType.intValue() == 12)) {
-                    z14 = true;
-                }
-                if (z14) {
+                if (z10) {
                     title = notificationData.getGuildName() + " #" + notificationData.getChannelName();
                     break;
                 } else if (channelType != null && channelType.intValue() == 1) {
