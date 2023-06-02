@@ -96,7 +96,7 @@ public final class SeparatorRow extends Row {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 5, h.f32351a, self.scrollTo);
+            output.h(serialDesc, 5, h.f32355a, self.scrollTo);
         }
     }
 

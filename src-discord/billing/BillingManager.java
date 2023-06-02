@@ -80,7 +80,7 @@ public final class BillingManager {
             BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
         }
     };
-    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f22390k, 1000, 300000, 10);
+    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f22394k, 1000, 300000, 10);
 
     /* JADX INFO: Access modifiers changed from: private */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\b\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u000b"}, d2 = {"Lcom/discord/billing/BillingManager$ConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "DISCONNECTED", "CONNECTING", "CONNECTED", "ERROR", "billing_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -437,9 +437,9 @@ public final class BillingManager {
         q.g(billingResult, "billingResult");
         q.g(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f22101k) {
-                completed.f22101k = true;
-                Unit unit = Unit.f22076a;
+            if (!completed.f22105k) {
+                completed.f22105k = true;
+                Unit unit = Unit.f22080a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -497,9 +497,9 @@ public final class BillingManager {
         q.g(completed, "$completed");
         q.g(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f22101k) {
-                completed.f22101k = true;
-                Unit unit = Unit.f22076a;
+            if (!completed.f22105k) {
+                completed.f22105k = true;
+                Unit unit = Unit.f22080a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);

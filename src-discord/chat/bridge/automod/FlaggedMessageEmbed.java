@@ -162,7 +162,7 @@ public final class FlaggedMessageEmbed {
             z13 = true;
         }
         if (z13) {
-            output.h(serialDesc, 5, a2.f32309a, self.channelName);
+            output.h(serialDesc, 5, a2.f32313a, self.channelName);
         }
         if (!output.A(serialDesc, 6) && self.username == null) {
             z14 = false;
@@ -170,7 +170,7 @@ public final class FlaggedMessageEmbed {
             z14 = true;
         }
         if (z14) {
-            output.h(serialDesc, 6, a2.f32309a, self.username);
+            output.h(serialDesc, 6, a2.f32313a, self.username);
         }
         output.w(serialDesc, 7, self.usernameColor);
         if (!output.A(serialDesc, 8) && self.roleColor == null) {
@@ -179,7 +179,7 @@ public final class FlaggedMessageEmbed {
             z15 = true;
         }
         if (z15) {
-            output.h(serialDesc, 8, m0.f32384a, self.roleColor);
+            output.h(serialDesc, 8, m0.f32388a, self.roleColor);
         }
         output.x(serialDesc, 9, self.shouldShowRoleDot);
         if (!output.A(serialDesc, 10) && self.avatarURL == null) {
@@ -188,13 +188,13 @@ public final class FlaggedMessageEmbed {
             z16 = true;
         }
         if (z16) {
-            output.h(serialDesc, 10, a2.f32309a, self.avatarURL);
+            output.h(serialDesc, 10, a2.f32313a, self.avatarURL);
         }
         if (output.A(serialDesc, 11) || !q.b(self.communicationDisabled, Boolean.FALSE)) {
             z17 = true;
         }
         if (z17) {
-            output.h(serialDesc, 11, h.f32351a, self.communicationDisabled);
+            output.h(serialDesc, 11, h.f32355a, self.communicationDisabled);
         }
     }
 

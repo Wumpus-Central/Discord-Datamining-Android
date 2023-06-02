@@ -226,7 +226,7 @@ public final class Sticker implements Parcelable {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 2, w0.f32425a, self.packId);
+            output.h(serialDesc, 2, w0.f32429a, self.packId);
         }
         if (!output.A(serialDesc, 3) && self.guildId == null) {
             z12 = false;
@@ -272,7 +272,7 @@ public final class Sticker implements Parcelable {
             z17 = true;
         }
         if (z17) {
-            output.h(serialDesc, 8, h.f32351a, self.available);
+            output.h(serialDesc, 8, h.f32355a, self.available);
         }
     }
 

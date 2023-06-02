@@ -35,7 +35,7 @@ public final class HeadingContentNode$$serializer implements f0<HeadingContentNo
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f32384a, new f(ContentNodeSerializer.INSTANCE)};
+        return new KSerializer[]{m0.f32388a, new f(ContentNodeSerializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

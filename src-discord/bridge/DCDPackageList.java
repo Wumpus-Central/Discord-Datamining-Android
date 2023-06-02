@@ -25,8 +25,8 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 import com.imagepicker.c;
-import com.mrousavy.camera.d;
 import com.reactnative.ivpusic.imagepicker.e;
+import com.reactnativecommunity.slider.d;
 import com.reactnativecommunity.webview.e1;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.rnscreens.i;
@@ -57,7 +57,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(new df.c());
         packages.add(new com.github.yamill.orientation.a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
         });
-        packages.add(new com.reactnativecommunity.slider.c());
+        packages.add(new d());
         packages.add(new c3.c());
         packages.add(new ReanimatedPackage());
         packages.add(new e1());
@@ -70,7 +70,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(new io.sentry.react.i());
         packages.add(new com.th3rdwave.safeareacontext.b());
         packages.add(new SvgPackage());
-        packages.add(new d());
+        packages.add(new com.mrousavy.camera.d());
         packages.add(GetSkiaPackageKt.getSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
         packages.add(new z2.c());

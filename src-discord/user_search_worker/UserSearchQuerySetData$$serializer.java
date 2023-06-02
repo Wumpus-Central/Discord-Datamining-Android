@@ -33,7 +33,7 @@ public final class UserSearchQuerySetData$$serializer implements f0<UserSearchQu
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32309a, UserSearchQuerySetPayload$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f32313a, UserSearchQuerySetPayload$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

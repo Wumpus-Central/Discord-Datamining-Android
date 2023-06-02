@@ -23,7 +23,7 @@ public final class ChatListView$scrollStateObserver$1 extends s implements Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ScrollState scrollState) {
         invoke2(scrollState);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

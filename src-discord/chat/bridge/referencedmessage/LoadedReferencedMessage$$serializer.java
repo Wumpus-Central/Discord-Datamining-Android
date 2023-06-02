@@ -37,7 +37,7 @@ public final class LoadedReferencedMessage$$serializer implements f0<LoadedRefer
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{Message$$serializer.INSTANCE, a.u(a2.f32309a)};
+        return new KSerializer[]{Message$$serializer.INSTANCE, a.u(a2.f32313a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -50,7 +50,7 @@ public final class LoadedReferencedMessage$$serializer implements f0<LoadedRefer
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             obj2 = b10.y(descriptor2, 0, Message$$serializer.INSTANCE, null);
-            obj = b10.n(descriptor2, 1, a2.f32309a, null);
+            obj = b10.n(descriptor2, 1, a2.f32313a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -65,7 +65,7 @@ public final class LoadedReferencedMessage$$serializer implements f0<LoadedRefer
                     obj2 = b10.y(descriptor2, 0, Message$$serializer.INSTANCE, obj2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj3 = b10.n(descriptor2, 1, a2.f32309a, obj3);
+                    obj3 = b10.n(descriptor2, 1, a2.f32313a, obj3);
                     i11 |= 2;
                 } else {
                     throw new n(o10);

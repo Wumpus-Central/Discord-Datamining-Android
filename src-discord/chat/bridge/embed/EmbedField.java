@@ -99,7 +99,7 @@ public final class EmbedField {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 0, a2.f32309a, self.rawName);
+            output.h(serialDesc, 0, a2.f32313a, self.rawName);
         }
         if (!output.A(serialDesc, 1) && self.rawValue == null) {
             z11 = false;
@@ -107,7 +107,7 @@ public final class EmbedField {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 1, a2.f32309a, self.rawValue);
+            output.h(serialDesc, 1, a2.f32313a, self.rawValue);
         }
         if (!output.A(serialDesc, 2) && self.name == null) {
             z12 = false;

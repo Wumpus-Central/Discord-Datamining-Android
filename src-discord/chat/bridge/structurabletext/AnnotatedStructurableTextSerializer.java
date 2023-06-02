@@ -16,7 +16,7 @@ import xj.f;
 /* loaded from: classes5.dex */
 public final class AnnotatedStructurableTextSerializer implements KSerializer<AnnotatedStructurableText> {
     public static final AnnotatedStructurableTextSerializer INSTANCE = new AnnotatedStructurableTextSerializer();
-    private static final SerialDescriptor descriptor = g.a("AnnotatedStructurableText", e.i.f31660a);
+    private static final SerialDescriptor descriptor = g.a("AnnotatedStructurableText", e.i.f31664a);
 
     private AnnotatedStructurableTextSerializer() {
     }

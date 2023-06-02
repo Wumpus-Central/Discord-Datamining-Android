@@ -90,7 +90,7 @@ public final class ExecutedCommand {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 2, a2.f32309a, self.avatarURL);
+            output.h(serialDesc, 2, a2.f32313a, self.avatarURL);
         }
         output.z(serialDesc, 3, AnnotatedStructurableTextSerializer.INSTANCE, self.content);
     }

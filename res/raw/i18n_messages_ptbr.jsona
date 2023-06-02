@@ -13136,7 +13136,7 @@
   "ONBOARDING_QUESTIONS_PRE_JOIN_HEADER": "Perguntas antes de entrar",
   "ONBOARDING_QUESTIONS_PRE_JOIN_SUBHEADER": "As perguntas serão feitas aos membros antes de entrarem no seu servidor. Use-as para atribuir canais e cargos importantes. As perguntas antes de entrar também estarão disponíveis na página Canais & Cargos.",
   "ONBOARDING_QUESTIONS_POST_JOIN_HEADER": "Perguntas depois de entrar",
-  "ONBOARDING_QUESTIONS_POST_JOIN_SUBHEADER": "As perguntas serão feitas aos membros despois de entrarem no seu servidor na página Canais & Cargos. Use-as para\n atribuir cargos que os membros possam escolher depois, como cargos personalizados.",
+  "ONBOARDING_QUESTIONS_POST_JOIN_SUBHEADER": "As perguntas serão feitas aos membros depois de entrarem no seu servidor na página Canais & Cargos. Use-as para\n atribuir cargos que os membros possam escolher depois, como cargos personalizados.",
   "ONBOARDING_QUESTIONS_CANNOT_MOVE": "Não é possível mover esta pergunta",
   "ONBOARDING_QUESTIONS_SAVE_TOO_MANY_PROMPTS_IN_ONBOARDING": "Você não pode ter mais de {numQuestions} perguntas antes de entrar",
   "ONBOARDING_PROMPTS_WARNING": "Aviso",

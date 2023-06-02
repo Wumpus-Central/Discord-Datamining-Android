@@ -36,7 +36,7 @@ public final class CookieValidatorKt {
         z02 = v.z0(cookie, new String[]{"; "}, false, 0, 6, null);
         ArrayList arrayList = new ArrayList();
         for (String str : z02) {
-            k c10 = k.f24274n.c(HttpUrl.f26377l.d(url), str);
+            k c10 = k.f24278n.c(HttpUrl.f26381l.d(url), str);
             if (c10 != null) {
                 arrayList.add(c10);
             }
@@ -59,7 +59,7 @@ public final class CookieValidatorKt {
             return false;
         }
         String base64String = URLDecoder.decode(str2, "UTF-8");
-        ByteString.a aVar = ByteString.f26539o;
+        ByteString.a aVar = ByteString.f26543o;
         q.f(base64String, "base64String");
         ByteString a10 = aVar.a(base64String);
         if (!(a10 == null || (C = a10.C()) == null)) {

@@ -138,7 +138,7 @@ public final class NotificationMessage {
             r1 = r0
         L_0x0043:
             if (r1 == 0) goto L_0x004c
-            kotlinx.serialization.json.t r1 = kotlinx.serialization.json.t.f22635a
+            kotlinx.serialization.json.t r1 = kotlinx.serialization.json.t.f22639a
             kotlinx.serialization.json.JsonObject r3 = r5.author
             r6.h(r7, r2, r1, r3)
         L_0x004c:
@@ -157,7 +157,7 @@ public final class NotificationMessage {
         L_0x0062:
             if (r0 == 0) goto L_0x0070
             xj.f r0 = new xj.f
-            kotlinx.serialization.json.t r2 = kotlinx.serialization.json.t.f22635a
+            kotlinx.serialization.json.t r2 = kotlinx.serialization.json.t.f22639a
             r0.<init>(r2)
             java.util.List<kotlinx.serialization.json.JsonObject> r5 = r5.mentions
             r6.z(r7, r1, r0, r5)

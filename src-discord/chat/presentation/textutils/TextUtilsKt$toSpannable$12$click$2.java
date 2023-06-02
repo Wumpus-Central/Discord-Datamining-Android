@@ -26,7 +26,7 @@ public final class TextUtilsKt$toSpannable$12$click$2 extends s implements Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(View view) {
         invoke2(view);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* JADX WARN: Type inference failed for: r0v1, types: [com.discord.chat.bridge.contentnode.ContentNode, java.lang.Object] */

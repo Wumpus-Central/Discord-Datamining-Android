@@ -18,7 +18,7 @@ final class I18nUtilsKt$i18nContentDescription$1 extends s implements Function1<
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

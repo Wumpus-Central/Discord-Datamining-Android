@@ -93,7 +93,7 @@ public final class AttachedVideoSinks {
                     mediaEngine.setVideoOutputSink$media_engine_release(streamId, null);
                     streamOutputMap.remove(streamId);
                 }
-                Unit unit = Unit.f22076a;
+                Unit unit = Unit.f22080a;
             }
             Function2<? super String, ? super Boolean, Unit> function2 = activeSinksChangeCallback;
             if (function2 != null) {

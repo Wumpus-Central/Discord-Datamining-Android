@@ -24,7 +24,7 @@ public final class MessageViewManagers$SystemMessageViewManager$createViewInstan
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     public final void invoke(View view, int i10, int i11) {

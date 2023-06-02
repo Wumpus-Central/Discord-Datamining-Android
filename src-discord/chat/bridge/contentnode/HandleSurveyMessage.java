@@ -91,7 +91,7 @@ public final class HandleSurveyMessage {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 2, a2.f32309a, self.loggingName);
+            output.h(serialDesc, 2, a2.f32313a, self.loggingName);
         }
     }
 

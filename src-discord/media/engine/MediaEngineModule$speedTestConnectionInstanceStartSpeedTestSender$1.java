@@ -22,7 +22,7 @@ final class MediaEngineModule$speedTestConnectionInstanceStartSpeedTestSender$1 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Integer num, String str) {
         invoke(num.intValue(), str);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     public final void invoke(int i10, String desc) {

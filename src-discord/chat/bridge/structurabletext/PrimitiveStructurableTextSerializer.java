@@ -13,7 +13,7 @@ import wj.g;
 /* loaded from: classes5.dex */
 public final class PrimitiveStructurableTextSerializer implements KSerializer<PrimitiveStructurableText> {
     public static final PrimitiveStructurableTextSerializer INSTANCE = new PrimitiveStructurableTextSerializer();
-    private static final SerialDescriptor descriptor = g.a("PrimitiveStructurableText", e.i.f31660a);
+    private static final SerialDescriptor descriptor = g.a("PrimitiveStructurableText", e.i.f31664a);
 
     private PrimitiveStructurableTextSerializer() {
     }

@@ -544,22 +544,22 @@ public final class Message extends MessageBase {
             output.E(serialDesc, 7, self.flags);
         }
         if (output.A(serialDesc, 8) || self.edited != null) {
-            output.h(serialDesc, 8, a2.f32309a, self.edited);
+            output.h(serialDesc, 8, a2.f32313a, self.edited);
         }
         if (output.A(serialDesc, 9) || self._constrainedWidth != null) {
-            output.h(serialDesc, 9, e0.f32334a, self._constrainedWidth);
+            output.h(serialDesc, 9, e0.f32338a, self._constrainedWidth);
         }
         if (output.A(serialDesc, 10) || self.timestamp != null) {
-            output.h(serialDesc, 10, a2.f32309a, self.timestamp);
+            output.h(serialDesc, 10, a2.f32313a, self.timestamp);
         }
         if (output.A(serialDesc, 11) || self.username != null) {
-            output.h(serialDesc, 11, a2.f32309a, self.username);
+            output.h(serialDesc, 11, a2.f32313a, self.username);
         }
         if (output.A(serialDesc, 12) || self.usernameColor != null) {
-            output.h(serialDesc, 12, m0.f32384a, self.usernameColor);
+            output.h(serialDesc, 12, m0.f32388a, self.usernameColor);
         }
         if (output.A(serialDesc, 13) || self.roleColor != null) {
-            output.h(serialDesc, 13, m0.f32384a, self.roleColor);
+            output.h(serialDesc, 13, m0.f32388a, self.roleColor);
         }
         if (output.A(serialDesc, 14) || self.shouldShowRoleDot) {
             output.x(serialDesc, 14, self.shouldShowRoleDot);
@@ -568,13 +568,13 @@ public final class Message extends MessageBase {
             output.x(serialDesc, 15, self.shouldShowRoleOnName);
         }
         if (output.A(serialDesc, 16) || self.colorString != null) {
-            output.h(serialDesc, 16, m0.f32384a, self.colorString);
+            output.h(serialDesc, 16, m0.f32388a, self.colorString);
         }
         if (output.A(serialDesc, 17) || self.avatarURL != null) {
-            output.h(serialDesc, 17, a2.f32309a, self.avatarURL);
+            output.h(serialDesc, 17, a2.f32313a, self.avatarURL);
         }
         if (output.A(serialDesc, 18) || self.avatarDecorationURL != null) {
-            output.h(serialDesc, 18, a2.f32309a, self.avatarDecorationURL);
+            output.h(serialDesc, 18, a2.f32313a, self.avatarDecorationURL);
         }
         if (output.A(serialDesc, 19) || self.embeds != null) {
             output.h(serialDesc, 19, new xj.f(Embed$$serializer.INSTANCE), self.embeds);
@@ -583,7 +583,7 @@ public final class Message extends MessageBase {
             output.h(serialDesc, 20, new xj.f(Attachment$$serializer.INSTANCE), self.attachments);
         }
         if (output.A(serialDesc, 21) || self.attachmentsOpacity != null) {
-            output.h(serialDesc, 21, e0.f32334a, self.attachmentsOpacity);
+            output.h(serialDesc, 21, e0.f32338a, self.attachmentsOpacity);
         }
         if (output.A(serialDesc, 22) || self.content != null) {
             output.h(serialDesc, 22, StructurableTextSerializer.INSTANCE, self.content);
@@ -595,10 +595,10 @@ public final class Message extends MessageBase {
             output.h(serialDesc, 24, new xj.f(MessageReaction$$serializer.INSTANCE), self.reactions);
         }
         if (output.A(serialDesc, 25) || !q.b(self.useSortedReactions, Boolean.TRUE)) {
-            output.h(serialDesc, 25, h.f32351a, self.useSortedReactions);
+            output.h(serialDesc, 25, h.f32355a, self.useSortedReactions);
         }
         if (output.A(serialDesc, 26) || !q.b(self.useAddBurstReaction, Boolean.FALSE)) {
-            output.h(serialDesc, 26, h.f32351a, self.useAddBurstReaction);
+            output.h(serialDesc, 26, h.f32355a, self.useAddBurstReaction);
         }
         if (output.A(serialDesc, 27) || self.codedLinks != null) {
             output.h(serialDesc, 27, new xj.f(a.u(CodedLinkSerializer.INSTANCE)), self.codedLinks);
@@ -617,10 +617,10 @@ public final class Message extends MessageBase {
         }
         output.x(serialDesc, 32, self.mentioned);
         if (output.A(serialDesc, 33) || self.gifAutoPlay != null) {
-            output.h(serialDesc, 33, h.f32351a, self.gifAutoPlay);
+            output.h(serialDesc, 33, h.f32355a, self.gifAutoPlay);
         }
         if (output.A(serialDesc, 34) || self.animateEmoji != null) {
-            output.h(serialDesc, 34, h.f32351a, self.animateEmoji);
+            output.h(serialDesc, 34, h.f32355a, self.animateEmoji);
         }
         if (output.A(serialDesc, 35) || self.referencedMessage != null) {
             output.h(serialDesc, 35, ReferencedMessageSerializer.INSTANCE, self.referencedMessage);
@@ -632,22 +632,22 @@ public final class Message extends MessageBase {
             output.h(serialDesc, 37, new xj.f(ComponentSerializer.INSTANCE), self.components);
         }
         if (output.A(serialDesc, 38) || self.threadStarterMessageHeader != null) {
-            output.h(serialDesc, 38, a2.f32309a, self.threadStarterMessageHeader);
+            output.h(serialDesc, 38, a2.f32313a, self.threadStarterMessageHeader);
         }
         if (output.A(serialDesc, 39) || self.communicationDisabled != null) {
-            output.h(serialDesc, 39, h.f32351a, self.communicationDisabled);
+            output.h(serialDesc, 39, h.f32355a, self.communicationDisabled);
         }
         if (output.A(serialDesc, 40) || self.tagText != null) {
-            output.h(serialDesc, 40, a2.f32309a, self.tagText);
+            output.h(serialDesc, 40, a2.f32313a, self.tagText);
         }
         if (output.A(serialDesc, 41) || self.tagVerified != null) {
-            output.h(serialDesc, 41, h.f32351a, self.tagVerified);
+            output.h(serialDesc, 41, h.f32355a, self.tagVerified);
         }
         if (output.A(serialDesc, 42) || self.tagBackgroundColor != null) {
-            output.h(serialDesc, 42, m0.f32384a, self.tagBackgroundColor);
+            output.h(serialDesc, 42, m0.f32388a, self.tagBackgroundColor);
         }
         if (output.A(serialDesc, 43) || self.opTagText != null) {
-            output.h(serialDesc, 43, a2.f32309a, self.opTagText);
+            output.h(serialDesc, 43, a2.f32313a, self.opTagText);
         }
         if (output.A(serialDesc, 44) || self.ephemeralIndication != null) {
             output.h(serialDesc, 44, EphemeralIndication$$serializer.INSTANCE, self.ephemeralIndication);
@@ -659,43 +659,43 @@ public final class Message extends MessageBase {
             output.h(serialDesc, 46, InteractionStatus$$serializer.INSTANCE, self.interactionStatus);
         }
         if (output.A(serialDesc, 47) || !q.b(self.useAttachmentGridLayout, Boolean.FALSE)) {
-            output.h(serialDesc, 47, h.f32351a, self.useAttachmentGridLayout);
+            output.h(serialDesc, 47, h.f32355a, self.useAttachmentGridLayout);
         }
         if (output.A(serialDesc, 48) || !q.b(self.useAttachmentUploadPreview, Boolean.FALSE)) {
-            output.h(serialDesc, 48, h.f32351a, self.useAttachmentUploadPreview);
+            output.h(serialDesc, 48, h.f32355a, self.useAttachmentUploadPreview);
         }
         if (output.A(serialDesc, 49) || !q.b(self.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            output.h(serialDesc, 49, h.f32351a, self.isCurrentUserMessageAuthor);
+            output.h(serialDesc, 49, h.f32355a, self.isCurrentUserMessageAuthor);
         }
         if (output.A(serialDesc, 50) || self.title != null) {
-            output.h(serialDesc, 50, a2.f32309a, self.title);
+            output.h(serialDesc, 50, a2.f32313a, self.title);
         }
         if (output.A(serialDesc, 51) || self.description != null) {
-            output.h(serialDesc, 51, a2.f32309a, self.description);
+            output.h(serialDesc, 51, a2.f32313a, self.description);
         }
         if (output.A(serialDesc, 52) || self.avatarURLs != null) {
-            output.h(serialDesc, 52, new xj.f(a2.f32309a), self.avatarURLs);
+            output.h(serialDesc, 52, new xj.f(a2.f32313a), self.avatarURLs);
         }
         if (output.A(serialDesc, 53) || self.isCallActive != null) {
-            output.h(serialDesc, 53, h.f32351a, self.isCallActive);
+            output.h(serialDesc, 53, h.f32355a, self.isCallActive);
         }
         if (output.A(serialDesc, 54) || self.missed != null) {
-            output.h(serialDesc, 54, h.f32351a, self.missed);
+            output.h(serialDesc, 54, h.f32355a, self.missed);
         }
         if (output.A(serialDesc, 55) || self.rawMilliseconds != null) {
-            output.h(serialDesc, 55, w0.f32425a, self.rawMilliseconds);
+            output.h(serialDesc, 55, w0.f32429a, self.rawMilliseconds);
         }
         if (output.A(serialDesc, 56) || self.sticker != null) {
             output.h(serialDesc, 56, Sticker$$serializer.INSTANCE, self.sticker);
         }
         if (output.A(serialDesc, 57) || self.stickerLabel != null) {
-            output.h(serialDesc, 57, a2.f32309a, self.stickerLabel);
+            output.h(serialDesc, 57, a2.f32313a, self.stickerLabel);
         }
         if (output.A(serialDesc, 58) || self.buttonLabel != null) {
-            output.h(serialDesc, 58, a2.f32309a, self.buttonLabel);
+            output.h(serialDesc, 58, a2.f32313a, self.buttonLabel);
         }
         if (output.A(serialDesc, 59) || self.showInviteToSpeakButton != null) {
-            output.h(serialDesc, 59, h.f32351a, self.showInviteToSpeakButton);
+            output.h(serialDesc, 59, h.f32355a, self.showInviteToSpeakButton);
         }
         if (output.A(serialDesc, 60) || self.activityInviteEmbed != null) {
             output.h(serialDesc, 60, ActivityInviteEmbed$$serializer.INSTANCE, self.activityInviteEmbed);
@@ -716,10 +716,10 @@ public final class Message extends MessageBase {
             output.h(serialDesc, 65, GiftEmbedSerializer.INSTANCE, self.referralTrialOffer);
         }
         if (output.A(serialDesc, 66) || self.totalMonthsSubscribed != null) {
-            output.h(serialDesc, 66, m0.f32384a, self.totalMonthsSubscribed);
+            output.h(serialDesc, 66, m0.f32388a, self.totalMonthsSubscribed);
         }
         if (output.A(serialDesc, 67) || self.swipeToReplyIconUrl != null) {
-            output.h(serialDesc, 67, a2.f32309a, self.swipeToReplyIconUrl);
+            output.h(serialDesc, 67, a2.f32313a, self.swipeToReplyIconUrl);
         }
         if (output.A(serialDesc, 68) || self.postPreviewEmbeds != null) {
             z10 = true;

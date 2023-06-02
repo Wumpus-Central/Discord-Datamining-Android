@@ -40,8 +40,8 @@ public final class Truncation$$serializer implements f0<Truncation> {
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f32384a;
-        return new KSerializer[]{m0Var, a2.f32309a, a.u(m0Var), a.u(h.f32351a)};
+        m0 m0Var = m0.f32388a;
+        return new KSerializer[]{m0Var, a2.f32313a, a.u(m0Var), a.u(h.f32355a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,8 +57,8 @@ public final class Truncation$$serializer implements f0<Truncation> {
         if (b10.p()) {
             i10 = b10.i(descriptor2, 0);
             str = b10.m(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, m0.f32384a, null);
-            obj2 = b10.n(descriptor2, 3, h.f32351a, null);
+            obj = b10.n(descriptor2, 2, m0.f32388a, null);
+            obj2 = b10.n(descriptor2, 3, h.f32355a, null);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -78,10 +78,10 @@ public final class Truncation$$serializer implements f0<Truncation> {
                     str2 = b10.m(descriptor2, 1);
                     i13 |= 2;
                 } else if (o10 == 2) {
-                    obj3 = b10.n(descriptor2, 2, m0.f32384a, obj3);
+                    obj3 = b10.n(descriptor2, 2, m0.f32388a, obj3);
                     i13 |= 4;
                 } else if (o10 == 3) {
-                    obj4 = b10.n(descriptor2, 3, h.f32351a, obj4);
+                    obj4 = b10.n(descriptor2, 3, h.f32355a, obj4);
                     i13 |= 8;
                 } else {
                     throw new n(o10);

@@ -88,7 +88,7 @@ public final class ForumPostActions {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 2, a2.f32309a, self.followIcon);
+            output.h(serialDesc, 2, a2.f32313a, self.followIcon);
         }
         output.y(serialDesc, 3, self.followLabel);
         if (!output.A(serialDesc, 4) && self.shareIcon == null) {
@@ -97,7 +97,7 @@ public final class ForumPostActions {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 4, a2.f32309a, self.shareIcon);
+            output.h(serialDesc, 4, a2.f32313a, self.shareIcon);
         }
         output.y(serialDesc, 5, self.shareLabel);
         if (!output.A(serialDesc, 6) && self.defaultReaction == null) {

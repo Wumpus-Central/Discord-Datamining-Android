@@ -20,7 +20,7 @@ public final class TextUtilsKt$toSpannable$9 extends s implements Function1<Emoj
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -115,7 +115,7 @@ public final class PostPreviewEmbed {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 7, a2.f32309a, self.subtitle);
+            output.h(serialDesc, 7, a2.f32313a, self.subtitle);
         }
         if (!output.A(serialDesc, 8) && self.coverImage == null) {
             z11 = false;
@@ -123,7 +123,7 @@ public final class PostPreviewEmbed {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 8, a2.f32309a, self.coverImage);
+            output.h(serialDesc, 8, a2.f32313a, self.coverImage);
         }
         if (!output.A(serialDesc, 9) && self.blurredCoverImage == null) {
             z12 = false;
@@ -131,13 +131,13 @@ public final class PostPreviewEmbed {
             z12 = true;
         }
         if (z12) {
-            output.h(serialDesc, 9, a2.f32309a, self.blurredCoverImage);
+            output.h(serialDesc, 9, a2.f32313a, self.blurredCoverImage);
         }
         if (output.A(serialDesc, 10) || self.coverImageOverlayText != null) {
             z13 = true;
         }
         if (z13) {
-            output.h(serialDesc, 10, a2.f32309a, self.coverImageOverlayText);
+            output.h(serialDesc, 10, a2.f32313a, self.coverImageOverlayText);
         }
     }
 

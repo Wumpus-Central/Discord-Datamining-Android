@@ -19,7 +19,7 @@ public /* synthetic */ class DiscordAudioManager$audioManagerBroadcastReceiver$2
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ScoAudioState.Update update) {
         invoke2(update);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

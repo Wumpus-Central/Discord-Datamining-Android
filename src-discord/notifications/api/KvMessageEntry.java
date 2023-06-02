@@ -113,7 +113,7 @@ public final class KvMessageEntry {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        t tVar = t.f22635a;
+        t tVar = t.f22639a;
         output.z(serialDesc, 0, new xj.f(tVar), self.members);
         output.z(serialDesc, 1, new xj.f(tVar), self.users);
         output.z(serialDesc, 2, tVar, self.message);

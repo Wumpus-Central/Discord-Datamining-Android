@@ -32,7 +32,7 @@ public final class OnPipModeChangedEvent$$serializer implements f0<OnPipModeChan
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f32351a};
+        return new KSerializer[]{h.f32355a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

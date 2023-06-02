@@ -23,14 +23,14 @@ final class AudioManagerModule$initialize$3 extends s implements Function1<Integ
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     public final void invoke(int i10) {
         DeviceEventManagerModule.RCTDeviceEventEmitter rCTDeviceEventEmitter = this.$eventEmitter;
         WritableMap createMap = Arguments.createMap();
         createMap.putInt("volume", i10);
-        Unit unit = Unit.f22076a;
+        Unit unit = Unit.f22080a;
         rCTDeviceEventEmitter.emit("android-current-media-volume-changed", createMap);
     }
 }

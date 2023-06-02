@@ -90,7 +90,7 @@ public final class TapChannelData implements ReactEvent {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 0, a2.f32309a, self.guildId);
+            output.h(serialDesc, 0, a2.f32313a, self.guildId);
         }
         if (!output.A(serialDesc, 1) && self.channelId == null) {
             z11 = false;
@@ -98,13 +98,13 @@ public final class TapChannelData implements ReactEvent {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 1, a2.f32309a, self.channelId);
+            output.h(serialDesc, 1, a2.f32313a, self.channelId);
         }
         if (output.A(serialDesc, 2) || self.messageId != null) {
             z12 = true;
         }
         if (z12) {
-            output.h(serialDesc, 2, a2.f32309a, self.messageId);
+            output.h(serialDesc, 2, a2.f32313a, self.messageId);
         }
     }
 

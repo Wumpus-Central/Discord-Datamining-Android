@@ -586,7 +586,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcast$media_engine_release(num.intValue());
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     @ReactMethod
@@ -597,7 +597,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcastWithError$media_engine_release(num.intValue(), i10, errorMessage);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     @ReactMethod

@@ -23,7 +23,7 @@ public final class DiscordGestureHandlerEnabledRootView$Companion$initNestedScro
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(View view, Function1<? super MotionEvent, ? extends Unit> function1) {
         invoke2(view, (Function1<? super MotionEvent, Unit>) function1);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

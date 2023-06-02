@@ -65,7 +65,7 @@ public abstract class TTILoggingApplication extends Application {
     }
 
     static {
-        a aVar = a.f22132a;
+        a aVar = a.f22136a;
         applicationOpenedTimestampExcludingActivityLaunchGap$delegate = aVar.a();
         applicationStartedTimestamp$delegate = aVar.a();
         applicationInitializeTimestamp$delegate = aVar.a();

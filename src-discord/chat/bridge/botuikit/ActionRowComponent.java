@@ -77,12 +77,12 @@ public final class ActionRowComponent extends Component {
         q.g(serialDesc, "serialDesc");
         boolean z10 = false;
         output.w(serialDesc, 0, self.getType());
-        output.z(serialDesc, 1, new xj.f(m0.f32384a), self.getIndices());
+        output.z(serialDesc, 1, new xj.f(m0.f32388a), self.getIndices());
         if (output.A(serialDesc, 2) || self.errorText != null) {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 2, a2.f32309a, self.errorText);
+            output.h(serialDesc, 2, a2.f32313a, self.errorText);
         }
         output.z(serialDesc, 3, new xj.f(ComponentSerializer.INSTANCE), self.components);
     }

@@ -25,7 +25,7 @@ final class MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1 extends
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(String str, Long l10, String str2, String str3) {
         invoke(str, l10.longValue(), str2, str3);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     public final void invoke(String userId, long j10, String streamId, String videoStreamParametersJSON) {

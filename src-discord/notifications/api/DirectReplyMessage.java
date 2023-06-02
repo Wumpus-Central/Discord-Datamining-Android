@@ -148,7 +148,7 @@ public final class DirectReplyMessage {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 3, a2.f32309a, self.content);
+            output.h(serialDesc, 3, a2.f32313a, self.content);
         }
         if (!output.A(serialDesc, 4) && self.type == null) {
             z11 = false;
@@ -156,7 +156,7 @@ public final class DirectReplyMessage {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 4, m0.f32384a, self.type);
+            output.h(serialDesc, 4, m0.f32388a, self.type);
         }
         if (!output.A(serialDesc, 5) && self.channelType == null) {
             z12 = false;
@@ -164,7 +164,7 @@ public final class DirectReplyMessage {
             z12 = true;
         }
         if (z12) {
-            output.h(serialDesc, 5, m0.f32384a, self.channelType);
+            output.h(serialDesc, 5, m0.f32388a, self.channelType);
         }
         if (!output.A(serialDesc, 6) && self.channelName == null) {
             z13 = false;
@@ -172,13 +172,13 @@ public final class DirectReplyMessage {
             z13 = true;
         }
         if (z13) {
-            output.h(serialDesc, 6, a2.f32309a, self.channelName);
+            output.h(serialDesc, 6, a2.f32313a, self.channelName);
         }
         if (output.A(serialDesc, 7) || self.guildName != null) {
             z14 = true;
         }
         if (z14) {
-            output.h(serialDesc, 7, a2.f32309a, self.guildName);
+            output.h(serialDesc, 7, a2.f32313a, self.guildName);
         }
     }
 

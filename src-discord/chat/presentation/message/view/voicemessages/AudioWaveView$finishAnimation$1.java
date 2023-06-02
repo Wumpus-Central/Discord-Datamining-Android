@@ -35,7 +35,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22076a);
+        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x003a  */
@@ -104,7 +104,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
             int r1 = r1 + r2
             goto L_0x0038
         L_0x0060:
-            kotlin.Unit r11 = kotlin.Unit.f22076a
+            kotlin.Unit r11 = kotlin.Unit.f22080a
             return r11
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1.invokeSuspend(java.lang.Object):java.lang.Object");

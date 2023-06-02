@@ -24,7 +24,7 @@ public final class MessageAccessoriesAdapter$onTapSpoiler$1 extends s implements
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessagePartViewHolder messagePartViewHolder) {
         invoke2(messagePartViewHolder);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

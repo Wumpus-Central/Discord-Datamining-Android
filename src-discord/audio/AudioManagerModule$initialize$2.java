@@ -25,7 +25,7 @@ final class AudioManagerModule$initialize$2 extends s implements Function1<Disco
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(DiscordAudioManager.DeviceTypes deviceTypes) {
         invoke2(deviceTypes);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -34,7 +34,7 @@ final class AudioManagerModule$initialize$2 extends s implements Function1<Disco
         DeviceEventManagerModule.RCTDeviceEventEmitter rCTDeviceEventEmitter = this.$eventEmitter;
         WritableMap createMap = Arguments.createMap();
         createMap.putString("device", device.toString());
-        Unit unit = Unit.f22076a;
+        Unit unit = Unit.f22080a;
         rCTDeviceEventEmitter.emit("android-active-audio-device-changed", createMap);
     }
 }

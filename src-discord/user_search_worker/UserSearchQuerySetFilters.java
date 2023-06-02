@@ -87,7 +87,7 @@ public final class UserSearchQuerySetFilters {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 0, a2.f32309a, self.guild);
+            output.h(serialDesc, 0, a2.f32313a, self.guild);
         }
         if (!output.A(serialDesc, 1) && self.friends == null) {
             z11 = false;
@@ -95,13 +95,13 @@ public final class UserSearchQuerySetFilters {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 1, h.f32351a, self.friends);
+            output.h(serialDesc, 1, h.f32355a, self.friends);
         }
         if (output.A(serialDesc, 2) || self.strict != null) {
             z12 = true;
         }
         if (z12) {
-            output.h(serialDesc, 2, h.f32351a, self.strict);
+            output.h(serialDesc, 2, h.f32355a, self.strict);
         }
     }
 

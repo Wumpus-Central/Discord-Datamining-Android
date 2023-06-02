@@ -23,7 +23,7 @@ public final class EglRenderer$init$1$handler$1 extends s implements Function1<E
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -35,7 +35,7 @@ public final class EglRenderer$init$1$handler$1 extends s implements Function1<E
         EglRenderer eglRenderer = this.this$0;
         synchronized (obj) {
             eglRenderer.renderThreadHandler = null;
-            Unit unit = Unit.f22076a;
+            Unit unit = Unit.f22080a;
         }
     }
 }

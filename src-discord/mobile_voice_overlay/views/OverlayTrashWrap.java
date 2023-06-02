@@ -57,7 +57,7 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22076a;
+        Unit unit = Unit.f22080a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -227,7 +227,7 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22076a;
+        Unit unit = Unit.f22080a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -304,7 +304,7 @@ public final class OverlayTrashWrap extends OverlayView {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(getContext(), R.animator.fade_in);
         loadAnimator.setTarget(this);
-        Unit unit = Unit.f22076a;
+        Unit unit = Unit.f22080a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);

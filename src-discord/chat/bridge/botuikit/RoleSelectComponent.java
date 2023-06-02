@@ -87,7 +87,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z12 = true;
         output.w(serialDesc, 1, self.getType());
-        output.z(serialDesc, 2, new xj.f(m0.f32384a), self.getIndices());
+        output.z(serialDesc, 2, new xj.f(m0.f32388a), self.getIndices());
         output.y(serialDesc, 3, self.getApplicationId());
         output.y(serialDesc, 4, self.getCustomId());
         if (!output.A(serialDesc, 5) && self.getPlaceholder() == null) {
@@ -96,7 +96,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
             z10 = true;
         }
         if (z10) {
-            output.h(serialDesc, 5, a2.f32309a, self.getPlaceholder());
+            output.h(serialDesc, 5, a2.f32313a, self.getPlaceholder());
         }
         if (!output.A(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
@@ -104,7 +104,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 6, a2.f32309a, self.getAccessibilityLabel());
+            output.h(serialDesc, 6, a2.f32313a, self.getAccessibilityLabel());
         }
         output.w(serialDesc, 7, self.getMinValues());
         output.w(serialDesc, 8, self.getMaxValues());

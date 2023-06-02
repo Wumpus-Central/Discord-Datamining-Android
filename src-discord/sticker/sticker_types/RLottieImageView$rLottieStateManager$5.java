@@ -23,7 +23,7 @@ public final class RLottieImageView$rLottieStateManager$5 extends s implements F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(RLottieImageView.Config config) {
         invoke2(config);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

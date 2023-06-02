@@ -33,7 +33,7 @@ public final class TapReactionOverflow$$serializer implements f0<TapReactionOver
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32309a;
+        a2 a2Var = a2.f32313a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

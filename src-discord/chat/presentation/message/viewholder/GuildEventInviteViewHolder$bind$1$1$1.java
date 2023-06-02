@@ -20,7 +20,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m323invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22076a;
+        return Unit.f22080a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

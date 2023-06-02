@@ -52,9 +52,9 @@ public final class MobileVoiceOverlayData$$serializer implements f0<MobileVoiceO
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32309a;
-        h hVar = h.f32351a;
-        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f32384a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
+        a2 a2Var = a2.f32313a;
+        h hVar = h.f32355a;
+        return new KSerializer[]{new f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), m0.f32388a, a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, a2Var, a2Var, hVar, hVar, ConnectionQuality.Companion.serializer(), hVar, new f(MobileVoiceOverlaySelectorResult$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

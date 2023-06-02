@@ -34,7 +34,7 @@ public final class GuildVersion$$serializer implements f0<GuildVersion> {
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32309a, w0.f32425a};
+        return new KSerializer[]{a2.f32313a, w0.f32429a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

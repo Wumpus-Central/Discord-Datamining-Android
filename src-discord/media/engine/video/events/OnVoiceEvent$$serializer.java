@@ -34,7 +34,7 @@ public final class OnVoiceEvent$$serializer implements f0<OnVoiceEvent> {
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{e0.f32334a, m0.f32384a};
+        return new KSerializer[]{e0.f32338a, m0.f32388a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

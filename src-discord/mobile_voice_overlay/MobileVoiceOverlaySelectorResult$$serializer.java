@@ -40,7 +40,7 @@ public final class MobileVoiceOverlaySelectorResult$$serializer implements f0<Mo
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32309a;
+        a2 a2Var = a2.f32313a;
         return new KSerializer[]{GuildId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a2Var, a2Var, a2Var};
     }
 

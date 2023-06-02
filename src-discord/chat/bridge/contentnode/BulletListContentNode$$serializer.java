@@ -40,7 +40,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(m0.f32384a), h.f32351a, new f(new f(ContentNodeSerializer.INSTANCE))};
+        return new KSerializer[]{a.u(m0.f32388a), h.f32355a, new f(new f(ContentNodeSerializer.INSTANCE))};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -53,7 +53,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            obj2 = b10.n(descriptor2, 0, m0.f32384a, null);
+            obj2 = b10.n(descriptor2, 0, m0.f32388a, null);
             z10 = b10.C(descriptor2, 1);
             obj = b10.y(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), null);
             i10 = 7;
@@ -68,7 +68,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
                 if (o10 == -1) {
                     z11 = false;
                 } else if (o10 == 0) {
-                    obj3 = b10.n(descriptor2, 0, m0.f32384a, obj3);
+                    obj3 = b10.n(descriptor2, 0, m0.f32388a, obj3);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     z12 = b10.C(descriptor2, 1);

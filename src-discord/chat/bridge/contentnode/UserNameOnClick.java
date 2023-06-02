@@ -103,7 +103,7 @@ public final class UserNameOnClick {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 3, m0.f32384a, self.linkColor);
+            output.h(serialDesc, 3, m0.f32388a, self.linkColor);
         }
     }
 

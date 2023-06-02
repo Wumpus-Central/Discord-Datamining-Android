@@ -111,15 +111,15 @@ public final class UserSearchQuerySetPayload {
             z11 = true;
         }
         if (z11) {
-            output.h(serialDesc, 2, new xj.f(a2.f32309a), self.blacklist);
+            output.h(serialDesc, 2, new xj.f(a2.f32313a), self.blacklist);
         }
         if (output.A(serialDesc, 3) || self.whitelist != null) {
             z12 = true;
         }
         if (z12) {
-            output.h(serialDesc, 3, new xj.f(a2.f32309a), self.whitelist);
+            output.h(serialDesc, 3, new xj.f(a2.f32313a), self.whitelist);
         }
-        output.z(serialDesc, 4, new r0(a2.f32309a, x.f32430a), self.boosters);
+        output.z(serialDesc, 4, new r0(a2.f32313a, x.f32434a), self.boosters);
         output.w(serialDesc, 5, self.limit);
     }
 

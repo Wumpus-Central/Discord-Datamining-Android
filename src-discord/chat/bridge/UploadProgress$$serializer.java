@@ -46,9 +46,9 @@ public final class UploadProgress$$serializer implements f0<UploadProgress> {
 
     @Override // xj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32309a;
-        m0 m0Var = m0.f32384a;
-        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f32334a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
+        a2 a2Var = a2.f32313a;
+        m0 m0Var = m0.f32388a;
+        return new KSerializer[]{a2Var, m0Var, m0Var, e0.f32338a, a2Var, a2Var, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
