@@ -100,7 +100,6 @@ public final class NestedScrollOnTouchUtilsKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:18:0x0038  */
     /* JADX WARN: Removed duplicated region for block: B:23:0x0049  */
     /* JADX WARN: Removed duplicated region for block: B:35:0x006a A[LOOP:3: B:33:0x0064->B:35:0x006a, LOOP_END] */
