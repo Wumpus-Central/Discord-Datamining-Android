@@ -23,9 +23,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.j;
-import oj.a;
-import oj.c;
-import oj.d;
+import pj.a;
+import pj.c;
+import pj.d;
 
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0012\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u0000 Y2\u00020\u0001:\u0002YZB%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010A\u001a\u000202H\u0002J\u0010\u0010B\u001a\u0002022\u0006\u0010C\u001a\u00020DH\u0014J0\u0010E\u001a\u0002022\u0006\u0010F\u001a\u00020<2\u0006\u0010G\u001a\u00020\u00072\u0006\u0010H\u001a\u00020\u00072\u0006\u0010I\u001a\u00020\u00072\u0006\u0010J\u001a\u00020\u0007H\u0014J\u0018\u0010K\u001a\u0002022\u0006\u0010L\u001a\u00020\u00072\u0006\u0010M\u001a\u00020\u0007H\u0014J\u0010\u0010N\u001a\u00020<2\u0006\u0010O\u001a\u00020PH\u0017J$\u0010Q\u001a\u0002022\b\b\u0002\u00107\u001a\u00020\"2\b\b\u0002\u0010-\u001a\u00020\u00072\u0006\u0010R\u001a\u00020<H\u0002J\u0006\u0010S\u001a\u000202J\u001a\u0010\u0014\u001a\u0002022\b\b\u0001\u0010\u0013\u001a\u00020\u00122\b\b\u0002\u0010A\u001a\u00020<J&\u0010T\u001a\u000202*\u00020D2\u0006\u0010U\u001a\u00020\u00122\u0006\u0010V\u001a\u00020\u00182\b\b\u0002\u0010W\u001a\u00020<H\u0002J\f\u0010X\u001a\u00020\u0018*\u00020\u0018H\u0002R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0013\u001a\u0004\u0018\u00010\u00122\b\u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0002@BX\u0083\u000e¢\u0006\n\n\u0002\u0010\u0016\"\u0004\b\u0014\u0010\u0015R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0019\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u00078\u0006@FX\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u001f\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u00078\u0006@FX\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b \u0010\u001b\"\u0004\b!\u0010\u001dR\u001e\u0010#\u001a\u00020\"2\u0006\u0010\u0011\u001a\u00020\"@BX\u0082\u000e¢\u0006\b\n\u0000\"\u0004\b$\u0010%R*\u0010'\u001a\u0004\u0018\u00010&2\b\u0010\u0011\u001a\u0004\u0018\u00010&@FX\u0086\u000e¢\u0006\u0010\n\u0002\u0010,\u001a\u0004\b(\u0010)\"\u0004\b*\u0010+R\u001e\u0010-\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u0007@BX\u0082\u000e¢\u0006\b\n\u0000\"\u0004\b.\u0010\u001dR(\u0010/\u001a\u0010\u0012\u0004\u0012\u000201\u0012\u0004\u0012\u000202\u0018\u000100X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R$\u00107\u001a\u00020\"2\u0006\u0010\u0011\u001a\u00020\"@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b8\u00109\"\u0004\b:\u0010%R\u001a\u0010;\u001a\u00020<X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@¨\u0006["}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveView;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "animationJob", "Lkotlinx/coroutines/Job;", "getAnimationJob", "()Lkotlinx/coroutines/Job;", "setAnimationJob", "(Lkotlinx/coroutines/Job;)V", "animationManager", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveAnimationManager;", "value", "", "audioProgress", "setAudioProgress", "(Ljava/lang/Float;)V", "Ljava/lang/Float;", "audioProgressPaint", "Landroid/graphics/Paint;", "audioProgressPaintColor", "getAudioProgressPaintColor", "()I", "setAudioProgressPaintColor", "(I)V", "defaultPaint", "defaultPaintColor", "getDefaultPaintColor", "setDefaultPaintColor", "", "downSampleData", "setDownSampleData", "([B)V", "", "duration", "getDuration", "()Ljava/lang/Long;", "setDuration", "(Ljava/lang/Long;)V", "Ljava/lang/Long;", "numChunks", "setNumChunks", "onAudioProgressChange", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioWaveView$ProgressEvent;", "", "getOnAudioProgressChange", "()Lkotlin/jvm/functions/Function1;", "setOnAudioProgressChange", "(Lkotlin/jvm/functions/Function1;)V", "originalSampleData", "getOriginalSampleData", "()[B", "setOriginalSampleData", "shouldAnimate", "", "getShouldAnimate", "()Z", "setShouldAnimate", "(Z)V", "finishAnimation", "onDraw", "canvas", "Landroid/graphics/Canvas;", ViewProps.ON_LAYOUT, "changed", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "onMeasure", "widthMeasureSpec", "heightMeasureSpec", "onTouchEvent", "event", "Landroid/view/MotionEvent;", "recalculateSampleData", "downSample", "reset", "draw", "progress", "paint", "animate", "init", "Companion", "ProgressEvent", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
@@ -137,7 +137,7 @@ public final class AudioWaveView extends View {
         CHUNK_SPACING = dpToPx2;
         int i10 = dpToPx + dpToPx2;
         CHUNK_SIZE = i10;
-        a.C0380a aVar = a.f26326l;
+        a.C0397a aVar = a.f27125l;
         MIN_WIDTH = i10 * 5;
     }
 
@@ -332,7 +332,7 @@ public final class AudioWaveView extends View {
                 i14 = 0;
             }
             int i16 = this.numChunks;
-            c10 = ah.j.c((getWidth() / i15) + i14, 5);
+            c10 = bh.j.c((getWidth() / i15) + i14, 5);
             setNumChunks(c10);
             if (i16 != this.numChunks) {
                 z11 = true;
@@ -405,9 +405,9 @@ public final class AudioWaveView extends View {
             int r6 = android.view.View.MeasureSpec.getSize(r6)
         L_0x0052:
             int r0 = com.discord.chat.presentation.message.view.voicemessages.AudioWaveView.MAX_WIDTH
-            int r6 = ah.h.g(r6, r0)
+            int r6 = bh.h.g(r6, r0)
             int r0 = com.discord.chat.presentation.message.view.voicemessages.AudioWaveView.MIN_WIDTH
-            int r6 = ah.h.c(r6, r0)
+            int r6 = bh.h.c(r6, r0)
             int r7 = android.view.View.MeasureSpec.getSize(r7)
             r5.setMeasuredDimension(r6, r7)
             return
@@ -430,7 +430,7 @@ public final class AudioWaveView extends View {
                 parent.requestDisallowInterceptTouchEvent(true);
             }
         }
-        i10 = ah.j.i(event.getX(), 0.0f, getWidth());
+        i10 = bh.j.i(event.getX(), 0.0f, getWidth());
         float width = i10 / getWidth();
         int action = event.getAction();
         if (action != 0 && action != 1 && action != 2) {

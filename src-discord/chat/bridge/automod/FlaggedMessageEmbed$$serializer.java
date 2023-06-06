@@ -21,14 +21,14 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import uj.n;
-import vj.a;
-import xj.a2;
-import xj.f0;
-import xj.h;
-import xj.m0;
+import vj.n;
+import wj.a;
+import yj.a2;
+import yj.f0;
+import yj.h;
+import yj.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/automod/FlaggedMessageEmbed.$serializer", "Lxj/f0;", "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/automod/FlaggedMessageEmbed.$serializer", "Lyj/f0;", "Lcom/discord/chat/bridge/automod/FlaggedMessageEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes5.dex */
 public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageEmbed> {
     public static final FlaggedMessageEmbed$$serializer INSTANCE;
@@ -56,11 +56,11 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
     private FlaggedMessageEmbed$$serializer() {
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32313a;
-        m0 m0Var = m0.f32388a;
-        h hVar = h.f32355a;
+        a2 a2Var = a2.f32924a;
+        m0 m0Var = m0.f32999a;
+        h hVar = h.f32966a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), a.u(StructurableTextSerializer.INSTANCE), a.u(a2Var), a.u(a2Var), m0Var, a.u(m0Var), hVar, a.u(a2Var), a.u(hVar)};
     }
 
@@ -93,14 +93,14 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
             obj2 = b10.n(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
             obj5 = b10.n(descriptor2, 3, UserId$$serializer.INSTANCE, null);
             obj3 = b10.n(descriptor2, 4, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f32313a;
+            a2 a2Var = a2.f32924a;
             obj6 = b10.n(descriptor2, 5, a2Var, null);
             obj7 = b10.n(descriptor2, 6, a2Var, null);
             i10 = b10.i(descriptor2, 7);
-            obj9 = b10.n(descriptor2, 8, m0.f32388a, null);
+            obj9 = b10.n(descriptor2, 8, m0.f32999a, null);
             z10 = b10.C(descriptor2, 9);
             obj8 = b10.n(descriptor2, 10, a2Var, null);
-            obj4 = b10.n(descriptor2, 11, h.f32355a, null);
+            obj4 = b10.n(descriptor2, 11, h.f32966a, null);
             i11 = 4095;
         } else {
             int i16 = 11;
@@ -168,12 +168,12 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i12 = 10;
                         break;
                     case 5:
-                        obj14 = b10.n(descriptor2, 5, a2.f32313a, obj14);
+                        obj14 = b10.n(descriptor2, 5, a2.f32924a, obj14);
                         i17 |= 32;
                         i16 = 11;
                         continue;
                     case 6:
-                        obj15 = b10.n(descriptor2, i15, a2.f32313a, obj15);
+                        obj15 = b10.n(descriptor2, i15, a2.f32924a, obj15);
                         i17 |= 64;
                         break;
                     case 7:
@@ -181,7 +181,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 128;
                         break;
                     case 8:
-                        obj11 = b10.n(descriptor2, 8, m0.f32388a, obj11);
+                        obj11 = b10.n(descriptor2, 8, m0.f32999a, obj11);
                         i17 |= Spliterator.NONNULL;
                         break;
                     case 9:
@@ -189,11 +189,11 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 512;
                         break;
                     case 10:
-                        obj16 = b10.n(descriptor2, i12, a2.f32313a, obj16);
+                        obj16 = b10.n(descriptor2, i12, a2.f32924a, obj16);
                         i17 |= Spliterator.IMMUTABLE;
                         break;
                     case 11:
-                        obj13 = b10.n(descriptor2, i16, h.f32355a, obj13);
+                        obj13 = b10.n(descriptor2, i16, h.f32966a, obj13);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         break;
                     default:
@@ -219,7 +219,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m580unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -233,7 +233,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         b10.c(descriptor2);
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

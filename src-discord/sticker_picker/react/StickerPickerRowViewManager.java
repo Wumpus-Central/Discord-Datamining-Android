@@ -9,7 +9,7 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import java.util.Map;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;

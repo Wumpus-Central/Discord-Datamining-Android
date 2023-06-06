@@ -10,12 +10,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import uj.f;
-import xj.a2;
-import xj.n1;
+import vj.f;
+import yj.a2;
+import yj.n1;
 
-@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u000e2\u00020\u0001:\u0003\u000e\u000f\u0010R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0012\u0010\b\u001a\u00020\tX¦\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0012\u0010\f\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u0005\u0082\u0001\u0002\u0011\u0012¨\u0006\u0013"}, d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed;", "", ViewProps.BACKGROUND_COLOR, "", "getBackgroundColor", "()I", "headerColor", "getHeaderColor", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "thumbnailCornerRadius", "getThumbnailCornerRadius", "Companion", "Resolved", "Resolving", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @f(with = GiftEmbedSerializer.class)
+@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u000e2\u00020\u0001:\u0003\u000e\u000f\u0010R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0012\u0010\b\u001a\u00020\tX¦\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0012\u0010\f\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u0005\u0082\u0001\u0002\u0011\u0012¨\u0006\u0013"}, d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed;", "", ViewProps.BACKGROUND_COLOR, "", "getBackgroundColor", "()I", "headerColor", "getHeaderColor", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "thumbnailCornerRadius", "getThumbnailCornerRadius", "Companion", "Resolved", "Resolving", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
 public interface GiftEmbed {
     public static final Companion Companion = Companion.$$INSTANCE;
@@ -88,16 +88,16 @@ public interface GiftEmbed {
                 q.g(self, "self");
                 q.g(output, "output");
                 q.g(serialDesc, "serialDesc");
-                output.y(serialDesc, 0, self.getHeaderText());
-                output.w(serialDesc, 1, self.getHeaderColor());
-                output.w(serialDesc, 2, self.getBackgroundColor());
-                output.w(serialDesc, 3, self.getThumbnailCornerRadius());
-                output.y(serialDesc, 4, self.getThumbnailUrl());
-                output.y(serialDesc, 5, self.getTitleText());
-                output.w(serialDesc, 6, self.getTitleColor());
-                output.y(serialDesc, 7, self.getSubtitle());
-                output.w(serialDesc, 8, self.getSubtitleColor());
-                output.w(serialDesc, 9, self.thumbnailBackgroundColor);
+                output.z(serialDesc, 0, self.getHeaderText());
+                output.x(serialDesc, 1, self.getHeaderColor());
+                output.x(serialDesc, 2, self.getBackgroundColor());
+                output.x(serialDesc, 3, self.getThumbnailCornerRadius());
+                output.z(serialDesc, 4, self.getThumbnailUrl());
+                output.z(serialDesc, 5, self.getTitleText());
+                output.x(serialDesc, 6, self.getTitleColor());
+                output.z(serialDesc, 7, self.getSubtitle());
+                output.x(serialDesc, 8, self.getSubtitleColor());
+                output.x(serialDesc, 9, self.thumbnailBackgroundColor);
             }
 
             public final String component1() {
@@ -341,17 +341,17 @@ public interface GiftEmbed {
                 q.g(output, "output");
                 q.g(serialDesc, "serialDesc");
                 boolean z15 = false;
-                output.y(serialDesc, 0, self.getHeaderText());
-                output.w(serialDesc, 1, self.getHeaderColor());
-                output.w(serialDesc, 2, self.getBackgroundColor());
-                output.w(serialDesc, 3, self.getThumbnailCornerRadius());
+                output.z(serialDesc, 0, self.getHeaderText());
+                output.x(serialDesc, 1, self.getHeaderColor());
+                output.x(serialDesc, 2, self.getBackgroundColor());
+                output.x(serialDesc, 3, self.getThumbnailCornerRadius());
                 if (!output.A(serialDesc, 4) && self.getThumbnailUrl() == null) {
                     z10 = false;
                 } else {
                     z10 = true;
                 }
                 if (z10) {
-                    output.h(serialDesc, 4, a2.f32313a, self.getThumbnailUrl());
+                    output.u(serialDesc, 4, a2.f32924a, self.getThumbnailUrl());
                 }
                 if (!output.A(serialDesc, 5) && self.getTitleText() == null) {
                     z11 = false;
@@ -359,46 +359,46 @@ public interface GiftEmbed {
                     z11 = true;
                 }
                 if (z11) {
-                    output.h(serialDesc, 5, a2.f32313a, self.getTitleText());
+                    output.u(serialDesc, 5, a2.f32924a, self.getTitleText());
                 }
-                output.w(serialDesc, 6, self.getTitleColor());
+                output.x(serialDesc, 6, self.getTitleColor());
                 if (!output.A(serialDesc, 7) && self.getSubtitle() == null) {
                     z12 = false;
                 } else {
                     z12 = true;
                 }
                 if (z12) {
-                    output.h(serialDesc, 7, a2.f32313a, self.getSubtitle());
+                    output.u(serialDesc, 7, a2.f32924a, self.getSubtitle());
                 }
-                output.w(serialDesc, 8, self.getSubtitleColor());
+                output.x(serialDesc, 8, self.getSubtitleColor());
                 if (!output.A(serialDesc, 9) && self.bodyText == null) {
                     z13 = false;
                 } else {
                     z13 = true;
                 }
                 if (z13) {
-                    output.h(serialDesc, 9, a2.f32313a, self.bodyText);
+                    output.u(serialDesc, 9, a2.f32924a, self.bodyText);
                 }
-                output.w(serialDesc, 10, self.bodyTextColor);
+                output.x(serialDesc, 10, self.bodyTextColor);
                 if (!output.A(serialDesc, 11) && self.acceptLabelText == null) {
                     z14 = false;
                 } else {
                     z14 = true;
                 }
                 if (z14) {
-                    output.h(serialDesc, 11, a2.f32313a, self.acceptLabelText);
+                    output.u(serialDesc, 11, a2.f32924a, self.acceptLabelText);
                 }
-                output.w(serialDesc, 12, self.acceptLabelColor);
-                output.w(serialDesc, 13, self.acceptLabelBackgroundColor);
+                output.x(serialDesc, 12, self.acceptLabelColor);
+                output.x(serialDesc, 13, self.acceptLabelBackgroundColor);
                 if (output.A(serialDesc, 14) || self.splashUrl != null) {
                     z15 = true;
                 }
                 if (z15) {
-                    output.h(serialDesc, 14, a2.f32313a, self.splashUrl);
+                    output.u(serialDesc, 14, a2.f32924a, self.splashUrl);
                 }
-                output.r(serialDesc, 15, self.splashOpacity);
-                output.x(serialDesc, 16, self.canBeAccepted);
-                output.y(serialDesc, 17, self.giftCode);
+                output.s(serialDesc, 15, self.splashOpacity);
+                output.y(serialDesc, 16, self.canBeAccepted);
+                output.z(serialDesc, 17, self.giftCode);
             }
 
             public final String component1() {
@@ -719,12 +719,12 @@ public interface GiftEmbed {
             q.g(self, "self");
             q.g(output, "output");
             q.g(serialDesc, "serialDesc");
-            output.y(serialDesc, 0, self.getHeaderText());
-            output.w(serialDesc, 1, self.getHeaderColor());
-            output.w(serialDesc, 2, self.getBackgroundColor());
-            output.w(serialDesc, 3, self.getThumbnailCornerRadius());
-            output.w(serialDesc, 4, self.resolvingGradientStart);
-            output.w(serialDesc, 5, self.resolvingGradientEnd);
+            output.z(serialDesc, 0, self.getHeaderText());
+            output.x(serialDesc, 1, self.getHeaderColor());
+            output.x(serialDesc, 2, self.getBackgroundColor());
+            output.x(serialDesc, 3, self.getThumbnailCornerRadius());
+            output.x(serialDesc, 4, self.resolvingGradientStart);
+            output.x(serialDesc, 5, self.resolvingGradientEnd);
         }
 
         public final String component1() {

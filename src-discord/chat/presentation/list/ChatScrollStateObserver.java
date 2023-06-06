@@ -1,8 +1,8 @@
 package com.discord.chat.presentation.list;
 
-import ah.j;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import bh.j;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;

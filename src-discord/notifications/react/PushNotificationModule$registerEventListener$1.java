@@ -2,7 +2,7 @@ package com.discord.notifications.react;
 
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -24,7 +24,7 @@ final class PushNotificationModule$registerEventListener$1 extends s implements 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

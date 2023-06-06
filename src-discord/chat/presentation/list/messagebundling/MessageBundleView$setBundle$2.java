@@ -23,7 +23,7 @@ final class MessageBundleView$setBundle$2 extends s implements Function1<Message
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
         m182invoke1xi1bu0(messageId.m580unboximpl());
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */

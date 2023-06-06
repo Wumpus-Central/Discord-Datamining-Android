@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import jg.t;
+import kg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -13,7 +13,7 @@ import kotlinx.coroutines.j;
 import kotlinx.coroutines.k0;
 import kotlinx.coroutines.t0;
 import kotlinx.coroutines.y0;
-import pg.d;
+import qg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -42,7 +42,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -61,7 +61,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22080a;
+            return Unit.f22063a;
         }
     }
 
@@ -80,7 +80,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
+        return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -114,6 +114,6 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
                 return d10;
             }
         }
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 }

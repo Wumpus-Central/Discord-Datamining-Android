@@ -66,7 +66,7 @@ public final class LoadingDelegate extends BaseChatListItemDelegate<LoadingChatL
         } else if (i10 == 2) {
             function0 = new LoadingDelegate$bindView$2(getEventHandler());
         } else {
-            throw new jg.q();
+            throw new kg.q();
         }
         view.showButton(button, function0);
     }

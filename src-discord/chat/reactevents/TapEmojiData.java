@@ -7,7 +7,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.q;
@@ -59,7 +59,7 @@ public final class TapEmojiData implements ReactEvent {
         } else if (emojiContentNode instanceof CustomEmojiContentNode) {
             writableNativeMap = NativeMapExtensionsKt.nativeMapOf(x.a("id", String.valueOf(((CustomEmojiContentNode) emojiContentNode).getId())), x.a("alt", ((CustomEmojiContentNode) this.emoji).getAlt()), x.a("src", ((CustomEmojiContentNode) this.emoji).getSrc()));
         } else {
-            throw new jg.q();
+            throw new kg.q();
         }
         pairArr[0] = x.a("node", writableNativeMap);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);

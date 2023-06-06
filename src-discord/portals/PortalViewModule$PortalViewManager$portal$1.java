@@ -1,7 +1,7 @@
 package com.discord.portals;
 
 import android.widget.FrameLayout;
-import jg.t;
+import kg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -13,7 +13,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.t0;
 import kotlinx.coroutines.y0;
-import pg.d;
+import qg.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$portal$1", f = "PortalViewModule.kt", l = {37}, m = "invokeSuspend")
@@ -41,7 +41,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -60,7 +60,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22080a;
+            return Unit.f22063a;
         }
     }
 
@@ -78,7 +78,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalViewModule$PortalViewManager$portal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
+        return ((PortalViewModule$PortalViewManager$portal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -100,6 +100,6 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         PortalViewContextManager.INSTANCE.registerView(this.$portal, this.$portalView);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 }

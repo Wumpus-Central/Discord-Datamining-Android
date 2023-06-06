@@ -18,11 +18,11 @@ import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.tasks.Task;
 import ib.d;
 import java.util.Map;
-import jg.x;
-import kg.v;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import lg.v;
 
 @Metadata(d1 = {"\u0000O\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004*\u0001\u0006\u0018\u0000 !2\u00020\u0001:\u0001!B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000bH\u0007J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\u0010\u0010\u0011\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\u0010H\u0007J\b\u0010\u0013\u001a\u00020\rH\u0002J\u001a\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\u00102\b\u0010\u0015\u001a\u0004\u0018\u00010\u0010H\u0002J \u0010\u0016\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u0016\u001a\u00020\r2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J,\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u0012\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00102\b\u0010\u001f\u001a\u0004\u0018\u00010\u00102\b\u0010 \u001a\u0004\u0018\u00010\u0010H\u0007R\u0010\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0007R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\""}, d2 = {"Lcom/discord/password_manager/smartlock/SmartLockModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "activityEventListener", "com/discord/password_manager/smartlock/SmartLockModule$activityEventListener$1", "Lcom/discord/password_manager/smartlock/SmartLockModule$activityEventListener$1;", "credentialsClient", "Lcom/google/android/gms/auth/api/credentials/CredentialsClient;", "loginPromise", "Lcom/facebook/react/bridge/Promise;", "autoLogin", "", BaseJavaModule.METHOD_TYPE_PROMISE, "getName", "", "removeCredentials", "login", "requestCredentials", "resolvePromiseWithCredentials", "password", "tryResolveResult", "activity", "Landroid/app/Activity;", "requestCode", "", "resolvableApiException", "Lcom/google/android/gms/common/api/ResolvableApiException;", "updateAccountCredentials", "", "usernameWithDiscriminator", "avatarUri", "Companion", "password_manager_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes4.dex */
@@ -93,7 +93,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
     }
 
     private final void requestCredentials() {
-        a a10 = new a.C0156a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
+        a a10 = new a.C0158a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
         q.f(a10, "Builder()\n            .s…ITY)\n            .build()");
         this.credentialsClient.D(a10).b(new d() { // from class: com.discord.password_manager.smartlock.a
             @Override // ib.d
@@ -119,7 +119,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
             }
             Credential c11 = ((s9.a) task.k()).c();
             if (c11 != null) {
-                str2 = c11.C();
+                str2 = c11.K();
             }
             if (str != null) {
                 this$0.resolvePromiseWithCredentials(str, str2);

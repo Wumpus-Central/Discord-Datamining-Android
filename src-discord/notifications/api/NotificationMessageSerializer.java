@@ -18,7 +18,7 @@ public final class NotificationMessageSerializer implements KSerializer<Notifica
     private NotificationMessageSerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return NotificationMessage.Companion.serializer().getDescriptor();
     }

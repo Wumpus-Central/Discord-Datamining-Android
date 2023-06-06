@@ -67,7 +67,7 @@ public final class GuildView extends FrameLayout {
             r5.boundShortGuildName = r7
             r0 = 0
             if (r6 == 0) goto L_0x0021
-            boolean r1 = nj.l.w(r6)
+            boolean r1 = oj.l.w(r6)
             if (r1 == 0) goto L_0x001f
             goto L_0x0021
         L_0x001f:

@@ -1,6 +1,5 @@
 package com.discord.media.engine.video.egl_renderer;
 
-import ah.j;
 import android.graphics.Matrix;
 import android.graphics.SurfaceTexture;
 import android.opengl.GLES20;
@@ -8,6 +7,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.view.Surface;
+import bh.j;
 import co.discord.media_engine.SharedEglBaseContext;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.media.engine.types.Debug;
@@ -169,7 +169,7 @@ public class EglRenderer implements VideoSink {
                 String averageTimeAsString2 = companion.averageTimeAsString(this.renderSwapBufferTimeNs, this.framesRendered);
                 logD("[logStatistics] Duration: " + millis + " ms. Frames received: " + i10 + ". Dropped: " + i11 + ". Rendered: " + i12 + ". Render fps: " + format + ". Average render time: " + averageTimeAsString + ". Average swapBuffer time: " + averageTimeAsString2 + ".");
                 resetStatistics(nanoTime);
-                Unit unit = Unit.f22080a;
+                Unit unit = Unit.f22063a;
             }
         }
     }
@@ -184,7 +184,7 @@ public class EglRenderer implements VideoSink {
                 handler.removeCallbacks(this$0.logStatisticsTask());
                 handler.postDelayed(this$0.logStatisticsTask(), LOG_INTERVAL_MS);
             }
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
     }
 
@@ -215,7 +215,7 @@ public class EglRenderer implements VideoSink {
         q.f(lock, "lock");
         synchronized (lock) {
             GLES20.glUseProgram(0);
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
         this$0.drawer.release();
         this$0.frameDrawer.release();
@@ -327,7 +327,7 @@ public class EglRenderer implements VideoSink {
                                 this.framesRendered++;
                                 this.renderTimeNs += nanoTime3 - nanoTime;
                                 this.renderSwapBufferTimeNs += nanoTime3 - nanoTime2;
-                                Unit unit = Unit.f22080a;
+                                Unit unit = Unit.f22063a;
                             }
                         } catch (GlUtil.GlOutOfMemoryException e10) {
                             logE("Error while drawing frame", e10);
@@ -354,7 +354,7 @@ public class EglRenderer implements VideoSink {
             this.framesRendered = 0;
             this.renderTimeNs = 0L;
             this.renderSwapBufferTimeNs = 0L;
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
     }
 
@@ -484,7 +484,7 @@ public class EglRenderer implements VideoSink {
                 }
             });
             this.renderThreadHandler = null;
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
             ThreadUtils.awaitUninterruptibly(countDownLatch);
             synchronized (this.frameLock) {
                 VideoFrame videoFrame = this.pendingFrame;
@@ -535,7 +535,7 @@ public class EglRenderer implements VideoSink {
             if (j10 != j11) {
                 this.nextFrameTimeNs = System.nanoTime();
             }
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
     }
 
@@ -553,7 +553,7 @@ public class EglRenderer implements VideoSink {
             } else {
                 this.layoutAspectRatio = 0.0f;
             }
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
     }
 
@@ -561,7 +561,7 @@ public class EglRenderer implements VideoSink {
         logD("setMirrorHorizontally: " + z10);
         synchronized (this.layoutLock) {
             this.mirrorHorizontally = z10;
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
         }
     }
 

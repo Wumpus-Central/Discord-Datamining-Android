@@ -13,7 +13,7 @@ import com.discord.recycler_view.scroller.Scroller;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.views.view.ReactViewGroup;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;

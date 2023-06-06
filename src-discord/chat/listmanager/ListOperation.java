@@ -68,9 +68,9 @@ public abstract class ListOperation {
             super(null);
             q.g(range, "range");
             this.range = range;
-            this.first = range.a();
-            this.last = range.b();
-            this.count = (range.b() - range.a()) + 1;
+            this.first = range.b();
+            this.last = range.e();
+            this.count = (range.e() - range.b()) + 1;
         }
 
         public static /* synthetic */ ChangeRange copy$default(ChangeRange changeRange, IntRange intRange, int i10, Object obj) {
@@ -181,9 +181,9 @@ public abstract class ListOperation {
             super(null);
             q.g(range, "range");
             this.range = range;
-            this.first = range.a();
-            this.last = range.b();
-            this.count = (range.b() - range.a()) + 1;
+            this.first = range.b();
+            this.last = range.e();
+            this.count = (range.e() - range.b()) + 1;
         }
 
         public static /* synthetic */ InsertRange copy$default(InsertRange insertRange, IntRange intRange, int i10, Object obj) {
@@ -294,9 +294,9 @@ public abstract class ListOperation {
             super(null);
             q.g(range, "range");
             this.range = range;
-            this.first = range.a();
-            this.last = range.b();
-            this.count = (range.b() - range.a()) + 1;
+            this.first = range.b();
+            this.last = range.e();
+            this.count = (range.e() - range.b()) + 1;
         }
 
         public static /* synthetic */ RemoveRange copy$default(RemoveRange removeRange, IntRange intRange, int i10, Object obj) {

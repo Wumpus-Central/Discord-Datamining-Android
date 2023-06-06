@@ -15,7 +15,7 @@ public final class LoggingLineNumberTree extends a.c {
 
     public LoggingLineNumberTree() {
         List<String> l10;
-        l10 = j.l(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0422a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
+        l10 = j.l(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0430a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
         this.ignoreClasses = l10;
     }
 

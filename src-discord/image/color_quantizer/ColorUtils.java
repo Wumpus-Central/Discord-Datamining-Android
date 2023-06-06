@@ -3,7 +3,7 @@ package com.discord.image.color_quantizer;
 import android.graphics.Color;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
-import xg.c;
+import yg.c;
 
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007J(\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007¨\u0006\f"}, d2 = {"Lcom/discord/image/color_quantizer/ColorUtils;", "", "()V", "HSLtoRGB", "", "hsl", "", "RGBtoHSL", "", "r", "g", "b", "color_quantizer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
@@ -27,37 +27,37 @@ public final class ColorUtils {
         float abs2 = (1.0f - Math.abs(((f10 / 60.0f) % 2.0f) - 1.0f)) * abs;
         switch (((int) f10) / 60) {
             case 0:
-                i12 = c.a((abs + f13) * 255.0f);
-                i11 = c.a((abs2 + f13) * 255.0f);
-                i10 = c.a(f13 * 255.0f);
+                i12 = c.b((abs + f13) * 255.0f);
+                i11 = c.b((abs2 + f13) * 255.0f);
+                i10 = c.b(f13 * 255.0f);
                 break;
             case 1:
-                i12 = c.a((abs2 + f13) * 255.0f);
-                i11 = c.a((abs + f13) * 255.0f);
-                i10 = c.a(f13 * 255.0f);
+                i12 = c.b((abs2 + f13) * 255.0f);
+                i11 = c.b((abs + f13) * 255.0f);
+                i10 = c.b(f13 * 255.0f);
                 break;
             case 2:
-                i12 = c.a(f13 * 255.0f);
-                i11 = c.a((abs + f13) * 255.0f);
-                i10 = c.a((abs2 + f13) * 255.0f);
+                i12 = c.b(f13 * 255.0f);
+                i11 = c.b((abs + f13) * 255.0f);
+                i10 = c.b((abs2 + f13) * 255.0f);
                 break;
             case 3:
-                i12 = c.a(f13 * 255.0f);
-                i13 = c.a((abs2 + f13) * 255.0f);
-                i10 = c.a((abs + f13) * 255.0f);
+                i12 = c.b(f13 * 255.0f);
+                i13 = c.b((abs2 + f13) * 255.0f);
+                i10 = c.b((abs + f13) * 255.0f);
                 i11 = i13;
                 break;
             case 4:
-                i12 = c.a((abs2 + f13) * 255.0f);
-                i13 = c.a(f13 * 255.0f);
-                i10 = c.a((abs + f13) * 255.0f);
+                i12 = c.b((abs2 + f13) * 255.0f);
+                i13 = c.b(f13 * 255.0f);
+                i10 = c.b((abs + f13) * 255.0f);
                 i11 = i13;
                 break;
             case 5:
             case 6:
-                i12 = c.a((abs + f13) * 255.0f);
-                i11 = c.a(f13 * 255.0f);
-                i10 = c.a((abs2 + f13) * 255.0f);
+                i12 = c.b((abs + f13) * 255.0f);
+                i11 = c.b(f13 * 255.0f);
+                i10 = c.b((abs2 + f13) * 255.0f);
                 break;
             default:
                 i10 = 0;

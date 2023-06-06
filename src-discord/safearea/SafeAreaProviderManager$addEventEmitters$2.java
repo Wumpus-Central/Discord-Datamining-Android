@@ -2,7 +2,7 @@ package com.discord.safearea;
 
 import androidx.core.graphics.Insets;
 import androidx.core.view.WindowInsetsCompat;
-import com.th3rdwave.safeareacontext.DCDSafeAreaUtils;
+import com.discord.safearea.DCDSafeAreaUtils;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -28,7 +28,7 @@ public final class SafeAreaProviderManager$addEventEmitters$2 extends s implemen
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(WindowInsetsCompat windowInsetsCompat) {
         invoke2(windowInsetsCompat);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -1,6 +1,5 @@
 package com.discord.overlapping_circles;
 
-import ah.j;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,6 +17,7 @@ import android.webkit.URLUtil;
 import android.widget.LinearLayout;
 import androidx.core.view.u0;
 import androidx.core.view.w0;
+import bh.j;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
@@ -30,8 +30,8 @@ import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.textview.MaterialTextView;
 import java.util.List;
-import jg.n;
-import jg.p;
+import kg.n;
+import kg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -308,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22080a;
+            Unit unit = Unit.f22063a;
             addView(overflowItem, layoutParams2);
         }
     }

@@ -3,22 +3,20 @@ package com.discord.safearea;
 import androidx.core.graphics.Insets;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.reactevents.ReactEvents;
+import com.discord.safearea.DCDSafeAreaUtils;
 import com.discord.safearea.events.OnSafeAreaInsetsDidChangeData;
 import com.discord.safearea.extensions.ImmersiveMode;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
-import com.th3rdwave.safeareacontext.DCDSafeAreaUtils;
-import com.th3rdwave.safeareacontext.EdgeInsets;
-import com.th3rdwave.safeareacontext.Rect;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
 import java.util.Map;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0005\u0018\u0000 \u001a2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u001a\u001bB\u0005¢\u0006\u0002\u0010\u0003J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0002H\u0014J\u0010\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u0011H\u0014J\u0014\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015H\u0016J\b\u0010\u0018\u001a\u00020\u0016H\u0016J\"\u0010\u0019\u001a\u00020\u000f2\u0006\u0010\f\u001a\u00020\r2\b\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0012\u001a\u00020\u0002H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/safearea/SafeAreaProviderManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/th3rdwave/safeareacontext/SafeAreaProvider;", "()V", "changeData", "Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "dimensions", "Lcom/discord/safearea/SafeAreaProviderManager$SafeAreaProviderDimensions;", "imeInsets", "Landroidx/core/graphics/Insets;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "safeAreaEdgeInsets", "Lcom/th3rdwave/safeareacontext/DCDSafeAreaUtils$SafeAreaEdgeInsets;", "addEventEmitters", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "view", "createViewInstance", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "handleInsetsChanged", "Companion", "SafeAreaProviderDimensions", "safe_area_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0005\u0018\u0000 \u001a2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u001a\u001bB\u0005¢\u0006\u0002\u0010\u0003J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0002H\u0014J\u0010\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u0011H\u0014J\u0014\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015H\u0016J\b\u0010\u0018\u001a\u00020\u0016H\u0016J\"\u0010\u0019\u001a\u00020\u000f2\u0006\u0010\f\u001a\u00020\r2\b\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0012\u001a\u00020\u0002H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/safearea/SafeAreaProviderManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/th3rdwave/safeareacontext/SafeAreaProvider;", "()V", "changeData", "Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "dimensions", "Lcom/discord/safearea/SafeAreaProviderManager$SafeAreaProviderDimensions;", "imeInsets", "Landroidx/core/graphics/Insets;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "safeAreaEdgeInsets", "Lcom/discord/safearea/DCDSafeAreaUtils$SafeAreaEdgeInsets;", "addEventEmitters", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "view", "createViewInstance", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "handleInsetsChanged", "Companion", "SafeAreaProviderDimensions", "safe_area_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
 public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProvider> {
     public static final Companion Companion = new Companion(null);
@@ -31,7 +29,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     private OnSafeAreaInsetsDidChangeData changeData = DEFAULT_CHANGE_DATA;
     private DCDSafeAreaUtils.SafeAreaEdgeInsets safeAreaEdgeInsets = DEFAULT_SAFE_AREA_INSETS;
 
-    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/safearea/SafeAreaProviderManager$Companion;", "", "()V", "DEFAULT_CHANGE_DATA", "Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "DEFAULT_IME_INSETS_BOTTOM", "", "DEFAULT_SAFE_AREA_INSETS", "Lcom/th3rdwave/safeareacontext/DCDSafeAreaUtils$SafeAreaEdgeInsets;", "safe_area_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/safearea/SafeAreaProviderManager$Companion;", "", "()V", "DEFAULT_CHANGE_DATA", "Lcom/discord/safearea/events/OnSafeAreaInsetsDidChangeData;", "DEFAULT_IME_INSETS_BOTTOM", "", "DEFAULT_SAFE_AREA_INSETS", "Lcom/discord/safearea/DCDSafeAreaUtils$SafeAreaEdgeInsets;", "safe_area_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes7.dex */
     public static final class Companion {
         private Companion() {
@@ -114,22 +112,22 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     static {
         DCDSafeAreaUtils.SafeAreaEdgeInsets safeAreaEdgeInsets = new DCDSafeAreaUtils.SafeAreaEdgeInsets(0.0f, 0.0f, 0.0f, 0.0f);
         DEFAULT_SAFE_AREA_INSETS = safeAreaEdgeInsets;
-        DEFAULT_CHANGE_DATA = new OnSafeAreaInsetsDidChangeData(safeAreaEdgeInsets.d(), safeAreaEdgeInsets.a(), safeAreaEdgeInsets.b(), safeAreaEdgeInsets.c(), 0.0f);
+        DEFAULT_CHANGE_DATA = new OnSafeAreaInsetsDidChangeData(safeAreaEdgeInsets.getTopDp(), safeAreaEdgeInsets.getBottomDp(), safeAreaEdgeInsets.getLeftDp(), safeAreaEdgeInsets.getRightDp(), 0.0f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void handleInsetsChanged(DCDSafeAreaUtils.SafeAreaEdgeInsets safeAreaEdgeInsets, Insets insets, SafeAreaProvider safeAreaProvider) {
         float f10;
-        float d10 = safeAreaEdgeInsets.d();
-        float a10 = safeAreaEdgeInsets.a();
-        float b10 = safeAreaEdgeInsets.b();
-        float c10 = safeAreaEdgeInsets.c();
+        float topDp = safeAreaEdgeInsets.getTopDp();
+        float bottomDp = safeAreaEdgeInsets.getBottomDp();
+        float leftDp = safeAreaEdgeInsets.getLeftDp();
+        float rightDp = safeAreaEdgeInsets.getRightDp();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f3308d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f3275d);
         } else {
             f10 = 0.0f;
         }
-        OnSafeAreaInsetsDidChangeData onSafeAreaInsetsDidChangeData = new OnSafeAreaInsetsDidChangeData(d10, a10, b10, c10, f10);
+        OnSafeAreaInsetsDidChangeData onSafeAreaInsetsDidChangeData = new OnSafeAreaInsetsDidChangeData(topDp, bottomDp, leftDp, rightDp, f10);
         SafeAreaProviderDimensions safeAreaProviderDimensions = new SafeAreaProviderDimensions(safeAreaProvider);
         if (!q.b(this.dimensions, safeAreaProviderDimensions)) {
             this.changeData = DEFAULT_CHANGE_DATA;
@@ -151,23 +149,10 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public void addEventEmitters(ThemedReactContext reactContext, final SafeAreaProvider view) {
+    public void addEventEmitters(ThemedReactContext reactContext, SafeAreaProvider view) {
         q.g(reactContext, "reactContext");
         q.g(view, "view");
-        DCDSafeAreaUtils dCDSafeAreaUtils = DCDSafeAreaUtils.f13431a;
-        view.setOnInsetsChangeListener(new SafeAreaProvider.a() { // from class: com.discord.safearea.SafeAreaProviderManager$addEventEmitters$$inlined$setOnInsetsChangeListener$1
-            @Override // com.th3rdwave.safeareacontext.SafeAreaProvider.a
-            public final void onInsetsChange(SafeAreaProvider safeAreaProvider, EdgeInsets insets, Rect rect) {
-                DCDSafeAreaUtils.SafeAreaEdgeInsets d10;
-                Insets insets2;
-                DCDSafeAreaUtils dCDSafeAreaUtils2 = DCDSafeAreaUtils.f13431a;
-                q.f(insets, "insets");
-                d10 = dCDSafeAreaUtils2.d(insets);
-                SafeAreaProviderManager safeAreaProviderManager = SafeAreaProviderManager.this;
-                insets2 = safeAreaProviderManager.imeInsets;
-                safeAreaProviderManager.handleInsetsChanged(d10, insets2, view);
-            }
-        });
+        view.setOnInsetsChangeHandler(new SafeAreaProviderManager$addEventEmitters$1(this, view));
         ImmersiveMode.INSTANCE.addRootViewInsetUpdateCallback(new SafeAreaProviderManager$addEventEmitters$2(this, view));
     }
 

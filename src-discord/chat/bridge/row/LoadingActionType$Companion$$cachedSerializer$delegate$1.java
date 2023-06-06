@@ -5,7 +5,7 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.s;
 import kotlinx.serialization.KSerializer;
-import xj.c0;
+import yj.c0;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */

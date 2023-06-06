@@ -27,7 +27,7 @@ public final class CodedLinkSerializer extends d<CodedLinkEmbed> {
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {
             str = null;
         } else {
-            str = n10.a();
+            str = n10.b();
         }
         if (q.b(str, String.valueOf(CodedLinkExtendedType.GUILD_SCHEDULED_EVENT.getSerialNumber()))) {
             return GuildEventInviteEmbedImpl.Companion.serializer();

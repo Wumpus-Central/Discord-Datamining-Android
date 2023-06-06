@@ -414,7 +414,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (i11 == 4) {
                 return 27;
             }
-            throw new jg.q();
+            throw new kg.q();
         } else if (messageAccessory instanceof ThreadEmbedMessageAccessory) {
             return 9;
         } else {
@@ -472,7 +472,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (messageAccessory instanceof PostPreviewEmbedMessageAccessory) {
                 return 32;
             }
-            throw new jg.q();
+            throw new kg.q();
         }
     }
 
@@ -793,9 +793,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             postPreviewEmbedViewHolder.bind(postPreviewEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$44(chatEventHandler24));
         } else {
-            throw new jg.q();
+            throw new kg.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f22080a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f22063a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

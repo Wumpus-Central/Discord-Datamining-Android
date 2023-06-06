@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -65,7 +65,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         kotlinx.coroutines.x b10 = p2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         q.f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.scope = k0.a(b10.g0(m1.a(newSingleThreadExecutor)));
+        this.scope = k0.a(b10.f0(m1.a(newSingleThreadExecutor)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -164,7 +164,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     @ReactMethod

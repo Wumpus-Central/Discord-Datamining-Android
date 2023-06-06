@@ -2,7 +2,7 @@ package com.discord.billing;
 
 import com.android.billingclient.api.BillingClient;
 import com.discord.billing.BillingManager;
-import jg.t;
+import kg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -11,7 +11,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
-import pg.d;
+import qg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u0006\n\u0002\u0010\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -34,7 +34,7 @@ public final class BillingManager$reconnect$1 extends k implements Function1<Con
     }
 
     public final Object invoke(Continuation<? super Unit> continuation) {
-        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f22080a);
+        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f22063a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -52,7 +52,7 @@ public final class BillingManager$reconnect$1 extends k implements Function1<Con
             billingManager$billingClientStateListener$1 = this.this$0.billingClientStateListener;
             billingClient.j(billingManager$billingClientStateListener$1);
             this.this$0.getOnConnectionUpdated().invoke(b.c(BillingManager.ConnectionState.CONNECTING.getValue()));
-            return Unit.f22080a;
+            return Unit.f22063a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

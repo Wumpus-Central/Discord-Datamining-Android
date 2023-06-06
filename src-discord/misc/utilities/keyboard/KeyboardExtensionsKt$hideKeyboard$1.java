@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.Window;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import jg.t;
+import kg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -12,7 +12,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import pg.d;
+import qg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -37,7 +37,7 @@ public final class KeyboardExtensionsKt$hideKeyboard$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((KeyboardExtensionsKt$hideKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22080a);
+        return ((KeyboardExtensionsKt$hideKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -48,7 +48,7 @@ public final class KeyboardExtensionsKt$hideKeyboard$1 extends k implements Func
             t.b(obj);
             insetsController = KeyboardExtensionsKt.getInsetsController(this.$window, this.$self);
             insetsController.a(WindowInsetsCompat.m.b());
-            return Unit.f22080a;
+            return Unit.f22063a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

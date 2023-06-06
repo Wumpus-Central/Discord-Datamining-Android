@@ -20,7 +20,7 @@ import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.jakewharton.processphoenix.ProcessPhoenix;
 import java.lang.reflect.Field;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;

@@ -20,7 +20,7 @@ public /* synthetic */ class EmbedViewHolder$bind$1 extends n implements Functio
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, String str, String str2) {
         m317invokeu7_MRrM(messageId.m580unboximpl(), str, str2);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke-u7_MRrM  reason: not valid java name */

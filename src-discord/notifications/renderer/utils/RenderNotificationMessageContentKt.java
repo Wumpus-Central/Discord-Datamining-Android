@@ -8,8 +8,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlin.text.MatchResult;
 import kotlin.text.Regex;
-import nj.f;
-import nj.v;
+import oj.f;
+import oj.v;
 
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001¨\u0006\u0003"}, d2 = {"renderNotificationMessageContent", "", "content", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes4.dex */
@@ -77,9 +77,9 @@ public final class RenderNotificationMessageContentKt {
                 formatted = dateFormat.format(date);
             }
             q.f(formatted, "formatted");
-            t02 = v.t0(content, c10.c().a(), c10.c().b() + 1, formatted);
+            t02 = v.t0(content, c10.c().b(), c10.c().e() + 1, formatted);
             content = t02.toString();
-            t03 = v.t0(i10, c10.c().a(), c10.c().b() + 1, formatted);
+            t03 = v.t0(i10, c10.c().b(), c10.c().e() + 1, formatted);
             i10 = t03.toString();
         }
     }

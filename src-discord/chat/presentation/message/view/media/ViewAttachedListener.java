@@ -3,7 +3,7 @@ package com.discord.chat.presentation.message.view.media;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import com.discord.chat.R;
-import jg.n;
+import kg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -35,7 +35,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f22080a;
+            return Unit.f22063a;
         }
 
         public final void invoke(boolean z10) {

@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.list.item;
 
-import jg.n;
-import jg.p;
+import kg.m;
+import kg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -11,14 +11,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class ChatListItem {
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7741id;
+    private final String f7664id;
     private final Lazy recyclerItemId$delegate;
 
     private ChatListItem(String str) {
-        Lazy a10;
-        this.f7741id = str;
-        a10 = n.a(p.NONE, new ChatListItem$recyclerItemId$2(this));
-        this.recyclerItemId$delegate = a10;
+        this.f7664id = str;
+        this.recyclerItemId$delegate = m.a(p.NONE, new ChatListItem$recyclerItemId$2(this));
     }
 
     public /* synthetic */ ChatListItem(String str, DefaultConstructorMarker defaultConstructorMarker) {
@@ -26,7 +24,7 @@ public abstract class ChatListItem {
     }
 
     public String getId() {
-        return this.f7741id;
+        return this.f7664id;
     }
 
     public final long getRecyclerItemId() {

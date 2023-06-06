@@ -1,6 +1,5 @@
 package com.discord.chat.presentation.list;
 
-import ah.j;
 import android.animation.Animator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
@@ -22,6 +21,7 @@ import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.b;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
+import bh.j;
 import com.discord.chat.R;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;

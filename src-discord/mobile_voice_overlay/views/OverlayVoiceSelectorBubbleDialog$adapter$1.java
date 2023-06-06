@@ -22,7 +22,7 @@ public final class OverlayVoiceSelectorBubbleDialog$adapter$1 extends s implemen
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
         m467invokeR7gqayM(channelId.m555unboximpl());
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke-R7gqayM  reason: not valid java name */

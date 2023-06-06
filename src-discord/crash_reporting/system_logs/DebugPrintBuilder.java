@@ -9,11 +9,11 @@ final class DebugPrintBuilder {
     private int indentation;
 
     /* renamed from: sb  reason: collision with root package name */
-    private final StringBuilder f7928sb;
+    private final StringBuilder f7851sb;
 
     public DebugPrintBuilder(StringBuilder sb2) {
         q.g(sb2, "sb");
-        this.f7928sb = sb2;
+        this.f7851sb = sb2;
     }
 
     public static /* synthetic */ void appendLine$default(DebugPrintBuilder debugPrintBuilder, String str, int i10, Object obj) {
@@ -28,23 +28,23 @@ final class DebugPrintBuilder {
         q.g(key, "key");
         int i10 = this.indentation;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f7928sb.append("  ");
+            this.f7851sb.append("  ");
         }
-        this.f7928sb.append(" - ");
-        this.f7928sb.append(key);
-        this.f7928sb.append(": ");
-        StringBuilder sb2 = this.f7928sb;
+        this.f7851sb.append(" - ");
+        this.f7851sb.append(key);
+        this.f7851sb.append(": ");
+        StringBuilder sb2 = this.f7851sb;
         if (obj == null || (str = obj.toString()) == null) {
             str = "{null}";
         }
         sb2.append(str);
-        StringBuilder sb3 = this.f7928sb;
+        StringBuilder sb3 = this.f7851sb;
         sb3.append('\n');
         q.f(sb3, "append('\\n')");
     }
 
     public final void appendLine(String str) {
-        StringBuilder sb2 = this.f7928sb;
+        StringBuilder sb2 = this.f7851sb;
         sb2.append(str);
         q.f(sb2, "append(value)");
         sb2.append('\n');
@@ -52,6 +52,6 @@ final class DebugPrintBuilder {
     }
 
     public final StringBuilder getSb() {
-        return this.f7928sb;
+        return this.f7851sb;
     }
 }

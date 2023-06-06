@@ -27,8 +27,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import uj.f;
-import xj.n1;
+import vj.f;
+import yj.n1;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001:\u00013B'\b\u0007\u0012\u0006\u0010-\u001a\u00020,\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010.\u0012\b\b\u0002\u00100\u001a\u00020\u0014¢\u0006\u0004\b1\u00102J=\u0010\r\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\b2\u0006\u0010\f\u001a\u00020\u0004ø\u0001\u0000R\u0014\u0010\u000f\u001a\u00020\u000e8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0012\u001a\u00020\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0017\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0016R\u0014\u0010\u0019\u001a\u00020\u00188\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0019\u0010\u001aR.\u0010\u001d\u001a\u0004\u0018\u00010\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u001d\u0010\u001e\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R.\u0010#\u001a\u0004\u0018\u00010\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b#\u0010\u001e\u001a\u0004\b$\u0010 \"\u0004\b%\u0010\"R1\u0010&\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\b8\u0006@\u0006X\u0086\u000eø\u0001\u0000¢\u0006\u0012\n\u0004\b&\u0010'\u001a\u0004\b(\u0010)\"\u0004\b*\u0010+\u0082\u0002\u0004\n\u0002\b\u0019¨\u00064"}, d2 = {"Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView;", "Landroid/widget/LinearLayout;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView$MessageBundle;", "messageBundle", "Landroid/view/View$OnClickListener;", "onClickListener", "Landroid/view/View$OnLongClickListener;", "onLongClickListener", "Lkotlin/Function1;", "Lcom/discord/primitives/MessageId;", "", "onTapReply", "onTapViewMoreText", "setBundle", "Lcom/discord/chat/databinding/MessageBundleViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageBundleViewBinding;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleAdapter;", "adapter", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleAdapter;", "", "leftMarginPx", "I", "rightMarginPx", "Lcom/discord/chat/presentation/message/decorations/MessageBundleSpineItemDecoration;", "spineItemDecoration", "Lcom/discord/chat/presentation/message/decorations/MessageBundleSpineItemDecoration;", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "value", "messageRowViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "getMessageRowViewPool", "()Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "setMessageRowViewPool", "(Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;)V", "messageAccessoriesViewPool", "getMessageAccessoriesViewPool", "setMessageAccessoriesViewPool", "onTruncateMessage", "Lkotlin/jvm/functions/Function1;", "getOnTruncateMessage", "()Lkotlin/jvm/functions/Function1;", "setOnTruncateMessage", "(Lkotlin/jvm/functions/Function1;)V", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "MessageBundle", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes5.dex */
@@ -246,13 +246,13 @@ public final class MessageBundleView extends LinearLayout {
                 if (r1 == 0) goto L_0x0028
                 com.discord.chat.presentation.message.MessageFrameFeedHeaderView$MessageBundleHeader$$serializer r1 = com.discord.chat.presentation.message.MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE
                 com.discord.chat.presentation.message.MessageFrameFeedHeaderView$MessageBundleHeader r3 = r6.messageFrame
-                r7.h(r8, r0, r1, r3)
+                r7.u(r8, r0, r1, r3)
             L_0x0028:
-                xj.f r1 = new xj.f
+                yj.f r1 = new yj.f
                 com.discord.chat.bridge.row.MessageRow$$serializer r3 = com.discord.chat.bridge.row.MessageRow$$serializer.INSTANCE
                 r1.<init>(r3)
                 java.util.List<com.discord.chat.bridge.row.MessageRow> r4 = r6.rows
-                r7.z(r8, r2, r1, r4)
+                r7.q(r8, r2, r1, r4)
                 r1 = 2
                 boolean r4 = r7.A(r8, r1)
                 if (r4 == 0) goto L_0x003d
@@ -267,9 +267,9 @@ public final class MessageBundleView extends LinearLayout {
                 r4 = r0
             L_0x0043:
                 if (r4 == 0) goto L_0x004c
-                xj.e0 r4 = xj.e0.f32338a
+                yj.e0 r4 = yj.e0.f32949a
                 java.lang.Float r5 = r6.truncationThreshold
-                r7.h(r8, r1, r4, r5)
+                r7.u(r8, r1, r4, r5)
             L_0x004c:
                 r1 = 3
                 boolean r4 = r7.A(r8, r1)
@@ -287,10 +287,10 @@ public final class MessageBundleView extends LinearLayout {
                 r4 = r0
             L_0x0063:
                 if (r4 == 0) goto L_0x006f
-                xj.f r4 = new xj.f
+                yj.f r4 = new yj.f
                 r4.<init>(r3)
                 java.util.List<com.discord.chat.bridge.row.MessageRow> r3 = r6.referenceMessageRows
-                r7.z(r8, r1, r4, r3)
+                r7.q(r8, r1, r4, r3)
             L_0x006f:
                 r1 = 4
                 boolean r3 = r7.A(r8, r1)
@@ -304,9 +304,9 @@ public final class MessageBundleView extends LinearLayout {
                 goto L_0x0076
             L_0x007d:
                 if (r0 == 0) goto L_0x0086
-                xj.a2 r0 = xj.a2.f32313a
+                yj.a2 r0 = yj.a2.f32924a
                 java.lang.String r6 = r6.viewMoreText
-                r7.h(r8, r1, r0, r6)
+                r7.u(r8, r1, r0, r6)
             L_0x0086:
                 return
             */

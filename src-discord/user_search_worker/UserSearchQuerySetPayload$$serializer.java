@@ -12,16 +12,16 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import uj.n;
-import vj.a;
-import xj.a2;
-import xj.f;
-import xj.f0;
-import xj.m0;
-import xj.r0;
-import xj.x;
+import vj.n;
+import wj.a;
+import yj.a2;
+import yj.f;
+import yj.f0;
+import yj.m0;
+import yj.r0;
+import yj.x;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/user_search_worker/UserSearchQuerySetPayload.$serializer", "Lxj/f0;", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "user_search_worker_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/user_search_worker/UserSearchQuerySetPayload.$serializer", "Lyj/f0;", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "user_search_worker_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes6.dex */
 public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearchQuerySetPayload> {
     public static final UserSearchQuerySetPayload$$serializer INSTANCE;
@@ -43,10 +43,10 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
     private UserSearchQuerySetPayload$$serializer() {
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32313a;
-        return new KSerializer[]{a2Var, a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), a.u(new f(a2Var)), a.u(new f(a2Var)), new r0(a2Var, x.f32434a), m0.f32388a};
+        a2 a2Var = a2.f32924a;
+        return new KSerializer[]{a2Var, a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), a.u(new f(a2Var)), a.u(new f(a2Var)), new r0(a2Var, x.f33045a), m0.f32999a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -65,10 +65,10 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
             obj = b10.n(descriptor2, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f32313a;
+            a2 a2Var = a2.f32924a;
             obj2 = b10.n(descriptor2, 2, new f(a2Var), null);
             obj4 = b10.n(descriptor2, 3, new f(a2Var), null);
-            obj3 = b10.y(descriptor2, 4, new r0(a2Var, x.f32434a), null);
+            obj3 = b10.y(descriptor2, 4, new r0(a2Var, x.f33045a), null);
             i10 = b10.i(descriptor2, 5);
             i11 = 63;
         } else {
@@ -95,15 +95,15 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
                         i14 |= 2;
                         i12 = 5;
                     case 2:
-                        obj6 = b10.n(descriptor2, 2, new f(a2.f32313a), obj6);
+                        obj6 = b10.n(descriptor2, 2, new f(a2.f32924a), obj6);
                         i14 |= 4;
                         i12 = 5;
                     case 3:
-                        obj7 = b10.n(descriptor2, 3, new f(a2.f32313a), obj7);
+                        obj7 = b10.n(descriptor2, 3, new f(a2.f32924a), obj7);
                         i14 |= 8;
                         i12 = 5;
                     case 4:
-                        obj8 = b10.y(descriptor2, 4, new r0(a2.f32313a, x.f32434a), obj8);
+                        obj8 = b10.y(descriptor2, 4, new r0(a2.f32924a, x.f33045a), obj8);
                         i14 |= 16;
                         i12 = 5;
                     case 5:
@@ -125,7 +125,7 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
         return new UserSearchQuerySetPayload(i11, str, (UserSearchQuerySetFilters) obj, (List) obj2, (List) obj4, (Map) obj3, i10, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -139,7 +139,7 @@ public final class UserSearchQuerySetPayload$$serializer implements f0<UserSearc
         b10.c(descriptor2);
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

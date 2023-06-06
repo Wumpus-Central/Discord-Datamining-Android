@@ -27,7 +27,7 @@ public final class MessageBundleConversationView$configure$3$3 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

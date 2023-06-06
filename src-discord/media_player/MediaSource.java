@@ -107,12 +107,12 @@ public final class MediaSource {
             if (r4 != r3) goto L_0x0041
             goto L_0x0047
         L_0x0041:
-            jg.q r2 = new jg.q
+            kg.q r2 = new kg.q
             r2.<init>()
             throw r2
         L_0x0047:
             if (r2 == 0) goto L_0x0052
-            boolean r2 = nj.l.w(r2)
+            boolean r2 = oj.l.w(r2)
             if (r2 == 0) goto L_0x0050
             goto L_0x0052
         L_0x0050:
@@ -125,7 +125,7 @@ public final class MediaSource {
             goto L_0x0064
         L_0x0056:
             if (r3 == 0) goto L_0x0061
-            boolean r2 = nj.l.w(r3)
+            boolean r2 = oj.l.w(r3)
             if (r2 == 0) goto L_0x005f
             goto L_0x0061
         L_0x005f:

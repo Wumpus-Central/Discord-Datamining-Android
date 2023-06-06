@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
-import nj.d;
+import oj.d;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -26,7 +26,7 @@ public final class BundleUpdaterUtilsKt {
         q.g(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.f(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f25905b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f26391b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
@@ -34,7 +34,7 @@ public final class BundleUpdaterUtilsKt {
         }
         try {
             th = null;
-            return new JSONObject(tg.q.e(bufferedReader));
+            return new JSONObject(ug.q.e(bufferedReader));
         } finally {
             try {
                 throw th;

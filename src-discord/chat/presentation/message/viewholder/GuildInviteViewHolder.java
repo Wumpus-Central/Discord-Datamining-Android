@@ -49,7 +49,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
             r3 = 0
             r4 = 1
             if (r2 == 0) goto L_0x001c
-            boolean r2 = nj.l.w(r2)
+            boolean r2 = oj.l.w(r2)
             if (r2 == 0) goto L_0x001a
             goto L_0x001c
         L_0x001a:
@@ -64,7 +64,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
         L_0x0024:
             java.lang.String r2 = r0.getChannelIcon()
             if (r2 == 0) goto L_0x0030
-            boolean r2 = nj.l.w(r2)
+            boolean r2 = oj.l.w(r2)
             if (r2 == 0) goto L_0x0031
         L_0x0030:
             r3 = r4

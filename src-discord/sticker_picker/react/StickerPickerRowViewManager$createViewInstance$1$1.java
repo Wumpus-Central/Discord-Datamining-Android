@@ -27,7 +27,7 @@ public final class StickerPickerRowViewManager$createViewInstance$1$1 extends s 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

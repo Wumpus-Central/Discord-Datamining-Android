@@ -33,9 +33,9 @@ public final class MessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         q.g(remoteMessage, "remoteMessage");
         NotificationClient instance = NotificationClient.Companion.getInstance();
-        Map<String, String> k10 = remoteMessage.k();
-        q.f(k10, "remoteMessage.data");
-        instance.onNotificationReceived(this, k10);
+        Map<String, String> x10 = remoteMessage.x();
+        q.f(x10, "remoteMessage.data");
+        instance.onNotificationReceived(this, x10);
     }
 
     @Override // com.google.firebase.messaging.FirebaseMessagingService

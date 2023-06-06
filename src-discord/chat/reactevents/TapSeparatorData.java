@@ -4,7 +4,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -84,7 +84,7 @@ public final class TapSeparatorData implements ReactEvent {
         if (str2 != null) {
             nativeMapOf2.putString("context", str2);
         }
-        Unit unit = Unit.f22080a;
+        Unit unit = Unit.f22063a;
         pairArr[0] = x.a("action", nativeMapOf2);
         return NativeMapExtensionsKt.nativeMapOf(pairArr);
     }

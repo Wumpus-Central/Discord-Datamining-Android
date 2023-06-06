@@ -13,13 +13,13 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import uj.n;
-import vj.a;
-import xj.a2;
-import xj.f0;
-import xj.m0;
+import vj.n;
+import wj.a;
+import yj.a2;
+import yj.f0;
+import yj.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/notifications/api/DirectReplyMessage.$serializer", "Lxj/f0;", "Lcom/discord/notifications/api/DirectReplyMessage;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "notification_api_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/notifications/api/DirectReplyMessage.$serializer", "Lyj/f0;", "Lcom/discord/notifications/api/DirectReplyMessage;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "notification_api_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes4.dex */
 public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessage> {
     public static final DirectReplyMessage$$serializer INSTANCE;
@@ -43,10 +43,10 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
     private DirectReplyMessage$$serializer() {
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32313a;
-        m0 m0Var = m0.f32388a;
+        a2 a2Var = a2.f32924a;
+        m0 m0Var = m0.f32999a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, DirectReplyUser$$serializer.INSTANCE, a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -71,9 +71,9 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
             obj8 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
             obj2 = b10.y(descriptor2, 2, DirectReplyUser$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f32313a;
+            a2 a2Var = a2.f32924a;
             obj4 = b10.n(descriptor2, 3, a2Var, null);
-            m0 m0Var = m0.f32388a;
+            m0 m0Var = m0.f32999a;
             obj3 = b10.n(descriptor2, 4, m0Var, null);
             obj5 = b10.n(descriptor2, 5, m0Var, null);
             obj6 = b10.n(descriptor2, 6, a2Var, null);
@@ -115,23 +115,23 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
                         i11 = 7;
                         continue;
                     case 3:
-                        obj14 = b10.n(descriptor2, 3, a2.f32313a, obj14);
+                        obj14 = b10.n(descriptor2, 3, a2.f32924a, obj14);
                         i13 |= 8;
                         break;
                     case 4:
-                        obj9 = b10.n(descriptor2, 4, m0.f32388a, obj9);
+                        obj9 = b10.n(descriptor2, 4, m0.f32999a, obj9);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj13 = b10.n(descriptor2, 5, m0.f32388a, obj13);
+                        obj13 = b10.n(descriptor2, 5, m0.f32999a, obj13);
                         i13 |= 32;
                         break;
                     case 6:
-                        obj12 = b10.n(descriptor2, i12, a2.f32313a, obj12);
+                        obj12 = b10.n(descriptor2, i12, a2.f32924a, obj12);
                         i13 |= 64;
                         break;
                     case 7:
-                        obj11 = b10.n(descriptor2, i11, a2.f32313a, obj11);
+                        obj11 = b10.n(descriptor2, i11, a2.f32924a, obj11);
                         i13 |= 128;
                         break;
                     default:
@@ -152,7 +152,7 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
         return new DirectReplyMessage(i10, messageId != null ? messageId.m580unboximpl() : null, (ChannelId) obj, (DirectReplyUser) obj2, (String) obj4, (Integer) obj3, (Integer) obj5, (String) obj6, (String) obj7, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, uj.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -166,7 +166,7 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
         b10.c(descriptor2);
     }
 
-    @Override // xj.f0
+    @Override // yj.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

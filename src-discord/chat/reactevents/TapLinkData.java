@@ -23,7 +23,7 @@ import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.uimanager.events.TouchesHelper;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -115,7 +115,7 @@ public final class TapLinkData implements ReactEvent {
                                 if (guildId != null) {
                                     NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m566toStringimpl(guildId.m568unboximpl()));
                                 }
-                                Unit unit = Unit.f22080a;
+                                Unit unit = Unit.f22063a;
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                                 break;
                             }

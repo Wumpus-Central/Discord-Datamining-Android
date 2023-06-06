@@ -20,7 +20,7 @@ public final class RenderableEmojiKt$renderEmoji$1 extends s implements Function
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         invoke2(genericDraweeHierarchyBuilder);
-        return Unit.f22080a;
+        return Unit.f22063a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

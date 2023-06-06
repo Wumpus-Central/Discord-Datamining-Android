@@ -56,7 +56,7 @@ public final class ImmersiveMode {
         q.g(view, "<anonymous parameter 0>");
         q.g(insets, "insets");
         viewGroup.setFitsSystemWindows(true);
-        int max = Math.max(insets.f(WindowInsetsCompat.m.b()).f3308d, 0);
+        int max = Math.max(insets.f(WindowInsetsCompat.m.b()).f3275d, 0);
         Iterator<T> it = rootViewInsetUpdateCallbacks.iterator();
         while (it.hasNext()) {
             ((Function1) it.next()).invoke(insets);

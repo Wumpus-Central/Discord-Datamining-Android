@@ -13,7 +13,7 @@ import kotlin.jvm.internal.q;
 /* loaded from: classes5.dex */
 public final class ComponentViewKt {
     /* JADX WARN: Code restructure failed: missing block: B:4:0x000b, code lost:
-        r0 = nj.t.o(r0);
+        r0 = oj.t.o(r0);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -25,7 +25,7 @@ public final class ComponentViewKt {
             kotlin.jvm.internal.q.g(r5, r0)
             java.lang.String r0 = r5.getId()
             if (r0 == 0) goto L_0x0026
-            java.lang.Long r0 = nj.l.o(r0)
+            java.lang.Long r0 = oj.l.o(r0)
             if (r0 == 0) goto L_0x0026
             long r0 = r0.longValue()
             com.discord.emoji.RenderableEmoji$Companion r2 = com.discord.emoji.RenderableEmoji.Companion

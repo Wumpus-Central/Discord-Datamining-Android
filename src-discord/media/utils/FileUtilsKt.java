@@ -1,7 +1,7 @@
 package com.discord.media.utils;
 
-import bl.m;
-import bl.n;
+import cl.m;
+import cl.n;
 import java.io.File;
 import java.io.InputStream;
 import kotlin.Metadata;
@@ -16,8 +16,8 @@ public final class FileUtilsKt {
         q.g(outputFile, "outputFile");
         th = null;
         try {
-            m.c(n.g(outputFile, false, 1, th)).P(m.l(inputStream));
-            Unit unit = Unit.f22080a;
+            m.c(n.g(outputFile, false, 1, th)).O(m.l(inputStream));
+            Unit unit = Unit.f22063a;
             return outputFile;
         } finally {
             try {

@@ -56,7 +56,7 @@ import com.discord.chat.reactevents.VoiceMessagePlaybackEndedData;
 import com.discord.chat.reactevents.VoiceMessagePlaybackFailedData;
 import com.discord.chat.reactevents.VoiceMessagePlaybackStartedData;
 import com.discord.reactevents.ReactEvents;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 

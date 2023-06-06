@@ -7,7 +7,7 @@ import com.discord.user_search_worker.UserSearchWorkerResult;
 import com.facebook.react.bridge.WritableMap;
 import java.util.ArrayList;
 import java.util.List;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;

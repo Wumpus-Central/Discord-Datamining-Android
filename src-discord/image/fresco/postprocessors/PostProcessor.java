@@ -59,7 +59,7 @@ public interface PostProcessor {
                 if (processor instanceof Gradient) {
                     return new GradientPostprocessor((Gradient) processor);
                 }
-                throw new jg.q();
+                throw new kg.q();
             }
         }
     }

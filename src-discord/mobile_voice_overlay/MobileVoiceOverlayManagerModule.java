@@ -14,7 +14,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReadableMap;
-import jg.n;
+import kg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

@@ -11,7 +11,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import io.sentry.react.RNSentryModule;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;

@@ -42,7 +42,7 @@ import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.ArrayList;
 import java.util.List;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;

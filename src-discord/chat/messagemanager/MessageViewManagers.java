@@ -35,7 +35,7 @@ import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import java.util.Map;
-import jg.x;
+import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -253,10 +253,6 @@ public final class MessageViewManagers {
     }
 
     private MessageViewManagers() {
-    }
-
-    public static final /* synthetic */ void access$updateNodeSize(MessageViewManagers messageViewManagers, ReactContext reactContext, int i10, int i11, int i12) {
-        messageViewManagers.updateNodeSize(reactContext, i10, i11, i12);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
