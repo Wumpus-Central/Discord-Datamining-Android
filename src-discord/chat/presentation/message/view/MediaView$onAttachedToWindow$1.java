@@ -15,7 +15,7 @@ import qg.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$1", f = "MediaView.kt", l = {127}, m = "invokeSuspend")
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 final class MediaView$onAttachedToWindow$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
     final /* synthetic */ MediaView this$0;

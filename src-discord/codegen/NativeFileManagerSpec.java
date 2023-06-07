@@ -9,7 +9,7 @@ import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import h6.a;
 import java.util.Map;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public abstract class NativeFileManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeFileManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);

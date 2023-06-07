@@ -24,7 +24,7 @@ import qg.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1", f = "APNGView.kt", l = {82}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class APNGView$fetchAPNG$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ APNGView.Config $config;
     int label;
@@ -77,7 +77,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "downloadState", "Lcom/discord/file_downloader/DownloadState;", "emit", "(Lcom/discord/file_downloader/DownloadState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1  reason: invalid class name */
-    /* loaded from: classes8.dex */
+    /* loaded from: classes4.dex */
     public static final class AnonymousClass1<T> implements FlowCollector {
         final /* synthetic */ APNGView.Config $config;
         final /* synthetic */ APNGView this$0;
@@ -86,7 +86,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$1", f = "APNGView.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$1  reason: invalid class name and collision with other inner class name */
-        /* loaded from: classes8.dex */
+        /* loaded from: classes4.dex */
         public static final class C01161 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
             final /* synthetic */ APNGView.Config $config;
             final /* synthetic */ ApngDrawable $drawable;
@@ -130,7 +130,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$2", f = "APNGView.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$2  reason: invalid class name */
-        /* loaded from: classes8.dex */
+        /* loaded from: classes4.dex */
         public static final class AnonymousClass2 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
             int label;
             final /* synthetic */ APNGView this$0;
@@ -167,7 +167,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
         @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$3", f = "APNGView.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$3  reason: invalid class name */
-        /* loaded from: classes8.dex */
+        /* loaded from: classes4.dex */
         public static final class AnonymousClass3 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
             int label;
             final /* synthetic */ APNGView this$0;

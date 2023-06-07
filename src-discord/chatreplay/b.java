@@ -1,5 +1,5 @@
 package com.discord.chatreplay;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final /* synthetic */ class b {
 }

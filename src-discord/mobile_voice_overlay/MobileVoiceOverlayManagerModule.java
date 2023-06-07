@@ -22,7 +22,7 @@ import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
 
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 \u00172\u00020\u0001:\u0001\u0017B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0016J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\b\u0010\u0011\u001a\u00020\fH\u0016J\u0012\u0010\u0012\u001a\u00020\f2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0016J\u0012\u0010\u0015\u001a\u00020\f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0014H\u0016R\u001b\u0010\u0005\u001a\u00020\u00068BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0007\u0010\b¨\u0006\u0018"}, d2 = {"Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayManagerModule;", "Lcom/discord/codegen/NativeMobileVoiceOverlaySpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "mobileVoiceOverlay", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlay;", "getMobileVoiceOverlay", "()Lcom/discord/mobile_voice_overlay/MobileVoiceOverlay;", "mobileVoiceOverlay$delegate", "Lkotlin/Lazy;", "enableOverlay", "", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getName", "", "hideOverlay", "setData", "data", "Lcom/facebook/react/bridge/ReadableMap;", "showOverlay", "assets", "Companion", "mobile_voice_overlay_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOverlaySpec {
     public static final Companion Companion = new Companion(null);
     public static final String NAME = "RTNMobileVoiceOverlay";
@@ -30,7 +30,7 @@ public final class MobileVoiceOverlayManagerModule extends NativeMobileVoiceOver
     private final Lazy mobileVoiceOverlay$delegate;
 
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayManagerModule$Companion;", "", "()V", "NAME", "", "OVERLAY_REQUEST_CODE", "", "create", "Lcom/facebook/react/bridge/NativeModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "mobile_voice_overlay_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes4.dex */
     public static final class Companion {
         private Companion() {
         }

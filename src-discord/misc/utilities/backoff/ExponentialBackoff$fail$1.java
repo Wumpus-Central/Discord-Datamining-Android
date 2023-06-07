@@ -15,7 +15,7 @@ import qg.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.misc.utilities.backoff.ExponentialBackoff$fail$1", f = "ExponentialBackoff.kt", l = {38, 39}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class ExponentialBackoff$fail$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Function1<Continuation<? super Unit>, Object> $action;
     int label;

@@ -1,6 +1,6 @@
 package com.discord.media_player;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class BuildConfig {
     public static final String BUILD_TYPE = "release";
     public static final boolean DEBUG = false;

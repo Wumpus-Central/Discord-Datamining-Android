@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EphemeralIndicationViewHolder$bind$1$1(Object obj) {

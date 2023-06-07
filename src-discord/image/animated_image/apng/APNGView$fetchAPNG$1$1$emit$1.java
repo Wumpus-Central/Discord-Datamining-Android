@@ -11,7 +11,7 @@ import kotlin.coroutines.jvm.internal.e;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1", f = "APNGView.kt", l = {91, 101, 107}, m = "emit")
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class APNGView$fetchAPNG$1$1$emit$1 extends d {
     Object L$0;
     int label;

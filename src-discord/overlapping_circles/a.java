@@ -1,5 +1,5 @@
 package com.discord.overlapping_circles;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes3.dex */
 public final /* synthetic */ class a {
 }

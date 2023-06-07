@@ -7,7 +7,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.n;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes3.dex */
 /* synthetic */ class NativePermissionManagerModule$Companion$transformHasAuthorizationResult$1 extends n implements Function1<Object, Serializable> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public NativePermissionManagerModule$Companion$transformHasAuthorizationResult$1(Object obj) {

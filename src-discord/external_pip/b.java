@@ -1,5 +1,5 @@
 package com.discord.external_pip;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final /* synthetic */ class b {
 }

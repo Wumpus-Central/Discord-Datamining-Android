@@ -8,7 +8,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class RoleSubscriptionPurchaseViewBinding {
     public final View roleSubscriptionBadgeDummyView;
     public final SimpleDraweeView roleSubscriptionPurchaseBadge;

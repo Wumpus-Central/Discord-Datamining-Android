@@ -12,7 +12,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class GuildInviteDisabledViewBinding {
     public final Barrier barrierButton;
     public final Barrier barrierHeader;

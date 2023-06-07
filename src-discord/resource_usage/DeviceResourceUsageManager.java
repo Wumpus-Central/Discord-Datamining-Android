@@ -13,7 +13,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import og.a;
 
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cB\u000f\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0018\u001a\u00020\u0019H\u0002J\b\u0010\u001a\u001a\u00020\u0019H\u0007J\b\u0010\u001b\u001a\u00020\u0019H\u0007R\u0012\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u001a\u0010\u000b\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u001a\u0010\u0011\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\n\"\u0004\b\u0013\u0010\u0014R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001d"}, d2 = {"Lcom/discord/resource_usage/DeviceResourceUsageManager;", "", "timeSpanMillis", "", "(J)V", "activeThreadId", "Ljava/lang/Long;", "cpuCoreCount", "", "getCpuCoreCount", "()I", "cpuUsagePercent", "", "getCpuUsagePercent", "()D", "setCpuUsagePercent", "(D)V", "memoryRssKB", "getMemoryRssKB", "setMemoryRssKB", "(I)V", "thread", "Ljava/lang/Thread;", "threadSync", "monitor", "", ViewProps.START, "stop", "Companion", "resource_usage_monitor_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class DeviceResourceUsageManager {
     public static final Companion Companion = new Companion(null);
     private static final long SC_CLK_TCK;
@@ -28,7 +28,7 @@ public final class DeviceResourceUsageManager {
     private final long timeSpanMillis;
 
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/discord/resource_usage/DeviceResourceUsageManager$Companion;", "", "()V", "SC_CLK_TCK", "", "SC_CPU_CORE_COUNT", "", "SC_PAGE_SIZE", "resource_usage_monitor_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class Companion {
         private Companion() {
         }

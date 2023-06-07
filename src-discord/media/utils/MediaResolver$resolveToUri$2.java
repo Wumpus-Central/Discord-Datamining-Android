@@ -15,7 +15,7 @@ import qg.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.utils.MediaResolver$resolveToUri$2", f = "MediaResolver.kt", l = {57, 60, 61, 62}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class MediaResolver$resolveToUri$2 extends k implements Function2<CoroutineScope, Continuation<? super Uri>, Object> {
     final /* synthetic */ int $imageCompressionQuality;
     final /* synthetic */ Uri $inputUri;

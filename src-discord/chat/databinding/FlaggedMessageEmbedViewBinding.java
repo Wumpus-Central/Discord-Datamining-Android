@@ -13,7 +13,7 @@ import com.discord.chat.presentation.message.view.MessageContentView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class FlaggedMessageEmbedViewBinding {
     public final SimpleDraweeView authorAvatar;
     public final TextView authorName;

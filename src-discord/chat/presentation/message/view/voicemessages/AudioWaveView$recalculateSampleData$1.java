@@ -16,7 +16,7 @@ import qg.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$recalculateSampleData$1", f = "AudioWaveView.kt", l = {153}, m = "invokeSuspend")
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class AudioWaveView$recalculateSampleData$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ int $numChunks;
     final /* synthetic */ byte[] $originalSampleData;
@@ -28,7 +28,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0012\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$recalculateSampleData$1$1", f = "AudioWaveView.kt", l = {}, m = "invokeSuspend")
     /* renamed from: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$recalculateSampleData$1$1  reason: invalid class name */
-    /* loaded from: classes5.dex */
+    /* loaded from: classes7.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super byte[]>, Object> {
         final /* synthetic */ int $numChunks;
         final /* synthetic */ byte[] $originalSampleData;

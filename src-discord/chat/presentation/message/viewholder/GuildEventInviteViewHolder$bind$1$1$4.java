@@ -8,7 +8,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$4 extends n implements Function4<String, String, String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public GuildEventInviteViewHolder$bind$1$1$4(Object obj) {

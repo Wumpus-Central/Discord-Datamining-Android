@@ -9,7 +9,7 @@ import kotlinx.serialization.KSerializer;
 import vj.c;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 final class SearchableSelectComponent$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final SearchableSelectComponent$Companion$$cachedSerializer$delegate$1 INSTANCE = new SearchableSelectComponent$Companion$$cachedSerializer$delegate$1();
 

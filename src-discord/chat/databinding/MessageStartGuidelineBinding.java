@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.constraintlayout.widget.Guideline;
 import com.discord.chat.R;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class MessageStartGuidelineBinding {
     public final Guideline messageStartGuideline;
     private final Guideline rootView;

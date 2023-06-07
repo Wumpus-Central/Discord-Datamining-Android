@@ -7,22 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.PostPreviewEmbedViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -31,16 +19,14 @@ import com.discord.misc.utilities.view.ViewClippingUtilsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
 import com.discord.theme.ThemeManagerKt;
-import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import j$.util.Spliterator;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u001c\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0002J\u0012\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0002J%\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001a\u0010\u001bJc\u0010\u001c\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u00112\b\u0010\u001e\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u001f\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\b\u0010 \u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\u0010\u0014\u001a\u0004\u0018\u00010\u00112\u0006\u0010!\u001a\u00020\"ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b#\u0010$J\u0012\u0010%\u001a\u00020\f2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000eH\u0002J\u0010\u0010&\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u000eH\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006'"}, d2 = {"Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/PostPreviewEmbedViewBinding;", "setButtonText", "", "cta", "", "setCoverImage", "url", "", "blurredThumbnailUrl", "setCoverImageButtonText", "coverImageOverlayText", "setFooter", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageId", "Lcom/discord/primitives/MessageId;", "setFooter-Ayv7vGE", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;)V", "setPostPreviewEmbed", "title", "subtitle", "ctaCopy", "thumbnailUrl", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "setPostPreviewEmbed-DzehxI4", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V", "setSubtitle", "setTitle", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class PostPreviewEmbedView extends ConstraintLayout {
     private final PostPreviewEmbedViewBinding binding;
 
@@ -193,15 +179,13 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
 
     /* renamed from: setFooter-Ayv7vGE  reason: not valid java name */
     private final void m304setFooterAyv7vGE(StructurableText structurableText, String str) {
-        DraweeSpanStringBuilder spannable;
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.f(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
         q.f(context, "context");
         Paint.FontMetrics fontMetrics = setFooter_Ayv7vGE$lambda$4.getPaint().getFontMetrics();
         q.f(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(structurableText, context, str, false, false, true, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & Spliterator.NONNULL) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & Spliterator.IMMUTABLE) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & 4096) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & Spliterator.SUBSIZED) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : true, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, spannable);
+        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, TextUtilsKt.toSpannable$default(structurableText, context, str, false, false, true, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null));
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setFooter_Ayv7vGE$lambda$4, false, 1, null);
     }
 

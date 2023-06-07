@@ -11,7 +11,7 @@ import com.discord.reactions.ReactionsView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class MessageBundleConversationViewBinding {
     public final Barrier barrier;
     public final ReactionsView reactionsView;

@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.FlowCollector;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/flow/FlowCollector;", "Lcom/discord/file_downloader/DownloadState;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_downloader.FileDownloader$downloadFile$1", f = "FileDownloader.kt", l = {52, 56, 64, 71, 77}, m = "invokeSuspend")
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class FileDownloader$downloadFile$1 extends k implements Function2<FlowCollector<? super DownloadState>, Continuation<? super Unit>, Object> {
     final /* synthetic */ File $downloadDirectory;
     final /* synthetic */ String $fileName;

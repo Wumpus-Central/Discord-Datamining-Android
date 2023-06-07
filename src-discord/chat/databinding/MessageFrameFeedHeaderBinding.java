@@ -9,7 +9,7 @@ import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class MessageFrameFeedHeaderBinding {
     public final SimpleDraweeView feedChannelIcon;
     public final TextView feedChannelText;

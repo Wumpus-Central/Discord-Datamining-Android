@@ -7,7 +7,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0086\u0001\u0018\u0000 \u00072\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0007B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\b"}, d2 = {"Lcom/discord/permissions/NativePermissionStatus;", "", "(Ljava/lang/String;I)V", "AUTHORIZED", "DENIED", "RESTRICTED", "UNDETERMINED", "Companion", "permissions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes3.dex */
 public enum NativePermissionStatus {
     AUTHORIZED,
     DENIED,
@@ -20,7 +20,7 @@ public enum NativePermissionStatus {
     public static final Companion Companion = new Companion(null);
 
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0007\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\u0001J\u0010\u0010\n\u001a\u00020\b2\b\u0010\t\u001a\u0004\u0018\u00010\u0001R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lcom/discord/permissions/NativePermissionStatus$Companion;", "", "()V", "ANDROID_PERMISSION_DENIED", "", "ANDROID_PERMISSION_GRANTED", "ANDROID_PERMISSION_NEVER_ASK_AGAIN", "fromAndroidAuthorizationStatus", "Ljava/io/Serializable;", "value", "fromAndroidPermissionStatus", "permissions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes4.dex */
+    /* loaded from: classes3.dex */
     public static final class Companion {
         private Companion() {
         }

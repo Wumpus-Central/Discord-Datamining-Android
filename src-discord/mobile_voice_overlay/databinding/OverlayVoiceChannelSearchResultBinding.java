@@ -8,7 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.mobile_voice_overlay.R;
 import x1.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class OverlayVoiceChannelSearchResultBinding {
     public final TextView categoryName;
     public final TextView channelName;

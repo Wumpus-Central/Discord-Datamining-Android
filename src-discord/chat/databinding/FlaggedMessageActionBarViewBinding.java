@@ -8,7 +8,7 @@ import com.discord.chat.R;
 import com.discord.core.DCDButton;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class FlaggedMessageActionBarViewBinding {
     public final DCDButton actionsButton;
     public final DCDButton feedbackButton;

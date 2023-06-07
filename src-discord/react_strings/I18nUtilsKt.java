@@ -10,7 +10,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0002\b\u0002\u001a(\u0010\u0007\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00012\u0014\b\u0002\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u001a(\u0010\b\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00012\u0014\b\u0002\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u001a(\u0010\u0007\u001a\u00020\u0005*\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00012\u0014\b\u0002\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u001a(\u0010\f\u001a\u00020\u000b*\u00020\n2\u0006\u0010\u0002\u001a\u00020\u00012\u0014\b\u0002\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¨\u0006\r"}, d2 = {"Landroid/widget/TextView;", "Lcom/discord/react_strings/I18nMessage;", "i18nMessage", "Lkotlin/Function1;", "Lcom/discord/react_strings/RenderContext;", "", "initializer", "i18nContentDescription", "i18nSetText", "Landroid/widget/ImageView;", "Landroid/content/Context;", "", "i18nFormat", "react_strings_release"}, k = 2, mv = {1, 8, 0})
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class I18nUtilsKt {
     public static final void i18nContentDescription(TextView textView, I18nMessage i18nMessage, Function1<? super RenderContext, Unit> initializer) {
         q.g(textView, "<this>");

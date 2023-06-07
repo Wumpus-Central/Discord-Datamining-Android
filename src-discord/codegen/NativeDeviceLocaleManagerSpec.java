@@ -7,7 +7,7 @@ import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import h6.a;
 import java.util.Map;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public abstract class NativeDeviceLocaleManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeDeviceLocaleManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);

@@ -7,7 +7,7 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "", "<anonymous parameter 1>", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 final class FlaggedMessageEmbedView$configureMessageContent$1$5 extends s implements Function2<String, String, Unit> {
     public static final FlaggedMessageEmbedView$configureMessageContent$1$5 INSTANCE = new FlaggedMessageEmbedView$configureMessageContent$1$5();
 

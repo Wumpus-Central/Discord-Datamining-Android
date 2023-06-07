@@ -10,7 +10,7 @@ import com.discord.mobile_voice_overlay.R;
 import com.discord.mobile_voice_overlay.views.OverlayMenuView;
 import x1.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes4.dex */
 public final class OverlayMenuBubbleBinding {
     public final LinearLayout overlayHeader;
     public final View overlayLinkedAnchorView;

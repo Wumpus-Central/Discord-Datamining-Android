@@ -8,7 +8,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$3 extends n implements Function3<String, String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbeddedActivityInviteViewHolder$bind$1$3(Object obj) {

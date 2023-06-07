@@ -5,7 +5,7 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.module.model.ReactModuleInfoProvider;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public class MobileVoiceOverlayPackage extends TurboReactPackage {
     @Override // com.facebook.react.TurboReactPackage
     public NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {

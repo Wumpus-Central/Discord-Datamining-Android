@@ -24,7 +24,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u001d2\u00020\u0001:\u0004\u001d\u001e\u001f B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u001a\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u0016\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\u000fH\u0002J\u001a\u0010\u0019\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u000f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001c2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0010¨\u0006!"}, d2 = {"Lcom/discord/reactions/ReactionView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/reactions/databinding/ReactionViewBinding;", "currentCount", "", "Ljava/lang/Integer;", "currentEmojiId", "", "currentShouldAnimate", "", "Ljava/lang/Boolean;", "configureBackground", "", "isMe", "reactionsTheme", "Lcom/discord/reactions/ReactionView$ReactionsTheme;", "configureCount", "count", "animate", "configureTextColor", "setReaction", "reaction", "Lcom/discord/reactions/ReactionView$Reaction;", "Companion", "Emoji", "Reaction", "ReactionsTheme", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class ReactionView extends LinearLayout {
     private final ReactionViewBinding binding;
     private Integer currentCount;
@@ -38,7 +38,7 @@ public final class ReactionView extends LinearLayout {
     private static final int CORNER_RADIUS = SizeUtilsKt.getDpToPx(6);
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000b\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0011\u0010\t\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0011\u0010\u000b\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0011\u0010\r\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006¨\u0006\u000f"}, d2 = {"Lcom/discord/reactions/ReactionView$Companion;", "", "()V", "CORNER_RADIUS", "", "getCORNER_RADIUS", "()I", "EMOJI_SIZE", "getEMOJI_SIZE", "HORIZ_PADDING", "getHORIZ_PADDING", "MINIMUM_WIDTH", "getMINIMUM_WIDTH", "STROKE_WIDTH", "getSTROKE_WIDTH", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class Companion {
         private Companion() {
         }
@@ -69,11 +69,11 @@ public final class ReactionView extends LinearLayout {
     }
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\b\u0010\u0015\u001a\u00020\u0016H\u0016R\u0014\u0010\u0002\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0016\u0010\n\u001a\u0004\u0018\u00010\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\tR\u0014\u0010\f\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\tR\u0014\u0010\u000e\u001a\u0004\u0018\u00010\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\tR\u0014\u0010\u0010\u001a\u00020\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012R\u0012\u0010\u0013\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\t¨\u0006\u0017"}, d2 = {"Lcom/discord/reactions/ReactionView$Emoji;", "", "animated", "", "getAnimated", "()Ljava/lang/Boolean;", "displayName", "", "getDisplayName", "()Ljava/lang/String;", "emojiId", "getEmojiId", "id", "getId", ZeroconfModule.KEY_SERVICE_NAME, "getName", "shouldAnimate", "getShouldAnimate", "()Z", "src", "getSrc", "renderable", "Lcom/discord/emoji/RenderableEmoji;", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public interface Emoji {
 
         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes7.dex */
+        /* loaded from: classes8.dex */
         public static final class DefaultImpls {
             public static String getEmojiId(Emoji emoji) {
                 String id2 = emoji.getId();
@@ -140,11 +140,11 @@ public final class ReactionView extends LinearLayout {
     }
 
     @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018\u00002\u00020\u0001J\b\u0010\u0018\u001a\u00020\rH\u0016R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0012\u0010\b\u001a\u00020\tX¦\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0012\u0010\f\u001a\u00020\rX¦\u0004¢\u0006\u0006\u001a\u0004\b\f\u0010\u000eR\u0012\u0010\u000f\u001a\u00020\rX¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u000eR\u0014\u0010\u0010\u001a\u00020\u00118VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0014\u001a\u0004\u0018\u00010\u0015X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0019"}, d2 = {"Lcom/discord/reactions/ReactionView$Reaction;", "Lcom/discord/recycler_view/utils/ItemDiffableType;", "burstCount", "", "getBurstCount", "()I", "count", "getCount", "emoji", "Lcom/discord/reactions/ReactionView$Emoji;", "getEmoji", "()Lcom/discord/reactions/ReactionView$Emoji;", "isMe", "", "()Z", "isMeBurst", "itemId", "", "getItemId", "()Ljava/lang/Long;", "themedBurstColors", "Lcom/discord/reactions/BurstReactionView$ThemedBurstColorPalette;", "getThemedBurstColors", "()Lcom/discord/reactions/BurstReactionView$ThemedBurstColorPalette;", "isBurstReaction", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public interface Reaction extends ItemDiffableType {
 
         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes7.dex */
+        /* loaded from: classes8.dex */
         public static final class DefaultImpls {
             public static Long getItemId(Reaction reaction) {
                 String emojiId = reaction.getEmoji().getEmojiId();
@@ -176,7 +176,7 @@ public final class ReactionView extends LinearLayout {
     }
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\r\bf\u0018\u00002\u00020\u0001R\u0014\u0010\u0002\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0006\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0005R\u0014\u0010\b\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\t\u0010\u0005R\u0014\u0010\n\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\u0005R\u0014\u0010\f\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u0005R\u0014\u0010\u000e\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0005¨\u0006\u0010"}, d2 = {"Lcom/discord/reactions/ReactionView$ReactionsTheme;", "", "activeReactionBackgroundColor", "", "getActiveReactionBackgroundColor", "()Ljava/lang/Integer;", "activeReactionBorderColor", "getActiveReactionBorderColor", "activeReactionTextColor", "getActiveReactionTextColor", "reactionBackgroundColor", "getReactionBackgroundColor", "reactionBorderColor", "getReactionBorderColor", "reactionTextColor", "getReactionTextColor", "reactions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public interface ReactionsTheme {
         Integer getActiveReactionBackgroundColor();
 

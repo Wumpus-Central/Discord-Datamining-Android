@@ -7,7 +7,7 @@ import com.discord.chat.R;
 import com.discord.chat.presentation.message.MessageView;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class DecoratedMessageViewBinding {
     public final MessageView messageView;
     private final View rootView;

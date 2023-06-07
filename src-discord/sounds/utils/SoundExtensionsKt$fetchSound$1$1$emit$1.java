@@ -11,7 +11,7 @@ import kotlin.coroutines.jvm.internal.e;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1", f = "SoundExtensions.kt", l = {47, 57, 63}, m = "emit")
-/* loaded from: classes6.dex */
+/* loaded from: classes5.dex */
 public final class SoundExtensionsKt$fetchSound$1$1$emit$1 extends d {
     int label;
     /* synthetic */ Object result;

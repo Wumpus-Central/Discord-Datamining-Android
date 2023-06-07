@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.discord.chat.R;
 import x1.a;
 
-/* loaded from: classes5.dex */
+/* loaded from: classes7.dex */
 public final class SeparatorViewBinding {
     public final View leftBar;
     public final TextView middleText;
