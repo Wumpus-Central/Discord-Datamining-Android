@@ -319,7 +319,7 @@ public final class TextUtilsKt {
     */
     private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r83, com.discord.chat.presentation.textutils.RenderContext r84, com.facebook.drawee.span.DraweeSpanStringBuilder r85) {
         /*
-            Method dump skipped, instructions count: 2747
+            Method dump skipped, instructions count: 2753
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.textutils.TextUtilsKt.toSpannable(java.util.List, com.discord.chat.presentation.textutils.RenderContext, com.facebook.drawee.span.DraweeSpanStringBuilder):com.facebook.drawee.span.DraweeSpanStringBuilder");

@@ -116,6 +116,7 @@ public final class ChatListView extends RecyclerView {
 
     public final void cleanup() {
         removeScrollStateListener();
+        stopScroll();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

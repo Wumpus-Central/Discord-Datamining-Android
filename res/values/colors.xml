@@ -677,7 +677,16 @@
     <color name="red_860">#ff280808</color>
     <color name="red_900">#ff220606</color>
     <color name="reddit">#ffff4500</color>
-    <color name="redesign_button_secondary_border_dark">#33ffffff</color>
+    <color name="redesign_button_primary_alt_background_dark">#005865f2</color>
+    <color name="redesign_button_primary_alt_background_light">#005865f2</color>
+    <color name="redesign_button_primary_alt_on_blurple_background_dark">#00505cdc</color>
+    <color name="redesign_button_primary_alt_on_blurple_background_light">#00505cdc</color>
+    <color name="redesign_button_primary_alt_pressed_background_dark">#145865f2</color>
+    <color name="redesign_button_primary_alt_pressed_background_light">#145865f2</color>
+    <color name="redesign_button_secondary_alt_background_light">#14000000</color>
+    <color name="redesign_button_secondary_alt_border_light">#14000000</color>
+    <color name="redesign_button_secondary_alt_pressed_background_light">#29000000</color>
+    <color name="redesign_button_secondary_alt_pressed_border_light">#29000000</color>
     <color name="redesign_button_secondary_border_light">#14000000</color>
     <color name="riot_games">#ffea0029</color>
     <color name="ripple_material_dark">#33ffffff</color>
