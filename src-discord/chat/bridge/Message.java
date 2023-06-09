@@ -1,6 +1,7 @@
 package com.discord.chat.bridge;
 
 import androidx.recyclerview.widget.RecyclerView;
+import co.discord.media_engine.b;
 import com.discord.chat.bridge.MessageState;
 import com.discord.chat.bridge.MessageType;
 import com.discord.chat.bridge.activityinviteembed.ActivityInviteEmbed;
@@ -1314,7 +1315,7 @@ public final class Message extends MessageBase {
         MessageState messageState = this.state;
         int hashCode2 = (i12 + (messageState == null ? 0 : messageState.hashCode())) * 31;
         UserId userId = this.authorId;
-        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31) + co.discord.media_engine.a.a(this.flags)) * 31;
+        int i13 = (((hashCode2 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31) + b.a(this.flags)) * 31;
         String str2 = this.edited;
         int hashCode3 = (i13 + (str2 == null ? 0 : str2.hashCode())) * 31;
         Float f10 = this._constrainedWidth;

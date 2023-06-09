@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 import kg.x;
 import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
@@ -40,7 +42,10 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
                 arrayList2.add(obj);
             }
         }
-        billingManager.getSkus(arrayList2, skuType, promise, new BillingManagerModule$getSkus$1(promise));
+        Function1<? super Exception, Unit> billingManagerModule$getSkus$1 = new BillingManagerModule$getSkus$1(promise);
+        ReactApplicationContext reactApplicationContext = getReactApplicationContext();
+        q.f(reactApplicationContext, "reactApplicationContext");
+        billingManager.getSkus(arrayList2, skuType, promise, billingManagerModule$getSkus$1, reactApplicationContext);
     }
 
     @ReactMethod

@@ -1,6 +1,6 @@
 package com.discord.media_player.reactevents;
 
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import kotlin.Metadata;
@@ -107,7 +107,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((Double.doubleToLongBits(this.f7902id) * 31) + a.a(this.time)) * 31) + a.a(this.duration);
+        return (((Double.doubleToLongBits(this.f7902id) * 31) + b.a(this.time)) * 31) + b.a(this.duration);
     }
 
     @Override // com.discord.reactevents.ReactEvent

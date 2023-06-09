@@ -1,6 +1,6 @@
 package com.discord.emoji;
 
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.discord.icons.IconUrlUtils;
 import java.util.Set;
 import kotlin.Metadata;
@@ -117,7 +117,7 @@ public abstract class RenderableEmoji {
         }
 
         public int hashCode() {
-            int a10 = a.a(this.emojiId) * 31;
+            int a10 = b.a(this.emojiId) * 31;
             boolean z10 = this.isAnimated;
             if (z10) {
                 z10 = true;

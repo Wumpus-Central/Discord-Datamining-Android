@@ -1,6 +1,6 @@
 package com.discord.app_database;
 
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -95,7 +95,7 @@ public final class GuildVersion {
     }
 
     public int hashCode() {
-        return (this.f7569id.hashCode() * 31) + a.a(this.version);
+        return (this.f7569id.hashCode() * 31) + b.a(this.version);
     }
 
     public String toString() {

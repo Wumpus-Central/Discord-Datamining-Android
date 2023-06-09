@@ -1,6 +1,6 @@
 package com.discord.misc.utilities.time;
 
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import kg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -61,7 +61,7 @@ public final class TimeElapsed {
     }
 
     public int hashCode() {
-        return a.a(this.startTime);
+        return b.a(this.startTime);
     }
 
     public String toString() {

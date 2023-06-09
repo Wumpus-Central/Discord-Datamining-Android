@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
 import bh.j;
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.util.ArrayList;
@@ -389,7 +389,7 @@ public final class ContentResolverMedia {
     }
 
     public int hashCode() {
-        int a10 = ((((a.a(this.f7897id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
+        int a10 = ((((b.a(this.f7897id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
         String str = this.mimeType;
         int i10 = 0;
         int hashCode = (a10 + (str == null ? 0 : str.hashCode())) * 31;

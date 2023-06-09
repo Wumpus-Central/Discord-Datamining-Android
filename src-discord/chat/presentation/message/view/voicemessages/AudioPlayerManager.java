@@ -5,7 +5,7 @@ import android.media.AudioAttributes;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
 import android.os.Build;
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.discord.media_player.MediaPlayer;
 import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
@@ -173,7 +173,7 @@ public final class AudioPlayerManager {
         }
 
         public int hashCode() {
-            return (a.a(this.currentProgress) * 31) + a.a(this.durationMs);
+            return (b.a(this.currentProgress) * 31) + b.a(this.durationMs);
         }
 
         public String toString() {

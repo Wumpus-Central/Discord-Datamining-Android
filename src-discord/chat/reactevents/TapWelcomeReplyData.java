@@ -1,6 +1,6 @@
 package com.discord.chat.reactevents;
 
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.discord.primitives.MessageId;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
@@ -72,7 +72,7 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (a.a(this.stickerId) * 31) + MessageId.m577hashCodeimpl(this.messageId);
+        return (b.a(this.stickerId) * 31) + MessageId.m577hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent

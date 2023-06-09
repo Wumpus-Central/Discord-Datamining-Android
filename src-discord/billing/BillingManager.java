@@ -2,6 +2,7 @@ package com.discord.billing;
 
 import android.app.Activity;
 import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.g;
 import androidx.lifecycle.m;
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingFlowParams;
@@ -14,6 +15,7 @@ import com.discord.billing.types.ProductType;
 import com.discord.billing.types.QueryProductDetailsParams;
 import com.discord.billing.types.SkuDetailsParams;
 import com.discord.billing.types.SkuType;
+import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -39,13 +41,11 @@ import v2.c;
 import v2.d;
 import v2.e;
 import v2.f;
-import v2.g;
 
-@Metadata(d1 = {"\u0000\u0095\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b*\u0001C\b\u0000\u0018\u00002\u00020\u0001:\u0004PQRSBO\u0012\u0012\u00105\u001a\u000e\u0012\u0004\u0012\u000204\u0012\u0004\u0012\u00020\t0\u0011\u0012\u001e\u0010:\u001a\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\t09\u0012\u0012\u0010>\u001a\u000e\u0012\u0004\u0012\u000204\u0012\u0004\u0012\u00020\t0\u0011¢\u0006\u0004\bN\u0010OJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J \u0010\n\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\u00022\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006H\u0002J>\u0010\u0015\u001a\u00020\t2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00062\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u000f2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011H\u0002J>\u0010\u0016\u001a\u00020\t2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00062\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u000f2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011H\u0002Jf\u0010\u001f\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u001a\u001a\u00020\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011H\u0002Jr\u0010%\u001a\u00020\t2\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010 \u001a\u00020\u000b2\u0006\u0010\"\u001a\u00020!2\u0006\u0010\u001a\u001a\u00020\u000b2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u000b2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011H\u0002J\b\u0010&\u001a\u00020\tH\u0002J\b\u0010'\u001a\u00020\u0004H\u0002J\u0010\u0010)\u001a\u00020\t2\u0006\u0010(\u001a\u00020\u0007H\u0002J\f\u0010*\u001a\u00020\u0004*\u00020\u0002H\u0002J%\u0010,\u001a\u00020\t*\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u00112\u0006\u0010+\u001a\u00020\u000bH\u0082\u0002J\u000e\u0010/\u001a\u00020\t2\u0006\u0010.\u001a\u00020-J\u0006\u00100\u001a\u00020\tJ<\u00101\u001a\u00020\t2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00062\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u000f2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011Jr\u0010(\u001a\u00020\t2\b\u0010\u0018\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u001a\u001a\u00020\u000b2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u000b2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011J4\u00102\u001a\u00020\t2\u0006\u0010\u001c\u001a\u00020\u000b2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0016\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011J0\u00103\u001a\u00020\t2\u000e\b\u0002\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0018\b\u0002\u0010\u0014\u001a\u0012\u0012\b\u0012\u00060\u0012j\u0002`\u0013\u0012\u0004\u0012\u00020\t0\u0011R#\u00105\u001a\u000e\u0012\u0004\u0012\u000204\u0012\u0004\u0012\u00020\t0\u00118\u0006¢\u0006\f\n\u0004\b5\u00106\u001a\u0004\b7\u00108R/\u0010:\u001a\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\t098\u0006¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=R#\u0010>\u001a\u000e\u0012\u0004\u0012\u000204\u0012\u0004\u0012\u00020\t0\u00118\u0006¢\u0006\f\n\u0004\b>\u00106\u001a\u0004\b?\u00108R\u0016\u0010A\u001a\u00020@8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bA\u0010BR\u0014\u0010D\u001a\u00020C8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bD\u0010ER\u0016\u0010G\u001a\u00020F8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bG\u0010HR\u001a\u0010J\u001a\u00020I8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bJ\u0010K\u0012\u0004\bL\u0010M¨\u0006T"}, d2 = {"Lcom/discord/billing/BillingManager;", "", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isRetryableError", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "", "handlePurchases", "", "skuIds", "Lcom/discord/billing/types/SkuType;", "skuType", "Lcom/facebook/react/bridge/Promise;", "reactPromise", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "onError", "getSkusWithRetry", "getProductsWithRetry", "Landroid/app/Activity;", "activity", "skuId", "userId", "oldSkuId", "purchaseToken", "Lkotlin/Function0;", "onSuccess", "purchaseWithSkuDetails", "productId", "Lcom/discord/billing/types/ProductType;", "productType", "oldProductId", "offerId", "purchaseWithProductDetails", "reconnect", "isBillingClientReady", "purchase", "verifyPurchase", "isNotOk", "errorMessage", "invoke", "Lcom/facebook/react/bridge/ReactApplicationContext;", "context", "open", "close", "getSkus", "consumePurchase", "loadPurchases", "", "onConnectionUpdated", "Lkotlin/jvm/functions/Function1;", "getOnConnectionUpdated", "()Lkotlin/jvm/functions/Function1;", "Lkotlin/Function3;", "onPurchaseUpdated", "Lkotlin/jvm/functions/Function3;", "getOnPurchaseUpdated", "()Lkotlin/jvm/functions/Function3;", "onDowngradeCommand", "getOnDowngradeCommand", "Lcom/android/billingclient/api/BillingClient;", "billingClient", "Lcom/android/billingclient/api/BillingClient;", "com/discord/billing/BillingManager$billingClientStateListener$1", "billingClientStateListener", "Lcom/discord/billing/BillingManager$billingClientStateListener$1;", "Lkotlinx/coroutines/CoroutineScope;", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "backoff", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "getBackoff$annotations", "()V", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;)V", "ConnectionState", "DowngradeCommand", "ProductDetailsResponse", "SkuDetailsResponse", "billing_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000\u0091\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b*\u0001E\b\u0000\u0018\u00002\u00020\u0001:\u0004OPQRBO\u0012\u0012\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u0015\u0012\u001e\u0010<\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0;\u0012\u0012\u0010@\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u0015¢\u0006\u0004\bM\u0010NJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J \u0010\u000e\u001a\u00020\r2\u0006\u0010\u0007\u001a\u00020\u00062\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nH\u0002JF\u0010\u0019\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002JF\u0010\u001a\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002Jf\u0010#\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002Jr\u0010)\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010$\u001a\u00020\u000f2\u0006\u0010&\u001a\u00020%2\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002J\b\u0010*\u001a\u00020\rH\u0002J\b\u0010+\u001a\u00020\bH\u0002J\u0010\u0010-\u001a\u00020\r2\u0006\u0010,\u001a\u00020\u000bH\u0002J\f\u0010.\u001a\u00020\b*\u00020\u0006H\u0002J%\u00100\u001a\u00020\r*\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010/\u001a\u00020\u000fH\u0082\u0002J\u000e\u00101\u001a\u00020\r2\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u00102\u001a\u00020\rJD\u00103\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002Jr\u0010,\u001a\u00020\r2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J4\u00104\u001a\u00020\r2\u0006\u0010 \u001a\u00020\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J0\u00105\u001a\u00020\r2\u000e\b\u0002\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0018\b\u0002\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015R#\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\b7\u00108\u001a\u0004\b9\u0010:R/\u0010<\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0;8\u0006¢\u0006\f\n\u0004\b<\u0010=\u001a\u0004\b>\u0010?R#\u0010@\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\b@\u00108\u001a\u0004\bA\u0010:R\u0016\u0010C\u001a\u00020B8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bC\u0010DR\u0014\u0010F\u001a\u00020E8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010GR\u001a\u0010I\u001a\u00020H8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bI\u0010J\u0012\u0004\bK\u0010L¨\u0006S"}, d2 = {"Lcom/discord/billing/BillingManager;", "", "Lcom/facebook/react/bridge/ReactApplicationContext;", "context", "Lkotlinx/coroutines/CoroutineScope;", "getCoroutineScope", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isRetryableError", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "", "handlePurchases", "", "skuIds", "Lcom/discord/billing/types/SkuType;", "skuType", "Lcom/facebook/react/bridge/Promise;", "reactPromise", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "onError", "getSkusWithRetry", "getProductsWithRetry", "Landroid/app/Activity;", "activity", "skuId", "userId", "oldSkuId", "purchaseToken", "Lkotlin/Function0;", "onSuccess", "purchaseWithSkuDetails", "productId", "Lcom/discord/billing/types/ProductType;", "productType", "oldProductId", "offerId", "purchaseWithProductDetails", "reconnect", "isBillingClientReady", "purchase", "verifyPurchase", "isNotOk", "errorMessage", "invoke", "open", "close", "getSkus", "consumePurchase", "loadPurchases", "", "onConnectionUpdated", "Lkotlin/jvm/functions/Function1;", "getOnConnectionUpdated", "()Lkotlin/jvm/functions/Function1;", "Lkotlin/Function3;", "onPurchaseUpdated", "Lkotlin/jvm/functions/Function3;", "getOnPurchaseUpdated", "()Lkotlin/jvm/functions/Function3;", "onDowngradeCommand", "getOnDowngradeCommand", "Lcom/android/billingclient/api/BillingClient;", "billingClient", "Lcom/android/billingclient/api/BillingClient;", "com/discord/billing/BillingManager$billingClientStateListener$1", "billingClientStateListener", "Lcom/discord/billing/BillingManager$billingClientStateListener$1;", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "backoff", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "getBackoff$annotations", "()V", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;)V", "ConnectionState", "DowngradeCommand", "ProductDetailsResponse", "SkuDetailsResponse", "billing_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes.dex */
 public final class BillingManager {
     private BillingClient billingClient;
-    private CoroutineScope coroutineScope;
     private final Function1<Integer, Unit> onConnectionUpdated;
     private final Function1<Integer, Unit> onDowngradeCommand;
     private final Function3<String, String, String, Unit> onPurchaseUpdated;
@@ -269,7 +269,7 @@ public final class BillingManager {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void consumePurchase$lambda$1(BillingManager this$0, Function1 onError, Function0 onSuccess, BillingResult billingResult, String str) {
+    public static final void consumePurchase$lambda$0(BillingManager this$0, Function1 onError, Function0 onSuccess, BillingResult billingResult, String str) {
         q.g(this$0, "this$0");
         q.g(onError, "$onError");
         q.g(onSuccess, "$onSuccess");
@@ -286,54 +286,41 @@ public final class BillingManager {
     private static /* synthetic */ void getBackoff$annotations() {
     }
 
-    private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1) {
-        CoroutineScope coroutineScope;
-        CoroutineScope coroutineScope2;
-        if (!isBillingClientReady()) {
-            invoke(function1, "Billing connection is not ready.");
-            return;
-        }
-        CoroutineScope coroutineScope3 = this.coroutineScope;
-        if (coroutineScope3 == null) {
-            q.y("coroutineScope");
-            coroutineScope = null;
+    private final CoroutineScope getCoroutineScope(ReactApplicationContext reactApplicationContext) {
+        LifecycleOwner lifecycleOwner;
+        Activity currentActivity = reactApplicationContext.getCurrentActivity();
+        g gVar = null;
+        if (currentActivity instanceof LifecycleOwner) {
+            lifecycleOwner = (LifecycleOwner) currentActivity;
         } else {
-            coroutineScope = coroutineScope3;
+            lifecycleOwner = null;
         }
-        ExponentialBackoff exponentialBackoff = new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null);
-        CoroutineScope coroutineScope4 = this.coroutineScope;
-        if (coroutineScope4 == null) {
-            q.y("coroutineScope");
-            coroutineScope2 = null;
-        } else {
-            coroutineScope2 = coroutineScope4;
+        if (lifecycleOwner != null) {
+            gVar = m.a(lifecycleOwner);
         }
-        l.d(coroutineScope2, y0.a(), null, new BillingManager$getProductsWithRetry$1(exponentialBackoff, this, function1, promise, skuType, list, null), 2, null);
+        if (gVar != null) {
+            return gVar;
+        }
+        CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, "Can't get lifecycleScope for billing client, defaulting to GlobalScope but API might be backing off while the app is background", null, null, 6, null);
+        return n1.f22377k;
     }
 
-    private final void getSkusWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1) {
-        CoroutineScope coroutineScope;
-        CoroutineScope coroutineScope2;
+    private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
         if (!isBillingClientReady()) {
             invoke(function1, "Billing connection is not ready.");
             return;
         }
-        CoroutineScope coroutineScope3 = this.coroutineScope;
-        if (coroutineScope3 == null) {
-            q.y("coroutineScope");
-            coroutineScope = null;
-        } else {
-            coroutineScope = coroutineScope3;
+        CoroutineScope coroutineScope = getCoroutineScope(reactApplicationContext);
+        l.d(coroutineScope, y0.a(), null, new BillingManager$getProductsWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
+    }
+
+    private final void getSkusWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
+        if (!isBillingClientReady()) {
+            invoke(function1, "Billing connection is not ready.");
+            return;
         }
-        ExponentialBackoff exponentialBackoff = new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null);
-        CoroutineScope coroutineScope4 = this.coroutineScope;
-        if (coroutineScope4 == null) {
-            q.y("coroutineScope");
-            coroutineScope2 = null;
-        } else {
-            coroutineScope2 = coroutineScope4;
-        }
-        l.d(coroutineScope2, y0.a(), null, new BillingManager$getSkusWithRetry$1(exponentialBackoff, this, function1, promise, skuType, list, null), 2, null);
+        CoroutineScope coroutineScope = getCoroutineScope(reactApplicationContext);
+        l.d(coroutineScope, y0.a(), null, new BillingManager$getSkusWithRetry$1(new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), this, function1, promise, skuType, list, null), 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -420,13 +407,13 @@ public final class BillingManager {
         billingClient.g(queryProductDetailsParams.create(productType, n10), new d() { // from class: com.discord.billing.a
             @Override // v2.d
             public final void onProductDetailsResponse(BillingResult billingResult, List list) {
-                BillingManager.purchaseWithProductDetails$lambda$5(BillingManager.this, function1, str, str3, str4, str2, str5, activity, function0, ref$BooleanRef, billingResult, list);
+                BillingManager.purchaseWithProductDetails$lambda$4(BillingManager.this, function1, str, str3, str4, str2, str5, activity, function0, ref$BooleanRef, billingResult, list);
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void purchaseWithProductDetails$lambda$5(BillingManager this$0, Function1 onError, String productId, String str, String str2, String userId, String str3, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List productDetails) {
+    public static final void purchaseWithProductDetails$lambda$4(BillingManager this$0, Function1 onError, String productId, String str, String str2, String userId, String str3, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List productDetails) {
         q.g(this$0, "this$0");
         q.g(onError, "$onError");
         q.g(productId, "$productId");
@@ -478,16 +465,16 @@ public final class BillingManager {
         }
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.INSTANCE;
         n10 = j.n(str, str3);
-        billingClient.i(skuDetailsParams.create(skuType, n10), new g() { // from class: com.discord.billing.c
+        billingClient.i(skuDetailsParams.create(skuType, n10), new v2.g() { // from class: com.discord.billing.c
             @Override // v2.g
             public final void onSkuDetailsResponse(BillingResult billingResult, List list) {
-                BillingManager.purchaseWithSkuDetails$lambda$3(BillingManager.this, function1, str, str3, str4, str2, activity, function0, ref$BooleanRef, billingResult, list);
+                BillingManager.purchaseWithSkuDetails$lambda$2(BillingManager.this, function1, str, str3, str4, str2, activity, function0, ref$BooleanRef, billingResult, list);
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void purchaseWithSkuDetails$lambda$3(BillingManager this$0, Function1 onError, String skuId, String str, String str2, String userId, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List list) {
+    public static final void purchaseWithSkuDetails$lambda$2(BillingManager this$0, Function1 onError, String skuId, String str, String str2, String userId, Activity activity, Function0 onSuccess, Ref$BooleanRef completed, BillingResult billingResult, List list) {
         q.g(this$0, "this$0");
         q.g(onError, "$onError");
         q.g(skuId, "$skuId");
@@ -578,7 +565,7 @@ public final class BillingManager {
         billingClient.a(a10, new c() { // from class: com.discord.billing.b
             @Override // v2.c
             public final void a(BillingResult billingResult, String str) {
-                BillingManager.consumePurchase$lambda$1(BillingManager.this, onError, onSuccess, billingResult, str);
+                BillingManager.consumePurchase$lambda$0(BillingManager.this, onError, onSuccess, billingResult, str);
             }
         });
     }
@@ -595,11 +582,12 @@ public final class BillingManager {
         return this.onPurchaseUpdated;
     }
 
-    public final void getSkus(List<String> skuIds, SkuType skuType, Promise reactPromise, Function1<? super Exception, Unit> onError) {
+    public final void getSkus(List<String> skuIds, SkuType skuType, Promise reactPromise, Function1<? super Exception, Unit> onError, ReactApplicationContext context) {
         q.g(skuIds, "skuIds");
         q.g(skuType, "skuType");
         q.g(reactPromise, "reactPromise");
         q.g(onError, "onError");
+        q.g(context, "context");
         if (!isBillingClientReady()) {
             invoke(onError, "Billing connection is not ready.");
             return;
@@ -612,9 +600,9 @@ public final class BillingManager {
         BillingResult c10 = billingClient.c("fff");
         q.f(c10, "billingClient.isFeatureS…tureType.PRODUCT_DETAILS)");
         if (isNotOk(c10)) {
-            getSkusWithRetry(skuIds, skuType, reactPromise, onError);
+            getSkusWithRetry(skuIds, skuType, reactPromise, onError, context);
         } else {
-            getProductsWithRetry(skuIds, skuType, reactPromise, onError);
+            getProductsWithRetry(skuIds, skuType, reactPromise, onError, context);
         }
     }
 
@@ -653,39 +641,27 @@ public final class BillingManager {
     }
 
     public final void open(ReactApplicationContext context) {
-        LifecycleOwner lifecycleOwner;
-        androidx.lifecycle.g a10;
         q.g(context, "context");
-        BillingClient a11 = BillingClient.f(context).b().c(new f() { // from class: com.discord.billing.e
+        BillingClient a10 = BillingClient.f(context).b().c(new f() { // from class: com.discord.billing.e
             @Override // v2.f
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }
         }).a();
-        q.f(a11, "newBuilder(context)\n    …\n                .build()");
-        this.billingClient = a11;
-        Activity currentActivity = context.getCurrentActivity();
+        q.f(a10, "newBuilder(context)\n    …\n                .build()");
+        this.billingClient = a10;
         BillingClient billingClient = null;
-        if (currentActivity instanceof LifecycleOwner) {
-            lifecycleOwner = (LifecycleOwner) currentActivity;
-        } else {
-            lifecycleOwner = null;
-        }
-        if (!(lifecycleOwner == null || (a10 = m.a(lifecycleOwner)) == null)) {
-            this.coroutineScope = a10;
-        }
-        BillingClient billingClient2 = this.billingClient;
-        if (billingClient2 == null) {
+        if (a10 == null) {
             q.y("billingClient");
-            billingClient2 = null;
+            a10 = null;
         }
-        if (!billingClient2.d()) {
+        if (!a10.d()) {
             try {
-                BillingClient billingClient3 = this.billingClient;
-                if (billingClient3 == null) {
+                BillingClient billingClient2 = this.billingClient;
+                if (billingClient2 == null) {
                     q.y("billingClient");
                 } else {
-                    billingClient = billingClient3;
+                    billingClient = billingClient2;
                 }
                 billingClient.j(this.billingClientStateListener);
                 this.onConnectionUpdated.invoke(Integer.valueOf(ConnectionState.CONNECTING.getValue()));
