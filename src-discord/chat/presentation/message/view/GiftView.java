@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Group;
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.gift.GiftEmbed;
 import com.discord.chat.databinding.GiftViewBinding;
@@ -24,7 +24,6 @@ import com.discord.image.fresco.postprocessors.PostProcessor;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
-import com.facebook.drawee.controller.a;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
@@ -91,7 +90,7 @@ public final class GiftView extends CardView {
                 }
 
                 public int hashCode() {
-                    return b.a(getAccessoryId());
+                    return a.a(getAccessoryId());
                 }
 
                 public String toString() {
@@ -137,7 +136,7 @@ public final class GiftView extends CardView {
                 }
 
                 public int hashCode() {
-                    return b.a(getAccessoryId());
+                    return a.a(getAccessoryId());
                 }
 
                 public String toString() {
@@ -184,7 +183,7 @@ public final class GiftView extends CardView {
     private final void bindSplash(GiftEmbed.Resolved.Valid valid, boolean z10) {
         int i10;
         int b10;
-        a aVar;
+        com.facebook.drawee.controller.a aVar;
         if (z10) {
             i10 = ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS;
         } else {

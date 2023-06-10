@@ -23,7 +23,7 @@ public final class AudioPlayerView$prepareAudio$1 extends s implements Function1
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

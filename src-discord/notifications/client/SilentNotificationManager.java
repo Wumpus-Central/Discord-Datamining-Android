@@ -118,9 +118,9 @@ public final class SilentNotificationManager {
     }
 
     public final boolean shouldDisplayNotification(NotificationData notificationData) {
+        Integer channelType;
         q.g(notificationData, "notificationData");
-        Integer channelType = notificationData.getChannelType();
-        if (channelType != null && channelType.intValue() == 1) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
             return true;
         }
         ChannelId channelId = notificationData.m513getChannelIdqMVnFVQ();

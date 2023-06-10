@@ -47,7 +47,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22063a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -70,7 +70,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             this.$callback.invoke((String) obj);
-            return Unit.f22063a;
+            return Unit.f22104a;
         }
     }
 
@@ -86,7 +86,7 @@ public final class MediaEngine$setBroadcastThumbnailParams$1$1 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

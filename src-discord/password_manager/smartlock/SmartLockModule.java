@@ -93,7 +93,7 @@ public final class SmartLockModule extends ReactContextBaseJavaModule {
     }
 
     private final void requestCredentials() {
-        a a10 = new a.C0158a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
+        a a10 = new a.C0159a().c(true).b(DISCORD_ACCOUNT_IDENTITY).a();
         q.f(a10, "Builder()\n            .s…ITY)\n            .build()");
         this.credentialsClient.D(a10).b(new d() { // from class: com.discord.password_manager.smartlock.a
             @Override // ib.d

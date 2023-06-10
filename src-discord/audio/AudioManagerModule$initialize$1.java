@@ -27,7 +27,7 @@ final class AudioManagerModule$initialize$1 extends s implements Function1<List<
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(List<? extends DiscordAudioManager.AudioDevice> list) {
         invoke2((List<DiscordAudioManager.AudioDevice>) list);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -36,7 +36,7 @@ final class AudioManagerModule$initialize$1 extends s implements Function1<List<
         DeviceEventManagerModule.RCTDeviceEventEmitter rCTDeviceEventEmitter = this.$eventEmitter;
         WritableMap createMap = Arguments.createMap();
         createMap.putArray("devices", NativeArrayExtensionsKt.toNativeArray(AudioManagerModule.Companion.convertDevices(devices)));
-        Unit unit = Unit.f22063a;
+        Unit unit = Unit.f22104a;
         rCTDeviceEventEmitter.emit("android-audio-devices-updated", createMap);
     }
 }

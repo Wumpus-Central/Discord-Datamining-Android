@@ -44,7 +44,7 @@ public final class DebugRowLogger implements RowLogger {
             try {
                 outputStreamWriter.write(str + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 outputStreamWriter.flush();
-                Unit unit = Unit.f22063a;
+                Unit unit = Unit.f22104a;
                 c.a(outputStreamWriter, null);
                 writeJson();
             } catch (Throwable th2) {
@@ -77,7 +77,7 @@ public final class DebugRowLogger implements RowLogger {
             ug.q.c(new InputStreamReader(new FileInputStream(this.replayFile), charset), new DebugRowLogger$writeJson$1$1(ref$BooleanRef, outputStreamWriter));
             outputStreamWriter.write("\n]");
             outputStreamWriter.flush();
-            Unit unit = Unit.f22063a;
+            Unit unit = Unit.f22104a;
             th = null;
         } finally {
             try {

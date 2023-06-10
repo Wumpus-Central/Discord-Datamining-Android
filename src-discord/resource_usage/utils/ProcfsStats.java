@@ -1,6 +1,6 @@
 package com.discord.resource_usage.utils;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import java.io.File;
 import java.util.List;
 import kg.n;
@@ -115,7 +115,7 @@ public final class ProcfsStats {
     }
 
     public int hashCode() {
-        return (b.a(this.totalTime) * 31) + b.a(this.rssPages);
+        return (a.a(this.totalTime) * 31) + a.a(this.rssPages);
     }
 
     public String toString() {

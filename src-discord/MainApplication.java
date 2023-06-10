@@ -13,6 +13,7 @@ import com.discord.flipper.FlipperUtils;
 import com.discord.media_player.CacheDataSourceFactory;
 import com.discord.react.FontManager;
 import com.discord.react_fork_overrides.ReactForkOverrides;
+import com.discord.resource_usage.DeviceResourceUsageRecorder;
 import com.discord.sticker.sticker_types.RLottieUtils;
 import com.discord.tti_manager.TTILoggingApplication;
 import com.discord.tti_manager.TTIMetrics;
@@ -20,12 +21,29 @@ import com.discord.tti_manager.react.ReactMarkerListener;
 import com.discord.utils.SoLoaderUtils;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.modules.i18nmanager.I18nUtil;
+import com.facebook.react.modules.network.NetworkingModule;
 import kotlin.Metadata;
+import kotlin.jvm.internal.q;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Response;
 
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0005¢\u0006\u0002\u0010\u0003J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/MainApplication;", "Lcom/discord/tti_manager/TTILoggingApplication;", "Lcom/facebook/react/ReactApplication;", "()V", ZeroconfModule.KEY_SERVICE_HOST, "Lcom/discord/bridge/DCDReactNativeHost;", "getReactNativeHost", "initialize", "", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
 public final class MainApplication extends TTILoggingApplication implements ReactApplication {
     private final DCDReactNativeHost host = new DCDReactNativeHost(this);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void initialize$lambda$0(OkHttpClient.Builder builder) {
+        final DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
+        builder.b(new Interceptor() { // from class: com.discord.MainApplication$initialize$lambda$0$$inlined$-addNetworkInterceptor$1
+            @Override // okhttp3.Interceptor
+            public final Response intercept(Interceptor.Chain chain) {
+                q.g(chain, "chain");
+                return DeviceResourceUsageRecorder.Companion.this.clientXHRInterceptor(chain);
+            }
+        });
+    }
 
     @Override // com.discord.tti_manager.TTILoggingApplication
     public void initialize() {
@@ -50,6 +68,12 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         PerformanceTracing.Companion.get().start();
         SoLoaderUtils.init$default(SoLoaderUtils.INSTANCE, this, false, 2, null);
         TTIMetrics.record$default(tTIMetrics, "SoLoaderUtils.init()", 0L, null, false, 14, null);
+        NetworkingModule.setCustomClientBuilder(new NetworkingModule.CustomClientBuilder() { // from class: com.discord.b
+            @Override // com.facebook.react.modules.network.NetworkingModule.CustomClientBuilder
+            public final void apply(OkHttpClient.Builder builder) {
+                MainApplication.initialize$lambda$0(builder);
+            }
+        });
         FlipperUtils.INSTANCE.init(this);
         RLottieUtils.INSTANCE.init();
         FontManager.INSTANCE.init(this);

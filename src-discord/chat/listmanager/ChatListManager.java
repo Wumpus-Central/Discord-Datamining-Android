@@ -190,26 +190,22 @@ public final class ChatListManager {
     private final RowsModificationResult modifyExistingRows(List<? extends Row> list) {
         boolean z10;
         List<Row> F;
-        boolean z11;
         Object U;
-        boolean z12;
-        boolean z13;
-        boolean z14;
         List<Row> list2 = this.rows;
         q.d(list2);
         ListOperationsBuilder listOperationsBuilder = new ListOperationsBuilder();
         ArrayList<Row> arrayList = new ArrayList();
         Iterator<T> it = list.iterator();
         while (true) {
-            boolean z15 = true;
+            boolean z11 = true;
             if (!it.hasNext()) {
                 break;
             }
             Object next = it.next();
             if (((Row) next).getChangeType() != ChangeType.INSERT) {
-                z15 = false;
+                z11 = false;
             }
-            if (z15) {
+            if (z11) {
                 arrayList.add(next);
             }
         }
@@ -227,11 +223,6 @@ public final class ChatListManager {
         for (Object obj : list) {
             Row row2 = (Row) obj;
             if (row2.getChangeType() == ChangeType.DELETE || row2.getChangeType() == ChangeType.UPDATE) {
-                z14 = true;
-            } else {
-                z14 = false;
-            }
-            if (z14) {
                 arrayList2.add(obj);
             }
         }
@@ -241,24 +232,10 @@ public final class ChatListManager {
                 list2.remove(row3.getIndex());
                 listOperationsBuilder.add(new ListOperation.Remove(row3.getIndex()));
             } else {
-                if ((row3 instanceof LoadingRow) && ((LoadingRow) row3).getButton().getAction().getType() == LoadingActionType.LOAD_MORE_AFTER && row3.getIndex() == 0) {
-                    z11 = true;
-                } else {
-                    z11 = false;
-                }
+                boolean z12 = (row3 instanceof LoadingRow) && ((LoadingRow) row3).getButton().getAction().getType() == LoadingActionType.LOAD_MORE_AFTER && row3.getIndex() == 0;
                 U = r.U(list2);
                 Row row4 = (Row) U;
-                if (!(row4 instanceof LoadingRow) || !((LoadingRow) row4).isLoading()) {
-                    z12 = false;
-                } else {
-                    z12 = true;
-                }
-                if (!z11 || !z12) {
-                    z13 = false;
-                } else {
-                    z13 = true;
-                }
-                if (z13) {
+                if (z12 && ((row4 instanceof LoadingRow) && ((LoadingRow) row4).isLoading())) {
                     list2.add(1, row3);
                     list2.remove(0);
                     listOperationsBuilder.add(new ListOperation.Insert(1));

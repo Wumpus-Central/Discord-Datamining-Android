@@ -25,7 +25,7 @@ final class MediaEngineModule$getVideoInputDevices$1 extends s implements Functi
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(List<? extends Map<String, ? extends Object>> list) {
         invoke2(list);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

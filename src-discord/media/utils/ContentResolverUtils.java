@@ -99,14 +99,13 @@ public final class ContentResolverUtils {
     }
 
     public final Cursor queryCompat(ContentResolver contentResolver, Uri queryUri, String[] queryProjection, int i10, String querySort, String str, Integer num) {
-        int i11;
         Cursor query;
         q.g(contentResolver, "<this>");
         q.g(queryUri, "queryUri");
         q.g(queryProjection, "queryProjection");
         q.g(querySort, "querySort");
-        int i12 = Build.VERSION.SDK_INT;
-        if (i12 > 29) {
+        int i11 = Build.VERSION.SDK_INT;
+        if (i11 > 29) {
             Bundle bundle = new Bundle();
             bundle.putInt("android:query-arg-limit", i10);
             bundle.putString("android:query-arg-sql-sort-order", querySort);
@@ -116,16 +115,12 @@ public final class ContentResolverUtils {
             if (num != null) {
                 bundle.putInt("android:query-arg-offset", num.intValue());
             }
-            Unit unit = Unit.f22063a;
+            Unit unit = Unit.f22104a;
             query = contentResolver.query(queryUri, queryProjection, bundle, null);
             return query;
-        } else if (i12 >= 26) {
-            if (num != null) {
-                i11 = num.intValue();
-            } else {
-                i11 = 0;
-            }
-            return contentResolver.query(queryUri, queryProjection, str, null, querySort + " LIMIT " + i10 + " OFFSET " + i11, null);
+        } else if (i11 >= 26) {
+            int intValue = num != null ? num.intValue() : 0;
+            return contentResolver.query(queryUri, queryProjection, str, null, querySort + " LIMIT " + i10 + " OFFSET " + intValue, null);
         } else {
             Uri.Builder buildUpon = queryUri.buildUpon();
             Uri.Builder encodedQuery = buildUpon.encodedQuery("limit=" + i10);

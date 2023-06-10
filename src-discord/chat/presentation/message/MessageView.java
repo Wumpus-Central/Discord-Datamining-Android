@@ -255,7 +255,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             MessageTagView messageTagView2 = this.binding.messageTagView;
             q.f(messageTagView2, "binding.messageTagView");
             messageTagView2.setVisibility(0);
-            this.binding.messageTagView.configureTagView(message.getTagText(), message.getTagVerified(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler);
+            this.binding.messageTagView.configureTagView(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler);
             return;
         }
         TextView textView3 = this.binding.timestamp;

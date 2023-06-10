@@ -1,6 +1,6 @@
 package com.discord.chat.reactevents;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.chat.bridge.botuikit.ChannelSelectComponent;
 import com.discord.chat.bridge.botuikit.ComponentEmoji;
@@ -144,7 +144,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((MessageId.m577hashCodeimpl(this.messageId) * 31) + b.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
+        return (((MessageId.m577hashCodeimpl(this.messageId) * 31) + a.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
     }
 
     @Override // com.discord.reactevents.ReactEvent

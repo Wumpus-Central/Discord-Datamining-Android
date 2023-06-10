@@ -1,6 +1,6 @@
 package com.discord.chatreplay;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -93,7 +93,7 @@ public final class Replay {
     }
 
     public int hashCode() {
-        return (this.filename.hashCode() * 31) + b.a(this.lastModified);
+        return (this.filename.hashCode() * 31) + a.a(this.lastModified);
     }
 
     public String toString() {

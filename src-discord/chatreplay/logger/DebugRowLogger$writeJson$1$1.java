@@ -25,16 +25,16 @@ final class DebugRowLogger$writeJson$1$1 extends s implements Function1<String, 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(String line) {
         q.g(line, "line");
-        if (this.$existingLine.f22088k) {
+        if (this.$existingLine.f22129k) {
             this.$writer.write(",\n");
         }
         this.$writer.write(line);
-        this.$existingLine.f22088k = true;
+        this.$existingLine.f22129k = true;
     }
 }

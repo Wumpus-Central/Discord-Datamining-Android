@@ -24,7 +24,7 @@ import e.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J;\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\f2\u0006\u0010\u0012\u001a\u00020\u0013¢\u0006\u0002\u0010\u0014R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0015"}, d2 = {"Lcom/discord/chat/presentation/message/MessageTagView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/chat/databinding/MessageTagViewBinding;", "configureTagView", "", "tagText", "", "isVerifiedBot", "", "tagBackgroundColor", "", "opTagText", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/chat/presentation/events/ChatEventHandler;)V", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006JE\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u00102\b\u0010\u0012\u001a\u0004\u0018\u00010\f2\u0006\u0010\u0013\u001a\u00020\u0014¢\u0006\u0002\u0010\u0015R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/discord/chat/presentation/message/MessageTagView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/chat/databinding/MessageTagViewBinding;", "configureTagView", "", "tagText", "", "isVerifiedBot", "", "tagTextColor", "", "tagBackgroundColor", "opTagText", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/chat/presentation/events/ChatEventHandler;)V", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
 public final class MessageTagView extends FrameLayout {
     private final MessageTagViewBinding binding;
@@ -54,28 +54,34 @@ public final class MessageTagView extends FrameLayout {
         eventHandler.onTapOpTag();
     }
 
-    public final void configureTagView(String str, Boolean bool, Integer num, String str2, final ChatEventHandler eventHandler) {
+    public final void configureTagView(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler) {
+        int i10;
         q.g(eventHandler, "eventHandler");
-        int i10 = 8;
+        int i11 = 0;
         if (str != null) {
             this.binding.tag.setText(str);
             TextView textView = this.binding.tag;
-            Context context = getContext();
-            q.f(context, "context");
-            textView.setTextColor(ColorUtilsKt.getColorCompat(context, R.color.white));
+            if (num != null) {
+                i10 = num.intValue();
+            } else {
+                Context context = getContext();
+                q.f(context, "context");
+                i10 = ColorUtilsKt.getColorCompat(context, R.color.white);
+            }
+            textView.setTextColor(i10);
             ConstraintLayout constraintLayout = this.binding.layout;
             q.f(constraintLayout, "binding.layout");
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, null, 1, null);
             SimpleDraweeView simpleDraweeView = this.binding.verifiedBotIcon;
             q.f(simpleDraweeView, "binding.verifiedBotIcon");
-            if (q.b(bool, Boolean.TRUE)) {
-                i10 = 0;
+            if (!q.b(bool, Boolean.TRUE)) {
+                i11 = 8;
             }
-            simpleDraweeView.setVisibility(i10);
-            if (num != null) {
+            simpleDraweeView.setVisibility(i11);
+            if (num2 != null) {
                 ConstraintLayout constraintLayout2 = this.binding.layout;
                 q.f(constraintLayout2, "binding.layout");
-                ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout2, ReactColorToAndroidColorKt.reactColorToAndroidColor(num.intValue()), SizeUtilsKt.getDpToPx(3), null, 0, 12, null);
+                ViewBackgroundUtilsKt.setBackgroundRectangle$default(constraintLayout2, ReactColorToAndroidColorKt.reactColorToAndroidColor(num2.intValue()), SizeUtilsKt.getDpToPx(3), null, 0, 12, null);
                 return;
             }
             this.binding.layout.setBackground(a.b(getContext(), R.drawable.drawable_message_author_tag_bg));

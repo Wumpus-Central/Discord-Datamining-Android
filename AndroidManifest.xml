@@ -51,7 +51,7 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <application android:allowBackup="false" android:appCategory="social" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/data_extraction_rules_legacy" android:icon="@mipmap/ic_logo_square_canary" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.discord.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_logo_round_canary" android:supportsRtl="false" android:theme="@style/AppTheme">
-        <meta-data android:name="libdiscord_version" android:value="89.0.49-discord-java-factory"/>
+        <meta-data android:name="libdiscord_version" android:value="89.0.48-fix-android-symbols"/>
         <meta-data android:name="com.discord.features.FLAG" android:value="1"/>
         <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.discord.share.ShareActivity" android:windowSoftInputMode="adjustResize">
@@ -153,6 +153,11 @@
         </receiver>
         <meta-data android:name="com.google.android.nearby.messages.API_KEY" android:value="AIzaSyD-4L6bgKMixqBRtrG2UktVXK6IexXlsog"/>
         <activity android:name="com.discord.samsung.SamsungConnectActivity"/>
+        <receiver android:exported="true" android:name="com.discord.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
         <service android:name="com.discord.react.headless_tasks.service.HeadlessTasksService"/>
         <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
             <intent-filter>
@@ -167,11 +172,6 @@
         <provider android:authorities="com.discord.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
         </provider>
-        <receiver android:exported="true" android:name="com.discord.file_downloader.PublicFileDownloader$PublicFileDownloadBroadcastReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
-            </intent-filter>
-        </receiver>
         <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
         <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
         <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">

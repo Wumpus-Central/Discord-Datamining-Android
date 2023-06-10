@@ -47,7 +47,7 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
                 return null;
             }
             module.onPipModeChanged(z10);
-            return Unit.f22063a;
+            return Unit.f22104a;
         }
 
         public final Unit onUserLeaveHint(ReactContext reactContext) {
@@ -56,7 +56,7 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
                 return null;
             }
             module.enterPipMode(false, ExternalPipModule$Companion$onUserLeaveHint$1.INSTANCE);
-            return Unit.f22063a;
+            return Unit.f22104a;
         }
     }
 

@@ -1,6 +1,6 @@
 package com.discord.media.engine.video.events;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import kotlin.Metadata;
@@ -139,7 +139,7 @@ public final class OnVideoCallbackEvent implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((((this.connectionId * 31) + this.userId.hashCode()) * 31) + b.a(this.ssrc)) * 31) + this.streamId.hashCode()) * 31) + this.videoStreamParametersJSON.hashCode();
+        return (((((((this.connectionId * 31) + this.userId.hashCode()) * 31) + a.a(this.ssrc)) * 31) + this.streamId.hashCode()) * 31) + this.videoStreamParametersJSON.hashCode();
     }
 
     @Override // com.discord.reactevents.ReactEvent

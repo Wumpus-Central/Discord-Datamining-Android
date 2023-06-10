@@ -23,7 +23,7 @@ public final class BundleUpdaterManager$showSpinnerView$2 extends s implements F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ViewGroup viewGroup) {
         invoke2(viewGroup);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

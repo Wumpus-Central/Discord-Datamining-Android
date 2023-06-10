@@ -2,6 +2,7 @@ package com.discord.modules.compressionmanager;
 
 import com.discord.logging.Log;
 import com.discord.misc.utilities.time.TimeElapsed;
+import com.discord.resource_usage.DeviceResourceUsageRecorder;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -34,6 +35,50 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CompressionManagerModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        q.g(reactContext, "reactContext");
+    }
+
+    private final WebSocketModule getWebSocketModule() {
+        ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+        if (reactApplicationContextIfActiveOrWarn != null) {
+            return (WebSocketModule) reactApplicationContextIfActiveOrWarn.getNativeModule(WebSocketModule.class);
+        }
+        return null;
+    }
+
+    @ReactMethod
+    public final void disableZlibStreamSupport(int i10) {
+        WebSocketModule webSocketModule = getWebSocketModule();
+        if (webSocketModule != null) {
+            webSocketModule.setContentHandler(i10, null);
+        }
+        this.inflaters.remove(Integer.valueOf(i10));
+    }
+
+    @ReactMethod
+    public final void enableZlibStreamSupport(int i10) {
+        Map<Integer, Inflater> map = this.inflaters;
+        Integer valueOf = Integer.valueOf(i10);
+        Inflater inflater = map.get(valueOf);
+        if (inflater == null) {
+            inflater = new Inflater();
+            map.put(valueOf, inflater);
+        }
+        Inflater inflater2 = inflater;
+        WebSocketModule webSocketModule = getWebSocketModule();
+        if (webSocketModule != null) {
+            webSocketModule.setContentHandler(i10, new ContentHandler(inflater2));
+        }
+    }
+
+    @Override // com.facebook.react.bridge.NativeModule
+    public String getName() {
+        return "DCDCompressionManager";
     }
 
     @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001\rB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001a\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\nH\u0016J\u0018\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\t\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000e"}, d2 = {"Lcom/discord/modules/compressionmanager/CompressionManagerModule$ContentHandler;", "Lcom/facebook/react/modules/websocket/WebSocketModule$ContentHandler;", "inflater", "Ljava/util/zip/Inflater;", "(Ljava/util/zip/Inflater;)V", "onMessage", "", "text", "", "params", "Lcom/facebook/react/bridge/WritableMap;", "byteString", "Lokio/ByteString;", "ZLibByteStream", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -85,6 +130,10 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
         public void onMessage(String str, WritableMap params) {
             q.g(params, "params");
             params.putString("data", str);
+            if (str != null) {
+                DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
+                companion.setSocketBytesReceived(companion.getSocketBytesReceived() + str.length());
+            }
         }
 
         @Override // com.facebook.react.modules.websocket.WebSocketModule.ContentHandler
@@ -102,50 +151,8 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
             }
             params.putString("type", "text");
             params.putString("data", decodedString);
+            DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
+            companion.setSocketBytesReceived(companion.getSocketBytesReceived() + byteString.y());
         }
-    }
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public CompressionManagerModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-        q.g(reactContext, "reactContext");
-    }
-
-    private final WebSocketModule getWebSocketModule() {
-        ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
-        if (reactApplicationContextIfActiveOrWarn != null) {
-            return (WebSocketModule) reactApplicationContextIfActiveOrWarn.getNativeModule(WebSocketModule.class);
-        }
-        return null;
-    }
-
-    @ReactMethod
-    public final void disableZlibStreamSupport(int i10) {
-        WebSocketModule webSocketModule = getWebSocketModule();
-        if (webSocketModule != null) {
-            webSocketModule.setContentHandler(i10, null);
-        }
-        this.inflaters.remove(Integer.valueOf(i10));
-    }
-
-    @ReactMethod
-    public final void enableZlibStreamSupport(int i10) {
-        Map<Integer, Inflater> map = this.inflaters;
-        Integer valueOf = Integer.valueOf(i10);
-        Inflater inflater = map.get(valueOf);
-        if (inflater == null) {
-            inflater = new Inflater();
-            map.put(valueOf, inflater);
-        }
-        Inflater inflater2 = inflater;
-        WebSocketModule webSocketModule = getWebSocketModule();
-        if (webSocketModule != null) {
-            webSocketModule.setContentHandler(i10, new ContentHandler(inflater2));
-        }
-    }
-
-    @Override // com.facebook.react.bridge.NativeModule
-    public String getName() {
-        return "DCDCompressionManager";
     }
 }

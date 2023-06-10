@@ -20,7 +20,7 @@ public /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$10 extends 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
         m321invoke1xi1bu0(messageId.m580unboximpl());
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */

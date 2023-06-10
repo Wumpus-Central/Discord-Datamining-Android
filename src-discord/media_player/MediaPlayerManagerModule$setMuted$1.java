@@ -22,12 +22,12 @@ final class MediaPlayerManagerModule$setMuted$1 extends s implements Function1<S
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(SimpleExoPlayer player) {
         q.g(player, "player");
-        player.d1(this.$muted ? 0.0f : 1.0f);
+        player.e1(this.$muted ? 0.0f : 1.0f);
     }
 }

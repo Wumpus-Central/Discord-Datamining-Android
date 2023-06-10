@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.contentnode;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -153,7 +153,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        int a10 = ((((((b.a(this.f7620id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
+        int a10 = ((((((a.a(this.f7620id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
         boolean jumboable = getJumboable();
         if (jumboable) {
             jumboable = true;

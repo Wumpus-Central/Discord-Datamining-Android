@@ -49,7 +49,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f22063a;
+                return Unit.f22104a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -71,7 +71,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
-            return Unit.f22063a;
+            return Unit.f22104a;
         }
 
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -109,7 +109,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f22063a;
+                return Unit.f22104a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -134,7 +134,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f22063a;
+            return Unit.f22104a;
         }
 
         public final void invoke(boolean z10) {

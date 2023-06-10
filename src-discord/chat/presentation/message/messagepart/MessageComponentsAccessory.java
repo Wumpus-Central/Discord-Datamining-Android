@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.messagepart;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.discord.chat.bridge.botuikit.Component;
 import com.discord.primitives.MessageId;
 import java.util.List;
@@ -88,7 +88,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + b.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
+        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + a.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
     }
 
     public String toString() {

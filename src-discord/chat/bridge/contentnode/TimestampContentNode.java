@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.contentnode;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -110,7 +110,7 @@ public final class TimestampContentNode extends ContentNode {
     }
 
     public int hashCode() {
-        return (((b.a(this.timestamp) * 31) + this.full.hashCode()) * 31) + this.formatted.hashCode();
+        return (((a.a(this.timestamp) * 31) + this.full.hashCode()) * 31) + this.formatted.hashCode();
     }
 
     public String toString() {

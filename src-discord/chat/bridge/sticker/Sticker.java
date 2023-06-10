@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.sticker;
 
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.chat.bridge.sticker.StickerFormatType;
 import kotlin.Metadata;
@@ -182,7 +182,7 @@ public final class Sticker {
     }
 
     public int hashCode() {
-        int a10 = ((((((((b.a(this.f7627id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
+        int a10 = ((((((((a.a(this.f7627id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
         Integer num = this.width;
         int i10 = 0;
         int hashCode = (a10 + (num == null ? 0 : num.hashCode())) * 31;

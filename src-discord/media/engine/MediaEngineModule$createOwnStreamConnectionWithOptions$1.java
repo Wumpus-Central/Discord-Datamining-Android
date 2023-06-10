@@ -29,7 +29,7 @@ final class MediaEngineModule$createOwnStreamConnectionWithOptions$1 extends s i
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, Map<String, ? extends Object> map) {
         invoke2(str, map);
-        return Unit.f22063a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

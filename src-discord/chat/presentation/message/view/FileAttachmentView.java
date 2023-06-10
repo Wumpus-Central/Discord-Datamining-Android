@@ -72,30 +72,18 @@ public final class FileAttachmentView extends ConstraintLayout {
     }
 
     public final void setContent(final String attachmentName, final String attachmentDescription, final String url, final Function2<? super String, ? super String, Unit> onClick, boolean z10, SpoilerConfig spoilerConfig, Integer num, Function0<Unit> onCancelUpload, UploadContext uploadContext, Float f10) {
-        boolean z11;
-        int i10;
-        float f11;
         q.g(attachmentName, "attachmentName");
         q.g(attachmentDescription, "attachmentDescription");
         q.g(url, "url");
         q.g(onClick, "onClick");
         q.g(onCancelUpload, "onCancelUpload");
         q.g(uploadContext, "uploadContext");
-        boolean z12 = true;
-        if (num != null) {
-            z11 = true;
-        } else {
-            z11 = false;
-        }
+        boolean z11 = true;
+        boolean z12 = num != null;
         AttachedViewCoroutineScope.cancelAllWork$default(CoroutineViewUtilsKt.getAttachedScope(this), "Binding " + FileAttachmentView.class.getSimpleName(), null, 2, null);
         SimpleDraweeView simpleDraweeView = this.binding.fileAttachmentDownload;
         q.f(simpleDraweeView, "binding.fileAttachmentDownload");
-        if (!z11) {
-            i10 = 0;
-        } else {
-            i10 = 8;
-        }
-        simpleDraweeView.setVisibility(i10);
+        simpleDraweeView.setVisibility(z12 ^ true ? 0 : 8);
         ProgressBar progressBar = this.binding.fileAttachmentDownloadProgressBar;
         q.f(progressBar, "binding.fileAttachmentDownloadProgressBar");
         progressBar.setVisibility(4);
@@ -105,7 +93,7 @@ public final class FileAttachmentView extends ConstraintLayout {
         TextView textView2 = this.binding.fileAttachmentDescription;
         q.f(textView2, "binding.fileAttachmentDescription");
         ViewUtilsKt.setOptionalText(textView2, attachmentDescription);
-        if (!z11) {
+        if (!z12) {
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(this, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.t
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -126,21 +114,15 @@ public final class FileAttachmentView extends ConstraintLayout {
             SpoilerView spoilerView = this.binding.spoiler;
             q.f(spoilerView, "binding.spoiler");
             if (spoilerView.getVisibility() != 0) {
-                z12 = false;
+                z11 = false;
             }
-            if (z12) {
+            if (z11) {
                 this.binding.fileAttachmentDownload.setImportantForAccessibility(4);
                 this.binding.fileAttachmentName.setImportantForAccessibility(4);
                 this.binding.fileAttachmentDescription.setImportantForAccessibility(4);
             }
         }
-        View root = this.binding.getRoot();
-        if (f10 != null) {
-            f11 = f10.floatValue();
-        } else {
-            f11 = 1.0f;
-        }
-        root.setAlpha(f11);
+        this.binding.getRoot().setAlpha(f10 != null ? f10.floatValue() : 1.0f);
         AttachmentUploadOverlayView uploadOverlay = this.binding.uploadOverlay;
         int interactiveNormal = ThemeManagerKt.getTheme().getInteractiveNormal();
         ShapeDrawable shapeDrawable = new ShapeDrawable();
@@ -155,7 +137,7 @@ public final class FileAttachmentView extends ConstraintLayout {
             this.uploadContext = uploadContext;
             this.uploadFinished = false;
         }
-        if (z11 && !this.uploadFinished) {
+        if (z12 && !this.uploadFinished) {
             this.binding.uploadOverlayBackground.setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
             LinearLayout linearLayout = this.binding.uploadOverlayBackground;
             q.f(linearLayout, "binding.uploadOverlayBackground");

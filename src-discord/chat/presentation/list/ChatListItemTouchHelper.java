@@ -867,11 +867,14 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
 
     void select(RecyclerView.ViewHolder viewHolder, int i10) {
         boolean z10;
+        boolean z11;
+        final int i11;
         float f10;
         float f11;
+        int i12;
         if (viewHolder != this.mSelected || i10 != this.mActionState) {
             this.mDragScrollStartTimeInMs = Long.MIN_VALUE;
-            int i11 = this.mActionState;
+            int i13 = this.mActionState;
             endRecoverAnimation(viewHolder, true);
             this.mActionState = i10;
             if (i10 == 2) {
@@ -882,48 +885,55 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                     throw new IllegalArgumentException("Must pass a ViewHolder when dragging");
                 }
             }
-            int i12 = (1 << ((i10 * 8) + 8)) - 1;
+            int i14 = (1 << ((i10 * 8) + 8)) - 1;
             final RecyclerView.ViewHolder viewHolder2 = this.mSelected;
             if (viewHolder2 != null) {
                 if (viewHolder2.itemView.getParent() != null) {
-                    final int swipeIfNecessary = (!this.mCallback.shouldReturnToOriginalPosition() && i11 != 2) ? swipeIfNecessary(viewHolder2) : 0;
+                    if (!this.mCallback.shouldReturnToOriginalPosition() && i13 != 2) {
+                        i11 = swipeIfNecessary(viewHolder2);
+                    } else {
+                        i11 = 0;
+                    }
                     releaseVelocityTracker();
-                    int i13 = 4;
-                    if (swipeIfNecessary == 1 || swipeIfNecessary == 2) {
-                        f10 = Math.signum(this.mDy) * this.mRecyclerView.getHeight();
+                    int i15 = 4;
+                    if (i11 == 1 || i11 == 2) {
                         f11 = 0.0f;
-                    } else if (swipeIfNecessary == 4 || swipeIfNecessary == 8 || swipeIfNecessary == 16 || swipeIfNecessary == 32) {
-                        f11 = Math.signum(this.mDx) * this.mRecyclerView.getWidth();
+                        f10 = Math.signum(this.mDy) * this.mRecyclerView.getHeight();
+                    } else if (i11 == 4 || i11 == 8 || i11 == 16 || i11 == 32) {
                         f10 = 0.0f;
+                        f11 = Math.signum(this.mDx) * this.mRecyclerView.getWidth();
                     } else {
                         f11 = 0.0f;
                         f10 = 0.0f;
                     }
-                    if (i11 == 2) {
-                        i13 = 8;
-                    } else if (swipeIfNecessary > 0) {
-                        i13 = 2;
-                    } else if (this.mCallback.shouldUseSpringyExit()) {
-                        i13 = 8;
+                    if (i13 == 2) {
+                        i12 = 8;
+                    } else if (i11 > 0) {
+                        i12 = 2;
+                    } else {
+                        if (this.mCallback.shouldUseSpringyExit()) {
+                            i15 = 8;
+                        }
+                        i12 = i15;
                     }
                     getSelectedDxDy(this.mTmpPosition);
                     float[] fArr = this.mTmpPosition;
                     float f12 = fArr[0];
                     float f13 = fArr[1];
-                    RecoverAnimation recoverAnimation = new RecoverAnimation(viewHolder2, i13, i11, f12, f13, f11, f10) { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.3
+                    RecoverAnimation recoverAnimation = new RecoverAnimation(viewHolder2, i12, i13, f12, f13, f11, f10) { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.3
                         @Override // com.discord.chat.presentation.list.ChatListItemTouchHelper.RecoverAnimation, android.animation.Animator.AnimatorListener
                         public void onAnimationEnd(Animator animator) {
                             super.onAnimationEnd(animator);
                             if (!this.mOverridden) {
-                                if (swipeIfNecessary <= 0) {
+                                if (i11 <= 0) {
                                     ChatListItemTouchHelper chatListItemTouchHelper = ChatListItemTouchHelper.this;
                                     chatListItemTouchHelper.mCallback.clearView(chatListItemTouchHelper.mRecyclerView, viewHolder2);
                                 } else {
                                     ChatListItemTouchHelper.this.mPendingCleanup.add(viewHolder2.itemView);
                                     this.mIsPendingCleanup = true;
-                                    int i14 = swipeIfNecessary;
-                                    if (i14 > 0) {
-                                        ChatListItemTouchHelper.this.postDispatchSwipe(this, i14);
+                                    int i16 = i11;
+                                    if (i16 > 0) {
+                                        ChatListItemTouchHelper.this.postDispatchSwipe(this, i16);
                                     }
                                 }
                                 ChatListItemTouchHelper chatListItemTouchHelper2 = ChatListItemTouchHelper.this;
@@ -935,21 +945,22 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                             }
                         }
                     };
-                    recoverAnimation.setDuration(this.mCallback.getAnimationDuration(this.mRecyclerView, i13, f11 - f12, f10 - f13));
+                    recoverAnimation.setDuration(this.mCallback.getAnimationDuration(this.mRecyclerView, i12, f11 - f12, f10 - f13));
                     this.mRecoverAnimations.add(recoverAnimation);
                     recoverAnimation.start();
-                    z10 = true;
+                    z11 = true;
                 } else {
                     removeChildDrawingOrderCallbackIfNecessary(viewHolder2.itemView);
                     this.mCallback.clearView(this.mRecyclerView, viewHolder2);
-                    z10 = false;
+                    z11 = false;
                 }
                 this.mSelected = null;
+                z10 = z11;
             } else {
                 z10 = false;
             }
             if (viewHolder != null) {
-                this.mSelectedFlags = (this.mCallback.getAbsoluteMovementFlags(this.mRecyclerView, viewHolder) & i12) >> (this.mActionState * 8);
+                this.mSelectedFlags = (this.mCallback.getAbsoluteMovementFlags(this.mRecyclerView, viewHolder) & i14) >> (this.mActionState * 8);
                 this.mSelectedStartX = viewHolder.itemView.getLeft();
                 this.mSelectedStartY = viewHolder.itemView.getTop();
                 this.mSelected = viewHolder;

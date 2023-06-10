@@ -63,7 +63,7 @@ public final class SafeAreaManagerModule extends ReactContextBaseJavaModule {
         }
         if (safeAreaEdgeInsets != null) {
             promise.resolve(NativeMapExtensionsKt.nativeMapOf(x.a(ViewProps.TOP, Float.valueOf(safeAreaEdgeInsets.getTopDp())), x.a(ViewProps.BOTTOM, Float.valueOf(safeAreaEdgeInsets.getBottomDp())), x.a(ViewProps.LEFT, Float.valueOf(safeAreaEdgeInsets.getLeftDp())), x.a(ViewProps.RIGHT, Float.valueOf(safeAreaEdgeInsets.getRightDp()))));
-            unit = Unit.f22063a;
+            unit = Unit.f22104a;
         }
         if (unit == null) {
             promise.reject(new Exception("Unable to obtain stable safe area insets."));

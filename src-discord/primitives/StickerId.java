@@ -2,7 +2,7 @@ package com.discord.primitives;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import co.discord.media_engine.b;
+import co.discord.media_engine.a;
 import com.discord.snowflake.SnowflakePrimitive;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -85,7 +85,7 @@ public final class StickerId implements SnowflakePrimitive {
 
     /* renamed from: hashCode-impl  reason: not valid java name */
     public static int m602hashCodeimpl(long j10) {
-        return b.a(j10);
+        return a.a(j10);
     }
 
     /* renamed from: isValid-impl  reason: not valid java name */

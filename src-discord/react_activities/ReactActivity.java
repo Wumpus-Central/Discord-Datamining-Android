@@ -72,7 +72,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
     protected void attachBaseContext(Context newBase) {
         q.g(newBase, "newBase");
         super.attachBaseContext(FontScaleUtilsKt.getFontScaledContext(newBase));
-        Unit unit = Unit.f22063a;
+        Unit unit = Unit.f22104a;
         Context applicationContext = getApplicationContext();
         q.f(applicationContext, "applicationContext");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
