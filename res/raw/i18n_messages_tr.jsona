@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Sözlüğe Ekle",
   "LANGUAGES": "Diller",
   "AUTO_SUGGEST_STICKERS": "Çıkartma Önerileri",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Mesaj yazarken ve otomatik tamamlarken çıkartma önerilerinin görünmesini sağlar.",
   "NUF_AGE_GATE_BODY": "Aramıza katıldığın için çok heyecanlıyız! Başlamadan önce lütfen doğum gününü gir. [Neden doğum günümü bildirmem gerekiyor?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Sunucun hazır!",
   "NUF_COMPLETE_SUBTITLE": "Hoş geldin! Buraya aitsin",

@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import yj.c0;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 final class LoadingActionType$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final LoadingActionType$Companion$$cachedSerializer$delegate$1 INSTANCE = new LoadingActionType$Companion$$cachedSerializer$delegate$1();
 

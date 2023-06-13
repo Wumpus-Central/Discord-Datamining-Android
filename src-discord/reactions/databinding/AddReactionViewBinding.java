@@ -8,7 +8,7 @@ import com.discord.reactions.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes5.dex */
 public final class AddReactionViewBinding {
     public final SimpleDraweeView addReactionImage;
     public final TextView addReactionText;

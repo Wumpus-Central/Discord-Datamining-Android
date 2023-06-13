@@ -21,7 +21,7 @@ import qg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "mediaViewAttached", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class AudioPlayerView$attachStateChangeListener$1 extends s implements Function1<Boolean, Unit> {
     final /* synthetic */ AudioPlayerView this$0;
 
@@ -29,7 +29,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$attachStateChangeListener$1$1", f = "AudioPlayerView.kt", l = {93}, m = "invokeSuspend")
     /* renamed from: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$attachStateChangeListener$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
         final /* synthetic */ AudioPlayerView this$0;
@@ -46,7 +46,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -77,7 +77,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
                             audioPlayerViewState3 = audioPlayerView3.state;
                             audioPlayerView3.toggleDurationEmitter(audioPlayerViewState3.shouldEmitDuration$chat_release());
                         }
-                        return Unit.f22104a;
+                        return Unit.f22105a;
                     }
                 };
                 this.label = 1;
@@ -89,7 +89,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22104a;
+            return Unit.f22105a;
         }
     }
 
@@ -103,7 +103,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     public final void invoke(boolean z10) {

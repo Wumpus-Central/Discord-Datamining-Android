@@ -20,7 +20,7 @@ import lg.u;
 import lg.v;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J!\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00042\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ$\u0010\n\u001a\u00020\u000b*\u00020\u000b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000bH\u0002¨\u0006\u000f"}, d2 = {"Lcom/discord/modules/fastconnectmanager/IdentifyPayload;", "", "()V", "withGuildVersions", "", "json", "versions", "", "Lcom/discord/app_database/GuildVersion;", "(Ljava/lang/String;[Lcom/discord/app_database/GuildVersion;)Ljava/lang/String;", "put", "Lkotlinx/serialization/json/JsonObject;", "path", "", "value", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 public final class IdentifyPayload {
     public static final IdentifyPayload INSTANCE = new IdentifyPayload();
 
@@ -61,13 +61,14 @@ public final class IdentifyPayload {
         Object obj;
         List<String> l10;
         int d10;
+        int c10;
         q.g(json, "json");
         q.g(versions, "versions");
         try {
-            s.a aVar = s.f21863l;
-            obj = s.b(Json.f22605d.g(json));
+            s.a aVar = s.f21864l;
+            obj = s.b(Json.f22606d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21863l;
+            s.a aVar2 = s.f21864l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -78,7 +79,8 @@ public final class IdentifyPayload {
             JsonObject jsonObject = (JsonObject) jsonElement;
             l10 = j.l("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            LinkedHashMap linkedHashMap = new LinkedHashMap(bh.j.c(d10, 16));
+            c10 = bh.j.c(d10, 16);
+            LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));
                 linkedHashMap.put(a10.c(), a10.d());

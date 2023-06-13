@@ -8,7 +8,7 @@ import com.discord.chat.R;
 import com.discord.sticker.StickerView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class WelcomeStickerViewBinding {
     private final View rootView;
     public final StickerView stickerView;

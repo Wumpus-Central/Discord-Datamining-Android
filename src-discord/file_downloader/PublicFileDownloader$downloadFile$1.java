@@ -16,7 +16,7 @@ import kotlinx.coroutines.channels.ProducerScope;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/channels/ProducerScope;", "Lcom/discord/file_downloader/DownloadState;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_downloader.PublicFileDownloader$downloadFile$1", f = "PublicFileDownloader.kt", l = {29, 37, 62}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class PublicFileDownloader$downloadFile$1 extends k implements Function2<ProducerScope<? super DownloadState>, Continuation<? super Unit>, Object> {
     final /* synthetic */ Context $context;
     final /* synthetic */ String $description;
@@ -29,7 +29,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.file_downloader.PublicFileDownloader$downloadFile$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class AnonymousClass1 extends s implements Function0<Unit> {
         final /* synthetic */ ProducerScope<DownloadState> $$this$callbackFlow;
         final /* synthetic */ Ref$LongRef $downloadId;
@@ -49,15 +49,15 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22130k));
-            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f22130k, this.$fileName);
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22131k));
+            PublicFileDownloader.INSTANCE.onFileDownloaded(this.$$this$callbackFlow, this.$manager, this.$downloadId.f22131k, this.$fileName);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.file_downloader.PublicFileDownloader$downloadFile$1$2  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class AnonymousClass2 extends s implements Function0<Unit> {
         final /* synthetic */ Ref$LongRef $downloadId;
 
@@ -70,7 +70,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
         public final void invoke2() {
-            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22130k));
+            PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(this.$downloadId.f22131k));
         }
     }
 
@@ -92,7 +92,7 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     }
 
     public final Object invoke(ProducerScope<? super DownloadState> producerScope, Continuation<? super Unit> continuation) {
-        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(9:2|(1:(1:(1:(3:7|39|40)(2:8|9))(9:10|42|11|30|35|36|(1:38)|39|40))(1:13))(2:14|(1:16))|17|41|18|(2:24|(2:26|(1:28)(7:29|30|35|36|(0)|39|40))(5:31|36|(0)|39|40))|20|(0)(0)|(1:(0))) */

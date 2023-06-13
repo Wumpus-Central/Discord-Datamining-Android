@@ -11,7 +11,7 @@ import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class ImageAttachmentViewBinding {
     public final SimpleDraweeView image;
     public final TextView imageAltText;

@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EphemeralIndicationViewHolder$bind$1$1(Object obj) {
@@ -21,7 +21,7 @@ public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n im
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m322invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

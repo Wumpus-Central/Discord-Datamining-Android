@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.discord.chat.R;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class FlaggedMessageEmbedFooterViewBinding {
     public final TextView flaggedMessageKeyword;
     public final TextView flaggedMessageRuleName;

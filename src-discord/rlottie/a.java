@@ -1,5 +1,5 @@
 package com.discord.rlottie;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes5.dex */
 public final /* synthetic */ class a {
 }

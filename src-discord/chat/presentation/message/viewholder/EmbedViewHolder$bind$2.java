@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class EmbedViewHolder$bind$2 extends n implements Function3<MessageId, String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbedViewHolder$bind$2(Object obj) {
@@ -20,7 +20,7 @@ public /* synthetic */ class EmbedViewHolder$bind$2 extends n implements Functio
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, String str, String str2) {
         m318invokeu7_MRrM(messageId.m580unboximpl(), str, str2);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-u7_MRrM  reason: not valid java name */

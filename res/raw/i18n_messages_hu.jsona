@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Hozzáadás a szótárhoz",
   "LANGUAGES": "Nyelvek",
   "AUTO_SUGGEST_STICKERS": "Matricajavaslatok",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Lehetővé teszi, hogy matricajavaslatok jelenjenek meg, amikor üzeneteket írsz és használod az automatikus kiegészítés funkciót.",
   "NUF_AGE_GATE_BODY": "Nagyon örülünk, hogy itt vagy! Mielőtt elkezdenénk, kérjük, add meg a születési dátumodat. [Miért kell megadnom a születési időmet?]({helpURL})",
   "NUF_COMPLETE_TITLE": "A szervered készen áll!",
   "NUF_COMPLETE_SUBTITLE": "Üdvözlünk! Itt a helyed",

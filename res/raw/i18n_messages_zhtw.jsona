@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "加入字典",
   "LANGUAGES": "語言",
   "AUTO_SUGGEST_STICKERS": "貼圖建議",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "允許輸入訊息和自動完成時提供貼圖建議。",
   "NUF_AGE_GATE_BODY": "歡迎您的加入！在開始之前請先輸入您的生日。[我為何需要提供生日？]({helpURL})",
   "NUF_COMPLETE_TITLE": "您的伺服器已準備就緒！",
   "NUF_COMPLETE_SUBTITLE": "歡迎！您屬於這裡",

@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "사전에 추가하기",
   "LANGUAGES": "언어",
   "AUTO_SUGGEST_STICKERS": "스티커 추천",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "메시지를 입력하거나 자동 완성을 사용할 때 스티커 추천을 허용합니다.",
   "NUF_AGE_GATE_BODY": "이렇게 찾아와주셔서 너무 기쁘네요! 시작하기에 앞서 회원님의 생일을 입력해주세요. [생일을 왜 입력해야 하죠?]({helpURL})",
   "NUF_COMPLETE_TITLE": "서버가 준비됐어요!",
   "NUF_COMPLETE_SUBTITLE": "이곳에 오신 것을 환영해요!",

@@ -8505,7 +8505,6 @@
   "ADD_TO_DICTIONARY": "Añadir al diccionario",
   "LANGUAGES": "Idiomas",
   "AUTO_SUGGEST_STICKERS": "Sugerencias de stickers",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Permite que aparezcan sugerencias de stickers mientras escribes mensajes y al autocompletar.",
   "NUF_AGE_GATE_BODY": "¡Nos alegra mucho que estés aquí! Antes de empezar, introduce tu fecha de nacimiento. [¿Por qué tengo que compartirla?]({helpURL})",
   "NUF_COMPLETE_TITLE": "¡Tu servidor está listo!",
   "NUF_COMPLETE_SUBTITLE": "¡Te damos la bienvenida a donde perteneces!",

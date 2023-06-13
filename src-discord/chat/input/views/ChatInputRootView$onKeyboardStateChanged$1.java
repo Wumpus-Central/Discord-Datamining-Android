@@ -17,7 +17,7 @@ import qg.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.input.views.ChatInputRootView$onKeyboardStateChanged$1", f = "ChatInputRootView.kt", l = {281}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
     final /* synthetic */ ChatInputRootView this$0;
@@ -26,7 +26,7 @@ final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Func
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.input.views.ChatInputRootView$onKeyboardStateChanged$1$1", f = "ChatInputRootView.kt", l = {282}, m = "invokeSuspend")
     /* renamed from: com.discord.chat.input.views.ChatInputRootView$onKeyboardStateChanged$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 
@@ -40,7 +40,7 @@ final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Func
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -59,7 +59,7 @@ final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Func
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22104a;
+            return Unit.f22105a;
         }
     }
 
@@ -76,7 +76,7 @@ final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatInputRootView$onKeyboardStateChanged$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((ChatInputRootView$onKeyboardStateChanged$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -102,6 +102,6 @@ final class ChatInputRootView$onKeyboardStateChanged$1 extends k implements Func
         if (listener != null) {
             listener.onEndBlur(String.valueOf(this.this$0.editText.getText()));
         }
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 }

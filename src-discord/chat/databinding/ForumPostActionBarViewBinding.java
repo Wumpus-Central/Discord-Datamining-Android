@@ -14,7 +14,7 @@ import com.discord.reactions.ReactionsView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class ForumPostActionBarViewBinding {
     public final AddReactionView addReaction;
     public final DCDButton followButton;

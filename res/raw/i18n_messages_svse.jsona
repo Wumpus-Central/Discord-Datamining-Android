@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Lägg till i ordlista",
   "LANGUAGES": "Språk",
   "AUTO_SUGGEST_STICKERS": "Dekalförslag",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Tillåter att dekalförslag dyker upp när du skriver meddelanden och slutför automatiskt.",
   "NUF_AGE_GATE_BODY": "Vi är så glada att du är här! Innan vi sätter igång vill vi att du anger datumet för din födelsedag. [Varför måste jag ange min födelsedag?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Din server är redo!",
   "NUF_COMPLETE_SUBTITLE": "Välkommen! Du hör hemma här",

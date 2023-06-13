@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "添加到词典",
   "LANGUAGES": "语言",
   "AUTO_SUGGEST_STICKERS": "贴纸推荐",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "允许在输入消息和自动完成时显示贴纸建议。",
   "NUF_AGE_GATE_BODY": "您能来可真是太好了！开始之前，请输入您的出生日期。[为什么我需要提供出生日期？]({helpURL})",
   "NUF_COMPLETE_TITLE": "您的服务器已准备就绪！",
   "NUF_COMPLETE_SUBTITLE": "欢迎！您就属于此处",

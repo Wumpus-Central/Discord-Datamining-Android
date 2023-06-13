@@ -24,7 +24,7 @@ import oj.x;
 import okhttp3.Response;
 
 @Metadata(d1 = {"\u0000Q\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003*\u0001\b\u0018\u0000 %2\u00020\u0001:\u0001%B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J,\u0010\u000f\u001a\u00020\u000b2\u0006\u0010\u0010\u001a\u00020\r2\b\u0010\u0011\u001a\u0004\u0018\u00010\r2\b\u0010\u0012\u001a\u0004\u0018\u00010\r2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J\u0010\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007J\u0010\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\rH\u0002J\b\u0010\u0016\u001a\u00020\rH\u0016J\u0010\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u0012\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\u0010\u0010\u001e\u001a\u00020\u000b2\u0006\u0010\u001f\u001a\u00020 H\u0002J\u0014\u0010!\u001a\u00020\u000b2\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010#H\u0002J\u0010\u0010$\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u0006H\u0007R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\t¨\u0006&"}, d2 = {"Lcom/discord/samsung/SamsungModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "connectionPromise", "Lcom/facebook/react/bridge/Promise;", "samsungActivityEventListener", "com/discord/samsung/SamsungModule$samsungActivityEventListener$1", "Lcom/discord/samsung/SamsungModule$samsungActivityEventListener$1;", "checkIfOAuthRequest", "", "clientId", "", BaseJavaModule.METHOD_TYPE_PROMISE, "finishSamsungAuthorization", "authCode", "location", "state", "getAccountUrlAndAuthCode", "getAccountUrlFromAuthServerUrl", "authServerUrl", "getName", "handleAuthResult", "result", "Lcom/discord/samsung/SamsungConnectActivity$Result;", "handleSamsungCallback", "Landroid/net/Uri;", "response", "Lokhttp3/Response;", "rejectConnection", "throwable", "", "resolveConnection", "what", "", "showConnectionDisclaimer", "Companion", "samsung_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes5.dex */
 public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Companion Companion = new Companion(null);
     private static final Intent disclaimerIntent;
@@ -32,11 +32,11 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     private final SamsungModule$samsungActivityEventListener$1 samsungActivityEventListener;
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001:\u0002\u0005\u0006B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0007"}, d2 = {"Lcom/discord/samsung/SamsungModule$Companion;", "", "()V", "disclaimerIntent", "Landroid/content/Intent;", "RequestCode", "SamsungCallbackException", "samsung_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes5.dex */
     public static final class Companion {
 
         @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2 = {"Lcom/discord/samsung/SamsungModule$Companion$RequestCode;", "", "()V", "Auth", "", "ConnectionDisclaimer", "samsung_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes8.dex */
+        /* loaded from: classes5.dex */
         public static final class RequestCode {
             public static final int Auth = 101;
             public static final int ConnectionDisclaimer = 100;
@@ -47,7 +47,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         }
 
         @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, d2 = {"Lcom/discord/samsung/SamsungModule$Companion$SamsungCallbackException;", "Ljava/lang/IllegalStateException;", "Lkotlin/IllegalStateException;", "errorCode", "", "errorMsg", "(Ljava/lang/String;Ljava/lang/String;)V", "samsung_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes8.dex */
+        /* loaded from: classes5.dex */
         public static final class SamsungCallbackException extends IllegalStateException {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public SamsungCallbackException(String errorCode, String str) {
@@ -235,14 +235,14 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.g(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f21863l;
+            s.a aVar = s.f21864l;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
             SamsungConnectActivity.Companion companion = SamsungConnectActivity.Companion;
             Activity currentActivity = getCurrentActivity();
             q.d(currentActivity);
             obj = s.b(Boolean.valueOf(reactApplicationContext.startActivityForResult(SamsungConnectActivity.Companion.getIntent$default(companion, currentActivity, 0, 2, null), 101, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21863l;
+            s.a aVar2 = s.f21864l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);
@@ -262,10 +262,10 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.g(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f21863l;
+            s.a aVar = s.f21864l;
             obj = s.b(Boolean.valueOf(getReactApplicationContext().startActivityForResult(disclaimerIntent, 100, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21863l;
+            s.a aVar2 = s.f21864l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);

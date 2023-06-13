@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import com.discord.chat.R;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class RoleDotViewBinding {
     public final FrameLayout roleDotViewBackground;
     public final ImageView roleDotViewDot;

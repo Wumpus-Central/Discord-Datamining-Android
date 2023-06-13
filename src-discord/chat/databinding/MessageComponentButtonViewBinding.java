@@ -12,7 +12,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class MessageComponentButtonViewBinding {
     public final MaterialButton button;
     public final SimpleDraweeSpanTextView emoji;

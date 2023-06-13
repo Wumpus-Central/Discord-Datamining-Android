@@ -7,7 +7,7 @@ import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import h6.a;
 import java.util.Map;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public abstract class NativeDeviceManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeDeviceManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);

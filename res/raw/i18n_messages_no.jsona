@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Legg til i ordbok",
   "LANGUAGES": "Språk",
   "AUTO_SUGGEST_STICKERS": "Klistremerkeforslag",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Tillater klistremerkeforslag når du skriver meldinger og fullfører automatisk.",
   "NUF_AGE_GATE_BODY": "Vi er glad for å se deg! Før vi starter, må du angi fødselsdatoen din. [Hvorfor må jeg angi fødselsdatoen min?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Serveren din er klar!",
   "NUF_COMPLETE_SUBTITLE": "Velkommen! Her hører du hjemme",

@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 import ug.c;
 
 @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000¨\u0006\u0005"}, d2 = {"getFileName", "", "Landroid/content/ContentResolver;", "uri", "Landroid/net/Uri;", "share_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+/* loaded from: classes6.dex */
 public final class GetFileNameKt {
     /* JADX WARN: Finally extract failed */
     public static final String getFileName(ContentResolver contentResolver, Uri uri) {
@@ -20,10 +20,10 @@ public final class GetFileNameKt {
         q.g(uri, "uri");
         String[] strArr = {"_display_name"};
         try {
-            s.a aVar = s.f21863l;
+            s.a aVar = s.f21864l;
             obj = s.b(contentResolver.query(uri, strArr, null, null, null));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f21863l;
+            s.a aVar2 = s.f21864l;
             obj = s.b(t.a(th2));
         }
         String str2 = null;

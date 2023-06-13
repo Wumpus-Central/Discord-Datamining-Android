@@ -8,8 +8,8 @@ import kotlin.coroutines.jvm.internal.e;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-@e(c = "com.discord.media.engine.MediaEngine$Companion", f = "MediaEngine.kt", l = {711, 714}, m = "encodeThumbnail")
-/* loaded from: classes4.dex */
+@e(c = "com.discord.media.engine.MediaEngine$Companion", f = "MediaEngine.kt", l = {724, 727}, m = "encodeThumbnail")
+/* loaded from: classes7.dex */
 public final class MediaEngine$Companion$encodeThumbnail$1 extends d {
     Object L$0;
     int label;

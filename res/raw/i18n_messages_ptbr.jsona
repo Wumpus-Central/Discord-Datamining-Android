@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Adicionar ao dicionário",
   "LANGUAGES": "Idiomas",
   "AUTO_SUGGEST_STICKERS": "Sugestões de figurinha",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Permite que sugestões de figurinhas apareçam enquanto uma mensagem estiver sendo digitada e ao usar o autocompletar.",
   "NUF_AGE_GATE_BODY": "Que bom que você tá aqui! Antes de começarmos, informe sua data de nascimento. [Por que preciso informar minha data de nascimento?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Seu servidor está pronto!",
   "NUF_COMPLETE_SUBTITLE": "Bem-vindo(a)! Você está no lugar certo",

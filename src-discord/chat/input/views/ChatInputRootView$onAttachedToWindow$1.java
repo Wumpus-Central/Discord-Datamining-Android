@@ -15,7 +15,7 @@ import qg.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.input.views.ChatInputRootView$onAttachedToWindow$1", f = "ChatInputRootView.kt", l = {210}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
     final /* synthetic */ ChatInputRootView this$0;
@@ -33,7 +33,7 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatInputRootView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((ChatInputRootView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -53,13 +53,13 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
 
                 public final Object emit(ChatInputRootView.CurrentTextAndSelection currentTextAndSelection, Continuation<? super Unit> continuation) {
                     if (currentTextAndSelection == null) {
-                        return Unit.f22104a;
+                        return Unit.f22105a;
                     }
                     ChatInputRootView.ChatInputListener listener = ChatInputRootView.this.getListener();
                     if (listener != null) {
                         listener.onTextOrSelectionChanged(currentTextAndSelection.getSelectionStart(), currentTextAndSelection.getSelectionEnd(), currentTextAndSelection.getText(), currentTextAndSelection.getEditId());
                     }
-                    return Unit.f22104a;
+                    return Unit.f22105a;
                 }
             };
             this.label = 1;
@@ -71,6 +71,6 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 }

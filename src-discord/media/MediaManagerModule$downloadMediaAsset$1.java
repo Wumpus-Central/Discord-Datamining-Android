@@ -21,7 +21,7 @@ import qg.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.MediaManagerModule$downloadMediaAsset$1", f = "MediaManagerModule.kt", l = {109}, m = "invokeSuspend")
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 final class MediaManagerModule$downloadMediaAsset$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Promise $promise;
     final /* synthetic */ String $uri;
@@ -43,7 +43,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
                     } else {
                         boolean z10 = downloadState instanceof DownloadState.InProgress;
                     }
-                    return Unit.f22104a;
+                    return Unit.f22105a;
                 }
             };
             this.label = 1;
@@ -88,6 +88,6 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 }

@@ -12,7 +12,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class AudioPlayerViewBinding {
     public final SimpleDraweeView button;
     public final View buttonContainer;

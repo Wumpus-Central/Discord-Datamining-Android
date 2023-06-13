@@ -8,7 +8,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$10 extends n implements Function2<String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$10(Object obj) {
@@ -18,7 +18,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

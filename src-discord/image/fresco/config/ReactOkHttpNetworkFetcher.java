@@ -17,7 +17,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
     private static final String TAG = "ReactOkHttpNetworkFetcher";
     private final Executor mCancellationExecutor;
@@ -44,7 +44,7 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     @Override // com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher
     public void fetch(OkHttpNetworkFetcher.OkHttpNetworkFetchState okHttpNetworkFetchState, NetworkFetcher.Callback callback) {
-        okHttpNetworkFetchState.f8523f = SystemClock.elapsedRealtime();
+        okHttpNetworkFetchState.f8524f = SystemClock.elapsedRealtime();
         Uri g10 = okHttpNetworkFetchState.g();
         Map<String, String> headers = okHttpNetworkFetchState.b().k() instanceof ReactNetworkImageRequest ? getHeaders(((ReactNetworkImageRequest) okHttpNetworkFetchState.b().k()).getHeaders()) : null;
         if (headers == null) {

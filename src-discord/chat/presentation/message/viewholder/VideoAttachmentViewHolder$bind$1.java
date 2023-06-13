@@ -8,7 +8,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 /* synthetic */ class VideoAttachmentViewHolder$bind$1 extends n implements Function1<String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public VideoAttachmentViewHolder$bind$1(Object obj) {
@@ -18,7 +18,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

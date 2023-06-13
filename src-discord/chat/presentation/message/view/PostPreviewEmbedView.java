@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.SetTextSizeSpKt;
+import com.discord.chat.bridge.spoiler.SpoilerConfig;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.PostPreviewEmbedViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
@@ -25,8 +26,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u001c\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0002J\u0012\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0002J%\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001a\u0010\u001bJc\u0010\u001c\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u00112\b\u0010\u001e\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u001f\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\b\u0010 \u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\u0010\u0014\u001a\u0004\u0018\u00010\u00112\u0006\u0010!\u001a\u00020\"ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b#\u0010$J\u0012\u0010%\u001a\u00020\f2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000eH\u0002J\u0010\u0010&\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u000eH\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006'"}, d2 = {"Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/PostPreviewEmbedViewBinding;", "setButtonText", "", "cta", "", "setCoverImage", "url", "", "blurredThumbnailUrl", "setCoverImageButtonText", "coverImageOverlayText", "setFooter", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageId", "Lcom/discord/primitives/MessageId;", "setFooter-Ayv7vGE", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;)V", "setPostPreviewEmbed", "title", "subtitle", "ctaCopy", "thumbnailUrl", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "setPostPreviewEmbed-DzehxI4", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V", "setSubtitle", "setTitle", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+@Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u001c\u0010\u000f\u001a\u00020\f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0002J\u0012\u0010\u0013\u001a\u00020\f2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0011H\u0002J%\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001a\u0010\u001bJu\u0010\u001c\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u00112\b\u0010\u001e\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u001f\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\b\u0010 \u001a\u0004\u0018\u00010\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\u0010\u0014\u001a\u0004\u0018\u00010\u00112\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020$2\b\u0010%\u001a\u0004\u0018\u00010&ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b'\u0010(J\u0012\u0010)\u001a\u00020\f2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000eH\u0002J\u0010\u0010*\u001a\u00020\f2\u0006\u0010\u001d\u001a\u00020\u000eH\u0002J\u001a\u0010+\u001a\u00020\f2\b\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010#\u001a\u00020$H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006,"}, d2 = {"Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/PostPreviewEmbedViewBinding;", "setButtonText", "", "cta", "", "setCoverImage", "url", "", "blurredThumbnailUrl", "setCoverImageButtonText", "coverImageOverlayText", "setFooter", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageId", "Lcom/discord/primitives/MessageId;", "setFooter-Ayv7vGE", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;)V", "setPostPreviewEmbed", "title", "subtitle", "ctaCopy", "thumbnailUrl", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "isSpoiler", "", "spoilerConfig", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "setPostPreviewEmbed-0JD92Ks", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;)V", "setSubtitle", "setTitle", "setupSpoilerView", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes8.dex */
 public final class PostPreviewEmbedView extends ConstraintLayout {
     private final PostPreviewEmbedViewBinding binding;
 
@@ -232,8 +233,28 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         this.binding.title.setText(charSequence);
     }
 
-    /* renamed from: setPostPreviewEmbed-DzehxI4  reason: not valid java name */
-    public final void m305setPostPreviewEmbedDzehxI4(String title, String str, String ctaCopy, StructurableText footer, String messageId, String str2, String str3, String str4, View.OnClickListener onButtonClickListener) {
+    private final void setupSpoilerView(SpoilerConfig spoilerConfig, boolean z10) {
+        boolean z11;
+        this.binding.spoiler.configure(spoilerConfig);
+        SpoilerView spoilerView = this.binding.spoiler;
+        q.f(spoilerView, "binding.spoiler");
+        if (spoilerView.getVisibility() == 0) {
+            z11 = true;
+        } else {
+            z11 = false;
+        }
+        if (z11) {
+            this.binding.coverImage.setImportantForAccessibility(4);
+            return;
+        }
+        this.binding.coverImage.setImportantForAccessibility(0);
+        if (z10) {
+            this.binding.coverImage.requestFocus();
+        }
+    }
+
+    /* renamed from: setPostPreviewEmbed-0JD92Ks  reason: not valid java name */
+    public final void m305setPostPreviewEmbed0JD92Ks(String title, String str, String ctaCopy, StructurableText footer, String messageId, String str2, String str3, String str4, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
         q.g(title, "title");
         q.g(ctaCopy, "ctaCopy");
         q.g(footer, "footer");
@@ -249,6 +270,8 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         SimpleDraweeView simpleDraweeView = this.binding.coverImage;
         q.f(simpleDraweeView, "binding.coverImage");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, onButtonClickListener, 1, null);
+        this.binding.coverImageOverlayButton.setOnClickButtonListener(onButtonClickListener);
+        setupSpoilerView(spoilerConfig, z10);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

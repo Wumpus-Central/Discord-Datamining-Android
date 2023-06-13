@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Ajouter au dictionnaire",
   "LANGUAGES": "Langues",
   "AUTO_SUGGEST_STICKERS": "Suggestions d'autocollants",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Permet l'affichage des suggestions d'autocollants et l'auto-complétion lors de la saisie des messages.",
   "NUF_AGE_GATE_BODY": "Nous sommes ravis que tu sois là ! Avant de commencer, saisis la date de ton anniversaire. [Pourquoi dois-je fournir ma date d'anniversaire ?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Ton serveur est prêt !",
   "NUF_COMPLETE_SUBTITLE": "Bienvenue ! Tu as ta place ici",

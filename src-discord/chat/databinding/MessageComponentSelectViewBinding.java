@@ -12,7 +12,7 @@ import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class MessageComponentSelectViewBinding {
     private final SelectComponentView rootView;
     public final SimpleDraweeView selectComponentChevron;

@@ -8503,7 +8503,6 @@
   "ADD_TO_DICTIONARY": "Přidat do slovníku",
   "LANGUAGES": "Jazyky",
   "AUTO_SUGGEST_STICKERS": "Návrhy samolepek",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Povolí zobrazování návrhů samolepek během psaní zpráv a při automatickém dokončování.",
   "NUF_AGE_GATE_BODY": "Máme takovou radost, že jsi tu! Než začneme, zadej prosím své datum narození. [Proč mám poskytnout své datum narození?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Tvůj server je připraven!",
   "NUF_COMPLETE_SUBTITLE": "Vítej! Jsi mezi svými",

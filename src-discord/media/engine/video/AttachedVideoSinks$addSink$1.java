@@ -8,7 +8,7 @@ import kotlin.jvm.internal.q;
 import org.webrtc.VideoFrame;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 /* synthetic */ class AttachedVideoSinks$addSink$1 extends n implements Function1<VideoFrame, Boolean> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public AttachedVideoSinks$addSink$1(Object obj) {

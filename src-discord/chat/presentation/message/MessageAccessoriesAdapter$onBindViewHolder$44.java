@@ -12,7 +12,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$44 extends n implements Function4<GuildId, ChannelId, ChannelId, MessageId, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$44(Object obj) {
@@ -22,7 +22,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$44 exten
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(GuildId guildId, ChannelId channelId, ChannelId channelId2, MessageId messageId) {
         m195invokekUTrps(guildId.m568unboximpl(), channelId.m555unboximpl(), channelId2.m555unboximpl(), messageId.m580unboximpl());
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-kUTrp-s  reason: not valid java name */

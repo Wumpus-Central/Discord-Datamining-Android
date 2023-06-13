@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Aggiungi al dizionario",
   "LANGUAGES": "Lingue",
   "AUTO_SUGGEST_STICKERS": "Adesivi consigliati",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Consente agli adesivi consigliati di apparire quando si scrivono messaggi e di completarli automaticamente.",
   "NUF_AGE_GATE_BODY": "Che emozione averti qui! Prima di cominciare, inserisci la tua data di nascita. [Perché devo fornire la mia data di nascita?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Il tuo server è pronto!",
   "NUF_COMPLETE_SUBTITLE": "Accomodati! Sei di casa qui",

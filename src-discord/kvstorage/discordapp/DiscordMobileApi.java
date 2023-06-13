@@ -2,7 +2,7 @@ package com.discord.kvstorage.discordapp;
 
 import android.content.Context;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 public final class DiscordMobileApi {
     public static native String getGuildVersions(String str);
 

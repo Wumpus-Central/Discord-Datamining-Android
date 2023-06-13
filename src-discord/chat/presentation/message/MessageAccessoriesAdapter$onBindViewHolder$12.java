@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$12 extends n implements Function1<CommandMentionContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$12(Object obj) {
@@ -20,7 +20,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$12 exten
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

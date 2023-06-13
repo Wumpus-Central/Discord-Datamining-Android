@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import java.util.Collections;
 import java.util.List;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 final class Palette {
     private static final int CALCULATE_BITMAP_MIN_DIMENSION = 100;
     private static final int DEFAULT_CALCULATE_NUMBER_COLORS = 16;

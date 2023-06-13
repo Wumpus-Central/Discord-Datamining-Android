@@ -17,7 +17,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J/\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\b\u001a\u00020\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\nJ'\u0010\u000b\u001a\u00020\u00042\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\u0010JC\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0017\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0018\u0010\u0019JI\u0010\u001a\u001a\u00020\u00042\b\u0010\u0014\u001a\u0004\u0018\u00010\u001b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\u001d\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001e\u0010\u001fJG\u0010 \u001a\u00020\u00042\b\u0010!\u001a\u0004\u0018\u00010\u00042\b\u0010\"\u001a\u0004\u0018\u00010\u001b2\b\u0010#\u001a\u0004\u0018\u00010$2\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u001d\u001a\u00020\u000fø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b&\u0010'JQ\u0010(\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u00132\b\u0010#\u001a\u0004\u0018\u00010$2\b\u0010)\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u001d\u001a\u00020\u000f2\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b+\u0010,J&\u0010-\u001a\u00020.2\u0006\u0010\u0012\u001a\u00020\u00132\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u00100\u001a\u0004\u0018\u00010\u0004\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u00061"}, d2 = {"Lcom/discord/icons/IconUrlUtils;", "", "()V", "getApplicationIcon", "", "applicationId", "Lcom/discord/primitives/ApplicationId;", "imageId", "size", "", "getApplicationIcon-weIltyw", "getCustomEmojiUrl", "emojiId", "", "animate", "", "(JZLjava/lang/Integer;)Ljava/lang/String;", "getForChannel", "context", "Landroid/content/Context;", "id", "Lcom/discord/primitives/ChannelId;", "icon", "isGroupDM", "getForChannel-JYSGpIY", "(Landroid/content/Context;Lcom/discord/primitives/ChannelId;Ljava/lang/String;ZLjava/lang/Integer;)Ljava/lang/String;", "getForGuild", "Lcom/discord/primitives/GuildId;", "defaultIcon", "animated", "getForGuild-14CJxO4", "(Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;)Ljava/lang/String;", "getForGuildMember", "guildMemberAvatar", "guildId", "userId", "Lcom/discord/primitives/UserId;", "sizePx", "getForGuildMember-2tNb6hE", "(Ljava/lang/String;Lcom/discord/primitives/GuildId;Lcom/discord/primitives/UserId;Ljava/lang/Integer;Z)Ljava/lang/String;", "getForUser", "userAvatar", "discriminator", "getForUser-_fRzTXg", "(Landroid/content/Context;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/Integer;)Ljava/lang/String;", "init", "", "cdnHost", "apiHost", "icons_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 public final class IconUrlUtils {
     public static final IconUrlUtils INSTANCE = new IconUrlUtils();
 
@@ -107,10 +107,10 @@ public final class IconUrlUtils {
         }
         if (!z11) {
             try {
-                s.a aVar = s.f21863l;
+                s.a aVar = s.f21864l;
                 obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str + "." + MediaExtensionKt.getMediaExtension$default(false, null, 2, null), num, null, 4, null));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21863l;
+                s.a aVar2 = s.f21864l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -153,10 +153,10 @@ public final class IconUrlUtils {
         if (!z11 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                s.a aVar = s.f21863l;
+                s.a aVar = s.f21864l;
                 obj = s.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str + "." + MediaExtensionKt.getMediaExtension(z10, str));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21863l;
+                s.a aVar2 = s.f21864l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -257,11 +257,11 @@ public final class IconUrlUtils {
                 return str;
             } else if (str != null) {
                 try {
-                    s.a aVar = s.f21863l;
+                    s.a aVar = s.f21864l;
                     String mediaExtension = MediaExtensionKt.getMediaExtension(z10, str);
                     obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str + "." + mediaExtension, num2, null, 4, null));
                 } catch (Throwable th2) {
-                    s.a aVar2 = s.f21863l;
+                    s.a aVar2 = s.f21864l;
                     obj = s.b(t.a(th2));
                 }
                 if (s.e(obj) != null) {

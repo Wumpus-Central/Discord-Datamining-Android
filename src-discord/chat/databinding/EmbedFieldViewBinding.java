@@ -7,7 +7,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class EmbedFieldViewBinding {
     public final SimpleDraweeSpanTextView name;
     private final View rootView;

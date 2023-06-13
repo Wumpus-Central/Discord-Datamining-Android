@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Dodaj do słownika",
   "LANGUAGES": "Języki",
   "AUTO_SUGGEST_STICKERS": "Propozycje naklejek",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Pozwala na pojawianie się propozycji naklejek podczas wpisywania wiadomości i automatycznego uzupełniania.",
   "NUF_AGE_GATE_BODY": "Cieszymy się, że jesteś z nami! Zanim rozpoczniemy, wprowadź swoją datę urodzenia. [Dlaczego muszę podać datę urodzenia?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Twój serwer jest gotowy!",
   "NUF_COMPLETE_SUBTITLE": "Witaj! Czuj się tu jak u siebie",

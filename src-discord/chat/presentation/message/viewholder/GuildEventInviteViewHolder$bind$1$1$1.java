@@ -10,7 +10,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public GuildEventInviteViewHolder$bind$1$1$1(Object obj) {
@@ -20,7 +20,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m323invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

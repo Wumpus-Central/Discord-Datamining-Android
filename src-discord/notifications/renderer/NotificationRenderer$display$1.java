@@ -73,7 +73,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -84,7 +84,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             if (i10 == 0) {
                 t.b(obj);
                 this.label = 1;
-                obj = NotificationRenderer$display$1.invokeSuspend$fetchImage(this.$context, this.$postProcessor, this.$iconUrl.f22131k, this);
+                obj = NotificationRenderer$display$1.invokeSuspend$fetchImage(this.$context, this.$postProcessor, this.$iconUrl.f22132k, this);
                 if (obj == d10) {
                     return d10;
                 }
@@ -122,7 +122,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -164,7 +164,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Object invokeSuspend$fetchImage(Context context, Ref$ObjectRef<PostProcessor> ref$ObjectRef, String str, Continuation<? super Bitmap> continuation) {
-        return FrescoFetchDecodedImageKt.fetchDecodedImage(context, str, ref$ObjectRef.f22131k, true, continuation);
+        return FrescoFetchDecodedImageKt.fetchDecodedImage(context, str, ref$ObjectRef.f22132k, true, continuation);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -175,7 +175,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -196,17 +196,17 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             t.b(obj);
             CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
             Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-            ref$ObjectRef.f22131k = PostProcessor.Circle.INSTANCE;
+            ref$ObjectRef.f22132k = PostProcessor.Circle.INSTANCE;
             Ref$ObjectRef ref$ObjectRef2 = new Ref$ObjectRef();
-            ref$ObjectRef2.f22131k = NotificationDataUtilsKt.getIconUrl(this.$notification, this.$context);
+            ref$ObjectRef2.f22132k = NotificationDataUtilsKt.getIconUrl(this.$notification, this.$context);
             if (this.$notification.getImageAttachmentUrl() != null) {
                 String imageAttachmentUrl = this.$notification.getImageAttachmentUrl();
                 T t10 = imageAttachmentUrl;
                 if (imageAttachmentUrl == null) {
                     t10 = "";
                 }
-                ref$ObjectRef2.f22131k = t10;
-                ref$ObjectRef.f22131k = null;
+                ref$ObjectRef2.f22132k = t10;
+                ref$ObjectRef.f22132k = null;
             }
             b10 = l.b(coroutineScope, null, null, new AnonymousClass1(ref$ObjectRef2, this.$context, ref$ObjectRef, null), 3, null);
             b11 = l.b(coroutineScope, null, null, new AnonymousClass2(this.$notification, this.$context, ref$ObjectRef, null), 3, null);
@@ -266,6 +266,6 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
         q.f(builder, "context.getNotificationB…n(action) }\n            }");
         NotificationManagerUtilsKt.notify(NotificationManagerUtilsKt.getNotificationManagerCompat(this.$context), NotificationDataUtilsKt.getTag(this.$notification), builder);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 }

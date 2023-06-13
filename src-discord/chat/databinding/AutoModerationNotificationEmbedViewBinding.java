@@ -10,7 +10,7 @@ import com.discord.chat.R;
 import com.discord.core.DCDButton;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class AutoModerationNotificationEmbedViewBinding {
     public final LinearLayout actions;
     public final DCDButton actionsButton;

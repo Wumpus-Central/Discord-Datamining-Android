@@ -7,7 +7,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
-import co.discord.media_engine.a;
+import co.discord.media_engine.b;
 import com.discord.logging.Log;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.util.Locale;
@@ -140,7 +140,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((a.a(this.f7598id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + a.a(this.dateAdded);
+            return (((((((b.a(this.f7598id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
         }
 
         public String toString() {

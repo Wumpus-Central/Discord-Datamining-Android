@@ -7,7 +7,7 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.Collections;
 import java.util.List;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public class ChannelSpinePackage implements ReactPackage {
     @Override // com.facebook.react.ReactPackage
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {

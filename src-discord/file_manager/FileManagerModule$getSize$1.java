@@ -19,7 +19,7 @@ import ug.c;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_manager.FileManagerModule$getSize$1", f = "FileManagerModule.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 final class FileManagerModule$getSize$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Promise $promise;
     final /* synthetic */ String $uri;
@@ -44,7 +44,7 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((FileManagerModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -61,7 +61,7 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
             String str = this.$uri;
             Promise promise = this.$promise;
             try {
-                s.a aVar = s.f21863l;
+                s.a aVar = s.f21864l;
                 reactApplicationContext = fileManagerModule.getReactApplicationContext();
                 ParcelFileDescriptor openFileDescriptor = reactApplicationContext.getContentResolver().openFileDescriptor(Uri.parse(str), "r");
                 if (openFileDescriptor != null) {
@@ -76,18 +76,18 @@ final class FileManagerModule$getSize$1 extends k implements Function2<Coroutine
                     z10 = false;
                 }
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21863l;
+                s.a aVar2 = s.f21864l;
                 obj2 = s.b(t.a(th2));
             }
             if (z10) {
                 promise.resolve(b.b(j10));
-                obj2 = s.b(Unit.f22104a);
+                obj2 = s.b(Unit.f22105a);
                 Promise promise2 = this.$promise;
                 Throwable e10 = s.e(obj2);
                 if (e10 != null) {
                     promise2.reject(e10);
                 }
-                return Unit.f22104a;
+                return Unit.f22105a;
             }
             throw new IllegalArgumentException("Failed requirement.".toString());
         } else {

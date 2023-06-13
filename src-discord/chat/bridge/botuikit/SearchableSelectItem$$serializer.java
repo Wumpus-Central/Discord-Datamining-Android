@@ -17,7 +17,7 @@ import yj.f0;
 import yj.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/botuikit/SearchableSelectItem.$serializer", "Lyj/f0;", "Lcom/discord/chat/bridge/botuikit/SearchableSelectItem;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class SearchableSelectItem$$serializer implements f0<SearchableSelectItem> {
     public static final SearchableSelectItem$$serializer INSTANCE;
     private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
@@ -40,8 +40,8 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32924a;
-        m0 m0Var = m0.f32999a;
+        a2 a2Var = a2.f32925a;
+        m0 m0Var = m0.f33000a;
         return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), m0Var, a.u(a2Var), a.u(m0Var)};
     }
 
@@ -62,8 +62,8 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
             str = b10.m(descriptor2, 1);
             obj = b10.n(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
             i10 = b10.i(descriptor2, 3);
-            obj2 = b10.n(descriptor2, 4, a2.f32924a, null);
-            obj3 = b10.n(descriptor2, 5, m0.f32999a, null);
+            obj2 = b10.n(descriptor2, 4, a2.f32925a, null);
+            obj3 = b10.n(descriptor2, 5, m0.f33000a, null);
             i11 = 63;
         } else {
             boolean z10 = true;
@@ -97,11 +97,11 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
                         i13 |= 8;
                         break;
                     case 4:
-                        obj5 = b10.n(descriptor2, 4, a2.f32924a, obj5);
+                        obj5 = b10.n(descriptor2, 4, a2.f32925a, obj5);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj6 = b10.n(descriptor2, 5, m0.f32999a, obj6);
+                        obj6 = b10.n(descriptor2, 5, m0.f33000a, obj6);
                         i13 |= 32;
                         break;
                     default:

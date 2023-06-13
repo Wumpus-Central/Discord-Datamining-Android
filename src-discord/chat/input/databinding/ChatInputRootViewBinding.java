@@ -7,7 +7,7 @@ import com.discord.chat.input.R;
 import com.discord.chat.input.views.DCDChatInput;
 import x1.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class ChatInputRootViewBinding {
     public final DCDChatInput chatInputEditText;
     private final View rootView;

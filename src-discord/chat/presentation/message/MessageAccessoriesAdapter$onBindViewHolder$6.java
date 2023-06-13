@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$6 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$6(Object obj) {
@@ -21,7 +21,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$6 extend
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m196invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

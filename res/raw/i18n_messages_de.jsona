@@ -8503,7 +8503,6 @@
   "ADD_TO_DICTIONARY": "Zum Wörterbuch hinzufügen",
   "LANGUAGES": "Sprachen",
   "AUTO_SUGGEST_STICKERS": "Stickervorschläge",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Erlaubt, dass Sticker vorgeschlagen und automatisch vervollständigt werden, wenn eine Nachricht getippt.",
   "NUF_AGE_GATE_BODY": "Wie schön, dass du da bist! Bevor wir anfangen, gib bitte dein Geburtsdatum ein. [Warum muss ich mein Geburtsdatum angeben?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Dein Server ist bereit!",
   "NUF_COMPLETE_SUBTITLE": "Willkommen! Du gehörst hierher.",

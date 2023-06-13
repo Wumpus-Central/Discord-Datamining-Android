@@ -18,7 +18,7 @@ public /* synthetic */ class DiscordAudioManager$bluetoothBroadcastReceiver$4 ex
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(BluetoothDevice bluetoothDevice) {
         invoke2(bluetoothDevice);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Lisää sanastoon",
   "LANGUAGES": "Kielet",
   "AUTO_SUGGEST_STICKERS": "Tarraehdotukset",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Salli tarraehdotusten näyttäminen, kun kirjoitat viestejä ja käytät automaattista täydennystä.",
   "NUF_AGE_GATE_BODY": "Hienoa, että olet täällä! Ennen kuin aloitamme, ole hyvä ja anna syntymäaikasi. [Miksi minun täytyy ilmoittaa syntymäaikani?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Palvelimesi on valmis!",
   "NUF_COMPLETE_SUBTITLE": "Tervetuloa! Kuulut tänne",

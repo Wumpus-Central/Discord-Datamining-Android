@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Toevoegen aan bibliotheek",
   "LANGUAGES": "Talen",
   "AUTO_SUGGEST_STICKERS": "Stickersuggesties",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Geeft stickersuggesties weer tijdens het typen van berichten en automatisch invullen.",
   "NUF_AGE_GATE_BODY": "Wat leuk dat je er bent! Eerst moet je je geboortedag invoeren. [Waarom moet ik mijn geboortedag invoeren?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Je server is klaar!",
   "NUF_COMPLETE_SUBTITLE": "Welkom! Je hoort hier thuis",

@@ -29,7 +29,7 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33040a};
+        return new KSerializer[]{w0.f33041a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

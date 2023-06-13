@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import r1.b;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
     static final int ACTION_MODE_DRAG_MASK = 16711680;
     private static final int ACTION_MODE_IDLE_MASK = 255;
@@ -205,7 +205,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     };
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public class ItemTouchHelperGestureListener extends GestureDetector.SimpleOnGestureListener {
         private boolean mShouldReactToLongPress = true;
 
@@ -249,7 +249,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes8.dex */
     public static class RecoverAnimation implements Animator.AnimatorListener {
         final int mActionState;
         final int mAnimationType;
@@ -622,8 +622,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mRecyclerView = recyclerView;
             if (recyclerView != null) {
                 Resources resources = recyclerView.getResources();
-                this.mSwipeEscapeVelocity = resources.getDimension(b.f28113f);
-                this.mMaxSwipeVelocity = resources.getDimension(b.f28112e);
+                this.mSwipeEscapeVelocity = resources.getDimension(b.f28114f);
+                this.mMaxSwipeVelocity = resources.getDimension(b.f28113e);
                 setupCallbacks();
             }
         }

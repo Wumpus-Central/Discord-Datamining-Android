@@ -3,7 +3,7 @@ package com.discord.image.color_quantizer;
 import android.graphics.Color;
 import java.util.Arrays;
 
-/* loaded from: classes4.dex */
+/* loaded from: classes7.dex */
 public final class Swatch {
     final int mBlue;
     final int mGreen;

@@ -8502,7 +8502,6 @@
   "ADD_TO_DICTIONARY": "Føj til biblioteket",
   "LANGUAGES": "Sprog",
   "AUTO_SUGGEST_STICKERS": "Sticker-forslag",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Tillad at sticker-forslag fremkommer, når der skrives beskeder og autofuldføres.",
   "NUF_AGE_GATE_BODY": "Vi er så glade for, at du er her! Før vi går i gang, bedes du venligst indtaste din fødselsdag. [Hvorfor skal jeg angive min fødselsdag?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Din server er klar!",
   "NUF_COMPLETE_SUBTITLE": "Velkommen! Du hører til her",

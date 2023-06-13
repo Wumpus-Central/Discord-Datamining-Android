@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "Adaugă în dicționar",
   "LANGUAGES": "Limbi",
   "AUTO_SUGGEST_STICKERS": "Sugestii de stickere",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "Permite afișarea sugestiilor de stickere când tastezi mesaje și la autocompletare.",
   "NUF_AGE_GATE_BODY": "Suntem încântați că ești aici! Înainte de a începe, introdu-ți data nașterii. [De ce trebuie să-mi indic data nașterii?]({helpURL})",
   "NUF_COMPLETE_TITLE": "Serverul tău este gata!",
   "NUF_COMPLETE_SUBTITLE": "Bine ai venit! Acesta este locul în care aparții cu adevărat",

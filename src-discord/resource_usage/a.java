@@ -1,5 +1,5 @@
 package com.discord.resource_usage;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes5.dex */
 public final /* synthetic */ class a {
 }

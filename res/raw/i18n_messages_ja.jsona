@@ -8504,7 +8504,6 @@
   "ADD_TO_DICTIONARY": "辞書に追加",
   "LANGUAGES": "言語",
   "AUTO_SUGGEST_STICKERS": "スタンプ候補",
-  "AUTO_SUGGEST_STICKERS_DESCRIPTION": "メッセージを入力中にスタンプ候補が表示され、オートコンプリートが可能になります。",
   "NUF_AGE_GATE_BODY": "ようこそ！ 始める前にあなたの誕生日を入力してください。[誕生日入力をお願いしている理由はこちら]({helpURL})",
   "NUF_COMPLETE_TITLE": "サーバーの準備が整いました！",
   "NUF_COMPLETE_SUBTITLE": "ようこそ！　ここはあなたの居場所です",

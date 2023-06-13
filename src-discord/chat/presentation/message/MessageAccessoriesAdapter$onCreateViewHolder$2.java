@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implements Function2<Sticker, MessageId, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onCreateViewHolder$2(Object obj) {
@@ -21,7 +21,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 exte
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker, MessageId messageId) {
         m197invokeAyv7vGE(sticker, messageId.m580unboximpl());
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-Ayv7vGE  reason: not valid java name */

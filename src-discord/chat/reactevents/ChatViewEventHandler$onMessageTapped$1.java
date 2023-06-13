@@ -11,7 +11,7 @@ import kotlin.jvm.internal.s;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"<anonymous>", "", "messageId", "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "invoke-pfaIj0E", "(Ljava/lang/String;J)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes8.dex */
 public final class ChatViewEventHandler$onMessageTapped$1 extends s implements Function2<MessageId, ChannelId, Unit> {
     final /* synthetic */ ChatViewEventHandler this$0;
 
@@ -25,7 +25,7 @@ public final class ChatViewEventHandler$onMessageTapped$1 extends s implements F
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, ChannelId channelId) {
         m331invokepfaIj0E(messageId.m580unboximpl(), channelId.m555unboximpl());
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 
     /* renamed from: invoke-pfaIj0E  reason: not valid java name */

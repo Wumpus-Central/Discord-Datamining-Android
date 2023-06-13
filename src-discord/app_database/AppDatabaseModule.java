@@ -60,7 +60,7 @@ public final class AppDatabaseModule extends ReactContextBaseJavaModule {
             q.g(userId, "userId");
             try {
                 String json = DiscordMobileApi.getGuildVersions(databaseName(userId));
-                Json.a aVar = Json.f22605d;
+                Json.a aVar = Json.f22606d;
                 q.f(json, "json");
                 aVar.a();
                 return (GuildVersion[]) aVar.b(new v1(f0.b(GuildVersion.class), GuildVersion$$serializer.INSTANCE), json);

@@ -18,7 +18,7 @@ import qg.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.react_asset_fetcher.ReactAssetUtilsKt$setReactIcon$1", f = "ReactAssetUtils.kt", l = {57}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes5.dex */
 public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ String $assetUrl;
     final /* synthetic */ MaterialButton $this_setReactIcon;
@@ -39,7 +39,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((ReactAssetUtilsKt$setReactIcon$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22105a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -69,6 +69,6 @@ public final class ReactAssetUtilsKt$setReactIcon$1 extends k implements Functio
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f22104a;
+        return Unit.f22105a;
     }
 }
