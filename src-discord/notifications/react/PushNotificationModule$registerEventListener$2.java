@@ -1,7 +1,8 @@
 package com.discord.notifications.react;
 
-import com.discord.react.utilities.NativeMapExtensionsKt;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.discord.notifications.react.events.NotificationEvent;
+import com.discord.reactevents.ReactEvents;
+import com.facebook.react.bridge.ReactApplicationContext;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -29,9 +30,11 @@ final class PushNotificationModule$registerEventListener$2 extends s implements 
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Map<String, String> notification) {
-        DeviceEventManagerModule.RCTDeviceEventEmitter eventEmitter;
+        ReactEvents reactEvents;
+        ReactApplicationContext reactApplicationContext;
         q.g(notification, "notification");
-        eventEmitter = this.this$0.getEventEmitter();
-        eventEmitter.emit("notification", NativeMapExtensionsKt.toNativeMap(notification));
+        reactEvents = this.this$0.reactEvents;
+        reactApplicationContext = this.this$0.reactContext;
+        reactEvents.emitModuleEvent(reactApplicationContext, new NotificationEvent(notification));
     }
 }

@@ -180,6 +180,14 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
                 iArr[MessageType.STAGE_RAISE_HAND.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
+            try {
+                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_ENABLED.ordinal()] = 29;
+            } catch (NoSuchFieldError unused29) {
+            }
+            try {
+                iArr[MessageType.GUILD_INCIDENT_ALERT_MODE_DISABLED.ordinal()] = 30;
+            } catch (NoSuchFieldError unused30) {
+            }
             $EnumSwitchMapping$0 = iArr;
         }
     }
@@ -306,6 +314,10 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
                 return x.a(ReactAsset.MoveToSpeaker, Integer.valueOf(this.normalIconColor));
             case 28:
                 return x.a(ReactAsset.RaisedHand, Integer.valueOf(this.normalIconColor));
+            case 29:
+                return x.a(ReactAsset.LockClosed, Integer.valueOf(this.normalIconColor));
+            case 30:
+                return x.a(ReactAsset.LockOpen, Integer.valueOf(this.normalIconColor));
             default:
                 throw new IllegalArgumentException("Unhandled message type: " + messageType);
         }

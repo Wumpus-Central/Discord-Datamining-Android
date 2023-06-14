@@ -1,7 +1,8 @@
 package com.discord.bundle_updater;
 
-import com.facebook.react.bridge.WritableNativeMap;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.discord.bundle_updater.react.events.BundleDownloadedEvent;
+import com.discord.reactevents.ReactEvents;
+import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -26,10 +27,10 @@ final class BundleUpdaterManager$addListener$1 extends s implements Function1<Bo
     }
 
     public final void invoke(boolean z10) {
-        DeviceEventManagerModule.RCTDeviceEventEmitter eventEmitter;
-        WritableNativeMap nativeMap;
-        eventEmitter = this.this$0.getEventEmitter();
-        nativeMap = this.this$0.getNativeMap(z10);
-        eventEmitter.emit("BundleDownloaded", nativeMap);
+        ReactEvents reactEvents;
+        ReactApplicationContext reactApplicationContext;
+        reactEvents = this.this$0.reactEvents;
+        reactApplicationContext = this.this$0.reactContext;
+        reactEvents.emitModuleEvent(reactApplicationContext, new BundleDownloadedEvent(z10));
     }
 }

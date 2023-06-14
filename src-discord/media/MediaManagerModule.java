@@ -1,7 +1,7 @@
 package com.discord.media;
 
 import android.net.Uri;
-import com.discord.media.reactevents.CompressionProgressEvent;
+import com.discord.media.react.events.CompressionProgressEvent;
 import com.discord.media.utils.MediaResolver;
 import com.discord.media.utils.VideoCompressionQuality;
 import com.discord.react.utilities.NativeMapExtensionsKt;

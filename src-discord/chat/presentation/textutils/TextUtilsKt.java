@@ -83,7 +83,6 @@ public final class TextUtilsKt {
         String str;
         List d10;
         int i10;
-        Object obj;
         List d11;
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         int listNestedLevel = renderContext.getListNestedLevel();
@@ -97,30 +96,20 @@ public final class TextUtilsKt {
             } else {
                 i10 = 1;
             }
-            int listNestedLevel2 = renderContext.getListNestedLevel() % 3;
-            if (listNestedLevel2 == 0) {
-                obj = Integer.valueOf(i10);
-            } else if (listNestedLevel2 == 1) {
-                obj = NumericUtils.INSTANCE.toRomanNumeral(i10);
-            } else if (listNestedLevel2 != 2) {
-                obj = "not possible";
-            } else {
-                obj = NumericUtils.INSTANCE.toLetter(i10);
-            }
             if (renderContext.getSingleLine()) {
-                d11 = i.d(new TextContentNode(obj + ".  "));
+                d11 = i.d(new TextContentNode(i10 + ".  "));
                 appendToExistingBuilder(d11, renderContext, draweeSpanStringBuilder);
                 appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
                 return;
             }
-            Object[] objArr = {new LeadingMarginSpan.Standard(SizeUtilsKt.getDpToPx(8)), standard, new OrderedListBulletSpan(dpToPx, obj + "."), verticalPaddingSpan};
+            Object[] objArr = {new LeadingMarginSpan.Standard(SizeUtilsKt.getDpToPx(8)), standard, new OrderedListBulletSpan(dpToPx, i10 + "."), verticalPaddingSpan};
             int length = draweeSpanStringBuilder.length();
             appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
             SpannableStringBuilderExtensionsKt.ensureNewline(draweeSpanStringBuilder, new AbsoluteSizeSpan(dpToPx2));
             for (int i11 = 0; i11 < 4; i11++) {
-                Object obj2 = objArr[i11];
-                if (obj2 != null) {
-                    draweeSpanStringBuilder.setSpan(obj2, length, draweeSpanStringBuilder.length(), 33);
+                Object obj = objArr[i11];
+                if (obj != null) {
+                    draweeSpanStringBuilder.setSpan(obj, length, draweeSpanStringBuilder.length(), 33);
                 }
             }
         } else if (renderContext.getSingleLine()) {
@@ -145,9 +134,9 @@ public final class TextUtilsKt {
             appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
             SpannableStringBuilderExtensionsKt.ensureNewline(draweeSpanStringBuilder, new AbsoluteSizeSpan(dpToPx2));
             for (int i12 = 0; i12 < 3; i12++) {
-                Object obj3 = objArr2[i12];
-                if (obj3 != null) {
-                    draweeSpanStringBuilder.setSpan(obj3, length2, draweeSpanStringBuilder.length(), 33);
+                Object obj2 = objArr2[i12];
+                if (obj2 != null) {
+                    draweeSpanStringBuilder.setSpan(obj2, length2, draweeSpanStringBuilder.length(), 33);
                 }
             }
         }
