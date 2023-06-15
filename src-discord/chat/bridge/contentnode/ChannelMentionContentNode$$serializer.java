@@ -41,7 +41,7 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32925a;
+        a2 a2Var = a2.f32924a;
         ContentNodeSerializer contentNodeSerializer = ContentNodeSerializer.INSTANCE;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(new f(contentNodeSerializer)), a.u(new f(contentNodeSerializer))};
     }
@@ -62,7 +62,7 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
         String str2 = null;
         if (b10.p()) {
             str = b10.m(descriptor2, 0);
-            a2 a2Var = a2.f32925a;
+            a2 a2Var = a2.f32924a;
             obj = b10.n(descriptor2, 1, a2Var, null);
             obj2 = b10.n(descriptor2, 2, a2Var, null);
             obj4 = b10.n(descriptor2, 3, a2Var, null);
@@ -91,17 +91,17 @@ public final class ChannelMentionContentNode$$serializer implements f0<ChannelMe
                         z10 = z10;
                         continue;
                     case 1:
-                        obj6 = b10.n(descriptor2, 1, a2.f32925a, obj6);
+                        obj6 = b10.n(descriptor2, 1, a2.f32924a, obj6);
                         i11 |= 2;
                         z10 = true;
                         break;
                     case 2:
-                        obj7 = b10.n(descriptor2, 2, a2.f32925a, obj7);
+                        obj7 = b10.n(descriptor2, 2, a2.f32924a, obj7);
                         i11 |= 4;
                         z10 = true;
                         break;
                     case 3:
-                        obj8 = b10.n(descriptor2, 3, a2.f32925a, obj8);
+                        obj8 = b10.n(descriptor2, 3, a2.f32924a, obj8);
                         i11 |= 8;
                         z10 = true;
                         break;

@@ -37,7 +37,7 @@ public final class LoadingRow$$serializer implements f0<LoadingRow> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f33000a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f32967a};
+        return new KSerializer[]{m0.f32999a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f32966a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

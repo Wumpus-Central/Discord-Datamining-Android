@@ -32,7 +32,7 @@ public final class OnEndBlurEvent$$serializer implements f0<OnEndBlurEvent> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32925a};
+        return new KSerializer[]{a2.f32924a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

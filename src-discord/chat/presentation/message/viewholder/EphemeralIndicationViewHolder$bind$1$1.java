@@ -21,7 +21,7 @@ public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n im
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m322invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

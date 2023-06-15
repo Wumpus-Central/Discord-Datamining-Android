@@ -25,7 +25,7 @@ public final class NearbyHelperModule$manager$3 extends s implements Function1<S
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

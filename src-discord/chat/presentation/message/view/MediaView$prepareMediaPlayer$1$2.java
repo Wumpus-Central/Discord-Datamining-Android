@@ -21,7 +21,7 @@ public final class MediaView$prepareMediaPlayer$1$2 extends s implements Functio
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     public final void invoke(float f10) {

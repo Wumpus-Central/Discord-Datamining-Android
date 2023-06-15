@@ -114,7 +114,7 @@ public final class TapLinkData implements ReactEvent {
                                 if (guildId != null) {
                                     NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m566toStringimpl(guildId.m568unboximpl()));
                                 }
-                                Unit unit = Unit.f22105a;
+                                Unit unit = Unit.f22104a;
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                                 break;
                             }

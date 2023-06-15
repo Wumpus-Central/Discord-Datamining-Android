@@ -38,8 +38,8 @@ public final class SpeedTestPingCallbackEvent$$serializer implements f0<SpeedTes
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33000a;
-        return new KSerializer[]{m0Var, m0Var, a2.f32925a, m0Var, m0Var};
+        m0 m0Var = m0.f32999a;
+        return new KSerializer[]{m0Var, m0Var, a2.f32924a, m0Var, m0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

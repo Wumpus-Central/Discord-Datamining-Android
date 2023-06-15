@@ -185,7 +185,7 @@ public final class MessageRow extends Row {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 2, h.f32967a, self.jumped);
+            output.u(serialDesc, 2, h.f32966a, self.jumped);
         }
         if (!output.A(serialDesc, 3) && self.highlightJumpedOnceOnly == null) {
             z11 = false;
@@ -193,7 +193,7 @@ public final class MessageRow extends Row {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 3, h.f32967a, self.highlightJumpedOnceOnly);
+            output.u(serialDesc, 3, h.f32966a, self.highlightJumpedOnceOnly);
         }
         output.q(serialDesc, 4, MessageSerializer.INSTANCE, self.message);
         if (!output.A(serialDesc, 5) && self.scrollTo == null) {
@@ -202,7 +202,7 @@ public final class MessageRow extends Row {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 5, h.f32967a, self.scrollTo);
+            output.u(serialDesc, 5, h.f32966a, self.scrollTo);
         }
         if (!output.A(serialDesc, 6) && self.animated == null) {
             z13 = false;
@@ -210,7 +210,7 @@ public final class MessageRow extends Row {
             z13 = true;
         }
         if (z13) {
-            output.u(serialDesc, 6, h.f32967a, self.animated);
+            output.u(serialDesc, 6, h.f32966a, self.animated);
         }
         if (!output.A(serialDesc, 7) && self.canAddNewReactions == null) {
             z14 = false;
@@ -218,7 +218,7 @@ public final class MessageRow extends Row {
             z14 = true;
         }
         if (z14) {
-            output.u(serialDesc, 7, h.f32967a, self.canAddNewReactions);
+            output.u(serialDesc, 7, h.f32966a, self.canAddNewReactions);
         }
         if (!output.A(serialDesc, 8) && self.addReactionLabel == null) {
             z15 = false;
@@ -226,7 +226,7 @@ public final class MessageRow extends Row {
             z15 = true;
         }
         if (z15) {
-            output.u(serialDesc, 8, a2.f32925a, self.addReactionLabel);
+            output.u(serialDesc, 8, a2.f32924a, self.addReactionLabel);
         }
         if (!output.A(serialDesc, 9) && self.addNewReactionAccessibilityLabel == null) {
             z16 = false;
@@ -234,7 +234,7 @@ public final class MessageRow extends Row {
             z16 = true;
         }
         if (z16) {
-            output.u(serialDesc, 9, a2.f32925a, self.addNewReactionAccessibilityLabel);
+            output.u(serialDesc, 9, a2.f32924a, self.addNewReactionAccessibilityLabel);
         }
         if (!output.A(serialDesc, 10) && self.addNewBurstReactionAccessibilityLabel == null) {
             z17 = false;
@@ -242,7 +242,7 @@ public final class MessageRow extends Row {
             z17 = true;
         }
         if (z17) {
-            output.u(serialDesc, 10, a2.f32925a, self.addNewBurstReactionAccessibilityLabel);
+            output.u(serialDesc, 10, a2.f32924a, self.addNewBurstReactionAccessibilityLabel);
         }
         if (!output.A(serialDesc, 11) && self.reactionsTheme == null) {
             z18 = false;
@@ -282,7 +282,7 @@ public final class MessageRow extends Row {
             z22 = true;
         }
         if (z22) {
-            output.u(serialDesc, 15, m0.f33000a, self.reactTag);
+            output.u(serialDesc, 15, m0.f32999a, self.reactTag);
         }
         if (!output.A(serialDesc, 16) && self.truncation == null) {
             z23 = false;

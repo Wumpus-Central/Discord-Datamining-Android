@@ -35,7 +35,7 @@ public final class SurveyIndication$$serializer implements f0<SurveyIndication> 
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{StructurableTextSerializer.INSTANCE, a2.f32925a};
+        return new KSerializer[]{StructurableTextSerializer.INSTANCE, a2.f32924a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

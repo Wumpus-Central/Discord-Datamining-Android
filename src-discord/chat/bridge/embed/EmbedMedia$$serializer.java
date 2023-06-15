@@ -38,8 +38,8 @@ public final class EmbedMedia$$serializer implements f0<EmbedMedia> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32925a;
-        m0 m0Var = m0.f33000a;
+        a2 a2Var = a2.f32924a;
+        m0 m0Var = m0.f32999a;
         return new KSerializer[]{a2Var, a.u(a2Var), m0Var, m0Var, a2Var};
     }
 
@@ -56,7 +56,7 @@ public final class EmbedMedia$$serializer implements f0<EmbedMedia> {
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
             str2 = b10.m(descriptor2, 0);
-            obj = b10.n(descriptor2, 1, a2.f32925a, null);
+            obj = b10.n(descriptor2, 1, a2.f32924a, null);
             i11 = b10.i(descriptor2, 2);
             i10 = b10.i(descriptor2, 3);
             str = b10.m(descriptor2, 4);
@@ -77,7 +77,7 @@ public final class EmbedMedia$$serializer implements f0<EmbedMedia> {
                     str3 = b10.m(descriptor2, 0);
                     i14 |= 1;
                 } else if (o10 == 1) {
-                    obj2 = b10.n(descriptor2, 1, a2.f32925a, obj2);
+                    obj2 = b10.n(descriptor2, 1, a2.f32924a, obj2);
                     i14 |= 2;
                 } else if (o10 == 2) {
                     i15 = b10.i(descriptor2, 2);

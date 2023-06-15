@@ -33,7 +33,7 @@ public final class EmbedProvider$$serializer implements f0<EmbedProvider> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32925a};
+        return new KSerializer[]{a2.f32924a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

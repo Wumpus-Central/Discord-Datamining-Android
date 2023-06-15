@@ -27,7 +27,7 @@ final class EmbedView$setFields$onLinkClickedWithMessageId$1 extends s implement
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

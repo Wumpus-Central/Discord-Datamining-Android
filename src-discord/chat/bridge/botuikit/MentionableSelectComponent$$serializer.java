@@ -51,9 +51,9 @@ public final class MentionableSelectComponent$$serializer implements f0<Mentiona
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33000a;
-        a2 a2Var = a2.f32925a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f32967a, ActionComponentState.Serializer.INSTANCE};
+        m0 m0Var = m0.f32999a;
+        a2 a2Var = a2.f32924a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f32966a, ActionComponentState.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -81,10 +81,10 @@ public final class MentionableSelectComponent$$serializer implements f0<Mentiona
         if (b10.p()) {
             obj5 = b10.n(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
             i12 = b10.i(descriptor2, 1);
-            obj = b10.y(descriptor2, 2, new f(m0.f33000a), null);
+            obj = b10.y(descriptor2, 2, new f(m0.f32999a), null);
             str2 = b10.m(descriptor2, 3);
             str = b10.m(descriptor2, 4);
-            a2 a2Var = a2.f32925a;
+            a2 a2Var = a2.f32924a;
             obj2 = b10.n(descriptor2, 5, a2Var, null);
             obj3 = b10.n(descriptor2, 6, a2Var, null);
             i11 = b10.i(descriptor2, 7);
@@ -124,7 +124,7 @@ public final class MentionableSelectComponent$$serializer implements f0<Mentiona
                         i14 = 10;
                         i15 = 9;
                     case 2:
-                        obj = b10.y(descriptor2, 2, new f(m0.f33000a), obj);
+                        obj = b10.y(descriptor2, 2, new f(m0.f32999a), obj);
                         i17 |= 4;
                         i14 = 10;
                         i15 = 9;
@@ -139,11 +139,11 @@ public final class MentionableSelectComponent$$serializer implements f0<Mentiona
                         i14 = 10;
                     case 5:
                         c10 = 5;
-                        obj2 = b10.n(descriptor2, 5, a2.f32925a, obj2);
+                        obj2 = b10.n(descriptor2, 5, a2.f32924a, obj2);
                         i17 |= 32;
                         i14 = 10;
                     case 6:
-                        obj6 = b10.n(descriptor2, 6, a2.f32925a, obj6);
+                        obj6 = b10.n(descriptor2, 6, a2.f32924a, obj6);
                         i17 |= 64;
                     case 7:
                         i20 = b10.i(descriptor2, i16);

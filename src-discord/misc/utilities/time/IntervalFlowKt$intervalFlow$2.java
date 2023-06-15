@@ -33,7 +33,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
     }
 
     public final Object invoke(FlowCollector<? super Unit> flowCollector, Continuation<? super Unit> continuation) {
-        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f22105a);
+        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f22104a);
     }
 
     /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -92,7 +92,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
         L_0x003f:
             r8 = r7
         L_0x0040:
-            kotlin.Unit r4 = kotlin.Unit.f22105a
+            kotlin.Unit r4 = kotlin.Unit.f22104a
             r8.L$0 = r1
             r8.label = r3
             java.lang.Object r4 = r1.emit(r4, r8)

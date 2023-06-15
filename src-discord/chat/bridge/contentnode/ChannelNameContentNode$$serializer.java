@@ -40,7 +40,7 @@ public final class ChannelNameContentNode$$serializer implements f0<ChannelNameC
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32925a;
+        a2 a2Var = a2.f32924a;
         return new KSerializer[]{a.u(ChannelType.Serializer.INSTANCE), a2Var, a.u(a2Var), new f(ContentNodeSerializer.INSTANCE)};
     }
 
@@ -58,7 +58,7 @@ public final class ChannelNameContentNode$$serializer implements f0<ChannelNameC
         if (b10.p()) {
             obj3 = b10.n(descriptor2, 0, ChannelType.Serializer.INSTANCE, null);
             str = b10.m(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, a2.f32925a, null);
+            obj = b10.n(descriptor2, 2, a2.f32924a, null);
             obj2 = b10.y(descriptor2, 3, new f(ContentNodeSerializer.INSTANCE), null);
             i10 = 15;
         } else {
@@ -78,7 +78,7 @@ public final class ChannelNameContentNode$$serializer implements f0<ChannelNameC
                     str = b10.m(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f32925a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f32924a, obj5);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj6 = b10.y(descriptor2, 3, new f(ContentNodeSerializer.INSTANCE), obj6);

@@ -34,7 +34,7 @@ public final class MediaPlayerMuteStateChanged$$serializer implements f0<MediaPl
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{x.f33046a, h.f32967a};
+        return new KSerializer[]{x.f33045a, h.f32966a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

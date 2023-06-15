@@ -29,6 +29,6 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 }

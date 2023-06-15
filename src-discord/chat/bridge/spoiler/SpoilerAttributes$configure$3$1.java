@@ -22,7 +22,7 @@ final class SpoilerAttributes$configure$3$1 extends s implements Function1<Spoil
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SpoilerIdentifier spoilerIdentifier) {
         m122invokeV2PEE7g(spoilerIdentifier.m129unboximpl());
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke-V2PEE7g  reason: not valid java name */

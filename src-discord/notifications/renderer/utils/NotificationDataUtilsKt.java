@@ -76,7 +76,7 @@ public final class NotificationDataUtilsKt {
         }
         f.c(sVar, "id", UserId.m617toStringimpl(userId.m619unboximpl()));
         f.c(sVar, "username", userUsername);
-        f.c(sVar, "global_name", notificationData.getUserGlobalName());
+        f.c(sVar, "globalName", notificationData.getUserGlobalName());
         f.a(sVar, "incomplete", Boolean.TRUE);
         return sVar.a();
     }
@@ -105,7 +105,7 @@ public final class NotificationDataUtilsKt {
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f22105a;
+            Unit unit = Unit.f22104a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -397,7 +397,7 @@ public final class NotificationDataUtilsKt {
                     return new KvMessageEntry(i10, d10, notificationMessage, str2, channelId.m555unboximpl(), null);
                 }
             } else {
-                JsonElement g10 = Json.f22606d.g(str);
+                JsonElement g10 = Json.f22605d.g(str);
                 i11 = j.i();
                 JsonObject author2 = message.getAuthor();
                 q.d(author2);

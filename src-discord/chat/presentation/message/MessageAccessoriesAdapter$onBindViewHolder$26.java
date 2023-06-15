@@ -25,7 +25,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$26 extends s imple
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

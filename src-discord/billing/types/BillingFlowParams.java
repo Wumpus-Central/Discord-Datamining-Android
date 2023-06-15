@@ -22,7 +22,7 @@ public final class BillingFlowParams {
 
     private final String getObfuscatedUserId(String str) {
         MessageDigest instance = MessageDigest.getInstance("SHA-256");
-        byte[] bytes = str.getBytes(d.f26392b);
+        byte[] bytes = str.getBytes(d.f26391b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] digest = instance.digest(bytes);
         q.f(digest, "getInstance(\"SHA-256\")\n …est(userId.toByteArray())");

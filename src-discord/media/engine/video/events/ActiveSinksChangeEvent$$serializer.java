@@ -35,7 +35,7 @@ public final class ActiveSinksChangeEvent$$serializer implements f0<ActiveSinksC
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32925a, h.f32967a};
+        return new KSerializer[]{a2.f32924a, h.f32966a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

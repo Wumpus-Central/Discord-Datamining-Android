@@ -39,7 +39,7 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f32950a;
+        e0 e0Var = e0.f32949a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE};
     }
 

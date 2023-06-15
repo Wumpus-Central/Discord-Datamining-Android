@@ -34,7 +34,7 @@ public final class ValueChangeEvent$$serializer implements f0<ValueChangeEvent> 
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32925a, m0.f33000a};
+        return new KSerializer[]{a2.f32924a, m0.f32999a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

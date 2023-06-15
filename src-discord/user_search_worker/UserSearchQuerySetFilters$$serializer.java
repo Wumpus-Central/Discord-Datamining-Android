@@ -37,8 +37,8 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f32967a;
-        return new KSerializer[]{a.u(a2.f32925a), a.u(hVar), a.u(hVar)};
+        h hVar = h.f32966a;
+        return new KSerializer[]{a.u(a2.f32924a), a.u(hVar), a.u(hVar)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -52,8 +52,8 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
         c b10 = decoder.b(descriptor2);
         Object obj4 = null;
         if (b10.p()) {
-            obj3 = b10.n(descriptor2, 0, a2.f32925a, null);
-            h hVar = h.f32967a;
+            obj3 = b10.n(descriptor2, 0, a2.f32924a, null);
+            h hVar = h.f32966a;
             obj = b10.n(descriptor2, 1, hVar, null);
             obj2 = b10.n(descriptor2, 2, hVar, null);
             i10 = 7;
@@ -67,13 +67,13 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, a2.f32925a, obj4);
+                    obj4 = b10.n(descriptor2, 0, a2.f32924a, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj5 = b10.n(descriptor2, 1, h.f32967a, obj5);
+                    obj5 = b10.n(descriptor2, 1, h.f32966a, obj5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj6 = b10.n(descriptor2, 2, h.f32967a, obj6);
+                    obj6 = b10.n(descriptor2, 2, h.f32966a, obj6);
                     i11 |= 4;
                 } else {
                     throw new n(o10);

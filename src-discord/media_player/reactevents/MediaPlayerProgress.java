@@ -21,7 +21,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     private final long duration;
 
     /* renamed from: id  reason: collision with root package name */
-    private final double f7903id;
+    private final double f7902id;
     private final long time;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/media_player/reactevents/MediaPlayerProgress$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/media_player/reactevents/MediaPlayerProgress;", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -40,14 +40,14 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public MediaPlayerProgress(double d10, long j10, long j11) {
-        this.f7903id = d10;
+        this.f7902id = d10;
         this.time = j10;
         this.duration = j11;
     }
 
     public static /* synthetic */ MediaPlayerProgress copy$default(MediaPlayerProgress mediaPlayerProgress, double d10, long j10, long j11, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            d10 = mediaPlayerProgress.f7903id;
+            d10 = mediaPlayerProgress.f7902id;
         }
         if ((i10 & 2) != 0) {
             j10 = mediaPlayerProgress.time;
@@ -62,13 +62,13 @@ public final class MediaPlayerProgress implements ReactEvent {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.D(serialDesc, 0, self.f7903id);
+        output.D(serialDesc, 0, self.f7902id);
         output.E(serialDesc, 1, self.time);
         output.E(serialDesc, 2, self.duration);
     }
 
     public final double component1() {
-        return this.f7903id;
+        return this.f7902id;
     }
 
     public final long component2() {
@@ -91,7 +91,7 @@ public final class MediaPlayerProgress implements ReactEvent {
             return false;
         }
         MediaPlayerProgress mediaPlayerProgress = (MediaPlayerProgress) obj;
-        return Double.compare(this.f7903id, mediaPlayerProgress.f7903id) == 0 && this.time == mediaPlayerProgress.time && this.duration == mediaPlayerProgress.duration;
+        return Double.compare(this.f7902id, mediaPlayerProgress.f7902id) == 0 && this.time == mediaPlayerProgress.time && this.duration == mediaPlayerProgress.duration;
     }
 
     public final long getDuration() {
@@ -99,7 +99,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public final double getId() {
-        return this.f7903id;
+        return this.f7902id;
     }
 
     public final long getTime() {
@@ -107,7 +107,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((Double.doubleToLongBits(this.f7903id) * 31) + b.a(this.time)) * 31) + b.a(this.duration);
+        return (((Double.doubleToLongBits(this.f7902id) * 31) + b.a(this.time)) * 31) + b.a(this.duration);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -116,7 +116,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public String toString() {
-        double d10 = this.f7903id;
+        double d10 = this.f7902id;
         long j10 = this.time;
         long j11 = this.duration;
         return "MediaPlayerProgress(id=" + d10 + ", time=" + j10 + ", duration=" + j11 + ")";
@@ -126,7 +126,7 @@ public final class MediaPlayerProgress implements ReactEvent {
         if (7 != (i10 & 7)) {
             n1.b(i10, 7, MediaPlayerProgress$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7903id = d10;
+        this.f7902id = d10;
         this.time = j10;
         this.duration = j11;
     }

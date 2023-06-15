@@ -27,7 +27,7 @@ public final class AudioPlayerView$configureAudioWave$1 extends s implements Fun
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(AudioWaveView.ProgressEvent progressEvent) {
         invoke2(progressEvent);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

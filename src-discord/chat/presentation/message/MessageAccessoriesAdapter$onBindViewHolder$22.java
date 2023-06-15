@@ -27,7 +27,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$22 extends s imple
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(Integer num, MessageAccessory messageAccessory, MessagePartViewHolder messagePartViewHolder) {
         invoke(num.intValue(), messageAccessory, messagePartViewHolder);
-        return Unit.f22105a;
+        return Unit.f22104a;
     }
 
     public final void invoke(int i10, MessageAccessory attachment, MessagePartViewHolder attachmentViewHolder) {

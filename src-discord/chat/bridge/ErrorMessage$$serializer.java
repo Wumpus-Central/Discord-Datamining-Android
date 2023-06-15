@@ -35,7 +35,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f32925a};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f32924a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

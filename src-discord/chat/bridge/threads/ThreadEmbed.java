@@ -105,7 +105,7 @@ public final class ThreadEmbed {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 2, a2.f32925a, self.messagePreviewString);
+            output.u(serialDesc, 2, a2.f32924a, self.messagePreviewString);
         }
         if (!output.A(serialDesc, 3) && self.archived == null) {
             z11 = false;
@@ -113,7 +113,7 @@ public final class ThreadEmbed {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 3, h.f32967a, self.archived);
+            output.u(serialDesc, 3, h.f32966a, self.archived);
         }
         if (!output.A(serialDesc, 4) && self.archivedIconUrl == null) {
             z12 = false;
@@ -121,7 +121,7 @@ public final class ThreadEmbed {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 4, a2.f32925a, self.archivedIconUrl);
+            output.u(serialDesc, 4, a2.f32924a, self.archivedIconUrl);
         }
         if (output.A(serialDesc, 5) || self.referencedMessage != null) {
             z13 = true;

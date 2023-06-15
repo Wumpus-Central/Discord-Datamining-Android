@@ -35,8 +35,8 @@ public final class CodeBlockContentNode$$serializer implements f0<CodeBlockConte
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32925a;
-        return new KSerializer[]{a2Var, a2Var, h.f32967a};
+        a2 a2Var = a2.f32924a;
+        return new KSerializer[]{a2Var, a2Var, h.f32966a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
