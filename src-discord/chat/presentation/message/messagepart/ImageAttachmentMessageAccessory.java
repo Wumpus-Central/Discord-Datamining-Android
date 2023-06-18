@@ -39,8 +39,8 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m250component13Eiw7ao() {
-        return mo204getMessageId3Eiw7ao();
+    public final String m252component13Eiw7ao() {
+        return mo206getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -76,7 +76,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-IwdeaXA  reason: not valid java name */
-    public final ImageAttachmentMessageAccessory m251copyIwdeaXA(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, Float f10) {
+    public final ImageAttachmentMessageAccessory m253copyIwdeaXA(String messageId, int i10, Attachment attachment, int i11, int i12, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener, boolean z10, Float f10) {
         q.g(messageId, "messageId");
         q.g(attachment, "attachment");
         return new ImageAttachmentMessageAccessory(messageId, i10, attachment, i11, i12, spoilerAttributes, onLongClickListener, z10, f10, null);
@@ -90,7 +90,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) obj;
-        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo204getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.b(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.b(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.b(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), imageAttachmentMessageAccessory.mo206getMessageId3Eiw7ao()) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && q.b(this.attachment, imageAttachmentMessageAccessory.attachment) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && q.b(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, imageAttachmentMessageAccessory.onLongClick) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton && q.b(this.attachmentsOpacity, imageAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -111,7 +111,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo204getMessageId3Eiw7ao() {
+    public String mo206getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -132,7 +132,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
+        int i10 = ((((((((MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -154,7 +154,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
+        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         int i11 = this.constrainedWidth;

@@ -71,7 +71,7 @@ public final class ErrorMessage extends MessageBase {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         MessageBase.write$Self(self, output, serialDesc);
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.f7615id));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.f7615id));
         output.z(serialDesc, 1, self.stackTrace);
     }
 
@@ -99,7 +99,7 @@ public final class ErrorMessage extends MessageBase {
             return false;
         }
         ErrorMessage errorMessage = (ErrorMessage) obj;
-        return MessageId.m576equalsimpl0(this.f7615id, errorMessage.f7615id) && q.b(this.stackTrace, errorMessage.stackTrace);
+        return MessageId.m584equalsimpl0(this.f7615id, errorMessage.f7615id) && q.b(this.stackTrace, errorMessage.stackTrace);
     }
 
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
@@ -112,11 +112,11 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m577hashCodeimpl(this.f7615id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m585hashCodeimpl(this.f7615id) * 31) + this.stackTrace.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(this.f7615id);
+        String str = MessageId.m586toStringimpl(this.f7615id);
         String str2 = this.stackTrace;
         return "ErrorMessage(id=" + str + ", stackTrace=" + str2 + ")";
     }

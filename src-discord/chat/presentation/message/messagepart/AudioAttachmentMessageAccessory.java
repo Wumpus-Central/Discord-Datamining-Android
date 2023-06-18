@@ -30,9 +30,9 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-D2GGZos$default  reason: not valid java name */
-    public static /* synthetic */ AudioAttachmentMessageAccessory m208copyD2GGZos$default(AudioAttachmentMessageAccessory audioAttachmentMessageAccessory, String str, UserId userId, int i10, Attachment attachment, Float f10, int i11, Object obj) {
+    public static /* synthetic */ AudioAttachmentMessageAccessory m210copyD2GGZos$default(AudioAttachmentMessageAccessory audioAttachmentMessageAccessory, String str, UserId userId, int i10, Attachment attachment, Float f10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = audioAttachmentMessageAccessory.mo204getMessageId3Eiw7ao();
+            str = audioAttachmentMessageAccessory.mo206getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             userId = audioAttachmentMessageAccessory.authorId;
@@ -46,16 +46,16 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
         if ((i11 & 16) != 0) {
             f10 = audioAttachmentMessageAccessory.attachmentsOpacity;
         }
-        return audioAttachmentMessageAccessory.m211copyD2GGZos(str, userId, i10, attachment, f10);
+        return audioAttachmentMessageAccessory.m213copyD2GGZos(str, userId, i10, attachment, f10);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m209component13Eiw7ao() {
-        return mo204getMessageId3Eiw7ao();
+    public final String m211component13Eiw7ao() {
+        return mo206getMessageId3Eiw7ao();
     }
 
     /* renamed from: component2-wUX8bhU  reason: not valid java name */
-    public final UserId m210component2wUX8bhU() {
+    public final UserId m212component2wUX8bhU() {
         return this.authorId;
     }
 
@@ -72,7 +72,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-D2GGZos  reason: not valid java name */
-    public final AudioAttachmentMessageAccessory m211copyD2GGZos(String messageId, UserId userId, int i10, Attachment attachment, Float f10) {
+    public final AudioAttachmentMessageAccessory m213copyD2GGZos(String messageId, UserId userId, int i10, Attachment attachment, Float f10) {
         q.g(messageId, "messageId");
         q.g(attachment, "attachment");
         return new AudioAttachmentMessageAccessory(messageId, userId, i10, attachment, f10, null);
@@ -86,7 +86,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         AudioAttachmentMessageAccessory audioAttachmentMessageAccessory = (AudioAttachmentMessageAccessory) obj;
-        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.mo204getMessageId3Eiw7ao()) && q.b(this.authorId, audioAttachmentMessageAccessory.authorId) && this.index == audioAttachmentMessageAccessory.index && q.b(this.attachment, audioAttachmentMessageAccessory.attachment) && q.b(this.attachmentsOpacity, audioAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.mo206getMessageId3Eiw7ao()) && q.b(this.authorId, audioAttachmentMessageAccessory.authorId) && this.index == audioAttachmentMessageAccessory.index && q.b(this.attachment, audioAttachmentMessageAccessory.attachment) && q.b(this.attachmentsOpacity, audioAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -98,7 +98,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: getAuthorId-wUX8bhU  reason: not valid java name */
-    public final UserId m212getAuthorIdwUX8bhU() {
+    public final UserId m214getAuthorIdwUX8bhU() {
         return this.authorId;
     }
 
@@ -108,15 +108,15 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo204getMessageId3Eiw7ao() {
+    public String mo206getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int i10 = MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31;
+        int i10 = MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31;
         UserId userId = this.authorId;
         int i11 = 0;
-        int i12 = (((((i10 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31) + this.index) * 31) + this.attachment.hashCode()) * 31;
+        int i12 = (((((i10 + (userId == null ? 0 : UserId.m623hashCodeimpl(userId.m627unboximpl()))) * 31) + this.index) * 31) + this.attachment.hashCode()) * 31;
         Float f10 = this.attachmentsOpacity;
         if (f10 != null) {
             i11 = f10.hashCode();
@@ -125,7 +125,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
+        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
         UserId userId = this.authorId;
         int i10 = this.index;
         Attachment attachment = this.attachment;

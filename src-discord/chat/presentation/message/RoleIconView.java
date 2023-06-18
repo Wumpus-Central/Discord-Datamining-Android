@@ -70,7 +70,7 @@ public final class RoleIconView extends FrameLayout {
             q.f(context, "context");
             configureRoleIcon$lambda$3.setDraweeSpanStringBuilder(RenderableEmojiKt.renderEmoji$default(renderableEmoji, context, SizeUtilsKt.getSpToPx(roleIcon.getSize()), true, 0, null, 48, null));
             q.f(configureRoleIcon$lambda$3, "configureRoleIcon$lambda$3");
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureRoleIcon$lambda$3, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.u
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureRoleIcon$lambda$3, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.v
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     RoleIconView.configureRoleIcon$lambda$3$lambda$2(ChatEventHandler.this, roleIcon, renderableEmoji, view);

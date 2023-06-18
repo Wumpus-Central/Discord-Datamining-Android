@@ -69,13 +69,13 @@ public final class PostPreviewEmbed implements SpoilerableData {
             yj.n1.b(r7, r3, r2)
         L_0x0011:
             r6.<init>()
-            long r2 = r8.m555unboximpl()
+            long r2 = r8.m563unboximpl()
             r0.parentChannelId = r2
-            long r2 = r9.m555unboximpl()
+            long r2 = r9.m563unboximpl()
             r0.threadId = r2
             r2 = r10
             r0.messageId = r2
-            long r2 = r11.m568unboximpl()
+            long r2 = r11.m576unboximpl()
             r0.guildId = r2
             r2 = r12
             r0.title = r2
@@ -255,7 +255,7 @@ public final class PostPreviewEmbed implements SpoilerableData {
             return false;
         }
         PostPreviewEmbed postPreviewEmbed = (PostPreviewEmbed) obj;
-        return ChannelId.m550equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m550equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m576equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m563equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText) && q.b(this.spoiler, postPreviewEmbed.spoiler) && this.shouldSpoiler == postPreviewEmbed.shouldSpoiler;
+        return ChannelId.m558equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m558equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m584equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m571equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText) && q.b(this.spoiler, postPreviewEmbed.spoiler) && this.shouldSpoiler == postPreviewEmbed.shouldSpoiler;
     }
 
     public final String getBlurredCoverImage() {
@@ -320,7 +320,7 @@ public final class PostPreviewEmbed implements SpoilerableData {
     }
 
     public int hashCode() {
-        int i10 = ((((((((((((ChannelId.m551hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m551hashCodeimpl(this.threadId)) * 31) + MessageId.m577hashCodeimpl(this.messageId)) * 31) + GuildId.m564hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
+        int i10 = ((((((((((((ChannelId.m559hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m559hashCodeimpl(this.threadId)) * 31) + MessageId.m585hashCodeimpl(this.messageId)) * 31) + GuildId.m572hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.footer.hashCode()) * 31;
         String str = this.subtitle;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -346,10 +346,10 @@ public final class PostPreviewEmbed implements SpoilerableData {
     }
 
     public String toString() {
-        String str = ChannelId.m553toStringimpl(this.parentChannelId);
-        String str2 = ChannelId.m553toStringimpl(this.threadId);
-        String str3 = MessageId.m578toStringimpl(this.messageId);
-        String str4 = GuildId.m566toStringimpl(this.guildId);
+        String str = ChannelId.m561toStringimpl(this.parentChannelId);
+        String str2 = ChannelId.m561toStringimpl(this.threadId);
+        String str3 = MessageId.m586toStringimpl(this.messageId);
+        String str4 = GuildId.m574toStringimpl(this.guildId);
         String str5 = this.title;
         String str6 = this.ctaText;
         StructurableText structurableText = this.footer;

@@ -85,7 +85,7 @@ public final class ChatInputNodeStyle {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 0, m0.f32999a, self.fontSize);
+            output.u(serialDesc, 0, m0.f33006a, self.fontSize);
         }
         output.x(serialDesc, 1, self.color);
         output.u(serialDesc, 2, BackgroundStyle$$serializer.INSTANCE, self.backgroundStyle);

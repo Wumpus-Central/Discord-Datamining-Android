@@ -99,7 +99,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
     }
 
     /* renamed from: setDescription-KZKlO-o  reason: not valid java name */
-    public final void m299setDescriptionKZKlOo(StructurableText structurableText, String messageId, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
+    public final void m301setDescriptionKZKlOo(StructurableText structurableText, String messageId, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
         String str;
         q.g(messageId, "messageId");
         q.g(onTapLink, "onTapLink");
@@ -117,7 +117,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
             MessageContentView messageContentView = this.binding.descriptionText;
             q.f(messageContentView, "binding.descriptionText");
             str = "binding.descriptionText";
-            MessageContentView.m301setMessageContent2i9KL1s$default(messageContentView, structurableText, messageId, z10, z11, z12, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, null, getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), 0, null, null, null, 3735552, null);
+            MessageContentView.m303setMessageContent2i9KL1s$default(messageContentView, structurableText, messageId, z10, z11, z12, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, null, getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), 0, null, null, null, 3735552, null);
         } else {
             str = "binding.descriptionText";
         }
@@ -178,7 +178,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.titleText.setTextColor(num.intValue());
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

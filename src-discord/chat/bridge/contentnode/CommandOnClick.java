@@ -129,7 +129,7 @@ public final class CommandOnClick {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 0, a2.f32924a, self.action);
+            output.u(serialDesc, 0, a2.f32931a, self.action);
         }
         if (!output.A(serialDesc, 1) && self.userId == null) {
             z11 = false;
@@ -148,7 +148,7 @@ public final class CommandOnClick {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             String str = self.messageId;
             if (str != null) {
-                messageId = MessageId.m572boximpl(str);
+                messageId = MessageId.m580boximpl(str);
             } else {
                 messageId = null;
             }
@@ -254,7 +254,7 @@ public final class CommandOnClick {
             r1 = r2
             goto L_0x0034
         L_0x0030:
-            boolean r1 = com.discord.primitives.MessageId.m576equalsimpl0(r1, r3)
+            boolean r1 = com.discord.primitives.MessageId.m584equalsimpl0(r1, r3)
         L_0x0034:
             if (r1 != 0) goto L_0x0037
             return r2
@@ -314,16 +314,16 @@ public final class CommandOnClick {
         int i10 = 0;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
         UserId userId = this.userId;
-        int i11 = (hashCode + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31;
+        int i11 = (hashCode + (userId == null ? 0 : UserId.m623hashCodeimpl(userId.m627unboximpl()))) * 31;
         String str2 = this.messageId;
-        int i12 = (i11 + (str2 == null ? 0 : MessageId.m577hashCodeimpl(str2))) * 31;
+        int i12 = (i11 + (str2 == null ? 0 : MessageId.m585hashCodeimpl(str2))) * 31;
         UserId userId2 = this.applicationUserId;
-        int i13 = (i12 + (userId2 == null ? 0 : UserId.m615hashCodeimpl(userId2.m619unboximpl()))) * 31;
+        int i13 = (i12 + (userId2 == null ? 0 : UserId.m623hashCodeimpl(userId2.m627unboximpl()))) * 31;
         MessageType messageType = this.messageType;
         int hashCode2 = (i13 + (messageType == null ? 0 : messageType.hashCode())) * 31;
         ChannelId channelId = this.messageChannelId;
         if (channelId != null) {
-            i10 = ChannelId.m551hashCodeimpl(channelId.m555unboximpl());
+            i10 = ChannelId.m559hashCodeimpl(channelId.m563unboximpl());
         }
         return hashCode2 + i10;
     }
@@ -332,7 +332,7 @@ public final class CommandOnClick {
         String str = this.action;
         UserId userId = this.userId;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m578toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m586toStringimpl(str2);
         UserId userId2 = this.applicationUserId;
         MessageType messageType = this.messageType;
         ChannelId channelId = this.messageChannelId;

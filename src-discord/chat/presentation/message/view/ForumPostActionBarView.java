@@ -198,7 +198,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     /* renamed from: configure-CgeVRR0  reason: not valid java name */
-    public final void m298configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, boolean z12, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick) {
+    public final void m300configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, boolean z12, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick) {
         boolean z13;
         Object obj;
         int i11;
@@ -227,7 +227,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m578toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, z12, 32, null);
+                setReactions$default(this, MessageId.m586toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, z12, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -240,7 +240,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             ReactionsView reactionsView2 = this.binding.reactionsView;
             q.f(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m578toStringimpl(messageId), x02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z12);
+            setReactions(MessageId.m586toStringimpl(messageId), x02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z12);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
             q.f(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");

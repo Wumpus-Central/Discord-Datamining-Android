@@ -156,7 +156,7 @@ public final class TapCommandData implements ReactEvent {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public TapCommandData(CommandMentionContentNode node) {
-        this(ChannelId.m553toStringimpl(node.m46getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
+        this(ChannelId.m561toStringimpl(node.m46getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
         q.g(node, "node");
     }
 }

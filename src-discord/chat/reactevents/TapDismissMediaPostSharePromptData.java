@@ -52,27 +52,27 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ TapDismissMediaPostSharePromptData m368copy1xi1bu0$default(TapDismissMediaPostSharePromptData tapDismissMediaPostSharePromptData, String str, int i10, Object obj) {
+    public static /* synthetic */ TapDismissMediaPostSharePromptData m370copy1xi1bu0$default(TapDismissMediaPostSharePromptData tapDismissMediaPostSharePromptData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapDismissMediaPostSharePromptData.messageId;
         }
-        return tapDismissMediaPostSharePromptData.m370copy1xi1bu0(str);
+        return tapDismissMediaPostSharePromptData.m372copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapDismissMediaPostSharePromptData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.messageId));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.messageId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m369component13Eiw7ao() {
+    public final String m371component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final TapDismissMediaPostSharePromptData m370copy1xi1bu0(String messageId) {
+    public final TapDismissMediaPostSharePromptData m372copy1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         return new TapDismissMediaPostSharePromptData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapDismissMediaPostSharePromptData) && MessageId.m576equalsimpl0(this.messageId, ((TapDismissMediaPostSharePromptData) obj).messageId);
+        return (obj instanceof TapDismissMediaPostSharePromptData) && MessageId.m584equalsimpl0(this.messageId, ((TapDismissMediaPostSharePromptData) obj).messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m371getMessageId3Eiw7ao() {
+    public final String m373getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m577hashCodeimpl(this.messageId);
+        return MessageId.m585hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -99,7 +99,7 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(this.messageId);
+        String str = MessageId.m586toStringimpl(this.messageId);
         return "TapDismissMediaPostSharePromptData(messageId=" + str + ")";
     }
 

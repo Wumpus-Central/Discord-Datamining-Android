@@ -43,7 +43,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        t tVar = t.f22663a;
+        t tVar = t.f22670a;
         return new KSerializer[]{new f(tVar), new f(tVar), tVar, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
@@ -59,7 +59,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            t tVar = t.f22663a;
+            t tVar = t.f22670a;
             obj5 = b10.y(descriptor2, 0, new f(tVar), null);
             obj = b10.y(descriptor2, 1, new f(tVar), null);
             obj2 = b10.y(descriptor2, 2, tVar, null);
@@ -79,13 +79,13 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj5 = b10.y(descriptor2, 0, new f(t.f22663a), obj5);
+                    obj5 = b10.y(descriptor2, 0, new f(t.f22670a), obj5);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj9 = b10.y(descriptor2, 1, new f(t.f22663a), obj9);
+                    obj9 = b10.y(descriptor2, 1, new f(t.f22670a), obj9);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj8 = b10.y(descriptor2, 2, t.f22663a, obj8);
+                    obj8 = b10.y(descriptor2, 2, t.f22670a, obj8);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj6 = b10.y(descriptor2, 3, MessageId$$serializer.INSTANCE, obj6);
@@ -105,7 +105,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj4;
-        return new KvMessageEntry(i10, (List) obj5, (List) obj, (JsonObject) obj2, messageId != null ? messageId.m580unboximpl() : null, (ChannelId) obj3, null, null);
+        return new KvMessageEntry(i10, (List) obj5, (List) obj, (JsonObject) obj2, messageId != null ? messageId.m588unboximpl() : null, (ChannelId) obj3, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

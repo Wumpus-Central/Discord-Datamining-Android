@@ -48,7 +48,7 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
         this.messageId = str;
         this.totalDurationSecs = f10;
         this.startDurationSecs = f11;
-        this.senderUserId = userId.m619unboximpl();
+        this.senderUserId = userId.m627unboximpl();
     }
 
     public /* synthetic */ VoiceMessagePlaybackStartedData(int i10, String str, float f10, float f11, UserId userId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -60,7 +60,7 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
     }
 
     /* renamed from: copy-OuNwOLg$default  reason: not valid java name */
-    public static /* synthetic */ VoiceMessagePlaybackStartedData m418copyOuNwOLg$default(VoiceMessagePlaybackStartedData voiceMessagePlaybackStartedData, String str, float f10, float f11, long j10, int i10, Object obj) {
+    public static /* synthetic */ VoiceMessagePlaybackStartedData m426copyOuNwOLg$default(VoiceMessagePlaybackStartedData voiceMessagePlaybackStartedData, String str, float f10, float f11, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = voiceMessagePlaybackStartedData.messageId;
         }
@@ -73,21 +73,21 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
         if ((i10 & 8) != 0) {
             j10 = voiceMessagePlaybackStartedData.senderUserId;
         }
-        return voiceMessagePlaybackStartedData.m421copyOuNwOLg(str, f10, f11, j10);
+        return voiceMessagePlaybackStartedData.m429copyOuNwOLg(str, f10, f11, j10);
     }
 
     public static final void write$Self(VoiceMessagePlaybackStartedData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.messageId));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.messageId));
         output.s(serialDesc, 1, self.totalDurationSecs);
         output.s(serialDesc, 2, self.startDurationSecs);
-        output.q(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m610boximpl(self.senderUserId));
+        output.q(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m618boximpl(self.senderUserId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m419component13Eiw7ao() {
+    public final String m427component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -100,12 +100,12 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
     }
 
     /* renamed from: component4-re6GcUE  reason: not valid java name */
-    public final long m420component4re6GcUE() {
+    public final long m428component4re6GcUE() {
         return this.senderUserId;
     }
 
     /* renamed from: copy-OuNwOLg  reason: not valid java name */
-    public final VoiceMessagePlaybackStartedData m421copyOuNwOLg(String messageId, float f10, float f11, long j10) {
+    public final VoiceMessagePlaybackStartedData m429copyOuNwOLg(String messageId, float f10, float f11, long j10) {
         q.g(messageId, "messageId");
         return new VoiceMessagePlaybackStartedData(messageId, f10, f11, j10, null);
     }
@@ -118,16 +118,16 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
             return false;
         }
         VoiceMessagePlaybackStartedData voiceMessagePlaybackStartedData = (VoiceMessagePlaybackStartedData) obj;
-        return MessageId.m576equalsimpl0(this.messageId, voiceMessagePlaybackStartedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackStartedData.totalDurationSecs) == 0 && Float.compare(this.startDurationSecs, voiceMessagePlaybackStartedData.startDurationSecs) == 0 && UserId.m614equalsimpl0(this.senderUserId, voiceMessagePlaybackStartedData.senderUserId);
+        return MessageId.m584equalsimpl0(this.messageId, voiceMessagePlaybackStartedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackStartedData.totalDurationSecs) == 0 && Float.compare(this.startDurationSecs, voiceMessagePlaybackStartedData.startDurationSecs) == 0 && UserId.m622equalsimpl0(this.senderUserId, voiceMessagePlaybackStartedData.senderUserId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m422getMessageId3Eiw7ao() {
+    public final String m430getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: getSenderUserId-re6GcUE  reason: not valid java name */
-    public final long m423getSenderUserIdre6GcUE() {
+    public final long m431getSenderUserIdre6GcUE() {
         return this.senderUserId;
     }
 
@@ -140,7 +140,7 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((MessageId.m577hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.startDurationSecs)) * 31) + UserId.m615hashCodeimpl(this.senderUserId);
+        return (((((MessageId.m585hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.startDurationSecs)) * 31) + UserId.m623hashCodeimpl(this.senderUserId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -149,10 +149,10 @@ public final class VoiceMessagePlaybackStartedData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(this.messageId);
+        String str = MessageId.m586toStringimpl(this.messageId);
         float f10 = this.totalDurationSecs;
         float f11 = this.startDurationSecs;
-        String str2 = UserId.m617toStringimpl(this.senderUserId);
+        String str2 = UserId.m625toStringimpl(this.senderUserId);
         return "VoiceMessagePlaybackStartedData(messageId=" + str + ", totalDurationSecs=" + f10 + ", startDurationSecs=" + f11 + ", senderUserId=" + str2 + ")";
     }
 

@@ -308,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22104a;
+            Unit unit = Unit.f22111a;
             addView(overflowItem, layoutParams2);
         }
     }

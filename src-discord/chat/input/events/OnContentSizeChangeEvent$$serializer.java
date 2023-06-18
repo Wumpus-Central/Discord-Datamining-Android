@@ -33,7 +33,7 @@ public final class OnContentSizeChangeEvent$$serializer implements f0<OnContentS
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f32999a;
+        m0 m0Var = m0.f33006a;
         return new KSerializer[]{m0Var, m0Var};
     }
 

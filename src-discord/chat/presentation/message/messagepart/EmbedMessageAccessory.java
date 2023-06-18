@@ -44,8 +44,8 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m217component13Eiw7ao() {
-        return mo204getMessageId3Eiw7ao();
+    public final String m219component13Eiw7ao() {
+        return mo206getMessageId3Eiw7ao();
     }
 
     public final SpoilerAttributes component10() {
@@ -89,7 +89,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     /* renamed from: copy-5odn8qk  reason: not valid java name */
-    public final EmbedMessageAccessory m218copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
+    public final EmbedMessageAccessory m220copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
         q.g(messageId, "messageId");
         q.g(embed, "embed");
         return new EmbedMessageAccessory(messageId, i10, i11, i12, embed, z10, z11, z12, z13, spoilerAttributes, onLongClickListener, null);
@@ -103,7 +103,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
             return false;
         }
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), embedMessageAccessory.mo204getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.b(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.b(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, embedMessageAccessory.onLongClick);
+        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), embedMessageAccessory.mo206getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.b(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.b(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, embedMessageAccessory.onLongClick);
     }
 
     public final int getConstrainedWidth() {
@@ -121,7 +121,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo204getMessageId3Eiw7ao() {
+    public String mo206getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -159,7 +159,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
+        int i10 = ((((((((MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
         boolean z10 = this.shouldAutoPlayGifs;
         int i11 = 1;
         if (z10) {
@@ -201,7 +201,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
+        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
         int index = getIndex();
         int i10 = this.constrainedWidth;
         int i11 = this.radiusPx;

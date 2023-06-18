@@ -151,7 +151,7 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f8123e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f8127e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
         a10.u(a.EnumC0123a.BITMAP_ONLY);
@@ -306,9 +306,9 @@ public final class TextUtilsKt {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r83, com.discord.chat.presentation.textutils.RenderContext r84, com.facebook.drawee.span.DraweeSpanStringBuilder r85) {
+    private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r81, com.discord.chat.presentation.textutils.RenderContext r82, com.facebook.drawee.span.DraweeSpanStringBuilder r83) {
         /*
-            Method dump skipped, instructions count: 2753
+            Method dump skipped, instructions count: 2640
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.textutils.TextUtilsKt.toSpannable(java.util.List, com.discord.chat.presentation.textutils.RenderContext, com.facebook.drawee.span.DraweeSpanStringBuilder):com.facebook.drawee.span.DraweeSpanStringBuilder");

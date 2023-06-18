@@ -24,7 +24,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(Function1 onTapThreadEmbed, ThreadEmbedMessageAccessory threadItem, View view) {
         q.g(onTapThreadEmbed, "$onTapThreadEmbed");
         q.g(threadItem, "$threadItem");
-        onTapThreadEmbed.invoke(MessageId.m572boximpl(threadItem.mo204getMessageId3Eiw7ao()));
+        onTapThreadEmbed.invoke(MessageId.m580boximpl(threadItem.mo206getMessageId3Eiw7ao()));
     }
 
     /* JADX WARN: Multi-variable type inference failed */

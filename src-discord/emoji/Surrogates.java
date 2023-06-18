@@ -14,39 +14,39 @@ public final class Surrogates {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ Surrogates m428boximpl(String str) {
+    public static final /* synthetic */ Surrogates m436boximpl(String str) {
         return new Surrogates(str);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m429constructorimpl(String value) {
+    public static String m437constructorimpl(String value) {
         q.g(value, "value");
         return value;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m430equalsimpl(String str, Object obj) {
-        return (obj instanceof Surrogates) && q.b(str, ((Surrogates) obj).m437unboximpl());
+    public static boolean m438equalsimpl(String str, Object obj) {
+        return (obj instanceof Surrogates) && q.b(str, ((Surrogates) obj).m445unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m431equalsimpl0(String str, String str2) {
+    public static final boolean m439equalsimpl0(String str, String str2) {
         return q.b(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m432hashCodeimpl(String str) {
+    public static int m440hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     /* renamed from: toAssetUrl-impl  reason: not valid java name */
-    public static final String m433toAssetUrlimpl(String str) {
-        String str2 = m434toCodePointsimpl(str);
+    public static final String m441toAssetUrlimpl(String str) {
+        String str2 = m442toCodePointsimpl(str);
         return "asset:///emoji-" + str2 + ".png";
     }
 
     /* renamed from: toCodePoints-impl  reason: not valid java name */
-    private static final String m434toCodePointsimpl(String str) {
+    private static final String m442toCodePointsimpl(String str) {
         boolean z10;
         StringBuilder sb2 = new StringBuilder();
         int i10 = 0;
@@ -69,12 +69,12 @@ public final class Surrogates {
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m435toStringimpl(String str) {
+    public static String m443toStringimpl(String str) {
         return "Surrogates(value=" + str + ")";
     }
 
     /* renamed from: withoutDiversity-impl  reason: not valid java name */
-    public static final String m436withoutDiversityimpl(String str) {
+    public static final String m444withoutDiversityimpl(String str) {
         String a02;
         char[] chars = Character.toChars(str.codePointAt(0));
         q.f(chars, "toChars(value.codePointAt(0))");
@@ -83,7 +83,7 @@ public final class Surrogates {
     }
 
     public boolean equals(Object obj) {
-        return m430equalsimpl(this.value, obj);
+        return m438equalsimpl(this.value, obj);
     }
 
     public final String getValue() {
@@ -91,15 +91,15 @@ public final class Surrogates {
     }
 
     public int hashCode() {
-        return m432hashCodeimpl(this.value);
+        return m440hashCodeimpl(this.value);
     }
 
     public String toString() {
-        return m435toStringimpl(this.value);
+        return m443toStringimpl(this.value);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m437unboximpl() {
+    public final /* synthetic */ String m445unboximpl() {
         return this.value;
     }
 }

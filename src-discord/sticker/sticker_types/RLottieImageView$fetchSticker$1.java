@@ -55,7 +55,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 t.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f22104a;
+                return Unit.f22111a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -84,7 +84,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -104,7 +104,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f22104a;
+            return Unit.f22111a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -143,7 +143,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -198,7 +198,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((C01182) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+                    return ((C01182) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -225,13 +225,13 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 if (downloadState instanceof DownloadState.Completed) {
                     Object g10 = j.g(y0.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
                     d12 = d.d();
-                    return g10 == d12 ? g10 : Unit.f22104a;
+                    return g10 == d12 ? g10 : Unit.f22111a;
                 } else if (!(downloadState instanceof DownloadState.Failure)) {
-                    return Unit.f22104a;
+                    return Unit.f22111a;
                 } else {
                     Object g11 = j.g(y0.c(), new C01182(RLottieImageView.this, null), continuation);
                     d11 = d.d();
-                    return g11 == d11 ? g11 : Unit.f22104a;
+                    return g11 == d11 ? g11 : Unit.f22111a;
                 }
             }
         };
@@ -239,6 +239,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         if (downloadFile$default.collect(flowCollector, this) == d10) {
             return d10;
         }
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 }

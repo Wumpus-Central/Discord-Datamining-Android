@@ -58,8 +58,8 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f32924a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f32966a, a.u(a2Var)};
+        a2 a2Var = a2.f32931a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f32973a, a.u(a2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -95,7 +95,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
             str = b10.m(descriptor2, 4);
             str2 = b10.m(descriptor2, 5);
             obj5 = b10.y(descriptor2, 6, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f32924a;
+            a2 a2Var = a2.f32931a;
             obj3 = b10.n(descriptor2, 7, a2Var, null);
             obj2 = b10.n(descriptor2, 8, a2Var, null);
             obj6 = b10.n(descriptor2, 9, a2Var, null);
@@ -180,29 +180,29 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i11 = 11;
                         break;
                     case 7:
-                        obj3 = b10.n(descriptor2, 7, a2.f32924a, obj3);
+                        obj3 = b10.n(descriptor2, 7, a2.f32931a, obj3);
                         i15 |= 128;
                         i14 = 13;
                         i11 = 11;
                         break;
                     case 8:
-                        obj14 = b10.n(descriptor2, 8, a2.f32924a, obj14);
+                        obj14 = b10.n(descriptor2, 8, a2.f32931a, obj14);
                         i15 |= Spliterator.NONNULL;
                         i14 = 13;
                         i11 = 11;
                         continue;
                     case 9:
-                        obj15 = b10.n(descriptor2, i13, a2.f32924a, obj15);
+                        obj15 = b10.n(descriptor2, i13, a2.f32931a, obj15);
                         i15 |= 512;
                         i14 = 13;
                         break;
                     case 10:
-                        obj16 = b10.n(descriptor2, i12, a2.f32924a, obj16);
+                        obj16 = b10.n(descriptor2, i12, a2.f32931a, obj16);
                         i15 |= Spliterator.IMMUTABLE;
                         i14 = 13;
                         break;
                     case 11:
-                        obj20 = b10.n(descriptor2, i11, a2.f32924a, obj20);
+                        obj20 = b10.n(descriptor2, i11, a2.f32931a, obj20);
                         i15 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i14 = 13;
                         break;
@@ -211,7 +211,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i15 |= 4096;
                         break;
                     case 13:
-                        obj13 = b10.n(descriptor2, i14, a2.f32924a, obj13);
+                        obj13 = b10.n(descriptor2, i14, a2.f32931a, obj13);
                         i15 |= 8192;
                         break;
                     default:
@@ -231,7 +231,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj7;
-        return new PostPreviewEmbed(i10, (ChannelId) obj11, (ChannelId) obj, messageId != null ? messageId.m580unboximpl() : null, (GuildId) obj4, str, str2, (StructurableText) obj5, (String) obj3, (String) obj2, (String) obj6, (String) obj8, (String) obj9, z10, (String) obj10, null, null);
+        return new PostPreviewEmbed(i10, (ChannelId) obj11, (ChannelId) obj, messageId != null ? messageId.m588unboximpl() : null, (GuildId) obj4, str, str2, (StructurableText) obj5, (String) obj3, (String) obj2, (String) obj6, (String) obj8, (String) obj9, z10, (String) obj10, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

@@ -76,7 +76,7 @@ public final class InitiateReplyData$$serializer implements f0<InitiateReplyData
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m580unboximpl();
+            str = messageId.m588unboximpl();
         }
         return new InitiateReplyData(i10, str, (ChannelId) obj, null, null);
     }

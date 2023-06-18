@@ -35,7 +35,7 @@ final class FileManagerModule$fileExists$1 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$fileExists$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22104a);
+        return ((FileManagerModule$fileExists$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -48,7 +48,7 @@ final class FileManagerModule$fileExists$1 extends k implements Function2<Corout
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f22104a;
+            return Unit.f22111a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

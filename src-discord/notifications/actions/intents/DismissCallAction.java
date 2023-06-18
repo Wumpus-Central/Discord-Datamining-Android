@@ -27,7 +27,7 @@ public final class DismissCallAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final DismissCallAction createFromParcel(Parcel parcel) {
             q.g(parcel, "parcel");
-            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m555unboximpl(), null);
+            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m563unboximpl(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -47,19 +47,19 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m472component2o4g7jtM() {
+    private final long m480component2o4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: copy-mJqaSGE$default  reason: not valid java name */
-    public static /* synthetic */ DismissCallAction m473copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
+    public static /* synthetic */ DismissCallAction m481copymJqaSGE$default(DismissCallAction dismissCallAction, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = dismissCallAction.getTag();
         }
         if ((i10 & 2) != 0) {
             j10 = dismissCallAction.channelId;
         }
-        return dismissCallAction.m474copymJqaSGE(str, j10);
+        return dismissCallAction.m482copymJqaSGE(str, j10);
     }
 
     public final String component1() {
@@ -67,7 +67,7 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     /* renamed from: copy-mJqaSGE  reason: not valid java name */
-    public final DismissCallAction m474copymJqaSGE(String tag, long j10) {
+    public final DismissCallAction m482copymJqaSGE(String tag, long j10) {
         q.g(tag, "tag");
         return new DismissCallAction(tag, j10, null);
     }
@@ -85,7 +85,7 @@ public final class DismissCallAction implements NotificationAction {
             return false;
         }
         DismissCallAction dismissCallAction = (DismissCallAction) obj;
-        return q.b(getTag(), dismissCallAction.getTag()) && ChannelId.m550equalsimpl0(this.channelId, dismissCallAction.channelId);
+        return q.b(getTag(), dismissCallAction.getTag()) && ChannelId.m558equalsimpl0(this.channelId, dismissCallAction.channelId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -99,7 +99,7 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     public int hashCode() {
-        return (getTag().hashCode() * 31) + ChannelId.m551hashCodeimpl(this.channelId);
+        return (getTag().hashCode() * 31) + ChannelId.m559hashCodeimpl(this.channelId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -124,7 +124,7 @@ public final class DismissCallAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m553toStringimpl(this.channelId);
+        String str = ChannelId.m561toStringimpl(this.channelId);
         return "DismissCallAction(tag=" + tag + ", channelId=" + str + ")";
     }
 
@@ -132,6 +132,6 @@ public final class DismissCallAction implements NotificationAction {
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m546boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m554boximpl(this.channelId), i10);
     }
 }

@@ -45,8 +45,8 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32924a;
-        m0 m0Var = m0.f32999a;
+        a2 a2Var = a2.f32931a;
+        m0 m0Var = m0.f33006a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, DirectReplyUser$$serializer.INSTANCE, a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -71,9 +71,9 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
             obj8 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
             obj2 = b10.y(descriptor2, 2, DirectReplyUser$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f32924a;
+            a2 a2Var = a2.f32931a;
             obj4 = b10.n(descriptor2, 3, a2Var, null);
-            m0 m0Var = m0.f32999a;
+            m0 m0Var = m0.f33006a;
             obj3 = b10.n(descriptor2, 4, m0Var, null);
             obj5 = b10.n(descriptor2, 5, m0Var, null);
             obj6 = b10.n(descriptor2, 6, a2Var, null);
@@ -115,23 +115,23 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
                         i11 = 7;
                         continue;
                     case 3:
-                        obj14 = b10.n(descriptor2, 3, a2.f32924a, obj14);
+                        obj14 = b10.n(descriptor2, 3, a2.f32931a, obj14);
                         i13 |= 8;
                         break;
                     case 4:
-                        obj9 = b10.n(descriptor2, 4, m0.f32999a, obj9);
+                        obj9 = b10.n(descriptor2, 4, m0.f33006a, obj9);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj13 = b10.n(descriptor2, 5, m0.f32999a, obj13);
+                        obj13 = b10.n(descriptor2, 5, m0.f33006a, obj13);
                         i13 |= 32;
                         break;
                     case 6:
-                        obj12 = b10.n(descriptor2, i12, a2.f32924a, obj12);
+                        obj12 = b10.n(descriptor2, i12, a2.f32931a, obj12);
                         i13 |= 64;
                         break;
                     case 7:
-                        obj11 = b10.n(descriptor2, i11, a2.f32924a, obj11);
+                        obj11 = b10.n(descriptor2, i11, a2.f32931a, obj11);
                         i13 |= 128;
                         break;
                     default:
@@ -149,7 +149,7 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj8;
-        return new DirectReplyMessage(i10, messageId != null ? messageId.m580unboximpl() : null, (ChannelId) obj, (DirectReplyUser) obj2, (String) obj4, (Integer) obj3, (Integer) obj5, (String) obj6, (String) obj7, null, null);
+        return new DirectReplyMessage(i10, messageId != null ? messageId.m588unboximpl() : null, (ChannelId) obj, (DirectReplyUser) obj2, (String) obj4, (Integer) obj3, (Integer) obj5, (String) obj6, (String) obj7, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

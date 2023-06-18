@@ -63,7 +63,7 @@ public final class TapJoinActivityData$$serializer implements f0<TapJoinActivity
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapJoinActivityData(i10, messageId != null ? messageId.m580unboximpl() : null, null, null);
+        return new TapJoinActivityData(i10, messageId != null ? messageId.m588unboximpl() : null, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

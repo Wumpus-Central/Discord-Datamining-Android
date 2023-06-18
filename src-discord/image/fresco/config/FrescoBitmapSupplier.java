@@ -47,7 +47,7 @@ public final class FrescoBitmapSupplier extends j {
     @Override // s5.j, com.facebook.common.internal.Supplier
     public MemoryCacheParams get() {
         MemoryCacheParams memoryCacheParams = super.get();
-        int i10 = memoryCacheParams.f8532a;
-        return new MemoryCacheParams(i10, memoryCacheParams.f8533b, memoryCacheParams.f8534c, memoryCacheParams.f8535d, i10 / 3);
+        int i10 = memoryCacheParams.f8536a;
+        return new MemoryCacheParams(i10, memoryCacheParams.f8537b, memoryCacheParams.f8538c, memoryCacheParams.f8539d, i10 / 3);
     }
 }

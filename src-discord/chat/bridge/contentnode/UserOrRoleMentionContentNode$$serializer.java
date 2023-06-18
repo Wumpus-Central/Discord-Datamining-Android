@@ -48,7 +48,7 @@ public final class UserOrRoleMentionContentNode$$serializer implements f0<UserOr
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(ChannelId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), m0.f32999a, a.u(GuildId$$serializer.INSTANCE), a.u(RoleId$$serializer.INSTANCE), new f(ContentNodeSerializer.INSTANCE)};
+        return new KSerializer[]{a.u(ChannelId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), m0.f33006a, a.u(GuildId$$serializer.INSTANCE), a.u(RoleId$$serializer.INSTANCE), new f(ContentNodeSerializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

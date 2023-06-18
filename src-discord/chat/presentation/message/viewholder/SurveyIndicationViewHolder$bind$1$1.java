@@ -20,12 +20,12 @@ public /* synthetic */ class SurveyIndicationViewHolder$bind$1$1 extends n imple
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m329invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22104a;
+        m331invokentcYbpo(messageId.m588unboximpl(), linkContentNode);
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m329invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m331invokentcYbpo(String p02, LinkContentNode p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
         ((ChatEventHandler) this.receiver).mo141onLinkClickedntcYbpo(p02, p12);

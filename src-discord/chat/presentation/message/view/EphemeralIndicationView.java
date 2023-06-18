@@ -62,7 +62,7 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     }
 
     /* renamed from: setEphemeralIndication-AFFcxXc  reason: not valid java name */
-    public final void m295setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
+    public final void m297setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
         q.g(messageId, "messageId");
         q.g(ephemeralIndication, "ephemeralIndication");
         q.g(onLinkClicked, "onLinkClicked");

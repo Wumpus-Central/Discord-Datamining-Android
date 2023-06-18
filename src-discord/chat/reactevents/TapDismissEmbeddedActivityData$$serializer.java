@@ -32,7 +32,7 @@ public final class TapDismissEmbeddedActivityData$$serializer implements f0<TapD
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32924a};
+        return new KSerializer[]{a2.f32931a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

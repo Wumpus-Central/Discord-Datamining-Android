@@ -41,7 +41,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32924a, UserId$$serializer.INSTANCE, a.u(ChannelId$$serializer.INSTANCE), a.u(m0.f32999a)};
+        return new KSerializer[]{a2.f32931a, UserId$$serializer.INSTANCE, a.u(ChannelId$$serializer.INSTANCE), a.u(m0.f33006a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -59,7 +59,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
             str = b10.m(descriptor2, 0);
             obj = b10.y(descriptor2, 1, UserId$$serializer.INSTANCE, null);
             obj2 = b10.n(descriptor2, 2, ChannelId$$serializer.INSTANCE, null);
-            obj3 = b10.n(descriptor2, 3, m0.f32999a, null);
+            obj3 = b10.n(descriptor2, 3, m0.f33006a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -81,7 +81,7 @@ public final class UserNameOnClick$$serializer implements f0<UserNameOnClick> {
                     obj5 = b10.n(descriptor2, 2, ChannelId$$serializer.INSTANCE, obj5);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    obj6 = b10.n(descriptor2, 3, m0.f32999a, obj6);
+                    obj6 = b10.n(descriptor2, 3, m0.f33006a, obj6);
                     i11 |= 8;
                 } else {
                     throw new n(o10);

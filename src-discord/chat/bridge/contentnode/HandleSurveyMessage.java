@@ -46,7 +46,7 @@ public final class HandleSurveyMessage {
             n1.b(i10, 3, HandleSurveyMessage$$serializer.INSTANCE.getDescriptor());
         }
         this.f7622id = str;
-        this.channelId = channelId.m555unboximpl();
+        this.channelId = channelId.m563unboximpl();
         if ((i10 & 4) == 0) {
             this.loggingName = null;
         } else {
@@ -85,13 +85,13 @@ public final class HandleSurveyMessage {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z10 = false;
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m572boximpl(self.f7622id));
-        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m546boximpl(self.channelId));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.f7622id));
+        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m554boximpl(self.channelId));
         if (output.A(serialDesc, 2) || self.loggingName != null) {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 2, a2.f32924a, self.loggingName);
+            output.u(serialDesc, 2, a2.f32931a, self.loggingName);
         }
     }
 
@@ -123,7 +123,7 @@ public final class HandleSurveyMessage {
             return false;
         }
         HandleSurveyMessage handleSurveyMessage = (HandleSurveyMessage) obj;
-        return MessageId.m576equalsimpl0(this.f7622id, handleSurveyMessage.f7622id) && ChannelId.m550equalsimpl0(this.channelId, handleSurveyMessage.channelId) && q.b(this.loggingName, handleSurveyMessage.loggingName);
+        return MessageId.m584equalsimpl0(this.f7622id, handleSurveyMessage.f7622id) && ChannelId.m558equalsimpl0(this.channelId, handleSurveyMessage.channelId) && q.b(this.loggingName, handleSurveyMessage.loggingName);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
@@ -141,14 +141,14 @@ public final class HandleSurveyMessage {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m577hashCodeimpl(this.f7622id) * 31) + ChannelId.m551hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m585hashCodeimpl(this.f7622id) * 31) + ChannelId.m559hashCodeimpl(this.channelId)) * 31;
         String str = this.loggingName;
         return i10 + (str == null ? 0 : str.hashCode());
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(this.f7622id);
-        String str2 = ChannelId.m553toStringimpl(this.channelId);
+        String str = MessageId.m586toStringimpl(this.f7622id);
+        String str2 = ChannelId.m561toStringimpl(this.channelId);
         String str3 = this.loggingName;
         return "HandleSurveyMessage(id=" + str + ", channelId=" + str2 + ", loggingName=" + str3 + ")";
     }

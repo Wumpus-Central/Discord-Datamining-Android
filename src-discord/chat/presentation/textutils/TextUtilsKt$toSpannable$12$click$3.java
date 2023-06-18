@@ -28,12 +28,12 @@ public final class TextUtilsKt$toSpannable$12$click$3 extends s implements Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(View view) {
         invoke2(view);
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(View it) {
         q.g(it, "it");
-        this.$rc.getOnTapMention().invoke(UserId.m617toStringimpl(((UserOrRoleMentionContentNode) this.$contentNode).m102getUserIdwUX8bhU().m619unboximpl()), String.valueOf(((UserOrRoleMentionContentNode) this.$contentNode).m99getChannelIdqMVnFVQ()));
+        this.$rc.getOnTapMention().invoke(UserId.m625toStringimpl(((UserOrRoleMentionContentNode) this.$contentNode).m102getUserIdwUX8bhU().m627unboximpl()), String.valueOf(((UserOrRoleMentionContentNode) this.$contentNode).m99getChannelIdqMVnFVQ()));
     }
 }

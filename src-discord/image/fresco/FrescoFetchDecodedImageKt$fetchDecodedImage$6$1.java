@@ -24,7 +24,7 @@ public final class FrescoFetchDecodedImageKt$fetchDecodedImage$6$1 extends s imp
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

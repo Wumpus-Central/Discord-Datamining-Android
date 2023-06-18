@@ -57,7 +57,7 @@ public final class ButtonComponent extends Component {
         }
         this.type = i11;
         this.indices = list;
-        this.applicationId = applicationId.m542unboximpl();
+        this.applicationId = applicationId.m550unboximpl();
         if ((i10 & 8) == 0) {
             this.customId = null;
         } else {
@@ -105,15 +105,15 @@ public final class ButtonComponent extends Component {
         q.g(serialDesc, "serialDesc");
         boolean z14 = false;
         output.x(serialDesc, 0, self.getType());
-        output.q(serialDesc, 1, new yj.f(m0.f32999a), self.getIndices());
-        output.q(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m533boximpl(self.applicationId));
+        output.q(serialDesc, 1, new yj.f(m0.f33006a), self.getIndices());
+        output.q(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m541boximpl(self.applicationId));
         if (!output.A(serialDesc, 3) && self.customId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 3, a2.f32924a, self.customId);
+            output.u(serialDesc, 3, a2.f32931a, self.customId);
         }
         if (!output.A(serialDesc, 4) && self.label == null) {
             z11 = false;
@@ -121,7 +121,7 @@ public final class ButtonComponent extends Component {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 4, a2.f32924a, self.label);
+            output.u(serialDesc, 4, a2.f32931a, self.label);
         }
         output.q(serialDesc, 5, ButtonStyle.Serializer.INSTANCE, self.style);
         if (!output.A(serialDesc, 6) && !self.disabled) {
@@ -144,7 +144,7 @@ public final class ButtonComponent extends Component {
             z14 = true;
         }
         if (z14) {
-            output.u(serialDesc, 8, a2.f32924a, self.url);
+            output.u(serialDesc, 8, a2.f32931a, self.url);
         }
         output.q(serialDesc, 9, ActionComponentState.Serializer.INSTANCE, self.state);
     }
@@ -206,7 +206,7 @@ public final class ButtonComponent extends Component {
             return false;
         }
         ButtonComponent buttonComponent = (ButtonComponent) obj;
-        return getType() == buttonComponent.getType() && q.b(getIndices(), buttonComponent.getIndices()) && ApplicationId.m537equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.b(this.customId, buttonComponent.customId) && q.b(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.b(this.emoji, buttonComponent.emoji) && q.b(this.url, buttonComponent.url) && this.state == buttonComponent.state;
+        return getType() == buttonComponent.getType() && q.b(getIndices(), buttonComponent.getIndices()) && ApplicationId.m545equalsimpl0(this.applicationId, buttonComponent.applicationId) && q.b(this.customId, buttonComponent.customId) && q.b(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && q.b(this.emoji, buttonComponent.emoji) && q.b(this.url, buttonComponent.url) && this.state == buttonComponent.state;
     }
 
     /* renamed from: getApplicationId-VavddsQ  reason: not valid java name */
@@ -253,7 +253,7 @@ public final class ButtonComponent extends Component {
     }
 
     public int hashCode() {
-        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m538hashCodeimpl(this.applicationId)) * 31;
+        int type = ((((getType() * 31) + getIndices().hashCode()) * 31) + ApplicationId.m546hashCodeimpl(this.applicationId)) * 31;
         String str = this.customId;
         int i10 = 0;
         int hashCode = (type + (str == null ? 0 : str.hashCode())) * 31;
@@ -279,7 +279,7 @@ public final class ButtonComponent extends Component {
     public String toString() {
         int type = getType();
         List<Integer> indices = getIndices();
-        String str = ApplicationId.m540toStringimpl(this.applicationId);
+        String str = ApplicationId.m548toStringimpl(this.applicationId);
         String str2 = this.customId;
         String str3 = this.label;
         ButtonStyle buttonStyle = this.style;

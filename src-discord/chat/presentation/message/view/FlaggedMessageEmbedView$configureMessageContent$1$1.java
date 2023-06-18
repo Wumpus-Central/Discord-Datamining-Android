@@ -19,12 +19,12 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$1 extends s implem
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m296invokentcYbpo(messageId.m580unboximpl(), linkContentNode);
-        return Unit.f22104a;
+        m298invokentcYbpo(messageId.m588unboximpl(), linkContentNode);
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m296invokentcYbpo(String str, LinkContentNode linkContentNode) {
+    public final void m298invokentcYbpo(String str, LinkContentNode linkContentNode) {
         q.g(str, "<anonymous parameter 0>");
         q.g(linkContentNode, "<anonymous parameter 1>");
     }

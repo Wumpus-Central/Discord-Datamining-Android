@@ -359,7 +359,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio$annotations  reason: not valid java name */
-    public static /* synthetic */ void m499getApplicationIdUtIrSio$annotations() {
+    public static /* synthetic */ void m507getApplicationIdUtIrSio$annotations() {
     }
 
     public static /* synthetic */ void getApplicationName$annotations() {
@@ -373,7 +373,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m500getChannelIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m508getChannelIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getChannelName$annotations() {
@@ -395,7 +395,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo$annotations  reason: not valid java name */
-    public static /* synthetic */ void m501getGuildIdqOKuAAo$annotations() {
+    public static /* synthetic */ void m509getGuildIdqOKuAAo$annotations() {
     }
 
     public static /* synthetic */ void getGuildName$annotations() {
@@ -427,7 +427,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0$annotations  reason: not valid java name */
-    public static /* synthetic */ void m502getMessageIdN_6c4I0$annotations() {
+    public static /* synthetic */ void m510getMessageIdN_6c4I0$annotations() {
     }
 
     public static /* synthetic */ void getMessageType$annotations() {
@@ -437,7 +437,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m503getParentIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m511getParentIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getParentName$annotations() {
@@ -474,7 +474,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU$annotations  reason: not valid java name */
-    public static /* synthetic */ void m504getUserIdwUX8bhU$annotations() {
+    public static /* synthetic */ void m512getUserIdwUX8bhU$annotations() {
     }
 
     public static /* synthetic */ void getUserUsername$annotations() {
@@ -557,7 +557,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component10-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m505component10qMVnFVQ() {
+    public final ChannelId m513component10qMVnFVQ() {
         return this.channelId;
     }
 
@@ -570,7 +570,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component13-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m506component13qMVnFVQ() {
+    public final ChannelId m514component13qMVnFVQ() {
         return this.parentId;
     }
 
@@ -583,7 +583,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component16-wUX8bhU  reason: not valid java name */
-    public final UserId m507component16wUX8bhU() {
+    public final UserId m515component16wUX8bhU() {
         return this.userId;
     }
 
@@ -600,7 +600,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component2-N_6c4I0  reason: not valid java name */
-    public final String m508component2N_6c4I0() {
+    public final String m516component2N_6c4I0() {
         return this.messageId;
     }
 
@@ -617,7 +617,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component23-qOKuAAo  reason: not valid java name */
-    public final GuildId m509component23qOKuAAo() {
+    public final GuildId m517component23qOKuAAo() {
         return this.guildId;
     }
 
@@ -638,7 +638,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component28-UtIrSio  reason: not valid java name */
-    public final ApplicationId m510component28UtIrSio() {
+    public final ApplicationId m518component28UtIrSio() {
         return this.applicationId;
     }
 
@@ -731,7 +731,7 @@ public final class NotificationData {
     }
 
     /* renamed from: copy-NwZg3Ig  reason: not valid java name */
-    public final NotificationData m511copyNwZg3Ig(String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, String str7, List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num4, String str10, String str11, Integer num5, GuildId guildId, String str12, String str13, Integer num6, String str14, ApplicationId applicationId, String str15, String str16, NotificationMessage notificationMessage, String str17, Integer num7, boolean z10, boolean z11, String str18, String str19, String str20, String str21, String str22, String str23, Boolean bool, String str24) {
+    public final NotificationData m519copyNwZg3Ig(String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, String str7, List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num4, String str10, String str11, Integer num5, GuildId guildId, String str12, String str13, Integer num6, String str14, ApplicationId applicationId, String str15, String str16, NotificationMessage notificationMessage, String str17, Integer num7, boolean z10, boolean z11, String str18, String str19, String str20, String str21, String str22, String str23, Boolean bool, String str24) {
         q.g(type, "type");
         q.g(ackChannelIds, "ackChannelIds");
         return new NotificationData(type, str, num, str2, num2, str3, l10, num3, str4, channelId, str5, str6, channelId2, str7, ackChannelIds, userId, str8, str9, num4, str10, str11, num5, guildId, str12, str13, num6, str14, applicationId, str15, str16, notificationMessage, str17, num7, z10, z11, str18, str19, str20, str21, str22, str23, bool, str24, null);
@@ -768,7 +768,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio  reason: not valid java name */
-    public final ApplicationId m512getApplicationIdUtIrSio() {
+    public final ApplicationId m520getApplicationIdUtIrSio() {
         return this.applicationId;
     }
 
@@ -785,7 +785,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m513getChannelIdqMVnFVQ() {
+    public final ChannelId m521getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -814,7 +814,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m514getGuildIdqOKuAAo() {
+    public final GuildId m522getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -855,7 +855,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m515getMessageIdN_6c4I0() {
+    public final String m523getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -868,7 +868,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m516getParentIdqMVnFVQ() {
+    public final ChannelId m524getParentIdqMVnFVQ() {
         return this.parentId;
     }
 
@@ -917,7 +917,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m517getUserIdwUX8bhU() {
+    public final UserId m525getUserIdwUX8bhU() {
         return this.userId;
     }
 
@@ -929,7 +929,7 @@ public final class NotificationData {
         int hashCode = this.type.hashCode() * 31;
         String str = this.messageId;
         int i10 = 0;
-        int i11 = (hashCode + (str == null ? 0 : MessageId.m577hashCodeimpl(str))) * 31;
+        int i11 = (hashCode + (str == null ? 0 : MessageId.m585hashCodeimpl(str))) * 31;
         Integer num = this.messageActivityType;
         int hashCode2 = (i11 + (num == null ? 0 : num.hashCode())) * 31;
         String str2 = this.messageApplicationName;
@@ -945,17 +945,17 @@ public final class NotificationData {
         String str4 = this.channelName;
         int hashCode8 = (hashCode7 + (str4 == null ? 0 : str4.hashCode())) * 31;
         ChannelId channelId = this.channelId;
-        int i12 = (hashCode8 + (channelId == null ? 0 : ChannelId.m551hashCodeimpl(channelId.m555unboximpl()))) * 31;
+        int i12 = (hashCode8 + (channelId == null ? 0 : ChannelId.m559hashCodeimpl(channelId.m563unboximpl()))) * 31;
         String str5 = this.channelIcon;
         int hashCode9 = (i12 + (str5 == null ? 0 : str5.hashCode())) * 31;
         String str6 = this.parentName;
         int hashCode10 = (hashCode9 + (str6 == null ? 0 : str6.hashCode())) * 31;
         ChannelId channelId2 = this.parentId;
-        int i13 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m551hashCodeimpl(channelId2.m555unboximpl()))) * 31;
+        int i13 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m559hashCodeimpl(channelId2.m563unboximpl()))) * 31;
         String str7 = this.channelRtcRegion;
         int hashCode11 = (((i13 + (str7 == null ? 0 : str7.hashCode())) * 31) + this.ackChannelIds.hashCode()) * 31;
         UserId userId = this.userId;
-        int i14 = (hashCode11 + (userId == null ? 0 : UserId.m615hashCodeimpl(userId.m619unboximpl()))) * 31;
+        int i14 = (hashCode11 + (userId == null ? 0 : UserId.m623hashCodeimpl(userId.m627unboximpl()))) * 31;
         String str8 = this.userUsername;
         int hashCode12 = (i14 + (str8 == null ? 0 : str8.hashCode())) * 31;
         String str9 = this.userGlobalName;
@@ -969,7 +969,7 @@ public final class NotificationData {
         Integer num5 = this.relationshipType;
         int hashCode17 = (hashCode16 + (num5 == null ? 0 : num5.hashCode())) * 31;
         GuildId guildId = this.guildId;
-        int i15 = (hashCode17 + (guildId == null ? 0 : GuildId.m564hashCodeimpl(guildId.m568unboximpl()))) * 31;
+        int i15 = (hashCode17 + (guildId == null ? 0 : GuildId.m572hashCodeimpl(guildId.m576unboximpl()))) * 31;
         String str12 = this.guildName;
         int hashCode18 = (i15 + (str12 == null ? 0 : str12.hashCode())) * 31;
         String str13 = this.guildIcon;
@@ -979,7 +979,7 @@ public final class NotificationData {
         String str14 = this.activityName;
         int hashCode21 = (hashCode20 + (str14 == null ? 0 : str14.hashCode())) * 31;
         ApplicationId applicationId = this.applicationId;
-        int i16 = (hashCode21 + (applicationId == null ? 0 : ApplicationId.m538hashCodeimpl(applicationId.m542unboximpl()))) * 31;
+        int i16 = (hashCode21 + (applicationId == null ? 0 : ApplicationId.m546hashCodeimpl(applicationId.m550unboximpl()))) * 31;
         String str15 = this.applicationName;
         int hashCode22 = (i16 + (str15 == null ? 0 : str15.hashCode())) * 31;
         String str16 = this.applicationIcon;
@@ -1032,7 +1032,7 @@ public final class NotificationData {
     public String toString() {
         String str = this.type;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m578toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m586toStringimpl(str2);
         Integer num = this.messageActivityType;
         String str4 = this.messageApplicationName;
         Integer num2 = this.messageType;

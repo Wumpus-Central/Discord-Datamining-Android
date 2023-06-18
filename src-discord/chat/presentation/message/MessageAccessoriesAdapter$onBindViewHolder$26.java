@@ -25,7 +25,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$26 extends s imple
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -43,6 +43,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$26 extends s imple
         q.d(str);
         channelId = this.this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo144onLongPressReactionEqy5D80(str, channelId.m555unboximpl(), reaction);
+        chatEventHandler.mo144onLongPressReactionEqy5D80(str, channelId.m563unboximpl(), reaction);
     }
 }

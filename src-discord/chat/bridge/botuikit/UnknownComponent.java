@@ -115,7 +115,7 @@ public final class UnknownComponent extends Component {
         L_0x0041:
             if (r0 == 0) goto L_0x0051
             yj.f r0 = new yj.f
-            yj.m0 r1 = yj.m0.f32999a
+            yj.m0 r1 = yj.m0.f33006a
             r0.<init>(r1)
             java.util.List r4 = r4.getIndices()
             r5.q(r6, r2, r0, r4)

@@ -29,9 +29,9 @@ public final class MessageComponentsAccessory extends MessageAccessory {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ MessageComponentsAccessory m258copyu7_MRrM$default(MessageComponentsAccessory messageComponentsAccessory, String str, long j10, List list, int i10, Object obj) {
+    public static /* synthetic */ MessageComponentsAccessory m260copyu7_MRrM$default(MessageComponentsAccessory messageComponentsAccessory, String str, long j10, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = messageComponentsAccessory.mo204getMessageId3Eiw7ao();
+            str = messageComponentsAccessory.mo206getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             j10 = messageComponentsAccessory.messageFlags;
@@ -39,12 +39,12 @@ public final class MessageComponentsAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             list = messageComponentsAccessory.messageComponents;
         }
-        return messageComponentsAccessory.m260copyu7_MRrM(str, j10, list);
+        return messageComponentsAccessory.m262copyu7_MRrM(str, j10, list);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m259component13Eiw7ao() {
-        return mo204getMessageId3Eiw7ao();
+    public final String m261component13Eiw7ao() {
+        return mo206getMessageId3Eiw7ao();
     }
 
     public final long component2() {
@@ -56,7 +56,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final MessageComponentsAccessory m260copyu7_MRrM(String messageId, long j10, List<? extends Component> messageComponents) {
+    public final MessageComponentsAccessory m262copyu7_MRrM(String messageId, long j10, List<? extends Component> messageComponents) {
         q.g(messageId, "messageId");
         q.g(messageComponents, "messageComponents");
         return new MessageComponentsAccessory(messageId, j10, messageComponents, null);
@@ -70,7 +70,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
             return false;
         }
         MessageComponentsAccessory messageComponentsAccessory = (MessageComponentsAccessory) obj;
-        return MessageId.m576equalsimpl0(mo204getMessageId3Eiw7ao(), messageComponentsAccessory.mo204getMessageId3Eiw7ao()) && this.messageFlags == messageComponentsAccessory.messageFlags && q.b(this.messageComponents, messageComponentsAccessory.messageComponents);
+        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), messageComponentsAccessory.mo206getMessageId3Eiw7ao()) && this.messageFlags == messageComponentsAccessory.messageFlags && q.b(this.messageComponents, messageComponentsAccessory.messageComponents);
     }
 
     public final List<Component> getMessageComponents() {
@@ -83,16 +83,16 @@ public final class MessageComponentsAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo204getMessageId3Eiw7ao() {
+    public String mo206getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m577hashCodeimpl(mo204getMessageId3Eiw7ao()) * 31) + b.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
+        return (((MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31) + b.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m578toStringimpl(mo204getMessageId3Eiw7ao());
+        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
         long j10 = this.messageFlags;
         List<Component> list = this.messageComponents;
         return "MessageComponentsAccessory(messageId=" + str + ", messageFlags=" + j10 + ", messageComponents=" + list + ")";

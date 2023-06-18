@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:interpolator="@anim/rns_android_slide_standard_accelerate" android:duration="450" android:fillBefore="true" android:fillAfter="true" android:startOffset="0" android:fromAlpha="1.0" android:toAlpha="1.0" android:fillEnabled="true" />
+    <translate android:interpolator="@anim/rns_android_slide_fast_out_extra_slow_in" android:duration="450" android:fillBefore="true" android:fillAfter="true" android:startOffset="0" android:fromXDelta="0.0" android:toXDelta="-10.000002%" android:fillEnabled="true" />
+</set>

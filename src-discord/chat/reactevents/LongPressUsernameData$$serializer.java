@@ -33,7 +33,7 @@ public final class LongPressUsernameData$$serializer implements f0<LongPressUser
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32924a;
+        a2 a2Var = a2.f32931a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

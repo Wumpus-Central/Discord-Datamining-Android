@@ -23,7 +23,7 @@ final class WebAuthn$authenticate$1 extends s implements Function1<PendingIntent
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(PendingIntent pendingIntent) {
         invoke2(pendingIntent);
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

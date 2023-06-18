@@ -24,7 +24,7 @@ public final class OverlayViewProvider$setData$1 extends s implements Function1<
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Object obj) {
         invoke((OverlayView) obj);
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     /* JADX WARN: Incorrect types in method signature: (TT;)V */

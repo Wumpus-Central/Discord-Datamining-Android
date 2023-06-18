@@ -3,6 +3,7 @@ package com.discord.device;
 import android.content.Context;
 import android.os.Build;
 import com.discord.codegen.NativeDeviceManagerSpec;
+import com.discord.device.utils.IsGestureNavigationEnabledKt;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import java.util.Map;
@@ -65,7 +66,7 @@ public final class DeviceManagerModule extends NativeDeviceManagerSpec {
     @Override // com.discord.codegen.NativeDeviceManagerSpec
     protected Map<String, ? extends Object> getTypedExportedConstants() {
         Map<String, ? extends Object> l10;
-        l10 = v.l(x.a("systemVersion", String.valueOf(Build.VERSION.SDK_INT)), x.a("device", Build.DEVICE), x.a("deviceModel", Build.MODEL), x.a("deviceBrand", Build.BRAND), x.a("deviceProduct", Build.PRODUCT), x.a("deviceManufacturer", Build.MANUFACTURER), x.a("isTablet", Boolean.valueOf(Companion.isTablet$default(Companion, this.reactContext, 0, 1, null))), x.a("smallestScreenWidth", Integer.valueOf(this.reactContext.getResources().getConfiguration().smallestScreenWidthDp)));
+        l10 = v.l(x.a("systemVersion", String.valueOf(Build.VERSION.SDK_INT)), x.a("device", Build.DEVICE), x.a("deviceModel", Build.MODEL), x.a("deviceBrand", Build.BRAND), x.a("deviceProduct", Build.PRODUCT), x.a("deviceManufacturer", Build.MANUFACTURER), x.a("isTablet", Boolean.valueOf(Companion.isTablet$default(Companion, this.reactContext, 0, 1, null))), x.a("isGestureNavigationEnabled", Boolean.valueOf(IsGestureNavigationEnabledKt.isGestureNavigationEnabled(this.reactContext))), x.a("smallestScreenWidth", Integer.valueOf(this.reactContext.getResources().getConfiguration().smallestScreenWidthDp)));
         return l10;
     }
 }

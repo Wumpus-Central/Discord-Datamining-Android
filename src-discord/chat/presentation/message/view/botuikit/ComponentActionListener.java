@@ -8,7 +8,7 @@ import kotlin.Metadata;
 /* loaded from: classes8.dex */
 public interface ComponentActionListener {
     /* renamed from: onTapButtonActionComponent-y43Yjpg  reason: not valid java name */
-    void mo307onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> list);
+    void mo309onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> list);
 
     void onTapSelectActionComponent(SelectComponent selectComponent);
 

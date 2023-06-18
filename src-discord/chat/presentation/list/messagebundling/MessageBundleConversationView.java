@@ -70,7 +70,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        ChatEventHandler.DefaultImpls.m176onTapReactionu7_MRrM$default(eventHandler, message.m17getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m177onTapReactionu7_MRrM$default(eventHandler, message.m17getId3Eiw7ao(), null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

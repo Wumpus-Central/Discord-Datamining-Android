@@ -26,7 +26,7 @@ public final class ReactionsViewHolder extends MessagePartViewHolder {
     }
 
     /* renamed from: bind-oSm889w  reason: not valid java name */
-    public final void m328bindoSm889w(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme, boolean z12) {
+    public final void m330bindoSm889w(String messageId, List<MessageReaction> reactions, boolean z10, boolean z11, String addReactionLabel, String addNewReactionAccessibilityLabel, String addNewBurstReactionAccessibilityLabel, ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, View.OnClickListener onAddBurstReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, DiscordTheme discordTheme, boolean z12) {
         q.g(messageId, "messageId");
         q.g(reactions, "reactions");
         q.g(addReactionLabel, "addReactionLabel");

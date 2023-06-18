@@ -27,7 +27,7 @@ public final class MediaEngineModule$addSpeedTestConnectionCallbacks$2 extends s
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(String str, Integer num, Integer num2, Integer num3) {
         invoke(str, num.intValue(), num2.intValue(), num3.intValue());
-        return Unit.f22104a;
+        return Unit.f22111a;
     }
 
     public final void invoke(String server, int i10, int i11, int i12) {

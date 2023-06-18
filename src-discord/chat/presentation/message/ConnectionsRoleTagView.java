@@ -50,11 +50,11 @@ public final class ConnectionsRoleTagView extends FrameLayout {
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler eventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(connectionsRoleTag, "$connectionsRoleTag");
-        eventHandler.onTapConnectionsRoleTag(UserId.m617toStringimpl(userId.m619unboximpl()), GuildId.m566toStringimpl(guildId.m568unboximpl()), ChannelId.m553toStringimpl(channelId.m555unboximpl()), connectionsRoleTag.getId());
+        eventHandler.onTapConnectionsRoleTag(UserId.m625toStringimpl(userId.m627unboximpl()), GuildId.m574toStringimpl(guildId.m576unboximpl()), ChannelId.m561toStringimpl(channelId.m563unboximpl()), connectionsRoleTag.getId());
     }
 
     /* renamed from: configureConnectionsRoleTag-uESh2Cg  reason: not valid java name */
-    public final void m184configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
+    public final void m185configureConnectionsRoleTaguESh2Cg(final UserId userId, final GuildId guildId, final ChannelId channelId, final ConnectionsRoleTag connectionsRoleTag, final ChatEventHandler eventHandler) {
         q.g(connectionsRoleTag, "connectionsRoleTag");
         q.g(eventHandler, "eventHandler");
         ImageView imageView = this.binding.verifiedCheckIconBackground;

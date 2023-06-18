@@ -749,6 +749,9 @@
     <color name="red_860">#ff280808</color>
     <color name="red_900">#ff220606</color>
     <color name="reddit">#ffff4500</color>
+    <color name="redesign_activity_card_border_dark">#05ffffff</color>
+    <color name="redesign_activity_card_border_darker">#05ffffff</color>
+    <color name="redesign_activity_card_border_light">#3d80848e</color>
     <color name="redesign_button_overlay_alpha_background_dark">#8a000000</color>
     <color name="redesign_button_overlay_alpha_background_darker">#8a000000</color>
     <color name="redesign_button_overlay_alpha_background_light">#8a000000</color>

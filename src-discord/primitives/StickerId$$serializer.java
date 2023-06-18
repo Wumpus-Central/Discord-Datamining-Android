@@ -29,18 +29,18 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33040a};
+        return new KSerializer[]{w0.f33047a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return StickerId.m597boximpl(m607deserializeaEuejx8(decoder));
+        return StickerId.m605boximpl(m615deserializeaEuejx8(decoder));
     }
 
     /* renamed from: deserialize-aEuejx8  reason: not valid java name */
-    public long m607deserializeaEuejx8(Decoder decoder) {
+    public long m615deserializeaEuejx8(Decoder decoder) {
         q.g(decoder, "decoder");
-        return StickerId.m598constructorimpl(decoder.q(getDescriptor()).l());
+        return StickerId.m606constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override // vj.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m608serializePw5X2A(encoder, ((StickerId) obj).m606unboximpl());
+        m616serializePw5X2A(encoder, ((StickerId) obj).m614unboximpl());
     }
 
     /* renamed from: serialize-Pw5-X2A  reason: not valid java name */
-    public void m608serializePw5X2A(Encoder encoder, long j10) {
+    public void m616serializePw5X2A(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

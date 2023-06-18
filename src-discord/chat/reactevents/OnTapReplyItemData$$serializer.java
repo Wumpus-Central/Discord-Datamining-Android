@@ -63,7 +63,7 @@ public final class OnTapReplyItemData$$serializer implements f0<OnTapReplyItemDa
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new OnTapReplyItemData(i10, messageId != null ? messageId.m580unboximpl() : null, null, null);
+        return new OnTapReplyItemData(i10, messageId != null ? messageId.m588unboximpl() : null, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

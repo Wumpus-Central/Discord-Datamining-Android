@@ -20,15 +20,15 @@ public final class IntervalFlowKt {
     }
 
     /* renamed from: intervalFlow-QTBD994  reason: not valid java name */
-    public static final Flow<Unit> m448intervalFlowQTBD994(long j10, long j11) {
+    public static final Flow<Unit> m456intervalFlowQTBD994(long j10, long j11) {
         return d.e(new IntervalFlowKt$intervalFlow$1(j11, j10, null));
     }
 
     /* renamed from: intervalFlow-QTBD994$default  reason: not valid java name */
-    public static /* synthetic */ Flow m449intervalFlowQTBD994$default(long j10, long j11, int i10, Object obj) {
+    public static /* synthetic */ Flow m457intervalFlowQTBD994$default(long j10, long j11, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             j11 = j10;
         }
-        return m448intervalFlowQTBD994(j10, j11);
+        return m456intervalFlowQTBD994(j10, j11);
     }
 }

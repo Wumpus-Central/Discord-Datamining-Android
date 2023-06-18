@@ -89,7 +89,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         q.f(context, "context");
         simpleDraweeView.setImageURI(MessageKt.avatarUrl(message, context));
         this.binding.authorName.setText(message.getUsername());
-        this.binding.messageTagView.configureTagView(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler);
+        this.binding.messageTagView.m201configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.getTagType());
         this.binding.automodMessageContextHeader.setText(autoModerationContext.getHeaderText());
         this.binding.timestamp.setText(message.getTimestamp());
         TextView configureAuthor$lambda$8 = this.binding.automodMessageChannel;
@@ -123,10 +123,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.g(eventHandler, "$eventHandler");
         q.g(automodContext, "$automodContext");
-        String str2 = ChannelId.m553toStringimpl(automodContext.getMessage().m25getChannelIdo4g7jtM());
+        String str2 = ChannelId.m561toStringimpl(automodContext.getMessage().m25getChannelIdo4g7jtM());
         GuildId guildId = automodContext.getMessage().m26getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m566toStringimpl(guildId.m568unboximpl());
+            str = GuildId.m574toStringimpl(guildId.m576unboximpl());
         } else {
             str = null;
         }
@@ -195,7 +195,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         } else {
             z10 = false;
         }
-        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, -130, 62, (DefaultConstructorMarker) null);
+        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, -130, 125, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
             this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m17getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
@@ -266,7 +266,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m199setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m200setAccessoriesRC8ZMxU(message.m17getId3Eiw7ao(), message.m15getChannelIdo4g7jtM(), message.m16getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

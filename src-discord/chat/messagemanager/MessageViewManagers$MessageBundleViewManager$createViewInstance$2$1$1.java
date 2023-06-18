@@ -30,8 +30,8 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m138invoke1xi1bu0(messageId.m580unboximpl());
-        return Unit.f22104a;
+        m138invoke1xi1bu0(messageId.m588unboximpl());
+        return Unit.f22111a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
