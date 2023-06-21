@@ -255,6 +255,10 @@ public final class MessageViewManagers {
     private MessageViewManagers() {
     }
 
+    public static final /* synthetic */ void access$updateNodeSize(MessageViewManagers messageViewManagers, ReactContext reactContext, int i10, int i11, int i12) {
+        messageViewManagers.updateNodeSize(reactContext, i10, i11, i12);
+    }
+
     /* JADX INFO: Access modifiers changed from: private */
     public final MessageRow convertRowJsonToMessageRow(String str) {
         Json json2 = json;
