@@ -60,6 +60,7 @@ public final class NumericUtils {
 
     public final String toLetter(int i10) {
         boolean z10;
+        int c10;
         if (i10 >= 1) {
             z10 = true;
         } else {
@@ -71,7 +72,7 @@ public final class NumericUtils {
             return letters.get(i10 - 1);
         } else {
             int i11 = i10 / 26;
-            int c10 = j.c(i10 % 26, 1);
+            c10 = j.c(i10 % 26, 1);
             return toLetter(i11) + toLetter(c10);
         }
     }

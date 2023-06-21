@@ -7,7 +7,6 @@ import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.LeadingMarginSpan;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
 import com.discord.chat.bridge.contentnode.ContentNode;
@@ -27,7 +26,6 @@ import com.discord.span.utilities.spannable.BulletSpan;
 import com.discord.span.utilities.spannable.OrderedListBulletSpan;
 import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.DiscordTheme;
-import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.controller.a;
 import com.facebook.drawee.drawable.ScalingUtils;
@@ -36,7 +34,6 @@ import com.facebook.drawee.generic.a;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.facebook.react.uimanager.ViewProps;
-import j$.util.Spliterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -294,10 +291,6 @@ public final class TextUtilsKt {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
         throw new kg.q();
-    }
-
-    public static /* synthetic */ DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {
-        return toSpannable(structurableText, context, str, z10, z11, z12, (i10 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : function1, (i10 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function12, (i10 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (i10 & Spliterator.NONNULL) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : function4, (i10 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function2, (i10 & Spliterator.IMMUTABLE) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : function13, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : function14, (i10 & 4096) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : function15, (i10 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function16, (i10 & Spliterator.SUBSIZED) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : function17, (32768 & i10) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & i10) != 0 ? false : z13, (131072 & i10) != 0 ? ThemeManagerKt.getTheme() : discordTheme, (i10 & 262144) != 0 ? -1.0f : f10);
     }
 
     /* JADX WARN: Type inference failed for: r12v1, types: [com.discord.chat.bridge.contentnode.ContentNode, java.lang.Object] */
