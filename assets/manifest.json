@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "185205",
+        "build": "185206",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "4b24001d122754ac83dd358e857e5f8b",
+        "app/src/main/assets/index.android.bundle": "6fb2cc029bee5730b6545f5a88f3a4d8",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -1422,7 +1422,6 @@
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_arrowright.png": "694e7c96630564f469346c40d12ebe23",
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_arrowsmright.png": "0cb47eea3ebf27be5d50b0fb4f6879ab",
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_categoryarrowalt.png": "c22c7a1f03fd36ff9cd60e43beb24d85",
-        "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_chatbubble.png": "fe798df267b92c432ccc5edc9547a0f9",
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_gtmannouncementwumpus.png": "3e47229b94c88c5615e209f911b855e0",
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_icactivity.png": "915f5b0aac2b70a8e3cfc74f05a4397b",
         "app/src/main/res/drawable-xhdpi/modules_main_tabs_v2_native_images_icmessages.png": "b6be7854a75f8aee9877b0ef30ff2f72",
@@ -2611,7 +2610,6 @@
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_arrowright.png": "746779b809bcee08ae0ab6f32b128558",
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_arrowsmright.png": "051c81d0e0e59eef39897b7bdc4ca3e6",
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_categoryarrowalt.png": "3cfbb10f01ca89d87465bd4ab06a46c3",
-        "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_chatbubble.png": "f884301063fc759f429e16268d5e7782",
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_gtmannouncementwumpus.png": "fb454560db05a5d4a7df0c14e491dd79",
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_icactivity.png": "7a8925d9ccf416cb6d3810d7bf6fce23",
         "app/src/main/res/drawable-xxhdpi/modules_main_tabs_v2_native_images_icmessages.png": "8ac88d3f644da7fa0b5b7f790fba4772",
@@ -2782,7 +2780,6 @@
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_arrowdown.png": "06e2c53d3c895e2b6bdee49982a4f6f8",
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_arrowright.png": "87167c788d3e39957e49b13dbbbc94db",
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_categoryarrowalt.png": "b56a52e482abe65294985f540d515123",
-        "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_chatbubble.png": "34aa22b6848b363bcf813bca10cb0f00",
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_gtmannouncementwumpus.png": "b40c223ba29b8488f3b5f771502f61bb",
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_icactivity.png": "0971228d7f64d771c4d02ea88dbb6009",
         "app/src/main/res/drawable-xxxhdpi/modules_main_tabs_v2_native_images_icmessages.png": "49ec61c5a95ad1e22e6e681287bbab99",
