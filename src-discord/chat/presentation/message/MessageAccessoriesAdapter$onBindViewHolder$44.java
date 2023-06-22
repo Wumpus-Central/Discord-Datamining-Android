@@ -22,7 +22,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$44 exten
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(GuildId guildId, ChannelId channelId, ChannelId channelId2, MessageId messageId) {
         m205invokekUTrps(guildId.m585unboximpl(), channelId.m572unboximpl(), channelId2.m572unboximpl(), messageId.m597unboximpl());
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke-kUTrp-s  reason: not valid java name */

@@ -117,7 +117,7 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
             public final String toDecodedString() {
                 byte[] buf = ((ByteArrayOutputStream) this).buf;
                 q.f(buf, "buf");
-                return new String(buf, 0, ((ByteArrayOutputStream) this).count, d.f26401b);
+                return new String(buf, 0, ((ByteArrayOutputStream) this).count, d.f26400b);
             }
         }
 

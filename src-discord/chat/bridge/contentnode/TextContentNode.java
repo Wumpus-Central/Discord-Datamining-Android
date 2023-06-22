@@ -66,7 +66,7 @@ public final class TextContentNode extends ContentNode {
             z10 = false;
         }
         if (z10) {
-            output.u(serialDesc, 0, a2.f32934a, self.content);
+            output.u(serialDesc, 0, a2.f32933a, self.content);
         }
     }
 

@@ -26,7 +26,7 @@ final class CrashReportingModule$addListener$1 extends s implements Function2<Hi
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(HistoricalProcessExitReason.Reason reason, SystemLogUtils.Tombstone tombstone) {
         invoke2(reason, tombstone);
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

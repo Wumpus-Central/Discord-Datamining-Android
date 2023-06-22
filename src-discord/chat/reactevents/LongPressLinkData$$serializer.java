@@ -33,7 +33,7 @@ public final class LongPressLinkData$$serializer implements f0<LongPressLinkData
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(a2.f32934a)};
+        return new KSerializer[]{a.u(a2.f32933a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -44,7 +44,7 @@ public final class LongPressLinkData$$serializer implements f0<LongPressLinkData
         c b10 = decoder.b(descriptor2);
         int i10 = 1;
         if (b10.p()) {
-            obj = b10.n(descriptor2, 0, a2.f32934a, null);
+            obj = b10.n(descriptor2, 0, a2.f32933a, null);
         } else {
             int i11 = 0;
             obj = null;
@@ -53,7 +53,7 @@ public final class LongPressLinkData$$serializer implements f0<LongPressLinkData
                 if (o10 == -1) {
                     i10 = 0;
                 } else if (o10 == 0) {
-                    obj = b10.n(descriptor2, 0, a2.f32934a, obj);
+                    obj = b10.n(descriptor2, 0, a2.f32933a, obj);
                     i11 |= 1;
                 } else {
                     throw new n(o10);

@@ -23,7 +23,7 @@ final class NotificationDataUtilsKt$getContent$8 extends s implements Function1<
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

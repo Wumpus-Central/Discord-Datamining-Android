@@ -70,7 +70,7 @@ public final class VoiceMessagePlaybackFailedData implements ReactEvent {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
-        output.u(serialDesc, 1, a2.f32934a, self.errorMessage);
+        output.u(serialDesc, 1, a2.f32933a, self.errorMessage);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */

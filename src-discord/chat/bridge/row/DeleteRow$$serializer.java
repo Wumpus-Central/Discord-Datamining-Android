@@ -35,7 +35,7 @@ public final class DeleteRow$$serializer implements f0<DeleteRow> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f33009a, ChangeType.Serializer.INSTANCE};
+        return new KSerializer[]{m0.f33008a, ChangeType.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

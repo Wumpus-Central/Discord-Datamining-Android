@@ -33,7 +33,7 @@ public final class TapActivityLauncherEmbedData$$serializer implements f0<TapAct
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
+        a2 a2Var = a2.f32933a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

@@ -799,7 +799,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else {
             throw new kg.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f22114a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f22113a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

@@ -21,7 +21,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 exte
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker, MessageId messageId) {
         m207invokeAyv7vGE(sticker, messageId.m597unboximpl());
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke-Ayv7vGE  reason: not valid java name */

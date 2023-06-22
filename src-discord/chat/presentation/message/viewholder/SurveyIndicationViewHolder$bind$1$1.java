@@ -21,7 +21,7 @@ public /* synthetic */ class SurveyIndicationViewHolder$bind$1$1 extends n imple
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m340invokentcYbpo(messageId.m597unboximpl(), linkContentNode);
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

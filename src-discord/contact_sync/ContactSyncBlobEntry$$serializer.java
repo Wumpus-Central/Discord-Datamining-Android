@@ -38,8 +38,8 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
-        return new KSerializer[]{a2Var, a2Var, h.f32976a, a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f32933a;
+        return new KSerializer[]{a2Var, a2Var, h.f32975a, a2Var, a2Var, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

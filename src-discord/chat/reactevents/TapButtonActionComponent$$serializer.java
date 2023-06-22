@@ -43,7 +43,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f33055a, a.u(a2.f32934a), ApplicationId$$serializer.INSTANCE, f.f22608c};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f33054a, a.u(a2.f32933a), ApplicationId$$serializer.INSTANCE, f.f22607c};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,9 +60,9 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
         if (b10.p()) {
             obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             d10 = b10.F(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, a2.f32934a, null);
+            obj = b10.n(descriptor2, 2, a2.f32933a, null);
             obj3 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, null);
-            obj2 = b10.y(descriptor2, 4, f.f22608c, null);
+            obj2 = b10.y(descriptor2, 4, f.f22607c, null);
             i10 = 31;
         } else {
             double d11 = 0.0d;
@@ -83,13 +83,13 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
                     d11 = b10.F(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f32934a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f32933a, obj5);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj6 = b10.y(descriptor2, 3, ApplicationId$$serializer.INSTANCE, obj6);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj7 = b10.y(descriptor2, 4, f.f22608c, obj7);
+                    obj7 = b10.y(descriptor2, 4, f.f22607c, obj7);
                     i11 |= 16;
                 } else {
                     throw new n(o10);

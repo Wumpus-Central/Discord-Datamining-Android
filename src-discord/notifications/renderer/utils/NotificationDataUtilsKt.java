@@ -105,7 +105,7 @@ public final class NotificationDataUtilsKt {
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f22114a;
+            Unit unit = Unit.f22113a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -397,7 +397,7 @@ public final class NotificationDataUtilsKt {
                     return new KvMessageEntry(i10, d10, notificationMessage, str2, channelId.m572unboximpl(), null);
                 }
             } else {
-                JsonElement g10 = Json.f22615d.g(str);
+                JsonElement g10 = Json.f22614d.g(str);
                 i11 = j.i();
                 JsonObject author2 = message.getAuthor();
                 q.d(author2);

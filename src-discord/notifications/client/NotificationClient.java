@@ -120,7 +120,7 @@ public final class NotificationClient {
                                 }
                                 String str5 = ChannelId.m570toStringimpl(channelId.m572unboximpl());
                                 String str6 = MessageId.m595toStringimpl(str2);
-                                Json.a aVar = Json.f22615d;
+                                Json.a aVar = Json.f22614d;
                                 aVar.a();
                                 DiscordMobileApi.putMessage(str4, str, str5, str6, aVar.c(KvMessageEntry.Companion.serializer(), kvMessage));
                             }

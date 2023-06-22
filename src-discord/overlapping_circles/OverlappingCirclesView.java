@@ -103,12 +103,14 @@ public final class OverlappingCirclesView extends LinearLayout {
             q.f(u0.a(this, new Runnable() { // from class: com.discord.overlapping_circles.OverlappingCirclesView$OverflowItem$special$$inlined$doOnPreDraw$1
                 @Override // java.lang.Runnable
                 public final void run() {
+                    int c10;
                     View view = this;
                     OverlappingCirclesView.OverflowItem overflowItem = this;
                     ViewGroup.LayoutParams layoutParams = overflowItem.getLayoutParams();
                     if (layoutParams != null) {
                         LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) layoutParams;
-                        layoutParams2.width = j.c(view.getWidth(), view.getHeight());
+                        c10 = j.c(view.getWidth(), view.getHeight());
+                        layoutParams2.width = c10;
                         overflowItem.setLayoutParams(layoutParams2);
                         return;
                     }
@@ -306,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22114a;
+            Unit unit = Unit.f22113a;
             addView(overflowItem, layoutParams2);
         }
     }
@@ -314,6 +316,7 @@ public final class OverlappingCirclesView extends LinearLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OverlappingCirclesView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
+        int c10;
         q.g(context, "context");
         this.maxItems = 3;
         this.overlapPx = SizeUtilsKt.getDpToPx(4);
@@ -328,7 +331,8 @@ public final class OverlappingCirclesView extends LinearLayout {
         q.f(OverlappingCirclesView, "OverlappingCirclesView");
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, OverlappingCirclesView, 0, 0);
         q.f(obtainStyledAttributes, "obtainStyledAttributes(s…efStyleAttr, defStyleRes)");
-        this.maxItems = j.c(obtainStyledAttributes.getInt(R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
+        c10 = j.c(obtainStyledAttributes.getInt(R.styleable.OverlappingCirclesView_oc_maxItems, this.maxItems), 0);
+        this.maxItems = c10;
         this.overlapPx = obtainStyledAttributes.getDimensionPixelSize(R.styleable.OverlappingCirclesView_oc_overlap, this.overlapPx);
         this.separatorSizePx = obtainStyledAttributes.getDimensionPixelSize(R.styleable.OverlappingCirclesView_oc_separation, this.separatorSizePx);
         this.imageLoadingColor = obtainStyledAttributes.getColor(R.styleable.OverlappingCirclesView_oc_circleBgColor, this.imageLoadingColor);

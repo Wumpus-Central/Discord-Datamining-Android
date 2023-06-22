@@ -78,7 +78,7 @@ public final class TapTagData implements ReactEvent {
         q.g(serialDesc, "serialDesc");
         output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
         output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m563boximpl(self.channelId));
-        output.u(serialDesc, 2, a2.f32934a, self.tagType);
+        output.u(serialDesc, 2, a2.f32933a, self.tagType);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */

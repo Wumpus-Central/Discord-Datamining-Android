@@ -47,9 +47,9 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33009a;
-        a2 a2Var = a2.f32934a;
-        h hVar = h.f32976a;
+        m0 m0Var = m0.f33008a;
+        a2 a2Var = a2.f32933a;
+        h hVar = h.f32975a;
         return new KSerializer[]{ChangeType.Serializer.INSTANCE, m0Var, a2Var, a2Var, m0Var, a.u(hVar), a.u(hVar), a.u(Summary$$serializer.INSTANCE)};
     }
 
@@ -75,7 +75,7 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
             str2 = b10.m(descriptor2, 2);
             str = b10.m(descriptor2, 3);
             i10 = b10.i(descriptor2, 4);
-            h hVar = h.f32976a;
+            h hVar = h.f32975a;
             obj = b10.n(descriptor2, 5, hVar, null);
             obj2 = b10.n(descriptor2, 6, hVar, null);
             obj3 = b10.n(descriptor2, 7, Summary$$serializer.INSTANCE, null);
@@ -121,11 +121,11 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
                         i16 |= 16;
                         break;
                     case 5:
-                        obj8 = b10.n(descriptor2, 5, h.f32976a, obj8);
+                        obj8 = b10.n(descriptor2, 5, h.f32975a, obj8);
                         i16 |= 32;
                         break;
                     case 6:
-                        obj6 = b10.n(descriptor2, i14, h.f32976a, obj6);
+                        obj6 = b10.n(descriptor2, i14, h.f32975a, obj6);
                         i16 |= 64;
                         break;
                     case 7:

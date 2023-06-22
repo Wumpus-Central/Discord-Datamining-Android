@@ -36,7 +36,7 @@ public final class GuildNameContentNode$$serializer implements f0<GuildNameConte
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
+        a2 a2Var = a2.f32933a;
         return new KSerializer[]{a.u(a2Var), a2Var, a.u(a2Var)};
     }
 
@@ -51,7 +51,7 @@ public final class GuildNameContentNode$$serializer implements f0<GuildNameConte
         c b10 = decoder.b(descriptor2);
         Object obj3 = null;
         if (b10.p()) {
-            a2 a2Var = a2.f32934a;
+            a2 a2Var = a2.f32933a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             str = b10.m(descriptor2, 1);
             obj2 = b10.n(descriptor2, 2, a2Var, null);
@@ -66,13 +66,13 @@ public final class GuildNameContentNode$$serializer implements f0<GuildNameConte
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj3 = b10.n(descriptor2, 0, a2.f32934a, obj3);
+                    obj3 = b10.n(descriptor2, 0, a2.f32933a, obj3);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str2 = b10.m(descriptor2, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj4 = b10.n(descriptor2, 2, a2.f32934a, obj4);
+                    obj4 = b10.n(descriptor2, 2, a2.f32933a, obj4);
                     i11 |= 4;
                 } else {
                     throw new n(o10);

@@ -22,7 +22,7 @@ final class BrowserManagerModule$openInChromeURL$1 extends s implements Function
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

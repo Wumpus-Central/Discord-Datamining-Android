@@ -32,7 +32,7 @@ public final class OnZoomChangedEvent$$serializer implements f0<OnZoomChangedEve
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{e0.f32959a};
+        return new KSerializer[]{e0.f32958a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -59,7 +59,7 @@ public final class OnPasteImageEvent implements ReactEvent {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         output.z(serialDesc, 0, self.url);
-        output.u(serialDesc, 1, a2.f32934a, self.type);
+        output.u(serialDesc, 1, a2.f32933a, self.type);
     }
 
     public final String component1() {

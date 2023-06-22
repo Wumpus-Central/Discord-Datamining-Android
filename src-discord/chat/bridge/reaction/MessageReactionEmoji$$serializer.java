@@ -40,8 +40,8 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
-        return new KSerializer[]{a.u(a2Var), a2Var, a2Var, a.u(a2Var), a.u(h.f32976a)};
+        a2 a2Var = a2.f32933a;
+        return new KSerializer[]{a.u(a2Var), a2Var, a2Var, a.u(a2Var), a.u(h.f32975a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,12 +57,12 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
         c b10 = decoder.b(descriptor2);
         Object obj4 = null;
         if (b10.p()) {
-            a2 a2Var = a2.f32934a;
+            a2 a2Var = a2.f32933a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             str = b10.m(descriptor2, 1);
             str2 = b10.m(descriptor2, 2);
             obj3 = b10.n(descriptor2, 3, a2Var, null);
-            obj2 = b10.n(descriptor2, 4, h.f32976a, null);
+            obj2 = b10.n(descriptor2, 4, h.f32975a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -76,7 +76,7 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, a2.f32934a, obj4);
+                    obj4 = b10.n(descriptor2, 0, a2.f32933a, obj4);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str = b10.m(descriptor2, 1);
@@ -85,10 +85,10 @@ public final class MessageReactionEmoji$$serializer implements f0<MessageReactio
                     str3 = b10.m(descriptor2, 2);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    obj5 = b10.n(descriptor2, 3, a2.f32934a, obj5);
+                    obj5 = b10.n(descriptor2, 3, a2.f32933a, obj5);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj6 = b10.n(descriptor2, 4, h.f32976a, obj6);
+                    obj6 = b10.n(descriptor2, 4, h.f32975a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(o10);

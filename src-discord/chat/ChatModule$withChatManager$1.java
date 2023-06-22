@@ -35,7 +35,7 @@ public final class ChatModule$withChatManager$1 extends k implements Function2<C
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatModule$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
+        return ((ChatModule$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -56,6 +56,6 @@ public final class ChatModule$withChatManager$1 extends k implements Function2<C
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 }

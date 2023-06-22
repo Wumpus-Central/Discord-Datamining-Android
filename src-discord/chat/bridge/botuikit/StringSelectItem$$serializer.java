@@ -39,8 +39,8 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
-        return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), a.u(h.f32976a)};
+        a2 a2Var = a2.f32933a;
+        return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), a.u(a2Var), a.u(h.f32975a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -59,8 +59,8 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
             str2 = b10.m(descriptor2, 0);
             str = b10.m(descriptor2, 1);
             obj = b10.n(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
-            obj3 = b10.n(descriptor2, 3, a2.f32934a, null);
-            obj2 = b10.n(descriptor2, 4, h.f32976a, null);
+            obj3 = b10.n(descriptor2, 3, a2.f32933a, null);
+            obj2 = b10.n(descriptor2, 4, h.f32975a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -83,10 +83,10 @@ public final class StringSelectItem$$serializer implements f0<StringSelectItem> 
                     obj4 = b10.n(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, obj4);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    obj5 = b10.n(descriptor2, 3, a2.f32934a, obj5);
+                    obj5 = b10.n(descriptor2, 3, a2.f32933a, obj5);
                     i11 |= 8;
                 } else if (o10 == 4) {
-                    obj6 = b10.n(descriptor2, 4, h.f32976a, obj6);
+                    obj6 = b10.n(descriptor2, 4, h.f32975a, obj6);
                     i11 |= 16;
                 } else {
                     throw new n(o10);

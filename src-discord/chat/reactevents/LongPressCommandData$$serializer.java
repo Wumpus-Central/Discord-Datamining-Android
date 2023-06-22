@@ -35,7 +35,7 @@ public final class LongPressCommandData$$serializer implements f0<LongPressComma
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
+        a2 a2Var = a2.f32933a;
         return new KSerializer[]{a2Var, a2Var, a2Var, a2Var};
     }
 

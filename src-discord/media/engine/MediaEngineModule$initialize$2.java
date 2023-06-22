@@ -22,7 +22,7 @@ final class MediaEngineModule$initialize$2 extends s implements Function2<Float,
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Float f10, Integer num) {
         invoke(f10.floatValue(), num.intValue());
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     public final void invoke(float f10, int i10) {

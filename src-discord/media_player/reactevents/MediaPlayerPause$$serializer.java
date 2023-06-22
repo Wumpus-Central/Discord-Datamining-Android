@@ -34,7 +34,7 @@ public final class MediaPlayerPause$$serializer implements f0<MediaPlayerPause> 
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{x.f33055a, h.f32976a};
+        return new KSerializer[]{x.f33054a, h.f32975a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

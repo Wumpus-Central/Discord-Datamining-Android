@@ -79,9 +79,9 @@ public final class DCDChatInput extends k {
         if (!z11) {
             return false;
         }
-        boolean z12 = isEnterHeldDown.f22139k;
+        boolean z12 = isEnterHeldDown.f22138k;
         if (event.getAction() == 0) {
-            isEnterHeldDown.f22139k = true;
+            isEnterHeldDown.f22138k = true;
             if (event.hasModifiers(1)) {
                 return false;
             }
@@ -91,7 +91,7 @@ public final class DCDChatInput extends k {
             return true;
         }
         if (event.getAction() == 1) {
-            isEnterHeldDown.f22139k = false;
+            isEnterHeldDown.f22138k = false;
         }
         return false;
     }

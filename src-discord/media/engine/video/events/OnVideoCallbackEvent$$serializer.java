@@ -38,8 +38,8 @@ public final class OnVideoCallbackEvent$$serializer implements f0<OnVideoCallbac
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
-        return new KSerializer[]{m0.f33009a, a2Var, w0.f33050a, a2Var, a2Var};
+        a2 a2Var = a2.f32933a;
+        return new KSerializer[]{m0.f33008a, a2Var, w0.f33049a, a2Var, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -29,7 +29,7 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33050a};
+        return new KSerializer[]{w0.f33049a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

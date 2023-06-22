@@ -32,7 +32,7 @@ public final class NoInputCallbackEvent$$serializer implements f0<NoInputCallbac
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f32976a};
+        return new KSerializer[]{h.f32975a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

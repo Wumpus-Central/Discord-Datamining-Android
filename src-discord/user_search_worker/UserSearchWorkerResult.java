@@ -9,7 +9,7 @@ public final class UserSearchWorkerResult {
     private final String comparator;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7968id;
+    private final String f7967id;
     private final double score;
     private final String username;
 
@@ -17,7 +17,7 @@ public final class UserSearchWorkerResult {
         q.g(id2, "id");
         q.g(username, "username");
         q.g(comparator, "comparator");
-        this.f7968id = id2;
+        this.f7967id = id2;
         this.username = username;
         this.comparator = comparator;
         this.score = d10;
@@ -25,7 +25,7 @@ public final class UserSearchWorkerResult {
 
     public static /* synthetic */ UserSearchWorkerResult copy$default(UserSearchWorkerResult userSearchWorkerResult, String str, String str2, String str3, double d10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchWorkerResult.f7968id;
+            str = userSearchWorkerResult.f7967id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchWorkerResult.username;
@@ -40,7 +40,7 @@ public final class UserSearchWorkerResult {
     }
 
     public final String component1() {
-        return this.f7968id;
+        return this.f7967id;
     }
 
     public final String component2() {
@@ -70,7 +70,7 @@ public final class UserSearchWorkerResult {
             return false;
         }
         UserSearchWorkerResult userSearchWorkerResult = (UserSearchWorkerResult) obj;
-        return q.b(this.f7968id, userSearchWorkerResult.f7968id) && q.b(this.username, userSearchWorkerResult.username) && q.b(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
+        return q.b(this.f7967id, userSearchWorkerResult.f7967id) && q.b(this.username, userSearchWorkerResult.username) && q.b(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
     }
 
     public final String getComparator() {
@@ -78,7 +78,7 @@ public final class UserSearchWorkerResult {
     }
 
     public final String getId() {
-        return this.f7968id;
+        return this.f7967id;
     }
 
     public final double getScore() {
@@ -90,11 +90,11 @@ public final class UserSearchWorkerResult {
     }
 
     public int hashCode() {
-        return (((((this.f7968id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.doubleToLongBits(this.score);
+        return (((((this.f7967id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.doubleToLongBits(this.score);
     }
 
     public String toString() {
-        String str = this.f7968id;
+        String str = this.f7967id;
         String str2 = this.username;
         String str3 = this.comparator;
         double d10 = this.score;

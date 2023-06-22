@@ -40,7 +40,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f32934a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f32933a), HandleDeleteMessageAuthor$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,7 +57,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
         if (b10.p()) {
             obj4 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = b10.n(descriptor2, 2, a2.f32934a, null);
+            obj2 = b10.n(descriptor2, 2, a2.f32933a, null);
             obj3 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
@@ -78,7 +78,7 @@ public final class HandleDeleteMessage$$serializer implements f0<HandleDeleteMes
                     obj7 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj7);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj6 = b10.n(descriptor2, 2, a2.f32934a, obj6);
+                    obj6 = b10.n(descriptor2, 2, a2.f32933a, obj6);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     obj5 = b10.y(descriptor2, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, obj5);

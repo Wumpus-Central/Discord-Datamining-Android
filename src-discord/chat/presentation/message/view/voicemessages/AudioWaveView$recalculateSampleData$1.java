@@ -47,7 +47,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -106,6 +106,6 @@ public final class AudioWaveView$recalculateSampleData$1 extends k implements Fu
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 }

@@ -36,7 +36,7 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33009a;
+        m0 m0Var = m0.f33008a;
         return new KSerializer[]{a.u(m0Var), a.u(m0Var)};
     }
 
@@ -49,7 +49,7 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            m0 m0Var = m0.f33009a;
+            m0 m0Var = m0.f33008a;
             obj = b10.n(descriptor2, 0, m0Var, null);
             obj2 = b10.n(descriptor2, 1, m0Var, null);
             i10 = 3;
@@ -63,10 +63,10 @@ public final class BackgroundHighlight$$serializer implements f0<BackgroundHighl
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj3 = b10.n(descriptor2, 0, m0.f33009a, obj3);
+                    obj3 = b10.n(descriptor2, 0, m0.f33008a, obj3);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    obj2 = b10.n(descriptor2, 1, m0.f33009a, obj2);
+                    obj2 = b10.n(descriptor2, 1, m0.f33008a, obj2);
                     i11 |= 2;
                 } else {
                     throw new n(o10);

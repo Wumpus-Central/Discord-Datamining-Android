@@ -32,7 +32,7 @@ public final class Sticker implements Parcelable {
     private final GuildId guildId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f7925id;
+    private final long f7924id;
     private final String name;
     private final Long packId;
     private final String tags;
@@ -123,7 +123,7 @@ public final class Sticker implements Parcelable {
         } else {
             j10 = stickerId.m623unboximpl();
         }
-        this.f7925id = j10;
+        this.f7924id = j10;
         this.name = str;
         if ((i10 & 4) == 0) {
             this.packId = null;
@@ -211,13 +211,13 @@ public final class Sticker implements Parcelable {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z17 = false;
-        if (!output.A(serialDesc, 0) && StickerId.m618equalsimpl0(self.f7925id, StickerId.m615constructorimpl(0L))) {
+        if (!output.A(serialDesc, 0) && StickerId.m618equalsimpl0(self.f7924id, StickerId.m615constructorimpl(0L))) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.q(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m614boximpl(self.f7925id));
+            output.q(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m614boximpl(self.f7924id));
         }
         output.z(serialDesc, 1, self.name);
         if (!output.A(serialDesc, 2) && self.packId == null) {
@@ -226,7 +226,7 @@ public final class Sticker implements Parcelable {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 2, w0.f33050a, self.packId);
+            output.u(serialDesc, 2, w0.f33049a, self.packId);
         }
         if (!output.A(serialDesc, 3) && self.guildId == null) {
             z12 = false;
@@ -272,13 +272,13 @@ public final class Sticker implements Parcelable {
             z17 = true;
         }
         if (z17) {
-            output.u(serialDesc, 8, h.f32976a, self.available);
+            output.u(serialDesc, 8, h.f32975a, self.available);
         }
     }
 
     /* renamed from: component1-e_wqtJY  reason: not valid java name */
     public final long m538component1e_wqtJY() {
-        return this.f7925id;
+        return this.f7924id;
     }
 
     public final String component2() {
@@ -337,7 +337,7 @@ public final class Sticker implements Parcelable {
             return false;
         }
         Sticker sticker = (Sticker) obj;
-        return StickerId.m618equalsimpl0(this.f7925id, sticker.f7925id) && q.b(this.name, sticker.name) && q.b(this.packId, sticker.packId) && q.b(this.guildId, sticker.guildId) && q.b(this.description, sticker.description) && this.formatType == sticker.formatType && q.b(this.tags, sticker.tags) && this.type == sticker.type && q.b(this.available, sticker.available);
+        return StickerId.m618equalsimpl0(this.f7924id, sticker.f7924id) && q.b(this.name, sticker.name) && q.b(this.packId, sticker.packId) && q.b(this.guildId, sticker.guildId) && q.b(this.description, sticker.description) && this.formatType == sticker.formatType && q.b(this.tags, sticker.tags) && this.type == sticker.type && q.b(this.available, sticker.available);
     }
 
     public final Boolean getAvailable() {
@@ -373,7 +373,7 @@ public final class Sticker implements Parcelable {
 
     /* renamed from: getId-e_wqtJY  reason: not valid java name */
     public final long m542getIde_wqtJY() {
-        return this.f7925id;
+        return this.f7924id;
     }
 
     public final String getName() {
@@ -393,7 +393,7 @@ public final class Sticker implements Parcelable {
     }
 
     public int hashCode() {
-        int i10 = ((StickerId.m619hashCodeimpl(this.f7925id) * 31) + this.name.hashCode()) * 31;
+        int i10 = ((StickerId.m619hashCodeimpl(this.f7924id) * 31) + this.name.hashCode()) * 31;
         Long l10 = this.packId;
         int i11 = 0;
         int hashCode = (i10 + (l10 == null ? 0 : l10.hashCode())) * 31;
@@ -412,7 +412,7 @@ public final class Sticker implements Parcelable {
     }
 
     public String toString() {
-        String str = StickerId.m621toStringimpl(this.f7925id);
+        String str = StickerId.m621toStringimpl(this.f7924id);
         String str2 = this.name;
         Long l10 = this.packId;
         GuildId guildId = this.guildId;
@@ -427,7 +427,7 @@ public final class Sticker implements Parcelable {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
-        out.writeParcelable(StickerId.m614boximpl(this.f7925id), i10);
+        out.writeParcelable(StickerId.m614boximpl(this.f7924id), i10);
         out.writeString(this.name);
         Long l10 = this.packId;
         if (l10 == null) {
@@ -451,7 +451,7 @@ public final class Sticker implements Parcelable {
     }
 
     private Sticker(long j10, String str, Long l10, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool) {
-        this.f7925id = j10;
+        this.f7924id = j10;
         this.name = str;
         this.packId = l10;
         this.guildId = guildId;

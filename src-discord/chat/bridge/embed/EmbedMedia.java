@@ -98,7 +98,7 @@ public final class EmbedMedia implements EmbedUrlProvider {
             r2 = r1
         L_0x0024:
             if (r2 == 0) goto L_0x002d
-            yj.a2 r2 = yj.a2.f32934a
+            yj.a2 r2 = yj.a2.f32933a
             java.lang.String r3 = r5.proxyURL
             r6.u(r7, r0, r2, r3)
         L_0x002d:

@@ -33,7 +33,7 @@ public final class TapFollowForumPost$$serializer implements f0<TapFollowForumPo
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
+        a2 a2Var = a2.f32933a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

@@ -22,7 +22,7 @@ final class EmbedView$setEmbed$6$1 extends s implements Function1<Double, Unit> 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Double d10) {
         invoke2(d10);
-        return Unit.f22114a;
+        return Unit.f22113a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

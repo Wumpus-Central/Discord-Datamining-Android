@@ -557,22 +557,22 @@ public final class Message extends MessageBase {
             output.E(serialDesc, 7, self.flags);
         }
         if (output.A(serialDesc, 8) || self.edited != null) {
-            output.u(serialDesc, 8, a2.f32934a, self.edited);
+            output.u(serialDesc, 8, a2.f32933a, self.edited);
         }
         if (output.A(serialDesc, 9) || self._constrainedWidth != null) {
-            output.u(serialDesc, 9, e0.f32959a, self._constrainedWidth);
+            output.u(serialDesc, 9, e0.f32958a, self._constrainedWidth);
         }
         if (output.A(serialDesc, 10) || self.timestamp != null) {
-            output.u(serialDesc, 10, a2.f32934a, self.timestamp);
+            output.u(serialDesc, 10, a2.f32933a, self.timestamp);
         }
         if (output.A(serialDesc, 11) || self.username != null) {
-            output.u(serialDesc, 11, a2.f32934a, self.username);
+            output.u(serialDesc, 11, a2.f32933a, self.username);
         }
         if (output.A(serialDesc, 12) || self.usernameColor != null) {
-            output.u(serialDesc, 12, m0.f33009a, self.usernameColor);
+            output.u(serialDesc, 12, m0.f33008a, self.usernameColor);
         }
         if (output.A(serialDesc, 13) || self.roleColor != null) {
-            output.u(serialDesc, 13, m0.f33009a, self.roleColor);
+            output.u(serialDesc, 13, m0.f33008a, self.roleColor);
         }
         if (output.A(serialDesc, 14) || self.shouldShowRoleDot) {
             output.y(serialDesc, 14, self.shouldShowRoleDot);
@@ -581,13 +581,13 @@ public final class Message extends MessageBase {
             output.y(serialDesc, 15, self.shouldShowRoleOnName);
         }
         if (output.A(serialDesc, 16) || self.colorString != null) {
-            output.u(serialDesc, 16, m0.f33009a, self.colorString);
+            output.u(serialDesc, 16, m0.f33008a, self.colorString);
         }
         if (output.A(serialDesc, 17) || self.avatarURL != null) {
-            output.u(serialDesc, 17, a2.f32934a, self.avatarURL);
+            output.u(serialDesc, 17, a2.f32933a, self.avatarURL);
         }
         if (output.A(serialDesc, 18) || self.avatarDecorationURL != null) {
-            output.u(serialDesc, 18, a2.f32934a, self.avatarDecorationURL);
+            output.u(serialDesc, 18, a2.f32933a, self.avatarDecorationURL);
         }
         if (output.A(serialDesc, 19) || self.embeds != null) {
             output.u(serialDesc, 19, new yj.f(Embed$$serializer.INSTANCE), self.embeds);
@@ -596,7 +596,7 @@ public final class Message extends MessageBase {
             output.u(serialDesc, 20, new yj.f(Attachment$$serializer.INSTANCE), self.attachments);
         }
         if (output.A(serialDesc, 21) || self.attachmentsOpacity != null) {
-            output.u(serialDesc, 21, e0.f32959a, self.attachmentsOpacity);
+            output.u(serialDesc, 21, e0.f32958a, self.attachmentsOpacity);
         }
         if (output.A(serialDesc, 22) || self.content != null) {
             output.u(serialDesc, 22, StructurableTextSerializer.INSTANCE, self.content);
@@ -608,10 +608,10 @@ public final class Message extends MessageBase {
             output.u(serialDesc, 24, new yj.f(MessageReaction$$serializer.INSTANCE), self.reactions);
         }
         if (output.A(serialDesc, 25) || !q.b(self.useSortedReactions, Boolean.TRUE)) {
-            output.u(serialDesc, 25, h.f32976a, self.useSortedReactions);
+            output.u(serialDesc, 25, h.f32975a, self.useSortedReactions);
         }
         if (output.A(serialDesc, 26) || !q.b(self.useAddBurstReaction, Boolean.FALSE)) {
-            output.u(serialDesc, 26, h.f32976a, self.useAddBurstReaction);
+            output.u(serialDesc, 26, h.f32975a, self.useAddBurstReaction);
         }
         if (output.A(serialDesc, 27) || self.codedLinks != null) {
             output.u(serialDesc, 27, new yj.f(a.u(CodedLinkSerializer.INSTANCE)), self.codedLinks);
@@ -630,10 +630,10 @@ public final class Message extends MessageBase {
         }
         output.y(serialDesc, 32, self.mentioned);
         if (output.A(serialDesc, 33) || self.gifAutoPlay != null) {
-            output.u(serialDesc, 33, h.f32976a, self.gifAutoPlay);
+            output.u(serialDesc, 33, h.f32975a, self.gifAutoPlay);
         }
         if (output.A(serialDesc, 34) || self.animateEmoji != null) {
-            output.u(serialDesc, 34, h.f32976a, self.animateEmoji);
+            output.u(serialDesc, 34, h.f32975a, self.animateEmoji);
         }
         if (output.A(serialDesc, 35) || self.referencedMessage != null) {
             output.u(serialDesc, 35, ReferencedMessageSerializer.INSTANCE, self.referencedMessage);
@@ -645,28 +645,28 @@ public final class Message extends MessageBase {
             output.u(serialDesc, 37, new yj.f(ComponentSerializer.INSTANCE), self.components);
         }
         if (output.A(serialDesc, 38) || self.threadStarterMessageHeader != null) {
-            output.u(serialDesc, 38, a2.f32934a, self.threadStarterMessageHeader);
+            output.u(serialDesc, 38, a2.f32933a, self.threadStarterMessageHeader);
         }
         if (output.A(serialDesc, 39) || self.communicationDisabled != null) {
-            output.u(serialDesc, 39, h.f32976a, self.communicationDisabled);
+            output.u(serialDesc, 39, h.f32975a, self.communicationDisabled);
         }
         if (output.A(serialDesc, 40) || self.tagText != null) {
-            output.u(serialDesc, 40, a2.f32934a, self.tagText);
+            output.u(serialDesc, 40, a2.f32933a, self.tagText);
         }
         if (output.A(serialDesc, 41) || self.tagVerified != null) {
-            output.u(serialDesc, 41, h.f32976a, self.tagVerified);
+            output.u(serialDesc, 41, h.f32975a, self.tagVerified);
         }
         if (output.A(serialDesc, 42) || self.tagTextColor != null) {
-            output.u(serialDesc, 42, m0.f33009a, self.tagTextColor);
+            output.u(serialDesc, 42, m0.f33008a, self.tagTextColor);
         }
         if (output.A(serialDesc, 43) || self.tagBackgroundColor != null) {
-            output.u(serialDesc, 43, m0.f33009a, self.tagBackgroundColor);
+            output.u(serialDesc, 43, m0.f33008a, self.tagBackgroundColor);
         }
         if (output.A(serialDesc, 44) || self.tagType != null) {
-            output.u(serialDesc, 44, a2.f32934a, self.tagType);
+            output.u(serialDesc, 44, a2.f32933a, self.tagType);
         }
         if (output.A(serialDesc, 45) || self.opTagText != null) {
-            output.u(serialDesc, 45, a2.f32934a, self.opTagText);
+            output.u(serialDesc, 45, a2.f32933a, self.opTagText);
         }
         if (output.A(serialDesc, 46) || self.ephemeralIndication != null) {
             output.u(serialDesc, 46, EphemeralIndication$$serializer.INSTANCE, self.ephemeralIndication);
@@ -678,43 +678,43 @@ public final class Message extends MessageBase {
             output.u(serialDesc, 48, InteractionStatus$$serializer.INSTANCE, self.interactionStatus);
         }
         if (output.A(serialDesc, 49) || !q.b(self.useAttachmentGridLayout, Boolean.FALSE)) {
-            output.u(serialDesc, 49, h.f32976a, self.useAttachmentGridLayout);
+            output.u(serialDesc, 49, h.f32975a, self.useAttachmentGridLayout);
         }
         if (output.A(serialDesc, 50) || !q.b(self.useAttachmentUploadPreview, Boolean.FALSE)) {
-            output.u(serialDesc, 50, h.f32976a, self.useAttachmentUploadPreview);
+            output.u(serialDesc, 50, h.f32975a, self.useAttachmentUploadPreview);
         }
         if (output.A(serialDesc, 51) || !q.b(self.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            output.u(serialDesc, 51, h.f32976a, self.isCurrentUserMessageAuthor);
+            output.u(serialDesc, 51, h.f32975a, self.isCurrentUserMessageAuthor);
         }
         if (output.A(serialDesc, 52) || self.title != null) {
-            output.u(serialDesc, 52, a2.f32934a, self.title);
+            output.u(serialDesc, 52, a2.f32933a, self.title);
         }
         if (output.A(serialDesc, 53) || self.description != null) {
-            output.u(serialDesc, 53, a2.f32934a, self.description);
+            output.u(serialDesc, 53, a2.f32933a, self.description);
         }
         if (output.A(serialDesc, 54) || self.avatarURLs != null) {
-            output.u(serialDesc, 54, new yj.f(a2.f32934a), self.avatarURLs);
+            output.u(serialDesc, 54, new yj.f(a2.f32933a), self.avatarURLs);
         }
         if (output.A(serialDesc, 55) || self.isCallActive != null) {
-            output.u(serialDesc, 55, h.f32976a, self.isCallActive);
+            output.u(serialDesc, 55, h.f32975a, self.isCallActive);
         }
         if (output.A(serialDesc, 56) || self.missed != null) {
-            output.u(serialDesc, 56, h.f32976a, self.missed);
+            output.u(serialDesc, 56, h.f32975a, self.missed);
         }
         if (output.A(serialDesc, 57) || self.rawMilliseconds != null) {
-            output.u(serialDesc, 57, w0.f33050a, self.rawMilliseconds);
+            output.u(serialDesc, 57, w0.f33049a, self.rawMilliseconds);
         }
         if (output.A(serialDesc, 58) || self.sticker != null) {
             output.u(serialDesc, 58, Sticker$$serializer.INSTANCE, self.sticker);
         }
         if (output.A(serialDesc, 59) || self.stickerLabel != null) {
-            output.u(serialDesc, 59, a2.f32934a, self.stickerLabel);
+            output.u(serialDesc, 59, a2.f32933a, self.stickerLabel);
         }
         if (output.A(serialDesc, 60) || self.buttonLabel != null) {
-            output.u(serialDesc, 60, a2.f32934a, self.buttonLabel);
+            output.u(serialDesc, 60, a2.f32933a, self.buttonLabel);
         }
         if (output.A(serialDesc, 61) || self.showInviteToSpeakButton != null) {
-            output.u(serialDesc, 61, h.f32976a, self.showInviteToSpeakButton);
+            output.u(serialDesc, 61, h.f32975a, self.showInviteToSpeakButton);
         }
         if (output.A(serialDesc, 62) || self.activityInviteEmbed != null) {
             output.u(serialDesc, 62, ActivityInviteEmbed$$serializer.INSTANCE, self.activityInviteEmbed);
@@ -735,10 +735,10 @@ public final class Message extends MessageBase {
             output.u(serialDesc, 67, GiftEmbedSerializer.INSTANCE, self.referralTrialOffer);
         }
         if (output.A(serialDesc, 68) || self.totalMonthsSubscribed != null) {
-            output.u(serialDesc, 68, m0.f33009a, self.totalMonthsSubscribed);
+            output.u(serialDesc, 68, m0.f33008a, self.totalMonthsSubscribed);
         }
         if (output.A(serialDesc, 69) || self.swipeToReplyIconUrl != null) {
-            output.u(serialDesc, 69, a2.f32934a, self.swipeToReplyIconUrl);
+            output.u(serialDesc, 69, a2.f32933a, self.swipeToReplyIconUrl);
         }
         if (output.A(serialDesc, 70) || self.postPreviewEmbeds != null) {
             z10 = true;

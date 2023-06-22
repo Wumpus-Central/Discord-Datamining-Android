@@ -35,7 +35,7 @@ public final class ActorHook$$serializer implements f0<ActorHook> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32934a, UserId$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f32933a, UserId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -32,7 +32,7 @@ public final class TapJoinEmbeddedActivityData$$serializer implements f0<TapJoin
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32934a};
+        return new KSerializer[]{a2.f32933a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

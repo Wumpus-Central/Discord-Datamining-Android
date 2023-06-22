@@ -31,7 +31,7 @@ public final class SetMediaImagePlaceholderStatesKt {
             @Override // com.discord.image.fresco.listeners.ControllerListener, com.facebook.drawee.controller.ControllerListener
             public void onFailure(String str, Throwable th2) {
                 ReactAsset reactAsset;
-                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f8130e);
+                SimpleDraweeView.this.getHierarchy().t(ScalingUtils.ScaleType.f8129e);
                 SimpleDraweeView simpleDraweeView = SimpleDraweeView.this;
                 if (ThemeManagerKt.getTheme() instanceof DarkTheme) {
                     reactAsset = ReactAsset.PoopDark;

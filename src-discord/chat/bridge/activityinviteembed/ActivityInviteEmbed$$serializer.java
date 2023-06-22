@@ -49,9 +49,9 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32934a;
-        h hVar = h.f32976a;
-        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f33009a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
+        a2 a2Var = a2.f32933a;
+        h hVar = h.f32975a;
+        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f33008a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -75,7 +75,7 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
         int i13 = 7;
         int i14 = 6;
         if (b10.p()) {
-            a2 a2Var = a2.f32934a;
+            a2 a2Var = a2.f32933a;
             obj = b10.n(descriptor2, 0, a2Var, null);
             z11 = b10.C(descriptor2, 1);
             str3 = b10.m(descriptor2, 2);
@@ -108,7 +108,7 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
                         i13 = 7;
                         i14 = 6;
                     case 0:
-                        obj7 = b10.n(descriptor2, 0, a2.f32934a, obj7);
+                        obj7 = b10.n(descriptor2, 0, a2.f32933a, obj7);
                         i15 |= 1;
                         i12 = 9;
                         i13 = 7;
@@ -128,17 +128,17 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
                         i15 |= 8;
                         i12 = 9;
                     case 4:
-                        obj8 = b10.n(descriptor2, 4, new f(a.u(a2.f32934a)), obj8);
+                        obj8 = b10.n(descriptor2, 4, new f(a.u(a2.f32933a)), obj8);
                         i15 |= 16;
                         i12 = 9;
                     case 5:
                         i16 = b10.i(descriptor2, 5);
                         i15 |= 32;
                     case 6:
-                        obj6 = b10.n(descriptor2, i14, a2.f32934a, obj6);
+                        obj6 = b10.n(descriptor2, i14, a2.f32933a, obj6);
                         i15 |= 64;
                     case 7:
-                        obj5 = b10.n(descriptor2, i13, a2.f32934a, obj5);
+                        obj5 = b10.n(descriptor2, i13, a2.f32933a, obj5);
                         i15 |= 128;
                     case 8:
                         z13 = b10.C(descriptor2, 8);
