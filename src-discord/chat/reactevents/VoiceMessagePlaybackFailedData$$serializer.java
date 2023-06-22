@@ -36,7 +36,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f32931a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a.u(a2.f32934a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -50,7 +50,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         String str = null;
         if (b10.p()) {
             obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
-            obj = b10.n(descriptor2, 1, a2.f32931a, null);
+            obj = b10.n(descriptor2, 1, a2.f32934a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -65,7 +65,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
                     obj2 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, obj2);
                     i10 |= 1;
                 } else if (o10 == 1) {
-                    obj3 = b10.n(descriptor2, 1, a2.f32931a, obj3);
+                    obj3 = b10.n(descriptor2, 1, a2.f32934a, obj3);
                     i10 |= 2;
                 } else {
                     throw new n(o10);
@@ -76,7 +76,7 @@ public final class VoiceMessagePlaybackFailedData$$serializer implements f0<Voic
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m588unboximpl();
+            str = messageId.m597unboximpl();
         }
         return new VoiceMessagePlaybackFailedData(i10, str, (String) obj, null, null);
     }

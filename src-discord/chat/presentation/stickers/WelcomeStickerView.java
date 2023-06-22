@@ -88,7 +88,7 @@ public final class WelcomeStickerView extends LinearLayout {
         q.g(onWelcomeReplyClicked, "$onWelcomeReplyClicked");
         q.g(sticker, "$sticker");
         q.g(message, "$message");
-        onWelcomeReplyClicked.invoke(sticker, MessageId.m580boximpl(message.m17getId3Eiw7ao()));
+        onWelcomeReplyClicked.invoke(sticker, MessageId.m589boximpl(message.m17getId3Eiw7ao()));
     }
 
     public final void setSticker(final Sticker sticker, final Message message, final Function2<? super Sticker, ? super MessageId, Unit> onWelcomeReplyClicked) {

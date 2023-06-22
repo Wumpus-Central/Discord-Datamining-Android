@@ -68,7 +68,7 @@ public final class OnQRCodeFoundEvent implements ReactEvent {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 1, a2.f32931a, self.result);
+            output.u(serialDesc, 1, a2.f32934a, self.result);
         }
     }
 

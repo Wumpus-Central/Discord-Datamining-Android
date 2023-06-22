@@ -41,7 +41,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -60,7 +60,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22111a;
+            return Unit.f22114a;
         }
     }
 
@@ -78,7 +78,7 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalViewModule$PortalViewManager$portal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+        return ((PortalViewModule$PortalViewManager$portal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -100,6 +100,6 @@ final class PortalViewModule$PortalViewManager$portal$1 extends k implements Fun
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
         PortalViewContextManager.INSTANCE.registerView(this.$portal, this.$portalView);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 }

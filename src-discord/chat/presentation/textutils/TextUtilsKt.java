@@ -82,7 +82,7 @@ public final class TextUtilsKt {
         Paint.Style style;
         String str;
         List d10;
-        int i10;
+        long j10;
         List d11;
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         int listNestedLevel = renderContext.getListNestedLevel();
@@ -90,24 +90,24 @@ public final class TextUtilsKt {
         int dpToPx2 = SizeUtilsKt.getDpToPx(2);
         VerticalPaddingSpan verticalPaddingSpan = new VerticalPaddingSpan(dpToPx2);
         if (z10) {
-            Integer listOrderedIndex = renderContext.getListOrderedIndex();
+            Long listOrderedIndex = renderContext.getListOrderedIndex();
             if (listOrderedIndex != null) {
-                i10 = listOrderedIndex.intValue();
+                j10 = listOrderedIndex.longValue();
             } else {
-                i10 = 1;
+                j10 = 1;
             }
             if (renderContext.getSingleLine()) {
-                d11 = i.d(new TextContentNode(i10 + ".  "));
+                d11 = i.d(new TextContentNode(j10 + ".  "));
                 appendToExistingBuilder(d11, renderContext, draweeSpanStringBuilder);
                 appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
                 return;
             }
-            Object[] objArr = {new LeadingMarginSpan.Standard(SizeUtilsKt.getDpToPx(8)), standard, new OrderedListBulletSpan(dpToPx, i10 + "."), verticalPaddingSpan};
+            Object[] objArr = {new LeadingMarginSpan.Standard(SizeUtilsKt.getDpToPx(8)), standard, new OrderedListBulletSpan(dpToPx, j10 + "."), verticalPaddingSpan};
             int length = draweeSpanStringBuilder.length();
             appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
             SpannableStringBuilderExtensionsKt.ensureNewline(draweeSpanStringBuilder, new AbsoluteSizeSpan(dpToPx2));
-            for (int i11 = 0; i11 < 4; i11++) {
-                Object obj = objArr[i11];
+            for (int i10 = 0; i10 < 4; i10++) {
+                Object obj = objArr[i10];
                 if (obj != null) {
                     draweeSpanStringBuilder.setSpan(obj, length, draweeSpanStringBuilder.length(), 33);
                 }
@@ -133,8 +133,8 @@ public final class TextUtilsKt {
             int length2 = draweeSpanStringBuilder.length();
             appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
             SpannableStringBuilderExtensionsKt.ensureNewline(draweeSpanStringBuilder, new AbsoluteSizeSpan(dpToPx2));
-            for (int i12 = 0; i12 < 3; i12++) {
-                Object obj2 = objArr2[i12];
+            for (int i11 = 0; i11 < 3; i11++) {
+                Object obj2 = objArr2[i11];
                 if (obj2 != null) {
                     draweeSpanStringBuilder.setSpan(obj2, length2, draweeSpanStringBuilder.length(), 33);
                 }
@@ -151,7 +151,7 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f8127e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f8130e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
         a10.u(a.EnumC0123a.BITMAP_ONLY);
@@ -308,7 +308,7 @@ public final class TextUtilsKt {
     */
     private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r81, com.discord.chat.presentation.textutils.RenderContext r82, com.facebook.drawee.span.DraweeSpanStringBuilder r83) {
         /*
-            Method dump skipped, instructions count: 2640
+            Method dump skipped, instructions count: 2634
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.textutils.TextUtilsKt.toSpannable(java.util.List, com.discord.chat.presentation.textutils.RenderContext, com.facebook.drawee.span.DraweeSpanStringBuilder):com.facebook.drawee.span.DraweeSpanStringBuilder");

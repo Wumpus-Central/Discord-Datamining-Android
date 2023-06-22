@@ -73,7 +73,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         q.g(eventHandler, "$eventHandler");
         q.g(messageId, "$messageId");
         q.g(executedCommand, "$executedCommand");
-        eventHandler.mo151onTapAvatarx5gers8(messageId, executedCommand.m106getUserIdre6GcUE());
+        eventHandler.mo159onTapAvatarx5gers8(messageId, executedCommand.m106getUserIdre6GcUE());
     }
 
     public static /* synthetic */ void configureReply$default(MessageViewReplyPreview messageViewReplyPreview, ReferencedMessage referencedMessage, boolean z10, Function0 function0, int i10, Object obj) {
@@ -101,7 +101,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     /* renamed from: configureExecutedCommand-LdU2QRA */
-    public final void m202configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m211configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
         q.g(messageId, "messageId");
         q.g(executedCommand, "executedCommand");
         q.g(eventHandler, "eventHandler");
@@ -145,7 +145,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView messageContentView3 = this.binding.replyText;
         q.f(messageContentView3, "binding.replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f22111a;
+        Unit unit = Unit.f22114a;
         messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
         MessageContentView messageContentView4 = this.binding.replyText;
         q.f(messageContentView4, "binding.replyText");
@@ -235,7 +235,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.f(messageContentView4, "binding.replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f22111a;
+                Unit unit = Unit.f22114a;
                 messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
             } else {
                 this.binding.replyText.setText((CharSequence) null);

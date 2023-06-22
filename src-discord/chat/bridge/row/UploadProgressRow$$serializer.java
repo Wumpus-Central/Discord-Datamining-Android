@@ -39,7 +39,7 @@ public final class UploadProgressRow$$serializer implements f0<UploadProgressRow
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f33006a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f32931a};
+        return new KSerializer[]{m0.f33009a, ChangeType.Serializer.INSTANCE, Message$$serializer.INSTANCE, a2.f32934a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -109,7 +109,7 @@ public final class MessageViewManagers {
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: emitOnTapReply-Ayv7vGE  reason: not valid java name */
-        public final void m136emitOnTapReplyAyv7vGE(View view, String str) {
+        public final void m144emitOnTapReplyAyv7vGE(View view, String str) {
             this.reactEvents.emitEvent(view, new OnTapReplyItemData(str, null));
         }
 
@@ -119,7 +119,7 @@ public final class MessageViewManagers {
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: emitOnTruncateMessage-JPrav84  reason: not valid java name */
-        public final void m137emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
+        public final void m145emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
             this.reactEvents.emitEvent(context, new OnTruncateMessageData(str, null), i10);
         }
 

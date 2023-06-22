@@ -36,7 +36,7 @@ public final class EphemeralIndication$$serializer implements f0<EphemeralIndica
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32931a;
+        a2 a2Var = a2.f32934a;
         return new KSerializer[]{StructurableTextSerializer.INSTANCE, a2Var, a2Var};
     }
 

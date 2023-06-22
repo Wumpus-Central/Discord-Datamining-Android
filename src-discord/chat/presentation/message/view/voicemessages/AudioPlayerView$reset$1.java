@@ -41,7 +41,7 @@ public final class AudioPlayerView$reset$1 extends k implements Function2<Corout
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -60,7 +60,7 @@ public final class AudioPlayerView$reset$1 extends k implements Function2<Corout
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f22111a;
+            return Unit.f22114a;
         }
     }
 
@@ -77,7 +77,7 @@ public final class AudioPlayerView$reset$1 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+        return ((AudioPlayerView$reset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -103,6 +103,6 @@ public final class AudioPlayerView$reset$1 extends k implements Function2<Corout
         j10 = audioPlayerView.durationMs;
         audioPlayerView.configureDuration(b.d(j10), false);
         this.this$0.configureProgress();
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 }

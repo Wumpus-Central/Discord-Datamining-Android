@@ -46,7 +46,6 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
         int i12;
         boolean z11;
         boolean z12;
-        int c10;
         boolean z13;
         boolean z14;
         boolean z15;
@@ -86,8 +85,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
             if (x22) {
                 i13 = 15;
             }
-            c10 = j.c(j02 - i13, 0);
-            if (c10 > j22 || j22 > j02) {
+            if (j.c(j02 - i13, 0) > j22 || j22 > j02) {
                 z13 = false;
             } else {
                 z13 = true;

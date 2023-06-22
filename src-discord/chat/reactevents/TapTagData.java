@@ -46,7 +46,7 @@ public final class TapTagData implements ReactEvent {
             n1.b(i10, 7, TapTagData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m563unboximpl();
+        this.channelId = channelId.m572unboximpl();
         this.tagType = str2;
     }
 
@@ -59,7 +59,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
-    public static /* synthetic */ TapTagData m406copyEqy5D80$default(TapTagData tapTagData, String str, long j10, String str2, int i10, Object obj) {
+    public static /* synthetic */ TapTagData m415copyEqy5D80$default(TapTagData tapTagData, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapTagData.messageId;
         }
@@ -69,25 +69,25 @@ public final class TapTagData implements ReactEvent {
         if ((i10 & 4) != 0) {
             str2 = tapTagData.tagType;
         }
-        return tapTagData.m409copyEqy5D80(str, j10, str2);
+        return tapTagData.m418copyEqy5D80(str, j10, str2);
     }
 
     public static final void write$Self(TapTagData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.messageId));
-        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m554boximpl(self.channelId));
-        output.u(serialDesc, 2, a2.f32931a, self.tagType);
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
+        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m563boximpl(self.channelId));
+        output.u(serialDesc, 2, a2.f32934a, self.tagType);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m407component13Eiw7ao() {
+    public final String m416component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m408component2o4g7jtM() {
+    public final long m417component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -96,7 +96,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     /* renamed from: copy-Eqy5D80  reason: not valid java name */
-    public final TapTagData m409copyEqy5D80(String messageId, long j10, String str) {
+    public final TapTagData m418copyEqy5D80(String messageId, long j10, String str) {
         q.g(messageId, "messageId");
         return new TapTagData(messageId, j10, str, null);
     }
@@ -109,16 +109,16 @@ public final class TapTagData implements ReactEvent {
             return false;
         }
         TapTagData tapTagData = (TapTagData) obj;
-        return MessageId.m584equalsimpl0(this.messageId, tapTagData.messageId) && ChannelId.m558equalsimpl0(this.channelId, tapTagData.channelId) && q.b(this.tagType, tapTagData.tagType);
+        return MessageId.m593equalsimpl0(this.messageId, tapTagData.messageId) && ChannelId.m567equalsimpl0(this.channelId, tapTagData.channelId) && q.b(this.tagType, tapTagData.tagType);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m410getChannelIdo4g7jtM() {
+    public final long m419getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m411getMessageId3Eiw7ao() {
+    public final String m420getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -127,7 +127,7 @@ public final class TapTagData implements ReactEvent {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m585hashCodeimpl(this.messageId) * 31) + ChannelId.m559hashCodeimpl(this.channelId)) * 31;
+        int i10 = ((MessageId.m594hashCodeimpl(this.messageId) * 31) + ChannelId.m568hashCodeimpl(this.channelId)) * 31;
         String str = this.tagType;
         return i10 + (str == null ? 0 : str.hashCode());
     }
@@ -138,8 +138,8 @@ public final class TapTagData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m586toStringimpl(this.messageId);
-        String str2 = ChannelId.m561toStringimpl(this.channelId);
+        String str = MessageId.m595toStringimpl(this.messageId);
+        String str2 = ChannelId.m570toStringimpl(this.channelId);
         String str3 = this.tagType;
         return "TapTagData(messageId=" + str + ", channelId=" + str2 + ", tagType=" + str3 + ")";
     }

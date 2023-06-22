@@ -29,18 +29,18 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33047a};
+        return new KSerializer[]{w0.f33050a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return ChannelId.m554boximpl(m564deserialize18flms(decoder));
+        return ChannelId.m563boximpl(m573deserialize18flms(decoder));
     }
 
     /* renamed from: deserialize-18-flms  reason: not valid java name */
-    public long m564deserialize18flms(Decoder decoder) {
+    public long m573deserialize18flms(Decoder decoder) {
         q.g(decoder, "decoder");
-        return ChannelId.m555constructorimpl(decoder.q(getDescriptor()).l());
+        return ChannelId.m564constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override // vj.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m565serializemJqaSGE(encoder, ((ChannelId) obj).m563unboximpl());
+        m574serializemJqaSGE(encoder, ((ChannelId) obj).m572unboximpl());
     }
 
     /* renamed from: serialize-mJqaSGE  reason: not valid java name */
-    public void m565serializemJqaSGE(Encoder encoder, long j10) {
+    public void m574serializemJqaSGE(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

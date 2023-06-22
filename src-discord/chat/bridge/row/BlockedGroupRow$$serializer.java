@@ -49,8 +49,8 @@ public final class BlockedGroupRow$$serializer implements f0<BlockedGroupRow> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33006a;
-        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, m0Var, m0Var, m0Var, a2.f32931a, h.f32973a, BlockedGroupButton$$serializer.INSTANCE, a.u(new f(BlockedGroupContent$$serializer.INSTANCE))};
+        m0 m0Var = m0.f33009a;
+        return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, m0Var, m0Var, m0Var, a2.f32934a, h.f32976a, BlockedGroupButton$$serializer.INSTANCE, a.u(new f(BlockedGroupContent$$serializer.INSTANCE))};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

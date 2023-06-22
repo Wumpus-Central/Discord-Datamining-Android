@@ -14,6 +14,7 @@ import com.discord.chat.presentation.list.delegate.LoadingDelegate;
 import com.discord.chat.presentation.list.delegate.PortalViewDelegate;
 import com.discord.chat.presentation.list.delegate.RegularMessageDelegate;
 import com.discord.chat.presentation.list.delegate.SeparatorDelegate;
+import com.discord.chat.presentation.list.delegate.SummarySeparatorDelegate;
 import com.discord.chat.presentation.list.delegate.SystemMessageDelegate;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.chat.presentation.message.view.botuikit.ComponentProvider;
@@ -36,7 +37,7 @@ public final class ChatListAdapterConfiguratorKt {
         q.g(messageComponentProvider, "messageComponentProvider");
         q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         HashMap hashMap = new HashMap();
-        l10 = j.l(new RegularMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new SystemMessageDelegate(eventHandlerProvider, messageAccessoriesRecycledViewPool), new AutomodSystemMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new CallSystemMessageDelegate(eventHandlerProvider), new EmbeddedActivityMessageDelegate(eventHandlerProvider), new SeparatorDelegate(eventHandlerProvider), new LoadingDelegate(eventHandlerProvider), new BlockedGroupDelegate(eventHandlerProvider, messageComponentProvider), new PortalViewDelegate(eventHandlerProvider), new DeserializationErrorMessageDelegate(eventHandlerProvider), new DeserializationErrorDelegate(eventHandlerProvider));
+        l10 = j.l(new RegularMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new SystemMessageDelegate(eventHandlerProvider, messageAccessoriesRecycledViewPool), new AutomodSystemMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new CallSystemMessageDelegate(eventHandlerProvider), new EmbeddedActivityMessageDelegate(eventHandlerProvider), new SeparatorDelegate(eventHandlerProvider), new SummarySeparatorDelegate(eventHandlerProvider), new LoadingDelegate(eventHandlerProvider), new BlockedGroupDelegate(eventHandlerProvider, messageComponentProvider), new PortalViewDelegate(eventHandlerProvider), new DeserializationErrorMessageDelegate(eventHandlerProvider), new DeserializationErrorDelegate(eventHandlerProvider));
         for (BaseChatListItemDelegate baseChatListItemDelegate : l10) {
             delegatesManager.c(baseChatListItemDelegate);
             hashMap.put(baseChatListItemDelegate.getClass(), Integer.valueOf(delegatesManager.f(baseChatListItemDelegate)));

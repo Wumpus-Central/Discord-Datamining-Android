@@ -352,7 +352,7 @@ public final class UserSearchWorker {
             this.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f22181l.c(query);
+        String c12 = Regex.f22184l.c(query);
         j jVar = j.IGNORE_CASE;
         Regex regex2 = new Regex("^" + c12, jVar);
         Regex regex3 = new Regex(c12, jVar);

@@ -11,6 +11,7 @@ import com.discord.chat.bridge.row.MessageRow;
 import com.discord.chat.bridge.row.MessageRowKt;
 import com.discord.chat.bridge.row.Row;
 import com.discord.chat.bridge.row.SeparatorRow;
+import com.discord.chat.bridge.row.SeparatorRowKt;
 import com.discord.chat.bridge.row.UploadProgressRow;
 import com.discord.chat.bridge.spoiler.SpoilerManager;
 import com.discord.chat.listmanager.ChatListAction;
@@ -21,7 +22,6 @@ import com.discord.chat.presentation.list.item.DeserializationErrorChatListItem;
 import com.discord.chat.presentation.list.item.EmbeddedActivityChatListItem;
 import com.discord.chat.presentation.list.item.LoadingChatListItem;
 import com.discord.chat.presentation.list.item.MessageItem;
-import com.discord.chat.presentation.list.item.SeparatorChatListItem;
 import com.discord.chat.presentation.root.MessageContext;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -257,48 +257,45 @@ public final class ChatListManager {
         int t10;
         List F;
         ChatListItem chatListMessageItem;
-        ChatListItem separatorChatListItem;
+        ChatListItem loadingChatListItem;
         if (row instanceof MessageRow) {
             return MessageRowKt.toChatListMessageItem((MessageRow) row);
         }
         if (row instanceof UploadProgressRow) {
-            separatorChatListItem = new MessageItem(((UploadProgressRow) row).getMessage(), null, null, false, false, null, null, false, 254, null);
+            loadingChatListItem = new MessageItem(((UploadProgressRow) row).getMessage(), null, null, false, false, null, null, false, 254, null);
         } else if (row instanceof EmbeddedActivityRow) {
             EmbeddedActivityRow embeddedActivityRow = (EmbeddedActivityRow) row;
-            separatorChatListItem = new EmbeddedActivityChatListItem(embeddedActivityRow.getContent(), embeddedActivityRow.getAvatarUrls(), embeddedActivityRow.getButtonText(), embeddedActivityRow.getEmbeddedActivityKey(), embeddedActivityRow.getDismissButtonAccessibilityLabel());
+            loadingChatListItem = new EmbeddedActivityChatListItem(embeddedActivityRow.getContent(), embeddedActivityRow.getAvatarUrls(), embeddedActivityRow.getButtonText(), embeddedActivityRow.getEmbeddedActivityKey(), embeddedActivityRow.getDismissButtonAccessibilityLabel());
         } else if (row instanceof LoadingRow) {
             LoadingRow loadingRow = (LoadingRow) row;
-            separatorChatListItem = new LoadingChatListItem(loadingRow.getButton(), loadingRow.isLoading());
+            loadingChatListItem = new LoadingChatListItem(loadingRow.getButton(), loadingRow.isLoading());
         } else if (row instanceof SeparatorRow) {
-            SeparatorRow separatorRow = (SeparatorRow) row;
-            int color = separatorRow.getColor();
-            String text = separatorRow.getText();
-            String text2 = separatorRow.getText();
-            separatorChatListItem = new SeparatorChatListItem(color, text, "separator: " + text2);
-        } else if (row instanceof BlockedGroupRow) {
-            BlockedGroupRow blockedGroupRow = (BlockedGroupRow) row;
-            String text3 = blockedGroupRow.getText();
-            String context = blockedGroupRow.getButton().getAction().getContext();
-            int color2 = blockedGroupRow.getColor();
-            int backgroundColor = blockedGroupRow.getBackgroundColor();
-            int borderColor = blockedGroupRow.getBorderColor();
-            boolean revealed = blockedGroupRow.getRevealed();
-            List<BlockedGroupContent> content = blockedGroupRow.getContent();
-            if (content == null) {
-                content = j.i();
-            }
-            t10 = k.t(content, 10);
-            ArrayList arrayList = new ArrayList(t10);
-            for (BlockedGroupContent blockedGroupContent : content) {
-                chatListMessageItem = MessageRowKt.toChatListMessageItem(blockedGroupContent.getMessage(), (r18 & 1) != 0 ? null : null, new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null), (r18 & 4) != 0, (r18 & 8) != 0 ? false : false, (r18 & 16) != 0 ? false : false, (r18 & 32) != 0 ? null : null, (r18 & 64) != 0 ? null : null);
-                arrayList.add(chatListMessageItem);
-            }
-            F = p.F(arrayList);
-            return new BlockedGroupChatListItem(text3, context, color2, backgroundColor, borderColor, revealed, F);
+            return SeparatorRowKt.toSeparatorChatListItem((SeparatorRow) row);
         } else {
+            if (row instanceof BlockedGroupRow) {
+                BlockedGroupRow blockedGroupRow = (BlockedGroupRow) row;
+                String text = blockedGroupRow.getText();
+                String context = blockedGroupRow.getButton().getAction().getContext();
+                int color = blockedGroupRow.getColor();
+                int backgroundColor = blockedGroupRow.getBackgroundColor();
+                int borderColor = blockedGroupRow.getBorderColor();
+                boolean revealed = blockedGroupRow.getRevealed();
+                List<BlockedGroupContent> content = blockedGroupRow.getContent();
+                if (content == null) {
+                    content = j.i();
+                }
+                t10 = k.t(content, 10);
+                ArrayList arrayList = new ArrayList(t10);
+                for (BlockedGroupContent blockedGroupContent : content) {
+                    chatListMessageItem = MessageRowKt.toChatListMessageItem(blockedGroupContent.getMessage(), (r18 & 1) != 0 ? null : null, new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null), (r18 & 4) != 0, (r18 & 8) != 0 ? false : false, (r18 & 16) != 0 ? false : false, (r18 & 32) != 0 ? null : null, (r18 & 64) != 0 ? null : null);
+                    arrayList.add(chatListMessageItem);
+                }
+                F = p.F(arrayList);
+                return new BlockedGroupChatListItem(text, context, color, backgroundColor, borderColor, revealed, F);
+            }
             throw new IllegalStateException("Unknown row type.".toString());
         }
-        return separatorChatListItem;
+        return loadingChatListItem;
     }
 
     public final void clearRows() {

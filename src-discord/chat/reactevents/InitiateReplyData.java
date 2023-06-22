@@ -44,7 +44,7 @@ public final class InitiateReplyData implements ReactEvent {
             n1.b(i10, 3, InitiateReplyData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m563unboximpl();
+        this.channelId = channelId.m572unboximpl();
     }
 
     public /* synthetic */ InitiateReplyData(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -56,36 +56,36 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     /* renamed from: copy-pfaIj0E$default  reason: not valid java name */
-    public static /* synthetic */ InitiateReplyData m334copypfaIj0E$default(InitiateReplyData initiateReplyData, String str, long j10, int i10, Object obj) {
+    public static /* synthetic */ InitiateReplyData m343copypfaIj0E$default(InitiateReplyData initiateReplyData, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = initiateReplyData.messageId;
         }
         if ((i10 & 2) != 0) {
             j10 = initiateReplyData.channelId;
         }
-        return initiateReplyData.m337copypfaIj0E(str, j10);
+        return initiateReplyData.m346copypfaIj0E(str, j10);
     }
 
     public static final void write$Self(InitiateReplyData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.messageId));
-        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m554boximpl(self.channelId));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
+        output.q(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m563boximpl(self.channelId));
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m335component13Eiw7ao() {
+    public final String m344component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m336component2o4g7jtM() {
+    public final long m345component2o4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: copy-pfaIj0E  reason: not valid java name */
-    public final InitiateReplyData m337copypfaIj0E(String messageId, long j10) {
+    public final InitiateReplyData m346copypfaIj0E(String messageId, long j10) {
         q.g(messageId, "messageId");
         return new InitiateReplyData(messageId, j10, null);
     }
@@ -98,21 +98,21 @@ public final class InitiateReplyData implements ReactEvent {
             return false;
         }
         InitiateReplyData initiateReplyData = (InitiateReplyData) obj;
-        return MessageId.m584equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m558equalsimpl0(this.channelId, initiateReplyData.channelId);
+        return MessageId.m593equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m567equalsimpl0(this.channelId, initiateReplyData.channelId);
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m338getChannelIdo4g7jtM() {
+    public final long m347getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m339getMessageId3Eiw7ao() {
+    public final String m348getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m585hashCodeimpl(this.messageId) * 31) + ChannelId.m559hashCodeimpl(this.channelId);
+        return (MessageId.m594hashCodeimpl(this.messageId) * 31) + ChannelId.m568hashCodeimpl(this.channelId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -121,8 +121,8 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m586toStringimpl(this.messageId);
-        String str2 = ChannelId.m561toStringimpl(this.channelId);
+        String str = MessageId.m595toStringimpl(this.messageId);
+        String str2 = ChannelId.m570toStringimpl(this.channelId);
         return "InitiateReplyData(messageId=" + str + ", channelId=" + str2 + ")";
     }
 

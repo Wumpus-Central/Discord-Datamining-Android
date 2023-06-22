@@ -41,7 +41,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f33006a, a.u(a2.f32931a), AnnotatedStructurableTextSerializer.INSTANCE};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f33009a, a.u(a2.f32934a), AnnotatedStructurableTextSerializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,7 +57,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
         if (b10.p()) {
             obj3 = b10.y(descriptor2, 0, UserId$$serializer.INSTANCE, null);
             i10 = b10.i(descriptor2, 1);
-            obj = b10.n(descriptor2, 2, a2.f32931a, null);
+            obj = b10.n(descriptor2, 2, a2.f32934a, null);
             obj2 = b10.y(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, null);
             i11 = 15;
         } else {
@@ -78,7 +78,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
                     i12 = b10.i(descriptor2, 1);
                     i13 |= 2;
                 } else if (o10 == 2) {
-                    obj5 = b10.n(descriptor2, 2, a2.f32931a, obj5);
+                    obj5 = b10.n(descriptor2, 2, a2.f32934a, obj5);
                     i13 |= 4;
                 } else if (o10 == 3) {
                     obj6 = b10.y(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, obj6);

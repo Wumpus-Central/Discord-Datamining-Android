@@ -33,7 +33,7 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -53,7 +53,7 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
 
                 public final Object emit(PortalViewContextManager.Event event, Continuation<? super Unit> continuation) {
                     MediaView.setMediaData$default(MediaView.this, null, false, false, false, null, false, null, event, false, false, false, 1919, null);
-                    return Unit.f22111a;
+                    return Unit.f22114a;
                 }
             };
             this.label = 1;
@@ -65,6 +65,6 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 }

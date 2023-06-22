@@ -117,7 +117,7 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 0, m0.f33006a, self.getReactionBackgroundColor());
+            output.u(serialDesc, 0, m0.f33009a, self.getReactionBackgroundColor());
         }
         if (!output.A(serialDesc, 1) && self.getReactionBorderColor() == null) {
             z11 = false;
@@ -125,7 +125,7 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 1, m0.f33006a, self.getReactionBorderColor());
+            output.u(serialDesc, 1, m0.f33009a, self.getReactionBorderColor());
         }
         if (!output.A(serialDesc, 2) && self.getReactionTextColor() == null) {
             z12 = false;
@@ -133,7 +133,7 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 2, m0.f33006a, self.getReactionTextColor());
+            output.u(serialDesc, 2, m0.f33009a, self.getReactionTextColor());
         }
         if (!output.A(serialDesc, 3) && self.getActiveReactionBackgroundColor() == null) {
             z13 = false;
@@ -141,7 +141,7 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
             z13 = true;
         }
         if (z13) {
-            output.u(serialDesc, 3, m0.f33006a, self.getActiveReactionBackgroundColor());
+            output.u(serialDesc, 3, m0.f33009a, self.getActiveReactionBackgroundColor());
         }
         if (!output.A(serialDesc, 4) && self.getActiveReactionBorderColor() == null) {
             z14 = false;
@@ -149,13 +149,13 @@ public final class ReactionsTheme implements ReactionView.ReactionsTheme {
             z14 = true;
         }
         if (z14) {
-            output.u(serialDesc, 4, m0.f33006a, self.getActiveReactionBorderColor());
+            output.u(serialDesc, 4, m0.f33009a, self.getActiveReactionBorderColor());
         }
         if (output.A(serialDesc, 5) || self.getActiveReactionTextColor() != null) {
             z15 = true;
         }
         if (z15) {
-            output.u(serialDesc, 5, m0.f33006a, self.getActiveReactionTextColor());
+            output.u(serialDesc, 5, m0.f33009a, self.getActiveReactionTextColor());
         }
     }
 

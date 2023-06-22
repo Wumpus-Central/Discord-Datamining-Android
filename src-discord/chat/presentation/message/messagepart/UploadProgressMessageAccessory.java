@@ -25,9 +25,9 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ UploadProgressMessageAccessory m287copyu7_MRrM$default(UploadProgressMessageAccessory uploadProgressMessageAccessory, String str, int i10, UploadProgress uploadProgress, int i11, Object obj) {
+    public static /* synthetic */ UploadProgressMessageAccessory m296copyu7_MRrM$default(UploadProgressMessageAccessory uploadProgressMessageAccessory, String str, int i10, UploadProgress uploadProgress, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = uploadProgressMessageAccessory.mo206getMessageId3Eiw7ao();
+            str = uploadProgressMessageAccessory.mo215getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = uploadProgressMessageAccessory.index;
@@ -35,12 +35,12 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             uploadProgress = uploadProgressMessageAccessory.uploadProgress;
         }
-        return uploadProgressMessageAccessory.m289copyu7_MRrM(str, i10, uploadProgress);
+        return uploadProgressMessageAccessory.m298copyu7_MRrM(str, i10, uploadProgress);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m288component13Eiw7ao() {
-        return mo206getMessageId3Eiw7ao();
+    public final String m297component13Eiw7ao() {
+        return mo215getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -52,7 +52,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final UploadProgressMessageAccessory m289copyu7_MRrM(String messageId, int i10, UploadProgress uploadProgress) {
+    public final UploadProgressMessageAccessory m298copyu7_MRrM(String messageId, int i10, UploadProgress uploadProgress) {
         q.g(messageId, "messageId");
         q.g(uploadProgress, "uploadProgress");
         return new UploadProgressMessageAccessory(messageId, i10, uploadProgress, null);
@@ -66,7 +66,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
             return false;
         }
         UploadProgressMessageAccessory uploadProgressMessageAccessory = (UploadProgressMessageAccessory) obj;
-        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), uploadProgressMessageAccessory.mo206getMessageId3Eiw7ao()) && this.index == uploadProgressMessageAccessory.index && q.b(this.uploadProgress, uploadProgressMessageAccessory.uploadProgress);
+        return MessageId.m593equalsimpl0(mo215getMessageId3Eiw7ao(), uploadProgressMessageAccessory.mo215getMessageId3Eiw7ao()) && this.index == uploadProgressMessageAccessory.index && q.b(this.uploadProgress, uploadProgressMessageAccessory.uploadProgress);
     }
 
     public final int getIndex() {
@@ -75,7 +75,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo206getMessageId3Eiw7ao() {
+    public String mo215getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -84,11 +84,11 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.uploadProgress.hashCode();
+        return (((MessageId.m594hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.uploadProgress.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
+        String str = MessageId.m595toStringimpl(mo215getMessageId3Eiw7ao());
         int i10 = this.index;
         UploadProgress uploadProgress = this.uploadProgress;
         return "UploadProgressMessageAccessory(messageId=" + str + ", index=" + i10 + ", uploadProgress=" + uploadProgress + ")";

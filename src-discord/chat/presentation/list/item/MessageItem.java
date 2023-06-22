@@ -156,7 +156,7 @@ public final class MessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageItem(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12) {
-        super(MessageId.m586toStringimpl(message.m17getId3Eiw7ao()), null);
+        super(MessageId.m595toStringimpl(message.m17getId3Eiw7ao()), null);
         q.g(message, "message");
         q.g(messageContext, "messageContext");
         this.message = message;

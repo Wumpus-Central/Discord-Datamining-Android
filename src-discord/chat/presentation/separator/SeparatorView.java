@@ -39,9 +39,6 @@ public final class SeparatorView extends ConstraintLayout {
 
     public final void setText(CharSequence text) {
         q.g(text, "text");
-        TextView textView = this.binding.middleText;
-        q.f(textView, "binding.middleText");
-        DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
         this.binding.middleText.setText(text);
     }
 
@@ -58,6 +55,9 @@ public final class SeparatorView extends ConstraintLayout {
         root.setPaddingRelative(dimensionPixelSize, root.getPaddingTop(), dimensionPixelSize, root.getPaddingBottom());
         TextView textView = inflate.middleText;
         q.f(textView, "binding.middleText");
-        SetTextSizeSpKt.setTextSizeSp(textView, 12.0f);
+        DiscordFontUtilsKt.setDiscordFont(textView, DiscordFont.PrimarySemibold);
+        TextView textView2 = inflate.middleText;
+        q.f(textView2, "binding.middleText");
+        SetTextSizeSpKt.setTextSizeSp(textView2, 12.0f);
     }
 }

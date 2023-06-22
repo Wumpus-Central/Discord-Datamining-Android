@@ -26,7 +26,7 @@ public final class MediaManagerModule$mediaResolver$1 extends s implements Funct
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Uri uri, Integer num) {
         invoke(uri, num.intValue());
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     public final void invoke(Uri uri, int i10) {

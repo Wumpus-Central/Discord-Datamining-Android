@@ -34,7 +34,7 @@ public final class CompressionProgressEvent$$serializer implements f0<Compressio
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32931a, m0.f33006a};
+        return new KSerializer[]{a2.f32934a, m0.f33009a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

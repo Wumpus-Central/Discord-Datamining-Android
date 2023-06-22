@@ -23,7 +23,7 @@ final class SoundManagerModule$prepare$2 extends s implements Function1<Integer,
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     public final void invoke(int i10) {

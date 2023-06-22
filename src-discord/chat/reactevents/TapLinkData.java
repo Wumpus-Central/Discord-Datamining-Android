@@ -56,7 +56,7 @@ public final class TapLinkData implements ReactEvent {
     }
 
     /* renamed from: copy-fCSJrew$default  reason: not valid java name */
-    public static /* synthetic */ TapLinkData m382copyfCSJrew$default(TapLinkData tapLinkData, String str, String str2, String str3, String str4, LinkContext linkContext, int i10, Object obj) {
+    public static /* synthetic */ TapLinkData m391copyfCSJrew$default(TapLinkData tapLinkData, String str, String str2, String str3, String str4, LinkContext linkContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapLinkData.messageId;
         }
@@ -72,7 +72,7 @@ public final class TapLinkData implements ReactEvent {
         if ((i10 & 16) != 0) {
             linkContext = tapLinkData.context;
         }
-        return tapLinkData.m384copyfCSJrew(str, str2, str3, str4, linkContext);
+        return tapLinkData.m393copyfCSJrew(str, str2, str3, str4, linkContext);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -86,7 +86,7 @@ public final class TapLinkData implements ReactEvent {
                         HandleDelete handleDelete = linkContext.getHandleDelete();
                         if (handleDelete != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleDelete.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(x.a("id", handleDelete.getMessage().m63getId3Eiw7ao()), x.a("channel_id", ChannelId.m561toStringimpl(handleDelete.getMessage().m62getChannelIdo4g7jtM())), x.a("loggingName", handleDelete.getMessage().getLoggingName()), x.a("author", NativeMapExtensionsKt.nativeMapOf(x.a("username", handleDelete.getMessage().getAuthor().getUsername())))));
+                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(x.a("id", handleDelete.getMessage().m63getId3Eiw7ao()), x.a("channel_id", ChannelId.m570toStringimpl(handleDelete.getMessage().m62getChannelIdo4g7jtM())), x.a("loggingName", handleDelete.getMessage().getLoggingName()), x.a("author", NativeMapExtensionsKt.nativeMapOf(x.a("username", handleDelete.getMessage().getAuthor().getUsername())))));
                             break;
                         }
                     }
@@ -109,12 +109,12 @@ public final class TapLinkData implements ReactEvent {
                             MessageReference messageReference = webhookNameOnClick.getMessageReference();
                             if (messageReference != null) {
                                 WritableNativeMap nativeMapOf2 = NativeMapExtensionsKt.nativeMapOf(new Pair[0]);
-                                NativeMapExtensionsKt.put(nativeMapOf2, "channel_id", ChannelId.m561toStringimpl(messageReference.m77getChannelIdo4g7jtM()));
+                                NativeMapExtensionsKt.put(nativeMapOf2, "channel_id", ChannelId.m570toStringimpl(messageReference.m77getChannelIdo4g7jtM()));
                                 GuildId guildId = messageReference.m78getGuildIdqOKuAAo();
                                 if (guildId != null) {
-                                    NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m574toStringimpl(guildId.m576unboximpl()));
+                                    NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", GuildId.m583toStringimpl(guildId.m585unboximpl()));
                                 }
-                                Unit unit = Unit.f22111a;
+                                Unit unit = Unit.f22114a;
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                                 break;
                             }
@@ -126,7 +126,7 @@ public final class TapLinkData implements ReactEvent {
                         PinsOnClick pinsOnClick = linkContext.getPinsOnClick();
                         if (pinsOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", pinsOnClick.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m561toStringimpl(pinsOnClick.m82getMessageChannelIdo4g7jtM()));
+                            NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m570toStringimpl(pinsOnClick.m82getMessageChannelIdo4g7jtM()));
                             break;
                         }
                     }
@@ -136,10 +136,10 @@ public final class TapLinkData implements ReactEvent {
                         UserNameOnClick usernameOnClick = linkContext.getUsernameOnClick();
                         if (usernameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", usernameOnClick.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m625toStringimpl(usernameOnClick.m92getUserIdre6GcUE()));
+                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m634toStringimpl(usernameOnClick.m92getUserIdre6GcUE()));
                             ChannelId channelId = usernameOnClick.m91getMessageChannelIdqMVnFVQ();
                             if (channelId != null) {
-                                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m561toStringimpl(channelId.m563unboximpl()));
+                                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m570toStringimpl(channelId.m572unboximpl()));
                                 break;
                             }
                         }
@@ -163,7 +163,7 @@ public final class TapLinkData implements ReactEvent {
                         ActorHook actorHook = linkContext.getActorHook();
                         if (actorHook != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", actorHook.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m625toStringimpl(actorHook.m42getUserIdre6GcUE()));
+                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m634toStringimpl(actorHook.m42getUserIdre6GcUE()));
                             break;
                         }
                     }
@@ -173,10 +173,10 @@ public final class TapLinkData implements ReactEvent {
                         UserNameOnClick otherUsernameOnClick = linkContext.getOtherUsernameOnClick();
                         if (otherUsernameOnClick != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", otherUsernameOnClick.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m625toStringimpl(otherUsernameOnClick.m92getUserIdre6GcUE()));
+                            NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m634toStringimpl(otherUsernameOnClick.m92getUserIdre6GcUE()));
                             ChannelId channelId2 = otherUsernameOnClick.m91getMessageChannelIdqMVnFVQ();
                             if (channelId2 != null) {
-                                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m561toStringimpl(channelId2.m563unboximpl()));
+                                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m570toStringimpl(channelId2.m572unboximpl()));
                                 break;
                             }
                         }
@@ -187,7 +187,7 @@ public final class TapLinkData implements ReactEvent {
                         HandleMessage handleMessage = linkContext.getHandleMessage();
                         if (handleMessage != null) {
                             NativeMapExtensionsKt.put(nativeMapOf, "action", handleMessage.getAction());
-                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(x.a("id", handleMessage.getMessage().m70getId3Eiw7ao()), x.a("channel_id", ChannelId.m561toStringimpl(handleMessage.getMessage().m69getChannelIdo4g7jtM())), x.a("loggingName", handleMessage.getMessage().getLoggingName())));
+                            NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(x.a("id", handleMessage.getMessage().m70getId3Eiw7ao()), x.a("channel_id", ChannelId.m570toStringimpl(handleMessage.getMessage().m69getChannelIdo4g7jtM())), x.a("loggingName", handleMessage.getMessage().getLoggingName())));
                             break;
                         }
                     }
@@ -203,7 +203,7 @@ public final class TapLinkData implements ReactEvent {
                                 NativeMapExtensionsKt.put(nativeMapOf, "messageType", Integer.valueOf(messageType.getSerialNumber()));
                             }
                             String str2 = commandNameOnClick.m55getMessageIdN_6c4I0();
-                            NativeMapExtensionsKt.put(nativeMapOf, "messageId", str2 == null ? "null" : MessageId.m586toStringimpl(str2));
+                            NativeMapExtensionsKt.put(nativeMapOf, "messageId", str2 == null ? "null" : MessageId.m595toStringimpl(str2));
                             NativeMapExtensionsKt.put(nativeMapOf, "applicationUserId", String.valueOf(commandNameOnClick.m53getApplicationUserIdwUX8bhU()));
                             NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", String.valueOf(commandNameOnClick.m54getMessageChannelIdqMVnFVQ()));
                             break;
@@ -220,7 +220,7 @@ public final class TapLinkData implements ReactEvent {
     }
 
     /* renamed from: component1-N_6c4I0  reason: not valid java name */
-    public final String m383component1N_6c4I0() {
+    public final String m392component1N_6c4I0() {
         return this.messageId;
     }
 
@@ -241,7 +241,7 @@ public final class TapLinkData implements ReactEvent {
     }
 
     /* renamed from: copy-fCSJrew  reason: not valid java name */
-    public final TapLinkData m384copyfCSJrew(String str, String str2, String str3, String content, LinkContext linkContext) {
+    public final TapLinkData m393copyfCSJrew(String str, String str2, String str3, String content, LinkContext linkContext) {
         q.g(content, "content");
         return new TapLinkData(str, str2, str3, content, linkContext, null);
     }
@@ -277,7 +277,7 @@ public final class TapLinkData implements ReactEvent {
             r1 = r2
             goto L_0x001e
         L_0x001a:
-            boolean r1 = com.discord.primitives.MessageId.m584equalsimpl0(r1, r3)
+            boolean r1 = com.discord.primitives.MessageId.m593equalsimpl0(r1, r3)
         L_0x001e:
             if (r1 != 0) goto L_0x0021
             return r2
@@ -320,7 +320,7 @@ public final class TapLinkData implements ReactEvent {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m385getMessageIdN_6c4I0() {
+    public final String m394getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -335,7 +335,7 @@ public final class TapLinkData implements ReactEvent {
     public int hashCode() {
         String str = this.messageId;
         int i10 = 0;
-        int i11 = (str == null ? 0 : MessageId.m585hashCodeimpl(str)) * 31;
+        int i11 = (str == null ? 0 : MessageId.m594hashCodeimpl(str)) * 31;
         String str2 = this.title;
         int hashCode = (i11 + (str2 == null ? 0 : str2.hashCode())) * 31;
         String str3 = this.target;
@@ -358,7 +358,7 @@ public final class TapLinkData implements ReactEvent {
             if (str2 == null) {
                 str = "null";
             } else {
-                str = MessageId.m586toStringimpl(str2);
+                str = MessageId.m595toStringimpl(str2);
             }
             pairArr[0] = x.a("messageId", str);
             pairArr[1] = x.a("url", this.target);
@@ -370,7 +370,7 @@ public final class TapLinkData implements ReactEvent {
 
     public String toString() {
         String str = this.messageId;
-        String str2 = str == null ? "null" : MessageId.m586toStringimpl(str);
+        String str2 = str == null ? "null" : MessageId.m595toStringimpl(str);
         String str3 = this.title;
         String str4 = this.target;
         String str5 = this.content;

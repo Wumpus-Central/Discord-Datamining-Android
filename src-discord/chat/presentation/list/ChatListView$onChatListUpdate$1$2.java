@@ -5,6 +5,7 @@ import com.discord.chat.listmanager.ChatListUpdate;
 import com.discord.chat.presentation.list.ChatScrollStateObserver;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.chat.presentation.list.item.SeparatorChatListItem;
+import com.discord.chat.presentation.list.item.SummarySeparatorChatListItem;
 import com.discord.chat.presentation.root.ChatView;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.recycler_view.scroller.Scroller;
@@ -46,14 +47,19 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
         ChatListAction action = this.$update.getAction();
         if (action instanceof ChatListAction.ScrollTo) {
             X = r.X(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
-            if (((ChatListItem) X) instanceof SeparatorChatListItem) {
+            ChatListItem chatListItem = (ChatListItem) X;
+            if (chatListItem instanceof SeparatorChatListItem) {
+                targetAlignment = new Scroller.TargetAlignment.Top(SizeUtilsKt.getDpToPx(4));
+            } else if (!(chatListItem instanceof SummarySeparatorChatListItem)) {
+                targetAlignment = Scroller.TargetAlignment.Center.INSTANCE;
+            } else if (((SummarySeparatorChatListItem) chatListItem).isBeforeContent()) {
                 targetAlignment = new Scroller.TargetAlignment.Top(SizeUtilsKt.getDpToPx(4));
             } else {
                 targetAlignment = Scroller.TargetAlignment.Center.INSTANCE;
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f22136k) {
+            if (!this.$wasAtBottom.f22139k) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

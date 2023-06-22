@@ -26,14 +26,14 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     /* renamed from: copy-Ayv7vGE$default  reason: not valid java name */
-    public static /* synthetic */ TapWelcomeReplyData m412copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
+    public static /* synthetic */ TapWelcomeReplyData m421copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = tapWelcomeReplyData.stickerId;
         }
         if ((i10 & 2) != 0) {
             str = tapWelcomeReplyData.messageId;
         }
-        return tapWelcomeReplyData.m414copyAyv7vGE(j10, str);
+        return tapWelcomeReplyData.m423copyAyv7vGE(j10, str);
     }
 
     public final long component1() {
@@ -41,12 +41,12 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m413component23Eiw7ao() {
+    public final String m422component23Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: copy-Ayv7vGE  reason: not valid java name */
-    public final TapWelcomeReplyData m414copyAyv7vGE(long j10, String messageId) {
+    public final TapWelcomeReplyData m423copyAyv7vGE(long j10, String messageId) {
         q.g(messageId, "messageId");
         return new TapWelcomeReplyData(j10, messageId, null);
     }
@@ -59,11 +59,11 @@ public final class TapWelcomeReplyData implements ReactEvent {
             return false;
         }
         TapWelcomeReplyData tapWelcomeReplyData = (TapWelcomeReplyData) obj;
-        return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m584equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
+        return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m593equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m415getMessageId3Eiw7ao() {
+    public final String m424getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,17 +72,17 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (b.a(this.stickerId) * 31) + MessageId.m585hashCodeimpl(this.messageId);
+        return (b.a(this.stickerId) * 31) + MessageId.m594hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m586toStringimpl(this.messageId)), x.a("stickerId", String.valueOf(this.stickerId)));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m595toStringimpl(this.messageId)), x.a("stickerId", String.valueOf(this.stickerId)));
     }
 
     public String toString() {
         long j10 = this.stickerId;
-        String str = MessageId.m586toStringimpl(this.messageId);
+        String str = MessageId.m595toStringimpl(this.messageId);
         return "TapWelcomeReplyData(stickerId=" + j10 + ", messageId=" + str + ")";
     }
 }

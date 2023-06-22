@@ -32,7 +32,7 @@ public final class TimerEvent$$serializer implements f0<TimerEvent> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f33006a};
+        return new KSerializer[]{m0.f33009a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -45,9 +45,9 @@ public final class Sticker$$serializer implements f0<Sticker> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32931a;
-        m0 m0Var = m0.f33006a;
-        return new KSerializer[]{w0.f33047a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), m0Var};
+        a2 a2Var = a2.f32934a;
+        m0 m0Var = m0.f33009a;
+        return new KSerializer[]{w0.f33050a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), m0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -72,7 +72,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
             str3 = b10.m(descriptor2, 2);
             str2 = b10.m(descriptor2, 3);
             str = b10.m(descriptor2, 4);
-            m0 m0Var = m0.f33006a;
+            m0 m0Var = m0.f33009a;
             obj = b10.n(descriptor2, 5, m0Var, null);
             obj2 = b10.n(descriptor2, 6, m0Var, null);
             i10 = b10.i(descriptor2, 7);
@@ -120,11 +120,11 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i15 |= 16;
                         break;
                     case 5:
-                        obj = b10.n(descriptor2, 5, m0.f33006a, obj);
+                        obj = b10.n(descriptor2, 5, m0.f33009a, obj);
                         i15 |= 32;
                         break;
                     case 6:
-                        obj2 = b10.n(descriptor2, i13, m0.f33006a, obj2);
+                        obj2 = b10.n(descriptor2, i13, m0.f33009a, obj2);
                         i15 |= 64;
                         break;
                     case 7:

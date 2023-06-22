@@ -39,7 +39,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f32931a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f32934a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -55,7 +55,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
         if (b10.p()) {
             obj3 = b10.y(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = b10.n(descriptor2, 2, a2.f32931a, null);
+            obj2 = b10.n(descriptor2, 2, a2.f32934a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -74,7 +74,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
                     obj5 = b10.y(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    obj4 = b10.n(descriptor2, 2, a2.f32931a, obj4);
+                    obj4 = b10.n(descriptor2, 2, a2.f32934a, obj4);
                     i11 |= 4;
                 } else {
                     throw new n(o10);
@@ -87,7 +87,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj3;
         if (messageId != null) {
-            str = messageId.m588unboximpl();
+            str = messageId.m597unboximpl();
         }
         return new HandleSurveyMessage(i10, str, (ChannelId) obj, (String) obj2, null, null);
     }

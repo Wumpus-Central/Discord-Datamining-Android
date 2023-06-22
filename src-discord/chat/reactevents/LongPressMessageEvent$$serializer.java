@@ -36,8 +36,8 @@ public final class LongPressMessageEvent$$serializer implements f0<LongPressMess
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32931a;
-        return new KSerializer[]{a2Var, a2Var, m0.f33006a, a2Var};
+        a2 a2Var = a2.f32934a;
+        return new KSerializer[]{a2Var, a2Var, m0.f33009a, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

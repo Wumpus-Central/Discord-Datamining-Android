@@ -13,7 +13,7 @@ import qg.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.chat.listmanager.ChatListManager$publishUpdate$1", f = "ChatListManager.kt", l = {243}, m = "invokeSuspend")
+@e(c = "com.discord.chat.listmanager.ChatListManager$publishUpdate$1", f = "ChatListManager.kt", l = {239}, m = "invokeSuspend")
 /* loaded from: classes8.dex */
 public final class ChatListManager$publishUpdate$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ ChatListUpdate $update;
@@ -34,7 +34,7 @@ public final class ChatListManager$publishUpdate$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListManager$publishUpdate$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+        return ((ChatListManager$publishUpdate$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -56,6 +56,6 @@ public final class ChatListManager$publishUpdate$1 extends k implements Function
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 }

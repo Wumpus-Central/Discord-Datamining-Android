@@ -7,6 +7,7 @@ import android.media.projection.MediaProjectionManager;
 import com.discord.media.engine.types.Debug;
 import com.discord.media.engine.video.events.ActiveSinksChangeEvent;
 import com.discord.media.engine.video.events.DeviceChangedEvent;
+import com.discord.media.engine.video.events.FirstFrameCallbackEvent;
 import com.discord.media.engine.video.events.NoInputCallbackEvent;
 import com.discord.media.engine.video.events.OnBroadcastRequestedEvent;
 import com.discord.media.engine.video.events.OnBroadcastThumbnailEvent;
@@ -32,10 +33,12 @@ import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
+import java.util.List;
 import java.util.Map;
 import kg.x;
 import kotlin.Metadata;
 import kotlin.Unit;
+import kotlin.collections.j;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -56,7 +59,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     private Integer streamConnectionId;
     private Intent streamPermissions;
     private final long startNs = System.nanoTime();
-    private final ReactEvents reactEvents = new ReactEvents(x.a("no-input-callback", f0.b(NoInputCallbackEvent.class)), x.a("on-voice", f0.b(OnVoiceEvent.class)), x.a("device-changed", f0.b(DeviceChangedEvent.class)), x.a("on-broadcast-requested", f0.b(OnBroadcastRequestedEvent.class)), x.a("on-broadcast-thumbnail", f0.b(OnBroadcastThumbnailEvent.class)), x.a("user-speaking", f0.b(UserSpeakingEvent.class)), x.a("ping-callback", f0.b(PingCallbackEvent.class)), x.a("ping-timeout-callback", f0.b(PingTimeoutCallbackEvent.class)), x.a("on-video-callback", f0.b(OnVideoCallbackEvent.class)), x.a("active-sinks-change", f0.b(ActiveSinksChangeEvent.class)), x.a("speed-test-ping-callback", f0.b(SpeedTestPingCallbackEvent.class)), x.a("speed-test-ping-timeout-callback", f0.b(SpeedTestPingTimeoutCallbackEvent.class)));
+    private final ReactEvents reactEvents = new ReactEvents(x.a("no-input-callback", f0.b(NoInputCallbackEvent.class)), x.a("on-voice", f0.b(OnVoiceEvent.class)), x.a("device-changed", f0.b(DeviceChangedEvent.class)), x.a("on-broadcast-requested", f0.b(OnBroadcastRequestedEvent.class)), x.a("on-broadcast-thumbnail", f0.b(OnBroadcastThumbnailEvent.class)), x.a("user-speaking", f0.b(UserSpeakingEvent.class)), x.a("ping-callback", f0.b(PingCallbackEvent.class)), x.a("ping-timeout-callback", f0.b(PingTimeoutCallbackEvent.class)), x.a("on-video-callback", f0.b(OnVideoCallbackEvent.class)), x.a("active-sinks-change", f0.b(ActiveSinksChangeEvent.class)), x.a("speed-test-ping-callback", f0.b(SpeedTestPingCallbackEvent.class)), x.a("speed-test-ping-timeout-callback", f0.b(SpeedTestPingTimeoutCallbackEvent.class)), x.a("on-first-frame-callback", f0.b(FirstFrameCallbackEvent.class)));
     private final ActivityEventListener activityEventListener = new ActivityEventListener() { // from class: com.discord.media.engine.MediaEngineModule$activityEventListener$1
         @Override // com.facebook.react.bridge.ActivityEventListener
         public void onActivityResult(Activity activity, int i10, int i11, Intent intent) {
@@ -146,6 +149,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         this.mediaEngine.connectionInstanceSetOnSpeakingCallback$media_engine_release(i10, new MediaEngineModule$addConnectionCallbacks$1(this, i10));
         this.mediaEngine.connectionInstanceSetOnPingCallback$media_engine_release(i10, new MediaEngineModule$addConnectionCallbacks$2(this, i10));
         this.mediaEngine.connectionInstanceSetOnPingTimeoutCallback$media_engine_release(i10, new MediaEngineModule$addConnectionCallbacks$3(this, i10));
+        this.mediaEngine.connectionInstanceSetOnFirstFrameCallback$media_engine_release(i10, new MediaEngineModule$addConnectionCallbacks$4(this, i10));
     }
 
     private final void addSpeedTestConnectionCallbacks(int i10) {
@@ -330,11 +334,13 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     public Map<String, Object> getConstants() {
         Map k10;
         Map k11;
-        Map<String, Object> l10;
+        List l10;
+        Map<String, Object> l11;
         k10 = v.k(x.a("MAINTAIN_RESOLUTION", 0), x.a("MAINTAIN_FRAMERATE", 1), x.a("BALANCED", 2));
         k11 = v.k(x.a("VOICE", "AVAudioSessionModeVoiceChat"), x.a("VIDEO", "AVAudioSessionModeVideoChat"), x.a("LISTEN", "AVAudioSessionModeSpokenAudio"), x.a("DEFAULT", "AVAudioSessionModeDefault"));
-        l10 = v.l(x.a("DegradationPreference", k10), x.a("AVAudioSessionMode", k11));
-        return l10;
+        l10 = j.l("voice_sound_stop_loop", "voice_relative_sounds", "voice_legacy_subsystem", "voice_experimental_subsystem", "elevated_hook", "soundshare", "soundshare_loopback", "set_audio_device_by_id", "set_video_device_by_id", "loopback", "wumpus_video", "hybrid_video", "experimental_encoders", "experiment_config", "remote_locus_network_control", "screen_previews", "window_previews", "audio_debug_state", "connection_replay", "simulcast_bugfix", "RTC_REGION_RANKING", "video_effects", "direct_video", "electron_video", "mediapipe", "fixed_keyframe_interval", "clips", "speed_test", "first_frame_callback", "remote_user_multi_stream");
+        l11 = v.l(x.a("DegradationPreference", k10), x.a("AVAudioSessionMode", k11), x.a("supportedFeatures", l10));
+        return l11;
     }
 
     @ReactMethod
@@ -586,7 +592,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcast$media_engine_release(num.intValue());
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     @ReactMethod
@@ -597,7 +603,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcastWithError$media_engine_release(num.intValue(), i10, errorMessage);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     @ReactMethod

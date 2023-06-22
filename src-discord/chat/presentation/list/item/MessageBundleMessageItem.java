@@ -11,7 +11,7 @@ public final class MessageBundleMessageItem extends MessageBundleItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MessageBundleMessageItem(MessageItem messageItem) {
-        super(MessageId.m586toStringimpl(messageItem.getMessage().m17getId3Eiw7ao()), null);
+        super(MessageId.m595toStringimpl(messageItem.getMessage().m17getId3Eiw7ao()), null);
         q.g(messageItem, "messageItem");
         this.messageItem = messageItem;
     }

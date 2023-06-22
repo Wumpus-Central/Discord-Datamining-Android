@@ -26,7 +26,7 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return g.a("Message", e.i.f32135a);
+        return g.a("Message", e.i.f32138a);
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -38,7 +38,7 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
         } catch (Exception e10) {
             CrashReporting.INSTANCE.captureException(e10);
             UUID randomUUID = UUID.randomUUID();
-            String str = MessageId.m581constructorimpl("RENDERING_ERROR_" + randomUUID);
+            String str = MessageId.m590constructorimpl("RENDERING_ERROR_" + randomUUID);
             b10 = f.b(e10);
             return new ErrorMessage(str, b10, null);
         }

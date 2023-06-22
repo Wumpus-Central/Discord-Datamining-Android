@@ -42,7 +42,7 @@ public final class MobileVoiceOverlayDataUser {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, MobileVoiceOverlayDataUser$$serializer.INSTANCE.getDescriptor());
         }
-        this.userId = userId.m627unboximpl();
+        this.userId = userId.m636unboximpl();
         this.avatar = str;
         this.speaking = z10;
         this.discriminator = i11;
@@ -57,7 +57,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     /* renamed from: copy-ASSxI_0$default  reason: not valid java name */
-    public static /* synthetic */ MobileVoiceOverlayDataUser m465copyASSxI_0$default(MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser, long j10, String str, boolean z10, int i10, int i11, Object obj) {
+    public static /* synthetic */ MobileVoiceOverlayDataUser m474copyASSxI_0$default(MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser, long j10, String str, boolean z10, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             j10 = mobileVoiceOverlayDataUser.userId;
         }
@@ -70,21 +70,21 @@ public final class MobileVoiceOverlayDataUser {
         if ((i11 & 8) != 0) {
             i10 = mobileVoiceOverlayDataUser.discriminator;
         }
-        return mobileVoiceOverlayDataUser.m467copyASSxI_0(j10, str, z10, i10);
+        return mobileVoiceOverlayDataUser.m476copyASSxI_0(j10, str, z10, i10);
     }
 
     public static final void write$Self(MobileVoiceOverlayDataUser self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m618boximpl(self.userId));
-        output.u(serialDesc, 1, a2.f32931a, self.avatar);
+        output.q(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m627boximpl(self.userId));
+        output.u(serialDesc, 1, a2.f32934a, self.avatar);
         output.y(serialDesc, 2, self.speaking);
         output.x(serialDesc, 3, self.discriminator);
     }
 
     /* renamed from: component1-re6GcUE  reason: not valid java name */
-    public final long m466component1re6GcUE() {
+    public final long m475component1re6GcUE() {
         return this.userId;
     }
 
@@ -101,7 +101,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     /* renamed from: copy-ASSxI_0  reason: not valid java name */
-    public final MobileVoiceOverlayDataUser m467copyASSxI_0(long j10, String str, boolean z10, int i10) {
+    public final MobileVoiceOverlayDataUser m476copyASSxI_0(long j10, String str, boolean z10, int i10) {
         return new MobileVoiceOverlayDataUser(j10, str, z10, i10, null);
     }
 
@@ -113,7 +113,7 @@ public final class MobileVoiceOverlayDataUser {
             return false;
         }
         MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) obj;
-        return UserId.m622equalsimpl0(this.userId, mobileVoiceOverlayDataUser.userId) && q.b(this.avatar, mobileVoiceOverlayDataUser.avatar) && this.speaking == mobileVoiceOverlayDataUser.speaking && this.discriminator == mobileVoiceOverlayDataUser.discriminator;
+        return UserId.m631equalsimpl0(this.userId, mobileVoiceOverlayDataUser.userId) && q.b(this.avatar, mobileVoiceOverlayDataUser.avatar) && this.speaking == mobileVoiceOverlayDataUser.speaking && this.discriminator == mobileVoiceOverlayDataUser.discriminator;
     }
 
     public final String getAvatar() {
@@ -129,12 +129,12 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     /* renamed from: getUserId-re6GcUE  reason: not valid java name */
-    public final long m468getUserIdre6GcUE() {
+    public final long m477getUserIdre6GcUE() {
         return this.userId;
     }
 
     public int hashCode() {
-        int i10 = UserId.m623hashCodeimpl(this.userId) * 31;
+        int i10 = UserId.m632hashCodeimpl(this.userId) * 31;
         String str = this.avatar;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
         boolean z10 = this.speaking;
@@ -148,7 +148,7 @@ public final class MobileVoiceOverlayDataUser {
     }
 
     public String toString() {
-        String str = UserId.m625toStringimpl(this.userId);
+        String str = UserId.m634toStringimpl(this.userId);
         String str2 = this.avatar;
         boolean z10 = this.speaking;
         int i10 = this.discriminator;

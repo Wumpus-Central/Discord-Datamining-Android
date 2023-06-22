@@ -19,7 +19,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

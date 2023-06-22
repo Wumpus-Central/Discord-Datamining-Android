@@ -31,7 +31,7 @@ public final class AudioPlayerViewState {
     }
 
     /* renamed from: copy-P6IPuNM$default  reason: not valid java name */
-    public static /* synthetic */ AudioPlayerViewState m315copyP6IPuNM$default(AudioPlayerViewState audioPlayerViewState, String str, String str2, boolean z10, int i10, Object obj) {
+    public static /* synthetic */ AudioPlayerViewState m324copyP6IPuNM$default(AudioPlayerViewState audioPlayerViewState, String str, String str2, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = audioPlayerViewState.messageId;
         }
@@ -41,11 +41,11 @@ public final class AudioPlayerViewState {
         if ((i10 & 4) != 0) {
             z10 = audioPlayerViewState.attached;
         }
-        return audioPlayerViewState.m317copyP6IPuNM(str, str2, z10);
+        return audioPlayerViewState.m326copyP6IPuNM(str, str2, z10);
     }
 
     /* renamed from: component1-N_6c4I0  reason: not valid java name */
-    public final String m316component1N_6c4I0() {
+    public final String m325component1N_6c4I0() {
         return this.messageId;
     }
 
@@ -58,7 +58,7 @@ public final class AudioPlayerViewState {
     }
 
     /* renamed from: copy-P6IPuNM  reason: not valid java name */
-    public final AudioPlayerViewState m317copyP6IPuNM(String str, String str2, boolean z10) {
+    public final AudioPlayerViewState m326copyP6IPuNM(String str, String str2, boolean z10) {
         return new AudioPlayerViewState(str, str2, z10, null);
     }
 
@@ -93,7 +93,7 @@ public final class AudioPlayerViewState {
             r1 = r2
             goto L_0x001e
         L_0x001a:
-            boolean r1 = com.discord.primitives.MessageId.m584equalsimpl0(r1, r3)
+            boolean r1 = com.discord.primitives.MessageId.m593equalsimpl0(r1, r3)
         L_0x001e:
             if (r1 != 0) goto L_0x0021
             return r2
@@ -131,7 +131,7 @@ public final class AudioPlayerViewState {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m318getMessageIdN_6c4I0() {
+    public final String m327getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -146,7 +146,7 @@ public final class AudioPlayerViewState {
     public int hashCode() {
         String str = this.messageId;
         int i10 = 0;
-        int i11 = (str == null ? 0 : MessageId.m585hashCodeimpl(str)) * 31;
+        int i11 = (str == null ? 0 : MessageId.m594hashCodeimpl(str)) * 31;
         String str2 = this.sourceUrl;
         if (str2 != null) {
             i10 = str2.hashCode();
@@ -194,7 +194,7 @@ public final class AudioPlayerViewState {
             return null;
         }
         AudioPlayerManager.INSTANCE.setCurrentProgress(audioSource, f10, j10);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     public final boolean shouldEmitDuration$chat_release() {
@@ -208,7 +208,7 @@ public final class AudioPlayerViewState {
 
     public String toString() {
         String str = this.messageId;
-        String str2 = str == null ? "null" : MessageId.m586toStringimpl(str);
+        String str2 = str == null ? "null" : MessageId.m595toStringimpl(str);
         String str3 = this.sourceUrl;
         boolean z10 = this.attached;
         return "AudioPlayerViewState(messageId=" + str2 + ", sourceUrl=" + str3 + ", attached=" + z10 + ")";

@@ -23,6 +23,6 @@ public final class SurveyIndicationViewHolder extends MessagePartViewHolder {
 
     public final void bind(SurveyIndicationMessageAccessory surveyAccessory) {
         q.g(surveyAccessory, "surveyAccessory");
-        this.surveyIndicationView.m308setSurveyIndicationu7_MRrM(surveyAccessory.mo206getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
+        this.surveyIndicationView.m317setSurveyIndicationu7_MRrM(surveyAccessory.mo215getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
     }
 }

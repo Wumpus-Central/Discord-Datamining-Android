@@ -41,8 +41,8 @@ public final class LinkContentNode$$serializer implements f0<LinkContentNode> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32931a;
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f32973a};
+        a2 a2Var = a2.f32934a;
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2Var, a.u(LinkContext$$serializer.INSTANCE), a2Var, h.f32976a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

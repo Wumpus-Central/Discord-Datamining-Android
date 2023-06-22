@@ -27,12 +27,12 @@ final class MessageContentView$setMessageContent$spannableStringBuilder$1 extend
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(LinkContentNode node) {
         q.g(node, "node");
-        this.$onTapLink.invoke(MessageId.m580boximpl(this.$messageId), node);
+        this.$onTapLink.invoke(MessageId.m589boximpl(this.$messageId), node);
     }
 }

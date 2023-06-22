@@ -52,7 +52,7 @@ public final class MessageTagView extends FrameLayout {
     public static final void configureTagView_e_CJZyo$lambda$0(ChatEventHandler eventHandler, String messageId, long j10, String str, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(messageId, "$messageId");
-        eventHandler.mo167onTapTagEqy5D80(messageId, j10, str);
+        eventHandler.mo176onTapTagEqy5D80(messageId, j10, str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -62,7 +62,7 @@ public final class MessageTagView extends FrameLayout {
     }
 
     /* renamed from: configureTagView-e-CJZyo  reason: not valid java name */
-    public final void m201configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
+    public final void m210configureTagVieweCJZyo(String str, Boolean bool, Integer num, Integer num2, String str2, final ChatEventHandler eventHandler, final String messageId, final long j10, final String str3) {
         int i10;
         q.g(eventHandler, "eventHandler");
         q.g(messageId, "messageId");

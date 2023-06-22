@@ -22,7 +22,7 @@ final class MobileVoiceOverlay$menuDialogProvider$1$1$1 extends s implements Fun
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(OverlayDialog overlayDialog) {
         invoke2(overlayDialog);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

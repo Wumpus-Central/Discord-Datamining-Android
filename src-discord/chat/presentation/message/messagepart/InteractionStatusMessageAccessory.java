@@ -23,19 +23,19 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ InteractionStatusMessageAccessory m254copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
+    public static /* synthetic */ InteractionStatusMessageAccessory m263copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = interactionStatusMessageAccessory.mo206getMessageId3Eiw7ao();
+            str = interactionStatusMessageAccessory.mo215getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             interactionStatus = interactionStatusMessageAccessory.interactionStatus;
         }
-        return interactionStatusMessageAccessory.m256copyntcYbpo(str, interactionStatus);
+        return interactionStatusMessageAccessory.m265copyntcYbpo(str, interactionStatus);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m255component13Eiw7ao() {
-        return mo206getMessageId3Eiw7ao();
+    public final String m264component13Eiw7ao() {
+        return mo215getMessageId3Eiw7ao();
     }
 
     public final InteractionStatus component2() {
@@ -43,7 +43,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final InteractionStatusMessageAccessory m256copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final InteractionStatusMessageAccessory m265copyntcYbpo(String messageId, InteractionStatus interactionStatus) {
         q.g(messageId, "messageId");
         q.g(interactionStatus, "interactionStatus");
         return new InteractionStatusMessageAccessory(messageId, interactionStatus, null);
@@ -57,7 +57,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
             return false;
         }
         InteractionStatusMessageAccessory interactionStatusMessageAccessory = (InteractionStatusMessageAccessory) obj;
-        return MessageId.m584equalsimpl0(mo206getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo206getMessageId3Eiw7ao()) && q.b(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
+        return MessageId.m593equalsimpl0(mo215getMessageId3Eiw7ao(), interactionStatusMessageAccessory.mo215getMessageId3Eiw7ao()) && q.b(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -66,16 +66,16 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo206getMessageId3Eiw7ao() {
+    public String mo215getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m585hashCodeimpl(mo206getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
+        return (MessageId.m594hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.interactionStatus.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m586toStringimpl(mo206getMessageId3Eiw7ao());
+        String str = MessageId.m595toStringimpl(mo215getMessageId3Eiw7ao());
         InteractionStatus interactionStatus = this.interactionStatus;
         return "InteractionStatusMessageAccessory(messageId=" + str + ", interactionStatus=" + interactionStatus + ")";
     }

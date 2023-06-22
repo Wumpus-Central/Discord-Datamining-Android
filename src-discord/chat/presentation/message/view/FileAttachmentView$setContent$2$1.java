@@ -48,7 +48,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -88,7 +88,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     }
 
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01141) create(coroutineScope, continuation)).invokeSuspend(Unit.f22111a);
+                        return ((C01141) create(coroutineScope, continuation)).invokeSuspend(Unit.f22114a);
                     }
 
                     @Override // kotlin.coroutines.jvm.internal.a
@@ -117,7 +117,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                                 i11 = 8;
                             }
                             simpleDraweeView.setVisibility(i11);
-                            return Unit.f22111a;
+                            return Unit.f22114a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
@@ -132,7 +132,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     Object d11;
                     Object g10 = j.g(y0.c(), new C01141(downloadState, FileAttachmentView.this, null), continuation);
                     d11 = d.d();
-                    return g10 == d11 ? g10 : Unit.f22111a;
+                    return g10 == d11 ? g10 : Unit.f22114a;
                 }
             };
             this.label = 1;
@@ -144,6 +144,6 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 }

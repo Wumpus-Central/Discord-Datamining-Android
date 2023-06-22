@@ -41,7 +41,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
             q.g(context, "context");
             Intent intent = new Intent(ShareBroadcastReceiver.SHARE_SHEET_CLICK);
             intent.putExtra(ShareBroadcastReceiver.SHARE_SHEET_LOCATION, str);
-            Unit unit = Unit.f22111a;
+            Unit unit = Unit.f22114a;
             IntentSender intentSender = PendingIntent.getBroadcast(context, 0, intent, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null)).getIntentSender();
             q.f(intentSender, "getBroadcast(\n          …           ).intentSender");
             return intentSender;

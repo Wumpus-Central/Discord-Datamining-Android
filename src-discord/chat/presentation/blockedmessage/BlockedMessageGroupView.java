@@ -53,7 +53,7 @@ public final class BlockedMessageGroupView extends ConstraintLayout {
     public static final void bind$lambda$2(ChatEventHandler eventHandler, BlockedGroupChatListItem item, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(item, "$item");
-        eventHandler.mo169onTapToggleBlockedMessages1xi1bu0(MessageId.m581constructorimpl(item.getId()));
+        eventHandler.mo178onTapToggleBlockedMessages1xi1bu0(MessageId.m590constructorimpl(item.getId()));
     }
 
     @SuppressLint({"NotifyDataSetChanged"})

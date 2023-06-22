@@ -29,18 +29,18 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33047a};
+        return new KSerializer[]{w0.f33050a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return ApplicationId.m541boximpl(m551deserializeUV2lyTI(decoder));
+        return ApplicationId.m550boximpl(m560deserializeUV2lyTI(decoder));
     }
 
     /* renamed from: deserialize-UV2lyTI  reason: not valid java name */
-    public long m551deserializeUV2lyTI(Decoder decoder) {
+    public long m560deserializeUV2lyTI(Decoder decoder) {
         q.g(decoder, "decoder");
-        return ApplicationId.m542constructorimpl(decoder.q(getDescriptor()).l());
+        return ApplicationId.m551constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override // vj.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m552serializemvAn8kk(encoder, ((ApplicationId) obj).m550unboximpl());
+        m561serializemvAn8kk(encoder, ((ApplicationId) obj).m559unboximpl());
     }
 
     /* renamed from: serialize-mvAn8kk  reason: not valid java name */
-    public void m552serializemvAn8kk(Encoder encoder, long j10) {
+    public void m561serializemvAn8kk(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {

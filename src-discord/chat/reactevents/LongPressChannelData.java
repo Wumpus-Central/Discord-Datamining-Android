@@ -100,7 +100,7 @@ public final class LongPressChannelData implements ReactEvent {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 0, a2.f32931a, self.guildId);
+            output.u(serialDesc, 0, a2.f32934a, self.guildId);
         }
         if (!output.A(serialDesc, 1) && self.channelId == null) {
             z11 = false;
@@ -108,7 +108,7 @@ public final class LongPressChannelData implements ReactEvent {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 1, a2.f32931a, self.channelId);
+            output.u(serialDesc, 1, a2.f32934a, self.channelId);
         }
         if (!output.A(serialDesc, 2) && self.messageId == null) {
             z12 = false;
@@ -116,13 +116,13 @@ public final class LongPressChannelData implements ReactEvent {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 2, a2.f32931a, self.messageId);
+            output.u(serialDesc, 2, a2.f32934a, self.messageId);
         }
         if (output.A(serialDesc, 3) || self.originalLink != null) {
             z13 = true;
         }
         if (z13) {
-            output.u(serialDesc, 3, a2.f32931a, self.originalLink);
+            output.u(serialDesc, 3, a2.f32934a, self.originalLink);
         }
     }
 

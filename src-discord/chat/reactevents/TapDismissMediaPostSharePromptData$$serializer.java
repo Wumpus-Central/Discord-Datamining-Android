@@ -63,7 +63,7 @@ public final class TapDismissMediaPostSharePromptData$$serializer implements f0<
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapDismissMediaPostSharePromptData(i10, messageId != null ? messageId.m588unboximpl() : null, null, null);
+        return new TapDismissMediaPostSharePromptData(i10, messageId != null ? messageId.m597unboximpl() : null, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

@@ -40,7 +40,7 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f32956a;
+        e0 e0Var = e0.f32959a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE, e0Var};
     }
 
@@ -100,7 +100,7 @@ public final class VoiceMessagePlaybackEndedData$$serializer implements f0<Voice
         }
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
-        return new VoiceMessagePlaybackEndedData(i10, messageId != null ? messageId.m588unboximpl() : null, f12, f11, (UserId) obj, f10, null, null);
+        return new VoiceMessagePlaybackEndedData(i10, messageId != null ? messageId.m597unboximpl() : null, f12, f11, (UserId) obj, f10, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

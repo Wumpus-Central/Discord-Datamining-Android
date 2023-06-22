@@ -77,7 +77,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ TapSelectActionComponent m398copyu7_MRrM$default(TapSelectActionComponent tapSelectActionComponent, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
+    public static /* synthetic */ TapSelectActionComponent m407copyu7_MRrM$default(TapSelectActionComponent tapSelectActionComponent, String str, long j10, SelectComponent selectComponent, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapSelectActionComponent.messageId;
         }
@@ -87,20 +87,20 @@ public final class TapSelectActionComponent implements ReactEvent {
         if ((i10 & 4) != 0) {
             selectComponent = tapSelectActionComponent.selectionActionComponent;
         }
-        return tapSelectActionComponent.m400copyu7_MRrM(str, j10, selectComponent);
+        return tapSelectActionComponent.m409copyu7_MRrM(str, j10, selectComponent);
     }
 
     public static final void write$Self(TapSelectActionComponent self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m580boximpl(self.messageId));
+        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
         output.E(serialDesc, 1, self.messageFlags);
         output.q(serialDesc, 2, SelectComponent.Companion.serializer(), self.selectionActionComponent);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m399component13Eiw7ao() {
+    public final String m408component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -113,7 +113,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final TapSelectActionComponent m400copyu7_MRrM(String messageId, long j10, SelectComponent selectionActionComponent) {
+    public final TapSelectActionComponent m409copyu7_MRrM(String messageId, long j10, SelectComponent selectionActionComponent) {
         q.g(messageId, "messageId");
         q.g(selectionActionComponent, "selectionActionComponent");
         return new TapSelectActionComponent(messageId, j10, selectionActionComponent, null);
@@ -127,7 +127,7 @@ public final class TapSelectActionComponent implements ReactEvent {
             return false;
         }
         TapSelectActionComponent tapSelectActionComponent = (TapSelectActionComponent) obj;
-        return MessageId.m584equalsimpl0(this.messageId, tapSelectActionComponent.messageId) && this.messageFlags == tapSelectActionComponent.messageFlags && q.b(this.selectionActionComponent, tapSelectActionComponent.selectionActionComponent);
+        return MessageId.m593equalsimpl0(this.messageId, tapSelectActionComponent.messageId) && this.messageFlags == tapSelectActionComponent.messageFlags && q.b(this.selectionActionComponent, tapSelectActionComponent.selectionActionComponent);
     }
 
     public final long getMessageFlags() {
@@ -135,7 +135,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m401getMessageId3Eiw7ao() {
+    public final String m410getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -144,7 +144,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((MessageId.m585hashCodeimpl(this.messageId) * 31) + b.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
+        return (((MessageId.m594hashCodeimpl(this.messageId) * 31) + b.a(this.messageFlags)) * 31) + this.selectionActionComponent.hashCode();
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -191,7 +191,7 @@ public final class TapSelectActionComponent implements ReactEvent {
         }
         int i10 = 3;
         Pair[] pairArr = new Pair[3];
-        pairArr[0] = x.a("messageId", MessageId.m586toStringimpl(this.messageId));
+        pairArr[0] = x.a("messageId", MessageId.m595toStringimpl(this.messageId));
         pairArr[1] = x.a("messageFlags", Double.valueOf(this.messageFlags));
         Pair[] pairArr2 = new Pair[13];
         pairArr2[0] = x.a("selectedOptions", readableNativeArray);
@@ -239,7 +239,7 @@ public final class TapSelectActionComponent implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m586toStringimpl(this.messageId);
+        String str = MessageId.m595toStringimpl(this.messageId);
         long j10 = this.messageFlags;
         SelectComponent selectComponent = this.selectionActionComponent;
         return "TapSelectActionComponent(messageId=" + str + ", messageFlags=" + j10 + ", selectionActionComponent=" + selectComponent + ")";

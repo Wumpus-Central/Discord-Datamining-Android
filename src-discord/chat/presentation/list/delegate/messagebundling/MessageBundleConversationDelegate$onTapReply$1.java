@@ -18,12 +18,12 @@ final class MessageBundleConversationDelegate$onTapReply$1 extends s implements 
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m179invoke1xi1bu0(messageId.m588unboximpl());
-        return Unit.f22111a;
+        m188invoke1xi1bu0(messageId.m597unboximpl());
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m179invoke1xi1bu0(String it) {
+    public final void m188invoke1xi1bu0(String it) {
         q.g(it, "it");
     }
 }

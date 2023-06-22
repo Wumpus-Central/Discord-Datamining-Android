@@ -27,14 +27,14 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
     public static final void bind$lambda$0(Function2 onTapAutoModerationActions, String messageId, long j10, View view) {
         q.g(onTapAutoModerationActions, "$onTapAutoModerationActions");
         q.g(messageId, "$messageId");
-        onTapAutoModerationActions.invoke(MessageId.m580boximpl(messageId), ChannelId.m554boximpl(j10));
+        onTapAutoModerationActions.invoke(MessageId.m589boximpl(messageId), ChannelId.m563boximpl(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1(Function2 onTapAutoModerationFeedback, String messageId, long j10, View view) {
         q.g(onTapAutoModerationFeedback, "$onTapAutoModerationFeedback");
         q.g(messageId, "$messageId");
-        onTapAutoModerationFeedback.invoke(MessageId.m580boximpl(messageId), ChannelId.m554boximpl(j10));
+        onTapAutoModerationFeedback.invoke(MessageId.m589boximpl(messageId), ChannelId.m563boximpl(j10));
     }
 
     public final void bind(FlaggedMessageActionBarAccessory messageActionBarAccessory, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
@@ -43,7 +43,7 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
         q.g(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         AutoModerationContext autoModerationContext = messageActionBarAccessory.getAutoModerationContext();
         final long j10 = messageActionBarAccessory.getMessage().m15getChannelIdo4g7jtM();
-        final String str = messageActionBarAccessory.mo206getMessageId3Eiw7ao();
+        final String str = messageActionBarAccessory.mo215getMessageId3Eiw7ao();
         this.actionBarView.setActions(autoModerationContext, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.f
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {

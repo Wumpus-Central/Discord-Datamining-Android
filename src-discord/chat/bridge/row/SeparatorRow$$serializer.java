@@ -1,6 +1,8 @@
 package com.discord.chat.bridge.row;
 
 import com.discord.chat.bridge.ChangeType;
+import com.discord.chat.bridge.summaries.Summary;
+import com.discord.chat.bridge.summaries.Summary$$serializer;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -28,13 +30,15 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
     static {
         SeparatorRow$$serializer separatorRow$$serializer = new SeparatorRow$$serializer();
         INSTANCE = separatorRow$$serializer;
-        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("0", separatorRow$$serializer, 6);
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("0", separatorRow$$serializer, 8);
         pluginGeneratedSerialDescriptor.l("changeType", false);
         pluginGeneratedSerialDescriptor.l("index", false);
         pluginGeneratedSerialDescriptor.l("text", false);
         pluginGeneratedSerialDescriptor.l("id", false);
         pluginGeneratedSerialDescriptor.l(ViewProps.COLOR, false);
         pluginGeneratedSerialDescriptor.l("scrollTo", true);
+        pluginGeneratedSerialDescriptor.l("isBeforeContent", true);
+        pluginGeneratedSerialDescriptor.l("summary", true);
         descriptor = pluginGeneratedSerialDescriptor;
     }
 
@@ -43,9 +47,10 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33006a;
-        a2 a2Var = a2.f32931a;
-        return new KSerializer[]{ChangeType.Serializer.INSTANCE, m0Var, a2Var, a2Var, m0Var, a.u(h.f32973a)};
+        m0 m0Var = m0.f33009a;
+        a2 a2Var = a2.f32934a;
+        h hVar = h.f32976a;
+        return new KSerializer[]{ChangeType.Serializer.INSTANCE, m0Var, a2Var, a2Var, m0Var, a.u(hVar), a.u(hVar), a.u(Summary$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,66 +62,92 @@ public final class SeparatorRow$$serializer implements f0<SeparatorRow> {
         int i12;
         Object obj;
         Object obj2;
+        Object obj3;
+        Object obj4;
         q.g(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
-        int i13 = 5;
+        int i13 = 7;
+        int i14 = 6;
         if (b10.p()) {
-            obj2 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, null);
+            obj4 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, null);
             i11 = b10.i(descriptor2, 1);
             str2 = b10.m(descriptor2, 2);
             str = b10.m(descriptor2, 3);
             i10 = b10.i(descriptor2, 4);
-            obj = b10.n(descriptor2, 5, h.f32973a, null);
-            i12 = 63;
+            h hVar = h.f32976a;
+            obj = b10.n(descriptor2, 5, hVar, null);
+            obj2 = b10.n(descriptor2, 6, hVar, null);
+            obj3 = b10.n(descriptor2, 7, Summary$$serializer.INSTANCE, null);
+            i12 = 255;
         } else {
             boolean z10 = true;
-            int i14 = 0;
             int i15 = 0;
-            Object obj3 = null;
+            int i16 = 0;
+            Object obj5 = null;
+            Object obj6 = null;
+            Object obj7 = null;
             String str3 = null;
             String str4 = null;
-            Object obj4 = null;
-            int i16 = 0;
+            Object obj8 = null;
+            int i17 = 0;
             while (z10) {
                 int o10 = b10.o(descriptor2);
                 switch (o10) {
                     case -1:
                         z10 = false;
-                        i13 = 5;
+                        i14 = 6;
+                        break;
                     case 0:
-                        obj3 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, obj3);
-                        i15 |= 1;
-                        i13 = 5;
+                        obj7 = b10.y(descriptor2, 0, ChangeType.Serializer.INSTANCE, obj7);
+                        i16 |= 1;
+                        i13 = 7;
+                        i14 = 6;
+                        break;
                     case 1:
-                        i16 = b10.i(descriptor2, 1);
-                        i15 |= 2;
+                        i17 = b10.i(descriptor2, 1);
+                        i16 |= 2;
+                        break;
                     case 2:
                         str3 = b10.m(descriptor2, 2);
-                        i15 |= 4;
+                        i16 |= 4;
+                        break;
                     case 3:
                         str4 = b10.m(descriptor2, 3);
-                        i15 |= 8;
+                        i16 |= 8;
+                        break;
                     case 4:
-                        i14 = b10.i(descriptor2, 4);
-                        i15 |= 16;
+                        i15 = b10.i(descriptor2, 4);
+                        i16 |= 16;
+                        break;
                     case 5:
-                        obj4 = b10.n(descriptor2, i13, h.f32973a, obj4);
-                        i15 |= 32;
+                        obj8 = b10.n(descriptor2, 5, h.f32976a, obj8);
+                        i16 |= 32;
+                        break;
+                    case 6:
+                        obj6 = b10.n(descriptor2, i14, h.f32976a, obj6);
+                        i16 |= 64;
+                        break;
+                    case 7:
+                        obj5 = b10.n(descriptor2, i13, Summary$$serializer.INSTANCE, obj5);
+                        i16 |= 128;
+                        break;
                     default:
                         throw new n(o10);
                 }
             }
-            i11 = i16;
-            i12 = i15;
+            obj3 = obj5;
+            obj2 = obj6;
+            obj = obj8;
+            i11 = i17;
+            i12 = i16;
             str2 = str3;
             str = str4;
-            obj = obj4;
-            i10 = i14;
-            obj2 = obj3;
+            i10 = i15;
+            obj4 = obj7;
         }
         b10.c(descriptor2);
-        return new SeparatorRow(i12, (ChangeType) obj2, i11, str2, str, i10, (Boolean) obj, (SerializationConstructorMarker) null);
+        return new SeparatorRow(i12, (ChangeType) obj4, i11, str2, str, i10, (Boolean) obj, (Boolean) obj2, (Summary) obj3, (SerializationConstructorMarker) null);
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy

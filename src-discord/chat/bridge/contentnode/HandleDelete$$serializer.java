@@ -33,7 +33,7 @@ public final class HandleDelete$$serializer implements f0<HandleDelete> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32931a, HandleDeleteMessage$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f32934a, HandleDeleteMessage$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

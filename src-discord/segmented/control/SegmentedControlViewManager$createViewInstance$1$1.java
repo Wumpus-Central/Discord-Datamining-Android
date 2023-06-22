@@ -26,7 +26,7 @@ public final class SegmentedControlViewManager$createViewInstance$1$1 extends s 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Integer num, String str) {
         invoke(num.intValue(), str);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     public final void invoke(int i10, String label) {

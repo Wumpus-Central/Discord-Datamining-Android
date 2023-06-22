@@ -87,7 +87,7 @@ public final class UserSearchQuerySetFilters {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 0, a2.f32931a, self.guild);
+            output.u(serialDesc, 0, a2.f32934a, self.guild);
         }
         if (!output.A(serialDesc, 1) && self.friends == null) {
             z11 = false;
@@ -95,13 +95,13 @@ public final class UserSearchQuerySetFilters {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 1, h.f32973a, self.friends);
+            output.u(serialDesc, 1, h.f32976a, self.friends);
         }
         if (output.A(serialDesc, 2) || self.strict != null) {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 2, h.f32973a, self.strict);
+            output.u(serialDesc, 2, h.f32976a, self.strict);
         }
     }
 

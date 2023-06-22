@@ -29,18 +29,18 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f32931a};
+        return new KSerializer[]{a2.f32934a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return MessageId.m580boximpl(m589deserializeMpY7Jxs(decoder));
+        return MessageId.m589boximpl(m598deserializeMpY7Jxs(decoder));
     }
 
     /* renamed from: deserialize-MpY7Jxs  reason: not valid java name */
-    public String m589deserializeMpY7Jxs(Decoder decoder) {
+    public String m598deserializeMpY7Jxs(Decoder decoder) {
         q.g(decoder, "decoder");
-        return MessageId.m581constructorimpl(decoder.q(getDescriptor()).z());
+        return MessageId.m590constructorimpl(decoder.q(getDescriptor()).z());
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override // vj.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m590serializeAyv7vGE(encoder, ((MessageId) obj).m588unboximpl());
+        m599serializeAyv7vGE(encoder, ((MessageId) obj).m597unboximpl());
     }
 
     /* renamed from: serialize-Ayv7vGE  reason: not valid java name */
-    public void m590serializeAyv7vGE(Encoder encoder, String value) {
+    public void m599serializeAyv7vGE(Encoder encoder, String value) {
         q.g(encoder, "encoder");
         q.g(value, "value");
         Encoder j10 = encoder.j(getDescriptor());

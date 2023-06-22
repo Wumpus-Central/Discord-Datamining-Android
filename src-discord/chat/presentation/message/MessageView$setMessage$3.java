@@ -25,6 +25,6 @@ public final class MessageView$setMessage$3 extends s implements Function0<Unit>
     @Override // kotlin.jvm.functions.Function0
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2() {
-        this.$eventHandler.mo160onTapMessageReply0eiqbug(this.$message.m15getChannelIdo4g7jtM(), this.$message.m17getId3Eiw7ao());
+        this.$eventHandler.mo168onTapMessageReply0eiqbug(this.$message.m15getChannelIdo4g7jtM(), this.$message.m17getId3Eiw7ao());
     }
 }

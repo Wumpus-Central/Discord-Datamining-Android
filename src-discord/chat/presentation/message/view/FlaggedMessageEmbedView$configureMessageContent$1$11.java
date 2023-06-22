@@ -18,12 +18,12 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$11 extends s imple
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m299invoke1xi1bu0(messageId.m588unboximpl());
-        return Unit.f22111a;
+        m308invoke1xi1bu0(messageId.m597unboximpl());
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m299invoke1xi1bu0(String it) {
+    public final void m308invoke1xi1bu0(String it) {
         q.g(it, "it");
     }
 }

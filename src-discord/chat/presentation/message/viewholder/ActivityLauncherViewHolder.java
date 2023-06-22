@@ -27,7 +27,7 @@ public final class ActivityLauncherViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(ActivityLauncherEmbedImpl activityLauncherEmbed, ActivityLauncherViewHolder this$0, View view) {
         q.g(activityLauncherEmbed, "$activityLauncherEmbed");
         q.g(this$0, "this$0");
-        this$0.eventHandler.mo148onTapActivityLauncherEmbeduU1mFKc(activityLauncherEmbed.mo33getApplicationIdVavddsQ(), activityLauncherEmbed.mo34getChannelIdo4g7jtM());
+        this$0.eventHandler.mo156onTapActivityLauncherEmbeduU1mFKc(activityLauncherEmbed.mo33getApplicationIdVavddsQ(), activityLauncherEmbed.mo34getChannelIdo4g7jtM());
     }
 
     public final void bind(ActivityLauncherMessageAccessory activityMessageAccessory) {

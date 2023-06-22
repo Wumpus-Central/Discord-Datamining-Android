@@ -31,7 +31,7 @@ public final class MessageBundleConversationDelegate extends MessageBundleBaseDe
     public static final void onBindViewHolder$lambda$0(MessageBundleConversationDelegate this$0, MessageBundleItem item, View view) {
         q.g(this$0, "this$0");
         q.g(item, "$item");
-        this$0.onTapReply.invoke(MessageId.m580boximpl(((MessageBundleConversationItem) item).getMessageItem().getMessage().m17getId3Eiw7ao()));
+        this$0.onTapReply.invoke(MessageId.m589boximpl(((MessageBundleConversationItem) item).getMessageItem().getMessage().m17getId3Eiw7ao()));
     }
 
     public final Function1<MessageId, Unit> getOnTapReply() {

@@ -28,7 +28,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker) {
         invoke2(sticker);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -40,6 +40,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$28 extends s imple
             q.y("eventHandler");
             chatEventHandler = null;
         }
-        chatEventHandler.mo147onStickerLongClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo206getMessageId3Eiw7ao());
+        chatEventHandler.mo155onStickerLongClickedAyv7vGE(((StickerMessageAccessory) this.$part).getSticker(), this.$part.mo215getMessageId3Eiw7ao());
     }
 }

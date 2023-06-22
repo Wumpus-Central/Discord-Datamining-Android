@@ -30,16 +30,16 @@ public final class MessageViewManagers$MessageBundleViewManager$createViewInstan
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m138invoke1xi1bu0(messageId.m588unboximpl());
-        return Unit.f22111a;
+        m146invoke1xi1bu0(messageId.m597unboximpl());
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m138invoke1xi1bu0(String messageId) {
+    public final void m146invoke1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         MessageViewManagers.MessageBundleViewManager messageBundleViewManager = this.this$0;
         Context context = this.$this_apply.getContext();
         q.f(context, "context");
-        messageBundleViewManager.m137emitOnTruncateMessageJPrav84(context, this.$wrapper.getId(), messageId);
+        messageBundleViewManager.m145emitOnTruncateMessageJPrav84(context, this.$wrapper.getId(), messageId);
     }
 }

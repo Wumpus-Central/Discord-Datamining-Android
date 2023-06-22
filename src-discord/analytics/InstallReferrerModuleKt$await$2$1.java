@@ -23,18 +23,18 @@ final class InstallReferrerModuleKt$await$2$1 extends s implements Function1<Thr
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f22111a;
+        return Unit.f22114a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Throwable th2) {
         InstallReferrerClient installReferrerClient = this.$this_await;
         try {
-            s.a aVar = kg.s.f21870l;
+            s.a aVar = kg.s.f21873l;
             installReferrerClient.a();
-            kg.s.b(Unit.f22111a);
+            kg.s.b(Unit.f22114a);
         } catch (Throwable th3) {
-            s.a aVar2 = kg.s.f21870l;
+            s.a aVar2 = kg.s.f21873l;
             kg.s.b(t.a(th3));
         }
     }

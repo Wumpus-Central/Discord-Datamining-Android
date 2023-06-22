@@ -40,7 +40,7 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f33006a;
+        m0 m0Var = m0.f33009a;
         return new KSerializer[]{a.u(m0Var), m0Var, a.u(BackgroundStyle$$serializer.INSTANCE), a.u(ChatInputNodeFontWeight.Companion.serializer())};
     }
 
@@ -55,7 +55,7 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
         SerialDescriptor descriptor2 = getDescriptor();
         c b10 = decoder.b(descriptor2);
         if (b10.p()) {
-            obj3 = b10.n(descriptor2, 0, m0.f33006a, null);
+            obj3 = b10.n(descriptor2, 0, m0.f33009a, null);
             i10 = b10.i(descriptor2, 1);
             obj = b10.n(descriptor2, 2, BackgroundStyle$$serializer.INSTANCE, null);
             obj2 = b10.n(descriptor2, 3, ChatInputNodeFontWeight.Companion.serializer(), null);
@@ -72,7 +72,7 @@ public final class ChatInputNodeStyle$$serializer implements f0<ChatInputNodeSty
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    obj4 = b10.n(descriptor2, 0, m0.f33006a, obj4);
+                    obj4 = b10.n(descriptor2, 0, m0.f33009a, obj4);
                     i13 |= 1;
                 } else if (o10 == 1) {
                     i12 = b10.i(descriptor2, 1);

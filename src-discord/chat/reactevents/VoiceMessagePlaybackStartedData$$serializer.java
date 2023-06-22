@@ -39,7 +39,7 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f32956a;
+        e0 e0Var = e0.f32959a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, e0Var, e0Var, UserId$$serializer.INSTANCE};
     }
 
@@ -95,7 +95,7 @@ public final class VoiceMessagePlaybackStartedData$$serializer implements f0<Voi
         b10.c(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m588unboximpl();
+            str = messageId.m597unboximpl();
         }
         return new VoiceMessagePlaybackStartedData(i10, str, f11, f10, (UserId) obj, null, null);
     }

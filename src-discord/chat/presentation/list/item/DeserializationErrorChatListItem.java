@@ -9,7 +9,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     private final String causeMessage;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7665id;
+    private final String f7668id;
     private final String json;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -18,7 +18,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
         q.g(id2, "id");
         q.g(json, "json");
         q.g(causeMessage, "causeMessage");
-        this.f7665id = id2;
+        this.f7668id = id2;
         this.json = json;
         this.causeMessage = causeMessage;
     }
@@ -72,7 +72,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
 
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     public String getId() {
-        return this.f7665id;
+        return this.f7668id;
     }
 
     public final String getJson() {

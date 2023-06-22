@@ -54,7 +54,7 @@ public final class MobileVoiceOverlayData {
         this.users = list;
         this.extraUsers = i11;
         this.guildId = guildId;
-        this.channelId = channelId.m563unboximpl();
+        this.channelId = channelId.m572unboximpl();
         this.channelName = str;
         this.guildName = str2;
         this.deafened = z10;
@@ -79,7 +79,7 @@ public final class MobileVoiceOverlayData {
         output.q(serialDesc, 0, new yj.f(MobileVoiceOverlayDataUser$$serializer.INSTANCE), self.users);
         output.x(serialDesc, 1, self.extraUsers);
         output.u(serialDesc, 2, GuildId$$serializer.INSTANCE, self.guildId);
-        output.q(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m554boximpl(self.channelId));
+        output.q(serialDesc, 3, ChannelId$$serializer.INSTANCE, ChannelId.m563boximpl(self.channelId));
         output.z(serialDesc, 4, self.channelName);
         output.z(serialDesc, 5, self.guildName);
         output.y(serialDesc, 6, self.deafened);
@@ -106,12 +106,12 @@ public final class MobileVoiceOverlayData {
     }
 
     /* renamed from: component3-qOKuAAo  reason: not valid java name */
-    public final GuildId m460component3qOKuAAo() {
+    public final GuildId m469component3qOKuAAo() {
         return this.guildId;
     }
 
     /* renamed from: component4-o4g7jtM  reason: not valid java name */
-    public final long m461component4o4g7jtM() {
+    public final long m470component4o4g7jtM() {
         return this.channelId;
     }
 
@@ -136,7 +136,7 @@ public final class MobileVoiceOverlayData {
     }
 
     /* renamed from: copy-HeAh3Ug  reason: not valid java name */
-    public final MobileVoiceOverlayData m462copyHeAh3Ug(List<MobileVoiceOverlayDataUser> users, int i10, GuildId guildId, long j10, String channelName, String guildName, boolean z10, boolean z11, ConnectionQuality connectionQuality, boolean z12, List<MobileVoiceOverlaySelectorResult> channelSelectorResults) {
+    public final MobileVoiceOverlayData m471copyHeAh3Ug(List<MobileVoiceOverlayDataUser> users, int i10, GuildId guildId, long j10, String channelName, String guildName, boolean z10, boolean z11, ConnectionQuality connectionQuality, boolean z12, List<MobileVoiceOverlaySelectorResult> channelSelectorResults) {
         q.g(users, "users");
         q.g(channelName, "channelName");
         q.g(guildName, "guildName");
@@ -153,7 +153,7 @@ public final class MobileVoiceOverlayData {
             return false;
         }
         MobileVoiceOverlayData mobileVoiceOverlayData = (MobileVoiceOverlayData) obj;
-        return q.b(this.users, mobileVoiceOverlayData.users) && this.extraUsers == mobileVoiceOverlayData.extraUsers && q.b(this.guildId, mobileVoiceOverlayData.guildId) && ChannelId.m558equalsimpl0(this.channelId, mobileVoiceOverlayData.channelId) && q.b(this.channelName, mobileVoiceOverlayData.channelName) && q.b(this.guildName, mobileVoiceOverlayData.guildName) && this.deafened == mobileVoiceOverlayData.deafened && this.muted == mobileVoiceOverlayData.muted && this.connectionQuality == mobileVoiceOverlayData.connectionQuality && this.canGenerateInvite == mobileVoiceOverlayData.canGenerateInvite && q.b(this.channelSelectorResults, mobileVoiceOverlayData.channelSelectorResults);
+        return q.b(this.users, mobileVoiceOverlayData.users) && this.extraUsers == mobileVoiceOverlayData.extraUsers && q.b(this.guildId, mobileVoiceOverlayData.guildId) && ChannelId.m567equalsimpl0(this.channelId, mobileVoiceOverlayData.channelId) && q.b(this.channelName, mobileVoiceOverlayData.channelName) && q.b(this.guildName, mobileVoiceOverlayData.guildName) && this.deafened == mobileVoiceOverlayData.deafened && this.muted == mobileVoiceOverlayData.muted && this.connectionQuality == mobileVoiceOverlayData.connectionQuality && this.canGenerateInvite == mobileVoiceOverlayData.canGenerateInvite && q.b(this.channelSelectorResults, mobileVoiceOverlayData.channelSelectorResults);
     }
 
     public final boolean getCanGenerateInvite() {
@@ -161,7 +161,7 @@ public final class MobileVoiceOverlayData {
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m463getChannelIdo4g7jtM() {
+    public final long m472getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -186,7 +186,7 @@ public final class MobileVoiceOverlayData {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m464getGuildIdqOKuAAo() {
+    public final GuildId m473getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -205,7 +205,7 @@ public final class MobileVoiceOverlayData {
     public int hashCode() {
         int hashCode = ((this.users.hashCode() * 31) + this.extraUsers) * 31;
         GuildId guildId = this.guildId;
-        int i10 = (((((((hashCode + (guildId == null ? 0 : GuildId.m572hashCodeimpl(guildId.m576unboximpl()))) * 31) + ChannelId.m559hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31;
+        int i10 = (((((((hashCode + (guildId == null ? 0 : GuildId.m581hashCodeimpl(guildId.m585unboximpl()))) * 31) + ChannelId.m568hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31;
         boolean z10 = this.deafened;
         int i11 = 1;
         if (z10) {
@@ -234,7 +234,7 @@ public final class MobileVoiceOverlayData {
         List<MobileVoiceOverlayDataUser> list = this.users;
         int i10 = this.extraUsers;
         GuildId guildId = this.guildId;
-        String str = ChannelId.m561toStringimpl(this.channelId);
+        String str = ChannelId.m570toStringimpl(this.channelId);
         String str2 = this.channelName;
         String str3 = this.guildName;
         boolean z10 = this.deafened;

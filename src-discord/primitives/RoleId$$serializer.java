@@ -29,18 +29,18 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override // yj.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f33047a};
+        return new KSerializer[]{w0.f33050a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
-        return RoleId.m592boximpl(m602deserializeK4NZIAs(decoder));
+        return RoleId.m601boximpl(m611deserializeK4NZIAs(decoder));
     }
 
     /* renamed from: deserialize-K4NZIAs  reason: not valid java name */
-    public long m602deserializeK4NZIAs(Decoder decoder) {
+    public long m611deserializeK4NZIAs(Decoder decoder) {
         q.g(decoder, "decoder");
-        return RoleId.m593constructorimpl(decoder.q(getDescriptor()).l());
+        return RoleId.m602constructorimpl(decoder.q(getDescriptor()).l());
     }
 
     @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
@@ -50,11 +50,11 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override // vj.h
     public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        m603serializeNFBmNZw(encoder, ((RoleId) obj).m601unboximpl());
+        m612serializeNFBmNZw(encoder, ((RoleId) obj).m610unboximpl());
     }
 
     /* renamed from: serialize-NFBmNZw  reason: not valid java name */
-    public void m603serializeNFBmNZw(Encoder encoder, long j10) {
+    public void m612serializeNFBmNZw(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder j11 = encoder.j(getDescriptor());
         if (j11 != null) {
