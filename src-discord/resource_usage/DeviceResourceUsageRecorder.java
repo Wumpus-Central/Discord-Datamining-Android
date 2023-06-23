@@ -11,6 +11,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableNativeMap;
 import kg.x;
 import kotlin.Metadata;
+import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import okhttp3.Interceptor;
@@ -84,25 +85,31 @@ public final class DeviceResourceUsageRecorder {
         }
 
         public final WritableNativeMap getNetworkUsage(ReactApplicationContext reactApplicationContext) {
+            Pair pair;
             Integer num;
             SignalStrength signalStrength;
             int i10;
             q.g(reactApplicationContext, "reactApplicationContext");
-            Object systemService = reactApplicationContext.getSystemService("phone");
-            q.e(systemService, "null cannot be cast to non-null type android.telephony.TelephonyManager");
-            TelephonyManager telephonyManager = (TelephonyManager) systemService;
-            if (Build.VERSION.SDK_INT >= 28) {
-                signalStrength = telephonyManager.getSignalStrength();
-                if (signalStrength != null) {
-                    i10 = signalStrength.getLevel();
+            try {
+                Object systemService = reactApplicationContext.getSystemService("phone");
+                q.e(systemService, "null cannot be cast to non-null type android.telephony.TelephonyManager");
+                TelephonyManager telephonyManager = (TelephonyManager) systemService;
+                if (Build.VERSION.SDK_INT >= 28) {
+                    signalStrength = telephonyManager.getSignalStrength();
+                    if (signalStrength != null) {
+                        i10 = signalStrength.getLevel();
+                    } else {
+                        i10 = 0;
+                    }
+                    num = Integer.valueOf(i10);
                 } else {
-                    i10 = 0;
+                    num = null;
                 }
-                num = Integer.valueOf(i10);
-            } else {
-                num = null;
+                pair = new Pair(num, Boolean.valueOf(telephonyManager.isNetworkRoaming()));
+            } catch (Exception unused) {
+                pair = new Pair(null, null);
             }
-            return NativeMapExtensionsKt.nativeMapOf(x.a("signalStrengthLevel", num), x.a("isNetworkRoaming", Boolean.valueOf(telephonyManager.isNetworkRoaming())), x.a("cellularReceiveBytes", Long.valueOf(TrafficStats.getMobileRxBytes() - DeviceResourceUsageRecorder.initialCellularReceiveBytes)), x.a("cellularSendBytes", Long.valueOf(TrafficStats.getMobileTxBytes() - DeviceResourceUsageRecorder.initialCellularSendBytes)), x.a("totalReceiveBytes", Long.valueOf(TrafficStats.getTotalRxBytes() - DeviceResourceUsageRecorder.initialTotalReceiveBytes)), x.a("totalSendBytes", Long.valueOf(TrafficStats.getTotalTxBytes() - DeviceResourceUsageRecorder.initialTotalSendBytes)), x.a("uidReceiveBytes", Long.valueOf(TrafficStats.getUidRxBytes(DeviceResourceUsageRecorder.uid) - DeviceResourceUsageRecorder.initialAppReceiveBytes)), x.a("uidSendBytes", Long.valueOf(TrafficStats.getUidTxBytes(DeviceResourceUsageRecorder.uid) - DeviceResourceUsageRecorder.initialAppSendBytes)), x.a("socketBytesReceived", Long.valueOf(getSocketBytesReceived())), x.a("otaBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.ota.getBytesReceived())), x.a("otaNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.ota.getNumRequests())), x.a("xhrBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.xhr.getBytesReceived())), x.a("xhrNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.xhr.getNumRequests())), x.a("frescoBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.fresco.getBytesReceived())), x.a("frescoNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.fresco.getNumRequests())), x.a("downloadBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.downloads.getBytesReceived())), x.a("downloadNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.downloads.getNumRequests())), x.a("mediaPlayerBytesReceived", Long.valueOf(getMediaPlayerBytesReceived())));
+            return NativeMapExtensionsKt.nativeMapOf(x.a("signalStrengthLevel", (Integer) pair.a()), x.a("isNetworkRoaming", (Boolean) pair.b()), x.a("cellularReceiveBytes", Long.valueOf(TrafficStats.getMobileRxBytes() - DeviceResourceUsageRecorder.initialCellularReceiveBytes)), x.a("cellularSendBytes", Long.valueOf(TrafficStats.getMobileTxBytes() - DeviceResourceUsageRecorder.initialCellularSendBytes)), x.a("totalReceiveBytes", Long.valueOf(TrafficStats.getTotalRxBytes() - DeviceResourceUsageRecorder.initialTotalReceiveBytes)), x.a("totalSendBytes", Long.valueOf(TrafficStats.getTotalTxBytes() - DeviceResourceUsageRecorder.initialTotalSendBytes)), x.a("uidReceiveBytes", Long.valueOf(TrafficStats.getUidRxBytes(DeviceResourceUsageRecorder.uid) - DeviceResourceUsageRecorder.initialAppReceiveBytes)), x.a("uidSendBytes", Long.valueOf(TrafficStats.getUidTxBytes(DeviceResourceUsageRecorder.uid) - DeviceResourceUsageRecorder.initialAppSendBytes)), x.a("socketBytesReceived", Long.valueOf(getSocketBytesReceived())), x.a("otaBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.ota.getBytesReceived())), x.a("otaNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.ota.getNumRequests())), x.a("xhrBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.xhr.getBytesReceived())), x.a("xhrNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.xhr.getNumRequests())), x.a("frescoBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.fresco.getBytesReceived())), x.a("frescoNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.fresco.getNumRequests())), x.a("downloadBytesReceived", Long.valueOf(DeviceResourceUsageRecorder.downloads.getBytesReceived())), x.a("downloadNumRequests", Integer.valueOf(DeviceResourceUsageRecorder.downloads.getNumRequests())), x.a("mediaPlayerBytesReceived", Long.valueOf(getMediaPlayerBytesReceived())));
         }
 
         public final long getSocketBytesReceived() {

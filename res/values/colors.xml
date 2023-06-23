@@ -755,9 +755,6 @@
     <color name="redesign_button_overlay_alpha_background_dark">#8a000000</color>
     <color name="redesign_button_overlay_alpha_background_darker">#8a000000</color>
     <color name="redesign_button_overlay_alpha_background_light">#8a000000</color>
-    <color name="redesign_button_overlay_alpha_border_dark">#00000000</color>
-    <color name="redesign_button_overlay_alpha_border_darker">#00000000</color>
-    <color name="redesign_button_overlay_alpha_border_light">#00000000</color>
     <color name="redesign_button_overlay_alpha_pressed_background_dark">#a3000000</color>
     <color name="redesign_button_overlay_alpha_pressed_background_darker">#a3000000</color>
     <color name="redesign_button_overlay_alpha_pressed_background_light">#a3000000</color>
@@ -773,13 +770,9 @@
     <color name="redesign_button_primary_alt_pressed_border_dark">#807984f5</color>
     <color name="redesign_button_primary_alt_pressed_border_darker">#807984f5</color>
     <color name="redesign_button_secondary_alt_background_light">#14000000</color>
-    <color name="redesign_button_secondary_alt_border_dark">#00000000</color>
-    <color name="redesign_button_secondary_alt_border_darker">#00000000</color>
-    <color name="redesign_button_secondary_alt_border_light">#00000000</color>
     <color name="redesign_button_secondary_alt_pressed_background_light">#29000000</color>
-    <color name="redesign_button_secondary_border_dark">#00000000</color>
-    <color name="redesign_button_secondary_border_darker">#00000000</color>
     <color name="redesign_button_secondary_border_light">#14000000</color>
+    <color name="redesign_button_secondary_pressed_border_light">#14000000</color>
     <color name="riot_games">#ffea0029</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
