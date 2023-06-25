@@ -6,9 +6,9 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.WritableNativeMap;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -32,15 +32,15 @@ public final class AudioManagerAudioDevicesUpdated implements ReactEvent {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final ReadableNativeArray convertDevices(List<DiscordAudioManager.AudioDevice> list) {
-            int t10;
+            int s10;
             ArrayList<DiscordAudioManager.AudioDevice> arrayList = new ArrayList();
             for (Object obj : list) {
                 if (((DiscordAudioManager.AudioDevice) obj).isAvailable()) {
                     arrayList.add(obj);
                 }
             }
-            t10 = k.t(arrayList, 10);
-            ArrayList arrayList2 = new ArrayList(t10);
+            s10 = k.s(arrayList, 10);
+            ArrayList arrayList2 = new ArrayList(s10);
             for (DiscordAudioManager.AudioDevice audioDevice : arrayList) {
                 arrayList2.add(audioDevice.getType().toString());
             }

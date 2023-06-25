@@ -89,7 +89,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             r2 = 0
             r3 = 1
             if (r0 == 0) goto L_0x0011
-            boolean r4 = oj.l.w(r16)
+            boolean r4 = ki.l.w(r16)
             if (r4 == 0) goto L_0x000f
             goto L_0x0011
         L_0x000f:
@@ -100,7 +100,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         L_0x0012:
             if (r4 == 0) goto L_0x0025
             if (r1 == 0) goto L_0x001f
-            boolean r4 = oj.l.w(r17)
+            boolean r4 = ki.l.w(r17)
             if (r4 == 0) goto L_0x001d
             goto L_0x001f
         L_0x001d:
@@ -128,7 +128,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             java.lang.String[] r5 = new java.lang.String[r5]
             r5[r2] = r0
             r5[r3] = r1
-            java.util.List r6 = kotlin.collections.h.n(r5)
+            java.util.List r6 = kotlin.collections.h.m(r5)
             java.lang.String r7 = "\n"
             r8 = 0
             r9 = 0
@@ -137,7 +137,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             r12 = 0
             r13 = 62
             r14 = 0
-            java.lang.String r0 = kotlin.collections.h.e0(r6, r7, r8, r9, r10, r11, r12, r13, r14)
+            java.lang.String r0 = kotlin.collections.h.c0(r6, r7, r8, r9, r10, r11, r12, r13, r14)
             java.lang.String r1 = "android.intent.extra.TEXT"
             r4.putExtra(r1, r0)
             com.facebook.react.bridge.ReactApplicationContext r0 = r15.getReactApplicationContext()

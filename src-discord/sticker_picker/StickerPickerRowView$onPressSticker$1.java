@@ -18,7 +18,7 @@ final class StickerPickerRowView$onPressSticker$1 extends s implements Function1
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

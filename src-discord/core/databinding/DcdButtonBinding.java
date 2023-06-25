@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import com.discord.core.R;
 import com.google.android.material.button.MaterialButton;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class DcdButtonBinding {

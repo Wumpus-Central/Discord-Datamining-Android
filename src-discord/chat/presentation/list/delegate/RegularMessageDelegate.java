@@ -36,13 +36,13 @@ public final class RegularMessageDelegate extends BaseChatListItemDelegate<Messa
 
     /* JADX INFO: Access modifiers changed from: private */
     public final MessageView.ChainPart getChainPart(MessageItem messageItem, BaseChatListItemDelegate.Metadata<MessageView> metadata) {
-        Object X;
+        Object V;
         boolean z10;
         RecyclerView.Adapter<? extends RecyclerView.ViewHolder> bindingAdapter = metadata.getHolder().getBindingAdapter();
         q.e(bindingAdapter, "null cannot be cast to non-null type com.discord.chat.presentation.list.ChatListAdapter");
         boolean z11 = true;
-        X = r.X(((ChatListAdapter) bindingAdapter).getChatListItems(), metadata.getHolder().getBindingAdapterPosition() - 1);
-        ChatListItem chatListItem = (ChatListItem) X;
+        V = r.V(((ChatListAdapter) bindingAdapter).getChatListItems(), metadata.getHolder().getBindingAdapterPosition() - 1);
+        ChatListItem chatListItem = (ChatListItem) V;
         if (messageItem.getMessage().getTimestamp() == null) {
             z10 = true;
         } else {

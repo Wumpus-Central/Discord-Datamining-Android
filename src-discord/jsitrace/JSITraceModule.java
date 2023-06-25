@@ -1,5 +1,6 @@
 package com.discord.jsitrace;
 
+import com.discord.codegen.BuildConfig;
 import com.discord.react.utilities.ReactContextExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -41,7 +42,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
         return NAME;
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public final boolean install() {
         try {
             if (!isEnabled()) {
@@ -57,7 +58,7 @@ public final class JSITraceModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public final boolean isEnabled() {
         JSITraceCache jSITraceCache = JSITraceCache.INSTANCE;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();

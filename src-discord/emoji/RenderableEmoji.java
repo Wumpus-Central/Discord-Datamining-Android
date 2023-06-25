@@ -37,7 +37,7 @@ public abstract class RenderableEmoji {
 
         public final Unicode unicode(String surrogates) {
             q.g(surrogates, "surrogates");
-            return new Unicode(Surrogates.m446constructorimpl(surrogates), null);
+            return new Unicode(Surrogates.m445constructorimpl(surrogates), null);
         }
     }
 
@@ -230,7 +230,7 @@ public abstract class RenderableEmoji {
             super(null);
             String str2 = null;
             this.surrogates = str;
-            String str3 = Surrogates.m453withoutDiversityimpl(str);
+            String str3 = Surrogates.m452withoutDiversityimpl(str);
             this.exception = RenderableEmoji.exceptions.contains(str3) ? str3 : str2;
         }
 
@@ -239,20 +239,20 @@ public abstract class RenderableEmoji {
         }
 
         /* renamed from: copy-hLBmEAo$default  reason: not valid java name */
-        public static /* synthetic */ Unicode m441copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
+        public static /* synthetic */ Unicode m440copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = unicode.surrogates;
             }
-            return unicode.m443copyhLBmEAo(str);
+            return unicode.m442copyhLBmEAo(str);
         }
 
         /* renamed from: component1-Mny0UXI  reason: not valid java name */
-        public final String m442component1Mny0UXI() {
+        public final String m441component1Mny0UXI() {
             return this.surrogates;
         }
 
         /* renamed from: copy-hLBmEAo  reason: not valid java name */
-        public final Unicode m443copyhLBmEAo(String surrogates) {
+        public final Unicode m442copyhLBmEAo(String surrogates) {
             q.g(surrogates, "surrogates");
             return new Unicode(surrogates, null);
         }
@@ -261,7 +261,7 @@ public abstract class RenderableEmoji {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Unicode) && Surrogates.m448equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
+            return (obj instanceof Unicode) && Surrogates.m447equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
         }
 
         @Override // com.discord.emoji.RenderableEmoji
@@ -274,21 +274,21 @@ public abstract class RenderableEmoji {
         }
 
         /* renamed from: getSurrogates-Mny0UXI  reason: not valid java name */
-        public final String m444getSurrogatesMny0UXI() {
+        public final String m443getSurrogatesMny0UXI() {
             return this.surrogates;
         }
 
         @Override // com.discord.emoji.RenderableEmoji
         public String getUrl(boolean z10, int i10) {
-            return Surrogates.m450toAssetUrlimpl(this.surrogates);
+            return Surrogates.m449toAssetUrlimpl(this.surrogates);
         }
 
         public int hashCode() {
-            return Surrogates.m449hashCodeimpl(this.surrogates);
+            return Surrogates.m448hashCodeimpl(this.surrogates);
         }
 
         public String toString() {
-            String str = Surrogates.m452toStringimpl(this.surrogates);
+            String str = Surrogates.m451toStringimpl(this.surrogates);
             return "Unicode(surrogates=" + str + ")";
         }
     }

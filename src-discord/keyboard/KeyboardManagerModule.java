@@ -71,7 +71,7 @@ public final class KeyboardManagerModule extends NativeKeyboardManagerSpec {
 
     @Override // com.discord.codegen.NativeKeyboardManagerSpec
     public void onKeyboardChanged(final boolean z10) {
-        getReactApplicationContext().runOnUiQueueThread(new Runnable() { // from class: l3.a
+        getReactApplicationContext().runOnUiQueueThread(new Runnable() { // from class: j2.a
             @Override // java.lang.Runnable
             public final void run() {
                 KeyboardManagerModule.onKeyboardChanged$lambda$0(z10);

@@ -22,11 +22,11 @@ public final class ResultAdapter extends RecyclerView.Adapter<ResultViewHolder> 
 
     /* JADX WARN: Multi-variable type inference failed */
     public ResultAdapter(Function1<? super ChannelId, Unit> onChannelSelected) {
-        List<MobileVoiceOverlaySelectorResult> i10;
+        List<MobileVoiceOverlaySelectorResult> h10;
         q.g(onChannelSelected, "onChannelSelected");
         this.onChannelSelected = onChannelSelected;
-        i10 = j.i();
-        this.results = i10;
+        h10 = j.h();
+        this.results = h10;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

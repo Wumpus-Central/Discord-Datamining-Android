@@ -4,10 +4,10 @@ import com.android.billingclient.api.ProductDetails;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableNativeArray;
+import gf.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -16,14 +16,14 @@ import kotlin.jvm.internal.q;
 /* loaded from: classes.dex */
 public final class SerializeProductDetailsKt {
     public static final ReadableNativeArray serializeProductDetails(List<ProductDetails> list) {
-        int t10;
+        int s10;
         Object obj;
         long j10;
         String str;
         boolean z10;
         q.g(list, "<this>");
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (ProductDetails productDetails : list) {
             ArrayList arrayList2 = new ArrayList();
             if (q.b(productDetails.d(), "inapp")) {

@@ -1,7 +1,6 @@
 package com.discord.client_info;
 
 import android.content.Context;
-import com.swmansion.reanimated.BuildConfig;
 import java.util.Locale;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -15,9 +14,9 @@ public final class ClientInfo {
     public static String otaManifestETag = null;
     public static String otaVersion = null;
     public static String packageName = null;
-    public static final String proguardUUID = "28fbbb56-fbc5-473a-a237-26e26055b823";
+    public static final String proguardUUID = "6ffcf625-6b51-4060-be77-68eb1c51008c";
     public static final String sentryDsn = "https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375";
-    public static final String sentryRelease = "discord_android@185.9.0-2+185209";
+    public static final String sentryRelease = "discord_android@185.10.0-2+185210";
     public static String versionCode;
     public static String versionName;
 
@@ -123,7 +122,7 @@ public final class ClientInfo {
             q.y("buildType");
             str = null;
         }
-        return q.b(str, BuildConfig.BUILD_TYPE);
+        return q.b(str, "debug");
     }
 
     public final boolean isDeveloperBuild() {

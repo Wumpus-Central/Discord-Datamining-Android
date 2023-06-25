@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.Person;
-import androidx.core.content.g;
+import androidx.core.content.f;
 import androidx.core.content.pm.ShortcutInfoCompat;
 import androidx.core.content.pm.b;
 import androidx.core.graphics.drawable.IconCompat;
@@ -25,7 +25,7 @@ public final class ShortcutUtilsKt {
         q.g(context, "context");
         q.g(shortcutInfo, "shortcutInfo");
         builder.W(shortcutInfo.f());
-        builder.O(new g(shortcutInfo.f()));
+        builder.O(new f(shortcutInfo.f()));
         b.f(context, shortcutInfo);
         return builder;
     }
@@ -38,7 +38,7 @@ public final class ShortcutUtilsKt {
         q.g(longLabel, "longLabel");
         q.g(persons, "persons");
         q.g(intent, "intent");
-        ShortcutInfoCompat.a i11 = new ShortcutInfoCompat.a(context, id2).h(new g(id2)).m(label).i(longLabel);
+        ShortcutInfoCompat.a i11 = new ShortcutInfoCompat.a(context, id2).h(new f(id2)).m(label).i(longLabel);
         if (bitmap != null) {
             iconCompat = IconCompat.h(bitmap);
         } else {

@@ -13,7 +13,7 @@ import kotlin.jvm.internal.q;
 /* loaded from: classes7.dex */
 public final class ButtonBackgroundUtilsKt {
     public static final void setBackgroundColors(Button button, int i10, Integer num) {
-        int[] C0;
+        int[] A0;
         q.g(button, "<this>");
         ArrayList arrayList = new ArrayList(2);
         ArrayList arrayList2 = new ArrayList(2);
@@ -23,8 +23,8 @@ public final class ButtonBackgroundUtilsKt {
         }
         arrayList.add(new int[0]);
         arrayList2.add(Integer.valueOf(i10));
-        C0 = r.C0(arrayList2);
-        w0.v0(button, new ColorStateList((int[][]) arrayList.toArray(new int[0]), C0));
+        A0 = r.A0(arrayList2);
+        w0.v0(button, new ColorStateList((int[][]) arrayList.toArray(new int[0]), A0));
     }
 
     public static /* synthetic */ void setBackgroundColors$default(Button button, int i10, Integer num, int i11, Object obj) {

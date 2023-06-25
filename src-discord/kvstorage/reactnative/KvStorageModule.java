@@ -1,5 +1,6 @@
 package com.discord.kvstorage.reactnative;
 
+import com.discord.codegen.BuildConfig;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -10,7 +11,7 @@ class KvStorageModule extends ReactContextBaseJavaModule {
         super(reactApplicationContext);
     }
 
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public boolean activate() {
         try {
             System.loadLibrary("kv_storage");

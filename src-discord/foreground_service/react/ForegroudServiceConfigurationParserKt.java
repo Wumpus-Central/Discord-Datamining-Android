@@ -5,6 +5,8 @@ import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
+import hf.p;
+import hf.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -14,8 +16,6 @@ import kotlin.collections.j;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
-import lg.p;
-import lg.v;
 
 @Metadata(d1 = {"\u00000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000\u001a\u0014\u0010\u0005\u001a\u00020\u0006*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0002\u001a\u001a\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00010\b*\u00020\u00022\u0006\u0010\t\u001a\u00020\nH\u0000\u001a\u0014\u0010\u000b\u001a\u00020\f*\u00020\u00022\u0006\u0010\r\u001a\u00020\u000eH\u0002¨\u0006\u000f"}, d2 = {"parse", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration;", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration$Companion;", "readableMap", "Lcom/facebook/react/bridge/ReadableMap;", "parseAction", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration$Action;", "parseList", "", "readableArray", "Lcom/facebook/react/bridge/ReadableArray;", "parsePriority", "Lcom/discord/foreground_service/service/ServiceNotificationConfiguration$Priority;", "value", "", "foreground_service_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -23,8 +23,8 @@ public final class ForegroudServiceConfigurationParserKt {
     public static final ServiceNotificationConfiguration parse(ServiceNotificationConfiguration.Companion companion, ReadableMap readableMap) {
         ServiceNotificationConfiguration.Action action;
         ArrayList arrayList;
-        List i10;
-        int t10;
+        List h10;
+        int s10;
         q.g(companion, "<this>");
         q.g(readableMap, "readableMap");
         String nonNullString = NativeMapExtensionsKt.getNonNullString(readableMap, "title");
@@ -40,8 +40,8 @@ public final class ForegroudServiceConfigurationParserKt {
         ReadableArray array = readableMap.getArray("auxiliaryActions");
         if (array != null) {
             IntRange sizeRange = NativeArrayExtensionsKt.sizeRange(array);
-            t10 = k.t(sizeRange, 10);
-            ArrayList arrayList2 = new ArrayList(t10);
+            s10 = k.s(sizeRange, 10);
+            ArrayList arrayList2 = new ArrayList(s10);
             Iterator<Integer> it = sizeRange.iterator();
             while (it.hasNext()) {
                 ReadableMap map2 = array.getMap(((p) it).nextInt());
@@ -50,8 +50,8 @@ public final class ForegroudServiceConfigurationParserKt {
             }
             arrayList = arrayList2;
         } else {
-            i10 = j.i();
-            arrayList = i10;
+            h10 = j.h();
+            arrayList = h10;
         }
         return new ServiceNotificationConfiguration(nonNullString, string, parsePriority, action, arrayList);
     }
@@ -69,12 +69,12 @@ public final class ForegroudServiceConfigurationParserKt {
     }
 
     public static final List<ServiceNotificationConfiguration> parseList(ServiceNotificationConfiguration.Companion companion, ReadableArray readableArray) {
-        int t10;
+        int s10;
         q.g(companion, "<this>");
         q.g(readableArray, "readableArray");
         IntRange sizeRange = NativeArrayExtensionsKt.sizeRange(readableArray);
-        t10 = k.t(sizeRange, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(sizeRange, 10);
+        ArrayList arrayList = new ArrayList(s10);
         Iterator<Integer> it = sizeRange.iterator();
         while (it.hasNext()) {
             int nextInt = ((p) it).nextInt();

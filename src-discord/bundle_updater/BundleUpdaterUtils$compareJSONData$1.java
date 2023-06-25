@@ -1,6 +1,6 @@
 package com.discord.bundle_updater;
 
-import kg.x;
+import gf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.functions.Function1;

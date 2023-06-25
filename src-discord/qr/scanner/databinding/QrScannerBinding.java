@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.discord.qr.scanner.R;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes3.dex */
 public final class QrScannerBinding {

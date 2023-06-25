@@ -56,8 +56,8 @@ public final class CreateAttachmentAccessoryKt {
         q.g(attachment, "<this>");
         q.g(message, "message");
         SpoilerAttributes forAttachment = SpoilerAttributes.Companion.forAttachment(attachment, message, i10);
-        if (!q.b(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (str = message.m18getNonceN_6c4I0()) == null) {
-            str = message.m17getId3Eiw7ao();
+        if (!q.b(message.isCurrentUserMessageAuthor(), Boolean.TRUE) || (str = message.m17getNonceN_6c4I0()) == null) {
+            str = message.m16getId3Eiw7ao();
         }
         int i13 = WhenMappings.$EnumSwitchMapping$0[attachment.type().ordinal()];
         if (i13 == 1) {
@@ -72,9 +72,9 @@ public final class CreateAttachmentAccessoryKt {
             if (i13 == 3) {
                 fileAttachmentMessageAccessory = new FileAttachmentMessageAccessory(str, i10, attachment, forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), message.getAttachmentsOpacity(), null);
             } else if (i13 != 4) {
-                throw new kg.q();
+                throw new gf.q();
             } else if (MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE)) {
-                return new AudioAttachmentMessageAccessory(str, message.m14getAuthorIdwUX8bhU(), i10, attachment, message.getAttachmentsOpacity(), null);
+                return new AudioAttachmentMessageAccessory(str, message.m13getAuthorIdwUX8bhU(), i10, attachment, message.getAttachmentsOpacity(), null);
             } else {
                 fileAttachmentMessageAccessory = new FileAttachmentMessageAccessory(str, i10, attachment, forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), message.getAttachmentsOpacity(), null);
             }

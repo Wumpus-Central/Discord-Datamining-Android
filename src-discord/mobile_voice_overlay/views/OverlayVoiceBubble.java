@@ -60,7 +60,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
         q.f(context, "context");
-        str = iconUrlUtils.m464getForUser_fRzTXg(context, UserId.m627boximpl(user.m477getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        str = iconUrlUtils.m463getForUser_fRzTXg(context, UserId.m626boximpl(user.m476getUserIdre6GcUE()), user.getAvatar(), (r16 & 8) != 0 ? null : Integer.valueOf(user.getDiscriminator()), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         simpleDraweeView.setImageURI(str);
         if (user.getSpeaking()) {
             fadeActive();
@@ -95,10 +95,10 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView
     public void setData(MobileVoiceOverlayData data) {
-        Object W;
+        Object U;
         q.g(data, "data");
-        W = r.W(data.getUsers());
-        MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) W;
+        U = r.U(data.getUsers());
+        MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser = (MobileVoiceOverlayDataUser) U;
         if (mobileVoiceOverlayDataUser != null) {
             configureUI(mobileVoiceOverlayDataUser);
         }

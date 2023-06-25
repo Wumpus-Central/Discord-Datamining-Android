@@ -64,7 +64,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
 
     public final void setAvatarUris(List<String> avatarUris) {
         int i10;
-        int t10;
+        int s10;
         q.g(avatarUris, "avatarUris");
         boolean z10 = !avatarUris.isEmpty();
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
@@ -77,8 +77,8 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         }
         overlappingCirclesView.setVisibility(i10);
         OverlappingCirclesView overlappingCirclesView2 = this.binding.participants;
-        t10 = k.t(avatarUris, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(avatarUris, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (String str : avatarUris) {
             arrayList.add(new OverlappingItem(str));
         }
@@ -169,7 +169,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     }
 
     /* renamed from: setSubtitleText-SAQFhFE  reason: not valid java name */
-    public final void m305setSubtitleTextSAQFhFE(StructurableText structurableText, String messageId, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
+    public final void m304setSubtitleTextSAQFhFE(StructurableText structurableText, String messageId, Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink, Function1<? super LinkContentNode, Unit> onLongTapLink, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function4<? super String, ? super String, ? super String, ? super String, Unit> onLongPressChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, Function0<Unit> onTapSpoiler, Function1<? super String, Unit> onTapTimestamp, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function1<? super MessageId, Unit> onTapSeeMore) {
         q.g(messageId, "messageId");
         q.g(onTapLink, "onTapLink");
         q.g(onLongTapLink, "onLongTapLink");
@@ -191,7 +191,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
         if (structurableText != null) {
             MessageContentView messageContentView2 = this.binding.itemSubtitle;
             q.f(messageContentView2, "binding.itemSubtitle");
-            messageContentView2.m314setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            messageContentView2.m313setMessageContent2i9KL1s(structurableText, messageId, false, false, false, onTapLink, onLongTapLink, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, onTapSeeMore, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : null, 0, 0, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         }
     }
 

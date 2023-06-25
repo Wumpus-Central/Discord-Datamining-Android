@@ -25,9 +25,9 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ GuildInviteDisabledMessageAccessory m254copyu7_MRrM$default(GuildInviteDisabledMessageAccessory guildInviteDisabledMessageAccessory, String str, int i10, GuildInviteDisabledEmbedImpl guildInviteDisabledEmbedImpl, int i11, Object obj) {
+    public static /* synthetic */ GuildInviteDisabledMessageAccessory m253copyu7_MRrM$default(GuildInviteDisabledMessageAccessory guildInviteDisabledMessageAccessory, String str, int i10, GuildInviteDisabledEmbedImpl guildInviteDisabledEmbedImpl, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = guildInviteDisabledMessageAccessory.mo215getMessageId3Eiw7ao();
+            str = guildInviteDisabledMessageAccessory.mo214getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = guildInviteDisabledMessageAccessory.codedLinkIndex;
@@ -35,12 +35,12 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
         if ((i11 & 4) != 0) {
             guildInviteDisabledEmbedImpl = guildInviteDisabledMessageAccessory.invite;
         }
-        return guildInviteDisabledMessageAccessory.m256copyu7_MRrM(str, i10, guildInviteDisabledEmbedImpl);
+        return guildInviteDisabledMessageAccessory.m255copyu7_MRrM(str, i10, guildInviteDisabledEmbedImpl);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m255component13Eiw7ao() {
-        return mo215getMessageId3Eiw7ao();
+    public final String m254component13Eiw7ao() {
+        return mo214getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -52,7 +52,7 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final GuildInviteDisabledMessageAccessory m256copyu7_MRrM(String messageId, int i10, GuildInviteDisabledEmbedImpl invite) {
+    public final GuildInviteDisabledMessageAccessory m255copyu7_MRrM(String messageId, int i10, GuildInviteDisabledEmbedImpl invite) {
         q.g(messageId, "messageId");
         q.g(invite, "invite");
         return new GuildInviteDisabledMessageAccessory(messageId, i10, invite, null);
@@ -66,7 +66,7 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
             return false;
         }
         GuildInviteDisabledMessageAccessory guildInviteDisabledMessageAccessory = (GuildInviteDisabledMessageAccessory) obj;
-        return MessageId.m593equalsimpl0(mo215getMessageId3Eiw7ao(), guildInviteDisabledMessageAccessory.mo215getMessageId3Eiw7ao()) && this.codedLinkIndex == guildInviteDisabledMessageAccessory.codedLinkIndex && q.b(this.invite, guildInviteDisabledMessageAccessory.invite);
+        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), guildInviteDisabledMessageAccessory.mo214getMessageId3Eiw7ao()) && this.codedLinkIndex == guildInviteDisabledMessageAccessory.codedLinkIndex && q.b(this.invite, guildInviteDisabledMessageAccessory.invite);
     }
 
     public final int getCodedLinkIndex() {
@@ -79,16 +79,16 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo215getMessageId3Eiw7ao() {
+    public String mo214getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m594hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode();
+        return (((MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m595toStringimpl(mo215getMessageId3Eiw7ao());
+        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         GuildInviteDisabledEmbedImpl guildInviteDisabledEmbedImpl = this.invite;
         return "GuildInviteDisabledMessageAccessory(messageId=" + str + ", codedLinkIndex=" + i10 + ", invite=" + guildInviteDisabledEmbedImpl + ")";

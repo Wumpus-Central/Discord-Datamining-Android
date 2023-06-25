@@ -51,7 +51,7 @@ public final class CallSystemMessageView extends ConstraintLayout {
     public final void setMessage(Message message) {
         ReactAsset reactAsset;
         int i10;
-        int t10;
+        int s10;
         q.g(message, "message");
         SimpleDraweeView simpleDraweeView = this.binding.icon;
         q.f(simpleDraweeView, "binding.icon");
@@ -87,10 +87,10 @@ public final class CallSystemMessageView extends ConstraintLayout {
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
         List<String> avatarURLs = message.getAvatarURLs();
         if (avatarURLs == null) {
-            avatarURLs = j.i();
+            avatarURLs = j.h();
         }
-        t10 = k.t(avatarURLs, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(avatarURLs, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (String str : avatarURLs) {
             arrayList.add(new OverlappingItem(str));
         }

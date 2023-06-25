@@ -105,7 +105,7 @@ public final class MarkdownRules {
                 r10 = 2
                 java.lang.String r9 = r9.group(r10)
                 if (r9 == 0) goto L_0x006f
-                java.lang.CharSequence r9 = oj.l.V0(r9)
+                java.lang.CharSequence r9 = ki.l.V0(r9)
                 java.lang.String r2 = r9.toString()
                 if (r2 == 0) goto L_0x006f
                 char[] r3 = new char[r1]
@@ -116,7 +116,7 @@ public final class MarkdownRules {
                 r5 = 0
                 r6 = 6
                 r7 = 0
-                java.util.List r9 = oj.l.y0(r2, r3, r4, r5, r6, r7)
+                java.util.List r9 = ki.l.y0(r2, r3, r4, r5, r6, r7)
                 goto L_0x0070
             L_0x006f:
                 r9 = 0
@@ -136,7 +136,7 @@ public final class MarkdownRules {
                 r10.add(r2)
                 goto L_0x007b
             L_0x0093:
-                java.util.List r10 = kotlin.collections.h.i()
+                java.util.List r10 = kotlin.collections.h.h()
             L_0x0097:
                 boolean r9 = r10.isEmpty()
                 r9 = r9 ^ r1
@@ -171,7 +171,7 @@ public final class MarkdownRules {
                 java.util.List r0 = com.discord.simpleast.core.simple.SimpleMarkdownRules.createSimpleMarkdownRules$default(r2, r2, r0, r1)
                 com.discord.simpleast.core.simple.SimpleMarkdownRules r1 = com.discord.simpleast.core.simple.SimpleMarkdownRules.INSTANCE
                 com.discord.simpleast.core.parser.Rule r1 = r1.createTextRule()
-                java.util.List r0 = kotlin.collections.h.p0(r0, r1)
+                java.util.List r0 = kotlin.collections.h.n0(r0, r1)
                 r3.<init>(r4, r5, r0)
                 return
             */
@@ -297,20 +297,20 @@ public final class MarkdownRules {
     }
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createHeaderRules(Context context, List<Integer> headerStyles) {
-        List<Rule<R, Node<R>, S>> l10;
+        List<Rule<R, Node<R>, S>> k10;
         q.g(context, "context");
         q.g(headerStyles, "headerStyles");
         MarkdownRules$createHeaderRules$1 markdownRules$createHeaderRules$1 = new MarkdownRules$createHeaderRules$1(context, headerStyles);
-        l10 = j.l(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
-        return l10;
+        k10 = j.k(new HeaderRule(new MarkdownRules$createHeaderRules$2(markdownRules$createHeaderRules$1)), new HeaderLineRule(null, new MarkdownRules$createHeaderRules$3(markdownRules$createHeaderRules$1), 1, null));
+        return k10;
     }
 
     public static final <R, S> List<Rule<R, Node<R>, S>> createMarkdownRules(Context context, List<Integer> headerStyles) {
-        List<Rule<R, Node<R>, S>> p02;
+        List<Rule<R, Node<R>, S>> n02;
         q.g(context, "context");
         q.g(headerStyles, "headerStyles");
-        p02 = r.p0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
-        return p02;
+        n02 = r.n0(createHeaderRules(context, headerStyles), new ListItemRule(MarkdownRules$createMarkdownRules$1.INSTANCE));
+        return n02;
     }
 
     public final Pattern getPATTERN_HEADER_ITEM() {

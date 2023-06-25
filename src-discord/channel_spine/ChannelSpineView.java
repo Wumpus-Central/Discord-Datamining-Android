@@ -98,7 +98,7 @@ public final class ChannelSpineView extends View {
         } else if (i11 == 2) {
             f11 = yOfRow(f10, i10 + 1);
         } else {
-            throw new kg.q();
+            throw new gf.q();
         }
         if (this.isReplySpline) {
             f12 = SizeUtilsKt.getDpToPx(9);
@@ -121,37 +121,37 @@ public final class ChannelSpineView extends View {
     }
 
     private final void rebuildLayout() {
-        List<? extends Path> i10;
+        List<? extends Path> h10;
         SpineDirection spineDirection;
-        int i11 = this.numRows;
+        int i10 = this.numRows;
         float dpToPx = SizeUtilsKt.getDpToPx(this.rowHeight);
-        if (i11 == 0 || dpToPx <= 1.0E-4f) {
-            i10 = j.i();
-            this.paths = i10;
+        if (i10 == 0 || dpToPx <= 1.0E-4f) {
+            h10 = j.h();
+            this.paths = h10;
             return;
         }
-        int i12 = 1;
-        if (i11 <= 1) {
-            i12 = 0;
+        int i11 = 1;
+        if (i10 <= 1) {
+            i11 = 0;
         }
-        ArrayList arrayList = new ArrayList(i11 + i12);
-        int i13 = i11 - 1;
-        for (int i14 = 0; i14 < i11; i14++) {
+        ArrayList arrayList = new ArrayList(i10 + i11);
+        int i12 = i10 - 1;
+        for (int i13 = 0; i13 < i10; i13++) {
             if (this.isReplySpline) {
                 spineDirection = SpineDirection.BOTTOM_TO_TOP;
             } else {
                 spineDirection = SpineDirection.TOP_TO_BOTTOM;
             }
-            arrayList.add(createSpinePath(dpToPx, i14, spineDirection));
-            if (i14 < i13) {
-                arrayList.add(createSpinePath(dpToPx, i14, SpineDirection.BOTTOM_TO_TOP));
+            arrayList.add(createSpinePath(dpToPx, i13, spineDirection));
+            if (i13 < i12) {
+                arrayList.add(createSpinePath(dpToPx, i13, SpineDirection.BOTTOM_TO_TOP));
             }
         }
-        if (i12 != 0) {
+        if (i11 != 0) {
             Path path = new Path();
             float strokeWidth = this.spinePaint.getStrokeWidth() / 2.0f;
             path.moveTo(strokeWidth, this.verticalPadding);
-            path.lineTo(strokeWidth, yOfRow(dpToPx, i11 - 2) + (dpToPx / 2.0f));
+            path.lineTo(strokeWidth, yOfRow(dpToPx, i10 - 2) + (dpToPx / 2.0f));
             arrayList.add(path);
         }
         this.paths = arrayList;
@@ -224,7 +224,7 @@ public final class ChannelSpineView extends View {
                 float f11 = this.numRows * this.rowHeight;
                 int mode2 = View.MeasureSpec.getMode(i11);
                 if (mode2 == Integer.MIN_VALUE) {
-                    f10 = bh.j.f(f11, View.MeasureSpec.getSize(i11));
+                    f10 = xf.j.f(f11, View.MeasureSpec.getSize(i11));
                     number = Float.valueOf(f10);
                 } else if (mode2 != 1073741824) {
                     number = Float.valueOf(f11);
@@ -289,7 +289,7 @@ public final class ChannelSpineView extends View {
     public ChannelSpineView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         int i10;
-        List<? extends Path> i11;
+        List<? extends Path> h10;
         q.g(context, "context");
         Paint paint = new Paint();
         if (!isInEditMode()) {
@@ -306,8 +306,8 @@ public final class ChannelSpineView extends View {
         this.verticalPadding = SizeUtilsKt.getDpToPx(8);
         this.horizontalPadding = SizeUtilsKt.getDpToPx(0);
         this.arcRect = new RectF();
-        i11 = j.i();
-        this.paths = i11;
+        h10 = j.h();
+        this.paths = h10;
         setWillNotDraw(false);
     }
 }

@@ -50,7 +50,7 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:4:0x000d, code lost:
-        r0 = oj.t.m(r0);
+        r0 = ki.t.m(r0);
      */
     @Override // com.facebook.react.bridge.BaseJavaModule
     /*
@@ -65,7 +65,7 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
             java.lang.String r0 = r0.getItem(r1)
             r1 = 1
             if (r0 == 0) goto L_0x0018
-            java.lang.Integer r0 = oj.l.m(r0)
+            java.lang.Integer r0 = ki.l.m(r0)
             if (r0 == 0) goto L_0x0018
             int r0 = r0.intValue()
             goto L_0x0019
@@ -76,14 +76,14 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
             kotlin.Pair[] r2 = new kotlin.Pair[r2]
             java.lang.String r3 = "selectedBrowser"
             java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
-            kotlin.Pair r0 = kg.x.a(r3, r0)
+            kotlin.Pair r0 = gf.x.a(r3, r0)
             r3 = 0
             r2[r3] = r0
             java.lang.String r0 = "isChromeInstalled"
             java.lang.Boolean r3 = java.lang.Boolean.TRUE
-            kotlin.Pair r0 = kg.x.a(r0, r3)
+            kotlin.Pair r0 = gf.x.a(r0, r3)
             r2[r1] = r0
-            java.util.Map r0 = lg.s.l(r2)
+            java.util.Map r0 = hf.s.l(r2)
             return r0
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.browser_manager.BrowserManagerModule.getConstants():java.util.Map");

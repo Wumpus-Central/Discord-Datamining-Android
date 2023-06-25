@@ -12,7 +12,7 @@ import com.discord.chat.R;
 import com.discord.chat.presentation.message.view.AttachmentUploadOverlayView;
 import com.discord.chat.presentation.message.view.SpoilerView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class FileAttachmentViewBinding {

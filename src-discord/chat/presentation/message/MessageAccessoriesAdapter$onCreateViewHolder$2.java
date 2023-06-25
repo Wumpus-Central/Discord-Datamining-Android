@@ -20,14 +20,14 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 exte
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker, MessageId messageId) {
-        m207invokeAyv7vGE(sticker, messageId.m597unboximpl());
-        return Unit.f22113a;
+        m206invokeAyv7vGE(sticker, messageId.m596unboximpl());
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke-Ayv7vGE  reason: not valid java name */
-    public final void m207invokeAyv7vGE(Sticker p02, String p12) {
+    public final void m206invokeAyv7vGE(Sticker p02, String p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo180onWelcomeReplyClickedAyv7vGE(p02, p12);
+        ((ChatEventHandler) this.receiver).mo179onWelcomeReplyClickedAyv7vGE(p02, p12);
     }
 }

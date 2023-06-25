@@ -33,7 +33,7 @@ public final class ReactAssetUtilsKt {
             kotlin.jvm.internal.q.g(r2, r0)
             r0 = 0
             if (r3 == 0) goto L_0x0011
-            boolean r1 = oj.l.w(r3)
+            boolean r1 = ki.l.w(r3)
             if (r1 == 0) goto L_0x000f
             goto L_0x0011
         L_0x000f:

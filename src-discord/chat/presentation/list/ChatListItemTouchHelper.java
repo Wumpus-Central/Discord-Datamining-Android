@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
-import r1.b;
+import o0.b;
 
 /* loaded from: classes8.dex */
 public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
@@ -622,8 +622,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mRecyclerView = recyclerView;
             if (recyclerView != null) {
                 Resources resources = recyclerView.getResources();
-                this.mSwipeEscapeVelocity = resources.getDimension(b.f28122f);
-                this.mMaxSwipeVelocity = resources.getDimension(b.f28121e);
+                this.mSwipeEscapeVelocity = resources.getDimension(b.f23706f);
+                this.mMaxSwipeVelocity = resources.getDimension(b.f23705e);
                 setupCallbacks();
             }
         }

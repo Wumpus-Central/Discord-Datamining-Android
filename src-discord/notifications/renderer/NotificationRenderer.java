@@ -10,8 +10,8 @@ import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.primitives.ChannelId;
 import com.facebook.react.uimanager.ViewProps;
+import gf.x;
 import java.util.Map;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -56,7 +56,7 @@ public final class NotificationRenderer {
         q.g(context, "context");
         q.g(notification, "notification");
         for (ChannelId channelId : notification.getAckChannelIds()) {
-            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m570toStringimpl(channelId.m572unboximpl());
+            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m569toStringimpl(channelId.m571unboximpl());
             NotificationChannels notificationChannels = NotificationChannels.INSTANCE;
             if (!NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, notificationChannels.getNotificationChannelId(notification), NotificationManagerUtilsKt.getActiveNotification(context, str)).l().getBoolean(IGNORE_ACK_KEY, false)) {
                 clear(context, str);

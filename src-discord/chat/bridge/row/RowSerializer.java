@@ -40,7 +40,7 @@ public final class RowSerializer extends d<Row> {
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {
             str = null;
         } else {
-            str = n10.b();
+            str = n10.a();
         }
         if (q.b(str, CHANGE_TYPE_DELETE)) {
             return DeleteRow.Companion.serializer();

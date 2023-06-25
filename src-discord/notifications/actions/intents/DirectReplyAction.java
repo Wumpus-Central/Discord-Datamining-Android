@@ -10,10 +10,10 @@ import androidx.core.app.RemoteInput;
 import com.discord.notifications.actions.intents.NotificationAction;
 import com.discord.primitives.ChannelId;
 import com.discord.react.headless_tasks.api.HeadlessTasks;
+import ki.u;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import oj.u;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0013\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ,2\u00020\u0001:\u0001,B6\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003ø\u0001\u0000¢\u0006\u0002\u0010\nJ\t\u0010\u000f\u001a\u00020\u0003HÆ\u0003J\u0019\u0010\u0010\u001a\u00020\u0005HÂ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u0012J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u0003HÂ\u0003J\u0010\u0010\u0014\u001a\u0004\u0018\u00010\bHÂ\u0003¢\u0006\u0002\u0010\u0015J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÂ\u0003JN\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0018\u0010\u0019J\t\u0010\u001a\u001a\u00020\bHÖ\u0001J\u0013\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001eHÖ\u0003J\t\u0010\u001f\u001a\u00020\bHÖ\u0001J\u0018\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%H\u0016J\u0010\u0010&\u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\t\u0010'\u001a\u00020\u0003HÖ\u0001J\u0019\u0010(\u001a\u00020!2\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\bHÖ\u0001R\u0019\u0010\u0004\u001a\u00020\u0005X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\u000bR\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\fR\u0010\u0010\t\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000e\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006-"}, d2 = {"Lcom/discord/notifications/actions/intents/DirectReplyAction;", "Lcom/discord/notifications/actions/intents/NotificationAction;", "tag", "", "channelId", "Lcom/discord/primitives/ChannelId;", "channelName", "channelType", "", "guildName", "(Ljava/lang/String;JLjava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "J", "Ljava/lang/Integer;", "getTag", "()Ljava/lang/String;", "component1", "component2", "component2-o4g7jtM", "()J", "component3", "component4", "()Ljava/lang/Integer;", "component5", "copy", "copy-H-xa5aA", "(Ljava/lang/String;JLjava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)Lcom/discord/notifications/actions/intents/DirectReplyAction;", "describeContents", "equals", "", "other", "", "hashCode", "onNotificationAction", "", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "onNotificationActionComplete", "toString", "writeToParcel", "parcel", "Landroid/os/Parcel;", "flags", "Companion", "notification_actions_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes3.dex */
@@ -70,7 +70,7 @@ public final class DirectReplyAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final DirectReplyAction createFromParcel(Parcel parcel) {
             q.g(parcel, "parcel");
-            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m572unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), null);
+            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m571unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -93,7 +93,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m486component2o4g7jtM() {
+    private final long m485component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -110,7 +110,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: copy-H-xa5aA$default  reason: not valid java name */
-    public static /* synthetic */ DirectReplyAction m487copyHxa5aA$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, int i10, Object obj) {
+    public static /* synthetic */ DirectReplyAction m486copyHxa5aA$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = directReplyAction.getTag();
         }
@@ -126,7 +126,7 @@ public final class DirectReplyAction implements NotificationAction {
         if ((i10 & 16) != 0) {
             str3 = directReplyAction.guildName;
         }
-        return directReplyAction.m488copyHxa5aA(str, j10, str2, num, str3);
+        return directReplyAction.m487copyHxa5aA(str, j10, str2, num, str3);
     }
 
     public final String component1() {
@@ -134,7 +134,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: copy-H-xa5aA  reason: not valid java name */
-    public final DirectReplyAction m488copyHxa5aA(String tag, long j10, String str, Integer num, String str2) {
+    public final DirectReplyAction m487copyHxa5aA(String tag, long j10, String str, Integer num, String str2) {
         q.g(tag, "tag");
         return new DirectReplyAction(tag, j10, str, num, str2, null);
     }
@@ -152,7 +152,7 @@ public final class DirectReplyAction implements NotificationAction {
             return false;
         }
         DirectReplyAction directReplyAction = (DirectReplyAction) obj;
-        return q.b(getTag(), directReplyAction.getTag()) && ChannelId.m567equalsimpl0(this.channelId, directReplyAction.channelId) && q.b(this.channelName, directReplyAction.channelName) && q.b(this.channelType, directReplyAction.channelType) && q.b(this.guildName, directReplyAction.guildName);
+        return q.b(getTag(), directReplyAction.getTag()) && ChannelId.m566equalsimpl0(this.channelId, directReplyAction.channelId) && q.b(this.channelName, directReplyAction.channelName) && q.b(this.channelType, directReplyAction.channelType) && q.b(this.guildName, directReplyAction.guildName);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -166,7 +166,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     public int hashCode() {
-        int hashCode = ((getTag().hashCode() * 31) + ChannelId.m568hashCodeimpl(this.channelId)) * 31;
+        int hashCode = ((getTag().hashCode() * 31) + ChannelId.m567hashCodeimpl(this.channelId)) * 31;
         String str = this.channelName;
         int i10 = 0;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
@@ -209,7 +209,7 @@ public final class DirectReplyAction implements NotificationAction {
 
     public String toString() {
         String tag = getTag();
-        String str = ChannelId.m570toStringimpl(this.channelId);
+        String str = ChannelId.m569toStringimpl(this.channelId);
         String str2 = this.channelName;
         Integer num = this.channelType;
         String str3 = this.guildName;
@@ -221,7 +221,7 @@ public final class DirectReplyAction implements NotificationAction {
         int i11;
         q.g(out, "out");
         out.writeString(this.tag);
-        out.writeParcelable(ChannelId.m563boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m562boximpl(this.channelId), i10);
         out.writeString(this.channelName);
         Integer num = this.channelType;
         if (num == null) {

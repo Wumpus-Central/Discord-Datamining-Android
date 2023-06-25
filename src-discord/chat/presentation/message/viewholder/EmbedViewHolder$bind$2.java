@@ -19,14 +19,14 @@ public /* synthetic */ class EmbedViewHolder$bind$2 extends n implements Functio
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, String str, String str2) {
-        m329invokeu7_MRrM(messageId.m597unboximpl(), str, str2);
-        return Unit.f22113a;
+        m328invokeu7_MRrM(messageId.m596unboximpl(), str, str2);
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke-u7_MRrM  reason: not valid java name */
-    public final void m329invokeu7_MRrM(String p02, String p12, String str) {
+    public final void m328invokeu7_MRrM(String p02, String p12, String str) {
         q.g(p02, "p0");
         q.g(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo150onLinkClickedu7_MRrM(p02, p12, str);
+        ((ChatEventHandler) this.receiver).mo149onLinkClickedu7_MRrM(p02, p12, str);
     }
 }

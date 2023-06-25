@@ -75,10 +75,10 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
     }
 
     public ReactionsViewAdapter(int i10) {
-        List<? extends ReactionView.Reaction> i11;
+        List<? extends ReactionView.Reaction> h10;
         this.reactionHeight = i10;
-        i11 = j.i();
-        this.reactions = i11;
+        h10 = j.h();
+        this.reactions = h10;
         setHasStableIds(true);
     }
 
@@ -277,7 +277,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
             addReactionView2.setLayoutParams(cVar);
             viewHolder = new AddBurstReactionViewHolder(addReactionView2);
         } else {
-            throw new kg.q();
+            throw new gf.q();
         }
         themeManager.setThemeOverride(themeOverride);
         return viewHolder;

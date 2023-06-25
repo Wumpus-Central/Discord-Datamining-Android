@@ -47,10 +47,10 @@ public final class FlipperUtils {
         return new ReactPackage() { // from class: com.discord.flipper.FlipperUtils$getFlipperPackage$1
             @Override // com.facebook.react.ReactPackage
             public List<ReactContextBaseJavaModule> createNativeModules(ReactApplicationContext reactContext) {
-                List<ReactContextBaseJavaModule> i10;
+                List<ReactContextBaseJavaModule> h10;
                 q.g(reactContext, "reactContext");
-                i10 = j.i();
-                return i10;
+                h10 = j.h();
+                return h10;
             }
 
             @Override // com.facebook.react.ReactPackage

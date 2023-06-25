@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.discord.chat.R;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class AltTextButtonViewBinding {

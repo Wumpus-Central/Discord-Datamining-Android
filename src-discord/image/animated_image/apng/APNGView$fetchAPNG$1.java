@@ -6,8 +6,8 @@ import com.discord.file_downloader.FileDownloader;
 import com.discord.image.animated_image.animated_image_utils.AnimatedImageStateManager;
 import com.discord.image.animated_image.apng.APNGView;
 import com.linecorp.apng.ApngDrawable;
+import gf.t;
 import java.io.File;
-import kg.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -19,7 +19,7 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import qg.d;
+import mf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -44,7 +44,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+        return ((APNGView$fetchAPNG$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -71,7 +71,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -87,14 +87,14 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
         @e(c = "com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$1", f = "APNGView.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1$1  reason: invalid class name and collision with other inner class name */
         /* loaded from: classes7.dex */
-        public static final class C01161 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
+        public static final class C01121 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
             final /* synthetic */ APNGView.Config $config;
             final /* synthetic */ ApngDrawable $drawable;
             int label;
             final /* synthetic */ APNGView this$0;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C01161(APNGView aPNGView, ApngDrawable apngDrawable, APNGView.Config config, Continuation<? super C01161> continuation) {
+            C01121(APNGView aPNGView, ApngDrawable apngDrawable, APNGView.Config config, Continuation<? super C01121> continuation) {
                 super(2, continuation);
                 this.this$0 = aPNGView;
                 this.$drawable = apngDrawable;
@@ -103,11 +103,11 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new C01161(this.this$0, this.$drawable, this.$config, continuation);
+                return new C01121(this.this$0, this.$drawable, this.$config, continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((C01161) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+                return ((C01121) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -147,7 +147,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -184,7 +184,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -231,7 +231,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
                 r0.<init>(r13, r15)
             L_0x0018:
                 java.lang.Object r15 = r0.result
-                java.lang.Object r1 = qg.b.d()
+                java.lang.Object r1 = mf.b.d()
                 int r2 = r0.label
                 r3 = 3
                 r4 = 2
@@ -241,7 +241,7 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
                 if (r2 == r5) goto L_0x003d
                 if (r2 == r4) goto L_0x0039
                 if (r2 != r3) goto L_0x0031
-                kg.t.b(r15)
+                gf.t.b(r15)
                 goto L_0x00a3
             L_0x0031:
                 java.lang.IllegalStateException r14 = new java.lang.IllegalStateException
@@ -249,15 +249,15 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
                 r14.<init>(r15)
                 throw r14
             L_0x0039:
-                kg.t.b(r15)
+                gf.t.b(r15)
                 goto L_0x00a6
             L_0x003d:
                 java.lang.Object r14 = r0.L$0
                 com.discord.image.animated_image.apng.APNGView$fetchAPNG$1$1 r14 = (com.discord.image.animated_image.apng.APNGView$fetchAPNG$1.AnonymousClass1) r14
-                kg.t.b(r15)     // Catch: Exception -> 0x0075
+                gf.t.b(r15)     // Catch: Exception -> 0x0075
                 goto L_0x00a6
             L_0x0045:
-                kg.t.b(r15)
+                gf.t.b(r15)
                 boolean r15 = r14 instanceof com.discord.file_downloader.DownloadState.Completed
                 if (r15 == 0) goto L_0x008b
                 com.linecorp.apng.ApngDrawable$b r7 = com.linecorp.apng.ApngDrawable.C     // Catch: Exception -> 0x0074
@@ -302,10 +302,10 @@ public final class APNGView$fetchAPNG$1 extends k implements Function2<Coroutine
                 if (r14 != r1) goto L_0x00a3
                 return r1
             L_0x00a3:
-                kotlin.Unit r14 = kotlin.Unit.f22113a
+                kotlin.Unit r14 = kotlin.Unit.f20684a
                 return r14
             L_0x00a6:
-                kotlin.Unit r14 = kotlin.Unit.f22113a
+                kotlin.Unit r14 = kotlin.Unit.f20684a
                 return r14
             */
             throw new UnsupportedOperationException("Method not decompiled: com.discord.image.animated_image.apng.APNGView$fetchAPNG$1.AnonymousClass1.emit(com.discord.file_downloader.DownloadState, kotlin.coroutines.Continuation):java.lang.Object");

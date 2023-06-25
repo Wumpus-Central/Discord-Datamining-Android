@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.discord.chat.input.R;
 import com.discord.chat.input.views.DCDChatInput;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class ChatInputRootViewBinding {

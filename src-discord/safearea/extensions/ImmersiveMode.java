@@ -40,7 +40,7 @@ public final class ImmersiveMode {
             view = viewGroup.getChildAt(0);
         }
         q.d(view);
-        w0.D0(viewGroup, new r0() { // from class: p3.a
+        w0.D0(viewGroup, new r0() { // from class: n2.a
             @Override // androidx.core.view.r0
             public final WindowInsetsCompat a(View view2, WindowInsetsCompat windowInsetsCompat) {
                 WindowInsetsCompat fitSystemWindowsAndAdjustResize$lambda$2;
@@ -56,7 +56,7 @@ public final class ImmersiveMode {
         q.g(view, "<anonymous parameter 0>");
         q.g(insets, "insets");
         viewGroup.setFitsSystemWindows(true);
-        int max = Math.max(insets.f(WindowInsetsCompat.m.b()).f3275d, 0);
+        int max = Math.max(insets.f(WindowInsetsCompat.m.b()).f2810d, 0);
         Iterator<T> it = rootViewInsetUpdateCallbacks.iterator();
         while (it.hasNext()) {
             ((Function1) it.next()).invoke(insets);

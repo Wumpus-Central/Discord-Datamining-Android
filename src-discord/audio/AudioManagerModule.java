@@ -12,9 +12,9 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ViewProps;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -43,15 +43,15 @@ public final class AudioManagerModule extends ReactContextBaseJavaModule {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final List<String> convertDevices(List<DiscordAudioManager.AudioDevice> list) {
-            int t10;
+            int s10;
             ArrayList<DiscordAudioManager.AudioDevice> arrayList = new ArrayList();
             for (Object obj : list) {
                 if (((DiscordAudioManager.AudioDevice) obj).isAvailable()) {
                     arrayList.add(obj);
                 }
             }
-            t10 = k.t(arrayList, 10);
-            ArrayList arrayList2 = new ArrayList(t10);
+            s10 = k.s(arrayList, 10);
+            ArrayList arrayList2 = new ArrayList(s10);
             for (DiscordAudioManager.AudioDevice audioDevice : arrayList) {
                 arrayList2.add(audioDevice.getType().toString());
             }

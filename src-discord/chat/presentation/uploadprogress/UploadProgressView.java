@@ -80,7 +80,7 @@ public final class UploadProgressView extends ConstraintLayout {
         this.binding.progressBar.animate().setInterpolator(this.interpolator).setDuration(j10).scaleX(f10).start();
         SimpleDraweeView simpleDraweeView3 = this.binding.progressCancel;
         q.f(simpleDraweeView3, "binding.progressCancel");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView3, false, new View.OnClickListener() { // from class: j3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView3, false, new View.OnClickListener() { // from class: h2.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 UploadProgressView.set$lambda$4(Function0.this, view);

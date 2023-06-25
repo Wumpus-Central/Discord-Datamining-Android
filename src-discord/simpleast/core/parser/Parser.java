@@ -2,13 +2,13 @@ package com.discord.simpleast.core.parser;
 
 import android.util.Log;
 import com.discord.simpleast.core.node.Node;
+import gf.x;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 import java.util.regex.Matcher;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.e;
@@ -168,7 +168,7 @@ public class Parser<R, T extends Node<R>, S> {
         }
         Collection<Node<R>> children = node.getChildren();
         if (children != null) {
-            list = r.F0(children);
+            list = r.D0(children);
         } else {
             list = null;
         }

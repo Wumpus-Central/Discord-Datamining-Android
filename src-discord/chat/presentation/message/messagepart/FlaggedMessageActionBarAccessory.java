@@ -26,9 +26,9 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ FlaggedMessageActionBarAccessory m239copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
+    public static /* synthetic */ FlaggedMessageActionBarAccessory m238copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = flaggedMessageActionBarAccessory.mo215getMessageId3Eiw7ao();
+            str = flaggedMessageActionBarAccessory.mo214getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             message = flaggedMessageActionBarAccessory.message;
@@ -36,12 +36,12 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             autoModerationContext = flaggedMessageActionBarAccessory.autoModerationContext;
         }
-        return flaggedMessageActionBarAccessory.m241copyu7_MRrM(str, message, autoModerationContext);
+        return flaggedMessageActionBarAccessory.m240copyu7_MRrM(str, message, autoModerationContext);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m240component13Eiw7ao() {
-        return mo215getMessageId3Eiw7ao();
+    public final String m239component13Eiw7ao() {
+        return mo214getMessageId3Eiw7ao();
     }
 
     public final Message component2() {
@@ -53,7 +53,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final FlaggedMessageActionBarAccessory m241copyu7_MRrM(String messageId, Message message, AutoModerationContext autoModerationContext) {
+    public final FlaggedMessageActionBarAccessory m240copyu7_MRrM(String messageId, Message message, AutoModerationContext autoModerationContext) {
         q.g(messageId, "messageId");
         q.g(message, "message");
         q.g(autoModerationContext, "autoModerationContext");
@@ -68,7 +68,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
             return false;
         }
         FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) obj;
-        return MessageId.m593equalsimpl0(mo215getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo215getMessageId3Eiw7ao()) && q.b(this.message, flaggedMessageActionBarAccessory.message) && q.b(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
+        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), flaggedMessageActionBarAccessory.mo214getMessageId3Eiw7ao()) && q.b(this.message, flaggedMessageActionBarAccessory.message) && q.b(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
     }
 
     public final AutoModerationContext getAutoModerationContext() {
@@ -81,16 +81,16 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo215getMessageId3Eiw7ao() {
+    public String mo214getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m594hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
+        return (((MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m595toStringimpl(mo215getMessageId3Eiw7ao());
+        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.autoModerationContext;
         return "FlaggedMessageActionBarAccessory(messageId=" + str + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";

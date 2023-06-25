@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import androidx.cardview.widget.CardView;
 import com.discord.segmented.control.R;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes6.dex */
 public final class SegmentedControlBinding {

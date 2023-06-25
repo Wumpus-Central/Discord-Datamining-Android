@@ -41,7 +41,7 @@ public class Node<R> {
                 int r2 = r2 + 1
                 goto L_0x000c
             L_0x0018:
-                java.util.List r5 = kotlin.collections.h.F0(r0)
+                java.util.List r5 = kotlin.collections.h.D0(r0)
                 r4.<init>(r5)
                 return
             */
@@ -67,7 +67,7 @@ public class Node<R> {
             sb2.append(" >\n");
             Collection<Node<R>> children = getChildren();
             if (children != null) {
-                str = r.e0(children, "\n->", ">>", "\n>|", 0, null, Node$Parent$toString$1.INSTANCE, 24, null);
+                str = r.c0(children, "\n->", ">>", "\n>|", 0, null, Node$Parent$toString$1.INSTANCE, 24, null);
             } else {
                 str = null;
             }
@@ -91,7 +91,7 @@ public class Node<R> {
             collection = new ArrayList<>();
         }
         collection.add(child);
-        Unit unit = Unit.f22113a;
+        Unit unit = Unit.f20684a;
         this.children = collection;
     }
 

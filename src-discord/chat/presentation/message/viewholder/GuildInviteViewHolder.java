@@ -26,7 +26,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(GuildInviteViewHolder this$0, GuildInviteMessageAccessory inviteAccessory, View view) {
         q.g(this$0, "this$0");
         q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo165onTapInviteEmbedAFFcxXc(inviteAccessory.mo215getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
+        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo214getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x002e, code lost:
@@ -49,7 +49,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
             r3 = 0
             r4 = 1
             if (r2 == 0) goto L_0x001c
-            boolean r2 = oj.l.w(r2)
+            boolean r2 = ki.l.w(r2)
             if (r2 == 0) goto L_0x001a
             goto L_0x001c
         L_0x001a:
@@ -64,7 +64,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
         L_0x0024:
             java.lang.String r2 = r0.getChannelIcon()
             if (r2 == 0) goto L_0x0030
-            boolean r2 = oj.l.w(r2)
+            boolean r2 = ki.l.w(r2)
             if (r2 == 0) goto L_0x0031
         L_0x0030:
             r3 = r4

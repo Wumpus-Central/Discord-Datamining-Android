@@ -1,12 +1,12 @@
 package com.discord.chat.input.bridge;
 
-import kg.n;
-import kg.p;
+import gf.n;
+import gf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
-import vj.f;
+import qi.f;
 
 @f
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0004\b\u0087\u0001\u0018\u0000 \u00042\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u0004B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/input/bridge/ChatInputNodeFontWeight;", "", "(Ljava/lang/String;I)V", "Bold", "Companion", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)

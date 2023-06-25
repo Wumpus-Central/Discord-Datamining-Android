@@ -34,7 +34,7 @@ public final class SamsungConnectActivity extends b {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            a b10 = a.AbstractBinderC0188a.b(iBinder);
+            a c10 = a.AbstractBinderC0181a.c(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
@@ -43,16 +43,16 @@ public final class SamsungConnectActivity extends b {
                     q.y("samsungAccountServiceCallback");
                     iSACallback = null;
                 }
-                String R = b10.R(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + R, (Throwable) null, 4, (Object) null);
-                if (R == null) {
+                String z10 = c10.z(BuildConfig.SAMSUNGxDISCORD_CLIENT_ID, "dummy", BuildConfig.APPLICATION_ID, iSACallback);
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: " + z10, (Throwable) null, 4, (Object) null);
+                if (z10 == null) {
                     SamsungConnectActivity.this.finishedWithRestartRequested();
                     return;
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f22113a;
-                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + b10.U(1221, R, bundle), (Throwable) null, 4, (Object) null);
+                Unit unit = Unit.f20684a;
+                Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + c10.K(1221, z10, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
                 SamsungConnectActivity.this.finishWithResult(null, null);
@@ -302,7 +302,7 @@ public final class SamsungConnectActivity extends b {
                     com.discord.logging.Log.i$default(r2, r3, r4, r5, r6, r7)
                     if (r11 == 0) goto L_0x0041
                     if (r0 == 0) goto L_0x003e
-                    boolean r11 = oj.l.w(r0)
+                    boolean r11 = ki.l.w(r0)
                     if (r11 == 0) goto L_0x003c
                     goto L_0x003e
                 L_0x003c:
@@ -333,7 +333,7 @@ public final class SamsungConnectActivity extends b {
                     r2.append(r3)
                     if (r0 == 0) goto L_0x0066
                     r10 = 4
-                    java.lang.String r10 = oj.l.b1(r0, r10)
+                    java.lang.String r10 = ki.l.b1(r0, r10)
                 L_0x0066:
                     java.lang.StringBuilder r3 = new java.lang.StringBuilder
                     r3.<init>()
@@ -424,7 +424,7 @@ public final class SamsungConnectActivity extends b {
             r0 = 1
             r1 = 0
             if (r7 == 0) goto L_0x0030
-            boolean r2 = oj.l.w(r7)
+            boolean r2 = ki.l.w(r7)
             if (r2 == 0) goto L_0x002e
             goto L_0x0030
         L_0x002e:
@@ -435,7 +435,7 @@ public final class SamsungConnectActivity extends b {
         L_0x0031:
             if (r2 != 0) goto L_0x0056
             if (r8 == 0) goto L_0x003d
-            boolean r2 = oj.l.w(r8)
+            boolean r2 = ki.l.w(r8)
             if (r2 == 0) goto L_0x003c
             goto L_0x003d
         L_0x003c:
@@ -450,7 +450,7 @@ public final class SamsungConnectActivity extends b {
             r0.putExtra(r1, r7)
             java.lang.String r7 = "com.discord.samsung.intent.extra.SERVER_URL"
             r0.putExtra(r7, r8)
-            kotlin.Unit r7 = kotlin.Unit.f22113a
+            kotlin.Unit r7 = kotlin.Unit.f20684a
             r7 = -1
             r6.setResult(r7, r0)
             goto L_0x0059

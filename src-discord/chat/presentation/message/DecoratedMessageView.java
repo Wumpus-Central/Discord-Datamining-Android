@@ -15,7 +15,6 @@ import com.discord.chat.presentation.message.decorations.BackgroundHighlightDraw
 import com.discord.chat.presentation.message.decorations.HighlightedMessageDrawer;
 import com.discord.chat.presentation.message.view.botuikit.ComponentProvider;
 import com.discord.chat.presentation.root.MessageContext;
-import j$.util.Spliterator;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -77,7 +76,7 @@ public final class DecoratedMessageView extends FrameLayout {
         } else {
             z14 = z11;
         }
-        if ((i10 & Spliterator.NONNULL) != 0) {
+        if ((i10 & 256) != 0) {
             z15 = false;
         } else {
             z15 = z12;

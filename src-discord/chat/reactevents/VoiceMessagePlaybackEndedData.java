@@ -13,8 +13,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import vj.f;
-import yj.n1;
+import qi.f;
+import ti.n1;
 
 @f
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 32\u00020\u0001:\u000223BH\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\u000b\u001a\u00020\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\rø\u0001\u0000¢\u0006\u0002\u0010\u000eB0\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u0007ø\u0001\u0000¢\u0006\u0002\u0010\u000fJ\u0019\u0010\u001a\u001a\u00020\u0005HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001b\u0010\u0014J\t\u0010\u001c\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0007HÆ\u0003J\u0019\u0010\u001e\u001a\u00020\nHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001f\u0010\u0017J\t\u0010 \u001a\u00020\u0007HÆ\u0003JH\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\u0007HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\"\u0010#J\u0013\u0010$\u001a\u00020%2\b\u0010&\u001a\u0004\u0018\u00010'HÖ\u0003J\t\u0010(\u001a\u00020\u0003HÖ\u0001J\t\u0010)\u001a\u00020*HÖ\u0001J!\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020\u00002\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u000201HÇ\u0001R\u0011\u0010\u000b\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\b\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0011R\u001c\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014R\u001c\u0010\t\u001a\u00020\nø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0011\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u00064"}, d2 = {"Lcom/discord/chat/reactevents/VoiceMessagePlaybackEndedData;", "Lcom/discord/reactevents/ReactEvent;", "seen1", "", "messageId", "Lcom/discord/primitives/MessageId;", "totalDurationSecs", "", "endDurationSecs", "senderUserId", "Lcom/discord/primitives/UserId;", "durationListeningSecs", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;FFLcom/discord/primitives/UserId;FLkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;FFJFLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getDurationListeningSecs", "()F", "getEndDurationSecs", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getSenderUserId-re6GcUE", "()J", "J", "getTotalDurationSecs", "component1", "component1-3Eiw7ao", "component2", "component3", "component4", "component4-re6GcUE", "component5", "copy", "copy-HuwN0RY", "(Ljava/lang/String;FFJF)Lcom/discord/chat/reactevents/VoiceMessagePlaybackEndedData;", "equals", "", "other", "", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -49,7 +49,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
         this.messageId = str;
         this.totalDurationSecs = f10;
         this.endDurationSecs = f11;
-        this.senderUserId = userId.m636unboximpl();
+        this.senderUserId = userId.m635unboximpl();
         this.durationListeningSecs = f12;
     }
 
@@ -62,7 +62,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     /* renamed from: copy-HuwN0RY$default  reason: not valid java name */
-    public static /* synthetic */ VoiceMessagePlaybackEndedData m425copyHuwN0RY$default(VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData, String str, float f10, float f11, long j10, float f12, int i10, Object obj) {
+    public static /* synthetic */ VoiceMessagePlaybackEndedData m424copyHuwN0RY$default(VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData, String str, float f10, float f11, long j10, float f12, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = voiceMessagePlaybackEndedData.messageId;
         }
@@ -78,22 +78,22 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
         if ((i10 & 16) != 0) {
             f12 = voiceMessagePlaybackEndedData.durationListeningSecs;
         }
-        return voiceMessagePlaybackEndedData.m428copyHuwN0RY(str, f10, f11, j10, f12);
+        return voiceMessagePlaybackEndedData.m427copyHuwN0RY(str, f10, f11, j10, f12);
     }
 
     public static final void write$Self(VoiceMessagePlaybackEndedData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.q(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m589boximpl(self.messageId));
-        output.s(serialDesc, 1, self.totalDurationSecs);
-        output.s(serialDesc, 2, self.endDurationSecs);
-        output.q(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m627boximpl(self.senderUserId));
-        output.s(serialDesc, 4, self.durationListeningSecs);
+        output.C(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m588boximpl(self.messageId));
+        output.m(serialDesc, 1, self.totalDurationSecs);
+        output.m(serialDesc, 2, self.endDurationSecs);
+        output.C(serialDesc, 3, UserId$$serializer.INSTANCE, UserId.m626boximpl(self.senderUserId));
+        output.m(serialDesc, 4, self.durationListeningSecs);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m426component13Eiw7ao() {
+    public final String m425component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -106,7 +106,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     /* renamed from: component4-re6GcUE  reason: not valid java name */
-    public final long m427component4re6GcUE() {
+    public final long m426component4re6GcUE() {
         return this.senderUserId;
     }
 
@@ -115,7 +115,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     /* renamed from: copy-HuwN0RY  reason: not valid java name */
-    public final VoiceMessagePlaybackEndedData m428copyHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
+    public final VoiceMessagePlaybackEndedData m427copyHuwN0RY(String messageId, float f10, float f11, long j10, float f12) {
         q.g(messageId, "messageId");
         return new VoiceMessagePlaybackEndedData(messageId, f10, f11, j10, f12, null);
     }
@@ -128,7 +128,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
             return false;
         }
         VoiceMessagePlaybackEndedData voiceMessagePlaybackEndedData = (VoiceMessagePlaybackEndedData) obj;
-        return MessageId.m593equalsimpl0(this.messageId, voiceMessagePlaybackEndedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackEndedData.totalDurationSecs) == 0 && Float.compare(this.endDurationSecs, voiceMessagePlaybackEndedData.endDurationSecs) == 0 && UserId.m631equalsimpl0(this.senderUserId, voiceMessagePlaybackEndedData.senderUserId) && Float.compare(this.durationListeningSecs, voiceMessagePlaybackEndedData.durationListeningSecs) == 0;
+        return MessageId.m592equalsimpl0(this.messageId, voiceMessagePlaybackEndedData.messageId) && Float.compare(this.totalDurationSecs, voiceMessagePlaybackEndedData.totalDurationSecs) == 0 && Float.compare(this.endDurationSecs, voiceMessagePlaybackEndedData.endDurationSecs) == 0 && UserId.m630equalsimpl0(this.senderUserId, voiceMessagePlaybackEndedData.senderUserId) && Float.compare(this.durationListeningSecs, voiceMessagePlaybackEndedData.durationListeningSecs) == 0;
     }
 
     public final float getDurationListeningSecs() {
@@ -140,12 +140,12 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m429getMessageId3Eiw7ao() {
+    public final String m428getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: getSenderUserId-re6GcUE  reason: not valid java name */
-    public final long m430getSenderUserIdre6GcUE() {
+    public final long m429getSenderUserIdre6GcUE() {
         return this.senderUserId;
     }
 
@@ -154,7 +154,7 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((((MessageId.m594hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.endDurationSecs)) * 31) + UserId.m632hashCodeimpl(this.senderUserId)) * 31) + Float.floatToIntBits(this.durationListeningSecs);
+        return (((((((MessageId.m593hashCodeimpl(this.messageId) * 31) + Float.floatToIntBits(this.totalDurationSecs)) * 31) + Float.floatToIntBits(this.endDurationSecs)) * 31) + UserId.m631hashCodeimpl(this.senderUserId)) * 31) + Float.floatToIntBits(this.durationListeningSecs);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -163,10 +163,10 @@ public final class VoiceMessagePlaybackEndedData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m595toStringimpl(this.messageId);
+        String str = MessageId.m594toStringimpl(this.messageId);
         float f10 = this.totalDurationSecs;
         float f11 = this.endDurationSecs;
-        String str2 = UserId.m634toStringimpl(this.senderUserId);
+        String str2 = UserId.m633toStringimpl(this.senderUserId);
         float f12 = this.durationListeningSecs;
         return "VoiceMessagePlaybackEndedData(messageId=" + str + ", totalDurationSecs=" + f10 + ", endDurationSecs=" + f11 + ", senderUserId=" + str2 + ", durationListeningSecs=" + f12 + ")";
     }

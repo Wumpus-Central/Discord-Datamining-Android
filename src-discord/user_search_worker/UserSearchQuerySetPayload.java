@@ -9,11 +9,11 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import vj.f;
-import yj.a2;
-import yj.n1;
-import yj.r0;
-import yj.x;
+import qi.f;
+import ti.a2;
+import ti.n1;
+import ti.r0;
+import ti.x;
 
 @f
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\u0006\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0081\b\u0018\u0000 22\u00020\u0001:\u000212Bk\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t\u0012\u0014\u0010\u000b\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\r\u0018\u00010\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0002\u0010\u0011BY\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0010\b\u0002\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t\u0012\u0010\b\u0002\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t\u0012\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\r0\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003¢\u0006\u0002\u0010\u0012J\t\u0010\u001e\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\u0011\u0010 \u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\tHÆ\u0003J\u0011\u0010!\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\tHÆ\u0003J\u0015\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\r0\fHÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003Jc\u0010$\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0010\b\u0002\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t2\u0010\b\u0002\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t2\u0014\b\u0002\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\r0\f2\b\b\u0002\u0010\u000e\u001a\u00020\u0003HÆ\u0001J\u0013\u0010%\u001a\u00020&2\b\u0010'\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010(\u001a\u00020\u0003HÖ\u0001J\t\u0010)\u001a\u00020\u0005HÖ\u0001J!\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u00002\u0006\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200HÇ\u0001R\u0019\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u001d\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\r0\f¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0019\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0014¨\u00063"}, d2 = {"Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "", "seen1", "", "query", "", "filters", "Lcom/discord/user_search_worker/UserSearchQuerySetFilters;", "blacklist", "", "whitelist", "boosters", "", "", "limit", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/user_search_worker/UserSearchQuerySetFilters;Ljava/util/List;Ljava/util/List;Ljava/util/Map;ILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Lcom/discord/user_search_worker/UserSearchQuerySetFilters;Ljava/util/List;Ljava/util/List;Ljava/util/Map;I)V", "getBlacklist", "()Ljava/util/List;", "getBoosters", "()Ljava/util/Map;", "getFilters", "()Lcom/discord/user_search_worker/UserSearchQuerySetFilters;", "getLimit", "()I", "getQuery", "()Ljava/lang/String;", "getWhitelist", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "user_search_worker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -96,31 +96,31 @@ public final class UserSearchQuerySetPayload {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z12 = false;
-        output.z(serialDesc, 0, self.query);
-        if (!output.A(serialDesc, 1) && self.filters == null) {
+        output.t(serialDesc, 0, self.query);
+        if (!output.w(serialDesc, 1) && self.filters == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, self.filters);
+            output.e(serialDesc, 1, UserSearchQuerySetFilters$$serializer.INSTANCE, self.filters);
         }
-        if (!output.A(serialDesc, 2) && self.blacklist == null) {
+        if (!output.w(serialDesc, 2) && self.blacklist == null) {
             z11 = false;
         } else {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 2, new yj.f(a2.f32933a), self.blacklist);
+            output.e(serialDesc, 2, new ti.f(a2.f26939a), self.blacklist);
         }
-        if (output.A(serialDesc, 3) || self.whitelist != null) {
+        if (output.w(serialDesc, 3) || self.whitelist != null) {
             z12 = true;
         }
         if (z12) {
-            output.u(serialDesc, 3, new yj.f(a2.f32933a), self.whitelist);
+            output.e(serialDesc, 3, new ti.f(a2.f26939a), self.whitelist);
         }
-        output.q(serialDesc, 4, new r0(a2.f32933a, x.f33054a), self.boosters);
-        output.x(serialDesc, 5, self.limit);
+        output.C(serialDesc, 4, new r0(a2.f26939a, x.f27060a), self.boosters);
+        output.r(serialDesc, 5, self.limit);
     }
 
     public final String component1() {

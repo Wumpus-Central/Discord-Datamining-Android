@@ -42,7 +42,7 @@ public final class MessageFrameSerializer extends d<MessageFrame> {
     @Override // kotlinx.serialization.json.d
     protected DeserializationStrategy<MessageFrame> selectDeserializer(JsonElement element) {
         Integer num;
-        boolean M;
+        boolean K;
         JsonPrimitive n10;
         q.g(element, "element");
         List<Integer> list = knownTypes;
@@ -52,8 +52,8 @@ public final class MessageFrameSerializer extends d<MessageFrame> {
         } else {
             num = Integer.valueOf(g.l(n10));
         }
-        M = r.M(list, num);
-        if (M) {
+        K = r.K(list, num);
+        if (K) {
             return messageFrameClassSerializer;
         }
         return UnknownMessageFrame.Companion.serializer();

@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message.view;
 
 import com.discord.portals.PortalViewContextManager;
-import kg.t;
+import gf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -11,7 +11,7 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import qg.d;
+import mf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.MediaView$onAttachedToWindow$1", f = "MediaView.kt", l = {127}, m = "invokeSuspend")
@@ -33,7 +33,7 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -53,7 +53,7 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
 
                 public final Object emit(PortalViewContextManager.Event event, Continuation<? super Unit> continuation) {
                     MediaView.setMediaData$default(MediaView.this, null, false, false, false, null, false, null, event, false, false, false, 1919, null);
-                    return Unit.f22113a;
+                    return Unit.f20684a;
                 }
             };
             this.label = 1;
@@ -65,6 +65,6 @@ final class MediaView$onAttachedToWindow$1 extends k implements Function2<Corout
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 }

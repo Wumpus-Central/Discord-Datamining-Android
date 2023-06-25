@@ -2,8 +2,8 @@ package com.discord.misc.utilities.threading;
 
 import android.os.Handler;
 import android.os.Looper;
-import kg.n;
-import kg.p;
+import gf.n;
+import gf.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;

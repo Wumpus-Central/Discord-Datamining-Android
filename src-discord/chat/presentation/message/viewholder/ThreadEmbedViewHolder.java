@@ -24,7 +24,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(Function1 onTapThreadEmbed, ThreadEmbedMessageAccessory threadItem, View view) {
         q.g(onTapThreadEmbed, "$onTapThreadEmbed");
         q.g(threadItem, "$threadItem");
-        onTapThreadEmbed.invoke(MessageId.m589boximpl(threadItem.mo215getMessageId3Eiw7ao()));
+        onTapThreadEmbed.invoke(MessageId.m588boximpl(threadItem.mo214getMessageId3Eiw7ao()));
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -87,7 +87,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
             android.content.Context r8 = r4.getContext()
             r12 = r8
             kotlin.jvm.internal.q.f(r8, r9)
-            java.lang.String r13 = r5.m17getId3Eiw7ao()
+            java.lang.String r13 = r5.m16getId3Eiw7ao()
             boolean r14 = com.discord.chat.bridge.MessageKt.shouldAnimateEmoji(r5)
             boolean r15 = r5.getShouldShowRoleDot()
             boolean r16 = r5.getShouldShowRoleOnName()

@@ -1,16 +1,16 @@
 package com.discord.file_downloader;
 
 import android.content.Context;
+import gf.n;
+import hf.v;
 import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
-import kg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.d;
-import lg.v;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -66,7 +66,7 @@ public final class FileDownloader {
             Map.Entry entry = (Map.Entry) it.next();
             builder.a((String) entry.getKey(), (String) entry.getValue());
         }
-        return client.a(builder.l(fileUrl).b()).execute();
+        return client.b(builder.l(fileUrl).b()).execute();
     }
 
     public final Flow<DownloadState> downloadFile(Context context, String fileUrl, String fileName, File downloadDirectory, boolean z10) {

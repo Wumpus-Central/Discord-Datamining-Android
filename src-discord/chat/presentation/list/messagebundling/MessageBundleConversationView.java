@@ -37,7 +37,6 @@ import com.discord.span.utilities.SpannableExtensionsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
-import j$.util.Spliterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.j;
@@ -70,19 +69,18 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        ChatEventHandler.DefaultImpls.m186onTapReactionu7_MRrM$default(eventHandler, message.m17getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m185onTapReactionu7_MRrM$default(eventHandler, message.m16getId3Eiw7ao(), null, null, 4, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configure$lambda$7$lambda$6(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        eventHandler.mo170onTapReactionu7_MRrM(message.m17getId3Eiw7ao(), null, Boolean.TRUE);
+        eventHandler.mo169onTapReactionu7_MRrM(message.m16getId3Eiw7ao(), null, Boolean.TRUE);
     }
 
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
-        boolean z10;
         q.g(messageItem, "messageItem");
         q.g(eventHandler, "eventHandler");
         final Message message = messageItem.getMessage();
@@ -101,7 +99,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             StructurableText content = message.getContent();
             Context context2 = getContext();
             q.f(context2, "context");
-            String str = message.m17getId3Eiw7ao();
+            String str = message.m16getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
             boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
@@ -137,12 +135,12 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
         }
         ReactionsView configure$lambda$7 = this.binding.reactionsView;
         q.f(configure$lambda$7, "configure$lambda$7");
-        String str2 = message.m17getId3Eiw7ao();
+        String str2 = message.m16getId3Eiw7ao();
         List<MessageReaction> reactions = message.getReactions();
         if (reactions == null) {
-            reactions = j.i();
+            reactions = j.h();
         }
-        configure$lambda$7.setReactions(str2, reactions, messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), (r34 & Spliterator.NONNULL) != 0 ? new View.OnClickListener() { // from class: com.discord.reactions.e
+        configure$lambda$7.setReactions(str2, reactions, messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), (r34 & 256) != 0 ? new View.OnClickListener() { // from class: com.discord.reactions.e
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ReactionsView.setReactions$lambda$0(view);
@@ -162,14 +160,9 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             public final void onClick(View view) {
                 MessageBundleConversationView.configure$lambda$7$lambda$6(ChatEventHandler.this, message, view);
             }
-        }, new MessageBundleConversationView$configure$3$3(eventHandler, message), (r34 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? ReactionsView$setReactions$3.INSTANCE : null, (r34 & 4096) != 0 ? null : ThemeManagerKt.getTheme(), (r34 & 8192) != 0 ? false : ChatView.Companion.getAreChatAnimationsEnabled(), messageContext.getUseSortedReactions());
+        }, new MessageBundleConversationView$configure$3$3(eventHandler, message), (r34 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? ReactionsView$setReactions$3.INSTANCE : null, (r34 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : ThemeManagerKt.getTheme(), (r34 & 8192) != 0 ? false : ChatView.Companion.getAreChatAnimationsEnabled(), messageContext.getUseSortedReactions());
         List<MessageReaction> reactions2 = message.getReactions();
-        if (reactions2 == null || reactions2.isEmpty()) {
-            z10 = true;
-        } else {
-            z10 = false;
-        }
-        if (!(!z10)) {
+        if (!(!(reactions2 == null || reactions2.isEmpty()))) {
             i10 = 8;
         }
         configure$lambda$7.setVisibility(i10);

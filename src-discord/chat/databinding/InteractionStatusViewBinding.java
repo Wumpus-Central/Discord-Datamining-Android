@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.discord.chat.R;
 import com.discord.progress_dots.ProgressDots;
 import com.facebook.drawee.view.SimpleDraweeView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class InteractionStatusViewBinding {

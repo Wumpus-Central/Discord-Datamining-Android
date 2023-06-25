@@ -88,11 +88,11 @@ public final class AudioManagerBroadcastReceiver extends BroadcastReceiver {
     }
 
     public final void register(Context context) {
-        List<AudioManagerBroadcastAction> l10;
+        List<AudioManagerBroadcastAction> k10;
         q.g(context, "context");
-        l10 = j.l(AudioManagerBroadcastAction.HeadsetPlug, AudioManagerBroadcastAction.ScoAudioStateUpdated);
+        k10 = j.k(AudioManagerBroadcastAction.HeadsetPlug, AudioManagerBroadcastAction.ScoAudioStateUpdated);
         IntentFilter intentFilter = new IntentFilter();
-        for (AudioManagerBroadcastAction audioManagerBroadcastAction : l10) {
+        for (AudioManagerBroadcastAction audioManagerBroadcastAction : k10) {
             intentFilter.addAction(audioManagerBroadcastAction.getAction());
         }
         context.registerReceiver(this, intentFilter);

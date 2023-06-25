@@ -28,7 +28,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$0(Function4 onTapPostPreviewEmbed, PostPreviewEmbed postPreviewEmbed, View view) {
         q.g(onTapPostPreviewEmbed, "$onTapPostPreviewEmbed");
         q.g(postPreviewEmbed, "$postPreviewEmbed");
-        onTapPostPreviewEmbed.invoke(GuildId.m576boximpl(postPreviewEmbed.m113getGuildIdfYKD8eg()), ChannelId.m563boximpl(postPreviewEmbed.m115getParentChannelIdo4g7jtM()), ChannelId.m563boximpl(postPreviewEmbed.m116getThreadIdo4g7jtM()), MessageId.m589boximpl(postPreviewEmbed.m114getMessageId3Eiw7ao()));
+        onTapPostPreviewEmbed.invoke(GuildId.m575boximpl(postPreviewEmbed.m112getGuildIdfYKD8eg()), ChannelId.m562boximpl(postPreviewEmbed.m114getParentChannelIdo4g7jtM()), ChannelId.m562boximpl(postPreviewEmbed.m115getThreadIdo4g7jtM()), MessageId.m588boximpl(postPreviewEmbed.m113getMessageId3Eiw7ao()));
     }
 
     public final void bind(final PostPreviewEmbed postPreviewEmbed, final Function4<? super GuildId, ? super ChannelId, ? super ChannelId, ? super MessageId, Unit> onTapPostPreviewEmbed, SpoilerConfig spoilerConfig) {
@@ -40,7 +40,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         String ctaText = postPreviewEmbed.getCtaText();
         String coverImage = postPreviewEmbed.getCoverImage();
         String blurredCoverImage = postPreviewEmbed.getBlurredCoverImage();
-        postPreviewEmbedView.m316setPostPreviewEmbed0JD92Ks(title, subtitle, ctaText, postPreviewEmbed.getFooter(), postPreviewEmbed.m114getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.k
+        postPreviewEmbedView.m315setPostPreviewEmbed0JD92Ks(title, subtitle, ctaText, postPreviewEmbed.getFooter(), postPreviewEmbed.m113getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.k
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 PostPreviewEmbedViewHolder.bind$lambda$0(Function4.this, postPreviewEmbed, view);

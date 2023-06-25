@@ -1,8 +1,8 @@
 package com.discord.analytics;
 
 import com.android.installreferrer.api.InstallReferrerClient;
-import kg.s;
-import kg.t;
+import gf.s;
+import gf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -23,19 +23,19 @@ final class InstallReferrerModuleKt$await$2$1 extends s implements Function1<Thr
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Throwable th2) {
         InstallReferrerClient installReferrerClient = this.$this_await;
         try {
-            s.a aVar = kg.s.f21872l;
+            s.a aVar = gf.s.f15494l;
             installReferrerClient.a();
-            kg.s.b(Unit.f22113a);
+            gf.s.b(Unit.f20684a);
         } catch (Throwable th3) {
-            s.a aVar2 = kg.s.f21872l;
-            kg.s.b(t.a(th3));
+            s.a aVar2 = gf.s.f15494l;
+            gf.s.b(t.a(th3));
         }
     }
 }

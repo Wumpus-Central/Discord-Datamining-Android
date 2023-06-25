@@ -26,14 +26,14 @@ public final class ActivityInviteEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$0(Function1 onTapJoinActivity, ActivityInviteEmbedMessageAccessory accessory, View view) {
         q.g(onTapJoinActivity, "$onTapJoinActivity");
         q.g(accessory, "$accessory");
-        onTapJoinActivity.invoke(MessageId.m589boximpl(accessory.mo215getMessageId3Eiw7ao()));
+        onTapJoinActivity.invoke(MessageId.m588boximpl(accessory.mo214getMessageId3Eiw7ao()));
     }
 
     public final void bind(final ActivityInviteEmbedMessageAccessory accessory, final Function1<? super MessageId, Unit> onTapJoinActivity) {
         q.g(accessory, "accessory");
         q.g(onTapJoinActivity, "onTapJoinActivity");
         ActivityInviteEmbed activityInviteEmbed = accessory.getActivityInviteEmbed();
-        this.activityInviteEmbedView.setActivityInviteEmbed(activityInviteEmbed.getCoverImage(), activityInviteEmbed.isListening(), activityInviteEmbed.getHeaderText(), activityInviteEmbed.getPartyStatus(), activityInviteEmbed.getAvatarsToRender(), activityInviteEmbed.getMaxPartySize(), activityInviteEmbed.getName(), activityInviteEmbed.getSubtext(), activityInviteEmbed.getJoinable(), activityInviteEmbed.getCtaText(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.a
+        this.activityInviteEmbedView.setActivityInviteEmbed(activityInviteEmbed.getCoverImage(), activityInviteEmbed.isListening(), activityInviteEmbed.getHeaderText(), activityInviteEmbed.getPartyStatus(), activityInviteEmbed.getAvatarsToRender(), activityInviteEmbed.getMaxPartySize(), activityInviteEmbed.getName(), activityInviteEmbed.getSubtext(), activityInviteEmbed.getJoinable(), activityInviteEmbed.getCtaText(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.b
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ActivityInviteEmbedViewHolder.bind$lambda$0(Function1.this, accessory, view);

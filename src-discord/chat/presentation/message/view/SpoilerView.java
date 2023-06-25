@@ -8,9 +8,9 @@ import android.view.ViewParent;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.transition.Transition;
-import androidx.transition.a0;
-import androidx.transition.h;
-import androidx.transition.z;
+import androidx.transition.c;
+import androidx.transition.i;
+import androidx.transition.j;
 import com.discord.chat.R;
 import com.discord.chat.bridge.spoiler.SpoilerConfig;
 import com.discord.fonts.DiscordFont;
@@ -53,10 +53,10 @@ public final class SpoilerView extends FrameLayout {
             viewParent = this$0;
         }
         q.e(viewParent, "null cannot be cast to non-null type android.view.ViewGroup");
-        h hVar = new h(2);
-        hVar.setDuration(150L);
-        hVar.addListener(new z() { // from class: com.discord.chat.presentation.message.view.SpoilerView$1$transition$1$1
-            @Override // androidx.transition.z, androidx.transition.Transition.g
+        c cVar = new c(2);
+        cVar.X(150L);
+        cVar.b(new i() { // from class: com.discord.chat.presentation.message.view.SpoilerView$1$transition$1$1
+            @Override // androidx.transition.i, androidx.transition.Transition.f
             public void onTransitionEnd(Transition transition) {
                 Function0 function0;
                 q.g(transition, "transition");
@@ -64,7 +64,7 @@ public final class SpoilerView extends FrameLayout {
                 function0.invoke();
             }
         });
-        a0.a((ViewGroup) viewParent, hVar);
+        j.a((ViewGroup) viewParent, cVar);
         q.f(it, "it");
         it.setVisibility(8);
     }

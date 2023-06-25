@@ -31,14 +31,14 @@ import kotlin.jvm.internal.q;
 /* loaded from: classes8.dex */
 public final class ChatListAdapterConfiguratorKt {
     public static final Map<Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ? extends View>>, Integer> chatListAdapterConfigurator(AdapterDelegatesManager<List<ChatListItem>> delegatesManager, Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider, RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool) {
-        List<BaseChatListItemDelegate> l10;
+        List<BaseChatListItemDelegate> k10;
         q.g(delegatesManager, "delegatesManager");
         q.g(eventHandlerProvider, "eventHandlerProvider");
         q.g(messageComponentProvider, "messageComponentProvider");
         q.g(messageAccessoriesRecycledViewPool, "messageAccessoriesRecycledViewPool");
         HashMap hashMap = new HashMap();
-        l10 = j.l(new RegularMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new SystemMessageDelegate(eventHandlerProvider, messageAccessoriesRecycledViewPool), new AutomodSystemMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new CallSystemMessageDelegate(eventHandlerProvider), new EmbeddedActivityMessageDelegate(eventHandlerProvider), new SeparatorDelegate(eventHandlerProvider), new SummarySeparatorDelegate(eventHandlerProvider), new LoadingDelegate(eventHandlerProvider), new BlockedGroupDelegate(eventHandlerProvider, messageComponentProvider), new PortalViewDelegate(eventHandlerProvider), new DeserializationErrorMessageDelegate(eventHandlerProvider), new DeserializationErrorDelegate(eventHandlerProvider));
-        for (BaseChatListItemDelegate baseChatListItemDelegate : l10) {
+        k10 = j.k(new RegularMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new SystemMessageDelegate(eventHandlerProvider, messageAccessoriesRecycledViewPool), new AutomodSystemMessageDelegate(eventHandlerProvider, messageComponentProvider, messageAccessoriesRecycledViewPool), new CallSystemMessageDelegate(eventHandlerProvider), new EmbeddedActivityMessageDelegate(eventHandlerProvider), new SeparatorDelegate(eventHandlerProvider), new SummarySeparatorDelegate(eventHandlerProvider), new LoadingDelegate(eventHandlerProvider), new BlockedGroupDelegate(eventHandlerProvider, messageComponentProvider), new PortalViewDelegate(eventHandlerProvider), new DeserializationErrorMessageDelegate(eventHandlerProvider), new DeserializationErrorDelegate(eventHandlerProvider));
+        for (BaseChatListItemDelegate baseChatListItemDelegate : k10) {
             delegatesManager.c(baseChatListItemDelegate);
             hashMap.put(baseChatListItemDelegate.getClass(), Integer.valueOf(delegatesManager.f(baseChatListItemDelegate)));
         }

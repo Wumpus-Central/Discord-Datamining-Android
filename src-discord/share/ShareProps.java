@@ -9,9 +9,9 @@ import android.os.Bundle;
 import androidx.core.os.d;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.share.intent.GetFileNameKt;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.j;
@@ -125,17 +125,17 @@ public final class ShareProps {
         }
 
         private final List<Uri> getUriExtras(Intent intent) {
-            List<Uri> m10;
+            List<Uri> l10;
             ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("android.intent.extra.STREAM");
             if (parcelableArrayListExtra != null) {
                 return parcelableArrayListExtra;
             }
-            m10 = j.m(intent.getParcelableExtra("android.intent.extra.STREAM"));
-            return m10;
+            l10 = j.l(intent.getParcelableExtra("android.intent.extra.STREAM"));
+            return l10;
         }
 
         public final ShareProps createShareProps(Intent intent, Context context) {
-            int t10;
+            int s10;
             String str;
             q.g(intent, "<this>");
             q.g(context, "context");
@@ -144,8 +144,8 @@ public final class ShareProps {
                 stringExtra = "";
             }
             List<Uri> uriExtras = getUriExtras(intent);
-            t10 = k.t(uriExtras, 10);
-            ArrayList arrayList = new ArrayList(t10);
+            s10 = k.s(uriExtras, 10);
+            ArrayList arrayList = new ArrayList(s10);
             for (Uri uri : uriExtras) {
                 ContentResolver contentResolver = context.getContentResolver();
                 q.f(contentResolver, "context.contentResolver");
@@ -233,12 +233,12 @@ public final class ShareProps {
     }
 
     public final Bundle toBundle() {
-        int t10;
+        int s10;
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("text", this.text);
         List<Attachment> list = this.attachments;
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (Attachment attachment : list) {
             arrayList.add(attachment.toBundle());
         }

@@ -13,7 +13,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     private final List<ChatListItem> content;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7666id;
+    private final String f7336id;
     private final boolean isRevealed;
     private final String text;
     private final int textColor;
@@ -26,7 +26,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
         q.g(id2, "id");
         q.g(content, "content");
         this.text = text;
-        this.f7666id = id2;
+        this.f7336id = id2;
         this.textColor = i10;
         this.backgroundColor = i11;
         this.borderColor = i12;
@@ -120,7 +120,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
 
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     public String getId() {
-        return this.f7666id;
+        return this.f7336id;
     }
 
     public final String getText() {

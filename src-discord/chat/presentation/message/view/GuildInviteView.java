@@ -65,7 +65,7 @@ public final class GuildInviteView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = oj.l.w(r5)
+            boolean r3 = ki.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -102,7 +102,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteHeader.setTextColor(num.intValue());
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     public final void setHeaderText(CharSequence charSequence) {
@@ -170,7 +170,7 @@ public final class GuildInviteView extends ConstraintLayout {
             r2 = 1
             r3 = 0
             if (r9 == 0) goto L_0x0016
-            boolean r4 = oj.l.w(r9)
+            boolean r4 = ki.l.w(r9)
             if (r4 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -204,7 +204,7 @@ public final class GuildInviteView extends ConstraintLayout {
             java.lang.String r1 = "binding.itemInviteTotalMemberDot"
             kotlin.jvm.internal.q.f(r0, r1)
             if (r10 == 0) goto L_0x004f
-            boolean r7 = oj.l.w(r10)
+            boolean r7 = ki.l.w(r10)
             if (r7 == 0) goto L_0x004d
             goto L_0x004f
         L_0x004d:
@@ -235,7 +235,7 @@ public final class GuildInviteView extends ConstraintLayout {
             java.lang.String r1 = "binding.itemInviteMemberContainer"
             kotlin.jvm.internal.q.f(r0, r1)
             if (r9 == 0) goto L_0x0084
-            boolean r9 = oj.l.w(r9)
+            boolean r9 = ki.l.w(r9)
             if (r9 == 0) goto L_0x0082
             goto L_0x0084
         L_0x0082:
@@ -246,7 +246,7 @@ public final class GuildInviteView extends ConstraintLayout {
         L_0x0085:
             if (r9 == 0) goto L_0x0097
             if (r10 == 0) goto L_0x0092
-            boolean r9 = oj.l.w(r10)
+            boolean r9 = ki.l.w(r10)
             if (r9 == 0) goto L_0x0090
             goto L_0x0092
         L_0x0090:
@@ -297,7 +297,7 @@ public final class GuildInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.itemInviteTitle.setTextColor(num.intValue());
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     public final void setTitleText(CharSequence charSequence) {

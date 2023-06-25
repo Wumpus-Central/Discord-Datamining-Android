@@ -25,18 +25,18 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.facebook.imagepipeline.request.Postprocessor;
 import com.facebook.react.uimanager.ViewProps;
-import h4.f;
+import f3.f;
+import gf.n;
+import gf.p;
 import java.util.ArrayList;
 import java.util.List;
-import kg.n;
-import kg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.j;
 import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import o4.c;
+import m3.c;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u000e\u0018\u00002\u00020\u0001:\u00018B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\"\u0010\u0011\u001a\u00020\u00122\b\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0016H\u0002J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0012H\u0002Jn\u0010\u001b\u001a\u00020\u00192\b\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u001c\u001a\u00020\u00162\u0006\u0010\u001d\u001a\u00020\u00142\u0006\u0010\u001e\u001a\u00020\u00142\u0010\u0010\u001f\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0014\u0018\u00010 2\u0006\u0010!\u001a\u00020\u00072\b\u0010\"\u001a\u0004\u0018\u00010\u00142\b\u0010#\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010$\u001a\u00020\u00142\u0006\u0010%\u001a\u00020&J\u001a\u0010'\u001a\u00020\u00192\u0010\u0010(\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0014\u0018\u00010 H\u0002J\u001c\u0010)\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+2\b\b\u0001\u0010,\u001a\u00020\u0007H\u0002J\u0012\u0010-\u001a\u00020\u00192\b\u0010.\u001a\u0004\u0018\u00010\u0014H\u0002J\u0010\u0010/\u001a\u00020\u00192\u0006\u00100\u001a\u00020\u0016H\u0016J \u00101\u001a\u00020\u00192\u0006\u00102\u001a\u00020\u00142\u0006\u00103\u001a\u00020\u00162\u0006\u00104\u001a\u00020\u0016H\u0002J\u0012\u00105\u001a\u00020\u00192\b\u0010\u001d\u001a\u0004\u0018\u00010+H\u0002J\u0012\u00106\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+H\u0002J\u0012\u00107\u001a\u00020\u00192\b\u0010*\u001a\u0004\u0018\u00010+H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u000b\u001a\u00020\f8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\r\u0010\u000e¨\u00069"}, d2 = {"Lcom/discord/activity_invites/ActivityInviteEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/activity_invites/databinding/ActivityInviteEmbedViewBinding;", "grayscalePostprocessor", "Lcom/facebook/imagepipeline/request/Postprocessor;", "getGrayscalePostprocessor", "()Lcom/facebook/imagepipeline/request/Postprocessor;", "grayscalePostprocessor$delegate", "Lkotlin/Lazy;", "buildImageConfig", "Lcom/discord/activity_invites/ActivityInviteEmbedView$ImageConfig;", "imageUri", "", "listening", "", "joinable", "configureImage", "", "imageConfig", "setActivityInviteEmbed", "isListening", "headerText", "partyStatus", "avatarsToRender", "", "maxPartySize", ZeroconfModule.KEY_SERVICE_NAME, "subtext", "ctaText", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "setAvatars", "avatars", "setBottomEndLabel", "text", "", ViewProps.COLOR, "setButtonText", "buttonText", "setEnabled", ViewProps.ENABLED, "setEndImage", "uri", "fullSize", "grayscale", "setHeaderText", "setHeroText", "setSubtext", "ImageConfig", "activity_invites_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
@@ -294,9 +294,9 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
 
     private final void setAvatars(List<String> list) {
         int i10;
-        int t10;
+        int s10;
         if (list == null) {
-            list = j.i();
+            list = j.h();
         }
         OverlappingCirclesView overlappingCirclesView = this.binding.avatars;
         q.f(overlappingCirclesView, "binding.avatars");
@@ -307,8 +307,8 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
         }
         overlappingCirclesView.setVisibility(i10);
         OverlappingCirclesView overlappingCirclesView2 = this.binding.avatars;
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (String str : list) {
             arrayList.add(new OverlappingItem(str));
         }

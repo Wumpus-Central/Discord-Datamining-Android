@@ -8,7 +8,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class AttachmentUploadOverlayViewBinding {

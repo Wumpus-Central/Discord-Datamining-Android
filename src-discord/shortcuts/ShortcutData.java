@@ -48,7 +48,7 @@ public final class ShortcutData {
                     c10.add(value);
                 }
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
             a10 = i.a(c10);
             Intent putExtra2 = putExtra.putExtra(ShortcutData.KEY_DATA, (String[]) a10.toArray(new String[0]));
             q.f(putExtra2, "Intent(action, null, con…rray(),\n                )");
@@ -56,7 +56,7 @@ public final class ShortcutData {
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0029, code lost:
-            r6 = nj.o.m(r6, 2);
+            r6 = ji.o.m(r6, 2);
          */
         /* JADX WARN: Code restructure failed: missing block: B:9:0x0023, code lost:
             r6 = kotlin.collections.f.u(r6);
@@ -78,14 +78,14 @@ public final class ShortcutData {
                 if (r0 != 0) goto L_0x0017
                 java.lang.String r0 = ""
             L_0x0017:
-                java.util.Map r1 = lg.s.c()
+                java.util.Map r1 = hf.s.c()
                 java.lang.String r2 = "discord_shortcut_data"
                 java.lang.String[] r6 = r6.getStringArrayExtra(r2)
                 if (r6 == 0) goto L_0x005c
                 kotlin.sequences.Sequence r6 = kotlin.collections.b.u(r6)
                 if (r6 == 0) goto L_0x005c
                 r2 = 2
-                kotlin.sequences.Sequence r6 = nj.j.m(r6, r2)
+                kotlin.sequences.Sequence r6 = ji.j.m(r6, r2)
                 if (r6 == 0) goto L_0x005c
                 java.util.Iterator r6 = r6.iterator()
             L_0x0034:
@@ -106,7 +106,7 @@ public final class ShortcutData {
                 r1.put(r3, r2)
                 goto L_0x0034
             L_0x005c:
-                java.util.Map r6 = lg.s.b(r1)
+                java.util.Map r6 = hf.s.b(r1)
                 com.discord.shortcuts.ShortcutData r1 = new com.discord.shortcuts.ShortcutData
                 r1.<init>(r0, r6)
                 goto L_0x0067

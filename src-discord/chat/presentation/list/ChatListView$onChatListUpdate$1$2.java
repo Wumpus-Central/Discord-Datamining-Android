@@ -37,7 +37,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2() {
         ChatScrollStateObserver chatScrollStateObserver;
-        Object X;
+        Object V;
         Scroller.TargetAlignment targetAlignment;
         ChatScrollStateObserver chatScrollStateObserver2;
         if (!(this.$update.getAction() instanceof ChatListAction.Clear)) {
@@ -46,8 +46,8 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
         }
         ChatListAction action = this.$update.getAction();
         if (action instanceof ChatListAction.ScrollTo) {
-            X = r.X(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
-            ChatListItem chatListItem = (ChatListItem) X;
+            V = r.V(this.$update.getItems(), ((ChatListAction.ScrollTo) this.$update.getAction()).getPosition());
+            ChatListItem chatListItem = (ChatListItem) V;
             if (chatListItem instanceof SeparatorChatListItem) {
                 targetAlignment = new Scroller.TargetAlignment.Top(SizeUtilsKt.getDpToPx(4));
             } else if (!(chatListItem instanceof SummarySeparatorChatListItem)) {
@@ -59,7 +59,7 @@ public final class ChatListView$onChatListUpdate$1$2 extends s implements Functi
             }
             this.this$0.scrollToPosition(((ChatListAction.ScrollTo) this.$update.getAction()).getPosition(), targetAlignment, ((ChatListAction.ScrollTo) this.$update.getAction()).getAnimated(), ((ChatListAction.ScrollTo) this.$update.getAction()).isHighlight());
         } else if (action instanceof ChatListAction.StickToBottomIfAtBottom) {
-            if (!this.$wasAtBottom.f22138k) {
+            if (!this.$wasAtBottom.f20709k) {
                 return;
             }
             if (ChatView.Companion.getAreChatAnimationsEnabled()) {

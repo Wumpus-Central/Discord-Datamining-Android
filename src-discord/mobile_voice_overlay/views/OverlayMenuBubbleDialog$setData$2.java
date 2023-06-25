@@ -6,7 +6,7 @@ import androidx.core.os.d;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayAssets;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlayData;
-import kg.x;
+import gf.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -33,7 +33,7 @@ final class OverlayMenuBubbleDialog$setData$2 extends s implements Function0<Uni
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.this$0.getContext();
         q.f(context, "context");
-        companion.startHeadlessTask(context, "GenerateInvite", d.a(x.a("channelId", String.valueOf(this.$data.m472getChannelIdo4g7jtM()))));
+        companion.startHeadlessTask(context, "GenerateInvite", d.a(x.a("channelId", String.valueOf(this.$data.m471getChannelIdo4g7jtM()))));
         MobileVoiceOverlayAssets overlayAssets = this.this$0.getOverlayAssets();
         if (overlayAssets != null) {
             Toast.makeText(this.this$0.getContext(), overlayAssets.getInviteLinkCopied(), 0).show();

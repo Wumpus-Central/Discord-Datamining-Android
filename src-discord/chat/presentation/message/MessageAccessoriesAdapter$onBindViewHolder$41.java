@@ -20,13 +20,13 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$41 exten
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, ChannelId channelId) {
-        m202invokepfaIj0E(messageId.m597unboximpl(), channelId.m572unboximpl());
-        return Unit.f22113a;
+        m201invokepfaIj0E(messageId.m596unboximpl(), channelId.m571unboximpl());
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke-pfaIj0E  reason: not valid java name */
-    public final void m202invokepfaIj0E(String p02, long j10) {
+    public final void m201invokepfaIj0E(String p02, long j10) {
         q.g(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo157onTapAutoModerationActionspfaIj0E(p02, j10);
+        ((ChatEventHandler) this.receiver).mo156onTapAutoModerationActionspfaIj0E(p02, j10);
     }
 }

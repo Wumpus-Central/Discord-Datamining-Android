@@ -46,7 +46,7 @@ public final class MessageComponentsView extends ConstraintLayout {
             kotlin.jvm.internal.q.g(r10, r0)
             java.util.ArrayList r0 = new java.util.ArrayList
             r1 = 10
-            int r1 = kotlin.collections.h.t(r9, r1)
+            int r1 = kotlin.collections.h.s(r9, r1)
             r0.<init>(r1)
             java.util.Iterator r9 = r9.iterator()
             r1 = 0
@@ -57,7 +57,7 @@ public final class MessageComponentsView extends ConstraintLayout {
             java.lang.Object r2 = r9.next()
             int r4 = r1 + 1
             if (r1 >= 0) goto L_0x002d
-            kotlin.collections.h.s()
+            kotlin.collections.h.r()
         L_0x002d:
             com.discord.chat.bridge.botuikit.Component r2 = (com.discord.chat.bridge.botuikit.Component) r2
             r5 = 0
@@ -97,7 +97,7 @@ public final class MessageComponentsView extends ConstraintLayout {
             com.discord.chat.databinding.MessageComponentsViewBinding r8 = r7.binding
             android.widget.LinearLayout r8 = r8.itemComponentsRoot
             kotlin.jvm.internal.q.f(r8, r3)
-            java.util.List r9 = kotlin.collections.h.R(r0)
+            java.util.List r9 = kotlin.collections.h.P(r0)
             com.discord.chat.presentation.message.view.botuikit.MessageComponentsViewKt.replaceViews(r8, r9)
             return
         */

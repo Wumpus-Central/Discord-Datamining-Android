@@ -4,10 +4,10 @@ import android.content.res.AssetManager;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import ki.d;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
-import oj.d;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -26,7 +26,7 @@ public final class BundleUpdaterUtilsKt {
         q.g(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.f(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f26400b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f20634b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
@@ -34,7 +34,7 @@ public final class BundleUpdaterUtilsKt {
         }
         try {
             th = null;
-            return new JSONObject(ug.q.e(bufferedReader));
+            return new JSONObject(qf.q.e(bufferedReader));
         } finally {
             try {
                 throw th;

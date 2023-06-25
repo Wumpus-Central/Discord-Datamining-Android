@@ -42,7 +42,7 @@ public final class DCDModuleProvider {
             @Override // com.facebook.react.ReactPackage
             public List<ReactContextBaseJavaModule> createNativeModules(ReactApplicationContext reactContext) {
                 ReactContextBaseJavaModule reactContextBaseJavaModule;
-                List<ReactContextBaseJavaModule> m10;
+                List<ReactContextBaseJavaModule> l10;
                 q.g(reactContext, "reactContext");
                 Function1<ReactApplicationContext, ReactContextBaseJavaModule> function13 = function1;
                 if (function13 != null) {
@@ -50,14 +50,14 @@ public final class DCDModuleProvider {
                 } else {
                     reactContextBaseJavaModule = null;
                 }
-                m10 = j.m(reactContextBaseJavaModule);
-                return m10;
+                l10 = j.l(reactContextBaseJavaModule);
+                return l10;
             }
 
             @Override // com.facebook.react.ReactPackage
             public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
                 ViewManager<?, LayoutShadowNode> viewManager;
-                List<ViewManager<?, LayoutShadowNode>> m10;
+                List<ViewManager<?, LayoutShadowNode>> l10;
                 q.g(reactContext, "reactContext");
                 Function1<ReactApplicationContext, ViewManager<?, LayoutShadowNode>> function13 = function12;
                 if (function13 != null) {
@@ -65,8 +65,8 @@ public final class DCDModuleProvider {
                 } else {
                     viewManager = null;
                 }
-                m10 = j.m(viewManager);
-                return m10;
+                l10 = j.l(viewManager);
+                return l10;
             }
         };
     }

@@ -21,17 +21,17 @@ import com.google.android.exoplayer2.source.MediaLoadData;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
 import com.google.android.exoplayer2.upstream.DataSource;
-import j7.d;
-import j7.o;
+import h6.d;
+import h6.o;
+import i6.d1;
 import java.io.IOException;
 import java.util.List;
-import k7.d1;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import n8.i0;
+import l7.i0;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 52\u00020\u0001:\u0003567B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0019\u001a\u00020\u0016H\u0007J\u0006\u0010\u001a\u001a\u00020\u001bJ\b\u0010\u001c\u001a\u00020\u0016H\u0007J\u0006\u0010\u001d\u001a\u00020\u001bJ\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u001fJ\u0006\u0010!\u001a\u00020\u001fJ\u0006\u0010\"\u001a\u00020\u001fJ\b\u0010#\u001a\u00020\nH\u0007J\b\u0010$\u001a\u00020\nH\u0007JF\u0010%\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010&\u001a\u00020\u001f2\b\b\u0002\u0010'\u001a\u00020\u001f2\b\b\u0002\u0010(\u001a\u00020\u001b2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*2\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,H\u0007J\b\u0010-\u001a\u00020\nH\u0007J\u000e\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\u001bJ\u0010\u00100\u001a\u00020\n2\u0006\u00101\u001a\u00020\tH\u0002J\u0010\u00102\u001a\u00020\n2\u0006\u00103\u001a\u00020\u0016H\u0007J\u0006\u00104\u001a\u00020\u001fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R&\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000e¨\u00068"}, d2 = {"Lcom/discord/media_player/MediaPlayer;", "", "exoPlayer", "Lcom/google/android/exoplayer2/SimpleExoPlayer;", "dataSourceFactory", "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;", "(Lcom/google/android/exoplayer2/SimpleExoPlayer;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V", "eventListener", "Lkotlin/Function1;", "Lcom/discord/media_player/MediaPlayer$Event;", "", "getEventListener", "()Lkotlin/jvm/functions/Function1;", "setEventListener", "(Lkotlin/jvm/functions/Function1;)V", "mediaSource", "Lcom/discord/media_player/MediaSource;", "getMediaSource", "()Lcom/discord/media_player/MediaSource;", "setMediaSource", "(Lcom/discord/media_player/MediaSource;)V", "volumeListener", "", "getVolumeListener", "setVolumeListener", "bufferedPercentage", "currentPositionMs", "", "currentPositionPercentage", "durationMs", "hasEnded", "", "hasError", "isMuted", "isPlaying", "pause", "play", "preparePlayer", "autoPlayWhenReady", "loopMedia", "initialSeekPositionMs", "playerView", "Lcom/discord/media_player/MediaPlayerView;", "playerControlView", "Lcom/discord/media_player/MediaPlayerView$ControlView;", "reset", "seekTo", "positionMs", "setEvent", "event", "setVolume", "volume", "shouldPlay", "Companion", "Event", "Factory", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -192,7 +192,7 @@ public final class MediaPlayer {
         q.g(dataSourceFactory, "dataSourceFactory");
         this.exoPlayer = exoPlayer;
         this.dataSourceFactory = dataSourceFactory;
-        exoPlayer.H(new Player.a() { // from class: com.discord.media_player.MediaPlayer.1
+        exoPlayer.q(new Player.a() { // from class: com.discord.media_player.MediaPlayer.1
             @Override // com.google.android.exoplayer2.Player.a
             public /* bridge */ /* synthetic */ void onEvents(Player player, Player.Events events) {
                 o.a(this, player, events);
@@ -218,7 +218,7 @@ public final class MediaPlayer {
                 o.e(this, z10);
                 if (z10) {
                     MediaPlayer.this.setEvent(Event.StartedPlaying.INSTANCE);
-                } else if (MediaPlayer.this.exoPlayer.O() != 4) {
+                } else if (MediaPlayer.this.exoPlayer.E() != 4) {
                     MediaPlayer.this.setEvent(Event.Paused.INSTANCE);
                 }
             }
@@ -471,9 +471,9 @@ public final class MediaPlayer {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9890d.isEmpty()) {
+                if (!loadEventInfo.f9560d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9893g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9563g);
                 }
             }
 
@@ -482,9 +482,9 @@ public final class MediaPlayer {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9890d.isEmpty()) {
+                if (!loadEventInfo.f9560d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9893g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9563g);
                 }
             }
 
@@ -494,9 +494,9 @@ public final class MediaPlayer {
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
                 q.g(error, "error");
-                if (!loadEventInfo.f9890d.isEmpty()) {
+                if (!loadEventInfo.f9560d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9893g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9563g);
                 }
             }
 
@@ -691,7 +691,7 @@ public final class MediaPlayer {
     }
 
     public final long currentPositionMs() {
-        return this.exoPlayer.Y();
+        return this.exoPlayer.X();
     }
 
     public final float currentPositionPercentage() {
@@ -715,11 +715,11 @@ public final class MediaPlayer {
     }
 
     public final boolean hasEnded() {
-        return this.exoPlayer.O() == 4;
+        return this.exoPlayer.E() == 4;
     }
 
     public final boolean hasError() {
-        return this.exoPlayer.o() != null;
+        return this.exoPlayer.x() != null;
     }
 
     public final boolean isMuted() {
@@ -727,15 +727,15 @@ public final class MediaPlayer {
     }
 
     public final boolean isPlaying() {
-        return this.exoPlayer.P();
+        return this.exoPlayer.G();
     }
 
     public final void pause() {
-        this.exoPlayer.p(false);
+        this.exoPlayer.y(false);
     }
 
     public final void play() {
-        this.exoPlayer.p(true);
+        this.exoPlayer.y(true);
     }
 
     public final void preparePlayer(MediaSource mediaSource, boolean z10, boolean z11, long j10, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView) {
@@ -750,8 +750,8 @@ public final class MediaPlayer {
         SimpleExoPlayer simpleExoPlayer = this.exoPlayer;
         simpleExoPlayer.X0(c10);
         simpleExoPlayer.c0(j10);
-        simpleExoPlayer.Q(z11 ? 1 : 0);
-        simpleExoPlayer.c();
+        simpleExoPlayer.J(z11 ? 1 : 0);
+        simpleExoPlayer.d();
         if (mediaPlayerView != null) {
             mediaPlayerView.setPlayer$media_player_release(this.exoPlayer);
         }
@@ -765,7 +765,7 @@ public final class MediaPlayer {
 
     public final void reset() {
         seekTo(0L);
-        this.exoPlayer.p(false);
+        this.exoPlayer.y(false);
     }
 
     public final void seekTo(long j10) {
@@ -792,6 +792,6 @@ public final class MediaPlayer {
     }
 
     public final boolean shouldPlay() {
-        return this.exoPlayer.D();
+        return this.exoPlayer.i();
     }
 }

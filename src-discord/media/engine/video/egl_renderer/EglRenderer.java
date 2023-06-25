@@ -7,11 +7,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.view.Surface;
-import bh.j;
 import co.discord.media_engine.SharedEglBaseContext;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.media.engine.types.Debug;
-import j$.util.Spliterator;
 import java.text.DecimalFormat;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -30,6 +28,7 @@ import org.webrtc.ThreadUtils;
 import org.webrtc.VideoFrame;
 import org.webrtc.VideoFrameDrawer;
 import org.webrtc.VideoSink;
+import xf.j;
 
 @Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0003\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\f\b\u0010\u0018\u0000 O2\u00020\u0001:\u0002OPB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200J\u000e\u0010-\u001a\u00020.2\u0006\u00101\u001a\u000202J\u0010\u00103\u001a\u00020.2\u0006\u00101\u001a\u00020\u0010H\u0002J\u0006\u00104\u001a\u00020.J\u0006\u00105\u001a\u00020.J\u0010\u00106\u001a\u00020.2\u0006\u00107\u001a\u00020\u0003H\u0002J\u0018\u00108\u001a\u00020.2\u0006\u00107\u001a\u00020\u00032\u0006\u00109\u001a\u00020:H\u0002J\b\u0010;\u001a\u00020.H\u0002J\b\u0010<\u001a\u00020\u001dH\u0002J\u0010\u0010=\u001a\u00020.2\u0006\u0010>\u001a\u00020&H\u0016J\u0006\u0010?\u001a\u00020.J\u0010\u0010@\u001a\u00020.2\u0006\u0010A\u001a\u00020\u001dH\u0002J\u0006\u0010B\u001a\u00020.J\u0014\u0010C\u001a\u00020.2\f\u0010D\u001a\b\u0012\u0004\u0012\u00020.0EJ\b\u0010F\u001a\u00020.H\u0002J\u0012\u0010G\u001a\u00020.2\b\b\u0002\u0010H\u001a\u00020\u001fH\u0002J\u0010\u0010I\u001a\u00020.2\b\u0010\r\u001a\u0004\u0018\u00010\u000eJ\u000e\u0010J\u001a\u00020.2\u0006\u0010K\u001a\u00020\u001aJ\u000e\u0010L\u001a\u00020.2\u0006\u0010\u0019\u001a\u00020\u001aJ\u000e\u0010M\u001a\u00020.2\u0006\u0010N\u001a\u00020!R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000b\u001a\u00060\fR\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u000e\u0010$\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010(\u001a\u0004\u0018\u00010)X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006Q"}, d2 = {"Lcom/discord/media/engine/video/egl_renderer/EglRenderer;", "Lorg/webrtc/VideoSink;", ZeroconfModule.KEY_SERVICE_NAME, "", "(Ljava/lang/String;)V", "drawMatrix", "Landroid/graphics/Matrix;", "drawer", "Lorg/webrtc/RendererCommon$GlDrawer;", "eglBase", "Lorg/webrtc/EglBase;", "eglSurfaceCreationRunnable", "Lcom/discord/media/engine/video/egl_renderer/EglRenderer$EglSurfaceCreation;", "errorCallback", "Lcom/discord/media/engine/video/egl_renderer/ErrorCallback;", "fpsReductionLock", "", "frameDrawer", "Lorg/webrtc/VideoFrameDrawer;", "frameLock", "framesDropped", "", "framesReceived", "framesRendered", "handlerLock", "layoutAspectRatio", "", "layoutLock", "logStatisticsRunnable", "Ljava/lang/Runnable;", "minRenderPeriodNs", "", "mirrorHorizontally", "", "getName", "()Ljava/lang/String;", "nextFrameTimeNs", "pendingFrame", "Lorg/webrtc/VideoFrame;", "renderSwapBufferTimeNs", "renderThreadHandler", "Landroid/os/Handler;", "renderTimeNs", "statisticsLock", "statisticsStartTimeNs", "createEglSurface", "", "surfaceTexture", "Landroid/graphics/SurfaceTexture;", "surface", "Landroid/view/Surface;", "createEglSurfaceInternal", "disableFpsReduction", "init", "logD", "string", "logE", "e", "", "logStatistics", "logStatisticsTask", "onFrame", "frame", "pauseVideo", "postToRenderThread", "runnable", "release", "releaseEglSurface", "completionCallback", "Lkotlin/Function0;", "renderFrameOnRenderThread", "resetStatistics", "currentTimeNs", "setErrorCallback", "setFpsReduction", "fps", "setLayoutAspectRatio", "setMirror", "mirror", "Companion", "EglSurfaceCreation", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -169,7 +168,7 @@ public class EglRenderer implements VideoSink {
                 String averageTimeAsString2 = companion.averageTimeAsString(this.renderSwapBufferTimeNs, this.framesRendered);
                 logD("[logStatistics] Duration: " + millis + " ms. Frames received: " + i10 + ". Dropped: " + i11 + ". Rendered: " + i12 + ". Render fps: " + format + ". Average render time: " + averageTimeAsString + ". Average swapBuffer time: " + averageTimeAsString2 + ".");
                 resetStatistics(nanoTime);
-                Unit unit = Unit.f22113a;
+                Unit unit = Unit.f20684a;
             }
         }
     }
@@ -184,7 +183,7 @@ public class EglRenderer implements VideoSink {
                 handler.removeCallbacks(this$0.logStatisticsTask());
                 handler.postDelayed(this$0.logStatisticsTask(), LOG_INTERVAL_MS);
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 
@@ -215,7 +214,7 @@ public class EglRenderer implements VideoSink {
         q.f(lock, "lock");
         synchronized (lock) {
             GLES20.glUseProgram(0);
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
         this$0.drawer.release();
         this$0.frameDrawer.release();
@@ -255,6 +254,7 @@ public class EglRenderer implements VideoSink {
         float f10;
         float f11;
         float f12;
+        float f13;
         long d10;
         synchronized (this.frameLock) {
             VideoFrame videoFrame = this.pendingFrame;
@@ -304,14 +304,20 @@ public class EglRenderer implements VideoSink {
                 }
                 this.drawMatrix.reset();
                 this.drawMatrix.preTranslate(0.5f, 0.5f);
-                this.drawMatrix.preScale(this.mirrorHorizontally ? -1.0f : 1.0f, 1.0f);
+                Matrix matrix = this.drawMatrix;
+                if (this.mirrorHorizontally) {
+                    f13 = -1.0f;
+                } else {
+                    f13 = 1.0f;
+                }
+                matrix.preScale(f13, 1.0f);
                 this.drawMatrix.preScale(f11, f12);
                 this.drawMatrix.preTranslate(-0.5f, -0.5f);
                 try {
                     if (z11) {
                         try {
                             GLES20.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-                            GLES20.glClear(Spliterator.SUBSIZED);
+                            GLES20.glClear(16384);
                             this.frameDrawer.drawFrame(videoFrame, this.drawer, this.drawMatrix, 0, 0, eglBase.surfaceWidth(), eglBase.surfaceHeight());
                             long nanoTime2 = System.nanoTime();
                             eglBase.swapBuffers();
@@ -320,7 +326,7 @@ public class EglRenderer implements VideoSink {
                                 this.framesRendered++;
                                 this.renderTimeNs += nanoTime3 - nanoTime;
                                 this.renderSwapBufferTimeNs += nanoTime3 - nanoTime2;
-                                Unit unit = Unit.f22113a;
+                                Unit unit = Unit.f20684a;
                             }
                         } catch (GlUtil.GlOutOfMemoryException e10) {
                             logE("Error while drawing frame", e10);
@@ -347,7 +353,7 @@ public class EglRenderer implements VideoSink {
             this.framesRendered = 0;
             this.renderTimeNs = 0L;
             this.renderSwapBufferTimeNs = 0L;
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 
@@ -477,7 +483,7 @@ public class EglRenderer implements VideoSink {
                 }
             });
             this.renderThreadHandler = null;
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
             ThreadUtils.awaitUninterruptibly(countDownLatch);
             synchronized (this.frameLock) {
                 VideoFrame videoFrame = this.pendingFrame;
@@ -528,7 +534,7 @@ public class EglRenderer implements VideoSink {
             if (j10 != j11) {
                 this.nextFrameTimeNs = System.nanoTime();
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 
@@ -546,7 +552,7 @@ public class EglRenderer implements VideoSink {
             } else {
                 this.layoutAspectRatio = 0.0f;
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 
@@ -554,7 +560,7 @@ public class EglRenderer implements VideoSink {
         logD("setMirrorHorizontally: " + z10);
         synchronized (this.layoutLock) {
             this.mirrorHorizontally = z10;
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 

@@ -2,9 +2,9 @@ package com.discord.chat.bridge.embed;
 
 import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -141,14 +141,14 @@ public final class EmbedUtilsKt {
     }
 
     public static final List<MediaSource> toImageMediaSources(Embed embed) {
-        int t10;
+        int s10;
         q.g(embed, "<this>");
         List<EmbedMedia> images = embed.getImages();
         if (images == null) {
             return null;
         }
-        t10 = k.t(images, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(images, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (EmbedMedia embedMedia : images) {
             arrayList.add(new MediaSource(null, embedMedia.getEmbedUrl(), getTag(embed), MediaType.IMAGE, false, null, 33, null));
         }

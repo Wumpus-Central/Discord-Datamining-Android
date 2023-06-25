@@ -24,7 +24,7 @@ public final class Wakelocks {
 
     public final void acquire(Context context) {
         q.g(context, "context");
-        WifiManager wifiManager = (WifiManager) a.j(context, WifiManager.class);
+        WifiManager wifiManager = (WifiManager) a.i(context, WifiManager.class);
         if (wifiManager != null) {
             WifiManager.WifiLock createWifiLock = wifiManager.createWifiLock(3, this.tag);
             this.wakeLockWifi = createWifiLock;
@@ -32,7 +32,7 @@ public final class Wakelocks {
                 createWifiLock.acquire();
             }
         }
-        PowerManager powerManager = (PowerManager) a.j(context, PowerManager.class);
+        PowerManager powerManager = (PowerManager) a.i(context, PowerManager.class);
         boolean z10 = false;
         if (powerManager != null && powerManager.isWakeLockLevelSupported(1)) {
             z10 = true;

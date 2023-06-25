@@ -73,7 +73,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         q.g(eventHandler, "$eventHandler");
         q.g(messageId, "$messageId");
         q.g(executedCommand, "$executedCommand");
-        eventHandler.mo159onTapAvatarx5gers8(messageId, executedCommand.m106getUserIdre6GcUE());
+        eventHandler.mo158onTapAvatarx5gers8(messageId, executedCommand.m105getUserIdre6GcUE());
     }
 
     public static /* synthetic */ void configureReply$default(MessageViewReplyPreview messageViewReplyPreview, ReferencedMessage referencedMessage, boolean z10, Function0 function0, int i10, Object obj) {
@@ -101,7 +101,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     /* renamed from: configureExecutedCommand-LdU2QRA */
-    public final void m211configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
+    public final void m210configureExecutedCommandLdU2QRA(final String messageId, final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, final ChatEventHandler eventHandler) {
         q.g(messageId, "messageId");
         q.g(executedCommand, "executedCommand");
         q.g(eventHandler, "eventHandler");
@@ -145,7 +145,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView messageContentView3 = this.binding.replyText;
         q.f(messageContentView3, "binding.replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView3));
-        Unit unit = Unit.f22113a;
+        Unit unit = Unit.f20684a;
         messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout2, spannable$default));
         MessageContentView messageContentView4 = this.binding.replyText;
         q.f(messageContentView4, "binding.replyText");
@@ -187,7 +187,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Context context = getContext();
             q.f(context, "context");
             String avatarUrl = MessageKt.avatarUrl(message, context);
-            if (avatarUrl == null || message.getUsername() == null || message.m14getAuthorIdwUX8bhU() == null) {
+            if (avatarUrl == null || message.getUsername() == null || message.m13getAuthorIdwUX8bhU() == null) {
                 SimpleDraweeView simpleDraweeView = this.binding.replyAuthorAvatar;
                 q.f(simpleDraweeView, "binding.replyAuthorAvatar");
                 simpleDraweeView.setVisibility(8);
@@ -225,7 +225,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 StructurableText content = message.getContent();
                 Context context2 = getContext();
                 q.f(context2, "context");
-                String str = message.m17getId3Eiw7ao();
+                String str = message.m16getId3Eiw7ao();
                 boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
                 boolean shouldShowRoleDot = message.getShouldShowRoleDot();
                 boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
@@ -235,7 +235,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView messageContentView4 = this.binding.replyText;
                 q.f(messageContentView4, "binding.replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView4));
-                Unit unit = Unit.f22113a;
+                Unit unit = Unit.f20684a;
                 messageContentView3.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(linearLayout3, spannable$default));
             } else {
                 this.binding.replyText.setText((CharSequence) null);

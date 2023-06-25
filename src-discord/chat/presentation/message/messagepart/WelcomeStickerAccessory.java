@@ -23,7 +23,7 @@ public final class WelcomeStickerAccessory extends MessageAccessory {
             kotlin.jvm.internal.q.g(r6, r0)
             java.lang.String r0 = "sticker"
             kotlin.jvm.internal.q.g(r7, r0)
-            java.lang.String r0 = r6.m17getId3Eiw7ao()
+            java.lang.String r0 = r6.m16getId3Eiw7ao()
             long r1 = r7.getId()
             java.lang.StringBuilder r3 = new java.lang.StringBuilder
             r3.<init>()

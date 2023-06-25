@@ -4,6 +4,8 @@ import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.facebook.react.bridge.ReactMarker;
 import com.facebook.react.bridge.ReactMarkerConstants;
 import com.facebook.react.uimanager.ViewProps;
+import gf.x;
+import hf.v;
 import io.sentry.ISpan;
 import io.sentry.k2;
 import io.sentry.m0;
@@ -12,14 +14,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import kg.x;
+import ki.u;
 import kotlin.Metadata;
 import kotlin.collections.r;
 import kotlin.collections.w;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import lg.v;
-import oj.u;
 
 @Metadata(d1 = {"\u0000z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0000\n\u0002\u0010\"\n\u0002\b\b\u0018\u0000 72\u00020\u0001:\u0003789B\u0007¢\u0006\u0004\b5\u00106J\b\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0010\u0010\u0007\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0010\u0010\n\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\bH\u0002J\u0010\u0010\r\u001a\u00020\b2\u0006\u0010\f\u001a\u00020\u000bH\u0002J\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\u000e\u001a\u00020\b2\b\u0010\u000f\u001a\u0004\u0018\u00010\bH\u0002J\u0012\u0010\u0011\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\u000bH\u0002J\u0006\u0010\u0012\u001a\u00020\u0002J\u0006\u0010\u0013\u001a\u00020\u0002J\u000e\u0010\u0014\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\u000bJ\u0018\u0010\u0014\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\b2\b\u0010\u000f\u001a\u0004\u0018\u00010\bJ$\u0010\u0018\u001a\u00020\u00022\b\u0010\t\u001a\u0004\u0018\u00010\u00152\b\u0010\u000f\u001a\u0004\u0018\u00010\b2\u0006\u0010\u0017\u001a\u00020\u0016H\u0016R \u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u001a0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u001cR \u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u001d0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u001cR \u0010 \u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u001f0\u00198\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b \u0010\u001cR\u0018\u0010!\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b!\u0010\"R\u0018\u0010#\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b#\u0010\"R\u0016\u0010%\u001a\u00020$8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b%\u0010&R\u0018\u0010(\u001a\u0004\u0018\u00010'8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b(\u0010)R\u001a\u0010+\u001a\b\u0012\u0004\u0012\u00020'0*8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010,R\u0016\u0010.\u001a\u00020-8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u0010/R \u00101\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b1\u0010\u001cR\u001a\u00103\u001a\b\u0012\u0004\u0012\u00020\b028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00104¨\u0006:"}, d2 = {"Lcom/discord/crash_reporting/PerformanceTracing;", "Lcom/facebook/react/bridge/ReactMarker$MarkerListener;", "", "startNativeModuleInit", "Lcom/discord/crash_reporting/TraceTransaction;", "transaction", "startTransaction", "stopTransaction", "", "marker", "checkAndSetInitSection", "Lcom/discord/crash_reporting/PerformanceTracing$TransactionMarker;", "transactionMarker", "getMarkerName", ZeroconfModule.KEY_SERVICE_NAME, "tag", "getMarker", "getParentSpanName", ViewProps.START, "stop", "logSpanForTransaction", "Lcom/facebook/react/bridge/ReactMarkerConstants;", "", "instanceKey", "logMarker", "", "Lio/sentry/m0;", "ongoingTransactions", "Ljava/util/Map;", "Lio/sentry/ISpan;", "ongoingSpans", "", "spanStarts", "lastNativeModuleSetupStart", "Lio/sentry/ISpan;", "lastProcessPackage", "", "stopped", "Z", "Lcom/discord/crash_reporting/PackageProcessTimings;", "currentProcessPackage", "Lcom/discord/crash_reporting/PackageProcessTimings;", "", "processPackageTimings", "Ljava/util/List;", "Lcom/discord/crash_reporting/StartupInitSection;", "startupInitSection", "Lcom/discord/crash_reporting/StartupInitSection;", "", "startupRootEventsTree", "", "wildcardEventNames", "Ljava/util/Set;", "<init>", "()V", "Companion", "MarkerEnd", "TransactionMarker", "crash_reporting_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes8.dex */
@@ -205,14 +205,14 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         String q03;
         s10 = u.s(str, "_START", false, 2, null);
         if (s10) {
-            q03 = oj.v.q0(str, "_START");
+            q03 = ki.v.q0(str, "_START");
             return new TransactionMarker(q03, str2, MarkerEnd.START);
         }
         s11 = u.s(str, "_END", false, 2, null);
         if (!s11) {
             return null;
         }
-        q02 = oj.v.q0(str, "_END");
+        q02 = ki.v.q0(str, "_END");
         return new TransactionMarker(q02, str2, MarkerEnd.END);
     }
 
@@ -226,7 +226,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     }
 
     private final String getParentSpanName(TransactionMarker transactionMarker) {
-        boolean M;
+        boolean K;
         String str = this.startupRootEventsTree.get(getMarkerName(transactionMarker));
         if (str != null) {
             return str;
@@ -235,8 +235,8 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
             return null;
         }
         String str2 = this.startupRootEventsTree.get(transactionMarker.getName());
-        M = r.M(this.wildcardEventNames, str2);
-        if (!M) {
+        K = r.K(this.wildcardEventNames, str2);
+        if (!K) {
             return str2;
         }
         MarkerEnd markerEnd = transactionMarker.getMarkerEnd();
@@ -260,7 +260,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
     private final void stopTransaction(TraceTransaction traceTransaction) {
         m0 m0Var = this.ongoingTransactions.get(traceTransaction);
         if (m0Var != null) {
-            m0Var.d();
+            m0Var.f();
         }
         this.ongoingTransactions.remove(traceTransaction);
     }
@@ -297,12 +297,12 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         if (marker.getMarkerEnd() == MarkerEnd.START) {
             if (this.startupInitSection == StartupInitSection.NativeModuleSetup && q.b(marker.getName(), "NATIVE_MODULE_SETUP") && (iSpan3 = this.lastNativeModuleSetupStart) != null) {
                 if (iSpan3 != null) {
-                    iSpan3.d();
+                    iSpan3.f();
                 }
                 this.lastNativeModuleSetupStart = null;
             }
             if (q.b(marker.getName(), "RUN_JS_BUNDLE") && (iSpan2 = this.ongoingSpans.get("PRE_RUN_JS_BUNDLE")) != null) {
-                iSpan2.d();
+                iSpan2.f();
             }
             if (q.b(marker.getName(), "PROCESS_PACKAGE_MODULE")) {
                 iSpan = this.lastProcessPackage;
@@ -319,7 +319,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
                 }
                 if (z10) {
                     ISpan iSpan4 = this.ongoingSpans.get(this.startupRootEventsTree.get(parentSpanName));
-                    if (!(iSpan4 == null || (iSpan = iSpan4.g(markerName)) == null)) {
+                    if (!(iSpan4 == null || (iSpan = iSpan4.j(markerName)) == null)) {
                         this.ongoingSpans.put(parentSpanName, iSpan);
                         this.spanStarts.put(parentSpanName, Long.valueOf(System.currentTimeMillis()));
                     }
@@ -327,12 +327,12 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
                 }
             }
             if (iSpan != null) {
-                ISpan g10 = iSpan.g(markerName);
-                q.f(g10, "parentSpan.startChild(markerName)");
-                this.ongoingSpans.put(markerName, g10);
+                ISpan j10 = iSpan.j(markerName);
+                q.f(j10, "parentSpan.startChild(markerName)");
+                this.ongoingSpans.put(markerName, j10);
                 this.spanStarts.put(markerName, Long.valueOf(System.currentTimeMillis()));
                 if (q.b(marker.getName(), "PROCESS_PACKAGE")) {
-                    this.lastProcessPackage = g10;
+                    this.lastProcessPackage = j10;
                     PackageProcessTimings packageProcessTimings2 = new PackageProcessTimings();
                     this.currentProcessPackage = packageProcessTimings2;
                     this.processPackageTimings.add(packageProcessTimings2);
@@ -348,7 +348,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         } else {
             ISpan iSpan5 = this.ongoingSpans.get(markerName);
             if (iSpan5 != null) {
-                iSpan5.d();
+                iSpan5.f();
                 this.ongoingSpans.remove(markerName);
                 if (q.b(marker.getName(), "PROCESS_PACKAGE")) {
                     PackageProcessTimings packageProcessTimings3 = this.currentProcessPackage;

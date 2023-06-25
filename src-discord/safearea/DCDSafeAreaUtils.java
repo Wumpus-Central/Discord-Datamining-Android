@@ -140,12 +140,12 @@ public final class DCDSafeAreaUtils {
         q.f(y10, "toWindowInsetsCompat(view.rootWindowInsets)");
         Insets g10 = y10.g(WindowInsetsCompat.m.a());
         q.f(g10, "insets.getInsetsIgnoring…pat.Type.displayCutout())");
-        SafeAreaEdgeInsets safeAreaEdgeInsets = new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(g10.f3273b), SizeUtilsKt.getPxToDp(g10.f3274c), SizeUtilsKt.getPxToDp(g10.f3275d), SizeUtilsKt.getPxToDp(g10.f3272a));
+        SafeAreaEdgeInsets safeAreaEdgeInsets = new SafeAreaEdgeInsets(SizeUtilsKt.getPxToDp(g10.f2808b), SizeUtilsKt.getPxToDp(g10.f2809c), SizeUtilsKt.getPxToDp(g10.f2810d), SizeUtilsKt.getPxToDp(g10.f2807a));
         if (Build.VERSION.SDK_INT > 29) {
             Insets g11 = y10.g(WindowInsetsCompat.m.g());
             q.f(g11, "insets.getInsetsIgnoring…Compat.Type.systemBars())");
-            safeAreaEdgeInsets.setTopDp(Math.max(safeAreaEdgeInsets.getTopDp(), SizeUtilsKt.getPxToDp(g11.f3273b)));
-            safeAreaEdgeInsets.setBottomDp(Math.max(safeAreaEdgeInsets.getBottomDp(), SizeUtilsKt.getPxToDp(g11.f3275d)));
+            safeAreaEdgeInsets.setTopDp(Math.max(safeAreaEdgeInsets.getTopDp(), SizeUtilsKt.getPxToDp(g11.f2808b)));
+            safeAreaEdgeInsets.setBottomDp(Math.max(safeAreaEdgeInsets.getBottomDp(), SizeUtilsKt.getPxToDp(g11.f2810d)));
         } else {
             safeAreaEdgeInsets.setTopDp(Math.max(safeAreaEdgeInsets.getTopDp(), SizeUtilsKt.getPxToDp(y10.i())));
             safeAreaEdgeInsets.setBottomDp(Math.max(safeAreaEdgeInsets.getBottomDp(), SizeUtilsKt.getPxToDp(y10.h())));

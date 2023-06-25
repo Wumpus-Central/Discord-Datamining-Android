@@ -21,14 +21,14 @@ final class SpoilerAttributes$configure$3$1 extends s implements Function1<Spoil
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SpoilerIdentifier spoilerIdentifier) {
-        m122invokeV2PEE7g(spoilerIdentifier.m129unboximpl());
-        return Unit.f22113a;
+        m121invokeV2PEE7g(spoilerIdentifier.m128unboximpl());
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke-V2PEE7g  reason: not valid java name */
-    public final void m122invokeV2PEE7g(String spoilerId) {
+    public final void m121invokeV2PEE7g(String spoilerId) {
         q.g(spoilerId, "spoilerId");
-        SpoilerManager.INSTANCE.m133markRevealedV2PEE7g(spoilerId);
+        SpoilerManager.INSTANCE.m132markRevealedV2PEE7g(spoilerId);
         this.$onTapSpoiler.invoke();
     }
 }

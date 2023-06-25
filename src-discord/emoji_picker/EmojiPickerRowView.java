@@ -61,7 +61,7 @@ public final class EmojiPickerRowView extends LinearLayout {
         for (Object obj : list) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.s();
+                j.r();
             }
             final EmojiPickerRow.Emoji emoji = (EmojiPickerRow.Emoji) obj;
             View childAt = getChildAt(i10);
@@ -123,7 +123,7 @@ public final class EmojiPickerRowView extends LinearLayout {
         for (Object obj : emojiPickerRow.getItems()) {
             int i12 = i11 + 1;
             if (i11 < 0) {
-                j.s();
+                j.r();
             }
             EmojiPickerRow.Emoji emoji = (EmojiPickerRow.Emoji) obj;
             if (i11 == 0) {
@@ -134,7 +134,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             SimpleDraweeView simpleDraweeView = new SimpleDraweeView(getContext());
             RippleUtilsKt.addCircleRipple$default(simpleDraweeView, false, 1, null);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(placeholder);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f8129e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f7799e);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
             layoutParams.setMargins(i10, dpToPx3, 0, dpToPx3);
             simpleDraweeView.setLayoutParams(layoutParams);

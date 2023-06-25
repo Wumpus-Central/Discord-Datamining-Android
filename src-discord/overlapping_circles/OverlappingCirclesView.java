@@ -17,7 +17,6 @@ import android.webkit.URLUtil;
 import android.widget.LinearLayout;
 import androidx.core.view.u0;
 import androidx.core.view.w0;
-import bh.j;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.size.SizeUtilsKt;
@@ -29,15 +28,16 @@ import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.material.textview.MaterialTextView;
+import gf.n;
+import gf.p;
 import java.util.List;
-import kg.n;
-import kg.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.r;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import xf.j;
 
 @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00182\u00020\u0001:\u0004\u0018\u0019\u001a\u001bB\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0014\u0010\u0013\u001a\u00020\u00142\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016R\u0012\u0010\u0007\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\f\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\r\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u00020\b8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/overlapping_circles/OverlappingCirclesView;", "Landroid/widget/LinearLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "imageLoadingColor", "", "imageLoadingColorDrawable", "Landroid/graphics/drawable/ColorDrawable;", "maxItems", "overflowBgColor", "overflowTextColor", "overflowTextSizePx", "overlapNegativeMargin", "overlapPx", "placeholderCircleColor", "separatorSizePx", "setItems", "", "items", "", "Lcom/discord/overlapping_circles/OverlappingItem;", "Companion", "OverflowItem", "OverlappingClippedItem", "PlaceholderItem", "overlapping_circles_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes3.dex */
@@ -231,7 +231,7 @@ public final class OverlappingCirclesView extends LinearLayout {
 
     public final void setItems(List<OverlappingItem> items) {
         boolean z10;
-        List x02;
+        List v02;
         boolean z11;
         boolean z12;
         View view;
@@ -249,12 +249,12 @@ public final class OverlappingCirclesView extends LinearLayout {
         if (z10) {
             i10--;
         }
-        x02 = r.x0(items, i10);
+        v02 = r.v0(items, i10);
         int i11 = 0;
-        for (Object obj : x02) {
+        for (Object obj : v02) {
             int i12 = i11 + 1;
             if (i11 < 0) {
-                kotlin.collections.j.s();
+                kotlin.collections.j.r();
             }
             OverlappingItem overlappingItem = (OverlappingItem) obj;
             if (i11 != min) {
@@ -308,7 +308,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
             addView(overflowItem, layoutParams2);
         }
     }

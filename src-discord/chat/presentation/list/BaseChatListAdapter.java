@@ -25,13 +25,13 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
     private final RecyclerView.RecycledViewPool messageAccessoriesRecycledViewPool;
 
     public BaseChatListAdapter(Function0<? extends ChatEventHandler> eventHandlerProvider, Function0<ComponentProvider> messageComponentProvider) {
-        List<? extends ChatListItem> i10;
+        List<? extends ChatListItem> h10;
         q.g(eventHandlerProvider, "eventHandlerProvider");
         q.g(messageComponentProvider, "messageComponentProvider");
         RecyclerView.RecycledViewPool messageAccessoriesViewPool = ChatListUtilsKt.getMessageAccessoriesViewPool();
         this.messageAccessoriesRecycledViewPool = messageAccessoriesViewPool;
-        i10 = j.i();
-        this.chatListItems = i10;
+        h10 = j.h();
+        this.chatListItems = h10;
         AdapterDelegatesManager<T> delegatesManager = this.delegatesManager;
         q.f(delegatesManager, "delegatesManager");
         this.delegateViewTypes = ChatListAdapterConfiguratorKt.chatListAdapterConfigurator(delegatesManager, eventHandlerProvider, messageComponentProvider, messageAccessoriesViewPool);
@@ -40,9 +40,9 @@ public class BaseChatListAdapter extends b<List<? extends ChatListItem>> impleme
 
     @Override // com.discord.chat.presentation.list.ChatListAdapter
     public ChatListItem getChatListItem(int i10) {
-        Object X;
-        X = r.X(this.chatListItems, i10);
-        return (ChatListItem) X;
+        Object V;
+        V = r.V(this.chatListItems, i10);
+        return (ChatListItem) V;
     }
 
     @Override // com.discord.chat.presentation.list.ChatListAdapter

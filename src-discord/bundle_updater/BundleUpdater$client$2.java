@@ -2,6 +2,7 @@ package com.discord.bundle_updater;
 
 import android.webkit.CookieManager;
 import com.discord.resource_usage.DeviceResourceUsageRecorder;
+import ij.k;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;
@@ -9,7 +10,6 @@ import kotlin.collections.r;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
-import nk.k;
 import okhttp3.CookieJar;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
@@ -46,13 +46,13 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
             @Override // okhttp3.CookieJar
             public void saveFromResponse(HttpUrl url, List<k> cookies) {
                 CookieManager cookieManager;
-                String e02;
+                String c02;
                 q.g(url, "url");
                 q.g(cookies, "cookies");
                 cookieManager = BundleUpdater.this.getCookieManager();
                 String httpUrl = url.toString();
-                e02 = r.e0(cookies, "; ", null, null, 0, null, null, 62, null);
-                cookieManager.setCookie(httpUrl, e02);
+                c02 = r.c0(cookies, "; ", null, null, 0, null, null, 62, null);
+                cookieManager.setCookie(httpUrl, c02);
             }
         }).O(1L, TimeUnit.MINUTES);
         final DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;

@@ -6,7 +6,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.s;
 import kotlinx.serialization.KSerializer;
-import vj.c;
+import qi.c;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */

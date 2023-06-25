@@ -1,10 +1,6 @@
 package com.discord.image.fresco.config;
 
 import android.content.Context;
-import b6.l;
-import b6.x;
-import b6.y;
-import b6.z;
 import com.discord.resource_usage.DeviceResourceUsageRecorder;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
 import com.facebook.react.bridge.ReactContext;
@@ -15,6 +11,10 @@ import kotlin.jvm.internal.q;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
+import z4.l;
+import z4.x;
+import z4.y;
+import z4.z;
 
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\f\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0000¨\u0006\u0003"}, d2 = {"frescoConfig", "Lcom/facebook/imagepipeline/core/ImagePipelineConfig;", "Landroid/content/Context;", "fresco_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -35,7 +35,7 @@ public final class FrescoConfigKt {
         }).c()));
         x.b n10 = x.n();
         z a10 = l.a();
-        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f5435b, a10.f5434a * 2, a10.f5436c)).m())).N(true).L().t(true).K();
+        ImagePipelineConfig K = P.Q(new y(n10.n(new z(a10.f30221b, a10.f30220a * 2, a10.f30222c)).m())).N(true).L().t(true).K();
         q.f(K, "getDefaultConfigBuilder(…ns(true)\n        .build()");
         return K;
     }

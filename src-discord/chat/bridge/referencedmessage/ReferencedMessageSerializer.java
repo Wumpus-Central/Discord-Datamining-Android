@@ -29,7 +29,7 @@ public final class ReferencedMessageSerializer extends d<ReferencedMessage> {
         if (jsonElement == null || (n10 = g.n(jsonElement)) == null) {
             str = null;
         } else {
-            str = n10.b();
+            str = n10.a();
         }
         if (q.b(str, STATE_LOADED)) {
             return LoadedReferencedMessage.Companion.serializer();

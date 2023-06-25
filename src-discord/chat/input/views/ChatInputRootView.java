@@ -17,7 +17,6 @@ import androidx.core.util.h;
 import androidx.core.view.ContentInfoCompat;
 import androidx.core.view.s0;
 import androidx.core.view.w0;
-import bh.j;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.input.bridge.ChatInputNode;
 import com.discord.chat.input.databinding.ChatInputRootViewBinding;
@@ -34,6 +33,7 @@ import com.discord.misc.utilities.keyboard.KeyboardExtensionsKt;
 import com.discord.span.utilities.BackgroundSpanDrawer;
 import com.discord.span.utilities.SpannableExtensionsKt;
 import com.facebook.react.uimanager.ViewProps;
+import hf.p;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
@@ -53,7 +53,7 @@ import kotlin.ranges.IntRange;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.l;
-import lg.p;
+import xf.j;
 
 @Metadata(d1 = {"\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002:\u0002\\]B%\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tJ\u0006\u0010>\u001a\u00020?J\u001e\u0010@\u001a\u00020?2\b\u0010A\u001a\u0004\u0018\u00010\u00172\f\u0010B\u001a\b\u0012\u0004\u0012\u00020D0CJ\u0006\u0010E\u001a\u00020?J\b\u0010F\u001a\u00020?H\u0014J\u0010\u0010G\u001a\u00020?2\u0006\u0010H\u001a\u00020%H\u0016J>\u0010I\u001a\u00020?2\u0006\u0010J\u001a\u00020\b2\u0006\u0010K\u001a\u00020\b2\u0006\u00108\u001a\u00020\u00172\f\u0010L\u001a\b\u0012\u0004\u0012\u00020D0C2\u0006\u0010M\u001a\u00020%2\b\u0010A\u001a\u0004\u0018\u00010\u0017J\u0006\u0010N\u001a\u00020%J\u0018\u0010O\u001a\u00020?2\u0006\u0010P\u001a\u00020\b2\b\b\u0002\u0010Q\u001a\u00020\bJ\u000e\u0010R\u001a\u00020?2\u0006\u0010S\u001a\u00020TJ \u0010U\u001a\u00020?2\f\u0010B\u001a\b\u0012\u0004\u0012\u00020D0C2\b\b\u0002\u0010V\u001a\u00020\bH\u0002J\b\u0010W\u001a\u00020?H\u0002J!\u0010X\u001a\u00020?*\u00020$2\u0012\u0010Y\u001a\u000e\u0012\u0004\u0012\u00020[\u0012\u0004\u0012\u00020?0ZH\u0082\bR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R(\u0010\u0018\u001a\u0004\u0018\u00010\u00172\b\u0010\u0016\u001a\u0004\u0018\u00010\u00178F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR&\u0010\u001d\u001a\u00020\b2\b\b\u0001\u0010\u0016\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u0014\u0010\"\u001a\b\u0012\u0004\u0012\u00020$0#X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010&\u001a\u00020%2\u0006\u0010\u0016\u001a\u00020%8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R$\u0010*\u001a\u00020%2\u0006\u0010\u0016\u001a\u00020%8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b*\u0010'\"\u0004\b+\u0010)R\u000e\u0010,\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0013\u0010-\u001a\u0004\u0018\u00010\b8F¢\u0006\u0006\u001a\u0004\b.\u0010/R\u000e\u00100\u001a\u000201X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u00102\u001a\u0004\u0018\u000103X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R$\u00108\u001a\u00020\u00172\u0006\u0010\u0016\u001a\u00020\u00178F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b9\u0010\u001a\"\u0004\b:\u0010\u001cR&\u0010;\u001a\u00020\b2\b\b\u0001\u0010\u0016\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b<\u0010\u001f\"\u0004\b=\u0010!¨\u0006^"}, d2 = {"Lcom/discord/chat/input/views/ChatInputRootView;", "Landroid/widget/RelativeLayout;", "Lcom/discord/keyboard/KeyboardEvent;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/input/databinding/ChatInputRootViewBinding;", "blurJob", "Lkotlinx/coroutines/Job;", "currentTextFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/discord/chat/input/views/ChatInputRootView$CurrentTextAndSelection;", "editText", "Lcom/discord/chat/input/views/DCDChatInput;", "editTextHint", "", "editTextMaxLines", "value", "", "hint", "getHint", "()Ljava/lang/String;", "setHint", "(Ljava/lang/String;)V", "hintTextColor", "getHintTextColor", "()I", "setHintTextColor", "(I)V", "insertedPayloads", "", "Landroidx/core/view/ContentInfoCompat;", "", "isCursorVisible", "()Z", "setCursorVisible", "(Z)V", "isEditTextEnabled", "setEditTextEnabled", "lastEditId", "lineCount", "getLineCount", "()Ljava/lang/Integer;", "lineHeightMeasurer", "Lcom/discord/chat/input/views/ChatInputRootViewMeasurer;", "listener", "Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "getListener", "()Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "setListener", "(Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;)V", "text", "getText", "setText", "textColor", "getTextColor", "setTextColor", "backspace", "", "clearAndApplyChatNodes", "editId", "chatInputNodes", "", "Lcom/discord/chat/input/bridge/ChatInputNode;", "clearInputFocus", "onAttachedToWindow", "onKeyboardStateChanged", "opened", "replaceRange", "location", "length", "styleBlocks", "keepCursorPosition", "requestInputFocus", "setSelection", ViewProps.START, "stop", "showKeyboard", "window", "Landroid/view/Window;", "updateChatNodes", "offset", "updateHintEllipsis", "forEachUri", "action", "Lkotlin/Function1;", "Landroid/net/Uri;", "ChatInputListener", "CurrentTextAndSelection", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
@@ -104,7 +104,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Unit invoke(Integer num, Integer num2) {
             invoke(num.intValue(), num2.intValue());
-            return Unit.f22113a;
+            return Unit.f20684a;
         }
 
         public final void invoke(int i10, int i11) {
@@ -248,7 +248,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     public static final ContentInfoCompat _init_$lambda$3(ChatInputRootView this$0, final Context context, View view, ContentInfoCompat payload) {
-        IntRange q10;
+        IntRange p10;
         q.g(this$0, "this$0");
         q.g(context, "$context");
         q.g(view, "<anonymous parameter 0>");
@@ -266,8 +266,8 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         ContentInfoCompat contentInfoCompat2 = (ContentInfoCompat) i10.second;
         if (contentInfoCompat != null) {
             this$0.insertedPayloads.add(payload);
-            q10 = j.q(0, contentInfoCompat.c().getItemCount());
-            Iterator<Integer> it = q10.iterator();
+            p10 = j.p(0, contentInfoCompat.c().getItemCount());
+            Iterator<Integer> it = p10.iterator();
             while (it.hasNext()) {
                 Uri uri = contentInfoCompat.c().getItemAt(((p) it).nextInt()).getUri();
                 q.f(uri, "clip.getItemAt(itemIndex).uri");
@@ -281,9 +281,9 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     private final void forEachUri(ContentInfoCompat contentInfoCompat, Function1<? super Uri, Unit> function1) {
-        IntRange q10;
-        q10 = j.q(0, contentInfoCompat.c().getItemCount());
-        Iterator<Integer> it = q10.iterator();
+        IntRange p10;
+        p10 = j.p(0, contentInfoCompat.c().getItemCount());
+        Iterator<Integer> it = p10.iterator();
         while (it.hasNext()) {
             Uri uri = contentInfoCompat.c().getItemAt(((p) it).nextInt()).getUri();
             q.f(uri, "clip.getItemAt(itemIndex).uri");
@@ -312,7 +312,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
             r0 = 2
             r2 = 0
             java.lang.String r3 = "image/"
-            boolean r4 = oj.l.H(r4, r3, r1, r0, r2)
+            boolean r4 = ki.l.H(r4, r3, r1, r0, r2)
             if (r4 != r5) goto L_0x0027
             r4 = r5
             goto L_0x0028
@@ -335,10 +335,10 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     }
 
     private final void updateChatNodes(List<ChatInputNode> list, int i10) {
-        int t10;
+        int s10;
         boolean z10;
-        t10 = k.t(list, 10);
-        ArrayList<ChatInputNode> arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList<ChatInputNode> arrayList = new ArrayList(s10);
         for (ChatInputNode chatInputNode : list) {
             arrayList.add(ChatInputNode.copy$default(chatInputNode, 0, chatInputNode.getLocation() + i10, 0, null, false, null, false, 125, null));
         }

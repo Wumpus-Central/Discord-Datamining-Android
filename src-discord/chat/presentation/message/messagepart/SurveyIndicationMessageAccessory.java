@@ -23,19 +23,19 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ SurveyIndicationMessageAccessory m287copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
+    public static /* synthetic */ SurveyIndicationMessageAccessory m286copyntcYbpo$default(SurveyIndicationMessageAccessory surveyIndicationMessageAccessory, String str, SurveyIndication surveyIndication, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = surveyIndicationMessageAccessory.mo215getMessageId3Eiw7ao();
+            str = surveyIndicationMessageAccessory.mo214getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             surveyIndication = surveyIndicationMessageAccessory.surveyIndication;
         }
-        return surveyIndicationMessageAccessory.m289copyntcYbpo(str, surveyIndication);
+        return surveyIndicationMessageAccessory.m288copyntcYbpo(str, surveyIndication);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m288component13Eiw7ao() {
-        return mo215getMessageId3Eiw7ao();
+    public final String m287component13Eiw7ao() {
+        return mo214getMessageId3Eiw7ao();
     }
 
     public final SurveyIndication component2() {
@@ -43,7 +43,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final SurveyIndicationMessageAccessory m289copyntcYbpo(String messageId, SurveyIndication surveyIndication) {
+    public final SurveyIndicationMessageAccessory m288copyntcYbpo(String messageId, SurveyIndication surveyIndication) {
         q.g(messageId, "messageId");
         q.g(surveyIndication, "surveyIndication");
         return new SurveyIndicationMessageAccessory(messageId, surveyIndication, null);
@@ -57,12 +57,12 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
             return false;
         }
         SurveyIndicationMessageAccessory surveyIndicationMessageAccessory = (SurveyIndicationMessageAccessory) obj;
-        return MessageId.m593equalsimpl0(mo215getMessageId3Eiw7ao(), surveyIndicationMessageAccessory.mo215getMessageId3Eiw7ao()) && q.b(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
+        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), surveyIndicationMessageAccessory.mo214getMessageId3Eiw7ao()) && q.b(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
     }
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo215getMessageId3Eiw7ao() {
+    public String mo214getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -71,11 +71,11 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m594hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.surveyIndication.hashCode();
+        return (MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + this.surveyIndication.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m595toStringimpl(mo215getMessageId3Eiw7ao());
+        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
         SurveyIndication surveyIndication = this.surveyIndication;
         return "SurveyIndicationMessageAccessory(messageId=" + str + ", surveyIndication=" + surveyIndication + ")";
     }

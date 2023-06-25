@@ -3,7 +3,7 @@ package com.discord.billing;
 import android.app.Activity;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.g;
-import androidx.lifecycle.m;
+import androidx.lifecycle.n;
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
@@ -35,12 +35,12 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.l;
 import kotlinx.coroutines.n1;
 import kotlinx.coroutines.y0;
-import v2.a;
-import v2.b;
-import v2.c;
-import v2.d;
-import v2.e;
-import v2.f;
+import t1.a;
+import t1.b;
+import t1.c;
+import t1.d;
+import t1.e;
+import t1.f;
 
 @Metadata(d1 = {"\u0000\u0091\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b*\u0001E\b\u0000\u0018\u00002\u00020\u0001:\u0004OPQRBO\u0012\u0012\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u0015\u0012\u001e\u0010<\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0;\u0012\u0012\u0010@\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u0015¢\u0006\u0004\bM\u0010NJ\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J \u0010\u000e\u001a\u00020\r2\u0006\u0010\u0007\u001a\u00020\u00062\u000e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nH\u0002JF\u0010\u0019\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002JF\u0010\u001a\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002Jf\u0010#\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002Jr\u0010)\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010$\u001a\u00020\u000f2\u0006\u0010&\u001a\u00020%2\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015H\u0002J\b\u0010*\u001a\u00020\rH\u0002J\b\u0010+\u001a\u00020\bH\u0002J\u0010\u0010-\u001a\u00020\r2\u0006\u0010,\u001a\u00020\u000bH\u0002J\f\u0010.\u001a\u00020\b*\u00020\u0006H\u0002J%\u00100\u001a\u00020\r*\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010/\u001a\u00020\u000fH\u0082\u0002J\u000e\u00101\u001a\u00020\r2\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u00102\u001a\u00020\rJD\u00103\u001a\u00020\r2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u000f0\n2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0014\u001a\u00020\u00132\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u00152\u0006\u0010\u0003\u001a\u00020\u0002Jr\u0010,\u001a\u00020\r2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001d\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u001e\u001a\u00020\u000f2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J4\u00104\u001a\u00020\r2\u0006\u0010 \u001a\u00020\u000f2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0016\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015J0\u00105\u001a\u00020\r2\u000e\b\u0002\u0010\"\u001a\b\u0012\u0004\u0012\u00020\r0!2\u0018\b\u0002\u0010\u0018\u001a\u0012\u0012\b\u0012\u00060\u0016j\u0002`\u0017\u0012\u0004\u0012\u00020\r0\u0015R#\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\b7\u00108\u001a\u0004\b9\u0010:R/\u0010<\u001a\u001a\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\r0;8\u0006¢\u0006\f\n\u0004\b<\u0010=\u001a\u0004\b>\u0010?R#\u0010@\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\r0\u00158\u0006¢\u0006\f\n\u0004\b@\u00108\u001a\u0004\bA\u0010:R\u0016\u0010C\u001a\u00020B8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bC\u0010DR\u0014\u0010F\u001a\u00020E8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bF\u0010GR\u001a\u0010I\u001a\u00020H8\u0002X\u0082\u0004¢\u0006\f\n\u0004\bI\u0010J\u0012\u0004\bK\u0010L¨\u0006S"}, d2 = {"Lcom/discord/billing/BillingManager;", "", "Lcom/facebook/react/bridge/ReactApplicationContext;", "context", "Lkotlinx/coroutines/CoroutineScope;", "getCoroutineScope", "Lcom/android/billingclient/api/BillingResult;", "billingResult", "", "isRetryableError", "", "Lcom/android/billingclient/api/Purchase;", "purchases", "", "handlePurchases", "", "skuIds", "Lcom/discord/billing/types/SkuType;", "skuType", "Lcom/facebook/react/bridge/Promise;", "reactPromise", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "onError", "getSkusWithRetry", "getProductsWithRetry", "Landroid/app/Activity;", "activity", "skuId", "userId", "oldSkuId", "purchaseToken", "Lkotlin/Function0;", "onSuccess", "purchaseWithSkuDetails", "productId", "Lcom/discord/billing/types/ProductType;", "productType", "oldProductId", "offerId", "purchaseWithProductDetails", "reconnect", "isBillingClientReady", "purchase", "verifyPurchase", "isNotOk", "errorMessage", "invoke", "open", "close", "getSkus", "consumePurchase", "loadPurchases", "", "onConnectionUpdated", "Lkotlin/jvm/functions/Function1;", "getOnConnectionUpdated", "()Lkotlin/jvm/functions/Function1;", "Lkotlin/Function3;", "onPurchaseUpdated", "Lkotlin/jvm/functions/Function3;", "getOnPurchaseUpdated", "()Lkotlin/jvm/functions/Function3;", "onDowngradeCommand", "getOnDowngradeCommand", "Lcom/android/billingclient/api/BillingClient;", "billingClient", "Lcom/android/billingclient/api/BillingClient;", "com/discord/billing/BillingManager$billingClientStateListener$1", "billingClientStateListener", "Lcom/discord/billing/BillingManager$billingClientStateListener$1;", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "backoff", "Lcom/discord/misc/utilities/backoff/ExponentialBackoff;", "getBackoff$annotations", "()V", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;)V", "ConnectionState", "DowngradeCommand", "ProductDetailsResponse", "SkuDetailsResponse", "billing_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes.dex */
@@ -50,7 +50,7 @@ public final class BillingManager {
     private final Function1<Integer, Unit> onDowngradeCommand;
     private final Function3<String, String, String, Unit> onPurchaseUpdated;
     private final BillingManager$billingClientStateListener$1 billingClientStateListener = new a() { // from class: com.discord.billing.BillingManager$billingClientStateListener$1
-        @Override // v2.a
+        @Override // t1.a
         public void onBillingServiceDisconnected() {
             BillingClient billingClient;
             BillingManager.this.getOnConnectionUpdated().invoke(Integer.valueOf(BillingManager.ConnectionState.DISCONNECTED.getValue()));
@@ -64,7 +64,7 @@ public final class BillingManager {
             }
         }
 
-        @Override // v2.a
+        @Override // t1.a
         public void onBillingSetupFinished(BillingResult billingResult) {
             boolean isNotOk;
             ExponentialBackoff exponentialBackoff;
@@ -80,7 +80,7 @@ public final class BillingManager {
             BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
         }
     };
-    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f22427k, 1000, 300000, 10);
+    private final ExponentialBackoff backoff = new ExponentialBackoff(n1.f20998k, 1000, 300000, 10);
 
     /* JADX INFO: Access modifiers changed from: private */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\b\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u000b"}, d2 = {"Lcom/discord/billing/BillingManager$ConnectionState;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "DISCONNECTED", "CONNECTING", "CONNECTED", "ERROR", "billing_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -296,13 +296,13 @@ public final class BillingManager {
             lifecycleOwner = null;
         }
         if (lifecycleOwner != null) {
-            gVar = m.a(lifecycleOwner);
+            gVar = n.a(lifecycleOwner);
         }
         if (gVar != null) {
             return gVar;
         }
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, "Can't get lifecycleScope for billing client, defaulting to GlobalScope but API might be backing off while the app is background", null, null, 6, null);
-        return n1.f22427k;
+        return n1.f20998k;
     }
 
     private final void getProductsWithRetry(List<String> list, SkuType skuType, Promise promise, Function1<? super Exception, Unit> function1, ReactApplicationContext reactApplicationContext) {
@@ -395,7 +395,7 @@ public final class BillingManager {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void purchaseWithProductDetails(final Activity activity, final String str, ProductType productType, final String str2, final String str3, final String str4, final String str5, final Function0<Unit> function0, final Function1<? super Exception, Unit> function1) {
-        List<String> n10;
+        List<String> m10;
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
@@ -403,9 +403,9 @@ public final class BillingManager {
             billingClient = null;
         }
         QueryProductDetailsParams queryProductDetailsParams = QueryProductDetailsParams.INSTANCE;
-        n10 = j.n(str, str3);
-        billingClient.g(queryProductDetailsParams.create(productType, n10), new d() { // from class: com.discord.billing.a
-            @Override // v2.d
+        m10 = j.m(str, str3);
+        billingClient.g(queryProductDetailsParams.create(productType, m10), new d() { // from class: com.discord.billing.a
+            @Override // t1.d
             public final void onProductDetailsResponse(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithProductDetails$lambda$4(BillingManager.this, function1, str, str3, str4, str2, str5, activity, function0, ref$BooleanRef, billingResult, list);
             }
@@ -424,9 +424,9 @@ public final class BillingManager {
         q.g(billingResult, "billingResult");
         q.g(productDetails, "productDetails");
         synchronized (this$0) {
-            if (!completed.f22138k) {
-                completed.f22138k = true;
-                Unit unit = Unit.f22113a;
+            if (!completed.f20709k) {
+                completed.f20709k = true;
+                Unit unit = Unit.f20684a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -456,7 +456,7 @@ public final class BillingManager {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void purchaseWithSkuDetails(final Activity activity, final String str, SkuType skuType, final String str2, final String str3, final String str4, final Function0<Unit> function0, final Function1<? super Exception, Unit> function1) {
-        List<String> n10;
+        List<String> m10;
         final Ref$BooleanRef ref$BooleanRef = new Ref$BooleanRef();
         BillingClient billingClient = this.billingClient;
         if (billingClient == null) {
@@ -464,9 +464,9 @@ public final class BillingManager {
             billingClient = null;
         }
         SkuDetailsParams skuDetailsParams = SkuDetailsParams.INSTANCE;
-        n10 = j.n(str, str3);
-        billingClient.i(skuDetailsParams.create(skuType, n10), new v2.g() { // from class: com.discord.billing.c
-            @Override // v2.g
+        m10 = j.m(str, str3);
+        billingClient.i(skuDetailsParams.create(skuType, m10), new t1.g() { // from class: com.discord.billing.c
+            @Override // t1.g
             public final void onSkuDetailsResponse(BillingResult billingResult, List list) {
                 BillingManager.purchaseWithSkuDetails$lambda$2(BillingManager.this, function1, str, str3, str4, str2, activity, function0, ref$BooleanRef, billingResult, list);
             }
@@ -484,9 +484,9 @@ public final class BillingManager {
         q.g(completed, "$completed");
         q.g(billingResult, "billingResult");
         synchronized (this$0) {
-            if (!completed.f22138k) {
-                completed.f22138k = true;
-                Unit unit = Unit.f22113a;
+            if (!completed.f20709k) {
+                completed.f20709k = true;
+                Unit unit = Unit.f20684a;
                 if (this$0.isNotOk(billingResult)) {
                     int a10 = billingResult.a();
                     this$0.invoke(onError, "Purchase failed, bad code: " + a10);
@@ -563,7 +563,7 @@ public final class BillingManager {
             billingClient = null;
         }
         billingClient.a(a10, new c() { // from class: com.discord.billing.b
-            @Override // v2.c
+            @Override // t1.c
             public final void a(BillingResult billingResult, String str) {
                 BillingManager.consumePurchase$lambda$0(BillingManager.this, onError, onSuccess, billingResult, str);
             }
@@ -620,7 +620,7 @@ public final class BillingManager {
             billingClient = null;
         }
         billingClient.h("inapp", new e() { // from class: com.discord.billing.d
-            @Override // v2.e
+            @Override // t1.e
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }
@@ -632,7 +632,7 @@ public final class BillingManager {
             billingClient2 = billingClient3;
         }
         billingClient2.h("subs", new e() { // from class: com.discord.billing.d
-            @Override // v2.e
+            @Override // t1.e
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }
@@ -643,7 +643,7 @@ public final class BillingManager {
     public final void open(ReactApplicationContext context) {
         q.g(context, "context");
         BillingClient a10 = BillingClient.f(context).b().c(new f() { // from class: com.discord.billing.e
-            @Override // v2.f
+            @Override // t1.f
             public final void a(BillingResult billingResult, List list) {
                 BillingManager.this.handlePurchases(billingResult, list);
             }

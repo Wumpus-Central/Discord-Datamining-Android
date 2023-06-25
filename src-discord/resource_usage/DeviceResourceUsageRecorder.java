@@ -9,16 +9,16 @@ import co.discord.media_engine.b;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableNativeMap;
-import kg.x;
+import gf.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import oj.e;
 import okhttp3.Interceptor;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.BufferedSource;
-import tk.e;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\u0018\u0000 \u00032\u00020\u0001:\u0002\u0003\u0004B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0005"}, d2 = {"Lcom/discord/resource_usage/DeviceResourceUsageRecorder;", "", "()V", "Companion", "RequestStats", "resource_usage_monitor_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
@@ -49,15 +49,15 @@ public final class DeviceResourceUsageRecorder {
         }
 
         private final Response requestStatsInterceptor(Interceptor.Chain chain, RequestStats requestStats) {
-            Response a10 = chain.a(chain.b());
-            ResponseBody b10 = a10.b();
+            Response b10 = chain.b(chain.a());
+            ResponseBody a10 = b10.a();
             requestStats.setNumRequests(requestStats.getNumRequests() + 1);
-            if (e.b(a10) && b10 != null) {
-                BufferedSource source = b10.source();
-                source.g(Long.MAX_VALUE);
-                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.c().size());
+            if (e.b(b10) && a10 != null) {
+                BufferedSource source = a10.source();
+                source.i(Long.MAX_VALUE);
+                requestStats.setBytesReceived(requestStats.getBytesReceived() + source.e().size());
             }
-            return a10;
+            return b10;
         }
 
         public final Response bundleUpdaterInterceptor(Interceptor.Chain chain) {

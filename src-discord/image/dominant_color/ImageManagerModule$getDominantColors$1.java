@@ -27,17 +27,17 @@ final class ImageManagerModule$getDominantColors$1 extends s implements Function
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(Bitmap bitmap) {
-        int t10;
+        int s10;
         if (bitmap != null) {
             List<Integer> representativeColors = DominantColor.INSTANCE.getRepresentativeColors(bitmap);
             if (representativeColors != null) {
-                t10 = k.t(representativeColors, 10);
-                ArrayList arrayList = new ArrayList(t10);
+                s10 = k.s(representativeColors, 10);
+                ArrayList arrayList = new ArrayList(s10);
                 for (Number number : representativeColors) {
                     int intValue = number.intValue();
                     arrayList.add(NativeArrayExtensionsKt.nativeArrayOf(Integer.valueOf((intValue >> 16) & 255), Integer.valueOf((intValue >> 8) & 255), Integer.valueOf(intValue & 255)));

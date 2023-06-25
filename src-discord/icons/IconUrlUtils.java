@@ -11,8 +11,8 @@ import com.discord.primitives.UserId;
 import com.discord.react_asset_fetcher.ReactAsset;
 import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.snowflake.SnowflakeUtils;
-import kg.s;
-import kg.t;
+import gf.s;
+import gf.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -25,11 +25,11 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getApplicationIcon-weIltyw$default  reason: not valid java name */
-    public static /* synthetic */ String m455getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
+    public static /* synthetic */ String m454getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
         if ((i11 & 4) != 0) {
             i10 = 160;
         }
-        return iconUrlUtils.m460getApplicationIconweIltyw(applicationId, str, i10);
+        return iconUrlUtils.m459getApplicationIconweIltyw(applicationId, str, i10);
     }
 
     public static /* synthetic */ String getCustomEmojiUrl$default(IconUrlUtils iconUrlUtils, long j10, boolean z10, Integer num, int i10, Object obj) {
@@ -40,31 +40,31 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getForChannel-JYSGpIY$default  reason: not valid java name */
-    public static /* synthetic */ String m456getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
+    public static /* synthetic */ String m455getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
         if ((i10 & 16) != 0) {
             num = null;
         }
-        return iconUrlUtils.m461getForChannelJYSGpIY(context, channelId, str, z10, num);
+        return iconUrlUtils.m460getForChannelJYSGpIY(context, channelId, str, z10, num);
     }
 
     /* renamed from: getForGuild-14CJxO4$default  reason: not valid java name */
-    public static /* synthetic */ String m457getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
+    public static /* synthetic */ String m456getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
         String str3 = (i10 & 4) != 0 ? null : str2;
         if ((i10 & 8) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m462getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
+        return iconUrlUtils.m461getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
     }
 
     /* renamed from: getForGuildMember-2tNb6hE$default  reason: not valid java name */
-    public static /* synthetic */ String m458getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
+    public static /* synthetic */ String m457getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
         if ((i10 & 16) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m463getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
+        return iconUrlUtils.m462getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
     }
 
     public static /* synthetic */ void init$default(IconUrlUtils iconUrlUtils, Context context, String str, String str2, int i10, Object obj) {
@@ -78,7 +78,7 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getApplicationIcon-weIltyw  reason: not valid java name */
-    public final String m460getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
+    public final String m459getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
         MediaProxy mediaProxy = MediaProxy.INSTANCE;
         String cdn = Hosts.INSTANCE.getCDN();
         String mediaExtension$default = MediaExtensionKt.getMediaExtension$default(false, null, 2, null);
@@ -93,7 +93,7 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getForChannel-JYSGpIY  reason: not valid java name */
-    public final String m461getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
+    public final String m460getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         q.g(context, "context");
@@ -107,10 +107,10 @@ public final class IconUrlUtils {
         }
         if (!z11) {
             try {
-                s.a aVar = s.f21872l;
+                s.a aVar = s.f15494l;
                 obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str + "." + MediaExtensionKt.getMediaExtension$default(false, null, 2, null), num, null, 4, null));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21872l;
+                s.a aVar2 = s.f15494l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -142,7 +142,7 @@ public final class IconUrlUtils {
     }
 
     /* renamed from: getForGuild-14CJxO4  reason: not valid java name */
-    public final String m462getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
+    public final String m461getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         if (str == null || str.length() == 0) {
@@ -153,10 +153,10 @@ public final class IconUrlUtils {
         if (!z11 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                s.a aVar = s.f21872l;
+                s.a aVar = s.f15494l;
                 obj = s.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str + "." + MediaExtensionKt.getMediaExtension(z10, str));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f21872l;
+                s.a aVar2 = s.f15494l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -177,13 +177,13 @@ public final class IconUrlUtils {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.String m463getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
+    public final java.lang.String m462getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
         /*
             r8 = this;
             r0 = 0
             r1 = 1
             if (r9 == 0) goto L_0x000d
-            boolean r2 = oj.l.w(r9)
+            boolean r2 = ki.l.w(r9)
             if (r2 == 0) goto L_0x000b
             goto L_0x000d
         L_0x000b:
@@ -194,8 +194,8 @@ public final class IconUrlUtils {
         L_0x000e:
             if (r2 != 0) goto L_0x0072
             if (r10 == 0) goto L_0x001e
-            long r2 = r10.m585unboximpl()
-            boolean r2 = com.discord.primitives.GuildId.m582isValidimpl(r2)
+            long r2 = r10.m584unboximpl()
+            boolean r2 = com.discord.primitives.GuildId.m581isValidimpl(r2)
             if (r2 != r1) goto L_0x001e
             r2 = r1
             goto L_0x001f
@@ -204,8 +204,8 @@ public final class IconUrlUtils {
         L_0x001f:
             if (r2 == 0) goto L_0x0072
             if (r11 == 0) goto L_0x002e
-            long r2 = r11.m636unboximpl()
-            boolean r2 = com.discord.primitives.UserId.m633isValidimpl(r2)
+            long r2 = r11.m635unboximpl()
+            boolean r2 = com.discord.primitives.UserId.m632isValidimpl(r2)
             if (r2 != r1) goto L_0x002e
             r0 = r1
         L_0x002e:
@@ -242,26 +242,26 @@ public final class IconUrlUtils {
             java.lang.String r9 = ""
             return r9
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m463getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m462getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
     }
 
     /* renamed from: getForUser-_fRzTXg  reason: not valid java name */
-    public final String m464getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
+    public final String m463getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
         Object obj;
         q.g(context, "context");
         if (userId != null) {
-            if (UserId.m630equalsimpl(UserId.m628constructorimpl(-1L), userId)) {
+            if (UserId.m629equalsimpl(UserId.m627constructorimpl(-1L), userId)) {
                 if (str == null) {
                     return "";
                 }
                 return str;
             } else if (str != null) {
                 try {
-                    s.a aVar = s.f21872l;
+                    s.a aVar = s.f15494l;
                     String mediaExtension = MediaExtensionKt.getMediaExtension(z10, str);
                     obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str + "." + mediaExtension, num2, null, 4, null));
                 } catch (Throwable th2) {
-                    s.a aVar2 = s.f21872l;
+                    s.a aVar2 = s.f15494l;
                     obj = s.b(t.a(th2));
                 }
                 if (s.e(obj) != null) {

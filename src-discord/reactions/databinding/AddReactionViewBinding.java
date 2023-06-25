@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.discord.reactions.R;
 import com.facebook.drawee.view.SimpleDraweeView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes5.dex */
 public final class AddReactionViewBinding {

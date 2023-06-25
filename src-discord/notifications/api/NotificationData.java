@@ -6,7 +6,6 @@ import com.discord.primitives.ChannelId;
 import com.discord.primitives.GuildId;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.UserId;
-import j$.util.Spliterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.j;
@@ -14,8 +13,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import vj.f;
-import yj.n1;
+import qi.f;
+import ti.n1;
 
 @f
 @Metadata(d1 = {"\u0000}\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0003\b \u0001\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ã\u00012\u00020\u0001:\u0004â\u0001ã\u0001Bª\u0004\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0001\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010\n\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u000b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010\f\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010\u0010\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0001\u0010\u0013\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u0014\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u0015\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0001\u0010\u0016\u001a\u0004\u0018\u00010\u0006\u0012\u0010\b\u0001\u0010\u0017\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0018\u0012\n\b\u0001\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0001\u0010\u001b\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u001c\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010\u001e\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010\u001f\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010 \u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010!\u001a\u0004\u0018\u00010\"\u0012\n\b\u0001\u0010#\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010$\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010&\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010'\u001a\u0004\u0018\u00010(\u0012\n\b\u0001\u0010)\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010*\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010+\u001a\u0004\u0018\u00010,\u0012\n\b\u0001\u0010-\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0001\u0010/\u001a\u000200\u0012\b\b\u0001\u00101\u001a\u000200\u0012\n\b\u0001\u00102\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00103\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00104\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00105\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00106\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00107\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0001\u00108\u001a\u0004\u0018\u000100\u0012\n\b\u0001\u00109\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010:\u001a\u0004\u0018\u00010;ø\u0001\u0000¢\u0006\u0002\u0010<B\u0088\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0006\u0012\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00120\u0018\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010(\u0012\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,\u0012\n\b\u0002\u0010-\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010/\u001a\u000200\u0012\b\b\u0002\u00101\u001a\u000200\u0012\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u00108\u001a\u0004\u0018\u000100\u0012\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0006ø\u0001\u0000¢\u0006\u0002\u0010=J\n\u0010£\u0001\u001a\u00020\u0006HÆ\u0003J\u001b\u0010¤\u0001\u001a\u0004\u0018\u00010\u0012HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b¥\u0001J\f\u0010¦\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010§\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u001b\u0010¨\u0001\u001a\u0004\u0018\u00010\u0012HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b©\u0001J\f\u0010ª\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0013\u0010«\u0001\u001a\b\u0012\u0004\u0012\u00020\u00120\u0018HÆ\u0003ø\u0001\u0000J\u001b\u0010¬\u0001\u001a\u0004\u0018\u00010\u001aHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b\u00ad\u0001J\f\u0010®\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010¯\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010°\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\u001d\u0010±\u0001\u001a\u0004\u0018\u00010\bHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0005\b²\u0001\u0010DJ\f\u0010³\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010´\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010µ\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\u001b\u0010¶\u0001\u001a\u0004\u0018\u00010\"HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b·\u0001J\f\u0010¸\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010¹\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010º\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\f\u0010»\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u001b\u0010¼\u0001\u001a\u0004\u0018\u00010(HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0003\b½\u0001J\f\u0010¾\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010¿\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\f\u0010À\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010Á\u0001\u001a\u0004\u0018\u00010,HÆ\u0003J\f\u0010Â\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010Ã\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\n\u0010Ä\u0001\u001a\u000200HÆ\u0003J\n\u0010Å\u0001\u001a\u000200HÆ\u0003J\f\u0010Æ\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010Ç\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010È\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010É\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010Ê\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010Ë\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\f\u0010Ì\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010Í\u0001\u001a\u0004\u0018\u000100HÆ\u0003¢\u0006\u0002\u0010bJ\f\u0010Î\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010Ï\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\f\u0010Ð\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0011\u0010Ñ\u0001\u001a\u0004\u0018\u00010\u000eHÆ\u0003¢\u0006\u0002\u0010}J\u0011\u0010Ò\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010GJ\f\u0010Ó\u0001\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u009b\u0004\u0010Ô\u0001\u001a\u00020\u00002\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00122\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00062\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00120\u00182\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010'\u001a\u0004\u0018\u00010(2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,2\n\b\u0002\u0010-\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010/\u001a\u0002002\b\b\u0002\u00101\u001a\u0002002\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00104\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00105\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00106\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u00108\u001a\u0004\u0018\u0001002\n\b\u0002\u00109\u001a\u0004\u0018\u00010\u0006HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\bÕ\u0001\u0010Ö\u0001J\u0015\u0010×\u0001\u001a\u0002002\t\u0010Ø\u0001\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\n\u0010Ù\u0001\u001a\u00020\u0003HÖ\u0001J\n\u0010Ú\u0001\u001a\u00020\u0006HÖ\u0001J(\u0010Û\u0001\u001a\u00030Ü\u00012\u0007\u0010Ý\u0001\u001a\u00020\u00002\b\u0010Þ\u0001\u001a\u00030ß\u00012\b\u0010à\u0001\u001a\u00030á\u0001HÇ\u0001R%\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00120\u00188\u0006X\u0087\u0004ø\u0001\u0000¢\u0006\u000e\n\u0000\u0012\u0004\b>\u0010?\u001a\u0004\b@\u0010AR\u001e\u0010&\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bB\u0010?\u001a\u0004\bC\u0010DR \u0010%\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010H\u0012\u0004\bE\u0010?\u001a\u0004\bF\u0010GR\u001e\u0010*\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bI\u0010?\u001a\u0004\bJ\u0010DR'\u0010'\u001a\u0004\u0018\u00010(8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u000e\n\u0000\u0012\u0004\bK\u0010?\u001a\u0004\bL\u0010MR\u001e\u0010)\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bN\u0010?\u001a\u0004\bO\u0010DR\u001c\u0010/\u001a\u0002008\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bP\u0010?\u001a\u0004\bQ\u0010RR\u001e\u0010\u0013\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bS\u0010?\u001a\u0004\bT\u0010DR'\u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u000e\n\u0000\u0012\u0004\bU\u0010?\u001a\u0004\bV\u0010WR\u001e\u0010\u0010\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bX\u0010?\u001a\u0004\bY\u0010DR\u001e\u0010\u0016\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bZ\u0010?\u001a\u0004\b[\u0010DR \u0010\u000f\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010H\u0012\u0004\b\\\u0010?\u001a\u0004\b]\u0010GR\u001e\u00107\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b^\u0010?\u001a\u0004\b_\u0010DR \u00108\u001a\u0004\u0018\u0001008\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010c\u0012\u0004\b`\u0010?\u001a\u0004\ba\u0010bR\u001e\u0010$\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bd\u0010?\u001a\u0004\be\u0010DR'\u0010!\u001a\u0004\u0018\u00010\"8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u000e\n\u0000\u0012\u0004\bf\u0010?\u001a\u0004\bg\u0010hR\u001e\u0010#\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bi\u0010?\u001a\u0004\bj\u0010DR \u0010.\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010H\u0012\u0004\bk\u0010?\u001a\u0004\bl\u0010GR\u001e\u00104\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bm\u0010?\u001a\u0004\bn\u0010DR\u001e\u00109\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bo\u0010?\u001a\u0004\bp\u0010DR\u001c\u00101\u001a\u0002008\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bq\u0010?\u001a\u0004\b1\u0010RR\u001e\u0010+\u001a\u0004\u0018\u00010,8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\br\u0010?\u001a\u0004\bs\u0010tR \u0010\t\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010H\u0012\u0004\bu\u0010?\u001a\u0004\bv\u0010GR\u001e\u0010\n\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bw\u0010?\u001a\u0004\bx\u0010DR\u001e\u0010\f\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\by\u0010?\u001a\u0004\bz\u0010DR \u0010\r\u001a\u0004\u0018\u00010\u000e8\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010~\u0012\u0004\b{\u0010?\u001a\u0004\b|\u0010}R+\u0010\u0007\u001a\u0004\u0018\u00010\b8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0012\n\u0003\u0010\u0081\u0001\u0012\u0004\b\u007f\u0010?\u001a\u0005\b\u0080\u0001\u0010DR\"\u0010\u000b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010H\u0012\u0005\b\u0082\u0001\u0010?\u001a\u0005\b\u0083\u0001\u0010GR \u00105\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0084\u0001\u0010?\u001a\u0005\b\u0085\u0001\u0010DR)\u0010\u0015\u001a\u0004\u0018\u00010\u00128\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0010\n\u0000\u0012\u0005\b\u0086\u0001\u0010?\u001a\u0005\b\u0087\u0001\u0010WR \u0010\u0014\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0088\u0001\u0010?\u001a\u0005\b\u0089\u0001\u0010DR\"\u0010 \u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010H\u0012\u0005\b\u008a\u0001\u0010?\u001a\u0005\b\u008b\u0001\u0010GR \u0010-\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008c\u0001\u0010?\u001a\u0005\b\u008d\u0001\u0010DR \u00103\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u008e\u0001\u0010?\u001a\u0005\b\u008f\u0001\u0010DR \u00102\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0090\u0001\u0010?\u001a\u0005\b\u0091\u0001\u0010DR \u00106\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0092\u0001\u0010?\u001a\u0005\b\u0093\u0001\u0010DR\u001e\u0010\u0005\u001a\u00020\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0094\u0001\u0010?\u001a\u0005\b\u0095\u0001\u0010DR \u0010\u001e\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u0096\u0001\u0010?\u001a\u0005\b\u0097\u0001\u0010DR\"\u0010\u001d\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\u0012\n\u0002\u0010H\u0012\u0005\b\u0098\u0001\u0010?\u001a\u0005\b\u0099\u0001\u0010GR \u0010\u001c\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u009a\u0001\u0010?\u001a\u0005\b\u009b\u0001\u0010DR \u0010\u001f\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b\u009c\u0001\u0010?\u001a\u0005\b\u009d\u0001\u0010DR*\u0010\u0019\u001a\u0004\u0018\u00010\u001a8\u0006X\u0087\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0011\n\u0000\u0012\u0005\b\u009e\u0001\u0010?\u001a\u0006\b\u009f\u0001\u0010 \u0001R \u0010\u001b\u001a\u0004\u0018\u00010\u00068\u0006X\u0087\u0004¢\u0006\u0010\n\u0000\u0012\u0005\b¡\u0001\u0010?\u001a\u0005\b¢\u0001\u0010D\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006ä\u0001"}, d2 = {"Lcom/discord/notifications/api/NotificationData;", "", "seen1", "", "seen2", "type", "", "messageId", "Lcom/discord/primitives/MessageId;", "messageActivityType", "messageApplicationName", "messageType", "messageContent", "messageFlags", "", "channelType", "channelName", "channelId", "Lcom/discord/primitives/ChannelId;", "channelIcon", "parentName", "parentId", "channelRtcRegion", "ackChannelIds", "", "userId", "Lcom/discord/primitives/UserId;", "userUsername", "userGlobalName", "userDiscriminator", "userAvatar", "userGuildAvatar", "relationshipType", "guildId", "Lcom/discord/primitives/GuildId;", "guildName", "guildIcon", "activityType", "activityName", "applicationId", "Lcom/discord/primitives/ApplicationId;", "applicationName", "applicationIcon", "message", "Lcom/discord/notifications/api/NotificationMessage;", "stageInstanceTopic", "guildScheduledEventEntityType", "canReply", "", "isFromCurrentUser", "title", "subtitle", "iconUrl", "notificationChannel", "trackingType", "deeplink", "expandSubtitle", "imageAttachmentUrl", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAckChannelIds$annotations", "()V", "getAckChannelIds", "()Ljava/util/List;", "getActivityName$annotations", "getActivityName", "()Ljava/lang/String;", "getActivityType$annotations", "getActivityType", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getApplicationIcon$annotations", "getApplicationIcon", "getApplicationId-UtIrSio$annotations", "getApplicationId-UtIrSio", "()Lcom/discord/primitives/ApplicationId;", "getApplicationName$annotations", "getApplicationName", "getCanReply$annotations", "getCanReply", "()Z", "getChannelIcon$annotations", "getChannelIcon", "getChannelId-qMVnFVQ$annotations", "getChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getChannelName$annotations", "getChannelName", "getChannelRtcRegion$annotations", "getChannelRtcRegion", "getChannelType$annotations", "getChannelType", "getDeeplink$annotations", "getDeeplink", "getExpandSubtitle$annotations", "getExpandSubtitle", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getGuildIcon$annotations", "getGuildIcon", "getGuildId-qOKuAAo$annotations", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getGuildName$annotations", "getGuildName", "getGuildScheduledEventEntityType$annotations", "getGuildScheduledEventEntityType", "getIconUrl$annotations", "getIconUrl", "getImageAttachmentUrl$annotations", "getImageAttachmentUrl", "isFromCurrentUser$annotations", "getMessage$annotations", "getMessage", "()Lcom/discord/notifications/api/NotificationMessage;", "getMessageActivityType$annotations", "getMessageActivityType", "getMessageApplicationName$annotations", "getMessageApplicationName", "getMessageContent$annotations", "getMessageContent", "getMessageFlags$annotations", "getMessageFlags", "()Ljava/lang/Long;", "Ljava/lang/Long;", "getMessageId-N_6c4I0$annotations", "getMessageId-N_6c4I0", "Ljava/lang/String;", "getMessageType$annotations", "getMessageType", "getNotificationChannel$annotations", "getNotificationChannel", "getParentId-qMVnFVQ$annotations", "getParentId-qMVnFVQ", "getParentName$annotations", "getParentName", "getRelationshipType$annotations", "getRelationshipType", "getStageInstanceTopic$annotations", "getStageInstanceTopic", "getSubtitle$annotations", "getSubtitle", "getTitle$annotations", "getTitle", "getTrackingType$annotations", "getTrackingType", "getType$annotations", "getType", "getUserAvatar$annotations", "getUserAvatar", "getUserDiscriminator$annotations", "getUserDiscriminator", "getUserGlobalName$annotations", "getUserGlobalName", "getUserGuildAvatar$annotations", "getUserGuildAvatar", "getUserId-wUX8bhU$annotations", "getUserId-wUX8bhU", "()Lcom/discord/primitives/UserId;", "getUserUsername$annotations", "getUserUsername", "component1", "component10", "component10-qMVnFVQ", "component11", "component12", "component13", "component13-qMVnFVQ", "component14", "component15", "component16", "component16-wUX8bhU", "component17", "component18", "component19", "component2", "component2-N_6c4I0", "component20", "component21", "component22", "component23", "component23-qOKuAAo", "component24", "component25", "component26", "component27", "component28", "component28-UtIrSio", "component29", "component3", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component4", "component40", "component41", "component42", "component43", "component5", "component6", "component7", "component8", "component9", "copy", "copy-NwZg3Ig", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/util/List;Lcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lcom/discord/primitives/ApplicationId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/notifications/api/NotificationMessage;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;)Lcom/discord/notifications/api/NotificationData;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "notification_api_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -168,7 +167,7 @@ public final class NotificationData {
         } else {
             this.channelType = num3;
         }
-        if ((i10 & Spliterator.NONNULL) == 0) {
+        if ((i10 & 256) == 0) {
             this.channelName = null;
         } else {
             this.channelName = str5;
@@ -178,7 +177,7 @@ public final class NotificationData {
         } else {
             this.channelId = channelId;
         }
-        if ((i10 & Spliterator.IMMUTABLE) == 0) {
+        if ((i10 & 1024) == 0) {
             this.channelIcon = null;
         } else {
             this.channelIcon = str6;
@@ -188,7 +187,7 @@ public final class NotificationData {
         } else {
             this.parentName = str7;
         }
-        if ((i10 & 4096) == 0) {
+        if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 0) {
             this.parentId = null;
         } else {
             this.parentId = channelId2;
@@ -198,7 +197,7 @@ public final class NotificationData {
         } else {
             this.channelRtcRegion = str8;
         }
-        this.ackChannelIds = (i10 & Spliterator.SUBSIZED) == 0 ? j.i() : list;
+        this.ackChannelIds = (i10 & 16384) == 0 ? j.h() : list;
         if ((32768 & i10) == 0) {
             this.userId = null;
         } else {
@@ -324,13 +323,13 @@ public final class NotificationData {
         } else {
             this.trackingType = str23;
         }
-        if ((i11 & Spliterator.NONNULL) == 0) {
+        if ((i11 & 256) == 0) {
             this.deeplink = null;
         } else {
             this.deeplink = str24;
         }
         this.expandSubtitle = (i11 & 512) == 0 ? Boolean.FALSE : bool;
-        if ((i11 & Spliterator.IMMUTABLE) == 0) {
+        if ((i11 & 1024) == 0) {
             this.imageAttachmentUrl = null;
         } else {
             this.imageAttachmentUrl = str25;
@@ -359,7 +358,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio$annotations  reason: not valid java name */
-    public static /* synthetic */ void m516getApplicationIdUtIrSio$annotations() {
+    public static /* synthetic */ void m515getApplicationIdUtIrSio$annotations() {
     }
 
     public static /* synthetic */ void getApplicationName$annotations() {
@@ -373,7 +372,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m517getChannelIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m516getChannelIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getChannelName$annotations() {
@@ -395,7 +394,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo$annotations  reason: not valid java name */
-    public static /* synthetic */ void m518getGuildIdqOKuAAo$annotations() {
+    public static /* synthetic */ void m517getGuildIdqOKuAAo$annotations() {
     }
 
     public static /* synthetic */ void getGuildName$annotations() {
@@ -427,7 +426,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0$annotations  reason: not valid java name */
-    public static /* synthetic */ void m519getMessageIdN_6c4I0$annotations() {
+    public static /* synthetic */ void m518getMessageIdN_6c4I0$annotations() {
     }
 
     public static /* synthetic */ void getMessageType$annotations() {
@@ -437,7 +436,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ$annotations  reason: not valid java name */
-    public static /* synthetic */ void m520getParentIdqMVnFVQ$annotations() {
+    public static /* synthetic */ void m519getParentIdqMVnFVQ$annotations() {
     }
 
     public static /* synthetic */ void getParentName$annotations() {
@@ -474,7 +473,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU$annotations  reason: not valid java name */
-    public static /* synthetic */ void m521getUserIdwUX8bhU$annotations() {
+    public static /* synthetic */ void m520getUserIdwUX8bhU$annotations() {
     }
 
     public static /* synthetic */ void getUserUsername$annotations() {
@@ -557,7 +556,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component10-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m522component10qMVnFVQ() {
+    public final ChannelId m521component10qMVnFVQ() {
         return this.channelId;
     }
 
@@ -570,7 +569,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component13-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m523component13qMVnFVQ() {
+    public final ChannelId m522component13qMVnFVQ() {
         return this.parentId;
     }
 
@@ -583,7 +582,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component16-wUX8bhU  reason: not valid java name */
-    public final UserId m524component16wUX8bhU() {
+    public final UserId m523component16wUX8bhU() {
         return this.userId;
     }
 
@@ -600,7 +599,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component2-N_6c4I0  reason: not valid java name */
-    public final String m525component2N_6c4I0() {
+    public final String m524component2N_6c4I0() {
         return this.messageId;
     }
 
@@ -617,7 +616,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component23-qOKuAAo  reason: not valid java name */
-    public final GuildId m526component23qOKuAAo() {
+    public final GuildId m525component23qOKuAAo() {
         return this.guildId;
     }
 
@@ -638,7 +637,7 @@ public final class NotificationData {
     }
 
     /* renamed from: component28-UtIrSio  reason: not valid java name */
-    public final ApplicationId m527component28UtIrSio() {
+    public final ApplicationId m526component28UtIrSio() {
         return this.applicationId;
     }
 
@@ -731,7 +730,7 @@ public final class NotificationData {
     }
 
     /* renamed from: copy-NwZg3Ig  reason: not valid java name */
-    public final NotificationData m528copyNwZg3Ig(String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, String str7, List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num4, String str10, String str11, Integer num5, GuildId guildId, String str12, String str13, Integer num6, String str14, ApplicationId applicationId, String str15, String str16, NotificationMessage notificationMessage, String str17, Integer num7, boolean z10, boolean z11, String str18, String str19, String str20, String str21, String str22, String str23, Boolean bool, String str24) {
+    public final NotificationData m527copyNwZg3Ig(String type, String str, Integer num, String str2, Integer num2, String str3, Long l10, Integer num3, String str4, ChannelId channelId, String str5, String str6, ChannelId channelId2, String str7, List<ChannelId> ackChannelIds, UserId userId, String str8, String str9, Integer num4, String str10, String str11, Integer num5, GuildId guildId, String str12, String str13, Integer num6, String str14, ApplicationId applicationId, String str15, String str16, NotificationMessage notificationMessage, String str17, Integer num7, boolean z10, boolean z11, String str18, String str19, String str20, String str21, String str22, String str23, Boolean bool, String str24) {
         q.g(type, "type");
         q.g(ackChannelIds, "ackChannelIds");
         return new NotificationData(type, str, num, str2, num2, str3, l10, num3, str4, channelId, str5, str6, channelId2, str7, ackChannelIds, userId, str8, str9, num4, str10, str11, num5, guildId, str12, str13, num6, str14, applicationId, str15, str16, notificationMessage, str17, num7, z10, z11, str18, str19, str20, str21, str22, str23, bool, str24, null);
@@ -768,7 +767,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getApplicationId-UtIrSio  reason: not valid java name */
-    public final ApplicationId m529getApplicationIdUtIrSio() {
+    public final ApplicationId m528getApplicationIdUtIrSio() {
         return this.applicationId;
     }
 
@@ -785,7 +784,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m530getChannelIdqMVnFVQ() {
+    public final ChannelId m529getChannelIdqMVnFVQ() {
         return this.channelId;
     }
 
@@ -814,7 +813,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getGuildId-qOKuAAo  reason: not valid java name */
-    public final GuildId m531getGuildIdqOKuAAo() {
+    public final GuildId m530getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
@@ -855,7 +854,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
-    public final String m532getMessageIdN_6c4I0() {
+    public final String m531getMessageIdN_6c4I0() {
         return this.messageId;
     }
 
@@ -868,7 +867,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getParentId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m533getParentIdqMVnFVQ() {
+    public final ChannelId m532getParentIdqMVnFVQ() {
         return this.parentId;
     }
 
@@ -917,7 +916,7 @@ public final class NotificationData {
     }
 
     /* renamed from: getUserId-wUX8bhU  reason: not valid java name */
-    public final UserId m534getUserIdwUX8bhU() {
+    public final UserId m533getUserIdwUX8bhU() {
         return this.userId;
     }
 
@@ -929,7 +928,7 @@ public final class NotificationData {
         int hashCode = this.type.hashCode() * 31;
         String str = this.messageId;
         int i10 = 0;
-        int i11 = (hashCode + (str == null ? 0 : MessageId.m594hashCodeimpl(str))) * 31;
+        int i11 = (hashCode + (str == null ? 0 : MessageId.m593hashCodeimpl(str))) * 31;
         Integer num = this.messageActivityType;
         int hashCode2 = (i11 + (num == null ? 0 : num.hashCode())) * 31;
         String str2 = this.messageApplicationName;
@@ -945,17 +944,17 @@ public final class NotificationData {
         String str4 = this.channelName;
         int hashCode8 = (hashCode7 + (str4 == null ? 0 : str4.hashCode())) * 31;
         ChannelId channelId = this.channelId;
-        int i12 = (hashCode8 + (channelId == null ? 0 : ChannelId.m568hashCodeimpl(channelId.m572unboximpl()))) * 31;
+        int i12 = (hashCode8 + (channelId == null ? 0 : ChannelId.m567hashCodeimpl(channelId.m571unboximpl()))) * 31;
         String str5 = this.channelIcon;
         int hashCode9 = (i12 + (str5 == null ? 0 : str5.hashCode())) * 31;
         String str6 = this.parentName;
         int hashCode10 = (hashCode9 + (str6 == null ? 0 : str6.hashCode())) * 31;
         ChannelId channelId2 = this.parentId;
-        int i13 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m568hashCodeimpl(channelId2.m572unboximpl()))) * 31;
+        int i13 = (hashCode10 + (channelId2 == null ? 0 : ChannelId.m567hashCodeimpl(channelId2.m571unboximpl()))) * 31;
         String str7 = this.channelRtcRegion;
         int hashCode11 = (((i13 + (str7 == null ? 0 : str7.hashCode())) * 31) + this.ackChannelIds.hashCode()) * 31;
         UserId userId = this.userId;
-        int i14 = (hashCode11 + (userId == null ? 0 : UserId.m632hashCodeimpl(userId.m636unboximpl()))) * 31;
+        int i14 = (hashCode11 + (userId == null ? 0 : UserId.m631hashCodeimpl(userId.m635unboximpl()))) * 31;
         String str8 = this.userUsername;
         int hashCode12 = (i14 + (str8 == null ? 0 : str8.hashCode())) * 31;
         String str9 = this.userGlobalName;
@@ -969,7 +968,7 @@ public final class NotificationData {
         Integer num5 = this.relationshipType;
         int hashCode17 = (hashCode16 + (num5 == null ? 0 : num5.hashCode())) * 31;
         GuildId guildId = this.guildId;
-        int i15 = (hashCode17 + (guildId == null ? 0 : GuildId.m581hashCodeimpl(guildId.m585unboximpl()))) * 31;
+        int i15 = (hashCode17 + (guildId == null ? 0 : GuildId.m580hashCodeimpl(guildId.m584unboximpl()))) * 31;
         String str12 = this.guildName;
         int hashCode18 = (i15 + (str12 == null ? 0 : str12.hashCode())) * 31;
         String str13 = this.guildIcon;
@@ -979,7 +978,7 @@ public final class NotificationData {
         String str14 = this.activityName;
         int hashCode21 = (hashCode20 + (str14 == null ? 0 : str14.hashCode())) * 31;
         ApplicationId applicationId = this.applicationId;
-        int i16 = (hashCode21 + (applicationId == null ? 0 : ApplicationId.m555hashCodeimpl(applicationId.m559unboximpl()))) * 31;
+        int i16 = (hashCode21 + (applicationId == null ? 0 : ApplicationId.m554hashCodeimpl(applicationId.m558unboximpl()))) * 31;
         String str15 = this.applicationName;
         int hashCode22 = (i16 + (str15 == null ? 0 : str15.hashCode())) * 31;
         String str16 = this.applicationIcon;
@@ -1032,7 +1031,7 @@ public final class NotificationData {
     public String toString() {
         String str = this.type;
         String str2 = this.messageId;
-        String str3 = str2 == null ? "null" : MessageId.m595toStringimpl(str2);
+        String str3 = str2 == null ? "null" : MessageId.m594toStringimpl(str2);
         Integer num = this.messageActivityType;
         String str4 = this.messageApplicationName;
         Integer num2 = this.messageType;
@@ -1124,6 +1123,6 @@ public final class NotificationData {
     }
 
     public /* synthetic */ NotificationData(String str, String str2, Integer num, String str3, Integer num2, String str4, Long l10, Integer num3, String str5, ChannelId channelId, String str6, String str7, ChannelId channelId2, String str8, List list, UserId userId, String str9, String str10, Integer num4, String str11, String str12, Integer num5, GuildId guildId, String str13, String str14, Integer num6, String str15, ApplicationId applicationId, String str16, String str17, NotificationMessage notificationMessage, String str18, Integer num7, boolean z10, boolean z11, String str19, String str20, String str21, String str22, String str23, String str24, Boolean bool, String str25, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : num, (i10 & 8) != 0 ? null : str3, (i10 & 16) != 0 ? null : num2, (i10 & 32) != 0 ? null : str4, (i10 & 64) != 0 ? null : l10, (i10 & 128) != 0 ? null : num3, (i10 & Spliterator.NONNULL) != 0 ? null : str5, (i10 & 512) != 0 ? null : channelId, (i10 & Spliterator.IMMUTABLE) != 0 ? null : str6, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : str7, (i10 & 4096) != 0 ? null : channelId2, (i10 & 8192) != 0 ? null : str8, (i10 & Spliterator.SUBSIZED) != 0 ? j.i() : list, (i10 & 32768) != 0 ? null : userId, (i10 & 65536) != 0 ? null : str9, (i10 & 131072) != 0 ? null : str10, (i10 & 262144) != 0 ? null : num4, (i10 & 524288) != 0 ? null : str11, (i10 & 1048576) != 0 ? null : str12, (i10 & 2097152) != 0 ? null : num5, (i10 & 4194304) != 0 ? null : guildId, (i10 & 8388608) != 0 ? null : str13, (i10 & 16777216) != 0 ? null : str14, (i10 & 33554432) != 0 ? null : num6, (i10 & 67108864) != 0 ? null : str15, (i10 & 134217728) != 0 ? null : applicationId, (i10 & 268435456) != 0 ? null : str16, (i10 & 536870912) != 0 ? null : str17, (i10 & 1073741824) != 0 ? null : notificationMessage, (i10 & Integer.MIN_VALUE) != 0 ? null : str18, (i11 & 1) != 0 ? null : num7, (i11 & 2) != 0 ? false : z10, (i11 & 4) == 0 ? z11 : false, (i11 & 8) != 0 ? null : str19, (i11 & 16) != 0 ? null : str20, (i11 & 32) != 0 ? null : str21, (i11 & 64) != 0 ? null : str22, (i11 & 128) != 0 ? null : str23, (i11 & Spliterator.NONNULL) != 0 ? null : str24, (i11 & 512) != 0 ? Boolean.FALSE : bool, (i11 & Spliterator.IMMUTABLE) != 0 ? null : str25, null);
+        this(str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : num, (i10 & 8) != 0 ? null : str3, (i10 & 16) != 0 ? null : num2, (i10 & 32) != 0 ? null : str4, (i10 & 64) != 0 ? null : l10, (i10 & 128) != 0 ? null : num3, (i10 & 256) != 0 ? null : str5, (i10 & 512) != 0 ? null : channelId, (i10 & 1024) != 0 ? null : str6, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : str7, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : channelId2, (i10 & 8192) != 0 ? null : str8, (i10 & 16384) != 0 ? j.h() : list, (i10 & 32768) != 0 ? null : userId, (i10 & 65536) != 0 ? null : str9, (i10 & 131072) != 0 ? null : str10, (i10 & 262144) != 0 ? null : num4, (i10 & 524288) != 0 ? null : str11, (i10 & 1048576) != 0 ? null : str12, (i10 & 2097152) != 0 ? null : num5, (i10 & 4194304) != 0 ? null : guildId, (i10 & 8388608) != 0 ? null : str13, (i10 & 16777216) != 0 ? null : str14, (i10 & 33554432) != 0 ? null : num6, (i10 & 67108864) != 0 ? null : str15, (i10 & 134217728) != 0 ? null : applicationId, (i10 & 268435456) != 0 ? null : str16, (i10 & 536870912) != 0 ? null : str17, (i10 & 1073741824) != 0 ? null : notificationMessage, (i10 & Integer.MIN_VALUE) != 0 ? null : str18, (i11 & 1) != 0 ? null : num7, (i11 & 2) != 0 ? false : z10, (i11 & 4) == 0 ? z11 : false, (i11 & 8) != 0 ? null : str19, (i11 & 16) != 0 ? null : str20, (i11 & 32) != 0 ? null : str21, (i11 & 64) != 0 ? null : str22, (i11 & 128) != 0 ? null : str23, (i11 & 256) != 0 ? null : str24, (i11 & 512) != 0 ? Boolean.FALSE : bool, (i11 & 1024) != 0 ? null : str25, null);
     }
 }

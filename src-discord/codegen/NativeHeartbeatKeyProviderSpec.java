@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import h6.a;
+import f5.a;
 
 /* loaded from: classes8.dex */
 public abstract class NativeHeartbeatKeyProviderSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
@@ -14,19 +14,19 @@ public abstract class NativeHeartbeatKeyProviderSpec extends ReactContextBaseJav
     }
 
     @a
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public abstract String getHeartbeatInitializedTimestamp();
 
     @a
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public abstract String getHeartbeatRefreshedTimestamp();
 
     @a
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public abstract String getHeartbeatUUID();
 
     @a
-    @ReactMethod(isBlockingSynchronousMethod = true)
+    @ReactMethod(isBlockingSynchronousMethod = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED)
     public abstract String getLatestHeartbeatEventTimestamp();
 
     @a

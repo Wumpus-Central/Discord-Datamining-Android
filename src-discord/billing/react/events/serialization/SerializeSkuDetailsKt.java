@@ -4,9 +4,9 @@ import com.android.billingclient.api.SkuDetails;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReadableNativeArray;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
@@ -15,10 +15,10 @@ import kotlin.jvm.internal.q;
 /* loaded from: classes.dex */
 public final class SerializeSkuDetailsKt {
     public static final ReadableNativeArray serializeSkuDetails(List<? extends SkuDetails> list) {
-        int t10;
+        int s10;
         q.g(list, "<this>");
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (SkuDetails skuDetails : list) {
             arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("identifier", skuDetails.e()), x.a("title", skuDetails.f()), x.a("description", skuDetails.a()), x.a("priceString", skuDetails.b()), x.a("currencyCode", skuDetails.d()), x.a("price", Integer.valueOf((int) (skuDetails.c() / 10000))), x.a("type", skuDetails.g())));
         }

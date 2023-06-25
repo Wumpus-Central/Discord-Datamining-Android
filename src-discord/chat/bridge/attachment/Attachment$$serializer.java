@@ -1,7 +1,6 @@
 package com.discord.chat.bridge.attachment;
 
 import androidx.recyclerview.widget.RecyclerView;
-import j$.util.Spliterator;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.KSerializer;
@@ -12,15 +11,15 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.b;
-import vj.n;
-import wj.a;
-import yj.a2;
-import yj.e0;
-import yj.f0;
-import yj.h;
-import yj.m0;
+import qi.n;
+import ri.a;
+import ti.a2;
+import ti.e0;
+import ti.f0;
+import ti.h;
+import ti.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/attachment/Attachment.$serializer", "Lyj/f0;", "Lcom/discord/chat/bridge/attachment/Attachment;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/attachment/Attachment.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/attachment/Attachment;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes8.dex */
 public final class Attachment$$serializer implements f0<Attachment> {
     public static final Attachment$$serializer INSTANCE;
@@ -58,12 +57,12 @@ public final class Attachment$$serializer implements f0<Attachment> {
     private Attachment$$serializer() {
     }
 
-    @Override // yj.f0
+    @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f32933a;
-        m0 m0Var = m0.f33008a;
-        h hVar = h.f32975a;
-        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f32958a), a.u(a2Var), hVar, a.u(b.f22603c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
+        a2 a2Var = a2.f26939a;
+        m0 m0Var = m0.f27014a;
+        h hVar = h.f26981a;
+        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f26964a), a.u(a2Var), hVar, a.u(b.f21174c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -94,32 +93,32 @@ public final class Attachment$$serializer implements f0<Attachment> {
         int i11;
         q.g(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
-        c b10 = decoder.b(descriptor2);
-        if (b10.p()) {
-            str3 = b10.m(descriptor2, 0);
-            a2 a2Var = a2.f32933a;
-            obj12 = b10.n(descriptor2, 1, a2Var, null);
-            str2 = b10.m(descriptor2, 2);
-            str = b10.m(descriptor2, 3);
-            m0 m0Var = m0.f33008a;
-            obj4 = b10.n(descriptor2, 4, m0Var, null);
-            obj5 = b10.n(descriptor2, 5, m0Var, null);
-            z10 = b10.C(descriptor2, 6);
-            obj9 = b10.n(descriptor2, 7, a2Var, null);
-            obj3 = b10.n(descriptor2, 8, a2Var, null);
-            obj2 = b10.n(descriptor2, 9, a2Var, null);
-            obj8 = b10.n(descriptor2, 10, a2Var, null);
-            z12 = b10.C(descriptor2, 11);
-            obj16 = b10.n(descriptor2, 12, m0Var, null);
-            obj13 = b10.n(descriptor2, 13, a2Var, null);
-            obj6 = b10.n(descriptor2, 14, a2Var, null);
-            obj7 = b10.n(descriptor2, 15, e0.f32958a, null);
-            obj11 = b10.n(descriptor2, 16, a2Var, null);
-            z11 = b10.C(descriptor2, 17);
-            obj15 = b10.n(descriptor2, 18, b.f22603c, null);
-            obj10 = b10.n(descriptor2, 19, a2Var, null);
-            obj = b10.n(descriptor2, 20, m0Var, null);
-            obj14 = b10.n(descriptor2, 21, m0Var, null);
+        c c10 = decoder.c(descriptor2);
+        if (c10.y()) {
+            str3 = c10.t(descriptor2, 0);
+            a2 a2Var = a2.f26939a;
+            obj12 = c10.v(descriptor2, 1, a2Var, null);
+            str2 = c10.t(descriptor2, 2);
+            str = c10.t(descriptor2, 3);
+            m0 m0Var = m0.f27014a;
+            obj4 = c10.v(descriptor2, 4, m0Var, null);
+            obj5 = c10.v(descriptor2, 5, m0Var, null);
+            z10 = c10.s(descriptor2, 6);
+            obj9 = c10.v(descriptor2, 7, a2Var, null);
+            obj3 = c10.v(descriptor2, 8, a2Var, null);
+            obj2 = c10.v(descriptor2, 9, a2Var, null);
+            obj8 = c10.v(descriptor2, 10, a2Var, null);
+            z12 = c10.s(descriptor2, 11);
+            obj16 = c10.v(descriptor2, 12, m0Var, null);
+            obj13 = c10.v(descriptor2, 13, a2Var, null);
+            obj6 = c10.v(descriptor2, 14, a2Var, null);
+            obj7 = c10.v(descriptor2, 15, e0.f26964a, null);
+            obj11 = c10.v(descriptor2, 16, a2Var, null);
+            z11 = c10.s(descriptor2, 17);
+            obj15 = c10.v(descriptor2, 18, b.f21174c, null);
+            obj10 = c10.v(descriptor2, 19, a2Var, null);
+            obj = c10.v(descriptor2, 20, m0Var, null);
+            obj14 = c10.v(descriptor2, 21, m0Var, null);
             i10 = 4194303;
         } else {
             Object obj17 = null;
@@ -147,8 +146,8 @@ public final class Attachment$$serializer implements f0<Attachment> {
             z10 = false;
             Object obj31 = null;
             while (z13) {
-                int o10 = b10.o(descriptor2);
-                switch (o10) {
+                int x10 = c10.x(descriptor2);
+                switch (x10) {
                     case -1:
                         obj18 = obj18;
                         obj19 = obj19;
@@ -161,7 +160,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj21 = obj21;
                         obj20 = obj20;
-                        str6 = b10.m(descriptor2, 0);
+                        str6 = c10.t(descriptor2, 0);
                         i12 |= 1;
                         break;
                     case 1:
@@ -169,7 +168,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj21 = obj21;
                         obj20 = obj20;
-                        obj28 = b10.n(descriptor2, 1, a2.f32933a, obj28);
+                        obj28 = c10.v(descriptor2, 1, a2.f26939a, obj28);
                         i12 |= 2;
                         obj29 = obj29;
                         break;
@@ -178,7 +177,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj21 = obj21;
                         obj20 = obj20;
-                        str4 = b10.m(descriptor2, 2);
+                        str4 = c10.t(descriptor2, 2);
                         i12 |= 4;
                         break;
                     case 3:
@@ -186,7 +185,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj21 = obj21;
                         obj20 = obj20;
-                        str5 = b10.m(descriptor2, 3);
+                        str5 = c10.t(descriptor2, 3);
                         i12 |= 8;
                         break;
                     case 4:
@@ -194,121 +193,121 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj20 = obj20;
                         obj21 = obj21;
-                        obj29 = b10.n(descriptor2, 4, m0.f33008a, obj29);
+                        obj29 = c10.v(descriptor2, 4, m0.f27014a, obj29);
                         i12 |= 16;
                         break;
                     case 5:
                         obj18 = obj18;
                         obj19 = obj19;
                         obj20 = obj20;
-                        obj30 = b10.n(descriptor2, 5, m0.f33008a, obj30);
+                        obj30 = c10.v(descriptor2, 5, m0.f27014a, obj30);
                         i12 |= 32;
                         break;
                     case 6:
                         obj18 = obj18;
                         obj19 = obj19;
-                        z10 = b10.C(descriptor2, 6);
+                        z10 = c10.s(descriptor2, 6);
                         i12 |= 64;
                         obj20 = obj20;
                         break;
                     case 7:
                         obj18 = obj18;
                         obj19 = obj19;
-                        obj20 = b10.n(descriptor2, 7, a2.f32933a, obj20);
+                        obj20 = c10.v(descriptor2, 7, a2.f26939a, obj20);
                         i12 |= 128;
                         break;
                     case 8:
-                        obj21 = b10.n(descriptor2, 8, a2.f32933a, obj21);
-                        i12 |= Spliterator.NONNULL;
+                        obj21 = c10.v(descriptor2, 8, a2.f26939a, obj21);
+                        i12 |= 256;
                         obj18 = obj18;
                         obj20 = obj20;
                         break;
                     case 9:
                         obj21 = obj21;
-                        obj19 = b10.n(descriptor2, 9, a2.f32933a, obj19);
+                        obj19 = c10.v(descriptor2, 9, a2.f26939a, obj19);
                         i12 |= 512;
                         obj20 = obj20;
                         break;
                     case 10:
                         obj21 = obj21;
-                        obj27 = b10.n(descriptor2, 10, a2.f32933a, obj27);
-                        i12 |= Spliterator.IMMUTABLE;
+                        obj27 = c10.v(descriptor2, 10, a2.f26939a, obj27);
+                        i12 |= 1024;
                         obj20 = obj20;
                         break;
                     case 11:
                         obj21 = obj21;
-                        z12 = b10.C(descriptor2, 11);
+                        z12 = c10.s(descriptor2, 11);
                         i12 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         obj20 = obj20;
                         break;
                     case 12:
                         obj21 = obj21;
-                        obj26 = b10.n(descriptor2, 12, m0.f33008a, obj26);
-                        i12 |= 4096;
+                        obj26 = c10.v(descriptor2, 12, m0.f27014a, obj26);
+                        i12 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         obj20 = obj20;
                         break;
                     case 13:
                         obj21 = obj21;
-                        obj13 = b10.n(descriptor2, 13, a2.f32933a, obj13);
+                        obj13 = c10.v(descriptor2, 13, a2.f26939a, obj13);
                         i12 |= 8192;
                         obj20 = obj20;
                         break;
                     case 14:
                         obj21 = obj21;
-                        obj25 = b10.n(descriptor2, 14, a2.f32933a, obj25);
-                        i12 |= Spliterator.SUBSIZED;
+                        obj25 = c10.v(descriptor2, 14, a2.f26939a, obj25);
+                        i12 |= 16384;
                         obj20 = obj20;
                         break;
                     case 15:
                         obj21 = obj21;
-                        obj24 = b10.n(descriptor2, 15, e0.f32958a, obj24);
+                        obj24 = c10.v(descriptor2, 15, e0.f26964a, obj24);
                         i11 = 32768;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 16:
                         obj21 = obj21;
-                        obj17 = b10.n(descriptor2, 16, a2.f32933a, obj17);
+                        obj17 = c10.v(descriptor2, 16, a2.f26939a, obj17);
                         i11 = 65536;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 17:
                         obj21 = obj21;
-                        z11 = b10.C(descriptor2, 17);
+                        z11 = c10.s(descriptor2, 17);
                         i12 |= 131072;
                         obj20 = obj20;
                         break;
                     case 18:
                         obj21 = obj21;
-                        obj23 = b10.n(descriptor2, 18, b.f22603c, obj23);
+                        obj23 = c10.v(descriptor2, 18, b.f21174c, obj23);
                         i11 = 262144;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 19:
                         obj21 = obj21;
-                        obj31 = b10.n(descriptor2, 19, a2.f32933a, obj31);
+                        obj31 = c10.v(descriptor2, 19, a2.f26939a, obj31);
                         i11 = 524288;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 20:
                         obj21 = obj21;
-                        obj18 = b10.n(descriptor2, 20, m0.f33008a, obj18);
+                        obj18 = c10.v(descriptor2, 20, m0.f27014a, obj18);
                         i11 = 1048576;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 21:
                         obj21 = obj21;
-                        obj22 = b10.n(descriptor2, 21, m0.f33008a, obj22);
+                        obj22 = c10.v(descriptor2, 21, m0.f27014a, obj22);
                         i11 = 2097152;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     default:
-                        throw new n(o10);
+                        throw new n(x10);
                 }
             }
             obj = obj18;
@@ -331,11 +330,11 @@ public final class Attachment$$serializer implements f0<Attachment> {
             obj11 = obj17;
             obj12 = obj28;
         }
-        b10.c(descriptor2);
+        c10.b(descriptor2);
         return new Attachment(i10, str3, (String) obj12, str2, str, (Integer) obj4, (Integer) obj5, z10, (String) obj9, (String) obj3, (String) obj2, (String) obj8, z12, (Integer) obj16, (String) obj13, (String) obj6, (Float) obj7, (String) obj11, z11, (byte[]) obj15, (String) obj10, (Integer) obj, (Integer) obj14, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, vj.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -344,12 +343,12 @@ public final class Attachment$$serializer implements f0<Attachment> {
         q.g(encoder, "encoder");
         q.g(value, "value");
         SerialDescriptor descriptor2 = getDescriptor();
-        CompositeEncoder b10 = encoder.b(descriptor2);
-        Attachment.write$Self(value, b10, descriptor2);
-        b10.c(descriptor2);
+        CompositeEncoder c10 = encoder.c(descriptor2);
+        Attachment.write$Self(value, c10, descriptor2);
+        c10.b(descriptor2);
     }
 
-    @Override // yj.f0
+    @Override // ti.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

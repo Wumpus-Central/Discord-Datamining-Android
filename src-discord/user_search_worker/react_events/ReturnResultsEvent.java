@@ -5,9 +5,9 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.discord.user_search_worker.UserSearchWorkerResult;
 import com.facebook.react.bridge.WritableMap;
+import gf.x;
 import java.util.ArrayList;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -106,15 +106,15 @@ public final class ReturnResultsEvent implements ReactEvent {
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableMap serialize() {
-        int t10;
+        int s10;
         Pair[] pairArr = new Pair[3];
         pairArr[0] = x.a("uuid", this.uuid);
         pairArr[1] = x.a("type", this.type);
         Pair[] pairArr2 = new Pair[2];
         pairArr2[0] = x.a("query", this.query);
         List<UserSearchWorkerResult> list = this.results;
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (UserSearchWorkerResult userSearchWorkerResult : list) {
             arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("id", userSearchWorkerResult.getId()), x.a("username", userSearchWorkerResult.getUsername()), x.a("comparator", userSearchWorkerResult.getComparator()), x.a("score", Double.valueOf(userSearchWorkerResult.getScore()))));
         }

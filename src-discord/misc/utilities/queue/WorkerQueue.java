@@ -27,8 +27,8 @@ public final class WorkerQueue<T> {
 
     public final boolean updateWorker(T t10, boolean z10, Function1<? super T, Unit> onWorkerActive) {
         Object obj;
-        Object V;
-        Object h02;
+        Object T;
+        Object f02;
         q.g(onWorkerActive, "onWorkerActive");
         if (z10) {
             T t11 = this.currWorker;
@@ -39,11 +39,11 @@ public final class WorkerQueue<T> {
             }
         } else if (q.b(this.currWorker, t10)) {
             if (this.popFromEnd) {
-                h02 = r.h0(this.nextWorkers);
-                obj = (T) h02;
+                f02 = r.f0(this.nextWorkers);
+                obj = (T) f02;
             } else {
-                V = r.V(this.nextWorkers);
-                obj = (T) V;
+                T = r.T(this.nextWorkers);
+                obj = (T) T;
             }
             this.currWorker = (T) obj;
             if (obj != null) {

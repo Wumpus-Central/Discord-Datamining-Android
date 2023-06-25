@@ -48,7 +48,7 @@ public final class MessageViewAccessibilityDelegate extends a {
     public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
         SpoilerSpan[] spoilerSpanArr;
         EmojiAccessibilitySpan[] emojiAccessibilitySpanArr;
-        String e02;
+        String c02;
         q.g(host, "host");
         q.g(info, "info");
         super.onInitializeAccessibilityNodeInfo(host, info);
@@ -83,11 +83,11 @@ public final class MessageViewAccessibilityDelegate extends a {
             arrayList.add(referencedMessageLabel);
         }
         if (!arrayList.isEmpty()) {
-            e02 = r.e0(arrayList, ", ", null, null, 0, null, null, 62, null);
-            spannableStringBuilder.replace(0, 0, (CharSequence) (e02 + ", "));
+            c02 = r.c0(arrayList, ", ", null, null, 0, null, null, 62, null);
+            spannableStringBuilder.replace(0, 0, (CharSequence) (c02 + ", "));
         }
         info.D0(spannableStringBuilder);
-        info.S(AccessibilityNodeInfoCompat.a.f3507i);
+        info.S(AccessibilityNodeInfoCompat.a.f3041i);
         info.p0(15);
     }
 

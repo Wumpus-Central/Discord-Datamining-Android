@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.discord.chat.R;
 import com.discord.core.DCDButton;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class FlaggedMessageActionBarViewBinding {

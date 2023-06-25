@@ -856,10 +856,6 @@
         <enum name="adjust_height" value="2" />
     </attr>
     <attr name="imageButtonStyle" format="reference" />
-    <attr name="implementationMode">
-        <enum name="performance" value="0" />
-        <enum name="compatible" value="1" />
-    </attr>
     <attr name="indeterminateAnimationType">
         <enum name="contiguous" value="0" />
         <enum name="disjoint" value="1" />
@@ -1542,14 +1538,6 @@
     <attr name="roundingBorderPadding" format="dimension" />
     <attr name="roundingBorderWidth" format="dimension" />
     <attr name="saturation" format="float" />
-    <attr name="scaleType">
-        <enum name="fillStart" value="0" />
-        <enum name="fillCenter" value="1" />
-        <enum name="fillEnd" value="2" />
-        <enum name="fitStart" value="3" />
-        <enum name="fitCenter" value="4" />
-        <enum name="fitEnd" value="5" />
-    </attr>
     <attr name="scopeUris" format="reference|string" />
     <attr name="scrimAnimationDuration" format="integer" />
     <attr name="scrimBackground" format="reference|color" />

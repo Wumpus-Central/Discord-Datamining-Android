@@ -44,8 +44,8 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.facebook.react.uimanager.ViewProps;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
+import gf.n;
 import java.util.List;
-import kg.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.j;
@@ -54,7 +54,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 import kotlin.reflect.KClass;
-import o4.c;
+import m3.c;
 
 @Metadata(d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 (2\u00020\u00012\b\u0012\u0004\u0012\u00020\u00030\u0002:\u0001(B%\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ \u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0016J\u000e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00030\u0019H\u0016J/\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010\t2\u0006\u0010 \u001a\u00020!H\u0002¢\u0006\u0002\u0010\"J\u001a\u0010#\u001a\u00020\u0012*\u00020$2\f\u0010%\u001a\b\u0012\u0004\u0012\u00020'0&H\u0002R\u001b\u0010\u000b\u001a\u00020\f8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\r\u0010\u000e¨\u0006)"}, d2 = {"Lcom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentView;", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "postProcessor", "Lcom/facebook/imagepipeline/request/BasePostprocessor;", "getPostProcessor", "()Lcom/facebook/imagepipeline/request/BasePostprocessor;", "postProcessor$delegate", "Lkotlin/Lazy;", "configure", "", "component", "componentProvider", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentActionListener", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentActionListener;", "getComponentType", "Lkotlin/reflect/KClass;", "setImage", "view", "Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;", "imageUrl", "", ViewProps.COLOR, "asCircle", "", "(Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;Ljava/lang/String;Ljava/lang/Integer;Z)V", "setSelectedOptions", "Lcom/google/android/flexbox/FlexboxLayout;", "selectedItems", "", "Lcom/discord/chat/bridge/botuikit/SelectItem;", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
@@ -118,7 +118,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
         a c10 = c.g().D(z11.a()).build();
         q.f(c10, "newDraweeControllerBuild…d())\n            .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f8129e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f7799e);
         q.f(w10, "newInstance(context.reso…ils.ScaleType.FIT_CENTER)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));
@@ -134,7 +134,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         for (Object obj : list) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.s();
+                j.r();
             }
             SelectItem selectItem = (SelectItem) obj;
             View childAt = flexboxLayout.getChildAt(i10);
@@ -165,7 +165,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
     }
 
     public void configure(final SelectComponent component, ComponentProvider componentProvider, final ComponentActionListener componentActionListener) {
-        Object W;
+        Object U;
         q.g(component, "component");
         q.g(componentProvider, "componentProvider");
         q.g(componentActionListener, "componentActionListener");
@@ -204,8 +204,8 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
             q.f(flexboxLayout2, "binding.selectComponentSelectionsRoot");
             flexboxLayout2.setVisibility(8);
             bind.selectComponentSelectionText.setTextColor(ThemeManagerKt.getTheme().getTextNormal());
-            W = r.W(selectedItems);
-            SelectItem selectItem = (SelectItem) W;
+            U = r.U(selectedItems);
+            SelectItem selectItem = (SelectItem) U;
             if (selectItem != null) {
                 bind.selectComponentSelectionText.setText(selectItem.getLabel());
                 if (selectItem.getEmoji() != null) {

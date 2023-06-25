@@ -23,7 +23,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$37 extends s imple
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -39,6 +39,6 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$37 extends s imple
         }
         str = this.this$0.messageId;
         q.d(str);
-        chatEventHandler.mo150onLinkClickedu7_MRrM(str, url, filename);
+        chatEventHandler.mo149onLinkClickedu7_MRrM(str, url, filename);
     }
 }

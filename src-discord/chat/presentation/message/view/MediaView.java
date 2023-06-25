@@ -30,7 +30,6 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ThemedReactContext;
-import j$.util.Spliterator;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -178,7 +177,7 @@ public class MediaView extends FrameLayout {
         MediaPlayer mediaPlayer = this.mediaPlayer;
         if (mediaPlayer != null) {
             mediaPlayer.reset();
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
             this.mediaPlayer = null;
         }
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;
@@ -189,7 +188,7 @@ public class MediaView extends FrameLayout {
 
     public static /* synthetic */ void setMediaData$default(MediaView mediaView, MediaSource mediaSource, boolean z10, boolean z11, boolean z12, MediaPlayer.Event event, boolean z13, Integer num, PortalViewContextManager.Event event2, boolean z14, boolean z15, boolean z16, int i10, Object obj) {
         if (obj == null) {
-            mediaView.setMediaData((i10 & 1) != 0 ? mediaView.mediaSource : mediaSource, (i10 & 2) != 0 ? mediaView.mediaViewDetached : z10, (i10 & 4) != 0 ? mediaView.mediaViewScrolling : z11, (i10 & 8) != 0 ? mediaView.mediaViewFocused : z12, (i10 & 16) != 0 ? mediaView.mediaPlaybackState : event, (i10 & 32) != 0 ? mediaView.mediaVolumeOn : z13, (i10 & 64) != 0 ? mediaView.mediaOrientation : num, (i10 & 128) != 0 ? mediaView.mediaPortalEvent : event2, (i10 & Spliterator.NONNULL) != 0 ? mediaView.mediaCanPlayInline : z14, (i10 & 512) != 0 ? mediaView.mediaPlayThirdParty : z15, (i10 & Spliterator.IMMUTABLE) != 0 ? mediaView.mediaHidePlayButton : z16);
+            mediaView.setMediaData((i10 & 1) != 0 ? mediaView.mediaSource : mediaSource, (i10 & 2) != 0 ? mediaView.mediaViewDetached : z10, (i10 & 4) != 0 ? mediaView.mediaViewScrolling : z11, (i10 & 8) != 0 ? mediaView.mediaViewFocused : z12, (i10 & 16) != 0 ? mediaView.mediaPlaybackState : event, (i10 & 32) != 0 ? mediaView.mediaVolumeOn : z13, (i10 & 64) != 0 ? mediaView.mediaOrientation : num, (i10 & 128) != 0 ? mediaView.mediaPortalEvent : event2, (i10 & 256) != 0 ? mediaView.mediaCanPlayInline : z14, (i10 & 512) != 0 ? mediaView.mediaPlayThirdParty : z15, (i10 & 1024) != 0 ? mediaView.mediaHidePlayButton : z16);
             return;
         }
         throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setMediaData");

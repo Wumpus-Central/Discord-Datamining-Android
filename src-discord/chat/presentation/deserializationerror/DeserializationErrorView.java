@@ -41,9 +41,9 @@ public final class DeserializationErrorView extends LinearLayout {
     public static final void configure$lambda$0(DeserializationErrorView this$0, String json, View view) {
         q.g(this$0, "this$0");
         q.g(json, "$json");
-        Object j10 = a.j(this$0.getContext(), ClipboardManager.class);
-        q.d(j10);
-        ((ClipboardManager) j10).setPrimaryClip(ClipData.newPlainText("Error JSON", json));
+        Object i10 = a.i(this$0.getContext(), ClipboardManager.class);
+        q.d(i10);
+        ((ClipboardManager) i10).setPrimaryClip(ClipData.newPlainText("Error JSON", json));
         Toast.makeText(this$0.getContext(), "Copied error json to clipboard", 0).show();
     }
 
@@ -54,7 +54,7 @@ public final class DeserializationErrorView extends LinearLayout {
         this.binding.exception.setText(causeMessage);
         Button button = this.binding.copyButton;
         q.f(button, "binding.copyButton");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button, false, new View.OnClickListener() { // from class: f3.a
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(button, false, new View.OnClickListener() { // from class: d2.a
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DeserializationErrorView.configure$lambda$0(DeserializationErrorView.this, json, view);

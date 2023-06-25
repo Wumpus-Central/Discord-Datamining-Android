@@ -25,7 +25,6 @@ import com.discord.reactions.ReactionsView;
 import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.view.SimpleDraweeView;
-import j$.util.Spliterator;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -62,7 +61,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
         reactionsView.setVisibility(0);
         ReactionsView reactionsView2 = this.binding.reactionsView;
         q.f(reactionsView2, "binding.reactionsView");
-        reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r34 & Spliterator.NONNULL) != 0 ? 
+        reactionsView2.setReactions(str, list, false, false, "", "", "", reactionsTheme, (r34 & 256) != 0 ? 
         /*  JADX ERROR: Method code generation error
             jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0039: INVOKE  
               (r5v1 'reactionsView2' com.discord.reactions.ReactionsView)
@@ -74,11 +73,11 @@ public final class ForumPostActionBarView extends ConstraintLayout {
               ("")
               ("")
               (r22v0 'reactionsTheme' com.discord.reactions.ReactionView$ReactionsTheme)
-              (wrap: android.view.View$OnClickListener : ?: TERNARYnull = ((wrap: int : 0x0002: ARITH  (r1v0 int A[REMOVE]) = (r34v0 int) & (wrap: ?? : ?: SGET   j$.util.Spliterator.NONNULL int)) != (0 int)) ? (wrap: android.view.View$OnClickListener : 0x000b: CONSTRUCTOR   call: com.discord.reactions.e.<init>():void type: CONSTRUCTOR) : (r23v0 'onClickListener' android.view.View$OnClickListener))
+              (wrap: android.view.View$OnClickListener : ?: TERNARYnull = ((wrap: int : 0x0002: ARITH  (r1v0 int A[REMOVE]) = (r34v0 int) & (256 int)) != (0 int)) ? (wrap: android.view.View$OnClickListener : 0x000b: CONSTRUCTOR   call: com.discord.reactions.e.<init>():void type: CONSTRUCTOR) : (r23v0 'onClickListener' android.view.View$OnClickListener))
               (wrap: android.view.View$OnClickListener : ?: TERNARYnull = ((wrap: int : 0x000f: ARITH  (r1v1 int A[REMOVE]) = (r34v0 int) & (512 int)) != (0 int)) ? (wrap: android.view.View$OnClickListener : 0x0018: CONSTRUCTOR   call: com.discord.reactions.f.<init>():void type: CONSTRUCTOR) : (null android.view.View$OnClickListener))
               (r24v0 'function1' kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView$Reaction, kotlin.Unit>)
               (wrap: kotlin.jvm.functions.Function1 : ?: TERNARYnull = ((wrap: int : 0x001c: ARITH  (r1v2 int A[REMOVE]) = (r34v0 int) & (wrap: ?? : ?: SGET   androidx.recyclerview.widget.RecyclerView.ItemAnimator.FLAG_MOVED int)) != (0 int)) ? (wrap: com.discord.reactions.ReactionsView$setReactions$3 : 0x0022: SGET   com.discord.reactions.ReactionsView$setReactions$3.INSTANCE com.discord.reactions.ReactionsView$setReactions$3) : (r25v0 'function12' kotlin.jvm.functions.Function1<? super com.discord.reactions.ReactionView$Reaction, kotlin.Unit>))
-              (wrap: com.discord.theme.DiscordTheme : ?: TERNARYnull = ((wrap: int : 0x0026: ARITH  (r1v3 int A[REMOVE]) = (r34v0 int) & (4096 int)) != (0 int)) ? (null com.discord.theme.DiscordTheme) : (null com.discord.theme.DiscordTheme))
+              (wrap: com.discord.theme.DiscordTheme : ?: TERNARYnull = ((wrap: int : 0x0026: ARITH  (r1v3 int A[REMOVE]) = (r34v0 int) & (wrap: ?? : ?: SGET   androidx.recyclerview.widget.RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT int)) != (0 int)) ? (null com.discord.theme.DiscordTheme) : (null com.discord.theme.DiscordTheme))
               (wrap: boolean : ?: TERNARYnull = ((wrap: int : 0x002f: ARITH  (r0v1 int A[REMOVE]) = (r34v0 int) & (8192 int)) != (0 int)) ? false : (wrap: boolean : 0x0031: INVOKE  (r15v1 boolean A[REMOVE]) = 
               (wrap: com.discord.chat.presentation.root.ChatView$Companion : 0x002f: SGET  (r15v0 com.discord.chat.presentation.root.ChatView$Companion A[REMOVE]) =  com.discord.chat.presentation.root.ChatView.Companion com.discord.chat.presentation.root.ChatView$Companion)
              type: VIRTUAL call: com.discord.chat.presentation.root.ChatView.Companion.getAreChatAnimationsEnabled():boolean))
@@ -198,13 +197,13 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     /* renamed from: configure-CgeVRR0  reason: not valid java name */
-    public final void m309configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, boolean z12, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick) {
+    public final void m308configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, boolean z12, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick) {
         boolean z13;
         Object obj;
         int i11;
         int i12;
         boolean z14;
-        List<? extends ReactionView.Reaction> x02;
+        List<? extends ReactionView.Reaction> v02;
         List d10;
         q.g(messageId, "messageId");
         q.g(followLabel, "followLabel");
@@ -227,7 +226,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m595toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, z12, 32, null);
+                setReactions$default(this, MessageId.m594toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, z12, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -236,11 +235,11 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             z13 = true;
             z13 = true;
             int i13 = i10 - 1;
-            x02 = r.x0(list, i13);
+            v02 = r.v0(list, i13);
             ReactionsView reactionsView2 = this.binding.reactionsView;
             q.f(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m595toStringimpl(messageId), x02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z12);
+            setReactions(MessageId.m594toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress, z12);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
             q.f(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");

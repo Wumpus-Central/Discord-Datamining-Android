@@ -21,7 +21,7 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$2 extends s implements
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

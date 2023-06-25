@@ -12,10 +12,10 @@ import com.discord.chat.R;
 import com.discord.core.DCDButton;
 import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
-public final class ActivityLauncherViewBinding {
+public final class ActivityBookmarkViewBinding {
     public final Barrier barrierFooter;
     public final SimpleDraweeView icon;
     public final ConstraintLayout itemBottomContainer;
@@ -29,7 +29,7 @@ public final class ActivityLauncherViewBinding {
     public final LinearLayout participantsInfoContainer;
     private final View rootView;
 
-    private ActivityLauncherViewBinding(View view, Barrier barrier, SimpleDraweeView simpleDraweeView, ConstraintLayout constraintLayout, TextView textView, TextView textView2, SimpleDraweeView simpleDraweeView2, DCDButton dCDButton, OverlappingCirclesView overlappingCirclesView, FrameLayout frameLayout, TextView textView3, LinearLayout linearLayout) {
+    private ActivityBookmarkViewBinding(View view, Barrier barrier, SimpleDraweeView simpleDraweeView, ConstraintLayout constraintLayout, TextView textView, TextView textView2, SimpleDraweeView simpleDraweeView2, DCDButton dCDButton, OverlappingCirclesView overlappingCirclesView, FrameLayout frameLayout, TextView textView3, LinearLayout linearLayout) {
         this.rootView = view;
         this.barrierFooter = barrier;
         this.icon = simpleDraweeView;
@@ -44,7 +44,7 @@ public final class ActivityLauncherViewBinding {
         this.participantsInfoContainer = linearLayout;
     }
 
-    public static ActivityLauncherViewBinding bind(View view) {
+    public static ActivityBookmarkViewBinding bind(View view) {
         int i10 = R.id.barrier_footer;
         Barrier barrier = (Barrier) a.a(view, i10);
         if (barrier != null) {
@@ -78,7 +78,7 @@ public final class ActivityLauncherViewBinding {
                                                 i10 = R.id.participants_info_container;
                                                 LinearLayout linearLayout = (LinearLayout) a.a(view, i10);
                                                 if (linearLayout != null) {
-                                                    return new ActivityLauncherViewBinding(view, barrier, simpleDraweeView, constraintLayout, textView, textView2, simpleDraweeView2, dCDButton, overlappingCirclesView, frameLayout, textView3, linearLayout);
+                                                    return new ActivityBookmarkViewBinding(view, barrier, simpleDraweeView, constraintLayout, textView, textView2, simpleDraweeView2, dCDButton, overlappingCirclesView, frameLayout, textView3, linearLayout);
                                                 }
                                             }
                                         }
@@ -93,9 +93,9 @@ public final class ActivityLauncherViewBinding {
         throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public static ActivityLauncherViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
+    public static ActivityBookmarkViewBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(R.layout.activity_launcher_view, viewGroup);
+            layoutInflater.inflate(R.layout.activity_bookmark_view, viewGroup);
             return bind(viewGroup);
         }
         throw new NullPointerException("parent");

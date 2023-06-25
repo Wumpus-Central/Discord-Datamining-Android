@@ -4,7 +4,6 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableNativeMap;
 import java.util.Map;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -57,6 +56,6 @@ public final class NotificationEvent implements ReactEvent {
 
     @Override // com.discord.reactevents.ReactEvent
     public WritableNativeMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("notification", NativeMapExtensionsKt.toNativeMap(this.notification)));
+        return NativeMapExtensionsKt.toNativeMap(this.notification);
     }
 }

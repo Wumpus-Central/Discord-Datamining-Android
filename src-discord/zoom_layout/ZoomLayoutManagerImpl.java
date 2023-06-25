@@ -7,8 +7,8 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerHelper;
 import com.otaliastudios.zoom.ZoomEngine;
+import gf.x;
 import java.util.Map;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Ref$ObjectRef;
 import kotlin.jvm.internal.f0;
@@ -31,7 +31,7 @@ public final class ZoomLayoutManagerImpl {
         q.g(reactContext, "reactContext");
         final ZoomLayoutFixed zoomLayoutFixed = new ZoomLayoutFixed(reactContext, null, 0, 6, null);
         final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f22140k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
+        ref$ObjectRef.f20711k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, zoomLayoutFixed.getId());
         zoomLayoutFixed.setOverScrollHorizontal(false);
         zoomLayoutFixed.setOverScrollVertical(false);
         zoomLayoutFixed.setOverPinchable(false);
@@ -45,7 +45,7 @@ public final class ZoomLayoutManagerImpl {
             public void onUpdate(ZoomEngine engine, Matrix matrix) {
                 q.g(engine, "engine");
                 q.g(matrix, "matrix");
-                ZoomLayoutManagerImpl.INSTANCE.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f22140k, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
+                ZoomLayoutManagerImpl.INSTANCE.getReactEvents$zoom_layout_release().emitEvent(ref$ObjectRef.f20711k, reactContext, zoomLayoutFixed, new OnZoomChangedEvent(zoomLayoutFixed.getZoom()));
             }
         });
         return zoomLayoutFixed;

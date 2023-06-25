@@ -18,6 +18,7 @@ import com.discord.chat.presentation.message.viewholder.ImageAttachmentViewHolde
 import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import com.discord.chat.presentation.message.viewholder.VideoAttachmentViewHolder;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
+import hf.m;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -31,7 +32,6 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
-import lg.m;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010%\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u001d\b\u0007\u0012\u0006\u0010!\u001a\u00020 \u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\"¢\u0006\u0004\b$\u0010%J\u0016\u0010\u0006\u001a\u00020\u00052\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002H\u0002J\u0018\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0007\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\bH\u0002J(\u0010\u0011\u001a\u00020\u00102\u0006\u0010\f\u001a\u00020\n2\u0006\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\rH\u0002JX\u0010\u0017\u001a\u00020\u00102\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0012\u001a\u00020\r2\u0006\u0010\t\u001a\u00020\b2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00100\u00132\u001e\u0010\u0016\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00100\u0015R\u0014\u0010\u0018\u001a\u00020\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\"\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\n0\u001a8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u001c\u0010\u001dR\u0016\u0010\u0012\u001a\u00020\r8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0012\u0010\u0019R\"\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00100\u00138\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u0014\u0010\u001eR.\u0010\u0016\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00100\u00158\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u0016\u0010\u001f¨\u0006&"}, d2 = {"Lcom/discord/chat/presentation/message/view/MediaMosaicView;", "Landroid/widget/GridLayout;", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "attachments", "", "shouldOnlyUpdateBindings", "attachment", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "createAttachmentHolder", "holder", "", "maxWidthPx", "maxHeightPx", "", "bindAttachmentHolder", "constrainedWidth", "Lkotlin/Function1;", "onAttachmentSpoilerClicked", "Lkotlin/Function3;", "onAttachmentClicked", "setAttachments", "spacingPx", "I", "", "", "attachmentHolders", "Ljava/util/Map;", "Lkotlin/jvm/functions/Function1;", "Lkotlin/jvm/functions/Function3;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes8.dex */
@@ -118,26 +118,26 @@ public final class MediaMosaicView extends GridLayout {
     }
 
     private final boolean shouldOnlyUpdateBindings(List<? extends MessageAccessory> list) {
-        int t10;
-        Set H0;
-        Set H02;
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        int s10;
+        Set F0;
+        Set F02;
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (MessageAccessory messageAccessory : list) {
             arrayList.add(Long.valueOf(messageAccessory.getItemId().longValue()));
         }
-        H0 = r.H0(arrayList);
+        F0 = r.F0(arrayList);
         Map<Long, MessagePartViewHolder> map = this.attachmentHolders;
         if (map == null) {
             q.y("attachmentHolders");
             map = null;
         }
-        H02 = r.H0(map.keySet());
-        return H0.equals(H02);
+        F02 = r.F0(map.keySet());
+        return F0.equals(F02);
     }
 
     public final void setAttachments(List<? extends MessageAccessory> attachments, int i10, ChatEventHandler eventHandler, Function1<? super Integer, Unit> onAttachmentSpoilerClicked, Function3<? super Integer, ? super MessageAccessory, ? super MessagePartViewHolder, Unit> onAttachmentClicked) {
-        Iterable<m> J0;
+        Iterable<m> H0;
         int i11;
         int i12;
         int i13;
@@ -162,10 +162,10 @@ public final class MediaMosaicView extends GridLayout {
             int i19 = 2;
             int i20 = 3;
             int i21 = (width - (this.spacingPx * 2)) / 3;
-            J0 = r.J0(attachments);
+            H0 = r.H0(attachments);
             int i22 = 0;
             int i23 = 0;
-            for (m mVar : J0) {
+            for (m mVar : H0) {
                 if (size == i19 || size == i20 || size == 4) {
                     i11 = i19;
                 } else {

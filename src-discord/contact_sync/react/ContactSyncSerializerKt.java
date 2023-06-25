@@ -21,9 +21,9 @@ import kotlin.Unit;
 import kotlin.collections.k;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
-import yj.a2;
-import yj.f;
-import yj.r0;
+import ti.a2;
+import ti.f;
+import ti.r0;
 
 @Metadata(d1 = {"\u0000(\n\u0000\n\u0002\u0010\b\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\f\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0002\u001a\u001c\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\bH\u0000\u001a\u001b\u0010\t\u001a\u0004\u0018\u00010\u0004*\u00020\u00052\u0006\u0010\n\u001a\u00020\u000bH\u0000¢\u0006\u0002\u0010\f\u001a\u0014\u0010\r\u001a\u00020\u0004*\u00020\u00052\u0006\u0010\u0007\u001a\u00020\bH\u0000¨\u0006\u000e"}, d2 = {"mapResultToContactSyncPermission", "", "", "serializeGetImageForContactIdResult", "", "Lcom/facebook/react/bridge/ReactContext;", "deviceContactId", "callback", "Lcom/facebook/react/bridge/Callback;", "serializeHasContactPermissionsResult", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "(Lcom/facebook/react/bridge/ReactContext;Lcom/facebook/react/bridge/Promise;)Lkotlin/Unit;", "serializeSyncContactResult", "contact_sync_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
@@ -62,23 +62,23 @@ public final class ContactSyncSerializerKt {
             return null;
         }
         nativePermissionManagerModule.hasContactAuthorization(new PromiseWrapper(promise, ContactSyncSerializerKt$serializeHasContactPermissionsResult$1.INSTANCE, null, 4, null));
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     public static final void serializeSyncContactResult(ReactContext reactContext, Callback callback) {
-        int t10;
+        int s10;
         q.g(reactContext, "<this>");
         q.g(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
             Object[] objArr = new Object[3];
             objArr[0] = null;
-            Json.a aVar = Json.f22614d;
+            Json.a aVar = Json.f21185d;
             aVar.a();
-            objArr[1] = aVar.c(new r0(a2.f32933a, ContactSyncBlobEntry$$serializer.INSTANCE), contactsMap);
+            objArr[1] = aVar.c(new r0(a2.f26939a, ContactSyncBlobEntry$$serializer.INSTANCE), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
-            t10 = k.t(values, 10);
-            ArrayList arrayList = new ArrayList(t10);
+            s10 = k.s(values, 10);
+            ArrayList arrayList = new ArrayList(s10);
             for (ContactSyncBlobEntry contactSyncBlobEntry : values) {
                 arrayList.add(new ContactSyncPayloadEntry(contactSyncBlobEntry.getPhone()));
             }

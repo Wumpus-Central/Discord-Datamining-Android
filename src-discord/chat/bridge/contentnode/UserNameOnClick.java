@@ -11,9 +11,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import vj.f;
-import yj.m0;
-import yj.n1;
+import qi.f;
+import ti.m0;
+import ti.n1;
 
 @f
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 /2\u00020\u0001:\u0002./BD\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\fø\u0001\u0000¢\u0006\u0002\u0010\rB0\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003ø\u0001\u0000¢\u0006\u0002\u0010\u000eJ\t\u0010\u0019\u001a\u00020\u0005HÆ\u0003J\u0019\u0010\u001a\u001a\u00020\u0007HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001b\u0010\u0017J\u0019\u0010\u001c\u001a\u0004\u0018\u00010\tHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b\u001dJ\u0010\u0010\u001e\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0012JB\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b \u0010!J\u0013\u0010\"\u001a\u00020#2\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020\u0003HÖ\u0001J\t\u0010&\u001a\u00020\u0005HÖ\u0001J!\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u00002\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0015\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u001c\u0010\b\u001a\u0004\u0018\u00010\tø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u001c\u0010\u0006\u001a\u00020\u0007ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u0016\u0010\u0017\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u00060"}, d2 = {"Lcom/discord/chat/bridge/contentnode/UserNameOnClick;", "", "seen1", "", "action", "", "userId", "Lcom/discord/primitives/UserId;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "linkColor", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/primitives/ChannelId;Ljava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;JLcom/discord/primitives/ChannelId;Ljava/lang/Integer;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAction", "()Ljava/lang/String;", "getLinkColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getMessageChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "getUserId-re6GcUE", "()J", "J", "component1", "component2", "component2-re6GcUE", "component3", "component3-qMVnFVQ", "component4", "copy", "copy-GE3CLCU", "(Ljava/lang/String;JLcom/discord/primitives/ChannelId;Ljava/lang/Integer;)Lcom/discord/chat/bridge/contentnode/UserNameOnClick;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -45,7 +45,7 @@ public final class UserNameOnClick {
             n1.b(i10, 3, UserNameOnClick$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.userId = userId.m636unboximpl();
+        this.userId = userId.m635unboximpl();
         if ((i10 & 4) == 0) {
             this.messageChannelId = null;
         } else {
@@ -67,7 +67,7 @@ public final class UserNameOnClick {
     }
 
     /* renamed from: copy-GE3CLCU$default  reason: not valid java name */
-    public static /* synthetic */ UserNameOnClick m87copyGE3CLCU$default(UserNameOnClick userNameOnClick, String str, long j10, ChannelId channelId, Integer num, int i10, Object obj) {
+    public static /* synthetic */ UserNameOnClick m86copyGE3CLCU$default(UserNameOnClick userNameOnClick, String str, long j10, ChannelId channelId, Integer num, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = userNameOnClick.action;
         }
@@ -80,7 +80,7 @@ public final class UserNameOnClick {
         if ((i10 & 8) != 0) {
             num = userNameOnClick.linkColor;
         }
-        return userNameOnClick.m90copyGE3CLCU(str, j10, channelId, num);
+        return userNameOnClick.m89copyGE3CLCU(str, j10, channelId, num);
     }
 
     public static final void write$Self(UserNameOnClick self, CompositeEncoder output, SerialDescriptor serialDesc) {
@@ -89,21 +89,21 @@ public final class UserNameOnClick {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.z(serialDesc, 0, self.action);
-        output.q(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m627boximpl(self.userId));
-        if (!output.A(serialDesc, 2) && self.messageChannelId == null) {
+        output.t(serialDesc, 0, self.action);
+        output.C(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m626boximpl(self.userId));
+        if (!output.w(serialDesc, 2) && self.messageChannelId == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 2, ChannelId$$serializer.INSTANCE, self.messageChannelId);
+            output.e(serialDesc, 2, ChannelId$$serializer.INSTANCE, self.messageChannelId);
         }
-        if (output.A(serialDesc, 3) || self.linkColor != null) {
+        if (output.w(serialDesc, 3) || self.linkColor != null) {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 3, m0.f33008a, self.linkColor);
+            output.e(serialDesc, 3, m0.f27014a, self.linkColor);
         }
     }
 
@@ -112,12 +112,12 @@ public final class UserNameOnClick {
     }
 
     /* renamed from: component2-re6GcUE  reason: not valid java name */
-    public final long m88component2re6GcUE() {
+    public final long m87component2re6GcUE() {
         return this.userId;
     }
 
     /* renamed from: component3-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m89component3qMVnFVQ() {
+    public final ChannelId m88component3qMVnFVQ() {
         return this.messageChannelId;
     }
 
@@ -126,7 +126,7 @@ public final class UserNameOnClick {
     }
 
     /* renamed from: copy-GE3CLCU  reason: not valid java name */
-    public final UserNameOnClick m90copyGE3CLCU(String action, long j10, ChannelId channelId, Integer num) {
+    public final UserNameOnClick m89copyGE3CLCU(String action, long j10, ChannelId channelId, Integer num) {
         q.g(action, "action");
         return new UserNameOnClick(action, j10, channelId, num, null);
     }
@@ -139,7 +139,7 @@ public final class UserNameOnClick {
             return false;
         }
         UserNameOnClick userNameOnClick = (UserNameOnClick) obj;
-        return q.b(this.action, userNameOnClick.action) && UserId.m631equalsimpl0(this.userId, userNameOnClick.userId) && q.b(this.messageChannelId, userNameOnClick.messageChannelId) && q.b(this.linkColor, userNameOnClick.linkColor);
+        return q.b(this.action, userNameOnClick.action) && UserId.m630equalsimpl0(this.userId, userNameOnClick.userId) && q.b(this.messageChannelId, userNameOnClick.messageChannelId) && q.b(this.linkColor, userNameOnClick.linkColor);
     }
 
     public final String getAction() {
@@ -151,20 +151,20 @@ public final class UserNameOnClick {
     }
 
     /* renamed from: getMessageChannelId-qMVnFVQ  reason: not valid java name */
-    public final ChannelId m91getMessageChannelIdqMVnFVQ() {
+    public final ChannelId m90getMessageChannelIdqMVnFVQ() {
         return this.messageChannelId;
     }
 
     /* renamed from: getUserId-re6GcUE  reason: not valid java name */
-    public final long m92getUserIdre6GcUE() {
+    public final long m91getUserIdre6GcUE() {
         return this.userId;
     }
 
     public int hashCode() {
-        int hashCode = ((this.action.hashCode() * 31) + UserId.m632hashCodeimpl(this.userId)) * 31;
+        int hashCode = ((this.action.hashCode() * 31) + UserId.m631hashCodeimpl(this.userId)) * 31;
         ChannelId channelId = this.messageChannelId;
         int i10 = 0;
-        int i11 = (hashCode + (channelId == null ? 0 : ChannelId.m568hashCodeimpl(channelId.m572unboximpl()))) * 31;
+        int i11 = (hashCode + (channelId == null ? 0 : ChannelId.m567hashCodeimpl(channelId.m571unboximpl()))) * 31;
         Integer num = this.linkColor;
         if (num != null) {
             i10 = num.hashCode();
@@ -174,7 +174,7 @@ public final class UserNameOnClick {
 
     public String toString() {
         String str = this.action;
-        String str2 = UserId.m634toStringimpl(this.userId);
+        String str2 = UserId.m633toStringimpl(this.userId);
         ChannelId channelId = this.messageChannelId;
         Integer num = this.linkColor;
         return "UserNameOnClick(action=" + str + ", userId=" + str2 + ", messageChannelId=" + channelId + ", linkColor=" + num + ")";

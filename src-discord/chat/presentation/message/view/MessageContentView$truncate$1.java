@@ -26,12 +26,12 @@ final class MessageContentView$truncate$1 extends s implements Function1<View, U
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(View view) {
         invoke2(view);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(View it) {
         q.g(it, "it");
-        this.$onTapSeeMore.invoke(MessageId.m589boximpl(this.$messageId));
+        this.$onTapSeeMore.invoke(MessageId.m588boximpl(this.$messageId));
     }
 }

@@ -15,8 +15,8 @@ final class CodeStyleProvidersKt$emptyProvider$1<RC> implements StyleNode.SpanPr
 
     @Override // com.discord.simpleast.core.node.StyleNode.SpanProvider
     public final Iterable<?> get(R r10) {
-        List i10;
-        i10 = j.i();
-        return i10;
+        List h10;
+        h10 = j.h();
+        return h10;
     }
 }

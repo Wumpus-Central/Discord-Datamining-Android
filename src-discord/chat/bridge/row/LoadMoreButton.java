@@ -8,9 +8,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import vj.f;
-import yj.m0;
-import yj.n1;
+import qi.f;
+import ti.m0;
+import ti.n1;
 
 @f
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 -2\u00020\u0001:\u0002,-BI\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rB5\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u000eJ\t\u0010\u0019\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u001c\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0014J\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0014JD\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\u001fJ\u0013\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010#\u001a\u00020\u0003HÖ\u0001J\t\u0010$\u001a\u00020\u0007HÖ\u0001J!\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00002\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0015\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014R\u0015\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0016\u0010\u0014R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018¨\u0006."}, d2 = {"Lcom/discord/chat/bridge/row/LoadMoreButton;", "", "seen1", "", "action", "Lcom/discord/chat/bridge/row/LoadingAction;", "text", "", ViewProps.BACKGROUND_COLOR, "cornerRadius", ViewProps.COLOR, "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/row/LoadingAction;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/bridge/row/LoadingAction;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;)V", "getAction", "()Lcom/discord/chat/bridge/row/LoadingAction;", "getBackgroundColor", "()I", "getColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getCornerRadius", "getText", "()Ljava/lang/String;", "component1", "component2", "component3", "component4", "component5", "copy", "(Lcom/discord/chat/bridge/row/LoadingAction;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;)Lcom/discord/chat/bridge/row/LoadMoreButton;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -82,22 +82,22 @@ public final class LoadMoreButton {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.q(serialDesc, 0, LoadingAction$$serializer.INSTANCE, self.action);
-        output.z(serialDesc, 1, self.text);
-        output.x(serialDesc, 2, self.backgroundColor);
-        if (!output.A(serialDesc, 3) && self.cornerRadius == null) {
+        output.C(serialDesc, 0, LoadingAction$$serializer.INSTANCE, self.action);
+        output.t(serialDesc, 1, self.text);
+        output.r(serialDesc, 2, self.backgroundColor);
+        if (!output.w(serialDesc, 3) && self.cornerRadius == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.u(serialDesc, 3, m0.f33008a, self.cornerRadius);
+            output.e(serialDesc, 3, m0.f27014a, self.cornerRadius);
         }
-        if (output.A(serialDesc, 4) || self.color != null) {
+        if (output.w(serialDesc, 4) || self.color != null) {
             z11 = true;
         }
         if (z11) {
-            output.u(serialDesc, 4, m0.f33008a, self.color);
+            output.e(serialDesc, 4, m0.f27014a, self.color);
         }
     }
 

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
-import com.discord.chat.databinding.ActivityLauncherViewBinding;
+import com.discord.chat.databinding.ActivityBookmarkViewBinding;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.discord.core.DCDButton;
@@ -32,30 +32,30 @@ import kotlin.collections.k;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0014\u0010\u000b\u001a\u00020\f2\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ\u0010\u0010\u0010\u001a\u00020\f2\b\u0010\u0011\u001a\u0004\u0018\u00010\u000fJ\u0010\u0010\u0012\u001a\u00020\f2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014J\u001f\u0010\u0015\u001a\u00020\f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u000f2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0018J\u000e\u0010\u0019\u001a\u00020\f2\u0006\u0010\u001a\u001a\u00020\u001bJ\u000e\u0010\u001c\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u000fJ\u0018\u0010\u001d\u001a\u00020\f2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u001f\u001a\u00020\u0007R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006 "}, d2 = {"Lcom/discord/chat/presentation/message/view/ActivityLauncherView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/ActivityLauncherViewBinding;", "setAvatarUris", "", "avatarUris", "", "", "setDescription", "description", "setHeaderText", "headerText", "", "setLaunchButton", "text", ViewProps.BACKGROUND_COLOR, "(Ljava/lang/String;Ljava/lang/Integer;)V", "setOnLaunchButtonClickListener", "onLaunchButtonClickListener", "Landroid/view/View$OnClickListener;", "setParticipantsText", "setSplash", "splashUrl", "constrainedWidth", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\r\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0014\u0010\u000b\u001a\u00020\f2\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ\u0010\u0010\u0010\u001a\u00020\f2\b\u0010\u0011\u001a\u0004\u0018\u00010\u000fJ\u0010\u0010\u0012\u001a\u00020\f2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014J\u001f\u0010\u0015\u001a\u00020\f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u000f2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\u0018J\u000e\u0010\u0019\u001a\u00020\f2\u0006\u0010\u001a\u001a\u00020\u001bJ\u000e\u0010\u001c\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u000fJ\u0018\u0010\u001d\u001a\u00020\f2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u001f\u001a\u00020\u0007R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006 "}, d2 = {"Lcom/discord/chat/presentation/message/view/ActivityBookmarkView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/ActivityBookmarkViewBinding;", "setAvatarUris", "", "avatarUris", "", "", "setDescription", "description", "setHeaderText", "headerText", "", "setLaunchButton", "text", ViewProps.BACKGROUND_COLOR, "(Ljava/lang/String;Ljava/lang/Integer;)V", "setOnLaunchButtonClickListener", "onLaunchButtonClickListener", "Landroid/view/View$OnClickListener;", "setParticipantsText", "setSplash", "splashUrl", "constrainedWidth", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes8.dex */
-public final class ActivityLauncherView extends ConstraintLayout {
-    private final ActivityLauncherViewBinding binding;
+public final class ActivityBookmarkView extends ConstraintLayout {
+    private final ActivityBookmarkViewBinding binding;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public ActivityLauncherView(Context context) {
+    public ActivityBookmarkView(Context context) {
         this(context, null, 0, 6, null);
         q.g(context, "context");
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public ActivityLauncherView(Context context, AttributeSet attributeSet) {
+    public ActivityBookmarkView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ ActivityLauncherView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+    public /* synthetic */ ActivityBookmarkView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i11 & 2) != 0 ? null : attributeSet, (i11 & 4) != 0 ? 0 : i10);
     }
 
     public final void setAvatarUris(List<String> avatarUris) {
         int i10;
-        int t10;
+        int s10;
         q.g(avatarUris, "avatarUris");
         boolean z10 = !avatarUris.isEmpty();
         OverlappingCirclesView overlappingCirclesView = this.binding.participants;
@@ -68,8 +68,8 @@ public final class ActivityLauncherView extends ConstraintLayout {
         }
         overlappingCirclesView.setVisibility(i10);
         OverlappingCirclesView overlappingCirclesView2 = this.binding.participants;
-        t10 = k.t(avatarUris, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(avatarUris, 10);
+        ArrayList arrayList = new ArrayList(s10);
         for (String str : avatarUris) {
             arrayList.add(new OverlappingItem(str));
         }
@@ -158,10 +158,10 @@ public final class ActivityLauncherView extends ConstraintLayout {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ActivityLauncherView(Context context, AttributeSet attributeSet, int i10) {
+    public ActivityBookmarkView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         q.g(context, "context");
-        ActivityLauncherViewBinding inflate = ActivityLauncherViewBinding.inflate(LayoutInflater.from(context), this);
+        ActivityBookmarkViewBinding inflate = ActivityBookmarkViewBinding.inflate(LayoutInflater.from(context), this);
         q.f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
         TextView lambda$4$lambda$0 = inflate.itemHeader;

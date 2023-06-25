@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.mobile_voice_overlay.R;
 import com.discord.mobile_voice_overlay.views.OverlayMenuView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes7.dex */
 public final class OverlayMenuBubbleBinding {

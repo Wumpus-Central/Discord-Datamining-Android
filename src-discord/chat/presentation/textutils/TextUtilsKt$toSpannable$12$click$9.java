@@ -25,13 +25,13 @@ final class TextUtilsKt$toSpannable$12$click$9 extends s implements Function1<Vi
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(View view) {
         invoke2(view);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(View it) {
         q.g(it, "it");
-        SpoilerManager.INSTANCE.m133markRevealedV2PEE7g(this.$id);
+        SpoilerManager.INSTANCE.m132markRevealedV2PEE7g(this.$id);
         this.$rc.getOnTapSpoiler().invoke();
     }
 }

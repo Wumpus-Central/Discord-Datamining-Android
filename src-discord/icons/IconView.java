@@ -197,7 +197,7 @@ public class IconView extends FrameLayout {
         for (Object obj : layers) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.s();
+                j.r();
             }
             Pair pair = (Pair) obj;
             ReactAsset reactAsset = (ReactAsset) pair.a();

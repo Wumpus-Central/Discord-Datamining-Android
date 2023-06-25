@@ -4,10 +4,10 @@ import com.discord.media.utils.ContentResolverMedia;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.WritableNativeMap;
+import gf.x;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.k;
@@ -38,11 +38,11 @@ public final class GetPhotosData {
     }
 
     public final WritableNativeMap toNativeMap() {
-        int t10;
+        int s10;
         Pair[] pairArr = new Pair[1];
         List<ContentResolverMedia> list = this.edges;
-        t10 = k.t(list, 10);
-        ArrayList arrayList = new ArrayList(t10);
+        s10 = k.s(list, 10);
+        ArrayList arrayList = new ArrayList(s10);
         Iterator<T> it = list.iterator();
         while (it.hasNext()) {
             arrayList.add(NativeMapExtensionsKt.nativeMapOf(x.a("node", toNativeMap((ContentResolverMedia) it.next()))));

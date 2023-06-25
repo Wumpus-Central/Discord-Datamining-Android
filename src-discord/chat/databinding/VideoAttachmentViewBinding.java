@@ -9,7 +9,7 @@ import com.discord.chat.presentation.message.view.AltTextButtonView;
 import com.discord.chat.presentation.message.view.AttachmentUploadOverlayView;
 import com.discord.chat.presentation.message.view.MediaView;
 import com.discord.chat.presentation.message.view.SpoilerView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class VideoAttachmentViewBinding {

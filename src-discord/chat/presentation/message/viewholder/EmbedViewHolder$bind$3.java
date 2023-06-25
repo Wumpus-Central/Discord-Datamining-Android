@@ -20,14 +20,14 @@ public /* synthetic */ class EmbedViewHolder$bind$3 extends n implements Functio
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m330invokentcYbpo(messageId.m597unboximpl(), linkContentNode);
-        return Unit.f22113a;
+        m329invokentcYbpo(messageId.m596unboximpl(), linkContentNode);
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m330invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m329invokentcYbpo(String p02, LinkContentNode p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo149onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo148onLinkClickedntcYbpo(p02, p12);
     }
 }

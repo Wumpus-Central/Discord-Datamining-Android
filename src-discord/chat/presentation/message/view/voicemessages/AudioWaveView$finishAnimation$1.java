@@ -35,7 +35,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x003a  */
@@ -50,7 +50,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
     public final java.lang.Object invokeSuspend(java.lang.Object r11) {
         /*
             r10 = this;
-            java.lang.Object r0 = qg.b.d()
+            java.lang.Object r0 = mf.b.d()
             int r1 = r10.label
             r2 = 1
             if (r1 == 0) goto L_0x0024
@@ -61,7 +61,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
             com.discord.chat.presentation.message.view.voicemessages.AudioWaveView r4 = (com.discord.chat.presentation.message.view.voicemessages.AudioWaveView) r4
             java.lang.Object r5 = r10.L$0
             kotlinx.coroutines.CoroutineScope r5 = (kotlinx.coroutines.CoroutineScope) r5
-            kg.t.b(r11)
+            gf.t.b(r11)
             r11 = r10
             goto L_0x0055
         L_0x001c:
@@ -70,7 +70,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
             r11.<init>(r0)
             throw r11
         L_0x0024:
-            kg.t.b(r11)
+            gf.t.b(r11)
             java.lang.Object r11 = r10.L$0
             kotlinx.coroutines.CoroutineScope r11 = (kotlinx.coroutines.CoroutineScope) r11
             int r1 = com.discord.chat.presentation.message.view.voicemessages.AudioWaveView.access$getFINISH_ANIMATION_NUM_REPEAT$cp()
@@ -97,14 +97,14 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
             if (r6 != r0) goto L_0x0055
             return r0
         L_0x0055:
-            boolean r6 = kotlinx.coroutines.k0.h(r5)
+            boolean r6 = kotlinx.coroutines.k0.f(r5)
             if (r6 == 0) goto L_0x005e
             r4.invalidate()
         L_0x005e:
             int r1 = r1 + r2
             goto L_0x0038
         L_0x0060:
-            kotlin.Unit r11 = kotlin.Unit.f22113a
+            kotlin.Unit r11 = kotlin.Unit.f20684a
             return r11
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1.invokeSuspend(java.lang.Object):java.lang.Object");

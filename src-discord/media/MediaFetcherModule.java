@@ -10,13 +10,13 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
+import gf.x;
 import java.util.Comparator;
 import java.util.List;
-import kg.x;
+import jf.c;
 import kotlin.Metadata;
 import kotlin.collections.r;
 import kotlin.jvm.internal.q;
-import ng.c;
 
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0018\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0007J\u0012\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0006H\u0002¨\u0006\u0010"}, d2 = {"Lcom/discord/media/MediaFetcherModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getName", "", "getPhotos", "", "params", "Lcom/facebook/react/bridge/ReadableMap;", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "getQueryType", "Lcom/discord/media/utils/ContentResolverMedia$QueryType;", "filter", "media_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes7.dex */
@@ -53,11 +53,11 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public final void getPhotos(ReadableMap params, Promise promise) {
         Integer num;
-        List w02;
-        List x02;
+        List u02;
+        List v02;
         WritableNativeMap writableNativeMap;
-        Object U;
-        Object g02;
+        Object S;
+        Object e02;
         q.g(params, "params");
         q.g(promise, "promise");
         int i10 = params.getInt("first");
@@ -71,7 +71,7 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
             ContentResolverMedia.Companion companion = ContentResolverMedia.Companion;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
             q.f(reactApplicationContext, "reactApplicationContext");
-            w02 = r.w0(companion.getMedia(reactApplicationContext, queryType, i10, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
+            u02 = r.u0(companion.getMedia(reactApplicationContext, queryType, i10, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
                 @Override // java.util.Comparator
                 public final int compare(T t10, T t11) {
                     int d10;
@@ -79,15 +79,15 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
                     return d10;
                 }
             });
-            x02 = r.x0(w02, i10);
-            if (x02.size() == i10) {
-                U = r.U(x02);
-                g02 = r.g0(x02);
-                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(x.a("start_cursor", String.valueOf(((ContentResolverMedia) U).getUri())), x.a("end_cursor", String.valueOf(((ContentResolverMedia) g02).getUri())), x.a("has_next_page", Boolean.TRUE));
+            v02 = r.v0(u02, i10);
+            if (v02.size() == i10) {
+                S = r.S(v02);
+                e02 = r.e0(v02);
+                writableNativeMap = NativeMapExtensionsKt.nativeMapOf(x.a("start_cursor", String.valueOf(((ContentResolverMedia) S).getUri())), x.a("end_cursor", String.valueOf(((ContentResolverMedia) e02).getUri())), x.a("has_next_page", Boolean.TRUE));
             } else {
                 writableNativeMap = NativeMapExtensionsKt.nativeMapOf(x.a("has_next_page", Boolean.FALSE));
             }
-            WritableNativeMap nativeMap = new GetPhotosData(x02).toNativeMap();
+            WritableNativeMap nativeMap = new GetPhotosData(v02).toNativeMap();
             nativeMap.putMap("page_info", writableNativeMap);
             promise.resolve(nativeMap);
         } catch (Exception e10) {

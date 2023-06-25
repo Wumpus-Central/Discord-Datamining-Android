@@ -177,7 +177,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
             context.registerReceiver(this, intentFilter);
             BluetoothHeadsetUtilsKt.registerActiveHeadsetReceiver(context, this);
             try {
-                BluetoothManager bluetoothManager = (BluetoothManager) a.j(context, BluetoothManager.class);
+                BluetoothManager bluetoothManager = (BluetoothManager) a.i(context, BluetoothManager.class);
                 if (bluetoothManager == null || (adapter = bluetoothManager.getAdapter()) == null) {
                     z10 = false;
                 } else {

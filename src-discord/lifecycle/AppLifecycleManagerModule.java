@@ -5,7 +5,7 @@ import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import kg.x;
+import gf.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;

@@ -20,15 +20,15 @@ public final class FixedSizeLineBuffer {
     }
 
     public final void addLine(String line) {
-        String t10;
+        String r10;
         q.g(line, "line");
         synchronized (this.sync) {
             this.output.add(line);
             this.outputLength += line.length() + 1;
-            while (this.outputLength > this.maxCharacterCount && (t10 = this.output.t()) != null) {
-                this.outputLength -= t10.length() - 1;
+            while (this.outputLength > this.maxCharacterCount && (r10 = this.output.r()) != null) {
+                this.outputLength -= r10.length() - 1;
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 
@@ -42,7 +42,7 @@ public final class FixedSizeLineBuffer {
                 sb2.append('\n');
                 q.f(sb2, "append('\\n')");
             }
-            Unit unit = Unit.f22113a;
+            Unit unit = Unit.f20684a;
         }
     }
 }

@@ -22,9 +22,9 @@ public final class EmojiPickerPackage implements ReactPackage {
 
     @Override // com.facebook.react.ReactPackage
     public List<ViewManager<?, LayoutShadowNode>> createViewManagers(ReactApplicationContext reactContext) {
-        List<ViewManager<?, LayoutShadowNode>> o10;
+        List<ViewManager<?, LayoutShadowNode>> n10;
         q.g(reactContext, "reactContext");
-        o10 = j.o(new EmojiPickerRowViewManager());
-        return o10;
+        n10 = j.n(new EmojiPickerRowViewManager());
+        return n10;
     }
 }

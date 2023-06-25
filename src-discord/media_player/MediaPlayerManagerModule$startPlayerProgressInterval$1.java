@@ -1,6 +1,6 @@
 package com.discord.media_player;
 
-import kg.t;
+import gf.t;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -8,7 +8,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import qg.d;
+import mf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -46,7 +46,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -57,7 +57,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
                 if (this.$mediaPlayer.isPlaying()) {
                     this.this$0.onMediaPlayerProgress(this.$portal, this.$mediaPlayer.currentPositionMs(), this.$mediaPlayer.durationMs());
                 }
-                return Unit.f22113a;
+                return Unit.f20684a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -80,7 +80,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f22113a);
+        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0037  */
@@ -95,7 +95,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     public final java.lang.Object invokeSuspend(java.lang.Object r13) {
         /*
             r12 = this;
-            java.lang.Object r0 = qg.b.d()
+            java.lang.Object r0 = mf.b.d()
             int r1 = r12.label
             r2 = 2
             r3 = 1
@@ -104,7 +104,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             if (r1 != r2) goto L_0x0017
             java.lang.Object r1 = r12.L$0
             kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
-            kg.t.b(r13)
+            gf.t.b(r13)
             r13 = r1
             goto L_0x0030
         L_0x0017:
@@ -115,18 +115,18 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         L_0x001f:
             java.lang.Object r1 = r12.L$0
             kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
-            kg.t.b(r13)
+            gf.t.b(r13)
             r13 = r1
             r1 = r12
             goto L_0x0053
         L_0x0029:
-            kg.t.b(r13)
+            gf.t.b(r13)
             java.lang.Object r13 = r12.L$0
             kotlinx.coroutines.CoroutineScope r13 = (kotlinx.coroutines.CoroutineScope) r13
         L_0x0030:
             r1 = r12
         L_0x0031:
-            boolean r4 = kotlinx.coroutines.k0.h(r13)
+            boolean r4 = kotlinx.coroutines.k0.f(r13)
             if (r4 == 0) goto L_0x0060
             kotlinx.coroutines.f2 r4 = kotlinx.coroutines.y0.c()
             com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1 r11 = new com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1
@@ -149,7 +149,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             if (r4 != r0) goto L_0x0031
             return r0
         L_0x0060:
-            kotlin.Unit r13 = kotlin.Unit.f22113a
+            kotlin.Unit r13 = kotlin.Unit.f20684a
             return r13
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1.invokeSuspend(java.lang.Object):java.lang.Object");

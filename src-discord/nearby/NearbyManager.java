@@ -1,20 +1,20 @@
 package com.discord.nearby;
 
-import ab.a;
 import android.content.Context;
+import ba.b;
+import ba.d;
+import ba.h;
+import ba.i;
 import com.google.android.gms.nearby.messages.Message;
 import com.google.android.gms.nearby.messages.SubscribeOptions;
-import db.b;
-import db.d;
-import db.h;
-import db.i;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
+import y9.a;
 
-@Metadata(d1 = {"\u0000;\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\t*\u0001\u0015\b\u0000\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cBC\u0012\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r\u0012\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r\u0012\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r¢\u0006\u0004\b\u001a\u0010\u001bJ\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006J\u000e\u0010\t\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006J\u0010\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\nH\u0016J\u0010\u0010\f\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\nH\u0016R \u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR \u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u000fR \u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u000fR\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0016\u001a\u00020\u00158\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017R\u0016\u0010\u0018\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019¨\u0006\u001d"}, d2 = {"Lcom/discord/nearby/NearbyManager;", "Ldb/b;", "", "message", "", "setOutboundMessage", "Landroid/content/Context;", "context", "disableNearby", "enableNearby", "Lcom/google/android/gms/nearby/messages/Message;", "onFound", "onLost", "Lkotlin/Function1;", "onFoundUser", "Lkotlin/jvm/functions/Function1;", "onLostUser", "onError", "Lcom/google/android/gms/nearby/messages/SubscribeOptions;", "subscribeOptions", "Lcom/google/android/gms/nearby/messages/SubscribeOptions;", "com/discord/nearby/NearbyManager$statusCallback$1", "statusCallback", "Lcom/discord/nearby/NearbyManager$statusCallback$1;", "outboundMessage", "Lcom/google/android/gms/nearby/messages/Message;", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "nearby_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u0000;\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\t*\u0001\u0015\b\u0000\u0018\u0000 \u001c2\u00020\u0001:\u0001\u001cBC\u0012\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r\u0012\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r\u0012\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r¢\u0006\u0004\b\u001a\u0010\u001bJ\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006J\u000e\u0010\t\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006J\u0010\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\nH\u0016J\u0010\u0010\f\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\nH\u0016R \u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR \u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u000fR \u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00040\r8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u000fR\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0016\u001a\u00020\u00158\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017R\u0016\u0010\u0018\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019¨\u0006\u001d"}, d2 = {"Lcom/discord/nearby/NearbyManager;", "Lba/b;", "", "message", "", "setOutboundMessage", "Landroid/content/Context;", "context", "disableNearby", "enableNearby", "Lcom/google/android/gms/nearby/messages/Message;", "onFound", "onLost", "Lkotlin/Function1;", "onFoundUser", "Lkotlin/jvm/functions/Function1;", "onLostUser", "onError", "Lcom/google/android/gms/nearby/messages/SubscribeOptions;", "subscribeOptions", "Lcom/google/android/gms/nearby/messages/SubscribeOptions;", "com/discord/nearby/NearbyManager$statusCallback$1", "statusCallback", "Lcom/discord/nearby/NearbyManager$statusCallback$1;", "outboundMessage", "Lcom/google/android/gms/nearby/messages/Message;", "<init>", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Companion", "nearby_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes7.dex */
 public final class NearbyManager extends b {
     public static final Companion Companion = new Companion(null);
@@ -24,7 +24,7 @@ public final class NearbyManager extends b {
     private final Function1<String, Unit> onLostUser;
     private Message outboundMessage;
     private final NearbyManager$statusCallback$1 statusCallback = new h() { // from class: com.discord.nearby.NearbyManager$statusCallback$1
-        @Override // db.h
+        @Override // ba.h
         public void onPermissionChanged(boolean z10) {
             Function1 function1;
             super.onPermissionChanged(z10);
@@ -56,7 +56,7 @@ public final class NearbyManager extends b {
         this.onFoundUser = onFoundUser;
         this.onLostUser = onLostUser;
         this.onError = onError;
-        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f14175s).a();
+        SubscribeOptions a10 = new SubscribeOptions.a().b(i.f4944s).a();
         q.f(a10, "Builder()\n        .setSt…DEFAULT)\n        .build()");
         this.subscribeOptions = a10;
     }
@@ -64,13 +64,13 @@ public final class NearbyManager extends b {
     public final void disableNearby(Context context) {
         q.g(context, "context");
         d a10 = a.a(context);
-        a10.g(this.statusCallback);
+        a10.f(this.statusCallback);
         Message message = this.outboundMessage;
         if (message == null) {
             q.y("outboundMessage");
             message = null;
         }
-        a10.d(message);
+        a10.a(message);
         a10.e(this);
     }
 
@@ -82,34 +82,34 @@ public final class NearbyManager extends b {
             message = null;
         }
         d a10 = a.a(context);
-        a10.a(this.statusCallback);
+        a10.d(this.statusCallback);
         a10.b(message);
-        a10.f(this, this.subscribeOptions);
+        a10.g(this, this.subscribeOptions);
     }
 
-    @Override // db.b
+    @Override // ba.b
     public void onFound(Message message) {
         q.g(message, "message");
         super.onFound(message);
         Function1<String, Unit> function1 = this.onFoundUser;
-        byte[] x10 = message.x();
-        q.f(x10, "message.content");
-        function1.invoke(new String(x10, oj.d.f26400b));
+        byte[] n10 = message.n();
+        q.f(n10, "message.content");
+        function1.invoke(new String(n10, ki.d.f20634b));
     }
 
-    @Override // db.b
+    @Override // ba.b
     public void onLost(Message message) {
         q.g(message, "message");
         super.onLost(message);
         Function1<String, Unit> function1 = this.onLostUser;
-        byte[] x10 = message.x();
-        q.f(x10, "message.content");
-        function1.invoke(new String(x10, oj.d.f26400b));
+        byte[] n10 = message.n();
+        q.f(n10, "message.content");
+        function1.invoke(new String(n10, ki.d.f20634b));
     }
 
     public final void setOutboundMessage(String message) {
         q.g(message, "message");
-        byte[] bytes = message.getBytes(oj.d.f26400b);
+        byte[] bytes = message.getBytes(ki.d.f20634b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         this.outboundMessage = new Message(bytes);
     }

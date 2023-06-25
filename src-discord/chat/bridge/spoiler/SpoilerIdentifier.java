@@ -11,7 +11,7 @@ public final class SpoilerIdentifier {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f7626id;
+    private final String f7296id;
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J.\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\b\u000b\u0010\f\u0082\u0002\u000f\n\u0002\b!\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier$Companion;", "", "()V", "forNode", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "node", "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;", "containerId", "", "index", "", "forNode-2sfwrmE", "(Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;Ljava/lang/String;I)Ljava/lang/String;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes8.dex */
@@ -24,67 +24,67 @@ public final class SpoilerIdentifier {
         }
 
         /* renamed from: forNode-2sfwrmE  reason: not valid java name */
-        public final String m130forNode2sfwrmE(SpoilerContentNode node, String containerId, int i10) {
+        public final String m129forNode2sfwrmE(SpoilerContentNode node, String containerId, int i10) {
             q.g(node, "node");
             q.g(containerId, "containerId");
             int hashCode = node.hashCode();
-            return SpoilerIdentifier.m124constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
+            return SpoilerIdentifier.m123constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
         }
     }
 
     private /* synthetic */ SpoilerIdentifier(String str) {
-        this.f7626id = str;
+        this.f7296id = str;
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ SpoilerIdentifier m123boximpl(String str) {
+    public static final /* synthetic */ SpoilerIdentifier m122boximpl(String str) {
         return new SpoilerIdentifier(str);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m124constructorimpl(String id2) {
+    public static String m123constructorimpl(String id2) {
         q.g(id2, "id");
         return id2;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m125equalsimpl(String str, Object obj) {
-        return (obj instanceof SpoilerIdentifier) && q.b(str, ((SpoilerIdentifier) obj).m129unboximpl());
+    public static boolean m124equalsimpl(String str, Object obj) {
+        return (obj instanceof SpoilerIdentifier) && q.b(str, ((SpoilerIdentifier) obj).m128unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m126equalsimpl0(String str, String str2) {
+    public static final boolean m125equalsimpl0(String str, String str2) {
         return q.b(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m127hashCodeimpl(String str) {
+    public static int m126hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m128toStringimpl(String str) {
+    public static String m127toStringimpl(String str) {
         return "SpoilerIdentifier(id=" + str + ")";
     }
 
     public boolean equals(Object obj) {
-        return m125equalsimpl(this.f7626id, obj);
+        return m124equalsimpl(this.f7296id, obj);
     }
 
     public final String getId() {
-        return this.f7626id;
+        return this.f7296id;
     }
 
     public int hashCode() {
-        return m127hashCodeimpl(this.f7626id);
+        return m126hashCodeimpl(this.f7296id);
     }
 
     public String toString() {
-        return m128toStringimpl(this.f7626id);
+        return m127toStringimpl(this.f7296id);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m129unboximpl() {
-        return this.f7626id;
+    public final /* synthetic */ String m128unboximpl() {
+        return this.f7296id;
     }
 }

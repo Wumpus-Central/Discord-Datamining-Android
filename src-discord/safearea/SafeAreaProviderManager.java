@@ -9,8 +9,8 @@ import com.discord.safearea.extensions.ImmersiveMode;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.th3rdwave.safeareacontext.SafeAreaProvider;
+import gf.x;
 import java.util.Map;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
@@ -123,7 +123,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<SafeAreaProv
         float leftDp = safeAreaEdgeInsets.getLeftDp();
         float rightDp = safeAreaEdgeInsets.getRightDp();
         if (insets != null) {
-            f10 = SizeUtilsKt.getPxToDp(insets.f3275d);
+            f10 = SizeUtilsKt.getPxToDp(insets.f2810d);
         } else {
             f10 = 0.0f;
         }

@@ -34,8 +34,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import gf.x;
 import java.util.Map;
-import kg.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
@@ -109,7 +109,7 @@ public final class MessageViewManagers {
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: emitOnTapReply-Ayv7vGE  reason: not valid java name */
-        public final void m144emitOnTapReplyAyv7vGE(View view, String str) {
+        public final void m143emitOnTapReplyAyv7vGE(View view, String str) {
             this.reactEvents.emitEvent(view, new OnTapReplyItemData(str, null));
         }
 
@@ -119,7 +119,7 @@ public final class MessageViewManagers {
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: emitOnTruncateMessage-JPrav84  reason: not valid java name */
-        public final void m145emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
+        public final void m144emitOnTruncateMessageJPrav84(Context context, int i10, String str) {
             this.reactEvents.emitEvent(context, new OnTruncateMessageData(str, null), i10);
         }
 

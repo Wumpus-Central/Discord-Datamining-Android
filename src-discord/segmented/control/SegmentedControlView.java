@@ -145,7 +145,7 @@ public final class SegmentedControlView extends FrameLayout {
         for (Object obj : getLabels()) {
             int i11 = i10 + 1;
             if (i10 < 0) {
-                j.s();
+                j.r();
             }
             final String str = (String) obj;
             TextView labelView = getLabelView(i10);
@@ -188,7 +188,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     private final <T> ReadWriteProperty<Object, T> updateViewOnChange(final T t10, final boolean z10) {
-        kotlin.properties.a aVar = kotlin.properties.a.f22169a;
+        kotlin.properties.a aVar = kotlin.properties.a.f20740a;
         return new c<T>(t10) { // from class: com.discord.segmented.control.SegmentedControlView$updateViewOnChange$$inlined$observable$1
             @Override // kotlin.properties.c
             protected void afterChange(KProperty<?> property, T t11, T t12) {
@@ -306,8 +306,8 @@ public final class SegmentedControlView extends FrameLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SegmentedControlView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        List i11;
-        List i12;
+        List h10;
+        List h11;
         q.g(context, "context");
         SegmentedControlBinding inflate = SegmentedControlBinding.inflate(LayoutInflater.from(context), this, true);
         q.f(inflate, "inflate(LayoutInflater.from(context), this, true)");
@@ -325,9 +325,9 @@ public final class SegmentedControlView extends FrameLayout {
         this.segmentFontSizeSp$delegate = updateViewOnChange$default(this, valueOf, false, 2, null);
         this.selectedSegmentTextColor$delegate = updateViewOnChange$default(this, 0, false, 2, null);
         this.selectedSegmentFontSizeSp$delegate = updateViewOnChange$default(this, valueOf, false, 2, null);
-        i11 = j.i();
-        this.labels$delegate = updateViewOnChange(i11, true);
-        i12 = j.i();
-        this.accessibilityRoleDescriptions$delegate = updateViewOnChange(i12, true);
+        h10 = j.h();
+        this.labels$delegate = updateViewOnChange(h10, true);
+        h11 = j.h();
+        this.accessibilityRoleDescriptions$delegate = updateViewOnChange(h11, true);
     }
 }

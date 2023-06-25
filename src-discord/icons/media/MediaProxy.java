@@ -2,7 +2,6 @@ package com.discord.icons.media;
 
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.media.utils.DiscordVideoMediaSource;
-import j$.util.Spliterator;
 import kotlin.Metadata;
 import kotlin.collections.f;
 import kotlin.jvm.internal.q;
@@ -12,7 +11,7 @@ import kotlin.jvm.internal.q;
 public final class MediaProxy {
     public static final int IMAGE_SIZE_ASSET_DEFAULT_PX = 160;
     public static final MediaProxy INSTANCE = new MediaProxy();
-    private static final Integer[] MEDIA_PROXY_SIZES = {16, 20, 32, 40, 64, 80, 128, 160, Integer.valueOf((int) Spliterator.NONNULL), 320, 512, Integer.valueOf((int) DiscordVideoMediaSource.DEFAULT_WIDTH), Integer.valueOf((int) Spliterator.IMMUTABLE), 1280, 1536, Integer.valueOf((int) RecyclerView.ItemAnimator.FLAG_MOVED), 3072, 4096};
+    private static final Integer[] MEDIA_PROXY_SIZES = {16, 20, 32, 40, 64, 80, 128, 160, 256, 320, 512, Integer.valueOf((int) DiscordVideoMediaSource.DEFAULT_WIDTH), 1024, 1280, 1536, Integer.valueOf((int) RecyclerView.ItemAnimator.FLAG_MOVED), 3072, Integer.valueOf((int) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT)};
 
     private MediaProxy() {
     }

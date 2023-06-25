@@ -25,11 +25,11 @@ public final class DominantColor {
     }
 
     private final List<Integer> getPrimaryColorsForBitmap(Bitmap bitmap) {
-        int t10;
+        int s10;
         List<Swatch> quantizedColors = ColorCutQuantizer.Companion.fromBitmap(bitmap, 5).getQuantizedColors();
         if (!quantizedColors.isEmpty()) {
-            t10 = k.t(quantizedColors, 10);
-            ArrayList arrayList = new ArrayList(t10);
+            s10 = k.s(quantizedColors, 10);
+            ArrayList arrayList = new ArrayList(s10);
             for (Swatch swatch : quantizedColors) {
                 arrayList.add(Integer.valueOf(swatch.getRgb()));
             }
@@ -39,15 +39,15 @@ public final class DominantColor {
     }
 
     public final List<Integer> getRepresentativeColors(Bitmap bitmap) {
-        int t10;
+        int s10;
         q.g(bitmap, "bitmap");
         try {
             List<Integer> primaryColorsForBitmap = getPrimaryColorsForBitmap(bitmap);
             if (primaryColorsForBitmap.isEmpty()) {
                 return null;
             }
-            t10 = k.t(primaryColorsForBitmap, 10);
-            ArrayList arrayList = new ArrayList(t10);
+            s10 = k.s(primaryColorsForBitmap, 10);
+            ArrayList arrayList = new ArrayList(s10);
             for (Number number : primaryColorsForBitmap) {
                 arrayList.add(Integer.valueOf(a.k(number.intValue(), 255)));
             }

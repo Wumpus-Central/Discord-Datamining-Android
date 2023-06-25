@@ -12,7 +12,7 @@ import com.discord.chat.presentation.message.MessageTagView;
 import com.discord.chat.presentation.message.MessageViewReplyPreview;
 import com.discord.chat.presentation.message.ThreadStarterMessageHeaderView;
 import com.facebook.drawee.view.SimpleDraweeView;
-import x1.a;
+import v0.a;
 
 /* loaded from: classes8.dex */
 public final class AutomodSystemMessageViewBinding {

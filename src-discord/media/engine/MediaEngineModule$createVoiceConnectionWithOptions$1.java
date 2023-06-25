@@ -24,7 +24,7 @@ final class MediaEngineModule$createVoiceConnectionWithOptions$1 extends s imple
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, Map<String, ? extends Object> map) {
         invoke2(str, map);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

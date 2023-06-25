@@ -28,11 +28,11 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
         q.g(item, "$item");
         q.g(this$0, "this$0");
         if (item.isBeforeContent()) {
-            str = item.getSummary().m140getEndId3Eiw7ao();
+            str = item.getSummary().m139getEndId3Eiw7ao();
         } else {
-            str = item.getSummary().m141getStartId3Eiw7ao();
+            str = item.getSummary().m140getStartId3Eiw7ao();
         }
-        this$0.getEventHandler().mo175onTapSummarysekaTiM(item.getSummary().m139getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo174onTapSummarysekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     @Override // com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate

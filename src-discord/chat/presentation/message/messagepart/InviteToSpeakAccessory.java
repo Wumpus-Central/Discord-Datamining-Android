@@ -11,7 +11,7 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public InviteToSpeakAccessory(Message message) {
-        super(message.m17getId3Eiw7ao(), "invite to speak", null);
+        super(message.m16getId3Eiw7ao(), "invite to speak", null);
         q.g(message, "message");
         this.message = message;
     }

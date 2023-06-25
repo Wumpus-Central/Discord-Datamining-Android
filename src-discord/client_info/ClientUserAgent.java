@@ -29,7 +29,7 @@ public final class ClientUserAgent {
         @Override // okhttp3.Interceptor
         public Response intercept(Interceptor.Chain chain) {
             q.g(chain, "chain");
-            return chain.a(chain.b().i().i("User-Agent").a("User-Agent", this.userAgent).b());
+            return chain.b(chain.a().i().i("User-Agent").a("User-Agent", this.userAgent).b());
         }
     }
 

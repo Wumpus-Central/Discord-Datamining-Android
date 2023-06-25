@@ -25,12 +25,12 @@ final class MessageViewReplyPreview$configureExecutedCommand$2 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f22113a;
+        return Unit.f20684a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(LinkContentNode it) {
         q.g(it, "it");
-        this.$eventHandler.mo149onLinkClickedntcYbpo(this.$messageId, it);
+        this.$eventHandler.mo148onLinkClickedntcYbpo(this.$messageId, it);
     }
 }

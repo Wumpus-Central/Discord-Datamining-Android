@@ -88,7 +88,7 @@ public final class SystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SystemMessageItem(Message message, MessageContext messageContext, BackgroundHighlight backgroundHighlight) {
-        super(message.m17getId3Eiw7ao(), null);
+        super(message.m16getId3Eiw7ao(), null);
         q.g(message, "message");
         q.g(messageContext, "messageContext");
         this.message = message;
