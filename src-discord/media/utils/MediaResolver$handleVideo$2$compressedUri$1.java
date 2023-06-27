@@ -25,7 +25,7 @@ public final class MediaResolver$handleVideo$2$compressedUri$1 extends s impleme
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     public final void invoke(float f10) {

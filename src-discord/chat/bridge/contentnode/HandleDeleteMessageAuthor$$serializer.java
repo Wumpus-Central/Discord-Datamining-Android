@@ -32,7 +32,7 @@ public final class HandleDeleteMessageAuthor$$serializer implements f0<HandleDel
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26939a};
+        return new KSerializer[]{a2.f26940a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

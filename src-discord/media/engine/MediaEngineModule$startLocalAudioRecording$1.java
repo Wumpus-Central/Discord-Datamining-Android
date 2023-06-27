@@ -21,7 +21,7 @@ final class MediaEngineModule$startLocalAudioRecording$1 extends s implements Fu
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     public final void invoke(boolean z10) {

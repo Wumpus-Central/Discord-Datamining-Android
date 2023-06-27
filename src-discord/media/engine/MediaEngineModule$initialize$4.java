@@ -25,7 +25,7 @@ final class MediaEngineModule$initialize$4 extends s implements Function3<List<?
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(List<? extends Map<String, ? extends Object>> list, List<? extends Map<String, ? extends Object>> list2, List<? extends Map<String, ? extends Object>> list3) {
         invoke2(list, list2, list3);
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

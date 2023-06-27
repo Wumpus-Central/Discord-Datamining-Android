@@ -107,10 +107,10 @@ public final class IconUrlUtils {
         }
         if (!z11) {
             try {
-                s.a aVar = s.f15494l;
+                s.a aVar = s.f15495l;
                 obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str + "." + MediaExtensionKt.getMediaExtension$default(false, null, 2, null), num, null, 4, null));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f15494l;
+                s.a aVar2 = s.f15495l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -153,10 +153,10 @@ public final class IconUrlUtils {
         if (!z11 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                s.a aVar = s.f15494l;
+                s.a aVar = s.f15495l;
                 obj = s.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str + "." + MediaExtensionKt.getMediaExtension(z10, str));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f15494l;
+                s.a aVar2 = s.f15495l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -257,11 +257,11 @@ public final class IconUrlUtils {
                 return str;
             } else if (str != null) {
                 try {
-                    s.a aVar = s.f15494l;
+                    s.a aVar = s.f15495l;
                     String mediaExtension = MediaExtensionKt.getMediaExtension(z10, str);
                     obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str + "." + mediaExtension, num2, null, 4, null));
                 } catch (Throwable th2) {
-                    s.a aVar2 = s.f15494l;
+                    s.a aVar2 = s.f15495l;
                     obj = s.b(t.a(th2));
                 }
                 if (s.e(obj) != null) {

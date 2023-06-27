@@ -178,7 +178,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
             return null;
         }
         this.binding.titleText.setTextColor(num.intValue());
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

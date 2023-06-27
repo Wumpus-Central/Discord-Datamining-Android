@@ -31,10 +31,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            s.a aVar = s.f15494l;
+            s.a aVar = s.f15495l;
             obj = s.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15494l;
+            s.a aVar2 = s.f15495l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

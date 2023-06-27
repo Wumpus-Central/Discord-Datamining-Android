@@ -18,7 +18,7 @@ final class NotificationClient$tokenListener$1 extends s implements Function1<St
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -37,7 +37,7 @@ public final class OnSafeAreaInsetsDidChangeData$$serializer implements f0<OnSaf
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        e0 e0Var = e0.f26964a;
+        e0 e0Var = e0.f26965a;
         return new KSerializer[]{e0Var, e0Var, e0Var, e0Var, e0Var};
     }
 

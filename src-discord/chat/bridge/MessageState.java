@@ -79,7 +79,7 @@ public enum MessageState {
 
         @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return g.a("MessageState", e.i.f26450a);
+            return g.a("MessageState", e.i.f26451a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

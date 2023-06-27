@@ -32,7 +32,7 @@ public final class IntervalEvent$$serializer implements f0<IntervalEvent> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f27014a};
+        return new KSerializer[]{m0.f27015a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

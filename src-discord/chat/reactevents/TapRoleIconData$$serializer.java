@@ -33,7 +33,7 @@ public final class TapRoleIconData$$serializer implements f0<TapRoleIconData> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
+        a2 a2Var = a2.f26940a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

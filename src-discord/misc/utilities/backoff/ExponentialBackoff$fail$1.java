@@ -36,7 +36,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -56,7 +56,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f20684a;
+            return Unit.f20685a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -65,6 +65,6 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
         if (function1.invoke(this) == d10) {
             return d10;
         }
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 }

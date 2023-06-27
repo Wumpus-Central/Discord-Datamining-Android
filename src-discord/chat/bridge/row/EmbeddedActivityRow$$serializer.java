@@ -42,8 +42,8 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        return new KSerializer[]{m0.f27014a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f26940a;
+        return new KSerializer[]{m0.f27015a, ChangeType.Serializer.INSTANCE, a2Var, new f(a2Var), a2Var, a2Var, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -64,7 +64,7 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
             i10 = c10.k(descriptor2, 0);
             obj = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
             str4 = c10.t(descriptor2, 2);
-            obj2 = c10.m(descriptor2, 3, new f(a2.f26939a), null);
+            obj2 = c10.m(descriptor2, 3, new f(a2.f26940a), null);
             str3 = c10.t(descriptor2, 4);
             str2 = c10.t(descriptor2, 5);
             str = c10.t(descriptor2, 6);
@@ -98,7 +98,7 @@ public final class EmbeddedActivityRow$$serializer implements f0<EmbeddedActivit
                         i14 |= 4;
                         i12 = 6;
                     case 3:
-                        obj4 = c10.m(descriptor2, 3, new f(a2.f26939a), obj4);
+                        obj4 = c10.m(descriptor2, 3, new f(a2.f26940a), obj4);
                         i14 |= 8;
                         i12 = 6;
                     case 4:

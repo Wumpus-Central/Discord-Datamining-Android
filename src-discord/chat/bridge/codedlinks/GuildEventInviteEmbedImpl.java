@@ -296,118 +296,118 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
         output.t(serialDesc, 4, self.getHeaderText());
         output.C(serialDesc, 5, InviteType.Serializer.INSTANCE, self.getType());
         if (output.w(serialDesc, 6) || self.getAcceptLabelBackgroundColor() != null) {
-            output.e(serialDesc, 6, m0.f27014a, self.getAcceptLabelBackgroundColor());
+            output.e(serialDesc, 6, m0.f27015a, self.getAcceptLabelBackgroundColor());
         }
         if (output.w(serialDesc, 7) || self.getAcceptLabelBorderColor() != null) {
-            output.e(serialDesc, 7, m0.f27014a, self.getAcceptLabelBorderColor());
+            output.e(serialDesc, 7, m0.f27015a, self.getAcceptLabelBorderColor());
         }
         if (output.w(serialDesc, 8) || self.getAcceptLabelColor() != null) {
-            output.e(serialDesc, 8, m0.f27014a, self.getAcceptLabelColor());
+            output.e(serialDesc, 8, m0.f27015a, self.getAcceptLabelColor());
         }
         if (output.w(serialDesc, 9) || self.getAcceptLabelIcon() != null) {
-            output.e(serialDesc, 9, a2.f26939a, self.getAcceptLabelIcon());
+            output.e(serialDesc, 9, a2.f26940a, self.getAcceptLabelIcon());
         }
         if (output.w(serialDesc, 10) || self.getAcceptLabelText() != null) {
-            output.e(serialDesc, 10, a2.f26939a, self.getAcceptLabelText());
+            output.e(serialDesc, 10, a2.f26940a, self.getAcceptLabelText());
         }
         if (output.w(serialDesc, 11) || self.getBadgeCount() != null) {
-            output.e(serialDesc, 11, a2.f26939a, self.getBadgeCount());
+            output.e(serialDesc, 11, a2.f26940a, self.getBadgeCount());
         }
         if (output.w(serialDesc, 12) || self.getBadgeIcon() != null) {
-            output.e(serialDesc, 12, a2.f26939a, self.getBadgeIcon());
+            output.e(serialDesc, 12, a2.f26940a, self.getBadgeIcon());
         }
         if (output.w(serialDesc, 13) || self.getBodyText() != null) {
-            output.e(serialDesc, 13, a2.f26939a, self.getBodyText());
+            output.e(serialDesc, 13, a2.f26940a, self.getBodyText());
         }
         if (output.w(serialDesc, 14) || self.getBodyTextColor() != null) {
-            output.e(serialDesc, 14, m0.f27014a, self.getBodyTextColor());
+            output.e(serialDesc, 14, m0.f27015a, self.getBodyTextColor());
         }
         if (output.w(serialDesc, 15) || self.getCanBeAccepted() != null) {
-            output.e(serialDesc, 15, h.f26981a, self.getCanBeAccepted());
+            output.e(serialDesc, 15, h.f26982a, self.getCanBeAccepted());
         }
         if (output.w(serialDesc, 16) || self.getChannelIcon() != null) {
-            output.e(serialDesc, 16, a2.f26939a, self.getChannelIcon());
+            output.e(serialDesc, 16, a2.f26940a, self.getChannelIcon());
         }
         if (output.w(serialDesc, 17) || self.getChannelName() != null) {
-            output.e(serialDesc, 17, a2.f26939a, self.getChannelName());
+            output.e(serialDesc, 17, a2.f26940a, self.getChannelName());
         }
         if (output.w(serialDesc, 18) || self.getContent() != null) {
             output.e(serialDesc, 18, StructurableTextSerializer.INSTANCE, self.getContent());
         }
         if (output.w(serialDesc, 19) || self.getCreatorAvatar() != null) {
-            output.e(serialDesc, 19, a2.f26939a, self.getCreatorAvatar());
+            output.e(serialDesc, 19, a2.f26940a, self.getCreatorAvatar());
         }
         if (output.w(serialDesc, 20) || self.getEmbedCanBeTapped() != null) {
-            output.e(serialDesc, 20, h.f26981a, self.getEmbedCanBeTapped());
+            output.e(serialDesc, 20, h.f26982a, self.getEmbedCanBeTapped());
         }
         if (output.w(serialDesc, 21) || self.getGuildIcon() != null) {
-            output.e(serialDesc, 21, a2.f26939a, self.getGuildIcon());
+            output.e(serialDesc, 21, a2.f26940a, self.getGuildIcon());
         }
         if (output.w(serialDesc, 22) || self.getGuildName() != null) {
-            output.e(serialDesc, 22, a2.f26939a, self.getGuildName());
+            output.e(serialDesc, 22, a2.f26940a, self.getGuildName());
         }
         if (output.w(serialDesc, 23) || self.getHeaderIcon() != null) {
-            output.e(serialDesc, 23, a2.f26939a, self.getHeaderIcon());
+            output.e(serialDesc, 23, a2.f26940a, self.getHeaderIcon());
         }
         if (output.w(serialDesc, 24) || self.getHeaderTextColor() != null) {
-            output.e(serialDesc, 24, m0.f27014a, self.getHeaderTextColor());
+            output.e(serialDesc, 24, m0.f27015a, self.getHeaderTextColor());
         }
         if (output.w(serialDesc, 25) || self.isRsvped() != null) {
-            output.e(serialDesc, 25, h.f26981a, self.isRsvped());
+            output.e(serialDesc, 25, h.f26982a, self.isRsvped());
         }
         if (output.w(serialDesc, 26) || self.getMemberText() != null) {
-            output.e(serialDesc, 26, a2.f26939a, self.getMemberText());
+            output.e(serialDesc, 26, a2.f26940a, self.getMemberText());
         }
         if (output.w(serialDesc, 27) || self.getOnlineText() != null) {
-            output.e(serialDesc, 27, a2.f26939a, self.getOnlineText());
+            output.e(serialDesc, 27, a2.f26940a, self.getOnlineText());
         }
         if (output.w(serialDesc, 28) || self.getResolvingGradientEnd() != null) {
-            output.e(serialDesc, 28, m0.f27014a, self.getResolvingGradientEnd());
+            output.e(serialDesc, 28, m0.f27015a, self.getResolvingGradientEnd());
         }
         if (output.w(serialDesc, 29) || self.getResolvingGradientStart() != null) {
-            output.e(serialDesc, 29, m0.f27014a, self.getResolvingGradientStart());
+            output.e(serialDesc, 29, m0.f27015a, self.getResolvingGradientStart());
         }
         if (output.w(serialDesc, 30) || self.getSecondaryActionIcon() != null) {
-            output.e(serialDesc, 30, a2.f26939a, self.getSecondaryActionIcon());
+            output.e(serialDesc, 30, a2.f26940a, self.getSecondaryActionIcon());
         }
         if (output.w(serialDesc, 31) || self.getSplashHasRadialGradient() != null) {
-            output.e(serialDesc, 31, h.f26981a, self.getSplashHasRadialGradient());
+            output.e(serialDesc, 31, h.f26982a, self.getSplashHasRadialGradient());
         }
         if (output.w(serialDesc, 32) || self.getSplashOpacity() != null) {
-            output.e(serialDesc, 32, m0.f27014a, self.getSplashOpacity());
+            output.e(serialDesc, 32, m0.f27015a, self.getSplashOpacity());
         }
         if (output.w(serialDesc, 33) || self.getSplashUrl() != null) {
-            output.e(serialDesc, 33, a2.f26939a, self.getSplashUrl());
+            output.e(serialDesc, 33, a2.f26940a, self.getSplashUrl());
         }
         if (output.w(serialDesc, 34) || self.getInviteSplash() != null) {
-            output.e(serialDesc, 34, a2.f26939a, self.getInviteSplash());
+            output.e(serialDesc, 34, a2.f26940a, self.getInviteSplash());
         }
         if (output.w(serialDesc, 35) || self.getSubtitle() != null) {
-            output.e(serialDesc, 35, a2.f26939a, self.getSubtitle());
+            output.e(serialDesc, 35, a2.f26940a, self.getSubtitle());
         }
         if (output.w(serialDesc, 36) || self.getSubtitleColor() != null) {
-            output.e(serialDesc, 36, m0.f27014a, self.getSubtitleColor());
+            output.e(serialDesc, 36, m0.f27015a, self.getSubtitleColor());
         }
         if (output.w(serialDesc, 37) || self.getThumbnailBackgroundColor() != null) {
-            output.e(serialDesc, 37, m0.f27014a, self.getThumbnailBackgroundColor());
+            output.e(serialDesc, 37, m0.f27015a, self.getThumbnailBackgroundColor());
         }
         if (output.w(serialDesc, 38) || self.getThumbnailCornerRadius() != null) {
-            output.e(serialDesc, 38, m0.f27014a, self.getThumbnailCornerRadius());
+            output.e(serialDesc, 38, m0.f27015a, self.getThumbnailCornerRadius());
         }
         if (output.w(serialDesc, 39) || self.getThumbnailText() != null) {
-            output.e(serialDesc, 39, a2.f26939a, self.getThumbnailText());
+            output.e(serialDesc, 39, a2.f26940a, self.getThumbnailText());
         }
         if (output.w(serialDesc, 40) || self.getThumbnailUrl() != null) {
-            output.e(serialDesc, 40, a2.f26939a, self.getThumbnailUrl());
+            output.e(serialDesc, 40, a2.f26940a, self.getThumbnailUrl());
         }
         if (output.w(serialDesc, 41) || self.getTitleColor() != null) {
-            output.e(serialDesc, 41, m0.f27014a, self.getTitleColor());
+            output.e(serialDesc, 41, m0.f27015a, self.getTitleColor());
         }
         if (output.w(serialDesc, 42) || self.getTitleText() != null) {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 42, a2.f26939a, self.getTitleText());
+            output.e(serialDesc, 42, a2.f26940a, self.getTitleText());
         }
     }
 

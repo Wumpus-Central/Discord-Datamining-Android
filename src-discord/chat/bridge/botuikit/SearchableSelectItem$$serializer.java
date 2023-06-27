@@ -40,8 +40,8 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        m0 m0Var = m0.f27014a;
+        a2 a2Var = a2.f26940a;
+        m0 m0Var = m0.f27015a;
         return new KSerializer[]{a2Var, a2Var, a.u(ComponentEmoji$$serializer.INSTANCE), m0Var, a.u(a2Var), a.u(m0Var)};
     }
 
@@ -62,8 +62,8 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
             str = c10.t(descriptor2, 1);
             obj = c10.v(descriptor2, 2, ComponentEmoji$$serializer.INSTANCE, null);
             i10 = c10.k(descriptor2, 3);
-            obj2 = c10.v(descriptor2, 4, a2.f26939a, null);
-            obj3 = c10.v(descriptor2, 5, m0.f27014a, null);
+            obj2 = c10.v(descriptor2, 4, a2.f26940a, null);
+            obj3 = c10.v(descriptor2, 5, m0.f27015a, null);
             i11 = 63;
         } else {
             boolean z10 = true;
@@ -97,11 +97,11 @@ public final class SearchableSelectItem$$serializer implements f0<SearchableSele
                         i13 |= 8;
                         break;
                     case 4:
-                        obj5 = c10.v(descriptor2, 4, a2.f26939a, obj5);
+                        obj5 = c10.v(descriptor2, 4, a2.f26940a, obj5);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj6 = c10.v(descriptor2, 5, m0.f27014a, obj6);
+                        obj6 = c10.v(descriptor2, 5, m0.f27015a, obj6);
                         i13 |= 32;
                         break;
                     default:

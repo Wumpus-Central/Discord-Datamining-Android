@@ -57,7 +57,7 @@ public enum StickerFormatType {
 
         @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return g.a("StickerFormatType", e.f.f26447a);
+            return g.a("StickerFormatType", e.f.f26448a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

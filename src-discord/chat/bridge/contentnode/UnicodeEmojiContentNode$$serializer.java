@@ -36,8 +36,8 @@ public final class UnicodeEmojiContentNode$$serializer implements f0<UnicodeEmoj
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        return new KSerializer[]{a2Var, a2Var, h.f26981a};
+        a2 a2Var = a2.f26940a;
+        return new KSerializer[]{a2Var, a2Var, h.f26982a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

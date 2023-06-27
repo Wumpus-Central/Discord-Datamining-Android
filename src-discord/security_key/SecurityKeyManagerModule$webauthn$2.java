@@ -18,7 +18,7 @@ public /* synthetic */ class SecurityKeyManagerModule$webauthn$2 extends n imple
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

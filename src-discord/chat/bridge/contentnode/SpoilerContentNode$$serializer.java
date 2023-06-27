@@ -35,7 +35,7 @@ public final class SpoilerContentNode$$serializer implements f0<SpoilerContentNo
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2.f26939a};
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2.f26940a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

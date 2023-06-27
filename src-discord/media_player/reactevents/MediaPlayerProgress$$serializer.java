@@ -35,8 +35,8 @@ public final class MediaPlayerProgress$$serializer implements f0<MediaPlayerProg
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        w0 w0Var = w0.f27055a;
-        return new KSerializer[]{x.f27060a, w0Var, w0Var};
+        w0 w0Var = w0.f27056a;
+        return new KSerializer[]{x.f27061a, w0Var, w0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

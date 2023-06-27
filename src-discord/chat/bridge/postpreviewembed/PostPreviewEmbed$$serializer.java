@@ -57,8 +57,8 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f26939a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f26981a, a.u(a2Var)};
+        a2 a2Var = a2.f26940a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f26982a, a.u(a2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -94,7 +94,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
             str = c10.t(descriptor2, 4);
             str2 = c10.t(descriptor2, 5);
             obj5 = c10.m(descriptor2, 6, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f26939a;
+            a2 a2Var = a2.f26940a;
             obj3 = c10.v(descriptor2, 7, a2Var, null);
             obj2 = c10.v(descriptor2, 8, a2Var, null);
             obj6 = c10.v(descriptor2, 9, a2Var, null);
@@ -179,29 +179,29 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i11 = 11;
                         break;
                     case 7:
-                        obj3 = c10.v(descriptor2, 7, a2.f26939a, obj3);
+                        obj3 = c10.v(descriptor2, 7, a2.f26940a, obj3);
                         i15 |= 128;
                         i14 = 13;
                         i11 = 11;
                         break;
                     case 8:
-                        obj14 = c10.v(descriptor2, 8, a2.f26939a, obj14);
+                        obj14 = c10.v(descriptor2, 8, a2.f26940a, obj14);
                         i15 |= 256;
                         i14 = 13;
                         i11 = 11;
                         continue;
                     case 9:
-                        obj15 = c10.v(descriptor2, i13, a2.f26939a, obj15);
+                        obj15 = c10.v(descriptor2, i13, a2.f26940a, obj15);
                         i15 |= 512;
                         i14 = 13;
                         break;
                     case 10:
-                        obj16 = c10.v(descriptor2, i12, a2.f26939a, obj16);
+                        obj16 = c10.v(descriptor2, i12, a2.f26940a, obj16);
                         i15 |= 1024;
                         i14 = 13;
                         break;
                     case 11:
-                        obj20 = c10.v(descriptor2, i11, a2.f26939a, obj20);
+                        obj20 = c10.v(descriptor2, i11, a2.f26940a, obj20);
                         i15 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i14 = 13;
                         break;
@@ -210,7 +210,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i15 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         break;
                     case 13:
-                        obj13 = c10.v(descriptor2, i14, a2.f26939a, obj13);
+                        obj13 = c10.v(descriptor2, i14, a2.f26940a, obj13);
                         i15 |= 8192;
                         break;
                     default:

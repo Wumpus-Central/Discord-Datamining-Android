@@ -38,8 +38,8 @@ public final class PingTimeoutCallbackEvent$$serializer implements f0<PingTimeou
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f27014a;
-        return new KSerializer[]{m0Var, a2.f26939a, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f27015a;
+        return new KSerializer[]{m0Var, a2.f26940a, m0Var, m0Var, m0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

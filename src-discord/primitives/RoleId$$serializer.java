@@ -29,7 +29,7 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f27055a};
+        return new KSerializer[]{w0.f27056a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

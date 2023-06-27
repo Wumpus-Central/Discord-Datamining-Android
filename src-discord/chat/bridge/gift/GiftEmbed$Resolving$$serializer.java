@@ -40,8 +40,8 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f27014a;
-        return new KSerializer[]{a2.f26939a, m0Var, m0Var, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f27015a;
+        return new KSerializer[]{a2.f26940a, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

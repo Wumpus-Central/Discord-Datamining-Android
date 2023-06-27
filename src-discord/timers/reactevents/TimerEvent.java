@@ -19,7 +19,7 @@ public final class TimerEvent implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f7635id;
+    private final int f7636id;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/timers/reactevents/TimerEvent$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/timers/reactevents/TimerEvent;", "react_timers_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes6.dex */
@@ -37,12 +37,12 @@ public final class TimerEvent implements ReactEvent {
     }
 
     public TimerEvent(int i10) {
-        this.f7635id = i10;
+        this.f7636id = i10;
     }
 
     public static /* synthetic */ TimerEvent copy$default(TimerEvent timerEvent, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            i10 = timerEvent.f7635id;
+            i10 = timerEvent.f7636id;
         }
         return timerEvent.copy(i10);
     }
@@ -51,11 +51,11 @@ public final class TimerEvent implements ReactEvent {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.r(serialDesc, 0, self.f7635id);
+        output.r(serialDesc, 0, self.f7636id);
     }
 
     public final int component1() {
-        return this.f7635id;
+        return this.f7636id;
     }
 
     public final TimerEvent copy(int i10) {
@@ -66,15 +66,15 @@ public final class TimerEvent implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TimerEvent) && this.f7635id == ((TimerEvent) obj).f7635id;
+        return (obj instanceof TimerEvent) && this.f7636id == ((TimerEvent) obj).f7636id;
     }
 
     public final int getId() {
-        return this.f7635id;
+        return this.f7636id;
     }
 
     public int hashCode() {
-        return this.f7635id;
+        return this.f7636id;
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -83,7 +83,7 @@ public final class TimerEvent implements ReactEvent {
     }
 
     public String toString() {
-        int i10 = this.f7635id;
+        int i10 = this.f7636id;
         return "TimerEvent(id=" + i10 + ")";
     }
 
@@ -91,6 +91,6 @@ public final class TimerEvent implements ReactEvent {
         if (1 != (i10 & 1)) {
             n1.b(i10, 1, TimerEvent$$serializer.INSTANCE.getDescriptor());
         }
-        this.f7635id = i11;
+        this.f7636id = i11;
     }
 }

@@ -38,8 +38,8 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f26981a;
-        return new KSerializer[]{a2.f26939a, m0.f27014a, a.u(hVar), a.u(hVar)};
+        h hVar = h.f26982a;
+        return new KSerializer[]{a2.f26940a, m0.f27015a, a.u(hVar), a.u(hVar)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -55,7 +55,7 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
             i10 = c10.k(descriptor2, 1);
-            h hVar = h.f26981a;
+            h hVar = h.f26982a;
             obj = c10.v(descriptor2, 2, hVar, null);
             obj2 = c10.v(descriptor2, 3, hVar, null);
             i11 = 15;
@@ -77,10 +77,10 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
                     i12 = c10.k(descriptor2, 1);
                     i13 |= 2;
                 } else if (x10 == 2) {
-                    obj3 = c10.v(descriptor2, 2, h.f26981a, obj3);
+                    obj3 = c10.v(descriptor2, 2, h.f26982a, obj3);
                     i13 |= 4;
                 } else if (x10 == 3) {
-                    obj4 = c10.v(descriptor2, 3, h.f26981a, obj4);
+                    obj4 = c10.v(descriptor2, 3, h.f26982a, obj4);
                     i13 |= 8;
                 } else {
                     throw new n(x10);

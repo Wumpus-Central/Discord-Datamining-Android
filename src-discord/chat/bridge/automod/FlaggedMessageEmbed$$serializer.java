@@ -57,9 +57,9 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        m0 m0Var = m0.f27014a;
-        h hVar = h.f26981a;
+        a2 a2Var = a2.f26940a;
+        m0 m0Var = m0.f27015a;
+        h hVar = h.f26982a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), a.u(StructurableTextSerializer.INSTANCE), a.u(a2Var), a.u(a2Var), m0Var, a.u(m0Var), hVar, a.u(a2Var), a.u(hVar)};
     }
 
@@ -92,14 +92,14 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
             obj2 = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
             obj5 = c10.v(descriptor2, 3, UserId$$serializer.INSTANCE, null);
             obj3 = c10.v(descriptor2, 4, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f26939a;
+            a2 a2Var = a2.f26940a;
             obj6 = c10.v(descriptor2, 5, a2Var, null);
             obj7 = c10.v(descriptor2, 6, a2Var, null);
             i10 = c10.k(descriptor2, 7);
-            obj9 = c10.v(descriptor2, 8, m0.f27014a, null);
+            obj9 = c10.v(descriptor2, 8, m0.f27015a, null);
             z10 = c10.s(descriptor2, 9);
             obj8 = c10.v(descriptor2, 10, a2Var, null);
-            obj4 = c10.v(descriptor2, 11, h.f26981a, null);
+            obj4 = c10.v(descriptor2, 11, h.f26982a, null);
             i11 = 4095;
         } else {
             int i16 = 11;
@@ -167,12 +167,12 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i12 = 10;
                         break;
                     case 5:
-                        obj14 = c10.v(descriptor2, 5, a2.f26939a, obj14);
+                        obj14 = c10.v(descriptor2, 5, a2.f26940a, obj14);
                         i17 |= 32;
                         i16 = 11;
                         continue;
                     case 6:
-                        obj15 = c10.v(descriptor2, i15, a2.f26939a, obj15);
+                        obj15 = c10.v(descriptor2, i15, a2.f26940a, obj15);
                         i17 |= 64;
                         break;
                     case 7:
@@ -180,7 +180,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 128;
                         break;
                     case 8:
-                        obj11 = c10.v(descriptor2, 8, m0.f27014a, obj11);
+                        obj11 = c10.v(descriptor2, 8, m0.f27015a, obj11);
                         i17 |= 256;
                         break;
                     case 9:
@@ -188,11 +188,11 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 512;
                         break;
                     case 10:
-                        obj16 = c10.v(descriptor2, i12, a2.f26939a, obj16);
+                        obj16 = c10.v(descriptor2, i12, a2.f26940a, obj16);
                         i17 |= 1024;
                         break;
                     case 11:
-                        obj13 = c10.v(descriptor2, i16, h.f26981a, obj13);
+                        obj13 = c10.v(descriptor2, i16, h.f26982a, obj13);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         break;
                     default:

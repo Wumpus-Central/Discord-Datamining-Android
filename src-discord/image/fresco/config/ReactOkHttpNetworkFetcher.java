@@ -44,7 +44,7 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     @Override // com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher
     public void fetch(OkHttpNetworkFetcher.OkHttpNetworkFetchState okHttpNetworkFetchState, NetworkFetcher.Callback callback) {
-        okHttpNetworkFetchState.f8199f = SystemClock.elapsedRealtime();
+        okHttpNetworkFetchState.f8200f = SystemClock.elapsedRealtime();
         Uri g10 = okHttpNetworkFetchState.g();
         Map<String, String> headers = okHttpNetworkFetchState.b().d() instanceof ReactNetworkImageRequest ? getHeaders(((ReactNetworkImageRequest) okHttpNetworkFetchState.b().d()).getHeaders()) : null;
         if (headers == null) {

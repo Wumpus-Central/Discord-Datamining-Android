@@ -22,7 +22,7 @@ final class MediaEngineModule$initialize$1 extends s implements Function1<Boolea
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     public final void invoke(boolean z10) {

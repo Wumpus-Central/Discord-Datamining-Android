@@ -38,7 +38,7 @@ public final class EmbedAuthor$$serializer implements f0<EmbedAuthor> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
+        a2 a2Var = a2.f26940a;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -55,7 +55,7 @@ public final class EmbedAuthor$$serializer implements f0<EmbedAuthor> {
         String str2 = null;
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f26939a;
+            a2 a2Var = a2.f26940a;
             obj = c10.v(descriptor2, 1, a2Var, null);
             obj2 = c10.v(descriptor2, 2, a2Var, null);
             obj3 = c10.v(descriptor2, 3, a2Var, null);
@@ -74,13 +74,13 @@ public final class EmbedAuthor$$serializer implements f0<EmbedAuthor> {
                     str2 = c10.t(descriptor2, 0);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj4 = c10.v(descriptor2, 1, a2.f26939a, obj4);
+                    obj4 = c10.v(descriptor2, 1, a2.f26940a, obj4);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f26939a, obj5);
+                    obj5 = c10.v(descriptor2, 2, a2.f26940a, obj5);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj6 = c10.v(descriptor2, 3, a2.f26939a, obj6);
+                    obj6 = c10.v(descriptor2, 3, a2.f26940a, obj6);
                     i11 |= 8;
                 } else {
                     throw new n(x10);

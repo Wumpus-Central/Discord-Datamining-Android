@@ -39,7 +39,7 @@ public final class TapTagData$$serializer implements f0<TapTagData> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f26939a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f26940a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -55,7 +55,7 @@ public final class TapTagData$$serializer implements f0<TapTagData> {
         if (c10.y()) {
             obj3 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 2, a2.f26939a, null);
+            obj2 = c10.v(descriptor2, 2, a2.f26940a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -74,7 +74,7 @@ public final class TapTagData$$serializer implements f0<TapTagData> {
                     obj5 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj5);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj4 = c10.v(descriptor2, 2, a2.f26939a, obj4);
+                    obj4 = c10.v(descriptor2, 2, a2.f26940a, obj4);
                     i11 |= 4;
                 } else {
                     throw new n(x10);

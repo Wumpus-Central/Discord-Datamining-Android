@@ -267,7 +267,7 @@ public final class MessageBundleView extends LinearLayout {
                 r4 = r0
             L_0x0043:
                 if (r4 == 0) goto L_0x004c
-                ti.e0 r4 = ti.e0.f26964a
+                ti.e0 r4 = ti.e0.f26965a
                 java.lang.Float r5 = r6.truncationThreshold
                 r7.e(r8, r1, r4, r5)
             L_0x004c:
@@ -304,7 +304,7 @@ public final class MessageBundleView extends LinearLayout {
                 goto L_0x0076
             L_0x007d:
                 if (r0 == 0) goto L_0x0086
-                ti.a2 r0 = ti.a2.f26939a
+                ti.a2 r0 = ti.a2.f26940a
                 java.lang.String r6 = r6.viewMoreText
                 r7.e(r8, r1, r0, r6)
             L_0x0086:

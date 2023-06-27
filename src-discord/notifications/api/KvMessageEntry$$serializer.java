@@ -43,7 +43,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        t tVar = t.f21243a;
+        t tVar = t.f21244a;
         return new KSerializer[]{new f(tVar), new f(tVar), tVar, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
@@ -59,7 +59,7 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
-            t tVar = t.f21243a;
+            t tVar = t.f21244a;
             obj5 = c10.m(descriptor2, 0, new f(tVar), null);
             obj = c10.m(descriptor2, 1, new f(tVar), null);
             obj2 = c10.m(descriptor2, 2, tVar, null);
@@ -79,13 +79,13 @@ public final class KvMessageEntry$$serializer implements f0<KvMessageEntry> {
                 if (x10 == -1) {
                     z10 = false;
                 } else if (x10 == 0) {
-                    obj5 = c10.m(descriptor2, 0, new f(t.f21243a), obj5);
+                    obj5 = c10.m(descriptor2, 0, new f(t.f21244a), obj5);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj9 = c10.m(descriptor2, 1, new f(t.f21243a), obj9);
+                    obj9 = c10.m(descriptor2, 1, new f(t.f21244a), obj9);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj8 = c10.m(descriptor2, 2, t.f21243a, obj8);
+                    obj8 = c10.m(descriptor2, 2, t.f21244a, obj8);
                     i11 |= 4;
                 } else if (x10 == 3) {
                     obj6 = c10.m(descriptor2, 3, MessageId$$serializer.INSTANCE, obj6);

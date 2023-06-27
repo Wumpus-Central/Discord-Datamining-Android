@@ -104,7 +104,7 @@ public final class ButtonComponent extends Component {
         q.g(serialDesc, "serialDesc");
         boolean z14 = false;
         output.r(serialDesc, 0, self.getType());
-        output.C(serialDesc, 1, new ti.f(m0.f27014a), self.getIndices());
+        output.C(serialDesc, 1, new ti.f(m0.f27015a), self.getIndices());
         output.C(serialDesc, 2, ApplicationId$$serializer.INSTANCE, ApplicationId.m549boximpl(self.applicationId));
         if (!output.w(serialDesc, 3) && self.customId == null) {
             z10 = false;
@@ -112,7 +112,7 @@ public final class ButtonComponent extends Component {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 3, a2.f26939a, self.customId);
+            output.e(serialDesc, 3, a2.f26940a, self.customId);
         }
         if (!output.w(serialDesc, 4) && self.label == null) {
             z11 = false;
@@ -120,7 +120,7 @@ public final class ButtonComponent extends Component {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 4, a2.f26939a, self.label);
+            output.e(serialDesc, 4, a2.f26940a, self.label);
         }
         output.C(serialDesc, 5, ButtonStyle.Serializer.INSTANCE, self.style);
         if (!output.w(serialDesc, 6) && !self.disabled) {
@@ -143,7 +143,7 @@ public final class ButtonComponent extends Component {
             z14 = true;
         }
         if (z14) {
-            output.e(serialDesc, 8, a2.f26939a, self.url);
+            output.e(serialDesc, 8, a2.f26940a, self.url);
         }
         output.C(serialDesc, 9, ActionComponentState.Serializer.INSTANCE, self.state);
     }

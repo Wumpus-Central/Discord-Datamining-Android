@@ -55,7 +55,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -119,7 +119,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((C01131) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+                return ((C01131) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -128,7 +128,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     t.b(obj);
                     this.$soundManager.prepare(this.$key, this.$usage, null, ((DownloadState.Completed) this.$downloadState).getFile().getAbsolutePath(), this.$soundResIdPrepared);
-                    return Unit.f20684a;
+                    return Unit.f20685a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -155,7 +155,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -164,7 +164,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     t.b(obj);
                     Log.INSTANCE.w(SoundManager.Companion.getLogTag(), "Failed to download sound.", this.$e);
-                    return Unit.f20684a;
+                    return Unit.f20685a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -188,7 +188,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -293,7 +293,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (r0 != r3) goto L_0x007f
                 return r3
             L_0x007f:
-                kotlin.Unit r0 = kotlin.Unit.f20684a
+                kotlin.Unit r0 = kotlin.Unit.f20685a
                 return r0
             L_0x0082:
                 kotlinx.coroutines.f2 r0 = kotlinx.coroutines.y0.c()

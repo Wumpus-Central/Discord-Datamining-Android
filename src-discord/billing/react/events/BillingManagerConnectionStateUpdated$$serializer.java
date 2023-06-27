@@ -32,7 +32,7 @@ public final class BillingManagerConnectionStateUpdated$$serializer implements f
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f27014a};
+        return new KSerializer[]{m0.f27015a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

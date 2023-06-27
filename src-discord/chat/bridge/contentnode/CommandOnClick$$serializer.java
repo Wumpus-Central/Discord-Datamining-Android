@@ -46,7 +46,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(a2.f26939a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
+        return new KSerializer[]{a.u(a2.f26940a), a.u(userId$$serializer), a.u(MessageId$$serializer.INSTANCE), a.u(userId$$serializer), a.u(MessageType.Serializer.INSTANCE), a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,7 +62,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
-            obj6 = c10.v(descriptor2, 0, a2.f26939a, null);
+            obj6 = c10.v(descriptor2, 0, a2.f26940a, null);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
             obj = c10.v(descriptor2, 1, userId$$serializer, null);
             obj2 = c10.v(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
@@ -86,7 +86,7 @@ public final class CommandOnClick$$serializer implements f0<CommandOnClick> {
                         z10 = false;
                         break;
                     case 0:
-                        obj6 = c10.v(descriptor2, 0, a2.f26939a, obj6);
+                        obj6 = c10.v(descriptor2, 0, a2.f26940a, obj6);
                         i11 |= 1;
                         break;
                     case 1:

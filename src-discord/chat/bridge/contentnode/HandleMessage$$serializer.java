@@ -33,7 +33,7 @@ public final class HandleMessage$$serializer implements f0<HandleMessage> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26939a, HandleSurveyMessage$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26940a, HandleSurveyMessage$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -40,8 +40,8 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f26981a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
+        a2 a2Var = a2.f26940a;
+        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f26982a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,9 +60,9 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         if (c10.y()) {
             str2 = c10.t(descriptor2, 0);
             str = c10.t(descriptor2, 1);
-            a2 a2Var = a2.f26939a;
+            a2 a2Var = a2.f26940a;
             obj = c10.v(descriptor2, 2, a2Var, null);
-            obj3 = c10.v(descriptor2, 3, h.f26981a, null);
+            obj3 = c10.v(descriptor2, 3, h.f26982a, null);
             obj2 = c10.v(descriptor2, 4, a2Var, null);
             obj4 = c10.v(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
             i10 = 63;
@@ -89,15 +89,15 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
                         i11 |= 2;
                         break;
                     case 2:
-                        obj5 = c10.v(descriptor2, 2, a2.f26939a, obj5);
+                        obj5 = c10.v(descriptor2, 2, a2.f26940a, obj5);
                         i11 |= 4;
                         break;
                     case 3:
-                        obj6 = c10.v(descriptor2, 3, h.f26981a, obj6);
+                        obj6 = c10.v(descriptor2, 3, h.f26982a, obj6);
                         i11 |= 8;
                         break;
                     case 4:
-                        obj7 = c10.v(descriptor2, 4, a2.f26939a, obj7);
+                        obj7 = c10.v(descriptor2, 4, a2.f26940a, obj7);
                         i11 |= 16;
                         break;
                     case 5:

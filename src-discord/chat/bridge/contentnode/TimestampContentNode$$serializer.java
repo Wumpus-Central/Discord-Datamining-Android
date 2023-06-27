@@ -35,8 +35,8 @@ public final class TimestampContentNode$$serializer implements f0<TimestampConte
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26939a;
-        return new KSerializer[]{w0.f27055a, a2Var, a2Var};
+        a2 a2Var = a2.f26940a;
+        return new KSerializer[]{w0.f27056a, a2Var, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -129,7 +129,7 @@ public final class CommandOnClick {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, a2.f26939a, self.action);
+            output.e(serialDesc, 0, a2.f26940a, self.action);
         }
         if (!output.w(serialDesc, 1) && self.userId == null) {
             z11 = false;

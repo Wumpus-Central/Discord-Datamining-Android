@@ -35,7 +35,7 @@ public final class PinsOnClick$$serializer implements f0<PinsOnClick> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26939a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26940a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

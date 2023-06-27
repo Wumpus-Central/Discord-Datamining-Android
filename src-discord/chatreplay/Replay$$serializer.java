@@ -34,7 +34,7 @@ public final class Replay$$serializer implements f0<Replay> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26939a, w0.f27055a};
+        return new KSerializer[]{a2.f26940a, w0.f27056a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

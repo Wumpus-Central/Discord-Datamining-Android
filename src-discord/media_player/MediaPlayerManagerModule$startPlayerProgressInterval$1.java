@@ -46,7 +46,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -57,7 +57,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
                 if (this.$mediaPlayer.isPlaying()) {
                     this.this$0.onMediaPlayerProgress(this.$portal, this.$mediaPlayer.currentPositionMs(), this.$mediaPlayer.durationMs());
                 }
-                return Unit.f20684a;
+                return Unit.f20685a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -80,7 +80,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0037  */
@@ -149,7 +149,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             if (r4 != r0) goto L_0x0031
             return r0
         L_0x0060:
-            kotlin.Unit r13 = kotlin.Unit.f20684a
+            kotlin.Unit r13 = kotlin.Unit.f20685a
             return r13
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1.invokeSuspend(java.lang.Object):java.lang.Object");

@@ -83,11 +83,11 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter<RecyclerVie
     }
 
     private final int getAddBurstReactionIndex() {
-        return this.reactions.size() + 1;
+        return this.canAddNewBurstReactions ? this.reactions.size() : this.reactions.size() + 1;
     }
 
     private final int getAddReactionIndex() {
-        return this.reactions.size();
+        return this.canAddNewBurstReactions ? this.reactions.size() + 1 : this.reactions.size();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

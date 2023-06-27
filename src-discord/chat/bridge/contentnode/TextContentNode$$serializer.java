@@ -34,7 +34,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(a2.f26939a)};
+        return new KSerializer[]{a.u(a2.f26940a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -45,7 +45,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
         c c10 = decoder.c(descriptor2);
         int i10 = 1;
         if (c10.y()) {
-            obj = c10.v(descriptor2, 0, a2.f26939a, null);
+            obj = c10.v(descriptor2, 0, a2.f26940a, null);
         } else {
             int i11 = 0;
             obj = null;
@@ -54,7 +54,7 @@ public final class TextContentNode$$serializer implements f0<TextContentNode> {
                 if (x10 == -1) {
                     i10 = 0;
                 } else if (x10 == 0) {
-                    obj = c10.v(descriptor2, 0, a2.f26939a, obj);
+                    obj = c10.v(descriptor2, 0, a2.f26940a, obj);
                     i11 |= 1;
                 } else {
                     throw new n(x10);

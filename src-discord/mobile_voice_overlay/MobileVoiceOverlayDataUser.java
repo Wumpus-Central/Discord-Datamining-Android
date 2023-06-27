@@ -78,7 +78,7 @@ public final class MobileVoiceOverlayDataUser {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         output.C(serialDesc, 0, UserId$$serializer.INSTANCE, UserId.m626boximpl(self.userId));
-        output.e(serialDesc, 1, a2.f26939a, self.avatar);
+        output.e(serialDesc, 1, a2.f26940a, self.avatar);
         output.s(serialDesc, 2, self.speaking);
         output.r(serialDesc, 3, self.discriminator);
     }

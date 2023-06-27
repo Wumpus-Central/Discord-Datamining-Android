@@ -43,7 +43,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+        return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
                     } else {
                         boolean z10 = downloadState instanceof DownloadState.InProgress;
                     }
-                    return Unit.f20684a;
+                    return Unit.f20685a;
                 }
             };
             this.label = 1;
@@ -88,6 +88,6 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 }

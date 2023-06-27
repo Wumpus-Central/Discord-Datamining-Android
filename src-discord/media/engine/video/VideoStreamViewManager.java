@@ -95,7 +95,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
         VideoStreamTextureView videoStreamTextureView = (VideoStreamTextureView) view;
         if (str != null) {
             videoStreamTextureView.startRenderingStream(str, new RenderListener(view));
-            unit = Unit.f20684a;
+            unit = Unit.f20685a;
         } else {
             unit = null;
         }
@@ -114,7 +114,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
                     ScreenWakeLock.INSTANCE.releaseLock(currentActivity, WAKE_LOCK_KEY);
                 }
             }
-            Unit unit2 = Unit.f20684a;
+            Unit unit2 = Unit.f20685a;
         }
     }
 

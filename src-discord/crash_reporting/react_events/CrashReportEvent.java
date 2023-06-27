@@ -104,7 +104,7 @@ public final class CrashReportEvent implements ReactEvent {
             if (cause != null) {
                 writableNativeMap.putString("tombstoneCause", cause);
             }
-            m10 = j.m(new IntRange(0, RNCWebViewManager.COMMAND_CLEAR_FORM_DATA), c.f28279k);
+            m10 = j.m(new IntRange(0, RNCWebViewManager.COMMAND_CLEAR_FORM_DATA), c.f28280k);
             if (m10 == 0) {
                 w10 = u.w(tombstone.getText());
                 if (!w10) {

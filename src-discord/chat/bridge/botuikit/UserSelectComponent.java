@@ -86,7 +86,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
         SearchableSelectComponent.write$Self((SearchableSelectComponent) self, output, serialDesc);
         boolean z12 = true;
         output.r(serialDesc, 1, self.getType());
-        output.C(serialDesc, 2, new ti.f(m0.f27014a), self.getIndices());
+        output.C(serialDesc, 2, new ti.f(m0.f27015a), self.getIndices());
         output.t(serialDesc, 3, self.getApplicationId());
         output.t(serialDesc, 4, self.getCustomId());
         if (!output.w(serialDesc, 5) && self.getPlaceholder() == null) {
@@ -95,7 +95,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 5, a2.f26939a, self.getPlaceholder());
+            output.e(serialDesc, 5, a2.f26940a, self.getPlaceholder());
         }
         if (!output.w(serialDesc, 6) && self.getAccessibilityLabel() == null) {
             z11 = false;
@@ -103,7 +103,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 6, a2.f26939a, self.getAccessibilityLabel());
+            output.e(serialDesc, 6, a2.f26940a, self.getAccessibilityLabel());
         }
         output.r(serialDesc, 7, self.getMinValues());
         output.r(serialDesc, 8, self.getMaxValues());

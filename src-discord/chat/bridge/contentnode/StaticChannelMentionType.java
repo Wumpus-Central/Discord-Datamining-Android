@@ -79,7 +79,7 @@ public enum StaticChannelMentionType {
 
         @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return g.a("StaticChannelMentionType", e.i.f26450a);
+            return g.a("StaticChannelMentionType", e.i.f26451a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

@@ -339,7 +339,7 @@ public final class DiscordAudioManager {
         setSpeakerphoneOn(z10);
         synchronized (this.instanceLock) {
             setActiveAudioDevice(deviceTypes);
-            Unit unit = Unit.f20684a;
+            Unit unit = Unit.f20685a;
         }
         Log.i$default(Log.INSTANCE, TAG, "Activated device: " + deviceTypes, (Throwable) null, 4, (Object) null);
     }
@@ -430,7 +430,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f20684a;
+                Unit unit = Unit.f20685a;
             }
         } else if (i10 == 2) {
             updateDeviceActivation();
@@ -536,7 +536,7 @@ public final class DiscordAudioManager {
                         arrayList.add(audioDevice);
                     }
                     setAudioDevices(arrayList);
-                    Unit unit = Unit.f20684a;
+                    Unit unit = Unit.f20685a;
                 }
                 activateDefaultDevice(this.audioDevices);
             }
@@ -568,7 +568,7 @@ public final class DiscordAudioManager {
                     arrayList.add(audioDevice2);
                 }
                 setAudioDevices(arrayList);
-                Unit unit = Unit.f20684a;
+                Unit unit = Unit.f20685a;
             }
         } else if (wiredHeadsetState instanceof WiredHeadsetState.PluggedIn) {
             synchronized (this.instanceLock) {
@@ -587,7 +587,7 @@ public final class DiscordAudioManager {
                     arrayList2.add(audioDevice);
                 }
                 setAudioDevices(arrayList2);
-                Unit unit2 = Unit.f20684a;
+                Unit unit2 = Unit.f20685a;
             }
         }
         updateDeviceActivation();
@@ -619,7 +619,7 @@ public final class DiscordAudioManager {
         };
         synchronized (this.instanceLock) {
             this.audioFocusListener = iVar;
-            Unit unit = Unit.f20684a;
+            Unit unit = Unit.f20685a;
         }
     }
 
@@ -829,7 +829,7 @@ public final class DiscordAudioManager {
         }
         synchronized (this.instanceLock) {
             this.inDiscordRequestedCommunicationMode = z10;
-            Unit unit = Unit.f20684a;
+            Unit unit = Unit.f20685a;
         }
     }
 
@@ -1060,7 +1060,7 @@ public final class DiscordAudioManager {
             activateDevice(DeviceTypes.INVALID);
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = DeviceTypes.DEFAULT;
-                Unit unit = Unit.f20684a;
+                Unit unit = Unit.f20685a;
             }
             setCommunicationModeOnInternal(false);
             releaseAudioFocus();
@@ -1095,7 +1095,7 @@ public final class DiscordAudioManager {
         if (deviceType == deviceTypes) {
             synchronized (this.instanceLock) {
                 this.requestedAudioDevice = deviceTypes;
-                Unit unit = Unit.f20684a;
+                Unit unit = Unit.f20685a;
             }
             activateDefaultDevice(arrayList);
             return true;
@@ -1107,7 +1107,7 @@ public final class DiscordAudioManager {
             if (!z10) {
                 synchronized (this.instanceLock) {
                     this.requestedAudioDevice = deviceType;
-                    Unit unit2 = Unit.f20684a;
+                    Unit unit2 = Unit.f20685a;
                 }
                 activateDevice(deviceType);
                 return true;

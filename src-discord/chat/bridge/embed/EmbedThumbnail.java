@@ -129,7 +129,7 @@ public final class EmbedThumbnail implements EmbedUrlProvider {
             r2 = r1
         L_0x0024:
             if (r2 == 0) goto L_0x002d
-            ti.a2 r2 = ti.a2.f26939a
+            ti.a2 r2 = ti.a2.f26940a
             java.lang.String r3 = r5.proxyURL
             r6.e(r7, r0, r2, r3)
         L_0x002d:
@@ -147,7 +147,7 @@ public final class EmbedThumbnail implements EmbedUrlProvider {
             r3 = r1
         L_0x003c:
             if (r3 == 0) goto L_0x0045
-            ti.a2 r3 = ti.a2.f26939a
+            ti.a2 r3 = ti.a2.f26940a
             java.lang.String r4 = r5.videoUrl
             r6.e(r7, r2, r3, r4)
         L_0x0045:
@@ -171,7 +171,7 @@ public final class EmbedThumbnail implements EmbedUrlProvider {
             r3 = r1
         L_0x0060:
             if (r3 == 0) goto L_0x0069
-            ti.h r3 = ti.h.f26981a
+            ti.h r3 = ti.h.f26982a
             java.lang.Boolean r4 = r5.gifv
             r6.e(r7, r2, r3, r4)
         L_0x0069:
@@ -189,7 +189,7 @@ public final class EmbedThumbnail implements EmbedUrlProvider {
             r3 = r1
         L_0x0078:
             if (r3 == 0) goto L_0x0081
-            ti.h r3 = ti.h.f26981a
+            ti.h r3 = ti.h.f26982a
             java.lang.Boolean r4 = r5.showPlayButton
             r6.e(r7, r2, r3, r4)
         L_0x0081:

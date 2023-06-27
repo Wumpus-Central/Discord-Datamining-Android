@@ -41,8 +41,8 @@ public final class ActionRowComponent$$serializer implements f0<ActionRowCompone
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f27014a;
-        return new KSerializer[]{m0Var, new f(m0Var), a.u(a2.f26939a), new f(ComponentSerializer.INSTANCE)};
+        m0 m0Var = m0.f27015a;
+        return new KSerializer[]{m0Var, new f(m0Var), a.u(a2.f26940a), new f(ComponentSerializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -57,8 +57,8 @@ public final class ActionRowComponent$$serializer implements f0<ActionRowCompone
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
             i10 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, new f(m0.f27014a), null);
-            obj2 = c10.v(descriptor2, 2, a2.f26939a, null);
+            obj = c10.m(descriptor2, 1, new f(m0.f27015a), null);
+            obj2 = c10.v(descriptor2, 2, a2.f26940a, null);
             obj3 = c10.m(descriptor2, 3, new f(ComponentSerializer.INSTANCE), null);
             i11 = 15;
         } else {
@@ -76,10 +76,10 @@ public final class ActionRowComponent$$serializer implements f0<ActionRowCompone
                     i12 = c10.k(descriptor2, 0);
                     i13 |= 1;
                 } else if (x10 == 1) {
-                    obj4 = c10.m(descriptor2, 1, new f(m0.f27014a), obj4);
+                    obj4 = c10.m(descriptor2, 1, new f(m0.f27015a), obj4);
                     i13 |= 2;
                 } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f26939a, obj5);
+                    obj5 = c10.v(descriptor2, 2, a2.f26940a, obj5);
                     i13 |= 4;
                 } else if (x10 == 3) {
                     obj6 = c10.m(descriptor2, 3, new f(ComponentSerializer.INSTANCE), obj6);

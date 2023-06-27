@@ -28,7 +28,7 @@ public final class UserSearchWorkerManagerModule$worker$1 extends s implements F
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(List<? extends UserSearchWorkerResult> list, String str, String str2) {
         invoke2((List<UserSearchWorkerResult>) list, str, str2);
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

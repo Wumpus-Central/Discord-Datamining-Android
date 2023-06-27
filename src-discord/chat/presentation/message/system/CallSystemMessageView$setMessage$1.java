@@ -59,7 +59,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -69,8 +69,8 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
             int i10 = this.label;
             if (i10 == 0) {
                 t.b(obj);
-                a.C0320a aVar = a.f21877l;
-                final Flow<Unit> flow = IntervalFlowKt.m464intervalFlowQTBD994(c.s(1, li.d.SECONDS), a.f21877l.b());
+                a.C0320a aVar = a.f21878l;
+                final Flow<Unit> flow = IntervalFlowKt.m464intervalFlowQTBD994(c.s(1, li.d.SECONDS), a.f21878l.b());
                 final long j10 = this.$start;
                 Flow f10 = kotlinx.coroutines.flow.d.f(new Flow<a>() { // from class: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1
 
@@ -149,14 +149,14 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 gf.t.b(r10)
                                 kotlinx.coroutines.flow.FlowCollector r10 = r8.$this_unsafeFlow
                                 kotlin.Unit r9 = (kotlin.Unit) r9
-                                li.a$a r9 = li.a.f21877l
+                                li.a$a r9 = li.a.f21878l
                                 long r4 = java.lang.System.currentTimeMillis()
                                 long r6 = r8.$start$inlined
                                 long r4 = r4 - r6
                                 li.d r9 = li.d.MILLISECONDS
                                 long r4 = li.c.t(r4, r9)
                                 li.a r9 = li.a.e(r4)
-                                li.a$a r2 = li.a.f21877l
+                                li.a$a r2 = li.a.f21878l
                                 long r4 = r2.b()
                                 li.a r2 = li.a.e(r4)
                                 java.lang.Comparable r9 = xf.h.e(r9, r2)
@@ -165,7 +165,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 if (r9 != r1) goto L_0x0062
                                 return r1
                             L_0x0062:
-                                kotlin.Unit r9 = kotlin.Unit.f20684a
+                                kotlin.Unit r9 = kotlin.Unit.f20685a
                                 return r9
                             */
                             throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -180,7 +180,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         if (collect == d11) {
                             return collect;
                         }
-                        return Unit.f20684a;
+                        return Unit.f20685a;
                     }
                 }, y0.a());
                 final CallSystemMessageView callSystemMessageView = this.this$0;
@@ -205,7 +205,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         String format = String.format("%02d:%02d:%02d%s", Arrays.copyOf(new Object[]{b.d(o10), b.c(s10), b.c(u10), message2.getDescription()}, 4));
                         q.f(format, "format(this, *args)");
                         textView.setText(format);
-                        return Unit.f20684a;
+                        return Unit.f20685a;
                     }
                 };
                 this.label = 1;
@@ -217,7 +217,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f20684a;
+            return Unit.f20685a;
         }
     }
 
@@ -236,7 +236,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20684a);
+        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -258,6 +258,6 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20684a;
+        return Unit.f20685a;
     }
 }
