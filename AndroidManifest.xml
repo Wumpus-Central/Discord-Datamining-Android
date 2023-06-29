@@ -35,10 +35,10 @@
             <data android:scheme="xbox"/>
         </intent>
         <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
         </intent>
         <intent>
-            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
         </intent>
         <intent>
             <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
@@ -156,15 +156,15 @@
             </intent-filter>
         </receiver>
         <service android:name="com.discord.react.headless_tasks.service.HeadlessTasksService"/>
+        <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
         <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER"/>
             </intent-filter>
         </receiver>
         <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <provider android:authorities="com.discord.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
-        </provider>
         <meta-data android:name="io.sentry.auto-init" android:value="false"/>
         <provider android:authorities="com.discord.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
