@@ -215,6 +215,7 @@
         <flag name="none" value="0x00000000" />
     </attr>
     <attr name="behavior_skipCollapsed" format="boolean" />
+    <attr name="blurOverlayColor" format="color" />
     <attr name="borderWidth" format="dimension" />
     <attr name="borderlessButtonStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
