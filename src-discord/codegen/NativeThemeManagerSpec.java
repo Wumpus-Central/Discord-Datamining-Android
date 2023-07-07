@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import f5.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public abstract class NativeThemeManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeThemeManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);

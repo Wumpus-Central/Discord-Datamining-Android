@@ -14,6 +14,7 @@ import com.discord.chat.R;
 import com.discord.chat.bridge.UploadProgress;
 import com.discord.chat.bridge.attachment.Attachment;
 import com.discord.chat.bridge.postpreviewembed.PostPreviewEmbed;
+import com.discord.chat.bridge.reaction.ReactionsTheme;
 import com.discord.chat.bridge.spoiler.SpoilerAttributes;
 import com.discord.chat.bridge.sticker.StickerFormatType;
 import com.discord.chat.databinding.TimestampViewBinding;
@@ -135,7 +136,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002BCB\u0015\u0012\f\u00103\u001a\b\u0012\u0004\u0012\u00020\u000e02¢\u0006\u0004\b@\u0010AJM\u0010\u0011\u001a\u00020\u000e*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u00072\b\u0010\n\u001a\u0004\u0018\u00010\t2\b\u0010\u000b\u001a\u0004\u0018\u00010\u00052\u0006\u0010\r\u001a\u00020\fH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u000f\u0010\u0010J=\u0010\u001b\u001a\u00020\u000e2\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0013\u001a\u00020\u00122\b\u0010\u0015\u001a\u0004\u0018\u00010\u00142\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016H\u0007ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u000e\u0010\u001e\u001a\u00020\u000e2\u0006\u0010\u001d\u001a\u00020\u001cJ\u0010\u0010!\u001a\u00020\u000e2\b\u0010 \u001a\u0004\u0018\u00010\u001fJ\u000e\u0010$\u001a\u00020\u000e2\u0006\u0010#\u001a\u00020\"J\u0010\u0010&\u001a\u00020\u000e2\u0006\u0010%\u001a\u00020\u0002H\u0016J\u0010\u0010'\u001a\u00020\u000e2\u0006\u0010%\u001a\u00020\u0002H\u0016J\u0018\u0010+\u001a\u00020\u00022\u0006\u0010)\u001a\u00020(2\u0006\u0010*\u001a\u00020\u0005H\u0016J\u0018\u0010-\u001a\u00020\u000e2\u0006\u0010%\u001a\u00020\u00022\u0006\u0010,\u001a\u00020\u0005H\u0016J\b\u0010.\u001a\u00020\u0005H\u0016J\u0010\u0010/\u001a\u00020\u00052\u0006\u0010,\u001a\u00020\u0005H\u0016J\u0010\u00101\u001a\u0002002\u0006\u0010,\u001a\u00020\u0005H\u0016R\u001a\u00103\u001a\b\u0012\u0004\u0012\u00020\u000e028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00104R\u0016\u0010\u001d\u001a\u00020\u001c8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u001d\u00105R\u0018\u0010 \u001a\u0004\u0018\u00010\u001f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b \u00106R\u001c\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00168\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\u0018\u00107R!\u0010\u0004\u001a\u0004\u0018\u00010\u00038\u0002@\u0002X\u0082\u000eø\u0001\u0001ø\u0001\u0000ø\u0001\u0002¢\u0006\u0006\n\u0004\b\u0004\u00108R!\u0010\u0013\u001a\u0004\u0018\u00010\u00128\u0002@\u0002X\u0082\u000eø\u0001\u0001ø\u0001\u0000ø\u0001\u0002¢\u0006\u0006\n\u0004\b\u0013\u00109R!\u0010\u0015\u001a\u0004\u0018\u00010\u00148\u0002@\u0002X\u0082\u000eø\u0001\u0001ø\u0001\u0000ø\u0001\u0002¢\u0006\u0006\n\u0004\b\u0015\u0010:R\u0016\u0010;\u001a\u00020\"8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b;\u0010<R\"\u0010>\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000e0=8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b>\u0010?\u0082\u0002\u000f\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019\n\u0002\b!¨\u0006D"}, d2 = {"Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "Lcom/discord/primitives/MessageId;", "messageId", "", "attachmentIndex", "", "type", "", "portal", "embedIndex", "Lcom/discord/chat/reactevents/ViewResizeMode;", "viewResizeMode", "", "onMediaClicked-l3ndG-o", "(Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;Ljava/lang/String;ILjava/lang/String;Ljava/lang/Double;Ljava/lang/Integer;Lcom/discord/chat/reactevents/ViewResizeMode;)V", "onMediaClicked", "Lcom/discord/primitives/ChannelId;", "channelId", "Lcom/discord/primitives/GuildId;", "guildId", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "items", "setItems-bo5iIEc", "(Ljava/lang/String;JLcom/discord/primitives/GuildId;Ljava/util/List;)V", "setItems", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "setEventHandler", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "botComponentProvider", "setComponentProvider", "Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$MessageContentViewLifecycleListener;", "listener", "setMessageContentViewLifecycleListener", "holder", "onViewAttachedToWindow", "onViewDetachedFromWindow", "Landroid/view/ViewGroup;", "parent", "viewType", "onCreateViewHolder", ViewProps.POSITION, "onBindViewHolder", "getItemCount", "getItemViewType", "", "getItemId", "Lkotlin/Function0;", "measureAndLayout", "Lkotlin/jvm/functions/Function0;", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "Ljava/util/List;", "Ljava/lang/String;", "Lcom/discord/primitives/ChannelId;", "Lcom/discord/primitives/GuildId;", "messageContentViewLifecycleListener", "Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$MessageContentViewLifecycleListener;", "Lkotlin/Function1;", "onTapSpoiler", "Lkotlin/jvm/functions/Function1;", "<init>", "(Lkotlin/jvm/functions/Function0;)V", "MessageContentViewLifecycleListener", "ViewTypes", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<MessagePartViewHolder> {
     private ComponentProvider botComponentProvider;
     private ChannelId channelId;
@@ -148,7 +149,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
     private Function1<? super MessagePartViewHolder, Unit> onTapSpoiler = new MessageAccessoriesAdapter$onTapSpoiler$1(this);
 
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&J\b\u0010\u0006\u001a\u00020\u0003H&¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$MessageContentViewLifecycleListener;", "", "onAttachedToWindow", "", "messageContentView", "Lcom/discord/chat/presentation/message/view/MessageContentView;", "onDetachedFromWindow", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes3.dex */
     public interface MessageContentViewLifecycleListener {
         void onAttachedToWindow(MessageContentView messageContentView);
 
@@ -156,7 +157,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
     }
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\"\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/discord/chat/presentation/message/MessageAccessoriesAdapter$ViewTypes;", "", "()V", "ACTIVITY_BOOKMARK", "", "ACTIVITY_INVITE_EMBED", "AUDIO_ATTACHMENT", "AUTO_MODERATION_NOTIFICATION_EMBED", "BOT_COMPONENTS", "CONTENT", "EMBED", "EMBEDDED_ACTIVITY_INVITE", "EPHEMERAL_INDICATION", "FILE_ATTACHMENT", "FLAGGED_MESSAGE_ACTION_BAR", "FLAGGED_MESSAGE_EMBED", "FORUM_POST_ACTION_BAR", "GIFT", "GUILD_EVENT_INVITE", "GUILD_INVITE", "GUILD_INVITE_DISABLED", "IMAGE_ATTACHMENT", "INTERACTION_STATUS", "MEDIA_MOSAIC_ATTACHMENT", "POST_PREVIEW_EMBED", "REACTIONS", "ROLE_SUBSCRIPTION_PURCHASE", "STAGE_INVITE_TO_SPEAK", "STICKER_APNG", "STICKER_GIF", "STICKER_LOTTIE", "STICKER_PNG", "SURVEY_INDICATION", "THREAD_EMBED", "TIMESTAMP", "UPLOAD_PROGRESS", "VIDEO_ATTACHMENT", "WELCOME_STICKER", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes3.dex */
     public static final class ViewTypes {
         public static final int ACTIVITY_BOOKMARK = 30;
         public static final int ACTIVITY_INVITE_EMBED = 17;
@@ -199,7 +200,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes3.dex */
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -239,7 +240,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(part, "$part");
         q.g(this$0, "this$0");
         q.g(holder, "$holder");
-        this$0.m195onMediaClickedl3ndGo(holder, part.mo214getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m195onMediaClickedl3ndGo(holder, part.mo215getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -280,7 +281,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m571unboximpl());
+        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m573unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -293,10 +294,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        long j10 = channelId.m571unboximpl();
+        long j10 = channelId.m573unboximpl();
         GuildId guildId = this$0.guildId;
         q.d(guildId);
-        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m584unboximpl());
+        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m586unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -324,7 +325,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m571unboximpl());
+        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m573unboximpl());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -492,7 +493,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(messageId, "messageId");
         q.g(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m562boximpl(j10);
+        this.channelId = ChannelId.m564boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -516,6 +517,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         ChatEventHandler chatEventHandler;
         ChatEventHandler chatEventHandler2;
         ChatEventHandler chatEventHandler3;
+        ChatEventHandler chatEventHandler4;
         q.g(holder, "holder");
         final MessageAccessory messageAccessory = (MessageAccessory) this.items.get(i10);
         if (messageAccessory instanceof EmbedMessageAccessory) {
@@ -529,82 +531,82 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof GiftMessageAccessory) {
             GiftViewHolder giftViewHolder = (GiftViewHolder) holder;
             GiftMessageAccessory giftMessageAccessory = (GiftMessageAccessory) messageAccessory;
-            ChatEventHandler chatEventHandler4 = this.eventHandler;
-            if (chatEventHandler4 == null) {
-                q.y("eventHandler");
-                chatEventHandler4 = null;
-            }
-            MessageAccessoriesAdapter$onBindViewHolder$4 messageAccessoriesAdapter$onBindViewHolder$4 = new MessageAccessoriesAdapter$onBindViewHolder$4(chatEventHandler4);
             ChatEventHandler chatEventHandler5 = this.eventHandler;
             if (chatEventHandler5 == null) {
                 q.y("eventHandler");
-                chatEventHandler3 = null;
-            } else {
-                chatEventHandler3 = chatEventHandler5;
+                chatEventHandler5 = null;
             }
-            giftViewHolder.bind(giftMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$4, new MessageAccessoriesAdapter$onBindViewHolder$5(chatEventHandler3));
-        } else if (messageAccessory instanceof MessageContentAccessory) {
-            MessageContentViewHolder messageContentViewHolder = (MessageContentViewHolder) holder;
+            MessageAccessoriesAdapter$onBindViewHolder$4 messageAccessoriesAdapter$onBindViewHolder$4 = new MessageAccessoriesAdapter$onBindViewHolder$4(chatEventHandler5);
             ChatEventHandler chatEventHandler6 = this.eventHandler;
             if (chatEventHandler6 == null) {
                 q.y("eventHandler");
-                chatEventHandler6 = null;
+                chatEventHandler4 = null;
+            } else {
+                chatEventHandler4 = chatEventHandler6;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$6 messageAccessoriesAdapter$onBindViewHolder$6 = new MessageAccessoriesAdapter$onBindViewHolder$6(chatEventHandler6);
+            giftViewHolder.bind(giftMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$4, new MessageAccessoriesAdapter$onBindViewHolder$5(chatEventHandler4));
+        } else if (messageAccessory instanceof MessageContentAccessory) {
+            MessageContentViewHolder messageContentViewHolder = (MessageContentViewHolder) holder;
             ChatEventHandler chatEventHandler7 = this.eventHandler;
             if (chatEventHandler7 == null) {
                 q.y("eventHandler");
                 chatEventHandler7 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$7 messageAccessoriesAdapter$onBindViewHolder$7 = new MessageAccessoriesAdapter$onBindViewHolder$7(chatEventHandler7);
+            MessageAccessoriesAdapter$onBindViewHolder$6 messageAccessoriesAdapter$onBindViewHolder$6 = new MessageAccessoriesAdapter$onBindViewHolder$6(chatEventHandler7);
             ChatEventHandler chatEventHandler8 = this.eventHandler;
             if (chatEventHandler8 == null) {
                 q.y("eventHandler");
                 chatEventHandler8 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$8 messageAccessoriesAdapter$onBindViewHolder$8 = new MessageAccessoriesAdapter$onBindViewHolder$8(chatEventHandler8);
+            MessageAccessoriesAdapter$onBindViewHolder$7 messageAccessoriesAdapter$onBindViewHolder$7 = new MessageAccessoriesAdapter$onBindViewHolder$7(chatEventHandler8);
             ChatEventHandler chatEventHandler9 = this.eventHandler;
             if (chatEventHandler9 == null) {
                 q.y("eventHandler");
                 chatEventHandler9 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$9 messageAccessoriesAdapter$onBindViewHolder$9 = new MessageAccessoriesAdapter$onBindViewHolder$9(chatEventHandler9);
+            MessageAccessoriesAdapter$onBindViewHolder$8 messageAccessoriesAdapter$onBindViewHolder$8 = new MessageAccessoriesAdapter$onBindViewHolder$8(chatEventHandler9);
             ChatEventHandler chatEventHandler10 = this.eventHandler;
             if (chatEventHandler10 == null) {
                 q.y("eventHandler");
                 chatEventHandler10 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$10 messageAccessoriesAdapter$onBindViewHolder$10 = new MessageAccessoriesAdapter$onBindViewHolder$10(chatEventHandler10);
+            MessageAccessoriesAdapter$onBindViewHolder$9 messageAccessoriesAdapter$onBindViewHolder$9 = new MessageAccessoriesAdapter$onBindViewHolder$9(chatEventHandler10);
             ChatEventHandler chatEventHandler11 = this.eventHandler;
             if (chatEventHandler11 == null) {
                 q.y("eventHandler");
                 chatEventHandler11 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$11 messageAccessoriesAdapter$onBindViewHolder$11 = new MessageAccessoriesAdapter$onBindViewHolder$11(chatEventHandler11);
+            MessageAccessoriesAdapter$onBindViewHolder$10 messageAccessoriesAdapter$onBindViewHolder$10 = new MessageAccessoriesAdapter$onBindViewHolder$10(chatEventHandler11);
             ChatEventHandler chatEventHandler12 = this.eventHandler;
             if (chatEventHandler12 == null) {
                 q.y("eventHandler");
                 chatEventHandler12 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$12 messageAccessoriesAdapter$onBindViewHolder$12 = new MessageAccessoriesAdapter$onBindViewHolder$12(chatEventHandler12);
+            MessageAccessoriesAdapter$onBindViewHolder$11 messageAccessoriesAdapter$onBindViewHolder$11 = new MessageAccessoriesAdapter$onBindViewHolder$11(chatEventHandler12);
             ChatEventHandler chatEventHandler13 = this.eventHandler;
             if (chatEventHandler13 == null) {
                 q.y("eventHandler");
                 chatEventHandler13 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$13 messageAccessoriesAdapter$onBindViewHolder$13 = new MessageAccessoriesAdapter$onBindViewHolder$13(chatEventHandler13);
+            MessageAccessoriesAdapter$onBindViewHolder$12 messageAccessoriesAdapter$onBindViewHolder$12 = new MessageAccessoriesAdapter$onBindViewHolder$12(chatEventHandler13);
             ChatEventHandler chatEventHandler14 = this.eventHandler;
             if (chatEventHandler14 == null) {
                 q.y("eventHandler");
                 chatEventHandler14 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$14 messageAccessoriesAdapter$onBindViewHolder$14 = new MessageAccessoriesAdapter$onBindViewHolder$14(chatEventHandler14);
+            MessageAccessoriesAdapter$onBindViewHolder$13 messageAccessoriesAdapter$onBindViewHolder$13 = new MessageAccessoriesAdapter$onBindViewHolder$13(chatEventHandler14);
             ChatEventHandler chatEventHandler15 = this.eventHandler;
             if (chatEventHandler15 == null) {
                 q.y("eventHandler");
                 chatEventHandler15 = null;
             }
-            messageContentViewHolder.bind((MessageContentAccessory) messageAccessory, messageAccessoriesAdapter$onBindViewHolder$6, messageAccessoriesAdapter$onBindViewHolder$7, messageAccessoriesAdapter$onBindViewHolder$8, messageAccessoriesAdapter$onBindViewHolder$9, messageAccessoriesAdapter$onBindViewHolder$10, messageAccessoriesAdapter$onBindViewHolder$11, messageAccessoriesAdapter$onBindViewHolder$12, new MessageAccessoriesAdapter$onBindViewHolder$16(this, holder), messageAccessoriesAdapter$onBindViewHolder$13, messageAccessoriesAdapter$onBindViewHolder$14, new MessageAccessoriesAdapter$onBindViewHolder$15(chatEventHandler15));
+            MessageAccessoriesAdapter$onBindViewHolder$14 messageAccessoriesAdapter$onBindViewHolder$14 = new MessageAccessoriesAdapter$onBindViewHolder$14(chatEventHandler15);
+            ChatEventHandler chatEventHandler16 = this.eventHandler;
+            if (chatEventHandler16 == null) {
+                q.y("eventHandler");
+                chatEventHandler16 = null;
+            }
+            messageContentViewHolder.bind((MessageContentAccessory) messageAccessory, messageAccessoriesAdapter$onBindViewHolder$6, messageAccessoriesAdapter$onBindViewHolder$7, messageAccessoriesAdapter$onBindViewHolder$8, messageAccessoriesAdapter$onBindViewHolder$9, messageAccessoriesAdapter$onBindViewHolder$10, messageAccessoriesAdapter$onBindViewHolder$11, messageAccessoriesAdapter$onBindViewHolder$12, new MessageAccessoriesAdapter$onBindViewHolder$16(this, holder), messageAccessoriesAdapter$onBindViewHolder$13, messageAccessoriesAdapter$onBindViewHolder$14, new MessageAccessoriesAdapter$onBindViewHolder$15(chatEventHandler16));
         } else if (messageAccessory instanceof ImageAttachmentMessageAccessory) {
             ImageAttachmentViewHolder imageAttachmentViewHolder = (ImageAttachmentViewHolder) holder;
             ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) messageAccessory;
@@ -638,18 +640,18 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof UploadProgressMessageAccessory) {
             UploadProgressViewHolder uploadProgressViewHolder = (UploadProgressViewHolder) holder;
             UploadProgress uploadProgress = ((UploadProgressMessageAccessory) messageAccessory).getUploadProgress();
-            ChatEventHandler chatEventHandler16 = this.eventHandler;
-            if (chatEventHandler16 == null) {
+            ChatEventHandler chatEventHandler17 = this.eventHandler;
+            if (chatEventHandler17 == null) {
                 q.y("eventHandler");
-                chatEventHandler2 = null;
+                chatEventHandler3 = null;
             } else {
-                chatEventHandler2 = chatEventHandler16;
+                chatEventHandler3 = chatEventHandler17;
             }
-            uploadProgressViewHolder.bind(uploadProgress, chatEventHandler2);
+            uploadProgressViewHolder.bind(uploadProgress, chatEventHandler3);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str = messageAccessory.mo214getMessageId3Eiw7ao();
+            String str = messageAccessory.mo215getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m338bindoSm889w(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
+            ((ReactionsViewHolder) holder).m340bindJJXpD5M(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.c
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -659,7 +661,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$2(MessageAccessoriesAdapter.this, view);
                 }
-            }, new MessageAccessoriesAdapter$onBindViewHolder$25(this), new MessageAccessoriesAdapter$onBindViewHolder$26(this), reactionsMessageAccessory.getTheme(), reactionsMessageAccessory.getUseSortedReactions());
+            }, new MessageAccessoriesAdapter$onBindViewHolder$25(this), new MessageAccessoriesAdapter$onBindViewHolder$26(this), reactionsMessageAccessory.getTheme());
         } else if (messageAccessory instanceof StickerMessageAccessory) {
             ((StickerPartViewHolder) holder).bind(((StickerMessageAccessory) messageAccessory).getSticker(), new MessageAccessoriesAdapter$onBindViewHolder$27(this, messageAccessory), new MessageAccessoriesAdapter$onBindViewHolder$28(this, messageAccessory), 160, 160);
         } else if (messageAccessory instanceof GuildInviteMessageAccessory) {
@@ -675,46 +677,62 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof ThreadEmbedMessageAccessory) {
             ThreadEmbedViewHolder threadEmbedViewHolder = (ThreadEmbedViewHolder) holder;
             ThreadEmbedMessageAccessory threadEmbedMessageAccessory = (ThreadEmbedMessageAccessory) messageAccessory;
-            ChatEventHandler chatEventHandler17 = this.eventHandler;
-            if (chatEventHandler17 == null) {
+            ChatEventHandler chatEventHandler18 = this.eventHandler;
+            if (chatEventHandler18 == null) {
                 q.y("eventHandler");
-                chatEventHandler17 = null;
+                chatEventHandler18 = null;
             }
-            threadEmbedViewHolder.bind(threadEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$29(chatEventHandler17));
+            threadEmbedViewHolder.bind(threadEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$29(chatEventHandler18));
         } else if (messageAccessory instanceof ForumPostActionBar) {
+            ForumPostActionBarViewHolder forumPostActionBarViewHolder = (ForumPostActionBarViewHolder) holder;
             ForumPostActionBar forumPostActionBar = (ForumPostActionBar) messageAccessory;
-            ((ForumPostActionBarViewHolder) holder).bind(forumPostActionBar, forumPostActionBar.getReactionsTheme(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.e
+            ReactionsTheme reactionsTheme = forumPostActionBar.getReactionsTheme();
+            View.OnClickListener eVar = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.e
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$3(MessageAccessoriesAdapter.this, view);
                 }
-            }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.f
+            };
+            View.OnClickListener fVar = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.f
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$4(MessageAccessoriesAdapter.this, view);
                 }
-            }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.g
+            };
+            View.OnClickListener gVar = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.g
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$5(MessageAccessoriesAdapter.this, view);
                 }
-            }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.h
+            };
+            View.OnClickListener hVar = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.h
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$6(MessageAccessoriesAdapter.this, view);
                 }
-            }, new MessageAccessoriesAdapter$onBindViewHolder$34(this), new MessageAccessoriesAdapter$onBindViewHolder$35(this), forumPostActionBar.getUseSortedReactions(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.i
+            };
+            MessageAccessoriesAdapter$onBindViewHolder$34 messageAccessoriesAdapter$onBindViewHolder$34 = new MessageAccessoriesAdapter$onBindViewHolder$34(this);
+            MessageAccessoriesAdapter$onBindViewHolder$35 messageAccessoriesAdapter$onBindViewHolder$35 = new MessageAccessoriesAdapter$onBindViewHolder$35(this);
+            View.OnClickListener iVar = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.i
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$8(MessageAccessoriesAdapter.this, view);
                 }
-            });
+            };
+            ChatEventHandler chatEventHandler19 = this.eventHandler;
+            if (chatEventHandler19 == null) {
+                q.y("eventHandler");
+                chatEventHandler2 = null;
+            } else {
+                chatEventHandler2 = chatEventHandler19;
+            }
+            forumPostActionBarViewHolder.bind(forumPostActionBar, reactionsTheme, eVar, fVar, gVar, hVar, messageAccessoriesAdapter$onBindViewHolder$34, messageAccessoriesAdapter$onBindViewHolder$35, iVar, new MessageAccessoriesAdapter$onBindViewHolder$37(chatEventHandler2));
         } else if (messageAccessory instanceof FileAttachmentMessageAccessory) {
             FileAttachmentViewHolder fileAttachmentViewHolder = (FileAttachmentViewHolder) holder;
             FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) messageAccessory;
-            MessageAccessoriesAdapter$onBindViewHolder$37 messageAccessoriesAdapter$onBindViewHolder$37 = new MessageAccessoriesAdapter$onBindViewHolder$37(this);
+            MessageAccessoriesAdapter$onBindViewHolder$38 messageAccessoriesAdapter$onBindViewHolder$38 = new MessageAccessoriesAdapter$onBindViewHolder$38(this);
             SpoilerAttributes spoilerAttributes4 = fileAttachmentMessageAccessory.getSpoilerAttributes();
-            fileAttachmentViewHolder.bind(fileAttachmentMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$37, spoilerAttributes4 != null ? spoilerAttributes4.configure(new MessageAccessoriesAdapter$onBindViewHolder$38(this, holder)) : null, fileAttachmentMessageAccessory.getAttachmentsOpacity());
+            fileAttachmentViewHolder.bind(fileAttachmentMessageAccessory, messageAccessoriesAdapter$onBindViewHolder$38, spoilerAttributes4 != null ? spoilerAttributes4.configure(new MessageAccessoriesAdapter$onBindViewHolder$39(this, holder)) : null, fileAttachmentMessageAccessory.getAttachmentsOpacity());
         } else if (messageAccessory instanceof MessageComponentsAccessory) {
             ((MessageComponentsViewHolder) holder).bind((MessageComponentsAccessory) messageAccessory, this.botComponentProvider);
         } else if (messageAccessory instanceof FlaggedMessageEmbedAccessory) {
@@ -722,33 +740,33 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof FlaggedMessageActionBarAccessory) {
             FlaggedMessageActionBarViewHolder flaggedMessageActionBarViewHolder = (FlaggedMessageActionBarViewHolder) holder;
             FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) messageAccessory;
-            ChatEventHandler chatEventHandler18 = this.eventHandler;
-            if (chatEventHandler18 == null) {
-                q.y("eventHandler");
-                chatEventHandler18 = null;
-            }
-            MessageAccessoriesAdapter$onBindViewHolder$39 messageAccessoriesAdapter$onBindViewHolder$39 = new MessageAccessoriesAdapter$onBindViewHolder$39(chatEventHandler18);
-            ChatEventHandler chatEventHandler19 = this.eventHandler;
-            if (chatEventHandler19 == null) {
-                q.y("eventHandler");
-                chatEventHandler19 = null;
-            }
-            flaggedMessageActionBarViewHolder.bind(flaggedMessageActionBarAccessory, messageAccessoriesAdapter$onBindViewHolder$39, new MessageAccessoriesAdapter$onBindViewHolder$40(chatEventHandler19));
-        } else if (messageAccessory instanceof AutoModerationNotificationEmbedAccessory) {
-            AutoModerationNotificationEmbedViewHolder autoModerationNotificationEmbedViewHolder = (AutoModerationNotificationEmbedViewHolder) holder;
-            AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) messageAccessory;
             ChatEventHandler chatEventHandler20 = this.eventHandler;
             if (chatEventHandler20 == null) {
                 q.y("eventHandler");
                 chatEventHandler20 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$41 messageAccessoriesAdapter$onBindViewHolder$41 = new MessageAccessoriesAdapter$onBindViewHolder$41(chatEventHandler20);
+            MessageAccessoriesAdapter$onBindViewHolder$40 messageAccessoriesAdapter$onBindViewHolder$40 = new MessageAccessoriesAdapter$onBindViewHolder$40(chatEventHandler20);
             ChatEventHandler chatEventHandler21 = this.eventHandler;
             if (chatEventHandler21 == null) {
                 q.y("eventHandler");
                 chatEventHandler21 = null;
             }
-            autoModerationNotificationEmbedViewHolder.bind(autoModerationNotificationEmbedAccessory, messageAccessoriesAdapter$onBindViewHolder$41, new MessageAccessoriesAdapter$onBindViewHolder$42(chatEventHandler21));
+            flaggedMessageActionBarViewHolder.bind(flaggedMessageActionBarAccessory, messageAccessoriesAdapter$onBindViewHolder$40, new MessageAccessoriesAdapter$onBindViewHolder$41(chatEventHandler21));
+        } else if (messageAccessory instanceof AutoModerationNotificationEmbedAccessory) {
+            AutoModerationNotificationEmbedViewHolder autoModerationNotificationEmbedViewHolder = (AutoModerationNotificationEmbedViewHolder) holder;
+            AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) messageAccessory;
+            ChatEventHandler chatEventHandler22 = this.eventHandler;
+            if (chatEventHandler22 == null) {
+                q.y("eventHandler");
+                chatEventHandler22 = null;
+            }
+            MessageAccessoriesAdapter$onBindViewHolder$42 messageAccessoriesAdapter$onBindViewHolder$42 = new MessageAccessoriesAdapter$onBindViewHolder$42(chatEventHandler22);
+            ChatEventHandler chatEventHandler23 = this.eventHandler;
+            if (chatEventHandler23 == null) {
+                q.y("eventHandler");
+                chatEventHandler23 = null;
+            }
+            autoModerationNotificationEmbedViewHolder.bind(autoModerationNotificationEmbedAccessory, messageAccessoriesAdapter$onBindViewHolder$42, new MessageAccessoriesAdapter$onBindViewHolder$43(chatEventHandler23));
         } else if (messageAccessory instanceof TimestampMessageAccessory) {
             ((TimestampViewHolder) holder).bind((TimestampMessageAccessory) messageAccessory);
         } else if (messageAccessory instanceof WelcomeStickerAccessory) {
@@ -756,12 +774,12 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof ActivityInviteEmbedMessageAccessory) {
             ActivityInviteEmbedViewHolder activityInviteEmbedViewHolder = (ActivityInviteEmbedViewHolder) holder;
             ActivityInviteEmbedMessageAccessory activityInviteEmbedMessageAccessory = (ActivityInviteEmbedMessageAccessory) messageAccessory;
-            ChatEventHandler chatEventHandler22 = this.eventHandler;
-            if (chatEventHandler22 == null) {
+            ChatEventHandler chatEventHandler24 = this.eventHandler;
+            if (chatEventHandler24 == null) {
                 q.y("eventHandler");
-                chatEventHandler22 = null;
+                chatEventHandler24 = null;
             }
-            activityInviteEmbedViewHolder.bind(activityInviteEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$43(chatEventHandler22));
+            activityInviteEmbedViewHolder.bind(activityInviteEmbedMessageAccessory, new MessageAccessoriesAdapter$onBindViewHolder$44(chatEventHandler24));
         } else if (messageAccessory instanceof EphemeralIndicationMessageAccessory) {
             ((EphemeralIndicationViewHolder) holder).bind((EphemeralIndicationMessageAccessory) messageAccessory);
         } else if (messageAccessory instanceof SurveyIndicationMessageAccessory) {
@@ -776,30 +794,30 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else if (messageAccessory instanceof AudioAttachmentMessageAccessory) {
             VoiceMessageViewHolder voiceMessageViewHolder = (VoiceMessageViewHolder) holder;
             AudioAttachmentMessageAccessory audioAttachmentMessageAccessory = (AudioAttachmentMessageAccessory) messageAccessory;
-            ChatEventHandler chatEventHandler23 = this.eventHandler;
-            if (chatEventHandler23 == null) {
+            ChatEventHandler chatEventHandler25 = this.eventHandler;
+            if (chatEventHandler25 == null) {
                 q.y("eventHandler");
                 chatEventHandler = null;
             } else {
-                chatEventHandler = chatEventHandler23;
+                chatEventHandler = chatEventHandler25;
             }
             voiceMessageViewHolder.bind(audioAttachmentMessageAccessory, chatEventHandler, audioAttachmentMessageAccessory.getAttachmentsOpacity());
         } else if (messageAccessory instanceof PostPreviewEmbedMessageAccessory) {
             PostPreviewEmbedViewHolder postPreviewEmbedViewHolder = (PostPreviewEmbedViewHolder) holder;
             PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) messageAccessory;
             PostPreviewEmbed postPreviewEmbed = postPreviewEmbedMessageAccessory.getPostPreviewEmbed();
-            ChatEventHandler chatEventHandler24 = this.eventHandler;
-            if (chatEventHandler24 == null) {
+            ChatEventHandler chatEventHandler26 = this.eventHandler;
+            if (chatEventHandler26 == null) {
                 q.y("eventHandler");
-                chatEventHandler24 = null;
+                chatEventHandler26 = null;
             }
-            MessageAccessoriesAdapter$onBindViewHolder$44 messageAccessoriesAdapter$onBindViewHolder$44 = new MessageAccessoriesAdapter$onBindViewHolder$44(chatEventHandler24);
+            MessageAccessoriesAdapter$onBindViewHolder$45 messageAccessoriesAdapter$onBindViewHolder$45 = new MessageAccessoriesAdapter$onBindViewHolder$45(chatEventHandler26);
             SpoilerAttributes spoilerAttributes5 = postPreviewEmbedMessageAccessory.getSpoilerAttributes();
-            postPreviewEmbedViewHolder.bind(postPreviewEmbed, messageAccessoriesAdapter$onBindViewHolder$44, spoilerAttributes5 != null ? spoilerAttributes5.configure(new MessageAccessoriesAdapter$onBindViewHolder$45(this, holder)) : null);
+            postPreviewEmbedViewHolder.bind(postPreviewEmbed, messageAccessoriesAdapter$onBindViewHolder$45, spoilerAttributes5 != null ? spoilerAttributes5.configure(new MessageAccessoriesAdapter$onBindViewHolder$46(this, holder)) : null);
         } else {
             throw new gf.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f20685a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f20717a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

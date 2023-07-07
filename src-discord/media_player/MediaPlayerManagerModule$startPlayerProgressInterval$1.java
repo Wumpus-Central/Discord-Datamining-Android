@@ -13,7 +13,7 @@ import mf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1", f = "MediaPlayerManagerModule.kt", l = {119, 128}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ MediaPlayer $mediaPlayer;
     final /* synthetic */ double $portal;
@@ -25,7 +25,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1", f = "MediaPlayerManagerModule.kt", l = {}, m = "invokeSuspend")
     /* renamed from: com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ MediaPlayer $mediaPlayer;
         final /* synthetic */ double $portal;
@@ -46,7 +46,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -57,7 +57,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
                 if (this.$mediaPlayer.isPlaying()) {
                     this.this$0.onMediaPlayerProgress(this.$portal, this.$mediaPlayer.currentPositionMs(), this.$mediaPlayer.durationMs());
                 }
-                return Unit.f20685a;
+                return Unit.f20717a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -80,7 +80,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0037  */
@@ -149,7 +149,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             if (r4 != r0) goto L_0x0031
             return r0
         L_0x0060:
-            kotlin.Unit r13 = kotlin.Unit.f20685a
+            kotlin.Unit r13 = kotlin.Unit.f20717a
             return r13
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1.invokeSuspend(java.lang.Object):java.lang.Object");

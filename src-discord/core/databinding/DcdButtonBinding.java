@@ -8,7 +8,7 @@ import com.discord.core.R;
 import com.google.android.material.button.MaterialButton;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class DcdButtonBinding {
     public final MaterialButton button;
     public final ProgressBar progress;

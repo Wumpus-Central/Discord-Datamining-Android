@@ -23,7 +23,7 @@ import mf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.MediaManagerModule$resolveToMediaFilePath$1", f = "MediaManagerModule.kt", l = {75}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ boolean $canCancelCompression;
     final /* synthetic */ int $imageCompressionQuality;
@@ -58,7 +58,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -83,7 +83,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 VideoCompressionQuality videoCompressionQuality = this.$videoCompressionQuality;
                 boolean z11 = this.$isLowQuality;
                 Promise promise2 = this.$promise;
-                s.a aVar = s.f15495l;
+                s.a aVar = s.f15527l;
                 mediaResolver2 = mediaManagerModule.mediaResolver;
                 q.f(inputUri, "inputUri");
                 if (z11) {
@@ -106,9 +106,9 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             promise.resolve(((Uri) obj3).toString());
-            obj2 = s.b(Unit.f20685a);
+            obj2 = s.b(Unit.f20717a);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15495l;
+            s.a aVar2 = s.f15527l;
             obj2 = s.b(t.a(th2));
         }
         boolean z12 = this.$canCancelCompression;
@@ -133,6 +133,6 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
             crashReporting.captureException(e10);
             promise3.reject(e10);
         }
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

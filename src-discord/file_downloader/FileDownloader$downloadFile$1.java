@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.FlowCollector;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/flow/FlowCollector;", "Lcom/discord/file_downloader/DownloadState;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_downloader.FileDownloader$downloadFile$1", f = "FileDownloader.kt", l = {57, 61, 69, 76, 82}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class FileDownloader$downloadFile$1 extends k implements Function2<FlowCollector<? super DownloadState>, Continuation<? super Unit>, Object> {
     final /* synthetic */ File $downloadDirectory;
     final /* synthetic */ String $fileName;
@@ -40,7 +40,7 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
     }
 
     public final Object invoke(FlowCollector<? super DownloadState> flowCollector, Continuation<? super Unit> continuation) {
-        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f20685a);
+        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:50:0x0109, code lost:
@@ -53,7 +53,7 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
         if (r0 == null) goto L_0x013e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x0140, code lost:
-        return kotlin.Unit.f20685a;
+        return kotlin.Unit.f20717a;
      */
     /* JADX WARN: Not initialized variable reg: 9, insn: 0x0119: MOVE  (r2 I:??[OBJECT, ARRAY]) = (r9 I:??[OBJECT, ARRAY]), block:B:60:0x0119 */
     /* JADX WARN: Removed duplicated region for block: B:40:0x00b8 A[Catch: all -> 0x0118, Exception -> 0x011b, TryCatch #3 {Exception -> 0x011b, blocks: (B:38:0x00a4, B:40:0x00b8, B:44:0x00d3, B:46:0x00f0, B:57:0x0114, B:58:0x0117), top: B:82:0x00a4 }] */

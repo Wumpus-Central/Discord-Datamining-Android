@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1", f = "AudioWaveView.kt", l = {135}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AudioWaveView$finishAnimation$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int I$0;
     int I$1;
@@ -35,7 +35,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x003a  */
@@ -104,7 +104,7 @@ public final class AudioWaveView$finishAnimation$1 extends k implements Function
             int r1 = r1 + r2
             goto L_0x0038
         L_0x0060:
-            kotlin.Unit r11 = kotlin.Unit.f20685a
+            kotlin.Unit r11 = kotlin.Unit.f20717a
             return r11
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1.invokeSuspend(java.lang.Object):java.lang.Object");

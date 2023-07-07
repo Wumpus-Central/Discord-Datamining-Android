@@ -24,7 +24,7 @@ import ti.h;
 import ti.w0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/notifications/api/Sticker.$serializer", "Lti/f0;", "Lcom/discord/notifications/api/Sticker;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "notification_api_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 public final class Sticker$$serializer implements f0<Sticker> {
     public static final Sticker$$serializer INSTANCE;
     private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
@@ -50,8 +50,8 @@ public final class Sticker$$serializer implements f0<Sticker> {
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26940a;
-        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f27056a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f26982a)};
+        a2 a2Var = a2.f26972a;
+        return new KSerializer[]{StickerId$$serializer.INSTANCE, a2Var, a.u(w0.f27088a), a.u(GuildId$$serializer.INSTANCE), a2Var, StickerFormatType.Serializer.INSTANCE, a2Var, StickerType.Serializer.INSTANCE, a.u(h.f27014a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -75,13 +75,13 @@ public final class Sticker$$serializer implements f0<Sticker> {
         if (c10.y()) {
             obj6 = c10.m(descriptor2, 0, StickerId$$serializer.INSTANCE, null);
             str3 = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, w0.f27056a, null);
+            obj = c10.v(descriptor2, 2, w0.f27088a, null);
             obj4 = c10.v(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
             str2 = c10.t(descriptor2, 4);
             obj2 = c10.m(descriptor2, 5, StickerFormatType.Serializer.INSTANCE, null);
             str = c10.t(descriptor2, 6);
             obj5 = c10.m(descriptor2, 7, StickerType.Serializer.INSTANCE, null);
-            obj3 = c10.v(descriptor2, 8, h.f26982a, null);
+            obj3 = c10.v(descriptor2, 8, h.f27014a, null);
             i10 = 511;
         } else {
             boolean z10 = true;
@@ -113,7 +113,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i11 = 7;
                         break;
                     case 2:
-                        obj = c10.v(descriptor2, 2, w0.f27056a, obj);
+                        obj = c10.v(descriptor2, 2, w0.f27088a, obj);
                         i13 |= 4;
                         i11 = 7;
                         break;
@@ -139,7 +139,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i13 |= 128;
                         break;
                     case 8:
-                        obj3 = c10.v(descriptor2, 8, h.f26982a, obj3);
+                        obj3 = c10.v(descriptor2, 8, h.f27014a, obj3);
                         i13 |= 256;
                         break;
                     default:

@@ -24,7 +24,7 @@ import kotlin.jvm.internal.q;
 import xf.j;
 
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001:\u0002\u001f B\t\b\u0002¢\u0006\u0004\b\u001d\u0010\u001eJ\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u0002J*\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002JT\u0010\u0015\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u001c\b\u0002\u0010\u0014\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0002J\"\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J\u001a\u0010\u0019\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0017\u001a\u00020\u0012H\u0002J6\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u0007J\n\u0010\u001c\u001a\u00020\b*\u00020\u001b¨\u0006!"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getLegacyNotificationChannel", "", "", "localizedGroupNames", "", "Landroidx/core/app/p0;", "createNotificationChannelGroups", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "legacyChannel", "builder", "configureCallChannel", "configureMediaChannel", "init", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "<init>", "()V", "Category", "ChannelGroup", "notification_renderer_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 public final class NotificationChannels {
     public static final NotificationChannels INSTANCE = new NotificationChannels();
 
@@ -44,7 +44,7 @@ public final class NotificationChannels {
     /* JADX WARN: Init of enum StageStart can be incorrect */
     /* JADX WARN: Init of enum SystemMessages can be incorrect */
     @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\b\u0082\u0001\u0018\u0000 \u001f2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u001fB+\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\tR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\rj\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001e¨\u0006 "}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$Category;", "", "id", "", "importance", "", "group", "Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup;", "legacyId", "(Ljava/lang/String;ILjava/lang/String;ILcom/discord/notifications/renderer/NotificationChannels$ChannelGroup;Ljava/lang/String;)V", "getGroup", "()Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup;", "getId", "()Ljava/lang/String;", "getImportance", "()I", "getLegacyId", "Calls", "MediaConnections", "Messages", "MessagesDirect", "FriendRequests", "Social", "GameDetection", "StageStart", "SystemMessages", "ForumThreadCreated", "GuildEventStart", "OtherServerNotifications", "OtherHighPriority", "Other", "Companion", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    /* loaded from: classes4.dex */
     public enum Category {
         Calls("calls", 4, r15, "Calls"),
         MediaConnections("mediaConnections", 3, r15, "Media Connections"),
@@ -70,11 +70,11 @@ public final class NotificationChannels {
         private final String legacyId;
 
         @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006J\u0010\u0010\u0007\u001a\u00020\u00062\b\u0010\b\u001a\u0004\u0018\u00010\u0004¨\u0006\t"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$Category$Companion;", "", "()V", "defaultLabel", "", "category", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "fromTrackingType", "trackingType", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes3.dex */
+        /* loaded from: classes4.dex */
         public static final class Companion {
 
             @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-            /* loaded from: classes3.dex */
+            /* loaded from: classes4.dex */
             public /* synthetic */ class WhenMappings {
                 public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -171,32 +171,32 @@ public final class NotificationChannels {
                 }
             }
 
-            /* JADX WARN: Code restructure failed: missing block: B:10:0x0022, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_MODERATOR_FEATURED_MESSAGE) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:10:0x0023, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_MODERATOR_FEATURED_MESSAGE) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:12:0x002b, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_GUILD_STREAM_START) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:12:0x002c, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_GUILD_STREAM_START) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:14:0x0034, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_HOME_LIFECYCLE_PUSH) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:14:0x0035, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_HOME_LIFECYCLE_PUSH) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:17:0x0040, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_NUDGE_NEW_FRIEND_DM_PUSH) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:17:0x0041, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_NUDGE_NEW_FRIEND_DM_PUSH) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:22:0x0055, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_FRIEND_REQUEST_REMINDER) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:25:0x0062, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_FRIEND_REQUEST_REMINDER) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:26:?, code lost:
+            /* JADX WARN: Code restructure failed: missing block: B:29:?, code lost:
                 return com.discord.notifications.renderer.NotificationChannels.Category.OtherServerNotifications;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:28:?, code lost:
+            /* JADX WARN: Code restructure failed: missing block: B:32:?, code lost:
                 return com.discord.notifications.renderer.NotificationChannels.Category.Social;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:6:0x0010, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_MISSED_MESSAGE) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:6:0x0011, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_MISSED_MESSAGE) == false) goto L_0x0068;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:8:0x0019, code lost:
-                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_TOP_MESSAGES_PUSH) == false) goto L_0x005b;
+            /* JADX WARN: Code restructure failed: missing block: B:8:0x001a, code lost:
+                if (r2.equals(com.discord.notifications.api.NotificationData.TRACKING_TYPE_TOP_MESSAGES_PUSH) == false) goto L_0x0068;
              */
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
@@ -205,73 +205,82 @@ public final class NotificationChannels {
             public final com.discord.notifications.renderer.NotificationChannels.Category fromTrackingType(java.lang.String r2) {
                 /*
                     r1 = this;
-                    if (r2 == 0) goto L_0x005b
+                    if (r2 == 0) goto L_0x0068
                     int r0 = r2.hashCode()
                     switch(r0) {
-                        case -1760014021: goto L_0x004f;
-                        case -1433897036: goto L_0x0043;
-                        case -198753646: goto L_0x003a;
-                        case 533975599: goto L_0x002e;
-                        case 1308493743: goto L_0x0025;
-                        case 1323738094: goto L_0x001c;
-                        case 1428648131: goto L_0x0013;
-                        case 1581734347: goto L_0x000a;
+                        case -1760014021: goto L_0x005c;
+                        case -1433897036: goto L_0x0050;
+                        case -1372753926: goto L_0x0044;
+                        case -198753646: goto L_0x003b;
+                        case 533975599: goto L_0x002f;
+                        case 1308493743: goto L_0x0026;
+                        case 1323738094: goto L_0x001d;
+                        case 1428648131: goto L_0x0014;
+                        case 1581734347: goto L_0x000b;
                         default: goto L_0x0009;
                     }
                 L_0x0009:
-                    goto L_0x005b
-                L_0x000a:
+                    goto L_0x0068
+                L_0x000b:
                     java.lang.String r0 = "generic_missed_message"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0037
-                    goto L_0x005b
-                L_0x0013:
+                    if (r2 != 0) goto L_0x0038
+                    goto L_0x0068
+                L_0x0014:
                     java.lang.String r0 = "top_messages_push"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0037
-                    goto L_0x005b
-                L_0x001c:
+                    if (r2 != 0) goto L_0x0038
+                    goto L_0x0068
+                L_0x001d:
                     java.lang.String r0 = "generic_home_featured_message"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0037
-                    goto L_0x005b
-                L_0x0025:
+                    if (r2 != 0) goto L_0x0038
+                    goto L_0x0068
+                L_0x0026:
                     java.lang.String r0 = "GUILD_STREAM_START"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0058
-                    goto L_0x005b
-                L_0x002e:
+                    if (r2 != 0) goto L_0x0065
+                    goto L_0x0068
+                L_0x002f:
                     java.lang.String r0 = "home_lifecycle_push"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0037
-                    goto L_0x005b
-                L_0x0037:
+                    if (r2 != 0) goto L_0x0038
+                    goto L_0x0068
+                L_0x0038:
                     com.discord.notifications.renderer.NotificationChannels$Category r2 = com.discord.notifications.renderer.NotificationChannels.Category.OtherServerNotifications
-                    goto L_0x005d
-                L_0x003a:
+                    goto L_0x006a
+                L_0x003b:
                     java.lang.String r0 = "nudge_new_friend_dm_push"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0058
-                    goto L_0x005b
-                L_0x0043:
+                    if (r2 != 0) goto L_0x0065
+                    goto L_0x0068
+                L_0x0044:
+                    java.lang.String r0 = "trending_content_push"
+                    boolean r2 = r2.equals(r0)
+                    if (r2 != 0) goto L_0x004d
+                    goto L_0x0068
+                L_0x004d:
+                    com.discord.notifications.renderer.NotificationChannels$Category r2 = com.discord.notifications.renderer.NotificationChannels.Category.GuildEventStart
+                    goto L_0x006a
+                L_0x0050:
                     java.lang.String r0 = "suspicious_session"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x004c
-                    goto L_0x005b
-                L_0x004c:
+                    if (r2 != 0) goto L_0x0059
+                    goto L_0x0068
+                L_0x0059:
                     com.discord.notifications.renderer.NotificationChannels$Category r2 = com.discord.notifications.renderer.NotificationChannels.Category.SystemMessages
-                    goto L_0x005d
-                L_0x004f:
+                    goto L_0x006a
+                L_0x005c:
                     java.lang.String r0 = "generic_friend_request_reminder"
                     boolean r2 = r2.equals(r0)
-                    if (r2 != 0) goto L_0x0058
-                    goto L_0x005b
-                L_0x0058:
+                    if (r2 != 0) goto L_0x0065
+                    goto L_0x0068
+                L_0x0065:
                     com.discord.notifications.renderer.NotificationChannels$Category r2 = com.discord.notifications.renderer.NotificationChannels.Category.Social
-                    goto L_0x005d
-                L_0x005b:
+                    goto L_0x006a
+                L_0x0068:
                     com.discord.notifications.renderer.NotificationChannels$Category r2 = com.discord.notifications.renderer.NotificationChannels.Category.Other
-                L_0x005d:
+                L_0x006a:
                     return r2
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.NotificationChannels.Category.Companion.fromTrackingType(java.lang.String):com.discord.notifications.renderer.NotificationChannels$Category");
@@ -315,7 +324,7 @@ public final class NotificationChannels {
 
     /* JADX INFO: Access modifiers changed from: private */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000b\b\u0082\u0001\u0018\u0000 \r2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\rB\u0017\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0007j\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\f¨\u0006\u000e"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup;", "", "id", "", "groupId", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V", "getGroupId", "()Ljava/lang/String;", "getId", "Realtime", "Social", "Server", "Other", "Companion", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    /* loaded from: classes4.dex */
     public enum ChannelGroup {
         Realtime("realtime", "111_realtime"),
         Social("social", "222_social"),
@@ -329,7 +338,7 @@ public final class NotificationChannels {
         private final String f7597id;
 
         @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup$Companion;", "", "()V", "defaultLabel", "", "id", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes3.dex */
+        /* loaded from: classes4.dex */
         public static final class Companion {
             private Companion() {
             }

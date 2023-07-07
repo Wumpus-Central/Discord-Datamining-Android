@@ -14,7 +14,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0080\b\u0018\u00002\u00020\u0001B&\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007ø\u0001\u0000¢\u0006\u0002\u0010\bJ\u0019\u0010\u0010\u001a\u00020\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\fJ\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010\tJ8\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0015\u0010\u0016J\u0013\u0010\u0017\u001a\u00020\u00072\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÖ\u0003J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001J\b\u0010\u001c\u001a\u00020\u001dH\u0016J\t\u0010\u001e\u001a\u00020\u001fHÖ\u0001R\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010\n\u001a\u0004\b\u0006\u0010\tR\u001c\u0010\u0002\u001a\u00020\u0003ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\r\u001a\u0004\b\u000b\u0010\fR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006 "}, d2 = {"Lcom/discord/chat/reactevents/TapReactionData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "reaction", "Lcom/discord/reactions/ReactionView$Reaction;", "isBurst", "", "(Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;Ljava/lang/Boolean;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getReaction", "()Lcom/discord/reactions/ReactionView$Reaction;", "component1", "component1-3Eiw7ao", "component2", "component3", "copy", "copy-u7_MRrM", "(Ljava/lang/String;Lcom/discord/reactions/ReactionView$Reaction;Ljava/lang/Boolean;)Lcom/discord/chat/reactevents/TapReactionData;", "equals", "other", "", "hashCode", "", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class TapReactionData implements ReactEvent {
     private final Boolean isBurst;
     private final String messageId;
@@ -31,7 +31,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ TapReactionData m398copyu7_MRrM$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
+    public static /* synthetic */ TapReactionData m400copyu7_MRrM$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapReactionData.messageId;
         }
@@ -41,11 +41,11 @@ public final class TapReactionData implements ReactEvent {
         if ((i10 & 4) != 0) {
             bool = tapReactionData.isBurst;
         }
-        return tapReactionData.m400copyu7_MRrM(str, reaction, bool);
+        return tapReactionData.m402copyu7_MRrM(str, reaction, bool);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m399component13Eiw7ao() {
+    public final String m401component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -58,7 +58,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final TapReactionData m400copyu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
+    public final TapReactionData m402copyu7_MRrM(String messageId, ReactionView.Reaction reaction, Boolean bool) {
         q.g(messageId, "messageId");
         return new TapReactionData(messageId, reaction, bool, null);
     }
@@ -71,11 +71,11 @@ public final class TapReactionData implements ReactEvent {
             return false;
         }
         TapReactionData tapReactionData = (TapReactionData) obj;
-        return MessageId.m592equalsimpl0(this.messageId, tapReactionData.messageId) && q.b(this.reaction, tapReactionData.reaction) && q.b(this.isBurst, tapReactionData.isBurst);
+        return MessageId.m594equalsimpl0(this.messageId, tapReactionData.messageId) && q.b(this.reaction, tapReactionData.reaction) && q.b(this.isBurst, tapReactionData.isBurst);
     }
 
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m401getMessageId3Eiw7ao() {
+    public final String m403getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -84,7 +84,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     public int hashCode() {
-        int i10 = MessageId.m593hashCodeimpl(this.messageId) * 31;
+        int i10 = MessageId.m595hashCodeimpl(this.messageId) * 31;
         ReactionView.Reaction reaction = this.reaction;
         int i11 = 0;
         int hashCode = (i10 + (reaction == null ? 0 : reaction.hashCode())) * 31;
@@ -123,7 +123,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m594toStringimpl(this.messageId);
+        String str = MessageId.m596toStringimpl(this.messageId);
         ReactionView.Reaction reaction = this.reaction;
         Boolean bool = this.isBurst;
         return "TapReactionData(messageId=" + str + ", reaction=" + reaction + ", isBurst=" + bool + ")";

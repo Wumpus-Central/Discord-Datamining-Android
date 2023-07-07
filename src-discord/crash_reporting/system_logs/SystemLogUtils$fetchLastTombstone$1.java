@@ -10,7 +10,7 @@ import kotlin.jvm.internal.s;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "crashes", "Ljava/util/LinkedList;", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class SystemLogUtils$fetchLastTombstone$1 extends s implements Function1<LinkedList<String>, Unit> {
     final /* synthetic */ Function1<SystemLogUtils.Tombstone, Unit> $cb;
 
@@ -25,7 +25,7 @@ public final class SystemLogUtils$fetchLastTombstone$1 extends s implements Func
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkedList<String> linkedList) {
         invoke2(linkedList);
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

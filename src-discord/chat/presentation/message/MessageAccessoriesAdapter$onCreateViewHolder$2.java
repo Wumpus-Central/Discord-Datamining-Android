@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implements Function2<Sticker, MessageId, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onCreateViewHolder$2(Object obj) {
@@ -20,12 +20,12 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 exte
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker, MessageId messageId) {
-        m206invokeAyv7vGE(sticker, messageId.m596unboximpl());
-        return Unit.f20685a;
+        m207invokeAyv7vGE(sticker, messageId.m598unboximpl());
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke-Ayv7vGE  reason: not valid java name */
-    public final void m206invokeAyv7vGE(Sticker p02, String p12) {
+    public final void m207invokeAyv7vGE(Sticker p02, String p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
         ((ChatEventHandler) this.receiver).mo179onWelcomeReplyClickedAyv7vGE(p02, p12);

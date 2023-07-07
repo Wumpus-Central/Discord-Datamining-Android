@@ -10,7 +10,7 @@ import kotlin.text.Regex;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class SystemLogUtils$fetch$1 extends s implements Function0<Unit> {
     final /* synthetic */ Function1<LinkedList<String>, Unit> $cb;
     final /* synthetic */ Regex $filter;
@@ -54,7 +54,7 @@ public final class SystemLogUtils$fetch$1 extends s implements Function0<Unit> {
             java.io.InputStream r2 = r0.getInputStream()     // Catch: all -> 0x0049, Exception -> 0x004b
             java.lang.String r3 = "logcatProcess.inputStream"
             kotlin.jvm.internal.q.f(r2, r3)     // Catch: all -> 0x0049, Exception -> 0x004b
-            java.nio.charset.Charset r3 = ki.d.f20635b     // Catch: all -> 0x0049, Exception -> 0x004b
+            java.nio.charset.Charset r3 = ki.d.f20667b     // Catch: all -> 0x0049, Exception -> 0x004b
             java.io.InputStreamReader r4 = new java.io.InputStreamReader     // Catch: all -> 0x0049, Exception -> 0x004b
             r4.<init>(r2, r3)     // Catch: all -> 0x0049, Exception -> 0x004b
             boolean r2 = r4 instanceof java.io.BufferedReader     // Catch: all -> 0x0049, Exception -> 0x004b

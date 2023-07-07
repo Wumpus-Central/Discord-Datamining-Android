@@ -14,7 +14,7 @@ import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class ActivityBookmarkViewBinding {
     public final Barrier barrierFooter;
     public final SimpleDraweeView icon;

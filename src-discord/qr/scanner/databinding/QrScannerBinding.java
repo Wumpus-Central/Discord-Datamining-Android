@@ -7,7 +7,7 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.discord.qr.scanner.R;
 import v0.a;
 
-/* loaded from: classes3.dex */
+/* loaded from: classes4.dex */
 public final class QrScannerBinding {
     public final CodeScannerView qrScanner;
     private final View rootView;

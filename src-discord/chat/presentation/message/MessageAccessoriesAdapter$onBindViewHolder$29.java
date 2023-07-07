@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$29 extends n implements Function1<MessageId, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public MessageAccessoriesAdapter$onBindViewHolder$29(Object obj) {
@@ -19,8 +19,8 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$29 exten
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
-        m198invoke1xi1bu0(messageId.m596unboximpl());
-        return Unit.f20685a;
+        m198invoke1xi1bu0(messageId.m598unboximpl());
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */

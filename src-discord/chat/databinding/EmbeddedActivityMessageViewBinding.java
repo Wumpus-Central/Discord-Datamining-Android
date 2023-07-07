@@ -11,7 +11,7 @@ import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class EmbeddedActivityMessageViewBinding {
     public final ConstraintLayout card;
     public final SimpleDraweeView dismiss;

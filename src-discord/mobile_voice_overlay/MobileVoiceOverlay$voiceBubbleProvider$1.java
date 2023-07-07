@@ -17,14 +17,14 @@ import kotlin.jvm.internal.s;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "it", "Lcom/discord/mobile_voice_overlay/utils/OverlayViewProvider;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements Function1<OverlayViewProvider<OverlayVoiceBubble>, OverlayVoiceBubble> {
     final /* synthetic */ MobileVoiceOverlay this$0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "event", "Landroid/view/MotionEvent;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class AnonymousClass2 extends s implements Function1<MotionEvent, Unit> {
         final /* synthetic */ OverlayVoiceBubble $voiceBubble;
         final /* synthetic */ MobileVoiceOverlay this$0;
@@ -32,7 +32,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         /* JADX INFO: Access modifiers changed from: package-private */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2$1  reason: invalid class name */
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class AnonymousClass1 extends s implements Function1<OverlayTrashWrap, Unit> {
             final /* synthetic */ MotionEvent $event;
             final /* synthetic */ OverlayVoiceBubble $voiceBubble;
@@ -49,7 +49,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20685a;
+                return Unit.f20717a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -71,7 +71,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
-            return Unit.f20685a;
+            return Unit.f20717a;
         }
 
         /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -84,7 +84,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "isMoving", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3  reason: invalid class name */
-    /* loaded from: classes7.dex */
+    /* loaded from: classes6.dex */
     public static final class AnonymousClass3 extends s implements Function1<Boolean, Unit> {
         final /* synthetic */ OverlayVoiceBubble $voiceBubble;
         final /* synthetic */ MobileVoiceOverlay this$0;
@@ -92,7 +92,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         /* JADX INFO: Access modifiers changed from: package-private */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3$1  reason: invalid class name */
-        /* loaded from: classes7.dex */
+        /* loaded from: classes6.dex */
         public static final class AnonymousClass1 extends s implements Function1<OverlayTrashWrap, Unit> {
             final /* synthetic */ boolean $isMoving;
             final /* synthetic */ OverlayVoiceBubble $voiceBubble;
@@ -109,7 +109,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20685a;
+                return Unit.f20717a;
             }
 
             /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -134,7 +134,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f20685a;
+            return Unit.f20717a;
         }
 
         public final void invoke(boolean z10) {

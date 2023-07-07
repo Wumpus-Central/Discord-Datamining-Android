@@ -19,7 +19,7 @@ final class NativeMapExtensionsKt$json$1 extends s implements Function1<JsonBuil
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

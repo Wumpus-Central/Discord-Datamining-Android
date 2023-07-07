@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.discord.chat.R;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AltTextButtonViewBinding {
     public final FrameLayout altTextContainer;
     public final TextView altTextLabel;

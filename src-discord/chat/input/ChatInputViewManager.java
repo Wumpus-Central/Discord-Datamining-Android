@@ -1,94 +1,178 @@
 package com.discord.chat.input;
 
+import android.graphics.Color;
+import android.net.Uri;
+import com.discord.chat.input.events.OnContentSizeChangeEvent;
+import com.discord.chat.input.events.OnEndBlurEvent;
+import com.discord.chat.input.events.OnFocusEvent;
+import com.discord.chat.input.events.OnPasteImageEvent;
+import com.discord.chat.input.events.OnRequestSendEvent;
+import com.discord.chat.input.events.OnSelectionOrTextChangeEvent;
 import com.discord.chat.input.views.ChatInputRootView;
+import com.discord.keyboard.KeyboardManager;
+import com.discord.reactevents.ReactEvents;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.viewmanagers.DCDChatInputManagerDelegate;
+import com.facebook.react.viewmanagers.DCDChatInputManagerInterface;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
+import gf.x;
 import java.util.Map;
 import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Ref$ObjectRef;
+import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0006H\u0014J\u0018\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\nH\u0007J\u0014\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\fH\u0016J\b\u0010\u000f\u001a\u00020\rH\u0016J\u0018\u0010\u0010\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0010\u001a\u00020\u0011H\u0007J\u0018\u0010\u0012\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0013\u001a\u00020\rH\u0007J\u0010\u0010\u0014\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0002H\u0016J\u0018\u0010\u0015\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\rH\u0007J\u0018\u0010\u0016\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0016\u001a\u00020\rH\u0007J\u0018\u0010\u0017\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0017\u001a\u00020\rH\u0007J\u0018\u0010\u0018\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0018\u001a\u00020\nH\u0007J\u0018\u0010\u0019\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u0019\u001a\u00020\rH\u0007J\u0018\u0010\u001a\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\rH\u0007¨\u0006\u001b"}, d2 = {"Lcom/discord/chat/input/ChatInputViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/chat/input/views/ChatInputRootView;", "()V", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "editable", "", "view", "", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "keyboardAppearance", "", "markAsSpoilerTitle", "spoilerTitle", "onDropViewInstance", ReactTextInputShadowNode.PROP_PLACEHOLDER, "placeholderColor", "selectionColor", "shouldShowCursor", "text", "textColor", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
-public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootView> {
-    @ReactProp(name = "editable")
-    public final void editable(ChatInputRootView view, boolean z10) {
-        q.g(view, "view");
-        ChatInputViewManagerImpl.INSTANCE.editable(view, z10);
+@ReactModule(name = ChatInputViewManager.NAME)
+@Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0010\b\u0007\u0018\u0000 ,2\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003:\u0001,B\u0005¢\u0006\u0002\u0010\u0004J\u0010\u0010\f\u001a\u00020\u00022\u0006\u0010\r\u001a\u00020\u000eH\u0014J$\u0010\u000f\u001a\u001e\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00000\u00000\u0006H\u0014J\u0014\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0016J\b\u0010\u0014\u001a\u00020\u0012H\u0016J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0002H\u0016J\u0018\u0010\u0018\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u0019\u001a\u00020\u001aH\u0017J\u0018\u0010\u001b\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u001c\u001a\u00020\u001dH\u0017J\u001a\u0010\u001e\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010\u001f\u001a\u0004\u0018\u00010\u0012H\u0017J\u001a\u0010 \u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010!\u001a\u0004\u0018\u00010\u0012H\u0017J\u001a\u0010\"\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010#\u001a\u0004\u0018\u00010\u0012H\u0017J\u001a\u0010$\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010%\u001a\u0004\u0018\u00010\u0012H\u0017J\u0018\u0010&\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\u0006\u0010'\u001a\u00020\u001aH\u0017J\u001a\u0010(\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010)\u001a\u0004\u0018\u00010\u0012H\u0017J\u001a\u0010*\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00022\b\u0010+\u001a\u0004\u0018\u00010\u0012H\u0017R*\u0010\u0005\u001a\u001e\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00000\u00000\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\u00020\tX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000b¨\u0006-"}, d2 = {"Lcom/discord/chat/input/ChatInputViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/chat/input/views/ChatInputRootView;", "Lcom/facebook/react/viewmanagers/DCDChatInputManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDChatInputManagerDelegate;", "kotlin.jvm.PlatformType", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "getReactEvents$chat_input_release", "()Lcom/discord/reactevents/ReactEvents;", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getDelegate", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "onDropViewInstance", "", "view", "setEditable", "editable", "", "setKeyboardAppearance", "keyboardAppearance", "", "setMarkAsSpoilerTitle", "spoilerTitle", "setPlaceholder", ReactTextInputShadowNode.PROP_PLACEHOLDER, "setPlaceholderColor", "placeholderColor", "setSelectionColor", "selectionColor", "setShouldShowCursor", "shouldShowCursor", "setText", "text", "setTextColor", "textColor", "Companion", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes3.dex */
+public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootView> implements DCDChatInputManagerInterface<ChatInputRootView> {
+    public static final Companion Companion = new Companion(null);
+    public static final String NAME = "DCDChatInput";
+    private final DCDChatInputManagerDelegate<ChatInputRootView, ChatInputViewManager> delegate = new DCDChatInputManagerDelegate<>(this);
+    private final ReactEvents reactEvents = new ReactEvents(x.a("onChangeContentSize", f0.b(OnContentSizeChangeEvent.class)), x.a("onEndBlur", f0.b(OnEndBlurEvent.class)), x.a("onBeginFocus", f0.b(OnFocusEvent.class)), x.a("onSelectionOrTextChange", f0.b(OnSelectionOrTextChangeEvent.class)), x.a("onPasteImage", f0.b(OnPasteImageEvent.class)), x.a("onRequestSend", f0.b(OnRequestSendEvent.class)));
+
+    @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/input/ChatInputViewManager$Companion;", "", "()V", "NAME", "", "chat_input_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    /* loaded from: classes3.dex */
+    public static final class Companion {
+        private Companion() {
+        }
+
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return ChatInputViewManagerImpl.INSTANCE.getExportedCustomDirectEventTypeConstants();
+        return this.reactEvents.exportEventConstants();
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule
     public String getName() {
-        return ChatInputViewManagerImpl.NAME;
+        return NAME;
+    }
+
+    public final ReactEvents getReactEvents$chat_input_release() {
+        return this.reactEvents;
     }
 
     @ReactProp(name = "keyboardAppearance")
-    public final void keyboardAppearance(ChatInputRootView view, int i10) {
+    public void setKeyboardAppearance(ChatInputRootView view, int i10) {
         q.g(view, "view");
     }
 
     @ReactProp(name = "markAsSpoilerTitle")
-    public final void markAsSpoilerTitle(ChatInputRootView view, String spoilerTitle) {
+    public void setMarkAsSpoilerTitle(ChatInputRootView view, String str) {
         q.g(view, "view");
-        q.g(spoilerTitle, "spoilerTitle");
-    }
-
-    @ReactProp(name = ReactTextInputShadowNode.PROP_PLACEHOLDER)
-    public final void placeholder(ChatInputRootView view, String placeholder) {
-        q.g(view, "view");
-        q.g(placeholder, "placeholder");
-        ChatInputViewManagerImpl.INSTANCE.placeholder(view, placeholder);
-    }
-
-    @ReactProp(name = "placeholderColor")
-    public final void placeholderColor(ChatInputRootView view, String placeholderColor) {
-        q.g(view, "view");
-        q.g(placeholderColor, "placeholderColor");
-        ChatInputViewManagerImpl.INSTANCE.placeholderColor(view, placeholderColor);
     }
 
     @ReactProp(name = "selectionColor")
-    public final void selectionColor(ChatInputRootView view, String selectionColor) {
+    public void setSelectionColor(ChatInputRootView view, String str) {
         q.g(view, "view");
-        q.g(selectionColor, "selectionColor");
     }
 
-    @ReactProp(name = "shouldShowCursor")
-    public final void shouldShowCursor(ChatInputRootView view, boolean z10) {
-        q.g(view, "view");
-        ChatInputViewManagerImpl.INSTANCE.shouldShowCursor(view, z10);
-    }
+    /* JADX INFO: Access modifiers changed from: protected */
+    /* JADX WARN: Type inference failed for: r2v2, types: [T, com.facebook.react.uimanager.events.EventDispatcher] */
+    @Override // com.facebook.react.uimanager.ViewManager
+    public ChatInputRootView createViewInstance(final ThemedReactContext reactContext) {
+        q.g(reactContext, "reactContext");
+        final ChatInputRootView chatInputRootView = new ChatInputRootView(reactContext, null, 0, 6, null);
+        final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
+        ref$ObjectRef.f20744k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
+        chatInputRootView.setListener(new ChatInputRootView.ChatInputListener() { // from class: com.discord.chat.input.ChatInputViewManager$createViewInstance$1$1
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onContentSizeChange(int i10, int i11) {
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
+            }
 
-    @ReactProp(name = "text")
-    public final void text(ChatInputRootView view, String text) {
-        q.g(view, "view");
-        q.g(text, "text");
-        ChatInputViewManagerImpl.INSTANCE.text(view, text);
-    }
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onEndBlur(String text) {
+                q.g(text, "text");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, reactContext, chatInputRootView, new OnEndBlurEvent(text));
+            }
 
-    @ReactProp(name = "textColor")
-    public final void textColor(ChatInputRootView view, String textColor) {
-        q.g(view, "view");
-        q.g(textColor, "textColor");
-        ChatInputViewManagerImpl.INSTANCE.textColor(view, textColor);
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onFocus(int i10, int i11) {
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
+            }
+
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onImageInserted(Uri uri) {
+                q.g(uri, "uri");
+                ThemedReactContext themedReactContext = reactContext;
+                ChatInputRootView chatInputRootView2 = chatInputRootView;
+                String uri2 = uri.toString();
+                q.f(uri2, "uri.toString()");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
+            }
+
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onRequestSend() {
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, reactContext, chatInputRootView, new OnRequestSendEvent());
+            }
+
+            @Override // com.discord.chat.input.views.ChatInputRootView.ChatInputListener
+            public void onTextOrSelectionChanged(int i10, int i11, String text, String editId) {
+                q.g(text, "text");
+                q.g(editId, "editId");
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20744k, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
+            }
+        });
+        KeyboardManager.INSTANCE.addKeyboardListener(chatInputRootView);
+        return chatInputRootView;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.uimanager.ViewManager
-    public ChatInputRootView createViewInstance(ThemedReactContext reactContext) {
-        q.g(reactContext, "reactContext");
-        return ChatInputViewManagerImpl.INSTANCE.createViewInstance(reactContext);
+    public DCDChatInputManagerDelegate<ChatInputRootView, ChatInputViewManager> getDelegate() {
+        return this.delegate;
     }
 
     public void onDropViewInstance(ChatInputRootView view) {
         q.g(view, "view");
-        super.onDropViewInstance((ChatInputViewManager) view);
-        ChatInputViewManagerImpl.INSTANCE.onDropViewInstance(view);
+        KeyboardManager.INSTANCE.removeKeyboardListener(view);
+    }
+
+    @ReactProp(name = "editable")
+    public void setEditable(ChatInputRootView view, boolean z10) {
+        q.g(view, "view");
+        view.setEditTextEnabled(z10);
+    }
+
+    @ReactProp(name = ReactTextInputShadowNode.PROP_PLACEHOLDER)
+    public void setPlaceholder(ChatInputRootView view, String str) {
+        q.g(view, "view");
+        view.setHint(str);
+    }
+
+    @ReactProp(name = "placeholderColor")
+    public void setPlaceholderColor(ChatInputRootView view, String str) {
+        q.g(view, "view");
+        view.setHintTextColor(Color.parseColor(str));
+    }
+
+    @ReactProp(name = "shouldShowCursor")
+    public void setShouldShowCursor(ChatInputRootView view, boolean z10) {
+        q.g(view, "view");
+        view.setCursorVisible(z10);
+    }
+
+    @ReactProp(name = "text")
+    public void setText(ChatInputRootView view, String str) {
+        q.g(view, "view");
+        if (str != null) {
+            view.setText(str);
+        }
+    }
+
+    @ReactProp(name = "textColor")
+    public void setTextColor(ChatInputRootView view, String str) {
+        q.g(view, "view");
+        view.setTextColor(Color.parseColor(str));
     }
 }

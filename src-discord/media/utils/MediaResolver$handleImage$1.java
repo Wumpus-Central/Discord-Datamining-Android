@@ -8,7 +8,7 @@ import kotlin.coroutines.jvm.internal.e;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @e(c = "com.discord.media.utils.MediaResolver", f = "MediaResolver.kt", l = {139, 145}, m = "handleImage")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class MediaResolver$handleImage$1 extends d {
     Object L$0;
     Object L$1;

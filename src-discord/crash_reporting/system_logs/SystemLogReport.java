@@ -11,14 +11,14 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\u00020\u0001:\u0001\u0015B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0004H\u0002J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u0004H\u0002J3\u0010\u000f\u001a\u00020\f2\u0006\u0010\b\u001a\u00020\t2\u001c\u0010\u0010\u001a\u0018\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0013\u0012\u0004\u0012\u00020\f0\u0011H\u0000¢\u0006\u0002\b\u0014R\u0016\u0010\u0003\u001a\n \u0005*\u0004\u0018\u00010\u00040\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogReport;", "", "()V", "TAG", "", "kotlin.jvm.PlatformType", "checkHashChanged", "", "context", "Landroid/content/Context;", "hash", "recordBreadcrumb", "", "msg", "category", "reportLastCrash", "cb", "Lkotlin/Function2;", "Lcom/discord/crash_reporting/system_logs/HistoricalProcessExitReason$Reason;", "Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "reportLastCrash$crash_reporting_release", "LastStoredTombstoneCache", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class SystemLogReport {
     public static final SystemLogReport INSTANCE = new SystemLogReport();
     private static final String TAG = SystemLogReport.class.getSimpleName();
 
     /* JADX INFO: Access modifiers changed from: private */
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\bÂ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\n\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u000b\u001a\u00020\u0007J\u0016\u0010\f\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0018\u0010\u0005\u001a\u00020\u0006*\u00020\u00078BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\t¨\u0006\u000f"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogReport$LastStoredTombstoneCache;", "", "()V", "CACHE_KEY", "", "cache", "Landroid/content/SharedPreferences;", "Landroid/content/Context;", "getCache", "(Landroid/content/Context;)Landroid/content/SharedPreferences;", "get", "context", "set", "", "hash", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    /* loaded from: classes3.dex */
     public static final class LastStoredTombstoneCache {
         private static final String CACHE_KEY = "LastStoredTombstoneCache";
         public static final LastStoredTombstoneCache INSTANCE = new LastStoredTombstoneCache();

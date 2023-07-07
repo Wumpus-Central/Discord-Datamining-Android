@@ -8,7 +8,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class MessageHighlightHeaderBinding {
     public final TextView header;
     public final SimpleDraweeView highlightIcon;

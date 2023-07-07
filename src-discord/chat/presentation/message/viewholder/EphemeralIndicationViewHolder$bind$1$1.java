@@ -11,7 +11,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EphemeralIndicationViewHolder$bind$1$1(Object obj) {
@@ -20,12 +20,12 @@ public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends n im
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m332invokentcYbpo(messageId.m596unboximpl(), linkContentNode);
-        return Unit.f20685a;
+        m334invokentcYbpo(messageId.m598unboximpl(), linkContentNode);
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m332invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m334invokentcYbpo(String p02, LinkContentNode p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
         ((ChatEventHandler) this.receiver).mo148onLinkClickedntcYbpo(p02, p12);

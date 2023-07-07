@@ -10,15 +10,16 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002¨\u0006\u0003"}, d2 = {"getMessageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "Lcom/discord/chat/bridge/row/MessageRow;", "chat_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class MessageContextKt {
     public static final MessageContext getMessageContext(MessageRow messageRow) {
         MessageFrameType messageFrameType;
         boolean z10;
+        String str;
+        String str2;
         boolean z11;
         boolean z12;
         boolean z13;
-        boolean z14;
         q.g(messageRow, "<this>");
         MessageFrame messageFrame = messageRow.getMessageFrame();
         if (messageFrame != null) {
@@ -35,17 +36,21 @@ public final class MessageContextKt {
         Boolean bool = Boolean.TRUE;
         boolean b10 = q.b(canAddNewReactions, bool);
         String addReactionLabel = messageRow.getAddReactionLabel();
-        String str = "";
+        String str3 = "";
         if (addReactionLabel == null) {
-            addReactionLabel = str;
+            str = str3;
+        } else {
+            str = addReactionLabel;
         }
         String addNewReactionAccessibilityLabel = messageRow.getAddNewReactionAccessibilityLabel();
         if (addNewReactionAccessibilityLabel == null) {
-            addNewReactionAccessibilityLabel = str;
+            str2 = str3;
+        } else {
+            str2 = addNewReactionAccessibilityLabel;
         }
         String addNewBurstReactionAccessibilityLabel = messageRow.getAddNewBurstReactionAccessibilityLabel();
         if (addNewBurstReactionAccessibilityLabel != null) {
-            str = addNewBurstReactionAccessibilityLabel;
+            str3 = addNewBurstReactionAccessibilityLabel;
         }
         ReactionsTheme reactionsTheme = messageRow.getReactionsTheme();
         Truncation truncation = messageRow.getTruncation();
@@ -60,16 +65,11 @@ public final class MessageContextKt {
             z12 = true;
         }
         boolean enableSwipeToReply = messageRow.getEnableSwipeToReply();
-        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseSortedReactions(), bool)) {
+        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
             z13 = false;
         } else {
             z13 = true;
         }
-        if (!(messageRow.getMessage() instanceof Message) || !q.b(((Message) messageRow.getMessage()).getUseAddBurstReaction(), bool)) {
-            z14 = false;
-        } else {
-            z14 = true;
-        }
-        return new MessageContext(z10, b10, addReactionLabel, addNewReactionAccessibilityLabel, str, reactionsTheme, truncation, z11, z12, enableSwipeToReply, z13, z14);
+        return new MessageContext(z10, b10, str, str2, str3, reactionsTheme, truncation, z11, z12, enableSwipeToReply, z13);
     }
 }

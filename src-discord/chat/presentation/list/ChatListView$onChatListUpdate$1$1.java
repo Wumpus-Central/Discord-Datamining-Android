@@ -10,7 +10,7 @@ import kotlin.jvm.internal.s;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class ChatListView$onChatListUpdate$1$1 extends s implements Function0<Unit> {
     final /* synthetic */ ChatListUpdate $update;
     final /* synthetic */ Ref$BooleanRef $wasAtBottom;
@@ -37,7 +37,7 @@ public final class ChatListView$onChatListUpdate$1$1 extends s implements Functi
         if (scrollState != null && scrollState.isAtBottom()) {
             z10 = true;
         }
-        ref$BooleanRef.f20710k = z10;
+        ref$BooleanRef.f20742k = z10;
         if (this.$update.getAction() instanceof ChatListAction.Clear) {
             chatScrollStateObserver2 = this.this$0.scrollStateObserver;
             chatScrollStateObserver2.stopWatching();

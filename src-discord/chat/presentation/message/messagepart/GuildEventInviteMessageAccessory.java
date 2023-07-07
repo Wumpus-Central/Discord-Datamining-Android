@@ -7,7 +7,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u001a\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B8\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u000b\u001a\u00020\tø\u0001\u0000¢\u0006\u0002\u0010\fJ\u0019\u0010\u0018\u001a\u00020\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0019\u0010\u0012J\t\u0010\u001a\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001c\u001a\u00020\tHÆ\u0003J\t\u0010\u001d\u001a\u00020\tHÆ\u0003J\t\u0010\u001e\u001a\u00020\tHÆ\u0003JR\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\tHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b \u0010!J\u0013\u0010\"\u001a\u00020\t2\b\u0010#\u001a\u0004\u0018\u00010$HÖ\u0003J\t\u0010%\u001a\u00020\u0005HÖ\u0001J\t\u0010&\u001a\u00020'HÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u001f\u0010\u0002\u001a\u00020\u0003X\u0096\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\n\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0015\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006("}, d2 = {"Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "messageId", "Lcom/discord/primitives/MessageId;", "codedLinkIndex", "", "invite", "Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "shouldAnimateEmoji", "", "shouldShowRoleDot", "shouldShowRoleOnName", "(Ljava/lang/String;ILcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;ZZZLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getCodedLinkIndex", "()I", "getInvite", "()Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getShouldAnimateEmoji", "()Z", "getShouldShowRoleDot", "getShouldShowRoleOnName", "component1", "component1-3Eiw7ao", "component2", "component3", "component4", "component5", "component6", "copy", "copy-LdU2QRA", "(Ljava/lang/String;ILcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;ZZZ)Lcom/discord/chat/presentation/message/messagepart/GuildEventInviteMessageAccessory;", "equals", "other", "", "hashCode", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     private final int codedLinkIndex;
     private final GuildEventInviteEmbedImpl invite;
@@ -31,9 +31,9 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-LdU2QRA$default  reason: not valid java name */
-    public static /* synthetic */ GuildEventInviteMessageAccessory m250copyLdU2QRA$default(GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, String str, int i10, GuildEventInviteEmbedImpl guildEventInviteEmbedImpl, boolean z10, boolean z11, boolean z12, int i11, Object obj) {
+    public static /* synthetic */ GuildEventInviteMessageAccessory m251copyLdU2QRA$default(GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, String str, int i10, GuildEventInviteEmbedImpl guildEventInviteEmbedImpl, boolean z10, boolean z11, boolean z12, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = guildEventInviteMessageAccessory.mo214getMessageId3Eiw7ao();
+            str = guildEventInviteMessageAccessory.mo215getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = guildEventInviteMessageAccessory.codedLinkIndex;
@@ -50,12 +50,12 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
         if ((i11 & 32) != 0) {
             z12 = guildEventInviteMessageAccessory.shouldShowRoleOnName;
         }
-        return guildEventInviteMessageAccessory.m252copyLdU2QRA(str, i10, guildEventInviteEmbedImpl, z10, z11, z12);
+        return guildEventInviteMessageAccessory.m253copyLdU2QRA(str, i10, guildEventInviteEmbedImpl, z10, z11, z12);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m251component13Eiw7ao() {
-        return mo214getMessageId3Eiw7ao();
+    public final String m252component13Eiw7ao() {
+        return mo215getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -79,7 +79,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-LdU2QRA  reason: not valid java name */
-    public final GuildEventInviteMessageAccessory m252copyLdU2QRA(String messageId, int i10, GuildEventInviteEmbedImpl invite, boolean z10, boolean z11, boolean z12) {
+    public final GuildEventInviteMessageAccessory m253copyLdU2QRA(String messageId, int i10, GuildEventInviteEmbedImpl invite, boolean z10, boolean z11, boolean z12) {
         q.g(messageId, "messageId");
         q.g(invite, "invite");
         return new GuildEventInviteMessageAccessory(messageId, i10, invite, z10, z11, z12, null);
@@ -93,7 +93,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
             return false;
         }
         GuildEventInviteMessageAccessory guildEventInviteMessageAccessory = (GuildEventInviteMessageAccessory) obj;
-        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.mo214getMessageId3Eiw7ao()) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && q.b(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
+        return MessageId.m594equalsimpl0(mo215getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.mo215getMessageId3Eiw7ao()) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && q.b(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
     }
 
     public final int getCodedLinkIndex() {
@@ -106,7 +106,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo214getMessageId3Eiw7ao() {
+    public String mo215getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -123,7 +123,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode()) * 31;
+        int i10 = ((((MessageId.m595hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.codedLinkIndex) * 31) + this.invite.hashCode()) * 31;
         boolean z10 = this.shouldAnimateEmoji;
         int i11 = 1;
         if (z10) {
@@ -149,7 +149,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
+        String str = MessageId.m596toStringimpl(mo215getMessageId3Eiw7ao());
         int i10 = this.codedLinkIndex;
         GuildEventInviteEmbedImpl guildEventInviteEmbedImpl = this.invite;
         boolean z10 = this.shouldAnimateEmoji;

@@ -64,7 +64,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u001b\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\bJ \u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0003J\u0010\u0010\u001d\u001a\u00020\u00162\u0006\u0010\u001e\u001a\u00020\u000eH\u0002J\u0010\u0010\u001f\u001a\u00020\u00162\u0006\u0010 \u001a\u00020\u000eH\u0002J\u001e\u0010!\u001a\b\u0012\u0004\u0012\u00020\u000b0\"2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010#\u001a\u00020$H\u0002J\u0010\u0010%\u001a\u00020\u000e2\u0006\u0010&\u001a\u00020'H\u0016J\u000e\u0010(\u001a\u00020\u00162\u0006\u0010)\u001a\u00020*J6\u0010+\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010#\u001a\u00020$2\b\b\u0002\u0010\u001b\u001a\u00020\u001c2\n\b\u0002\u0010,\u001a\u0004\u0018\u00010-2\b\b\u0002\u0010\r\u001a\u00020\u000eJ\r\u0010.\u001a\u00020/H\u0016¢\u0006\u0002\u00100R\u001e\u0010\t\u001a\u0012\u0012\u0004\u0012\u00020\u000b0\nj\b\u0012\u0004\u0012\u00020\u000b`\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\u00020\u00128VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014¨\u00061"}, d2 = {"Lcom/discord/chat/presentation/message/system/AutomodSystemMessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "accessories", "Ljava/util/ArrayList;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "Lkotlin/collections/ArrayList;", "allowChildGestures", "", "binding", "Lcom/discord/chat/databinding/AutomodSystemMessageViewBinding;", "spineOriginView", "Landroid/view/View;", "getSpineOriginView", "()Landroid/view/View;", "configureAuthor", "", "message", "Lcom/discord/chat/bridge/Message;", "automodContext", "Lcom/discord/chat/bridge/automod/AutoModerationContext;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "configureCommunicationDisabled", "isCommunicationDisabled", "configureDivider", "showDivider", "generateMessageAccessories", "", "messageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "onInterceptTouchEvent", "ev", "Landroid/view/MotionEvent;", "setAccessoriesRecycledViewPool", "recycledViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "setMessage", "componentProvider", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "spacingPxOverride", "", "()Ljava/lang/Integer;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AutomodSystemMessageView extends ConstraintLayout implements VerticalSpacingItemDecoration.SpacingProviderView, SpineParentMessage {
     private ArrayList<MessageAccessory> accessories;
     private boolean allowChildGestures;
@@ -89,7 +89,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         q.f(context, "context");
         simpleDraweeView.setImageURI(MessageKt.avatarUrl(message, context));
         this.binding.authorName.setText(message.getUsername());
-        this.binding.messageTagView.m209configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+        this.binding.messageTagView.m210configureTagVieweCJZyo(autoModerationContext.getHeaderBadgeText(), Boolean.FALSE, null, null, null, chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
         this.binding.automodMessageContextHeader.setText(autoModerationContext.getHeaderText());
         this.binding.timestamp.setText(message.getTimestamp());
         TextView configureAuthor$lambda$8 = this.binding.automodMessageChannel;
@@ -123,10 +123,10 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         String str;
         q.g(eventHandler, "$eventHandler");
         q.g(automodContext, "$automodContext");
-        String str2 = ChannelId.m569toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
+        String str2 = ChannelId.m571toStringimpl(automodContext.getMessage().m24getChannelIdo4g7jtM());
         GuildId guildId = automodContext.getMessage().m25getGuildIdqOKuAAo();
         if (guildId != null) {
-            str = GuildId.m582toStringimpl(guildId.m584unboximpl());
+            str = GuildId.m584toStringimpl(guildId.m586unboximpl());
         } else {
             str = null;
         }
@@ -195,7 +195,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
         } else {
             z10 = false;
         }
-        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, -541227100, -130, 125, (DefaultConstructorMarker) null);
+        Message message3 = new Message(messageType, str, (String) null, j10, guildId, (MessageState) null, userId, 0L, (String) null, (Float) null, (String) null, username, Integer.valueOf(usernameColor), roleColor, shouldShowRoleDot, false, (Integer) null, avatarURL, (String) null, (List) null, (List) null, (Float) null, content, (List) null, (List) null, (Boolean) null, (List) null, (List) null, message.getRoleIcon(), (ConnectionsRoleTag) null, (ThreadEmbed) null, false, (Boolean) null, (Boolean) null, (ReferencedMessage) null, (ExecutedCommand) null, (List) null, (String) null, Boolean.valueOf(z10), (String) null, (Boolean) null, (Integer) null, (Integer) null, (String) null, (String) null, (EphemeralIndication) null, (SurveyIndication) null, (InteractionStatus) null, (Boolean) null, (Boolean) null, (Boolean) null, (String) null, (String) null, (List) null, (Boolean) null, (Boolean) null, (Long) null, (Sticker) null, (String) null, (String) null, (Boolean) null, (ActivityInviteEmbed) null, false, (ForumPostActions) null, autoModerationContext, (List) null, (GiftEmbed) null, (Integer) null, (String) null, (List) null, 1874692004, -65, 62, (DefaultConstructorMarker) null);
         if (autoModerationContext.getNotification() != null) {
             this.accessories.add(new AutoModerationNotificationEmbedAccessory(message3.m16getId3Eiw7ao(), message, autoModerationContext, null));
         } else {
@@ -206,7 +206,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             z11 = true;
         }
         if (z11) {
-            this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, messageContext.getUseSortedReactions(), null));
+            this.accessories.add(new ReactionsMessageAccessory(message.m16getId3Eiw7ao(), message.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getUseAddBurstReaction(), messageContext.getAddReactionLabel(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getAddNewBurstReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null));
         }
         ThreadEmbed threadEmbed = message.getThreadEmbed();
         if (threadEmbed != null) {
@@ -266,7 +266,7 @@ public final class AutomodSystemMessageView extends ConstraintLayout implements 
             }
             threadStarterMessageHeaderView.configure(threadStarterMessageHeader, z11);
             this.binding.replyPreview.clear();
-            this.binding.accessoriesView.m208setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
+            this.binding.accessoriesView.m209setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories(message, messageContext), eventHandler, componentProvider);
         }
     }
 

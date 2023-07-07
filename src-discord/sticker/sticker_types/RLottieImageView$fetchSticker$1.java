@@ -28,7 +28,7 @@ import mf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1", f = "RLottieImageView.kt", l = {73, 82}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
+/* loaded from: classes8.dex */
 public final class RLottieImageView$fetchSticker$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ RLottieImageView.Config $config;
     int label;
@@ -38,7 +38,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
     /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1  reason: invalid class name */
-    /* loaded from: classes6.dex */
+    /* loaded from: classes8.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
         final /* synthetic */ RLottieImageView this$0;
@@ -55,7 +55,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 t.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f20685a;
+                return Unit.f20717a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -84,7 +84,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -104,7 +104,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f20685a;
+            return Unit.f20717a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -122,7 +122,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1  reason: invalid class name */
-            /* loaded from: classes6.dex */
+            /* loaded from: classes8.dex */
             public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 final /* synthetic */ RLottieImageView.Config $config;
                 final /* synthetic */ DownloadState $downloadState;
@@ -143,7 +143,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -181,7 +181,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2  reason: invalid class name and collision with other inner class name */
-            /* loaded from: classes6.dex */
+            /* loaded from: classes8.dex */
             public static final class C01142 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 int label;
                 final /* synthetic */ RLottieImageView this$0;
@@ -198,7 +198,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((C01142) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+                    return ((C01142) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -225,13 +225,13 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 if (downloadState instanceof DownloadState.Completed) {
                     Object g10 = j.g(y0.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
                     d12 = d.d();
-                    return g10 == d12 ? g10 : Unit.f20685a;
+                    return g10 == d12 ? g10 : Unit.f20717a;
                 } else if (!(downloadState instanceof DownloadState.Failure)) {
-                    return Unit.f20685a;
+                    return Unit.f20717a;
                 } else {
                     Object g11 = j.g(y0.c(), new C01142(RLottieImageView.this, null), continuation);
                     d11 = d.d();
-                    return g11 == d11 ? g11 : Unit.f20685a;
+                    return g11 == d11 ? g11 : Unit.f20717a;
                 }
             }
         };
@@ -239,6 +239,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         if (downloadFile$default.collect(flowCollector, this) == d10) {
             return d10;
         }
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

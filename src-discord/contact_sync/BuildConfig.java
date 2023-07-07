@@ -1,6 +1,6 @@
 package com.discord.contact_sync;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class BuildConfig {
     public static final String BUILD_TYPE = "release";
     public static final boolean DEBUG = false;

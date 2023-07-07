@@ -1,5 +1,5 @@
 package com.discord.device;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final /* synthetic */ class c {
 }

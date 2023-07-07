@@ -8,7 +8,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u000e\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Lcom/discord/chat/presentation/message/viewholder/GuildInviteViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "guildInviteView", "Lcom/discord/chat/presentation/message/view/GuildInviteView;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "(Lcom/discord/chat/presentation/message/view/GuildInviteView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V", "getEventHandler", "()Lcom/discord/chat/presentation/events/ChatEventHandler;", "bind", "", "inviteAccessory", "Lcom/discord/chat/presentation/message/messagepart/GuildInviteMessageAccessory;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class GuildInviteViewHolder extends MessagePartViewHolder {
     private final ChatEventHandler eventHandler;
     private final GuildInviteView guildInviteView;
@@ -26,7 +26,7 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$1$lambda$0(GuildInviteViewHolder this$0, GuildInviteMessageAccessory inviteAccessory, View view) {
         q.g(this$0, "this$0");
         q.g(inviteAccessory, "$inviteAccessory");
-        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo214getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
+        this$0.eventHandler.mo164onTapInviteEmbedAFFcxXc(inviteAccessory.mo215getMessageId3Eiw7ao(), inviteAccessory.getCodedLinkIndex(), null, null);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:13:0x002e, code lost:

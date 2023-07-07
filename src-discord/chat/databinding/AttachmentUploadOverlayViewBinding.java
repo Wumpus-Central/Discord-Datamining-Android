@@ -10,7 +10,7 @@ import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AttachmentUploadOverlayViewBinding {
     private final View rootView;
     public final SimpleDraweeView uploadCancel;

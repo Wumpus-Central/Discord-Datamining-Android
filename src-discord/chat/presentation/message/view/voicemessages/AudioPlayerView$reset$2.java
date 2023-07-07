@@ -17,7 +17,7 @@ import mf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$reset$2", f = "AudioPlayerView.kt", l = {495}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AudioPlayerView$reset$2 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
     final /* synthetic */ AudioPlayerView this$0;
@@ -26,7 +26,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$reset$2$1", f = "AudioPlayerView.kt", l = {496}, m = "invokeSuspend")
     /* renamed from: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$reset$2$1  reason: invalid class name */
-    /* loaded from: classes8.dex */
+    /* loaded from: classes3.dex */
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 
@@ -40,7 +40,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -59,7 +59,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            return Unit.f20685a;
+            return Unit.f20717a;
         }
     }
 
@@ -76,7 +76,7 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -107,6 +107,6 @@ public final class AudioPlayerView$reset$2 extends k implements Function2<Corout
         audioPlayerViewState2 = audioPlayerView2.state;
         audioPlayerView2.configureAudioWave(audioPlayerViewState2);
         this.this$0.getBinding().wave.reset();
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

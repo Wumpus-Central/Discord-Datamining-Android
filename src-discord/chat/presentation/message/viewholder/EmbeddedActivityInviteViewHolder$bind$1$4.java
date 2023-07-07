@@ -8,7 +8,7 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$4 extends n implements Function4<String, String, String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbeddedActivityInviteViewHolder$bind$1$4(Object obj) {
@@ -18,7 +18,7 @@ import kotlin.jvm.internal.q;
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2, String str3, String str4) {
         invoke2(str, str2, str3, str4);
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

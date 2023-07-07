@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 import com.discord.chat.R;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class ChatLoadingViewBinding {
     public final Button button;
     public final ProgressBar progressSpinner;

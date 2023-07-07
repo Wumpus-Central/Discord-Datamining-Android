@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public /* synthetic */ class EmbedViewHolder$bind$9 extends n implements Function1<CommandMentionContentNode, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbedViewHolder$bind$9(Object obj) {
@@ -20,7 +20,7 @@ public /* synthetic */ class EmbedViewHolder$bind$9 extends n implements Functio
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

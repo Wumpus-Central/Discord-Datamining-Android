@@ -19,7 +19,7 @@ import mf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.misc.utilities.keyboard.KeyboardExtensionsKt$showKeyboard$1", f = "KeyboardExtensions.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class KeyboardExtensionsKt$showKeyboard$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ View $self;
     final /* synthetic */ Window $window;
@@ -39,7 +39,7 @@ public final class KeyboardExtensionsKt$showKeyboard$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((KeyboardExtensionsKt$showKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((KeyboardExtensionsKt$showKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -60,7 +60,7 @@ public final class KeyboardExtensionsKt$showKeyboard$1 extends k implements Func
             if (editText != null) {
                 b.a(editText.requestFocus());
             }
-            return Unit.f20685a;
+            return Unit.f20717a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

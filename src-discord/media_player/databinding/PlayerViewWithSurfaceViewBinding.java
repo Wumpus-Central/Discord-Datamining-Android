@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.media_player.R;
 import com.google.android.exoplayer2.ui.PlayerView;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class PlayerViewWithSurfaceViewBinding {
     private final PlayerView rootView;
 

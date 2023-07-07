@@ -11,7 +11,10 @@ import com.discord.billing.types.SkuType;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
+import com.discord.misc.utilities.gradle.GradleUtils;
+import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.ReadableNativeArray;
 import gf.s;
 import gf.t;
 import java.util.List;
@@ -32,7 +35,7 @@ import mf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.billing.BillingManager$getProductsWithRetry$1", f = "BillingManager.kt", l = {345}, m = "invokeSuspend")
+@e(c = "com.discord.billing.BillingManager$getProductsWithRetry$1", f = "BillingManager.kt", l = {355}, m = "invokeSuspend")
 /* loaded from: classes.dex */
 public final class BillingManager$getProductsWithRetry$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ ExponentialBackoff $getProductsBackoff;
@@ -45,7 +48,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u0006\n\u0002\u0018\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"Lcom/discord/billing/BillingManager$ProductDetailsResponse;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-    @e(c = "com.discord.billing.BillingManager$getProductsWithRetry$1$1", f = "BillingManager.kt", l = {347}, m = "invokeSuspend")
+    @e(c = "com.discord.billing.BillingManager$getProductsWithRetry$1$1", f = "BillingManager.kt", l = {357}, m = "invokeSuspend")
     /* renamed from: com.discord.billing.BillingManager$getProductsWithRetry$1$1  reason: invalid class name */
     /* loaded from: classes.dex */
     public static final class AnonymousClass1 extends k implements Function1<Continuation<? super BillingManager.ProductDetailsResponse>, Object> {
@@ -71,7 +74,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -103,11 +106,13 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                     public final void onProductDetailsResponse(BillingResult billingResult, List<ProductDetails> productDetails) {
                         q.g(billingResult, "billingResult");
                         q.g(productDetails, "productDetails");
-                        CrashReporting crashReporting = CrashReporting.INSTANCE;
-                        int a10 = billingResult.a();
-                        CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getProductsBackoff with " + a10, null, null, 6, null);
+                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                            CrashReporting crashReporting = CrashReporting.INSTANCE;
+                            int a10 = billingResult.a();
+                            CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getProductsBackoff with " + a10, null, null, 6, null);
+                        }
                         Continuation<BillingManager.ProductDetailsResponse> continuation = gVar;
-                        s.a aVar = s.f15495l;
+                        s.a aVar = s.f15527l;
                         continuation.resumeWith(s.b(new BillingManager.ProductDetailsResponse(billingResult, productDetails)));
                     }
                 });
@@ -155,7 +160,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
         }
 
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -190,7 +195,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((BillingManager$getProductsWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -229,7 +234,13 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                     billingManager.invoke(function1, "Product fetch, bad response code: " + a10);
                 } else {
                     try {
-                        this.$reactPromise.resolve(SerializeProductDetailsKt.serializeProductDetails(component2));
+                        ReadableNativeArray serializeProductDetails = SerializeProductDetailsKt.serializeProductDetails(component2);
+                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                            CrashReporting crashReporting = CrashReporting.INSTANCE;
+                            String jsonString = NativeArrayExtensionsKt.toJsonString(serializeProductDetails);
+                            CrashReporting.addBreadcrumb$default(crashReporting, "resolving getProductsBackoff with " + jsonString, null, null, 6, null);
+                        }
+                        this.$reactPromise.resolve(serializeProductDetails);
                     } catch (AssertionError e10) {
                         this.$reactPromise.reject(e10);
                     }
@@ -237,13 +248,15 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
             }
         } catch (Exception e11) {
             if (e11 instanceof MaxAttemptsExceededException) {
-                CrashReporting.INSTANCE.captureException(e11);
+                if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                    CrashReporting.INSTANCE.captureException(e11);
+                }
             } else if (!(e11 instanceof CancellationException)) {
                 CrashReporting.INSTANCE.captureMessage("Found exception when exponentially retrying queryProductDetails call", e11);
             } else {
                 throw e11;
             }
         }
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

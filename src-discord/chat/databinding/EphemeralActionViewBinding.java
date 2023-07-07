@@ -8,7 +8,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class EphemeralActionViewBinding {
     public final SimpleDraweeView chatListAdapterItemIconHelp;
     public final SimpleDraweeSpanTextView chatListAdapterItemTextDismiss;

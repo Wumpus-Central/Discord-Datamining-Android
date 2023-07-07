@@ -3,7 +3,7 @@ package com.discord.simpleast.core.utils;
 import com.discord.simpleast.core.node.Node;
 import java.util.Collection;
 
-/* loaded from: classes6.dex */
+/* loaded from: classes8.dex */
 public class ASTUtils {
     public static void traversePostOrder(Collection<? extends Node> collection, NodeProcessor nodeProcessor) {
         for (Node node : collection) {

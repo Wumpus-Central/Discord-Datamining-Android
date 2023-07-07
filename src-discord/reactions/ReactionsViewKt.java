@@ -3,14 +3,11 @@ package com.discord.reactions;
 import com.discord.reactions.BurstReactionView;
 import com.discord.reactions.ReactionView;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import jf.c;
 import kotlin.Metadata;
-import kotlin.collections.r;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\b\u0003\u001a\u0016\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004\u001a$\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u00062\u0006\u0010\b\u001a\u00020\u0004¨\u0006\t"}, d2 = {"copyReactionWithoutCount", "Lcom/discord/reactions/ReactionView$Reaction;", "reaction", "isBurstReaction", "", "separateAndSortDuplicateReactions", "", "reactions", "sortReactions", "reactions_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\u001a\u0016\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004\u001a\u001c\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u00062\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0006¨\u0006\b"}, d2 = {"copyReactionWithoutCount", "Lcom/discord/reactions/ReactionView$Reaction;", "reaction", "isBurstReaction", "", "separateAndSortDuplicateReactions", "", "reactions", "reactions_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes5.dex */
 public final class ReactionsViewKt {
     public static final ReactionView.Reaction copyReactionWithoutCount(final ReactionView.Reaction reaction, final boolean z10) {
@@ -82,8 +79,7 @@ public final class ReactionsViewKt {
         };
     }
 
-    public static final List<ReactionView.Reaction> separateAndSortDuplicateReactions(List<? extends ReactionView.Reaction> list, boolean z10) {
-        List<ReactionView.Reaction> u02;
+    public static final List<ReactionView.Reaction> separateAndSortDuplicateReactions(List<? extends ReactionView.Reaction> list) {
         ArrayList arrayList = new ArrayList();
         if (list == null) {
             return arrayList;
@@ -96,17 +92,6 @@ public final class ReactionsViewKt {
                 arrayList.add(copyReactionWithoutCount(reaction, false));
             }
         }
-        if (!z10) {
-            return arrayList;
-        }
-        u02 = r.u0(arrayList, new Comparator() { // from class: com.discord.reactions.ReactionsViewKt$separateAndSortDuplicateReactions$$inlined$sortedByDescending$1
-            @Override // java.util.Comparator
-            public final int compare(T t10, T t11) {
-                int d10;
-                d10 = c.d(Boolean.valueOf(((ReactionView.Reaction) t11).isBurstReaction()), Boolean.valueOf(((ReactionView.Reaction) t10).isBurstReaction()));
-                return d10;
-            }
-        });
-        return u02;
+        return arrayList;
     }
 }

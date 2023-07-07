@@ -9,7 +9,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class MessageTagViewBinding {
     public final ConstraintLayout layout;
     private final View rootView;

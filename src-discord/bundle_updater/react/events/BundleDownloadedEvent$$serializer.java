@@ -32,7 +32,7 @@ public final class BundleDownloadedEvent$$serializer implements f0<BundleDownloa
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f26982a};
+        return new KSerializer[]{h.f27014a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

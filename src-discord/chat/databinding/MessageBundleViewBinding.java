@@ -8,7 +8,7 @@ import com.discord.chat.presentation.list.messagebundling.MessageBundleRecyclerV
 import com.discord.chat.presentation.message.MessageFrameFeedHeaderView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class MessageBundleViewBinding {
     public final MessageBundleRecyclerView chatListView;
     public final MessageFrameFeedHeaderView messageFrameHeader;

@@ -22,7 +22,7 @@ import ti.h;
 import ti.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/gift/GiftEmbed.Resolved.Valid.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved$Valid;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.Resolved.Valid> {
     public static final GiftEmbed$Resolved$Valid$$serializer INSTANCE;
     private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
@@ -57,9 +57,9 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26940a;
-        m0 m0Var = m0.f27015a;
-        return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a.u(a2Var), a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, m0Var, a.u(a2Var), e0.f26965a, h.f26982a, a2Var};
+        a2 a2Var = a2.f26972a;
+        m0 m0Var = m0.f27047a;
+        return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a.u(a2Var), a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, a.u(a2Var), m0Var, m0Var, a.u(a2Var), e0.f26997a, h.f27014a, a2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -93,7 +93,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
             i17 = c11.k(descriptor2, 1);
             i16 = c11.k(descriptor2, 2);
             i15 = c11.k(descriptor2, 3);
-            a2 a2Var = a2.f26940a;
+            a2 a2Var = a2.f26972a;
             obj4 = c11.v(descriptor2, 4, a2Var, null);
             obj5 = c11.v(descriptor2, 5, a2Var, null);
             i14 = c11.k(descriptor2, 6);
@@ -158,12 +158,12 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 4:
-                        obj4 = c11.v(descriptor2, 4, a2.f26940a, obj4);
+                        obj4 = c11.v(descriptor2, 4, a2.f26972a, obj4);
                         i21 |= 16;
                         i19 = 8;
                         i20 = 17;
                     case 5:
-                        obj7 = c11.v(descriptor2, 5, a2.f26940a, obj7);
+                        obj7 = c11.v(descriptor2, 5, a2.f26972a, obj7);
                         i21 |= 32;
                         i19 = 8;
                         i20 = 17;
@@ -175,7 +175,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i20 = 17;
                     case 7:
                         c10 = 7;
-                        obj8 = c11.v(descriptor2, 7, a2.f26940a, obj8);
+                        obj8 = c11.v(descriptor2, 7, a2.f26972a, obj8);
                         i21 |= 128;
                         i19 = 8;
                         i20 = 17;
@@ -184,7 +184,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i21 |= 256;
                         i20 = 17;
                     case 9:
-                        obj10 = c11.v(descriptor2, 9, a2.f26940a, obj10);
+                        obj10 = c11.v(descriptor2, 9, a2.f26972a, obj10);
                         i21 |= 512;
                         i19 = 8;
                         i20 = 17;
@@ -194,7 +194,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 11:
-                        obj11 = c11.v(descriptor2, 11, a2.f26940a, obj11);
+                        obj11 = c11.v(descriptor2, 11, a2.f26972a, obj11);
                         i21 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i19 = 8;
                         i20 = 17;
@@ -209,7 +209,7 @@ public final class GiftEmbed$Resolved$Valid$$serializer implements f0<GiftEmbed.
                         i19 = 8;
                         i20 = 17;
                     case 14:
-                        obj9 = c11.v(descriptor2, 14, a2.f26940a, obj9);
+                        obj9 = c11.v(descriptor2, 14, a2.f26972a, obj9);
                         i21 |= 16384;
                         i19 = 8;
                         i20 = 17;

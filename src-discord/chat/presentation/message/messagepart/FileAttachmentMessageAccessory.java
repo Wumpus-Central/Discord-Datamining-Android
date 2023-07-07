@@ -8,7 +8,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0086\b\u0018\u00002\u00020\u0001BH\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000eø\u0001\u0000¢\u0006\u0002\u0010\u000fJ\u0019\u0010\u001e\u001a\u00020\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001f\u0010\u0018J\t\u0010 \u001a\u00020\u0005HÆ\u0003J\t\u0010!\u001a\u00020\u0007HÆ\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u000b\u0010$\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0010\u0010%\u001a\u0004\u0018\u00010\u000eHÆ\u0003¢\u0006\u0002\u0010\u0015Jd\u0010&\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eHÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b'\u0010(J\u0013\u0010)\u001a\u00020*2\b\u0010+\u001a\u0004\u0018\u00010,HÖ\u0003J\t\u0010-\u001a\u00020\u0005HÖ\u0001J\t\u0010.\u001a\u00020\u000bHÖ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0015\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\n\n\u0002\u0010\u0016\u001a\u0004\b\u0014\u0010\u0015R\u001f\u0010\u0002\u001a\u00020\u0003X\u0096\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0013\u0010\f\u001a\u0004\u0018\u00010\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0018\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006/"}, d2 = {"Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "messageId", "Lcom/discord/primitives/MessageId;", "attachmentIndex", "", "attachment", "Lcom/discord/chat/bridge/attachment/Attachment;", "spoilerAttributes", "Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "uploaderId", "", "uploaderItemId", "attachmentsOpacity", "", "(Ljava/lang/String;ILcom/discord/chat/bridge/attachment/Attachment;Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAttachment", "()Lcom/discord/chat/bridge/attachment/Attachment;", "getAttachmentIndex", "()I", "getAttachmentsOpacity", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getSpoilerAttributes", "()Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "getUploaderId", "getUploaderItemId", "component1", "component1-3Eiw7ao", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "copy-dB0-bEw", "(Ljava/lang/String;ILcom/discord/chat/bridge/attachment/Attachment;Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Lcom/discord/chat/presentation/message/messagepart/FileAttachmentMessageAccessory;", "equals", "", "other", "", "hashCode", "toString", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class FileAttachmentMessageAccessory extends MessageAccessory {
     private final Attachment attachment;
     private final int attachmentIndex;
@@ -63,9 +63,9 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-dB0-bEw$default  reason: not valid java name */
-    public static /* synthetic */ FileAttachmentMessageAccessory m235copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str2, String str3, Float f10, int i11, Object obj) {
+    public static /* synthetic */ FileAttachmentMessageAccessory m236copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str2, String str3, Float f10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = fileAttachmentMessageAccessory.mo214getMessageId3Eiw7ao();
+            str = fileAttachmentMessageAccessory.mo215getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = fileAttachmentMessageAccessory.attachmentIndex;
@@ -85,12 +85,12 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
         if ((i11 & 64) != 0) {
             f10 = fileAttachmentMessageAccessory.attachmentsOpacity;
         }
-        return fileAttachmentMessageAccessory.m237copydB0bEw(str, i10, attachment, spoilerAttributes, str2, str3, f10);
+        return fileAttachmentMessageAccessory.m238copydB0bEw(str, i10, attachment, spoilerAttributes, str2, str3, f10);
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m236component13Eiw7ao() {
-        return mo214getMessageId3Eiw7ao();
+    public final String m237component13Eiw7ao() {
+        return mo215getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -118,7 +118,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-dB0-bEw  reason: not valid java name */
-    public final FileAttachmentMessageAccessory m237copydB0bEw(String messageId, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str, String str2, Float f10) {
+    public final FileAttachmentMessageAccessory m238copydB0bEw(String messageId, int i10, Attachment attachment, SpoilerAttributes spoilerAttributes, String str, String str2, Float f10) {
         q.g(messageId, "messageId");
         q.g(attachment, "attachment");
         return new FileAttachmentMessageAccessory(messageId, i10, attachment, spoilerAttributes, str, str2, f10, null);
@@ -132,7 +132,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
             return false;
         }
         FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) obj;
-        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo214getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.b(this.attachment, fileAttachmentMessageAccessory.attachment) && q.b(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.b(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.b(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.b(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
+        return MessageId.m594equalsimpl0(mo215getMessageId3Eiw7ao(), fileAttachmentMessageAccessory.mo215getMessageId3Eiw7ao()) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && q.b(this.attachment, fileAttachmentMessageAccessory.attachment) && q.b(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && q.b(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && q.b(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId) && q.b(this.attachmentsOpacity, fileAttachmentMessageAccessory.attachmentsOpacity);
     }
 
     public final Attachment getAttachment() {
@@ -149,7 +149,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo214getMessageId3Eiw7ao() {
+    public String mo215getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -166,7 +166,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
+        int i10 = ((((MessageId.m595hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.attachmentIndex) * 31) + this.attachment.hashCode()) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int i11 = 0;
         int hashCode = (i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
@@ -182,7 +182,7 @@ public final class FileAttachmentMessageAccessory extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
+        String str = MessageId.m596toStringimpl(mo215getMessageId3Eiw7ao());
         int i10 = this.attachmentIndex;
         Attachment attachment = this.attachment;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;

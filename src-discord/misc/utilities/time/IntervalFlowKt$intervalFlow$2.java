@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.FlowCollector;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00010\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/flow/FlowCollector;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.misc.utilities.time.IntervalFlowKt$intervalFlow$2", f = "IntervalFlow.kt", l = {26, 28, 29}, m = "invokeSuspend")
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCollector<? super Unit>, Continuation<? super Unit>, Object> {
     final /* synthetic */ long $initialDelayMs;
     final /* synthetic */ long $periodMs;
@@ -33,7 +33,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
     }
 
     public final Object invoke(FlowCollector<? super Unit> flowCollector, Continuation<? super Unit> continuation) {
-        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f20685a);
+        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -92,7 +92,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
         L_0x003f:
             r8 = r7
         L_0x0040:
-            kotlin.Unit r4 = kotlin.Unit.f20685a
+            kotlin.Unit r4 = kotlin.Unit.f20717a
             r8.L$0 = r1
             r8.label = r3
             java.lang.Object r4 = r1.emit(r4, r8)

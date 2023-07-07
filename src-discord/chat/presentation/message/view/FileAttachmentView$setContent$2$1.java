@@ -24,7 +24,7 @@ import mf.d;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1", f = "FileAttachmentView.kt", l = {94}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class FileAttachmentView$setContent$2$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ String $attachmentDescription;
     final /* synthetic */ String $attachmentName;
@@ -48,7 +48,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -69,7 +69,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
                 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1", f = "FileAttachmentView.kt", l = {}, m = "invokeSuspend")
                 /* renamed from: com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1  reason: invalid class name and collision with other inner class name */
-                /* loaded from: classes8.dex */
+                /* loaded from: classes3.dex */
                 public static final class C01101 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                     final /* synthetic */ DownloadState $downloadState;
                     int label;
@@ -88,7 +88,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     }
 
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01101) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+                        return ((C01101) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
                     }
 
                     @Override // kotlin.coroutines.jvm.internal.a
@@ -117,7 +117,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                                 i11 = 8;
                             }
                             simpleDraweeView.setVisibility(i11);
-                            return Unit.f20685a;
+                            return Unit.f20717a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
@@ -132,7 +132,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     Object d11;
                     Object g10 = j.g(y0.c(), new C01101(downloadState, FileAttachmentView.this, null), continuation);
                     d11 = d.d();
-                    return g10 == d11 ? g10 : Unit.f20685a;
+                    return g10 == d11 ? g10 : Unit.f20717a;
                 }
             };
             this.label = 1;
@@ -144,6 +144,6 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

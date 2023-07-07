@@ -9,7 +9,7 @@ import com.discord.chat.presentation.list.ChatListItemTouchHelper;
 import java.util.List;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public abstract class ChatListCallback extends ItemTouchHelper.c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int getAbsoluteMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {

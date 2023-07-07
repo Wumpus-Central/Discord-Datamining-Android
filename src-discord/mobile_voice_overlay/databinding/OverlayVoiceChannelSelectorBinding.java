@@ -12,7 +12,7 @@ import com.discord.mobile_voice_overlay.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class OverlayVoiceChannelSelectorBinding {
     public final TextView channelSelect;
     public final SimpleDraweeView close;

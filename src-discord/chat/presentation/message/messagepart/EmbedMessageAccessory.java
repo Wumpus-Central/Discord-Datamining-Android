@@ -10,7 +10,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b$\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u00012\u00020\u0002Bd\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013ø\u0001\u0000¢\u0006\u0002\u0010\u0014J\u0019\u0010'\u001a\u00020\u0004HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b(\u0010\u001bJ\u000b\u0010)\u001a\u0004\u0018\u00010\u0011HÆ\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u0013HÆ\u0003J\t\u0010+\u001a\u00020\u0006HÆ\u0003J\t\u0010,\u001a\u00020\u0006HÆ\u0003J\t\u0010-\u001a\u00020\u0006HÆ\u0003J\t\u0010.\u001a\u00020\nHÆ\u0003J\t\u0010/\u001a\u00020\fHÆ\u0003J\t\u00100\u001a\u00020\fHÆ\u0003J\t\u00101\u001a\u00020\fHÆ\u0003J\t\u00102\u001a\u00020\fHÆ\u0003J\u0088\u0001\u00103\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u00062\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b4\u00105J\u0013\u00106\u001a\u00020\f2\b\u00107\u001a\u0004\u0018\u000108HÖ\u0003J\t\u00109\u001a\u00020\u0006HÖ\u0001J\t\u0010:\u001a\u00020;HÖ\u0001R\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0016R\u001f\u0010\u0003\u001a\u00020\u0004X\u0096\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0016R\u0011\u0010\r\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010!R\u0011\u0010\u000e\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b#\u0010!R\u0011\u0010\u000f\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b$\u0010!R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006<"}, d2 = {"Lcom/discord/chat/presentation/message/messagepart/EmbedMessageAccessory;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "Lcom/discord/chat/presentation/media/PortalUiModel;", "messageId", "Lcom/discord/primitives/MessageId;", "index", "", "constrainedWidth", "radiusPx", "embed", "Lcom/discord/chat/bridge/embed/Embed;", "shouldAutoPlayGifs", "", "shouldAnimateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "spoilerAttributes", "Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "onLongClick", "Landroid/view/View$OnLongClickListener;", "(Ljava/lang/String;IIILcom/discord/chat/bridge/embed/Embed;ZZZZLcom/discord/chat/bridge/spoiler/SpoilerAttributes;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getConstrainedWidth", "()I", "getEmbed", "()Lcom/discord/chat/bridge/embed/Embed;", "getIndex", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getOnLongClick", "()Landroid/view/View$OnLongClickListener;", "getRadiusPx", "getShouldAnimateEmoji", "()Z", "getShouldAutoPlayGifs", "getShouldShowRoleDot", "getShouldShowRoleOnName", "getSpoilerAttributes", "()Lcom/discord/chat/bridge/spoiler/SpoilerAttributes;", "component1", "component1-3Eiw7ao", "component10", "component11", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "copy-5odn8qk", "(Ljava/lang/String;IIILcom/discord/chat/bridge/embed/Embed;ZZZZLcom/discord/chat/bridge/spoiler/SpoilerAttributes;Landroid/view/View$OnLongClickListener;)Lcom/discord/chat/presentation/message/messagepart/EmbedMessageAccessory;", "equals", "other", "", "hashCode", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class EmbedMessageAccessory extends MessageAccessory implements PortalUiModel {
     private final int constrainedWidth;
     private final Embed embed;
@@ -44,8 +44,8 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m227component13Eiw7ao() {
-        return mo214getMessageId3Eiw7ao();
+    public final String m228component13Eiw7ao() {
+        return mo215getMessageId3Eiw7ao();
     }
 
     public final SpoilerAttributes component10() {
@@ -89,7 +89,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     /* renamed from: copy-5odn8qk  reason: not valid java name */
-    public final EmbedMessageAccessory m228copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
+    public final EmbedMessageAccessory m229copy5odn8qk(String messageId, int i10, int i11, int i12, Embed embed, boolean z10, boolean z11, boolean z12, boolean z13, SpoilerAttributes spoilerAttributes, View.OnLongClickListener onLongClickListener) {
         q.g(messageId, "messageId");
         q.g(embed, "embed");
         return new EmbedMessageAccessory(messageId, i10, i11, i12, embed, z10, z11, z12, z13, spoilerAttributes, onLongClickListener, null);
@@ -103,7 +103,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
             return false;
         }
         EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-        return MessageId.m592equalsimpl0(mo214getMessageId3Eiw7ao(), embedMessageAccessory.mo214getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.b(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.b(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, embedMessageAccessory.onLongClick);
+        return MessageId.m594equalsimpl0(mo215getMessageId3Eiw7ao(), embedMessageAccessory.mo215getMessageId3Eiw7ao()) && getIndex() == embedMessageAccessory.getIndex() && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && q.b(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && q.b(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && q.b(this.onLongClick, embedMessageAccessory.onLongClick);
     }
 
     public final int getConstrainedWidth() {
@@ -121,7 +121,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo214getMessageId3Eiw7ao() {
+    public String mo215getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -159,7 +159,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int i10 = ((((((((MessageId.m593hashCodeimpl(mo214getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
+        int i10 = ((((((((MessageId.m595hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + getIndex()) * 31) + this.constrainedWidth) * 31) + this.radiusPx) * 31) + this.embed.hashCode()) * 31;
         boolean z10 = this.shouldAutoPlayGifs;
         int i11 = 1;
         if (z10) {
@@ -201,7 +201,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public String toString() {
-        String str = MessageId.m594toStringimpl(mo214getMessageId3Eiw7ao());
+        String str = MessageId.m596toStringimpl(mo215getMessageId3Eiw7ao());
         int index = getIndex();
         int i10 = this.constrainedWidth;
         int i11 = this.radiusPx;

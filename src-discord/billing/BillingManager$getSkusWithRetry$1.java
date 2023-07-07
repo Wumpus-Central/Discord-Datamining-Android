@@ -10,7 +10,10 @@ import com.discord.billing.types.SkuType;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
+import com.discord.misc.utilities.gradle.GradleUtils;
+import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.ReadableNativeArray;
 import gf.s;
 import gf.t;
 import java.util.List;
@@ -31,7 +34,7 @@ import mf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-@e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1", f = "BillingManager.kt", l = {292}, m = "invokeSuspend")
+@e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1", f = "BillingManager.kt", l = {294}, m = "invokeSuspend")
 /* loaded from: classes.dex */
 public final class BillingManager$getSkusWithRetry$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ ExponentialBackoff $getSkusBackoff;
@@ -44,7 +47,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Metadata(d1 = {"\u0000\u0006\n\u0002\u0018\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"Lcom/discord/billing/BillingManager$SkuDetailsResponse;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
-    @e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1$1", f = "BillingManager.kt", l = {294}, m = "invokeSuspend")
+    @e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1$1", f = "BillingManager.kt", l = {296}, m = "invokeSuspend")
     /* renamed from: com.discord.billing.BillingManager$getSkusWithRetry$1$1  reason: invalid class name */
     /* loaded from: classes.dex */
     public static final class AnonymousClass1 extends k implements Function1<Continuation<? super BillingManager.SkuDetailsResponse>, Object> {
@@ -70,7 +73,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
 
         public final Object invoke(Continuation<? super BillingManager.SkuDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -101,11 +104,13 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                     @Override // t1.g
                     public final void onSkuDetailsResponse(BillingResult billingResult, List<SkuDetails> list2) {
                         q.g(billingResult, "billingResult");
-                        CrashReporting crashReporting = CrashReporting.INSTANCE;
-                        int a10 = billingResult.a();
-                        CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getSkusBackoff with " + a10, null, null, 6, null);
+                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                            CrashReporting crashReporting = CrashReporting.INSTANCE;
+                            int a10 = billingResult.a();
+                            CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getSkusBackoff with " + a10, null, null, 6, null);
+                        }
                         Continuation<BillingManager.SkuDetailsResponse> continuation = gVar;
-                        s.a aVar = s.f15495l;
+                        s.a aVar = s.f15527l;
                         continuation.resumeWith(s.b(new BillingManager.SkuDetailsResponse(billingResult, list2)));
                     }
                 });
@@ -153,7 +158,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
 
         public final Object invoke(BillingManager.SkuDetailsResponse skuDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(skuDetailsResponse, continuation)).invokeSuspend(Unit.f20685a);
+            return ((AnonymousClass2) create(skuDetailsResponse, continuation)).invokeSuspend(Unit.f20717a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -188,7 +193,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getSkusWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20685a);
+        return ((BillingManager$getSkusWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -226,18 +231,26 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                     int a10 = component1.a();
                     billingManager.invoke(function1, "Sku fetch, bad response code: " + a10);
                 } else {
-                    this.$reactPromise.resolve(SerializeSkuDetailsKt.serializeSkuDetails(component2));
+                    ReadableNativeArray serializeSkuDetails = SerializeSkuDetailsKt.serializeSkuDetails(component2);
+                    if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                        CrashReporting crashReporting = CrashReporting.INSTANCE;
+                        String jsonString = NativeArrayExtensionsKt.toJsonString(serializeSkuDetails);
+                        CrashReporting.addBreadcrumb$default(crashReporting, "resolving getSkusBackoff with " + jsonString, null, null, 6, null);
+                    }
+                    this.$reactPromise.resolve(serializeSkuDetails);
                 }
             }
         } catch (Exception e10) {
             if (e10 instanceof MaxAttemptsExceededException) {
-                CrashReporting.INSTANCE.captureException(e10);
+                if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                    CrashReporting.INSTANCE.captureException(e10);
+                }
             } else if (!(e10 instanceof CancellationException)) {
                 CrashReporting.INSTANCE.captureMessage("Found exception when exponentially retrying querySkuDetails call", e10);
             } else {
                 throw e10;
             }
         }
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 }

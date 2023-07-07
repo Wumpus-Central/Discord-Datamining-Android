@@ -7,7 +7,7 @@ import kotlin.jvm.internal.s;
 import kotlinx.serialization.KSerializer;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 final class MessageType$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final MessageType$Companion$$cachedSerializer$delegate$1 INSTANCE = new MessageType$Companion$$cachedSerializer$delegate$1();
 

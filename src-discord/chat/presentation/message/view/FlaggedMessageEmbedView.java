@@ -34,7 +34,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u001b\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007J\u0018\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0002J\u0010\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\tH\u0002J\u0010\u0010\u0014\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0016\u001a\u00020\u0017H\u0016J\"\u0010\u0018\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00112\b\b\u0002\u0010\b\u001a\u00020\tJ\r\u0010\u0019\u001a\u00020\u001aH\u0016¢\u0006\u0002\u0010\u001bR\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/chat/presentation/message/view/FlaggedMessageEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "allowChildGestures", "", "binding", "Lcom/discord/chat/databinding/FlaggedMessageEmbedViewBinding;", "configureAuthor", "", "message", "Lcom/discord/chat/bridge/Message;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "configureCommunicationDisabled", "isCommunicationDisabled", "configureMessageContent", "onInterceptTouchEvent", "ev", "Landroid/view/MotionEvent;", "setMessage", "spacingPxOverride", "", "()Ljava/lang/Integer;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class FlaggedMessageEmbedView extends ConstraintLayout implements VerticalSpacingItemDecoration.SpacingProviderView {
     private boolean allowChildGestures;
     private final FlaggedMessageEmbedViewBinding binding;
@@ -109,7 +109,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         configureAuthor$lambda$11.setVisibility(i11);
         if (message.getConnectionsRoleTag() != null) {
-            configureAuthor$lambda$11.m193configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m562boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+            configureAuthor$lambda$11.m193configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m564boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
         }
     }
 
@@ -118,7 +118,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m635unboximpl());
+            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m637unboximpl());
         }
     }
 
@@ -129,7 +129,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m635unboximpl());
+        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m637unboximpl());
         return true;
     }
 
@@ -138,7 +138,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m635unboximpl());
+            eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m637unboximpl());
         }
     }
 
@@ -215,7 +215,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         if (z11) {
             z12 = true;
-            configureMessageContent$lambda$3.m313setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            configureMessageContent$lambda$3.m315setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         } else {
             z12 = true;
         }

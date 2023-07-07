@@ -14,7 +14,7 @@ import com.discord.chat.presentation.message.ThreadStarterMessageHeaderView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AutomodSystemMessageViewBinding {
     public final MessageAccessoriesView accessoriesView;
     public final SimpleDraweeView authorAvatar;

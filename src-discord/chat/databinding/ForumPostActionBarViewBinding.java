@@ -11,10 +11,11 @@ import com.discord.chat.R;
 import com.discord.core.DCDButton;
 import com.discord.reactions.AddReactionView;
 import com.discord.reactions.ReactionsView;
+import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class ForumPostActionBarViewBinding {
     public final AddReactionView addReaction;
     public final DCDButton followButton;
@@ -30,12 +31,12 @@ public final class ForumPostActionBarViewBinding {
     public final ConstraintLayout sharePromptContainer;
     public final DCDButton sharePromptCopyLinkButton;
     public final SimpleDraweeView sharePromptIcon;
-    public final TextView sharePromptSubtitle;
+    public final SimpleDraweeSpanTextView sharePromptSubtitle;
     public final TextView sharePromptTitle;
     public final Space spacer;
     public final Space startSpacer;
 
-    private ForumPostActionBarViewBinding(View view, AddReactionView addReactionView, DCDButton dCDButton, Barrier barrier, View view2, Barrier barrier2, View view3, DCDButton dCDButton2, ReactionsView reactionsView, DCDButton dCDButton3, DCDButton dCDButton4, ConstraintLayout constraintLayout, DCDButton dCDButton5, SimpleDraweeView simpleDraweeView, TextView textView, TextView textView2, Space space, Space space2) {
+    private ForumPostActionBarViewBinding(View view, AddReactionView addReactionView, DCDButton dCDButton, Barrier barrier, View view2, Barrier barrier2, View view3, DCDButton dCDButton2, ReactionsView reactionsView, DCDButton dCDButton3, DCDButton dCDButton4, ConstraintLayout constraintLayout, DCDButton dCDButton5, SimpleDraweeView simpleDraweeView, SimpleDraweeSpanTextView simpleDraweeSpanTextView, TextView textView, Space space, Space space2) {
         this.rootView = view;
         this.addReaction = addReactionView;
         this.followButton = dCDButton;
@@ -50,8 +51,8 @@ public final class ForumPostActionBarViewBinding {
         this.sharePromptContainer = constraintLayout;
         this.sharePromptCopyLinkButton = dCDButton5;
         this.sharePromptIcon = simpleDraweeView;
-        this.sharePromptSubtitle = textView;
-        this.sharePromptTitle = textView2;
+        this.sharePromptSubtitle = simpleDraweeSpanTextView;
+        this.sharePromptTitle = textView;
         this.spacer = space;
         this.startSpacer = space2;
     }
@@ -93,18 +94,18 @@ public final class ForumPostActionBarViewBinding {
                                                 SimpleDraweeView simpleDraweeView = (SimpleDraweeView) a.a(view, i10);
                                                 if (simpleDraweeView != null) {
                                                     i10 = R.id.share_prompt_subtitle;
-                                                    TextView textView = (TextView) a.a(view, i10);
-                                                    if (textView != null) {
+                                                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) a.a(view, i10);
+                                                    if (simpleDraweeSpanTextView != null) {
                                                         i10 = R.id.share_prompt_title;
-                                                        TextView textView2 = (TextView) a.a(view, i10);
-                                                        if (textView2 != null) {
+                                                        TextView textView = (TextView) a.a(view, i10);
+                                                        if (textView != null) {
                                                             i10 = R.id.spacer;
                                                             Space space = (Space) a.a(view, i10);
                                                             if (space != null) {
                                                                 i10 = R.id.start_spacer;
                                                                 Space space2 = (Space) a.a(view, i10);
                                                                 if (space2 != null) {
-                                                                    return new ForumPostActionBarViewBinding(view, addReactionView, dCDButton, barrier, a10, barrier2, a11, dCDButton2, reactionsView, dCDButton3, dCDButton4, constraintLayout, dCDButton5, simpleDraweeView, textView, textView2, space, space2);
+                                                                    return new ForumPostActionBarViewBinding(view, addReactionView, dCDButton, barrier, a10, barrier2, a11, dCDButton2, reactionsView, dCDButton3, dCDButton4, constraintLayout, dCDButton5, simpleDraweeView, simpleDraweeSpanTextView, textView, space, space2);
                                                                 }
                                                             }
                                                         }

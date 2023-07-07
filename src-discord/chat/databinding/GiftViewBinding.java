@@ -13,7 +13,7 @@ import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class GiftViewBinding {
     public final DCDButton acceptButton;
     public final View acceptButtonGradient;

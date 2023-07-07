@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import com.discord.mobile_voice_overlay.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public final class OverlayVoiceBubbleBinding {
     public final SimpleDraweeView overlayBubbleIv;
     private final SimpleDraweeView rootView;

@@ -17,7 +17,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
     private static final String TAG = "ReactOkHttpNetworkFetcher";
     private final Executor mCancellationExecutor;

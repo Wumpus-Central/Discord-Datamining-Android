@@ -10,7 +10,7 @@ import kotlin.jvm.internal.q;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public /* synthetic */ class EmbedViewHolder$bind$1 extends n implements Function3<MessageId, String, String, Unit> {
     /* JADX INFO: Access modifiers changed from: package-private */
     public EmbedViewHolder$bind$1(Object obj) {
@@ -19,12 +19,12 @@ public /* synthetic */ class EmbedViewHolder$bind$1 extends n implements Functio
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, String str, String str2) {
-        m327invokeu7_MRrM(messageId.m596unboximpl(), str, str2);
-        return Unit.f20685a;
+        m329invokeu7_MRrM(messageId.m598unboximpl(), str, str2);
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke-u7_MRrM  reason: not valid java name */
-    public final void m327invokeu7_MRrM(String p02, String p12, String str) {
+    public final void m329invokeu7_MRrM(String p02, String p12, String str) {
         q.g(p02, "p0");
         q.g(p12, "p1");
         ((ChatEventHandler) this.receiver).mo149onLinkClickedu7_MRrM(p02, p12, str);

@@ -32,7 +32,7 @@ public final class BillingManagerDowngradeCommand$$serializer implements f0<Bill
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f27015a};
+        return new KSerializer[]{m0.f27047a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

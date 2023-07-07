@@ -32,7 +32,7 @@ public final class AudioManagerAudioDeviceChanged$$serializer implements f0<Audi
 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26940a};
+        return new KSerializer[]{a2.f26972a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

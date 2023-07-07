@@ -29,7 +29,7 @@ public final class SafeAreaProviderManager$addEventEmitters$1 extends s implemen
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(SafeAreaProvider safeAreaProvider, EdgeInsets edgeInsets, Rect rect) {
         invoke2(safeAreaProvider, edgeInsets, rect);
-        return Unit.f20685a;
+        return Unit.f20717a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

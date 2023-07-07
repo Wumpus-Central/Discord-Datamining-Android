@@ -5,31 +5,60 @@ import com.discord.chat.bridge.MessageKt;
 import com.discord.chat.presentation.root.MessageContext;
 import com.discord.primitives.MessageId;
 import kotlin.Metadata;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\t\u0010\u000f\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0007HÆ\u0003J'\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00072\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0017HÖ\u0001J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000e¨\u0006\u001a"}, d2 = {"Lcom/discord/chat/presentation/list/item/AutomodSystemMessageItem;", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "message", "Lcom/discord/chat/bridge/Message;", "messageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "allowChildGestures", "", "(Lcom/discord/chat/bridge/Message;Lcom/discord/chat/presentation/root/MessageContext;Z)V", "getAllowChildGestures", "()Z", "getMessage", "()Lcom/discord/chat/bridge/Message;", "getMessageContext", "()Lcom/discord/chat/presentation/root/MessageContext;", "component1", "component2", "component3", "copy", "equals", "other", "", "hashCode", "", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class AutomodSystemMessageItem extends ChatListItem {
     private final boolean allowChildGestures;
     private final Message message;
     private final MessageContext messageContext;
 
-    public /* synthetic */ AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        Message message2;
-        boolean z11;
-        AutomodSystemMessageItem automodSystemMessageItem;
-        MessageContext messageContext2 = (i10 & 2) != 0 ? new MessageContext(false, false, null, null, null, null, null, false, false, false, false, false, 4095, null) : messageContext;
-        if ((i10 & 4) != 0) {
-            z11 = true;
-            automodSystemMessageItem = this;
-            message2 = message;
-        } else {
-            automodSystemMessageItem = this;
-            message2 = message;
-            z11 = z10;
-        }
-        new AutomodSystemMessageItem(message2, messageContext2, z11);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public /* synthetic */ AutomodSystemMessageItem(com.discord.chat.bridge.Message r16, com.discord.chat.presentation.root.MessageContext r17, boolean r18, int r19, kotlin.jvm.internal.DefaultConstructorMarker r20) {
+        /*
+            r15 = this;
+            r0 = r19 & 2
+            if (r0 == 0) goto L_0x0019
+            com.discord.chat.presentation.root.MessageContext r0 = new com.discord.chat.presentation.root.MessageContext
+            r2 = 0
+            r3 = 0
+            r4 = 0
+            r5 = 0
+            r6 = 0
+            r7 = 0
+            r8 = 0
+            r9 = 0
+            r10 = 0
+            r11 = 0
+            r12 = 0
+            r13 = 2047(0x7ff, float:2.868E-42)
+            r14 = 0
+            r1 = r0
+            r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14)
+            goto L_0x001b
+        L_0x0019:
+            r0 = r17
+        L_0x001b:
+            r1 = r19 & 4
+            if (r1 == 0) goto L_0x0024
+            r1 = 1
+            r2 = r15
+            r3 = r16
+            goto L_0x0029
+        L_0x0024:
+            r2 = r15
+            r3 = r16
+            r1 = r18
+        L_0x0029:
+            r15.<init>(r3, r0, r1)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.list.item.AutomodSystemMessageItem.<init>(com.discord.chat.bridge.Message, com.discord.chat.presentation.root.MessageContext, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 
     public static /* synthetic */ AutomodSystemMessageItem copy$default(AutomodSystemMessageItem automodSystemMessageItem, Message message, MessageContext messageContext, boolean z10, int i10, Object obj) {
@@ -107,7 +136,7 @@ public final class AutomodSystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AutomodSystemMessageItem(Message message, MessageContext messageContext, boolean z10) {
-        super(MessageId.m594toStringimpl(message.m16getId3Eiw7ao()), null);
+        super(MessageId.m596toStringimpl(message.m16getId3Eiw7ao()), null);
         q.g(message, "message");
         q.g(messageContext, "messageContext");
         this.message = message;

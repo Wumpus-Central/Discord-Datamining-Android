@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.discord.chat.R;
 
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class TimestampViewBinding {
     private final TextView rootView;
 

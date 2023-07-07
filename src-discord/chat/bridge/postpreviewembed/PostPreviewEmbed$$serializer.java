@@ -23,9 +23,10 @@ import ri.a;
 import ti.a2;
 import ti.f0;
 import ti.h;
+import ti.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/postpreviewembed/PostPreviewEmbed.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/postpreviewembed/PostPreviewEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes8.dex */
+/* loaded from: classes3.dex */
 public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> {
     public static final PostPreviewEmbed$$serializer INSTANCE;
     private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
@@ -33,13 +34,14 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     static {
         PostPreviewEmbed$$serializer postPreviewEmbed$$serializer = new PostPreviewEmbed$$serializer();
         INSTANCE = postPreviewEmbed$$serializer;
-        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.bridge.postpreviewembed.PostPreviewEmbed", postPreviewEmbed$$serializer, 14);
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.discord.chat.bridge.postpreviewembed.PostPreviewEmbed", postPreviewEmbed$$serializer, 15);
         pluginGeneratedSerialDescriptor.l("parentChannelId", false);
         pluginGeneratedSerialDescriptor.l("threadId", false);
         pluginGeneratedSerialDescriptor.l("messageId", false);
         pluginGeneratedSerialDescriptor.l("guildId", false);
         pluginGeneratedSerialDescriptor.l("title", false);
         pluginGeneratedSerialDescriptor.l("ctaText", false);
+        pluginGeneratedSerialDescriptor.l("ctaButtonColor", false);
         pluginGeneratedSerialDescriptor.l("footer", false);
         pluginGeneratedSerialDescriptor.l("subtitle", true);
         pluginGeneratedSerialDescriptor.l("coverImage", true);
@@ -57,16 +59,18 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override // ti.f0
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f26940a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f26982a, a.u(a2Var)};
+        a2 a2Var = a2.f26972a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f27047a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f27014a, a.u(a2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public PostPreviewEmbed deserialize(Decoder decoder) {
-        Object obj;
+        boolean z10;
+        int i10;
         String str;
         String str2;
-        boolean z10;
+        int i11;
+        Object obj;
         Object obj2;
         Object obj3;
         Object obj4;
@@ -75,162 +79,178 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
         Object obj7;
         Object obj8;
         Object obj9;
-        int i10;
         Object obj10;
         Object obj11;
         q.g(decoder, "decoder");
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
-        int i11 = 11;
-        int i12 = 10;
-        int i13 = 9;
+        int i12 = 11;
+        char c11 = '\n';
         Object obj12 = null;
         if (c10.y()) {
             ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-            obj11 = c10.m(descriptor2, 0, channelId$$serializer, null);
-            obj = c10.m(descriptor2, 1, channelId$$serializer, null);
-            obj7 = c10.m(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
+            obj9 = c10.m(descriptor2, 0, channelId$$serializer, null);
+            obj11 = c10.m(descriptor2, 1, channelId$$serializer, null);
+            obj10 = c10.m(descriptor2, 2, MessageId$$serializer.INSTANCE, null);
             obj4 = c10.m(descriptor2, 3, GuildId$$serializer.INSTANCE, null);
-            str = c10.t(descriptor2, 4);
-            str2 = c10.t(descriptor2, 5);
-            obj5 = c10.m(descriptor2, 6, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f26940a;
-            obj3 = c10.v(descriptor2, 7, a2Var, null);
-            obj2 = c10.v(descriptor2, 8, a2Var, null);
+            str2 = c10.t(descriptor2, 4);
+            str = c10.t(descriptor2, 5);
+            i10 = c10.k(descriptor2, 6);
+            obj5 = c10.m(descriptor2, 7, StructurableTextSerializer.INSTANCE, null);
+            a2 a2Var = a2.f26972a;
+            obj3 = c10.v(descriptor2, 8, a2Var, null);
             obj6 = c10.v(descriptor2, 9, a2Var, null);
-            obj8 = c10.v(descriptor2, 10, a2Var, null);
-            obj9 = c10.v(descriptor2, 11, a2Var, null);
-            z10 = c10.s(descriptor2, 12);
-            obj10 = c10.v(descriptor2, 13, a2Var, null);
-            i10 = 16383;
+            obj7 = c10.v(descriptor2, 10, a2Var, null);
+            obj8 = c10.v(descriptor2, 11, a2Var, null);
+            obj = c10.v(descriptor2, 12, a2Var, null);
+            z10 = c10.s(descriptor2, 13);
+            obj2 = c10.v(descriptor2, 14, a2Var, null);
+            i11 = 32767;
         } else {
-            int i14 = 13;
+            int i13 = 14;
+            int i14 = 0;
+            boolean z11 = false;
             int i15 = 0;
-            z10 = false;
+            boolean z12 = true;
             Object obj13 = null;
+            obj10 = null;
             Object obj14 = null;
-            obj5 = null;
             Object obj15 = null;
-            obj3 = null;
             Object obj16 = null;
             Object obj17 = null;
-            str2 = null;
             Object obj18 = null;
-            str = null;
+            obj2 = null;
             Object obj19 = null;
-            boolean z11 = true;
+            String str3 = null;
             Object obj20 = null;
-            while (z11) {
+            String str4 = null;
+            while (z12) {
                 int x10 = c10.x(descriptor2);
                 switch (x10) {
                     case -1:
-                        z11 = false;
-                        i11 = 11;
-                        i12 = 10;
-                        i13 = 9;
+                        z12 = false;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 0:
-                        obj17 = c10.m(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj17);
-                        i15 |= 1;
-                        i14 = 13;
-                        i11 = 11;
-                        i12 = 10;
-                        i13 = 9;
+                        obj19 = c10.m(descriptor2, 0, ChannelId$$serializer.INSTANCE, obj19);
+                        i14 |= 1;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 1:
                         obj12 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj12);
-                        i15 |= 2;
-                        i14 = 13;
-                        i11 = 11;
-                        i12 = 10;
-                        i13 = 9;
+                        i14 |= 2;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 2:
-                        obj19 = c10.m(descriptor2, 2, MessageId$$serializer.INSTANCE, obj19);
-                        i15 |= 4;
-                        i14 = 13;
-                        i11 = 11;
-                        i12 = 10;
-                        i13 = 9;
+                        obj10 = c10.m(descriptor2, 2, MessageId$$serializer.INSTANCE, obj10);
+                        i14 |= 4;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 3:
-                        obj18 = c10.m(descriptor2, 3, GuildId$$serializer.INSTANCE, obj18);
-                        i15 |= 8;
-                        i14 = 13;
-                        i11 = 11;
-                        i12 = 10;
+                        obj20 = c10.m(descriptor2, 3, GuildId$$serializer.INSTANCE, obj20);
+                        i14 |= 8;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 4:
-                        str = c10.t(descriptor2, 4);
-                        i15 |= 16;
-                        i14 = 13;
-                        i11 = 11;
+                        str4 = c10.t(descriptor2, 4);
+                        i14 |= 16;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 5:
-                        str2 = c10.t(descriptor2, 5);
-                        i15 |= 32;
-                        i14 = 13;
-                        i11 = 11;
+                        str3 = c10.t(descriptor2, 5);
+                        i14 |= 32;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 6:
-                        obj5 = c10.m(descriptor2, 6, StructurableTextSerializer.INSTANCE, obj5);
-                        i15 |= 64;
-                        i14 = 13;
-                        i11 = 11;
+                        i15 = c10.k(descriptor2, 6);
+                        i14 |= 64;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 7:
-                        obj3 = c10.v(descriptor2, 7, a2.f26940a, obj3);
-                        i15 |= 128;
-                        i14 = 13;
-                        i11 = 11;
+                        obj15 = c10.m(descriptor2, 7, StructurableTextSerializer.INSTANCE, obj15);
+                        i14 |= 128;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
                     case 8:
-                        obj14 = c10.v(descriptor2, 8, a2.f26940a, obj14);
-                        i15 |= 256;
-                        i14 = 13;
-                        i11 = 11;
-                        continue;
-                    case 9:
-                        obj15 = c10.v(descriptor2, i13, a2.f26940a, obj15);
-                        i15 |= 512;
-                        i14 = 13;
+                        obj14 = c10.v(descriptor2, 8, a2.f26972a, obj14);
+                        i14 |= 256;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
                         break;
+                    case 9:
+                        obj16 = c10.v(descriptor2, 9, a2.f26972a, obj16);
+                        i14 |= 512;
+                        i13 = 14;
+                        i12 = 11;
+                        c11 = '\n';
+                        continue;
                     case 10:
-                        obj16 = c10.v(descriptor2, i12, a2.f26940a, obj16);
-                        i15 |= 1024;
-                        i14 = 13;
+                        obj18 = c10.v(descriptor2, 10, a2.f26972a, obj18);
+                        i14 |= 1024;
+                        c11 = '\n';
+                        i13 = 14;
+                        i12 = 11;
                         break;
                     case 11:
-                        obj20 = c10.v(descriptor2, i11, a2.f26940a, obj20);
-                        i15 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        i14 = 13;
+                        obj17 = c10.v(descriptor2, i12, a2.f26972a, obj17);
+                        i14 |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                        i13 = 14;
+                        c11 = '\n';
                         break;
                     case 12:
-                        z10 = c10.s(descriptor2, 12);
-                        i15 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                        obj13 = c10.v(descriptor2, 12, a2.f26972a, obj13);
+                        i14 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                        i13 = 14;
+                        c11 = '\n';
                         break;
                     case 13:
-                        obj13 = c10.v(descriptor2, i14, a2.f26940a, obj13);
-                        i15 |= 8192;
+                        z11 = c10.s(descriptor2, 13);
+                        i14 |= 8192;
+                        break;
+                    case 14:
+                        obj2 = c10.v(descriptor2, i13, a2.f26972a, obj2);
+                        i14 |= 16384;
                         break;
                     default:
                         throw new n(x10);
                 }
             }
-            obj11 = obj17;
-            obj8 = obj16;
-            obj2 = obj14;
-            obj6 = obj15;
-            obj4 = obj18;
+            obj = obj13;
+            obj11 = obj12;
+            obj9 = obj19;
+            obj6 = obj16;
+            obj7 = obj18;
+            z10 = z11;
             i10 = i15;
-            obj7 = obj19;
-            obj9 = obj20;
-            obj = obj12;
-            obj10 = obj13;
+            str = str3;
+            str2 = str4;
+            i11 = i14;
+            obj3 = obj14;
+            obj5 = obj15;
+            obj4 = obj20;
+            obj8 = obj17;
         }
         c10.b(descriptor2);
-        MessageId messageId = (MessageId) obj7;
-        return new PostPreviewEmbed(i10, (ChannelId) obj11, (ChannelId) obj, messageId != null ? messageId.m596unboximpl() : null, (GuildId) obj4, str, str2, (StructurableText) obj5, (String) obj3, (String) obj2, (String) obj6, (String) obj8, (String) obj9, z10, (String) obj10, null, null);
+        MessageId messageId = (MessageId) obj10;
+        return new PostPreviewEmbed(i11, (ChannelId) obj9, (ChannelId) obj11, messageId != null ? messageId.m598unboximpl() : null, (GuildId) obj4, str2, str, i10, (StructurableText) obj5, (String) obj3, (String) obj6, (String) obj7, (String) obj8, (String) obj, z10, (String) obj2, null, null);
     }
 
     @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy

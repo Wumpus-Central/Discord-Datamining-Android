@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-/* loaded from: classes7.dex */
+/* loaded from: classes6.dex */
 class KvStorageModule extends ReactContextBaseJavaModule {
     public KvStorageModule(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
