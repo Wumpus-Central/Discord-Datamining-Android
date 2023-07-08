@@ -34,7 +34,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import gf.x;
+import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;

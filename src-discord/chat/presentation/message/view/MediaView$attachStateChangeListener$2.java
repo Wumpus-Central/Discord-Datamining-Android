@@ -21,7 +21,7 @@ public final class MediaView$attachStateChangeListener$2 extends s implements Fu
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(boolean z10) {

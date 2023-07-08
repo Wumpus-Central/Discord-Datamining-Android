@@ -171,7 +171,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             q.d(portalChatListItem2);
             list.set(j13, portalChatListItem2);
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
         setChatListItems$chat_release(list);
         super.setItems((ChannelChatListAdapter) getChatListItems$chat_release());

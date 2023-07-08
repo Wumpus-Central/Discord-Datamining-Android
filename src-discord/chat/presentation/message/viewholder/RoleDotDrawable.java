@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react.FontManager;
 import com.facebook.react.uimanager.ViewProps;
-import gf.r;
+import ff.r;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;

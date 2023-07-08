@@ -10,7 +10,7 @@ import android.provider.MediaStore;
 import co.discord.media_engine.b;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.reactnativecommunity.webview.RNCWebViewManager;
-import hf.p;
+import gf.p;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -22,8 +22,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 import kotlin.ranges.IntRange;
 import org.webrtc.MediaStreamTrack;
-import qf.c;
-import xf.j;
+import pf.c;
+import wf.j;
 
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\t\b\u0080\b\u0018\u0000 /2\u00020\u0001:\u0005./012BQ\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\f¢\u0006\u0002\u0010\u0010J\t\u0010\u001f\u001a\u00020\u0003HÆ\u0003J\t\u0010 \u001a\u00020\u0005HÆ\u0003J\t\u0010!\u001a\u00020\u0007HÆ\u0003J\u000b\u0010\"\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000b\u0010#\u001a\u0004\u0018\u00010\tHÆ\u0003J\t\u0010$\u001a\u00020\fHÆ\u0003J\t\u0010%\u001a\u00020\fHÆ\u0003J\t\u0010&\u001a\u00020\fHÆ\u0003J\t\u0010'\u001a\u00020\fHÆ\u0003Jg\u0010(\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\fHÆ\u0001J\u0013\u0010)\u001a\u00020*2\b\u0010+\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010,\u001a\u00020\fHÖ\u0001J\t\u0010-\u001a\u00020\tHÖ\u0001R\u0011\u0010\r\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0012R\u0011\u0010\u000f\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0013\u0010\n\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u000e\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0012¨\u00063"}, d2 = {"Lcom/discord/media/utils/ContentResolverMedia;", "", "id", "", "uri", "Landroid/net/Uri;", "mediaType", "Lcom/discord/media/utils/ContentResolverMedia$MediaType;", "mimeType", "", ZeroconfModule.KEY_SERVICE_NAME, "duration", "", "dateAdded", "width", "height", "(JLandroid/net/Uri;Lcom/discord/media/utils/ContentResolverMedia$MediaType;Ljava/lang/String;Ljava/lang/String;IIII)V", "getDateAdded", "()I", "getDuration", "getHeight", "getId", "()J", "getMediaType", "()Lcom/discord/media/utils/ContentResolverMedia$MediaType;", "getMimeType", "()Ljava/lang/String;", "getName", "getUri", "()Landroid/net/Uri;", "getWidth", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "hashCode", "toString", "Column", "Companion", "MediaType", "QueryColumns", "QueryType", "media_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes6.dex */
@@ -34,7 +34,7 @@ public final class ContentResolverMedia {
     private final int height;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f7574id;
+    private final long f7166id;
     private final MediaType mediaType;
     private final String mimeType;
     private final String name;
@@ -220,7 +220,7 @@ public final class ContentResolverMedia {
             if (i10 == 2) {
                 return "ALAssetTypeVideo";
             }
-            throw new gf.q();
+            throw new ff.q();
         }
     }
 
@@ -288,7 +288,7 @@ public final class ContentResolverMedia {
     public ContentResolverMedia(long j10, Uri uri, MediaType mediaType, String str, String str2, int i10, int i11, int i12, int i13) {
         q.g(uri, "uri");
         q.g(mediaType, "mediaType");
-        this.f7574id = j10;
+        this.f7166id = j10;
         this.uri = uri;
         this.mediaType = mediaType;
         this.mimeType = str;
@@ -300,7 +300,7 @@ public final class ContentResolverMedia {
     }
 
     public final long component1() {
-        return this.f7574id;
+        return this.f7166id;
     }
 
     public final Uri component2() {
@@ -349,7 +349,7 @@ public final class ContentResolverMedia {
             return false;
         }
         ContentResolverMedia contentResolverMedia = (ContentResolverMedia) obj;
-        return this.f7574id == contentResolverMedia.f7574id && q.b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && q.b(this.mimeType, contentResolverMedia.mimeType) && q.b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
+        return this.f7166id == contentResolverMedia.f7166id && q.b(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && q.b(this.mimeType, contentResolverMedia.mimeType) && q.b(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
     }
 
     public final int getDateAdded() {
@@ -365,7 +365,7 @@ public final class ContentResolverMedia {
     }
 
     public final long getId() {
-        return this.f7574id;
+        return this.f7166id;
     }
 
     public final MediaType getMediaType() {
@@ -389,7 +389,7 @@ public final class ContentResolverMedia {
     }
 
     public int hashCode() {
-        int a10 = ((((b.a(this.f7574id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
+        int a10 = ((((b.a(this.f7166id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
         String str = this.mimeType;
         int i10 = 0;
         int hashCode = (a10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -401,7 +401,7 @@ public final class ContentResolverMedia {
     }
 
     public String toString() {
-        long j10 = this.f7574id;
+        long j10 = this.f7166id;
         Uri uri = this.uri;
         MediaType mediaType = this.mediaType;
         String str = this.mimeType;

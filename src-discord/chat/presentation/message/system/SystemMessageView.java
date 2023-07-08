@@ -40,7 +40,7 @@ import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
-import gf.x;
+import ff.x;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;

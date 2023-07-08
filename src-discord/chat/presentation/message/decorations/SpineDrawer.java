@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
-import gf.n;
+import ff.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;

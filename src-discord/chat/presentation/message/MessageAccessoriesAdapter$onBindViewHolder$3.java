@@ -29,7 +29,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$3 extends s implem
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(Double d10, Integer num) {
         invoke2(d10, num);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

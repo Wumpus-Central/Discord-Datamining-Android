@@ -89,6 +89,7 @@
     <item type="id" name="automod_message_context_header" />
     <item type="id" name="avatar" />
     <item type="id" name="avatars" />
+    <item type="id" name="background_image" />
     <item type="id" name="badge_container" />
     <item type="id" name="badge_icon" />
     <item type="id" name="badge_text" />

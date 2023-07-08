@@ -11,8 +11,8 @@ import co.discord.media_engine.b;
 import com.discord.logging.Log;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.util.Locale;
-import ki.u;
-import ki.v;
+import ji.u;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.e;
@@ -60,7 +60,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         private final String fileName;
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f7268id;
+        private final long f6860id;
         private final String path;
         private final String relativePath;
         private final Uri uri;
@@ -69,7 +69,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
             q.g(fileName, "fileName");
             q.g(relativePath, "relativePath");
             q.g(uri, "uri");
-            this.f7268id = j10;
+            this.f6860id = j10;
             this.fileName = fileName;
             this.relativePath = relativePath;
             this.uri = uri;
@@ -78,7 +78,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long component1() {
-            return this.f7268id;
+            return this.f6860id;
         }
 
         public final String component2() {
@@ -112,7 +112,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
                 return false;
             }
             ScreenshotData screenshotData = (ScreenshotData) obj;
-            return this.f7268id == screenshotData.f7268id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
+            return this.f6860id == screenshotData.f6860id && q.b(this.fileName, screenshotData.fileName) && q.b(this.relativePath, screenshotData.relativePath) && q.b(this.uri, screenshotData.uri) && this.dateAdded == screenshotData.dateAdded;
         }
 
         public final long getDateAdded() {
@@ -124,7 +124,7 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public final long getId() {
-            return this.f7268id;
+            return this.f6860id;
         }
 
         public final String getPath() {
@@ -140,11 +140,11 @@ public final class ScreenshotContentObserver extends ContentObserver {
         }
 
         public int hashCode() {
-            return (((((((b.a(this.f7268id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
+            return (((((((b.a(this.f6860id) * 31) + this.fileName.hashCode()) * 31) + this.relativePath.hashCode()) * 31) + this.uri.hashCode()) * 31) + b.a(this.dateAdded);
         }
 
         public String toString() {
-            long j10 = this.f7268id;
+            long j10 = this.f6860id;
             String str = this.fileName;
             String str2 = this.relativePath;
             Uri uri = this.uri;

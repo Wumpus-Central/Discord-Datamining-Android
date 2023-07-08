@@ -26,7 +26,7 @@ public final class MediaEngineModule$addConnectionCallbacks$4 extends s implemen
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(String str, Long l10, String str2) {
         invoke(str, l10.longValue(), str2);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(String userId, long j10, String streamId) {

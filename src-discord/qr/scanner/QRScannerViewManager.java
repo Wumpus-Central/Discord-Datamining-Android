@@ -7,7 +7,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.DCDQRScannerManagerDelegate;
 import com.facebook.react.viewmanagers.DCDQRScannerManagerInterface;
-import gf.x;
+import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

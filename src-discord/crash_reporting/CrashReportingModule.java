@@ -10,7 +10,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
-import gf.x;
+import ff.x;
 import io.sentry.react.RNSentryModule;
 import kotlin.Metadata;
 import kotlin.jvm.internal.f0;

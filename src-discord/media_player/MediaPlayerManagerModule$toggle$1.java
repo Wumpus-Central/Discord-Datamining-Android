@@ -30,7 +30,7 @@ public final class MediaPlayerManagerModule$toggle$1 extends s implements Functi
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
@@ -38,7 +38,7 @@ public final class MediaPlayerManagerModule$toggle$1 extends s implements Functi
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
         q.g(player, "player");
-        if (this.$play && player.E() == 4) {
+        if (this.$play && player.D() == 4) {
             player.c0(0L);
         }
         player.y(this.$play);

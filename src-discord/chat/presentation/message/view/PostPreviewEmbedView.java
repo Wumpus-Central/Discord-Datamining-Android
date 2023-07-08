@@ -7,23 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.bridge.spoiler.SpoilerConfig;
 import com.discord.chat.bridge.structurabletext.StructurableText;
 import com.discord.chat.databinding.PostPreviewEmbedViewBinding;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
-import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.core.DCDButton;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
@@ -32,14 +20,13 @@ import com.discord.misc.utilities.view.ViewClippingUtilsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
 import com.discord.theme.ThemeManagerKt;
-import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0007H\u0002J\u0010\u0010\u000e\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u001c\u0010\u0011\u001a\u00020\f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0013H\u0002J\u0012\u0010\u0015\u001a\u00020\f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0013H\u0002J%\u0010\u0017\u001a\u00020\f2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ}\u0010\u001e\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020\u00132\b\u0010 \u001a\u0004\u0018\u00010\u00132\u0006\u0010!\u001a\u00020\u00132\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\b\u0010\"\u001a\u0004\u0018\u00010\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u00132\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\b\u0010'\u001a\u0004\u0018\u00010(ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b)\u0010*J\u0012\u0010+\u001a\u00020\f2\b\u0010 \u001a\u0004\u0018\u00010\u0010H\u0002J\u0010\u0010,\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020\u0010H\u0002J\u001a\u0010-\u001a\u00020\f2\b\u0010'\u001a\u0004\u0018\u00010(2\u0006\u0010%\u001a\u00020&H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006."}, d2 = {"Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/PostPreviewEmbedViewBinding;", "setButtonColor", "", "ctaButtonColor", "setButtonText", "cta", "", "setCoverImage", "url", "", "blurredThumbnailUrl", "setCoverImageButtonText", "coverImageOverlayText", "setFooter", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageId", "Lcom/discord/primitives/MessageId;", "setFooter-Ayv7vGE", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;)V", "setPostPreviewEmbed", "title", "subtitle", "ctaCopy", "thumbnailUrl", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "isSpoiler", "", "spoilerConfig", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "setPostPreviewEmbed-nL87Xa4", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;)V", "setSubtitle", "setTitle", "setupSpoilerView", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\r\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0007H\u0002J\u0010\u0010\u000e\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J&\u0010\u0011\u001a\u00020\f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00132\b\u0010\u0015\u001a\u0004\u0018\u00010\u0013H\u0002J\u0012\u0010\u0016\u001a\u00020\f2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0013H\u0002J%\u0010\u0018\u001a\u00020\f2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001d\u0010\u001eJ\u0087\u0001\u0010\u001f\u001a\u00020\f2\u0006\u0010 \u001a\u00020\u00132\b\u0010!\u001a\u0004\u0018\u00010\u00132\u0006\u0010\"\u001a\u00020\u00132\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\b\u0010#\u001a\u0004\u0018\u00010\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00132\b\u0010\u0017\u001a\u0004\u0018\u00010\u00132\b\u0010\u0015\u001a\u0004\u0018\u00010\u00132\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'2\b\u0010(\u001a\u0004\u0018\u00010)ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b*\u0010+J\u0012\u0010,\u001a\u00020\f2\b\u0010!\u001a\u0004\u0018\u00010\u0010H\u0002J\u0010\u0010-\u001a\u00020\f2\u0006\u0010 \u001a\u00020\u0010H\u0002J\u001a\u0010.\u001a\u00020\f2\b\u0010(\u001a\u0004\u0018\u00010)2\u0006\u0010&\u001a\u00020'H\u0002R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006/"}, d2 = {"Lcom/discord/chat/presentation/message/view/PostPreviewEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/PostPreviewEmbedViewBinding;", "setButtonColor", "", "ctaButtonColor", "setButtonText", "cta", "", "setCoverImage", "url", "", "blurredThumbnailUrl", "backgroundImageUrl", "setCoverImageButtonText", "coverImageOverlayText", "setFooter", "footer", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "messageId", "Lcom/discord/primitives/MessageId;", "setFooter-Ayv7vGE", "(Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;)V", "setPostPreviewEmbed", "title", "subtitle", "ctaCopy", "thumbnailUrl", "onButtonClickListener", "Landroid/view/View$OnClickListener;", "isSpoiler", "", "spoilerConfig", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "setPostPreviewEmbed-OGpb6Gk", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;)V", "setSubtitle", "setTitle", "setupSpoilerView", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes3.dex */
 public final class PostPreviewEmbedView extends ConstraintLayout {
     private final PostPreviewEmbedViewBinding binding;
@@ -68,94 +55,149 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         this.binding.cta.setText(charSequence);
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0028  */
-    /* JADX WARN: Removed duplicated region for block: B:18:0x002d  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x001f  */
     /* JADX WARN: Removed duplicated region for block: B:19:0x002f  */
-    /* JADX WARN: Removed duplicated region for block: B:22:0x0036  */
-    /* JADX WARN: Removed duplicated region for block: B:27:0x0042  */
-    /* JADX WARN: Removed duplicated region for block: B:28:0x004a  */
-    /* JADX WARN: Removed duplicated region for block: B:9:0x0019  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x0031  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0040  */
+    /* JADX WARN: Removed duplicated region for block: B:29:0x004e  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0053  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x0059  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0065  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x009f  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0010  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final void setCoverImage(java.lang.String r6, java.lang.String r7) {
+    private final void setCoverImage(java.lang.String r8, java.lang.String r9, java.lang.String r10) {
         /*
-            r5 = this;
-            com.discord.chat.databinding.PostPreviewEmbedViewBinding r0 = r5.binding
-            com.facebook.drawee.view.SimpleDraweeView r0 = r0.coverImage
-            java.lang.String r1 = "binding.coverImage"
-            kotlin.jvm.internal.q.f(r0, r1)
-            r2 = 1
-            r3 = 0
-            if (r6 == 0) goto L_0x0016
-            boolean r4 = ki.l.w(r6)
-            if (r4 == 0) goto L_0x0014
-            goto L_0x0016
-        L_0x0014:
-            r4 = r3
-            goto L_0x0017
-        L_0x0016:
-            r4 = r2
-        L_0x0017:
-            if (r4 == 0) goto L_0x002a
-            if (r7 == 0) goto L_0x0024
-            boolean r4 = ki.l.w(r7)
-            if (r4 == 0) goto L_0x0022
-            goto L_0x0024
+            r7 = this;
+            r0 = 1
+            r1 = 0
+            if (r8 == 0) goto L_0x000d
+            boolean r2 = ji.l.w(r8)
+            if (r2 == 0) goto L_0x000b
+            goto L_0x000d
+        L_0x000b:
+            r2 = r1
+            goto L_0x000e
+        L_0x000d:
+            r2 = r0
+        L_0x000e:
+            if (r2 == 0) goto L_0x0021
+            if (r9 == 0) goto L_0x001b
+            boolean r2 = ji.l.w(r9)
+            if (r2 == 0) goto L_0x0019
+            goto L_0x001b
+        L_0x0019:
+            r2 = r1
+            goto L_0x001c
+        L_0x001b:
+            r2 = r0
+        L_0x001c:
+            if (r2 != 0) goto L_0x001f
+            goto L_0x0021
+        L_0x001f:
+            r2 = r1
+            goto L_0x0022
+        L_0x0021:
+            r2 = r0
         L_0x0022:
-            r4 = r3
-            goto L_0x0025
-        L_0x0024:
-            r4 = r2
-        L_0x0025:
-            if (r4 != 0) goto L_0x0028
-            goto L_0x002a
-        L_0x0028:
-            r4 = r3
-            goto L_0x002b
-        L_0x002a:
-            r4 = r2
-        L_0x002b:
-            if (r4 == 0) goto L_0x002f
-            r4 = r3
-            goto L_0x0031
-        L_0x002f:
-            r4 = 8
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r3 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r3 = r3.coverImage
+            java.lang.String r4 = "binding.coverImage"
+            kotlin.jvm.internal.q.f(r3, r4)
+            r5 = 8
+            if (r2 == 0) goto L_0x0031
+            r6 = r1
+            goto L_0x0032
         L_0x0031:
-            r0.setVisibility(r4)
-            if (r6 == 0) goto L_0x003f
-            boolean r0 = ki.l.w(r6)
-            if (r0 == 0) goto L_0x003d
-            goto L_0x003f
-        L_0x003d:
-            r0 = r3
-            goto L_0x0040
-        L_0x003f:
-            r0 = r2
-        L_0x0040:
-            if (r0 != 0) goto L_0x004a
-            com.discord.chat.databinding.PostPreviewEmbedViewBinding r7 = r5.binding
-            com.facebook.drawee.view.SimpleDraweeView r7 = r7.coverImage
-            r7.setImageURI(r6)
-            goto L_0x0060
-        L_0x004a:
-            if (r7 == 0) goto L_0x0054
-            boolean r6 = ki.l.w(r7)
-            if (r6 == 0) goto L_0x0053
-            goto L_0x0054
-        L_0x0053:
-            r2 = r3
+            r6 = r5
+        L_0x0032:
+            r3.setVisibility(r6)
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r3 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r3 = r3.backgroundImage
+            java.lang.String r6 = "binding.backgroundImage"
+            kotlin.jvm.internal.q.f(r3, r6)
+            if (r2 == 0) goto L_0x0050
+            if (r10 == 0) goto L_0x004b
+            boolean r2 = ji.l.w(r10)
+            if (r2 == 0) goto L_0x0049
+            goto L_0x004b
+        L_0x0049:
+            r2 = r1
+            goto L_0x004c
+        L_0x004b:
+            r2 = r0
+        L_0x004c:
+            if (r2 != 0) goto L_0x0050
+            r2 = r0
+            goto L_0x0051
+        L_0x0050:
+            r2 = r1
+        L_0x0051:
+            if (r2 == 0) goto L_0x0054
+            r5 = r1
         L_0x0054:
-            if (r2 != 0) goto L_0x0060
-            com.discord.chat.databinding.PostPreviewEmbedViewBinding r6 = r5.binding
-            com.facebook.drawee.view.SimpleDraweeView r6 = r6.coverImage
-            kotlin.jvm.internal.q.f(r6, r1)
-            com.discord.react_asset_fetcher.ReactAssetUtilsKt.setOptionalReactImageUrl(r6, r7)
+            r3.setVisibility(r5)
+            if (r8 == 0) goto L_0x0062
+            boolean r2 = ji.l.w(r8)
+            if (r2 == 0) goto L_0x0060
+            goto L_0x0062
         L_0x0060:
+            r2 = r1
+            goto L_0x0063
+        L_0x0062:
+            r2 = r0
+        L_0x0063:
+            if (r2 != 0) goto L_0x009f
+            if (r10 == 0) goto L_0x006f
+            boolean r9 = ji.l.w(r10)
+            if (r9 == 0) goto L_0x006e
+            goto L_0x006f
+        L_0x006e:
+            r0 = r1
+        L_0x006f:
+            if (r0 != 0) goto L_0x0088
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r9 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r9 = r9.coverImage
+            com.facebook.drawee.interfaces.DraweeHierarchy r9 = r9.getHierarchy()
+            com.facebook.drawee.generic.GenericDraweeHierarchy r9 = (com.facebook.drawee.generic.GenericDraweeHierarchy) r9
+            com.facebook.drawee.drawable.ScalingUtils$ScaleType r0 = com.facebook.drawee.drawable.ScalingUtils.ScaleType.f7394e
+            r9.t(r0)
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r9 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r9 = r9.backgroundImage
+            r9.setImageURI(r10)
+            goto L_0x0097
+        L_0x0088:
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r9 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r9 = r9.coverImage
+            com.facebook.drawee.interfaces.DraweeHierarchy r9 = r9.getHierarchy()
+            com.facebook.drawee.generic.GenericDraweeHierarchy r9 = (com.facebook.drawee.generic.GenericDraweeHierarchy) r9
+            com.facebook.drawee.drawable.ScalingUtils$ScaleType r10 = com.facebook.drawee.drawable.ScalingUtils.ScaleType.f7398i
+            r9.t(r10)
+        L_0x0097:
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r9 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r9 = r9.coverImage
+            r9.setImageURI(r8)
+            goto L_0x00b5
+        L_0x009f:
+            if (r9 == 0) goto L_0x00a9
+            boolean r8 = ji.l.w(r9)
+            if (r8 == 0) goto L_0x00a8
+            goto L_0x00a9
+        L_0x00a8:
+            r0 = r1
+        L_0x00a9:
+            if (r0 != 0) goto L_0x00b5
+            com.discord.chat.databinding.PostPreviewEmbedViewBinding r8 = r7.binding
+            com.facebook.drawee.view.SimpleDraweeView r8 = r8.coverImage
+            kotlin.jvm.internal.q.f(r8, r4)
+            com.discord.react_asset_fetcher.ReactAssetUtilsKt.setOptionalReactImageUrl(r8, r9)
+        L_0x00b5:
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.PostPreviewEmbedView.setCoverImage(java.lang.String, java.lang.String):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.PostPreviewEmbedView.setCoverImage(java.lang.String, java.lang.String, java.lang.String):void");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x001b  */
@@ -173,7 +215,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = ki.l.w(r5)
+            boolean r3 = ji.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -197,15 +239,13 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
 
     /* renamed from: setFooter-Ayv7vGE  reason: not valid java name */
     private final void m316setFooterAyv7vGE(StructurableText structurableText, String str) {
-        DraweeSpanStringBuilder spannable;
         SimpleDraweeSpanTextView setFooter_Ayv7vGE$lambda$4 = this.binding.footer;
         q.f(setFooter_Ayv7vGE$lambda$4, "setFooter_Ayv7vGE$lambda$4");
         Context context = setFooter_Ayv7vGE$lambda$4.getContext();
         q.f(context, "context");
         Paint.FontMetrics fontMetrics = setFooter_Ayv7vGE$lambda$4.getPaint().getFontMetrics();
         q.f(fontMetrics, "paint.fontMetrics");
-        spannable = TextUtilsKt.toSpannable(structurableText, context, str, false, false, true, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : true, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
-        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, spannable);
+        ViewUtilsKt.setOptionalText(setFooter_Ayv7vGE$lambda$4, TextUtilsKt.toSpannable$default(structurableText, context, str, false, false, true, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null));
         NestedScrollOnTouchUtilsKt.enableNestedSpanClickListener$default(setFooter_Ayv7vGE$lambda$4, false, 1, null);
     }
 
@@ -224,7 +264,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
             r1 = 0
             r2 = 1
             if (r5 == 0) goto L_0x0016
-            boolean r3 = ki.l.w(r5)
+            boolean r3 = ji.l.w(r5)
             if (r3 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -272,8 +312,8 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         }
     }
 
-    /* renamed from: setPostPreviewEmbed-nL87Xa4  reason: not valid java name */
-    public final void m317setPostPreviewEmbednL87Xa4(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
+    /* renamed from: setPostPreviewEmbed-OGpb6Gk  reason: not valid java name */
+    public final void m317setPostPreviewEmbedOGpb6Gk(String title, String str, String ctaCopy, int i10, StructurableText footer, String messageId, String str2, String str3, String str4, String str5, View.OnClickListener onButtonClickListener, boolean z10, SpoilerConfig spoilerConfig) {
         q.g(title, "title");
         q.g(ctaCopy, "ctaCopy");
         q.g(footer, "footer");
@@ -284,7 +324,7 @@ public final class PostPreviewEmbedView extends ConstraintLayout {
         setTitle(title);
         setSubtitle(str);
         m316setFooterAyv7vGE(footer, messageId);
-        setCoverImage(str2, str3);
+        setCoverImage(str2, str3, str5);
         setCoverImageButtonText(str4);
         this.binding.cta.setOnClickButtonListener(onButtonClickListener);
         SimpleDraweeView simpleDraweeView = this.binding.coverImage;

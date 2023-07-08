@@ -19,7 +19,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$7 extends s implem
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -2,7 +2,7 @@ package com.discord.sounds;
 
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.Callback;
-import gf.x;
+import ff.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -23,7 +23,7 @@ final class SoundManagerModule$prepare$1 extends s implements Function1<Integer,
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(int i10) {

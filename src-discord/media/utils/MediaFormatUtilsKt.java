@@ -1,8 +1,8 @@
 package com.discord.media.utils;
 
 import android.media.MediaFormat;
-import gf.s;
-import gf.t;
+import ff.s;
+import ff.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -13,10 +13,10 @@ public final class MediaFormatUtilsKt {
         Object obj;
         q.g(mediaFormat, "<this>");
         try {
-            s.a aVar = s.f15527l;
+            s.a aVar = s.f14771l;
             obj = s.b(mediaFormat.getString("mime"));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

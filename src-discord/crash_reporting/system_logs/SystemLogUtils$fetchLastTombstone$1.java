@@ -25,7 +25,7 @@ public final class SystemLogUtils$fetchLastTombstone$1 extends s implements Func
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(LinkedList<String> linkedList) {
         invoke2(linkedList);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

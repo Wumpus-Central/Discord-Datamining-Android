@@ -7,8 +7,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import qi.f;
-import ti.n1;
+import pi.f;
+import si.n1;
 
 @f
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b!\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 G2\u00020\u0001:\u0002FGB}\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018¢\u0006\u0002\u0010\u0019B}\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0002\u0010\u001aJ\u000b\u0010.\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\u0016HÆ\u0003J\u000b\u00100\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u00101\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u00102\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u00103\u001a\u0004\u0018\u00010\fHÆ\u0003J\u000b\u00104\u001a\u0004\u0018\u00010\u000eHÆ\u0003J\u000b\u00105\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\u0012HÆ\u0003J\u000b\u00107\u001a\u0004\u0018\u00010\u0014HÆ\u0003J\u0081\u0001\u00108\u001a\u00020\u00002\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00142\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016HÆ\u0001J\u0013\u00109\u001a\u00020:2\b\u0010;\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010<\u001a\u00020\u0003HÖ\u0001J\t\u0010=\u001a\u00020>HÖ\u0001J!\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020\u00002\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020EHÇ\u0001R\u0013\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0013\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b+\u0010$R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b,\u0010-¨\u0006H"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContext;", "", "seen1", "", "usernameOnClick", "Lcom/discord/chat/bridge/contentnode/UserNameOnClick;", "otherUsernameOnClick", "commandNameOnClick", "Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "actorHook", "Lcom/discord/chat/bridge/contentnode/ActorHook;", "threadOnClick", "Lcom/discord/chat/bridge/contentnode/ThreadOnClick;", "pinsOnClick", "Lcom/discord/chat/bridge/contentnode/PinsOnClick;", "webhookNameOnClick", "Lcom/discord/chat/bridge/contentnode/WebhookNameOnClick;", "handleDelete", "Lcom/discord/chat/bridge/contentnode/HandleDelete;", "roleSubscriptionOnClick", "Lcom/discord/chat/bridge/contentnode/RoleSubscriptionOnClick;", "handleMessage", "Lcom/discord/chat/bridge/contentnode/HandleMessage;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/contentnode/UserNameOnClick;Lcom/discord/chat/bridge/contentnode/UserNameOnClick;Lcom/discord/chat/bridge/contentnode/CommandOnClick;Lcom/discord/chat/bridge/contentnode/ActorHook;Lcom/discord/chat/bridge/contentnode/ThreadOnClick;Lcom/discord/chat/bridge/contentnode/PinsOnClick;Lcom/discord/chat/bridge/contentnode/WebhookNameOnClick;Lcom/discord/chat/bridge/contentnode/HandleDelete;Lcom/discord/chat/bridge/contentnode/RoleSubscriptionOnClick;Lcom/discord/chat/bridge/contentnode/HandleMessage;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Lcom/discord/chat/bridge/contentnode/UserNameOnClick;Lcom/discord/chat/bridge/contentnode/UserNameOnClick;Lcom/discord/chat/bridge/contentnode/CommandOnClick;Lcom/discord/chat/bridge/contentnode/ActorHook;Lcom/discord/chat/bridge/contentnode/ThreadOnClick;Lcom/discord/chat/bridge/contentnode/PinsOnClick;Lcom/discord/chat/bridge/contentnode/WebhookNameOnClick;Lcom/discord/chat/bridge/contentnode/HandleDelete;Lcom/discord/chat/bridge/contentnode/RoleSubscriptionOnClick;Lcom/discord/chat/bridge/contentnode/HandleMessage;)V", "getActorHook", "()Lcom/discord/chat/bridge/contentnode/ActorHook;", "getCommandNameOnClick", "()Lcom/discord/chat/bridge/contentnode/CommandOnClick;", "getHandleDelete", "()Lcom/discord/chat/bridge/contentnode/HandleDelete;", "getHandleMessage", "()Lcom/discord/chat/bridge/contentnode/HandleMessage;", "getOtherUsernameOnClick", "()Lcom/discord/chat/bridge/contentnode/UserNameOnClick;", "getPinsOnClick", "()Lcom/discord/chat/bridge/contentnode/PinsOnClick;", "getRoleSubscriptionOnClick", "()Lcom/discord/chat/bridge/contentnode/RoleSubscriptionOnClick;", "getThreadOnClick", "()Lcom/discord/chat/bridge/contentnode/ThreadOnClick;", "getUsernameOnClick", "getWebhookNameOnClick", "()Lcom/discord/chat/bridge/contentnode/WebhookNameOnClick;", "component1", "component10", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "equals", "", "other", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -121,7 +121,7 @@ public final class LinkContext {
             z10 = true;
         }
         if (z10) {
-            output.e(serialDesc, 0, UserNameOnClick$$serializer.INSTANCE, self.usernameOnClick);
+            output.z(serialDesc, 0, UserNameOnClick$$serializer.INSTANCE, self.usernameOnClick);
         }
         if (!output.w(serialDesc, 1) && self.otherUsernameOnClick == null) {
             z11 = false;
@@ -129,7 +129,7 @@ public final class LinkContext {
             z11 = true;
         }
         if (z11) {
-            output.e(serialDesc, 1, UserNameOnClick$$serializer.INSTANCE, self.otherUsernameOnClick);
+            output.z(serialDesc, 1, UserNameOnClick$$serializer.INSTANCE, self.otherUsernameOnClick);
         }
         if (!output.w(serialDesc, 2) && self.commandNameOnClick == null) {
             z12 = false;
@@ -137,7 +137,7 @@ public final class LinkContext {
             z12 = true;
         }
         if (z12) {
-            output.e(serialDesc, 2, CommandOnClick$$serializer.INSTANCE, self.commandNameOnClick);
+            output.z(serialDesc, 2, CommandOnClick$$serializer.INSTANCE, self.commandNameOnClick);
         }
         if (!output.w(serialDesc, 3) && self.actorHook == null) {
             z13 = false;
@@ -145,7 +145,7 @@ public final class LinkContext {
             z13 = true;
         }
         if (z13) {
-            output.e(serialDesc, 3, ActorHook$$serializer.INSTANCE, self.actorHook);
+            output.z(serialDesc, 3, ActorHook$$serializer.INSTANCE, self.actorHook);
         }
         if (!output.w(serialDesc, 4) && self.threadOnClick == null) {
             z14 = false;
@@ -153,7 +153,7 @@ public final class LinkContext {
             z14 = true;
         }
         if (z14) {
-            output.e(serialDesc, 4, ThreadOnClick$$serializer.INSTANCE, self.threadOnClick);
+            output.z(serialDesc, 4, ThreadOnClick$$serializer.INSTANCE, self.threadOnClick);
         }
         if (!output.w(serialDesc, 5) && self.pinsOnClick == null) {
             z15 = false;
@@ -161,7 +161,7 @@ public final class LinkContext {
             z15 = true;
         }
         if (z15) {
-            output.e(serialDesc, 5, PinsOnClick$$serializer.INSTANCE, self.pinsOnClick);
+            output.z(serialDesc, 5, PinsOnClick$$serializer.INSTANCE, self.pinsOnClick);
         }
         if (!output.w(serialDesc, 6) && self.webhookNameOnClick == null) {
             z16 = false;
@@ -169,7 +169,7 @@ public final class LinkContext {
             z16 = true;
         }
         if (z16) {
-            output.e(serialDesc, 6, WebhookNameOnClick$$serializer.INSTANCE, self.webhookNameOnClick);
+            output.z(serialDesc, 6, WebhookNameOnClick$$serializer.INSTANCE, self.webhookNameOnClick);
         }
         if (!output.w(serialDesc, 7) && self.handleDelete == null) {
             z17 = false;
@@ -177,7 +177,7 @@ public final class LinkContext {
             z17 = true;
         }
         if (z17) {
-            output.e(serialDesc, 7, HandleDelete$$serializer.INSTANCE, self.handleDelete);
+            output.z(serialDesc, 7, HandleDelete$$serializer.INSTANCE, self.handleDelete);
         }
         if (!output.w(serialDesc, 8) && self.roleSubscriptionOnClick == null) {
             z18 = false;
@@ -185,13 +185,13 @@ public final class LinkContext {
             z18 = true;
         }
         if (z18) {
-            output.e(serialDesc, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, self.roleSubscriptionOnClick);
+            output.z(serialDesc, 8, RoleSubscriptionOnClick$$serializer.INSTANCE, self.roleSubscriptionOnClick);
         }
         if (output.w(serialDesc, 9) || self.handleMessage != null) {
             z19 = true;
         }
         if (z19) {
-            output.e(serialDesc, 9, HandleMessage$$serializer.INSTANCE, self.handleMessage);
+            output.z(serialDesc, 9, HandleMessage$$serializer.INSTANCE, self.handleMessage);
         }
     }
 

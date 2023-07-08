@@ -22,12 +22,12 @@ import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.ThemeManagerKt;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import gf.s;
-import gf.t;
+import ff.s;
+import ff.t;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import ki.v;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.i;
@@ -112,10 +112,10 @@ public final class CodeStyle {
         String obj2 = V02.toString();
         String str = "```" + obj + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + obj2 + "\n```";
         try {
-            s.a aVar = s.f15527l;
-            list = s.b(Parser.parse$default(getParser(), str, Unit.f20717a, null, 4, null));
+            s.a aVar = s.f14771l;
+            list = s.b(Parser.parse$default(getParser(), str, Unit.f20663a, null, 4, null));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             list = s.b(t.a(th2));
         }
         d10 = i.d(new TextNode(obj2));

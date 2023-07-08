@@ -4,7 +4,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.StrikethroughSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
-import ki.x;
+import ji.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.f;

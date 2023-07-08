@@ -5,7 +5,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.sticker_picker.StickerPickerRow;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
-import hf.p;
+import gf.p;
 import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.Metadata;

@@ -41,7 +41,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
         int ctaButtonColor = postPreviewEmbed.getCtaButtonColor();
         String coverImage = postPreviewEmbed.getCoverImage();
         String blurredCoverImage = postPreviewEmbed.getBlurredCoverImage();
-        postPreviewEmbedView.m317setPostPreviewEmbednL87Xa4(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m113getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.k
+        postPreviewEmbedView.m317setPostPreviewEmbedOGpb6Gk(title, subtitle, ctaText, ctaButtonColor, postPreviewEmbed.getFooter(), postPreviewEmbed.m113getMessageId3Eiw7ao(), coverImage, blurredCoverImage, postPreviewEmbed.getCoverImageOverlayText(), postPreviewEmbed.getBackgroundImage(), new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.k
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 PostPreviewEmbedViewHolder.bind$lambda$0(Function4.this, postPreviewEmbed, view);

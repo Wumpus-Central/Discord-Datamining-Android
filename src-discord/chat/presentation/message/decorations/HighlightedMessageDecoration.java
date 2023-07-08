@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.list.ChatListAdapter;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.logging.Log;
-import hf.p;
+import gf.p;
 import java.util.Iterator;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;

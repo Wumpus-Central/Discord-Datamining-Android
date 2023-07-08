@@ -18,7 +18,7 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$4 extends s implem
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Unit invoke(String str, String str2, String str3, String str4) {
         invoke2(str, str2, str3, str4);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

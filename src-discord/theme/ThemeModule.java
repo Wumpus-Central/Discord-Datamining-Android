@@ -98,7 +98,7 @@ public final class ThemeModule extends NativeThemeManagerSpec {
         L_0x0039:
             android.app.Activity r4 = r3.getCurrentActivity()
             if (r4 == 0) goto L_0x0047
-            o2.a r0 = new o2.a
+            n2.a r0 = new n2.a
             r0.<init>()
             r4.runOnUiThread(r0)
         L_0x0047:

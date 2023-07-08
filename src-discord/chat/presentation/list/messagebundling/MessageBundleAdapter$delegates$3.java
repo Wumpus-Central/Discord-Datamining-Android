@@ -19,7 +19,7 @@ final class MessageBundleAdapter$delegates$3 extends s implements Function3<View
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(View view, int i10, int i11) {

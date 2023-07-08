@@ -13,7 +13,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.Map;
 import java.util.zip.Inflater;
 import java.util.zip.InflaterOutputStream;
-import ki.d;
+import ji.d;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -106,18 +106,18 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ZLibByteStream(ByteString bytes, Inflater inflater) {
-                super(bytes.x() * 2);
+                super(bytes.y() * 2);
                 q.g(bytes, "bytes");
                 q.g(inflater, "inflater");
                 InflaterOutputStream inflaterOutputStream = new InflaterOutputStream(this, inflater, 4096);
-                bytes.C(inflaterOutputStream);
+                bytes.D(inflaterOutputStream);
                 inflaterOutputStream.flush();
             }
 
             public final String toDecodedString() {
                 byte[] buf = ((ByteArrayOutputStream) this).buf;
                 q.f(buf, "buf");
-                return new String(buf, 0, ((ByteArrayOutputStream) this).count, d.f20667b);
+                return new String(buf, 0, ((ByteArrayOutputStream) this).count, d.f19883b);
             }
         }
 
@@ -152,7 +152,7 @@ public final class CompressionManagerModule extends ReactContextBaseJavaModule {
             params.putString("type", "text");
             params.putString("data", decodedString);
             DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-            companion.setSocketBytesReceived(companion.getSocketBytesReceived() + byteString.x());
+            companion.setSocketBytesReceived(companion.getSocketBytesReceived() + byteString.y());
         }
     }
 }

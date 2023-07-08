@@ -18,7 +18,7 @@ import com.discord.chat.presentation.message.viewholder.ImageAttachmentViewHolde
 import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
 import com.discord.chat.presentation.message.viewholder.VideoAttachmentViewHolder;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
-import hf.m;
+import gf.m;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;

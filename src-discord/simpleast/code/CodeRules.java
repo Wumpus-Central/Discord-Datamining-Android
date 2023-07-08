@@ -7,8 +7,8 @@ import com.discord.simpleast.core.node.TextNode;
 import com.discord.simpleast.core.parser.ParseSpec;
 import com.discord.simpleast.core.parser.Parser;
 import com.discord.simpleast.core.parser.Rule;
-import gf.x;
-import hf.v;
+import ff.x;
+import gf.v;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -173,7 +173,7 @@ public final class CodeRules {
                 List list = null;
                 boolean z10 = false;
                 if (group3 != null) {
-                    z10 = ki.v.L(group3, '\n', false, 2, null);
+                    z10 = ji.v.L(group3, '\n', false, 2, null);
                 }
                 if (group != null) {
                     list = (List) languageMap.get(group);

@@ -4,8 +4,8 @@ import com.discord.logging.Log;
 import com.discord.notifications.fcm.utils.FCMTokenHelper;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
-import ga.d;
-import ga.e;
+import fa.d;
+import fa.e;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -55,12 +55,12 @@ public final class FCMTokenHelper {
         q.g(onToken, "onToken");
         try {
             FirebaseMessaging.l().o().d(new e() { // from class: l2.a
-                @Override // ga.e
+                @Override // fa.e
                 public final void onFailure(Exception exc) {
                     FCMTokenHelper.getToken$lambda$0(exc);
                 }
             }).b(new d() { // from class: l2.b
-                @Override // ga.d
+                @Override // fa.d
                 public final void a(Task task) {
                     FCMTokenHelper.getToken$lambda$1(Function1.this, task);
                 }

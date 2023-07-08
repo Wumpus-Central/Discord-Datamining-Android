@@ -15,14 +15,14 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import qi.n;
-import ri.a;
-import ti.a2;
-import ti.f0;
-import ti.h;
-import ti.m0;
+import pi.n;
+import qi.a;
+import si.a2;
+import si.f0;
+import si.h;
+import si.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildInviteDisabledEmbedImpl> {
     public static final GuildInviteDisabledEmbedImpl$$serializer INSTANCE;
@@ -75,11 +75,11 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
     private GuildInviteDisabledEmbedImpl$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f27047a;
-        a2 a2Var = a2.f26972a;
-        h hVar = h.f27014a;
+        m0 m0Var = m0.f26305a;
+        a2 a2Var = a2.f26230a;
+        h hVar = h.f26272a;
         return new KSerializer[]{m0Var, m0Var, m0Var, a2Var, InviteType.Serializer.INSTANCE, a2Var, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(hVar), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), CodedLinkExtendedType.Serializer.INSTANCE, a2Var, a.u(a2Var), a.u(a2Var)};
     }
 
@@ -138,15 +138,15 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
             str4 = c10.t(descriptor2, 6);
             str3 = c10.t(descriptor2, 7);
             str2 = c10.t(descriptor2, 8);
-            m0 m0Var = m0.f27047a;
+            m0 m0Var = m0.f26305a;
             obj11 = c10.v(descriptor2, 9, m0Var, null);
             obj10 = c10.v(descriptor2, 10, m0Var, null);
             obj9 = c10.v(descriptor2, 11, m0Var, null);
-            a2 a2Var = a2.f26972a;
+            a2 a2Var = a2.f26230a;
             obj14 = c10.v(descriptor2, 12, a2Var, null);
             obj15 = c10.v(descriptor2, 13, a2Var, null);
             obj26 = c10.v(descriptor2, 14, m0Var, null);
-            h hVar = h.f27014a;
+            h hVar = h.f26272a;
             obj18 = c10.v(descriptor2, 15, hVar, null);
             obj16 = c10.v(descriptor2, 16, a2Var, null);
             obj13 = c10.v(descriptor2, 17, a2Var, null);
@@ -230,7 +230,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         z10 = false;
-                        Unit unit = Unit.f20717a;
+                        Unit unit = Unit.f20663a;
                         obj32 = obj32;
                     case 0:
                         obj29 = obj29;
@@ -248,7 +248,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         i18 = c10.k(descriptor2, 0);
                         i19 |= 1;
-                        Unit unit2 = Unit.f20717a;
+                        Unit unit2 = Unit.f20663a;
                         obj32 = obj32;
                     case 1:
                         obj29 = obj29;
@@ -266,7 +266,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         i17 = c10.k(descriptor2, 1);
                         i19 |= 2;
-                        Unit unit3 = Unit.f20717a;
+                        Unit unit3 = Unit.f20663a;
                         obj32 = obj32;
                     case 2:
                         obj29 = obj29;
@@ -284,7 +284,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         i16 = c10.k(descriptor2, 2);
                         i19 |= 4;
-                        Unit unit4 = Unit.f20717a;
+                        Unit unit4 = Unit.f20663a;
                         obj32 = obj32;
                     case 3:
                         obj29 = obj29;
@@ -302,7 +302,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         str7 = c10.t(descriptor2, 3);
                         i19 |= 8;
-                        Unit unit5 = Unit.f20717a;
+                        Unit unit5 = Unit.f20663a;
                         obj32 = obj32;
                     case 4:
                         obj29 = obj29;
@@ -320,7 +320,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj39 = obj39;
                         obj38 = c10.m(descriptor2, 4, InviteType.Serializer.INSTANCE, obj38);
                         i19 |= 16;
-                        Unit unit6 = Unit.f20717a;
+                        Unit unit6 = Unit.f20663a;
                         obj32 = obj32;
                     case 5:
                         obj29 = obj29;
@@ -338,7 +338,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         str8 = c10.t(descriptor2, 5);
                         i19 |= 32;
-                        Unit unit7 = Unit.f20717a;
+                        Unit unit7 = Unit.f20663a;
                         obj32 = obj32;
                     case 6:
                         obj29 = obj29;
@@ -356,7 +356,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         str9 = c10.t(descriptor2, 6);
                         i19 |= 64;
-                        Unit unit8 = Unit.f20717a;
+                        Unit unit8 = Unit.f20663a;
                         obj32 = obj32;
                     case 7:
                         obj29 = obj29;
@@ -374,7 +374,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         str10 = c10.t(descriptor2, 7);
                         i19 |= 128;
-                        Unit unit9 = Unit.f20717a;
+                        Unit unit9 = Unit.f20663a;
                         obj32 = obj32;
                     case 8:
                         obj29 = obj29;
@@ -392,7 +392,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj48 = obj48;
                         str11 = c10.t(descriptor2, 8);
                         i19 |= 256;
-                        Unit unit10 = Unit.f20717a;
+                        Unit unit10 = Unit.f20663a;
                         obj32 = obj32;
                     case 9:
                         obj29 = obj29;
@@ -407,9 +407,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj40 = obj40;
-                        obj39 = c10.v(descriptor2, 9, m0.f27047a, obj39);
+                        obj39 = c10.v(descriptor2, 9, m0.f26305a, obj39);
                         i19 |= 512;
-                        Unit unit11 = Unit.f20717a;
+                        Unit unit11 = Unit.f20663a;
                         obj32 = obj32;
                     case 10:
                         obj29 = obj29;
@@ -423,9 +423,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj41 = obj41;
-                        obj40 = c10.v(descriptor2, 10, m0.f27047a, obj40);
+                        obj40 = c10.v(descriptor2, 10, m0.f26305a, obj40);
                         i19 |= 1024;
-                        Unit unit12 = Unit.f20717a;
+                        Unit unit12 = Unit.f20663a;
                         obj39 = obj39;
                         obj32 = obj32;
                     case 11:
@@ -439,9 +439,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj42 = obj42;
-                        obj41 = c10.v(descriptor2, 11, m0.f27047a, obj41);
+                        obj41 = c10.v(descriptor2, 11, m0.f26305a, obj41);
                         i19 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f20717a;
+                        Unit unit13 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj32 = obj32;
@@ -455,9 +455,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj43 = obj43;
-                        obj42 = c10.v(descriptor2, 12, a2.f26972a, obj42);
+                        obj42 = c10.v(descriptor2, 12, a2.f26230a, obj42);
                         i19 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f20717a;
+                        Unit unit14 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -471,9 +471,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj44 = obj44;
-                        obj43 = c10.v(descriptor2, 13, a2.f26972a, obj43);
+                        obj43 = c10.v(descriptor2, 13, a2.f26230a, obj43);
                         i19 |= 8192;
-                        Unit unit15 = Unit.f20717a;
+                        Unit unit15 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -487,9 +487,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj45 = obj45;
-                        obj44 = c10.v(descriptor2, 14, m0.f27047a, obj44);
+                        obj44 = c10.v(descriptor2, 14, m0.f26305a, obj44);
                         i19 |= 16384;
-                        Unit unit16 = Unit.f20717a;
+                        Unit unit16 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -503,9 +503,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj47 = obj47;
                         obj48 = obj48;
                         obj46 = obj46;
-                        obj45 = c10.v(descriptor2, 15, h.f27014a, obj45);
+                        obj45 = c10.v(descriptor2, 15, h.f26272a, obj45);
                         i19 |= 32768;
-                        Unit unit17 = Unit.f20717a;
+                        Unit unit17 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -519,9 +519,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj37 = obj37;
                         obj48 = obj48;
                         obj47 = obj47;
-                        obj46 = c10.v(descriptor2, 16, a2.f26972a, obj46);
+                        obj46 = c10.v(descriptor2, 16, a2.f26230a, obj46);
                         i19 |= 65536;
-                        Unit unit18 = Unit.f20717a;
+                        Unit unit18 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -535,9 +535,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj37 = obj37;
                         obj48 = obj48;
                         obj30 = obj30;
-                        obj47 = c10.v(descriptor2, 17, a2.f26972a, obj47);
+                        obj47 = c10.v(descriptor2, 17, a2.f26230a, obj47);
                         i19 |= 131072;
-                        Unit unit19 = Unit.f20717a;
+                        Unit unit19 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -549,9 +549,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj32 = obj32;
                     case 18:
                         obj29 = obj29;
-                        obj48 = c10.v(descriptor2, 18, h.f27014a, obj48);
+                        obj48 = c10.v(descriptor2, 18, h.f26272a, obj48);
                         i19 |= 262144;
-                        Unit unit20 = Unit.f20717a;
+                        Unit unit20 = Unit.f20663a;
                         obj30 = obj30;
                         obj39 = obj39;
                         obj40 = obj40;
@@ -569,9 +569,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                     case 19:
                         obj29 = obj29;
                         obj37 = obj37;
-                        obj49 = c10.v(descriptor2, 19, a2.f26972a, obj49);
+                        obj49 = c10.v(descriptor2, 19, a2.f26230a, obj49);
                         i19 |= 524288;
-                        Unit unit21 = Unit.f20717a;
+                        Unit unit21 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -586,9 +586,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                     case 20:
                         obj29 = obj29;
                         obj37 = obj37;
-                        obj6 = c10.v(descriptor2, 20, a2.f26972a, obj6);
+                        obj6 = c10.v(descriptor2, 20, a2.f26230a, obj6);
                         i19 |= 1048576;
-                        Unit unit22 = Unit.f20717a;
+                        Unit unit22 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -603,9 +603,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                     case 21:
                         obj29 = obj29;
                         obj37 = obj37;
-                        obj5 = c10.v(descriptor2, 21, m0.f27047a, obj5);
+                        obj5 = c10.v(descriptor2, 21, m0.f26305a, obj5);
                         i19 |= 2097152;
-                        Unit unit23 = Unit.f20717a;
+                        Unit unit23 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -620,9 +620,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                     case 22:
                         obj29 = obj29;
                         obj37 = obj37;
-                        obj4 = c10.v(descriptor2, 22, m0.f27047a, obj4);
+                        obj4 = c10.v(descriptor2, 22, m0.f26305a, obj4);
                         i19 |= 4194304;
-                        Unit unit24 = Unit.f20717a;
+                        Unit unit24 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -637,9 +637,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                     case 23:
                         obj29 = obj29;
                         obj37 = obj37;
-                        obj32 = c10.v(descriptor2, 23, h.f27014a, obj32);
+                        obj32 = c10.v(descriptor2, 23, h.f26272a, obj32);
                         i19 |= 8388608;
-                        Unit unit25 = Unit.f20717a;
+                        Unit unit25 = Unit.f20663a;
                         obj30 = obj30;
                         obj39 = obj39;
                         obj40 = obj40;
@@ -653,9 +653,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 24:
                         obj29 = obj29;
-                        obj37 = c10.v(descriptor2, 24, m0.f27047a, obj37);
+                        obj37 = c10.v(descriptor2, 24, m0.f26305a, obj37);
                         i19 |= 16777216;
-                        Unit unit26 = Unit.f20717a;
+                        Unit unit26 = Unit.f20663a;
                         obj30 = obj30;
                         obj39 = obj39;
                         obj40 = obj40;
@@ -670,10 +670,10 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 25:
                         obj37 = obj37;
-                        obj30 = c10.v(descriptor2, 25, a2.f26972a, obj30);
+                        obj30 = c10.v(descriptor2, 25, a2.f26230a, obj30);
                         i15 = 33554432;
                         i19 |= i15;
-                        Unit unit27 = Unit.f20717a;
+                        Unit unit27 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -687,9 +687,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 26:
                         obj37 = obj37;
-                        obj19 = c10.v(descriptor2, 26, a2.f26972a, obj19);
+                        obj19 = c10.v(descriptor2, 26, a2.f26230a, obj19);
                         i19 |= 67108864;
-                        Unit unit28 = Unit.f20717a;
+                        Unit unit28 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -705,9 +705,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 27:
                         obj37 = obj37;
-                        obj36 = c10.v(descriptor2, 27, m0.f27047a, obj36);
+                        obj36 = c10.v(descriptor2, 27, m0.f26305a, obj36);
                         i19 |= 134217728;
-                        Unit unit29 = Unit.f20717a;
+                        Unit unit29 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -723,9 +723,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 28:
                         obj37 = obj37;
-                        obj20 = c10.v(descriptor2, 28, m0.f27047a, obj20);
+                        obj20 = c10.v(descriptor2, 28, m0.f26305a, obj20);
                         i19 |= 268435456;
-                        Unit unit30 = Unit.f20717a;
+                        Unit unit30 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -741,10 +741,10 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 29:
                         obj37 = obj37;
-                        obj31 = c10.v(descriptor2, 29, m0.f27047a, obj31);
+                        obj31 = c10.v(descriptor2, 29, m0.f26305a, obj31);
                         i15 = 536870912;
                         i19 |= i15;
-                        Unit unit272 = Unit.f20717a;
+                        Unit unit272 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -758,9 +758,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 30:
                         obj37 = obj37;
-                        obj21 = c10.v(descriptor2, 30, a2.f26972a, obj21);
+                        obj21 = c10.v(descriptor2, 30, a2.f26230a, obj21);
                         i19 |= 1073741824;
-                        Unit unit31 = Unit.f20717a;
+                        Unit unit31 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -776,9 +776,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 31:
                         obj37 = obj37;
-                        obj35 = c10.v(descriptor2, 31, a2.f26972a, obj35);
+                        obj35 = c10.v(descriptor2, 31, a2.f26230a, obj35);
                         i19 |= Integer.MIN_VALUE;
-                        Unit unit32 = Unit.f20717a;
+                        Unit unit32 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -794,9 +794,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 32:
                         obj37 = obj37;
-                        obj34 = c10.v(descriptor2, 32, m0.f27047a, obj34);
+                        obj34 = c10.v(descriptor2, 32, m0.f26305a, obj34);
                         i10 |= 1;
-                        Unit unit33 = Unit.f20717a;
+                        Unit unit33 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -814,7 +814,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj37 = obj37;
                         obj29 = c10.m(descriptor2, 33, CodedLinkExtendedType.Serializer.INSTANCE, obj29);
                         i10 |= 2;
-                        Unit unit2722 = Unit.f20717a;
+                        Unit unit2722 = Unit.f20663a;
                         obj39 = obj39;
                         obj40 = obj40;
                         obj41 = obj41;
@@ -830,7 +830,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         obj37 = obj37;
                         str = c10.t(descriptor2, 34);
                         i10 |= 4;
-                        Unit unit34 = Unit.f20717a;
+                        Unit unit34 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -846,9 +846,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 35:
                         obj37 = obj37;
-                        obj50 = c10.v(descriptor2, 35, a2.f26972a, obj50);
+                        obj50 = c10.v(descriptor2, 35, a2.f26230a, obj50);
                         i10 |= 8;
-                        Unit unit35 = Unit.f20717a;
+                        Unit unit35 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -864,9 +864,9 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
                         break;
                     case 36:
                         obj37 = obj37;
-                        obj33 = c10.v(descriptor2, 36, a2.f26972a, obj33);
+                        obj33 = c10.v(descriptor2, 36, a2.f26230a, obj33);
                         i10 |= 16;
-                        Unit unit36 = Unit.f20717a;
+                        Unit unit36 = Unit.f20663a;
                         obj29 = obj29;
                         obj30 = obj30;
                         obj39 = obj39;
@@ -920,7 +920,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
         return new GuildInviteDisabledEmbedImpl(i13, i10, i14, i12, i11, str6, (InviteType) obj27, str5, str4, str3, str2, (Integer) obj11, (Integer) obj10, (Integer) obj9, (String) obj14, (String) obj15, (Integer) obj26, (Boolean) obj18, (String) obj16, (String) obj13, (Boolean) obj12, (String) obj7, (String) obj6, (Integer) obj5, (Integer) obj4, (Boolean) obj3, (Integer) obj2, (String) obj25, (String) obj19, (Integer) obj24, (Integer) obj20, (Integer) obj23, (String) obj21, (String) obj8, (Integer) obj17, (CodedLinkExtendedType) obj, str, (String) obj22, (String) obj28, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -934,7 +934,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

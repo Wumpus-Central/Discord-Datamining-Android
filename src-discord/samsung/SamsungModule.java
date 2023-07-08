@@ -13,10 +13,10 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import gf.s;
-import gf.t;
-import ki.v;
-import ki.x;
+import ff.s;
+import ff.t;
+import ji.v;
+import ji.x;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
@@ -135,9 +135,9 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         String str;
         String query;
         String str2 = null;
-        String v10 = Response.v(response, "Location", null, 2, null);
-        if (v10 != null) {
-            uri = Uri.parse(v10);
+        String w10 = Response.w(response, "Location", null, 2, null);
+        if (w10 != null) {
+            uri = Uri.parse(w10);
         } else {
             uri = null;
         }
@@ -145,7 +145,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         if (!(uri == null || (query = uri.getQuery()) == null)) {
             z10 = v.M(query, "error", false, 2, null);
         }
-        if (!z10 && (response.f0() || response.E())) {
+        if (!z10 && (response.e0() || response.E())) {
             return uri;
         }
         if (uri == null || (str = uri.getQueryParameter("error")) == null) {
@@ -206,7 +206,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
             java.lang.String r3 = android.os.Build.MANUFACTURER
             java.lang.String r0 = "samsung"
             r1 = 1
-            boolean r3 = ki.l.t(r3, r0, r1)
+            boolean r3 = ji.l.t(r3, r0, r1)
             if (r3 == 0) goto L_0x0024
             goto L_0x0025
         L_0x0024:
@@ -235,14 +235,14 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.g(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f15527l;
+            s.a aVar = s.f14771l;
             ReactApplicationContext reactApplicationContext = getReactApplicationContext();
             SamsungConnectActivity.Companion companion = SamsungConnectActivity.Companion;
             Activity currentActivity = getCurrentActivity();
             q.d(currentActivity);
             obj = s.b(Boolean.valueOf(reactApplicationContext.startActivityForResult(SamsungConnectActivity.Companion.getIntent$default(companion, currentActivity, 0, 2, null), 101, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);
@@ -262,10 +262,10 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         q.g(promise, "promise");
         this.connectionPromise = promise;
         try {
-            s.a aVar = s.f15527l;
+            s.a aVar = s.f14771l;
             obj = s.b(Boolean.valueOf(getReactApplicationContext().startActivityForResult(disclaimerIntent, 100, Bundle.EMPTY)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             obj = s.b(t.a(th2));
         }
         Throwable e10 = s.e(obj);

@@ -1,7 +1,7 @@
 package com.discord.chat.bridge;
 
-import gf.n;
-import gf.p;
+import ff.n;
+import ff.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,9 +10,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import qi.f;
-import si.e;
-import si.g;
+import pi.f;
+import ri.e;
+import ri.g;
 
 @f(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\b\u0087\u0001\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000b\fB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/MessageState;", "", "key", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getKey", "()Ljava/lang/String;", "Sent", "Sending", "SendFailed", "Unknown", "Companion", "Serializer", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -23,9 +23,9 @@ public enum MessageState {
     SendFailed("SEND_FAILED"),
     Unknown("UNKNOWN");
     
-    private static final Lazy<KSerializer<Object>> $cachedSerializer$delegate;
-    public static final Companion Companion = new Companion(null);
     private final String key;
+    public static final Companion Companion = new Companion(null);
+    private static final Lazy<KSerializer<Object>> $cachedSerializer$delegate = n.a(p.PUBLICATION, MessageState$Companion$$cachedSerializer$delegate$1.INSTANCE);
 
     @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006J\u000f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\bHÆ\u0001¨\u0006\t"}, d2 = {"Lcom/discord/chat/bridge/MessageState$Companion;", "", "()V", "fromValue", "Lcom/discord/chat/bridge/MessageState;", "key", "", "serializer", "Lkotlinx/serialization/KSerializer;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes3.dex */
@@ -77,9 +77,9 @@ public enum MessageState {
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
         public SerialDescriptor getDescriptor() {
-            return g.a("MessageState", e.i.f26483a);
+            return g.a("MessageState", e.i.f25631a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -93,12 +93,6 @@ public enum MessageState {
             q.g(value, "value");
             throw new UnsupportedOperationException();
         }
-    }
-
-    static {
-        Lazy<KSerializer<Object>> a10;
-        a10 = n.a(p.PUBLICATION, MessageState$Companion$$cachedSerializer$delegate$1.INSTANCE);
-        $cachedSerializer$delegate = a10;
     }
 
     MessageState(String str) {

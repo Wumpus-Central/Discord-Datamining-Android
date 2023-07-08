@@ -16,15 +16,15 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import org.webrtc.MediaStreamTrack;
-import qi.n;
-import ri.a;
-import ti.a2;
-import ti.f;
-import ti.f0;
-import ti.h;
-import ti.m0;
+import pi.n;
+import qi.a;
+import si.a2;
+import si.f;
+import si.f0;
+import si.h;
+import si.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/embed/Embed.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/embed/Embed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/embed/Embed.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/embed/Embed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class Embed$$serializer implements f0<Embed> {
     public static final Embed$$serializer INSTANCE;
@@ -66,13 +66,13 @@ public final class Embed$$serializer implements f0<Embed> {
     private Embed$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26972a;
+        a2 a2Var = a2.f26230a;
         StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
         EmbedMedia$$serializer embedMedia$$serializer = EmbedMedia$$serializer.INSTANCE;
-        m0 m0Var = m0.f27047a;
-        return new KSerializer[]{EmbedType.Companion.serializer(), a.u(EmbedAuthor$$serializer.INSTANCE), a.u(EmbedProvider$$serializer.INSTANCE), a.u(a2Var), a.u(structurableTextSerializer), a.u(new f(EmbedField$$serializer.INSTANCE)), a.u(a2Var), a.u(a2Var), a.u(structurableTextSerializer), a.u(embedMedia$$serializer), a.u(new f(embedMedia$$serializer)), a.u(embedMedia$$serializer), a.u(EmbedThumbnail$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(h.f27014a), a.u(EmbedFooter$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(EmbedFailureState.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), m0Var, a.u(a2Var)};
+        m0 m0Var = m0.f26305a;
+        return new KSerializer[]{EmbedType.Companion.serializer(), a.u(EmbedAuthor$$serializer.INSTANCE), a.u(EmbedProvider$$serializer.INSTANCE), a.u(a2Var), a.u(structurableTextSerializer), a.u(new f(EmbedField$$serializer.INSTANCE)), a.u(a2Var), a.u(a2Var), a.u(structurableTextSerializer), a.u(embedMedia$$serializer), a.u(new f(embedMedia$$serializer)), a.u(embedMedia$$serializer), a.u(EmbedThumbnail$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(h.f26272a), a.u(EmbedFooter$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(EmbedFailureState.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), m0Var, a.u(a2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -112,7 +112,7 @@ public final class Embed$$serializer implements f0<Embed> {
             obj25 = c10.m(descriptor2, 0, EmbedType.Companion.serializer(), null);
             obj = c10.v(descriptor2, 1, EmbedAuthor$$serializer.INSTANCE, null);
             obj18 = c10.v(descriptor2, 2, EmbedProvider$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f26972a;
+            a2 a2Var = a2.f26230a;
             obj23 = c10.v(descriptor2, 3, a2Var, null);
             StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
             obj20 = c10.v(descriptor2, 4, structurableTextSerializer, null);
@@ -128,12 +128,12 @@ public final class Embed$$serializer implements f0<Embed> {
             obj4 = c10.v(descriptor2, 13, a2Var, null);
             obj6 = c10.v(descriptor2, 14, a2Var, null);
             obj7 = c10.v(descriptor2, 15, a2Var, null);
-            obj8 = c10.v(descriptor2, 16, h.f27014a, null);
+            obj8 = c10.v(descriptor2, 16, h.f26272a, null);
             obj10 = c10.v(descriptor2, 17, EmbedFooter$$serializer.INSTANCE, null);
             obj9 = c10.v(descriptor2, 18, a2Var, null);
             obj11 = c10.v(descriptor2, 19, a2Var, null);
             obj22 = c10.v(descriptor2, 20, EmbedFailureState.Serializer.INSTANCE, null);
-            m0 m0Var = m0.f27047a;
+            m0 m0Var = m0.f26305a;
             obj2 = c10.v(descriptor2, 21, m0Var, null);
             obj12 = c10.v(descriptor2, 22, m0Var, null);
             obj13 = c10.v(descriptor2, 23, m0Var, null);
@@ -203,7 +203,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj37 = obj37;
                         break;
                     case 3:
-                        obj37 = c10.v(descriptor2, 3, a2.f26972a, obj37);
+                        obj37 = c10.v(descriptor2, 3, a2.f26230a, obj37);
                         i14 |= 8;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -227,7 +227,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj40 = obj40;
                         break;
                     case 6:
-                        obj40 = c10.v(descriptor2, 6, a2.f26972a, obj40);
+                        obj40 = c10.v(descriptor2, 6, a2.f26230a, obj40);
                         i14 |= 64;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -235,7 +235,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj41 = obj41;
                         break;
                     case 7:
-                        obj41 = c10.v(descriptor2, 7, a2.f26972a, obj41);
+                        obj41 = c10.v(descriptor2, 7, a2.f26230a, obj41);
                         i14 |= 128;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -280,27 +280,27 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj28 = obj28;
                         break;
                     case 13:
-                        obj31 = c10.v(descriptor2, 13, a2.f26972a, obj31);
+                        obj31 = c10.v(descriptor2, 13, a2.f26230a, obj31);
                         i14 |= 8192;
                         obj27 = obj27;
                         obj26 = obj26;
                         break;
                     case 14:
                         obj31 = obj31;
-                        obj32 = c10.v(descriptor2, 14, a2.f26972a, obj32);
+                        obj32 = c10.v(descriptor2, 14, a2.f26230a, obj32);
                         i14 |= 16384;
                         obj26 = obj26;
                         break;
                     case 15:
                         obj31 = obj31;
-                        obj33 = c10.v(descriptor2, 15, a2.f26972a, obj33);
+                        obj33 = c10.v(descriptor2, 15, a2.f26230a, obj33);
                         i12 = 32768;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 16:
                         obj31 = obj31;
-                        obj46 = c10.v(descriptor2, 16, h.f27014a, obj46);
+                        obj46 = c10.v(descriptor2, 16, h.f26272a, obj46);
                         i12 = 65536;
                         i14 |= i12;
                         obj26 = obj26;
@@ -314,14 +314,14 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 18:
                         obj31 = obj31;
-                        obj29 = c10.v(descriptor2, 18, a2.f26972a, obj29);
+                        obj29 = c10.v(descriptor2, 18, a2.f26230a, obj29);
                         i12 = 262144;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 19:
                         obj31 = obj31;
-                        obj28 = c10.v(descriptor2, 19, a2.f26972a, obj28);
+                        obj28 = c10.v(descriptor2, 19, a2.f26230a, obj28);
                         i12 = 524288;
                         i14 |= i12;
                         obj26 = obj26;
@@ -335,21 +335,21 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 21:
                         obj31 = obj31;
-                        obj27 = c10.v(descriptor2, 21, m0.f27047a, obj27);
+                        obj27 = c10.v(descriptor2, 21, m0.f26305a, obj27);
                         i12 = 2097152;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 22:
                         obj31 = obj31;
-                        obj12 = c10.v(descriptor2, 22, m0.f27047a, obj12);
+                        obj12 = c10.v(descriptor2, 22, m0.f26305a, obj12);
                         i12 = 4194304;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 23:
                         obj31 = obj31;
-                        obj13 = c10.v(descriptor2, 23, m0.f27047a, obj13);
+                        obj13 = c10.v(descriptor2, 23, m0.f26305a, obj13);
                         i12 = 8388608;
                         i14 |= i12;
                         obj26 = obj26;
@@ -361,7 +361,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 25:
                         obj31 = obj31;
-                        obj21 = c10.v(descriptor2, 25, a2.f26972a, obj21);
+                        obj21 = c10.v(descriptor2, 25, a2.f26230a, obj21);
                         i12 = 33554432;
                         i14 |= i12;
                         obj26 = obj26;
@@ -398,7 +398,7 @@ public final class Embed$$serializer implements f0<Embed> {
         return new Embed(i10, (EmbedType) obj25, (EmbedAuthor) obj, (EmbedProvider) obj18, (String) obj23, (StructurableText) obj20, (List) obj24, (String) obj15, (String) obj14, (StructurableText) obj19, (EmbedMedia) obj17, (List) obj3, (EmbedMedia) obj16, (EmbedThumbnail) obj5, (String) obj4, (String) obj6, (String) obj7, (Boolean) obj8, (EmbedFooter) obj10, (String) obj9, (String) obj11, (EmbedFailureState) obj22, (Integer) obj2, (Integer) obj12, (Integer) obj13, i11, (String) obj21, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -412,7 +412,7 @@ public final class Embed$$serializer implements f0<Embed> {
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

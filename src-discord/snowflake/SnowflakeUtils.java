@@ -1,6 +1,6 @@
 package com.discord.snowflake;
 
-import ki.t;
+import ji.t;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 

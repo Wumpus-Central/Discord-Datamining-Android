@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import f5.a;
+import e5.a;
 
 /* loaded from: classes3.dex */
 public abstract class NativeKeyboardManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
@@ -13,19 +13,19 @@ public abstract class NativeKeyboardManagerSpec extends ReactContextBaseJavaModu
         super(reactApplicationContext);
     }
 
-    @a
     @ReactMethod
+    @a
     public abstract void clearCurrentFocusAndDismissKeyboard();
 
-    @a
     @ReactMethod
+    @a
     public abstract void dismissGlobalKeyboard();
 
-    @a
     @ReactMethod
+    @a
     public abstract void onKeyboardChanged(boolean z10);
 
-    @a
     @ReactMethod
+    @a
     public abstract void showGlobalKeyboard();
 }

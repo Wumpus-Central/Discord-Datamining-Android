@@ -12,14 +12,14 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import qi.n;
-import ri.a;
-import ti.f;
-import ti.f0;
-import ti.h;
-import ti.w0;
+import pi.n;
+import qi.a;
+import si.f;
+import si.f0;
+import si.h;
+import si.w0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/contentnode/BulletListContentNode.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/contentnode/BulletListContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/contentnode/BulletListContentNode.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/contentnode/BulletListContentNode;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class BulletListContentNode$$serializer implements f0<BulletListContentNode> {
     public static final BulletListContentNode$$serializer INSTANCE;
@@ -38,9 +38,9 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
     private BulletListContentNode$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(w0.f27088a), h.f27014a, new f(new f(ContentNodeSerializer.INSTANCE))};
+        return new KSerializer[]{a.u(w0.f26346a), h.f26272a, new f(new f(ContentNodeSerializer.INSTANCE))};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -53,7 +53,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
-            obj2 = c10.v(descriptor2, 0, w0.f27088a, null);
+            obj2 = c10.v(descriptor2, 0, w0.f26346a, null);
             z10 = c10.s(descriptor2, 1);
             obj = c10.m(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), null);
             i10 = 7;
@@ -68,7 +68,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
                 if (x10 == -1) {
                     z11 = false;
                 } else if (x10 == 0) {
-                    obj3 = c10.v(descriptor2, 0, w0.f27088a, obj3);
+                    obj3 = c10.v(descriptor2, 0, w0.f26346a, obj3);
                     i11 |= 1;
                 } else if (x10 == 1) {
                     z12 = c10.s(descriptor2, 1);
@@ -89,7 +89,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         return new BulletListContentNode(i10, (Long) obj2, z10, (List) obj, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -103,7 +103,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

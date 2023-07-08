@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.gift;
 
-import ki.u;
+import ji.u;
 import kotlin.Metadata;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;

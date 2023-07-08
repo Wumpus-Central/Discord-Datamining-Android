@@ -89,7 +89,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
             r2 = 0
             r3 = 1
             if (r0 == 0) goto L_0x0011
-            boolean r4 = ki.l.w(r16)
+            boolean r4 = ji.l.w(r16)
             if (r4 == 0) goto L_0x000f
             goto L_0x0011
         L_0x000f:
@@ -100,7 +100,7 @@ public final class ShareManagerModule extends ReactContextBaseJavaModule {
         L_0x0012:
             if (r4 == 0) goto L_0x0025
             if (r1 == 0) goto L_0x001f
-            boolean r4 = ki.l.w(r17)
+            boolean r4 = ji.l.w(r17)
             if (r4 == 0) goto L_0x001d
             goto L_0x001f
         L_0x001d:

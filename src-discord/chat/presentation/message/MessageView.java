@@ -657,7 +657,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         } else if (i11 == 3 || i11 == 4) {
             i10 = 0;
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
         return Integer.valueOf(i10);
     }

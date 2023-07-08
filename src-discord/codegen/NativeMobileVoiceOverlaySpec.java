@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import f5.a;
+import e5.a;
 
 /* loaded from: classes3.dex */
 public abstract class NativeMobileVoiceOverlaySpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
@@ -15,19 +15,19 @@ public abstract class NativeMobileVoiceOverlaySpec extends ReactContextBaseJavaM
         super(reactApplicationContext);
     }
 
-    @a
     @ReactMethod
+    @a
     public abstract void enableOverlay(Promise promise);
 
-    @a
     @ReactMethod
+    @a
     public abstract void hideOverlay();
 
-    @a
     @ReactMethod
+    @a
     public abstract void setData(ReadableMap readableMap);
 
-    @a
     @ReactMethod
+    @a
     public abstract void showOverlay(ReadableMap readableMap);
 }

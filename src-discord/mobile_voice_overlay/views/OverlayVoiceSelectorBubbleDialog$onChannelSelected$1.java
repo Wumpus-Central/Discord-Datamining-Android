@@ -18,7 +18,7 @@ final class OverlayVoiceSelectorBubbleDialog$onChannelSelected$1 extends s imple
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
         m486invokeR7gqayM(channelId.m573unboximpl());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke-R7gqayM  reason: not valid java name */

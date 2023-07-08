@@ -13,15 +13,15 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import qi.n;
-import ri.a;
-import ti.a2;
-import ti.f;
-import ti.f0;
-import ti.h;
-import ti.m0;
+import pi.n;
+import qi.a;
+import si.a2;
+import si.f;
+import si.f0;
+import si.h;
+import si.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/botuikit/UserSelectComponent.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/botuikit/UserSelectComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/botuikit/UserSelectComponent.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/botuikit/UserSelectComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class UserSelectComponent$$serializer implements f0<UserSelectComponent> {
     public static final UserSelectComponent$$serializer INSTANCE;
@@ -48,11 +48,11 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
     private UserSelectComponent$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f27047a;
-        a2 a2Var = a2.f26972a;
-        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f27014a, ActionComponentState.Serializer.INSTANCE};
+        m0 m0Var = m0.f26305a;
+        a2 a2Var = a2.f26230a;
+        return new KSerializer[]{a.u(new f(SearchableSelectItem$$serializer.INSTANCE)), m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f26272a, ActionComponentState.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -80,10 +80,10 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
         if (c11.y()) {
             obj5 = c11.v(descriptor2, 0, new f(SearchableSelectItem$$serializer.INSTANCE), null);
             i12 = c11.k(descriptor2, 1);
-            obj = c11.m(descriptor2, 2, new f(m0.f27047a), null);
+            obj = c11.m(descriptor2, 2, new f(m0.f26305a), null);
             str2 = c11.t(descriptor2, 3);
             str = c11.t(descriptor2, 4);
-            a2 a2Var = a2.f26972a;
+            a2 a2Var = a2.f26230a;
             obj2 = c11.v(descriptor2, 5, a2Var, null);
             obj3 = c11.v(descriptor2, 6, a2Var, null);
             i11 = c11.k(descriptor2, 7);
@@ -123,7 +123,7 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
                         i14 = 10;
                         i15 = 9;
                     case 2:
-                        obj = c11.m(descriptor2, 2, new f(m0.f27047a), obj);
+                        obj = c11.m(descriptor2, 2, new f(m0.f26305a), obj);
                         i17 |= 4;
                         i14 = 10;
                         i15 = 9;
@@ -138,11 +138,11 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
                         i14 = 10;
                     case 5:
                         c10 = 5;
-                        obj2 = c11.v(descriptor2, 5, a2.f26972a, obj2);
+                        obj2 = c11.v(descriptor2, 5, a2.f26230a, obj2);
                         i17 |= 32;
                         i14 = 10;
                     case 6:
-                        obj6 = c11.v(descriptor2, 6, a2.f26972a, obj6);
+                        obj6 = c11.v(descriptor2, 6, a2.f26230a, obj6);
                         i17 |= 64;
                     case 7:
                         i20 = c11.k(descriptor2, i16);
@@ -175,7 +175,7 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
         return new UserSelectComponent(i13, (List) obj5, i12, (List) obj, str2, str, (String) obj2, (String) obj3, i11, i10, z10, (ActionComponentState) obj4, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -189,7 +189,7 @@ public final class UserSelectComponent$$serializer implements f0<UserSelectCompo
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

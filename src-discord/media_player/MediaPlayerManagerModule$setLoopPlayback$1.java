@@ -22,16 +22,16 @@ final class MediaPlayerManagerModule$setLoopPlayback$1 extends s implements Func
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */
     public final void invoke2(SimpleExoPlayer player) {
         q.g(player, "player");
         if (this.$loop) {
-            player.J(1);
+            player.I(1);
         } else {
-            player.J(0);
+            player.I(0);
         }
     }
 }

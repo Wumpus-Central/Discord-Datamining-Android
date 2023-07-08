@@ -11,7 +11,7 @@ import com.discord.recycler_view.decorations.HorizontalSpacingItemDecoration;
 import com.discord.recycler_view.decorations.VerticalSpacingItemDecoration;
 import com.discord.theme.DiscordTheme;
 import com.google.android.flexbox.FlexboxLayoutManager;
-import gf.n;
+import ff.n;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;

@@ -57,7 +57,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         x b10 = p2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         q.f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.moduleScope = k0.a(b10.u(m1.a(newSingleThreadExecutor)));
+        this.moduleScope = k0.a(b10.v(m1.a(newSingleThreadExecutor)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

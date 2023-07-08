@@ -12,7 +12,7 @@ import com.BV.LinearGradient.LinearGradientManager;
 import com.discord.rlottie.RLottieDrawable;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.util.JSStackTrace;
-import gf.y;
+import ff.y;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;

@@ -7,7 +7,7 @@ import com.discord.image.animated_image.animated_image_utils.AnimatedImageStateM
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.rlottie.RLottieDrawable;
 import com.discord.sticker.sticker_types.RLottieImageView;
-import gf.t;
+import ff.t;
 import java.io.File;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -23,7 +23,7 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
-import mf.d;
+import lf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -55,7 +55,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 t.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f20717a;
+                return Unit.f20663a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -84,7 +84,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -104,7 +104,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             t.b(obj);
         } else if (i10 == 2) {
             t.b(obj);
-            return Unit.f20717a;
+            return Unit.f20663a;
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -143,7 +143,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -182,23 +182,23 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
             /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2  reason: invalid class name and collision with other inner class name */
             /* loaded from: classes8.dex */
-            public static final class C01142 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
+            public static final class C01072 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 int label;
                 final /* synthetic */ RLottieImageView this$0;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                C01142(RLottieImageView rLottieImageView, Continuation<? super C01142> continuation) {
+                C01072(RLottieImageView rLottieImageView, Continuation<? super C01072> continuation) {
                     super(2, continuation);
                     this.this$0 = rLottieImageView;
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                    return new C01142(this.this$0, continuation);
+                    return new C01072(this.this$0, continuation);
                 }
 
                 public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-                    return ((C01142) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+                    return ((C01072) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -225,13 +225,13 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 if (downloadState instanceof DownloadState.Completed) {
                     Object g10 = j.g(y0.c(), new AnonymousClass1(RLottieImageView.this, downloadState, config, null), continuation);
                     d12 = d.d();
-                    return g10 == d12 ? g10 : Unit.f20717a;
+                    return g10 == d12 ? g10 : Unit.f20663a;
                 } else if (!(downloadState instanceof DownloadState.Failure)) {
-                    return Unit.f20717a;
+                    return Unit.f20663a;
                 } else {
-                    Object g11 = j.g(y0.c(), new C01142(RLottieImageView.this, null), continuation);
+                    Object g11 = j.g(y0.c(), new C01072(RLottieImageView.this, null), continuation);
                     d11 = d.d();
-                    return g11 == d11 ? g11 : Unit.f20717a;
+                    return g11 == d11 ? g11 : Unit.f20663a;
                 }
             }
         };
@@ -239,6 +239,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         if (downloadFile$default.collect(flowCollector, this) == d10) {
             return d10;
         }
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 }

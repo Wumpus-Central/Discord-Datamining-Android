@@ -235,6 +235,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         setHasStableIds(true);
     }
 
+    public static final /* synthetic */ Function1 access$getOnTapSpoiler$p(MessageAccessoriesAdapter messageAccessoriesAdapter) {
+        return messageAccessoriesAdapter.onTapSpoiler;
+    }
+
     /* JADX INFO: Access modifiers changed from: private */
     public static final void onBindViewHolder$lambda$0(MessageAccessory part, MessageAccessoriesAdapter this$0, MessagePartViewHolder holder, View view) {
         q.g(part, "$part");
@@ -416,7 +420,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (i11 == 4) {
                 return 27;
             }
-            throw new gf.q();
+            throw new ff.q();
         } else if (messageAccessory instanceof ThreadEmbedMessageAccessory) {
             return 9;
         } else {
@@ -474,7 +478,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             if (messageAccessory instanceof PostPreviewEmbedMessageAccessory) {
                 return 32;
             }
-            throw new gf.q();
+            throw new ff.q();
         }
     }
 
@@ -815,9 +819,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             SpoilerAttributes spoilerAttributes5 = postPreviewEmbedMessageAccessory.getSpoilerAttributes();
             postPreviewEmbedViewHolder.bind(postPreviewEmbed, messageAccessoriesAdapter$onBindViewHolder$45, spoilerAttributes5 != null ? spoilerAttributes5.configure(new MessageAccessoriesAdapter$onBindViewHolder$46(this, holder)) : null);
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f20717a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f20663a);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

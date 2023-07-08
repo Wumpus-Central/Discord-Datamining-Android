@@ -33,8 +33,8 @@ import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
-import gf.x;
-import hf.v;
+import ff.x;
+import gf.v;
 import java.util.List;
 import java.util.Map;
 import kotlin.Metadata;
@@ -592,7 +592,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcast$media_engine_release(num.intValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     @ReactMethod
@@ -603,7 +603,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             return null;
         }
         this.mediaEngine.connectionInstanceStopBroadcastWithError$media_engine_release(num.intValue(), i10, errorMessage);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     @ReactMethod

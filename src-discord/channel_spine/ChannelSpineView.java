@@ -98,7 +98,7 @@ public final class ChannelSpineView extends View {
         } else if (i11 == 2) {
             f11 = yOfRow(f10, i10 + 1);
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
         if (this.isReplySpline) {
             f12 = SizeUtilsKt.getDpToPx(9);
@@ -224,7 +224,7 @@ public final class ChannelSpineView extends View {
                 float f11 = this.numRows * this.rowHeight;
                 int mode2 = View.MeasureSpec.getMode(i11);
                 if (mode2 == Integer.MIN_VALUE) {
-                    f10 = xf.j.f(f11, View.MeasureSpec.getSize(i11));
+                    f10 = wf.j.f(f11, View.MeasureSpec.getSize(i11));
                     number = Float.valueOf(f10);
                 } else if (mode2 != 1073741824) {
                     number = Float.valueOf(f11);

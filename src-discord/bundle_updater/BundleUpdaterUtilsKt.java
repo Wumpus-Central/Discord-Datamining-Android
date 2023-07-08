@@ -4,7 +4,7 @@ import android.content.res.AssetManager;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import ki.d;
+import ji.d;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
@@ -26,7 +26,7 @@ public final class BundleUpdaterUtilsKt {
         q.g(asset, "asset");
         InputStream open = assetManager.open(asset);
         q.f(open, "open(asset)");
-        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f20667b);
+        InputStreamReader inputStreamReader = new InputStreamReader(open, d.f19883b);
         if (inputStreamReader instanceof BufferedReader) {
             bufferedReader = (BufferedReader) inputStreamReader;
         } else {
@@ -34,7 +34,7 @@ public final class BundleUpdaterUtilsKt {
         }
         try {
             th = null;
-            return new JSONObject(qf.q.e(bufferedReader));
+            return new JSONObject(pf.q.e(bufferedReader));
         } finally {
             try {
                 throw th;

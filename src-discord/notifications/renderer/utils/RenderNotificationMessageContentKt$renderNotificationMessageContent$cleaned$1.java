@@ -1,7 +1,7 @@
 package com.discord.notifications.renderer.utils;
 
-import ki.f;
-import ki.u;
+import ji.f;
+import ji.u;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;

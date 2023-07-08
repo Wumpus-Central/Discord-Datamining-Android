@@ -10,7 +10,7 @@ import com.discord.notifications.api.NotificationData;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.primitives.ChannelId;
 import com.facebook.react.uimanager.ViewProps;
-import gf.x;
+import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

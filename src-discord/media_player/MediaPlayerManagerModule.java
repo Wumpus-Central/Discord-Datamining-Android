@@ -15,7 +15,7 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerView;
-import gf.x;
+import ff.x;
 import java.lang.ref.WeakReference;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -65,7 +65,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         kotlinx.coroutines.x b10 = p2.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         q.f(newSingleThreadExecutor, "newSingleThreadExecutor()");
-        this.scope = k0.a(b10.u(m1.a(newSingleThreadExecutor)));
+        this.scope = k0.a(b10.v(m1.a(newSingleThreadExecutor)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -164,7 +164,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     @ReactMethod

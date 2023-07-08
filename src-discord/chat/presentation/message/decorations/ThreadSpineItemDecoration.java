@@ -9,7 +9,7 @@ import com.discord.chat.presentation.message.view.MessageContentView;
 import com.discord.chat.presentation.message.view.ThreadEmbedView;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.misc.utilities.size.SizeUtilsKt;
-import hf.p;
+import gf.p;
 import java.util.Iterator;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;

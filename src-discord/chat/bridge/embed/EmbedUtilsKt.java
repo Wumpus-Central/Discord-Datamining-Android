@@ -2,7 +2,7 @@ package com.discord.chat.bridge.embed;
 
 import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
-import gf.x;
+import ff.x;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;

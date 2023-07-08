@@ -50,11 +50,11 @@ public final class DCDPackageList extends PackageList {
         packages.add(new a());
         packages.add(new com.reactnativecommunity.clipboard.a());
         packages.add(new c());
-        packages.add(new x3.a());
+        packages.add(new w3.a());
         packages.add(new e());
         packages.add(new com.BV.LinearGradient.a());
         packages.add(new b());
-        packages.add(new zd.c());
+        packages.add(new yd.c());
         packages.add(new com.github.yamill.orientation.a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
         });
         packages.add(new d());
@@ -63,8 +63,8 @@ public final class DCDPackageList extends PackageList {
         packages.add(new e1());
         packages.add(new com.henninghall.date_picker.b());
         packages.add(new com.reactnativedocumentpicker.b());
-        packages.add(new fe.a());
-        packages.add(new ck.a());
+        packages.add(new ee.a());
+        packages.add(new bk.a());
         packages.add(new com.mkuczera.a());
         packages.add(new i());
         packages.add(new io.sentry.react.i());
@@ -73,7 +73,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(GetSkiaPackageKt.getSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
         packages.add(new x1.c());
-        packages.add(new de.e());
+        packages.add(new ce.e());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$3.INSTANCE));

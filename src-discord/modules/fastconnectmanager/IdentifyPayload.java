@@ -2,11 +2,11 @@ package com.discord.modules.fastconnectmanager;
 
 import com.discord.app_database.GuildVersion;
 import com.discord.logging.Log;
-import gf.s;
-import gf.t;
-import gf.x;
-import hf.u;
-import hf.v;
+import ff.s;
+import ff.t;
+import ff.x;
+import gf.u;
+import gf.v;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -65,10 +65,10 @@ public final class IdentifyPayload {
         q.g(json, "json");
         q.g(versions, "versions");
         try {
-            s.a aVar = s.f15527l;
-            obj = s.b(Json.f21218d.g(json));
+            s.a aVar = s.f14771l;
+            obj = s.b(Json.f21164d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -79,7 +79,7 @@ public final class IdentifyPayload {
             JsonObject jsonObject = (JsonObject) jsonElement;
             k10 = j.k("d", "client_state", "guild_versions");
             d10 = u.d(versions.length);
-            c10 = xf.j.c(d10, 16);
+            c10 = wf.j.c(d10, 16);
             LinkedHashMap linkedHashMap = new LinkedHashMap(c10);
             for (GuildVersion guildVersion : versions) {
                 Pair a10 = x.a(guildVersion.getId(), g.c(Long.valueOf(guildVersion.getVersion())));

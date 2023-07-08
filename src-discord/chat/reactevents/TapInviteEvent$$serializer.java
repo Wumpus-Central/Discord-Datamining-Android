@@ -9,14 +9,14 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import qi.n;
-import ri.a;
-import ti.a2;
-import ti.f0;
-import ti.h;
-import ti.m0;
+import pi.n;
+import qi.a;
+import si.a2;
+import si.f0;
+import si.h;
+import si.m0;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/TapInviteEvent.$serializer", "Lti/f0;", "Lcom/discord/chat/reactevents/TapInviteEvent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/reactevents/TapInviteEvent.$serializer", "Lsi/f0;", "Lcom/discord/chat/reactevents/TapInviteEvent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
     public static final TapInviteEvent$$serializer INSTANCE;
@@ -36,10 +36,10 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
     private TapInviteEvent$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f27014a;
-        return new KSerializer[]{a2.f26972a, m0.f27047a, a.u(hVar), a.u(hVar)};
+        h hVar = h.f26272a;
+        return new KSerializer[]{a2.f26230a, m0.f26305a, a.u(hVar), a.u(hVar)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -55,7 +55,7 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
             i10 = c10.k(descriptor2, 1);
-            h hVar = h.f27014a;
+            h hVar = h.f26272a;
             obj = c10.v(descriptor2, 2, hVar, null);
             obj2 = c10.v(descriptor2, 3, hVar, null);
             i11 = 15;
@@ -77,10 +77,10 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
                     i12 = c10.k(descriptor2, 1);
                     i13 |= 2;
                 } else if (x10 == 2) {
-                    obj3 = c10.v(descriptor2, 2, h.f27014a, obj3);
+                    obj3 = c10.v(descriptor2, 2, h.f26272a, obj3);
                     i13 |= 4;
                 } else if (x10 == 3) {
-                    obj4 = c10.v(descriptor2, 3, h.f27014a, obj4);
+                    obj4 = c10.v(descriptor2, 3, h.f26272a, obj4);
                     i13 |= 8;
                 } else {
                     throw new n(x10);
@@ -96,7 +96,7 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
         return new TapInviteEvent(i11, str, i10, (Boolean) obj, (Boolean) obj2, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -110,7 +110,7 @@ public final class TapInviteEvent$$serializer implements f0<TapInviteEvent> {
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

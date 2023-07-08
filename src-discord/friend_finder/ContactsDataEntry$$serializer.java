@@ -9,13 +9,13 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
-import qi.n;
-import ti.a2;
-import ti.f0;
-import ti.h;
-import ti.v1;
+import pi.n;
+import si.a2;
+import si.f0;
+import si.h;
+import si.v1;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/friend_finder/ContactsDataEntry.$serializer", "Lti/f0;", "Lcom/discord/friend_finder/ContactsDataEntry;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "friend_finder_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/friend_finder/ContactsDataEntry.$serializer", "Lsi/f0;", "Lcom/discord/friend_finder/ContactsDataEntry;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "friend_finder_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes6.dex */
 public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry> {
     public static final ContactsDataEntry$$serializer INSTANCE;
@@ -37,10 +37,10 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
     private ContactsDataEntry$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26972a;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f27014a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
+        a2 a2Var = a2.f26230a;
+        return new KSerializer[]{a2Var, a2Var, a2Var, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), h.f26272a, new v1(kotlin.jvm.internal.f0.b(String.class), a2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -63,7 +63,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
             str = c10.t(descriptor2, 2);
             obj = c10.m(descriptor2, 3, new v1(kotlin.jvm.internal.f0.b(ContactName.class), ContactName$$serializer.INSTANCE), null);
             z10 = c10.s(descriptor2, 4);
-            obj2 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f26972a), null);
+            obj2 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f26230a), null);
             i10 = 63;
         } else {
             boolean z11 = true;
@@ -107,7 +107,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
                         c11 = 3;
                         i11 = 2;
                     case 5:
-                        obj4 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f26972a), obj4);
+                        obj4 = c10.m(descriptor2, 5, new v1(kotlin.jvm.internal.f0.b(String.class), a2.f26230a), obj4);
                         i12 |= 32;
                         c11 = 3;
                         i11 = 2;
@@ -124,7 +124,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
         return new ContactsDataEntry(i10, str3, str2, str, (ContactName[]) obj, z10, (String[]) obj2, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -138,7 +138,7 @@ public final class ContactsDataEntry$$serializer implements f0<ContactsDataEntry
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

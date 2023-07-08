@@ -3,8 +3,8 @@ package com.discord.image.fresco;
 import android.net.Uri;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.uimanager.ViewProps;
-import f3.f;
-import ki.u;
+import e3.f;
+import ji.u;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 
@@ -35,7 +35,7 @@ public final class SetOptionalImageUrlKt {
             kotlin.jvm.internal.q.g(r5, r0)
             r0 = 0
             if (r3 == 0) goto L_0x0016
-            boolean r1 = ki.l.w(r3)
+            boolean r1 = ji.l.w(r3)
             if (r1 == 0) goto L_0x0014
             goto L_0x0016
         L_0x0014:
@@ -50,7 +50,7 @@ public final class SetOptionalImageUrlKt {
             r0 = 8
         L_0x001c:
             r2.setVisibility(r0)
-            com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r0 = m3.c.g()
+            com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r0 = l3.c.g()
             com.facebook.imagepipeline.request.ImageRequest r3 = com.facebook.imagepipeline.request.ImageRequest.fromUri(r3)
             com.facebook.drawee.controller.AbstractDraweeControllerBuilder r3 = r0.D(r3)
             com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder r3 = (com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder) r3

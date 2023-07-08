@@ -1,7 +1,7 @@
 package com.discord.reactevents;
 
-import gf.x;
-import hf.v;
+import ff.x;
+import gf.v;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedHashMap;

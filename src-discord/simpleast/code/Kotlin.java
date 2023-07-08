@@ -10,7 +10,7 @@ import com.discord.simpleast.core.parser.Rule;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ki.j;
+import ji.j;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;

@@ -134,7 +134,7 @@ public final class EmojiPickerRowView extends LinearLayout {
             SimpleDraweeView simpleDraweeView = new SimpleDraweeView(getContext());
             RippleUtilsKt.addCircleRipple$default(simpleDraweeView, false, 1, null);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(placeholder);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f7800e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils.ScaleType.f7394e);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(dpToPx, dpToPx);
             layoutParams.setMargins(i10, dpToPx3, 0, dpToPx3);
             simpleDraweeView.setLayoutParams(layoutParams);

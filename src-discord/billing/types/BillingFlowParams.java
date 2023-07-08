@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import ki.d;
+import ji.d;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -22,7 +22,7 @@ public final class BillingFlowParams {
 
     private final String getObfuscatedUserId(String str) {
         MessageDigest instance = MessageDigest.getInstance("SHA-256");
-        byte[] bytes = str.getBytes(d.f20667b);
+        byte[] bytes = str.getBytes(d.f19883b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] digest = instance.digest(bytes);
         q.f(digest, "getInstance(\"SHA-256\")\n …est(userId.toByteArray())");

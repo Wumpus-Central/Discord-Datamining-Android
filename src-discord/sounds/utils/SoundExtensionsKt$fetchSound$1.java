@@ -5,7 +5,7 @@ import com.discord.file_downloader.DownloadState;
 import com.discord.file_downloader.FileDownloader;
 import com.discord.logging.Log;
 import com.discord.sounds.SoundManager;
-import gf.t;
+import ff.t;
 import java.io.File;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -17,7 +17,7 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import mf.d;
+import lf.d;
 
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
@@ -55,7 +55,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -76,7 +76,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -94,7 +94,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
         @e(c = "com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1", f = "SoundExtensions.kt", l = {}, m = "invokeSuspend")
         /* renamed from: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1$1$1  reason: invalid class name and collision with other inner class name */
         /* loaded from: classes8.dex */
-        public static final class C01131 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+        public static final class C01061 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ DownloadState $downloadState;
             final /* synthetic */ int $key;
             final /* synthetic */ SoundManager $soundManager;
@@ -104,7 +104,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             /* JADX WARN: Multi-variable type inference failed */
-            C01131(SoundManager soundManager, int i10, int i11, DownloadState downloadState, Function1<? super Integer, Unit> function1, Continuation<? super C01131> continuation) {
+            C01061(SoundManager soundManager, int i10, int i11, DownloadState downloadState, Function1<? super Integer, Unit> function1, Continuation<? super C01061> continuation) {
                 super(2, continuation);
                 this.$soundManager = soundManager;
                 this.$key = i10;
@@ -115,11 +115,11 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                return new C01131(this.$soundManager, this.$key, this.$usage, this.$downloadState, this.$soundResIdPrepared, continuation);
+                return new C01061(this.$soundManager, this.$key, this.$usage, this.$downloadState, this.$soundResIdPrepared, continuation);
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((C01131) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+                return ((C01061) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -128,7 +128,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     t.b(obj);
                     this.$soundManager.prepare(this.$key, this.$usage, null, ((DownloadState.Completed) this.$downloadState).getFile().getAbsolutePath(), this.$soundResIdPrepared);
-                    return Unit.f20717a;
+                    return Unit.f20663a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -155,7 +155,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -164,7 +164,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     t.b(obj);
                     Log.INSTANCE.w(SoundManager.Companion.getLogTag(), "Failed to download sound.", this.$e);
-                    return Unit.f20717a;
+                    return Unit.f20663a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -188,7 +188,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             }
 
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
@@ -239,7 +239,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 r2.<init>(r1, r0)
             L_0x001c:
                 java.lang.Object r0 = r2.result
-                java.lang.Object r3 = mf.b.d()
+                java.lang.Object r3 = lf.b.d()
                 int r4 = r2.label
                 r5 = 0
                 r6 = 3
@@ -249,7 +249,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (r4 == r8) goto L_0x0040
                 if (r4 == r7) goto L_0x003c
                 if (r4 != r6) goto L_0x0034
-                gf.t.b(r0)
+                ff.t.b(r0)
                 goto L_0x0094
             L_0x0034:
                 java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
@@ -257,16 +257,16 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 r0.<init>(r2)
                 throw r0
             L_0x003c:
-                gf.t.b(r0)
+                ff.t.b(r0)
                 goto L_0x007f
             L_0x0040:
-                gf.t.b(r0)     // Catch: Exception -> 0x0044
+                ff.t.b(r0)     // Catch: Exception -> 0x0044
                 goto L_0x007f
             L_0x0044:
                 r0 = move-exception
                 goto L_0x006d
             L_0x0046:
-                gf.t.b(r0)
+                ff.t.b(r0)
                 r0 = r17
                 boolean r4 = r0 instanceof com.discord.file_downloader.DownloadState.Completed
                 if (r4 == 0) goto L_0x0082
@@ -293,7 +293,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (r0 != r3) goto L_0x007f
                 return r3
             L_0x007f:
-                kotlin.Unit r0 = kotlin.Unit.f20717a
+                kotlin.Unit r0 = kotlin.Unit.f20663a
                 return r0
             L_0x0082:
                 kotlinx.coroutines.f2 r0 = kotlinx.coroutines.y0.c()

@@ -11,7 +11,7 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerDelegate;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerInterface;
-import gf.x;
+import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

@@ -38,7 +38,7 @@ public final class MessageRowKt {
         } else if (messageBase instanceof ErrorMessage) {
             return new DeserializationErrorMessageItem((ErrorMessage) messageBase);
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
     }
 }

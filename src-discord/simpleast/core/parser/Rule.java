@@ -3,7 +3,7 @@ package com.discord.simpleast.core.parser;
 import com.discord.simpleast.core.node.Node;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ki.v;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 

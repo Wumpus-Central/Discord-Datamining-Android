@@ -4,8 +4,8 @@ import android.content.Context;
 import android.os.Build;
 import com.discord.client_info.ClientInfo;
 import com.discord.logging.Log;
-import gf.f;
-import hf.v;
+import ff.f;
+import gf.v;
 import io.sentry.Scope;
 import io.sentry.android.core.SentryAndroidOptions;
 import io.sentry.android.core.b1;
@@ -91,7 +91,7 @@ public final class CrashReporting {
         } else if (i10 == 2) {
             n3Var = n3.WARNING;
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
         k2.h(message, n3Var);
     }
@@ -103,7 +103,7 @@ public final class CrashReporting {
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@187.5.0-2+187205");
+        options.setRelease("discord_android@187.6.0-2+187206");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -111,7 +111,7 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("940ca858-7dad-415f-acd7-5ee6f94a9e4f");
+        options.setProguardUuid("f5deb4ea-515a-46e6-bd53-ccfe8d3f0714");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }
@@ -161,7 +161,7 @@ public final class CrashReporting {
 
     public final double getTracingSampleRate() {
         boolean M;
-        M = ki.v.M(ClientInfo.INSTANCE.getReleaseChannel(), "canary", false, 2, null);
+        M = ji.v.M(ClientInfo.INSTANCE.getReleaseChannel(), "canary", false, 2, null);
         return M ? 0.05d : 0.0d;
     }
 
@@ -179,7 +179,7 @@ public final class CrashReporting {
             if (isProductionChannel()) {
                 String DEVICE = Build.DEVICE;
                 q.f(DEVICE, "DEVICE");
-                M = ki.v.M(DEVICE, "vivo", false, 2, null);
+                M = ji.v.M(DEVICE, "vivo", false, 2, null);
                 if (M) {
                     return;
                 }
@@ -202,11 +202,11 @@ public final class CrashReporting {
         boolean M;
         boolean M2;
         ClientInfo clientInfo = ClientInfo.INSTANCE;
-        M = ki.v.M(clientInfo.getReleaseChannel(), "beta", false, 2, null);
+        M = ji.v.M(clientInfo.getReleaseChannel(), "beta", false, 2, null);
         if (M) {
             return false;
         }
-        M2 = ki.v.M(clientInfo.getReleaseChannel(), "canary", false, 2, null);
+        M2 = ji.v.M(clientInfo.getReleaseChannel(), "canary", false, 2, null);
         return !M2;
     }
 

@@ -87,7 +87,7 @@ public final class MessageViewAccessibilityDelegate extends a {
             spannableStringBuilder.replace(0, 0, (CharSequence) (c02 + ", "));
         }
         info.D0(spannableStringBuilder);
-        info.S(AccessibilityNodeInfoCompat.a.f3041i);
+        info.S(AccessibilityNodeInfoCompat.a.f3627i);
         info.p0(15);
     }
 

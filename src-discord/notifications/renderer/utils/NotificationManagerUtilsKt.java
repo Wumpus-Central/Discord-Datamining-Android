@@ -10,8 +10,8 @@ import androidx.core.app.NotificationManagerCompat;
 import com.discord.notifications.renderer.NotificationBehaviors;
 import com.discord.notifications.renderer.R;
 import com.discord.theme.utils.ColorUtilsKt;
-import gf.s;
-import gf.t;
+import ff.s;
+import ff.t;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
@@ -31,10 +31,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            s.a aVar = s.f15527l;
+            s.a aVar = s.f14771l;
             obj = s.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

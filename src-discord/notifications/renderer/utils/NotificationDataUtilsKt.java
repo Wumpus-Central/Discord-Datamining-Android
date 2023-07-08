@@ -38,8 +38,8 @@ import com.discord.react_strings.I18nUtilsKt;
 import com.discord.shortcuts.ShortcutData;
 import com.discord.shortcuts.ShortcutUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import gf.x;
-import hf.v;
+import ff.x;
+import gf.v;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -105,7 +105,7 @@ public final class NotificationDataUtilsKt {
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f20717a;
+            Unit unit = Unit.f20663a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -343,7 +343,7 @@ public final class NotificationDataUtilsKt {
                     return new KvMessageEntry(h10, d10, notificationMessage, str2, channelId.m573unboximpl(), null);
                 }
             } else {
-                JsonElement g10 = Json.f21218d.g(str);
+                JsonElement g10 = Json.f21164d.g(str);
                 h11 = j.h();
                 JsonObject author2 = message.getAuthor();
                 q.d(author2);

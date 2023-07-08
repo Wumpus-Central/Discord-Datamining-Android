@@ -6,7 +6,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReactModuleWithSpec;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import f5.a;
+import e5.a;
 
 /* loaded from: classes3.dex */
 public abstract class NativeAudioRouteEmitterSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
@@ -14,7 +14,7 @@ public abstract class NativeAudioRouteEmitterSpec extends ReactContextBaseJavaMo
         super(reactApplicationContext);
     }
 
-    @a
     @ReactMethod
+    @a
     public abstract void getCurrentRoute(Promise promise);
 }

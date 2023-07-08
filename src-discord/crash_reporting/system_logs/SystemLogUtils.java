@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import ii.o;
 import java.io.File;
 import java.security.MessageDigest;
 import java.util.Collection;
@@ -12,12 +13,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-import ji.o;
-import kf.a;
-import ki.d;
-import ki.j;
-import ki.u;
-import ki.v;
+import jf.a;
+import ji.d;
+import ji.j;
+import ji.u;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.f;
@@ -38,7 +38,7 @@ public final class SystemLogUtils {
     private static final DebugPrintableCollection debugPrintables = new DebugPrintableCollection();
     private static final SystemLogCapture systemLogCapture = new SystemLogCapture();
     private static final String LIBDISCORD_VERSION_CATEGORY = "libdiscord_version";
-    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f20787l.c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
+    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f20733l.c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
 
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003¢\u0006\u0002\u0010\tJ\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003JG\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u001cHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000bR\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000bR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000bR\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000b¨\u0006\u001e"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "", "text", "", "cause", "groupBy", "origin", "groupHash", "textHash", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCause", "()Ljava/lang/String;", "getGroupBy", "getGroupHash", "getOrigin", "getText", "getTextHash", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "", "toString", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes3.dex */
@@ -180,7 +180,7 @@ public final class SystemLogUtils {
     private final String hashString(String str) {
         String Z;
         MessageDigest instance = MessageDigest.getInstance("SHA-1");
-        byte[] bytes = str.getBytes(d.f20667b);
+        byte[] bytes = str.getBytes(d.f19883b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         byte[] bytes2 = instance.digest(bytes);
         q.f(bytes2, "bytes");
@@ -286,10 +286,10 @@ public final class SystemLogUtils {
             r10.<init>(r0)     // Catch: Exception -> 0x0079
             throw r10     // Catch: Exception -> 0x0079
         L_0x0053:
-            boolean r7 = ki.l.w(r3)     // Catch: Exception -> 0x0079
+            boolean r7 = ji.l.w(r3)     // Catch: Exception -> 0x0079
             if (r7 != 0) goto L_0x000c
             java.lang.String r7 = "Accessing hidden method"
-            boolean r4 = ki.l.M(r3, r7, r0, r5, r4)     // Catch: Exception -> 0x0079
+            boolean r4 = ji.l.M(r3, r7, r0, r5, r4)     // Catch: Exception -> 0x0079
             if (r4 != 0) goto L_0x000c
             int r4 = r3.length()     // Catch: Exception -> 0x0079
             int r4 = r4 + r6
@@ -348,7 +348,7 @@ public final class SystemLogUtils {
             } else {
                 M2 = v.M(str5, "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***", false, 2, null);
                 if (M2) {
-                    ki.q.i(sb2);
+                    ji.q.i(sb2);
                     str4 = str3;
                 }
                 sb2.append(str5);

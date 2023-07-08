@@ -18,7 +18,7 @@ public final class FontManager {
     private static final String FONT_SCALE_KEY = "FONT_SCALE_KEY";
     static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {f0.e(new w(FontManager.class, "initialFontSize", "getInitialFontSize()F", 0))};
     public static final FontManager INSTANCE = new FontManager();
-    private static final ReadWriteProperty initialFontSize$delegate = a.f20773a.a();
+    private static final ReadWriteProperty initialFontSize$delegate = a.f20719a.a();
 
     private FontManager() {
     }

@@ -4,8 +4,8 @@ import android.text.format.DateUtils;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.text.DateFormat;
 import java.util.Date;
-import ki.f;
-import ki.v;
+import ji.f;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 import kotlin.text.MatchResult;
@@ -77,9 +77,9 @@ public final class RenderNotificationMessageContentKt {
                 formatted = dateFormat.format(date);
             }
             q.f(formatted, "formatted");
-            t02 = v.t0(content, c10.d().a(), c10.d().h() + 1, formatted);
+            t02 = v.t0(content, c10.d().a(), c10.d().d() + 1, formatted);
             content = t02.toString();
-            t03 = v.t0(i10, c10.d().a(), c10.d().h() + 1, formatted);
+            t03 = v.t0(i10, c10.d().a(), c10.d().d() + 1, formatted);
             i10 = t03.toString();
         }
     }

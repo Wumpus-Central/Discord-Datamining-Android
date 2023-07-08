@@ -2,7 +2,7 @@ package com.discord.file_manager;
 
 import android.util.Base64;
 import com.facebook.react.bridge.Promise;
-import gf.t;
+import ff.t;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.HashMap;
@@ -14,8 +14,8 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
-import mf.d;
-import qf.c;
+import lf.d;
+import pf.c;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_manager.FileManagerModule$writeFile$1", f = "FileManagerModule.kt", l = {}, m = "invokeSuspend")
@@ -47,7 +47,7 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20717a);
+        return ((FileManagerModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -64,7 +64,7 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                 String str = this.$storageDir;
                 hashMap3 = this.this$0.storageDirs;
                 promise.reject("err", "Unknown storage directory " + str + ". Supported storage directories: " + hashMap3.keySet());
-                return Unit.f20717a;
+                return Unit.f20663a;
             }
             try {
                 hashMap2 = this.this$0.storageDirs;
@@ -87,21 +87,21 @@ final class FileManagerModule$writeFile$1 extends k implements Function2<Corouti
                 if (q.b(this.$encoding, "base64")) {
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     fileOutputStream.write(Base64.decode(this.$data, 0));
-                    Unit unit = Unit.f20717a;
+                    Unit unit = Unit.f20663a;
                     c.a(fileOutputStream, null);
                 } else {
                     FileOutputStream fileOutputStream2 = new FileOutputStream(file);
-                    byte[] bytes = this.$data.getBytes(ki.d.f20667b);
+                    byte[] bytes = this.$data.getBytes(ji.d.f19883b);
                     q.f(bytes, "this as java.lang.String).getBytes(charset)");
                     fileOutputStream2.write(bytes);
-                    Unit unit2 = Unit.f20717a;
+                    Unit unit2 = Unit.f20663a;
                     c.a(fileOutputStream2, null);
                 }
                 this.$promise.resolve(file.getAbsolutePath());
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f20717a;
+            return Unit.f20663a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

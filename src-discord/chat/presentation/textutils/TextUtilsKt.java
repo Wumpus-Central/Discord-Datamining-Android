@@ -7,6 +7,7 @@ import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.LeadingMarginSpan;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
 import com.discord.chat.bridge.contentnode.ContentNode;
@@ -26,6 +27,7 @@ import com.discord.span.utilities.spannable.BulletSpan;
 import com.discord.span.utilities.spannable.OrderedListBulletSpan;
 import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.DiscordTheme;
+import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.controller.a;
 import com.facebook.drawee.drawable.ScalingUtils;
@@ -44,7 +46,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.q;
-import m3.c;
+import l3.c;
 
 @Metadata(d1 = {"\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0010\u0006\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\u001a\u000e\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000\u001aê\u0002\u0010'\u001a\u00020&*\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\t2\u0014\b\u0002\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000f0\r2\u0014\b\u0002\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000f0\r2$\b\u0002\u0010\u0013\u001a\u001e\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0004\u0012\u00020\u000f0\u00122,\b\u0002\u0010\u0015\u001a&\u0012\u0004\u0012\u00020\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0004\u0012\u00020\u000f0\u00142\u001a\b\u0002\u0010\u0017\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000f0\u00162\u0014\b\u0002\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u000f0\r2\u0014\b\u0002\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u000f0\r2\u0014\b\u0002\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000f0\r2\u0014\b\u0002\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001c\u0012\u0004\u0012\u00020\u000f0\r2\u0014\b\u0002\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u001e0\r2\u000e\b\u0002\u0010!\u001a\b\u0012\u0004\u0012\u00020\u000f0 2\b\b\u0002\u0010\"\u001a\u00020\t2\b\b\u0002\u0010$\u001a\u00020#2\b\b\u0002\u0010%\u001a\u00020\u0002\u001a\"\u0010-\u001a\u00020\u000f*\b\u0012\u0004\u0012\u00020)0(2\u0006\u0010+\u001a\u00020*2\u0006\u0010,\u001a\u00020&H\u0002\u001a$\u0010'\u001a\u00020&*\b\u0012\u0004\u0012\u00020)0(2\u0006\u0010+\u001a\u00020*2\b\b\u0002\u0010.\u001a\u00020&H\u0002\u001a]\u00106\u001a\u00020\u000f*\u00020&2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010+\u001a\u00020*2\u0006\u0010/\u001a\u00020\u00072\b\b\u0001\u00101\u001a\u0002002\b\b\u0001\u00102\u001a\u0002002\n\b\u0002\u00103\u001a\u0004\u0018\u0001002\b\b\u0002\u00104\u001a\u00020\u00022\b\b\u0002\u00105\u001a\u00020\u0002¢\u0006\u0004\b6\u00107\u001a*\u0010:\u001a\u00020\u000f*\u00020&2\f\u00108\u001a\b\u0012\u0004\u0012\u00020)0(2\u0006\u0010+\u001a\u00020*2\u0006\u00109\u001a\u00020\tH\u0002\u001a\u0012\u0010=\u001a\u00020<2\b\u0010;\u001a\u0004\u0018\u00010\u0007H\u0002\u001a\u001a\u0010>\u001a\u0002002\b\u0010;\u001a\u0004\u0018\u00010\u00072\u0006\u0010%\u001a\u00020\u0002H\u0002\u001a\u0010\u0010?\u001a\u00020\u00022\u0006\u0010;\u001a\u00020\u0007H\u0002\u001a\u0018\u0010B\u001a\u00020A2\u0006\u0010+\u001a\u00020*2\u0006\u0010@\u001a\u000200H\u0002\u001a\f\u0010C\u001a\u00020\u000f*\u00020&H\u0002\"\u0014\u0010D\u001a\u00020\u00078\u0002X\u0082T¢\u0006\u0006\n\u0004\bD\u0010E\"\u0014\u0010F\u001a\u00020\u00078\u0002X\u0082T¢\u0006\u0006\n\u0004\bF\u0010E¨\u0006G"}, d2 = {"Landroid/graphics/Paint$FontMetrics;", "fontMetrics", "", "getBaselineHeight", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "Landroid/content/Context;", "context", "", "containerId", "", "animateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "Lkotlin/Function1;", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "", "onLinkClicked", "onLongTapLink", "Lkotlin/Function3;", "onTapChannel", "Lkotlin/Function4;", "onLongPressChannel", "Lkotlin/Function2;", "onTapMention", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onTapCommand", "onLongPressCommand", "onTapTimestamp", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "onTapEmoji", "Lcom/discord/chat/presentation/textutils/LinkStyle;", "linkStyle", "Lkotlin/Function0;", "onTapSpoiler", "singleLine", "Lcom/discord/theme/DiscordTheme;", "theme", "baselineHeight", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "toSpannable", "", "Lcom/discord/chat/bridge/contentnode/ContentNode;", "Lcom/discord/chat/presentation/textutils/RenderContext;", "rc", "existingBuilder", "appendToExistingBuilder", "builder", "imageUrl", "", "width", "height", ViewProps.FOREGROUND_COLOR, "cornerRadius", "iconPadding", "appendImage", "(Lcom/facebook/drawee/span/DraweeSpanStringBuilder;Landroid/content/Context;Lcom/discord/chat/presentation/textutils/RenderContext;Ljava/lang/String;IILjava/lang/Integer;FF)V", "content", "isOrderedList", "appendBulletPoint", "iconType", "", "getIconSizeMultiplier", "getIconSize", "getIconPaddingMultiplier", ViewProps.BACKGROUND_COLOR, "Lcom/discord/span/utilities/spannable/BackgroundSpan;", "makeMentionBackgroundSpan", "simulateInlineNewline", "CHANNEL_PREFIX", "Ljava/lang/String;", "COMMAND_PREFIX", "chat_release"}, k = 2, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
@@ -148,10 +150,10 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7800e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7394e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
-        a10.u(a.EnumC0119a.BITMAP_ONLY);
+        a10.u(a.EnumC0112a.BITMAP_ONLY);
         w10.K(a10);
         if (rc2.spoilerIsHidden()) {
             w10.v(new PorterDuffColorFilter(rc2.getTheme().getSpoilerHiddenBackground(), PorterDuff.Mode.SRC_IN));
@@ -290,7 +292,11 @@ public final class TextUtilsKt {
         if (structurableText instanceof PrimitiveStructurableText) {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
         }
-        throw new gf.q();
+        throw new ff.q();
+    }
+
+    public static /* synthetic */ DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {
+        return toSpannable(structurableText, context, str, z10, z11, z12, (i10 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : function1, (i10 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function12, (i10 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (i10 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : function4, (i10 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function2, (i10 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : function13, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : function14, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : function15, (i10 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function16, (i10 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : function17, (32768 & i10) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & i10) != 0 ? false : z13, (131072 & i10) != 0 ? ThemeManagerKt.getTheme() : discordTheme, (i10 & 262144) != 0 ? -1.0f : f10);
     }
 
     /* JADX WARN: Type inference failed for: r12v1, types: [com.discord.chat.bridge.contentnode.ContentNode, java.lang.Object] */

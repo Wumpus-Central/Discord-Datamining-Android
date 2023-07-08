@@ -2,7 +2,7 @@ package com.discord.icons.media;
 
 import android.os.Build;
 import java.util.List;
-import ki.u;
+import ji.u;
 import kotlin.Metadata;
 import kotlin.collections.j;
 

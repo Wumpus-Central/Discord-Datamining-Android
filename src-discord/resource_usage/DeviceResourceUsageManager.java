@@ -4,9 +4,9 @@ import android.system.Os;
 import android.system.OsConstants;
 import com.discord.resource_usage.utils.ProcfsStats;
 import com.facebook.react.uimanager.ViewProps;
-import gf.s;
-import gf.t;
-import kf.a;
+import ff.s;
+import ff.t;
+import jf.a;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -42,10 +42,10 @@ public final class DeviceResourceUsageManager {
         Long l11;
         Integer num;
         try {
-            s.a aVar = s.f15527l;
+            s.a aVar = s.f14771l;
             l10 = s.b(Long.valueOf(Os.sysconf(OsConstants._SC_CLK_TCK)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f15527l;
+            s.a aVar2 = s.f14771l;
             l10 = s.b(t.a(th2));
         }
         if (s.g(l10)) {
@@ -55,7 +55,7 @@ public final class DeviceResourceUsageManager {
         try {
             l11 = s.b(Long.valueOf(Os.sysconf(OsConstants._SC_PAGE_SIZE)));
         } catch (Throwable th3) {
-            s.a aVar3 = s.f15527l;
+            s.a aVar3 = s.f14771l;
             l11 = s.b(t.a(th3));
         }
         if (s.g(l11)) {
@@ -65,7 +65,7 @@ public final class DeviceResourceUsageManager {
         try {
             num = s.b(Integer.valueOf(Runtime.getRuntime().availableProcessors()));
         } catch (Throwable th4) {
-            s.a aVar4 = s.f15527l;
+            s.a aVar4 = s.f14771l;
             num = s.b(t.a(th4));
         }
         if (s.g(num)) {
@@ -96,7 +96,7 @@ public final class DeviceResourceUsageManager {
                 if (l11 == null || l11.longValue() != id2) {
                     break;
                 }
-                Unit unit = Unit.f20717a;
+                Unit unit = Unit.f20663a;
                 if (!Thread.interrupted()) {
                     ProcfsStats readStatFile = ProcfsStats.Companion.readStatFile();
                     long currentTimeMillis = System.currentTimeMillis();

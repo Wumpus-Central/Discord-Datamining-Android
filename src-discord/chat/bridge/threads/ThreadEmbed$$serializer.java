@@ -10,13 +10,13 @@ import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
 import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import qi.n;
-import ri.a;
-import ti.a2;
-import ti.f0;
-import ti.h;
+import pi.n;
+import qi.a;
+import si.a2;
+import si.f0;
+import si.h;
 
-@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/threads/ThreadEmbed.$serializer", "Lti/f0;", "Lcom/discord/chat/bridge/threads/ThreadEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
+@Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/threads/ThreadEmbed.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/threads/ThreadEmbed;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
 /* loaded from: classes3.dex */
 public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
     public static final ThreadEmbed$$serializer INSTANCE;
@@ -38,10 +38,10 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
     private ThreadEmbed$$serializer() {
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26972a;
-        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f27014a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
+        a2 a2Var = a2.f26230a;
+        return new KSerializer[]{a2Var, a2Var, a.u(a2Var), a.u(h.f26272a), a.u(a2Var), a.u(ThreadEmbedMessage$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,9 +60,9 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         if (c10.y()) {
             str2 = c10.t(descriptor2, 0);
             str = c10.t(descriptor2, 1);
-            a2 a2Var = a2.f26972a;
+            a2 a2Var = a2.f26230a;
             obj = c10.v(descriptor2, 2, a2Var, null);
-            obj3 = c10.v(descriptor2, 3, h.f27014a, null);
+            obj3 = c10.v(descriptor2, 3, h.f26272a, null);
             obj2 = c10.v(descriptor2, 4, a2Var, null);
             obj4 = c10.v(descriptor2, 5, ThreadEmbedMessage$$serializer.INSTANCE, null);
             i10 = 63;
@@ -89,15 +89,15 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
                         i11 |= 2;
                         break;
                     case 2:
-                        obj5 = c10.v(descriptor2, 2, a2.f26972a, obj5);
+                        obj5 = c10.v(descriptor2, 2, a2.f26230a, obj5);
                         i11 |= 4;
                         break;
                     case 3:
-                        obj6 = c10.v(descriptor2, 3, h.f27014a, obj6);
+                        obj6 = c10.v(descriptor2, 3, h.f26272a, obj6);
                         i11 |= 8;
                         break;
                     case 4:
-                        obj7 = c10.v(descriptor2, 4, a2.f26972a, obj7);
+                        obj7 = c10.v(descriptor2, 4, a2.f26230a, obj7);
                         i11 |= 16;
                         break;
                     case 5:
@@ -120,7 +120,7 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         return new ThreadEmbed(i10, str2, str, (String) obj, (Boolean) obj3, (String) obj2, (ThreadEmbedMessage) obj4, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, qi.h, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -134,7 +134,7 @@ public final class ThreadEmbed$$serializer implements f0<ThreadEmbed> {
         c10.b(descriptor2);
     }
 
-    @Override // ti.f0
+    @Override // si.f0
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

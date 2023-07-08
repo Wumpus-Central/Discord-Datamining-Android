@@ -39,7 +39,7 @@ public final class SmoothScroller extends g {
         if (targetAlignment instanceof Scroller.TargetAlignment.Anywhere) {
             return super.calculateDtToFit(i10, i11, i12, i13, i14);
         }
-        throw new gf.q();
+        throw new ff.q();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

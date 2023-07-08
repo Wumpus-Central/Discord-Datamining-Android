@@ -10,7 +10,7 @@ import com.discord.react.FontManager;
 import com.discord.span.utilities.spannable.ClickableSpan;
 import com.discord.span.utilities.spannable.EmojiAccessibilitySpan;
 import com.facebook.drawee.span.DraweeSpanStringBuilder;
-import ki.u;
+import ji.u;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
@@ -65,7 +65,7 @@ public final class EmojiRendererKt {
         } else if (emojiContentNode instanceof UnicodeEmojiContentNode) {
             return RenderableEmoji.Companion.unicode(((UnicodeEmojiContentNode) emojiContentNode).getSurrogate());
         } else {
-            throw new gf.q();
+            throw new ff.q();
         }
     }
 }

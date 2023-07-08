@@ -13,7 +13,7 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import gf.x;
+import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -95,7 +95,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
         VideoStreamTextureView videoStreamTextureView = (VideoStreamTextureView) view;
         if (str != null) {
             videoStreamTextureView.startRenderingStream(str, new RenderListener(view));
-            unit = Unit.f20717a;
+            unit = Unit.f20663a;
         } else {
             unit = null;
         }
@@ -114,7 +114,7 @@ public final class VideoStreamViewManager extends SimpleViewManager<VideoStreamT
                     ScreenWakeLock.INSTANCE.releaseLock(currentActivity, WAKE_LOCK_KEY);
                 }
             }
-            Unit unit2 = Unit.f20717a;
+            Unit unit2 = Unit.f20663a;
         }
     }
 

@@ -2,7 +2,7 @@ package com.discord.bundle_updater;
 
 import android.webkit.CookieManager;
 import com.discord.resource_usage.DeviceResourceUsageRecorder;
-import ij.k;
+import hj.k;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import kotlin.Metadata;

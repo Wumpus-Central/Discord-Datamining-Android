@@ -13,6 +13,7 @@ import v0.a;
 
 /* loaded from: classes3.dex */
 public final class PostPreviewEmbedViewBinding {
+    public final SimpleDraweeView backgroundImage;
     public final SimpleDraweeView coverImage;
     public final DCDButton coverImageOverlayButton;
     public final DCDButton cta;
@@ -23,9 +24,10 @@ public final class PostPreviewEmbedViewBinding {
     public final TextView subtitle;
     public final TextView title;
 
-    private PostPreviewEmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, DCDButton dCDButton, DCDButton dCDButton2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, View view2, SpoilerView spoilerView, TextView textView, TextView textView2) {
+    private PostPreviewEmbedViewBinding(View view, SimpleDraweeView simpleDraweeView, SimpleDraweeView simpleDraweeView2, DCDButton dCDButton, DCDButton dCDButton2, SimpleDraweeSpanTextView simpleDraweeSpanTextView, View view2, SpoilerView spoilerView, TextView textView, TextView textView2) {
         this.rootView = view;
-        this.coverImage = simpleDraweeView;
+        this.backgroundImage = simpleDraweeView;
+        this.coverImage = simpleDraweeView2;
         this.coverImageOverlayButton = dCDButton;
         this.cta = dCDButton2;
         this.footer = simpleDraweeSpanTextView;
@@ -37,28 +39,32 @@ public final class PostPreviewEmbedViewBinding {
 
     public static PostPreviewEmbedViewBinding bind(View view) {
         View a10;
-        int i10 = R.id.cover_image;
+        int i10 = R.id.background_image;
         SimpleDraweeView simpleDraweeView = (SimpleDraweeView) a.a(view, i10);
         if (simpleDraweeView != null) {
-            i10 = R.id.cover_image_overlay_button;
-            DCDButton dCDButton = (DCDButton) a.a(view, i10);
-            if (dCDButton != null) {
-                i10 = R.id.cta;
-                DCDButton dCDButton2 = (DCDButton) a.a(view, i10);
-                if (dCDButton2 != null) {
-                    i10 = R.id.footer;
-                    SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) a.a(view, i10);
-                    if (!(simpleDraweeSpanTextView == null || (a10 = a.a(view, (i10 = R.id.header_divider))) == null)) {
-                        i10 = R.id.spoiler;
-                        SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
-                        if (spoilerView != null) {
-                            i10 = R.id.subtitle;
-                            TextView textView = (TextView) a.a(view, i10);
-                            if (textView != null) {
-                                i10 = R.id.title;
-                                TextView textView2 = (TextView) a.a(view, i10);
-                                if (textView2 != null) {
-                                    return new PostPreviewEmbedViewBinding(view, simpleDraweeView, dCDButton, dCDButton2, simpleDraweeSpanTextView, a10, spoilerView, textView, textView2);
+            i10 = R.id.cover_image;
+            SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) a.a(view, i10);
+            if (simpleDraweeView2 != null) {
+                i10 = R.id.cover_image_overlay_button;
+                DCDButton dCDButton = (DCDButton) a.a(view, i10);
+                if (dCDButton != null) {
+                    i10 = R.id.cta;
+                    DCDButton dCDButton2 = (DCDButton) a.a(view, i10);
+                    if (dCDButton2 != null) {
+                        i10 = R.id.footer;
+                        SimpleDraweeSpanTextView simpleDraweeSpanTextView = (SimpleDraweeSpanTextView) a.a(view, i10);
+                        if (!(simpleDraweeSpanTextView == null || (a10 = a.a(view, (i10 = R.id.header_divider))) == null)) {
+                            i10 = R.id.spoiler;
+                            SpoilerView spoilerView = (SpoilerView) a.a(view, i10);
+                            if (spoilerView != null) {
+                                i10 = R.id.subtitle;
+                                TextView textView = (TextView) a.a(view, i10);
+                                if (textView != null) {
+                                    i10 = R.id.title;
+                                    TextView textView2 = (TextView) a.a(view, i10);
+                                    if (textView2 != null) {
+                                        return new PostPreviewEmbedViewBinding(view, simpleDraweeView, simpleDraweeView2, dCDButton, dCDButton2, simpleDraweeSpanTextView, a10, spoilerView, textView, textView2);
+                                    }
                                 }
                             }
                         }

@@ -24,7 +24,7 @@ final class MediaEngineModule$stopLocalAudioRecording$1 extends s implements Fun
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Unit invoke(String str, Integer num) {
         invoke(str, num.intValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(String fileName, int i10) {

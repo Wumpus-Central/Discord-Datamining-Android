@@ -1,7 +1,7 @@
 package com.discord.misc.utilities.time;
 
 import co.discord.media_engine.b;
-import gf.n;
+import ff.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

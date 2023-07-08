@@ -5,7 +5,7 @@ import com.discord.crash_reporting.system_logs.HistoricalProcessExitReason;
 import com.discord.crash_reporting.system_logs.SystemLogUtils;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import java.util.List;
-import ki.v;
+import ji.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -31,7 +31,7 @@ public final class SystemLogReport$reportLastCrash$1 extends s implements Functi
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(SystemLogUtils.Tombstone tombstone) {
         invoke2(tombstone);
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke  reason: avoid collision after fix types in other method */

@@ -23,7 +23,7 @@ final class AudioManagerModule$initialize$3 extends s implements Function1<Integ
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     public final void invoke(int i10) {

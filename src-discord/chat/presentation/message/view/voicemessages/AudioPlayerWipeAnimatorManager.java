@@ -11,7 +11,7 @@ import android.os.Build;
 import com.discord.chat.R;
 import com.discord.chat.databinding.AudioPlayerViewBinding;
 import com.discord.theme.ThemeManagerKt;
-import gf.n;
+import ff.n;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;

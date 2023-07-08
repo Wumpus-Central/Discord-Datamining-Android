@@ -5,7 +5,7 @@ import androidx.core.os.d;
 import com.discord.mobile_voice_overlay.MobileVoiceOverlay;
 import com.discord.mobile_voice_overlay.views.OverlayVoiceSelectorBubbleDialog;
 import com.discord.primitives.ChannelId;
-import gf.x;
+import ff.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -27,7 +27,7 @@ final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
         m468invokeR7gqayM(channelId.m573unboximpl());
-        return Unit.f20717a;
+        return Unit.f20663a;
     }
 
     /* renamed from: invoke-R7gqayM  reason: not valid java name */
