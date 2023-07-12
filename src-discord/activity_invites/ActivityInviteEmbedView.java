@@ -472,11 +472,13 @@ public final class ActivityInviteEmbedView extends ConstraintLayout {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ActivityInviteEmbedView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
+        Lazy a10;
         q.g(context, "context");
         ActivityInviteEmbedViewBinding inflate = ActivityInviteEmbedViewBinding.inflate(LayoutInflater.from(context), this);
         q.f(inflate, "inflate(LayoutInflater.from(context), this)");
         this.binding = inflate;
-        this.grayscalePostprocessor$delegate = n.a(p.NONE, ActivityInviteEmbedView$grayscalePostprocessor$2.INSTANCE);
+        a10 = n.a(p.NONE, ActivityInviteEmbedView$grayscalePostprocessor$2.INSTANCE);
+        this.grayscalePostprocessor$delegate = a10;
         setBackgroundColor(ThemeManagerKt.getTheme().getBackgroundSecondary());
         ViewClippingUtilsKt.clipToRoundedRectangle(this, SizeUtilsKt.getDpToPx(8));
         SimpleDraweeView simpleDraweeView = inflate.startImage;

@@ -59,7 +59,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         BundleUpdater.Companion companion = BundleUpdater.Companion;
         companion.init(this);
         TTIMetrics.record$default(tTIMetrics, "BundlerUpdater.init()", 0L, null, false, 14, null);
-        ClientInfo.INSTANCE.init(this, BuildConfig.VERSION_NAME_RNA, BuildConfig.VERSION_CODE, "canary", "release", companion.instance().getManifestETag(), companion.instance().getOtaVersion());
+        ClientInfo.INSTANCE.init(this, BuildConfig.VERSION_NAME_RNA, BuildConfig.VERSION_CODE, BuildConfig.FLAVOR, "release", companion.instance().getManifestETag(), companion.instance().getOtaVersion());
         TTIMetrics.record$default(tTIMetrics, "ClientInfo.init()", 0L, null, false, 14, null);
         CacheDataSourceFactory.Companion.init(this);
         TTIMetrics.record$default(tTIMetrics, "CacheDataSourceFactory.init()", 0L, null, false, 14, null);

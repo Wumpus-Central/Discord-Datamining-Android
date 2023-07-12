@@ -4,6 +4,7 @@ import com.discord.billing.react.events.BillingManagerConnectionStateUpdated;
 import com.discord.billing.react.events.BillingManagerDowngradeCommand;
 import com.discord.billing.react.events.BillingManagerPurchaseUpdated;
 import com.discord.billing.types.SkuType;
+import com.discord.client_info.ClientInfo;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Promise;
@@ -30,7 +31,7 @@ public final class BillingManagerModule extends ReactContextBaseJavaModule {
     public BillingManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
         q.g(reactContext, "reactContext");
-        this.billingManager = new BillingManager(new BillingManagerModule$billingManager$1(this, reactContext), new BillingManagerModule$billingManager$2(this, reactContext), new BillingManagerModule$billingManager$3(this, reactContext));
+        this.billingManager = new BillingManager(ClientInfo.INSTANCE.isProdBuild(), new BillingManagerModule$billingManager$1(this, reactContext), new BillingManagerModule$billingManager$2(this, reactContext), new BillingManagerModule$billingManager$3(this, reactContext));
     }
 
     private final void getSkus(BillingManager billingManager, ReadableArray readableArray, SkuType skuType, Promise promise) {

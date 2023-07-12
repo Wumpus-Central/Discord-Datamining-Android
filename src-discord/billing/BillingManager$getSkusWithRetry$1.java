@@ -10,7 +10,6 @@ import com.discord.billing.types.SkuType;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
-import com.discord.misc.utilities.gradle.GradleUtils;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableNativeArray;
@@ -86,7 +85,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
             int i10 = this.label;
             if (i10 == 0) {
                 t.b(obj);
-                BillingManager billingManager = this.this$0;
+                final BillingManager billingManager = this.this$0;
                 SkuType skuType = this.$skuType;
                 List<String> list = this.$skuIds;
                 this.L$0 = billingManager;
@@ -103,8 +102,10 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                 billingClient.i(SkuDetailsParams.INSTANCE.create(skuType, list), new t1.g() { // from class: com.discord.billing.BillingManager$getSkusWithRetry$1$1$1$1
                     @Override // t1.g
                     public final void onSkuDetailsResponse(BillingResult billingResult, List<SkuDetails> list2) {
+                        boolean z10;
                         q.g(billingResult, "billingResult");
-                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                        z10 = BillingManager.this.isProdBuild;
+                        if (!z10) {
                             CrashReporting crashReporting = CrashReporting.INSTANCE;
                             int a10 = billingResult.a();
                             CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getSkusBackoff with " + a10, null, null, 6, null);
@@ -199,7 +200,9 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object d10;
+        boolean z10;
         boolean isNotOk;
+        boolean z11;
         d10 = d.d();
         int i10 = this.label;
         try {
@@ -232,7 +235,8 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                     billingManager.invoke(function1, "Sku fetch, bad response code: " + a10);
                 } else {
                     ReadableNativeArray serializeSkuDetails = SerializeSkuDetailsKt.serializeSkuDetails(component2);
-                    if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                    z11 = this.this$0.isProdBuild;
+                    if (!z11) {
                         CrashReporting crashReporting = CrashReporting.INSTANCE;
                         String jsonString = NativeArrayExtensionsKt.toJsonString(serializeSkuDetails);
                         CrashReporting.addBreadcrumb$default(crashReporting, "resolving getSkusBackoff with " + jsonString, null, null, 6, null);
@@ -242,7 +246,8 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
             }
         } catch (Exception e10) {
             if (e10 instanceof MaxAttemptsExceededException) {
-                if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                z10 = this.this$0.isProdBuild;
+                if (!z10) {
                     CrashReporting.INSTANCE.captureException(e10);
                 }
             } else if (!(e10 instanceof CancellationException)) {

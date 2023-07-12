@@ -182,11 +182,13 @@ public final class OverlappingCirclesView extends LinearLayout {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public PlaceholderItem(Context context, int i10, boolean z10, int i11, int i12, int i13) {
             super(context);
+            Lazy a10;
             q.g(context, "context");
             this.showSeparation = z10;
             this.overlapPx = i11;
             this.radius = i13 / 2.0f;
-            this.separatorClipPath$delegate = n.a(p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i12));
+            a10 = n.a(p.NONE, new OverlappingCirclesView$PlaceholderItem$separatorClipPath$2(this, i12));
+            this.separatorClipPath$delegate = a10;
             Paint paint = new Paint();
             paint.setColor(i10);
             paint.setAntiAlias(true);

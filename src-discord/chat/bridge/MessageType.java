@@ -59,14 +59,14 @@ public enum MessageType implements IntEnum {
     GUILD_INCIDENT_REPORT_RAID(38),
     GUILD_INCIDENT_REPORT_FALSE_ALARM(39);
     
+    private static final Lazy<KSerializer<Object>> $cachedSerializer$delegate;
     private static final Set<MessageType> CallTypes;
+    public static final Companion Companion = new Companion(null);
     private static final Set<MessageType> SystemTypes;
     private final Lazy isAutomodSystem$delegate;
     private final Lazy isCall$delegate;
     private final Lazy isSystem$delegate;
     private final int serialNumber;
-    public static final Companion Companion = new Companion(null);
-    private static final Lazy<KSerializer<Object>> $cachedSerializer$delegate = n.a(p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
 
     @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000bHÆ\u0001R\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u0007¨\u0006\f"}, d2 = {"Lcom/discord/chat/bridge/MessageType$Companion;", "", "()V", "CallTypes", "", "Lcom/discord/chat/bridge/MessageType;", "getCallTypes", "()Ljava/util/Set;", "SystemTypes", "getSystemTypes", "serializer", "Lkotlinx/serialization/KSerializer;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     /* loaded from: classes3.dex */
@@ -132,6 +132,7 @@ public enum MessageType implements IntEnum {
         MessageType messageType24;
         MessageType messageType25;
         MessageType messageType26;
+        Lazy<KSerializer<Object>> a10;
         MessageType messageType27 = CALL;
         MessageType messageType28 = GUILD_STREAM;
         EnumSet of2 = EnumSet.of(r0, messageType, messageType27, messageType2, messageType3, messageType4, messageType5, messageType6, messageType7, messageType8, messageType9, messageType10, messageType28, messageType11, messageType12, messageType13, messageType14, messageType15, messageType16, messageType17, messageType18, messageType19, messageType20, messageType21, messageType22, messageType23, messageType24, messageType25, messageType26);
@@ -140,6 +141,8 @@ public enum MessageType implements IntEnum {
         EnumSet of3 = EnumSet.of(messageType27, messageType28);
         q.f(of3, "of(\n            CALL,\n  …  GUILD_STREAM,\n        )");
         CallTypes = of3;
+        a10 = n.a(p.PUBLICATION, MessageType$Companion$$cachedSerializer$delegate$1.INSTANCE);
+        $cachedSerializer$delegate = a10;
     }
 
     MessageType(int i10) {

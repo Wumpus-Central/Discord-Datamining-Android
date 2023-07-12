@@ -11,7 +11,6 @@ import com.discord.billing.types.SkuType;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.backoff.MaxAttemptsExceededException;
-import com.discord.misc.utilities.gradle.GradleUtils;
 import com.discord.react.utilities.NativeArrayExtensionsKt;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableNativeArray;
@@ -87,7 +86,7 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
             int i10 = this.label;
             if (i10 == 0) {
                 t.b(obj);
-                BillingManager billingManager = this.this$0;
+                final BillingManager billingManager = this.this$0;
                 SkuType skuType = this.$skuType;
                 List<String> list = this.$skuIds;
                 this.L$0 = billingManager;
@@ -104,9 +103,11 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 billingClient.g(QueryProductDetailsParams.INSTANCE.create(ProductType.valueOf(skuType.name()), list), new t1.d() { // from class: com.discord.billing.BillingManager$getProductsWithRetry$1$1$1$1
                     @Override // t1.d
                     public final void onProductDetailsResponse(BillingResult billingResult, List<ProductDetails> productDetails) {
+                        boolean z10;
                         q.g(billingResult, "billingResult");
                         q.g(productDetails, "productDetails");
-                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                        z10 = BillingManager.this.isProdBuild;
+                        if (!z10) {
                             CrashReporting crashReporting = CrashReporting.INSTANCE;
                             int a10 = billingResult.a();
                             CrashReporting.addBreadcrumb$default(crashReporting, "Resuming getProductsBackoff with " + a10, null, null, 6, null);
@@ -201,7 +202,9 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object d10;
+        boolean z10;
         boolean isNotOk;
+        boolean z11;
         d10 = d.d();
         int i10 = this.label;
         try {
@@ -235,7 +238,8 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
                 } else {
                     try {
                         ReadableNativeArray serializeProductDetails = SerializeProductDetailsKt.serializeProductDetails(component2);
-                        if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                        z11 = this.this$0.isProdBuild;
+                        if (!z11) {
                             CrashReporting crashReporting = CrashReporting.INSTANCE;
                             String jsonString = NativeArrayExtensionsKt.toJsonString(serializeProductDetails);
                             CrashReporting.addBreadcrumb$default(crashReporting, "resolving getProductsBackoff with " + jsonString, null, null, 6, null);
@@ -248,7 +252,8 @@ public final class BillingManager$getProductsWithRetry$1 extends k implements Fu
             }
         } catch (Exception e11) {
             if (e11 instanceof MaxAttemptsExceededException) {
-                if (!GradleUtils.INSTANCE.isProductionBuild()) {
+                z10 = this.this$0.isProdBuild;
+                if (!z10) {
                     CrashReporting.INSTANCE.captureException(e11);
                 }
             } else if (!(e11 instanceof CancellationException)) {
