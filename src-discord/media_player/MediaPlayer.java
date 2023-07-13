@@ -34,7 +34,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 52\u00020\u0001:\u0003567B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0019\u001a\u00020\u0016H\u0007J\u0006\u0010\u001a\u001a\u00020\u001bJ\b\u0010\u001c\u001a\u00020\u0016H\u0007J\u0006\u0010\u001d\u001a\u00020\u001bJ\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u001fJ\u0006\u0010!\u001a\u00020\u001fJ\u0006\u0010\"\u001a\u00020\u001fJ\b\u0010#\u001a\u00020\nH\u0007J\b\u0010$\u001a\u00020\nH\u0007JF\u0010%\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010&\u001a\u00020\u001f2\b\b\u0002\u0010'\u001a\u00020\u001f2\b\b\u0002\u0010(\u001a\u00020\u001b2\n\b\u0002\u0010)\u001a\u0004\u0018\u00010*2\n\b\u0002\u0010+\u001a\u0004\u0018\u00010,H\u0007J\b\u0010-\u001a\u00020\nH\u0007J\u000e\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\u001bJ\u0010\u00100\u001a\u00020\n2\u0006\u00101\u001a\u00020\tH\u0002J\u0010\u00102\u001a\u00020\n2\u0006\u00103\u001a\u00020\u0016H\u0007J\u0006\u00104\u001a\u00020\u001fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R&\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\n0\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000e¨\u00068"}, d2 = {"Lcom/discord/media_player/MediaPlayer;", "", "exoPlayer", "Lcom/google/android/exoplayer2/SimpleExoPlayer;", "dataSourceFactory", "Lcom/google/android/exoplayer2/upstream/DataSource$Factory;", "(Lcom/google/android/exoplayer2/SimpleExoPlayer;Lcom/google/android/exoplayer2/upstream/DataSource$Factory;)V", "eventListener", "Lkotlin/Function1;", "Lcom/discord/media_player/MediaPlayer$Event;", "", "getEventListener", "()Lkotlin/jvm/functions/Function1;", "setEventListener", "(Lkotlin/jvm/functions/Function1;)V", "mediaSource", "Lcom/discord/media_player/MediaSource;", "getMediaSource", "()Lcom/discord/media_player/MediaSource;", "setMediaSource", "(Lcom/discord/media_player/MediaSource;)V", "volumeListener", "", "getVolumeListener", "setVolumeListener", "bufferedPercentage", "currentPositionMs", "", "currentPositionPercentage", "durationMs", "hasEnded", "", "hasError", "isMuted", "isPlaying", "pause", "play", "preparePlayer", "autoPlayWhenReady", "loopMedia", "initialSeekPositionMs", "playerView", "Lcom/discord/media_player/MediaPlayerView;", "playerControlView", "Lcom/discord/media_player/MediaPlayerView$ControlView;", "reset", "seekTo", "positionMs", "setEvent", "event", "setVolume", "volume", "shouldPlay", "Companion", "Event", "Factory", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class MediaPlayer {
     private static final int BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS = 5000;
     private static final int BUFFER_FOR_PLAYBACK_MS = 2500;
@@ -48,22 +48,22 @@ public final class MediaPlayer {
     private Function1<? super Float, Unit> volumeListener = MediaPlayer$volumeListener$1.INSTANCE;
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Companion;", "", "()V", "BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS", "", "BUFFER_FOR_PLAYBACK_MS", "MAX_BUFFER_MS", "MIN_BUFFER_MS", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0006\u0003\u0004\u0005\u0006\u0007\bB\u0007\b\u0004¢\u0006\u0002\u0010\u0002\u0082\u0001\u0006\t\n\u000b\f\r\u000e¨\u0006\u000f"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event;", "", "()V", "BufferEnd", "BufferStart", "Paused", "PlaybackEnded", "PlaybackError", "StartedPlaying", "Lcom/discord/media_player/MediaPlayer$Event$BufferEnd;", "Lcom/discord/media_player/MediaPlayer$Event$BufferStart;", "Lcom/discord/media_player/MediaPlayer$Event$Paused;", "Lcom/discord/media_player/MediaPlayer$Event$PlaybackEnded;", "Lcom/discord/media_player/MediaPlayer$Event$PlaybackError;", "Lcom/discord/media_player/MediaPlayer$Event$StartedPlaying;", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static abstract class Event {
 
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$BufferEnd;", "Lcom/discord/media_player/MediaPlayer$Event;", "()V", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class BufferEnd extends Event {
             public static final BufferEnd INSTANCE = new BufferEnd();
 
@@ -73,7 +73,7 @@ public final class MediaPlayer {
         }
 
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$BufferStart;", "Lcom/discord/media_player/MediaPlayer$Event;", "()V", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class BufferStart extends Event {
             public static final BufferStart INSTANCE = new BufferStart();
 
@@ -83,7 +83,7 @@ public final class MediaPlayer {
         }
 
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$Paused;", "Lcom/discord/media_player/MediaPlayer$Event;", "()V", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class Paused extends Event {
             public static final Paused INSTANCE = new Paused();
 
@@ -93,7 +93,7 @@ public final class MediaPlayer {
         }
 
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$PlaybackEnded;", "Lcom/discord/media_player/MediaPlayer$Event;", "()V", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class PlaybackEnded extends Event {
             public static final PlaybackEnded INSTANCE = new PlaybackEnded();
 
@@ -103,18 +103,18 @@ public final class MediaPlayer {
         }
 
         @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0011\u0012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0002\u0010\u0005J\r\u0010\b\u001a\u00060\u0003j\u0002`\u0004HÆ\u0003J\u0017\u0010\t\u001a\u00020\u00002\f\b\u0002\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004HÆ\u0001J\u0013\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rHÖ\u0003J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001J\t\u0010\u0010\u001a\u00020\u0011HÖ\u0001R\u0015\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0012"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$PlaybackError;", "Lcom/discord/media_player/MediaPlayer$Event;", "exception", "Ljava/lang/Exception;", "Lkotlin/Exception;", "(Ljava/lang/Exception;)V", "getException", "()Ljava/lang/Exception;", "component1", "copy", "equals", "", "other", "", "hashCode", "", "toString", "", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class PlaybackError extends Event {
             private final Exception exception;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            
             public PlaybackError(Exception exception) {
                 super(null);
                 q.g(exception, "exception");
                 this.exception = exception;
             }
 
-            public static /* synthetic */ PlaybackError copy$default(PlaybackError playbackError, Exception exc, int i10, Object obj) {
+            public static  PlaybackError copy$default(PlaybackError playbackError, Exception exc, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
                     exc = playbackError.exception;
                 }
@@ -152,7 +152,7 @@ public final class MediaPlayer {
         }
 
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Event$StartedPlaying;", "Lcom/discord/media_player/MediaPlayer$Event;", "()V", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
+        
         public static final class StartedPlaying extends Event {
             public static final StartedPlaying INSTANCE = new StartedPlaying();
 
@@ -164,13 +164,13 @@ public final class MediaPlayer {
         private Event() {
         }
 
-        public /* synthetic */ Event(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Event(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/discord/media_player/MediaPlayer$Factory;", "", "()V", "create", "Lcom/discord/media_player/MediaPlayer;", "context", "Landroid/content/Context;", "media_player_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Factory {
         public static final Factory INSTANCE = new Factory();
 
@@ -192,28 +192,28 @@ public final class MediaPlayer {
         q.g(dataSourceFactory, "dataSourceFactory");
         this.exoPlayer = exoPlayer;
         this.dataSourceFactory = dataSourceFactory;
-        exoPlayer.r(new Player.a() { // from class: com.discord.media_player.MediaPlayer.1
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onEvents(Player player, Player.Events events) {
+        exoPlayer.r(new Player.a() { 
+            @Override 
+            public   void onEvents(Player player, Player.Events events) {
                 o.a(this, player, events);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onExperimentalOffloadSchedulingEnabledChanged(boolean z10) {
+            @Override 
+            public   void onExperimentalOffloadSchedulingEnabledChanged(boolean z10) {
                 o.b(this, z10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onExperimentalSleepingForOffloadChanged(boolean z10) {
+            @Override 
+            public   void onExperimentalSleepingForOffloadChanged(boolean z10) {
                 o.c(this, z10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onIsLoadingChanged(boolean z10) {
+            @Override 
+            public   void onIsLoadingChanged(boolean z10) {
                 o.d(this, z10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             public void onIsPlayingChanged(boolean z10) {
                 o.e(this, z10);
                 if (z10) {
@@ -223,28 +223,28 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onLoadingChanged(boolean z10) {
+            public   void onLoadingChanged(boolean z10) {
                 o.f(this, z10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onMediaItemTransition(MediaItem mediaItem, int i10) {
+            @Override 
+            public   void onMediaItemTransition(MediaItem mediaItem, int i10) {
                 o.g(this, mediaItem, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onPlayWhenReadyChanged(boolean z10, int i10) {
+            @Override 
+            public   void onPlayWhenReadyChanged(boolean z10, int i10) {
                 o.h(this, z10, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
+            @Override 
+            public   void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
                 o.i(this, playbackParameters);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             public void onPlaybackStateChanged(int i10) {
                 o.j(this, i10);
                 if (i10 == 2) {
@@ -256,12 +256,12 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onPlaybackSuppressionReasonChanged(int i10) {
+            @Override 
+            public   void onPlaybackSuppressionReasonChanged(int i10) {
                 o.k(this, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             public void onPlayerError(ExoPlaybackException error) {
                 String str;
                 q.g(error, "error");
@@ -279,194 +279,194 @@ public final class MediaPlayer {
                 log.e(simpleName, "Playback error for feature: " + str, error);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onPlayerStateChanged(boolean z10, int i10) {
+            public   void onPlayerStateChanged(boolean z10, int i10) {
                 o.m(this, z10, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onPositionDiscontinuity(int i10) {
+            @Override 
+            public   void onPositionDiscontinuity(int i10) {
                 o.n(this, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onRepeatModeChanged(int i10) {
+            @Override 
+            public   void onRepeatModeChanged(int i10) {
                 o.o(this, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onSeekProcessed() {
+            public   void onSeekProcessed() {
                 o.p(this);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onShuffleModeEnabledChanged(boolean z10) {
+            @Override 
+            public   void onShuffleModeEnabledChanged(boolean z10) {
                 o.q(this, z10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onStaticMetadataChanged(List list) {
+            @Override 
+            public   void onStaticMetadataChanged(List list) {
                 o.r(this, list);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, int i10) {
+            @Override 
+            public   void onTimelineChanged(Timeline timeline, int i10) {
                 o.s(this, timeline, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onTimelineChanged(Timeline timeline, Object obj, int i10) {
+            public   void onTimelineChanged(Timeline timeline, Object obj, int i10) {
                 o.t(this, timeline, obj, i10);
             }
 
-            @Override // com.google.android.exoplayer2.Player.a
-            public /* bridge */ /* synthetic */ void onTracksChanged(TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
+            @Override 
+            public   void onTracksChanged(TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
                 o.u(this, trackGroupArray, trackSelectionArray);
             }
         });
-        exoPlayer.E0(new AnalyticsListener() { // from class: com.discord.media_player.MediaPlayer.2
-            public /* bridge */ /* synthetic */ void onAudioAttributesChanged(AnalyticsListener.EventTime eventTime, AudioAttributes audioAttributes) {
+        exoPlayer.E0(new AnalyticsListener() { 
+            public   void onAudioAttributesChanged(AnalyticsListener.EventTime eventTime, AudioAttributes audioAttributes) {
                 d1.a(this, eventTime, audioAttributes);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioDecoderInitialized(AnalyticsListener.EventTime eventTime, String str, long j10) {
+            @Override 
+            public   void onAudioDecoderInitialized(AnalyticsListener.EventTime eventTime, String str, long j10) {
                 d1.b(this, eventTime, str, j10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioDecoderReleased(AnalyticsListener.EventTime eventTime, String str) {
+            @Override 
+            public   void onAudioDecoderReleased(AnalyticsListener.EventTime eventTime, String str) {
                 d1.c(this, eventTime, str);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioDisabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
+            @Override 
+            public   void onAudioDisabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
                 d1.d(this, eventTime, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioEnabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
+            @Override 
+            public   void onAudioEnabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
                 d1.e(this, eventTime, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onAudioInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format) {
+            public   void onAudioInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format) {
                 d1.f(this, eventTime, format);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
+            @Override 
+            public   void onAudioInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
                 d1.g(this, eventTime, format, decoderReuseEvaluation);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioPositionAdvancing(AnalyticsListener.EventTime eventTime, long j10) {
+            @Override 
+            public   void onAudioPositionAdvancing(AnalyticsListener.EventTime eventTime, long j10) {
                 d1.h(this, eventTime, j10);
             }
 
-            public /* bridge */ /* synthetic */ void onAudioSessionIdChanged(AnalyticsListener.EventTime eventTime, int i10) {
+            public   void onAudioSessionIdChanged(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.i(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioSinkError(AnalyticsListener.EventTime eventTime, Exception exc) {
+            @Override 
+            public   void onAudioSinkError(AnalyticsListener.EventTime eventTime, Exception exc) {
                 d1.j(this, eventTime, exc);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onAudioUnderrun(AnalyticsListener.EventTime eventTime, int i10, long j10, long j11) {
+            @Override 
+            public   void onAudioUnderrun(AnalyticsListener.EventTime eventTime, int i10, long j10, long j11) {
                 d1.k(this, eventTime, i10, j10, j11);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onBandwidthEstimate(AnalyticsListener.EventTime eventTime, int i10, long j10, long j11) {
+            @Override 
+            public   void onBandwidthEstimate(AnalyticsListener.EventTime eventTime, int i10, long j10, long j11) {
                 d1.l(this, eventTime, i10, j10, j11);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onDecoderDisabled(AnalyticsListener.EventTime eventTime, int i10, DecoderCounters decoderCounters) {
+            public   void onDecoderDisabled(AnalyticsListener.EventTime eventTime, int i10, DecoderCounters decoderCounters) {
                 d1.m(this, eventTime, i10, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onDecoderEnabled(AnalyticsListener.EventTime eventTime, int i10, DecoderCounters decoderCounters) {
+            public   void onDecoderEnabled(AnalyticsListener.EventTime eventTime, int i10, DecoderCounters decoderCounters) {
                 d1.n(this, eventTime, i10, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onDecoderInitialized(AnalyticsListener.EventTime eventTime, int i10, String str, long j10) {
+            public   void onDecoderInitialized(AnalyticsListener.EventTime eventTime, int i10, String str, long j10) {
                 d1.o(this, eventTime, i10, str, j10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onDecoderInputFormatChanged(AnalyticsListener.EventTime eventTime, int i10, Format format) {
+            public   void onDecoderInputFormatChanged(AnalyticsListener.EventTime eventTime, int i10, Format format) {
                 d1.p(this, eventTime, i10, format);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDownstreamFormatChanged(AnalyticsListener.EventTime eventTime, MediaLoadData mediaLoadData) {
+            @Override 
+            public   void onDownstreamFormatChanged(AnalyticsListener.EventTime eventTime, MediaLoadData mediaLoadData) {
                 d1.q(this, eventTime, mediaLoadData);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmKeysLoaded(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onDrmKeysLoaded(AnalyticsListener.EventTime eventTime) {
                 d1.r(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmKeysRemoved(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onDrmKeysRemoved(AnalyticsListener.EventTime eventTime) {
                 d1.s(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmKeysRestored(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onDrmKeysRestored(AnalyticsListener.EventTime eventTime) {
                 d1.t(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmSessionAcquired(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onDrmSessionAcquired(AnalyticsListener.EventTime eventTime) {
                 d1.u(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmSessionManagerError(AnalyticsListener.EventTime eventTime, Exception exc) {
+            @Override 
+            public   void onDrmSessionManagerError(AnalyticsListener.EventTime eventTime, Exception exc) {
                 d1.v(this, eventTime, exc);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDrmSessionReleased(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onDrmSessionReleased(AnalyticsListener.EventTime eventTime) {
                 d1.w(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onDroppedVideoFrames(AnalyticsListener.EventTime eventTime, int i10, long j10) {
+            @Override 
+            public   void onDroppedVideoFrames(AnalyticsListener.EventTime eventTime, int i10, long j10) {
                 d1.x(this, eventTime, i10, j10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onEvents(Player player, AnalyticsListener.Events events) {
+            @Override 
+            public   void onEvents(Player player, AnalyticsListener.Events events) {
                 d1.y(this, player, events);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onIsLoadingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
+            @Override 
+            public   void onIsLoadingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
                 d1.z(this, eventTime, z10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onIsPlayingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
+            @Override 
+            public   void onIsPlayingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
                 d1.A(this, eventTime, z10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             public void onLoadCanceled(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
@@ -477,7 +477,7 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             public void onLoadCompleted(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
@@ -488,7 +488,7 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             public void onLoadError(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData, IOException error, boolean z10) {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
@@ -500,173 +500,173 @@ public final class MediaPlayer {
                 }
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onLoadStarted(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
+            @Override 
+            public   void onLoadStarted(AnalyticsListener.EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
                 d1.B(this, eventTime, loadEventInfo, mediaLoadData);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onLoadingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
+            public   void onLoadingChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
                 d1.C(this, eventTime, z10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onMediaItemTransition(AnalyticsListener.EventTime eventTime, MediaItem mediaItem, int i10) {
+            @Override 
+            public   void onMediaItemTransition(AnalyticsListener.EventTime eventTime, MediaItem mediaItem, int i10) {
                 d1.D(this, eventTime, mediaItem, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onMetadata(AnalyticsListener.EventTime eventTime, com.google.android.exoplayer2.metadata.Metadata metadata) {
+            @Override 
+            public   void onMetadata(AnalyticsListener.EventTime eventTime, com.google.android.exoplayer2.metadata.Metadata metadata) {
                 d1.E(this, eventTime, metadata);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlayWhenReadyChanged(AnalyticsListener.EventTime eventTime, boolean z10, int i10) {
+            @Override 
+            public   void onPlayWhenReadyChanged(AnalyticsListener.EventTime eventTime, boolean z10, int i10) {
                 d1.F(this, eventTime, z10, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlaybackParametersChanged(AnalyticsListener.EventTime eventTime, PlaybackParameters playbackParameters) {
+            @Override 
+            public   void onPlaybackParametersChanged(AnalyticsListener.EventTime eventTime, PlaybackParameters playbackParameters) {
                 d1.G(this, eventTime, playbackParameters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlaybackStateChanged(AnalyticsListener.EventTime eventTime, int i10) {
+            @Override 
+            public   void onPlaybackStateChanged(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.H(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlaybackSuppressionReasonChanged(AnalyticsListener.EventTime eventTime, int i10) {
+            @Override 
+            public   void onPlaybackSuppressionReasonChanged(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.I(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlayerError(AnalyticsListener.EventTime eventTime, ExoPlaybackException exoPlaybackException) {
+            @Override 
+            public   void onPlayerError(AnalyticsListener.EventTime eventTime, ExoPlaybackException exoPlaybackException) {
                 d1.J(this, eventTime, exoPlaybackException);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPlayerReleased(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onPlayerReleased(AnalyticsListener.EventTime eventTime) {
                 d1.K(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onPlayerStateChanged(AnalyticsListener.EventTime eventTime, boolean z10, int i10) {
+            public   void onPlayerStateChanged(AnalyticsListener.EventTime eventTime, boolean z10, int i10) {
                 d1.L(this, eventTime, z10, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onPositionDiscontinuity(AnalyticsListener.EventTime eventTime, int i10) {
+            @Override 
+            public   void onPositionDiscontinuity(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.M(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onRenderedFirstFrame(AnalyticsListener.EventTime eventTime, Surface surface) {
+            @Override 
+            public   void onRenderedFirstFrame(AnalyticsListener.EventTime eventTime, Surface surface) {
                 d1.N(this, eventTime, surface);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onRepeatModeChanged(AnalyticsListener.EventTime eventTime, int i10) {
+            @Override 
+            public   void onRepeatModeChanged(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.O(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onSeekProcessed(AnalyticsListener.EventTime eventTime) {
+            public   void onSeekProcessed(AnalyticsListener.EventTime eventTime) {
                 d1.P(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onSeekStarted(AnalyticsListener.EventTime eventTime) {
+            @Override 
+            public   void onSeekStarted(AnalyticsListener.EventTime eventTime) {
                 d1.Q(this, eventTime);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onShuffleModeChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
+            @Override 
+            public   void onShuffleModeChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
                 d1.R(this, eventTime, z10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onSkipSilenceEnabledChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
+            @Override 
+            public   void onSkipSilenceEnabledChanged(AnalyticsListener.EventTime eventTime, boolean z10) {
                 d1.S(this, eventTime, z10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onStaticMetadataChanged(AnalyticsListener.EventTime eventTime, List list) {
+            @Override 
+            public   void onStaticMetadataChanged(AnalyticsListener.EventTime eventTime, List list) {
                 d1.T(this, eventTime, list);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onSurfaceSizeChanged(AnalyticsListener.EventTime eventTime, int i10, int i11) {
+            @Override 
+            public   void onSurfaceSizeChanged(AnalyticsListener.EventTime eventTime, int i10, int i11) {
                 d1.U(this, eventTime, i10, i11);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onTimelineChanged(AnalyticsListener.EventTime eventTime, int i10) {
+            @Override 
+            public   void onTimelineChanged(AnalyticsListener.EventTime eventTime, int i10) {
                 d1.V(this, eventTime, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onTracksChanged(AnalyticsListener.EventTime eventTime, TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
+            @Override 
+            public   void onTracksChanged(AnalyticsListener.EventTime eventTime, TrackGroupArray trackGroupArray, TrackSelectionArray trackSelectionArray) {
                 d1.W(this, eventTime, trackGroupArray, trackSelectionArray);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onUpstreamDiscarded(AnalyticsListener.EventTime eventTime, MediaLoadData mediaLoadData) {
+            @Override 
+            public   void onUpstreamDiscarded(AnalyticsListener.EventTime eventTime, MediaLoadData mediaLoadData) {
                 d1.X(this, eventTime, mediaLoadData);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoDecoderInitialized(AnalyticsListener.EventTime eventTime, String str, long j10) {
+            @Override 
+            public   void onVideoDecoderInitialized(AnalyticsListener.EventTime eventTime, String str, long j10) {
                 d1.Y(this, eventTime, str, j10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoDecoderReleased(AnalyticsListener.EventTime eventTime, String str) {
+            @Override 
+            public   void onVideoDecoderReleased(AnalyticsListener.EventTime eventTime, String str) {
                 d1.Z(this, eventTime, str);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoDisabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
+            @Override 
+            public   void onVideoDisabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
                 d1.a0(this, eventTime, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoEnabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
+            @Override 
+            public   void onVideoEnabled(AnalyticsListener.EventTime eventTime, DecoderCounters decoderCounters) {
                 d1.b0(this, eventTime, decoderCounters);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoFrameProcessingOffset(AnalyticsListener.EventTime eventTime, long j10, int i10) {
+            @Override 
+            public   void onVideoFrameProcessingOffset(AnalyticsListener.EventTime eventTime, long j10, int i10) {
                 d1.c0(this, eventTime, j10, i10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
+            @Override 
             @Deprecated
-            public /* bridge */ /* synthetic */ void onVideoInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format) {
+            public   void onVideoInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format) {
                 d1.d0(this, eventTime, format);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
+            @Override 
+            public   void onVideoInputFormatChanged(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
                 d1.e0(this, eventTime, format, decoderReuseEvaluation);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVideoSizeChanged(AnalyticsListener.EventTime eventTime, int i10, int i11, int i12, float f10) {
+            @Override 
+            public   void onVideoSizeChanged(AnalyticsListener.EventTime eventTime, int i10, int i11, int i12, float f10) {
                 d1.f0(this, eventTime, i10, i11, i12, f10);
             }
 
-            @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
-            public /* bridge */ /* synthetic */ void onVolumeChanged(AnalyticsListener.EventTime eventTime, float f10) {
+            @Override 
+            public   void onVolumeChanged(AnalyticsListener.EventTime eventTime, float f10) {
                 d1.g0(this, eventTime, f10);
             }
         });
     }
 
-    public static /* synthetic */ void preparePlayer$default(MediaPlayer mediaPlayer, MediaSource mediaSource, boolean z10, boolean z11, long j10, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView, int i10, Object obj) {
+    public static  void preparePlayer$default(MediaPlayer mediaPlayer, MediaSource mediaSource, boolean z10, boolean z11, long j10, MediaPlayerView mediaPlayerView, MediaPlayerView.ControlView controlView, int i10, Object obj) {
         boolean z12 = false;
         boolean z13 = (i10 & 2) != 0 ? false : z10;
         if ((i10 & 4) == 0) {
@@ -681,7 +681,7 @@ public final class MediaPlayer {
         mediaPlayer.preparePlayer(mediaSource, z13, z12, j11, mediaPlayerView2, controlView2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final synchronized void setEvent(Event event) {
         this.eventListener.invoke(event);
     }

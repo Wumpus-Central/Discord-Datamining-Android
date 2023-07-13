@@ -15,19 +15,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \b2\u00020\u0001:\u0001\bB\u0013\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0005J\u0006\u0010\u0006\u001a\u00020\u0007J\f\u0010\u0006\u001a\u00020\u0007*\u00020\u0004H\u0002R\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/media/react/GetPhotosData;", "", "edges", "", "Lcom/discord/media/utils/ContentResolverMedia;", "(Ljava/util/List;)V", "toNativeMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "Companion", "media_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class GetPhotosData {
     public static final Companion Companion = new Companion(null);
     public static final String FAILED_TO_LOAD = "E_UNABLE_TO_LOAD";
     private final List<ContentResolverMedia> edges;
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/media/react/GetPhotosData$Companion;", "", "()V", "FAILED_TO_LOAD", "", "media_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }

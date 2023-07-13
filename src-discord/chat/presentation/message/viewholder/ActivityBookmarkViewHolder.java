@@ -9,12 +9,12 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u000e\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\r"}, d2 = {"Lcom/discord/chat/presentation/message/viewholder/ActivityBookmarkViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MessagePartViewHolder;", "activityBookmarkView", "Lcom/discord/chat/presentation/message/view/ActivityBookmarkView;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "(Lcom/discord/chat/presentation/message/view/ActivityBookmarkView;Lcom/discord/chat/presentation/events/ChatEventHandler;)V", "getEventHandler", "()Lcom/discord/chat/presentation/events/ChatEventHandler;", "bind", "", "activityMessageAccessory", "Lcom/discord/chat/presentation/message/messagepart/ActivityBookmarkMessageAccessory;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class ActivityBookmarkViewHolder extends MessagePartViewHolder {
     private final ActivityBookmarkView activityBookmarkView;
     private final ChatEventHandler eventHandler;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public ActivityBookmarkViewHolder(ActivityBookmarkView activityBookmarkView, ChatEventHandler eventHandler) {
         super(activityBookmarkView, null);
         q.g(activityBookmarkView, "activityBookmarkView");
@@ -23,7 +23,7 @@ public final class ActivityBookmarkViewHolder extends MessagePartViewHolder {
         this.eventHandler = eventHandler;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void bind$lambda$1$lambda$0(ActivityBookmarkEmbedImpl activityBookmarkEmbed, ActivityBookmarkViewHolder this$0, View view) {
         q.g(activityBookmarkEmbed, "$activityBookmarkEmbed");
         q.g(this$0, "this$0");
@@ -40,8 +40,8 @@ public final class ActivityBookmarkViewHolder extends MessagePartViewHolder {
         activityBookmarkView.setDescription(activityBookmarkEmbed.getDescription());
         activityBookmarkView.setAvatarUris(activityBookmarkEmbed.getParticipantAvatarUris());
         activityBookmarkView.setParticipantsText(activityBookmarkEmbed.getParticipantsText());
-        activityBookmarkView.setOnLaunchButtonClickListener(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.a
-            @Override // android.view.View.OnClickListener
+        activityBookmarkView.setOnLaunchButtonClickListener(new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 ActivityBookmarkViewHolder.bind$lambda$1$lambda$0(ActivityBookmarkEmbedImpl.this, this, view);
             }

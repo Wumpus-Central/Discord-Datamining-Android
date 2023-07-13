@@ -19,14 +19,14 @@ import si.n1;
 
 @f
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 >2\u00020\u0001:\u0002=>Bp\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012ø\u0001\u0000¢\u0006\u0002\u0010\u0013BN\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0010ø\u0001\u0000¢\u0006\u0002\u0010\u0014J\t\u0010#\u001a\u00020\u0005HÆ\u0003J\t\u0010$\u001a\u00020\u0005HÆ\u0003J\t\u0010%\u001a\u00020\u0005HÆ\u0003J\u0012\u0010&\u001a\b\u0012\u0004\u0012\u00020\n0\tHÆ\u0003ø\u0001\u0000J\u0019\u0010'\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b(\u0010\u001bJ\u0019\u0010)\u001a\u00020\fHÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b*\u0010\u001bJ\t\u0010+\u001a\u00020\u0003HÆ\u0003J\u0019\u0010,\u001a\u00020\u0010HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b-\u0010\u0016Jl\u0010.\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u0010HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b/\u00100J\u0013\u00101\u001a\u0002022\b\u00103\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00104\u001a\u00020\u0003HÖ\u0001J\t\u00105\u001a\u00020\u0005HÖ\u0001J!\u00106\u001a\u0002072\u0006\u00108\u001a\u00020\u00002\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020<HÇ\u0001R\u001c\u0010\u000f\u001a\u00020\u0010ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u0017\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u001c\u0010\r\u001a\u00020\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001bR\u001a\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\tø\u0001\u0000¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u001c\u0010\u000b\u001a\u00020\fø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b \u0010\u001bR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u001bR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001b\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006?"}, d2 = {"Lcom/discord/chat/bridge/summaries/Summary;", "", "seen1", "", "id", "", "topic", "summShort", "people", "", "Lcom/discord/primitives/UserId;", "startId", "Lcom/discord/primitives/MessageId;", "endId", "count", "channelId", "Lcom/discord/primitives/ChannelId;", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ILcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-o4g7jtM", "()J", "J", "getCount", "()I", "getEndId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getId", "getPeople", "()Ljava/util/List;", "getStartId-3Eiw7ao", "getSummShort", "getTopic", "component1", "component2", "component3", "component4", "component5", "component5-3Eiw7ao", "component6", "component6-3Eiw7ao", "component7", "component8", "component8-o4g7jtM", "copy", "copy-H5KhIT0", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJ)Lcom/discord/chat/bridge/summaries/Summary;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class Summary {
     public static final Companion Companion = new Companion(null);
     private final long channelId;
     private final int count;
     private final String endId;
 
-    /* renamed from: id  reason: collision with root package name */
+    
     private final String f6890id;
     private final List<UserId> people;
     private final String startId;
@@ -34,12 +34,12 @@ public final class Summary {
     private final String topic;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/summaries/Summary$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/summaries/Summary;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -62,11 +62,11 @@ public final class Summary {
         this.channelId = channelId.m573unboximpl();
     }
 
-    public /* synthetic */ Summary(int i10, String str, String str2, String str3, List list, String str4, String str5, int i11, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
+    public  Summary(int i10, String str, String str2, String str3, List list, String str4, String str5, int i11, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
         this(i10, str, str2, str3, list, str4, str5, i11, channelId, serializationConstructorMarker);
     }
 
-    public /* synthetic */ Summary(String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  Summary(String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, str2, str3, list, str4, str5, i10, j10);
     }
 
@@ -101,12 +101,12 @@ public final class Summary {
         return this.people;
     }
 
-    /* renamed from: component5-3Eiw7ao  reason: not valid java name */
+    
     public final String m134component53Eiw7ao() {
         return this.startId;
     }
 
-    /* renamed from: component6-3Eiw7ao  reason: not valid java name */
+    
     public final String m135component63Eiw7ao() {
         return this.endId;
     }
@@ -115,12 +115,12 @@ public final class Summary {
         return this.count;
     }
 
-    /* renamed from: component8-o4g7jtM  reason: not valid java name */
+    
     public final long m136component8o4g7jtM() {
         return this.channelId;
     }
 
-    /* renamed from: copy-H5KhIT0  reason: not valid java name */
+    
     public final Summary m137copyH5KhIT0(String id2, String topic, String summShort, List<UserId> people, String startId, String endId, int i10, long j10) {
         q.g(id2, "id");
         q.g(topic, "topic");
@@ -142,7 +142,7 @@ public final class Summary {
         return q.b(this.f6890id, summary.f6890id) && q.b(this.topic, summary.topic) && q.b(this.summShort, summary.summShort) && q.b(this.people, summary.people) && MessageId.m594equalsimpl0(this.startId, summary.startId) && MessageId.m594equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m568equalsimpl0(this.channelId, summary.channelId);
     }
 
-    /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
+    
     public final long m138getChannelIdo4g7jtM() {
         return this.channelId;
     }
@@ -151,7 +151,7 @@ public final class Summary {
         return this.count;
     }
 
-    /* renamed from: getEndId-3Eiw7ao  reason: not valid java name */
+    
     public final String m139getEndId3Eiw7ao() {
         return this.endId;
     }
@@ -164,7 +164,7 @@ public final class Summary {
         return this.people;
     }
 
-    /* renamed from: getStartId-3Eiw7ao  reason: not valid java name */
+    
     public final String m140getStartId3Eiw7ao() {
         return this.startId;
     }

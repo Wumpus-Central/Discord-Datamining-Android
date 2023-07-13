@@ -12,20 +12,20 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.utils.MediaResolver$resolveToUri$2", f = "MediaResolver.kt", l = {57, 60, 61, 62}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
-public final class MediaResolver$resolveToUri$2 extends k implements Function2<CoroutineScope, Continuation<? super Uri>, Object> {
-    final /* synthetic */ int $imageCompressionQuality;
-    final /* synthetic */ Uri $inputUri;
-    final /* synthetic */ boolean $isLowQuality;
-    final /* synthetic */ VideoCompressionQuality $videoCompressionQuality;
-    int label;
-    final /* synthetic */ MediaResolver this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+public final class MediaResolver$resolveToUri$2 extends k implements Function2<CoroutineScope, Continuation<? super Uri>, Object> {
+    final  int $imageCompressionQuality;
+    final  Uri $inputUri;
+    final  boolean $isLowQuality;
+    final  VideoCompressionQuality $videoCompressionQuality;
+    int label;
+    final  MediaResolver this$0;
+
+    
+    
     public MediaResolver$resolveToUri$2(MediaResolver mediaResolver, Uri uri, VideoCompressionQuality videoCompressionQuality, int i10, boolean z10, Continuation<? super MediaResolver$resolveToUri$2> continuation) {
         super(2, continuation);
         this.this$0 = mediaResolver;
@@ -35,7 +35,7 @@ public final class MediaResolver$resolveToUri$2 extends k implements Function2<C
         this.$isLowQuality = z10;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new MediaResolver$resolveToUri$2(this.this$0, this.$inputUri, this.$videoCompressionQuality, this.$imageCompressionQuality, this.$isLowQuality, continuation);
     }
@@ -44,7 +44,7 @@ public final class MediaResolver$resolveToUri$2 extends k implements Function2<C
         return ((MediaResolver$resolveToUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         ContentResolver resolver;

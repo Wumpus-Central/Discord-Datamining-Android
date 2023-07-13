@@ -13,22 +13,22 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\u0006\n\u0002\u0010\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.billing.BillingManager$reconnect$1", f = "BillingManager.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes.dex */
+
 public final class BillingManager$reconnect$1 extends k implements Function1<Continuation<? super Unit>, Object> {
     int label;
-    final /* synthetic */ BillingManager this$0;
+    final  BillingManager this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public BillingManager$reconnect$1(BillingManager billingManager, Continuation<? super BillingManager$reconnect$1> continuation) {
         super(1, continuation);
         this.this$0 = billingManager;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Continuation<?> continuation) {
         return new BillingManager$reconnect$1(this.this$0, continuation);
     }
@@ -37,7 +37,7 @@ public final class BillingManager$reconnect$1 extends k implements Function1<Con
         return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         BillingClient billingClient;
         BillingManager$billingClientStateListener$1 billingManager$billingClientStateListener$1;

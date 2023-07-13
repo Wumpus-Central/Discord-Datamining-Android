@@ -19,10 +19,10 @@ import si.h;
 import si.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/truncation/Truncation.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/truncation/Truncation;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class Truncation$$serializer implements f0<Truncation> {
     public static final Truncation$$serializer INSTANCE;
-    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+    private static final  PluginGeneratedSerialDescriptor descriptor;
 
     static {
         Truncation$$serializer truncation$$serializer = new Truncation$$serializer();
@@ -38,13 +38,13 @@ public final class Truncation$$serializer implements f0<Truncation> {
     private Truncation$$serializer() {
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] childSerializers() {
         m0 m0Var = m0.f26305a;
         return new KSerializer[]{m0Var, a2.f26230a, a.u(m0Var), a.u(h.f26272a)};
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
+    @Override 
     public Truncation deserialize(Decoder decoder) {
         String str;
         int i10;
@@ -97,7 +97,7 @@ public final class Truncation$$serializer implements f0<Truncation> {
         return new Truncation(i11, i10, str, (Integer) obj, (Boolean) obj2, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
+    @Override 
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -111,7 +111,7 @@ public final class Truncation$$serializer implements f0<Truncation> {
         c10.b(descriptor2);
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

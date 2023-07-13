@@ -23,10 +23,10 @@ import si.h;
 import si.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/codedlinks/GuildInviteDisabledEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildInviteDisabledEmbedImpl> {
     public static final GuildInviteDisabledEmbedImpl$$serializer INSTANCE;
-    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+    private static final  PluginGeneratedSerialDescriptor descriptor;
 
     static {
         GuildInviteDisabledEmbedImpl$$serializer guildInviteDisabledEmbedImpl$$serializer = new GuildInviteDisabledEmbedImpl$$serializer();
@@ -75,7 +75,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
     private GuildInviteDisabledEmbedImpl$$serializer() {
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] childSerializers() {
         m0 m0Var = m0.f26305a;
         a2 a2Var = a2.f26230a;
@@ -83,7 +83,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
         return new KSerializer[]{m0Var, m0Var, m0Var, a2Var, InviteType.Serializer.INSTANCE, a2Var, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(hVar), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), CodedLinkExtendedType.Serializer.INSTANCE, a2Var, a.u(a2Var), a.u(a2Var)};
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
+    @Override 
     public GuildInviteDisabledEmbedImpl deserialize(Decoder decoder) {
         Object obj;
         Object obj2;
@@ -920,7 +920,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
         return new GuildInviteDisabledEmbedImpl(i13, i10, i14, i12, i11, str6, (InviteType) obj27, str5, str4, str3, str2, (Integer) obj11, (Integer) obj10, (Integer) obj9, (String) obj14, (String) obj15, (Integer) obj26, (Boolean) obj18, (String) obj16, (String) obj13, (Boolean) obj12, (String) obj7, (String) obj6, (Integer) obj5, (Integer) obj4, (Boolean) obj3, (Integer) obj2, (String) obj25, (String) obj19, (Integer) obj24, (Integer) obj20, (Integer) obj23, (String) obj21, (String) obj8, (Integer) obj17, (CodedLinkExtendedType) obj, str, (String) obj22, (String) obj28, (SerializationConstructorMarker) null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
+    @Override 
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -934,7 +934,7 @@ public final class GuildInviteDisabledEmbedImpl$$serializer implements f0<GuildI
         c10.b(descriptor2);
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

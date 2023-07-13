@@ -29,7 +29,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001:\u000256B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J#\u0010\u0017\u001a\u00020\u000f2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0019¢\u0006\u0002\u0010\u001bJS\u0010\u001c\u001a\u00020\u000f2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\u0019¢\u0006\u0002\u0010#J\b\u0010$\u001a\u00020\u000fH\u0002J\u0014\u0010%\u001a\u00020\u000f2\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ!\u0010&\u001a\u00020\u000f2\b\u0010'\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0002\u0010(J\u0018\u0010)\u001a\u00020\u000f2\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0019H\u0002J\u0014\u0010-\u001a\u00020\u000f2\f\u0010.\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eJ\b\u0010/\u001a\u000200H\u0002J\b\u00101\u001a\u000202H\u0002J\b\u00103\u001a\u000202H\u0002J\b\u00104\u001a\u000202H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000¨\u00067"}, d2 = {"Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "animationStartDelay", "", "binding", "Lcom/discord/chat/databinding/AttachmentUploadOverlayViewBinding;", "completeViewConfig", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$CompleteViewConfig;", "onAnimationComplete", "Lkotlin/Function0;", "", "progressViewConfig", "Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$ProgressViewConfig;", "transitionDelay", "transitionInDuration", "transitionOutDuration", "uploadContext", "Lcom/discord/chat/presentation/message/view/UploadContext;", "configureCompleteView", "backgroundSize", "", "checkmarkButtonSize", "(Ljava/lang/Integer;Ljava/lang/Integer;)V", "configureProgressView", "backgroundDrawable", "Landroid/graphics/drawable/Drawable;", "cancelButtonSize", "primaryColor", "progressIndicatorSize", "trackColor", "(Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V", "resetUploadOverlay", "setOnProgressAnimationComplete", "setProgress", "progress", "(Ljava/lang/Integer;Lcom/discord/chat/presentation/message/view/UploadContext;)V", "setSquareLayoutParam", "view", "Landroid/view/View;", "dimension", "setUploadCancel", "onCancelUpload", "setUploadCompleteBackgroundVisible", "Landroid/animation/ValueAnimator;", "uploadCompleteAnimationSequence", "Landroid/animation/AnimatorSet;", "uploadCompleteCheckmarkFadeInAnim", "uploadCompleteCheckmarkFadeOutAnim", "CompleteViewConfig", "ProgressViewConfig", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class AttachmentUploadOverlayView extends ConstraintLayout {
     private final long animationStartDelay;
     private final AttachmentUploadOverlayViewBinding binding;
@@ -42,7 +42,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     private UploadContext uploadContext;
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0019\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0005J\u0010\u0010\n\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0007J\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0007J&\u0010\f\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\rJ\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001R\u0015\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\t\u0010\u0007¨\u0006\u0014"}, d2 = {"Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$CompleteViewConfig;", "", "backgroundSize", "", "checkmarkButtonSize", "(Ljava/lang/Integer;Ljava/lang/Integer;)V", "getBackgroundSize", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getCheckmarkButtonSize", "component1", "component2", "copy", "(Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$CompleteViewConfig;", "equals", "", "other", "hashCode", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class CompleteViewConfig {
         private final Integer backgroundSize;
         private final Integer checkmarkButtonSize;
@@ -52,7 +52,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
             this.checkmarkButtonSize = num2;
         }
 
-        public static /* synthetic */ CompleteViewConfig copy$default(CompleteViewConfig completeViewConfig, Integer num, Integer num2, int i10, Object obj) {
+        public static  CompleteViewConfig copy$default(CompleteViewConfig completeViewConfig, Integer num, Integer num2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 num = completeViewConfig.backgroundSize;
             }
@@ -112,7 +112,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     }
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001BA\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\nJ\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000eJ\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000eJ\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000eJV\u0010\u001a\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J\t\u0010 \u001a\u00020!HÖ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0015\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\r\u0010\u000eR\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\u0010\u0010\u000eR\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\u0011\u0010\u000eR\u0015\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\u0012\u0010\u000eR\u0015\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\u0013\u0010\u000e¨\u0006\""}, d2 = {"Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$ProgressViewConfig;", "", "backgroundSize", "", "backgroundDrawable", "Landroid/graphics/drawable/Drawable;", "cancelButtonSize", "primaryColor", "progressIndicatorSize", "trackColor", "(Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V", "getBackgroundDrawable", "()Landroid/graphics/drawable/Drawable;", "getBackgroundSize", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getCancelButtonSize", "getPrimaryColor", "getProgressIndicatorSize", "getTrackColor", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "(Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/discord/chat/presentation/message/view/AttachmentUploadOverlayView$ProgressViewConfig;", "equals", "", "other", "hashCode", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class ProgressViewConfig {
         private final Drawable backgroundDrawable;
         private final Integer backgroundSize;
@@ -130,7 +130,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
             this.trackColor = num5;
         }
 
-        public static /* synthetic */ ProgressViewConfig copy$default(ProgressViewConfig progressViewConfig, Integer num, Drawable drawable, Integer num2, Integer num3, Integer num4, Integer num5, int i10, Object obj) {
+        public static  ProgressViewConfig copy$default(ProgressViewConfig progressViewConfig, Integer num, Drawable drawable, Integer num2, Integer num3, Integer num4, Integer num5, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 num = progressViewConfig.backgroundSize;
             }
@@ -245,17 +245,17 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public AttachmentUploadOverlayView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ AttachmentUploadOverlayView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  AttachmentUploadOverlayView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
-    public static /* synthetic */ void configureCompleteView$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, Integer num2, int i10, Object obj) {
+    public static  void configureCompleteView$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, Integer num2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             num = null;
         }
@@ -265,7 +265,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         attachmentUploadOverlayView.configureCompleteView(num, num2);
     }
 
-    public static /* synthetic */ void configureProgressView$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, Drawable drawable, Integer num2, Integer num3, Integer num4, Integer num5, int i10, Object obj) {
+    public static  void configureProgressView$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, Drawable drawable, Integer num2, Integer num3, Integer num4, Integer num5, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             num = null;
         }
@@ -293,7 +293,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         this.binding.uploadProgress.setProgress(0);
     }
 
-    public static /* synthetic */ void setProgress$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, UploadContext uploadContext, int i10, Object obj) {
+    public static  void setProgress$default(AttachmentUploadOverlayView attachmentUploadOverlayView, Integer num, UploadContext uploadContext, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             uploadContext = null;
         }
@@ -308,13 +308,13 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         view.setLayoutParams(layoutParams);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void setUploadCancel$lambda$19(Function0 onCancelUpload, View view) {
         q.g(onCancelUpload, "$onCancelUpload");
         onCancelUpload.invoke();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void setUploadCancel$lambda$20(View view) {
     }
 
@@ -323,8 +323,8 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         valueAnimator.setStartDelay(this.animationStartDelay);
         valueAnimator.setFloatValues(0.0f, 1.0f);
         valueAnimator.setDuration(0L);
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.e
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 AttachmentUploadOverlayView.setUploadCompleteBackgroundVisible$lambda$3$lambda$2(AttachmentUploadOverlayView.this, valueAnimator2);
             }
@@ -332,7 +332,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         return valueAnimator;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void setUploadCompleteBackgroundVisible$lambda$3$lambda$2(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -343,13 +343,13 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
     private final AnimatorSet uploadCompleteAnimationSequence() {
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.playSequentially(setUploadCompleteBackgroundVisible(), uploadCompleteCheckmarkFadeInAnim(), uploadCompleteCheckmarkFadeOutAnim());
-        animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.chat.presentation.message.view.AttachmentUploadOverlayView$uploadCompleteAnimationSequence$lambda$18$$inlined$doOnEnd$1
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 Function0 function0;
                 q.g(animator, "animator");
@@ -357,12 +357,12 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 function0.invoke();
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }
@@ -375,8 +375,8 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         animatorSet.setDuration(this.transitionInDuration);
         ValueAnimator valueAnimator = new ValueAnimator();
         valueAnimator.setFloatValues(0.0f, 1.0f);
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.b
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$5$lambda$4(AttachmentUploadOverlayView.this, valueAnimator2);
             }
@@ -385,16 +385,16 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(0.8f, 0.9f);
         valueAnimator2.setInterpolator(new OvershootInterpolator(8.0f));
-        valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.c
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator3) {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$7$lambda$6(AttachmentUploadOverlayView.this, valueAnimator3);
             }
         });
         ValueAnimator valueAnimator3 = new ValueAnimator();
         valueAnimator3.setFloatValues(1.0f, 0.0f);
-        valueAnimator3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.d
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator3.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator4) {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$9$lambda$8(AttachmentUploadOverlayView.this, valueAnimator4);
             }
@@ -403,7 +403,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         return animatorSet;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$5$lambda$4(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -411,7 +411,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         this$0.binding.uploadComplete.setAlpha(((Float) animatedValue).floatValue());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$7$lambda$6(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -421,7 +421,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         this$0.binding.uploadCompleteBackground.setScaleY(floatValue);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void uploadCompleteCheckmarkFadeInAnim$lambda$10$lambda$9$lambda$8(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -435,8 +435,8 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         animatorSet.setStartDelay(this.transitionDelay);
         ValueAnimator valueAnimator = new ValueAnimator();
         valueAnimator.setFloatValues(0.9f, 0.8f);
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.f
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$12$lambda$11(AttachmentUploadOverlayView.this, valueAnimator2);
             }
@@ -444,20 +444,20 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         Unit unit = Unit.f20663a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(1.0f, 0.0f);
-        valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.g
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator3) {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$14$lambda$13(AttachmentUploadOverlayView.this, valueAnimator3);
             }
         });
         animatorSet.playTogether(valueAnimator, valueAnimator2);
-        animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.chat.presentation.message.view.AttachmentUploadOverlayView$uploadCompleteCheckmarkFadeOutAnim$lambda$16$$inlined$doOnEnd$1
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 AttachmentUploadOverlayViewBinding attachmentUploadOverlayViewBinding;
                 AttachmentUploadOverlayViewBinding attachmentUploadOverlayViewBinding2;
@@ -472,12 +472,12 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 constraintLayout2.setVisibility(8);
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }
@@ -485,7 +485,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         return animatorSet;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$12$lambda$11(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -495,7 +495,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         this$0.binding.uploadCompleteLayout.setScaleY(floatValue);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void uploadCompleteCheckmarkFadeOutAnim$lambda$16$lambda$14$lambda$13(AttachmentUploadOverlayView this$0, ValueAnimator valueAnimator) {
         q.g(this$0, "this$0");
         Object animatedValue = valueAnimator.getAnimatedValue();
@@ -588,8 +588,8 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         if (this.binding.uploadProgress.getProgress() != 100) {
             ConstraintLayout constraintLayout = this.binding.uploadProgressLayout;
             q.f(constraintLayout, "binding.uploadProgressLayout");
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.h
-                @Override // android.view.View.OnClickListener
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout, false, new View.OnClickListener() { 
+                @Override 
                 public final void onClick(View view) {
                     AttachmentUploadOverlayView.setUploadCancel$lambda$19(Function0.this, view);
                 }
@@ -598,15 +598,15 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
         }
         ConstraintLayout constraintLayout2 = this.binding.uploadProgressLayout;
         q.f(constraintLayout2, "binding.uploadProgressLayout");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout2, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.i
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(constraintLayout2, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 AttachmentUploadOverlayView.setUploadCancel$lambda$20(view);
             }
         }, 1, null);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public AttachmentUploadOverlayView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

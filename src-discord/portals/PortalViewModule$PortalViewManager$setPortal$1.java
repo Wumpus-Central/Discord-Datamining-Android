@@ -17,17 +17,17 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$setPortal$1", f = "PortalViewModule.kt", l = {46}, m = "invokeSuspend")
-/* loaded from: classes4.dex */
+
 final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ double $portal;
-    final /* synthetic */ FrameLayout $portalView;
+    final  double $portal;
+    final  FrameLayout $portalView;
     int label;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.portals.PortalViewModule$PortalViewManager$setPortal$1$1", f = "PortalViewModule.kt", l = {47}, m = "invokeSuspend")
-    /* renamed from: com.discord.portals.PortalViewModule$PortalViewManager$setPortal$1$1  reason: invalid class name */
-    /* loaded from: classes4.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 
@@ -35,7 +35,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
             super(2, continuation);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(continuation);
         }
@@ -44,7 +44,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             d10 = d.d();
@@ -64,15 +64,15 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public PortalViewModule$PortalViewManager$setPortal$1(double d10, FrameLayout frameLayout, Continuation<? super PortalViewModule$PortalViewManager$setPortal$1> continuation) {
         super(2, continuation);
         this.$portal = d10;
         this.$portalView = frameLayout;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new PortalViewModule$PortalViewManager$setPortal$1(this.$portal, this.$portalView, continuation);
     }
@@ -81,7 +81,7 @@ final class PortalViewModule$PortalViewManager$setPortal$1 extends k implements 
         return ((PortalViewModule$PortalViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         d10 = d.d();

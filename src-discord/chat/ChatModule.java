@@ -40,7 +40,7 @@ import kotlinx.serialization.json.l;
 
 @ReactModule(name = "DCDChatManager")
 @Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\b\b\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010&\u001a\u00020%¢\u0006\u0004\b4\u00105J'\u0010\b\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0014\b\u0004\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004H\u0082\bJ>\u0010\r\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\"\u0010\u0007\u001a\u001e\b\u0001\u0012\u0004\u0012\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\tH\u0002ø\u0001\u0000¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\b\u0010\u0012\u001a\u00020\u0011H\u0016J\b\u0010\u0013\u001a\u00020\u0006H\u0016J\u000e\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u0002J \u0010\u0018\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0015\u001a\u00020\u00112\u0006\u0010\u0017\u001a\u00020\u0016H\u0007J\u0010\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\b\u0010\u001a\u001a\u00020\u0006H\u0007J\b\u0010\u001b\u001a\u00020\u0006H\u0007J\u0010\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0007J\u0018\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J\u0018\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010!\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010 \u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010#\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007J \u0010$\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\u00022\u0006\u0010\u001d\u001a\u00020\u0016H\u0007R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'R\u0014\u0010)\u001a\u00020(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R\u0014\u0010,\u001a\u00020+8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b,\u0010-R \u0010/\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\n0.8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b/\u00100R\u0016\u00101\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b1\u00102R \u00103\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u000f0.8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b3\u00100\u0082\u0002\u0004\n\u0002\b\u0019¨\u00066"}, d2 = {"Lcom/discord/chat/ChatModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "", "tag", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/root/ChatView;", "", "block", "withChatView", "Lkotlin/Function2;", "Lcom/discord/chat/listmanager/ChatListManager;", "Lkotlin/coroutines/Continuation;", "", "withChatManager", "(ILkotlin/jvm/functions/Function2;)V", "Lcom/discord/chatreplay/logger/RowLogger;", "rowUpdateLoggerFor", "", "getName", "invalidate", "getChatListManager", "rowsJSON", "", "isLoadingAtTop", "updateRows", "clearRows", "greetCTAWillShow", "greetCTAWillHide", "fadeIn", "animated", "scrollToBottom", "scrollToTop", "offset", "scrollToRelativeOffset", "index", "scrollTo", "scrollIntoView", "Lcom/facebook/react/bridge/ReactApplicationContext;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "Lkotlinx/coroutines/CoroutineScope;", "moduleScope", "Lkotlinx/coroutines/CoroutineScope;", "", "listManagers", "Ljava/util/Map;", "previousRowUpdateTag", "I", "rowUpdateLoggers", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class ChatModule extends ReactContextBaseJavaModule {
     private final CoroutineScope moduleScope;
     private final ReactApplicationContext reactContext;
@@ -49,7 +49,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     private int previousRowUpdateTag = -1;
     private final Map<Integer, RowLogger> rowUpdateLoggers = new LinkedHashMap();
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public ChatModule(ReactApplicationContext reactContext) {
         super(reactContext);
         q.g(reactContext, "reactContext");
@@ -60,7 +60,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         this.moduleScope = k0.a(b10.v(m1.a(newSingleThreadExecutor)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final RowLogger rowUpdateLoggerFor(int i10) {
         Map<Integer, RowLogger> map = this.rowUpdateLoggers;
         Integer valueOf = Integer.valueOf(i10);
@@ -79,8 +79,8 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     private final void withChatView(final int i10, final Function1<? super ChatView, Unit> function1) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
         q.d(nativeModule);
-        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$withChatView$$inlined$uiManagerResolveView$1
-            @Override // com.facebook.react.uimanager.UIBlock
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
+            @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
                 Function1 function12 = Function1.this;
                 View resolveView = nativeViewHierarchyManager.resolveView(i10);
@@ -114,7 +114,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
         return chatListManager;
     }
 
-    @Override // com.facebook.react.bridge.NativeModule
+    @Override 
     public String getName() {
         return "DCDChatManager";
     }
@@ -127,7 +127,7 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     public final void greetCTAWillShow() {
     }
 
-    @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule
+    @Override 
     public void invalidate() {
         super.invalidate();
         CoroutineContext coroutineContext = this.moduleScope.getCoroutineContext();
@@ -139,8 +139,8 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     public final void scrollIntoView(final int i10, final int i11, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
         q.d(nativeModule);
-        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollIntoView$$inlined$withChatView$1
-            @Override // com.facebook.react.uimanager.UIBlock
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
+            @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
                 View resolveView = nativeViewHierarchyManager.resolveView(i10);
                 if (resolveView != null) {
@@ -156,8 +156,8 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     public final void scrollTo(final int i10, final int i11, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
         q.d(nativeModule);
-        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollTo$$inlined$withChatView$1
-            @Override // com.facebook.react.uimanager.UIBlock
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
+            @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
                 View resolveView = nativeViewHierarchyManager.resolveView(i10);
                 if (resolveView != null) {
@@ -173,8 +173,8 @@ public final class ChatModule extends ReactContextBaseJavaModule {
     public final void scrollToBottom(final int i10, final boolean z10) {
         NativeModule nativeModule = this.reactContext.getNativeModule(UIManagerModule.class);
         q.d(nativeModule);
-        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { // from class: com.discord.chat.ChatModule$scrollToBottom$$inlined$withChatView$1
-            @Override // com.facebook.react.uimanager.UIBlock
+        ((UIManagerModule) nativeModule).addUIBlock(new UIBlock() { 
+            @Override 
             public final void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
                 View resolveView = nativeViewHierarchyManager.resolveView(i10);
                 if (resolveView != null) {

@@ -9,14 +9,14 @@ import kotlin.jvm.internal.q;
 import tf.c;
 
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0002¨\u0006\n"}, d2 = {"Lcom/discord/react_fork_overrides/forks/CustomLineHeightSpanOverride;", "", "()V", "override", "", "overrideLineHeight", "fm", "Landroid/graphics/Paint$FontMetricsInt;", "mHeight", "", "react_fork_overrides_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+
 public final class CustomLineHeightSpanOverride {
     public static final CustomLineHeightSpanOverride INSTANCE = new CustomLineHeightSpanOverride();
 
     private CustomLineHeightSpanOverride() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void override$lambda$0(Object[] objArr) {
         q.f(objArr, "(fm, mHeight)");
         Object obj = objArr[0];
@@ -56,8 +56,8 @@ public final class CustomLineHeightSpanOverride {
     }
 
     public final void override() {
-        CustomLineHeightSpan.chooseHeightOverride = new Callback() { // from class: m2.a
-            @Override // com.facebook.react.bridge.Callback
+        CustomLineHeightSpan.chooseHeightOverride = new Callback() { 
+            @Override 
             public final void invoke(Object[] objArr) {
                 CustomLineHeightSpanOverride.override$lambda$0(objArr);
             }

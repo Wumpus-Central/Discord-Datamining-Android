@@ -15,19 +15,19 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.input.views.ChatInputRootView$onAttachedToWindow$1", f = "ChatInputRootView.kt", l = {210}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
+
 final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
-    final /* synthetic */ ChatInputRootView this$0;
+    final  ChatInputRootView this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public ChatInputRootView$onAttachedToWindow$1(ChatInputRootView chatInputRootView, Continuation<? super ChatInputRootView$onAttachedToWindow$1> continuation) {
         super(2, continuation);
         this.this$0 = chatInputRootView;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new ChatInputRootView$onAttachedToWindow$1(this.this$0, continuation);
     }
@@ -36,7 +36,7 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
         return ((ChatInputRootView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         d10 = d.d();
@@ -45,9 +45,9 @@ final class ChatInputRootView$onAttachedToWindow$1 extends k implements Function
             t.b(obj);
             Flow b10 = kotlinx.coroutines.flow.d.b(this.this$0.currentTextFlow, 100L);
             final ChatInputRootView chatInputRootView = this.this$0;
-            FlowCollector flowCollector = new FlowCollector() { // from class: com.discord.chat.input.views.ChatInputRootView$onAttachedToWindow$1.1
-                @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+            FlowCollector flowCollector = new FlowCollector() { 
+                @Override 
+                public   Object emit(Object obj2, Continuation continuation) {
                     return emit((ChatInputRootView.CurrentTextAndSelection) obj2, (Continuation<? super Unit>) continuation);
                 }
 

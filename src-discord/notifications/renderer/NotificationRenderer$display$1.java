@@ -33,33 +33,33 @@ import kotlinx.coroutines.l;
 import kotlinx.coroutines.q0;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1", f = "NotificationRenderer.kt", l = {134}, m = "invokeSuspend")
-/* loaded from: classes4.dex */
+
 public final class NotificationRenderer$display$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ NotificationBehaviors $behaviors;
-    final /* synthetic */ Context $context;
-    final /* synthetic */ String $currentUsername;
-    final /* synthetic */ boolean $makeOrUpdateShortcut;
-    final /* synthetic */ NotificationData $notification;
-    final /* synthetic */ Map<String, String> $notificationDataMap;
-    final /* synthetic */ boolean $notifyEveryTime;
-    private /* synthetic */ Object L$0;
+    final  NotificationBehaviors $behaviors;
+    final  Context $context;
+    final  String $currentUsername;
+    final  boolean $makeOrUpdateShortcut;
+    final  NotificationData $notification;
+    final  Map<String, String> $notificationDataMap;
+    final  boolean $notifyEveryTime;
+    private  Object L$0;
     int label;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/Bitmap;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1$1", f = "NotificationRenderer.kt", l = {135}, m = "invokeSuspend")
-    /* renamed from: com.discord.notifications.renderer.NotificationRenderer$display$1$1  reason: invalid class name */
-    /* loaded from: classes4.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
-        final /* synthetic */ Context $context;
-        final /* synthetic */ Ref$ObjectRef<String> $iconUrl;
-        final /* synthetic */ Ref$ObjectRef<PostProcessor> $postProcessor;
+        final  Context $context;
+        final  Ref$ObjectRef<String> $iconUrl;
+        final  Ref$ObjectRef<PostProcessor> $postProcessor;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass1(Ref$ObjectRef<String> ref$ObjectRef, Context context, Ref$ObjectRef<PostProcessor> ref$ObjectRef2, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$iconUrl = ref$ObjectRef;
@@ -67,7 +67,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             this.$postProcessor = ref$ObjectRef2;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.$iconUrl, this.$context, this.$postProcessor, continuation);
         }
@@ -76,7 +76,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             d10 = d.d();
@@ -97,18 +97,18 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/Bitmap;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.notifications.renderer.NotificationRenderer$display$1$2", f = "NotificationRenderer.kt", l = {136}, m = "invokeSuspend")
-    /* renamed from: com.discord.notifications.renderer.NotificationRenderer$display$1$2  reason: invalid class name */
-    /* loaded from: classes4.dex */
+    
+    
     public static final class AnonymousClass2 extends k implements Function2<CoroutineScope, Continuation<? super Bitmap>, Object> {
-        final /* synthetic */ Context $context;
-        final /* synthetic */ NotificationData $notification;
-        final /* synthetic */ Ref$ObjectRef<PostProcessor> $postProcessor;
+        final  Context $context;
+        final  NotificationData $notification;
+        final  Ref$ObjectRef<PostProcessor> $postProcessor;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass2(NotificationData notificationData, Context context, Ref$ObjectRef<PostProcessor> ref$ObjectRef, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.$notification = notificationData;
@@ -116,7 +116,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             this.$postProcessor = ref$ObjectRef;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass2(this.$notification, this.$context, this.$postProcessor, continuation);
         }
@@ -125,7 +125,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
             return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             d10 = d.d();
@@ -149,8 +149,8 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public NotificationRenderer$display$1(NotificationData notificationData, Context context, boolean z10, Map<String, String> map, NotificationBehaviors notificationBehaviors, String str, boolean z11, Continuation<? super NotificationRenderer$display$1> continuation) {
         super(2, continuation);
         this.$notification = notificationData;
@@ -162,12 +162,12 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         this.$makeOrUpdateShortcut = z11;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Object invokeSuspend$fetchImage(Context context, Ref$ObjectRef<PostProcessor> ref$ObjectRef, String str, Continuation<? super Bitmap> continuation) {
         return FrescoFetchDecodedImageKt.fetchDecodedImage(context, str, ref$ObjectRef.f20690k, true, continuation);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         NotificationRenderer$display$1 notificationRenderer$display$1 = new NotificationRenderer$display$1(this.$notification, this.$context, this.$notifyEveryTime, this.$notificationDataMap, this.$behaviors, this.$currentUsername, this.$makeOrUpdateShortcut, continuation);
         notificationRenderer$display$1.L$0 = obj;
@@ -178,10 +178,10 @@ public final class NotificationRenderer$display$1 extends k implements Function2
         return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r7v2, types: [com.discord.image.fresco.postprocessors.PostProcessor$Circle, T] */
-    /* JADX WARN: Type inference failed for: r8v5, types: [T, java.lang.String] */
-    @Override // kotlin.coroutines.jvm.internal.a
+    
+    
+    
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         Object obj2;

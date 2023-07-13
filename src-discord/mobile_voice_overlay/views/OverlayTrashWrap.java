@@ -28,7 +28,7 @@ import kotlin.Unit;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000x\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004B\u0019\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007B!\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\b\u0010\u0018\u001a\u00020\u0017H\u0016J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\b\u0010\u001d\u001a\u00020\u001aH\u0002J\u0006\u0010\u001e\u001a\u00020\u001aJ0\u0010\u001f\u001a\u00020\u001a2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\t2\u0006\u0010#\u001a\u00020\t2\u0006\u0010$\u001a\u00020\t2\u0006\u0010%\u001a\u00020\tH\u0014J\u0016\u0010&\u001a\u00020!2\u0006\u0010'\u001a\u00020\u00122\u0006\u0010(\u001a\u00020)J\u0010\u0010*\u001a\u00020\u001a2\u0006\u0010+\u001a\u00020,H\u0016J\u0010\u0010-\u001a\u00020\u001a2\u0006\u0010.\u001a\u00020/H\u0016J\u0006\u00100\u001a\u00020\u001aR\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000¨\u00061"}, d2 = {"Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "Lcom/discord/mobile_voice_overlay/views/OverlayView;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "attributeSetId", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/mobile_voice_overlay/databinding/TrashWrapBinding;", "hideAnimator", "Landroid/animation/Animator;", "locationOnScreen", "", "previousBubbleOverTrashZone", "Lcom/discord/mobile_voice_overlay/views/OverlayBubbleWrap;", "showAnimator", "trashZoneRect", "Landroid/graphics/Rect;", "windowLayoutParams", "Landroid/view/WindowManager$LayoutParams;", "getInitialLayoutParams", "handleViewDraggedIntoTrashZone", "", "view", "Landroid/view/View;", "handleViewDraggedOutOfTrashZone", "hide", ViewProps.ON_LAYOUT, "changed", "", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "processMotionEvent", "bubble", "motionEvent", "Landroid/view/MotionEvent;", "setAssets", "assets", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayAssets;", "setData", "data", "Lcom/discord/mobile_voice_overlay/MobileVoiceOverlayData;", "show", "mobile_voice_overlay_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class OverlayTrashWrap extends OverlayView {
     private final TrashWrapBinding binding;
     private final Animator hideAnimator;
@@ -38,7 +38,7 @@ public final class OverlayTrashWrap extends OverlayView {
     private final Rect trashZoneRect = new Rect();
     private final int[] locationOnScreen = {0, 0};
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public OverlayTrashWrap(Context context) {
         super(context);
         q.g(context, "context");
@@ -61,23 +61,23 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
-        animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$1
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
@@ -90,24 +90,24 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
-        animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$1
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet2.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }
@@ -135,7 +135,7 @@ public final class OverlayTrashWrap extends OverlayView {
         this.binding.trashWrapTargetContainer.startAnimation(scaleAnimation);
     }
 
-    @Override // com.discord.mobile_voice_overlay.views.OverlayView
+    @Override 
     public WindowManager.LayoutParams getInitialLayoutParams() {
         return this.windowLayoutParams;
     }
@@ -144,7 +144,7 @@ public final class OverlayTrashWrap extends OverlayView {
         this.hideAnimator.start();
     }
 
-    @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
+    @Override 
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
         if (z10) {
@@ -187,7 +187,7 @@ public final class OverlayTrashWrap extends OverlayView {
         return true;
     }
 
-    @Override // com.discord.mobile_voice_overlay.views.OverlayView
+    @Override 
     public void setAssets(MobileVoiceOverlayAssets assets) {
         q.g(assets, "assets");
         super.setAssets(assets);
@@ -199,7 +199,7 @@ public final class OverlayTrashWrap extends OverlayView {
         ColorUtilsKt.setTintColor(simpleDraweeView2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveNormal()));
     }
 
-    @Override // com.discord.mobile_voice_overlay.views.OverlayView
+    @Override 
     public void setData(MobileVoiceOverlayData data) {
         q.g(data, "data");
     }
@@ -208,7 +208,7 @@ public final class OverlayTrashWrap extends OverlayView {
         this.showAnimator.start();
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public OverlayTrashWrap(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");
@@ -231,23 +231,23 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
-        animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$2
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
@@ -260,24 +260,24 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
-        animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$2
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet2.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }
@@ -285,7 +285,7 @@ public final class OverlayTrashWrap extends OverlayView {
         this.hideAnimator = animatorSet2;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public OverlayTrashWrap(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         q.g(context, "context");
@@ -308,23 +308,23 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_in_bottom);
         loadAnimator2.setTarget(inflate.trashWrapTargetZone);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
-        animatorSet.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$showAnimator$lambda$4$$inlined$doOnStart$3
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(0);
@@ -337,24 +337,24 @@ public final class OverlayTrashWrap extends OverlayView {
         Animator loadAnimator4 = AnimatorInflater.loadAnimator(getContext(), R.animator.slide_out_bottom);
         loadAnimator4.setTarget(inflate.trashWrapTargetZone);
         animatorSet2.playTogether(loadAnimator3, loadAnimator4);
-        animatorSet2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.views.OverlayTrashWrap$hideAnimator$lambda$8$$inlined$doOnEnd$3
-            @Override // android.animation.Animator.AnimatorListener
+        animatorSet2.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
                 OverlayTrashWrap.this.setVisibility(4);
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }

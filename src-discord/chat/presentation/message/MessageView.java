@@ -53,7 +53,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0001TB\u001d\b\u0007\u0012\u0006\u0010O\u001a\u00020N\u0012\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010P¢\u0006\u0004\bR\u0010SJ\u0010\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0005H\u0002J\u001c\u0010\u000e\u001a\u00020\u0007*\u00020\t2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0002J]\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001a2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\b\u0010\u0012\u001a\u0004\u0018\u00010\u001120\u0010\u0019\u001a,\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015\u0012\u0006\u0012\u0004\u0018\u00010\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u0017\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0013j\u0004\u0018\u0001`\u0018H\u0002ø\u0001\u0000J \u0010\u001f\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0016\u0010!\u001a\u00020\u00072\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aH\u0002J\u0018\u0010#\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J \u0010%\u001a\u00020\u00072\u0006\u0010$\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\u001dH\u0002J\u0010\u0010(\u001a\u00020\u00052\u0006\u0010'\u001a\u00020&H\u0016J\u0010\u0010*\u001a\u00020\u00072\u0006\u0010)\u001a\u00020\u0005H\u0016Jf\u00102\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u000f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00112\b\b\u0002\u0010\r\u001a\u00020\f2\n\b\u0002\u0010,\u001a\u0004\u0018\u00010+2\u000e\b\u0002\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-2\b\b\u0002\u0010/\u001a\u00020\u00052\b\b\u0002\u00100\u001a\u00020\u00052\b\b\u0002\u00101\u001a\u00020\u0005J\u000e\u00105\u001a\u00020\u00072\u0006\u00104\u001a\u000203J\u000f\u00106\u001a\u00020\u0016H\u0016¢\u0006\u0004\b6\u00107R\u0014\u00109\u001a\u0002088\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b9\u0010:R\u001c\u0010.\u001a\b\u0012\u0004\u0012\u00020\u001d0-8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b.\u0010;R\u0016\u0010/\u001a\u00020\u00058\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b/\u0010<R(\u0010=\u001a\b\u0012\u0004\u0012\u00020\u00070-8\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\b=\u0010;\u001a\u0004\b>\u0010?\"\u0004\b@\u0010AR\"\u0010B\u001a\u00020\u00058\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\bB\u0010<\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR&\u0010I\u001a\u0012\u0012\u0004\u0012\u00020\u001b0Gj\b\u0012\u0004\u0012\u00020\u001b`H8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bI\u0010JR\u0014\u0010M\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bK\u0010L\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006U"}, d2 = {"Lcom/discord/chat/presentation/message/MessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "Lcom/discord/chat/presentation/list/SwipeReplyInitiator;", "", "showDivider", "", "configureDivider", "Landroid/view/View;", "Lcom/discord/chat/bridge/Message;", "message", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "configureAuthorClickListeners", "Lcom/discord/chat/presentation/root/MessageContext;", "messageContext", "Lcom/discord/chat/bridge/messageframe/MessageFrame;", "messageFrame", "Lkotlin/Function4;", "Lcom/discord/primitives/MessageId;", "Lcom/discord/primitives/ChannelId;", "", "Lcom/discord/chat/bridge/MediaType;", "Lcom/discord/chat/presentation/events/MessageLongPress;", "onLongClick", "", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "generateMessageAccessories", "Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "chainPart", "configureAuthor", "items", "configureAccessoriesMargin", "isCommunicationDisabled", "configureCommunicationDisabled", "isSuppressNotifications", "configureSuppressNotifications", "Landroid/view/MotionEvent;", "ev", "onInterceptTouchEvent", "pressed", "setPressed", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentProvider", "Lkotlin/Function0;", "onChainPart", "allowChildGestures", "isHighlight", "renderContentOnly", "setMessage", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "recycledViewPool", "setAccessoriesRecycledViewPool", "spacingPxOverride", "()Ljava/lang/Integer;", "Lcom/discord/chat/databinding/MessageViewBinding;", "binding", "Lcom/discord/chat/databinding/MessageViewBinding;", "Lkotlin/jvm/functions/Function0;", "Z", "onInitiateReply", "getOnInitiateReply", "()Lkotlin/jvm/functions/Function0;", "setOnInitiateReply", "(Lkotlin/jvm/functions/Function0;)V", "enableSwipeToReply", "getEnableSwipeToReply", "()Z", "setEnableSwipeToReply", "(Z)V", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", "accessories", "Ljava/util/ArrayList;", "getSpineOriginView", "()Landroid/view/View;", "spineOriginView", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "ChainPart", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class MessageView extends ConstraintLayout implements VerticalSpacingItemDecoration.SpacingProviderView, SpineParentMessage, SwipeReplyInitiator {
     private ArrayList<MessageAccessory> accessories;
     private boolean allowChildGestures;
@@ -63,7 +63,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     private Function0<Unit> onInitiateReply;
 
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/presentation/message/MessageView$ChainPart;", "", "(Ljava/lang/String;I)V", "ONLY", "START", "MIDDLE", "END", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public enum ChainPart {
         ONLY,
         START,
@@ -72,10 +72,10 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
-        public static final /* synthetic */ int[] $EnumSwitchMapping$1;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
+        public static final  int[] $EnumSwitchMapping$1;
 
         static {
             int[] iArr = new int[MessageState.values().length];
@@ -109,13 +109,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public MessageView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ MessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  MessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -178,14 +178,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.f(context, "context");
             configureAuthor$lambda$28.setImageURI(MessageKt.avatarUrl(message, context));
             q.f(configureAuthor$lambda$28, "configureAuthor$lambda$28");
-            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.o
-                @Override // android.view.View.OnClickListener
+            NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnClickListener() { 
+                @Override 
                 public final void onClick(View view2) {
                     MessageView.configureAuthor$lambda$28$lambda$26(Message.this, chatEventHandler, view2);
                 }
             }, 1, null);
-            NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.p
-                @Override // android.view.View.OnLongClickListener
+            NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$28, false, new View.OnLongClickListener() { 
+                @Override 
                 public final boolean onLongClick(View view2) {
                     boolean configureAuthor$lambda$28$lambda$27;
                     configureAuthor$lambda$28$lambda$27 = MessageView.configureAuthor$lambda$28$lambda$27(Message.this, chatEventHandler, view2);
@@ -302,14 +302,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     }
 
     private final void configureAuthorClickListeners(View view, final Message message, final ChatEventHandler chatEventHandler) {
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(view, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.q
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(view, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view2) {
                 MessageView.configureAuthorClickListeners$lambda$4(Message.this, chatEventHandler, view2);
             }
         }, 1, null);
-        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(view, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.r
-            @Override // android.view.View.OnLongClickListener
+        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(view, false, new View.OnLongClickListener() { 
+            @Override 
             public final boolean onLongClick(View view2) {
                 boolean configureAuthorClickListeners$lambda$5;
                 configureAuthorClickListeners$lambda$5 = MessageView.configureAuthorClickListeners$lambda$5(Message.this, chatEventHandler, view2);
@@ -423,8 +423,8 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
         SimpleDraweeView simpleDraweeView4 = this.binding.suppressNotificationsIcon;
         q.f(simpleDraweeView4, "binding.suppressNotificationsIcon");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.n
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView4, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 MessageView.configureSuppressNotifications$lambda$29(ChatEventHandler.this, view);
             }
@@ -436,25 +436,17 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         eventHandler.onTapSuppressNotificationsIcon();
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:156:0x0400, code lost:
-        if ((r1 instanceof com.discord.chat.bridge.messageframe.MessageFrameMediaViewer) != false) goto L_0x0402;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     private final java.util.List<com.discord.chat.presentation.message.messagepart.MessageAccessory> generateMessageAccessories(com.discord.chat.bridge.Message r29, com.discord.chat.presentation.root.MessageContext r30, com.discord.chat.bridge.messageframe.MessageFrame r31, kotlin.jvm.functions.Function4<? super com.discord.primitives.MessageId, ? super com.discord.primitives.ChannelId, ? super java.lang.Integer, ? super com.discord.chat.bridge.MediaType, kotlin.Unit> r32) {
-        /*
-            Method dump skipped, instructions count: 1237
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.MessageView.generateMessageAccessories(com.discord.chat.bridge.Message, com.discord.chat.presentation.root.MessageContext, com.discord.chat.bridge.messageframe.MessageFrame, kotlin.jvm.functions.Function4):java.util.List");
     }
 
     private static final View.OnLongClickListener generateMessageAccessories$getLongClickListener(final Function4<? super MessageId, ? super ChannelId, ? super Integer, ? super MediaType, Unit> function4, final Message message, final int i10, final MediaType mediaType) {
         if (function4 != null) {
-            return new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.s
-                @Override // android.view.View.OnLongClickListener
+            return new View.OnLongClickListener() { 
+                @Override 
                 public final boolean onLongClick(View view) {
                     boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6;
                     generateMessageAccessories$getLongClickListener$lambda$7$lambda$6 = MessageView.generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4.this, message, i10, mediaType, view);
@@ -472,7 +464,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         return true;
     }
 
-    public static /* synthetic */ void setMessage$default(MessageView messageView, Message message, MessageContext messageContext, MessageFrame messageFrame, ChatEventHandler chatEventHandler, ComponentProvider componentProvider, Function0 function0, boolean z10, boolean z11, boolean z12, int i10, Object obj) {
+    public static  void setMessage$default(MessageView messageView, Message message, MessageContext messageContext, MessageFrame messageFrame, ChatEventHandler chatEventHandler, ComponentProvider componentProvider, Function0 function0, boolean z10, boolean z11, boolean z12, int i10, Object obj) {
         MessageFrame messageFrame2;
         ChatEventHandler.Empty empty;
         ComponentProvider componentProvider2;
@@ -531,24 +523,24 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         return true;
     }
 
-    @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
+    @Override 
     public boolean getEnableSwipeToReply() {
         return this.enableSwipeToReply;
     }
 
-    @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
+    @Override 
     public Function0<Unit> getOnInitiateReply() {
         return this.onInitiateReply;
     }
 
-    @Override // com.discord.chat.presentation.spine.SpineParentMessage
+    @Override 
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.authorAvatar;
         q.f(simpleDraweeView, "binding.authorAvatar");
         return simpleDraweeView;
     }
 
-    @Override // android.view.ViewGroup
+    @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         q.g(ev, "ev");
         return !this.allowChildGestures;
@@ -559,7 +551,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         this.binding.accessoriesView.setRecycledViewPool(recycledViewPool);
     }
 
-    @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
+    @Override 
     public void setEnableSwipeToReply(boolean z10) {
         this.enableSwipeToReply = z10;
     }
@@ -610,16 +602,16 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         }
         final Function2<MessageId, ChannelId, Unit> onMessageTapped = eventHandler.getOnMessageTapped();
         View.OnLongClickListener onLongClickListener = null;
-        View.OnClickListener lVar = onMessageTapped != null ? new View.OnClickListener() { // from class: com.discord.chat.presentation.message.l
-            @Override // android.view.View.OnClickListener
+        View.OnClickListener lVar = onMessageTapped != null ? new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 MessageView.setMessage$lambda$1$lambda$0(Function2.this, message, view);
             }
         } : null;
         final Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onLongClickListener = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.m
-                @Override // android.view.View.OnLongClickListener
+            onLongClickListener = new View.OnLongClickListener() { 
+                @Override 
                 public final boolean onLongClick(View view) {
                     boolean message$lambda$3$lambda$2;
                     message$lambda$3$lambda$2 = MessageView.setMessage$lambda$3$lambda$2(Function4.this, message, view);
@@ -637,18 +629,18 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, lVar, onLongClickListener));
     }
 
-    @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
+    @Override 
     public void setOnInitiateReply(Function0<Unit> function0) {
         q.g(function0, "<set-?>");
         this.onInitiateReply = function0;
     }
 
-    @Override // android.view.View
+    @Override 
     public void setPressed(boolean z10) {
         super.setPressed(z10 && (isClickable() || isFocusable()));
     }
 
-    @Override // com.discord.recycler_view.decorations.VerticalSpacingItemDecoration.SpacingProviderView
+    @Override 
     public Integer spacingPxOverride() {
         int i10;
         int i11 = WhenMappings.$EnumSwitchMapping$1[((ChainPart) this.onChainPart.invoke()).ordinal()];
@@ -662,7 +654,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         return Integer.valueOf(i10);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public MessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

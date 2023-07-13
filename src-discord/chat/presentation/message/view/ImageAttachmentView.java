@@ -25,14 +25,14 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u00015B\u001d\b\u0007\u0012\u0006\u00100\u001a\u00020/\u0012\n\b\u0002\u00102\u001a\u0004\u0018\u000101¢\u0006\u0004\b3\u00104J\u0081\u0001\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\u000b2\b\u0010\u000e\u001a\u0004\u0018\u00010\r2\u0006\u0010\u000f\u001a\u00020\u00042\b\u0010\u0010\u001a\u0004\u0018\u00010\u00042\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00112\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016¢\u0006\u0004\b\u0018\u0010\u0019J\u001a\u0010\u001c\u001a\u00020\u00122\b\u0010\u001a\u001a\u0004\u0018\u00010\u00022\b\u0010\u001b\u001a\u0004\u0018\u00010\u0002J\u0018\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0002J0\u0010\"\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u00022\u0016\u0010!\u001a\u0012\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00120\u001fj\u0002` J\u0010\u0010$\u001a\u00020\u00122\b\u0010#\u001a\u0004\u0018\u00010\u0002R\u0017\u0010&\u001a\u00020%8\u0006¢\u0006\f\n\u0004\b&\u0010'\u001a\u0004\b(\u0010)R\u0016\u0010+\u001a\u00020*8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b+\u0010,R\u0016\u0010-\u001a\u00020\u00028\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b-\u0010.¨\u00066"}, d2 = {"Lcom/discord/chat/presentation/message/view/ImageAttachmentView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "", "url", "", "width", "height", "maxHeightPx", "maxWidthPx", "Lcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;", ViewProps.RESIZE_MODE, "", "isSpoiler", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "radiusPx", "progress", "Lkotlin/Function0;", "", "onCancelUpload", "Lcom/discord/chat/presentation/message/view/UploadContext;", "uploadContext", "", "attachmentsOpacity", "setContent", "(Ljava/lang/String;IIIILcom/discord/chat/presentation/media/MediaContainingViewResizer$ResizeMode;ZLcom/discord/chat/bridge/spoiler/SpoilerConfig;ILjava/lang/Integer;Lkotlin/jvm/functions/Function0;Lcom/discord/chat/presentation/message/view/UploadContext;Ljava/lang/Float;)V", "description", "hint", "setDescription", "show", "showDescription", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onTapShowAltText", "showAltTextButton", "role", "setRole", "Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "binding", "Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/ImageAttachmentViewBinding;", "Lcom/discord/chat/presentation/message/view/ImageAttachmentView$TargetSize;", "targetSize", "Lcom/discord/chat/presentation/message/view/ImageAttachmentView$TargetSize;", "targetUrl", "Ljava/lang/String;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "TargetSize", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class ImageAttachmentView extends ConstraintLayout {
     private final ImageAttachmentViewBinding binding;
     private TargetSize targetSize;
     private String targetUrl;
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\f\u001a\u00020\u0003HÆ\u0003J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J'\u0010\u000e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0014HÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\b¨\u0006\u0015"}, d2 = {"Lcom/discord/chat/presentation/message/view/ImageAttachmentView$TargetSize;", "", "width", "", "height", "maxHeightPx", "(III)V", "getHeight", "()I", "getMaxHeightPx", "getWidth", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class TargetSize {
         private final int height;
         private final int maxHeightPx;
@@ -44,7 +44,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
             this.maxHeightPx = i12;
         }
 
-        public static /* synthetic */ TargetSize copy$default(TargetSize targetSize, int i10, int i11, int i12, int i13, Object obj) {
+        public static  TargetSize copy$default(TargetSize targetSize, int i10, int i11, int i12, int i13, Object obj) {
             if ((i13 & 1) != 0) {
                 i10 = targetSize.width;
             }
@@ -108,13 +108,13 @@ public final class ImageAttachmentView extends ConstraintLayout {
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public ImageAttachmentView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ ImageAttachmentView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  ImageAttachmentView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -122,23 +122,13 @@ public final class ImageAttachmentView extends ConstraintLayout {
         return this.binding;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x005f, code lost:
-        if (kotlin.jvm.internal.q.b(r1, r0) == false) goto L_0x0061;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:7:0x0032, code lost:
-        if (kotlin.jvm.internal.q.b(r1, r14) == false) goto L_0x0034;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:32:0x00d6  */
-    /* JADX WARN: Removed duplicated region for block: B:33:0x00db  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
     public final void setContent(java.lang.String r14, int r15, int r16, int r17, int r18, com.discord.chat.presentation.media.MediaContainingViewResizer.ResizeMode r19, boolean r20, com.discord.chat.bridge.spoiler.SpoilerConfig r21, int r22, java.lang.Integer r23, kotlin.jvm.functions.Function0<kotlin.Unit> r24, com.discord.chat.presentation.message.view.UploadContext r25, java.lang.Float r26) {
-        /*
-            Method dump skipped, instructions count: 241
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.ImageAttachmentView.setContent(java.lang.String, int, int, int, int, com.discord.chat.presentation.media.MediaContainingViewResizer$ResizeMode, boolean, com.discord.chat.bridge.spoiler.SpoilerConfig, int, java.lang.Integer, kotlin.jvm.functions.Function0, com.discord.chat.presentation.message.view.UploadContext, java.lang.Float):void");
     }
 
@@ -154,8 +144,8 @@ public final class ImageAttachmentView extends ConstraintLayout {
 
     public final void setRole(final String str) {
         if (str != null) {
-            w0.q0(this.binding.image, new a() { // from class: com.discord.chat.presentation.message.view.ImageAttachmentView$setRole$1
-                @Override // androidx.core.view.a
+            w0.q0(this.binding.image, new a() { 
+                @Override 
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
                     q.g(host, "host");
                     q.g(info, "info");
@@ -192,7 +182,7 @@ public final class ImageAttachmentView extends ConstraintLayout {
         showDescription$lambda$1.setVisibility(i10);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public ImageAttachmentView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

@@ -50,7 +50,7 @@ import kotlinx.coroutines.l;
 import wf.j;
 
 @Metadata(d1 = {"\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u000e\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\u0012\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\t\u0018\u0000 \\2\u00020\u0001:\u0002\\]B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010/\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J#\u00101\u001a\u0002002\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u00103\u001a\u00020(H\u0002¢\u0006\u0002\u00104J\u0010\u00105\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u00106\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u001a\u00107\u001a\u0002002\u0006\u0010+\u001a\u00020,2\b\b\u0002\u00108\u001a\u00020(H\u0002J\b\u00109\u001a\u000200H\u0002J\u000f\u0010:\u001a\u0004\u0018\u00010\u001eH\u0002¢\u0006\u0002\u0010;J\b\u0010<\u001a\u000200H\u0002J\u0012\u0010=\u001a\u0002002\b\u0010>\u001a\u0004\u0018\u00010?H\u0002J\b\u0010@\u001a\u000200H\u0002J\u0010\u0010A\u001a\u0002002\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u0010B\u001a\u0002002\u0006\u0010C\u001a\u00020(H\u0002J\u000e\u0010D\u001a\u0002002\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010E\u001a\u0002002\u0006\u0010F\u001a\u00020GJ%\u0010H\u001a\u0002002\u0006\u0010I\u001a\u00020J2\b\u0010K\u001a\u0004\u0018\u00010?ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bL\u0010MJ\u001c\u0010N\u001a\u0002002\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010O\u001a\u00020(H\u0002J-\u0010P\u001a\u0002002\b\u0010Q\u001a\u0004\u0018\u00010\u00072\f\u0010R\u001a\b\u0012\u0004\u0012\u0002000S2\b\u0010T\u001a\u0004\u0018\u00010U¢\u0006\u0002\u0010VJ\u000e\u0010'\u001a\u0002002\u0006\u0010'\u001a\u00020(J\u0010\u0010W\u001a\u0002002\u0006\u0010X\u001a\u00020(H\u0002J\f\u0010Y\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010Z\u001a\u00020?*\u00020\u0007H\u0002J\f\u0010[\u001a\u00020\u0007*\u00020\u001eH\u0002R\u001b\u0010\t\u001a\u00020\n8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000b\u0010\fR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R#\u0010\u0015\u001a\n \u0017*\u0004\u0018\u00010\u00160\u00168BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001a\u0010\u000e\u001a\u0004\b\u0018\u0010\u0019R\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u001f\u001a\u0004\u0018\u00010 X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u0010\u0010%\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010)\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0004\n\u0002\u0010*R\u000e\u0010+\u001a\u00020,X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006^"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "animatorManager", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "getAnimatorManager", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerWipeAnimatorManager;", "animatorManager$delegate", "Lkotlin/Lazy;", "attachStateChangeListener", "Lcom/discord/chat/presentation/message/view/media/ViewAttachedListener;", "binding", "Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/AudioPlayerViewBinding;", "bounceAnimator", "Landroid/view/animation/Animation;", "kotlin.jvm.PlatformType", "getBounceAnimator", "()Landroid/view/animation/Animation;", "bounceAnimator$delegate", "durationJob", "Lkotlinx/coroutines/Job;", "durationMs", "", "listener", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "getListener", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "setListener", "(Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;)V", "playerJob", "resetJob", "shouldAnimate", "", "startTimeMS", "Ljava/lang/Long;", "state", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerViewState;", "uploadFinished", "wasPlayingBeforeBeingPaused", "configureAudioWave", "", "configureDuration", "overrideDuration", "isPlaying", "(Ljava/lang/Long;Z)V", "configureLoading", "configurePlayButton", "configurePlayerState", "hasSourceChanged", "configureProgress", "getCurrentPosition", "()Ljava/lang/Long;", "maybeLogPlaybackEnded", "maybeLogPlaybackFailed", "errorMessage", "", "maybeLogPlaybackStarted", "prepareAudio", "reset", "logDuration", "setDurationMs", "setSampleData", "sampleData", "", "setSourceUrl", "messageId", "Lcom/discord/primitives/MessageId;", "sourceUrl", "setSourceUrl-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)V", "setState", "forceRefresh", "setUploadProgress", "progress", "onCancelUpload", "Lkotlin/Function0;", "attachmentsOpacity", "", "(Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;Ljava/lang/Float;)V", "toggleDurationEmitter", "shouldEmit", "timeRemainingAccessibilityText", "timeRemainingText", "toSeconds", "Companion", "Listener", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class AudioPlayerView extends FrameLayout {
     public static final Companion Companion = new Companion(null);
     public static final long RESET_DELAY_MS = 500;
@@ -70,25 +70,25 @@ public final class AudioPlayerView extends FrameLayout {
     private boolean wasPlayingBeforeBeingPaused;
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Companion;", "", "()V", "RESET_DELAY_MS", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\bf\u0018\u0000 \f2\u00020\u0001:\u0001\fJ\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0005H&J\u0012\u0010\u0007\u001a\u00020\u00032\b\u0010\b\u001a\u0004\u0018\u00010\tH&J\u0010\u0010\n\u001a\u00020\u00032\u0006\u0010\u000b\u001a\u00020\u0005H&¨\u0006\r"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener;", "", "voiceMessagePlaybackEnded", "", "endDurationSecs", "", "durationListeningSecs", "voiceMessagePlaybackFailed", "errorMessage", "", "voiceMessagePlaybackStarted", "startedDurationSecs", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public interface Listener {
         public static final Companion Companion = Companion.$$INSTANCE;
 
         @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerView$Listener$Companion;", "", "()V", "secondsSinceStart", "", "startTimeMS", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes3.dex */
+        
         public static final class Companion {
-            static final /* synthetic */ Companion $$INSTANCE = new Companion();
+            static final  Companion $$INSTANCE = new Companion();
 
             private Companion() {
             }
@@ -108,23 +108,23 @@ public final class AudioPlayerView extends FrameLayout {
         void voiceMessagePlaybackStarted(float f10);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public AudioPlayerView(Context context) {
         this(context, null, 0, 6, null);
         q.g(context, "context");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public AudioPlayerView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ AudioPlayerView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+    public  AudioPlayerView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i11 & 2) != 0 ? null : attributeSet, (i11 & 4) != 0 ? 0 : i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void _init_$lambda$2(AudioPlayerView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
         q.g(this$0, "this$0");
         boolean isPlaying$chat_release = this$0.state.isPlaying$chat_release(this$0.wasPlayingBeforeBeingPaused);
@@ -133,7 +133,7 @@ public final class AudioPlayerView extends FrameLayout {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void configureAudioWave(AudioPlayerViewState audioPlayerViewState) {
         int i10;
         this.binding.wave.setOnAudioProgressChange(new AudioPlayerView$configureAudioWave$1(this, audioPlayerViewState));
@@ -148,7 +148,7 @@ public final class AudioPlayerView extends FrameLayout {
         audioWaveView.setDefaultPaintColor(i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void configureDuration(Long l10, boolean z10) {
         long j10;
         CharSequence charSequence;
@@ -193,8 +193,8 @@ public final class AudioPlayerView extends FrameLayout {
         this.binding.text.setText("  " + timeRemainingText(seconds) + "  ");
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ void configureDuration$default(AudioPlayerView audioPlayerView, Long l10, boolean z10, int i10, Object obj) {
+    
+    public static  void configureDuration$default(AudioPlayerView audioPlayerView, Long l10, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             l10 = null;
         }
@@ -204,52 +204,14 @@ public final class AudioPlayerView extends FrameLayout {
         audioPlayerView.configureDuration(l10, z10);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:10:0x0026, code lost:
-        if (r4 != false) goto L_0x002a;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     private final void configureLoading(com.discord.chat.presentation.message.view.voicemessages.AudioPlayerViewState r4) {
-        /*
-            r3 = this;
-            com.discord.chat.databinding.AudioPlayerViewBinding r0 = r3.binding
-            android.widget.ProgressBar r0 = r0.progress
-            java.lang.String r1 = "binding.progress"
-            kotlin.jvm.internal.q.f(r0, r1)
-            com.discord.media_player.MediaPlayer$Event r1 = r4.getMediaState$chat_release()
-            com.discord.media_player.MediaPlayer$Event$BufferStart r2 = com.discord.media_player.MediaPlayer.Event.BufferStart.INSTANCE
-            boolean r1 = kotlin.jvm.internal.q.b(r1, r2)
-            r2 = 0
-            if (r1 == 0) goto L_0x0029
-            com.discord.media_player.MediaPlayer r4 = r4.getPlayer$chat_release()
-            r1 = 1
-            if (r4 == 0) goto L_0x0025
-            boolean r4 = r4.shouldPlay()
-            if (r4 != r1) goto L_0x0025
-            r4 = r1
-            goto L_0x0026
-        L_0x0025:
-            r4 = r2
-        L_0x0026:
-            if (r4 == 0) goto L_0x0029
-            goto L_0x002a
-        L_0x0029:
-            r1 = r2
-        L_0x002a:
-            if (r1 == 0) goto L_0x002d
-            goto L_0x002f
-        L_0x002d:
-            r2 = 8
-        L_0x002f:
-            r0.setVisibility(r2)
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.configureLoading(com.discord.chat.presentation.message.view.voicemessages.AudioPlayerViewState):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void configurePlayButton(final AudioPlayerViewState audioPlayerViewState) {
         ReactAsset reactAsset;
         int i10;
@@ -274,8 +236,8 @@ public final class AudioPlayerView extends FrameLayout {
         LinearLayout linearLayout = this.binding.playerContainer;
         q.f(linearLayout, "binding.playerContainer");
         if (audioPlayerViewState.getSourceUrl() != null) {
-            onClickListener = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.voicemessages.f
-                @Override // android.view.View.OnClickListener
+            onClickListener = new View.OnClickListener() { 
+                @Override 
                 public final void onClick(View view) {
                     AudioPlayerView.configurePlayButton$lambda$5(AudioPlayerView.this, audioPlayerViewState, isPlaying$chat_release, view);
                 }
@@ -286,7 +248,7 @@ public final class AudioPlayerView extends FrameLayout {
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(linearLayout, false, onClickListener, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void configurePlayButton$lambda$5(AudioPlayerView this$0, AudioPlayerViewState state, boolean z10, View view) {
         q.g(this$0, "this$0");
         q.g(state, "$state");
@@ -320,14 +282,14 @@ public final class AudioPlayerView extends FrameLayout {
         setKeepScreenOn(z12);
     }
 
-    static /* synthetic */ void configurePlayerState$default(AudioPlayerView audioPlayerView, AudioPlayerViewState audioPlayerViewState, boolean z10, int i10, Object obj) {
+    static  void configurePlayerState$default(AudioPlayerView audioPlayerView, AudioPlayerViewState audioPlayerViewState, boolean z10, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             z10 = false;
         }
         audioPlayerView.configurePlayerState(audioPlayerViewState, z10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void configureProgress() {
         float f10;
         AudioWaveView audioWaveView = this.binding.wave;
@@ -365,7 +327,7 @@ public final class AudioPlayerView extends FrameLayout {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void maybeLogPlaybackEnded() {
         Long currentPosition = getCurrentPosition();
         if (currentPosition != null) {
@@ -383,7 +345,7 @@ public final class AudioPlayerView extends FrameLayout {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void maybeLogPlaybackFailed(String str) {
         Listener listener = this.listener;
         if (listener != null) {
@@ -391,7 +353,7 @@ public final class AudioPlayerView extends FrameLayout {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void maybeLogPlaybackStarted() {
         Long currentPosition = getCurrentPosition();
         if (currentPosition != null) {
@@ -452,8 +414,8 @@ public final class AudioPlayerView extends FrameLayout {
         configurePlayerState(audioPlayerViewState, z11);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ void setState$default(AudioPlayerView audioPlayerView, AudioPlayerViewState audioPlayerViewState, boolean z10, int i10, Object obj) {
+    
+    public static  void setState$default(AudioPlayerView audioPlayerView, AudioPlayerViewState audioPlayerViewState, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             audioPlayerViewState = audioPlayerView.state;
         }
@@ -463,7 +425,7 @@ public final class AudioPlayerView extends FrameLayout {
         audioPlayerView.setState(audioPlayerViewState, z10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final String timeRemainingAccessibilityText(int i10) {
         if (i10 >= 60) {
             return timeRemainingText(i10);
@@ -482,7 +444,7 @@ public final class AudioPlayerView extends FrameLayout {
         return (int) Math.ceil(a.F(c.t(j10, d.MILLISECONDS), d.SECONDS));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void toggleDurationEmitter(boolean z10) {
         Job d10;
         Job job = this.durationJob;
@@ -537,7 +499,7 @@ public final class AudioPlayerView extends FrameLayout {
         this.binding.wave.setOriginalSampleData(sampleData);
     }
 
-    /* renamed from: setSourceUrl-ntcYbpo  reason: not valid java name */
+    
     public final void m324setSourceUrlntcYbpo(String messageId, String str) {
         q.g(messageId, "messageId");
         this.binding.wave.setEnabled(false);
@@ -595,7 +557,7 @@ public final class AudioPlayerView extends FrameLayout {
         this.binding.wave.setShouldAnimate(z10);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public AudioPlayerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Lazy b10;
@@ -637,8 +599,8 @@ public final class AudioPlayerView extends FrameLayout {
         }
         inflate.buttonContainer.setBackgroundResource(i11);
         inflate.wipe.setBackgroundResource(i11);
-        w0.q0(this, new androidx.core.view.a() { // from class: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.3
-            @Override // androidx.core.view.a
+        w0.q0(this, new androidx.core.view.a() { 
+            @Override 
             public boolean onRequestSendAccessibilityEvent(ViewGroup host, View child, AccessibilityEvent event) {
                 int i12;
                 q.g(host, "host");
@@ -654,8 +616,8 @@ public final class AudioPlayerView extends FrameLayout {
                 return super.onRequestSendAccessibilityEvent(host, child, event);
             }
         });
-        addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.discord.chat.presentation.message.view.voicemessages.e
-            @Override // android.view.View.OnLayoutChangeListener
+        addOnLayoutChangeListener(new View.OnLayoutChangeListener() { 
+            @Override 
             public final void onLayoutChange(View view, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19) {
                 AudioPlayerView._init_$lambda$2(AudioPlayerView.this, view, i12, i13, i14, i15, i16, i17, i18, i19);
             }

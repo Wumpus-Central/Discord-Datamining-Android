@@ -22,7 +22,7 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 import org.webrtc.MediaStreamTrack;
 
 @Metadata(d1 = {"\u0000~\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002;<B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\b\u0010\u001f\u001a\u00020 H\u0002J\u0012\u0010!\u001a\u0004\u0018\u00010\u00112\b\u0010\"\u001a\u0004\u0018\u00010\u0005J\u0012\u0010#\u001a\u0004\u0018\u00010\u00172\b\u0010\"\u001a\u0004\u0018\u00010\u0005J\u0012\u0010$\u001a\u0004\u0018\u00010\u00192\b\u0010\"\u001a\u0004\u0018\u00010\u0005J\u0010\u0010%\u001a\u00020\u001e2\b\u0010&\u001a\u0004\u0018\u00010\u0005J\u000e\u0010'\u001a\u00020 2\u0006\u0010(\u001a\u00020)J\u001a\u0010*\u001a\u0004\u0018\u00010\u00112\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010+\u001a\u00020,H\u0002J\u0006\u0010-\u001a\u00020 J\b\u0010.\u001a\u00020 H\u0002J\u0010\u0010.\u001a\u00020 2\b\u0010&\u001a\u0004\u0018\u00010\u0005J\u000e\u0010/\u001a\u00020 2\u0006\u00100\u001a\u00020\u001eJ\b\u00101\u001a\u00020 H\u0002J\u0010\u00101\u001a\u00020 2\b\u0010&\u001a\u0004\u0018\u00010\u0005J\u0010\u00102\u001a\u00020 2\b\u0010\"\u001a\u0004\u0018\u00010\u0005J\b\u00103\u001a\u00020\u001eH\u0002J\u001e\u00104\u001a\u00020 2\u0006\u0010\"\u001a\u00020\u00052\u0006\u00105\u001a\u0002062\u0006\u0010+\u001a\u00020,J2\u00107\u001a\u00020 2\u0006\u0010(\u001a\u00020)2\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010+\u001a\u00020,2\u0012\u00108\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020 09J\u0010\u0010:\u001a\u00020 2\b\u0010\"\u001a\u0004\u0018\u00010\u0005R\u0016\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\u0004\u0018\u00010\u00058BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0019\u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00050\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00110\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u001a\u001a\n \u001c*\u0004\u0018\u00010\u001b0\u001bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006="}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager;", "", "()V", "_currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "audioManager", "Landroid/media/AudioManager;", "currentPlayerSource", "getCurrentPlayerSource", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/Flow;", "getCurrentPlayerSourceFlow", "()Lkotlinx/coroutines/flow/Flow;", "currentProgressMap", "", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$CurrentProgress;", "focusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "focusRequest", "Landroid/media/AudioFocusRequest;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "mediaPlayerState", "Lcom/discord/media_player/MediaPlayer$Event;", "playbackAttributes", "Landroid/media/AudioAttributes;", "kotlin.jvm.PlatformType", "wasPlayingBeforePause", "", "abandonAudioFocus", "", "getCurrentProgress", "source", "getPlayer", "getState", "hasCurrentPlayer", "audioSource", "init", "context", "Landroid/content/Context;", "maybeCreateDuration", "durationMs", "", "maybePlayCurrentPlayer", "pause", "pauseCurrentPlayer", "storePauseState", "play", "releasePlayer", "requestAudioFocus", "setCurrentProgress", "progress", "", "setupPlayer", "onStateChanged", "Lkotlin/Function1;", "storeDuration", "AudioSource", "CurrentProgress", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class AudioPlayerManager {
     private static final MutableStateFlow<AudioSource> _currentPlayerSourceFlow;
     private static AudioManager audioManager;
@@ -32,8 +32,8 @@ public final class AudioPlayerManager {
     private static MediaPlayer.Event mediaPlayerState;
     private static boolean wasPlayingBeforePause;
     public static final AudioPlayerManager INSTANCE = new AudioPlayerManager();
-    private static final AudioManager.OnAudioFocusChangeListener focusListener = new AudioManager.OnAudioFocusChangeListener() { // from class: com.discord.chat.presentation.message.view.voicemessages.b
-        @Override // android.media.AudioManager.OnAudioFocusChangeListener
+    private static final AudioManager.OnAudioFocusChangeListener focusListener = new AudioManager.OnAudioFocusChangeListener() { 
+        @Override 
         public final void onAudioFocusChange(int i10) {
             AudioPlayerManager.focusListener$lambda$0(i10);
         }
@@ -42,7 +42,7 @@ public final class AudioPlayerManager {
     private static final Map<AudioSource, CurrentProgress> currentProgressMap = new LinkedHashMap();
 
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u0018\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000¢\u0006\u0002\u0010\u0006J\u0019\u0010\u000b\u001a\u00020\u0003HÆ\u0003ø\u0001\u0002ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\f\u0010\bJ\t\u0010\r\u001a\u00020\u0005HÆ\u0003J*\u0010\u000e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u000f\u0010\u0010J\u0013\u0010\u0011\u001a\u00020\u00122\b\u0010\u0013\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0014\u001a\u00020\u0015HÖ\u0001J\t\u0010\u0016\u001a\u00020\u0005HÖ\u0001R\u001c\u0010\u0002\u001a\u00020\u0003ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\n\n\u0002\u0010\t\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\b\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0017"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "", "messageId", "Lcom/discord/primitives/MessageId;", "url", "", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getUrl", "component1", "component1-3Eiw7ao", "component2", "copy", "copy-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "equals", "", "other", "hashCode", "", "toString", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class AudioSource {
         private final String messageId;
         private final String url;
@@ -52,12 +52,12 @@ public final class AudioPlayerManager {
             this.url = str2;
         }
 
-        public /* synthetic */ AudioSource(String str, String str2, DefaultConstructorMarker defaultConstructorMarker) {
+        public  AudioSource(String str, String str2, DefaultConstructorMarker defaultConstructorMarker) {
             this(str, str2);
         }
 
-        /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-        public static /* synthetic */ AudioSource m320copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
+        
+        public static  AudioSource m320copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = audioSource.messageId;
             }
@@ -67,7 +67,7 @@ public final class AudioPlayerManager {
             return audioSource.m322copyntcYbpo(str, str2);
         }
 
-        /* renamed from: component1-3Eiw7ao  reason: not valid java name */
+        
         public final String m321component13Eiw7ao() {
             return this.messageId;
         }
@@ -76,7 +76,7 @@ public final class AudioPlayerManager {
             return this.url;
         }
 
-        /* renamed from: copy-ntcYbpo  reason: not valid java name */
+        
         public final AudioSource m322copyntcYbpo(String messageId, String url) {
             q.g(messageId, "messageId");
             q.g(url, "url");
@@ -94,7 +94,7 @@ public final class AudioPlayerManager {
             return MessageId.m594equalsimpl0(this.messageId, audioSource.messageId) && q.b(this.url, audioSource.url);
         }
 
-        /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
+        
         public final String m323getMessageId3Eiw7ao() {
             return this.messageId;
         }
@@ -115,7 +115,7 @@ public final class AudioPlayerManager {
     }
 
     @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\u000f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0010\u001a\u00020\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0013\u001a\u00020\u0014HÖ\u0001J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0007¨\u0006\u0017"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$CurrentProgress;", "", "currentProgress", "", "durationMs", "(JJ)V", "getCurrentProgress", "()J", "currentProgressPercentage", "", "getCurrentProgressPercentage", "()F", "getDurationMs", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class CurrentProgress {
         private final long currentProgress;
         private final float currentProgressPercentage;
@@ -127,7 +127,7 @@ public final class AudioPlayerManager {
             this.currentProgressPercentage = ((float) j10) / ((float) j11);
         }
 
-        public static /* synthetic */ CurrentProgress copy$default(CurrentProgress currentProgress, long j10, long j11, int i10, Object obj) {
+        public static  CurrentProgress copy$default(CurrentProgress currentProgress, long j10, long j11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 j10 = currentProgress.currentProgress;
             }
@@ -192,7 +192,7 @@ public final class AudioPlayerManager {
     private AudioPlayerManager() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void abandonAudioFocus() {
         AudioManager audioManager2 = null;
         AudioFocusRequest audioFocusRequest = null;
@@ -220,7 +220,7 @@ public final class AudioPlayerManager {
         audioManager2.abandonAudioFocus(focusListener);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void focusListener$lambda$0(int i10) {
         if (i10 == 1) {
             INSTANCE.maybePlayCurrentPlayer();

@@ -5,7 +5,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-/* loaded from: classes6.dex */
+
 class KvStorageModule extends ReactContextBaseJavaModule {
     public KvStorageModule(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
@@ -22,7 +22,7 @@ class KvStorageModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @Override // com.facebook.react.bridge.NativeModule
+    @Override 
     public String getName() {
         return "KvStorage";
     }

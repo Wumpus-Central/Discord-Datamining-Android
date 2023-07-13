@@ -1,6 +1,6 @@
 package com.discord.kvstorage.discordapp;
 
-/* loaded from: classes6.dex */
+
 public final class DiscordMobileApi {
     public static native String getGuildVersions(String str);
 

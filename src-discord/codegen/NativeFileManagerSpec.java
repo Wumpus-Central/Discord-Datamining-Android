@@ -9,7 +9,7 @@ import com.facebook.react.turbomodule.core.interfaces.TurboModule;
 import e5.a;
 import java.util.Map;
 
-/* loaded from: classes3.dex */
+
 public abstract class NativeFileManagerSpec extends ReactContextBaseJavaModule implements ReactModuleWithSpec, TurboModule {
     public NativeFileManagerSpec(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
@@ -19,7 +19,7 @@ public abstract class NativeFileManagerSpec extends ReactContextBaseJavaModule i
     @a
     public abstract void fileExists(String str, Promise promise);
 
-    @Override // com.facebook.react.bridge.BaseJavaModule
+    @Override 
     @a
     public final Map<String, Object> getConstants() {
         return getTypedExportedConstants();

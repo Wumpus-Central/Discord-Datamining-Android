@@ -5,7 +5,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import java.util.Locale;
 
-/* loaded from: classes.dex */
+
 public class DiscordMediaCodec {
     static final String[] KNOWN_HARDWARE_ENCODER_PREFIXES = {"omx.qcom.", "omx.exynos.", "omx.intel.", "omx.nvidia.", "omx.mtk.", "omx.hisi.", "omx.img.topaz."};
     static final String[] KNOWN_BAD_ENCODER_MODELS = {"samsung-sgh-i337", "nexus 4", "nexus 7"};

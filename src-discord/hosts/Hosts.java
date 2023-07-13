@@ -6,7 +6,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J&\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0004J\u0010\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0016\u001a\u00020\u0004H\u0002J\u0018\u0010\u0017\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0004H\u0002R$\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00048F@BX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR$\u0010\n\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00048F@BX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\tR\u000e\u0010\r\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u0018"}, d2 = {"Lcom/discord/hosts/Hosts;", "", "()V", "value", "", "API", "getAPI", "()Ljava/lang/String;", "setAPI", "(Ljava/lang/String;)V", "CDN", "getCDN", "setCDN", "prefs", "Landroid/content/SharedPreferences;", "init", "", "context", "Landroid/content/Context;", "api", "cdn", "requireHost", "key", "setHost", "hosts_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class Hosts {
     public static final Hosts INSTANCE = new Hosts();
     private static SharedPreferences prefs;
@@ -14,7 +14,7 @@ public final class Hosts {
     private Hosts() {
     }
 
-    public static /* synthetic */ void init$default(Hosts hosts, Context context, String str, String str2, int i10, Object obj) {
+    public static  void init$default(Hosts hosts, Context context, String str, String str2, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             str = null;
         }

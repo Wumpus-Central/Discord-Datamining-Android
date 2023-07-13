@@ -16,8 +16,8 @@ import okhttp3.Headers;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: classes6.dex */
+
+
 public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
     private static final String TAG = "ReactOkHttpNetworkFetcher";
     private final Executor mCancellationExecutor;
@@ -42,7 +42,7 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
         return hashMap;
     }
 
-    @Override // com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher
+    @Override 
     public void fetch(OkHttpNetworkFetcher.OkHttpNetworkFetchState okHttpNetworkFetchState, NetworkFetcher.Callback callback) {
         okHttpNetworkFetchState.f7794f = SystemClock.elapsedRealtime();
         Uri g10 = okHttpNetworkFetchState.g();

@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import com.discord.SetTextSizeSpKt;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
@@ -30,6 +31,17 @@ import com.discord.chat.databinding.EmbedViewBinding;
 import com.discord.chat.presentation.media.MediaContainingViewResizer;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.image.fresco.SetOptionalImageUrlKt;
@@ -64,16 +76,16 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000¾\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u001d\b\u0007\u0012\u0006\u0010u\u001a\u00020t\u0012\n\b\u0002\u0010w\u001a\u0004\u0018\u00010v¢\u0006\u0004\bx\u0010yJ9\u0010\t\u001a\u00020\u00072\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\t\u0010\nJK\u0010\u0013\u001a\u00020\u00072\u0006\u0010\f\u001a\u00020\u000b2\b\u0010\u000e\u001a\u0004\u0018\u00010\r2\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u00042\b\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070\u0006H\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001c\u0010\u0017\u001a\u00020\u00072\b\u0010\u0015\u001a\u0004\u0018\u00010\u000b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u000bH\u0002J&\u0010\u0019\u001a\u00020\u00072\b\u0010\u0018\u001a\u0004\u0018\u00010\u00102\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J\u0012\u0010\u001c\u001a\u00020\u00072\b\u0010\u001b\u001a\u0004\u0018\u00010\u001aH\u0002J8\u0010 \u001a\u00020\u00072\u0006\u0010\u001d\u001a\u00020\u000b2\b\u0010\u001e\u001a\u0004\u0018\u00010\r2\b\b\u0001\u0010\u001f\u001a\u00020\u00042\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002Jå\u0001\u00107\u001a\u00020\u00072\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\"0!2\u0006\u0010%\u001a\u00020$2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b5\u00106J\u0010\u00109\u001a\u00020\u00072\u0006\u00108\u001a\u00020&H\u0002J\u001b\u0010;\u001a\u00020\u00072\n\b\u0001\u0010:\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\b;\u0010<J0\u0010E\u001a\u00020\u00072\u0006\u0010>\u001a\u00020=2\u0006\u0010@\u001a\u00020?2\u0006\u0010B\u001a\u00020A2\u0006\u0010C\u001a\u00020\u00042\u0006\u0010D\u001a\u00020\u0004H\u0002J0\u0010H\u001a\u00020\u00072\b\u0010F\u001a\u0004\u0018\u00010\u000b2\b\u0010G\u001a\u0004\u0018\u00010\u000b2\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u0006H\u0002J;\u0010M\u001a\u00020\u00072\b\u0010I\u001a\u0004\u0018\u00010\u000b2\b\b\u0001\u0010J\u001a\u00020\u00042\n\b\u0002\u0010K\u001a\u0004\u0018\u00010\u000b2\n\b\u0003\u0010L\u001a\u0004\u0018\u00010\u0004H\u0002¢\u0006\u0004\bM\u0010NJ\u0012\u0010Q\u001a\u00020\u00072\b\u0010P\u001a\u0004\u0018\u00010OH\u0002J\b\u0010R\u001a\u00020\u0007H\u0002J\b\u0010S\u001a\u00020\u0007H\u0002J\b\u0010T\u001a\u00020\u0007H\u0002J\b\u0010U\u001a\u00020\u0007H\u0002J\b\u0010V\u001a\u00020\u0007H\u0002J\b\u0010W\u001a\u00020\u0007H\u0002J\b\u0010X\u001a\u00020\u0007H\u0002J\b\u0010Y\u001a\u00020\u0007H\u0002J\b\u0010Z\u001a\u00020\u0007H\u0002J\b\u0010[\u001a\u00020\u0007H\u0002J\b\u0010\\\u001a\u00020\u0007H\u0002J\b\u0010]\u001a\u00020\u0007H\u0002J\u008f\u0003\u0010m\u001a\u00020\u00072\u0006\u0010@\u001a\u00020?2\u0006\u0010%\u001a\u00020$2\u0006\u0010^\u001a\u00020\u00042\u0006\u0010C\u001a\u00020\u00042\u0006\u0010_\u001a\u00020\u00042\u0006\u0010`\u001a\u00020&2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020&2 \u0010a\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022 \u0010b\u001a\u001c\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u001c\u0010d\u001a\u0018\u0012\u0006\u0012\u0004\u0018\u00010c\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\u0004\u0012\u00020\u00070*2\b\u0010f\u001a\u0004\u0018\u00010e2\u0018\u0010,\u001a\u0014\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010g\u001a\u000e\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020\u00070\u00062\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00070\u00062\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00070.2\u0012\u00101\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u00020\u00070\u00062\"\u00103\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u000b\u0012\u0004\u0012\u00020\u0007022\u0018\u00104\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00070*2\u0012\u0010i\u001a\u000e\u0012\u0004\u0012\u00020h\u0012\u0004\u0012\u00020\u00070\u00062\b\u0010P\u001a\u0004\u0018\u00010O2\u0006\u0010j\u001a\u00020cø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\bk\u0010lR\u0014\u0010o\u001a\u00020n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bo\u0010pR\u0018\u0010@\u001a\u0004\u0018\u00010?8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b@\u0010qR\u0016\u0010r\u001a\u00020\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\br\u0010s\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006z"}, d2 = {"Lcom/discord/chat/presentation/message/view/EmbedView;", "Landroid/widget/FrameLayout;", "", "provider", "", "providerColor", "Lkotlin/Function1;", "", "onTapCopyText", "setProvider", "(Ljava/lang/CharSequence;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "", "rawTitle", "Lcom/facebook/drawee/span/DraweeSpanStringBuilder;", "title", "titleColor", "Landroid/view/View$OnClickListener;", "onClickListener", "onLongClickListener", "setTitle", "(Ljava/lang/String;Lcom/facebook/drawee/span/DraweeSpanStringBuilder;Ljava/lang/Integer;Landroid/view/View$OnClickListener;Lkotlin/jvm/functions/Function1;)V", "authorUrl", "authorName", "setAuthor", "listener", "setAuthorOnClickListener", "Lcom/discord/chat/bridge/embed/EmbedThumbnail;", "thumbnail", "setThumbnail", "rawDescription", "description", "descriptionColor", "setDescription", "", "Lcom/discord/chat/bridge/embed/EmbedField;", "fields", "Lcom/discord/primitives/MessageId;", "messageId", "", "shouldAnimateEmoji", "shouldShowRoleDot", "shouldShowRoleOnName", "Lkotlin/Function2;", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "onLinkClicked", "onLinkLongClicked", "Lkotlin/Function0;", "onTapSpoiler", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", "onTapEmoji", "Lkotlin/Function3;", "onTapChannel", "onTapMention", "setFields-thlxG-E", "(Ljava/util/List;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;)V", "setFields", "isBackgroundColorEnabled", "setBackgroundColorEnabled", ViewProps.COLOR, "setBorder", "(Ljava/lang/Integer;)V", "Lcom/discord/chat/presentation/message/view/EmbedViewResizingMediaView;", "mediaView", "Lcom/discord/chat/bridge/embed/Embed;", "embed", "Lcom/discord/media_player/MediaSource;", "mediaSource", "maxHeightPx", "maxWidthPx", "setMediaEmbed", "imageUrl", "text", "setFooter", "error", "textColor", "iconURL", "iconTint", "setError", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Integer;)V", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "spoilerConfig", "configureSpoiler", "reset", "clearInlineMedia", "clearBorder", "clearThumbnail", "clearProvider", "clearAuthor", "clearTitle", "clearDescription", "clearFields", "clearMedia", "clearFooter", "clearError", "constrainedWidth", "radiusPx", "shouldAutoPlayGifs", "onTitleLinkClicked", "onAuthorLinkClicked", "", "onMediaClicked", "Landroid/view/View$OnLongClickListener;", "onMediaLongClicked", "onLongTapLinkNode", "Lcom/discord/chat/bridge/contentnode/CommandMentionContentNode;", "onTapCommand", "portal", "setEmbed-lKx2FiY", "(Lcom/discord/chat/bridge/embed/Embed;Ljava/lang/String;IIIZZZZLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lcom/discord/chat/bridge/spoiler/SpoilerConfig;D)V", "setEmbed", "Lcom/discord/chat/databinding/EmbedViewBinding;", "binding", "Lcom/discord/chat/databinding/EmbedViewBinding;", "Lcom/discord/chat/bridge/embed/Embed;", "maxThumbnailSize", "I", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class EmbedView extends FrameLayout {
     private final EmbedViewBinding binding;
     private Embed embed;
     private int maxThumbnailSize;
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
 
         static {
             int[] iArr = new int[EmbedType.values().length];
@@ -85,13 +97,13 @@ public final class EmbedView extends FrameLayout {
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public EmbedView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ EmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  EmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -207,71 +219,12 @@ public final class EmbedView extends FrameLayout {
         clearError();
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0028  */
-    /* JADX WARN: Removed duplicated region for block: B:17:0x002c  */
-    /* JADX WARN: Removed duplicated region for block: B:9:0x0019  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
     private final void setAuthor(java.lang.String r7, java.lang.String r8) {
-        /*
-            r6 = this;
-            com.discord.chat.databinding.EmbedViewBinding r0 = r6.binding
-            android.widget.LinearLayout r0 = r0.authorContainer
-            java.lang.String r1 = "binding.authorContainer"
-            kotlin.jvm.internal.q.f(r0, r1)
-            r1 = 1
-            r2 = 0
-            if (r7 == 0) goto L_0x0016
-            boolean r3 = ji.l.w(r7)
-            if (r3 == 0) goto L_0x0014
-            goto L_0x0016
-        L_0x0014:
-            r3 = r2
-            goto L_0x0017
-        L_0x0016:
-            r3 = r1
-        L_0x0017:
-            if (r3 == 0) goto L_0x0029
-            if (r8 == 0) goto L_0x0024
-            boolean r3 = ji.l.w(r8)
-            if (r3 == 0) goto L_0x0022
-            goto L_0x0024
-        L_0x0022:
-            r3 = r2
-            goto L_0x0025
-        L_0x0024:
-            r3 = r1
-        L_0x0025:
-            if (r3 != 0) goto L_0x0028
-            goto L_0x0029
-        L_0x0028:
-            r1 = r2
-        L_0x0029:
-            if (r1 == 0) goto L_0x002c
-            goto L_0x002e
-        L_0x002c:
-            r2 = 8
-        L_0x002e:
-            r0.setVisibility(r2)
-            com.discord.chat.databinding.EmbedViewBinding r0 = r6.binding
-            android.widget.TextView r0 = r0.authorName
-            java.lang.String r1 = "binding.authorName"
-            kotlin.jvm.internal.q.f(r0, r1)
-            com.discord.misc.utilities.view.ViewUtilsKt.setOptionalText(r0, r8)
-            com.discord.chat.databinding.EmbedViewBinding r8 = r6.binding
-            com.facebook.drawee.view.SimpleDraweeView r0 = r8.authorAvatar
-            java.lang.String r8 = "binding.authorAvatar"
-            kotlin.jvm.internal.q.f(r0, r8)
-            r2 = 0
-            r3 = 0
-            r4 = 6
-            r5 = 0
-            r1 = r7
-            com.discord.image.fresco.SetOptionalImageUrlKt.setOptionalImageUrl$default(r0, r1, r2, r3, r4, r5)
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.EmbedView.setAuthor(java.lang.String, java.lang.String):void");
     }
 
@@ -279,8 +232,8 @@ public final class EmbedView extends FrameLayout {
         TextView setAuthorOnClickListener$lambda$15 = this.binding.authorName;
         q.f(setAuthorOnClickListener$lambda$15, "setAuthorOnClickListener$lambda$15");
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(setAuthorOnClickListener$lambda$15, false, onClickListener, 1, null);
-        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setAuthorOnClickListener$lambda$15, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.view.q
-            @Override // android.view.View.OnLongClickListener
+        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setAuthorOnClickListener$lambda$15, false, new View.OnLongClickListener() { 
+            @Override 
             public final boolean onLongClick(View view) {
                 boolean authorOnClickListener$lambda$15$lambda$14;
                 authorOnClickListener$lambda$15$lambda$14 = EmbedView.setAuthorOnClickListener$lambda$15$lambda$14(Function1.this, this, view);
@@ -289,7 +242,7 @@ public final class EmbedView extends FrameLayout {
         }, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setAuthorOnClickListener$lambda$15$lambda$14(Function1 onTapCopyText, EmbedView this$0, View view) {
         q.g(onTapCopyText, "$onTapCopyText");
         q.g(this$0, "this$0");
@@ -336,8 +289,8 @@ public final class EmbedView extends FrameLayout {
         }
         SimpleDraweeSpanTextViewUtilsKt.setOptionalText(setDescription$lambda$19, draweeSpanStringBuilder);
         setDescription$lambda$19.setTextColor(i10);
-        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setDescription$lambda$19, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.view.l
-            @Override // android.view.View.OnLongClickListener
+        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setDescription$lambda$19, false, new View.OnLongClickListener() { 
+            @Override 
             public final boolean onLongClick(View view) {
                 boolean description$lambda$19$lambda$18;
                 description$lambda$19$lambda$18 = EmbedView.setDescription$lambda$19$lambda$18(Function1.this, str, view);
@@ -346,7 +299,7 @@ public final class EmbedView extends FrameLayout {
         }, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setDescription$lambda$19$lambda$18(Function1 onTapCopyText, String rawDescription, View view) {
         q.g(onTapCopyText, "$onTapCopyText");
         q.g(rawDescription, "$rawDescription");
@@ -354,7 +307,7 @@ public final class EmbedView extends FrameLayout {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void setEmbed_lKx2FiY$lambda$3$lambda$2(Function3 onTitleLinkClicked, String messageId, String url, DraweeSpanStringBuilder draweeSpanStringBuilder, View view) {
         String str;
         q.g(onTitleLinkClicked, "$onTitleLinkClicked");
@@ -372,7 +325,7 @@ public final class EmbedView extends FrameLayout {
         onTitleLinkClicked.invoke(messageId2, url, str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void setEmbed_lKx2FiY$lambda$5$lambda$4(Function3 onAuthorLinkClicked, String messageId, Embed embed, View view) {
         q.g(onAuthorLinkClicked, "$onAuthorLinkClicked");
         q.g(messageId, "$messageId");
@@ -380,63 +333,14 @@ public final class EmbedView extends FrameLayout {
         onAuthorLinkClicked.invoke(MessageId.m590boximpl(messageId), embed.getAuthor().getUrl(), embed.getAuthor().getName());
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:13:0x004d  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     private final void setError(java.lang.String r3, int r4, java.lang.String r5, java.lang.Integer r6) {
-        /*
-            r2 = this;
-            com.discord.chat.databinding.EmbedViewBinding r0 = r2.binding
-            android.widget.TextView r0 = r0.error
-            java.lang.String r1 = "setError$lambda$27"
-            kotlin.jvm.internal.q.f(r0, r1)
-            com.discord.misc.utilities.view.ViewUtilsKt.setOptionalText(r0, r3)
-            com.discord.fonts.DiscordFont r1 = com.discord.fonts.DiscordFont.PrimaryMedium
-            com.discord.fonts.DiscordFontUtilsKt.setDiscordFont(r0, r1)
-            r0.setTextColor(r4)
-            com.discord.chat.databinding.EmbedViewBinding r0 = r2.binding
-            com.facebook.drawee.view.SimpleDraweeView r0 = r0.errorIcon
-            java.lang.String r1 = "binding.errorIcon"
-            kotlin.jvm.internal.q.f(r0, r1)
-            if (r6 == 0) goto L_0x0023
-            int r4 = r6.intValue()
-        L_0x0023:
-            java.lang.Integer r4 = java.lang.Integer.valueOf(r4)
-            com.discord.theme.utils.ColorUtilsKt.setTintColor(r0, r4)
-            com.discord.chat.databinding.EmbedViewBinding r4 = r2.binding
-            com.facebook.drawee.view.SimpleDraweeView r4 = r4.errorIcon
-            kotlin.jvm.internal.q.f(r4, r1)
-            com.discord.react_asset_fetcher.ReactAssetUtilsKt.setOptionalReactImageUrl(r4, r5)
-            com.discord.chat.databinding.EmbedViewBinding r4 = r2.binding
-            com.facebook.drawee.view.SimpleDraweeView r4 = r4.errorIcon
-            kotlin.jvm.internal.q.f(r4, r1)
-            r5 = 0
-            r6 = 1
-            if (r3 == 0) goto L_0x0048
-            boolean r3 = ji.l.w(r3)
-            if (r3 == 0) goto L_0x0046
-            goto L_0x0048
-        L_0x0046:
-            r3 = r5
-            goto L_0x0049
-        L_0x0048:
-            r3 = r6
-        L_0x0049:
-            r3 = r3 ^ r6
-            if (r3 == 0) goto L_0x004d
-            goto L_0x004f
-        L_0x004d:
-            r5 = 8
-        L_0x004f:
-            r4.setVisibility(r5)
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.EmbedView.setError(java.lang.String, int, java.lang.String, java.lang.Integer):void");
     }
 
-    static /* synthetic */ void setError$default(EmbedView embedView, String str, int i10, String str2, Integer num, int i11, Object obj) {
+    static  void setError$default(EmbedView embedView, String str, int i10, String str2, Integer num, int i11, Object obj) {
         if ((i11 & 4) != 0) {
             str2 = null;
         }
@@ -446,7 +350,7 @@ public final class EmbedView extends FrameLayout {
         embedView.setError(str, i10, str2, num);
     }
 
-    /* renamed from: setFields-thlxG-E  reason: not valid java name */
+    
     private final void m303setFieldsthlxGE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3<? super String, ? super String, ? super String, Unit> function3, Function2<? super String, ? super String, Unit> function22) {
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$1;
         String str2;
@@ -456,6 +360,7 @@ public final class EmbedView extends FrameLayout {
         String str4;
         EmbedFieldView embedFieldView2;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
+        DraweeSpanStringBuilder spannable;
         EmbedView$setFields$onLinkClickedWithMessageId$1 embedView$setFields$onLinkClickedWithMessageId$12 = new EmbedView$setFields$onLinkClickedWithMessageId$1(function2, str);
         LinearLayout setFields_thlxG_E$lambda$22 = this.binding.fieldsContainer;
         q.f(setFields_thlxG_E$lambda$22, "setFields_thlxG_E$lambda$22");
@@ -480,7 +385,7 @@ public final class EmbedView extends FrameLayout {
                 str2 = "context";
                 setFields_thlxG_E$lambda$22 = setFields_thlxG_E$lambda$22;
                 embedView$setFields$onLinkClickedWithMessageId$1 = embedView$setFields$onLinkClickedWithMessageId$12;
-                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(name, context, str, z10, z11, z12, embedView$setFields$onLinkClickedWithMessageId$12, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, 0.0f, 482560, null);
+                draweeSpanStringBuilder = TextUtilsKt.toSpannable(name, context, str, z10, z11, z12, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$12, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : 0.0f);
                 str3 = str5;
                 embedFieldView = embedFieldView3;
             } else {
@@ -501,7 +406,8 @@ public final class EmbedView extends FrameLayout {
                 q.f(fontMetrics, "binding.value.paint.fontMetrics");
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
                 q.f(context2, str2);
-                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(value, context2, str, z10, z11, z12, embedView$setFields$onLinkClickedWithMessageId$1, function1, function3, null, function22, null, null, null, function13, null, function0, false, null, baselineHeight, 220416, null);
+                spannable = TextUtilsKt.toSpannable(value, context2, str, z10, z11, z12, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : embedView$setFields$onLinkClickedWithMessageId$1, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function1, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function22, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function13, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : baselineHeight);
+                draweeSpanStringBuilder2 = spannable;
                 str4 = str6;
                 embedFieldView2 = embedFieldView;
             } else {
@@ -514,91 +420,19 @@ public final class EmbedView extends FrameLayout {
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0028  */
-    /* JADX WARN: Removed duplicated region for block: B:18:0x002d  */
-    /* JADX WARN: Removed duplicated region for block: B:19:0x002f  */
-    /* JADX WARN: Removed duplicated region for block: B:22:0x0054  */
-    /* JADX WARN: Removed duplicated region for block: B:23:0x005a  */
-    /* JADX WARN: Removed duplicated region for block: B:9:0x0019  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
     private final void setFooter(java.lang.String r10, final java.lang.String r11, final kotlin.jvm.functions.Function1<? super java.lang.CharSequence, kotlin.Unit> r12) {
-        /*
-            r9 = this;
-            com.discord.chat.databinding.EmbedViewBinding r0 = r9.binding
-            android.widget.LinearLayout r0 = r0.footerContainer
-            java.lang.String r1 = "binding.footerContainer"
-            kotlin.jvm.internal.q.f(r0, r1)
-            r1 = 1
-            r2 = 0
-            if (r10 == 0) goto L_0x0016
-            boolean r3 = ji.l.w(r10)
-            if (r3 == 0) goto L_0x0014
-            goto L_0x0016
-        L_0x0014:
-            r3 = r2
-            goto L_0x0017
-        L_0x0016:
-            r3 = r1
-        L_0x0017:
-            if (r3 == 0) goto L_0x002a
-            if (r11 == 0) goto L_0x0024
-            boolean r3 = ji.l.w(r11)
-            if (r3 == 0) goto L_0x0022
-            goto L_0x0024
-        L_0x0022:
-            r3 = r2
-            goto L_0x0025
-        L_0x0024:
-            r3 = r1
-        L_0x0025:
-            if (r3 != 0) goto L_0x0028
-            goto L_0x002a
-        L_0x0028:
-            r3 = r2
-            goto L_0x002b
-        L_0x002a:
-            r3 = r1
-        L_0x002b:
-            if (r3 == 0) goto L_0x002f
-            r3 = r2
-            goto L_0x0031
-        L_0x002f:
-            r3 = 8
-        L_0x0031:
-            r0.setVisibility(r3)
-            com.discord.chat.databinding.EmbedViewBinding r0 = r9.binding
-            com.facebook.drawee.view.SimpleDraweeView r3 = r0.footerAvatar
-            java.lang.String r0 = "binding.footerAvatar"
-            kotlin.jvm.internal.q.f(r3, r0)
-            r5 = 0
-            r6 = 0
-            r7 = 6
-            r8 = 0
-            r4 = r10
-            com.discord.image.fresco.SetOptionalImageUrlKt.setOptionalImageUrl$default(r3, r4, r5, r6, r7, r8)
-            com.discord.chat.databinding.EmbedViewBinding r10 = r9.binding
-            android.widget.TextView r10 = r10.footerText
-            java.lang.String r0 = "setFooter$lambda$26"
-            kotlin.jvm.internal.q.f(r10, r0)
-            com.discord.misc.utilities.view.ViewUtilsKt.setOptionalText(r10, r11)
-            r0 = 0
-            if (r11 == 0) goto L_0x005a
-            com.discord.chat.presentation.message.view.m r3 = new com.discord.chat.presentation.message.view.m
-            r3.<init>()
-            goto L_0x005b
-        L_0x005a:
-            r3 = r0
-        L_0x005b:
-            com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(r10, r2, r3, r1, r0)
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.EmbedView.setFooter(java.lang.String, java.lang.String, kotlin.jvm.functions.Function1):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setFooter$lambda$26$lambda$25$lambda$24(Function1 onTapCopyText, String str, View view) {
         q.g(onTapCopyText, "$onTapCopyText");
         onTapCopyText.invoke(str);
@@ -648,8 +482,8 @@ public final class EmbedView extends FrameLayout {
         }
         setProvider$lambda$10.setTextColor(i10);
         if (charSequence != null) {
-            onLongClickListener = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.view.r
-                @Override // android.view.View.OnLongClickListener
+            onLongClickListener = new View.OnLongClickListener() { 
+                @Override 
                 public final boolean onLongClick(View view) {
                     boolean provider$lambda$10$lambda$9$lambda$8;
                     provider$lambda$10$lambda$9$lambda$8 = EmbedView.setProvider$lambda$10$lambda$9$lambda$8(Function1.this, charSequence, view);
@@ -662,7 +496,7 @@ public final class EmbedView extends FrameLayout {
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setProvider$lambda$10, false, onLongClickListener, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setProvider$lambda$10$lambda$9$lambda$8(Function1 onTapCopyText, CharSequence charSequence, View view) {
         q.g(onTapCopyText, "$onTapCopyText");
         onTapCopyText.invoke(charSequence);
@@ -708,8 +542,8 @@ public final class EmbedView extends FrameLayout {
         setTitle$lambda$13.setTextColor(i10);
         NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(setTitle$lambda$13, false, onClickListener, 1, null);
         if (draweeSpanStringBuilder != null) {
-            onLongClickListener = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.view.n
-                @Override // android.view.View.OnLongClickListener
+            onLongClickListener = new View.OnLongClickListener() { 
+                @Override 
                 public final boolean onLongClick(View view) {
                     boolean title$lambda$13$lambda$12$lambda$11;
                     title$lambda$13$lambda$12$lambda$11 = EmbedView.setTitle$lambda$13$lambda$12$lambda$11(Function1.this, str, view);
@@ -722,7 +556,7 @@ public final class EmbedView extends FrameLayout {
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(setTitle$lambda$13, false, onLongClickListener, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setTitle$lambda$13$lambda$12$lambda$11(Function1 onLongClickListener, String rawTitle, View view) {
         q.g(onLongClickListener, "$onLongClickListener");
         q.g(rawTitle, "$rawTitle");
@@ -730,12 +564,13 @@ public final class EmbedView extends FrameLayout {
         return true;
     }
 
-    /* renamed from: setEmbed-lKx2FiY  reason: not valid java name */
+    
     public final void m304setEmbedlKx2FiY(final Embed embed, final String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, final Function3<? super MessageId, ? super String, ? super String, Unit> onTitleLinkClicked, final Function3<? super MessageId, ? super String, ? super String, Unit> onAuthorLinkClicked, Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, Function1<? super LinkContentNode, Unit> onLongTapLinkNode, Function1<? super CharSequence, Unit> onTapCopyText, Function0<Unit> onTapSpoiler, Function1<? super EmojiContentNode, Unit> onTapEmoji, Function3<? super String, ? super String, ? super String, Unit> onTapChannel, Function2<? super String, ? super String, Unit> onTapMention, Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10) {
         final DraweeSpanStringBuilder draweeSpanStringBuilder;
         Integer num;
         DraweeSpanStringBuilder draweeSpanStringBuilder2;
         List J0;
+        DraweeSpanStringBuilder spannable;
         q.g(embed, "embed");
         q.g(messageId, "messageId");
         q.g(onTitleLinkClicked, "onTitleLinkClicked");
@@ -784,7 +619,8 @@ public final class EmbedView extends FrameLayout {
             if (title != null) {
                 Context context = getContext();
                 q.f(context, "context");
-                draweeSpanStringBuilder = TextUtilsKt.toSpannable$default(title, context, messageId, z11, z12, z13, null, null, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, 0.0f, 481632, null);
+                spannable = TextUtilsKt.toSpannable(title, context, messageId, z11, z12, z13, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : 0.0f);
+                draweeSpanStringBuilder = spannable;
             } else {
                 draweeSpanStringBuilder = null;
             }
@@ -796,8 +632,8 @@ public final class EmbedView extends FrameLayout {
                 num = embed.getHeaderTextColor();
             }
             final String url = embed.getUrl();
-            setTitle(str, draweeSpanStringBuilder, num, url != null ? new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.o
-                @Override // android.view.View.OnClickListener
+            setTitle(str, draweeSpanStringBuilder, num, url != null ? new View.OnClickListener() { 
+                @Override 
                 public final void onClick(View view) {
                     EmbedView.setEmbed_lKx2FiY$lambda$3$lambda$2(Function3.this, messageId, url, draweeSpanStringBuilder, view);
                 }
@@ -813,7 +649,7 @@ public final class EmbedView extends FrameLayout {
                 q.f(fontMetrics, "binding.description.paint.fontMetrics");
                 float baselineHeight = TextUtilsKt.getBaselineHeight(fontMetrics);
                 q.f(context2, "context");
-                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable$default(description, context2, messageId, z11, z12, z13, new EmbedView$setEmbed$3(onLinkClicked, messageId), onLongTapLinkNode, onTapChannel, null, onTapMention, onTapCommand, null, null, onTapEmoji, null, onTapSpoiler, false, null, baselineHeight, 219392, null);
+                draweeSpanStringBuilder2 = TextUtilsKt.toSpannable(description, context2, messageId, z11, z12, z13, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : new EmbedView$setEmbed$3(onLinkClicked, messageId), (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : onLongTapLinkNode, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : onTapChannel, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : onTapMention, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : onTapCommand, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : onTapEmoji, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : onTapSpoiler, (65536 & r42) != 0 ? false : false, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : baselineHeight);
             } else {
                 draweeSpanStringBuilder2 = null;
             }
@@ -827,8 +663,8 @@ public final class EmbedView extends FrameLayout {
             EmbedAuthor author2 = embed.getAuthor();
             setAuthor(imageUrl, author2 != null ? author2.getName() : null);
             EmbedAuthor author3 = embed.getAuthor();
-            setAuthorOnClickListener((author3 == null || author3.getUrl() == null) ? null : new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.p
-                @Override // android.view.View.OnClickListener
+            setAuthorOnClickListener((author3 == null || author3.getUrl() == null) ? null : new View.OnClickListener() { 
+                @Override 
                 public final void onClick(View view) {
                     EmbedView.setEmbed_lKx2FiY$lambda$5$lambda$4(Function3.this, messageId, embed, view);
                 }
@@ -885,7 +721,7 @@ public final class EmbedView extends FrameLayout {
         configureSpoiler(spoilerConfig);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public EmbedView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

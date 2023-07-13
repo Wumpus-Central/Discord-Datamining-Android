@@ -9,22 +9,22 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implements Function2<Sticker, MessageId, Unit> {
-    /* JADX INFO: Access modifiers changed from: package-private */
+
+public  class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implements Function2<Sticker, MessageId, Unit> {
+    
     public MessageAccessoriesAdapter$onCreateViewHolder$2(Object obj) {
         super(2, obj, ChatEventHandler.class, "onWelcomeReplyClicked", "onWelcomeReplyClicked-Ayv7vGE(Lcom/discord/chat/bridge/sticker/Sticker;Ljava/lang/String;)V", 0);
     }
 
-    @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Unit invoke(Sticker sticker, MessageId messageId) {
+    @Override 
+    public   Unit invoke(Sticker sticker, MessageId messageId) {
         m207invokeAyv7vGE(sticker, messageId.m598unboximpl());
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke-Ayv7vGE  reason: not valid java name */
+    
     public final void m207invokeAyv7vGE(Sticker p02, String p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");

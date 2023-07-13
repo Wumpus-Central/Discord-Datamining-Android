@@ -1,5 +1,5 @@
 package com.discord.audio;
 
-/* loaded from: classes.dex */
-public final /* synthetic */ class f {
+
+public final  class f {
 }

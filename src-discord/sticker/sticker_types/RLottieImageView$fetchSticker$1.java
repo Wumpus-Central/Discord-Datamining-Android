@@ -25,31 +25,31 @@ import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1", f = "RLottieImageView.kt", l = {73, 82}, m = "invokeSuspend")
-/* loaded from: classes8.dex */
-public final class RLottieImageView$fetchSticker$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ RLottieImageView.Config $config;
-    int label;
-    final /* synthetic */ RLottieImageView this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+public final class RLottieImageView$fetchSticker$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  RLottieImageView.Config $config;
+    int label;
+    final  RLottieImageView this$0;
+
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
-    /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1  reason: invalid class name */
-    /* loaded from: classes8.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
-        final /* synthetic */ RLottieImageView this$0;
+        final  RLottieImageView this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass1(RLottieImageView rLottieImageView, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.this$0 = rLottieImageView;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, continuation);
         }
@@ -58,7 +58,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             d.d();
             if (this.label == 0) {
@@ -70,15 +70,15 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public RLottieImageView$fetchSticker$1(RLottieImageView rLottieImageView, RLottieImageView.Config config, Continuation<? super RLottieImageView$fetchSticker$1> continuation) {
         super(2, continuation);
         this.this$0 = rLottieImageView;
         this.$config = config;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new RLottieImageView$fetchSticker$1(this.this$0, this.$config, continuation);
     }
@@ -87,7 +87,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         d10 = d.d();
@@ -116,20 +116,20 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         Flow downloadFile$default = FileDownloader.downloadFile$default(fileDownloader, context, url, asset + ".json", new File(this.this$0.getContext().getCacheDir(), "stickers"), false, 16, null);
         final RLottieImageView rLottieImageView = this.this$0;
         final RLottieImageView.Config config = this.$config;
-        FlowCollector flowCollector = new FlowCollector() { // from class: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1.2
+        FlowCollector flowCollector = new FlowCollector() { 
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
-            /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$1  reason: invalid class name */
-            /* loaded from: classes8.dex */
+            
+            
             public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
-                final /* synthetic */ RLottieImageView.Config $config;
-                final /* synthetic */ DownloadState $downloadState;
+                final  RLottieImageView.Config $config;
+                final  DownloadState $downloadState;
                 int label;
-                final /* synthetic */ RLottieImageView this$0;
+                final  RLottieImageView this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                
                 AnonymousClass1(RLottieImageView rLottieImageView, DownloadState downloadState, RLottieImageView.Config config, Continuation<? super AnonymousClass1> continuation) {
                     super(2, continuation);
                     this.this$0 = rLottieImageView;
@@ -137,7 +137,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                     this.$config = config;
                 }
 
-                @Override // kotlin.coroutines.jvm.internal.a
+                @Override 
                 public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
                     return new AnonymousClass1(this.this$0, this.$downloadState, this.$config, continuation);
                 }
@@ -146,7 +146,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                     return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
                 }
 
-                @Override // kotlin.coroutines.jvm.internal.a
+                @Override 
                 public final Object invokeSuspend(Object obj) {
                     RLottieDrawable.PlaybackMode playbackMode;
                     AnimatedImageStateManager animatedImageStateManager;
@@ -177,22 +177,22 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            
             @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
             @e(c = "com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2", f = "RLottieImageView.kt", l = {}, m = "invokeSuspend")
-            /* renamed from: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$2$2  reason: invalid class name and collision with other inner class name */
-            /* loaded from: classes8.dex */
+            
+            
             public static final class C01072 extends k implements Function2<CoroutineScope, Continuation<? super Boolean>, Object> {
                 int label;
-                final /* synthetic */ RLottieImageView this$0;
+                final  RLottieImageView this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                
                 C01072(RLottieImageView rLottieImageView, Continuation<? super C01072> continuation) {
                     super(2, continuation);
                     this.this$0 = rLottieImageView;
                 }
 
-                @Override // kotlin.coroutines.jvm.internal.a
+                @Override 
                 public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
                     return new C01072(this.this$0, continuation);
                 }
@@ -201,7 +201,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                     return ((C01072) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
                 }
 
-                @Override // kotlin.coroutines.jvm.internal.a
+                @Override 
                 public final Object invokeSuspend(Object obj) {
                     AnimatedImageStateManager animatedImageStateManager;
                     d.d();
@@ -214,8 +214,8 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
                 }
             }
 
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+            @Override 
+            public   Object emit(Object obj2, Continuation continuation) {
                 return emit((DownloadState) obj2, (Continuation<? super Unit>) continuation);
             }
 

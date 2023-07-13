@@ -12,22 +12,22 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroid/animation/ValueAnimator;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends s implements Function0<ValueAnimator> {
-    final /* synthetic */ AudioPlayerViewBinding $binding;
-    final /* synthetic */ AudioPlayerWipeAnimatorManager this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroid/animation/ValueAnimator;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends s implements Function0<ValueAnimator> {
+    final  AudioPlayerViewBinding $binding;
+    final  AudioPlayerWipeAnimatorManager this$0;
+
+    
+    
     public AudioPlayerWipeAnimatorManager$scaleAnimator$2(AudioPlayerViewBinding audioPlayerViewBinding, AudioPlayerWipeAnimatorManager audioPlayerWipeAnimatorManager) {
         super(0);
         this.$binding = audioPlayerViewBinding;
         this.this$0 = audioPlayerWipeAnimatorManager;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void invoke$lambda$1$lambda$0(AudioPlayerViewBinding binding, AudioPlayerWipeAnimatorManager this$0, ValueAnimator valueAnimator) {
         float f10;
         Drawable buttonContainerDefaultDrawable;
@@ -63,14 +63,14 @@ public final class AudioPlayerWipeAnimatorManager$scaleAnimator$2 extends s impl
         ViewClippingUtilsKt.clipToCircle(view2);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
-    @Override // kotlin.jvm.functions.Function0
+    
+    @Override 
     public final ValueAnimator invoke() {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
         final AudioPlayerViewBinding audioPlayerViewBinding = this.$binding;
         final AudioPlayerWipeAnimatorManager audioPlayerWipeAnimatorManager = this.this$0;
-        ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.voicemessages.k
-            @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+        ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+            @Override 
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 AudioPlayerWipeAnimatorManager$scaleAnimator$2.invoke$lambda$1$lambda$0(AudioPlayerViewBinding.this, audioPlayerWipeAnimatorManager, valueAnimator);
             }

@@ -14,7 +14,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class EmbedViewBinding {
     public final SimpleDraweeView authorAvatar;
     public final LinearLayout authorContainer;

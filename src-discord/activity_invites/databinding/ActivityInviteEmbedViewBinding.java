@@ -11,7 +11,7 @@ import com.discord.overlapping_circles.OverlappingCirclesView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes.dex */
+
 public final class ActivityInviteEmbedViewBinding {
     public final Barrier aboveBottomRowBarrier;
     public final OverlappingCirclesView avatars;

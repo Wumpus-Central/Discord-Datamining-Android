@@ -26,22 +26,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\f\u001a\u00020\u000b2\b\u0010\r\u001a\u0004\u0018\u00010\u000eR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/discord/chat/presentation/message/view/SpoilerView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attributeSet", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "label", "Landroid/widget/TextView;", "onReveal", "Lkotlin/Function0;", "", "configure", "config", "Lcom/discord/chat/bridge/spoiler/SpoilerConfig;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class SpoilerView extends FrameLayout {
     private final TextView label;
     private Function0<Unit> onReveal;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public SpoilerView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ SpoilerView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  SpoilerView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void _init_$lambda$2(final SpoilerView this$0, View it) {
         ViewParent viewParent;
         q.g(this$0, "this$0");
@@ -55,8 +55,8 @@ public final class SpoilerView extends FrameLayout {
         q.e(viewParent, "null cannot be cast to non-null type android.view.ViewGroup");
         c cVar = new c(2);
         cVar.X(150L);
-        cVar.b(new i() { // from class: com.discord.chat.presentation.message.view.SpoilerView$1$transition$1$1
-            @Override // androidx.transition.i, androidx.transition.Transition.f
+        cVar.b(new i() { 
+            @Override 
             public void onTransitionEnd(Transition transition) {
                 Function0 function0;
                 q.g(transition, "transition");
@@ -79,7 +79,7 @@ public final class SpoilerView extends FrameLayout {
         setVisibility(8);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public SpoilerView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");
@@ -93,8 +93,8 @@ public final class SpoilerView extends FrameLayout {
         this.onReveal = SpoilerView$onReveal$1.INSTANCE;
         setBackgroundColor(ThemeManagerKt.getTheme().getSpoilerHiddenBackground());
         addView(textView, new FrameLayout.LayoutParams(-2, -2, 17));
-        setOnClickListener(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.f0
-            @Override // android.view.View.OnClickListener
+        setOnClickListener(new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 SpoilerView._init_$lambda$2(SpoilerView.this, view);
             }

@@ -1,6 +1,6 @@
 package com.discord.rlottie;
 
-/* loaded from: classes5.dex */
+
 public final class BuildConfig {
     @Deprecated
     public static final String APPLICATION_ID = "com.discord.rlottie";

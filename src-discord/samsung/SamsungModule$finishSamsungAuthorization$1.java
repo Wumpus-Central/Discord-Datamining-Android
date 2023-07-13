@@ -18,17 +18,17 @@ import okhttp3.OkHttpClient;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.samsung.SamsungModule$finishSamsungAuthorization$1", f = "SamsungModule.kt", l = {151}, m = "invokeSuspend")
-/* loaded from: classes5.dex */
-final class SamsungModule$finishSamsungAuthorization$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ String $authCode;
-    final /* synthetic */ String $location;
-    final /* synthetic */ String $state;
-    private /* synthetic */ Object L$0;
-    int label;
-    final /* synthetic */ SamsungModule this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class SamsungModule$finishSamsungAuthorization$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  String $authCode;
+    final  String $location;
+    final  String $state;
+    private  Object L$0;
+    int label;
+    final  SamsungModule this$0;
+
+    
+    
     public SamsungModule$finishSamsungAuthorization$1(String str, SamsungModule samsungModule, String str2, String str3, Continuation<? super SamsungModule$finishSamsungAuthorization$1> continuation) {
         super(2, continuation);
         this.$location = str;
@@ -37,7 +37,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
         this.$authCode = str3;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         SamsungModule$finishSamsungAuthorization$1 samsungModule$finishSamsungAuthorization$1 = new SamsungModule$finishSamsungAuthorization$1(this.$location, this.this$0, this.$state, this.$authCode, continuation);
         samsungModule$finishSamsungAuthorization$1.L$0 = obj;
@@ -48,7 +48,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
         return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         Object obj2;

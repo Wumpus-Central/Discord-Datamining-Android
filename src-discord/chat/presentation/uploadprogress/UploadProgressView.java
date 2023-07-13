@@ -30,22 +30,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006JX\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\b\b\u0001\u0010\u000f\u001a\u00020\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00102\b\b\u0001\u0010\u0012\u001a\u00020\u00102\b\b\u0001\u0010\u0013\u001a\u00020\u00102\b\b\u0001\u0010\u0014\u001a\u00020\u00102\b\b\u0001\u0010\u0015\u001a\u00020\u00102\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\f0\u0017R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0018"}, d2 = {"Lcom/discord/chat/presentation/uploadprogress/UploadProgressView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "binding", "Lcom/discord/chat/databinding/UploadProgressViewBinding;", "interpolator", "Landroid/view/animation/DecelerateInterpolator;", "set", "", "headerText", "", "headerColor", "", ViewProps.BACKGROUND_COLOR, "progressPercent", "progressBarColor", "progressTrackColor", "iconTintColor", "onProgressCancel", "Lkotlin/Function0;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class UploadProgressView extends ConstraintLayout {
     private final UploadProgressViewBinding binding;
     private final DecelerateInterpolator interpolator;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public UploadProgressView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ UploadProgressView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  UploadProgressView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void set$lambda$4(Function0 onProgressCancel, View view) {
         q.g(onProgressCancel, "$onProgressCancel");
         onProgressCancel.invoke();
@@ -80,15 +80,15 @@ public final class UploadProgressView extends ConstraintLayout {
         this.binding.progressBar.animate().setInterpolator(this.interpolator).setDuration(j10).scaleX(f10).start();
         SimpleDraweeView simpleDraweeView3 = this.binding.progressCancel;
         q.f(simpleDraweeView3, "binding.progressCancel");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView3, false, new View.OnClickListener() { // from class: h2.a
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView3, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 UploadProgressView.set$lambda$4(Function0.this, view);
             }
         }, 1, null);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public UploadProgressView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

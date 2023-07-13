@@ -8,8 +8,8 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$6 extends n implements Function1<ReactApplicationContext, AudioRoutePickerModule> {
+
+ class DCDPackageList$getPackages$6 extends n implements Function1<ReactApplicationContext, AudioRoutePickerModule> {
     public static final DCDPackageList$getPackages$6 INSTANCE = new DCDPackageList$getPackages$6();
 
     DCDPackageList$getPackages$6() {

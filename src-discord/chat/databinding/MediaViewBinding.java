@@ -9,7 +9,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class MediaViewBinding {
     public final SimpleDraweeView inlineMediaGifIndicator;
     public final SimpleDraweeView inlineMediaImagePreview;

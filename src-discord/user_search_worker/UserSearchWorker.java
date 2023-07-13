@@ -20,7 +20,7 @@ import kotlinx.serialization.json.l;
 import p001if.c;
 
 @Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\b\u0007\b\u0000\u0018\u0000 .2\u00020\u0001:\u0001.B-\u0012$\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e¢\u0006\u0004\b,\u0010-J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0006H\u0002J\u0010\u0010\t\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\bH\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u0018\u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\nH\u0002J\u0018\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0015H\u0002J\u0018\u0010\u001a\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\u000eH\u0002J\u000e\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010\u001d\u001a\u00020\u0004R5\u0010!\u001a \u0012\n\u0012\b\u0012\u0004\u0012\u00020 0\u001f\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\u001e8\u0006¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$R\u0014\u0010&\u001a\u00020%8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b&\u0010'R \u0010)\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\f0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R \u0010+\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000e0(8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010*¨\u0006/"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker;", "", "Lcom/discord/user_search_worker/UserSearchUpdateUsersData;", "data", "", "mergeUsers", "Lcom/discord/user_search_worker/UserSearchQuerySetData;", "setNewQuery", "Lcom/discord/user_search_worker/UserSearchQueryClearData;", "clearQuery", "", "id", "Lcom/discord/user_search_worker/UserSearchTransformedUser;", "user", "Lcom/discord/user_search_worker/UserSearchQuerySetPayload;", "payload", "", "isValid", "needleBase", "haystackBase", "fuzzySearch", "", "score", "booster", "calculateScore", "uuid", "searchUsers", "dataJSON", "onMessage", "terminate", "Lkotlin/Function3;", "", "Lcom/discord/user_search_worker/UserSearchWorkerResult;", "onResults", "Lkotlin/jvm/functions/Function3;", "getOnResults", "()Lkotlin/jvm/functions/Function3;", "Lkotlinx/serialization/json/Json;", "json", "Lkotlinx/serialization/json/Json;", "", "users", "Ljava/util/Map;", "queries", "<init>", "(Lkotlin/jvm/functions/Function3;)V", "Companion", "user_search_worker_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes8.dex */
+
 public final class UserSearchWorker {
     private static final double CONTAIN_MATCH_VALUE = 5.0d;
     private static final double EXACT_MATCH_VALUE = 10.0d;
@@ -33,12 +33,12 @@ public final class UserSearchWorker {
     private final Map<String, UserSearchQuerySetPayload> queries = new LinkedHashMap();
 
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001:\u0001\u000bB\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\f\u0010\t\u001a\u00020\n*\u00020\nH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker$Companion;", "", "()V", "CONTAIN_MATCH_VALUE", "", "EXACT_MATCH_VALUE", "FUZZY_MATCH_VALUE", "STRIP_DIACRITICS_REGEX_PATTERN", "Lkotlin/text/Regex;", "strippedOfDiacritics", "", "LocalResult", "user_search_worker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes8.dex */
+    
     public static final class Companion {
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0006\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0082\b\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\f\u001a\u00020\u0005HÆ\u0003J\u001d\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0014"}, d2 = {"Lcom/discord/user_search_worker/UserSearchWorker$Companion$LocalResult;", "", "comparator", "", "score", "", "(Ljava/lang/String;D)V", "getComparator", "()Ljava/lang/String;", "getScore", "()D", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "user_search_worker_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes8.dex */
+        
         public static final class LocalResult {
             private final String comparator;
             private final double score;
@@ -49,7 +49,7 @@ public final class UserSearchWorker {
                 this.score = d10;
             }
 
-            public static /* synthetic */ LocalResult copy$default(LocalResult localResult, String str, double d10, int i10, Object obj) {
+            public static  LocalResult copy$default(LocalResult localResult, String str, double d10, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
                     str = localResult.comparator;
                 }
@@ -105,11 +105,11 @@ public final class UserSearchWorker {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final String strippedOfDiacritics(String str) {
             String nfdNormalized = Normalizer.normalize(str, Normalizer.Form.NFD);
             q.f(nfdNormalized, "nfdNormalized");
@@ -117,7 +117,7 @@ public final class UserSearchWorker {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    
     public UserSearchWorker(Function3<? super List<UserSearchWorkerResult>, ? super String, ? super String, Unit> onResults) {
         q.g(onResults, "onResults");
         this.onResults = onResults;
@@ -199,123 +199,10 @@ public final class UserSearchWorker {
         return true;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:34:0x00a1, code lost:
-        if (kotlin.jvm.internal.q.b(r3, r6) == false) goto L_0x00a3;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     private final void mergeUsers(com.discord.user_search_worker.UserSearchUpdateUsersData r14) {
-        /*
-            r13 = this;
-            java.util.LinkedHashSet r0 = new java.util.LinkedHashSet
-            r0.<init>()
-            java.util.List r14 = r14.getPayload()
-            java.util.Iterator r14 = r14.iterator()
-            r1 = 0
-        L_0x000e:
-            boolean r2 = r14.hasNext()
-            if (r2 == 0) goto L_0x00b1
-            java.lang.Object r2 = r14.next()
-            com.discord.user_search_worker.UserSearchTransformedUser r2 = (com.discord.user_search_worker.UserSearchTransformedUser) r2
-            java.lang.String r3 = r2.getId()
-            java.util.Map<java.lang.String, com.discord.user_search_worker.UserSearchTransformedUser> r4 = r13.users
-            java.lang.Object r4 = r4.get(r3)
-            com.discord.user_search_worker.UserSearchTransformedUser r4 = (com.discord.user_search_worker.UserSearchTransformedUser) r4
-            if (r4 == 0) goto L_0x0071
-            java.lang.String r6 = r2.getId()
-            java.lang.String r7 = r2.getUsername()
-            java.lang.Boolean r5 = r2.isBot()
-            if (r5 != 0) goto L_0x003a
-            java.lang.Boolean r5 = r4.isBot()
-        L_0x003a:
-            r8 = r5
-            java.lang.Boolean r5 = r2.isFriend()
-            if (r5 != 0) goto L_0x0045
-            java.lang.Boolean r5 = r4.isFriend()
-        L_0x0045:
-            r9 = r5
-            java.lang.String r5 = r2.getFriendNickname()
-            if (r5 != 0) goto L_0x0050
-            java.lang.String r5 = r4.getFriendNickname()
-        L_0x0050:
-            r10 = r5
-            java.lang.String r5 = r2.getGlobalName()
-            if (r5 != 0) goto L_0x005b
-            java.lang.String r5 = r4.getGlobalName()
-        L_0x005b:
-            r11 = r5
-            java.util.Map r5 = r4.getNicknames()
-            java.util.Map r12 = r2.getNicknames()
-            java.util.Map r12 = gf.s.o(r5, r12)
-            r5 = r4
-            com.discord.user_search_worker.UserSearchTransformedUser r5 = r5.copy(r6, r7, r8, r9, r10, r11, r12)
-            if (r5 != 0) goto L_0x0070
-            goto L_0x0071
-        L_0x0070:
-            r2 = r5
-        L_0x0071:
-            java.util.Map<java.lang.String, com.discord.user_search_worker.UserSearchTransformedUser> r5 = r13.users
-            r5.put(r3, r2)
-            java.util.Map<java.lang.String, com.discord.user_search_worker.UserSearchQuerySetPayload> r3 = r13.queries
-            boolean r3 = r3.isEmpty()
-            r5 = 1
-            r3 = r3 ^ r5
-            if (r3 == 0) goto L_0x000e
-            java.lang.Boolean r3 = r2.isFriend()
-            r6 = 0
-            if (r4 == 0) goto L_0x008c
-            java.lang.Boolean r7 = r4.isFriend()
-            goto L_0x008d
-        L_0x008c:
-            r7 = r6
-        L_0x008d:
-            boolean r3 = kotlin.jvm.internal.q.b(r3, r7)
-            if (r3 == 0) goto L_0x00a3
-            java.lang.String r3 = r2.getFriendNickname()
-            if (r4 == 0) goto L_0x009d
-            java.lang.String r6 = r4.getFriendNickname()
-        L_0x009d:
-            boolean r3 = kotlin.jvm.internal.q.b(r3, r6)
-            if (r3 != 0) goto L_0x00a4
-        L_0x00a3:
-            r1 = r5
-        L_0x00a4:
-            java.util.Map r2 = r2.getNicknames()
-            java.util.Set r2 = r2.keySet()
-            r0.addAll(r2)
-            goto L_0x000e
-        L_0x00b1:
-            java.util.Map<java.lang.String, com.discord.user_search_worker.UserSearchQuerySetPayload> r14 = r13.queries
-            java.util.Set r14 = r14.entrySet()
-            java.util.Iterator r14 = r14.iterator()
-        L_0x00bb:
-            boolean r2 = r14.hasNext()
-            if (r2 == 0) goto L_0x00fb
-            java.lang.Object r2 = r14.next()
-            java.util.Map$Entry r2 = (java.util.Map.Entry) r2
-            java.lang.Object r3 = r2.getKey()
-            java.lang.String r3 = (java.lang.String) r3
-            java.lang.Object r2 = r2.getValue()
-            com.discord.user_search_worker.UserSearchQuerySetPayload r2 = (com.discord.user_search_worker.UserSearchQuerySetPayload) r2
-            com.discord.user_search_worker.UserSearchQuerySetFilters r4 = r2.getFilters()
-            if (r4 == 0) goto L_0x00f7
-            java.lang.Boolean r5 = r4.getFriends()
-            java.lang.Boolean r6 = java.lang.Boolean.valueOf(r1)
-            boolean r5 = kotlin.jvm.internal.q.b(r5, r6)
-            if (r5 != 0) goto L_0x00f7
-            java.lang.String r5 = r4.getGuild()
-            if (r5 == 0) goto L_0x00bb
-            java.lang.String r4 = r4.getGuild()
-            boolean r4 = r0.contains(r4)
-            if (r4 == 0) goto L_0x00bb
-        L_0x00f7:
-            r13.searchUsers(r3, r2)
-            goto L_0x00bb
-        L_0x00fb:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.user_search_worker.UserSearchWorker.mergeUsers(com.discord.user_search_worker.UserSearchUpdateUsersData):void");
     }
 

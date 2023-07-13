@@ -12,7 +12,7 @@ import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class GuildEventInviteViewBinding {
     public final DCDButton acceptButton;
     public final ConstraintLayout badgeContainer;

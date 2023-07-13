@@ -29,7 +29,7 @@ import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\bÀ\u0002\u0018\u00002\u00020\u0001:\u0001)B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0014J,\u0010\u0012\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\f2\u0018\u0010\u0017\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0019\u0012\u0004\u0012\u00020\u00150\u0018H\u0002J\u001c\u0010\u001a\u001a\u00020\u00152\u0014\u0010\u0017\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u001b\u0012\u0004\u0012\u00020\u00150\u0018J\u0018\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u00040\u001dH\u0002J\u0010\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020\u0004H\u0002J\u0010\u0010 \u001a\u00020\u00152\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J-\u0010!\u001a\u00020\u00152\u0006\u0010\"\u001a\u00020#2\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00040\u00192\b\u0010\u0016\u001a\u0004\u0018\u00010\fH\u0000¢\u0006\u0002\b%J\u0010\u0010&\u001a\u00020\u00152\u0006\u0010'\u001a\u00020(H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0080T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082T¢\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u00020\fX\u0080\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\r\u0010\u0002\u001a\u0004\b\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006*"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils;", "", "()V", "DEFAULT_TAG", "", "LIBDISCORD_VERSION_CATEGORY", "debugPrintables", "Lcom/discord/crash_reporting/system_logs/DebugPrintableCollection;", "logcatPath", "maxLogSize", "", "regexExtractTombstone", "Lkotlin/text/Regex;", "getRegexExtractTombstone$crash_reporting_release$annotations", "getRegexExtractTombstone$crash_reporting_release", "()Lkotlin/text/Regex;", "systemLogCapture", "Lcom/discord/crash_reporting/system_logs/SystemLogCapture;", "fetch", "context", "Landroid/content/Context;", "", "filter", "cb", "Lkotlin/Function1;", "Ljava/util/LinkedList;", "fetchLastTombstone", "Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "crashes", "", "hashString", "input", "initSystemLogCapture", "processLogs", "reader", "Ljava/io/BufferedReader;", "output", "processLogs$crash_reporting_release", "waitFor", "process", "Ljava/lang/Process;", "Tombstone", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class SystemLogUtils {
     private static final String DEFAULT_TAG = "Discord";
     public static final String logcatPath = "/system/bin/logcat";
@@ -41,7 +41,7 @@ public final class SystemLogUtils {
     private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f20733l.c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
 
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003¢\u0006\u0002\u0010\tJ\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003JG\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u001cHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000bR\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000bR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000bR\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000b¨\u0006\u001e"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "", "text", "", "cause", "groupBy", "origin", "groupHash", "textHash", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getCause", "()Ljava/lang/String;", "getGroupBy", "getGroupHash", "getOrigin", "getText", "getTextHash", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "", "toString", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class Tombstone {
         private final String cause;
         private final String groupBy;
@@ -64,7 +64,7 @@ public final class SystemLogUtils {
             this.textHash = textHash;
         }
 
-        public static /* synthetic */ Tombstone copy$default(Tombstone tombstone, String str, String str2, String str3, String str4, String str5, String str6, int i10, Object obj) {
+        public static  Tombstone copy$default(Tombstone tombstone, String str, String str2, String str3, String str4, String str5, String str6, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = tombstone.text;
             }
@@ -174,7 +174,7 @@ public final class SystemLogUtils {
     private SystemLogUtils() {
     }
 
-    public static /* synthetic */ void getRegexExtractTombstone$crash_reporting_release$annotations() {
+    public static  void getRegexExtractTombstone$crash_reporting_release$annotations() {
     }
 
     private final String hashString(String str) {
@@ -188,7 +188,7 @@ public final class SystemLogUtils {
         return Z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void waitFor(Process process) {
         long nanoTime = System.nanoTime() + TimeUnit.SECONDS.toNanos(15L);
         do {
@@ -230,100 +230,14 @@ public final class SystemLogUtils {
         systemLogCapture.startThread();
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0052, code lost:
-        throw new java.util.NoSuchElementException("List contains no element matching the predicate.");
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     public final void processLogs$crash_reporting_release(java.io.BufferedReader r10, java.util.LinkedList<java.lang.String> r11, kotlin.text.Regex r12) {
-        /*
-            r9 = this;
-            java.lang.String r0 = "reader"
-            kotlin.jvm.internal.q.g(r10, r0)
-            java.lang.String r0 = "output"
-            kotlin.jvm.internal.q.g(r11, r0)
-            r0 = 0
-            r1 = r0
-        L_0x000c:
-            r2 = 2500000(0x2625a0, float:3.503246E-39)
-            java.lang.String r3 = r10.readLine()     // Catch: Exception -> 0x0079
-            if (r3 != 0) goto L_0x0017
-            goto L_0x0090
-        L_0x0017:
-            r4 = 0
-            r5 = 2
-            r6 = 1
-            if (r12 == 0) goto L_0x0053
-            kotlin.text.MatchResult r3 = kotlin.text.Regex.c(r12, r3, r0, r5, r4)     // Catch: Exception -> 0x0079
-            if (r3 != 0) goto L_0x0023
-            goto L_0x000c
-        L_0x0023:
-            java.util.List r3 = r3.b()     // Catch: Exception -> 0x0079
-            int r7 = r3.size()     // Catch: Exception -> 0x0079
-            java.util.ListIterator r3 = r3.listIterator(r7)     // Catch: Exception -> 0x0079
-        L_0x002f:
-            boolean r7 = r3.hasPrevious()     // Catch: Exception -> 0x0079
-            if (r7 == 0) goto L_0x004b
-            java.lang.Object r7 = r3.previous()     // Catch: Exception -> 0x0079
-            r8 = r7
-            java.lang.String r8 = (java.lang.String) r8     // Catch: Exception -> 0x0079
-            int r8 = r8.length()     // Catch: Exception -> 0x0079
-            if (r8 <= 0) goto L_0x0044
-            r8 = r6
-            goto L_0x0045
-        L_0x0044:
-            r8 = r0
-        L_0x0045:
-            if (r8 == 0) goto L_0x002f
-            r3 = r7
-            java.lang.String r3 = (java.lang.String) r3     // Catch: Exception -> 0x0079
-            goto L_0x0053
-        L_0x004b:
-            java.util.NoSuchElementException r10 = new java.util.NoSuchElementException     // Catch: Exception -> 0x0079
-            java.lang.String r0 = "List contains no element matching the predicate."
-            r10.<init>(r0)     // Catch: Exception -> 0x0079
-            throw r10     // Catch: Exception -> 0x0079
-        L_0x0053:
-            boolean r7 = ji.l.w(r3)     // Catch: Exception -> 0x0079
-            if (r7 != 0) goto L_0x000c
-            java.lang.String r7 = "Accessing hidden method"
-            boolean r4 = ji.l.M(r3, r7, r0, r5, r4)     // Catch: Exception -> 0x0079
-            if (r4 != 0) goto L_0x000c
-            int r4 = r3.length()     // Catch: Exception -> 0x0079
-            int r4 = r4 + r6
-            int r1 = r1 + r4
-            r11.add(r3)     // Catch: Exception -> 0x0079
-            if (r1 <= r2) goto L_0x000c
-            java.lang.Object r3 = r11.pop()     // Catch: Exception -> 0x0079
-            java.lang.String r3 = (java.lang.String) r3     // Catch: Exception -> 0x0079
-            int r2 = r3.length()     // Catch: Exception -> 0x0079
-            int r2 = r2 - r6
-            int r1 = r1 - r2
-            goto L_0x000c
-        L_0x0079:
-            r10 = move-exception
-            if (r12 != 0) goto L_0x0090
-            java.lang.StringBuilder r12 = new java.lang.StringBuilder
-            r12.<init>()
-            java.lang.String r0 = "IOException: "
-            r12.append(r0)
-            r12.append(r10)
-            java.lang.String r10 = r12.toString()
-            r11.add(r10)
-        L_0x0090:
-            if (r1 <= r2) goto L_0x009b
-            java.lang.Object r10 = r11.pop()
-            java.lang.String r10 = (java.lang.String) r10
-            r10.length()
-        L_0x009b:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.crash_reporting.system_logs.SystemLogUtils.processLogs$crash_reporting_release(java.io.BufferedReader, java.util.LinkedList, kotlin.text.Regex):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final Tombstone fetchLastTombstone(Collection<String> collection) {
         boolean w10;
         boolean w11;

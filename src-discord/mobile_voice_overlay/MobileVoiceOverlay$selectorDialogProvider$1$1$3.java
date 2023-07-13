@@ -13,24 +13,24 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "channelId", "Lcom/discord/primitives/ChannelId;", "invoke-R7gqayM", "(J)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
-final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements Function1<ChannelId, Unit> {
-    final /* synthetic */ OverlayVoiceSelectorBubbleDialog $this_apply;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class MobileVoiceOverlay$selectorDialogProvider$1$1$3 extends s implements Function1<ChannelId, Unit> {
+    final  OverlayVoiceSelectorBubbleDialog $this_apply;
+
+    
+    
     public MobileVoiceOverlay$selectorDialogProvider$1$1$3(OverlayVoiceSelectorBubbleDialog overlayVoiceSelectorBubbleDialog) {
         super(1);
         this.$this_apply = overlayVoiceSelectorBubbleDialog;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(ChannelId channelId) {
+    @Override 
+    public   Unit invoke(ChannelId channelId) {
         m468invokeR7gqayM(channelId.m573unboximpl());
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke-R7gqayM  reason: not valid java name */
+    
     public final void m468invokeR7gqayM(long j10) {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = this.$this_apply.getContext();

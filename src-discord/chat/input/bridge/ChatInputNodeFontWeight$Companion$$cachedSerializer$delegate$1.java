@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import si.c0;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 final class ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1 INSTANCE = new ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1();
 
@@ -16,7 +16,7 @@ final class ChatInputNodeFontWeight$Companion$$cachedSerializer$delegate$1 exten
         super(0);
     }
 
-    @Override // kotlin.jvm.functions.Function0
+    @Override 
     public final KSerializer<Object> invoke() {
         return c0.a("com.discord.chat.input.bridge.ChatInputNodeFontWeight", ChatInputNodeFontWeight.values(), new String[]{"bold"}, new Annotation[][]{null});
     }

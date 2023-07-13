@@ -24,7 +24,7 @@ import l3.c;
 import lf.d;
 
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a6\u0010\t\u001a\u00020\u0007*\u00020\u00002\b\u0010\u0002\u001a\u0004\u0018\u00010\u00012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\u0014\u0010\b\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0004\u0012\u00020\u00070\u0005\u001a6\u0010\t\u001a\u00020\u0007*\u00020\u00002\b\u0010\u0002\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\u0014\u0010\b\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0004\u0012\u00020\u00070\u0005\u001a9\u0010\t\u001a\u0004\u0018\u00010\u0006*\u00020\u00002\b\u0010\u0002\u001a\u0004\u0018\u00010\u00012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\f\u001a\u00020\u000bH\u0086@ø\u0001\u0000¢\u0006\u0004\b\t\u0010\r\u001a9\u0010\t\u001a\u0004\u0018\u00010\u0006*\u00020\u00002\b\u0010\u0002\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\f\u001a\u00020\u000bH\u0086@ø\u0001\u0000¢\u0006\u0004\b\t\u0010\u000e\"\u0014\u0010\u0010\u001a\u00020\u000f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0012"}, d2 = {"Landroid/content/Context;", "", "uri", "Lcom/discord/image/fresco/postprocessors/PostProcessor;", "postProcessor", "Lkotlin/Function1;", "Landroid/graphics/Bitmap;", "", "onDecodedImage", "fetchDecodedImage", "Landroid/net/Uri;", "", "copyBitmap", "(Landroid/content/Context;Ljava/lang/String;Lcom/discord/image/fresco/postprocessors/PostProcessor;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "(Landroid/content/Context;Landroid/net/Uri;Lcom/discord/image/fresco/postprocessors/PostProcessor;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;", "executorSupplier", "Lcom/facebook/imagepipeline/core/DefaultExecutorSupplier;", "fresco_release"}, k = 2, mv = {1, 8, 0})
-/* loaded from: classes6.dex */
+
 public final class FrescoFetchDecodedImageKt {
     private static final DefaultExecutorSupplier executorSupplier = new DefaultExecutorSupplier(3);
 
@@ -45,14 +45,14 @@ public final class FrescoFetchDecodedImageKt {
         fetchDecodedImage(context, (Uri) obj, postProcessor, onDecodedImage);
     }
 
-    public static /* synthetic */ void fetchDecodedImage$default(Context context, String str, PostProcessor postProcessor, Function1 function1, int i10, Object obj) {
+    public static  void fetchDecodedImage$default(Context context, String str, PostProcessor postProcessor, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             postProcessor = null;
         }
         fetchDecodedImage(context, str, postProcessor, function1);
     }
 
-    public static /* synthetic */ void fetchDecodedImage$default(Context context, Uri uri, PostProcessor postProcessor, Function1 function1, int i10, Object obj) {
+    public static  void fetchDecodedImage$default(Context context, Uri uri, PostProcessor postProcessor, Function1 function1, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             postProcessor = null;
         }
@@ -71,21 +71,21 @@ public final class FrescoFetchDecodedImageKt {
         if (postProcessor != null) {
             basePostprocessor = postProcessor.create();
         }
-        c.a().d(s10.A(basePostprocessor).a(), context).g(new b() { // from class: com.discord.image.fresco.FrescoFetchDecodedImageKt$fetchDecodedImage$2
-            @Override // com.facebook.datasource.b
+        c.a().d(s10.A(basePostprocessor).a(), context).g(new b() { 
+            @Override 
             protected void onFailureImpl(DataSource<CloseableReference<v4.c>> dataSource) {
                 q.g(dataSource, "dataSource");
                 onDecodedImage.invoke(null);
             }
 
-            @Override // com.facebook.imagepipeline.datasource.b
+            @Override 
             protected void onNewResultImpl(Bitmap bitmap) {
                 onDecodedImage.invoke(bitmap);
             }
         }, executorSupplier.a());
     }
 
-    public static /* synthetic */ Object fetchDecodedImage$default(Context context, String str, PostProcessor postProcessor, boolean z10, Continuation continuation, int i10, Object obj) {
+    public static  Object fetchDecodedImage$default(Context context, String str, PostProcessor postProcessor, boolean z10, Continuation continuation, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             postProcessor = null;
         }
@@ -95,7 +95,7 @@ public final class FrescoFetchDecodedImageKt {
         return fetchDecodedImage(context, str, postProcessor, z10, continuation);
     }
 
-    public static /* synthetic */ Object fetchDecodedImage$default(Context context, Uri uri, PostProcessor postProcessor, boolean z10, Continuation continuation, int i10, Object obj) {
+    public static  Object fetchDecodedImage$default(Context context, Uri uri, PostProcessor postProcessor, boolean z10, Continuation continuation, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             postProcessor = null;
         }
@@ -135,14 +135,14 @@ public final class FrescoFetchDecodedImageKt {
                 basePostprocessor = postProcessor.create();
             }
             DataSource<CloseableReference<v4.c>> d11 = c.a().d(s10.A(basePostprocessor).a(), context);
-            d11.g(new b() { // from class: com.discord.image.fresco.FrescoFetchDecodedImageKt$fetchDecodedImage$6$subscriber$1
-                @Override // com.facebook.datasource.b
+            d11.g(new b() { 
+                @Override 
                 protected void onFailureImpl(DataSource<CloseableReference<v4.c>> dataSource) {
                     q.g(dataSource, "dataSource");
                     pVar.resumeWith(s.b(null));
                 }
 
-                @Override // com.facebook.imagepipeline.datasource.b
+                @Override 
                 protected void onNewResultImpl(Bitmap bitmap) {
                     CancellableContinuation<Bitmap> cancellableContinuation = pVar;
                     s.a aVar = s.f14771l;

@@ -21,24 +21,24 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/graphics/drawable/Drawable;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.react_asset_fetcher.ReactAssetUtilsKt$setReactIcon$1$1$1", f = "ReactAssetUtils.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes5.dex */
+
 public final class ReactAssetUtilsKt$setReactIcon$1$1$1 extends k implements Function2<CoroutineScope, Continuation<? super Drawable>, Object> {
-    final /* synthetic */ String $assetUrl;
-    final /* synthetic */ MaterialButton $this_setReactIcon;
+    final  String $assetUrl;
+    final  MaterialButton $this_setReactIcon;
     int label;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public ReactAssetUtilsKt$setReactIcon$1$1$1(MaterialButton materialButton, String str, Continuation<? super ReactAssetUtilsKt$setReactIcon$1$1$1> continuation) {
         super(2, continuation);
         this.$this_setReactIcon = materialButton;
         this.$assetUrl = str;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new ReactAssetUtilsKt$setReactIcon$1$1$1(this.$this_setReactIcon, this.$assetUrl, continuation);
     }
@@ -47,7 +47,7 @@ public final class ReactAssetUtilsKt$setReactIcon$1$1$1 extends k implements Fun
         return ((ReactAssetUtilsKt$setReactIcon$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         d.d();
         if (this.label == 0) {

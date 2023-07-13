@@ -16,25 +16,25 @@ import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Lokhttp3/OkHttpClient;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
-public final class BundleUpdater$client$2 extends s implements Function0<OkHttpClient> {
-    final /* synthetic */ BundleUpdater this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Lokhttp3/OkHttpClient;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class BundleUpdater$client$2 extends s implements Function0<OkHttpClient> {
+    final  BundleUpdater this$0;
+
+    
+    
     public BundleUpdater$client$2(BundleUpdater bundleUpdater) {
         super(0);
         this.this$0 = bundleUpdater;
     }
 
-    @Override // kotlin.jvm.functions.Function0
+    @Override 
     public final OkHttpClient invoke() {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         final BundleUpdater bundleUpdater = this.this$0;
-        OkHttpClient.Builder O = builder.f(new CookieJar() { // from class: com.discord.bundle_updater.BundleUpdater$client$2.1
-            @Override // okhttp3.CookieJar
+        OkHttpClient.Builder O = builder.f(new CookieJar() { 
+            @Override 
             public List<k> loadForRequest(HttpUrl url) {
                 CookieManager cookieManager;
                 q.g(url, "url");
@@ -43,7 +43,7 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
                 return CookieValidatorKt.getCookiesForUrl(cookieManager, url.toString());
             }
 
-            @Override // okhttp3.CookieJar
+            @Override 
             public void saveFromResponse(HttpUrl url, List<k> cookies) {
                 CookieManager cookieManager;
                 String c02;
@@ -56,8 +56,8 @@ public final class BundleUpdater$client$2 extends s implements Function0<OkHttpC
             }
         }).O(1L, TimeUnit.MINUTES);
         final DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-        return O.a(new Interceptor() { // from class: com.discord.bundle_updater.BundleUpdater$client$2$invoke$$inlined$-addInterceptor$1
-            @Override // okhttp3.Interceptor
+        return O.a(new Interceptor() { 
+            @Override 
             public final Response intercept(Interceptor.Chain chain) {
                 q.g(chain, "chain");
                 return DeviceResourceUsageRecorder.Companion.this.bundleUpdaterInterceptor(chain);

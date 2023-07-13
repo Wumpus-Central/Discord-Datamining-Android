@@ -15,30 +15,30 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "it", "Lcom/discord/mobile_voice_overlay/utils/OverlayViewProvider;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements Function1<OverlayViewProvider<OverlayVoiceBubble>, OverlayVoiceBubble> {
-    final /* synthetic */ MobileVoiceOverlay this$0;
+    final  MobileVoiceOverlay this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "event", "Landroid/view/MotionEvent;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-    /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2  reason: invalid class name */
-    /* loaded from: classes6.dex */
+    
+    
     public static final class AnonymousClass2 extends s implements Function1<MotionEvent, Unit> {
-        final /* synthetic */ OverlayVoiceBubble $voiceBubble;
-        final /* synthetic */ MobileVoiceOverlay this$0;
+        final  OverlayVoiceBubble $voiceBubble;
+        final  MobileVoiceOverlay this$0;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-        /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$2$1  reason: invalid class name */
-        /* loaded from: classes6.dex */
+        
+        
         public static final class AnonymousClass1 extends s implements Function1<OverlayTrashWrap, Unit> {
-            final /* synthetic */ MotionEvent $event;
-            final /* synthetic */ OverlayVoiceBubble $voiceBubble;
-            final /* synthetic */ MobileVoiceOverlay this$0;
+            final  MotionEvent $event;
+            final  OverlayVoiceBubble $voiceBubble;
+            final  MobileVoiceOverlay this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            
             AnonymousClass1(OverlayVoiceBubble overlayVoiceBubble, MotionEvent motionEvent, MobileVoiceOverlay mobileVoiceOverlay) {
                 super(1);
                 this.$voiceBubble = overlayVoiceBubble;
@@ -46,13 +46,13 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
                 this.this$0 = mobileVoiceOverlay;
             }
 
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
+            @Override 
+            public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
                 return Unit.f20663a;
             }
 
-            /* renamed from: invoke  reason: avoid collision after fix types in other method */
+            
             public final void invoke2(OverlayTrashWrap trashWrap) {
                 q.g(trashWrap, "trashWrap");
                 if (trashWrap.processMotionEvent(this.$voiceBubble, this.$event)) {
@@ -61,44 +61,44 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             }
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass2(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
             super(1);
             this.this$0 = mobileVoiceOverlay;
             this.$voiceBubble = overlayVoiceBubble;
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Unit invoke(MotionEvent motionEvent) {
+        @Override 
+        public   Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
             return Unit.f20663a;
         }
 
-        /* renamed from: invoke  reason: avoid collision after fix types in other method */
+        
         public final void invoke2(MotionEvent event) {
             q.g(event, "event");
             this.this$0.trashWrapProvider.withView(new AnonymousClass1(this.$voiceBubble, event, this.this$0));
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "isMoving", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-    /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3  reason: invalid class name */
-    /* loaded from: classes6.dex */
+    
+    
     public static final class AnonymousClass3 extends s implements Function1<Boolean, Unit> {
-        final /* synthetic */ OverlayVoiceBubble $voiceBubble;
-        final /* synthetic */ MobileVoiceOverlay this$0;
+        final  OverlayVoiceBubble $voiceBubble;
+        final  MobileVoiceOverlay this$0;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "trashWrap", "Lcom/discord/mobile_voice_overlay/views/OverlayTrashWrap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-        /* renamed from: com.discord.mobile_voice_overlay.MobileVoiceOverlay$voiceBubbleProvider$1$3$1  reason: invalid class name */
-        /* loaded from: classes6.dex */
+        
+        
         public static final class AnonymousClass1 extends s implements Function1<OverlayTrashWrap, Unit> {
-            final /* synthetic */ boolean $isMoving;
-            final /* synthetic */ OverlayVoiceBubble $voiceBubble;
-            final /* synthetic */ MobileVoiceOverlay this$0;
+            final  boolean $isMoving;
+            final  OverlayVoiceBubble $voiceBubble;
+            final  MobileVoiceOverlay this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            
             AnonymousClass1(boolean z10, MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
                 super(1);
                 this.$isMoving = z10;
@@ -106,13 +106,13 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
                 this.$voiceBubble = overlayVoiceBubble;
             }
 
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Unit invoke(OverlayTrashWrap overlayTrashWrap) {
+            @Override 
+            public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
                 return Unit.f20663a;
             }
 
-            /* renamed from: invoke  reason: avoid collision after fix types in other method */
+            
             public final void invoke2(OverlayTrashWrap trashWrap) {
                 q.g(trashWrap, "trashWrap");
                 if (this.$isMoving) {
@@ -124,15 +124,15 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             }
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass3(MobileVoiceOverlay mobileVoiceOverlay, OverlayVoiceBubble overlayVoiceBubble) {
             super(1);
             this.this$0 = mobileVoiceOverlay;
             this.$voiceBubble = overlayVoiceBubble;
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
+        @Override 
+        public   Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
             return Unit.f20663a;
         }
@@ -142,14 +142,14 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public MobileVoiceOverlay$voiceBubbleProvider$1(MobileVoiceOverlay mobileVoiceOverlay) {
         super(1);
         this.this$0 = mobileVoiceOverlay;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void invoke$lambda$2(OverlayVoiceBubble voiceBubble, MobileVoiceOverlay this$0, View view) {
         ViewGroup.MarginLayoutParams marginLayoutParams;
         int i10;
@@ -220,8 +220,8 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         int i10 = -dimensionPixelOffset;
         overlayVoiceBubble.getInsetMargins().set(i10, dimensionPixelOffset, i10, dimensionPixelOffset);
         final MobileVoiceOverlay mobileVoiceOverlay = this.this$0;
-        overlayVoiceBubble.setOnClickListener(new View.OnClickListener() { // from class: com.discord.mobile_voice_overlay.a
-            @Override // android.view.View.OnClickListener
+        overlayVoiceBubble.setOnClickListener(new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 MobileVoiceOverlay$voiceBubbleProvider$1.invoke$lambda$2(OverlayVoiceBubble.this, mobileVoiceOverlay, view);
             }

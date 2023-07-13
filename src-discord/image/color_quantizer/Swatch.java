@@ -3,7 +3,7 @@ package com.discord.image.color_quantizer;
 import android.graphics.Color;
 import java.util.Arrays;
 
-/* loaded from: classes6.dex */
+
 public final class Swatch {
     final int mBlue;
     final int mGreen;
@@ -12,7 +12,7 @@ public final class Swatch {
     final int mRed;
     final int mRgb;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public Swatch(int i10, int i11) {
         this.mRed = Color.red(i10);
         this.mGreen = Color.green(i10);
@@ -42,7 +42,7 @@ public final class Swatch {
         return Swatch.class.getSimpleName() + " [" + Integer.toHexString(getRgb()) + "][HSL: " + Arrays.toString(getHsl()) + "][Population: " + this.mPopulation + ']';
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public Swatch(int i10, int i11, int i12, int i13) {
         this.mRed = i10;
         this.mGreen = i11;

@@ -10,20 +10,20 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-/* synthetic */ class GuildEventInviteViewHolder$bind$1$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
-    /* JADX INFO: Access modifiers changed from: package-private */
+
+ class GuildEventInviteViewHolder$bind$1$1$1 extends n implements Function2<MessageId, LinkContentNode, Unit> {
+    
     public GuildEventInviteViewHolder$bind$1$1$1(Object obj) {
         super(2, obj, ChatEventHandler.class, "onLinkClicked", "onLinkClicked-ntcYbpo(Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContentNode;)V", 0);
     }
 
-    @Override // kotlin.jvm.functions.Function2
-    public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
+    @Override 
+    public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m335invokentcYbpo(messageId.m598unboximpl(), linkContentNode);
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke-ntcYbpo  reason: not valid java name */
+    
     public final void m335invokentcYbpo(String p02, LinkContentNode p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");

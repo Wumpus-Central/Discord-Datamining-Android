@@ -8,8 +8,8 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$32 extends n implements Function1<ReactApplicationContext, MediaPlayerManagerModule> {
+
+ class DCDPackageList$getPackages$32 extends n implements Function1<ReactApplicationContext, MediaPlayerManagerModule> {
     public static final DCDPackageList$getPackages$32 INSTANCE = new DCDPackageList$getPackages$32();
 
     DCDPackageList$getPackages$32() {

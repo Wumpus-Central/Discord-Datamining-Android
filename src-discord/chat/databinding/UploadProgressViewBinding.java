@@ -10,7 +10,7 @@ import com.discord.chat.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class UploadProgressViewBinding {
     public final Barrier barrier;
     public final View progressBar;

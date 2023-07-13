@@ -11,7 +11,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0016\u0018\u00002\u00020\u0001BM\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0014\u0010\u0004\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0005\u0012\u0014\u0010\b\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0005\u0012\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\n0\u0005¢\u0006\u0002\u0010\u000bJ*\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u00072\b\b\u0002\u0010\u001e\u001a\u00020\u0007J\u000e\u0010\u001f\u001a\u00020\u00182\u0006\u0010 \u001a\u00020\u0006R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\u0004\u0018\u00010\u00078\u0002@\u0002X\u0083\u000e¢\u0006\u0004\n\u0002\u0010\u000fR\u001f\u0010\u0004\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u001f\u0010\b\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0011R\u000e\u0010\u0013\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0014\u001a\u0004\u0018\u00010\u00078\u0002@\u0002X\u0083\u000e¢\u0006\u0004\n\u0002\u0010\u000fR\u000e\u0010\u0015\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\n0\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0011¨\u0006!"}, d2 = {"Lcom/discord/chat/presentation/message/decorations/HighlightedMessageDrawer;", "", "context", "Landroid/content/Context;", "cellHighlightColor", "Lkotlin/Function1;", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "", "gutterColor", "shouldRenderHighlight", "", "(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "backgroundPaint", "Landroid/graphics/Paint;", "backgroundPaintColor", "Ljava/lang/Integer;", "getCellHighlightColor", "()Lkotlin/jvm/functions/Function1;", "getGutterColor", "gutterPaint", "gutterPaintColor", "gutterWidth", "getShouldRenderHighlight", "drawHighlight", "", "canvas", "Landroid/graphics/Canvas;", "child", "Landroid/view/View;", "topSpacing", "bottomSpacing", "setPaintStyles", "chatListItem", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public class HighlightedMessageDrawer {
     private final Paint backgroundPaint;
     private Integer backgroundPaintColor;
@@ -22,7 +22,7 @@ public class HighlightedMessageDrawer {
     private final int gutterWidth;
     private final Function1<ChatListItem, Boolean> shouldRenderHighlight;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    
     public HighlightedMessageDrawer(Context context, Function1<? super ChatListItem, Integer> cellHighlightColor, Function1<? super ChatListItem, Integer> gutterColor, Function1<? super ChatListItem, Boolean> shouldRenderHighlight) {
         q.g(context, "context");
         q.g(cellHighlightColor, "cellHighlightColor");
@@ -40,7 +40,7 @@ public class HighlightedMessageDrawer {
         this.gutterPaint = paint2;
     }
 
-    public static /* synthetic */ void drawHighlight$default(HighlightedMessageDrawer highlightedMessageDrawer, Canvas canvas, View view, int i10, int i11, int i12, Object obj) {
+    public static  void drawHighlight$default(HighlightedMessageDrawer highlightedMessageDrawer, Canvas canvas, View view, int i10, int i11, int i12, Object obj) {
         if (obj == null) {
             if ((i12 & 4) != 0) {
                 i10 = 0;

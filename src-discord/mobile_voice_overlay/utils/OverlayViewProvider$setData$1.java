@@ -8,26 +8,26 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u00032\u0006\u0010\u0004\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "T", "Lcom/discord/mobile_voice_overlay/views/OverlayView;", "view", "invoke", "(Lcom/discord/mobile_voice_overlay/views/OverlayView;)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
-public final class OverlayViewProvider$setData$1 extends s implements Function1<T, Unit> {
-    final /* synthetic */ MobileVoiceOverlayData $data;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u00032\u0006\u0010\u0004\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "T", "Lcom/discord/mobile_voice_overlay/views/OverlayView;", "view", "invoke", "(Lcom/discord/mobile_voice_overlay/views/OverlayView;)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class OverlayViewProvider$setData$1 extends s implements Function1<T, Unit> {
+    final  MobileVoiceOverlayData $data;
+
+    
+    
     public OverlayViewProvider$setData$1(MobileVoiceOverlayData mobileVoiceOverlayData) {
         super(1);
         this.$data = mobileVoiceOverlayData;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(Object obj) {
+    @Override 
+    public   Unit invoke(Object obj) {
         invoke((OverlayView) obj);
         return Unit.f20663a;
     }
 
-    /* JADX WARN: Incorrect types in method signature: (TT;)V */
+    
     public final void invoke(OverlayView view) {
         q.g(view, "view");
         view.setData(this.$data);

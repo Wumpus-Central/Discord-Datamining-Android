@@ -12,25 +12,25 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.t0;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.misc.utilities.backoff.ExponentialBackoff$fail$1", f = "ExponentialBackoff.kt", l = {38, 39}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
-public final class ExponentialBackoff$fail$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ Function1<Continuation<? super Unit>, Object> $action;
-    int label;
-    final /* synthetic */ ExponentialBackoff this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+public final class ExponentialBackoff$fail$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  Function1<Continuation<? super Unit>, Object> $action;
+    int label;
+    final  ExponentialBackoff this$0;
+
+    
+    
+    
     public ExponentialBackoff$fail$1(ExponentialBackoff exponentialBackoff, Function1<? super Continuation<? super Unit>, ? extends Object> function1, Continuation<? super ExponentialBackoff$fail$1> continuation) {
         super(2, continuation);
         this.this$0 = exponentialBackoff;
         this.$action = function1;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new ExponentialBackoff$fail$1(this.this$0, this.$action, continuation);
     }
@@ -39,7 +39,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
         return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         long j10;

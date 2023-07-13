@@ -24,7 +24,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 \"2\u00020\u00012\u00020\u0002:\u0001\"BY\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00060\u0004\u0012\u0014\u0010\t\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\n\u0012\u0004\u0012\u00020\u00060\u0004\u0012\u0014\u0010\u000b\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\f\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\u0002\u0010\rJ\u001a\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J\u001a\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0016J\u0010\u0010 \u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\u0010\u0010!\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0018H\u0007R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u001f\u0010\u000b\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\f\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u001d\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u001d\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u001f\u0010\t\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\n\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0010R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006#"}, d2 = {"Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver;", "Landroid/content/BroadcastReceiver;", "Landroid/bluetooth/BluetoothProfile$ServiceListener;", "onHeadsetConnectionStateUpdate", "Lkotlin/Function1;", "Lcom/discord/audio/enums/BluetoothProfileConnectionState$Update;", "", "onHeadsetAudioStateUpdate", "Lcom/discord/audio/enums/BluetoothHeadsetAudioState$Update;", "onHeadsetProxyConnectionUpdate", "Landroid/bluetooth/BluetoothHeadset;", "onActiveDeviceUpdate", "Landroid/bluetooth/BluetoothDevice;", "(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "headsetProxy", "getOnActiveDeviceUpdate", "()Lkotlin/jvm/functions/Function1;", "getOnHeadsetAudioStateUpdate", "getOnHeadsetConnectionStateUpdate", "getOnHeadsetProxyConnectionUpdate", "registered", "", "onReceive", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "onServiceConnected", "profile", "", "proxy", "Landroid/bluetooth/BluetoothProfile;", "onServiceDisconnected", "register", "Companion", "audio_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
+
 public final class BluetoothBroadcastReceiver extends BroadcastReceiver implements BluetoothProfile.ServiceListener {
     public static final Companion Companion = new Companion(null);
     private static final String TAG = "BluetoothBroadcasts";
@@ -37,20 +37,20 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
     private boolean registered;
 
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/discord/audio/bluetooth/BluetoothBroadcastReceiver$Companion;", "", "()V", "TAG", "", "actions", "", "Lcom/discord/audio/enums/BluetoothBroadcastAction;", "audio_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
 
         static {
             int[] iArr = new int[BluetoothBroadcastAction.values().length];
@@ -76,7 +76,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
         actions = i10;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    
     public BluetoothBroadcastReceiver(Function1<? super BluetoothProfileConnectionState.Update, Unit> onHeadsetConnectionStateUpdate, Function1<? super BluetoothHeadsetAudioState.Update, Unit> onHeadsetAudioStateUpdate, Function1<? super BluetoothHeadset, Unit> onHeadsetProxyConnectionUpdate, Function1<? super BluetoothDevice, Unit> onActiveDeviceUpdate) {
         q.g(onHeadsetConnectionStateUpdate, "onHeadsetConnectionStateUpdate");
         q.g(onHeadsetAudioStateUpdate, "onHeadsetAudioStateUpdate");
@@ -104,7 +104,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
         return this.onHeadsetProxyConnectionUpdate;
     }
 
-    @Override // android.content.BroadcastReceiver
+    @Override 
     public void onReceive(Context context, Intent intent) {
         q.g(context, "context");
         if (intent != null) {
@@ -138,7 +138,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
         }
     }
 
-    @Override // android.bluetooth.BluetoothProfile.ServiceListener
+    @Override 
     public void onServiceConnected(int i10, BluetoothProfile bluetoothProfile) {
         BluetoothHeadset bluetoothHeadset;
         if (i10 == 1 && this.registered) {
@@ -153,7 +153,7 @@ public final class BluetoothBroadcastReceiver extends BroadcastReceiver implemen
         }
     }
 
-    @Override // android.bluetooth.BluetoothProfile.ServiceListener
+    @Override 
     public void onServiceDisconnected(int i10) {
         if (i10 == 1 && this.registered) {
             Log.i$default(Log.INSTANCE, TAG, "BluetoothProfile.ServiceListener.onServiceDisconnected", (Throwable) null, 4, (Object) null);

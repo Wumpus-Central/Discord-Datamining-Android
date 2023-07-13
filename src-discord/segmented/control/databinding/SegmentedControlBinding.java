@@ -8,7 +8,7 @@ import androidx.cardview.widget.CardView;
 import com.discord.segmented.control.R;
 import v0.a;
 
-/* loaded from: classes8.dex */
+
 public final class SegmentedControlBinding {
     public final CardView rootCardView;
     private final CardView rootView;

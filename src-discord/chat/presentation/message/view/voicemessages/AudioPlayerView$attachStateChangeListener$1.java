@@ -19,28 +19,28 @@ import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.l;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "mediaViewAttached", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-public final class AudioPlayerView$attachStateChangeListener$1 extends s implements Function1<Boolean, Unit> {
-    final /* synthetic */ AudioPlayerView this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "mediaViewAttached", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class AudioPlayerView$attachStateChangeListener$1 extends s implements Function1<Boolean, Unit> {
+    final  AudioPlayerView this$0;
+
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$attachStateChangeListener$1$1", f = "AudioPlayerView.kt", l = {93}, m = "invokeSuspend")
-    /* renamed from: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$attachStateChangeListener$1$1  reason: invalid class name */
-    /* loaded from: classes3.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
-        final /* synthetic */ AudioPlayerView this$0;
+        final  AudioPlayerView this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass1(AudioPlayerView audioPlayerView, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.this$0 = audioPlayerView;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, continuation);
         }
@@ -49,7 +49,7 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             d10 = d.d();
@@ -58,9 +58,9 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
                 t.b(obj);
                 Flow<AudioPlayerManager.AudioSource> currentPlayerSourceFlow = AudioPlayerManager.INSTANCE.getCurrentPlayerSourceFlow();
                 final AudioPlayerView audioPlayerView = this.this$0;
-                FlowCollector<? super AudioPlayerManager.AudioSource> flowCollector = new FlowCollector() { // from class: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView.attachStateChangeListener.1.1.1
-                    @Override // kotlinx.coroutines.flow.FlowCollector
-                    public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                FlowCollector<? super AudioPlayerManager.AudioSource> flowCollector = new FlowCollector() { 
+                    @Override 
+                    public   Object emit(Object obj2, Continuation continuation) {
                         return emit((AudioPlayerManager.AudioSource) obj2, (Continuation<? super Unit>) continuation);
                     }
 
@@ -93,15 +93,15 @@ public final class AudioPlayerView$attachStateChangeListener$1 extends s impleme
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public AudioPlayerView$attachStateChangeListener$1(AudioPlayerView audioPlayerView) {
         super(1);
         this.this$0 = audioPlayerView;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
+    @Override 
+    public   Unit invoke(Boolean bool) {
         invoke(bool.booleanValue());
         return Unit.f20663a;
     }

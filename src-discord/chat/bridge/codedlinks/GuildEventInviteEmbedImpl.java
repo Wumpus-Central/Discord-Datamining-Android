@@ -21,7 +21,7 @@ import si.n1;
 
 @f
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\bd\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 ¨\u00012\u00020\u00012\u00020\u00022\u00020\u0003:\u0004§\u0001¨\u0001BÉ\u0003\b\u0017\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\b\u0010\u001f\u001a\u0004\u0018\u00010\r\u0012\b\u0010 \u001a\u0004\u0018\u00010\u001a\u0012\b\u0010!\u001a\u0004\u0018\u00010\r\u0012\b\u0010\"\u001a\u0004\u0018\u00010\r\u0012\b\u0010#\u001a\u0004\u0018\u00010\r\u0012\b\u0010$\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010%\u001a\u0004\u0018\u00010\u001a\u0012\b\u0010&\u001a\u0004\u0018\u00010\r\u0012\b\u0010'\u001a\u0004\u0018\u00010\r\u0012\b\u0010(\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010)\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010*\u001a\u0004\u0018\u00010\r\u0012\b\u0010+\u001a\u0004\u0018\u00010\u001a\u0012\b\u0010,\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010-\u001a\u0004\u0018\u00010\r\u0012\b\u0010.\u001a\u0004\u0018\u00010\r\u0012\b\u0010/\u001a\u0004\u0018\u00010\r\u0012\b\u00100\u001a\u0004\u0018\u00010\u0005\u0012\b\u00101\u001a\u0004\u0018\u00010\u0005\u0012\b\u00102\u001a\u0004\u0018\u00010\u0005\u0012\b\u00103\u001a\u0004\u0018\u00010\r\u0012\b\u00104\u001a\u0004\u0018\u00010\r\u0012\b\u00105\u001a\u0004\u0018\u00010\u0005\u0012\b\u00106\u001a\u0004\u0018\u00010\r\u0012\b\u00107\u001a\u0004\u0018\u000108¢\u0006\u0002\u00109Bù\u0003\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0005\u0012\b\b\u0001\u0010\b\u001a\u00020\u0005\u0012\b\b\u0002\u0010\t\u001a\u00020\n\u0012\b\b\u0001\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\n\b\u0003\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u0010\u0011\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\r\u0012\n\b\u0003\u0010\u0018\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\r\u0012\n\b\u0003\u0010$\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u001a\u0012\n\b\u0002\u0010,\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010-\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\r\u0012\n\b\u0003\u00100\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0003\u00101\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u00103\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u00104\u001a\u0004\u0018\u00010\r\u0012\n\b\u0003\u00105\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u00106\u001a\u0004\u0018\u00010\r¢\u0006\u0002\u0010:J\t\u0010n\u001a\u00020\u0005HÆ\u0003J\u000b\u0010o\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010p\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010q\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010r\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010s\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0010\u0010t\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0010\u0010u\u001a\u0004\u0018\u00010\u001aHÆ\u0003¢\u0006\u0002\u0010KJ\u000b\u0010v\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010w\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010x\u001a\u0004\u0018\u00010\u001eHÆ\u0003J\t\u0010y\u001a\u00020\u0005HÆ\u0003J\u000b\u0010z\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0010\u0010{\u001a\u0004\u0018\u00010\u001aHÆ\u0003¢\u0006\u0002\u0010KJ\u000b\u0010|\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010}\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010~\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0010\u0010\u007f\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0011\u0010\u0080\u0001\u001a\u0004\u0018\u00010\u001aHÆ\u0003¢\u0006\u0002\u0010KJ\f\u0010\u0081\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\f\u0010\u0082\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010\u0083\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\n\u0010\u0084\u0001\u001a\u00020\nHÆ\u0003J\u0011\u0010\u0085\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\f\u0010\u0086\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010\u0087\u0001\u001a\u0004\u0018\u00010\u001aHÆ\u0003¢\u0006\u0002\u0010KJ\u0011\u0010\u0088\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\f\u0010\u0089\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\f\u0010\u008a\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\f\u0010\u008b\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0011\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0011\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\n\u0010\u008f\u0001\u001a\u00020\u0005HÆ\u0003J\f\u0010\u0090\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\f\u0010\u0091\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\u0011\u0010\u0092\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\f\u0010\u0093\u0001\u001a\u0004\u0018\u00010\rHÆ\u0003J\n\u0010\u0094\u0001\u001a\u00020\rHÆ\u0003J\n\u0010\u0095\u0001\u001a\u00020\u000fHÆ\u0003J\u0011\u0010\u0096\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0011\u0010\u0097\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0011\u0010\u0098\u0001\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010<J\u0088\u0004\u0010\u0099\u0001\u001a\u00020\u00002\b\b\u0003\u0010\u0007\u001a\u00020\u00052\b\b\u0003\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0003\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\n\b\u0003\u0010\u0010\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u0010\u0011\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\r2\n\b\u0003\u0010\u0018\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\b\u0002\u0010\u001f\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u001a2\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010\r2\n\b\u0003\u0010$\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010%\u001a\u0004\u0018\u00010\u001a2\n\b\u0002\u0010&\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010(\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010)\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010*\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010+\u001a\u0004\u0018\u00010\u001a2\n\b\u0002\u0010,\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010-\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010.\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010/\u001a\u0004\u0018\u00010\r2\n\b\u0003\u00100\u001a\u0004\u0018\u00010\u00052\n\b\u0003\u00101\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u00102\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u00103\u001a\u0004\u0018\u00010\r2\n\b\u0002\u00104\u001a\u0004\u0018\u00010\r2\n\b\u0003\u00105\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u00106\u001a\u0004\u0018\u00010\rHÆ\u0001¢\u0006\u0003\u0010\u009a\u0001J\u0016\u0010\u009b\u0001\u001a\u00020\u001a2\n\u0010\u009c\u0001\u001a\u0005\u0018\u00010\u009d\u0001HÖ\u0003J\n\u0010\u009e\u0001\u001a\u00020\u0005HÖ\u0001J\n\u0010\u009f\u0001\u001a\u00020\rHÖ\u0001J(\u0010 \u0001\u001a\u00030¡\u00012\u0007\u0010¢\u0001\u001a\u00020\u00002\b\u0010£\u0001\u001a\u00030¤\u00012\b\u0010¥\u0001\u001a\u00030¦\u0001HÇ\u0001R\u0018\u0010\u0010\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\b;\u0010<R\u0018\u0010\u0011\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\b>\u0010<R\u0018\u0010\u0012\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\b?\u0010<R\u0016\u0010\u0013\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b@\u0010AR\u0016\u0010\u0014\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bB\u0010AR\u0014\u0010\u0007\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bC\u0010DR\u0016\u0010\u0015\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bE\u0010AR\u0016\u0010\u0016\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010AR\u0016\u0010\u0017\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bG\u0010AR\u0018\u0010\u0018\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bH\u0010<R\u0014\u0010\b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bI\u0010DR\u0018\u0010\u0019\u001a\u0004\u0018\u00010\u001aX\u0096\u0004¢\u0006\n\n\u0002\u0010L\u001a\u0004\bJ\u0010KR\u0016\u0010\u001b\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bM\u0010AR\u0016\u0010\u001c\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u0010AR\u0016\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bO\u0010PR\u0016\u0010\u001f\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bQ\u0010AR\u0018\u0010 \u001a\u0004\u0018\u00010\u001aX\u0096\u0004¢\u0006\n\n\u0002\u0010L\u001a\u0004\bR\u0010KR\u0014\u0010\t\u001a\u00020\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bS\u0010TR\u0016\u0010!\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bU\u0010AR\u0016\u0010\"\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bV\u0010AR\u0014\u0010\u000b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bW\u0010DR\u0016\u0010#\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bX\u0010AR\u0014\u0010\f\u001a\u00020\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bY\u0010AR\u0018\u0010$\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bZ\u0010<R\u0016\u0010.\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b[\u0010AR\u0018\u0010%\u001a\u0004\u0018\u00010\u001aX\u0096\u0004¢\u0006\n\n\u0002\u0010L\u001a\u0004\b%\u0010KR\u0016\u0010&\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010AR\u0016\u0010'\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b]\u0010AR\u0018\u0010(\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\b^\u0010<R\u0018\u0010)\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\b_\u0010<R\u0016\u0010*\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b`\u0010AR\u0018\u0010+\u001a\u0004\u0018\u00010\u001aX\u0096\u0004¢\u0006\n\n\u0002\u0010L\u001a\u0004\ba\u0010KR\u0018\u0010,\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bb\u0010<R\u0016\u0010-\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bc\u0010AR\u0016\u0010/\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bd\u0010AR\u0018\u00100\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\be\u0010<R\u0018\u00101\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bf\u0010<R\u0018\u00102\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bg\u0010<R\u0016\u00103\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bh\u0010AR\u0016\u00104\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bi\u0010AR\u0018\u00105\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\n\n\u0002\u0010=\u001a\u0004\bj\u0010<R\u0016\u00106\u001a\u0004\u0018\u00010\rX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bk\u0010AR\u0014\u0010\u000e\u001a\u00020\u000fX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bl\u0010m¨\u0006©\u0001"}, d2 = {"Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbed;", "Lcom/discord/chat/bridge/codedlinks/GuildInviteExtendedEmbed;", "Lcom/discord/chat/bridge/codedlinks/CodedLinkEmbed;", "seen1", "", "seen2", ViewProps.BACKGROUND_COLOR, ViewProps.BORDER_COLOR, "extendedType", "Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;", "headerColor", "headerText", "", "type", "Lcom/discord/chat/bridge/codedlinks/InviteType;", "acceptLabelBackgroundColor", "acceptLabelBorderColor", "acceptLabelColor", "acceptLabelIcon", "acceptLabelText", "badgeCount", "badgeIcon", "bodyText", "bodyTextColor", "canBeAccepted", "", "channelIcon", "channelName", "content", "Lcom/discord/chat/bridge/structurabletext/StructurableText;", "creatorAvatar", "embedCanBeTapped", "guildIcon", "guildName", "headerIcon", "headerTextColor", "isRsvped", "memberText", "onlineText", "resolvingGradientEnd", "resolvingGradientStart", "secondaryActionIcon", "splashHasRadialGradient", "splashOpacity", "splashUrl", "inviteSplash", "subtitle", "subtitleColor", "thumbnailBackgroundColor", "thumbnailCornerRadius", "thumbnailText", "thumbnailUrl", "titleColor", "titleText", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IIIILcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;ILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(IILcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;ILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V", "getAcceptLabelBackgroundColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getAcceptLabelBorderColor", "getAcceptLabelColor", "getAcceptLabelIcon", "()Ljava/lang/String;", "getAcceptLabelText", "getBackgroundColor", "()I", "getBadgeCount", "getBadgeIcon", "getBodyText", "getBodyTextColor", "getBorderColor", "getCanBeAccepted", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getChannelIcon", "getChannelName", "getContent", "()Lcom/discord/chat/bridge/structurabletext/StructurableText;", "getCreatorAvatar", "getEmbedCanBeTapped", "getExtendedType", "()Lcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;", "getGuildIcon", "getGuildName", "getHeaderColor", "getHeaderIcon", "getHeaderText", "getHeaderTextColor", "getInviteSplash", "getMemberText", "getOnlineText", "getResolvingGradientEnd", "getResolvingGradientStart", "getSecondaryActionIcon", "getSplashHasRadialGradient", "getSplashOpacity", "getSplashUrl", "getSubtitle", "getSubtitleColor", "getThumbnailBackgroundColor", "getThumbnailCornerRadius", "getThumbnailText", "getThumbnailUrl", "getTitleColor", "getTitleText", "getType", "()Lcom/discord/chat/bridge/codedlinks/InviteType;", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component3", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component4", "component40", "component41", "component42", "component43", "component5", "component6", "component7", "component8", "component9", "copy", "(IILcom/discord/chat/bridge/codedlinks/CodedLinkExtendedType;ILjava/lang/String;Lcom/discord/chat/bridge/codedlinks/InviteType;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/structurabletext/StructurableText;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements GuildEventInviteEmbed, GuildInviteExtendedEmbed {
     public static final Companion Companion = new Companion(null);
     private final Integer acceptLabelBackgroundColor;
@@ -69,12 +69,12 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
     private final InviteType type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/codedlinks/GuildEventInviteEmbedImpl;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -83,8 +83,8 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ GuildEventInviteEmbedImpl(int i10, int i11, int i12, int i13, CodedLinkExtendedType codedLinkExtendedType, int i14, String str, InviteType inviteType, Integer num, Integer num2, Integer num3, String str2, String str3, String str4, String str5, String str6, Integer num4, Boolean bool, String str7, String str8, StructurableText structurableText, String str9, Boolean bool2, String str10, String str11, String str12, Integer num5, Boolean bool3, String str13, String str14, Integer num6, Integer num7, String str15, Boolean bool4, Integer num8, String str16, String str17, String str18, Integer num9, Integer num10, Integer num11, String str19, String str20, Integer num12, String str21, SerializationConstructorMarker serializationConstructorMarker) {
+    
+    public  GuildEventInviteEmbedImpl(int i10, int i11, int i12, int i13, CodedLinkExtendedType codedLinkExtendedType, int i14, String str, InviteType inviteType, Integer num, Integer num2, Integer num3, String str2, String str3, String str4, String str5, String str6, Integer num4, Boolean bool, String str7, String str8, StructurableText structurableText, String str9, Boolean bool2, String str10, String str11, String str12, Integer num5, Boolean bool3, String str13, String str14, Integer num6, Integer num7, String str15, Boolean bool4, Integer num8, String str16, String str17, String str18, Integer num9, Integer num10, Integer num11, String str19, String str20, Integer num12, String str21, SerializationConstructorMarker serializationConstructorMarker) {
         super(null);
         if ((59 != (i10 & 59)) || ((i11 & 0) != 0)) {
             n1.a(new int[]{i10, i11}, new int[]{59, 0}, GuildEventInviteEmbedImpl$$serializer.INSTANCE.getDescriptor());
@@ -601,212 +601,212 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
         return getBackgroundColor() == guildEventInviteEmbedImpl.getBackgroundColor() && getBorderColor() == guildEventInviteEmbedImpl.getBorderColor() && getExtendedType() == guildEventInviteEmbedImpl.getExtendedType() && getHeaderColor() == guildEventInviteEmbedImpl.getHeaderColor() && q.b(getHeaderText(), guildEventInviteEmbedImpl.getHeaderText()) && getType() == guildEventInviteEmbedImpl.getType() && q.b(getAcceptLabelBackgroundColor(), guildEventInviteEmbedImpl.getAcceptLabelBackgroundColor()) && q.b(getAcceptLabelBorderColor(), guildEventInviteEmbedImpl.getAcceptLabelBorderColor()) && q.b(getAcceptLabelColor(), guildEventInviteEmbedImpl.getAcceptLabelColor()) && q.b(getAcceptLabelIcon(), guildEventInviteEmbedImpl.getAcceptLabelIcon()) && q.b(getAcceptLabelText(), guildEventInviteEmbedImpl.getAcceptLabelText()) && q.b(getBadgeCount(), guildEventInviteEmbedImpl.getBadgeCount()) && q.b(getBadgeIcon(), guildEventInviteEmbedImpl.getBadgeIcon()) && q.b(getBodyText(), guildEventInviteEmbedImpl.getBodyText()) && q.b(getBodyTextColor(), guildEventInviteEmbedImpl.getBodyTextColor()) && q.b(getCanBeAccepted(), guildEventInviteEmbedImpl.getCanBeAccepted()) && q.b(getChannelIcon(), guildEventInviteEmbedImpl.getChannelIcon()) && q.b(getChannelName(), guildEventInviteEmbedImpl.getChannelName()) && q.b(getContent(), guildEventInviteEmbedImpl.getContent()) && q.b(getCreatorAvatar(), guildEventInviteEmbedImpl.getCreatorAvatar()) && q.b(getEmbedCanBeTapped(), guildEventInviteEmbedImpl.getEmbedCanBeTapped()) && q.b(getGuildIcon(), guildEventInviteEmbedImpl.getGuildIcon()) && q.b(getGuildName(), guildEventInviteEmbedImpl.getGuildName()) && q.b(getHeaderIcon(), guildEventInviteEmbedImpl.getHeaderIcon()) && q.b(getHeaderTextColor(), guildEventInviteEmbedImpl.getHeaderTextColor()) && q.b(isRsvped(), guildEventInviteEmbedImpl.isRsvped()) && q.b(getMemberText(), guildEventInviteEmbedImpl.getMemberText()) && q.b(getOnlineText(), guildEventInviteEmbedImpl.getOnlineText()) && q.b(getResolvingGradientEnd(), guildEventInviteEmbedImpl.getResolvingGradientEnd()) && q.b(getResolvingGradientStart(), guildEventInviteEmbedImpl.getResolvingGradientStart()) && q.b(getSecondaryActionIcon(), guildEventInviteEmbedImpl.getSecondaryActionIcon()) && q.b(getSplashHasRadialGradient(), guildEventInviteEmbedImpl.getSplashHasRadialGradient()) && q.b(getSplashOpacity(), guildEventInviteEmbedImpl.getSplashOpacity()) && q.b(getSplashUrl(), guildEventInviteEmbedImpl.getSplashUrl()) && q.b(getInviteSplash(), guildEventInviteEmbedImpl.getInviteSplash()) && q.b(getSubtitle(), guildEventInviteEmbedImpl.getSubtitle()) && q.b(getSubtitleColor(), guildEventInviteEmbedImpl.getSubtitleColor()) && q.b(getThumbnailBackgroundColor(), guildEventInviteEmbedImpl.getThumbnailBackgroundColor()) && q.b(getThumbnailCornerRadius(), guildEventInviteEmbedImpl.getThumbnailCornerRadius()) && q.b(getThumbnailText(), guildEventInviteEmbedImpl.getThumbnailText()) && q.b(getThumbnailUrl(), guildEventInviteEmbedImpl.getThumbnailUrl()) && q.b(getTitleColor(), guildEventInviteEmbedImpl.getTitleColor()) && q.b(getTitleText(), guildEventInviteEmbedImpl.getTitleText());
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getAcceptLabelBackgroundColor() {
         return this.acceptLabelBackgroundColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getAcceptLabelBorderColor() {
         return this.acceptLabelBorderColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getAcceptLabelColor() {
         return this.acceptLabelColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public String getAcceptLabelIcon() {
         return this.acceptLabelIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getAcceptLabelText() {
         return this.acceptLabelText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public int getBackgroundColor() {
         return this.backgroundColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public String getBadgeCount() {
         return this.badgeCount;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public String getBadgeIcon() {
         return this.badgeIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getBodyText() {
         return this.bodyText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getBodyTextColor() {
         return this.bodyTextColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public int getBorderColor() {
         return this.borderColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Boolean getCanBeAccepted() {
         return this.canBeAccepted;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteEmbed
+    @Override 
     public String getChannelIcon() {
         return this.channelIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteEmbed
+    @Override 
     public String getChannelName() {
         return this.channelName;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public StructurableText getContent() {
         return this.content;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public String getCreatorAvatar() {
         return this.creatorAvatar;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Boolean getEmbedCanBeTapped() {
         return this.embedCanBeTapped;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteExtendedEmbed
+    @Override 
     public CodedLinkExtendedType getExtendedType() {
         return this.extendedType;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteExtendedEmbed
+    @Override 
     public String getGuildIcon() {
         return this.guildIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteExtendedEmbed
+    @Override 
     public String getGuildName() {
         return this.guildName;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public int getHeaderColor() {
         return this.headerColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteExtendedEmbed
+    @Override 
     public String getHeaderIcon() {
         return this.headerIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getHeaderText() {
         return this.headerText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public Integer getHeaderTextColor() {
         return this.headerTextColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getInviteSplash() {
         return this.inviteSplash;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteEmbed
+    @Override 
     public String getMemberText() {
         return this.memberText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildInviteEmbed
+    @Override 
     public String getOnlineText() {
         return this.onlineText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getResolvingGradientEnd() {
         return this.resolvingGradientEnd;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getResolvingGradientStart() {
         return this.resolvingGradientStart;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public String getSecondaryActionIcon() {
         return this.secondaryActionIcon;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Boolean getSplashHasRadialGradient() {
         return this.splashHasRadialGradient;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getSplashOpacity() {
         return this.splashOpacity;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getSplashUrl() {
         return this.splashUrl;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getSubtitle() {
         return this.subtitle;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getSubtitleColor() {
         return this.subtitleColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getThumbnailBackgroundColor() {
         return this.thumbnailBackgroundColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getThumbnailCornerRadius() {
         return this.thumbnailCornerRadius;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getThumbnailText() {
         return this.thumbnailText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getThumbnailUrl() {
         return this.thumbnailUrl;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public Integer getTitleColor() {
         return this.titleColor;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public String getTitleText() {
         return this.titleText;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.CodedLinkEmbed
+    @Override 
     public InviteType getType() {
         return this.type;
     }
@@ -820,7 +820,7 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
         return backgroundColor + i10;
     }
 
-    @Override // com.discord.chat.bridge.codedlinks.GuildEventInviteEmbed
+    @Override 
     public Boolean isRsvped() {
         return this.isRsvped;
     }
@@ -872,11 +872,11 @@ public final class GuildEventInviteEmbedImpl extends CodedLinkEmbed implements G
         return "GuildEventInviteEmbedImpl(backgroundColor=" + backgroundColor + ", borderColor=" + borderColor + ", extendedType=" + extendedType + ", headerColor=" + headerColor + ", headerText=" + headerText + ", type=" + type + ", acceptLabelBackgroundColor=" + acceptLabelBackgroundColor + ", acceptLabelBorderColor=" + acceptLabelBorderColor + ", acceptLabelColor=" + acceptLabelColor + ", acceptLabelIcon=" + acceptLabelIcon + ", acceptLabelText=" + acceptLabelText + ", badgeCount=" + badgeCount + ", badgeIcon=" + badgeIcon + ", bodyText=" + bodyText + ", bodyTextColor=" + bodyTextColor + ", canBeAccepted=" + canBeAccepted + ", channelIcon=" + channelIcon + ", channelName=" + channelName + ", content=" + content + ", creatorAvatar=" + creatorAvatar + ", embedCanBeTapped=" + embedCanBeTapped + ", guildIcon=" + guildIcon + ", guildName=" + guildName + ", headerIcon=" + headerIcon + ", headerTextColor=" + headerTextColor + ", isRsvped=" + isRsvped + ", memberText=" + memberText + ", onlineText=" + onlineText + ", resolvingGradientEnd=" + resolvingGradientEnd + ", resolvingGradientStart=" + resolvingGradientStart + ", secondaryActionIcon=" + secondaryActionIcon + ", splashHasRadialGradient=" + splashHasRadialGradient + ", splashOpacity=" + splashOpacity + ", splashUrl=" + splashUrl + ", inviteSplash=" + inviteSplash + ", subtitle=" + subtitle + ", subtitleColor=" + subtitleColor + ", thumbnailBackgroundColor=" + thumbnailBackgroundColor + ", thumbnailCornerRadius=" + thumbnailCornerRadius + ", thumbnailText=" + thumbnailText + ", thumbnailUrl=" + thumbnailUrl + ", titleColor=" + titleColor + ", titleText=" + titleText + ")";
     }
 
-    public /* synthetic */ GuildEventInviteEmbedImpl(int i10, int i11, CodedLinkExtendedType codedLinkExtendedType, int i12, String str, InviteType inviteType, Integer num, Integer num2, Integer num3, String str2, String str3, String str4, String str5, String str6, Integer num4, Boolean bool, String str7, String str8, StructurableText structurableText, String str9, Boolean bool2, String str10, String str11, String str12, Integer num5, Boolean bool3, String str13, String str14, Integer num6, Integer num7, String str15, Boolean bool4, Integer num8, String str16, String str17, String str18, Integer num9, Integer num10, Integer num11, String str19, String str20, Integer num12, String str21, int i13, int i14, DefaultConstructorMarker defaultConstructorMarker) {
+    public  GuildEventInviteEmbedImpl(int i10, int i11, CodedLinkExtendedType codedLinkExtendedType, int i12, String str, InviteType inviteType, Integer num, Integer num2, Integer num3, String str2, String str3, String str4, String str5, String str6, Integer num4, Boolean bool, String str7, String str8, StructurableText structurableText, String str9, Boolean bool2, String str10, String str11, String str12, Integer num5, Boolean bool3, String str13, String str14, Integer num6, Integer num7, String str15, Boolean bool4, Integer num8, String str16, String str17, String str18, Integer num9, Integer num10, Integer num11, String str19, String str20, Integer num12, String str21, int i13, int i14, DefaultConstructorMarker defaultConstructorMarker) {
         this(i10, i11, (i13 & 4) != 0 ? CodedLinkExtendedType.GUILD_SCHEDULED_EVENT : codedLinkExtendedType, i12, str, inviteType, (i13 & 64) != 0 ? null : num, (i13 & 128) != 0 ? null : num2, (i13 & 256) != 0 ? null : num3, (i13 & 512) != 0 ? null : str2, (i13 & 1024) != 0 ? null : str3, (i13 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? null : str4, (i13 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : str5, (i13 & 8192) != 0 ? null : str6, (i13 & 16384) != 0 ? null : num4, (32768 & i13) != 0 ? null : bool, (65536 & i13) != 0 ? null : str7, (131072 & i13) != 0 ? null : str8, (262144 & i13) != 0 ? null : structurableText, (524288 & i13) != 0 ? null : str9, (1048576 & i13) != 0 ? null : bool2, (2097152 & i13) != 0 ? null : str10, (4194304 & i13) != 0 ? null : str11, (8388608 & i13) != 0 ? null : str12, (16777216 & i13) != 0 ? null : num5, (33554432 & i13) != 0 ? null : bool3, (67108864 & i13) != 0 ? null : str13, (134217728 & i13) != 0 ? null : str14, (268435456 & i13) != 0 ? null : num6, (536870912 & i13) != 0 ? null : num7, (1073741824 & i13) != 0 ? null : str15, (i13 & Integer.MIN_VALUE) != 0 ? null : bool4, (i14 & 1) != 0 ? null : num8, (i14 & 2) != 0 ? null : str16, (i14 & 4) != 0 ? null : str17, (i14 & 8) != 0 ? null : str18, (i14 & 16) != 0 ? null : num9, (i14 & 32) != 0 ? null : num10, (i14 & 64) != 0 ? null : num11, (i14 & 128) != 0 ? null : str19, (i14 & 256) != 0 ? null : str20, (i14 & 512) != 0 ? null : num12, (i14 & 1024) != 0 ? null : str21);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public GuildEventInviteEmbedImpl(int i10, int i11, CodedLinkExtendedType extendedType, int i12, String headerText, InviteType type, Integer num, Integer num2, Integer num3, String str, String str2, String str3, String str4, String str5, Integer num4, Boolean bool, String str6, String str7, StructurableText structurableText, String str8, Boolean bool2, String str9, String str10, String str11, Integer num5, Boolean bool3, String str12, String str13, Integer num6, Integer num7, String str14, Boolean bool4, Integer num8, String str15, String str16, String str17, Integer num9, Integer num10, Integer num11, String str18, String str19, Integer num12, String str20) {
         super(null);
         q.g(extendedType, "extendedType");

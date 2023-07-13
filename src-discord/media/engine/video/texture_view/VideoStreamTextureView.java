@@ -23,7 +23,7 @@ import org.webrtc.VideoFrame;
 import org.webrtc.VideoSink;
 
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0010\u0018\u0000 62\u00020\u00012\u00020\u00022\u00020\u0003:\u00016B\u001b\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\u0002\u0010\bJ$\u0010\u0018\u001a\u00020\u00192\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u001a\u001a\u0004\u0018\u00010\n2\b\u0010\u001b\u001a\u0004\u0018\u00010\u0003H\u0002J\u0010\u0010\u001c\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u0003H\u0002J\b\u0010\u001d\u001a\u00020\u0019H\u0016J\u0010\u0010\u001e\u001a\u00020\u00192\u0006\u0010\u001f\u001a\u00020 H\u0016J \u0010!\u001a\u00020\u00192\u0006\u0010\"\u001a\u00020\u00122\u0006\u0010#\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u0012H\u0016J0\u0010%\u001a\u00020\u00192\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u00122\u0006\u0010)\u001a\u00020\u00122\u0006\u0010*\u001a\u00020\u00122\u0006\u0010+\u001a\u00020\u0012H\u0014J\u0018\u0010,\u001a\u00020\u00192\u0006\u0010-\u001a\u00020\u00122\u0006\u0010.\u001a\u00020\u0012H\u0014J\b\u0010/\u001a\u00020\u0019H\u0016J\b\u00100\u001a\u00020\u0019H\u0007J\u0010\u00101\u001a\u00020\u00192\u0006\u00102\u001a\u00020'H\u0007J\u0018\u00103\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u0003H\u0007J\b\u00104\u001a\u00020\nH\u0016J\b\u00105\u001a\u00020\u0019H\u0002R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0003X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004¢\u0006\u0002\n\u0000¨\u00067"}, d2 = {"Lcom/discord/media/engine/video/texture_view/VideoStreamTextureView;", "Landroid/view/TextureView;", "Lorg/webrtc/VideoSink;", "Lorg/webrtc/RendererCommon$RendererEvents;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "currentStreamId", "", "eglRenderer", "Lcom/discord/media/engine/video/texture_view/TextureViewEglRenderer;", "mediaEngine", "Lcom/discord/media/engine/MediaEngine;", ZeroconfModule.KEY_SERVICE_NAME, "rendererEvents", "rotatedFrameHeight", "", "rotatedFrameWidth", "startRenderingTimestampNs", "", "videoLayoutMeasure", "Lorg/webrtc/RendererCommon$VideoLayoutMeasure;", "attachToStream", "", "streamId", "events", "init", "onFirstFrameRendered", "onFrame", "videoFrame", "Lorg/webrtc/VideoFrame;", "onFrameResolutionChanged", "videoWidth", "videoHeight", ViewProps.ROTATION, ViewProps.ON_LAYOUT, "changed", "", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "onMeasure", "widthSpec", "heightSpec", "requestLayout", "reset", "setMirror", "mirror", "startRenderingStream", "toString", "updateSurfaceSize", "Companion", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class VideoStreamTextureView extends TextureView implements VideoSink, RendererCommon.RendererEvents {
     private static final String TAG = "VideoStreamTextureView";
     private String currentStreamId;
@@ -40,23 +40,23 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
     private static final AtomicInteger liveCount = new AtomicInteger();
 
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/discord/media/engine/video/texture_view/VideoStreamTextureView$Companion;", "", "()V", "TAG", "", "count", "Ljava/util/concurrent/atomic/AtomicInteger;", "liveCount", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public VideoStreamTextureView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ VideoStreamTextureView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  VideoStreamTextureView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -91,7 +91,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void init(RendererCommon.RendererEvents rendererEvents) {
         System.nanoTime();
         this.rendererEvents = rendererEvents;
@@ -104,7 +104,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         Debug debug = Debug.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void updateSurfaceSize() {
         if (!ThreadUtilsKt.isOnMainThread()) {
             Thread currentThread = Thread.currentThread();
@@ -118,7 +118,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         }
     }
 
-    @Override // org.webrtc.RendererCommon.RendererEvents
+    @Override 
     public void onFirstFrameRendered() {
         Debug debug = Debug.INSTANCE;
         RendererCommon.RendererEvents rendererEvents = this.rendererEvents;
@@ -129,13 +129,13 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         rendererEvents.onFirstFrameRendered();
     }
 
-    @Override // org.webrtc.VideoSink
+    @Override 
     public void onFrame(VideoFrame videoFrame) {
         q.g(videoFrame, "videoFrame");
         this.eglRenderer.onFrame(videoFrame);
     }
 
-    @Override // org.webrtc.RendererCommon.RendererEvents
+    @Override 
     public void onFrameResolutionChanged(int i10, int i11, int i12) {
         int i13;
         int i14;
@@ -167,7 +167,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         throw new IllegalStateException(("Expected to be on android main thread. Current: " + currentThread).toString());
     }
 
-    @Override // android.view.View
+    @Override 
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         if (z10) {
             float f10 = (i12 - i10) / (i13 - i11);
@@ -179,7 +179,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         }
     }
 
-    @Override // android.view.View
+    @Override 
     protected void onMeasure(int i10, int i11) {
         Point measure = this.videoLayoutMeasure.measure(i10, i11, this.rotatedFrameWidth, this.rotatedFrameHeight);
         if (!(this.rotatedFrameWidth == 0 && this.rotatedFrameHeight == 0)) {
@@ -188,7 +188,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         setMeasuredDimension(measure.x, measure.y);
     }
 
-    @Override // android.view.View
+    @Override 
     public void requestLayout() {
         Debug debug = Debug.INSTANCE;
         super.requestLayout();
@@ -213,14 +213,14 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         attachToStream(this.mediaEngine, streamId, events);
     }
 
-    @Override // android.view.View
+    @Override 
     public String toString() {
         String str = this.name;
         String str2 = this.currentStreamId;
         return str + " (currentStreamId=" + str2 + ")";
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public VideoStreamTextureView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");
@@ -229,11 +229,11 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
         this.videoLayoutMeasure = new RendererCommon.VideoLayoutMeasure();
         this.mediaEngine = MediaEngineKt.getMediaEngine((ReactContext) context);
         this.eglRenderer = new TextureViewEglRenderer(str);
-        setSurfaceTextureListener(new TextureView.SurfaceTextureListener() { // from class: com.discord.media.engine.video.texture_view.VideoStreamTextureView.1
+        setSurfaceTextureListener(new TextureView.SurfaceTextureListener() { 
             private long startNs = System.nanoTime();
             private int surfaceTextureCount;
 
-            @Override // android.view.TextureView.SurfaceTextureListener
+            @Override 
             public void onSurfaceTextureAvailable(SurfaceTexture surface, int i10, int i11) {
                 q.g(surface, "surface");
                 Debug debug = Debug.INSTANCE;
@@ -242,7 +242,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
                 VideoStreamTextureView.this.eglRenderer.onSurfaceTextureAvailable(surface, i10, i11);
             }
 
-            @Override // android.view.TextureView.SurfaceTextureListener
+            @Override 
             public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
                 q.g(surface, "surface");
                 System.nanoTime();
@@ -252,7 +252,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
                 return onSurfaceTextureDestroyed;
             }
 
-            @Override // android.view.TextureView.SurfaceTextureListener
+            @Override 
             public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int i10, int i11) {
                 q.g(surface, "surface");
                 Debug debug = Debug.INSTANCE;
@@ -260,7 +260,7 @@ public final class VideoStreamTextureView extends TextureView implements VideoSi
                 VideoStreamTextureView.this.eglRenderer.onSurfaceTextureSizeChanged(surface, i10, i11);
             }
 
-            @Override // android.view.TextureView.SurfaceTextureListener
+            @Override 
             public void onSurfaceTextureUpdated(SurfaceTexture surface) {
                 q.g(surface, "surface");
                 VideoStreamTextureView.this.eglRenderer.onSurfaceTextureUpdated(surface);

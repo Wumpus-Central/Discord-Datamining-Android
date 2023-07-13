@@ -26,10 +26,10 @@ import si.h;
 import si.m0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/codedlinks/EmbeddedActivityInviteEmbedImpl;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<EmbeddedActivityInviteEmbedImpl> {
     public static final EmbeddedActivityInviteEmbedImpl$$serializer INSTANCE;
-    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+    private static final  PluginGeneratedSerialDescriptor descriptor;
 
     static {
         EmbeddedActivityInviteEmbedImpl$$serializer embeddedActivityInviteEmbedImpl$$serializer = new EmbeddedActivityInviteEmbedImpl$$serializer();
@@ -73,7 +73,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
     private EmbeddedActivityInviteEmbedImpl$$serializer() {
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] childSerializers() {
         m0 m0Var = m0.f26305a;
         a2 a2Var = a2.f26230a;
@@ -81,7 +81,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
         return new KSerializer[]{m0Var, m0Var, m0Var, a.u(a2Var), a.u(InviteType.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(hVar), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(hVar), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), new f(a2Var), CodedLinkExtendedType.Serializer.INSTANCE, a.u(AnnotatedStructurableTextSerializer.INSTANCE), a2Var, hVar};
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
+    @Override 
     public EmbeddedActivityInviteEmbedImpl deserialize(Decoder decoder) {
         boolean z10;
         int i10;
@@ -897,7 +897,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
         return new EmbeddedActivityInviteEmbedImpl(i13, 0, i12, i11, i10, (String) obj22, (InviteType) obj21, (Integer) obj10, (Integer) obj20, (Integer) obj19, (String) obj4, (String) obj18, (Integer) obj17, (Boolean) obj12, (Boolean) obj13, (Integer) obj14, (Integer) obj16, (Boolean) obj15, (Integer) obj11, (String) obj27, (String) obj26, (String) obj25, (Integer) obj24, (Integer) obj23, (Integer) obj9, (String) obj8, (String) obj7, (Integer) obj6, (String) obj5, (List) obj, (CodedLinkExtendedType) obj3, (AnnotatedStructurableText) obj2, str, z10, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
+    @Override 
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -911,7 +911,7 @@ public final class EmbeddedActivityInviteEmbedImpl$$serializer implements f0<Emb
         c10.b(descriptor2);
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

@@ -6,7 +6,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u001b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0003\bÉ\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001b\u0010É\u0003\u001a\u00020\u00062\u0007\u0010Ê\u0003\u001a\u00020\u00062\u0007\u0010Ë\u0003\u001a\u00020\u0006H\u0016J\u001b\u0010Ì\u0003\u001a\u00020\u00062\u0007\u0010Í\u0003\u001a\u00020\u00062\u0007\u0010Î\u0003\u001a\u00020\u0006H\u0016R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\bR\u0014\u0010\u000b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\bR\u0014\u0010\r\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\bR\u0014\u0010\u000f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\bR\u0014\u0010\u0011\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\bR\u0014\u0010\u0013\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\bR\u0014\u0010\u0015\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\bR\u0014\u0010\u0017\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\bR\u0014\u0010\u0019\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\bR\u0014\u0010\u001b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\bR\u0014\u0010\u001d\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\bR\u0014\u0010\u001f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\bR\u0014\u0010!\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\bR\u0014\u0010#\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\bR\u0014\u0010%\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\bR\u0014\u0010'\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\bR\u0014\u0010)\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b*\u0010\bR\u0014\u0010+\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b,\u0010\bR\u0014\u0010-\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\bR\u0014\u0010/\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b0\u0010\bR\u0014\u00101\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u0010\bR\u0014\u00103\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b4\u0010\bR\u0014\u00105\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b6\u0010\bR\u0014\u00107\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b8\u0010\bR\u0014\u00109\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b:\u0010\bR\u0014\u0010;\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b<\u0010\bR\u0014\u0010=\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b>\u0010\bR\u0014\u0010?\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b@\u0010\bR\u0014\u0010A\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bB\u0010\bR\u0014\u0010C\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bD\u0010\bR\u0014\u0010E\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010\bR\u0014\u0010G\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bH\u0010\bR\u0014\u0010I\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010\bR\u0014\u0010K\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bL\u0010\bR\u0014\u0010M\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u0010\bR\u0014\u0010O\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bP\u0010\bR\u0014\u0010Q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bR\u0010\bR\u0014\u0010S\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bT\u0010\bR\u0014\u0010U\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bV\u0010\bR\u0014\u0010W\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bX\u0010\bR\u0014\u0010Y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bZ\u0010\bR\u0014\u0010[\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010\bR\u0014\u0010]\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b^\u0010\bR\u0014\u0010_\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b`\u0010\bR\u0014\u0010a\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bb\u0010\bR\u0014\u0010c\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bd\u0010\bR\u0014\u0010e\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bf\u0010\bR\u0014\u0010g\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bh\u0010\bR\u0014\u0010i\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bj\u0010\bR\u0014\u0010k\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bl\u0010\bR\u0014\u0010m\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bn\u0010\bR\u0014\u0010o\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bp\u0010\bR\u0014\u0010q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\br\u0010\bR\u0014\u0010s\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bt\u0010\bR\u0014\u0010u\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bv\u0010\bR\u0014\u0010w\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bx\u0010\bR\u0014\u0010y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bz\u0010\bR\u0014\u0010{\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b|\u0010\bR\u0014\u0010}\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b~\u0010\bR\u0015\u0010\u007f\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0001\u0010\bR\u0016\u0010\u0081\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0001\u0010\bR\u0016\u0010\u0083\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0001\u0010\bR\u0016\u0010\u0085\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0001\u0010\bR\u0016\u0010\u0087\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0001\u0010\bR\u0016\u0010\u0089\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0001\u0010\bR\u0016\u0010\u008b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0001\u0010\bR\u0016\u0010\u008d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0001\u0010\bR\u0016\u0010\u008f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0001\u0010\bR\u0016\u0010\u0091\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0001\u0010\bR\u0016\u0010\u0093\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0001\u0010\bR\u0016\u0010\u0095\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0001\u0010\bR\u0016\u0010\u0097\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0001\u0010\bR\u0016\u0010\u0099\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0001\u0010\bR\u0016\u0010\u009b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0001\u0010\bR\u0016\u0010\u009d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0001\u0010\bR\u0016\u0010\u009f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0001\u0010\bR\u0016\u0010¡\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0001\u0010\bR\u0016\u0010£\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0001\u0010\bR\u0016\u0010¥\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0001\u0010\bR\u0016\u0010§\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0001\u0010\bR\u0016\u0010©\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0001\u0010\bR\u0016\u0010«\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0001\u0010\bR\u0016\u0010\u00ad\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0001\u0010\bR\u0016\u0010¯\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0001\u0010\bR\u0016\u0010±\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0001\u0010\bR\u0016\u0010³\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0001\u0010\bR\u0016\u0010µ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0001\u0010\bR\u0016\u0010·\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0001\u0010\bR\u0016\u0010¹\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0001\u0010\bR\u0016\u0010»\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0001\u0010\bR\u0016\u0010½\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0001\u0010\bR\u0016\u0010¿\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0001\u0010\bR\u0016\u0010Á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0001\u0010\bR\u0016\u0010Ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0001\u0010\bR\u0016\u0010Å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0001\u0010\bR\u0016\u0010Ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0001\u0010\bR\u0016\u0010É\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0001\u0010\bR\u0016\u0010Ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0001\u0010\bR\u0016\u0010Í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0001\u0010\bR\u0016\u0010Ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0001\u0010\bR\u0016\u0010Ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0001\u0010\bR\u0016\u0010Ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0001\u0010\bR\u0016\u0010Õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0001\u0010\bR\u0016\u0010×\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0001\u0010\bR\u0016\u0010Ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0001\u0010\bR\u0016\u0010Û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0001\u0010\bR\u0016\u0010Ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0001\u0010\bR\u0016\u0010ß\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0001\u0010\bR\u0016\u0010á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0001\u0010\bR\u0016\u0010ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0001\u0010\bR\u0016\u0010å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0001\u0010\bR\u0016\u0010ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0001\u0010\bR\u0016\u0010é\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0001\u0010\bR\u0016\u0010ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0001\u0010\bR\u0016\u0010í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0001\u0010\bR\u0016\u0010ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0001\u0010\bR\u0016\u0010ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0001\u0010\bR\u0016\u0010ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0001\u0010\bR\u0016\u0010õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0001\u0010\bR\u0016\u0010÷\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0001\u0010\bR\u0016\u0010ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0001\u0010\bR\u0016\u0010û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0001\u0010\bR\u0016\u0010ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0001\u0010\bR\u0016\u0010ÿ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0002\u0010\bR\u0016\u0010\u0081\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0002\u0010\bR\u0016\u0010\u0083\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0002\u0010\bR\u0016\u0010\u0085\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0002\u0010\bR\u0016\u0010\u0087\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0002\u0010\bR\u0016\u0010\u0089\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0002\u0010\bR\u0016\u0010\u008b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0002\u0010\bR\u0016\u0010\u008d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0002\u0010\bR\u0016\u0010\u008f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0002\u0010\bR\u0016\u0010\u0091\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0002\u0010\bR\u0016\u0010\u0093\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0002\u0010\bR\u0016\u0010\u0095\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0002\u0010\bR\u0016\u0010\u0097\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0002\u0010\bR\u0016\u0010\u0099\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0002\u0010\bR\u0016\u0010\u009b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0002\u0010\bR\u0016\u0010\u009d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0002\u0010\bR\u0016\u0010\u009f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0002\u0010\bR\u0016\u0010¡\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0002\u0010\bR\u0016\u0010£\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0002\u0010\bR\u0016\u0010¥\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0002\u0010\bR\u0016\u0010§\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0002\u0010\bR\u0016\u0010©\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0002\u0010\bR\u0016\u0010«\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0002\u0010\bR\u0016\u0010\u00ad\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0002\u0010\bR\u0016\u0010¯\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0002\u0010\bR\u0016\u0010±\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0002\u0010\bR\u0016\u0010³\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0002\u0010\bR\u0016\u0010µ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0002\u0010\bR\u0016\u0010·\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0002\u0010\bR\u0016\u0010¹\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0002\u0010\bR\u0016\u0010»\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0002\u0010\bR\u0016\u0010½\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0002\u0010\bR\u0016\u0010¿\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0002\u0010\bR\u0016\u0010Á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0002\u0010\bR\u0016\u0010Ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0002\u0010\bR\u0016\u0010Å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0002\u0010\bR\u0016\u0010Ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0002\u0010\bR\u0016\u0010É\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0002\u0010\bR\u0016\u0010Ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0002\u0010\bR\u0016\u0010Í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0002\u0010\bR\u0016\u0010Ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0002\u0010\bR\u0016\u0010Ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0002\u0010\bR\u0016\u0010Ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0002\u0010\bR\u0016\u0010Õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0002\u0010\bR\u0016\u0010×\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0002\u0010\bR\u0016\u0010Ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0002\u0010\bR\u0016\u0010Û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0002\u0010\bR\u0016\u0010Ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0002\u0010\bR\u0016\u0010ß\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0002\u0010\bR\u0016\u0010á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0002\u0010\bR\u0016\u0010ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0002\u0010\bR\u0016\u0010å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0002\u0010\bR\u0016\u0010ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0002\u0010\bR\u0016\u0010é\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0002\u0010\bR\u0016\u0010ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0002\u0010\bR\u0016\u0010í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0002\u0010\bR\u0016\u0010ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0002\u0010\bR\u0016\u0010ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0002\u0010\bR\u0016\u0010ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0002\u0010\bR\u0016\u0010õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0002\u0010\bR\u0016\u0010÷\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0002\u0010\bR\u0016\u0010ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0002\u0010\bR\u0016\u0010û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0002\u0010\bR\u0016\u0010ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0002\u0010\bR\u0016\u0010ÿ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0003\u0010\bR\u0016\u0010\u0081\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0003\u0010\bR\u0016\u0010\u0083\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0003\u0010\bR\u0016\u0010\u0085\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0003\u0010\bR\u0016\u0010\u0087\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0003\u0010\bR\u0016\u0010\u0089\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0003\u0010\bR\u0016\u0010\u008b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0003\u0010\bR\u0016\u0010\u008d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0003\u0010\bR\u0016\u0010\u008f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0003\u0010\bR\u0016\u0010\u0091\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0003\u0010\bR\u0016\u0010\u0093\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0003\u0010\bR\u0016\u0010\u0095\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0003\u0010\bR\u0016\u0010\u0097\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0003\u0010\bR\u0016\u0010\u0099\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0003\u0010\bR\u0016\u0010\u009b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0003\u0010\bR\u0016\u0010\u009d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0003\u0010\bR\u0016\u0010\u009f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0003\u0010\bR\u0016\u0010¡\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0003\u0010\bR\u0016\u0010£\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0003\u0010\bR\u0016\u0010¥\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0003\u0010\bR\u0016\u0010§\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0003\u0010\bR\u0016\u0010©\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0003\u0010\bR\u0016\u0010«\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0003\u0010\bR\u0016\u0010\u00ad\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0003\u0010\bR\u0016\u0010¯\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0003\u0010\bR\u0016\u0010±\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0003\u0010\bR\u0016\u0010³\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0003\u0010\bR\u0016\u0010µ\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0003\u0010\bR\u0016\u0010·\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0003\u0010\bR\u0016\u0010¹\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0003\u0010\bR\u0016\u0010»\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0003\u0010\bR\u0016\u0010½\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0003\u0010\bR\u0016\u0010¿\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0003\u0010\bR\u0016\u0010Á\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0003\u0010\bR\u0016\u0010Ã\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0003\u0010\bR\u0016\u0010Å\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0003\u0010\bR\u0016\u0010Ç\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0003\u0010\b¨\u0006Ï\u0003"}, d2 = {"Lcom/discord/theme/DarkTheme;", "Lcom/discord/theme/DiscordTheme;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "activityCardBackground", "", "getActivityCardBackground", "()I", "androidNavigationBarBackground", "getAndroidNavigationBarBackground", "androidNavigationScrimBackground", "getAndroidNavigationScrimBackground", "androidRipple", "getAndroidRipple", "backgroundAccent", "getBackgroundAccent", "backgroundFloating", "getBackgroundFloating", "backgroundMentioned", "getBackgroundMentioned", "backgroundMentionedHover", "getBackgroundMentionedHover", "backgroundMessageAutomod", "getBackgroundMessageAutomod", "backgroundMessageAutomodHover", "getBackgroundMessageAutomodHover", "backgroundMessageHighlight", "getBackgroundMessageHighlight", "backgroundMessageHighlightHover", "getBackgroundMessageHighlightHover", "backgroundMessageHover", "getBackgroundMessageHover", "backgroundMobilePrimary", "getBackgroundMobilePrimary", "backgroundMobileSecondary", "getBackgroundMobileSecondary", "backgroundModifierAccent", "getBackgroundModifierAccent", "backgroundModifierActive", "getBackgroundModifierActive", "backgroundModifierHover", "getBackgroundModifierHover", "backgroundModifierSelected", "getBackgroundModifierSelected", "backgroundNestedFloating", "getBackgroundNestedFloating", "backgroundPrimary", "getBackgroundPrimary", "backgroundSecondary", "getBackgroundSecondary", "backgroundSecondaryAlt", "getBackgroundSecondaryAlt", "backgroundTertiary", "getBackgroundTertiary", "black", "getBlack", "borderStrong", "getBorderStrong", "borderSubtle", "getBorderSubtle", "bugReporterModalSubmittingBackground", "getBugReporterModalSubmittingBackground", "buttonCreatorRevenueBackground", "getButtonCreatorRevenueBackground", "buttonDangerBackground", "getButtonDangerBackground", "buttonDangerBackgroundActive", "getButtonDangerBackgroundActive", "buttonDangerBackgroundDisabled", "getButtonDangerBackgroundDisabled", "buttonDangerBackgroundHover", "getButtonDangerBackgroundHover", "buttonOutlineBrandBackground", "getButtonOutlineBrandBackground", "buttonOutlineBrandBackgroundActive", "getButtonOutlineBrandBackgroundActive", "buttonOutlineBrandBackgroundHover", "getButtonOutlineBrandBackgroundHover", "buttonOutlineBrandBorder", "getButtonOutlineBrandBorder", "buttonOutlineBrandBorderActive", "getButtonOutlineBrandBorderActive", "buttonOutlineBrandBorderHover", "getButtonOutlineBrandBorderHover", "buttonOutlineBrandText", "getButtonOutlineBrandText", "buttonOutlineBrandTextActive", "getButtonOutlineBrandTextActive", "buttonOutlineBrandTextHover", "getButtonOutlineBrandTextHover", "buttonOutlineDangerBackground", "getButtonOutlineDangerBackground", "buttonOutlineDangerBackgroundActive", "getButtonOutlineDangerBackgroundActive", "buttonOutlineDangerBackgroundHover", "getButtonOutlineDangerBackgroundHover", "buttonOutlineDangerBorder", "getButtonOutlineDangerBorder", "buttonOutlineDangerBorderActive", "getButtonOutlineDangerBorderActive", "buttonOutlineDangerBorderHover", "getButtonOutlineDangerBorderHover", "buttonOutlineDangerText", "getButtonOutlineDangerText", "buttonOutlineDangerTextActive", "getButtonOutlineDangerTextActive", "buttonOutlineDangerTextHover", "getButtonOutlineDangerTextHover", "buttonOutlinePositiveBackground", "getButtonOutlinePositiveBackground", "buttonOutlinePositiveBackgroundActive", "getButtonOutlinePositiveBackgroundActive", "buttonOutlinePositiveBackgroundHover", "getButtonOutlinePositiveBackgroundHover", "buttonOutlinePositiveBorder", "getButtonOutlinePositiveBorder", "buttonOutlinePositiveBorderActive", "getButtonOutlinePositiveBorderActive", "buttonOutlinePositiveBorderHover", "getButtonOutlinePositiveBorderHover", "buttonOutlinePositiveText", "getButtonOutlinePositiveText", "buttonOutlinePositiveTextActive", "getButtonOutlinePositiveTextActive", "buttonOutlinePositiveTextHover", "getButtonOutlinePositiveTextHover", "buttonOutlinePrimaryBackground", "getButtonOutlinePrimaryBackground", "buttonOutlinePrimaryBackgroundActive", "getButtonOutlinePrimaryBackgroundActive", "buttonOutlinePrimaryBackgroundHover", "getButtonOutlinePrimaryBackgroundHover", "buttonOutlinePrimaryBorder", "getButtonOutlinePrimaryBorder", "buttonOutlinePrimaryBorderActive", "getButtonOutlinePrimaryBorderActive", "buttonOutlinePrimaryBorderHover", "getButtonOutlinePrimaryBorderHover", "buttonOutlinePrimaryText", "getButtonOutlinePrimaryText", "buttonOutlinePrimaryTextActive", "getButtonOutlinePrimaryTextActive", "buttonOutlinePrimaryTextHover", "getButtonOutlinePrimaryTextHover", "buttonPositiveBackground", "getButtonPositiveBackground", "buttonPositiveBackgroundActive", "getButtonPositiveBackgroundActive", "buttonPositiveBackgroundDisabled", "getButtonPositiveBackgroundDisabled", "buttonPositiveBackgroundHover", "getButtonPositiveBackgroundHover", "buttonSecondaryBackground", "getButtonSecondaryBackground", "buttonSecondaryBackgroundActive", "getButtonSecondaryBackgroundActive", "buttonSecondaryBackgroundDisabled", "getButtonSecondaryBackgroundDisabled", "buttonSecondaryBackgroundHover", "getButtonSecondaryBackgroundHover", "channelIcon", "getChannelIcon", "channelTextAreaPlaceholder", "getChannelTextAreaPlaceholder", "channelsDefault", "getChannelsDefault", "channeltextareaBackground", "getChanneltextareaBackground", "chatBackground", "getChatBackground", "chatBorder", "getChatBorder", "chatInputContainerBackground", "getChatInputContainerBackground", "controlBrandForeground", "getControlBrandForeground", "controlBrandForegroundNew", "getControlBrandForegroundNew", "creatorRevenueIconGradientEnd", "getCreatorRevenueIconGradientEnd", "creatorRevenueIconGradientStart", "getCreatorRevenueIconGradientStart", "creatorRevenueInfoBoxBackground", "getCreatorRevenueInfoBoxBackground", "creatorRevenueInfoBoxBorder", "getCreatorRevenueInfoBoxBorder", "creatorRevenueLockedChannelIcon", "getCreatorRevenueLockedChannelIcon", "creatorRevenueProgressBar", "getCreatorRevenueProgressBar", "deprecatedCardBg", "getDeprecatedCardBg", "deprecatedCardEditableBg", "getDeprecatedCardEditableBg", "deprecatedQuickswitcherInputBackground", "getDeprecatedQuickswitcherInputBackground", "deprecatedQuickswitcherInputPlaceholder", "getDeprecatedQuickswitcherInputPlaceholder", "deprecatedStoreBg", "getDeprecatedStoreBg", "deprecatedTextInputBg", "getDeprecatedTextInputBg", "deprecatedTextInputBorder", "getDeprecatedTextInputBorder", "deprecatedTextInputBorderDisabled", "getDeprecatedTextInputBorderDisabled", "deprecatedTextInputBorderHover", "getDeprecatedTextInputBorderHover", "deprecatedTextInputPrefix", "getDeprecatedTextInputPrefix", "displayBannerOverflowBackground", "getDisplayBannerOverflowBackground", "dividerStrong", "getDividerStrong", "dividerSubtle", "getDividerSubtle", "focusPrimary", "getFocusPrimary", "forumPostExtraMediaCountContainerBackground", "getForumPostExtraMediaCountContainerBackground", "forumPostTagBackground", "getForumPostTagBackground", "headerPrimary", "getHeaderPrimary", "headerSecondary", "getHeaderSecondary", "homeBackground", "getHomeBackground", "homeCardRestingBorder", "getHomeCardRestingBorder", "infoBoxBackground", "getInfoBoxBackground", "infoDangerBackground", "getInfoDangerBackground", "infoDangerForeground", "getInfoDangerForeground", "infoDangerText", "getInfoDangerText", "infoHelpBackground", "getInfoHelpBackground", "infoHelpForeground", "getInfoHelpForeground", "infoHelpText", "getInfoHelpText", "infoPositiveBackground", "getInfoPositiveBackground", "infoPositiveForeground", "getInfoPositiveForeground", "infoPositiveText", "getInfoPositiveText", "infoWarningBackground", "getInfoWarningBackground", "infoWarningForeground", "getInfoWarningForeground", "infoWarningText", "getInfoWarningText", "inputBackground", "getInputBackground", "inputPlaceholderText", "getInputPlaceholderText", "interactiveActive", "getInteractiveActive", "interactiveHover", "getInteractiveHover", "interactiveMuted", "getInteractiveMuted", "interactiveNormal", "getInteractiveNormal", "liveStageTileBorder", "getLiveStageTileBorder", "logoPrimary", "getLogoPrimary", "mentionBackground", "getMentionBackground", "mentionForeground", "getMentionForeground", "modalBackground", "getModalBackground", "modalFooterBackground", "getModalFooterBackground", "profileGradientMessageInputBorder", "getProfileGradientMessageInputBorder", "profileGradientNoteBackground", "getProfileGradientNoteBackground", "profileGradientOverlay", "getProfileGradientOverlay", "profileGradientOverlaySyncedWithUserTheme", "getProfileGradientOverlaySyncedWithUserTheme", "profileGradientProfileBodyBackgroundHover", "getProfileGradientProfileBodyBackgroundHover", "profileGradientRolePillBackground", "getProfileGradientRolePillBackground", "profileGradientRolePillBorder", "getProfileGradientRolePillBorder", "profileGradientSectionBox", "getProfileGradientSectionBox", "redesignActivityCardBackground", "getRedesignActivityCardBackground", "redesignActivityCardBackgroundPressed", "getRedesignActivityCardBackgroundPressed", "redesignActivityCardBadgeIcon", "getRedesignActivityCardBadgeIcon", "redesignActivityCardBorder", "getRedesignActivityCardBorder", "redesignButtonDangerBackground", "getRedesignButtonDangerBackground", "redesignButtonDangerPressedBackground", "getRedesignButtonDangerPressedBackground", "redesignButtonDangerText", "getRedesignButtonDangerText", "redesignButtonOverlayAlphaBackground", "getRedesignButtonOverlayAlphaBackground", "redesignButtonOverlayAlphaPressedBackground", "getRedesignButtonOverlayAlphaPressedBackground", "redesignButtonOverlayAlphaText", "getRedesignButtonOverlayAlphaText", "redesignButtonOverlayBackground", "getRedesignButtonOverlayBackground", "redesignButtonOverlayPressedBackground", "getRedesignButtonOverlayPressedBackground", "redesignButtonOverlayText", "getRedesignButtonOverlayText", "redesignButtonPositiveBackground", "getRedesignButtonPositiveBackground", "redesignButtonPositivePressedBackground", "getRedesignButtonPositivePressedBackground", "redesignButtonPositiveText", "getRedesignButtonPositiveText", "redesignButtonPrimaryAltBackground", "getRedesignButtonPrimaryAltBackground", "redesignButtonPrimaryAltBorder", "getRedesignButtonPrimaryAltBorder", "redesignButtonPrimaryAltOnBlurpleBackground", "getRedesignButtonPrimaryAltOnBlurpleBackground", "redesignButtonPrimaryAltOnBlurpleBorder", "getRedesignButtonPrimaryAltOnBlurpleBorder", "redesignButtonPrimaryAltOnBlurplePressedBackground", "getRedesignButtonPrimaryAltOnBlurplePressedBackground", "redesignButtonPrimaryAltOnBlurplePressedBorder", "getRedesignButtonPrimaryAltOnBlurplePressedBorder", "redesignButtonPrimaryAltOnBlurpleText", "getRedesignButtonPrimaryAltOnBlurpleText", "redesignButtonPrimaryAltPressedBackground", "getRedesignButtonPrimaryAltPressedBackground", "redesignButtonPrimaryAltPressedBorder", "getRedesignButtonPrimaryAltPressedBorder", "redesignButtonPrimaryAltPressedText", "getRedesignButtonPrimaryAltPressedText", "redesignButtonPrimaryAltText", "getRedesignButtonPrimaryAltText", "redesignButtonPrimaryBackground", "getRedesignButtonPrimaryBackground", "redesignButtonPrimaryOnBlurpleBackground", "getRedesignButtonPrimaryOnBlurpleBackground", "redesignButtonPrimaryOnBlurplePressedBackground", "getRedesignButtonPrimaryOnBlurplePressedBackground", "redesignButtonPrimaryOnBlurplePressedText", "getRedesignButtonPrimaryOnBlurplePressedText", "redesignButtonPrimaryOnBlurpleText", "getRedesignButtonPrimaryOnBlurpleText", "redesignButtonPrimaryPressedBackground", "getRedesignButtonPrimaryPressedBackground", "redesignButtonPrimaryText", "getRedesignButtonPrimaryText", "redesignButtonSecondaryAltBackground", "getRedesignButtonSecondaryAltBackground", "redesignButtonSecondaryAltPressedBackground", "getRedesignButtonSecondaryAltPressedBackground", "redesignButtonSecondaryAltText", "getRedesignButtonSecondaryAltText", "redesignButtonSecondaryBackground", "getRedesignButtonSecondaryBackground", "redesignButtonSecondaryBorder", "getRedesignButtonSecondaryBorder", "redesignButtonSecondaryPressedBackground", "getRedesignButtonSecondaryPressedBackground", "redesignButtonSecondaryPressedBorder", "getRedesignButtonSecondaryPressedBorder", "redesignButtonSecondaryText", "getRedesignButtonSecondaryText", "redesignInputControlSelected", "getRedesignInputControlSelected", "redesignOnlyBackgroundActive", "getRedesignOnlyBackgroundActive", "redesignOnlyBackgroundDefault", "getRedesignOnlyBackgroundDefault", "redesignOnlyBackgroundOverlay", "getRedesignOnlyBackgroundOverlay", "redesignOnlyBackgroundRaised", "getRedesignOnlyBackgroundRaised", "redesignOnlyBackgroundSunken", "getRedesignOnlyBackgroundSunken", "scrollbarAutoScrollbarColorThumb", "getScrollbarAutoScrollbarColorThumb", "scrollbarAutoScrollbarColorTrack", "getScrollbarAutoScrollbarColorTrack", "scrollbarAutoThumb", "getScrollbarAutoThumb", "scrollbarAutoTrack", "getScrollbarAutoTrack", "scrollbarThinThumb", "getScrollbarThinThumb", "scrollbarThinTrack", "getScrollbarThinTrack", "spoilerHiddenBackground", "getSpoilerHiddenBackground", "spoilerRevealedBackground", "getSpoilerRevealedBackground", "statusDanger", "getStatusDanger", "statusDangerBackground", "getStatusDangerBackground", "statusDangerText", "getStatusDangerText", "statusDnd", "getStatusDnd", "statusIdle", "getStatusIdle", "statusOffline", "getStatusOffline", "statusOnline", "getStatusOnline", "statusPositive", "getStatusPositive", "statusPositiveBackground", "getStatusPositiveBackground", "statusPositiveText", "getStatusPositiveText", "statusWarning", "getStatusWarning", "statusWarningBackground", "getStatusWarningBackground", "statusWarningText", "getStatusWarningText", "textBrand", "getTextBrand", "textDanger", "getTextDanger", "textLink", "getTextLink", "textLinkLowSaturation", "getTextLinkLowSaturation", "textMuted", "getTextMuted", "textNormal", "getTextNormal", "textPositive", "getTextPositive", "textWarning", "getTextWarning", "textboxMarkdownSyntax", "getTextboxMarkdownSyntax", "userProfileHeaderOverflowBackground", "getUserProfileHeaderOverflowBackground", "white", "getWhite", "getColor", "lightColor", "darkColor", "getColorRes", "lightColorRes", "darkColorRes", "theme_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+
 public final class DarkTheme extends DiscordTheme {
     private final int activityCardBackground;
     private final int androidNavigationBarBackground;
@@ -234,7 +234,7 @@ public final class DarkTheme extends DiscordTheme {
     private final int userProfileHeaderOverflowBackground;
     private final int white;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public DarkTheme(Context context) {
         super(null);
         q.g(context, "context");
@@ -496,1137 +496,1137 @@ public final class DarkTheme extends DiscordTheme {
         this.white = ColorUtilsKt.getColorCompat(context, i21);
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getActivityCardBackground() {
         return this.activityCardBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getAndroidNavigationBarBackground() {
         return this.androidNavigationBarBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getAndroidNavigationScrimBackground() {
         return this.androidNavigationScrimBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getAndroidRipple() {
         return this.androidRipple;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundAccent() {
         return this.backgroundAccent;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundFloating() {
         return this.backgroundFloating;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMentioned() {
         return this.backgroundMentioned;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMentionedHover() {
         return this.backgroundMentionedHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMessageAutomod() {
         return this.backgroundMessageAutomod;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMessageAutomodHover() {
         return this.backgroundMessageAutomodHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMessageHighlight() {
         return this.backgroundMessageHighlight;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMessageHighlightHover() {
         return this.backgroundMessageHighlightHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMessageHover() {
         return this.backgroundMessageHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMobilePrimary() {
         return this.backgroundMobilePrimary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundMobileSecondary() {
         return this.backgroundMobileSecondary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundModifierAccent() {
         return this.backgroundModifierAccent;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundModifierActive() {
         return this.backgroundModifierActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundModifierHover() {
         return this.backgroundModifierHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundModifierSelected() {
         return this.backgroundModifierSelected;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundNestedFloating() {
         return this.backgroundNestedFloating;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundPrimary() {
         return this.backgroundPrimary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundSecondary() {
         return this.backgroundSecondary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundSecondaryAlt() {
         return this.backgroundSecondaryAlt;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBackgroundTertiary() {
         return this.backgroundTertiary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBlack() {
         return this.black;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBorderStrong() {
         return this.borderStrong;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBorderSubtle() {
         return this.borderSubtle;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getBugReporterModalSubmittingBackground() {
         return this.bugReporterModalSubmittingBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonCreatorRevenueBackground() {
         return this.buttonCreatorRevenueBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonDangerBackground() {
         return this.buttonDangerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonDangerBackgroundActive() {
         return this.buttonDangerBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonDangerBackgroundDisabled() {
         return this.buttonDangerBackgroundDisabled;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonDangerBackgroundHover() {
         return this.buttonDangerBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBackground() {
         return this.buttonOutlineBrandBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBackgroundActive() {
         return this.buttonOutlineBrandBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBackgroundHover() {
         return this.buttonOutlineBrandBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBorder() {
         return this.buttonOutlineBrandBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBorderActive() {
         return this.buttonOutlineBrandBorderActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandBorderHover() {
         return this.buttonOutlineBrandBorderHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandText() {
         return this.buttonOutlineBrandText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandTextActive() {
         return this.buttonOutlineBrandTextActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineBrandTextHover() {
         return this.buttonOutlineBrandTextHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBackground() {
         return this.buttonOutlineDangerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBackgroundActive() {
         return this.buttonOutlineDangerBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBackgroundHover() {
         return this.buttonOutlineDangerBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBorder() {
         return this.buttonOutlineDangerBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBorderActive() {
         return this.buttonOutlineDangerBorderActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerBorderHover() {
         return this.buttonOutlineDangerBorderHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerText() {
         return this.buttonOutlineDangerText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerTextActive() {
         return this.buttonOutlineDangerTextActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlineDangerTextHover() {
         return this.buttonOutlineDangerTextHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBackground() {
         return this.buttonOutlinePositiveBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBackgroundActive() {
         return this.buttonOutlinePositiveBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBackgroundHover() {
         return this.buttonOutlinePositiveBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBorder() {
         return this.buttonOutlinePositiveBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBorderActive() {
         return this.buttonOutlinePositiveBorderActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveBorderHover() {
         return this.buttonOutlinePositiveBorderHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveText() {
         return this.buttonOutlinePositiveText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveTextActive() {
         return this.buttonOutlinePositiveTextActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePositiveTextHover() {
         return this.buttonOutlinePositiveTextHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBackground() {
         return this.buttonOutlinePrimaryBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBackgroundActive() {
         return this.buttonOutlinePrimaryBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBackgroundHover() {
         return this.buttonOutlinePrimaryBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBorder() {
         return this.buttonOutlinePrimaryBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBorderActive() {
         return this.buttonOutlinePrimaryBorderActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryBorderHover() {
         return this.buttonOutlinePrimaryBorderHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryText() {
         return this.buttonOutlinePrimaryText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryTextActive() {
         return this.buttonOutlinePrimaryTextActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonOutlinePrimaryTextHover() {
         return this.buttonOutlinePrimaryTextHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonPositiveBackground() {
         return this.buttonPositiveBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonPositiveBackgroundActive() {
         return this.buttonPositiveBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonPositiveBackgroundDisabled() {
         return this.buttonPositiveBackgroundDisabled;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonPositiveBackgroundHover() {
         return this.buttonPositiveBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonSecondaryBackground() {
         return this.buttonSecondaryBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonSecondaryBackgroundActive() {
         return this.buttonSecondaryBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonSecondaryBackgroundDisabled() {
         return this.buttonSecondaryBackgroundDisabled;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getButtonSecondaryBackgroundHover() {
         return this.buttonSecondaryBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChannelIcon() {
         return this.channelIcon;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChannelTextAreaPlaceholder() {
         return this.channelTextAreaPlaceholder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChannelsDefault() {
         return this.channelsDefault;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChanneltextareaBackground() {
         return this.channeltextareaBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChatBackground() {
         return this.chatBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChatBorder() {
         return this.chatBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getChatInputContainerBackground() {
         return this.chatInputContainerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getColor(int i10, int i11) {
         return i11;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getColorRes(int i10, int i11) {
         return i11;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getControlBrandForeground() {
         return this.controlBrandForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getControlBrandForegroundNew() {
         return this.controlBrandForegroundNew;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueIconGradientEnd() {
         return this.creatorRevenueIconGradientEnd;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueIconGradientStart() {
         return this.creatorRevenueIconGradientStart;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueInfoBoxBackground() {
         return this.creatorRevenueInfoBoxBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueInfoBoxBorder() {
         return this.creatorRevenueInfoBoxBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueLockedChannelIcon() {
         return this.creatorRevenueLockedChannelIcon;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getCreatorRevenueProgressBar() {
         return this.creatorRevenueProgressBar;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedCardBg() {
         return this.deprecatedCardBg;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedCardEditableBg() {
         return this.deprecatedCardEditableBg;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedQuickswitcherInputBackground() {
         return this.deprecatedQuickswitcherInputBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedQuickswitcherInputPlaceholder() {
         return this.deprecatedQuickswitcherInputPlaceholder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedStoreBg() {
         return this.deprecatedStoreBg;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedTextInputBg() {
         return this.deprecatedTextInputBg;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedTextInputBorder() {
         return this.deprecatedTextInputBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedTextInputBorderDisabled() {
         return this.deprecatedTextInputBorderDisabled;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedTextInputBorderHover() {
         return this.deprecatedTextInputBorderHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDeprecatedTextInputPrefix() {
         return this.deprecatedTextInputPrefix;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDisplayBannerOverflowBackground() {
         return this.displayBannerOverflowBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDividerStrong() {
         return this.dividerStrong;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getDividerSubtle() {
         return this.dividerSubtle;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getFocusPrimary() {
         return this.focusPrimary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getForumPostExtraMediaCountContainerBackground() {
         return this.forumPostExtraMediaCountContainerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getForumPostTagBackground() {
         return this.forumPostTagBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getHeaderPrimary() {
         return this.headerPrimary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getHeaderSecondary() {
         return this.headerSecondary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getHomeBackground() {
         return this.homeBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getHomeCardRestingBorder() {
         return this.homeCardRestingBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoBoxBackground() {
         return this.infoBoxBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoDangerBackground() {
         return this.infoDangerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoDangerForeground() {
         return this.infoDangerForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoDangerText() {
         return this.infoDangerText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoHelpBackground() {
         return this.infoHelpBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoHelpForeground() {
         return this.infoHelpForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoHelpText() {
         return this.infoHelpText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoPositiveBackground() {
         return this.infoPositiveBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoPositiveForeground() {
         return this.infoPositiveForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoPositiveText() {
         return this.infoPositiveText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoWarningBackground() {
         return this.infoWarningBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoWarningForeground() {
         return this.infoWarningForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInfoWarningText() {
         return this.infoWarningText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInputBackground() {
         return this.inputBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInputPlaceholderText() {
         return this.inputPlaceholderText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInteractiveActive() {
         return this.interactiveActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInteractiveHover() {
         return this.interactiveHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInteractiveMuted() {
         return this.interactiveMuted;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getInteractiveNormal() {
         return this.interactiveNormal;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getLiveStageTileBorder() {
         return this.liveStageTileBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getLogoPrimary() {
         return this.logoPrimary;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getMentionBackground() {
         return this.mentionBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getMentionForeground() {
         return this.mentionForeground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getModalBackground() {
         return this.modalBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getModalFooterBackground() {
         return this.modalFooterBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientMessageInputBorder() {
         return this.profileGradientMessageInputBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientNoteBackground() {
         return this.profileGradientNoteBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientOverlay() {
         return this.profileGradientOverlay;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientOverlaySyncedWithUserTheme() {
         return this.profileGradientOverlaySyncedWithUserTheme;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientProfileBodyBackgroundHover() {
         return this.profileGradientProfileBodyBackgroundHover;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientRolePillBackground() {
         return this.profileGradientRolePillBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientRolePillBorder() {
         return this.profileGradientRolePillBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getProfileGradientSectionBox() {
         return this.profileGradientSectionBox;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignActivityCardBackground() {
         return this.redesignActivityCardBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignActivityCardBackgroundPressed() {
         return this.redesignActivityCardBackgroundPressed;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignActivityCardBadgeIcon() {
         return this.redesignActivityCardBadgeIcon;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignActivityCardBorder() {
         return this.redesignActivityCardBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonDangerBackground() {
         return this.redesignButtonDangerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonDangerPressedBackground() {
         return this.redesignButtonDangerPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonDangerText() {
         return this.redesignButtonDangerText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayAlphaBackground() {
         return this.redesignButtonOverlayAlphaBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayAlphaPressedBackground() {
         return this.redesignButtonOverlayAlphaPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayAlphaText() {
         return this.redesignButtonOverlayAlphaText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayBackground() {
         return this.redesignButtonOverlayBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayPressedBackground() {
         return this.redesignButtonOverlayPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonOverlayText() {
         return this.redesignButtonOverlayText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPositiveBackground() {
         return this.redesignButtonPositiveBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPositivePressedBackground() {
         return this.redesignButtonPositivePressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPositiveText() {
         return this.redesignButtonPositiveText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltBackground() {
         return this.redesignButtonPrimaryAltBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltBorder() {
         return this.redesignButtonPrimaryAltBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltOnBlurpleBackground() {
         return this.redesignButtonPrimaryAltOnBlurpleBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltOnBlurpleBorder() {
         return this.redesignButtonPrimaryAltOnBlurpleBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltOnBlurplePressedBackground() {
         return this.redesignButtonPrimaryAltOnBlurplePressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltOnBlurplePressedBorder() {
         return this.redesignButtonPrimaryAltOnBlurplePressedBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltOnBlurpleText() {
         return this.redesignButtonPrimaryAltOnBlurpleText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltPressedBackground() {
         return this.redesignButtonPrimaryAltPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltPressedBorder() {
         return this.redesignButtonPrimaryAltPressedBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltPressedText() {
         return this.redesignButtonPrimaryAltPressedText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryAltText() {
         return this.redesignButtonPrimaryAltText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryBackground() {
         return this.redesignButtonPrimaryBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryOnBlurpleBackground() {
         return this.redesignButtonPrimaryOnBlurpleBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryOnBlurplePressedBackground() {
         return this.redesignButtonPrimaryOnBlurplePressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryOnBlurplePressedText() {
         return this.redesignButtonPrimaryOnBlurplePressedText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryOnBlurpleText() {
         return this.redesignButtonPrimaryOnBlurpleText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryPressedBackground() {
         return this.redesignButtonPrimaryPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonPrimaryText() {
         return this.redesignButtonPrimaryText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryAltBackground() {
         return this.redesignButtonSecondaryAltBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryAltPressedBackground() {
         return this.redesignButtonSecondaryAltPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryAltText() {
         return this.redesignButtonSecondaryAltText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryBackground() {
         return this.redesignButtonSecondaryBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryBorder() {
         return this.redesignButtonSecondaryBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryPressedBackground() {
         return this.redesignButtonSecondaryPressedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryPressedBorder() {
         return this.redesignButtonSecondaryPressedBorder;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignButtonSecondaryText() {
         return this.redesignButtonSecondaryText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignInputControlSelected() {
         return this.redesignInputControlSelected;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignOnlyBackgroundActive() {
         return this.redesignOnlyBackgroundActive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignOnlyBackgroundDefault() {
         return this.redesignOnlyBackgroundDefault;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignOnlyBackgroundOverlay() {
         return this.redesignOnlyBackgroundOverlay;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignOnlyBackgroundRaised() {
         return this.redesignOnlyBackgroundRaised;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getRedesignOnlyBackgroundSunken() {
         return this.redesignOnlyBackgroundSunken;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarAutoScrollbarColorThumb() {
         return this.scrollbarAutoScrollbarColorThumb;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarAutoScrollbarColorTrack() {
         return this.scrollbarAutoScrollbarColorTrack;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarAutoThumb() {
         return this.scrollbarAutoThumb;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarAutoTrack() {
         return this.scrollbarAutoTrack;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarThinThumb() {
         return this.scrollbarThinThumb;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getScrollbarThinTrack() {
         return this.scrollbarThinTrack;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getSpoilerHiddenBackground() {
         return this.spoilerHiddenBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getSpoilerRevealedBackground() {
         return this.spoilerRevealedBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusDanger() {
         return this.statusDanger;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusDangerBackground() {
         return this.statusDangerBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusDangerText() {
         return this.statusDangerText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusDnd() {
         return this.statusDnd;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusIdle() {
         return this.statusIdle;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusOffline() {
         return this.statusOffline;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusOnline() {
         return this.statusOnline;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusPositive() {
         return this.statusPositive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusPositiveBackground() {
         return this.statusPositiveBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusPositiveText() {
         return this.statusPositiveText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusWarning() {
         return this.statusWarning;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusWarningBackground() {
         return this.statusWarningBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getStatusWarningText() {
         return this.statusWarningText;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextBrand() {
         return this.textBrand;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextDanger() {
         return this.textDanger;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextLink() {
         return this.textLink;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextLinkLowSaturation() {
         return this.textLinkLowSaturation;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextMuted() {
         return this.textMuted;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextNormal() {
         return this.textNormal;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextPositive() {
         return this.textPositive;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextWarning() {
         return this.textWarning;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getTextboxMarkdownSyntax() {
         return this.textboxMarkdownSyntax;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getUserProfileHeaderOverflowBackground() {
         return this.userProfileHeaderOverflowBackground;
     }
 
-    @Override // com.discord.theme.DiscordTheme
+    @Override 
     public int getWhite() {
         return this.white;
     }

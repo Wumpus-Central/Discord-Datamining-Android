@@ -22,7 +22,7 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.q;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0014\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002JJ\u0010\u0013\u001a,\u0012\u0004\u0012\u00020\u0015\u0012\"\u0012 \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u00170\u00160\u0014\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001cJ\u0098\u0001\u0010\u001d\u001a\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u0017\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001f20\u0010 \u001a,\u0012\u0004\u0012\u00020\u0015\u0012\"\u0012 \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u00170\u00160\u00142,\b\u0002\u0010!\u001a&\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180#\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u0002H\u001a\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u00190\"JQ\u0010%\u001a\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u0017\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001c2\u0012\u0010&\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00150'\"\u00020\u0015¢\u0006\u0002\u0010(J\u009b\u0001\u0010)\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u00170\u0016\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001c2$\u0010*\u001a \u0012\u001c\u0012\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u00170\u00162\f\u0010+\u001a\b\u0012\u0004\u0012\u00020\u00150'2\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00150'2\u0012\u0010-\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00150'\"\u00020\u0015H\u0002¢\u0006\u0002\u0010.JF\u0010/\u001a\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u0017\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001f2\f\u00100\u001a\b\u0012\u0004\u0012\u0002H\u00180\u001fJ\u0018\u00101\u001a\n 2*\u0004\u0018\u00010\b0\b2\u0006\u00103\u001a\u00020\u0015H\u0002J+\u00104\u001a\n 2*\u0004\u0018\u00010\b0\b2\u0012\u00105\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00150'\"\u00020\u0015H\u0000¢\u0006\u0004\b6\u00107JJ\u00108\u001a\u001a\u0012\u0004\u0012\u0002H\u0018\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00180\u0019\u0012\u0004\u0012\u0002H\u001a0\u0017\"\u0004\b\u0000\u0010\u0018\"\u0004\b\u0001\u0010\u001a*\u00020\b2\b\b\u0002\u00109\u001a\u00020\u00042\u0010\b\u0002\u0010:\u001a\n\u0012\u0004\u0012\u0002H\u0018\u0018\u00010\u001fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u000b\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\nR\u0011\u0010\r\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\nR\u0011\u0010\u000f\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\nR\u0011\u0010\u0011\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\n¨\u0006;"}, d2 = {"Lcom/discord/simpleast/code/CodeRules;", "", "()V", "CODE_BLOCK_BODY_GROUP", "", "CODE_BLOCK_LANGUAGE_GROUP", "CODE_BLOCK_WS_PREFIX", "PATTERN_CODE_BLOCK", "Ljava/util/regex/Pattern;", "getPATTERN_CODE_BLOCK", "()Ljava/util/regex/Pattern;", "PATTERN_CODE_INLINE", "getPATTERN_CODE_INLINE", "PATTERN_LEADING_WS_CONSUMER", "getPATTERN_LEADING_WS_CONSUMER", "PATTERN_NUMBERS", "getPATTERN_NUMBERS", "PATTERN_TEXT", "getPATTERN_TEXT", "createCodeLanguageMap", "", "", "", "Lcom/discord/simpleast/core/parser/Rule;", "R", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "createCodeRule", "textStyleProvider", "Lcom/discord/simpleast/core/node/StyleNode$SpanProvider;", "languageMap", "wrapperNodeProvider", "Lkotlin/Function3;", "Lcom/discord/simpleast/code/CodeNode;", "", "createDefinitionRule", "identifiers", "", "(Lcom/discord/simpleast/code/CodeStyleProviders;[Ljava/lang/String;)Lcom/discord/simpleast/core/parser/Rule;", "createGenericCodeRules", "additionalRules", "definitions", "builtIns", "keywords", "(Lcom/discord/simpleast/code/CodeStyleProviders;Ljava/util/List;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;", "createInlineCodeRule", "bgStyleProvider", "createSingleLineCommentPattern", "kotlin.jvm.PlatformType", "prefix", "createWordPattern", "words", "createWordPattern$simpleast_core_release", "([Ljava/lang/String;)Ljava/util/regex/Pattern;", "toMatchGroupRule", "group", "stylesProvider", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-/* loaded from: classes8.dex */
+
 public final class CodeRules {
     private static final int CODE_BLOCK_BODY_GROUP = 3;
     private static final int CODE_BLOCK_LANGUAGE_GROUP = 1;
@@ -55,7 +55,7 @@ public final class CodeRules {
     private CodeRules() {
     }
 
-    public static /* synthetic */ Rule createCodeRule$default(CodeRules codeRules, StyleNode.SpanProvider spanProvider, Map map, Function3 function3, int i10, Object obj) {
+    public static  Rule createCodeRule$default(CodeRules codeRules, StyleNode.SpanProvider spanProvider, Map map, Function3 function3, int i10, Object obj) {
         if ((i10 & 4) != 0) {
             function3 = CodeRules$createCodeRule$1.INSTANCE;
         }
@@ -78,7 +78,7 @@ public final class CodeRules {
         return Pattern.compile("^(?:" + str + ".*?(?=\\n|$))");
     }
 
-    public static /* synthetic */ Rule toMatchGroupRule$default(CodeRules codeRules, Pattern pattern, int i10, StyleNode.SpanProvider spanProvider, int i11, Object obj) {
+    public static  Rule toMatchGroupRule$default(CodeRules codeRules, Pattern pattern, int i10, StyleNode.SpanProvider spanProvider, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             i10 = 0;
         }
@@ -100,8 +100,8 @@ public final class CodeRules {
         String[] built_ins = kotlin2.getBUILT_INS();
         String[] keywords = kotlin2.getKEYWORDS();
         List<Rule<R, Node<R>, S>> createGenericCodeRules = createGenericCodeRules(codeStyleProviders, kotlin2.createKotlinCodeRules$simpleast_core_release(codeStyleProviders), new String[]{"object", "class", "interface"}, built_ins, (String[]) Arrays.copyOf(keywords, keywords.length));
-        Pattern createSingleLineCommentPattern = createSingleLineCommentPattern("//");
-        q.f(createSingleLineCommentPattern, "createSingleLineCommentPattern(\"//\")");
+        Pattern createSingleLineCommentPattern = createSingleLineCommentPattern("
+        q.f(createSingleLineCommentPattern, "createSingleLineCommentPattern(\"
         Pattern compile = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
         q.f(compile, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         k10 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null));
@@ -116,8 +116,8 @@ public final class CodeRules {
         q.f(compile4, "Pattern.compile(\"\"\"^@(\\w+)\"\"\")");
         k11 = j.k(toMatchGroupRule$default(this, createSingleLineCommentPattern2, 0, codeStyleProviders.getCommentStyleProvider(), 1, null), toMatchGroupRule$default(this, compile2, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile3, 0, codeStyleProviders.getLiteralStyleProvider(), 1, null), toMatchGroupRule$default(this, compile4, 0, codeStyleProviders.getGenericsStyleProvider(), 1, null));
         List<Rule<R, Node<R>, S>> createGenericCodeRules3 = createGenericCodeRules(codeStyleProviders, k11, new String[]{"class", "def", "lambda"}, new String[]{"True|False|None"}, "from|import|global|nonlocal", "async|await|class|self|cls|def|lambda", "for|while|if|else|elif|break|continue|return", "try|except|finally|raise|pass|yeild", "in|as|is|del", "and|or|not|assert");
-        Pattern createSingleLineCommentPattern3 = createSingleLineCommentPattern("//");
-        q.f(createSingleLineCommentPattern3, "createSingleLineCommentPattern(\"//\")");
+        Pattern createSingleLineCommentPattern3 = createSingleLineCommentPattern("
+        q.f(createSingleLineCommentPattern3, "createSingleLineCommentPattern(\"
         Pattern compile5 = Pattern.compile("^\"[\\s\\S]*?(?<!\\\\)\"(?=\\W|\\s|$)");
         q.f(compile5, "Pattern.compile(\"\"\"^\"[\\s…*?(?<!\\\\)\"(?=\\W|\\s|$)\"\"\")");
         Pattern compile6 = Pattern.compile("^#!?\\[.*?\\]\\n");
@@ -158,8 +158,8 @@ public final class CodeRules {
         q.g(languageMap, "languageMap");
         q.g(wrapperNodeProvider, "wrapperNodeProvider");
         final Pattern pattern = PATTERN_CODE_BLOCK;
-        return new Rule<R, Node<R>, S>(pattern) { // from class: com.discord.simpleast.code.CodeRules$createCodeRule$2
-            @Override // com.discord.simpleast.core.parser.Rule
+        return new Rule<R, Node<R>, S>(pattern) { 
+            @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 CodeNode.Content content;
                 q.g(matcher, "matcher");
@@ -204,8 +204,8 @@ public final class CodeRules {
         sb2.append(")(\\s+\\w+)");
         final Pattern compile = Pattern.compile(sb2.toString());
         q.f(compile, "Pattern.compile(\"\"\"^\\b($…String(\"|\")})(\\s+\\w+)\"\"\")");
-        return new Rule<R, Node<R>, S>(compile) { // from class: com.discord.simpleast.code.CodeRules$createDefinitionRule$1
-            @Override // com.discord.simpleast.core.parser.Rule
+        return new Rule<R, Node<R>, S>(compile) { 
+            @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 q.g(matcher, "matcher");
                 q.g(parser, "parser");
@@ -257,8 +257,8 @@ public final class CodeRules {
 
     public final <R, S> Rule<R, Node<R>, S> toMatchGroupRule(final Pattern toMatchGroupRule, final int i10, final StyleNode.SpanProvider<R> spanProvider) {
         q.g(toMatchGroupRule, "$this$toMatchGroupRule");
-        return new Rule<R, Node<R>, S>(toMatchGroupRule) { // from class: com.discord.simpleast.code.CodeRules$toMatchGroupRule$1
-            @Override // com.discord.simpleast.core.parser.Rule
+        return new Rule<R, Node<R>, S>(toMatchGroupRule) { 
+            @Override 
             public ParseSpec<R, S> parse(Matcher matcher, Parser<R, ? super Node<R>, S> parser, S s10) {
                 Object obj;
                 q.g(matcher, "matcher");

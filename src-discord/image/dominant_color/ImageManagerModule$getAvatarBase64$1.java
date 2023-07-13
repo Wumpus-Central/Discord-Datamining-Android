@@ -10,24 +10,24 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.s;
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
-final class ImageManagerModule$getAvatarBase64$1 extends s implements Function1<Bitmap, Unit> {
-    final /* synthetic */ Promise $promise;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class ImageManagerModule$getAvatarBase64$1 extends s implements Function1<Bitmap, Unit> {
+    final  Promise $promise;
+
+    
+    
     public ImageManagerModule$getAvatarBase64$1(Promise promise) {
         super(1);
         this.$promise = promise;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(Bitmap bitmap) {
+    @Override 
+    public   Unit invoke(Bitmap bitmap) {
         invoke2(bitmap);
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke  reason: avoid collision after fix types in other method */
+    
     public final void invoke2(Bitmap bitmap) {
         if (bitmap != null) {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();

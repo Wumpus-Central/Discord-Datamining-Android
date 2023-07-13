@@ -11,7 +11,7 @@ import com.facebook.drawee.span.SimpleDraweeSpanTextView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class PostPreviewEmbedViewBinding {
     public final SimpleDraweeView backgroundImage;
     public final SimpleDraweeView coverImage;

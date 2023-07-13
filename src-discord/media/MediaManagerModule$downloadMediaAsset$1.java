@@ -21,15 +21,15 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.MediaManagerModule$downloadMediaAsset$1", f = "MediaManagerModule.kt", l = {109}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
-final class MediaManagerModule$downloadMediaAsset$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ Promise $promise;
-    final /* synthetic */ String $uri;
-    int label;
-    final /* synthetic */ MediaManagerModule this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class MediaManagerModule$downloadMediaAsset$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  Promise $promise;
+    final  String $uri;
+    int label;
+    final  MediaManagerModule this$0;
+
+    
+    
     public MediaManagerModule$downloadMediaAsset$1(MediaManagerModule mediaManagerModule, String str, Promise promise, Continuation<? super MediaManagerModule$downloadMediaAsset$1> continuation) {
         super(2, continuation);
         this.this$0 = mediaManagerModule;
@@ -37,7 +37,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
         this.$promise = promise;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new MediaManagerModule$downloadMediaAsset$1(this.this$0, this.$uri, this.$promise, continuation);
     }
@@ -46,7 +46,7 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
         return ((MediaManagerModule$downloadMediaAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         ReactApplicationContext reactApplicationContext;
@@ -62,9 +62,9 @@ final class MediaManagerModule$downloadMediaAsset$1 extends k implements Functio
             q.f(guessFileName, "guessFileName(uri, null, null)");
             Flow downloadFile$default = PublicFileDownloader.downloadFile$default(publicFileDownloader, reactApplicationContext, str, guessFileName, null, 8, null);
             final Promise promise = this.$promise;
-            FlowCollector flowCollector = new FlowCollector() { // from class: com.discord.media.MediaManagerModule$downloadMediaAsset$1.1
-                @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+            FlowCollector flowCollector = new FlowCollector() { 
+                @Override 
+                public   Object emit(Object obj2, Continuation continuation) {
                     return emit((DownloadState) obj2, (Continuation<? super Unit>) continuation);
                 }
 

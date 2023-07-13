@@ -16,7 +16,7 @@ import kotlin.Pair;
 import kotlin.jvm.internal.q;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0014B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\r\u001a\u001a\u0012\u0004\u0012\u0002H\u000f\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000f0\u0010\u0012\u0004\u0012\u0002H\u00110\u000e\"\u0004\b\u0000\u0010\u000f\"\u0004\b\u0001\u0010\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u0002H\u000f0\u0013R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0015"}, d2 = {"Lcom/discord/simpleast/code/Xml;", "", "()V", "PATTERN_XML_COMMENT", "Ljava/util/regex/Pattern;", "getPATTERN_XML_COMMENT", "()Ljava/util/regex/Pattern;", "PATTERN_XML_TAG", "getPATTERN_XML_TAG", "PATTERN_XML_TAG_CLOSING_GROUP", "", "PATTERN_XML_TAG_CONTENT_GROUP", "PATTERN_XML_TAG_OPENING_GROUP", "createTagRule", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "TagNode", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-/* loaded from: classes8.dex */
+
 public final class Xml {
     public static final Xml INSTANCE = new Xml();
     private static final Pattern PATTERN_XML_COMMENT;
@@ -26,13 +26,13 @@ public final class Xml {
     public static final int PATTERN_XML_TAG_OPENING_GROUP = 1;
 
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B%\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u0007¢\u0006\u0002\u0010\bJ\u001d\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0011R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\n¨\u0006\u0012"}, d2 = {"Lcom/discord/simpleast/code/Xml$TagNode;", "RC", "Lcom/discord/simpleast/core/node/Node$Parent;", "opening", "", "closing", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/simpleast/code/CodeStyleProviders;)V", "getClosing", "()Ljava/lang/String;", "getOpening", "render", "", "builder", "Landroid/text/SpannableStringBuilder;", "renderContext", "(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
-    /* loaded from: classes8.dex */
+    
     public static final class TagNode<RC> extends Node.Parent<RC> {
         private final String closing;
         private final CodeStyleProviders<RC> codeStyleProviders;
         private final String opening;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         public TagNode(String opening, String str, CodeStyleProviders<RC> codeStyleProviders) {
             super(new Node[0]);
             q.g(opening, "opening");
@@ -50,7 +50,7 @@ public final class Xml {
             return this.opening;
         }
 
-        @Override // com.discord.simpleast.core.node.Node.Parent, com.discord.simpleast.core.node.Node
+        @Override 
         public void render(SpannableStringBuilder builder, RC rc2) {
             Pair pair;
             boolean c10;
@@ -145,8 +145,8 @@ public final class Xml {
     public final <RC, S> Rule<RC, Node<RC>, S> createTagRule(final CodeStyleProviders<RC> codeStyleProviders) {
         q.g(codeStyleProviders, "codeStyleProviders");
         final Pattern pattern = PATTERN_XML_TAG;
-        return new Rule<RC, Node<RC>, S>(pattern) { // from class: com.discord.simpleast.code.Xml$createTagRule$1
-            @Override // com.discord.simpleast.core.parser.Rule
+        return new Rule<RC, Node<RC>, S>(pattern) { 
+            @Override 
             public ParseSpec<RC, S> parse(Matcher matcher, Parser<RC, ? super Node<RC>, S> parser, S s10) {
                 q.g(matcher, "matcher");
                 q.g(parser, "parser");

@@ -9,7 +9,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000.\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u001c\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0000\u001a$\u0010\u0007\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\tH\u0000\u001a\u0014\u0010\n\u001a\n \f*\u0004\u0018\u00010\u000b0\u000b*\u00020\u0002H\u0002\u001a\u0014\u0010\r\u001a\n \f*\u0004\u0018\u00010\u000e0\u000e*\u00020\u0002H\u0002¨\u0006\u000f"}, d2 = {"emitReactNativeEvent", "", "Landroid/content/Context;", "eventName", "", "serializedEvent", "Lcom/facebook/react/bridge/WritableMap;", "emitReactNativeViewEvent", "targetTag", "", "getEventEmitter", "Lcom/facebook/react/modules/core/DeviceEventManagerModule$RCTDeviceEventEmitter;", "kotlin.jvm.PlatformType", "getViewEventEmitter", "Lcom/facebook/react/uimanager/events/RCTEventEmitter;", "react_events_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
+
 public final class EventEmitterUtilsKt {
     public static final void emitReactNativeEvent(Context context, String eventName, WritableMap serializedEvent) {
         q.g(context, "<this>");

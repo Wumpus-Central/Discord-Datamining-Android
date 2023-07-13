@@ -31,34 +31,34 @@ import kotlinx.coroutines.CoroutineScope;
 import lf.c;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1", f = "BillingManager.kt", l = {294}, m = "invokeSuspend")
-/* loaded from: classes.dex */
-public final class BillingManager$getSkusWithRetry$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ ExponentialBackoff $getSkusBackoff;
-    final /* synthetic */ Function1<Exception, Unit> $onError;
-    final /* synthetic */ Promise $reactPromise;
-    final /* synthetic */ List<String> $skuIds;
-    final /* synthetic */ SkuType $skuType;
-    int label;
-    final /* synthetic */ BillingManager this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+public final class BillingManager$getSkusWithRetry$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  ExponentialBackoff $getSkusBackoff;
+    final  Function1<Exception, Unit> $onError;
+    final  Promise $reactPromise;
+    final  List<String> $skuIds;
+    final  SkuType $skuType;
+    int label;
+    final  BillingManager this$0;
+
+    
     @Metadata(d1 = {"\u0000\u0006\n\u0002\u0018\u0002\n\u0000\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"Lcom/discord/billing/BillingManager$SkuDetailsResponse;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1$1", f = "BillingManager.kt", l = {296}, m = "invokeSuspend")
-    /* renamed from: com.discord.billing.BillingManager$getSkusWithRetry$1$1  reason: invalid class name */
-    /* loaded from: classes.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function1<Continuation<? super BillingManager.SkuDetailsResponse>, Object> {
-        final /* synthetic */ List<String> $skuIds;
-        final /* synthetic */ SkuType $skuType;
+        final  List<String> $skuIds;
+        final  SkuType $skuType;
         Object L$0;
         Object L$1;
         Object L$2;
         int label;
-        final /* synthetic */ BillingManager this$0;
+        final  BillingManager this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass1(BillingManager billingManager, SkuType skuType, List<String> list, Continuation<? super AnonymousClass1> continuation) {
             super(1, continuation);
             this.this$0 = billingManager;
@@ -66,7 +66,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
             this.$skuIds = list;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, this.$skuType, this.$skuIds, continuation);
         }
@@ -75,7 +75,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
             return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             Continuation c10;
@@ -99,8 +99,8 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
                     q.y("billingClient");
                     billingClient = null;
                 }
-                billingClient.i(SkuDetailsParams.INSTANCE.create(skuType, list), new t1.g() { // from class: com.discord.billing.BillingManager$getSkusWithRetry$1$1$1$1
-                    @Override // t1.g
+                billingClient.i(SkuDetailsParams.INSTANCE.create(skuType, list), new t1.g() { 
+                    @Override 
                     public final void onSkuDetailsResponse(BillingResult billingResult, List<SkuDetails> list2) {
                         boolean z10;
                         q.g(billingResult, "billingResult");
@@ -135,23 +135,23 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"Lcom/discord/billing/BillingManager$SkuDetailsResponse;", "skuDetailsResponse", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.billing.BillingManager$getSkusWithRetry$1$2", f = "BillingManager.kt", l = {}, m = "invokeSuspend")
-    /* renamed from: com.discord.billing.BillingManager$getSkusWithRetry$1$2  reason: invalid class name */
-    /* loaded from: classes.dex */
+    
+    
     public static final class AnonymousClass2 extends k implements Function2<BillingManager.SkuDetailsResponse, Continuation<? super Boolean>, Object> {
-        /* synthetic */ Object L$0;
+         Object L$0;
         int label;
-        final /* synthetic */ BillingManager this$0;
+        final  BillingManager this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         AnonymousClass2(BillingManager billingManager, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.this$0 = billingManager;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             AnonymousClass2 r02 = new AnonymousClass2(this.this$0, continuation);
             r02.L$0 = obj;
@@ -162,7 +162,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
             return ((AnonymousClass2) create(skuDetailsResponse, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             boolean isRetryableError;
             d.d();
@@ -175,9 +175,9 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    
+    
+    
     public BillingManager$getSkusWithRetry$1(ExponentialBackoff exponentialBackoff, BillingManager billingManager, Function1<? super Exception, Unit> function1, Promise promise, SkuType skuType, List<String> list, Continuation<? super BillingManager$getSkusWithRetry$1> continuation) {
         super(2, continuation);
         this.$getSkusBackoff = exponentialBackoff;
@@ -188,7 +188,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         this.$skuIds = list;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new BillingManager$getSkusWithRetry$1(this.$getSkusBackoff, this.this$0, this.$onError, this.$reactPromise, this.$skuType, this.$skuIds, continuation);
     }
@@ -197,7 +197,7 @@ public final class BillingManager$getSkusWithRetry$1 extends k implements Functi
         return ((BillingManager$getSkusWithRetry$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         boolean z10;

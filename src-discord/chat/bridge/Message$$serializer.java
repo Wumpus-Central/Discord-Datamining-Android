@@ -67,10 +67,10 @@ import si.m0;
 import si.w0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/chat/bridge/Message.$serializer", "Lsi/f0;", "Lcom/discord/chat/bridge/Message;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "chat_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes3.dex */
+
 public final class Message$$serializer implements f0<Message> {
     public static final Message$$serializer INSTANCE;
-    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+    private static final  PluginGeneratedSerialDescriptor descriptor;
 
     static {
         Message$$serializer message$$serializer = new Message$$serializer();
@@ -152,7 +152,7 @@ public final class Message$$serializer implements f0<Message> {
     private Message$$serializer() {
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] childSerializers() {
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
         w0 w0Var = w0.f26346a;
@@ -165,7 +165,7 @@ public final class Message$$serializer implements f0<Message> {
         return new KSerializer[]{MessageType.Serializer.INSTANCE, messageId$$serializer, a.u(messageId$$serializer), ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(MessageState.Serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), w0Var, a.u(a2Var), a.u(e0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(m0Var), hVar, hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(new f(Embed$$serializer.INSTANCE)), a.u(new f(Attachment$$serializer.INSTANCE)), a.u(e0Var), a.u(StructurableTextSerializer.INSTANCE), a.u(new f(UploadProgress$$serializer.INSTANCE)), a.u(new f(MessageReaction$$serializer.INSTANCE)), a.u(hVar), a.u(new f(a.u(CodedLinkSerializer.INSTANCE))), a.u(new f(sticker$$serializer)), a.u(RoleIcon$$serializer.INSTANCE), a.u(ConnectionsRoleTag$$serializer.INSTANCE), a.u(ThreadEmbed$$serializer.INSTANCE), hVar, a.u(hVar), a.u(hVar), a.u(ReferencedMessageSerializer.INSTANCE), a.u(ExecutedCommand$$serializer.INSTANCE), a.u(new f(ComponentSerializer.INSTANCE)), a.u(a2Var), a.u(hVar), a.u(a2Var), a.u(hVar), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(EphemeralIndication$$serializer.INSTANCE), a.u(SurveyIndication$$serializer.INSTANCE), a.u(InteractionStatus$$serializer.INSTANCE), a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(new f(a2Var)), a.u(hVar), a.u(hVar), a.u(w0Var), a.u(sticker$$serializer), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(ActivityInviteEmbed$$serializer.INSTANCE), hVar, a.u(ForumPostActions$$serializer.INSTANCE), a.u(AutoModerationContext$$serializer.INSTANCE), a.u(new f(giftEmbedSerializer)), a.u(giftEmbedSerializer), a.u(m0Var), a.u(a2Var), a.u(new f(PostPreviewEmbed$$serializer.INSTANCE))};
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
+    @Override 
     public Message deserialize(Decoder decoder) {
         boolean z10;
         boolean z11;
@@ -2008,7 +2008,7 @@ public final class Message$$serializer implements f0<Message> {
         return new Message(i12, i11, i10, (MessageType) obj65, messageId != null ? messageId.m598unboximpl() : null, messageId2 != null ? messageId2.m598unboximpl() : null, (ChannelId) obj23, (GuildId) obj18, (MessageState) obj22, (UserId) obj21, j10, (String) obj64, (Float) obj17, (String) obj15, (String) obj12, (Integer) obj32, (Integer) obj46, z12, z13, (Integer) obj45, (String) obj49, (String) obj39, (List) obj63, (List) obj10, (Float) obj9, (StructurableText) obj36, (List) obj11, (List) obj14, (Boolean) obj31, (List) obj30, (List) obj20, (RoleIcon) obj19, (ConnectionsRoleTag) obj27, (ThreadEmbed) obj26, z11, (Boolean) obj50, (Boolean) obj25, (ReferencedMessage) obj62, (ExecutedCommand) obj16, (List) obj55, (String) obj8, (Boolean) obj54, (String) obj51, (Boolean) obj48, (Integer) obj47, (Integer) obj44, (String) obj43, (String) obj42, (EphemeralIndication) obj41, (SurveyIndication) obj40, (InteractionStatus) obj38, (Boolean) obj7, (Boolean) obj35, (Boolean) obj34, (String) obj33, (String) obj29, (List) obj13, (Boolean) obj28, (Boolean) obj61, (Long) obj6, (Sticker) obj5, (String) obj4, (String) obj58, (Boolean) obj60, (ActivityInviteEmbed) obj57, z10, (ForumPostActions) obj56, (AutoModerationContext) obj52, (List) obj53, (GiftEmbed) obj3, (Integer) obj59, (String) obj2, (List) obj, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
+    @Override 
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -2022,7 +2022,7 @@ public final class Message$$serializer implements f0<Message> {
         c10.b(descriptor2);
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

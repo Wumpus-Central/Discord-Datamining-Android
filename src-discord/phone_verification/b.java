@@ -1,5 +1,5 @@
 package com.discord.phone_verification;
 
-/* loaded from: classes4.dex */
-public final /* synthetic */ class b {
+
+public final  class b {
 }

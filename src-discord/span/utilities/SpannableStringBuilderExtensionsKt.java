@@ -12,7 +12,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0002\b\u0002\u001a\u0016\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0001\u001aC\u0010\t\u001a\u00020\u0000*\u00020\u00002\u0016\u0010\u0006\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00010\u0005\"\u0004\u0018\u00010\u00012\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000¢\u0006\u0004\b\t\u0010\n\u001aM\u0010\t\u001a\u00020\u0000*\u00020\u00002\u0016\u0010\u0006\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00010\u0005\"\u0004\u0018\u00010\u00012\b\b\u0001\u0010\f\u001a\u00020\u000b2\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000¢\u0006\u0004\b\t\u0010\r\u001a$\u0010\u000e\u001a\u00020\u0000*\u00020\u00002\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000\u001a$\u0010\u000f\u001a\u00020\u0000*\u00020\u00002\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000\u001a$\u0010\u0010\u001a\u00020\u0000*\u00020\u00002\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000\u001a$\u0010\u0011\u001a\u00020\u0000*\u00020\u00002\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00030\u0007H\u0086\bø\u0001\u0000\u001a\n\u0010\u0013\u001a\u00020\u0012*\u00020\u0000\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\u0014"}, d2 = {"Landroid/text/SpannableStringBuilder;", "", "span", "", "ensureNewline", "", "spans", "Lkotlin/Function1;", "action", "wrapIn", "(Landroid/text/SpannableStringBuilder;[Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Landroid/text/SpannableStringBuilder;", "", "priority", "(Landroid/text/SpannableStringBuilder;[Ljava/lang/Object;ILkotlin/jvm/functions/Function1;)Landroid/text/SpannableStringBuilder;", "bold", "italic", "underline", "strikeThrough", "", "debugSpans", "span_utilities_release"}, k = 2, mv = {1, 8, 0})
-/* loaded from: classes8.dex */
+
 public final class SpannableStringBuilderExtensionsKt {
     public static final SpannableStringBuilder bold(SpannableStringBuilder spannableStringBuilder, Function1<? super SpannableStringBuilder, Unit> action) {
         q.g(spannableStringBuilder, "<this>");
@@ -64,7 +64,7 @@ public final class SpannableStringBuilderExtensionsKt {
         }
     }
 
-    public static /* synthetic */ void ensureNewline$default(SpannableStringBuilder spannableStringBuilder, Object obj, int i10, Object obj2) {
+    public static  void ensureNewline$default(SpannableStringBuilder spannableStringBuilder, Object obj, int i10, Object obj2) {
         if ((i10 & 1) != 0) {
             obj = null;
         }

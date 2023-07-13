@@ -15,7 +15,7 @@ import com.discord.core.DCDButton;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class GuildInviteViewBinding {
     public final Barrier barrierButton;
     public final Barrier barrierHeader;

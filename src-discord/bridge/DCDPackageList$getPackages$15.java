@@ -8,8 +8,8 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$15 extends n implements Function1<ReactApplicationContext, DeviceResourceUsageManagerModule> {
+
+ class DCDPackageList$getPackages$15 extends n implements Function1<ReactApplicationContext, DeviceResourceUsageManagerModule> {
     public static final DCDPackageList$getPackages$15 INSTANCE = new DCDPackageList$getPackages$15();
 
     DCDPackageList$getPackages$15() {

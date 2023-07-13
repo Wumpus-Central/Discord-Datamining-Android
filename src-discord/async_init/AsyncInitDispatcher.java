@@ -12,7 +12,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\t\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\u0019\u001a\u00020\n2\u0006\u0010\u001a\u001a\u00020\u001bH\u0002J\b\u0010\u001c\u001a\u00020\nH\u0002J&\u0010\u001d\u001a\u00020\n2\b\b\u0002\u0010\u001e\u001a\u00020\u00112\u000e\b\u0004\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\n0\tH\u0086\bø\u0001\u0000J(\u0010 \u001a\u00020\n2\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\n0\t2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\n0\tH\u0086\bø\u0001\u0000J\u0006\u0010\"\u001a\u00020\nJ\u0006\u0010#\u001a\u00020\nR#\u0010\u0007\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\n0\t0\b¢\u0006\u000e\n\u0000\u0012\u0004\b\u000b\u0010\f\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0010\u001a\u00020\u0011@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006$"}, d2 = {"Lcom/discord/async_init/AsyncInitDispatcher;", "", ZeroconfModule.KEY_SERVICE_NAME, "", "longDispatchThresholdMs", "", "(Ljava/lang/String;J)V", "delayedTasks", "", "Lkotlin/Function0;", "", "getDelayedTasks$annotations", "()V", "getDelayedTasks", "()Ljava/util/List;", "initStartMs", "value", "", "initialized", "getInitialized", "()Z", "setInitialized", "(Z)V", "threadChecker", "Lcom/discord/async_init/AsyncInitThreadChecker;", "onInit", "numTasks", "", "onInitFinish", "post", "validate", "task", "postOrElse", "fallback", "reset", "validateState", "async_init_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
+
 public final class AsyncInitDispatcher {
     private final List<Function0<Unit>> delayedTasks;
     private long initStartMs;
@@ -29,7 +29,7 @@ public final class AsyncInitDispatcher {
         this.threadChecker = new AsyncInitThreadChecker(name);
     }
 
-    public static /* synthetic */ void getDelayedTasks$annotations() {
+    public static  void getDelayedTasks$annotations() {
     }
 
     private final void onInit(int i10) {
@@ -57,7 +57,7 @@ public final class AsyncInitDispatcher {
         }
     }
 
-    public static /* synthetic */ void post$default(AsyncInitDispatcher asyncInitDispatcher, boolean z10, Function0 task, int i10, Object obj) {
+    public static  void post$default(AsyncInitDispatcher asyncInitDispatcher, boolean z10, Function0 task, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             z10 = true;
         }
@@ -130,7 +130,7 @@ public final class AsyncInitDispatcher {
         this.threadChecker.checkIsOnValidThread();
     }
 
-    public /* synthetic */ AsyncInitDispatcher(String str, long j10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  AsyncInitDispatcher(String str, long j10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, (i10 & 2) != 0 ? 1000L : j10);
     }
 }

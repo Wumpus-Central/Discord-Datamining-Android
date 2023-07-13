@@ -16,15 +16,15 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000 &2\u00020\u0001:\u0002&'B\u0019\b\u0002\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J \u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\r0\f2\u0010\u0010\u0015\u001a\f\u0012\b\u0012\u00060\u0017R\u00020\u00000\u0016H\u0002J \u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00052\u0006\u0010\u001b\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u0005H\u0002J\u001e\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\r0\f2\u0006\u0010\u001e\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0005H\u0002J\u0010\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0005H\u0002J\"\u0010\"\u001a\u00020\u00192\u0010\u0010#\u001a\f\u0012\b\u0012\u00060\u0017R\u00020\u00000$2\u0006\u0010%\u001a\u00020\u0005H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\r0\u00118F¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013¨\u0006("}, d2 = {"Lcom/discord/image/color_quantizer/ColorCutQuantizer;", "", "colorHistogram", "Lcom/discord/image/color_quantizer/ColorHistogram;", "maxColors", "", "(Lcom/discord/image/color_quantizer/ColorHistogram;I)V", "mColorPopulations", "Landroid/util/SparseIntArray;", "mColors", "", "mQuantizedColors", "", "Lcom/discord/image/color_quantizer/Swatch;", "mTempHsl", "", "quantizedColors", "", "getQuantizedColors", "()Ljava/util/List;", "generateAverageColors", "vboxes", "", "Lcom/discord/image/color_quantizer/ColorCutQuantizer$Vbox;", "modifySignificantOctet", "", "dimension", "lowIndex", "highIndex", "quantizePixels", "maxColorIndex", "shouldIgnoreColor", "", ViewProps.COLOR, "splitBoxes", "queue", "Ljava/util/PriorityQueue;", "maxSize", "Companion", "Vbox", "color_quantizer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class ColorCutQuantizer {
     private static final float BLACK_MAX_LIGHTNESS = 0.05f;
     private static final int COMPONENT_BLUE = -1;
     private static final int COMPONENT_GREEN = -2;
     private static final int COMPONENT_RED = -3;
     public static final Companion Companion = new Companion(null);
-    private static final Comparator<Vbox> VBOX_COMPARATOR_VOLUME = new Comparator() { // from class: com.discord.image.color_quantizer.a
-        @Override // java.util.Comparator
+    private static final Comparator<Vbox> VBOX_COMPARATOR_VOLUME = new Comparator() { 
+        @Override 
         public final int compare(Object obj, Object obj2) {
             int VBOX_COMPARATOR_VOLUME$lambda$2;
             VBOX_COMPARATOR_VOLUME$lambda$2 = ColorCutQuantizer.VBOX_COMPARATOR_VOLUME$lambda$2((ColorCutQuantizer.Vbox) obj, (ColorCutQuantizer.Vbox) obj2);
@@ -38,12 +38,12 @@ public final class ColorCutQuantizer {
     private final float[] mTempHsl;
 
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0014\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u000e\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0006H\u0007J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0010\u0010\u0016\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0010\u0010\u0017\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0019\u001a\u00020\u001aH\u0002J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u0018\u0010\t\u001a\f\u0012\b\u0012\u00060\u000bR\u00020\f0\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lcom/discord/image/color_quantizer/ColorCutQuantizer$Companion;", "", "()V", "BLACK_MAX_LIGHTNESS", "", "COMPONENT_BLUE", "", "COMPONENT_GREEN", "COMPONENT_RED", "VBOX_COMPARATOR_VOLUME", "Ljava/util/Comparator;", "Lcom/discord/image/color_quantizer/ColorCutQuantizer$Vbox;", "Lcom/discord/image/color_quantizer/ColorCutQuantizer;", "WHITE_MIN_LIGHTNESS", "fromBitmap", "bitmap", "Landroid/graphics/Bitmap;", "maxColors", "isBlack", "", "hslColor", "", "isNearRedILine", "isWhite", "shouldIgnoreColor", ViewProps.COLOR, "Lcom/discord/image/color_quantizer/Swatch;", "color_quantizer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -60,7 +60,7 @@ public final class ColorCutQuantizer {
             return fArr[2] >= ColorCutQuantizer.WHITE_MIN_LIGHTNESS;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final boolean shouldIgnoreColor(Swatch swatch) {
             float[] hsl = swatch.getHsl();
             q.f(hsl, "color.hsl");
@@ -76,15 +76,15 @@ public final class ColorCutQuantizer {
             return new ColorCutQuantizer(new ColorHistogram(iArr), i10, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final boolean shouldIgnoreColor(float[] fArr) {
             return isWhite(fArr) || isBlack(fArr) || isNearRedILine(fArr);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\u0006\u0010\u0017\u001a\u00020\u0018J\u0006\u0010\u0019\u001a\u00020\u0003J\u0006\u0010\u001a\u001a\u00020\u001bJ\u000e\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u0003J\n\u0010\u001e\u001a\u00060\u0000R\u00020\u001fR\u0011\u0010\u0006\u001a\u00020\u00078F¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0011\u0010\n\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\r\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u000e\u0010\fR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0015\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0016\u0010\f¨\u0006 "}, d2 = {"Lcom/discord/image/color_quantizer/ColorCutQuantizer$Vbox;", "", "lowerIndex", "", "upperIndex", "(Lcom/discord/image/color_quantizer/ColorCutQuantizer;II)V", "averageColor", "Lcom/discord/image/color_quantizer/Swatch;", "getAverageColor", "()Lcom/discord/image/color_quantizer/Swatch;", "colorCount", "getColorCount", "()I", "longestColorDimension", "getLongestColorDimension", "maxBlue", "maxGreen", "maxRed", "minBlue", "minGreen", "minRed", "volume", "getVolume", "canSplit", "", "findSplitPoint", "fitBox", "", "midPoint", "dimension", "splitBox", "Lcom/discord/image/color_quantizer/ColorCutQuantizer;", "color_quantizer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public final class Vbox {
         private final int lowerIndex;
         private int maxBlue;
@@ -294,11 +294,11 @@ public final class ColorCutQuantizer {
         throw new IllegalArgumentException("colorHistogram can not be null".toString());
     }
 
-    public /* synthetic */ ColorCutQuantizer(ColorHistogram colorHistogram, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  ColorCutQuantizer(ColorHistogram colorHistogram, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(colorHistogram, i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int VBOX_COMPARATOR_VOLUME$lambda$2(Vbox vbox, Vbox vbox2) {
         return vbox2.getVolume() - vbox.getVolume();
     }
@@ -318,7 +318,7 @@ public final class ColorCutQuantizer {
         return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void modifySignificantOctet(int i10, int i11, int i12) {
         if (i10 == COMPONENT_GREEN) {
             while (i11 <= i12) {

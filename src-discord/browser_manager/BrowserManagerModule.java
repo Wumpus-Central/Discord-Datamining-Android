@@ -13,7 +13,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0016\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\nH\u0016J\b\u0010\r\u001a\u00020\u000bH\u0016J \u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\u000b2\u0006\u0010\u0012\u001a\u00020\u0013H\u0007J \u0010\u0014\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0012\u001a\u00020\u0013H\u0007J\u0010\u0010\u0017\u001a\u00020\u000f2\u0006\u0010\u0018\u001a\u00020\u0019H\u0007R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\u001b"}, d2 = {"Lcom/discord/browser_manager/BrowserManagerModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "cacheModule", "Lcom/discord/cache/CacheModule;", "getCacheModule", "()Lcom/discord/cache/CacheModule;", "getConstants", "", "", "", "getName", "openInAppURL", "", "url", "unused", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "openInChromeURL", "newTab", "", "selectBrowser", "browser", "", "Companion", "browser_manager_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
+
 public final class BrowserManagerModule extends ReactContextBaseJavaModule {
     @Deprecated
     private static final String BROWSER_CACHE_KEY = "SELECTED_BROWSER";
@@ -26,17 +26,17 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
     private static final Companion Companion = new Companion(null);
 
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0082\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/discord/browser_manager/BrowserManagerModule$Companion;", "", "()V", "BROWSER_CACHE_KEY", "", "BROWSER_CHROME", "", "BROWSER_IN_APP", "BROWSER_SAFARI", "browser_manager_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     private static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public BrowserManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
         q.g(reactContext, "reactContext");
@@ -49,47 +49,15 @@ public final class BrowserManagerModule extends ReactContextBaseJavaModule {
         return companion.get(reactApplicationContext);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:4:0x000d, code lost:
-        r0 = ji.t.m(r0);
-     */
-    @Override // com.facebook.react.bridge.BaseJavaModule
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    @Override 
+    
     public java.util.Map<java.lang.String, java.lang.Object> getConstants() {
-        /*
-            r4 = this;
-            com.discord.cache.CacheModule r0 = r4.getCacheModule()
-            java.lang.String r1 = "SELECTED_BROWSER"
-            java.lang.String r0 = r0.getItem(r1)
-            r1 = 1
-            if (r0 == 0) goto L_0x0018
-            java.lang.Integer r0 = ji.l.m(r0)
-            if (r0 == 0) goto L_0x0018
-            int r0 = r0.intValue()
-            goto L_0x0019
-        L_0x0018:
-            r0 = r1
-        L_0x0019:
-            r2 = 2
-            kotlin.Pair[] r2 = new kotlin.Pair[r2]
-            java.lang.String r3 = "selectedBrowser"
-            java.lang.Integer r0 = java.lang.Integer.valueOf(r0)
-            kotlin.Pair r0 = ff.x.a(r3, r0)
-            r3 = 0
-            r2[r3] = r0
-            java.lang.String r0 = "isChromeInstalled"
-            java.lang.Boolean r3 = java.lang.Boolean.TRUE
-            kotlin.Pair r0 = ff.x.a(r0, r3)
-            r2[r1] = r0
-            java.util.Map r0 = gf.s.l(r2)
-            return r0
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.browser_manager.BrowserManagerModule.getConstants():java.util.Map");
     }
 
-    @Override // com.facebook.react.bridge.NativeModule
+    @Override 
     public String getName() {
         return "BrowserManager";
     }

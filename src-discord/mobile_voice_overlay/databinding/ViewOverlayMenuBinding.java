@@ -10,7 +10,7 @@ import com.discord.mobile_voice_overlay.R;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes6.dex */
+
 public final class ViewOverlayMenuBinding {
     public final SimpleDraweeView disconnectBtn;
     public final CardView menuBottom;

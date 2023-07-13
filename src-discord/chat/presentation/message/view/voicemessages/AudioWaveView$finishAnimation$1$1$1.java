@@ -13,16 +13,16 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1$1$1", f = "AudioWaveView.kt", l = {136}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
+
 final class AudioWaveView$finishAnimation$1$1$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public AudioWaveView$finishAnimation$1$1$1(Continuation<? super AudioWaveView$finishAnimation$1$1$1> continuation) {
         super(2, continuation);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new AudioWaveView$finishAnimation$1$1$1(continuation);
     }
@@ -31,7 +31,7 @@ final class AudioWaveView$finishAnimation$1$1$1 extends k implements Function2<C
         return ((AudioWaveView$finishAnimation$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         d10 = d.d();

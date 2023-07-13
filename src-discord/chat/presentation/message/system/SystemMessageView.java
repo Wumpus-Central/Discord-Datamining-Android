@@ -51,7 +51,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u001b\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007J\u001e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\n0\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0003\u001a\u00020\u001cH\u0002J\u001c\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u000f0\u001e2\u0006\u0010 \u001a\u00020!H\u0002J\u000e\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%J \u0010&\u001a\u00020#2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0003\u001a\u00020\u001c2\b\b\u0002\u0010'\u001a\u00020(R\u001e\u0010\b\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\b\u0012\u0004\u0012\u00020\n`\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\u00020\u00148VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0015\u0010\u0016R\u000e\u0010\u0017\u001a\u00020\u000fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006)"}, d2 = {"Lcom/discord/chat/presentation/message/system/SystemMessageView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/chat/presentation/spine/SpineParentMessage;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "accessories", "Ljava/util/ArrayList;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "Lkotlin/collections/ArrayList;", "binding", "Lcom/discord/chat/databinding/SystemMessageViewBinding;", "greenIconColor", "", "normalIconColor", "pinkIconColor", "redIconColor", "spineOriginView", "Landroid/view/View;", "getSpineOriginView", "()Landroid/view/View;", "warnIconColor", "generateMessageAccessories", "", "message", "Lcom/discord/chat/bridge/Message;", "Lcom/discord/chat/presentation/root/MessageContext;", "getIconAndColor", "Lkotlin/Pair;", "Lcom/discord/react_asset_fetcher/ReactAsset;", "messageType", "Lcom/discord/chat/bridge/MessageType;", "setAccessoriesRecycledViewPool", "", "recycledViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "setMessage", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class SystemMessageView extends ConstraintLayout implements SpineParentMessage {
     private ArrayList<MessageAccessory> accessories;
     private final SystemMessageViewBinding binding;
@@ -62,9 +62,9 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
     private final int warnIconColor;
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
 
         static {
             int[] iArr = new int[MessageType.values().length];
@@ -192,13 +192,13 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public SystemMessageView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ SystemMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  SystemMessageView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -323,14 +323,14 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
     }
 
-    public static /* synthetic */ void setMessage$default(SystemMessageView systemMessageView, Message message, MessageContext messageContext, ChatEventHandler chatEventHandler, int i10, Object obj) {
+    public static  void setMessage$default(SystemMessageView systemMessageView, Message message, MessageContext messageContext, ChatEventHandler chatEventHandler, int i10, Object obj) {
         if ((i10 & 4) != 0) {
             chatEventHandler = ChatEventHandler.Empty.INSTANCE;
         }
         systemMessageView.setMessage(message, messageContext, chatEventHandler);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean setMessage$lambda$0(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
@@ -344,7 +344,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         return true;
     }
 
-    @Override // com.discord.chat.presentation.spine.SpineParentMessage
+    @Override 
     public View getSpineOriginView() {
         SimpleDraweeView simpleDraweeView = this.binding.icon;
         q.f(simpleDraweeView, "binding.icon");
@@ -361,8 +361,8 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         q.g(message, "message");
         q.g(context, "context");
         q.g(eventHandler, "eventHandler");
-        View.OnLongClickListener bVar = new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.system.b
-            @Override // android.view.View.OnLongClickListener
+        View.OnLongClickListener bVar = new View.OnLongClickListener() { 
+            @Override 
             public final boolean onLongClick(View view) {
                 boolean message$lambda$0;
                 message$lambda$0 = SystemMessageView.setMessage$lambda$0(Message.this, eventHandler, view);
@@ -391,7 +391,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         this.binding.accessoriesView.setOnCurrentContentViewChanged(new SystemMessageView$setMessage$1(this, message, bVar));
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public SystemMessageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

@@ -53,7 +53,7 @@ import si.a2;
 import si.n1;
 
 @Metadata(d1 = {"\u0000´\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b)\u0018\u0000 y2\u00020\u0001:\u0007yz{|}~\u007fB+\b\u0002\u0012\u0006\u00102\u001a\u000201\u0012\u0006\u00104\u001a\u00020\u0005\u0012\u0006\u00107\u001a\u000206\u0012\b\b\u0002\u0010:\u001a\u000209¢\u0006\u0004\bw\u0010xJ\u0018\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0010\u0010\u0007\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0002H\u0002J\u0018\u0010\u000b\u001a\u00020\n2\u0006\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005H\u0002J\b\u0010\r\u001a\u00020\fH\u0002J\"\u0010\u0012\u001a\u00020\f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u0002H\u0002Jn\u0010!\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001d2\u0006\u0010\u0013\u001a\u00020\u00022\u001c\b\u0002\u0010\u0016\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0015\u0018\u00010\u00142\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001a\u001a\u00020\u00052\b\b\u0002\u0010\u001c\u001a\u00020\u001bH\u0003ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\b\u001f\u0010 J\f\u0010\"\u001a\u00020\u0005*\u00020\u0005H\u0002J\b\u0010#\u001a\u00020\nH\u0002J'\u0010&\u001a\u00020\n2\u0016\u0010%\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00020$\"\u0004\u0018\u00010\u0002H\u0002¢\u0006\u0004\b&\u0010'J\u0010\u0010)\u001a\u00020\n2\u0006\u0010(\u001a\u00020\fH\u0002J\u0010\u0010+\u001a\u00020\n2\u0006\u0010(\u001a\u00020*H\u0002J&\u00100\u001a\u0006\u0012\u0002\b\u00030/2\b\b\u0002\u0010,\u001a\u00020\u001b2\u0010\b\u0002\u0010.\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010-R\u0014\u00102\u001a\u0002018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b2\u00103R\u0014\u00104\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b4\u00105R\u0014\u00107\u001a\u0002068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R\u0014\u0010:\u001a\u0002098\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b:\u0010;R#\u0010B\u001a\n =*\u0004\u0018\u00010<0<8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b>\u0010?\u001a\u0004\b@\u0010AR\u001b\u0010G\u001a\u00020C8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bD\u0010?\u001a\u0004\bE\u0010FR\u001b\u0010K\u001a\u00020\u00058BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bH\u0010?\u001a\u0004\bI\u0010JR$\u0010N\u001a\u00020L2\u0006\u0010M\u001a\u00020L8\u0006@BX\u0086\u000e¢\u0006\f\n\u0004\bN\u0010O\u001a\u0004\bN\u0010PR\u001d\u0010S\u001a\b\u0012\u0004\u0012\u00020R0Q8\u0006¢\u0006\f\n\u0004\bS\u0010T\u001a\u0004\bU\u0010VR0\u0010X\u001a\u0010\u0012\u0004\u0012\u00020L\u0012\u0004\u0012\u00020\n\u0018\u00010W8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bX\u0010Y\u001a\u0004\bZ\u0010[\"\u0004\b\\\u0010]R6\u0010^\u001a\u0016\u0012\n\u0012\b\u0012\u0004\u0012\u00020R0\u0014\u0012\u0004\u0012\u00020\n\u0018\u00010W8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b^\u0010Y\u001a\u0004\b_\u0010[\"\u0004\b`\u0010]R\u0014\u0010c\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\ba\u0010bR\u0014\u0010e\u001a\u00020\u00028BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bd\u0010bR$\u0010j\u001a\u00020\u00022\u0006\u0010f\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\f\u001a\u0004\bg\u0010b\"\u0004\bh\u0010iR(\u0010m\u001a\u0004\u0018\u00010\u00022\b\u0010f\u001a\u0004\u0018\u00010\u00028B@BX\u0082\u000e¢\u0006\f\u001a\u0004\bk\u0010b\"\u0004\bl\u0010iR$\u0010p\u001a\u00020\u00022\u0006\u0010f\u001a\u00020\u00028F@BX\u0086\u000e¢\u0006\f\u001a\u0004\bn\u0010b\"\u0004\bo\u0010iR\u0014\u0010r\u001a\u00020L8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bq\u0010PR(\u0010v\u001a\u0004\u0018\u00010\u00052\b\u0010f\u001a\u0004\u0018\u00010\u00058F@FX\u0086\u000e¢\u0006\f\u001a\u0004\bs\u0010J\"\u0004\bt\u0010u\u0082\u0002\u000f\n\u0002\b!\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006\u0080\u0001"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater;", "", "", "commit", JSStackTrace.FILE_KEY, "Ljava/io/File;", "otaFile", "otaTempFile", "src", "dst", "", "moveFile", "Lcom/discord/bundle_updater/BundleUpdater$OtaResult;", "downloadManifest", "existingOtaCommit", "Lorg/json/JSONObject;", "newManifestJson", "newOtaCommit", "downloadOtaFiles", "url", "", "Lkotlin/Pair;", "extraHeaders", "hash", "Lcom/discord/bundle_updater/BundleUpdater$Patch;", "patch", "destinationFile", "", "attempt", "Lff/s;", "Lokhttp3/Headers;", "downloadSingleFile-hUnOzRk", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/discord/bundle_updater/BundleUpdater$Patch;Ljava/io/File;I)Ljava/lang/Object;", "downloadSingleFile", "ensureEmptyFile", "validateBuildOverrideCookie", "", "knownOtaCommits", "deleteUnknownOtas", "([Ljava/lang/String;)V", "result", "trackUpdateCheck", "Lcom/discord/bundle_updater/BundleUpdater$OtaDownloadResult;", "trackAssetDownload", "delaySeconds", "Lkotlin/Function0;", "onComplete", "Ljava/util/concurrent/Future;", "checkForUpdate", "Landroid/content/SharedPreferences;", "sharedPreferences", "Landroid/content/SharedPreferences;", "filesDirectory", "Ljava/io/File;", "Landroid/content/res/AssetManager;", "assetManager", "Landroid/content/res/AssetManager;", "Ljava/util/concurrent/ExecutorService;", "executor", "Ljava/util/concurrent/ExecutorService;", "Landroid/webkit/CookieManager;", "kotlin.jvm.PlatformType", "cookieManager$delegate", "Lkotlin/Lazy;", "getCookieManager", "()Landroid/webkit/CookieManager;", "cookieManager", "Lokhttp3/OkHttpClient;", "client$delegate", "getClient", "()Lokhttp3/OkHttpClient;", "client", "otasRootDirectory$delegate", "getOtasRootDirectory", "()Ljava/io/File;", "otasRootDirectory", "", "<set-?>", "isVersionRequired", "Z", "()Z", "", "Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "otaMetrics", "Ljava/util/List;", "getOtaMetrics", "()Ljava/util/List;", "Lkotlin/Function1;", "onBundleDownloadedListener", "Lkotlin/jvm/functions/Function1;", "getOnBundleDownloadedListener", "()Lkotlin/jvm/functions/Function1;", "setOnBundleDownloadedListener", "(Lkotlin/jvm/functions/Function1;)V", "onOtaUpdateCheckedListener", "getOnOtaUpdateCheckedListener", "setOnOtaUpdateCheckedListener", "getVersion", "()Ljava/lang/String;", "version", "getManifestURL", "manifestURL", "value", "getManifestETag", "setManifestETag", "(Ljava/lang/String;)V", "manifestETag", "getInProgressOtaCommit", "setInProgressOtaCommit", "inProgressOtaCommit", "getOtaVersion", "setOtaVersion", "otaVersion", "getValidOTAVersion", "validOTAVersion", "getBundleLocation", "setBundleLocation", "(Ljava/io/File;)V", "bundleLocation", "<init>", "(Landroid/content/SharedPreferences;Ljava/io/File;Landroid/content/res/AssetManager;Ljava/util/concurrent/ExecutorService;)V", "Companion", "HttpException", "MaxDownloadAttemptsException", "OtaDownloadResult", "OtaMetric", "OtaResult", "Patch", "bundle_updater_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes.dex */
+
 public final class BundleUpdater {
     public static final String ANDROID_JS_BUNDLE_ASSET_NAME = "index.android.bundle";
     private static final String BUILD_OVERRIDE_COOKIE = "buildOverride";
@@ -79,12 +79,12 @@ public final class BundleUpdater {
     private static final String TAG = BundleUpdater.class.getSimpleName();
 
     @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014J\u0006\u0010\u0015\u001a\u00020\u0010R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \u0007*\u0004\u0018\u00010\u00040\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082.¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$Companion;", "", "()V", "ANDROID_JS_BUNDLE_ASSET_NAME", "", "BASE_OTA_URL", "Landroid/net/Uri;", "kotlin.jvm.PlatformType", "BUILD_OVERRIDE_COOKIE", "KEY_ANDROID_JS_BUNDLE", "KEY_ETAG", "KEY_IN_PROGRESS_OTA_COMMIT", "KEY_OTA_VERSION", "OTAS_DIRECTORY", "TAG", "updater", "Lcom/discord/bundle_updater/BundleUpdater;", "init", "", "context", "Landroid/content/Context;", "instance", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -110,7 +110,7 @@ public final class BundleUpdater {
     }
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\b\u0002\u0018\u00002\u00060\u0001j\u0002`\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$HttpException;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "statusCode", "", "(I)V", "getStatusCode", "()I", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public static final class HttpException extends Exception {
         private final int statusCode;
 
@@ -125,9 +125,9 @@ public final class BundleUpdater {
     }
 
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0002\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0015\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007¨\u0006\b"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$MaxDownloadAttemptsException;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "url", "", "attempts", "", "(Ljava/lang/String;I)V", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public static final class MaxDownloadAttemptsException extends Exception {
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        
         public MaxDownloadAttemptsException(String url, int i10) {
             super("Failed " + i10 + " times to download " + url + ", aborting...");
             q.g(url, "url");
@@ -135,7 +135,7 @@ public final class BundleUpdater {
     }
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\b¨\u0006\t"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$OtaDownloadResult;", "", "tag", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getTag", "()Ljava/lang/String;", "SUCCESS", "FAILURE", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public enum OtaDownloadResult {
         SUCCESS("result:success"),
         FAILURE("result:failure");
@@ -153,19 +153,19 @@ public final class BundleUpdater {
 
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 \"2\u00020\u0001:\u0002!\"B3\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0002\u0010\nB\u001b\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007¢\u0006\u0002\u0010\u000bJ\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\u000f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007HÆ\u0003J#\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÖ\u0001J\u0006\u0010\u0017\u001a\u00020\u0018J\t\u0010\u0019\u001a\u00020\u0005HÖ\u0001J!\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00002\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 HÇ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006#"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "", "seen1", "", ZeroconfModule.KEY_SERVICE_NAME, "", "tags", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/util/List;)V", "getName", "()Ljava/lang/String;", "getTags", "()Ljava/util/List;", "component1", "component2", "copy", "equals", "", "other", "hashCode", "toNativeMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     @f
-    /* loaded from: classes.dex */
+    
     public static final class OtaMetric {
         public static final Companion Companion = new Companion(null);
         private final String name;
         private final List<String> tags;
 
         @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$OtaMetric$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/bundle_updater/BundleUpdater$OtaMetric;", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes.dex */
+        
         public static final class Companion {
             private Companion() {
             }
 
-            public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
@@ -174,7 +174,7 @@ public final class BundleUpdater {
             }
         }
 
-        public /* synthetic */ OtaMetric(int i10, String str, List list, SerializationConstructorMarker serializationConstructorMarker) {
+        public  OtaMetric(int i10, String str, List list, SerializationConstructorMarker serializationConstructorMarker) {
             if (3 != (i10 & 3)) {
                 n1.b(i10, 3, BundleUpdater$OtaMetric$$serializer.INSTANCE.getDescriptor());
             }
@@ -182,8 +182,8 @@ public final class BundleUpdater {
             this.tags = list;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        public static /* synthetic */ OtaMetric copy$default(OtaMetric otaMetric, String str, List list, int i10, Object obj) {
+        
+        public static  OtaMetric copy$default(OtaMetric otaMetric, String str, List list, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = otaMetric.name;
             }
@@ -257,7 +257,7 @@ public final class BundleUpdater {
     }
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000b¨\u0006\f"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$OtaResult;", "", "tag", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getTag", "()Ljava/lang/String;", "NOOP", "CLEARED", "SUCCESS", "SUCCESS_WITH_VERSION_REQUIRED", "FAILURE", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public enum OtaResult {
         NOOP("result:noop"),
         CLEARED("result:clear"),
@@ -277,7 +277,7 @@ public final class BundleUpdater {
     }
 
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0002\u0010\u0007R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006\r"}, d2 = {"Lcom/discord/bundle_updater/BundleUpdater$Patch;", "", "url", "", "baseFilePath", "Ljava/io/File;", "patchPath", "(Ljava/lang/String;Ljava/io/File;Ljava/io/File;)V", "getBaseFilePath", "()Ljava/io/File;", "getPatchPath", "getUrl", "()Ljava/lang/String;", "bundle_updater_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
+    
     public static final class Patch {
         private final File baseFilePath;
         private final File patchPath;
@@ -306,10 +306,10 @@ public final class BundleUpdater {
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
-        public static final /* synthetic */ int[] $EnumSwitchMapping$1;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
+        public static final  int[] $EnumSwitchMapping$1;
 
         static {
             int[] iArr = new int[OtaResult.values().length];
@@ -364,8 +364,8 @@ public final class BundleUpdater {
         this.otaMetrics = new ArrayList();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    public static /* synthetic */ Future checkForUpdate$default(BundleUpdater bundleUpdater, int i10, Function0 function0, int i11, Object obj) {
+    
+    public static  Future checkForUpdate$default(BundleUpdater bundleUpdater, int i10, Function0 function0, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             i10 = 0;
         }
@@ -503,7 +503,7 @@ public final class BundleUpdater {
         }
     }
 
-    /* JADX WARN: Finally extract failed */
+    
     private final OtaResult downloadOtaFiles(final String str, JSONObject jSONObject, String str2) {
         JSONObject jSONObject2;
         boolean z10;
@@ -626,8 +626,8 @@ public final class BundleUpdater {
             } else {
                 arrayList2 = arrayList;
                 jSONObject3 = jSONObject4;
-                patch3 = bundleUpdater.executor.submit(new Runnable() { // from class: com.discord.bundle_updater.a
-                    @Override // java.lang.Runnable
+                patch3 = bundleUpdater.executor.submit(new Runnable() { 
+                    @Override 
                     public final void run() {
                         BundleUpdater.downloadOtaFiles$lambda$17$lambda$16(AssetStatus.this, this, str, D, otaTempFile3, build2, jSONObject5, str3, patch2, otaFile);
                     }
@@ -682,32 +682,22 @@ public final class BundleUpdater {
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:39:0x011d, code lost:
-        if (r0 == null) goto L_0x0126;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:55:0x01bb, code lost:
-        if (kotlin.jvm.internal.q.b(r26, com.discord.bundle_updater.BundleUpdaterUtils.INSTANCE.md5(r28)) != false) goto L_0x01bd;
-     */
-    /* JADX WARN: Type inference failed for: r1v0, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v2 */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v7 */
-    /* JADX WARN: Unknown variable types count: 1 */
-    /* renamed from: downloadSingleFile-hUnOzRk */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
     private final java.lang.Object m0downloadSingleFilehUnOzRk(java.lang.String r24, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r25, java.lang.String r26, com.discord.bundle_updater.BundleUpdater.Patch r27, java.io.File r28, int r29) {
-        /*
-            Method dump skipped, instructions count: 620
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m0downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
     }
 
-    /* renamed from: downloadSingleFile-hUnOzRk$default */
-    static /* synthetic */ Object m1downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
+    
+    static  Object m1downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
         return bundleUpdater.m0downloadSingleFilehUnOzRk(str, (i11 & 2) != 0 ? null : list, (i11 & 4) != 0 ? null : str2, (i11 & 8) != 0 ? null : patch, file, (i11 & 32) != 0 ? 0 : i10);
     }
 
@@ -876,8 +866,8 @@ public final class BundleUpdater {
     }
 
     public final Future<?> checkForUpdate(final int i10, final Function0<Unit> function0) {
-        Future<?> submit = this.executor.submit(new Runnable() { // from class: com.discord.bundle_updater.b
-            @Override // java.lang.Runnable
+        Future<?> submit = this.executor.submit(new Runnable() { 
+            @Override 
             public final void run() {
                 BundleUpdater.checkForUpdate$lambda$6(i10, this, function0);
             }
@@ -951,24 +941,10 @@ public final class BundleUpdater {
         this.onOtaUpdateCheckedListener = function1;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
-    /* synthetic */ BundleUpdater(android.content.SharedPreferences r1, java.io.File r2, android.content.res.AssetManager r3, java.util.concurrent.ExecutorService r4, int r5, kotlin.jvm.internal.DefaultConstructorMarker r6) {
-        /*
-            r0 = this;
-            r5 = r5 & 8
-            if (r5 == 0) goto L_0x000e
-            r4 = 5
-            java.util.concurrent.ExecutorService r4 = java.util.concurrent.Executors.newFixedThreadPool(r4)
-            java.lang.String r5 = "newFixedThreadPool(5)"
-            kotlin.jvm.internal.q.f(r4, r5)
-        L_0x000e:
-            r0.<init>(r1, r2, r3, r4)
-            return
-        */
+    
+    
+     BundleUpdater(android.content.SharedPreferences r1, java.io.File r2, android.content.res.AssetManager r3, java.util.concurrent.ExecutorService r4, int r5, kotlin.jvm.internal.DefaultConstructorMarker r6) {
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.<init>(android.content.SharedPreferences, java.io.File, android.content.res.AssetManager, java.util.concurrent.ExecutorService, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 }

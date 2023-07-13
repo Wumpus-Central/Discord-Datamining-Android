@@ -48,7 +48,7 @@ import kotlin.jvm.internal.q;
 
 @ReactModule(name = MediaEngineModule.NAME)
 @Metadata(d1 = {"\u0000\u0092\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u0007\n\u0002\b\u0018\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0002\b\b\n\u0002\u0010%\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\b\u001b\b\u0007\u0018\u0000 \u0098\u00012\u00020\u0001:\u0002\u0098\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0002J\u0010\u0010\u0019\u001a\u00020\u00172\u0006\u0010\u001a\u001a\u00020\u001bH\u0007J\u0010\u0010\u001c\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0002J/\u0010\u001d\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u001f\u001a\u00020\u00122\u0006\u0010 \u001a\u00020\u0012H\u0007¢\u0006\u0002\u0010!J\u0010\u0010\"\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0007J\u001f\u0010#\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001bH\u0007¢\u0006\u0002\u0010%J\u001f\u0010&\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010)J'\u0010*\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010+\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010,J\u001f\u0010-\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010)J\u001f\u0010.\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010/\u001a\u000200H\u0007¢\u0006\u0002\u00101J(\u00102\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u00103\u001a\u00020\u001b2\u0006\u00104\u001a\u0002052\u0006\u0010\u001a\u001a\u00020\u001bH\u0007J'\u00106\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u00107\u001a\u000205H\u0007¢\u0006\u0002\u00108J/\u00109\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020;H\u0007¢\u0006\u0002\u0010=J'\u0010>\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010?\u001a\u00020;H\u0007¢\u0006\u0002\u0010@J\u001f\u0010A\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010B\u001a\u00020\u0012H\u0007¢\u0006\u0002\u0010CJ\u001f\u0010D\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010E\u001a\u00020;H\u0007¢\u0006\u0002\u0010FJ'\u0010G\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010H\u001a\u0002052\u0006\u0010I\u001a\u000205H\u0007¢\u0006\u0002\u0010JJ\u001f\u0010K\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010L\u001a\u00020\u0012H\u0007¢\u0006\u0002\u0010CJ\u001f\u0010M\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010N\u001a\u000205H\u0007¢\u0006\u0002\u0010OJ\u001f\u0010P\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010Q\u001a\u000205H\u0007¢\u0006\u0002\u0010OJ\u001f\u0010R\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010S\u001a\u00020TH\u0007¢\u0006\u0002\u0010UJ\u001f\u0010V\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010W\u001a\u000205H\u0007¢\u0006\u0002\u0010OJ\u0010\u0010X\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0007JF\u0010Y\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010Z\u001a\u00020T2$\u0010'\u001a \u0012\u0004\u0012\u00020\u001b\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020]0\\\u0012\u0004\u0012\u00020\u00170[H\u0002J(\u0010^\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010Z\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007JF\u0010_\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010Z\u001a\u00020T2$\u0010'\u001a \u0012\u0004\u0012\u00020\u001b\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020]0\\\u0012\u0004\u0012\u00020\u00170[H\u0002J(\u0010`\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010Z\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007J(\u0010a\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u001b2\u0006\u0010Z\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010b\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010c\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010d\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\u0016\u0010e\u001a\u0010\u0012\u0004\u0012\u00020\u001b\u0012\u0006\u0012\u0004\u0018\u00010]0fH\u0016J\u0010\u0010g\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\b\u0010h\u001a\u00020\u001bH\u0016J\u0010\u0010i\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010j\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010k\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007J\b\u0010l\u001a\u00020\u0017H\u0016J\b\u0010m\u001a\u00020\u0017H\u0016J\u0018\u0010n\u001a\u00020\u00172\u0006\u0010o\u001a\u0002002\u0006\u0010'\u001a\u00020(H\u0007J\u0010\u0010p\u001a\u00020\u00172\u0006\u0010q\u001a\u00020\u0012H\u0007J\u0010\u0010r\u001a\u00020\u00172\u0006\u0010s\u001a\u00020\u001bH\u0007J\u0010\u0010t\u001a\u00020\u00172\u0006\u0010u\u001a\u000205H\u0007J \u0010v\u001a\u00020\u00172\u0006\u0010w\u001a\u00020\u00122\u0006\u0010x\u001a\u00020\u00122\u0006\u0010y\u001a\u00020\u0012H\u0007J\u0010\u0010z\u001a\u00020\u00172\u0006\u0010{\u001a\u000205H\u0007J\u0010\u0010|\u001a\u00020\u00172\u0006\u0010}\u001a\u00020~H\u0007J\u0010\u0010\u007f\u001a\u00020\u00172\u0006\u0010?\u001a\u00020;H\u0007J\u0011\u0010\u0080\u0001\u001a\u00020\u00172\u0006\u0010E\u001a\u00020;H\u0007J\u0011\u0010\u0081\u0001\u001a\u00020\u00172\u0006\u0010}\u001a\u00020~H\u0007J\u0011\u0010\u0082\u0001\u001a\u00020\u00172\u0006\u0010?\u001a\u00020;H\u0007J\u0011\u0010\u0083\u0001\u001a\u00020\u00172\u0006\u0010S\u001a\u00020TH\u0007J\u0011\u0010\u0084\u0001\u001a\u00020\u00172\u0006\u0010}\u001a\u00020~H\u0007J\u0011\u0010\u0085\u0001\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0007J \u0010\u0086\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010)J \u0010\u0087\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010)J \u0010\u0088\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010L\u001a\u00020\u0012H\u0007¢\u0006\u0002\u0010CJ \u0010\u0089\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010S\u001a\u00020TH\u0007¢\u0006\u0002\u0010UJ)\u0010\u008a\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010S\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0003\u0010\u008b\u0001J)\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010S\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0003\u0010\u008b\u0001J \u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u00122\u0006\u0010'\u001a\u00020(H\u0007¢\u0006\u0002\u0010)J\u0019\u0010\u008e\u0001\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u0012H\u0007¢\u0006\u0003\u0010\u008f\u0001J\t\u0010\u0090\u0001\u001a\u00020\u0017H\u0007J\u0019\u0010\u0091\u0001\u001a\u00020\u00172\u0006\u0010S\u001a\u00020T2\u0006\u0010'\u001a\u00020(H\u0007J\u0011\u0010\u0092\u0001\u001a\u0004\u0018\u00010\u0017H\u0007¢\u0006\u0003\u0010\u0093\u0001J\"\u0010\u0094\u0001\u001a\u0004\u0018\u00010\u00172\u0007\u0010\u0095\u0001\u001a\u00020\u00122\u0007\u0010\u0096\u0001\u001a\u00020\u001bH\u0007¢\u0006\u0002\u0010%J\u0011\u0010\u0097\u0001\u001a\u00020\u00172\u0006\u0010'\u001a\u00020(H\u0007R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0013R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0099\u0001"}, d2 = {"Lcom/discord/media/engine/MediaEngineModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "activityEventListener", "Lcom/facebook/react/bridge/ActivityEventListener;", "mediaEngine", "Lcom/discord/media/engine/MediaEngine;", "getMediaEngine", "()Lcom/discord/media/engine/MediaEngine;", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "startNs", "", "streamConnectionId", "", "Ljava/lang/Integer;", "streamPermissions", "Landroid/content/Intent;", "addConnectionCallbacks", "", "connectionId", "addListener", "type", "", "addSpeedTestConnectionCallbacks", "connectionInstanceConfigureConnectionRetries", "baseDelayMs", "maxDelayMs", "maxAttempts", "(IIII)Lkotlin/Unit;", "connectionInstanceDestroy", "connectionInstanceDestroyUser", "userId", "(ILjava/lang/String;)Lkotlin/Unit;", "connectionInstanceGetEncryptionModes", "callback", "Lcom/facebook/react/bridge/Callback;", "(ILcom/facebook/react/bridge/Callback;)Lkotlin/Unit;", "connectionInstanceGetFilteredStats", "filter", "(IILcom/facebook/react/bridge/Callback;)Lkotlin/Unit;", "connectionInstanceGetStats", "connectionInstanceMergeUsers", "users", "Lcom/facebook/react/bridge/ReadableArray;", "(ILcom/facebook/react/bridge/ReadableArray;)Lkotlin/Unit;", "connectionInstanceSetDesktopSource", "stringId", "useVideoHook", "", "connectionInstanceSetLocalMute", "mute", "(ILjava/lang/String;Z)Lkotlin/Unit;", "connectionInstanceSetLocalPan", ViewProps.LEFT, "", ViewProps.RIGHT, "(ILjava/lang/String;FF)Lkotlin/Unit;", "connectionInstanceSetLocalVolume", "volume", "(ILjava/lang/String;F)Lkotlin/Unit;", "connectionInstanceSetMinimumOutputDelay", "delay", "(II)Lkotlin/Unit;", "connectionInstanceSetNoInputThreshold", "threshold", "(IF)Lkotlin/Unit;", "connectionInstanceSetPTTActive", AppStateModule.APP_STATE_ACTIVE, "priority", "(IZZ)Lkotlin/Unit;", "connectionInstanceSetPingInterval", "pingInterval", "connectionInstanceSetSelfDeafen", "deafened", "(IZ)Lkotlin/Unit;", "connectionInstanceSetSelfMute", "muted", "connectionInstanceSetTransportOptions", "options", "Lcom/facebook/react/bridge/ReadableMap;", "(ILcom/facebook/react/bridge/ReadableMap;)Lkotlin/Unit;", "connectionInstanceSetVideoBroadcast", "broadcasting", "connectionInstanceTriggerOnVideoCallback", "createConnection", "connectionOptions", "Lkotlin/Function2;", "", "", "createOwnStreamConnectionWithOptions", "createSpeedTestConnection", "createSpeedTestConnectionWithOptions", "createVoiceConnectionWithOptions", "getAudioSubsystem", "getCodecCapabilities", "getCodecSurvey", "getConstants", "", "getInputDevices", "getName", "getOutputDevices", "getSupportedVideoCodecs", "getVideoInputDevices", "initialize", "invalidate", "rankRtcRegions", "regionsWithIps", "removeListeners", "count", "setAVAudioSessionMode", "mode", "setAudioInputEnabled", ViewProps.ENABLED, "setBroadcastThumbnailParams", "width", "height", "intervalSeconds", "setEmitVADLevel2", "enable", "setInputDevice", "deviceIndex", "Lcom/facebook/react/bridge/Dynamic;", "setInputVolume", "setNoInputThreshold", "setOutputDevice", "setOutputVolume", "setTransportOptions", "setVideoInputDevice", "speedTestConnectionInstanceDestroy", "speedTestConnectionInstanceGetEncryptionModes", "speedTestConnectionInstanceGetNetworkOverhead", "speedTestConnectionInstanceSetPingInterval", "speedTestConnectionInstanceSetTransportOptions", "speedTestConnectionInstanceStartSpeedTestReceiver", "(ILcom/facebook/react/bridge/ReadableMap;Lcom/facebook/react/bridge/Callback;)Lkotlin/Unit;", "speedTestConnectionInstanceStartSpeedTestSender", "speedTestConnectionInstanceStopSpeedTestReceiver", "speedTestConnectionInstanceStopSpeedTestSender", "(I)Lkotlin/Unit;", "startBroadcast", "startLocalAudioRecording", "stopBroadcast", "()Lkotlin/Unit;", "stopBroadcastWithError", "errorCode", "errorMessage", "stopLocalAudioRecording", "Companion", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class MediaEngineModule extends ReactContextBaseJavaModule {
     public static final Companion Companion = new Companion(null);
     public static final String NAME = "VoiceEngine";
@@ -60,8 +60,8 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
     private Intent streamPermissions;
     private final long startNs = System.nanoTime();
     private final ReactEvents reactEvents = new ReactEvents(x.a("no-input-callback", f0.b(NoInputCallbackEvent.class)), x.a("on-voice", f0.b(OnVoiceEvent.class)), x.a("device-changed", f0.b(DeviceChangedEvent.class)), x.a("on-broadcast-requested", f0.b(OnBroadcastRequestedEvent.class)), x.a("on-broadcast-thumbnail", f0.b(OnBroadcastThumbnailEvent.class)), x.a("user-speaking", f0.b(UserSpeakingEvent.class)), x.a("ping-callback", f0.b(PingCallbackEvent.class)), x.a("ping-timeout-callback", f0.b(PingTimeoutCallbackEvent.class)), x.a("on-video-callback", f0.b(OnVideoCallbackEvent.class)), x.a("active-sinks-change", f0.b(ActiveSinksChangeEvent.class)), x.a("speed-test-ping-callback", f0.b(SpeedTestPingCallbackEvent.class)), x.a("speed-test-ping-timeout-callback", f0.b(SpeedTestPingTimeoutCallbackEvent.class)), x.a("on-first-frame-callback", f0.b(FirstFrameCallbackEvent.class)));
-    private final ActivityEventListener activityEventListener = new ActivityEventListener() { // from class: com.discord.media.engine.MediaEngineModule$activityEventListener$1
-        @Override // com.facebook.react.bridge.ActivityEventListener
+    private final ActivityEventListener activityEventListener = new ActivityEventListener() { 
+        @Override 
         public void onActivityResult(Activity activity, int i10, int i11, Intent intent) {
             ReactEvents reactEvents;
             if (i11 == -1 && i10 == 420 && intent != null) {
@@ -71,19 +71,19 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
             }
         }
 
-        @Override // com.facebook.react.bridge.ActivityEventListener
+        @Override 
         public void onNewIntent(Intent intent) {
         }
     };
 
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J9\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0012\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\t0\r2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\t0\rH\u0082\bJ\f\u0010\u000f\u001a\u00020\u0010*\u00020\u0011H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/discord/media/engine/MediaEngineModule$Companion;", "", "()V", "NAME", "", "START_SCREENSHARE_REQUEST_CODE", "", "TAG", "setDeviceIndex", "", "deviceIndex", "Lcom/facebook/react/bridge/Dynamic;", "setInt", "Lkotlin/Function1;", "setString", "createScreenCaptureIntent", "Landroid/content/Intent;", "Landroid/content/Context;", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
 
         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-        /* loaded from: classes6.dex */
-        public /* synthetic */ class WhenMappings {
-            public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+        
+        public  class WhenMappings {
+            public static final  int[] $EnumSwitchMapping$0;
 
             static {
                 int[] iArr = new int[ReadableType.values().length];
@@ -102,11 +102,11 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final Intent createScreenCaptureIntent(Context context) {
             Object systemService = context.getSystemService("media_projection");
             q.e(systemService, "null cannot be cast to non-null type android.media.projection.MediaProjectionManager");
@@ -136,7 +136,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public MediaEngineModule(ReactApplicationContext reactContext) {
         super(reactContext);
         q.g(reactContext, "reactContext");
@@ -330,7 +330,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         this.mediaEngine.getCodecSurvey$media_engine_release(new MediaEngineModule$getCodecSurvey$1(callback));
     }
 
-    @Override // com.facebook.react.bridge.BaseJavaModule
+    @Override 
     public Map<String, Object> getConstants() {
         Map k10;
         Map k11;
@@ -353,7 +353,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         return this.mediaEngine;
     }
 
-    @Override // com.facebook.react.bridge.NativeModule
+    @Override 
     public String getName() {
         return NAME;
     }
@@ -380,7 +380,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         this.mediaEngine.getVideoInputDevices$media_engine_release(new MediaEngineModule$getVideoInputDevices$1(callback));
     }
 
-    @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule
+    @Override 
     public void initialize() {
         this.mediaEngine.setOnNoInputCallback$media_engine_release(new MediaEngineModule$initialize$1(this));
         this.mediaEngine.setOnVoiceCallback$media_engine_release(new MediaEngineModule$initialize$2(this));
@@ -389,7 +389,7 @@ public final class MediaEngineModule extends ReactContextBaseJavaModule {
         this.reactContext.addActivityEventListener(this.activityEventListener);
     }
 
-    @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule
+    @Override 
     public void invalidate() {
         super.invalidate();
         this.reactContext.removeActivityEventListener(this.activityEventListener);

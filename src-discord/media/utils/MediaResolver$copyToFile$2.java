@@ -15,18 +15,18 @@ import kotlin.jvm.internal.q;
 import kotlinx.coroutines.CoroutineScope;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "Landroid/net/Uri;", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.utils.MediaResolver$copyToFile$2", f = "MediaResolver.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
-public final class MediaResolver$copyToFile$2 extends k implements Function2<CoroutineScope, Continuation<? super Uri>, Object> {
-    final /* synthetic */ File $targetFile;
-    final /* synthetic */ Uri $uri;
-    int label;
-    final /* synthetic */ MediaResolver this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+public final class MediaResolver$copyToFile$2 extends k implements Function2<CoroutineScope, Continuation<? super Uri>, Object> {
+    final  File $targetFile;
+    final  Uri $uri;
+    int label;
+    final  MediaResolver this$0;
+
+    
+    
     public MediaResolver$copyToFile$2(File file, MediaResolver mediaResolver, Uri uri, Continuation<? super MediaResolver$copyToFile$2> continuation) {
         super(2, continuation);
         this.$targetFile = file;
@@ -34,7 +34,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
         this.$uri = uri;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new MediaResolver$copyToFile$2(this.$targetFile, this.this$0, this.$uri, continuation);
     }
@@ -43,7 +43,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
         return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         ContentResolver resolver;
         ContentResolver resolver2;

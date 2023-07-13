@@ -36,15 +36,15 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\b\u0012\u0004\u0012\u00020\u0007`\bH\u0016¨\u0006\t"}, d2 = {"Lcom/discord/bridge/DCDPackageList;", "Lcom/facebook/react/PackageList;", ZeroconfModule.KEY_SERVICE_HOST, "Lcom/facebook/react/ReactNativeHost;", "(Lcom/facebook/react/ReactNativeHost;)V", "getPackages", "Ljava/util/ArrayList;", "Lcom/facebook/react/ReactPackage;", "Lkotlin/collections/ArrayList;", "app_canaryRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes.dex */
+
 public final class DCDPackageList extends PackageList {
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public DCDPackageList(ReactNativeHost host) {
         super(host);
         q.g(host, "host");
     }
 
-    @Override // com.facebook.react.PackageList
+    @Override 
     public ArrayList<ReactPackage> getPackages() {
         ArrayList<ReactPackage> packages = super.getPackages();
         packages.add(new a());
@@ -55,7 +55,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(new com.BV.LinearGradient.a());
         packages.add(new b());
         packages.add(new yd.c());
-        packages.add(new com.github.yamill.orientation.a() { // from class: com.discord.bridge.DCDPackageList$getPackages$1
+        packages.add(new com.github.yamill.orientation.a() { 
         });
         packages.add(new d());
         packages.add(new a2.c());

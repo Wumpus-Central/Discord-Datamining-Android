@@ -14,17 +14,17 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\n\u0010\u0003\u001a\u0004\u0018\u00010\u0004H\u0003J\f\u0010\u0005\u001a\u00060\u0006R\u00020\u0001H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016J\u001a\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0016J\b\u0010\u000f\u001a\u00020\nH\u0014¨\u0006\u0010"}, d2 = {"Lcom/discord/main/MainActivity;", "Lcom/discord/react_activities/ReactActivity;", "()V", "currentReactContext", "Lcom/facebook/react/bridge/ReactContext;", "getActivityDelegate", "Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "getNameOfComponent", "", "onPictureInPictureModeChanged", "", "isInPictureInPictureMode", "", "newConfig", "Landroid/content/res/Configuration;", "onUserLeaveHint", "main_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public final class MainActivity extends ReactActivity {
     @SuppressLint({"VisibleForTests"})
     private final ReactContext currentReactContext() {
         return getReactInstanceManager().getCurrentReactContext();
     }
 
-    @Override // com.discord.react_activities.ReactActivity
+    @Override 
     public ReactActivity.ActivityDelegate getActivityDelegate() {
-        return new ReactActivity.ActivityDelegate() { // from class: com.discord.main.MainActivity$getActivityDelegate$1
-            /* JADX INFO: Access modifiers changed from: package-private */
+        return new ReactActivity.ActivityDelegate() { 
+            
             {
                 super(MainActivity.this, MainActivity.this);
             }
@@ -40,8 +40,8 @@ public final class MainActivity extends ReactActivity {
                 instance2.handleIntent(context2, intent);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            @Override // com.facebook.react.ReactActivityDelegate
+            
+            @Override 
             public void onCreate(Bundle bundle) {
                 super.onCreate(bundle);
                 Intent intent = MainActivity.this.getIntent();
@@ -49,7 +49,7 @@ public final class MainActivity extends ReactActivity {
                 parseIntent(intent);
             }
 
-            @Override // com.facebook.react.ReactActivityDelegate
+            @Override 
             public boolean onNewIntent(Intent intent) {
                 q.g(intent, "intent");
                 parseIntent(intent);
@@ -58,18 +58,18 @@ public final class MainActivity extends ReactActivity {
         };
     }
 
-    @Override // com.discord.react_activities.ReactActivity
+    @Override 
     public String getNameOfComponent() {
         return BuildConfig.MAIN_COMPONENT;
     }
 
-    @Override // android.app.Activity
+    @Override 
     public void onPictureInPictureModeChanged(boolean z10, Configuration configuration) {
         super.onPictureInPictureModeChanged(z10, configuration);
         ExternalPipModule.Companion.onPipModeChanged(currentReactContext(), z10);
     }
 
-    @Override // android.app.Activity
+    @Override 
     protected void onUserLeaveHint() {
         super.onUserLeaveHint();
         ExternalPipModule.Companion.onUserLeaveHint(currentReactContext());

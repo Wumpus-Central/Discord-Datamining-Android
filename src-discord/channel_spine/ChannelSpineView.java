@@ -18,7 +18,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u00002\u00020\u0001:\u00012B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0006J\b\u0010#\u001a\u00020\u0018H\u0002J\u0006\u0010$\u001a\u00020%J \u0010&\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010'\u001a\u00020\n2\u0006\u0010(\u001a\u00020)H\u0002J\u0010\u0010*\u001a\u00020%2\u0006\u0010+\u001a\u00020,H\u0014J\u0018\u0010-\u001a\u00020%2\u0006\u0010.\u001a\u00020\n2\u0006\u0010/\u001a\u00020\nH\u0014J\b\u00100\u001a\u00020%H\u0002J\u0018\u00101\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010'\u001a\u00020\nH\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0012\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\n@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\f\"\u0004\b\u0014\u0010\u000eR\u0014\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00170\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0011\u001a\u00020\u0018@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010 \u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\f\"\u0004\b\"\u0010\u000e¨\u00063"}, d2 = {"Lcom/discord/channel_spine/ChannelSpineView;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "arcRect", "Landroid/graphics/RectF;", "horizontalPadding", "", "getHorizontalPadding", "()I", "setHorizontalPadding", "(I)V", "isReplySpline", "", "value", "numRows", "getNumRows", "setNumRows", "paths", "", "Landroid/graphics/Path;", "", "rowHeight", "getRowHeight", "()F", "setRowHeight", "(F)V", "spinePaint", "Landroid/graphics/Paint;", "verticalPadding", "getVerticalPadding", "setVerticalPadding", "arcPercent", "configureAsReplySpline", "", "createSpinePath", "rowIndex", "direction", "Lcom/discord/channel_spine/ChannelSpineView$SpineDirection;", "onDraw", "canvas", "Landroid/graphics/Canvas;", "onMeasure", "widthMeasureSpec", "heightMeasureSpec", "rebuildLayout", "yOfRow", "SpineDirection", "channel_spine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class ChannelSpineView extends View {
     private final RectF arcRect;
     private int horizontalPadding;
@@ -29,9 +29,9 @@ public final class ChannelSpineView extends View {
     private final Paint spinePaint;
     private int verticalPadding;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0006\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\b¨\u0006\t"}, d2 = {"Lcom/discord/channel_spine/ChannelSpineView$SpineDirection;", "", "arcSweepAngle", "", "(Ljava/lang/String;IF)V", "getArcSweepAngle", "()F", "TOP_TO_BOTTOM", "BOTTOM_TO_TOP", "channel_spine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public enum SpineDirection {
         TOP_TO_BOTTOM(-90.0f),
         BOTTOM_TO_TOP(90.0f);
@@ -48,9 +48,9 @@ public final class ChannelSpineView extends View {
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
 
         static {
             int[] iArr = new int[SpineDirection.values().length];
@@ -66,13 +66,13 @@ public final class ChannelSpineView extends View {
         }
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public ChannelSpineView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ ChannelSpineView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  ChannelSpineView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -80,7 +80,7 @@ public final class ChannelSpineView extends View {
         return this.isReplySpline ? 0.25f : 0.5f;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void configureAsReplySpline$lambda$1(ChannelSpineView this$0, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
         q.g(this$0, "this$0");
         this$0.setRowHeight(SizeUtilsKt.getPxToDp(i13 - i11));
@@ -166,8 +166,8 @@ public final class ChannelSpineView extends View {
         this.verticalPadding = SizeUtilsKt.getDpToPx(0);
         this.horizontalPadding = SizeUtilsKt.getDpToPx(0);
         setNumRows(1);
-        addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.discord.channel_spine.a
-            @Override // android.view.View.OnLayoutChangeListener
+        addOnLayoutChangeListener(new View.OnLayoutChangeListener() { 
+            @Override 
             public final void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
                 ChannelSpineView.configureAsReplySpline$lambda$1(ChannelSpineView.this, view, i10, i11, i12, i13, i14, i15, i16, i17);
             }
@@ -190,7 +190,7 @@ public final class ChannelSpineView extends View {
         return this.verticalPadding;
     }
 
-    @Override // android.view.View
+    @Override 
     protected void onDraw(Canvas canvas) {
         q.g(canvas, "canvas");
         super.onDraw(canvas);
@@ -201,7 +201,7 @@ public final class ChannelSpineView extends View {
         canvas.restoreToCount(save);
     }
 
-    @Override // android.view.View
+    @Override 
     protected void onMeasure(int i10, int i11) {
         boolean z10;
         int i12;
@@ -285,7 +285,7 @@ public final class ChannelSpineView extends View {
         this.verticalPadding = i10;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public ChannelSpineView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         int i10;

@@ -11,16 +11,16 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "insets", "Landroidx/core/view/WindowInsetsCompat;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes5.dex */
-public final class SafeAreaProviderManager$addEventEmitters$2 extends s implements Function1<WindowInsetsCompat, Unit> {
-    final /* synthetic */ ThemedReactContext $reactContext;
-    final /* synthetic */ SafeAreaProvider $view;
-    final /* synthetic */ SafeAreaProviderManager this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "insets", "Landroidx/core/view/WindowInsetsCompat;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class SafeAreaProviderManager$addEventEmitters$2 extends s implements Function1<WindowInsetsCompat, Unit> {
+    final  ThemedReactContext $reactContext;
+    final  SafeAreaProvider $view;
+    final  SafeAreaProviderManager this$0;
+
+    
+    
     public SafeAreaProviderManager$addEventEmitters$2(SafeAreaProviderManager safeAreaProviderManager, ThemedReactContext themedReactContext, SafeAreaProvider safeAreaProvider) {
         super(1);
         this.this$0 = safeAreaProviderManager;
@@ -28,13 +28,13 @@ public final class SafeAreaProviderManager$addEventEmitters$2 extends s implemen
         this.$view = safeAreaProvider;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(WindowInsetsCompat windowInsetsCompat) {
+    @Override 
+    public   Unit invoke(WindowInsetsCompat windowInsetsCompat) {
         invoke2(windowInsetsCompat);
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke  reason: avoid collision after fix types in other method */
+    
     public final void invoke2(WindowInsetsCompat insets) {
         SafeAreaEdgeInsets safeAreaEdgeInsets;
         Insets insets2;

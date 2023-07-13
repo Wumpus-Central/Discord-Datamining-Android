@@ -12,7 +12,7 @@ import com.discord.chat.presentation.message.view.MessageContentView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class MessageViewReplyPreviewBinding {
     public final SimpleDraweeView replyAuthorAvatar;
     public final TextView replyAuthorName;

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import o0.b;
 
-/* loaded from: classes3.dex */
+
 public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
     static final int ACTION_MODE_DRAG_MASK = 16711680;
     private static final int ACTION_MODE_IDLE_MASK = 255;
@@ -68,8 +68,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     int mActivePointerId = -1;
     private int mActionState = 0;
     List<RecoverAnimation> mRecoverAnimations = new ArrayList();
-    final Runnable mScrollRunnable = new Runnable() { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.1
-        @Override // java.lang.Runnable
+    final Runnable mScrollRunnable = new Runnable() { 
+        @Override 
         public void run() {
             ChatListItemTouchHelper chatListItemTouchHelper = ChatListItemTouchHelper.this;
             if (chatListItemTouchHelper.mSelected != null && chatListItemTouchHelper.scrollIfNecessary()) {
@@ -87,8 +87,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     private RecyclerView.ChildDrawingOrderCallback mChildDrawingOrderCallback = null;
     View mOverdrawChild = null;
     int mOverdrawChildPosition = -1;
-    private final RecyclerView.OnItemTouchListener mOnItemTouchListener = new RecyclerView.OnItemTouchListener() { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.2
-        @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
+    private final RecyclerView.OnItemTouchListener mOnItemTouchListener = new RecyclerView.OnItemTouchListener() { 
+        @Override 
         public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
             int findPointerIndex;
             RecoverAnimation findAnimation;
@@ -135,14 +135,14 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             return false;
         }
 
-        @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
+        @Override 
         public void onRequestDisallowInterceptTouchEvent(boolean z10) {
             if (z10) {
                 ChatListItemTouchHelper.this.select(null, 0);
             }
         }
 
-        @Override // androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
+        @Override 
         public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
             ChatListItemTouchHelper.this.mGestureDetector.a(motionEvent);
             VelocityTracker velocityTracker = ChatListItemTouchHelper.this.mVelocityTracker;
@@ -204,8 +204,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         }
     };
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: classes3.dex */
+    
+    
     public class ItemTouchHelperGestureListener extends GestureDetector.SimpleOnGestureListener {
         private boolean mShouldReactToLongPress = true;
 
@@ -216,12 +216,12 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mShouldReactToLongPress = false;
         }
 
-        @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
+        @Override 
         public boolean onDown(MotionEvent motionEvent) {
             return true;
         }
 
-        @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
+        @Override 
         public void onLongPress(MotionEvent motionEvent) {
             View findChildView;
             RecyclerView.ViewHolder childViewHolder;
@@ -248,8 +248,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: classes3.dex */
+    
+    
     public static class RecoverAnimation implements Animator.AnimatorListener {
         final int mActionState;
         final int mAnimationType;
@@ -276,8 +276,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mTargetY = f13;
             ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
             this.mValueAnimator = ofFloat;
-            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.RecoverAnimation.1
-                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { 
+                @Override 
                 public void onAnimationUpdate(ValueAnimator valueAnimator) {
                     RecoverAnimation.this.setFraction(valueAnimator.getAnimatedFraction());
                 }
@@ -294,12 +294,12 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mValueAnimator.cancel();
         }
 
-        @Override // android.animation.Animator.AnimatorListener
+        @Override 
         public void onAnimationCancel(Animator animator) {
             setFraction(1.0f);
         }
 
-        @Override // android.animation.Animator.AnimatorListener
+        @Override 
         public void onAnimationEnd(Animator animator) {
             if (!this.mEnded) {
                 this.mViewHolder.setIsRecyclable(true);
@@ -307,11 +307,11 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mEnded = true;
         }
 
-        @Override // android.animation.Animator.AnimatorListener
+        @Override 
         public void onAnimationRepeat(Animator animator) {
         }
 
-        @Override // android.animation.Animator.AnimatorListener
+        @Override 
         public void onAnimationStart(Animator animator) {
         }
 
@@ -352,8 +352,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
 
     private void addChildDrawingOrderCallback() {
         if (this.mChildDrawingOrderCallback == null) {
-            this.mChildDrawingOrderCallback = new RecyclerView.ChildDrawingOrderCallback() { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.5
-                @Override // androidx.recyclerview.widget.RecyclerView.ChildDrawingOrderCallback
+            this.mChildDrawingOrderCallback = new RecyclerView.ChildDrawingOrderCallback() { 
+                @Override 
                 public int onGetChildDrawingOrder(int i10, int i11) {
                     ChatListItemTouchHelper chatListItemTouchHelper = ChatListItemTouchHelper.this;
                     View view = chatListItemTouchHelper.mOverdrawChild;
@@ -711,7 +711,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         return this.mRecyclerView.findChildViewUnder(x10, y10);
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
+    @Override 
     public void getItemOffsets(Rect rect, View view, RecyclerView recyclerView, RecyclerView.State state) {
         rect.setEmpty();
     }
@@ -758,11 +758,11 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         this.mVelocityTracker = VelocityTracker.obtain();
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.OnChildAttachStateChangeListener
+    @Override 
     public void onChildViewAttachedToWindow(View view) {
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.OnChildAttachStateChangeListener
+    @Override 
     public void onChildViewDetachedFromWindow(View view) {
         removeChildDrawingOrderCallbackIfNecessary(view);
         RecyclerView.ViewHolder childViewHolder = this.mRecyclerView.getChildViewHolder(view);
@@ -780,7 +780,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         }
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
+    @Override 
     public void onDraw(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
         float f10;
         float f11;
@@ -798,7 +798,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         this.mCallback.onDraw(canvas, recyclerView, this.mSelected, this.mRecoverAnimations, this.mActionState, f11, f10);
     }
 
-    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
+    @Override 
     public void onDrawOver(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
         float f10;
         float f11;
@@ -816,8 +816,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
     }
 
     void postDispatchSwipe(final RecoverAnimation recoverAnimation, final int i10) {
-        this.mRecyclerView.post(new Runnable() { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.4
-            @Override // java.lang.Runnable
+        this.mRecyclerView.post(new Runnable() { 
+            @Override 
             public void run() {
                 RecyclerView recyclerView = ChatListItemTouchHelper.this.mRecyclerView;
                 if (recyclerView != null && recyclerView.isAttachedToWindow()) {
@@ -844,24 +844,16 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:34:0x00c1, code lost:
-        if (r1 > 0) goto L_0x00c5;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:27:0x0084  */
-    /* JADX WARN: Removed duplicated region for block: B:37:0x00c7  */
-    /* JADX WARN: Removed duplicated region for block: B:40:0x00e1  */
-    /* JADX WARN: Removed duplicated region for block: B:41:0x00fd  */
-    /* JADX WARN: Removed duplicated region for block: B:43:0x0100 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:48:0x010c  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
+    
     boolean scrollIfNecessary() {
-        /*
-            Method dump skipped, instructions count: 277
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.list.ChatListItemTouchHelper.scrollIfNecessary():boolean");
     }
 
@@ -920,8 +912,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                     float[] fArr = this.mTmpPosition;
                     float f12 = fArr[0];
                     float f13 = fArr[1];
-                    RecoverAnimation recoverAnimation = new RecoverAnimation(viewHolder2, i12, i13, f12, f13, f11, f10) { // from class: com.discord.chat.presentation.list.ChatListItemTouchHelper.3
-                        @Override // com.discord.chat.presentation.list.ChatListItemTouchHelper.RecoverAnimation, android.animation.Animator.AnimatorListener
+                    RecoverAnimation recoverAnimation = new RecoverAnimation(viewHolder2, i12, i13, f12, f13, f11, f10) { 
+                        @Override 
                         public void onAnimationEnd(Animator animator) {
                             super.onAnimationEnd(animator);
                             if (!this.mOverridden) {

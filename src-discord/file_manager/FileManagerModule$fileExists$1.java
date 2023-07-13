@@ -15,21 +15,21 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.file_manager.FileManagerModule$fileExists$1", f = "FileManagerModule.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
+
 final class FileManagerModule$fileExists$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ String $path;
-    final /* synthetic */ Promise $promise;
+    final  String $path;
+    final  Promise $promise;
     int label;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public FileManagerModule$fileExists$1(Promise promise, String str, Continuation<? super FileManagerModule$fileExists$1> continuation) {
         super(2, continuation);
         this.$promise = promise;
         this.$path = str;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new FileManagerModule$fileExists$1(this.$promise, this.$path, continuation);
     }
@@ -38,7 +38,7 @@ final class FileManagerModule$fileExists$1 extends k implements Function2<Corout
         return ((FileManagerModule$fileExists$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         d.d();
         if (this.label == 0) {

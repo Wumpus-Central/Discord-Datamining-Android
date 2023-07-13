@@ -8,20 +8,20 @@ import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-/* synthetic */ class EmbedViewHolder$bind$7 extends n implements Function3<String, String, String, Unit> {
-    /* JADX INFO: Access modifiers changed from: package-private */
+
+ class EmbedViewHolder$bind$7 extends n implements Function3<String, String, String, Unit> {
+    
     public EmbedViewHolder$bind$7(Object obj) {
         super(3, obj, ChatEventHandler.class, "onTapChannel", "onTapChannel(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", 0);
     }
 
-    @Override // kotlin.jvm.functions.Function3
-    public /* bridge */ /* synthetic */ Unit invoke(String str, String str2, String str3) {
+    @Override 
+    public   Unit invoke(String str, String str2, String str3) {
         invoke2(str, str2, str3);
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke  reason: avoid collision after fix types in other method */
+    
     public final void invoke2(String p02, String str, String str2) {
         q.g(p02, "p0");
         ((ChatEventHandler) this.receiver).onTapChannel(p02, str, str2);

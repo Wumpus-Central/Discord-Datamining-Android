@@ -8,22 +8,22 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.n;
 import kotlin.jvm.internal.q;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
-public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$15 extends n implements Function1<MessageId, Unit> {
-    /* JADX INFO: Access modifiers changed from: package-private */
+
+public  class MessageAccessoriesAdapter$onBindViewHolder$15 extends n implements Function1<MessageId, Unit> {
+    
     public MessageAccessoriesAdapter$onBindViewHolder$15(Object obj) {
         super(1, obj, ChatEventHandler.class, "onTapSeeMore", "onTapSeeMore-1xi1bu0(Ljava/lang/String;)V", 0);
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(MessageId messageId) {
+    @Override 
+    public   Unit invoke(MessageId messageId) {
         m197invoke1xi1bu0(messageId.m598unboximpl());
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke-1xi1bu0  reason: not valid java name */
+    
     public final void m197invoke1xi1bu0(String p02) {
         q.g(p02, "p0");
         ((ChatEventHandler) this.receiver).mo171onTapSeeMore1xi1bu0(p02);

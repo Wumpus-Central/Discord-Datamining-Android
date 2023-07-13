@@ -31,10 +31,10 @@ import si.m0;
 import si.w0;
 
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"}, d2 = {"com/discord/notifications/api/NotificationData.$serializer", "Lsi/f0;", "Lcom/discord/notifications/api/NotificationData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "<init>", "()V", "notification_api_release"}, k = 1, mv = {1, 8, 0})
-/* loaded from: classes4.dex */
+
 public final class NotificationData$$serializer implements f0<NotificationData> {
     public static final NotificationData$$serializer INSTANCE;
-    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+    private static final  PluginGeneratedSerialDescriptor descriptor;
 
     static {
         NotificationData$$serializer notificationData$$serializer = new NotificationData$$serializer();
@@ -89,7 +89,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
     private NotificationData$$serializer() {
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] childSerializers() {
         a2 a2Var = a2.f26230a;
         m0 m0Var = m0.f26305a;
@@ -98,7 +98,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
         return new KSerializer[]{a2Var, a.u(MessageId$$serializer.INSTANCE), a.u(m0Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), a.u(w0.f26346a), a.u(m0Var), a.u(a2Var), a.u(channelId$$serializer), a.u(a2Var), a.u(a2Var), a.u(channelId$$serializer), a.u(a2Var), ChannelListSerializer.INSTANCE, a.u(UserId$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(GuildId$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(m0Var), a.u(a2Var), a.u(ApplicationId$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(NotificationMessageSerializer.INSTANCE), a.u(a2Var), a.u(m0Var), CanReplySerializer.INSTANCE, hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(hVar), a.u(a2Var)};
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
+    @Override 
     public NotificationData deserialize(Decoder decoder) {
         Object obj;
         Object obj2;
@@ -1354,7 +1354,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
         return new NotificationData(i11, i10, str, messageId != null ? messageId.m598unboximpl() : null, (Integer) obj23, (String) obj24, (Integer) obj21, (String) obj20, (Long) obj25, (Integer) obj18, (String) obj17, (ChannelId) obj16, (String) obj40, (String) obj39, (ChannelId) obj38, (String) obj22, (List) obj37, (UserId) obj36, (String) obj19, (String) obj35, (Integer) obj27, (String) obj31, (String) obj15, (Integer) obj13, (GuildId) obj10, (String) obj9, (String) obj8, (Integer) obj7, (String) obj6, (ApplicationId) obj5, (String) obj4, (String) obj3, (NotificationMessage) obj34, (String) obj14, (Integer) obj2, z11, z10, (String) obj11, (String) obj33, (String) obj32, (String) obj, (String) obj30, (String) obj29, (Boolean) obj28, (String) obj12, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, pi.h, kotlinx.serialization.DeserializationStrategy
+    @Override 
     public SerialDescriptor getDescriptor() {
         return descriptor;
     }
@@ -1368,7 +1368,7 @@ public final class NotificationData$$serializer implements f0<NotificationData> 
         c10.b(descriptor2);
     }
 
-    @Override // si.f0
+    @Override 
     public KSerializer<?>[] typeParametersSerializers() {
         return f0.a.a(this);
     }

@@ -37,7 +37,7 @@ import kotlin.jvm.internal.e0;
 import kotlin.jvm.internal.q;
 
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u009c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0015\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b#\b\u0016\u0018\u0000 \u007f2\u00020\u00012\u00020\u0002:\u0003\u007f\u0080\u0001BC\b\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\t\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u000fBO\b\u0017\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\b\b\u0001\u0010\u0012\u001a\u00020\u0006\u0012\u0006\u0010\u0013\u001a\u00020\u0014\u0012\u0006\u0010\u0015\u001a\u00020\u0006\u0012\u0006\u0010\u0016\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\b\u0002\u0010\u0017\u001a\u00020\t\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u0018J\u0010\u0010U\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u0006\u0010X\u001a\u00020VJ\b\u0010Y\u001a\u00020VH\u0002J\u0006\u0010Z\u001a\u00020VJ\b\u0010[\u001a\u00020VH\u0002J\u0010\u0010\\\u001a\u00020V2\u0006\u0010]\u001a\u00020^H\u0016J\b\u0010_\u001a\u00020\u0006H\u0016J\b\u0010`\u001a\u00020\u0006H\u0016J\b\u0010a\u001a\u00020\u0006H\u0016J\b\u0010b\u001a\u00020\u0006H\u0016J\b\u0010c\u001a\u00020\u0006H\u0016J\u0006\u0010d\u001a\u00020\tJ\b\u0010e\u001a\u00020\tH\u0002J\b\u0010f\u001a\u00020VH\u0002J\b\u00101\u001a\u00020\tH\u0016J\u0010\u0010g\u001a\u00020V2\u0006\u0010h\u001a\u00020,H\u0014J\u0006\u0010i\u001a\u00020VJ\b\u0010j\u001a\u00020VH\u0002J\u0010\u0010k\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u001b\u0010l\u001a\u00020V2\u000e\u0010m\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;¢\u0006\u0002\u0010nJ\b\u0010o\u001a\u00020VH\u0002J\u0006\u0010p\u001a\u00020\tJ\b\u0010q\u001a\u00020\tH\u0002J\u000e\u0010r\u001a\u00020V2\u0006\u0010s\u001a\u00020\tJ\u0010\u0010t\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010'J\u0016\u0010u\u001a\u00020V2\u0006\u0010v\u001a\u00020\u00142\u0006\u0010w\u001a\u00020\u0006J\u000e\u0010x\u001a\u00020V2\u0006\u0010s\u001a\u00020FJ\u000e\u0010y\u001a\u00020V2\u0006\u0010z\u001a\u00020\fJ\u001c\u0010{\u001a\u00020V2\u0014\u0010|\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000109J\b\u0010}\u001a\u00020VH\u0016J\b\u0010~\u001a\u00020VH\u0016R\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u001a8F¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u000e\u0010\u001d\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010!\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001cR\u0010\u0010#\u001a\u0004\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010&\u001a\u0004\u0018\u00010'X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020,X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010.\u001a\u00020\t8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b.\u0010/R\u000e\u00100\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00101\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u00105\u001a\u0004\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u000203X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u00108\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u000609X\u0082\u0004¢\u0006\u0002\n\u0000R\u0018\u0010:\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;X\u0082\u000e¢\u0006\u0004\n\u0002\u0010<R\u000e\u0010=\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010>\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b?\u0010\u001cR\u001c\u0010@\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010'0B0AX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010C\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u000609X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010D\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010;X\u0082\u000e¢\u0006\u0004\n\u0002\u0010<R\u000e\u0010E\u001a\u00020FX\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010G\u001a\u0004\u0018\u00010\u001a2\b\u0010 \u001a\u0004\u0018\u00010\u001a@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\bH\u0010\u001cR\u000e\u0010I\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010J\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010K\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010L\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010M\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010N\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010Q\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010R\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010S\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010T\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000109X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0081\u0001"}, d2 = {"Lcom/discord/rlottie/RLottieDrawable;", "Landroid/graphics/drawable/BitmapDrawable;", "Landroid/graphics/drawable/Animatable;", JSStackTrace.FILE_KEY, "Ljava/io/File;", "w", "", "h", "precache", "", "limitFps", "screenRefreshRate", "", "colorReplacement", "", "(Ljava/io/File;IIZZF[I)V", "context", "Landroid/content/Context;", "rawRes", ZeroconfModule.KEY_SERVICE_NAME, "", "width", "height", "startDecode", "(Landroid/content/Context;ILjava/lang/String;IIFZ[I)V", "animatedBitmap", "Landroid/graphics/Bitmap;", "getAnimatedBitmap", "()Landroid/graphics/Bitmap;", "applyTransformation", "applyingLayerColors", "autoRepeatPlayCount", "<set-?>", "backgroundBitmap", "getBackgroundBitmap", "cacheGenerateTask", "Ljava/lang/Runnable;", "currentFrame", "currentParentView", "Landroid/view/View;", "customEndFrame", "decodeSingleFrame", "destroyWhenDone", "dstRect", "Landroid/graphics/Rect;", "forceFrameRedraw", "isCurrentParentViewMaster", "()Z", "isRecycled", "isRunning", "lastFrameTime", "", "loadFrameRunnable", "loadFrameTask", "metaData", "nativePtr", "newColorUpdates", "Ljava/util/HashMap;", "newReplaceColors", "", "[Ljava/lang/Integer;", "nextFrameIsLast", "nextRenderingBitmap", "getNextRenderingBitmap", "parentViews", "Ljava/util/ArrayList;", "Ljava/lang/ref/WeakReference;", "pendingColorUpdates", "pendingReplaceColors", "playbackMode", "Lcom/discord/rlottie/RLottieDrawable$PlaybackMode;", "renderingBitmap", "getRenderingBitmap", ViewProps.SCALE_X, ViewProps.SCALE_Y, "shouldLimitFps", "singleFrameDecoded", "timeBetweenFrames", "uiRunnable", "uiRunnableCacheFinished", "uiRunnableGenerateCache", "uiRunnableGenerateCacheQueue", "uiRunnableLastFrame", "uiRunnableNoFrame", "vibrationPattern", "addParentView", "", "view", "beginApplyLayerColors", "checkRunningTasks", "commitApplyLayerColors", "decodeFrameFinishedInternal", "draw", "canvas", "Landroid/graphics/Canvas;", "getIntrinsicHeight", "getIntrinsicWidth", "getMinimumHeight", "getMinimumWidth", "getOpacity", "hasBitmap", "hasParentView", "invalidateInternal", "onBoundsChange", "bounds", "recycle", "recycleResources", "removeParentView", "replaceColors", LinearGradientManager.PROP_COLORS, "([Ljava/lang/Integer;)V", "requestRedrawColors", "restart", "scheduleNextGetFrame", "setAllowDecodeSingleFrame", "value", "setCurrentParentView", "setLayerColor", "layerName", ViewProps.COLOR, "setPlaybackMode", "setProgress", "oldProgress", "setVibrationPattern", "pattern", ViewProps.START, "stop", "Companion", "PlaybackMode", "rlottie_release"}, k = 1, mv = {1, 1, 16})
-/* loaded from: classes5.dex */
+
 public class RLottieDrawable extends BitmapDrawable implements Animatable {
     private static ThreadPoolExecutor lottieCacheGenerateQueue;
     private boolean applyTransformation;
@@ -90,39 +90,39 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
     private static final ExecutorService loadFrameRunnableQueue = Executors.newCachedThreadPool();
 
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002JC\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00172\b\u0010\u0018\u001a\u0004\u0018\u00010\u00152\u0006\u0010\u0019\u001a\u00020\u0017H\u0082 J!\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0082 J+\u0010\u001d\u001a\u00020\u000e2\u0006\u0010\u001e\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u00152\b\u0010\u0018\u001a\u0004\u0018\u00010\u0015H\u0082 J\u0011\u0010 \u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u000eH\u0082 JA\u0010!\u001a\u00020\u00122\u0006\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\"\u001a\u00020\u00122\u0006\u0010#\u001a\u00020$2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010%\u001a\u00020\u00122\u0006\u0010&\u001a\u00020\u0017H\u0082 J\u0019\u0010'\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u0018\u001a\u00020\u0015H\u0082 J!\u0010(\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u000e2\u0006\u0010)\u001a\u00020\u00102\u0006\u0010*\u001a\u00020\u0012H\u0082 R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006+"}, d2 = {"Lcom/discord/rlottie/RLottieDrawable$Companion;", "", "()V", "buffer", "", "loadFrameRunnableQueue", "Ljava/util/concurrent/ExecutorService;", "kotlin.jvm.PlatformType", "lottieCacheGenerateQueue", "Ljava/util/concurrent/ThreadPoolExecutor;", "readBuffer", "uiHandler", "Landroid/os/Handler;", "create", "", "src", "", "w", "", "h", "params", "", "precache", "", "colorReplacement", "limitFps", "createCache", "", "ptr", "createWithJson", "json", ZeroconfModule.KEY_SERVICE_NAME, "destroy", "getFrame", "frame", "bitmap", "Landroid/graphics/Bitmap;", "stride", "clear", "replaceColors", "setLayerColor", "layer", ViewProps.COLOR, "rlottie_release"}, k = 1, mv = {1, 1, 16})
-    /* loaded from: classes5.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native long create(String str, int i10, int i11, int[] iArr, boolean z10, int[] iArr2, boolean z11);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native void createCache(long j10, int i10, int i11);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native long createWithJson(String str, String str2, int[] iArr, int[] iArr2);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native void destroy(long j10);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native int getFrame(long j10, int i10, Bitmap bitmap, int i11, int i12, int i13, boolean z10);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native void replaceColors(long j10, int[] iArr);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final native void setLayerColor(long j10, String str, int i10);
     }
 
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"}, d2 = {"Lcom/discord/rlottie/RLottieDrawable$PlaybackMode;", "", "(Ljava/lang/String;I)V", "LOOP", "ONCE", "FREEZE", "rlottie_release"}, k = 1, mv = {1, 1, 16})
-    /* loaded from: classes5.dex */
+    
     public enum PlaybackMode {
         LOOP,
         ONCE,
@@ -141,7 +141,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this(file, i10, i11, z10, z11, f10, null, 64, null);
     }
 
-    public /* synthetic */ RLottieDrawable(File file, int i10, int i11, boolean z10, boolean z11, float f10, int[] iArr, int i12, DefaultConstructorMarker defaultConstructorMarker) {
+    public  RLottieDrawable(File file, int i10, int i11, boolean z10, boolean z11, float f10, int[] iArr, int i12, DefaultConstructorMarker defaultConstructorMarker) {
         this(file, i10, i11, z10, z11, f10, (i12 & 64) != 0 ? null : iArr);
     }
 
@@ -161,7 +161,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void decodeFrameFinishedInternal() {
         if (this.destroyWhenDone) {
             checkRunningTasks();
@@ -193,7 +193,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void invalidateInternal() {
         int size = this.parentViews.size();
         int i10 = 0;
@@ -332,7 +332,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         }
     }
 
-    @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
+    @Override 
     public void draw(Canvas canvas) {
         int i10;
         View view;
@@ -434,22 +434,22 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         return this.backgroundBitmap;
     }
 
-    @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
+    @Override 
     public int getIntrinsicHeight() {
         return this.height;
     }
 
-    @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
+    @Override 
     public int getIntrinsicWidth() {
         return this.width;
     }
 
-    @Override // android.graphics.drawable.Drawable
+    @Override 
     public int getMinimumHeight() {
         return this.height;
     }
 
-    @Override // android.graphics.drawable.Drawable
+    @Override 
     public int getMinimumWidth() {
         return this.width;
     }
@@ -458,7 +458,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         return this.nextRenderingBitmap;
     }
 
-    @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
+    @Override 
     public int getOpacity() {
         return -2;
     }
@@ -471,12 +471,12 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         return (this.nativePtr == 0 || (this.renderingBitmap == null && this.nextRenderingBitmap == null)) ? false : true;
     }
 
-    @Override // android.graphics.drawable.Animatable
+    @Override 
     public boolean isRunning() {
         return this.isRunning;
     }
 
-    @Override // android.graphics.drawable.BitmapDrawable, android.graphics.drawable.Drawable
+    @Override 
     protected void onBoundsChange(Rect bounds) {
         q.h(bounds, "bounds");
         super.onBoundsChange(bounds);
@@ -555,45 +555,10 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:6:0x000b, code lost:
-        if (r3 > 1.0f) goto L_0x0005;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     public final void setProgress(float r3) {
-        /*
-            r2 = this;
-            r0 = 0
-            int r1 = (r3 > r0 ? 1 : (r3 == r0 ? 0 : -1))
-            if (r1 >= 0) goto L_0x0007
-        L_0x0005:
-            r3 = r0
-            goto L_0x000e
-        L_0x0007:
-            r0 = 1065353216(0x3f800000, float:1.0)
-            int r1 = (r3 > r0 ? 1 : (r3 == r0 ? 0 : -1))
-            if (r1 <= 0) goto L_0x000e
-            goto L_0x0005
-        L_0x000e:
-            int[] r0 = r2.metaData
-            r1 = 0
-            r0 = r0[r1]
-            float r0 = (float) r0
-            float r0 = r0 * r3
-            int r3 = (int) r0
-            r2.currentFrame = r3
-            r2.nextFrameIsLast = r1
-            r2.singleFrameDecoded = r1
-            boolean r3 = r2.scheduleNextGetFrame()
-            if (r3 != 0) goto L_0x0025
-            r3 = 1
-            r2.forceFrameRedraw = r3
-        L_0x0025:
-            r2.invalidateSelf()
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.rlottie.RLottieDrawable.setProgress(float):void");
     }
 
@@ -601,7 +566,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this.vibrationPattern = hashMap;
     }
 
-    @Override // android.graphics.drawable.Animatable
+    @Override 
     public void start() {
         if (this.isRunning) {
             return;
@@ -613,7 +578,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         }
     }
 
-    @Override // android.graphics.drawable.Animatable
+    @Override 
     public void stop() {
         this.isRunning = false;
     }
@@ -631,30 +596,30 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this.scaleY = 1.0f;
         this.dstRect = new Rect();
         this.parentViews = new ArrayList<>();
-        this.uiRunnableNoFrame = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableNoFrame$1
-            @Override // java.lang.Runnable
+        this.uiRunnableNoFrame = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.loadFrameTask = null;
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableCacheFinished = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableCacheFinished$1
-            @Override // java.lang.Runnable
+        this.uiRunnableCacheFinished = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.cacheGenerateTask = null;
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnable = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnable$1
-            @Override // java.lang.Runnable
+        this.uiRunnable = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.singleFrameDecoded = true;
                 RLottieDrawable.this.invalidateInternal();
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableLastFrame = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableLastFrame$1
-            @Override // java.lang.Runnable
+        this.uiRunnableLastFrame = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.singleFrameDecoded = true;
                 RLottieDrawable.this.isRunning = false;
@@ -662,8 +627,8 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableGenerateCacheQueue = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCacheQueue$1
-            @Override // java.lang.Runnable
+        this.uiRunnableGenerateCacheQueue = new Runnable() { 
+            @Override 
             public final void run() {
                 Runnable runnable;
                 long j10;
@@ -684,46 +649,17 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 }
             }
         };
-        this.uiRunnableGenerateCache = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCache$1
-            /* JADX WARN: Code restructure failed: missing block: B:8:0x001c, code lost:
-                r0 = com.discord.rlottie.RLottieDrawable.lottieCacheGenerateQueue;
-             */
-            @Override // java.lang.Runnable
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct code enable 'Show inconsistent code' option in preferences
-            */
+        this.uiRunnableGenerateCache = new Runnable() { 
+            
+            @Override 
+            
             public final void run() {
-                /*
-                    r4 = this;
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    boolean r0 = com.discord.rlottie.RLottieDrawable.access$isRecycled$p(r0)
-                    if (r0 != 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    boolean r0 = com.discord.rlottie.RLottieDrawable.access$getDestroyWhenDone$p(r0)
-                    if (r0 != 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    long r0 = com.discord.rlottie.RLottieDrawable.access$getNativePtr$p(r0)
-                    r2 = 0
-                    int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
-                    if (r0 == 0) goto L_0x0030
-                    java.util.concurrent.ThreadPoolExecutor r0 = com.discord.rlottie.RLottieDrawable.access$getLottieCacheGenerateQueue$cp()
-                    if (r0 == 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r1 = com.discord.rlottie.RLottieDrawable.this
-                    java.lang.Runnable r1 = com.discord.rlottie.RLottieDrawable.access$getUiRunnableGenerateCacheQueue$p(r1)
-                    com.discord.rlottie.RLottieDrawable r2 = com.discord.rlottie.RLottieDrawable.this
-                    com.discord.rlottie.RLottieDrawable.access$setCacheGenerateTask$p(r2, r1)
-                    r0.execute(r1)
-                L_0x0030:
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    com.discord.rlottie.RLottieDrawable.access$decodeFrameFinishedInternal(r0)
-                    return
-                */
+                
                 throw new UnsupportedOperationException("Method not decompiled: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCache$1.run():void");
             }
         };
-        this.loadFrameRunnable = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$loadFrameRunnable$1
-            @Override // java.lang.Runnable
+        this.loadFrameRunnable = new Runnable() { 
+            @Override 
             public final void run() {
                 boolean z12;
                 long j10;
@@ -906,7 +842,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this.timeBetweenFrames = Math.max(this.shouldLimitFps ? 33 : 16, (int) (1000.0f / iArr2[1]));
     }
 
-    public /* synthetic */ RLottieDrawable(Context context, int i10, String str, int i11, int i12, float f10, boolean z10, int[] iArr, int i13, DefaultConstructorMarker defaultConstructorMarker) {
+    public  RLottieDrawable(Context context, int i10, String str, int i11, int i12, float f10, boolean z10, int[] iArr, int i13, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, i10, str, i11, i12, f10, (i13 & 64) != 0 ? true : z10, (i13 & 128) != 0 ? null : iArr);
     }
 
@@ -923,30 +859,30 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         this.scaleY = 1.0f;
         this.dstRect = new Rect();
         this.parentViews = new ArrayList<>();
-        this.uiRunnableNoFrame = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableNoFrame$1
-            @Override // java.lang.Runnable
+        this.uiRunnableNoFrame = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.loadFrameTask = null;
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableCacheFinished = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableCacheFinished$1
-            @Override // java.lang.Runnable
+        this.uiRunnableCacheFinished = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.cacheGenerateTask = null;
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnable = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnable$1
-            @Override // java.lang.Runnable
+        this.uiRunnable = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.singleFrameDecoded = true;
                 RLottieDrawable.this.invalidateInternal();
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableLastFrame = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableLastFrame$1
-            @Override // java.lang.Runnable
+        this.uiRunnableLastFrame = new Runnable() { 
+            @Override 
             public final void run() {
                 RLottieDrawable.this.singleFrameDecoded = true;
                 RLottieDrawable.this.isRunning = false;
@@ -954,8 +890,8 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 RLottieDrawable.this.decodeFrameFinishedInternal();
             }
         };
-        this.uiRunnableGenerateCacheQueue = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCacheQueue$1
-            @Override // java.lang.Runnable
+        this.uiRunnableGenerateCacheQueue = new Runnable() { 
+            @Override 
             public final void run() {
                 Runnable runnable;
                 long j10;
@@ -976,43 +912,16 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                 }
             }
         };
-        this.uiRunnableGenerateCache = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCache$1
-            @Override // java.lang.Runnable
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct code enable 'Show inconsistent code' option in preferences
-            */
+        this.uiRunnableGenerateCache = new Runnable() { 
+            @Override 
+            
             public final void run() {
-                /*
-                    r4 = this;
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    boolean r0 = com.discord.rlottie.RLottieDrawable.access$isRecycled$p(r0)
-                    if (r0 != 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    boolean r0 = com.discord.rlottie.RLottieDrawable.access$getDestroyWhenDone$p(r0)
-                    if (r0 != 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    long r0 = com.discord.rlottie.RLottieDrawable.access$getNativePtr$p(r0)
-                    r2 = 0
-                    int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
-                    if (r0 == 0) goto L_0x0030
-                    java.util.concurrent.ThreadPoolExecutor r0 = com.discord.rlottie.RLottieDrawable.access$getLottieCacheGenerateQueue$cp()
-                    if (r0 == 0) goto L_0x0030
-                    com.discord.rlottie.RLottieDrawable r1 = com.discord.rlottie.RLottieDrawable.this
-                    java.lang.Runnable r1 = com.discord.rlottie.RLottieDrawable.access$getUiRunnableGenerateCacheQueue$p(r1)
-                    com.discord.rlottie.RLottieDrawable r2 = com.discord.rlottie.RLottieDrawable.this
-                    com.discord.rlottie.RLottieDrawable.access$setCacheGenerateTask$p(r2, r1)
-                    r0.execute(r1)
-                L_0x0030:
-                    com.discord.rlottie.RLottieDrawable r0 = com.discord.rlottie.RLottieDrawable.this
-                    com.discord.rlottie.RLottieDrawable.access$decodeFrameFinishedInternal(r0)
-                    return
-                */
+                
                 throw new UnsupportedOperationException("Method not decompiled: com.discord.rlottie.RLottieDrawable$uiRunnableGenerateCache$1.run():void");
             }
         };
-        this.loadFrameRunnable = new Runnable() { // from class: com.discord.rlottie.RLottieDrawable$loadFrameRunnable$1
-            @Override // java.lang.Runnable
+        this.loadFrameRunnable = new Runnable() { 
+            @Override 
             public final void run() {
                 boolean z12;
                 long j10;

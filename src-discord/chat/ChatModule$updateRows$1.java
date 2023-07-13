@@ -23,16 +23,16 @@ import si.f;
 
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\u008a@"}, d2 = {"Lcom/discord/chat/listmanager/ChatListManager;", "manager", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.ChatModule$updateRows$1", f = "ChatModule.kt", l = {}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
-final class ChatModule$updateRows$1 extends k implements Function2<ChatListManager, Continuation<? super Unit>, Object> {
-    final /* synthetic */ String $rowsJSON;
-    final /* synthetic */ int $tag;
-    /* synthetic */ Object L$0;
-    int label;
-    final /* synthetic */ ChatModule this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class ChatModule$updateRows$1 extends k implements Function2<ChatListManager, Continuation<? super Unit>, Object> {
+    final  String $rowsJSON;
+    final  int $tag;
+     Object L$0;
+    int label;
+    final  ChatModule this$0;
+
+    
+    
     public ChatModule$updateRows$1(ChatModule chatModule, int i10, String str, Continuation<? super ChatModule$updateRows$1> continuation) {
         super(2, continuation);
         this.this$0 = chatModule;
@@ -40,7 +40,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
         this.$rowsJSON = str;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         ChatModule$updateRows$1 chatModule$updateRows$1 = new ChatModule$updateRows$1(this.this$0, this.$tag, this.$rowsJSON, continuation);
         chatModule$updateRows$1.L$0 = obj;
@@ -51,7 +51,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
         return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         RowLogger rowUpdateLoggerFor;
         int i10;

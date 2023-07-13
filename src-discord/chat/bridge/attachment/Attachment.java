@@ -14,7 +14,7 @@ import pi.f;
 
 @f
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u0012\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b6\n\u0002\u0010\u0000\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 j2\u00020\u0001:\u0002ijBó\u0001\b\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0001\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0001\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0011\u001a\u00020\f\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0018\u001a\u00020\f\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f¢\u0006\u0002\u0010 BÉ\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0011\u001a\u00020\f\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0018\u001a\u00020\f¢\u0006\u0002\u0010!J\t\u0010@\u001a\u00020\u0005HÆ\u0003J\u000b\u0010A\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010B\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010C\u001a\u00020\fHÆ\u0003J\u0010\u0010D\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010.J\u000b\u0010E\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010F\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0010\u0010G\u001a\u0004\u0018\u00010\u0016HÆ\u0003¢\u0006\u0002\u0010%J\u000b\u0010H\u001a\u0004\u0018\u00010\u0005HÂ\u0003J\t\u0010I\u001a\u00020\fHÆ\u0003J\u000b\u0010J\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010K\u001a\u00020\u0005HÆ\u0003J\t\u0010L\u001a\u00020\u0005HÆ\u0003J\u0010\u0010M\u001a\u0004\u0018\u00010\u0003HÂ\u0003¢\u0006\u0002\u0010.J\u0010\u0010N\u001a\u0004\u0018\u00010\u0003HÂ\u0003¢\u0006\u0002\u0010.J\t\u0010O\u001a\u00020\fHÆ\u0003J\u000b\u0010P\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010Q\u001a\u0004\u0018\u00010\u0005HÆ\u0003JÚ\u0001\u0010R\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u000b\u001a\u00020\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0011\u001a\u00020\f2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00162\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0018\u001a\u00020\fHÆ\u0001¢\u0006\u0002\u0010SJ\u0013\u0010T\u001a\u00020\f2\b\u0010U\u001a\u0004\u0018\u00010VHÖ\u0003J\u0017\u0010W\u001a\u0004\u0018\u00010\u00032\u0006\u0010X\u001a\u00020\u0005H\u0002¢\u0006\u0002\u0010YJ\b\u0010Z\u001a\u00020\fH\u0002J\t\u0010[\u001a\u00020\u0003HÖ\u0001J\b\u0010\\\u001a\u00020\fH\u0002J\b\u0010]\u001a\u00020\fH\u0002J\b\u0010^\u001a\u00020\fH\u0002J\t\u0010_\u001a\u00020\u0005HÖ\u0001J\u0006\u0010`\u001a\u00020aJ!\u0010b\u001a\u00020c2\u0006\u0010d\u001a\u00020\u00002\u0006\u0010e\u001a\u00020f2\u0006\u0010g\u001a\u00020hHÇ\u0001R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0015\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\n\n\u0002\u0010&\u001a\u0004\b$\u0010%R\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b'\u0010#R\u0011\u0010(\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b)\u0010*R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b+\u0010#R\u0011\u0010\u0018\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010,R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010,R\u0015\u0010\u0012\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010/\u001a\u0004\b-\u0010.R\u0012\u0010\u001d\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0004\n\u0002\u0010/R\u0012\u0010\u001c\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0004\n\u0002\u0010/R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b0\u0010#R\u0011\u0010\u0011\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b1\u0010,R\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b2\u0010#R\u001a\u0010\n\u001a\u0004\u0018\u00010\u00038\u0002X\u0083\u0004¢\u0006\n\n\u0002\u0010/\u0012\u0004\b3\u00104R\u001a\u0010\t\u001a\u0004\u0018\u00010\u00038\u0002X\u0083\u0004¢\u0006\n\n\u0002\u0010/\u0012\u0004\b5\u00104R\u0013\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b6\u0010#R\u0016\u0010\u001b\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b7\u0010#R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b8\u0010#R\u0013\u0010\u0014\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b9\u0010#R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b:\u0010#R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b;\u0010#R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u001a¢\u0006\b\n\u0000\u001a\u0004\b<\u0010=R\u0011\u0010>\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b?\u0010*¨\u0006k"}, d2 = {"Lcom/discord/chat/bridge/attachment/Attachment;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "seen1", "", "url", "", "videoUrl", "filename", "size", "sourceWidth", "sourceHeight", "isSpoiler", "", "spoiler", "description", "hint", "role", "showDescription", "progress", "uploaderId", "uploaderItemId", "durationSecs", "", "waveform", "isAnimated", "waveformByteArray", "", "spoilerOrNull", "proxyWidth", "proxyHeight", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;Ljava/lang/String;Z[BLjava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;Ljava/lang/String;Z)V", "getDescription", "()Ljava/lang/String;", "getDurationSecs", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getFilename", "height", "getHeight", "()I", "getHint", "()Z", "getProgress", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getRole", "getShowDescription", "getSize", "getSourceHeight$annotations", "()V", "getSourceWidth$annotations", "getSpoiler", "getSpoilerOrNull", "getUploaderId", "getUploaderItemId", "getUrl", "getVideoUrl", "getWaveformByteArray", "()[B", "width", "getWidth", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;Ljava/lang/String;Z)Lcom/discord/chat/bridge/attachment/Attachment;", "equals", "other", "", "getProxyUrlQueryParam", "paramName", "(Ljava/lang/String;)Ljava/lang/Integer;", "hasDimensions", "hashCode", "isImage", "isVideo", "shouldShowImages", "toString", "type", "Lcom/discord/chat/bridge/attachment/AttachmentType;", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "$serializer", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class Attachment implements SpoilerableData {
     public static final Companion Companion = new Companion(null);
     private final String description;
@@ -41,12 +41,12 @@ public final class Attachment implements SpoilerableData {
     private final byte[] waveformByteArray;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/bridge/attachment/Attachment$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/attachment/Attachment;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -55,18 +55,10 @@ public final class Attachment implements SpoilerableData {
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:74:0x00e1, code lost:
-        if (r6 != false) goto L_0x00e3;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
-    public /* synthetic */ Attachment(int r8, java.lang.String r9, java.lang.String r10, java.lang.String r11, java.lang.String r12, java.lang.Integer r13, java.lang.Integer r14, boolean r15, java.lang.String r16, java.lang.String r17, java.lang.String r18, java.lang.String r19, boolean r20, java.lang.Integer r21, java.lang.String r22, java.lang.String r23, java.lang.Float r24, java.lang.String r25, boolean r26, byte[] r27, java.lang.String r28, java.lang.Integer r29, java.lang.Integer r30, kotlinx.serialization.internal.SerializationConstructorMarker r31) {
-        /*
-            Method dump skipped, instructions count: 272
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+    
+    
+    public  Attachment(int r8, java.lang.String r9, java.lang.String r10, java.lang.String r11, java.lang.String r12, java.lang.Integer r13, java.lang.Integer r14, boolean r15, java.lang.String r16, java.lang.String r17, java.lang.String r18, java.lang.String r19, boolean r20, java.lang.Integer r21, java.lang.String r22, java.lang.String r23, java.lang.Float r24, java.lang.String r25, boolean r26, byte[] r27, java.lang.String r28, java.lang.Integer r29, java.lang.Integer r30, kotlinx.serialization.internal.SerializationConstructorMarker r31) {
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.attachment.Attachment.<init>(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Integer, java.lang.String, java.lang.String, java.lang.Float, java.lang.String, boolean, byte[], java.lang.String, java.lang.Integer, java.lang.Integer, kotlinx.serialization.internal.SerializationConstructorMarker):void");
     }
 
@@ -106,10 +98,10 @@ public final class Attachment implements SpoilerableData {
         return num2;
     }
 
-    private static /* synthetic */ void getSourceHeight$annotations() {
+    private static  void getSourceHeight$annotations() {
     }
 
-    private static /* synthetic */ void getSourceWidth$annotations() {
+    private static  void getSourceWidth$annotations() {
     }
 
     private final boolean hasDimensions() {
@@ -137,26 +129,20 @@ public final class Attachment implements SpoilerableData {
         return (num2 != null ? num2.intValue() : 0) > 0;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:124:0x019b  */
-    /* JADX WARN: Removed duplicated region for block: B:126:0x019e  */
-    /* JADX WARN: Removed duplicated region for block: B:130:0x01af  */
-    /* JADX WARN: Removed duplicated region for block: B:138:0x01c4  */
-    /* JADX WARN: Removed duplicated region for block: B:141:0x01cc  */
-    /* JADX WARN: Removed duplicated region for block: B:143:0x01cf  */
-    /* JADX WARN: Removed duplicated region for block: B:147:0x01e2  */
-    /* JADX WARN: Removed duplicated region for block: B:151:0x01f4  */
-    /* JADX WARN: Removed duplicated region for block: B:155:0x0205  */
-    /* JADX WARN: Removed duplicated region for block: B:158:0x0216  */
-    /* JADX WARN: Removed duplicated region for block: B:163:? A[RETURN, SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public static final void write$Self(com.discord.chat.bridge.attachment.Attachment r7, kotlinx.serialization.encoding.CompositeEncoder r8, kotlinx.serialization.descriptors.SerialDescriptor r9) {
-        /*
-            Method dump skipped, instructions count: 542
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.attachment.Attachment.write$Self(com.discord.chat.bridge.attachment.Attachment, kotlinx.serialization.encoding.CompositeEncoder, kotlinx.serialization.descriptors.SerialDescriptor):void");
     }
 
@@ -282,7 +268,7 @@ public final class Attachment implements SpoilerableData {
         return this.spoiler;
     }
 
-    @Override // com.discord.chat.bridge.spoiler.SpoilerableData
+    @Override 
     public String getSpoilerOrNull() {
         return this.spoilerOrNull;
     }
@@ -415,96 +401,16 @@ public final class Attachment implements SpoilerableData {
         return AttachmentType.Video;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:9:0x0067, code lost:
-        if (r5 != false) goto L_0x0069;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:13:0x006d  */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0063  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
     public Attachment(java.lang.String r7, java.lang.String r8, java.lang.String r9, java.lang.String r10, java.lang.Integer r11, java.lang.Integer r12, boolean r13, java.lang.String r14, java.lang.String r15, java.lang.String r16, java.lang.String r17, boolean r18, java.lang.Integer r19, java.lang.String r20, java.lang.String r21, java.lang.Float r22, java.lang.String r23, boolean r24) {
-        /*
-            r6 = this;
-            r0 = r6
-            r1 = r7
-            r2 = r9
-            r3 = r10
-            r4 = r23
-            java.lang.String r5 = "url"
-            kotlin.jvm.internal.q.g(r7, r5)
-            java.lang.String r5 = "filename"
-            kotlin.jvm.internal.q.g(r9, r5)
-            java.lang.String r5 = "size"
-            kotlin.jvm.internal.q.g(r10, r5)
-            r6.<init>()
-            r0.url = r1
-            r1 = r8
-            r0.videoUrl = r1
-            r0.filename = r2
-            r0.size = r3
-            r1 = r11
-            r0.sourceWidth = r1
-            r1 = r12
-            r0.sourceHeight = r1
-            r1 = r13
-            r0.isSpoiler = r1
-            r1 = r14
-            r0.spoiler = r1
-            r1 = r15
-            r0.description = r1
-            r1 = r16
-            r0.hint = r1
-            r1 = r17
-            r0.role = r1
-            r1 = r18
-            r0.showDescription = r1
-            r1 = r19
-            r0.progress = r1
-            r1 = r20
-            r0.uploaderId = r1
-            r1 = r21
-            r0.uploaderItemId = r1
-            r1 = r22
-            r0.durationSecs = r1
-            r0.waveform = r4
-            r1 = r24
-            r0.isAnimated = r1
-            r1 = 0
-            r2 = 0
-            if (r4 == 0) goto L_0x005b
-            byte[] r3 = android.util.Base64.decode(r4, r1)     // Catch: Exception -> 0x005b
-            goto L_0x005c
-        L_0x005b:
-            r3 = r2
-        L_0x005c:
-            r0.waveformByteArray = r3
-            java.lang.String r3 = r0.spoiler
-            r4 = 1
-            if (r3 == 0) goto L_0x0069
-            boolean r5 = ji.l.w(r3)
-            if (r5 == 0) goto L_0x006a
-        L_0x0069:
-            r1 = r4
-        L_0x006a:
-            r1 = r1 ^ r4
-            if (r1 == 0) goto L_0x006e
-            r2 = r3
-        L_0x006e:
-            r0.spoilerOrNull = r2
-            java.lang.String r1 = "width"
-            java.lang.Integer r1 = r6.getProxyUrlQueryParam(r1)
-            r0.proxyWidth = r1
-            java.lang.String r1 = "height"
-            java.lang.Integer r1 = r6.getProxyUrlQueryParam(r1)
-            r0.proxyHeight = r1
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.bridge.attachment.Attachment.<init>(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.Integer, java.lang.String, java.lang.String, java.lang.Float, java.lang.String, boolean):void");
     }
 
-    public /* synthetic */ Attachment(String str, String str2, String str3, String str4, Integer num, Integer num2, boolean z10, String str5, String str6, String str7, String str8, boolean z11, Integer num3, String str9, String str10, Float f10, String str11, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  Attachment(String str, String str2, String str3, String str4, Integer num, Integer num2, boolean z10, String str5, String str6, String str7, String str8, boolean z11, Integer num3, String str9, String str10, Float f10, String str11, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, (i10 & 2) != 0 ? null : str2, str3, str4, (i10 & 16) != 0 ? null : num, (i10 & 32) != 0 ? null : num2, z10, (i10 & 128) != 0 ? null : str5, (i10 & 256) != 0 ? null : str6, (i10 & 512) != 0 ? null : str7, (i10 & 1024) != 0 ? null : str8, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? false : z11, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? null : num3, (i10 & 8192) != 0 ? null : str9, (i10 & 16384) != 0 ? null : str10, (32768 & i10) != 0 ? null : f10, (65536 & i10) != 0 ? null : str11, (i10 & 131072) != 0 ? true : z12);
     }
 }

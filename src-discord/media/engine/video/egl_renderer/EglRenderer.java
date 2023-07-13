@@ -31,7 +31,7 @@ import org.webrtc.VideoSink;
 import wf.j;
 
 @Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0003\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\f\b\u0010\u0018\u0000 O2\u00020\u0001:\u0002OPB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200J\u000e\u0010-\u001a\u00020.2\u0006\u00101\u001a\u000202J\u0010\u00103\u001a\u00020.2\u0006\u00101\u001a\u00020\u0010H\u0002J\u0006\u00104\u001a\u00020.J\u0006\u00105\u001a\u00020.J\u0010\u00106\u001a\u00020.2\u0006\u00107\u001a\u00020\u0003H\u0002J\u0018\u00108\u001a\u00020.2\u0006\u00107\u001a\u00020\u00032\u0006\u00109\u001a\u00020:H\u0002J\b\u0010;\u001a\u00020.H\u0002J\b\u0010<\u001a\u00020\u001dH\u0002J\u0010\u0010=\u001a\u00020.2\u0006\u0010>\u001a\u00020&H\u0016J\u0006\u0010?\u001a\u00020.J\u0010\u0010@\u001a\u00020.2\u0006\u0010A\u001a\u00020\u001dH\u0002J\u0006\u0010B\u001a\u00020.J\u0014\u0010C\u001a\u00020.2\f\u0010D\u001a\b\u0012\u0004\u0012\u00020.0EJ\b\u0010F\u001a\u00020.H\u0002J\u0012\u0010G\u001a\u00020.2\b\b\u0002\u0010H\u001a\u00020\u001fH\u0002J\u0010\u0010I\u001a\u00020.2\b\u0010\r\u001a\u0004\u0018\u00010\u000eJ\u000e\u0010J\u001a\u00020.2\u0006\u0010K\u001a\u00020\u001aJ\u000e\u0010L\u001a\u00020.2\u0006\u0010\u0019\u001a\u00020\u001aJ\u000e\u0010M\u001a\u00020.2\u0006\u0010N\u001a\u00020!R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000b\u001a\u00060\fR\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u000e\u0010$\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010(\u001a\u0004\u0018\u00010)X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006Q"}, d2 = {"Lcom/discord/media/engine/video/egl_renderer/EglRenderer;", "Lorg/webrtc/VideoSink;", ZeroconfModule.KEY_SERVICE_NAME, "", "(Ljava/lang/String;)V", "drawMatrix", "Landroid/graphics/Matrix;", "drawer", "Lorg/webrtc/RendererCommon$GlDrawer;", "eglBase", "Lorg/webrtc/EglBase;", "eglSurfaceCreationRunnable", "Lcom/discord/media/engine/video/egl_renderer/EglRenderer$EglSurfaceCreation;", "errorCallback", "Lcom/discord/media/engine/video/egl_renderer/ErrorCallback;", "fpsReductionLock", "", "frameDrawer", "Lorg/webrtc/VideoFrameDrawer;", "frameLock", "framesDropped", "", "framesReceived", "framesRendered", "handlerLock", "layoutAspectRatio", "", "layoutLock", "logStatisticsRunnable", "Ljava/lang/Runnable;", "minRenderPeriodNs", "", "mirrorHorizontally", "", "getName", "()Ljava/lang/String;", "nextFrameTimeNs", "pendingFrame", "Lorg/webrtc/VideoFrame;", "renderSwapBufferTimeNs", "renderThreadHandler", "Landroid/os/Handler;", "renderTimeNs", "statisticsLock", "statisticsStartTimeNs", "createEglSurface", "", "surfaceTexture", "Landroid/graphics/SurfaceTexture;", "surface", "Landroid/view/Surface;", "createEglSurfaceInternal", "disableFpsReduction", "init", "logD", "string", "logE", "e", "", "logStatistics", "logStatisticsTask", "onFrame", "frame", "pauseVideo", "postToRenderThread", "runnable", "release", "releaseEglSurface", "completionCallback", "Lkotlin/Function0;", "renderFrameOnRenderThread", "resetStatistics", "currentTimeNs", "setErrorCallback", "setFpsReduction", "fps", "setLayoutAspectRatio", "setMirror", "mirror", "Companion", "EglSurfaceCreation", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
+
 public class EglRenderer implements VideoSink {
     public static final Companion Companion = new Companion(null);
     private static final long LOG_INTERVAL_MS = 4000;
@@ -60,8 +60,8 @@ public class EglRenderer implements VideoSink {
     private final Object frameLock = new Object();
     private final Object layoutLock = new Object();
     private final Object statisticsLock = new Object();
-    private final Runnable logStatisticsRunnable = new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.f
-        @Override // java.lang.Runnable
+    private final Runnable logStatisticsRunnable = new Runnable() { 
+        @Override 
         public final void run() {
             EglRenderer.logStatisticsRunnable$lambda$2(EglRenderer.this);
         }
@@ -69,16 +69,16 @@ public class EglRenderer implements VideoSink {
     private final EglSurfaceCreation eglSurfaceCreationRunnable = new EglSurfaceCreation();
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\fH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Lcom/discord/media/engine/video/egl_renderer/EglRenderer$Companion;", "", "()V", "LOG_INTERVAL_MS", "", "TAG", "", "USE_PRESENTATION_TIMESTAMP", "", "averageTimeAsString", "sumTimeNs", "count", "", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public static final class Companion {
         private Companion() {
         }
 
-        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public final String averageTimeAsString(long j10, int i10) {
             if (i10 <= 0) {
                 return "NA";
@@ -88,16 +88,16 @@ public class EglRenderer implements VideoSink {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0005\u001a\u00020\u0006H\u0016J\u0010\u0010\u0007\u001a\u00020\u00062\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\b"}, d2 = {"Lcom/discord/media/engine/video/egl_renderer/EglRenderer$EglSurfaceCreation;", "Ljava/lang/Runnable;", "(Lcom/discord/media/engine/video/egl_renderer/EglRenderer;)V", "surface", "", "run", "", "setSurface", "media_engine_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes6.dex */
+    
     public final class EglSurfaceCreation implements Runnable {
         private Object surface;
 
         public EglSurfaceCreation() {
         }
 
-        @Override // java.lang.Runnable
+        @Override 
         public synchronized void run() {
             Object obj = this.surface;
             if (obj != null) {
@@ -133,7 +133,7 @@ public class EglRenderer implements VideoSink {
         postToRenderThread(this.eglSurfaceCreationRunnable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void init$lambda$8$lambda$7(EglRenderer this$0, long j10) {
         q.g(this$0, "this$0");
         this$0.logD("Creating EglBase");
@@ -173,7 +173,7 @@ public class EglRenderer implements VideoSink {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void logStatisticsRunnable$lambda$2(EglRenderer this$0) {
         q.g(this$0, "this$0");
         this$0.logStatistics();
@@ -191,7 +191,7 @@ public class EglRenderer implements VideoSink {
         return this.logStatisticsRunnable;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void onFrame$lambda$25$lambda$24$lambda$23(EglRenderer this$0) {
         q.g(this$0, "this$0");
         this$0.renderFrameOnRenderThread();
@@ -206,7 +206,7 @@ public class EglRenderer implements VideoSink {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void release$lambda$13$lambda$11(EglRenderer this$0, CountDownLatch eglCleanupBarrier) {
         q.g(this$0, "this$0");
         q.g(eglCleanupBarrier, "$eglCleanupBarrier");
@@ -228,7 +228,7 @@ public class EglRenderer implements VideoSink {
         eglCleanupBarrier.countDown();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void release$lambda$13$lambda$12(EglRenderer this$0, Looper renderLooper) {
         q.g(this$0, "this$0");
         q.g(renderLooper, "$renderLooper");
@@ -236,7 +236,7 @@ public class EglRenderer implements VideoSink {
         renderLooper.quit();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void releaseEglSurface$lambda$30$lambda$29$lambda$28(EglRenderer this$0, Function0 completionCallback) {
         q.g(this$0, "this$0");
         q.g(completionCallback, "$completionCallback");
@@ -350,7 +350,7 @@ public class EglRenderer implements VideoSink {
         }
     }
 
-    static /* synthetic */ void resetStatistics$default(EglRenderer eglRenderer, long j10, int i10, Object obj) {
+    static  void resetStatistics$default(EglRenderer eglRenderer, long j10, int i10, Object obj) {
         if (obj == null) {
             if ((i10 & 1) != 0) {
                 j10 = System.nanoTime();
@@ -370,7 +370,7 @@ public class EglRenderer implements VideoSink {
         setFpsReduction(Float.POSITIVE_INFINITY);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    
     public final String getName() {
         return this.name;
     }
@@ -393,8 +393,8 @@ public class EglRenderer implements VideoSink {
                 HandlerWithExceptionCallback handlerWithExceptionCallback = new HandlerWithExceptionCallback(looper, new EglRenderer$init$1$handler$1(this));
                 this.renderThreadHandler = handlerWithExceptionCallback;
                 Debug debug = Debug.INSTANCE;
-                ThreadUtils.invokeAtFrontUninterruptibly(handlerWithExceptionCallback, new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.c
-                    @Override // java.lang.Runnable
+                ThreadUtils.invokeAtFrontUninterruptibly(handlerWithExceptionCallback, new Runnable() { 
+                    @Override 
                     public final void run() {
                         EglRenderer.init$lambda$8$lambda$7(EglRenderer.this, nanoTime);
                     }
@@ -408,7 +408,7 @@ public class EglRenderer implements VideoSink {
         }
     }
 
-    @Override // org.webrtc.VideoSink
+    @Override 
     public void onFrame(VideoFrame frame) {
         boolean z10;
         q.g(frame, "frame");
@@ -431,8 +431,8 @@ public class EglRenderer implements VideoSink {
                 }
                 frame.retain();
                 this.pendingFrame = frame;
-                handler.post(new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.e
-                    @Override // java.lang.Runnable
+                handler.post(new Runnable() { 
+                    @Override 
                     public final void run() {
                         EglRenderer.onFrame$lambda$25$lambda$24$lambda$23(EglRenderer.this);
                     }
@@ -461,16 +461,16 @@ public class EglRenderer implements VideoSink {
                 return;
             }
             handler.removeCallbacks(this.logStatisticsRunnable);
-            handler.postAtFrontOfQueue(new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.a
-                @Override // java.lang.Runnable
+            handler.postAtFrontOfQueue(new Runnable() { 
+                @Override 
                 public final void run() {
                     EglRenderer.release$lambda$13$lambda$11(EglRenderer.this, countDownLatch);
                 }
             });
             final Looper looper = handler.getLooper();
             q.f(looper, "handler.looper");
-            handler.post(new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.b
-                @Override // java.lang.Runnable
+            handler.post(new Runnable() { 
+                @Override 
                 public final void run() {
                     EglRenderer.release$lambda$13$lambda$12(EglRenderer.this, looper);
                 }
@@ -497,8 +497,8 @@ public class EglRenderer implements VideoSink {
             Handler handler = this.renderThreadHandler;
             if (handler != null) {
                 handler.removeCallbacks(this.eglSurfaceCreationRunnable);
-                handler.postAtFrontOfQueue(new Runnable() { // from class: com.discord.media.engine.video.egl_renderer.d
-                    @Override // java.lang.Runnable
+                handler.postAtFrontOfQueue(new Runnable() { 
+                    @Override 
                     public final void run() {
                         EglRenderer.releaseEglSurface$lambda$30$lambda$29$lambda$28(EglRenderer.this, completionCallback);
                     }

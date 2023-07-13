@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import si.h1;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 final class TapSuppressNotificationsIconData$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final TapSuppressNotificationsIconData$$cachedSerializer$delegate$1 INSTANCE = new TapSuppressNotificationsIconData$$cachedSerializer$delegate$1();
 
@@ -16,7 +16,7 @@ final class TapSuppressNotificationsIconData$$cachedSerializer$delegate$1 extend
         super(0);
     }
 
-    @Override // kotlin.jvm.functions.Function0
+    @Override 
     public final KSerializer<Object> invoke() {
         return new h1("com.discord.chat.reactevents.TapSuppressNotificationsIconData", TapSuppressNotificationsIconData.INSTANCE, new Annotation[0]);
     }

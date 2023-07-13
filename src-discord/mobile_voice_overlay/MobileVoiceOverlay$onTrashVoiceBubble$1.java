@@ -13,24 +13,24 @@ import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "voiceBubble", "Lcom/discord/mobile_voice_overlay/views/OverlayVoiceBubble;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
-final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Function1<OverlayVoiceBubble, Unit> {
-    final /* synthetic */ MobileVoiceOverlay this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Function1<OverlayVoiceBubble, Unit> {
+    final  MobileVoiceOverlay this$0;
+
+    
+    
     public MobileVoiceOverlay$onTrashVoiceBubble$1(MobileVoiceOverlay mobileVoiceOverlay) {
         super(1);
         this.this$0 = mobileVoiceOverlay;
     }
 
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
+    @Override 
+    public   Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
         invoke2(overlayVoiceBubble);
         return Unit.f20663a;
     }
 
-    /* renamed from: invoke  reason: avoid collision after fix types in other method */
+    
     public final void invoke2(OverlayVoiceBubble voiceBubble) {
         q.g(voiceBubble, "voiceBubble");
         voiceBubble.moveToAnchorPoint();
@@ -38,13 +38,13 @@ final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Functio
         final MobileVoiceOverlay mobileVoiceOverlay = this.this$0;
         invoke$lambda$2.setTarget(voiceBubble);
         q.f(invoke$lambda$2, "invoke$lambda$2");
-        invoke$lambda$2.addListener(new Animator.AnimatorListener() { // from class: com.discord.mobile_voice_overlay.MobileVoiceOverlay$onTrashVoiceBubble$1$invoke$lambda$2$$inlined$doOnEnd$1
-            @Override // android.animation.Animator.AnimatorListener
+        invoke$lambda$2.addListener(new Animator.AnimatorListener() { 
+            @Override 
             public void onAnimationCancel(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationEnd(Animator animator) {
                 q.g(animator, "animator");
                 if (ThreadUtilsKt.isOnMainThread()) {
@@ -53,20 +53,20 @@ final class MobileVoiceOverlay$onTrashVoiceBubble$1 extends s implements Functio
                 }
                 Handler uiHandler = ThreadUtilsKt.getUiHandler();
                 final MobileVoiceOverlay mobileVoiceOverlay2 = MobileVoiceOverlay.this;
-                uiHandler.post(new Runnable() { // from class: com.discord.mobile_voice_overlay.MobileVoiceOverlay$onTrashVoiceBubble$1$invoke$lambda$2$lambda$1$$inlined$postOrRunOnMainThread$1
-                    @Override // java.lang.Runnable
+                uiHandler.post(new Runnable() { 
+                    @Override 
                     public final void run() {
                         MobileVoiceOverlay.invokeJs$default(MobileVoiceOverlay.this, "onLayoutTrashed", null, 2, null);
                     }
                 });
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationRepeat(Animator animator) {
                 q.g(animator, "animator");
             }
 
-            @Override // android.animation.Animator.AnimatorListener
+            @Override 
             public void onAnimationStart(Animator animator) {
                 q.g(animator, "animator");
             }

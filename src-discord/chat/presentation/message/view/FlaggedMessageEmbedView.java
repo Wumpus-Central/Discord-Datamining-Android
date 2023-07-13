@@ -34,18 +34,18 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u001b\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007J\u0018\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0002J\u0010\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\tH\u0002J\u0010\u0010\u0014\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0016\u001a\u00020\u0017H\u0016J\"\u0010\u0018\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00112\b\b\u0002\u0010\b\u001a\u00020\tJ\r\u0010\u0019\u001a\u00020\u001aH\u0016¢\u0006\u0002\u0010\u001bR\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/chat/presentation/message/view/FlaggedMessageEmbedView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/recycler_view/decorations/VerticalSpacingItemDecoration$SpacingProviderView;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "allowChildGestures", "", "binding", "Lcom/discord/chat/databinding/FlaggedMessageEmbedViewBinding;", "configureAuthor", "", "message", "Lcom/discord/chat/bridge/Message;", "eventHandler", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "configureCommunicationDisabled", "isCommunicationDisabled", "configureMessageContent", "onInterceptTouchEvent", "ev", "Landroid/view/MotionEvent;", "setMessage", "spacingPxOverride", "", "()Ljava/lang/Integer;", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class FlaggedMessageEmbedView extends ConstraintLayout implements VerticalSpacingItemDecoration.SpacingProviderView {
     private boolean allowChildGestures;
     private final FlaggedMessageEmbedViewBinding binding;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    
     public FlaggedMessageEmbedView(Context context) {
         this(context, null, 2, null);
         q.g(context, "context");
     }
 
-    public /* synthetic */ FlaggedMessageEmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public  FlaggedMessageEmbedView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(context, (i10 & 2) != 0 ? null : attributeSet);
     }
 
@@ -59,14 +59,14 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         q.f(configureAuthor$lambda$7, "configureAuthor$lambda$7");
         int i11 = 0;
         boolean z11 = true;
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$7, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.v
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$7, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 FlaggedMessageEmbedView.configureAuthor$lambda$7$lambda$5(Message.this, chatEventHandler, view);
             }
         }, 1, null);
-        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$7, false, new View.OnLongClickListener() { // from class: com.discord.chat.presentation.message.view.w
-            @Override // android.view.View.OnLongClickListener
+        NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested$default(configureAuthor$lambda$7, false, new View.OnLongClickListener() { 
+            @Override 
             public final boolean onLongClick(View view) {
                 boolean configureAuthor$lambda$7$lambda$6;
                 configureAuthor$lambda$7$lambda$6 = FlaggedMessageEmbedView.configureAuthor$lambda$7$lambda$6(Message.this, chatEventHandler, view);
@@ -77,8 +77,8 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         configureAuthor$lambda$9.setTextColor(MessageKt.usernameColor$default(message, 0, 1, null));
         configureAuthor$lambda$9.setText(message.getUsername());
         q.f(configureAuthor$lambda$9, "configureAuthor$lambda$9");
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$9, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.x
-            @Override // android.view.View.OnClickListener
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configureAuthor$lambda$9, false, new View.OnClickListener() { 
+            @Override 
             public final void onClick(View view) {
                 FlaggedMessageEmbedView.configureAuthor$lambda$9$lambda$8(Message.this, chatEventHandler, view);
             }
@@ -113,7 +113,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void configureAuthor$lambda$7$lambda$5(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
@@ -122,7 +122,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean configureAuthor$lambda$7$lambda$6(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
@@ -133,7 +133,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void configureAuthor$lambda$9$lambda$8(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
@@ -215,7 +215,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         if (z11) {
             z12 = true;
-            configureMessageContent$lambda$3.m315setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            configureMessageContent$lambda$3.m315setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (i12 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (i12 & 524288) != 0 ? null : null, (i12 & 1048576) != 0 ? null : null, (i12 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         } else {
             z12 = true;
         }
@@ -237,7 +237,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
     }
 
-    public static /* synthetic */ void setMessage$default(FlaggedMessageEmbedView flaggedMessageEmbedView, Message message, ChatEventHandler chatEventHandler, boolean z10, int i10, Object obj) {
+    public static  void setMessage$default(FlaggedMessageEmbedView flaggedMessageEmbedView, Message message, ChatEventHandler chatEventHandler, boolean z10, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             chatEventHandler = ChatEventHandler.Empty.INSTANCE;
         }
@@ -247,7 +247,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         flaggedMessageEmbedView.setMessage(message, chatEventHandler, z10);
     }
 
-    @Override // android.view.ViewGroup
+    @Override 
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         q.g(ev, "ev");
         return !this.allowChildGestures;
@@ -262,12 +262,12 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         configureMessageContent(message);
     }
 
-    @Override // com.discord.recycler_view.decorations.VerticalSpacingItemDecoration.SpacingProviderView
+    @Override 
     public Integer spacingPxOverride() {
         return Integer.valueOf(SizeUtilsKt.getDpToPx(4));
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
     public FlaggedMessageEmbedView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         q.g(context, "context");

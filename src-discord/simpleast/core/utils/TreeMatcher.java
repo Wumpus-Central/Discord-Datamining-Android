@@ -9,11 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* loaded from: classes8.dex */
+
 public class TreeMatcher {
     private Map<Class, NodeMatcher> matchers = new HashMap();
 
-    /* loaded from: classes8.dex */
+    
     public interface NodeMatcher {
         boolean matches(Node node, Node node2);
     }
@@ -21,14 +21,14 @@ public class TreeMatcher {
     public boolean matches(List<? extends Node> list, List<? extends Node> list2) {
         final ArrayList arrayList = new ArrayList();
         final ArrayList arrayList2 = new ArrayList();
-        ASTUtils.traversePostOrder(list, new NodeProcessor() { // from class: com.discord.simpleast.core.utils.TreeMatcher.1
-            @Override // com.discord.simpleast.core.utils.NodeProcessor
+        ASTUtils.traversePostOrder(list, new NodeProcessor() { 
+            @Override 
             public void processNode(Node node) {
                 arrayList.add(node);
             }
         });
-        ASTUtils.traversePostOrder(list2, new NodeProcessor() { // from class: com.discord.simpleast.core.utils.TreeMatcher.2
-            @Override // com.discord.simpleast.core.utils.NodeProcessor
+        ASTUtils.traversePostOrder(list2, new NodeProcessor() { 
+            @Override 
             public void processNode(Node node) {
                 arrayList2.add(node);
             }
@@ -51,14 +51,14 @@ public class TreeMatcher {
     }
 
     public void registerDefaultMatchers() {
-        registerMatcher(TextNode.class, new NodeMatcher() { // from class: com.discord.simpleast.core.utils.TreeMatcher.3
-            @Override // com.discord.simpleast.core.utils.TreeMatcher.NodeMatcher
+        registerMatcher(TextNode.class, new NodeMatcher() { 
+            @Override 
             public boolean matches(Node node, Node node2) {
                 return ((TextNode) node).getContent().equals(((TextNode) node2).getContent());
             }
         });
-        registerMatcher(StyleNode.class, new NodeMatcher() { // from class: com.discord.simpleast.core.utils.TreeMatcher.4
-            @Override // com.discord.simpleast.core.utils.TreeMatcher.NodeMatcher
+        registerMatcher(StyleNode.class, new NodeMatcher() { 
+            @Override 
             public boolean matches(Node node, Node node2) {
                 List styles = ((StyleNode) node).getStyles();
                 List styles2 = ((StyleNode) node2).getStyles();

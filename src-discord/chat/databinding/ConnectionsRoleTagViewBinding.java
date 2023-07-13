@@ -10,7 +10,7 @@ import androidx.cardview.widget.CardView;
 import com.discord.chat.R;
 import v0.a;
 
-/* loaded from: classes3.dex */
+
 public final class ConnectionsRoleTagViewBinding {
     public final CardView connectionsRoleTagContainer;
     public final TextView roleName;

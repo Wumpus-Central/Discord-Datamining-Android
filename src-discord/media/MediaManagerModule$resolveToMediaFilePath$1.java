@@ -23,21 +23,21 @@ import lf.d;
 
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.media.MediaManagerModule$resolveToMediaFilePath$1", f = "MediaManagerModule.kt", l = {75}, m = "invokeSuspend")
-/* loaded from: classes6.dex */
-final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ boolean $canCancelCompression;
-    final /* synthetic */ int $imageCompressionQuality;
-    final /* synthetic */ Uri $inputUri;
-    final /* synthetic */ boolean $isLowQuality;
-    final /* synthetic */ Promise $promise;
-    final /* synthetic */ String $uri;
-    final /* synthetic */ VideoCompressionQuality $videoCompressionQuality;
-    private /* synthetic */ Object L$0;
-    int label;
-    final /* synthetic */ MediaManagerModule this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  boolean $canCancelCompression;
+    final  int $imageCompressionQuality;
+    final  Uri $inputUri;
+    final  boolean $isLowQuality;
+    final  Promise $promise;
+    final  String $uri;
+    final  VideoCompressionQuality $videoCompressionQuality;
+    private  Object L$0;
+    int label;
+    final  MediaManagerModule this$0;
+
+    
+    
     public MediaManagerModule$resolveToMediaFilePath$1(MediaManagerModule mediaManagerModule, Uri uri, int i10, VideoCompressionQuality videoCompressionQuality, boolean z10, Promise promise, boolean z11, String str, Continuation<? super MediaManagerModule$resolveToMediaFilePath$1> continuation) {
         super(2, continuation);
         this.this$0 = mediaManagerModule;
@@ -50,7 +50,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
         this.$uri = str;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         MediaManagerModule$resolveToMediaFilePath$1 mediaManagerModule$resolveToMediaFilePath$1 = new MediaManagerModule$resolveToMediaFilePath$1(this.this$0, this.$inputUri, this.$imageCompressionQuality, this.$videoCompressionQuality, this.$isLowQuality, this.$promise, this.$canCancelCompression, this.$uri, continuation);
         mediaManagerModule$resolveToMediaFilePath$1.L$0 = obj;
@@ -61,7 +61,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
         return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         Object obj2;

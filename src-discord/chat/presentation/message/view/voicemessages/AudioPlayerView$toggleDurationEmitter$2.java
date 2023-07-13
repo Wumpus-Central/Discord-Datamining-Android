@@ -15,20 +15,20 @@ import kotlinx.coroutines.t0;
 import kotlinx.coroutines.y0;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$toggleDurationEmitter$2", f = "AudioPlayerView.kt", l = {365}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
-public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    private /* synthetic */ Object L$0;
-    int label;
-    final /* synthetic */ AudioPlayerView this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    private  Object L$0;
+    int label;
+    final  AudioPlayerView this$0;
+
+    
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
     @e(c = "com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$toggleDurationEmitter$2$1", f = "AudioPlayerView.kt", l = {366}, m = "invokeSuspend")
-    /* renamed from: com.discord.chat.presentation.message.view.voicemessages.AudioPlayerView$toggleDurationEmitter$2$1  reason: invalid class name */
-    /* loaded from: classes3.dex */
+    
+    
     public static final class AnonymousClass1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 
@@ -36,7 +36,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
             super(2, continuation);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(continuation);
         }
@@ -45,7 +45,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
+        @Override 
         public final Object invokeSuspend(Object obj) {
             Object d10;
             d10 = d.d();
@@ -65,14 +65,14 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    
+    
     public AudioPlayerView$toggleDurationEmitter$2(AudioPlayerView audioPlayerView, Continuation<? super AudioPlayerView$toggleDurationEmitter$2> continuation) {
         super(2, continuation);
         this.this$0 = audioPlayerView;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         AudioPlayerView$toggleDurationEmitter$2 audioPlayerView$toggleDurationEmitter$2 = new AudioPlayerView$toggleDurationEmitter$2(this.this$0, continuation);
         audioPlayerView$toggleDurationEmitter$2.L$0 = obj;
@@ -83,7 +83,7 @@ public final class AudioPlayerView$toggleDurationEmitter$2 extends k implements 
         return ((AudioPlayerView$toggleDurationEmitter$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         CoroutineScope coroutineScope;

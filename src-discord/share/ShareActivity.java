@@ -11,19 +11,19 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\f\u0010\u0003\u001a\u00060\u0004R\u00020\u0001H\u0016J\b\u0010\u0005\u001a\u00020\u0006H\u0016¨\u0006\u0007"}, d2 = {"Lcom/discord/share/ShareActivity;", "Lcom/discord/react_activities/ReactActivity;", "()V", "getActivityDelegate", "Lcom/discord/react_activities/ReactActivity$ActivityDelegate;", "getNameOfComponent", "", "share_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes8.dex */
+
 public final class ShareActivity extends ReactActivity {
-    @Override // com.discord.react_activities.ReactActivity
+    @Override 
     public ReactActivity.ActivityDelegate getActivityDelegate() {
-        return new ReactActivity.ActivityDelegate() { // from class: com.discord.share.ShareActivity$getActivityDelegate$1
+        return new ReactActivity.ActivityDelegate() { 
             private ShareProps shareProps;
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            
             {
                 super(ShareActivity.this, ShareActivity.this);
             }
 
-            @Override // com.facebook.react.ReactActivityDelegate
+            @Override 
             protected Bundle getLaunchOptions() {
                 ShareProps shareProps = this.shareProps;
                 if (shareProps == null) {
@@ -33,8 +33,8 @@ public final class ShareActivity extends ReactActivity {
                 return shareProps.toBundle();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            @Override // com.facebook.react.ReactActivityDelegate
+            
+            @Override 
             public void onCreate(Bundle bundle) {
                 ShareProps.Companion companion = ShareProps.Companion;
                 Intent intent = ShareActivity.this.getIntent();
@@ -57,7 +57,7 @@ public final class ShareActivity extends ReactActivity {
         };
     }
 
-    @Override // com.discord.react_activities.ReactActivity
+    @Override 
     public String getNameOfComponent() {
         return BuildConfig.MAIN_COMPONENT;
     }

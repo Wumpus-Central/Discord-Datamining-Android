@@ -21,19 +21,19 @@ import kotlinx.coroutines.j;
 import kotlinx.coroutines.y0;
 import lf.d;
 
-/* JADX INFO: Access modifiers changed from: package-private */
+
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1", f = "FileAttachmentView.kt", l = {94}, m = "invokeSuspend")
-/* loaded from: classes3.dex */
-public final class FileAttachmentView$setContent$2$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-    final /* synthetic */ String $attachmentDescription;
-    final /* synthetic */ String $attachmentName;
-    final /* synthetic */ String $url;
-    int label;
-    final /* synthetic */ FileAttachmentView this$0;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+public final class FileAttachmentView$setContent$2$1 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final  String $attachmentDescription;
+    final  String $attachmentName;
+    final  String $url;
+    int label;
+    final  FileAttachmentView this$0;
+
+    
+    
     public FileAttachmentView$setContent$2$1(FileAttachmentView fileAttachmentView, String str, String str2, String str3, Continuation<? super FileAttachmentView$setContent$2$1> continuation) {
         super(2, continuation);
         this.this$0 = fileAttachmentView;
@@ -42,7 +42,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         this.$attachmentDescription = str3;
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
         return new FileAttachmentView$setContent$2$1(this.this$0, this.$url, this.$attachmentName, this.$attachmentDescription, continuation);
     }
@@ -51,7 +51,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
         return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
     }
 
-    @Override // kotlin.coroutines.jvm.internal.a
+    @Override 
     public final Object invokeSuspend(Object obj) {
         Object d10;
         d10 = d.d();
@@ -63,26 +63,26 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
             q.f(context, "context");
             Flow<DownloadState> downloadFile = publicFileDownloader.downloadFile(context, this.$url, this.$attachmentName, this.$attachmentDescription);
             final FileAttachmentView fileAttachmentView = this.this$0;
-            FlowCollector<? super DownloadState> flowCollector = new FlowCollector() { // from class: com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1.1
+            FlowCollector<? super DownloadState> flowCollector = new FlowCollector() { 
 
-                /* JADX INFO: Access modifiers changed from: package-private */
+                
                 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"}, d2 = {"Lkotlinx/coroutines/CoroutineScope;", "", "<anonymous>"}, k = 3, mv = {1, 8, 0})
                 @e(c = "com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1", f = "FileAttachmentView.kt", l = {}, m = "invokeSuspend")
-                /* renamed from: com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1  reason: invalid class name and collision with other inner class name */
-                /* loaded from: classes3.dex */
+                
+                
                 public static final class C01031 extends k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
-                    final /* synthetic */ DownloadState $downloadState;
+                    final  DownloadState $downloadState;
                     int label;
-                    final /* synthetic */ FileAttachmentView this$0;
+                    final  FileAttachmentView this$0;
 
-                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    
                     C01031(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01031> continuation) {
                         super(2, continuation);
                         this.$downloadState = downloadState;
                         this.this$0 = fileAttachmentView;
                     }
 
-                    @Override // kotlin.coroutines.jvm.internal.a
+                    @Override 
                     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
                         return new C01031(this.$downloadState, this.this$0, continuation);
                     }
@@ -91,7 +91,7 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                         return ((C01031) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
                     }
 
-                    @Override // kotlin.coroutines.jvm.internal.a
+                    @Override 
                     public final Object invokeSuspend(Object obj) {
                         FileAttachmentViewBinding fileAttachmentViewBinding;
                         int i10;
@@ -123,8 +123,8 @@ public final class FileAttachmentView$setContent$2$1 extends k implements Functi
                     }
                 }
 
-                @Override // kotlinx.coroutines.flow.FlowCollector
-                public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
+                @Override 
+                public   Object emit(Object obj2, Continuation continuation) {
                     return emit((DownloadState) obj2, (Continuation<? super Unit>) continuation);
                 }
 

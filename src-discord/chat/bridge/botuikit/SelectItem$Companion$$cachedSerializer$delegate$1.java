@@ -10,7 +10,7 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.SealedClassSerializer;
 
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 final class SelectItem$Companion$$cachedSerializer$delegate$1 extends s implements Function0<KSerializer<Object>> {
     public static final SelectItem$Companion$$cachedSerializer$delegate$1 INSTANCE = new SelectItem$Companion$$cachedSerializer$delegate$1();
 
@@ -18,7 +18,7 @@ final class SelectItem$Companion$$cachedSerializer$delegate$1 extends s implemen
         super(0);
     }
 
-    @Override // kotlin.jvm.functions.Function0
+    @Override 
     public final KSerializer<Object> invoke() {
         return new SealedClassSerializer("com.discord.chat.bridge.botuikit.SelectItem", f0.b(SelectItem.class), new KClass[]{f0.b(SearchableSelectItem.class), f0.b(StringSelectItem.class)}, new KSerializer[]{SearchableSelectItem$$serializer.INSTANCE, StringSelectItem$$serializer.INSTANCE}, new Annotation[0]);
     }

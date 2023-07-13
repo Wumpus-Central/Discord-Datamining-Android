@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.list.ChatListItemTouchHelper;
 import java.util.List;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: classes3.dex */
+
+
 public abstract class ChatListCallback extends ItemTouchHelper.c {
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public final int getAbsoluteMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         return convertToAbsoluteDirection(getMovementFlags(recyclerView, viewHolder), w0.B(recyclerView));
     }
@@ -20,12 +20,12 @@ public abstract class ChatListCallback extends ItemTouchHelper.c {
         return new Pair(Float.valueOf(f10), Float.valueOf(f11));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public boolean hasDragFlag(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         return (getAbsoluteMovementFlags(recyclerView, viewHolder) & 16711680) != 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public void onDraw(Canvas canvas, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, List<ChatListItemTouchHelper.RecoverAnimation> list, int i10, float f10, float f11) {
         int size = list.size();
         for (int i11 = 0; i11 < size; i11++) {
@@ -42,7 +42,7 @@ public abstract class ChatListCallback extends ItemTouchHelper.c {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    
     public void onDrawOver(Canvas canvas, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, List<ChatListItemTouchHelper.RecoverAnimation> list, int i10, float f10, float f11) {
         int size = list.size();
         boolean z10 = false;

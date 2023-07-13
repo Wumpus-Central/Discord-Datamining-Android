@@ -60,7 +60,7 @@ import kotlinx.serialization.json.g;
 import kotlinx.serialization.json.s;
 
 @Metadata(d1 = {"\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\u0006\u0010\u0007\u001a\u00020\u0006H\u0002\u001a/\u0010\b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0006H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\b\r\u001a\f\u0010\u000e\u001a\u0004\u0018\u00010\u000f*\u00020\u0010\u001a(\u0010\u0011\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a0\u0010\u0012\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00152\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005\u001a\u0016\u0010\u0016\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a(\u0010\u0017\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\u001a\u000e\u0010\u0018\u001a\u0004\u0018\u00010\t*\u00020\u0010H\u0000\u001a\u0014\u0010\u0019\u001a\u00020\u0001*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001a\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\u001b\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\u0014\u0010\u001c\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0014\u0010\u001d\u001a\u00020\u0006*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0016\u0010\u001e\u001a\u0004\u0018\u00010\u001f*\u00020\u00102\b\u0010 \u001a\u0004\u0018\u00010\u0006\u001a\u0016\u0010!\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u0010\"\u001a\u00020\u0006*\u00020\u0010H\u0000\u001a\f\u0010#\u001a\u00020$*\u00020\u0010H\u0000\u001a\u0016\u0010%\u001a\u00020&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a\u0018\u0010)\u001a\u0004\u0018\u00010&*\u00020\u00102\b\u0010'\u001a\u0004\u0018\u00010(H\u0000\u001a<\u0010*\u001a\u00020+*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u00052\b\u0010'\u001a\u0004\u0018\u00010(2\b\u0010,\u001a\u0004\u0018\u00010(H\u0000\u001a\f\u0010-\u001a\u00020.*\u00020\u0010H\u0000\u001a\u0016\u0010/\u001a\u0004\u0018\u000100*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u00101\u001a\u00020\u0006*\u00020\u0010\u001a\u001c\u00102\u001a\u0004\u0018\u00010\u0013*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u00103\u001a\u00020.\u001a\u0014\u00104\u001a\u00020\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00105\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00106\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\u0016\u00107\u001a\u0004\u0018\u00010\t*\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\f\u00108\u001a\u00020\u0015*\u00020\u0010H\u0000\u001a\f\u00109\u001a\u00020:*\u00020(H\u0002\u001a\u0014\u0010;\u001a\u0004\u0018\u00010\u000f*\u00020\u00102\u0006\u0010<\u001a\u00020\u000f\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006="}, d2 = {"getPendingIntent", "Landroid/app/PendingIntent;", "context", "Landroid/content/Context;", "notificationDataMap", "", "", "tag", "getSystemMessageUserJoin", "", "userId", "Lcom/discord/primitives/UserId;", "userName", "getSystemMessageUserJoin-_NT-lnE", "getAuthor", "Lkotlinx/serialization/json/JsonObject;", "Lcom/discord/notifications/api/NotificationData;", "getButtonPendingIntent", "getCallAction", "Landroidx/core/app/NotificationCompat$Action;", "isAcceptAction", "", "getContent", "getContentPendingIntent", "getConversationTitle", "getDeletePendingIntent", "getDirectReplyAction", "getGroupKey", "getIconUrl", "getIconUrlForAvatar", "getKvMessage", "Lcom/discord/notifications/api/KvMessageEntry;", "rawMessage", "getMarkAsReadAction", "getNotificationCategory", "getSendTime", "", "getSender", "Landroidx/core/app/Person;", "icon", "Landroid/graphics/Bitmap;", "getSenderForMessageNotification", "getShortcutInfo", "Landroidx/core/content/pm/ShortcutInfoCompat;", "avatar", "getSmallIcon", "", "getSound", "Landroid/net/Uri;", "getTag", "getTimedMuteAction", "numMessages", "getTitle", "isConversation", "isGroupConversation", "renderMessageContent", "shouldUseBigText", "toIconCompat", "Landroidx/core/graphics/drawable/IconCompat;", "toNotificationMessage", "author", "notification_renderer_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes4.dex */
+
 public final class NotificationDataUtilsKt {
     public static final JsonObject getAuthor(NotificationData notificationData) {
         q.g(notificationData, "<this>");
@@ -284,21 +284,15 @@ public final class NotificationDataUtilsKt {
         return "GROUP_" + type;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:24:0x0071 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:30:0x0081 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:36:0x0092 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:42:0x00a3 A[ADDED_TO_REGION] */
-    /* JADX WARN: Removed duplicated region for block: B:47:0x00b2  */
-    /* JADX WARN: Removed duplicated region for block: B:48:0x00c9  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
     public static final java.lang.String getIconUrl(com.discord.notifications.api.NotificationData r12, android.content.Context r13) {
-        /*
-            Method dump skipped, instructions count: 390
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getIconUrl(com.discord.notifications.api.NotificationData, android.content.Context):java.lang.String");
     }
 
@@ -370,85 +364,11 @@ public final class NotificationDataUtilsKt {
         return new NotificationCompat.Action.a(R.drawable.ic_check_grey_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.MARK_AS_READ, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MarkAsReadAction(getTag(notificationData), j10, str, null), context, 0, false, 6, null)).h(2).i(false).b();
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:22:0x005f A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:23:0x0062 A[ORIG_RETURN, RETURN] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
     public static final java.lang.String getNotificationCategory(com.discord.notifications.api.NotificationData r1) {
-        /*
-            java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.q.g(r1, r0)
-            java.lang.String r1 = r1.getType()
-            int r0 = r1.hashCode()
-            switch(r0) {
-                case -1502317553: goto L_0x0056;
-                case -1489275252: goto L_0x004d;
-                case -1327124998: goto L_0x0044;
-                case -1263316859: goto L_0x003b;
-                case -1237752112: goto L_0x002f;
-                case -437641071: goto L_0x0026;
-                case 974015250: goto L_0x001d;
-                case 1770025841: goto L_0x0011;
-                default: goto L_0x0010;
-            }
-        L_0x0010:
-            goto L_0x0062
-        L_0x0011:
-            java.lang.String r0 = "CALL_RING"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x001a
-            goto L_0x0062
-        L_0x001a:
-            java.lang.String r1 = "call"
-            goto L_0x0064
-        L_0x001d:
-            java.lang.String r0 = "ACTIVITY_START"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x0026:
-            java.lang.String r0 = "FORUM_THREAD_CREATED"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x002f:
-            java.lang.String r0 = "APPLICATION_LIBRARY_INSTALL_COMPLETE"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x0038
-            goto L_0x0062
-        L_0x0038:
-            java.lang.String r1 = "progress"
-            goto L_0x0064
-        L_0x003b:
-            java.lang.String r0 = "STAGE_INSTANCE_CREATE"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x0044:
-            java.lang.String r0 = "RELATIONSHIP_ADD"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x004d:
-            java.lang.String r0 = "GUILD_SCHEDULED_EVENT_UPDATE"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x0056:
-            java.lang.String r0 = "GENERIC_PUSH_NOTIFICATION_SENT"
-            boolean r1 = r1.equals(r0)
-            if (r1 != 0) goto L_0x005f
-            goto L_0x0062
-        L_0x005f:
-            java.lang.String r1 = "social"
-            goto L_0x0064
-        L_0x0062:
-            java.lang.String r1 = "msg"
-        L_0x0064:
-            return r1
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getNotificationCategory(com.discord.notifications.api.NotificationData):java.lang.String");
     }
 
@@ -461,48 +381,10 @@ public final class NotificationDataUtilsKt {
         return System.currentTimeMillis();
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:5:0x002a, code lost:
-        if (r2.intValue() == 1) goto L_0x002e;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
     public static final androidx.core.app.Person getSender(com.discord.notifications.api.NotificationData r2, android.graphics.Bitmap r3) {
-        /*
-            java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.q.g(r2, r0)
-            androidx.core.app.Person$c r0 = new androidx.core.app.Person$c
-            r0.<init>()
-            java.lang.String r1 = r2.getUserUsername()
-            androidx.core.app.Person$c r0 = r0.f(r1)
-            com.discord.primitives.UserId r1 = r2.m535getUserIdwUX8bhU()
-            java.lang.String r1 = java.lang.String.valueOf(r1)
-            androidx.core.app.Person$c r0 = r0.e(r1)
-            java.lang.Integer r2 = r2.getRelationshipType()
-            if (r2 != 0) goto L_0x0025
-            goto L_0x002d
-        L_0x0025:
-            int r2 = r2.intValue()
-            r1 = 1
-            if (r2 != r1) goto L_0x002d
-            goto L_0x002e
-        L_0x002d:
-            r1 = 0
-        L_0x002e:
-            androidx.core.app.Person$c r2 = r0.d(r1)
-            if (r3 == 0) goto L_0x0039
-            androidx.core.graphics.drawable.IconCompat r3 = toIconCompat(r3)
-            goto L_0x003a
-        L_0x0039:
-            r3 = 0
-        L_0x003a:
-            androidx.core.app.Person$c r2 = r2.c(r3)
-            androidx.core.app.Person r2 = r2.a()
-            java.lang.String r3 = "Builder()\n        .setNa…ompat())\n        .build()"
-            kotlin.jvm.internal.q.f(r2, r3)
-            return r2
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getSender(com.discord.notifications.api.NotificationData, android.graphics.Bitmap):androidx.core.app.Person");
     }
 
@@ -552,14 +434,14 @@ public final class NotificationDataUtilsKt {
             return null;
         }
         StringBuilder sb2 = new StringBuilder();
-        sb2.append("android.resource://");
+        sb2.append("android.resource:
         String packageName = context.getPackageName();
         int i10 = R.raw.call_ringing;
         sb2.append(packageName + "/" + i10);
         return Uri.parse(sb2.toString());
     }
 
-    /* renamed from: getSystemMessageUserJoin-_NT-lnE  reason: not valid java name */
+    
     private static final CharSequence m550getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
         List k10;
         long j10;
@@ -572,150 +454,16 @@ public final class NotificationDataUtilsKt {
         return I18nUtilsKt.i18nFormat(context, (I18nMessage) k10.get((int) (j10 % k10.size())), new NotificationDataUtilsKt$getSystemMessageUserJoin$1$1(str));
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:12:0x0054, code lost:
-        if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_FORUM_THREAD_CREATED) != false) goto L_0x00a8;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:17:0x007d, code lost:
-        if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_STAGE_INSTANCE_CREATE) != false) goto L_0x00a8;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x00a6, code lost:
-        if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE) != false) goto L_0x00a8;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x00a8, code lost:
-        r0 = r3.getType();
-        r3 = r3.m531getChannelIdqMVnFVQ();
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:33:?, code lost:
-        return r0 + r3;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:5:0x0018, code lost:
-        if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_CALL_RING) != false) goto L_0x00a8;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:7:0x0022, code lost:
-        if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_MESSAGE_CREATE) != false) goto L_0x00a8;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
+    
+    
+    
+    
+    
+    
+    
+    
     public static final java.lang.String getTag(com.discord.notifications.api.NotificationData r3) {
-        /*
-            java.lang.String r0 = "<this>"
-            kotlin.jvm.internal.q.g(r3, r0)
-            java.lang.String r0 = r3.getType()
-            int r1 = r0.hashCode()
-            switch(r1) {
-                case -1502317553: goto L_0x00c0;
-                case -1489275252: goto L_0x00a0;
-                case -1327124998: goto L_0x0080;
-                case -1263316859: goto L_0x0077;
-                case -1237752112: goto L_0x0057;
-                case -437641071: goto L_0x004e;
-                case 974015250: goto L_0x0026;
-                case 998188116: goto L_0x001c;
-                case 1770025841: goto L_0x0012;
-                default: goto L_0x0010;
-            }
-        L_0x0010:
-            goto L_0x00e0
-        L_0x0012:
-            java.lang.String r1 = "CALL_RING"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            goto L_0x00a8
-        L_0x001c:
-            java.lang.String r1 = "MESSAGE_CREATE"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            goto L_0x00a8
-        L_0x0026:
-            java.lang.String r1 = "ACTIVITY_START"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            java.lang.String r0 = r3.getType()
-            java.lang.Integer r1 = r3.getActivityType()
-            java.lang.String r3 = r3.getActivityName()
-            java.lang.StringBuilder r2 = new java.lang.StringBuilder
-            r2.<init>()
-            r2.append(r0)
-            r2.append(r1)
-            r2.append(r3)
-            java.lang.String r3 = r2.toString()
-            goto L_0x00df
-        L_0x004e:
-            java.lang.String r1 = "FORUM_THREAD_CREATED"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            goto L_0x00a8
-        L_0x0057:
-            java.lang.String r1 = "APPLICATION_LIBRARY_INSTALL_COMPLETE"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            java.lang.String r0 = r3.getType()
-            com.discord.primitives.ApplicationId r3 = r3.m530getApplicationIdUtIrSio()
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            r1.append(r3)
-            java.lang.String r3 = r1.toString()
-            goto L_0x00df
-        L_0x0077:
-            java.lang.String r1 = "STAGE_INSTANCE_CREATE"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            goto L_0x00a8
-        L_0x0080:
-            java.lang.String r1 = "RELATIONSHIP_ADD"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            java.lang.String r0 = r3.getType()
-            com.discord.primitives.UserId r3 = r3.m535getUserIdwUX8bhU()
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            r1.append(r3)
-            java.lang.String r3 = r1.toString()
-            goto L_0x00df
-        L_0x00a0:
-            java.lang.String r1 = "GUILD_SCHEDULED_EVENT_UPDATE"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-        L_0x00a8:
-            java.lang.String r0 = r3.getType()
-            com.discord.primitives.ChannelId r3 = r3.m531getChannelIdqMVnFVQ()
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            r1.append(r3)
-            java.lang.String r3 = r1.toString()
-            goto L_0x00df
-        L_0x00c0:
-            java.lang.String r1 = "GENERIC_PUSH_NOTIFICATION_SENT"
-            boolean r0 = r0.equals(r1)
-            if (r0 == 0) goto L_0x00e0
-            java.lang.String r0 = r3.getType()
-            java.lang.String r3 = r3.getDeeplink()
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            r1.append(r3)
-            java.lang.String r3 = r1.toString()
-        L_0x00df:
-            return r3
-        L_0x00e0:
-            java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
-            java.lang.String r3 = r3.getType()
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            java.lang.String r2 = "Unknown notification type: "
-            r1.append(r2)
-            r1.append(r3)
-            java.lang.String r3 = "."
-            r1.append(r3)
-            java.lang.String r3 = r1.toString()
-            r0.<init>(r3)
-            throw r0
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getTag(com.discord.notifications.api.NotificationData):java.lang.String");
     }
 

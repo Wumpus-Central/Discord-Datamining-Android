@@ -23,7 +23,7 @@ import kotlin.collections.i;
 import kotlin.jvm.internal.q;
 
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\b\u0003\n\u0002\u0010\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\"B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J0\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00042\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0013J\u001a\u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\n\u0010\u0016\u001a\u00060\u0017j\u0002`\u0018J \u0010\u0014\u001a\u00020\f2\u0006\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u00042\b\b\u0002\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\u001c\u001a\u00020\u001dJ\u0006\u0010\u001e\u001a\u00020\u001dJ\u000e\u0010\u001f\u001a\u00020\f2\u0006\u0010 \u001a\u00020!R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R$\u0010\b\u001a\u0004\u0018\u00010\u00072\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007@BX\u0086\u000e¢\u0006\n\n\u0002\u0010\n\u001a\u0004\b\b\u0010\t¨\u0006#"}, d2 = {"Lcom/discord/crash_reporting/CrashReporting;", "", "()V", "TAG_APP_VERSION", "", "TAG_BUILD_NUMBER", "<set-?>", "", "isCrashedLastRun", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "addBreadcrumb", "", "breadcrumbMessage", "breadcrumbData", "", "breadcrumbCategory", "captureException", "throwable", "", "captureMessage", "tag", "exception", "Ljava/lang/Exception;", "Lkotlin/Exception;", "message", "errorLevel", "Lcom/discord/crash_reporting/CrashReporting$ErrorLevel;", "getSampleRate", "", "getTracingSampleRate", "init", "context", "Landroid/content/Context;", "ErrorLevel", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes3.dex */
+
 public final class CrashReporting {
     public static final CrashReporting INSTANCE = new CrashReporting();
     private static final String TAG_APP_VERSION = "appVersion";
@@ -31,16 +31,16 @@ public final class CrashReporting {
     private static Boolean isCrashedLastRun;
 
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0004\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004¨\u0006\u0005"}, d2 = {"Lcom/discord/crash_reporting/CrashReporting$ErrorLevel;", "", "(Ljava/lang/String;I)V", "INFO", "WARNING", "crash_reporting_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
+    
     public enum ErrorLevel {
         INFO,
         WARNING
     }
 
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
-    /* loaded from: classes3.dex */
-    public /* synthetic */ class WhenMappings {
-        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+    
+    public  class WhenMappings {
+        public static final  int[] $EnumSwitchMapping$0;
 
         static {
             int[] iArr = new int[ErrorLevel.values().length];
@@ -59,8 +59,8 @@ public final class CrashReporting {
     private CrashReporting() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    public static /* synthetic */ void addBreadcrumb$default(CrashReporting crashReporting, String str, Map map, String str2, int i10, Object obj) {
+    
+    public static  void addBreadcrumb$default(CrashReporting crashReporting, String str, Map map, String str2, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             map = v.h();
         }
@@ -70,7 +70,7 @@ public final class CrashReporting {
         crashReporting.addBreadcrumb(str, map, str2);
     }
 
-    public static /* synthetic */ void captureMessage$default(CrashReporting crashReporting, String str, String str2, ErrorLevel errorLevel, int i10, Object obj) {
+    public static  void captureMessage$default(CrashReporting crashReporting, String str, String str2, ErrorLevel errorLevel, int i10, Object obj) {
         if ((i10 & 4) != 0) {
             errorLevel = ErrorLevel.INFO;
         }
@@ -100,11 +100,11 @@ public final class CrashReporting {
     public static final void init$lambda$0(Context context, SentryAndroidOptions options) {
         q.g(context, "$context");
         q.g(options, "options");
-        options.setDsn("https://70545531dfe34835bf4dd0996821e8b6@o64374.ingest.sentry.io/5992375");
+        options.setDsn("https:
         ClientInfo clientInfo = ClientInfo.INSTANCE;
         options.setEnvironment(clientInfo.getReleaseChannel());
         options.setDist(clientInfo.getVersionCode());
-        options.setRelease("discord_android@188.3.0-2+188203");
+        options.setRelease("discord_android@188.5.0-2+188205");
         File cacheDir = context.getCacheDir();
         options.setCacheDirPath(cacheDir + "/sentry");
         options.setEnableActivityLifecycleTracingAutoFinish(false);
@@ -112,7 +112,7 @@ public final class CrashReporting {
         CrashReporting crashReporting = INSTANCE;
         options.setTracesSampleRate(Double.valueOf(crashReporting.getTracingSampleRate()));
         options.setSampleRate(Double.valueOf(crashReporting.getSampleRate()));
-        options.setProguardUuid("9fe1335d-75e1-4691-a559-7224646795f2");
+        options.setProguardUuid("ee04a9a0-241e-4c0b-8cc9-2fcc9a836a2c");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
     }
@@ -148,8 +148,8 @@ public final class CrashReporting {
         } else if (i10 == 2) {
             Log.w$default(Log.INSTANCE, tag, message, (Throwable) null, 4, (Object) null);
         }
-        k2.x(new b2() { // from class: com.discord.crash_reporting.b
-            @Override // io.sentry.b2
+        k2.x(new b2() { 
+            @Override 
             public final void a(Scope scope) {
                 CrashReporting.captureMessage$lambda$1(tag, message, errorLevel, scope);
             }
@@ -185,8 +185,8 @@ public final class CrashReporting {
                     return;
                 }
             }
-            b1.f(context, new k2.a() { // from class: com.discord.crash_reporting.a
-                @Override // io.sentry.k2.a
+            b1.f(context, new k2.a() { 
+                @Override 
                 public final void a(o3 o3Var) {
                     CrashReporting.init$lambda$0(context, (SentryAndroidOptions) o3Var);
                 }

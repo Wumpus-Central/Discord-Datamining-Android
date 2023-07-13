@@ -9,17 +9,17 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "Lcom/discord/media/utils/ContentResolverMedia;", "contentUri", "Landroid/net/Uri;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes6.dex */
-public final class ContentResolverMedia$Companion$getMedia$performQuery$1 extends s implements Function1<Uri, List<? extends ContentResolverMedia>> {
-    final /* synthetic */ Context $context;
-    final /* synthetic */ int $queryLimit;
-    final /* synthetic */ Integer $queryOffset;
-    final /* synthetic */ ContentResolverMedia.QueryType $queryType;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "Lcom/discord/media/utils/ContentResolverMedia;", "contentUri", "Landroid/net/Uri;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+
+public final class ContentResolverMedia$Companion$getMedia$performQuery$1 extends s implements Function1<Uri, List<? extends ContentResolverMedia>> {
+    final  Context $context;
+    final  int $queryLimit;
+    final  Integer $queryOffset;
+    final  ContentResolverMedia.QueryType $queryType;
+
+    
+    
     public ContentResolverMedia$Companion$getMedia$performQuery$1(Context context, ContentResolverMedia.QueryType queryType, int i10, Integer num) {
         super(1);
         this.$context = context;

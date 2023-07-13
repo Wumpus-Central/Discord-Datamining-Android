@@ -7,7 +7,7 @@ import com.discord.progress_dots.ProgressDot;
 import com.discord.progress_dots.R;
 import v0.a;
 
-/* loaded from: classes4.dex */
+
 public final class ProgressDotsViewBinding {
     private final View rootView;
     public final ProgressDot viewProgressDots1;
