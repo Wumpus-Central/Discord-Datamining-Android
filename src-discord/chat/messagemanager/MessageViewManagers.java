@@ -30,13 +30,21 @@ import com.discord.reactevents.ReactEvents;
 import com.discord.theme.ThemeManager;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.viewmanagers.DCDGuildMultilineSystemMessageViewManagerDelegate;
+import com.facebook.react.viewmanagers.DCDGuildMultilineSystemMessageViewManagerInterface;
+import com.facebook.react.viewmanagers.DCDMessageViewManagerDelegate;
+import com.facebook.react.viewmanagers.DCDMessageViewManagerInterface;
+import com.facebook.react.viewmanagers.DCDSystemMessageViewManagerDelegate;
+import com.facebook.react.viewmanagers.DCDSystemMessageViewManagerInterface;
 import ff.x;
 import java.util.Map;
 import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.f0;
 import kotlin.jvm.internal.q;
 import kotlinx.serialization.json.Json;
@@ -49,17 +57,45 @@ public final class MessageViewManagers {
     private static final Json json = l.b(null, MessageViewManagers$json$1.INSTANCE, 1, null);
     private static final ReactEvents reactEvents;
 
-    @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0014J\b\u0010\t\u001a\u00020\nH\u0016¨\u0006\u000b"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$GuildMultilineSystemMessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/MessageView;", "()V", "createViewInstance", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 \u00142\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u00012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0004:\u0001\u0014B\u0005¢\u0006\u0002\u0010\u0005J\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0014J0\u0010\r\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\b\u0010\u000e\u001a\u00020\u000fH\u0016J \u0010\u0010\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010\u0013\u001a\u0004\u0018\u00010\u000fH\u0017R6\u0010\u0006\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0015"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$GuildMultilineSystemMessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/MessageView;", "Lcom/facebook/react/viewmanagers/DCDGuildMultilineSystemMessageViewManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDGuildMultilineSystemMessageViewManagerDelegate;", "kotlin.jvm.PlatformType", "createViewInstance", "", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getDelegate", "getName", "", "setRow", "", "view", "value", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ReactModule(name = GuildMultilineSystemMessageViewManager.NAME)
     
-    public static final class GuildMultilineSystemMessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<MessageView>> {
+    public static final class GuildMultilineSystemMessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<MessageView>> implements DCDGuildMultilineSystemMessageViewManagerInterface<ViewMeasuringWrapper<MessageView>> {
+        public static final Companion Companion = new Companion(null);
+        public static final String NAME = "DCDGuildMultilineSystemMessageView";
+        private final DCDGuildMultilineSystemMessageViewManagerDelegate<ViewMeasuringWrapper<MessageView>, GuildMultilineSystemMessageViewManager> delegate = new DCDGuildMultilineSystemMessageViewManagerDelegate<>(this);
+
+        @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$GuildMultilineSystemMessageViewManager$Companion;", "", "()V", "NAME", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+        
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+        }
+
         @Override 
         public String getName() {
-            return "DCDGuildMultilineSystemMessageView";
+            return NAME;
         }
 
         @Override 
         protected Void createViewInstance(ThemedReactContext reactContext) {
             q.g(reactContext, "reactContext");
+            throw new UnsupportedOperationException("multiline system messages are not supported.");
+        }
+
+        
+        @Override 
+        public DCDGuildMultilineSystemMessageViewManagerDelegate<ViewMeasuringWrapper<MessageView>, GuildMultilineSystemMessageViewManager> getDelegate() {
+            return this.delegate;
+        }
+
+        @ReactProp(name = "row")
+        public void setRow(ViewMeasuringWrapper<MessageView> view, String str) {
+            q.g(view, "view");
             throw new UnsupportedOperationException("multiline system messages are not supported.");
         }
     }
@@ -172,40 +208,28 @@ public final class MessageViewManagers {
         }
     }
 
-    @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0004J\u0016\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0006\u001a\u00020\u0007H\u0014J\b\u0010\b\u001a\u00020\tH\u0016J\u001e\u0010\n\u001a\u00020\u000b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\r\u001a\u00020\tH\u0007¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/DecoratedMessageView;", "()V", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "row", "", "wrappedView", "rowJson", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 \u00132\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u00012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0004:\u0001\u0013B\u0005¢\u0006\u0002\u0010\u0005J\u0016\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\n\u001a\u00020\u000bH\u0014J0\u0010\f\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\b\u0010\r\u001a\u00020\u000eH\u0016J \u0010\u000f\u001a\u00020\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010\u0012\u001a\u0004\u0018\u00010\u000eH\u0017R6\u0010\u0006\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/DecoratedMessageView;", "Lcom/facebook/react/viewmanagers/DCDMessageViewManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDMessageViewManagerDelegate;", "kotlin.jvm.PlatformType", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getDelegate", "getName", "", "setRow", "", "wrappedView", "value", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ReactModule(name = MessageViewManager.NAME)
     
-    public static final class MessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<DecoratedMessageView>> {
-        @Override 
-        public String getName() {
-            return "DCDMessageView";
+    public static final class MessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<DecoratedMessageView>> implements DCDMessageViewManagerInterface<ViewMeasuringWrapper<DecoratedMessageView>> {
+        public static final Companion Companion = new Companion(null);
+        public static final String NAME = "DCDMessageView";
+        private final DCDMessageViewManagerDelegate<ViewMeasuringWrapper<DecoratedMessageView>, MessageViewManager> delegate = new DCDMessageViewManagerDelegate<>(this);
+
+        @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageViewManager$Companion;", "", "()V", "NAME", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+        
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
         }
 
-        @ReactProp(name = "row")
-        public final void row(ViewMeasuringWrapper<DecoratedMessageView> wrappedView, String rowJson) {
-            MessageFrameType messageFrameType;
-            q.g(wrappedView, "wrappedView");
-            q.g(rowJson, "rowJson");
-            MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
-            MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(rowJson);
-            MessageFrame messageFrame = convertRowJsonToMessageRow.getMessageFrame();
-            if (messageFrame != null) {
-                messageFrameType = messageFrame.getType();
-            } else {
-                messageFrameType = null;
-            }
-            if (messageFrameType == MessageFrameType.MEDIA_VIEWER_MESSAGE_FRAME) {
-                ThemeManager themeManager = ThemeManager.INSTANCE;
-                themeManager.setThemeOverride(themeManager.getDarkTheme());
-            }
-            DecoratedMessageView view = wrappedView.getView();
-            MessageBase message = convertRowJsonToMessageRow.getMessage();
-            q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
-            MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
-            MessageFrame messageFrame2 = convertRowJsonToMessageRow.getMessageFrame();
-            Context context = wrappedView.getContext();
-            q.f(context, "wrappedView.context");
-            DecoratedMessageView.setMessage$default(view, (Message) message, messageContext, messageFrame2, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context), null, null, false, convertRowJsonToMessageRow.isHighlight(), false, 368, null);
-            ThemeManager.INSTANCE.setThemeOverride(null);
+        @Override 
+        public String getName() {
+            return NAME;
         }
 
         
@@ -214,28 +238,59 @@ public final class MessageViewManagers {
             q.g(reactContext, "reactContext");
             return new ViewMeasuringWrapper<>(new DecoratedMessageView(reactContext, null, 2, null), new MessageViewManagers$MessageViewManager$createViewInstance$1(reactContext));
         }
-    }
 
-    @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0004J\u0016\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0006\u001a\u00020\u0007H\u0014J\b\u0010\b\u001a\u00020\tH\u0016J\u001e\u0010\n\u001a\u00020\u000b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\r\u001a\u00020\tH\u0007¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$SystemMessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/system/SystemMessageWrapperView;", "()V", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getName", "", "row", "", "wrappedView", "rowJson", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
-    
-    public static final class SystemMessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<SystemMessageWrapperView>> {
+        
         @Override 
-        public String getName() {
-            return "DCDSystemMessageView";
+        public DCDMessageViewManagerDelegate<ViewMeasuringWrapper<DecoratedMessageView>, MessageViewManager> getDelegate() {
+            return this.delegate;
         }
 
         @ReactProp(name = "row")
-        public final void row(ViewMeasuringWrapper<SystemMessageWrapperView> wrappedView, String rowJson) {
+        public void setRow(ViewMeasuringWrapper<DecoratedMessageView> wrappedView, String str) {
             q.g(wrappedView, "wrappedView");
-            q.g(rowJson, "rowJson");
-            MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
-            MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(rowJson);
-            MessageBase message = convertRowJsonToMessageRow.getMessage();
-            q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
-            MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
-            Context context = wrappedView.getContext();
-            q.f(context, "wrappedView.context");
-            wrappedView.getView().setMessage((Message) message, messageContext, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context));
+            if (str != null) {
+                MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
+                MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(str);
+                MessageFrame messageFrame = convertRowJsonToMessageRow.getMessageFrame();
+                if ((messageFrame != null ? messageFrame.getType() : null) == MessageFrameType.MEDIA_VIEWER_MESSAGE_FRAME) {
+                    ThemeManager themeManager = ThemeManager.INSTANCE;
+                    themeManager.setThemeOverride(themeManager.getDarkTheme());
+                }
+                DecoratedMessageView view = wrappedView.getView();
+                MessageBase message = convertRowJsonToMessageRow.getMessage();
+                q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+                MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
+                MessageFrame messageFrame2 = convertRowJsonToMessageRow.getMessageFrame();
+                Context context = wrappedView.getContext();
+                q.f(context, "wrappedView.context");
+                DecoratedMessageView.setMessage$default(view, (Message) message, messageContext, messageFrame2, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context), null, null, false, convertRowJsonToMessageRow.isHighlight(), false, 368, null);
+                ThemeManager.INSTANCE.setThemeOverride(null);
+            }
+        }
+    }
+
+    @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 \u00132\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u00012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0004:\u0001\u0013B\u0005¢\u0006\u0002\u0010\u0005J\u0016\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\n\u001a\u00020\u000bH\u0014J0\u0010\f\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\b\u0010\r\u001a\u00020\u000eH\u0016J \u0010\u000f\u001a\u00020\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010\u0012\u001a\u0004\u0018\u00010\u000eH\u0017R6\u0010\u0006\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$SystemMessageViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/message/system/SystemMessageWrapperView;", "Lcom/facebook/react/viewmanagers/DCDSystemMessageViewManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDSystemMessageViewManagerDelegate;", "kotlin.jvm.PlatformType", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getDelegate", "getName", "", "setRow", "", "wrappedView", "value", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ReactModule(name = SystemMessageViewManager.NAME)
+    
+    public static final class SystemMessageViewManager extends ViewGroupManager<ViewMeasuringWrapper<SystemMessageWrapperView>> implements DCDSystemMessageViewManagerInterface<ViewMeasuringWrapper<SystemMessageWrapperView>> {
+        public static final Companion Companion = new Companion(null);
+        public static final String NAME = "DCDSystemMessageView";
+        private final DCDSystemMessageViewManagerDelegate<ViewMeasuringWrapper<SystemMessageWrapperView>, SystemMessageViewManager> delegate = new DCDSystemMessageViewManagerDelegate<>(this);
+
+        @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$SystemMessageViewManager$Companion;", "", "()V", "NAME", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+        
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+        }
+
+        @Override 
+        public String getName() {
+            return NAME;
         }
 
         
@@ -243,6 +298,27 @@ public final class MessageViewManagers {
         public ViewMeasuringWrapper<SystemMessageWrapperView> createViewInstance(ThemedReactContext reactContext) {
             q.g(reactContext, "reactContext");
             return new ViewMeasuringWrapper<>(new SystemMessageWrapperView(reactContext, null, 2, null), new MessageViewManagers$SystemMessageViewManager$createViewInstance$1(reactContext));
+        }
+
+        
+        @Override 
+        public DCDSystemMessageViewManagerDelegate<ViewMeasuringWrapper<SystemMessageWrapperView>, SystemMessageViewManager> getDelegate() {
+            return this.delegate;
+        }
+
+        @ReactProp(name = "row")
+        public void setRow(ViewMeasuringWrapper<SystemMessageWrapperView> wrappedView, String str) {
+            q.g(wrappedView, "wrappedView");
+            if (str != null) {
+                MessageViewManagers messageViewManagers = MessageViewManagers.INSTANCE;
+                MessageRow convertRowJsonToMessageRow = messageViewManagers.convertRowJsonToMessageRow(str);
+                MessageBase message = convertRowJsonToMessageRow.getMessage();
+                q.e(message, "null cannot be cast to non-null type com.discord.chat.bridge.Message");
+                MessageContext messageContext = MessageContextKt.getMessageContext(convertRowJsonToMessageRow);
+                Context context = wrappedView.getContext();
+                q.f(context, "wrappedView.context");
+                wrappedView.getView().setMessage((Message) message, messageContext, messageViewManagers.getEventHandler(convertRowJsonToMessageRow, context));
+            }
         }
     }
 
