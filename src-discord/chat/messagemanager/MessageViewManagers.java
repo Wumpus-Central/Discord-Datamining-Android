@@ -35,6 +35,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.viewmanagers.DCDGuildFeedMessageItemViewManagerDelegate;
+import com.facebook.react.viewmanagers.DCDGuildFeedMessageItemViewManagerInterface;
 import com.facebook.react.viewmanagers.DCDGuildMultilineSystemMessageViewManagerDelegate;
 import com.facebook.react.viewmanagers.DCDGuildMultilineSystemMessageViewManagerInterface;
 import com.facebook.react.viewmanagers.DCDMessageViewManagerDelegate;
@@ -100,12 +102,27 @@ public final class MessageViewManagers {
         }
     }
 
-    @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u0000\n\u0002\b\u0002\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0004J\u0016\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u000b\u001a\u00020\fH\u0014J\u001e\u0010\r\u001a\u00020\u000e2\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\r\u001a\u00020\u0010H\u0007J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0010\u0010\u0015\u001a\u00020\u000e2\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J%\u0010\u0016\u001a\u00020\u000e2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0018H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u0010\u001b\u001a\u00020\u000e2\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J-\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010\u0017\u001a\u00020\u0018H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b!\u0010\"J\u0014\u0010#\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020%0$H\u0016J\b\u0010&\u001a\u00020\u0010H\u0016R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006'"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageBundleViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView;", "()V", "messageAccessoriesViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "messageRowViewPool", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "data", "", "wrappedView", "", "emitOnLongPressItem", "", "view", "Landroid/view/View;", "emitOnTapItem", "emitOnTapReply", "messageId", "Lcom/discord/primitives/MessageId;", "emitOnTapReply-Ayv7vGE", "(Landroid/view/View;Ljava/lang/String;)V", "emitOnTapViewMoreText", "emitOnTruncateMessage", "context", "Landroid/content/Context;", "reactTag", "", "emitOnTruncateMessage-JPrav84", "(Landroid/content/Context;ILjava/lang/String;)V", "getExportedCustomDirectEventTypeConstants", "", "", "getName", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @Metadata(d1 = {"\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0006\b\u0007\u0018\u0000 -2\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u00012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0004:\u0001-B\u0005¢\u0006\u0002\u0010\u0005J\u0016\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u000f\u001a\u00020\u0010H\u0014J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J%\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0019H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0010\u0010\u001c\u001a\u00020\u00162\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J-\u0010\u001d\u001a\u00020\u00162\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!2\u0006\u0010\u0018\u001a\u00020\u0019H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\"\u0010#J0\u0010$\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\u0014\u0010%\u001a\u000e\u0012\u0004\u0012\u00020'\u0012\u0004\u0012\u00020(0&H\u0016J\b\u0010)\u001a\u00020'H\u0016J \u0010*\u001a\u00020\u00162\f\u0010+\u001a\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010,\u001a\u0004\u0018\u00010'H\u0017R6\u0010\u0006\u001a*\u0012\u0018\u0012\u0016\u0012\u0004\u0012\u00020\u0003 \b*\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b\u0019¨\u0006."}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageBundleViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/misc/utilities/measure/ViewMeasuringWrapper;", "Lcom/discord/chat/presentation/list/messagebundling/MessageBundleView;", "Lcom/facebook/react/viewmanagers/DCDGuildFeedMessageItemViewManagerInterface;", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDGuildFeedMessageItemViewManagerDelegate;", "kotlin.jvm.PlatformType", "messageAccessoriesViewPool", "Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;", "messageRowViewPool", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "emitOnLongPressItem", "", "view", "Landroid/view/View;", "emitOnTapItem", "", "emitOnTapReply", "messageId", "Lcom/discord/primitives/MessageId;", "emitOnTapReply-Ayv7vGE", "(Landroid/view/View;Ljava/lang/String;)V", "emitOnTapViewMoreText", "emitOnTruncateMessage", "context", "Landroid/content/Context;", "reactTag", "", "emitOnTruncateMessage-JPrav84", "(Landroid/content/Context;ILjava/lang/String;)V", "getDelegate", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "setData", "wrappedView", "value", "Companion", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    @ReactModule(name = MessageBundleViewManager.NAME)
     
-    public static final class MessageBundleViewManager extends ViewGroupManager<ViewMeasuringWrapper<MessageBundleView>> {
+    public static final class MessageBundleViewManager extends ViewGroupManager<ViewMeasuringWrapper<MessageBundleView>> implements DCDGuildFeedMessageItemViewManagerInterface<ViewMeasuringWrapper<MessageBundleView>> {
+        public static final Companion Companion = new Companion(null);
+        public static final String NAME = "DCDGuildFeedMessageItemView";
         private final RecyclerView.RecycledViewPool messageRowViewPool;
+        private final DCDGuildFeedMessageItemViewManagerDelegate<ViewMeasuringWrapper<MessageBundleView>, MessageBundleViewManager> delegate = new DCDGuildFeedMessageItemViewManagerDelegate<>(this);
         private final ReactEvents reactEvents = new ReactEvents(x.a("onTapItem", f0.b(OnTapMessageBundleItemData.class)), x.a("onLongPressItem", f0.b(OnLongPressMessageBundleItemData.class)), x.a("onTruncateMessage", f0.b(OnTruncateMessageData.class)), x.a("onTapReplyItem", f0.b(OnTapReplyItemData.class)), x.a("onTapViewMoreText", f0.b(OnTapViewMoreTextData.class)));
         private final RecyclerView.RecycledViewPool messageAccessoriesViewPool = ChatListUtilsKt.getMessageAccessoriesViewPool();
+
+        @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, d2 = {"Lcom/discord/chat/messagemanager/MessageViewManagers$MessageBundleViewManager$Companion;", "", "()V", "NAME", "", "chat_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+        
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public  Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+        }
 
         public MessageBundleViewManager() {
             RecyclerView.RecycledViewPool recycledViewPool = new RecyclerView.RecycledViewPool();
@@ -113,44 +130,35 @@ public final class MessageViewManagers {
             this.messageRowViewPool = recycledViewPool;
         }
 
-        
-        public static final void data$lambda$3(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
-            this$0.emitOnTapItem(wrappedView);
-        }
-
-        
-        public static final boolean data$lambda$4(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
-            return this$0.emitOnLongPressItem(wrappedView);
-        }
-
-        
-        public static final void data$lambda$5(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
-            q.g(this$0, "this$0");
-            q.g(wrappedView, "$wrappedView");
-            this$0.emitOnTapViewMoreText(wrappedView);
-        }
-
         private final boolean emitOnLongPressItem(View view) {
-            this.reactEvents.emitEvent(view, new OnLongPressMessageBundleItemData());
+            ReactEvents reactEvents = this.reactEvents;
+            Context context = view.getContext();
+            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            reactEvents.emitEvent((ReactContext) context, view, new OnLongPressMessageBundleItemData());
             return true;
         }
 
         private final void emitOnTapItem(View view) {
-            this.reactEvents.emitEvent(view, new OnTapMessageBundleItemData());
+            ReactEvents reactEvents = this.reactEvents;
+            Context context = view.getContext();
+            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            reactEvents.emitEvent((ReactContext) context, view, new OnTapMessageBundleItemData());
         }
 
         
         
         public final void m143emitOnTapReplyAyv7vGE(View view, String str) {
-            this.reactEvents.emitEvent(view, new OnTapReplyItemData(str, null));
+            ReactEvents reactEvents = this.reactEvents;
+            Context context = view.getContext();
+            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            reactEvents.emitEvent((ReactContext) context, view, new OnTapReplyItemData(str, null));
         }
 
         private final void emitOnTapViewMoreText(View view) {
-            this.reactEvents.emitEvent(view, new OnTapViewMoreTextData());
+            ReactEvents reactEvents = this.reactEvents;
+            Context context = view.getContext();
+            q.e(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            reactEvents.emitEvent((ReactContext) context, view, new OnTapViewMoreTextData());
         }
 
         
@@ -159,30 +167,25 @@ public final class MessageViewManagers {
             this.reactEvents.emitEvent(context, new OnTruncateMessageData(str, null), i10);
         }
 
-        @ReactProp(name = "data")
-        public final void data(final ViewMeasuringWrapper<MessageBundleView> wrappedView, String data) {
-            q.g(wrappedView, "wrappedView");
-            q.g(data, "data");
-            Json json = MessageViewManagers.json;
-            json.a();
-            wrappedView.getView().setBundle((MessageBundleView.MessageBundle) json.b(MessageBundleView.MessageBundle.Companion.serializer(), data), new View.OnClickListener() { 
-                @Override 
-                public final void onClick(View view) {
-                    MessageViewManagers.MessageBundleViewManager.data$lambda$3(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
-                }
-            }, new View.OnLongClickListener() { 
-                @Override 
-                public final boolean onLongClick(View view) {
-                    boolean data$lambda$4;
-                    data$lambda$4 = MessageViewManagers.MessageBundleViewManager.data$lambda$4(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
-                    return data$lambda$4;
-                }
-            }, new MessageViewManagers$MessageBundleViewManager$data$3(this, wrappedView), new View.OnClickListener() { 
-                @Override 
-                public final void onClick(View view) {
-                    MessageViewManagers.MessageBundleViewManager.data$lambda$5(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
-                }
-            });
+        
+        public static final void setData$lambda$6$lambda$3(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
+            q.g(this$0, "this$0");
+            q.g(wrappedView, "$wrappedView");
+            this$0.emitOnTapItem(wrappedView);
+        }
+
+        
+        public static final boolean setData$lambda$6$lambda$4(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
+            q.g(this$0, "this$0");
+            q.g(wrappedView, "$wrappedView");
+            return this$0.emitOnLongPressItem(wrappedView);
+        }
+
+        
+        public static final void setData$lambda$6$lambda$5(MessageBundleViewManager this$0, ViewMeasuringWrapper wrappedView, View view) {
+            q.g(this$0, "this$0");
+            q.g(wrappedView, "$wrappedView");
+            this$0.emitOnTapViewMoreText(wrappedView);
         }
 
         @Override 
@@ -192,7 +195,7 @@ public final class MessageViewManagers {
 
         @Override 
         public String getName() {
-            return "DCDGuildFeedMessageItemView";
+            return NAME;
         }
 
         
@@ -205,6 +208,39 @@ public final class MessageViewManagers {
             view.setMessageAccessoriesViewPool(this.messageAccessoriesViewPool);
             view.setOnTruncateMessage(new MessageViewManagers$MessageBundleViewManager$createViewInstance$2$1$1(this, view, viewMeasuringWrapper));
             return viewMeasuringWrapper;
+        }
+
+        
+        @Override 
+        public DCDGuildFeedMessageItemViewManagerDelegate<ViewMeasuringWrapper<MessageBundleView>, MessageBundleViewManager> getDelegate() {
+            return this.delegate;
+        }
+
+        @ReactProp(name = "data")
+        public void setData(final ViewMeasuringWrapper<MessageBundleView> wrappedView, String str) {
+            q.g(wrappedView, "wrappedView");
+            if (str != null) {
+                Json json = MessageViewManagers.json;
+                json.a();
+                wrappedView.getView().setBundle((MessageBundleView.MessageBundle) json.b(MessageBundleView.MessageBundle.Companion.serializer(), str), new View.OnClickListener() { 
+                    @Override 
+                    public final void onClick(View view) {
+                        MessageViewManagers.MessageBundleViewManager.setData$lambda$6$lambda$3(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
+                    }
+                }, new View.OnLongClickListener() { 
+                    @Override 
+                    public final boolean onLongClick(View view) {
+                        boolean data$lambda$6$lambda$4;
+                        data$lambda$6$lambda$4 = MessageViewManagers.MessageBundleViewManager.setData$lambda$6$lambda$4(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
+                        return data$lambda$6$lambda$4;
+                    }
+                }, new MessageViewManagers$MessageBundleViewManager$setData$1$3(this, wrappedView), new View.OnClickListener() { 
+                    @Override 
+                    public final void onClick(View view) {
+                        MessageViewManagers.MessageBundleViewManager.setData$lambda$6$lambda$5(MessageViewManagers.MessageBundleViewManager.this, wrappedView, view);
+                    }
+                });
+            }
         }
     }
 

@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "188206",
+        "build": "188207",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "a3e7ad3072225c4cbafb92053676da2d",
+        "app/src/main/assets/index.android.bundle": "3ffc4d5d910c0ea410999e4b43c0fa4b",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -365,6 +365,7 @@
         "app/src/main/res/drawable-mdpi/modules_video_calls_native_images_ic_chat_smiley.png": "bf60d6bcaf59bec7ca0d19497779517c",
         "app/src/main/res/drawable-mdpi/modules_video_calls_native_images_ic_voice_channel_topic.png": "dcb6adbe8f3e8727e8d60107077bb368",
         "app/src/main/res/drawable-mdpi/modules_voice_panel_native_images_airplay.png": "366adee71fade578d49ba70d8df58ccb",
+        "app/src/main/res/drawable-mdpi/modules_voice_panel_native_images_background.png": "3873fa050338099e04f812269c513d06",
         "app/src/main/res/drawable-mdpi/node_modules_discordapp_common_images_flags_bg.png": "d24e290703f8b31b56744a69df613fcb",
         "app/src/main/res/drawable-mdpi/node_modules_discordapp_common_images_flags_cs.png": "44a7840b2161275358742595c9257e76",
         "app/src/main/res/drawable-mdpi/node_modules_discordapp_common_images_flags_da.png": "3590df6f2ae2f7202dab15c0bd3aca9a",
