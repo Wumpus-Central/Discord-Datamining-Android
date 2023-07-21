@@ -34,7 +34,7 @@ public final class OnVoiceEvent$$serializer implements f0<OnVoiceEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{e0.f26255a, m0.f26305a};
+        return new KSerializer[]{e0.f26256a, m0.f26306a};
     }
 
     @Override 

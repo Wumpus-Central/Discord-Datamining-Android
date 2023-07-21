@@ -26,7 +26,7 @@ public final class MessageSerializer implements KSerializer<MessageBase> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return g.a("Message", e.i.f25631a);
+        return g.a("Message", e.i.f25632a);
     }
 
     @Override 

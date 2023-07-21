@@ -58,7 +58,7 @@ public final class LocalNotificationEvent implements ReactEvent {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        a2 a2Var = a2.f26230a;
+        a2 a2Var = a2.f26231a;
         output.n(serialDesc, 0, new r0(a2Var, a.u(a2Var)), self.locationNotification);
     }
 

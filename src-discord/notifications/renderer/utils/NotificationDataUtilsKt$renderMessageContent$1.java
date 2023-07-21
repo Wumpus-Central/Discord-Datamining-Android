@@ -23,7 +23,7 @@ final class NotificationDataUtilsKt$renderMessageContent$1 extends s implements 
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

@@ -26,7 +26,7 @@ final class BundleUpdaterManager$addListener$2 extends s implements Function1<Li
     @Override 
     public   Unit invoke(List<? extends BundleUpdater.OtaMetric> list) {
         invoke2((List<BundleUpdater.OtaMetric>) list);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

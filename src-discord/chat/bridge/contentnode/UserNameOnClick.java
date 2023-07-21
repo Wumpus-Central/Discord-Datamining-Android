@@ -103,7 +103,7 @@ public final class UserNameOnClick {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, m0.f26305a, self.linkColor);
+            output.z(serialDesc, 3, m0.f26306a, self.linkColor);
         }
     }
 

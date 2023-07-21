@@ -70,7 +70,7 @@ public final class UserSearchTransformedUser {
 
         @Override 
         public SerialDescriptor getDescriptor() {
-            return g.a("UserSearchTransformedUser", e.i.f25631a);
+            return g.a("UserSearchTransformedUser", e.i.f25632a);
         }
 
         @Override 

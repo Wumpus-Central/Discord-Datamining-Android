@@ -24,7 +24,7 @@ public final class FrescoFetchDecodedImageKt$fetchDecodedImage$6$1 extends s imp
     @Override 
     public   Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

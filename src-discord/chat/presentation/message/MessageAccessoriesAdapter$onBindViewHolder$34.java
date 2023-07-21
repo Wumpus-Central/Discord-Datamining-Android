@@ -24,7 +24,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$34 extends s imple
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

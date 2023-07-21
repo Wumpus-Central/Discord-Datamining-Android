@@ -49,7 +49,7 @@ public final class BundleUpdaterUtils {
         q.g(file, "file");
         BufferedSource d10 = wj.m.d(wj.m.k(file));
         try {
-            j a10 = j.f28673n.a(wj.m.b());
+            j a10 = j.f28674n.a(wj.m.b());
             d10.l0(a10);
             th = null;
             return a10.a().m();

@@ -72,7 +72,7 @@ public final class Transcoder {
                 function1.invoke(Float.valueOf(1.0f));
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation<Uri> cancellableContinuation = pVar;
-                s.a aVar = s.f14771l;
+                s.a aVar = s.f14772l;
                 cancellableContinuation.resumeWith(s.b(discordVideoMediaSource.getOutputUri()));
             }
 
@@ -82,7 +82,7 @@ public final class Transcoder {
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation<Uri> cancellableContinuation = pVar;
-                s.a aVar = s.f14771l;
+                s.a aVar = s.f14772l;
                 if (th2 == null) {
                     th2 = new Throwable("Unknown transcoding error");
                 }

@@ -29,7 +29,7 @@ public final class GuildId$$serializer implements f0<GuildId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26346a};
+        return new KSerializer[]{w0.f26347a};
     }
 
     @Override 

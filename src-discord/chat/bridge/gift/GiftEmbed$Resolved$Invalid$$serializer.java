@@ -44,8 +44,8 @@ public final class GiftEmbed$Resolved$Invalid$$serializer implements f0<GiftEmbe
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
-        m0 m0Var = m0.f26305a;
+        a2 a2Var = a2.f26231a;
+        m0 m0Var = m0.f26306a;
         return new KSerializer[]{a2Var, m0Var, m0Var, m0Var, a2Var, a2Var, m0Var, a2Var, m0Var, m0Var};
     }
 

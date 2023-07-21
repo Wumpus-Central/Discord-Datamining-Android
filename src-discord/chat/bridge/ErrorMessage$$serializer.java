@@ -35,7 +35,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f26230a};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f26231a};
     }
 
     @Override 

@@ -120,7 +120,7 @@ public final class NotificationClient {
                                 }
                                 String str5 = ChannelId.m571toStringimpl(channelId.m573unboximpl());
                                 String str6 = MessageId.m596toStringimpl(str2);
-                                Json.a aVar = Json.f21164d;
+                                Json.a aVar = Json.f21165d;
                                 aVar.a();
                                 DiscordMobileApi.putMessage(str4, str, str5, str6, aVar.c(KvMessageEntry.Companion.serializer(), kvMessage));
                             }
@@ -250,7 +250,7 @@ public final class NotificationClient {
     public final void onNotificationReceived(Context context, Map<String, String> data) {
         q.g(context, "context");
         q.g(data, "data");
-        showNotification(context, (NotificationData) a.f28133b.d(NotificationData.Companion.serializer(), data), data, true);
+        showNotification(context, (NotificationData) a.f28134b.d(NotificationData.Companion.serializer(), data), data, true);
     }
 
     public final void setActive(boolean z10) {

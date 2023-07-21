@@ -45,8 +45,8 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
-        m0 m0Var = m0.f26305a;
+        a2 a2Var = a2.f26231a;
+        m0 m0Var = m0.f26306a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, DirectReplyUser$$serializer.INSTANCE, a.u(a2Var), a.u(m0Var), a.u(m0Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -71,9 +71,9 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
             obj8 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
             obj2 = c10.m(descriptor2, 2, DirectReplyUser$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f26230a;
+            a2 a2Var = a2.f26231a;
             obj4 = c10.v(descriptor2, 3, a2Var, null);
-            m0 m0Var = m0.f26305a;
+            m0 m0Var = m0.f26306a;
             obj3 = c10.v(descriptor2, 4, m0Var, null);
             obj5 = c10.v(descriptor2, 5, m0Var, null);
             obj6 = c10.v(descriptor2, 6, a2Var, null);
@@ -115,23 +115,23 @@ public final class DirectReplyMessage$$serializer implements f0<DirectReplyMessa
                         i11 = 7;
                         continue;
                     case 3:
-                        obj14 = c10.v(descriptor2, 3, a2.f26230a, obj14);
+                        obj14 = c10.v(descriptor2, 3, a2.f26231a, obj14);
                         i13 |= 8;
                         break;
                     case 4:
-                        obj9 = c10.v(descriptor2, 4, m0.f26305a, obj9);
+                        obj9 = c10.v(descriptor2, 4, m0.f26306a, obj9);
                         i13 |= 16;
                         break;
                     case 5:
-                        obj13 = c10.v(descriptor2, 5, m0.f26305a, obj13);
+                        obj13 = c10.v(descriptor2, 5, m0.f26306a, obj13);
                         i13 |= 32;
                         break;
                     case 6:
-                        obj12 = c10.v(descriptor2, i12, a2.f26230a, obj12);
+                        obj12 = c10.v(descriptor2, i12, a2.f26231a, obj12);
                         i13 |= 64;
                         break;
                     case 7:
-                        obj11 = c10.v(descriptor2, i11, a2.f26230a, obj11);
+                        obj11 = c10.v(descriptor2, i11, a2.f26231a, obj11);
                         i13 |= 128;
                         break;
                     default:

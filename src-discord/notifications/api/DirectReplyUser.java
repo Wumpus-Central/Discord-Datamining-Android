@@ -101,7 +101,7 @@ public final class DirectReplyUser {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f26230a, self.username);
+            output.z(serialDesc, 1, a2.f26231a, self.username);
         }
         if (!output.w(serialDesc, 2) && self.discriminator == null) {
             z11 = false;
@@ -109,13 +109,13 @@ public final class DirectReplyUser {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f26230a, self.discriminator);
+            output.z(serialDesc, 2, a2.f26231a, self.discriminator);
         }
         if (output.w(serialDesc, 3) || self.avatar != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f26230a, self.avatar);
+            output.z(serialDesc, 3, a2.f26231a, self.avatar);
         }
     }
 

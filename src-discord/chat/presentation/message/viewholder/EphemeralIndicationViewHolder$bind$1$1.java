@@ -21,7 +21,7 @@ public  class EphemeralIndicationViewHolder$bind$1$1 extends n implements Functi
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m334invokentcYbpo(messageId.m598unboximpl(), linkContentNode);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

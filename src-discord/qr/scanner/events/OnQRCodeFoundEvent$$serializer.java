@@ -35,7 +35,7 @@ public final class OnQRCodeFoundEvent$$serializer implements f0<OnQRCodeFoundEve
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
+        a2 a2Var = a2.f26231a;
         return new KSerializer[]{a2Var, a.u(a2Var)};
     }
 
@@ -49,7 +49,7 @@ public final class OnQRCodeFoundEvent$$serializer implements f0<OnQRCodeFoundEve
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
-            obj = c10.v(descriptor2, 1, a2.f26230a, null);
+            obj = c10.v(descriptor2, 1, a2.f26231a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -64,7 +64,7 @@ public final class OnQRCodeFoundEvent$$serializer implements f0<OnQRCodeFoundEve
                     str = c10.t(descriptor2, 0);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj2 = c10.v(descriptor2, 1, a2.f26230a, obj2);
+                    obj2 = c10.v(descriptor2, 1, a2.f26231a, obj2);
                     i11 |= 2;
                 } else {
                     throw new n(x10);

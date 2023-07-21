@@ -29,7 +29,7 @@ public final class StickerId$$serializer implements f0<StickerId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26346a};
+        return new KSerializer[]{w0.f26347a};
     }
 
     @Override 

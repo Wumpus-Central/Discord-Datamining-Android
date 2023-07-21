@@ -86,13 +86,13 @@ public final class Truncation {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, m0.f26305a, self.seeMoreLabelColor);
+            output.z(serialDesc, 2, m0.f26306a, self.seeMoreLabelColor);
         }
         if (output.w(serialDesc, 3) || self.forceShow != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, h.f26272a, self.forceShow);
+            output.z(serialDesc, 3, h.f26273a, self.forceShow);
         }
     }
 

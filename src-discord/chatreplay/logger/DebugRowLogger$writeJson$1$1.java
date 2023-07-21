@@ -25,16 +25,16 @@ final class DebugRowLogger$writeJson$1$1 extends s implements Function1<String, 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     
     public final void invoke2(String line) {
         q.g(line, "line");
-        if (this.$existingLine.f20688k) {
+        if (this.$existingLine.f20689k) {
             this.$writer.write(",\n");
         }
         this.$writer.write(line);
-        this.$existingLine.f20688k = true;
+        this.$existingLine.f20689k = true;
     }
 }

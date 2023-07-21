@@ -27,7 +27,7 @@ final class MessageContentView$setMessageContent$spannableStringBuilder$1 extend
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

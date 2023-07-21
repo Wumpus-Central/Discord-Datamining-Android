@@ -37,7 +37,7 @@ public final class KeyboardExtensionsKt$hideKeyboard$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((KeyboardExtensionsKt$hideKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20663a);
+        return ((KeyboardExtensionsKt$hideKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20664a);
     }
 
     @Override 
@@ -48,7 +48,7 @@ public final class KeyboardExtensionsKt$hideKeyboard$1 extends k implements Func
             t.b(obj);
             insetsController = KeyboardExtensionsKt.getInsetsController(this.$window, this.$self);
             insetsController.a(WindowInsetsCompat.m.b());
-            return Unit.f20663a;
+            return Unit.f20664a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

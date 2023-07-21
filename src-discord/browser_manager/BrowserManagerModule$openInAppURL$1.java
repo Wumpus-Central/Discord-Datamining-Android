@@ -22,7 +22,7 @@ final class BrowserManagerModule$openInAppURL$1 extends s implements Function1<E
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

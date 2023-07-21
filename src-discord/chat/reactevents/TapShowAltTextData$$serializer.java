@@ -32,7 +32,7 @@ public final class TapShowAltTextData$$serializer implements f0<TapShowAltTextDa
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26230a};
+        return new KSerializer[]{a2.f26231a};
     }
 
     @Override 

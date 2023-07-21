@@ -27,7 +27,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$22 extends s imple
     @Override 
     public   Unit invoke(Integer num, MessageAccessory messageAccessory, MessagePartViewHolder messagePartViewHolder) {
         invoke(num.intValue(), messageAccessory, messagePartViewHolder);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     public final void invoke(int i10, MessageAccessory attachment, MessagePartViewHolder attachmentViewHolder) {

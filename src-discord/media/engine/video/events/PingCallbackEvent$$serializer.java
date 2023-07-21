@@ -38,8 +38,8 @@ public final class PingCallbackEvent$$serializer implements f0<PingCallbackEvent
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26305a;
-        return new KSerializer[]{m0Var, m0Var, a2.f26230a, m0Var, m0Var};
+        m0 m0Var = m0.f26306a;
+        return new KSerializer[]{m0Var, m0Var, a2.f26231a, m0Var, m0Var};
     }
 
     @Override 

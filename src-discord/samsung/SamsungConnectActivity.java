@@ -51,7 +51,7 @@ public final class SamsungConnectActivity extends b {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f20663a;
+                Unit unit = Unit.f20664a;
                 Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + c10.K(1221, A, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);

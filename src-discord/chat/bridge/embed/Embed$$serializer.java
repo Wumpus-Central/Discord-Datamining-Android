@@ -68,11 +68,11 @@ public final class Embed$$serializer implements f0<Embed> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
+        a2 a2Var = a2.f26231a;
         StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
         EmbedMedia$$serializer embedMedia$$serializer = EmbedMedia$$serializer.INSTANCE;
-        m0 m0Var = m0.f26305a;
-        return new KSerializer[]{EmbedType.Companion.serializer(), a.u(EmbedAuthor$$serializer.INSTANCE), a.u(EmbedProvider$$serializer.INSTANCE), a.u(a2Var), a.u(structurableTextSerializer), a.u(new f(EmbedField$$serializer.INSTANCE)), a.u(a2Var), a.u(a2Var), a.u(structurableTextSerializer), a.u(embedMedia$$serializer), a.u(new f(embedMedia$$serializer)), a.u(embedMedia$$serializer), a.u(EmbedThumbnail$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(h.f26272a), a.u(EmbedFooter$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(EmbedFailureState.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), m0Var, a.u(a2Var)};
+        m0 m0Var = m0.f26306a;
+        return new KSerializer[]{EmbedType.Companion.serializer(), a.u(EmbedAuthor$$serializer.INSTANCE), a.u(EmbedProvider$$serializer.INSTANCE), a.u(a2Var), a.u(structurableTextSerializer), a.u(new f(EmbedField$$serializer.INSTANCE)), a.u(a2Var), a.u(a2Var), a.u(structurableTextSerializer), a.u(embedMedia$$serializer), a.u(new f(embedMedia$$serializer)), a.u(embedMedia$$serializer), a.u(EmbedThumbnail$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(h.f26273a), a.u(EmbedFooter$$serializer.INSTANCE), a.u(a2Var), a.u(a2Var), a.u(EmbedFailureState.Serializer.INSTANCE), a.u(m0Var), a.u(m0Var), a.u(m0Var), m0Var, a.u(a2Var)};
     }
 
     @Override 
@@ -112,7 +112,7 @@ public final class Embed$$serializer implements f0<Embed> {
             obj25 = c10.m(descriptor2, 0, EmbedType.Companion.serializer(), null);
             obj = c10.v(descriptor2, 1, EmbedAuthor$$serializer.INSTANCE, null);
             obj18 = c10.v(descriptor2, 2, EmbedProvider$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f26230a;
+            a2 a2Var = a2.f26231a;
             obj23 = c10.v(descriptor2, 3, a2Var, null);
             StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
             obj20 = c10.v(descriptor2, 4, structurableTextSerializer, null);
@@ -128,12 +128,12 @@ public final class Embed$$serializer implements f0<Embed> {
             obj4 = c10.v(descriptor2, 13, a2Var, null);
             obj6 = c10.v(descriptor2, 14, a2Var, null);
             obj7 = c10.v(descriptor2, 15, a2Var, null);
-            obj8 = c10.v(descriptor2, 16, h.f26272a, null);
+            obj8 = c10.v(descriptor2, 16, h.f26273a, null);
             obj10 = c10.v(descriptor2, 17, EmbedFooter$$serializer.INSTANCE, null);
             obj9 = c10.v(descriptor2, 18, a2Var, null);
             obj11 = c10.v(descriptor2, 19, a2Var, null);
             obj22 = c10.v(descriptor2, 20, EmbedFailureState.Serializer.INSTANCE, null);
-            m0 m0Var = m0.f26305a;
+            m0 m0Var = m0.f26306a;
             obj2 = c10.v(descriptor2, 21, m0Var, null);
             obj12 = c10.v(descriptor2, 22, m0Var, null);
             obj13 = c10.v(descriptor2, 23, m0Var, null);
@@ -203,7 +203,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj37 = obj37;
                         break;
                     case 3:
-                        obj37 = c10.v(descriptor2, 3, a2.f26230a, obj37);
+                        obj37 = c10.v(descriptor2, 3, a2.f26231a, obj37);
                         i14 |= 8;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -227,7 +227,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj40 = obj40;
                         break;
                     case 6:
-                        obj40 = c10.v(descriptor2, 6, a2.f26230a, obj40);
+                        obj40 = c10.v(descriptor2, 6, a2.f26231a, obj40);
                         i14 |= 64;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -235,7 +235,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj41 = obj41;
                         break;
                     case 7:
-                        obj41 = c10.v(descriptor2, 7, a2.f26230a, obj41);
+                        obj41 = c10.v(descriptor2, 7, a2.f26231a, obj41);
                         i14 |= 128;
                         obj27 = obj27;
                         obj28 = obj28;
@@ -280,27 +280,27 @@ public final class Embed$$serializer implements f0<Embed> {
                         obj28 = obj28;
                         break;
                     case 13:
-                        obj31 = c10.v(descriptor2, 13, a2.f26230a, obj31);
+                        obj31 = c10.v(descriptor2, 13, a2.f26231a, obj31);
                         i14 |= 8192;
                         obj27 = obj27;
                         obj26 = obj26;
                         break;
                     case 14:
                         obj31 = obj31;
-                        obj32 = c10.v(descriptor2, 14, a2.f26230a, obj32);
+                        obj32 = c10.v(descriptor2, 14, a2.f26231a, obj32);
                         i14 |= 16384;
                         obj26 = obj26;
                         break;
                     case 15:
                         obj31 = obj31;
-                        obj33 = c10.v(descriptor2, 15, a2.f26230a, obj33);
+                        obj33 = c10.v(descriptor2, 15, a2.f26231a, obj33);
                         i12 = 32768;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 16:
                         obj31 = obj31;
-                        obj46 = c10.v(descriptor2, 16, h.f26272a, obj46);
+                        obj46 = c10.v(descriptor2, 16, h.f26273a, obj46);
                         i12 = 65536;
                         i14 |= i12;
                         obj26 = obj26;
@@ -314,14 +314,14 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 18:
                         obj31 = obj31;
-                        obj29 = c10.v(descriptor2, 18, a2.f26230a, obj29);
+                        obj29 = c10.v(descriptor2, 18, a2.f26231a, obj29);
                         i12 = 262144;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 19:
                         obj31 = obj31;
-                        obj28 = c10.v(descriptor2, 19, a2.f26230a, obj28);
+                        obj28 = c10.v(descriptor2, 19, a2.f26231a, obj28);
                         i12 = 524288;
                         i14 |= i12;
                         obj26 = obj26;
@@ -335,21 +335,21 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 21:
                         obj31 = obj31;
-                        obj27 = c10.v(descriptor2, 21, m0.f26305a, obj27);
+                        obj27 = c10.v(descriptor2, 21, m0.f26306a, obj27);
                         i12 = 2097152;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 22:
                         obj31 = obj31;
-                        obj12 = c10.v(descriptor2, 22, m0.f26305a, obj12);
+                        obj12 = c10.v(descriptor2, 22, m0.f26306a, obj12);
                         i12 = 4194304;
                         i14 |= i12;
                         obj26 = obj26;
                         break;
                     case 23:
                         obj31 = obj31;
-                        obj13 = c10.v(descriptor2, 23, m0.f26305a, obj13);
+                        obj13 = c10.v(descriptor2, 23, m0.f26306a, obj13);
                         i12 = 8388608;
                         i14 |= i12;
                         obj26 = obj26;
@@ -361,7 +361,7 @@ public final class Embed$$serializer implements f0<Embed> {
                         break;
                     case 25:
                         obj31 = obj31;
-                        obj21 = c10.v(descriptor2, 25, a2.f26230a, obj21);
+                        obj21 = c10.v(descriptor2, 25, a2.f26231a, obj21);
                         i12 = 33554432;
                         i14 |= i12;
                         obj26 = obj26;

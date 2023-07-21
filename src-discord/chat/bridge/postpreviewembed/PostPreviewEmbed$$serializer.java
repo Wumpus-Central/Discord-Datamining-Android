@@ -60,8 +60,8 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
     @Override 
     public KSerializer<?>[] childSerializers() {
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        a2 a2Var = a2.f26230a;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f26305a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f26272a, a.u(a2Var)};
+        a2 a2Var = a2.f26231a;
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, a2Var, a2Var, m0.f26306a, StructurableTextSerializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), h.f26273a, a.u(a2Var)};
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
             str = c10.t(descriptor2, 5);
             i10 = c10.k(descriptor2, 6);
             obj5 = c10.m(descriptor2, 7, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f26230a;
+            a2 a2Var = a2.f26231a;
             obj3 = c10.v(descriptor2, 8, a2Var, null);
             obj6 = c10.v(descriptor2, 9, a2Var, null);
             obj7 = c10.v(descriptor2, 10, a2Var, null);
@@ -200,40 +200,40 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         c11 = '\n';
                         break;
                     case 8:
-                        obj17 = c10.v(descriptor2, 8, a2.f26230a, obj17);
+                        obj17 = c10.v(descriptor2, 8, a2.f26231a, obj17);
                         i14 |= 256;
                         i13 = 15;
                         i12 = 11;
                         c11 = '\n';
                         break;
                     case 9:
-                        obj18 = c10.v(descriptor2, 9, a2.f26230a, obj18);
+                        obj18 = c10.v(descriptor2, 9, a2.f26231a, obj18);
                         i14 |= 512;
                         i13 = 15;
                         i12 = 11;
                         c11 = '\n';
                         break;
                     case 10:
-                        obj19 = c10.v(descriptor2, 10, a2.f26230a, obj19);
+                        obj19 = c10.v(descriptor2, 10, a2.f26231a, obj19);
                         i14 |= 1024;
                         c11 = '\n';
                         i13 = 15;
                         i12 = 11;
                         break;
                     case 11:
-                        obj20 = c10.v(descriptor2, i12, a2.f26230a, obj20);
+                        obj20 = c10.v(descriptor2, i12, a2.f26231a, obj20);
                         i14 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i13 = 15;
                         c11 = '\n';
                         break;
                     case 12:
-                        obj14 = c10.v(descriptor2, 12, a2.f26230a, obj14);
+                        obj14 = c10.v(descriptor2, 12, a2.f26231a, obj14);
                         i14 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         i13 = 15;
                         c11 = '\n';
                         break;
                     case 13:
-                        obj16 = c10.v(descriptor2, 13, a2.f26230a, obj16);
+                        obj16 = c10.v(descriptor2, 13, a2.f26231a, obj16);
                         i14 |= 8192;
                         i13 = 15;
                         c11 = '\n';
@@ -243,7 +243,7 @@ public final class PostPreviewEmbed$$serializer implements f0<PostPreviewEmbed> 
                         i14 |= 16384;
                         break;
                     case 15:
-                        obj4 = c10.v(descriptor2, i13, a2.f26230a, obj4);
+                        obj4 = c10.v(descriptor2, i13, a2.f26231a, obj4);
                         i14 |= 32768;
                         break;
                     default:

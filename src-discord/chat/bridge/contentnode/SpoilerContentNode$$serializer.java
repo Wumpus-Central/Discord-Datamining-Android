@@ -35,7 +35,7 @@ public final class SpoilerContentNode$$serializer implements f0<SpoilerContentNo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2.f26230a};
+        return new KSerializer[]{new f(ContentNodeSerializer.INSTANCE), a2.f26231a};
     }
 
     @Override 

@@ -23,7 +23,7 @@ final class ReactionsViewHolder$bind$2 extends s implements Function1<ReactionVi
     @Override 
     public   Unit invoke(ReactionView.Reaction reaction) {
         invoke2(reaction);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

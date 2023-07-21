@@ -33,7 +33,7 @@ public final class UserSearchQuerySetData$$serializer implements f0<UserSearchQu
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26230a, UserSearchQuerySetPayload$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26231a, UserSearchQuerySetPayload$$serializer.INSTANCE};
     }
 
     @Override 

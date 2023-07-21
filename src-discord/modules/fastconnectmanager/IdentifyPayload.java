@@ -65,10 +65,10 @@ public final class IdentifyPayload {
         q.g(json, "json");
         q.g(versions, "versions");
         try {
-            s.a aVar = s.f14771l;
-            obj = s.b(Json.f21164d.g(json));
+            s.a aVar = s.f14772l;
+            obj = s.b(Json.f21165d.g(json));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14771l;
+            s.a aVar2 = s.f14772l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {

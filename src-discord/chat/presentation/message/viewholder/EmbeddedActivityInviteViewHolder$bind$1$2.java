@@ -20,7 +20,7 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$2 extends n implements Fun
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

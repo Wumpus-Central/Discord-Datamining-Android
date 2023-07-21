@@ -23,7 +23,7 @@ final class MediaPlayerManagerModule$changeProgress$1 extends s implements Funct
     @Override 
     public   Unit invoke(SimpleExoPlayer simpleExoPlayer) {
         invoke2(simpleExoPlayer);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

@@ -21,7 +21,7 @@ public  class EmbedViewHolder$bind$3 extends n implements Function2<MessageId, L
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m331invokentcYbpo(messageId.m598unboximpl(), linkContentNode);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

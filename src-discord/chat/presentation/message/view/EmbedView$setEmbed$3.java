@@ -27,7 +27,7 @@ final class EmbedView$setEmbed$3 extends s implements Function1<LinkContentNode,
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

@@ -37,7 +37,7 @@ public final class OnFocusEvent$$serializer implements f0<OnFocusEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26305a;
+        m0 m0Var = m0.f26306a;
         return new KSerializer[]{m0Var, m0Var, m0Var};
     }
 

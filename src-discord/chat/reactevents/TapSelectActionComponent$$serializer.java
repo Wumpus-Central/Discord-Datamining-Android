@@ -37,7 +37,7 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f26346a, SelectComponent.Companion.serializer()};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f26347a, SelectComponent.Companion.serializer()};
     }
 
     @Override 

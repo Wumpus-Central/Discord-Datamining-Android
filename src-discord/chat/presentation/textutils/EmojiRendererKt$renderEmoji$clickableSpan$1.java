@@ -25,7 +25,7 @@ final class EmojiRendererKt$renderEmoji$clickableSpan$1 extends s implements Fun
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

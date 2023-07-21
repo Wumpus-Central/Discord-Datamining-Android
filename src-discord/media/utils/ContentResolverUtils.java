@@ -115,7 +115,7 @@ public final class ContentResolverUtils {
             if (num != null) {
                 bundle.putInt("android:query-arg-offset", num.intValue());
             }
-            Unit unit = Unit.f20663a;
+            Unit unit = Unit.f20664a;
             query = contentResolver.query(queryUri, queryProjection, bundle, null);
             return query;
         } else if (i11 >= 26) {

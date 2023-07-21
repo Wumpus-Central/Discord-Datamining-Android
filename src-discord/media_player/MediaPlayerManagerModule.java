@@ -164,7 +164,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             return null;
         }
         Job.a.a(remove, null, 1, null);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     @ReactMethod

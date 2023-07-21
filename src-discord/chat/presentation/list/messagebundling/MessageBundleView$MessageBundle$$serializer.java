@@ -46,7 +46,7 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
     @Override 
     public KSerializer<?>[] childSerializers() {
         MessageRow$$serializer messageRow$$serializer = MessageRow$$serializer.INSTANCE;
-        return new KSerializer[]{a.u(MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE), new f(messageRow$$serializer), a.u(e0.f26255a), new f(messageRow$$serializer), a.u(a2.f26230a)};
+        return new KSerializer[]{a.u(MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE), new f(messageRow$$serializer), a.u(e0.f26256a), new f(messageRow$$serializer), a.u(a2.f26231a)};
     }
 
     @Override 
@@ -65,9 +65,9 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
             obj5 = c10.v(descriptor2, 0, MessageFrameFeedHeaderView$MessageBundleHeader$$serializer.INSTANCE, null);
             MessageRow$$serializer messageRow$$serializer = MessageRow$$serializer.INSTANCE;
             obj = c10.m(descriptor2, 1, new f(messageRow$$serializer), null);
-            obj2 = c10.v(descriptor2, 2, e0.f26255a, null);
+            obj2 = c10.v(descriptor2, 2, e0.f26256a, null);
             obj4 = c10.m(descriptor2, 3, new f(messageRow$$serializer), null);
-            obj3 = c10.v(descriptor2, 4, a2.f26230a, null);
+            obj3 = c10.v(descriptor2, 4, a2.f26231a, null);
             i10 = 31;
         } else {
             boolean z10 = true;
@@ -87,13 +87,13 @@ public final class MessageBundleView$MessageBundle$$serializer implements f0<Mes
                     obj7 = c10.m(descriptor2, 1, new f(MessageRow$$serializer.INSTANCE), obj7);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj8 = c10.v(descriptor2, 2, e0.f26255a, obj8);
+                    obj8 = c10.v(descriptor2, 2, e0.f26256a, obj8);
                     i11 |= 4;
                 } else if (x10 == 3) {
                     obj9 = c10.m(descriptor2, 3, new f(MessageRow$$serializer.INSTANCE), obj9);
                     i11 |= 8;
                 } else if (x10 == 4) {
-                    obj10 = c10.v(descriptor2, 4, a2.f26230a, obj10);
+                    obj10 = c10.v(descriptor2, 4, a2.f26231a, obj10);
                     i11 |= 16;
                 } else {
                     throw new n(x10);

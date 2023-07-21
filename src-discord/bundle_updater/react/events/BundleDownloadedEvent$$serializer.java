@@ -32,7 +32,7 @@ public final class BundleDownloadedEvent$$serializer implements f0<BundleDownloa
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{h.f26272a};
+        return new KSerializer[]{h.f26273a};
     }
 
     @Override 

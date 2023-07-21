@@ -32,7 +32,7 @@ public final class TapDismissEmbeddedActivityData$$serializer implements f0<TapD
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26230a};
+        return new KSerializer[]{a2.f26231a};
     }
 
     @Override 

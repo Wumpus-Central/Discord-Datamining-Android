@@ -33,7 +33,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
     }
 
     public final Object invoke(FlowCollector<? super Unit> flowCollector, Continuation<? super Unit> continuation) {
-        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f20663a);
+        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f20664a);
     }
 
     

@@ -47,9 +47,9 @@ public final class Summary$$serializer implements f0<Summary> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
+        a2 a2Var = a2.f26231a;
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f26305a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2Var, a2Var, a2Var, new f(UserId$$serializer.INSTANCE), messageId$$serializer, messageId$$serializer, m0.f26306a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override 

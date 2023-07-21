@@ -38,8 +38,8 @@ public final class ContactSyncBlobEntry$$serializer implements f0<ContactSyncBlo
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
-        return new KSerializer[]{a2Var, a2Var, h.f26272a, a2Var, a2Var, a2Var};
+        a2 a2Var = a2.f26231a;
+        return new KSerializer[]{a2Var, a2Var, h.f26273a, a2Var, a2Var, a2Var};
     }
 
     @Override 

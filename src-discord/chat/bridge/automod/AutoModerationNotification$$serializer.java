@@ -37,7 +37,7 @@ public final class AutoModerationNotification$$serializer implements f0<AutoMode
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26230a;
+        a2 a2Var = a2.f26231a;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -54,7 +54,7 @@ public final class AutoModerationNotification$$serializer implements f0<AutoMode
         String str2 = null;
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f26230a;
+            a2 a2Var = a2.f26231a;
             obj = c10.v(descriptor2, 1, a2Var, null);
             obj2 = c10.v(descriptor2, 2, a2Var, null);
             obj3 = c10.v(descriptor2, 3, a2Var, null);
@@ -73,13 +73,13 @@ public final class AutoModerationNotification$$serializer implements f0<AutoMode
                     str2 = c10.t(descriptor2, 0);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj4 = c10.v(descriptor2, 1, a2.f26230a, obj4);
+                    obj4 = c10.v(descriptor2, 1, a2.f26231a, obj4);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f26230a, obj5);
+                    obj5 = c10.v(descriptor2, 2, a2.f26231a, obj5);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj6 = c10.v(descriptor2, 3, a2.f26230a, obj6);
+                    obj6 = c10.v(descriptor2, 3, a2.f26231a, obj6);
                     i11 |= 8;
                 } else {
                     throw new n(x10);

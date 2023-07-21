@@ -26,7 +26,7 @@ final class MessageContentView$truncate$1 extends s implements Function1<View, U
     @Override 
     public   Unit invoke(View view) {
         invoke2(view);
-        return Unit.f20663a;
+        return Unit.f20664a;
     }
 
     

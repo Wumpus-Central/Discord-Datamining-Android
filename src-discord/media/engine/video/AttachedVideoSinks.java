@@ -102,7 +102,7 @@ public final class AttachedVideoSinks {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f20663a;
+                Unit unit = Unit.f20664a;
             }
             if (z10 && (function2 = activeSinksChangeCallback) != null) {
                 function2.invoke(streamId, Boolean.FALSE);

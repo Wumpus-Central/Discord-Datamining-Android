@@ -108,13 +108,13 @@ public final class StringSelectItem extends SelectItem {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 3, a2.f26230a, self.description);
+            output.z(serialDesc, 3, a2.f26231a, self.description);
         }
         if (output.w(serialDesc, 4) || !q.b(self.f0default, Boolean.FALSE)) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 4, h.f26272a, self.f0default);
+            output.z(serialDesc, 4, h.f26273a, self.f0default);
         }
     }
 

@@ -40,8 +40,8 @@ public final class Truncation$$serializer implements f0<Truncation> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26305a;
-        return new KSerializer[]{m0Var, a2.f26230a, a.u(m0Var), a.u(h.f26272a)};
+        m0 m0Var = m0.f26306a;
+        return new KSerializer[]{m0Var, a2.f26231a, a.u(m0Var), a.u(h.f26273a)};
     }
 
     @Override 
@@ -57,8 +57,8 @@ public final class Truncation$$serializer implements f0<Truncation> {
         if (c10.y()) {
             i10 = c10.k(descriptor2, 0);
             str = c10.t(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, m0.f26305a, null);
-            obj2 = c10.v(descriptor2, 3, h.f26272a, null);
+            obj = c10.v(descriptor2, 2, m0.f26306a, null);
+            obj2 = c10.v(descriptor2, 3, h.f26273a, null);
             i11 = 15;
         } else {
             boolean z10 = true;
@@ -78,10 +78,10 @@ public final class Truncation$$serializer implements f0<Truncation> {
                     str2 = c10.t(descriptor2, 1);
                     i13 |= 2;
                 } else if (x10 == 2) {
-                    obj3 = c10.v(descriptor2, 2, m0.f26305a, obj3);
+                    obj3 = c10.v(descriptor2, 2, m0.f26306a, obj3);
                     i13 |= 4;
                 } else if (x10 == 3) {
-                    obj4 = c10.v(descriptor2, 3, h.f26272a, obj4);
+                    obj4 = c10.v(descriptor2, 3, h.f26273a, obj4);
                     i13 |= 8;
                 } else {
                     throw new n(x10);

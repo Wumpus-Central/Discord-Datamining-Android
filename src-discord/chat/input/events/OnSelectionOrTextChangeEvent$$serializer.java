@@ -37,8 +37,8 @@ public final class OnSelectionOrTextChangeEvent$$serializer implements f0<OnSele
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26305a;
-        a2 a2Var = a2.f26230a;
+        m0 m0Var = m0.f26306a;
+        a2 a2Var = a2.f26231a;
         return new KSerializer[]{m0Var, m0Var, a2Var, a2Var};
     }
 

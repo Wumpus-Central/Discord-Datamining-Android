@@ -96,7 +96,7 @@ public final class HandleDeleteMessage {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 2, a2.f26230a, self.loggingName);
+            output.z(serialDesc, 2, a2.f26231a, self.loggingName);
         }
         output.n(serialDesc, 3, HandleDeleteMessageAuthor$$serializer.INSTANCE, self.author);
     }
