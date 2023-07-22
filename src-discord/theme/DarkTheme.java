@@ -5,7 +5,7 @@ import com.discord.theme.utils.ColorUtilsKt;
 import kotlin.Metadata;
 import kotlin.jvm.internal.q;
 
-@Metadata(d1 = {"\u0000\u001b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0003\bÉ\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001b\u0010É\u0003\u001a\u00020\u00062\u0007\u0010Ê\u0003\u001a\u00020\u00062\u0007\u0010Ë\u0003\u001a\u00020\u0006H\u0016J\u001b\u0010Ì\u0003\u001a\u00020\u00062\u0007\u0010Í\u0003\u001a\u00020\u00062\u0007\u0010Î\u0003\u001a\u00020\u0006H\u0016R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\bR\u0014\u0010\u000b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\bR\u0014\u0010\r\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\bR\u0014\u0010\u000f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\bR\u0014\u0010\u0011\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\bR\u0014\u0010\u0013\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\bR\u0014\u0010\u0015\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\bR\u0014\u0010\u0017\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\bR\u0014\u0010\u0019\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\bR\u0014\u0010\u001b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\bR\u0014\u0010\u001d\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\bR\u0014\u0010\u001f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\bR\u0014\u0010!\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\bR\u0014\u0010#\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\bR\u0014\u0010%\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\bR\u0014\u0010'\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\bR\u0014\u0010)\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b*\u0010\bR\u0014\u0010+\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b,\u0010\bR\u0014\u0010-\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\bR\u0014\u0010/\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b0\u0010\bR\u0014\u00101\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u0010\bR\u0014\u00103\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b4\u0010\bR\u0014\u00105\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b6\u0010\bR\u0014\u00107\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b8\u0010\bR\u0014\u00109\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b:\u0010\bR\u0014\u0010;\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b<\u0010\bR\u0014\u0010=\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b>\u0010\bR\u0014\u0010?\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b@\u0010\bR\u0014\u0010A\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bB\u0010\bR\u0014\u0010C\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bD\u0010\bR\u0014\u0010E\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010\bR\u0014\u0010G\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bH\u0010\bR\u0014\u0010I\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010\bR\u0014\u0010K\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bL\u0010\bR\u0014\u0010M\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u0010\bR\u0014\u0010O\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bP\u0010\bR\u0014\u0010Q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bR\u0010\bR\u0014\u0010S\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bT\u0010\bR\u0014\u0010U\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bV\u0010\bR\u0014\u0010W\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bX\u0010\bR\u0014\u0010Y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bZ\u0010\bR\u0014\u0010[\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010\bR\u0014\u0010]\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b^\u0010\bR\u0014\u0010_\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b`\u0010\bR\u0014\u0010a\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bb\u0010\bR\u0014\u0010c\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bd\u0010\bR\u0014\u0010e\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bf\u0010\bR\u0014\u0010g\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bh\u0010\bR\u0014\u0010i\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bj\u0010\bR\u0014\u0010k\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bl\u0010\bR\u0014\u0010m\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bn\u0010\bR\u0014\u0010o\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bp\u0010\bR\u0014\u0010q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\br\u0010\bR\u0014\u0010s\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bt\u0010\bR\u0014\u0010u\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bv\u0010\bR\u0014\u0010w\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bx\u0010\bR\u0014\u0010y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bz\u0010\bR\u0014\u0010{\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b|\u0010\bR\u0014\u0010}\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b~\u0010\bR\u0015\u0010\u007f\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0001\u0010\bR\u0016\u0010\u0081\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0001\u0010\bR\u0016\u0010\u0083\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0001\u0010\bR\u0016\u0010\u0085\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0001\u0010\bR\u0016\u0010\u0087\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0001\u0010\bR\u0016\u0010\u0089\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0001\u0010\bR\u0016\u0010\u008b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0001\u0010\bR\u0016\u0010\u008d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0001\u0010\bR\u0016\u0010\u008f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0001\u0010\bR\u0016\u0010\u0091\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0001\u0010\bR\u0016\u0010\u0093\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0001\u0010\bR\u0016\u0010\u0095\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0001\u0010\bR\u0016\u0010\u0097\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0001\u0010\bR\u0016\u0010\u0099\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0001\u0010\bR\u0016\u0010\u009b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0001\u0010\bR\u0016\u0010\u009d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0001\u0010\bR\u0016\u0010\u009f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0001\u0010\bR\u0016\u0010¡\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0001\u0010\bR\u0016\u0010£\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0001\u0010\bR\u0016\u0010¥\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0001\u0010\bR\u0016\u0010§\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0001\u0010\bR\u0016\u0010©\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0001\u0010\bR\u0016\u0010«\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0001\u0010\bR\u0016\u0010\u00ad\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0001\u0010\bR\u0016\u0010¯\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0001\u0010\bR\u0016\u0010±\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0001\u0010\bR\u0016\u0010³\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0001\u0010\bR\u0016\u0010µ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0001\u0010\bR\u0016\u0010·\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0001\u0010\bR\u0016\u0010¹\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0001\u0010\bR\u0016\u0010»\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0001\u0010\bR\u0016\u0010½\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0001\u0010\bR\u0016\u0010¿\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0001\u0010\bR\u0016\u0010Á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0001\u0010\bR\u0016\u0010Ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0001\u0010\bR\u0016\u0010Å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0001\u0010\bR\u0016\u0010Ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0001\u0010\bR\u0016\u0010É\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0001\u0010\bR\u0016\u0010Ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0001\u0010\bR\u0016\u0010Í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0001\u0010\bR\u0016\u0010Ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0001\u0010\bR\u0016\u0010Ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0001\u0010\bR\u0016\u0010Ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0001\u0010\bR\u0016\u0010Õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0001\u0010\bR\u0016\u0010×\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0001\u0010\bR\u0016\u0010Ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0001\u0010\bR\u0016\u0010Û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0001\u0010\bR\u0016\u0010Ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0001\u0010\bR\u0016\u0010ß\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0001\u0010\bR\u0016\u0010á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0001\u0010\bR\u0016\u0010ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0001\u0010\bR\u0016\u0010å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0001\u0010\bR\u0016\u0010ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0001\u0010\bR\u0016\u0010é\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0001\u0010\bR\u0016\u0010ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0001\u0010\bR\u0016\u0010í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0001\u0010\bR\u0016\u0010ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0001\u0010\bR\u0016\u0010ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0001\u0010\bR\u0016\u0010ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0001\u0010\bR\u0016\u0010õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0001\u0010\bR\u0016\u0010÷\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0001\u0010\bR\u0016\u0010ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0001\u0010\bR\u0016\u0010û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0001\u0010\bR\u0016\u0010ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0001\u0010\bR\u0016\u0010ÿ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0002\u0010\bR\u0016\u0010\u0081\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0002\u0010\bR\u0016\u0010\u0083\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0002\u0010\bR\u0016\u0010\u0085\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0002\u0010\bR\u0016\u0010\u0087\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0002\u0010\bR\u0016\u0010\u0089\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0002\u0010\bR\u0016\u0010\u008b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0002\u0010\bR\u0016\u0010\u008d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0002\u0010\bR\u0016\u0010\u008f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0002\u0010\bR\u0016\u0010\u0091\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0002\u0010\bR\u0016\u0010\u0093\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0002\u0010\bR\u0016\u0010\u0095\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0002\u0010\bR\u0016\u0010\u0097\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0002\u0010\bR\u0016\u0010\u0099\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0002\u0010\bR\u0016\u0010\u009b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0002\u0010\bR\u0016\u0010\u009d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0002\u0010\bR\u0016\u0010\u009f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0002\u0010\bR\u0016\u0010¡\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0002\u0010\bR\u0016\u0010£\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0002\u0010\bR\u0016\u0010¥\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0002\u0010\bR\u0016\u0010§\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0002\u0010\bR\u0016\u0010©\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0002\u0010\bR\u0016\u0010«\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0002\u0010\bR\u0016\u0010\u00ad\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0002\u0010\bR\u0016\u0010¯\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0002\u0010\bR\u0016\u0010±\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0002\u0010\bR\u0016\u0010³\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0002\u0010\bR\u0016\u0010µ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0002\u0010\bR\u0016\u0010·\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0002\u0010\bR\u0016\u0010¹\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0002\u0010\bR\u0016\u0010»\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0002\u0010\bR\u0016\u0010½\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0002\u0010\bR\u0016\u0010¿\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0002\u0010\bR\u0016\u0010Á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0002\u0010\bR\u0016\u0010Ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0002\u0010\bR\u0016\u0010Å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0002\u0010\bR\u0016\u0010Ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0002\u0010\bR\u0016\u0010É\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0002\u0010\bR\u0016\u0010Ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0002\u0010\bR\u0016\u0010Í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0002\u0010\bR\u0016\u0010Ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0002\u0010\bR\u0016\u0010Ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0002\u0010\bR\u0016\u0010Ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0002\u0010\bR\u0016\u0010Õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0002\u0010\bR\u0016\u0010×\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0002\u0010\bR\u0016\u0010Ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0002\u0010\bR\u0016\u0010Û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0002\u0010\bR\u0016\u0010Ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0002\u0010\bR\u0016\u0010ß\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0002\u0010\bR\u0016\u0010á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0002\u0010\bR\u0016\u0010ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0002\u0010\bR\u0016\u0010å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0002\u0010\bR\u0016\u0010ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0002\u0010\bR\u0016\u0010é\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0002\u0010\bR\u0016\u0010ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0002\u0010\bR\u0016\u0010í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0002\u0010\bR\u0016\u0010ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0002\u0010\bR\u0016\u0010ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0002\u0010\bR\u0016\u0010ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0002\u0010\bR\u0016\u0010õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0002\u0010\bR\u0016\u0010÷\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0002\u0010\bR\u0016\u0010ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0002\u0010\bR\u0016\u0010û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0002\u0010\bR\u0016\u0010ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0002\u0010\bR\u0016\u0010ÿ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0003\u0010\bR\u0016\u0010\u0081\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0003\u0010\bR\u0016\u0010\u0083\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0003\u0010\bR\u0016\u0010\u0085\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0003\u0010\bR\u0016\u0010\u0087\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0003\u0010\bR\u0016\u0010\u0089\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0003\u0010\bR\u0016\u0010\u008b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0003\u0010\bR\u0016\u0010\u008d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0003\u0010\bR\u0016\u0010\u008f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0003\u0010\bR\u0016\u0010\u0091\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0003\u0010\bR\u0016\u0010\u0093\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0003\u0010\bR\u0016\u0010\u0095\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0003\u0010\bR\u0016\u0010\u0097\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0003\u0010\bR\u0016\u0010\u0099\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0003\u0010\bR\u0016\u0010\u009b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0003\u0010\bR\u0016\u0010\u009d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0003\u0010\bR\u0016\u0010\u009f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0003\u0010\bR\u0016\u0010¡\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0003\u0010\bR\u0016\u0010£\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0003\u0010\bR\u0016\u0010¥\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0003\u0010\bR\u0016\u0010§\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0003\u0010\bR\u0016\u0010©\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0003\u0010\bR\u0016\u0010«\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0003\u0010\bR\u0016\u0010\u00ad\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0003\u0010\bR\u0016\u0010¯\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0003\u0010\bR\u0016\u0010±\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0003\u0010\bR\u0016\u0010³\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0003\u0010\bR\u0016\u0010µ\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0003\u0010\bR\u0016\u0010·\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0003\u0010\bR\u0016\u0010¹\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0003\u0010\bR\u0016\u0010»\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0003\u0010\bR\u0016\u0010½\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0003\u0010\bR\u0016\u0010¿\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0003\u0010\bR\u0016\u0010Á\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0003\u0010\bR\u0016\u0010Ã\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0003\u0010\bR\u0016\u0010Å\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0003\u0010\bR\u0016\u0010Ç\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0003\u0010\b¨\u0006Ï\u0003"}, d2 = {"Lcom/discord/theme/DarkTheme;", "Lcom/discord/theme/DiscordTheme;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "activityCardBackground", "", "getActivityCardBackground", "()I", "androidNavigationBarBackground", "getAndroidNavigationBarBackground", "androidNavigationScrimBackground", "getAndroidNavigationScrimBackground", "androidRipple", "getAndroidRipple", "backgroundAccent", "getBackgroundAccent", "backgroundFloating", "getBackgroundFloating", "backgroundMentioned", "getBackgroundMentioned", "backgroundMentionedHover", "getBackgroundMentionedHover", "backgroundMessageAutomod", "getBackgroundMessageAutomod", "backgroundMessageAutomodHover", "getBackgroundMessageAutomodHover", "backgroundMessageHighlight", "getBackgroundMessageHighlight", "backgroundMessageHighlightHover", "getBackgroundMessageHighlightHover", "backgroundMessageHover", "getBackgroundMessageHover", "backgroundMobilePrimary", "getBackgroundMobilePrimary", "backgroundMobileSecondary", "getBackgroundMobileSecondary", "backgroundModifierAccent", "getBackgroundModifierAccent", "backgroundModifierActive", "getBackgroundModifierActive", "backgroundModifierHover", "getBackgroundModifierHover", "backgroundModifierSelected", "getBackgroundModifierSelected", "backgroundNestedFloating", "getBackgroundNestedFloating", "backgroundPrimary", "getBackgroundPrimary", "backgroundSecondary", "getBackgroundSecondary", "backgroundSecondaryAlt", "getBackgroundSecondaryAlt", "backgroundTertiary", "getBackgroundTertiary", "black", "getBlack", "borderStrong", "getBorderStrong", "borderSubtle", "getBorderSubtle", "bugReporterModalSubmittingBackground", "getBugReporterModalSubmittingBackground", "buttonCreatorRevenueBackground", "getButtonCreatorRevenueBackground", "buttonDangerBackground", "getButtonDangerBackground", "buttonDangerBackgroundActive", "getButtonDangerBackgroundActive", "buttonDangerBackgroundDisabled", "getButtonDangerBackgroundDisabled", "buttonDangerBackgroundHover", "getButtonDangerBackgroundHover", "buttonOutlineBrandBackground", "getButtonOutlineBrandBackground", "buttonOutlineBrandBackgroundActive", "getButtonOutlineBrandBackgroundActive", "buttonOutlineBrandBackgroundHover", "getButtonOutlineBrandBackgroundHover", "buttonOutlineBrandBorder", "getButtonOutlineBrandBorder", "buttonOutlineBrandBorderActive", "getButtonOutlineBrandBorderActive", "buttonOutlineBrandBorderHover", "getButtonOutlineBrandBorderHover", "buttonOutlineBrandText", "getButtonOutlineBrandText", "buttonOutlineBrandTextActive", "getButtonOutlineBrandTextActive", "buttonOutlineBrandTextHover", "getButtonOutlineBrandTextHover", "buttonOutlineDangerBackground", "getButtonOutlineDangerBackground", "buttonOutlineDangerBackgroundActive", "getButtonOutlineDangerBackgroundActive", "buttonOutlineDangerBackgroundHover", "getButtonOutlineDangerBackgroundHover", "buttonOutlineDangerBorder", "getButtonOutlineDangerBorder", "buttonOutlineDangerBorderActive", "getButtonOutlineDangerBorderActive", "buttonOutlineDangerBorderHover", "getButtonOutlineDangerBorderHover", "buttonOutlineDangerText", "getButtonOutlineDangerText", "buttonOutlineDangerTextActive", "getButtonOutlineDangerTextActive", "buttonOutlineDangerTextHover", "getButtonOutlineDangerTextHover", "buttonOutlinePositiveBackground", "getButtonOutlinePositiveBackground", "buttonOutlinePositiveBackgroundActive", "getButtonOutlinePositiveBackgroundActive", "buttonOutlinePositiveBackgroundHover", "getButtonOutlinePositiveBackgroundHover", "buttonOutlinePositiveBorder", "getButtonOutlinePositiveBorder", "buttonOutlinePositiveBorderActive", "getButtonOutlinePositiveBorderActive", "buttonOutlinePositiveBorderHover", "getButtonOutlinePositiveBorderHover", "buttonOutlinePositiveText", "getButtonOutlinePositiveText", "buttonOutlinePositiveTextActive", "getButtonOutlinePositiveTextActive", "buttonOutlinePositiveTextHover", "getButtonOutlinePositiveTextHover", "buttonOutlinePrimaryBackground", "getButtonOutlinePrimaryBackground", "buttonOutlinePrimaryBackgroundActive", "getButtonOutlinePrimaryBackgroundActive", "buttonOutlinePrimaryBackgroundHover", "getButtonOutlinePrimaryBackgroundHover", "buttonOutlinePrimaryBorder", "getButtonOutlinePrimaryBorder", "buttonOutlinePrimaryBorderActive", "getButtonOutlinePrimaryBorderActive", "buttonOutlinePrimaryBorderHover", "getButtonOutlinePrimaryBorderHover", "buttonOutlinePrimaryText", "getButtonOutlinePrimaryText", "buttonOutlinePrimaryTextActive", "getButtonOutlinePrimaryTextActive", "buttonOutlinePrimaryTextHover", "getButtonOutlinePrimaryTextHover", "buttonPositiveBackground", "getButtonPositiveBackground", "buttonPositiveBackgroundActive", "getButtonPositiveBackgroundActive", "buttonPositiveBackgroundDisabled", "getButtonPositiveBackgroundDisabled", "buttonPositiveBackgroundHover", "getButtonPositiveBackgroundHover", "buttonSecondaryBackground", "getButtonSecondaryBackground", "buttonSecondaryBackgroundActive", "getButtonSecondaryBackgroundActive", "buttonSecondaryBackgroundDisabled", "getButtonSecondaryBackgroundDisabled", "buttonSecondaryBackgroundHover", "getButtonSecondaryBackgroundHover", "channelIcon", "getChannelIcon", "channelTextAreaPlaceholder", "getChannelTextAreaPlaceholder", "channelsDefault", "getChannelsDefault", "channeltextareaBackground", "getChanneltextareaBackground", "chatBackground", "getChatBackground", "chatBorder", "getChatBorder", "chatInputContainerBackground", "getChatInputContainerBackground", "controlBrandForeground", "getControlBrandForeground", "controlBrandForegroundNew", "getControlBrandForegroundNew", "creatorRevenueIconGradientEnd", "getCreatorRevenueIconGradientEnd", "creatorRevenueIconGradientStart", "getCreatorRevenueIconGradientStart", "creatorRevenueInfoBoxBackground", "getCreatorRevenueInfoBoxBackground", "creatorRevenueInfoBoxBorder", "getCreatorRevenueInfoBoxBorder", "creatorRevenueLockedChannelIcon", "getCreatorRevenueLockedChannelIcon", "creatorRevenueProgressBar", "getCreatorRevenueProgressBar", "deprecatedCardBg", "getDeprecatedCardBg", "deprecatedCardEditableBg", "getDeprecatedCardEditableBg", "deprecatedQuickswitcherInputBackground", "getDeprecatedQuickswitcherInputBackground", "deprecatedQuickswitcherInputPlaceholder", "getDeprecatedQuickswitcherInputPlaceholder", "deprecatedStoreBg", "getDeprecatedStoreBg", "deprecatedTextInputBg", "getDeprecatedTextInputBg", "deprecatedTextInputBorder", "getDeprecatedTextInputBorder", "deprecatedTextInputBorderDisabled", "getDeprecatedTextInputBorderDisabled", "deprecatedTextInputBorderHover", "getDeprecatedTextInputBorderHover", "deprecatedTextInputPrefix", "getDeprecatedTextInputPrefix", "displayBannerOverflowBackground", "getDisplayBannerOverflowBackground", "dividerStrong", "getDividerStrong", "dividerSubtle", "getDividerSubtle", "focusPrimary", "getFocusPrimary", "forumPostExtraMediaCountContainerBackground", "getForumPostExtraMediaCountContainerBackground", "forumPostTagBackground", "getForumPostTagBackground", "headerPrimary", "getHeaderPrimary", "headerSecondary", "getHeaderSecondary", "homeBackground", "getHomeBackground", "homeCardRestingBorder", "getHomeCardRestingBorder", "infoBoxBackground", "getInfoBoxBackground", "infoDangerBackground", "getInfoDangerBackground", "infoDangerForeground", "getInfoDangerForeground", "infoDangerText", "getInfoDangerText", "infoHelpBackground", "getInfoHelpBackground", "infoHelpForeground", "getInfoHelpForeground", "infoHelpText", "getInfoHelpText", "infoPositiveBackground", "getInfoPositiveBackground", "infoPositiveForeground", "getInfoPositiveForeground", "infoPositiveText", "getInfoPositiveText", "infoWarningBackground", "getInfoWarningBackground", "infoWarningForeground", "getInfoWarningForeground", "infoWarningText", "getInfoWarningText", "inputBackground", "getInputBackground", "inputPlaceholderText", "getInputPlaceholderText", "interactiveActive", "getInteractiveActive", "interactiveHover", "getInteractiveHover", "interactiveMuted", "getInteractiveMuted", "interactiveNormal", "getInteractiveNormal", "liveStageTileBorder", "getLiveStageTileBorder", "logoPrimary", "getLogoPrimary", "mentionBackground", "getMentionBackground", "mentionForeground", "getMentionForeground", "modalBackground", "getModalBackground", "modalFooterBackground", "getModalFooterBackground", "profileGradientMessageInputBorder", "getProfileGradientMessageInputBorder", "profileGradientNoteBackground", "getProfileGradientNoteBackground", "profileGradientOverlay", "getProfileGradientOverlay", "profileGradientOverlaySyncedWithUserTheme", "getProfileGradientOverlaySyncedWithUserTheme", "profileGradientProfileBodyBackgroundHover", "getProfileGradientProfileBodyBackgroundHover", "profileGradientRolePillBackground", "getProfileGradientRolePillBackground", "profileGradientRolePillBorder", "getProfileGradientRolePillBorder", "profileGradientSectionBox", "getProfileGradientSectionBox", "redesignActivityCardBackground", "getRedesignActivityCardBackground", "redesignActivityCardBackgroundPressed", "getRedesignActivityCardBackgroundPressed", "redesignActivityCardBadgeIcon", "getRedesignActivityCardBadgeIcon", "redesignActivityCardBorder", "getRedesignActivityCardBorder", "redesignButtonDangerBackground", "getRedesignButtonDangerBackground", "redesignButtonDangerPressedBackground", "getRedesignButtonDangerPressedBackground", "redesignButtonDangerText", "getRedesignButtonDangerText", "redesignButtonOverlayAlphaBackground", "getRedesignButtonOverlayAlphaBackground", "redesignButtonOverlayAlphaPressedBackground", "getRedesignButtonOverlayAlphaPressedBackground", "redesignButtonOverlayAlphaText", "getRedesignButtonOverlayAlphaText", "redesignButtonOverlayBackground", "getRedesignButtonOverlayBackground", "redesignButtonOverlayPressedBackground", "getRedesignButtonOverlayPressedBackground", "redesignButtonOverlayText", "getRedesignButtonOverlayText", "redesignButtonPositiveBackground", "getRedesignButtonPositiveBackground", "redesignButtonPositivePressedBackground", "getRedesignButtonPositivePressedBackground", "redesignButtonPositiveText", "getRedesignButtonPositiveText", "redesignButtonPrimaryAltBackground", "getRedesignButtonPrimaryAltBackground", "redesignButtonPrimaryAltBorder", "getRedesignButtonPrimaryAltBorder", "redesignButtonPrimaryAltOnBlurpleBackground", "getRedesignButtonPrimaryAltOnBlurpleBackground", "redesignButtonPrimaryAltOnBlurpleBorder", "getRedesignButtonPrimaryAltOnBlurpleBorder", "redesignButtonPrimaryAltOnBlurplePressedBackground", "getRedesignButtonPrimaryAltOnBlurplePressedBackground", "redesignButtonPrimaryAltOnBlurplePressedBorder", "getRedesignButtonPrimaryAltOnBlurplePressedBorder", "redesignButtonPrimaryAltOnBlurpleText", "getRedesignButtonPrimaryAltOnBlurpleText", "redesignButtonPrimaryAltPressedBackground", "getRedesignButtonPrimaryAltPressedBackground", "redesignButtonPrimaryAltPressedBorder", "getRedesignButtonPrimaryAltPressedBorder", "redesignButtonPrimaryAltPressedText", "getRedesignButtonPrimaryAltPressedText", "redesignButtonPrimaryAltText", "getRedesignButtonPrimaryAltText", "redesignButtonPrimaryBackground", "getRedesignButtonPrimaryBackground", "redesignButtonPrimaryOnBlurpleBackground", "getRedesignButtonPrimaryOnBlurpleBackground", "redesignButtonPrimaryOnBlurplePressedBackground", "getRedesignButtonPrimaryOnBlurplePressedBackground", "redesignButtonPrimaryOnBlurplePressedText", "getRedesignButtonPrimaryOnBlurplePressedText", "redesignButtonPrimaryOnBlurpleText", "getRedesignButtonPrimaryOnBlurpleText", "redesignButtonPrimaryPressedBackground", "getRedesignButtonPrimaryPressedBackground", "redesignButtonPrimaryText", "getRedesignButtonPrimaryText", "redesignButtonSecondaryAltBackground", "getRedesignButtonSecondaryAltBackground", "redesignButtonSecondaryAltPressedBackground", "getRedesignButtonSecondaryAltPressedBackground", "redesignButtonSecondaryAltText", "getRedesignButtonSecondaryAltText", "redesignButtonSecondaryBackground", "getRedesignButtonSecondaryBackground", "redesignButtonSecondaryBorder", "getRedesignButtonSecondaryBorder", "redesignButtonSecondaryPressedBackground", "getRedesignButtonSecondaryPressedBackground", "redesignButtonSecondaryPressedBorder", "getRedesignButtonSecondaryPressedBorder", "redesignButtonSecondaryText", "getRedesignButtonSecondaryText", "redesignInputControlSelected", "getRedesignInputControlSelected", "redesignOnlyBackgroundActive", "getRedesignOnlyBackgroundActive", "redesignOnlyBackgroundDefault", "getRedesignOnlyBackgroundDefault", "redesignOnlyBackgroundOverlay", "getRedesignOnlyBackgroundOverlay", "redesignOnlyBackgroundRaised", "getRedesignOnlyBackgroundRaised", "redesignOnlyBackgroundSunken", "getRedesignOnlyBackgroundSunken", "scrollbarAutoScrollbarColorThumb", "getScrollbarAutoScrollbarColorThumb", "scrollbarAutoScrollbarColorTrack", "getScrollbarAutoScrollbarColorTrack", "scrollbarAutoThumb", "getScrollbarAutoThumb", "scrollbarAutoTrack", "getScrollbarAutoTrack", "scrollbarThinThumb", "getScrollbarThinThumb", "scrollbarThinTrack", "getScrollbarThinTrack", "spoilerHiddenBackground", "getSpoilerHiddenBackground", "spoilerRevealedBackground", "getSpoilerRevealedBackground", "statusDanger", "getStatusDanger", "statusDangerBackground", "getStatusDangerBackground", "statusDangerText", "getStatusDangerText", "statusDnd", "getStatusDnd", "statusIdle", "getStatusIdle", "statusOffline", "getStatusOffline", "statusOnline", "getStatusOnline", "statusPositive", "getStatusPositive", "statusPositiveBackground", "getStatusPositiveBackground", "statusPositiveText", "getStatusPositiveText", "statusWarning", "getStatusWarning", "statusWarningBackground", "getStatusWarningBackground", "statusWarningText", "getStatusWarningText", "textBrand", "getTextBrand", "textDanger", "getTextDanger", "textLink", "getTextLink", "textLinkLowSaturation", "getTextLinkLowSaturation", "textMuted", "getTextMuted", "textNormal", "getTextNormal", "textPositive", "getTextPositive", "textWarning", "getTextWarning", "textboxMarkdownSyntax", "getTextboxMarkdownSyntax", "userProfileHeaderOverflowBackground", "getUserProfileHeaderOverflowBackground", "white", "getWhite", "getColor", "lightColor", "darkColor", "getColorRes", "lightColorRes", "darkColorRes", "theme_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u001b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0003\bá\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001b\u0010á\u0003\u001a\u00020\u00062\u0007\u0010â\u0003\u001a\u00020\u00062\u0007\u0010ã\u0003\u001a\u00020\u0006H\u0016J\u001b\u0010ä\u0003\u001a\u00020\u00062\u0007\u0010å\u0003\u001a\u00020\u00062\u0007\u0010æ\u0003\u001a\u00020\u0006H\u0016R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\bR\u0014\u0010\u000b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\bR\u0014\u0010\r\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\bR\u0014\u0010\u000f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\bR\u0014\u0010\u0011\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\bR\u0014\u0010\u0013\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\bR\u0014\u0010\u0015\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\bR\u0014\u0010\u0017\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\bR\u0014\u0010\u0019\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\bR\u0014\u0010\u001b\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\bR\u0014\u0010\u001d\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\bR\u0014\u0010\u001f\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\bR\u0014\u0010!\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\bR\u0014\u0010#\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\bR\u0014\u0010%\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\bR\u0014\u0010'\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\bR\u0014\u0010)\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b*\u0010\bR\u0014\u0010+\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b,\u0010\bR\u0014\u0010-\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\bR\u0014\u0010/\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b0\u0010\bR\u0014\u00101\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u0010\bR\u0014\u00103\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b4\u0010\bR\u0014\u00105\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b6\u0010\bR\u0014\u00107\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b8\u0010\bR\u0014\u00109\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b:\u0010\bR\u0014\u0010;\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b<\u0010\bR\u0014\u0010=\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b>\u0010\bR\u0014\u0010?\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b@\u0010\bR\u0014\u0010A\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bB\u0010\bR\u0014\u0010C\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bD\u0010\bR\u0014\u0010E\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010\bR\u0014\u0010G\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bH\u0010\bR\u0014\u0010I\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010\bR\u0014\u0010K\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bL\u0010\bR\u0014\u0010M\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bN\u0010\bR\u0014\u0010O\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bP\u0010\bR\u0014\u0010Q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bR\u0010\bR\u0014\u0010S\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bT\u0010\bR\u0014\u0010U\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bV\u0010\bR\u0014\u0010W\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bX\u0010\bR\u0014\u0010Y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bZ\u0010\bR\u0014\u0010[\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\\\u0010\bR\u0014\u0010]\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b^\u0010\bR\u0014\u0010_\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b`\u0010\bR\u0014\u0010a\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bb\u0010\bR\u0014\u0010c\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bd\u0010\bR\u0014\u0010e\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bf\u0010\bR\u0014\u0010g\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bh\u0010\bR\u0014\u0010i\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bj\u0010\bR\u0014\u0010k\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bl\u0010\bR\u0014\u0010m\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bn\u0010\bR\u0014\u0010o\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bp\u0010\bR\u0014\u0010q\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\br\u0010\bR\u0014\u0010s\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bt\u0010\bR\u0014\u0010u\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bv\u0010\bR\u0014\u0010w\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bx\u0010\bR\u0014\u0010y\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\bz\u0010\bR\u0014\u0010{\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b|\u0010\bR\u0014\u0010}\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b~\u0010\bR\u0015\u0010\u007f\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0001\u0010\bR\u0016\u0010\u0081\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0001\u0010\bR\u0016\u0010\u0083\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0001\u0010\bR\u0016\u0010\u0085\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0001\u0010\bR\u0016\u0010\u0087\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0001\u0010\bR\u0016\u0010\u0089\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0001\u0010\bR\u0016\u0010\u008b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0001\u0010\bR\u0016\u0010\u008d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0001\u0010\bR\u0016\u0010\u008f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0001\u0010\bR\u0016\u0010\u0091\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0001\u0010\bR\u0016\u0010\u0093\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0001\u0010\bR\u0016\u0010\u0095\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0001\u0010\bR\u0016\u0010\u0097\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0001\u0010\bR\u0016\u0010\u0099\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0001\u0010\bR\u0016\u0010\u009b\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0001\u0010\bR\u0016\u0010\u009d\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0001\u0010\bR\u0016\u0010\u009f\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0001\u0010\bR\u0016\u0010¡\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0001\u0010\bR\u0016\u0010£\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0001\u0010\bR\u0016\u0010¥\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0001\u0010\bR\u0016\u0010§\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0001\u0010\bR\u0016\u0010©\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0001\u0010\bR\u0016\u0010«\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0001\u0010\bR\u0016\u0010\u00ad\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0001\u0010\bR\u0016\u0010¯\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0001\u0010\bR\u0016\u0010±\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0001\u0010\bR\u0016\u0010³\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0001\u0010\bR\u0016\u0010µ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0001\u0010\bR\u0016\u0010·\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0001\u0010\bR\u0016\u0010¹\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0001\u0010\bR\u0016\u0010»\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0001\u0010\bR\u0016\u0010½\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0001\u0010\bR\u0016\u0010¿\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0001\u0010\bR\u0016\u0010Á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0001\u0010\bR\u0016\u0010Ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0001\u0010\bR\u0016\u0010Å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0001\u0010\bR\u0016\u0010Ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0001\u0010\bR\u0016\u0010É\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0001\u0010\bR\u0016\u0010Ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0001\u0010\bR\u0016\u0010Í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0001\u0010\bR\u0016\u0010Ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0001\u0010\bR\u0016\u0010Ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0001\u0010\bR\u0016\u0010Ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0001\u0010\bR\u0016\u0010Õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0001\u0010\bR\u0016\u0010×\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0001\u0010\bR\u0016\u0010Ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0001\u0010\bR\u0016\u0010Û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0001\u0010\bR\u0016\u0010Ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0001\u0010\bR\u0016\u0010ß\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0001\u0010\bR\u0016\u0010á\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0001\u0010\bR\u0016\u0010ã\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0001\u0010\bR\u0016\u0010å\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0001\u0010\bR\u0016\u0010ç\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0001\u0010\bR\u0016\u0010é\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0001\u0010\bR\u0016\u0010ë\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0001\u0010\bR\u0016\u0010í\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0001\u0010\bR\u0016\u0010ï\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0001\u0010\bR\u0016\u0010ñ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0001\u0010\bR\u0016\u0010ó\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0001\u0010\bR\u0016\u0010õ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0001\u0010\bR\u0016\u0010÷\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0001\u0010\bR\u0016\u0010ù\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0001\u0010\bR\u0016\u0010û\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0001\u0010\bR\u0016\u0010ý\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0001\u0010\bR\u0016\u0010ÿ\u0001\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0002\u0010\bR\u0016\u0010\u0081\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0002\u0010\bR\u0016\u0010\u0083\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0002\u0010\bR\u0016\u0010\u0085\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0002\u0010\bR\u0016\u0010\u0087\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0002\u0010\bR\u0016\u0010\u0089\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0002\u0010\bR\u0016\u0010\u008b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0002\u0010\bR\u0016\u0010\u008d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0002\u0010\bR\u0016\u0010\u008f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0002\u0010\bR\u0016\u0010\u0091\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0002\u0010\bR\u0016\u0010\u0093\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0002\u0010\bR\u0016\u0010\u0095\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0002\u0010\bR\u0016\u0010\u0097\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0002\u0010\bR\u0016\u0010\u0099\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0002\u0010\bR\u0016\u0010\u009b\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0002\u0010\bR\u0016\u0010\u009d\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0002\u0010\bR\u0016\u0010\u009f\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0002\u0010\bR\u0016\u0010¡\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0002\u0010\bR\u0016\u0010£\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0002\u0010\bR\u0016\u0010¥\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0002\u0010\bR\u0016\u0010§\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0002\u0010\bR\u0016\u0010©\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0002\u0010\bR\u0016\u0010«\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0002\u0010\bR\u0016\u0010\u00ad\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0002\u0010\bR\u0016\u0010¯\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0002\u0010\bR\u0016\u0010±\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0002\u0010\bR\u0016\u0010³\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0002\u0010\bR\u0016\u0010µ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0002\u0010\bR\u0016\u0010·\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0002\u0010\bR\u0016\u0010¹\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0002\u0010\bR\u0016\u0010»\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0002\u0010\bR\u0016\u0010½\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0002\u0010\bR\u0016\u0010¿\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0002\u0010\bR\u0016\u0010Á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0002\u0010\bR\u0016\u0010Ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0002\u0010\bR\u0016\u0010Å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0002\u0010\bR\u0016\u0010Ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0002\u0010\bR\u0016\u0010É\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0002\u0010\bR\u0016\u0010Ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0002\u0010\bR\u0016\u0010Í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0002\u0010\bR\u0016\u0010Ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0002\u0010\bR\u0016\u0010Ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0002\u0010\bR\u0016\u0010Ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0002\u0010\bR\u0016\u0010Õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0002\u0010\bR\u0016\u0010×\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0002\u0010\bR\u0016\u0010Ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0002\u0010\bR\u0016\u0010Û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0002\u0010\bR\u0016\u0010Ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0002\u0010\bR\u0016\u0010ß\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0002\u0010\bR\u0016\u0010á\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bâ\u0002\u0010\bR\u0016\u0010ã\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bä\u0002\u0010\bR\u0016\u0010å\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bæ\u0002\u0010\bR\u0016\u0010ç\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bè\u0002\u0010\bR\u0016\u0010é\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bê\u0002\u0010\bR\u0016\u0010ë\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bì\u0002\u0010\bR\u0016\u0010í\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bî\u0002\u0010\bR\u0016\u0010ï\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bð\u0002\u0010\bR\u0016\u0010ñ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bò\u0002\u0010\bR\u0016\u0010ó\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bô\u0002\u0010\bR\u0016\u0010õ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bö\u0002\u0010\bR\u0016\u0010÷\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bø\u0002\u0010\bR\u0016\u0010ù\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bú\u0002\u0010\bR\u0016\u0010û\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bü\u0002\u0010\bR\u0016\u0010ý\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bþ\u0002\u0010\bR\u0016\u0010ÿ\u0002\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0080\u0003\u0010\bR\u0016\u0010\u0081\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0082\u0003\u0010\bR\u0016\u0010\u0083\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0084\u0003\u0010\bR\u0016\u0010\u0085\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0086\u0003\u0010\bR\u0016\u0010\u0087\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0088\u0003\u0010\bR\u0016\u0010\u0089\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008a\u0003\u0010\bR\u0016\u0010\u008b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008c\u0003\u0010\bR\u0016\u0010\u008d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u008e\u0003\u0010\bR\u0016\u0010\u008f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0090\u0003\u0010\bR\u0016\u0010\u0091\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0092\u0003\u0010\bR\u0016\u0010\u0093\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0094\u0003\u0010\bR\u0016\u0010\u0095\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0096\u0003\u0010\bR\u0016\u0010\u0097\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u0098\u0003\u0010\bR\u0016\u0010\u0099\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009a\u0003\u0010\bR\u0016\u0010\u009b\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009c\u0003\u0010\bR\u0016\u0010\u009d\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b\u009e\u0003\u0010\bR\u0016\u0010\u009f\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b \u0003\u0010\bR\u0016\u0010¡\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¢\u0003\u0010\bR\u0016\u0010£\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¤\u0003\u0010\bR\u0016\u0010¥\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¦\u0003\u0010\bR\u0016\u0010§\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¨\u0003\u0010\bR\u0016\u0010©\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bª\u0003\u0010\bR\u0016\u0010«\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¬\u0003\u0010\bR\u0016\u0010\u00ad\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b®\u0003\u0010\bR\u0016\u0010¯\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b°\u0003\u0010\bR\u0016\u0010±\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b²\u0003\u0010\bR\u0016\u0010³\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b´\u0003\u0010\bR\u0016\u0010µ\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¶\u0003\u0010\bR\u0016\u0010·\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¸\u0003\u0010\bR\u0016\u0010¹\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bº\u0003\u0010\bR\u0016\u0010»\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¼\u0003\u0010\bR\u0016\u0010½\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\b¾\u0003\u0010\bR\u0016\u0010¿\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÀ\u0003\u0010\bR\u0016\u0010Á\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÂ\u0003\u0010\bR\u0016\u0010Ã\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÄ\u0003\u0010\bR\u0016\u0010Å\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÆ\u0003\u0010\bR\u0016\u0010Ç\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÈ\u0003\u0010\bR\u0016\u0010É\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÊ\u0003\u0010\bR\u0016\u0010Ë\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÌ\u0003\u0010\bR\u0016\u0010Í\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÎ\u0003\u0010\bR\u0016\u0010Ï\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÐ\u0003\u0010\bR\u0016\u0010Ñ\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÒ\u0003\u0010\bR\u0016\u0010Ó\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÔ\u0003\u0010\bR\u0016\u0010Õ\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÖ\u0003\u0010\bR\u0016\u0010×\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bØ\u0003\u0010\bR\u0016\u0010Ù\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÚ\u0003\u0010\bR\u0016\u0010Û\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÜ\u0003\u0010\bR\u0016\u0010Ý\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bÞ\u0003\u0010\bR\u0016\u0010ß\u0003\u001a\u00020\u0006X\u0096\u0004¢\u0006\t\n\u0000\u001a\u0005\bà\u0003\u0010\b¨\u0006ç\u0003"}, d2 = {"Lcom/discord/theme/DarkTheme;", "Lcom/discord/theme/DiscordTheme;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "activityCardBackground", "", "getActivityCardBackground", "()I", "androidNavigationBarBackground", "getAndroidNavigationBarBackground", "androidNavigationScrimBackground", "getAndroidNavigationScrimBackground", "androidRipple", "getAndroidRipple", "backgroundAccent", "getBackgroundAccent", "backgroundFloating", "getBackgroundFloating", "backgroundMentioned", "getBackgroundMentioned", "backgroundMentionedHover", "getBackgroundMentionedHover", "backgroundMessageAutomod", "getBackgroundMessageAutomod", "backgroundMessageAutomodHover", "getBackgroundMessageAutomodHover", "backgroundMessageHighlight", "getBackgroundMessageHighlight", "backgroundMessageHighlightHover", "getBackgroundMessageHighlightHover", "backgroundMessageHover", "getBackgroundMessageHover", "backgroundMobilePrimary", "getBackgroundMobilePrimary", "backgroundMobileSecondary", "getBackgroundMobileSecondary", "backgroundModifierAccent", "getBackgroundModifierAccent", "backgroundModifierAccent2", "getBackgroundModifierAccent2", "backgroundModifierActive", "getBackgroundModifierActive", "backgroundModifierHover", "getBackgroundModifierHover", "backgroundModifierSelected", "getBackgroundModifierSelected", "backgroundNestedFloating", "getBackgroundNestedFloating", "backgroundPrimary", "getBackgroundPrimary", "backgroundSecondary", "getBackgroundSecondary", "backgroundSecondaryAlt", "getBackgroundSecondaryAlt", "backgroundTertiary", "getBackgroundTertiary", "black", "getBlack", "borderStrong", "getBorderStrong", "borderSubtle", "getBorderSubtle", "bugReporterModalSubmittingBackground", "getBugReporterModalSubmittingBackground", "buttonCreatorRevenueBackground", "getButtonCreatorRevenueBackground", "buttonDangerBackground", "getButtonDangerBackground", "buttonDangerBackgroundActive", "getButtonDangerBackgroundActive", "buttonDangerBackgroundDisabled", "getButtonDangerBackgroundDisabled", "buttonDangerBackgroundHover", "getButtonDangerBackgroundHover", "buttonOutlineBrandBackground", "getButtonOutlineBrandBackground", "buttonOutlineBrandBackgroundActive", "getButtonOutlineBrandBackgroundActive", "buttonOutlineBrandBackgroundHover", "getButtonOutlineBrandBackgroundHover", "buttonOutlineBrandBorder", "getButtonOutlineBrandBorder", "buttonOutlineBrandBorderActive", "getButtonOutlineBrandBorderActive", "buttonOutlineBrandBorderHover", "getButtonOutlineBrandBorderHover", "buttonOutlineBrandText", "getButtonOutlineBrandText", "buttonOutlineBrandTextActive", "getButtonOutlineBrandTextActive", "buttonOutlineBrandTextHover", "getButtonOutlineBrandTextHover", "buttonOutlineDangerBackground", "getButtonOutlineDangerBackground", "buttonOutlineDangerBackgroundActive", "getButtonOutlineDangerBackgroundActive", "buttonOutlineDangerBackgroundHover", "getButtonOutlineDangerBackgroundHover", "buttonOutlineDangerBorder", "getButtonOutlineDangerBorder", "buttonOutlineDangerBorderActive", "getButtonOutlineDangerBorderActive", "buttonOutlineDangerBorderHover", "getButtonOutlineDangerBorderHover", "buttonOutlineDangerText", "getButtonOutlineDangerText", "buttonOutlineDangerTextActive", "getButtonOutlineDangerTextActive", "buttonOutlineDangerTextHover", "getButtonOutlineDangerTextHover", "buttonOutlinePositiveBackground", "getButtonOutlinePositiveBackground", "buttonOutlinePositiveBackgroundActive", "getButtonOutlinePositiveBackgroundActive", "buttonOutlinePositiveBackgroundHover", "getButtonOutlinePositiveBackgroundHover", "buttonOutlinePositiveBorder", "getButtonOutlinePositiveBorder", "buttonOutlinePositiveBorderActive", "getButtonOutlinePositiveBorderActive", "buttonOutlinePositiveBorderHover", "getButtonOutlinePositiveBorderHover", "buttonOutlinePositiveText", "getButtonOutlinePositiveText", "buttonOutlinePositiveTextActive", "getButtonOutlinePositiveTextActive", "buttonOutlinePositiveTextHover", "getButtonOutlinePositiveTextHover", "buttonOutlinePrimaryBackground", "getButtonOutlinePrimaryBackground", "buttonOutlinePrimaryBackgroundActive", "getButtonOutlinePrimaryBackgroundActive", "buttonOutlinePrimaryBackgroundHover", "getButtonOutlinePrimaryBackgroundHover", "buttonOutlinePrimaryBorder", "getButtonOutlinePrimaryBorder", "buttonOutlinePrimaryBorderActive", "getButtonOutlinePrimaryBorderActive", "buttonOutlinePrimaryBorderHover", "getButtonOutlinePrimaryBorderHover", "buttonOutlinePrimaryText", "getButtonOutlinePrimaryText", "buttonOutlinePrimaryTextActive", "getButtonOutlinePrimaryTextActive", "buttonOutlinePrimaryTextHover", "getButtonOutlinePrimaryTextHover", "buttonPositiveBackground", "getButtonPositiveBackground", "buttonPositiveBackgroundActive", "getButtonPositiveBackgroundActive", "buttonPositiveBackgroundDisabled", "getButtonPositiveBackgroundDisabled", "buttonPositiveBackgroundHover", "getButtonPositiveBackgroundHover", "buttonSecondaryBackground", "getButtonSecondaryBackground", "buttonSecondaryBackgroundActive", "getButtonSecondaryBackgroundActive", "buttonSecondaryBackgroundDisabled", "getButtonSecondaryBackgroundDisabled", "buttonSecondaryBackgroundHover", "getButtonSecondaryBackgroundHover", "channelIcon", "getChannelIcon", "channelTextAreaPlaceholder", "getChannelTextAreaPlaceholder", "channelsDefault", "getChannelsDefault", "channeltextareaBackground", "getChanneltextareaBackground", "chatBackground", "getChatBackground", "chatBorder", "getChatBorder", "chatInputContainerBackground", "getChatInputContainerBackground", "controlBrandForeground", "getControlBrandForeground", "controlBrandForegroundNew", "getControlBrandForegroundNew", "creatorRevenueIconGradientEnd", "getCreatorRevenueIconGradientEnd", "creatorRevenueIconGradientStart", "getCreatorRevenueIconGradientStart", "creatorRevenueInfoBoxBackground", "getCreatorRevenueInfoBoxBackground", "creatorRevenueInfoBoxBorder", "getCreatorRevenueInfoBoxBorder", "creatorRevenueLockedChannelIcon", "getCreatorRevenueLockedChannelIcon", "creatorRevenueProgressBar", "getCreatorRevenueProgressBar", "deprecatedCardBg", "getDeprecatedCardBg", "deprecatedCardEditableBg", "getDeprecatedCardEditableBg", "deprecatedQuickswitcherInputBackground", "getDeprecatedQuickswitcherInputBackground", "deprecatedQuickswitcherInputPlaceholder", "getDeprecatedQuickswitcherInputPlaceholder", "deprecatedStoreBg", "getDeprecatedStoreBg", "deprecatedTextInputBg", "getDeprecatedTextInputBg", "deprecatedTextInputBorder", "getDeprecatedTextInputBorder", "deprecatedTextInputBorderDisabled", "getDeprecatedTextInputBorderDisabled", "deprecatedTextInputBorderHover", "getDeprecatedTextInputBorderHover", "deprecatedTextInputPrefix", "getDeprecatedTextInputPrefix", "displayBannerOverflowBackground", "getDisplayBannerOverflowBackground", "dividerStrong", "getDividerStrong", "dividerSubtle", "getDividerSubtle", "focusPrimary", "getFocusPrimary", "forumPostExtraMediaCountContainerBackground", "getForumPostExtraMediaCountContainerBackground", "forumPostTagBackground", "getForumPostTagBackground", "headerMuted", "getHeaderMuted", "headerPrimary", "getHeaderPrimary", "headerSecondary", "getHeaderSecondary", "homeBackground", "getHomeBackground", "homeCardRestingBorder", "getHomeCardRestingBorder", "iconMuted", "getIconMuted", "iconPrimary", "getIconPrimary", "iconSecondary", "getIconSecondary", "infoBoxBackground", "getInfoBoxBackground", "infoDangerBackground", "getInfoDangerBackground", "infoDangerForeground", "getInfoDangerForeground", "infoDangerText", "getInfoDangerText", "infoHelpBackground", "getInfoHelpBackground", "infoHelpForeground", "getInfoHelpForeground", "infoHelpText", "getInfoHelpText", "infoPositiveBackground", "getInfoPositiveBackground", "infoPositiveForeground", "getInfoPositiveForeground", "infoPositiveText", "getInfoPositiveText", "infoWarningBackground", "getInfoWarningBackground", "infoWarningForeground", "getInfoWarningForeground", "infoWarningText", "getInfoWarningText", "inputBackground", "getInputBackground", "inputPlaceholderText", "getInputPlaceholderText", "interactiveActive", "getInteractiveActive", "interactiveHover", "getInteractiveHover", "interactiveMuted", "getInteractiveMuted", "interactiveNormal", "getInteractiveNormal", "liveStageTileBorder", "getLiveStageTileBorder", "logoPrimary", "getLogoPrimary", "mentionBackground", "getMentionBackground", "mentionForeground", "getMentionForeground", "modalBackground", "getModalBackground", "modalFooterBackground", "getModalFooterBackground", "profileGradientMessageInputBorder", "getProfileGradientMessageInputBorder", "profileGradientNoteBackground", "getProfileGradientNoteBackground", "profileGradientOverlay", "getProfileGradientOverlay", "profileGradientOverlaySyncedWithUserTheme", "getProfileGradientOverlaySyncedWithUserTheme", "profileGradientProfileBodyBackgroundHover", "getProfileGradientProfileBodyBackgroundHover", "profileGradientRolePillBackground", "getProfileGradientRolePillBackground", "profileGradientRolePillBorder", "getProfileGradientRolePillBorder", "profileGradientSectionBox", "getProfileGradientSectionBox", "redesignActivityCardBackground", "getRedesignActivityCardBackground", "redesignActivityCardBackgroundPressed", "getRedesignActivityCardBackgroundPressed", "redesignActivityCardBadgeIcon", "getRedesignActivityCardBadgeIcon", "redesignActivityCardBorder", "getRedesignActivityCardBorder", "redesignActivityCardOverflowBackground", "getRedesignActivityCardOverflowBackground", "redesignButtonDangerBackground", "getRedesignButtonDangerBackground", "redesignButtonDangerPressedBackground", "getRedesignButtonDangerPressedBackground", "redesignButtonDangerText", "getRedesignButtonDangerText", "redesignButtonOverlayAlphaBackground", "getRedesignButtonOverlayAlphaBackground", "redesignButtonOverlayAlphaPressedBackground", "getRedesignButtonOverlayAlphaPressedBackground", "redesignButtonOverlayAlphaText", "getRedesignButtonOverlayAlphaText", "redesignButtonOverlayBackground", "getRedesignButtonOverlayBackground", "redesignButtonOverlayPressedBackground", "getRedesignButtonOverlayPressedBackground", "redesignButtonOverlayText", "getRedesignButtonOverlayText", "redesignButtonPositiveBackground", "getRedesignButtonPositiveBackground", "redesignButtonPositivePressedBackground", "getRedesignButtonPositivePressedBackground", "redesignButtonPositiveText", "getRedesignButtonPositiveText", "redesignButtonPrimaryAltBackground", "getRedesignButtonPrimaryAltBackground", "redesignButtonPrimaryAltBorder", "getRedesignButtonPrimaryAltBorder", "redesignButtonPrimaryAltOnBlurpleBackground", "getRedesignButtonPrimaryAltOnBlurpleBackground", "redesignButtonPrimaryAltOnBlurpleBorder", "getRedesignButtonPrimaryAltOnBlurpleBorder", "redesignButtonPrimaryAltOnBlurplePressedBackground", "getRedesignButtonPrimaryAltOnBlurplePressedBackground", "redesignButtonPrimaryAltOnBlurplePressedBorder", "getRedesignButtonPrimaryAltOnBlurplePressedBorder", "redesignButtonPrimaryAltOnBlurpleText", "getRedesignButtonPrimaryAltOnBlurpleText", "redesignButtonPrimaryAltPressedBackground", "getRedesignButtonPrimaryAltPressedBackground", "redesignButtonPrimaryAltPressedBorder", "getRedesignButtonPrimaryAltPressedBorder", "redesignButtonPrimaryAltPressedText", "getRedesignButtonPrimaryAltPressedText", "redesignButtonPrimaryAltText", "getRedesignButtonPrimaryAltText", "redesignButtonPrimaryBackground", "getRedesignButtonPrimaryBackground", "redesignButtonPrimaryOnBlurpleBackground", "getRedesignButtonPrimaryOnBlurpleBackground", "redesignButtonPrimaryOnBlurplePressedBackground", "getRedesignButtonPrimaryOnBlurplePressedBackground", "redesignButtonPrimaryOnBlurplePressedText", "getRedesignButtonPrimaryOnBlurplePressedText", "redesignButtonPrimaryOnBlurpleText", "getRedesignButtonPrimaryOnBlurpleText", "redesignButtonPrimaryPressedBackground", "getRedesignButtonPrimaryPressedBackground", "redesignButtonPrimaryText", "getRedesignButtonPrimaryText", "redesignButtonSecondaryAltBackground", "getRedesignButtonSecondaryAltBackground", "redesignButtonSecondaryAltPressedBackground", "getRedesignButtonSecondaryAltPressedBackground", "redesignButtonSecondaryAltPressedText", "getRedesignButtonSecondaryAltPressedText", "redesignButtonSecondaryAltText", "getRedesignButtonSecondaryAltText", "redesignButtonSecondaryBackground", "getRedesignButtonSecondaryBackground", "redesignButtonSecondaryBorder", "getRedesignButtonSecondaryBorder", "redesignButtonSecondaryPressedBackground", "getRedesignButtonSecondaryPressedBackground", "redesignButtonSecondaryPressedBorder", "getRedesignButtonSecondaryPressedBorder", "redesignButtonSecondaryText", "getRedesignButtonSecondaryText", "redesignInputControlSelected", "getRedesignInputControlSelected", "redesignOnlyBackgroundActive", "getRedesignOnlyBackgroundActive", "redesignOnlyBackgroundDefault", "getRedesignOnlyBackgroundDefault", "redesignOnlyBackgroundOverlay", "getRedesignOnlyBackgroundOverlay", "redesignOnlyBackgroundRaised", "getRedesignOnlyBackgroundRaised", "redesignOnlyBackgroundSunken", "getRedesignOnlyBackgroundSunken", "scrollbarAutoScrollbarColorThumb", "getScrollbarAutoScrollbarColorThumb", "scrollbarAutoScrollbarColorTrack", "getScrollbarAutoScrollbarColorTrack", "scrollbarAutoThumb", "getScrollbarAutoThumb", "scrollbarAutoTrack", "getScrollbarAutoTrack", "scrollbarThinThumb", "getScrollbarThinThumb", "scrollbarThinTrack", "getScrollbarThinTrack", "spoilerHiddenBackground", "getSpoilerHiddenBackground", "spoilerRevealedBackground", "getSpoilerRevealedBackground", "statusDanger", "getStatusDanger", "statusDangerBackground", "getStatusDangerBackground", "statusDangerText", "getStatusDangerText", "statusDnd", "getStatusDnd", "statusIdle", "getStatusIdle", "statusOffline", "getStatusOffline", "statusOnline", "getStatusOnline", "statusPositive", "getStatusPositive", "statusPositiveBackground", "getStatusPositiveBackground", "statusPositiveText", "getStatusPositiveText", "statusWarning", "getStatusWarning", "statusWarningBackground", "getStatusWarningBackground", "statusWarningText", "getStatusWarningText", "textBrand", "getTextBrand", "textDanger", "getTextDanger", "textLink", "getTextLink", "textLinkLowSaturation", "getTextLinkLowSaturation", "textLowContrast", "getTextLowContrast", "textMessagePreviewLowSat", "getTextMessagePreviewLowSat", "textMuted", "getTextMuted", "textMutedOnDefault", "getTextMutedOnDefault", "textNormal", "getTextNormal", "textPositive", "getTextPositive", "textPrimary", "getTextPrimary", "textSecondary", "getTextSecondary", "textWarning", "getTextWarning", "textboxMarkdownSyntax", "getTextboxMarkdownSyntax", "userProfileHeaderOverflowBackground", "getUserProfileHeaderOverflowBackground", "white", "getWhite", "getColor", "lightColor", "darkColor", "getColorRes", "lightColorRes", "darkColorRes", "theme_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 
 public final class DarkTheme extends DiscordTheme {
     private final int activityCardBackground;
@@ -24,6 +24,7 @@ public final class DarkTheme extends DiscordTheme {
     private final int backgroundMobilePrimary;
     private final int backgroundMobileSecondary;
     private final int backgroundModifierAccent;
+    private final int backgroundModifierAccent2;
     private final int backgroundModifierActive;
     private final int backgroundModifierHover;
     private final int backgroundModifierSelected;
@@ -116,10 +117,14 @@ public final class DarkTheme extends DiscordTheme {
     private final int focusPrimary;
     private final int forumPostExtraMediaCountContainerBackground;
     private final int forumPostTagBackground;
+    private final int headerMuted;
     private final int headerPrimary;
     private final int headerSecondary;
     private final int homeBackground;
     private final int homeCardRestingBorder;
+    private final int iconMuted;
+    private final int iconPrimary;
+    private final int iconSecondary;
     private final int infoBoxBackground;
     private final int infoDangerBackground;
     private final int infoDangerForeground;
@@ -157,6 +162,7 @@ public final class DarkTheme extends DiscordTheme {
     private final int redesignActivityCardBackgroundPressed;
     private final int redesignActivityCardBadgeIcon;
     private final int redesignActivityCardBorder;
+    private final int redesignActivityCardOverflowBackground;
     private final int redesignButtonDangerBackground;
     private final int redesignButtonDangerPressedBackground;
     private final int redesignButtonDangerText;
@@ -189,6 +195,7 @@ public final class DarkTheme extends DiscordTheme {
     private final int redesignButtonPrimaryText;
     private final int redesignButtonSecondaryAltBackground;
     private final int redesignButtonSecondaryAltPressedBackground;
+    private final int redesignButtonSecondaryAltPressedText;
     private final int redesignButtonSecondaryAltText;
     private final int redesignButtonSecondaryBackground;
     private final int redesignButtonSecondaryBorder;
@@ -226,9 +233,14 @@ public final class DarkTheme extends DiscordTheme {
     private final int textDanger;
     private final int textLink;
     private final int textLinkLowSaturation;
+    private final int textLowContrast;
+    private final int textMessagePreviewLowSat;
     private final int textMuted;
+    private final int textMutedOnDefault;
     private final int textNormal;
     private final int textPositive;
+    private final int textPrimary;
+    private final int textSecondary;
     private final int textWarning;
     private final int textboxMarkdownSyntax;
     private final int userProfileHeaderOverflowBackground;
@@ -245,8 +257,7 @@ public final class DarkTheme extends DiscordTheme {
         this.androidRipple = ColorUtilsKt.getColorCompat(context, R.color.android_ripple_dark);
         int i11 = R.color.primary_530;
         this.backgroundAccent = ColorUtilsKt.getColorCompat(context, i11);
-        int i12 = R.color.primary_800;
-        this.backgroundFloating = ColorUtilsKt.getColorCompat(context, i12);
+        this.backgroundFloating = ColorUtilsKt.getColorCompat(context, R.color.primary_800);
         this.backgroundMentioned = ColorUtilsKt.getColorCompat(context, R.color.background_mentioned_dark);
         this.backgroundMentionedHover = ColorUtilsKt.getColorCompat(context, R.color.background_mentioned_hover_dark);
         this.backgroundMessageAutomod = ColorUtilsKt.getColorCompat(context, R.color.background_message_automod_dark);
@@ -254,111 +265,112 @@ public final class DarkTheme extends DiscordTheme {
         this.backgroundMessageHighlight = ColorUtilsKt.getColorCompat(context, R.color.background_message_highlight_dark);
         this.backgroundMessageHighlightHover = ColorUtilsKt.getColorCompat(context, R.color.background_message_highlight_hover_dark);
         this.backgroundMessageHover = ColorUtilsKt.getColorCompat(context, R.color.background_message_hover_dark);
-        int i13 = R.color.primary_600;
-        this.backgroundMobilePrimary = ColorUtilsKt.getColorCompat(context, i13);
-        int i14 = R.color.primary_630;
-        this.backgroundMobileSecondary = ColorUtilsKt.getColorCompat(context, i14);
+        int i12 = R.color.primary_600;
+        this.backgroundMobilePrimary = ColorUtilsKt.getColorCompat(context, i12);
+        int i13 = R.color.primary_630;
+        this.backgroundMobileSecondary = ColorUtilsKt.getColorCompat(context, i13);
         this.backgroundModifierAccent = ColorUtilsKt.getColorCompat(context, R.color.background_modifier_accent_dark);
+        this.backgroundModifierAccent2 = ColorUtilsKt.getColorCompat(context, R.color.background_modifier_accent_2_dark);
         this.backgroundModifierActive = ColorUtilsKt.getColorCompat(context, R.color.background_modifier_active_dark);
         this.backgroundModifierHover = ColorUtilsKt.getColorCompat(context, R.color.background_modifier_hover_dark);
         this.backgroundModifierSelected = ColorUtilsKt.getColorCompat(context, R.color.background_modifier_selected_dark);
-        this.backgroundNestedFloating = ColorUtilsKt.getColorCompat(context, i14);
-        this.backgroundPrimary = ColorUtilsKt.getColorCompat(context, i13);
-        this.backgroundSecondary = ColorUtilsKt.getColorCompat(context, i14);
-        int i15 = R.color.primary_660;
-        this.backgroundSecondaryAlt = ColorUtilsKt.getColorCompat(context, i15);
+        this.backgroundNestedFloating = ColorUtilsKt.getColorCompat(context, i13);
+        this.backgroundPrimary = ColorUtilsKt.getColorCompat(context, i12);
+        this.backgroundSecondary = ColorUtilsKt.getColorCompat(context, i13);
+        int i14 = R.color.primary_660;
+        this.backgroundSecondaryAlt = ColorUtilsKt.getColorCompat(context, i14);
         this.backgroundTertiary = ColorUtilsKt.getColorCompat(context, i10);
-        int i16 = R.color.black_500;
-        this.black = ColorUtilsKt.getColorCompat(context, i16);
+        int i15 = R.color.black_500;
+        this.black = ColorUtilsKt.getColorCompat(context, i15);
         this.borderStrong = ColorUtilsKt.getColorCompat(context, R.color.border_strong_dark);
         this.borderSubtle = ColorUtilsKt.getColorCompat(context, R.color.border_subtle_dark);
         this.bugReporterModalSubmittingBackground = ColorUtilsKt.getColorCompat(context, R.color.bug_reporter_modal_submitting_background_dark);
-        int i17 = R.color.teal_430;
-        this.buttonCreatorRevenueBackground = ColorUtilsKt.getColorCompat(context, i17);
-        int i18 = R.color.red_430;
-        this.buttonDangerBackground = ColorUtilsKt.getColorCompat(context, i18);
+        int i16 = R.color.teal_430;
+        this.buttonCreatorRevenueBackground = ColorUtilsKt.getColorCompat(context, i16);
+        int i17 = R.color.red_430;
+        this.buttonDangerBackground = ColorUtilsKt.getColorCompat(context, i17);
         this.buttonDangerBackgroundActive = ColorUtilsKt.getColorCompat(context, R.color.red_530);
-        this.buttonDangerBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i18);
+        this.buttonDangerBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i17);
         this.buttonDangerBackgroundHover = ColorUtilsKt.getColorCompat(context, R.color.red_500);
         this.buttonOutlineBrandBackground = ColorUtilsKt.getColorCompat(context, R.color.button_outline_brand_background_dark);
-        int i19 = R.color.brand_560;
-        this.buttonOutlineBrandBackgroundActive = ColorUtilsKt.getColorCompat(context, i19);
-        int i20 = R.color.brand_500;
-        this.buttonOutlineBrandBackgroundHover = ColorUtilsKt.getColorCompat(context, i20);
-        this.buttonOutlineBrandBorder = ColorUtilsKt.getColorCompat(context, i20);
-        this.buttonOutlineBrandBorderActive = ColorUtilsKt.getColorCompat(context, i19);
-        this.buttonOutlineBrandBorderHover = ColorUtilsKt.getColorCompat(context, i20);
-        int i21 = R.color.white_500;
-        this.buttonOutlineBrandText = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlineBrandTextActive = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlineBrandTextHover = ColorUtilsKt.getColorCompat(context, i21);
+        int i18 = R.color.brand_560;
+        this.buttonOutlineBrandBackgroundActive = ColorUtilsKt.getColorCompat(context, i18);
+        int i19 = R.color.brand_500;
+        this.buttonOutlineBrandBackgroundHover = ColorUtilsKt.getColorCompat(context, i19);
+        this.buttonOutlineBrandBorder = ColorUtilsKt.getColorCompat(context, i19);
+        this.buttonOutlineBrandBorderActive = ColorUtilsKt.getColorCompat(context, i18);
+        this.buttonOutlineBrandBorderHover = ColorUtilsKt.getColorCompat(context, i19);
+        int i20 = R.color.white_500;
+        this.buttonOutlineBrandText = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlineBrandTextActive = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlineBrandTextHover = ColorUtilsKt.getColorCompat(context, i20);
         this.buttonOutlineDangerBackground = ColorUtilsKt.getColorCompat(context, R.color.button_outline_danger_background_dark);
-        int i22 = R.color.red_460;
-        this.buttonOutlineDangerBackgroundActive = ColorUtilsKt.getColorCompat(context, i22);
-        this.buttonOutlineDangerBackgroundHover = ColorUtilsKt.getColorCompat(context, i18);
-        int i23 = R.color.red_400;
-        this.buttonOutlineDangerBorder = ColorUtilsKt.getColorCompat(context, i23);
-        this.buttonOutlineDangerBorderActive = ColorUtilsKt.getColorCompat(context, i18);
-        this.buttonOutlineDangerBorderHover = ColorUtilsKt.getColorCompat(context, i18);
-        this.buttonOutlineDangerText = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlineDangerTextActive = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlineDangerTextHover = ColorUtilsKt.getColorCompat(context, i21);
+        int i21 = R.color.red_460;
+        this.buttonOutlineDangerBackgroundActive = ColorUtilsKt.getColorCompat(context, i21);
+        this.buttonOutlineDangerBackgroundHover = ColorUtilsKt.getColorCompat(context, i17);
+        int i22 = R.color.red_400;
+        this.buttonOutlineDangerBorder = ColorUtilsKt.getColorCompat(context, i22);
+        this.buttonOutlineDangerBorderActive = ColorUtilsKt.getColorCompat(context, i17);
+        this.buttonOutlineDangerBorderHover = ColorUtilsKt.getColorCompat(context, i17);
+        this.buttonOutlineDangerText = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlineDangerTextActive = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlineDangerTextHover = ColorUtilsKt.getColorCompat(context, i20);
         this.buttonOutlinePositiveBackground = ColorUtilsKt.getColorCompat(context, R.color.button_outline_positive_background_dark);
-        int i24 = R.color.green_530;
-        this.buttonOutlinePositiveBackgroundActive = ColorUtilsKt.getColorCompat(context, i24);
-        int i25 = R.color.green_430;
-        this.buttonOutlinePositiveBackgroundHover = ColorUtilsKt.getColorCompat(context, i25);
-        int i26 = R.color.green_360;
-        this.buttonOutlinePositiveBorder = ColorUtilsKt.getColorCompat(context, i26);
-        this.buttonOutlinePositiveBorderActive = ColorUtilsKt.getColorCompat(context, i24);
-        this.buttonOutlinePositiveBorderHover = ColorUtilsKt.getColorCompat(context, i25);
-        this.buttonOutlinePositiveText = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlinePositiveTextActive = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlinePositiveTextHover = ColorUtilsKt.getColorCompat(context, i21);
+        int i23 = R.color.green_530;
+        this.buttonOutlinePositiveBackgroundActive = ColorUtilsKt.getColorCompat(context, i23);
+        int i24 = R.color.green_430;
+        this.buttonOutlinePositiveBackgroundHover = ColorUtilsKt.getColorCompat(context, i24);
+        int i25 = R.color.green_360;
+        this.buttonOutlinePositiveBorder = ColorUtilsKt.getColorCompat(context, i25);
+        this.buttonOutlinePositiveBorderActive = ColorUtilsKt.getColorCompat(context, i23);
+        this.buttonOutlinePositiveBorderHover = ColorUtilsKt.getColorCompat(context, i24);
+        this.buttonOutlinePositiveText = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlinePositiveTextActive = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlinePositiveTextHover = ColorUtilsKt.getColorCompat(context, i20);
         this.buttonOutlinePrimaryBackground = ColorUtilsKt.getColorCompat(context, R.color.button_outline_primary_background_dark);
-        int i27 = R.color.primary_430;
-        this.buttonOutlinePrimaryBackgroundActive = ColorUtilsKt.getColorCompat(context, i27);
-        int i28 = R.color.primary_500;
-        this.buttonOutlinePrimaryBackgroundHover = ColorUtilsKt.getColorCompat(context, i28);
-        this.buttonOutlinePrimaryBorder = ColorUtilsKt.getColorCompat(context, i28);
-        this.buttonOutlinePrimaryBorderActive = ColorUtilsKt.getColorCompat(context, i27);
-        this.buttonOutlinePrimaryBorderHover = ColorUtilsKt.getColorCompat(context, i28);
-        this.buttonOutlinePrimaryText = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlinePrimaryTextActive = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonOutlinePrimaryTextHover = ColorUtilsKt.getColorCompat(context, i21);
-        this.buttonPositiveBackground = ColorUtilsKt.getColorCompat(context, i25);
-        this.buttonPositiveBackgroundActive = ColorUtilsKt.getColorCompat(context, i24);
-        this.buttonPositiveBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i25);
+        int i26 = R.color.primary_430;
+        this.buttonOutlinePrimaryBackgroundActive = ColorUtilsKt.getColorCompat(context, i26);
+        int i27 = R.color.primary_500;
+        this.buttonOutlinePrimaryBackgroundHover = ColorUtilsKt.getColorCompat(context, i27);
+        this.buttonOutlinePrimaryBorder = ColorUtilsKt.getColorCompat(context, i27);
+        this.buttonOutlinePrimaryBorderActive = ColorUtilsKt.getColorCompat(context, i26);
+        this.buttonOutlinePrimaryBorderHover = ColorUtilsKt.getColorCompat(context, i27);
+        this.buttonOutlinePrimaryText = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlinePrimaryTextActive = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonOutlinePrimaryTextHover = ColorUtilsKt.getColorCompat(context, i20);
+        this.buttonPositiveBackground = ColorUtilsKt.getColorCompat(context, i24);
+        this.buttonPositiveBackgroundActive = ColorUtilsKt.getColorCompat(context, i23);
+        this.buttonPositiveBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i24);
         this.buttonPositiveBackgroundHover = ColorUtilsKt.getColorCompat(context, R.color.green_500);
-        this.buttonSecondaryBackground = ColorUtilsKt.getColorCompat(context, i28);
-        int i29 = R.color.primary_400;
-        this.buttonSecondaryBackgroundActive = ColorUtilsKt.getColorCompat(context, i29);
-        this.buttonSecondaryBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i28);
-        this.buttonSecondaryBackgroundHover = ColorUtilsKt.getColorCompat(context, i27);
-        this.channelIcon = ColorUtilsKt.getColorCompat(context, i29);
-        this.channelTextAreaPlaceholder = ColorUtilsKt.getColorCompat(context, i27);
-        int i30 = R.color.primary_360;
-        this.channelsDefault = ColorUtilsKt.getColorCompat(context, i30);
-        int i31 = R.color.primary_560;
-        this.channeltextareaBackground = ColorUtilsKt.getColorCompat(context, i31);
-        this.chatBackground = ColorUtilsKt.getColorCompat(context, i13);
+        this.buttonSecondaryBackground = ColorUtilsKt.getColorCompat(context, i27);
+        int i28 = R.color.primary_400;
+        this.buttonSecondaryBackgroundActive = ColorUtilsKt.getColorCompat(context, i28);
+        this.buttonSecondaryBackgroundDisabled = ColorUtilsKt.getColorCompat(context, i27);
+        this.buttonSecondaryBackgroundHover = ColorUtilsKt.getColorCompat(context, i26);
+        this.channelIcon = ColorUtilsKt.getColorCompat(context, i28);
+        this.channelTextAreaPlaceholder = ColorUtilsKt.getColorCompat(context, i26);
+        int i29 = R.color.primary_360;
+        this.channelsDefault = ColorUtilsKt.getColorCompat(context, i29);
+        int i30 = R.color.primary_560;
+        this.channeltextareaBackground = ColorUtilsKt.getColorCompat(context, i30);
+        this.chatBackground = ColorUtilsKt.getColorCompat(context, i12);
         this.chatBorder = ColorUtilsKt.getColorCompat(context, i10);
-        this.chatInputContainerBackground = ColorUtilsKt.getColorCompat(context, i13);
-        int i32 = R.color.brand_360;
-        this.controlBrandForeground = ColorUtilsKt.getColorCompat(context, i32);
-        this.controlBrandForegroundNew = ColorUtilsKt.getColorCompat(context, i32);
-        this.creatorRevenueIconGradientEnd = ColorUtilsKt.getColorCompat(context, i17);
+        this.chatInputContainerBackground = ColorUtilsKt.getColorCompat(context, i12);
+        int i31 = R.color.brand_360;
+        this.controlBrandForeground = ColorUtilsKt.getColorCompat(context, i31);
+        this.controlBrandForegroundNew = ColorUtilsKt.getColorCompat(context, i31);
+        this.creatorRevenueIconGradientEnd = ColorUtilsKt.getColorCompat(context, i16);
         this.creatorRevenueIconGradientStart = ColorUtilsKt.getColorCompat(context, R.color.teal_360);
         this.creatorRevenueInfoBoxBackground = ColorUtilsKt.getColorCompat(context, R.color.creator_revenue_info_box_background_dark);
-        int i33 = R.color.teal_400;
-        this.creatorRevenueInfoBoxBorder = ColorUtilsKt.getColorCompat(context, i33);
+        int i32 = R.color.teal_400;
+        this.creatorRevenueInfoBoxBorder = ColorUtilsKt.getColorCompat(context, i32);
         this.creatorRevenueLockedChannelIcon = ColorUtilsKt.getColorCompat(context, R.color.teal_345);
-        this.creatorRevenueProgressBar = ColorUtilsKt.getColorCompat(context, i33);
+        this.creatorRevenueProgressBar = ColorUtilsKt.getColorCompat(context, i32);
         this.deprecatedCardBg = ColorUtilsKt.getColorCompat(context, R.color.deprecated_card_bg_dark);
         this.deprecatedCardEditableBg = ColorUtilsKt.getColorCompat(context, R.color.deprecated_card_editable_bg_dark);
-        this.deprecatedQuickswitcherInputBackground = ColorUtilsKt.getColorCompat(context, i29);
+        this.deprecatedQuickswitcherInputBackground = ColorUtilsKt.getColorCompat(context, i28);
         this.deprecatedQuickswitcherInputPlaceholder = ColorUtilsKt.getColorCompat(context, R.color.deprecated_quickswitcher_input_placeholder_dark);
-        this.deprecatedStoreBg = ColorUtilsKt.getColorCompat(context, i13);
+        this.deprecatedStoreBg = ColorUtilsKt.getColorCompat(context, i12);
         this.deprecatedTextInputBg = ColorUtilsKt.getColorCompat(context, i10);
         this.deprecatedTextInputBorder = ColorUtilsKt.getColorCompat(context, R.color.deprecated_text_input_border_dark);
         this.deprecatedTextInputBorderDisabled = ColorUtilsKt.getColorCompat(context, i10);
@@ -367,42 +379,48 @@ public final class DarkTheme extends DiscordTheme {
         this.displayBannerOverflowBackground = ColorUtilsKt.getColorCompat(context, R.color.display_banner_overflow_background_dark);
         this.dividerStrong = ColorUtilsKt.getColorCompat(context, R.color.divider_strong_dark);
         this.dividerSubtle = ColorUtilsKt.getColorCompat(context, R.color.divider_subtle_dark);
-        int i34 = R.color.blue_345;
-        this.focusPrimary = ColorUtilsKt.getColorCompat(context, i34);
+        int i33 = R.color.blue_345;
+        this.focusPrimary = ColorUtilsKt.getColorCompat(context, i33);
         this.forumPostExtraMediaCountContainerBackground = ColorUtilsKt.getColorCompat(context, R.color.forum_post_extra_media_count_container_background_dark);
         this.forumPostTagBackground = ColorUtilsKt.getColorCompat(context, R.color.forum_post_tag_background_dark);
-        this.headerPrimary = ColorUtilsKt.getColorCompat(context, R.color.primary_130);
+        this.headerMuted = ColorUtilsKt.getColorCompat(context, i29);
+        int i34 = R.color.primary_130;
+        this.headerPrimary = ColorUtilsKt.getColorCompat(context, i34);
         int i35 = R.color.primary_330;
         this.headerSecondary = ColorUtilsKt.getColorCompat(context, i35);
-        this.homeBackground = ColorUtilsKt.getColorCompat(context, R.color.primary_645);
+        int i36 = R.color.primary_645;
+        this.homeBackground = ColorUtilsKt.getColorCompat(context, i36);
         this.homeCardRestingBorder = ColorUtilsKt.getColorCompat(context, R.color.home_card_resting_border_dark);
+        this.iconMuted = ColorUtilsKt.getColorCompat(context, i27);
+        this.iconPrimary = ColorUtilsKt.getColorCompat(context, i34);
+        this.iconSecondary = ColorUtilsKt.getColorCompat(context, i35);
         this.infoBoxBackground = ColorUtilsKt.getColorCompat(context, R.color.info_box_background_dark);
         this.infoDangerBackground = ColorUtilsKt.getColorCompat(context, R.color.info_danger_background_dark);
-        this.infoDangerForeground = ColorUtilsKt.getColorCompat(context, i23);
-        this.infoDangerText = ColorUtilsKt.getColorCompat(context, i21);
+        this.infoDangerForeground = ColorUtilsKt.getColorCompat(context, i22);
+        this.infoDangerText = ColorUtilsKt.getColorCompat(context, i20);
         this.infoHelpBackground = ColorUtilsKt.getColorCompat(context, R.color.info_help_background_dark);
-        this.infoHelpForeground = ColorUtilsKt.getColorCompat(context, i34);
-        this.infoHelpText = ColorUtilsKt.getColorCompat(context, i21);
+        this.infoHelpForeground = ColorUtilsKt.getColorCompat(context, i33);
+        this.infoHelpText = ColorUtilsKt.getColorCompat(context, i20);
         this.infoPositiveBackground = ColorUtilsKt.getColorCompat(context, R.color.info_positive_background_dark);
-        this.infoPositiveForeground = ColorUtilsKt.getColorCompat(context, i26);
-        this.infoPositiveText = ColorUtilsKt.getColorCompat(context, i21);
+        this.infoPositiveForeground = ColorUtilsKt.getColorCompat(context, i25);
+        this.infoPositiveText = ColorUtilsKt.getColorCompat(context, i20);
         this.infoWarningBackground = ColorUtilsKt.getColorCompat(context, R.color.info_warning_background_dark);
-        int i36 = R.color.yellow_300;
-        this.infoWarningForeground = ColorUtilsKt.getColorCompat(context, i36);
-        this.infoWarningText = ColorUtilsKt.getColorCompat(context, i21);
+        int i37 = R.color.yellow_300;
+        this.infoWarningForeground = ColorUtilsKt.getColorCompat(context, i37);
+        this.infoWarningText = ColorUtilsKt.getColorCompat(context, i20);
         this.inputBackground = ColorUtilsKt.getColorCompat(context, i10);
         this.inputPlaceholderText = ColorUtilsKt.getColorCompat(context, R.color.input_placeholder_text_dark);
-        this.interactiveActive = ColorUtilsKt.getColorCompat(context, i21);
-        int i37 = R.color.primary_230;
-        this.interactiveHover = ColorUtilsKt.getColorCompat(context, i37);
-        this.interactiveMuted = ColorUtilsKt.getColorCompat(context, i28);
+        this.interactiveActive = ColorUtilsKt.getColorCompat(context, i20);
+        int i38 = R.color.primary_230;
+        this.interactiveHover = ColorUtilsKt.getColorCompat(context, i38);
+        this.interactiveMuted = ColorUtilsKt.getColorCompat(context, i27);
         this.interactiveNormal = ColorUtilsKt.getColorCompat(context, i35);
         this.liveStageTileBorder = ColorUtilsKt.getColorCompat(context, R.color.live_stage_tile_border_dark);
-        this.logoPrimary = ColorUtilsKt.getColorCompat(context, i21);
+        this.logoPrimary = ColorUtilsKt.getColorCompat(context, i20);
         this.mentionBackground = ColorUtilsKt.getColorCompat(context, R.color.mention_background_dark);
         this.mentionForeground = ColorUtilsKt.getColorCompat(context, R.color.brand_260);
-        this.modalBackground = ColorUtilsKt.getColorCompat(context, i13);
-        this.modalFooterBackground = ColorUtilsKt.getColorCompat(context, i14);
+        this.modalBackground = ColorUtilsKt.getColorCompat(context, i12);
+        this.modalFooterBackground = ColorUtilsKt.getColorCompat(context, i13);
         this.profileGradientMessageInputBorder = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_message_input_border_dark);
         this.profileGradientNoteBackground = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_note_background_dark);
         this.profileGradientOverlay = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_overlay_dark);
@@ -411,89 +429,95 @@ public final class DarkTheme extends DiscordTheme {
         this.profileGradientRolePillBackground = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_role_pill_background_dark);
         this.profileGradientRolePillBorder = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_role_pill_border_dark);
         this.profileGradientSectionBox = ColorUtilsKt.getColorCompat(context, R.color.profile_gradient_section_box_dark);
-        this.redesignActivityCardBackground = ColorUtilsKt.getColorCompat(context, i31);
-        this.redesignActivityCardBackgroundPressed = ColorUtilsKt.getColorCompat(context, i14);
-        this.redesignActivityCardBadgeIcon = ColorUtilsKt.getColorCompat(context, i29);
+        this.redesignActivityCardBackground = ColorUtilsKt.getColorCompat(context, i30);
+        this.redesignActivityCardBackgroundPressed = ColorUtilsKt.getColorCompat(context, i13);
+        this.redesignActivityCardBadgeIcon = ColorUtilsKt.getColorCompat(context, i28);
         this.redesignActivityCardBorder = ColorUtilsKt.getColorCompat(context, R.color.redesign_activity_card_border_dark);
-        this.redesignButtonDangerBackground = ColorUtilsKt.getColorCompat(context, i18);
-        this.redesignButtonDangerPressedBackground = ColorUtilsKt.getColorCompat(context, i22);
-        this.redesignButtonDangerText = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignActivityCardOverflowBackground = ColorUtilsKt.getColorCompat(context, i13);
+        this.redesignButtonDangerBackground = ColorUtilsKt.getColorCompat(context, i17);
+        this.redesignButtonDangerPressedBackground = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignButtonDangerText = ColorUtilsKt.getColorCompat(context, i20);
         this.redesignButtonOverlayAlphaBackground = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_overlay_alpha_background_dark);
         this.redesignButtonOverlayAlphaPressedBackground = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_overlay_alpha_pressed_background_dark);
-        this.redesignButtonOverlayAlphaText = ColorUtilsKt.getColorCompat(context, i21);
-        this.redesignButtonOverlayBackground = ColorUtilsKt.getColorCompat(context, i21);
-        this.redesignButtonOverlayPressedBackground = ColorUtilsKt.getColorCompat(context, i37);
+        this.redesignButtonOverlayAlphaText = ColorUtilsKt.getColorCompat(context, i20);
+        this.redesignButtonOverlayBackground = ColorUtilsKt.getColorCompat(context, i20);
+        this.redesignButtonOverlayPressedBackground = ColorUtilsKt.getColorCompat(context, i38);
         this.redesignButtonOverlayText = ColorUtilsKt.getColorCompat(context, R.color.primary_860);
-        this.redesignButtonPositiveBackground = ColorUtilsKt.getColorCompat(context, i25);
+        this.redesignButtonPositiveBackground = ColorUtilsKt.getColorCompat(context, i24);
         this.redesignButtonPositivePressedBackground = ColorUtilsKt.getColorCompat(context, R.color.green_460);
-        this.redesignButtonPositiveText = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignButtonPositiveText = ColorUtilsKt.getColorCompat(context, i20);
         this.redesignButtonPrimaryAltBackground = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_primary_alt_background_dark);
-        this.redesignButtonPrimaryAltBorder = ColorUtilsKt.getColorCompat(context, i32);
+        this.redesignButtonPrimaryAltBorder = ColorUtilsKt.getColorCompat(context, i31);
         this.redesignButtonPrimaryAltOnBlurpleBackground = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_primary_alt_on_blurple_background_dark);
-        this.redesignButtonPrimaryAltOnBlurpleBorder = ColorUtilsKt.getColorCompat(context, i21);
-        int i38 = R.color.brand_530;
-        this.redesignButtonPrimaryAltOnBlurplePressedBackground = ColorUtilsKt.getColorCompat(context, i38);
-        this.redesignButtonPrimaryAltOnBlurplePressedBorder = ColorUtilsKt.getColorCompat(context, i32);
-        this.redesignButtonPrimaryAltOnBlurpleText = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignButtonPrimaryAltOnBlurpleBorder = ColorUtilsKt.getColorCompat(context, i20);
+        int i39 = R.color.brand_530;
+        this.redesignButtonPrimaryAltOnBlurplePressedBackground = ColorUtilsKt.getColorCompat(context, i39);
+        this.redesignButtonPrimaryAltOnBlurplePressedBorder = ColorUtilsKt.getColorCompat(context, i31);
+        this.redesignButtonPrimaryAltOnBlurpleText = ColorUtilsKt.getColorCompat(context, i20);
         this.redesignButtonPrimaryAltPressedBackground = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_primary_alt_pressed_background_dark);
         this.redesignButtonPrimaryAltPressedBorder = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_primary_alt_pressed_border_dark);
-        this.redesignButtonPrimaryAltPressedText = ColorUtilsKt.getColorCompat(context, i32);
-        this.redesignButtonPrimaryAltText = ColorUtilsKt.getColorCompat(context, i32);
-        this.redesignButtonPrimaryBackground = ColorUtilsKt.getColorCompat(context, i20);
-        this.redesignButtonPrimaryOnBlurpleBackground = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignButtonPrimaryAltPressedText = ColorUtilsKt.getColorCompat(context, i31);
+        this.redesignButtonPrimaryAltText = ColorUtilsKt.getColorCompat(context, i31);
+        this.redesignButtonPrimaryBackground = ColorUtilsKt.getColorCompat(context, i19);
+        this.redesignButtonPrimaryOnBlurpleBackground = ColorUtilsKt.getColorCompat(context, i20);
         this.redesignButtonPrimaryOnBlurplePressedBackground = ColorUtilsKt.getColorCompat(context, R.color.brand_200);
-        this.redesignButtonPrimaryOnBlurplePressedText = ColorUtilsKt.getColorCompat(context, i38);
-        this.redesignButtonPrimaryOnBlurpleText = ColorUtilsKt.getColorCompat(context, i20);
-        this.redesignButtonPrimaryPressedBackground = ColorUtilsKt.getColorCompat(context, i19);
-        this.redesignButtonPrimaryText = ColorUtilsKt.getColorCompat(context, i21);
+        this.redesignButtonPrimaryOnBlurplePressedText = ColorUtilsKt.getColorCompat(context, i39);
+        this.redesignButtonPrimaryOnBlurpleText = ColorUtilsKt.getColorCompat(context, i19);
+        this.redesignButtonPrimaryPressedBackground = ColorUtilsKt.getColorCompat(context, i18);
+        this.redesignButtonPrimaryText = ColorUtilsKt.getColorCompat(context, i20);
         this.redesignButtonSecondaryAltBackground = ColorUtilsKt.getColorCompat(context, i11);
-        this.redesignButtonSecondaryAltPressedBackground = ColorUtilsKt.getColorCompat(context, i31);
-        this.redesignButtonSecondaryAltText = ColorUtilsKt.getColorCompat(context, i21);
-        int i39 = R.color.primary_460;
-        this.redesignButtonSecondaryBackground = ColorUtilsKt.getColorCompat(context, i39);
-        this.redesignButtonSecondaryBorder = ColorUtilsKt.getColorCompat(context, i39);
-        this.redesignButtonSecondaryPressedBackground = ColorUtilsKt.getColorCompat(context, i28);
-        this.redesignButtonSecondaryPressedBorder = ColorUtilsKt.getColorCompat(context, i28);
-        this.redesignButtonSecondaryText = ColorUtilsKt.getColorCompat(context, i21);
-        this.redesignInputControlSelected = ColorUtilsKt.getColorCompat(context, i20);
+        this.redesignButtonSecondaryAltPressedBackground = ColorUtilsKt.getColorCompat(context, i30);
+        this.redesignButtonSecondaryAltPressedText = ColorUtilsKt.getColorCompat(context, i35);
+        this.redesignButtonSecondaryAltText = ColorUtilsKt.getColorCompat(context, i38);
+        this.redesignButtonSecondaryBackground = ColorUtilsKt.getColorCompat(context, R.color.primary_460);
+        this.redesignButtonSecondaryBorder = ColorUtilsKt.getColorCompat(context, R.color.redesign_button_secondary_border_dark);
+        this.redesignButtonSecondaryPressedBackground = ColorUtilsKt.getColorCompat(context, i27);
+        this.redesignButtonSecondaryPressedBorder = ColorUtilsKt.getColorCompat(context, i27);
+        this.redesignButtonSecondaryText = ColorUtilsKt.getColorCompat(context, i38);
+        this.redesignInputControlSelected = ColorUtilsKt.getColorCompat(context, i19);
         this.redesignOnlyBackgroundActive = ColorUtilsKt.getColorCompat(context, i11);
-        this.redesignOnlyBackgroundDefault = ColorUtilsKt.getColorCompat(context, i10);
-        this.redesignOnlyBackgroundOverlay = ColorUtilsKt.getColorCompat(context, i13);
-        this.redesignOnlyBackgroundRaised = ColorUtilsKt.getColorCompat(context, i14);
-        this.redesignOnlyBackgroundSunken = ColorUtilsKt.getColorCompat(context, i12);
+        this.redesignOnlyBackgroundDefault = ColorUtilsKt.getColorCompat(context, i12);
+        this.redesignOnlyBackgroundOverlay = ColorUtilsKt.getColorCompat(context, i36);
+        this.redesignOnlyBackgroundRaised = ColorUtilsKt.getColorCompat(context, i13);
+        this.redesignOnlyBackgroundSunken = ColorUtilsKt.getColorCompat(context, i14);
         int i40 = R.color.primary_730;
         this.scrollbarAutoScrollbarColorThumb = ColorUtilsKt.getColorCompat(context, i40);
-        this.scrollbarAutoScrollbarColorTrack = ColorUtilsKt.getColorCompat(context, i14);
+        this.scrollbarAutoScrollbarColorTrack = ColorUtilsKt.getColorCompat(context, i13);
         this.scrollbarAutoThumb = ColorUtilsKt.getColorCompat(context, i40);
-        this.scrollbarAutoTrack = ColorUtilsKt.getColorCompat(context, i14);
+        this.scrollbarAutoTrack = ColorUtilsKt.getColorCompat(context, i13);
         this.scrollbarThinThumb = ColorUtilsKt.getColorCompat(context, i40);
         this.scrollbarThinTrack = ColorUtilsKt.getColorCompat(context, R.color.scrollbar_thin_track_dark);
         this.spoilerHiddenBackground = ColorUtilsKt.getColorCompat(context, i10);
-        this.spoilerRevealedBackground = ColorUtilsKt.getColorCompat(context, i15);
-        this.statusDanger = ColorUtilsKt.getColorCompat(context, i23);
-        this.statusDangerBackground = ColorUtilsKt.getColorCompat(context, i23);
-        this.statusDangerText = ColorUtilsKt.getColorCompat(context, i21);
-        this.statusDnd = ColorUtilsKt.getColorCompat(context, i23);
-        this.statusIdle = ColorUtilsKt.getColorCompat(context, i36);
-        this.statusOffline = ColorUtilsKt.getColorCompat(context, i30);
-        this.statusOnline = ColorUtilsKt.getColorCompat(context, i26);
-        this.statusPositive = ColorUtilsKt.getColorCompat(context, i26);
-        this.statusPositiveBackground = ColorUtilsKt.getColorCompat(context, i25);
-        this.statusPositiveText = ColorUtilsKt.getColorCompat(context, i21);
-        this.statusWarning = ColorUtilsKt.getColorCompat(context, i36);
-        this.statusWarningBackground = ColorUtilsKt.getColorCompat(context, i36);
-        this.statusWarningText = ColorUtilsKt.getColorCompat(context, i16);
-        this.textBrand = ColorUtilsKt.getColorCompat(context, i32);
+        this.spoilerRevealedBackground = ColorUtilsKt.getColorCompat(context, i14);
+        this.statusDanger = ColorUtilsKt.getColorCompat(context, i22);
+        this.statusDangerBackground = ColorUtilsKt.getColorCompat(context, i22);
+        this.statusDangerText = ColorUtilsKt.getColorCompat(context, i20);
+        this.statusDnd = ColorUtilsKt.getColorCompat(context, i22);
+        this.statusIdle = ColorUtilsKt.getColorCompat(context, i37);
+        this.statusOffline = ColorUtilsKt.getColorCompat(context, i29);
+        this.statusOnline = ColorUtilsKt.getColorCompat(context, i25);
+        this.statusPositive = ColorUtilsKt.getColorCompat(context, i25);
+        this.statusPositiveBackground = ColorUtilsKt.getColorCompat(context, i24);
+        this.statusPositiveText = ColorUtilsKt.getColorCompat(context, i20);
+        this.statusWarning = ColorUtilsKt.getColorCompat(context, i37);
+        this.statusWarningBackground = ColorUtilsKt.getColorCompat(context, i37);
+        this.statusWarningText = ColorUtilsKt.getColorCompat(context, i15);
+        this.textBrand = ColorUtilsKt.getColorCompat(context, i31);
         this.textDanger = ColorUtilsKt.getColorCompat(context, R.color.red_345);
-        this.textLink = ColorUtilsKt.getColorCompat(context, i34);
+        this.textLink = ColorUtilsKt.getColorCompat(context, i33);
         this.textLinkLowSaturation = ColorUtilsKt.getColorCompat(context, R.color.blue_330);
-        this.textMuted = ColorUtilsKt.getColorCompat(context, i30);
-        this.textNormal = ColorUtilsKt.getColorCompat(context, i37);
+        this.textLowContrast = ColorUtilsKt.getColorCompat(context, i29);
+        this.textMessagePreviewLowSat = ColorUtilsKt.getColorCompat(context, i29);
+        this.textMuted = ColorUtilsKt.getColorCompat(context, i29);
+        this.textMutedOnDefault = ColorUtilsKt.getColorCompat(context, i35);
+        this.textNormal = ColorUtilsKt.getColorCompat(context, i38);
         this.textPositive = ColorUtilsKt.getColorCompat(context, R.color.green_330);
-        this.textWarning = ColorUtilsKt.getColorCompat(context, i36);
-        this.textboxMarkdownSyntax = ColorUtilsKt.getColorCompat(context, i30);
+        this.textPrimary = ColorUtilsKt.getColorCompat(context, i38);
+        this.textSecondary = ColorUtilsKt.getColorCompat(context, i35);
+        this.textWarning = ColorUtilsKt.getColorCompat(context, i37);
+        this.textboxMarkdownSyntax = ColorUtilsKt.getColorCompat(context, i29);
         this.userProfileHeaderOverflowBackground = ColorUtilsKt.getColorCompat(context, R.color.user_profile_header_overflow_background_dark);
-        this.white = ColorUtilsKt.getColorCompat(context, i21);
+        this.white = ColorUtilsKt.getColorCompat(context, i20);
     }
 
     @Override 
@@ -574,6 +598,11 @@ public final class DarkTheme extends DiscordTheme {
     @Override 
     public int getBackgroundModifierAccent() {
         return this.backgroundModifierAccent;
+    }
+
+    @Override 
+    public int getBackgroundModifierAccent2() {
+        return this.backgroundModifierAccent2;
     }
 
     @Override 
@@ -1047,6 +1076,11 @@ public final class DarkTheme extends DiscordTheme {
     }
 
     @Override 
+    public int getHeaderMuted() {
+        return this.headerMuted;
+    }
+
+    @Override 
     public int getHeaderPrimary() {
         return this.headerPrimary;
     }
@@ -1064,6 +1098,21 @@ public final class DarkTheme extends DiscordTheme {
     @Override 
     public int getHomeCardRestingBorder() {
         return this.homeCardRestingBorder;
+    }
+
+    @Override 
+    public int getIconMuted() {
+        return this.iconMuted;
+    }
+
+    @Override 
+    public int getIconPrimary() {
+        return this.iconPrimary;
+    }
+
+    @Override 
+    public int getIconSecondary() {
+        return this.iconSecondary;
     }
 
     @Override 
@@ -1252,6 +1301,11 @@ public final class DarkTheme extends DiscordTheme {
     }
 
     @Override 
+    public int getRedesignActivityCardOverflowBackground() {
+        return this.redesignActivityCardOverflowBackground;
+    }
+
+    @Override 
     public int getRedesignButtonDangerBackground() {
         return this.redesignButtonDangerBackground;
     }
@@ -1409,6 +1463,11 @@ public final class DarkTheme extends DiscordTheme {
     @Override 
     public int getRedesignButtonSecondaryAltPressedBackground() {
         return this.redesignButtonSecondaryAltPressedBackground;
+    }
+
+    @Override 
+    public int getRedesignButtonSecondaryAltPressedText() {
+        return this.redesignButtonSecondaryAltPressedText;
     }
 
     @Override 
@@ -1597,8 +1656,23 @@ public final class DarkTheme extends DiscordTheme {
     }
 
     @Override 
+    public int getTextLowContrast() {
+        return this.textLowContrast;
+    }
+
+    @Override 
+    public int getTextMessagePreviewLowSat() {
+        return this.textMessagePreviewLowSat;
+    }
+
+    @Override 
     public int getTextMuted() {
         return this.textMuted;
+    }
+
+    @Override 
+    public int getTextMutedOnDefault() {
+        return this.textMutedOnDefault;
     }
 
     @Override 
@@ -1609,6 +1683,16 @@ public final class DarkTheme extends DiscordTheme {
     @Override 
     public int getTextPositive() {
         return this.textPositive;
+    }
+
+    @Override 
+    public int getTextPrimary() {
+        return this.textPrimary;
+    }
+
+    @Override 
+    public int getTextSecondary() {
+        return this.textSecondary;
     }
 
     @Override 
