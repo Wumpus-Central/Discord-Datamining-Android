@@ -235,6 +235,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         setHasStableIds(true);
     }
 
+    public static final  Function1 access$getOnTapSpoiler$p(MessageAccessoriesAdapter messageAccessoriesAdapter) {
+        return messageAccessoriesAdapter.onTapSpoiler;
+    }
+
     
     public static final void onBindViewHolder$lambda$0(MessageAccessory part, MessageAccessoriesAdapter this$0, MessagePartViewHolder holder, View view) {
         q.g(part, "$part");
