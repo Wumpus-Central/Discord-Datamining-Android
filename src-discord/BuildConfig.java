@@ -9,9 +9,9 @@ public final class BuildConfig {
     public static final String INTEGRATION_TEST_PASSWORD = "null";
     public static final String INTEGRATION_TEST_USERNAME = "null";
     public static final String MAIN_MODULE = "index.native";
-    public static final String USER_AGENT = "Discord-Android/190200";
-    public static final int VERSION_CODE = 190200;
-    public static final String VERSION_NAME = "190.0 - Alpha";
-    public static final String VERSION_NAME_RNA = "190.0";
+    public static final String USER_AGENT = "Discord-Android/190201";
+    public static final int VERSION_CODE = 190201;
+    public static final String VERSION_NAME = "190.1 - Alpha";
+    public static final String VERSION_NAME_RNA = "190.1";
     public static final Boolean logTTIMetrics = Boolean.FALSE;
 }
