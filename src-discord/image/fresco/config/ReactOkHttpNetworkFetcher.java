@@ -44,7 +44,7 @@ public class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     @Override 
     public void fetch(OkHttpNetworkFetcher.OkHttpNetworkFetchState okHttpNetworkFetchState, NetworkFetcher.Callback callback) {
-        okHttpNetworkFetchState.f7794f = SystemClock.elapsedRealtime();
+        okHttpNetworkFetchState.f7796f = SystemClock.elapsedRealtime();
         Uri g10 = okHttpNetworkFetchState.g();
         Map<String, String> headers = okHttpNetworkFetchState.b().d() instanceof ReactNetworkImageRequest ? getHeaders(((ReactNetworkImageRequest) okHttpNetworkFetchState.b().d()).getHeaders()) : null;
         if (headers == null) {

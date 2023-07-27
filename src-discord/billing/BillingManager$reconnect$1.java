@@ -34,7 +34,7 @@ public final class BillingManager$reconnect$1 extends k implements Function1<Con
     }
 
     public final Object invoke(Continuation<? super Unit> continuation) {
-        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f20664a);
+        return ((BillingManager$reconnect$1) create(continuation)).invokeSuspend(Unit.f20666a);
     }
 
     @Override 
@@ -52,7 +52,7 @@ public final class BillingManager$reconnect$1 extends k implements Function1<Con
             billingManager$billingClientStateListener$1 = this.this$0.billingClientStateListener;
             billingClient.j(billingManager$billingClientStateListener$1);
             this.this$0.getOnConnectionUpdated().invoke(b.c(BillingManager.ConnectionState.CONNECTING.getValue()));
-            return Unit.f20664a;
+            return Unit.f20666a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

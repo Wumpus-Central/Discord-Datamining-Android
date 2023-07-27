@@ -29,7 +29,7 @@ public final class MuteAction implements NotificationAction {
         @Override 
         public final MuteAction createFromParcel(Parcel parcel) {
             q.g(parcel, "parcel");
-            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m573unboximpl(), null);
+            return new MuteAction(parcel.readString(), (GuildId) parcel.readParcelable(MuteAction.class.getClassLoader()), ((ChannelId) parcel.readParcelable(MuteAction.class.getClassLoader())).m574unboximpl(), null);
         }
 
         
@@ -72,7 +72,7 @@ public final class MuteAction implements NotificationAction {
         Bundle bundle = new Bundle();
         GuildId guildId = this.guildId;
         if (guildId != null) {
-            bundle.putString("guildId", String.valueOf(guildId.m586unboximpl()));
+            bundle.putString("guildId", String.valueOf(guildId.m587unboximpl()));
         }
         bundle.putString("channelId", String.valueOf(this.channelId));
         HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "MuteAction", 0L, false, bundle, true, 12, null);
@@ -93,6 +93,6 @@ public final class MuteAction implements NotificationAction {
         q.g(out, "out");
         out.writeString(this.tag);
         out.writeParcelable(this.guildId, i10);
-        out.writeParcelable(ChannelId.m564boximpl(this.channelId), i10);
+        out.writeParcelable(ChannelId.m565boximpl(this.channelId), i10);
     }
 }

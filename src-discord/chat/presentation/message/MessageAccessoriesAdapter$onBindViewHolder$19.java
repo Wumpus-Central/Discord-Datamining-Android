@@ -29,11 +29,11 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$19 extends s imple
     @Override 
     public   Unit invoke(Double d10) {
         invoke2(d10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     
     public final void invoke2(Double d10) {
-        this.this$0.m195onMediaClickedl3ndGo(this.$holder, this.$part.mo215getMessageId3Eiw7ao(), ((VideoAttachmentMessageAccessory) this.$part).getIndex(), "attachment", d10, null, ViewResizeMode.Fill);
+        this.this$0.m196onMediaClickedl3ndGo(this.$holder, this.$part.mo216getMessageId3Eiw7ao(), ((VideoAttachmentMessageAccessory) this.$part).getIndex(), "attachment", d10, null, ViewResizeMode.Fill);
     }
 }

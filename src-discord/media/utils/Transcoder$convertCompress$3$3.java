@@ -20,7 +20,7 @@ final class Transcoder$convertCompress$3$3 extends s implements Function1<Throwa
     @Override 
     public   Unit invoke(Throwable th2) {
         invoke2(th2);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

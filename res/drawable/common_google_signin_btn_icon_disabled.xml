@@ -9,6 +9,6 @@
         </shape>
     </item>
     <item>
-        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_df" />
+        <bitmap android:gravity="center" android:src="@drawable/APKTOOL_DUMMY_168" />
     </item>
 </layer-list>

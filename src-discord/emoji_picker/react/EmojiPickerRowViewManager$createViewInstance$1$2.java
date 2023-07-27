@@ -33,7 +33,7 @@ public final class EmojiPickerRowViewManager$createViewInstance$1$2 extends s im
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

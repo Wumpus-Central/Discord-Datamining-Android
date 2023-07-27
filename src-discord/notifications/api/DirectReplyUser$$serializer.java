@@ -38,7 +38,7 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
+        a2 a2Var = a2.f26233a;
         return new KSerializer[]{UserId$$serializer.INSTANCE, a.u(a2Var), a.u(a2Var), a.u(a2Var)};
     }
 
@@ -55,7 +55,7 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
         Object obj5 = null;
         if (c10.y()) {
             obj4 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, null);
-            a2 a2Var = a2.f26231a;
+            a2 a2Var = a2.f26233a;
             obj = c10.v(descriptor2, 1, a2Var, null);
             obj2 = c10.v(descriptor2, 2, a2Var, null);
             obj3 = c10.v(descriptor2, 3, a2Var, null);
@@ -74,13 +74,13 @@ public final class DirectReplyUser$$serializer implements f0<DirectReplyUser> {
                     obj5 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, obj5);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj6 = c10.v(descriptor2, 1, a2.f26231a, obj6);
+                    obj6 = c10.v(descriptor2, 1, a2.f26233a, obj6);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj7 = c10.v(descriptor2, 2, a2.f26231a, obj7);
+                    obj7 = c10.v(descriptor2, 2, a2.f26233a, obj7);
                     i11 |= 4;
                 } else if (x10 == 3) {
-                    obj8 = c10.v(descriptor2, 3, a2.f26231a, obj8);
+                    obj8 = c10.v(descriptor2, 3, a2.f26233a, obj8);
                     i11 |= 8;
                 } else {
                     throw new n(x10);

@@ -78,6 +78,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
             }
             int j02 = linearLayoutManager.j0() - 1;
             int j22 = linearLayoutManager.j2();
+            int l22 = linearLayoutManager.l2();
             if (j22 != j02 || j22 < 0) {
                 z12 = false;
             } else {
@@ -119,9 +120,9 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
                 z16 = true;
             }
             if (x22) {
-                scrollState = new ScrollState(z14, z15, z11, z10, z13, z12, scrollDirection, z16, j22, i22);
+                scrollState = new ScrollState(z14, z15, z11, z10, z13, z12, scrollDirection, z16, l22, i22);
             } else {
-                scrollState = new ScrollState(z14, z15, z13, z12, z11, z10, scrollDirection, z16, i22, j22);
+                scrollState = new ScrollState(z14, z15, z13, z12, z11, z10, scrollDirection, z16, i22, l22);
             }
             boolean z17 = !q.b(this.scrollState, scrollState);
             this.scrollState = scrollState;

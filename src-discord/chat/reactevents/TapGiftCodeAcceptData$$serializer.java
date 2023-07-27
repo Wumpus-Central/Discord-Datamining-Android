@@ -32,7 +32,7 @@ public final class TapGiftCodeAcceptData$$serializer implements f0<TapGiftCodeAc
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26231a};
+        return new KSerializer[]{a2.f26233a};
     }
 
     @Override 

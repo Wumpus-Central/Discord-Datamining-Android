@@ -33,7 +33,7 @@ public final class HandleDelete$$serializer implements f0<HandleDelete> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26231a, HandleDeleteMessage$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26233a, HandleDeleteMessage$$serializer.INSTANCE};
     }
 
     @Override 

@@ -27,12 +27,12 @@ final class EmbedView$setEmbed$3 extends s implements Function1<LinkContentNode,
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     
     public final void invoke2(LinkContentNode node) {
         q.g(node, "node");
-        this.$onLinkClicked.invoke(MessageId.m590boximpl(this.$messageId), node);
+        this.$onLinkClicked.invoke(MessageId.m591boximpl(this.$messageId), node);
     }
 }

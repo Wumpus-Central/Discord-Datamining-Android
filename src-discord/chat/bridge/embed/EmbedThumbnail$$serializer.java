@@ -42,9 +42,9 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
-        m0 m0Var = m0.f26306a;
-        h hVar = h.f26273a;
+        a2 a2Var = a2.f26233a;
+        m0 m0Var = m0.f26308a;
+        h hVar = h.f26275a;
         return new KSerializer[]{a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, a.u(hVar), a.u(hVar), a2Var};
     }
 
@@ -65,12 +65,12 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
         int i13 = 7;
         if (c10.y()) {
             str2 = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f26231a;
+            a2 a2Var = a2.f26233a;
             obj = c10.v(descriptor2, 1, a2Var, null);
             obj2 = c10.v(descriptor2, 2, a2Var, null);
             i11 = c10.k(descriptor2, 3);
             i10 = c10.k(descriptor2, 4);
-            h hVar = h.f26273a;
+            h hVar = h.f26275a;
             obj3 = c10.v(descriptor2, 5, hVar, null);
             obj4 = c10.v(descriptor2, 6, hVar, null);
             str = c10.t(descriptor2, 7);
@@ -98,12 +98,12 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
                         i13 = 7;
                         break;
                     case 1:
-                        obj6 = c10.v(descriptor2, 1, a2.f26231a, obj6);
+                        obj6 = c10.v(descriptor2, 1, a2.f26233a, obj6);
                         i15 |= 2;
                         i13 = 7;
                         break;
                     case 2:
-                        obj7 = c10.v(descriptor2, 2, a2.f26231a, obj7);
+                        obj7 = c10.v(descriptor2, 2, a2.f26233a, obj7);
                         i15 |= 4;
                         i13 = 7;
                         continue;
@@ -116,11 +116,11 @@ public final class EmbedThumbnail$$serializer implements f0<EmbedThumbnail> {
                         i15 |= 16;
                         break;
                     case 5:
-                        obj8 = c10.v(descriptor2, 5, h.f26273a, obj8);
+                        obj8 = c10.v(descriptor2, 5, h.f26275a, obj8);
                         i15 |= 32;
                         break;
                     case 6:
-                        obj5 = c10.v(descriptor2, 6, h.f26273a, obj5);
+                        obj5 = c10.v(descriptor2, 6, h.f26275a, obj5);
                         i15 |= 64;
                         break;
                     case 7:

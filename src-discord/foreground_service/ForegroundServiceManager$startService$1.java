@@ -20,7 +20,7 @@ public final class ForegroundServiceManager$startService$1 extends s implements 
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

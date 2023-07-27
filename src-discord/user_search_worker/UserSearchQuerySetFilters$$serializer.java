@@ -37,8 +37,8 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f26273a;
-        return new KSerializer[]{a.u(a2.f26231a), a.u(hVar), a.u(hVar)};
+        h hVar = h.f26275a;
+        return new KSerializer[]{a.u(a2.f26233a), a.u(hVar), a.u(hVar)};
     }
 
     @Override 
@@ -52,8 +52,8 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
         c c10 = decoder.c(descriptor2);
         Object obj4 = null;
         if (c10.y()) {
-            obj3 = c10.v(descriptor2, 0, a2.f26231a, null);
-            h hVar = h.f26273a;
+            obj3 = c10.v(descriptor2, 0, a2.f26233a, null);
+            h hVar = h.f26275a;
             obj = c10.v(descriptor2, 1, hVar, null);
             obj2 = c10.v(descriptor2, 2, hVar, null);
             i10 = 7;
@@ -67,13 +67,13 @@ public final class UserSearchQuerySetFilters$$serializer implements f0<UserSearc
                 if (x10 == -1) {
                     z10 = false;
                 } else if (x10 == 0) {
-                    obj4 = c10.v(descriptor2, 0, a2.f26231a, obj4);
+                    obj4 = c10.v(descriptor2, 0, a2.f26233a, obj4);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj5 = c10.v(descriptor2, 1, h.f26273a, obj5);
+                    obj5 = c10.v(descriptor2, 1, h.f26275a, obj5);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj6 = c10.v(descriptor2, 2, h.f26273a, obj6);
+                    obj6 = c10.v(descriptor2, 2, h.f26275a, obj6);
                     i11 |= 4;
                 } else {
                     throw new n(x10);

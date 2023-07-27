@@ -25,11 +25,11 @@ public final class IconUrlUtils {
     }
 
     
-    public static  String m456getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
+    public static  String m457getApplicationIconweIltyw$default(IconUrlUtils iconUrlUtils, ApplicationId applicationId, String str, int i10, int i11, Object obj) {
         if ((i11 & 4) != 0) {
             i10 = 160;
         }
-        return iconUrlUtils.m461getApplicationIconweIltyw(applicationId, str, i10);
+        return iconUrlUtils.m462getApplicationIconweIltyw(applicationId, str, i10);
     }
 
     public static  String getCustomEmojiUrl$default(IconUrlUtils iconUrlUtils, long j10, boolean z10, Integer num, int i10, Object obj) {
@@ -40,31 +40,31 @@ public final class IconUrlUtils {
     }
 
     
-    public static  String m457getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
+    public static  String m458getForChannelJYSGpIY$default(IconUrlUtils iconUrlUtils, Context context, ChannelId channelId, String str, boolean z10, Integer num, int i10, Object obj) {
         if ((i10 & 16) != 0) {
             num = null;
         }
-        return iconUrlUtils.m462getForChannelJYSGpIY(context, channelId, str, z10, num);
+        return iconUrlUtils.m463getForChannelJYSGpIY(context, channelId, str, z10, num);
     }
 
     
-    public static  String m458getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
+    public static  String m459getForGuild14CJxO4$default(IconUrlUtils iconUrlUtils, GuildId guildId, String str, String str2, boolean z10, Integer num, int i10, Object obj) {
         String str3 = (i10 & 4) != 0 ? null : str2;
         if ((i10 & 8) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m463getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
+        return iconUrlUtils.m464getForGuild14CJxO4(guildId, str, str3, z10, (i10 & 16) != 0 ? null : num);
     }
 
     
-    public static  String m459getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
+    public static  String m460getForGuildMember2tNb6hE$default(IconUrlUtils iconUrlUtils, String str, GuildId guildId, UserId userId, Integer num, boolean z10, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
         if ((i10 & 16) != 0) {
             z10 = false;
         }
-        return iconUrlUtils.m464getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
+        return iconUrlUtils.m465getForGuildMember2tNb6hE(str, guildId, userId, num, z10);
     }
 
     public static  void init$default(IconUrlUtils iconUrlUtils, Context context, String str, String str2, int i10, Object obj) {
@@ -78,7 +78,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m461getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
+    public final String m462getApplicationIconweIltyw(ApplicationId applicationId, String str, int i10) {
         MediaProxy mediaProxy = MediaProxy.INSTANCE;
         String cdn = Hosts.INSTANCE.getCDN();
         String mediaExtension$default = MediaExtensionKt.getMediaExtension$default(false, null, 2, null);
@@ -93,7 +93,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m462getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
+    public final String m463getForChannelJYSGpIY(Context context, ChannelId channelId, String str, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         q.g(context, "context");
@@ -107,10 +107,10 @@ public final class IconUrlUtils {
         }
         if (!z11) {
             try {
-                s.a aVar = s.f14772l;
+                s.a aVar = s.f14774l;
                 obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str + "." + MediaExtensionKt.getMediaExtension$default(false, null, 2, null), num, null, 4, null));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f14772l;
+                s.a aVar2 = s.f14774l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -142,7 +142,7 @@ public final class IconUrlUtils {
     }
 
     
-    public final String m463getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
+    public final String m464getForGuild14CJxO4(GuildId guildId, String str, String str2, boolean z10, Integer num) {
         boolean z11;
         Object obj;
         if (str == null || str.length() == 0) {
@@ -153,10 +153,10 @@ public final class IconUrlUtils {
         if (!z11 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                s.a aVar = s.f14772l;
+                s.a aVar = s.f14774l;
                 obj = s.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str + "." + MediaExtensionKt.getMediaExtension(z10, str));
             } catch (Throwable th2) {
-                s.a aVar2 = s.f14772l;
+                s.a aVar2 = s.f14774l;
                 obj = s.b(t.a(th2));
             }
             if (s.e(obj) != null) {
@@ -174,28 +174,28 @@ public final class IconUrlUtils {
     
     
     
-    public final java.lang.String m464getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
+    public final java.lang.String m465getForGuildMember2tNb6hE(java.lang.String r9, com.discord.primitives.GuildId r10, com.discord.primitives.UserId r11, java.lang.Integer r12, boolean r13) {
         
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m464getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.icons.IconUrlUtils.m465getForGuildMember2tNb6hE(java.lang.String, com.discord.primitives.GuildId, com.discord.primitives.UserId, java.lang.Integer, boolean):java.lang.String");
     }
 
     
-    public final String m465getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
+    public final String m466getForUser_fRzTXg(Context context, UserId userId, String str, Integer num, boolean z10, Integer num2) {
         Object obj;
         q.g(context, "context");
         if (userId != null) {
-            if (UserId.m631equalsimpl(UserId.m629constructorimpl(-1L), userId)) {
+            if (UserId.m632equalsimpl(UserId.m630constructorimpl(-1L), userId)) {
                 if (str == null) {
                     return "";
                 }
                 return str;
             } else if (str != null) {
                 try {
-                    s.a aVar = s.f14772l;
+                    s.a aVar = s.f14774l;
                     String mediaExtension = MediaExtensionKt.getMediaExtension(z10, str);
                     obj = s.b(MediaProxy.withSize$default(MediaProxy.INSTANCE, Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str + "." + mediaExtension, num2, null, 4, null));
                 } catch (Throwable th2) {
-                    s.a aVar2 = s.f14772l;
+                    s.a aVar2 = s.f14774l;
                     obj = s.b(t.a(th2));
                 }
                 if (s.e(obj) != null) {

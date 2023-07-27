@@ -20,7 +20,7 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$12 extends n implements
     @Override 
     public   Unit invoke(CommandMentionContentNode commandMentionContentNode) {
         invoke2(commandMentionContentNode);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

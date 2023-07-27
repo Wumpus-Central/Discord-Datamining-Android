@@ -27,9 +27,9 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  TimestampMessageAccessory m293copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
+    public static  TimestampMessageAccessory m294copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = timestampMessageAccessory.mo215getMessageId3Eiw7ao();
+            str = timestampMessageAccessory.mo216getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             str2 = timestampMessageAccessory.timestamp;
@@ -40,12 +40,12 @@ public final class TimestampMessageAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             discordFont = timestampMessageAccessory.discordFont;
         }
-        return timestampMessageAccessory.m295copyAFFcxXc(str, str2, i10, discordFont);
+        return timestampMessageAccessory.m296copyAFFcxXc(str, str2, i10, discordFont);
     }
 
     
-    public final String m294component13Eiw7ao() {
-        return mo215getMessageId3Eiw7ao();
+    public final String m295component13Eiw7ao() {
+        return mo216getMessageId3Eiw7ao();
     }
 
     public final String component2() {
@@ -61,7 +61,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     
-    public final TimestampMessageAccessory m295copyAFFcxXc(String messageId, String timestamp, int i10, DiscordFont discordFont) {
+    public final TimestampMessageAccessory m296copyAFFcxXc(String messageId, String timestamp, int i10, DiscordFont discordFont) {
         q.g(messageId, "messageId");
         q.g(timestamp, "timestamp");
         q.g(discordFont, "discordFont");
@@ -76,7 +76,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
             return false;
         }
         TimestampMessageAccessory timestampMessageAccessory = (TimestampMessageAccessory) obj;
-        return MessageId.m594equalsimpl0(mo215getMessageId3Eiw7ao(), timestampMessageAccessory.mo215getMessageId3Eiw7ao()) && q.b(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
+        return MessageId.m595equalsimpl0(mo216getMessageId3Eiw7ao(), timestampMessageAccessory.mo216getMessageId3Eiw7ao()) && q.b(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
     }
 
     public final DiscordFont getDiscordFont() {
@@ -85,7 +85,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo215getMessageId3Eiw7ao() {
+    public String mo216getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -98,11 +98,11 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m595hashCodeimpl(mo215getMessageId3Eiw7ao()) * 31) + this.timestamp.hashCode()) * 31) + this.textColor) * 31) + this.discordFont.hashCode();
+        return (((((MessageId.m596hashCodeimpl(mo216getMessageId3Eiw7ao()) * 31) + this.timestamp.hashCode()) * 31) + this.textColor) * 31) + this.discordFont.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m596toStringimpl(mo215getMessageId3Eiw7ao());
+        String str = MessageId.m597toStringimpl(mo216getMessageId3Eiw7ao());
         String str2 = this.timestamp;
         int i10 = this.textColor;
         DiscordFont discordFont = this.discordFont;

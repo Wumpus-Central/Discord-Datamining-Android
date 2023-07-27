@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.cache.HeartbeatKeyProviderModule;
+import com.discord.keyboard.KeyboardManagerModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
@@ -19,6 +19,6 @@ final class DCDPackageList$getPackages$78 extends s implements Function1<ReactAp
 
     public final NativeModule invoke(ReactApplicationContext it) {
         q.g(it, "it");
-        return HeartbeatKeyProviderModule.Companion.create(it);
+        return KeyboardManagerModule.Companion.create(it);
     }
 }

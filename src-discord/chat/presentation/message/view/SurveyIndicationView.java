@@ -64,7 +64,7 @@ public final class SurveyIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m318setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m319setSurveyIndicationu7_MRrM(String messageId, SurveyIndication surveyIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         DraweeSpanStringBuilder spannable;
         q.g(messageId, "messageId");
         q.g(surveyIndication, "surveyIndication");

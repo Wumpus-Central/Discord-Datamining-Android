@@ -57,9 +57,9 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
-        m0 m0Var = m0.f26306a;
-        h hVar = h.f26273a;
+        a2 a2Var = a2.f26233a;
+        m0 m0Var = m0.f26308a;
+        h hVar = h.f26275a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(GuildId$$serializer.INSTANCE), a.u(UserId$$serializer.INSTANCE), a.u(StructurableTextSerializer.INSTANCE), a.u(a2Var), a.u(a2Var), m0Var, a.u(m0Var), hVar, a.u(a2Var), a.u(hVar)};
     }
 
@@ -92,14 +92,14 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
             obj2 = c10.v(descriptor2, 2, GuildId$$serializer.INSTANCE, null);
             obj5 = c10.v(descriptor2, 3, UserId$$serializer.INSTANCE, null);
             obj3 = c10.v(descriptor2, 4, StructurableTextSerializer.INSTANCE, null);
-            a2 a2Var = a2.f26231a;
+            a2 a2Var = a2.f26233a;
             obj6 = c10.v(descriptor2, 5, a2Var, null);
             obj7 = c10.v(descriptor2, 6, a2Var, null);
             i10 = c10.k(descriptor2, 7);
-            obj9 = c10.v(descriptor2, 8, m0.f26306a, null);
+            obj9 = c10.v(descriptor2, 8, m0.f26308a, null);
             z10 = c10.s(descriptor2, 9);
             obj8 = c10.v(descriptor2, 10, a2Var, null);
-            obj4 = c10.v(descriptor2, 11, h.f26273a, null);
+            obj4 = c10.v(descriptor2, 11, h.f26275a, null);
             i11 = 4095;
         } else {
             int i16 = 11;
@@ -167,12 +167,12 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i12 = 10;
                         break;
                     case 5:
-                        obj14 = c10.v(descriptor2, 5, a2.f26231a, obj14);
+                        obj14 = c10.v(descriptor2, 5, a2.f26233a, obj14);
                         i17 |= 32;
                         i16 = 11;
                         continue;
                     case 6:
-                        obj15 = c10.v(descriptor2, i15, a2.f26231a, obj15);
+                        obj15 = c10.v(descriptor2, i15, a2.f26233a, obj15);
                         i17 |= 64;
                         break;
                     case 7:
@@ -180,7 +180,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 128;
                         break;
                     case 8:
-                        obj11 = c10.v(descriptor2, 8, m0.f26306a, obj11);
+                        obj11 = c10.v(descriptor2, 8, m0.f26308a, obj11);
                         i17 |= 256;
                         break;
                     case 9:
@@ -188,11 +188,11 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
                         i17 |= 512;
                         break;
                     case 10:
-                        obj16 = c10.v(descriptor2, i12, a2.f26231a, obj16);
+                        obj16 = c10.v(descriptor2, i12, a2.f26233a, obj16);
                         i17 |= 1024;
                         break;
                     case 11:
-                        obj13 = c10.v(descriptor2, i16, h.f26273a, obj13);
+                        obj13 = c10.v(descriptor2, i16, h.f26275a, obj13);
                         i17 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         break;
                     default:
@@ -215,7 +215,7 @@ public final class FlaggedMessageEmbed$$serializer implements f0<FlaggedMessageE
         }
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj10;
-        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m598unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
+        return new FlaggedMessageEmbed(i11, messageId != null ? messageId.m599unboximpl() : null, (ChannelId) obj, (GuildId) obj2, (UserId) obj5, (StructurableText) obj3, (String) obj6, (String) obj7, i10, (Integer) obj9, z10, (String) obj8, (Boolean) obj4, null, null);
     }
 
     @Override 

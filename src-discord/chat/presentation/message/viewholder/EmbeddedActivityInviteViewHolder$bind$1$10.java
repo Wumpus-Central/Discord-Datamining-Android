@@ -19,12 +19,12 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$10 extends n implements Fu
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m333invoke1xi1bu0(messageId.m598unboximpl());
-        return Unit.f20664a;
+        m334invoke1xi1bu0(messageId.m599unboximpl());
+        return Unit.f20666a;
     }
 
     
-    public final void m333invoke1xi1bu0(String p02) {
+    public final void m334invoke1xi1bu0(String p02) {
         q.g(p02, "p0");
         ((ChatEventHandler) this.receiver).mo171onTapSeeMore1xi1bu0(p02);
     }

@@ -1089,7 +1089,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
             while (true) {
                 byte[] bArr = buffer;
                 int read = openRawResource.read(bArr, 0, bArr.length);
-                e0Var.f20697k = read;
+                e0Var.f20699k = read;
                 if (read <= 0) {
                     break;
                 }
@@ -1099,10 +1099,10 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
                     System.arraycopy(bArr2, 0, bArr3, 0, i13);
                     readBuffer = bArr3;
                 }
-                System.arraycopy(bArr, 0, readBuffer, i13, e0Var.f20697k);
-                i13 += e0Var.f20697k;
+                System.arraycopy(bArr, 0, readBuffer, i13, e0Var.f20699k);
+                i13 += e0Var.f20699k;
             }
-            String str = new String(readBuffer, 0, i13, d.f19884b);
+            String str = new String(readBuffer, 0, i13, d.f19886b);
             openRawResource.close();
             this.width = i11;
             this.height = i12;

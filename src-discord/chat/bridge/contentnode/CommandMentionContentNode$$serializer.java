@@ -40,7 +40,7 @@ public final class CommandMentionContentNode$$serializer implements f0<CommandMe
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
+        a2 a2Var = a2.f26233a;
         return new KSerializer[]{ChannelId$$serializer.INSTANCE, a2Var, a2Var, a2Var, new f(ContentNodeSerializer.INSTANCE)};
     }
 

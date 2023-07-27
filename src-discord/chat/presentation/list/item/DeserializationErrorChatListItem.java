@@ -9,7 +9,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     private final String causeMessage;
 
     
-    private final String f6930id;
+    private final String f6932id;
     private final String json;
 
     
@@ -18,7 +18,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
         q.g(id2, "id");
         q.g(json, "json");
         q.g(causeMessage, "causeMessage");
-        this.f6930id = id2;
+        this.f6932id = id2;
         this.json = json;
         this.causeMessage = causeMessage;
     }
@@ -72,7 +72,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
 
     @Override 
     public String getId() {
-        return this.f6930id;
+        return this.f6932id;
     }
 
     public final String getJson() {

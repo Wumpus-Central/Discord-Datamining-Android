@@ -83,22 +83,22 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
         q.g(reactContext, "reactContext");
         final ChatInputRootView chatInputRootView = new ChatInputRootView(reactContext, null, 0, 6, null);
         final Ref$ObjectRef ref$ObjectRef = new Ref$ObjectRef();
-        ref$ObjectRef.f20691k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
+        ref$ObjectRef.f20693k = UIManagerHelper.getEventDispatcherForReactTag(reactContext, chatInputRootView.getId());
         chatInputRootView.setListener(new ChatInputRootView.ChatInputListener() { 
             @Override 
             public void onContentSizeChange(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, reactContext, chatInputRootView, new OnContentSizeChangeEvent(i10, i11));
             }
 
             @Override 
             public void onEndBlur(String text) {
                 q.g(text, "text");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, reactContext, chatInputRootView, new OnEndBlurEvent(text));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, reactContext, chatInputRootView, new OnEndBlurEvent(text));
             }
 
             @Override 
             public void onFocus(int i10, int i11) {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, reactContext, chatInputRootView, new OnFocusEvent(i10, i11, 0, 4, (DefaultConstructorMarker) null));
             }
 
             @Override 
@@ -108,19 +108,19 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
                 ChatInputRootView chatInputRootView2 = chatInputRootView;
                 String uri2 = uri.toString();
                 q.f(uri2, "uri.toString()");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, themedReactContext, chatInputRootView2, new OnPasteImageEvent(uri2, reactContext.getContentResolver().getType(uri)));
             }
 
             @Override 
             public void onRequestSend() {
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, reactContext, chatInputRootView, new OnRequestSendEvent());
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, reactContext, chatInputRootView, new OnRequestSendEvent());
             }
 
             @Override 
             public void onTextOrSelectionChanged(int i10, int i11, String text, String editId) {
                 q.g(text, "text");
                 q.g(editId, "editId");
-                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20691k, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
+                ChatInputViewManager.this.getReactEvents$chat_input_release().emitEvent(ref$ObjectRef.f20693k, reactContext, chatInputRootView, new OnSelectionOrTextChangeEvent(i10, i11, text, editId));
             }
         });
         KeyboardManager.INSTANCE.addKeyboardListener(chatInputRootView);

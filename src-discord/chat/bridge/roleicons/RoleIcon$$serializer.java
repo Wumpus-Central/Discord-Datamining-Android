@@ -40,8 +40,8 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
-        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a2Var, m0.f26306a, a2Var};
+        a2 a2Var = a2.f26233a;
+        return new KSerializer[]{a.u(a2Var), a.u(a2Var), a2Var, m0.f26308a, a2Var};
     }
 
     @Override 
@@ -56,7 +56,7 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
-            a2 a2Var = a2.f26231a;
+            a2 a2Var = a2.f26233a;
             obj = c10.v(descriptor2, 0, a2Var, null);
             obj2 = c10.v(descriptor2, 1, a2Var, null);
             str = c10.t(descriptor2, 2);
@@ -76,10 +76,10 @@ public final class RoleIcon$$serializer implements f0<RoleIcon> {
                 if (x10 == -1) {
                     z10 = false;
                 } else if (x10 == 0) {
-                    obj3 = c10.v(descriptor2, 0, a2.f26231a, obj3);
+                    obj3 = c10.v(descriptor2, 0, a2.f26233a, obj3);
                     i13 |= 1;
                 } else if (x10 == 1) {
-                    obj4 = c10.v(descriptor2, 1, a2.f26231a, obj4);
+                    obj4 = c10.v(descriptor2, 1, a2.f26233a, obj4);
                     i13 |= 2;
                 } else if (x10 == 2) {
                     str = c10.t(descriptor2, 2);

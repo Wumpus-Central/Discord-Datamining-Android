@@ -241,7 +241,7 @@ public final class WebAuthn {
         IntRange p10;
         q.g(challenge, "challenge");
         p.a aVar = new p.a();
-        JSONObject jSONObject = new JSONObject(new JSONTokener(challenge));
+        JSONObject jSONObject = new JSONObject(new JSONTokener(challenge)).getJSONObject("publicKey");
         String string = jSONObject.getJSONObject("user").getString("id");
         q.f(string, "obj.getJSONObject(\"user\").getString(\"id\")");
         aVar.h(new v(decodeBase64(string), jSONObject.getJSONObject("user").getString(ZeroconfModule.KEY_SERVICE_NAME), null, jSONObject.getJSONObject("user").getString("displayName")));
@@ -262,7 +262,10 @@ public final class WebAuthn {
         q.f(jSONArray2, "obj.getJSONArray(\"excludeCredentials\")");
         aVar.d(parseCredentialDescriptors(jSONArray2));
         j.a aVar2 = new j.a();
-        aVar2.b(b.a(jSONObject.getJSONObject("authenticatorSection").getString("authenticatorAttachment")));
+        JSONObject jSONObject3 = jSONObject.getJSONObject("authenticatorSelection");
+        if (jSONObject3.has("authenticatorAttachment")) {
+            aVar2.b(b.a(jSONObject3.getString("authenticatorAttachment")));
+        }
         aVar.b(aVar2.a());
         aVar.f(new t(jSONObject.getJSONObject("rp").getString("id"), jSONObject.getJSONObject("rp").getString(ZeroconfModule.KEY_SERVICE_NAME), null));
         Task<PendingIntent> C = a.a(activity).C(aVar.a());

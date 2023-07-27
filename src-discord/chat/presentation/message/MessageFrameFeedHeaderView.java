@@ -115,7 +115,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z10 = true;
             }
             if (z10) {
-                output.z(serialDesc, 0, a2.f26231a, self.channelIconURL);
+                output.z(serialDesc, 0, a2.f26233a, self.channelIconURL);
             }
             if (!output.w(serialDesc, 1) && self.chatIconURL == null) {
                 z11 = false;
@@ -123,7 +123,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z11 = true;
             }
             if (z11) {
-                output.z(serialDesc, 1, a2.f26231a, self.chatIconURL);
+                output.z(serialDesc, 1, a2.f26233a, self.chatIconURL);
             }
             if (!output.w(serialDesc, 2) && self.avatarURLs == null) {
                 z12 = false;
@@ -131,13 +131,13 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
                 z12 = true;
             }
             if (z12) {
-                output.z(serialDesc, 2, new si.f(a2.f26231a), self.avatarURLs);
+                output.z(serialDesc, 2, new si.f(a2.f26233a), self.avatarURLs);
             }
             if (output.w(serialDesc, 3) || self.channelName != null) {
                 z13 = true;
             }
             if (z13) {
-                output.z(serialDesc, 3, a2.f26231a, self.channelName);
+                output.z(serialDesc, 3, a2.f26233a, self.channelName);
             }
         }
 

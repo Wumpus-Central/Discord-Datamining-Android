@@ -102,6 +102,7 @@
     <item type="id" name="body" />
     <item type="id" name="border" />
     <item type="id" name="bottom_end_label" />
+    <item type="id" name="bottom_guideline" />
     <item type="id" name="browser_actions_header_text" />
     <item type="id" name="browser_actions_menu_item_icon" />
     <item type="id" name="browser_actions_menu_item_text" />
@@ -302,6 +303,9 @@
     <item type="id" name="image_view_state_aspect_ratio" />
     <item type="id" name="image_view_state_rotate" />
     <item type="id" name="image_view_state_scale" />
+    <item type="id" name="indicator_bottom" />
+    <item type="id" name="indicator_end_barrier" />
+    <item type="id" name="indicator_top" />
     <item type="id" name="info" />
     <item type="id" name="inline_media_container" />
     <item type="id" name="inline_media_gif_indicator" />
@@ -343,6 +347,7 @@
     <item type="id" name="join_button" />
     <item type="id" name="json" />
     <item type="id" name="json_header" />
+    <item type="id" name="jump_button" />
     <item type="id" name="label" />
     <item type="id" name="labelled_by" />
     <item type="id" name="launch_button" />
@@ -408,6 +413,7 @@
     <item type="id" name="month_navigation_next" />
     <item type="id" name="month_navigation_previous" />
     <item type="id" name="month_title" />
+    <item type="id" name="more_button" />
     <item type="id" name="motion_base" />
     <item type="id" name="move_to_speaker_icon" />
     <item type="id" name="mtrl_anchor_parent" />
@@ -655,6 +661,7 @@
     <item type="id" name="toolbar" />
     <item type="id" name="toolbar_title" />
     <item type="id" name="topPanel" />
+    <item type="id" name="top_guideline" />
     <item type="id" name="touch_outside" />
     <item type="id" name="transition_current_scene" />
     <item type="id" name="transition_layout_save" />

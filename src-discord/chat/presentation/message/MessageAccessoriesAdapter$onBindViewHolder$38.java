@@ -23,7 +23,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$38 extends s imple
     @Override 
     public   Unit invoke(String str, String str2) {
         invoke2(str, str2);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

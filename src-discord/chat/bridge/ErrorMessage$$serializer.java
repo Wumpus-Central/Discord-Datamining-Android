@@ -35,7 +35,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f26231a};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, a2.f26233a};
     }
 
     @Override 
@@ -75,7 +75,7 @@ public final class ErrorMessage$$serializer implements f0<ErrorMessage> {
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str2 = messageId.m598unboximpl();
+            str2 = messageId.m599unboximpl();
         }
         return new ErrorMessage(i10, str2, str, null, null);
     }

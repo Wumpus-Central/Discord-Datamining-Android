@@ -23,7 +23,7 @@ public final class DiscordGestureHandlerEnabledRootView$Companion$initNestedScro
     @Override 
     public   Unit invoke(View view, Function1<? super MotionEvent, ? extends Unit> function1) {
         invoke2(view, (Function1<? super MotionEvent, Unit>) function1);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

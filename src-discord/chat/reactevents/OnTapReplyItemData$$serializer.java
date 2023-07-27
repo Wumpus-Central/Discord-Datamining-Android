@@ -63,7 +63,7 @@ public final class OnTapReplyItemData$$serializer implements f0<OnTapReplyItemDa
         }
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new OnTapReplyItemData(i10, messageId != null ? messageId.m598unboximpl() : null, null, null);
+        return new OnTapReplyItemData(i10, messageId != null ? messageId.m599unboximpl() : null, null, null);
     }
 
     @Override 

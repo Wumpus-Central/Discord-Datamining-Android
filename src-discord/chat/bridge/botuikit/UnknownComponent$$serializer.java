@@ -36,7 +36,7 @@ public final class UnknownComponent$$serializer implements f0<UnknownComponent> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26306a;
+        m0 m0Var = m0.f26308a;
         return new KSerializer[]{m0Var, new f(m0Var)};
     }
 
@@ -50,7 +50,7 @@ public final class UnknownComponent$$serializer implements f0<UnknownComponent> 
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
             i11 = c10.k(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, new f(m0.f26306a), null);
+            obj = c10.m(descriptor2, 1, new f(m0.f26308a), null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -65,7 +65,7 @@ public final class UnknownComponent$$serializer implements f0<UnknownComponent> 
                     i11 = c10.k(descriptor2, 0);
                     i12 |= 1;
                 } else if (x10 == 1) {
-                    obj2 = c10.m(descriptor2, 1, new f(m0.f26306a), obj2);
+                    obj2 = c10.m(descriptor2, 1, new f(m0.f26308a), obj2);
                     i12 |= 2;
                 } else {
                     throw new n(x10);

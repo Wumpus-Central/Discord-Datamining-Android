@@ -45,9 +45,9 @@ public final class Sticker$$serializer implements f0<Sticker> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
-        m0 m0Var = m0.f26306a;
-        return new KSerializer[]{w0.f26347a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), m0Var};
+        a2 a2Var = a2.f26233a;
+        m0 m0Var = m0.f26308a;
+        return new KSerializer[]{w0.f26349a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, a2Var, a2Var, a2Var, a.u(m0Var), a.u(m0Var), m0Var};
     }
 
     @Override 
@@ -72,7 +72,7 @@ public final class Sticker$$serializer implements f0<Sticker> {
             str3 = c10.t(descriptor2, 2);
             str2 = c10.t(descriptor2, 3);
             str = c10.t(descriptor2, 4);
-            m0 m0Var = m0.f26306a;
+            m0 m0Var = m0.f26308a;
             obj = c10.v(descriptor2, 5, m0Var, null);
             obj2 = c10.v(descriptor2, 6, m0Var, null);
             i10 = c10.k(descriptor2, 7);
@@ -120,11 +120,11 @@ public final class Sticker$$serializer implements f0<Sticker> {
                         i15 |= 16;
                         break;
                     case 5:
-                        obj = c10.v(descriptor2, 5, m0.f26306a, obj);
+                        obj = c10.v(descriptor2, 5, m0.f26308a, obj);
                         i15 |= 32;
                         break;
                     case 6:
-                        obj2 = c10.v(descriptor2, i13, m0.f26306a, obj2);
+                        obj2 = c10.v(descriptor2, i13, m0.f26308a, obj2);
                         i15 |= 64;
                         break;
                     case 7:

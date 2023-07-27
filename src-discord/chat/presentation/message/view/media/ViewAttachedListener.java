@@ -35,7 +35,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         @Override 
         public   Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f20664a;
+            return Unit.f20666a;
         }
 
         public final void invoke(boolean z10) {

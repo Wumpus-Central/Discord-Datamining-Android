@@ -96,7 +96,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    private final void m309setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
+    private final void m310setSharePromptLdU2QRA(String str, PostSharePrompt postSharePrompt, View.OnClickListener onClickListener, String str2, View.OnClickListener onClickListener2, Function2<? super MessageId, ? super LinkContentNode, Unit> function2) {
         boolean z10;
         int i10;
         DraweeSpanStringBuilder spannable;
@@ -143,7 +143,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     }
 
     
-    public final void m310configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m311configureCgeVRR0(String messageId, int i10, boolean z10, String str, String followLabel, String str2, String shareLabel, List<? extends ReactionView.Reaction> list, ReactionView.Reaction reaction, boolean z11, String addNewReactionAccessibilityLabel, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onAddReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionClick, Function1<? super ReactionView.Reaction, Unit> onReactionLongPress, View.OnClickListener onTapFollowForumPost, View.OnClickListener onTapShareForumPost, View.OnClickListener onTapReactionOverflow, PostSharePrompt postSharePrompt, View.OnClickListener onDismissSharePromptClick, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         boolean z12;
         Object obj;
         int i11;
@@ -173,7 +173,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
                 reactionsView.setVisibility(8);
             } else {
                 d10 = i.d(reaction);
-                setReactions$default(this, MessageId.m596toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
+                setReactions$default(this, MessageId.m597toStringimpl(messageId), d10, reactionsTheme, onAddReactionClick, onReactionClick, null, 32, null);
             }
             i11 = 2;
             obj = null;
@@ -186,7 +186,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             ReactionsView reactionsView2 = this.binding.reactionsView;
             q.f(reactionsView2, "binding.reactionsView");
             reactionsView2.setVisibility(0);
-            setReactions(MessageId.m596toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
+            setReactions(MessageId.m597toStringimpl(messageId), v02, reactionsTheme, onAddReactionClick, onReactionClick, onReactionLongPress);
             int max = Math.max(list.size() - i13, 0);
             DCDButton configure_CgeVRR0$lambda$7 = this.binding.otherReactionsCount;
             q.f(configure_CgeVRR0$lambda$7, "configure_CgeVRR0$lambda$7");
@@ -244,7 +244,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
             int i17 = z12 ? 1 : 0;
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(configure_CgeVRR0$lambda$10, false, onAddReactionClick, i14, obj);
         }
-        m309setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
+        m310setSharePromptLdU2QRA(messageId, postSharePrompt, onTapShareForumPost, str2, onDismissSharePromptClick, onLinkClicked);
     }
 
     

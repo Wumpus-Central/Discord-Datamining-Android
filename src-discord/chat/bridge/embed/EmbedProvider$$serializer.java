@@ -33,7 +33,7 @@ public final class EmbedProvider$$serializer implements f0<EmbedProvider> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26231a};
+        return new KSerializer[]{a2.f26233a};
     }
 
     @Override 

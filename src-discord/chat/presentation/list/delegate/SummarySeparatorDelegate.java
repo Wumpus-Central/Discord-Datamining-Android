@@ -23,7 +23,20 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
     }
 
     
-    public static final void bindView$lambda$1$lambda$0(SummarySeparatorChatListItem item, SummarySeparatorDelegate this$0, View view) {
+    public static final void bindView$lambda$2$lambda$0(SummarySeparatorChatListItem item, SummarySeparatorDelegate this$0, View view) {
+        String str;
+        q.g(item, "$item");
+        q.g(this$0, "this$0");
+        if (item.isBeforeContent()) {
+            str = item.getSummary().m140getStartId3Eiw7ao();
+        } else {
+            str = item.getSummary().m139getEndId3Eiw7ao();
+        }
+        this$0.getEventHandler().mo174onTapSummarysekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
+    }
+
+    
+    public static final void bindView$lambda$2$lambda$1(SummarySeparatorChatListItem item, SummarySeparatorDelegate this$0, View view) {
         String str;
         q.g(item, "$item");
         q.g(this$0, "this$0");
@@ -32,7 +45,7 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
         } else {
             str = item.getSummary().m140getStartId3Eiw7ao();
         }
-        this$0.getEventHandler().mo174onTapSummarysekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
+        this$0.getEventHandler().mo175onTapSummaryJumpsekaTiM(item.getSummary().m138getChannelIdo4g7jtM(), str, item.getSummary().getId());
     }
 
     @Override 
@@ -48,10 +61,16 @@ public final class SummarySeparatorDelegate extends BaseChatListItemDelegate<Sum
         view.setDividerColor(item.getColor());
         view.setText(item.getText());
         view.setIsBeforeContent(item.isBeforeContent());
-        view.setOnClickListener(new View.OnClickListener() { 
+        view.setMoreActionsHandler(new View.OnClickListener() { 
             @Override 
             public final void onClick(View view2) {
-                SummarySeparatorDelegate.bindView$lambda$1$lambda$0(SummarySeparatorChatListItem.this, this, view2);
+                SummarySeparatorDelegate.bindView$lambda$2$lambda$0(SummarySeparatorChatListItem.this, this, view2);
+            }
+        });
+        view.setJumpToBottomHandler(new View.OnClickListener() { 
+            @Override 
+            public final void onClick(View view2) {
+                SummarySeparatorDelegate.bindView$lambda$2$lambda$1(SummarySeparatorChatListItem.this, this, view2);
             }
         });
     }

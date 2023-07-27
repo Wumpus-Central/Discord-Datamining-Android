@@ -35,7 +35,7 @@ public final class LocalNotificationEvent$$serializer implements f0<LocalNotific
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
+        a2 a2Var = a2.f26233a;
         return new KSerializer[]{new r0(a2Var, a.u(a2Var))};
     }
 
@@ -47,7 +47,7 @@ public final class LocalNotificationEvent$$serializer implements f0<LocalNotific
         c c10 = decoder.c(descriptor2);
         int i10 = 1;
         if (c10.y()) {
-            a2 a2Var = a2.f26231a;
+            a2 a2Var = a2.f26233a;
             obj = c10.m(descriptor2, 0, new r0(a2Var, a.u(a2Var)), null);
         } else {
             int i11 = 0;
@@ -57,7 +57,7 @@ public final class LocalNotificationEvent$$serializer implements f0<LocalNotific
                 if (x10 == -1) {
                     i10 = 0;
                 } else if (x10 == 0) {
-                    a2 a2Var2 = a2.f26231a;
+                    a2 a2Var2 = a2.f26233a;
                     obj = c10.m(descriptor2, 0, new r0(a2Var2, a.u(a2Var2)), obj);
                     i11 |= 1;
                 } else {

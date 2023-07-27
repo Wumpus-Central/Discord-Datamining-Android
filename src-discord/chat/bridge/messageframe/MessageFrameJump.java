@@ -81,13 +81,13 @@ public final class MessageFrameJump extends MessageFrame {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f26231a, self.guildName);
+            output.z(serialDesc, 1, a2.f26233a, self.guildName);
         }
         if (output.w(serialDesc, 2) || self.channelName != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f26231a, self.channelName);
+            output.z(serialDesc, 2, a2.f26233a, self.channelName);
         }
     }
 

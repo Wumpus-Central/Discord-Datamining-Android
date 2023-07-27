@@ -400,6 +400,8 @@
     <dimen name="message_accessories_vertical_spacing">8.0dip</dimen>
     <dimen name="message_avatar">40.0dip</dimen>
     <dimen name="message_avatar_decoration_size">48.0dip</dimen>
+    <dimen name="message_divider_margin_end">16.0dip</dimen>
+    <dimen name="message_divider_margin_start">8.0dip</dimen>
     <dimen name="message_embed_margin">16.0dip</dimen>
     <dimen name="message_embed_max_thumbnail_size">70.0dip</dimen>
     <dimen name="message_gutter_width">2.0dip</dimen>

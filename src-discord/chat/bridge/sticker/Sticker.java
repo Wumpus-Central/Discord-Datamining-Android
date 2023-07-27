@@ -87,13 +87,13 @@ public final class Sticker {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 5, m0.f26306a, self.width);
+            output.z(serialDesc, 5, m0.f26308a, self.width);
         }
         if (output.w(serialDesc, 6) || self.height != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 6, m0.f26306a, self.height);
+            output.z(serialDesc, 6, m0.f26308a, self.height);
         }
         output.q(serialDesc, 7, self.renderMode);
     }

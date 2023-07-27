@@ -37,7 +37,7 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f26347a, SelectComponent.Companion.serializer()};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, w0.f26349a, SelectComponent.Companion.serializer()};
     }
 
     @Override 
@@ -85,7 +85,7 @@ public final class TapSelectActionComponent$$serializer implements f0<TapSelectA
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj2;
         if (messageId != null) {
-            str = messageId.m598unboximpl();
+            str = messageId.m599unboximpl();
         }
         return new TapSelectActionComponent(i10, str, j10, (SelectComponent) obj, null, null);
     }

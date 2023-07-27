@@ -154,7 +154,7 @@ public final class PostPreviewEmbed implements SpoilerableData {
             return false;
         }
         PostPreviewEmbed postPreviewEmbed = (PostPreviewEmbed) obj;
-        return ChannelId.m568equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m568equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m594equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m581equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && this.ctaButtonColor == postPreviewEmbed.ctaButtonColor && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText) && q.b(this.backgroundImage, postPreviewEmbed.backgroundImage) && q.b(this.spoiler, postPreviewEmbed.spoiler) && this.shouldSpoiler == postPreviewEmbed.shouldSpoiler;
+        return ChannelId.m569equalsimpl0(this.parentChannelId, postPreviewEmbed.parentChannelId) && ChannelId.m569equalsimpl0(this.threadId, postPreviewEmbed.threadId) && MessageId.m595equalsimpl0(this.messageId, postPreviewEmbed.messageId) && GuildId.m582equalsimpl0(this.guildId, postPreviewEmbed.guildId) && q.b(this.title, postPreviewEmbed.title) && q.b(this.ctaText, postPreviewEmbed.ctaText) && this.ctaButtonColor == postPreviewEmbed.ctaButtonColor && q.b(this.footer, postPreviewEmbed.footer) && q.b(this.subtitle, postPreviewEmbed.subtitle) && q.b(this.coverImage, postPreviewEmbed.coverImage) && q.b(this.blurredCoverImage, postPreviewEmbed.blurredCoverImage) && q.b(this.coverImageOverlayText, postPreviewEmbed.coverImageOverlayText) && q.b(this.backgroundImage, postPreviewEmbed.backgroundImage) && q.b(this.spoiler, postPreviewEmbed.spoiler) && this.shouldSpoiler == postPreviewEmbed.shouldSpoiler;
     }
 
     public final String getBackgroundImage() {
@@ -227,7 +227,7 @@ public final class PostPreviewEmbed implements SpoilerableData {
     }
 
     public int hashCode() {
-        int i10 = ((((((((((((((ChannelId.m569hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m569hashCodeimpl(this.threadId)) * 31) + MessageId.m595hashCodeimpl(this.messageId)) * 31) + GuildId.m582hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.ctaButtonColor) * 31) + this.footer.hashCode()) * 31;
+        int i10 = ((((((((((((((ChannelId.m570hashCodeimpl(this.parentChannelId) * 31) + ChannelId.m570hashCodeimpl(this.threadId)) * 31) + MessageId.m596hashCodeimpl(this.messageId)) * 31) + GuildId.m583hashCodeimpl(this.guildId)) * 31) + this.title.hashCode()) * 31) + this.ctaText.hashCode()) * 31) + this.ctaButtonColor) * 31) + this.footer.hashCode()) * 31;
         String str = this.subtitle;
         int i11 = 0;
         int hashCode = (i10 + (str == null ? 0 : str.hashCode())) * 31;
@@ -255,10 +255,10 @@ public final class PostPreviewEmbed implements SpoilerableData {
     }
 
     public String toString() {
-        String str = ChannelId.m571toStringimpl(this.parentChannelId);
-        String str2 = ChannelId.m571toStringimpl(this.threadId);
-        String str3 = MessageId.m596toStringimpl(this.messageId);
-        String str4 = GuildId.m584toStringimpl(this.guildId);
+        String str = ChannelId.m572toStringimpl(this.parentChannelId);
+        String str2 = ChannelId.m572toStringimpl(this.threadId);
+        String str3 = MessageId.m597toStringimpl(this.messageId);
+        String str4 = GuildId.m585toStringimpl(this.guildId);
         String str5 = this.title;
         String str6 = this.ctaText;
         int i10 = this.ctaButtonColor;

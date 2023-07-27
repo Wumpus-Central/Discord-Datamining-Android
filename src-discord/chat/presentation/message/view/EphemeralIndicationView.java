@@ -74,7 +74,7 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     }
 
     
-    public final void m306setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
+    public final void m307setEphemeralIndicationAFFcxXc(String messageId, final EphemeralIndication ephemeralIndication, Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, final Function1<? super String, Unit> onHelpArticleClicked) {
         DraweeSpanStringBuilder spannable;
         q.g(messageId, "messageId");
         q.g(ephemeralIndication, "ephemeralIndication");

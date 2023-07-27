@@ -198,7 +198,7 @@ public final class BundleUpdater {
             q.g(output, "output");
             q.g(serialDesc, "serialDesc");
             output.s(serialDesc, 0, self.name);
-            output.n(serialDesc, 1, new si.f(a2.f26231a), self.tags);
+            output.n(serialDesc, 1, new si.f(a2.f26233a), self.tags);
         }
 
         public final String component1() {

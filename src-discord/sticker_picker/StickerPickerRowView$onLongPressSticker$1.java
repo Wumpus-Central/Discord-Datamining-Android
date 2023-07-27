@@ -18,7 +18,7 @@ final class StickerPickerRowView$onLongPressSticker$1 extends s implements Funct
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

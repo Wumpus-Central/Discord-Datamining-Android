@@ -240,7 +240,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(part, "$part");
         q.g(this$0, "this$0");
         q.g(holder, "$holder");
-        this$0.m195onMediaClickedl3ndGo(holder, part.mo215getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m196onMediaClickedl3ndGo(holder, part.mo216getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     
@@ -253,7 +253,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m185onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m186onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     
@@ -281,7 +281,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m573unboximpl());
+        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m574unboximpl());
     }
 
     
@@ -294,10 +294,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        long j10 = channelId.m573unboximpl();
+        long j10 = channelId.m574unboximpl();
         GuildId guildId = this$0.guildId;
         q.d(guildId);
-        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m586unboximpl());
+        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m587unboximpl());
     }
 
     
@@ -310,7 +310,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         String str = this$0.messageId;
         q.d(str);
-        ChatEventHandler.DefaultImpls.m185onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m186onTapReactionu7_MRrM$default(chatEventHandler, str, null, null, 4, null);
     }
 
     
@@ -325,7 +325,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m573unboximpl());
+        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m574unboximpl());
     }
 
     
@@ -344,7 +344,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     
     
-    public final void m195onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
+    public final void m196onMediaClickedl3ndGo(MessagePartViewHolder messagePartViewHolder, String str, int i10, String str2, Double d10, Integer num, ViewResizeMode viewResizeMode) {
         View itemView = messagePartViewHolder.itemView;
         q.f(itemView, "itemView");
         Point locationInWindow = ViewLocationUtilsKt.getLocationInWindow(itemView);
@@ -489,11 +489,11 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
 
     @SuppressLint({"NotifyDataSetChanged"})
     
-    public final void m196setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
+    public final void m197setItemsbo5iIEc(String messageId, long j10, GuildId guildId, List<? extends MessageAccessory> items) {
         q.g(messageId, "messageId");
         q.g(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m564boximpl(j10);
+        this.channelId = ChannelId.m565boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -649,9 +649,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler3);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str = messageAccessory.mo215getMessageId3Eiw7ao();
+            String str = messageAccessory.mo216getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m340bindJJXpD5M(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
+            ((ReactionsViewHolder) holder).m341bindJJXpD5M(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -817,7 +817,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else {
             throw new ff.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f20664a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f20666a);
     }
 
     @Override 

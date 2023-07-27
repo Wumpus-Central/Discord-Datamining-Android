@@ -65,7 +65,7 @@ public final class NotificationDataUtilsKt {
     public static final JsonObject getAuthor(NotificationData notificationData) {
         q.g(notificationData, "<this>");
         String userAvatar = notificationData.getUserAvatar();
-        UserId userId = notificationData.m535getUserIdwUX8bhU();
+        UserId userId = notificationData.m536getUserIdwUX8bhU();
         String userUsername = notificationData.getUserUsername();
         if (userId == null || userUsername == null) {
             return null;
@@ -74,7 +74,7 @@ public final class NotificationDataUtilsKt {
         if (userAvatar != null) {
             f.c(sVar, "avatar", userAvatar);
         }
-        f.c(sVar, "id", UserId.m635toStringimpl(userId.m637unboximpl()));
+        f.c(sVar, "id", UserId.m636toStringimpl(userId.m638unboximpl()));
         f.c(sVar, "username", userUsername);
         f.c(sVar, "globalName", notificationData.getUserGlobalName());
         f.a(sVar, "incomplete", Boolean.TRUE);
@@ -98,14 +98,14 @@ public final class NotificationDataUtilsKt {
         q.g(notificationData, "<this>");
         q.g(context, "context");
         q.g(notificationDataMap, "notificationDataMap");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m531getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_CALL_RING) || (channelId = notificationData.m532getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        long j10 = channelId.m573unboximpl();
+        long j10 = channelId.m574unboximpl();
         if (z10) {
             v10 = v.v(notificationDataMap);
             v10.put("type", NotificationData.TYPE_CALL_CONNECT);
-            Unit unit = Unit.f20664a;
+            Unit unit = Unit.f20666a;
             pendingIntent = getButtonPendingIntent(notificationData, context, v10);
         } else {
             pendingIntent = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), j10, null), context, 0, false, 6, null);
@@ -135,25 +135,36 @@ public final class NotificationDataUtilsKt {
     public static final CharSequence getContent(NotificationData notificationData, Context context) {
         String subtitle;
         Integer activityType;
+        boolean z10;
+        boolean z11;
+        boolean z12;
+        boolean z13;
+        boolean z14;
         q.g(notificationData, "<this>");
         q.g(context, "context");
         String type = notificationData.getType();
-        boolean z10 = false;
+        boolean z15 = false;
         switch (type.hashCode()) {
             case -1502317553:
-                return (type.equals(NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) && (subtitle = notificationData.getSubtitle()) != null) ? subtitle : "";
+                if (type.equals(NotificationData.TYPE_GENERIC_PUSH_NOTIFICATION_SENT) && (subtitle = notificationData.getSubtitle()) != null) {
+                    return subtitle;
+                }
+                return "";
             case -1489275252:
                 if (!type.equals(NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE)) {
                     return "";
                 }
                 Integer guildScheduledEventEntityType = notificationData.getGuildScheduledEventEntityType();
                 if ((guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 2) || (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 1)) {
-                    z10 = true;
+                    z15 = true;
                 }
-                if (z10) {
+                if (z15) {
                     return I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_STAGE_START_BODY, new NotificationDataUtilsKt$getContent$8(notificationData));
                 }
-                return (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 3) ? I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_EXTERNAL_START_BODY, new NotificationDataUtilsKt$getContent$9(notificationData)) : "";
+                if (guildScheduledEventEntityType != null && guildScheduledEventEntityType.intValue() == 3) {
+                    return I18nUtilsKt.i18nFormat(context, I18nMessage.GUILD_SCHEDULED_EVENT_EXTERNAL_START_BODY, new NotificationDataUtilsKt$getContent$9(notificationData));
+                }
+                return "";
             case -1327124998:
                 if (!type.equals(NotificationData.TYPE_RELATIONSHIP_ADD)) {
                     return "";
@@ -162,24 +173,64 @@ public final class NotificationDataUtilsKt {
                 if (relationshipType != null && relationshipType.intValue() == 1) {
                     return I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_ACCEPTED_FRIEND_REQUEST, null, 2, null);
                 }
-                return (relationshipType != null && relationshipType.intValue() == 3) ? I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_PENDING_FRIEND_REQUEST, null, 2, null) : "";
+                if (relationshipType != null && relationshipType.intValue() == 3) {
+                    return I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_PENDING_FRIEND_REQUEST, null, 2, null);
+                }
+                return "";
             case -1263316859:
-                return !type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_BODY, new NotificationDataUtilsKt$getContent$6(notificationData));
+                if (!type.equals(NotificationData.TYPE_STAGE_INSTANCE_CREATE)) {
+                    return "";
+                }
+                return I18nUtilsKt.i18nFormat(context, I18nMessage.STAGE_START_PUSH_NOTIFICATION_BODY, new NotificationDataUtilsKt$getContent$6(notificationData));
             case -1237752112:
-                return !type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_BODY, new NotificationDataUtilsKt$getContent$5(notificationData));
+                if (!type.equals(NotificationData.TYPE_APPLICATION_LIBRARY_INSTALL_COMPLETE)) {
+                    return "";
+                }
+                return I18nUtilsKt.i18nFormat(context, I18nMessage.GAME_LIBRARY_NOTIFICATION_GAME_INSTALLED_BODY, new NotificationDataUtilsKt$getContent$5(notificationData));
             case -437641071:
-                return !type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_BODY_MOBILE, new NotificationDataUtilsKt$getContent$7(notificationData));
+                if (!type.equals(NotificationData.TYPE_FORUM_THREAD_CREATED)) {
+                    return "";
+                }
+                return I18nUtilsKt.i18nFormat(context, I18nMessage.FORUM_CHANNEL_THREAD_CREATED_PUSH_BODY_MOBILE, new NotificationDataUtilsKt$getContent$7(notificationData));
             case 974015250:
-                return (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) ? I18nUtilsKt.i18nFormat(context, I18nMessage.NOTIFICATION_BODY_START_GAME, new NotificationDataUtilsKt$getContent$3(notificationData)) : "";
+                if (type.equals(NotificationData.TYPE_ACTIVITY_START) && (activityType = notificationData.getActivityType()) != null && activityType.intValue() == 0) {
+                    return I18nUtilsKt.i18nFormat(context, I18nMessage.NOTIFICATION_BODY_START_GAME, new NotificationDataUtilsKt$getContent$3(notificationData));
+                }
+                return "";
             case 998188116:
                 if (!type.equals(NotificationData.TYPE_MESSAGE_CREATE)) {
                     return "";
                 }
                 Integer channelType = notificationData.getChannelType();
-                if ((((((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) || (channelType != null && channelType.intValue() == 5)) || (channelType != null && channelType.intValue() == 10)) || (channelType != null && channelType.intValue() == 11)) || (channelType != null && channelType.intValue() == 12)) {
+                if ((channelType != null && channelType.intValue() == 0) || (channelType != null && channelType.intValue() == 2)) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                if (!z10 && (channelType == null || channelType.intValue() != 5)) {
+                    z11 = false;
+                } else {
+                    z11 = true;
+                }
+                if (!z11 && (channelType == null || channelType.intValue() != 10)) {
+                    z12 = false;
+                } else {
+                    z12 = true;
+                }
+                if (!z12 && (channelType == null || channelType.intValue() != 11)) {
+                    z13 = false;
+                } else {
+                    z13 = true;
+                }
+                if (!z13 && (channelType == null || channelType.intValue() != 12)) {
+                    z14 = false;
+                } else {
+                    z14 = true;
+                }
+                if (z14) {
                     Integer messageType = notificationData.getMessageType();
                     if (messageType != null && messageType.intValue() == 7) {
-                        return m550getSystemMessageUserJoin_NTlnE(context, notificationData.m535getUserIdwUX8bhU(), notificationData.getUserUsername());
+                        return m551getSystemMessageUserJoin_NTlnE(context, notificationData.m536getUserIdwUX8bhU(), notificationData.getUserUsername());
                     }
                     Integer messageActivityType = notificationData.getMessageActivityType();
                     if (messageActivityType != null && messageActivityType.intValue() == 1) {
@@ -188,9 +239,9 @@ public final class NotificationDataUtilsKt {
                     return renderMessageContent(notificationData, context);
                 }
                 if ((channelType != null && channelType.intValue() == 3) || (channelType != null && channelType.intValue() == 1)) {
-                    z10 = true;
+                    z15 = true;
                 }
-                if (!z10) {
+                if (!z15) {
                     return "";
                 }
                 Integer messageActivityType2 = notificationData.getMessageActivityType();
@@ -199,7 +250,10 @@ public final class NotificationDataUtilsKt {
                 }
                 return renderMessageContent(notificationData, context);
             case 1770025841:
-                return !type.equals(NotificationData.TYPE_CALL_RING) ? "" : I18nUtilsKt.i18nFormat(context, I18nMessage.OVERLAY_FRIEND_CALLING, new NotificationDataUtilsKt$getContent$4(notificationData));
+                if (!type.equals(NotificationData.TYPE_CALL_RING)) {
+                    return "";
+                }
+                return I18nUtilsKt.i18nFormat(context, I18nMessage.OVERLAY_FRIEND_CALLING, new NotificationDataUtilsKt$getContent$4(notificationData));
             default:
                 return "";
         }
@@ -272,10 +326,10 @@ public final class NotificationDataUtilsKt {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m531getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || (channelId = notificationData.m532getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m573unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).e(true).h(1).i(false).b();
+        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), channelId.m574unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).a(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).e(true).h(1).i(false).b();
     }
 
     public static final String getGroupKey(NotificationData notificationData) {
@@ -302,7 +356,7 @@ public final class NotificationDataUtilsKt {
         q.g(notificationData, "<this>");
         q.g(context, "context");
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
-        String str2 = IconUrlUtils.m459getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m532getGuildIdqOKuAAo(), notificationData.m535getUserIdwUX8bhU(), null, false, 24, null);
+        String str2 = IconUrlUtils.m460getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m533getGuildIdqOKuAAo(), notificationData.m536getUserIdwUX8bhU(), null, false, 24, null);
         if (str2.length() == 0) {
             z10 = true;
         } else {
@@ -311,7 +365,7 @@ public final class NotificationDataUtilsKt {
         if (!z10) {
             return str2;
         }
-        str = iconUrlUtils.m465getForUser_fRzTXg(context, notificationData.m535getUserIdwUX8bhU(), notificationData.getUserAvatar(), (r16 & 8) != 0 ? null : notificationData.getUserDiscriminator(), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
+        str = iconUrlUtils.m466getForUser_fRzTXg(context, notificationData.m536getUserIdwUX8bhU(), notificationData.getUserAvatar(), (r16 & 8) != 0 ? null : notificationData.getUserDiscriminator(), (r16 & 16) != 0 ? false : false, (r16 & 32) != 0 ? null : null);
         return str;
     }
 
@@ -323,8 +377,8 @@ public final class NotificationDataUtilsKt {
         List d11;
         List m02;
         q.g(notificationData, "<this>");
-        String str2 = notificationData.m533getMessageIdN_6c4I0();
-        ChannelId channelId = notificationData.m531getChannelIdqMVnFVQ();
+        String str2 = notificationData.m534getMessageIdN_6c4I0();
+        ChannelId channelId = notificationData.m532getChannelIdqMVnFVQ();
         if (!(str2 == null || channelId == null || !q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE))) {
             NotificationMessage message = notificationData.getMessage();
             if (str == null || message == null) {
@@ -334,16 +388,16 @@ public final class NotificationDataUtilsKt {
                 } else {
                     h10 = j.h();
                     d10 = i.d(author);
-                    return new KvMessageEntry(h10, d10, notificationMessage, str2, channelId.m573unboximpl(), null);
+                    return new KvMessageEntry(h10, d10, notificationMessage, str2, channelId.m574unboximpl(), null);
                 }
             } else {
-                JsonElement g10 = Json.f21165d.g(str);
+                JsonElement g10 = Json.f21167d.g(str);
                 h11 = j.h();
                 JsonObject author2 = message.getAuthor();
                 q.d(author2);
                 d11 = i.d(author2);
                 m02 = r.m0(d11, message.getMentions());
-                return new KvMessageEntry(h11, m02, g.m(g10), str2, channelId.m573unboximpl(), null);
+                return new KvMessageEntry(h11, m02, g.m(g10), str2, channelId.m574unboximpl(), null);
             }
         }
         return null;
@@ -353,11 +407,11 @@ public final class NotificationDataUtilsKt {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m531getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (channelId = notificationData.m532getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        long j10 = channelId.m573unboximpl();
-        String str = notificationData.m533getMessageIdN_6c4I0();
+        long j10 = channelId.m574unboximpl();
+        String str = notificationData.m534getMessageIdN_6c4I0();
         if (str == null) {
             return null;
         }
@@ -401,7 +455,7 @@ public final class NotificationDataUtilsKt {
         q.g(notificationData, "<this>");
         q.g(context, "context");
         q.g(notificationDataMap, "notificationDataMap");
-        String valueOf = String.valueOf(notificationData.m531getChannelIdqMVnFVQ());
+        String valueOf = String.valueOf(notificationData.m532getChannelIdqMVnFVQ());
         CharSequence title = getTitle(notificationData, context);
         CharSequence title2 = getTitle(notificationData, context);
         Intent createShortcutIntent = ShortcutData.Companion.createShortcutIntent(context, "android.intent.action.VIEW", NotificationAction.Companion.getActivityClass(), getTag(notificationData), notificationDataMap);
@@ -442,12 +496,12 @@ public final class NotificationDataUtilsKt {
     }
 
     
-    private static final CharSequence m550getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
+    private static final CharSequence m551getSystemMessageUserJoin_NTlnE(Context context, UserId userId, String str) {
         List k10;
         long j10;
         k10 = j.k(I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_001, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_002, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_003, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_004, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_005, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_006, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_007, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_008, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_009, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_010, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_011, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_012, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_013);
         if (userId != null) {
-            j10 = userId.m637unboximpl();
+            j10 = userId.m638unboximpl();
         } else {
             j10 = 0;
         }
@@ -471,10 +525,10 @@ public final class NotificationDataUtilsKt {
         ChannelId channelId;
         q.g(notificationData, "<this>");
         q.g(context, "context");
-        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || (channelId = notificationData.m531getChannelIdqMVnFVQ()) == null) {
+        if (!q.b(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || (channelId = notificationData.m532getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m532getGuildIdqOKuAAo(), channelId.m573unboximpl(), null), context, 0, false, 6, null)).b();
+        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m533getGuildIdqOKuAAo(), channelId.m574unboximpl(), null), context, 0, false, 6, null)).b();
     }
 
     public static final CharSequence getTitle(NotificationData notificationData, Context context) {
@@ -658,9 +712,9 @@ public final class NotificationDataUtilsKt {
         String messageContent = notificationData.getMessageContent();
         Long messageFlags = notificationData.getMessageFlags();
         Integer messageType = notificationData.getMessageType();
-        String str = notificationData.m533getMessageIdN_6c4I0();
-        ChannelId channelId = notificationData.m531getChannelIdqMVnFVQ();
-        GuildId guildId = notificationData.m532getGuildIdqOKuAAo();
+        String str = notificationData.m534getMessageIdN_6c4I0();
+        ChannelId channelId = notificationData.m532getChannelIdqMVnFVQ();
+        GuildId guildId = notificationData.m533getGuildIdqOKuAAo();
         if (messageContent == null || messageType == null || str == null || channelId == null) {
             return null;
         }
@@ -669,12 +723,12 @@ public final class NotificationDataUtilsKt {
         f.c(sVar, "content", messageContent);
         f.b(sVar, "flags", messageFlags);
         f.b(sVar, "type", notificationData.getMessageType());
-        f.c(sVar, "id", MessageId.m596toStringimpl(str));
-        f.c(sVar, "channel_id", ChannelId.m571toStringimpl(channelId.m573unboximpl()));
+        f.c(sVar, "id", MessageId.m597toStringimpl(str));
+        f.c(sVar, "channel_id", ChannelId.m572toStringimpl(channelId.m574unboximpl()));
         f.c(sVar, "timestamp", format);
         sVar.b("author", author);
         if (guildId != null) {
-            f.c(sVar, "guild_id", GuildId.m584toStringimpl(guildId.m586unboximpl()));
+            f.c(sVar, "guild_id", GuildId.m585toStringimpl(guildId.m587unboximpl()));
         }
         return sVar.a();
     }

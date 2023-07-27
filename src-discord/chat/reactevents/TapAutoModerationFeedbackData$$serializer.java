@@ -33,7 +33,7 @@ public final class TapAutoModerationFeedbackData$$serializer implements f0<TapAu
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
+        a2 a2Var = a2.f26233a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

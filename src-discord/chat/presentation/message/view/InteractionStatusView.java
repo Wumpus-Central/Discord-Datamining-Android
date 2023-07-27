@@ -52,7 +52,7 @@ public final class InteractionStatusView extends ConstraintLayout {
     }
 
     
-    public final void m312setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
+    public final void m313setInteractionStatusntcYbpo(String messageId, InteractionStatus interactionStatus) {
         int i10;
         DraweeSpanStringBuilder spannable;
         int i11;

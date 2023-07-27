@@ -48,7 +48,7 @@ public final class PNGStickerView extends SimpleDraweeView {
         int i10;
         q.g(url, "url");
         setImageURI(url);
-        getHierarchy().t(ScalingUtils.ScaleType.f7394e);
+        getHierarchy().t(ScalingUtils.ScaleType.f7396e);
         getHierarchy().z(this.placeholder);
         int i11 = ViewDefaults.NUMBER_OF_LINES;
         if (num != null) {

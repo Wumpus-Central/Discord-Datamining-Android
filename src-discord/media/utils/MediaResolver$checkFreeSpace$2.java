@@ -35,7 +35,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20664a);
+        return ((MediaResolver$checkFreeSpace$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f20666a);
     }
 
     @Override 
@@ -78,7 +78,7 @@ public final class MediaResolver$checkFreeSpace$2 extends k implements Function2
                     }
                 }
             }
-            return Unit.f20664a;
+            return Unit.f20666a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

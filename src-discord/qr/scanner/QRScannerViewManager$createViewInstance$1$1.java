@@ -26,7 +26,7 @@ public final class QRScannerViewManager$createViewInstance$1$1 extends s impleme
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

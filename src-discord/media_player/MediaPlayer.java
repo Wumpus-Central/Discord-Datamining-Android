@@ -471,9 +471,9 @@ public final class MediaPlayer {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9155d.isEmpty()) {
+                if (!loadEventInfo.f9157d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9158g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9160g);
                 }
             }
 
@@ -482,9 +482,9 @@ public final class MediaPlayer {
                 q.g(eventTime, "eventTime");
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
-                if (!loadEventInfo.f9155d.isEmpty()) {
+                if (!loadEventInfo.f9157d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9158g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9160g);
                 }
             }
 
@@ -494,9 +494,9 @@ public final class MediaPlayer {
                 q.g(loadEventInfo, "loadEventInfo");
                 q.g(mediaLoadData, "mediaLoadData");
                 q.g(error, "error");
-                if (!loadEventInfo.f9155d.isEmpty()) {
+                if (!loadEventInfo.f9157d.isEmpty()) {
                     DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9158g);
+                    companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f9160g);
                 }
             }
 

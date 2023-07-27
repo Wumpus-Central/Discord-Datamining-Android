@@ -103,7 +103,7 @@ public final class HeadlessTasks {
     }
 
     static {
-        int i10 = HeadlessTasksService.f7194k;
+        int i10 = HeadlessTasksService.f7196k;
     }
 
     public HeadlessTasks(HeadlessJsTaskConfig taskConfig) {

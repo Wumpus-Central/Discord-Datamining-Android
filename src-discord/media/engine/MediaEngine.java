@@ -430,7 +430,7 @@ public final class MediaEngine {
             return null;
         }
         connection.configureConnectionRetries(i11, i12, i13);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final void connectionInstanceDestroy$media_engine_release(int i10) {
@@ -445,7 +445,7 @@ public final class MediaEngine {
             return null;
         }
         connection.destroyUser(userId);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceGetEncryptionModes$media_engine_release(int i10, final Function1<? super String[], Unit> callback) {
@@ -460,7 +460,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetEncryptionModes$lambda$54(Function1.this, strArr);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceGetFilteredStats$media_engine_release(int i10, int i11, final Function1<? super String, Unit> callback) {
@@ -475,7 +475,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetFilteredStats$lambda$56(Function1.this, str);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceGetStats$media_engine_release(int i10, final Function1<? super String, Unit> callback) {
@@ -490,7 +490,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceGetStats$lambda$55(Function1.this, str);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceMergeUsers$media_engine_release(int i10, String usersJSON) {
@@ -500,7 +500,7 @@ public final class MediaEngine {
             return null;
         }
         connection.mergeUsers(usersJSON);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetLocalMute$media_engine_release(int i10, String userId, boolean z10) {
@@ -510,7 +510,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setLocalMute(userId, z10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetLocalPan$media_engine_release(int i10, String userId, float f10, float f11) {
@@ -520,7 +520,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setLocalPan(userId, f10, f11);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetLocalVolume$media_engine_release(int i10, String userId, float f10) {
@@ -530,7 +530,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setLocalVolume(userId, f10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetMinimumOutputDelay$media_engine_release(int i10, int i11) {
@@ -539,7 +539,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setMinimumOutputDelay(i11);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetNoInputThreshold$media_engine_release(int i10, float f10) {
@@ -548,7 +548,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setNoInputThreshold(f10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetOnFirstFrameCallback$media_engine_release(int i10, final Function3<? super String, ? super Long, ? super String, Unit> cb2) {
@@ -563,7 +563,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnFirstFrameCallback$lambda$50(Function3.this, str, j10, str2);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetOnPingCallback$media_engine_release(int i10, final Function4<? super Integer, ? super String, ? super Integer, ? super Integer, Unit> cb2) {
@@ -578,7 +578,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnPingCallback$lambda$48(Function4.this, i11, str, i12, i13);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetOnPingTimeoutCallback$media_engine_release(int i10, final Function4<? super String, ? super Integer, ? super Integer, ? super Integer, Unit> cb2) {
@@ -593,7 +593,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnPingTimeoutCallback$lambda$49(Function4.this, str, i11, i12, i13);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetOnSpeakingCallback$media_engine_release(int i10, final Function2<? super String, ? super Integer, Unit> cb2) {
@@ -608,7 +608,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnSpeakingCallback$lambda$47(Function2.this, str, i11);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetOnVideoCallback$media_engine_release(int i10, final Function4<? super String, ? super Long, ? super String, ? super String, Unit> cb2) {
@@ -623,7 +623,7 @@ public final class MediaEngine {
                 MediaEngine.connectionInstanceSetOnVideoCallback$lambda$51(Function4.this, str, j10, str2, str3);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetPTTActive$media_engine_release(int i10, boolean z10, boolean z11) {
@@ -632,7 +632,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setPTTActive(z10, z11);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetPingInterval$media_engine_release(int i10, int i11) {
@@ -641,7 +641,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setPingInterval(i11);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetSelfDeafen$media_engine_release(int i10, boolean z10) {
@@ -650,7 +650,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setSelfDeafen(z10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetSelfMute$media_engine_release(int i10, boolean z10) {
@@ -659,7 +659,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setSelfMute(z10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetTransportOptions$media_engine_release(int i10, String optionsJSON) {
@@ -669,7 +669,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setTransportOptions(optionsJSON);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit connectionInstanceSetVideoBroadcast$media_engine_release(int i10, boolean z10) {
@@ -678,7 +678,7 @@ public final class MediaEngine {
             return null;
         }
         connection.setVideoBroadcast(z10);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final void connectionInstanceStartBroadcast$media_engine_release(int i10, Intent permissions) {
@@ -1103,7 +1103,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceGetEncryptionModes$lambda$61(Function1.this, strArr);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceGetNetworkOverhead$media_engine_release(int i10, final Function1<? super Integer, Unit> callback) {
@@ -1118,7 +1118,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceGetNetworkOverhead$lambda$62(Function1.this, i11);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceSetOnPingCallback$media_engine_release(int i10, final Function4<? super Integer, ? super String, ? super Integer, ? super Integer, Unit> cb2) {
@@ -1133,7 +1133,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceSetOnPingCallback$lambda$59(Function4.this, i11, str, i12, i13);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceSetOnPingTimeoutCallback$media_engine_release(int i10, final Function4<? super String, ? super Integer, ? super Integer, ? super Integer, Unit> cb2) {
@@ -1148,7 +1148,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceSetOnPingTimeoutCallback$lambda$60(Function4.this, str, i11, i12, i13);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceSetPingInterval$media_engine_release(int i10, int i11) {
@@ -1157,7 +1157,7 @@ public final class MediaEngine {
             return null;
         }
         speedTestConnection.setPingInterval(i11);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceSetTransportOptions$media_engine_release(int i10, String optionsJSON) {
@@ -1167,7 +1167,7 @@ public final class MediaEngine {
             return null;
         }
         speedTestConnection.setTransportOptions(optionsJSON);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceStartSpeedTestReceiver$media_engine_release(int i10, String optionsJSON, final Function0<Unit> callback) {
@@ -1183,7 +1183,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStartSpeedTestReceiver$lambda$64(Function0.this);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceStartSpeedTestSender$media_engine_release(int i10, String optionsJSON, final Function2<? super Integer, ? super String, Unit> callback) {
@@ -1199,7 +1199,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStartSpeedTestSender$lambda$63(Function2.this, i11, str);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceStopSpeedTestReceiver$media_engine_release(int i10, final Function2<? super Integer, ? super String, Unit> callback) {
@@ -1214,7 +1214,7 @@ public final class MediaEngine {
                 MediaEngine.speedTestConnectionInstanceStopSpeedTestReceiver$lambda$65(Function2.this, i11, str);
             }
         });
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final Unit speedTestConnectionInstanceStopSpeedTestSender$media_engine_release(int i10) {
@@ -1223,7 +1223,7 @@ public final class MediaEngine {
             return null;
         }
         speedTestConnection.stopSpeedTestSender();
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     public final void startLocalAudioRecording$media_engine_release(String optionsJSON, final Function1<? super Boolean, Unit> callback) {

@@ -29,18 +29,18 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26231a};
+        return new KSerializer[]{a2.f26233a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return MessageId.m590boximpl(m599deserializeMpY7Jxs(decoder));
+        return MessageId.m591boximpl(m600deserializeMpY7Jxs(decoder));
     }
 
     
-    public String m599deserializeMpY7Jxs(Decoder decoder) {
+    public String m600deserializeMpY7Jxs(Decoder decoder) {
         q.g(decoder, "decoder");
-        return MessageId.m591constructorimpl(decoder.z(getDescriptor()).n());
+        return MessageId.m592constructorimpl(decoder.z(getDescriptor()).n());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class MessageId$$serializer implements f0<MessageId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m600serializeAyv7vGE(encoder, ((MessageId) obj).m598unboximpl());
+        m601serializeAyv7vGE(encoder, ((MessageId) obj).m599unboximpl());
     }
 
     
-    public void m600serializeAyv7vGE(Encoder encoder, String value) {
+    public void m601serializeAyv7vGE(Encoder encoder, String value) {
         q.g(encoder, "encoder");
         q.g(value, "value");
         Encoder y10 = encoder.y(getDescriptor());

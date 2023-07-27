@@ -39,7 +39,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f26231a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, a.u(a2.f26233a)};
     }
 
     @Override 
@@ -55,7 +55,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
         if (c10.y()) {
             obj3 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             obj = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, null);
-            obj2 = c10.v(descriptor2, 2, a2.f26231a, null);
+            obj2 = c10.v(descriptor2, 2, a2.f26233a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -74,7 +74,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
                     obj5 = c10.m(descriptor2, 1, ChannelId$$serializer.INSTANCE, obj5);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj4 = c10.v(descriptor2, 2, a2.f26231a, obj4);
+                    obj4 = c10.v(descriptor2, 2, a2.f26233a, obj4);
                     i11 |= 4;
                 } else {
                     throw new n(x10);
@@ -87,7 +87,7 @@ public final class HandleSurveyMessage$$serializer implements f0<HandleSurveyMes
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj3;
         if (messageId != null) {
-            str = messageId.m598unboximpl();
+            str = messageId.m599unboximpl();
         }
         return new HandleSurveyMessage(i10, str, (ChannelId) obj, (String) obj2, null, null);
     }

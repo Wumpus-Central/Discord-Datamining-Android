@@ -94,7 +94,7 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onFoundUser;
         byte[] n10 = message.n();
         q.f(n10, "message.content");
-        function1.invoke(new String(n10, ji.d.f19884b));
+        function1.invoke(new String(n10, ji.d.f19886b));
     }
 
     @Override 
@@ -104,12 +104,12 @@ public final class NearbyManager extends b {
         Function1<String, Unit> function1 = this.onLostUser;
         byte[] n10 = message.n();
         q.f(n10, "message.content");
-        function1.invoke(new String(n10, ji.d.f19884b));
+        function1.invoke(new String(n10, ji.d.f19886b));
     }
 
     public final void setOutboundMessage(String message) {
         q.g(message, "message");
-        byte[] bytes = message.getBytes(ji.d.f19884b);
+        byte[] bytes = message.getBytes(ji.d.f19886b);
         q.f(bytes, "this as java.lang.String).getBytes(charset)");
         this.outboundMessage = new Message(bytes);
     }

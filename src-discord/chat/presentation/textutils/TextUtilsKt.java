@@ -148,7 +148,7 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7394e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7396e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
         a10.u(a.EnumC0112a.BITMAP_ONLY);

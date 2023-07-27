@@ -1,25 +1,24 @@
 package com.discord.bridge;
 
-import com.discord.safearea.SafeAreaProviderManager;
+import com.discord.safearea.SafeAreaManagerModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.uimanager.LayoutShadowNode;
-import com.facebook.react.uimanager.ViewManager;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.q;
 import kotlin.jvm.internal.s;
 
-@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lcom/facebook/react/uimanager/ViewManager;", "Lcom/facebook/react/uimanager/LayoutShadowNode;", "it", "Lcom/facebook/react/bridge/ReactApplicationContext;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 
-final class DCDPackageList$getPackages$69 extends s implements Function1<ReactApplicationContext, ViewManager<?, LayoutShadowNode>> {
+final class DCDPackageList$getPackages$69 extends s implements Function1<ReactApplicationContext, ReactContextBaseJavaModule> {
     public static final DCDPackageList$getPackages$69 INSTANCE = new DCDPackageList$getPackages$69();
 
     DCDPackageList$getPackages$69() {
         super(1);
     }
 
-    public final ViewManager<?, LayoutShadowNode> invoke(ReactApplicationContext it) {
-        q.g(it, "it");
-        return new SafeAreaProviderManager();
+    public final ReactContextBaseJavaModule invoke(ReactApplicationContext reactContext) {
+        q.g(reactContext, "reactContext");
+        return new SafeAreaManagerModule(reactContext);
     }
 }

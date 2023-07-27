@@ -41,8 +41,8 @@ public final class ChatScrollPositionEvent$$serializer implements f0<ChatScrollP
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        h hVar = h.f26273a;
-        m0 m0Var = m0.f26306a;
+        h hVar = h.f26275a;
+        m0 m0Var = m0.f26308a;
         return new KSerializer[]{hVar, hVar, hVar, hVar, hVar, hVar, hVar, m0Var, m0Var};
     }
 

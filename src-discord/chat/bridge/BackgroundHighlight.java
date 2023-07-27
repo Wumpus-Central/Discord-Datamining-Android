@@ -77,13 +77,13 @@ public final class BackgroundHighlight {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, m0.f26306a, self.backgroundColor);
+            output.z(serialDesc, 0, m0.f26308a, self.backgroundColor);
         }
         if (output.w(serialDesc, 1) || self.gutterColor != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 1, m0.f26306a, self.gutterColor);
+            output.z(serialDesc, 1, m0.f26308a, self.gutterColor);
         }
     }
 

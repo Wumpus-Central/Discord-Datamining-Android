@@ -40,7 +40,7 @@ public final class ActorHook {
             n1.b(i10, 3, ActorHook$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.userId = userId.m637unboximpl();
+        this.userId = userId.m638unboximpl();
     }
 
     public  ActorHook(int i10, String str, UserId userId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -67,7 +67,7 @@ public final class ActorHook {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         output.s(serialDesc, 0, self.action);
-        output.n(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m628boximpl(self.userId));
+        output.n(serialDesc, 1, UserId$$serializer.INSTANCE, UserId.m629boximpl(self.userId));
     }
 
     public final String component1() {
@@ -93,7 +93,7 @@ public final class ActorHook {
             return false;
         }
         ActorHook actorHook = (ActorHook) obj;
-        return q.b(this.action, actorHook.action) && UserId.m632equalsimpl0(this.userId, actorHook.userId);
+        return q.b(this.action, actorHook.action) && UserId.m633equalsimpl0(this.userId, actorHook.userId);
     }
 
     public final String getAction() {
@@ -106,12 +106,12 @@ public final class ActorHook {
     }
 
     public int hashCode() {
-        return (this.action.hashCode() * 31) + UserId.m633hashCodeimpl(this.userId);
+        return (this.action.hashCode() * 31) + UserId.m634hashCodeimpl(this.userId);
     }
 
     public String toString() {
         String str = this.action;
-        String str2 = UserId.m635toStringimpl(this.userId);
+        String str2 = UserId.m636toStringimpl(this.userId);
         return "ActorHook(action=" + str + ", userId=" + str2 + ")";
     }
 

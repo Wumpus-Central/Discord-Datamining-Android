@@ -156,7 +156,7 @@ public final class MessageItem extends ChatListItem {
 
     
     public MessageItem(Message message, MessageFrame messageFrame, MessageContext messageContext, boolean z10, boolean z11, BackgroundHighlight backgroundHighlight, Integer num, boolean z12) {
-        super(MessageId.m596toStringimpl(message.m16getId3Eiw7ao()), null);
+        super(MessageId.m597toStringimpl(message.m16getId3Eiw7ao()), null);
         q.g(message, "message");
         q.g(messageContext, "messageContext");
         this.message = message;

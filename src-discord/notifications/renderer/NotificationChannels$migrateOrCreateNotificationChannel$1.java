@@ -19,7 +19,7 @@ final class NotificationChannels$migrateOrCreateNotificationChannel$1 extends s 
     @Override 
     public   Unit invoke(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         invoke2(notificationChannelCompat, builder);
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 
     

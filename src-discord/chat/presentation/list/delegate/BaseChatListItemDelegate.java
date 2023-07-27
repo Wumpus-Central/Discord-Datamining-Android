@@ -35,7 +35,7 @@ public abstract class BaseChatListItemDelegate<T extends ChatListItem, V extends
         @Override 
         public   Unit invoke(Object obj) {
             invoke((AnonymousClass1) ((View) obj));
-            return Unit.f20664a;
+            return Unit.f20666a;
         }
 
         public final void invoke(V v10) {

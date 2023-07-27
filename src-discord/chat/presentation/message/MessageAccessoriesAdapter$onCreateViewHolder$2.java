@@ -20,14 +20,14 @@ public  class MessageAccessoriesAdapter$onCreateViewHolder$2 extends n implement
 
     @Override 
     public   Unit invoke(Sticker sticker, MessageId messageId) {
-        m207invokeAyv7vGE(sticker, messageId.m598unboximpl());
-        return Unit.f20664a;
+        m208invokeAyv7vGE(sticker, messageId.m599unboximpl());
+        return Unit.f20666a;
     }
 
     
-    public final void m207invokeAyv7vGE(Sticker p02, String p12) {
+    public final void m208invokeAyv7vGE(Sticker p02, String p12) {
         q.g(p02, "p0");
         q.g(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo179onWelcomeReplyClickedAyv7vGE(p02, p12);
+        ((ChatEventHandler) this.receiver).mo180onWelcomeReplyClickedAyv7vGE(p02, p12);
     }
 }

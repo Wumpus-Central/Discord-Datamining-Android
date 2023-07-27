@@ -111,7 +111,7 @@ public final class EmbedAuthor {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 1, a2.f26231a, self.url);
+            output.z(serialDesc, 1, a2.f26233a, self.url);
         }
         if (!output.w(serialDesc, 2) && self.iconURL == null) {
             z11 = false;
@@ -119,13 +119,13 @@ public final class EmbedAuthor {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, a2.f26231a, self.iconURL);
+            output.z(serialDesc, 2, a2.f26233a, self.iconURL);
         }
         if (output.w(serialDesc, 3) || self.iconProxyURL != null) {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 3, a2.f26231a, self.iconProxyURL);
+            output.z(serialDesc, 3, a2.f26233a, self.iconProxyURL);
         }
     }
 

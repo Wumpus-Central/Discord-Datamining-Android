@@ -65,7 +65,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
         }
 
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20664a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20666a);
         }
 
         
@@ -99,7 +99,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20664a);
+        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20666a);
     }
 
     @Override 
@@ -119,6 +119,6 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
         } else {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        return Unit.f20664a;
+        return Unit.f20666a;
     }
 }

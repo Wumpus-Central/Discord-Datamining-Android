@@ -80,7 +80,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public static final void configure$lambda$7$lambda$5(ChatEventHandler eventHandler, Message message, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(message, "$message");
-        ChatEventHandler.DefaultImpls.m185onTapReactionu7_MRrM$default(eventHandler, message.m16getId3Eiw7ao(), null, null, 4, null);
+        ChatEventHandler.DefaultImpls.m186onTapReactionu7_MRrM$default(eventHandler, message.m16getId3Eiw7ao(), null, null, 4, null);
     }
 
     

@@ -59,7 +59,7 @@ public final class Summary {
         this.startId = str4;
         this.endId = str5;
         this.count = i11;
-        this.channelId = channelId.m573unboximpl();
+        this.channelId = channelId.m574unboximpl();
     }
 
     public  Summary(int i10, String str, String str2, String str3, List list, String str4, String str5, int i11, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -79,10 +79,10 @@ public final class Summary {
         output.s(serialDesc, 2, self.summShort);
         output.n(serialDesc, 3, new si.f(UserId$$serializer.INSTANCE), self.people);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        output.n(serialDesc, 4, messageId$$serializer, MessageId.m590boximpl(self.startId));
-        output.n(serialDesc, 5, messageId$$serializer, MessageId.m590boximpl(self.endId));
+        output.n(serialDesc, 4, messageId$$serializer, MessageId.m591boximpl(self.startId));
+        output.n(serialDesc, 5, messageId$$serializer, MessageId.m591boximpl(self.endId));
         output.q(serialDesc, 6, self.count);
-        output.n(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m564boximpl(self.channelId));
+        output.n(serialDesc, 7, ChannelId$$serializer.INSTANCE, ChannelId.m565boximpl(self.channelId));
     }
 
     public final String component1() {
@@ -139,7 +139,7 @@ public final class Summary {
             return false;
         }
         Summary summary = (Summary) obj;
-        return q.b(this.f6890id, summary.f6890id) && q.b(this.topic, summary.topic) && q.b(this.summShort, summary.summShort) && q.b(this.people, summary.people) && MessageId.m594equalsimpl0(this.startId, summary.startId) && MessageId.m594equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m568equalsimpl0(this.channelId, summary.channelId);
+        return q.b(this.f6890id, summary.f6890id) && q.b(this.topic, summary.topic) && q.b(this.summShort, summary.summShort) && q.b(this.people, summary.people) && MessageId.m595equalsimpl0(this.startId, summary.startId) && MessageId.m595equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m569equalsimpl0(this.channelId, summary.channelId);
     }
 
     
@@ -178,7 +178,7 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f6890id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m595hashCodeimpl(this.startId)) * 31) + MessageId.m595hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m569hashCodeimpl(this.channelId);
+        return (((((((((((((this.f6890id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m596hashCodeimpl(this.startId)) * 31) + MessageId.m596hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m570hashCodeimpl(this.channelId);
     }
 
     public String toString() {
@@ -186,10 +186,10 @@ public final class Summary {
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
-        String str4 = MessageId.m596toStringimpl(this.startId);
-        String str5 = MessageId.m596toStringimpl(this.endId);
+        String str4 = MessageId.m597toStringimpl(this.startId);
+        String str5 = MessageId.m597toStringimpl(this.endId);
         int i10 = this.count;
-        String str6 = ChannelId.m571toStringimpl(this.channelId);
+        String str6 = ChannelId.m572toStringimpl(this.channelId);
         return "Summary(id=" + str + ", topic=" + str2 + ", summShort=" + str3 + ", people=" + list + ", startId=" + str4 + ", endId=" + str5 + ", count=" + i10 + ", channelId=" + str6 + ")";
     }
 

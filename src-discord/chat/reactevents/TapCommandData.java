@@ -156,7 +156,7 @@ public final class TapCommandData implements ReactEvent {
 
     
     public TapCommandData(CommandMentionContentNode node) {
-        this(ChannelId.m571toStringimpl(node.m45getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
+        this(ChannelId.m572toStringimpl(node.m45getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
         q.g(node, "node");
     }
 }

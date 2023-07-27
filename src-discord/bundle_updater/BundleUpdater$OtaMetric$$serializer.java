@@ -37,7 +37,7 @@ public final class BundleUpdater$OtaMetric$$serializer implements f0<BundleUpdat
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26231a;
+        a2 a2Var = a2.f26233a;
         return new KSerializer[]{a2Var, new f(a2Var)};
     }
 
@@ -51,7 +51,7 @@ public final class BundleUpdater$OtaMetric$$serializer implements f0<BundleUpdat
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
             str = c10.t(descriptor2, 0);
-            obj = c10.m(descriptor2, 1, new f(a2.f26231a), null);
+            obj = c10.m(descriptor2, 1, new f(a2.f26233a), null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -66,7 +66,7 @@ public final class BundleUpdater$OtaMetric$$serializer implements f0<BundleUpdat
                     str = c10.t(descriptor2, 0);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj2 = c10.m(descriptor2, 1, new f(a2.f26231a), obj2);
+                    obj2 = c10.m(descriptor2, 1, new f(a2.f26233a), obj2);
                     i11 |= 2;
                 } else {
                     throw new n(x10);
