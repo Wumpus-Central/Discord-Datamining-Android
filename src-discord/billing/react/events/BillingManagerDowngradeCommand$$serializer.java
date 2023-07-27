@@ -32,7 +32,7 @@ public final class BillingManagerDowngradeCommand$$serializer implements f0<Bill
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{m0.f26308a};
+        return new KSerializer[]{m0.f26312a};
     }
 
     @Override 

@@ -54,7 +54,7 @@ public final class TapButtonActionComponent implements ReactEvent {
         this.messageId = str;
         this.messageFlags = d10;
         this.customId = str2;
-        this.applicationId = applicationId.m561unboximpl();
+        this.applicationId = applicationId.m562unboximpl();
         this.indices = iArr;
     }
 
@@ -71,7 +71,7 @@ public final class TapButtonActionComponent implements ReactEvent {
     }
 
     
-    public static  TapButtonActionComponent m369copyNkFJqEg$default(TapButtonActionComponent tapButtonActionComponent, String str, double d10, String str2, long j10, int[] iArr, int i10, Object obj) {
+    public static  TapButtonActionComponent m370copyNkFJqEg$default(TapButtonActionComponent tapButtonActionComponent, String str, double d10, String str2, long j10, int[] iArr, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapButtonActionComponent.messageId;
         }
@@ -87,22 +87,22 @@ public final class TapButtonActionComponent implements ReactEvent {
         if ((i10 & 16) != 0) {
             iArr = tapButtonActionComponent.indices;
         }
-        return tapButtonActionComponent.m372copyNkFJqEg(str, d10, str2, j10, iArr);
+        return tapButtonActionComponent.m373copyNkFJqEg(str, d10, str2, j10, iArr);
     }
 
     public static final void write$Self(TapButtonActionComponent self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m591boximpl(self.messageId));
+        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m592boximpl(self.messageId));
         output.B(serialDesc, 1, self.messageFlags);
-        output.z(serialDesc, 2, a2.f26233a, self.customId);
-        output.n(serialDesc, 3, ApplicationId$$serializer.INSTANCE, ApplicationId.m552boximpl(self.applicationId));
-        output.n(serialDesc, 4, kotlinx.serialization.internal.f.f21160c, self.indices);
+        output.z(serialDesc, 2, a2.f26237a, self.customId);
+        output.n(serialDesc, 3, ApplicationId$$serializer.INSTANCE, ApplicationId.m553boximpl(self.applicationId));
+        output.n(serialDesc, 4, kotlinx.serialization.internal.f.f21164c, self.indices);
     }
 
     
-    public final String m370component13Eiw7ao() {
+    public final String m371component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -115,7 +115,7 @@ public final class TapButtonActionComponent implements ReactEvent {
     }
 
     
-    public final long m371component4VavddsQ() {
+    public final long m372component4VavddsQ() {
         return this.applicationId;
     }
 
@@ -124,7 +124,7 @@ public final class TapButtonActionComponent implements ReactEvent {
     }
 
     
-    public final TapButtonActionComponent m372copyNkFJqEg(String messageId, double d10, String str, long j10, int[] indices) {
+    public final TapButtonActionComponent m373copyNkFJqEg(String messageId, double d10, String str, long j10, int[] indices) {
         q.g(messageId, "messageId");
         q.g(indices, "indices");
         return new TapButtonActionComponent(messageId, d10, str, j10, indices, (DefaultConstructorMarker) null);
@@ -138,11 +138,11 @@ public final class TapButtonActionComponent implements ReactEvent {
             return false;
         }
         TapButtonActionComponent tapButtonActionComponent = (TapButtonActionComponent) obj;
-        return MessageId.m595equalsimpl0(this.messageId, tapButtonActionComponent.messageId) && Double.compare(this.messageFlags, tapButtonActionComponent.messageFlags) == 0 && q.b(this.customId, tapButtonActionComponent.customId) && ApplicationId.m556equalsimpl0(this.applicationId, tapButtonActionComponent.applicationId) && q.b(this.indices, tapButtonActionComponent.indices);
+        return MessageId.m596equalsimpl0(this.messageId, tapButtonActionComponent.messageId) && Double.compare(this.messageFlags, tapButtonActionComponent.messageFlags) == 0 && q.b(this.customId, tapButtonActionComponent.customId) && ApplicationId.m557equalsimpl0(this.applicationId, tapButtonActionComponent.applicationId) && q.b(this.indices, tapButtonActionComponent.indices);
     }
 
     
-    public final long m373getApplicationIdVavddsQ() {
+    public final long m374getApplicationIdVavddsQ() {
         return this.applicationId;
     }
 
@@ -159,26 +159,26 @@ public final class TapButtonActionComponent implements ReactEvent {
     }
 
     
-    public final String m374getMessageId3Eiw7ao() {
+    public final String m375getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m596hashCodeimpl(this.messageId) * 31) + Double.doubleToLongBits(this.messageFlags)) * 31;
+        int i10 = ((MessageId.m597hashCodeimpl(this.messageId) * 31) + Double.doubleToLongBits(this.messageFlags)) * 31;
         String str = this.customId;
-        return ((((i10 + (str == null ? 0 : str.hashCode())) * 31) + ApplicationId.m557hashCodeimpl(this.applicationId)) * 31) + Arrays.hashCode(this.indices);
+        return ((((i10 + (str == null ? 0 : str.hashCode())) * 31) + ApplicationId.m558hashCodeimpl(this.applicationId)) * 31) + Arrays.hashCode(this.indices);
     }
 
     @Override 
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m597toStringimpl(this.messageId)), x.a("messageFlags", Double.valueOf(this.messageFlags)), x.a("customId", this.customId), x.a("applicationId", ApplicationId.m559toStringimpl(this.applicationId)), x.a("indices", NativeArrayExtensionsKt.toNativeArray(this.indices)));
+        return NativeMapExtensionsKt.nativeMapOf(x.a("messageId", MessageId.m598toStringimpl(this.messageId)), x.a("messageFlags", Double.valueOf(this.messageFlags)), x.a("customId", this.customId), x.a("applicationId", ApplicationId.m560toStringimpl(this.applicationId)), x.a("indices", NativeArrayExtensionsKt.toNativeArray(this.indices)));
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(this.messageId);
+        String str = MessageId.m598toStringimpl(this.messageId);
         double d10 = this.messageFlags;
         String str2 = this.customId;
-        String str3 = ApplicationId.m559toStringimpl(this.applicationId);
+        String str3 = ApplicationId.m560toStringimpl(this.applicationId);
         String arrays = Arrays.toString(this.indices);
         return "TapButtonActionComponent(messageId=" + str + ", messageFlags=" + d10 + ", customId=" + str2 + ", applicationId=" + str3 + ", indices=" + arrays + ")";
     }

@@ -45,7 +45,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20666a);
+        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20670a);
     }
 
     @Override 
@@ -62,7 +62,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 SamsungModule samsungModule = this.this$0;
                 String str2 = this.$state;
                 String str3 = this.$authCode;
-                s.a aVar = s.f14774l;
+                s.a aVar = s.f14778l;
                 OkHttpClient c10 = new OkHttpClient.Builder().i(false).c();
                 CoroutineDispatcher b10 = y0.b();
                 SamsungModule$finishSamsungAuthorization$1$1$1 samsungModule$finishSamsungAuthorization$1$1$1 = new SamsungModule$finishSamsungAuthorization$1$1$1(str, samsungModule, c10, str2, str3, null);
@@ -75,9 +75,9 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
-            obj2 = s.b(Unit.f20666a);
+            obj2 = s.b(Unit.f20670a);
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14774l;
+            s.a aVar2 = s.f14778l;
             obj2 = s.b(t.a(th2));
         }
         SamsungModule samsungModule2 = this.this$0;
@@ -89,6 +89,6 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 throw e10;
             }
         }
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 }

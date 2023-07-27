@@ -18,7 +18,7 @@ final class I18nUtilsKt$i18nSetText$1 extends s implements Function1<RenderConte
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

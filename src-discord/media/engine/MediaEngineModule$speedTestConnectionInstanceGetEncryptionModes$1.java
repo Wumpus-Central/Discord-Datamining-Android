@@ -23,7 +23,7 @@ final class MediaEngineModule$speedTestConnectionInstanceGetEncryptionModes$1 ex
     @Override 
     public   Unit invoke(String[] strArr) {
         invoke2(strArr);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

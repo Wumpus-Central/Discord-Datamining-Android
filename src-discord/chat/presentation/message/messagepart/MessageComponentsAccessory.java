@@ -29,9 +29,9 @@ public final class MessageComponentsAccessory extends MessageAccessory {
 
     
     
-    public static  MessageComponentsAccessory m270copyu7_MRrM$default(MessageComponentsAccessory messageComponentsAccessory, String str, long j10, List list, int i10, Object obj) {
+    public static  MessageComponentsAccessory m271copyu7_MRrM$default(MessageComponentsAccessory messageComponentsAccessory, String str, long j10, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = messageComponentsAccessory.mo216getMessageId3Eiw7ao();
+            str = messageComponentsAccessory.mo217getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             j10 = messageComponentsAccessory.messageFlags;
@@ -39,12 +39,12 @@ public final class MessageComponentsAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             list = messageComponentsAccessory.messageComponents;
         }
-        return messageComponentsAccessory.m272copyu7_MRrM(str, j10, list);
+        return messageComponentsAccessory.m273copyu7_MRrM(str, j10, list);
     }
 
     
-    public final String m271component13Eiw7ao() {
-        return mo216getMessageId3Eiw7ao();
+    public final String m272component13Eiw7ao() {
+        return mo217getMessageId3Eiw7ao();
     }
 
     public final long component2() {
@@ -56,7 +56,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     }
 
     
-    public final MessageComponentsAccessory m272copyu7_MRrM(String messageId, long j10, List<? extends Component> messageComponents) {
+    public final MessageComponentsAccessory m273copyu7_MRrM(String messageId, long j10, List<? extends Component> messageComponents) {
         q.g(messageId, "messageId");
         q.g(messageComponents, "messageComponents");
         return new MessageComponentsAccessory(messageId, j10, messageComponents, null);
@@ -70,7 +70,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
             return false;
         }
         MessageComponentsAccessory messageComponentsAccessory = (MessageComponentsAccessory) obj;
-        return MessageId.m595equalsimpl0(mo216getMessageId3Eiw7ao(), messageComponentsAccessory.mo216getMessageId3Eiw7ao()) && this.messageFlags == messageComponentsAccessory.messageFlags && q.b(this.messageComponents, messageComponentsAccessory.messageComponents);
+        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), messageComponentsAccessory.mo217getMessageId3Eiw7ao()) && this.messageFlags == messageComponentsAccessory.messageFlags && q.b(this.messageComponents, messageComponentsAccessory.messageComponents);
     }
 
     public final List<Component> getMessageComponents() {
@@ -83,16 +83,16 @@ public final class MessageComponentsAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo216getMessageId3Eiw7ao() {
+    public String mo217getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m596hashCodeimpl(mo216getMessageId3Eiw7ao()) * 31) + b.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
+        return (((MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + b.a(this.messageFlags)) * 31) + this.messageComponents.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(mo216getMessageId3Eiw7ao());
+        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
         long j10 = this.messageFlags;
         List<Component> list = this.messageComponents;
         return "MessageComponentsAccessory(messageId=" + str + ", messageFlags=" + j10 + ", messageComponents=" + list + ")";

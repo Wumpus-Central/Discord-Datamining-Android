@@ -20,8 +20,8 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$37 extends n implements
 
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
-        m200invokentcYbpo(messageId.m599unboximpl(), linkContentNode);
-        return Unit.f20666a;
+        m200invokentcYbpo(messageId.m600unboximpl(), linkContentNode);
+        return Unit.f20670a;
     }
 
     

@@ -24,7 +24,7 @@ final class MediaEngineModule$stopLocalAudioRecording$1 extends s implements Fun
     @Override 
     public   Unit invoke(String str, Integer num) {
         invoke(str, num.intValue());
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     public final void invoke(String fileName, int i10) {

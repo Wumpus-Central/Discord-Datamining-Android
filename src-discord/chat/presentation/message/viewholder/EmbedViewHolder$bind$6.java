@@ -20,7 +20,7 @@ public  class EmbedViewHolder$bind$6 extends n implements Function1<EmojiContent
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

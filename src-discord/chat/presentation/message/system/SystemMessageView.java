@@ -339,7 +339,7 @@ public final class SystemMessageView extends ConstraintLayout implements SpinePa
         }
         Function4<MessageId, ChannelId, Integer, MediaType, Unit> onMessageLongPressed = eventHandler.getOnMessageLongPressed();
         if (onMessageLongPressed != null) {
-            onMessageLongPressed.invoke(MessageId.m591boximpl(message.m16getId3Eiw7ao()), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+            onMessageLongPressed.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), null, null);
         }
         return true;
     }

@@ -63,7 +63,7 @@ public final class TapJoinActivityData$$serializer implements f0<TapJoinActivity
         }
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapJoinActivityData(i10, messageId != null ? messageId.m599unboximpl() : null, null, null);
+        return new TapJoinActivityData(i10, messageId != null ? messageId.m600unboximpl() : null, null, null);
     }
 
     @Override 

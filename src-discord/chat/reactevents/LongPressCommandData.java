@@ -156,7 +156,7 @@ public final class LongPressCommandData implements ReactEvent {
 
     
     public LongPressCommandData(CommandMentionContentNode node) {
-        this(ChannelId.m572toStringimpl(node.m45getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
+        this(ChannelId.m573toStringimpl(node.m45getChannelIdo4g7jtM()), node.getCommandId(), node.getCommandName(), node.getCommandKey());
         q.g(node, "node");
     }
 }

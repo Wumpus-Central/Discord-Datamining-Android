@@ -25,7 +25,7 @@ final class MediaEngineModule$getOutputDevices$1 extends s implements Function1<
     @Override 
     public   Unit invoke(List<? extends Map<String, ? extends Object>> list) {
         invoke2(list);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

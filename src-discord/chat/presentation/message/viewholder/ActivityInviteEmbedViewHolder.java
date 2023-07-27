@@ -26,7 +26,7 @@ public final class ActivityInviteEmbedViewHolder extends MessagePartViewHolder {
     public static final void bind$lambda$0(Function1 onTapJoinActivity, ActivityInviteEmbedMessageAccessory accessory, View view) {
         q.g(onTapJoinActivity, "$onTapJoinActivity");
         q.g(accessory, "$accessory");
-        onTapJoinActivity.invoke(MessageId.m591boximpl(accessory.mo216getMessageId3Eiw7ao()));
+        onTapJoinActivity.invoke(MessageId.m592boximpl(accessory.mo217getMessageId3Eiw7ao()));
     }
 
     public final void bind(final ActivityInviteEmbedMessageAccessory accessory, final Function1<? super MessageId, Unit> onTapJoinActivity) {

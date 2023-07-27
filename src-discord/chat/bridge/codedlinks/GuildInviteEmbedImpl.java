@@ -219,17 +219,17 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
         output.q(serialDesc, 0, self.getBackgroundColor());
         output.q(serialDesc, 1, self.getBorderColor());
         output.q(serialDesc, 2, self.getHeaderColor());
-        a2 a2Var = a2.f26233a;
+        a2 a2Var = a2.f26237a;
         output.z(serialDesc, 3, a2Var, self.getHeaderText());
         output.n(serialDesc, 4, InviteType.Serializer.INSTANCE, self.getType());
         if (output.w(serialDesc, 5) || self.getAcceptLabelBackgroundColor() != null) {
-            output.z(serialDesc, 5, m0.f26308a, self.getAcceptLabelBackgroundColor());
+            output.z(serialDesc, 5, m0.f26312a, self.getAcceptLabelBackgroundColor());
         }
         if (output.w(serialDesc, 6) || self.getAcceptLabelBorderColor() != null) {
-            output.z(serialDesc, 6, m0.f26308a, self.getAcceptLabelBorderColor());
+            output.z(serialDesc, 6, m0.f26312a, self.getAcceptLabelBorderColor());
         }
         if (output.w(serialDesc, 7) || self.getAcceptLabelColor() != null) {
-            output.z(serialDesc, 7, m0.f26308a, self.getAcceptLabelColor());
+            output.z(serialDesc, 7, m0.f26312a, self.getAcceptLabelColor());
         }
         if (output.w(serialDesc, 8) || self.getAcceptLabelText() != null) {
             output.z(serialDesc, 8, a2Var, self.getAcceptLabelText());
@@ -238,10 +238,10 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
             output.z(serialDesc, 9, a2Var, self.getBodyText());
         }
         if (output.w(serialDesc, 10) || self.getBodyTextColor() != null) {
-            output.z(serialDesc, 10, m0.f26308a, self.getBodyTextColor());
+            output.z(serialDesc, 10, m0.f26312a, self.getBodyTextColor());
         }
         if (output.w(serialDesc, 11) || self.getCanBeAccepted() != null) {
-            output.z(serialDesc, 11, h.f26275a, self.getCanBeAccepted());
+            output.z(serialDesc, 11, h.f26279a, self.getCanBeAccepted());
         }
         if (output.w(serialDesc, 12) || self.getChannelIcon() != null) {
             output.z(serialDesc, 12, a2Var, self.getChannelIcon());
@@ -250,7 +250,7 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
             output.z(serialDesc, 13, a2Var, self.getChannelName());
         }
         if (output.w(serialDesc, 14) || self.getEmbedCanBeTapped() != null) {
-            output.z(serialDesc, 14, h.f26275a, self.getEmbedCanBeTapped());
+            output.z(serialDesc, 14, h.f26279a, self.getEmbedCanBeTapped());
         }
         if (output.w(serialDesc, 15) || self.getMemberText() != null) {
             output.z(serialDesc, 15, a2Var, self.getMemberText());
@@ -259,16 +259,16 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
             output.z(serialDesc, 16, a2Var, self.getOnlineText());
         }
         if (output.w(serialDesc, 17) || self.getResolvingGradientEnd() != null) {
-            output.z(serialDesc, 17, m0.f26308a, self.getResolvingGradientEnd());
+            output.z(serialDesc, 17, m0.f26312a, self.getResolvingGradientEnd());
         }
         if (output.w(serialDesc, 18) || self.getResolvingGradientStart() != null) {
-            output.z(serialDesc, 18, m0.f26308a, self.getResolvingGradientStart());
+            output.z(serialDesc, 18, m0.f26312a, self.getResolvingGradientStart());
         }
         if (output.w(serialDesc, 19) || self.getSplashHasRadialGradient() != null) {
-            output.z(serialDesc, 19, h.f26275a, self.getSplashHasRadialGradient());
+            output.z(serialDesc, 19, h.f26279a, self.getSplashHasRadialGradient());
         }
         if (output.w(serialDesc, 20) || self.getSplashOpacity() != null) {
-            output.z(serialDesc, 20, m0.f26308a, self.getSplashOpacity());
+            output.z(serialDesc, 20, m0.f26312a, self.getSplashOpacity());
         }
         if (output.w(serialDesc, 21) || self.getSplashUrl() != null) {
             output.z(serialDesc, 21, a2Var, self.getSplashUrl());
@@ -280,13 +280,13 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
             output.z(serialDesc, 23, a2Var, self.getSubtitle());
         }
         if (output.w(serialDesc, 24) || self.getSubtitleColor() != null) {
-            output.z(serialDesc, 24, m0.f26308a, self.getSubtitleColor());
+            output.z(serialDesc, 24, m0.f26312a, self.getSubtitleColor());
         }
         if (output.w(serialDesc, 25) || self.getThumbnailBackgroundColor() != null) {
-            output.z(serialDesc, 25, m0.f26308a, self.getThumbnailBackgroundColor());
+            output.z(serialDesc, 25, m0.f26312a, self.getThumbnailBackgroundColor());
         }
         if (output.w(serialDesc, 26) || self.getThumbnailCornerRadius() != null) {
-            output.z(serialDesc, 26, m0.f26308a, self.getThumbnailCornerRadius());
+            output.z(serialDesc, 26, m0.f26312a, self.getThumbnailCornerRadius());
         }
         if (output.w(serialDesc, 27) || self.getThumbnailText() != null) {
             output.z(serialDesc, 27, a2Var, self.getThumbnailText());
@@ -295,7 +295,7 @@ public final class GuildInviteEmbedImpl extends CodedLinkEmbed implements GuildI
             output.z(serialDesc, 28, a2Var, self.getThumbnailUrl());
         }
         if (output.w(serialDesc, 29) || self.getTitleColor() != null) {
-            output.z(serialDesc, 29, m0.f26308a, self.getTitleColor());
+            output.z(serialDesc, 29, m0.f26312a, self.getTitleColor());
         }
         if (output.w(serialDesc, 30) || self.getTitleText() != null) {
             z10 = true;

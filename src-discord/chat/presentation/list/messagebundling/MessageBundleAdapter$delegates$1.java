@@ -23,7 +23,7 @@ public final class MessageBundleAdapter$delegates$1 extends s implements Functio
     @Override 
     public   Unit invoke(View view, Integer num, Integer num2) {
         invoke(view, num.intValue(), num2.intValue());
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     public final void invoke(View view, int i10, int i11) {

@@ -20,7 +20,7 @@ public  class MessageAccessoriesAdapter$onBindViewHolder$14 extends n implements
     @Override 
     public   Unit invoke(EmojiContentNode emojiContentNode) {
         invoke2(emojiContentNode);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

@@ -109,7 +109,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         configureAuthor$lambda$11.setVisibility(i11);
         if (message.getConnectionsRoleTag() != null) {
-            configureAuthor$lambda$11.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+            configureAuthor$lambda$11.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
         }
     }
 
@@ -118,7 +118,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         }
     }
 
@@ -129,7 +129,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         return true;
     }
 
@@ -138,7 +138,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+            eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         }
     }
 
@@ -215,7 +215,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         if (z11) {
             z12 = true;
-            configureMessageContent$lambda$3.m316setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
+            configureMessageContent$lambda$3.m317setMessageContent2i9KL1s(message.getContent(), message.m16getId3Eiw7ao(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), FlaggedMessageEmbedView$configureMessageContent$1$1.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$2.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$3.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$4.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$5.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$6.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$7.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$8.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$9.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$10.INSTANCE, FlaggedMessageEmbedView$configureMessageContent$1$11.INSTANCE, (r47 & 65536) != 0 ? MessageContentView$setMessageContent$1.INSTANCE : FlaggedMessageEmbedView$configureMessageContent$1$12.INSTANCE, configureMessageContent$lambda$3.getResources().getDimensionPixelSize(R.dimen.message_accessories_vertical_spacing), i10, (r47 & 524288) != 0 ? null : null, (r47 & 1048576) != 0 ? null : null, (r47 & 2097152) != 0 ? ThemeManagerKt.getTheme() : null);
         } else {
             z12 = true;
         }

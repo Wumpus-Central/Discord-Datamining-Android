@@ -48,7 +48,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
     }
 
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f20666a);
+        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f20670a);
     }
 
     @Override 
@@ -84,7 +84,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
             }
             TTIMetrics.record$default(TTIMetrics.INSTANCE, "ChatModule.updateRows() Finish", 0L, null, false, 14, null);
             this.this$0.previousRowUpdateTag = this.$tag;
-            return Unit.f20666a;
+            return Unit.f20670a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

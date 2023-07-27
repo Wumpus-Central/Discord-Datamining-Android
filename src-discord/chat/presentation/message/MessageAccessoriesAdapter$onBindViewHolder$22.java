@@ -27,14 +27,14 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$22 extends s imple
     @Override 
     public   Unit invoke(Integer num, MessageAccessory messageAccessory, MessagePartViewHolder messagePartViewHolder) {
         invoke(num.intValue(), messageAccessory, messagePartViewHolder);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     public final void invoke(int i10, MessageAccessory attachment, MessagePartViewHolder attachmentViewHolder) {
         Double valueOf;
         q.g(attachment, "attachment");
         q.g(attachmentViewHolder, "attachmentViewHolder");
-        String str = attachment.mo216getMessageId3Eiw7ao();
+        String str = attachment.mo217getMessageId3Eiw7ao();
         if (attachment instanceof ImageAttachmentMessageAccessory) {
             valueOf = null;
         } else if (attachment instanceof VideoAttachmentMessageAccessory) {

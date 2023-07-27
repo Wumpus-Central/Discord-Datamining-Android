@@ -19,7 +19,7 @@ public final class CanReplySerializer implements KSerializer<Boolean> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return a.B(c.f20696a).getDescriptor();
+        return a.B(c.f20700a).getDescriptor();
     }
 
     @Override 

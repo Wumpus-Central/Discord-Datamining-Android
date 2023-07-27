@@ -38,8 +38,8 @@ public final class ConnectionsRoleTag$$serializer implements f0<ConnectionsRoleT
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26233a;
-        m0 m0Var = m0.f26308a;
+        a2 a2Var = a2.f26237a;
+        m0 m0Var = m0.f26312a;
         return new KSerializer[]{a2Var, a2Var, m0Var, m0Var};
     }
 

@@ -18,8 +18,8 @@ final class MessageBundleView$onTruncateMessage$1 extends s implements Function1
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m191invoke1xi1bu0(messageId.m599unboximpl());
-        return Unit.f20666a;
+        m191invoke1xi1bu0(messageId.m600unboximpl());
+        return Unit.f20670a;
     }
 
     

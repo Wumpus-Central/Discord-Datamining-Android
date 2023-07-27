@@ -234,7 +234,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 roleIconView2.setVisibility(8);
             }
             if (message.getConnectionsRoleTag() != null) {
-                this.binding.connectionsRoleTag.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+                this.binding.connectionsRoleTag.m194configureConnectionsRoleTaguESh2Cg(message.m13getAuthorIdwUX8bhU(), message.m15getGuildIdqOKuAAo(), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
                 ConnectionsRoleTagView connectionsRoleTagView = this.binding.connectionsRoleTag;
                 q.f(connectionsRoleTagView, "binding.connectionsRoleTag");
                 connectionsRoleTagView.setVisibility(0);
@@ -249,45 +249,62 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 MessageTagView messageTagView = this.binding.messageTagView;
                 q.f(messageTagView, "binding.messageTagView");
                 messageTagView.setVisibility(i10);
-                return;
+                MessageAltRemixTagView messageAltRemixTagView = this.binding.messageAltRemixTagView;
+                q.f(messageAltRemixTagView, "binding.messageAltRemixTagView");
+                messageAltRemixTagView.setVisibility(i10);
+            } else if (message.getTagType() == null || !q.b(message.getTagType(), "f")) {
+                MessageTagView messageTagView2 = this.binding.messageTagView;
+                q.f(messageTagView2, "binding.messageTagView");
+                messageTagView2.setVisibility(0);
+                this.binding.messageTagView.m212configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+                MessageAltRemixTagView messageAltRemixTagView2 = this.binding.messageAltRemixTagView;
+                q.f(messageAltRemixTagView2, "binding.messageAltRemixTagView");
+                messageAltRemixTagView2.setVisibility(8);
+            } else {
+                MessageAltRemixTagView messageAltRemixTagView3 = this.binding.messageAltRemixTagView;
+                q.f(messageAltRemixTagView3, "binding.messageAltRemixTagView");
+                messageAltRemixTagView3.setVisibility(0);
+                this.binding.messageAltRemixTagView.m211configureTagViewe2j04IU(message.getTagText(), message.getTagTextColor(), message.getTagBackgroundColor(), chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
+                MessageTagView messageTagView3 = this.binding.messageTagView;
+                q.f(messageTagView3, "binding.messageTagView");
+                messageTagView3.setVisibility(8);
             }
-            MessageTagView messageTagView2 = this.binding.messageTagView;
-            q.f(messageTagView2, "binding.messageTagView");
-            messageTagView2.setVisibility(0);
-            this.binding.messageTagView.m211configureTagVieweCJZyo(message.getTagText(), message.getTagVerified(), message.getTagTextColor(), message.getTagBackgroundColor(), message.getOpTagText(), chatEventHandler, message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.getTagType());
-            return;
+        } else {
+            TextView textView3 = this.binding.timestamp;
+            q.f(textView3, "binding.timestamp");
+            textView3.setVisibility(8);
+            TextView textView4 = this.binding.authorName;
+            q.f(textView4, "binding.authorName");
+            textView4.setVisibility(8);
+            SimpleDraweeView simpleDraweeView4 = this.binding.authorAvatar;
+            q.f(simpleDraweeView4, "binding.authorAvatar");
+            simpleDraweeView4.setVisibility(8);
+            SimpleDraweeView simpleDraweeView5 = this.binding.authorAvatarDecoration;
+            q.f(simpleDraweeView5, "binding.authorAvatarDecoration");
+            simpleDraweeView5.setVisibility(8);
+            RoleDotView roleDotView4 = this.binding.roleDot;
+            q.f(roleDotView4, "binding.roleDot");
+            roleDotView4.setVisibility(8);
+            RoleIconView roleIconView3 = this.binding.roleIcon;
+            q.f(roleIconView3, "binding.roleIcon");
+            roleIconView3.setVisibility(8);
+            ConnectionsRoleTagView connectionsRoleTagView3 = this.binding.connectionsRoleTag;
+            q.f(connectionsRoleTagView3, "binding.connectionsRoleTag");
+            connectionsRoleTagView3.setVisibility(8);
+            MessageTagView messageTagView4 = this.binding.messageTagView;
+            q.f(messageTagView4, "binding.messageTagView");
+            messageTagView4.setVisibility(8);
+            MessageAltRemixTagView messageAltRemixTagView4 = this.binding.messageAltRemixTagView;
+            q.f(messageAltRemixTagView4, "binding.messageAltRemixTagView");
+            messageAltRemixTagView4.setVisibility(8);
         }
-        TextView textView3 = this.binding.timestamp;
-        q.f(textView3, "binding.timestamp");
-        textView3.setVisibility(8);
-        TextView textView4 = this.binding.authorName;
-        q.f(textView4, "binding.authorName");
-        textView4.setVisibility(8);
-        SimpleDraweeView simpleDraweeView4 = this.binding.authorAvatar;
-        q.f(simpleDraweeView4, "binding.authorAvatar");
-        simpleDraweeView4.setVisibility(8);
-        SimpleDraweeView simpleDraweeView5 = this.binding.authorAvatarDecoration;
-        q.f(simpleDraweeView5, "binding.authorAvatarDecoration");
-        simpleDraweeView5.setVisibility(8);
-        RoleDotView roleDotView4 = this.binding.roleDot;
-        q.f(roleDotView4, "binding.roleDot");
-        roleDotView4.setVisibility(8);
-        RoleIconView roleIconView3 = this.binding.roleIcon;
-        q.f(roleIconView3, "binding.roleIcon");
-        roleIconView3.setVisibility(8);
-        ConnectionsRoleTagView connectionsRoleTagView3 = this.binding.connectionsRoleTag;
-        q.f(connectionsRoleTagView3, "binding.connectionsRoleTag");
-        connectionsRoleTagView3.setVisibility(8);
-        MessageTagView messageTagView3 = this.binding.messageTagView;
-        q.f(messageTagView3, "binding.messageTagView");
-        messageTagView3.setVisibility(8);
     }
 
     public static final void configureAuthor$lambda$28$lambda$26(Message message, ChatEventHandler eventHandler, View view) {
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+            eventHandler.mo158onTapAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         }
     }
 
@@ -297,7 +314,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+        eventHandler.mo150onLongPressAvatarx5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         return true;
     }
 
@@ -322,7 +339,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         q.g(message, "$message");
         q.g(eventHandler, "$eventHandler");
         if (message.m13getAuthorIdwUX8bhU() != null) {
-            eventHandler.mo179onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+            eventHandler.mo179onTapUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         }
     }
 
@@ -332,7 +349,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
         if (message.m13getAuthorIdwUX8bhU() == null) {
             return true;
         }
-        eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m638unboximpl());
+        eventHandler.mo152onLongPressUsernamex5gers8(message.m16getId3Eiw7ao(), message.m13getAuthorIdwUX8bhU().m639unboximpl());
         return true;
     }
 
@@ -460,7 +477,7 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$7$lambda$6(Function4 function4, Message message, int i10, MediaType mediaType, View view) {
         q.g(message, "$message");
         q.g(mediaType, "$mediaType");
-        function4.invoke(MessageId.m591boximpl(message.m16getId3Eiw7ao()), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
+        function4.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType);
         return true;
     }
 
@@ -513,13 +530,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
     public static final void setMessage$lambda$1$lambda$0(Function2 onMessageTapped, Message message, View view) {
         q.g(onMessageTapped, "$onMessageTapped");
         q.g(message, "$message");
-        onMessageTapped.invoke(MessageId.m591boximpl(message.m16getId3Eiw7ao()), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()));
+        onMessageTapped.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()));
     }
 
     public static final boolean setMessage$lambda$3$lambda$2(Function4 it, Message message, View view) {
         q.g(it, "$it");
         q.g(message, "$message");
-        it.invoke(MessageId.m591boximpl(message.m16getId3Eiw7ao()), ChannelId.m565boximpl(message.m14getChannelIdo4g7jtM()), null, null);
+        it.invoke(MessageId.m592boximpl(message.m16getId3Eiw7ao()), ChannelId.m566boximpl(message.m14getChannelIdo4g7jtM()), null, null);
         return true;
     }
 
@@ -596,13 +613,13 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
             q.f(messageViewReplyPreview, "binding.replyPreview");
             MessageViewReplyPreview.configureReply$default(messageViewReplyPreview, message.getReferencedMessage(), false, new MessageView$setMessage$3(eventHandler, message), 2, null);
         } else if (message.getExecutedCommand() != null) {
-            this.binding.replyPreview.m212configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
+            this.binding.replyPreview.m213configureExecutedCommandLdU2QRA(message.m16getId3Eiw7ao(), message.getExecutedCommand(), MessageKt.shouldAnimateEmoji(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName(), eventHandler);
         } else {
             this.binding.replyPreview.clear();
         }
         final Function2<MessageId, ChannelId, Unit> onMessageTapped = eventHandler.getOnMessageTapped();
         View.OnLongClickListener onLongClickListener = null;
-        View.OnClickListener lVar = onMessageTapped != null ? new View.OnClickListener() { 
+        View.OnClickListener mVar = onMessageTapped != null ? new View.OnClickListener() { 
             @Override 
             public final void onClick(View view) {
                 MessageView.setMessage$lambda$1$lambda$0(Function2.this, message, view);
@@ -619,14 +636,14 @@ public final class MessageView extends ConstraintLayout implements VerticalSpaci
                 }
             };
         }
-        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, lVar);
+        NestedScrollOnTouchUtilsKt.setOnClickListenerNested(this, true, mVar);
         NestedScrollOnTouchUtilsKt.setOnLongClickListenerNested(this, true, onLongClickListener);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(message, messageContext, messageFrame, eventHandler.getOnMessageLongPressed());
         this.binding.accessoriesView.m210setAccessoriesRC8ZMxU(message.m16getId3Eiw7ao(), message.m14getChannelIdo4g7jtM(), message.m15getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, componentProvider);
         configureAccessoriesMargin(generateMessageAccessories);
         configureCommunicationDisabled(q.b(message.getCommunicationDisabled(), Boolean.TRUE), chainPart);
         configureSuppressNotifications(MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.SUPPRESS_NOTIFICATIONS), eventHandler, chainPart);
-        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, lVar, onLongClickListener));
+        this.binding.accessoriesView.setOnCurrentContentViewChanged(new MessageView$setMessage$4(this, message, mVar, onLongClickListener));
     }
 
     @Override 

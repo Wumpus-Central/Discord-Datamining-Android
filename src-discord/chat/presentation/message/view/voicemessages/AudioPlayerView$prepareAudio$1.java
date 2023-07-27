@@ -23,7 +23,7 @@ public final class AudioPlayerView$prepareAudio$1 extends s implements Function1
     @Override 
     public   Unit invoke(MediaPlayer.Event event) {
         invoke2(event);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

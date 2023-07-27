@@ -241,14 +241,14 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     public int hashCode() {
         ChannelId channelId = this.channelId;
         int i10 = 0;
-        int i11 = (channelId == null ? 0 : ChannelId.m570hashCodeimpl(channelId.m574unboximpl())) * 31;
+        int i11 = (channelId == null ? 0 : ChannelId.m571hashCodeimpl(channelId.m575unboximpl())) * 31;
         UserId userId = this.userId;
-        int i12 = (((i11 + (userId == null ? 0 : UserId.m634hashCodeimpl(userId.m638unboximpl()))) * 31) + this.roleColor) * 31;
+        int i12 = (((i11 + (userId == null ? 0 : UserId.m635hashCodeimpl(userId.m639unboximpl()))) * 31) + this.roleColor) * 31;
         GuildId guildId = this.guildId;
-        int i13 = (i12 + (guildId == null ? 0 : GuildId.m583hashCodeimpl(guildId.m587unboximpl()))) * 31;
+        int i13 = (i12 + (guildId == null ? 0 : GuildId.m584hashCodeimpl(guildId.m588unboximpl()))) * 31;
         RoleId roleId = this.roleId;
         if (roleId != null) {
-            i10 = RoleId.m608hashCodeimpl(roleId.m612unboximpl());
+            i10 = RoleId.m609hashCodeimpl(roleId.m613unboximpl());
         }
         return ((i13 + i10) * 31) + getContent().hashCode();
     }

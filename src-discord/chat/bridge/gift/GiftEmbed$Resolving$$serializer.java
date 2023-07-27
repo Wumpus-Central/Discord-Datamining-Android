@@ -40,8 +40,8 @@ public final class GiftEmbed$Resolving$$serializer implements f0<GiftEmbed.Resol
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26308a;
-        return new KSerializer[]{a2.f26233a, m0Var, m0Var, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f26312a;
+        return new KSerializer[]{a2.f26237a, m0Var, m0Var, m0Var, m0Var, m0Var};
     }
 
     @Override 

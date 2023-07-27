@@ -45,8 +45,8 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26233a;
-        return new KSerializer[]{m0.f26308a, h.f26275a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
+        a2 a2Var = a2.f26237a;
+        return new KSerializer[]{m0.f26312a, h.f26279a, a.u(a2Var), a2Var, a.u(a2Var), a2Var, a.u(MessageReaction$$serializer.INSTANCE), a.u(PostSharePrompt$$serializer.INSTANCE)};
     }
 
     @Override 
@@ -68,7 +68,7 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
         if (c11.y()) {
             i10 = c11.k(descriptor2, 0);
             z10 = c11.s(descriptor2, 1);
-            a2 a2Var = a2.f26233a;
+            a2 a2Var = a2.f26237a;
             obj = c11.v(descriptor2, 2, a2Var, null);
             str2 = c11.t(descriptor2, 3);
             obj2 = c11.v(descriptor2, 4, a2Var, null);
@@ -103,14 +103,14 @@ public final class ForumPostActions$$serializer implements f0<ForumPostActions> 
                         i12 = 7;
                     case 2:
                         c10 = 2;
-                        obj6 = c11.v(descriptor2, 2, a2.f26233a, obj6);
+                        obj6 = c11.v(descriptor2, 2, a2.f26237a, obj6);
                         i14 |= 4;
                         i12 = 7;
                     case 3:
                         str2 = c11.t(descriptor2, 3);
                         i14 |= 8;
                     case 4:
-                        obj7 = c11.v(descriptor2, 4, a2.f26233a, obj7);
+                        obj7 = c11.v(descriptor2, 4, a2.f26237a, obj7);
                         i14 |= 16;
                     case 5:
                         str = c11.t(descriptor2, 5);

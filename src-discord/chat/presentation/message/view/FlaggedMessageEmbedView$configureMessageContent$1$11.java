@@ -18,12 +18,12 @@ final class FlaggedMessageEmbedView$configureMessageContent$1$11 extends s imple
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m309invoke1xi1bu0(messageId.m599unboximpl());
-        return Unit.f20666a;
+        m310invoke1xi1bu0(messageId.m600unboximpl());
+        return Unit.f20670a;
     }
 
     
-    public final void m309invoke1xi1bu0(String it) {
+    public final void m310invoke1xi1bu0(String it) {
         q.g(it, "it");
     }
 }

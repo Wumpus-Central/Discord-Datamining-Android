@@ -24,9 +24,9 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  PostPreviewEmbedMessageAccessory m276copyAFFcxXc$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, Object obj) {
+    public static  PostPreviewEmbedMessageAccessory m277copyAFFcxXc$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = postPreviewEmbedMessageAccessory.mo216getMessageId3Eiw7ao();
+            str = postPreviewEmbedMessageAccessory.mo217getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             postPreviewEmbed = postPreviewEmbedMessageAccessory.postPreviewEmbed;
@@ -37,12 +37,12 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             spoilerAttributes = postPreviewEmbedMessageAccessory.spoilerAttributes;
         }
-        return postPreviewEmbedMessageAccessory.m278copyAFFcxXc(str, postPreviewEmbed, i10, spoilerAttributes);
+        return postPreviewEmbedMessageAccessory.m279copyAFFcxXc(str, postPreviewEmbed, i10, spoilerAttributes);
     }
 
     
-    public final String m277component13Eiw7ao() {
-        return mo216getMessageId3Eiw7ao();
+    public final String m278component13Eiw7ao() {
+        return mo217getMessageId3Eiw7ao();
     }
 
     public final PostPreviewEmbed component2() {
@@ -58,7 +58,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     
-    public final PostPreviewEmbedMessageAccessory m278copyAFFcxXc(String messageId, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes) {
+    public final PostPreviewEmbedMessageAccessory m279copyAFFcxXc(String messageId, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes) {
         q.g(messageId, "messageId");
         q.g(postPreviewEmbed, "postPreviewEmbed");
         return new PostPreviewEmbedMessageAccessory(messageId, postPreviewEmbed, i10, spoilerAttributes, null);
@@ -72,7 +72,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
             return false;
         }
         PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) obj;
-        return MessageId.m595equalsimpl0(mo216getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.mo216getMessageId3Eiw7ao()) && q.b(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && q.b(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
+        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), postPreviewEmbedMessageAccessory.mo217getMessageId3Eiw7ao()) && q.b(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && q.b(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
     }
 
     public final int getIndex() {
@@ -81,7 +81,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo216getMessageId3Eiw7ao() {
+    public String mo217getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -94,13 +94,13 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((((MessageId.m596hashCodeimpl(mo216getMessageId3Eiw7ao()) * 31) + this.postPreviewEmbed.hashCode()) * 31) + this.index) * 31;
+        int i10 = ((((MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + this.postPreviewEmbed.hashCode()) * 31) + this.index) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         return i10 + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode());
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(mo216getMessageId3Eiw7ao());
+        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
         PostPreviewEmbed postPreviewEmbed = this.postPreviewEmbed;
         int i10 = this.index;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;

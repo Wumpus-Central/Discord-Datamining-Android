@@ -25,9 +25,9 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     
-    public static  UploadProgressMessageAccessory m297copyu7_MRrM$default(UploadProgressMessageAccessory uploadProgressMessageAccessory, String str, int i10, UploadProgress uploadProgress, int i11, Object obj) {
+    public static  UploadProgressMessageAccessory m298copyu7_MRrM$default(UploadProgressMessageAccessory uploadProgressMessageAccessory, String str, int i10, UploadProgress uploadProgress, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = uploadProgressMessageAccessory.mo216getMessageId3Eiw7ao();
+            str = uploadProgressMessageAccessory.mo217getMessageId3Eiw7ao();
         }
         if ((i11 & 2) != 0) {
             i10 = uploadProgressMessageAccessory.index;
@@ -35,12 +35,12 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             uploadProgress = uploadProgressMessageAccessory.uploadProgress;
         }
-        return uploadProgressMessageAccessory.m299copyu7_MRrM(str, i10, uploadProgress);
+        return uploadProgressMessageAccessory.m300copyu7_MRrM(str, i10, uploadProgress);
     }
 
     
-    public final String m298component13Eiw7ao() {
-        return mo216getMessageId3Eiw7ao();
+    public final String m299component13Eiw7ao() {
+        return mo217getMessageId3Eiw7ao();
     }
 
     public final int component2() {
@@ -52,7 +52,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     
-    public final UploadProgressMessageAccessory m299copyu7_MRrM(String messageId, int i10, UploadProgress uploadProgress) {
+    public final UploadProgressMessageAccessory m300copyu7_MRrM(String messageId, int i10, UploadProgress uploadProgress) {
         q.g(messageId, "messageId");
         q.g(uploadProgress, "uploadProgress");
         return new UploadProgressMessageAccessory(messageId, i10, uploadProgress, null);
@@ -66,7 +66,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
             return false;
         }
         UploadProgressMessageAccessory uploadProgressMessageAccessory = (UploadProgressMessageAccessory) obj;
-        return MessageId.m595equalsimpl0(mo216getMessageId3Eiw7ao(), uploadProgressMessageAccessory.mo216getMessageId3Eiw7ao()) && this.index == uploadProgressMessageAccessory.index && q.b(this.uploadProgress, uploadProgressMessageAccessory.uploadProgress);
+        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), uploadProgressMessageAccessory.mo217getMessageId3Eiw7ao()) && this.index == uploadProgressMessageAccessory.index && q.b(this.uploadProgress, uploadProgressMessageAccessory.uploadProgress);
     }
 
     public final int getIndex() {
@@ -75,7 +75,7 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
 
     @Override 
     
-    public String mo216getMessageId3Eiw7ao() {
+    public String mo217getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -84,11 +84,11 @@ public final class UploadProgressMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m596hashCodeimpl(mo216getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.uploadProgress.hashCode();
+        return (((MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + this.index) * 31) + this.uploadProgress.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(mo216getMessageId3Eiw7ao());
+        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
         int i10 = this.index;
         UploadProgress uploadProgress = this.uploadProgress;
         return "UploadProgressMessageAccessory(messageId=" + str + ", index=" + i10 + ", uploadProgress=" + uploadProgress + ")";

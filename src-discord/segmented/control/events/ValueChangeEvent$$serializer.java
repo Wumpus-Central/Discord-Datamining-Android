@@ -34,7 +34,7 @@ public final class ValueChangeEvent$$serializer implements f0<ValueChangeEvent> 
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26233a, m0.f26308a};
+        return new KSerializer[]{a2.f26237a, m0.f26312a};
     }
 
     @Override 

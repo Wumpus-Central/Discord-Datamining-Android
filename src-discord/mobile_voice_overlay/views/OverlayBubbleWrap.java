@@ -55,7 +55,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20722a;
+        a aVar = a.f20726a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
@@ -391,7 +391,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20722a;
+        a aVar = a.f20726a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 
@@ -438,7 +438,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        a aVar = a.f20722a;
+        a aVar = a.f20726a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new c<Boolean>(bool) { 
             @Override 

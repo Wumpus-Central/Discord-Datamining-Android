@@ -18,7 +18,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     private final ChatEventHandler eventHandler;
     private final MessageComponentsView messageComponentsView;
     private long messageFlags;
-    private String messageId = MessageId.m592constructorimpl("0");
+    private String messageId = MessageId.m593constructorimpl("0");
 
     
     public MessageComponentsViewHolder(MessageComponentsView messageComponentsView, ChatEventHandler eventHandler) {
@@ -31,7 +31,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
 
     public final void bind(MessageComponentsAccessory componentsComponentsAccessory, ComponentProvider componentProvider) {
         q.g(componentsComponentsAccessory, "componentsComponentsAccessory");
-        this.messageId = componentsComponentsAccessory.mo216getMessageId3Eiw7ao();
+        this.messageId = componentsComponentsAccessory.mo217getMessageId3Eiw7ao();
         this.messageFlags = componentsComponentsAccessory.getMessageFlags();
         this.messageComponentsView.setComponents(componentProvider, componentsComponentsAccessory.getMessageComponents(), this);
     }
@@ -41,13 +41,13 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     
-    public final String m338getMessageId3Eiw7ao() {
+    public final String m339getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     @Override 
     
-    public void mo320onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
+    public void mo321onTapButtonActionComponenty43Yjpg(String str, long j10, List<Integer> indices) {
         int[] A0;
         q.g(indices, "indices");
         ChatEventHandler chatEventHandler = this.eventHandler;
@@ -74,7 +74,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder imp
     }
 
     
-    public final void m339setMessageId1xi1bu0(String str) {
+    public final void m340setMessageId1xi1bu0(String str) {
         q.g(str, "<set-?>");
         this.messageId = str;
     }

@@ -40,7 +40,7 @@ public final class PinsOnClick {
             n1.b(i10, 3, PinsOnClick$$serializer.INSTANCE.getDescriptor());
         }
         this.action = str;
-        this.messageChannelId = channelId.m574unboximpl();
+        this.messageChannelId = channelId.m575unboximpl();
     }
 
     public  PinsOnClick(int i10, String str, ChannelId channelId, SerializationConstructorMarker serializationConstructorMarker, DefaultConstructorMarker defaultConstructorMarker) {
@@ -67,7 +67,7 @@ public final class PinsOnClick {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         output.s(serialDesc, 0, self.action);
-        output.n(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m565boximpl(self.messageChannelId));
+        output.n(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m566boximpl(self.messageChannelId));
     }
 
     public final String component1() {
@@ -93,7 +93,7 @@ public final class PinsOnClick {
             return false;
         }
         PinsOnClick pinsOnClick = (PinsOnClick) obj;
-        return q.b(this.action, pinsOnClick.action) && ChannelId.m569equalsimpl0(this.messageChannelId, pinsOnClick.messageChannelId);
+        return q.b(this.action, pinsOnClick.action) && ChannelId.m570equalsimpl0(this.messageChannelId, pinsOnClick.messageChannelId);
     }
 
     public final String getAction() {
@@ -106,12 +106,12 @@ public final class PinsOnClick {
     }
 
     public int hashCode() {
-        return (this.action.hashCode() * 31) + ChannelId.m570hashCodeimpl(this.messageChannelId);
+        return (this.action.hashCode() * 31) + ChannelId.m571hashCodeimpl(this.messageChannelId);
     }
 
     public String toString() {
         String str = this.action;
-        String str2 = ChannelId.m572toStringimpl(this.messageChannelId);
+        String str2 = ChannelId.m573toStringimpl(this.messageChannelId);
         return "PinsOnClick(action=" + str + ", messageChannelId=" + str2 + ")";
     }
 

@@ -52,27 +52,27 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
     }
 
     
-    public static  TapDismissMediaPostSharePromptData m381copy1xi1bu0$default(TapDismissMediaPostSharePromptData tapDismissMediaPostSharePromptData, String str, int i10, Object obj) {
+    public static  TapDismissMediaPostSharePromptData m382copy1xi1bu0$default(TapDismissMediaPostSharePromptData tapDismissMediaPostSharePromptData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapDismissMediaPostSharePromptData.messageId;
         }
-        return tapDismissMediaPostSharePromptData.m383copy1xi1bu0(str);
+        return tapDismissMediaPostSharePromptData.m384copy1xi1bu0(str);
     }
 
     public static final void write$Self(TapDismissMediaPostSharePromptData self, CompositeEncoder output, SerialDescriptor serialDesc) {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m591boximpl(self.messageId));
+        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m592boximpl(self.messageId));
     }
 
     
-    public final String m382component13Eiw7ao() {
+    public final String m383component13Eiw7ao() {
         return this.messageId;
     }
 
     
-    public final TapDismissMediaPostSharePromptData m383copy1xi1bu0(String messageId) {
+    public final TapDismissMediaPostSharePromptData m384copy1xi1bu0(String messageId) {
         q.g(messageId, "messageId");
         return new TapDismissMediaPostSharePromptData(messageId, null);
     }
@@ -81,16 +81,16 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapDismissMediaPostSharePromptData) && MessageId.m595equalsimpl0(this.messageId, ((TapDismissMediaPostSharePromptData) obj).messageId);
+        return (obj instanceof TapDismissMediaPostSharePromptData) && MessageId.m596equalsimpl0(this.messageId, ((TapDismissMediaPostSharePromptData) obj).messageId);
     }
 
     
-    public final String m384getMessageId3Eiw7ao() {
+    public final String m385getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m596hashCodeimpl(this.messageId);
+        return MessageId.m597hashCodeimpl(this.messageId);
     }
 
     @Override 
@@ -99,7 +99,7 @@ public final class TapDismissMediaPostSharePromptData implements ReactEvent {
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(this.messageId);
+        String str = MessageId.m598toStringimpl(this.messageId);
         return "TapDismissMediaPostSharePromptData(messageId=" + str + ")";
     }
 

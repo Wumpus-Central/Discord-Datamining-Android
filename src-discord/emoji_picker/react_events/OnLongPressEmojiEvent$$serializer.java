@@ -32,7 +32,7 @@ public final class OnLongPressEmojiEvent$$serializer implements f0<OnLongPressEm
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26233a};
+        return new KSerializer[]{a2.f26237a};
     }
 
     @Override 

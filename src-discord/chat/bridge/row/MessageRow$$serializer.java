@@ -66,9 +66,9 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26308a;
-        h hVar = h.f26275a;
-        a2 a2Var = a2.f26233a;
+        m0 m0Var = m0.f26312a;
+        h hVar = h.f26279a;
+        a2 a2Var = a2.f26237a;
         return new KSerializer[]{m0Var, ChangeType.Serializer.INSTANCE, a.u(hVar), a.u(hVar), MessageSerializer.INSTANCE, a.u(hVar), a.u(hVar), a.u(hVar), a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(ReactionsTheme$$serializer.INSTANCE), hVar, hVar, a.u(MessageFrameSerializer.INSTANCE), a.u(m0Var), a.u(Truncation$$serializer.INSTANCE), a.u(BackgroundHighlight$$serializer.INSTANCE), hVar};
     }
 
@@ -100,14 +100,14 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
         if (c10.y()) {
             i11 = c10.k(descriptor2, 0);
             obj9 = c10.m(descriptor2, 1, ChangeType.Serializer.INSTANCE, null);
-            h hVar = h.f26275a;
+            h hVar = h.f26279a;
             obj10 = c10.v(descriptor2, 2, hVar, null);
             obj8 = c10.v(descriptor2, 3, hVar, null);
             obj7 = c10.m(descriptor2, 4, MessageSerializer.INSTANCE, null);
             obj6 = c10.v(descriptor2, 5, hVar, null);
             obj5 = c10.v(descriptor2, 6, hVar, null);
             obj4 = c10.v(descriptor2, 7, hVar, null);
-            a2 a2Var = a2.f26233a;
+            a2 a2Var = a2.f26237a;
             obj11 = c10.v(descriptor2, 8, a2Var, null);
             obj2 = c10.v(descriptor2, 9, a2Var, null);
             obj3 = c10.v(descriptor2, 10, a2Var, null);
@@ -115,7 +115,7 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
             z10 = c10.s(descriptor2, 12);
             z11 = c10.s(descriptor2, 13);
             obj15 = c10.v(descriptor2, 14, MessageFrameSerializer.INSTANCE, null);
-            obj14 = c10.v(descriptor2, 15, m0.f26308a, null);
+            obj14 = c10.v(descriptor2, 15, m0.f26312a, null);
             obj13 = c10.v(descriptor2, 16, Truncation$$serializer.INSTANCE, null);
             obj12 = c10.v(descriptor2, 17, BackgroundHighlight$$serializer.INSTANCE, null);
             z12 = c10.s(descriptor2, 18);
@@ -163,13 +163,13 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                         break;
                     case 2:
                         z14 = z14;
-                        obj19 = c10.v(descriptor2, 2, h.f26275a, obj19);
+                        obj19 = c10.v(descriptor2, 2, h.f26279a, obj19);
                         i13 |= 4;
                         i14 = i14;
                         break;
                     case 3:
                         z14 = z14;
-                        obj18 = c10.v(descriptor2, 3, h.f26275a, obj18);
+                        obj18 = c10.v(descriptor2, 3, h.f26279a, obj18);
                         i13 |= 8;
                         i14 = i14;
                         break;
@@ -181,37 +181,37 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                         break;
                     case 5:
                         z14 = z14;
-                        obj16 = c10.v(descriptor2, 5, h.f26275a, obj16);
+                        obj16 = c10.v(descriptor2, 5, h.f26279a, obj16);
                         i13 |= 32;
                         i14 = i14;
                         break;
                     case 6:
                         z14 = z14;
-                        obj24 = c10.v(descriptor2, 6, h.f26275a, obj24);
+                        obj24 = c10.v(descriptor2, 6, h.f26279a, obj24);
                         i13 |= 64;
                         i14 = i14;
                         break;
                     case 7:
                         z14 = z14;
-                        obj23 = c10.v(descriptor2, 7, h.f26275a, obj23);
+                        obj23 = c10.v(descriptor2, 7, h.f26279a, obj23);
                         i13 |= 128;
                         i14 = i14;
                         break;
                     case 8:
                         z14 = z14;
-                        obj22 = c10.v(descriptor2, 8, a2.f26233a, obj22);
+                        obj22 = c10.v(descriptor2, 8, a2.f26237a, obj22);
                         i13 |= 256;
                         i14 = i14;
                         break;
                     case 9:
                         z14 = z14;
-                        obj17 = c10.v(descriptor2, 9, a2.f26233a, obj17);
+                        obj17 = c10.v(descriptor2, 9, a2.f26237a, obj17);
                         i13 |= 512;
                         i14 = i14;
                         break;
                     case 10:
                         z14 = z14;
-                        obj21 = c10.v(descriptor2, 10, a2.f26233a, obj21);
+                        obj21 = c10.v(descriptor2, 10, a2.f26237a, obj21);
                         i13 |= 1024;
                         i14 = i14;
                         break;
@@ -241,7 +241,7 @@ public final class MessageRow$$serializer implements f0<MessageRow> {
                         i14 = i14;
                         break;
                     case 15:
-                        obj27 = c10.v(descriptor2, 15, m0.f26308a, obj27);
+                        obj27 = c10.v(descriptor2, 15, m0.f26312a, obj27);
                         i13 |= 32768;
                         z14 = z14;
                         obj28 = obj28;

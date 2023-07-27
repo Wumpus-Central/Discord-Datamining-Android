@@ -82,7 +82,7 @@ public final class BulletListContentNode extends ContentNode {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, w0.f26349a, self.start);
+            output.z(serialDesc, 0, w0.f26353a, self.start);
         }
         if (output.w(serialDesc, 1) || self.ordered) {
             z11 = true;

@@ -35,9 +35,9 @@ public final class ForumPostActionBar extends MessageAccessory {
 
     
     
-    public static  ForumPostActionBar m246copyLdU2QRA$default(ForumPostActionBar forumPostActionBar, String str, ForumPostActions forumPostActions, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, int i10, Object obj) {
+    public static  ForumPostActionBar m247copyLdU2QRA$default(ForumPostActionBar forumPostActionBar, String str, ForumPostActions forumPostActions, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = forumPostActionBar.mo216getMessageId3Eiw7ao();
+            str = forumPostActionBar.mo217getMessageId3Eiw7ao();
         }
         if ((i10 & 2) != 0) {
             forumPostActions = forumPostActionBar.postActions;
@@ -54,12 +54,12 @@ public final class ForumPostActionBar extends MessageAccessory {
         if ((i10 & 32) != 0) {
             reactionsTheme = forumPostActionBar.reactionsTheme;
         }
-        return forumPostActionBar.m248copyLdU2QRA(str, forumPostActions, list, z10, str2, reactionsTheme);
+        return forumPostActionBar.m249copyLdU2QRA(str, forumPostActions, list, z10, str2, reactionsTheme);
     }
 
     
-    public final String m247component13Eiw7ao() {
-        return mo216getMessageId3Eiw7ao();
+    public final String m248component13Eiw7ao() {
+        return mo217getMessageId3Eiw7ao();
     }
 
     public final ForumPostActions component2() {
@@ -83,7 +83,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     
-    public final ForumPostActionBar m248copyLdU2QRA(String messageId, ForumPostActions postActions, List<MessageReaction> list, boolean z10, String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme) {
+    public final ForumPostActionBar m249copyLdU2QRA(String messageId, ForumPostActions postActions, List<MessageReaction> list, boolean z10, String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme) {
         q.g(messageId, "messageId");
         q.g(postActions, "postActions");
         q.g(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
@@ -98,7 +98,7 @@ public final class ForumPostActionBar extends MessageAccessory {
             return false;
         }
         ForumPostActionBar forumPostActionBar = (ForumPostActionBar) obj;
-        return MessageId.m595equalsimpl0(mo216getMessageId3Eiw7ao(), forumPostActionBar.mo216getMessageId3Eiw7ao()) && q.b(this.postActions, forumPostActionBar.postActions) && q.b(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && q.b(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && q.b(this.reactionsTheme, forumPostActionBar.reactionsTheme);
+        return MessageId.m596equalsimpl0(mo217getMessageId3Eiw7ao(), forumPostActionBar.mo217getMessageId3Eiw7ao()) && q.b(this.postActions, forumPostActionBar.postActions) && q.b(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && q.b(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && q.b(this.reactionsTheme, forumPostActionBar.reactionsTheme);
     }
 
     public final String getAddNewReactionAccessibilityLabel() {
@@ -111,7 +111,7 @@ public final class ForumPostActionBar extends MessageAccessory {
 
     @Override 
     
-    public String mo216getMessageId3Eiw7ao() {
+    public String mo217getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -128,7 +128,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public int hashCode() {
-        int i10 = ((MessageId.m596hashCodeimpl(mo216getMessageId3Eiw7ao()) * 31) + this.postActions.hashCode()) * 31;
+        int i10 = ((MessageId.m597hashCodeimpl(mo217getMessageId3Eiw7ao()) * 31) + this.postActions.hashCode()) * 31;
         List<MessageReaction> list = this.reactions;
         int i11 = 0;
         int hashCode = (i10 + (list == null ? 0 : list.hashCode())) * 31;
@@ -148,7 +148,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(mo216getMessageId3Eiw7ao());
+        String str = MessageId.m598toStringimpl(mo217getMessageId3Eiw7ao());
         ForumPostActions forumPostActions = this.postActions;
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;

@@ -240,7 +240,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(part, "$part");
         q.g(this$0, "this$0");
         q.g(holder, "$holder");
-        this$0.m196onMediaClickedl3ndGo(holder, part.mo216getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
+        this$0.m196onMediaClickedl3ndGo(holder, part.mo217getMessageId3Eiw7ao(), ((ImageAttachmentMessageAccessory) part).getAttachmentIndex(), "attachment", null, null, ViewResizeMode.Fill);
     }
 
     
@@ -281,7 +281,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m574unboximpl());
+        chatEventHandler.mo162onTapFollowForumPostpfaIj0E(str, channelId.m575unboximpl());
     }
 
     
@@ -294,10 +294,10 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         }
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        long j10 = channelId.m574unboximpl();
+        long j10 = channelId.m575unboximpl();
         GuildId guildId = this$0.guildId;
         q.d(guildId);
-        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m587unboximpl());
+        chatEventHandler.mo173onTapShareForumPostmgk6anA(j10, guildId.m588unboximpl());
     }
 
     
@@ -325,7 +325,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.d(str);
         ChannelId channelId = this$0.channelId;
         q.d(channelId);
-        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m574unboximpl());
+        chatEventHandler.mo170onTapReactionOverflowpfaIj0E(str, channelId.m575unboximpl());
     }
 
     
@@ -493,7 +493,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         q.g(messageId, "messageId");
         q.g(items, "items");
         this.messageId = messageId;
-        this.channelId = ChannelId.m565boximpl(j10);
+        this.channelId = ChannelId.m566boximpl(j10);
         this.guildId = guildId;
         if (ChatView.Companion.getAreChatAnimationsEnabled()) {
             List<? extends MessageAccessory> list = this.items;
@@ -649,9 +649,9 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
             }
             uploadProgressViewHolder.bind(uploadProgress, chatEventHandler3);
         } else if (messageAccessory instanceof ReactionsMessageAccessory) {
-            String str = messageAccessory.mo216getMessageId3Eiw7ao();
+            String str = messageAccessory.mo217getMessageId3Eiw7ao();
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) messageAccessory;
-            ((ReactionsViewHolder) holder).m341bindJJXpD5M(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
+            ((ReactionsViewHolder) holder).m342bindJJXpD5M(str, reactionsMessageAccessory.getReactions(), reactionsMessageAccessory.getCanAddNewReactions(), reactionsMessageAccessory.getCanAddNewBurstReactions(), reactionsMessageAccessory.getAddReactionLabel(), reactionsMessageAccessory.getAddNewReactionAccessibilityLabel(), reactionsMessageAccessory.getAddNewBurstReactionAccessibilityLabel(), reactionsMessageAccessory.getReactionsTheme(), new View.OnClickListener() { 
                 @Override 
                 public final void onClick(View view) {
                     MessageAccessoriesAdapter.onBindViewHolder$lambda$1(MessageAccessoriesAdapter.this, view);
@@ -817,7 +817,7 @@ public final class MessageAccessoriesAdapter extends RecyclerView.Adapter<Messag
         } else {
             throw new ff.q();
         }
-        ForceExhaustiveKt.forceExhaustive(Unit.f20666a);
+        ForceExhaustiveKt.forceExhaustive(Unit.f20670a);
     }
 
     @Override 

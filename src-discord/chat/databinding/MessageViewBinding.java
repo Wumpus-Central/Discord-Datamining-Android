@@ -9,6 +9,7 @@ import androidx.constraintlayout.widget.Guideline;
 import com.discord.chat.R;
 import com.discord.chat.presentation.message.ConnectionsRoleTagView;
 import com.discord.chat.presentation.message.MessageAccessoriesView;
+import com.discord.chat.presentation.message.MessageAltRemixTagView;
 import com.discord.chat.presentation.message.MessageFrameHeaderView;
 import com.discord.chat.presentation.message.MessageHighlightHeader;
 import com.discord.chat.presentation.message.MessageTagView;
@@ -28,6 +29,7 @@ public final class MessageViewBinding {
     public final ConnectionsRoleTagView connectionsRoleTag;
     public final SimpleDraweeView guildCommunicationDisabledIcon;
     public final MessageHighlightHeader highlightHeader;
+    public final MessageAltRemixTagView messageAltRemixTagView;
     public final Guideline messageEndGuideline;
     public final MessageFrameHeaderView messageFrameHeader;
     public final Barrier messageHeaderBarrier;
@@ -41,7 +43,7 @@ public final class MessageViewBinding {
     public final ThreadStarterMessageHeaderView threadStarterHeader;
     public final TextView timestamp;
 
-    private MessageViewBinding(View view, MessageAccessoriesView messageAccessoriesView, SimpleDraweeView simpleDraweeView, SimpleDraweeView simpleDraweeView2, TextView textView, ConnectionsRoleTagView connectionsRoleTagView, SimpleDraweeView simpleDraweeView3, MessageHighlightHeader messageHighlightHeader, Guideline guideline, MessageFrameHeaderView messageFrameHeaderView, Barrier barrier, View view2, MessageTagView messageTagView, MessageViewReplyPreview messageViewReplyPreview, RoleDotView roleDotView, RoleIconView roleIconView, SimpleDraweeView simpleDraweeView4, ThreadStarterMessageHeaderView threadStarterMessageHeaderView, TextView textView2) {
+    private MessageViewBinding(View view, MessageAccessoriesView messageAccessoriesView, SimpleDraweeView simpleDraweeView, SimpleDraweeView simpleDraweeView2, TextView textView, ConnectionsRoleTagView connectionsRoleTagView, SimpleDraweeView simpleDraweeView3, MessageHighlightHeader messageHighlightHeader, MessageAltRemixTagView messageAltRemixTagView, Guideline guideline, MessageFrameHeaderView messageFrameHeaderView, Barrier barrier, View view2, MessageTagView messageTagView, MessageViewReplyPreview messageViewReplyPreview, RoleDotView roleDotView, RoleIconView roleIconView, SimpleDraweeView simpleDraweeView4, ThreadStarterMessageHeaderView threadStarterMessageHeaderView, TextView textView2) {
         this.rootView = view;
         this.accessoriesView = messageAccessoriesView;
         this.authorAvatar = simpleDraweeView;
@@ -50,6 +52,7 @@ public final class MessageViewBinding {
         this.connectionsRoleTag = connectionsRoleTagView;
         this.guildCommunicationDisabledIcon = simpleDraweeView3;
         this.highlightHeader = messageHighlightHeader;
+        this.messageAltRemixTagView = messageAltRemixTagView;
         this.messageEndGuideline = guideline;
         this.messageFrameHeader = messageFrameHeaderView;
         this.messageHeaderBarrier = barrier;
@@ -86,37 +89,41 @@ public final class MessageViewBinding {
                                 i10 = R.id.highlight_header;
                                 MessageHighlightHeader messageHighlightHeader = (MessageHighlightHeader) a.a(view, i10);
                                 if (messageHighlightHeader != null) {
-                                    i10 = R.id.message_end_guideline;
-                                    Guideline guideline = (Guideline) a.a(view, i10);
-                                    if (guideline != null) {
-                                        i10 = R.id.message_frame_header;
-                                        MessageFrameHeaderView messageFrameHeaderView = (MessageFrameHeaderView) a.a(view, i10);
-                                        if (messageFrameHeaderView != null) {
-                                            i10 = R.id.message_header_barrier;
-                                            Barrier barrier = (Barrier) a.a(view, i10);
-                                            if (!(barrier == null || (a10 = a.a(view, (i10 = R.id.message_header_divider))) == null)) {
-                                                i10 = R.id.message_tag_view;
-                                                MessageTagView messageTagView = (MessageTagView) a.a(view, i10);
-                                                if (messageTagView != null) {
-                                                    i10 = R.id.reply_preview;
-                                                    MessageViewReplyPreview messageViewReplyPreview = (MessageViewReplyPreview) a.a(view, i10);
-                                                    if (messageViewReplyPreview != null) {
-                                                        i10 = R.id.role_dot;
-                                                        RoleDotView roleDotView = (RoleDotView) a.a(view, i10);
-                                                        if (roleDotView != null) {
-                                                            i10 = R.id.role_icon;
-                                                            RoleIconView roleIconView = (RoleIconView) a.a(view, i10);
-                                                            if (roleIconView != null) {
-                                                                i10 = R.id.suppress_notifications_icon;
-                                                                SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
-                                                                if (simpleDraweeView4 != null) {
-                                                                    i10 = R.id.thread_starter_header;
-                                                                    ThreadStarterMessageHeaderView threadStarterMessageHeaderView = (ThreadStarterMessageHeaderView) a.a(view, i10);
-                                                                    if (threadStarterMessageHeaderView != null) {
-                                                                        i10 = R.id.timestamp;
-                                                                        TextView textView2 = (TextView) a.a(view, i10);
-                                                                        if (textView2 != null) {
-                                                                            return new MessageViewBinding(view, messageAccessoriesView, simpleDraweeView, simpleDraweeView2, textView, connectionsRoleTagView, simpleDraweeView3, messageHighlightHeader, guideline, messageFrameHeaderView, barrier, a10, messageTagView, messageViewReplyPreview, roleDotView, roleIconView, simpleDraweeView4, threadStarterMessageHeaderView, textView2);
+                                    i10 = R.id.message_alt_remix_tag_view;
+                                    MessageAltRemixTagView messageAltRemixTagView = (MessageAltRemixTagView) a.a(view, i10);
+                                    if (messageAltRemixTagView != null) {
+                                        i10 = R.id.message_end_guideline;
+                                        Guideline guideline = (Guideline) a.a(view, i10);
+                                        if (guideline != null) {
+                                            i10 = R.id.message_frame_header;
+                                            MessageFrameHeaderView messageFrameHeaderView = (MessageFrameHeaderView) a.a(view, i10);
+                                            if (messageFrameHeaderView != null) {
+                                                i10 = R.id.message_header_barrier;
+                                                Barrier barrier = (Barrier) a.a(view, i10);
+                                                if (!(barrier == null || (a10 = a.a(view, (i10 = R.id.message_header_divider))) == null)) {
+                                                    i10 = R.id.message_tag_view;
+                                                    MessageTagView messageTagView = (MessageTagView) a.a(view, i10);
+                                                    if (messageTagView != null) {
+                                                        i10 = R.id.reply_preview;
+                                                        MessageViewReplyPreview messageViewReplyPreview = (MessageViewReplyPreview) a.a(view, i10);
+                                                        if (messageViewReplyPreview != null) {
+                                                            i10 = R.id.role_dot;
+                                                            RoleDotView roleDotView = (RoleDotView) a.a(view, i10);
+                                                            if (roleDotView != null) {
+                                                                i10 = R.id.role_icon;
+                                                                RoleIconView roleIconView = (RoleIconView) a.a(view, i10);
+                                                                if (roleIconView != null) {
+                                                                    i10 = R.id.suppress_notifications_icon;
+                                                                    SimpleDraweeView simpleDraweeView4 = (SimpleDraweeView) a.a(view, i10);
+                                                                    if (simpleDraweeView4 != null) {
+                                                                        i10 = R.id.thread_starter_header;
+                                                                        ThreadStarterMessageHeaderView threadStarterMessageHeaderView = (ThreadStarterMessageHeaderView) a.a(view, i10);
+                                                                        if (threadStarterMessageHeaderView != null) {
+                                                                            i10 = R.id.timestamp;
+                                                                            TextView textView2 = (TextView) a.a(view, i10);
+                                                                            if (textView2 != null) {
+                                                                                return new MessageViewBinding(view, messageAccessoriesView, simpleDraweeView, simpleDraweeView2, textView, connectionsRoleTagView, simpleDraweeView3, messageHighlightHeader, messageAltRemixTagView, guideline, messageFrameHeaderView, barrier, a10, messageTagView, messageViewReplyPreview, roleDotView, roleIconView, simpleDraweeView4, threadStarterMessageHeaderView, textView2);
+                                                                            }
                                                                         }
                                                                     }
                                                                 }

@@ -65,7 +65,7 @@ public final class NotificationChannels {
         private final ChannelGroup group;
 
         
-        private final String f7190id;
+        private final String f7194id;
         private final int importance;
         private final String legacyId;
 
@@ -195,7 +195,7 @@ public final class NotificationChannels {
         }
 
         Category(String str, int i10, ChannelGroup channelGroup, String str2) {
-            this.f7190id = str;
+            this.f7194id = str;
             this.importance = i10;
             this.group = channelGroup;
             this.legacyId = str2;
@@ -206,7 +206,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7190id;
+            return this.f7194id;
         }
 
         public final int getImportance() {
@@ -235,7 +235,7 @@ public final class NotificationChannels {
         private final String groupId;
 
         
-        private final String f7191id;
+        private final String f7195id;
 
         @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels$ChannelGroup$Companion;", "", "()V", "defaultLabel", "", "id", "notification_renderer_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
         
@@ -266,7 +266,7 @@ public final class NotificationChannels {
         }
 
         ChannelGroup(String str, String str2) {
-            this.f7191id = str;
+            this.f7195id = str;
             this.groupId = str2;
         }
 
@@ -275,7 +275,7 @@ public final class NotificationChannels {
         }
 
         public final String getId() {
-            return this.f7191id;
+            return this.f7195id;
         }
     }
 

@@ -63,7 +63,7 @@ public final class TapDismissMediaPostSharePromptData$$serializer implements f0<
         }
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
-        return new TapDismissMediaPostSharePromptData(i10, messageId != null ? messageId.m599unboximpl() : null, null, null);
+        return new TapDismissMediaPostSharePromptData(i10, messageId != null ? messageId.m600unboximpl() : null, null, null);
     }
 
     @Override 

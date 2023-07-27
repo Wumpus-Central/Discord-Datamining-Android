@@ -19,7 +19,7 @@ final class NativeMapExtensionsKt$json$1 extends s implements Function1<JsonBuil
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

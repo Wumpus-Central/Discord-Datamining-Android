@@ -59,10 +59,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26233a;
-        m0 m0Var = m0.f26308a;
-        h hVar = h.f26275a;
-        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f26258a), a.u(a2Var), hVar, a.u(b.f21156c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
+        a2 a2Var = a2.f26237a;
+        m0 m0Var = m0.f26312a;
+        h hVar = h.f26279a;
+        return new KSerializer[]{a2Var, a.u(a2Var), a2Var, a2Var, a.u(m0Var), a.u(m0Var), hVar, a.u(a2Var), a.u(a2Var), a.u(a2Var), a.u(a2Var), hVar, a.u(m0Var), a.u(a2Var), a.u(a2Var), a.u(e0.f26262a), a.u(a2Var), hVar, a.u(b.f21160c), a.u(a2Var), a.u(m0Var), a.u(m0Var)};
     }
 
     @Override 
@@ -96,11 +96,11 @@ public final class Attachment$$serializer implements f0<Attachment> {
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
             str3 = c10.t(descriptor2, 0);
-            a2 a2Var = a2.f26233a;
+            a2 a2Var = a2.f26237a;
             obj12 = c10.v(descriptor2, 1, a2Var, null);
             str2 = c10.t(descriptor2, 2);
             str = c10.t(descriptor2, 3);
-            m0 m0Var = m0.f26308a;
+            m0 m0Var = m0.f26312a;
             obj4 = c10.v(descriptor2, 4, m0Var, null);
             obj5 = c10.v(descriptor2, 5, m0Var, null);
             z10 = c10.s(descriptor2, 6);
@@ -112,10 +112,10 @@ public final class Attachment$$serializer implements f0<Attachment> {
             obj16 = c10.v(descriptor2, 12, m0Var, null);
             obj13 = c10.v(descriptor2, 13, a2Var, null);
             obj6 = c10.v(descriptor2, 14, a2Var, null);
-            obj7 = c10.v(descriptor2, 15, e0.f26258a, null);
+            obj7 = c10.v(descriptor2, 15, e0.f26262a, null);
             obj11 = c10.v(descriptor2, 16, a2Var, null);
             z11 = c10.s(descriptor2, 17);
-            obj15 = c10.v(descriptor2, 18, b.f21156c, null);
+            obj15 = c10.v(descriptor2, 18, b.f21160c, null);
             obj10 = c10.v(descriptor2, 19, a2Var, null);
             obj = c10.v(descriptor2, 20, m0Var, null);
             obj14 = c10.v(descriptor2, 21, m0Var, null);
@@ -168,7 +168,7 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj21 = obj21;
                         obj20 = obj20;
-                        obj28 = c10.v(descriptor2, 1, a2.f26233a, obj28);
+                        obj28 = c10.v(descriptor2, 1, a2.f26237a, obj28);
                         i12 |= 2;
                         obj29 = obj29;
                         break;
@@ -193,14 +193,14 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         obj19 = obj19;
                         obj20 = obj20;
                         obj21 = obj21;
-                        obj29 = c10.v(descriptor2, 4, m0.f26308a, obj29);
+                        obj29 = c10.v(descriptor2, 4, m0.f26312a, obj29);
                         i12 |= 16;
                         break;
                     case 5:
                         obj18 = obj18;
                         obj19 = obj19;
                         obj20 = obj20;
-                        obj30 = c10.v(descriptor2, 5, m0.f26308a, obj30);
+                        obj30 = c10.v(descriptor2, 5, m0.f26312a, obj30);
                         i12 |= 32;
                         break;
                     case 6:
@@ -213,24 +213,24 @@ public final class Attachment$$serializer implements f0<Attachment> {
                     case 7:
                         obj18 = obj18;
                         obj19 = obj19;
-                        obj20 = c10.v(descriptor2, 7, a2.f26233a, obj20);
+                        obj20 = c10.v(descriptor2, 7, a2.f26237a, obj20);
                         i12 |= 128;
                         break;
                     case 8:
-                        obj21 = c10.v(descriptor2, 8, a2.f26233a, obj21);
+                        obj21 = c10.v(descriptor2, 8, a2.f26237a, obj21);
                         i12 |= 256;
                         obj18 = obj18;
                         obj20 = obj20;
                         break;
                     case 9:
                         obj21 = obj21;
-                        obj19 = c10.v(descriptor2, 9, a2.f26233a, obj19);
+                        obj19 = c10.v(descriptor2, 9, a2.f26237a, obj19);
                         i12 |= 512;
                         obj20 = obj20;
                         break;
                     case 10:
                         obj21 = obj21;
-                        obj27 = c10.v(descriptor2, 10, a2.f26233a, obj27);
+                        obj27 = c10.v(descriptor2, 10, a2.f26237a, obj27);
                         i12 |= 1024;
                         obj20 = obj20;
                         break;
@@ -242,32 +242,32 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 12:
                         obj21 = obj21;
-                        obj26 = c10.v(descriptor2, 12, m0.f26308a, obj26);
+                        obj26 = c10.v(descriptor2, 12, m0.f26312a, obj26);
                         i12 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         obj20 = obj20;
                         break;
                     case 13:
                         obj21 = obj21;
-                        obj13 = c10.v(descriptor2, 13, a2.f26233a, obj13);
+                        obj13 = c10.v(descriptor2, 13, a2.f26237a, obj13);
                         i12 |= 8192;
                         obj20 = obj20;
                         break;
                     case 14:
                         obj21 = obj21;
-                        obj25 = c10.v(descriptor2, 14, a2.f26233a, obj25);
+                        obj25 = c10.v(descriptor2, 14, a2.f26237a, obj25);
                         i12 |= 16384;
                         obj20 = obj20;
                         break;
                     case 15:
                         obj21 = obj21;
-                        obj24 = c10.v(descriptor2, 15, e0.f26258a, obj24);
+                        obj24 = c10.v(descriptor2, 15, e0.f26262a, obj24);
                         i11 = 32768;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 16:
                         obj21 = obj21;
-                        obj17 = c10.v(descriptor2, 16, a2.f26233a, obj17);
+                        obj17 = c10.v(descriptor2, 16, a2.f26237a, obj17);
                         i11 = 65536;
                         i12 |= i11;
                         obj20 = obj20;
@@ -280,28 +280,28 @@ public final class Attachment$$serializer implements f0<Attachment> {
                         break;
                     case 18:
                         obj21 = obj21;
-                        obj23 = c10.v(descriptor2, 18, b.f21156c, obj23);
+                        obj23 = c10.v(descriptor2, 18, b.f21160c, obj23);
                         i11 = 262144;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 19:
                         obj21 = obj21;
-                        obj31 = c10.v(descriptor2, 19, a2.f26233a, obj31);
+                        obj31 = c10.v(descriptor2, 19, a2.f26237a, obj31);
                         i11 = 524288;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 20:
                         obj21 = obj21;
-                        obj18 = c10.v(descriptor2, 20, m0.f26308a, obj18);
+                        obj18 = c10.v(descriptor2, 20, m0.f26312a, obj18);
                         i11 = 1048576;
                         i12 |= i11;
                         obj20 = obj20;
                         break;
                     case 21:
                         obj21 = obj21;
-                        obj22 = c10.v(descriptor2, 21, m0.f26308a, obj22);
+                        obj22 = c10.v(descriptor2, 21, m0.f26312a, obj22);
                         i11 = 2097152;
                         i12 |= i11;
                         obj20 = obj20;

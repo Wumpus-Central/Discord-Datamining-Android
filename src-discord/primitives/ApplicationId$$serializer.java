@@ -29,18 +29,18 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26349a};
+        return new KSerializer[]{w0.f26353a};
     }
 
     @Override 
     public   Object deserialize(Decoder decoder) {
-        return ApplicationId.m552boximpl(m562deserializeUV2lyTI(decoder));
+        return ApplicationId.m553boximpl(m563deserializeUV2lyTI(decoder));
     }
 
     
-    public long m562deserializeUV2lyTI(Decoder decoder) {
+    public long m563deserializeUV2lyTI(Decoder decoder) {
         q.g(decoder, "decoder");
-        return ApplicationId.m553constructorimpl(decoder.z(getDescriptor()).r());
+        return ApplicationId.m554constructorimpl(decoder.z(getDescriptor()).r());
     }
 
     @Override 
@@ -50,11 +50,11 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override 
     public   void serialize(Encoder encoder, Object obj) {
-        m563serializemvAn8kk(encoder, ((ApplicationId) obj).m561unboximpl());
+        m564serializemvAn8kk(encoder, ((ApplicationId) obj).m562unboximpl());
     }
 
     
-    public void m563serializemvAn8kk(Encoder encoder, long j10) {
+    public void m564serializemvAn8kk(Encoder encoder, long j10) {
         q.g(encoder, "encoder");
         Encoder y10 = encoder.y(getDescriptor());
         if (y10 != null) {

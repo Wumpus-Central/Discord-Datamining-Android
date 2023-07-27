@@ -18,8 +18,8 @@ final class MessageBundleConversationDelegate$onTapReply$1 extends s implements 
 
     @Override 
     public   Unit invoke(MessageId messageId) {
-        m188invoke1xi1bu0(messageId.m599unboximpl());
-        return Unit.f20666a;
+        m188invoke1xi1bu0(messageId.m600unboximpl());
+        return Unit.f20670a;
     }
 
     

@@ -44,8 +44,8 @@ public final class MobileVoiceOverlaySelectorResult {
         if (31 != (i10 & 31)) {
             n1.b(i10, 31, MobileVoiceOverlaySelectorResult$$serializer.INSTANCE.getDescriptor());
         }
-        this.guildId = guildId.m587unboximpl();
-        this.channelId = channelId.m574unboximpl();
+        this.guildId = guildId.m588unboximpl();
+        this.channelId = channelId.m575unboximpl();
         this.channelName = str;
         this.guildName = str2;
         this.categoryName = str3;
@@ -63,20 +63,20 @@ public final class MobileVoiceOverlaySelectorResult {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.n(serialDesc, 0, GuildId$$serializer.INSTANCE, GuildId.m578boximpl(self.guildId));
-        output.n(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m565boximpl(self.channelId));
+        output.n(serialDesc, 0, GuildId$$serializer.INSTANCE, GuildId.m579boximpl(self.guildId));
+        output.n(serialDesc, 1, ChannelId$$serializer.INSTANCE, ChannelId.m566boximpl(self.channelId));
         output.s(serialDesc, 2, self.channelName);
         output.s(serialDesc, 3, self.guildName);
         output.s(serialDesc, 4, self.categoryName);
     }
 
     
-    public final long m481component1fYKD8eg() {
+    public final long m482component1fYKD8eg() {
         return this.guildId;
     }
 
     
-    public final long m482component2o4g7jtM() {
+    public final long m483component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -93,7 +93,7 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     
-    public final MobileVoiceOverlaySelectorResult m483copyc25twaQ(long j10, long j11, String channelName, String guildName, String categoryName) {
+    public final MobileVoiceOverlaySelectorResult m484copyc25twaQ(long j10, long j11, String channelName, String guildName, String categoryName) {
         q.g(channelName, "channelName");
         q.g(guildName, "guildName");
         q.g(categoryName, "categoryName");
@@ -108,7 +108,7 @@ public final class MobileVoiceOverlaySelectorResult {
             return false;
         }
         MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult = (MobileVoiceOverlaySelectorResult) obj;
-        return GuildId.m582equalsimpl0(this.guildId, mobileVoiceOverlaySelectorResult.guildId) && ChannelId.m569equalsimpl0(this.channelId, mobileVoiceOverlaySelectorResult.channelId) && q.b(this.channelName, mobileVoiceOverlaySelectorResult.channelName) && q.b(this.guildName, mobileVoiceOverlaySelectorResult.guildName) && q.b(this.categoryName, mobileVoiceOverlaySelectorResult.categoryName);
+        return GuildId.m583equalsimpl0(this.guildId, mobileVoiceOverlaySelectorResult.guildId) && ChannelId.m570equalsimpl0(this.channelId, mobileVoiceOverlaySelectorResult.channelId) && q.b(this.channelName, mobileVoiceOverlaySelectorResult.channelName) && q.b(this.guildName, mobileVoiceOverlaySelectorResult.guildName) && q.b(this.categoryName, mobileVoiceOverlaySelectorResult.categoryName);
     }
 
     public final String getCategoryName() {
@@ -116,7 +116,7 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     
-    public final long m484getChannelIdo4g7jtM() {
+    public final long m485getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -125,7 +125,7 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     
-    public final long m485getGuildIdfYKD8eg() {
+    public final long m486getGuildIdfYKD8eg() {
         return this.guildId;
     }
 
@@ -134,12 +134,12 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     public int hashCode() {
-        return (((((((GuildId.m583hashCodeimpl(this.guildId) * 31) + ChannelId.m570hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31) + this.categoryName.hashCode();
+        return (((((((GuildId.m584hashCodeimpl(this.guildId) * 31) + ChannelId.m571hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31) + this.categoryName.hashCode();
     }
 
     public String toString() {
-        String str = GuildId.m585toStringimpl(this.guildId);
-        String str2 = ChannelId.m572toStringimpl(this.channelId);
+        String str = GuildId.m586toStringimpl(this.guildId);
+        String str2 = ChannelId.m573toStringimpl(this.channelId);
         String str3 = this.channelName;
         String str4 = this.guildName;
         String str5 = this.categoryName;

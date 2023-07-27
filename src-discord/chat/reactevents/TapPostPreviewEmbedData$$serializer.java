@@ -37,7 +37,7 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26233a;
+        a2 a2Var = a2.f26237a;
         return new KSerializer[]{a2Var, a2Var, a2Var, MessageId$$serializer.INSTANCE};
     }
 
@@ -94,7 +94,7 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
         c10.b(descriptor2);
         MessageId messageId = (MessageId) obj;
         if (messageId != null) {
-            str4 = messageId.m599unboximpl();
+            str4 = messageId.m600unboximpl();
         }
         return new TapPostPreviewEmbedData(i10, str3, str2, str, str4, null, null);
     }

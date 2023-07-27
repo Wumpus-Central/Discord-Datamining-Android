@@ -31,7 +31,7 @@ public final class Sticker implements Parcelable {
     private final GuildId guildId;
 
     
-    private final long f7189id;
+    private final long f7193id;
     private final String name;
     private final Long packId;
     private final String tags;
@@ -62,7 +62,7 @@ public final class Sticker implements Parcelable {
         public final Sticker createFromParcel(Parcel parcel) {
             Boolean bool;
             q.g(parcel, "parcel");
-            long j10 = ((StickerId) parcel.readParcelable(Sticker.class.getClassLoader())).m625unboximpl();
+            long j10 = ((StickerId) parcel.readParcelable(Sticker.class.getClassLoader())).m626unboximpl();
             String readString = parcel.readString();
             Long valueOf = parcel.readInt() == 0 ? null : Long.valueOf(parcel.readLong());
             GuildId guildId = (GuildId) parcel.readParcelable(Sticker.class.getClassLoader());
@@ -118,11 +118,11 @@ public final class Sticker implements Parcelable {
             n1.b(i10, 2, Sticker$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            j10 = StickerId.m617constructorimpl(0L);
+            j10 = StickerId.m618constructorimpl(0L);
         } else {
-            j10 = stickerId.m625unboximpl();
+            j10 = stickerId.m626unboximpl();
         }
-        this.f7189id = j10;
+        this.f7193id = j10;
         this.name = str;
         if ((i10 & 4) == 0) {
             this.packId = null;
@@ -179,11 +179,11 @@ public final class Sticker implements Parcelable {
     }
 
     
-    public static  void m538getGuildIdqOKuAAo$annotations() {
+    public static  void m539getGuildIdqOKuAAo$annotations() {
     }
 
     
-    public static  void m539getIde_wqtJY$annotations() {
+    public static  void m540getIde_wqtJY$annotations() {
     }
 
     public static  void getName$annotations() {
@@ -210,13 +210,13 @@ public final class Sticker implements Parcelable {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z17 = false;
-        if (!output.w(serialDesc, 0) && StickerId.m620equalsimpl0(self.f7189id, StickerId.m617constructorimpl(0L))) {
+        if (!output.w(serialDesc, 0) && StickerId.m621equalsimpl0(self.f7193id, StickerId.m618constructorimpl(0L))) {
             z10 = false;
         } else {
             z10 = true;
         }
         if (z10) {
-            output.n(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m616boximpl(self.f7189id));
+            output.n(serialDesc, 0, StickerId$$serializer.INSTANCE, StickerId.m617boximpl(self.f7193id));
         }
         output.s(serialDesc, 1, self.name);
         if (!output.w(serialDesc, 2) && self.packId == null) {
@@ -225,7 +225,7 @@ public final class Sticker implements Parcelable {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 2, w0.f26349a, self.packId);
+            output.z(serialDesc, 2, w0.f26353a, self.packId);
         }
         if (!output.w(serialDesc, 3) && self.guildId == null) {
             z12 = false;
@@ -271,13 +271,13 @@ public final class Sticker implements Parcelable {
             z17 = true;
         }
         if (z17) {
-            output.z(serialDesc, 8, h.f26275a, self.available);
+            output.z(serialDesc, 8, h.f26279a, self.available);
         }
     }
 
     
-    public final long m540component1e_wqtJY() {
-        return this.f7189id;
+    public final long m541component1e_wqtJY() {
+        return this.f7193id;
     }
 
     public final String component2() {
@@ -289,7 +289,7 @@ public final class Sticker implements Parcelable {
     }
 
     
-    public final GuildId m541component4qOKuAAo() {
+    public final GuildId m542component4qOKuAAo() {
         return this.guildId;
     }
 
@@ -314,7 +314,7 @@ public final class Sticker implements Parcelable {
     }
 
     
-    public final Sticker m542copyfJhvhH4(long j10, String name, Long l10, GuildId guildId, String description, StickerFormatType formatType, String tags, StickerType type, Boolean bool) {
+    public final Sticker m543copyfJhvhH4(long j10, String name, Long l10, GuildId guildId, String description, StickerFormatType formatType, String tags, StickerType type, Boolean bool) {
         q.g(name, "name");
         q.g(description, "description");
         q.g(formatType, "formatType");
@@ -336,7 +336,7 @@ public final class Sticker implements Parcelable {
             return false;
         }
         Sticker sticker = (Sticker) obj;
-        return StickerId.m620equalsimpl0(this.f7189id, sticker.f7189id) && q.b(this.name, sticker.name) && q.b(this.packId, sticker.packId) && q.b(this.guildId, sticker.guildId) && q.b(this.description, sticker.description) && this.formatType == sticker.formatType && q.b(this.tags, sticker.tags) && this.type == sticker.type && q.b(this.available, sticker.available);
+        return StickerId.m621equalsimpl0(this.f7193id, sticker.f7193id) && q.b(this.name, sticker.name) && q.b(this.packId, sticker.packId) && q.b(this.guildId, sticker.guildId) && q.b(this.description, sticker.description) && this.formatType == sticker.formatType && q.b(this.tags, sticker.tags) && this.type == sticker.type && q.b(this.available, sticker.available);
     }
 
     public final Boolean getAvailable() {
@@ -366,13 +366,13 @@ public final class Sticker implements Parcelable {
     }
 
     
-    public final GuildId m543getGuildIdqOKuAAo() {
+    public final GuildId m544getGuildIdqOKuAAo() {
         return this.guildId;
     }
 
     
-    public final long m544getIde_wqtJY() {
-        return this.f7189id;
+    public final long m545getIde_wqtJY() {
+        return this.f7193id;
     }
 
     public final String getName() {
@@ -392,12 +392,12 @@ public final class Sticker implements Parcelable {
     }
 
     public int hashCode() {
-        int i10 = ((StickerId.m621hashCodeimpl(this.f7189id) * 31) + this.name.hashCode()) * 31;
+        int i10 = ((StickerId.m622hashCodeimpl(this.f7193id) * 31) + this.name.hashCode()) * 31;
         Long l10 = this.packId;
         int i11 = 0;
         int hashCode = (i10 + (l10 == null ? 0 : l10.hashCode())) * 31;
         GuildId guildId = this.guildId;
-        int i12 = (((((((((hashCode + (guildId == null ? 0 : GuildId.m583hashCodeimpl(guildId.m587unboximpl()))) * 31) + this.description.hashCode()) * 31) + this.formatType.hashCode()) * 31) + this.tags.hashCode()) * 31) + this.type.hashCode()) * 31;
+        int i12 = (((((((((hashCode + (guildId == null ? 0 : GuildId.m584hashCodeimpl(guildId.m588unboximpl()))) * 31) + this.description.hashCode()) * 31) + this.formatType.hashCode()) * 31) + this.tags.hashCode()) * 31) + this.type.hashCode()) * 31;
         Boolean bool = this.available;
         if (bool != null) {
             i11 = bool.hashCode();
@@ -411,7 +411,7 @@ public final class Sticker implements Parcelable {
     }
 
     public String toString() {
-        String str = StickerId.m623toStringimpl(this.f7189id);
+        String str = StickerId.m624toStringimpl(this.f7193id);
         String str2 = this.name;
         Long l10 = this.packId;
         GuildId guildId = this.guildId;
@@ -426,7 +426,7 @@ public final class Sticker implements Parcelable {
     @Override 
     public void writeToParcel(Parcel out, int i10) {
         q.g(out, "out");
-        out.writeParcelable(StickerId.m616boximpl(this.f7189id), i10);
+        out.writeParcelable(StickerId.m617boximpl(this.f7193id), i10);
         out.writeString(this.name);
         Long l10 = this.packId;
         if (l10 == null) {
@@ -450,7 +450,7 @@ public final class Sticker implements Parcelable {
     }
 
     private Sticker(long j10, String str, Long l10, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool) {
-        this.f7189id = j10;
+        this.f7193id = j10;
         this.name = str;
         this.packId = l10;
         this.guildId = guildId;
@@ -462,6 +462,6 @@ public final class Sticker implements Parcelable {
     }
 
     public  Sticker(long j10, String str, Long l10, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? StickerId.m617constructorimpl(0L) : j10, str, (i10 & 4) != 0 ? null : l10, (i10 & 8) != 0 ? null : guildId, (i10 & 16) != 0 ? "" : str2, (i10 & 32) != 0 ? StickerFormatType.Companion.fromInt(0) : stickerFormatType, (i10 & 64) != 0 ? "" : str3, (i10 & 128) != 0 ? StickerType.Companion.fromInt(0) : stickerType, (i10 & 256) != 0 ? null : bool, null);
+        this((i10 & 1) != 0 ? StickerId.m618constructorimpl(0L) : j10, str, (i10 & 4) != 0 ? null : l10, (i10 & 8) != 0 ? null : guildId, (i10 & 16) != 0 ? "" : str2, (i10 & 32) != 0 ? StickerFormatType.Companion.fromInt(0) : stickerFormatType, (i10 & 64) != 0 ? "" : str3, (i10 & 128) != 0 ? StickerType.Companion.fromInt(0) : stickerType, (i10 & 256) != 0 ? null : bool, null);
     }
 }

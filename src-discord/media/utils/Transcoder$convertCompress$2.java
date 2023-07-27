@@ -17,7 +17,7 @@ final class Transcoder$convertCompress$2 extends s implements Function1<Float, U
     @Override 
     public   Unit invoke(Float f10) {
         invoke(f10.floatValue());
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     public final void invoke(float f10) {

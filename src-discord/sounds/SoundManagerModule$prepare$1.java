@@ -23,7 +23,7 @@ final class SoundManagerModule$prepare$1 extends s implements Function1<Integer,
     @Override 
     public   Unit invoke(Integer num) {
         invoke(num.intValue());
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     public final void invoke(int i10) {

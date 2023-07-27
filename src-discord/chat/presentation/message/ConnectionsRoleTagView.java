@@ -50,7 +50,7 @@ public final class ConnectionsRoleTagView extends FrameLayout {
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler eventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
         q.g(eventHandler, "$eventHandler");
         q.g(connectionsRoleTag, "$connectionsRoleTag");
-        eventHandler.onTapConnectionsRoleTag(UserId.m636toStringimpl(userId.m638unboximpl()), GuildId.m585toStringimpl(guildId.m587unboximpl()), ChannelId.m572toStringimpl(channelId.m574unboximpl()), connectionsRoleTag.getId());
+        eventHandler.onTapConnectionsRoleTag(UserId.m637toStringimpl(userId.m639unboximpl()), GuildId.m586toStringimpl(guildId.m588unboximpl()), ChannelId.m573toStringimpl(channelId.m575unboximpl()), connectionsRoleTag.getId());
     }
 
     

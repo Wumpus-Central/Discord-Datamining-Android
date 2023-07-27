@@ -57,18 +57,18 @@ public final class AudioPlayerManager {
         }
 
         
-        public static  AudioSource m321copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
+        public static  AudioSource m322copyntcYbpo$default(AudioSource audioSource, String str, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = audioSource.messageId;
             }
             if ((i10 & 2) != 0) {
                 str2 = audioSource.url;
             }
-            return audioSource.m323copyntcYbpo(str, str2);
+            return audioSource.m324copyntcYbpo(str, str2);
         }
 
         
-        public final String m322component13Eiw7ao() {
+        public final String m323component13Eiw7ao() {
             return this.messageId;
         }
 
@@ -77,7 +77,7 @@ public final class AudioPlayerManager {
         }
 
         
-        public final AudioSource m323copyntcYbpo(String messageId, String url) {
+        public final AudioSource m324copyntcYbpo(String messageId, String url) {
             q.g(messageId, "messageId");
             q.g(url, "url");
             return new AudioSource(messageId, url, null);
@@ -91,11 +91,11 @@ public final class AudioPlayerManager {
                 return false;
             }
             AudioSource audioSource = (AudioSource) obj;
-            return MessageId.m595equalsimpl0(this.messageId, audioSource.messageId) && q.b(this.url, audioSource.url);
+            return MessageId.m596equalsimpl0(this.messageId, audioSource.messageId) && q.b(this.url, audioSource.url);
         }
 
         
-        public final String m324getMessageId3Eiw7ao() {
+        public final String m325getMessageId3Eiw7ao() {
             return this.messageId;
         }
 
@@ -104,11 +104,11 @@ public final class AudioPlayerManager {
         }
 
         public int hashCode() {
-            return (MessageId.m596hashCodeimpl(this.messageId) * 31) + this.url.hashCode();
+            return (MessageId.m597hashCodeimpl(this.messageId) * 31) + this.url.hashCode();
         }
 
         public String toString() {
-            String str = MessageId.m597toStringimpl(this.messageId);
+            String str = MessageId.m598toStringimpl(this.messageId);
             String str2 = this.url;
             return "AudioSource(messageId=" + str + ", url=" + str2 + ")";
         }

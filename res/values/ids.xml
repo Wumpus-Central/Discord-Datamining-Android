@@ -74,6 +74,7 @@
     <item type="id" name="add_reaction_image" />
     <item type="id" name="add_reaction_text" />
     <item type="id" name="alertTitle" />
+    <item type="id" name="alt_remix_tag" />
     <item type="id" name="alt_text_container" />
     <item type="id" name="alt_text_label" />
     <item type="id" name="ampm" />
@@ -393,6 +394,7 @@
     <item type="id" name="menu_top" />
     <item type="id" name="menu_top_status_container" />
     <item type="id" name="message" />
+    <item type="id" name="message_alt_remix_tag_view" />
     <item type="id" name="message_end_guideline" />
     <item type="id" name="message_frame_feed_header" />
     <item type="id" name="message_frame_header" />
@@ -504,6 +506,7 @@
     <item type="id" name="reaction_count_switcher" />
     <item type="id" name="reaction_emoji" />
     <item type="id" name="reactions_view" />
+    <item type="id" name="remix_icon" />
     <item type="id" name="reply_author_avatar" />
     <item type="id" name="reply_author_name" />
     <item type="id" name="reply_icon" />

@@ -31,7 +31,7 @@ public final class SafeAreaProviderManager$addEventEmitters$1 extends s implemen
     @Override 
     public   Unit invoke(SafeAreaProvider safeAreaProvider, EdgeInsets edgeInsets, Rect rect) {
         invoke2(safeAreaProvider, edgeInsets, rect);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

@@ -53,9 +53,9 @@ public final class StringSelectComponent$$serializer implements f0<StringSelectC
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26308a;
-        a2 a2Var = a2.f26233a;
-        return new KSerializer[]{m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f26275a, ActionComponentState.Serializer.INSTANCE, new f(StringSelectItem$$serializer.INSTANCE), a.u(new f(m0Var))};
+        m0 m0Var = m0.f26312a;
+        a2 a2Var = a2.f26237a;
+        return new KSerializer[]{m0Var, new f(m0Var), a2Var, a2Var, a.u(a2Var), a.u(a2Var), m0Var, m0Var, h.f26279a, ActionComponentState.Serializer.INSTANCE, new f(StringSelectItem$$serializer.INSTANCE), a.u(new f(m0Var))};
     }
 
     @Override 
@@ -80,11 +80,11 @@ public final class StringSelectComponent$$serializer implements f0<StringSelectC
         int i15 = 7;
         if (c10.y()) {
             i12 = c10.k(descriptor2, 0);
-            m0 m0Var = m0.f26308a;
+            m0 m0Var = m0.f26312a;
             obj = c10.m(descriptor2, 1, new f(m0Var), null);
             str2 = c10.t(descriptor2, 2);
             str = c10.t(descriptor2, 3);
-            a2 a2Var = a2.f26233a;
+            a2 a2Var = a2.f26237a;
             obj2 = c10.v(descriptor2, 4, a2Var, null);
             obj3 = c10.v(descriptor2, 5, a2Var, null);
             i11 = c10.k(descriptor2, 6);
@@ -124,7 +124,7 @@ public final class StringSelectComponent$$serializer implements f0<StringSelectC
                         i14 = 10;
                         break;
                     case 1:
-                        obj12 = c10.m(descriptor2, 1, new f(m0.f26308a), obj12);
+                        obj12 = c10.m(descriptor2, 1, new f(m0.f26312a), obj12);
                         i20 |= 2;
                         i16 = 11;
                         i14 = 10;
@@ -142,13 +142,13 @@ public final class StringSelectComponent$$serializer implements f0<StringSelectC
                         i14 = 10;
                         break;
                     case 4:
-                        obj11 = c10.v(descriptor2, 4, a2.f26233a, obj11);
+                        obj11 = c10.v(descriptor2, 4, a2.f26237a, obj11);
                         i20 |= 16;
                         i16 = 11;
                         i14 = 10;
                         break;
                     case 5:
-                        obj10 = c10.v(descriptor2, 5, a2.f26233a, obj10);
+                        obj10 = c10.v(descriptor2, 5, a2.f26237a, obj10);
                         i20 |= 32;
                         i16 = 11;
                         i14 = 10;
@@ -177,7 +177,7 @@ public final class StringSelectComponent$$serializer implements f0<StringSelectC
                         i15 = 7;
                         break;
                     case 11:
-                        obj7 = c10.v(descriptor2, i16, new f(m0.f26308a), obj7);
+                        obj7 = c10.v(descriptor2, i16, new f(m0.f26312a), obj7);
                         i20 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i15 = 7;
                         break;

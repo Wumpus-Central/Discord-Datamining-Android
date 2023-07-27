@@ -28,7 +28,7 @@ public final class FixedSizeLineBuffer {
             while (this.outputLength > this.maxCharacterCount && (r10 = this.output.r()) != null) {
                 this.outputLength -= r10.length() - 1;
             }
-            Unit unit = Unit.f20666a;
+            Unit unit = Unit.f20670a;
         }
     }
 
@@ -42,7 +42,7 @@ public final class FixedSizeLineBuffer {
                 sb2.append('\n');
                 q.f(sb2, "append('\\n')");
             }
-            Unit unit = Unit.f20666a;
+            Unit unit = Unit.f20670a;
         }
     }
 }

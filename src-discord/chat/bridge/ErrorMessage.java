@@ -71,7 +71,7 @@ public final class ErrorMessage extends MessageBase {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         MessageBase.write$Self(self, output, serialDesc);
-        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m591boximpl(self.f6877id));
+        output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m592boximpl(self.f6877id));
         output.s(serialDesc, 1, self.stackTrace);
     }
 
@@ -99,7 +99,7 @@ public final class ErrorMessage extends MessageBase {
             return false;
         }
         ErrorMessage errorMessage = (ErrorMessage) obj;
-        return MessageId.m595equalsimpl0(this.f6877id, errorMessage.f6877id) && q.b(this.stackTrace, errorMessage.stackTrace);
+        return MessageId.m596equalsimpl0(this.f6877id, errorMessage.f6877id) && q.b(this.stackTrace, errorMessage.stackTrace);
     }
 
     
@@ -112,11 +112,11 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m596hashCodeimpl(this.f6877id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m597hashCodeimpl(this.f6877id) * 31) + this.stackTrace.hashCode();
     }
 
     public String toString() {
-        String str = MessageId.m597toStringimpl(this.f6877id);
+        String str = MessageId.m598toStringimpl(this.f6877id);
         String str2 = this.stackTrace;
         return "ErrorMessage(id=" + str + ", stackTrace=" + str2 + ")";
     }

@@ -22,7 +22,7 @@ final class NotificationDataUtilsKt$getSystemMessageUserJoin$1$1 extends s imple
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20666a;
+        return Unit.f20670a;
     }
 
     

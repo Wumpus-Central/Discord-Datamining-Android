@@ -24,15 +24,15 @@ public final class ChatViewEventHandler$onMessageTapped$1 extends s implements F
 
     @Override 
     public   Unit invoke(MessageId messageId, ChannelId channelId) {
-        m344invokepfaIj0E(messageId.m599unboximpl(), channelId.m574unboximpl());
-        return Unit.f20666a;
+        m345invokepfaIj0E(messageId.m600unboximpl(), channelId.m575unboximpl());
+        return Unit.f20670a;
     }
 
     
-    public final void m344invokepfaIj0E(String messageId, long j10) {
+    public final void m345invokepfaIj0E(String messageId, long j10) {
         Function1 function1;
         q.g(messageId, "messageId");
         function1 = this.this$0.emitReactEvent;
-        function1.invoke(new TapMessageData(MessageId.m597toStringimpl(messageId), ChannelId.m572toStringimpl(j10)));
+        function1.invoke(new TapMessageData(MessageId.m598toStringimpl(messageId), ChannelId.m573toStringimpl(j10)));
     }
 }

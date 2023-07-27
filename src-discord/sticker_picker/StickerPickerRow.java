@@ -20,7 +20,7 @@ public final class StickerPickerRow {
         private final boolean disabled;
 
         
-        private final String f7223id;
+        private final String f7227id;
         private final String name;
         private final boolean opaque;
         private final Type type;
@@ -40,7 +40,7 @@ public final class StickerPickerRow {
             q.g(name, "name");
             q.g(type, "type");
             q.g(url, "url");
-            this.f7223id = id2;
+            this.f7227id = id2;
             this.name = name;
             this.type = type;
             this.animated = z10;
@@ -51,7 +51,7 @@ public final class StickerPickerRow {
 
         public static  Sticker copy$default(Sticker sticker, String str, String str2, Type type, boolean z10, String str3, boolean z11, boolean z12, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = sticker.f7223id;
+                str = sticker.f7227id;
             }
             if ((i10 & 2) != 0) {
                 str2 = sticker.name;
@@ -75,7 +75,7 @@ public final class StickerPickerRow {
         }
 
         public final String component1() {
-            return this.f7223id;
+            return this.f7227id;
         }
 
         public final String component2() {
@@ -118,7 +118,7 @@ public final class StickerPickerRow {
                 return false;
             }
             Sticker sticker = (Sticker) obj;
-            return q.b(this.f7223id, sticker.f7223id) && q.b(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && q.b(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
+            return q.b(this.f7227id, sticker.f7227id) && q.b(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && q.b(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
         }
 
         public final boolean getAnimated() {
@@ -130,7 +130,7 @@ public final class StickerPickerRow {
         }
 
         public final String getId() {
-            return this.f7223id;
+            return this.f7227id;
         }
 
         public final String getName() {
@@ -150,7 +150,7 @@ public final class StickerPickerRow {
         }
 
         public int hashCode() {
-            int hashCode = ((((this.f7223id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
+            int hashCode = ((((this.f7227id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31;
             boolean z10 = this.animated;
             int i10 = 1;
             if (z10) {
@@ -176,7 +176,7 @@ public final class StickerPickerRow {
         }
 
         public String toString() {
-            String str = this.f7223id;
+            String str = this.f7227id;
             String str2 = this.name;
             Type type = this.type;
             boolean z10 = this.animated;
