@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "build": "190206",
+        "build": "190207",
         "commit": "null",
         "confirm_update": false
     },
     "hashes": {
-        "app/src/main/assets/index.android.bundle": "ea452c3c3539026f519c97b098ae09c4",
+        "app/src/main/assets/index.android.bundle": "2e664bb5a1d5fd902e3f2aca1e3a0f46",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_bottomtabs_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
         "app/src/main/res/drawable-hdpi/node_modules_reactnavigation_nativestack_node_modules_reactnavigation_elements_src_assets_backicon.png": "376d6a4c7f622917c39feb23671ef71d",
@@ -3194,6 +3194,7 @@
         "app/src/main/res/raw/images_platforms_img_account_sync_youtube_white.svg": "2139da8835972fc7755306136f047d21",
         "app/src/main/res/raw/images_platforms_img_domain_dark.svg": "e1e96d89e192de1997f73730db26e94f",
         "app/src/main/res/raw/images_platforms_img_domain_light.svg": "730f58bcfd5a57a5e22460c445a0c6cf",
+        "app/src/main/res/raw/node_modules_discordapp_tokens_typography_generated_ggsans_ggsans400normal.ttf": "efebdbcb342db767b4f655c5e721dcfc",
         "app/src/main/res/raw/node_modules_discordapp_tokens_typography_generated_ggsans_ggsans700bold.ttf": "287516a2d6540615614f4c8729e4b499"
     }
 }

@@ -21,6 +21,8 @@ import hj.k;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -401,7 +403,10 @@ public final class BundleUpdater {
             }
             this$0.trackUpdateCheck(downloadManifest);
         } catch (Exception e10) {
-            CrashReporting.INSTANCE.captureException(e10);
+            if (!(e10 instanceof UnknownHostException) && !(e10 instanceof SocketTimeoutException)) {
+                CrashReporting.INSTANCE.captureException(e10);
+            }
+            Log.INSTANCE.e("BundleUpdater", "Exception checking for OTA", e10);
             this$0.trackUpdateCheck(OtaResult.FAILURE);
         }
     }

@@ -6531,21 +6531,22 @@
     <public type="raw" name="message2" id="0x7f110051" />
     <public type="raw" name="message3" id="0x7f110052" />
     <public type="raw" name="mute" id="0x7f110053" />
-    <public type="raw" name="node_modules_discordapp_tokens_typography_generated_ggsans_ggsans700bold" id="0x7f110054" />
-    <public type="raw" name="ptt_start" id="0x7f110055" />
-    <public type="raw" name="ptt_stop" id="0x7f110056" />
-    <public type="raw" name="reconnect" id="0x7f110057" />
-    <public type="raw" name="sample_resources" id="0x7f110058" />
-    <public type="raw" name="stage_waiting" id="0x7f110059" />
-    <public type="raw" name="stream_ended" id="0x7f11005a" />
-    <public type="raw" name="stream_started" id="0x7f11005b" />
-    <public type="raw" name="stream_user_joined" id="0x7f11005c" />
-    <public type="raw" name="stream_user_left" id="0x7f11005d" />
-    <public type="raw" name="undeafen" id="0x7f11005e" />
-    <public type="raw" name="unmute" id="0x7f11005f" />
-    <public type="raw" name="user_join" id="0x7f110060" />
-    <public type="raw" name="user_leave" id="0x7f110061" />
-    <public type="raw" name="user_moved" id="0x7f110062" />
+    <public type="raw" name="node_modules_discordapp_tokens_typography_generated_ggsans_ggsans400normal" id="0x7f110054" />
+    <public type="raw" name="node_modules_discordapp_tokens_typography_generated_ggsans_ggsans700bold" id="0x7f110055" />
+    <public type="raw" name="ptt_start" id="0x7f110056" />
+    <public type="raw" name="ptt_stop" id="0x7f110057" />
+    <public type="raw" name="reconnect" id="0x7f110058" />
+    <public type="raw" name="sample_resources" id="0x7f110059" />
+    <public type="raw" name="stage_waiting" id="0x7f11005a" />
+    <public type="raw" name="stream_ended" id="0x7f11005b" />
+    <public type="raw" name="stream_started" id="0x7f11005c" />
+    <public type="raw" name="stream_user_joined" id="0x7f11005d" />
+    <public type="raw" name="stream_user_left" id="0x7f11005e" />
+    <public type="raw" name="undeafen" id="0x7f11005f" />
+    <public type="raw" name="unmute" id="0x7f110060" />
+    <public type="raw" name="user_join" id="0x7f110061" />
+    <public type="raw" name="user_leave" id="0x7f110062" />
+    <public type="raw" name="user_moved" id="0x7f110063" />
     <public type="string" name="abc_action_bar_home_description" id="0x7f120000" />
     <public type="string" name="abc_action_bar_up_description" id="0x7f120001" />
     <public type="string" name="abc_action_menu_overflow_description" id="0x7f120002" />
