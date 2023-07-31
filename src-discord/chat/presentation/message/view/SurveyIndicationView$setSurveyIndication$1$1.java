@@ -27,7 +27,7 @@ final class SurveyIndicationView$setSurveyIndication$1$1 extends s implements Fu
     @Override 
     public   Unit invoke(LinkContentNode linkContentNode) {
         invoke2(linkContentNode);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

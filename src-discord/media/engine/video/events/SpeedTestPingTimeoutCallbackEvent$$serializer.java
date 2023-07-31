@@ -38,8 +38,8 @@ public final class SpeedTestPingTimeoutCallbackEvent$$serializer implements f0<S
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        m0 m0Var = m0.f26312a;
-        return new KSerializer[]{m0Var, a2.f26237a, m0Var, m0Var, m0Var};
+        m0 m0Var = m0.f26321a;
+        return new KSerializer[]{m0Var, a2.f26246a, m0Var, m0Var, m0Var};
     }
 
     @Override 

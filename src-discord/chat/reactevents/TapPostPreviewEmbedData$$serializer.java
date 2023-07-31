@@ -37,7 +37,7 @@ public final class TapPostPreviewEmbedData$$serializer implements f0<TapPostPrev
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26237a;
+        a2 a2Var = a2.f26246a;
         return new KSerializer[]{a2Var, a2Var, a2Var, MessageId$$serializer.INSTANCE};
     }
 

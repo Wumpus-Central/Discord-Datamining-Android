@@ -20,7 +20,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     private final String frozenSrc;
 
     
-    private final long f6882id;
+    private final long f6891id;
     private final boolean jumboable;
     private final String src;
 
@@ -45,7 +45,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         if (15 != (i10 & 15)) {
             n1.b(i10, 15, CustomEmojiContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f6882id = j10;
+        this.f6891id = j10;
         this.alt = str;
         this.src = str2;
         this.frozenSrc = str3;
@@ -58,7 +58,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static  CustomEmojiContentNode copy$default(CustomEmojiContentNode customEmojiContentNode, long j10, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = customEmojiContentNode.f6882id;
+            j10 = customEmojiContentNode.f6891id;
         }
         if ((i10 & 2) != 0) {
             str = customEmojiContentNode.alt;
@@ -81,7 +81,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.g(serialDesc, "serialDesc");
         EmojiContentNode.write$Self(self, output, serialDesc);
         boolean z10 = false;
-        output.D(serialDesc, 0, self.f6882id);
+        output.D(serialDesc, 0, self.f6891id);
         output.s(serialDesc, 1, self.alt);
         output.s(serialDesc, 2, self.src);
         output.s(serialDesc, 3, self.frozenSrc);
@@ -94,7 +94,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long component1() {
-        return this.f6882id;
+        return this.f6891id;
     }
 
     public final String component2() {
@@ -128,7 +128,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
             return false;
         }
         CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) obj;
-        return this.f6882id == customEmojiContentNode.f6882id && q.b(this.alt, customEmojiContentNode.alt) && q.b(this.src, customEmojiContentNode.src) && q.b(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
+        return this.f6891id == customEmojiContentNode.f6891id && q.b(this.alt, customEmojiContentNode.alt) && q.b(this.src, customEmojiContentNode.src) && q.b(this.frozenSrc, customEmojiContentNode.frozenSrc) && getJumboable() == customEmojiContentNode.getJumboable();
     }
 
     public final String getAlt() {
@@ -140,7 +140,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long getId() {
-        return this.f6882id;
+        return this.f6891id;
     }
 
     @Override 
@@ -153,7 +153,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        int a10 = ((((((b.a(this.f6882id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
+        int a10 = ((((((b.a(this.f6891id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31;
         boolean jumboable = getJumboable();
         if (jumboable) {
             jumboable = true;
@@ -165,7 +165,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public String toString() {
-        long j10 = this.f6882id;
+        long j10 = this.f6891id;
         String str = this.alt;
         String str2 = this.src;
         String str3 = this.frozenSrc;
@@ -183,7 +183,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         q.g(alt, "alt");
         q.g(src, "src");
         q.g(frozenSrc, "frozenSrc");
-        this.f6882id = j10;
+        this.f6891id = j10;
         this.alt = alt;
         this.src = src;
         this.frozenSrc = frozenSrc;

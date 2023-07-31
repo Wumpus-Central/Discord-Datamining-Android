@@ -96,9 +96,9 @@ public final class TapButtonActionComponent implements ReactEvent {
         q.g(serialDesc, "serialDesc");
         output.n(serialDesc, 0, MessageId$$serializer.INSTANCE, MessageId.m592boximpl(self.messageId));
         output.B(serialDesc, 1, self.messageFlags);
-        output.z(serialDesc, 2, a2.f26237a, self.customId);
+        output.z(serialDesc, 2, a2.f26246a, self.customId);
         output.n(serialDesc, 3, ApplicationId$$serializer.INSTANCE, ApplicationId.m553boximpl(self.applicationId));
-        output.n(serialDesc, 4, kotlinx.serialization.internal.f.f21164c, self.indices);
+        output.n(serialDesc, 4, kotlinx.serialization.internal.f.f21173c, self.indices);
     }
 
     

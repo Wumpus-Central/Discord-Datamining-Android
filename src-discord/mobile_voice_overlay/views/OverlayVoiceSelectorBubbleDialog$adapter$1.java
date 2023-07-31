@@ -22,7 +22,7 @@ public final class OverlayVoiceSelectorBubbleDialog$adapter$1 extends s implemen
     @Override 
     public   Unit invoke(ChannelId channelId) {
         m487invokeR7gqayM(channelId.m575unboximpl());
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

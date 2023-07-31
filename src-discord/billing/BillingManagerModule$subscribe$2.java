@@ -22,7 +22,7 @@ final class BillingManagerModule$subscribe$2 extends s implements Function1<Exce
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

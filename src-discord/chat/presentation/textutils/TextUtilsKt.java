@@ -7,7 +7,6 @@ import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.LeadingMarginSpan;
-import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.R;
 import com.discord.chat.bridge.contentnode.CommandMentionContentNode;
 import com.discord.chat.bridge.contentnode.ContentNode;
@@ -27,7 +26,6 @@ import com.discord.span.utilities.spannable.BulletSpan;
 import com.discord.span.utilities.spannable.OrderedListBulletSpan;
 import com.discord.span.utilities.spannable.VerticalPaddingSpan;
 import com.discord.theme.DiscordTheme;
-import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.controller.a;
 import com.facebook.drawee.drawable.ScalingUtils;
@@ -82,6 +80,7 @@ public final class TextUtilsKt {
         String str;
         List d10;
         long j10;
+        long j11;
         List d11;
         int dpToPx = SizeUtilsKt.getDpToPx(8);
         int listNestedLevel = renderContext.getListNestedLevel();
@@ -95,17 +94,23 @@ public final class TextUtilsKt {
             } else {
                 j10 = 1;
             }
+            Long listLargestOrderedIndex = renderContext.getListLargestOrderedIndex();
+            if (listLargestOrderedIndex != null) {
+                j11 = listLargestOrderedIndex.longValue();
+            } else {
+                j11 = 1;
+            }
             if (renderContext.getSingleLine()) {
                 d11 = i.d(new TextContentNode(j10 + ".  "));
                 appendToExistingBuilder(d11, renderContext, draweeSpanStringBuilder);
                 appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
                 return;
             }
-            Object[] objArr = {new LeadingMarginSpan.Standard(SizeUtilsKt.getDpToPx(8)), standard, new OrderedListBulletSpan(dpToPx, j10 + "."), verticalPaddingSpan};
+            Object[] objArr = {standard, new OrderedListBulletSpan(j10, j11, dpToPx), verticalPaddingSpan};
             int length = draweeSpanStringBuilder.length();
             appendToExistingBuilder(list, renderContext, draweeSpanStringBuilder);
             SpannableStringBuilderExtensionsKt.ensureNewline(draweeSpanStringBuilder, new AbsoluteSizeSpan(dpToPx2));
-            for (int i10 = 0; i10 < 4; i10++) {
+            for (int i10 = 0; i10 < 3; i10++) {
                 Object obj = objArr[i10];
                 if (obj != null) {
                     draweeSpanStringBuilder.setSpan(obj, length, draweeSpanStringBuilder.length(), 33);
@@ -150,7 +155,7 @@ public final class TextUtilsKt {
         draweeSpanStringBuilder.append((char) 8203);
         a c10 = c.g().D(ImageRequestBuilder.s(Uri.parse(ReactAssetUtilsKt.getReactImageUrl(context, imageUrl))).a()).build();
         q.f(c10, "newDraweeControllerBuild…build())\n        .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7400e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils.ScaleType.f7409e);
         com.facebook.drawee.generic.a a10 = com.facebook.drawee.generic.a.a(f10);
         a10.r(f11);
         a10.u(a.EnumC0112a.BITMAP_ONLY);
@@ -239,7 +244,7 @@ public final class TextUtilsKt {
         q.g(onTapSpoiler, "onTapSpoiler");
         q.g(theme, "theme");
         if (structurableText instanceof AnnotatedStructurableText) {
-            return toSpannable$default(((AnnotatedStructurableText) structurableText).getContent(), new RenderContext(context, containerId, onLinkClicked, onLongTapLink, linkStyle, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, z10, z11, z12, z13, null, 0, null, null, theme, f10, null, 10354688, null), null, 2, null);
+            return toSpannable$default(((AnnotatedStructurableText) structurableText).getContent(), new RenderContext(context, containerId, onLinkClicked, onLongTapLink, linkStyle, onTapChannel, onLongPressChannel, onTapMention, onTapCommand, onLongPressCommand, onTapSpoiler, onTapTimestamp, onTapEmoji, z10, z11, z12, z13, null, 0, null, null, null, theme, f10, null, 20840448, null), null, 2, null);
         }
         if (structurableText instanceof PrimitiveStructurableText) {
             return new DraweeSpanStringBuilder(((PrimitiveStructurableText) structurableText).getContent());
@@ -247,14 +252,10 @@ public final class TextUtilsKt {
         throw new ff.q();
     }
 
-    public static  DraweeSpanStringBuilder toSpannable$default(StructurableText structurableText, Context context, String str, boolean z10, boolean z11, boolean z12, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function2 function2, Function1 function13, Function1 function14, Function1 function15, Function1 function16, Function1 function17, Function0 function0, boolean z13, DiscordTheme discordTheme, float f10, int i10, Object obj) {
-        return toSpannable(structurableText, context, str, z10, z11, z12, (i10 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : function1, (i10 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : function12, (i10 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : function3, (i10 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : function4, (i10 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : function2, (i10 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : function13, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : function14, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : function15, (i10 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : function16, (i10 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : function17, (32768 & i10) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : function0, (65536 & i10) != 0 ? false : z13, (131072 & i10) != 0 ? ThemeManagerKt.getTheme() : discordTheme, (i10 & 262144) != 0 ? -1.0f : f10);
-    }
-
     
     
     
-    private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r81, com.discord.chat.presentation.textutils.RenderContext r82, com.facebook.drawee.span.DraweeSpanStringBuilder r83) {
+    private static final com.facebook.drawee.span.DraweeSpanStringBuilder toSpannable(java.util.List<? extends com.discord.chat.bridge.contentnode.ContentNode> r85, com.discord.chat.presentation.textutils.RenderContext r86, com.facebook.drawee.span.DraweeSpanStringBuilder r87) {
         
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.textutils.TextUtilsKt.toSpannable(java.util.List, com.discord.chat.presentation.textutils.RenderContext, com.facebook.drawee.span.DraweeSpanStringBuilder):com.facebook.drawee.span.DraweeSpanStringBuilder");
     }

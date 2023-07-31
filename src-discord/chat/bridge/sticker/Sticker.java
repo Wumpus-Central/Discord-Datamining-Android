@@ -24,7 +24,7 @@ public final class Sticker {
     private final Integer height;
 
     
-    private final long f6889id;
+    private final long f6898id;
     private final String name;
     private final int renderMode;
     private final String url;
@@ -49,7 +49,7 @@ public final class Sticker {
         if (159 != (i10 & 159)) {
             n1.b(i10, 159, Sticker$$serializer.INSTANCE.getDescriptor());
         }
-        this.f6889id = j10;
+        this.f6898id = j10;
         this.formatType = stickerFormatType;
         this.name = str;
         this.asset = str2;
@@ -76,7 +76,7 @@ public final class Sticker {
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
         boolean z11 = false;
-        output.D(serialDesc, 0, self.f6889id);
+        output.D(serialDesc, 0, self.f6898id);
         output.n(serialDesc, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, self.formatType);
         output.s(serialDesc, 2, self.name);
         output.s(serialDesc, 3, self.asset);
@@ -87,19 +87,19 @@ public final class Sticker {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 5, m0.f26312a, self.width);
+            output.z(serialDesc, 5, m0.f26321a, self.width);
         }
         if (output.w(serialDesc, 6) || self.height != null) {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 6, m0.f26312a, self.height);
+            output.z(serialDesc, 6, m0.f26321a, self.height);
         }
         output.q(serialDesc, 7, self.renderMode);
     }
 
     public final long component1() {
-        return this.f6889id;
+        return this.f6898id;
     }
 
     public final StickerFormatType component2() {
@@ -146,7 +146,7 @@ public final class Sticker {
             return false;
         }
         Sticker sticker = (Sticker) obj;
-        return this.f6889id == sticker.f6889id && this.formatType == sticker.formatType && q.b(this.name, sticker.name) && q.b(this.asset, sticker.asset) && q.b(this.url, sticker.url) && q.b(this.width, sticker.width) && q.b(this.height, sticker.height) && this.renderMode == sticker.renderMode;
+        return this.f6898id == sticker.f6898id && this.formatType == sticker.formatType && q.b(this.name, sticker.name) && q.b(this.asset, sticker.asset) && q.b(this.url, sticker.url) && q.b(this.width, sticker.width) && q.b(this.height, sticker.height) && this.renderMode == sticker.renderMode;
     }
 
     public final String getAsset() {
@@ -162,7 +162,7 @@ public final class Sticker {
     }
 
     public final long getId() {
-        return this.f6889id;
+        return this.f6898id;
     }
 
     public final String getName() {
@@ -182,7 +182,7 @@ public final class Sticker {
     }
 
     public int hashCode() {
-        int a10 = ((((((((b.a(this.f6889id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
+        int a10 = ((((((((b.a(this.f6898id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
         Integer num = this.width;
         int i10 = 0;
         int hashCode = (a10 + (num == null ? 0 : num.hashCode())) * 31;
@@ -194,7 +194,7 @@ public final class Sticker {
     }
 
     public String toString() {
-        long j10 = this.f6889id;
+        long j10 = this.f6898id;
         StickerFormatType stickerFormatType = this.formatType;
         String str = this.name;
         String str2 = this.asset;
@@ -210,7 +210,7 @@ public final class Sticker {
         q.g(name, "name");
         q.g(asset, "asset");
         q.g(url, "url");
-        this.f6889id = j10;
+        this.f6898id = j10;
         this.formatType = formatType;
         this.name = name;
         this.asset = asset;

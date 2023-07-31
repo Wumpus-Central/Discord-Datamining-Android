@@ -26,7 +26,7 @@ public final class GuildInviteDisabledViewHolder$bind$1$1 extends s implements F
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

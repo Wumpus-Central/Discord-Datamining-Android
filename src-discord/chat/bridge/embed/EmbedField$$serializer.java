@@ -40,7 +40,7 @@ public final class EmbedField$$serializer implements f0<EmbedField> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26237a;
+        a2 a2Var = a2.f26246a;
         StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
         return new KSerializer[]{a.u(a2Var), a.u(a2Var), a.u(structurableTextSerializer), a.u(structurableTextSerializer)};
     }
@@ -56,7 +56,7 @@ public final class EmbedField$$serializer implements f0<EmbedField> {
         c c10 = decoder.c(descriptor2);
         Object obj4 = null;
         if (c10.y()) {
-            a2 a2Var = a2.f26237a;
+            a2 a2Var = a2.f26246a;
             obj4 = c10.v(descriptor2, 0, a2Var, null);
             obj3 = c10.v(descriptor2, 1, a2Var, null);
             StructurableTextSerializer structurableTextSerializer = StructurableTextSerializer.INSTANCE;
@@ -74,10 +74,10 @@ public final class EmbedField$$serializer implements f0<EmbedField> {
                 if (x10 == -1) {
                     z10 = false;
                 } else if (x10 == 0) {
-                    obj4 = c10.v(descriptor2, 0, a2.f26237a, obj4);
+                    obj4 = c10.v(descriptor2, 0, a2.f26246a, obj4);
                     i11 |= 1;
                 } else if (x10 == 1) {
-                    obj5 = c10.v(descriptor2, 1, a2.f26237a, obj5);
+                    obj5 = c10.v(descriptor2, 1, a2.f26246a, obj5);
                     i11 |= 2;
                 } else if (x10 == 2) {
                     obj6 = c10.v(descriptor2, 2, StructurableTextSerializer.INSTANCE, obj6);

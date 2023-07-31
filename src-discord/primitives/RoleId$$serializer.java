@@ -29,7 +29,7 @@ public final class RoleId$$serializer implements f0<RoleId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26353a};
+        return new KSerializer[]{w0.f26362a};
     }
 
     @Override 

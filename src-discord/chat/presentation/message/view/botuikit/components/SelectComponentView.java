@@ -118,7 +118,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
         a c10 = c.g().D(z11.a()).build();
         q.f(c10, "newDraweeControllerBuild…d())\n            .build()");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f7400e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils.ScaleType.f7409e);
         q.f(w10, "newInstance(context.reso…ils.ScaleType.FIT_CENTER)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));

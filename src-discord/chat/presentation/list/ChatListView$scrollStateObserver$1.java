@@ -23,7 +23,7 @@ public final class ChatListView$scrollStateObserver$1 extends s implements Funct
     @Override 
     public   Unit invoke(ScrollState scrollState) {
         invoke2(scrollState);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

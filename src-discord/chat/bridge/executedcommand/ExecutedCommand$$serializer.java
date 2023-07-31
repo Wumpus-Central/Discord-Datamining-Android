@@ -41,7 +41,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f26312a, a.u(a2.f26237a), AnnotatedStructurableTextSerializer.INSTANCE};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, m0.f26321a, a.u(a2.f26246a), AnnotatedStructurableTextSerializer.INSTANCE};
     }
 
     @Override 
@@ -57,7 +57,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
         if (c10.y()) {
             obj3 = c10.m(descriptor2, 0, UserId$$serializer.INSTANCE, null);
             i10 = c10.k(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, a2.f26237a, null);
+            obj = c10.v(descriptor2, 2, a2.f26246a, null);
             obj2 = c10.m(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, null);
             i11 = 15;
         } else {
@@ -78,7 +78,7 @@ public final class ExecutedCommand$$serializer implements f0<ExecutedCommand> {
                     i12 = c10.k(descriptor2, 1);
                     i13 |= 2;
                 } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f26237a, obj5);
+                    obj5 = c10.v(descriptor2, 2, a2.f26246a, obj5);
                     i13 |= 4;
                 } else if (x10 == 3) {
                     obj6 = c10.m(descriptor2, 3, AnnotatedStructurableTextSerializer.INSTANCE, obj6);

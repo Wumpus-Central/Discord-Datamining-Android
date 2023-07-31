@@ -48,9 +48,9 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26237a;
-        h hVar = h.f26279a;
-        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f26312a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
+        a2 a2Var = a2.f26246a;
+        h hVar = h.f26288a;
+        return new KSerializer[]{a.u(a2Var), hVar, a2Var, a2Var, a.u(new f(a.u(a2Var))), m0.f26321a, a.u(a2Var), a.u(a2Var), hVar, a2Var};
     }
 
     @Override 
@@ -74,7 +74,7 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
         int i13 = 7;
         int i14 = 6;
         if (c11.y()) {
-            a2 a2Var = a2.f26237a;
+            a2 a2Var = a2.f26246a;
             obj = c11.v(descriptor2, 0, a2Var, null);
             z11 = c11.s(descriptor2, 1);
             str3 = c11.t(descriptor2, 2);
@@ -107,7 +107,7 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
                         i13 = 7;
                         i14 = 6;
                     case 0:
-                        obj7 = c11.v(descriptor2, 0, a2.f26237a, obj7);
+                        obj7 = c11.v(descriptor2, 0, a2.f26246a, obj7);
                         i15 |= 1;
                         i12 = 9;
                         i13 = 7;
@@ -127,17 +127,17 @@ public final class ActivityInviteEmbed$$serializer implements f0<ActivityInviteE
                         i15 |= 8;
                         i12 = 9;
                     case 4:
-                        obj8 = c11.v(descriptor2, 4, new f(a.u(a2.f26237a)), obj8);
+                        obj8 = c11.v(descriptor2, 4, new f(a.u(a2.f26246a)), obj8);
                         i15 |= 16;
                         i12 = 9;
                     case 5:
                         i16 = c11.k(descriptor2, 5);
                         i15 |= 32;
                     case 6:
-                        obj6 = c11.v(descriptor2, i14, a2.f26237a, obj6);
+                        obj6 = c11.v(descriptor2, i14, a2.f26246a, obj6);
                         i15 |= 64;
                     case 7:
-                        obj5 = c11.v(descriptor2, i13, a2.f26237a, obj5);
+                        obj5 = c11.v(descriptor2, i13, a2.f26246a, obj5);
                         i15 |= 128;
                     case 8:
                         z13 = c11.s(descriptor2, 8);

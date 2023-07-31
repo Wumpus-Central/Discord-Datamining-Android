@@ -21,7 +21,7 @@ public  class EmbeddedActivityInviteViewHolder$bind$1$1 extends n implements Fun
     @Override 
     public   Unit invoke(MessageId messageId, LinkContentNode linkContentNode) {
         m334invokentcYbpo(messageId.m600unboximpl(), linkContentNode);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

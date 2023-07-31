@@ -27,7 +27,7 @@ public final class Summary {
     private final String endId;
 
     
-    private final String f6890id;
+    private final String f6899id;
     private final List<UserId> people;
     private final String startId;
     private final String summShort;
@@ -52,7 +52,7 @@ public final class Summary {
         if (255 != (i10 & 255)) {
             n1.b(i10, 255, Summary$$serializer.INSTANCE.getDescriptor());
         }
-        this.f6890id = str;
+        this.f6899id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;
@@ -74,7 +74,7 @@ public final class Summary {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.f6890id);
+        output.s(serialDesc, 0, self.f6899id);
         output.s(serialDesc, 1, self.topic);
         output.s(serialDesc, 2, self.summShort);
         output.n(serialDesc, 3, new si.f(UserId$$serializer.INSTANCE), self.people);
@@ -86,7 +86,7 @@ public final class Summary {
     }
 
     public final String component1() {
-        return this.f6890id;
+        return this.f6899id;
     }
 
     public final String component2() {
@@ -139,7 +139,7 @@ public final class Summary {
             return false;
         }
         Summary summary = (Summary) obj;
-        return q.b(this.f6890id, summary.f6890id) && q.b(this.topic, summary.topic) && q.b(this.summShort, summary.summShort) && q.b(this.people, summary.people) && MessageId.m596equalsimpl0(this.startId, summary.startId) && MessageId.m596equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m570equalsimpl0(this.channelId, summary.channelId);
+        return q.b(this.f6899id, summary.f6899id) && q.b(this.topic, summary.topic) && q.b(this.summShort, summary.summShort) && q.b(this.people, summary.people) && MessageId.m596equalsimpl0(this.startId, summary.startId) && MessageId.m596equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m570equalsimpl0(this.channelId, summary.channelId);
     }
 
     
@@ -157,7 +157,7 @@ public final class Summary {
     }
 
     public final String getId() {
-        return this.f6890id;
+        return this.f6899id;
     }
 
     public final List<UserId> getPeople() {
@@ -178,11 +178,11 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f6890id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m597hashCodeimpl(this.startId)) * 31) + MessageId.m597hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m571hashCodeimpl(this.channelId);
+        return (((((((((((((this.f6899id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m597hashCodeimpl(this.startId)) * 31) + MessageId.m597hashCodeimpl(this.endId)) * 31) + this.count) * 31) + ChannelId.m571hashCodeimpl(this.channelId);
     }
 
     public String toString() {
-        String str = this.f6890id;
+        String str = this.f6899id;
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
@@ -194,7 +194,7 @@ public final class Summary {
     }
 
     private Summary(String str, String str2, String str3, List<UserId> list, String str4, String str5, int i10, long j10) {
-        this.f6890id = str;
+        this.f6899id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;

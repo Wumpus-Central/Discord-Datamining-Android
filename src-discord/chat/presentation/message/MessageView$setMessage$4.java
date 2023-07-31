@@ -32,7 +32,7 @@ public final class MessageView$setMessage$4 extends s implements Function1<Messa
     @Override 
     public   Unit invoke(MessageContentView messageContentView) {
         invoke2(messageContentView);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

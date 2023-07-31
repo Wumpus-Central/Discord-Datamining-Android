@@ -11,7 +11,7 @@ public final class Log {
     public static final Log INSTANCE = new Log();
 
     static {
-        a.f27201a.a(new LoggingTree());
+        a.f27210a.a(new LoggingTree());
     }
 
     private Log() {
@@ -48,7 +48,7 @@ public final class Log {
     public final void d(String tag, String message, Throwable th2) {
         q.g(tag, "tag");
         q.g(message, "message");
-        a.b bVar = a.f27201a;
+        a.b bVar = a.f27210a;
         bVar.b(tag);
         bVar.d(th2, message, new Object[0]);
     }
@@ -56,7 +56,7 @@ public final class Log {
     public final void e(String tag, String message, Throwable th2) {
         q.g(tag, "tag");
         q.g(message, "message");
-        a.b bVar = a.f27201a;
+        a.b bVar = a.f27210a;
         bVar.b(tag);
         bVar.e(th2, message, new Object[0]);
     }
@@ -64,7 +64,7 @@ public final class Log {
     public final void i(String tag, String message, Throwable th2) {
         q.g(tag, "tag");
         q.g(message, "message");
-        a.b bVar = a.f27201a;
+        a.b bVar = a.f27210a;
         bVar.b(tag);
         bVar.i(th2, message, new Object[0]);
     }
@@ -72,7 +72,7 @@ public final class Log {
     public final void w(String tag, String message, Throwable th2) {
         q.g(tag, "tag");
         q.g(message, "message");
-        a.b bVar = a.f27201a;
+        a.b bVar = a.f27210a;
         bVar.b(tag);
         bVar.w(th2, message, new Object[0]);
     }

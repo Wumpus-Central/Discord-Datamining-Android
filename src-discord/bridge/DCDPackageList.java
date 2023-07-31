@@ -1,6 +1,7 @@
 package com.discord.bridge;
 
 import b1.a;
+import ce.f;
 import com.airbnb.android.react.lottie.b;
 import com.balthazargronon.RCTZeroconf.ZeroconfModule;
 import com.discord.audio.AudioRouteEmitterModule;
@@ -73,7 +74,7 @@ public final class DCDPackageList extends PackageList {
         packages.add(GetSkiaPackageKt.getSkiaPackage());
         packages.add(new com.reactnativepagerview.b());
         packages.add(new x1.c());
-        packages.add(new ce.e());
+        packages.add(new f());
         DCDModuleProvider dCDModuleProvider = DCDModuleProvider.INSTANCE;
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$2.INSTANCE));
         packages.add(dCDModuleProvider.getLegacyPackageForModule(DCDPackageList$getPackages$3.INSTANCE));

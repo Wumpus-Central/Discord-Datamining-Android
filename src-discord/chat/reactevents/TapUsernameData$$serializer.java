@@ -33,7 +33,7 @@ public final class TapUsernameData$$serializer implements f0<TapUsernameData> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26237a;
+        a2 a2Var = a2.f26246a;
         return new KSerializer[]{a2Var, a2Var};
     }
 

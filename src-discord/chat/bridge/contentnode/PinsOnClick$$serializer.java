@@ -35,7 +35,7 @@ public final class PinsOnClick$$serializer implements f0<PinsOnClick> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26237a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26246a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override 

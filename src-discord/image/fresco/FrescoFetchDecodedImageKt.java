@@ -33,10 +33,10 @@ public final class FrescoFetchDecodedImageKt {
         q.g(context, "<this>");
         q.g(onDecodedImage, "onDecodedImage");
         try {
-            s.a aVar = s.f14778l;
+            s.a aVar = s.f14787l;
             obj = s.b(Uri.parse(str));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14778l;
+            s.a aVar2 = s.f14787l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -108,10 +108,10 @@ public final class FrescoFetchDecodedImageKt {
     public static final Object fetchDecodedImage(Context context, String str, PostProcessor postProcessor, boolean z10, Continuation<? super Bitmap> continuation) {
         Object obj;
         try {
-            s.a aVar = s.f14778l;
+            s.a aVar = s.f14787l;
             obj = s.b(Uri.parse(str));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14778l;
+            s.a aVar2 = s.f14787l;
             obj = s.b(t.a(th2));
         }
         if (s.g(obj)) {
@@ -145,7 +145,7 @@ public final class FrescoFetchDecodedImageKt {
                 @Override 
                 protected void onNewResultImpl(Bitmap bitmap) {
                     CancellableContinuation<Bitmap> cancellableContinuation = pVar;
-                    s.a aVar = s.f14778l;
+                    s.a aVar = s.f14787l;
                     if (z10 && bitmap != null) {
                         bitmap = Bitmap.createBitmap(bitmap);
                     }

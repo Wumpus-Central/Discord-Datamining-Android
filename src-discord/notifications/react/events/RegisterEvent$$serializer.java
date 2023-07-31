@@ -32,7 +32,7 @@ public final class RegisterEvent$$serializer implements f0<RegisterEvent> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26237a};
+        return new KSerializer[]{a2.f26246a};
     }
 
     @Override 

@@ -39,7 +39,7 @@ public final class KeyboardExtensionsKt$showKeyboard$1 extends k implements Func
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((KeyboardExtensionsKt$showKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20670a);
+        return ((KeyboardExtensionsKt$showKeyboard$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
     }
 
     @Override 
@@ -60,7 +60,7 @@ public final class KeyboardExtensionsKt$showKeyboard$1 extends k implements Func
             if (editText != null) {
                 b.a(editText.requestFocus());
             }
-            return Unit.f20670a;
+            return Unit.f20679a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

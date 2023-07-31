@@ -35,8 +35,8 @@ public final class TimestampContentNode$$serializer implements f0<TimestampConte
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        a2 a2Var = a2.f26237a;
-        return new KSerializer[]{w0.f26353a, a2Var, a2Var};
+        a2 a2Var = a2.f26246a;
+        return new KSerializer[]{w0.f26362a, a2Var, a2Var};
     }
 
     @Override 

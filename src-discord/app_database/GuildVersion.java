@@ -18,7 +18,7 @@ public final class GuildVersion {
     public static final Companion Companion = new Companion(null);
 
     
-    private final String f6831id;
+    private final String f6840id;
     private final long version;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/discord/app_database/GuildVersion$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/app_database/GuildVersion;", "app_database_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
@@ -40,13 +40,13 @@ public final class GuildVersion {
         if (3 != (i10 & 3)) {
             n1.b(i10, 3, GuildVersion$$serializer.INSTANCE.getDescriptor());
         }
-        this.f6831id = str;
+        this.f6840id = str;
         this.version = j10;
     }
 
     public static  GuildVersion copy$default(GuildVersion guildVersion, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = guildVersion.f6831id;
+            str = guildVersion.f6840id;
         }
         if ((i10 & 2) != 0) {
             j10 = guildVersion.version;
@@ -58,12 +58,12 @@ public final class GuildVersion {
         q.g(self, "self");
         q.g(output, "output");
         q.g(serialDesc, "serialDesc");
-        output.s(serialDesc, 0, self.f6831id);
+        output.s(serialDesc, 0, self.f6840id);
         output.D(serialDesc, 1, self.version);
     }
 
     public final String component1() {
-        return this.f6831id;
+        return this.f6840id;
     }
 
     public final long component2() {
@@ -83,11 +83,11 @@ public final class GuildVersion {
             return false;
         }
         GuildVersion guildVersion = (GuildVersion) obj;
-        return q.b(this.f6831id, guildVersion.f6831id) && this.version == guildVersion.version;
+        return q.b(this.f6840id, guildVersion.f6840id) && this.version == guildVersion.version;
     }
 
     public final String getId() {
-        return this.f6831id;
+        return this.f6840id;
     }
 
     public final long getVersion() {
@@ -95,18 +95,18 @@ public final class GuildVersion {
     }
 
     public int hashCode() {
-        return (this.f6831id.hashCode() * 31) + b.a(this.version);
+        return (this.f6840id.hashCode() * 31) + b.a(this.version);
     }
 
     public String toString() {
-        String str = this.f6831id;
+        String str = this.f6840id;
         long j10 = this.version;
         return "GuildVersion(id=" + str + ", version=" + j10 + ")";
     }
 
     public GuildVersion(String id2, long j10) {
         q.g(id2, "id");
-        this.f6831id = id2;
+        this.f6840id = id2;
         this.version = j10;
     }
 }

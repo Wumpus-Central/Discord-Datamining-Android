@@ -29,7 +29,7 @@ public final class ChannelId$$serializer implements f0<ChannelId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26353a};
+        return new KSerializer[]{w0.f26362a};
     }
 
     @Override 

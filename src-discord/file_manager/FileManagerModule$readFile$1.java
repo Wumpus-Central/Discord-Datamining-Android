@@ -42,7 +42,7 @@ final class FileManagerModule$readFile$1 extends k implements Function2<Coroutin
     }
 
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileManagerModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20670a);
+        return ((FileManagerModule$readFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f20679a);
     }
 
     @Override 
@@ -65,7 +65,7 @@ final class FileManagerModule$readFile$1 extends k implements Function2<Coroutin
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f20670a;
+            return Unit.f20679a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

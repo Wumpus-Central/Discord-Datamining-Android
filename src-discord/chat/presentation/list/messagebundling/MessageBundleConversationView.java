@@ -24,6 +24,17 @@ import com.discord.chat.presentation.root.ChatView;
 import com.discord.chat.presentation.root.MessageContext;
 import com.discord.chat.presentation.spine.SpineParentMessage;
 import com.discord.chat.presentation.textutils.TextUtilsKt;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$1;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$10;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$11;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$2;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$3;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$4;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$5;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$6;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$7;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$8;
+import com.discord.chat.presentation.textutils.TextUtilsKt$toSpannable$9;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.view.ViewClippingUtilsKt;
@@ -82,6 +93,7 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
     public final void configure(MessageItem messageItem, final ChatEventHandler eventHandler) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
         boolean z10;
+        DraweeSpanStringBuilder spannable;
         q.g(messageItem, "messageItem");
         q.g(eventHandler, "eventHandler");
         final Message message = messageItem.getMessage();
@@ -106,11 +118,11 @@ public final class MessageBundleConversationView extends ConstraintLayout implem
             boolean shouldShowRoleOnName = message.getShouldShowRoleOnName();
             Paint.FontMetrics fontMetrics = this.binding.replyText.getPaint().getFontMetrics();
             q.f(fontMetrics, "binding.replyText.paint.fontMetrics");
-            DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, null, null, null, null, null, null, null, null, null, null, null, true, null, TextUtilsKt.getBaselineHeight(fontMetrics), 196576, null);
+            spannable = TextUtilsKt.toSpannable(content, context2, str, shouldAnimateEmoji, shouldShowRoleDot, shouldShowRoleOnName, (r42 & 32) != 0 ? TextUtilsKt$toSpannable$1.INSTANCE : null, (r42 & 64) != 0 ? TextUtilsKt$toSpannable$2.INSTANCE : null, (r42 & 128) != 0 ? TextUtilsKt$toSpannable$3.INSTANCE : null, (r42 & 256) != 0 ? TextUtilsKt$toSpannable$4.INSTANCE : null, (r42 & 512) != 0 ? TextUtilsKt$toSpannable$5.INSTANCE : null, (r42 & 1024) != 0 ? TextUtilsKt$toSpannable$6.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? TextUtilsKt$toSpannable$7.INSTANCE : null, (r42 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? TextUtilsKt$toSpannable$8.INSTANCE : null, (r42 & 8192) != 0 ? TextUtilsKt$toSpannable$9.INSTANCE : null, (r42 & 16384) != 0 ? TextUtilsKt$toSpannable$10.INSTANCE : null, (32768 & r42) != 0 ? TextUtilsKt$toSpannable$11.INSTANCE : null, (65536 & r42) != 0 ? false : true, (131072 & r42) != 0 ? ThemeManagerKt.getTheme() : null, (r42 & 262144) != 0 ? -1.0f : TextUtilsKt.getBaselineHeight(fontMetrics));
             MessageContentView messageContentView = this.binding.replyText;
             q.f(messageContentView, "binding.replyText");
-            SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(messageContentView));
-            draweeSpanStringBuilder = ReplyUtilsKt.createReplyContent(textView, spannable$default);
+            SpannableExtensionsKt.coverWithSpan(spannable, new BackgroundSpanDrawer(messageContentView));
+            draweeSpanStringBuilder = ReplyUtilsKt.createReplyContent(textView, spannable);
         } else {
             TextView textView2 = this.binding.replyAuthorName;
             q.f(textView2, "binding.replyAuthorName");

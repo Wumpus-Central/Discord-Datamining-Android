@@ -19,7 +19,7 @@ public final class I18nUtilsKt$i18nContentDescription$2 extends s implements Fun
     @Override 
     public   Unit invoke(RenderContext renderContext) {
         invoke2(renderContext);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

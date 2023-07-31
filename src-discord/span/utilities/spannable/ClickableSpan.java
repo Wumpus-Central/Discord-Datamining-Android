@@ -129,7 +129,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     public void onClick(View view) {
         q.g(view, "view");
         this.onClickListener.invoke(view);
-        Unit unit = Unit.f20670a;
+        Unit unit = Unit.f20679a;
         setSpanView(null);
     }
 

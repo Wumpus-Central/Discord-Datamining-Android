@@ -27,7 +27,7 @@ final class BrowserManager$tryOpenUrlWithCustomTabs$1 extends s implements Funct
     @Override 
     public   Unit invoke(Exception exc) {
         invoke2(exc);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

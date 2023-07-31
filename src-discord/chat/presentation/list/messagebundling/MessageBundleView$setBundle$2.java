@@ -23,7 +23,7 @@ final class MessageBundleView$setBundle$2 extends s implements Function1<Message
     @Override 
     public   Unit invoke(MessageId messageId) {
         m192invoke1xi1bu0(messageId.m600unboximpl());
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

@@ -26,7 +26,7 @@ public final class MediaManagerModule$mediaResolver$1 extends s implements Funct
     @Override 
     public   Unit invoke(Uri uri, Integer num) {
         invoke(uri, num.intValue());
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     public final void invoke(Uri uri, int i10) {

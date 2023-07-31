@@ -43,7 +43,7 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f26358a, a.u(a2.f26237a), ApplicationId$$serializer.INSTANCE, f.f21164c};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, x.f26367a, a.u(a2.f26246a), ApplicationId$$serializer.INSTANCE, f.f21173c};
     }
 
     @Override 
@@ -60,9 +60,9 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
         if (c10.y()) {
             obj4 = c10.m(descriptor2, 0, MessageId$$serializer.INSTANCE, null);
             d10 = c10.A(descriptor2, 1);
-            obj = c10.v(descriptor2, 2, a2.f26237a, null);
+            obj = c10.v(descriptor2, 2, a2.f26246a, null);
             obj3 = c10.m(descriptor2, 3, ApplicationId$$serializer.INSTANCE, null);
-            obj2 = c10.m(descriptor2, 4, f.f21164c, null);
+            obj2 = c10.m(descriptor2, 4, f.f21173c, null);
             i10 = 31;
         } else {
             double d11 = 0.0d;
@@ -83,13 +83,13 @@ public final class TapButtonActionComponent$$serializer implements f0<TapButtonA
                     d11 = c10.A(descriptor2, 1);
                     i11 |= 2;
                 } else if (x10 == 2) {
-                    obj5 = c10.v(descriptor2, 2, a2.f26237a, obj5);
+                    obj5 = c10.v(descriptor2, 2, a2.f26246a, obj5);
                     i11 |= 4;
                 } else if (x10 == 3) {
                     obj6 = c10.m(descriptor2, 3, ApplicationId$$serializer.INSTANCE, obj6);
                     i11 |= 8;
                 } else if (x10 == 4) {
-                    obj7 = c10.m(descriptor2, 4, f.f21164c, obj7);
+                    obj7 = c10.m(descriptor2, 4, f.f21173c, obj7);
                     i11 |= 16;
                 } else {
                     throw new n(x10);

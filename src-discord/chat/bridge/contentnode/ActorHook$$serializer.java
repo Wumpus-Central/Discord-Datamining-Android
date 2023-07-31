@@ -35,7 +35,7 @@ public final class ActorHook$$serializer implements f0<ActorHook> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a2.f26237a, UserId$$serializer.INSTANCE};
+        return new KSerializer[]{a2.f26246a, UserId$$serializer.INSTANCE};
     }
 
     @Override 

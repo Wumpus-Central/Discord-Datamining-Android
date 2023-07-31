@@ -49,7 +49,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override 
             public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20670a;
+                return Unit.f20679a;
             }
 
             
@@ -71,7 +71,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override 
         public   Unit invoke(MotionEvent motionEvent) {
             invoke2(motionEvent);
-            return Unit.f20670a;
+            return Unit.f20679a;
         }
 
         
@@ -109,7 +109,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
             @Override 
             public   Unit invoke(OverlayTrashWrap overlayTrashWrap) {
                 invoke2(overlayTrashWrap);
-                return Unit.f20670a;
+                return Unit.f20679a;
             }
 
             
@@ -134,7 +134,7 @@ public final class MobileVoiceOverlay$voiceBubbleProvider$1 extends s implements
         @Override 
         public   Unit invoke(Boolean bool) {
             invoke(bool.booleanValue());
-            return Unit.f20670a;
+            return Unit.f20679a;
         }
 
         public final void invoke(boolean z10) {

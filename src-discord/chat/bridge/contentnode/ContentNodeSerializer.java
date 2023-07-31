@@ -21,7 +21,7 @@ public final class ContentNodeSerializer implements KSerializer<ContentNode> {
 
     @Override 
     public SerialDescriptor getDescriptor() {
-        return g.a("ContentNode", e.i.f25638a);
+        return g.a("ContentNode", e.i.f25647a);
     }
 
     @Override 

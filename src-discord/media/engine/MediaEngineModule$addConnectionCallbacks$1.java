@@ -26,7 +26,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends s implemen
     @Override 
     public   Unit invoke(String str, Integer num) {
         invoke(str, num.intValue());
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     public final void invoke(String userId, int i10) {

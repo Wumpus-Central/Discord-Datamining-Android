@@ -40,7 +40,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         q.g(context, "context");
         q.g(reactEvents, "reactEvents");
         q.g(reactTag, "reactTag");
-        this.emitReactEvent = new ChatViewEventHandler$emitReactEvent$1(reactEvents, context, reactTag);
+        this.emitReactEvent = new ChatViewEventHandler$emitReactEvent$1(context, reactTag, reactEvents);
     }
 
     @Override 

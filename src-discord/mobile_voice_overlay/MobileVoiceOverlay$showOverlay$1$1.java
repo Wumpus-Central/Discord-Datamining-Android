@@ -23,7 +23,7 @@ public final class MobileVoiceOverlay$showOverlay$1$1 extends s implements Funct
     @Override 
     public   Unit invoke(OverlayVoiceBubble overlayVoiceBubble) {
         invoke2(overlayVoiceBubble);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

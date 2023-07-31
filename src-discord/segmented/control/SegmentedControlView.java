@@ -188,7 +188,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     private final <T> ReadWriteProperty<Object, T> updateViewOnChange(final T t10, final boolean z10) {
-        kotlin.properties.a aVar = kotlin.properties.a.f20726a;
+        kotlin.properties.a aVar = kotlin.properties.a.f20735a;
         return new c<T>(t10) { 
             @Override 
             protected void afterChange(KProperty<?> property, T t11, T t12) {

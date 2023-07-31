@@ -91,7 +91,7 @@ public final class ActivityInviteEmbed {
             z10 = true;
         }
         if (z10) {
-            output.z(serialDesc, 0, a2.f26237a, self.coverImage);
+            output.z(serialDesc, 0, a2.f26246a, self.coverImage);
         }
         output.r(serialDesc, 1, self.isListening);
         output.s(serialDesc, 2, self.headerText);
@@ -102,7 +102,7 @@ public final class ActivityInviteEmbed {
             z11 = true;
         }
         if (z11) {
-            output.z(serialDesc, 4, new si.f(a.u(a2.f26237a)), self.avatarsToRender);
+            output.z(serialDesc, 4, new si.f(a.u(a2.f26246a)), self.avatarsToRender);
         }
         output.q(serialDesc, 5, self.maxPartySize);
         if (!output.w(serialDesc, 6) && self.name == null) {
@@ -111,13 +111,13 @@ public final class ActivityInviteEmbed {
             z12 = true;
         }
         if (z12) {
-            output.z(serialDesc, 6, a2.f26237a, self.name);
+            output.z(serialDesc, 6, a2.f26246a, self.name);
         }
         if (output.w(serialDesc, 7) || self.subtext != null) {
             z13 = true;
         }
         if (z13) {
-            output.z(serialDesc, 7, a2.f26237a, self.subtext);
+            output.z(serialDesc, 7, a2.f26246a, self.subtext);
         }
         output.r(serialDesc, 8, self.joinable);
         output.s(serialDesc, 9, self.ctaText);

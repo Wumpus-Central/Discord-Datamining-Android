@@ -40,7 +40,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{a.u(w0.f26353a), h.f26279a, new f(new f(ContentNodeSerializer.INSTANCE))};
+        return new KSerializer[]{a.u(w0.f26362a), h.f26288a, new f(new f(ContentNodeSerializer.INSTANCE))};
     }
 
     @Override 
@@ -53,7 +53,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
         SerialDescriptor descriptor2 = getDescriptor();
         c c10 = decoder.c(descriptor2);
         if (c10.y()) {
-            obj2 = c10.v(descriptor2, 0, w0.f26353a, null);
+            obj2 = c10.v(descriptor2, 0, w0.f26362a, null);
             z10 = c10.s(descriptor2, 1);
             obj = c10.m(descriptor2, 2, new f(new f(ContentNodeSerializer.INSTANCE)), null);
             i10 = 7;
@@ -68,7 +68,7 @@ public final class BulletListContentNode$$serializer implements f0<BulletListCon
                 if (x10 == -1) {
                     z11 = false;
                 } else if (x10 == 0) {
-                    obj3 = c10.v(descriptor2, 0, w0.f26353a, obj3);
+                    obj3 = c10.v(descriptor2, 0, w0.f26362a, obj3);
                     i11 |= 1;
                 } else if (x10 == 1) {
                     z12 = c10.s(descriptor2, 1);

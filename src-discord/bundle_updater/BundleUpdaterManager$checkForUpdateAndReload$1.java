@@ -36,7 +36,7 @@ final class BundleUpdaterManager$checkForUpdateAndReload$1 extends s implements 
         @Override 
         public   Unit invoke(ViewGroup viewGroup) {
             invoke2(viewGroup);
-            return Unit.f20670a;
+            return Unit.f20679a;
         }
 
         

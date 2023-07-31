@@ -24,7 +24,7 @@ final class PushNotificationModule$registerEventListener$1 extends s implements 
     @Override 
     public   Unit invoke(String str) {
         invoke2(str);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

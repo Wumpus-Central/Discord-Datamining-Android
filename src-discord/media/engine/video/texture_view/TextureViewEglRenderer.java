@@ -47,7 +47,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
 
         
         public final String toNiceString(float f10) {
-            k0 k0Var = k0.f20719a;
+            k0 k0Var = k0.f20728a;
             String format = String.format(Locale.getDefault(), "%.3f", Arrays.copyOf(new Object[]{Float.valueOf(f10)}, 1));
             q.f(format, "format(locale, format, *args)");
             return format;
@@ -88,7 +88,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                 this.frameRotation = videoFrame.getRotation();
             }
-            Unit unit = Unit.f20670a;
+            Unit unit = Unit.f20679a;
         }
     }
 
@@ -101,7 +101,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f20670a;
+                Unit unit = Unit.f20679a;
             }
             init();
             setErrorCallback(this);

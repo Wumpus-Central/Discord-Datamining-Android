@@ -29,7 +29,7 @@ public final class ApplicationId$$serializer implements f0<ApplicationId> {
 
     @Override 
     public KSerializer<?>[] childSerializers() {
-        return new KSerializer[]{w0.f26353a};
+        return new KSerializer[]{w0.f26362a};
     }
 
     @Override 

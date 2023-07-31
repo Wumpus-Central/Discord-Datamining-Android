@@ -150,7 +150,7 @@ public final class AudioPlayerViewState {
             return null;
         }
         AudioPlayerManager.INSTANCE.setCurrentProgress(audioSource, f10, j10);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     public final boolean shouldEmitDuration$chat_release() {

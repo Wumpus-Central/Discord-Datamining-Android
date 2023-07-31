@@ -84,11 +84,11 @@ public final class NativeMapExtensionsKt {
         Double d11;
         q.g(key, "key");
         try {
-            s.a aVar = s.f14778l;
+            s.a aVar = s.f14787l;
             q.d(readableMap);
             d11 = s.b(Double.valueOf(readableMap.getDouble(key)));
         } catch (Throwable th2) {
-            s.a aVar2 = s.f14778l;
+            s.a aVar2 = s.f14787l;
             d11 = s.b(t.a(th2));
         }
         Double valueOf = Double.valueOf(d10);

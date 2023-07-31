@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.list.item;
 
-import ff.m;
+import ff.n;
 import ff.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -11,12 +11,14 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class ChatListItem {
 
     
-    private final String f6931id;
+    private final String f6940id;
     private final Lazy recyclerItemId$delegate;
 
     private ChatListItem(String str) {
-        this.f6931id = str;
-        this.recyclerItemId$delegate = m.a(p.NONE, new ChatListItem$recyclerItemId$2(this));
+        Lazy a10;
+        this.f6940id = str;
+        a10 = n.a(p.NONE, new ChatListItem$recyclerItemId$2(this));
+        this.recyclerItemId$delegate = a10;
     }
 
     public  ChatListItem(String str, DefaultConstructorMarker defaultConstructorMarker) {
@@ -24,7 +26,7 @@ public abstract class ChatListItem {
     }
 
     public String getId() {
-        return this.f6931id;
+        return this.f6940id;
     }
 
     public final long getRecyclerItemId() {

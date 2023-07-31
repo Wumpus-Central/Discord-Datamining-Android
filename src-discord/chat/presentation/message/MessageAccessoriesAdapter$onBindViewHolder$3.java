@@ -29,7 +29,7 @@ public final class MessageAccessoriesAdapter$onBindViewHolder$3 extends s implem
     @Override 
     public   Unit invoke(Double d10, Integer num) {
         invoke2(d10, num);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     

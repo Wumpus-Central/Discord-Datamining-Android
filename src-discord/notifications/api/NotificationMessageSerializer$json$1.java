@@ -19,7 +19,7 @@ final class NotificationMessageSerializer$json$1 extends s implements Function1<
     @Override 
     public   Unit invoke(JsonBuilder jsonBuilder) {
         invoke2(jsonBuilder);
-        return Unit.f20670a;
+        return Unit.f20679a;
     }
 
     
